@@ -5,21 +5,22 @@
 - Project: Swapscanner (`swapscanner`)
 - Website: [https://swapscanner.io/](https://swapscanner.io/)
 - Lifecycle: active (Tier 0, 82.4% below peak)
-- Generated: 2026-05-23T20:21:33.867Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:16.896Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: klaytn
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $4,683,395.00
+- DeFi Llama TVL: $4,383,473.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Swapscanner is a DeFi protocol on Klaytn offering a decentralized exchange and liquid staking services, enabling users to trade tokens and stake assets while receiving liquid staking derivatives.
-
-### Architecture
-
-The protocol consists of a single product family with two core contracts that likely represent the staking pool and the derivative token, sharing infrastructure for liquid staking operations.
+Swapscanner is a DEX aggregator on Kaia, formerly Klaytn, focused on routing and price optimization for token swaps. Any staking or wrapping functionality should be treated as separate site features unless official documentation verifies liquid-staking derivative issuance.
 
 ## Audit Coverage Summary
 

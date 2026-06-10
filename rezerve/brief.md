@@ -5,17 +5,17 @@
 - Project: Rezerve (`rezerve`)
 - Website: [https://rezerve.money](https://rezerve.money)
 - Lifecycle: active (Tier 0, 89.2% below peak)
-- Generated: 2026-05-24T10:59:16.139Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:11.404Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, sonic
 - Contract surface: 104 unique implementations (499 raw deployments)
-- DeFi Llama TVL: $2,667,149.00
+- DeFi Llama TVL: $2,634,879.00
 - On-chain TVL (included contracts): $1,337,064.97
 - TVL by chain: Ethereum $1,337,064.97
 
 ## Project Description
 
-Rezerve is a DeFi protocol offering lending markets and a reserve currency system. It enables users to supply and borrow assets through EVault lending pools, and participate in a reserve currency ecosystem with staking, bonding, and treasury management.
+Rezerve Money/RZR is the primary Rezerve project, centered on a reserve-currency ecosystem with staking, bonding, and treasury management. Rezerve Lending is a related child product that provides EVault-based lending markets for supplying and borrowing assets, and should be scoped separately from the reserve-currency system when assessing TVL, audits, and contract coverage.
 
 ### Architecture
 
@@ -32,8 +32,8 @@ The two families operate independently on-chain, with no shared contracts betwee
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $1,337,064.97
-- Latest audit: 2025-06 (fresh)
-- Staleness: 2 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2025-06 (aging)
+- Staleness: 0 fresh, 2 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -181,8 +181,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Halborn - 2025](https://github.com/rezervemoney/code/blob/main/audits/2025-06-21-halborn.pdf) | Halborn | Audit | 2025-06 | fresh | Direct | contract_name | 15 | high |
-| [PeckShield - 2021](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-OlympusDAO-v1.0.pdf) | PeckShield | Audit | 2025-06 | fresh | Direct | n/a | 0 | n/a |
+| [Halborn - 2025](https://github.com/rezervemoney/code/blob/main/audits/2025-06-21-halborn.pdf) | Halborn | Audit | 2025-06 | aging | Direct | contract_name | 15 | high |
+| [PeckShield - 2021](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-OlympusDAO-v1.0.pdf) | PeckShield | Audit | 2025-06 | aging | Direct | n/a | 0 | n/a |
 | [Omniscia - 2021](https://omniscia.io/reports/olympus-dao-protocol-v2) | PeckShield | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps

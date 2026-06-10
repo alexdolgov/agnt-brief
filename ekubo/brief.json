@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "ekubo",
-  "generated_at": "2026-05-22T10:29:11.862Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:02.062Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ekubo",
     "tier": 0,
@@ -35,7 +35,7 @@
     "coverage_pct": 44.4,
     "total_audits": 5,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 27158210.41688,
+    "dl_tvl_usd": 27323055.99682,
     "tvl_usd": 5648264.121123274,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -60,9 +60,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Ekubo is a decentralized exchange protocol on Ethereum and Starknet that uses concentrated liquidity and a singleton-style Core contract. It provides efficient token swaps, liquidity provision, and MEV-resistant routing, with governance via the EkuboToken.",
+    "project_purpose": "Ekubo is a live decentralized exchange protocol built around concentrated liquidity and a singleton-style Core design. The project is primarily associated with Starknet and also supports Ethereum; its public interface advertises swaps on Ethereum, Arbitrum, and Starknet. The currently listed contract surface is an incomplete Ethereum-only subset and should not be treated as the full Ekubo deployment surface or as the original Starknet Core/periphery/governance surface. Arbitrum should be treated as interface-supported but outside the currently covered audited contract surface unless Arbitrum deployments are separately verified and added.",
     "relationship_narrative": "The EVM Contracts (V2) family extends the original Ekubo DEX to EVM chains, sharing the same concentrated liquidity design but with separate Core instances. Governance contracts are independent but may control parameters or upgrades across families via the StarknetOwnerProxy.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 15,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -7,17 +7,17 @@
 - Project: Pickle (`pickle`)
 - Website: [https://pickle.finance/](https://pickle.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-25T14:19:40.212Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:09.318Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 235 unique implementations (622 raw deployments)
-- DeFi Llama TVL: $4,727,983.85
+- DeFi Llama TVL: $4,646,287.41
 - On-chain TVL (included contracts): $2,881,379.54
 - TVL by chain: Ethereum $2,881,379.54
 
 ## Project Description
 
-Pickle is a yield aggregator that optimizes returns on deposited assets by automatically compounding rewards and shifting funds between strategies. It uses its native PICKLE token for governance and incentives.
+Pickle is an auto-compounding yield aggregator for DeFi and LP positions. PICKLE can be locked or staked as DILL, which is used for governance, revenue sharing, and farm APY boosts.
 
 ### Architecture
 

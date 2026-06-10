@@ -5,8 +5,8 @@
 - Project: NodeDAO (`nodedao`)
 - Website: [https://www.nodedao.com](https://www.nodedao.com)
 - Lifecycle: active (Tier 0, 64.2% below peak)
-- Generated: 2026-05-26T18:17:45.606Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:08.705Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 18 unique implementations (36 raw deployments)
 - DeFi Llama TVL: $33,688,344.49
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-NodeDAO is a liquid staking protocol that allows users to stake ETH and receive liquid staking tokens while earning staking rewards. It also provides restaking and DeFi strategy integration to optimize yields.
+NodeDAO is a DAO-operated staking protocol spanning ETH liquid staking, rnETH restaking, BTC staking products including oBTC/oyBTC, and DeFi/L2 strategy integrations for earning and optimizing staking-related yields.
 
 ### Architecture
 
@@ -67,7 +67,7 @@ The NodeDAOView contract serves as a read-only aggregation point for the protoco
 | CumulativeMerkleDrop | operational_periphery | ethereum | 2 deployments: ethereum [`0x1349a8...7b6610`](./contracts/ethereum-1/0x1349a8d352b1971cbebeacf55fb75526f47b6610/); ethereum `0x4d68f9...a1bfd6` | ⚠️ Unaudited |
 | LsdETH | unknown | ethereum | [`0x9dc7e1...b97c5b`](./contracts/ethereum-1/0x9dc7e196092dac94f0c76cfb020b60fa75b97c5b/) | ⚠️ Unaudited |
 | NethOFTAdapter | adapter | ethereum | [`0x3343f9...3283ce`](./contracts/ethereum-1/0x3343f9de5612b6f8a433abc3eaae245cfa3283ce/) | ⚠️ Unaudited |
-| NodeDAOView | unknown | ethereum | 2 deployments: ethereum [`0x857bf0...14d948`](./contracts/ethereum-1/0x857bf02b1f5fd85e064e6726658ea1864a14d948/); ethereum `0xd7c049...812121` | ⚠️ Unaudited |
+| NodeDAOView | periphery | ethereum | 2 deployments: ethereum [`0x857bf0...14d948`](./contracts/ethereum-1/0x857bf02b1f5fd85e064e6726658ea1864a14d948/); ethereum `0xd7c049...812121` | ⚠️ Unaudited |
 | ObeliskCustody | unknown | ethereum | [`0x9f836f...8b1a2c`](./contracts/ethereum-1/0x9f836f8a27f1579258388bfab16ab16e278b1a2c/) | ⚠️ Unaudited |
 | PoolConfig | core_logic | ethereum | 2 deployments: ethereum [`0x54f661...d1ea62`](./contracts/ethereum-1/0x54f661260dd47b6178cf4f6f3e90cc30d8d1ea62/); ethereum `0xea66a6...ad497a` | ⚠️ Unaudited |
 | RestakingPod | unknown | ethereum | [`0x9efdeb...a3b75c`](./contracts/ethereum-1/0x9efdeb695f1e3f0ad3bcfb1e07d2749b50a3b75c/) | ⚠️ Unaudited |
@@ -111,7 +111,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x9c6f15...6503fa`](./contracts/ethereum-1/0x9c6f151ff54b9820d4c54335369b76729e6503fa/) | NethPool | core_logic | $11,500,732.63 | Verified native implementation with $11,500,732.63 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1349a8...7b6610`](./contracts/ethereum-1/0x1349a8d352b1971cbebeacf55fb75526f47b6610/) | CumulativeMerkleDrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9dc7e1...b97c5b`](./contracts/ethereum-1/0x9dc7e196092dac94f0c76cfb020b60fa75b97c5b/) | LsdETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x857bf0...14d948`](./contracts/ethereum-1/0x857bf02b1f5fd85e064e6726658ea1864a14d948/) | NodeDAOView | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x857bf0...14d948`](./contracts/ethereum-1/0x857bf02b1f5fd85e064e6726658ea1864a14d948/) | NodeDAOView | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xcea368...8ded56`](./contracts/ethereum-1/0xcea3681131dd151ee72a5c8dbba555cb8b8ded56/) | RNethOFTAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6fdfd0...6d74a7`](./contracts/ethereum-1/0x6fdfd096687a2d7b83e4afdc05c43519166d74a7/) | TokenAuthority | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "guru-network-dao",
-  "generated_at": "2026-05-31T08:17:51.627Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.413Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "guru-network-dao",
@@ -63,9 +63,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Guru Network DAO is a multi-chain DeFi protocol offering decentralized exchange, lending, yield optimization, and liquid staking services. It aggregates liquidity and automates yield strategies across several EVM-compatible chains.",
+    "project_purpose": "Guru Network DAO is a multi-chain DeFi protocol described by DefiLlama as operating across multiple chains, with observed contract surface including liquidity-book routing and quoting components such as LBRouter and LBQuoter deployments. Its exact product scope should be treated cautiously unless supported by current documentation or verified contract source; lending, liquid staking, yield optimization, liquidity aggregation, or automated yield strategies should not be asserted without further verification.",
     "relationship_narrative": "The families share a common deployer cluster and proxy infrastructure, indicating a unified development team. Yield strategies from Guru Network Classic may utilize liquidity from E3 and assets from eLOCKS or ELMA, creating integrated DeFi workflows.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 54,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

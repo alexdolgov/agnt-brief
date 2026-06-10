@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kromatika",
-  "generated_at": "2026-05-25T11:20:40.084Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:06.762Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "kromatika",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1102134.11465,
+    "dl_tvl_usd": 1091186.50011,
     "tvl_usd": 83796.24083639329,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -63,9 +63,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Kromatika is a decentralized exchange protocol that enables users to place gasless limit orders on Uniswap v3 pools. It provides a non-custodial, MEV-resistant trading experience by executing orders through a network of relayers and keeper bots.",
+    "project_purpose": "Kromatika provides order-book-style limit trading on Uniswap, with KROM/token and limit-order management and monitoring contracts deployed across supported chains.",
     "relationship_narrative": "The Limit Order System relies on the KROM token for access control and fee payments, while the Token Infrastructure ensures the token is available on all supported chains. Both families are governed by a shared GnosisSafe multisig, and limit order managers use utility contracts like LimitOrderMonitor and UniswapUtils for order execution and validation.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 30,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

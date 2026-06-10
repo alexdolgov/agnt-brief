@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Royco Protocol
 
-⚠️ Lifecycle status: DECLINING - TVL changed 34.5% over 90 days
-
 ## Project Overview
 
 - Project: Royco Protocol (`royco-protocol`)
 - Website: [https://www.royco.org](https://www.royco.org)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T14:54:11.140Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:12.124Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, ethereum, hyperliquid, sonic
 - Contract surface: 14 unique implementations (47 raw deployments)
 - DeFi Llama TVL: $35,412,432.00
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Royco Protocol is a yield optimization platform that enables users to deposit assets into vaults and participate in incentive markets. It provides infrastructure for creating wrapped vaults, managing points programs, and executing complex strategies via Weiroll wallets.
+Royco Protocol is an active, non-custodial risk-tranching protocol for curated DeFi vaults. Through Royco Dawn, users can allocate capital into senior and junior tranches of vault opportunities: junior tranches provide first-loss coverage and take on more variable yield risk, while senior tranches receive a more protected risk profile. The protocol focuses on curated vaults, tranche-based risk allocation, and variable yield opportunities rather than being described primarily as a generic yield optimization or points-infrastructure platform.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ Royco V1 provides the foundational vault and teller contracts, while Royco V2 in
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $7.16 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

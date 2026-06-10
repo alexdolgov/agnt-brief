@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Ventuals
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Ventuals (`ventuals`)
 - Website: [https://ventuals.com/trade](https://ventuals.com/trade)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-22T09:11:25.089Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:18.563Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: hyperliquid
 - Contract surface: 4 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $28,755,891.50
+- DeFi Llama TVL: $29,701,346.64
 - On-chain TVL (included contracts): $273.74
 - TVL by chain: Hyperliquid $273.74
 
 ## Project Description
 
-Ventuals is a staking protocol on HyperEVM that allows users to stake assets and earn rewards. It manages staking positions through vaults and a manager contract, with role-based access control.
+Ventuals is a decentralized trading protocol/interface for creating and trading perpetual futures markets on private-company valuations using Hyperliquid HIP-3 infrastructure. The four tracked HyperEVM proxy contracts should be treated as the currently mapped on-chain contract surface only, not as evidence that Ventuals is primarily a staking or rewards protocol.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The StakingVaultManager oversees multiple StakingVault instances, which hold use
 - Latest audit: 2025-10 (fresh)
 - Staleness: 2 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

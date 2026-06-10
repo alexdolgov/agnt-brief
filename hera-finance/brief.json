@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "hera-finance",
-  "generated_at": "2026-05-23T14:42:19.441Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:04.629Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hera-finance",
     "tier": 0,
@@ -35,8 +35,8 @@
     "coverage_pct": 42.9,
     "total_audits": 3,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 5801066.58462,
-    "tvl_usd": 5801066.58462,
+    "dl_tvl_usd": 6505965.60112,
+    "tvl_usd": 6505965.60112,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Hera Finance is a decentralized exchange (DEX) on the Metis chain, enabling users to swap tokens and provide liquidity. It features a native token, HeraToken, which likely serves as a governance or utility token within the ecosystem.",
+    "project_purpose": "Hera Finance is a Metis-based DEX aggregator and portal focused on token swaps via route discovery, staking, and trade-mining programs around the HERA token. Current evidence supports aggregation and staking/trade-mining functionality, not an AMM-style DEX with user liquidity provision or independently documented HERA governance claims.",
     "relationship_narrative": "All contracts are deployed by the same deployer cluster, indicating a unified infrastructure. The unnamed contracts likely support the DEX operations, with HeraToken acting as the central token for the protocol.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 28,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

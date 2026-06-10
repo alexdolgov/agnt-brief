@@ -7,17 +7,17 @@
 - Project: DODO (`dodo`)
 - Website: [https://dodoex.io](https://dodoex.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-25T14:55:51.065Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:01.992Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, aurora, avalanche, base, bsc, ethereum, linea, manta, mantle, optimism, polygon, scroll
-- Contract surface: 569 unique implementations (1604 raw deployments)
-- DeFi Llama TVL: $11,977,776.00
-- On-chain TVL (included contracts): $20,635,644.02
-- TVL by chain: Ethereum $19,605,339.63 | Bsc $1,030,304.39
+- Contract surface: 552 unique implementations (1578 raw deployments)
+- DeFi Llama TVL: $12,646,882.00
+- On-chain TVL (included contracts): $19,129,279.70
+- TVL by chain: Ethereum $18,098,975.31 | Bsc $1,030,304.39
 
 ## Project Description
 
-DODO is a decentralized exchange protocol that uses a proactive market maker (PMM) algorithm to provide efficient on-chain liquidity and trading. It also includes aggregation and lending features to optimize trade execution and capital utilization across multiple chains.
+DODO is a decentralized exchange protocol and on-chain liquidity provider that uses a proactive market maker (PMM) algorithm to support efficient trading and liquidity provisioning across multiple chains, with AMM pool factories and routing/aggregation products.
 
 ### Architecture
 
@@ -25,19 +25,19 @@ The DODO family provides the foundational AMM factories and token, while DODO Ag
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/178 (0.0%)
-- Verified + Unaudited implementations: 162
+- Verified implementations audited: 0/161 (0.0%)
+- Verified + Unaudited implementations: 145
 - Verified by bytecode match: 16
 - Unverified implementations: 391
-- Unique implementations: 569
-- Raw deployments: 1604
+- Unique implementations: 552
+- Raw deployments: 1578
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $20,635,644.02
+- ASD (verified + unaudited TVL): $19,129,279.70
 - Latest audit: 2021-04 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $20,635,644.02 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $19,129,279.70 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,26 +49,17 @@ The DODO family provides the foundational AMM factories and token, while DODO Ag
 
 - None
 
-### ⚠️ Verified + Unaudited (162)
+### ⚠️ Verified + Unaudited (145)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | DODOToken | token | ethereum | 2 deployments: ethereum [`0x43dfc4...7d4ddd`](./contracts/ethereum-1/0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd/); ethereum `0xf86a1f...9f6c24` | ⚠️ Unaudited |
 | DODOBscToken | token | bsc | [`0x67ee3c...b929e2`](./contracts/bsc-56/0x67ee3cb086f8a16f34bee3ca72fad36f7db929e2/) | ⚠️ Unaudited |
-| ArcxTokenV2 | token | ethereum | [`0x1321f1...9bb288`](./contracts/ethereum-1/0x1321f1f1aa541a56c31682c57b80ecfccd9bb288/) | ⚠️ Unaudited |
-| bVault | core_logic | ethereum | 6 deployments: ethereum [`0x2c2327...568ea6`](./contracts/ethereum-1/0x2c23276107b45e64c8c59482f4a24f4f2e568ea6/); ethereum `0x378388...a35153`; ethereum `0x3fb6b0...15a2cc`; ethereum `0x750d30...7996d0`; ethereum `0x801690...85dc0e`; ethereum `0x8d9a39...ec6108` | ⚠️ Unaudited |
-| BACDAIPool | core_logic | ethereum | [`0xebd126...02bde8`](./contracts/ethereum-1/0xebd12620e29dc6c452db7b96e1f190f3ee02bde8/) | ⚠️ Unaudited |
-| BACUSDCPool | core_logic | ethereum | [`0x518821...429fd4`](./contracts/ethereum-1/0x51882184b7f9beed6db9c617846140da1d429fd4/) | ⚠️ Unaudited |
-| BACUSDTPool | core_logic | ethereum | [`0x2833bd...877e44`](./contracts/ethereum-1/0x2833bdc5b31269d356bdf92d0fd8f3674e877e44/) | ⚠️ Unaudited |
-| StakingAccrualERC20V5 | token | ethereum | [`0x9bffad...fd7d9d`](./contracts/ethereum-1/0x9bffad7a6d5f52dbc51cae33e419793c72fd7d9d/) | ⚠️ Unaudited |
-| BACSUSDPool | core_logic | ethereum | [`0xdc42a2...93305c`](./contracts/ethereum-1/0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c/) | ⚠️ Unaudited |
-| ERC20Peg | token | ethereum | [`0x76bac8...4c6e32`](./contracts/ethereum-1/0x76bac85e1e82cd677faa2b3f00c4a2626c4c6e32/) | ⚠️ Unaudited |
 | ABep20Delegate | unknown | bsc | 42 deployments: bsc [`0x004621...a62601`](./contracts/bsc-56/0x0046214a8a8cdc635e5ba0b7980fb91c3aa62601/); bsc `0x02a7de...c66e6b`; bsc `0x0503fe...b9df7f`; bsc `0x075105...93ae16`; bsc `0x10ad98...49be33`; bsc `0x14f235...fe684f`; bsc `0x1e3c74...0ad04f`; bsc `0x20c7e6...9603f9`; bsc `0x219db7...b17f57`; bsc `0x24ce0e...59a307`; bsc `0x264586...6a6dc4`; bsc `0x280b64...961cb4`; bsc `0x294c94...45abfc`; bsc `0x2c5056...684343`; bsc `0x2f4ba3...a2eeba`; bsc `0x4b1024...b9c34d`; bsc `0x4e9bf2...ad12f6`; bsc `0x558b96...94e9a3`; bsc `0x59123a...6cd87c`; bsc `0x5b3a4b...02c4d6`; bsc `0x5c81c0...68a2a2`; bsc `0x5e527b...65109a`; bsc `0x61f7d2...86c1be`; bsc `0x68af2e...924a57`; bsc `0x6a3ebe...ef11f2`; bsc `0x788a79...be1db3`; bsc `0x7c0697...7089cf`; bsc `0x8df371...162894`; bsc `0x96ffc0...a11940`; bsc `0xa30ce0...d808aa`; bsc `0xa65722...6e8adc`; bsc `0xbc46dc...c2fdfe`; bsc `0xbe5878...4a7160`; bsc `0xc182ea...f6c74e`; bsc `0xc9e38d...992c54`; bsc `0xcc7fc8...bbe54c`; bsc `0xd47084...6c4058`; bsc `0xd6bc11...cb7f67`; bsc `0xd7c38e...e30ac2`; bsc `0xd9afd1...001158`; bsc `0xdc90ad...22e1fe`; bsc `0xfead96...03ea0c` | ⚠️ Unaudited |
 | ABep20Delegator | unknown | bsc | 16 deployments: bsc [`0x0524f1...69a7aa`](./contracts/bsc-56/0x0524f1841a2a11e7bfaf7f62f09b2e9e8f69a7aa/); bsc `0x12d244...8718cc`; bsc `0x193815...160dde`; bsc `0x1d4896...9a03e8`; bsc `0x21e7e1...2a7aa1`; bsc `0x33bdc1...a7a46c`; bsc `0x350bd6...e708c0`; bsc `0x3b1add...3c43b2`; bsc `0x4fd8f9...a62168`; bsc `0x7044a0...88f740`; bsc `0x926437...21e557`; bsc `0x963125...3ec84c`; bsc `0xacb6fc...fdb470`; bsc `0xaf089a...782c5c`; bsc `0xb5d407...42fc00`; bsc `0xfb7112...9bfde4` | ⚠️ Unaudited |
 | ABNB | unknown | bsc | 2 deployments: bsc [`0x032dd2...995c29`](./contracts/bsc-56/0x032dd2cd4e64d8c30fed171d0d0b6cf4a7995c29/); bsc `0x5a9a90...1caf63` | ⚠️ Unaudited |
 | Adoption | unknown | aurora | [`0x18b0bd...cb403b`](./contracts/aurora-1313161554/0x18b0bd918b55f995fd404b872404378a62cb403b/) | ⚠️ Unaudited |
 | AlgebraAdapter | adapter | bsc | [`0x89ba40...006f4d`](./contracts/bsc-56/0x89ba4039841587b0a4cffdf17aee30cacf006f4d/) | ⚠️ Unaudited |
-| Atlantis | unknown | bsc | 4 deployments: bsc [`0x1fd991...c10271`](./contracts/bsc-56/0x1fd991fb6c3102873ba68a4e6e6a87b3a5c10271/); bsc `0x6e0b56...0a6af0`; bsc `0xab4a4f...ded581`; bsc `0xb6e193...87b05b` | ⚠️ Unaudited |
 | AtlantisLens | periphery | bsc | 2 deployments: bsc [`0x0e8c9f...a02a23`](./contracts/bsc-56/0x0e8c9fc7cd455faf22d13fcafd5c6f4eeca02a23/); bsc `0xa23a21...39a2c4` | ⚠️ Unaudited |
 | AtlantisMultiSwapper | adapter | bsc | 4 deployments: bsc [`0x1eca54...83a07a`](./contracts/bsc-56/0x1eca5409b30a398b46c84d98db3e91054283a07a/); bsc `0x42febd...422a91`; bsc `0x4f58d3...e93ee3`; bsc `0x7b4c8a...cc8ad2` | ⚠️ Unaudited |
 | AtlantisPriceOracle | operational_periphery | bsc | 10 deployments: bsc [`0x08f53b...f5b0d6`](./contracts/bsc-56/0x08f53b683e1b87d952a0878ce763c1e6f2f5b0d6/); bsc `0x0bfb6a...c7129e`; bsc `0x182f4b...879eb5`; bsc `0x1fb649...df59a0`; bsc `0x23720e...81ca7e`; bsc `0x77c01c...a26c7b`; bsc `0x8f85ee...6de09a`; bsc `0xa14435...364969`; bsc `0xe7fc78...1da1fb`; bsc `0xf9b50d...77ec3e` | ⚠️ Unaudited |
@@ -76,14 +67,11 @@ The DODO family provides the foundational AMM factories and token, while DODO Ag
 | AtlantisStore | unknown | bsc | 5 deployments: bsc [`0x7772dc...feb49e`](./contracts/bsc-56/0x7772dc1c8907fee069a296db5790faf253feb49e/); bsc `0x8cfc23...eac61b`; bsc `0xb11164...7473be`; bsc `0xc81376...c03c27`; bsc `0xce748b...cd46fd` | ⚠️ Unaudited |
 | ATLStore | token | bsc | [`0x681228...0510d4`](./contracts/bsc-56/0x6812288b7bc0cf1ed61f7bfaaef743310d0510d4/) | ⚠️ Unaudited |
 | ATLVault | core_logic | bsc | 2 deployments: bsc [`0x098f2a...0910ed`](./contracts/bsc-56/0x098f2a29ba9ce38eeb10e02b83945d7c6d0910ed/); bsc `0x4e8e03...c66bd2` | ⚠️ Unaudited |
-| BACyCRVPool | core_logic | ethereum | [`0xc462d8...14c3bf`](./contracts/ethereum-1/0xc462d8ee54953e7d7bf276612b75387ea114c3bf/) | ⚠️ Unaudited |
 | BakeryAdapter | adapter | bsc | 3 deployments: bsc [`0x08e358...c6c61b`](./contracts/bsc-56/0x08e358a23decff37efca1d3c9e0e43a3e9c6c61b/); bsc `0x17307d...10b9cf`; bsc `0xbe24a0...b0c88c` | ⚠️ Unaudited |
 | BatchERC721Transfer | token | bsc | [`0x7776b8...cdd9dc`](./contracts/bsc-56/0x7776b8e7b9228eb030d2e18e30d8adbbd1cdd9dc/) | ⚠️ Unaudited |
 | BatchTransfer | periphery | ethereum | 2 deployments: ethereum [`0x0d53ac...3d112b`](./contracts/ethereum-1/0x0d53acf7956bfe0e4b00ee5eacbe5cf1d43d112b/); ethereum `0x1e4e1b...2a8bfd` | ⚠️ Unaudited |
-| BentoBox | unknown | bsc | [`0x41f42f...6e78a6`](./contracts/bsc-56/0x41f42f4ff2490d171b0a7bb472a4fbcd8d6e78a6/) | ⚠️ Unaudited |
 | BentoBoxV2 | unknown | bsc | 3 deployments: bsc [`0x42e7c8...8f277a`](./contracts/bsc-56/0x42e7c818f9c999f16b041953bb7c40503e8f277a/); bsc `0x535682...5c0f1a`; bsc `0x9e96bc...7043ab` | ⚠️ Unaudited |
 | BirdlayerRouteProxy | unknown | arbitrum | 4 deployments: ethereum `0x464494...c6b744`; bsc `0x669c8c...f19ace`; bsc `0xdbaf29...75074a`; arbitrum [`0x255416...8f1992`](./contracts/arbitrum-42161/0x255416bc03b5f5c6fa4425691f3e5dac108f1992/) | ⚠️ Unaudited |
-| BlackPoolToken | core_logic | ethereum | [`0x0ec9f7...7e37da`](./contracts/ethereum-1/0x0ec9f76202a7061eb9b3a7d6b59d36215a7e37da/) | ⚠️ Unaudited |
 | Bridge | operational_periphery | ethereum | [`0x306227...b404b2`](./contracts/ethereum-1/0x306227d964511a260d14563fbfa82aa75db404b2/) | ⚠️ Unaudited |
 | BuyoutModel | unknown | ethereum | 4 deployments: ethereum [`0x102739...296426`](./contracts/ethereum-1/0x102739e36bc412cf79ff62f3e1efaba9f8296426/); bsc `0xfea1ac...484197`; polygon `0x5ce3aa...336045`; arbitrum `0x23b06d...693af7` | ⚠️ Unaudited |
 | CommonInterestModel | unknown | ethereum | [`0xe04f5b...8f8e05`](./contracts/ethereum-1/0xe04f5b60ed8ef9e52098e5428c5851b0de8f8e05/) | ⚠️ Unaudited |
@@ -177,7 +165,6 @@ The DODO family provides the foundational AMM factories and token, while DODO Ag
 | KashiPair | unknown | bsc | 4 deployments: bsc [`0x2ff807...80501c`](./contracts/bsc-56/0x2ff807371c9be6ce9659562323c5a9923a80501c/); bsc `0x49cb52...0e5d81`; bsc `0x4e83ad...d5c4c7`; bsc `0x9e7f77...442327` | ⚠️ Unaudited |
 | LockedTokenVault | core_logic | ethereum | 25 deployments: ethereum [`0x050d08...177e9d`](./contracts/ethereum-1/0x050d08e8149f305dff7a9936f3908a1823177e9d/); ethereum `0x0e504d...673be4`; ethereum `0x1e02fe...483dd3`; ethereum `0x29c960...6a17a8`; ethereum `0x2e03f0...ddd5d8`; ethereum `0x300ad0...98233f`; ethereum `0x3fefa4...8c4909`; ethereum `0x46d8d8...8d98bb`; ethereum `0x5c37d4...6cf4ab`; ethereum `0x6cedea...6d0ab3`; ethereum `0x9224fc...fb9802`; ethereum `0xb28ecb...28e730`; ethereum `0xbc1d41...ce7db6`; ethereum `0xbd07db...b8a167`; ethereum `0xdb9119...cfff5f`; ethereum `0xde25ce...b769b4`; ethereum `0xf5a4d6...11519f`; bsc `0x36b673...6110df`; bsc `0xc6894b...7d834c`; bsc `0xe077ce...f4df9d`; arbitrum `0x480a51...deeba5`; arbitrum `0xb517a3...3568dc`; arbitrum `0xfc46f5...def1ce`; aurora `0x806c3c...454db0`; aurora `0x844d81...9ada49` | ⚠️ Unaudited |
 | LPVault | core_logic | bsc | 2 deployments: bsc [`0x5f79e2...384050`](./contracts/bsc-56/0x5f79e25dbf729c0758de96dedf30ce6257384050/); bsc `0xad0246...1b2b64` | ⚠️ Unaudited |
-| MasterChef | unknown | ethereum | [`0xc2edad...a888cd`](./contracts/ethereum-1/0xc2edad668740f1aa35e4d8f227fb8e17dca888cd/) | ⚠️ Unaudited |
 | Maximillion | unknown | bsc | 3 deployments: bsc [`0x3533f2...4c7931`](./contracts/bsc-56/0x3533f2514bbb4b3345714a7adb80d7143c4c7931/); bsc `0xbb045e...52c640`; bsc `0xe9690d...b2d0eb` | ⚠️ Unaudited |
 | Migrations | operational_periphery | aurora | [`0x18dfde...fcb9d2`](./contracts/aurora-1313161554/0x18dfde99f578a0735410797e949e8d3e2afcb9d2/) | ⚠️ Unaudited |
 | MinimumOracle | operational_periphery | bsc | [`0x03d489...a208a2`](./contracts/bsc-56/0x03d489a5f65d4fd2db0b077570c7f707eca208a2/) | ⚠️ Unaudited |
@@ -197,12 +184,9 @@ The DODO family provides the foundational AMM factories and token, while DODO Ag
 | RingAdapter | adapter | ethereum | 3 deployments: ethereum [`0x1d2bc7...14433b`](./contracts/ethereum-1/0x1d2bc7963fe592f08155fcaa6158186eb414433b/); bsc `0xcdd753...6bfedf`; arbitrum `0x895df3...0d7193` | ⚠️ Unaudited |
 | SaveContract | unknown | ethereum | 2 deployments: ethereum [`0x161af9...5d0f90`](./contracts/ethereum-1/0x161af953c652ae3807f0b0428b63727f1d5d0f90/); ethereum `0x6b3518...de2570` | ⚠️ Unaudited |
 | SolvOracleAdapter | operational_periphery | ethereum | 3 deployments: ethereum [`0x2da085...fe47fa`](./contracts/ethereum-1/0x2da0855f04919d402af88d0d04abb38177fe47fa/); bsc `0xd0cf7d...04a364`; arbitrum `0x577389...afa387` | ⚠️ Unaudited |
-| StakedBPT | token | ethereum | [`0x46c509...7b1ee2`](./contracts/ethereum-1/0x46c5098f73fa656e82d7e9afbf3c00b32b7b1ee2/) | ⚠️ Unaudited |
 | Timelock | governance | bsc | 3 deployments: bsc [`0x3e2a6f...640909`](./contracts/bsc-56/0x3e2a6f7818a0de1549f286f49826d5963a640909/); bsc `0x42a556...3203ac`; bsc `0xd72bae...20b03d` | ⚠️ Unaudited |
 | TimeLockContract | governance | arbitrum | [`0xb95ed7...b10ab9`](./contracts/arbitrum-42161/0xb95ed7e958e196688984951f41ac2888f4b10ab9/) | ⚠️ Unaudited |
-| TokenPool | core_logic | ethereum | [`0xc93528...793d84`](./contracts/ethereum-1/0xc935285b0d88069305431dace0c3c01d7e793d84/) | ⚠️ Unaudited |
 | UniAdapter | adapter | arbitrum | 6 deployments: optimism `0x59bef1...228fad`; optimism `0xcd70bf...06ccaf`; base `0xe2004e...cc7b99`; arbitrum [`0x17ebc3...bd3aa7`](./contracts/arbitrum-42161/0x17ebc315760bb47384224a5f3bf829222fbd3aa7/); avalanche `0x3a343f...054965`; linea `0xe2004e...cc7b99` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | 2 deployments: ethereum [`0x570242...6507e5`](./contracts/ethereum-1/0x57024267e8272618f9c5037d373043a8646507e5/); ethereum `0x9f624b...980808` | ⚠️ Unaudited |
 | UniV4Adapter | adapter | ethereum | 3 deployments: ethereum [`0x1e8df8...1971eb`](./contracts/ethereum-1/0x1e8df8bf06fe3dac7396b0cb4e5d4f71aa1971eb/); ethereum `0x3e83b9...47e783`; ethereum `0x650527...c5fdc0` | ⚠️ Unaudited |
 | UpCrowdPoolingFactory | registry | ethereum | 11 deployments: ethereum [`0x0c4b4f...922281`](./contracts/ethereum-1/0x0c4b4f1d5f5c989457cdd6f5102308b33c922281/); ethereum `0x78d338...87ee52`; ethereum `0xd734a0...a7a363`; bsc `0x3e64f1...66ba9e`; bsc `0x4f57f6...b0f270`; bsc `0x69f52a...56f0a0`; bsc `0xeceade...95dc32`; polygon `0x326c78...1be4fc`; polygon `0x335ac9...5cc619`; arbitrum `0xe92787...ba3c25`; avalanche `0x55793c...9bf285` | ⚠️ Unaudited |
 | UserQuota | unknown | arbitrum | 5 deployments: bsc `0x695d7b...3887d7`; bsc `0xae7186...6f0e12`; polygon `0x9f599e...f12300`; arbitrum [`0x622610...820bec`](./contracts/arbitrum-42161/0x622610747f7efca73e896d447772008ff4820bec/); arbitrum `0xb605b3...a9bc0b` | ⚠️ Unaudited |
@@ -212,7 +196,6 @@ The DODO family provides the foundational AMM factories and token, while DODO Ag
 | vDODOMine | unknown | bsc | 2 deployments: ethereum `0xd84c90...f899cb`; bsc [`0x505a0f...ae945f`](./contracts/bsc-56/0x505a0f0f4956f7ca5839c5efd8ebdaf3d3ae945f/) | ⚠️ Unaudited |
 | vDODOToken | token | ethereum | [`0xc4436f...bd402a`](./contracts/ethereum-1/0xc4436fbae6eba5d95bf7d53ae515f8a707bd402a/) | ⚠️ Unaudited |
 | VenusStrategy | core_logic | bsc | 15 deployments: bsc [`0x0879db...d31941`](./contracts/bsc-56/0x0879db3a4c289b7e3dfbdbb8eb9494b2fdd31941/); bsc `0x0c53dd...6bf321`; bsc `0x0c5513...883d09`; bsc `0x24f953...34f990`; bsc `0x2c7c4b...46573a`; bsc `0x4a60ad...52fc59`; bsc `0x4ff237...5a9088`; bsc `0x6c409d...999fda`; bsc `0x82c6f1...220ce8`; bsc `0x8a9a9c...206164`; bsc `0xd2af5d...90277c`; bsc `0xf0322c...e96d54`; bsc `0xf2e6ab...b79421`; bsc `0xf77208...917269`; bsc `0xf92b79...130750` | ⚠️ Unaudited |
-| Vyper_contract | unknown | ethereum | [`0xdf5e0e...d806a8`](./contracts/ethereum-1/0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8/) | ⚠️ Unaudited |
 | XVSVaultStrategy | core_logic | bsc | 3 deployments: bsc [`0x5d9fcf...f93038`](./contracts/bsc-56/0x5d9fcf09224b9e60d3f5e7b0a1a843386df93038/); bsc `0xcb41d1...dbe10d`; bsc `0xebb209...9a07aa` | ⚠️ Unaudited |
 | XVSVaultStrategyProxy | core_logic | bsc | [`0xf2a47e...9fac4a`](./contracts/bsc-56/0xf2a47e9a2c7881afe4b6927ef9181725db9fac4a/) | ⚠️ Unaudited |
 
@@ -657,9 +640,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | ethereum | [`0x43dfc4...7d4ddd`](./contracts/ethereum-1/0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd/) | DODOToken | token | $18,098,975.31 | Verified native implementation with $18,098,975.31 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x67ee3c...b929e2`](./contracts/bsc-56/0x67ee3cb086f8a16f34bee3ca72fad36f7db929e2/) | DODOBscToken | token | $1,030,304.39 | Verified native implementation with $1,030,304.39 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2c2327...568ea6`](./contracts/ethereum-1/0x2c23276107b45e64c8c59482f4a24f4f2e568ea6/) | bVault | core_logic | $298,895.13 | Verified native implementation with $298,895.13 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x032dd2...995c29`](./contracts/bsc-56/0x032dd2cd4e64d8c30fed171d0d0b6cf4a7995c29/) | ABNB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x1fd991...c10271`](./contracts/bsc-56/0x1fd991fb6c3102873ba68a4e6e6a87b3a5c10271/) | Atlantis | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x0e8c9f...a02a23`](./contracts/bsc-56/0x0e8c9fc7cd455faf22d13fcafd5c6f4eeca02a23/) | AtlantisLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x1eca54...83a07a`](./contracts/bsc-56/0x1eca5409b30a398b46c84d98db3e91054283a07a/) | AtlantisMultiSwapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x9efe05...c84c6f`](./contracts/bsc-56/0x9efe0562e453c8d69870e27acc4d44f7a7c84c6f/) | AtlantisRescue | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -752,10 +733,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 146 |
-| upstream | 12 |
+| native | 144 |
+| upstream | 5 |
 | standard_library | 2 |
-| needs_review | 409 |
+| needs_review | 401 |
 
 ## Scope Matching Notes
 

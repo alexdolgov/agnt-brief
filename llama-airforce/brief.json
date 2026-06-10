@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "llama-airforce",
-  "generated_at": "2026-05-31T08:39:08.564Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-10T20:59:07.014Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "llama-airforce",
     "tier": 0,
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Llama Airforce is a yield aggregation protocol that optimizes returns on Convex and Aura liquidity positions. It provides vaults that auto-compound rewards and manage staked assets for users.",
+    "project_purpose": "Llama Airforce is associated publicly with the Curve ecosystem, described as “Airdropping knowledge bombs about the Curve ecosystem.” Its on-chain surface and DeFiLlama categorization suggest yield/vault-related activity across multiple product families, including Convex-, Aura-, Union/Pirex-, staking-, zap-, harvester-, migration-, and distributor-related contracts, but specific claims such as unified auto-compounding optimization should be treated as unverified unless supported by primary documentation or source review.",
     "relationship_narrative": "The single product family contains vaults that share a common deployer cluster, indicating a unified infrastructure. The PxCvx contract likely serves as a supporting token or adapter for the vaults.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 93,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "flipster",
-  "generated_at": "2026-05-31T14:54:11.133Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:04.012Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "flipster",
@@ -56,7 +56,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Flipster is a centralized cryptocurrency exchange and perpetual futures trading platform offering digital asset trading services such as spot trading, perpetuals, copy trading, earn/rewards programs, and proof-of-reserves related services. The two listed Klaytn/Kaia addresses are only the DB-known smart-contract surface and are skeletal/non-representative of the full Flipster exchange, reserve wallet, and off-chain system footprint; they should not be interpreted as securing the project-wide CEX reserve TVL.",
     "relationship_narrative": null,
     "product_family_count": 1
   },

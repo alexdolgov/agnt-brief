@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "onyx",
-  "generated_at": "2026-05-27T16:53:09.243Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:08.790Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "onyx",
     "tier": 1,
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 58891762,
     "tvl_usd": 384427279.6879104,
@@ -58,19 +58,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022-03",
-    "audit_freshness": "stale",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 1,
+      "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Onyx is a decentralized lending protocol on Ethereum that enables users to supply and borrow ERC-20 and ERC-721 assets. It uses a Compound-like architecture with interest-bearing oTokens and a Comptroller for risk management.",
+    "project_purpose": "Onyx is an Onyxcoin/XCN-powered app and protocol ecosystem on Ethereum that includes staking and app features such as swap, bridge, farm and governance, alongside a Compound-style liquidity/lending market with oTokens and a Comptroller for risk management.",
     "relationship_narrative": "The Lending family relies on the OnyxDAORegistry for configuration and access control, while the Governance & Staking family manages protocol parameters and incentives. Both families share the same deployer clusters and are part of the broader Onyx ecosystem.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 16,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -808,29 +813,7 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 4680,
-      "audit_key": "audit-4680",
-      "report_name": "XCN-token-Certik-Audit-2022-03-06.pdf",
-      "report_url": "https://github.com/chain/chain-token/blob/main/XCN-token-Certik-Audit-2022-03-06.pdf",
-      "auditor": "CertiK",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-03",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -975,12 +958,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 4680,
-        "report_name": "XCN-token-Certik-Audit-2022-03-06.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

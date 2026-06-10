@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "multichain",
-  "generated_at": "2026-05-27T07:23:17.911Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-a9ad",
+  "generated_at": "2026-06-10T20:59:07.826Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "multichain",
@@ -22,18 +22,18 @@
     "drop_from_peak_pct": 99.57402720003341
   },
   "summary": {
-    "total_contracts": 20,
-    "total_addresses": 30,
-    "unique_implementations": 20,
-    "total_deployments": 30,
+    "total_contracts": 17,
+    "total_addresses": 22,
+    "unique_implementations": 17,
+    "total_deployments": 22,
     "audited_contracts": 6,
-    "unaudited_contracts": 11,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 6,
-    "contracts_verified_unaudited": 11,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 3,
-    "coverage_pct": 35.3,
-    "total_audits": 16,
+    "coverage_pct": 42.9,
+    "total_audits": 15,
     "scoreable_audits": 3,
     "dl_tvl_usd": 44466550.28556,
     "tvl_usd": 12482372.809993558,
@@ -44,7 +44,6 @@
     "asd_usd": 128.8074840448914,
     "website_url": "https://multichain.org/",
     "chains": [
-      "avalanche",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -55,13 +54,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 2,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Multichain is a cross-chain bridge protocol that enables users to transfer tokens and arbitrary messages between different blockchains. It provides infrastructure for cross-chain swaps, token bridging, and generic message passing.",
+    "project_purpose": "Multichain is a cross-chain bridge and router protocol that enables users to transfer tokens and perform cross-chain swaps between supported blockchains. Any contract surface, coverage, or product-family analysis should be based on confirmed Multichain/AnySwap deployments and should not treat Circle CCTP MessageTransmitter or TokenMessenger contracts as Multichain-owned infrastructure.",
     "relationship_narrative": "The Mainnet family provides generic cross-chain messaging infrastructure, while the Multichain family focuses on token bridging and swaps. Both families share the underlying Message contract as a common implementation for message transmission, and the AnyCallProxy in the Multichain family likely relies on the Mainnet family's message passing capabilities.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 17,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -427,113 +431,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x0a992d191deec32afe36203ad87d7d289a738f81",
-      "name": "Message",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Mainnet",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xb2f38107a18f8599331677c14374fd3a952fb2c8",
-      "impl_name": "Message",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0a992d191deec32afe36203ad87d7d289a738f81",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x33486c492a1e918204a150b6a962bcb4a69a38d8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xb2f38107a18f8599331677c14374fd3a952fb2c8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xbd3fa81b58ba92a82136038b25adec7066af3155",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x21f337db7a718f23e061262470af8c1fd01232d1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x7209b4941e20787d7486a694d56c573e6dfc2092",
-      "name": "MessageTransmitter",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MessageTransmitter",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x7209b4941e20787d7486a694d56c573e6dfc2092",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x8186359af5f57fbb40c6b14a588d2a59c0c29880",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x1722800c0f1bfdf916ef948ef7790a861e90d558",
       "name": "MultiDao",
       "role": "unknown",
@@ -634,37 +531,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "review"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x6b25532e1060ce10cc3b0a99e5683b91bfde6982",
-      "name": "TokenMessenger",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "TokenMessenger",
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x6b25532e1060ce10cc3b0a99e5683b91bfde6982",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -794,27 +660,6 @@
     }
   ],
   "audits": [
-    {
-      "audit_id": 4568,
-      "audit_key": "audit-4568",
-      "report_name": "Multichain Audit Reports",
-      "report_url": "https://github.com/anyswap/Anyswap-Audit/find/master",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
     {
       "audit_id": 4569,
       "audit_key": "audit-4569",
@@ -1150,21 +995,21 @@
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 29.4,
+      "coverage_pct": 35.7,
       "latest_audit": "2022-03"
     },
     {
       "auditor": "Dedaub",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 11.8,
+      "coverage_pct": 14.3,
       "latest_audit": "2022-03"
     },
     {
       "auditor": "BlockSec",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 5.9,
+      "coverage_pct": 7.1,
       "latest_audit": "2022-08"
     }
   ],
@@ -1222,46 +1067,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x0a992d191deec32afe36203ad87d7d289a738f81",
-      "name": "Message",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x7209b4941e20787d7486a694d56c573e6dfc2092",
-      "name": "MessageTransmitter",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x44529a37a43bab8af2336698e31f2e4585ad7db6",
       "name": "Reward",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x6b25532e1060ce10cc3b0a99e5683b91bfde6982",
-      "name": "TokenMessenger",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 13,
+    "native": 10,
     "upstream": 3,
     "standard_library": 1,
     "needs_review": 3
@@ -1275,12 +1090,7 @@
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 4568,
-        "report_name": "Multichain Audit Reports"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": {

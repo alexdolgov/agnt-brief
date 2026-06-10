@@ -1,21 +1,23 @@
 # Agentic Audit Brief: Generic.Money
 
+⚠️ Lifecycle status: DECLINING - TVL changed 52.3% over 90 days
+
 ## Project Overview
 
 - Project: Generic.Money (`generic.money`)
 - Website: [https://www.generic.money/](https://www.generic.money/)
-- Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-24T02:01:20.370Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:04.317Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 13 unique implementations (26 raw deployments)
-- DeFi Llama TVL: $3,739,999.64
+- Contract surface: 12 unique implementations (25 raw deployments)
+- DeFi Llama TVL: $3,740,768.64
 - On-chain TVL (included contracts): $3,742,840.77
 - TVL by chain: Ethereum $3,742,840.77
 
 ## Project Description
 
-Generic.Money is a DeFi protocol that issues algorithmic stablecoins (GenericUSD) and provides vaults for yield-bearing deposits. It includes bridging infrastructure for cross-chain operations and governance via a DAO.
+Generic.Money provides GUSD, a fully collateralized stablecoin-as-a-service/onchain dollar backed by stablecoin collateral. The protocol includes vault-based yield routing, shared liquidity and accounting, cross-chain messaging, and marketed privacy features including confidential payments and an FHE-powered Privacy Pool, with sGUSD/staking usage and live deployments or usage on networks including StatusL2 and Citrea that should be evaluated for scope.
 
 ### Architecture
 
@@ -23,24 +25,25 @@ The Core Protocol Contracts issue GenericUSD, which is used by the Mainnet GUSD 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 9/12 (75.0%)
-- Verified + Unaudited implementations: 3
+- Verified implementations audited: 9/11 (81.8%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 13
-- Raw deployments: 26
+- Unique implementations: 12
+- Raw deployments: 25
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-01 (fresh)
 - Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
-- Tier 1 coverage: 75.0% (Spearbit)
+- Tier 1 coverage: 81.8% (Spearbit)
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 9 | 75.0% | 2026-01 |
+| Spearbit | Tier 1 | 9 | 81.8% | 2026-01 |
 
 ## Contract Surface
 
@@ -58,11 +61,10 @@ The Core Protocol Contracts issue GenericUSD, which is used by the Mainnet GUSD 
 | LineaBridgeAdapter | operational_periphery | ethereum | [`0xe39d67...b9ab93`](./contracts/ethereum-1/0xe39d672416421ce1536997ff892c8b339eb9ab93/) | ✅ Audited |
 | OneInchSwapper | adapter | ethereum | 2 deployments: ethereum [`0xb23684...7aeffc`](./contracts/ethereum-1/0xb2368497691f4c6e9b7acede4efc7831417aeffc/); ethereum `0xc1c8db...200a50` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| AggregationRouterV6 | adapter | ethereum | [`0x111111...842a65`](./contracts/ethereum-1/0x111111125421ca6dc452d289314280a0f8842a65/) | ⚠️ Unaudited |
 | DAO | unknown | ethereum | [`0x3794d7...5e3d17`](./contracts/ethereum-1/0x3794d7f91b3dd3b338fee671ac6aa42bea5e3d17/) | ⚠️ Unaudited |
 | ERC1967Proxy | proxy | ethereum | [`0x12dc03...1bd5b9`](./contracts/ethereum-1/0x12dc0362553b3cd5141da3bebab0c7e51d1bd5b9/) | ⚠️ Unaudited |
 
@@ -103,7 +105,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 5 |
-| upstream | 4 |
+| upstream | 3 |
 | standard_library | 3 |
 | needs_review | 1 |
 

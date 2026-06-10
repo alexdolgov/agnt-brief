@@ -6,17 +6,17 @@
 
 - Project: Universe XYZ (`universe-xyz`)
 - Lifecycle: dead (Tier 0, 99.4% below peak)
-- Generated: 2026-05-24T19:40:06.387Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:18.514Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 36 unique implementations (218 raw deployments)
-- DeFi Llama TVL: $1,646,633.56
-- On-chain TVL (included contracts): $38,952,551.09
-- TVL by chain: Ethereum $38,952,551.09
+- Contract surface: 34 unique implementations (216 raw deployments)
+- DeFi Llama TVL: $1,626,488.52
+- On-chain TVL (included contracts): $216,115.35
+- TVL by chain: Ethereum $216,115.35
 
 ## Project Description
 
-Universe XYZ is a yield protocol on Ethereum that enables users to stake tokens and earn rewards through a set of staking and liquidity pool contracts.
+Universe XYZ is an Ethereum NFT/community platform underpinned by the $XYZ token. Staking or yield components should only be described when specifically tied to verified Universe XYZ-owned contracts.
 
 ### Architecture
 
@@ -24,26 +24,26 @@ The IlluviumERC20 token is used within the Staking contract for reward distribut
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 5/25 (20.0%)
-- Verified + Unaudited implementations: 20
+- Verified implementations audited: 5/23 (21.7%)
+- Verified + Unaudited implementations: 18
 - Verified by bytecode match: 0
 - Unverified implementations: 11
-- Unique implementations: 36
-- Raw deployments: 218
+- Unique implementations: 34
+- Raw deployments: 216
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 2
-- ASD (verified + unaudited TVL): $38,952,551.09
+- ASD (verified + unaudited TVL): $216,115.35
 - Latest audit: 2022-03 (stale)
 - Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $38,952,551.09 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [dead]. ASD of $216,115.35 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Quantstamp | Tier 2 | 5 | 20.0% | 2021-02 |
-| Haechi Labs | Tier 2 | 4 | 16.0% | 2021-01 |
+| Quantstamp | Tier 2 | 5 | 21.7% | 2021-02 |
+| Haechi Labs | Tier 2 | 4 | 17.4% | 2021-01 |
 
 ## Contract Surface
 
@@ -57,15 +57,13 @@ The IlluviumERC20 token is used within the Staking contract for reward distribut
 | OwnershipFacet | unknown | ethereum | [`0x5c7cb1...3e75cc`](./contracts/ethereum-1/0x5c7cb19978cf51594a121c650d031761c73e75cc/) | ✅ Audited |
 | Rewards | unknown | ethereum | [`0xf306ad...c31205`](./contracts/ethereum-1/0xf306ad6a3e2abd5cfd6687a2c86998f1d9c31205/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (20)
+### ⚠️ Verified + Unaudited (18)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| IlluviumERC20 | token | ethereum | [`0x767fe9...d7ca0e`](./contracts/ethereum-1/0x767fe9edc9e0df98e07454847909b5e959d7ca0e/) | ⚠️ Unaudited |
 | XYZToken | token | ethereum | [`0x618679...fa2883`](./contracts/ethereum-1/0x618679df9efcd19694bb1daa8d00718eacfa2883/) | ⚠️ Unaudited |
 | BarnBridgeToken | operational_periphery | ethereum | [`0x0391d2...37750f`](./contracts/ethereum-1/0x0391d2021f89dc339f60fff84546ea23e337750f/) | ⚠️ Unaudited |
 | CommunityVault | core_logic | ethereum | [`0xc6f269...f9bd8e`](./contracts/ethereum-1/0xc6f269bcde85cba7c9d91ae5fb91f5612ff9bd8e/) | ⚠️ Unaudited |
-| Comp | unknown | ethereum | [`0xc00e94...f26888`](./contracts/ethereum-1/0xc00e94cb662c3520282e6f5717214004a7f26888/) | ⚠️ Unaudited |
 | DevFund | unknown | ethereum | [`0xf1e72f...b083d7`](./contracts/ethereum-1/0xf1e72f91f6319b50d64536fe6777c9c0a8b083d7/) | ⚠️ Unaudited |
 | HolderToken | token | ethereum | [`0x5e4e66...fd04f4`](./contracts/ethereum-1/0x5e4e6685a84eb1a597c7f794700893ab8ffd04f4/) | ⚠️ Unaudited |
 | IlluviumNFT | token | ethereum | [`0x384aa0...af9fdf`](./contracts/ethereum-1/0x384aa03d8b7cc6a818e7cb7a037ba0cd81af9fdf/) | ⚠️ Unaudited |
@@ -126,7 +124,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x767fe9...d7ca0e`](./contracts/ethereum-1/0x767fe9edc9e0df98e07454847909b5e959d7ca0e/) | IlluviumERC20 | token | $38,736,435.74 | Verified native implementation with $38,736,435.74 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x618679...fa2883`](./contracts/ethereum-1/0x618679df9efcd19694bb1daa8d00718eacfa2883/) | XYZToken | token | $216,115.35 | Verified native implementation with $216,115.35 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc6f269...f9bd8e`](./contracts/ethereum-1/0xc6f269bcde85cba7c9d91ae5fb91f5612ff9bd8e/) | CommunityVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf1e72f...b083d7`](./contracts/ethereum-1/0xf1e72f91f6319b50d64536fe6777c9c0a8b083d7/) | DevFund | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -146,10 +143,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 24 |
+| native | 23 |
 | upstream | 1 |
 | standard_library | 4 |
-| needs_review | 7 |
+| needs_review | 6 |
 
 ## Scope Matching Notes
 

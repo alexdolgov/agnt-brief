@@ -5,8 +5,8 @@
 - Project: stUSDT (`stusdt`)
 - Website: [https://stusdt.io/#/home](https://stusdt.io/#/home)
 - Lifecycle: active (Tier 0, 97.2% below peak)
-- Generated: 2026-05-31T10:42:45.609Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.701Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 10 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $64,953,161.35

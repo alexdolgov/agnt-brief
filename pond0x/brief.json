@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "pond0x",
-  "generated_at": "2026-05-31T10:16:33.380Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:09.359Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "pond0x",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Pond0x is a DEX aggregator that optimizes token swaps by routing trades across multiple liquidity sources. It features its own ecosystem tokens, PondCoin and PondWater, which may be used for governance or fee discounts.",
+    "project_purpose": "Pond0x, also referred to as Pond DEX, is a DEX aggregator for token swaps. Current sources frame the protocol around returning generated fees as claimable rewards or drops, with associated product areas such as Mine, Spawn, Water, pondSOL, and Teleport where independently verified. Unsupported governance or fee-discount utility claims for PondCoin or PondWater should be removed unless separately substantiated.",
     "relationship_narrative": "The Pond0x family consists of two core token contracts, PondCoin and PondWater, which are likely integrated into the aggregator's fee or incentive mechanisms. All contracts are deployed from a single cluster, indicating a unified infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 14,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -283,7 +288,7 @@
       "chain_name": "ethereum",
       "address": "0x06c79523ad3b4e285b2c0572d230ab81428b19fe",
       "name": "SpawnManager",
-      "role": "governance",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -323,7 +328,7 @@
       "chain_name": "ethereum",
       "address": "0x08939a9a6aefbd4bf9c0e128ed027591913393ca",
       "name": "SpawnManagerV2",
-      "role": "governance",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -622,7 +627,7 @@
       "chain_name": "ethereum",
       "address": "0x06c79523ad3b4e285b2c0572d230ab81428b19fe",
       "name": "SpawnManager",
-      "role": "governance",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -632,7 +637,7 @@
       "chain_name": "ethereum",
       "address": "0x08939a9a6aefbd4bf9c0e128ed027591913393ca",
       "name": "SpawnManagerV2",
-      "role": "governance",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

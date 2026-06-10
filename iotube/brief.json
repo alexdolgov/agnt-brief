@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "iotube",
-  "generated_at": "2026-05-31T08:31:39.520Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:06.320Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "iotube",
@@ -32,14 +32,14 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 40,
-    "total_addresses": 97,
-    "unique_implementations": 40,
-    "total_deployments": 97,
+    "total_contracts": 39,
+    "total_addresses": 96,
+    "unique_implementations": 39,
+    "total_deployments": 96,
     "audited_contracts": 0,
-    "unaudited_contracts": 17,
+    "unaudited_contracts": 16,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 16,
+    "contracts_verified_unaudited": 15,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 23,
     "coverage_pct": 0,
@@ -72,9 +72,14 @@
     }
   },
   "topography": {
-    "project_purpose": "ioTube is a cross-chain bridge that enables token transfers between Ethereum, BSC, Polygon, and IoTeX. It uses a lock-and-mint mechanism with MinterPool and TokenSafe contracts to facilitate secure asset movement across chains.",
+    "project_purpose": "ioTube is a cross-chain bridge centered on IoTeX that enables token transfers between IoTeX and EVM networks such as Ethereum, BSC, and Polygon using bridge components such as MinterPool and TokenSafe. Avalanche and other network support should be treated as homepage-claimed unless backed by verified contract or TVL evidence in the dataset.",
     "relationship_narrative": "The chain-specific families (BSC, Ethereum, Polygon) share a common architecture of MinterPool, TokenSafe, and TokenCashierWithPayload, with supporting TokenList and WitnessList contracts. The CrossChain IOTX family provides wrapped IoTeX tokens that can be used across these chains, while the Web3 Address Format family may serve as a shared utility for address validation.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 39,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1668,37 +1673,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-      "name": "WETH9",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "weth",
-      "product_line": "Contracts on Ethereum",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "WETH9",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xc051572665a00d55a534f6483b906297613eb894",
       "name": "WIOTXUnwrapper",
       "role": "unknown",
@@ -2002,7 +1976,7 @@
   "origin_summary": {
     "native": 39,
     "upstream": 0,
-    "standard_library": 1,
+    "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {

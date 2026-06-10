@@ -1,23 +1,21 @@
 # Agentic Audit Brief: ShapeShift
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: ShapeShift (`shapeshift`)
 - Website: [https://shapeshift.com](https://shapeshift.com)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:37:32.426Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:14.925Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum, gnosis, polygon
-- Contract surface: 40 unique implementations (115 raw deployments)
+- Contract surface: 40 unique implementations (111 raw deployments)
 - DeFi Llama TVL: $1,603,814.61
 - On-chain TVL (included contracts): $1,339,796.19
 - TVL by chain: Ethereum $986,109.89 | Arbitrum $274,819.67 | Gnosis $48,399.61 | Polygon $30,467.03
 
 ## Project Description
 
-ShapeShift is a decentralized exchange (DEX) aggregator and DeFi platform that enables users to trade, earn yield, and stake assets across multiple chains. It provides liquidity pools, staking contracts, and governance tokens to facilitate decentralized trading and rewards.
+ShapeShift is a community-owned, non-custodial multichain crypto app and wallet with FOX governance, DEX-aggregator routing, and DeFi/earn integrations. It routes trades through external DEXs and aggregators and should not be described as owning all underlying liquidity pools or upstream protocol contracts used by the app.
 
 ### Architecture
 
@@ -30,14 +28,13 @@ All contracts belong to a single product family, sharing the same governance tok
 - Verified by bytecode match: 0
 - Unverified implementations: 12
 - Unique implementations: 40
-- Raw deployments: 115
-- Audits discovered: 11
+- Raw deployments: 111
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $1,339,796.19
-- Latest audit: 2024-06 (aging)
-- Staleness: 0 fresh, 1 aging, 5 stale, 5 unknown
+- Latest audit: 2024-06 (stale)
+- Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $1,339,796.19 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -60,7 +57,7 @@ All contracts belong to a single product family, sharing the same governance tok
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | EthPool | core_logic | ethereum | 4 deployments: ethereum [`0x77f18a...b864ee`](./contracts/ethereum-1/0x77f18a6968a38f9aef1af676420c4799e8b864ee/); ethereum `0xb104a7...8246d5`; ethereum `0xca77a2...d5da31`; ethereum `0xd3d13a...2a2f36` | ⚠️ Unaudited |
-| Pool | core_logic | ethereum | 28 deployments: ethereum [`0x0139b3...e6f15a`](./contracts/ethereum-1/0x0139b34012a6639e896b883901b7dc1bb6e6f15a/); ethereum `0x03dccc...2d360d`; ethereum `0x04bda0...0e860d`; ethereum `0x061aee...b2a7e7`; ethereum `0x0ce34f...fdfb75`; ethereum `0x15a629...b79415`; ethereum `0x1b429e...192fd3`; ethereum `0x2d3ead...022029`; ethereum `0x2e9f9b...bd4fed`; ethereum `0x2fc6e9...ad22e1`; ethereum `0x41f6a9...b00263`; ethereum `0x482258...e6b03d`; ethereum `0x721150...ad4b4c`; ethereum `0x7a75ec...ac63fd`; ethereum `0x808d3e...ed5311`; ethereum `0x8858a7...61faa3`; ethereum `0x8d2254...d97832`; ethereum `0x94671a...20efb2`; ethereum `0x9eee9e...9797a3`; ethereum `0xadf15e...81e655`; ethereum `0xbbfc7d...c7ba8a`; ethereum `0xca5e07...d58d4e`; ethereum `0xd3b5d9...f9aa84`; ethereum `0xd899ac...5fc03e`; ethereum `0xdc0b02...9709b0`; ethereum `0xe7a7d1...31532d`; ethereum `0xeff721...ffc8de`; ethereum `0xf49764...629777` | ⚠️ Unaudited |
+| Pool | core_logic | ethereum | 24 deployments: ethereum [`0x03dccc...2d360d`](./contracts/ethereum-1/0x03dcccd17cc36ee61f9004bcfd7a85f58b2d360d/); ethereum `0x04bda0...0e860d`; ethereum `0x061aee...b2a7e7`; ethereum `0x0ce34f...fdfb75`; ethereum `0x15a629...b79415`; ethereum `0x1b429e...192fd3`; ethereum `0x2d3ead...022029`; ethereum `0x2e9f9b...bd4fed`; ethereum `0x2fc6e9...ad22e1`; ethereum `0x41f6a9...b00263`; ethereum `0x482258...e6b03d`; ethereum `0x721150...ad4b4c`; ethereum `0x7a75ec...ac63fd`; ethereum `0x808d3e...ed5311`; ethereum `0x8858a7...61faa3`; ethereum `0x8d2254...d97832`; ethereum `0x94671a...20efb2`; ethereum `0x9eee9e...9797a3`; ethereum `0xadf15e...81e655`; ethereum `0xd3b5d9...f9aa84`; ethereum `0xdc0b02...9709b0`; ethereum `0xe7a7d1...31532d`; ethereum `0xeff721...ffc8de`; ethereum `0xf49764...629777` | ⚠️ Unaudited |
 | StandardArbERC20 | token | arbitrum | [`0xf929de...513c73`](./contracts/arbitrum-42161/0xf929de51d91c77e42f5090069e0ad7a09e513c73/) | ⚠️ Unaudited |
 | PermittableToken | token | gnosis | [`0x21a426...67509d`](./contracts/gnosis-100/0x21a42669643f45bc0e086b8fc2ed70c23d67509d/) | ⚠️ Unaudited |
 | UChildERC20 | token | polygon | [`0x65a05d...5b0aa8`](./contracts/polygon-137/0x65a05db8322701724c197af82c9cae41195b0aa8/) | ⚠️ Unaudited |
@@ -120,15 +117,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [README.md (also discovered via alternate URL)](https://github.com/shapeshift/security/blob/main/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [rFOX_v02.pdf](https://github.com/shapeshift/rFOX/blob/main/audits/rFOX_v02.pdf) | unknown | Audit | 2024-06 | aging | Direct | contract_name | 4 | high |
-| [RDP.md](https://github.com/shapeshift/docs/blob/main/security/RDP.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Security Training Part 1 Tech Setup.pdf](https://github.com/shapeshift/docs/blob/main/security/Security%20Training%20Part%201%20Tech%20Setup.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Security Training Part 2 Policy.pdf](https://github.com/shapeshift/docs/blob/main/security/Security%20Training%20Part%202%20Policy.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Security Training Part 3 Practice.pdf](https://github.com/shapeshift/docs/blob/main/security/Security%20Training%20Part%203%20Practice.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ShapeShift Information Security Policy v1.2.pdf](https://github.com/shapeshift/docs/blob/main/security/ShapeShift%20Information%20Security%20Policy%20v1.2.pdf) | unknown | Audit | 2021-09 | stale | Direct | n/a | 0 | n/a |
-| [2017-03.md (also discovered via alternate URL)](https://github.com/shapeshift/fox-staking-1/blob/master/openzeppelin-solidity-3.4.0/audit/2017-03.md) | OpenZeppelin | Audit | 2017-03 | stale | Direct | n/a | 0 | n/a |
-| [2018-10.pdf (also discovered via alternate URL)](https://github.com/shapeshift/fox-staking-1/blob/master/openzeppelin-solidity-3.4.0/audit/2018-10.pdf) | OpenZeppelin | Audit | 2018-10 | stale | Direct | n/a | 0 | n/a |
+| [rFOX_v02.pdf](https://github.com/shapeshift/rFOX/blob/main/audits/rFOX_v02.pdf) | unknown | Audit | 2024-06 | stale | Direct | contract_name | 4 | high |
 | [ZokyoAudit.pdf](https://github.com/shapeshift/yearn-router/blob/development/security/ZokyoAudit.pdf) | unknown | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
 | [Zokyo_Security_Audit.pdf](https://github.com/shapeshift/yieldies/blob/develop/docs/Zokyo_Security_Audit.pdf) | unknown | Audit | 2022-03 | stale | Direct | contract_name | 9 | high |
 
@@ -139,7 +128,6 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x77f18a...b864ee`](./contracts/ethereum-1/0x77f18a6968a38f9aef1af676420c4799e8b864ee/) | EthPool | core_logic | $593,565.70 | Verified native implementation with $593,565.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0139b3...e6f15a`](./contracts/ethereum-1/0x0139b34012a6639e896b883901b7dc1bb6e6f15a/) | Pool | core_logic | $392,544.19 | Verified native implementation with $392,544.19 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xf929de...513c73`](./contracts/arbitrum-42161/0xf929de51d91c77e42f5090069e0ad7a09e513c73/) | StandardArbERC20 | token | $267,437.12 | Verified native implementation with $267,437.12 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | gnosis | [`0x21a426...67509d`](./contracts/gnosis-100/0x21a42669643f45bc0e086b8fc2ed70c23d67509d/) | PermittableToken | token | $48,399.61 | Verified native implementation with $48,399.61 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x65a05d...5b0aa8`](./contracts/polygon-137/0x65a05db8322701724c197af82c9cae41195b0aa8/) | UChildERC20 | token | $30,467.03 | Verified native implementation with $30,467.03 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
@@ -161,30 +149,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 28 |
+| native | 27 |
 | upstream | 2 |
-| standard_library | 5 |
+| standard_library | 6 |
 | needs_review | 5 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 9
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
 - Match method counts: extraction_exact=13
 
 Zero-match audit list:
 
-- [9377] README.md
-- [9417] RDP.md
-- [9419] Security Training Part 1 Tech Setup.pdf
-- [9420] Security Training Part 2 Policy.pdf
-- [9421] Security Training Part 3 Practice.pdf
-- [9422] ShapeShift Information Security Policy v1.2.pdf
-- [9423] 2017-03.md
-- [9424] 2018-10.pdf
 - [9427] ZokyoAudit.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

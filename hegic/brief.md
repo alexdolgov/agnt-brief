@@ -5,8 +5,8 @@
 - Project: Hegic (`hegic`)
 - Website: [https://www.hegic.co/?ref=0x798ff1e6d7afd28c333ee6ebe03125d30ec6ef10](https://www.hegic.co/?ref=0x798ff1e6d7afd28c333ee6ebe03125d30ec6ef10)
 - Lifecycle: active (Tier 0, 91.2% below peak)
-- Generated: 2026-05-31T08:23:55.391Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.559Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 63 unique implementations (97 raw deployments)
 - DeFi Llama TVL: $10,022,682.55
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Hegic is an on-chain options trading protocol that allows users to buy and sell call and put options on ETH and ERC-20 assets. It uses liquidity pools to underwrite options, enabling permissionless and non-custodial options trading.
+Hegic is a peer-to-pool on-chain options protocol tracked on Arbitrum and Ethereum. The current product lets users trade ETH and WBTC call and put options, including ATM and OTM options, and offers one-click option strategies backed by protocol liquidity pools. Legacy Ethereum HegicCALL/HegicPUT and HegicETHPool/HegicERCPool deployments should be distinguished from the current multi-chain Hegic options system, whose TVL is primarily on Arbitrum.
 
 ### Architecture
 
@@ -29,11 +29,11 @@ The Hegic contract acts as a registry or access control layer for the option con
 - Unverified implementations: 36
 - Unique implementations: 63
 - Raw deployments: 97
-- Audits discovered: 2
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $54,068.48
 - Latest audit: 2022-10 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -139,7 +139,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [PeckShield-Audit-Report-Hegic-Herge-Protocol-Upgrade-v1.0.pdf](https://github.com/hegic/contracts/blob/main/packages/herge/docs/PeckShield-Audit-Report-Hegic-Herge-Protocol-Upgrade-v1.0.pdf) | PeckShield | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
-| [specification.pdf](https://github.com/hegic/hegic-hardcore-beta/blob/hegic-hardcore-beta/docs/specification.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -187,7 +186,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -195,6 +194,5 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [7286] PeckShield-Audit-Report-Hegic-Herge-Protocol-Upgrade-v1.0.pdf
-- [7287] specification.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -4,8 +4,8 @@
 
 - Project: Neku (`neku`)
 - Lifecycle: active (Tier 0, 86.4% below peak)
-- Generated: 2026-05-24T20:04:00.904Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:08.059Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum
 - Contract surface: 17 unique implementations (55 raw deployments)
 - DeFi Llama TVL: $1,598,052.81
@@ -14,7 +14,7 @@
 
 ## Project Description
 
-Neku is a lending protocol on Arbitrum One that enables users to supply and borrow crypto assets through a Compound-based architecture. It uses a Comptroller for risk management and a governance token (Comp) for protocol incentives.
+Neku is a decentralized multi-chain lending protocol that enables users to supply and borrow crypto assets through a Compound-based architecture. The listed contracts represent the Arbitrum deployment subset, including a Unitroller/Comptroller control plane and CErc20Delegator market contracts. Governance or incentive-token claims should be treated as unverified unless supported by contract, documentation, or audit evidence.
 
 ### Architecture
 

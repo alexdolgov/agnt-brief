@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "concentrator",
-  "generated_at": "2026-05-31T07:43:52.766Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.502Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "concentrator",
@@ -23,25 +23,25 @@
   },
   "summary": {
     "total_contracts": 342,
-    "total_addresses": 941,
+    "total_addresses": 937,
     "unique_implementations": 342,
-    "total_deployments": 941,
-    "audited_contracts": 134,
-    "unaudited_contracts": 166,
-    "contracts_verified_audited": 134,
-    "contracts_verified_unaudited": 166,
+    "total_deployments": 937,
+    "audited_contracts": 94,
+    "unaudited_contracts": 206,
+    "contracts_verified_audited": 94,
+    "contracts_verified_unaudited": 206,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 42,
-    "coverage_pct": 44.7,
-    "total_audits": 54,
-    "scoreable_audits": 53,
+    "coverage_pct": 31.3,
+    "total_audits": 33,
+    "scoreable_audits": 33,
     "dl_tvl_usd": 58654066.77774,
     "tvl_usd": 111980295.06367941,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "ethereum": 111980295.06
     },
-    "asd_usd": 19376435.56197838,
+    "asd_usd": 105162372.55857667,
     "website_url": "https://concentrator.aladdin.club/",
     "chains": [
       "ethereum"
@@ -50,19 +50,24 @@
     "tier1_auditors": [
       "Trail of Bits"
     ],
-    "latest_audit_date": "2026-03",
-    "audit_freshness": "fresh",
+    "latest_audit_date": "2025-03",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
-      "fresh": 8,
-      "aging": 14,
-      "stale": 32,
+      "fresh": 0,
+      "aging": 4,
+      "stale": 29,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Concentrator is a yield aggregation and optimization protocol that helps users maximize returns on Curve and Convex liquidity positions. It provides auto-compounding vaults, leveraged yield strategies, and a stablecoin (FxUSD) backed by yield-bearing assets.",
+    "project_purpose": "Concentrator is a yield aggregation and vault platform focused on boosting and auto-compounding rewards for Curve, Convex, Frax and StakeDAO-related assets through Concentrator compounders, harvesters and vaults. f(x)/FxUSD stablecoin mechanics and CLever are separate AladdinDAO product lines unless a specific Concentrator wrapper is in scope.",
     "relationship_narrative": "All contracts belong to a single Concentrator family, sharing infrastructure like upgradeable proxies and beacons for vault and token implementations. Vaults deposit into Curve/Convex, compounders auto-reinvest rewards, and FxUSD is minted via base pools using yield-bearing tokens as collateral.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 342,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -90,7 +95,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -99,7 +104,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 85767000.6618243,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -108,7 +113,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -117,7 +122,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -126,7 +131,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -135,7 +140,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -144,7 +149,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -153,7 +158,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -162,7 +167,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -171,7 +176,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -180,7 +185,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -189,26 +194,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5580",
-        "audit-5582",
-        "audit-5583",
-        "audit-5584",
-        "audit-5597",
-        "audit-5598",
-        "audit-5599",
-        "audit-5600",
-        "audit-5632",
-        "audit-5635",
-        "audit-5636"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -776,10 +769,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5587",
-        "audit-5588",
-        "audit-5589",
-        "audit-5590",
         "audit-5605",
         "audit-5606"
       ],
@@ -841,8 +830,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5587",
-        "audit-5596",
         "audit-5606"
       ],
       "is_audited": true,
@@ -1030,11 +1017,7 @@
         }
       ],
       "audits_covering": [
-        "audit-5583",
-        "audit-5584",
-        "audit-5594",
-        "audit-5599",
-        "audit-5600"
+        "audit-5594"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1094,7 +1077,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1103,7 +1086,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1112,7 +1095,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1121,7 +1104,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 18591.5797,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1130,7 +1113,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1139,23 +1122,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5580",
-        "audit-5583",
-        "audit-5584",
-        "audit-5597",
-        "audit-5599",
-        "audit-5600",
-        "audit-5635",
-        "audit-5636"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1183,7 +1157,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5587",
         "audit-5606"
       ],
       "is_audited": true,
@@ -1386,7 +1359,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5587",
         "audit-5606"
       ],
       "is_audited": true,
@@ -1452,7 +1424,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1461,16 +1433,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 344.7490599871954,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5566"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1780,7 +1750,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.006014,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1789,22 +1759,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5582",
-        "audit-5583",
-        "audit-5584",
-        "audit-5598",
-        "audit-5599",
-        "audit-5600",
-        "audit-5632"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1828,7 +1790,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1837,21 +1799,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5582",
-        "audit-5583",
-        "audit-5584",
-        "audit-5598",
-        "audit-5599",
-        "audit-5600"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -3404,7 +3359,6 @@
       ],
       "audits_covering": [
         "audit-5565",
-        "audit-5566",
         "audit-5569"
       ],
       "is_audited": true,
@@ -4032,7 +3986,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -4041,7 +3995,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -4050,17 +4004,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5582",
-        "audit-5598"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -5101,16 +5052,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5607"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -5263,17 +5212,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5582",
-        "audit-5598"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -5328,21 +5274,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5582",
-        "audit-5583",
-        "audit-5584",
-        "audit-5598",
-        "audit-5599",
-        "audit-5600"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -5469,7 +5408,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5587",
         "audit-5606"
       ],
       "is_audited": true,
@@ -5634,8 +5572,7 @@
       ],
       "audits_covering": [
         "audit-5568",
-        "audit-5569",
-        "audit-5570"
+        "audit-5569"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -5664,17 +5601,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5589",
-        "audit-5590"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -5698,18 +5632,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5588",
-        "audit-5589",
-        "audit-5590"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -5733,16 +5663,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5607"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -5799,18 +5727,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5588",
-        "audit-5589",
-        "audit-5590"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -5834,16 +5758,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5607"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -5867,18 +5789,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5588",
-        "audit-5589",
-        "audit-5590"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -5906,7 +5824,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5587",
         "audit-5606"
       ],
       "is_audited": true,
@@ -6028,7 +5945,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5587",
         "audit-5606"
       ],
       "is_audited": true,
@@ -6062,7 +5978,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5587",
         "audit-5606"
       ],
       "is_audited": true,
@@ -6278,18 +6193,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5588",
-        "audit-5589",
-        "audit-5590"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -6318,24 +6229,6 @@
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0x676c359c78f75581ab2da5c353d2577c41cecb43",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6c338c0bfb67970231109d4b33047a6e6bc685e5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
           "address": "0x9d11ab23d33ad026c466ce3c124928fdb69ba20e",
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -6350,30 +6243,10 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xad95d0c8782f8c9076e8f081f7a5e1a4ac4499a3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xb788998187a8536f38b69ae657323ac8b70551bb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
         }
       ],
       "audits_covering": [
-        "audit-5587",
-        "audit-5606",
-        "audit-5633"
+        "audit-5606"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -6541,7 +6414,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5587",
         "audit-5606"
       ],
       "is_audited": true,
@@ -6571,7 +6443,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -6580,7 +6452,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -6589,18 +6461,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5582",
-        "audit-5598",
-        "audit-5632"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -6624,7 +6492,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -6633,7 +6501,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -6642,20 +6510,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5583",
-        "audit-5584",
-        "audit-5599",
-        "audit-5600",
-        "audit-5632"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -6679,18 +6541,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5588",
-        "audit-5589",
-        "audit-5590"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -6714,16 +6572,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5607"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -6800,7 +6656,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5587",
         "audit-5606"
       ],
       "is_audited": true,
@@ -6925,19 +6780,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5583",
-        "audit-5584",
-        "audit-5599",
-        "audit-5600"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -7032,17 +6882,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5582",
-        "audit-5598"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -7144,7 +6991,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -7153,18 +7000,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5580",
-        "audit-5635",
-        "audit-5636"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -7439,7 +7282,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -7448,7 +7291,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -7457,17 +7300,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5582",
-        "audit-5598"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -7665,9 +7505,7 @@
         }
       ],
       "audits_covering": [
-        "audit-5587",
-        "audit-5606",
-        "audit-5607"
+        "audit-5606"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -7696,7 +7534,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -7705,16 +7543,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5607"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -8115,19 +7951,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5583",
-        "audit-5584",
-        "audit-5599",
-        "audit-5600"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -8280,9 +8111,7 @@
         }
       ],
       "audits_covering": [
-        "audit-5566",
-        "audit-5594",
-        "audit-5632"
+        "audit-5594"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -8845,7 +8674,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -8854,7 +8683,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -8863,22 +8692,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5582",
-        "audit-5583",
-        "audit-5584",
-        "audit-5598",
-        "audit-5599",
-        "audit-5600",
-        "audit-5632"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -9037,7 +8858,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -9046,7 +8867,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -9055,7 +8876,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -9064,7 +8885,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -9073,21 +8894,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5580",
-        "audit-5582",
-        "audit-5598",
-        "audit-5632",
-        "audit-5635",
-        "audit-5636"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -9151,18 +8965,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5580",
-        "audit-5632",
-        "audit-5636"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -9186,19 +8996,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5583",
-        "audit-5584",
-        "audit-5599",
-        "audit-5600"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -9222,7 +9027,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -9231,7 +9036,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -9240,16 +9045,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5597"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -9273,7 +9076,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -9282,7 +9085,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -9291,7 +9094,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -9300,7 +9103,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -9309,7 +9112,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -9318,7 +9121,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -9327,17 +9130,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5580",
-        "audit-5636"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -10200,7 +10000,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -10209,19 +10009,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5583",
-        "audit-5584",
-        "audit-5599",
-        "audit-5600"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -11266,7 +11061,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -11275,7 +11070,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -11284,7 +11079,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -11293,7 +11088,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -11302,7 +11097,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -11311,17 +11106,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5582",
-        "audit-5598"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -11345,7 +11137,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -11354,7 +11146,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -11363,7 +11155,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -11372,7 +11164,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -11381,7 +11173,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -11390,20 +11182,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5580",
-        "audit-5582",
-        "audit-5598",
-        "audit-5635",
-        "audit-5636"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -11427,7 +11213,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -11436,7 +11222,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -11445,17 +11231,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5582",
-        "audit-5598"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -11581,9 +11364,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5588",
-        "audit-5589",
-        "audit-5590",
         "audit-5605"
       ],
       "is_audited": true,
@@ -11946,7 +11726,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -11955,19 +11735,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5583",
-        "audit-5584",
-        "audit-5599",
-        "audit-5600"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -12362,7 +12137,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5587",
         "audit-5606"
       ],
       "is_audited": true,
@@ -12561,7 +12335,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -12570,7 +12344,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -12579,19 +12353,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5588",
-        "audit-5589",
-        "audit-5590",
-        "audit-5607"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -14689,8 +14458,7 @@
         }
       ],
       "audits_covering": [
-        "audit-5591",
-        "audit-5596"
+        "audit-5591"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -14719,16 +14487,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5596"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -15922,16 +15688,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5597"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -16076,7 +15840,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5587",
         "audit-5606"
       ],
       "is_audited": true,
@@ -16795,41 +16558,6 @@
       ]
     },
     {
-      "audit_id": 5566,
-      "audit_key": "audit-5566",
-      "report_name": "SECBIT_Aladdin_Fx_CLever_Updates_Report_20240621.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Aladdin_Fx_CLever_Updates_Report_20240621.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "CLeverCVXLocker",
-        "MultiPathConverter",
-        "RewardTokenWrapper"
-      ],
-      "matched_contracts": 12,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 5566,
-          "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Aladdin_Fx_CLever_Updates_Report_20240621.pdf"
-        },
-        {
-          "audit_id": 5616,
-          "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_Aladdin_Fx_CLever_Updates_Report_20240621.pdf"
-        }
-      ]
-    },
-    {
       "audit_id": 5567,
       "audit_key": "audit-5567",
       "report_name": "SECBIT_Aladdin_aCVX_Report_v1.0_20231018.pdf",
@@ -16938,40 +16666,6 @@
         {
           "audit_id": 5619,
           "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_CLever_Report_v1.1.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 5570,
-      "audit_key": "audit-5570",
-      "report_name": "SECBIT_CLever_Stakedao_Update_Report_20241125.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_CLever_Stakedao_Update_Report_20241125.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "CLever",
-        "Furnace"
-      ],
-      "matched_contracts": 4,
-      "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 5570,
-          "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_CLever_Stakedao_Update_Report_20241125.pdf"
-        },
-        {
-          "audit_id": 5620,
-          "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_CLever_Stakedao_Update_Report_20241125.pdf"
         }
       ]
     },
@@ -17210,7 +16904,7 @@
       "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_arUSD_Report_v1.0_20240618.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -17317,204 +17011,6 @@
       ]
     },
     {
-      "audit_id": 5580,
-      "audit_key": "audit-5580",
-      "report_name": "SECBIT_FX_LimitOrder_fxMint_Report_v1.1_20251128.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_FX_LimitOrder_fxMint_Report_v1.1_20251128.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "BaseConditionalOrder",
-        "BasePool",
-        "DutchAuctionSwap",
-        "FxUSDBasePool",
-        "GPv2Interaction",
-        "GPv2Order",
-        "LimitOrderManager",
-        "OrderExecutionLibrary",
-        "OrderLibrary",
-        "PoolConfiguration",
-        "PoolManager",
-        "PositionOperateFacet",
-        "ProtocolTreasury",
-        "ShortPoolManager",
-        "TickLogic"
-      ],
-      "matched_contracts": 39,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5581,
-      "audit_key": "audit-5581",
-      "report_name": "SECBIT_FX_TickMath_Update_Report_v1.0_20250605.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_FX_TickMath_Update_Report_v1.0_20250605.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5582,
-      "audit_key": "audit-5582",
-      "report_name": "SECBIT_FX_V2.1_Report_v1.2_20250813.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_FX_V2.1_Report_v1.2_20250813.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-08",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AaveFundingPool",
-        "BasePool",
-        "CreditNote",
-        "FeeDistributorAdmin",
-        "FlashLoanCallbackFacet",
-        "FlashLoanFacetBase",
-        "FlashLoans",
-        "FxUSDBasePoolFacet",
-        "FxUSDPriceOracle",
-        "InverseWstETHPriceOracle",
-        "LongPositionEmergencyCloseFacet",
-        "PegKeeper",
-        "PoolConfiguration",
-        "PoolErrors",
-        "PoolManager",
-        "PoolStorage",
-        "PositionLogic",
-        "ProtocolFees",
-        "ShortPool",
-        "ShortPoolManager",
-        "ShortPositionOperateFlashLoanFacet",
-        "TickLogic"
-      ],
-      "matched_contracts": 51,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5583,
-      "audit_key": "audit-5583",
-      "report_name": "SECBIT_FX_V2_Report_v1.5_20250507.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_FX_V2_Report_v1.5_20250507.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AaveFundingPool",
-        "BasePool",
-        "FlashLoanCallbackFacet",
-        "FlashLoanFacetBase",
-        "FlashLoans",
-        "FxUSDBasePool",
-        "FxUSDBasePoolFacet",
-        "FxUSDRegeneracy",
-        "GaugeRewarder",
-        "LSDPriceOracleBase",
-        "MigrateFacet",
-        "PegKeeper",
-        "PoolConstant",
-        "PoolErrors",
-        "PoolManager",
-        "PoolStorage",
-        "PositionLogic",
-        "PositionOperateFlashLoanFacet",
-        "ProtocolFees",
-        "ReservePool",
-        "RouterManagementFacet",
-        "SpotPriceOracleBase",
-        "StETHPriceOracle",
-        "TickBitmap",
-        "TickLogic",
-        "TickMath"
-      ],
-      "matched_contracts": 39,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5584,
-      "audit_key": "audit-5584",
-      "report_name": "SECBIT_FX_V2_Report_v1.5_2025_05_07.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_FX_V2_Report_v1.5_2025_05_07.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AaveFundingPool",
-        "BasePool",
-        "FlashLoanCallbackFacet",
-        "FlashLoanFacetBase",
-        "FlashLoans",
-        "FxUSDBasePool",
-        "FxUSDBasePoolFacet",
-        "FxUSDRegeneracy",
-        "GaugeRewarder",
-        "LSDPriceOracleBase",
-        "MigrateFacet",
-        "PegKeeper",
-        "PoolConstant",
-        "PoolErrors",
-        "PoolManager",
-        "PoolStorage",
-        "PositionLogic",
-        "PositionOperateFlashLoanFacet",
-        "ProtocolFees",
-        "ReservePool",
-        "RouterManagementFacet",
-        "SpotPriceOracleBase",
-        "StETHPriceOracle",
-        "TickBitmap",
-        "TickLogic",
-        "TickMath"
-      ],
-      "matched_contracts": 39,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 5585,
       "audit_key": "audit-5585",
       "report_name": "SECBIT_Generic_CLever_Report.pdf",
@@ -17582,199 +17078,6 @@
         {
           "audit_id": 5631,
           "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_TokenSale_Report_v1.1.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 5587,
-      "audit_key": "audit-5587",
-      "report_name": "SECBIT_f(x)_FxUSD_Report_v1.0_20240223.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_FxUSD_Report_v1.0_20240223.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "FractionalTokenV2",
-        "FxFrxETHTwapOracle",
-        "FxInitialFund",
-        "FxMarketV1Facet",
-        "FxStableMath",
-        "FxUSD",
-        "FxUSDFacet",
-        "FxUSDRebalancer",
-        "FxUSDShareableRebalancePool",
-        "GaugeControllerOwner",
-        "LeveragedTokenV2",
-        "LibGatewayRouter",
-        "MarketV2",
-        "ReservePoolV2",
-        "ShareableRebalancePool",
-        "ShareableRebalancePoolV2",
-        "TokenConvertManagementFacet",
-        "TreasuryV2",
-        "WrappedTokenTreasuryV2"
-      ],
-      "matched_contracts": 101,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 5587,
-          "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_FxUSD_Report_v1.0_20240223.pdf"
-        },
-        {
-          "audit_id": 5634,
-          "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_FxUSD_Report_v1.0_20240223.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 5588,
-      "audit_key": "audit-5588",
-      "report_name": "SECBIT_f(x)_New_Oracle_Report_v1.0_20240514.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_New_Oracle_Report_v1.0_20240514.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "FxBTCDerivativeOracleBase",
-        "FxEETHOracleV2",
-        "FxEzETHOracleV2",
-        "FxFrxETHOracleV2",
-        "FxLSDOracleV2Base",
-        "FxSpotOracleBase",
-        "FxStETHOracleV2",
-        "FxStableMath",
-        "FxWBTCOracleV2",
-        "LeveragedTokenV2",
-        "SpotPriceOracle",
-        "StableMath",
-        "TreasuryV2",
-        "TreasuryWithFundingCost"
-      ],
-      "matched_contracts": 32,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 5588,
-          "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_New_Oracle_Report_v1.0_20240514.pdf"
-        },
-        {
-          "audit_id": 5637,
-          "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_New_Oracle_Report_v1.0_20240514.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 5589,
-      "audit_key": "audit-5589",
-      "report_name": "SECBIT_f(x)_New_Oracle_Report_v1.1_20240712.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_New_Oracle_Report_v1.1_20240712.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "FxBTCDerivativeOracleBase",
-        "FxCVXOracle",
-        "FxEETHOracleV2",
-        "FxERC20OracleBase",
-        "FxEzETHOracleV2",
-        "FxFrxETHOracleV2",
-        "FxLSDOracleV2Base",
-        "FxSpotOracleBase",
-        "FxStETHOracleV2",
-        "FxStableMath",
-        "FxWBTCOracleV2",
-        "LeveragedTokenV2",
-        "SpotPriceOracle",
-        "StableMath",
-        "TreasuryV2",
-        "TreasuryWithFundingCost"
-      ],
-      "matched_contracts": 33,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 5589,
-          "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_New_Oracle_Report_v1.1_20240712.pdf"
-        },
-        {
-          "audit_id": 5638,
-          "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_New_Oracle_Report_v1.1_20240712.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 5590,
-      "audit_key": "audit-5590",
-      "report_name": "SECBIT_f(x)_New_Oracle_Report_v1.2_20240717.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_New_Oracle_Report_v1.2_20240717.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "FxBTCDerivativeOracleBase",
-        "FxCVXOracle",
-        "FxEETHOracleV2",
-        "FxERC20OracleBase",
-        "FxEzETHOracleV2",
-        "FxFrxETHOracleV2",
-        "FxLSDOracleV2Base",
-        "FxSpotOracleBase",
-        "FxStETHOracleV2",
-        "FxStableMath",
-        "FxWBTCOracleV2",
-        "LeveragedTokenV2",
-        "SpotPriceOracle",
-        "StableMath",
-        "TreasuryV2",
-        "TreasuryWithFundingCost"
-      ],
-      "matched_contracts": 33,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 5590,
-          "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_New_Oracle_Report_v1.2_20240717.pdf"
-        },
-        {
-          "audit_id": 5639,
-          "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_New_Oracle_Report_v1.2_20240717.pdf"
         }
       ]
     },
@@ -17989,242 +17292,6 @@
         {
           "audit_id": 5644,
           "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_Rebalance_Pool_Boost_Report_v1.0_20231213.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 5596,
-      "audit_key": "audit-5596",
-      "report_name": "SECBIT_f(x)_Shareable_RebalancePool_Report_20240118.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Shareable_RebalancePool_Report_20240118.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "ShareableRebalancePool",
-        "VotingEscrowBoost",
-        "VotingEscrowHelper"
-      ],
-      "matched_contracts": 6,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 5596,
-          "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Shareable_RebalancePool_Report_20240118.pdf"
-        },
-        {
-          "audit_id": 5645,
-          "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_Shareable_RebalancePool_Report_20240118.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 5597,
-      "audit_key": "audit-5597",
-      "report_name": "SECBIT_f(x)_Update_Batch_Rebalance_WBTC_Oracle_Report_v1.0_20250317.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Update_Batch_Rebalance_WBTC_Oracle_Report_v1.0_20250317.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-03",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "BTCDerivativeOracleBase",
-        "BasePool",
-        "FxUSDBasePool",
-        "MorphoFlashLoanCallbackFacet",
-        "MorphoFlashLoanFacetBase",
-        "PoolManager",
-        "PositionOperateFlashLoanFacetV2",
-        "TickLogic",
-        "WBTCPriceOracle"
-      ],
-      "matched_contracts": 22,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 5597,
-          "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Update_Batch_Rebalance_WBTC_Oracle_Report_v1.0_20250317.pdf"
-        },
-        {
-          "audit_id": 5646,
-          "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_Update_Batch_Rebalance_WBTC_Oracle_Report_v1.0_20250317.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 5598,
-      "audit_key": "audit-5598",
-      "report_name": "SECBIT_f(x)_V2.1_Report_v1.0_20250722.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_V2.1_Report_v1.0_20250722.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AaveFundingPool",
-        "BasePool",
-        "CreditNote",
-        "FeeDistributorAdmin",
-        "FlashLoanCallbackFacet",
-        "FlashLoanFacetBase",
-        "FlashLoans",
-        "FxUSDBasePoolFacet",
-        "FxUSDPriceOracle",
-        "InverseWstETHPriceOracle",
-        "LongPositionEmergencyCloseFacet",
-        "PegKeeper",
-        "PoolConfiguration",
-        "PoolErrors",
-        "PoolManager",
-        "PoolStorage",
-        "PositionLogic",
-        "ProtocolFees",
-        "ShortPool",
-        "ShortPoolManager",
-        "ShortPositionOperateFlashLoanFacet",
-        "TickLogic"
-      ],
-      "matched_contracts": 51,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5599,
-      "audit_key": "audit-5599",
-      "report_name": "SECBIT_f(x)_V2_Report_v1.2_20250101.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_V2_Report_v1.2_20250101.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AaveFundingPool",
-        "BasePool",
-        "FlashLoanCallbackFacet",
-        "FlashLoanFacetBase",
-        "FlashLoans",
-        "FxUSDBasePool",
-        "FxUSDBasePoolFacet",
-        "FxUSDRegeneracy",
-        "GaugeRewarder",
-        "LSDPriceOracleBase",
-        "MigrateFacet",
-        "PegKeeper",
-        "PoolConstant",
-        "PoolErrors",
-        "PoolManager",
-        "PoolStorage",
-        "PositionLogic",
-        "PositionOperateFlashLoanFacet",
-        "ProtocolFees",
-        "ReservePool",
-        "RouterManagementFacet",
-        "SpotPriceOracleBase",
-        "StETHPriceOracle",
-        "TickBitmap",
-        "TickLogic",
-        "TickMath"
-      ],
-      "matched_contracts": 39,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 5599,
-          "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_V2_Report_v1.2_20250101.pdf"
-        },
-        {
-          "audit_id": 5647,
-          "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_V2_Report_v1.2_20250101.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 5600,
-      "audit_key": "audit-5600",
-      "report_name": "SECBIT_f(x)_V2_Report_v1.4_20250107.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_V2_Report_v1.4_20250107.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AaveFundingPool",
-        "BasePool",
-        "FlashLoanCallbackFacet",
-        "FlashLoanFacetBase",
-        "FlashLoans",
-        "FxUSDBasePool",
-        "FxUSDBasePoolFacet",
-        "FxUSDRegeneracy",
-        "GaugeRewarder",
-        "LSDPriceOracleBase",
-        "MigrateFacet",
-        "PegKeeper",
-        "PoolConstant",
-        "PoolErrors",
-        "PoolManager",
-        "PoolStorage",
-        "PositionLogic",
-        "PositionOperateFlashLoanFacet",
-        "ProtocolFees",
-        "ReservePool",
-        "RouterManagementFacet",
-        "SpotPriceOracleBase",
-        "StETHPriceOracle",
-        "TickBitmap",
-        "TickLogic",
-        "TickMath"
-      ],
-      "matched_contracts": 39,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 5600,
-          "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_V2_Report_v1.4_20250107.pdf"
-        },
-        {
-          "audit_id": 5648,
-          "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_V2_Report_v1.4_20250107.pdf"
         }
       ]
     },
@@ -18477,192 +17544,15 @@
           "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/TrailofBits_fx_protocol_202403.pdf"
         }
       ]
-    },
-    {
-      "audit_id": 5607,
-      "audit_key": "audit-5607",
-      "report_name": "fx_btcUSD_Report_v1.0_2024_04_19.pdf",
-      "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/fx_btcUSD_Report_v1.0_2024_04_19.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "CrvUSDBorrowRateAdapter",
-        "CurveNGConverter",
-        "ETHLSDConverter",
-        "FxCVXTwapOracle",
-        "FxChainlinkTwapOracle",
-        "FxEETHTwapOracle",
-        "FxEzETHTwapOracle",
-        "FxLSDOracleBase",
-        "FxPxETHTwapOracle",
-        "FxTwapOracleBase",
-        "FxWBTCTwapOracle",
-        "GeneralTokenConverterStorage",
-        "MarketV2",
-        "MarketWithFundingCost",
-        "TreasuryV2",
-        "TreasuryWithFundingCost",
-        "UniswapV3Converter",
-        "WETHConverter"
-      ],
-      "matched_contracts": 21,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 5607,
-          "report_url": "https://github.com/AladdinDAO/audit-reports/blob/main/fx_btcUSD_Report_v1.0_2024_04_19.pdf"
-        },
-        {
-          "audit_id": 5655,
-          "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/fx_btcUSD_Report_v1.0_2024_04_19.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 5632,
-      "audit_key": "audit-5632",
-      "report_name": "SECBIT_f(x)_2.0_Katana_Report_v1.1_2026_03_09.pdf",
-      "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_2.0_Katana_Report_v1.1_2026_03_09.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2026-03",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "FxUSDBasePoolFacet",
-        "FxUSDPriceOracle",
-        "FxUSDRegeneracy",
-        "MorphoFundingPool",
-        "MultiPathConverter",
-        "PegKeeper",
-        "PoolConfiguration",
-        "PoolManager",
-        "PositionOperateFacet",
-        "WeETHRateProvider"
-      ],
-      "matched_contracts": 33,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5633,
-      "audit_key": "audit-5633",
-      "report_name": "SECBIT_f(x)_FxUSD_Base_EIP3009_Report_2026_01_26.pdf",
-      "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_FxUSD_Base_EIP3009_Report_2026_01_26.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2026-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "FxUSD"
-      ],
-      "matched_contracts": 7,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5635,
-      "audit_key": "audit-5635",
-      "report_name": "SECBIT_f(x)_LimitOrder_Report_v1.0_202510.pdf",
-      "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_LimitOrder_Report_v1.0_202510.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "BaseConditionalOrder",
-        "BasePool",
-        "DutchAuctionSwap",
-        "FxUSDBasePool",
-        "GPv2Interaction",
-        "GPv2Order",
-        "LimitOrderManager",
-        "OrderExecutionLibrary",
-        "OrderLibrary",
-        "PoolConfiguration",
-        "PoolManager",
-        "ShortPoolManager",
-        "TickLogic"
-      ],
-      "matched_contracts": 31,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5636,
-      "audit_key": "audit-5636",
-      "report_name": "SECBIT_f(x)_LimitOrder_fxMint_Report_v1.0_2025_10_30.pdf",
-      "report_url": "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_LimitOrder_fxMint_Report_v1.0_2025_10_30.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "BaseConditionalOrder",
-        "BasePool",
-        "DutchAuctionSwap",
-        "FxUSDBasePool",
-        "GPv2Interaction",
-        "GPv2Order",
-        "LimitOrderManager",
-        "OrderExecutionLibrary",
-        "OrderLibrary",
-        "PoolConfiguration",
-        "PoolManager",
-        "PositionOperateFacet",
-        "ProtocolTreasury",
-        "ShortPoolManager",
-        "TickLogic"
-      ],
-      "matched_contracts": 39,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
       "auditor": "unknown",
       "tier": 2,
-      "contracts_covered": 129,
-      "coverage_pct": 43,
-      "latest_audit": "2026-03"
+      "contracts_covered": 74,
+      "coverage_pct": 24.7,
+      "latest_audit": "2025-03"
     },
     {
       "auditor": "Trail of Bits",
@@ -18680,6 +17570,16 @@
     }
   ],
   "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0d73d31e1e0d4cc266f0805c94f8e2b9b37d4c3a",
+      "name": "PoolManager",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 85767000.6618243,
+      "risk_note": "Verified native implementation with $85,767,000.66 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -18703,12 +17603,42 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x0fd2650b2898cd2f21e95c81882c8d36b2612d5f",
+      "name": "FxUSDBasePool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 18591.5797,
+      "risk_note": "Verified native implementation with $18,591.58 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1925e197fffa52060f0d2515cd3781e26c63f08c",
+      "name": "RewardTokenWrapper",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 344.7490599871954,
+      "risk_note": "Verified native implementation with $344.75 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x0e67460226a71df07115c1f169418dd159e5521b",
       "name": "RevenuePool",
       "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": 28.731609620862688,
       "risk_note": "Verified native implementation with $28.73 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x33636d49fbefbe798e15e7f356e8dbef543cc708",
+      "name": "FxUSDBasePoolFacet",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 0.006014,
+      "risk_note": "Verified native implementation with $0.01 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -18893,6 +17823,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x55a51450b1d025b4f6fa259b2008851553343cde",
+      "name": "CreditNote",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x963bacb5b0df6950814c572e3f9ea005458f6563",
       "name": "CRVAccumulatorV2",
       "role": "unknown",
@@ -19043,6 +17983,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x150f62ec3a9d9ae30b7da4d413af73d8adc15c9f",
+      "name": "ETHLSDConverter",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xb7f79090190c297f59a2b7d51d3aef7aad0e9af3",
       "name": "Executor",
       "role": "unknown",
@@ -19073,6 +18023,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xd8ae026d0abf2379ba0fc79a7bf190268dfa81c6",
+      "name": "FeeDistributorAdmin",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x60136fefe23d269af41ab72de483d186dc4318d6",
       "name": "FeeReceiver",
       "role": "unknown",
@@ -19083,8 +18043,78 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x9d093e5b929cceeae9497fc27c22481e0b8a53f9",
+      "name": "FlashLoanCallbackFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x28ed637c5e3371c2678c2d346df04fb634ed832d",
       "name": "Fundraising Gauge Fx",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7267277682ffc281b00b0ec56d8de22e8ae88e13",
+      "name": "FxCVXOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe1b11bb0b6d1b321eeb7e0298a3f9eb92171693b",
+      "name": "FxEETHOracleV2",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x834e87262a00b0ac38ed49cb1110838866be4a20",
+      "name": "FxEETHTwapOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x564a464c9c357de593fa48efd784048a9e366523",
+      "name": "FxEzETHOracleV2",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x51ef9fd457b9607911fb6cb72b9e47ffd5f053a6",
+      "name": "FxEzETHTwapOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xffe563c168c01e05da4f3d81938af158466ad793",
+      "name": "FxFrxETHOracleV2",
       "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -19143,6 +18173,46 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x83bdc459ac3887b2a61aa47dca3acac26a333d20",
+      "name": "FxStETHOracleV2",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0b9e51d9a436b6b78b5e2666f15b2d0666a7a851",
+      "name": "FxUSDPriceOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4f8330946669d71014efdce30ef19a256643fba8",
+      "name": "FxWBTCOracleV2",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7e94c07c6c3b2c931e9517529f56553770a7c0d2",
+      "name": "FxWBTCTwapOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x210dfec4fc0c3b88e7984a86dc315f43aa07a68a",
       "name": "GaugeDepositorVault",
       "role": "operational_periphery",
@@ -19163,6 +18233,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x5ac1a882e6cedc58511b7e42b02bab42e2c02956",
+      "name": "GaugeRewarder",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x8f78ddf344e20b92b03c13d82d1316fc0a66820e",
       "name": "InflationReceiver",
       "role": "unknown",
@@ -19175,6 +18255,16 @@
       "chain_name": "ethereum",
       "address": "0x5d2c6215555b36889ef235c6d5ccde22e9964e6a",
       "name": "InversePriceOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x222786833b5fd5ee21532d8b576391babefdaad1",
+      "name": "InverseWstETHPriceOracle",
       "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -19205,6 +18295,16 @@
       "chain_name": "ethereum",
       "address": "0x5c5ccb2e511fcdeaa16737810787a47507cf0922",
       "name": "LockerPreLaunch",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2319289e56830b50a282c25af4f0045c724b3f79",
+      "name": "LongPositionEmergencyCloseFacet",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -19266,6 +18366,16 @@
       "address": "0x057810cf20efd30745b368ec42f0b39879ca4eb1",
       "name": "MetaCLever",
       "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5fec7879738cb209af6d9880e4566a24200accae",
+      "name": "MigrateFacet",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -19373,9 +18483,49 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x17e2e8ca0b35aa750771e000d1e926417b97f29d",
+      "name": "PegKeeper",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x0fdb73ae370a0b3f349dc046cfeb54c0fa870799",
       "name": "PositionAirdrop",
       "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x155c0c3cde438a3d10bd38f3257cd8d17b8b3cff",
+      "name": "PositionOperateFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x002cdac50b3eefe6adb6168833fb49c040a1a7a2",
+      "name": "PositionOperateFlashLoanFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1f844447ecf5b1523bfbadad3d9dea975982ea93",
+      "name": "PositionOperateFlashLoanFacetV2",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -19483,6 +18633,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x447d902da96a22727d0b53f215d0c387fe1ae114",
+      "name": "RouterManagementFacet",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xfd98cecb88fc61101d4bebf1b6f9e65572222ff5",
       "name": "RouterModuleClaim",
       "role": "adapter",
@@ -19563,6 +18723,36 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x0055e248ee7feab91969b77ab32f184b72be82fa",
+      "name": "ShortPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x218b689a4f4afba497123b4831f58d6379d99801",
+      "name": "ShortPoolManager",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3d35dc5948c948f131ddd9e3a341b99e45174a74",
+      "name": "ShortPositionOperateFlashLoanFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x8958677ca44da460d487335c09c045fbd0c43382",
       "name": "SignatureVerifier",
       "role": "periphery",
@@ -19596,6 +18786,16 @@
       "address": "0xc5f572b705cae1893cdceb5161ce40e2fc5bb6cd",
       "name": "StakeDaoNFT_V2",
       "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0c5c61025f047cb7e3e85852dc8eafd7b9a4abfb",
+      "name": "StETHPriceOracle",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -19665,6 +18865,16 @@
       "chain_name": "ethereum",
       "address": "0x22d0b68a88bcff9a0d9f08fff03dd969eed094ca",
       "name": "TreasuryVault",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x456517ee29af17e59ea1c70852d3fb15804bd122",
+      "name": "TreasuryWithFundingCost",
       "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -19803,6 +19013,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xd766f2b87de4b08c2239580366e49710180aba02",
+      "name": "VotingEscrowHelper",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x7346aa8959fb138787bf9a579b4d86098a3834fc",
       "name": "vsdToken",
       "role": "token",
@@ -19909,20 +19129,14 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 1939
+      "extraction_exact": 926
     },
     "extraction_confidence_counts": {
-      "high": 52,
-      "medium": 1
+      "high": 33
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 5581,
-        "report_name": "SECBIT_FX_TickMath_Update_Report_v1.0_20250605.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "infinifi",
-  "generated_at": "2026-05-31T08:28:21.253Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:06.203Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "infinifi",
     "tier": 0,
@@ -22,18 +22,18 @@
     "drop_from_peak_pct": 49.74010846447074
   },
   "summary": {
-    "total_contracts": 118,
-    "total_addresses": 208,
-    "unique_implementations": 118,
-    "total_deployments": 208,
+    "total_contracts": 114,
+    "total_addresses": 204,
+    "unique_implementations": 114,
+    "total_deployments": 204,
     "audited_contracts": 0,
-    "unaudited_contracts": 73,
+    "unaudited_contracts": 69,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 72,
+    "contracts_verified_unaudited": 68,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 45,
     "coverage_pct": 0,
-    "total_audits": 18,
+    "total_audits": 12,
     "scoreable_audits": 0,
     "dl_tvl_usd": 90227546.41372,
     "tvl_usd": 145943366.90507612,
@@ -55,14 +55,19 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 2,
-      "stale": 6,
-      "unknown": 10
+      "stale": 3,
+      "unknown": 7
     }
   },
   "topography": {
-    "project_purpose": "InfiniFi is a yield optimization protocol that allows users to deposit assets into vaults and receive locked position tokens representing their yield-bearing positions. It integrates with external protocols like Pendle and 1inch to manage and enhance yields across multiple chains.",
+    "project_purpose": "InfiniFi is on-chain banking and yield infrastructure that uses liquid and illiquid assets with transparent fractional reserves. Its contract surface includes receipt, staked, and locked-position tokens, farms and vaults, gateways, controllers, oracles, and operational periphery. Documented integrations include protocols such as AAVE, Pendle, and Ethena; third-party routers and settlement systems should be treated as external dependencies rather than InfiniFi-owned core contracts.",
     "relationship_narrative": "The Core Contracts family orchestrates user deposits and withdrawals, minting Locked Position Tokens and interacting with External Integrations to execute yield strategies. Tokens and Plasma Network families share similar receipt/staked token patterns and rely on the same gateway logic, while BNB Chain extends reach via OFT, all governed by the Timelock and supported by Infrastructure contracts.",
     "product_family_count": 10
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 114,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -447,37 +452,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x888888888889758f76e7103c6cbf23abbf58f946",
-      "name": "ActionAddRemoveLiqV3",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Pendle",
-      "product_line": "External Integrations",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x663c21103915b68e9da797cfdf3cab01a037d5ff",
-      "impl_name": "ActionAddRemoveLiqV3",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x888888888889758f76e7103c6cbf23abbf58f946",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 9745,
@@ -1349,68 +1323,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
-      "name": "GPv2Settlement",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "External Integrations",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "GPv2Settlement",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc92e8bdf79f0507f65a392b0ab4667716bfe0110",
-      "name": "GPv2VaultRelayer",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "External Integrations",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "GPv2VaultRelayer",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc92e8bdf79f0507f65a392b0ab4667716bfe0110",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 9745,
       "chain_name": "plasma",
       "address": "0x160300d5c1ea377b823127d2d6668d43dd5c1d8a",
@@ -2102,37 +2014,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
-      "name": "MetaAggregationRouterV2",
-      "role": "adapter",
-      "origin_kind": "upstream",
-      "origin_provider": "1inch",
-      "product_line": "External Integrations",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MetaAggregationRouterV2",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -4540,48 +4421,6 @@
   ],
   "audits": [
     {
-      "audit_id": 4767,
-      "audit_key": "audit-4767",
-      "report_name": "0xleastwood-Part 1 + 2.pdf",
-      "report_url": "https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/0xleastwood/0xleastwood-Part%201%20%2B%202.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-09",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4768,
-      "audit_key": "audit-4768",
-      "report_name": "0xleastwood-Part 2.pdf",
-      "report_url": "https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/0xleastwood/0xleastwood-Part%202.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 4769,
       "audit_key": "audit-4769",
       "report_name": "Ackee-Part 1.pdf",
@@ -4590,48 +4429,6 @@
       "audit_type": "audit",
       "freshness": "unknown",
       "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4770,
-      "audit_key": "audit-4770",
-      "report_name": "CMichel-Part 2.pdf",
-      "report_url": "https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/CMichel/CMichel-Part%202.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-08",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4771,
-      "audit_key": "audit-4771",
-      "report_name": "Cmichel-Part 1.pdf",
-      "report_url": "https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/CMichel/Cmichel-Part%201.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-08",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -4671,48 +4468,6 @@
       "report_name": "Dedaub-Part 1.pdf",
       "report_url": "https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/Dedaub/Dedaub-Part%201.pdf",
       "auditor": "Dedaub",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4774,
-      "audit_key": "audit-4774",
-      "report_name": "Dingbats-Part 1.pdf",
-      "report_url": "https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/Dingbats/Dingbats-Part%201.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4775,
-      "audit_key": "audit-4775",
-      "report_name": "Dingbats-Part 2.pdf",
-      "report_url": "https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/Dingbats/Dingbats-Part%202.pdf",
-      "auditor": "unknown",
       "audit_type": "audit",
       "freshness": "unknown",
       "date": null,
@@ -5161,26 +4916,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x9008d19f58aabd9ed0d60971565aa8510560ab41",
-      "name": "GPv2Settlement",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc92e8bdf79f0507f65a392b0ab4667716bfe0110",
-      "name": "GPv2VaultRelayer",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 9745,
       "chain_name": "plasma",
       "address": "0x160300d5c1ea377b823127d2d6668d43dd5c1d8a",
@@ -5572,8 +5307,8 @@
     }
   ],
   "origin_summary": {
-    "native": 93,
-    "upstream": 3,
+    "native": 91,
+    "upstream": 1,
     "standard_library": 5,
     "needs_review": 17
   },
@@ -5584,24 +5319,8 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 4767,
-        "report_name": "0xleastwood-Part 1 + 2.pdf"
-      },
-      {
-        "audit_id": 4768,
-        "report_name": "0xleastwood-Part 2.pdf"
-      },
-      {
         "audit_id": 4769,
         "report_name": "Ackee-Part 1.pdf"
-      },
-      {
-        "audit_id": 4770,
-        "report_name": "CMichel-Part 2.pdf"
-      },
-      {
-        "audit_id": 4771,
-        "report_name": "Cmichel-Part 1.pdf"
       },
       {
         "audit_id": 4772,
@@ -5610,14 +5329,6 @@
       {
         "audit_id": 4773,
         "report_name": "Dedaub-Part 1.pdf"
-      },
-      {
-        "audit_id": 4774,
-        "report_name": "Dingbats-Part 1.pdf"
-      },
-      {
-        "audit_id": 4775,
-        "report_name": "Dingbats-Part 2.pdf"
       },
       {
         "audit_id": 4776,

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "manta-cedefi",
-  "generated_at": "2026-05-31T09:48:24.388Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:07.183Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "manta-cedefi",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Manta CeDeFi is a basis trading protocol that combines centralized and decentralized finance to generate yield. It allows users to deposit assets into a single vault contract, which then executes basis trading strategies to earn returns.",
+    "project_purpose": "Manta CeDeFi is a Manta-based yield and basis-trading product that combines centralized and decentralized finance to generate returns. Its on-chain surface is broader than a single vault and includes multiple deposit, vault, withdrawal, token or staking, routing or management, messaging, and upgrade components, including TransparentUpgradeableProxy deployments whose current implementations should be tracked separately from the proxy shells.",
     "relationship_narrative": "The protocol consists of a single product family with one core contract, so there are no inter-family relationships. All functionality is encapsulated within the TransparentUpgradeableProxy vault.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 17,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "swaap",
-  "generated_at": "2026-05-23T21:16:09.239Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.863Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "swaap",
@@ -45,7 +45,7 @@
     "coverage_pct": 25,
     "total_audits": 7,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 4424348,
+    "dl_tvl_usd": 4412221,
     "tvl_usd": 3809615.5746360216,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -84,9 +84,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Swaap is a DeFi protocol that provides yield generation and decentralized exchange services. It uses vaults to manage liquidity and safeguard factories to deploy and manage these vaults across multiple chains.",
+    "project_purpose": "Swaap is an onchain trading and market-neutral AMM protocol. Its contract surface includes Vault contracts, SafeguardFactory registry/deployment contracts, SafeguardPool core logic, and related operational periphery such as oracle or adapter components where applicable. Claims that Swaap primarily operates yield-generation vault strategies should be removed or explicitly qualified unless supported by current documentation or audit scope.",
     "relationship_narrative": "The Swaap family consists of Vault contracts that hold user funds and execute strategies, and SafeguardFactory contracts that deploy and manage these vaults. Both contract types are deployed by two main deployer clusters and share the same infrastructure across multiple chains.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 128,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

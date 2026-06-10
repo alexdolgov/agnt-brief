@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "rip.xyz",
-  "generated_at": "2026-05-31T10:25:48.393Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:11.465Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "rip.xyz",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 45.536022592908544
   },
   "summary": {
-    "total_contracts": 8,
-    "total_addresses": 10,
-    "unique_implementations": 8,
-    "total_deployments": 10,
+    "total_contracts": 6,
+    "total_addresses": 8,
+    "unique_implementations": 6,
+    "total_deployments": 8,
     "audited_contracts": 1,
-    "unaudited_contracts": 3,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 3,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 4,
-    "coverage_pct": 25,
+    "coverage_pct": 50,
     "total_audits": 1,
     "scoreable_audits": 1,
     "dl_tvl_usd": 1041783.33975,
-    "tvl_usd": 624723.5967689827,
+    "tvl_usd": 8.114224194188611e-11,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "hyperliquid": 624723.6
+      "hyperliquid": 0
     },
-    "asd_usd": 624723.5967689827,
+    "asd_usd": 8.114224194188611e-11,
     "website_url": "https://www.rip.xyz/",
     "chains": [
       "hyperliquid"
@@ -58,46 +58,20 @@
     }
   },
   "topography": {
-    "project_purpose": "Rip.xyz provides automated NFT strategies on HyperEVM, centered around a yield-bearing vault (rHYPURR) that accepts deposits and issues receipt tokens, with liquidity provision through a Uniswap V3 pool for the rHYPURR/wHYPE pair.",
+    "project_purpose": "Rip.xyz provides tokenized vault strategies on HyperEVM. Its initial strategy, Hypurr Vault, offers NFT-backed vault exposure for fractional access to Hypurr NFTs. External rHYPURR liquidity venues, such as third-party DEX pools, should be treated as dependencies rather than the core project purpose.",
     "relationship_narrative": "The rHYPURR vault (implemented behind an ERC1967 proxy) accepts wHYPE deposits and mints rHYPURR shares; these shares are paired with wHYPE in a Uniswap V3 pool to provide liquidity. The Nft contract likely interacts with the vault for access or rewards, while wHYPE serves as the common base asset across the system.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 6,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 999,
-      "chain_name": "hyperliquid",
-      "address": "0x1f6b7b53623b3039720a186b31ef7f50f0e34420",
-      "name": "UniswapV3Pool",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
-      "product_line": "ProjectX LP (rHYPURR/wHYPE Pair)",
-      "tvl_usd": 624723.5967689826,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "UniswapV3Pool",
-      "deployments": [
-        {
-          "chain_id": 999,
-          "chain_name": "hyperliquid",
-          "address": "0x1f6b7b53623b3039720a186b31ef7f50f0e34420",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 624723.5967689826,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 999,
       "chain_name": "hyperliquid",
@@ -303,37 +277,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "review"
-    },
-    {
-      "chain_id": 999,
-      "chain_name": "hyperliquid",
-      "address": "0x5555555555555555555555555555555555555555",
-      "name": "WHYPE9",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "wHYPE (ERC20)",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "WHYPE9",
-      "deployments": [
-        {
-          "chain_id": 999,
-          "chain_name": "hyperliquid",
-          "address": "0x5555555555555555555555555555555555555555",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     }
   ],
   "audits": [
@@ -366,7 +309,7 @@
       "auditor": "Three Sigma",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 25,
+      "coverage_pct": 50,
       "latest_audit": "2026-01"
     }
   ],
@@ -384,9 +327,9 @@
   ],
   "origin_summary": {
     "native": 1,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 1,
-    "needs_review": 5
+    "needs_review": 4
   },
   "scope_matching_notes": {
     "match_method_counts": {

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "bend",
-  "generated_at": "2026-05-31T07:34:00.581Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:58:59.169Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bend",
     "tier": 0,
@@ -22,18 +22,18 @@
     "drop_from_peak_pct": 63.63916225099564
   },
   "summary": {
-    "total_contracts": 105,
-    "total_addresses": 105,
-    "unique_implementations": 105,
-    "total_deployments": 105,
+    "total_contracts": 104,
+    "total_addresses": 104,
+    "unique_implementations": 104,
+    "total_deployments": 104,
     "audited_contracts": 12,
-    "unaudited_contracts": 47,
+    "unaudited_contracts": 46,
     "contracts_verified_audited": 12,
-    "contracts_verified_unaudited": 47,
+    "contracts_verified_unaudited": 46,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 46,
-    "coverage_pct": 20.3,
-    "total_audits": 22,
+    "coverage_pct": 20.7,
+    "total_audits": 9,
     "scoreable_audits": 2,
     "dl_tvl_usd": 12591438.21068,
     "tvl_usd": 15462171.68785702,
@@ -47,7 +47,7 @@
       "berachain",
       "ethereum"
     ],
-    "tier1_coverage_pct": 20.3,
+    "tier1_coverage_pct": 20.7,
     "tier1_auditors": [
       "Spearbit"
     ],
@@ -56,14 +56,19 @@
     "staleness_breakdown": {
       "fresh": 2,
       "aging": 0,
-      "stale": 9,
-      "unknown": 11
+      "stale": 5,
+      "unknown": 2
     }
   },
   "topography": {
-    "project_purpose": "BEND is a decentralized lending protocol that enables users to supply and borrow assets using isolated markets and adaptive interest rate curves. It integrates with Morpho Blue for efficient lending markets and includes governance, staking, and NFT components.",
+    "project_purpose": "BEND is a Berachain lending protocol/fork of Morpho that enables users to supply and borrow assets through isolated lending markets, with Proof-of-Liquidity integration. Berachain governance, core PoL system contracts, staking infrastructure, Balancer liquidity infrastructure, tokens, and NFTs should be treated as external dependencies unless separately verified as BEND-owned.",
     "relationship_narrative": "The BEND lending family relies on Morpho Blue and its own adaptive curve IRM, while governance controls parameters across lending and proof-of-liquidity. Proof-of-liquidity contracts distribute incentives in BGT and Honey tokens, which are also used in staking and Balancer pools for liquidity.",
     "product_family_count": 9
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 104,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -3260,37 +3265,6 @@
     {
       "chain_id": 80094,
       "chain_name": "berachain",
-      "address": "0x6969696969696969696969696969696969696969",
-      "name": "WBERA",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "​ Tokens",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "WBERA",
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x6969696969696969696969696969696969696969",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
       "address": "0xa966fa8f2d5b087fffa499c0c1240589371af409",
       "name": "WeightedPoolFactory",
       "role": "registry",
@@ -3438,90 +3412,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 9801,
-      "audit_key": "audit-9801",
-      "report_name": "2017-04-25_Geth-audit_Truesec.pdf",
-      "report_url": "https://github.com/berachain/polaris-geth/blob/master/docs/audits/2017-04-25_Geth-audit_Truesec.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2017-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9802,
-      "audit_key": "audit-9802",
-      "report_name": "2018-09-14_Clef-audit_NCC.pdf",
-      "report_url": "https://github.com/berachain/polaris-geth/blob/master/docs/audits/2018-09-14_Clef-audit_NCC.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2018-09",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9803,
-      "audit_key": "audit-9803",
-      "report_name": "2019-10-15_Discv5_audit_LeastAuthority.pdf",
-      "report_url": "https://github.com/berachain/polaris-geth/blob/master/docs/audits/2019-10-15_Discv5_audit_LeastAuthority.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2019-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9804,
-      "audit_key": "audit-9804",
-      "report_name": "2020-01-24_DiscV5_audit_Cure53.pdf",
-      "report_url": "https://github.com/berachain/polaris-geth/blob/master/docs/audits/2020-01-24_DiscV5_audit_Cure53.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2020-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 9806,
       "audit_key": "audit-9806",
       "report_name": "2017-03.md",
@@ -3665,17 +3555,7 @@
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 9811,
-          "report_url": "https://github.com/berachain/offchain-sdk/blob/main/contracts/lib/openzeppelin-contracts/audits/README.md"
-        },
-        {
-          "audit_id": 9988,
-          "report_url": "https://github.com/berachain/docs/blob/main/README.md"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 9813,
@@ -3697,195 +3577,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9969,
-      "audit_key": "audit-9969",
-      "report_name": "f1_fee_distr.pdf",
-      "report_url": "https://github.com/berachain/cosmos-sdk/blob/main/docs/spec/fee_distribution/f1_fee_distr.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9982,
-      "audit_key": "audit-9982",
-      "report_name": "rules.md",
-      "report_url": "https://github.com/berachain/docs/blob/main/.cursor/rules.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9983,
-      "audit_key": "audit-9983",
-      "report_name": "documentation.md",
-      "report_url": "https://github.com/berachain/docs/blob/main/.github/ISSUE_TEMPLATE/documentation.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9984,
-      "audit_key": "audit-9984",
-      "report_name": "pull_request_template.md",
-      "report_url": "https://github.com/berachain/docs/blob/main/.github/pull_request_template.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9985,
-      "audit_key": "audit-9985",
-      "report_name": "AGENTS.md",
-      "report_url": "https://github.com/berachain/docs/blob/main/AGENTS.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9986,
-      "audit_key": "audit-9986",
-      "report_name": "CODE_OF_CONDUCT.md",
-      "report_url": "https://github.com/berachain/docs/blob/main/CODE_OF_CONDUCT.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9987,
-      "audit_key": "audit-9987",
-      "report_name": "CONTRIBUTING.md",
-      "report_url": "https://github.com/berachain/docs/blob/main/CONTRIBUTING.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9989,
-      "audit_key": "audit-9989",
-      "report_name": "STRUCTURE.md",
-      "report_url": "https://github.com/berachain/docs/blob/main/STRUCTURE.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9990,
-      "audit_key": "audit-9990",
-      "report_name": "UBIQUITOUS_LANGUAGE.md",
-      "report_url": "https://github.com/berachain/docs/blob/main/UBIQUITOUS_LANGUAGE.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -3893,7 +3584,7 @@
       "auditor": "Spearbit",
       "tier": 1,
       "contracts_covered": 12,
-      "coverage_pct": 20.3,
+      "coverage_pct": 20.7,
       "latest_audit": "2026-05"
     }
   ],
@@ -4153,7 +3844,7 @@
     "native": 25,
     "upstream": 9,
     "standard_library": 24,
-    "needs_review": 47
+    "needs_review": 46
   },
   "scope_matching_notes": {
     "match_method_counts": {
@@ -4165,22 +3856,6 @@
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 9801,
-        "report_name": "2017-04-25_Geth-audit_Truesec.pdf"
-      },
-      {
-        "audit_id": 9802,
-        "report_name": "2018-09-14_Clef-audit_NCC.pdf"
-      },
-      {
-        "audit_id": 9803,
-        "report_name": "2019-10-15_Discv5_audit_LeastAuthority.pdf"
-      },
-      {
-        "audit_id": 9804,
-        "report_name": "2020-01-24_DiscV5_audit_Cure53.pdf"
-      },
       {
         "audit_id": 9806,
         "report_name": "2017-03.md"
@@ -4208,42 +3883,6 @@
       {
         "audit_id": 9813,
         "report_name": "certik-07-03.pdf"
-      },
-      {
-        "audit_id": 9969,
-        "report_name": "f1_fee_distr.pdf"
-      },
-      {
-        "audit_id": 9982,
-        "report_name": "rules.md"
-      },
-      {
-        "audit_id": 9983,
-        "report_name": "documentation.md"
-      },
-      {
-        "audit_id": 9984,
-        "report_name": "pull_request_template.md"
-      },
-      {
-        "audit_id": 9985,
-        "report_name": "AGENTS.md"
-      },
-      {
-        "audit_id": 9986,
-        "report_name": "CODE_OF_CONDUCT.md"
-      },
-      {
-        "audit_id": 9987,
-        "report_name": "CONTRIBUTING.md"
-      },
-      {
-        "audit_id": 9989,
-        "report_name": "STRUCTURE.md"
-      },
-      {
-        "audit_id": 9990,
-        "report_name": "UBIQUITOUS_LANGUAGE.md"
       }
     ],
     "inherited_remapped_matches": []

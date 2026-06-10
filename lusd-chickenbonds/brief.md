@@ -7,17 +7,17 @@
 - Project: LUSD ChickenBonds (`lusd-chickenbonds`)
 - Website: [https://www.chickenbonds.org](https://www.chickenbonds.org)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-24T21:15:57.931Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:07.076Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 24 unique implementations (57 raw deployments)
-- DeFi Llama TVL: $1,493,483.26
+- DeFi Llama TVL: $1,491,358.01
 - On-chain TVL (included contracts): $362,849.47
 - TVL by chain: Ethereum $362,849.47
 
 ## Project Description
 
-LUSD ChickenBonds is a yield aggregator that allows users to deposit LUSD into bond-like positions to earn enhanced yield through a managed strategy. The protocol optimizes returns by deploying deposited LUSD into various yield sources while maintaining a bond-like structure.
+LUSD ChickenBonds is a bonding and liquidity-bootstrapping mechanism first applied to Liquity's LUSD. Users create cancel-anytime, no-lock-up bond positions with protected principal, receiving dynamic NFT representations of their bonds and the option to acquire discounted boosted LUSD (bLUSD). The mechanism amplifies yield through bLUSD and is designed to help protocols bootstrap sustainable liquidity rather than operate as a generic managed yield aggregator.
 
 ### Architecture
 

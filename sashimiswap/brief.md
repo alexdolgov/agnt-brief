@@ -7,17 +7,17 @@
 - Project: SashimiSwap (`sashimiswap`)
 - Website: [https://sashimi.cool/home/swap](https://sashimi.cool/home/swap)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-23T18:43:48.780Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:13.385Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, heco
 - Contract surface: 61 unique implementations (111 raw deployments)
-- DeFi Llama TVL: $4,996,070.64
+- DeFi Llama TVL: $4,985,528.24
 - On-chain TVL (included contracts): $1,441,923.23
 - TVL by chain: Ethereum $1,441,923.23
 
 ## Project Description
 
-SashimiSwap is a decentralized exchange and lending protocol that combines automated market making (AMM) with money market functionality. It allows users to swap tokens, provide liquidity, and earn yield through staking and lending, while also featuring cross-chain capabilities.
+SashimiSwap is primarily a multi-chain automated market maker decentralized exchange (AMM/DEX) for token swaps and exchange-pool liquidity. Lending, staking, and cross-chain contracts may exist in the historical or indexed contract surface, but should not be presented as currently supported public products unless supported by current documentation or homepage evidence.
 
 ### Architecture
 

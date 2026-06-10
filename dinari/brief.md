@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Dinari
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
+⚠️ Lifecycle status: DECLINING - TVL trajectory indicates non-active lifecycle.
 
 ## Project Overview
 
 - Project: Dinari (`dinari`)
 - Website: [https://dinari.com](https://dinari.com)
-- Lifecycle: unknown (Tier 0, 81.9% below peak)
-- Generated: 2026-05-23T02:58:27.459Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 0, 81.9% below peak)
+- Generated: 2026-06-10T20:59:01.917Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, blast, ethereum
 - Contract surface: 71 unique implementations (356 raw deployments)
 - DeFi Llama TVL: $10,832,285.27
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Dinari is a real-world asset (RWA) tokenization protocol that enables on-chain issuance, trading, and redemption of tokenized securities. It provides infrastructure for minting stable-value tokens (e.g., USD+), staking, and cross-chain interoperability via CCIP.
+Dinari is a real-world asset tokenization platform focused on dShares: 1:1-backed tokenized U.S. stocks and ETFs that provide on-chain access to public securities through Dinari's API and related issuance, trading, and redemption infrastructure. USD+ should be described separately as a Treasuries-backed stablecoin product, not as the protocol's primary purpose.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ All contracts belong to a single product family deployed by a single deployer cl
 - Latest audit: 2024-12 (aging)
 - Staleness: 0 fresh, 2 aging, 2 stale, 0 unknown
 - Tier 1 coverage: 15.6% (Sherlock)
-- Note: This protocol is classified as [unknown]. ASD of $36,599.31 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of $36,599.31 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

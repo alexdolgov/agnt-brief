@@ -5,17 +5,17 @@
 - Project: GoPlus Security (`goplus-security`)
 - Website: [https://gopluslabs.io](https://gopluslabs.io)
 - Lifecycle: active (Tier 0, 50.4% below peak)
-- Generated: 2026-05-31T14:54:11.146Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:04.381Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, bsc, ethereum
-- Contract surface: 26 unique implementations (40 raw deployments)
+- Contract surface: 23 unique implementations (37 raw deployments)
 - DeFi Llama TVL: $32,764,727.00
-- On-chain TVL (included contracts): $3,447,064.77
-- TVL by chain: Ethereum $3,447,064.77
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-GoPlus Security provides token locker services that allow project teams to lock tokens or liquidity positions, enhancing trust and security for investors. It also offers developer tools and security APIs for risk detection.
+GoPlus Security is a Web3 and AI security platform that provides a modular user security layer, security APIs, token risk checks, app and browser-extension security tools, GoPlus Security Module, SafeToken Protocol products including SafeToken Locker, AgentGuard, and DeepScan.
 
 ### Architecture
 
@@ -23,15 +23,15 @@ The locker families (V2 and V3) share the same deployer cluster, indicating a co
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/14 (0.0%)
-- Verified + Unaudited implementations: 14
+- Verified implementations audited: 0/11 (0.0%)
+- Verified + Unaudited implementations: 11
 - Verified by bytecode match: 0
 - Unverified implementations: 12
-- Unique implementations: 26
-- Raw deployments: 40
+- Unique implementations: 23
+- Raw deployments: 37
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $3,447,064.77
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,15 +46,12 @@ The locker families (V2 and V3) share the same deployer cluster, indicating a co
 
 - None
 
-### ⚠️ Verified + Unaudited (14)
+### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| RepublicToken | token | ethereum | [`0x408e41...052a38`](./contracts/ethereum-1/0x408e41876cccdc0f92210600ef50372656052a38/) | ⚠️ Unaudited |
-| Token | token | ethereum | [`0x4639cd...1c792f`](./contracts/ethereum-1/0x4639cd8cd52ec1cf2e496a606ce28d8afb1c792f/) | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | ethereum | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
 | GPS | unknown | base | [`0x0c1dc7...a0dca5`](./contracts/base-8453/0x0c1dc73159e30c4b06170f2593d3118968a0dca5/) | ⚠️ Unaudited |
-| INUKO | unknown | bsc | [`0xea5180...209d8f`](./contracts/bsc-56/0xea51801b8f5b88543ddad3d1727400c15b209d8f/) | ⚠️ Unaudited |
 | LockFactory | registry | base | [`0x043f40...931a64`](./contracts/base-8453/0x043f4036202c54da27583a996a8c4b9471931a64/) | ⚠️ Unaudited |
 | SafeTokenFactory | registry | ethereum | 3 deployments: ethereum [`0x0d648e...579027`](./contracts/ethereum-1/0x0d648ed434f95f812e6a0e9b74825bad03579027/); base [`0x0d648e...579027`](./contracts/base-8453/0x0d648ed434f95f812e6a0e9b74825bad03579027/); arbitrum [`0x0d648e...579027`](./contracts/arbitrum-42161/0x0d648ed434f95f812e6a0e9b74825bad03579027/) | ⚠️ Unaudited |
 | StakingLock | unknown | bsc | 3 deployments: bsc [`0x19c34d...0a2b8c`](./contracts/bsc-56/0x19c34d93f6cef657491fc3469e8d40f0600a2b8c/); bsc `0xeca8d7...ffee78`; bsc `0xf83ade...31087f` | ⚠️ Unaudited |
@@ -124,7 +121,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 21 |
 | upstream | 2 |
 | standard_library | 0 |
-| needs_review | 3 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

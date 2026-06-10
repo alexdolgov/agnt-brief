@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "fiamma",
-  "generated_at": "2026-05-30T19:23:42.241Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-30-c7d699-40af",
+  "generated_at": "2026-06-10T20:59:03.989Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "fiamma",
@@ -59,9 +59,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Fiamma is a cross-chain bridge protocol that enables the transfer of Bitcoin liquidity to EVM-compatible chains. It issues a wrapped Bitcoin token (FiaBTC) and uses a bridge architecture to lock native BTC and mint equivalent tokens on destination chains.",
+    "project_purpose": "Fiamma Labs' DefiLlama-listed Bridge/FIABTC product is a Bitcoin-to-EVM liquidity protocol that issues FIABTC, a 1:1 Bitcoin-backed asset, on supported EVM chains. The covered protocol uses a trust-minimized bridge design emphasizing BitVM2 and zero-knowledge proof mechanics to support moving Bitcoin liquidity into EVM ecosystems; it should be distinguished from the broader Fiamma Labs product suite shown on the homepage, including Ride social trading and the FIRE earn/trade app.",
     "relationship_narrative": "The Fiamma family relies on BitVMBridgeV4 to manage cross-chain message passing and asset locking, while FiaBTC serves as the wrapped token representation. Supporting contracts like BtcTxVerifier and DataVerificationHub provide transaction validation, and LPManager/BtcMirror handle liquidity and mirroring across chains.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 33,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

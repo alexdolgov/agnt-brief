@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "feather",
-  "generated_at": "2026-05-31T07:58:22.917Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:03.981Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "feather",
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 0.10099313642984399
   },
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 8,
-    "unique_implementations": 3,
-    "total_deployments": 8,
+    "total_contracts": 2,
+    "total_addresses": 7,
+    "unique_implementations": 2,
+    "total_deployments": 7,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
@@ -42,7 +42,6 @@
     "asd_usd": null,
     "website_url": "https://app.feather.zone/",
     "chains": [
-      "celo",
       "klaytn",
       "sei"
     ],
@@ -58,9 +57,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Feather is a risk curation protocol that deploys and manages MetaMorpho vaults, optimizing yield and risk parameters for users across multiple chains.",
+    "project_purpose": "Feather is an isolated-risk lending and borrowing protocol with Feather Vaults powered by Morpho. It curates lending markets and vault risk parameters, including support from an on-chain risk engine for lending parameters and oracle feeds, across supported chains.",
     "relationship_narrative": "All MetaMorpho vaults are deployed by the same deployer cluster and likely share a common SafeProxy for administrative control, with the unnamed contract possibly serving as a registry or factory.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -72,7 +76,7 @@
       "chain_name": "sei",
       "address": "0x015f10a56e97e02437d294815d8e079e1903e41c",
       "name": "MetaMorphoV1_1",
-      "role": "unknown",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Feather",
@@ -144,37 +148,6 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0x81c76f62f7e05dec75800150ba5a23f62e2f091f",
-      "name": "SafeProxy",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
-      "product_line": "Feather",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SafeProxy",
-      "deployments": [
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x81c76f62f7e05dec75800150ba5a23f62e2f091f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 8217,
       "chain_name": "klaytn",
       "address": "0x6ba8f7039bc7d79c1959cb8e409dff2ba05a133e",
@@ -214,7 +187,7 @@
       "chain_name": "sei",
       "address": "0x015f10a56e97e02437d294815d8e079e1903e41c",
       "name": "MetaMorphoV1_1",
-      "role": "unknown",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -223,7 +196,7 @@
   "origin_summary": {
     "native": 1,
     "upstream": 0,
-    "standard_library": 1,
+    "standard_library": 0,
     "needs_review": 1
   },
   "scope_matching_notes": {

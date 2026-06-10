@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sonic-gateway",
-  "generated_at": "2026-05-31T14:54:04.177Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-06-10T20:59:16.242Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "sonic-gateway",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 2,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 67153153.2322,
     "tvl_usd": 7800454.703418822,
@@ -48,23 +48,23 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2018-06",
-    "audit_freshness": "stale",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 2,
+      "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Sonic Gateway is Sonic's canonical bridge between Ethereum and Sonic, enabling users to deposit tokens on Ethereum and receive equivalent tokens on the Sonic network for cross-chain asset transfers.",
     "relationship_narrative": null,
     "product_family_count": 1
   },
   "surface_sufficiency": {
     "unique_implementations": 1,
-    "has_non_token_contracts": false,
+    "has_non_token_contracts": true,
     "is_skeletal": true
   },
   "fork_lineage": {
@@ -77,7 +77,7 @@
       "chain_name": "ethereum",
       "address": "0xa1e2481a9cd0cb0447eeb1cbc26f1b3fff3bec20",
       "name": "TokenDeposit",
-      "role": "token",
+      "role": "bridge_template",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "Sonic Gateway",
@@ -104,50 +104,7 @@
       "contamination_flag": null
     }
   ],
-  "audits": [
-    {
-      "audit_id": 4670,
-      "audit_key": "audit-4670",
-      "report_name": "fantom-audit-first.pdf",
-      "report_url": "https://github.com/Fantom-foundation/tokensale/blob/master/audits/fantom-audit-first.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2018-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4671,
-      "audit_key": "audit-4671",
-      "report_name": "fantom-audit-second.pdf",
-      "report_url": "https://github.com/Fantom-foundation/tokensale/blob/master/audits/fantom-audit-second.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2018-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
@@ -161,16 +118,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 4670,
-        "report_name": "fantom-audit-first.pdf"
-      },
-      {
-        "audit_id": 4671,
-        "report_name": "fantom-audit-second.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "noon",
-  "generated_at": "2026-05-26T19:48:13.539Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:08.718Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "noon",
@@ -60,9 +60,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Noon is a yield-bearing stablecoin protocol that issues USN, a stablecoin backed by staked assets, and NOON, a governance token. It integrates cross-chain functionality via Hyperlane and uses oracles for price feeds.",
+    "project_purpose": "Noon is a yield-generating stablecoin and yield optimization protocol for USN. The protocol allocates collateral into delta-neutral strategies and distributes raw yield and governance-token rewards. NOON is its governance token, and the protocol integrates cross-chain functionality via Hyperlane and uses oracles for price feeds.",
     "relationship_narrative": "The Noon family relies on the Oracles family for price feeds to manage staking and stablecoin minting. The Protocol smart contracts family provides operational support for minting, redeeming, and rewards, while Token deployments enable cross-chain token transfers via Hyperlane, all governed by the Timelock and multisig wallets.",
     "product_family_count": 6
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 40,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

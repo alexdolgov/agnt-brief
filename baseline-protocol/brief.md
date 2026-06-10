@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Baseline Protocol
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 7.5% over 90 days
-
 ## Project Overview
 
 - Project: Baseline Protocol (`baseline-protocol`)
 - Website: [https://www.baseline.markets/](https://www.baseline.markets/)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-27T14:54:05.795Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:58:58.076Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, blast, ethereum
-- Contract surface: 115 unique implementations (116 raw deployments)
+- Contract surface: 112 unique implementations (112 raw deployments)
 - DeFi Llama TVL: $69,255,851.63
-- On-chain TVL (included contracts): $997,693.68
-- TVL by chain: Blast $997,671.52 | Base $22.15
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Baseline Protocol is a liquidity manager that automates liquidity provision and management across decentralized exchanges. It deploys strategies to optimize yields for users by managing positions in pools like Uniswap V3 and Thruster.
+Baseline Protocol is an asset issuance and token-owned-liquidity protocol centered on Baseline/Mercury markets. It uses its own market-maker and AMM mechanics, floor-price backing, bTokens, staking rewards, borrowing, and no-liquidation leverage to support protocol-issued assets and liquidity. External venues such as Uniswap V3 or Thruster may be dependencies or liquidity venues, but they should not be treated as Baseline-owned core contracts or as the primary protocol model.
 
 ### Architecture
 
@@ -25,25 +23,24 @@ Baseline Legacy and Baseline Mercury are separate product lines deployed on diff
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/7 (14.3%)
-- Verified + Unaudited implementations: 6
+- Verified implementations audited: 1/4 (25.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 108
-- Unique implementations: 115
-- Raw deployments: 116
-- Audits discovered: 9
+- Unique implementations: 112
+- Raw deployments: 112
+- Audits discovered: 8
 - Scoreable audits (matched contracts): 1
-- ASD (verified + unaudited TVL): $997,693.68
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-02 (aging)
-- Staleness: 0 fresh, 7 aging, 2 stale, 0 unknown
+- Staleness: 0 fresh, 6 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $997,693.68 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Trust Security | Tier 2 | 1 | 14.3% | 2024-02 |
+| Trust Security | Tier 2 | 1 | 25.0% | 2024-02 |
 
 ## Contract Surface
 
@@ -53,15 +50,12 @@ Baseline Legacy and Baseline Mercury are separate product lines deployed on diff
 |---|---|---|---|---|
 | PreAsset | unknown | blast | [`0x60bf64...159f61`](./contracts/blast-81457/0x60bf64ccaa52da304d456892dc0a8f1c5b159f61/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| ThrusterPool | core_logic | blast | 2 deployments: blast [`0x1d1678...7faa00`](./contracts/blast-81457/0x1d16788b97edb7d9a6ae66d5c5c16469037faa00/); blast `0xd0f1e1...56dc13` | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | base | [`0xdfcfdf...09e3cb`](./contracts/base-8453/0xdfcfdf5dd0569d591e0bce28b5da3b13de09e3cb/) | ⚠️ Unaudited |
 | GnosisSafeL2 | governance | ethereum | [`0x8044f7...f7d1b2`](./contracts/ethereum-1/0x8044f710c58b6ea6a178cc540f9f1cd758f7d1b2/) | ⚠️ Unaudited |
 | Safe | unknown | ethereum | [`0xff0034...41ee5a`](./contracts/ethereum-1/0xff0034bbf2a92d0e27717387f3f829f37241ee5a/) | ⚠️ Unaudited |
-| WETH9 | token | base | [`0x420000...000006`](./contracts/base-8453/0x4200000000000000000000000000000000000006/) | ⚠️ Unaudited |
 | Yev | unknown | blast | [`0xc7b96d...5f25bb`](./contracts/blast-81457/0xc7b96d7f622e0a3a24cf333e84c29e36955f25bb/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -201,9 +195,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [2024-11-28_Baseline_Credit_Migrator.pdf](https://www.baseline.markets/assets/2024-11-28_Baseline_Credit_Migrator.pdf) | Guardian Audits | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
 | [2024-10-27_Baseline_BToken.pdf](https://www.baseline.markets/assets/2024-10-27_Baseline_BToken.pdf) | Guardian Audits | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
 | [2024-08-23_Baseline_Loops.pdf](https://www.baseline.markets/assets/2024-08-23_Baseline_Loops.pdf) | Guardian Audits | Audit | 2024-08 | aging | Direct | n/a | 0 | n/a |
-| [guardian_v2.pdf](https://www.baseline.markets/assets/guardian_v2.pdf) | Guardian | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
+| [guardian_v2.pdf](https://www.baseline.markets/assets/guardian_v2.pdf) | Guardian | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
 | [audit_trust_security.pdf](https://www.baseline.markets/assets/audit_trust_security.pdf) | Trust Security | Audit | 2024-02 | stale | Direct | contract_name | 1 | high |
-| [| Baseline V1 | [audit\_trust\_security.pdf](/assets/audit_trust_security.pdf) | 2024-02-27 | [Trust Security]() |](https://trustsec.xyz/) | Guardian | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -218,15 +211,15 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 8 |
-| upstream | 2 |
-| standard_library | 3 |
+| upstream | 0 |
+| standard_library | 2 |
 | needs_review | 102 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 8
+- Audits with zero matched contracts: 7
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=1
@@ -240,6 +233,5 @@ Zero-match audit list:
 - [4658] 2024-10-27_Baseline_BToken.pdf
 - [4659] 2024-08-23_Baseline_Loops.pdf
 - [4660] guardian_v2.pdf
-- [4662] | Baseline V1 | [audit\_trust\_security.pdf](/assets/audit_trust_security.pdf) | 2024-02-27 | [Trust Security]() |
 
 Fork inheritance lineage and inherited audits are included when available.

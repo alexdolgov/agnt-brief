@@ -5,17 +5,17 @@
 - Project: Mu Digital (`mu-digital`)
 - Website: [https://mudigital.net](https://mudigital.net)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-22T16:50:29.745Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:07.809Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 12 unique implementations (42 raw deployments)
-- DeFi Llama TVL: $19,453,717.98
+- DeFi Llama TVL: $19,416,287.38
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Mu Digital is a real-world asset (RWA) protocol that tokenizes and manages digital bonds. It provides infrastructure for primary market issuance, staking, rewards, and treasury management of bond-backed tokens.
+Mu Digital is a real-world asset (RWA) protocol focused on Asia-based fixed income and private credit yield products. Its token structure includes AZND as the senior tranche and muBOND as the junior or first-loss tranche; staking, rewards, treasury, and related contracts should be treated as supporting infrastructure rather than the primary product unless separately documented.
 
 ### Architecture
 

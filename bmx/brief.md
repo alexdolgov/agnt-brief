@@ -1,12 +1,14 @@
 # Agentic Audit Brief: BMX
 
+⚠️ Lifecycle status: DECLINING - TVL dropped 26.4% over 90 days
+
 ## Project Overview
 
 - Project: BMX (`bmx`)
 - Website: [https://www.bmx.trade/](https://www.bmx.trade/)
-- Lifecycle: active (Tier 0, 87.6% below peak)
-- Generated: 2026-05-31T07:31:59.358Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 87.6% below peak)
+- Generated: 2026-06-10T20:59:01.023Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, mode
 - Contract surface: 184 unique implementations (619 raw deployments)
 - DeFi Llama TVL: $2,667,683.00
@@ -15,7 +17,7 @@
 
 ## Project Description
 
-BMX is a decentralized exchange and derivatives protocol operating on Base and Mode. It offers a classic perpetuals trading platform, a freestyle trading experience with multi-account support, and a swap product called Deli Swap.
+BMX is a decentralized exchange and derivatives protocol operating on Base, Mode, and Sonic. It offers a classic perpetuals trading platform, a freestyle trading experience with multi-account support, and a swap product called Deli Swap.
 
 ### Architecture
 
@@ -35,6 +37,7 @@ The families share infrastructure through a common set of fee distributors and d
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [declining]. ASD of $305,691.13 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

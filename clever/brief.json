@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "clever",
-  "generated_at": "2026-05-23T14:59:31.074Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:01.451Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "clever",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 83.05784424830827
   },
   "summary": {
-    "total_contracts": 78,
-    "total_addresses": 180,
-    "unique_implementations": 78,
-    "total_deployments": 180,
+    "total_contracts": 76,
+    "total_addresses": 174,
+    "unique_implementations": 76,
+    "total_deployments": 174,
     "audited_contracts": 7,
-    "unaudited_contracts": 61,
+    "unaudited_contracts": 59,
     "contracts_verified_audited": 7,
-    "contracts_verified_unaudited": 61,
+    "contracts_verified_unaudited": 59,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 10,
-    "coverage_pct": 10.3,
+    "coverage_pct": 10.6,
     "total_audits": 3,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 5722260.51847,
-    "tvl_usd": 12438607.523188122,
+    "dl_tvl_usd": 5614458.116789999,
+    "tvl_usd": 3249669.225763648,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 12438607.52
+      "ethereum": 3249669.23
     },
-    "asd_usd": 10779785.820836099,
+    "asd_usd": 1590847.5234116246,
     "website_url": "https://clever.aladdin.club/",
     "chains": [
       "ethereum"
@@ -58,113 +58,20 @@
     }
   },
   "topography": {
-    "project_purpose": "CLever is a yield optimization protocol that automates the compounding and management of Curve and Convex liquidity positions. It offers leveraged yield strategies and liquid locker tokens to maximize returns for liquidity providers.",
+    "project_purpose": "CLever is a DeFi protocol for CVX and stablecoin-related future-yield and leverage positions. Its native surface includes CLever modules such as Furnace/MetaFurnace, farming, locker, vesting, governance, token, and strategy components that handle yield claims, reward harvesting, swapping, and redemption flows. Third-party systems such as Balancer and StakeDAO should be treated as external integrations or dependencies rather than CLever-owned core contracts or TVL.",
     "relationship_narrative": "The CLever family consists of a single product line where the Vault contract interacts with multiple Vyper contracts to execute yield strategies. All contracts share the same deployer cluster, indicating a unified infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 76,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xba12222222228d8ba445958a75a0704d566bf2c8",
-      "name": "Vault",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "balancer",
-      "product_line": "CLever",
-      "tvl_usd": 7247741.63249862,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Vault",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xba12222222228d8ba445958a75a0704d566bf2c8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 7247741.63249862,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0e20d8b0ec57ca8157d9bc2beec2c28a80eaae8a",
-      "name": "StakeDAOCRVVault",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "stakedao",
-      "product_line": null,
-      "tvl_usd": 1941196.664925855,
-      "is_proxy": false,
-      "impl_address": "0xf29fafca79caa5ea426b03014d653f2361d254c1",
-      "impl_name": "StakeDAOCRVVault",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0e20d8b0ec57ca8157d9bc2beec2c28a80eaae8a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2b3e72f568f96d7209e20c8b8f4f2a363ee1e3f6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1941196.664925855,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x7dd09b5309dfb3531e6a35475a647474588acda6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xe86cf56582ee0a798b3490886de6cb59d56e4aad",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf29fafca79caa5ea426b03014d653f2361d254c1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -3506,14 +3413,14 @@
       "auditor": "SECBIT",
       "tier": 2,
       "contracts_covered": 6,
-      "coverage_pct": 8.8,
+      "coverage_pct": 9.1,
       "latest_audit": "2022-11"
     },
     {
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 4,
-      "coverage_pct": 5.9,
+      "coverage_pct": 6.1,
       "latest_audit": "2022-04"
     }
   ],
@@ -3921,7 +3828,7 @@
   ],
   "origin_summary": {
     "native": 50,
-    "upstream": 3,
+    "upstream": 1,
     "standard_library": 15,
     "needs_review": 10
   },

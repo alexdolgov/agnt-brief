@@ -5,8 +5,8 @@
 - Project: Yuzu Money (`yuzu-money`)
 - Website: [https://app.yuzu.money?ref=ZRSJY3HG](https://app.yuzu.money?ref=ZRSJY3HG)
 - Lifecycle: active (Tier 0, 28.6% below peak)
-- Generated: 2026-05-31T11:42:15.238Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:19.478Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: plasma
 - Contract surface: 8 unique implementations (17 raw deployments)
 - DeFi Llama TVL: $50,939,265.75
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Yuzu Money is a yield-bearing stablecoin protocol on Plasma that issues YuzuUSD, a stablecoin backed by liquidity provider tokens, and offers staking derivatives to earn yield.
+Yuzu Money is an overcollateralized stablecoin and yield protocol spanning Plasma and Monad, with yzUSD/YuzuUSD and staked syzUSD products plus RWA, fixed-income, and T-Bills-style yield products such as yzPP.
 
 ### Architecture
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "forgeyields",
-  "generated_at": "2026-05-24T16:14:48.659Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:04.051Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "forgeyields",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1885557.3460000001,
-    "tvl_usd": 1885557.3460000001,
+    "dl_tvl_usd": 1826878.97403,
+    "tvl_usd": 1826878.97403,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "ForgeYields is an onchain capital allocator that deploys assets into yield-generating strategies on Ethereum. It aggregates user deposits and routes them to various DeFi protocols to optimize returns.",
-    "relationship_narrative": "The protocol consists of a single contract that serves as the capital allocator, with no additional supporting contracts or proxy structures identified.",
+    "project_purpose": "ForgeYields is a cross-chain yield aggregator and onchain capital allocator. It accepts deposits through token gateway contracts across multiple chains, including Starknet, and allocates capital into yield-generating strategies across Ethereum L1/L2 DeFi venues to optimize returns.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

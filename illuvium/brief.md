@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Illuvium
 
-⚠️ Lifecycle status: DEAD - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Illuvium (`illuvium`)
 - Website: [https://illuvium.io](https://illuvium.io)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-31T08:26:59.744Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, dead)
+- Generated: 2026-06-10T20:59:06.119Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 17 unique implementations (29 raw deployments)
+- Contract surface: 16 unique implementations (28 raw deployments)
 - DeFi Llama TVL: $9,071,695.89
 - On-chain TVL (included contracts): $39,754,462.67
 - TVL by chain: Ethereum $39,754,462.67
 
 ## Project Description
 
-Illuvium is a gaming protocol that provides staking and liquidity pool contracts for its native ILV token, enabling users to earn rewards and participate in the Illuvium ecosystem.
+Illuvium is a gaming ecosystem centered on a decentralized NFT collection and auto-battler game, with Ethereum-based ILV staking and pool2/liquidity contracts supporting participation in the broader Illuvium ecosystem.
 
 ### Architecture
 
@@ -25,19 +23,18 @@ The Illuvium family uses ERC1967Proxy contracts to upgrade ILVPool and SushiLPPo
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/15 (0.0%)
-- Verified + Unaudited implementations: 15
+- Verified implementations audited: 0/14 (0.0%)
+- Verified + Unaudited implementations: 14
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 17
-- Raw deployments: 29
+- Unique implementations: 16
+- Raw deployments: 28
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $39,754,462.67
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $39,754,462.67 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -49,7 +46,7 @@ The Illuvium family uses ERC1967Proxy contracts to upgrade ILVPool and SushiLPPo
 
 - None
 
-### ⚠️ Verified + Unaudited (15)
+### ⚠️ Verified + Unaudited (14)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -66,7 +63,6 @@ The Illuvium family uses ERC1967Proxy contracts to upgrade ILVPool and SushiLPPo
 | PoolFactory | registry | ethereum | 2 deployments: ethereum [`0x53aff3...56d6e1`](./contracts/ethereum-1/0x53aff3b5059a48e4ee37e63c03e3ad563756d6e1/); ethereum `0x9dca38...94597c` | ⚠️ Unaudited |
 | PreIlluvium | unknown | ethereum | [`0xabdef6...78f11f`](./contracts/ethereum-1/0xabdef64e297a6dd56e0efa3005972da47d78f11f/) | ⚠️ Unaudited |
 | SushiLPPool | core_logic | ethereum | [`0xe98477...571cc2`](./contracts/ethereum-1/0xe98477bdc16126bb0877c6e3882e3edd72571cc2/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | [`0x6a091a...ac0eda`](./contracts/ethereum-1/0x6a091a3406e0073c3cd6340122143009adac0eda/) | ⚠️ Unaudited |
 | VotingIlluvium | unknown | ethereum | 9 deployments: ethereum [`0x035dc7...b08207`](./contracts/ethereum-1/0x035dc7dd0e90de650bc8b94196a5419e33b08207/); ethereum `0x04da3f...21392c`; ethereum `0x19ac50...413945`; ethereum `0x2e15ea...14b71b`; ethereum `0x487e58...173032`; ethereum `0x5f04ca...436418`; ethereum `0x98c7c1...ca0c76`; ethereum `0xbf9a92...8ce17e`; ethereum `0xe8d3c5...73fb00` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -119,7 +115,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 14 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 2 |
 | needs_review | 0 |
 

@@ -6,8 +6,8 @@
 
 - Project: Swamp Finance (`swamp-finance`)
 - Lifecycle: declining (Tier 0, 97.2% below peak)
-- Generated: 2026-05-31T10:45:47.605Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.870Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 11 unique implementations (55 raw deployments)
 - DeFi Llama TVL: $1,198,039.12
@@ -16,7 +16,7 @@
 
 ## Project Description
 
-Swamp Finance is a yield farming protocol on BSC that allows users to stake tokens and earn rewards in its native SWAMP token.
+Swamp Finance is a BSC yield optimizer/yield protocol with multiple strategy contracts, alongside NativeFarm and SWAMP token reward components. Any governance-token characterization should be omitted or qualified unless supported by project documentation.
 
 ### Architecture
 

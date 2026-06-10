@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "debridge",
-  "generated_at": "2026-05-31T07:49:01.703Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.642Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "debridge",
@@ -33,9 +33,9 @@
   },
   "summary": {
     "total_contracts": 161,
-    "total_addresses": 436,
+    "total_addresses": 435,
     "unique_implementations": 161,
-    "total_deployments": 436,
+    "total_deployments": 435,
     "audited_contracts": 13,
     "unaudited_contracts": 8,
     "contracts_verified_audited": 8,
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 5,
     "contracts_unverified": 140,
     "coverage_pct": 61.9,
-    "total_audits": 34,
+    "total_audits": 32,
     "scoreable_audits": 13,
     "dl_tvl_usd": 3812745.79161,
     "tvl_usd": 263879740.52345026,
@@ -74,13 +74,18 @@
       "fresh": 0,
       "aging": 5,
       "stale": 27,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
     "project_purpose": "deBridge is a cross-chain interoperability protocol that enables users to transfer assets and arbitrary messages between multiple blockchains. It provides a decentralized bridge infrastructure with liquidity networks and validation mechanisms to facilitate secure and efficient cross-chain transactions.",
     "relationship_narrative": "The EVM Bridge Core provides foundational cross-chain messaging and token infrastructure, which the DLN Liquidity Network leverages for routing and executing user swaps. Both families share common proxy patterns and rely on SignatureVerifier for validation, while the Subscription module operates independently for recurring payments.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 161,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -90,26 +95,17 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+      "address": "0xba2ae424d960c26247dd6c32edc70b295c744c43",
       "name": "BEP20TokenImplementation",
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "deBridge",
+      "product_line": "​ Making a call",
       "tvl_usd": 263879740.52345026,
       "is_proxy": true,
       "impl_address": "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
       "impl_name": "BEP20TokenImplementation",
       "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 56,
           "chain_name": "bsc",
@@ -7623,27 +7619,6 @@
   ],
   "audits": [
     {
-      "audit_id": 2650,
-      "audit_key": "audit-2650",
-      "report_name": "Active Bug Bounty Program",
-      "report_url": "https://immunefi.com/bug-bounty/debridge/information",
-      "auditor": "Immunefi",
-      "audit_type": "bug_bounty",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 9997,
       "audit_key": "audit-9997",
       "report_name": "CrosschainForwarder Allowances Audit.pdf",
@@ -8458,27 +8433,6 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10063,
-      "audit_key": "audit-10063",
-      "report_name": "security.md",
-      "report_url": "https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/the-core-protocol/security.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -8501,7 +8455,7 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+      "address": "0xba2ae424d960c26247dd6c32edc70b295c744c43",
       "name": "BEP20TokenImplementation",
       "role": "token",
       "origin_kind": "native",
@@ -8610,17 +8564,9 @@
       {
         "audit_id": 10028,
         "report_name": "debridge_backend_pentest_report_halborn.pdf"
-      },
-      {
-        "audit_id": 10063,
-        "report_name": "security.md"
       }
     ],
     "inherited_remapped_matches": []
   },
-  "active_bug_bounty": {
-    "platform": "Immunefi",
-    "url": "https://immunefi.com/bug-bounty/debridge/information",
-    "tier": 1
-  }
+  "active_bug_bounty": null
 }

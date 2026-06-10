@@ -7,21 +7,22 @@
 - Project: Kava Liquid (`kava-liquid`)
 - Website: [https://app.kava.io/mint](https://app.kava.io/mint)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T05:42:31.020Z
-- Pipeline run: v2-pipeline-2026-05-31-6a3e7e-9cd8
+- Generated: 2026-06-10T20:59:06.469Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,551,711.13
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Kava Liquid is a liquid staking protocol on the Kava chain that allows users to stake their assets and receive a liquid derivative token in return, enabling them to earn staking rewards while maintaining liquidity.
-
-### Architecture
-
-The protocol consists of a single liquid staking contract that handles both staking and token issuance, with no additional infrastructure contracts identified.
+Kava Liquid is a KAVA liquid staking product on the Kava chain for bKAVA. Available evidence does not confirm that the single listed contract handles staking, liquid staking token issuance, or represents the complete live contract surface.
 
 ## Audit Coverage Summary
 

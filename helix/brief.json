@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "helix",
-  "generated_at": "2026-05-31T08:22:52.108Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.562Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "helix",
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Helix is a decentralized derivatives and spot trading protocol on Ethereum. It provides infrastructure for creating and managing deal tokens, deal implementations, and identity verification, enabling structured financial products and trading.",
+    "project_purpose": "Helix is a decentralized spot and derivatives exchange. The currently listed Ethereum deal-token and identity-verification contracts should not be treated as the active TVL-bearing Helix exchange surface without further project confirmation; current public TVL attribution is on Injective.",
     "relationship_narrative": "HelixFactory creates and manages deal tokens (HelixDealTokens) and deal implementations (HelixDealImplementationRepository), while HelixUniqueIdentity provides identity verification and HelixConfig supplies configuration parameters across the protocol.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 9,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -379,7 +384,7 @@
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
-      "impl_address": null,
+      "impl_address": "0x3e33865107d728336563c9a9d479173fcf61fc49",
       "impl_name": "TransparentUpgradeableProxy",
       "deployments": [
         {

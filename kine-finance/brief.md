@@ -6,8 +6,8 @@
 
 - Project: Kine Finance (`kine-finance`)
 - Lifecycle: declining (Tier 0, 95.8% below peak)
-- Generated: 2026-05-31T08:35:05.199Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:06.692Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, bsc, ethereum, polygon
 - Contract surface: 35 unique implementations (169 raw deployments)
 - DeFi Llama TVL: $1,094,539.10
@@ -16,7 +16,7 @@
 
 ## Project Description
 
-Kine Finance is a decentralized protocol for lending and borrowing digital assets, enabling users to supply assets to earn yield or borrow against collateral. It uses a Compound-like architecture with kToken interest-bearing tokens and a governance-controlled unitroller for market management.
+Kine Finance is a liquidity-pool-backed derivatives trading protocol. Its current project identity should be described around derivatives trading and liquidity pools, consistent with DefiLlama. Compound-style kToken/KErc20Delegator contracts, where present, should be treated as legacy or implementation-level collateral/accounting components rather than the core product purpose.
 
 ### Architecture
 

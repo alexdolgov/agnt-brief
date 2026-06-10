@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "vfat.io",
-  "generated_at": "2026-05-27T07:30:03.815Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-a9ad",
+  "generated_at": "2026-06-10T20:59:18.712Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "vfat.io",
@@ -64,16 +64,21 @@
     "latest_audit_date": "2026-02",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 2,
-      "aging": 3,
+      "fresh": 1,
+      "aging": 4,
       "stale": 5,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "vfat.io is a multi-chain yield aggregator that enables users to deposit liquidity into automated farming strategies. It manages concentrated liquidity positions, staking, and reward distribution across various decentralized exchanges and chains.",
+    "project_purpose": "vfat.io is a multi-chain yield aggregator built around the Sickle self-custodial smart-contract-wallet model. It helps users batch and automate yield-farming actions such as concentrated liquidity management, staking, and reward claiming across decentralized exchanges and chains, while users retain self-custody rather than depositing into a custodial vault-like strategy.",
     "relationship_narrative": "The protocol uses SickleFactory to deploy user-specific Sickle contracts that interact with MasterChefV3 staking, NonfungiblePositionManager for liquidity management, and Gauge/Voter systems for reward distribution. Supporting registries and fee libraries provide configuration and fee handling across all core operations.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 553,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -42685,7 +42690,7 @@
       "report_url": "https://github.com/Ackee-Blockchain/public-audit-reports/blob/master/2025/ackee-blockchain-vfat-farm-strategies-report.pdf",
       "auditor": "Ackee Blockchain",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,

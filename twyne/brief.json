@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "twyne",
-  "generated_at": "2026-05-24T11:40:08.242Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:18.180Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "twyne",
@@ -26,22 +26,22 @@
     "total_addresses": 102,
     "unique_implementations": 59,
     "total_deployments": 102,
-    "audited_contracts": 5,
-    "unaudited_contracts": 47,
-    "contracts_verified_audited": 5,
-    "contracts_verified_unaudited": 47,
+    "audited_contracts": 2,
+    "unaudited_contracts": 50,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 50,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 7,
-    "coverage_pct": 9.6,
-    "total_audits": 9,
-    "scoreable_audits": 2,
-    "dl_tvl_usd": 2509490.73948,
+    "coverage_pct": 3.8,
+    "total_audits": 6,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 2476616.59808,
     "tvl_usd": 985716.3919902482,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "ethereum": 985716.39
     },
-    "asd_usd": null,
+    "asd_usd": 985716.3919902482,
     "website_url": "https://twyne.xyz/",
     "chains": [
       "ethereum"
@@ -51,16 +51,21 @@
     "latest_audit_date": "2025-12",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 3,
+      "fresh": 2,
       "aging": 3,
       "stale": 0,
-      "unknown": 3
+      "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Twyne is a lending protocol that enables users to deposit collateral and borrow assets. It uses vaults to manage collateral positions and integrates with external lending markets like Aave and Euler.",
+    "project_purpose": "Twyne is a universal credit delegation layer built on top of existing lending markets such as Aave and Euler. Creditors delegate unused borrowing capacity to earn yield, while borrowers use delegated credit to increase leverage or improve liquidation buffers on their existing lending-market positions. Twyne includes Twyne-specific vault and borrowing logic while also depending on inherited or external Euler EVC/EVK infrastructure for parts of its deployed stack.",
     "relationship_narrative": "The GenericFactory deploys EVault instances, while the CollateralVaultFactory creates collateral vaults for Aave and Euler. These vaults use wrappers like AaveV3ATokenWrapper to interact with external protocols, and the VaultManager oversees vault operations.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 59,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -88,7 +93,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 151170.11908426747,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -97,7 +102,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -106,7 +111,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2242.3323195260923,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -115,16 +120,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 832303.9405864547,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2819"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -148,16 +151,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2819"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -363,7 +364,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -372,7 +373,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -381,7 +382,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -390,16 +391,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2819"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -780,8 +779,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2817",
-        "audit-2819"
+        "audit-2817"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2286,8 +2284,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2817",
-        "audit-2819"
+        "audit-2817"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2387,37 +2384,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2819,
-      "audit_key": "audit-2819",
-      "report_name": "2025-11-Twyne-AAVE.pdf",
-      "report_url": "https://reports.yaudit.dev/pdf/2025-11-Twyne-AAVE.pdf",
-      "auditor": "yAudit",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AaveV3ATokenWrapper",
-        "AaveV3ATokenWrapperOracle",
-        "AaveV3CollateralVault",
-        "AaveV3Wrapper",
-        "CollateralVaultBase",
-        "CollateralVaultFactory",
-        "CustomERC4626StataTokenUpgradeable",
-        "EulerCollateralVault",
-        "VaultManager"
-      ],
-      "matched_contracts": 33,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 2820,
       "audit_key": "audit-2820",
       "report_name": "↑ Back to Top",
@@ -2458,58 +2424,9 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2822,
-      "audit_key": "audit-2822",
-      "report_name": "SecEureka",
-      "report_url": "https://seceureka.com/",
-      "auditor": "SecEureka",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2823,
-      "audit_key": "audit-2823",
-      "report_name": "www.enigmadark.com",
-      "report_url": "https://www.enigmadark.com/",
-      "auditor": "Enigma Ventures",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
-    {
-      "auditor": "yAudit",
-      "tier": 2,
-      "contracts_covered": 5,
-      "coverage_pct": 9.6,
-      "latest_audit": "2025-12"
-    },
     {
       "auditor": "Enigma Ventures",
       "tier": 2,
@@ -2564,6 +2481,16 @@
       "chain_name": "ethereum",
       "address": "0xd9d5bb195b1fb27dad5a36fdbb5abbae9e88456e",
       "name": "CapRiskStewardFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x42ccba95b6e0cb0c8405d347bc9d999d2c7a4c05",
+      "name": "CollateralVaultFactory",
       "role": "registry",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -2988,10 +2915,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 57
+      "extraction_exact": 24
     },
     "extraction_confidence_counts": {
-      "high": 2
+      "high": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -3015,14 +2942,6 @@
       {
         "audit_id": 2821,
         "report_name": "DL audit link"
-      },
-      {
-        "audit_id": 2822,
-        "report_name": "SecEureka"
-      },
-      {
-        "audit_id": 2823,
-        "report_name": "www.enigmadark.com"
       }
     ],
     "inherited_remapped_matches": []

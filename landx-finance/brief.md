@@ -5,17 +5,17 @@
 - Project: LandX Finance (`landx-finance`)
 - Website: [https://landx.fi](https://landx.fi)
 - Lifecycle: active (Tier 0, 21.6% below peak)
-- Generated: 2026-05-24T17:27:36.025Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:06.847Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 3 unique implementations (3 raw deployments)
-- DeFi Llama TVL: $1,770,562.70
+- DeFi Llama TVL: $1,771,095.83
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-LandX Finance tokenizes real-world agricultural assets, allowing users to invest in farmland and earn yield from crop rents. It provides on-chain exposure to physical farmland through its CToken and supporting infrastructure.
+LandX Finance is an agriculture/RWA financing protocol that provides on-chain exposure to yield from future harvests backed or secured by farmland. Its CToken and supporting infrastructure are part of a system for accessing agricultural yield opportunities, without implying direct farmland ownership, farmland shares, or crop rent distributions.
 
 ### Architecture
 

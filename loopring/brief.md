@@ -7,8 +7,8 @@
 - Project: Loopring (`loopring`)
 - Website: [https://loopring.org/#/](https://loopring.org/#/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T09:49:31.418Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:07.063Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, ethereum
 - Contract surface: 145 unique implementations (443 raw deployments)
 - DeFi Llama TVL: $10,455,853.33
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Loopring is a decentralized exchange protocol that enables high-throughput, low-cost trading and automated market making on Ethereum and Base. It uses zkRollup technology to batch off-chain order matching with on-chain settlement, providing a non-custodial trading experience.
+Loopring is a zkRollup Layer 2 exchange and payment protocol that uses zero-knowledge rollups to provide high-throughput, low-cost, non-custodial trading, transfers, and payments. Its system includes DEX and AMM functionality with off-chain batching/order processing and on-chain settlement. DefiLlama currently reports Loopring TVL across Ethereum, Base, and Taiko; any contract-surface or coverage analysis should distinguish the indexed contract set from the full DefiLlama-reported chain set.
 
 ### Architecture
 

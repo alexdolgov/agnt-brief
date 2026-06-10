@@ -1,12 +1,14 @@
 # Agentic Audit Brief: Sorare Bridge
 
+⚠️ Lifecycle status: DECLINING - TVL dropped 21.8% over 90 days
+
 ## Project Overview
 
 - Project: Sorare Bridge (`sorare-bridge`)
 - Website: [https://sorare.com/](https://sorare.com/)
-- Lifecycle: active (Tier 0, 84.7% below peak)
-- Generated: 2026-05-31T10:38:38.639Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 84.7% below peak)
+- Generated: 2026-06-10T20:59:16.259Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 58 unique implementations (210 raw deployments)
 - DeFi Llama TVL: $3,952,453.46
@@ -15,7 +17,7 @@
 
 ## Project Description
 
-Sorare Bridge is a canonical bridge that facilitates asset transfers between Ethereum and Starknet, enabling users to move ETH, ERC-20 tokens, and NFTs across chains. It also supports exchange and perpetual trading functionality on Starknet via StarkExchange and StarkPerpetual contracts.
+Sorare Bridge is a bridge between Ethereum and Sorare, supporting asset transfers related to Sorare's fantasy sports and digital player card product. It should not be described as a general Starknet bridge, Starknet exchange, or perpetual trading protocol unless supported by Sorare documentation.
 
 ### Architecture
 
@@ -35,6 +37,7 @@ The bridge contracts (StarknetTokenBridge, StarknetEthBridge, StarknetERC20Bridg
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "cgo-finance",
-  "generated_at": "2026-05-31T07:41:51.041Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.361Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "cgo-finance",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "CGO Finance is a yield aggregator on Cronos that optimizes user deposits by automatically compounding yields from underlying DeFi protocols.",
-    "relationship_narrative": "The two contracts likely represent a vault and a strategy, where the vault holds user funds and delegates to the strategy for yield generation, sharing a common yield aggregation infrastructure.",
+    "project_purpose": "CGO Finance is a Cronos yield optimizer/yield aggregator.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

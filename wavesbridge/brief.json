@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "wavesbridge",
-  "generated_at": "2026-05-31T11:35:54.568Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-10T20:59:18.801Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "wavesbridge",
     "tier": 0,
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "WavesBridge is a cross-chain bridge enabling asset transfers between Waves and Ethereum networks. It uses a set of contracts on Ethereum to lock and release tokens, facilitating interoperability.",
+    "project_purpose": "WavesBridge is a multi-chain token bridge supporting asset transfers across Waves, Ethereum, and other connected networks. The Ethereum contracts tracked in this brief represent only the Ethereum-side contract surface of the broader multi-chain bridge system; token contracts such as Neiro and RealGames should be treated as external or supported assets unless separately verified as core WavesBridge components.",
     "relationship_narrative": "The Bridge contract serves as the operational core, interacting with token contracts like PepeToken and SimpleToken to manage locked assets. Supporting contracts Neiro and RealGames likely provide auxiliary functions or token instances used within the bridge ecosystem.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 5,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

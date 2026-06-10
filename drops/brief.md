@@ -7,8 +7,8 @@
 - Project: Drops (`drops`)
 - Website: [https://drops.co](https://drops.co)
 - Lifecycle: declining (Tier 0, 99.8% below peak)
-- Generated: 2026-05-31T07:54:29.717Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:02.008Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 77 unique implementations (217 raw deployments)
 - DeFi Llama TVL: $3,296,081.16
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Drops is an NFT lending protocol that allows users to borrow against their NFTs by depositing them as collateral in isolated lending pools. It uses a Compound-like architecture with CEther and CErc721 tokens representing supplied assets and Unitroller/Comptroller contracts managing risk and liquidations.
+Drops is an Ethereum NFT and DeFi-asset lending protocol. Its contract surface includes Compound-style CErc20 and CEther liquidity markets for ERC20/ETH assets, CErc721 collateral markets for NFT-backed borrowing, and Unitroller/Comptroller risk-management components for market configuration, collateral, borrowing, and liquidation logic. Upgradeability should be described only for the relevant proxy-based components rather than as a pattern shared by all contracts.
 
 ### Architecture
 

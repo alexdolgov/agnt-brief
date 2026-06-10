@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "rank-trading",
-  "generated_at": "2026-05-24T11:50:14.131Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:09.464Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "rank-trading",
@@ -35,7 +35,7 @@
     "coverage_pct": 30,
     "total_audits": 2,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 2381514.36869,
+    "dl_tvl_usd": 2326890.56464,
     "tvl_usd": 1188950,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Rank Trading is a yield protocol on BSC that provides token staking and liquidity locking services. It enables users to earn yield through its native RankToken and secure liquidity via Uniswap V3 locker contracts.",
+    "project_purpose": "Rank Trading is a BSC-based decentralized quant and algorithmic trading platform focused on automated trading strategies, trader and AI-agent marketplace functionality, and strategy vaults. Its native RAN token supports platform utility such as staking and potential revenue-share features, but staking is not the sole product focus and liquidity locking should not be characterized as a core Rank Trading service unless separately documented by the project.",
     "relationship_narrative": "The protocol consists of a single product family where the RankToken serves as the yield-bearing asset, and the UNCX_LiquidityLocker_UniV3 contract secures liquidity. Both contracts are deployed by the same cluster, indicating shared infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 13,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

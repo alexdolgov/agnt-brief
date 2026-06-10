@@ -7,8 +7,8 @@
 - Project: Giza (`giza`)
 - Website: [https://www.gizatech.xyz/](https://www.gizatech.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T08:10:28.230Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.325Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, plasma
 - Contract surface: 16 unique implementations (28 raw deployments)
 - DeFi Llama TVL: $4,630,526.82
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Giza is a decentralized lending and borrowing protocol that enables users to supply assets to earn yield and borrow against collateral. It integrates with Morpho Blue and Compound-based markets to offer optimized lending vaults and interest-bearing tokens.
+Giza is autonomous financial intelligence / AI-agent infrastructure for non-custodial DeFi strategy execution. Its agents can route and manage capital across DeFi venues and strategies, including lending markets such as Morpho or Compound where applicable, but Giza itself should not be described as a standalone decentralized lending and borrowing protocol.
 
 ### Architecture
 

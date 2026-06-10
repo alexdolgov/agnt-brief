@@ -5,8 +5,8 @@
 - Project: Hypersurface (`hypersurface`)
 - Website: [https://app.hypersurface.io/rewards?referrer=defillama](https://app.hypersurface.io/rewards?referrer=defillama)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T08:24:51.356Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:06.092Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, hyperliquid
 - Contract surface: 242 unique implementations (510 raw deployments)
 - DeFi Llama TVL: $4,024,164.78
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Hypersurface is a decentralized options protocol enabling users to trade, hedge, and manage risk through structured products. It provides infrastructure for options markets, margin management, and cross-chain asset handling.
+Hypersurface is a DeFi structured-products and volatility-yield platform focused on strategies such as covered calls and cash-secured puts. It should not be described as a broad options trading venue, margin-management system, auction platform, or cross-chain infrastructure protocol unless those claims are supported by official project documentation.
 
 ### Architecture
 

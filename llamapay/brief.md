@@ -5,17 +5,17 @@
 - Project: LlamaPay (`llamapay`)
 - Website: [https://llamapay.io](https://llamapay.io)
 - Lifecycle: active (Tier 0, 71.7% below peak)
-- Generated: 2026-05-31T09:50:28.199Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:07.021Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, berachain, blast, bsc, cronos, ethereum, fantom, fraxtal, gnosis, mantle, mode, optimism, polygon, sonic, zora
-- Contract surface: 20 unique implementations (105 raw deployments)
+- Contract surface: 19 unique implementations (98 raw deployments)
 - DeFi Llama TVL: $25,777,577.19
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-LlamaPay is a multi-chain payment protocol that enables automated, recurring salary and token distribution streams. It provides factories to deploy escrow contracts for scheduled payments and vesting, along with bot infrastructure for executing transactions.
+LlamaPay is a multi-chain protocol for by-the-second recurring payment streams, commonly used for salaries, grants, subscriptions, and other continuous token payments. It also supports related vesting and escrow functionality through factory-deployed payment contracts. Claim automation/bots and upstream Disperse-style batch distribution utilities should be treated as supporting or external utilities rather than the core product purpose.
 
 ### Architecture
 
@@ -23,17 +23,17 @@ The Live family's LlamaPayFactory and Vesting Escrow Factory deploy TokenEscrow 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/9 (0.0%)
-- Verified + Unaudited implementations: 6
+- Verified implementations audited: 0/8 (0.0%)
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 3
 - Unverified implementations: 11
-- Unique implementations: 20
-- Raw deployments: 105
-- Audits discovered: 2
+- Unique implementations: 19
+- Raw deployments: 98
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-06 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -46,11 +46,10 @@ The Live family's LlamaPayFactory and Vesting Escrow Factory deploy TokenEscrow 
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| Disperse | unknown | arbitrum | 7 deployments: ethereum `0xd152f5...452150`; optimism `0xd152f5...452150`; bsc `0xd152f5...452150`; gnosis `0xd152f5...452150`; polygon `0xd152f5...452150`; arbitrum [`0x6f9fb4...56301a`](./contracts/arbitrum-42161/0x6f9fb43274e9011804bf516e78caf5e89856301a/); avalanche [`0x6f9fb4...56301a`](./contracts/avalanche-43114/0x6f9fb43274e9011804bf516e78caf5e89856301a/) | ⚠️ Unaudited |
 | LlamaPayBot | unknown | ethereum | 17 deployments: ethereum [`0x0327a0...ae948e`](./contracts/ethereum-1/0x0327a00f37115115038c289827480ddaabae948e/); ethereum `0xc5a4fe...074ab9`; ethereum `0xe10eb2...218ee9`; optimism `0x6f9fb4...56301a`; optimism `0xc5a4fe...074ab9`; bsc `0xc5a4fe...074ab9`; polygon `0xc5a4fe...074ab9`; arbitrum `0xb1870e...b184e0`; avalanche [`0x0327a0...ae948e`](./contracts/avalanche-43114/0x0327a00f37115115038c289827480ddaabae948e/); avalanche `0x0e52b1...c258cf`; avalanche `0x3addfd...b6cb0f`; avalanche `0x57547f...0353d7`; avalanche `0x9410fb...1b633c`; avalanche `0xb7caa9...8b268c`; avalanche `0xda33d4...5294d1`; avalanche `0xe10eb2...218ee9`; avalanche `0xf13563...bac057` | ⚠️ Unaudited |
 | LlamaPayFactory | registry | sonic | 14 deployments: ethereum `0xde1c04...f84c7f`; optimism `0xde1c04...f84c7f`; bsc `0xde1c04...f84c7f`; gnosis `0xde1c04...f84c7f`; polygon `0xde1c04...f84c7f`; sonic [`0x09c39b...3aea07`](./contracts/sonic-146/0x09c39b8311e4b7c678cbdad76556877ecd3aea07/); base [`0x09c39b...3aea07`](./contracts/base-8453/0x09c39b8311e4b7c678cbdad76556877ecd3aea07/); arbitrum `0xde1c04...f84c7f`; avalanche `0x27fba1...247f9b`; avalanche `0x402ab0...dd76b2`; avalanche `0x6bbafc...9fd768`; avalanche `0x7d507b...25f4a3`; avalanche `0xedf040...38c481`; berachain [`0x09c39b...3aea07`](./contracts/berachain-80094/0x09c39b8311e4b7c678cbdad76556877ecd3aea07/) | ⚠️ Unaudited |
 | SimpleVestingEscrow | operational_periphery | mode | [`0x4ace3e...2b84bd`](./contracts/mode-34443/0x4ace3edd57eff1176a862e7b72db090ecf2b84bd/) | ⚠️ Unaudited |
@@ -96,7 +95,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [PeckShield-Audit-Report-LlamaPay-v1.0.pdf](https://github.com/LlamaPay/llamapay/blob/master/audits/PeckShield-Audit-Report-LlamaPay-v1.0.pdf) | PeckShield | Audit | 2022-06 | stale | Direct | n/a | 0 | n/a |
-| [bounty.md](https://github.com/LlamaPay/docs/blob/master/security/bounty.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -115,7 +113,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 10 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 0 |
 | needs_review | 9 |
 
@@ -123,7 +121,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -131,6 +129,5 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [5984] PeckShield-Audit-Report-LlamaPay-v1.0.pdf
-- [5985] bounty.md
 
 Fork inheritance lineage and inherited audits are included when available.

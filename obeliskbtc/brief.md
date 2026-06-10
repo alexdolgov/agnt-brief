@@ -7,8 +7,8 @@
 - Project: ObeliskBTC (`obeliskbtc`)
 - Website: [https://obelisk.nodedao.com](https://obelisk.nodedao.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:08:28.198Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:08.753Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 19 unique implementations (32 raw deployments)
 - DeFi Llama TVL: $8,953,906.82
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-ObeliskBTC is a bridge protocol that enables users to custody Bitcoin and mint a wrapped representation on Ethereum. It provides infrastructure for Bitcoin-backed assets and restaking strategies.
+ObeliskBTC is a Bitcoin asset-management and bridge protocol tracked as a separate DeFiLlama protocol. Its scope should be treated separately from broader NodeDAO/NETH liquid-staking or restaking contracts unless project documentation explicitly links those deployments to ObeliskBTC.
 
 ### Architecture
 

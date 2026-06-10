@@ -5,21 +5,22 @@
 - Project: GrowiHF (`growihf`)
 - Website: [https://hf.growi.fi/](https://hf.growi.fi/)
 - Lifecycle: unknown
-- Generated: 2026-05-23T06:52:01.134Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:04.403Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $8,420,664.17
+- DeFi Llama TVL: $8,389,984.26
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-GrowiHF is a yield protocol that enables users to earn returns on their deposited assets. The available metadata indicates a focus on yield generation, but specific contract details are not provided.
-
-### Architecture
-
-No product families or contracts are defined, so no relationships can be described.
+GrowiHF is a DeFi hedge fund and quantitative asset management yield protocol focused on generating returns through trading strategies and risk-managed capital allocation.
 
 ## Audit Coverage Summary
 

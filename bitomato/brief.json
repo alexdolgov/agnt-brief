@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bitomato",
-  "generated_at": "2026-05-24T11:03:36.403Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:58:59.726Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2612575.94549,
-    "tvl_usd": 2612575.94549,
+    "dl_tvl_usd": 2598667.0843399996,
+    "tvl_usd": 2598667.0843399996,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "BiTomato is a centralized exchange (CEX) platform that facilitates cryptocurrency trading and related financial services. It operates off-chain with no on-chain smart contracts, relying on a traditional order book and custody model.",
-    "relationship_narrative": "No on-chain product families or contract relationships exist, as the protocol is a centralized exchange without smart contract infrastructure.",
+    "project_purpose": "BiTomato is listed on DefiLlama as a CEX / cryptocurrency exchange for meme tokens; its homepage currently displays a maintenance notice.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

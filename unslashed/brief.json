@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "unslashed",
-  "generated_at": "2026-05-31T11:28:11.336Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:18.516Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "unslashed",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Unslashed is a decentralized insurance protocol that allows users to provide underwriting capital and earn premiums by depositing assets into vaults. It also includes tokenized risk pools and staking mechanisms to support coverage for various DeFi risks.",
-    "relationship_narrative": "The Unslashed family centers on bVault contracts that hold underwriting capital, while BAC pools provide stablecoin risk coverage. Tokens like BlackPoolToken and ArcProxy facilitate governance and staking, with MasterChef distributing rewards, and Uniswap pairs providing liquidity for these tokens.",
+    "project_purpose": "Unslashed is a decentralized insurance protocol that allows users to provide underwriting capital and earn premiums by depositing assets into vaults. Unsupported or third-party components such as MasterChef rewards, Uniswap pairs, BAC pools, BlackPoolToken, ArcProxy, and other non-surface tokens or pools should not be described as part of the Unslashed contract surface unless independently verified as Unslashed-owned.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

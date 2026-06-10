@@ -1,25 +1,28 @@
 # Agentic Audit Brief: ProBit Global
 
+⚠️ Lifecycle status: DEAD - TVL changed 82.5% over 90 days
+
 ## Project Overview
 
 - Project: ProBit Global (`probit-global`)
 - Website: [https://www.probit.com](https://www.probit.com)
-- Lifecycle: active (Tier 0, 51.6% below peak)
-- Generated: 2026-05-31T10:20:45.694Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: dead (Tier 0, 51.6% below peak)
+- Generated: 2026-06-10T20:59:09.377Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: fantom
 - Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $12,830,307.30
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-ProBit Global is a centralized exchange (CEX) that provides trading services for digital assets. The contracts listed are likely related to token custody, exchange operations, or liquidity management on the Fantom chain.
-
-### Architecture
-
-All contracts belong to a single product family with no explicit internal relationships or shared infrastructure identified from the available data.
+ProBit Global is a former centralized cryptocurrency exchange whose service has permanently terminated. The listed Fantom addresses are unidentified and unverified; their relationship to ProBit custody, exchange operations, or liquidity management is not established.
 
 ## Audit Coverage Summary
 
@@ -35,6 +38,7 @@ All contracts belong to a single product family with no explicit internal relati
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 

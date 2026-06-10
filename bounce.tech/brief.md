@@ -5,21 +5,22 @@
 - Project: Bounce.Tech (`bounce.tech`)
 - Website: [https://bounce.tech/](https://bounce.tech/)
 - Lifecycle: unknown
-- Generated: 2026-05-24T23:20:25.813Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:01.074Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,408,251.93
+- DeFi Llama TVL: $1,118,714.85
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Bounce.Tech is a decentralized derivatives protocol that enables users to create and trade customized financial contracts, such as options and structured products, in a permissionless manner.
-
-### Architecture
-
-No product families or contracts are defined in the provided inventory, so no relationships can be described.
+Bounce.Tech is a leveraged token protocol on Hyperliquid that provides tokenized exposure tied to Hyperliquid perpetual markets, rather than a protocol for user-created options or structured products.
 
 ## Audit Coverage Summary
 

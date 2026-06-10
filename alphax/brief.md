@@ -5,8 +5,8 @@
 - Project: AlphaX (`alphax`)
 - Website: [https://alphax.com/](https://alphax.com/)
 - Lifecycle: active (Tier 0, 12.5% below peak)
-- Generated: 2026-06-10T20:25:57.043Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.813Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum
 - Contract surface: 1 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $1,486,770.27

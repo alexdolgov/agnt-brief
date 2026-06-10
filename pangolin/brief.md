@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Pangolin
 
-⚠️ Lifecycle status: DEAD - TVL changed 12.8% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 12.8% over 90 days
 
 ## Project Overview
 
 - Project: Pangolin (`pangolin`)
 - Website: [https://pangolin.exchange](https://pangolin.exchange)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-25T17:26:57.458Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:09.178Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche
 - Contract surface: 163 unique implementations (205 raw deployments)
-- DeFi Llama TVL: $3,662,481.00
+- DeFi Llama TVL: $3,769,583.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Pangolin is a decentralized exchange (DEX) on Avalanche that enables users to swap tokens, provide liquidity, and earn rewards. It uses an automated market maker (AMM) model with its own governance token (PNG) and includes staking and yield farming features.
+Pangolin is a multichain decentralized exchange (DEX) that enables users to swap tokens, provide liquidity, and earn rewards through an automated market maker (AMM) model, with PNG as its governance token and staking/yield farming features. The contract and audit coverage in this brief should be treated as Avalanche-only unless non-Avalanche deployments are explicitly added to scope.
 
 ### Architecture
 
@@ -31,13 +31,13 @@ The DEX Core generates fees that are collected by the FeeCollector and directed 
 - Unverified implementations: 137
 - Unique implementations: 163
 - Raw deployments: 205
-- Audits discovered: 13
-- Scoreable audits (matched contracts): 10
+- Audits discovered: 12
+- Scoreable audits (matched contracts): 9
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-04 (aging)
-- Staleness: 0 fresh, 1 aging, 12 stale, 0 unknown
+- Staleness: 0 fresh, 1 aging, 11 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -250,7 +250,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Pangolin_AllocationVester_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf](https://github.com/pangolindex/exchange-contracts/blob/main/audits/Pangolin_AllocationVester_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-03 | stale | Direct | n/a | 0 | n/a |
 | [Pangolin_DaaS_Audit_Report_Omniscia_Final.pdf](https://github.com/pangolindex/exchange-contracts/blob/main/audits/Pangolin_DaaS_Audit_Report_Omniscia_Final.pdf) | Omniscia | Audit | 2022-08 | stale | Direct | contract_name | 1 | high |
 | [Pangolin_Exchange_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf](https://github.com/pangolindex/exchange-contracts/blob/main/audits/Pangolin_Exchange_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-03 | stale | Direct | contract_name | 3 | high |
-| [Pangolin_Fee_Collector_Smart_Contract_Security_Audit_Report_Halborn_Draft.pdf](https://github.com/pangolindex/exchange-contracts/blob/main/audits/Pangolin_Fee_Collector_Smart_Contract_Security_Audit_Report_Halborn_Draft.pdf) | Halborn | Audit | 2021-12 | stale | Direct | contract_name | 1 | high |
 | [Pangolin_Fee_Collector_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf](https://github.com/pangolindex/exchange-contracts/blob/main/audits/Pangolin_Fee_Collector_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2021-12 | stale | Direct | contract_name | 1 | high |
 | [Pangolin_Fee_Collector_v2_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf](https://github.com/pangolindex/exchange-contracts/blob/main/audits/Pangolin_Fee_Collector_v2_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-04 | stale | Direct | contract_name | 1 | high |
 | [Pangolin_MiniChefV2Zapper_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf](https://github.com/pangolindex/exchange-contracts/blob/main/audits/Pangolin_MiniChefV2Zapper_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-02 | stale | Direct | contract_name | 1 | high |
@@ -291,8 +290,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=10
-- Match method counts: extraction_exact=55
+- Extraction confidence breakdown: high=9
+- Match method counts: extraction_exact=54
 
 Zero-match audit list:
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "neemo-finance",
-  "generated_at": "2026-05-24T22:41:52.766Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:08.057Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "neemo-finance",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1440615.08759,
-    "tvl_usd": 1440615.08759,
+    "dl_tvl_usd": 1369797.94774,
+    "tvl_usd": 1369797.94774,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Neemo Finance is a liquid restaking protocol that allows users to stake assets and receive liquid derivative tokens, enabling them to earn staking rewards while maintaining liquidity. It operates across multiple chains, including Ethereum and Soneium, to provide flexible restaking options.",
+    "project_purpose": "Neemo Finance is an Astar/Soneium-focused liquid staking and restaking protocol for ASTR and ETH. Users receive liquid derivative tokens such as nsASTR and nrETH while participating in staking/restaking strategies. Current public TVL attribution should be treated as Astar/Soneium-focused rather than Ethereum-mainnet-primary unless supported by matching chain TVL and deployed contracts.",
     "relationship_narrative": "The Neemo Finance family contains the core protocol logic, which is used by the Ethereum Mainnet and Soneium families through proxy contracts. The Ethereum Mainnet family includes a proxy pointing to an implementation shared with the Neemo Finance family, indicating shared infrastructure for liquid restaking across chains.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 14,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "xwin-finance",
-  "generated_at": "2026-05-23T13:03:32.541Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:19.395Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "xwin-finance",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6174447.62519,
+    "dl_tvl_usd": 6105445.77198,
     "tvl_usd": 1844863.4020851008,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "xWin Finance is a DeFi protocol that offers index-like investment products, allowing users to gain diversified exposure to a basket of crypto assets through a single token. The protocol simplifies portfolio management by providing automated, rule-based strategies.",
-    "relationship_narrative": "The project currently consists of a single token contract, with no additional infrastructure or product families identified. All functionality is encapsulated within the XWINToken contract.",
+    "project_purpose": "xWIN Finance is a multi-chain DeFi wealth-management platform offering robo-advisor, portfolio, index, and automated strategy products across multiple networks. The XWIN token is only the protocol token and should not be treated as containing all portfolio, index, or investment-management functionality; the protocol’s TVL-bearing product and strategy contracts are separate from the token contract and require independent inventory and coverage assessment.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

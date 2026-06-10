@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Block Analitica
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 39.8% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 39.8% over 90 days
 
 ## Project Overview
 
 - Project: Block Analitica (`block-analitica`)
 - Website: [https://blockanalitica.com/](https://blockanalitica.com/)
-- Lifecycle: unknown (Tier 0, 85.6% below peak)
-- Generated: 2026-05-31T07:31:59.069Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 85.6% below peak)
+- Generated: 2026-06-10T20:59:00.988Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, ethereum, sonic
-- Contract surface: 19 unique implementations (106 raw deployments)
+- Contract surface: 18 unique implementations (99 raw deployments)
 - DeFi Llama TVL: $49,595,780.40
 - On-chain TVL (included contracts): $252,833.05
 - TVL by chain: Sonic $252,833.05
 
 ## Project Description
 
-Block Analitica provides risk curation services for DeFi protocols, deploying and managing vaults and command contracts to optimize yield and risk parameters across multiple chains.
+Block Analitica is a DeFi risk intelligence, analytics, advisory, and risk-curation provider. It supports protocols and curated markets with risk research, monitoring, parameter recommendations, and related advisory services; vault deployment or management should only be attributed where a specific Block Analitica curator or owner role is evidenced.
 
 ### Architecture
 
@@ -25,19 +25,19 @@ All contracts belong to a single product family, with MetaMorpho vaults and Harb
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/17 (0.0%)
-- Verified + Unaudited implementations: 17
+- Verified implementations audited: 0/16 (0.0%)
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 19
-- Raw deployments: 106
+- Unique implementations: 18
+- Raw deployments: 99
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $252,833.05
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $252,833.05 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of $252,833.05 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,7 +49,7 @@ All contracts belong to a single product family, with MetaMorpho vaults and Harb
 
 - None
 
-### ⚠️ Verified + Unaudited (17)
+### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -61,7 +61,6 @@ All contracts belong to a single product family, with MetaMorpho vaults and Harb
 | FleetCommander | unknown | ethereum | 9 deployments: ethereum [`0x17ee2d...54ad8d`](./contracts/ethereum-1/0x17ee2d03e88b55e762c66c76ec99c3a28a54ad8d/); ethereum `0x67e536...0ab506`; ethereum `0x98c49e...9ecf17`; sonic `0x507a2d...7964f8`; sonic `0x64eb3c...3d2b86`; sonic `0x8b8235...a12922`; sonic `0xf06bed...6bfbe0`; base `0x98c49e...9ecf17`; arbitrum `0x98c49e...9ecf17` | ⚠️ Unaudited |
 | FleetCommanderRewardsManagerFactory | registry | sonic | 6 deployments: ethereum `0x83e1e5...9dc90c`; sonic [`0x716028...dba7d1`](./contracts/sonic-146/0x7160287da4c544907011c0548c0818f7a9dba7d1/); sonic `0xb3be2a...71b80b`; sonic `0xc474cd...ef0459`; base `0x83e1e5...9dc90c`; arbitrum `0x83e1e5...9dc90c` | ⚠️ Unaudited |
 | HarborCommand | unknown | sonic | 6 deployments: ethereum `0x09eb32...b0140f`; sonic [`0x092c41...dd6f57`](./contracts/sonic-146/0x092c41c6e9a8a54577cede5d077971116ddd6f57/); sonic `0x5de028...4b2523`; sonic `0xa8e471...4cf191`; base `0x09eb32...b0140f`; arbitrum `0x09eb32...b0140f` | ⚠️ Unaudited |
-| MetaMorpho | unknown | ethereum | 7 deployments: ethereum [`0x186514...d47344`](./contracts/ethereum-1/0x186514400e52270cef3d80e1c6f8d10a75d47344/); ethereum `0x2c25f6...e5d6b1`; ethereum `0x38989b...63ac5d`; base `0x543257...f5a796`; base `0xa0e430...3d0ff1`; base `0xc1256a...00a2ca`; base `0xf24608...01a026` | ⚠️ Unaudited |
 | ProtocolAccessManager | governance | sonic | 3 deployments: sonic [`0x244d9a...364c25`](./contracts/sonic-146/0x244d9affcca2eafd689b0393bf15f26f79364c25/); sonic `0xa55cd6...0f3f27`; sonic `0xafb8a8...270bc6` | ⚠️ Unaudited |
 | Raft | unknown | sonic | 5 deployments: ethereum `0xd1bccf...10bc6e`; sonic [`0x2a828b...f4f018`](./contracts/sonic-146/0x2a828b0e5cb549ee568923e815d9a781b6f4f018/); sonic `0x6e6b9c...05e204`; sonic `0x887482...afb4bc`; arbitrum `0xd1bccf...10bc6e` | ⚠️ Unaudited |
 | SummerGovernor | governance | sonic | 3 deployments: sonic [`0x2aa6df...7feb0d`](./contracts/sonic-146/0x2aa6dfdb53517243b5abb97fdaf2d6003b7feb0d/); sonic `0x59485a...3770af`; sonic `0x9b4998...b92768` | ⚠️ Unaudited |
@@ -111,7 +110,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x17ee2d...54ad8d`](./contracts/ethereum-1/0x17ee2d03e88b55e762c66c76ec99c3a28a54ad8d/) | FleetCommander | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x716028...dba7d1`](./contracts/sonic-146/0x7160287da4c544907011c0548c0818f7a9dba7d1/) | FleetCommanderRewardsManagerFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x092c41...dd6f57`](./contracts/sonic-146/0x092c41c6e9a8a54577cede5d077971116ddd6f57/) | HarborCommand | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x186514...d47344`](./contracts/ethereum-1/0x186514400e52270cef3d80e1c6f8d10a75d47344/) | MetaMorpho | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x244d9a...364c25`](./contracts/sonic-146/0x244d9affcca2eafd689b0393bf15f26f79364c25/) | ProtocolAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x2a828b...f4f018`](./contracts/sonic-146/0x2a828b0e5cb549ee568923e815d9a781b6f4f018/) | Raft | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x2aa6df...7feb0d`](./contracts/sonic-146/0x2aa6dfdb53517243b5abb97fdaf2d6003b7feb0d/) | SummerGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -125,7 +123,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 19 |
+| native | 18 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

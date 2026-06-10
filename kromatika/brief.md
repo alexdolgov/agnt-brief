@@ -5,17 +5,17 @@
 - Project: Kromatika (`kromatika`)
 - Website: [https://app.kromatika.finance/limitorder#/pool](https://app.kromatika.finance/limitorder#/pool)
 - Lifecycle: active (Tier 0, 40.6% below peak)
-- Generated: 2026-05-25T11:20:40.084Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:06.762Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum, optimism, polygon
 - Contract surface: 30 unique implementations (69 raw deployments)
-- DeFi Llama TVL: $1,102,134.11
+- DeFi Llama TVL: $1,091,186.50
 - On-chain TVL (included contracts): $83,796.24
 - TVL by chain: Optimism $44,689.75 | Arbitrum $32,393.26 | Polygon $6,713.23
 
 ## Project Description
 
-Kromatika is a decentralized exchange protocol that enables users to place gasless limit orders on Uniswap v3 pools. It provides a non-custodial, MEV-resistant trading experience by executing orders through a network of relayers and keeper bots.
+Kromatika provides order-book-style limit trading on Uniswap, with KROM/token and limit-order management and monitoring contracts deployed across supported chains.
 
 ### Architecture
 

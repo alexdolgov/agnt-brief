@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "wasabi",
-  "generated_at": "2026-05-25T00:59:13.151Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "rugged",
+  "generated_at": "2026-06-10T20:59:18.794Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "wasabi",
     "tier": 1,
@@ -45,7 +45,7 @@
     "coverage_pct": 37,
     "total_audits": 8,
     "scoreable_audits": 8,
-    "dl_tvl_usd": 1329763,
+    "dl_tvl_usd": 1307017,
     "tvl_usd": 6129835.088441618,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -76,9 +76,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Wasabi is a decentralized protocol offering leveraged perpetuals trading and automated market making for long-tail assets. It enables users to take long or short positions on various tokens across multiple chains, using vault-based liquidity and oracle-driven pricing.",
+    "project_purpose": "Wasabi is a decentralized leverage trading protocol for taking long and short positions on long-tail assets, using vault-based liquidity and oracle-driven pricing. The project also includes earning/native-yield functionality and should include Solana when reporting project-level chains or TVL.",
     "relationship_narrative": "The perpetual pools rely on vaults for liquidity, with vaults depositing into pools and earning fees. Routers and swappers facilitate asset conversions for entering/exiting positions, while account abstraction factories simplify user interactions across all families.",
     "product_family_count": 6
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 83,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "init-capital",
-  "generated_at": "2026-05-25T17:26:47.361Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:06.243Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "init-capital",
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 102,
-    "total_addresses": 167,
-    "unique_implementations": 102,
-    "total_deployments": 167,
+    "total_contracts": 99,
+    "total_addresses": 164,
+    "unique_implementations": 99,
+    "total_deployments": 164,
     "audited_contracts": 6,
-    "unaudited_contracts": 22,
+    "unaudited_contracts": 19,
     "contracts_verified_audited": 5,
-    "contracts_verified_unaudited": 21,
+    "contracts_verified_unaudited": 18,
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 74,
-    "coverage_pct": 21.4,
+    "coverage_pct": 24,
     "total_audits": 7,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 4514490.46227,
+    "dl_tvl_usd": 4285355.61747,
     "tvl_usd": 66515699.02789203,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -70,9 +70,14 @@
     }
   },
   "topography": {
-    "project_purpose": "INIT Capital is a decentralized lending protocol that enables users to supply and borrow assets across multiple chains. It features isolated lending pools with configurable risk parameters, interest rate models, and hooks for money market and margin trading operations.",
+    "project_purpose": "INIT Capital is a decentralized lending and money-market protocol with native pool, hook, oracle, configuration, risk, position, and periphery contracts. External assets such as USDC, USDT, WBTC, METH, cmETH, FBTC, and similar token contracts should be treated as underlying assets, not INIT-owned protocol/product contracts.",
     "relationship_narrative": "Lending Pools rely on Core Contracts for governance (Config, RiskManager), position tracking (PosManager), and price feeds (InitOracle). Hooks like MoneyMarketHook and MarginTradingHook extend pool behavior, while tokens from the INIT Capital family serve as the assets within these pools.",
     "product_family_count": 8
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 99,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -546,37 +551,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
-      "address": "0xc96de26018a54d51c097160568752c4e3bd6c364",
-      "name": "FBTC",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "fbtc",
-      "product_line": "INIT Capital",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "FBTC",
-      "deployments": [
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0xc96de26018a54d51c097160568752c4e3bd6c364",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 5000,
@@ -3721,37 +3695,6 @@
     {
       "chain_id": 5000,
       "chain_name": "mantle",
-      "address": "0x201eba5cc46d216ce6dc03f6a759e8e766e956ae",
-      "name": "USDT",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "tether",
-      "product_line": "INIT Capital",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "USDT",
-      "deployments": [
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0x201eba5cc46d216ce6dc03f6a759e8e766e956ae",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
       "address": "0x5be26527e817998a7206475496fde1e68957c5a6",
       "name": "USDYW",
       "role": "unknown",
@@ -3767,37 +3710,6 @@
           "chain_id": 5000,
           "chain_name": "mantle",
           "address": "0x5be26527e817998a7206475496fde1e68957c5a6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
-      "address": "0xcabae6f6ea1ecab08ad02fe02ce9a44f09aebfa2",
-      "name": "WBTC",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "wrapped-bitcoin",
-      "product_line": "INIT Capital",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "WBTC",
-      "deployments": [
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0xcabae6f6ea1ecab08ad02fe02ce9a44f09aebfa2",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -4025,21 +3937,21 @@
       "auditor": "Trust Security",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 17.9,
+      "coverage_pct": 20,
       "latest_audit": "2023-12"
     },
     {
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 10.7,
+      "coverage_pct": 12,
       "latest_audit": "2024-01"
     },
     {
       "auditor": "Sparkware",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 3.6,
+      "coverage_pct": 4,
       "latest_audit": null
     }
   ],
@@ -4097,7 +4009,7 @@
   ],
   "origin_summary": {
     "native": 33,
-    "upstream": 7,
+    "upstream": 4,
     "standard_library": 12,
     "needs_review": 50
   },

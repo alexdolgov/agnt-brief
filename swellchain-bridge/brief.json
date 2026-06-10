@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "swellchain-bridge",
-  "generated_at": "2026-05-31T10:49:59.494Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.922Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "swellchain-bridge",
@@ -69,6 +69,11 @@
     "project_purpose": "Swellchain Bridge is the canonical bridge for Swellchain, enabling asset transfers between Ethereum and the Swellchain L2. It uses the OP Stack bridge architecture to lock assets on L1 and mint equivalent representations on L2.",
     "relationship_narrative": "The bridge family consists of core OP Stack contracts (L1StandardBridge, OptimismPortal2) and an additional L1ERC20TokenBridge for token bridging, all deployed via proxies. These contracts share the same deployer cluster and form a unified bridge infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 10,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hypha",
-  "generated_at": "2026-05-25T17:07:11.843Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:06.113Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hypha",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 30,
     "coverage_pct": 0,
-    "total_audits": 3,
+    "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 15289637.33776,
+    "dl_tvl_usd": 14619915.17936,
     "tvl_usd": 16373227.036054784,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -53,14 +53,19 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 2,
+      "stale": 1,
       "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Hypha is a liquid staking protocol on Avalanche that allows users to stake AVAX and receive liquid staking tokens (ggAVAX, pstAVAX) while earning rewards. It also supports node operation and governance through its native GGP token.",
+    "project_purpose": "Hypha is an Avalanche staking protocol focused on AVAX liquid staking via stAVAX and staking infrastructure. It routes staking activity across Avalanche P-Chain/C-Chain flows, supports validator and node-operator participation through a marketplace/staking engine, and uses GGP where relevant for protocol incentives and governance.",
     "relationship_narrative": "The liquid staking family relies on the token infrastructure (GGP) for incentives and governance for parameter management. Node operation contracts interact with staking and rewards distribution, while governance controls upgrades across all families via proxy admins and multisig.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 60,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -2203,27 +2208,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1969,
-      "audit_key": "audit-1969",
-      "report_name": "here",
-      "report_url": "https://assets-global.website-files.com/62f90a8443126c2ee50f4c4e/643ee88bf91b375b39ba2613_Kudelski_multisig_labs_report_1.1.pdf",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "stale",
-      "date": "2022-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 1970,
       "audit_key": "audit-1970",
       "report_name": "here",
@@ -2502,10 +2486,6 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 1968,
-        "report_name": "here"
-      },
-      {
-        "audit_id": 1969,
         "report_name": "here"
       },
       {

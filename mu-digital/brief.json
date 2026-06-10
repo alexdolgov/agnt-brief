@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mu-digital",
-  "generated_at": "2026-05-22T16:50:29.745Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:07.809Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "mu-digital",
@@ -35,8 +35,8 @@
     "coverage_pct": 100,
     "total_audits": 2,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 19453717.98214,
-    "tvl_usd": 19453717.98214,
+    "dl_tvl_usd": 19416287.37994,
+    "tvl_usd": 19416287.37994,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Mu Digital is a real-world asset (RWA) protocol that tokenizes and manages digital bonds. It provides infrastructure for primary market issuance, staking, rewards, and treasury management of bond-backed tokens.",
+    "project_purpose": "Mu Digital is a real-world asset (RWA) protocol focused on Asia-based fixed income and private credit yield products. Its token structure includes AZND as the senior tranche and muBOND as the junior or first-loss tranche; staking, rewards, treasury, and related contracts should be treated as supporting infrastructure rather than the primary product unless separately documented.",
     "relationship_narrative": "The Protocol Contracts family relies on shared proxy infrastructure (ERC1967Proxy) for upgradeability. Supporting contracts like AccessManager, TreasuryManager, and PriceFeed provide cross-cutting services for access control, treasury operations, and price oracles.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 12,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

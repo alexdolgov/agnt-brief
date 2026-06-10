@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kasu",
-  "generated_at": "2026-05-31T08:33:59.260Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:06.428Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "kasu",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Kasu is a real-world asset (RWA) lending protocol on Base that enables users to deposit funds into lending pools and earn yield from off-chain credit facilities. It manages loan origination, clearing, and rewards through a system of upgradeable smart contracts.",
+    "project_purpose": "Kasu is a multi-chain real-world asset (RWA) and private-credit lending protocol with TVL on Base and XDC. It enables users to deposit funds into lending pools and earn yield from off-chain credit facilities, with loan origination, clearing, and rewards managed through upgradeable smart contracts. The currently captured contract surface appears to cover Base deployments only; XDC and any other chain deployments should be treated as out of scope unless separately indexed.",
     "relationship_narrative": "All contracts belong to a single product family and share infrastructure through the KasuController, which likely governs access and configuration. The LendingPoolFactory deploys LendingPool and LendingPoolTranche instances, while the ClearingCoordinator and AcceptedRequestsCalculation handle loan settlement, and the KSU token with its locking and bonus contracts manages incentives.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 22,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

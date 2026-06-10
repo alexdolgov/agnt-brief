@@ -7,8 +7,8 @@
 - Project: Anvil (`anvil`)
 - Website: [https://anvil.xyz/](https://anvil.xyz/)
 - Lifecycle: declining (Tier 0, 83.3% below peak)
-- Generated: 2026-06-10T20:35:42.881Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.579Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 3 unique implementations (7 raw deployments)
 - DeFi Llama TVL: $17,516,974.93

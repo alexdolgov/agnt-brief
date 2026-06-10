@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hyperion",
-  "generated_at": "2026-05-22T15:43:34.708Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:06.065Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 5,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 20984714.04112,
-    "tvl_usd": 20984714.04112,
+    "dl_tvl_usd": 21073597.39304,
+    "tvl_usd": 21073597.39304,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -31,16 +31,21 @@
     "latest_audit_date": "2025-07",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 2,
-      "aging": 0,
+      "fresh": 1,
+      "aging": 1,
       "stale": 0,
       "unknown": 3
     }
   },
   "topography": {
-    "project_purpose": "Hyperion is a decentralized exchange (DEX) protocol enabling trustless token swaps and liquidity provision. It facilitates peer-to-peer trading through automated market-making mechanisms.",
-    "relationship_narrative": "No product families or contracts are defined in the provided metadata, so no structural relationships can be described.",
+    "project_purpose": "Hyperion is an Aptos-native, fully on-chain hybrid orderbook-AMM decentralized exchange (DEX). In addition to its core trading and liquidity functionality, audited Hyperion components include OFT, Token, LaunchPad, and Vaults scopes whose contract inventories have not yet been extracted or modeled.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -139,7 +144,7 @@
       "report_url": "https://github.com/Hyperionxyz/audits/blob/main/LaunchPad%20Audit%20Report-2025-6-18.pdf",
       "auditor": "Unknown",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,

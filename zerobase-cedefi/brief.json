@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zerobase-cedefi",
-  "generated_at": "2026-05-31T14:54:05.757Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-06-10T20:59:19.501Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "zerobase-cedefi",
@@ -64,7 +64,7 @@
     }
   },
   "topography": {
-    "project_purpose": "ZEROBASE CeDeFi is a basis trading protocol that allows users to deposit assets into vaults to earn yield from delta-neutral strategies across multiple chains.",
+    "project_purpose": "ZEROBASE CeDeFi is a zk-powered stablecoin staking and CeDeFi yield protocol tied to prover-node security and ZKP generation. Users stake or deposit stablecoins into vault/staking flows and can withdraw through the protocol, while deposited funds are used for CeDeFi yield generation including arbitrage activity via Binance.",
     "relationship_narrative": "The protocol consists of a single product family with multiple vault instances sharing the same core logic, deployed across different chains to facilitate basis trading.",
     "product_family_count": 1
   },

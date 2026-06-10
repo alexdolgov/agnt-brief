@@ -1,27 +1,26 @@
 # Agentic Audit Brief: Flex
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Flex (`flex`)
 - Website: [https://flexmeow.com/](https://flexmeow.com/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T08:03:38.328Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:04.010Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $611,657.73
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Flex is a lending protocol on Ethereum that allows users to deposit and borrow assets through a registry-based system.
-
-### Architecture
-
-The protocol consists of a single product family with one core registry contract that orchestrates all lending operations.
+Flex is an Ethereum fixed-rate money market and lending protocol where borrowers choose their own interest rates.
 
 ## Audit Coverage Summary
 
@@ -37,7 +36,6 @@ The protocol consists of a single product family with one core registry contract
 - Latest audit: 2026-05 (fresh)
 - Staleness: 2 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "probit-global",
-  "generated_at": "2026-05-31T10:20:45.694Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-10T20:59:09.377Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "probit-global",
     "tier": 0,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "ProBit Global is a centralized exchange (CEX) that provides trading services for digital assets. The contracts listed are likely related to token custody, exchange operations, or liquidity management on the Fantom chain.",
-    "relationship_narrative": "All contracts belong to a single product family with no explicit internal relationships or shared infrastructure identified from the available data.",
+    "project_purpose": "ProBit Global is a former centralized cryptocurrency exchange whose service has permanently terminated. The listed Fantom addresses are unidentified and unverified; their relationship to ProBit custody, exchange operations, or liquidity management is not established.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 3,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

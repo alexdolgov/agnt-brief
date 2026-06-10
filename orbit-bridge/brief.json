@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "orbit-bridge",
-  "generated_at": "2026-05-22T18:30:47.758Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:08.846Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "orbit-bridge",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 17870567.13876,
+    "dl_tvl_usd": 17464468.31684,
     "tvl_usd": 640230.4032258509,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -64,9 +64,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Orbit Bridge is a cross-chain bridge that enables users to transfer assets between multiple blockchains, including Ethereum, Polygon, Celo, Heco, and Klaytn. It uses vault contracts to lock assets on one chain and mint or release corresponding tokens on another.",
+    "project_purpose": "Orbit Bridge is an active interchain bridge supporting a broad set of EVM and non-EVM networks across 15+ chains. It enables cross-chain asset transfers using bridge/vault or equivalent custody contracts that lock, release, or otherwise custody assets on source and destination chains. The currently listed contracts represent only a partial EVM contract surface and should not be treated as complete coverage of all current TVL-bearing Orbit Bridge deployments.",
     "relationship_narrative": "The Orbit Bridge family consists of vault contracts deployed across multiple chains, all sharing the same core logic for asset locking and release. The ORCToken likely serves as the governance or utility token for the bridge ecosystem, while the unnamed contracts may provide supporting infrastructure such as access control or adapters.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 22,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

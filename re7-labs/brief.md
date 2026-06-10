@@ -5,8 +5,8 @@
 - Project: Re7 Labs (`re7-labs`)
 - Website: [https://www.re7labs.xyz](https://www.re7labs.xyz)
 - Lifecycle: active (Tier 0, 90.4% below peak)
-- Generated: 2026-05-31T10:23:38.016Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:09.488Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, base, ethereum, sonic
 - Contract surface: 6 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $82,888,616.27
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Re7 Labs is a risk curation protocol that deploys and manages yield-generating vaults across multiple chains. It provides users with optimized DeFi strategies through MultiVault and MellowVaultCompat contracts, governed by multisig wallets.
+Re7 Labs is a DeFi risk curator, advisor, ecosystem designer, and research/risk tooling organization active across multiple ecosystems. Its on-chain surface includes managed yield vault deployments such as captured MultiVault and MellowVaultCompat vault contracts governed through multisig infrastructure, but those contracts represent only part of the broader Re7 Labs project footprint.
 
 ### Architecture
 

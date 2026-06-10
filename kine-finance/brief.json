@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kine-finance",
-  "generated_at": "2026-05-31T08:35:05.199Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:06.692Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "kine-finance",
@@ -64,9 +64,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Kine Finance is a decentralized protocol for lending and borrowing digital assets, enabling users to supply assets to earn yield or borrow against collateral. It uses a Compound-like architecture with kToken interest-bearing tokens and a governance-controlled unitroller for market management.",
+    "project_purpose": "Kine Finance is a liquidity-pool-backed derivatives trading protocol. Its current project identity should be described around derivatives trading and liquidity pools, consistent with DefiLlama. Compound-style kToken/KErc20Delegator contracts, where present, should be treated as legacy or implementation-level collateral/accounting components rather than the core product purpose.",
     "relationship_narrative": "The protocol consists of a single product family where Unitroller proxies delegate governance logic to ControllerV2 implementations, and KMCDDelegator proxies use KMCDDelegate for stablecoin market operations. KEther contracts handle ETH-specific markets, while the Kine token likely serves as a governance or incentive token across deployments.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 35,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

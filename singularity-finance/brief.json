@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "singularity-finance",
-  "generated_at": "2026-05-23T16:24:13.433Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.163Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "singularity-finance",
@@ -45,7 +45,7 @@
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5364404.022100001,
+    "dl_tvl_usd": 5990316.8072,
     "tvl_usd": 2686081.3224447463,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Singularity Finance is a yield-focused protocol on Ethereum, centered around its native SFI token. The protocol appears to offer yield generation opportunities, likely through staking or farming mechanisms involving the SFI token.",
-    "relationship_narrative": "The protocol consists of a single product family built around the SFI token. All functionality is encapsulated within this token contract, with no additional supporting contracts identified.",
+    "project_purpose": "Singularity Finance is a broader AI/DeFAI finance platform positioned around AI-Fi, real-world assets, and financial-layer infrastructure, with multichain ambitions across networks such as Ethereum, Base, and BNB Chain. It should not be characterized solely as an Ethereum yield farm or as functionality fully encapsulated in the SFI token contract.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

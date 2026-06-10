@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Ostium
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 47.0% over 90 days
-
 ## Project Overview
 
 - Project: Ostium (`ostium`)
 - Website: [https://www.ostium.io/](https://www.ostium.io/)
-- Lifecycle: unknown (Tier 0, 54.4% below peak)
-- Generated: 2026-05-31T10:09:23.267Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, 54.4% below peak)
+- Generated: 2026-06-10T20:59:08.873Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum
 - Contract surface: 17 unique implementations (40 raw deployments)
 - DeFi Llama TVL: $41,776,032.21
@@ -37,7 +35,6 @@ The OstiumVault holds user collateral and interacts with OstiumTrading for trade
 - Latest audit: 2026-01 (fresh)
 - Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

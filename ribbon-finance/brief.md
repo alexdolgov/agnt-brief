@@ -7,17 +7,17 @@
 - Project: Ribbon Finance (`ribbon-finance`)
 - Website: [https://www.ribbon.finance/](https://www.ribbon.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-25T15:56:48.928Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:11.443Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, ethereum
 - Contract surface: 147 unique implementations (598 raw deployments)
-- DeFi Llama TVL: $4,957,420.00
+- DeFi Llama TVL: $4,851,720.00
 - On-chain TVL (included contracts): $179,277,198.59
 - TVL by chain: Ethereum $179,277,193.12 | Avalanche $5.48
 
 ## Project Description
 
-Ribbon Finance is a DeFi protocol offering structured products that generate yield through automated options strategies and lending. It provides vaults that execute covered calls, put selling, and other option-based strategies, as well as fixed-rate lending products, allowing users to deposit assets and earn returns.
+Ribbon Finance is a DeFi protocol historically focused on crypto structured products, especially Theta Vaults that automate options strategies such as covered calls and put selling. Related Earn/Lend-style products should be treated as historical or specific on-chain modules rather than the protocol's current primary product focus.
 
 ### Architecture
 
@@ -31,11 +31,11 @@ Theta Vaults and Ribbon Earn share the RibbonFactory for deployment and manageme
 - Unverified implementations: 60
 - Unique implementations: 147
 - Raw deployments: 598
-- Audits discovered: 15
-- Scoreable audits (matched contracts): 15
+- Audits discovered: 14
+- Scoreable audits (matched contracts): 14
 - ASD (verified + unaudited TVL): $148,562,247.35
 - Latest audit: 2023-07 (stale)
-- Staleness: 0 fresh, 0 aging, 15 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 14 stale, 0 unknown
 - Tier 1 coverage: 4.6% (OpenZeppelin)
 - Note: This protocol is classified as [declining]. ASD of $148,562,247.35 represents exposure in a protocol with declining activity.
 
@@ -43,7 +43,7 @@ Theta Vaults and Ribbon Earn share the RibbonFactory for deployment and manageme
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Quantstamp | Tier 2 | 21 | 24.1% | 2021-07 |
+| Quantstamp | Tier 2 | 19 | 21.8% | 2021-05 |
 | Unknown | Tier 2 | 11 | 12.6% | 2023-07 |
 | PeckShield | Tier 2 | 7 | 8.0% | 2022-03 |
 | OpenZeppelin | Tier 1 | 4 | 4.6% | 2021-09 |
@@ -234,9 +234,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [We're audited by [OpenZeppelin](< >), [ChainSafe](https://github.com/ribbon-finance/audit/blob/master/reports/RibbonThetaVault%20V2%20Smart%20Contract%20Review%20And%20Verification.pdf) and [Peckshield](https://github.com/ribbon-finance/audit/blob/master/reports/PeckShield-Audit-Report-Ribbon-v1.0.pdf). Despite that, users are advised to exercise caution and only risk funds they can afford to lose.](https://www.openzeppelin.com/news/ribbon-finance-audit) | OpenZeppelin | Audit | 2021-09 | stale | Direct | contract_name | 91 | high |
 | [We're audited by [OpenZeppelin](<https://blog.openzeppelin.com/ribbon-finance-audit/ >), [ChainSafe]() and [Peckshield](https://github.com/ribbon-finance/audit/blob/master/reports/PeckShield-Audit-Report-Ribbon-v1.0.pdf). Despite that, users are advised to exercise caution and only risk funds they can afford to lose.](https://github.com/ribbon-finance/audit/blob/master/reports/RibbonThetaVault%20V2%20Smart%20Contract%20Review%20And%20Verification.pdf) | OpenZeppelin | Audit | 2021-07 | stale | Direct | contract_name | 87 | high |
-| [We're audited by [OpenZeppelin](<https://blog.openzeppelin.com/ribbon-finance-audit/ >), [ChainSafe](https://github.com/ribbon-finance/audit/blob/master/reports/RibbonThetaVault%20V2%20Smart%20Contract%20Review%20And%20Verification.pdf) and [Peckshield](). Despite that, users are advised to exercise caution and only risk funds they can afford to lose. (also discovered via alternate URL)](https://github.com/ribbon-finance/audit/blob/master/reports/PeckShield-Audit-Report-Ribbon-v1.0.pdf) | PeckShield | Audit | 2021-03 | stale | Direct | contract_name | 6 | high|medium |
-| [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/ribbon-finance/audit/b837e7b04dfbbc6fb577039e9baa598f46ec04a7/reports/Quantstamp%20Theta%20Vault.pdf) | Quantstamp | Audit | 2021-05 | stale | Direct | contract_name | 129 | high |
-| [Rendered PDF capture](https://raw.githubusercontent.com/ribbon-finance/audit/b837e7b04dfbbc6fb577039e9baa598f46ec04a7/reports/RibbonThetaVault%20V2%20Smart%20Contract%20Review%20And%20Verification.pdf) | Quantstamp | Audit | 2021-07 | stale | Direct | contract_name | 87 | high |
+| [We're audited by [OpenZeppelin](<https://blog.openzeppelin.com/ribbon-finance-audit/ >), [ChainSafe](https://github.com/ribbon-finance/audit/blob/master/reports/RibbonThetaVault%20V2%20Smart%20Contract%20Review%20And%20Verification.pdf) and [Peckshield](). Despite that, users are advised to exercise caution and only risk funds they can afford to lose.](https://github.com/ribbon-finance/audit/blob/master/reports/PeckShield-Audit-Report-Ribbon-v1.0.pdf) | PeckShield | Audit | 2021-03 | stale | Direct | contract_name | 6 | high |
+| [Quantstamp](https://github.com/ribbon-finance/audit/blob/master/reports/Quantstamp%20Theta%20Vault.pdf) | Quantstamp | Audit | 2021-05 | stale | Direct | contract_name | 129 | high |
 | [Chainsafe-Ribbon-Audit_April-2021.pdf](https://github.com/ribbon-finance/audit/blob/master/reports/Chainsafe-Ribbon-Audit_April-2021.pdf) | Chainsafe | Audit | 2021-04 | stale | Direct | contract_name | 8 | high |
 | [PeckShield-Audit-Report-RBN-ERC20-v1.0.pdf](https://github.com/ribbon-finance/audit/blob/master/reports/PeckShield-Audit-Report-RBN-ERC20-v1.0.pdf) | PeckShield | Audit | 2021-05 | stale | Direct | contract_name | 5 | high |
 | [PeckShield-Audit-Report-RVOL-v1.0rc.pdf](https://github.com/ribbon-finance/audit/blob/master/reports/PeckShield-Audit-Report-RVOL-v1.0rc.pdf) | PeckShield | Audit | 2021-07 | stale | Direct | contract_name | 8 | high |
@@ -312,7 +311,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=15, medium=1
-- Match method counts: extraction_exact=805
+- Extraction confidence breakdown: high=14
+- Match method counts: extraction_exact=583
 
 Fork inheritance lineage and inherited audits are included when available.

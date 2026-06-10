@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "hashport",
-  "generated_at": "2026-05-24T18:44:43.878Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "sunsetting",
+  "generated_at": "2026-06-10T20:59:04.551Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "hashport",
     "tier": 1,
@@ -45,7 +45,7 @@
     "coverage_pct": 100,
     "total_audits": 3,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 1686236.00439,
+    "dl_tvl_usd": 1536497.1418499998,
     "tvl_usd": 152610.26725140467,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -81,9 +81,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Hashport is a cross-chain bridge that enables users to transfer tokens between multiple blockchain networks. It uses a network of Router contracts to facilitate secure, decentralized asset movement across supported chains.",
+    "project_purpose": "Hashport was a Hedera-native public bridge that used a validator swarm and Hedera Consensus Service to support asset movement between Hedera and other networks through routers, router facets, diamond facets, governance, fee, payment, pausable facets, and ERC20/ERC721 wrapper-token contracts. The project has been permanently decommissioned: bridging infrastructure is offline, bridging is no longer available, and wrapped assets are stated by the project to be permanently unredeemable.",
     "relationship_narrative": "The Hashport family consists solely of Router and RouterFacet contracts, which are deployed as proxy-implementation pairs across multiple chains. These contracts share a common infrastructure pattern, with each Router proxy using a corresponding RouterFacet implementation to handle cross-chain routing logic.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 21,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -7,8 +7,8 @@
 - Project: Arcade.xyz (`arcade.xyz`)
 - Website: [https://www.arcade.xyz](https://www.arcade.xyz)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:42:10.362Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.697Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 60 unique implementations (147 raw deployments)
 - DeFi Llama TVL: $5,122,465.83

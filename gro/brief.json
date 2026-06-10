@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gro",
-  "generated_at": "2026-05-31T08:13:54.073Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.401Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "gro",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Gro is a yield optimization protocol that offers users exposure to stablecoin and DeFi yields through tokenized vault products. It provides both rebasing and non-rebasing tokens representing shares in yield-generating strategies.",
+    "project_purpose": "Gro is a stablecoin yield aggregator that optimizes DeFi yield while tranching risk and return across its main products, including PWRD for lower-risk protected exposure and Vault strategies for higher-yield stablecoin exposure.",
     "relationship_narrative": "The Gro family integrates yield-bearing tokens (RebasingGToken, NonRebasingGToken) with staking contracts (LPTokenStaker) for the governance token (GROToken), while liquidity pools (UniswapV2Pair, WeightedPool) facilitate trading and deeper liquidity for the ecosystem.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 124,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

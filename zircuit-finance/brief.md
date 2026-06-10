@@ -5,17 +5,17 @@
 - Project: Zircuit Finance (`zircuit-finance`)
 - Website: [https://finance.zircuit.com/](https://finance.zircuit.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T11:46:25.628Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:19.530Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, ethereum
-- Contract surface: 3 unique implementations (10 raw deployments)
+- Contract surface: 2 unique implementations (7 raw deployments)
 - DeFi Llama TVL: $1,513,608.93
-- On-chain TVL (included contracts): $180,117,388.68
-- TVL by chain: Base $180,117,340.36 | Ethereum $48.32
+- On-chain TVL (included contracts): $1,513,066.44
+- TVL by chain: Base $1,513,018.12 | Ethereum $48.32
 
 ## Project Description
 
-Zircuit Finance is a yield optimization protocol that aggregates lending and liquidity strategies across multiple chains. It uses tokenized vaults and strategy managers to automate yield generation for users.
+Zircuit Finance is an institutional-grade onchain yield/vault platform for stablecoin deposits, currently showing USDC/USDT strategies such as Monarq and Morpho on Ethereum and Base.
 
 ### Architecture
 
@@ -23,15 +23,15 @@ All contracts belong to a single product family sharing the TokenizedStrategy im
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
-- Verified + Unaudited implementations: 3
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 3
-- Raw deployments: 10
+- Unique implementations: 2
+- Raw deployments: 7
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $180,117,388.68
+- ASD (verified + unaudited TVL): $1,513,066.44
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,11 +46,10 @@ All contracts belong to a single product family sharing the TokenizedStrategy im
 
 - None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| ATokenInstance | token | ethereum | 3 deployments: ethereum [`0x238789...d4086a`](./contracts/ethereum-1/0x23878914efe38d27c4d67ab83ed1b93a74d4086a/); ethereum `0x98c23e...e16f5c`; base `0x4e65fe...f5c0ab` | ⚠️ Unaudited |
 | TokenizedStrategy | core_logic | base | 5 deployments: ethereum `0x28966c...332c49`; ethereum `0x6424c7...2b6e38`; base [`0x1a48ce...37e1cc`](./contracts/base-8453/0x1a48cec817bcb5436efe99bab6dde228cc37e1cc/); base `0xc91e44...e1aca7`; base `0xe83ef4...ab1dc5` | ⚠️ Unaudited |
 | StrategyManager | core_logic | base | 2 deployments: base [`0x075193...a04d94`](./contracts/base-8453/0x075193d36693da7ba3bb709cf63bef070ba04d94/); base `0xf7e745...cd3374` | ⚠️ Unaudited |
 
@@ -90,7 +89,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 1 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 1 |
 | needs_review | 0 |
 

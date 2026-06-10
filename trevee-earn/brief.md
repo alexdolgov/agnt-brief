@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Trevee Earn
 
-⚠️ Lifecycle status: TRANSITIONING - TVL dropped 37.2% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 37.2% over 90 days
 
 ## Project Overview
 
 - Project: Trevee Earn (`trevee-earn`)
 - Website: [https://rings.money/](https://rings.money/)
-- Lifecycle: transitioning (Tier 1, transitioning)
-- Generated: 2026-05-31T11:13:50.458Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 1, transitioning)
+- Generated: 2026-06-10T20:59:17.583Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, plasma, sonic
 - Contract surface: 15 unique implementations (29 raw deployments)
 - DeFi Llama TVL: $1,146,226.61
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Trevee Earn is a yield aggregation protocol that pools user deposits into lending markets and vault strategies to generate optimized returns. It issues interest-bearing tokens (ATokens, fTokens) representing user shares and employs upgradeable proxy patterns for modularity and governance.
+Trevee/Rings is a USD and ETH meta-stablecoin and yield product focused on yield for stakers, Sonic DeFi liquidity, and lockers. Its native surface should be distinguished from external integrations and upstream assets: fToken, Pool, and BoringVault-style components may be Trevee/Rings-native where ownership is verified, while Aave ATokens, Frax, Morpho, and other third-party protocol contracts should not be described as Trevee-issued or counted as native Trevee contract surface without supporting evidence.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ All contracts belong to a single product family, sharing upgradeable proxy infra
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [transitioning]. ASD of $582,183,821.34 represents exposure in a protocol with transitioning activity.
+- Note: This protocol is classified as [declining]. ASD of $582,183,821.34 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

@@ -5,21 +5,22 @@
 - Project: Sport.fun (`sport.fun`)
 - Website: [https://pro.sport.fun/login/?referral_code=UBJWCCSWOVU](https://pro.sport.fun/login/?referral_code=UBJWCCSWOVU)
 - Lifecycle: active (Tier 0, 48.6% below peak)
-- Generated: 2026-05-31T10:39:41.224Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.415Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 1 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $3,682,014.46
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Sport.fun is a prediction market protocol on Base that allows users to trade on the outcomes of sports events. It uses a pair-based mechanism where each market is represented by a proxy contract pointing to the FDFPairV3 implementation.
-
-### Architecture
-
-The protocol consists of a single product family with two proxy contracts sharing the same FDFPairV3 implementation, indicating a standardized market structure. No additional infrastructure contracts are present in the inventory.
+Sport.fun is a Base fantasy soccer protocol where users trade fractional shares of football players backed by player performance. The protocol uses Gold, pegged to USDC, rather than a generic binary sports-event outcome prediction market model.
 
 ## Audit Coverage Summary
 

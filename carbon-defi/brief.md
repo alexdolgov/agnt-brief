@@ -5,17 +5,17 @@
 - Project: Carbon Defi (`carbon-defi`)
 - Website: [https://app.carbondefi.xyz/](https://app.carbondefi.xyz/)
 - Lifecycle: active (Tier 0, 69.6% below peak)
-- Generated: 2026-05-25T15:53:01.613Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:01.272Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: blast, celo, ethereum, sei
-- Contract surface: 157 unique implementations (345 raw deployments)
-- DeFi Llama TVL: $3,512,848.05
-- On-chain TVL (included contracts): $41,699,647.34
-- TVL by chain: Ethereum $41,699,647.34
+- Contract surface: 158 unique implementations (338 raw deployments)
+- DeFi Llama TVL: $2,922,950.10
+- On-chain TVL (included contracts): $5,121,040.07
+- TVL by chain: Ethereum $5,121,040.07
 
 ## Project Description
 
-Carbon Defi is a decentralized exchange protocol that enables automated on-chain trading and liquidity provision. It offers concentrated liquidity, dynamic fee structures, and cross-chain bridging to optimize capital efficiency for traders and liquidity providers.
+Carbon DeFi is an on-chain automated trading protocol and DEX that lets users create custom limit orders, range orders, and recurring or grid-like trading strategies using programmable liquidity curves. Cross-chain Vortex bridge contracts, where present, should be treated as ancillary infrastructure rather than the core protocol value proposition.
 
 ### Architecture
 
@@ -23,25 +23,25 @@ The Carbon Defi family provides core trading logic and is extended by Blast cont
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 17/57 (29.8%)
-- Verified + Unaudited implementations: 38
-- Verified by bytecode match: 4
-- Unverified implementations: 100
-- Unique implementations: 157
-- Raw deployments: 345
+- Verified implementations audited: 17/55 (30.9%)
+- Verified + Unaudited implementations: 37
+- Verified by bytecode match: 3
+- Unverified implementations: 103
+- Unique implementations: 158
+- Raw deployments: 338
 - Audits discovered: 4
 - Scoreable audits (matched contracts): 4
-- ASD (verified + unaudited TVL): $36,578,607.27
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-07 (aging)
 - Staleness: 0 fresh, 1 aging, 3 stale, 0 unknown
-- Tier 1 coverage: 26.3% (ChainSecurity)
+- Tier 1 coverage: 27.3% (ChainSecurity)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ChainSecurity | Tier 1 | 15 | 26.3% | 2023-04 |
-| PeckShield | Tier 2 | 4 | 7.0% | 2024-07 |
+| ChainSecurity | Tier 1 | 15 | 27.3% | 2023-04 |
+| PeckShield | Tier 2 | 4 | 7.3% | 2024-07 |
 
 ## Contract Surface
 
@@ -53,7 +53,7 @@ The Carbon Defi family provides core trading logic and is extended by Blast cont
 | BancorNetwork | unknown | ethereum | 12 deployments: ethereum [`0x00bfa0...ca8e63`](./contracts/ethereum-1/0x00bfa047ec1c5e849779107900afd948efca8e63/); ethereum `0x2f1475...1638a3`; ethereum `0x3006eb...2cfc75`; ethereum `0x568e7c...3e5e07`; ethereum `0x751a3e...a10255`; ethereum `0x835ebb...fc45c1`; ethereum `0x955a85...59e1e6`; ethereum `0xa21e1c...d8f4ea`; ethereum `0xe0cb1b...ffa4fb`; ethereum `0xe2a277...dcd1f7`; ethereum `0xeef417...9dd4fb`; ethereum `0xf20b9e...39126a` | ✅ Audited |
 | BancorPortal | unknown | ethereum | 4 deployments: ethereum [`0x9f292c...e133d5`](./contracts/ethereum-1/0x9f292ccb69ff9a0644475c7bc8d4651039e133d5/); ethereum `0xe18bd2...1f88e2`; ethereum `0xe7e533...d274d4`; ethereum `0xf5de92...3d2b0f` | ✅ Audited |
 | BNTPool | core_logic | ethereum | 4 deployments: ethereum [`0x02651e...95eaca`](./contracts/ethereum-1/0x02651e355d26f3506c1e644ba393fdd9ac95eaca/); ethereum `0x9810e2...c07bd8`; ethereum `0xcc06b5...22af65`; ethereum `0xfb07a6...b1ffa3` | ✅ Audited |
-| CarbonController | governance | ethereum | 13 deployments: ethereum [`0x16b9b6...79d72d`](./contracts/ethereum-1/0x16b9b6f8d2077db1032531f0e1f6019d2679d72d/); ethereum `0x1a3122...c218cf`; ethereum `0x1e0804...32bf2c`; ethereum `0x21f02a...c086ee`; ethereum `0x5ec3b3...4e5b20`; ethereum `0x6db6ee...8b12c1`; ethereum `0xd59bca...063ff8`; sei `0x8c05ea...ade636`; sei `0x8ce318...6ab749`; sei `0xe48166...1f1087`; celo `0x51aa24...e36317`; celo `0x661987...29ed3a`; celo `0xbbaff3...c5b496` | ✅ Audited |
+| CarbonController | core_logic | ethereum | 13 deployments: ethereum [`0x16b9b6...79d72d`](./contracts/ethereum-1/0x16b9b6f8d2077db1032531f0e1f6019d2679d72d/); ethereum `0x1a3122...c218cf`; ethereum `0x1e0804...32bf2c`; ethereum `0x21f02a...c086ee`; ethereum `0x5ec3b3...4e5b20`; ethereum `0x6db6ee...8b12c1`; ethereum `0xd59bca...063ff8`; sei `0x8c05ea...ade636`; sei `0x8ce318...6ab749`; sei `0xe48166...1f1087`; celo `0x51aa24...e36317`; celo `0x661987...29ed3a`; celo `0xbbaff3...c5b496` | ✅ Audited |
 | CarbonPOL | unknown | ethereum | 2 deployments: ethereum [`0x779b3b...4ab123`](./contracts/ethereum-1/0x779b3bea233ebc5947c5ff0ffd7f4f90654ab123/); ethereum `0xd06146...2bef46` | ✅ Audited |
 | CarbonVortex | unknown | blast | 21 deployments: ethereum `0x2c0fa8...923502`; ethereum `0x55effb...f472ad`; ethereum `0x727170...f0fb9e`; ethereum `0xba7d15...3c8f84`; ethereum `0xd053dc...d79801`; ethereum `0xd241a7...be23ca`; sei `0x4bbd9f...1b08a2`; sei `0x571520...eaf933`; sei `0x924ad5...cb5502`; sei `0xc95a9c...f977b0`; celo `0x31548b...6b2db0`; celo `0x37a65d...7eec10`; celo `0x6cd7f6...bc2fdc`; celo `0x8b6631...e1f3a0`; celo `0xa15e32...01e562`; celo `0xd9d89e...764857`; celo `0xfe19cb...b54d4d`; blast [`0x0f5409...a9bdaa`](./contracts/blast-81457/0x0f54099d787e26c90c487625b4de819ec5a9bdaa/); blast `0x30dd96...af39f0`; blast `0x59f210...4c84ea`; blast `0x5e994a...8dbf9a` | ✅ Audited |
 | ExternalProtectionVault | core_logic | ethereum | 2 deployments: ethereum [`0xea4d66...61c27c`](./contracts/ethereum-1/0xea4d665a290c9171ebcd1fca4068e55bb461c27c/); ethereum `0xfd3166...2cad57` | ✅ Audited |
@@ -65,11 +65,10 @@ The Carbon Defi family provides core trading logic and is extended by Blast cont
 | StandardRewards | unknown | ethereum | 5 deployments: ethereum [`0x9c0b29...78320d`](./contracts/ethereum-1/0x9c0b2923db14b8625e84e8ad04764f992b78320d/); ethereum `0xa2647a...8a1947`; ethereum `0xb0b958...00f372`; ethereum `0xdfe331...881f0d`; ethereum `0xe9f3bb...7a4b53` | ✅ Audited |
 | TransparentUpgradeableProxyImmutable | proxy | ethereum | [`0x41eeba...9488cb`](./contracts/ethereum-1/0x41eeba3355d7d6ff628b7982f3f9d055c39488cb/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (38)
+### ⚠️ Verified + Unaudited (37)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| SmartToken | token | ethereum | 6 deployments: ethereum [`0x164a12...172153`](./contracts/ethereum-1/0x164a1229f4826c9dd70ee3d9f4f3d7b68a172153/); ethereum `0x1f573d...a7ff1c`; ethereum `0x970d48...c0c4dd`; ethereum `0x99ebd3...67b340`; ethereum `0xee01b3...8e6e72`; ethereum `0xf132d2...cfc8dc` | ⚠️ Unaudited |
 | BancorArbitrage | unknown | ethereum | 12 deployments: ethereum [`0x08da38...65461c`](./contracts/ethereum-1/0x08da389a1400e3699f58843484b0513aa065461c/); ethereum `0x2dd6b6...da75a7`; ethereum `0x2fde9e...85d1b2`; ethereum `0x45d2e2...5a7ac8`; ethereum `0x577552...ed5df7`; ethereum `0x6dbe10...74e912`; ethereum `0x770abf...d3c343`; ethereum `0xb04e45...1a1ee2`; ethereum `0xbd19f6...5d7e51`; ethereum `0xd80a40...1b0ada`; ethereum `0xdbcb8a...9af34a`; ethereum `0xe9a8e0...a0902d` | ⚠️ Unaudited |
 | BancorBuyer | unknown | ethereum | [`0x77a77e...34d924`](./contracts/ethereum-1/0x77a77eca75445841875ebb67a33d0a97dc34d924/) | ⚠️ Unaudited |
 | BancorChanger | unknown | ethereum | 2 deployments: ethereum [`0xb72a0f...270468`](./contracts/ethereum-1/0xb72a0fa1e537c956dfca72711c468efd81270468/); ethereum `0xca83bd...629ff4` | ⚠️ Unaudited |
@@ -117,16 +116,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 | MasterVault | core_logic | ethereum | 3 deployments: ethereum [`0x649765...2bc373`](./contracts/ethereum-1/0x649765821d9f64198c905ec0b2b037a4a52bc373/); ethereum `0x8e303d...d6e760`; ethereum `0xf3b685...f10144` | ✅ Audited (bytecode match) |
 | Voucher | unknown | ethereum | 8 deployments: ethereum [`0x3660f0...8f554e`](./contracts/ethereum-1/0x3660f04b79751e31128f6378eac70807e38f554e/); ethereum `0x460cb0...109d0a`; ethereum `0xc537e8...ea45e1`; sei `0xa4682a...eaf8d5`; sei `0xb0d399...cb4c26`; sei `0xc7dd38...c5c55c`; celo `0x5bca33...b2482e`; celo `0x5e994a...8dbf9a` | ✅ Audited (bytecode match) |
 
-### ⚠️ Verified by Bytecode + Unaudited (2)
+### ⚠️ Verified by Bytecode + Unaudited (1)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| Vault | unknown | celo | 4 deployments: ethereum `0x60917e...2dadc4`; celo [`0x45d2e2...5a7ac8`](./contracts/celo-42220/0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8/); celo `0x8ce318...6ab749`; blast [`0x45d2e2...5a7ac8`](./contracts/blast-81457/0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8/) | ⚠️ Unaudited (bytecode match) |
 | ProxyAdmin | governance | ethereum | 18 deployments: ethereum [`0x059d3d...2cf9a1`](./contracts/ethereum-1/0x059d3d353336886cfaf17383c9fb6715652cf9a1/); ethereum `0x12388c...d118cb`; ethereum `0x642879...2f0034`; ethereum `0x8c05ea...ade636`; sei `0x45d2e2...5a7ac8`; sei `0x7fc12a...e17f06`; sei `0xcd8c6d...357772`; sei `0xdf1c3b...76b332`; sei `0xfea28d...fc23b5`; celo `0x0f5409...a9bdaa`; celo `0x210760...abbe57`; celo `0x59f210...4c84ea`; celo `0xb2a2f1...3c9d2a`; celo `0xd0b82e...3bb921`; blast `0x759db9...5d2352`; blast `0x8b6631...e1f3a0`; blast `0x8c05ea...ade636`; blast `0xe6d513...733611` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (100)
+### ❓ Unverified (103)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -201,6 +199,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | celo | `0x30dd96...af39f0` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0x351b73...bf66e1` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0x3cbb34...bb9d0c` | ❓ Unverified |
+| UnnamedContract | unknown | celo | `0x45d2e2...5a7ac8` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0x45f7ea...ad8cf3` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0x4a0c4e...ad4130` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0x4e0178...faca13` | ❓ Unverified |
@@ -209,6 +208,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | celo | `0x70ff80...8dd1cf` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0x759db9...5d2352` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0x77e925...f3c20d` | ❓ Unverified |
+| UnnamedContract | unknown | celo | `0x8ce318...6ab749` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0x9ceb88...a52341` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0x9fac0f...2af35c` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0xa4682a...eaf8d5` | ❓ Unverified |
@@ -222,6 +222,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | celo | `0xee21c0...131d9a` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0xf7c7d7...5709a9` | ❓ Unverified |
 | UnnamedContract | unknown | blast | `0x37a65d...7eec10` | ❓ Unverified |
+| UnnamedContract | unknown | blast | `0x45d2e2...5a7ac8` | ❓ Unverified |
 | UnnamedContract | unknown | blast | `0x51aa24...e36317` | ❓ Unverified |
 | UnnamedContract | unknown | blast | `0x571520...eaf933` | ❓ Unverified |
 | UnnamedContract | unknown | blast | `0x661987...29ed3a` | ❓ Unverified |
@@ -248,7 +249,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| celo | [`0x45d2e2...5a7ac8`](./contracts/celo-42220/0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8/) | Vault | unknown | $2.94 | Verified native implementation with $2.94 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb72a0f...270468`](./contracts/ethereum-1/0xb72a0fa1e537c956dfca72711c468efd81270468/) | BancorChanger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xaebf10...7c3d5c`](./contracts/ethereum-1/0xaebf1085dd9a0fa403a75399c956595e3a7c3d5c/) | BancorConverterUpgrader | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd761d5...c3cc96`](./contracts/ethereum-1/0xd761d538240e23b465c9c08236d781029dc3cc96/) | BancorV1Migration | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -267,7 +267,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 71 |
+| native | 72 |
 | upstream | 10 |
 | standard_library | 9 |
 | needs_review | 67 |

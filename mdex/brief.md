@@ -1,23 +1,23 @@
 # Agentic Audit Brief: MDEX
 
-⚠️ Lifecycle status: DEAD - TVL changed 2.1% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 2.1% over 90 days
 
 ## Project Overview
 
 - Project: MDEX (`mdex`)
 - Website: [https://mdex.com/](https://mdex.com/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-24T23:57:04.756Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:07.446Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc, heco
 - Contract surface: 13 unique implementations (24 raw deployments)
-- DeFi Llama TVL: $1,378,642.03
+- DeFi Llama TVL: $1,374,300.40
 - On-chain TVL (included contracts): $235,538.61
 - TVL by chain: Bsc $235,538.61
 
 ## Project Description
 
-MDEX is a decentralized exchange (DEX) operating on BSC and Heco chains, enabling users to swap tokens and provide liquidity. It features its own governance token, MdxToken, for incentives and protocol participation.
+MDEX is an AMM/DEX and broader DeFi platform tracked on Binance Smart Chain/BSC, Heco and Bittorrent, with components including the MDX governance token, factory/router swap infrastructure, liquidity/pool and swap-mining contracts, repurchase/blackhole mechanisms, and DAO/governance-related features. Its homepage also positions the platform around DEX, IMO, DAO and staking functionality.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The MDEX family consists of the MdxToken and an unnamed supporting contract, lik
 - Latest audit: 2021-04 (stale)
 - Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
 - Tier 1 coverage: 85.7% (SlowMist)
-- Note: This protocol is classified as [dead]. ASD of $20,172.28 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $20,172.28 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

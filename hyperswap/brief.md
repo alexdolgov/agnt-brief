@@ -5,8 +5,8 @@
 - Project: HyperSwap (`hyperswap`)
 - Website: [https://app.hyperswap.exchange/#/swap?referral=defillama](https://app.hyperswap.exchange/#/swap?referral=defillama)
 - Lifecycle: active (Tier 0, 87.9% below peak)
-- Generated: 2026-05-31T05:43:36.882Z
-- Pipeline run: v2-pipeline-2026-05-31-6a3e7e-9cd8
+- Generated: 2026-06-10T20:59:06.102Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: hyperliquid
 - Contract surface: 5 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $17,368,006.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-HyperSwap is a multi-chain DeFi protocol offering a terminal for yield farming, staking, and liquidity provision. It aggregates various vaults, pools, and reward mechanisms across numerous blockchains to optimize user returns.
+HyperSwap is a Hyperliquid/HyperEVM-focused decentralized exchange and interface for token swaps, liquidity management, and token launches. Its product set includes HyperSwap V2 as an official DEX product line, with Terminal treated as an interface rather than a yield, staking, vault aggregation, or cross-chain rewards product.
 
 ### Architecture
 
@@ -32,8 +32,8 @@ HyperSwap Terminal serves as the primary user-facing product, integrating multip
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2025-06 (fresh)
-- Staleness: 1 fresh, 2 aging, 0 stale, 0 unknown
+- Latest audit: 2025-06 (aging)
+- Staleness: 0 fresh, 3 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -80,7 +80,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [spaces/4EuEeIhLFXp6HBAjMQG5/uploads/4pNbf8mA0rmNGAHYnvV1/PeckShield-Audit-Report-HyperSwapX-V3-v1.0.pdf](https://3308851984-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4EuEeIhLFXp6HBAjMQG5%2Fuploads%2F4pNbf8mA0rmNGAHYnvV1%2FPeckShield-Audit-Report-HyperSwapX-V3-v1.0.pdf?alt=media&token=b72a08ea-2b62-46bc-be95-9f8cd6c6e41b) | peckshield | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
 | [spaces/4EuEeIhLFXp6HBAjMQG5/uploads/h0ceiQ0YLlomWA0lvQm5/PeckShield-Audit-Report-HyperSwapX-V2-v1.0.pdf](https://3308851984-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4EuEeIhLFXp6HBAjMQG5%2Fuploads%2Fh0ceiQ0YLlomWA0lvQm5%2FPeckShield-Audit-Report-HyperSwapX-V2-v1.0.pdf?alt=media&token=006075ec-06f9-4ecd-9b24-c8547afb5c14) | peckshield | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
-| [spaces/4EuEeIhLFXp6HBAjMQG5/uploads/r6TksVPyZO1QVyB1VR67/PeckShield-Audit-Report-DelegatedPositionVault-v1.0.pdf](https://3308851984-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4EuEeIhLFXp6HBAjMQG5%2Fuploads%2Fr6TksVPyZO1QVyB1VR67%2FPeckShield-Audit-Report-DelegatedPositionVault-v1.0.pdf?alt=media&token=ab435ee1-335e-4bc5-aa75-02f14814c7bb) | peckshield | Audit | 2025-06 | fresh | Direct | n/a | 0 | n/a |
+| [spaces/4EuEeIhLFXp6HBAjMQG5/uploads/r6TksVPyZO1QVyB1VR67/PeckShield-Audit-Report-DelegatedPositionVault-v1.0.pdf](https://3308851984-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4EuEeIhLFXp6HBAjMQG5%2Fuploads%2Fr6TksVPyZO1QVyB1VR67%2FPeckShield-Audit-Report-DelegatedPositionVault-v1.0.pdf?alt=media&token=ab435ee1-335e-4bc5-aa75-02f14814c7bb) | peckshield | Audit | 2025-06 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "verus-market",
-  "generated_at": "2026-05-31T11:32:43.735Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:18.572Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "verus-market",
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Verus Market is a decentralized exchange (DEX) protocol on Ethereum, enabling users to trade tokens through a single proxy contract that routes to its implementation logic.",
+    "project_purpose": "Verus Market is a DefiLlama-listed decentralized exchange (DEX) on the Verus chain. Separately, multiple Ethereum contracts are associated or suspected in the available contract surface, including VerusProof and NotarizationSerializer, but their roles should be treated as verifier/support/unknown infrastructure unless independently verified. The current evidence does not support describing the product as an Ethereum DEX or as a single-proxy contract family.",
     "relationship_narrative": "The protocol consists of a single product family with one proxy contract; no shared infrastructure or inter-family relationships are present.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 32,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

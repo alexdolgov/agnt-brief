@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "bmx",
-  "generated_at": "2026-05-31T07:31:59.358Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-10T20:59:01.023Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "bmx",
     "tier": 0,
@@ -59,9 +59,14 @@
     }
   },
   "topography": {
-    "project_purpose": "BMX is a decentralized exchange and derivatives protocol operating on Base and Mode. It offers a classic perpetuals trading platform, a freestyle trading experience with multi-account support, and a swap product called Deli Swap.",
+    "project_purpose": "BMX is a decentralized exchange and derivatives protocol operating on Base, Mode, and Sonic. It offers a classic perpetuals trading platform, a freestyle trading experience with multi-account support, and a swap product called Deli Swap.",
     "relationship_narrative": "The families share infrastructure through a common set of fee distributors and depositor contracts, indicating a unified fee and liquidity management layer. BMX Classic Perps and BMX Freestyle likely interact with the same Symmio-based settlement and liquidation system.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 184,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

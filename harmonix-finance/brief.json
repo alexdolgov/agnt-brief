@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "harmonix-finance",
-  "generated_at": "2026-05-23T19:28:18.167Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:04.475Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "harmonix-finance",
@@ -35,8 +35,8 @@
     "coverage_pct": 10,
     "total_audits": 4,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 4888105.594,
-    "tvl_usd": 4888105.594,
+    "dl_tvl_usd": 4866950.06924,
+    "tvl_usd": 4866950.06924,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,15 +53,20 @@
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 1,
-      "aging": 3,
-      "stale": 0,
+      "aging": 2,
+      "stale": 1,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Harmonix Finance is a yield optimization protocol that deploys user deposits into delta-neutral and hedged strategies across multiple chains. It uses vaults and staking contracts to generate returns while managing risk.",
+    "project_purpose": "Harmonix Finance is a yield optimization protocol focused on vault-based strategies, including restaking and delta-neutral or hedged yield products. The observed contract surface includes vaults, factories, HAR/staking contracts, and proxy infrastructure.",
     "relationship_narrative": "All product families share the same upgradeable proxy infrastructure (TransparentUpgradeableProxy and ERC1967Proxy) and are deployed by a common set of deployer clusters. The PoolFactory registries manage vault instances, while HAR token and staking contracts provide incentives across the protocol.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 127,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -4589,7 +4594,7 @@
       "report_url": "https://github.com/harmonixfi/core-smart-contract/blob/main/audits/Verichains%20Public%20Report%20-%20HarmonixFinance.pdf",
       "auditor": "Verichains",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,

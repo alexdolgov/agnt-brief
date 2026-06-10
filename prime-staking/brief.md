@@ -5,17 +5,17 @@
 - Project: Prime Staking (`prime-staking`)
 - Website: [https://primestaking.xyz/](https://primestaking.xyz/)
 - Lifecycle: active (Tier 0, 66.4% below peak)
-- Generated: 2026-05-23T18:18:37.298Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:09.363Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 10 unique implementations (10 raw deployments)
-- DeFi Llama TVL: $5,087,815.56
+- DeFi Llama TVL: $4,768,361.64
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Prime Staking is a liquid staking protocol on Base that allows users to stake assets and receive liquid derivative tokens, enabling them to earn staking rewards while maintaining liquidity. It also includes vesting mechanisms for token distribution.
+Prime Staking is an XDC staking/liquid staking protocol. Its public TVL-bearing product is associated with XDC staking and liquid staking; Base PRFI/ONFT/vesting contracts should be treated only as ancillary or unverified infrastructure unless independently documented as part of the Prime Staking staking system.
 
 ### Architecture
 

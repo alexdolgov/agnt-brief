@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Reserve Protocol
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 42.4% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 42.4% over 90 days
 
 ## Project Overview
 
 - Project: Reserve Protocol (`reserve-protocol`)
 - Website: [https://reserve.org](https://reserve.org)
-- Lifecycle: unknown (Tier 0, 88.9% below peak)
-- Generated: 2026-05-31T10:28:01.062Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 88.9% below peak)
+- Generated: 2026-06-10T20:59:09.647Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, bsc, ethereum
 - Contract surface: 329 unique implementations (1530 raw deployments)
 - DeFi Llama TVL: $82,521,774.89
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Reserve Protocol is a decentralized platform for creating and managing asset-backed stablecoins and tokenized index products. It enables users to deploy and govern fully collateralized stablecoins (RTokens) and diversified crypto baskets (Folios) across multiple chains.
+Reserve Protocol is a decentralized platform focused on DTFs and other tokenized asset-backed baskets, enabling governed diversified index and yield products across multiple chains with RSR governance. Its broader protocol history also includes fully collateralized RTokens and stable currency ambitions.
 
 ### Architecture
 
@@ -35,9 +35,9 @@ The Reserve Protocol family provides the foundational stablecoin infrastructure,
 - Scoreable audits (matched contracts): 23
 - ASD (verified + unaudited TVL): $255,214.14
 - Latest audit: 2026-03 (fresh)
-- Staleness: 5 fresh, 7 aging, 15 stale, 0 unknown
+- Staleness: 3 fresh, 8 aging, 16 stale, 0 unknown
 - Tier 1 coverage: 19.1% (Code4rena, Spearbit)
-- Note: This protocol is classified as [unknown]. ASD of $255,214.14 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of $255,214.14 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -426,7 +426,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Reserve_June_Plugins_v1.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Reserve_June_Plugins_v1.pdf) | unknown | Audit | 2024-11 | aging | Direct | contract_name | 2 | high |
 | [Reserve_PR_4_0_0_v1.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Reserve_PR_4_0_0_v1.pdf) | unknown | Audit | 2024-07 | aging | Direct | contract_name | 86 | high |
 | [Solidified - Audit Report - Reserve Protocol - April 25 2024.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Solidified%20-%20Audit%20Report%20-%20Reserve%20Protocol%20-%20April%2025%202024.pdf) | unknown | Audit | 2024-04 | stale | Direct | contract_name | 600 | high |
-| [Solidified - Audit Report - Reserve Protocol 3.4.0.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Solidified%20-%20Audit%20Report%20-%20Reserve%20Protocol%203.4.0.pdf) | unknown | Audit | 2024-06 | aging | Direct | contract_name | 604 | high |
+| [Solidified - Audit Report - Reserve Protocol 3.4.0.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Solidified%20-%20Audit%20Report%20-%20Reserve%20Protocol%203.4.0.pdf) | unknown | Audit | 2024-06 | stale | Direct | contract_name | 604 | high |
 | [Solidified - Audit Report - Reserve Protocol.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Solidified%20-%20Audit%20Report%20-%20Reserve%20Protocol.pdf) | unknown | Audit | 2022-10 | stale | Direct | contract_name | 464 | high |
 | [Trust Security - Reserve Audit 3.4.0 Spell.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Trust%20Security%20-%20Reserve%20Audit%203.4.0%20Spell.pdf) | unknown | Audit | 2024-05 | stale | Direct | n/a | 0 | n/a |
 | [Trust Security - Reserve Audit Report 3_1_0.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Trust%20Security%20-%20Reserve%20Audit%20Report%203_1_0.pdf) | unknown | Audit | 2024-01 | stale | Direct | contract_name | 470 | high |
@@ -437,9 +437,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [trail-of-bits-2022-08-reserve-protocol-fixreview.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/trail-of-bits-2022-08-reserve-protocol-fixreview.pdf) | unknown | Audit | 2022-08 | stale | Direct | contract_name | 19 | high |
 | [trail-of-bits-2022-08-reserve-protocol-securityreview.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/trail-of-bits-2022-08-reserve-protocol-securityreview.pdf) | unknown | Audit | 2022-08 | stale | Direct | contract_name | 87 | high |
 | [report-competition-reserve-jan2025.pdf](https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/cantina/report-competition-reserve-jan2025.pdf) | Spearbit | Audit | 2025-01 | aging | Direct | contract_name | 6 | medium |
-| [reserve-security-review_2025-06-02.pdf](https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/pashov/reserve-security-review_2025-06-02.pdf) | Pashov Audit Group | Audit | 2025-06 | fresh | Direct | contract_name | 97 | high |
+| [reserve-security-review_2025-06-02.pdf](https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/pashov/reserve-security-review_2025-06-02.pdf) | Pashov Audit Group | Audit | 2025-06 | aging | Direct | contract_name | 97 | high |
 | [2025-04-reserve-folio-solidity-2.0.0.pdf](https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trail-of-bits/2025-04-reserve-folio-solidity-2.0.0.pdf) | unknown | Audit | 2025-04 | aging | Direct | contract_name | 122 | high |
-| [2025-06-reserve-folio-solidity-4.0.0.pdf](https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trail-of-bits/2025-06-reserve-folio-solidity-4.0.0.pdf) | unknown | Audit | 2025-06 | fresh | Direct | contract_name | 26 | high |
+| [2025-06-reserve-folio-solidity-4.0.0.pdf](https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trail-of-bits/2025-06-reserve-folio-solidity-4.0.0.pdf) | unknown | Audit | 2025-06 | aging | Direct | contract_name | 26 | high |
 | [v1-audit-dec-2024.pdf](https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trust-security/v1-audit-dec-2024.pdf) | unknown | Audit | 2024-12 | aging | Direct | contract_name | 135 | high |
 | [Audit Report - Reserve Token [3 Jan 2022]-2.pdf](https://github.com/reserve-protocol/rsr-mainnet/blob/master/audits/solidified/Audit%20Report%20-%20Reserve%20Token%20%5B3%20Jan%202022%5D-2.pdf) | unknown | Audit | 2022-01 | stale | Direct | contract_name | 1 | high |
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ring-protocol",
-  "generated_at": "2026-05-26T17:11:06.109Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:11.460Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ring-protocol",
@@ -22,33 +22,24 @@
     "drop_from_peak_pct": 88.52114254222148
   },
   "summary": {
-    "total_contracts": 91,
-    "total_addresses": 254,
-    "unique_implementations": 91,
-    "total_deployments": 254,
+    "total_contracts": 90,
+    "total_addresses": 233,
+    "unique_implementations": 90,
+    "total_deployments": 233,
     "audited_contracts": 5,
-    "unaudited_contracts": 43,
+    "unaudited_contracts": 42,
     "contracts_verified_audited": 5,
-    "contracts_verified_unaudited": 40,
+    "contracts_verified_unaudited": 39,
     "contracts_verified_by_bytecode": 3,
     "contracts_unverified": 43,
-    "coverage_pct": 10.4,
-    "total_audits": 9,
+    "coverage_pct": 10.6,
+    "total_audits": 8,
     "scoreable_audits": 2,
     "dl_tvl_usd": 36201030,
-    "tvl_usd": 354886806.6467564,
+    "tvl_usd": 83508000,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "arbitrum": 9320440.56,
-      "avalanche": 98301.71,
-      "base": 26844907.89,
-      "blast": 83515359.86,
-      "bsc": 9533809.21,
-      "celo": 88732.1,
-      "ethereum": 218931228.78,
-      "optimism": 971231.12,
-      "polygon": 1045662.54,
-      "unichain": 4537132.88
+      "blast": 83508000
     },
     "asd_usd": 83508000,
     "website_url": "https://ring.exchange/",
@@ -66,7 +57,7 @@
       "unichain",
       "zora"
     ],
-    "tier1_coverage_pct": 8.3,
+    "tier1_coverage_pct": 8.5,
     "tier1_auditors": [
       "Spearbit"
     ],
@@ -76,142 +67,24 @@
       "fresh": 1,
       "aging": 3,
       "stale": 0,
-      "unknown": 5
+      "unknown": 4
     }
   },
   "topography": {
-    "project_purpose": "Ring Protocol is a multi-chain decentralized exchange and bridge aggregator that provides automated market-making, liquidity provision, and token swapping across numerous EVM-compatible chains. It combines Uniswap V4-style concentrated liquidity pools with V2-style constant-product pools and a dedicated bridge product (Ring Few) to facilitate cross-chain asset transfers.",
+    "project_purpose": "Ring Protocol is a multi-chain decentralized exchange and swap interface with DEX deployments across EVM-compatible chains. It supports token swapping and liquidity-related functionality, including Uniswap V4-style pool infrastructure where applicable. Do not characterize Ring Protocol as a bridge aggregator or as operating a dedicated Ring Few bridge for cross-chain asset transfers unless supported by current project documentation or verified bridge contracts.",
     "relationship_narrative": "The three product families share common infrastructure such as Permit2 for token approvals and UniversalRouter for efficient multi-hop swaps. Ring V4 and Ring Swap both rely on the same WETH-like wrapper (FewETHWrapper) for native ETH handling, while Ring Few bridges assets that can then be traded or provided as liquidity in the other families.",
     "product_family_count": 24
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 90,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
-      "name": "PoolManager",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Ethereum: 1 ​",
-      "tvl_usd": 271378806.6467564,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PoolManager",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 218931228.77578902,
-          "is_audited": true
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x9a13f98cb987694c9f086b1f5eb990eea8264ec3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 971231.1181648028,
-          "is_audited": true
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x28e2ea090877bf75740558f6bfb36a5ffee9e9df",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 9533809.20623482,
-          "is_audited": true
-        },
-        {
-          "chain_id": 130,
-          "chain_name": "unichain",
-          "address": "0x1f98400000000000000000000000000000000004",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 4537132.884906711,
-          "is_audited": true
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x67366782805870060151383f4bbff9dab53e5cd6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1045662.542660831,
-          "is_audited": true
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x498581ff718922c3f8e6a244956af099b2652b2b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 26844907.893157385,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x360e68faccca8ca495c1b759fd9eee466db9fb32",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 9320440.557846045,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x8702463e73f74d0b6765abceb314ef07acb92650",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x288dc841a52fca2707c6947b3a777c5e56cd87bc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 88732.10262210647,
-          "is_audited": true
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x06380c0e0912312b5150364b9dc4542ba0dbbc85",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 98301.70704687171,
-          "is_audited": true
-        },
-        {
-          "chain_id": 81457,
-          "chain_name": "blast",
-          "address": "0x1631559198a9e474033433b2958dabc135ab6446",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 7359.858327809153,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-3970"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
     {
       "chain_id": 81457,
       "chain_name": "blast",
@@ -1135,124 +1008,36 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
-      "name": "Permit2",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "Permit2",
-      "product_line": "ETH Mainnet ​",
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x8702463e73f74d0b6765abceb314ef07acb92650",
+      "name": "PoolManager",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": "Permit2",
+      "impl_name": "PoolManager",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 130,
-          "chain_name": "unichain",
-          "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x4de602a30ad7fef8223dcf67a9fb704324c4dd9b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
-          "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
+          "address": "0x8702463e73f74d0b6765abceb314ef07acb92650",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 81457,
-          "chain_name": "blast",
-          "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3970"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4392,27 +4177,6 @@
   ],
   "audits": [
     {
-      "audit_id": 3964,
-      "audit_key": "audit-3964",
-      "report_name": "> [Open Zeppelin report]() from July 17th 2024.",
-      "report_url": "https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/OpenZeppelin_audit_core.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 3965,
       "audit_key": "audit-3965",
       "report_name": "> [Certora draft report]() from July 2024.",
@@ -4678,14 +4442,14 @@
       "auditor": "Spearbit",
       "tier": 1,
       "contracts_covered": 4,
-      "coverage_pct": 8.3,
+      "coverage_pct": 8.5,
       "latest_audit": "2024-09"
     },
     {
       "auditor": "ABDK",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 6.3,
+      "coverage_pct": 6.4,
       "latest_audit": "2025-11"
     }
   ],
@@ -4952,9 +4716,9 @@
     }
   ],
   "origin_summary": {
-    "native": 32,
-    "upstream": 11,
-    "standard_library": 8,
+    "native": 31,
+    "upstream": 12,
+    "standard_library": 7,
     "needs_review": 40
   },
   "scope_matching_notes": {
@@ -4967,10 +4731,6 @@
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 3964,
-        "report_name": "> [Open Zeppelin report]() from July 17th 2024."
-      },
       {
         "audit_id": 3965,
         "report_name": "> [Certora draft report]() from July 2024."

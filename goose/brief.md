@@ -4,8 +4,8 @@
 
 - Project: Goose (`goose`)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T08:13:53.811Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.377Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 7 unique implementations (7 raw deployments)
 - DeFi Llama TVL: $12,801,021.87
@@ -14,7 +14,7 @@
 
 ## Project Description
 
-Goose is a CeDeFi protocol that combines centralized and decentralized finance elements to offer yield-bearing vaults. It allows users to deposit assets into vaults that generate returns through managed strategies.
+Goose is a CeDeFi/super-hybrid yield protocol with yield-bearing vault/factory-style Ethereum contracts and multi-chain TVL reported through DefiLlama. Users deposit assets into vaults intended to generate returns through managed strategies. Any contract-surface or TVL figures based only on the recorded Ethereum DataStorage contract should be treated as partial Ethereum-only coverage, not project-wide totals.
 
 ### Architecture
 

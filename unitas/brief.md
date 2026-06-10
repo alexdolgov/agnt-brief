@@ -5,8 +5,8 @@
 - Project: Unitas (`unitas`)
 - Website: [https://app.unitas.so/points?ref=llama](https://app.unitas.so/points?ref=llama)
 - Lifecycle: active (Tier 0, 38.6% below peak)
-- Generated: 2026-05-31T14:53:59.171Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:59:18.492Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 9 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $83,171,426.72
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Unitas is a DeFi protocol on BSC that enables basis trading, allowing users to mint and redeem a stablecoin (USDu) against a basket of assets to capture yield from price discrepancies between spot and futures markets.
+Unitas is a yield-bearing stablecoin protocol listed as Basis Trading, with deployments on Binance/BSC and Solana. Its contract and program surface should not be treated as BSC-only unless the brief is explicitly scoped to BSC coverage.
 
 ### Architecture
 
@@ -51,7 +51,7 @@ The protocol consists of a single product family centered around the USDu stable
 |---|---|---|---|---|
 | StakedUSDuV2 | token | bsc | [`0x385c27...52ec71`](./contracts/bsc-56/0x385c279445581a186a4182a5503094ebb652ec71/) | ✅ Audited |
 | UnitasMintingV2 | unknown | bsc | [`0xbb984c...4ea82a`](./contracts/bsc-56/0xbb984ce670100aa855f6152f88b26ee57f4ea82a/) | ✅ Audited |
-| USDu | unknown | bsc | [`0xea953e...db5882`](./contracts/bsc-56/0xea953ea6634d55dac6697c436b1e81a679db5882/) | ✅ Audited |
+| USDu | token | bsc | [`0xea953e...db5882`](./contracts/bsc-56/0xea953ea6634d55dac6697c436b1e81a679db5882/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

@@ -7,8 +7,8 @@
 - Project: Anzen Finance (`anzen-finance`)
 - Website: [https://anzen.finance/](https://anzen.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:40:01.272Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.594Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, blast, ethereum, manta
 - Contract surface: 47 unique implementations (121 raw deployments)
 - DeFi Llama TVL: $7,527,300.00

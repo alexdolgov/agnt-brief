@@ -5,8 +5,8 @@
 - Project: Angles (`angles`)
 - Website: [https://angles.fi/](https://angles.fi/)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:29:26.096Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.563Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: sonic
 - Contract surface: 40 unique implementations (80 raw deployments)
 - DeFi Llama TVL: $1,009,126.00

@@ -5,21 +5,22 @@
 - Project: Universal Bridge (`universal-bridge`)
 - Website: [https://www.universal.xyz](https://www.universal.xyz)
 - Lifecycle: active (Tier 0, 72.3% below peak)
-- Generated: 2026-05-31T11:30:11.925Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:18.506Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 1 unique implementations (96 raw deployments)
 - DeFi Llama TVL: $7,681,089.75
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Universal Bridge is a cross-chain asset bridging protocol that enables users to transfer tokens between different blockchain networks. It achieves this by deploying wrapped asset contracts (WrappedAssetV2) on the Base chain, which represent tokens from other chains.
-
-### Architecture
-
-Both product families share the same WrappedAssetV2 implementation contract (0xb5458e51d22df7b1deb7a05c4b98df978b48b959) via BeaconProxy, indicating a common infrastructure for wrapped asset logic. The families are distinguished by deployer clusters and deployment windows, suggesting separate operational contexts but no direct on-chain interaction between them.
+Universal is a cross-chain trading and wrapped-asset platform for tokens, chains, stocks, and 1:1 backed uAssets. The currently listed contract surface covers Base WrappedAssetV2 BeaconProxy deployments representing wrapped assets; it should not be treated as the complete Universal trading, routing, liquidity, API, or reserve system unless those additional contracts are separately identified and added.
 
 ## Audit Coverage Summary
 
@@ -29,11 +30,11 @@ Both product families share the same WrappedAssetV2 implementation contract (0xb
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 96
-- Audits discovered: 2
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-07 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 1 unknown
+- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -75,7 +76,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Alongside - Universal Contracts report - Final.pdf](https://github.com/r0bert-ethack/audits/blob/main/Alongside%20-%20Universal%20Contracts%20report%20-%20Final.pdf) | unknown | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
-| [README.md](https://github.com/r0bert-ethack/audits/blob/main/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -96,7 +96,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -104,6 +104,5 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [11340] Alongside - Universal Contracts report - Final.pdf
-- [11341] README.md
 
 Fork inheritance lineage and inherited audits are included when available.

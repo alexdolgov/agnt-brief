@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ink-bridge",
-  "generated_at": "2026-05-31T08:32:49.089Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:06.254Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ink-bridge",
@@ -26,15 +26,15 @@
     "total_addresses": 70,
     "unique_implementations": 68,
     "total_deployments": 70,
-    "audited_contracts": 12,
-    "unaudited_contracts": 13,
-    "contracts_verified_audited": 12,
-    "contracts_verified_unaudited": 13,
+    "audited_contracts": 11,
+    "unaudited_contracts": 14,
+    "contracts_verified_audited": 11,
+    "contracts_verified_unaudited": 14,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 43,
-    "coverage_pct": 48,
-    "total_audits": 27,
-    "scoreable_audits": 8,
+    "coverage_pct": 44,
+    "total_audits": 17,
+    "scoreable_audits": 5,
     "dl_tvl_usd": 59290618.9193,
     "tvl_usd": 59290618.9193,
     "tvl_source": "defillama",
@@ -55,15 +55,20 @@
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 10,
-      "stale": 16,
-      "unknown": 1
+      "aging": 6,
+      "stale": 11,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Ink Bridge is a canonical bridge protocol enabling asset transfers between Ethereum, Ink, and Optimism chains. It uses the OP Stack framework with dispute games, cross-domain messaging, and standard token bridges to facilitate secure cross-chain communication.",
+    "project_purpose": "Ink Bridge is Kraken/Ink's canonical bridge between Ethereum and the Ink L2. It uses OP Stack technology for cross-domain messaging and standard bridge functionality; Optimism/OP Stack security reviews should be treated as upstream inherited coverage unless an audit specifically reviews Ink-specific deployments, versions, or deltas.",
     "relationship_narrative": "The Ethereum Mainnet family provides the L1 bridge infrastructure, while Ink Bridge and Ink Contracts operate on the Ink L2. Ink Mainnet contains shared deployer and utility contracts used across the protocol, and the Security considerations family may enforce access controls across families.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 68,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -126,7 +131,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5538",
         "audit-5544",
         "audit-5548",
         "audit-5555"
@@ -224,7 +228,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5538",
         "audit-5544",
         "audit-5555"
       ],
@@ -259,7 +262,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5538",
         "audit-5544",
         "audit-5548",
         "audit-5555"
@@ -397,7 +399,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5538",
         "audit-5544"
       ],
       "is_audited": true,
@@ -493,9 +494,7 @@
         }
       ],
       "audits_covering": [
-        "audit-5538",
-        "audit-5544",
-        "audit-5557"
+        "audit-5544"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -528,9 +527,7 @@
         }
       ],
       "audits_covering": [
-        "audit-5538",
-        "audit-5544",
-        "audit-5557"
+        "audit-5544"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -563,11 +560,8 @@
         }
       ],
       "audits_covering": [
-        "audit-5535",
-        "audit-5538",
         "audit-5544",
-        "audit-5555",
-        "audit-5557"
+        "audit-5555"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -693,9 +687,7 @@
         }
       ],
       "audits_covering": [
-        "audit-5538",
-        "audit-5544",
-        "audit-5557"
+        "audit-5544"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -728,7 +720,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5538",
         "audit-5544",
         "audit-5555",
         "audit-5556"
@@ -795,7 +786,6 @@
         }
       ],
       "audits_covering": [
-        "audit-5538",
         "audit-5544"
       ],
       "is_audited": true,
@@ -825,16 +815,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-5538"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -902,12 +890,10 @@
         }
       ],
       "audits_covering": [
-        "audit-5538",
         "audit-5542",
         "audit-5544",
         "audit-5555",
-        "audit-5556",
-        "audit-5557"
+        "audit-5556"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2272,27 +2258,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 5532,
-      "audit_key": "audit-5532",
-      "report_name": "2020_11-Dapphub-ECDSA_Wallet.pdf",
-      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2020_11-Dapphub-ECDSA_Wallet.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2020-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 5533,
       "audit_key": "audit-5533",
       "report_name": "2021_03-OVM_and_Rollup-OpenZeppelin.pdf",
@@ -2332,40 +2297,6 @@
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5535,
-      "audit_key": "audit-5535",
-      "report_name": "2022_05-Bedrock_Contracts-Zeppelin.pdf",
-      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_05-Bedrock_Contracts-Zeppelin.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "CrossDomainHashing",
-        "CrossDomainMessenger",
-        "L1StandardBridge",
-        "L1ToL2MessagePasser",
-        "L2OutputOracle",
-        "L2StandardBridge",
-        "LibL2ToL1MessagePasser",
-        "LibWithdrawVerifier",
-        "OptimismMintableERC20",
-        "OptimismMintableTokenFactory",
-        "OptimismPortal",
-        "StandardBridge"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
       "repo_reference_count": 0
     },
     {
@@ -2411,47 +2342,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 5538,
-      "audit_key": "audit-5538",
-      "report_name": "2022_09-Bedrock_and_Periphery-Zeppelin.pdf",
-      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_09-Bedrock_and_Periphery-Zeppelin.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-09",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "CrossDomainEnabled",
-        "CrossDomainMessenger",
-        "Hashing",
-        "L1ChugSplashProxy",
-        "L1CrossDomainMessenger",
-        "L1ERC721Bridge",
-        "L1StandardBridge",
-        "L2CrossDomainMessenger",
-        "L2ERC721Bridge",
-        "L2OutputOracle",
-        "L2StandardBridge",
-        "L2ToL1MessagePasser",
-        "Lib_PredeployAddresses",
-        "OptimismPortal",
-        "Proxy",
-        "ProxyAdmin",
-        "ResourceMetering",
-        "Semver",
-        "StandardBridge"
-      ],
-      "matched_contracts": 12,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 5539,
       "audit_key": "audit-5539",
       "report_name": "2022_10-Drippie-Spearbit.pdf",
@@ -2494,27 +2384,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 5541,
-      "audit_key": "audit-5541",
-      "report_name": "2022_12-DepositTransaction-RuntimeVerification.pdf",
-      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_12-DepositTransaction-RuntimeVerification.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-12",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 5542,
       "audit_key": "audit-5542",
       "report_name": "2023_01-Bedrock_Updates-TrailOfBits.pdf",
@@ -2542,27 +2411,6 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5543,
-      "audit_key": "audit-5543",
-      "report_name": "2023_12_SuperchainConfigUpgrade_Trust.pdf",
-      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2023_12_SuperchainConfigUpgrade_Trust.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-12",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -2707,27 +2555,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 5549,
-      "audit_key": "audit-5549",
-      "report_name": "2024_10-Cannon-FGETFD-3DocSecurity.md",
-      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_10-Cannon-FGETFD-3DocSecurity.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 5550,
       "audit_key": "audit-5550",
       "report_name": "2024_12-DPM-MiloTruck.pdf",
@@ -2736,69 +2563,6 @@
       "audit_type": "audit",
       "freshness": "aging",
       "date": "2024-12",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5551,
-      "audit_key": "audit-5551",
-      "report_name": "2024_12-DPM-RadiantLabs.pdf",
-      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_12-DPM-RadiantLabs.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-12",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5552,
-      "audit_key": "audit-5552",
-      "report_name": "2025_01-IRI-OffbeatLabs.pdf",
-      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_01-IRI-OffbeatLabs.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5553,
-      "audit_key": "audit-5553",
-      "report_name": "2025_01-MT-Cannon-Base.pdf",
-      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_01-MT-Cannon-Base.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -2900,53 +2664,9 @@
       "extraction_confidence": "medium",
       "scope_section_found": false,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5557,
-      "audit_key": "audit-5557",
-      "report_name": "README.md",
-      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/README.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "CrossDomainMessenger.sol",
-        "DeputyPauseModule",
-        "Drippie.sol",
-        "ERC721Bridge.sol",
-        "L1CrossDomainMessenger.sol",
-        "L1ERC721Bridge.sol",
-        "L1StandardBridge.sol",
-        "L2OutputOracle.sol",
-        "MIPS.sol",
-        "MIPS64.sol",
-        "OptimismMintableERC20Factory.sol",
-        "OptimismPortal.sol",
-        "StandardBridge.sol",
-        "SuperchainConfig.sol",
-        "SystemConfig.sol"
-      ],
-      "matched_contracts": 5,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
-    {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 12,
-      "coverage_pct": 48,
-      "latest_audit": "2025-01"
-    },
     {
       "auditor": "Spearbit",
       "tier": 1,
@@ -2982,11 +2702,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 40
+      "extraction_exact": 22
     },
     "extraction_confidence_counts": {
-      "high": 4,
-      "low": 1,
+      "high": 2,
       "medium": 3
     },
     "audits_with_repo_references": [],
@@ -2995,10 +2714,6 @@
       {
         "audit_id": 5531,
         "report_name": "2020_10-Rollup-TrailOfBits.pdf"
-      },
-      {
-        "audit_id": 5532,
-        "report_name": "2020_11-Dapphub-ECDSA_Wallet.pdf"
       },
       {
         "audit_id": 5533,
@@ -3025,14 +2740,6 @@
         "report_name": "2022_11-Invariant_Testing-TrailOfBits.pdf"
       },
       {
-        "audit_id": 5541,
-        "report_name": "2022_12-DepositTransaction-RuntimeVerification.pdf"
-      },
-      {
-        "audit_id": 5543,
-        "report_name": "2023_12_SuperchainConfigUpgrade_Trust.pdf"
-      },
-      {
         "audit_id": 5545,
         "report_name": "2024_05-FaultProofs-Sherlock.pdf"
       },
@@ -3045,24 +2752,8 @@
         "report_name": "2024_08_Fault-Proofs-MIPS_Cantina.pdf"
       },
       {
-        "audit_id": 5549,
-        "report_name": "2024_10-Cannon-FGETFD-3DocSecurity.md"
-      },
-      {
         "audit_id": 5550,
         "report_name": "2024_12-DPM-MiloTruck.pdf"
-      },
-      {
-        "audit_id": 5551,
-        "report_name": "2024_12-DPM-RadiantLabs.pdf"
-      },
-      {
-        "audit_id": 5552,
-        "report_name": "2025_01-IRI-OffbeatLabs.pdf"
-      },
-      {
-        "audit_id": 5553,
-        "report_name": "2025_01-MT-Cannon-Base.pdf"
       },
       {
         "audit_id": 5554,

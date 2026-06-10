@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "mento",
-  "generated_at": "2026-05-31T09:55:03.944Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:59:07.465Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "mento",
     "tier": 1,
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 180,
     "coverage_pct": 0,
-    "total_audits": 12,
+    "total_audits": 11,
     "scoreable_audits": 0,
     "dl_tvl_usd": 19575119,
     "tvl_usd": 19575119,
@@ -62,7 +62,7 @@
     "staleness_breakdown": {
       "fresh": 1,
       "aging": 4,
-      "stale": 4,
+      "stale": 3,
       "unknown": 3
     }
   },
@@ -70,6 +70,11 @@
     "project_purpose": null,
     "relationship_narrative": null,
     "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 180,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -5680,27 +5685,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 6139,
-      "audit_key": "audit-6139",
-      "report_name": "2024-04-cantina-wormhole-evm-ntt.pdf",
-      "report_url": "https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/audits/evm/2024-04-cantina-wormhole-evm-ntt.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 6140,
       "audit_key": "audit-6140",
       "report_name": "2024-07-23-cyfrin-wormhole-evm-ntt-diff-v1.1.0.pdf",
@@ -5928,10 +5912,6 @@
       {
         "audit_id": 6138,
         "report_name": "2024-04-11-cyfrin-wormhole-evm-ntt.pdf"
-      },
-      {
-        "audit_id": 6139,
-        "report_name": "2024-04-cantina-wormhole-evm-ntt.pdf"
       },
       {
         "audit_id": 6140,

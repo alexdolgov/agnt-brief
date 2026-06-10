@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "mantle-restaking",
-  "generated_at": "2026-05-31T14:54:04.080Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
-  "lifecycle_status": null,
+  "generated_at": "2026-06-10T20:59:07.190Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": null,
   "summary": {
     "total_contracts": 8,
@@ -17,7 +17,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 3,
     "coverage_pct": 0,
-    "total_audits": 14,
+    "total_audits": 13,
     "scoreable_audits": 0,
     "dl_tvl_usd": 79688066.50049,
     "tvl_usd": 79688066.50049,
@@ -36,11 +36,11 @@
       "fresh": 2,
       "aging": 3,
       "stale": 0,
-      "unknown": 9
+      "unknown": 8
     }
   },
   "topography": {
-    "project_purpose": "Mantle Restaking is a liquid restaking protocol that allows users to deposit assets into a BoringVault and manage positions through PositionManager contracts, enabling yield generation while maintaining liquidity.",
+    "project_purpose": "Mantle Restaking is part of the mETH Protocol on Ethereum, centered on liquid staking and restaking products using mETH and cmETH. Users participate through Mantle's staking/restaking product surface while retaining liquid token exposure. Internal vault and position-management components such as BoringVault or PositionManager should be treated as implementation details only where their relationship to mETH/cmETH and the current deployed contract surface is independently verified.",
     "relationship_narrative": "The BoringVault holds user deposits and is managed by the PositionManagerNoVaultOwnable2StepWithShortcut, while multiple PositionManagerOwnable2StepWithShortcut contracts serve as governance modules. The DelayedWithdraw contract provides a secure withdrawal mechanism for the vault.",
     "product_family_count": 1
   },
@@ -59,7 +59,7 @@
       "chain_name": "ethereum",
       "address": "0x33272d40b247c4cd9c646582c9bbad44e85d4fe4",
       "name": "BoringVaultUpgradeable",
-      "role": "core_logic",
+      "role": "proxy",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "Mantle Restaking",
@@ -548,27 +548,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 4634,
-      "audit_key": "audit-4634",
-      "report_name": "verilog.pdf",
-      "report_url": "https://github.com/mantle-lsp/audits/blob/main/fixed-yield-vault/verilog.pdf",
-      "auditor": "Verilog",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 4635,
       "audit_key": "audit-4635",
       "report_name": "Mantle_L2_ERC20_Token_Bridge_Report.pdf",
@@ -743,10 +722,6 @@
       {
         "audit_id": 4633,
         "report_name": "blocksec.pdf"
-      },
-      {
-        "audit_id": 4634,
-        "report_name": "verilog.pdf"
       },
       {
         "audit_id": 4635,

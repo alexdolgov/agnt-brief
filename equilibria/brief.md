@@ -7,17 +7,17 @@
 - Project: Equilibria (`equilibria`)
 - Website: [https://equilibria.fi/home](https://equilibria.fi/home)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-25T16:32:24.059Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:02.300Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, berachain, bsc, ethereum, hyperliquid, mantle, optimism, plasma, sonic
-- Contract surface: 120 unique implementations (834 raw deployments)
-- DeFi Llama TVL: $19,993,697.42
+- Contract surface: 119 unique implementations (833 raw deployments)
+- DeFi Llama TVL: $18,142,263.85
 - On-chain TVL (included contracts): $26,877,414.73
 - TVL by chain: Ethereum $20,730,756.55 | Arbitrum $4,681,969.63 | Berachain $859,535.49 | Plasma $368,397.67 | Sonic $181,564.40 | Bsc $52,526.55 | Mantle $2,232.13 | Optimism $431.85 | Hyperliquid $0.45
 
 ## Project Description
 
-Equilibria is a yield optimization protocol that builds on top of Pendle Finance to offer boosted yield strategies. It provides liquid restaking tokens (LRTs), vaults for Pendle yield tokens, and a cross-chain veTokenomics system with bribes and governance.
+Equilibria is a yield optimization protocol built on top of Pendle Finance, focused on ePENDLE/Pendle-related boosted yield strategies. Broader LRT, governance, bribe, and cross-chain veTokenomics claims should be treated as contract-surface observations unless supported by current public documentation.
 
 ### Architecture
 
@@ -25,17 +25,17 @@ The Equilibria Core on Ethereum issues EQB and vlEQB, which are bridged to sidec
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 15/86 (17.4%)
-- Verified + Unaudited implementations: 62
+- Verified implementations audited: 15/85 (17.6%)
+- Verified + Unaudited implementations: 61
 - Verified by bytecode match: 15
 - Unverified implementations: 34
-- Unique implementations: 120
-- Raw deployments: 834
+- Unique implementations: 119
+- Raw deployments: 833
 - Audits discovered: 6
 - Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): $15,666,577.97
-- Latest audit: 2025-06 (fresh)
-- Staleness: 1 fresh, 2 aging, 3 stale, 0 unknown
+- Latest audit: 2025-06 (aging)
+- Staleness: 0 fresh, 3 aging, 3 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $15,666,577.97 represents exposure in a protocol with declining activity.
 
@@ -43,7 +43,7 @@ The Equilibria Core on Ethereum issues EQB and vlEQB, which are bridged to sidec
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| WatchPug | Tier 2 | 15 | 17.4% | 2025-06 |
+| WatchPug | Tier 2 | 15 | 17.6% | 2025-06 |
 | PeckShield | Tier 2 | 1 | 1.2% | 2023-05 |
 
 ## Contract Surface
@@ -62,7 +62,7 @@ The Equilibria Core on Ethereum issues EQB and vlEQB, which are bridged to sidec
 | VaultDepositToken | core_logic | hyperliquid | 3 deployments: ethereum `0x3ce7f5...02d011`; ethereum `0xfbaa95...3783e3`; hyperliquid [`0x03b86b...c88e4e`](./contracts/hyperliquid-999/0x03b86b5b4f49fd2059c813b3f928c0b276c88e4e/) | ✅ Audited |
 | VaultDepositTokenFactory | registry | ethereum | 5 deployments: ethereum [`0x027df5...63e5fb`](./contracts/ethereum-1/0x027df5ca0596bac018330bce9b9263263a63e5fb/); ethereum `0x05eaaa...10f7a0`; ethereum `0x5eebaf...7dbb62`; ethereum `0xea2db4...edbf88`; ethereum `0xedc3bb...59be3f` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (62)
+### ⚠️ Verified + Unaudited (61)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -107,7 +107,6 @@ The Equilibria Core on Ethereum issues EQB and vlEQB, which are bridged to sidec
 | OperatorDepositPool | core_logic | ethereum | 3 deployments: ethereum [`0x4c871d...4bf385`](./contracts/ethereum-1/0x4c871d28274fd5ef270fa89074f6fcd4854bf385/); ethereum `0x69c964...080c01`; ethereum `0xd5f247...dfc8d3` | ⚠️ Unaudited |
 | OptimismMintableERC20 | bridge_template | base | 6 deployments: optimism `0x76c37f...858481`; optimism `0xaf3a6f...dca2a0`; optimism `0xbc7b1f...6e66e1`; base [`0x010cd9...80a50a`](./contracts/base-8453/0x010cd9b9be7e416e07793dc6ce2f45868a80a50a/); base `0xa99f6e...9eeb3e`; base `0xc6e669...f239f0` | ⚠️ Unaudited |
 | OUpgradeable | proxy | hyperliquid | 2 deployments: hyperliquid [`0xad11a8...b35afa`](./contracts/hyperliquid-999/0xad11a8beb98bbf61dbb1aa0f6d6f2ecd87b35afa/); hyperliquid `0xcd9a74...5aa7c8` | ⚠️ Unaudited |
-| Pendle | token | mantle | [`0xd27b18...2f5729`](./contracts/mantle-5000/0xd27b18915e7acc8fd6ac75db6766a80f8d2f5729/) | ⚠️ Unaudited |
 | PendleBoosterMainchain | core_logic | ethereum | [`0x4d32c8...0c26bf`](./contracts/ethereum-1/0x4d32c8ff2facc771ec7efc70d6a8468bc30c26bf/) | ⚠️ Unaudited |
 | PendleBoosterSidechain | core_logic | optimism | 9 deployments: optimism [`0x18c616...e2b356`](./contracts/optimism-10/0x18c61629e6cbadb85c29ba7993f251b3ebe2b356/); bsc `0x4d32c8...0c26bf`; sonic `0x920873...56a3b8`; hyperliquid `0xad2995...53421c`; mantle `0x920873...56a3b8`; base `0x2583a2...b4821d`; plasma `0xd6ecfd...4fd54f`; arbitrum `0x4d32c8...0c26bf`; berachain [`0x18c616...e2b356`](./contracts/berachain-80094/0x18c61629e6cbadb85c29ba7993f251b3ebe2b356/) | ⚠️ Unaudited |
 | PendleCampaigns | core_logic | arbitrum | 3 deployments: optimism `0x576ab2...2f748d`; optimism `0xb3ad8c...32fbb8`; arbitrum [`0x4c960b...5362ef`](./contracts/arbitrum-42161/0x4c960b0dc60873d7f01bc393ff2d5443285362ef/) | ⚠️ Unaudited |
@@ -203,7 +202,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2FQKP8F3G6lbidKTu8nkEc%2FEquilibria_Staked_LP_Audit_Report_by_WatchPug-rev1.pdf) | WatchPug | Audit | 2025-06 | fresh | Direct | contract_name | 59 | high |
+| [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2FQKP8F3G6lbidKTu8nkEc%2FEquilibria_Staked_LP_Audit_Report_by_WatchPug-rev1.pdf) | WatchPug | Audit | 2025-06 | aging | Direct | contract_name | 59 | high |
 | [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2Fb8B3TscrPCJ1YmEeCb4Q%2FEquilibria_Continuous_Audit_May_21%2C_25_Audit_Report_by_WatchPug.pdf) | WatchPug | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
 | [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2FmmHtThc39pihExxQM3Jx%2FEquilibria_%232__Audit_Report_by_WatchPug.pdf) | WatchPug | Audit | 2024-11 | aging | Direct | contract_name | 19 | high |
 | [Rendered PDF capture](https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2FT7caQbKvLq6KPy2IRcuY%2FEquilibria_ePENDLE_Auto_Compounder_Audit_Report_by_WatchPug.pdf) | WatchPug | Audit | 2023-10 | stale | Direct | contract_name | 121 | high |
@@ -245,7 +244,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 44 |
-| upstream | 5 |
+| upstream | 4 |
 | standard_library | 16 |
 | needs_review | 55 |
 

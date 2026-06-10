@@ -5,21 +5,22 @@
 - Project: BiTomato (`bitomato`)
 - Website: [https://bitomato.com/](https://bitomato.com/)
 - Lifecycle: unknown
-- Generated: 2026-05-24T11:03:36.403Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:58:59.726Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $2,612,575.95
+- DeFi Llama TVL: $2,598,667.08
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-BiTomato is a centralized exchange (CEX) platform that facilitates cryptocurrency trading and related financial services. It operates off-chain with no on-chain smart contracts, relying on a traditional order book and custody model.
-
-### Architecture
-
-No on-chain product families or contract relationships exist, as the protocol is a centralized exchange without smart contract infrastructure.
+BiTomato is listed on DefiLlama as a CEX / cryptocurrency exchange for meme tokens; its homepage currently displays a maintenance notice.
 
 ## Audit Coverage Summary
 

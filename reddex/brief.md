@@ -7,8 +7,8 @@
 - Project: reddex (`reddex`)
 - Website: [https://reddex.io](https://reddex.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:24:55.918Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:09.491Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 5 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $4,190,945.31
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Reddex is a decentralized exchange (DEX) protocol on Ethereum that enables users to swap tokens and provide liquidity through automated market-making pools.
+Reddex is a Redbelly-network liquidity hub and decentralized exchange focused on swap, bridge, and staking/earn functionality, with residual multichain presence including Ethereum bridge-related deployments and reported BNB/Binance activity. It should not be characterized as an Ethereum-only AMM.
 
 ### Architecture
 

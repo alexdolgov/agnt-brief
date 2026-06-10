@@ -5,21 +5,22 @@
 - Project: xWin Finance (`xwin-finance`)
 - Website: [https://xwin.finance](https://xwin.finance)
 - Lifecycle: active (Tier 0, 57.9% below peak)
-- Generated: 2026-05-23T13:03:32.541Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:19.395Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $6,174,447.63
+- DeFi Llama TVL: $6,105,445.77
 - On-chain TVL (included contracts): $1,844,863.40
 - TVL by chain: Bsc $1,844,863.40
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-xWin Finance is a DeFi protocol that offers index-like investment products, allowing users to gain diversified exposure to a basket of crypto assets through a single token. The protocol simplifies portfolio management by providing automated, rule-based strategies.
-
-### Architecture
-
-The project currently consists of a single token contract, with no additional infrastructure or product families identified. All functionality is encapsulated within the XWINToken contract.
+xWIN Finance is a multi-chain DeFi wealth-management platform offering robo-advisor, portfolio, index, and automated strategy products across multiple networks. The XWIN token is only the protocol token and should not be treated as containing all portfolio, index, or investment-management functionality; the protocol’s TVL-bearing product and strategy contracts are separate from the token contract and require independent inventory and coverage assessment.
 
 ## Audit Coverage Summary
 

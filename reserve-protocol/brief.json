@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "reserve-protocol",
-  "generated_at": "2026-05-31T10:28:01.062Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:09.647Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "reserve-protocol",
     "tier": 0,
@@ -59,16 +59,21 @@
     "latest_audit_date": "2026-03",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 5,
-      "aging": 7,
-      "stale": 15,
+      "fresh": 3,
+      "aging": 8,
+      "stale": 16,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Reserve Protocol is a decentralized platform for creating and managing asset-backed stablecoins and tokenized index products. It enables users to deploy and govern fully collateralized stablecoins (RTokens) and diversified crypto baskets (Folios) across multiple chains.",
+    "project_purpose": "Reserve Protocol is a decentralized platform focused on DTFs and other tokenized asset-backed baskets, enabling governed diversified index and yield products across multiple chains with RSR governance. Its broader protocol history also includes fully collateralized RTokens and stable currency ambitions.",
     "relationship_narrative": "The Reserve Protocol family provides the foundational stablecoin infrastructure, while Folio Deployments extend the system with index products on multiple chains. Both families share deployer and governance contracts, and the Non-compatible ERC-20 assets family supplies wrapped tokens used across the protocol.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 329,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -21878,7 +21883,7 @@
       "report_url": "https://github.com/reserve-protocol/protocol/blob/master/audits/Solidified%20-%20Audit%20Report%20-%20Reserve%20Protocol%203.4.0.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -22552,7 +22557,7 @@
       "report_url": "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/pashov/reserve-security-review_2025-06-02.pdf",
       "auditor": "Pashov Audit Group",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -22622,7 +22627,7 @@
       "report_url": "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trail-of-bits/2025-06-reserve-folio-solidity-4.0.0.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,

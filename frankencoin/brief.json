@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "frankencoin",
-  "generated_at": "2026-05-31T14:54:04.169Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-06-10T20:59:04.063Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "frankencoin",
@@ -22,19 +22,19 @@
     "drop_from_peak_pct": 9.175570134847687
   },
   "summary": {
-    "total_contracts": 6,
-    "total_addresses": 14,
-    "unique_implementations": 6,
-    "total_deployments": 14,
+    "total_contracts": 5,
+    "total_addresses": 13,
+    "unique_implementations": 5,
+    "total_deployments": 13,
     "audited_contracts": 4,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 4,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 66.7,
-    "total_audits": 11,
-    "scoreable_audits": 8,
+    "coverage_pct": 80,
+    "total_audits": 5,
+    "scoreable_audits": 5,
     "dl_tvl_usd": 70002557.25646,
     "tvl_usd": 70002557.25646,
     "tvl_source": "defillama",
@@ -44,7 +44,7 @@
     "chains": [
       "ethereum"
     ],
-    "tier1_coverage_pct": 66.7,
+    "tier1_coverage_pct": 80,
     "tier1_auditors": [
       "ChainSecurity",
       "Code4rena"
@@ -54,17 +54,17 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 2,
-      "stale": 4,
-      "unknown": 5
+      "stale": 3,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Frankencoin is a collateralized debt position (CDP) protocol that allows users to mint a stablecoin (Frankencoin) against deposited collateral. It manages vaults, liquidations, and stability mechanisms to maintain the peg.",
+    "project_purpose": "Frankencoin is an over-collateralized, oracle-free decentralized stablecoin protocol for ZCHF, a stablecoin tracking the Swiss franc. Its evidenced CDP core centers on Frankencoin, MintingHub, PositionFactory, and Position-style collateralized borrowing/minting components, with related savings and bridge functionality where in scope. FolioProxy/Folio should not be described as the main entry point unless separately documented.",
     "relationship_narrative": "The FolioProxy acts as the main entry point, delegating to the Folio implementation which manages vaults and interacts with the Frankencoin token contract. TetherToken is used as a collateral type within the system.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 6,
+    "unique_implementations": 5,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -150,9 +150,7 @@
         "audit-4642",
         "audit-4643",
         "audit-4644",
-        "audit-4648",
-        "audit-4650",
-        "audit-4653"
+        "audit-4648"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -206,10 +204,8 @@
         "audit-4642",
         "audit-4643",
         "audit-4644",
-        "audit-4645",
         "audit-4648",
-        "audit-4651",
-        "audit-4653"
+        "audit-4649"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -262,8 +258,8 @@
       "audits_covering": [
         "audit-4642",
         "audit-4644",
-        "audit-4645",
-        "audit-4648"
+        "audit-4648",
+        "audit-4649"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -316,45 +312,13 @@
       "audits_covering": [
         "audit-4642",
         "audit-4643",
-        "audit-4648",
-        "audit-4653"
+        "audit-4648"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
-      "name": "TetherToken",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "tether",
-      "product_line": "Frankencoin",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "TetherToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     }
   ],
   "audits": [
@@ -449,86 +413,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 4645,
-      "audit_key": "audit-4645",
-      "report_name": "frankencoin-audit-report-2024-1.1.pdf",
-      "report_url": "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V2/frankencoin-audit-report-2024-1.1.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-09",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Leadrate",
-        "MintingHub",
-        "Position",
-        "PositionFactory",
-        "PositionRoller",
-        "Savings"
-      ],
-      "matched_contracts": 6,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 4645,
-          "report_url": "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V2/frankencoin-audit-report-2024-1.1.pdf"
-        },
-        {
-          "audit_id": 4649,
-          "report_url": "https://github.com/Decurity/audits/blob/master/Frankencoin/frankencoin-audit-report-2024-1.1.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 4646,
-      "audit_key": "audit-4646",
-      "report_name": "blockbite-audit.md",
-      "report_url": "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V1/blockbite-audit.md",
-      "auditor": "Blockbite",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4647,
-      "audit_key": "audit-4647",
-      "report_name": "code4rena-audit.md",
-      "report_url": "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V1/code4rena-audit.md",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 4648,
       "audit_key": "audit-4648",
       "report_name": "Code4rena",
@@ -558,97 +442,28 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 4650,
-      "audit_key": "audit-4650",
-      "report_name": "ChainSecurity",
-      "report_url": "https://www.chainsecurity.com/security-audit/frankencoin-smart-contracts",
-      "auditor": "ChainSecurity",
+      "audit_id": 4649,
+      "audit_key": "audit-4649",
+      "report_name": "- [Decurity Audit]()",
+      "report_url": "https://github.com/Decurity/audits/blob/master/Frankencoin/frankencoin-audit-report-2024-1.1.pdf",
+      "auditor": "yAudit",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2024-09",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
       "extracted_names": [
-        "Frankencoin"
-      ],
-      "matched_contracts": 3,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4651,
-      "audit_key": "audit-4651",
-      "report_name": "- [ChainSecurity Audit 2]()",
-      "report_url": "https://www.chainsecurity.com/security-audit/frankencoin-v2024",
-      "auditor": "ChainSecurity",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
+        "Leadrate",
         "MintingHub",
+        "Position",
+        "PositionFactory",
         "PositionRoller",
         "Savings"
       ],
-      "matched_contracts": 3,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4652,
-      "audit_key": "audit-4652",
-      "report_name": "- [ChainSecurity Audit 3]()",
-      "report_url": "https://www.chainsecurity.com/security-audit/frankencoin-ccip-bridge",
-      "auditor": "ChainSecurity",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4653,
-      "audit_key": "audit-4653",
-      "report_name": "BlockBite",
-      "report_url": "https://frankencoin.com/AuditReport-Frankencoin.pdf",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "stale",
-      "date": "2023-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "ERC20PermitLight",
-        "Equity",
-        "Frankencoin",
-        "MintingHub",
-        "Position",
-        "StablecoinBridge"
-      ],
-      "matched_contracts": 9,
+      "matched_contracts": 6,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -660,28 +475,28 @@
       "auditor": "ChainSecurity",
       "tier": 1,
       "contracts_covered": 4,
-      "coverage_pct": 66.7,
+      "coverage_pct": 80,
       "latest_audit": "2024-11"
     },
     {
       "auditor": "Code4rena",
       "tier": 1,
       "contracts_covered": 4,
-      "coverage_pct": 66.7,
+      "coverage_pct": 80,
       "latest_audit": "2023-04"
     },
     {
       "auditor": "Blockbite",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 50,
+      "coverage_pct": 60,
       "latest_audit": "2023-02"
     },
     {
-      "auditor": "unknown",
+      "auditor": "yAudit",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 33.3,
+      "coverage_pct": 40,
       "latest_audit": "2024-09"
     }
   ],
@@ -699,34 +514,20 @@
   ],
   "origin_summary": {
     "native": 5,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 69
+      "extraction_exact": 48
     },
     "extraction_confidence_counts": {
-      "high": 6,
-      "low": 2
+      "high": 5
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 4646,
-        "report_name": "blockbite-audit.md"
-      },
-      {
-        "audit_id": 4647,
-        "report_name": "code4rena-audit.md"
-      },
-      {
-        "audit_id": 4652,
-        "report_name": "- [ChainSecurity Audit 3]()"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

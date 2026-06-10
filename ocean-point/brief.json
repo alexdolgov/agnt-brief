@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ocean-point",
-  "generated_at": "2026-05-31T10:07:18.671Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:08.763Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "ocean-point",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Ocean Point is a DeFi protocol that enables users to stake BST tokens and liquidity pool tokens to earn rewards, and to participate in tokenized real estate through property registries. It combines yield farming with real-world asset tokenization.",
+    "project_purpose": "Ocean Point is a Blocksquare DeFi/liquidity layer for the BST ecosystem, positioning itself as a liquidity engine with staking and pool2-style liquidity participation around BST. It is also associated with tokenized real estate/RWA infrastructure and USD-correlating stablecoin positioning, but any marketplace-trading or fee-distribution claims should be treated as unverified unless supported by project documentation or contract-level analysis.",
     "relationship_narrative": "Staking contracts use the BST token and LP tokens from the Uniswap pair, while property registries interact with marketplace pools for trading tokenized properties. Revenue distribution likely collects fees from staking and marketplace activities and distributes them to stakeholders.",
     "product_family_count": 8
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 40,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

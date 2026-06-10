@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Gains Network
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 39.7% over 90 days
-
 ## Project Overview
 
 - Project: Gains Network (`gains-network`)
 - Website: [https://gains.trade/](https://gains.trade/)
-- Lifecycle: unknown (Tier 0, 76.5% below peak)
-- Generated: 2026-05-25T14:20:34.679Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Lifecycle: active (Tier 0, 76.5% below peak)
+- Generated: 2026-06-10T20:59:04.135Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, polygon
 - Contract surface: 760 unique implementations (1777 raw deployments)
-- DeFi Llama TVL: $19,912,437.79
+- DeFi Llama TVL: $18,577,383.48
 - On-chain TVL (included contracts): $21,861,405.22
 - TVL by chain: Arbitrum $16,181,339.34 | Base $2,857,544.74 | Polygon $2,822,521.14
 
 ## Project Description
 
-Gains Network is a decentralized leveraged trading platform that allows users to trade a wide range of assets (crypto, forex, commodities) with high leverage using synthetic assets. It operates across multiple chains and uses its own GNS token for staking, rewards, and governance.
+Gains Network / gTrade is a decentralized perpetuals exchange supporting leveraged trading across crypto, forex, stocks, indices and commodities, alongside lending vaults and GNS governance, staking and rewards components. GNS is the protocol governance and utility token, but the protocol also includes multi-collateral trading and lending components that use other assets.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The Gains Network family is a monolithic suite where all contracts share the sam
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $21,861,405.22 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

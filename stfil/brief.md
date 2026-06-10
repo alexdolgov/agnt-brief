@@ -4,21 +4,22 @@
 
 - Project: STFIL (`stfil`)
 - Lifecycle: unknown
-- Generated: 2026-05-23T15:19:59.174Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:16.666Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $5,637,851.19
+- DeFi Llama TVL: $5,513,253.30
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-STFIL is a liquid staking protocol that allows users to stake assets and receive liquid derivative tokens representing their staked position, enabling continued participation in DeFi while earning staking rewards.
-
-### Architecture
-
-No product families or contracts were identified in the provided inventory, so no relationships can be described.
+STFIL is a decentralized non-custodial liquidity market on Filecoin for suppliers and borrowers, including Filecoin storage providers seeking overcollateralized or undercollateralized liquidity.
 
 ## Audit Coverage Summary
 

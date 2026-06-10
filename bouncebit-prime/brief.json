@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bouncebit-prime",
-  "generated_at": "2026-05-31T07:34:59.406Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.078Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bouncebit-prime",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "BounceBit Prime is a basis trading protocol that enables users to execute delta-neutral strategies by capturing funding rate differentials between spot and derivatives markets.",
+    "project_purpose": "BounceBit Prime provides tokenized income and RWA strategy vaults using collateral such as Franklin BENJI and BlackRock BUIDL held in custody and deployed as collateral for delta-neutral or basis strategies across approved venues.",
     "relationship_narrative": "The protocol consists of a single product family with one core proxy contract, indicating a monolithic architecture without shared infrastructure across multiple families.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 9,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

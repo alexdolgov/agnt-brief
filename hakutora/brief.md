@@ -5,21 +5,22 @@
 - Project: Hakutora (`hakutora`)
 - Website: [https://hakutora.xyz](https://hakutora.xyz)
 - Lifecycle: unknown
-- Generated: 2026-05-22T13:19:00.970Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:04.453Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $23,759,697.24
+- DeFi Llama TVL: $23,796,953.38
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Hakutora is a risk curation protocol that provides risk assessment and management services for DeFi protocols. It likely offers tools or frameworks to evaluate and mitigate risks in decentralized finance.
-
-### Architecture
-
-No product families or contracts are defined, so no relationships can be described.
+Hakutora provides on-chain asset management and risk control solutions for DeFi users, apps, communities, and protocols. Its offerings include DeFi strategy and risk analysis, optional protective withdrawal services, and customized low-risk arbitrage and asset management strategies such as spread arbitrage, carry trade, depeg arbitrage, and liquidation arbitrage.
 
 ## Audit Coverage Summary
 

@@ -5,17 +5,17 @@
 - Project: Bridgers (`bridgers`)
 - Website: [https://bridgers.ai/](https://bridgers.ai/)
 - Lifecycle: active (Tier 0, 40.4% below peak)
-- Generated: 2026-05-24T14:41:21.329Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:01.123Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, ethereum, fantom, linea, optimism, polygon
-- Contract surface: 9 unique implementations (13 raw deployments)
-- DeFi Llama TVL: $2,082,876.93
-- On-chain TVL (included contracts): $71,921,779.86
-- TVL by chain: Ethereum $71,921,779.86
+- Contract surface: 6 unique implementations (10 raw deployments)
+- DeFi Llama TVL: $1,599,052.31
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Bridgers is a cross-chain DEX aggregator and bridge that enables users to swap and transfer assets across multiple blockchains. It provides liquidity aggregation and token bridging services through a unified interface.
+Bridgers is a cross-chain swap/DEX aggregation protocol that enables users to exchange and transfer assets across multiple blockchains through a unified interface. Third-party ERC20 token contracts such as HBToken, PepeToken, SwftCoin, and similar asset tokens should not be treated as Bridgers-owned core protocol contracts unless separate ownership and protocol-control evidence is available.
 
 ### Architecture
 
@@ -23,15 +23,15 @@ The Bridgers family includes core token contracts (HBToken, PepeToken, SwftCoin,
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
-- Verified + Unaudited implementations: 4
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 1
 - Unverified implementations: 4
-- Unique implementations: 9
-- Raw deployments: 13
+- Unique implementations: 6
+- Raw deployments: 10
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $71,921,779.86
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-06 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,13 +46,10 @@ The Bridgers family includes core token contracts (HBToken, PepeToken, SwftCoin,
 
 - None
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| HBToken | token | ethereum | [`0x6f2596...8aa161`](./contracts/ethereum-1/0x6f259637dcd74c767781e37bc6133cd6a68aa161/) | ⚠️ Unaudited |
-| PepeToken | token | ethereum | [`0x698250...311933`](./contracts/ethereum-1/0x6982508145454ce325ddbe47a25d4ec3d2311933/) | ⚠️ Unaudited |
-| SwftCoin | unknown | ethereum | [`0x0bb217...0dfc1e`](./contracts/ethereum-1/0x0bb217e40f8a5cb79adf04e1aab60e5abd0dfc1e/) | ⚠️ Unaudited |
 | WLD | unknown | ethereum | [`0x163f8c...318753`](./contracts/ethereum-1/0x163f8c2467924be0ae7b5347228cabf260318753/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -92,17 +89,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x6f2596...8aa161`](./contracts/ethereum-1/0x6f259637dcd74c767781e37bc6133cd6a68aa161/) | HBToken | token | $71,921,779.86 | Verified native implementation with $71,921,779.86 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb68576...89895b`](./contracts/ethereum-1/0xb685760ebd368a891f27ae547391f4e2a289895b/) | Bridgers | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x698250...311933`](./contracts/ethereum-1/0x6982508145454ce325ddbe47a25d4ec3d2311933/) | PepeToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0bb217...0dfc1e`](./contracts/ethereum-1/0x0bb217e40f8a5cb79adf04e1aab60e5abd0dfc1e/) | SwftCoin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x163f8c...318753`](./contracts/ethereum-1/0x163f8c2467924be0ae7b5347228cabf260318753/) | WLD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 9 |
+| native | 6 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

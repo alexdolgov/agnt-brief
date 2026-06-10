@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "matstake",
-  "generated_at": "2026-05-23T19:37:55.461Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:07.269Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4767660.49698,
-    "tvl_usd": 4767660.49698,
+    "dl_tvl_usd": 4668328.32232,
+    "tvl_usd": 4668328.32232,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "MatStake is a staking pool protocol that allows users to stake tokens and earn rewards.",
-    "relationship_narrative": "No contract inventory or structural relationships are available to describe shared infrastructure or dependencies.",
+    "project_purpose": "MatStake is a Matchain MAT staking platform that supports delegate staking and liquid staking, enabling users to stake MAT, earn rewards, and use liquid staking/yield functionality such as stMAT.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

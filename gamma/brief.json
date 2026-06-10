@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "gamma",
-  "generated_at": "2026-05-31T08:08:17.848Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:59:04.207Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "gamma",
     "tier": 1,
@@ -36,15 +36,15 @@
     "total_addresses": 2560,
     "unique_implementations": 467,
     "total_deployments": 2560,
-    "audited_contracts": 31,
-    "unaudited_contracts": 74,
-    "contracts_verified_audited": 28,
-    "contracts_verified_unaudited": 62,
+    "audited_contracts": 29,
+    "unaudited_contracts": 76,
+    "contracts_verified_audited": 26,
+    "contracts_verified_unaudited": 64,
     "contracts_verified_by_bytecode": 15,
     "contracts_unverified": 362,
-    "coverage_pct": 29.5,
-    "total_audits": 30,
-    "scoreable_audits": 9,
+    "coverage_pct": 27.6,
+    "total_audits": 16,
+    "scoreable_audits": 8,
     "dl_tvl_usd": 3713256.188539999,
     "tvl_usd": 24284.661510050704,
     "tvl_source": "on_chain",
@@ -78,24 +78,28 @@
       "sonic",
       "unichain"
     ],
-    "tier1_coverage_pct": 4.8,
+    "tier1_coverage_pct": 1.9,
     "tier1_auditors": [
-      "ConsenSys Diligence",
-      "OpenZeppelin"
+      "ConsenSys Diligence"
     ],
     "latest_audit_date": "2026-03",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 2,
-      "aging": 8,
-      "stale": 10,
-      "unknown": 10
+      "aging": 6,
+      "stale": 5,
+      "unknown": 3
     }
   },
   "topography": {
-    "project_purpose": "Gamma is a decentralized liquidity management protocol that optimizes Uniswap V3 positions through automated vaults (Hypervisors) and provides limit order functionality. It also features a governance token (GAMMA) and a staking derivative (xGAMMA) for fee distribution.",
+    "project_purpose": "Gamma is an active concentrated-liquidity and market-making protocol offering V1 pooled vaults and V2 vaults for automated liquidity management, tools for creating Uniswap V4 LP vaults, limit order book functionality, Perp Vaults, Merkl incentives, and related liquidity infrastructure. It also includes the GAMMA governance token and xGAMMA staking derivative for fee distribution.",
     "relationship_narrative": "The Token family's GAMMA and xGAMMA tokens are used within the Gamma family's MultiFeeDistribution contracts to distribute protocol fees to stakers. The Gamma family relies on HypeRegistry contracts to track and manage Hypervisor vaults and other components across multiple chains.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 467,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -4224,7 +4228,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 80094,
@@ -4245,13 +4249,11 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-8029"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -11869,8 +11871,7 @@
       ],
       "audits_covering": [
         "audit-8018",
-        "audit-8020",
-        "audit-8029"
+        "audit-8020"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -17543,7 +17544,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17552,7 +17553,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17561,7 +17562,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17570,7 +17571,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17579,7 +17580,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17588,7 +17589,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17597,7 +17598,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17606,7 +17607,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17615,7 +17616,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17624,7 +17625,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17633,7 +17634,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17642,7 +17643,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17651,7 +17652,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17660,7 +17661,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17669,7 +17670,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17678,7 +17679,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17687,7 +17688,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17696,7 +17697,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17705,7 +17706,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17714,7 +17715,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17723,7 +17724,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17732,7 +17733,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17741,7 +17742,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17750,7 +17751,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17759,7 +17760,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17768,7 +17769,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17777,7 +17778,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17786,7 +17787,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17795,7 +17796,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17804,7 +17805,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17813,7 +17814,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17822,7 +17823,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17831,7 +17832,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17840,7 +17841,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -17849,7 +17850,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17858,7 +17859,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17867,7 +17868,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17876,7 +17877,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17885,7 +17886,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17894,7 +17895,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17903,7 +17904,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17912,7 +17913,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17921,7 +17922,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17930,7 +17931,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17939,7 +17940,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17948,7 +17949,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17957,7 +17958,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17966,7 +17967,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17975,7 +17976,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17984,7 +17985,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -17993,7 +17994,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -18002,7 +18003,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -18011,7 +18012,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -18020,7 +18021,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -18029,7 +18030,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -18038,16 +18039,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-8029"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -33735,119 +33734,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 8025,
-      "audit_key": "audit-8025",
-      "report_name": "2017-03.md",
-      "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2017-03.md",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2017-03",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 8025,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2017-03.md"
-        },
-        {
-          "audit_id": 8034,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/2017-03.md"
-        },
-        {
-          "audit_id": 8048,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/permit2/lib/openzeppelin-contracts/audit/2017-03.md"
-        },
-        {
-          "audit_id": 8059,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2017-03.md"
-        }
-      ]
-    },
-    {
-      "audit_id": 8026,
-      "audit_key": "audit-8026",
-      "report_name": "2018-10.pdf",
-      "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2018-10.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2018-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 8026,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2018-10.pdf"
-        },
-        {
-          "audit_id": 8035,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/2018-10.pdf"
-        },
-        {
-          "audit_id": 8049,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/permit2/lib/openzeppelin-contracts/audit/2018-10.pdf"
-        },
-        {
-          "audit_id": 8060,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2018-10.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 8027,
-      "audit_key": "audit-8027",
-      "report_name": "2022-10-Checkpoints.pdf",
-      "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2022-10-Checkpoints.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 8027,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2022-10-Checkpoints.pdf"
-        },
-        {
-          "audit_id": 8036,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/2022-10-Checkpoints.pdf"
-        },
-        {
-          "audit_id": 8061,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2022-10-Checkpoints.pdf"
-        }
-      ]
-    },
-    {
       "audit_id": 8028,
       "audit_key": "audit-8028",
       "report_name": "2022-10-ERC4626.pdf",
@@ -33883,175 +33769,6 @@
       ]
     },
     {
-      "audit_id": 8029,
-      "audit_key": "audit-8029",
-      "report_name": "2023-05-v4.9.pdf",
-      "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2023-05-v4.9.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name|n/a",
-      "extracted_names": [
-        "AccessControlDefaultAdminRules",
-        "AccessManaged",
-        "AccessManager",
-        "AccessManagerAdapter",
-        "Checkpoints",
-        "ECDSA",
-        "EIP712",
-        "ERC20Votes",
-        "ERC4626",
-        "ERC721URIStorage",
-        "ERC721Votes",
-        "ERC721Wrapper",
-        "Governor",
-        "GovernorCompatibilityBravo",
-        "GovernorPreventLateQuorum",
-        "GovernorTimelockCompound",
-        "GovernorVotes",
-        "GovernorVotesComp",
-        "GovernorVotesQuorumFraction",
-        "IAccessControlDefaultAdminRules",
-        "IAuthority",
-        "IGovernor",
-        "IGovernorCompatibilityBravo",
-        "IVotes",
-        "SafeERC20",
-        "ShortStrings",
-        "SignatureChecker",
-        "StorageSlot",
-        "Strings",
-        "TimelockController",
-        "TransparentUpgradeableProxy",
-        "Votes"
-      ],
-      "matched_contracts": 85,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 8029,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2023-05-v4.9.pdf"
-        },
-        {
-          "audit_id": 8038,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/2023-05-v4.9.pdf"
-        },
-        {
-          "audit_id": 8063,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2023-05-v4.9.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 8030,
-      "audit_key": "audit-8030",
-      "report_name": "2023-10-v5.0.pdf",
-      "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2023-10-v5.0.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 8030,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2023-10-v5.0.pdf"
-        },
-        {
-          "audit_id": 8039,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/2023-10-v5.0.pdf"
-        },
-        {
-          "audit_id": 8064,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2023-10-v5.0.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 8031,
-      "audit_key": "audit-8031",
-      "report_name": "2024-10-v5.1.pdf",
-      "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2024-10-v5.1.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 8031,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2024-10-v5.1.pdf"
-        },
-        {
-          "audit_id": 8040,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/2024-10-v5.1.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 8032,
-      "audit_key": "audit-8032",
-      "report_name": "README.md",
-      "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/README.md",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 8032,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/README.md"
-        },
-        {
-          "audit_id": 8041,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/README.md"
-        },
-        {
-          "audit_id": 8065,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/README.md"
-        }
-      ]
-    },
-    {
       "audit_id": 8043,
       "audit_key": "audit-8043",
       "report_name": "DRAFT_ABDK_audit_periphery_universal_router.pdf",
@@ -34078,27 +33795,6 @@
       "report_name": "DRAFT_Spearbit_audit_periphery.pdf",
       "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/audits/DRAFT_Spearbit_audit_periphery.pdf",
       "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-09",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8045,
-      "audit_key": "audit-8045",
-      "report_name": "OpenZeppelin_audit_periphery_universal_router.pdf",
-      "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/audits/OpenZeppelin_audit_periphery_universal_router.pdf",
-      "auditor": "OpenZeppelin",
       "audit_type": "audit",
       "freshness": "aging",
       "date": "2024-09",
@@ -34157,58 +33853,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 8050,
-      "audit_key": "audit-8050",
-      "report_name": "v6-Fixed-Point-Solutions.pdf",
-      "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/permit2/lib/solmate/audits/v6-Fixed-Point-Solutions.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 8050,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/permit2/lib/solmate/audits/v6-Fixed-Point-Solutions.pdf"
-        },
-        {
-          "audit_id": 8067,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/lib/solmate/audits/v6-Fixed-Point-Solutions.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 8051,
-      "audit_key": "audit-8051",
-      "report_name": "Known_Effects_of_Hook_Permissions.pdf",
-      "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/security/Known_Effects_of_Hook_Permissions.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 8052,
       "audit_key": "audit-8052",
       "report_name": "DRAFT_ABDK_audit_core.pdf",
@@ -34230,53 +33874,11 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 8053,
-      "audit_key": "audit-8053",
-      "report_name": "DRAFT_Certora_audit_core.pdf",
-      "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Certora_audit_core.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 8054,
       "audit_key": "audit-8054",
       "report_name": "DRAFT_Spearbit_audit_core.pdf",
       "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Spearbit_audit_core.pdf",
       "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8055,
-      "audit_key": "audit-8055",
-      "report_name": "OpenZeppelin_audit_core.pdf",
-      "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/security/audits/OpenZeppelin_audit_core.pdf",
-      "auditor": "OpenZeppelin",
       "audit_type": "audit",
       "freshness": "unknown",
       "date": null,
@@ -34312,48 +33914,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8057,
-      "audit_key": "audit-8057",
-      "report_name": "whitepaper-v4.pdf",
-      "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-v4.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8058,
-      "audit_key": "audit-8058",
-      "report_name": "whitepaper-zh.pdf",
-      "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-zh.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -34363,13 +33923,6 @@
       "contracts_covered": 29,
       "coverage_pct": 27.6,
       "latest_audit": "2026-03"
-    },
-    {
-      "auditor": "OpenZeppelin",
-      "tier": 1,
-      "contracts_covered": 3,
-      "coverage_pct": 2.9,
-      "latest_audit": "2024-10"
     },
     {
       "auditor": "Consensys Diligence",
@@ -34789,42 +34342,18 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 1685
+      "extraction_exact": 1600
     },
     "extraction_confidence_counts": {
-      "high": 8,
+      "high": 7,
       "medium": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 8025,
-        "report_name": "2017-03.md"
-      },
-      {
-        "audit_id": 8026,
-        "report_name": "2018-10.pdf"
-      },
-      {
-        "audit_id": 8027,
-        "report_name": "2022-10-Checkpoints.pdf"
-      },
-      {
         "audit_id": 8028,
         "report_name": "2022-10-ERC4626.pdf"
-      },
-      {
-        "audit_id": 8030,
-        "report_name": "2023-10-v5.0.pdf"
-      },
-      {
-        "audit_id": 8031,
-        "report_name": "2024-10-v5.1.pdf"
-      },
-      {
-        "audit_id": 8032,
-        "report_name": "README.md"
       },
       {
         "audit_id": 8043,
@@ -34835,10 +34364,6 @@
         "report_name": "DRAFT_Spearbit_audit_periphery.pdf"
       },
       {
-        "audit_id": 8045,
-        "report_name": "OpenZeppelin_audit_periphery_universal_router.pdf"
-      },
-      {
         "audit_id": 8046,
         "report_name": "ABDKAudit.pdf"
       },
@@ -34847,40 +34372,16 @@
         "report_name": "Chainsecurity Audit.pdf"
       },
       {
-        "audit_id": 8050,
-        "report_name": "v6-Fixed-Point-Solutions.pdf"
-      },
-      {
-        "audit_id": 8051,
-        "report_name": "Known_Effects_of_Hook_Permissions.pdf"
-      },
-      {
         "audit_id": 8052,
         "report_name": "DRAFT_ABDK_audit_core.pdf"
-      },
-      {
-        "audit_id": 8053,
-        "report_name": "DRAFT_Certora_audit_core.pdf"
       },
       {
         "audit_id": 8054,
         "report_name": "DRAFT_Spearbit_audit_core.pdf"
       },
       {
-        "audit_id": 8055,
-        "report_name": "OpenZeppelin_audit_core.pdf"
-      },
-      {
         "audit_id": 8056,
         "report_name": "TrailOfBits_audit_core.pdf"
-      },
-      {
-        "audit_id": 8057,
-        "report_name": "whitepaper-v4.pdf"
-      },
-      {
-        "audit_id": 8058,
-        "report_name": "whitepaper-zh.pdf"
       }
     ],
     "inherited_remapped_matches": []

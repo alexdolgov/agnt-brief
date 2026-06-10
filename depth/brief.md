@@ -1,26 +1,27 @@
 # Agentic Audit Brief: Depth
 
-⚠️ Lifecycle status: DEAD - TVL changed 1.4% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 1.4% over 90 days
 
 ## Project Overview
 
 - Project: Depth (`depth`)
-- Lifecycle: dead (Tier 0, 99.7% below peak)
-- Generated: 2026-05-25T04:47:28.305Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 0, 99.7% below peak)
+- Generated: 2026-06-10T20:59:01.701Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: heco
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,172,290.29
+- DeFi Llama TVL: $1,171,105.60
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Depth is a decentralized exchange (DEX) protocol operating on the Heco chain, enabling users to swap tokens and provide liquidity.
-
-### Architecture
-
-The protocol consists of a single product family with one contract, so there are no inter-family relationships or shared infrastructure.
+Depth is a stablecoin-focused asset management and stablecoin swap protocol. Current DefiLlama data attributes its TVL to Binance, with Heco TVL at zero; the listed Heco address is not sufficient to represent the full current contract surface and should not be described as the sole core protocol contract without further verification.
 
 ## Audit Coverage Summary
 
@@ -36,7 +37,7 @@ The protocol consists of a single product family with one contract, so there are
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "spacefi",
-  "generated_at": "2026-05-24T21:54:46.991Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.274Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "spacefi",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 5,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1484878,
-    "tvl_usd": 1484878,
+    "dl_tvl_usd": 1459366,
+    "tvl_usd": 1459366,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -57,9 +57,14 @@
     }
   },
   "topography": {
-    "project_purpose": "SpaceFi is a decentralized exchange (DEX) and DeFi platform operating across multiple chains including Evmos, zkSync Era, and Scroll. It provides token swapping, liquidity provision, and yield farming services through a unified cross-chain architecture.",
+    "project_purpose": "SpaceFi is a cross-chain Web3 and DeFi platform with products including DEX/token swapping, liquidity provision, yield farming, NFTs, Starter, and Spacebase. Current contract and chain coverage should be treated cautiously until deployments are re-resolved and matched to audited scopes; no unified cross-chain architecture should be inferred without supporting evidence.",
     "relationship_narrative": "The product families represent chain-specific deployments of the same SpaceFi DEX protocol, sharing a common architecture but operating independently on Evmos, Scroll, and zkSync Era. No cross-chain infrastructure or shared contracts are evident from the provided data.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 38,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

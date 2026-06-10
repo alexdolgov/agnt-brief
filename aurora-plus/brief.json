@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "aurora-plus",
-  "generated_at": "2026-06-10T20:49:35.157Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-b05b29-7564",
+  "generated_at": "2026-06-10T20:58:57.885Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "aurora-plus",

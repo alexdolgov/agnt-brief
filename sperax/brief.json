@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sperax",
-  "generated_at": "2026-05-24T14:14:54.649Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.359Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "sperax",
@@ -45,7 +45,7 @@
     "coverage_pct": 47.1,
     "total_audits": 9,
     "scoreable_audits": 7,
-    "dl_tvl_usd": 2197051,
+    "dl_tvl_usd": 2063201,
     "tvl_usd": 14194274.838778712,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -65,18 +65,23 @@
       "SlowMist"
     ],
     "latest_audit_date": "2024-06",
-    "audit_freshness": "aging",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 1,
-      "stale": 8,
+      "aging": 0,
+      "stale": 9,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Sperax is a DeFi protocol that issues the USDs stablecoin and provides yield aggregation through auto-compounding vaults. It also features governance and staking tokens (SPA, veSPA, xSPA) to manage the protocol and incentivize liquidity.",
+    "project_purpose": "Sperax is currently positioned around SperaxOS, a DeFi agent layer. Its historical and on-chain protocol surface also includes the USDs stablecoin, SPA governance/staking assets including veSPA and xSPA, and related vault, strategy, and farm contracts.",
     "relationship_narrative": "The VaultCore uses strategies (Aave, Compound, Stargate) to generate yield, while the MasterPriceOracle provides asset prices for collateral and vault operations. The stablecoin USDs relies on CollateralManager and YieldReserve for backing, and governance tokens (SPA, veSPA, xSPA) control protocol parameters and incentivize liquidity through farms.",
     "product_family_count": 8
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 142,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1031,7 +1036,7 @@
       "chain_name": "bsc",
       "address": "0xdb3c487c0c589f0e5590893f070abb534c1fb08c",
       "name": "Sperax",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -4765,7 +4770,7 @@
       "report_url": "https://github.com/Sperax/Audit_Reports/blob/main/Demeter%20Audit%20Final%20Report.pdf",
       "auditor": "Unknown",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -5084,7 +5089,7 @@
       "chain_name": "bsc",
       "address": "0xdb3c487c0c589f0e5590893f070abb534c1fb08c",
       "name": "Sperax",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

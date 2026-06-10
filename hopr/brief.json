@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "hopr",
-  "generated_at": "2026-05-25T04:18:55.762Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:04.679Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hopr",
     "tier": 0,
@@ -33,10 +33,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 58,
     "coverage_pct": 4.3,
-    "total_audits": 2,
-    "scoreable_audits": 2,
-    "dl_tvl_usd": 1173060.55274,
-    "tvl_usd": 1173060.55274,
+    "total_audits": 1,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 1164330.35222,
+    "tvl_usd": 1164330.35222,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -54,13 +54,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 1,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "HOPR is a privacy-focused protocol that provides network-level metadata protection for data exchange. It enables users to run nodes and relay messages through a mixnet, ensuring that communication remains private and untraceable.",
+    "project_purpose": "HOPR is a privacy-focused protocol that provides network-level metadata protection for data exchange. It enables users to run nodes and relay messages through a mixnet, helping keep communication private and harder to trace. Its on-chain surface should not be described as only HoprNodeStakeFactory and HoprChannels; it includes contracts supporting staking, node and network registries, node management, payment channels, token/oracle/periphery components, and historical staking seasons.",
     "relationship_narrative": "The HOPR family consists of two core contracts that work together: HoprNodeStakeFactory manages node registration and staking, while HoprChannels handles the payment channels used for relaying messages. Both contracts are deployed from the same deployer cluster, indicating a unified infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 81,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -679,7 +684,6 @@
         }
       ],
       "audits_covering": [
-        "audit-3184",
         "audit-3185"
       ],
       "is_audited": true,
@@ -4132,29 +4136,6 @@
   ],
   "audits": [
     {
-      "audit_id": 3184,
-      "audit_key": "audit-3184",
-      "report_name": "DL audit link",
-      "report_url": "https://www.chainsecurity.com/security-audit/hopr-payment-channels",
-      "auditor": "ChainSecurity",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "HoprChannels"
-      ],
-      "matched_contracts": 21,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 3185,
       "audit_key": "audit-3185",
       "report_name": "download report",
@@ -4307,11 +4288,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 42
+      "extraction_exact": 21
     },
     "extraction_confidence_counts": {
-      "high": 1,
-      "low": 1
+      "high": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

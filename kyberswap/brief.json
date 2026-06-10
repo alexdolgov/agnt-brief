@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "kyberswap",
-  "generated_at": "2026-05-31T08:38:03.785Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:06.807Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "kyberswap",
     "tier": 1,
@@ -36,15 +36,15 @@
     "total_addresses": 642,
     "unique_implementations": 445,
     "total_deployments": 642,
-    "audited_contracts": 13,
-    "unaudited_contracts": 123,
-    "contracts_verified_audited": 13,
-    "contracts_verified_unaudited": 117,
+    "audited_contracts": 12,
+    "unaudited_contracts": 124,
+    "contracts_verified_audited": 12,
+    "contracts_verified_unaudited": 118,
     "contracts_verified_by_bytecode": 6,
     "contracts_unverified": 309,
-    "coverage_pct": 9.6,
-    "total_audits": 11,
-    "scoreable_audits": 10,
+    "coverage_pct": 8.8,
+    "total_audits": 6,
+    "scoreable_audits": 6,
     "dl_tvl_usd": 10470441,
     "tvl_usd": 58323780.4761487,
     "tvl_source": "on_chain",
@@ -86,13 +86,18 @@
       "fresh": 2,
       "aging": 0,
       "stale": 3,
-      "unknown": 6
+      "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "KyberSwap is a multi-chain decentralized exchange (DEX) aggregator and liquidity protocol that enables users to trade tokens at optimal rates by routing swaps across various liquidity sources. It also provides yield aggregation and liquidity provision features through its Classic and Elastic automated market maker (AMM) products.",
+    "project_purpose": "KyberSwap is a non-custodial multichain decentralized exchange aggregator and liquidity protocol that enables token swaps by routing across multiple external and Kyber liquidity sources. It also provides liquidity through KyberSwap AMM products, including capital-efficient pools.",
     "relationship_narrative": "The KyberSwap Aggregator routes trades through Classic and Elastic pools, while the KyberDAO governs protocol parameters and fee distribution. KNC tokens are staked in the DAO and bridged across chains to support governance and liquidity incentives.",
     "product_family_count": 12
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 445,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1254,11 +1259,7 @@
         }
       ],
       "audits_covering": [
-        "audit-10240",
-        "audit-10241",
         "audit-10242",
-        "audit-10243",
-        "audit-10244",
         "audit-10245"
       ],
       "is_audited": true,
@@ -1756,10 +1757,7 @@
         }
       ],
       "audits_covering": [
-        "audit-10240",
         "audit-10242",
-        "audit-10243",
-        "audit-10244",
         "audit-10245",
         "audit-10246"
       ],
@@ -1941,11 +1939,7 @@
         }
       ],
       "audits_covering": [
-        "audit-10240",
-        "audit-10241",
         "audit-10242",
-        "audit-10243",
-        "audit-10244",
         "audit-10245",
         "audit-10246"
       ],
@@ -3299,11 +3293,7 @@
         }
       ],
       "audits_covering": [
-        "audit-10240",
-        "audit-10241",
         "audit-10242",
-        "audit-10243",
-        "audit-10244",
         "audit-10245",
         "audit-10246"
       ],
@@ -3470,11 +3460,7 @@
         }
       ],
       "audits_covering": [
-        "audit-10240",
-        "audit-10241",
         "audit-10242",
-        "audit-10243",
-        "audit-10244",
         "audit-10245",
         "audit-10246"
       ],
@@ -15208,8 +15194,6 @@
         }
       ],
       "audits_covering": [
-        "audit-10243",
-        "audit-10244",
         "audit-10245",
         "audit-10246"
       ],
@@ -15533,11 +15517,7 @@
         }
       ],
       "audits_covering": [
-        "audit-10240",
-        "audit-10241",
         "audit-10242",
-        "audit-10243",
-        "audit-10244",
         "audit-10245"
       ],
       "is_audited": true,
@@ -15660,7 +15640,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -15669,16 +15649,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-10241"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -15757,63 +15735,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 10240,
-      "audit_key": "audit-10240",
-      "report_name": "BlockchainLabs_Kyber_AuditReport.MD",
-      "report_url": "https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV1Audit2/BlockchainLabs_Kyber_AuditReport.MD",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "ConversionRates",
-        "ExpectedRate",
-        "FeeBurner",
-        "KyberNetwork",
-        "KyberReserve",
-        "VolumeImbalanceRecorder",
-        "WhiteList"
-      ],
-      "matched_contracts": 13,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10241,
-      "audit_key": "audit-10241",
-      "report_name": "Kovan_tests.MD",
-      "report_url": "https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV1Audit2/Kovan_tests.MD",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "ConversionRates",
-        "FeeBurner",
-        "KyberNetwork",
-        "KyberReserve",
-        "WhiteList",
-        "Wrapper"
-      ],
-      "matched_contracts": 13,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 10242,
       "audit_key": "audit-10242",
       "report_name": "KyberNetwork BlockchainLabs Audit Report.pdf",
@@ -15837,80 +15758,6 @@
         "WhiteList"
       ],
       "matched_contracts": 13,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10243,
-      "audit_key": "audit-10243",
-      "report_name": "test-coverage.MD",
-      "report_url": "https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV1Audit2/test-coverage.MD",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "ConversionRates",
-        "ConversionRatesInterface",
-        "ERC20Interface",
-        "ExpectedRate",
-        "ExpectedRateInterface",
-        "FeeBurner",
-        "FeeBurnerInterface",
-        "KyberNetwork",
-        "KyberReserve",
-        "KyberReserveInterface",
-        "PermissionGroups",
-        "SanityRates",
-        "SanityRatesInterface",
-        "Utils",
-        "VolumeImbalanceRecorder",
-        "WhiteList",
-        "WhiteListInterface",
-        "Withdrawable"
-      ],
-      "matched_contracts": 15,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10244,
-      "audit_key": "audit-10244",
-      "report_name": "work-paper.MD",
-      "report_url": "https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV1Audit2/work-paper.MD",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "ConversionRates",
-        "ExpectedRate",
-        "FeeBurner",
-        "KyberNetwork",
-        "KyberReserve",
-        "Migrations",
-        "PermissionGroups",
-        "SanityRates",
-        "Utils",
-        "VolumeImbalanceRecorder",
-        "WhiteList",
-        "Withdrawable"
-      ],
-      "matched_contracts": 15,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -16006,27 +15853,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 10247,
-      "audit_key": "audit-10247",
-      "report_name": "audits.md",
-      "report_url": "https://github.com/KyberNetwork/kyberswap-documentation/blob/main/security/audits.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 10252,
       "audit_key": "audit-10252",
       "report_name": "Kyber-Hook-Uniswap-Foundation-Spearbit-Security-Review-October-2025.pdf",
@@ -16082,18 +15908,18 @@
   ],
   "auditor_coverage": [
     {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 10,
-      "coverage_pct": 7.4,
-      "latest_audit": "2026-01"
-    },
-    {
       "auditor": "ChainSecurity",
       "tier": 1,
       "contracts_covered": 8,
       "coverage_pct": 5.9,
       "latest_audit": "2019-01"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 8,
+      "coverage_pct": 5.9,
+      "latest_audit": "2026-01"
     },
     {
       "auditor": "Spearbit",
@@ -16877,6 +16703,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x8f1a369ee7916491e43e412b0dcc7717e2fcb608",
+      "name": "Wrapper",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x61a6cb01c70db83b74db3c02bbfda9f025ba4870",
       "name": "ZapIn",
       "role": "adapter",
@@ -16893,20 +16729,14 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 110
+      "extraction_exact": 54
     },
     "extraction_confidence_counts": {
-      "high": 9,
-      "low": 1
+      "high": 6
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 10247,
-        "report_name": "audits.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

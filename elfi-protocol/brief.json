@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "elfi-protocol",
-  "generated_at": "2026-05-25T20:18:37.264Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:02.193Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "elfi-protocol",
     "tier": 0,
@@ -23,20 +23,20 @@
   },
   "summary": {
     "total_contracts": 2406,
-    "total_addresses": 2473,
+    "total_addresses": 2470,
     "unique_implementations": 2406,
-    "total_deployments": 2473,
+    "total_deployments": 2470,
     "audited_contracts": 28,
-    "unaudited_contracts": 68,
+    "unaudited_contracts": 67,
     "contracts_verified_audited": 27,
     "contracts_verified_unaudited": 61,
-    "contracts_verified_by_bytecode": 8,
-    "contracts_unverified": 2310,
-    "coverage_pct": 29.2,
+    "contracts_verified_by_bytecode": 7,
+    "contracts_unverified": 2311,
+    "coverage_pct": 29.5,
     "total_audits": 1,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 3012278.91843,
-    "tvl_usd": 3012278.91843,
+    "dl_tvl_usd": 3440720.2547,
+    "tvl_usd": 3440720.2547,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -45,7 +45,7 @@
       "arbitrum",
       "base"
     ],
-    "tier1_coverage_pct": 29.2,
+    "tier1_coverage_pct": 29.5,
     "tier1_auditors": [
       "Sherlock"
     ],
@@ -59,9 +59,14 @@
     }
   },
   "topography": {
-    "project_purpose": "ELFi Protocol is a decentralized derivatives trading platform that enables users to deposit assets, trade derivatives, and manage portfolios through a set of vaults and a diamond proxy architecture. It operates on Base and Arbitrum One, providing liquidity and staking mechanisms.",
+    "project_purpose": "ELFi Protocol is a P2Pool decentralized perpetuals and derivatives exchange deployed on Base and Arbitrum One. It supports portfolio margin, multi-asset collateral, ELP liquidity and yield pools, and staking/rewards mechanisms; internal vault and diamond proxy architecture should be treated as implementation details rather than the primary product description.",
     "relationship_narrative": "The Diamond proxy serves as the central access point for user accounts, routing calls to the AccountFacet, while the TradeVault, PortfolioVault, and LpVault interact to manage trading and liquidity. StakeToken likely incentivizes participation across these vaults, and external tokens like USDC (via FiatTokenProxy) are used for deposits and withdrawals.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2406,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -9294,6 +9299,37 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x4194f2ab6f7c74dde9aa38dfebe7b30290b73739",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x41ba6c1a5ab5985a1068326bb8293ccf0057c61f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x41ba6c1a5ab5985a1068326bb8293ccf0057c61f",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -75227,64 +75263,6 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x36f32dd52bfc834c40a3f0b3ebb341ff3acc3d4b",
-      "name": "WETH",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "wrapped-ether",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "WETH",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x41ba6c1a5ab5985a1068326bb8293ccf0057c61f",
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x36f32dd52bfc834c40a3f0b3ebb341ff3acc3d4b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x385dd8dd49afe433b25534af2d53eb28677826ff",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x3a40d1072c9722abf28bb70f5dcaae9ac6605f2b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
       "address": "0x99a5078df0be4fccd211ee6a64d025c580d4a898",
       "name": "Withdraw",
       "role": "operational_periphery",
@@ -75371,7 +75349,7 @@
       "auditor": "Sherlock",
       "tier": 1,
       "contracts_covered": 28,
-      "coverage_pct": 29.2,
+      "coverage_pct": 29.5,
       "latest_audit": "2024-07"
     }
   ],
@@ -75889,9 +75867,9 @@
   ],
   "origin_summary": {
     "native": 219,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 2,
-    "needs_review": 2184
+    "needs_review": 2185
   },
   "scope_matching_notes": {
     "match_method_counts": {

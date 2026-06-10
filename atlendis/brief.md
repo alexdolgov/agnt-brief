@@ -4,8 +4,8 @@
 
 - Project: Atlendis (`atlendis`)
 - Lifecycle: active (Tier 0, 99% below peak)
-- Generated: 2026-06-10T20:43:11.185Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.817Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: polygon
 - Contract surface: 43 unique implementations (106 raw deployments)
 - DeFi Llama TVL: $10,993,274.00

@@ -5,8 +5,8 @@
 - Project: Sovryn Bridge (`sovryn-bridge`)
 - Website: [https://alpha.sovryn.app](https://alpha.sovryn.app)
 - Lifecycle: active (Tier 0, 85.5% below peak)
-- Generated: 2026-05-31T10:38:39.109Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.269Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 47 unique implementations (50 raw deployments)
 - DeFi Llama TVL: $2,869,052.79
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Sovryn Bridge is a canonical bridge that enables cross-chain asset transfers, primarily between Ethereum and the Sovryn protocol on RSK, allowing users to move tokens securely between networks.
+Sovryn Bridge is a cross-chain bridge associated with the Sovryn ecosystem. DefiLlama currently tracks Sovryn Bridge TVL on Ethereum and Binance/BNB Chain, so the protocol surface should not be described as only an Ethereum-to-RSK bridge unless Binance/BNB Chain TVL is explicitly scoped out. The live surface includes proxy and implementation contracts, token allowlist/configuration or risk-control contracts, federation/validator components, governance/admin functionality, and unresolved active contracts that require coverage review.
 
 ### Architecture
 
@@ -51,7 +51,7 @@ The project consists of a single product family with one proxy contract, indicat
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | AdminUpgradeabilityProxy | proxy | ethereum | [`0x33c0d3...366ee1`](./contracts/ethereum-1/0x33c0d33a0d4312562ad622f91d12b0ac47366ee1/) | ⚠️ Unaudited |
-| AllowTokens | token | ethereum | 3 deployments: ethereum [`0x1486e2...f70fe0`](./contracts/ethereum-1/0x1486e225ee099f7ea491e32cd2a69e8264f70fe0/); ethereum `0x8df20c...0aa1be`; ethereum `0x9d772c...9789fd` | ⚠️ Unaudited |
+| AllowTokens | registry | ethereum | 3 deployments: ethereum [`0x1486e2...f70fe0`](./contracts/ethereum-1/0x1486e225ee099f7ea491e32cd2a69e8264f70fe0/); ethereum `0x8df20c...0aa1be`; ethereum `0x9d772c...9789fd` | ⚠️ Unaudited |
 | Federation | unknown | ethereum | 2 deployments: ethereum [`0x2493b9...4cbd18`](./contracts/ethereum-1/0x2493b92b3b958c8d1e93899cae00bfc4854cbd18/); ethereum `0xa38e6a...c4df24` | ⚠️ Unaudited |
 | MultiSigWallet | governance | ethereum | [`0x062c74...3ccd2e`](./contracts/ethereum-1/0x062c74f9d27b1178bb76186c1756128ccb3ccd2e/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | [`0xd60010...512c07`](./contracts/ethereum-1/0xd6001073ef1ba973e53719766780b95667512c07/) | ⚠️ Unaudited |
@@ -129,7 +129,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x33c0d3...366ee1`](./contracts/ethereum-1/0x33c0d33a0d4312562ad622f91d12b0ac47366ee1/) | AdminUpgradeabilityProxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1486e2...f70fe0`](./contracts/ethereum-1/0x1486e225ee099f7ea491e32cd2a69e8264f70fe0/) | AllowTokens | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1486e2...f70fe0`](./contracts/ethereum-1/0x1486e225ee099f7ea491e32cd2a69e8264f70fe0/) | AllowTokens | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2493b9...4cbd18`](./contracts/ethereum-1/0x2493b92b3b958c8d1e93899cae00bfc4854cbd18/) | Federation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x062c74...3ccd2e`](./contracts/ethereum-1/0x062c74f9d27b1178bb76186c1756128ccb3ccd2e/) | MultiSigWallet | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 

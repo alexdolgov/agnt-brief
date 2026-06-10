@@ -5,21 +5,22 @@
 - Project: Uranium.io (`uranium.io`)
 - Website: [https://uranium.io/en](https://uranium.io/en)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T11:28:15.377Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:18.518Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 3 unique implementations (7 raw deployments)
 - DeFi Llama TVL: $7,384,209.92
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Uranium.io is a protocol for tokenizing real-world assets (RWA) on Ethereum. It issues and manages asset-backed tokens using upgradeable ERC-20 contracts, enabling on-chain representation of off-chain assets.
-
-### Architecture
-
-All proxy contracts share a single implementation (ExtendedERC20), forming a family of upgradeable tokens deployed from the same deployer cluster. There are no other infrastructure contracts, so the family is self-contained.
+Uranium.io is the xU3O8 real-world asset protocol for fractional ownership and trading of physical uranium ore concentrate. Current public/project sources emphasize Tezos/Archax/Curzon, and DefiLlama currently tracks the protocol's TVL on Etherlink. Ethereum mainnet contracts should not be presented as the live TVL-bearing protocol surface unless an explicit Ethereum-to-Etherlink/product mapping is independently verified.
 
 ## Audit Coverage Summary
 

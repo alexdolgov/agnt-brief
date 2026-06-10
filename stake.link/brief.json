@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stake.link",
-  "generated_at": "2026-05-31T10:41:44.186Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.546Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stake.link",
@@ -57,16 +57,21 @@
     "latest_audit_date": "2026-03",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 6,
-      "aging": 6,
+      "fresh": 5,
+      "aging": 7,
       "stale": 8,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "stake.link is a liquid staking and index protocol for Chainlink (LINK) and its ecosystem. It allows users to stake LINK, receive liquid staking derivatives (LSDs), and participate in curated index pools that aggregate yields from multiple staking strategies across chains.",
+    "project_purpose": "stake.link is primarily a Chainlink/LINK liquid staking protocol. It enables users to stake LINK and receive liquid staking-related tokens/derivatives, with additional auxiliary staking, rewards, vesting, and historical index-pool components where supported by current live contracts and documentation.",
     "relationship_narrative": "All staking families share common infrastructure such as StakingPool, PriorityPool, and WithdrawalPool contracts, which are reused across different strategies (Espresso, Polygon, LINK). Token contracts provide the wrapped staking derivatives that represent user positions, and governance contracts like FundFlowController and RebaseController manage rewards and rebasing across the protocol.",
     "product_family_count": 7
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 71,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -3867,7 +3872,7 @@
       "report_url": "https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-06-04%5D%20Cyfrin%20-%20LINK%20Migrator.pdf",
       "auditor": "Cyfrin",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,

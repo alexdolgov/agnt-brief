@@ -5,8 +5,8 @@
 - Project: Gravity Bridge (`gravity-bridge`)
 - Website: [https://www.gravitybridge.net](https://www.gravitybridge.net)
 - Lifecycle: active (Tier 0, 89.3% below peak)
-- Generated: 2026-05-31T08:15:02.127Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.390Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 152 unique implementations (225 raw deployments)
 - DeFi Llama TVL: $12,141,492.35
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Gravity Bridge is a cross-chain bridge protocol that enables the transfer of assets between Ethereum and the Cosmos ecosystem. It uses a set of bridge contracts and token representations to lock assets on Ethereum and mint corresponding tokens on Cosmos, and vice versa.
+Gravity Bridge is a decentralized Cosmos blockchain and cross-chain bridge connecting Ethereum with the Cosmos ecosystem. It includes Ethereum-side bridge contracts and Cosmos/IBC-side components that together support asset transfers between Ethereum and Cosmos chains.
 
 ### Architecture
 
@@ -23,34 +23,30 @@ The Gravity Bridge family relies on a set of proxy contracts (AdminUpgradeabilit
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/74 (1.4%)
-- Verified + Unaudited implementations: 73
+- Verified implementations audited: 0/74 (0.0%)
+- Verified + Unaudited implementations: 74
 - Verified by bytecode match: 0
 - Unverified implementations: 78
 - Unique implementations: 152
 - Raw deployments: 225
-- Audits discovered: 1
-- Scoreable audits (matched contracts): 1
+- Audits discovered: 0
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $91,299,805.77
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 1.4% | n/a |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (1)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Gravity | unknown | ethereum | [`0xa4108a...f2d906`](./contracts/ethereum-1/0xa4108aa1ec4967f8b52220a4f7e94a8201f2d906/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (73)
+### ⚠️ Verified + Unaudited (74)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -85,6 +81,7 @@ The Gravity Bridge family relies on a set of proxy contracts (AdminUpgradeabilit
 | eNOK | unknown | ethereum | [`0x9ec749...f47ea5`](./contracts/ethereum-1/0x9ec749faa086bb604b96bfe02bd49c53cef47ea5/) | ⚠️ Unaudited |
 | eSEK | unknown | ethereum | [`0x0f7f65...d63a23`](./contracts/ethereum-1/0x0f7f6531af9792c9a42e2befced5ed81c0d63a23/) | ⚠️ Unaudited |
 | FetchToken | token | ethereum | 2 deployments: ethereum [`0x031b41...91fa7f`](./contracts/ethereum-1/0x031b41e504677879370e9dbcf937283a8691fa7f/); ethereum `0xaea46a...41ad85` | ⚠️ Unaudited |
+| Gravity | unknown | ethereum | [`0xa4108a...f2d906`](./contracts/ethereum-1/0xa4108aa1ec4967f8b52220a4f7e94a8201f2d906/) | ⚠️ Unaudited |
 | MNW | unknown | ethereum | [`0xd3e4ba...d7f6e4`](./contracts/ethereum-1/0xd3e4ba569045546d09cf021ecc5dfe42b1d7f6e4/) | ⚠️ Unaudited |
 | MNW_tokenswap | token | ethereum | 2 deployments: ethereum [`0x1a226f...b2051a`](./contracts/ethereum-1/0x1a226fefd114ec0fe0ea87bc9d0b371dd2b2051a/); ethereum `0x795826...1e20fe` | ⚠️ Unaudited |
 | MobixToken | token | ethereum | [`0x5311cf...cb9999`](./contracts/ethereum-1/0x5311cf987ad2b8087d7d83efc379d6f916cb9999/) | ⚠️ Unaudited |
@@ -229,7 +226,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [security.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/security.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
 
 ## Coverage Gaps
 
@@ -248,6 +244,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x35e05e...17100d`](./contracts/ethereum-1/0x35e05ea793eb20fe9b75c55bc0c51d8a7017100d/) | Controller | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x72eb0d...25adc3`](./contracts/ethereum-1/0x72eb0df009b8ea2441de78f073338620b625adc3/) | CosmosBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xefb546...680993`](./contracts/ethereum-1/0xefb546ec7babc97af3791033cc3ca1cc1f680993/) | CudosAccessControls | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa4108a...f2d906`](./contracts/ethereum-1/0xa4108aa1ec4967f8b52220a4f7e94a8201f2d906/) | Gravity | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x92feba...7a2c50`](./contracts/ethereum-1/0x92febab0073d48aa600d95d19e579d4a667a2c50/) | Orchestrator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xfb5c68...f77006`](./contracts/ethereum-1/0xfb5c6815ca3ac72ce9f5006869ae67f18bf77006/) | pStake | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb3ccb8...aea97b`](./contracts/ethereum-1/0xb3ccb8fb2533e51893915908ceb85763ceaea97b/) | VestingContract | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -284,7 +281,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: low=1
-- Match method counts: extraction_exact=1
+- Extraction confidence breakdown: n/a
+- Match method counts: n/a
 
 Fork inheritance lineage and inherited audits are included when available.

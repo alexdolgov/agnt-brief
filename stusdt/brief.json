@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stusdt",
-  "generated_at": "2026-05-31T10:42:45.609Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.701Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stusdt",
@@ -61,6 +61,11 @@
     "project_purpose": "stUSDT is a protocol that tokenizes real-world assets (RWA) by allowing users to stake USDT and receive stUSDT, a yield-bearing token. It also provides wrapped (wstUSDT) and unstaking (UnstUSDT) mechanisms to manage staked positions.",
     "relationship_narrative": "The MinterProxy likely manages minting and burning of stUSDT and its derivatives, serving as shared infrastructure for the stUSDT, wstUSDT, and UnstUSDT contracts. These contracts interact to provide a seamless staking and yield-bearing token experience.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 10,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

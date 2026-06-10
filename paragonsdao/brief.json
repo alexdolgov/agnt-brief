@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "paragonsdao",
-  "generated_at": "2026-05-23T12:48:07.778Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:09.183Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "paragonsdao",
     "tier": 0,
@@ -33,10 +33,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 50,
-    "total_audits": 8,
+    "total_audits": 7,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 6227708.19886,
-    "tvl_usd": 6227708.19886,
+    "dl_tvl_usd": 6358988.12876,
+    "tvl_usd": 6358988.12876,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -50,15 +50,20 @@
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 3,
+      "aging": 2,
       "stale": 1,
       "unknown": 4
     }
   },
   "topography": {
-    "project_purpose": "ParagonsDAO is a yield farming protocol on Base that allows users to stake its native token to earn rewards.",
-    "relationship_narrative": "The PDTOFT contract likely serves as the underlying token or a wrapper, while StakedPDT is the staking vault that issues a receipt token. Both contracts are deployed by the same address, indicating a single integrated system.",
+    "project_purpose": "ParagonsDAO is a web3 gaming community/guild with a Base PDT staking/farm component, rather than solely a yield farming protocol.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -155,27 +160,6 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2315,
-      "audit_key": "audit-2315",
-      "report_name": "DL audit link",
-      "report_url": "https://hashlock.com/audits/paragonsdao",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -353,10 +337,6 @@
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 2315,
-        "report_name": "DL audit link"
-      },
       {
         "audit_id": 2317,
         "report_name": "Our Bridge contract was audited by Hashlock. Review the audit [here]().&#x20;"

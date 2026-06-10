@@ -5,8 +5,8 @@
 - Project: ApeX Protocol (`apex-protocol`)
 - Website: [https://omni.apex.exchange/referral?referralCode=T0S8V482](https://omni.apex.exchange/referral?referralCode=T0S8V482)
 - Lifecycle: active (Tier 0, 63.4% below peak)
-- Generated: 2026-06-10T20:38:55.288Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.658Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, ethereum, mantle, optimism, polygon
 - Contract surface: 206 unique implementations (763 raw deployments)
 - DeFi Llama TVL: $36,243,675.00

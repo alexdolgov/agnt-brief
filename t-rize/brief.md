@@ -5,21 +5,22 @@
 - Project: T RIZE (`t-rize`)
 - Website: [https://www.t-rize.io](https://www.t-rize.io)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:53:05.421Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:17.160Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $23,000,000.00
 - On-chain TVL (included contracts): $15,005,448.61
 - TVL by chain: Base $15,005,448.61
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-T RIZE is a protocol for tokenizing real-world assets (RWA), enabling on-chain representation and transfer of off-chain assets. It provides a single token contract on Base that likely represents fractional ownership or claims on underlying real-world assets.
-
-### Architecture
-
-The protocol consists of a single product family with one core token contract; there are no additional families or shared infrastructure to relate.
+T-RIZE is an institutional-grade real-world asset (RWA) tokenization platform/infrastructure. Its broader platform describes tokenization of assets such as bonds, ETFs, funds, real estate, and commodities, including Canton-based infrastructure and decentralized machine-learning enhancements. The currently documented DefiLlama-tracked EVM surface is limited to the RizeToken contract on Base; this should not be interpreted as the entirety of the broader T-RIZE infrastructure or as confirmed evidence of fractional ownership or claims on underlying assets.
 
 ## Audit Coverage Summary
 

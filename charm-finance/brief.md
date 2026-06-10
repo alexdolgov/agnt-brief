@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Charm Finance
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 38.8% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 38.8% over 90 days
 
 ## Project Overview
 
 - Project: Charm Finance (`charm-finance`)
 - Website: [https://www.charm.fi/](https://www.charm.fi/)
-- Lifecycle: unknown (Tier 0, 82% below peak)
-- Generated: 2026-05-24T14:07:26.988Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 0, 82% below peak)
+- Generated: 2026-06-10T20:59:01.392Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: berachain, blast, boba, ethereum, linea, scroll
 - Contract surface: 10 unique implementations (21 raw deployments)
-- DeFi Llama TVL: $2,195,939.00
+- DeFi Llama TVL: $2,343,526.00
 - On-chain TVL (included contracts): $14,217.52
 - TVL by chain: Ethereum $14,217.52
 
 ## Project Description
 
-Charm Finance is a liquidity management protocol that automates concentrated liquidity positions on Uniswap V3-style AMMs. It uses AlphaProVaults to manage user deposits, rebalance ranges, and compound fees to optimize yields.
+Charm Finance is a permissionless liquidity management protocol with both legacy Ethereum V1 products and active V2 AlphaPro vault deployments. Its contracts include vaults and strategy/periphery components for managing concentrated liquidity positions on Uniswap V3-style AMMs, including user deposits, range rebalancing, and fee compounding.
 
 ### Architecture
 
@@ -35,10 +35,10 @@ The protocol consists of a single product family, Charm Finance V2, centered aro
 - Scoreable audits (matched contracts): 4
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/charm/information))
 - ASD (verified + unaudited TVL): $0.00
-- Latest audit: 2025-06 (fresh)
-- Staleness: 1 fresh, 0 aging, 4 stale, 0 unknown
+- Latest audit: 2025-06 (aging)
+- Staleness: 0 fresh, 1 aging, 4 stale, 0 unknown
 - Tier 1 coverage: 50.0% (Code4rena, Spearbit)
-- Note: This protocol is classified as [unknown]. ASD of $0.00 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of $0.00 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -94,7 +94,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Active Bug Bounty Program](https://immunefi.com/bug-bounty/charm/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
-| [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FIM3bniGpiEo24osqeSJ5%2Freport-cantinacode-charm-0604.pdf) | Spearbit | Audit | 2025-06 | fresh | Direct | contract_name | 9 | high |
+| [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FIM3bniGpiEo24osqeSJ5%2Freport-cantinacode-charm-0604.pdf) | Spearbit | Audit | 2025-06 | aging | Direct | contract_name | 9 | high |
 | [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FcDHlWmzrwu3w7pAxW6dG%2FPeckShield-Audit-Report-Charm-v1.0.pdf) | PeckShield | Audit | 2023-06 | stale | Direct | contract_name | 4 | high |
 | [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FLx7bFYx6tcfSpsdqT3jV%2FPeckShield-Audit-Report-Charm-AlphaPro-v1.0.pdf) | PeckShield | Audit | 2022-03 | stale | Direct | contract_name | 9 | high |
 | [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2Fcblzw4RcfNUsNN1dnlPG%2FREP-Charm%20Finance%20Alpha%20Vaults-2021-06-30.pdf) | Code4rena | Contest | 2021-06 | stale | Direct | contract_name | 4 | high |

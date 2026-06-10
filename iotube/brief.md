@@ -7,17 +7,17 @@
 - Project: ioTube (`iotube`)
 - Website: [https://iotube.org](https://iotube.org)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T08:31:39.520Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:06.320Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc, ethereum, polygon
-- Contract surface: 40 unique implementations (97 raw deployments)
+- Contract surface: 39 unique implementations (96 raw deployments)
 - DeFi Llama TVL: $3,291,693.13
 - On-chain TVL (included contracts): $2,232,712.67
 - TVL by chain: Ethereum $1,885,249.34 | Bsc $243,957.22 | Polygon $103,506.11
 
 ## Project Description
 
-ioTube is a cross-chain bridge that enables token transfers between Ethereum, BSC, Polygon, and IoTeX. It uses a lock-and-mint mechanism with MinterPool and TokenSafe contracts to facilitate secure asset movement across chains.
+ioTube is a cross-chain bridge centered on IoTeX that enables token transfers between IoTeX and EVM networks such as Ethereum, BSC, and Polygon using bridge components such as MinterPool and TokenSafe. Avalanche and other network support should be treated as homepage-claimed unless backed by verified contract or TVL evidence in the dataset.
 
 ### Architecture
 
@@ -25,12 +25,12 @@ The chain-specific families (BSC, Ethereum, Polygon) share a common architecture
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/17 (0.0%)
-- Verified + Unaudited implementations: 16
+- Verified implementations audited: 0/16 (0.0%)
+- Verified + Unaudited implementations: 15
 - Verified by bytecode match: 1
 - Unverified implementations: 23
-- Unique implementations: 40
-- Raw deployments: 97
+- Unique implementations: 39
+- Raw deployments: 96
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $2,232,712.67
@@ -49,7 +49,7 @@ The chain-specific families (BSC, Ethereum, Polygon) share a common architecture
 
 - None
 
-### ⚠️ Verified + Unaudited (16)
+### ⚠️ Verified + Unaudited (15)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -65,7 +65,6 @@ The chain-specific families (BSC, Ethereum, Polygon) share a common architecture
 | TransferValidatorWithPayload | unknown | polygon | 4 deployments: ethereum `0xe7eba1...0c59d5`; bsc `0x95c6f6...fc794a`; polygon [`0x86b7a9...6c85b2`](./contracts/polygon-137/0x86b7a9470d93e5ebfd1c099e173bce86196c85b2/); polygon `0x87e2d4...890cd6` | ⚠️ Unaudited |
 | Unwrapper | unknown | polygon | 2 deployments: ethereum `0xedec2d...1b4287`; polygon [`0xc3b3fc...304efe`](./contracts/polygon-137/0xc3b3fcc2df7dbcffbc7fb154eb7d41d6e6304efe/) | ⚠️ Unaudited |
 | VestingManager | operational_periphery | bsc | 2 deployments: bsc [`0x31603c...00b001`](./contracts/bsc-56/0x31603c352dcb06e5973afcf7d831824e4900b001/); bsc `0x668b60...3baae0` | ⚠️ Unaudited |
-| WETH9 | token | ethereum | [`0xc02aaa...756cc2`](./contracts/ethereum-1/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/) | ⚠️ Unaudited |
 | WIOTXUnwrapper | unknown | ethereum | [`0xc05157...3eb894`](./contracts/ethereum-1/0xc051572665a00d55a534f6483b906297613eb894/) | ⚠️ Unaudited |
 | WitnessList | unknown | bsc | 5 deployments: ethereum `0x8598df...0ad83f`; bsc [`0x1e58ca...292c17`](./contracts/bsc-56/0x1e58ca53d90fe9b37f7f6aeb548b4bc7c6292c17/); bsc `0x2f1a0b...c2aed2`; bsc `0x811941...a1ee3f`; polygon [`0x1e58ca...292c17`](./contracts/polygon-137/0x1e58ca53d90fe9b37f7f6aeb548b4bc7c6292c17/) | ⚠️ Unaudited |
 | XCashier | unknown | polygon | 2 deployments: ethereum `0xe58997...24006b`; polygon [`0x6ccf30...3fc8db`](./contracts/polygon-137/0x6ccf305a21defff295e616ba5aa423eb563fc8db/) | ⚠️ Unaudited |
@@ -148,7 +147,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 39 |
 | upstream | 0 |
-| standard_library | 1 |
+| standard_library | 0 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

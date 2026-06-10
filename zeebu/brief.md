@@ -7,17 +7,17 @@
 - Project: Zeebu (`zeebu`)
 - Website: [https://www.zeebu.com/](https://www.zeebu.com/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-23T15:49:54.279Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:19.482Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, ethereum
 - Contract surface: 8 unique implementations (16 raw deployments)
-- DeFi Llama TVL: $5,392,905.27
+- DeFi Llama TVL: $5,210,326.35
 - On-chain TVL (included contracts): $87,874,707.29
 - TVL by chain: Base $52,362,720.01 | Ethereum $35,511,987.28
 
 ## Project Description
 
-Zeebu is a DeFi protocol that provides a token (ZeebuToken) and a voting escrow mechanism for token locking and governance. It operates on Ethereum and Base, enabling users to stake tokens and participate in protocol decisions.
+Zeebu is a blockchain-based B2B/neobank settlement platform for telecom carriers that uses the ZBU token as a loyalty and settlement token. The reviewed contract surface includes ZBU token deployments, voting-escrow/token-locking related contracts, Lens periphery contracts, and Launchpad contracts on Ethereum and Base; staking and voting-escrow functionality should be described as associated contract functionality rather than the core project purpose. DefiLlama also currently lists Binance/BSC staking activity for Zeebu, so any Ethereum/Base-only review should explicitly state that Binance/BSC staking is excluded from the covered contract surface.
 
 ### Architecture
 

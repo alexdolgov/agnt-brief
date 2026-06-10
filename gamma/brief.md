@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Gamma
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 24.2% over 90 days
-
 ## Project Overview
 
 - Project: Gamma (`gamma`)
 - Website: [https://www.gamma.xyz](https://www.gamma.xyz)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T08:08:17.848Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:04.207Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, berachain, blast, bsc, celo, ethereum, fantom, gnosis, kava, linea, manta, mantle, metis, mode, moonbeam, optimism, polygon, polygon-zkevm, scroll, sonic, unichain
 - Contract surface: 467 unique implementations (2560 raw deployments)
 - DeFi Llama TVL: $3,713,256.19
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Gamma is a decentralized liquidity management protocol that optimizes Uniswap V3 positions through automated vaults (Hypervisors) and provides limit order functionality. It also features a governance token (GAMMA) and a staking derivative (xGAMMA) for fee distribution.
+Gamma is an active concentrated-liquidity and market-making protocol offering V1 pooled vaults and V2 vaults for automated liquidity management, tools for creating Uniswap V4 LP vaults, limit order book functionality, Perp Vaults, Merkl incentives, and related liquidity infrastructure. It also includes the GAMMA governance token and xGAMMA staking derivative for fee distribution.
 
 ### Architecture
 
@@ -25,38 +23,35 @@ The Token family's GAMMA and xGAMMA tokens are used within the Gamma family's Mu
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 31/105 (29.5%)
-- Verified + Unaudited implementations: 62
+- Verified implementations audited: 29/105 (27.6%)
+- Verified + Unaudited implementations: 64
 - Verified by bytecode match: 15
 - Unverified implementations: 362
 - Unique implementations: 467
 - Raw deployments: 2560
-- Audits discovered: 30
-- Scoreable audits (matched contracts): 9
+- Audits discovered: 16
+- Scoreable audits (matched contracts): 8
 - ASD (verified + unaudited TVL): $24,284.66
 - Latest audit: 2026-03 (fresh)
-- Staleness: 2 fresh, 8 aging, 10 stale, 10 unknown
-- Tier 1 coverage: 4.8% (ConsenSys Diligence, OpenZeppelin)
-- Note: This protocol is classified as [declining]. ASD of $24,284.66 represents exposure in a protocol with declining activity.
+- Staleness: 2 fresh, 6 aging, 5 stale, 3 unknown
+- Tier 1 coverage: 1.9% (ConsenSys Diligence)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
 | unknown | Tier 2 | 29 | 27.6% | 2026-03 |
-| OpenZeppelin | Tier 1 | 3 | 2.9% | 2024-10 |
 | Consensys Diligence | Tier 1 | 2 | 1.9% | 2022-02 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (28)
+### ✅ Verified + Audited (26)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | ClearingV3 | unknown | bsc | 3 deployments: bsc [`0x67c676...863710`](./contracts/bsc-56/0x67c676bbe4a8087a16b38ed9254c6f49ce863710/); bsc `0xba4335...c273c7`; berachain `0xe8d5de...9f497d` | ✅ Audited |
 | ClearingV3NFPM | unknown | avalanche | 4 deployments: avalanche [`0x27cf9c...ee9375`](./contracts/avalanche-43114/0x27cf9c13de312a077d991e8bc5e4e6e6c2ee9375/); avalanche `0x8e6249...1997f8`; avalanche `0xd42096...6197c3`; berachain `0xbb0433...fe268c` | ✅ Audited |
 | DepositLogic | unknown | polygon | 5 deployments: bsc `0x53d601...a03ca2`; unichain `0x831642...fecbd4`; unichain `0x9224a2...c8dbc7`; polygon [`0x536f96...c04656`](./contracts/polygon-137/0x536f968424060d516a82c646e1a2c703a3c04656/); base `0x5d1b42...7fd298` | ✅ Audited |
-| GammaLens | periphery | berachain | 3 deployments: berachain [`0x27ffa4...0e8660`](./contracts/berachain-80094/0x27ffa4221a52b02ecc67c5b199007010b90e8660/); berachain `0x2dbafd...87715f`; berachain `0xba1af4...4bc858` | ✅ Audited |
 | Hypervisor | unknown | metis | 233 deployments: ethereum `0x033d2e...bf2143`; ethereum `0x33412f...31dbb4`; ethereum `0x336d7e...cf146f`; ethereum `0x34b954...7a2b28`; ethereum `0x388a39...98e22c`; ethereum `0x39b96f...16013c`; ethereum `0x3f805d...9ce953`; ethereum `0x46b760...82aca3`; ethereum `0x4d7f0f...d0c832`; ethereum `0x51bbf7...808865`; ethereum `0x55eed1...76da7b`; ethereum `0x586880...f8ef13`; ethereum `0x5d40e4...493b74`; ethereum `0x5e6c48...f11660`; ethereum `0x64fcdd...3d4efb`; ethereum `0x704ece...c01dbe`; ethereum `0x85a532...dc6b37`; ethereum `0x85cbed...a8a70c`; ethereum `0x8cd73c...4e77f1`; ethereum `0x96a8ba...4d6d75`; ethereum `0x96c105...97c085`; ethereum `0xa1c739...26daa5`; ethereum `0xa625ea...a5c276`; ethereum `0xac571c...b1d02f`; ethereum `0xb542f4...09f5fa`; ethereum `0xbe51c2...3a0ce6`; ethereum `0xc86b1e...bc1153`; ethereum `0xd29a17...70857a`; ethereum `0xe065ff...d57ba1`; ethereum `0xebae3c...b98659`; ethereum `0xee768e...0352b5`; ethereum `0xf00fa5...58fa7f`; ethereum `0xf0a9f5...b29bca`; ethereum `0xf178d8...ce41c5`; ethereum `0xf19f91...81a458`; ethereum `0xf402ce...adbd9b`; ethereum `0xf6eeca...c7927c`; ethereum `0xf94431...06920f`; bsc `0x62b249...974bfd`; gnosis `0x055522...c068b9`; gnosis `0x116dee...d1b0c3`; gnosis `0x216d3d...416ebb`; gnosis `0x2577d8...800691`; gnosis `0x31547c...8bd607`; gnosis `0x447643...d397d9`; gnosis `0x47e385...4a7c38`; gnosis `0x6d257b...da5aa7`; gnosis `0x7ec87b...ef91c1`; gnosis `0x7eccd6...8fbcce`; gnosis `0x8be859...28e262`; gnosis `0x8f249c...785f1d`; gnosis `0xcf4a87...f7ab93`; gnosis `0xd3c480...28a7f0`; gnosis `0xdb7608...b3bc34`; gnosis `0xf1ac4c...e037ec`; gnosis `0xf66da0...b40578`; polygon `0x9ca705...ae9151`; sonic `0x2ea8a8...927cbc`; sonic `0x2fa5e2...203aa4`; sonic `0x2fcc0d...36a46f`; sonic `0x318e37...ae7cfc`; sonic `0x392aeb...40a596`; sonic `0x3cf539...ce11a1`; sonic `0x447643...d397d9`; sonic `0x6d257b...da5aa7`; sonic `0x6e9d70...4cbb4c`; sonic `0x9d4472...359ffa`; sonic `0xbbcd75...110a3b`; sonic `0xbc7d3b...c574e2`; sonic `0xbd3332...fe26be`; sonic `0xc225fa...9e4dfe`; sonic `0xc9ae8d...33caa7`; sonic `0xcc8657...f06bb9`; sonic `0xe44536...fd3cbb`; sonic `0xf0cecc...205342`; sonic `0xffd2e5...2aaa2d`; manta `0x020dc3...394a05`; manta `0x099dd2...6cc182`; manta `0x0d8f8e...4a380f`; manta `0x0e854c...89664d`; manta `0x22c0e5...5baf71`; manta `0x258d48...b200f2`; manta `0x279560...e4c499`; manta `0x2eab29...85ca37`; manta `0x2fface...27973d`; manta `0x4850d9...2a7326`; manta `0x5accda...f04501`; manta `0x67a79c...163a9d`; manta `0x6c3846...297717`; manta `0x6d5c54...5cd683`; manta `0x78727b...692279`; manta `0x89bd07...493344`; manta `0x91fa32...8eb698`; manta `0x98a694...4418b2`; manta `0x9d4472...359ffa`; manta `0x9e8244...c94644`; manta `0xa6e267...d32319`; manta `0xb833e6...6ffef2`; manta `0xbbcd75...110a3b`; manta `0xc40f63...e90702`; manta `0xc47812...7fd581`; manta `0xd2dfbc...0511b6`; manta `0xdf0b9b...dd54c4`; manta `0xe75490...bd68e1`; manta `0xf0cecc...205342`; metis [`0x015b8a...3dbaff`](./contracts/metis-1088/0x015b8a7698148271dc95635e32a6a76d723dbaff/); metis `0x055522...c068b9`; metis `0x1f54f4...097b7a`; metis `0x317a0d...d890c0`; metis `0x343ca5...7f26a2`; metis `0x3d2277...9fdf09`; metis `0x447643...d397d9`; metis `0x6d257b...da5aa7`; metis `0x711fa5...21c31e`; metis `0x7eccd6...8fbcce`; metis `0xa6b3ce...8473ad`; metis `0xcd5a60...70f2c8`; metis `0xdb7608...b3bc34`; moonbeam `0x01710a...fbc61e`; moonbeam `0x05d5b6...07e37f`; moonbeam `0x15f0b8...bc073d`; moonbeam `0x1a7ce3...bdd404`; moonbeam `0x1c1dbd...90b0cc`; moonbeam `0x1e86a5...3286f6`; moonbeam `0x2a0785...3efba1`; moonbeam `0x2eab29...85ca37`; moonbeam `0x3273c1...b2c7e5`; moonbeam `0x382065...fdea4c`; moonbeam `0x3fbefe...b3d120`; moonbeam `0x3fe6f2...4d6f15`; moonbeam `0x5ac782...b5e9be`; moonbeam `0x683292...161300`; moonbeam `0x77a2af...b9493a`; moonbeam `0x7bfb66...75699e`; moonbeam `0x7e1c83...6860c9`; moonbeam `0x824c2e...b22451`; moonbeam `0x8cacde...528cac`; moonbeam `0xa35377...fae691`; moonbeam `0xa6e267...d32319`; moonbeam `0xa79d88...638485`; moonbeam `0xb11bcb...f13286`; moonbeam `0xb5db9a...f92224`; moonbeam `0xb692b0...55a0c5`; moonbeam `0xc01f26...e85eed`; moonbeam `0xc27ddd...099881`; moonbeam `0xc62697...85ef39`; moonbeam `0xc91ed9...6786ab`; moonbeam `0xc9591e...64150d`; moonbeam `0xcc8657...f06bb9`; moonbeam `0xd2dfbc...0511b6`; moonbeam `0xe34379...beb079`; moonbeam `0xf9adaa...26baaa`; moonbeam `0xfc13eb...153621`; mantle `0x1ee3ae...6726ad`; mantle `0x2e18b8...95b96c`; mantle `0x561f5c...9270ee`; mantle `0x6e9d70...4cbb4c`; mantle `0x753325...388b1a`; mantle `0xa18d30...41da2f`; mantle `0xc01f26...e85eed`; mantle `0xd6cc4a...25f517`; mantle `0xde7421...783922`; mantle `0xf44cec...812ead`; mantle `0xf8a024...d729ca`; mantle `0xfe4bb9...510c66`; mode `0x139269...38d1b8`; mode `0x2fcc0d...36a46f`; mode `0x6d257b...da5aa7`; mode `0x7eccd6...8fbcce`; mode `0xbc7d3b...c574e2`; mode `0xd6cc4a...25f517`; mode `0xf3b112...0d4f60`; mode `0xf44cec...812ead`; celo `0x1e2d8f...df35dd`; celo `0x22ae0d...990b1f`; celo `0x34c14d...09068e`; celo `0x5eeca9...2afbf2`; celo `0x6002d7...c31908`; celo `0x789bc4...7da1e1`; celo `0x897d90...bf605c`; celo `0xc9a3ee...3ce187`; celo `0xe34379...beb079`; celo `0xfb3a24...896167`; avalanche `0x11c401...47853d`; avalanche `0x1e86a5...3286f6`; avalanche `0x2a0785...3efba1`; avalanche `0x38f611...57b35f`; avalanche `0xc27ddd...099881`; avalanche `0xc91ed9...6786ab`; avalanche `0xfc13eb...153621`; berachain `0x06895d...c547b8`; berachain `0x08c0fe...a84481`; berachain `0x1559d1...392e55`; berachain `0x31547c...8bd607`; berachain `0x57c41f...38af85`; berachain `0x7a58c0...c9e5b2`; berachain `0x7d4506...4d0ef5`; berachain `0x7ef5e8...2e51cc`; berachain `0x829432...a39d86`; berachain `0x8be859...28e262`; berachain `0xb5d462...986e90`; berachain `0xc88699...937486`; berachain `0xcffbfd...560d35`; berachain `0xecfa9c...993f17`; berachain `0xf2ed3e...fcbf8c`; blast `0x016fcf...a9a593`; blast `0x1de562...78693a`; blast `0x1ee3ae...6726ad`; blast `0x20be92...e5f92f`; blast `0x3dae80...fbeb2e`; blast `0x3f0395...8aee4f`; blast `0x4c8e32...733dff`; blast `0x4cf9a2...d60f3d`; blast `0x66f82e...f03a5b`; blast `0x74584d...609be5`; blast `0x753325...388b1a`; blast `0x7d4506...4d0ef5`; blast `0x7e35e1...8af150`; blast `0x7ec87b...ef91c1`; blast `0x8ef383...4bf9b6`; blast `0x98a694...4418b2`; blast `0x9e7cf4...8fec4a`; blast `0xa35377...fae691`; blast `0xb5f3a1...d24691`; blast `0xb65372...be3120`; blast `0xc62697...85ef39`; blast `0xd6cc4a...25f517`; blast `0xe76796...98be6e`; blast `0xe7b226...176a49`; blast `0xe7db86...9cde7d`; blast `0xecfa9c...993f17`; blast `0xf8a024...d729ca`; blast `0xf9f1ac...ba2918` | ✅ Audited |
 | HypervisorFactory | registry | ethereum | 3 deployments: ethereum [`0x33d306...b7f514`](./contracts/ethereum-1/0x33d3067516783bc8391c1833877bb2cb6eb7f514/); ethereum `0x9b737f...03e4e3`; ethereum `0xd12fa3...860929` | ✅ Audited |
 | HypervisorNFPM | unknown | berachain | 18 deployments: avalanche `0x22e5fe...a630df`; avalanche `0x337518...775340`; avalanche `0x37937d...89fd54`; avalanche `0x45ef94...f74b34`; avalanche `0x5b8ba3...b35329`; avalanche `0x5dfdb2...cf5b99`; avalanche `0x7abf35...19bc1f`; avalanche `0x90872e...ce1d39`; avalanche `0x91bc75...5ab053`; avalanche `0x98c7ee...3da625`; avalanche `0xb8fb40...bf41e2`; avalanche `0xbd5b93...662e4f`; avalanche `0xd173f8...de4358`; avalanche `0xe058e1...e07ddc`; berachain [`0x00f262...d2fd49`](./contracts/berachain-80094/0x00f26251d7079ff8825b98d6bd66936ebbd2fd49/); berachain `0x38379b...9d66fa`; berachain `0x9d2ef0...1ef352`; berachain `0xc21a11...1a9f3f` | ✅ Audited |
@@ -77,12 +72,11 @@ The Token family's GAMMA and xGAMMA tokens are used within the Gamma family's Mu
 | Swap | unknown | blast | 6 deployments: blast [`0x2fcc0d...36a46f`](./contracts/blast-81457/0x2fcc0d25c4cd2084e402c16db68fbe206a36a46f/); blast `0x961605...24f77e`; blast `0xbc7d3b...c574e2`; blast `0xc225fa...9e4dfe`; blast `0xf14fb9...61e6fc`; blast `0xf3eb61...e0c0d6` | ✅ Audited |
 | TickLibrary | unknown | base | 7 deployments: unichain `0x47cf9e...127dee`; unichain `0xd37bcc...62dc2a`; base [`0x3e79a7...17b081`](./contracts/base-8453/0x3e79a7d0115f3d17e2901b19363ae403ed17b081/); base `0xa566a5...d92253`; base `0xc0148b...551158`; base `0xc0c06e...602560`; arbitrum `0x4db406...1e28ef` | ✅ Audited |
 | TokenLaunchFactory | registry | unichain | 17 deployments: unichain [`0x0d8e04...a34ae9`](./contracts/unichain-130/0x0d8e0485d36dc35529cf785fce8789be88a34ae9/); unichain `0x36ab82...d0aa8f`; unichain `0x3ef8cf...b0207a`; unichain `0x45d1f7...d2140e`; unichain `0x524fa2...32feac`; unichain `0x58c39e...83c1b3`; unichain `0x738e67...085404`; unichain `0x82c7c4...79c98c`; unichain `0xad5466...002e63`; unichain `0xbcb33f...6b0309`; unichain `0xc511ae...8a9334`; unichain `0xc82178...c9a178`; unichain `0xc83ae8...73cbfb`; unichain `0xc8ba92...830800`; unichain `0xcf1948...dc7a60`; unichain `0xd8f395...154b54`; unichain `0xefff76...bf2ba5` | ✅ Audited |
-| TransparentUpgradeableProxy | proxy | mantle | 56 deployments: mantle [`0x013351...a2a5ea`](./contracts/mantle-5000/0x01335163aca394fda985cf578882d544efa2a5ea/); mantle `0x02a009...16a29e`; mantle `0x0be15c...3b9f30`; mantle `0x1559d1...392e55`; mantle `0x1ae685...5490e9`; mantle `0x1f7792...d57f4f`; mantle `0x2687aa...8c36c7`; mantle `0x3ce4ee...72b11f`; mantle `0x4cb8b7...108863`; mantle `0x4dac86...e01c61`; mantle `0x5778df...4e02d0`; mantle `0x66a5d4...6d6785`; mantle `0x745cc8...b0c298`; mantle `0x808b93...b0710f`; mantle `0x85324d...e1da17`; mantle `0x94fa35...652094`; mantle `0x9789b7...d15e27`; mantle `0xa99945...18a3d9`; mantle `0xac9a83...8be6e8`; mantle `0xad039a...a97bbd`; mantle `0xb8e819...4370d6`; mantle `0xbd9a81...a01f3d`; mantle `0xc491c1...fce4ce`; mantle `0xcaadc3...f89361`; mantle `0xccb87b...609d6c`; mantle `0xcec206...4d85e3`; mantle `0xcfb62e...e39a71`; mantle `0xdb340b...f52cd6`; mantle `0xe49e28...3ed537`; mantle `0xe7f55c...fcff5d`; mantle `0xf740c9...6111bd`; mantle `0xf8e668...54c712`; mantle `0xfb877e...2019fc`; mantle `0xfcf203...21a1e5`; mantle `0xff8fae...cf45bd`; avalanche `0x03ae90...4a08cb`; avalanche `0x1983ac...ac3ba3`; avalanche `0x1e9792...65e5e0`; avalanche `0x1efb5d...bffc22`; avalanche `0x1f1ca4...ad123e`; avalanche `0x30e5c7...d2f174`; avalanche `0x562c87...504dc1`; avalanche `0x5a424f...ee0b0d`; avalanche `0x78727b...692279`; avalanche `0x7ef5e8...2e51cc`; avalanche `0x8a29a9...f38f38`; avalanche `0x8f88f9...59f8a1`; avalanche `0x976861...84a593`; avalanche `0x9d8d8b...39d967`; avalanche `0xa45f03...d47c4d`; avalanche `0xa57901...b1b148`; avalanche `0xbaaa5a...89d6fe`; avalanche `0xbe9f34...bc3426`; avalanche `0xcc65ab...f54dc3`; avalanche `0xcfbeca...a86834`; avalanche `0xfa3004...c80545` | ✅ Audited |
 | UniProxyETH | unknown | avalanche | 7 deployments: bsc `0x7c4891...b8a25c`; bsc `0xc1835b...9bbb1a`; avalanche [`0x01b6f0...ab6177`](./contracts/avalanche-43114/0x01b6f06e499340b83b54fba483b15b54e9ab6177/); avalanche `0x20940e...ea5528`; avalanche `0x521916...450129`; berachain `0x2687aa...8c36c7`; berachain `0xc62697...85ef39` | ✅ Audited |
 | UniProxyV2 | unknown | arbitrum | [`0xb5d3e1...fe6e40`](./contracts/arbitrum-42161/0xb5d3e19f67aee18bce0533b8304debfd06fe6e40/) | ✅ Audited |
 | WithdrawLogic | operational_periphery | base | 5 deployments: bsc `0x675d7d...c97974`; unichain `0xb8e045...e4362a`; unichain `0xee5889...efacfd`; polygon `0x883135...81c0d8`; base [`0x150111...4148c3`](./contracts/base-8453/0x15011164801305a7621c0e4eed4dd97b504148c3/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (62)
+### ⚠️ Verified + Unaudited (64)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -101,6 +95,7 @@ The Token family's GAMMA and xGAMMA tokens are used within the Gamma family's Mu
 | Extract | unknown | ethereum | 10 deployments: ethereum [`0x34276e...0e2b94`](./contracts/ethereum-1/0x34276e77b599977fb20752d02f0c1708710e2b94/); ethereum `0x468281...e96f79`; ethereum `0x71ffa5...d8cd05`; ethereum `0x898fa6...f73086`; ethereum `0x9575fa...508b0b`; ethereum `0xb2219a...7d312b`; ethereum `0xd28c2e...4a7c18`; ethereum `0xd338d8...903e6a`; ethereum `0xf367c8...f5c72f`; ethereum `0xfbceac...e0ac64` | ⚠️ Unaudited |
 | FeeRecipientV2 | operational_periphery | sonic | 12 deployments: sonic [`0x074361...da1d64`](./contracts/sonic-146/0x0743618e342f4351890e81f6815f75753cda1d64/); sonic `0x216d3d...416ebb`; sonic `0x65ac62...26680b`; sonic `0x824161...6be059`; sonic `0x8cb79d...d452ff`; sonic `0xcfd4a6...0876a8`; sonic `0xe8a656...552524`; avalanche `0x9df9f7...3e97b7`; avalanche `0xaabc1c...3f476c`; avalanche `0xfb92d3...bf2671`; berachain `0x20da82...50679a`; berachain `0x8f88f9...59f8a1` | ⚠️ Unaudited |
 | Gamma | unknown | ethereum | 2 deployments: ethereum [`0x6bea7c...44e197`](./contracts/ethereum-1/0x6bea7cfef803d1e3d5f7c0103f7ded065644e197/); ethereum `0x8a539c...ed793a` | ⚠️ Unaudited |
+| GammaLens | periphery | berachain | 3 deployments: berachain [`0x27ffa4...0e8660`](./contracts/berachain-80094/0x27ffa4221a52b02ecc67c5b199007010b90e8660/); berachain `0x2dbafd...87715f`; berachain `0xba1af4...4bc858` | ⚠️ Unaudited |
 | IncentiveMaker | unknown | berachain | [`0x2fa5e2...203aa4`](./contracts/berachain-80094/0x2fa5e2e2a49de9375047225b7cea4997e8203aa4/) | ⚠️ Unaudited |
 | InitialDepositLens | periphery | bsc | 46 deployments: bsc [`0x049a72...bdf734`](./contracts/bsc-56/0x049a72032a08409712268aae1bd6f0a118bdf734/); unichain `0x1a5a1d...55c214`; unichain `0x1d37f4...c78f24`; unichain `0x24036d...f5d419`; unichain `0x2a9e31...05a4b1`; unichain `0x2aa019...8352c9`; unichain `0x2ab862...934aa9`; unichain `0x34624f...1d1013`; unichain `0x3c80d8...e22985`; unichain `0x4c3eef...53aa98`; unichain `0x4cfcc8...a7728c`; unichain `0x4f90d0...8252eb`; unichain `0x505aad...d09947`; unichain `0x52122d...b4d11d`; unichain `0x617582...84f4c9`; unichain `0x6b6741...89fc01`; unichain `0x71e852...ad4c28`; unichain `0x74efd7...07394f`; unichain `0x780ccc...c05c8c`; unichain `0x7d99bd...69c1f3`; unichain `0x86fa3e...acbf37`; unichain `0x8715d5...9cd0e7`; unichain `0x9293c5...e9c7f6`; unichain `0x99cbec...31cd36`; unichain `0x9dcf01...f1ea6a`; unichain `0xa3362a...983ca7`; unichain `0xa7cc89...4b5d1b`; unichain `0xaa5371...66eeb0`; unichain `0xb0a17c...99a7fc`; unichain `0xb51fca...218160`; unichain `0xb824bf...741e12`; unichain `0xbad1d2...0f1048`; unichain `0xbe0067...b805b5`; unichain `0xc40425...44911b`; unichain `0xd83524...d4961e`; unichain `0xdf9b14...6259cf`; unichain `0xe19057...a039ed`; unichain `0xe270e4...cdb708`; unichain `0xe2a639...6a26c8`; unichain `0xe5f396...138b90`; unichain `0xe70845...0a398a`; unichain `0xebf162...8d8cdc`; unichain `0xedb74b...0ed907`; unichain `0xf9873f...8489b7`; polygon `0x56dbae...718d0a`; base `0xa23eca...5bc912` | ⚠️ Unaudited |
 | InitialDepositLensLogic | periphery | polygon | 5 deployments: bsc `0xba0fe0...52741e`; unichain `0xa40565...101ded`; unichain `0xbc19e5...970e70`; polygon [`0x428ded...ef7091`](./contracts/polygon-137/0x428dedf862f5c05f5813efa5ef54d28cc1ef7091/); base `0x9e3360...fa8d24` | ⚠️ Unaudited |
@@ -132,6 +127,7 @@ The Token family's GAMMA and xGAMMA tokens are used within the Gamma family's Mu
 | TokenLaunchFactoryV2 | registry | unichain | 4 deployments: unichain [`0x2cef90...3b459b`](./contracts/unichain-130/0x2cef90b7cf69eb016af4781423e11136903b459b/); unichain `0x39a343...27eb65`; unichain `0x63d381...ea6a15`; unichain `0xd8f7b6...8ae689` | ⚠️ Unaudited |
 | TokenLaunchFactoryV3 | registry | unichain | 9 deployments: unichain [`0x1e3b4c...d779f8`](./contracts/unichain-130/0x1e3b4cecfa5c05fa74bdf281dfd6e368c9d779f8/); unichain `0x36589d...498283`; unichain `0x834370...f84af3`; unichain `0x992d09...42132c`; unichain `0x9f2fc3...32ad57`; unichain `0xb4e882...32d727`; unichain `0xe3c927...a6d8bb`; unichain `0xf4f9c8...de7219`; unichain `0xf92aea...f2f09a` | ⚠️ Unaudited |
 | TokenVestingFactoryDeployer | operational_periphery | unichain | 14 deployments: unichain [`0x1435dd...6d7297`](./contracts/unichain-130/0x1435ddc2c8fa2400aeb94a270bf89c7f306d7297/); unichain `0x1b1d73...122fa5`; unichain `0x2eb852...32f854`; unichain `0x3faead...f04b26`; unichain `0x429de3...e8195c`; unichain `0x46cf7b...9c077e`; unichain `0x53b115...93b4b0`; unichain `0x6075c4...1dc7ae`; unichain `0x67b5e8...b98de8`; unichain `0x6ddf6a...e3344e`; unichain `0xadaab6...f76639`; unichain `0xb34818...603202`; unichain `0xb63eaa...9029b0`; unichain `0xeb1438...35d712` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | mantle | 56 deployments: mantle [`0x013351...a2a5ea`](./contracts/mantle-5000/0x01335163aca394fda985cf578882d544efa2a5ea/); mantle `0x02a009...16a29e`; mantle `0x0be15c...3b9f30`; mantle `0x1559d1...392e55`; mantle `0x1ae685...5490e9`; mantle `0x1f7792...d57f4f`; mantle `0x2687aa...8c36c7`; mantle `0x3ce4ee...72b11f`; mantle `0x4cb8b7...108863`; mantle `0x4dac86...e01c61`; mantle `0x5778df...4e02d0`; mantle `0x66a5d4...6d6785`; mantle `0x745cc8...b0c298`; mantle `0x808b93...b0710f`; mantle `0x85324d...e1da17`; mantle `0x94fa35...652094`; mantle `0x9789b7...d15e27`; mantle `0xa99945...18a3d9`; mantle `0xac9a83...8be6e8`; mantle `0xad039a...a97bbd`; mantle `0xb8e819...4370d6`; mantle `0xbd9a81...a01f3d`; mantle `0xc491c1...fce4ce`; mantle `0xcaadc3...f89361`; mantle `0xccb87b...609d6c`; mantle `0xcec206...4d85e3`; mantle `0xcfb62e...e39a71`; mantle `0xdb340b...f52cd6`; mantle `0xe49e28...3ed537`; mantle `0xe7f55c...fcff5d`; mantle `0xf740c9...6111bd`; mantle `0xf8e668...54c712`; mantle `0xfb877e...2019fc`; mantle `0xfcf203...21a1e5`; mantle `0xff8fae...cf45bd`; avalanche `0x03ae90...4a08cb`; avalanche `0x1983ac...ac3ba3`; avalanche `0x1e9792...65e5e0`; avalanche `0x1efb5d...bffc22`; avalanche `0x1f1ca4...ad123e`; avalanche `0x30e5c7...d2f174`; avalanche `0x562c87...504dc1`; avalanche `0x5a424f...ee0b0d`; avalanche `0x78727b...692279`; avalanche `0x7ef5e8...2e51cc`; avalanche `0x8a29a9...f38f38`; avalanche `0x8f88f9...59f8a1`; avalanche `0x976861...84a593`; avalanche `0x9d8d8b...39d967`; avalanche `0xa45f03...d47c4d`; avalanche `0xa57901...b1b148`; avalanche `0xbaaa5a...89d6fe`; avalanche `0xbe9f34...bc3426`; avalanche `0xcc65ab...f54dc3`; avalanche `0xcfbeca...a86834`; avalanche `0xfa3004...c80545` | ⚠️ Unaudited |
 | UERC20Factory | registry | unichain | [`0xdf15f1...745be1`](./contracts/unichain-130/0xdf15f1ebd814a6eb2bb5bc9582cd1580b1745be1/) | ⚠️ Unaudited |
 | UnilaunchBuybackDeployer | unknown | unichain | 5 deployments: unichain [`0x1f76d3...d846e8`](./contracts/unichain-130/0x1f76d32f063dd393bd4c3d0e179c5806b7d846e8/); unichain `0x4bc041...69c290`; unichain `0x65e29e...6286fc`; unichain `0xb38205...aa38ce`; unichain `0xcfdc82...93754c` | ⚠️ Unaudited |
 | UnilaunchCallOptionFactoryDeployer | registry | unichain | 5 deployments: unichain [`0x14e8cf...4f3cb7`](./contracts/unichain-130/0x14e8cf6d5d1e83416a1984a5240105653a4f3cb7/); unichain `0x87ffe8...59dbf1`; unichain `0xa22cf8...8a2aa3`; unichain `0xe49240...9f8b30`; unichain `0xef692a...f4c641` | ⚠️ Unaudited |
@@ -559,28 +555,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Gamma_LimitOrders_Report.pdf](https://github.com/GammaStrategies/gamma-univ4-limit-order-hook/blob/main/audits/Gamma_LimitOrders_Report.pdf) | unknown | Audit | 2025-04 | aging | Direct | contract_name | 99 | high |
 | [report-competition-gamma.pdf](https://github.com/GammaStrategies/gamma-univ4-limit-order-hook/blob/main/audits/report-competition-gamma.pdf) | unknown | Audit | 2025-05 | aging | Direct | contract_name | 242 | medium |
 | [Gamma_Gamma_MultiPositionManager_report.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/audits/Gamma_Gamma_MultiPositionManager_report.pdf) | unknown | Audit | 2026-03 | fresh | Direct | contract_name | 215 | high |
-| [2017-03.md (also discovered via alternate URL)](https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2017-03.md) | OpenZeppelin | Audit | 2017-03 | stale | Direct | n/a | 0 | n/a |
-| [2018-10.pdf (also discovered via alternate URL)](https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2018-10.pdf) | OpenZeppelin | Audit | 2018-10 | stale | Direct | n/a | 0 | n/a |
-| [2022-10-Checkpoints.pdf (also discovered via alternate URL)](https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2022-10-Checkpoints.pdf) | OpenZeppelin | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
 | [2022-10-ERC4626.pdf (also discovered via alternate URL)](https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2022-10-ERC4626.pdf) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
-| [2023-05-v4.9.pdf (also discovered via alternate URL)](https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2023-05-v4.9.pdf) | OpenZeppelin | Audit | 2023-05 | stale | Direct | contract_name|n/a | 85 | high |
-| [2023-10-v5.0.pdf (also discovered via alternate URL)](https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2023-10-v5.0.pdf) | OpenZeppelin | Audit | 2023-10 | stale | Direct | n/a | 0 | n/a |
-| [2024-10-v5.1.pdf (also discovered via alternate URL)](https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2024-10-v5.1.pdf) | OpenZeppelin | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
-| [README.md (also discovered via alternate URL)](https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/README.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [DRAFT_ABDK_audit_periphery_universal_router.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/audits/DRAFT_ABDK_audit_periphery_universal_router.pdf) | ABDK | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
 | [DRAFT_Spearbit_audit_periphery.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/audits/DRAFT_Spearbit_audit_periphery.pdf) | Spearbit | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
-| [OpenZeppelin_audit_periphery_universal_router.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/audits/OpenZeppelin_audit_periphery_universal_router.pdf) | OpenZeppelin | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
 | [ABDKAudit.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/permit2/audits/ABDKAudit.pdf) | ABDK | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
 | [Chainsecurity Audit.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/permit2/audits/Chainsecurity%20Audit.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [v6-Fixed-Point-Solutions.pdf (also discovered via alternate URL)](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/permit2/lib/solmate/audits/v6-Fixed-Point-Solutions.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Known_Effects_of_Hook_Permissions.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/security/Known_Effects_of_Hook_Permissions.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [DRAFT_ABDK_audit_core.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/security/audits/DRAFT_ABDK_audit_core.pdf) | ABDK | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
-| [DRAFT_Certora_audit_core.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Certora_audit_core.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [DRAFT_Spearbit_audit_core.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Spearbit_audit_core.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [OpenZeppelin_audit_core.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/security/audits/OpenZeppelin_audit_core.pdf) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [TrailOfBits_audit_core.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/security/audits/TrailOfBits_audit_core.pdf) | Trail of Bits | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [whitepaper-v4.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-v4.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [whitepaper-zh.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-zh.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -642,33 +624,20 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 21
+- Audits with zero matched contracts: 8
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=8, medium=1
-- Match method counts: extraction_exact=1685
+- Extraction confidence breakdown: high=7, medium=1
+- Match method counts: extraction_exact=1600
 
 Zero-match audit list:
 
-- [8025] 2017-03.md
-- [8026] 2018-10.pdf
-- [8027] 2022-10-Checkpoints.pdf
 - [8028] 2022-10-ERC4626.pdf
-- [8030] 2023-10-v5.0.pdf
-- [8031] 2024-10-v5.1.pdf
-- [8032] README.md
 - [8043] DRAFT_ABDK_audit_periphery_universal_router.pdf
 - [8044] DRAFT_Spearbit_audit_periphery.pdf
-- [8045] OpenZeppelin_audit_periphery_universal_router.pdf
 - [8046] ABDKAudit.pdf
 - [8047] Chainsecurity Audit.pdf
-- [8050] v6-Fixed-Point-Solutions.pdf
-- [8051] Known_Effects_of_Hook_Permissions.pdf
 - [8052] DRAFT_ABDK_audit_core.pdf
-- [8053] DRAFT_Certora_audit_core.pdf
 - [8054] DRAFT_Spearbit_audit_core.pdf
-- [8055] OpenZeppelin_audit_core.pdf
 - [8056] TrailOfBits_audit_core.pdf
-- [8057] whitepaper-v4.pdf
-- [8058] whitepaper-zh.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

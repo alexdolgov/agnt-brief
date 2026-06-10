@@ -1,23 +1,21 @@
 # Agentic Audit Brief: EthicHub
 
-⚠️ Lifecycle status: UNKNOWN - TVL changed 13.8% over 90 days
-
 ## Project Overview
 
 - Project: EthicHub (`ethichub`)
 - Website: [https://ethichub.com](https://ethichub.com)
-- Lifecycle: unknown (Tier 0, 78.9% below peak)
-- Generated: 2026-05-23T23:48:49.036Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: active (Tier 0, 78.9% below peak)
+- Generated: 2026-06-10T20:59:03.830Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: celo, ethereum, gnosis
 - Contract surface: 58 unique implementations (213 raw deployments)
-- DeFi Llama TVL: $4,045,216.77
+- DeFi Llama TVL: $4,025,199.68
 - On-chain TVL (included contracts): $22,676,394.36
 - TVL by chain: Ethereum $17,233,068.49 | Celo $5,419,528.19 | Gnosis $23,797.67
 
 ## Project Description
 
-EthicHub is a decentralized protocol that connects lenders with smallholder farmers in emerging markets, enabling real-world asset (RWA) lending. It uses tokenized bonds, staking mechanisms, and cross-chain bridges to facilitate and secure agricultural loans.
+EthicHub is a ReFi/RWA lending and guarantee platform that connects lenders with smallholder farmers and agricultural communities in emerging markets. ETHIX is used for collective guarantees, staking, incentives, and rewards around the lending ecosystem. Cross-chain bridge contracts should be treated as deployment or interoperability infrastructure rather than core loan-securing logic unless separately evidenced as EthicHub-owned and in audit scope.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The ETHEREUM SMART CONTRACTS family provides the foundational EthixToken and sta
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $22,676,394.36 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "biswap",
-  "generated_at": "2026-05-23T15:06:32.449Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:58:59.722Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "biswap",
     "tier": 1,
@@ -45,7 +45,7 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5702407,
+    "dl_tvl_usd": 5641146,
     "tvl_usd": 609279.4114705246,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -71,9 +71,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Biswap is a decentralized exchange (DEX) protocol operating across multiple chains, enabling users to swap tokens, provide liquidity, and earn yield through farming. It includes a native BSW token for governance and incentives.",
+    "project_purpose": "Biswap is a decentralized exchange (DEX) protocol operating across multiple chains, enabling token swaps, liquidity provision, and yield farming, with the BSW token used for incentives and governance-related functions. Current protocol activity should be described using accessible project metadata such as DefiLlama; do not claim the current homepage is withdrawal-only or lacks active protocol functionality unless directly reproducible.",
     "relationship_narrative": "The BSW token contract is shared across both Biswap and Biswap V3 families as the core incentive and governance token. The MasterChef contract in the original Biswap family distributes BSW rewards, while the SmartRouter likely facilitates trades across both versions.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 84,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

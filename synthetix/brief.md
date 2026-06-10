@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Synthetix
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 16.5% over 90 days
-
 ## Project Overview
 
 - Project: Synthetix (`synthetix`)
 - Website: [https://synthetix.io](https://synthetix.io)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:54:05.904Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:17.156Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, ethereum, optimism
 - Contract surface: 13 unique implementations (40 raw deployments)
 - DeFi Llama TVL: $41,667,156.00
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Synthetix is a decentralized synthetic asset protocol that enables the creation and trading of on-chain derivatives, allowing users to gain exposure to real-world assets like currencies, commodities, and equities without holding the underlying assets.
+Synthetix is an active decentralized derivatives and liquidity protocol focused on perpetual futures markets, liquidity provision through Synthetix Liquidity Provider mechanisms, staking, and related margin and custody infrastructure. Its current product surface includes Synthetix Perps, SLP/liquidity provision, staking such as the 420 Pool, and V3 market contracts across supported networks. Legacy Synth and synthetic asset infrastructure may still exist historically, but it should not be treated as the primary description of the current protocol.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ Synthetix V3 builds on the original v1+v2 system by replacing the monolithic iss
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $10,272,467.56 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

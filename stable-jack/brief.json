@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stable-jack",
-  "generated_at": "2026-05-24T17:13:41.382Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.489Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stable-jack",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1817064,
+    "dl_tvl_usd": 1785928,
     "tvl_usd": 76851427.98508719,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -51,18 +51,23 @@
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2024-06",
-    "audit_freshness": "aging",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 1,
-      "stale": 0,
+      "aging": 0,
+      "stale": 1,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Stable Jack is a DeFi protocol that provides yield-bearing stablecoin and liquid staking token products. It enables users to deposit assets into vaults to receive wrapped tokens that accrue yield, and offers mechanisms for boosting rewards and managing tokenized positions.",
+    "project_purpose": "Stable Jack is a DeFi protocol focused on markets for trading yield, volatility, and points to help users increase or manage exposure to assets. Its observed on-chain components include vault, wrapper, and staking-token contracts, but these should be treated as implementation infrastructure rather than the full product identity.",
     "relationship_narrative": "Stable Jack V2 builds upon V1 by introducing more sophisticated token wrappers and vaults, while V1 contracts remain as legacy infrastructure. Both families share proxy patterns and likely interact with common oracles and registries, though V2's core contracts (e.g., BoringVault) are distinct from V1's bridged token.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 249,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -8868,7 +8873,7 @@
       "report_url": "https://github.com/Credshields/audit-reports/blob/master/aUSD_SC_Final_Audit_Report.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,

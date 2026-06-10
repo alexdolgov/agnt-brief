@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zenlink",
-  "generated_at": "2026-05-23T15:30:38.709Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:19.495Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "zenlink",
@@ -45,8 +45,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5523913,
-    "tvl_usd": 5523913,
+    "dl_tvl_usd": 5337021,
+    "tvl_usd": 5337021,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -67,9 +67,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Zenlink is a decentralized exchange (DEX) protocol operating on Moonbeam and Moonriver, providing automated market maker (AMM) functionality including stable swaps and standard token swaps. It enables users to trade tokens, provide liquidity, and earn fees through its liquidity pools.",
+    "project_purpose": "Zenlink is a Polkadot-ecosystem cross-chain decentralized exchange (DEX) and AMM protocol, with deployments and liquidity across chains including Bifrost, Astar, Moonbeam, and Moonriver. It supports token swaps, liquidity provision, and fee earning through liquidity pools, including standard AMM and stable-swap functionality. The currently listed contract surface covers only Moonbeam and Moonriver and should not be treated as representative of Zenlink's full current cross-chain footprint or total protocol TVL without adding the missing Bifrost and Astar contracts.",
     "relationship_narrative": "The Zenlink AMM family is the sole product family, with Factory contracts deploying and managing StableSwap pools, while the ZenlinkToken serves as the protocol's native token. All contracts are deployed across Moonbeam and Moonriver, sharing the same AMM infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 226,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

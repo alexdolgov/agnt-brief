@@ -1,18 +1,27 @@
 # Agentic Audit Brief: Nerona
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
+⚠️ Lifecycle status: DECLINING - TVL trajectory indicates non-active lifecycle.
 
 ## Project Overview
 
 - Project: Nerona (`nerona`)
-- Lifecycle: unknown (Tier 0, 77.5% below peak)
-- Generated: 2026-05-31T10:04:20.112Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 77.5% below peak)
+- Generated: 2026-06-10T20:59:08.067Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $7,940,325.87
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
+## Project Description
+
+Nerona is a yield aggregator. Current metadata describes the protocol as active on Fluent, with no separate homepage content available from the provided evidence.
 
 ## Audit Coverage Summary
 
@@ -28,7 +37,7 @@
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

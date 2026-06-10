@@ -1,23 +1,23 @@
 # Agentic Audit Brief: StandX
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 33.0% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 33.0% over 90 days
 
 ## Project Overview
 
 - Project: StandX (`standx`)
 - Website: [https://standx.com/referral?code=defillama](https://standx.com/referral?code=defillama)
-- Lifecycle: unknown (Tier 0, 54.7% below peak)
-- Generated: 2026-05-26T11:54:50.607Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Lifecycle: declining (Tier 0, 54.7% below peak)
+- Generated: 2026-06-10T20:59:16.616Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
-- Contract surface: 18 unique implementations (27 raw deployments)
+- Contract surface: 17 unique implementations (26 raw deployments)
 - DeFi Llama TVL: $48,272,335.00
-- On-chain TVL (included contracts): $12,710,657.84
-- TVL by chain: Bsc $12,710,657.84
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-StandX is a DeFi protocol on BSC that provides a canonical bridge for cross-chain asset transfers and a derivatives platform for trading perpetual contracts. It issues a stablecoin (StandDUSD) and uses proxy-based upgradeable contracts for core logic.
+StandX is a multi-chain Perps DEX on BNB/BSC and Solana powered by yield-bearing DUSD, with a DefiLlama-tracked canonical bridge component. Solana/SVM audit coverage should be tracked separately from BSC/EVM contract coverage unless an audit explicitly covers the same EVM code or a verified equivalence mapping exists.
 
 ### Architecture
 
@@ -25,26 +25,26 @@ The BSC family provides the core stablecoin (StandDUSD) and settlement logic, wh
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 4/8 (50.0%)
-- Verified + Unaudited implementations: 4
+- Verified implementations audited: 4/7 (57.1%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 10
-- Unique implementations: 18
-- Raw deployments: 27
+- Unique implementations: 17
+- Raw deployments: 26
 - Audits discovered: 6
 - Scoreable audits (matched contracts): 5
-- ASD (verified + unaudited TVL): $12,710,657.84
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-11 (fresh)
 - Staleness: 2 fresh, 4 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $12,710,657.84 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| WatchPug | Tier 2 | 3 | 37.5% | 2025-11 |
-| RigSec | Tier 2 | 2 | 25.0% | 2025-05 |
+| WatchPug | Tier 2 | 3 | 42.9% | 2025-11 |
+| RigSec | Tier 2 | 2 | 28.6% | 2025-05 |
 
 ## Contract Surface
 
@@ -57,11 +57,10 @@ The BSC family provides the core stablecoin (StandDUSD) and settlement logic, wh
 | Settler | unknown | bsc | 3 deployments: bsc [`0x23fd9d...3a04ed`](./contracts/bsc-56/0x23fd9dfb3f5772034ed677aeb15f048da53a04ed/); bsc `0x2c02f5...95065a`; bsc `0xdf09eb...90caa1` | ✅ Audited |
 | StandDUSD | unknown | bsc | 3 deployments: bsc [`0x2e8749...1ffdb2`](./contracts/bsc-56/0x2e8749ea4b3324376fa740f63abba2993d1ffdb2/); bsc `0x57f4df...d9e22d`; bsc `0xaf44a1...888122` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| PancakeV3Pool | core_logic | bsc | [`0xb67e5e...2beb0f`](./contracts/bsc-56/0xb67e5eaf770a384ab28029d08b9bc5ebe32beb0f/) | ⚠️ Unaudited |
 | ERC1967Proxy | proxy | bsc | 3 deployments: bsc [`0x00b4f9...85088e`](./contracts/bsc-56/0x00b4f9b510893505acefb10ec91cbc972185088e/); bsc `0x84603c...30766f`; bsc `0x90bb5b...3aab84` | ⚠️ Unaudited |
 | PancakePair | unknown | bsc | [`0x2ad9c1...30b9c5`](./contracts/bsc-56/0x2ad9c1ad5b06f953b69d39d6685d725cd330b9c5/) | ⚠️ Unaudited |
 | SafeL2 | unknown | bsc | [`0x11b660...39e433`](./contracts/bsc-56/0x11b660397382ae3a83c4ad80e2f791189b39e433/) | ⚠️ Unaudited |
@@ -117,7 +116,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 14 |
-| upstream | 2 |
+| upstream | 1 |
 | standard_library | 2 |
 | needs_review | 0 |
 

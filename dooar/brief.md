@@ -5,8 +5,8 @@
 - Project: DOOAR (`dooar`)
 - Website: [https://beta.dooar.com/swap](https://beta.dooar.com/swap)
 - Lifecycle: active (Tier 0, 60.8% below peak)
-- Generated: 2026-05-31T07:53:58.325Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.999Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $5,110,102.30
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-DOOAR is a decentralized exchange (DEX) protocol on BSC that enables users to swap tokens and provide liquidity through automated market maker (AMM) pools.
+DOOAR is a multi-chain decentralized exchange built by Find Satoshi Lab for STEPN users and broader DeFi users. It supports token swaps and liquidity provision through automated market maker pools. The currently recorded contract inventory represents only the Binance/BSC side of the project and should be treated as a partial BSC-only surface, not the full multi-chain DOOAR deployment.
 
 ### Architecture
 
@@ -51,7 +51,7 @@ The single product family contains the core factory contract that deploys and ma
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | DooarSwapV2Factory | registry | bsc | [`0x1e895b...476f3c`](./contracts/bsc-56/0x1e895bfe59e3a5103e8b7da3897d1f2391476f3c/) | ⚠️ Unaudited |
-| DooarSwapV2Router02 | adapter | bsc | [`0x53e0e5...b9879f`](./contracts/bsc-56/0x53e0e51b5ed9202110d7ecd637a4581db8b9879f/) | ⚠️ Unaudited |
+| DooarSwapV2Router02 | operational_periphery | bsc | [`0x53e0e5...b9879f`](./contracts/bsc-56/0x53e0e51b5ed9202110d7ecd637a4581db8b9879f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -83,7 +83,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | bsc | [`0x1e895b...476f3c`](./contracts/bsc-56/0x1e895bfe59e3a5103e8b7da3897d1f2391476f3c/) | DooarSwapV2Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x53e0e5...b9879f`](./contracts/bsc-56/0x53e0e51b5ed9202110d7ecd637a4581db8b9879f/) | DooarSwapV2Router02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x53e0e5...b9879f`](./contracts/bsc-56/0x53e0e51b5ed9202110d7ecd637a4581db8b9879f/) | DooarSwapV2Router02 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

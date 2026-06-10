@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zoth",
-  "generated_at": "2026-05-24T13:57:30.464Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:19.681Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "zoth",
@@ -35,7 +35,7 @@
     "coverage_pct": 78.1,
     "total_audits": 5,
     "scoreable_audits": 5,
-    "dl_tvl_usd": 2198154,
+    "dl_tvl_usd": 2197589,
     "tvl_usd": 6.504986,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -62,9 +62,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Zoth is a DeFi protocol that bridges real-world assets (RWAs) with decentralized finance by offering tokenized yield-bearing products and a collateralized debt position (CDP) system. Users can deposit stablecoins or tokenized real-world assets into vaults to earn yield, mint the ZeUSD stablecoin against collateral, and manage positions across multiple chains.",
+    "project_purpose": "Zoth currently positions itself as a stablecoin neobank and RWA-yield platform, with products spanning stablecoin Earn, Send, Tokenize, Agentic/automation features, payments, cards, compliance, and privacy-first neobanking. Its on-chain surface includes historical or related ZeUSD, vault, redemption, zOPAL, ZTLNPrime, governance, proxy, and implementation contracts, but ZeUSD/CDP functionality should not be described as the sole or primary current product unless supported by current documentation.",
     "relationship_narrative": "The ZeUSD CDP & Vaults family relies on shared registries, access managers, and oracles to coordinate collateral deposits and stablecoin minting across multiple sub-vault types. The zOPAL family uses its own access control and oracles but follows a similar vault-based pattern, while the ZTLN-P token serves as collateral within the ZeUSD ecosystem, creating a unified RWA-backed DeFi platform.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 43,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

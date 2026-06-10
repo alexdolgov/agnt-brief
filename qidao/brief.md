@@ -1,14 +1,14 @@
 # Agentic Audit Brief: QiDao
 
-⚠️ Lifecycle status: DEAD - TVL dropped 11.7% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 11.7% over 90 days
 
 ## Project Overview
 
 - Project: QiDao (`qidao`)
 - Website: [https://app.mai.finance](https://app.mai.finance)
-- Lifecycle: dead (Tier 0, 99.2% below peak)
-- Generated: 2026-05-31T10:23:55.081Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 99.2% below peak)
+- Generated: 2026-06-10T20:59:09.448Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, bsc, cronos, ethereum, fantom, fraxtal, gnosis, harmony, kava, linea, mantle, metis, moonbeam, moonriver, optimism, polygon, polygon-zkevm, zksync-era
 - Contract surface: 298 unique implementations (298 raw deployments)
 - DeFi Llama TVL: $3,042,769.70
@@ -29,7 +29,7 @@
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

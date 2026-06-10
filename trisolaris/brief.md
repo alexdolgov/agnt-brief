@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Trisolaris
 
-⚠️ Lifecycle status: DEAD - TVL changed 47.5% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 47.5% over 90 days
 
 ## Project Overview
 
 - Project: Trisolaris (`trisolaris`)
 - Website: [https://www.trisolaris.io/#/swap](https://www.trisolaris.io/#/swap)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-31T11:13:50.666Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:17.592Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: aurora
 - Contract surface: 119 unique implementations (158 raw deployments)
 - DeFi Llama TVL: $1,493,303.70
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Trisolaris is a decentralized exchange (DEX) on Aurora that enables users to swap tokens, provide liquidity, and earn yield through automated market-making and farming. It includes a native TRI token and supports cross-chain farming via AutoFarmV2.
+Trisolaris is a decentralized exchange in the Aurora/NEAR ecosystem that provides UniswapV2-style token swaps and liquidity pools through factory/router-based AMM contracts. The protocol has also included historical farming, staking, rewards, vesting, fee-maker, stable-swap/LP-maker, and related incentive contracts. Claims about current cross-chain farming or active TRI governance should be qualified unless supported by current documentation or verified contract functionality.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The UniswapV2Factory creates liquidity pools using the EvmErc20 token standard, 
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

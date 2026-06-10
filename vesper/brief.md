@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Vesper
 
-⚠️ Lifecycle status: DECLINING - TVL changed 25.4% over 90 days
-
 ## Project Overview
 
 - Project: Vesper (`vesper`)
 - Website: [https://vesper.finance/](https://vesper.finance/)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T11:34:48.285Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:18.586Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 44 unique implementations (147 raw deployments)
 - DeFi Llama TVL: $44,440,251.37
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Vesper is a yield aggregator that optimizes returns on deposited assets by automatically allocating funds across various DeFi strategies. Users deposit tokens into pools, which are managed by strategies to earn yield, while the VSP token governs the protocol and rewards participants.
+Vesper is a multi-chain yield platform where users deposit assets into pools and related yield products that allocate funds across DeFi strategies to generate returns. The protocol includes pool-based deposits, protocol/institutional yield offerings, VSP governance/rewards, and related Metronome synthetics messaging across supported chains.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The VSP token serves as the governance and reward token across the protocol, whi
 - Latest audit: 2022-09 (stale)
 - Staleness: 0 fresh, 0 aging, 30 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $351,723.50 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

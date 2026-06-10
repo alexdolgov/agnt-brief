@@ -4,21 +4,22 @@
 
 - Project: MineFi (`minefi`)
 - Lifecycle: unknown
-- Generated: 2026-05-24T22:52:03.153Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:07.706Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,433,572.60
+- DeFi Llama TVL: $1,405,717.91
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-MineFi is a liquid staking protocol that allows users to stake assets and receive liquid derivative tokens in return, enabling continued participation in DeFi while earning staking rewards.
-
-### Architecture
-
-No product families or contracts are defined in the provided inventory, so no relationships can be described.
+MineFi is a Filecoin/FIL staking or liquid-staking protocol. Its smart-contract or Filecoin actor address inventory is currently unavailable, so deployment coverage should not be inferred from an empty contract list.
 
 ## Audit Coverage Summary
 

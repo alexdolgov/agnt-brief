@@ -7,8 +7,8 @@
 - Project: Trueo (`trueo`)
 - Website: [https://trueo.com/](https://trueo.com/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T11:12:50.133Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:17.602Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 23 unique implementations (45 raw deployments)
 - DeFi Llama TVL: $3,764,672.39
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Trueo is a prediction market protocol that enables users to create and trade outcome tokens on real-world events, with a native token (TrueToken) for staking and governance. It uses oracle-based resolution and liquidity pools to facilitate trading.
+Trueo is an onchain yield-bearing prediction and news/truth market on Base. The protocol centers on markets with APR-bearing positions, truth bounties, and resolution infrastructure involving the Trueo Oracle and attesters. Avoid characterizing it as a generic outcome-token creation/trading protocol or asserting TrueToken governance unless supported by current project documentation.
 
 ### Architecture
 

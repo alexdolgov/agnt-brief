@@ -7,17 +7,17 @@
 - Project: Maverick Protocol (`maverick-protocol`)
 - Website: [https://www.mav.xyz](https://www.mav.xyz)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-24T13:58:47.554Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:07.294Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, bsc, ethereum, scroll, zksync-era
 - Contract surface: 93 unique implementations (141 raw deployments)
-- DeFi Llama TVL: $2,218,640.00
+- DeFi Llama TVL: $2,200,711.00
 - On-chain TVL (included contracts): $26,763,110.03
 - TVL by chain: Ethereum $25,606,496.79 | Bsc $654,353.06 | Base $502,260.18
 
 ## Project Description
 
-Maverick Protocol is a decentralized exchange (DEX) that offers automated market-making with dynamic fee distribution and liquidity management. It enables users to provide liquidity in customizable pools, earn trading fees, and participate in governance through its native token and voting escrow system.
+Maverick Protocol is liquidity infrastructure centered on the Maverick AMM, supporting token swaps and liquidity provisioning with mechanisms intended to improve capital efficiency and give liquidity providers control over how liquidity is positioned in pools.
 
 ### Architecture
 

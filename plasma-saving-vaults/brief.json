@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "plasma-saving-vaults",
-  "generated_at": "2026-05-31T10:15:25.095Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:09.343Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "plasma-saving-vaults",
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Plasma Saving Vaults is an onchain capital allocator that enables users to deposit assets into yield-generating vaults. It uses a BoringVault core for asset management and AToken-like receipt tokens to represent user positions.",
+    "project_purpose": "Plasma Saving Vaults is an on-chain savings/yield vault product. Its live Savings Lending Vault is publicly described as using Veda vault infrastructure to deploy deposited assets into Aave for yield. BoringVault-style vault infrastructure may be part of the checked surface, but ATokenInstance receipt-token claims and TetherTokenOFTExtension adapter scope should be treated as unconfirmed unless supported by project documentation or source verification.",
     "relationship_narrative": "The BoringVault serves as the main asset management contract, while multiple TetherTokenOFTExtension adapters (deployed as proxies) enable cross-chain token transfers. The ATokenInstance proxy issues receipt tokens to users, linking deposits to yield accrual.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 6,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

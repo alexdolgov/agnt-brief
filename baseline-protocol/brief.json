@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "baseline-protocol",
-  "generated_at": "2026-05-27T14:54:05.795Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:58:58.076Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "baseline-protocol",
     "tier": 1,
@@ -32,27 +32,24 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 115,
-    "total_addresses": 116,
-    "unique_implementations": 115,
-    "total_deployments": 116,
+    "total_contracts": 112,
+    "total_addresses": 112,
+    "unique_implementations": 112,
+    "total_deployments": 112,
     "audited_contracts": 1,
-    "unaudited_contracts": 6,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 6,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 108,
-    "coverage_pct": 14.3,
-    "total_audits": 9,
+    "coverage_pct": 25,
+    "total_audits": 8,
     "scoreable_audits": 1,
     "dl_tvl_usd": 69255851.63138,
-    "tvl_usd": 997693.6777904796,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "base": 22.15,
-      "blast": 997671.52
-    },
-    "asd_usd": 997693.6777904796,
+    "tvl_usd": 69255851.63138,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://www.baseline.markets/",
     "chains": [
       "base",
@@ -65,92 +62,26 @@
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 7,
+      "aging": 6,
       "stale": 2,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Baseline Protocol is a liquidity manager that automates liquidity provision and management across decentralized exchanges. It deploys strategies to optimize yields for users by managing positions in pools like Uniswap V3 and Thruster.",
+    "project_purpose": "Baseline Protocol is an asset issuance and token-owned-liquidity protocol centered on Baseline/Mercury markets. It uses its own market-maker and AMM mechanics, floor-price backing, bTokens, staking rewards, borrowing, and no-liquidation leverage to support protocol-issued assets and liquidity. External venues such as Uniswap V3 or Thruster may be dependencies or liquidity venues, but they should not be treated as Baseline-owned core contracts or as the primary protocol model.",
     "relationship_narrative": "Baseline Legacy and Baseline Mercury are separate product lines deployed on different chains, sharing no direct contract dependencies but both relying on the Operational family for governance. The Operational multisigs likely control upgrades and parameters across both families, ensuring consistent management.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 112,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 81457,
-      "chain_name": "blast",
-      "address": "0x1d16788b97edb7d9a6ae66d5c5c16469037faa00",
-      "name": "ThrusterPool",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "thruster",
-      "product_line": "Baseline Legacy",
-      "tvl_usd": 997671.5242532049,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ThrusterPool",
-      "deployments": [
-        {
-          "chain_id": 81457,
-          "chain_name": "blast",
-          "address": "0x1d16788b97edb7d9a6ae66d5c5c16469037faa00",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 996817.1387143172,
-          "is_audited": false
-        },
-        {
-          "chain_id": 81457,
-          "chain_name": "blast",
-          "address": "0xd0f1e1243c9ffb11100efd25f1c9ef7ca956dc13",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 854.3855388877488,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xdfcfdf5dd0569d591e0bce28b5da3b13de09e3cb",
-      "name": "UniswapV3Pool",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
-      "product_line": "Baseline Legacy",
-      "tvl_usd": 22.153537274741574,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "UniswapV3Pool",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xdfcfdf5dd0569d591e0bce28b5da3b13de09e3cb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 22.153537274741574,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -3595,37 +3526,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x4200000000000000000000000000000000000006",
-      "name": "WETH9",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "Unknown Library",
-      "product_line": "Baseline Legacy",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "WETH9",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x4200000000000000000000000000000000000006",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 81457,
       "chain_name": "blast",
       "address": "0xc7b96d7f622e0a3a24cf333e84c29e36955f25bb",
@@ -3791,7 +3691,7 @@
       "report_url": "https://www.baseline.markets/assets/guardian_v2.pdf",
       "auditor": "Guardian",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -3836,27 +3736,6 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4662,
-      "audit_key": "audit-4662",
-      "report_name": "| Baseline V1 | [audit\\_trust\\_security.pdf](/assets/audit_trust_security.pdf) | 2024-02-27 | [Trust Security]() |",
-      "report_url": "https://trustsec.xyz/",
-      "auditor": "Guardian",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -3864,7 +3743,7 @@
       "auditor": "Trust Security",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 14.3,
+      "coverage_pct": 25,
       "latest_audit": "2024-02"
     }
   ],
@@ -3882,8 +3761,8 @@
   ],
   "origin_summary": {
     "native": 8,
-    "upstream": 2,
-    "standard_library": 3,
+    "upstream": 0,
+    "standard_library": 2,
     "needs_review": 102
   },
   "scope_matching_notes": {
@@ -3923,10 +3802,6 @@
       {
         "audit_id": 4660,
         "report_name": "guardian_v2.pdf"
-      },
-      {
-        "audit_id": 4662,
-        "report_name": "| Baseline V1 | [audit\\_trust\\_security.pdf](/assets/audit_trust_security.pdf) | 2024-02-27 | [Trust Security]() |"
       }
     ],
     "inherited_remapped_matches": []

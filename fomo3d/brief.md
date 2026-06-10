@@ -4,8 +4,8 @@
 
 - Project: Fomo3D (`fomo3d`)
 - Lifecycle: active (Tier 0, 59.6% below peak)
-- Generated: 2026-05-31T08:04:37.306Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.048Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 23 unique implementations (26 raw deployments)
 - DeFi Llama TVL: $2,517,012.49
@@ -14,7 +14,7 @@
 
 ## Project Description
 
-Fomo3D is a gamified lottery and investment protocol where players buy keys to earn dividends from subsequent purchases, with the last buyer winning a jackpot if no one buys for a set time.
+Fomo3D is a gamified lottery and investment protocol centered on the FoMo3Dlong and FoMo3DSoon game variants, where players buy keys to earn dividends from subsequent purchases and the last buyer can win a jackpot if no one buys before the timer expires. The broader contract surface also includes associated support or adjacent contracts such as Divies deployments and other Fomo3D-related contracts/libraries; shared infrastructure or implementation equivalence should only be asserted where verified by call relationships or exact bytecode/source matching.
 
 ### Architecture
 

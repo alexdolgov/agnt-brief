@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "polkastarter",
-  "generated_at": "2026-05-31T10:18:37.986Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:09.350Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "polkastarter",
     "tier": 0,
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Polkastarter is a decentralized launchpad platform that enables early-stage blockchain projects to raise capital through token sales. It provides a permissionless environment for fundraising and token distribution.",
-    "relationship_narrative": "The project consists of a single product family centered around the POLS token, with no additional contracts or families to relate.",
+    "project_purpose": "Polkastarter is a curated crypto launchpad and IDO platform that connects blockchain projects with early backers for token launches and fundraising. The POLS token is used for access, staking/POLS Power, and related launchpad participation.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

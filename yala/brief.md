@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Yala
 
-⚠️ Lifecycle status: DEAD - TVL dropped 93.4% over 90 days
-
 ## Project Overview
 
 - Project: Yala (`yala`)
 - Website: [https://www.yala.org](https://www.yala.org)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-31T11:41:04.284Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, dead)
+- Generated: 2026-06-10T20:59:19.400Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 30 unique implementations (30 raw deployments)
 - DeFi Llama TVL: $2,196,263.11
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Yala is a CDP (Collateralized Debt Position) protocol that allows users to lock collateral and mint a stablecoin (DebtToken). It also includes a BridgeToken for cross-chain operations.
+Yala should be described with a caveat: the legacy/DefiLlama DeFi protocol was a CDP/stablecoin system that allowed users to lock collateral and mint a DebtToken, with BridgeToken-related cross-chain components. However, the current public homepage presents Yala as an AI fair-value/prediction product, so the legacy CDP/stablecoin system should not be stated as the current project purpose without distinguishing it from the current/pivoted product.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The Yala family consists of a core DebtToken for CDP operations and a supporting
 - Latest audit: 2025-03 (aging)
 - Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $4,617,109.60 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "synapse",
-  "generated_at": "2026-05-31T10:52:03.959Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:17.113Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "synapse",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 15,
     "contracts_unverified": 613,
     "coverage_pct": 0,
-    "total_audits": 2,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 16678188.79895,
     "tvl_usd": 25569883.310696743,
@@ -83,13 +83,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 2
+      "unknown": 0
     }
   },
   "topography": {
     "project_purpose": null,
     "relationship_narrative": null,
     "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 824,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -41913,60 +41918,7 @@
       "contamination_flag": null
     }
   ],
-  "audits": [
-    {
-      "audit_id": 6248,
-      "audit_key": "audit-6248",
-      "report_name": "PausableUpgradeable.md",
-      "report_url": "https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/security/PausableUpgradeable.md",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 6248,
-          "report_url": "https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/security/PausableUpgradeable.md"
-        },
-        {
-          "audit_id": 6478,
-          "report_url": "https://github.com/synapsecns/synapse-contracts/blob/master/docs/elin/contracts-upgradeable-4.5.0/security/PausableUpgradeable.md"
-        }
-      ]
-    },
-    {
-      "audit_id": 6462,
-      "audit_key": "audit-6462",
-      "report_name": "Pausable.md",
-      "report_url": "https://github.com/synapsecns/synapse-contracts/blob/master/docs/elin/contracts-4.5.0/security/Pausable.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
@@ -41980,16 +41932,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 6248,
-        "report_name": "PausableUpgradeable.md"
-      },
-      {
-        "audit_id": 6462,
-        "report_name": "Pausable.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

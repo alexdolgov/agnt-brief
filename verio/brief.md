@@ -5,21 +5,22 @@
 - Project: Verio (`verio`)
 - Website: [https://www.verio.network/staking](https://www.verio.network/staking)
 - Lifecycle: unknown
-- Generated: 2026-05-23T08:45:45.893Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:18.566Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $7,490,623.86
+- DeFi Llama TVL: $7,190,809.62
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Verio is a liquid staking protocol that allows users to stake assets and receive liquid derivative tokens representing their staked position, enabling continued participation in DeFi while earning staking rewards.
-
-### Architecture
-
-No product families or contracts are defined in the provided inventory, so no structural relationships can be described.
+Verio is a Story-focused liquid staking and IP asset staking/restaking platform that supports IP validation and participation in the Story ecosystem.
 
 ## Audit Coverage Summary
 

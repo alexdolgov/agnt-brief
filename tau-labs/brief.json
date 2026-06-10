@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "tau-labs",
-  "generated_at": "2026-05-31T10:55:06.068Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:17.302Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "tau-labs",
     "tier": 0,
@@ -63,6 +63,11 @@
     "project_purpose": "TAU Labs is a risk curation protocol that deploys and manages PlasmaVaults—smart contract vaults that aggregate user deposits and allocate them across various DeFi strategies to optimize yield and manage risk.",
     "relationship_narrative": "All PlasmaVault instances share common implementation logic via PlasmaVaultBase, and the protocol relies on external infrastructure such as oracles, price feeds, and strategy contracts (e.g., Aave, Compound) to execute its yield strategies.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 179,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

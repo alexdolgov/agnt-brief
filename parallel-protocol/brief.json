@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "parallel-protocol",
-  "generated_at": "2026-05-24T02:10:40.609Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:09.193Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "parallel-protocol",
@@ -26,16 +26,16 @@
     "total_addresses": 227,
     "unique_implementations": 38,
     "total_deployments": 227,
-    "audited_contracts": 8,
-    "unaudited_contracts": 18,
-    "contracts_verified_audited": 8,
-    "contracts_verified_unaudited": 18,
+    "audited_contracts": 1,
+    "unaudited_contracts": 25,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 25,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 12,
-    "coverage_pct": 30.8,
-    "total_audits": 5,
-    "scoreable_audits": 5,
-    "dl_tvl_usd": 3794228,
+    "coverage_pct": 3.8,
+    "total_audits": 2,
+    "scoreable_audits": 2,
+    "dl_tvl_usd": 3770941,
     "tvl_usd": 3589825.4905949524,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -70,19 +70,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2025-02",
-    "audit_freshness": "aging",
+    "latest_audit_date": "2021-06",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 3,
+      "aging": 0,
       "stale": 2,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Parallel Protocol is a multi-chain DeFi platform that enables users to deposit collateral and mint stablecoins (CDP), earn yield through savings products, and access flash loans. It also provides cross-chain bridging and a modular parallelizer infrastructure for yield optimization.",
+    "project_purpose": "Parallel Protocol is an over-collateralized decentralized stablecoin protocol centered on USDp, enabling users to deposit collateral, mint stablecoins, and access savings or yield products. TokenP is a technical contract implementation name for the stablecoin. Bridge, flash-token, or parallelizer components should be described only as supporting contract modules where independently documented, not as the protocol's primary public-facing product identity.",
     "relationship_narrative": "The Core Protocol's TokenP stablecoin is used across the Flashloan, Bridging, and Savings modules, creating a unified token economy. The Parallelizer Module operates as a separate yield layer, interacting with external protocols via Swapper adapters and distributing rewards, while governance is shared through ParallelAccessManager instances.",
     "product_family_count": 6
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 38,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -571,7 +576,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -580,7 +585,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -589,7 +594,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -598,7 +603,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -607,7 +612,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -616,7 +621,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -625,7 +630,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -634,7 +639,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -643,7 +648,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -652,7 +657,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -661,7 +666,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -670,16 +675,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2685"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1612,7 +1615,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -1621,17 +1624,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2684",
-        "audit-2687"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1848,17 +1848,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2684",
-        "audit-2687"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1882,7 +1879,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -1891,7 +1888,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 146,
@@ -1900,7 +1897,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -1909,7 +1906,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -1918,16 +1915,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2684"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -2085,17 +2080,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2684",
-        "audit-2687"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -2374,7 +2366,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 146,
@@ -2383,7 +2375,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -2392,17 +2384,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2684",
-        "audit-2687"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -2892,7 +2881,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -2901,7 +2890,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -2910,7 +2899,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -2919,7 +2908,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -2928,7 +2917,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -2937,16 +2926,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2685"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -2992,67 +2979,6 @@
   ],
   "audits": [
     {
-      "audit_id": 2684,
-      "audit_key": "audit-2684",
-      "report_name": "Rendered PDF capture",
-      "report_url": "https://raw.githubusercontent.com/parallel-protocol/parallel-prl/dba8cdcac982a9b59006730cd890870bfc807e15/docs/audits/Bailsec%20-%20Parallel%20Protocol%20-%20PRL%20Token%20-%20Final%20Report%20-%20January%202025.pdf",
-      "auditor": "Guardian",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Auctioneer",
-        "LockBox",
-        "MainFeeDistributor",
-        "OFT",
-        "OFTAdapter",
-        "OFTCore",
-        "PRL",
-        "PeripheralMigrationContract",
-        "PeripheralPRL",
-        "PrincipalMigrationContract",
-        "RewardMerkleDistributor",
-        "SideChainFeeCollector",
-        "TimeLockPenaltyERC20",
-        "sPRL1",
-        "sPRL2"
-      ],
-      "matched_contracts": 12,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2685,
-      "audit_key": "audit-2685",
-      "report_name": "Rendered PDF capture",
-      "report_url": "https://raw.githubusercontent.com/parallel-protocol/bridging-module/ad58d439a5e0cae78fa7e53aa0698347bd83b921/docs/audits/Bailsec%20-%20Parallel%20Bridge%20-%20BridgeableToken%20-%20Final%20Report%20-%20December%202024.pdf",
-      "auditor": "Guardian",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-12",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "BridgeableToken",
-        "VaultsCoreState"
-      ],
-      "matched_contracts": 18,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 2686,
       "audit_key": "audit-2686",
       "report_name": "Rendered PDF capture",
@@ -3086,48 +3012,6 @@
         "VaultsDataProviderV1"
       ],
       "matched_contracts": 13,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2687,
-      "audit_key": "audit-2687",
-      "report_name": "Rendered PDF capture",
-      "report_url": "https://raw.githubusercontent.com/parallel-protocol/parallel-prl/dba8cdcac982a9b59006730cd890870bfc807e15/docs/audits/Parallel%20Protocol%20-%20Zenith%20Audit%20Report.pdf",
-      "auditor": "Guardian",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "BaseRewardPool",
-        "BoosterLite",
-        "EndpointV2",
-        "IAuraStashToken",
-        "IBridgeableToken",
-        "IDeposit",
-        "IRewards",
-        "ITokenMinter",
-        "IVirtualBalanceRewardPool",
-        "LockBox",
-        "MainFeeDistributor",
-        "OAppSender",
-        "PeripheralMigrationContract",
-        "PrincipalMigrationContract",
-        "RewardMerkleDistributor",
-        "SendLibBaseE2",
-        "SideChainFeeCollector",
-        "TimeLockPenaltyERC20",
-        "sPRL1",
-        "sPRL2"
-      ],
-      "matched_contracts": 7,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -3183,13 +3067,6 @@
   ],
   "auditor_coverage": [
     {
-      "auditor": "Guardian",
-      "tier": 2,
-      "contracts_covered": 7,
-      "coverage_pct": 26.9,
-      "latest_audit": "2025-02"
-    },
-    {
       "auditor": "CertiK",
       "tier": 2,
       "contracts_covered": 1,
@@ -3205,6 +3082,16 @@
     }
   ],
   "coverage_gaps": [
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x1b03d006a47df53b440b9a94af88f38f63583342",
+      "name": "BridgeableToken",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 8453,
       "chain_name": "base",
@@ -3276,11 +3163,41 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x90337e484b1cb02132fc150d3afa262147348545",
+      "name": "MainFeeDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46",
       "name": "ParallelAccessManager",
       "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x9c68850e18eacd4ea7ca2998b6bbed9cf55316cb",
+      "name": "PeripheralMigrationContract",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x7790dd69aa10ed3f1271e41cd7222d2a7d2d5948",
+      "name": "PeripheralPRL",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -3306,6 +3223,16 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x7b54f3d993d3bca077946034ea710f9c07420c72",
+      "name": "RewardMerkleDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 999,
       "chain_name": "hyperliquid",
       "address": "0x472ed57b376fe400259fb28e5c46eb53f0e3e7e7",
@@ -3326,11 +3253,31 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x01fa35fde0e813e2d6687660a74a313d8d922e48",
+      "name": "sPRL1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 999,
       "chain_name": "hyperliquid",
       "address": "0x1b2741db9f46a0411852e4cc28ddc476851b5179",
       "name": "Swapper",
       "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x02c69c480ab4a35f2c7117e2c17c904cd76f25d8",
+      "name": "VaultsCoreState",
+      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -3354,10 +3301,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 63
+      "extraction_exact": 26
     },
     "extraction_confidence_counts": {
-      "high": 5
+      "high": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

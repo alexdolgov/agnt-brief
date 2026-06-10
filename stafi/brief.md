@@ -7,17 +7,17 @@
 - Project: Stafi (`stafi`)
 - Website: [https://www.stafi.io/](https://www.stafi.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T23:11:20.635Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:16.500Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 42 unique implementations (58 raw deployments)
-- DeFi Llama TVL: $4,063,860.32
+- DeFi Llama TVL: $3,990,023.60
 - On-chain TVL (included contracts): $3,923,672.10
 - TVL by chain: Ethereum $3,923,672.10
 
 ## Project Description
 
-Stafi is a liquid staking protocol that allows users to stake assets and receive liquid derivative tokens representing their staked positions. It enables users to earn staking rewards while maintaining liquidity through tradable derivative tokens.
+StaFi is a cross-chain liquid staking and staking-derivatives protocol. It provides rToken liquid staking products and StaFi 2.0 infrastructure, including LSaaS and AI-positioned liquid staking services, designed to let users stake assets while retaining liquidity through derivative tokens. The listed contract coverage should be treated as Ethereum-only unless non-Ethereum deployments are separately included and verified.
 
 ### Architecture
 

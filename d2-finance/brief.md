@@ -5,17 +5,17 @@
 - Project: D2 Finance (`d2-finance`)
 - Website: [https://d2.finance/strategies](https://d2.finance/strategies)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-22T13:08:46.954Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:01.612Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, berachain, ethereum
 - Contract surface: 184 unique implementations (712 raw deployments)
-- DeFi Llama TVL: $24,574,551.74
+- DeFi Llama TVL: $24,602,352.41
 - On-chain TVL (included contracts): $14,911,339.95
 - TVL by chain: Arbitrum $11,841,707.22 | Base $2,999,867.32 | Berachain $59,619.07 | Avalanche $9,997.71 | Ethereum $148.61
 
 ## Project Description
 
-D2 Finance is an onchain capital allocator that deploys user funds into yield-generating strategies across multiple chains. It offers a suite of vaults and token sale mechanisms to manage and raise capital.
+D2 Finance is an onchain managed strategy and vault protocol that deploys user funds into tokenized yield and derivative strategies across multiple chains. Token sale and vesting contracts should be treated as historical or peripheral DSQ distribution infrastructure rather than the core current product offering.
 
 ### Architecture
 

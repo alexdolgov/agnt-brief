@@ -7,8 +7,8 @@
 - Project: Altitude.Fi (`altitude.fi`)
 - Website: [https://www.altitude.fi/](https://www.altitude.fi/)
 - Lifecycle: declining (Tier 0, 69.8% below peak)
-- Generated: 2026-06-10T20:27:11.262Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.827Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 124 unique implementations (174 raw deployments)
 - DeFi Llama TVL: $13,707,166.05

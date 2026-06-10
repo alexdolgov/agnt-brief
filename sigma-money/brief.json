@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sigma-money",
-  "generated_at": "2026-05-31T10:35:20.993Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.155Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "sigma-money",
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 231,
-    "total_addresses": 1393,
+    "total_addresses": 1379,
     "unique_implementations": 231,
-    "total_deployments": 1393,
+    "total_deployments": 1379,
     "audited_contracts": 0,
     "unaudited_contracts": 188,
     "contracts_verified_audited": 0,
@@ -61,6 +61,11 @@
     "project_purpose": null,
     "relationship_narrative": null,
     "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 231,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -7189,147 +7194,21 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x0af5cd9555bc52c34a5f7b20042109d0136bc34f",
+      "address": "0x8f73b65b4caaf64fba2af91cc5d4a2a1318e5d8c",
       "name": "Moolah",
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x9321587ea0dc8247f8f03e8696c047b2713bb79a",
       "impl_name": "Moolah",
       "deployments": [
         {
           "chain_id": 56,
           "chain_name": "bsc",
-          "address": "0x0af5cd9555bc52c34a5f7b20042109d0136bc34f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x0cc33db59a51aac837790dfb8f8cd07f7f16d779",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x25a0e446b25e93afa1f7a18f60e4f26c77f9e473",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x31603984ff1c95dd079a9479410cb0fa1695e316",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x4b1ec9efb8f682c60d229f73265c495e503510b9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x6275276c465b6f45a228a91b89a7d20ad3294be9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x6660a85012d679bbaf5ba6ca4f5f2c4e4a08e12e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x75c42e94dcf40e57ac267ffd4dabf63f97059686",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x7ee9eddfcb05ee7b2a8770a060608a8c8c2b13b6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
           "address": "0x8f73b65b4caaf64fba2af91cc5d4a2a1318e5d8c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x9321587ea0dc8247f8f03e8696c047b2713bb79a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xa621ef111f3fca840bfcc6db5d0e534636f14dca",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xd3b6aa92e55d3aad45042e870bcd78d84753004a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xdb33ccb6a468a891705e6cac3474e5d404c20e2f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xf97ce1f1c287a731dd7fc23fd141c151dd0d8568",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,

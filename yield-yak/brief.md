@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Yield Yak
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 4.4% over 90 days
-
 ## Project Overview
 
 - Project: Yield Yak (`yield-yak`)
 - Website: [https://yieldyak.com](https://yieldyak.com)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T11:43:26.246Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:19.414Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, mantle
 - Contract surface: 8 unique implementations (8 raw deployments)
 - DeFi Llama TVL: $16,579,181.00
@@ -29,7 +27,6 @@
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

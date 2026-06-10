@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "minto",
-  "generated_at": "2026-05-31T09:59:10.737Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:07.707Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "minto",
     "tier": 0,
@@ -22,26 +22,24 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 11,
-    "total_addresses": 12,
-    "unique_implementations": 11,
-    "total_deployments": 12,
+    "total_contracts": 9,
+    "total_addresses": 10,
+    "unique_implementations": 9,
+    "total_deployments": 10,
     "audited_contracts": 1,
-    "unaudited_contracts": 7,
+    "unaudited_contracts": 5,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 7,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 3,
-    "coverage_pct": 12.5,
+    "coverage_pct": 16.7,
     "total_audits": 1,
     "scoreable_audits": 1,
     "dl_tvl_usd": 3797520.6857,
-    "tvl_usd": 1664699.8809864419,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "bsc": 1664699.88
-    },
-    "asd_usd": 1664699.8809864419,
+    "tvl_usd": 3797520.6857,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://minto.finance",
     "chains": [
       "bsc",
@@ -60,46 +58,20 @@
     }
   },
   "topography": {
-    "project_purpose": "Minto is a yield optimization protocol that automates staking and farming strategies across multiple chains. It offers users tokenized yield-bearing assets and auto-compounding vaults to maximize returns.",
+    "project_purpose": "Minto is a Bitcoin mining hashpower tokenization and staking project centered on BTCMT, a token representing exposure to mining power, with staking/mining-related participation rather than multi-chain yield optimization, farming strategies, or auto-compounding vaults.",
     "relationship_narrative": "The GnosisSafeProxy serves as a shared governance contract for both families, while the StakingOwn contract likely manages staking for the BTCMT token. The TransparentUpgradeableProxy points to MintoAutofarmV2, indicating a single upgradeable vault implementation used across deployments.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 9,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x11bd737757b86c16646313fdf9e86681dd3f065f",
-      "name": "PancakeV3Pool",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "pancakeswap",
-      "product_line": "Minto",
-      "tvl_usd": 1664699.8809864419,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PancakeV3Pool",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x11bd737757b86c16646313fdf9e86681dd3f065f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1664699.8809864419,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -234,37 +206,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x00951a8d4f9bdfae11bb9e5da9bd50c03297625a",
-      "name": "PancakePair",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "pancakeswap",
-      "product_line": "Minto",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PancakePair",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x00951a8d4f9bdfae11bb9e5da9bd50c03297625a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 56,
@@ -453,7 +394,7 @@
       "auditor": "yAudit",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 12.5,
+      "coverage_pct": 16.7,
       "latest_audit": "2021-07"
     }
   ],
@@ -491,7 +432,7 @@
   ],
   "origin_summary": {
     "native": 4,
-    "upstream": 2,
+    "upstream": 0,
     "standard_library": 2,
     "needs_review": 3
   },

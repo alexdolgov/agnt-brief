@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "stakestone",
-  "generated_at": "2026-05-31T10:40:41.295Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:59:16.567Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stakestone",
     "tier": 1,
@@ -77,9 +77,14 @@
     }
   },
   "topography": {
-    "project_purpose": "StakeStone is an on-chain capital allocator that provides liquid staking and yield aggregation across multiple chains. It issues liquid staking tokens (STONE, SBTC) representing staked assets and optimizes yields through vaults and strategies.",
+    "project_purpose": "StakeStone has evolved beyond its legacy DeFiLlama-style identity as primarily a liquid staking and yield aggregation protocol issuing assets such as STONE and SBTC. Its current public positioning presents StakeStone as a crypto-native, autonomous neo bank and payments/yield layer, offering personal accounts, borderless payments, AI-agent payment capabilities, and yield-bearing USD products, while its legacy staking and on-chain yield products remain part of the broader historical protocol context.",
     "relationship_narrative": "The StakeStone family provides core vaults and tokens (STONE, SBTC) used across chains, while Berachain Vault and SBTC Contracts are chain-specific or asset-specific extensions. STONEBTC and STONEUSD are additional tokenized products that likely integrate with the core vaults and strategies.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 183,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

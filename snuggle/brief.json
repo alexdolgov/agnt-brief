@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "snuggle",
-  "generated_at": "2026-05-25T01:28:10.712Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.232Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "snuggle",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 89,
-    "total_addresses": 188,
-    "unique_implementations": 89,
-    "total_deployments": 188,
+    "total_contracts": 88,
+    "total_addresses": 179,
+    "unique_implementations": 88,
+    "total_deployments": 179,
     "audited_contracts": 12,
-    "unaudited_contracts": 40,
+    "unaudited_contracts": 39,
     "contracts_verified_audited": 12,
-    "contracts_verified_unaudited": 40,
+    "contracts_verified_unaudited": 39,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 37,
-    "coverage_pct": 23.1,
-    "total_audits": 3,
+    "coverage_pct": 23.5,
+    "total_audits": 2,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 1290275.7003600001,
+    "dl_tvl_usd": 1295890.02343,
     "tvl_usd": 0.000002,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -55,13 +55,18 @@
       "fresh": 2,
       "aging": 0,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
     "project_purpose": "Snuggle is a liquidity manager that automates concentrated liquidity positions across multiple decentralized exchanges. It uses vaults to manage user deposits and optimize yields through position adapters and reward strategies.",
     "relationship_narrative": "Both families share the same core vault logic (SnuggleVaultUpgradeable) and adapter pattern, but the Snuggle family extends functionality with reward adapters, governance contracts, and additional DEX support. The Base family appears to be a subset deployment, while the Snuggle family represents the full protocol suite with shared infrastructure like proxy admin and staking.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 88,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1169,109 +1174,6 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xff7da61e7037378da1baf3d40ba8e6e47dfb3a62",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15",
-      "name": "NonfungiblePositionManager",
-      "role": "governance",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
-      "product_line": "Snuggle",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15",
-      "impl_name": "NonfungiblePositionManager",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x197de4ea3c45eefad1727d7c4858e078f1e8d31b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x368435a76b1a855d054d3cdf4c20f5e0b2babbc8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x46a15b0b27311cedf172ab29e4f4766fbe7f4364",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x5c8d79b78786a2e9327f2d20910abd6d198c5905",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xacdcc3c6a2339d08e0ac9f694e4de7c52f890db3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xe6988b12753e2f6e1bf84843988a0242b17a5383",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xf0cbce1942a68beb3d1b73f0dd86c8dcc363ef49",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xf41599ffc71518fd4411941439dae7dee27020f9",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -3766,27 +3668,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3120,
-      "audit_key": "audit-3120",
-      "report_name": "AUDIT PARTNERAudited by Valves SecurityValves Security is one of the top security firms in the industry. We have also been audited by multiple independent researchers and white hat groups, with more third-party audits to come.Visit Valves Security →",
-      "report_url": "https://valvessecurity.com/",
-      "auditor": "yAudit",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 3121,
       "audit_key": "audit-3121",
       "report_name": "security review",
@@ -3830,7 +3711,7 @@
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 12,
-      "coverage_pct": 23.1,
+      "coverage_pct": 23.5,
       "latest_audit": "2026-02"
     }
   ],
@@ -3928,7 +3809,7 @@
   ],
   "origin_summary": {
     "native": 22,
-    "upstream": 19,
+    "upstream": 18,
     "standard_library": 5,
     "needs_review": 43
   },
@@ -3945,10 +3826,6 @@
       {
         "audit_id": 3119,
         "report_name": "DL audit link"
-      },
-      {
-        "audit_id": 3120,
-        "report_name": "AUDIT PARTNERAudited by Valves SecurityValves Security is one of the top security firms in the industry. We have also been audited by multiple independent researchers and white hat groups, with more third-party audits to come.Visit Valves Security →"
       }
     ],
     "inherited_remapped_matches": []

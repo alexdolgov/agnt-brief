@@ -1,14 +1,14 @@
 # Agentic Audit Brief: TrueFi
 
-⚠️ Lifecycle status: DEAD - TVL dropped 4.2% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 4.2% over 90 days
 
 ## Project Overview
 
 - Project: TrueFi (`truefi`)
 - Website: [https://app.truefi.io/](https://app.truefi.io/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-31T11:16:44.411Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:17.599Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum
 - Contract surface: 8 unique implementations (11 raw deployments)
 - DeFi Llama TVL: $15,393,827.90
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-TrueFi is a protocol for uncollateralized lending, enabling borrowers to access credit without posting collateral. It uses on-chain credit assessments and a decentralized governance system to manage lending pools and credit lines.
+TrueFi is/was an uncollateralized lending protocol that enabled borrowers to access credit without posting collateral, using on-chain credit assessments, lending pools, credit lines, and governance mechanisms. However, the current app.truefi.io homepage resolves to Brila and does not present active TrueFi lending app content, so current protocol descriptions should distinguish the historical TrueFi lending system from the present homepage experience.
 
 ### Architecture
 
@@ -31,13 +31,13 @@ The TrueFi family's AutomatedLineOfCreditFactory is governed by the Explore Lend
 - Unverified implementations: 0
 - Unique implementations: 8
 - Raw deployments: 11
-- Audits discovered: 29
+- Audits discovered: 24
 - Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-02 (stale)
-- Staleness: 0 fresh, 0 aging, 18 stale, 11 unknown
+- Staleness: 0 fresh, 0 aging, 17 stale, 7 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -89,8 +89,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [2023-02-22 ChainSecurity Audit - PortfolioDebtToken.pdf](https://github.com/trusttoken/audits/blob/master/PortfolioDebtToken/2023-02-22%20ChainSecurity%20Audit%20-%20PortfolioDebtToken.pdf) | yAudit | Audit | 2023-02 | stale | Direct | n/a | 0 | n/a |
-| [true_currency_audit_august_24_2020.pdf](https://github.com/trusttoken/audits/blob/master/TrueCurrency/true_currency_audit_august_24_2020.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [true_currency_audit_september_26_2020.pdf](https://github.com/trusttoken/audits/blob/master/TrueCurrency/true_currency_audit_september_26_2020.pdf) | unknown | Audit | 2020-09 | stale | Direct | n/a | 0 | n/a |
 | [2021-12-21 Chainsulting Audit -- One-Click Borrowing, Lines of Credit, Rate Model, TRU Staking, Default Liquidation.pdf](https://github.com/trusttoken/audits/blob/master/TrueFi/2021-12-21%20Chainsulting%20Audit%20--%20One-Click%20Borrowing%2C%20Lines%20of%20Credit%2C%20Rate%20Model%2C%20TRU%20Staking%2C%20Default%20Liquidation.pdf) | unknown | Audit | 2021-12 | stale | Direct | n/a | 0 | n/a |
 | [20211203 CertiK Audit Final Report.pdf](https://github.com/trusttoken/audits/blob/master/TrueFi/20211203%20CertiK%20Audit%20Final%20Report.pdf) | CertiK | Audit | 2021-12 | stale | Direct | n/a | 0 | n/a |
 | [REP-Trusttoken-#2-2021-09-13.pdf](https://github.com/trusttoken/audits/blob/master/TrueFi/REP-Trusttoken-%232-2021-09-13.pdf) | unknown | Audit | 2021-09 | stale | Direct | n/a | 0 | n/a |
@@ -110,13 +108,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [5.md](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/2022-01-21%20Gitcoin%20-%20surroundingart64/5.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [2022-01-22 Internal Security - TrueFi Lending Marketplace V1.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/2022-01-22%20Internal%20Security%20-%20TrueFi%20Lending%20Marketplace%20V1.pdf) | unknown | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
 | [2022-02-07 Solidified Audit - TrueFi Lending Marketplace V1.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/2022-02-07%20Solidified%20Audit%20-%20TrueFi%20Lending%20Marketplace%20V1.pdf) | unknown | Audit | 2022-02 | stale | Direct | contract_name | 3 | high |
-| [README.md (also discovered via alternate URL)](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/README.md) | unknown | Audit | 2022-02 | stale | Direct | contract_name|n/a | 2 | medium |
+| [README.md](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/README.md) | unknown | Audit | 2022-02 | stale | Direct | contract_name | 2 | medium |
 | [2022-05-26 G0 Group Audit - TrueFi Lending Marketplace V2.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV2/2022-05-26%20G0%20Group%20Audit%20-%20TrueFi%20Lending%20Marketplace%20V2.pdf) | unknown | Audit | 2022-05 | stale | Direct | contract_name | 6 | high |
 | [2022-06-07 ABDK Audit - TrueFi Lending Marketplace V2.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV2/2022-06-07%20ABDK%20Audit%20-%20TrueFi%20Lending%20Marketplace%20V2.pdf) | ABDK | Audit | 2022-06 | stale | Direct | contract_name | 6 | high |
 | [2022-08-10 Solidified Audit - TrueFi Lending Marketplace V2.pdf](https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV2/2022-08-10%20Solidified%20Audit%20-%20TrueFi%20Lending%20Marketplace%20V2.pdf) | unknown | Audit | 2022-08 | stale | Direct | contract_name | 6 | high |
-| [trust_token_audit_august_24_2020.pdf](https://github.com/trusttoken/audits/blob/master/TrustToken/trust_token_audit_august_24_2020.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [trust_token_audit_june_23_2020..pdf](https://github.com/trusttoken/audits/blob/master/TrustToken/trust_token_audit_june_23_2020..pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [trust_token_audit_november_11_2020.pdf](https://github.com/trusttoken/audits/blob/master/TrustToken/trust_token_audit_november_11_2020.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -142,7 +137,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 23
+- Audits with zero matched contracts: 18
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=5, medium=1
 - Match method counts: extraction_exact=26
@@ -150,8 +145,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [6665] 2023-02-22 ChainSecurity Audit - PortfolioDebtToken.pdf
-- [6667] true_currency_audit_august_24_2020.pdf
-- [6668] true_currency_audit_september_26_2020.pdf
 - [6669] 2021-12-21 Chainsulting Audit -- One-Click Borrowing, Lines of Credit, Rate Model, TRU Staking, Default Liquidation.pdf
 - [6670] 20211203 CertiK Audit Final Report.pdf
 - [6671] REP-Trusttoken-#2-2021-09-13.pdf
@@ -169,8 +162,5 @@ Zero-match audit list:
 - [6684] 4.md
 - [6685] 5.md
 - [6686] 2022-01-22 Internal Security - TrueFi Lending Marketplace V1.pdf
-- [6693] trust_token_audit_august_24_2020.pdf
-- [6694] trust_token_audit_june_23_2020..pdf
-- [6695] trust_token_audit_november_11_2020.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

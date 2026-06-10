@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "mendi-finance",
-  "generated_at": "2026-05-24T15:27:59.892Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "sunsetting",
+  "generated_at": "2026-06-10T20:59:07.456Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "mendi-finance",
     "tier": 1,
@@ -43,9 +43,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 11,
     "coverage_pct": 10.7,
-    "total_audits": 6,
+    "total_audits": 4,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 2031007.1778000002,
+    "dl_tvl_usd": 2009233.42641,
     "tvl_usd": 79070837.41473198,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -64,15 +64,20 @@
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 1,
-      "aging": 4,
+      "aging": 2,
       "stale": 0,
       "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Mendi Finance is a decentralized lending protocol on Linea that allows users to supply and borrow crypto assets. It uses a Compound-like architecture with cToken markets, a Comptroller for risk management, and reward distribution mechanisms.",
+    "project_purpose": "Mendi Finance began as a Compound-style decentralized lending protocol on Linea, with cToken-style markets, a Comptroller for risk management, and reward distribution mechanisms. The project later rebranded/evolved into Malda, a unified cross-chain lending protocol positioning itself around zkProof-based cross-chain functionality. The current brief should distinguish the legacy Linea-only Mendi deployment from the broader Malda cross-chain lending system, and note that Malda has since been sunset and open-sourced.",
     "relationship_narrative": "The Comptroller manages all lending markets and coordinates reward distribution. Reward-related contracts (RewardManagerV2, RewardDistributor, StakedDistributor, OwnedDistributor, RewardHolder) work together to distribute incentives to users, while LPDepositor contracts facilitate liquidity provision.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 39,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -2213,48 +2218,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2934,
-      "audit_key": "audit-2934",
-      "report_name": "* [malda-lending report]()",
-      "report_url": "https://veridise.com/audits-archive/company/malda/malda-lending-2025-05-20",
-      "auditor": "Veridise",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2935,
-      "audit_key": "audit-2935",
-      "report_name": "* [malda-zk-coprocessor report]()",
-      "report_url": "https://veridise.com/audits-archive/company/malda/malda-zk-coprocessor-2025-05-20",
-      "auditor": "Veridise",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -2263,7 +2226,7 @@
       "tier": 2,
       "contracts_covered": 3,
       "coverage_pct": 10.7,
-      "latest_audit": "2025-05"
+      "latest_audit": "2025-04"
     },
     {
       "auditor": "Sherlock",
@@ -2467,14 +2430,6 @@
       },
       {
         "audit_id": 2933,
-        "report_name": "* [malda-zk-coprocessor report]()"
-      },
-      {
-        "audit_id": 2934,
-        "report_name": "* [malda-lending report]()"
-      },
-      {
-        "audit_id": 2935,
         "report_name": "* [malda-zk-coprocessor report]()"
       }
     ],

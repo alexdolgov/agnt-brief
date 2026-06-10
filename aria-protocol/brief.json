@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "aria-protocol",
-  "generated_at": "2026-06-10T20:42:10.525Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "generated_at": "2026-06-10T20:58:57.742Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "aria-protocol",
@@ -66,7 +66,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Aria is an intellectual-property real-world asset protocol focused on music/IP rights, royalties and yield, staking or vault participation, and licensing/remix use cases, with current project context tied to the Story ecosystem. The BSC AriaOFT contract should be treated separately as a token/bridge-related deployment unless independently evidenced as the current core protocol surface.",
     "relationship_narrative": null,
     "product_family_count": 1
   },

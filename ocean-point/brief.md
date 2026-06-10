@@ -7,8 +7,8 @@
 - Project: Ocean Point (`ocean-point`)
 - Website: [https://app.oceanpoint.fi/](https://app.oceanpoint.fi/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:07:18.671Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:08.763Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 40 unique implementations (56 raw deployments)
 - DeFi Llama TVL: $1,135,721.93
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Ocean Point is a DeFi protocol that enables users to stake BST tokens and liquidity pool tokens to earn rewards, and to participate in tokenized real estate through property registries. It combines yield farming with real-world asset tokenization.
+Ocean Point is a Blocksquare DeFi/liquidity layer for the BST ecosystem, positioning itself as a liquidity engine with staking and pool2-style liquidity participation around BST. It is also associated with tokenized real estate/RWA infrastructure and USD-correlating stablecoin positioning, but any marketplace-trading or fee-distribution claims should be treated as unverified unless supported by project documentation or contract-level analysis.
 
 ### Architecture
 

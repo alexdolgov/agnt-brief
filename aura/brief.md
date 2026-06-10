@@ -5,8 +5,8 @@
 - Project: Aura (`aura`)
 - Website: [https://aura.finance](https://aura.finance)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:49:38.558Z
-- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
+- Generated: 2026-06-10T20:58:57.876Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, ethereum, fraxtal, gnosis, optimism, polygon, polygon-zkevm
 - Contract surface: 497 unique implementations (1210 raw deployments)
 - DeFi Llama TVL: $26,149,389.14

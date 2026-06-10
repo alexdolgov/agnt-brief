@@ -5,8 +5,8 @@
 - Project: Fulcrom (`fulcrom`)
 - Website: [https://fulcrom.finance](https://fulcrom.finance)
 - Lifecycle: active (Tier 0, 53.4% below peak)
-- Generated: 2026-05-31T08:04:37.307Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.077Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: cronos, zksync-era
 - Contract surface: 79 unique implementations (79 raw deployments)
 - DeFi Llama TVL: $13,322,016.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Fulcrom is a decentralized exchange and derivatives protocol operating on Cronos and zkSync Era. It offers spot trading via an automated market maker (AMM) and perpetual futures trading, enabling users to swap tokens and trade leveraged positions.
+Fulcrom is a decentralized perpetual/leverage trading protocol with FUL and FLP staking and liquidity products. Its current chain presence includes Cronos, zkSync Era, and Cronos zkEVM; the indexed contract surface should be understood as covering only the listed contracts unless Cronos zkEVM contracts are added separately. Unsupported claims that Fulcrom provides general spot trading through a Fulcrom-owned AMM should be removed unless independently verified contracts and documentation are added.
 
 ### Architecture
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "neutral-trade",
-  "generated_at": "2026-05-22T17:26:30.941Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:08.142Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 18840293.21344,
-    "tvl_usd": 18840293.21344,
+    "dl_tvl_usd": 18618992.82548,
+    "tvl_usd": 18618992.82548,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Neutral Trade is an onchain capital allocator that deploys assets across DeFi strategies. It aims to optimize yield and manage risk through automated allocation logic.",
-    "relationship_narrative": "No product families or contracts are defined in the provided inventory, so no relationships can be described.",
+    "project_purpose": "Neutral Trade is a Solana-based marketplace for professionally managed on-chain quant strategy vaults, enabling users to allocate capital to curated trading and yield strategies managed by quantitative strategy providers.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

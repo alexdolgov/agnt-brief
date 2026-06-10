@@ -5,17 +5,17 @@
 - Project: Blueshift (`blueshift`)
 - Website: [https://blueshift.fi/](https://blueshift.fi/)
 - Lifecycle: active (Tier 0, 67.1% below peak)
-- Generated: 2026-05-25T16:38:50.674Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:00.995Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: kava, polygon
-- Contract surface: 24 unique implementations (29 raw deployments)
-- DeFi Llama TVL: $4,377,263.71
+- Contract surface: 23 unique implementations (28 raw deployments)
+- DeFi Llama TVL: $4,323,105.86
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Blueshift is a decentralized exchange (DEX) protocol operating on Polygon and Kava, enabling users to swap tokens and provide liquidity. It uses upgradeable proxy contracts for core logic and integrates with wrapped native tokens like WMATIC.
+Blueshift is a cross-chain portfolio-managed decentralized exchange, liquidity management, and crypto asset management protocol. Its product surface includes token swaps, liquidity portfolios, portfolio and asset-management functionality, farming and staking, analytics, and bridge/cross-chain functionality across active ecosystems including BOB, Milkomeda/Milkomeda A1, Polygon, and Kava.
 
 ### Architecture
 
@@ -23,12 +23,12 @@ The protocol consists of a single product family where the TransparentUpgradeabl
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
-- Verified + Unaudited implementations: 3
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 21
-- Unique implementations: 24
-- Raw deployments: 29
+- Unique implementations: 23
+- Raw deployments: 28
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,13 +46,12 @@ The protocol consists of a single product family where the TransparentUpgradeabl
 
 - None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | ProxyAdmin | governance | polygon | 2 deployments: polygon [`0xdc05ba...2a3186`](./contracts/polygon-137/0xdc05bacc1f97f874d9d09860a8a93365372a3186/); polygon `0xf8c717...8065f5` | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | polygon | 5 deployments: polygon [`0x2080a3...4edc83`](./contracts/polygon-137/0x2080a319a4b11d097050722b6b65d09f754edc83/); polygon `0x9b44b2...97f251`; polygon `0xb6b3b5...13c9cb`; polygon `0xeb7b35...3e9550`; polygon `0xf79900...37a4e1` | ⚠️ Unaudited |
-| WMATIC | unknown | polygon | [`0x0d500b...df1270`](./contracts/polygon-137/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -76,7 +75,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | polygon | `0x12fd7e...c3789b` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x27e552...1faa2e` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x35701f...c96f3f` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x3abd79...367b20` | ❓ Unverified |
+| UnnamedContract | proxy | polygon | `0x3abd79...367b20` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x7b8343...ca2bca` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x800618...a6653c` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x96c95d...7e7242` | ❓ Unverified |
@@ -114,7 +113,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 1 |
 | upstream | 0 |
-| standard_library | 2 |
+| standard_library | 1 |
 | needs_review | 21 |
 
 ## Scope Matching Notes

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kinza-finance",
-  "generated_at": "2026-05-30T10:52:49.058Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
+  "generated_at": "2026-06-10T20:59:06.722Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "kinza-finance",
@@ -71,9 +71,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Kinza Finance is a decentralized lending protocol that enables users to supply and borrow digital assets across multiple chains. It uses a pool-based model with variable interest rates, liquidation mechanisms, and governance controls.",
+    "project_purpose": "Kinza Finance is a multi-chain decentralized lending and money-market protocol deployed across Ethereum, BNB Chain/Binance, Mantle, and opBNB. It enables users to supply and borrow digital assets through pool-based markets with variable interest rates, liquidation mechanisms, oracle integrations, and governance controls.",
     "relationship_narrative": "The protocol is organized around a single lending family with two deployments (likely mainnet and testnet) sharing identical contract patterns. Core lending logic resides in Pool and PoolConfigurator, managed via PoolAddressesProvider, while governance and access control are handled by GnosisSafe multisigs and ACLManager.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 154,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

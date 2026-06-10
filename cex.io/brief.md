@@ -5,21 +5,22 @@
 - Project: CEX.IO (`cex.io`)
 - Website: [http://cex.io/](http://cex.io/)
 - Lifecycle: active (Tier 0, 77.4% below peak)
-- Generated: 2026-05-31T07:39:57.191Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.358Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, polygon
 - Contract surface: 3 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $7,647,676.25
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-CEX.IO is a centralized exchange (CEX) that uses on-chain multisig wallets (Gnosis Safe) for treasury management and operational custody of funds on Ethereum and Polygon.
-
-### Architecture
-
-All contracts are Gnosis Safe multisig wallets deployed by the same deployer cluster, indicating a single operational entity managing funds across multiple chains.
+CEX.IO is a centralized cryptocurrency exchange offering services such as buying, selling, trading, holding, earn/staking products, fiat on/off-ramps, margin trading, and related wallet/payment services. The on-chain contract surface identified for this brief is limited to Safe/Gnosis Safe wallet proxies used for custody or treasury operations, and should be distinguished from the broader centralized exchange business and reserve/TVL footprint.
 
 ## Audit Coverage Summary
 
@@ -29,11 +30,11 @@ All contracts are Gnosis Safe multisig wallets deployed by the same deployer clu
 - Unverified implementations: 0
 - Unique implementations: 3
 - Raw deployments: 4
-- Audits discovered: 1
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2026-03 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -76,7 +77,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [PCI DSS Level 1 certification](https://static.cex.io/img/legal/pci.pdf) | PCI DSS | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -97,13 +97,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [2134] PCI DSS Level 1 certification
 
 Fork inheritance lineage and inherited audits are included when available.

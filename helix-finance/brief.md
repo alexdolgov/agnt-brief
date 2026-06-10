@@ -1,14 +1,12 @@
 # Agentic Audit Brief: HELIX Finance
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: HELIX Finance (`helix-finance`)
 - Website: [https://helixfinance.io/](https://helixfinance.io/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T08:21:51.105Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:04.565Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 9 unique implementations (14 raw deployments)
 - DeFi Llama TVL: $10,995,873.69
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-HELIX Finance is a protocol for real-world asset (RWA) lending, enabling users to borrow and lend against tokenized real-world assets. It provides a factory for creating deal-specific lending agreements and manages deal tokens, configurations, and identity verification.
+Helix Finance is an institutional-grade RWAFi orchestration layer centered on Helix Hub, providing access to multi-strategy real-world-asset yield opportunities, omni-chain composability, attestations, and USHD/USHDx access. It connects on-chain investors to real-world asset yields using data and credit analytics while relying on off-chain RWA custody and related institutional infrastructure. The currently listed Ethereum contracts should be treated as a partial or legacy RWA lending/deal-management surface unless current Helix Hub and USHD/USHDx contract addresses are separately verified.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ All contracts are part of a single product family deployed by the same deployer.
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

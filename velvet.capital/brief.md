@@ -7,11 +7,11 @@
 - Project: Velvet.Capital (`velvet.capital`)
 - Website: [https://dapp.velvet.capital/Referred/6956901b440d4fc522b2eb7b](https://dapp.velvet.capital/Referred/6956901b440d4fc522b2eb7b)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-24T23:13:59.933Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:18.555Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, bsc, ethereum
 - Contract surface: 420 unique implementations (624 raw deployments)
-- DeFi Llama TVL: $1,435,978.00
+- DeFi Llama TVL: $1,426,218.00
 - On-chain TVL (included contracts): $95,216,575.47
 - TVL by chain: Bsc $95,216,569.37 | Base $6.10
 
@@ -35,7 +35,7 @@ Both families share infrastructure such as ProtocolConfig and TokenRegistry cont
 - Scoreable audits (matched contracts): 13
 - ASD (verified + unaudited TVL): $95,216,575.47
 - Latest audit: 2025-07 (fresh)
-- Staleness: 1 fresh, 4 aging, 7 stale, 1 unknown
+- Staleness: 1 fresh, 2 aging, 9 stale, 1 unknown
 - Tier 1 coverage: 2.2% (Spearbit)
 - Note: This protocol is classified as [declining]. ASD of $95,216,575.47 represents exposure in a protocol with declining activity.
 
@@ -93,7 +93,7 @@ Both families share infrastructure such as ProtocolConfig and TokenRegistry cont
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | VelvetToken | token | bsc | [`0x8b1943...8c1488`](./contracts/bsc-56/0x8b194370825e37b33373e74a41009161808c1488/) | ⚠️ Unaudited |
-| VaultProxy | core_logic | base | [`0x4da07a...df2e92`](./contracts/base-8453/0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92/) | ⚠️ Unaudited |
+| VaultProxy | proxy | base | [`0x4da07a...df2e92`](./contracts/base-8453/0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92/) | ⚠️ Unaudited |
 | BaseHandler | unknown | arbitrum | 4 deployments: arbitrum [`0x1e1287...0ccd80`](./contracts/arbitrum-42161/0x1e1287ca35954860d3197bbf22856b27890ccd80/); arbitrum `0x97373c...8a5d31`; arbitrum `0xb6e3dc...a51028`; arbitrum `0xd19482...e17974` | ⚠️ Unaudited |
 | ERC1967Proxy | proxy | base | 60 deployments: ethereum `0xd5c3b4...5379b2`; base [`0x085606...8711b8`](./contracts/base-8453/0x085606d8ae07f1b457dc814bdda315078c8711b8/); base `0x09ce0a...9e5ae7`; base `0x0a6c29...d321e3`; base `0x0fe7c8...d13529`; base `0x19c6d3...80532c`; base `0x1b902c...44346a`; base `0x1d0f17...8cf0a1`; base `0x1fecf4...f7f142`; base `0x2f692e...9eb079`; base `0x303e89...bb9144`; base `0x321c15...c3ac14`; base `0x364a15...b8516d`; base `0x3dfb1d...aeff13`; base `0x440908...4b75fe`; base `0x4c5727...00ef82`; base `0x56b697...2f3ca8`; base `0x57de05...668c7b`; base `0x60939a...1b2389`; base `0x638463...746a51`; base `0x682200...cc5dab`; base `0x6952ad...762ae6`; base `0x6bec6a...07d131`; base `0x6decb1...5f7c8e`; base `0x6e9036...e1dae5`; base `0x6f7cdd...ca224d`; base `0x81d083...927d9d`; base `0x88b2bb...c98d86`; base `0x89c087...c6ce2e`; base `0x8b71ee...3a6c2b`; base `0x8d3f1b...c03463`; base `0x90dcd1...866f95`; base `0xa019e0...523b62`; base `0xa2cb7e...8ef5f4`; base `0xa68901...270207`; base `0xab1a20...bdbfc9`; base `0xadaf29...db7c6c`; base `0xb0c31b...e25854`; base `0xb9c922...da8999`; base `0xbd3e97...4c15c4`; base `0xc0a0f2...3854db`; base `0xc13246...5d95ed`; base `0xcf3be6...d7862d`; base `0xcfc13b...e42c0c`; base `0xd2a158...cfd8a3`; base `0xd48c15...2c4542`; base `0xd6ef57...333acd`; base `0xd7b766...6ed91d`; base `0xe3df7e...bd8d3c`; base `0xe45a01...af05d5`; base `0xe58545...4ca67d`; base `0xe6b12d...1a22db`; base `0xeecd5a...16c435`; base `0xf171ca...ac5962`; base `0xf1acb5...2bfadf`; base `0xf31b95...9faca3`; arbitrum `0x240222...458bc9`; arbitrum `0x2bc9b4...3877c1`; arbitrum `0x3a15a0...4f85e4`; arbitrum `0x6293a8...ffe402` | ⚠️ Unaudited |
 | MetaAggregatorManager | governance | base | [`0x9070c2...860e9b`](./contracts/base-8453/0x9070c26eb90f9c54ee8d7953dbdcde01c9860e9b/) | ⚠️ Unaudited |
@@ -503,8 +503,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Audit_Report_VLVT-V3C_FINAL_20-1.pdf](https://github.com/Velvet-Capital/audits/blob/main/Audit_Report_VLVT-V3C_FINAL_20-1.pdf) | unknown | Audit | 2024-06 | aging | Direct | contract_name | 33 | high |
-| [Audit_Report_VLVT-V3C_FINAL_20.pdf](https://github.com/Velvet-Capital/audits/blob/main/Audit_Report_VLVT-V3C_FINAL_20.pdf) | unknown | Audit | 2024-06 | aging | Direct | contract_name | 33 | high |
+| [Audit_Report_VLVT-V3C_FINAL_20-1.pdf](https://github.com/Velvet-Capital/audits/blob/main/Audit_Report_VLVT-V3C_FINAL_20-1.pdf) | unknown | Audit | 2024-06 | stale | Direct | contract_name | 33 | high |
+| [Audit_Report_VLVT-V3C_FINAL_20.pdf](https://github.com/Velvet-Capital/audits/blob/main/Audit_Report_VLVT-V3C_FINAL_20.pdf) | unknown | Audit | 2024-06 | stale | Direct | contract_name | 33 | high |
 | [PeckShield-Audit-Report-Velvet-v1.0_final.pdf](https://github.com/Velvet-Capital/audits/blob/main/PeckShield-Audit-Report-Velvet-v1.0_final.pdf) | PeckShield | Audit | 2022-08 | stale | Direct | contract_name | 2 | high |
 | [PeckShield-Audit-Report-VelvetV2-v1.0-2.pdf](https://github.com/Velvet-Capital/audits/blob/main/PeckShield-Audit-Report-VelvetV2-v1.0-2.pdf) | PeckShield | Audit | 2023-10 | stale | Direct | contract_name | 17 | high |
 | [PeckShield-Audit-Report-VelvetV4-v1.0-3.pdf](https://github.com/Velvet-Capital/audits/blob/main/PeckShield-Audit-Report-VelvetV4-v1.0-3.pdf) | PeckShield | Audit | 2024-12 | aging | Direct | contract_name | 12 | high |
@@ -524,7 +524,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | bsc | [`0x8b1943...8c1488`](./contracts/bsc-56/0x8b194370825e37b33373e74a41009161808c1488/) | VelvetToken | token | $95,216,569.37 | Verified native implementation with $95,216,569.37 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x4da07a...df2e92`](./contracts/base-8453/0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92/) | VaultProxy | core_logic | $6.10 | Verified native implementation with $6.10 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4da07a...df2e92`](./contracts/base-8453/0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92/) | VaultProxy | proxy | $6.10 | Verified native implementation with $6.10 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1e1287...0ccd80`](./contracts/arbitrum-42161/0x1e1287ca35954860d3197bbf22856b27890ccd80/) | BaseHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x9070c2...860e9b`](./contracts/base-8453/0x9070c26eb90f9c54ee8d7953dbdcde01c9860e9b/) | MetaAggregatorManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1141ca...1afe94`](./contracts/arbitrum-42161/0x1141ca2a3de147c658beb9a1ebc6beb6e71afe94/) | OffChainRebalance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |

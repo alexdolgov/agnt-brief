@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "truefi",
-  "generated_at": "2026-05-31T11:16:44.411Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:17.599Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "truefi",
     "tier": 1,
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 37.5,
-    "total_audits": 29,
+    "total_audits": 24,
     "scoreable_audits": 6,
     "dl_tvl_usd": 15393827.90294,
     "tvl_usd": 15393827.90294,
@@ -62,14 +62,19 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 18,
-      "unknown": 11
+      "stale": 17,
+      "unknown": 7
     }
   },
   "topography": {
-    "project_purpose": "TrueFi is a protocol for uncollateralized lending, enabling borrowers to access credit without posting collateral. It uses on-chain credit assessments and a decentralized governance system to manage lending pools and credit lines.",
+    "project_purpose": "TrueFi is/was an uncollateralized lending protocol that enabled borrowers to access credit without posting collateral, using on-chain credit assessments, lending pools, credit lines, and governance mechanisms. However, the current app.truefi.io homepage resolves to Brila and does not present active TrueFi lending app content, so current protocol descriptions should distinguish the historical TrueFi lending system from the present homepage experience.",
     "relationship_narrative": "The TrueFi family's AutomatedLineOfCreditFactory is governed by the Explore Lending Vaults family's GnosisSafeProxy, which controls protocol configuration. The ProxyWrapper acts as a registry and proxy for the factory, linking governance decisions to credit line deployment.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 8,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -379,48 +384,6 @@
       "audit_type": "audit",
       "freshness": "stale",
       "date": "2023-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6667,
-      "audit_key": "audit-6667",
-      "report_name": "true_currency_audit_august_24_2020.pdf",
-      "report_url": "https://github.com/trusttoken/audits/blob/master/TrueCurrency/true_currency_audit_august_24_2020.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6668,
-      "audit_key": "audit-6668",
-      "report_name": "true_currency_audit_september_26_2020.pdf",
-      "report_url": "https://github.com/trusttoken/audits/blob/master/TrueCurrency/true_currency_audit_september_26_2020.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2020-09",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -886,7 +849,7 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name|n/a",
+      "scope_format": "contract_name",
       "extracted_names": [
         "BorrowerSignatureVerifier",
         "BulletLoans",
@@ -899,17 +862,7 @@
       "scope_note": null,
       "extraction_confidence": "medium",
       "scope_section_found": false,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 6666,
-          "report_url": "https://github.com/trusttoken/audits/blob/master/README.md"
-        },
-        {
-          "audit_id": 6689,
-          "report_url": "https://github.com/trusttoken/audits/blob/master/TrueFiLendingMarketplaceV1/README.md"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 6690,
@@ -1052,69 +1005,6 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6693,
-      "audit_key": "audit-6693",
-      "report_name": "trust_token_audit_august_24_2020.pdf",
-      "report_url": "https://github.com/trusttoken/audits/blob/master/TrustToken/trust_token_audit_august_24_2020.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6694,
-      "audit_key": "audit-6694",
-      "report_name": "trust_token_audit_june_23_2020..pdf",
-      "report_url": "https://github.com/trusttoken/audits/blob/master/TrustToken/trust_token_audit_june_23_2020..pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6695,
-      "audit_key": "audit-6695",
-      "report_name": "trust_token_audit_november_11_2020.pdf",
-      "report_url": "https://github.com/trusttoken/audits/blob/master/TrustToken/trust_token_audit_november_11_2020.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -1197,14 +1087,6 @@
         "report_name": "2023-02-22 ChainSecurity Audit - PortfolioDebtToken.pdf"
       },
       {
-        "audit_id": 6667,
-        "report_name": "true_currency_audit_august_24_2020.pdf"
-      },
-      {
-        "audit_id": 6668,
-        "report_name": "true_currency_audit_september_26_2020.pdf"
-      },
-      {
         "audit_id": 6669,
         "report_name": "2021-12-21 Chainsulting Audit -- One-Click Borrowing, Lines of Credit, Rate Model, TRU Staking, Default Liquidation.pdf"
       },
@@ -1271,18 +1153,6 @@
       {
         "audit_id": 6686,
         "report_name": "2022-01-22 Internal Security - TrueFi Lending Marketplace V1.pdf"
-      },
-      {
-        "audit_id": 6693,
-        "report_name": "trust_token_audit_august_24_2020.pdf"
-      },
-      {
-        "audit_id": 6694,
-        "report_name": "trust_token_audit_june_23_2020..pdf"
-      },
-      {
-        "audit_id": 6695,
-        "report_name": "trust_token_audit_november_11_2020.pdf"
       }
     ],
     "inherited_remapped_matches": []

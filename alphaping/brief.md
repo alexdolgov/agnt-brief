@@ -5,8 +5,8 @@
 - Project: AlphaPing (`alphaping`)
 - Website: [https://alphaping.ch/](https://alphaping.ch/)
 - Lifecycle: active (Tier 0, 35.3% below peak)
-- Generated: 2026-06-10T20:23:53.109Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.810Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $67,874,222.07
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+AlphaPing is a mandate-driven, non-custodial on-chain credit/lending vault protocol with explicit risk constraints and verifiable accounting. Its live protocol surface is expected to include vault, share-token, strategy, accounting, manager, or related protocol contracts beyond the captured Safe multisig/admin wallet.
 
 ## Audit Coverage Summary
 

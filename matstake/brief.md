@@ -5,21 +5,22 @@
 - Project: MatStake (`matstake`)
 - Website: [https://matstake.io/](https://matstake.io/)
 - Lifecycle: unknown
-- Generated: 2026-05-23T19:37:55.461Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:07.269Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $4,767,660.50
+- DeFi Llama TVL: $4,668,328.32
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-MatStake is a staking pool protocol that allows users to stake tokens and earn rewards.
-
-### Architecture
-
-No contract inventory or structural relationships are available to describe shared infrastructure or dependencies.
+MatStake is a Matchain MAT staking platform that supports delegate staking and liquid staking, enabling users to stake MAT, earn rewards, and use liquid staking/yield functionality such as stMAT.
 
 ## Audit Coverage Summary
 

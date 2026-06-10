@@ -7,17 +7,17 @@
 - Project: HashDAO Finance (`hashdao-finance`)
 - Website: [https://www.hashdao.finance](https://www.hashdao.finance)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-24T19:07:45.699Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:04.530Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, optimism
-- Contract surface: 51 unique implementations (123 raw deployments)
-- DeFi Llama TVL: $1,672,280.98
+- Contract surface: 50 unique implementations (122 raw deployments)
+- DeFi Llama TVL: $1,639,221.29
 - On-chain TVL (included contracts): $2,759,621.22
 - TVL by chain: Arbitrum $2,759,621.22
 
 ## Project Description
 
-HashDAO Finance is a decentralized derivatives protocol enabling users to trade perpetual contracts and other synthetic assets. It provides liquidity pools, order management, and price reporting infrastructure to facilitate trustless trading on Optimism and Arbitrum One.
+HashDAO Finance is an Arbitrum-focused non-custodial perpetual DEX with liquidity pools and LP risk-management products.
 
 ### Architecture
 
@@ -25,12 +25,12 @@ All contracts are deployed under a single product family and share a common upgr
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 10/19 (52.6%)
-- Verified + Unaudited implementations: 9
+- Verified implementations audited: 10/18 (55.6%)
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 2
 - Unverified implementations: 32
-- Unique implementations: 51
-- Raw deployments: 123
+- Unique implementations: 50
+- Raw deployments: 122
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -43,8 +43,8 @@ All contracts are deployed under a single product family and share a common upgr
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 10 | 52.6% | 2023-04 |
-| SolidProof | Tier 2 | 1 | 5.3% | n/a |
+| unknown | Tier 2 | 10 | 55.6% | 2023-04 |
+| SolidProof | Tier 2 | 1 | 5.6% | n/a |
 
 ## Contract Surface
 
@@ -61,7 +61,7 @@ All contracts are deployed under a single product family and share a common upgr
 | PriceReporter | operational_periphery | arbitrum | 6 deployments: optimism `0xcc7913...c12a0d`; optimism `0xcd7a1b...32dbc4`; arbitrum [`0x26180d...d40232`](./contracts/arbitrum-42161/0x26180d4fa111dbb122d5756323b3aa4bfdd40232/); arbitrum `0x6ce6fe...193db4`; arbitrum `0xe407c5...566f53`; arbitrum `0xe631aa...7acf4c` | ✅ Audited |
 | VeToken | token | optimism | 4 deployments: optimism [`0x133bec...2485d6`](./contracts/optimism-10/0x133bec4ac9ccbcc479aa9b9cb7a1c916a72485d6/); arbitrum `0x8b5264...1c73a5`; arbitrum `0xb7047f...9aef47`; arbitrum `0xda4f46...54ff87` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -70,7 +70,6 @@ All contracts are deployed under a single product family and share a common upgr
 | LPToken | token | optimism | 6 deployments: optimism [`0x048e77...1775a2`](./contracts/optimism-10/0x048e77257df92787cc1af4015b6e9a7d521775a2/); optimism `0x52d709...fd63f2`; optimism `0x5dad2e...d46125`; optimism `0xfc4535...d4d881`; arbitrum `0x7d5332...cf021f`; arbitrum `0x947af1...e551cd` | ⚠️ Unaudited |
 | MasterChefV3 | unknown | arbitrum | 6 deployments: optimism `0x958882...815006`; arbitrum [`0x0517a0...4beade`](./contracts/arbitrum-42161/0x0517a00f1dbb2ec4adbe422255633d5b0a4beade/); arbitrum `0x72f19d...436ab1`; arbitrum `0x824321...42f4d6`; arbitrum `0x882105...c42f85`; arbitrum `0xcec45b...f9c5d8` | ⚠️ Unaudited |
 | Oracle | operational_periphery | optimism | 3 deployments: optimism [`0x172ef9...2a3002`](./contracts/optimism-10/0x172ef9fa593a55f01353366462523550762a3002/); arbitrum `0x7e7df8...be14f3`; arbitrum `0xb4e0e4...1ea39a` | ⚠️ Unaudited |
-| Pair | unknown | optimism | [`0xb426ae...d35dcf`](./contracts/optimism-10/0xb426ae40e43be57215ba7daa06cbc5d48ed35dcf/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | arbitrum | 2 deployments: optimism `0xa01729...750f11`; arbitrum [`0x7c9d49...b7c9db`](./contracts/arbitrum-42161/0x7c9d49af6be557f2ae30f907cd111b42eab7c9db/) | ⚠️ Unaudited |
 | Timelock | governance | optimism | 2 deployments: optimism [`0x20cc0f...011fb7`](./contracts/optimism-10/0x20cc0f5701af17effe10cdcc8265abcd5e011fb7/); arbitrum `0x84b7a2...8fe103` | ⚠️ Unaudited |
 | UniswapV2Pair | unknown | arbitrum | [`0x8dc6ef...190703`](./contracts/arbitrum-42161/0x8dc6efd57a13b7ba3ff7824c9708db24d3190703/) | ⚠️ Unaudited |
@@ -153,7 +152,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 27 |
-| upstream | 2 |
+| upstream | 1 |
 | standard_library | 1 |
 | needs_review | 21 |
 

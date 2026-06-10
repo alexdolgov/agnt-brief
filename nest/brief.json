@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nest",
-  "generated_at": "2026-05-23T05:45:20.047Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:08.087Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "nest",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 217,
     "coverage_pct": 12.9,
-    "total_audits": 10,
+    "total_audits": 1,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 9327698,
+    "dl_tvl_usd": 12591365,
     "tvl_usd": 69415308.58147964,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -56,15 +56,20 @@
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 1,
-      "aging": 2,
-      "stale": 1,
-      "unknown": 6
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "NEST is a decentralized protocol that combines a ve(3,3) tokenomics layer with a concentrated liquidity DEX and a legacy synthetic asset system. It enables liquidity provision, trading, yield farming, and governance through its native NEST token and veNEST voting escrow.",
+    "project_purpose": "Nest is the current Nest Exchange/NEST Hyperliquid MetaDEX product focused on decentralized trading and liquidity on Hyperliquid. Legacy Ethereum/BSC/Polygon NEST-like systems, unrelated token contracts, and any claimed legacy synthetic-asset components should not be included unless independently verified as part of the current project.",
     "relationship_narrative": "The Core family provides the ve(3,3) layer that governs emissions and incentives for the DEX's liquidity pools, while the Key Contracts supply the NEST token and voting escrow used across both. The NEST family includes legacy components and veNEST compounding strategies that interact with the Core gauges and bribes.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 349,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -12424,235 +12429,6 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2102,
-      "audit_key": "audit-2102",
-      "report_name": "* **Final report (Code4rena):** [](https://code4rena.com/reports/2024-09-fenix-finance?utm_source=chatgpt.com)",
-      "report_url": "https://code4rena.com/reports/2024-09-fenix-finance",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "aging",
-      "date": "2024-09",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2103,
-      "audit_key": "audit-2103",
-      "report_name": "Algebra_Paladin_report.pdf",
-      "report_url": "https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Algebra_Paladin_report.pdf",
-      "auditor": "Paladin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 2103,
-          "report_url": "https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Algebra_Paladin_report.pdf"
-        },
-        {
-          "audit_id": 2107,
-          "report_url": "https://github.com/cryptoalgebra/Algebra/blob/master/audits/Algebra_Paladin_report.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 2104,
-      "audit_key": "audit-2104",
-      "report_name": "Core_audit_report_MixBytes.pdf",
-      "report_url": "https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Core_audit_report_MixBytes.pdf",
-      "auditor": "MixBytes",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 2104,
-          "report_url": "https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Core_audit_report_MixBytes.pdf"
-        },
-        {
-          "audit_id": 2111,
-          "report_url": "https://github.com/cryptoalgebra/Algebra/blob/master/audits/Core_audit_report_MixBytes.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 2105,
-      "audit_key": "audit-2105",
-      "report_name": "Farming_Plugin_report_MixBytes.pdf",
-      "report_url": "https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Farming_Plugin_report_MixBytes.pdf",
-      "auditor": "MixBytes",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 2105,
-          "report_url": "https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Farming_Plugin_report_MixBytes.pdf"
-        },
-        {
-          "audit_id": 2112,
-          "report_url": "https://github.com/cryptoalgebra/Algebra/blob/master/audits/Farming_Plugin_report_MixBytes.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 2106,
-      "audit_key": "audit-2106",
-      "report_name": "Riley_Holterhus_Algebra_Integral.pdf",
-      "report_url": "https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Riley_Holterhus_Algebra_Integral.pdf",
-      "auditor": "Riley Holterhus",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 2106,
-          "report_url": "https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Riley_Holterhus_Algebra_Integral.pdf"
-        },
-        {
-          "audit_id": 2113,
-          "report_url": "https://github.com/cryptoalgebra/Algebra/blob/master/audits/Riley_Holterhus_Algebra_Integral.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 2108,
-      "audit_key": "audit-2108",
-      "report_name": "Bailsec_Algebra_Integral_Update_Audit_differential_Report.pdf",
-      "report_url": "https://github.com/cryptoalgebra/Algebra/blob/master/audits/Bailsec_Algebra_Integral_Update_Audit_differential_Report.pdf",
-      "auditor": "Bailsec",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2109,
-      "audit_key": "audit-2109",
-      "report_name": "Bailsec_Algebra_Integralv1.2_Core_Update_Audit.pdf",
-      "report_url": "https://github.com/cryptoalgebra/Algebra/blob/master/audits/Bailsec_Algebra_Integralv1.2_Core_Update_Audit.pdf",
-      "auditor": "Bailsec",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2110,
-      "audit_key": "audit-2110",
-      "report_name": "Base_Plugin_report_MixBytes.pdf",
-      "report_url": "https://github.com/cryptoalgebra/Algebra/blob/master/audits/Base_Plugin_report_MixBytes.pdf",
-      "auditor": "MixBytes",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2114,
-      "audit_key": "audit-2114",
-      "report_name": "* **Contest page (Code4rena):** [](https://code4rena.com/audits/2024-09-fenix-finance-invitational?utm_source=chatgpt.com)",
-      "report_url": "https://code4rena.com/audits/2024-09-fenix-finance-invitational",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "aging",
-      "date": "2024-09",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -13501,44 +13277,7 @@
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 2102,
-        "report_name": "* **Final report (Code4rena):** [](https://code4rena.com/reports/2024-09-fenix-finance?utm_source=chatgpt.com)"
-      },
-      {
-        "audit_id": 2103,
-        "report_name": "Algebra_Paladin_report.pdf"
-      },
-      {
-        "audit_id": 2104,
-        "report_name": "Core_audit_report_MixBytes.pdf"
-      },
-      {
-        "audit_id": 2105,
-        "report_name": "Farming_Plugin_report_MixBytes.pdf"
-      },
-      {
-        "audit_id": 2106,
-        "report_name": "Riley_Holterhus_Algebra_Integral.pdf"
-      },
-      {
-        "audit_id": 2108,
-        "report_name": "Bailsec_Algebra_Integral_Update_Audit_differential_Report.pdf"
-      },
-      {
-        "audit_id": 2109,
-        "report_name": "Bailsec_Algebra_Integralv1.2_Core_Update_Audit.pdf"
-      },
-      {
-        "audit_id": 2110,
-        "report_name": "Base_Plugin_report_MixBytes.pdf"
-      },
-      {
-        "audit_id": 2114,
-        "report_name": "* **Contest page (Code4rena):** [](https://code4rena.com/audits/2024-09-fenix-finance-invitational?utm_source=chatgpt.com)"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

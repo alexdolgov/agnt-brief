@@ -5,8 +5,8 @@
 - Project: Zoo Finance (`zoo-finance`)
 - Website: [https://zoofi.io](https://zoofi.io)
 - Lifecycle: active (Tier 0, 55.7% below peak)
-- Generated: 2026-05-31T11:48:26.024Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:19.633Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, bsc, sei
 - Contract surface: 58 unique implementations (72 raw deployments)
 - DeFi Llama TVL: $41,364,453.65
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Zoo Finance is a yield protocol that provides token vesting, liquidity provision, and swap functionalities across multiple chains. It enables users to manage token distributions, trade assets via Uniswap-based infrastructure, and interact with yield-bearing positions.
+Zoo Finance is a structured DeFi protocol focused on improving liquidity utilization. Claims about token vesting, Uniswap-based swapping or liquidity management, and yield-bearing positions should only be included where directly supported by Zoo-owned contracts or official documentation, and third-party routers, pools, wrappers, and standard token infrastructure should be treated as dependencies rather than part of the core product scope.
 
 ### Architecture
 

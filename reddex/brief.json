@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "reddex",
-  "generated_at": "2026-05-31T10:24:55.918Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:09.491Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "reddex",
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Reddex is a decentralized exchange (DEX) protocol on Ethereum that enables users to swap tokens and provide liquidity through automated market-making pools.",
+    "project_purpose": "Reddex is a Redbelly-network liquidity hub and decentralized exchange focused on swap, bridge, and staking/earn functionality, with residual multichain presence including Ethereum bridge-related deployments and reported BNB/Binance activity. It should not be characterized as an Ethereum-only AMM.",
     "relationship_narrative": "The protocol consists of a single product family centered around the LiquidXv2Factory registry, which manages all liquidity pools and serves as the entry point for pool creation and interaction.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 5,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

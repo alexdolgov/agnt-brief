@@ -5,21 +5,22 @@
 - Project: EGAS swap (`egas-swap`)
 - Website: [https://xplan.eniac.network/egas](https://xplan.eniac.network/egas)
 - Lifecycle: unknown
-- Generated: 2026-05-22T16:42:08.482Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:02.059Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $19,340,677.97
+- DeFi Llama TVL: $18,596,639.03
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-EGAS swap is a decentralized exchange (DEX) protocol that enables users to swap tokens on supported blockchains. It provides liquidity pools and trading functionality typical of automated market makers.
-
-### Architecture
-
-No contract inventory or structural relationships are available to analyze.
+EGAS Swap is a native ENI-chain utility swap for EGAS and supported ERC20 assets, primarily helping users acquire EGAS for gas payments.
 
 ## Audit Coverage Summary
 

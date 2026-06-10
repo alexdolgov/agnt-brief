@@ -5,21 +5,22 @@
 - Project: Enosys (`enosys`)
 - Website: [https://enosys.global](https://enosys.global)
 - Lifecycle: active (Tier 0, 81.3% below peak)
-- Generated: 2026-05-31T07:55:25.989Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:02.217Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 2 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $26,899,011.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Enosys is a multi-product DeFi protocol on Ethereum offering token bridging, AMM-based decentralized exchange, governance incentives, collateralized debt positions, and yield generation. It enables cross-chain asset transfers, liquidity provision, and lending/borrowing services.
-
-### Architecture
-
-The bridge family uses StandardToken as the bridged asset representation, while WrapDepositRedeem contracts handle the locking and minting logic. Other families (AMM, loans, governance) likely share the bridged tokens and may depend on the bridge for cross-chain liquidity, though their contracts are not detailed here.
+Enosys is a multi-chain DeFi ecosystem primarily centered on Flare and Songbird, with additional activity across other supported chains. Its product surface includes DEX/AMM liquidity, farms and yield products, loans/collateralized debt positions, bridge functionality, NFTs, governance/APYCloud, and supporting infrastructure. The currently listed Ethereum contracts represent only a small, incomplete subset of the project surface and should not be treated as project-wide Enosys coverage without mapping the non-Ethereum product contracts.
 
 ## Audit Coverage Summary
 

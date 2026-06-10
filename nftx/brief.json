@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nftx",
-  "generated_at": "2026-05-25T15:18:02.319Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:08.694Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "nftx",
@@ -45,7 +45,7 @@
     "coverage_pct": 11.1,
     "total_audits": 5,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 1607911.76796,
+    "dl_tvl_usd": 1577327.18291,
     "tvl_usd": 6270090.753635433,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -74,6 +74,11 @@
     "project_purpose": "NFTX is a protocol that creates liquid ERC-20 tokens (vault tokens) backed by NFT collections, enabling users to fractionalize, trade, and provide liquidity for NFTs. It also offers staking mechanisms for these vault tokens to earn fees and rewards.",
     "relationship_narrative": "Vaults mint ERC-20 tokens that are used across staking and marketplace families; staking contracts distribute fees collected from vault and marketplace activity. Governance contracts control upgrades and parameters for vault factories, staking, and fee distributors, while marketplace zaps integrate with external DEX infrastructure (0x, Uniswap V3) to provide liquidity and swaps for vault tokens.",
     "product_family_count": 6
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 184,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

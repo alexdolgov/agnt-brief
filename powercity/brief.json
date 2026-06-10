@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "powercity",
-  "generated_at": "2026-05-24T05:24:00.473Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:09.362Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3318734,
-    "tvl_usd": 3318734,
+    "dl_tvl_usd": 3252107,
+    "tvl_usd": 3252107,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "POWERCITY is a DeFi protocol offering yield farming and collateralized debt position (CDP) services, enabling users to earn rewards and borrow against deposited assets.",
-    "relationship_narrative": "No contract inventory or structural relationships are available to describe product families or shared infrastructure.",
+    "project_purpose": "POWERCITY is a PulseChain ecosystem DeFi protocol associated with CORE-connected products, including Earn, staking, and pool2 TVL components.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

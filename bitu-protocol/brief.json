@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bitu-protocol",
-  "generated_at": "2026-05-30T19:21:46.397Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-30-c7d699-40af",
+  "generated_at": "2026-06-10T20:58:59.768Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bitu-protocol",
@@ -22,17 +22,17 @@
     "drop_from_peak_pct": 33.99999479851728
   },
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 5,
-    "unique_implementations": 5,
-    "total_deployments": 5,
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
     "audited_contracts": 3,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 60,
+    "coverage_pct": 75,
     "total_audits": 2,
     "scoreable_audits": 2,
     "dl_tvl_usd": 22273677.04289,
@@ -44,7 +44,7 @@
     "chains": [
       "bsc"
     ],
-    "tier1_coverage_pct": 60,
+    "tier1_coverage_pct": 75,
     "tier1_auditors": [
       "SlowMist"
     ],
@@ -58,46 +58,20 @@
     }
   },
   "topography": {
-    "project_purpose": "BitU Protocol is a CDP (Collateralized Debt Position) platform on BSC that allows users to mint the BITU stablecoin against USDT collateral and stake BITU to earn rewards.",
+    "project_purpose": "BitU Protocol is a BNB Chain CeDeFi/CDP stablecoin protocol centered on the yield-embedded BITU stablecoin. It supports whitelisted collateralized minting, sBITU staking and yield features, and ALMM/CeDeFi trading functionality. Collateral should be described in plural unless project documentation or contract configuration confirms a single USDT-only collateral model.",
     "relationship_narrative": "The Mint $BITU family provides the token contracts (USDT collateral and BITU stablecoin) that are used by the Smart Contracts family. BitUMinting manages collateral deposits and BITU issuance, while BitUStaking allows users to lock BITU to earn rewards, creating a circular token flow within the protocol.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 4,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
-      "name": "BEP20Token",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "pancakeswap",
-      "product_line": "Mint $BITU",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BEP20Token",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -297,21 +271,21 @@
       "auditor": "SlowMist",
       "tier": 1,
       "contracts_covered": 3,
-      "coverage_pct": 60,
+      "coverage_pct": 75,
       "latest_audit": "2024-04"
     },
     {
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 60,
+      "coverage_pct": 75,
       "latest_audit": "2024-05"
     }
   ],
   "coverage_gaps": [],
   "origin_summary": {
     "native": 3,
-    "upstream": 2,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 0
   },

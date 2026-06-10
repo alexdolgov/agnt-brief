@@ -7,17 +7,17 @@
 - Project: Moola Market (`moola-market`)
 - Website: [https://moola.market](https://moola.market)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-25T03:06:34.041Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:07.793Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: celo
 - Contract surface: 53 unique implementations (91 raw deployments)
-- DeFi Llama TVL: $1,223,693.95
+- DeFi Llama TVL: $1,212,721.35
 - On-chain TVL (included contracts): $73,915.00
 - TVL by chain: Celo $73,915.00
 
 ## Project Description
 
-Moola Market is a decentralized lending protocol on Celo that enables users to deposit assets to earn interest and borrow against their deposits. It is a fork of Aave v2, providing overcollateralized loans and liquidity pools.
+Moola Market is a decentralized lending protocol on Celo that enables users to deposit assets to earn interest and borrow against their deposits. It is a fork of Aave v2, providing overcollateralized loans and liquidity pools. Deposit receipt tokens should be understood as the AToken-derived lending receipt tokens where verified; MooToken should be described only as Moola's native token unless a source confirms it is a deposit receipt token.
 
 ### Architecture
 
@@ -25,38 +25,31 @@ The LendingPoolAddressesProviderRegistry serves as a central registry for the pr
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 4/37 (10.8%)
-- Verified + Unaudited implementations: 33
+- Verified implementations audited: 0/37 (0.0%)
+- Verified + Unaudited implementations: 37
 - Verified by bytecode match: 0
 - Unverified implementations: 16
 - Unique implementations: 53
 - Raw deployments: 91
-- Audits discovered: 3
-- Scoreable audits (matched contracts): 1
+- Audits discovered: 1
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $73,915.00
-- Latest audit: 2019-09 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 2 unknown
-- Tier 1 coverage: 10.8% (OpenZeppelin)
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $73,915.00 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| OpenZeppelin | Tier 1 | 4 | 10.8% | 2019-09 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (4)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AToken | token | celo | 2 deployments: celo [`0x55bfce...1141e6`](./contracts/celo-42220/0x55bfced2451b2154e06604d4269c9349f31141e6/); celo `0xf44e15...c97a2a` | ✅ Audited |
-| DefaultReserveInterestRateStrategy | operational_periphery | celo | [`0xb3072f...ea0018`](./contracts/celo-42220/0xb3072f5f0d5e8b9036aec29f37bab70e86ea0018/) | ✅ Audited |
-| LendingPool | core_logic | celo | 4 deployments: celo [`0x29b492...0cdb7a`](./contracts/celo-42220/0x29b4923d64b3196afd81d5f91185d693330cdb7a/); celo `0x97256c...ae92fc`; celo `0xb9f812...cf1a59`; celo `0xbecd34...97711f` | ✅ Audited |
-| LendingPoolAddressesProvider | core_logic | celo | [`0xd10880...88b332`](./contracts/celo-42220/0xd1088091a174d33412a968fa34cb67131188b332/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (33)
+### ⚠️ Verified + Unaudited (37)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -65,12 +58,16 @@ The LendingPoolAddressesProviderRegistry serves as a central registry for the pr
 | AaMooAirdrop | operational_periphery | celo | 2 deployments: celo [`0xa7307f...c93700`](./contracts/celo-42220/0xa7307f1a971f64dca8301a160f358bb97ec93700/); celo `0xc6a6de...1d681c` | ⚠️ Unaudited |
 | AaveProtocolDataProvider | unknown | celo | [`0x43d067...0103a1`](./contracts/celo-42220/0x43d067ed784d9dd2ffeda73775e2cc4c560103a1/) | ⚠️ Unaudited |
 | AccumulatingMerkleDistributor | operational_periphery | celo | [`0x5b41b0...3f1206`](./contracts/celo-42220/0x5b41b0c78659636c6664f08f7ccb620cea3f1206/) | ⚠️ Unaudited |
+| AToken | token | celo | 2 deployments: celo [`0x55bfce...1141e6`](./contracts/celo-42220/0x55bfced2451b2154e06604d4269c9349f31141e6/); celo `0xf44e15...c97a2a` | ⚠️ Unaudited |
 | ATokensAndRatesHelper | token | celo | [`0x22060a...4c26f1`](./contracts/celo-42220/0x22060a5e21921d1cfbebd301ff40f91f2d4c26f1/) | ⚠️ Unaudited |
 | ATokenV4 | token | celo | [`0xa27269...f501f0`](./contracts/celo-42220/0xa2726942a99ca8ce9f212c97d8f1bd6378f501f0/) | ⚠️ Unaudited |
 | ATokenWithTransferForMoolaFix | token | celo | [`0xc8c576...b3c64d`](./contracts/celo-42220/0xc8c5765bd5690e6df761a13db0e133d158b3c64d/) | ⚠️ Unaudited |
+| DefaultReserveInterestRateStrategy | operational_periphery | celo | [`0xb3072f...ea0018`](./contracts/celo-42220/0xb3072f5f0d5e8b9036aec29f37bab70e86ea0018/) | ⚠️ Unaudited |
 | DisabledStableDebtToken | token | celo | 2 deployments: celo [`0x188ad2...7a065d`](./contracts/celo-42220/0x188ad2444dcb81b9548337e77f9e5dcbe57a065d/); celo `0x27028e...b4cb21` | ⚠️ Unaudited |
 | FixedPriceOracle | operational_periphery | celo | 6 deployments: celo [`0x042b7d...e5b08d`](./contracts/celo-42220/0x042b7d495650ff2c99e095e1e3deb7f8bce5b08d/); celo `0x321429...89bd50`; celo `0x59f9c3...1092d8`; celo `0x81d952...a293a7`; celo `0xca41e1...c2804e`; celo `0xebfaaa...5317e9` | ⚠️ Unaudited |
 | GenericLogic | unknown | celo | [`0x4d0f08...34033a`](./contracts/celo-42220/0x4d0f083077db8be0ab37aa18dbbe577f5034033a/) | ⚠️ Unaudited |
+| LendingPool | core_logic | celo | 4 deployments: celo [`0x29b492...0cdb7a`](./contracts/celo-42220/0x29b4923d64b3196afd81d5f91185d693330cdb7a/); celo `0x97256c...ae92fc`; celo `0xb9f812...cf1a59`; celo `0xbecd34...97711f` | ⚠️ Unaudited |
+| LendingPoolAddressesProvider | core_logic | celo | [`0xd10880...88b332`](./contracts/celo-42220/0xd1088091a174d33412a968fa34cb67131188b332/) | ⚠️ Unaudited |
 | LendingPoolAddressesProviderRegistry | registry | celo | 2 deployments: celo [`0x4e7728...e1f2d9`](./contracts/celo-42220/0x4e77286aec541bf5c43183556413c5f6b8e1f2d9/); celo `0xf03982...ab7491` | ⚠️ Unaudited |
 | LendingPoolCollateralManager | core_logic | celo | [`0xe99ef3...df399e`](./contracts/celo-42220/0xe99ef38aeb4359ea36190c7d2c16802c2edf399e/) | ⚠️ Unaudited |
 | LendingPoolCollateralManagerWithReserve | core_logic | celo | [`0xa2db2e...393b32`](./contracts/celo-42220/0xa2db2e70a795b566f129ae7dff242a4ad1393b32/) | ⚠️ Unaudited |
@@ -134,8 +131,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [DL audit link](https://drive.google.com/file/d/1qd1h0dujnp4Xxrl68ZTIMzbt4aXzMWY7/view) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [The Moola Market protocol has been independently [audited](https://drive.google.com/file/d/1qd1h0dujnp4Xxrl68ZTIMzbt4aXzMWY7/view) since the open source code was migrated from Ethereum to Celo. Moola Market has shared ancestry with Aave v2 codebase which has also been audited [here]() and [here](https://blog.openzeppelin.com/aave-protocol-audit/). Moola Market contracts are open source so everyone can independently verify the code base as well as build applications that interact with Moola Market.](https://github.com/moolamarket/moola/blob/main/aave-protocol/docs/ToB_aave_protocol_final_report.pdf) | OpenZeppelin | Audit | 2019-09 | stale | Direct | contract_name | 8 | high |
-| [The Moola Market protocol has been independently [audited](https://drive.google.com/file/d/1qd1h0dujnp4Xxrl68ZTIMzbt4aXzMWY7/view) since the open source code was migrated from Ethereum to Celo. Moola Market has shared ancestry with Aave v2 codebase which has also been audited [here](https://github.com/moolamarket/moola/blob/main/aave-protocol/docs/ToB_aave_protocol_final_report.pdf) and [here](). Moola Market contracts are open source so everyone can independently verify the code base as well as build applications that interact with Moola Market.](https://www.openzeppelin.com/news/aave-protocol-audit) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -147,11 +142,15 @@ Verified + unaudited native implementations ranked by TVL:
 | celo | [`0xa19a98...09209f`](./contracts/celo-42220/0xa19a98f07a3f48a2a40bc4dd262fdb8e9d09209f/) | AaCELOAirdrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0xa7307f...c93700`](./contracts/celo-42220/0xa7307f1a971f64dca8301a160f358bb97ec93700/) | AaMooAirdrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x5b41b0...3f1206`](./contracts/celo-42220/0x5b41b0c78659636c6664f08f7ccb620cea3f1206/) | AccumulatingMerkleDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x55bfce...1141e6`](./contracts/celo-42220/0x55bfced2451b2154e06604d4269c9349f31141e6/) | AToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x22060a...4c26f1`](./contracts/celo-42220/0x22060a5e21921d1cfbebd301ff40f91f2d4c26f1/) | ATokensAndRatesHelper | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0xc8c576...b3c64d`](./contracts/celo-42220/0xc8c5765bd5690e6df761a13db0e133d158b3c64d/) | ATokenWithTransferForMoolaFix | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0xb3072f...ea0018`](./contracts/celo-42220/0xb3072f5f0d5e8b9036aec29f37bab70e86ea0018/) | DefaultReserveInterestRateStrategy | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x188ad2...7a065d`](./contracts/celo-42220/0x188ad2444dcb81b9548337e77f9e5dcbe57a065d/) | DisabledStableDebtToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x042b7d...e5b08d`](./contracts/celo-42220/0x042b7d495650ff2c99e095e1e3deb7f8bce5b08d/) | FixedPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x4d0f08...34033a`](./contracts/celo-42220/0x4d0f083077db8be0ab37aa18dbbe577f5034033a/) | GenericLogic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x29b492...0cdb7a`](./contracts/celo-42220/0x29b4923d64b3196afd81d5f91185d693330cdb7a/) | LendingPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0xd10880...88b332`](./contracts/celo-42220/0xd1088091a174d33412a968fa34cb67131188b332/) | LendingPoolAddressesProvider | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0xe99ef3...df399e`](./contracts/celo-42220/0xe99ef38aeb4359ea36190c7d2c16802c2edf399e/) | LendingPoolCollateralManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0xa2db2e...393b32`](./contracts/celo-42220/0xa2db2e70a795b566f129ae7dff242a4ad1393b32/) | LendingPoolCollateralManagerWithReserve | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x2cca74...1b1f1c`](./contracts/celo-42220/0x2cca742585b39e0538f7cc01ab8ffa005f1b1f1c/) | LendingPoolConfigurator | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -186,14 +185,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=8
+- Extraction confidence breakdown: n/a
+- Match method counts: n/a
 
 Zero-match audit list:
 
 - [3163] DL audit link
-- [3165] The Moola Market protocol has been independently [audited](https://drive.google.com/file/d/1qd1h0dujnp4Xxrl68ZTIMzbt4aXzMWY7/view) since the open source code was migrated from Ethereum to Celo. Moola Market has shared ancestry with Aave v2 codebase which has also been audited [here](https://github.com/moolamarket/moola/blob/main/aave-protocol/docs/ToB_aave_protocol_final_report.pdf) and [here](). Moola Market contracts are open source so everyone can independently verify the code base as well as build applications that interact with Moola Market.
 
 Fork inheritance lineage and inherited audits are included when available.

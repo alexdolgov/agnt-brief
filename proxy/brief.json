@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "proxy",
-  "generated_at": "2026-05-22T16:13:50.696Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:09.385Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "proxy",
@@ -35,7 +35,7 @@
     "coverage_pct": 8.3,
     "total_audits": 1,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 20234833.21519,
+    "dl_tvl_usd": 19955618.58387,
     "tvl_usd": 735.6405245728749,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -59,9 +59,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Proxy is a bridge protocol enabling cross-chain asset transfers, primarily focusing on moving Bitcoin liquidity to Ethereum and Polygon. It issues wrapped tokens like BTCpx and iBTCpx to represent bridged assets, and includes staking mechanisms for its native PRXY token.",
+    "project_purpose": "Proxy Finance is a Bitcoin-focused DeFi protocol centered on BTCpx, a BTC wrapper, and related yield mechanisms. Its ecosystem includes PRXY governance/staking, farmProxy/fPRXY rewards, bonding, and programs for other assets; DefiLlama categorizes the protocol as a Bridge, but the description should not imply that active cross-chain transfer infrastructure is its sole or primary function without additional supporting evidence.",
     "relationship_narrative": "The single product family encompasses all core contracts: BTCpx_Proxy manages the wrapped Bitcoin token, ProxyTokenV2 is the native PRXY token, and PRXYStaking handles staking rewards. No separate families or shared infrastructure are evident from the contract surface.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 278,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

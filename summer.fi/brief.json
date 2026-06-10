@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "summer.fi",
-  "generated_at": "2026-05-31T10:45:46.230Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:16.781Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "summer.fi",
     "tier": 0,
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 91.03129600328977
   },
   "summary": {
-    "total_contracts": 485,
-    "total_addresses": 1966,
-    "unique_implementations": 485,
-    "total_deployments": 1966,
+    "total_contracts": 482,
+    "total_addresses": 1939,
+    "unique_implementations": 482,
+    "total_deployments": 1939,
     "audited_contracts": 0,
-    "unaudited_contracts": 284,
+    "unaudited_contracts": 281,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 279,
+    "contracts_verified_unaudited": 276,
     "contracts_verified_by_bytecode": 5,
     "contracts_unverified": 201,
     "coverage_pct": 0,
@@ -65,9 +65,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Summer.fi is a DeFi protocol that aggregates yield opportunities and manages collateralized debt positions (CDPs) across multiple chains. It offers automated yield optimization through its Lazy Summer Protocol and advanced position management tools via Summer.fi Pro.",
+    "project_purpose": "Summer.fi is a DeFi protocol offering Borrow, Multiply, and Earn products for managing collateralized debt positions and accessing Lazy Summer yield vaults across multiple chains.",
     "relationship_narrative": "The Lazy Summer Protocol and Summer.fi Pro share governance infrastructure (SummerGovernor, SummerTimelockController, ProtocolAccessManager) and the SummerToken. Summer.fi Pro's automation bots can interact with Lazy Summer Protocol vaults, while both families rely on external protocol adapters (e.g., Aave, Morpho) for data and execution.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 482,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -2354,37 +2359,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x00480cd3ed33de45555410ba71b2f932a14b1cf2",
-      "name": "Aggor_ETH_USD_2",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Chainlink",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Aggor_ETH_USD_2",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x00480cd3ed33de45555410ba71b2f932a14b1cf2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x69115a2826eb47fe9dfd1d5ca8d8642697c8b68a",
       "name": "Aggor_ETH_USD_3",
       "role": "unknown",
@@ -4352,7 +4326,7 @@
       "chain_name": "ethereum",
       "address": "0x106cbb1f445f0bffa7894f4199ee940bf7f6dd2b",
       "name": "BufferArk",
-      "role": "unknown",
+      "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Lazy Summer Protocol",
@@ -4687,37 +4661,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x4b323eb2ece7fc1d81f1819c26a7cbd29975f75f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0716f25fbaaae9b63803917b6125c10c313df663",
-      "name": "ClipFab",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "makerdao",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ClipFab",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0716f25fbaaae9b63803917b6125c10c313df663",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -6738,35 +6681,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x04a65f8f15fcb8f3d5da106ca4e79fcaaed097ce",
+      "address": "0x7d8f2210fad012e7d260c3ddbecacfd48277455f",
       "name": "DaiInterestRateStrategy",
       "role": "operational_periphery",
-      "origin_kind": "upstream",
-      "origin_provider": "Aave",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "DaiInterestRateStrategy",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x04a65f8f15fcb8f3d5da106ca4e79fcaaed097ce",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x113dc45c524404f91dcbbabb103506babc8df0fe",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -6863,38 +6788,7 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x191e97623b1733369290ee5d018d0b068bc0400d",
-      "name": "DaiJugInterestRateStrategy",
-      "role": "operational_periphery",
-      "origin_kind": "upstream",
-      "origin_provider": "Aave",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DaiJugInterestRateStrategy",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x191e97623b1733369290ee5d018d0b068bc0400d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0d56700c90a690d8795d6c148acd94b12932f4e3",
+      "address": "0x4d988568b5f0462b08d1f40ba1f5f17ad2d24f76",
       "name": "DefaultReserveInterestRateStrategy",
       "role": "operational_periphery",
       "origin_kind": "upstream",
@@ -6905,15 +6799,6 @@
       "impl_address": null,
       "impl_name": "DefaultReserveInterestRateStrategy",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0d56700c90a690d8795d6c148acd94b12932f4e3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -7695,7 +7580,7 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x0825152884fbe61b0feb458af29cc4ab49972369",
+      "address": "0x296e9c87967427c2539838535175e616ece761d4",
       "name": "DssSpell",
       "role": "unknown",
       "origin_kind": "upstream",
@@ -7706,33 +7591,6 @@
       "impl_address": null,
       "impl_name": "DssSpell",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0825152884fbe61b0feb458af29cc4ab49972369",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0a352a23060cc58b05c4eeba9f6e85dbd37d7d91",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0cf9b10fe87dc44b0307b954074faac7e756d6fa",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -8269,7 +8127,7 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x1ef5e645fb31a441180e97d074b6fe73e2af5044",
+      "address": "0x21fc615cf9cbb3ced17ed622afdbbed3d909028d",
       "name": "EModeLogic",
       "role": "unknown",
       "origin_kind": "upstream",
@@ -8280,15 +8138,6 @@
       "impl_address": null,
       "impl_name": "EModeLogic",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1ef5e645fb31a441180e97d074b6fe73e2af5044",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -8445,7 +8294,7 @@
       "chain_name": "ethereum",
       "address": "0x0264f3a10526b5eb5f75eb4004df6e3ccc3b45e3",
       "name": "ERC4626Ark",
-      "role": "unknown",
+      "role": "adapter",
       "origin_kind": "upstream",
       "origin_provider": "erc4626",
       "product_line": "Lazy Summer Protocol",
@@ -11011,7 +10860,7 @@
       "chain_name": "ethereum",
       "address": "0x00b437df745c1deabe3f999dfe41fda9641d7eba",
       "name": "FluidLiteArk",
-      "role": "unknown",
+      "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -14832,7 +14681,7 @@
       "chain_name": "ethereum",
       "address": "0x113ebd01dab514136ca2867f4e47b6b9a42dfb8b",
       "name": "OriginETHArk",
-      "role": "unknown",
+      "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -15031,26 +14880,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x02c3ea4e34c0cbd694d2adfa2c690eecbc1793ee",
+      "address": "0x779053e25267b591dcfbb20b2397462aaad6b776",
       "name": "PoolAddressesProvider",
       "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "Aave",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "PoolAddressesProvider",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x02c3ea4e34c0cbd694d2adfa2c690eecbc1793ee",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -15071,26 +14911,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x03cfa0c4622ff84e50e75062683f44c9587e6cc1",
+      "address": "0xd3e4d5bae61a4cf453fd8cdeb8f859861e10520f",
       "name": "PoolAddressesProviderRegistry",
       "role": "registry",
-      "origin_kind": "upstream",
-      "origin_provider": "Aave",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "PoolAddressesProviderRegistry",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x03cfa0c4622ff84e50e75062683f44c9587e6cc1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -15151,35 +14982,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x0d2bfc0be7bdb397fab9f63e4eaead1e24252b17",
+      "address": "0x3068fa0b6fc6a5c998988a271501ff7a6892c6ff",
       "name": "PoolLogic",
       "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "Aave",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "PoolLogic",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0d2bfc0be7bdb397fab9f63e4eaead1e24252b17",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1761a0f74032963b6ad0774c5ebf4586c0bd7604",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -16856,26 +16669,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x0f1a9a787b4103ef5929121cd9399224c6455dd6",
+      "address": "0x4da18457a76c355b74f9e4a944ecc882aac64043",
       "name": "RateTargetKinkInterestRateStrategy",
       "role": "operational_periphery",
-      "origin_kind": "upstream",
-      "origin_provider": "Aave",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "RateTargetKinkInterestRateStrategy",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0f1a9a787b4103ef5929121cd9399224c6455dd6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -17110,26 +16914,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x0ee554f6a1f7a4cb4f82d4c124ddc2ad3e37fde1",
+      "address": "0x347f189485a80ae373d39b33f4e5780d3d1246fa",
       "name": "RewardsController",
       "role": "governance",
-      "origin_kind": "upstream",
-      "origin_provider": "Aave",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0xe3be225f92664a71bc6b1c1110a595dd1c40ec68",
       "impl_name": "RewardsController",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0ee554f6a1f7a4cb4f82d4c124ddc2ad3e37fde1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -18375,26 +18170,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x026a5b6114431d8f3ef2fa0e1b2edddcca9c540e",
+      "address": "0x9e662a18f3a1eae1eb6fb1469fb793974ace6e92",
       "name": "StableDebtToken",
       "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "Aave",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "StableDebtToken",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x026a5b6114431d8f3ef2fa0e1b2edddcca9c540e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -18415,89 +18201,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x022ff40643e8b94c43f0a1e54f51ef6d070acbc4",
+      "address": "0x2e118153d304a0d9c5838d5fcb70cefcbec81dc2",
       "name": "StairstepExponentialDecrease",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "makerdao",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "StairstepExponentialDecrease",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x022ff40643e8b94c43f0a1e54f51ef6d070acbc4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x059acdf311e38aaf77139638228d393ff27639bf",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0fca4ba0b80123b5d22dd3c8bf595f3e561d594d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x19e26067c4a69b9534adf97ed8f986c49179de18",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1c4fc274d12b2e1bbdf97795193d3148fcda6108",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1cf3de6d570291cdb88229e70037d1705d5be748",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1f206d7916fd3b1b5b0ce53d5cab11fcebc124da",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1f546560eaa70985d962f1562b65d4b182341a63",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -20136,7 +19850,7 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x1d5b30d7c74f605c9f22d29f8bb80de3ba853a9b",
+      "address": "0x46256841e36b7557bb8e4c706bed38b17a9eb2c1",
       "name": "SupplyLogic",
       "role": "unknown",
       "origin_kind": "upstream",
@@ -20147,15 +19861,6 @@
       "impl_address": null,
       "impl_name": "SupplyLogic",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1d5b30d7c74f605c9f22d29f8bb80de3ba853a9b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -20366,7 +20071,7 @@
       "chain_name": "ethereum",
       "address": "0x0f9da4b515fdab1aec67cfa6a66c24625543f495",
       "name": "SyrupArk",
-      "role": "unknown",
+      "role": "adapter",
       "origin_kind": "upstream",
       "origin_provider": "Syrup",
       "product_line": "Lazy Summer Protocol",
@@ -21319,26 +21024,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x205216d89a00feb2a73273ceecd297baf89d576d",
+      "address": "0xa7f8a757c4f7696c015b595f51b2901ac0121b18",
       "name": "UiIncentiveDataProviderV3",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Aave",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "UiIncentiveDataProviderV3",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x205216d89a00feb2a73273ceecd297baf89d576d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -28597,7 +28293,7 @@
       "chain_name": "ethereum",
       "address": "0x106cbb1f445f0bffa7894f4199ee940bf7f6dd2b",
       "name": "BufferArk",
-      "role": "unknown",
+      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -28837,7 +28533,7 @@
       "chain_name": "ethereum",
       "address": "0x00b437df745c1deabe3f999dfe41fda9641d7eba",
       "name": "FluidLiteArk",
-      "role": "unknown",
+      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -29117,7 +28813,7 @@
       "chain_name": "ethereum",
       "address": "0x113ebd01dab514136ca2867f4e47b6b9a42dfb8b",
       "name": "OriginETHArk",
-      "role": "unknown",
+      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -29127,6 +28823,16 @@
       "chain_name": "ethereum",
       "address": "0x5ae329203e00f76891094dcfedd5aca082a50e1b",
       "name": "Pool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3068fa0b6fc6a5c998988a271501ff7a6892c6ff",
+      "name": "PoolLogic",
       "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -29217,6 +28923,16 @@
       "chain_name": "ethereum",
       "address": "0x2a961acc1d79e743e479eb4b1473f62d3df07770",
       "name": "RateTargetBaseInterestRateStrategy",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4da18457a76c355b74f9e4a944ecc882aac64043",
+      "name": "RateTargetKinkInterestRateStrategy",
       "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -29355,6 +29071,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x2e118153d304a0d9c5838d5fcb70cefcbec81dc2",
+      "name": "StairstepExponentialDecrease",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x13aa9807fb67737f9e99c5bf466ab5529607cd1a",
       "name": "SubscriptionsMigration",
       "role": "operational_periphery",
@@ -29474,10 +29200,10 @@
     }
   ],
   "origin_summary": {
-    "native": 123,
-    "upstream": 56,
-    "standard_library": 2,
-    "needs_review": 304
+    "native": 126,
+    "upstream": 44,
+    "standard_library": 3,
+    "needs_review": 309
   },
   "scope_matching_notes": {
     "match_method_counts": {},

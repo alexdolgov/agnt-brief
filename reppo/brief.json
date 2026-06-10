@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "reppo",
-  "generated_at": "2026-05-23T10:46:39.737Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:09.501Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "reppo",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6438351.98508,
+    "dl_tvl_usd": 5831508.95602,
     "tvl_usd": 19774880.153790668,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -51,16 +51,21 @@
     "latest_audit_date": "2026-03",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 3,
-      "aging": 0,
+      "fresh": 2,
+      "aging": 1,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Reppo is a prediction market protocol on Base that enables users to create and trade outcome tokens tied to real-world events. The AgentTokenV2 contract serves as the core token representing positions in these markets.",
-    "relationship_narrative": "The protocol consists of a single product family with no additional supporting contracts, indicating a self-contained token contract that handles all prediction market logic.",
+    "project_purpose": "Reppo is an AI training data network and data infrastructure project. Although it may be categorized under DefiLlama's \"Prediction Market\" label, the available verified information does not support describing it as a protocol for creating or trading real-world event outcome tokens.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -107,7 +112,7 @@
       "report_url": "https://github.com/Reppo-Labs/audit-reports/blob/main/2025-06-25.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,

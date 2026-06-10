@@ -6,21 +6,22 @@
 
 - Project: CGO Finance (`cgo-finance`)
 - Lifecycle: declining (Tier 0, 96.9% below peak)
-- Generated: 2026-05-31T07:41:51.041Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.361Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: cronos
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $1,234,412.79
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-CGO Finance is a yield aggregator on Cronos that optimizes user deposits by automatically compounding yields from underlying DeFi protocols.
-
-### Architecture
-
-The two contracts likely represent a vault and a strategy, where the vault holds user funds and delegates to the strategy for yield generation, sharing a common yield aggregation infrastructure.
+CGO Finance is a Cronos yield optimizer/yield aggregator.
 
 ## Audit Coverage Summary
 

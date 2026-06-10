@@ -5,21 +5,22 @@
 - Project: BTSE (`btse`)
 - Website: [https://www.btse.com](https://www.btse.com)
 - Lifecycle: unknown
-- Generated: 2026-05-24T20:37:54.713Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:01.177Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,548,209.72
+- DeFi Llama TVL: $1,532,135.40
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-BTSE is a centralized exchange (CEX) that facilitates trading of digital assets. The provided metadata indicates no on-chain contracts, consistent with a centralized platform.
-
-### Architecture
-
-No on-chain product families or contracts are present, as BTSE operates as a centralized exchange without disclosed smart contract infrastructure.
+BTSE is a centralized cryptocurrency exchange. No project-owned smart-contract deployments are recorded in the supplied contract database.
 
 ## Audit Coverage Summary
 

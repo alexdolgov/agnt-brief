@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "deri",
-  "generated_at": "2026-05-26T05:22:18.980Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-eff36e-a3ce",
+  "generated_at": "2026-06-10T20:59:01.820Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "deri",
@@ -35,7 +35,7 @@
     "coverage_pct": 13.9,
     "total_audits": 8,
     "scoreable_audits": 6,
-    "dl_tvl_usd": 7440548,
+    "dl_tvl_usd": 7308245,
     "tvl_usd": 2426.939187611225,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -72,9 +72,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Deri Protocol is a decentralized derivatives platform that enables users to trade perpetual futures, options, and other derivatives on-chain. It uses liquidity pools and automated market-making to facilitate trading without traditional order books.",
+    "project_purpose": "Deri is a multi-chain decentralized derivatives protocol for trading futures, options, powers, and other on-chain risk exposures; it uses protocol liquidity, gateways, oracles, and related execution infrastructure.",
     "relationship_narrative": "The Deri families share a common architecture of pools and gateways, with later versions introducing modular gateways for cross-chain access. Supporting infrastructure like oracles, routers, and brokers is reused across families to manage trading, pricing, and fee collection.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 868,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

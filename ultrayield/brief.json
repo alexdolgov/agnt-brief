@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "ultrayield",
-  "generated_at": "2026-05-31T14:53:59.138Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:18.460Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "ultrayield",
     "tier": 0,

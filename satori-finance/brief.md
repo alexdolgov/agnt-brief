@@ -5,17 +5,17 @@
 - Project: Satori Finance (`satori-finance`)
 - Website: [https://satori.finance](https://satori.finance)
 - Lifecycle: active (Tier 0, 81.1% below peak)
-- Generated: 2026-05-25T13:51:34.819Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:13.457Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, ethereum, linea, polygon-zkevm, scroll
 - Contract surface: 40 unique implementations (59 raw deployments)
-- DeFi Llama TVL: $1,279,808.00
+- DeFi Llama TVL: $1,279,341.00
 - On-chain TVL (included contracts): $40,944.60
 - TVL by chain: Ethereum $40,944.60
 
 ## Project Description
 
-Satori Finance is a decentralized derivatives and spot trading platform operating across multiple chains. It offers perpetual futures and spot trading products, leveraging a modular architecture with vaults, oracles, and staking infrastructure.
+Satori Finance is a decentralized perpetuals and financial derivatives trading platform. Its evidenced product focus is derivatives/perpetual trading; spot-trading, staking infrastructure, yield-bearing vaults, and shared oracle/registry architecture should not be described as core Satori product families unless supported by project documentation or verified contract roles.
 
 ### Architecture
 

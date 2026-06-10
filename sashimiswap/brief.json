@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sashimiswap",
-  "generated_at": "2026-05-23T18:43:48.780Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:13.385Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "sashimiswap",
@@ -45,7 +45,7 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4996070.63806,
+    "dl_tvl_usd": 4985528.24045,
     "tvl_usd": 1441923.2311776602,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -69,9 +69,14 @@
     }
   },
   "topography": {
-    "project_purpose": "SashimiSwap is a decentralized exchange and lending protocol that combines automated market making (AMM) with money market functionality. It allows users to swap tokens, provide liquidity, and earn yield through staking and lending, while also featuring cross-chain capabilities.",
+    "project_purpose": "SashimiSwap is primarily a multi-chain automated market maker decentralized exchange (AMM/DEX) for token swaps and exchange-pool liquidity. Lending, staking, and cross-chain contracts may exist in the historical or indexed contract surface, but should not be presented as currently supported public products unless supported by current documentation or homepage evidence.",
     "relationship_narrative": "The SashimiToken serves as the central governance and incentive token, interacting with the SashimiBar staking contract and the lending markets controlled by the Unitroller/Comptroller. The UniswapV2Factory manages liquidity pools for token swaps, while ShardTokens represent cross-chain or synthetic assets, and proxy contracts like SLErc20Delegator and CrossChainDelegator provide upgradeability and cross-chain functionality.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 61,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

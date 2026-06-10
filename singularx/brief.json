@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "singularx",
-  "generated_at": "2026-05-31T10:38:38.798Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.201Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "singularx",
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 4,
-    "total_addresses": 5,
+    "total_addresses": 4,
     "unique_implementations": 4,
-    "total_deployments": 5,
+    "total_deployments": 4,
     "audited_contracts": 0,
     "unaudited_contracts": 4,
     "contracts_verified_audited": 0,
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "SingularX is a decentralized exchange (DEX) protocol on Ethereum that facilitates token swaps and liquidity provision. It includes a custom token bridging mechanism via L1ArbitrumToken and a gateway for cross-chain interactions.",
+    "project_purpose": "SingularX is an Ethereum peer-to-peer decentralized exchange (DEX). No verified project-owned documentation supports treating Arbitrum token bridge or gateway contracts as part of the SingularX protocol surface.",
     "relationship_narrative": "The DEX contract interacts with the L1ArbitrumToken (via its proxy) for token swaps and liquidity, while the L1ForceOnlyReverseCustomGateway manages cross-chain token movements, sharing the token infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 4,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -70,26 +75,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7",
+      "address": "0xb50721bcf8d664c30412cfbc6cf7a15145234ad1",
       "name": "L1ArbitrumToken",
       "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": "SingularX",
       "tvl_usd": 21448655.857948124,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7",
       "impl_name": "L1ArbitrumToken",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -105,7 +101,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -207,16 +203,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7",
-      "name": "L1ArbitrumToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 21448655.857948124,
-      "risk_note": "Verified native implementation with $21,448,655.86 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x9a2d163ab40f88c625fd475e807bbc3556566f80",
       "name": "Dex",
       "role": "unknown",
@@ -226,9 +212,9 @@
     }
   ],
   "origin_summary": {
-    "native": 2,
+    "native": 1,
     "upstream": 0,
-    "standard_library": 1,
+    "standard_library": 2,
     "needs_review": 1
   },
   "scope_matching_notes": {

@@ -7,8 +7,8 @@
 - Project: MorpheusAI (`morpheusai`)
 - Website: [https://mor.org](https://mor.org)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:02:19.013Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:07.805Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum
 - Contract surface: 47 unique implementations (96 raw deployments)
 - DeFi Llama TVL: $29,557,739.01
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-MorpheusAI is a decentralized AI agent protocol that allows users to deposit assets into pools to earn rewards and participate in AI agent operations. It uses a system of deposit pools, distributors, and reward mechanisms to facilitate staking and distribution of incentives across Ethereum and Arbitrum.
+MorpheusAI is decentralized AI infrastructure for building, deploying, and scaling AI applications and agents. The protocol combines yield-powered tokenomics, decentralized compute, open-source code, and MOR emissions across Capital, Compute, Code, and Builders participants. Its current surface should be described across Ethereum, Arbitrum, and Base/accounting exposure rather than only Ethereum and Arbitrum, and DepositPool deployments should only be claimed for Ethereum unless a live Arbitrum DepositPool address is separately verified.
 
 ### Architecture
 

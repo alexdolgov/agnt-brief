@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "suibridge",
-  "generated_at": "2026-05-31T10:42:45.601Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:16.706Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "suibridge",
     "tier": 0,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "SuiBridge is a canonical bridge enabling asset transfers between Ethereum and the Sui blockchain. It uses a committee-based validation model to secure cross-chain messages and a vault to lock assets on Ethereum.",
+    "project_purpose": "SuiBridge is the canonical/native bridge enabling asset transfers and cross-chain messaging between Ethereum and the Sui blockchain. On Ethereum, the live system includes several ERC1967 proxy deployments for components such as SuiBridge, BridgeCommittee, BridgeConfig, and BridgeLimiter, each pointing to separate implementation contracts, while BridgeVault and the implementation contracts themselves are non-proxy deployments. The bridge uses committee-based validation, configuration and rate-limiting controls, and an Ethereum vault that locks value for bridged assets.",
     "relationship_narrative": "The SuiBridge contract coordinates with BridgeCommittee for validation, BridgeLimiter for rate limiting, and BridgeConfig for parameters, while the BridgeVault holds locked assets. All contracts are deployed by the same deployer and share upgradeable proxy patterns.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 5,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -110,7 +115,7 @@
       "chain_name": "ethereum",
       "address": "0x72d34fe82c71bf8120647518e5128e53106a1540",
       "name": "BridgeConfig",
-      "role": "operational_periphery",
+      "role": "proxy",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": null,
@@ -150,7 +155,7 @@
       "chain_name": "ethereum",
       "address": "0x12183b0796bbc4678999100e8c6c5715d5736767",
       "name": "BridgeLimiter",
-      "role": "operational_periphery",
+      "role": "proxy",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": null,
@@ -190,7 +195,7 @@
       "chain_name": "ethereum",
       "address": "0x312e67b47a2a29ae200184949093d92369f80b53",
       "name": "BridgeVault",
-      "role": "operational_periphery",
+      "role": "bridge_template",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "SuiBridge",
@@ -221,7 +226,7 @@
       "chain_name": "ethereum",
       "address": "0xa60f29201aeae592d9ab95747ae1cf425dbb036c",
       "name": "SuiBridge",
-      "role": "operational_periphery",
+      "role": "bridge_template",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -275,7 +280,7 @@
       "chain_name": "ethereum",
       "address": "0x312e67b47a2a29ae200184949093d92369f80b53",
       "name": "BridgeVault",
-      "role": "operational_periphery",
+      "role": "bridge_template",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -285,7 +290,7 @@
       "chain_name": "ethereum",
       "address": "0xa60f29201aeae592d9ab95747ae1cf425dbb036c",
       "name": "SuiBridge",
-      "role": "operational_periphery",
+      "role": "bridge_template",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

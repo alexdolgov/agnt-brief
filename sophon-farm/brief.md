@@ -1,27 +1,26 @@
 # Agentic Audit Brief: Sophon Farm
 
-⚠️ Lifecycle status: DEAD - TVL dropped 4.3% over 90 days
-
 ## Project Overview
 
 - Project: Sophon Farm (`sophon-farm`)
 - Website: [https://farm.sophon.xyz/](https://farm.sophon.xyz/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-23T10:09:41.166Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: active (Tier 1, dead)
+- Generated: 2026-06-10T20:59:16.250Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $7,011,496.27
+- DeFi Llama TVL: $6,795,564.93
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Sophon Farm is a yield farming protocol on Ethereum that allows users to stake assets and earn rewards. It is managed through a proxy-upgradeable farming contract.
-
-### Architecture
-
-The protocol consists of a single product family with a core farming contract and its proxy. No shared infrastructure or cross-family dependencies are present.
+Sophon Farm is a points farming protocol tracked by DefiLlama on Ethereum and Sophon. Users deposit tokens to farm Sophon Points, which are redeemable for $SOPH; the live protocol is not Ethereum-only and active TVL should be mapped to the relevant Ethereum and Sophon contract surfaces.
 
 ## Audit Coverage Summary
 
@@ -35,9 +34,8 @@ The protocol consists of a single product family with a core farming contract an
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-05 (aging)
-- Staleness: 0 fresh, 8 aging, 0 stale, 1 unknown
+- Staleness: 0 fresh, 6 aging, 2 stale, 1 unknown
 - Tier 1 coverage: 100.0% (Sherlock)
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -82,8 +80,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [DL audit link](https://docs.sophon.xyz/links/audits) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Quantstamp Audit Report for Farming on Ethereum](https://github.com/sophon-org/audits/blob/main/Quantstamp%20-%20Sophon%20Farming%20Final%20Report.pdf) | Quantstamp | Audit | 2024-06 | aging | Direct | contract_name | 6 | high |
-| [Sherlock Audit Report for Farming on Ethereum](https://github.com/sophon-org/audits/blob/main/Sherlock%20-%20sophon-farming-contracts-audit-report-1718619027.pdf) | Sherlock | Contest | 2024-06 | aging | Direct | contract_name | 6 | high |
+| [Quantstamp Audit Report for Farming on Ethereum](https://github.com/sophon-org/audits/blob/main/Quantstamp%20-%20Sophon%20Farming%20Final%20Report.pdf) | Quantstamp | Audit | 2024-06 | stale | Direct | contract_name | 6 | high |
+| [Sherlock Audit Report for Farming on Ethereum](https://github.com/sophon-org/audits/blob/main/Sherlock%20-%20sophon-farming-contracts-audit-report-1718619027.pdf) | Sherlock | Contest | 2024-06 | stale | Direct | contract_name | 6 | high |
 | [Omniscia Audit Report for Custom USDC Bridge](https://github.com/sophon-org/audits/blob/main/Omniscia%20-%20Security%20Review%20-%2011_20_2024.pdf) | Omniscia | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
 | [Omniscia Audit Report for Guardian NFT, L1 Paymaster, and SOPH Token](https://github.com/sophon-org/audits/blob/main/Omniscia%20-%20Security%20Review%20-%2011_01_2024.pdf) | Guardian | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
 | [Omniscia Audit Report for Farming on layer-2 oracle based allocation reward system](https://github.com/sophon-org/audits/blob/main/Omniscia%20-%20Security%20Review%20-%20Farming%20-%2001_08_2025.pdf) | Omniscia | Audit | 2025-02 | aging | Direct | contract_name | 6 | high |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sovryn-bridge",
-  "generated_at": "2026-05-31T10:38:39.109Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.269Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "sovryn-bridge",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Sovryn Bridge is a canonical bridge that enables cross-chain asset transfers, primarily between Ethereum and the Sovryn protocol on RSK, allowing users to move tokens securely between networks.",
+    "project_purpose": "Sovryn Bridge is a cross-chain bridge associated with the Sovryn ecosystem. DefiLlama currently tracks Sovryn Bridge TVL on Ethereum and Binance/BNB Chain, so the protocol surface should not be described as only an Ethereum-to-RSK bridge unless Binance/BNB Chain TVL is explicitly scoped out. The live surface includes proxy and implementation contracts, token allowlist/configuration or risk-control contracts, federation/validator components, governance/admin functionality, and unresolved active contracts that require coverage review.",
     "relationship_narrative": "The project consists of a single product family with one proxy contract, indicating a focused bridging mechanism without additional shared infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 47,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -101,7 +106,7 @@
       "chain_name": "ethereum",
       "address": "0x1486e225ee099f7ea491e32cd2a69e8264f70fe0",
       "name": "AllowTokens",
-      "role": "token",
+      "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1568,7 +1573,7 @@
       "chain_name": "ethereum",
       "address": "0x1486e225ee099f7ea491e32cd2a69e8264f70fe0",
       "name": "AllowTokens",
-      "role": "token",
+      "role": "registry",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

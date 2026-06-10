@@ -1,23 +1,23 @@
 # Agentic Audit Brief: KlaySwap
 
-⚠️ Lifecycle status: SUNSETTING - TVL changed 3.0% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 3.0% over 90 days
 
 ## Project Overview
 
 - Project: KlaySwap (`klayswap`)
 - Website: [https://klayswap.com/dashboard](https://klayswap.com/dashboard)
-- Lifecycle: sunsetting (Tier 1, sunsetting)
-- Generated: 2026-05-23T19:32:42.289Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 1, sunsetting)
+- Generated: 2026-06-10T20:59:06.735Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: klaytn
 - Contract surface: 22 unique implementations (22 raw deployments)
-- DeFi Llama TVL: $4,838,481.00
+- DeFi Llama TVL: $4,507,746.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-KlaySwap is a decentralized exchange (DEX) on the Klaytn blockchain, enabling users to swap tokens, provide liquidity, and earn fees. It includes both a V1 (likely constant-product AMM) and a V3 (concentrated liquidity) version.
+KLAYswap is an AMM-based instant swap decentralized exchange on Kaia, formerly Klaytn, enabling token swaps and liquidity provision. Claims about separate V1/V3 product families or concentrated-liquidity functionality should be treated as unverified unless corroborated by accessible documentation, verified contract metadata, or audit scope text.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ KlaySwap V1 and V3 are separate product families sharing the same Klaytn deploym
 - Latest audit: 2024-07 (aging)
 - Staleness: 0 fresh, 1 aging, 3 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [sunsetting]. ASD of n/a represents exposure in a protocol with sunsetting activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

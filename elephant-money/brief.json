@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "elephant-money",
-  "generated_at": "2026-05-31T14:54:04.140Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:02.089Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "elephant-money",
     "tier": 1,
@@ -68,7 +68,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Elephant Money is a DeFi yield protocol on BSC offering vaults, futures, and NFT-based products. It provides mechanisms for staking, yield generation, and liquidity management through a suite of interconnected contracts.",
+    "project_purpose": "Elephant Money is a decentralized community-bank and economic-engine ecosystem centered on ELEPHANT/WELEPHANT and TRUNK. Its historical BNB Chain products include vault/reserve-style yield and liquidity mechanisms, while the current public site also advertises WELEPHANT activity on Base and BNB Chain and TRUNK/USDC activity on Solana. Non-BNB deployments and products should be treated as out of scope unless their contracts are explicitly collected and mapped.",
     "relationship_narrative": "Vaults and yield strategies interact with treasuries and engines to manage funds, while the NFT ecosystem uses dedicated minters and marketplaces. Both families share infrastructure like oracles, routers, and the GnosisSafeProxy for governance.",
     "product_family_count": 2
   },

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "butter-network",
-  "generated_at": "2026-05-31T07:40:57.167Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.215Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "butter-network",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 4,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 1227686.5850699998,
     "tvl_usd": 1227686.5850699998,
@@ -72,13 +72,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Butter Network is a cross-chain bridge protocol that enables asset transfers across multiple blockchains. It uses a unified OmniServiceProxy architecture to facilitate interoperability between Ethereum, Optimism, Polygon, and other supported chains.",
+    "project_purpose": "Butter Network, also presented as ButterSwap, is an omnichain interoperability hub and one-step cross-chain swap and bridge product. Its EVM contract surface includes chain-specific OmniServiceProxy proxy deployments with distinct current implementations, while the broader live product advertises support for additional networks beyond the listed EVM OmniServiceProxy deployments.",
     "relationship_narrative": "The protocol consists of a single product family where multiple OmniServiceProxy instances, deployed on different chains, share the same proxy address and implement the Bridge logic. These proxies collectively form the bridging infrastructure, with each instance operating on its respective chain to handle cross-chain messages and asset transfers.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 6,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -335,29 +340,7 @@
       "contamination_flag": null
     }
   ],
-  "audits": [
-    {
-      "audit_id": 9512,
-      "audit_key": "audit-9512",
-      "report_name": "security.md",
-      "report_url": "https://github.com/butternetwork/butter-documents/blob/master/docs/security.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -392,12 +375,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 9512,
-        "report_name": "security.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

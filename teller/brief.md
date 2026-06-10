@@ -5,21 +5,22 @@
 - Project: Teller (`teller`)
 - Website: [https://teller.org](https://teller.org)
 - Lifecycle: unknown
-- Generated: 2026-05-24T15:47:07.899Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:17.326Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,992,967.16
+- DeFi Llama TVL: $1,870,840.19
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Teller is a decentralized lending protocol that enables users to borrow and lend digital assets without collateral, using on-chain credit risk assessment. It connects borrowers seeking loans with lenders providing capital through a transparent, trust-minimized platform.
-
-### Architecture
-
-No product families or contracts were identified in the provided inventory, so no structural relationships can be described.
+Teller is a collateralized crypto lending protocol that offers instant loans with fixed APRs, flexible durations, and time-based liquidation mechanics. The protocol enables users to borrow against crypto collateral and earn by supplying lending capital, with an emphasis on avoiding margin calls rather than providing uncollateralized credit.
 
 ## Audit Coverage Summary
 

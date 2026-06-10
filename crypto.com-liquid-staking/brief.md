@@ -5,21 +5,22 @@
 - Project: Crypto.com Liquid Staking (`crypto.com-liquid-staking`)
 - Website: [https://crypto.com/staking](https://crypto.com/staking)
 - Lifecycle: active (Tier 0, 86.8% below peak)
-- Generated: 2026-05-31T07:45:04.304Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.558Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: cronos
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $25,388,734.68
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Crypto.com Liquid Staking allows users to stake ETH and receive a liquid staking token representing their staked position, enabling them to earn staking rewards while maintaining liquidity.
-
-### Architecture
-
-The protocol consists of a single product family with one core contract, so there are no cross-family relationships or shared infrastructure.
+Crypto.com Liquid Staking is tracked as liquid staking receipt tokens across Cronos and Solana, including CDCETH for staked ETH and, per DefiLlama, CDCSOL for Solana liquid staking; note that the current homepage may primarily highlight ETH/CDCETH.
 
 ## Audit Coverage Summary
 

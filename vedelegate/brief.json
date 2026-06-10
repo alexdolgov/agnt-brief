@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "vedelegate",
-  "generated_at": "2026-05-25T02:57:41.029Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:18.522Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1221242.15463,
-    "tvl_usd": 1221242.15463,
+    "dl_tvl_usd": 1161359.82101,
+    "tvl_usd": 1161359.82101,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "veDelegate is a governance incentives protocol that allows users to delegate their vote-escrowed tokens to earn rewards, optimizing governance participation and yield.",
-    "relationship_narrative": "No product families or contracts are defined in the provided metadata, so no structural relationships can be described.",
+    "project_purpose": "veDelegate is a VeChain B3TR governance incentives app that lets users stake tokens and automate governance participation to earn voting rewards.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "belt-finance",
-  "generated_at": "2026-05-31T07:30:41.669Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:58:59.154Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "belt-finance",
     "tier": 1,
@@ -43,8 +43,8 @@
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 1270,
     "coverage_pct": 47.5,
-    "total_audits": 7,
-    "scoreable_audits": 4,
+    "total_audits": 6,
+    "scoreable_audits": 3,
     "dl_tvl_usd": 13217355.197819998,
     "tvl_usd": 15280040.798951821,
     "tvl_source": "on_chain",
@@ -65,14 +65,19 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 4,
+      "stale": 3,
       "unknown": 3
     }
   },
   "topography": {
-    "project_purpose": "Belt Finance is a multi-chain yield optimization protocol that aggregates user deposits into automated yield farming strategies. It offers single-asset vaults and multi-strategy tokens that compound returns across various DeFi platforms like Venus, Alpaca, and Ellipsis.",
+    "project_purpose": "Belt Finance is a multi-chain DeFi protocol that combines yield aggregation/vault products with an AMM/stableswap platform. It aggregates user deposits into automated yield farming strategies, offers single-asset vaults and multi-strategy tokens that compound returns across DeFi platforms such as Venus, Alpaca, and Ellipsis, and also provides swap/stableswap functionality.",
     "relationship_narrative": "The Belt Finance family provides the core strategy implementations and token contracts used by all vault families. Each vault family (BNB, BTC, BUSD, DAI, ETH, USDC, USDT) deploys its own set of BeltProxy and ReceivableBeltProxy contracts that point to shared strategy implementations like StrategyFortubeV2, StrategyVenusV3, and StrategyVoidV2, enabling isolated deposit pools while reusing yield-generating logic.",
     "product_family_count": 19
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1331,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -240,8 +245,7 @@
       ],
       "audits_covering": [
         "audit-6920",
-        "audit-6922",
-        "audit-6923"
+        "audit-6922"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -625,8 +629,7 @@
       ],
       "audits_covering": [
         "audit-6920",
-        "audit-6922",
-        "audit-6923"
+        "audit-6922"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1209,8 +1212,7 @@
       ],
       "audits_covering": [
         "audit-6920",
-        "audit-6922",
-        "audit-6923"
+        "audit-6922"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2595,8 +2597,7 @@
         }
       ],
       "audits_covering": [
-        "audit-6922",
-        "audit-6923"
+        "audit-6922"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -3002,8 +3003,7 @@
         }
       ],
       "audits_covering": [
-        "audit-6922",
-        "audit-6923"
+        "audit-6922"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -5708,8 +5708,7 @@
       ],
       "audits_covering": [
         "audit-6920",
-        "audit-6922",
-        "audit-6923"
+        "audit-6922"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -5752,8 +5751,7 @@
       ],
       "audits_covering": [
         "audit-6920",
-        "audit-6922",
-        "audit-6923"
+        "audit-6922"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -6917,8 +6915,7 @@
         }
       ],
       "audits_covering": [
-        "audit-6922",
-        "audit-6923"
+        "audit-6922"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -45016,63 +45013,6 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6923,
-      "audit_key": "audit-6923",
-      "report_name": "[KOR]BELT_HECO_Security_Assessment.pdf",
-      "report_url": "https://github.com/BeltFi/belt-contract/blob/main/audit/%5BKOR%5DBELT_HECO_Security_Assessment.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2021-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "BeltLPTokenv2",
-        "BeltSwapView",
-        "BeltVaultView",
-        "BeltView",
-        "BuyBack4BELT.HECO",
-        "DepositBv2",
-        "MasterOrbit",
-        "Migrations",
-        "MultiStrategyToken",
-        "MultiStrategyTokenImpl",
-        "MultiStrategyTokenStorage",
-        "SingleStrategyToken",
-        "SingleStrategyToken2",
-        "SingleStrategyTokenImpl",
-        "SingleStrategyTokenImpl2",
-        "SingleStrategyTokenStorage",
-        "StableSwapBv2",
-        "Strategy",
-        "StrategyChannels",
-        "StrategyChannelsImpl",
-        "StrategyChannelsStorage",
-        "StrategyFilda",
-        "StrategyFildaImpl",
-        "StrategyFildaStorage",
-        "StrategyLendHub",
-        "StrategyLendHubImpl",
-        "StrategyLendHubStorage",
-        "StrategyToken",
-        "Timelock",
-        "TokenPriceView",
-        "UnwrapperHT",
-        "channels",
-        "filda",
-        "lendHub",
-        "mdex"
-      ],
-      "matched_contracts": 134,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -45254,10 +45194,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 525
+      "extraction_exact": 391
     },
     "extraction_confidence_counts": {
-      "high": 4
+      "high": 3
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

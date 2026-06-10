@@ -5,8 +5,8 @@
 - Project: Moonlander (`moonlander`)
 - Website: [https://moonlander.trade/](https://moonlander.trade/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T14:54:11.150Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:07.795Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: cronos
 - Contract surface: 11 unique implementations (11 raw deployments)
 - DeFi Llama TVL: $31,411,812.16
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Moonlander is a derivatives protocol on Cronos that enables users to trade leveraged positions and access synthetic assets. It provides a decentralized platform for creating and managing derivative contracts.
+Moonlander is a social perpetual DEX/decentralized perpetual trading platform on Cronos and Cronos zkEVM for leveraged crypto/RWA trading, with an Earn/staking component. Unsupported claims that it is a synthetic-assets platform or a platform for users to create and manage derivative contracts should be removed unless verified by authoritative sources.
 
 ### Architecture
 

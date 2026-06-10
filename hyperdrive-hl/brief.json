@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hyperdrive-hl",
-  "generated_at": "2026-05-24T09:46:49.508Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:06.061Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 8,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2826322.36585,
-    "tvl_usd": 2826322.36585,
+    "dl_tvl_usd": 2776023.50904,
+    "tvl_usd": 2776023.50904,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Hyperdrive HL is a lending protocol that enables users to provide and borrow assets through a structured market. It facilitates fixed-rate lending and borrowing by matching liquidity providers with borrowers.",
-    "relationship_narrative": "No product families or contracts are defined in the provided inventory, so no relationships can be described.",
+    "project_purpose": "Hyperdrive HL is a DeFi protocol centered on a stablecoin money market with dynamically priced lending and borrowing, including supported leverage functionality. Its product areas include the Money Market, HYPE LST, Liquid HLP, and Earn, which together represent Hyperdrive HL's lending, staking/liquid-staking, liquidity/tokenization, and yield-oriented offerings.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

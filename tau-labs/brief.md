@@ -1,14 +1,14 @@
 # Agentic Audit Brief: TAU Labs
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 65.3% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 65.3% over 90 days
 
 ## Project Overview
 
 - Project: TAU Labs (`tau-labs`)
 - Website: [https://www.628labs.xyz/](https://www.628labs.xyz/)
-- Lifecycle: unknown (Tier 0, 71.8% below peak)
-- Generated: 2026-05-31T10:55:06.068Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 71.8% below peak)
+- Generated: 2026-06-10T20:59:17.302Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, plasma
 - Contract surface: 179 unique implementations (569 raw deployments)
 - DeFi Llama TVL: $4,979,818.69
@@ -37,7 +37,7 @@ All PlasmaVault instances share common implementation logic via PlasmaVaultBase,
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $8,065,727.12 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of $8,065,727.12 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

@@ -6,8 +6,8 @@
 
 - Project: Alpaca Finance (`alpaca-finance`)
 - Lifecycle: declining (Tier 0, 97.5% below peak)
-- Generated: 2026-06-10T20:26:07.488Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.783Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 144 unique implementations (550 raw deployments)
 - DeFi Llama TVL: $46,096,508.00

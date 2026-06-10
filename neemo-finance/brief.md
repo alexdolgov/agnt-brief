@@ -5,17 +5,17 @@
 - Project: Neemo Finance (`neemo-finance`)
 - Website: [https://neemo.finance/](https://neemo.finance/)
 - Lifecycle: active (Tier 0, 74.5% below peak)
-- Generated: 2026-05-24T22:41:52.766Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:08.057Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 14 unique implementations (15 raw deployments)
-- DeFi Llama TVL: $1,440,615.09
+- DeFi Llama TVL: $1,369,797.95
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Neemo Finance is a liquid restaking protocol that allows users to stake assets and receive liquid derivative tokens, enabling them to earn staking rewards while maintaining liquidity. It operates across multiple chains, including Ethereum and Soneium, to provide flexible restaking options.
+Neemo Finance is an Astar/Soneium-focused liquid staking and restaking protocol for ASTR and ETH. Users receive liquid derivative tokens such as nsASTR and nrETH while participating in staking/restaking strategies. Current public TVL attribution should be treated as Astar/Soneium-focused rather than Ethereum-mainnet-primary unless supported by matching chain TVL and deployed contracts.
 
 ### Architecture
 

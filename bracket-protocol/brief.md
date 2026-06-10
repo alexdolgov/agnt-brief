@@ -5,17 +5,17 @@
 - Project: Bracket Protocol (`bracket-protocol`)
 - Website: [https://www.bracket.fi/](https://www.bracket.fi/)
 - Lifecycle: active (Tier 0, 83.1% below peak)
-- Generated: 2026-05-25T15:06:59.119Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:01.113Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum
-- Contract surface: 60 unique implementations (150 raw deployments)
-- DeFi Llama TVL: $3,088,501.00
-- On-chain TVL (included contracts): $923,663,481.46
-- TVL by chain: Ethereum $912,013,697.52 | Arbitrum $11,649,783.94
+- Contract surface: 58 unique implementations (146 raw deployments)
+- DeFi Llama TVL: $3,082,190.00
+- On-chain TVL (included contracts): $622,427,001.87
+- TVL by chain: Ethereum $610,777,217.93 | Arbitrum $11,649,783.94
 
 ## Project Description
 
-Bracket Protocol is a multi-chain DeFi platform offering liquid staking, structured vaults, and escrow staking. It enables users to earn yield through automated strategies, stake assets for derivative tokens, and participate in governance-driven capital allocation.
+Bracket Protocol is an institutional digital asset vault infrastructure and managed DeFi strategy platform for allocators, issuers, and asset managers. Current product context should be aligned with DefiLlama child protocols including Bracket Vaults and Bracket LST, while legacy or zero-TVL products such as Bracket Escrow Staking and BracketX should be described only with their current status and TVL context. Unsupported claims about escrow derivative tokens flowing into Bracket Vaults or BrktETH serving as a vault deposit asset should be omitted unless directly evidenced.
 
 ### Architecture
 
@@ -23,15 +23,15 @@ Bracket Escrow Staking mints derivative tokens that can be used within Bracket V
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 8/48 (16.7%)
-- Verified + Unaudited implementations: 40
+- Verified implementations audited: 8/46 (17.4%)
+- Verified + Unaudited implementations: 38
 - Verified by bytecode match: 0
 - Unverified implementations: 12
-- Unique implementations: 60
-- Raw deployments: 150
+- Unique implementations: 58
+- Raw deployments: 146
 - Audits discovered: 5
 - Scoreable audits (matched contracts): 4
-- ASD (verified + unaudited TVL): $920,582,399.59
+- ASD (verified + unaudited TVL): $619,345,920.00
 - Latest audit: 2025-09 (fresh)
 - Staleness: 1 fresh, 2 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -40,7 +40,7 @@ Bracket Escrow Staking mints derivative tokens that can be used within Bracket V
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Guardian | Tier 2 | 8 | 16.7% | 2025-09 |
+| Guardian | Tier 2 | 8 | 17.4% | 2025-09 |
 
 ## Contract Surface
 
@@ -57,12 +57,11 @@ Bracket Escrow Staking mints derivative tokens that can be used within Bracket V
 | NavUpdater | unknown | ethereum | 3 deployments: ethereum [`0x5fac6b...318e8b`](./contracts/ethereum-1/0x5fac6bc8646bb345178d7156153ae58ba3318e8b/); ethereum `0xaacf9f...d7a425`; ethereum `0xfe7aad...2c3788` | ✅ Audited |
 | VaultRouter | adapter | ethereum | [`0xb737f5...a3c4e3`](./contracts/ethereum-1/0xb737f54637c5c66f47c6818c80ccc7a9a3a3c4e3/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (40)
+### ⚠️ Verified + Unaudited (38)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | OsTokenVaultController | core_logic | ethereum | 2 deployments: ethereum [`0x2a261e...000306`](./contracts/ethereum-1/0x2a261e60fb14586b474c208b1b7ac6d0f5000306/); ethereum `0xfe7083...44b521` | ⚠️ Unaudited |
-| OsToken | token | ethereum | 2 deployments: ethereum [`0x475e7d...b96702`](./contracts/ethereum-1/0x475e7d2bd7428deb68deaa933dbf0d5850b96702/); ethereum `0xf1c9ac...190e38` | ⚠️ Unaudited |
 | EthGenesisVault | core_logic | ethereum | 5 deployments: ethereum [`0x124c33...510928`](./contracts/ethereum-1/0x124c33d07f94b31adf87c12f7ca3a586d3510928/); ethereum `0x2d491b...135f31`; ethereum `0x7aa02b...549733`; ethereum `0x9481a4...2fabd7`; ethereum `0xac0f90...652885` | ⚠️ Unaudited |
 | StandardArbERC20 | token | arbitrum | [`0xec70dc...a5ffa8`](./contracts/arbitrum-42161/0xec70dcb4a1efa46b8f2d97c310c9c4790ba5ffa8/) | ⚠️ Unaudited |
 | AETH_R21 | unknown | ethereum | [`0xe95a20...c2c3cb`](./contracts/ethereum-1/0xe95a203b1a91a908f9b9ce46459d101078c2c3cb/) | ⚠️ Unaudited |
@@ -92,7 +91,6 @@ Bracket Escrow Staking mints derivative tokens that can be used within Bracket V
 | OsTokenConfig | governance | ethereum | 3 deployments: ethereum [`0x287d1e...66eb59`](./contracts/ethereum-1/0x287d1e2a8de183a8bf8f2b09fa1340fbd766eb59/); ethereum `0x2aae83...a22120`; ethereum `0xe88222...fb1cd5` | ⚠️ Unaudited |
 | OsTokenFlashLoans | token | ethereum | [`0xebe12d...fbf5d2`](./contracts/ethereum-1/0xebe12d858e55ddc5fc5a8153dc3e117824fbf5d2/) | ⚠️ Unaudited |
 | Pool | core_logic | ethereum | [`0x481f28...799592`](./contracts/ethereum-1/0x481f28c0d733614af87897e43d0d52c451799592/) | ⚠️ Unaudited |
-| PriceFeed | operational_periphery | ethereum | 2 deployments: ethereum [`0x802351...dfe471`](./contracts/ethereum-1/0x8023518b2192fb5384dadc596765b3dd1cdfe471/); ethereum `0xb31f53...11d702` | ⚠️ Unaudited |
 | RewardEthToken | token | ethereum | [`0x01d34a...3ecee0`](./contracts/ethereum-1/0x01d34aee72325f1d4a748f13c2169404523ecee0/) | ⚠️ Unaudited |
 | RewardSplitter | operational_periphery | ethereum | 3 deployments: ethereum [`0x439b60...febcd9`](./contracts/ethereum-1/0x439b60d3c886e711dad30cf23a2bbd5388febcd9/); ethereum `0x67561c...6aca9b`; ethereum `0xe00512...5b1902` | ⚠️ Unaudited |
 | RewardSplitterFactory | operational_periphery | ethereum | 3 deployments: ethereum [`0x256af2...6cc5f8`](./contracts/ethereum-1/0x256af27ce81282a0491a5361172c1db08f6cc5f8/); ethereum `0x8c512f...8b1dba`; ethereum `0x90a942...797449` | ⚠️ Unaudited |
@@ -150,7 +148,6 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x2a261e...000306`](./contracts/ethereum-1/0x2a261e60fb14586b474c208b1b7ac6d0f5000306/) | OsTokenVaultController | core_logic | $308,378,070.07 | Verified native implementation with $308,378,070.07 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x475e7d...b96702`](./contracts/ethereum-1/0x475e7d2bd7428deb68deaa933dbf0d5850b96702/) | OsToken | token | $301,236,479.59 | Verified native implementation with $301,236,479.59 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x124c33...510928`](./contracts/ethereum-1/0x124c33d07f94b31adf87c12f7ca3a586d3510928/) | EthGenesisVault | core_logic | $299,318,065.98 | Verified native implementation with $299,318,065.98 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0072e8...fa7085`](./contracts/ethereum-1/0x0072e80b04c17bfd6c6d0a21a17ae118defa7085/) | BracketVaultLens | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x849da6...02e540`](./contracts/ethereum-1/0x849da65afed8483152f8baa75f776c6f2c02e540/) | CumulativeMerkleDrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -188,10 +185,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 43 |
+| native | 42 |
 | upstream | 0 |
 | standard_library | 7 |
-| needs_review | 10 |
+| needs_review | 9 |
 
 ## Scope Matching Notes
 

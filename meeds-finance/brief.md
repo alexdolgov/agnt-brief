@@ -7,8 +7,8 @@
 - Project: Meeds Finance (`meeds-finance`)
 - Website: [https://www.meeds.io/](https://www.meeds.io/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T09:51:26.703Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:07.449Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $1,692,897.47
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Meeds Finance is a farming protocol that allows users to stake tokens and earn rewards, likely through NFT-based reward mechanisms.
+Meeds Finance is a Web3 community app and decentralized engagement platform with an Ethereum token, staking, and reward components.
 
 ### Architecture
 

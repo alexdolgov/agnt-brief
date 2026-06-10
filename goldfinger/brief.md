@@ -5,8 +5,8 @@
 - Project: GoldFinger (`goldfinger`)
 - Website: [https://goldfinger.finance/en](https://goldfinger.finance/en)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T08:16:54.131Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.342Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 5 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $0.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-GoldFinger is a Real World Asset (RWA) protocol on BSC that tokenizes physical gold, allowing users to hold and transfer gold-backed tokens.
+GoldFinger is a BSC Real World Asset protocol centered on ART, a gold-backed token described as yield-bearing and redeemable. Its live surface should account for supporting infrastructure beyond the token itself, including vault, staking, distributor, oracle, registry, and GF token contracts.
 
 ### Architecture
 

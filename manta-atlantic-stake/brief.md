@@ -7,8 +7,8 @@
 - Project: Manta Atlantic Stake (`manta-atlantic-stake`)
 - Website: [https://app.manta.network/manta/stake](https://app.manta.network/manta/stake)
 - Lifecycle: sunsetting (Tier 1, sunsetting)
-- Generated: 2026-05-30T20:51:39.433Z
-- Pipeline run: v2-pipeline-2026-05-30-9de83b-6726
+- Generated: 2026-06-10T20:59:07.177Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, manta
 - Contract surface: 109 unique implementations (136 raw deployments)
 - DeFi Llama TVL: $5,409,052.78
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Manta Atlantic Stake is a Layer 2 scaling solution built on the OP Stack, providing a bridge between Ethereum and the Manta Pacific network. It enables fast and low-cost transactions on Manta Pacific while inheriting security from Ethereum.
+Manta Atlantic Stake is a staking project for MANTA on Manta Atlantic, allowing users to stake MANTA within the Manta Atlantic ecosystem. It should not be described as an OP Stack Layer 2 bridge or as Manta Pacific infrastructure unless that separate Manta Pacific scope is independently documented.
 
 ### Architecture
 

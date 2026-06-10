@@ -5,8 +5,8 @@
 - Project: The Arena (`the-arena`)
 - Website: [https://arena.social/](https://arena.social/)
 - Lifecycle: active (Tier 0, 81.1% below peak)
-- Generated: 2026-05-31T10:59:09.727Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:17.473Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche
 - Contract surface: 119 unique implementations (222 raw deployments)
 - DeFi Llama TVL: $2,202,689.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-The Arena is a multi-chain DeFi ecosystem offering decentralized exchange, token launchpad, perpetual trading, and social finance features. It aggregates liquidity, enables project launches, provides leveraged trading, and integrates social engagement across numerous blockchains.
+The Arena is a SocialFi application on Avalanche centered on social engagement and the ARENA token. Its verified on-chain surface includes SocialFi-related token, registry, governance, and helper contracts; unsupported claims about a multi-chain DeFi ecosystem, DEX, launchpad, perpetual trading, or broad liquidity aggregation should be removed unless separately verified by current official sources and contract ownership evidence.
 
 ### Architecture
 

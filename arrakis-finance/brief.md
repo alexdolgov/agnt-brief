@@ -5,8 +5,8 @@
 - Project: Arrakis Finance (`arrakis-finance`)
 - Website: [https://www.arrakis.finance](https://www.arrakis.finance)
 - Lifecycle: active (Tier 0, 95.9% below peak)
-- Generated: 2026-06-10T20:45:19.444Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.769Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, bsc, ethereum, ink, optimism, plasma, polygon, unichain
 - Contract surface: 124 unique implementations (709 raw deployments)
 - DeFi Llama TVL: $77,236,496.00

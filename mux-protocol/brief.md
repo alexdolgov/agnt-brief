@@ -5,13 +5,13 @@
 - Project: MUX Protocol (`mux-protocol`)
 - Website: [https://mux.network](https://mux.network)
 - Lifecycle: active (Tier 0, 89.2% below peak)
-- Generated: 2026-05-25T14:22:06.434Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:07.960Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, bsc, fantom, optimism
-- Contract surface: 1225 unique implementations (2290 raw deployments)
-- DeFi Llama TVL: $9,850,031.00
-- On-chain TVL (included contracts): $19,066,951.87
-- TVL by chain: Avalanche $16,776,439.67 | Bsc $1,428,542.52 | Arbitrum $861,969.67
+- Contract surface: 1198 unique implementations (2180 raw deployments)
+- DeFi Llama TVL: $9,667,090.00
+- On-chain TVL (included contracts): $861,969.67
+- TVL by chain: Arbitrum $861,969.67
 
 ## Project Description
 
@@ -23,26 +23,25 @@ MUX Perps and MUXLP Tranches share the MUX token and reward infrastructure (e.g.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 25/139 (18.0%)
-- Verified + Unaudited implementations: 109
+- Verified implementations audited: 25/115 (21.7%)
+- Verified + Unaudited implementations: 85
 - Verified by bytecode match: 7
-- Unverified implementations: 1086
-- Unique implementations: 1225
-- Raw deployments: 2290
-- Audits discovered: 4
+- Unverified implementations: 1083
+- Unique implementations: 1198
+- Raw deployments: 2180
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 2
-- Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/mux/information))
-- ASD (verified + unaudited TVL): $19,066,951.87
+- ASD (verified + unaudited TVL): $861,969.67
 - Latest audit: 2025-02 (aging)
-- Staleness: 0 fresh, 1 aging, 2 stale, 0 unknown
+- Staleness: 0 fresh, 1 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Guardian | Tier 2 | 14 | 10.1% | 2025-02 |
-| CertiK | Tier 2 | 12 | 8.6% | 2022-06 |
+| Guardian | Tier 2 | 14 | 12.2% | 2025-02 |
+| CertiK | Tier 2 | 12 | 10.4% | 2022-06 |
 
 ## Contract Surface
 
@@ -74,24 +73,17 @@ MUX Perps and MUXLP Tranches share the MUX token and reward infrastructure (e.g.
 | Swapper | adapter | arbitrum | 20 deployments: arbitrum [`0x0241d1...8fe3f7`](./contracts/arbitrum-42161/0x0241d1b85fd3b184bfe881162eee163f7b8fe3f7/); arbitrum `0x0d37bc...fa7112`; arbitrum `0x36b74e...8e424a`; arbitrum `0x37c893...a47837`; arbitrum `0x422554...92b95a`; arbitrum `0x5c96f6...cf449f`; arbitrum `0x732cd2...5340f1`; arbitrum `0x78ef91...cca2c6`; arbitrum `0x7f6401...7d1337`; arbitrum `0x91d8c0...2cfeb8`; arbitrum `0xc00d94...508fd2`; arbitrum `0xc64930...d2dd97`; arbitrum `0xd00594...e85706`; arbitrum `0xd18e07...e608be`; arbitrum `0xd822d7...b703a0`; arbitrum `0xd882c4...92c7f4`; arbitrum `0xe139a6...28875f`; arbitrum `0xed97d2...50539f`; arbitrum `0xf617a0...5eaf28`; arbitrum `0xfcd646...3d3e78` | ✅ Audited |
 | Trade | unknown | arbitrum | 8 deployments: arbitrum [`0x40d41a...f909e0`](./contracts/arbitrum-42161/0x40d41a1fead68ba3b1fede8876992a425bf909e0/); arbitrum `0x8cee7e...9d12be`; arbitrum `0xc3bda4...d061bc`; arbitrum `0xc6f2e2...141782`; arbitrum `0xd04f3c...fd56a5`; arbitrum `0xe480b9...400913`; arbitrum `0xfc3f30...9f1c2d`; arbitrum `0xffc61a...173ebf` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (109)
+### ⚠️ Verified + Unaudited (85)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| MintSwapCanonicalToken | token | optimism | 58 deployments: optimism [`0x050947...ef0f17`](./contracts/optimism-10/0x0509474f102b5cd3f1f09e1e91feb25938ef0f17/); optimism `0x1bba86...5f34ed`; optimism `0x253be9...8745e0`; optimism `0x50ec9b...9fba4f`; optimism `0x69663e...e75363`; optimism `0xd51a02...417d3f`; optimism `0xe80e0b...389881`; optimism `0xfd951e...500fa8`; optimism `0xff8640...f48c77`; bsc `0x06fda0...074ec0`; bsc `0x07145a...b475a7`; bsc `0x0acc63...b9d4d3`; bsc `0x1305b2...619fd4`; bsc `0x16365b...9b95eb`; bsc `0x181002...102580`; bsc `0x19aa65...fccb3a`; bsc `0x3cc194...b4c02e`; bsc `0x426c58...71751c`; bsc `0x523d3e...6cebec`; bsc `0x6822a7...75cc82`; bsc `0x724a32...14c3bd`; bsc `0x73afc2...9f950c`; bsc `0x79d104...b9c4e0`; bsc `0x81421a...26360c`; bsc `0x8feb41...c00b7e`; bsc `0x904d02...98ff0b`; bsc `0xa5a681...1c3c3e`; bsc `0xa7e592...66c9b2`; bsc `0xb2d09c...2c9aad`; bsc `0xbcc128...04f867`; bsc `0xbd7b8e...e0e8d4`; bsc `0xd6705c...24722e`; bsc `0xea09cb...2476ae`; bsc `0xf23443...408108`; bsc `0xf8bfea...ea26da`; bsc `0xfef170...edad1f`; arbitrum `0x746ba4...b9c3dc`; avalanche `0x2b9e10...8c0aa9`; avalanche `0x30a667...ac0c2f`; avalanche `0x63b0b8...3b3f80`; avalanche `0x70d302...e08cea`; avalanche `0x746ba4...b9c3dc`; avalanche `0x80b010...d603b3`; avalanche `0x90fbe9...99a13e`; avalanche `0xa4918c...367aa9`; avalanche `0xac8009...72b9eb`; avalanche `0xaedb70...694798`; avalanche `0xaf2d36...94e390`; avalanche `0xbc7b02...dfba87`; avalanche `0xcd7d33...65119d`; avalanche `0xcda140...e8a818`; avalanche `0xda0019...7ee27b`; avalanche `0xde5384...5ff842`; avalanche `0xe80e0b...389881`; avalanche `0xea4b1b...a4a58b`; avalanche `0xee396d...92e57d`; avalanche `0xfc6da9...861d3b`; avalanche `0xfcde4a...8b02f1` | ⚠️ Unaudited |
-| OriginalTokenVault | core_logic | avalanche | 2 deployments: bsc `0x78bc5e...ed02dc`; avalanche [`0x5427fe...da1820`](./contracts/avalanche-43114/0x5427fefa711eff984124bfbb1ab6fbf5e3da1820/) | ⚠️ Unaudited |
 | TranchePOL | core_logic | arbitrum | 6 deployments: arbitrum [`0x48fa7d...88ff6d`](./contracts/arbitrum-42161/0x48fa7d65f2a5751982d0999457c0a2eb9f88ff6d/); arbitrum `0x49dd61...38616b`; arbitrum `0x844156...19d4ba`; arbitrum `0x8c2c4f...3bb4e7`; arbitrum `0xbfbda4...17466d`; arbitrum `0xcdc403...0b16fb` | ⚠️ Unaudited |
 | LendingPool | core_logic | arbitrum | 5 deployments: arbitrum [`0x124dce...09319e`](./contracts/arbitrum-42161/0x124dce3bfe55be7f9178c96cf6b5f928c409319e/); arbitrum `0x1bb8c9...b76562`; arbitrum `0x921192...61c4e9`; arbitrum `0x9ba617...b7d129`; arbitrum `0xd849b3...4f82ef` | ⚠️ Unaudited |
-| OriginalTokenVaultV2 | core_logic | bsc | 2 deployments: bsc [`0x11a0c9...44a980`](./contracts/bsc-56/0x11a0c9270d88c99e221360bca50c2f6fda44a980/); arbitrum `0xea4b1b...a4a58b` | ⚠️ Unaudited |
 | SeniorVault | core_logic | arbitrum | 11 deployments: arbitrum [`0x1a6b04...67e893`](./contracts/arbitrum-42161/0x1a6b04fb025776013687d90c5d11312e2767e893/); arbitrum `0x1b1c0d...951ec6`; arbitrum `0x2a04d8...845f6e`; arbitrum `0x2eb888...50b160`; arbitrum `0x593d65...2c6cdd`; arbitrum `0x6b65fa...40fbc0`; arbitrum `0x86b1ff...daa948`; arbitrum `0x99615f...1ce198`; arbitrum `0xb755e4...90d954`; arbitrum `0xc58150...5c02f9`; arbitrum `0xcc6dea...8cd141` | ⚠️ Unaudited |
 | Vault | core_logic | avalanche | 12 deployments: optimism `0x39d653...fd544b`; optimism `0x68e13c...d6afc3`; bsc `0x5ccd30...cc7c93`; bsc `0x6d9c34...2c702d`; bsc `0x8d7515...1aab0a`; arbitrum `0x33261b...ceed62`; arbitrum `0x5ccd30...cc7c93`; arbitrum `0x917952...71d57e`; arbitrum `0xd18ac3...040d05`; avalanche [`0x29a28c...3b7062`](./contracts/avalanche-43114/0x29a28cc3fdc128693ef6a596ef45c43ff63b7062/); avalanche `0x7a1ae3...7f27c5`; avalanche `0xbc4d2a...e1207b` | ⚠️ Unaudited |
-| ApeRewards | unknown | arbitrum | [`0xb970e2...e46655`](./contracts/arbitrum-42161/0xb970e280f9ddaa3349ab9f3ecf778970cde46655/) | ⚠️ Unaudited |
-| ARBIS | unknown | arbitrum | [`0x9f20de...b03461`](./contracts/arbitrum-42161/0x9f20de1fc9b161b34089cbeae888168b44b03461/) | ⚠️ Unaudited |
+| OriginalTokenVaultV2 | core_logic | arbitrum | [`0xea4b1b...a4a58b`](./contracts/arbitrum-42161/0xea4b1b0aa3c110c55f650d28159ce4ad43a4a58b/) | ⚠️ Unaudited |
 | ArbMCBv2 | unknown | arbitrum | [`0xdb967d...f2d7ca`](./contracts/arbitrum-42161/0xdb967d37651532dbac06ec3bcf8e548d43f2d7ca/) | ⚠️ Unaudited |
-| Bridge | operational_periphery | bsc | 4 deployments: bsc [`0x5d96d4...79bfc6`](./contracts/bsc-56/0x5d96d4287d1ff115ee50fac0526cf43ecf79bfc6/); bsc `0xdd90e5...81a1af`; avalanche `0xbb7684...1ad573`; avalanche `0xef3c71...82e5d4` | ⚠️ Unaudited |
 | CallbackRegister | unknown | arbitrum | 4 deployments: arbitrum [`0x3ce837...6e7a31`](./contracts/arbitrum-42161/0x3ce83753671e520751238785ea6648d1476e7a31/); arbitrum `0x482dd8...4d7a51`; arbitrum `0xa13410...dba020`; arbitrum `0xd2df81...b2c74c` | ⚠️ Unaudited |
-| CarbonRewards | unknown | arbitrum | [`0x2c5058...d49f45`](./contracts/arbitrum-42161/0x2c5058325373d02dfd6c08e48d91fcaf8fd49f45/) | ⚠️ Unaudited |
-| CBridge | operational_periphery | bsc | [`0x841ce4...d0738c`](./contracts/bsc-56/0x841ce48f9446c8e281d3f1444cb859b4a6d0738c/) | ⚠️ Unaudited |
 | CelerBridge | operational_periphery | bsc | 3 deployments: bsc [`0x427abd...02ef35`](./contracts/bsc-56/0x427abd728cc35bf0949498a91afcbaca1c02ef35/); arbitrum `0xba20fb...1622f2`; avalanche `0xd84e49...4002f6` | ⚠️ Unaudited |
 | Claimer | operational_periphery | arbitrum | 11 deployments: arbitrum [`0x1c4a57...69cd98`](./contracts/arbitrum-42161/0x1c4a57d75fb6777b710999800da04db46769cd98/); arbitrum `0x22fdc1...d5fbb3`; arbitrum `0x328f5d...2a3ad5`; arbitrum `0x650fbd...74db98`; arbitrum `0x65cf4c...857f05`; arbitrum `0x68fe25...8fa1bb`; arbitrum `0x76a370...60ed82`; arbitrum `0x7cf7c7...4d03bd`; arbitrum `0xbbd2aa...6806a0`; arbitrum `0xc156cf...7680d7`; arbitrum `0xc2d6fe...9917f7` | ⚠️ Unaudited |
 | CollateralPoolEventEmitter | core_logic | arbitrum | 6 deployments: arbitrum [`0x36abad...24242b`](./contracts/arbitrum-42161/0x36abade2d25cd909718d45f513151374cc24242b/); arbitrum `0xa7c589...07f27b`; arbitrum `0xc6eac7...470cc7`; arbitrum `0xe9944e...f8c9cb`; arbitrum `0xf36ce5...4c3a9f`; arbitrum `0xff5bb6...1ed758` | ⚠️ Unaudited |
@@ -112,30 +104,22 @@ MUX Perps and MUXLP Tranches share the MUX token and reward infrastructure (e.g.
 | GmxAdapter | adapter | arbitrum | 9 deployments: arbitrum [`0x16e600...864037`](./contracts/arbitrum-42161/0x16e6006629f9c3be4d4b54972dd10f07b5864037/); arbitrum `0x6375a9...1ed2a2`; arbitrum `0x69f538...0e25df`; arbitrum `0x7e2c35...2c6ba0`; arbitrum `0x81ce58...f1ef9d`; arbitrum `0x908201...c76154`; arbitrum `0xe739c5...c60f6b`; arbitrum `0xf851be...e136fd`; arbitrum `0xf89adc...6b72be` | ⚠️ Unaudited |
 | GmxV2Adapter | adapter | arbitrum | 21 deployments: arbitrum [`0x13465f...82a97d`](./contracts/arbitrum-42161/0x13465f4cb3a993f72a8e2dd45ab7f1103b82a97d/); arbitrum `0x168436...81e6f5`; arbitrum `0x1ce415...9c2031`; arbitrum `0x245d1f...317457`; arbitrum `0x3038fa...31f1bd`; arbitrum `0x47e521...56771c`; arbitrum `0x514867...bea080`; arbitrum `0x66e7ea...4fe342`; arbitrum `0x6ccece...d4cc0c`; arbitrum `0x6db0a8...c97568`; arbitrum `0x79f2ae...deae67`; arbitrum `0x89258c...4ab600`; arbitrum `0x8f70bb...515630`; arbitrum `0x93c68e...ec92cf`; arbitrum `0x9e5abe...2c2cad`; arbitrum `0xc93c87...1dad75`; arbitrum `0xcbe6f7...d87c05`; arbitrum `0xe1b50b...fddd8d`; arbitrum `0xe9960d...dd115a`; arbitrum `0xf523cb...d87d73`; arbitrum `0xfe2afa...feb115` | ⚠️ Unaudited |
 | GnosisSafeL2 | governance | arbitrum | 4 deployments: optimism `0x7c8126...8068a5`; bsc `0xf67d9e...964204`; arbitrum [`0x029a4a...c6bfd6`](./contracts/arbitrum-42161/0x029a4a97e892e7270d9b3b90bfef95599bc6bfd6/); avalanche `0x8564c7...23fc94` | ⚠️ Unaudited |
-| IncentiveEventsReward | unknown | bsc | 3 deployments: bsc [`0x12e45e...6975df`](./contracts/bsc-56/0x12e45e323d44209fcb9afef0e5793b92296975df/); bsc `0x1619de...63feca`; bsc `0xb06d3a...e52cc6` | ⚠️ Unaudited |
-| IncentiveEventsRewardNew | unknown | bsc | [`0xaf2d36...94e390`](./contracts/bsc-56/0xaf2d365e668baafedcfd256c0fbbe519e594e390/) | ⚠️ Unaudited |
 | JuniorBoostHelper | periphery | arbitrum | 17 deployments: arbitrum [`0x04b51b...6e424b`](./contracts/arbitrum-42161/0x04b51ba79e7d19e011ef1db86bd340908a6e424b/); arbitrum `0x1882d0...dfdf04`; arbitrum `0x687f62...db0a38`; arbitrum `0x6f9b2a...16dd50`; arbitrum `0x71a78d...686628`; arbitrum `0x7a3b82...9066d2`; arbitrum `0x8421d4...b25adf`; arbitrum `0x8df4ed...3b74c2`; arbitrum `0xc581b8...afb791`; arbitrum `0xcd3a8c...a1ad76`; arbitrum `0xdf3f43...70b375`; arbitrum `0xe53d40...0fce01`; arbitrum `0xe91a74...2db9ff`; arbitrum `0xe98c54...aec733`; arbitrum `0xf2bef4...1fd7c6`; arbitrum `0xf95e98...edcc58`; arbitrum `0xfefc03...fac11f` | ⚠️ Unaudited |
 | JuniorBoostHelperFactory | registry | arbitrum | 7 deployments: arbitrum [`0x37c5da...9d5a80`](./contracts/arbitrum-42161/0x37c5da65017f35f172708f6cce3e850f279d5a80/); arbitrum `0x503aa1...a394c4`; arbitrum `0x533365...ff14c2`; arbitrum `0x8ea249...375ebc`; arbitrum `0xcbc1c8...c0587c`; arbitrum `0xde6464...19fe3f`; arbitrum `0xe84fe6...c12537` | ⚠️ Unaudited |
 | JuniorVault | core_logic | arbitrum | 7 deployments: arbitrum [`0x2023af...c65aaa`](./contracts/arbitrum-42161/0x2023af622e74beca06160d3778b4f059adc65aaa/); arbitrum `0x4a5518...c4b61d`; arbitrum `0x883774...96b50e`; arbitrum `0x8cd4d7...4ea6db`; arbitrum `0xa8916b...1be31d`; arbitrum `0xac96e1...9395fd`; arbitrum `0xc7af9e...f3ce36` | ⚠️ Unaudited |
 | KashiPair | unknown | arbitrum | [`0x41af35...70e44c`](./contracts/arbitrum-42161/0x41af35511723d01b297757a1555963c2f370e44c/) | ⚠️ Unaudited |
-| L2TBTC | unknown | arbitrum | [`0x6c84a8...d0de40`](./contracts/arbitrum-42161/0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40/) | ⚠️ Unaudited |
 | LibFlashTake | unknown | avalanche | 3 deployments: bsc `0x544458...205a11`; arbitrum `0xd2c3da...8e35aa`; avalanche [`0x12c120...ca99d5`](./contracts/avalanche-43114/0x12c1200f9efcb5e2779dae442b34e48434ca99d5/) | ⚠️ Unaudited |
 | LibGmx | unknown | arbitrum | 7 deployments: arbitrum [`0x11c0c4...603bd9`](./contracts/arbitrum-42161/0x11c0c4dd6ce692b2aa2d65da07aa38687f603bd9/); arbitrum `0x7a5e2e...00ce7a`; arbitrum `0x86b16e...185f10`; arbitrum `0x9568ee...cd5fc9`; arbitrum `0x96bb21...2d324b`; arbitrum `0x9daa92...27899e`; arbitrum `0xcf1670...12bb62` | ⚠️ Unaudited |
 | LibGmxV2 | unknown | arbitrum | 11 deployments: arbitrum [`0x0578c4...bfe5fe`](./contracts/arbitrum-42161/0x0578c43d60a8cd29c27bf6c87e3bb6fd8ebfe5fe/); arbitrum `0x225ccd...7f523e`; arbitrum `0x426ded...01f88d`; arbitrum `0x433f76...bbedfb`; arbitrum `0x75e935...1819c6`; arbitrum `0x7e9e44...7fc30c`; arbitrum `0x971f94...e27eeb`; arbitrum `0x9e8867...16fbfc`; arbitrum `0xb45dcb...329287`; arbitrum `0xc096bb...639c7a`; arbitrum `0xf700b0...b7a1dc` | ⚠️ Unaudited |
 | LibLiquidity | unknown | arbitrum | 10 deployments: optimism `0xbc4d2a...e1207b`; optimism `0xbdf052...043e50`; bsc `0x4b4b0a...95db31`; bsc `0xfb0dcd...642b76`; arbitrum [`0x2abad7...e2d206`](./contracts/arbitrum-42161/0x2abad74605eff3d0c49fd70cd230d974afe2d206/); arbitrum `0xa29356...b8544f`; arbitrum `0xc54f0a...1fbe43`; arbitrum `0xdbf711...9f5c45`; avalanche `0x687d05...22a7be`; avalanche `0x8ab4a3...7108c1` | ⚠️ Unaudited |
 | LibOrderBook2 | unknown | arbitrum | 10 deployments: arbitrum [`0x0035f6...296059`](./contracts/arbitrum-42161/0x0035f6ca0417cd36eb62764bcbbe163e7d296059/); arbitrum `0x6307ff...174327`; arbitrum `0x788626...502906`; arbitrum `0x911702...570fd5`; arbitrum `0x97f518...fb4843`; arbitrum `0x98dbe4...abc003`; arbitrum `0xa1f2b2...fd228d`; arbitrum `0xaf0d89...1a5730`; arbitrum `0xb7b1be...db03f5`; arbitrum `0xf68441...256ffb` | ⚠️ Unaudited |
-| MaiBridgeToken | operational_periphery | avalanche | [`0x61f85f...2b5f41`](./contracts/avalanche-43114/0x61f85ff2a2f4289be4bb9b72fc7010b3142b5f41/) | ⚠️ Unaudited |
-| MarinateAutoCompounder | adapter | arbitrum | [`0x1922c3...1684ab`](./contracts/arbitrum-42161/0x1922c36f3bc762ca300b4a46bb2102f84b1684ab/) | ⚠️ Unaudited |
 | MarketEventUtils | unknown | arbitrum | [`0x80c874...e7587b`](./contracts/arbitrum-42161/0x80c874e50017996106baf6d551ed9b0706e7587b/) | ⚠️ Unaudited |
 | MarketStoreUtils | unknown | arbitrum | [`0x46ffa9...a5acec`](./contracts/arbitrum-42161/0x46ffa915d87bf915c2d01ac7d4c1c5338fa5acec/) | ⚠️ Unaudited |
 | MarketUtils | unknown | arbitrum | [`0x2a2987...6b8d9f`](./contracts/arbitrum-42161/0x2a2987c407e76782fc422a27240c9821206b8d9f/) | ⚠️ Unaudited |
-| MessageBus | operational_periphery | avalanche | 18 deployments: optimism `0x0d71d1...cae69d`; optimism `0x479ec3...fa5dd8`; optimism `0x51af61...4689f7`; optimism `0xe3652e...a2de93`; bsc `0x186ad3...38682f`; bsc `0x194c1f...1e48a9`; bsc `0x7d5de3...12a896`; bsc `0x957148...aeea6b`; bsc `0xce50e2...7880cb`; bsc `0xe80e0b...389881`; bsc `0xf8724b...a9e7be`; avalanche [`0x050947...ef0f17`](./contracts/avalanche-43114/0x0509474f102b5cd3f1f09e1e91feb25938ef0f17/); avalanche `0x0d71d1...cae69d`; avalanche `0x148c1e...e350b5`; avalanche `0x479ec3...fa5dd8`; avalanche `0x51af61...4689f7`; avalanche `0x6c6e22...aa24ca`; avalanche `0xd51a02...417d3f` | ⚠️ Unaudited |
-| MessageBusOwner | operational_periphery | bsc | [`0x92ffad...d80828`](./contracts/bsc-56/0x92ffad2d7b85c56186bc7d798b8e5f2c9cd80828/) | ⚠️ Unaudited |
+| MessageBus | operational_periphery | avalanche | 13 deployments: optimism `0x0d71d1...cae69d`; optimism `0x479ec3...fa5dd8`; optimism `0x51af61...4689f7`; optimism `0xe3652e...a2de93`; bsc `0x186ad3...38682f`; bsc `0x194c1f...1e48a9`; bsc `0xe80e0b...389881`; bsc `0xf8724b...a9e7be`; avalanche [`0x050947...ef0f17`](./contracts/avalanche-43114/0x0509474f102b5cd3f1f09e1e91feb25938ef0f17/); avalanche `0x0d71d1...cae69d`; avalanche `0x479ec3...fa5dd8`; avalanche `0x51af61...4689f7`; avalanche `0xd51a02...417d3f` | ⚠️ Unaudited |
 | Migration | operational_periphery | arbitrum | 4 deployments: arbitrum [`0x28f16e...20a36c`](./contracts/arbitrum-42161/0x28f16eb86481066bf63bcbeb05c8474f7120a36c/); arbitrum `0x5898c3...ea2add`; arbitrum `0x6c7849...3e29e3`; arbitrum `0xfe534c...f91630` | ⚠️ Unaudited |
-| MintSwapCanonicalTokenUpgradableFreezable | token | avalanche | 2 deployments: avalanche [`0x1f0454...b0e82d`](./contracts/avalanche-43114/0x1f045412ffaabe765667c28d13dfdac7d4b0e82d/); avalanche `0xe4f666...a06b18` | ⚠️ Unaudited |
 | MlpRewardTracker | unknown | arbitrum | 8 deployments: arbitrum [`0x0a9bbf...de8e5d`](./contracts/arbitrum-42161/0x0a9bbf8299fed2441009a7bb44874ee453de8e5d/); arbitrum `0x1a8f12...f99ac4`; arbitrum `0x290450...292914`; arbitrum `0x5848be...39852f`; arbitrum `0xb0cf86...d69330`; arbitrum `0xbfd686...34f0f9`; arbitrum `0xd126ea...1e3895`; arbitrum `0xd6cee1...7c80ff` | ⚠️ Unaudited |
 | MockMux3 | unknown | arbitrum | 3 deployments: arbitrum [`0x5857c7...e4bd34`](./contracts/arbitrum-42161/0x5857c758b3f40e99202a51710fc777ba78e4bd34/); arbitrum `0x5db4db...53da9c`; arbitrum `0xe173b3...3f7ea5` | ⚠️ Unaudited |
-| MultiBridgeToken | operational_periphery | bsc | 3 deployments: bsc [`0x09236a...31c51e`](./contracts/bsc-56/0x09236aff6b36a5dbf97b5030a5a650e06931c51e/); bsc `0x2c30b4...7562a0`; bsc `0xa4918c...367aa9` | ⚠️ Unaudited |
 | Mux | unknown | arbitrum | 4 deployments: arbitrum [`0x37a9ed...83d8f4`](./contracts/arbitrum-42161/0x37a9ed70f45dfea8a4d34d80b82f39c4b583d8f4/); arbitrum `0x454c4e...c20d8a`; arbitrum `0x7db477...5074a7`; arbitrum `0x8bb2ac...9b679b` | ⚠️ Unaudited |
 | Mux3 | unknown | arbitrum | 4 deployments: arbitrum [`0x2c367d...252cd3`](./contracts/arbitrum-42161/0x2c367d79d7c721a2c7a1e40bcf022b08ff252cd3/); arbitrum `0x711351...eb5017`; arbitrum `0xd52ae8...663778`; arbitrum `0xdba6a0...0f0c31` | ⚠️ Unaudited |
 | Mux3OwnerFacet | unknown | arbitrum | [`0x1d9f0f...903f8a`](./contracts/arbitrum-42161/0x1d9f0f2e21692bf154d5ca32eafa77b2d1903f8a/) | ⚠️ Unaudited |
@@ -147,13 +131,8 @@ MUX Perps and MUXLP Tranches share the MUX token and reward infrastructure (e.g.
 | MuxRewardTracker | unknown | arbitrum | 7 deployments: arbitrum [`0x0ff022...80adb4`](./contracts/arbitrum-42161/0x0ff022d8ac086f7836c3226291ecfa73d380adb4/); arbitrum `0x2245c7...2be696`; arbitrum `0x283458...affd16`; arbitrum `0x2c969b...0fc9de`; arbitrum `0x9357e3...0ae94e`; arbitrum `0xb49af1...296f29`; arbitrum `0xddb00f...0a0365` | ⚠️ Unaudited |
 | MuxSender | unknown | arbitrum | 2 deployments: arbitrum [`0x1560ed...e8a36e`](./contracts/arbitrum-42161/0x1560ed0c53c924595a4cf57ba622fd0a79e8a36e/); arbitrum `0x7ff8ea...60449a` | ⚠️ Unaudited |
 | MuxTimelock | governance | bsc | 8 deployments: optimism `0x9a383f...6494b6`; optimism `0xb35686...c90b9e`; bsc [`0x4abc47...31eb59`](./contracts/bsc-56/0x4abc472f340001245e0c2854f6f691179931eb59/); bsc `0x4b9465...eca2d3`; arbitrum `0x965a45...00d7c5`; arbitrum `0xc2d287...fbbebb`; avalanche `0x973db3...ee6b07`; avalanche `0xe01375...bdc938` | ⚠️ Unaudited |
-| NyanRewards | unknown | arbitrum | 3 deployments: arbitrum [`0x32e559...1aa724`](./contracts/arbitrum-42161/0x32e5594f14de658b0d577d6560fa0d9c6f1aa724/); arbitrum `0x62ff5b...d2da2c`; arbitrum `0xf6a377...4a703d` | ⚠️ Unaudited |
-| OptimizedTransparentUpgradeableProxy | proxy | avalanche | [`0x5a926e...01ad57`](./contracts/avalanche-43114/0x5a926eeeafc4d217add17e9641e8ce23cd01ad57/) | ⚠️ Unaudited |
 | OwnershipFacet | unknown | arbitrum | 4 deployments: arbitrum [`0x2f977a...3cb988`](./contracts/arbitrum-42161/0x2f977a859ed91c729c781ba0e50927d5da3cb988/); arbitrum `0x54df54...e57001`; arbitrum `0x6c3859...bb8b2e`; arbitrum `0x75d1d5...02cd7d` | ⚠️ Unaudited |
-| PeggedTokenBridge | operational_periphery | avalanche | 2 deployments: bsc `0xd443fe...97580e`; avalanche [`0x88dcdc...958a78`](./contracts/avalanche-43114/0x88dcdc47d2f83a99cf0000fdf667a468bb958a78/) | ⚠️ Unaudited |
-| PeggedTokenBridgeV2 | operational_periphery | bsc | 2 deployments: bsc [`0x26c76f...1e1e4b`](./contracts/bsc-56/0x26c76f7fef00e02a5dd4b5cc8a0f717eb61e1e4b/); avalanche `0xb774c6...fed195` | ⚠️ Unaudited |
 | POL | unknown | arbitrum | 3 deployments: arbitrum [`0x14d1e8...4d5cf3`](./contracts/arbitrum-42161/0x14d1e8ace06005f8abe4e0d526c93dca284d5cf3/); arbitrum `0x188914...5cfdef`; arbitrum `0x338097...ee9c3e` | ⚠️ Unaudited |
-| PONGRewards | unknown | arbitrum | [`0xe34003...098bc2`](./contracts/arbitrum-42161/0xe340031b61a394c7811868ef81d2eacc79098bc2/) | ⚠️ Unaudited |
 | PositionStoreUtils | unknown | arbitrum | [`0xe1645e...f94f8e`](./contracts/arbitrum-42161/0xe1645e6a4e166ce4811f9fd559b895a9c3f94f8e/) | ⚠️ Unaudited |
 | PositionUtils | unknown | arbitrum | [`0x19b9ec...4f1d8b`](./contracts/arbitrum-42161/0x19b9ecd3fa2dc9272cd815ee05f300534b4f1d8b/) | ⚠️ Unaudited |
 | PriceHub | operational_periphery | arbitrum | 2 deployments: arbitrum [`0xc78915...94f76d`](./contracts/arbitrum-42161/0xc7891597fc894cc00ce14e88b1ebd437d294f76d/); arbitrum `0xcec7aa...d15984` | ⚠️ Unaudited |
@@ -174,9 +153,6 @@ MUX Perps and MUXLP Tranches share the MUX token and reward infrastructure (e.g.
 | RouterSeniorImp | adapter | arbitrum | 8 deployments: arbitrum [`0x10411b...f8e814`](./contracts/arbitrum-42161/0x10411b97b7cc802c0f804c7755d2f1e75ff8e814/); arbitrum `0x1f50d0...f5a51d`; arbitrum `0x5dfabd...2b08f8`; arbitrum `0x645e9a...ecea54`; arbitrum `0x8d1df9...42a4b8`; arbitrum `0x948f22...c1c711`; arbitrum `0xb62851...4870f3`; arbitrum `0xd0fb07...eca520` | ⚠️ Unaudited |
 | RouterV1 | adapter | arbitrum | 26 deployments: arbitrum [`0x045293...7daae6`](./contracts/arbitrum-42161/0x045293f5b63692fdf15562c9ebc86fad037daae6/); arbitrum `0x0ed2c6...21effa`; arbitrum `0x214e2a...18dd00`; arbitrum `0x42a38e...5a0760`; arbitrum `0x4c03ba...467b3a`; arbitrum `0x5edaaf...a1da19`; arbitrum `0x619d7c...1a842c`; arbitrum `0x645a63...02f9d3`; arbitrum `0x770f76...ddb8d5`; arbitrum `0x77a3bf...bb76c5`; arbitrum `0x85bfca...0bdb97`; arbitrum `0x864696...ad0ca2`; arbitrum `0x92f3b9...b6fcd7`; arbitrum `0x9b637a...1f18c5`; arbitrum `0x9db2f7...8975ff`; arbitrum `0x9fd467...83476c`; arbitrum `0xaa5584...4433d2`; arbitrum `0xacf98f...1f43cf`; arbitrum `0xad92af...d416d7`; arbitrum `0xb89201...fb91de`; arbitrum `0xc0065c...7fa812`; arbitrum `0xc21808...850a5e`; arbitrum `0xd06937...0aca39`; arbitrum `0xdf8ec5...2f6d5e`; arbitrum `0xe46060...0b6246`; arbitrum `0xfccd75...2b7d04` | ⚠️ Unaudited |
 | SeniorConfig | governance | arbitrum | 4 deployments: arbitrum [`0x237708...988309`](./contracts/arbitrum-42161/0x237708681335ea203ea62d705c20fc3425988309/); arbitrum `0x5af474...d22baa`; arbitrum `0xbe08ad...3deb9d`; arbitrum `0xf0449e...804987` | ⚠️ Unaudited |
-| Sentinel | unknown | avalanche | 2 deployments: avalanche [`0x9beec5...a15db6`](./contracts/avalanche-43114/0x9beec5bd03025700385e37cd5cbd470d0fa15db6/); avalanche `0xcfb342...db2593` | ⚠️ Unaudited |
-| SingleBridgeToken | operational_periphery | bsc | 3 deployments: bsc [`0x66acea...56f64f`](./contracts/bsc-56/0x66acea0f41656711f58ff840c8857e3e5356f64f/); bsc `0xbbca42...0ddc82`; bsc `0xe46910...15b22b` | ⚠️ Unaudited |
-| stARBIS | unknown | arbitrum | [`0xbf0075...d2db86`](./contracts/arbitrum-42161/0xbf00759d7e329d7a7fa1d4dcdc914c53d1d2db86/) | ⚠️ Unaudited |
 | SusdcOracleL2 | operational_periphery | arbitrum | 4 deployments: arbitrum [`0x179340...cfb9c5`](./contracts/arbitrum-42161/0x179340fb5eb9c82b7c76a9a8f5512271b7cfb9c5/); arbitrum `0x21fb1a...202c11`; arbitrum `0x840f8b...aa66c2`; arbitrum `0xf8b3fa...3e6b57` | ⚠️ Unaudited |
 | SwapHelper | periphery | arbitrum | [`0x020a37...77e8b5`](./contracts/arbitrum-42161/0x020a37e4d3e3c969df521edd198187957377e8b5/) | ⚠️ Unaudited |
 | SwapPricingUtils | unknown | arbitrum | [`0x985c24...79b89c`](./contracts/arbitrum-42161/0x985c24816385c4cce9fa48ca484fa174a279b89c/) | ⚠️ Unaudited |
@@ -186,7 +162,6 @@ MUX Perps and MUXLP Tranches share the MUX token and reward infrastructure (e.g.
 | TransparentUpgradeableProxy | proxy | arbitrum | 117 deployments: optimism `0x065ecf...5c50e9`; optimism `0x3153c1...8c1c45`; optimism `0x3640a9...2b8e65`; optimism `0x444383...871984`; optimism `0x689ddb...1205c6`; optimism `0x8b886e...f4ad5b`; optimism `0x973d0e...a4307f`; optimism `0x978b55...e53dd5`; optimism `0x9c7338...9b3541`; optimism `0xb84028...17cb0d`; optimism `0xc3949e...b17276`; bsc `0x0532e5...b4fbc3`; bsc `0x14db4b...380718`; bsc `0x1ea32f...0e5b3b`; bsc `0x3153c1...8c1c45`; bsc `0x3640a9...2b8e65`; bsc `0x393df1...3ef457`; bsc `0x4e1b11...701441`; bsc `0x689ddb...1205c6`; bsc `0x728d3c...d6af84`; bsc `0x782ffe...7f318d`; bsc `0x7f6542...4379ee`; bsc `0x973d0e...a4307f`; bsc `0x9b699a...7665fe`; bsc `0xc3949e...b17276`; bsc `0xcab6f6...b185ea`; bsc `0xe6c127...9a4722`; bsc `0xf98bc4...76b40f`; arbitrum [`0x01afd1...ddea58`](./contracts/arbitrum-42161/0x01afd1b17d3e42d3e0858aca8469e1d2e8ddea58/); arbitrum `0x042314...06f170`; arbitrum `0x0625f0...7126b2`; arbitrum `0x069647...accfd1`; arbitrum `0x127963...30a96e`; arbitrum `0x20c3af...f74de4`; arbitrum `0x29a0d0...6fed54`; arbitrum `0x29b834...cbc90b`; arbitrum `0x2b316c...2e3e3d`; arbitrum `0x2dd138...af83d2`; arbitrum `0x3153c1...8c1c45`; arbitrum `0x3640a9...2b8e65`; arbitrum `0x370e39...ad0b8f`; arbitrum `0x384b33...f8d280`; arbitrum `0x3cf25c...89d536`; arbitrum `0x44357a...be0f06`; arbitrum `0x452bff...ce7c0c`; arbitrum `0x4ccf26...cc1959`; arbitrum `0x51af61...ed2131`; arbitrum `0x52946e...79c3c3`; arbitrum `0x56bb25...ab0db2`; arbitrum `0x57a01c...ff9e33`; arbitrum `0x580eca...af478b`; arbitrum `0x58f982...0c76d3`; arbitrum `0x596cf3...a013be`; arbitrum `0x63040a...bb87f6`; arbitrum `0x689ddb...1205c6`; arbitrum `0x6cfbbb...e7efa3`; arbitrum `0x74a6bc...4c97d1`; arbitrum `0x782c8c...f81c57`; arbitrum `0x798a76...89f57b`; arbitrum `0x7f58f3...85d6a0`; arbitrum `0x80db8c...092151`; arbitrum `0x812df1...b15ad5`; arbitrum `0x820a0d...c43043`; arbitrum `0x851fc8...c444ab`; arbitrum `0x86c90f...16b356`; arbitrum `0x881a93...f1df44`; arbitrum `0x883c6a...977403`; arbitrum `0x899ac9...4c8d10`; arbitrum `0x8b2e93...a92194`; arbitrum `0x8cdc2d...c3514a`; arbitrum `0x90faed...7145c2`; arbitrum `0x973d0e...a4307f`; arbitrum `0x982ad1...c073d9`; arbitrum `0x9897a7...63a9c3`; arbitrum `0x9a3eba...3607ab`; arbitrum `0x9cb9f3...8774d4`; arbitrum `0xa5c115...48bc61`; arbitrum `0xab6f7b...656f0d`; arbitrum `0xafe4d5...af1e03`; arbitrum `0xb35650...e2f7b3`; arbitrum `0xb35686...c90b9e`; arbitrum `0xb362b8...987cd2`; arbitrum `0xb60ba9...2c1916`; arbitrum `0xb84028...17cb0d`; arbitrum `0xb97529...e0a610`; arbitrum `0xc3949e...b17276`; arbitrum `0xc7c5ec...80934b`; arbitrum `0xcab6f6...b185ea`; arbitrum `0xd129e4...4c7a6b`; arbitrum `0xd8335a...0328ef`; arbitrum `0xdbd04e...5a8fc5`; arbitrum `0xdcafda...01722f`; arbitrum `0xdf47a8...57b57d`; arbitrum `0xdf88fe...893a44`; arbitrum `0xdfadb0...c77a64`; arbitrum `0xe6f518...4dc572`; arbitrum `0xe9ca28...ded388`; arbitrum `0xeafa49...3bb887`; arbitrum `0xef7ce0...bf6f03`; arbitrum `0xf0de17...aebe8d`; arbitrum `0xf3233d...25d724`; arbitrum `0xf326b4...4749e9`; arbitrum `0xf662db...91b2ba`; avalanche `0x065ecf...5c50e9`; avalanche `0x0ba2e4...ee1d84`; avalanche `0x3153c1...8c1c45`; avalanche `0x3640a9...2b8e65`; avalanche `0x370ad8...6bbaaf`; avalanche `0x398238...b0237b`; avalanche `0x5898c3...ea2add`; avalanche `0x5ccd30...cc7c93`; avalanche `0x689ddb...1205c6`; avalanche `0x973d0e...a4307f`; avalanche `0x978b55...e53dd5`; avalanche `0xa5c115...48bc61`; avalanche `0xb84028...17cb0d`; avalanche `0xc3949e...b17276` | ⚠️ Unaudited |
 | Vester | operational_periphery | arbitrum | 12 deployments: arbitrum [`0x3bab0a...56bdbb`](./contracts/arbitrum-42161/0x3bab0a5f0ab3347855a78dacf961887bea56bdbb/); arbitrum `0x4da168...7f01a7`; arbitrum `0x5e396c...539b9a`; arbitrum `0x629c9b...60003c`; arbitrum `0x6f853a...70015c`; arbitrum `0x748df3...4be870`; arbitrum `0xbcf8c1...620226`; arbitrum `0xd7e864...e8ad18`; arbitrum `0xe0b6bc...bc57c6`; arbitrum `0xeb8c86...7adc40`; arbitrum `0xeea036...91b7cf`; arbitrum `0xff0248...8c88c1` | ⚠️ Unaudited |
 | VotingEscrow | operational_periphery | arbitrum | 4 deployments: arbitrum [`0x22f9fc...1b7232`](./contracts/arbitrum-42161/0x22f9fc4a8fff13180472c01c77663828c71b7232/); arbitrum `0x517220...b3f785`; arbitrum `0xa65ba1...097810`; arbitrum `0xcd3112...32e9a2` | ⚠️ Unaudited |
-| WithdrawInbox | operational_periphery | avalanche | 2 deployments: bsc `0xf0ff98...7bf854`; avalanche [`0x03ab38...2be828`](./contracts/avalanche-43114/0x03ab38cf52173cc71be33b0d2779568f412be828/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (2)
 
@@ -205,11 +180,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 |---|---|---|---|---|
 | MuxBookUpdater202404 | unknown | bsc | 4 deployments: optimism `0xdc2560...228d27`; bsc [`0x335fd3...422002`](./contracts/bsc-56/0x335fd3bb235322a54590684b2990e8be73422002/); arbitrum `0x5bf943...4f5692`; avalanche `0x49e751...4c7a04` | ⚠️ Unaudited (bytecode match) |
 | MuxPoolUpdater202404 | unknown | avalanche | 4 deployments: optimism `0x9cb9a1...33d0d5`; bsc `0xe12fde...94310d`; arbitrum `0x53276a...5b530d`; avalanche [`0x1c9bf5...e95dd1`](./contracts/avalanche-43114/0x1c9bf593c077c346d375cb8d7110bd5295e95dd1/) | ⚠️ Unaudited (bytecode match) |
-| ProxyAdmin | unknown | optimism | 25 deployments: optimism [`0x08195e...c1d563`](./contracts/optimism-10/0x08195ea961d0814f5d3ea709c3d6aef3c0c1d563/); optimism `0x109962...07f037`; optimism `0x29b834...cbc90b`; optimism `0x3b53d2...492d88`; optimism `0xdf47a8...57b57d`; bsc `0x2257dc...34ed3f`; bsc `0x2d0c13...e51a4f`; bsc `0x440062...885f91`; bsc `0x5e8e7d...631b23`; bsc `0xb3022d...3c5fca`; arbitrum `0x2257dc...34ed3f`; arbitrum `0x2d1822...79ac8b`; arbitrum `0x67740d...e58508`; arbitrum `0x86e16c...10c046`; arbitrum `0x90e680...5a77db`; arbitrum `0xb6d4b8...7b9ef3`; arbitrum `0xc4daef...6d1157`; arbitrum `0xc83805...0ab1b6`; arbitrum `0xe52d9a...deb32a`; arbitrum `0xe75278...c801e9`; arbitrum `0xfccc1a...319b3d`; avalanche `0x2257dc...34ed3f`; avalanche `0x3b53d2...492d88`; avalanche `0x855e99...96d520`; avalanche `0xbade2a...6fb5a4` | ⚠️ Unaudited (bytecode match) |
+| ProxyAdmin | unknown | optimism | 22 deployments: optimism [`0x08195e...c1d563`](./contracts/optimism-10/0x08195ea961d0814f5d3ea709c3d6aef3c0c1d563/); optimism `0x109962...07f037`; optimism `0x29b834...cbc90b`; optimism `0x3b53d2...492d88`; optimism `0xdf47a8...57b57d`; bsc `0x2257dc...34ed3f`; bsc `0x2d0c13...e51a4f`; bsc `0xb3022d...3c5fca`; arbitrum `0x2257dc...34ed3f`; arbitrum `0x2d1822...79ac8b`; arbitrum `0x67740d...e58508`; arbitrum `0x86e16c...10c046`; arbitrum `0x90e680...5a77db`; arbitrum `0xb6d4b8...7b9ef3`; arbitrum `0xc4daef...6d1157`; arbitrum `0xc83805...0ab1b6`; arbitrum `0xe52d9a...deb32a`; arbitrum `0xe75278...c801e9`; arbitrum `0xfccc1a...319b3d`; avalanche `0x2257dc...34ed3f`; avalanche `0x3b53d2...492d88`; avalanche `0x855e99...96d520` | ⚠️ Unaudited (bytecode match) |
 | Reader | unknown | optimism | 20 deployments: optimism [`0x123a4d...af51f9`](./contracts/optimism-10/0x123a4d60447db42462baf1c5d488bb04c6af51f9/); optimism `0xdf88fe...893a44`; bsc `0x727eeb...a8c0b5`; bsc `0x9897a7...63a9c3`; arbitrum `0x13fef6...9b10c4`; arbitrum `0x25ab6c...e3b7fd`; arbitrum `0x5e250d...27701f`; arbitrum `0x60db2a...b5c6ac`; arbitrum `0x636285...b97858`; arbitrum `0x677b1a...7e957e`; arbitrum `0x697af7...faddac`; arbitrum `0x734510...47e06a`; arbitrum `0xb3df04...937e9d`; arbitrum `0xe56a0a...e2b29c`; arbitrum `0xf64b4b...d2e7d6`; arbitrum `0xf7cd21...62f986`; arbitrum `0xf9fed4...ca0719`; avalanche `0xb56fcf...c86f93`; avalanche `0xce443b...95b01d`; avalanche `0xd2c3da...8e35aa` | ⚠️ Unaudited (bytecode match) |
 | ReceiveAssets | unknown | arbitrum | 7 deployments: bsc `0x4fedc4...e00bc1`; bsc `0x73e526...d1309b`; bsc `0x7c2b41...21c520`; arbitrum [`0x116876...00eaf1`](./contracts/arbitrum-42161/0x11687644c4e0f292f65bab6776490cfa5d00eaf1/); arbitrum `0x89aa49...3fba91`; avalanche `0x918626...4f6153`; avalanche `0xc94f3d...74bb1c` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (1086)
+### ❓ Unverified (1083)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -543,7 +518,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | arbitrum | `0x35bcff...b5bcd1` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x365f05...09cd3d` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x374bc2...e095d3` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x374e9f...3af13a` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x380ca5...5aa1ca` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x382525...76de4e` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x388040...36b153` | ❓ Unverified |
@@ -1220,7 +1194,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | avalanche | `0x1ea32f...0e5b3b` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x1f13f8...dc963d` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x228302...6d605b` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x26c76f...1e1e4b` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x28d475...39746a` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x2de35a...819391` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x2e81f4...1a88e6` | ❓ Unverified |
@@ -1261,7 +1234,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | avalanche | `0x81615d...7d7660` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x818372...0347c1` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x81f662...28e45b` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x841ce4...d0738c` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x8645f1...422c49` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x867651...0366b9` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x8bd448...74ff08` | ❓ Unverified |
@@ -1306,10 +1278,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://skynet.certik.com/projects/mux-protocol) | CertiK | Audit | 2022-06 | stale | Direct | n/a | 0 | n/a |
 | [here](https://github.com/mux-world/mux3-protocol/blob/main/audit/MUX%203%20Protocol%20Report.pdf) | Guardian | Audit | 2025-02 | aging | Direct | contract_name | 241 | high |
 | [Certik-Audit-20220601.pdf](https://github.com/mux-world/mux-protocol/blob/main/audit/Certik-Audit-20220601.pdf) | CertiK | Audit | 2022-06 | stale | Direct | contract_name | 192 | high |
-| [Active Bug Bounty Program](https://immunefi.com/bug-bounty/mux/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
 
 ## Coverage Gaps
 
@@ -1317,11 +1287,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| optimism | [`0x050947...ef0f17`](./contracts/optimism-10/0x0509474f102b5cd3f1f09e1e91feb25938ef0f17/) | MintSwapCanonicalToken | token | $17,462,839.69 | Verified native implementation with $17,462,839.69 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x48fa7d...88ff6d`](./contracts/arbitrum-42161/0x48fa7d65f2a5751982d0999457c0a2eb9f88ff6d/) | TranchePOL | core_logic | $645,045.34 | Verified native implementation with $645,045.34 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x124dce...09319e`](./contracts/arbitrum-42161/0x124dce3bfe55be7f9178c96cf6b5f928c409319e/) | LendingPool | core_logic | $216,661.59 | Verified native implementation with $216,661.59 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1a6b04...67e893`](./contracts/arbitrum-42161/0x1a6b04fb025776013687d90c5d11312e2767e893/) | SeniorVault | core_logic | $212.64 | Verified native implementation with $212.64 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x5d96d4...79bfc6`](./contracts/bsc-56/0x5d96d4287d1ff115ee50fac0526cf43ecf79bfc6/) | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x3ce837...6e7a31`](./contracts/arbitrum-42161/0x3ce83753671e520751238785ea6648d1476e7a31/) | CallbackRegister | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1c4a57...69cd98`](./contracts/arbitrum-42161/0x1c4a57d75fb6777b710999800da04db46769cd98/) | Claimer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x008a4e...6400a6`](./contracts/arbitrum-42161/0x008a4e5044e96c773e7d8ef7f675a3c1366400a6/) | DegenFeeDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -1332,8 +1300,6 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | [`0x13f7f7...ab71e0`](./contracts/arbitrum-42161/0x13f7f765ceae215219f4dd00e4038acd83ab71e0/) | GainsReader | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x16e600...864037`](./contracts/arbitrum-42161/0x16e6006629f9c3be4d4b54972dd10f07b5864037/) | GmxAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x13465f...82a97d`](./contracts/arbitrum-42161/0x13465f4cb3a993f72a8e2dd45ab7f1103b82a97d/) | GmxV2Adapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x12e45e...6975df`](./contracts/bsc-56/0x12e45e323d44209fcb9afef0e5793b92296975df/) | IncentiveEventsReward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xaf2d36...94e390`](./contracts/bsc-56/0xaf2d365e668baafedcfd256c0fbbe519e594e390/) | IncentiveEventsRewardNew | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x04b51b...6e424b`](./contracts/arbitrum-42161/0x04b51ba79e7d19e011ef1db86bd340908a6e424b/) | JuniorBoostHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2023af...c65aaa`](./contracts/arbitrum-42161/0x2023af622e74beca06160d3778b4f059adc65aaa/) | JuniorVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x11c0c4...603bd9`](./contracts/arbitrum-42161/0x11c0c4dd6ce692b2aa2d65da07aa38687f603bd9/) | LibGmx | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -1342,7 +1308,6 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | [`0x0035f6...296059`](./contracts/arbitrum-42161/0x0035f6ca0417cd36eb62764bcbbe163e7d296059/) | LibOrderBook2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2a2987...6b8d9f`](./contracts/arbitrum-42161/0x2a2987c407e76782fc422a27240c9821206b8d9f/) | MarketUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x28f16e...20a36c`](./contracts/arbitrum-42161/0x28f16eb86481066bf63bcbeb05c8474f7120a36c/) | Migration | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x09236a...31c51e`](./contracts/bsc-56/0x09236aff6b36a5dbf97b5030a5a650e06931c51e/) | MultiBridgeToken | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2c367d...252cd3`](./contracts/arbitrum-42161/0x2c367d79d7c721a2c7a1e40bcf022b08ff252cd3/) | Mux3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1d9f0f...903f8a`](./contracts/arbitrum-42161/0x1d9f0f2e21692bf154d5ca32eafa77b2d1903f8a/) | Mux3OwnerFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2ef6d4...5cf7a6`](./contracts/arbitrum-42161/0x2ef6d4b46c71f7ea0b8d0309f342100d3a5cf7a6/) | Mux3POL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -1376,22 +1341,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 144 |
-| upstream | 12 |
+| native | 139 |
+| upstream | 2 |
 | standard_library | 5 |
-| needs_review | 1064 |
+| needs_review | 1052 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
 - Match method counts: extraction_exact=433
-
-Zero-match audit list:
-
-- [3380] DL audit link
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,23 +1,21 @@
 # Agentic Audit Brief: LiquidLoans
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 31.0% over 90 days
-
 ## Project Overview
 
 - Project: LiquidLoans (`liquidloans`)
 - Website: [https://www.liquidloans.io](https://www.liquidloans.io)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-24T00:11:06.760Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:06.986Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 20 unique implementations (39 raw deployments)
-- DeFi Llama TVL: $3,959,319.86
+- DeFi Llama TVL: $3,917,338.83
 - On-chain TVL (included contracts): $3,041,629.65
 - TVL by chain: Base $3,041,629.65
 
 ## Project Description
 
-LiquidLoans is a collateralized debt position (CDP) protocol on Base that allows users to deposit collateral and borrow the stablecoin USDL. It manages vaults, liquidations, and stability mechanisms to maintain the peg and solvency of the system.
+LiquidLoans is a collateralized debt position (CDP) protocol live on Base and PulseChain that allows users to deposit ETH and PLS collateral and borrow the stablecoin USDL. It manages vaults, liquidations, and stability mechanisms to maintain the peg and solvency of the system.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The LiquidLoans family shares a single set of core logic contracts that manage v
 - Latest audit: 2025-11 (fresh)
 - Staleness: 1 fresh, 0 aging, 3 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $3,041,629.65 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

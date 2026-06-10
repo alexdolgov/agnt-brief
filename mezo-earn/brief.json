@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mezo-earn",
-  "generated_at": "2026-05-31T14:54:05.769Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:07.704Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "mezo-earn",
@@ -56,7 +56,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Mezo Earn is the earning/allocation component of the Mezo protocol, allowing users to allocate supported assets into Mezo Earn/MezoAllocator logic to participate in the protocol's rewards and TVL program. The protocol/TVL chain should be identified as Mezo, while the discovered Ethereum address is part of the contract inventory as an upgradeable proxy pointing to the MezoAllocator implementation.",
     "relationship_narrative": null,
     "product_family_count": 1
   },
@@ -75,7 +75,7 @@
       "chain_name": "ethereum",
       "address": "0xb90fdad3dfd180458d62cc6acedc983d78e20122",
       "name": "MezoAllocator",
-      "role": "operational_periphery",
+      "role": "core_logic",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "Mezo Earn",

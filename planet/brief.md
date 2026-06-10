@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Planet
 
-⚠️ Lifecycle status: DEAD - TVL changed 7.0% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 7.0% over 90 days
 
 ## Project Overview
 
 - Project: Planet (`planet`)
 - Website: [https://app.planet.finance/](https://app.planet.finance/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-24T16:49:31.109Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:09.336Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 34 unique implementations (298 raw deployments)
-- DeFi Llama TVL: $1,853,124.00
+- DeFi Llama TVL: $1,820,176.00
 - On-chain TVL (included contracts): $778,287,229.96
 - TVL by chain: Bsc $778,287,229.96
 
 ## Project Description
 
-Planet is a DeFi protocol on BSC offering lending, yield farming, and liquid staking services. It uses Compound-style lending markets and various yield strategies to generate returns for users.
+Planet is a BSC DeFi protocol with Compound-style lending/borrowing markets and earning/yield products, including farm and auto-compounding strategy contracts. Liquid-staking-related components should be treated as separate or only included where specifically confirmed by contract-level evidence.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The lending family provides the core money market, while yield farming strategie
 - Latest audit: 2021-06 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $778,287,229.96 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $778,287,229.96 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

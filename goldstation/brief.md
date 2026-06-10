@@ -5,17 +5,17 @@
 - Project: GOLDSTATION (`goldstation`)
 - Website: [https://goldstation.io](https://goldstation.io)
 - Lifecycle: active (Tier 0, 63.1% below peak)
-- Generated: 2026-05-24T13:16:54.415Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:04.344Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, klaytn
 - Contract surface: 5 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $2,259,142.10
+- DeFi Llama TVL: $2,154,383.42
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-GOLDSTATION is a decentralized exchange and real-world asset protocol that enables token swaps, liquidity provision, and staking. It also offers tokenized gold exposure through its RWA product.
+GOLDSTATION is a broad RWA-focused DeFi platform with swap, liquidity provision, earn, and mint-burn functionality. Gold appears to be one RWA vertical or product area rather than the entirety of the platform; specific gold-related claims should be tied to identified audited contracts or documented product materials.
 
 ### Architecture
 

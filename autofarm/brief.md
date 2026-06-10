@@ -6,8 +6,8 @@
 
 - Project: Autofarm (`autofarm`)
 - Lifecycle: declining (Tier 0, 99.7% below peak)
-- Generated: 2026-06-10T20:48:30.302Z
-- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
+- Generated: 2026-06-10T20:58:57.888Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: aurora, avalanche, boba, bsc, celo, cronos, fantom, gnosis, harmony, heco, moonbeam, moonriver, polygon
 - Contract surface: 10 unique implementations (16 raw deployments)
 - DeFi Llama TVL: $6,050,499.25

@@ -5,8 +5,8 @@
 - Project: Spectra (`spectra`)
 - Website: [https://www.spectra.finance](https://www.spectra.finance)
 - Lifecycle: active (Tier 0, 81.8% below peak)
-- Generated: 2026-05-31T10:38:40.794Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.340Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, bsc, ethereum, hyperliquid, optimism, sonic
 - Contract surface: 214 unique implementations (1250 raw deployments)
 - DeFi Llama TVL: $50,945,360.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Spectra is an on-chain capital allocator and yield aggregator that enables users to deposit assets into yield-generating strategies, trade future yield, and manage liquidity across multiple chains. It provides infrastructure for creating and managing yield-bearing tokens, meta-vaults, and bridges to optimize returns.
+Spectra is a permissionless interest-rate derivatives and yield-tokenization protocol. It enables users to split yield-bearing assets into principal tokens and yield tokens, trade fixed-rate and future-yield exposure, access yield leverage, and provide liquidity through PT/YT markets and AMM pools. Spectra also includes MetaVaults and related periphery that can automate access to curated yield strategies, but these are features of the broader yield-tokenization and interest-rate market protocol rather than the protocol’s primary identity.
 
 ### Architecture
 
@@ -29,11 +29,11 @@ Spectra V2 factories deploy yield tokens and principal tokens, which are wrapped
 - Unverified implementations: 65
 - Unique implementations: 214
 - Raw deployments: 1250
-- Audits discovered: 9
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $10,462,429.03
-- Latest audit: 2023-10 (stale)
-- Staleness: 0 fresh, 0 aging, 7 stale, 2 unknown
+- Latest audit: 2022-10 (stale)
+- Staleness: 0 fresh, 0 aging, 2 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -291,13 +291,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [Least-Authority-Ethereum-Foundation-GSN-Final-Audit-Report-v2.pdf](https://github.com/perspectivefi/spectra-governance/blob/main/lib/gsn/audits/Least-Authority-Ethereum-Foundation-GSN-Final-Audit-Report-v2.pdf) | unknown | Audit | 2020-12 | stale | Direct | n/a | 0 | n/a |
 | [opengsn-audit-march2021_front-page-summaries.pdf](https://github.com/perspectivefi/spectra-governance/blob/main/lib/gsn/audits/opengsn-audit-march2021_front-page-summaries.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [2017-03.md](https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2017-03.md) | OpenZeppelin | Audit | 2017-03 | stale | Direct | n/a | 0 | n/a |
-| [2018-10.pdf](https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2018-10.pdf) | OpenZeppelin | Audit | 2018-10 | stale | Direct | n/a | 0 | n/a |
-| [2022-10-Checkpoints.pdf](https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2022-10-Checkpoints.pdf) | OpenZeppelin | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
 | [2022-10-ERC4626.pdf](https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2022-10-ERC4626.pdf) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
-| [2023-05-v4.9.pdf](https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2023-05-v4.9.pdf) | OpenZeppelin | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
-| [2023-10-v5.0.pdf](https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2023-10-v5.0.pdf) | OpenZeppelin | Audit | 2023-10 | stale | Direct | n/a | 0 | n/a |
-| [README.md](https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/README.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -387,7 +381,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 9
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -396,12 +390,6 @@ Zero-match audit list:
 
 - [5696] Least-Authority-Ethereum-Foundation-GSN-Final-Audit-Report-v2.pdf
 - [5697] opengsn-audit-march2021_front-page-summaries.pdf
-- [5698] 2017-03.md
-- [5699] 2018-10.pdf
-- [5700] 2022-10-Checkpoints.pdf
 - [5701] 2022-10-ERC4626.pdf
-- [5702] 2023-05-v4.9.pdf
-- [5703] 2023-10-v5.0.pdf
-- [5704] README.md
 
 Fork inheritance lineage and inherited audits are included when available.

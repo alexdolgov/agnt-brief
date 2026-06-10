@@ -5,21 +5,22 @@
 - Project: Firelight (`firelight`)
 - Website: [https://firelight.finance/](https://firelight.finance/)
 - Lifecycle: unknown
-- Generated: 2026-05-27T12:42:05.630Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:59:04.002Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $80,322,115.97
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Firelight is a DeFi farming protocol that allows users to stake assets and earn yield. Based on the limited metadata, it appears to be a yield farming platform, but specific details about its mechanisms are not available.
-
-### Architecture
-
-No product families or contracts are defined, so no relationships can be described.
+Firelight is a DeFi protection and cover marketplace on Flare. The protocol uses staked XRP and other digital assets to back coverage, issues liquid staking tokens on Flare, allows builders or protocols to buy cover, and lets stakers earn fees and rewards for providing protection capacity.
 
 ## Audit Coverage Summary
 

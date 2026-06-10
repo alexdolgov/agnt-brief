@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "thedeep",
-  "generated_at": "2026-05-31T10:59:08.122Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:17.490Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "thedeep",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 4,
     "contracts_unverified": 149,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 8217310.83532,
     "tvl_usd": 8217310.83532,
@@ -55,13 +55,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "TheDeep is a liquidity management protocol that deploys and manages concentrated liquidity vaults (ICHIVaults) across multiple chains. It uses factory contracts to create vaults and rebalancer factories to optimize liquidity positions, aiming to automate and enhance yield for liquidity providers.",
+    "project_purpose": "TheDeep is a cross-chain platform for automating DeFi liquidity strategies for protocols, including liquidity management and an integrated rewards engine. The observed contract surface includes ICHI-style vault factories, guards, and rebalancer/factory deployments used to create and manage concentrated liquidity vault strategies across supported chains.",
     "relationship_narrative": "The ICHIVaultFactory contracts deploy and register vaults, while the RebalancerFactory contracts (often behind proxies) provide the logic to rebalance those vaults. Both share the same deployer clusters and are deployed together, indicating a tight integration where vaults rely on rebalancers for ongoing management.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 164,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -5873,29 +5878,7 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 2135,
-      "audit_key": "audit-2135",
-      "report_name": "View Security Audit Report →",
-      "report_url": "https://github.com/bailsec/BailSec/blob/main/Bailsec%20-%20ICHI%20-%20Vaults%20-%20Final%20Report.pdf",
-      "auditor": "yAudit",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -6040,12 +6023,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 2135,
-        "report_name": "View Security Audit Report →"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

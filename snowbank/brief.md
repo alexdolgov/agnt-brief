@@ -6,8 +6,8 @@
 
 - Project: Snowbank (`snowbank`)
 - Lifecycle: dead (Tier 0, 100% below peak)
-- Generated: 2026-05-31T10:38:38.738Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.222Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche
 - Contract surface: 12 unique implementations (19 raw deployments)
 - DeFi Llama TVL: $3,739,799.35
@@ -16,7 +16,7 @@
 
 ## Project Description
 
-Snowbank is a reserve currency protocol on Avalanche that issues the SB token, which is backed by a basket of assets. It provides staking and auto-compounding mechanisms to incentivize long-term holding and grow the treasury.
+Snowbank is an Avalanche-based OHM-style reserve currency protocol that issues the SB token, which is backed by a basket of assets. It includes staking mechanisms for SB holders; any auto-compounding functionality should be treated as inferred from contract names unless verified by current project documentation.
 
 ### Architecture
 

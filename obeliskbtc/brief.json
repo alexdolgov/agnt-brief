@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "obeliskbtc",
-  "generated_at": "2026-05-31T10:08:28.198Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:08.753Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "obeliskbtc",
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "ObeliskBTC is a bridge protocol that enables users to custody Bitcoin and mint a wrapped representation on Ethereum. It provides infrastructure for Bitcoin-backed assets and restaking strategies.",
+    "project_purpose": "ObeliskBTC is a Bitcoin asset-management and bridge protocol tracked as a separate DeFiLlama protocol. Its scope should be treated separately from broader NodeDAO/NETH liquid-staking or restaking contracts unless project documentation explicitly links those deployments to ObeliskBTC.",
     "relationship_narrative": "The protocol consists of a single product family with no shared infrastructure across multiple families. All contracts are deployed by the same deployer cluster, indicating a unified codebase.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 19,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

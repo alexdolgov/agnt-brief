@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "abc-pool",
-  "generated_at": "2026-06-10T20:10:08.636Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "generated_at": "2026-06-10T20:58:56.430Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -38,7 +38,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "ABC Pool, also described as ABC PoS Pool, is a Conflux PoS staking pool where users pledge or stake CFX and earn rewards in CFX and ABC. The project also advertises V2 features involving ABC/CFX LP conversion, dividends, and ABC buyback, but those features should be treated as active only where separately verified.",
     "relationship_narrative": null,
     "product_family_count": 1
   },

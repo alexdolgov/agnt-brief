@@ -7,11 +7,11 @@
 - Project: THORSwap (`thorswap`)
 - Website: [https://www.thorswap.finance/](https://www.thorswap.finance/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-23T04:10:06.375Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:17.498Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 34 unique implementations (56 raw deployments)
-- DeFi Llama TVL: $10,259,640.47
+- DeFi Llama TVL: $16,729,673.40
 - On-chain TVL (included contracts): $15,542,115.04
 - TVL by chain: Ethereum $15,542,115.04
 
@@ -53,7 +53,7 @@ The THORSwap family shares the ThorToken as the base asset, with uTHOR, vTHOR, a
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | TSAggregatorGeneric | unknown | ethereum | 5 deployments: ethereum [`0x0ccd5d...f63c3c`](./contracts/ethereum-1/0x0ccd5dd5bcf1af77dc358d1e2f06ee880ef63c3c/); ethereum `0x5727d8...7cd2ab`; ethereum `0x77cdf2...7abd95`; ethereum `0x97fce4...26cffc`; ethereum `0xd31f7e...c49fd2` | ✅ Audited |
-| TSAggregatorTokenTransferProxy | token | ethereum | [`0xf892fe...33abe8`](./contracts/ethereum-1/0xf892fef9da200d9e84c9b0647ecff0f34633abe8/) | ✅ Audited |
+| TSAggregatorTokenTransferProxy | proxy | ethereum | [`0xf892fe...33abe8`](./contracts/ethereum-1/0xf892fef9da200d9e84c9b0647ecff0f34633abe8/) | ✅ Audited |
 | vTHOR | unknown | ethereum | [`0x815c23...c24d8d`](./contracts/ethereum-1/0x815c23eca83261b6ec689b60cc4a58b54bc24d8d/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (20)

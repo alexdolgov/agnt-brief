@@ -5,8 +5,8 @@
 - Project: Brickken (`brickken`)
 - Website: [https://www.brickken.com](https://www.brickken.com)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T07:34:59.917Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.120Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, base, ethereum, polygon
 - Contract surface: 29 unique implementations (55 raw deployments)
 - DeFi Llama TVL: $41,678,640.81
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Brickken is a real-world asset (RWA) tokenization protocol that enables the issuance, management, and trading of tokenized securities. It provides a factory-based infrastructure for creating and managing security token offerings (STOs), including token and escrow contracts.
+Brickken is an institutional digital asset and real-world asset (RWA) tokenization platform. It provides infrastructure for no-code asset issuance, compliance workflows such as KYC/KYB, investor onboarding, token offerings, white-label token stores or portals, marketplace-style functionality, and lifecycle management across multiple asset classes.
 
 ### Architecture
 

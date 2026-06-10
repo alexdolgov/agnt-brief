@@ -1,12 +1,14 @@
 # Agentic Audit Brief: Llama Airforce
 
+⚠️ Lifecycle status: DECLINING - TVL dropped 13.2% over 90 days
+
 ## Project Overview
 
 - Project: Llama Airforce (`llama-airforce`)
 - Website: [https://llama.airforce](https://llama.airforce)
-- Lifecycle: active (Tier 0, 88.9% below peak)
-- Generated: 2026-05-31T08:39:08.564Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 88.9% below peak)
+- Generated: 2026-06-10T20:59:07.014Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 93 unique implementations (180 raw deployments)
 - DeFi Llama TVL: $3,827,128.96
@@ -15,7 +17,7 @@
 
 ## Project Description
 
-Llama Airforce is a yield aggregation protocol that optimizes returns on Convex and Aura liquidity positions. It provides vaults that auto-compound rewards and manage staked assets for users.
+Llama Airforce is associated publicly with the Curve ecosystem, described as “Airdropping knowledge bombs about the Curve ecosystem.” Its on-chain surface and DeFiLlama categorization suggest yield/vault-related activity across multiple product families, including Convex-, Aura-, Union/Pirex-, staking-, zap-, harvester-, migration-, and distributor-related contracts, but specific claims such as unified auto-compounding optimization should be treated as unverified unless supported by primary documentation or source review.
 
 ### Architecture
 
@@ -35,6 +37,7 @@ The single product family contains vaults that share a common deployer cluster, 
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [declining]. ASD of $3,513,474.52 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

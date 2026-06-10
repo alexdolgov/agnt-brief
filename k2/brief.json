@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "k2",
-  "generated_at": "2026-05-31T08:34:00.316Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:06.414Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "k2",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "K2 is a Layer 2 scaling solution built on the OP Stack, providing fast and low-cost transactions while inheriting Ethereum's security. It uses a bridge to move assets between Ethereum and K2, and an OptimismPortal for depositing and withdrawing transactions.",
+    "project_purpose": "K2 should be described as part of the broader OpenGDP/Karak ecosystem rather than only as an OP Stack Layer 2 bridge. The project includes programmable economic infrastructure with staking/restaking and vault components, alongside K2 bridge and OP Stack chain infrastructure for moving assets and messages between Ethereum and K2. The contract surface should distinguish these Karak/OpenGDP vault, staking/restaking, registry, governance, and operational components from the bridge/portal contracts instead of treating the system as only a Layer 2 scaling bridge.",
     "relationship_narrative": "The L1ChugSplashProxy (L1StandardBridge) and OptimismPortal work together to handle deposits and withdrawals, with the bridge managing token transfers and the portal processing transaction commitments and fraud proofs.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 30,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -4,17 +4,17 @@
 
 - Project: BSCSwap (`bscswap`)
 - Lifecycle: active (Tier 0, 50.6% below peak)
-- Generated: 2026-05-23T18:37:34.389Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:01.138Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 30 unique implementations (111 raw deployments)
-- DeFi Llama TVL: $4,999,282.72
+- DeFi Llama TVL: $5,010,034.63
 - On-chain TVL (included contracts): $20,269.77
 - TVL by chain: Bsc $20,269.77
 
 ## Project Description
 
-BSCSwap is a decentralized exchange (DEX) on BSC that enables trustless token swaps through automated market-making pools. It appears to be a Uniswap V2 fork, providing liquidity provision and trading functionality.
+BSCSwap is a BSC decentralized exchange/AMM, apparently based on a Uniswap V2-style model for token swaps and liquidity provision. Its reviewed surface should not be described as a single-core-contract, self-contained DEX only: the broader contract set includes multiple modules and product families such as factory/router-style DEX components, staking or pool contracts including BurnPool and DegenPool, LaunchField/IDO-related contracts, vault/strategy components, and other ancillary deployments. Scope should explicitly distinguish confirmed BSCSwap DEX/AMM contracts from non-DEX modules and any suspected contamination or excluded entries.
 
 ### Architecture
 

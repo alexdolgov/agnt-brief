@@ -1,23 +1,21 @@
 # Agentic Audit Brief: HOPR
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: HOPR (`hopr`)
 - Website: [https://hoprnet.org](https://hoprnet.org)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-25T04:18:55.762Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:04.679Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: gnosis
 - Contract surface: 81 unique implementations (253 raw deployments)
-- DeFi Llama TVL: $1,173,060.55
+- DeFi Llama TVL: $1,164,330.35
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-HOPR is a privacy-focused protocol that provides network-level metadata protection for data exchange. It enables users to run nodes and relay messages through a mixnet, ensuring that communication remains private and untraceable.
+HOPR is a privacy-focused protocol that provides network-level metadata protection for data exchange. It enables users to run nodes and relay messages through a mixnet, helping keep communication private and harder to trace. Its on-chain surface should not be described as only HoprNodeStakeFactory and HoprChannels; it includes contracts supporting staking, node and network registries, node management, payment channels, token/oracle/periphery components, and historical staking seasons.
 
 ### Architecture
 
@@ -31,13 +29,12 @@ The HOPR family consists of two core contracts that work together: HoprNodeStake
 - Unverified implementations: 58
 - Unique implementations: 81
 - Raw deployments: 253
-- Audits discovered: 2
-- Scoreable audits (matched contracts): 2
+- Audits discovered: 1
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-09 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: 4.3% (ChainSecurity)
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -161,7 +158,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://www.chainsecurity.com/security-audit/hopr-payment-channels) | ChainSecurity | Audit | n/a | unknown | Direct | contract_name | 21 | low |
 | [download report](https://reports.chainsecurity.com/HOPRNet/ChainSecurity_HOPRNet_PaymentChannel_Audit.pdf) | ChainSecurity | Audit | 2021-09 | stale | Direct | contract_name | 21 | high |
 
 ## Coverage Gaps
@@ -197,7 +193,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1, low=1
-- Match method counts: extraction_exact=42
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=21
 
 Fork inheritance lineage and inherited audits are included when available.

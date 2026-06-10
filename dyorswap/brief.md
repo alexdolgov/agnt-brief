@@ -5,8 +5,8 @@
 - Project: DyorSwap (`dyorswap`)
 - Website: [https://dyorswap.finance/?chainId=34443](https://dyorswap.finance/?chainId=34443)
 - Lifecycle: active (Tier 0, 71.7% below peak)
-- Generated: 2026-05-31T07:55:25.587Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:02.055Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: blast, ink, merlin, mode, plasma, sonic, unichain
 - Contract surface: 93 unique implementations (97 raw deployments)
 - DeFi Llama TVL: $2,243,589.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-DyorSwap is a decentralized exchange and launchpad protocol enabling token swaps and new project launches across multiple chains. It provides automated market maker (AMM) functionality for trading and a launchpad for token sales.
+DyorSwap is primarily a decentralized exchange/automated market maker (DEX/AMM) protocol enabling token swaps across multiple chains. DefiLlama also lists a DyorSwap launchpad child, but it has no current TVL and no identified launchpad-specific contracts in this inventory, so launchpad or token-sale functionality should not be treated as part of the verified active contract surface.
 
 ### Architecture
 

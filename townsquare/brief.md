@@ -5,21 +5,22 @@
 - Project: TownSquare (`townsquare`)
 - Website: [https://app.townsq.xyz/](https://app.townsq.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-05-24T17:26:48.103Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:17.536Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,753,901.24
+- DeFi Llama TVL: $1,796,630.92
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-TownSquare is a lending protocol that enables users to supply and borrow assets. It manages collateralized loans and interest rate mechanisms.
-
-### Architecture
-
-No product families or contracts are defined in the provided metadata, so no structural relationships can be described.
+TownSquare is a Monad-based decentralized lending, money-market, leverage and yield application for earning, borrowing and lending assets.
 
 ## Audit Coverage Summary
 

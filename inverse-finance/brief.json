@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "inverse-finance",
-  "generated_at": "2026-05-31T14:54:09.451Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:06.281Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "inverse-finance",
     "tier": 0,
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 10,
     "coverage_pct": 11.1,
-    "total_audits": 9,
+    "total_audits": 7,
     "scoreable_audits": 5,
     "dl_tvl_usd": 41929884,
     "tvl_usd": 428774798.8436159,
@@ -59,13 +59,13 @@
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 2,
-      "aging": 1,
-      "stale": 5,
+      "aging": 0,
+      "stale": 4,
       "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Inverse Finance is a decentralized lending protocol that enables users to borrow its native stablecoin, DOLA, against interest-bearing collateral. It also provides yield-bearing token wrappers and governance mechanisms to manage protocol parameters and risk.",
+    "project_purpose": "Inverse Finance is a decentralized fixed-rate lending protocol centered on DOLA. Its FiRM markets enable fixed-rate DOLA borrowing against supported collateral using DBR, while sDOLA is the protocol's yield-bearing DOLA product. The protocol also includes governance and risk-management mechanisms for supported markets and parameters.",
     "relationship_narrative": "The Inverse Finance family provides the core lending infrastructure where Markets use Oracles and BorrowController to manage DOLA minting, while DolaBorrowingRights and Fed regulate debt and supply. The FiRM family's XINV token wraps INV from the Key Contract Addresses family, and governance contracts like GovernorMills and Timelock control parameters across both families.",
     "product_family_count": 3
   },
@@ -7732,27 +7732,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1764,
-      "audit_key": "audit-1764",
-      "report_name": "The RWG onboarded boutique auditing firm [DefiMoon](https://www.inverse.finance/blog/posts/en-US/new-security-layer-a-welcome-to-the-defi-moon-team) during Q3 and Q4 2022 as security partners, with the intent of having their team complement internal QA and testing and bolster our security infrastructure. After a period of research and introductions into several qualified auditing firms, DeFi Moon stood out as a talented and genuine team eager to take on the challenge. During this time they performed an informal audit of FiRM contracts prior to the Code4Rena bug bounty contest. Pre-launch audit can be found [here.]() DefiMoon also provided security consulting and auditing for the [Convex Fed](https://www.inverse.finance/governance/proposals/mills/66), [Aura Fed](https://www.inverse.finance/governance/proposals/mills/71), and [Velo Fed](https://www.inverse.finance/governance/proposals/mills/68) contracts. Their expertise helped us identify and address potential risks and improve the safety and security of these deployments. We’re grateful for their support.",
-      "report_url": "https://github.com/Defimoonorg/Audit-Report/blob/main/InverseFinance.pdf",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "stale",
-      "date": "2022-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 1765,
       "audit_key": "audit-1765",
       "report_name": "An audit of the bad debt repayment products and a new INV oracle solution was performed by Peckshield in Q2 2022. Their report can be found [here]().",
@@ -7761,27 +7740,6 @@
       "audit_type": "audit",
       "freshness": "stale",
       "date": "2022-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3899,
-      "audit_key": "audit-3899",
-      "report_name": "Rendered PDF capture",
-      "report_url": "https://www.inverse.finance/brand-assets-2025-v1.1.0.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -9029,16 +8987,8 @@
         "report_name": "By Sherlock, live since March 30th, 2026"
       },
       {
-        "audit_id": 1764,
-        "report_name": "The RWG onboarded boutique auditing firm [DefiMoon](https://www.inverse.finance/blog/posts/en-US/new-security-layer-a-welcome-to-the-defi-moon-team) during Q3 and Q4 2022 as security partners, with the intent of having their team complement internal QA and testing and bolster our security infrastructure. After a period of research and introductions into several qualified auditing firms, DeFi Moon stood out as a talented and genuine team eager to take on the challenge. During this time they performed an informal audit of FiRM contracts prior to the Code4Rena bug bounty contest. Pre-launch audit can be found [here.]() DefiMoon also provided security consulting and auditing for the [Convex Fed](https://www.inverse.finance/governance/proposals/mills/66), [Aura Fed](https://www.inverse.finance/governance/proposals/mills/71), and [Velo Fed](https://www.inverse.finance/governance/proposals/mills/68) contracts. Their expertise helped us identify and address potential risks and improve the safety and security of these deployments. We’re grateful for their support."
-      },
-      {
         "audit_id": 1765,
         "report_name": "An audit of the bad debt repayment products and a new INV oracle solution was performed by Peckshield in Q2 2022. Their report can be found [here]()."
-      },
-      {
-        "audit_id": 3899,
-        "report_name": "Rendered PDF capture"
       }
     ],
     "inherited_remapped_matches": []

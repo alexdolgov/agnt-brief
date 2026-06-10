@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ribbon-finance",
-  "generated_at": "2026-05-25T15:56:48.928Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:11.443Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "ribbon-finance",
@@ -43,9 +43,9 @@
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 60,
     "coverage_pct": 31,
-    "total_audits": 15,
-    "scoreable_audits": 15,
-    "dl_tvl_usd": 4957420,
+    "total_audits": 14,
+    "scoreable_audits": 14,
+    "dl_tvl_usd": 4851720,
     "tvl_usd": 179277198.59469992,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -67,14 +67,19 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 15,
+      "stale": 14,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Ribbon Finance is a DeFi protocol offering structured products that generate yield through automated options strategies and lending. It provides vaults that execute covered calls, put selling, and other option-based strategies, as well as fixed-rate lending products, allowing users to deposit assets and earn returns.",
+    "project_purpose": "Ribbon Finance is a DeFi protocol historically focused on crypto structured products, especially Theta Vaults that automate options strategies such as covered calls and put selling. Related Earn/Lend-style products should be treated as historical or specific on-chain modules rather than the protocol's current primary product focus.",
     "relationship_narrative": "Theta Vaults and Ribbon Earn share the RibbonFactory for deployment and management, while Ribbon Lend uses its own PoolFactory and PoolMaster infrastructure. The RBN token is used across Liquidity Gauges for rewards and may be involved in governance via the Ribbon DAO.",
     "product_family_count": 7
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 147,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -475,7 +480,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533"
+        "audit-2535"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -670,7 +675,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533",
+        "audit-2535",
         "audit-2545"
       ],
       "is_audited": true,
@@ -749,7 +754,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533"
+        "audit-2535"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1243,8 +1248,7 @@
       "audits_covering": [
         "audit-2529",
         "audit-2530",
-        "audit-2533",
-        "audit-2534",
+        "audit-2535",
         "audit-2542",
         "audit-2545"
       ],
@@ -1306,7 +1310,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533",
+        "audit-2535",
         "audit-2545"
       ],
       "is_audited": true,
@@ -1587,7 +1591,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533"
+        "audit-2535"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1620,7 +1624,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533",
+        "audit-2535",
         "audit-2541"
       ],
       "is_audited": true,
@@ -1820,7 +1824,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533"
+        "audit-2535"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2015,7 +2019,7 @@
       ],
       "audits_covering": [
         "audit-2529",
-        "audit-2533"
+        "audit-2535"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2057,7 +2061,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533",
+        "audit-2535",
         "audit-2543"
       ],
       "is_audited": true,
@@ -2311,7 +2315,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533"
+        "audit-2535"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -4663,7 +4667,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533",
+        "audit-2535",
         "audit-2536",
         "audit-2544"
       ],
@@ -4929,7 +4933,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533"
+        "audit-2535"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -4971,7 +4975,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533"
+        "audit-2535"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -5031,7 +5035,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533"
+        "audit-2535"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -5288,7 +5292,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533",
+        "audit-2535",
         "audit-2540",
         "audit-2543"
       ],
@@ -5332,7 +5336,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533"
+        "audit-2535"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -5432,7 +5436,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533"
+        "audit-2535"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -5793,7 +5797,6 @@
       "audits_covering": [
         "audit-2529",
         "audit-2530",
-        "audit-2534",
         "audit-2542"
       ],
       "is_audited": true,
@@ -5854,7 +5857,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2533",
+        "audit-2535",
         "audit-2539"
       ],
       "is_audited": true,
@@ -7983,7 +7986,6 @@
       "audits_covering": [
         "audit-2529",
         "audit-2530",
-        "audit-2534",
         "audit-2542",
         "audit-2545"
       ],
@@ -8865,25 +8867,15 @@
       ],
       "matched_contracts": 6,
       "scope_note": null,
-      "extraction_confidence": "high|medium",
+      "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 2531,
-          "report_url": "https://github.com/ribbon-finance/audit/blob/master/reports/PeckShield-Audit-Report-Ribbon-v1.0.pdf"
-        },
-        {
-          "audit_id": 2532,
-          "report_url": "https://raw.githubusercontent.com/ribbon-finance/audit/b837e7b04dfbbc6fb577039e9baa598f46ec04a7/reports/PeckShield-Audit-Report-Ribbon-v1.0.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
-      "audit_id": 2533,
-      "audit_key": "audit-2533",
-      "report_name": "Rendered PDF capture",
-      "report_url": "https://raw.githubusercontent.com/ribbon-finance/audit/b837e7b04dfbbc6fb577039e9baa598f46ec04a7/reports/Quantstamp%20Theta%20Vault.pdf",
+      "audit_id": 2535,
+      "audit_key": "audit-2535",
+      "report_name": "Quantstamp",
+      "report_url": "https://github.com/ribbon-finance/audit/blob/master/reports/Quantstamp%20Theta%20Vault.pdf",
       "auditor": "Quantstamp",
       "audit_type": "audit",
       "freshness": "stale",
@@ -8928,45 +8920,6 @@
         "VaultRegistry"
       ],
       "matched_contracts": 129,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 2533,
-          "report_url": "https://raw.githubusercontent.com/ribbon-finance/audit/b837e7b04dfbbc6fb577039e9baa598f46ec04a7/reports/Quantstamp%20Theta%20Vault.pdf"
-        },
-        {
-          "audit_id": 2535,
-          "report_url": "https://github.com/ribbon-finance/audit/blob/master/reports/Quantstamp%20Theta%20Vault.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 2534,
-      "audit_key": "audit-2534",
-      "report_name": "Rendered PDF capture",
-      "report_url": "https://raw.githubusercontent.com/ribbon-finance/audit/b837e7b04dfbbc6fb577039e9baa598f46ec04a7/reports/RibbonThetaVault%20V2%20Smart%20Contract%20Review%20And%20Verification.pdf",
-      "auditor": "Quantstamp",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2021-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "GnosisAuction",
-        "OptionsVaultStorage",
-        "RibbonThetaVault",
-        "ShareMath",
-        "StrikeSelection",
-        "Vault",
-        "VaultLifecycle"
-      ],
-      "matched_contracts": 87,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -9237,9 +9190,9 @@
     {
       "auditor": "Quantstamp",
       "tier": 2,
-      "contracts_covered": 21,
-      "coverage_pct": 24.1,
-      "latest_audit": "2021-07"
+      "contracts_covered": 19,
+      "coverage_pct": 21.8,
+      "latest_audit": "2021-05"
     },
     {
       "auditor": "Unknown",
@@ -9700,11 +9653,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 805
+      "extraction_exact": 583
     },
     "extraction_confidence_counts": {
-      "high": 15,
-      "medium": 1
+      "high": 14
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

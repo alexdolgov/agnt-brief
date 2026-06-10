@@ -1,22 +1,22 @@
 # Agentic Audit Brief: MM Finance
 
-⚠️ Lifecycle status: DEAD - TVL changed 0.2% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 0.2% over 90 days
 
 ## Project Overview
 
 - Project: MM Finance (`mm-finance`)
-- Lifecycle: dead (Tier 0, 99.9% below peak)
-- Generated: 2026-05-24T22:47:17.239Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 0, 99.9% below peak)
+- Generated: 2026-06-10T20:59:07.731Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, cronos, polygon
 - Contract surface: 192 unique implementations (262 raw deployments)
-- DeFi Llama TVL: $1,442,667.00
+- DeFi Llama TVL: $1,462,523.00
 - On-chain TVL (included contracts): $1,848,184.55
 - TVL by chain: Polygon $1,741,985.81 | Arbitrum $106,198.73
 
 ## Project Description
 
-MM Finance is a multi-chain DeFi ecosystem offering decentralized exchange (DEX) services, yield optimization, algorithmic stablecoins, and launchpad functionality. It operates across Polygon, Arbitrum, and Cronos, providing liquidity pools, staking, and automated yield strategies.
+MM Finance is a DeFi protocol with deployed contracts across chains including Polygon and Cronos, with verified contract evidence showing DEX/router, factory, liquidity/staking, token, proxy/admin, oracle, and GMX-style periphery components. Claims about additional products such as METF, Savanna, algorithmic stablecoins, launchpad functionality, or automated yield strategies should be treated as unverified unless supported by primary documentation or included in accessible audited contract scope.
 
 ### Architecture
 
@@ -36,7 +36,7 @@ The families share a common deployer cluster and proxy infrastructure, indicatin
 - Latest audit: 2022-01 (stale)
 - Staleness: 0 fresh, 0 aging, 2 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $1,848,184.55 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $1,848,184.55 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

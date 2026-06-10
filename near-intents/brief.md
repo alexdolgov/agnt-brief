@@ -5,8 +5,8 @@
 - Project: NEAR Intents (`near-intents`)
 - Website: [https://near.com/](https://near.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:01:19.311Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:08.053Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: gnosis
 - Contract surface: 7 unique implementations (24 raw deployments)
 - DeFi Llama TVL: $79,032,269.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-NEAR Intents is a cross-chain bridge protocol that enables asset transfers between NEAR and other blockchains. It uses governance-controlled token contracts and proxy-based upgradeability to manage bridged assets on Gnosis.
+NEAR Intents is an intents-based multichain liquidity, trading, and settlement system that powers cross-chain swaps and asset exchange across NEAR and other networks. The listed Gnosis/xDai contracts represent only one observed subset of its deployed surface, including token, proxy, governance, and validator-related contracts, and should not be treated as the full protocol-wide contract surface.
 
 ### Architecture
 

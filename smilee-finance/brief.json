@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "smilee-finance",
-  "generated_at": "2026-05-24T17:09:21.927Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:16.217Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "smilee-finance",
     "tier": 0,
@@ -26,17 +26,17 @@
     "total_addresses": 223,
     "unique_implementations": 186,
     "total_deployments": 223,
-    "audited_contracts": 1,
-    "unaudited_contracts": 22,
-    "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 22,
+    "audited_contracts": 0,
+    "unaudited_contracts": 23,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 23,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 163,
-    "coverage_pct": 4.3,
-    "total_audits": 3,
-    "scoreable_audits": 3,
-    "dl_tvl_usd": 1830890,
-    "tvl_usd": 1830890,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 1740942,
+    "tvl_usd": 1740942,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -45,23 +45,26 @@
       "arbitrum",
       "berachain"
     ],
-    "tier1_coverage_pct": 4.3,
-    "tier1_auditors": [
-      "Spearbit"
-    ],
-    "latest_audit_date": "2025-05",
-    "audit_freshness": "aging",
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 3,
+      "aging": 0,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Smilee Finance is a DeFi protocol offering options and liquid staking products. It enables users to trade options and earn yield through liquid staking derivatives across Arbitrum and Berachain.",
+    "project_purpose": "Smilee Finance's current primary product is gBERA, a Berachain liquid staking and yield product. Its Arbitrum options/vault contracts should be treated as legacy or secondary/low-TVL surfaces if retained in scope.",
     "relationship_narrative": "The two families operate on separate chains with no direct contract dependencies, but share the Smilee Finance brand and likely a common governance or token layer not visible in the contract surface.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 186,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -427,18 +430,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2958",
-        "audit-2959",
-        "audit-2960"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -6172,104 +6171,8 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 2958,
-      "audit_key": "audit-2958",
-      "report_name": "Rendered PDF capture",
-      "report_url": "https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FK3W9Hj6sr2y8j6Zdkgub%2FGuardefy_Audit_gBERA_SmileeFinance.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "BeraContractsLocator",
-        "Deployer",
-        "GBeraAssetManager",
-        "NodeFeeReceiver",
-        "NodeRegistry",
-        "NodeWithdrawalVault",
-        "WithdrawalQueue",
-        "gBera",
-        "wgBera"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2959,
-      "audit_key": "audit-2959",
-      "report_name": "Rendered PDF capture",
-      "report_url": "https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FyKq7K1kTTAd57CnP2ask%2FCantina_Audit_gBERA_SmileeFinance.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "GBeraAssetManager",
-        "NodeFeeReceiver",
-        "NodeRegistry",
-        "NodeWithdrawalVault",
-        "WgBera",
-        "WithdrawalQueue",
-        "gBera",
-        "wgBera"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2960,
-      "audit_key": "audit-2960",
-      "report_name": "Rendered PDF capture",
-      "report_url": "https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FvhApBDZa65vO2FueUH9y%2FGuardefy_Audit_gBERA%20Update_Smilee%20Finance.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "GBera",
-        "GBeraAssetManager",
-        "NodeFeeReceiver",
-        "UpgradeContracts"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    }
-  ],
-  "auditor_coverage": [
-    {
-      "auditor": "Spearbit",
-      "tier": 1,
-      "contracts_covered": 1,
-      "coverage_pct": 4.3,
-      "latest_audit": "2025-05"
-    }
-  ],
+  "audits": [],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 42161,
@@ -6499,13 +6402,8 @@
     "needs_review": 122
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 3
-    },
-    "extraction_confidence_counts": {
-      "high": 2,
-      "medium": 1
-    },
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

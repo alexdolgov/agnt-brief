@@ -5,17 +5,17 @@
 - Project: Camelot (`camelot`)
 - Website: [https://camelot.exchange/](https://camelot.exchange/)
 - Lifecycle: active (Tier 0, 81.9% below peak)
-- Generated: 2026-05-25T16:57:54.254Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:01.241Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum
 - Contract surface: 118 unique implementations (208 raw deployments)
-- DeFi Llama TVL: $27,140,357.00
+- DeFi Llama TVL: $26,054,683.00
 - On-chain TVL (included contracts): $6,402,979.58
 - TVL by chain: Arbitrum $6,402,979.58
 
 ## Project Description
 
-Camelot is a decentralized exchange (DEX) protocol on Arbitrum One that enables users to swap tokens, provide liquidity, and earn yield through staking and farming. It supports both classic AMM pools and concentrated liquidity (Algebra-based) pools, along with launchpad and yield-boosting features.
+Camelot is a decentralized exchange and liquidity hub for Arbitrum and supported Orbit chains. Its original/Camelot V2 infrastructure is based on classic UniswapV2-style AMM pools, while Camelot V3 uses Algebra-based concentrated-liquidity infrastructure; adapters and periphery contracts may connect to Algebra deployments. The protocol enables token swaps, liquidity provision, staking, farming, launchpad features, and yield-boosting mechanisms. If the audit brief is limited to Arbitrum One contracts, that scope limitation should be stated explicitly.
 
 ### Architecture
 

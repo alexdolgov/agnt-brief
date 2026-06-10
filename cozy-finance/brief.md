@@ -5,17 +5,17 @@
 - Project: Cozy Finance (`cozy-finance`)
 - Website: [https://www.cozy.finance](https://www.cozy.finance)
 - Lifecycle: active (Tier 0, 73.5% below peak)
-- Generated: 2026-05-24T12:18:52.145Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:01.518Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: optimism
 - Contract surface: 48 unique implementations (49 raw deployments)
-- DeFi Llama TVL: $2,285,709.00
+- DeFi Llama TVL: $2,295,123.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Cozy Finance is a decentralized insurance protocol that allows users to create and manage protection markets for on-chain risks. It enables depositors to earn yield by providing capital to cover specific risks, while protection seekers can purchase coverage against events like smart contract exploits or oracle failures.
+Cozy Finance is a DeFi safety stack for managing and underwriting on-chain risk. The protocol includes protection markets as well as Tranche, Reserve, Earn, and Safety Module components that let users provide capital, earn yield, and support coverage or risk-management mechanisms across supported deployments.
 
 ### Architecture
 

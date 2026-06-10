@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Wasabi
 
-⚠️ Lifecycle status: RUGGED - TVL dropped 92.0% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 92.0% over 90 days
 
 ## Project Overview
 
 - Project: Wasabi (`wasabi`)
 - Website: [https://app.wasabi.xyz/p/LKHR9](https://app.wasabi.xyz/p/LKHR9)
-- Lifecycle: rugged (Tier 1, rugged)
-- Generated: 2026-05-25T00:59:13.151Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 1, rugged)
+- Generated: 2026-06-10T20:59:18.794Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, berachain, blast, ethereum
 - Contract surface: 83 unique implementations (445 raw deployments)
-- DeFi Llama TVL: $1,329,763.00
+- DeFi Llama TVL: $1,307,017.00
 - On-chain TVL (included contracts): $6,129,835.09
 - TVL by chain: Base $3,347,651.86 | Ethereum $2,030,226.48 | Blast $744,661.47 | Berachain $7,295.28
 
 ## Project Description
 
-Wasabi is a decentralized protocol offering leveraged perpetuals trading and automated market making for long-tail assets. It enables users to take long or short positions on various tokens across multiple chains, using vault-based liquidity and oracle-driven pricing.
+Wasabi is a decentralized leverage trading protocol for taking long and short positions on long-tail assets, using vault-based liquidity and oracle-driven pricing. The project also includes earning/native-yield functionality and should include Solana when reporting project-level chains or TVL.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The perpetual pools rely on vaults for liquidity, with vaults depositing into po
 - Latest audit: 2024-11 (aging)
 - Staleness: 0 fresh, 3 aging, 5 stale, 0 unknown
 - Tier 1 coverage: 11.1% (Sherlock)
-- Note: This protocol is classified as [rugged]. ASD of $5,478,153.19 represents exposure in a protocol with rugged activity.
+- Note: This protocol is classified as [declining]. ASD of $5,478,153.19 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

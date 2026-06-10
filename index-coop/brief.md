@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Index Coop
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 4.7% over 90 days
-
 ## Project Overview
 
 - Project: Index Coop (`index-coop`)
 - Website: [https://www.indexcoop.com/](https://www.indexcoop.com/)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-25T17:10:36.184Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:06.187Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, ethereum, polygon
-- Contract surface: 236 unique implementations (601 raw deployments)
-- DeFi Llama TVL: $13,141,320.13
-- On-chain TVL (included contracts): $28,180,066.61
-- TVL by chain: Ethereum $27,843,475.77 | Polygon $336,590.84
+- Contract surface: 235 unique implementations (600 raw deployments)
+- DeFi Llama TVL: $12,566,445.29
+- On-chain TVL (included contracts): $19,435,053.15
+- TVL by chain: Ethereum $19,098,462.31 | Polygon $336,590.84
 
 ## Project Description
 
-Index Coop is a decentralized asset management protocol that creates and manages structured tokens (SetTokens) representing baskets of crypto assets. It offers index products, leveraged tokens, and yield-generating strategies, enabling users to gain diversified exposure or enhanced returns through a single token.
+Index Coop is an active decentralized asset management protocol focused on automated DeFi structured products, including leverage and yield strategies such as Smart Loops, alongside tokenized products built on SetToken infrastructure. Legacy index products remain part of the historical product set but should be distinguished from the current product focus on automated leverage and yield offerings.
 
 ### Architecture
 
@@ -25,26 +23,24 @@ The Bankless GMI and Web3 DATA families are standalone SetTokens that likely rel
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 15/112 (13.4%)
-- Verified + Unaudited implementations: 97
+- Verified implementations audited: 15/111 (13.5%)
+- Verified + Unaudited implementations: 96
 - Verified by bytecode match: 0
 - Unverified implementations: 124
-- Unique implementations: 236
-- Raw deployments: 601
-- Audits discovered: 7
+- Unique implementations: 235
+- Raw deployments: 600
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 5
-- Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/indexcoop/information))
-- ASD (verified + unaudited TVL): $28,180,066.61
+- ASD (verified + unaudited TVL): $19,435,053.15
 - Latest audit: 2024-09 (aging)
-- Staleness: 0 fresh, 2 aging, 3 stale, 1 unknown
+- Staleness: 0 fresh, 2 aging, 3 stale, 0 unknown
 - Tier 1 coverage: 0.9% (Code4rena)
-- Note: This protocol is classified as [declining]. ASD of $28,180,066.61 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 13 | 11.6% | 2024-09 |
+| unknown | Tier 2 | 13 | 11.7% | 2024-09 |
 | Code4rena | Tier 1 | 1 | 0.9% | 2022-06 |
 | iosiro | Tier 2 | 1 | 0.9% | 2021-09 |
 
@@ -70,12 +66,11 @@ The Bankless GMI and Web3 DATA families are standalone SetTokens that likely rel
 | TargetWeightWrapExtension | adapter | ethereum | [`0xc9a8ae...e56ff2`](./contracts/ethereum-1/0xc9a8ae9f29c1e77bb05a8a4d3576998a9de56ff2/) | ✅ Audited |
 | WrapModuleV2 | unknown | ethereum | 2 deployments: ethereum [`0x660446...b7b809`](./contracts/ethereum-1/0x6604468512b3b85c58c4d818ccb69fba5bb7b809/); ethereum `0xbfe0f7...99a075` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (97)
+### ⚠️ Verified + Unaudited (96)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | SetToken | token | ethereum | 48 deployments: ethereum [`0x02ec0c...bc36a6`](./contracts/ethereum-1/0x02ec0c9e6d3c08b8fb12fec51ccba048afbc36a6/); ethereum `0x0b498f...801c2b`; ethereum `0x1494ca...ba3c2b`; ethereum `0x1d86fb...68bb08`; ethereum `0x23c3e5...adefd8`; ethereum `0x2af1df...0c7dc6`; ethereum `0x33d63b...4cf5f1`; ethereum `0x341c05...0bb3be`; ethereum `0x36c833...36065e`; ethereum `0x47110d...7eb44f`; ethereum `0x48ccc6...3bbd0f`; ethereum `0x58222d...163a4a`; ethereum `0x65c4c0...d148a2`; ethereum `0x72e364...d634d7`; ethereum `0x7c07f7...256a84`; ethereum `0xaa6e81...5665bd`; ethereum `0xada0a1...f3ed42`; ethereum `0xc45060...9b99ee`; ethereum `0xc70686...ff6de5`; ethereum `0xd2ac55...fde759`; ethereum `0xf860f9...bbf1bc`; ethereum `0xfa10e1...3e4e37`; polygon `0x130ce4...0bb8d2`; polygon `0x340f41...ae6abc`; polygon `0x3ad707...d66473`; polygon `0x4f0258...f1e609`; polygon `0xd6ca86...dbbc14`; polygon `0xf287d9...2c7976`; base `0x0a0fbd...cdc9c6`; base `0x16c469...043571`; base `0x186f3d...c39cde`; base `0x1f4609...685699`; base `0x2f67e4...208d40`; base `0x329f66...272acb`; base `0x32bb8f...d392fc`; base `0x5c6005...a48f73`; base `0x8d08ce...a2dc22`; base `0xc88464...3e35a6`; arbitrum `0x26d7d3...bca43c`; arbitrum `0x3bdd0d...bec0e6`; arbitrum `0x749654...b1c89b`; arbitrum `0x77f691...7712c3`; arbitrum `0x80e58a...c087fc`; arbitrum `0xa0a17b...dfa543`; arbitrum `0xaf0408...878913`; arbitrum `0xe7b1ce...e43ed1`; arbitrum `0xeb5be6...4f59d7`; arbitrum `0xfc01f2...90d6cb` | ⚠️ Unaudited |
-| CErc20 | token | ethereum | [`0x39aa39...5e7563`](./contracts/ethereum-1/0x39aa39c021dfbae8fac545936693ac917d5e7563/) | ⚠️ Unaudited |
 | AaveLeverageStrategyExtension | adapter | polygon | 7 deployments: ethereum `0xe6484a...2cbc2b`; polygon [`0x314598...90da52`](./contracts/polygon-137/0x31459836b4f19c84ec004b92aef6b00f7490da52/); polygon `0x3885f8...ad7f0a`; polygon `0x3bd4ca...25a0af`; polygon `0x70e86d...f5eba9`; polygon `0xb97f5a...3b714a`; polygon `0xe7ca68...27b045` | ⚠️ Unaudited |
 | AaveV3LeverageModule | unknown | arbitrum | 3 deployments: ethereum `0x9d08cc...e9f74f`; base `0xc06a6e...672699`; arbitrum [`0x6d1b74...f2a4ae`](./contracts/arbitrum-42161/0x6d1b74e18064172d028c5ee7af5d0ccc26f2a4ae/) | ⚠️ Unaudited |
 | AirdropExtension | operational_periphery | ethereum | 9 deployments: ethereum [`0x07a578...8c03c9`](./contracts/ethereum-1/0x07a578e02db4e1d518ee1856580c7ac0058c03c9/); ethereum `0x0fba2b...e59183`; ethereum `0x102829...655fa3`; ethereum `0x2cf29f...cbcac1`; ethereum `0x63bf66...8cc0eb`; ethereum `0x68c4a3...11f0d5`; ethereum `0x7ffbf7...a588f9`; ethereum `0xa899a4...2cc599`; ethereum `0xea381e...21df5f` | ⚠️ Unaudited |
@@ -319,11 +314,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Active Bug Bounty Program](https://immunefi.com/bug-bounty/indexcoop/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
 | [IndexIcUSDAuditReport.md](https://github.com/IndexCoop/audits/blob/main/audits/IndexIcUSDAuditReport.md) | unknown | Audit | 2024-09 | aging | Direct | contract_name | 26 | high |
 | [IndexPRTAuditReport.md](https://github.com/IndexCoop/audits/blob/main/audits/IndexPRTAuditReport.md) | unknown | Audit | 2024-07 | aging | Direct | contract_name | 6 | high |
 | [IndexDIMv3AuditReport.md](https://github.com/IndexCoop/audits/blob/main/audits/IndexDIMv3AuditReport.md) | unknown | Audit | 2024-05 | stale | Direct | contract_name | 1 | high |
-| [blog.openzeppelin.com/set-protocol-audit](https://www.openzeppelin.com/news/set-protocol-audit) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [iosiro_set-protocol-aave-leverage-module-audit-draft.md](https://gist.github.com/bernard-wagner/8a96ae7b9746ba8394dc6c16202a6b64) | iosiro | Audit | 2021-09 | stale | Direct | contract_name | 6 | high |
 | [code4rena.com/reports/2022-06-notional-coop](https://code4rena.com/reports/2022-06-notional-coop) | Code4rena | Contest | 2022-06 | stale | Direct | contract_name | 1 | high |
 
@@ -422,7 +415,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 184 |
-| upstream | 7 |
+| upstream | 6 |
 | standard_library | 0 |
 | needs_review | 45 |
 
@@ -430,13 +423,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=5
 - Match method counts: extraction_exact=40
-
-Zero-match audit list:
-
-- [2027] blog.openzeppelin.com/set-protocol-audit
 
 Fork inheritance lineage and inherited audits are included when available.

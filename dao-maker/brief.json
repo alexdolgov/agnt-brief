@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "dao-maker",
-  "generated_at": "2026-05-24T14:41:39.305Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:01.622Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "dao-maker",
     "tier": 1,
@@ -45,7 +45,7 @@
     "coverage_pct": 0,
     "total_audits": 7,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2101902,
+    "dl_tvl_usd": 1997131,
     "tvl_usd": 9341771.078306995,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "DAO Maker provides a vesting and token distribution platform, enabling projects to lock and release tokens to stakeholders over time. It also includes a staking mechanism for its native token.",
+    "project_purpose": "DAO Maker is a launchpad, fundraising, and growth-platform ecosystem for crypto projects, with user-facing products that include token launches, airdrops, vesting, staking, farms, vaults, and DAO Swap. Vesting and token distribution are product components rather than the full scope of the protocol.",
     "relationship_narrative": "The vesting family is self-contained, with the token contract serving as the core asset and the staking contract providing utility for token holders.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 17,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

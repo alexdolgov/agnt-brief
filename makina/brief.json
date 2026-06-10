@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "makina",
-  "generated_at": "2026-05-26T16:19:43.457Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:07.148Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "makina",
@@ -33,8 +33,8 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 3,
     "coverage_pct": 90.9,
-    "total_audits": 10,
-    "scoreable_audits": 6,
+    "total_audits": 4,
+    "scoreable_audits": 3,
     "dl_tvl_usd": 36799164.34117,
     "tvl_usd": 12895621.857332,
     "tvl_source": "on_chain",
@@ -52,19 +52,24 @@
     "tier1_auditors": [
       "ChainSecurity"
     ],
-    "latest_audit_date": "2026-01",
+    "latest_audit_date": "2025-09",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 10,
+      "fresh": 4,
       "aging": 0,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Makina is an onchain capital allocator that enables users to deposit assets into strategy vaults (Machines) and earn yield. It provides infrastructure for deploying and managing these vaults, including bridging, oracles, and fee management.",
+    "project_purpose": "Makina is DeFi execution engine and vault infrastructure for professional Operators, enabling strategy vaults called Machines to deploy and manage capital across onchain venues with supporting periphery for operations such as oracles and fee management.",
     "relationship_narrative": "The Deployments family provides shared infrastructure (registries, bridges, oracles) used by Featured Machines and Makina. MachineShare tokens are minted by vaults like ConcreteAsyncVaultImpl, which rely on the Deployments layer for cross-chain operations and fee management.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 36,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -158,8 +163,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3953",
-        "audit-3958"
+        "audit-3953"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -192,8 +196,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3953",
-        "audit-3958"
+        "audit-3953"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -361,9 +364,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3951",
-        "audit-3953",
-        "audit-3958"
+        "audit-3953"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -396,8 +397,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3953",
-        "audit-3958"
+        "audit-3953"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -472,8 +472,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3953",
-        "audit-3958"
+        "audit-3953"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -590,10 +589,8 @@
         }
       ],
       "audits_covering": [
-        "audit-3951",
         "audit-3953",
-        "audit-3955",
-        "audit-3958"
+        "audit-3955"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -626,8 +623,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3953",
-        "audit-3958"
+        "audit-3953"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -660,8 +656,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3953",
-        "audit-3958"
+        "audit-3953"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -829,8 +824,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3953",
-        "audit-3958"
+        "audit-3953"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -894,9 +888,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3951",
-        "audit-3953",
-        "audit-3958"
+        "audit-3953"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -956,8 +948,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3953",
-        "audit-3958"
+        "audit-3953"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1017,7 +1008,6 @@
         }
       ],
       "audits_covering": [
-        "audit-3950",
         "audit-3957"
       ],
       "is_audited": true,
@@ -1078,7 +1068,6 @@
         }
       ],
       "audits_covering": [
-        "audit-3950",
         "audit-3957"
       ],
       "is_audited": true,
@@ -1187,8 +1176,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3953",
-        "audit-3958"
+        "audit-3953"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1305,9 +1293,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3951",
-        "audit-3953",
-        "audit-3958"
+        "audit-3953"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1340,8 +1326,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3953",
-        "audit-3958"
+        "audit-3953"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1508,81 +1493,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3950,
-      "audit_key": "audit-3950",
-      "report_name": "Makina-Periphery, Machine Share Oracle - Sep 2025",
-      "report_url": "https://docs.makina.finance/assets/files/2025-09_Security_Review_Makina_Finance_Makina_Periphery_Machine_Share_Oracle-5e55078d01641076fd04b09430d314ed.pdf",
-      "auditor": "Enigma Ventures",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-09",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "MachineShareOracle",
-        "MachineShareOracleFactory"
-      ],
-      "matched_contracts": 8,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3951,
-      "audit_key": "audit-3951",
-      "report_name": "- **SigmaPrime**: [Makina-Core & Makina-Periphery - Aug 2025]()",
-      "report_url": "https://github.com/sigp/public-audits/blob/master/reports/makina/review.pdf",
-      "auditor": "Enigma Ventures",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-08",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "BridgeAdapter.sol",
-        "BridgeController.sol",
-        "Caliber.sol",
-        "DecimalsUtils.sol",
-        "FlashloanAggregator.sol",
-        "Machine.sol",
-        "PreDepositVault.sol",
-        "SwapModule.sol"
-      ],
-      "matched_contracts": 4,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3952,
-      "audit_key": "audit-3952",
-      "report_name": "Makina-Core - Sep 2025",
-      "report_url": "https://www.chainsecurity.com/security-audit/makina-core",
-      "auditor": "ChainSecurity",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-09",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 3953,
       "audit_key": "audit-3953",
       "report_name": "- **ChainSecurity**: [Makina-Core - Sep 2025](https://www.chainsecurity.com/security-audit/makina-core), [Jan 2026]()",
@@ -1641,27 +1551,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3954,
-      "audit_key": "audit-3954",
-      "report_name": "Makina-Periphery - Sep 2025",
-      "report_url": "https://www.chainsecurity.com/security-audit/makina-periphery",
-      "auditor": "ChainSecurity",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-09",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 3955,
       "audit_key": "audit-3955",
       "report_name": "- **ChainSecurity**: [Makina-Periphery - Sep 2025](https://www.chainsecurity.com/security-audit/makina-periphery), [Jan 2026]()",
@@ -1705,27 +1594,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3956,
-      "audit_key": "audit-3956",
-      "report_name": "- **Ottersec**: [Makina-Core & Makina-Periphery - Nov 2025]()",
-      "report_url": "https://ottersec.notion.site/Sampled-Public-Audit-Reports-a296e98838aa4fdb8f3b192663400772?p=2a284d4e41468027b796e222fbbb8939&pm=s",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 3957,
       "audit_key": "audit-3957",
       "report_name": "2025-09_Security_Review_Makina_Finance_Makina_Periphery_Machine_Share_Oracle.pdf",
@@ -1748,60 +1616,6 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3958,
-      "audit_key": "audit-3958",
-      "report_name": "ChainSecurity_Makina_MakinaCore_Audit-v11-0e3e924ad10fe5c6cef095d7e0311011.pdf",
-      "report_url": "https://docs.makina.finance/assets/files/ChainSecurity_Makina_MakinaCore_Audit-v11-0e3e924ad10fe5c6cef095d7e0311011.pdf",
-      "auditor": "ChainSecurity",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2026-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AcrossV3BridgeAdapter",
-        "AcrossV3BridgeConfig",
-        "BridgeAdapter",
-        "BridgeAdapterFactory",
-        "BridgeController",
-        "Caliber",
-        "CaliberAccountingCCQ",
-        "CaliberFactory",
-        "CaliberMailbox",
-        "ChainRegistry",
-        "CoreRegistry",
-        "Create3Factory",
-        "DecimalsUtils",
-        "Errors",
-        "FlashloanAggregator",
-        "HubCoreFactory",
-        "HubCoreRegistry",
-        "LayerZeroV2BridgeAdapter",
-        "LayerZeroV2Config",
-        "LzOptionsBuilder",
-        "Machine",
-        "MachineShare",
-        "MachineUtils",
-        "MakinaContext",
-        "MakinaGovernable",
-        "OracleRegistry",
-        "PreDepositVault",
-        "SpokeCoreFactory",
-        "SpokeCoreRegistry",
-        "SwapModule",
-        "TokenRegistry",
-        "WeirollVM"
-      ],
-      "matched_contracts": 17,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -1810,13 +1624,13 @@
       "tier": 1,
       "contracts_covered": 28,
       "coverage_pct": 84.8,
-      "latest_audit": "2026-01"
+      "latest_audit": "2025-09"
     },
     {
       "auditor": "Enigma Ventures",
       "tier": 2,
-      "contracts_covered": 6,
-      "coverage_pct": 18.2,
+      "contracts_covered": 2,
+      "coverage_pct": 6.1,
       "latest_audit": "2025-09"
     }
   ],
@@ -1840,10 +1654,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 84
+      "extraction_exact": 55
     },
     "extraction_confidence_counts": {
-      "high": 6
+      "high": 3
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -1851,18 +1665,6 @@
       {
         "audit_id": 3949,
         "report_name": "- **Enigma Dark**: [Makina-Core Fuzz/Invariant Testing - Jul 2025]()"
-      },
-      {
-        "audit_id": 3952,
-        "report_name": "Makina-Core - Sep 2025"
-      },
-      {
-        "audit_id": 3954,
-        "report_name": "Makina-Periphery - Sep 2025"
-      },
-      {
-        "audit_id": 3956,
-        "report_name": "- **Ottersec**: [Makina-Core & Makina-Periphery - Nov 2025]()"
       }
     ],
     "inherited_remapped_matches": []

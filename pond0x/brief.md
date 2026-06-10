@@ -7,8 +7,8 @@
 - Project: Pond0x (`pond0x`)
 - Website: [http://pond0x.com/](http://pond0x.com/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:16:33.380Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:09.359Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 14 unique implementations (20 raw deployments)
 - DeFi Llama TVL: $2,872,834.29
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Pond0x is a DEX aggregator that optimizes token swaps by routing trades across multiple liquidity sources. It features its own ecosystem tokens, PondCoin and PondWater, which may be used for governance or fee discounts.
+Pond0x, also referred to as Pond DEX, is a DEX aggregator for token swaps. Current sources frame the protocol around returning generated fees as claimable rewards or drops, with associated product areas such as Mine, Spawn, Water, pondSOL, and Teleport where independently verified. Unsupported governance or fee-discount utility claims for PondCoin or PondWater should be removed unless separately substantiated.
 
 ### Architecture
 
@@ -59,8 +59,8 @@ The Pond0x family consists of two core token contracts, PondCoin and PondWater, 
 | PondCoin | unknown | ethereum | [`0x423f4e...631eea`](./contracts/ethereum-1/0x423f4e6138e475d85cf7ea071ac92097ed631eea/) | ⚠️ Unaudited |
 | PondWater | unknown | ethereum | [`0xed96e6...a1b470`](./contracts/ethereum-1/0xed96e69d54609d9f2cff8aacd66ccf83c8a1b470/) | ⚠️ Unaudited |
 | ProtoClaim | unknown | ethereum | 3 deployments: ethereum [`0x76cc94...8d803f`](./contracts/ethereum-1/0x76cc942ae5c68fba5dcbb67f07b77f35438d803f/); ethereum `0x8a3cfc...3fc3c6`; ethereum `0xc4258e...84e072` | ⚠️ Unaudited |
-| SpawnManager | governance | ethereum | 2 deployments: ethereum [`0x06c795...8b19fe`](./contracts/ethereum-1/0x06c79523ad3b4e285b2c0572d230ab81428b19fe/); ethereum `0x4c0da5...4aec36` | ⚠️ Unaudited |
-| SpawnManagerV2 | governance | ethereum | 3 deployments: ethereum [`0x08939a...3393ca`](./contracts/ethereum-1/0x08939a9a6aefbd4bf9c0e128ed027591913393ca/); ethereum `0xab7b98...5dd3c5`; ethereum `0xcc57c9...9e946c` | ⚠️ Unaudited |
+| SpawnManager | unknown | ethereum | 2 deployments: ethereum [`0x06c795...8b19fe`](./contracts/ethereum-1/0x06c79523ad3b4e285b2c0572d230ab81428b19fe/); ethereum `0x4c0da5...4aec36` | ⚠️ Unaudited |
+| SpawnManagerV2 | unknown | ethereum | 3 deployments: ethereum [`0x08939a...3393ca`](./contracts/ethereum-1/0x08939a9a6aefbd4bf9c0e128ed027591913393ca/); ethereum `0xab7b98...5dd3c5`; ethereum `0xcc57c9...9e946c` | ⚠️ Unaudited |
 | TadpoleClaimer | operational_periphery | ethereum | [`0x314a8e...ad3796`](./contracts/ethereum-1/0x314a8e2ea148c272ce379dee7580656159ad3796/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -104,8 +104,8 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x423f4e...631eea`](./contracts/ethereum-1/0x423f4e6138e475d85cf7ea071ac92097ed631eea/) | PondCoin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xed96e6...a1b470`](./contracts/ethereum-1/0xed96e69d54609d9f2cff8aacd66ccf83c8a1b470/) | PondWater | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x76cc94...8d803f`](./contracts/ethereum-1/0x76cc942ae5c68fba5dcbb67f07b77f35438d803f/) | ProtoClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x06c795...8b19fe`](./contracts/ethereum-1/0x06c79523ad3b4e285b2c0572d230ab81428b19fe/) | SpawnManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x08939a...3393ca`](./contracts/ethereum-1/0x08939a9a6aefbd4bf9c0e128ed027591913393ca/) | SpawnManagerV2 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x06c795...8b19fe`](./contracts/ethereum-1/0x06c79523ad3b4e285b2c0572d230ab81428b19fe/) | SpawnManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x08939a...3393ca`](./contracts/ethereum-1/0x08939a9a6aefbd4bf9c0e128ed027591913393ca/) | SpawnManagerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x314a8e...ad3796`](./contracts/ethereum-1/0x314a8e2ea148c272ce379dee7580656159ad3796/) | TadpoleClaimer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification

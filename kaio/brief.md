@@ -1,14 +1,14 @@
 # Agentic Audit Brief: KAIO
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 32.0% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 32.0% over 90 days
 
 ## Project Overview
 
 - Project: KAIO (`kaio`)
 - Website: [https://www.kaio.xyz/](https://www.kaio.xyz/)
-- Lifecycle: unknown (Tier 0, 49.4% below peak)
-- Generated: 2026-05-31T08:34:00.428Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 49.4% below peak)
+- Generated: 2026-06-10T20:59:06.421Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, ethereum, polygon, sei
 - Contract surface: 35 unique implementations (206 raw deployments)
 - DeFi Llama TVL: $60,800,519.13
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-KAIO is a real-world asset (RWA) tokenization protocol that enables the issuance and management of security tokens representing off-chain assets. It provides mirrored token contracts and receipt tokens across multiple chains, allowing compliant transfer and ownership tracking of tokenized securities.
+KAIO, previously Libre Capital, is an institutional fund and real-world asset (RWA) platform focused on bringing regulated funds onchain. The project provides compliant fund tokenization and access infrastructure, interoperability across supported chains, liquidity access, mirrored/receipt token components, and a sovereign AppChain for regulated onchain fund distribution and management.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ All contracts belong to a single product family, KAIO, which uses ERC1967Proxy f
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

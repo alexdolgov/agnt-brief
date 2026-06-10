@@ -5,17 +5,17 @@
 - Project: BitU Protocol (`bitu-protocol`)
 - Website: [https://www.bitu.io](https://www.bitu.io)
 - Lifecycle: active (Tier 0, 34% below peak)
-- Generated: 2026-05-30T19:21:46.397Z
-- Pipeline run: v2-pipeline-2026-05-30-c7d699-40af
+- Generated: 2026-06-10T20:58:59.768Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
-- Contract surface: 5 unique implementations (5 raw deployments)
+- Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $22,273,677.04
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-BitU Protocol is a CDP (Collateralized Debt Position) platform on BSC that allows users to mint the BITU stablecoin against USDT collateral and stake BITU to earn rewards.
+BitU Protocol is a BNB Chain CeDeFi/CDP stablecoin protocol centered on the yield-embedded BITU stablecoin. It supports whitelisted collateralized minting, sBITU staking and yield features, and ALMM/CeDeFi trading functionality. Collateral should be described in plural unless project documentation or contract configuration confirms a single USDT-only collateral model.
 
 ### Architecture
 
@@ -23,25 +23,25 @@ The Mint $BITU family provides the token contracts (USDT collateral and BITU sta
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/5 (60.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 3/4 (75.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 5
-- Raw deployments: 5
+- Unique implementations: 4
+- Raw deployments: 4
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-05 (stale)
 - Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
-- Tier 1 coverage: 60.0% (SlowMist)
+- Tier 1 coverage: 75.0% (SlowMist)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| SlowMist | Tier 1 | 3 | 60.0% | 2024-04 |
-| unknown | Tier 2 | 3 | 60.0% | 2024-05 |
+| SlowMist | Tier 1 | 3 | 75.0% | 2024-04 |
+| unknown | Tier 2 | 3 | 75.0% | 2024-05 |
 
 ## Contract Surface
 
@@ -53,11 +53,10 @@ The Mint $BITU family provides the token contracts (USDT collateral and BITU sta
 | BitUMinting | unknown | bsc | [`0xa581b5...116f18`](./contracts/bsc-56/0xa581b5b3d007dab450943749e29a677a0d116f18/) | ✅ Audited |
 | BitUStaking | unknown | bsc | [`0x61183a...fd76d4`](./contracts/bsc-56/0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| BEP20Token | token | bsc | [`0x7130d2...3ead9c`](./contracts/bsc-56/0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c/) | ⚠️ Unaudited |
 | BEP20USDT | token | bsc | [`0x55d398...197955`](./contracts/bsc-56/0x55d398326f99059ff775485246999027b3197955/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -96,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 3 |
-| upstream | 2 |
+| upstream | 1 |
 | standard_library | 0 |
 | needs_review | 0 |
 

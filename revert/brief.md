@@ -5,17 +5,17 @@
 - Project: Revert (`revert`)
 - Website: [https://revert.finance/#/ref/w6vno3](https://revert.finance/#/ref/w6vno3)
 - Lifecycle: active (Tier 0, 40.1% below peak)
-- Generated: 2026-05-23T02:15:58.609Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:11.339Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, blast, bsc, ethereum, optimism, polygon, unichain
 - Contract surface: 84 unique implementations (546 raw deployments)
-- DeFi Llama TVL: $11,614,833.00
+- DeFi Llama TVL: $11,629,176.00
 - On-chain TVL (included contracts): $2,087,284.04
 - TVL by chain: Arbitrum $853,511.07 | Base $840,626.20 | Ethereum $393,146.77 | Polygon $0.00
 
 ## Project Description
 
-Revert is a DeFi protocol that provides automated liquidity management, lending, and position optimization tools for Uniswap V3 and V4. It enables users to automate compounding, rebalancing, and exit strategies for concentrated liquidity positions, while also offering lending markets and leverage transformers.
+Revert provides analytics and tools for AMM liquidity providers, with a focus on Uniswap concentrated liquidity positions. Its contract surface includes Uniswap V3/V4 position utilities, automation and compounding components, V3Vault contracts, and related lending or leverage functionality where applicable.
 
 ### Architecture
 

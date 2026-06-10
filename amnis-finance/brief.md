@@ -5,8 +5,8 @@
 - Project: Amnis Finance (`amnis-finance`)
 - Website: [https://amnis.finance](https://amnis.finance)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:29:22.208Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.406Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $11,919,450.60

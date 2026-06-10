@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "manta-atlantic-stake",
-  "generated_at": "2026-05-30T20:51:39.433Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-30-9de83b-6726",
+  "generated_at": "2026-06-10T20:59:07.177Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "sunsetting",
   "lifecycle_signal": {
     "slug": "manta-atlantic-stake",
@@ -67,9 +67,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Manta Atlantic Stake is a Layer 2 scaling solution built on the OP Stack, providing a bridge between Ethereum and the Manta Pacific network. It enables fast and low-cost transactions on Manta Pacific while inheriting security from Ethereum.",
+    "project_purpose": "Manta Atlantic Stake is a staking project for MANTA on Manta Atlantic, allowing users to stake MANTA within the Manta Atlantic ecosystem. It should not be described as an OP Stack Layer 2 bridge or as Manta Pacific infrastructure unless that separate Manta Pacific scope is independently documented.",
     "relationship_narrative": "The Ethereum Mainnet Bridge family manages cross-chain communication and asset transfers, relying on the Manta Pacific Mainnet family's predeployed proxies for L2 execution. The Reward Contract and OpenSea Seaport operate on Manta Pacific, utilizing the bridge for asset movement and the L2 infrastructure for execution.",
     "product_family_count": 8
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 109,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [

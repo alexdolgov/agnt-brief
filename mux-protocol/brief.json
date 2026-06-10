@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mux-protocol",
-  "generated_at": "2026-05-25T14:22:06.434Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:07.960Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "mux-protocol",
@@ -22,28 +22,26 @@
     "drop_from_peak_pct": 89.18022469590416
   },
   "summary": {
-    "total_contracts": 1225,
-    "total_addresses": 2290,
-    "unique_implementations": 1225,
-    "total_deployments": 2290,
+    "total_contracts": 1198,
+    "total_addresses": 2180,
+    "unique_implementations": 1198,
+    "total_deployments": 2180,
     "audited_contracts": 25,
-    "unaudited_contracts": 114,
+    "unaudited_contracts": 90,
     "contracts_verified_audited": 23,
-    "contracts_verified_unaudited": 109,
+    "contracts_verified_unaudited": 85,
     "contracts_verified_by_bytecode": 7,
-    "contracts_unverified": 1086,
-    "coverage_pct": 18,
-    "total_audits": 4,
+    "contracts_unverified": 1083,
+    "coverage_pct": 21.7,
+    "total_audits": 2,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 9850031,
-    "tvl_usd": 19066951.868962806,
+    "dl_tvl_usd": 9667090,
+    "tvl_usd": 861969.6726724087,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "arbitrum": 861969.67,
-      "avalanche": 16776439.67,
-      "bsc": 1428542.52
+      "arbitrum": 861969.67
     },
-    "asd_usd": 19066951.868962806,
+    "asd_usd": 861969.6726724087,
     "website_url": "https://mux.network",
     "chains": [
       "arbitrum",
@@ -59,7 +57,7 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 1,
-      "stale": 2,
+      "stale": 1,
       "unknown": 0
     }
   },
@@ -68,595 +66,16 @@
     "relationship_narrative": "MUX Perps and MUXLP Tranches share the MUX token and reward infrastructure (e.g., RewardDistributor, RewardController) for incentives. MUX V3 Protocol introduces a new modular architecture but reuses price providers and fee distributors, while the Cross-Chain Bridge supports asset movement across all families.",
     "product_family_count": 10
   },
+  "surface_sufficiency": {
+    "unique_implementations": 1198,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
+  },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x0509474f102b5cd3f1f09e1e91feb25938ef0f17",
-      "name": "MintSwapCanonicalToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Optimism",
-      "tvl_usd": 17462839.692220077,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MintSwapCanonicalToken",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x0509474f102b5cd3f1f09e1e91feb25938ef0f17",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x1bba8683e28078306db88743a387eb34fb5f34ed",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x253be9f0e2a8749df6ac7466d096b264788745e0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x50ec9b92b3bd46969b1ae5e10543ca6fb49fba4f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x69663eb604c7d534e9149fa855d89d9104e75363",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xd51a026563583315a533f3910493e27187417d3f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xe80e0b928f8f3024dfefa56e7608bc3baf389881",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xfd951e71a8ec5c03ad6139d35f800374ba500fa8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xff86404162bf14fe50cedcf82a56941dc5f48c77",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x06fda0758c17416726f77cb11305eac94c074ec0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 15887.891532291553,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x07145ad7c7351c6fe86b6b841fc9bed74eb475a7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x0acc63843f9dd5c2a14ee7c2349859c526b9d4d3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x1305b25842778041c4ae0c9e7c264a617c619fd4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x16365b45eb269b5b5dacb34b4a15399ec79b95eb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x181002d60d504d30a39601ae13af3191cb102580",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 397.93237571509144,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x19aa65f85a70ec127edd8a63b1932d1f63fccb3a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x3cc194cb21e3b9d86dd516b4d870b82fafb4c02e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x426c58f0a9733d874d9962ed59f529478771751c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x523d3e0dacd7c470ebe8880abe808161696cebec",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x6822a778726cd2f0d4a1cfaca2d04654e575cc82",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x724a32dfff9769a0a0e1f0515c0012d1fb14c3bd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 3878.97671641445,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x73afc23510b40dcbeabc25ffbc8c2976ed9f950c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x79d1041327d8b2c13154831e8916594e25b9c4e0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x81421a49c2bb3f2f77a666f0686b4db47a26360c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x8feb4121c45265515f36925ca412f85588c00b7e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x904d0221641232fb40f99dc92c1d59c35698ff0b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xa5a6817ac4c164f27df3254b71fe83904b1c3c3e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xa7e5924f406516995f6bcac83594ff019166c9b2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xb2d09c5723c2d8fcfc89ae50a6d8919dcb2c9aad",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 259728.6607914702,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xbcc128d5221b518e50a1823d374310bdf404f867",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.08658422991717848,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xbd7b8e4de08d9b01938f7ff2058f110ee1e0e8d4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 345529.8507128007,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xd6705c0740e6002ce196b08129b2f0f23f24722e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 60977.53572869961,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xea09cbb3f286f7c1a377c4db825c1cefad2476ae",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xf234437596b9c90231181a2e80c668c4e5408108",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xf8bfeac18a838ace22110e499922623d54ea26da",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xfef17032d5e87523acebfde6b3a8978b2bedad1f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x746ba48fc973596d0077573bda6185ca3bb9c3dc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x2b9e10ba02fc97c8d2c99bb20a38fed9f38c0aa9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x30a667df8562a2460f45ac297d833a36feac0c2f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x63b0b80ee068d3cf46392c34025fa13a1f3b3f80",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.09746248741580729,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x70d30270ccc356f47e5782a1a905ea85b9e08cea",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x746ba48fc973596d0077573bda6185ca3bb9c3dc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x80b010450fdaf6a3f8df033ee296e92751d603b3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x90fbe9dfe76f6ef971c7a297641dfa397099a13e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xa4918c50aadba9edcaf302562739c1b1c1367aa9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xac80096d53c5965d9432592d28687c521472b9eb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xaedb70d42161e6e135250150ea561dd77a694798",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.13134286460809932,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xaf2d365e668baafedcfd256c0fbbe519e594e390",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xbc7b0223dd16cbc679c0d04ba3f4530d76dfba87",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 4590.305395579529,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xcd7d33c265c811ee12c956d28c0e91f32a65119d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xcda140de9873e8f912f12c864be786442de8a818",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xda0019e7e50ee4990440b1aa5dffcac6e27ee27b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 52.56930135924624,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xde53842f87c95362b2912db5dbba404e7d5ff842",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xe80e0b928f8f3024dfefa56e7608bc3baf389881",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xea4b1b0aa3c110c55f650d28159ce4ad43a4a58b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xee396d4ee16fd8c7d9bfb039d05f271d3c92e57d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xfc6da929c031162841370af240dec19099861d3b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 94122.40011739857,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xfcde4a87b8b6fa58326bb462882f1778158b02f1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 16677673.254158765,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x5427fefa711eff984124bfbb1ab6fbf5e3da1820",
-      "name": "OriginalTokenVault",
-      "role": "core_logic",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 724967.2918132931,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "OriginalTokenVault",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x78bc5ee9f11d133a08b331c2e18fe81be0ed02dc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 724966.3768132931,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x5427fefa711eff984124bfbb1ab6fbf5e3da1820",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.915,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
@@ -790,46 +209,6 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x11a0c9270d88c99e221360bca50c2f6fda44a980",
-      "name": "OriginalTokenVaultV2",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "multichain",
-      "product_line": null,
-      "tvl_usd": 17175.41865373511,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "OriginalTokenVaultV2",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x11a0c9270d88c99e221360bca50c2f6fda44a980",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 17175.212257025687,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xea4b1b0aa3c110c55f650d28159ce4ad43a4a58b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.2063967094200923,
           "is_audited": false
         }
       ],
@@ -1094,6 +473,37 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
+      "address": "0xea4b1b0aa3c110c55f650d28159ce4ad43a4a58b",
+      "name": "OriginalTokenVaultV2",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "mintswap",
+      "product_line": "Avalanche",
+      "tvl_usd": 0.2063967094200923,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "OriginalTokenVaultV2",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xea4b1b0aa3c110c55f650d28159ce4ad43a4a58b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 0.2063967094200923,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
       "address": "0x166916b8e219230338d4985b27b23f7fbf4fef2d",
       "name": "Account",
       "role": "core_logic",
@@ -1232,68 +642,6 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0xb970e280f9ddaa3349ab9f3ecf778970cde46655",
-      "name": "ApeRewards",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "ape-rewards",
-      "product_line": "MUX Deri Agg",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ApeRewards",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xb970e280f9ddaa3349ab9f3ecf778970cde46655",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x9f20de1fc9b161b34089cbeae888168b44b03461",
-      "name": "ARBIS",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "arbis",
-      "product_line": "MUX Deri Agg",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ARBIS",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x9f20de1fc9b161b34089cbeae888168b44b03461",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
       "address": "0xdb967d37651532dbac06ec3bcf8e548d43f2d7ca",
       "name": "ArbMCBv2",
       "role": "unknown",
@@ -1309,64 +657,6 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xdb967d37651532dbac06ec3bcf8e548d43f2d7ca",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x5d96d4287d1ff115ee50fac0526cf43ecf79bfc6",
-      "name": "Bridge",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Bridge",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x5d96d4287d1ff115ee50fac0526cf43ecf79bfc6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xdd90e5e87a2081dcf0391920868ebc2ffb81a1af",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xbb7684cc5408f4dd0921e5c2cadd547b8f1ad573",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xef3c714c9425a8f3697a9c969dc1af30ba82e5d4",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1425,68 +715,6 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xd2df81619e20c6699b7f2153f8a2395e5bb2c74c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x2c5058325373d02dfd6c08e48d91fcaf8fd49f45",
-      "name": "CarbonRewards",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "carbon-rewards",
-      "product_line": "MUX Deri Agg",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "CarbonRewards",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x2c5058325373d02dfd6c08e48d91fcaf8fd49f45",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x841ce48f9446c8e281d3f1444cb859b4a6d0738c",
-      "name": "CBridge",
-      "role": "operational_periphery",
-      "origin_kind": "upstream",
-      "origin_provider": "cbridge",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "CBridge",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x841ce48f9446c8e281d3f1444cb859b4a6d0738c",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -4155,86 +3383,6 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x12e45e323d44209fcb9afef0e5793b92296975df",
-      "name": "IncentiveEventsReward",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "IncentiveEventsReward",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x12e45e323d44209fcb9afef0e5793b92296975df",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x1619de6b6b20ed217a58d00f37b9d47c7663feca",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xb06d3a7c9f999c98962c37620f7192e4a5e52cc6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xaf2d365e668baafedcfd256c0fbbe519e594e390",
-      "name": "IncentiveEventsRewardNew",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "IncentiveEventsRewardNew",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xaf2d365e668baafedcfd256c0fbbe519e594e390",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x04b51ba79e7d19e011ef1db86bd340908a6e424b",
@@ -4609,37 +3757,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40",
-      "name": "L2TBTC",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "MUX Deri Agg",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xda534b567099ca481384133bc121d5843f681365",
-      "impl_name": "L2TBTC",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 43114,
@@ -6294,68 +5411,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x61f85ff2a2f4289be4bb9b72fc7010b3142b5f41",
-      "name": "MaiBridgeToken",
-      "role": "operational_periphery",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MaiBridgeToken",
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x61f85ff2a2f4289be4bb9b72fc7010b3142b5f41",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x1922c36f3bc762ca300b4a46bb2102f84b1684ab",
-      "name": "MarinateAutoCompounder",
-      "role": "adapter",
-      "origin_kind": "upstream",
-      "origin_provider": "marinate",
-      "product_line": "MUX Deri Agg",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MarinateAutoCompounder",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x1922c36f3bc762ca300b4a46bb2102f84b1684ab",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x80c874e50017996106baf6d551ed9b0706e7587b",
@@ -6519,33 +5574,6 @@
         {
           "chain_id": 56,
           "chain_name": "bsc",
-          "address": "0x7d5de3efd5684f58ab6ea99626bad4663e12a896",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x95714818fdd7a5454f73da9c777b3ee6ebaeea6b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xce50e2b925a7db4563a9c9b14a14aee7b37880cb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
           "address": "0xe80e0b928f8f3024dfefa56e7608bc3baf389881",
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -6582,15 +5610,6 @@
         {
           "chain_id": 43114,
           "chain_name": "avalanche",
-          "address": "0x148c1e9a43358fbc59aa259e55c6b470f7e350b5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
           "address": "0x479ec366ae4ec016ce25b918bdea8f78d4fa5dd8",
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -6609,47 +5628,7 @@
         {
           "chain_id": 43114,
           "chain_name": "avalanche",
-          "address": "0x6c6e22b23e90795b886fd53dcf584aeb14aa24ca",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
           "address": "0xd51a026563583315a533f3910493e27187417d3f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x92ffad2d7b85c56186bc7d798b8e5f2c9cd80828",
-      "name": "MessageBusOwner",
-      "role": "operational_periphery",
-      "origin_kind": "upstream",
-      "origin_provider": "cbridge",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MessageBusOwner",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x92ffad2d7b85c56186bc7d798b8e5f2c9cd80828",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -6708,46 +5687,6 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xfe534c519a7a21078e8e1ace52142e2cfff91630",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x1f045412ffaabe765667c28d13dfdac7d4b0e82d",
-      "name": "MintSwapCanonicalTokenUpgradableFreezable",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x1f045412ffaabe765667c28d13dfdac7d4b0e82d",
-      "impl_name": "MintSwapCanonicalTokenUpgradableFreezable",
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x1f045412ffaabe765667c28d13dfdac7d4b0e82d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xe4f66600c1396c530393430c590bf8c17ea06b18",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -6951,55 +5890,6 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xe173b38677a9b52f4896a9d56d04f0fff73f7ea5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x09236aff6b36a5dbf97b5030a5a650e06931c51e",
-      "name": "MultiBridgeToken",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MultiBridgeToken",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x09236aff6b36a5dbf97b5030a5a650e06931c51e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x2c30b4cb4b3001afa5b8c43c5a7ca548067562a0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xa4918c50aadba9edcaf302562739c1b1c1367aa9",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -8449,86 +7339,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x32e5594f14de658b0d577d6560fa0d9c6f1aa724",
-      "name": "NyanRewards",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "nyan-rewards",
-      "product_line": "MUX Deri Agg",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "NyanRewards",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x32e5594f14de658b0d577d6560fa0d9c6f1aa724",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x62ff5be795262999fc1ebac29277575031d2da2c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xf6a37745fc911666132e8b8f29fc9c4f5c4a703d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x5a926eeeafc4d217add17e9641e8ce23cd01ad57",
-      "name": "OptimizedTransparentUpgradeableProxy",
-      "role": "proxy",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x26c76f7fef00e02a5dd4b5cc8a0f717eb61e1e4b",
-      "impl_name": "OptimizedTransparentUpgradeableProxy",
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x5a926eeeafc4d217add17e9641e8ce23cd01ad57",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x01afd1b17d3e42d3e0858aca8469e1d2e8ddea58",
@@ -9323,86 +8133,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x88dcdc47d2f83a99cf0000fdf667a468bb958a78",
-      "name": "PeggedTokenBridge",
-      "role": "operational_periphery",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PeggedTokenBridge",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xd443fe6bf23a4c9b78312391a30ff881a097580e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x88dcdc47d2f83a99cf0000fdf667a468bb958a78",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x26c76f7fef00e02a5dd4b5cc8a0f717eb61e1e4b",
-      "name": "PeggedTokenBridgeV2",
-      "role": "operational_periphery",
-      "origin_kind": "upstream",
-      "origin_provider": "celer",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PeggedTokenBridgeV2",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x26c76f7fef00e02a5dd4b5cc8a0f717eb61e1e4b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xb774c6f82d1d5dbd36894762330809e512fed195",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x14d1e8ace06005f8abe4e0d526c93dca284d5cf3",
@@ -9450,37 +8180,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xe340031b61a394c7811868ef81d2eacc79098bc2",
-      "name": "PONGRewards",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "pong-rewards",
-      "product_line": "MUX Deri Agg",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PONGRewards",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xe340031b61a394c7811868ef81d2eacc79098bc2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 42161,
@@ -9695,24 +8394,6 @@
         {
           "chain_id": 56,
           "chain_name": "bsc",
-          "address": "0x440062795ac645208121647e48c6ceeb4e885f91",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x5e8e7d39089e937b708065f9cd99409048631b23",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
           "address": "0xb3022de15628d44c51aaaaf68e9e0fd9a23c5fca",
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -9840,15 +8521,6 @@
           "chain_id": 43114,
           "chain_name": "avalanche",
           "address": "0x855e99f768fad76dd0d3eb7c446c0b759c96d520",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xbade2a874e27b5b0920da93efe6845036c6fb5a4",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -11926,126 +10598,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x9beec5bd03025700385e37cd5cbd470d0fa15db6",
-      "name": "Sentinel",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x9beec5bd03025700385e37cd5cbd470d0fa15db6",
-      "impl_name": "Sentinel",
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x9beec5bd03025700385e37cd5cbd470d0fa15db6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xcfb342d6ad6b27ae906212ec1128bab36adb2593",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x66acea0f41656711f58ff840c8857e3e5356f64f",
-      "name": "SingleBridgeToken",
-      "role": "operational_periphery",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SingleBridgeToken",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x66acea0f41656711f58ff840c8857e3e5356f64f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xbbca42c60b5290f2c48871a596492f93ff0ddc82",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xe46910336479f254723710d57e7b683f3315b22b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xbf00759d7e329d7a7fa1d4dcdc914c53d1d2db86",
-      "name": "stARBIS",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "arbis",
-      "product_line": "MUX Deri Agg",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "stARBIS",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xbf00759d7e329d7a7fa1d4dcdc914c53d1d2db86",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 42161,
@@ -23957,37 +22509,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x374e9f3affb6a2c3e388aa69c21d925c193af13a",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "MUX Deri Agg",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x374e9f3affb6a2c3e388aa69c21d925c193af13a",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
     },
     {
       "chain_id": 42161,
@@ -44948,37 +43469,6 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
-      "address": "0x26c76f7fef00e02a5dd4b5cc8a0f717eb61e1e4b",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x26c76f7fef00e02a5dd4b5cc8a0f717eb61e1e4b",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
       "address": "0x28d475b44364d3a4aea13b43af66b6be1739746a",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -46203,37 +44693,6 @@
           "chain_id": 43114,
           "chain_name": "avalanche",
           "address": "0x81f6629c09493081cb32ba1eb8123412fb28e45b",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x841ce48f9446c8e281d3f1444cb859b4a6d0738c",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x841ce48f9446c8e281d3f1444cb859b4a6d0738c",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -47643,70 +46102,9 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x03ab38cf52173cc71be33b0d2779568f412be828",
-      "name": "WithdrawInbox",
-      "role": "operational_periphery",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "WithdrawInbox",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xf0ff9888a70f44eb12223a6a55c65976ba7bf854",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x03ab38cf52173cc71be33b0d2779568f412be828",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
     }
   ],
   "audits": [
-    {
-      "audit_id": 3380,
-      "audit_key": "audit-3380",
-      "report_name": "DL audit link",
-      "report_url": "https://skynet.certik.com/projects/mux-protocol",
-      "auditor": "CertiK",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
     {
       "audit_id": 3381,
       "audit_key": "audit-3381",
@@ -47799,27 +46197,6 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3383,
-      "audit_key": "audit-3383",
-      "report_name": "Active Bug Bounty Program",
-      "report_url": "https://immunefi.com/bug-bounty/mux/information",
-      "auditor": "Immunefi",
-      "audit_type": "bug_bounty",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -47827,28 +46204,18 @@
       "auditor": "Guardian",
       "tier": 2,
       "contracts_covered": 14,
-      "coverage_pct": 10.1,
+      "coverage_pct": 12.2,
       "latest_audit": "2025-02"
     },
     {
       "auditor": "CertiK",
       "tier": 2,
       "contracts_covered": 12,
-      "coverage_pct": 8.6,
+      "coverage_pct": 10.4,
       "latest_audit": "2022-06"
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x0509474f102b5cd3f1f09e1e91feb25938ef0f17",
-      "name": "MintSwapCanonicalToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 17462839.692220077,
-      "risk_note": "Verified native implementation with $17,462,839.69 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
@@ -47878,16 +46245,6 @@
       "origin_kind": "native",
       "tvl_usd": 212.63761799999997,
       "risk_note": "Verified native implementation with $212.64 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x5d96d4287d1ff115ee50fac0526cf43ecf79bfc6",
-      "name": "Bridge",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 42161,
@@ -47990,26 +46347,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x12e45e323d44209fcb9afef0e5793b92296975df",
-      "name": "IncentiveEventsReward",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xaf2d365e668baafedcfd256c0fbbe519e594e390",
-      "name": "IncentiveEventsRewardNew",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x04b51ba79e7d19e011ef1db86bd340908a6e424b",
@@ -48084,16 +46421,6 @@
       "chain_name": "arbitrum",
       "address": "0x28f16eb86481066bf63bcbeb05c8474f7120a36c",
       "name": "Migration",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x09236aff6b36a5dbf97b5030a5a650e06931c51e",
-      "name": "MultiBridgeToken",
       "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -48381,10 +46708,10 @@
     }
   ],
   "origin_summary": {
-    "native": 144,
-    "upstream": 12,
+    "native": 139,
+    "upstream": 2,
     "standard_library": 5,
-    "needs_review": 1064
+    "needs_review": 1052
   },
   "scope_matching_notes": {
     "match_method_counts": {
@@ -48395,17 +46722,8 @@
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 3380,
-        "report_name": "DL audit link"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
-  "active_bug_bounty": {
-    "platform": "Immunefi",
-    "url": "https://immunefi.com/bug-bounty/mux/information",
-    "tier": 1
-  }
+  "active_bug_bounty": null
 }

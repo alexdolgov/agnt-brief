@@ -5,8 +5,8 @@
 - Project: K2 (`k2`)
 - Website: [https://opengdp.network/](https://opengdp.network/)
 - Lifecycle: active (Tier 0, 80.4% below peak)
-- Generated: 2026-05-31T08:34:00.316Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:06.414Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 30 unique implementations (53 raw deployments)
 - DeFi Llama TVL: $4,657,315.72
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-K2 is a Layer 2 scaling solution built on the OP Stack, providing fast and low-cost transactions while inheriting Ethereum's security. It uses a bridge to move assets between Ethereum and K2, and an OptimismPortal for depositing and withdrawing transactions.
+K2 should be described as part of the broader OpenGDP/Karak ecosystem rather than only as an OP Stack Layer 2 bridge. The project includes programmable economic infrastructure with staking/restaking and vault components, alongside K2 bridge and OP Stack chain infrastructure for moving assets and messages between Ethereum and K2. The contract surface should distinguish these Karak/OpenGDP vault, staking/restaking, registry, governance, and operational components from the bridge/portal contracts instead of treating the system as only a Layer 2 scaling bridge.
 
 ### Architecture
 

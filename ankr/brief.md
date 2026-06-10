@@ -5,8 +5,8 @@
 - Project: Ankr (`ankr`)
 - Website: [https://www.ankr.com/](https://www.ankr.com/)
 - Lifecycle: active (Tier 0, 91.3% below peak)
-- Generated: 2026-06-10T20:35:30.699Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.570Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, ethereum, fantom
 - Contract surface: 6 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $21,690,242.52

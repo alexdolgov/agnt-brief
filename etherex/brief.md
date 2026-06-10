@@ -7,17 +7,17 @@
 - Project: Etherex (`etherex`)
 - Website: [https://etherex.finance/](https://etherex.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-24T04:01:32.838Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:02.337Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: linea
 - Contract surface: 58 unique implementations (130 raw deployments)
-- DeFi Llama TVL: $3,600,603.00
+- DeFi Llama TVL: $3,577,570.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Etherex is a decentralized exchange (DEX) protocol on Linea that offers both classic automated market maker (AMM) pools and concentrated liquidity pools. It enables users to swap tokens, provide liquidity, and participate in governance through voting and fee distribution mechanisms.
+Etherex is a concentrated-liquidity decentralized exchange on Linea with x(3,3)/metaDEX tokenomics. It enables token swaps, liquidity provision, gauges, voting, and fee distribution, and its deployed surface also includes classic AMM, gauge, and governance components.
 
 ### Architecture
 
@@ -25,18 +25,18 @@ The Core and Concentrated Liquidity families share the Access Control infrastruc
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 20/47 (42.6%)
-- Verified + Unaudited implementations: 26
+- Verified implementations audited: 17/47 (36.2%)
+- Verified + Unaudited implementations: 29
 - Verified by bytecode match: 2
 - Unverified implementations: 11
 - Unique implementations: 58
 - Raw deployments: 130
-- Audits discovered: 4
-- Scoreable audits (matched contracts): 3
+- Audits discovered: 2
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-10 (fresh)
-- Staleness: 1 fresh, 3 aging, 0 stale, 0 unknown
-- Tier 1 coverage: 42.6% (Code4rena, ConsenSys Diligence, Spearbit)
+- Staleness: 1 fresh, 1 aging, 0 stale, 0 unknown
+- Tier 1 coverage: 36.2% (Spearbit)
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
@@ -44,12 +44,10 @@ The Core and Concentrated Liquidity families share the Access Control infrastruc
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
 | Spearbit | Tier 1 | 17 | 36.2% | 2025-10 |
-| Code4rena | Tier 1 | 5 | 10.6% | 2024-10 |
-| Consensys Diligence | Tier 1 | 5 | 10.6% | 2024-08 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (19)
+### ✅ Verified + Audited (16)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -60,9 +58,6 @@ The Core and Concentrated Liquidity families share the Access Control infrastruc
 | FeeDistributorFactory | operational_periphery | linea | 2 deployments: linea [`0x61c56a...6f3f6f`](./contracts/linea-59144/0x61c56ad143e364dacbb60fc901f7993e9e6f3f6f/); linea `0xfde487...e6b7bf` | ✅ Audited |
 | Minter | operational_periphery | linea | 4 deployments: linea [`0x0b6d3b...ecc3eb`](./contracts/linea-59144/0x0b6d3b42861ee8abfcaac818033694e758ecc3eb/); linea `0x462e26...d2a966`; linea `0x76da79...da9f8f`; linea `0xf83962...0b6255` | ✅ Audited |
 | NonfungiblePositionManager | governance | linea | [`0xa04a9f...bb2f58`](./contracts/linea-59144/0xa04a9f0a961f8fcc4a94bcf53e676b236cbb2f58/) | ✅ Audited |
-| Oracle | operational_periphery | linea | [`0x389df9...7e7d55`](./contracts/linea-59144/0x389df9430143880ddb13bdd5fd30daf2d57e7d55/) | ✅ Audited |
-| Position | unknown | linea | [`0x2832e1...bf9d6f`](./contracts/linea-59144/0x2832e19221631e7082926e2bb354497613bf9d6f/) | ✅ Audited |
-| ProtocolActions | unknown | linea | [`0x34413f...3140fd`](./contracts/linea-59144/0x34413f3cddafef7db46f92296a7cea444b3140fd/) | ✅ Audited |
 | RamsesTreasuryHelper | operational_periphery | linea | [`0x15325a...5636a5`](./contracts/linea-59144/0x15325a2ec4bf164d47cf48d5d6a9edda385636a5/) | ✅ Audited |
 | RamsesV3Factory | registry | linea | [`0xae334f...cf80f1`](./contracts/linea-59144/0xae334f70a7fc44fcc2df9e6a37bc032497cf80f1/) | ✅ Audited |
 | RamsesV3PoolDeployer | core_logic | linea | [`0x80dca1...c7bec8`](./contracts/linea-59144/0x80dca113b33ce4da3a7aac15c2e62fc6d6c7bec8/) | ✅ Audited |
@@ -73,7 +68,7 @@ The Core and Concentrated Liquidity families share the Access Control infrastruc
 | Voter | unknown | linea | 11 deployments: linea [`0x1dac11...a94046`](./contracts/linea-59144/0x1dac11c6578c3a6ddffcb3bf1741cf3d11a94046/); linea `0x4961f7...fc7679`; linea `0x56ebcf...dd256f`; linea `0x5f26a6...06fc19`; linea `0x706e4a...f157e1`; linea `0x891d28...45141c`; linea `0x942117...f889c1`; linea `0x982c01...caa125`; linea `0xa0b937...d4f116`; linea `0xade917...9d56d1`; linea `0xe8e8e8...2f8468` | ✅ Audited |
 | XRex | unknown | linea | 2 deployments: linea [`0x58d034...146997`](./contracts/linea-59144/0x58d034c3c22851e9dc8fc2f07055659cf9146997/); linea `0xc93b31...f366cc` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (26)
+### ⚠️ Verified + Unaudited (29)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -87,7 +82,10 @@ The Core and Concentrated Liquidity families share the Access Control infrastruc
 | MinimalizedFeePusher | unknown | linea | 2 deployments: linea [`0x1b4e17...1c4efb`](./contracts/linea-59144/0x1b4e17d4263a7f751d8965ae514293c0461c4efb/); linea `0x98af61...eb4a8c` | ⚠️ Unaudited |
 | MixedRouteQuoterV1 | periphery | linea | [`0x59037f...3712a6`](./contracts/linea-59144/0x59037f2c0337a5150c0cd08cb2df684e043712a6/) | ⚠️ Unaudited |
 | NonfungibleTokenPositionDescriptor | token | linea | [`0xfc65c6...8453c4`](./contracts/linea-59144/0xfc65c6308765ebbb0d87df8b6502674b868453c4/) | ⚠️ Unaudited |
+| Oracle | operational_periphery | linea | [`0x389df9...7e7d55`](./contracts/linea-59144/0x389df9430143880ddb13bdd5fd30daf2d57e7d55/) | ⚠️ Unaudited |
 | PairFactory | registry | linea | [`0xc0b920...644592`](./contracts/linea-59144/0xc0b920f6f1d6122b8187c031554dc8194f644592/) | ⚠️ Unaudited |
+| Position | operational_periphery | linea | [`0x2832e1...bf9d6f`](./contracts/linea-59144/0x2832e19221631e7082926e2bb354497613bf9d6f/) | ⚠️ Unaudited |
+| ProtocolActions | unknown | linea | [`0x34413f...3140fd`](./contracts/linea-59144/0x34413f3cddafef7db46f92296a7cea444b3140fd/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | linea | 2 deployments: linea [`0x3950d9...542dc3`](./contracts/linea-59144/0x3950d9b43c77cf5e165ee9aa5c59efdc5a542dc3/); linea `0xdc78e9...3d384e` | ⚠️ Unaudited |
 | Quoter | periphery | linea | [`0xb593fa...4fe335`](./contracts/linea-59144/0xb593fa9d853ad89bfcf77c9a22d24936774fe335/) | ⚠️ Unaudited |
 | QuoterV2 | periphery | linea | [`0xe660c9...aba037`](./contracts/linea-59144/0xe660c95e17884b6c81b01445efc24556f8aba037/) | ⚠️ Unaudited |
@@ -144,8 +142,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [cantina.xyz/portfolio/48fc9b98-ded3-43fa-80a2-5aedb3a5a51e](https://cantina.xyz/portfolio/48fc9b98-ded3-43fa-80a2-5aedb3a5a51e) | Spearbit | Audit | 2025-10 | fresh | Direct | contract_name | 72 | medium |
 | [cantina.xyz/portfolio/98695d75-ee7d-4e1c-aa96-6379f73c5b2c](https://cantina.xyz/portfolio/98695d75-ee7d-4e1c-aa96-6379f73c5b2c) | Spearbit | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
-| [diligence.consensys.io/audits/2024/08/ramses-v3](https://diligence.security/audits/2024/08/ramses-v3) | Consensys Diligence | Audit | 2024-08 | aging | Direct | contract_name | 5 | high |
-| [Report](https://code4rena.com/reports/2024-10-ramses-exchange) | Code4rena | Contest | 2024-10 | aging | Direct | contract_name | 11 | high |
 
 ## Coverage Gaps
 
@@ -164,7 +160,10 @@ Verified + unaudited native implementations ranked by TVL:
 | linea | [`0x1b4e17...1c4efb`](./contracts/linea-59144/0x1b4e17d4263a7f751d8965ae514293c0461c4efb/) | MinimalizedFeePusher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | linea | [`0x59037f...3712a6`](./contracts/linea-59144/0x59037f2c0337a5150c0cd08cb2df684e043712a6/) | MixedRouteQuoterV1 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | linea | [`0xfc65c6...8453c4`](./contracts/linea-59144/0xfc65c6308765ebbb0d87df8b6502674b868453c4/) | NonfungibleTokenPositionDescriptor | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x389df9...7e7d55`](./contracts/linea-59144/0x389df9430143880ddb13bdd5fd30daf2d57e7d55/) | Oracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | linea | [`0xc0b920...644592`](./contracts/linea-59144/0xc0b920f6f1d6122b8187c031554dc8194f644592/) | PairFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x2832e1...bf9d6f`](./contracts/linea-59144/0x2832e19221631e7082926e2bb354497613bf9d6f/) | Position | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x34413f...3140fd`](./contracts/linea-59144/0x34413f3cddafef7db46f92296a7cea444b3140fd/) | ProtocolActions | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | linea | [`0xb593fa...4fe335`](./contracts/linea-59144/0xb593fa9d853ad89bfcf77c9a22d24936774fe335/) | Quoter | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | linea | [`0xe660c9...aba037`](./contracts/linea-59144/0xe660c95e17884b6c81b01445efc24556f8aba037/) | QuoterV2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | linea | [`0x5da973...c5a3e9`](./contracts/linea-59144/0x5da9735b19cdd050b6ada1b31ef52ae704c5a3e9/) | Revivoor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -191,8 +190,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2, medium=1
-- Match method counts: extraction_exact=88
+- Extraction confidence breakdown: medium=1
+- Match method counts: extraction_exact=72
 
 Zero-match audit list:
 

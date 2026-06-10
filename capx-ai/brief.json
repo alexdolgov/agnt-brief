@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "capx-ai",
-  "generated_at": "2026-05-24T14:07:13.155Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:01.253Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "capx-ai",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2155363.46804,
-    "tvl_usd": 2155363.46804,
+    "dl_tvl_usd": 2143133.58186,
+    "tvl_usd": 2143133.58186,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Capx AI is a protocol on BSC that deploys and manages AI agent tokens via a factory contract, enabling the creation and trading of burnable/mintable ERC20 tokens.",
-    "relationship_narrative": "The single product family contains the core factory contract, which serves as the registry and deployer for all AI agent tokens; no additional infrastructure contracts are present.",
+    "project_purpose": "Capx AI is an Ethereum Layer 2 / Capx Chain ecosystem for building, tokenizing, owning, and trading AI apps. The listed BSC FactoryBurnMintERC20 contract should be treated as an associated factory/registry contract rather than the complete protocol surface or the TVL-bearing Capx Chain trading infrastructure.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

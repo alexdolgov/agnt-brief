@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "spookyswap",
-  "generated_at": "2026-05-25T16:40:56.640Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:16.411Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "spookyswap",
     "tier": 1,
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 137,
-    "total_addresses": 171,
-    "unique_implementations": 137,
-    "total_deployments": 171,
+    "total_contracts": 136,
+    "total_addresses": 170,
+    "unique_implementations": 136,
+    "total_deployments": 170,
     "audited_contracts": 0,
-    "unaudited_contracts": 37,
+    "unaudited_contracts": 36,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 36,
+    "contracts_verified_unaudited": 35,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 100,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1386988,
+    "dl_tvl_usd": 1350469,
     "tvl_usd": 841.6703203831667,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -69,9 +69,14 @@
     }
   },
   "topography": {
-    "project_purpose": "SpookySwap is a decentralized exchange (DEX) and DeFi protocol operating on Fantom and Sonic chains. It provides automated market making (AMM) via Uniswap V2 and V3 forks, token swaps, liquidity provision, yield farming, and a launchpad. The protocol also includes bridging, perpetuals, and various token adapters for cross-chain and synthetic asset support.",
+    "project_purpose": "SpookySwap is a decentralized exchange and DeFi hub with swaps, AMM liquidity provision, farming, and launchpad-related functionality. Bridge or token-related contracts should be distinguished from SpookySwap-owned protocol contracts where they are third-party infrastructure or external dependencies.",
     "relationship_narrative": "The Sonic Mainnet family provides the core DEX functionality, relying on token contracts from the Single Token Addresses family for trading pairs. LP tokens from Spooky LP Pair Addresses represent liquidity positions in the AMM pools. The Fantom Opera family likely contains older or parallel deployments sharing similar token and pool structures.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 136,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -614,37 +619,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x981ef1f1644715ae797434de4c0aad16e6162723",
-      "name": "Permit2",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "Permit2",
-      "product_line": "Sonic Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Permit2",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x981ef1f1644715ae797434de4c0aad16e6162723",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 146,
@@ -4791,7 +4765,7 @@
   "origin_summary": {
     "native": 41,
     "upstream": 11,
-    "standard_library": 9,
+    "standard_library": 8,
     "needs_review": 76
   },
   "scope_matching_notes": {

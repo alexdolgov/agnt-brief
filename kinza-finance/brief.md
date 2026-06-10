@@ -7,8 +7,8 @@
 - Project: Kinza Finance (`kinza-finance`)
 - Website: [https://app.kinza.finance/#/referral?referralCode=28UAHQ](https://app.kinza.finance/#/referral?referralCode=28UAHQ)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-30T10:52:49.058Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-06-10T20:59:06.722Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc, ethereum, mantle, opbnb
 - Contract surface: 154 unique implementations (252 raw deployments)
 - DeFi Llama TVL: $7,776,309.13
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Kinza Finance is a decentralized lending protocol that enables users to supply and borrow digital assets across multiple chains. It uses a pool-based model with variable interest rates, liquidation mechanisms, and governance controls.
+Kinza Finance is a multi-chain decentralized lending and money-market protocol deployed across Ethereum, BNB Chain/Binance, Mantle, and opBNB. It enables users to supply and borrow digital assets through pool-based markets with variable interest rates, liquidation mechanisms, oracle integrations, and governance controls.
 
 ### Architecture
 

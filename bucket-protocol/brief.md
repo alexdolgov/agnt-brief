@@ -5,21 +5,22 @@
 - Project: Bucket Protocol (`bucket-protocol`)
 - Website: [https://bucketprotocol.io](https://bucketprotocol.io)
 - Lifecycle: unknown
-- Generated: 2026-05-27T15:02:02.450Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:59:01.181Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $65,133,048.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Bucket Protocol is a decentralized finance (DeFi) platform that enables users to open collateralized debt positions (CDPs) and participate in yield farming. It allows users to deposit collateral to mint stablecoins and earn rewards through farming mechanisms.
-
-### Architecture
-
-The CDP and Farm families share the protocol's native token for rewards and governance, with farming incentives potentially driving liquidity for the stablecoin minted through CDPs.
+Bucket Protocol is a Sui-based DeFi protocol centered on collateralized debt positions and stablecoin borrowing/minting. Users can deposit collateral to mint/borrow the protocol stablecoin, with functionality including real-time liquidation and flash loans. Bucket Farm should be treated as a related DeFi product only where independently scoped, and unsupported claims about a shared native governance or reward token should be removed unless separately verified.
 
 ## Audit Coverage Summary
 

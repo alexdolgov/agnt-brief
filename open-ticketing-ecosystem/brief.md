@@ -1,14 +1,12 @@
 # Agentic Audit Brief: OPEN Ticketing Ecosystem
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: OPEN Ticketing Ecosystem (`open-ticketing-ecosystem`)
 - Website: [https://onopen.xyz](https://onopen.xyz)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:09:24.405Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:08.799Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, ethereum, polygon
 - Contract surface: 24 unique implementations (153 raw deployments)
 - DeFi Llama TVL: $1,343,702.63
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-The OPEN Ticketing Ecosystem is a decentralized event ticketing protocol that enables event creation, ticket sales, and on-chain revenue distribution. It uses a modular architecture with factories, registries, and economic models to manage events and fuel (gas) costs across multiple chains.
+The OPEN Ticketing Ecosystem is a decentralized event ticketing protocol that enables event creation, ticket sales, and on-chain revenue distribution. It uses a modular architecture with factories, registries, and economic models to manage events and OPN-based ticketing fees or ecosystem fuel across multiple chains.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The Event Management family relies on the Registry and Auth for access control, 
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $3,341,925.29 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

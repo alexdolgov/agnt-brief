@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "ethichub",
-  "generated_at": "2026-05-23T23:48:49.036Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:03.830Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ethichub",
     "tier": 0,
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4045216.76864,
+    "dl_tvl_usd": 4025199.6812,
     "tvl_usd": 22676394.35532527,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -62,9 +62,14 @@
     }
   },
   "topography": {
-    "project_purpose": "EthicHub is a decentralized protocol that connects lenders with smallholder farmers in emerging markets, enabling real-world asset (RWA) lending. It uses tokenized bonds, staking mechanisms, and cross-chain bridges to facilitate and secure agricultural loans.",
+    "project_purpose": "EthicHub is a ReFi/RWA lending and guarantee platform that connects lenders with smallholder farmers and agricultural communities in emerging markets. ETHIX is used for collective guarantees, staking, incentives, and rewards around the lending ecosystem. Cross-chain bridge contracts should be treated as deployment or interoperability infrastructure rather than core loan-securing logic unless separately evidenced as EthicHub-owned and in audit scope.",
     "relationship_narrative": "The ETHEREUM SMART CONTRACTS family provides the foundational EthixToken and staking contracts, which are mirrored or bridged to the EthicHub family on Gnosis and Celo. The EthicHub family uses these tokens for bonding, staking, and liquidity, while ForeignOmnibridge enables cross-chain asset transfers between networks.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 58,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

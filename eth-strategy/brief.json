@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "eth-strategy",
-  "generated_at": "2026-05-31T07:57:25.232Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:02.311Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "eth-strategy",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "ETH Strategy is an onchain capital allocator that deploys assets into structured yield strategies. It offers perpetual note products and liquidity provision mechanisms, primarily on Ethereum.",
+    "project_purpose": "ETH Strategy is an Ethereum-based treasury accumulation protocol focused on providing leveraged ETH exposure without margin-liquidation or volatility-decay risks. Its on-chain surface includes vault-style contracts and related strategy components; references to perpetual or convertible note products should be limited to cases supported by identified contract names or parsed audit scope.",
     "relationship_narrative": "The ETH Strategy and ESPN families share the StratToken as a core asset, while the Proxy Contracts family provides upgradeable infrastructure for Arrakis V2 pools used in ESPN. Multisigs govern and secure all families, and the Bridge family enables cross-chain movement of strategy tokens.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 49,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

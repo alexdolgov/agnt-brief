@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "mm-finance",
-  "generated_at": "2026-05-24T22:47:17.239Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:07.731Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "mm-finance",
     "tier": 0,
@@ -35,7 +35,7 @@
     "coverage_pct": 4.5,
     "total_audits": 3,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 1442667,
+    "dl_tvl_usd": 1462523,
     "tvl_usd": 1848184.5473620114,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -61,9 +61,14 @@
     }
   },
   "topography": {
-    "project_purpose": "MM Finance is a multi-chain DeFi ecosystem offering decentralized exchange (DEX) services, yield optimization, algorithmic stablecoins, and launchpad functionality. It operates across Polygon, Arbitrum, and Cronos, providing liquidity pools, staking, and automated yield strategies.",
+    "project_purpose": "MM Finance is a DeFi protocol with deployed contracts across chains including Polygon and Cronos, with verified contract evidence showing DEX/router, factory, liquidity/staking, token, proxy/admin, oracle, and GMX-style periphery components. Claims about additional products such as METF, Savanna, algorithmic stablecoins, launchpad functionality, or automated yield strategies should be treated as unverified unless supported by primary documentation or included in accessible audited contract scope.",
     "relationship_narrative": "The families share a common deployer cluster and proxy infrastructure, indicating a unified development team. MM Finance Arbitrum and Polygon both use MeerkatToken, while MM Optimizer Polygon and MM Stableswap Polygon extend the Polygon ecosystem with specialized products. METF Finance and Savanna Finance appear as separate but related ventures under the same umbrella.",
     "product_family_count": 7
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 192,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

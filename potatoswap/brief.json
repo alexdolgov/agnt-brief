@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "potatoswap",
-  "generated_at": "2026-05-23T19:36:24.587Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:09.360Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4826218,
-    "tvl_usd": 4826218,
+    "dl_tvl_usd": 5173121,
+    "tvl_usd": 5173121,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "PotatoSwap is a decentralized exchange (DEX) protocol that enables users to swap tokens, provide liquidity, and earn fees. It appears to support multiple versions (V2 and V3) with automated market-making functionality.",
-    "relationship_narrative": "No contract inventory or structural relationships are available to analyze.",
+    "project_purpose": "PotatoSwap is a decentralized exchange (DEX) and launchpad built for the X Layer ecosystem. Current public evidence supports V3 AMM branding; any V2 support should be treated as unverified until confirmed by contract inventory, documentation, or current site evidence.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

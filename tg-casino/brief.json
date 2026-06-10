@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "tg-casino",
-  "generated_at": "2026-05-31T11:07:26.839Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:17.455Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "tg-casino",
     "tier": 0,
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 6.7,
-    "total_audits": 800,
+    "total_audits": 761,
     "scoreable_audits": 1,
     "dl_tvl_usd": 1201303.77018,
     "tvl_usd": 13353575.518038843,
@@ -48,19 +48,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2025-10",
-    "audit_freshness": "fresh",
+    "latest_audit_date": "2025",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
-      "fresh": 8,
-      "aging": 123,
-      "stale": 92,
+      "fresh": 0,
+      "aging": 103,
+      "stale": 81,
       "unknown": 577
     }
   },
   "topography": {
-    "project_purpose": "TG Casino is a decentralized gambling and staking platform on Ethereum, centered around its native TGC token. Users can stake tokens to earn rewards and participate in governance, while the protocol facilitates casino-style games of chance.",
+    "project_purpose": "TG.Casino is a Telegram casino-associated project centered on the TGC token on Ethereum. The verified on-chain scope supports TGC token contracts and staking/profit-share related contracts, including staking and multi-staking components. Current evidence does not support describing the listed on-chain contracts as facilitating casino games or token-holder governance.",
     "relationship_narrative": "The TGC token is the central asset used across staking contracts. StakingManagerV5 and MultiStakingManagerV2 both interact with TGCToken, and are accessed via upgradeable proxies that share the same deployer cluster.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 15,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -380,7 +385,7 @@
       "chain_name": "ethereum",
       "address": "0x9307d50caae1fa22a08b3352b493797a7ab692bb",
       "name": "StakingManager",
-      "role": "governance",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -442,7 +447,7 @@
       "chain_name": "ethereum",
       "address": "0xb5b77c895bf3c4c060da327fbc953e7fbdbf1a0e",
       "name": "StakingManagerV2",
-      "role": "governance",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -5015,27 +5020,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 10722,
-      "audit_key": "audit-10722",
-      "report_name": "Coinsult_Meteor_Swap_FGUs...MBSv_Audit.pdf",
-      "report_url": "https://github.com/Coinsult/Audits/blob/main/Coinsult_Meteor_Swap_FGUs...MBSv_Audit.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-03",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 10723,
       "audit_key": "audit-10723",
       "report_name": "Coinsult_Milk_Mocha_0x7f...aeF2_Audit.pdf",
@@ -6913,27 +6897,6 @@
       "audit_type": "audit",
       "freshness": "unknown",
       "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10813,
-      "audit_key": "audit-10813",
-      "report_name": "Coinsult_SUBBD_0xEE...aCE1_Audit.pdf",
-      "report_url": "https://github.com/Coinsult/Audits/blob/main/Coinsult_SUBBD_0xEE...aCE1_Audit.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-04",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -9152,27 +9115,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 10919,
-      "audit_key": "audit-10919",
-      "report_name": "2024_12_04_ASSUREDEFI_The GameHub_GHUB_TOKEN_Audit.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/2024_12_04_ASSUREDEFI_The%20GameHub_GHUB_TOKEN_Audit.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-12",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 10920,
       "audit_key": "audit-10920",
       "report_name": "ABRAHAM_TOKEN_01_08_23.pdf",
@@ -9286,27 +9228,6 @@
       "audit_type": "audit",
       "freshness": "aging",
       "date": "2025",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10926,
-      "audit_key": "audit-10926",
-      "report_name": "AIToken_ADV_04_21_25.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/AIToken_ADV_04_21_25.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-04",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -9488,27 +9409,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 10935,
-      "audit_key": "audit-10935",
-      "report_name": "ASSUREDEFI_Block Social Network_BSN_TOKEN_2024_09_20_Audit.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/ASSUREDEFI_Block%20Social%20Network_BSN_TOKEN_2024_09_20_Audit.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-09",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 10936,
       "audit_key": "audit-10936",
       "report_name": "ASSUREDEFI_CNDR_$CNDR_TOKEN_Audit_06_14_2023.pdf",
@@ -9622,27 +9522,6 @@
       "audit_type": "audit",
       "freshness": "unknown",
       "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10942,
-      "audit_key": "audit-10942",
-      "report_name": "Abraham_ERC20 Token_12_27_23.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/Abraham_ERC20%20Token_12_27_23.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -10000,27 +9879,6 @@
       "audit_type": "audit",
       "freshness": "stale",
       "date": "2024",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10960,
-      "audit_key": "audit-10960",
-      "report_name": "BSTRToken_ADV_06_10_25.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/BSTRToken_ADV_06_10_25.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -10475,48 +10333,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 10982,
-      "audit_key": "audit-10982",
-      "report_name": "CHAIN BASED_ADV_11_22_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/CHAIN%20BASED_ADV_11_22_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10983,
-      "audit_key": "audit-10983",
-      "report_name": "CHAIN BASED_ADV_12_02_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/CHAIN%20BASED_ADV_12_02_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-12",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 10984,
       "audit_key": "audit-10984",
       "report_name": "CHAIN BASED_TOKEN_11_27_24.pdf",
@@ -10840,27 +10656,6 @@
       "audit_type": "audit",
       "freshness": "stale",
       "date": "2024",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11000,
-      "audit_key": "audit-11000",
-      "report_name": "CryptoCoin_ADV_01_24_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/CryptoCoin_ADV_01_24_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -11378,27 +11173,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11025,
-      "audit_key": "audit-11025",
-      "report_name": "DefiOne.VAC_ERC 20 Token_10_10_2023.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/DefiOne.VAC_ERC%2020%20Token_10_10_2023.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 11026,
       "audit_key": "audit-11026",
       "report_name": "Deluge.Cash_Flash_Audit_12_16_23.pdf",
@@ -11428,69 +11202,6 @@
       "audit_type": "audit",
       "freshness": "unknown",
       "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11028,
-      "audit_key": "audit-11028",
-      "report_name": "EVA Token_ADV2_09_12_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/EVA%20Token_ADV2_09_12_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11029,
-      "audit_key": "audit-11029",
-      "report_name": "EVA Token_ADV_09_12_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/EVA%20Token_ADV_09_12_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11030,
-      "audit_key": "audit-11030",
-      "report_name": "EVA_ADV_09_18_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/EVA_ADV_09_18_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-11",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -11617,69 +11328,6 @@
       "audit_type": "audit",
       "freshness": "unknown",
       "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11037,
-      "audit_key": "audit-11037",
-      "report_name": "FGB_TOKENV2_01_30_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/FGB_TOKENV2_01_30_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11038,
-      "audit_key": "audit-11038",
-      "report_name": "FGB_TOKEN_01_29_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/FGB_TOKEN_01_29_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11039,
-      "audit_key": "audit-11039",
-      "report_name": "FGB_TOKEN_01_30_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/FGB_TOKEN_01_30_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -11987,27 +11635,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11054,
-      "audit_key": "audit-11054",
-      "report_name": "GRADIENT_MM_09_22_25.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/GRADIENT_MM_09_22_25.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-09",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 11055,
       "audit_key": "audit-11055",
       "report_name": "GROKCAT_TOKEN_04_12_24.pdf",
@@ -12155,48 +11782,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11062,
-      "audit_key": "audit-11062",
-      "report_name": "GoodTrouble_ADV_06_02_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/GoodTrouble_ADV_06_02_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11063,
-      "audit_key": "audit-11063",
-      "report_name": "Gradient_ADV_05_30_25.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/Gradient_ADV_05_30_25.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 11064,
       "audit_key": "audit-11064",
       "report_name": "Gradient_ADV_06_02_25.pdf",
@@ -12205,48 +11790,6 @@
       "audit_type": "audit",
       "freshness": "aging",
       "date": "2025",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11065,
-      "audit_key": "audit-11065",
-      "report_name": "Gradient_ADV_06_05_25.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/Gradient_ADV_06_05_25.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11066,
-      "audit_key": "audit-11066",
-      "report_name": "Gradient_ADV_06_11_25.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/Gradient_ADV_06_11_25.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -12554,48 +12097,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11081,
-      "audit_key": "audit-11081",
-      "report_name": "ICB_STAKING_04_28_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/ICB_STAKING_04_28_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11082,
-      "audit_key": "audit-11082",
-      "report_name": "IMAGINE_ST_07_30_25.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/IMAGINE_ST_07_30_25.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 11083,
       "audit_key": "audit-11083",
       "report_name": "INNOVIA_TOKEN_04_23_24.pdf",
@@ -12764,27 +12265,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11091,
-      "audit_key": "audit-11091",
-      "report_name": "LADA_ERC20 Token_02_20_2024.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/LADA_ERC20%20Token_02_20_2024.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 11092,
       "audit_key": "audit-11092",
       "report_name": "LADA_TOKEN_02_20_24.pdf",
@@ -12919,48 +12399,6 @@
       "audit_type": "audit",
       "freshness": "unknown",
       "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11099,
-      "audit_key": "audit-11099",
-      "report_name": "LegalX_ADV_03_02_25.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/LegalX_ADV_03_02_25.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11100,
-      "audit_key": "audit-11100",
-      "report_name": "LegalX_ADV_03_03_25.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/LegalX_ADV_03_03_25.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -13121,27 +12559,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11108,
-      "audit_key": "audit-11108",
-      "report_name": "MENTAL_SOL_09_16_25.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/MENTAL_SOL_09_16_25.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-09",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 11109,
       "audit_key": "audit-11109",
       "report_name": "METABOT_ADV_10_23_24.pdf",
@@ -13289,27 +12706,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11116,
-      "audit_key": "audit-11116",
-      "report_name": "MODUS_V2_02_02_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/MODUS_V2_02_02_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 11117,
       "audit_key": "audit-11117",
       "report_name": "MODUS_V3_02_12_24.pdf",
@@ -13318,48 +12714,6 @@
       "audit_type": "audit",
       "freshness": "stale",
       "date": "2024",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11118,
-      "audit_key": "audit-11118",
-      "report_name": "MODUS_V5_04_05_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/MODUS_V5_04_05_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-12",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11119,
-      "audit_key": "audit-11119",
-      "report_name": "MODUS_V6_04_05_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/MODUS_V6_04_05_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -13436,27 +12790,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11123,
-      "audit_key": "audit-11123",
-      "report_name": "MQSALA_ADV_06_30_25.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/MQSALA_ADV_06_30_25.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 11124,
       "audit_key": "audit-11124",
       "report_name": "MQSALA_ADV_07_01_25.pdf",
@@ -13507,27 +12840,6 @@
       "audit_type": "audit",
       "freshness": "aging",
       "date": "2025",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11127,
-      "audit_key": "audit-11127",
-      "report_name": "MULLET_ADV_06_04_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/MULLET_ADV_06_04_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-05",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -13633,27 +12945,6 @@
       "audit_type": "audit",
       "freshness": "unknown",
       "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11133,
-      "audit_key": "audit-11133",
-      "report_name": "Meme Alliance_ ERC 20 token_11_10_2023.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/Meme%20Alliance_%20ERC%2020%20token_11_10_2023.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-11",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -13814,27 +13105,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11141,
-      "audit_key": "audit-11141",
-      "report_name": "Monolitify_Token_12_30_23.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/Monolitify_Token_12_30_23.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-12",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 11142,
       "audit_key": "audit-11142",
       "report_name": "MoonInu_ERC 20 Token_08_30_2023.pdf",
@@ -13961,27 +13231,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11148,
-      "audit_key": "audit-11148",
-      "report_name": "NOREXA_ADV_07_20_25.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/NOREXA_ADV_07_20_25.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 11149,
       "audit_key": "audit-11149",
       "report_name": "NOREXA_ADV_07_24_25.pdf",
@@ -14045,27 +13294,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11152,
-      "audit_key": "audit-11152",
-      "report_name": "NOVA BUILDERS_ADV_08_21_25.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/NOVA%20BUILDERS_ADV_08_21_25.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-08",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 11153,
       "audit_key": "audit-11153",
       "report_name": "NUMPAY_ADV_07_26_25.pdf",
@@ -14095,48 +13323,6 @@
       "audit_type": "audit",
       "freshness": "aging",
       "date": "2025",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11155,
-      "audit_key": "audit-11155",
-      "report_name": "NovaQ_ADV_05_24_25.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/NovaQ_ADV_05_24_25.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11156,
-      "audit_key": "audit-11156",
-      "report_name": "OMIRA LABS_ADV_12_03_24.pdf",
-      "report_url": "https://github.com/Assure-DeFi/Audits/blob/main/OMIRA%20LABS_ADV_12_03_24.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -17449,7 +16635,7 @@
       "chain_name": "ethereum",
       "address": "0x9307d50caae1fa22a08b3352b493797a7ab692bb",
       "name": "StakingManager",
-      "role": "governance",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -17469,7 +16655,7 @@
       "chain_name": "ethereum",
       "address": "0xb5b77c895bf3c4c060da327fbc953e7fbdbf1a0e",
       "name": "StakingManagerV2",
-      "role": "governance",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -18352,10 +17538,6 @@
         "report_name": "Coinsult_Meteor_Swap_0x0c...8fa6_Audit.pdf"
       },
       {
-        "audit_id": 10722,
-        "report_name": "Coinsult_Meteor_Swap_FGUs...MBSv_Audit.pdf"
-      },
-      {
         "audit_id": 10723,
         "report_name": "Coinsult_Milk_Mocha_0x7f...aeF2_Audit.pdf"
       },
@@ -18714,10 +17896,6 @@
       {
         "audit_id": 10812,
         "report_name": "Coinsult_STAKEREUM_0xb0...be4d_Audit.pdf"
-      },
-      {
-        "audit_id": 10813,
-        "report_name": "Coinsult_SUBBD_0xEE...aCE1_Audit.pdf"
       },
       {
         "audit_id": 10814,
@@ -19140,10 +18318,6 @@
         "report_name": "20230830_ASSUREDEFI_SHILLD_SHILLD_Audit_230830_231102.pdf"
       },
       {
-        "audit_id": 10919,
-        "report_name": "2024_12_04_ASSUREDEFI_The GameHub_GHUB_TOKEN_Audit.pdf"
-      },
-      {
         "audit_id": 10920,
         "report_name": "ABRAHAM_TOKEN_01_08_23.pdf"
       },
@@ -19166,10 +18340,6 @@
       {
         "audit_id": 10925,
         "report_name": "AIToken_ADV_04_20_25.pdf"
-      },
-      {
-        "audit_id": 10926,
-        "report_name": "AIToken_ADV_04_21_25.pdf"
       },
       {
         "audit_id": 10927,
@@ -19204,10 +18374,6 @@
         "report_name": "ASSUREDEFI - KASPACOM AND NEXUS DRAINER INVESTIGATION.pdf"
       },
       {
-        "audit_id": 10935,
-        "report_name": "ASSUREDEFI_Block Social Network_BSN_TOKEN_2024_09_20_Audit.pdf"
-      },
-      {
         "audit_id": 10936,
         "report_name": "ASSUREDEFI_CNDR_$CNDR_TOKEN_Audit_06_14_2023.pdf"
       },
@@ -19230,10 +18396,6 @@
       {
         "audit_id": 10941,
         "report_name": "AURK_ADV_1_12_26.pdf"
-      },
-      {
-        "audit_id": 10942,
-        "report_name": "Abraham_ERC20 Token_12_27_23.pdf"
       },
       {
         "audit_id": 10943,
@@ -19302,10 +18464,6 @@
       {
         "audit_id": 10959,
         "report_name": "BORNHUB_TOKEN_04_12_24.pdf"
-      },
-      {
-        "audit_id": 10960,
-        "report_name": "BSTRToken_ADV_06_10_25.pdf"
       },
       {
         "audit_id": 10961,
@@ -19392,14 +18550,6 @@
         "report_name": "CELLEX_ADV_06_13_25.pdf"
       },
       {
-        "audit_id": 10982,
-        "report_name": "CHAIN BASED_ADV_11_22_24.pdf"
-      },
-      {
-        "audit_id": 10983,
-        "report_name": "CHAIN BASED_ADV_12_02_24.pdf"
-      },
-      {
         "audit_id": 10984,
         "report_name": "CHAIN BASED_TOKEN_11_27_24.pdf"
       },
@@ -19462,10 +18612,6 @@
       {
         "audit_id": 10999,
         "report_name": "CoinCreate_VESTING_11_04_24.pdf"
-      },
-      {
-        "audit_id": 11000,
-        "report_name": "CryptoCoin_ADV_01_24_24.pdf"
       },
       {
         "audit_id": 11001,
@@ -19564,28 +18710,12 @@
         "report_name": "DefiOne.VAC_ERC 20 Token_09_12_2023.pdf"
       },
       {
-        "audit_id": 11025,
-        "report_name": "DefiOne.VAC_ERC 20 Token_10_10_2023.pdf"
-      },
-      {
         "audit_id": 11026,
         "report_name": "Deluge.Cash_Flash_Audit_12_16_23.pdf"
       },
       {
         "audit_id": 11027,
         "report_name": "ELONTIX Audit_ERC20 Token_7_28_23.pdf"
-      },
-      {
-        "audit_id": 11028,
-        "report_name": "EVA Token_ADV2_09_12_24.pdf"
-      },
-      {
-        "audit_id": 11029,
-        "report_name": "EVA Token_ADV_09_12_24.pdf"
-      },
-      {
-        "audit_id": 11030,
-        "report_name": "EVA_ADV_09_18_24.pdf"
       },
       {
         "audit_id": 11031,
@@ -19610,18 +18740,6 @@
       {
         "audit_id": 11036,
         "report_name": "Embark_ERC 20 Token_10_31_2023.pdf"
-      },
-      {
-        "audit_id": 11037,
-        "report_name": "FGB_TOKENV2_01_30_24.pdf"
-      },
-      {
-        "audit_id": 11038,
-        "report_name": "FGB_TOKEN_01_29_24.pdf"
-      },
-      {
-        "audit_id": 11039,
-        "report_name": "FGB_TOKEN_01_30_24.pdf"
       },
       {
         "audit_id": 11040,
@@ -19680,10 +18798,6 @@
         "report_name": "GG_PROTOCOL_ADV_05_01_26.pdf"
       },
       {
-        "audit_id": 11054,
-        "report_name": "GRADIENT_MM_09_22_25.pdf"
-      },
-      {
         "audit_id": 11055,
         "report_name": "GROKCAT_TOKEN_04_12_24.pdf"
       },
@@ -19712,24 +18826,8 @@
         "report_name": "GnomeLand_NFT_02_09_24.pdf"
       },
       {
-        "audit_id": 11062,
-        "report_name": "GoodTrouble_ADV_06_02_24.pdf"
-      },
-      {
-        "audit_id": 11063,
-        "report_name": "Gradient_ADV_05_30_25.pdf"
-      },
-      {
         "audit_id": 11064,
         "report_name": "Gradient_ADV_06_02_25.pdf"
-      },
-      {
-        "audit_id": 11065,
-        "report_name": "Gradient_ADV_06_05_25.pdf"
-      },
-      {
-        "audit_id": 11066,
-        "report_name": "Gradient_ADV_06_11_25.pdf"
       },
       {
         "audit_id": 11067,
@@ -19788,14 +18886,6 @@
         "report_name": "ICB Network_Vesting_04_18_24.pdf"
       },
       {
-        "audit_id": 11081,
-        "report_name": "ICB_STAKING_04_28_24.pdf"
-      },
-      {
-        "audit_id": 11082,
-        "report_name": "IMAGINE_ST_07_30_25.pdf"
-      },
-      {
         "audit_id": 11083,
         "report_name": "INNOVIA_TOKEN_04_23_24.pdf"
       },
@@ -19828,10 +18918,6 @@
         "report_name": "KIMBERLITE_ST_10_26_25.pdf"
       },
       {
-        "audit_id": 11091,
-        "report_name": "LADA_ERC20 Token_02_20_2024.pdf"
-      },
-      {
         "audit_id": 11092,
         "report_name": "LADA_TOKEN_02_20_24.pdf"
       },
@@ -19858,14 +18944,6 @@
       {
         "audit_id": 11098,
         "report_name": "LYNX_ERC 20 Token_09_27_2023.pdf"
-      },
-      {
-        "audit_id": 11099,
-        "report_name": "LegalX_ADV_03_02_25.pdf"
-      },
-      {
-        "audit_id": 11100,
-        "report_name": "LegalX_ADV_03_03_25.pdf"
       },
       {
         "audit_id": 11101,
@@ -19896,10 +18974,6 @@
         "report_name": "MEMELORDZ_BSC_10_22_24.pdf"
       },
       {
-        "audit_id": 11108,
-        "report_name": "MENTAL_SOL_09_16_25.pdf"
-      },
-      {
         "audit_id": 11109,
         "report_name": "METABOT_ADV_10_23_24.pdf"
       },
@@ -19928,20 +19002,8 @@
         "report_name": "MLMX_ST_07_24_25.pdf"
       },
       {
-        "audit_id": 11116,
-        "report_name": "MODUS_V2_02_02_24.pdf"
-      },
-      {
         "audit_id": 11117,
         "report_name": "MODUS_V3_02_12_24.pdf"
-      },
-      {
-        "audit_id": 11118,
-        "report_name": "MODUS_V5_04_05_24.pdf"
-      },
-      {
-        "audit_id": 11119,
-        "report_name": "MODUS_V6_04_05_24.pdf"
       },
       {
         "audit_id": 11120,
@@ -19956,10 +19018,6 @@
         "report_name": "MOREPAD_ADV_12_28_24.pdf"
       },
       {
-        "audit_id": 11123,
-        "report_name": "MQSALA_ADV_06_30_25.pdf"
-      },
-      {
         "audit_id": 11124,
         "report_name": "MQSALA_ADV_07_01_25.pdf"
       },
@@ -19970,10 +19028,6 @@
       {
         "audit_id": 11126,
         "report_name": "MUGA EARN_SOL_10_30_25.pdf"
-      },
-      {
-        "audit_id": 11127,
-        "report_name": "MULLET_ADV_06_04_24.pdf"
       },
       {
         "audit_id": 11128,
@@ -19994,10 +19048,6 @@
       {
         "audit_id": 11132,
         "report_name": "ManaCoin_MNC_Assure DeFi Audit.pdf"
-      },
-      {
-        "audit_id": 11133,
-        "report_name": "Meme Alliance_ ERC 20 token_11_10_2023.pdf"
       },
       {
         "audit_id": 11134,
@@ -20028,10 +19078,6 @@
         "report_name": "Modus_ERC 20_01_26_2024.pdf"
       },
       {
-        "audit_id": 11141,
-        "report_name": "Monolitify_Token_12_30_23.pdf"
-      },
-      {
         "audit_id": 11142,
         "report_name": "MoonInu_ERC 20 Token_08_30_2023.pdf"
       },
@@ -20056,10 +19102,6 @@
         "report_name": "NOMOEX_TOKEN_ADV_07_11_24.pdf"
       },
       {
-        "audit_id": 11148,
-        "report_name": "NOREXA_ADV_07_20_25.pdf"
-      },
-      {
         "audit_id": 11149,
         "report_name": "NOREXA_ADV_07_24_25.pdf"
       },
@@ -20072,24 +19114,12 @@
         "report_name": "NOREXA_YieldOptimizer_10_13_25.pdf"
       },
       {
-        "audit_id": 11152,
-        "report_name": "NOVA BUILDERS_ADV_08_21_25.pdf"
-      },
-      {
         "audit_id": 11153,
         "report_name": "NUMPAY_ADV_07_26_25.pdf"
       },
       {
         "audit_id": 11154,
         "report_name": "NUMPAY_ADV_08_01_25.pdf"
-      },
-      {
-        "audit_id": 11155,
-        "report_name": "NovaQ_ADV_05_24_25.pdf"
-      },
-      {
-        "audit_id": 11156,
-        "report_name": "OMIRA LABS_ADV_12_03_24.pdf"
       },
       {
         "audit_id": 11157,

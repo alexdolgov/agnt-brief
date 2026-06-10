@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "obsidian",
-  "generated_at": "2026-05-31T10:07:19.995Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:08.758Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "obsidian",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Obsidian is a DEX aggregator on Cronos that routes trades across multiple liquidity sources to provide users with optimal swap rates.",
+    "project_purpose": "Obsidian is a Smart DEX and DEX aggregator ecosystem on Cronos and Cronos zkEVM, offering swap aggregation alongside staking/yield, launchpad, and bridge functionality.",
     "relationship_narrative": "All contracts belong to a single product family with no explicit sub-families or shared infrastructure identified beyond the aggregation logic.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 6,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

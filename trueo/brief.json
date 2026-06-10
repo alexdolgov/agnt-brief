@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "trueo",
-  "generated_at": "2026-05-31T11:12:50.133Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:17.602Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "trueo",
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Trueo is a prediction market protocol that enables users to create and trade outcome tokens on real-world events, with a native token (TrueToken) for staking and governance. It uses oracle-based resolution and liquidity pools to facilitate trading.",
+    "project_purpose": "Trueo is an onchain yield-bearing prediction and news/truth market on Base. The protocol centers on markets with APR-bearing positions, truth bounties, and resolution infrastructure involving the Trueo Oracle and attesters. Avoid characterizing it as a generic outcome-token creation/trading protocol or asserting TrueToken governance unless supported by current project documentation.",
     "relationship_narrative": "The Trueo family integrates a governance-managed prediction market (TruthMarketManager) with a native token (TrueToken) used for staking rewards and liquidity provision. Supporting infrastructure includes proxy contracts for upgradeability and a UniswapV2Pair for token liquidity.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 23,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

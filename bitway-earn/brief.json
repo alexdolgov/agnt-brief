@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "bitway-earn",
-  "generated_at": "2026-05-31T14:54:05.311Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:00.964Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bitway-earn",
     "tier": 0,
@@ -58,7 +58,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Bitway Earn is a DeFi protocol on BSC that enables users to earn yield through basis trading strategies. It provides vaults that manage deposits and execute delta-neutral positions, issuing LP tokens representing user shares.",
+    "project_purpose": "Bitway Earn is a DeFi protocol on BSC categorized by DefiLlama as Basis Trading and positioned as a capital/yield gateway. Its observed contract surface includes vault, token, token-lock, and proxy-based token/stablecoin components. Specific claims that vaults execute delta-neutral positions or issue LP share tokens should be omitted unless supported by verified documentation, audit scope, or source code.",
     "relationship_narrative": "The Bitway Earn family provides the core infrastructure including the stablecoin proxy and LP tokens, while the Strategy family contains a specialized vault that likely plugs into the same LP token and withdrawal mechanisms. Both families share the same operational periphery contracts for managing user deposits and redemptions.",
     "product_family_count": 2
   },

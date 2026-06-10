@@ -5,8 +5,8 @@
 - Project: StableHodl (`stablehodl`)
 - Website: [https://stablehodl.com/](https://stablehodl.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:39:41.327Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.495Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc, ethereum, polygon
 - Contract surface: 2 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $6,957,865.97
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-StableHodl is a yield protocol that allows users to stake assets and earn returns through staking pools and OTC endpoints, deployed across BSC, Polygon, and Ethereum.
+StableHodl is a stablecoin yield product powered by HeLa Network. It focuses on USDT, USDC, and HLUSD deposits/staking and generates yield through funding-arbitrage-based strategies, with HLUSD-related rewards described in public data sources. The indexed contract surface includes ERC1967 proxy-based stake pool deployments across Ethereum, BSC, and Polygon, plus OTC endpoint proxy deployments on BSC and Polygon; those OTC endpoint contracts should be treated as recorded contract-surface components unless product documentation confirms they are user-facing yield endpoints.
 
 ### Architecture
 

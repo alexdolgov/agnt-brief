@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "bitway",
-  "generated_at": "2026-05-31T14:54:05.747Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:00.509Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bitway",
     "tier": 0,
@@ -58,7 +58,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Bitway is a basis trading protocol on BSC that enables users to deposit assets into vaults to earn yield from delta-neutral strategies. It issues LP tokens representing vault shares and includes a stablecoin component for settlement or collateral.",
+    "project_purpose": "Bitway Earn is a BSC/BNB Chain asset-management and capital-gateway product in the Bitway suite, with basis-trading and vault/share-token mechanics indicated by public descriptions and deployed contract names. Any stablecoin settlement/collateral purpose or named strategy family should be treated as inferred unless confirmed by documentation or audit scope.",
     "relationship_narrative": "The Bitway family shares LPToken and WithdrawVault contracts across multiple vault instances, indicating a modular design where vaults issue standardized LP tokens and use common withdrawal logic. The Strategy: Bitway Core Alpha vault is a separate core logic contract that may interact with the same stablecoin or token infrastructure.",
     "product_family_count": 2
   },

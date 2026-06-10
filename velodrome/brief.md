@@ -5,8 +5,8 @@
 - Project: Velodrome (`velodrome`)
 - Website: [https://velodrome.finance](https://velodrome.finance)
 - Lifecycle: active (Tier 0, 88.5% below peak)
-- Generated: 2026-05-26T14:44:14.992Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:18.531Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: celo, optimism
 - Contract surface: 52 unique implementations (120 raw deployments)
 - DeFi Llama TVL: $40,174,427.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Velodrome is a decentralized exchange (DEX) protocol on Optimism and Celo that facilitates low-slippage token swaps and liquidity provision. It uses a ve(3,3) tokenomics model where VELO token holders can lock tokens to vote on gauge emissions and earn trading fees.
+Velodrome is a decentralized AMM and liquidity hub for the Optimism/Superchain ecosystem, with current deployments beyond only Optimism and Celo. It facilitates token swaps and liquidity provision and uses a ve(3,3) model in which VELO holders can lock tokens to vote on gauge emissions and earn trading fees.
 
 ### Architecture
 
@@ -29,12 +29,11 @@ Velodrome V2 and V3 share the VELO token for governance and emissions, with both
 - Unverified implementations: 5
 - Unique implementations: 52
 - Raw deployments: 120
-- Audits discovered: 8
+- Audits discovered: 6
 - Scoreable audits (matched contracts): 2
-- Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/velodromefinance/information))
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-10 (aging)
-- Staleness: 0 fresh, 1 aging, 3 stale, 3 unknown
+- Staleness: 0 fresh, 1 aging, 3 stale, 2 unknown
 - Tier 1 coverage: 40.4% (Spearbit)
 
 ### Auditor Coverage
@@ -55,7 +54,7 @@ Velodrome V2 and V3 share the VELO token for governance and emissions, with both
 | CLPool | core_logic | optimism | 6 deployments: optimism [`0x209ce0...98e3f5`](./contracts/optimism-10/0x209ce04710fb9a5c2147ca0fd30922b5e998e3f5/); optimism `0x301e46...943a1b`; optimism `0x380f23...12b4c2`; optimism `0xc28ad2...a3bcbb`; optimism `0xe0a596...a05d37`; optimism `0xf41f45...d32e04` | ✅ Audited |
 | FactoryRegistry | registry | optimism | [`0xf4c67c...aa1d7b`](./contracts/optimism-10/0xf4c67cdeaab8360370f41514d06e32ccd8aa1d7b/) | ✅ Audited |
 | Minter | operational_periphery | optimism | [`0x6dc9e1...d10982`](./contracts/optimism-10/0x6dc9e1c04ee59ed3531d73a72256c0da46d10982/) | ✅ Audited |
-| NonfungiblePositionManager | governance | optimism | 6 deployments: optimism [`0x0b98e0...8a7356`](./contracts/optimism-10/0x0b98e071c552c3a70796589c0cc9d4f9a68a7356/); optimism `0x1d5951...9df276`; optimism `0x416b43...dc6f29`; optimism `0x785de6...350521`; optimism `0xbb5dfe...56adf4`; optimism `0xfb9155...1ff8a5` | ✅ Audited |
+| NonfungiblePositionManager | operational_periphery | optimism | 6 deployments: optimism [`0x0b98e0...8a7356`](./contracts/optimism-10/0x0b98e071c552c3a70796589c0cc9d4f9a68a7356/); optimism `0x1d5951...9df276`; optimism `0x416b43...dc6f29`; optimism `0x785de6...350521`; optimism `0xbb5dfe...56adf4`; optimism `0xfb9155...1ff8a5` | ✅ Audited |
 | Pool | core_logic | optimism | 2 deployments: optimism [`0x95885a...64e531`](./contracts/optimism-10/0x95885af5492195f0754be71ad1545fe81364e531/); optimism `0xf10460...e5ff5a` | ✅ Audited |
 | PoolFactory | registry | celo | [`0x31832f...ce4bc0`](./contracts/celo-42220/0x31832f2a97fd20664d76cc421207669b55ce4bc0/) | ✅ Audited |
 | RewardsDistributor | operational_periphery | optimism | [`0x9d4736...1ea99b`](./contracts/optimism-10/0x9d4736ec60715e71afe72973f7885dcbc21ea99b/) | ✅ Audited |
@@ -130,12 +129,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Active Bug Bounty Program](https://immunefi.com/bug-bounty/velodromefinance/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
 | [Audit](https://code4rena.com/audits/2022-05-velodrome-finance-contest) | Code4rena | Contest | 2022-05 | stale | Direct | n/a | 0 | n/a |
 | [Audit](https://raw.githubusercontent.com/spearbit/portfolio/master/pdfs/Velodrome-Spearbit-Security-Review.pdf) | Spearbit | Audit | 2023-07 | stale | Direct | contract_name | 10 | medium |
 | [Audit](https://raw.githubusercontent.com/spearbit/portfolio/master/pdfs/Velodrome-Spearbit-Security-Review-Nov23.pdf) | Spearbit | Audit | 2024-01 | stale | Direct | contract_name | 44 | high |
 | [ChainSecurity Audit](https://www.chainsecurity.com/security-audit/velodrome-superchain-interoperability) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ChainSecurity Extended Audit](https://www.chainsecurity.com/security-audit/superchain-diff) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [ChainSecurity Slipstream Audit](https://www.chainsecurity.com/security-audit/velodrome-superchain-slipstream) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Sherlock Audit](https://raw.githubusercontent.com/sherlock-protocol/sherlock-reports/main/audits/2024.11.13%20-%20Final%20-%20Velodrome.pdf) | Sherlock | Contest | 2024-10 | aging | Direct | n/a | 0 | n/a |
 
@@ -182,7 +179,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1, medium=1
 - Match method counts: extraction_exact=54
@@ -191,7 +188,6 @@ Zero-match audit list:
 
 - [3918] Audit
 - [3921] ChainSecurity Audit
-- [3922] ChainSecurity Extended Audit
 - [3923] ChainSecurity Slipstream Audit
 - [3924] Sherlock Audit
 

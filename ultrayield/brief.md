@@ -1,14 +1,14 @@
 # Agentic Audit Brief: UltraYield
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 48.1% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 48.1% over 90 days
 
 ## Project Overview
 
 - Project: UltraYield (`ultrayield`)
 - Website: [https://ultrayield.app/](https://ultrayield.app/)
-- Lifecycle: unknown (Tier 0, 79.4% below peak)
-- Generated: 2026-05-31T14:53:59.138Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 79.4% below peak)
+- Generated: 2026-06-10T20:59:18.460Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, ethereum, linea, optimism, plasma
 - Contract surface: 4520 unique implementations (4520 raw deployments)
 - DeFi Llama TVL: $87,626,484.00
@@ -29,7 +29,7 @@
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

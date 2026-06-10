@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zerolend",
-  "generated_at": "2026-05-31T11:47:34.409Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:19.519Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "zerolend",
@@ -32,16 +32,16 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 579,
-    "total_addresses": 579,
-    "unique_implementations": 579,
-    "total_deployments": 579,
+    "total_contracts": 565,
+    "total_addresses": 565,
+    "unique_implementations": 565,
+    "total_deployments": 565,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 579,
+    "contracts_unverified": 565,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
@@ -76,6 +76,11 @@
     "project_purpose": null,
     "relationship_narrative": null,
     "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 565,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -550,37 +555,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "ZeroLend",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x227f86fbfccb5664403b62a5b6d4e0e593968275",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -984,37 +958,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x3e7d1eab13ad0104d2750b8863b489d65364e32d",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "ZeroLend",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x3e7d1eab13ad0104d2750b8863b489d65364e32d",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x424c0995114a614c12506d9a994d3ee140742f12",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -1325,37 +1268,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "ZeroLend",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x643a256fba667880c0fbdf2332652a83fd4b30e7",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -1433,37 +1345,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x68fd75cf5a91f49effad0e857ef2e97e5d1f35e7",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "ZeroLend",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2317,37 +2198,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x8fffffd4afb6115b954bd326cbe7b4ba576818f6",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "ZeroLend",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8fffffd4afb6115b954bd326cbe7b4ba576818f6",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x90a2c1f9a91bc1f9c8988d043e0e9dcbe38cbd47",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -2425,68 +2275,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x9c6f1367256be65ee744740c72ad80da5bc96ca6",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "ZeroLend",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "ZeroLend",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2673,37 +2461,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xad19a55354614913b373e01da768ab679ac4da41",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xaed0c38402a5d19df6e4c03f4e2dced6e29c1ee9",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "ZeroLend",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xaed0c38402a5d19df6e4c03f4e2dced6e29c1ee9",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2999,68 +2756,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "ZeroLend",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xbf5495efe5db9ce00f80364c8b423567e58d2110",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "ZeroLend",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xc364fd9637fe562a2d5a1cbc7d1ab7f32be900ef",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -3185,37 +2880,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "ZeroLend",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xd84e953a621bb9d81dc998e0b1482d2916153c23",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -3293,37 +2957,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xd9d920aa40f578ab794426f5c90f6c731d159def",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "ZeroLend",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -3510,68 +3143,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xef4a41e692319ae4aa596314d282b3f2a3830bed",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xf4030086522a5beea4988f8ca5b36dbc97bee88c",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "ZeroLend",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf4030086522a5beea4988f8ca5b36dbc97bee88c",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xf951e335afb289353dc249e82926178eac7ded78",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "ZeroLend",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf951e335afb289353dc249e82926178eac7ded78",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -18039,7 +17610,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 579
+    "needs_review": 565
   },
   "scope_matching_notes": {
     "match_method_counts": {},

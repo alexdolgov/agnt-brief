@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stargate-finance",
-  "generated_at": "2026-05-31T10:44:45.713Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.645Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stargate-finance",
@@ -91,6 +91,11 @@
     "project_purpose": "Stargate Finance is a cross-chain liquidity protocol that enables users to transfer native assets across multiple blockchains in a single transaction. It uses omnichain token pools and a unified liquidity model to provide instant guaranteed finality and deep liquidity for bridging.",
     "relationship_narrative": "Stargate V2 builds upon V1's cross-chain infrastructure, reusing concepts like routers and staking while introducing new pool contracts and messaging layers. Both versions share the STG token for governance and incentives, and V2 pools often interact with V1 components through migratable contracts and shared fee libraries.",
     "product_family_count": 15
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 294,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "helix-finance",
-  "generated_at": "2026-05-31T08:21:51.105Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:04.565Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "helix-finance",
     "tier": 0,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "HELIX Finance is a protocol for real-world asset (RWA) lending, enabling users to borrow and lend against tokenized real-world assets. It provides a factory for creating deal-specific lending agreements and manages deal tokens, configurations, and identity verification.",
+    "project_purpose": "Helix Finance is an institutional-grade RWAFi orchestration layer centered on Helix Hub, providing access to multi-strategy real-world-asset yield opportunities, omni-chain composability, attestations, and USHD/USHDx access. It connects on-chain investors to real-world asset yields using data and credit analytics while relying on off-chain RWA custody and related institutional infrastructure. The currently listed Ethereum contracts should be treated as a partial or legacy RWA lending/deal-management surface unless current Helix Hub and USHD/USHDx contract addresses are separately verified.",
     "relationship_narrative": "All contracts are part of a single product family deployed by the same deployer. The HelixFactory creates deal instances using implementations from HelixDealImplementationRepository, while HelixDealTokens handles tokenization, HelixUniqueIdentity manages KYC, and HelixConfig provides global settings.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 9,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -369,7 +374,7 @@
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
-      "impl_address": null,
+      "impl_address": "0x3e33865107d728336563c9a9d479173fcf61fc49",
       "impl_name": "TransparentUpgradeableProxy",
       "deployments": [
         {

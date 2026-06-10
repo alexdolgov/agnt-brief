@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "synthetix",
-  "generated_at": "2026-05-31T10:54:05.904Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:59:17.156Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "synthetix",
     "tier": 1,
@@ -71,9 +71,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Synthetix is a decentralized synthetic asset protocol that enables the creation and trading of on-chain derivatives, allowing users to gain exposure to real-world assets like currencies, commodities, and equities without holding the underlying assets.",
+    "project_purpose": "Synthetix is an active decentralized derivatives and liquidity protocol focused on perpetual futures markets, liquidity provision through Synthetix Liquidity Provider mechanisms, staking, and related margin and custody infrastructure. Its current product surface includes Synthetix Perps, SLP/liquidity provision, staking such as the 420 Pool, and V3 market contracts across supported networks. Legacy Synth and synthetic asset infrastructure may still exist historically, but it should not be treated as the primary description of the current protocol.",
     "relationship_narrative": "Synthetix V3 builds on the original v1+v2 system by replacing the monolithic issuer with a modular CoreRouter that can integrate legacy Synth tokens and new collateral types, while sharing the same proxy infrastructure for upgradeability.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 13,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

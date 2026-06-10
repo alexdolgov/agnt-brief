@@ -5,8 +5,8 @@
 - Project: VNX (`vnx`)
 - Website: [https://vnx.li](https://vnx.li)
 - Lifecycle: active (Tier 0, 55.9% below peak)
-- Generated: 2026-05-31T11:35:54.035Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:18.722Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, celo, ethereum, fraxtal, polygon
 - Contract surface: 10 unique implementations (90 raw deployments)
 - DeFi Llama TVL: $6,001,230.66
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-VNX is a protocol for tokenized real-world assets (RWAs), issuing stablecoins and digital representations of fiat currencies on multiple blockchains. It provides regulated, fiat-backed tokens that enable on-chain payments, trading, and settlement.
+VNX is a real-world asset tokenization project focused primarily on tokenized precious metals, especially VNX Gold (VNXAU), and also offers fiat-referenced tokens such as VEUR and VCHF where applicable. Its tokens are deployed across multiple blockchains for on-chain holding, payments, trading, and settlement.
 
 ### Architecture
 

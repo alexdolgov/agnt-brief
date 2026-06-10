@@ -7,8 +7,8 @@
 - Project: MORE Markets (`more-markets`)
 - Website: [https://www.more.markets](https://www.more.markets)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:00:21.981Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:07.799Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, ethereum
 - Contract surface: 21 unique implementations (25 raw deployments)
 - DeFi Llama TVL: $11,458,602.88
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-MORE Markets is a lending and onchain capital allocation protocol that enables users to deposit assets into vaults for yield generation and leverage. It integrates with external DeFi protocols like Aave, Curve, and Uniswap to optimize capital efficiency.
+MORE Markets should be described with its surfaces separated: DefiLlama currently lists MORE Markets as a Flow lending protocol with approximately $2.91M TVL at fetch time, while the current homepage presents MORE Vaults as non-custodial omnichain vault infrastructure for yield and capital allocation. The Flow lending TVL should not be attributed to the listed EVM vault/facet contracts unless an adapter or on-chain attribution proves that connection.
 
 ### Architecture
 

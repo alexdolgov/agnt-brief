@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bscswap",
-  "generated_at": "2026-05-23T18:37:34.389Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:01.138Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bscswap",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4999282.71915,
+    "dl_tvl_usd": 5010034.62573,
     "tvl_usd": 20269.765990580465,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "BSCSwap is a decentralized exchange (DEX) on BSC that enables trustless token swaps through automated market-making pools. It appears to be a Uniswap V2 fork, providing liquidity provision and trading functionality.",
+    "project_purpose": "BSCSwap is a BSC decentralized exchange/AMM, apparently based on a Uniswap V2-style model for token swaps and liquidity provision. Its reviewed surface should not be described as a single-core-contract, self-contained DEX only: the broader contract set includes multiple modules and product families such as factory/router-style DEX components, staking or pool contracts including BurnPool and DegenPool, LaunchField/IDO-related contracts, vault/strategy components, and other ancillary deployments. Scope should explicitly distinguish confirmed BSCSwap DEX/AMM contracts from non-DEX modules and any suspected contamination or excluded entries.",
     "relationship_narrative": "The project consists of a single product family with one core contract, indicating a simple, self-contained DEX architecture without shared infrastructure across multiple families.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 30,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

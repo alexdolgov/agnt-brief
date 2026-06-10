@@ -1,23 +1,23 @@
 # Agentic Audit Brief: LayerBank
 
-⚠️ Lifecycle status: DEAD - TVL dropped 1.5% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 1.5% over 90 days
 
 ## Project Overview
 
 - Project: LayerBank (`layerbank`)
 - Website: [https://layerbank.finance](https://layerbank.finance)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-22T14:23:30.647Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:06.880Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: linea, manta, mode, scroll
 - Contract surface: 91 unique implementations (216 raw deployments)
-- DeFi Llama TVL: $22,071,742.86
+- DeFi Llama TVL: $23,190,417.69
 - On-chain TVL (included contracts): $116,735.52
 - TVL by chain: Linea $116,735.52
 
 ## Project Description
 
-LayerBank is a decentralized lending protocol that allows users to supply and borrow crypto assets across multiple chains. It uses a pooled lending model where suppliers earn interest and borrowers can take out overcollateralized loans.
+LayerBank is a decentralized lending and money-market protocol that allows users to supply and borrow crypto assets across multiple chains using pooled liquidity, interest-bearing deposits, and overcollateralized loans. Its deployment surface includes chain-specific contracts and LABToken deployments or representations rather than a single shared on-chain LABToken address across all networks.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The protocol consists of a single product family with multiple Core contract ins
 - Latest audit: 2025-07 (fresh)
 - Staleness: 1 fresh, 1 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

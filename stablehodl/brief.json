@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stablehodl",
-  "generated_at": "2026-05-31T10:39:41.327Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.495Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stablehodl",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "StableHodl is a yield protocol that allows users to stake assets and earn returns through staking pools and OTC endpoints, deployed across BSC, Polygon, and Ethereum.",
+    "project_purpose": "StableHodl is a stablecoin yield product powered by HeLa Network. It focuses on USDT, USDC, and HLUSD deposits/staking and generates yield through funding-arbitrage-based strategies, with HLUSD-related rewards described in public data sources. The indexed contract surface includes ERC1967 proxy-based stake pool deployments across Ethereum, BSC, and Polygon, plus OTC endpoint proxy deployments on BSC and Polygon; those OTC endpoint contracts should be treated as recorded contract-surface components unless product documentation confirms they are user-facing yield endpoints.",
     "relationship_narrative": "Both families share the ERC1967Proxy infrastructure for upgradeability, with staking pools and OTC endpoints deployed as separate proxy instances pointing to distinct implementations, indicating a modular design where staking and OTC services may interact through shared token flows.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

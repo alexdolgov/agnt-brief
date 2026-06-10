@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hotcoin",
-  "generated_at": "2026-05-31T08:21:52.618Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.681Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hotcoin",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Hotcoin is a centralized exchange (CEX) that provides trading services for digital assets. The on-chain contract likely serves as a wallet or operational address for exchange-related activities on the Scroll network.",
-    "relationship_narrative": "Only one contract is identified, serving as the sole on-chain component for the exchange's operations on Scroll.",
+    "project_purpose": "Hotcoin is a centralized exchange (CEX) that provides trading services for digital assets. One unverified Scroll address is tracked; its role is unknown.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

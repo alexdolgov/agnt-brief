@@ -1,17 +1,17 @@
 # Agentic Audit Brief: Gyroscope Protocol
 
-⚠️ Lifecycle status: DEAD - TVL dropped 72.3% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 72.3% over 90 days
 
 ## Project Overview
 
 - Project: Gyroscope Protocol (`gyroscope-protocol`)
 - Website: [https://app.gyro.finance/](https://app.gyro.finance/)
-- Lifecycle: dead (Tier 0, 99.1% below peak)
-- Generated: 2026-05-24T17:19:53.401Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 0, 99.1% below peak)
+- Generated: 2026-06-10T20:59:04.437Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, ethereum, gnosis, optimism, polygon, polygon-zkevm, sei, sonic
 - Contract surface: 233 unique implementations (503 raw deployments)
-- DeFi Llama TVL: $1,808,656.59
+- DeFi Llama TVL: $500,181.80
 - On-chain TVL (included contracts): $44.59
 - TVL by chain: Ethereum $44.59
 
@@ -34,10 +34,10 @@ All contracts are part of a single integrated protocol. Pool factories create AM
 - Audits discovered: 10
 - Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2025-06 (fresh)
-- Staleness: 1 fresh, 3 aging, 6 stale, 0 unknown
+- Latest audit: 2025-06 (aging)
+- Staleness: 0 fresh, 3 aging, 7 stale, 0 unknown
 - Tier 1 coverage: 1.3% (Trail of Bits)
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -316,9 +316,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Security Review: Dynamic E-CLP](https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM_0526_Gyroscope-dynamic-eclp.pdf) | Nethermind | Audit | 2025-06 | fresh | Direct | contract_name | 11 | high |
+| [Security Review: Dynamic E-CLP](https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM_0526_Gyroscope-dynamic-eclp.pdf) | Nethermind | Audit | 2025-06 | aging | Direct | contract_name | 11 | high |
 | [Security Review: GYFI](https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM0440_GYFI_FINAL.pdf) | Nethermind | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
-| [Security Review: Bridges](https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM0255_GYROSCOPE%20_FINAL.pdf) | Nethermind | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
+| [Security Review: Bridges](https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM0255_GYROSCOPE%20_FINAL.pdf) | Nethermind | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
 | [Security Review: sGYD](https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM0264_GYRO_SGYD.pdf) | Nethermind | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
 | [Security Review: Protocol](https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM0094-GYROSCOPE-PROTOCOL-FINAL.pdf) | Nethermind | Audit | 2023-08 | stale | Direct | contract_name | 62 | high |
 | [Security Review: Governance](https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM0076-GYROSCOPE-GOVERNANCE-FINAL.pdf) | Nethermind | Audit | 2023-08 | stale | Direct | contract_name | 26 | high |

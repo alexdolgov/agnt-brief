@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "clearpool",
-  "generated_at": "2026-05-31T07:44:02.615Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.405Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "clearpool",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 5,
     "contracts_unverified": 35,
     "coverage_pct": 0,
-    "total_audits": 6,
+    "total_audits": 5,
     "scoreable_audits": 0,
     "dl_tvl_usd": 42176788,
     "tvl_usd": 10712.832282,
@@ -61,13 +61,18 @@
       "fresh": 0,
       "aging": 1,
       "stale": 2,
-      "unknown": 3
+      "unknown": 2
     }
   },
   "topography": {
-    "project_purpose": "Clearpool is a decentralized finance protocol that enables uncollateralized institutional lending and borrowing, primarily focused on real-world assets (RWA). It provides a marketplace where borrowers can access liquidity from lenders without posting collateral, using reputation and creditworthiness instead.",
+    "project_purpose": "Clearpool is a DeFi protocol for professionally managed on-chain credit, tokenization, and real-world-yield products. Its product lines include Clearpool Lending, which supports unsecured institutional borrowing and lending based on borrower creditworthiness, and Clearpool TPOOL/RWA structured-product vaults, which provide tokenized real-world yield exposure through managed on-chain products.",
     "relationship_narrative": "The Clearpool family provides the foundational lending infrastructure (pools, auctions, CPOOL token), while Clearpool Lending extends it with additional factory and model contracts. Clearpool Smart Contracts and TPOOL appear to be specialized or upgraded variants that share the same proxy-based upgradeability pattern and likely integrate with the core CPOOL token and governance.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 61,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -3502,27 +3507,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5810,
-      "audit_key": "audit-5810",
-      "report_name": "AUDIT_SCOPE.md",
-      "report_url": "https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/docs/AUDIT_SCOPE.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -3779,10 +3763,6 @@
       {
         "audit_id": 5809,
         "report_name": "spearbit-boring-vault-arctic-0.pdf"
-      },
-      {
-        "audit_id": 5810,
-        "report_name": "AUDIT_SCOPE.md"
       }
     ],
     "inherited_remapped_matches": []

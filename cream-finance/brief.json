@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "cream-finance",
-  "generated_at": "2026-05-24T18:55:43.317Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:01.541Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "cream-finance",
     "tier": 1,
@@ -32,29 +32,29 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 95,
-    "total_addresses": 619,
-    "unique_implementations": 95,
-    "total_deployments": 619,
+    "total_contracts": 94,
+    "total_addresses": 618,
+    "unique_implementations": 94,
+    "total_deployments": 618,
     "audited_contracts": 0,
-    "unaudited_contracts": 65,
+    "unaudited_contracts": 64,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 63,
+    "contracts_verified_unaudited": 62,
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 30,
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1684796,
-    "tvl_usd": 2280012092.243607,
+    "dl_tvl_usd": 1657586,
+    "tvl_usd": 2280006585.945687,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "arbitrum": 2093.33,
       "bsc": 220410132.58,
-      "ethereum": 2059574950.42,
+      "ethereum": 2059569444.12,
       "polygon": 24915.91
     },
-    "asd_usd": 2280012092.243607,
+    "asd_usd": 2280006585.945687,
     "website_url": "https://cream.finance/",
     "chains": [
       "arbitrum",
@@ -77,6 +77,11 @@
     "project_purpose": "CREAM Finance is a decentralized lending protocol that allows users to supply and borrow a wide range of cryptocurrencies across multiple blockchains. It also includes a decentralized exchange (CreamSwap) and a liquid staking derivative (CRETH2) for Ethereum 2.0 staking.",
     "relationship_narrative": "The lending family uses Unitroller/Comptroller as the central risk management and interest rate model, with crToken contracts representing user positions. CreamSwap and CRETH2 operate independently but share the CREAM token for incentives and governance, while the Long-term CREAM Staking contracts lock CREAM tokens to support the ecosystem.",
     "product_family_count": 9
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 94,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -2410,37 +2415,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x00000000219ab540356cbb839cbe05303d7705fa",
-      "name": "DepositContract",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "ethereum",
-      "product_line": "CRETH2",
-      "tvl_usd": 5506.2979204456415,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DepositContract",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x00000000219ab540356cbb839cbe05303d7705fa",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 5506.2979204456415,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 42161,
@@ -8354,7 +8328,7 @@
   ],
   "origin_summary": {
     "native": 78,
-    "upstream": 3,
+    "upstream": 2,
     "standard_library": 2,
     "needs_review": 12
   },

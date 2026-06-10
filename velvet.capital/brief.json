@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "velvet.capital",
-  "generated_at": "2026-05-24T23:13:59.933Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:18.555Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "velvet.capital",
@@ -45,7 +45,7 @@
     "coverage_pct": 77.8,
     "total_audits": 13,
     "scoreable_audits": 13,
-    "dl_tvl_usd": 1435978,
+    "dl_tvl_usd": 1426218,
     "tvl_usd": 95216575.46552895,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -68,8 +68,8 @@
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 1,
-      "aging": 4,
-      "stale": 7,
+      "aging": 2,
+      "stale": 9,
       "unknown": 1
     }
   },
@@ -77,6 +77,11 @@
     "project_purpose": "Velvet.Capital is a DeFi protocol that enables users to create and manage tokenized portfolios (indexes) and yield-generating vaults. It provides infrastructure for automated portfolio rebalancing and yield optimization across multiple chains.",
     "relationship_narrative": "Both families share infrastructure such as ProtocolConfig and TokenRegistry contracts, and use ERC1967Proxy for upgradeability. VelvetToken from V2 may be used within V3 portfolios, linking the two versions.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 420,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -119,13 +124,13 @@
       "chain_name": "base",
       "address": "0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92",
       "name": "VaultProxy",
-      "role": "core_logic",
+      "role": "proxy",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Velvet V3",
       "tvl_usd": 6.0965136195178635,
       "is_proxy": false,
-      "impl_address": null,
+      "impl_address": "0x90188fed247002e81dac2bc74f547c5e4f703c5d",
       "impl_name": "VaultProxy",
       "deployments": [
         {
@@ -15061,7 +15066,7 @@
       "report_url": "https://github.com/Velvet-Capital/audits/blob/main/Audit_Report_VLVT-V3C_FINAL_20-1.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -15104,7 +15109,7 @@
       "report_url": "https://github.com/Velvet-Capital/audits/blob/main/Audit_Report_VLVT-V3C_FINAL_20.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -15592,7 +15597,7 @@
       "chain_name": "base",
       "address": "0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92",
       "name": "VaultProxy",
-      "role": "core_logic",
+      "role": "proxy",
       "origin_kind": "native",
       "tvl_usd": 6.0965136195178635,
       "risk_note": "Verified native implementation with $6.10 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"

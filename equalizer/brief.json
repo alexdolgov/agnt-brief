@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "equalizer",
-  "generated_at": "2026-05-31T07:56:27.836Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:02.256Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "equalizer",
@@ -70,9 +70,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Equalizer is a decentralized exchange and derivatives protocol operating across Sonic, Base, and Fantom. It provides automated market making, concentrated liquidity, and a ve(3,3) tokenomics system for liquidity incentives and governance.",
+    "project_purpose": "Equalizer is a decentralized exchange/AMM operating across Sonic, Base, and Fantom. It supports stable and volatile liquidity pools, vote-escrowed EQUAL/ve(3,3) incentive mechanics, liquidity incentives, bribes and fee distribution, and concentrated-liquidity deployments where supported by the deployed contract surface.",
     "relationship_narrative": "The THICK and 2THICK families provide the AMM layer, while the Scale and Deployed Contract Addresses families implement the ve(3,3) tokenomics. The EQUAL token and VotingEscrow from the ve(3,3) families govern emissions directed to liquidity pools created by the PairFactory, with routers bridging user swaps across both layers.",
     "product_family_count": 7
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 292,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1907,7 +1912,7 @@
       "chain_name": "base",
       "address": "0x2b52294425a9a229322228de659ede9d146d7c2f",
       "name": "NonfungiblePositionManager",
-      "role": "governance",
+      "role": "operational_periphery",
       "origin_kind": "upstream",
       "origin_provider": "Uniswap",
       "product_line": "(Legacy) Thick V1",

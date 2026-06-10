@@ -5,17 +5,17 @@
 - Project: hemiBTC (`hemibtc`)
 - Website: [https://app.hemi.xyz/en/tunnel/](https://app.hemi.xyz/en/tunnel/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-22T20:43:10.587Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:04.580Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc, ethereum, optimism
-- Contract surface: 47 unique implementations (99 raw deployments)
-- DeFi Llama TVL: $15,091,882.20
+- Contract surface: 46 unique implementations (98 raw deployments)
+- DeFi Llama TVL: $14,847,047.28
 - On-chain TVL (included contracts): $46,198.57
 - TVL by chain: Optimism $46,198.57
 
 ## Project Description
 
-HemiBTC is a cross-chain bridge protocol that enables the transfer of BTC and other assets between Ethereum, Optimism, BSC, and the Hemi L2 network. It leverages the OP Stack for its L2 infrastructure and includes governance, token minting, and oracle components.
+hemiBTC is Hemi's native BTC representation and Bitcoin tunnel bridge, focused on representing and moving BTC in connection with Hemi. It should not be described as the broader Hemi protocol, the HEMI token, veHEMI governance, BSC/OFT deployments, oracle infrastructure, or generic OP Stack infrastructure unless those components are independently verified as part of the hemiBTC bridge product.
 
 ### Architecture
 
@@ -23,32 +23,28 @@ The L1 and L2 families are tightly coupled through the OP Stack bridge: L1 contr
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/37 (2.7%)
+- Verified implementations audited: 0/36 (0.0%)
 - Verified + Unaudited implementations: 36
 - Verified by bytecode match: 0
 - Unverified implementations: 10
-- Unique implementations: 47
-- Raw deployments: 99
-- Audits discovered: 5
-- Scoreable audits (matched contracts): 2
+- Unique implementations: 46
+- Raw deployments: 98
+- Audits discovered: 2
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $46,198.57
 - Latest audit: 2025-10 (fresh)
-- Staleness: 2 fresh, 3 aging, 0 stale, 0 unknown
+- Staleness: 1 fresh, 1 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 2.7% | 2025-10 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (1)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Hemi | unknown | ethereum | [`0xeb964a...4f484d`](./contracts/ethereum-1/0xeb964a1a6fab73b8c72a0d15c7337fa4804f484d/) | ✅ Audited |
+- None
 
 ### ⚠️ Verified + Unaudited (36)
 
@@ -126,9 +122,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [Audit_Report_HEMI-PRO_FINAL_22.pdf](https://github.com/hemilabs/audit-reports/blob/master/Bitcoin_Tunnel/Audit_Report_HEMI-PRO_FINAL_22.pdf) | HEMI-PRO | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
 | [Quantstamp - BTC Tunnel - FinalReport (1).pdf](https://github.com/hemilabs/audit-reports/blob/master/Bitcoin_Tunnel/Quantstamp%20-%20BTC%20Tunnel%20-%20FinalReport%20(1).pdf) | Quantstamp | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
-| [Audit_Report_HEMI-TOK_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/Audit_Report_HEMI-TOK_FINAL_21.pdf) | unknown | Audit | 2025-04 | aging | Direct | contract_name | 1 | high |
-| [HemiToken - Final Report.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/HemiToken%20-%20Final%20Report.pdf) | unknown | Audit | 2025-04 | aging | Direct | contract_name | 1 | high |
-| [Audit_Report_HEMI-VOT_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/veHEMI/Audit_Report_HEMI-VOT_FINAL_21.pdf) | unknown | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -160,7 +153,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 25 |
+| native | 24 |
 | upstream | 2 |
 | standard_library | 2 |
 | needs_review | 18 |
@@ -169,15 +162,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=2
+- Extraction confidence breakdown: n/a
+- Match method counts: n/a
 
 Zero-match audit list:
 
 - [1971] Audit_Report_HEMI-PRO_FINAL_22.pdf
 - [1972] Quantstamp - BTC Tunnel - FinalReport (1).pdf
-- [1975] Audit_Report_HEMI-VOT_FINAL_21.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sparkdex",
-  "generated_at": "2026-05-22T09:10:17.655Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.280Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -17,10 +17,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 9,
+    "total_audits": 8,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 29429757,
-    "tvl_usd": 29429757,
+    "dl_tvl_usd": 29407095,
+    "tvl_usd": 29407095,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -34,13 +34,18 @@
       "fresh": 0,
       "aging": 3,
       "stale": 1,
-      "unknown": 5
+      "unknown": 4
     }
   },
   "topography": {
-    "project_purpose": "SparkDEX is a multi-product DeFi protocol offering derivatives trading, liquid staking, and decentralized exchange services. It enables users to trade perpetual contracts, stake assets for liquid staking tokens, and swap tokens across multiple versions of its DEX.",
-    "relationship_narrative": "The product families share the SparkDEX brand and likely share governance and fee mechanisms, though no specific shared infrastructure contracts are identified in the provided inventory.",
+    "project_purpose": "SparkDEX is a DeFi protocol on Flare offering decentralized exchange services, swaps, liquidity provision, FLR staking, rewards, and perpetuals trading with up to 50x leverage.",
+    "relationship_narrative": null,
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -120,27 +125,6 @@
       "audit_type": "audit",
       "freshness": "aging",
       "date": "2025",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1809,
-      "audit_key": "audit-1809",
-      "report_name": "{% embed url=\"<>\" %}",
-      "report_url": "https://drive.google.com/file/d/1RaN7hV1-gTHCs7DLkgZVP9Y4jTzJidBh/view?usp=sharing",
-      "auditor": "Protofire",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -266,10 +250,6 @@
       },
       {
         "audit_id": 1808,
-        "report_name": "{% embed url=\"<>\" %}"
-      },
-      {
-        "audit_id": 1809,
         "report_name": "{% embed url=\"<>\" %}"
       },
       {

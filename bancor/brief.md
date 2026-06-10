@@ -7,17 +7,17 @@
 - Project: Bancor (`bancor`)
 - Website: [https://app.bancor.network/](https://app.bancor.network/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-26T19:56:50.596Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:58:58.055Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 121 unique implementations (420 raw deployments)
+- Contract surface: 121 unique implementations (403 raw deployments)
 - DeFi Llama TVL: $30,330,543.00
 - On-chain TVL (included contracts): $48,835,760.13
 - TVL by chain: Ethereum $48,835,760.13
 
 ## Project Description
 
-Bancor is a decentralized exchange protocol that enables automated token swaps and single-sided liquidity provision using its BNT token as an intermediary. It offers impermanent loss protection and rewards for liquidity providers through a system of pools, vaults, and governance mechanisms.
+Bancor is a decentralized exchange protocol historically associated with automated token swaps and single-sided liquidity provision using BNT as an intermediary across Bancor V2.1 and Bancor V3. Current public access to the Bancor homepage/app should be treated as restricted or not independently verified; claims about current impermanent loss protection or liquidity provider rewards should be made only when supported by current documentation or data sources such as DefiLlama.
 
 ### Architecture
 
@@ -30,7 +30,7 @@ The Bancor V2.1 family relies on the Tokens family for BNT and pool tokens, whil
 - Verified by bytecode match: 0
 - Unverified implementations: 40
 - Unique implementations: 121
-- Raw deployments: 420
+- Raw deployments: 403
 - Audits discovered: 4
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): $43,785,920.36
@@ -98,10 +98,10 @@ The Bancor V2.1 family relies on the Tokens family for BNT and pool tokens, whil
 | BancorQuickConverter | unknown | ethereum | 2 deployments: ethereum [`0xcf1cc6...49139b`](./contracts/ethereum-1/0xcf1cc6ed5b653def7417e3fa93992c3ffe49139b/); ethereum `0xf87a7e...dd38b1` | ⚠️ Unaudited |
 | BancorX | unknown | ethereum | 6 deployments: ethereum [`0x39198f...e321f3`](./contracts/ethereum-1/0x39198fd6a016e0fb17370b58916801d59fe321f3/); ethereum `0x3fdf3b...c83749`; ethereum `0x57928a...8f1f73`; ethereum `0xc326d5...754816`; ethereum `0xe7abef...da1bde`; ethereum `0xeddf6e...eda30b` | ⚠️ Unaudited |
 | BancorXHelper | periphery | ethereum | [`0x984384...b5ba4b`](./contracts/ethereum-1/0x984384e2bc5ee14260c7dbbe77fa788da4b5ba4b/) | ⚠️ Unaudited |
-| CarbonBatcher | periphery | ethereum | 2 deployments: ethereum [`0x0199f3...4b7d4e`](./contracts/ethereum-1/0x0199f3a6c4b192b9f9c3ebe31fbc535cdd4b7d4e/); ethereum `0x70ab82...25842a` | ⚠️ Unaudited |
-| CarbonController | governance | ethereum | 8 deployments: ethereum [`0x16b9b6...79d72d`](./contracts/ethereum-1/0x16b9b6f8d2077db1032531f0e1f6019d2679d72d/); ethereum `0x1a3122...c218cf`; ethereum `0x1e0804...32bf2c`; ethereum `0x21f02a...c086ee`; ethereum `0x5ec3b3...4e5b20`; ethereum `0x6db6ee...8b12c1`; ethereum `0xc537e8...ea45e1`; ethereum `0xd59bca...063ff8` | ⚠️ Unaudited |
-| CarbonPOL | unknown | ethereum | 3 deployments: ethereum [`0x779b3b...4ab123`](./contracts/ethereum-1/0x779b3bea233ebc5947c5ff0ffd7f4f90654ab123/); ethereum `0x945ac6...287105`; ethereum `0xd06146...2bef46` | ⚠️ Unaudited |
-| CarbonVortex | unknown | ethereum | 7 deployments: ethereum [`0x2c0fa8...923502`](./contracts/ethereum-1/0x2c0fa8b5c3a26ae8f014efb50ff27d95dd923502/); ethereum `0x55effb...f472ad`; ethereum `0x676b91...ce95c0`; ethereum `0x727170...f0fb9e`; ethereum `0xba7d15...3c8f84`; ethereum `0xd053dc...d79801`; ethereum `0xd241a7...be23ca` | ⚠️ Unaudited |
+| CarbonBatcher | periphery | ethereum | [`0x0199f3...4b7d4e`](./contracts/ethereum-1/0x0199f3a6c4b192b9f9c3ebe31fbc535cdd4b7d4e/) | ⚠️ Unaudited |
+| CarbonController | governance | ethereum | [`0xc537e8...ea45e1`](./contracts/ethereum-1/0xc537e898cd774e2dcba3b14ea6f34c93d5ea45e1/) | ⚠️ Unaudited |
+| CarbonPOL | unknown | ethereum | [`0xd06146...2bef46`](./contracts/ethereum-1/0xd06146d292f9651c1d7cf54a3162791dfc2bef46/) | ⚠️ Unaudited |
+| CarbonVortex | unknown | ethereum | 2 deployments: ethereum [`0xba7d15...3c8f84`](./contracts/ethereum-1/0xba7d1581db6248dc9177466a328bf457703c8f84/); ethereum `0xd053dc...d79801` | ⚠️ Unaudited |
 | CheckpointStore | unknown | ethereum | [`0xf8a2fb...b87b32`](./contracts/ethereum-1/0xf8a2fb650e25a26ce839d64be8a0abbcb0b87b32/) | ⚠️ Unaudited |
 | ContractFeatures | unknown | ethereum | [`0x563172...6ce699`](./contracts/ethereum-1/0x563172281800b139f69fb038cc2c08cad56ce699/) | ⚠️ Unaudited |
 | ContractRegistry | registry | ethereum | 5 deployments: ethereum [`0x7148b1...e395e6`](./contracts/ethereum-1/0x7148b1c9154bcf273a2c7d7b90e3edc6fee395e6/); ethereum `0x95fee9...91553b`; ethereum `0xa3bf8e...718e6a`; ethereum `0xc74be0...49d0a4`; ethereum `0xd19970...8738b3` | ⚠️ Unaudited |
@@ -137,7 +137,7 @@ The Bancor V2.1 family relies on the Tokens family for BNT and pool tokens, whil
 | StandardPoolConverterFactory | registry | ethereum | 2 deployments: ethereum [`0xbc4a79...8126e6`](./contracts/ethereum-1/0xbc4a79787d3dafcb781a1e4ff914204db38126e6/); ethereum `0xdbc3c6...8fa9f2` | ⚠️ Unaudited |
 | TokenGovernance | token | ethereum | 4 deployments: ethereum [`0x0887ae...f20113`](./contracts/ethereum-1/0x0887ae1251e180d7d453aedebee26e1639f20113/); ethereum `0x43ec4d...8aca35`; ethereum `0xa489c2...afc244`; ethereum `0xce1462...07ef94` | ⚠️ Unaudited |
 | VortexBurner | unknown | ethereum | [`0x8843f6...976748`](./contracts/ethereum-1/0x8843f65f11b2367bb05a6e120c44780088976748/) | ⚠️ Unaudited |
-| Voucher | unknown | ethereum | 3 deployments: ethereum [`0x3660f0...8f554e`](./contracts/ethereum-1/0x3660f04b79751e31128f6378eac70807e38f554e/); ethereum `0x460cb0...109d0a`; ethereum `0xc6b2f9...953997` | ⚠️ Unaudited |
+| Voucher | unknown | ethereum | [`0x3660f0...8f554e`](./contracts/ethereum-1/0x3660f04b79751e31128f6378eac70807e38f554e/) | ⚠️ Unaudited |
 | Whitelist | unknown | ethereum | [`0xc5b87c...3124fe`](./contracts/ethereum-1/0xc5b87c4b8e25f863935722a9767658102d3124fe/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -234,9 +234,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xcf1cc6...49139b`](./contracts/ethereum-1/0xcf1cc6ed5b653def7417e3fa93992c3ffe49139b/) | BancorQuickConverter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x39198f...e321f3`](./contracts/ethereum-1/0x39198fd6a016e0fb17370b58916801d59fe321f3/) | BancorX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x984384...b5ba4b`](./contracts/ethereum-1/0x984384e2bc5ee14260c7dbbe77fa788da4b5ba4b/) | BancorXHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x16b9b6...79d72d`](./contracts/ethereum-1/0x16b9b6f8d2077db1032531f0e1f6019d2679d72d/) | CarbonController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x779b3b...4ab123`](./contracts/ethereum-1/0x779b3bea233ebc5947c5ff0ffd7f4f90654ab123/) | CarbonPOL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2c0fa8...923502`](./contracts/ethereum-1/0x2c0fa8b5c3a26ae8f014efb50ff27d95dd923502/) | CarbonVortex | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf8a2fb...b87b32`](./contracts/ethereum-1/0xf8a2fb650e25a26ce839d64be8a0abbcb0b87b32/) | CheckpointStore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x563172...6ce699`](./contracts/ethereum-1/0x563172281800b139f69fb038cc2c08cad56ce699/) | ContractFeatures | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7148b1...e395e6`](./contracts/ethereum-1/0x7148b1c9154bcf273a2c7d7b90e3edc6fee395e6/) | ContractRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -275,9 +272,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 97 |
+| native | 94 |
 | upstream | 0 |
-| standard_library | 13 |
+| standard_library | 16 |
 | needs_review | 11 |
 
 ## Scope Matching Notes

@@ -5,21 +5,22 @@
 - Project: Swappi (`swappi`)
 - Website: [https://app.swappi.io](https://app.swappi.io)
 - Lifecycle: unknown
-- Generated: 2026-05-24T15:47:11.328Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:16.873Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,963,061.78
+- DeFi Llama TVL: $1,884,776.50
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Swappi is a decentralized exchange (DEX) protocol that enables users to swap tokens and provide liquidity in automated market maker (AMM) pools. It appears to be based on the Uniswap V2 model, facilitating permissionless token trading and yield generation for liquidity providers.
-
-### Architecture
-
-No contract inventory or structural relationships were provided, so no shared infrastructure or dependencies can be described.
+Swappi is an AMM-based decentralized exchange (DEX) deployed on Conflux Network. It enables users to swap tokens and provide liquidity in automated market maker pools, appears to be based on the Uniswap V2 model, and facilitates permissionless token trading and yield generation for liquidity providers.
 
 ## Audit Coverage Summary
 

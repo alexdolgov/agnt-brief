@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zircuit-finance",
-  "generated_at": "2026-05-31T11:46:25.628Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:19.530Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "zircuit-finance",
@@ -22,27 +22,27 @@
     "drop_from_peak_pct": 7.155690458670591
   },
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 10,
-    "unique_implementations": 3,
-    "total_deployments": 10,
+    "total_contracts": 2,
+    "total_addresses": 7,
+    "unique_implementations": 2,
+    "total_deployments": 7,
     "audited_contracts": 0,
-    "unaudited_contracts": 3,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 3,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 1513608.9311499998,
-    "tvl_usd": 180117388.6817024,
+    "tvl_usd": 1513066.4390699998,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "base": 180117340.36,
+      "base": 1513018.12,
       "ethereum": 48.32
     },
-    "asd_usd": 180117388.6817024,
+    "asd_usd": 1513066.4390699998,
     "website_url": "https://finance.zircuit.com/",
     "chains": [
       "base",
@@ -60,64 +60,20 @@
     }
   },
   "topography": {
-    "project_purpose": "Zircuit Finance is a yield optimization protocol that aggregates lending and liquidity strategies across multiple chains. It uses tokenized vaults and strategy managers to automate yield generation for users.",
+    "project_purpose": "Zircuit Finance is an institutional-grade onchain yield/vault platform for stablecoin deposits, currently showing USDC/USDT strategies such as Monarq and Morpho on Ethereum and Base.",
     "relationship_narrative": "All contracts belong to a single product family sharing the TokenizedStrategy implementation for lenders and ATokenInstance for yield-bearing tokens. StrategyManager contracts coordinate across lenders, while proxies provide upgradeability.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x23878914efe38d27c4d67ab83ed1b93a74d4086a",
-      "name": "ATokenInstance",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "Aave",
-      "product_line": "Zircuit Finance",
-      "tvl_usd": 178604322.2426324,
-      "is_proxy": true,
-      "impl_address": "0xadc45df3cf1584624c97338bef33363bf5b97ada",
-      "impl_name": "ATokenInstance",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x23878914efe38d27c4d67ab83ed1b93a74d4086a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x4e65fe4dba92790696d040ac24aa414708f5c0ab",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 178604322.2426324,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 8453,
       "chain_name": "base",
@@ -242,7 +198,7 @@
   ],
   "origin_summary": {
     "native": 1,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 1,
     "needs_review": 0
   },

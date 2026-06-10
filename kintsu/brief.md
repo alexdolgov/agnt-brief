@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Kintsu
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 43.8% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 43.8% over 90 days
 
 ## Project Overview
 
 - Project: Kintsu (`kintsu`)
 - Website: [https://kintsu.xyz/](https://kintsu.xyz/)
-- Lifecycle: unknown (Tier 0, 60.2% below peak)
-- Generated: 2026-05-24T10:22:51.490Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 0, 60.2% below peak)
+- Generated: 2026-06-10T20:59:06.701Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: hyperliquid
 - Contract surface: 12 unique implementations (12 raw deployments)
-- DeFi Llama TVL: $2,691,031.58
+- DeFi Llama TVL: $2,345,149.42
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Kintsu is a liquid staking protocol on HyperEVM that allows users to stake tokens and receive liquid staking derivatives, enabling them to earn staking rewards while maintaining liquidity.
+Kintsu is a composable liquid staking protocol centered on Monad, where users stake MON to receive liquid staking tokens such as sMON/superMON while maintaining liquidity. The protocol includes DAO-governed validator delegation and may also have a smaller Hyperliquid L1 component where applicable.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The Mainnet family uses a proxy pointing to the Kintsu family's implementation c
 - Latest audit: 2025-11 (fresh)
 - Staleness: 4 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

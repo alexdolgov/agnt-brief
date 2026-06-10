@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "cozy-finance",
-  "generated_at": "2026-05-24T12:18:52.145Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:01.518Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "cozy-finance",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 5,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2285709,
-    "tvl_usd": 2285709,
+    "dl_tvl_usd": 2295123,
+    "tvl_usd": 2295123,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Cozy Finance is a decentralized insurance protocol that allows users to create and manage protection markets for on-chain risks. It enables depositors to earn yield by providing capital to cover specific risks, while protection seekers can purchase coverage against events like smart contract exploits or oracle failures.",
+    "project_purpose": "Cozy Finance is a DeFi safety stack for managing and underwriting on-chain risk. The protocol includes protection markets as well as Tranche, Reserve, Earn, and Safety Module components that let users provide capital, earn yield, and support coverage or risk-management mechanisms across supported deployments.",
     "relationship_narrative": "The Core Protocol relies on Model Factories and Trigger Factories to deploy the pricing models and payout triggers that parameterize each protection market. The Metadata Registry provides descriptive information for markets created by the Core Protocol, ensuring a consistent user experience across the system.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 48,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

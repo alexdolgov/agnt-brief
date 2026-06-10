@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "neopin",
-  "generated_at": "2026-05-27T17:49:57.277Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-06-10T20:59:08.064Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "neopin",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "NEOPIN is a DeFi protocol offering liquid staking, staking pools, and decentralized exchange services across Ethereum, Polygon, and Klaytn. It enables users to stake assets, receive liquid staking tokens, and participate in liquidity pools.",
+    "project_purpose": "NEOPIN is the legacy CeDeFi/DeFi product associated with staking, liquid staking, DEX swap, and farm services historically deployed across Ethereum, Polygon, and Klaytn/Kaia. The current public homepage is branded as Mayflower and positions the project around an AI guide for navigating crypto, with emphasis on a Solana launch, so the current identity should not be described primarily as a liquid-staking or DEX homepage. Contract and chain coverage should be refreshed to distinguish legacy NEOPIN deployments from current Mayflower/Solana positioning and current DefiLlama-reported Kaia, Tron, and staking surfaces.",
     "relationship_narrative": "The product families share a common deployer cluster, indicating unified governance and potential token flows between liquid staking tokens and pool/staking contracts. Proxies are used across families for upgradeability, suggesting a shared infrastructure pattern.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 100,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

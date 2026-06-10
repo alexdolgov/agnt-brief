@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "dforce",
-  "generated_at": "2026-05-31T07:52:57.986Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.900Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "dforce",
@@ -32,19 +32,19 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 450,
-    "total_addresses": 1011,
-    "unique_implementations": 450,
-    "total_deployments": 1011,
-    "audited_contracts": 4,
-    "unaudited_contracts": 106,
-    "contracts_verified_audited": 4,
-    "contracts_verified_unaudited": 95,
+    "total_contracts": 449,
+    "total_addresses": 1004,
+    "unique_implementations": 449,
+    "total_deployments": 1004,
+    "audited_contracts": 0,
+    "unaudited_contracts": 109,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 98,
     "contracts_verified_by_bytecode": 11,
     "contracts_unverified": 340,
-    "coverage_pct": 3.6,
-    "total_audits": 3,
-    "scoreable_audits": 1,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 12480361,
     "tvl_usd": 3605459.701459337,
     "tvl_source": "on_chain",
@@ -74,13 +74,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 3
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "dForce is a decentralized finance protocol offering lending, borrowing, and yield aggregation services across multiple blockchains. It provides users with interest-bearing tokens (iTokens) for deposits, stablecoin minting, and governance through its DF token.",
+    "project_purpose": "dForce is a multi-chain DeFi protocol family spanning lending and borrowing markets, stablecoin-related products, yield and liquidity services, and trading/bridge components governed by the DF token. Current parent-level scope should be explicit about whether it includes child/product-family surfaces such as Unitus and MaxShot, as well as deployments beyond the legacy dForce lending surface including Conflux, Base, Plasma, and other supported chains. If using parent-level DefiLlama data as ground truth, the brief should also reflect dForce's current DeFAI/AI-agent positioning rather than describing it only as legacy lending, borrowing, and yield aggregation.",
     "relationship_narrative": "The dForce and dForce Lending families share similar lending logic and token standards (iToken, DToken, MSD) but represent different versions or deployments. The Contracts family provides governance and staking for the DF token, which likely controls parameters across lending markets, while MaxShot yield vaults may utilize lending market tokens for yield strategies.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 449,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1659,91 +1664,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x0d535ca4c27f0c25a20e2d474ee3e99c1316bafe",
-      "name": "AggregatorProxy",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Chainlink",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AggregatorProxy",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5a8b3b8b381e735042cc6e7cd925268f9a593b01",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xc9d1cbc45dd3e86e98067b7eb279c13f7b77c627",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xd7a23be4c0ded90f99e1974ffe7e1113246fca38",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x7d25d250fbd63b0dac4a38c661075930c9a87aea",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x0d535ca4c27f0c25a20e2d474ee3e99c1316bafe",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x40be37096ce3b8a2e9ec002468ab91071501c499",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x7da545b2ac13bb89d430e0ee91452f0479fd49a5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x9b0fd221c2682a8990b41140a88fdac2f17c7e27",
@@ -2380,16 +2300,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-6952"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -2542,16 +2460,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-6952"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -2575,16 +2491,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-6952"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -2608,7 +2522,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -2617,16 +2531,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-6952"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -19095,90 +19007,8 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 6952,
-      "audit_key": "audit-6952",
-      "report_name": "How_to_integrate_with_USDx.pdf",
-      "report_url": "https://github.com/dforce-network/USDx_1.0/blob/master/docs/How_to_integrate_with_USDx.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "DF",
-        "DFEngine",
-        "DFPool",
-        "DFProtocol",
-        "DFProtocolView",
-        "PAX",
-        "TUSD",
-        "USDC",
-        "USDx"
-      ],
-      "matched_contracts": 5,
-      "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6953,
-      "audit_key": "audit-6953",
-      "report_name": "dip001_design.pdf",
-      "report_url": "https://github.com/dforce-network/DIP001/blob/master/docs/dip001_design.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6958,
-      "audit_key": "audit-6958",
-      "report_name": "report.md",
-      "report_url": "https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/report.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
-  "auditor_coverage": [
-    {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 4,
-      "coverage_pct": 3.6,
-      "latest_audit": null
-    }
-  ],
+  "audits": [],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -19313,6 +19143,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x8dc753d30b9f9f86dac3380e37d5bc03d6b60202",
+      "name": "DFEngine",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x071b49f6a26ffa31f67e833d3dfec500cc4613d5",
       "name": "DFEngineV2",
       "role": "unknown",
@@ -19336,6 +19176,36 @@
       "address": "0x10a49c54babef0d39f5531f0d1a5d98fbe219c08",
       "name": "DForceLendingHandler",
       "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x786bf554473f9ab733fd683c528212492a23d895",
+      "name": "DFPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5843f1ccc5baa448528eb0e8bc567cda7ed1a1e8",
+      "name": "DFProtocol",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x097dd22173f0e382dae42baaeb9bdbc9fdf3396f",
+      "name": "DFProtocolView",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -19953,29 +19823,16 @@
   ],
   "origin_summary": {
     "native": 210,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 9,
     "needs_review": 230
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 5
-    },
-    "extraction_confidence_counts": {
-      "medium": 1
-    },
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 6953,
-        "report_name": "dip001_design.pdf"
-      },
-      {
-        "audit_id": 6958,
-        "report_name": "report.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -5,8 +5,8 @@
 - Project: Rysk Finance (`rysk-finance`)
 - Website: [https://app.rysk.finance/join?code=DEFILLAMA](https://app.rysk.finance/join?code=DEFILLAMA)
 - Lifecycle: active (Tier 0, 17% below peak)
-- Generated: 2026-05-31T10:29:32.952Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:12.187Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum, hyperliquid
 - Contract surface: 186 unique implementations (770 raw deployments)
 - DeFi Llama TVL: $57,743,924.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Rysk Finance is a decentralized options and yield protocol that enables users to trade options, provide liquidity, and earn yield across multiple chains. It offers structured products like vaults and liquidity pools, with components for hedging and market making.
+Rysk Finance is a DeFi protocol currently positioned around earning upfront yield or premium on crypto assets, described by DefiLlama as providing crypto uncorrelated returns. Its deployed contract surface includes options-related components such as Otoken contracts, MarginPool-style contracts, LiquidityPool deployments, and related registry or infrastructure components, rather than a single shared MarginPool across all product families.
 
 ### Architecture
 

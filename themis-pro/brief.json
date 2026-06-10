@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "themis-pro",
-  "generated_at": "2026-05-25T04:50:09.875Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:17.495Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1164359,
-    "tvl_usd": 1164359,
+    "dl_tvl_usd": 1164180,
+    "tvl_usd": 1164180,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Themis Pro is a decentralized exchange and liquid staking protocol that also functions as a reserve currency system. It enables users to trade assets, stake tokens to earn yield, and participate in a protocol-owned liquidity model.",
-    "relationship_narrative": "The product families share a common token and treasury infrastructure, with the reserve currency underpinning liquidity incentives for the exchange and staking derivatives feeding back into the reserve system.",
+    "project_purpose": "Themis Pro is part of Themis Protocol, a DeFi protocol on Filecoin Virtual Machine (FVM) with products including Themis Pro, Themis Swap, Themis Pool, and Themis Stablecoin. Available evidence supports describing it as part of Themis Protocol's FVM DeFi portfolio, but does not substantiate claims that Themis Pro is itself a reserve currency system or uses a protocol-owned liquidity model.",
+    "relationship_narrative": null,
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

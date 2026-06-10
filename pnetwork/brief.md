@@ -7,8 +7,8 @@
 - Project: pNetwork (`pnetwork`)
 - Website: [https://p.network](https://p.network)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:15:36.676Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:09.349Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, gnosis, polygon
 - Contract surface: 10 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $13,099,805.90
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-pNetwork is a cross-chain bridge protocol that enables the transfer of assets between different blockchains. It also provides yield farming and staking mechanisms through various vaults and reward contracts.
+pNetwork is primarily a cross-chain interoperability and bridge protocol, governed by the pNetwork DAO, for moving assets and messages across blockchains. Farming, staking, or reward contracts should be treated only as ancillary or legacy components where current pNetwork ownership and operation are independently verified, not as a core current product line.
 
 ### Architecture
 

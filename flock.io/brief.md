@@ -7,8 +7,8 @@
 - Project: FLock.io (`flock.io`)
 - Website: [https://www.flock.io/](https://www.flock.io/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T08:01:33.397Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.021Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 15 unique implementations (34 raw deployments)
 - DeFi Llama TVL: $9,771,924.67
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-FLock.io is a decentralized AI protocol that enables collaborative model training and inference. It uses token incentives and staking to coordinate participants in federated learning tasks.
+FLock.io is a private AI training platform for custom models that emphasizes user data control. Current accessible evidence does not substantiate claims about collaborative inference, federated-learning tasks, staking, or token-incentive mechanisms.
 
 ### Architecture
 

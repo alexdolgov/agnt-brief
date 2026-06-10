@@ -5,8 +5,8 @@
 - Project: 40 Acres (`40-acres`)
 - Website: [https://www.40acres.finance/](https://www.40acres.finance/)
 - Lifecycle: active (Tier 0, 57.7% below peak)
-- Generated: 2026-06-10T19:57:40.547Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.422Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, base, ethereum, optimism
 - Contract surface: 325 unique implementations (940 raw deployments)
 - DeFi Llama TVL: $40,565,188.78

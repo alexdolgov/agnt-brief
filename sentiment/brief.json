@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "sentiment",
-  "generated_at": "2026-05-25T03:31:12.098Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "sunsetting",
+  "generated_at": "2026-06-10T20:59:14.895Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "sentiment",
     "tier": 1,
@@ -70,9 +70,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Sentiment is a lending protocol on Arbitrum One that enables users to deposit assets into lending pools and borrow against them. It uses isolated risk engines and account management to facilitate permissionless borrowing and lending.",
+    "project_purpose": "Sentiment is/was a leveraged lending protocol that enabled users to deposit assets into lending pools and borrow against them using isolated risk engines and account management. The protocol should not be described as Arbitrum-only unless the brief is explicitly limited to Arbitrum contract coverage; current DefiLlama data indicates TVL is mainly on Hyperliquid L1, and the app states the protocol has wound down.",
     "relationship_narrative": "The protocol uses a single product family where AccountManager creates user accounts that interact with LToken/LEther lending pools, governed by Registry and RiskEngine for risk parameters. Proxy and Beacon contracts serve as shared infrastructure for upgradeability across all core contracts.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 297,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

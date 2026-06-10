@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stafi",
-  "generated_at": "2026-05-23T23:11:20.635Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.500Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "stafi",
@@ -45,7 +45,7 @@
     "coverage_pct": 26.1,
     "total_audits": 9,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 4063860.32348,
+    "dl_tvl_usd": 3990023.60296,
     "tvl_usd": 3923672.09555422,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Stafi is a liquid staking protocol that allows users to stake assets and receive liquid derivative tokens representing their staked positions. It enables users to earn staking rewards while maintaining liquidity through tradable derivative tokens.",
+    "project_purpose": "StaFi is a cross-chain liquid staking and staking-derivatives protocol. It provides rToken liquid staking products and StaFi 2.0 infrastructure, including LSaaS and AI-positioned liquid staking services, designed to let users stake assets while retaining liquidity through derivative tokens. The listed contract coverage should be treated as Ethereum-only unless non-Ethereum deployments are separately included and verified.",
     "relationship_narrative": "The RETHToken is the core liquid staking token, while StafiWithdrawProxy and TransparentUpgradeableProxy serve as supporting infrastructure for withdrawals and stake management, respectively. These contracts share a common deployer cluster, indicating a unified deployment.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 42,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

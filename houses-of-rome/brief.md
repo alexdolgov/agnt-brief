@@ -6,8 +6,8 @@
 
 - Project: Houses of Rome (`houses-of-rome`)
 - Lifecycle: dead (Tier 0, 100% below peak)
-- Generated: 2026-05-31T08:24:52.224Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.684Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: moonriver
 - Contract surface: 51 unique implementations (51 raw deployments)
 - DeFi Llama TVL: $0.00

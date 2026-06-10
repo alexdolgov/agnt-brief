@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "rain",
-  "generated_at": "2026-05-24T04:45:36.074Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:09.457Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "rain",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3390478.94916,
-    "tvl_usd": 3390478.94916,
+    "dl_tvl_usd": 9232237.8667,
+    "tvl_usd": 9232237.8667,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Rain is a prediction market protocol on Arbitrum One that allows users to create and participate in markets for forecasting events. It uses a deployer system to manage market creation and a reservoir mechanism for liquidity or outcome resolution.",
+    "project_purpose": "Rain is a prediction market protocol on Arbitrum One that allows users to create and participate in markets for forecasting events. Its contract architecture uses a mix of ERC1967 proxy-backed components and direct project-specific contracts, including Rain, RainDeployer, Reservoir, and diamond/facet-style deployments; only the proxy shell bytecode should be treated as OpenZeppelin standard-library code, while the implementations and direct deployments are native Rain protocol logic.",
     "relationship_narrative": "The RainDeployer contract creates and manages market instances, while the Reservoir contract handles liquidity or outcome payouts. All core contracts are accessed through ERC1967Proxy upgradeable proxies, sharing a common deployment infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 28,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -338,7 +343,7 @@
       "chain_name": "arbitrum",
       "address": "0x106ac39ad87d0294dbbbf25167898b498b143bae",
       "name": "Conduit",
-      "role": "unknown",
+      "role": "proxy",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": null,
@@ -1253,7 +1258,7 @@
       "chain_name": "arbitrum",
       "address": "0x25118290e6a5f4139381d072181157035864099d",
       "name": "Rain",
-      "role": "unknown",
+      "role": "proxy",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "Rain",
@@ -1324,7 +1329,7 @@
       "chain_name": "arbitrum",
       "address": "0x05b1fd504583b81bd14c368d59e8c3e354b6c1dc",
       "name": "RainDeployer",
-      "role": "unknown",
+      "role": "proxy",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": null,
@@ -1615,7 +1620,7 @@
       "chain_name": "arbitrum",
       "address": "0x3783c98c39c48750d92a7086d3eacbd231ef26b5",
       "name": "Reservoir",
-      "role": "unknown",
+      "role": "proxy",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "Rain",

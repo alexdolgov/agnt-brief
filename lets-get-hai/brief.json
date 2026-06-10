@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "lets-get-hai",
-  "generated_at": "2026-05-25T03:19:00.015Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:06.969Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "lets-get-hai",
@@ -35,7 +35,7 @@
     "coverage_pct": 77.4,
     "total_audits": 5,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 1210185.93146,
+    "dl_tvl_usd": 1195115.22299,
     "tvl_usd": 13510804.175394243,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Lets Get HAI is a collateralized debt position (CDP) protocol on Optimism that allows users to deposit collateral and mint a stablecoin. It includes a governance token, a protocol token, and a system coin, with infrastructure for collateral management and token distribution.",
+    "project_purpose": "Lets Get HAI is a collateralized debt position protocol on Optimism centered on the HAI/SystemCoin stablecoin. Its in-scope protocol surface is the CDP system, including SAFEEngine, CoinJoin and collateral join components, OracleRelayer, TaxCollector, AccountingEngine, LiquidationEngine, auction and settlement-related contracts, and the system coin. External assets, third-party liquidity pools, oracle feeds, bridges, and integrations such as WETH, OP, Uniswap or Balancer pools, Pyth feeds, and other upstream infrastructure should be treated as dependencies rather than native product families or project-owned TVL.",
     "relationship_narrative": "The Lets Get HAI family relies on the CONTRACTS family for governance and token distribution, while the EXTERNAL CONTRACTS family provides liquidity pools for the system coin. The ProtocolToken and SystemCoin are central assets that flow between these families, with the CollateralJoinFactory bridging collateral into the CDP system.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 54,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -238,7 +243,7 @@
       "chain_name": "optimism",
       "address": "0xa4900795ebffadc12790f05f7c4ac42cd765bd10",
       "name": "AccountingEngine",
-      "role": "unknown",
+      "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -338,7 +343,7 @@
       "chain_name": "optimism",
       "address": "0x30ce72230a47a0967b7e52a1bae0178dbd7c6ea3",
       "name": "CoinJoin",
-      "role": "unknown",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -862,7 +867,7 @@
       "chain_name": "optimism",
       "address": "0x8be588895be9b75f9a9daee185e0c2ad89891b56",
       "name": "LiquidationEngine",
-      "role": "unknown",
+      "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1434,7 +1439,7 @@
       "chain_name": "optimism",
       "address": "0x9ff826860689483181c5fac9628fd2f70275a700",
       "name": "SAFEEngine",
-      "role": "unknown",
+      "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1703,7 +1708,7 @@
       "chain_name": "optimism",
       "address": "0x10398abc267496e49106b07dd6be13364d10dc71",
       "name": "SystemCoin",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "EXTERNAL CONTRACTS",
@@ -1737,7 +1742,7 @@
       "chain_name": "optimism",
       "address": "0x62b82cce08f8f2d808348409e9418c65eb1973c3",
       "name": "TaxCollector",
-      "role": "unknown",
+      "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,

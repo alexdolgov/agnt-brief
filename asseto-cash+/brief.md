@@ -7,8 +7,8 @@
 - Project: Asseto CASH+ (`asseto-cash+`)
 - Website: [https://asseto.finance/#invest](https://asseto.finance/#invest)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:45:11.381Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.787Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 2 unique implementations (32 raw deployments)
 - DeFi Llama TVL: $1,399,224.84

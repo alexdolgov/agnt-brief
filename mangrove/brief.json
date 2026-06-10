@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mangrove",
-  "generated_at": "2026-05-23T22:26:07.539Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:07.158Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "mangrove",
@@ -26,17 +26,17 @@
     "total_addresses": 147,
     "unique_implementations": 68,
     "total_deployments": 147,
-    "audited_contracts": 10,
-    "unaudited_contracts": 31,
-    "contracts_verified_audited": 10,
-    "contracts_verified_unaudited": 31,
+    "audited_contracts": 9,
+    "unaudited_contracts": 32,
+    "contracts_verified_audited": 9,
+    "contracts_verified_unaudited": 32,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 27,
-    "coverage_pct": 24.4,
-    "total_audits": 8,
-    "scoreable_audits": 7,
-    "dl_tvl_usd": 4250949.45003,
-    "tvl_usd": 4250949.45003,
+    "coverage_pct": 22,
+    "total_audits": 6,
+    "scoreable_audits": 5,
+    "dl_tvl_usd": 4261402.59877,
+    "tvl_usd": 4261402.59877,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -47,24 +47,28 @@
       "blast",
       "sei"
     ],
-    "tier1_coverage_pct": 17.1,
+    "tier1_coverage_pct": 14.6,
     "tier1_auditors": [
-      "ChainSecurity",
-      "Code4rena"
+      "ChainSecurity"
     ],
     "latest_audit_date": "2024-10",
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 1,
-      "stale": 7,
+      "stale": 5,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Mangrove is a decentralized exchange protocol that enables on-chain limit order books and automated market making. It provides infrastructure for liquidity provision, order matching, and vault-based strategies across multiple chains.",
+    "project_purpose": "Mangrove is an EVM-based order-book DEX and adaptive liquidity protocol that lets liquidity providers post programmable offers, restake otherwise idle liquidity, and run market-making or vault-based strategies across supported deployments.",
     "relationship_narrative": "The Mangrove core DEX provides the base order book, while Vaults and Strategies use it to manage liquidity and automate market making. Ghostbook extends order sharing across chains, and Oracles supply price data to vaults and strategies for asset valuation.",
     "product_family_count": 7
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 68,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -670,7 +674,6 @@
         }
       ],
       "audits_covering": [
-        "audit-2631",
         "audit-2632"
       ],
       "is_audited": true,
@@ -1100,7 +1103,6 @@
       ],
       "audits_covering": [
         "audit-2634",
-        "audit-2635",
         "audit-2636"
       ],
       "is_audited": true,
@@ -1755,7 +1757,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -1764,7 +1766,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -1773,7 +1775,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 81457,
@@ -1782,16 +1784,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2635"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -2919,38 +2919,6 @@
   ],
   "audits": [
     {
-      "audit_id": 2631,
-      "audit_key": "audit-2631",
-      "report_name": "ChainSecurity_Mangrove_Association_(ADDMA)_Mangrove_audit-c7a5bd87cc411539606ff9082bb5c8a1.pdf",
-      "report_url": "https://github.com/mangrovedao/audits/blob/main/core/v0/ChainSecurity_Mangrove_Association_(ADDMA)_Mangrove_audit-c7a5bd87cc411539606ff9082bb5c8a1.pdf",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "stale",
-      "date": "2023-03",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AbstractMangrove",
-        "IMangrove",
-        "Mangrove",
-        "MgvGovernable",
-        "MgvHasOffer",
-        "MgvLib",
-        "MgvOfferMaking",
-        "MgvOfferTaking",
-        "MgvOfferTakingWithPermit",
-        "MgvRoot"
-      ],
-      "matched_contracts": 4,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 2632,
       "audit_key": "audit-2632",
       "report_name": "ChainSecurity_Mangrove_Association_ADDMA_Mangrove_Core_audit_2-d3425cee36b3dad60bfac272af328fd4.pdf",
@@ -3048,46 +3016,6 @@
         "TransferLib"
       ],
       "matched_contracts": 8,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2635,
-      "audit_key": "audit-2635",
-      "report_name": "2024-02-14-NM-0162-Nethermind_SmartRouter_MangroveOrder_MangroveAmplifier_audit-26ca97c4578d39c3ca4cb82ae7a0f374.pdf",
-      "report_url": "https://github.com/mangrovedao/audits/blob/main/strats/v1/2024-02-14-NM-0162-Nethermind_SmartRouter_MangroveOrder_MangroveAmplifier_audit-26ca97c4578d39c3ca4cb82ae7a0f374.pdf",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "stale",
-      "date": "2024-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AbstractRouter",
-        "AccessControlled",
-        "Forwarder",
-        "IForwarder",
-        "ILiquidityProvider",
-        "IOfferLogic",
-        "IOrderLogic",
-        "MangroveAmplifier",
-        "MangroveOffer",
-        "MangroveOrder",
-        "RenegingForwarder",
-        "RouterProxy",
-        "RouterProxyFactory",
-        "RoutingOrderLib",
-        "SimpleRouter",
-        "SmartRouter",
-        "SmartRouterStorage",
-        "TakerOrderLib"
-      ],
-      "matched_contracts": 12,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -3206,13 +3134,6 @@
       "contracts_covered": 6,
       "coverage_pct": 14.6,
       "latest_audit": "2023-11"
-    },
-    {
-      "auditor": "Code4rena",
-      "tier": 1,
-      "contracts_covered": 3,
-      "coverage_pct": 7.3,
-      "latest_audit": "2024-02"
     },
     {
       "auditor": "unknown",
@@ -3444,6 +3365,16 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x2926cc3977f93a51465f9742c548e67220af54e9",
+      "name": "RouterProxyFactory",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x43bb29f47b7b14f252fba32d686f4902823ea7b7",
@@ -3502,10 +3433,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 72
+      "extraction_exact": 56
     },
     "extraction_confidence_counts": {
-      "high": 7
+      "high": 5
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

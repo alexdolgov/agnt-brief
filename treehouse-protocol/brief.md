@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Treehouse Protocol
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 45.2% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 45.2% over 90 days
 
 ## Project Overview
 
 - Project: Treehouse Protocol (`treehouse-protocol`)
 - Website: [https://www.treehouse.finance/](https://www.treehouse.finance/)
-- Lifecycle: unknown (Tier 0, 86.1% below peak)
-- Generated: 2026-05-31T11:10:57.991Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 86.1% below peak)
+- Generated: 2026-06-10T20:59:17.578Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 78 unique implementations (94 raw deployments)
+- Contract surface: 77 unique implementations (92 raw deployments)
 - DeFi Llama TVL: $87,665,909.37
-- On-chain TVL (included contracts): $31,172,969.02
-- TVL by chain: Ethereum $31,172,969.02
+- On-chain TVL (included contracts): $23,978,444.77
+- TVL by chain: Ethereum $23,978,444.77
 
 ## Project Description
 
-Treehouse Protocol is a DeFi platform that provides liquid staking, lending, and stablecoin minting services. It allows users to stake ETH to receive a liquid staking token (tETH), borrow against their assets, and interact with stablecoin pools.
+Treehouse Protocol is a DeFi fixed-income protocol focused on tAssets, including tETH, and decentralized offered rates (DOR). It provides tokenized yield and fixed-income products rather than operating as a native lending, borrowing, or stablecoin-minting platform.
 
 ### Architecture
 
@@ -25,28 +25,28 @@ The protocol's core Vault and SimpleStakingERC20 token handle staking and liquid
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 29/69 (42.0%)
-- Verified + Unaudited implementations: 40
+- Verified implementations audited: 29/68 (42.6%)
+- Verified + Unaudited implementations: 39
 - Verified by bytecode match: 0
 - Unverified implementations: 9
-- Unique implementations: 78
-- Raw deployments: 94
+- Unique implementations: 77
+- Raw deployments: 92
 - Audits discovered: 20
 - Scoreable audits (matched contracts): 16
 - ASD (verified + unaudited TVL): $1,798,114.23
 - Latest audit: 2026-05 (fresh)
 - Staleness: 6 fresh, 13 aging, 0 stale, 1 unknown
-- Tier 1 coverage: 15.9% (Trail of Bits)
-- Note: This protocol is classified as [unknown]. ASD of $1,798,114.23 represents exposure in a protocol with unknown activity.
+- Tier 1 coverage: 16.2% (Trail of Bits)
+- Note: This protocol is classified as [declining]. ASD of $1,798,114.23 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| WatchPug | Tier 2 | 19 | 27.5% | 2026-05 |
-| Sigma Prime | Tier 2 | 17 | 24.6% | 2025-03 |
-| Trail of Bits | Tier 1 | 11 | 15.9% | 2024-10 |
-| unknown | Tier 2 | 6 | 8.7% | 2024-09 |
+| WatchPug | Tier 2 | 19 | 27.9% | 2026-05 |
+| Sigma Prime | Tier 2 | 17 | 25.0% | 2025-03 |
+| Trail of Bits | Tier 1 | 11 | 16.2% | 2024-10 |
+| unknown | Tier 2 | 6 | 8.8% | 2024-09 |
 
 ## Contract Surface
 
@@ -54,7 +54,7 @@ The protocol's core Vault and SimpleStakingERC20 token handle staking and liquid
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| Vault | core_logic | ethereum | 2 deployments: ethereum [`0x551d15...5d761b`](./contracts/ethereum-1/0x551d155760ae96050439ad24ae98a96c765d761b/); ethereum `0xba1222...6bf2c8` | ✅ Audited |
+| Vault | core_logic | ethereum | [`0x551d15...5d761b`](./contracts/ethereum-1/0x551d155760ae96050439ad24ae98a96c765d761b/) | ✅ Audited |
 | Strategy | core_logic | ethereum | 2 deployments: ethereum [`0x5ae0e4...284938`](./contracts/ethereum-1/0x5ae0e44de96885702bd99a6914751c952d284938/); ethereum `0xbfdf0a...e02a9d` | ✅ Audited |
 | ActionExecutor | unknown | ethereum | 3 deployments: ethereum [`0x60d2d9...2e5943`](./contracts/ethereum-1/0x60d2d94acb969ca54e781007ee89f04c1a2e5943/); ethereum `0xb15931...1e9e94`; ethereum `0xb27d68...cdce98` | ✅ Audited |
 | ActionRegistry | registry | ethereum | [`0x94af59...c3073f`](./contracts/ethereum-1/0x94af5994eb6841e1d930c95ad0c9f89771c3073f/) | ✅ Audited |
@@ -84,13 +84,12 @@ The protocol's core Vault and SimpleStakingERC20 token handle staking and liquid
 | VaultRescuer | core_logic | ethereum | [`0x1af329...db933a`](./contracts/ethereum-1/0x1af329d2c4ceaf45e1d8062c696b09ffaddb933a/) | ✅ Audited |
 | WstETHRateProvider | unknown | ethereum | [`0xa14a1a...fe6109`](./contracts/ethereum-1/0xa14a1a1646980c2b78eddd51b66ec220aefe6109/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (40)
+### ⚠️ Verified + Unaudited (39)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | LendingPoolv3 | core_logic | ethereum | [`0x5fde59...eb357f`](./contracts/ethereum-1/0x5fde59415625401278c4d41c6befce3790eb357f/) | ⚠️ Unaudited |
 | AccountingOracle | operational_periphery | ethereum | 2 deployments: ethereum [`0x852ded...503cee`](./contracts/ethereum-1/0x852ded011285fe67063a08005c71a85690503cee/); ethereum `0xf3c5e0...79a1af` | ⚠️ Unaudited |
-| Authorizer | unknown | ethereum | [`0xa331d8...3f3ae6`](./contracts/ethereum-1/0xa331d84ec860bf466b4cdccfb4ac09a1b43f3ae6/) | ⚠️ Unaudited |
 | Burner | unknown | ethereum | [`0xd15a67...9046d3`](./contracts/ethereum-1/0xd15a672319cf0352560ee76d9e89eab0889046d3/) | ⚠️ Unaudited |
 | ComposableStablePool | core_logic | ethereum | [`0x1d1353...4dad14`](./contracts/ethereum-1/0x1d13531bf6344c102280ce4c458781fbf14dad14/) | ⚠️ Unaudited |
 | CurveStableSwapNG | operational_periphery | ethereum | 2 deployments: ethereum [`0x394a1e...41542f`](./contracts/ethereum-1/0x394a1e1b934cb4f4a0dc17bdd592ec078741542f/); ethereum `0xa10d15...0dddb1` | ⚠️ Unaudited |
@@ -217,7 +216,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 53 |
-| upstream | 11 |
+| upstream | 10 |
 | standard_library | 7 |
 | needs_review | 7 |
 

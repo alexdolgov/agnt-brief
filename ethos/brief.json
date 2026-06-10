@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ethos",
-  "generated_at": "2026-05-24T16:00:51.202Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:03.840Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ethos",
@@ -35,8 +35,8 @@
     "coverage_pct": 30,
     "total_audits": 2,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 1938252,
-    "tvl_usd": 1938252,
+    "dl_tvl_usd": 1889821,
+    "tvl_usd": 1889821,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -62,6 +62,11 @@
     "project_purpose": "Ethos is a decentralized social finance (SoFi) protocol that enables users to build on-chain reputation, vouch for others, and participate in reputation-based markets. It provides a suite of smart contracts for identity, attestations, reviews, voting, and economic incentives like bonding and slashing.",
     "relationship_narrative": "The Contracts and Ownership family provides shared infrastructure (profiles, attestations, reviews, votes) that underpins both Ethos Markets and Ethos Network. ReputationMarket and EthosVouch rely on identity and attestation contracts to function, while governance is managed via the Safe Harbor multisig.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 27,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

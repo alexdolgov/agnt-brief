@@ -7,11 +7,11 @@
 - Project: NFTX (`nftx`)
 - Website: [https://nftx.io](https://nftx.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-25T15:18:02.319Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:08.694Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum
 - Contract surface: 184 unique implementations (431 raw deployments)
-- DeFi Llama TVL: $1,607,911.77
+- DeFi Llama TVL: $1,577,327.18
 - On-chain TVL (included contracts): $6,270,090.75
 - TVL by chain: Ethereum $6,270,090.75
 

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "unichain-bridge",
-  "generated_at": "2026-05-31T11:29:18.644Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:18.489Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "unichain-bridge",
     "tier": 1,
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 10,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 2752550.53883,
     "tvl_usd": 2752550.53883,
@@ -62,13 +62,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 10
+      "unknown": 0
     }
   },
   "topography": {
     "project_purpose": "Unichain Bridge is the canonical bridge for the Unichain network, enabling users to transfer ETH and ERC-20 tokens between Ethereum and Unichain. It uses the OP Stack's standard bridge architecture with a portal, cross-domain messenger, and dispute game factory for secure message passing and fraud proofs.",
     "relationship_narrative": "The bridge family shares infrastructure through the OP Stack's modular design: the OptimismPortal2 coordinates deposits and withdrawals, relying on the L1CrossDomainMessenger for message passing and the L1StandardBridge for token transfers. Supporting contracts like SystemConfig, DisputeGameFactory, and AnchorStateRegistry provide configuration, fraud proof handling, and state anchoring, all working together to secure the bridge.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 15,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -676,228 +681,7 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 8642,
-      "audit_key": "audit-8642",
-      "report_name": "audit.pdf",
-      "report_url": "https://github.com/Uniswap/v3-core/blob/main/audits/abdk/audit.pdf",
-      "auditor": "ABDK",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 8642,
-          "report_url": "https://github.com/Uniswap/v3-core/blob/main/audits/abdk/audit.pdf"
-        },
-        {
-          "audit_id": 8644,
-          "report_url": "https://github.com/Uniswap/v3-core/blob/main/audits/tob/audit.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 8643,
-      "audit_key": "audit-8643",
-      "report_name": "README.md",
-      "report_url": "https://github.com/Uniswap/v3-core/blob/main/audits/tob/README.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8645,
-      "audit_key": "audit-8645",
-      "report_name": "Known_Effects_of_Hook_Permissions.pdf",
-      "report_url": "https://github.com/Uniswap/v4-core/blob/main/docs/security/Known_Effects_of_Hook_Permissions.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8646,
-      "audit_key": "audit-8646",
-      "report_name": "DRAFT_ABDK_audit_core.pdf",
-      "report_url": "https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/DRAFT_ABDK_audit_core.pdf",
-      "auditor": "ABDK",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8647,
-      "audit_key": "audit-8647",
-      "report_name": "DRAFT_Certora_audit_core.pdf",
-      "report_url": "https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/DRAFT_Certora_audit_core.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8648,
-      "audit_key": "audit-8648",
-      "report_name": "DRAFT_Spearbit_audit_core.pdf",
-      "report_url": "https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/DRAFT_Spearbit_audit_core.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8649,
-      "audit_key": "audit-8649",
-      "report_name": "OpenZeppelin_audit_core.pdf",
-      "report_url": "https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/OpenZeppelin_audit_core.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8650,
-      "audit_key": "audit-8650",
-      "report_name": "TrailOfBits_audit_core.pdf",
-      "report_url": "https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/TrailOfBits_audit_core.pdf",
-      "auditor": "Trail of Bits",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8651,
-      "audit_key": "audit-8651",
-      "report_name": "whitepaper-v4.pdf",
-      "report_url": "https://github.com/Uniswap/v4-core/blob/main/docs/whitepaper/whitepaper-v4.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8652,
-      "audit_key": "audit-8652",
-      "report_name": "whitepaper-zh.pdf",
-      "report_url": "https://github.com/Uniswap/v4-core/blob/main/docs/whitepaper/whitepaper-zh.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -1052,48 +836,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 8642,
-        "report_name": "audit.pdf"
-      },
-      {
-        "audit_id": 8643,
-        "report_name": "README.md"
-      },
-      {
-        "audit_id": 8645,
-        "report_name": "Known_Effects_of_Hook_Permissions.pdf"
-      },
-      {
-        "audit_id": 8646,
-        "report_name": "DRAFT_ABDK_audit_core.pdf"
-      },
-      {
-        "audit_id": 8647,
-        "report_name": "DRAFT_Certora_audit_core.pdf"
-      },
-      {
-        "audit_id": 8648,
-        "report_name": "DRAFT_Spearbit_audit_core.pdf"
-      },
-      {
-        "audit_id": 8649,
-        "report_name": "OpenZeppelin_audit_core.pdf"
-      },
-      {
-        "audit_id": 8650,
-        "report_name": "TrailOfBits_audit_core.pdf"
-      },
-      {
-        "audit_id": 8651,
-        "report_name": "whitepaper-v4.pdf"
-      },
-      {
-        "audit_id": 8652,
-        "report_name": "whitepaper-zh.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

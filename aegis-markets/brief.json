@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "aegis-markets",
-  "generated_at": "2026-06-10T20:16:30.914Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "generated_at": "2026-06-10T20:58:56.549Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "aegis-markets",

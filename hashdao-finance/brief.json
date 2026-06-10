@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hashdao-finance",
-  "generated_at": "2026-05-24T19:07:45.699Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:04.530Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "hashdao-finance",
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 51,
-    "total_addresses": 123,
-    "unique_implementations": 51,
-    "total_deployments": 123,
+    "total_contracts": 50,
+    "total_addresses": 122,
+    "unique_implementations": 50,
+    "total_deployments": 122,
     "audited_contracts": 10,
-    "unaudited_contracts": 9,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 8,
-    "contracts_verified_unaudited": 9,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 32,
-    "coverage_pct": 52.6,
+    "coverage_pct": 55.6,
     "total_audits": 3,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 1672280.9837800004,
+    "dl_tvl_usd": 1639221.2938299999,
     "tvl_usd": 2759621.2177352156,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -69,9 +69,14 @@
     }
   },
   "topography": {
-    "project_purpose": "HashDAO Finance is a decentralized derivatives protocol enabling users to trade perpetual contracts and other synthetic assets. It provides liquidity pools, order management, and price reporting infrastructure to facilitate trustless trading on Optimism and Arbitrum One.",
+    "project_purpose": "HashDAO Finance is an Arbitrum-focused non-custodial perpetual DEX with liquidity pools and LP risk-management products.",
     "relationship_narrative": "All contracts are deployed under a single product family and share a common upgradeable proxy infrastructure (AdminUpgradeabilityProxy). Core trading logic in Pool and OrderManager relies on PriceReporter for oracle data, while EsToken and VeToken handle escrowed and vested token mechanics, and FeeVault collects protocol fees. The Bridge contract enables cross-chain asset movement, and external UniswapV2Pair/Pair contracts provide liquidity for the native Token.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 50,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -890,37 +895,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0xb426ae40e43be57215ba7daa06cbc5d48ed35dcf",
-      "name": "Pair",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
-      "product_line": "HashDAO Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Pair",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xb426ae40e43be57215ba7daa06cbc5d48ed35dcf",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 42161,
@@ -2406,14 +2380,14 @@
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 10,
-      "coverage_pct": 52.6,
+      "coverage_pct": 55.6,
       "latest_audit": "2023-04"
     },
     {
       "auditor": "SolidProof",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 5.3,
+      "coverage_pct": 5.6,
       "latest_audit": null
     }
   ],
@@ -2461,7 +2435,7 @@
   ],
   "origin_summary": {
     "native": 27,
-    "upstream": 2,
+    "upstream": 1,
     "standard_library": 1,
     "needs_review": 21
   },

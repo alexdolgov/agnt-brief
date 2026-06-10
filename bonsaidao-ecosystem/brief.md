@@ -5,8 +5,8 @@
 - Project: BonsaiDAO Ecosystem (`bonsaidao-ecosystem`)
 - Website: [https://bonsaidao.xyz/](https://bonsaidao.xyz/)
 - Lifecycle: active (Tier 0, 94.1% below peak)
-- Generated: 2026-05-31T07:37:01.109Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.053Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, berachain
 - Contract surface: 190 unique implementations (432 raw deployments)
 - DeFi Llama TVL: $1,080,777.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-BonsaiDAO Ecosystem is a multi-product DeFi protocol offering liquidity management, yield optimization, and lending services. It encompasses the exit.tech exit liquidity platform, the Umami Finance yield aggregator, and the Vendor V2 lending market, operating across Base, Arbitrum One, and Berachain.
+Bonsai DAO is a DeFi studio / parent ecosystem for interconnected products called Leaves. Current material product lines include exit.tech, Umami Finance, and Vendor V2, spanning chains such as Base, Arbitrum One, and Berachain. Vendor V1 may be treated as a legacy/negligible child protocol where relevant. Claims about common deployer infrastructure, a unified development team, or shared treasury/governance ties should be omitted or explicitly qualified unless independently verified.
 
 ### Architecture
 

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "plasma-one",
-  "generated_at": "2026-05-31T10:14:25.175Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:09.341Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "plasma-one",
     "tier": 0,
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
     "coverage_pct": 0,
-    "total_audits": 2,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 2436871.64497,
     "tvl_usd": 0.619928,
@@ -48,19 +48,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2024-06",
-    "audit_freshness": "aging",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 1,
+      "aging": 0,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Plasma One is a crypto card issuer that enables users to spend digital assets via a card product. It leverages cross-chain token bridges and yield-bearing vaults to manage and transfer value.",
+    "project_purpose": "Plasma One is a non-custodial stablecoin money app and crypto card product focused on stablecoin transfers, spending, and an Earn interface. Earn/yield functionality should be described as using or integrating third-party DeFi or vault providers unless Plasma One-operated vault contracts are verified. Do not assert Plasma One-owned bridge or vault internals without documented contract mapping.",
     "relationship_narrative": "The BoringVault holds user deposits and generates yield, while ATokenInstance represents tokenized positions. Multiple TetherTokenOFTExtension adapters enable cross-chain USDT transfers, and OUpgradeable contracts likely manage oracle or upgrade logic, all sharing the same deployer cluster.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 7,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -357,50 +362,7 @@
       "contamination_flag": "review"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 8928,
-      "audit_key": "audit-8928",
-      "report_name": "sigma_prime_audit_v2.pdf",
-      "report_url": "https://github.com/PlasmaLaboratories/reth/blob/main/audit/sigma_prime_audit_v2.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8941,
-      "audit_key": "audit-8941",
-      "report_name": "review.md",
-      "report_url": "https://github.com/PlasmaLaboratories/reth/blob/main/docs/design/review.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -425,16 +387,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 8928,
-        "report_name": "sigma_prime_audit_v2.pdf"
-      },
-      {
-        "audit_id": 8941,
-        "report_name": "review.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

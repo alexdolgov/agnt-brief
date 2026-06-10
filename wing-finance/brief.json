@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "wing-finance",
-  "generated_at": "2026-05-31T11:39:01.351Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:18.815Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "wing-finance",
@@ -32,18 +32,18 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 180,
-    "total_addresses": 199,
-    "unique_implementations": 180,
-    "total_deployments": 199,
+    "total_contracts": 179,
+    "total_addresses": 198,
+    "unique_implementations": 179,
+    "total_deployments": 198,
     "audited_contracts": 0,
-    "unaudited_contracts": 14,
+    "unaudited_contracts": 13,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 12,
+    "contracts_verified_unaudited": 11,
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 166,
     "coverage_pct": 0,
-    "total_audits": 2,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 32459100.31933,
     "tvl_usd": 20266638.248274427,
@@ -66,13 +66,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 2
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Wing Finance is a decentralized lending protocol that allows users to supply and borrow crypto assets across multiple chains. It also includes governance and token distribution mechanisms.",
+    "project_purpose": "Wing Finance is a credit-based cross-chain DeFi lending platform for supplying and borrowing crypto assets. Compound protocol contracts and balances should be treated only as external integrations or underlyings unless project-specific documentation or verified deployer evidence proves Wing ownership.",
     "relationship_narrative": "The Wing Token family provides the governance token used by the Governance Accounts family to manage protocol parameters and treasury. The Wing Finance lending market relies on the governance system for upgrades and parameter changes, and may distribute WING tokens as incentives.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 179,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -444,37 +449,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc00e94cb662c3520282e6f5717214004a7f26888",
-      "name": "Comp",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "compound-finance",
-      "product_line": "Wing Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Comp",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc00e94cb662c3520282e6f5717214004a7f26888",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -5831,50 +5805,7 @@
       "contamination_flag": null
     }
   ],
-  "audits": [
-    {
-      "audit_id": 3991,
-      "audit_key": "audit-3991",
-      "report_name": "The WING protocol has been reviewed & audited by [**BEOSIN**]()**.**",
-      "report_url": "https://lianantech.com/",
-      "auditor": "BEOSIN",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3992,
-      "audit_key": "audit-3992",
-      "report_name": "The Wing Flash Pool (EVM) has been reviewed & audited by [**PeckShield**]().",
-      "report_url": "https://peckshield.com/en",
-      "auditor": "PeckShield",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -5960,7 +5891,7 @@
   ],
   "origin_summary": {
     "native": 12,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 1,
     "needs_review": 166
   },
@@ -5969,16 +5900,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 3991,
-        "report_name": "The WING protocol has been reviewed & audited by [**BEOSIN**]()**.**"
-      },
-      {
-        "audit_id": 3992,
-        "report_name": "The Wing Flash Pool (EVM) has been reviewed & audited by [**PeckShield**]()."
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

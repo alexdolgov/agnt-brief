@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "pulsechain",
-  "generated_at": "2026-05-31T10:20:45.560Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:09.400Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "pulsechain",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Pulsechain is a blockchain network that provides cross-chain bridging infrastructure, enabling asset transfers between Ethereum and Pulsechain via omnibridge and arbitrary message bridge contracts.",
+    "project_purpose": "PulseChain is an Ethereum-fork Layer 1 blockchain. The covered Ethereum-side contracts appear to be bridge/Omnibridge infrastructure used for asset transfers and message passing between Ethereum and PulseChain, rather than representing the full scope of the PulseChain network.",
     "relationship_narrative": "The EternalStorageProxy contracts serve as upgradeable proxies for the core bridge contracts (ForeignOmnibridge, ForeignAMB, BridgeValidators), sharing a common upgradeability pattern and deployer cluster.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 5,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

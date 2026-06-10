@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hypersurface",
-  "generated_at": "2026-05-31T08:24:51.356Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:06.092Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hypersurface",
@@ -59,9 +59,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Hypersurface is a decentralized options protocol enabling users to trade, hedge, and manage risk through structured products. It provides infrastructure for options markets, margin management, and cross-chain asset handling.",
+    "project_purpose": "Hypersurface is a DeFi structured-products and volatility-yield platform focused on strategies such as covered calls and cash-secured puts. It should not be described as a broad options trading venue, margin-management system, auction platform, or cross-chain infrastructure protocol unless those claims are supported by official project documentation.",
     "relationship_narrative": "The Core Protocol Contracts provide foundational margin and trade logic used by the Hypersurface family for options issuance and trading. The Auction System likely interacts with Core Protocol Contracts for settlement, while Hypersurface leverages cross-chain tokens and strategies for multi-chain options exposure.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 242,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mantra-dao",
-  "generated_at": "2026-05-25T11:59:44.136Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:07.248Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "mantra-dao",
@@ -32,27 +32,27 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 209,
-    "total_addresses": 519,
-    "unique_implementations": 209,
-    "total_deployments": 519,
+    "total_contracts": 195,
+    "total_addresses": 489,
+    "unique_implementations": 195,
+    "total_deployments": 489,
     "audited_contracts": 0,
-    "unaudited_contracts": 91,
+    "unaudited_contracts": 77,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 90,
+    "contracts_verified_unaudited": 76,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 118,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1750442.7906400003,
-    "tvl_usd": 612497234.8684696,
+    "dl_tvl_usd": 1744800.2364999996,
+    "tvl_usd": 610988179.1674765,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 612094442.48,
+      "ethereum": 610585386.77,
       "polygon": 402792.39
     },
-    "asd_usd": 612497234.8684696,
+    "asd_usd": 610988179.1674765,
     "website_url": "https://mantrachain.io/",
     "chains": [
       "ethereum",
@@ -70,9 +70,14 @@
     }
   },
   "topography": {
-    "project_purpose": "MANTRA DAO is a DeFi protocol offering lending, staking, and yield aggregation services. It enables users to deposit assets into vaults for automated yield, stake tokens for rewards, and participate in cross-chain token transfers.",
+    "project_purpose": "The current MANTRA website markets MANTRA Chain as an EVM-compatible Layer 1 blockchain focused on real-world assets and regulatory compliance. The DefiLlama `mantra-dao` entry, however, tracks legacy MANTRA DAO lending, staking, and pool2 activity. Any audit or TVL brief should distinguish the current MANTRA Chain identity from the older MANTRA DAO DeFi surface and should not treat unrelated infrastructure or upstream protocol deployments as MANTRA-owned contracts.",
     "relationship_narrative": "The protocol's families share infrastructure through common token standards (e.g., OMTokenV2, ArcxTokenV2) and proxy patterns (TransparentUpgradeableProxy, Unitroller). Staking pools often interact with synthetic tokens and liquidity pairs, while cross-chain bridges rely on upgradeable proxies for token collateral management.",
     "product_family_count": 7
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 195,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1048,113 +1053,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x1321f1f1aa541a56c31682c57b80ecfccd9bb288",
-      "name": "ArcxTokenV2",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "MANTRA DAO",
-      "tvl_usd": 949182.7041246513,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ArcxTokenV2",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1321f1f1aa541a56c31682c57b80ecfccd9bb288",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 949182.7041246513,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2c23276107b45e64c8c59482f4a24f4f2e568ea6",
-      "name": "bVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "MANTRA DAO",
-      "tvl_usd": 301520.89823886007,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "bVault",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2c23276107b45e64c8c59482f4a24f4f2e568ea6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 521.094199,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x378388aa69f3032fa46150221210c7fa70a35153",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 146137.95062470296,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x3fb6b07d77dace1ba6b5f6ab1d8668643d15a2cc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 70439.69906320905,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x750d30a8259e63ed72a075f5b6630f08ce7996d0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 12804.957639128528,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8016907d54ed8bcf5da100c4d0eb434c0185dc0e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 3243.392589,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8d9a39706d3b66446a298f1ae735730257ec6108",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 68373.80412381956,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xaf9f549774ecedbd0966c52f250acc548d3f36e5",
       "name": "RFuelToken",
       "role": "token",
@@ -1235,68 +1133,6 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 173296,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xebd12620e29dc6c452db7b96e1f190f3ee02bde8",
-      "name": "BACDAIPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "MANTRA DAO",
-      "tvl_usd": 88280.57263998144,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BACDAIPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xebd12620e29dc6c452db7b96e1f190f3ee02bde8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 88280.57263998144,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x51882184b7f9beed6db9c617846140da1d429fd4",
-      "name": "BACUSDCPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "MANTRA DAO",
-      "tvl_usd": 86330.93511,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BACUSDCPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x51882184b7f9beed6db9c617846140da1d429fd4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 86330.93511,
           "is_audited": false
         }
       ],
@@ -1674,37 +1510,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x2833bdc5b31269d356bdf92d0fd8f3674e877e44",
-      "name": "BACUSDTPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "MANTRA DAO",
-      "tvl_usd": 71162.695824,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BACUSDTPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2833bdc5b31269d356bdf92d0fd8f3674e877e44",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 71162.695824,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x81d387219627833452f3d615a76b2eaa71383a5b",
       "name": "StakingPoolsMigrator",
       "role": "core_logic",
@@ -1754,37 +1559,6 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 39864.96,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x9bffad7a6d5f52dbc51cae33e419793c72fd7d9d",
-      "name": "StakingAccrualERC20V5",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "MANTRA DAO",
-      "tvl_usd": 12500.281793938997,
-      "is_proxy": true,
-      "impl_address": "0x5a35c5a4d28fa2cb33eba3de485083b739df63bb",
-      "impl_name": "StakingAccrualERC20V5",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9bffad7a6d5f52dbc51cae33e419793c72fd7d9d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 12500.281793938997,
           "is_audited": false
         }
       ],
@@ -2117,108 +1891,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x3012e9049d05b4b5369d690114d5a5861ebb85cb",
-      "name": "AlgebraCustomPoolEntryPoint",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "algebra",
-      "product_line": "Periphery Contracts",
-      "tvl_usd": 65.61305,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AlgebraCustomPoolEntryPoint",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x3012e9049d05b4b5369d690114d5a5861ebb85cb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 65.61305,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x7779c2df9e64932eb63797b4aa2ea1e352ce12e8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c",
-      "name": "BACSUSDPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "MANTRA DAO",
-      "tvl_usd": 10,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BACSUSDPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 10,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x76bac85e1e82cd677faa2b3f00c4a2626c4c6e32",
-      "name": "ERC20Peg",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "MANTRA DAO",
-      "tvl_usd": 2.0002116135580077,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ERC20Peg",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x76bac85e1e82cd677faa2b3f00c4a2626c4c6e32",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.0002116135580077,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x1a22188b5f6faf7253a3defcc576884c0ff50a91",
       "name": "LotteryLikePool",
       "role": "core_logic",
@@ -2299,6 +1971,37 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
+      "address": "0x7779c2df9e64932eb63797b4aa2ea1e352ce12e8",
+      "name": "AlgebraCustomPoolEntryPoint",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "algebra",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AlgebraCustomPoolEntryPoint",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x7779c2df9e64932eb63797b4aa2ea1e352ce12e8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
       "address": "0x18a3dcf6d9383486ea7b0fa5c336369aeead5007",
       "name": "AlgebraEternalFarming",
       "role": "unknown",
@@ -2337,28 +2040,19 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x3b22094a64d3d6801a27db4e58ac0b859a4c066d",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x744c3126f6ae063e01a8156228a71d12a0152184",
       "name": "AlgebraFactory",
       "role": "registry",
       "origin_kind": "upstream",
-      "origin_provider": "cryptoalgebra",
+      "origin_provider": "algebra",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "AlgebraFactory",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x3b22094a64d3d6801a27db4e58ac0b859a4c066d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -2422,28 +2116,19 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x38a5c36fa8c8c9e4649b51fcd61810b14e7ce047",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xa19b72cc2490c557296c4a44c0ee765009ce1794",
       "name": "AlgebraInterfaceMulticall",
       "role": "periphery",
       "origin_kind": "upstream",
-      "origin_provider": "cryptoalgebra",
+      "origin_provider": "algebra",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "AlgebraInterfaceMulticall",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x38a5c36fa8c8c9e4649b51fcd61810b14e7ce047",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 137,
           "chain_name": "polygon",
@@ -2780,68 +2465,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xc462d8ee54953e7d7bf276612b75387ea114c3bf",
-      "name": "BACyCRVPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "MANTRA DAO",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BACyCRVPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc462d8ee54953e7d7bf276612b75387ea114c3bf",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0ec9f76202a7061eb9b3a7d6b59d36215a7e37da",
-      "name": "BlackPoolToken",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "MANTRA DAO",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BlackPoolToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0ec9f76202a7061eb9b3a7d6b59d36215a7e37da",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x297311868fc2f0a30f0d433590ef2ac736efb621",
       "name": "Bridge",
       "role": "operational_periphery",
@@ -3062,8 +2685,8 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
+      "chain_id": 137,
+      "chain_name": "polygon",
       "address": "0x0000000071727de22e5e9d8baf0edac6f37da032",
       "name": "EntryPoint",
       "role": "unknown",
@@ -3075,15 +2698,6 @@
       "impl_address": null,
       "impl_name": "EntryPoint",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0000000071727de22e5e9d8baf0edac6f37da032",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -3120,8 +2734,8 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
+      "chain_id": 137,
+      "chain_name": "polygon",
       "address": "0x1820a4b7618bde71dce8cdc73aab6c95905fad24",
       "name": "ERC1820Registry",
       "role": "registry",
@@ -3133,15 +2747,6 @@
       "impl_address": null,
       "impl_name": "ERC1820Registry",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1820a4b7618bde71dce8cdc73aab6c95905fad24",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 137,
           "chain_name": "polygon",
@@ -3968,37 +3573,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd",
-      "name": "MasterChef",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "MANTRA DAO",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MasterChef",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 137,
       "chain_name": "polygon",
       "address": "0x14cf4464bfd5638b1e0ddabb51fc85198ebd3ee6",
@@ -4088,28 +3662,19 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x28ded2af752655df5ee92450dc259f92a5abe449",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x6cd7dcd88f3994e57557690d20d20105b72c1cba",
       "name": "NonfungiblePositionManager",
       "role": "governance",
       "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
+      "origin_provider": "algebra",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "NonfungiblePositionManager",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x28ded2af752655df5ee92450dc259f92a5abe449",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 137,
           "chain_name": "polygon",
@@ -4139,26 +3704,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x49be8aa6c684b15e0c5450e8fa0b16bec1435596",
+      "address": "0xabac6f23fdf1313fc2e9c9244f666157ccd32990",
       "name": "NonfungibleTokenPositionDescriptor",
       "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x49be8aa6c684b15e0c5450e8fa0b16bec1435596",
       "impl_name": "NonfungibleTokenPositionDescriptor",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x49be8aa6c684b15e0c5450e8fa0b16bec1435596",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -4394,28 +3950,19 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
+      "chain_id": 137,
+      "chain_name": "polygon",
       "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
       "name": "Permit2",
       "role": "unknown",
       "origin_kind": "standard_library",
-      "origin_provider": "Permit2",
+      "origin_provider": "permit2",
       "product_line": "Standard EVM Contracts",
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "Permit2",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 137,
           "chain_name": "polygon",
@@ -5115,37 +4662,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x46c5098f73fa656e82d7e9afbf3c00b32b7b1ee2",
-      "name": "StakedBPT",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "MANTRA DAO",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "StakedBPT",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x46c5098f73fa656e82d7e9afbf3c00b32b7b1ee2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x2cb5b9af0c307b931d2942f99a20eadeadc37f59",
       "name": "StakingFactory",
       "role": "registry",
@@ -5177,26 +4693,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x50fcbf85d23af7c91f94842fecd83d16665d27ba",
+      "address": "0x888b035e6f64b1c1aebcd6ddf0c9fd7aebea39ed",
       "name": "SwapRouter",
       "role": "adapter",
       "origin_kind": "upstream",
-      "origin_provider": "algebra-finance",
-      "product_line": "Farming Contracts",
+      "origin_provider": "algebra",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "SwapRouter",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x50fcbf85d23af7c91f94842fecd83d16665d27ba",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -5300,37 +4807,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc935285b0d88069305431dace0c3c01d7e793d84",
-      "name": "TokenPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "MANTRA DAO",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "TokenPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc935285b0d88069305431dace0c3c01d7e793d84",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 137,
       "chain_name": "polygon",
       "address": "0x2a6a7f70ce367517a64975bc37cc3c7b37c89e53",
@@ -5415,24 +4891,6 @@
       "impl_address": null,
       "impl_name": "UniswapV2Pair",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x57024267e8272618f9c5037d373043a8646507e5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9f624b25991b99d7b14d6740a9d581dd77980808",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 137,
           "chain_name": "polygon",
@@ -9180,37 +8638,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8",
-      "name": "Vyper_contract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "MANTRA DAO",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Vyper_contract",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 137,
       "chain_name": "polygon",
       "address": "0x385524ff6c66272bca61f3ed00f31327a9bec015",
@@ -9407,26 +8834,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x1321f1f1aa541a56c31682c57b80ecfccd9bb288",
-      "name": "ArcxTokenV2",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 949182.7041246513,
-      "risk_note": "Verified native implementation with $949,182.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2c23276107b45e64c8c59482f4a24f4f2e568ea6",
-      "name": "bVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 301520.89823886007,
-      "risk_note": "Verified native implementation with $301,520.90 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xaf9f549774ecedbd0966c52f250acc548d3f36e5",
       "name": "RFuelToken",
       "role": "token",
@@ -9443,36 +8850,6 @@
       "origin_kind": "native",
       "tvl_usd": 173296,
       "risk_note": "Verified native implementation with $173,296.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xebd12620e29dc6c452db7b96e1f190f3ee02bde8",
-      "name": "BACDAIPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 88280.57263998144,
-      "risk_note": "Verified native implementation with $88,280.57 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x51882184b7f9beed6db9c617846140da1d429fd4",
-      "name": "BACUSDCPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 86330.93511,
-      "risk_note": "Verified native implementation with $86,330.94 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2833bdc5b31269d356bdf92d0fd8f3674e877e44",
-      "name": "BACUSDTPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 71162.695824,
-      "risk_note": "Verified native implementation with $71,162.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -9497,42 +8874,12 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x9bffad7a6d5f52dbc51cae33e419793c72fd7d9d",
-      "name": "StakingAccrualERC20V5",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 12500.281793938997,
-      "risk_note": "Verified native implementation with $12,500.28 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x09ea9486f992643a1a3ee10f87e5a28c7d1def6e",
       "name": "UniStakingSyntheticToken",
       "role": "token",
       "origin_kind": "native",
       "tvl_usd": 11420.337770786073,
       "risk_note": "Verified native implementation with $11,420.34 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c",
-      "name": "BACSUSDPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 10,
-      "risk_note": "Verified native implementation with $10.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x76bac85e1e82cd677faa2b3f00c4a2626c4c6e32",
-      "name": "ERC20Peg",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 2.0002116135580077,
-      "risk_note": "Verified native implementation with $2.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -9570,26 +8917,6 @@
       "address": "0x89d065572136814230a55ddeeddec9df34eb0b76",
       "name": "AutoFarmV2_CrossChain",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc462d8ee54953e7d7bf276612b75387ea114c3bf",
-      "name": "BACyCRVPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0ec9f76202a7061eb9b3a7d6b59d36215a7e37da",
-      "name": "BlackPoolToken",
-      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -9717,16 +9044,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd",
-      "name": "MasterChef",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xc8899da25423ac52aa711b97ae04c8888fa1e1d7",
       "name": "OMGrantsEscrow",
       "role": "operational_periphery",
@@ -9847,16 +9164,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x46c5098f73fa656e82d7e9afbf3c00b32b7b1ee2",
-      "name": "StakedBPT",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x2cb5b9af0c307b931d2942f99a20eadeadc37f59",
       "name": "StakingFactory",
       "role": "registry",
@@ -9867,29 +9174,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xc935285b0d88069305431dace0c3c01d7e793d84",
-      "name": "TokenPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x5aefba317baba46eaf98fd6f381d07673bca6467",
       "name": "VolatilityOraclePluginImplementation",
       "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8",
-      "name": "Vyper_contract",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -9926,9 +9213,9 @@
     }
   ],
   "origin_summary": {
-    "native": 79,
-    "upstream": 24,
-    "standard_library": 13,
+    "native": 65,
+    "upstream": 23,
+    "standard_library": 14,
     "needs_review": 93
   },
   "scope_matching_notes": {

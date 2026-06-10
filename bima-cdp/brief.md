@@ -5,17 +5,17 @@
 - Project: BIMA CDP (`bima-cdp`)
 - Website: [https://bima.money/](https://bima.money/)
 - Lifecycle: active (Tier 0, 72.2% below peak)
-- Generated: 2026-05-23T16:31:39.611Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:58:59.196Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc, ethereum, sonic
-- Contract surface: 38 unique implementations (112 raw deployments)
-- DeFi Llama TVL: $5,357,645.39
+- Contract surface: 37 unique implementations (109 raw deployments)
+- DeFi Llama TVL: $5,315,000.87
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-BIMA CDP is a decentralized borrowing protocol that allows users to deposit collateral and mint a stablecoin (DebtToken) across multiple chains. It includes liquidation mechanisms, stability pools, and governance features to maintain the peg and manage risk.
+BIMA CDP is a decentralized Bitcoin-backed stablecoin and borrowing protocol positioned for universal yield. Users deposit collateral to mint the protocol stablecoin/debt token, with liquidation mechanisms, stability pools, and governance features used to maintain peg stability and manage risk across supported deployments and accounting chains.
 
 ### Architecture
 
@@ -23,26 +23,26 @@ The CDP family relies on Price Oracles for collateral valuation and Cross-Chain 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 16/32 (50.0%)
-- Verified + Unaudited implementations: 16
+- Verified implementations audited: 16/31 (51.6%)
+- Verified + Unaudited implementations: 15
 - Verified by bytecode match: 2
 - Unverified implementations: 6
-- Unique implementations: 38
-- Raw deployments: 112
+- Unique implementations: 37
+- Raw deployments: 109
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2025-06 (fresh)
-- Staleness: 1 fresh, 2 aging, 0 stale, 0 unknown
-- Tier 1 coverage: 50.0% (Cyfrin, Spearbit)
+- Latest audit: 2025-06 (aging)
+- Staleness: 0 fresh, 3 aging, 0 stale, 0 unknown
+- Tier 1 coverage: 51.6% (Cyfrin, Spearbit)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Cyfrin | Tier 1 | 14 | 43.8% | 2024-09 |
-| Unknown | Tier 2 | 11 | 34.4% | 2024-09 |
-| Spearbit | Tier 1 | 9 | 28.1% | 2025-06 |
+| Cyfrin | Tier 1 | 14 | 45.2% | 2024-09 |
+| Unknown | Tier 2 | 11 | 35.5% | 2024-09 |
+| Spearbit | Tier 1 | 9 | 29.0% | 2025-06 |
 
 ## Contract Surface
 
@@ -65,7 +65,7 @@ The CDP family relies on Price Oracles for collateral valuation and Cross-Chain 
 | TroveManager | governance | ethereum | 8 deployments: ethereum [`0x294672...ec4c05`](./contracts/ethereum-1/0x29467211ad35f97cea26ae11da0c427836ec4c05/); ethereum `0x5066dc...d36b97`; ethereum `0x8ed4f2...657938`; ethereum `0xa20c3d...800ff2`; bsc `0x8ed4f2...657938`; bsc `0xa20c3d...800ff2`; sonic `0x8ed4f2...657938`; sonic `0xa20c3d...800ff2` | ✅ Audited |
 | TroveManagerGetters | governance | ethereum | 3 deployments: ethereum [`0x6e26de...d7b1b1`](./contracts/ethereum-1/0x6e26de999ff1a1c39f44ba642e3b2f0e0cd7b1b1/); bsc [`0x6e26de...d7b1b1`](./contracts/bsc-56/0x6e26de999ff1a1c39f44ba642e3b2f0e0cd7b1b1/); sonic [`0x6e26de...d7b1b1`](./contracts/sonic-146/0x6e26de999ff1a1c39f44ba642e3b2f0e0cd7b1b1/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (16)
+### ⚠️ Verified + Unaudited (15)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -77,7 +77,6 @@ The CDP family relies on Price Oracles for collateral valuation and Cross-Chain 
 | BimaWrappedCollateralFactory | registry | ethereum | 3 deployments: ethereum [`0x76de9b...129dbf`](./contracts/ethereum-1/0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf/); bsc [`0x76de9b...129dbf`](./contracts/bsc-56/0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf/); sonic [`0x76de9b...129dbf`](./contracts/sonic-146/0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf/) | ⚠️ Unaudited |
 | BitFiStablecoinManager | governance | ethereum | [`0xb69865...d21f06`](./contracts/ethereum-1/0xb69865f8fa4bfc67ab4ad233e36ac593a5d21f06/) | ⚠️ Unaudited |
 | BitFiStablecoinZap | adapter | ethereum | [`0x140b55...4b66cb`](./contracts/ethereum-1/0x140b5517df7e33878eb0a494d6882cfac54b66cb/) | ⚠️ Unaudited |
-| EACAggregatorProxy | unknown | bsc | 3 deployments: ethereum `0xf40300...bee88c`; bsc [`0x264990...ca5ebf`](./contracts/bsc-56/0x264990fbd0a4796a3e3d8e37c4d5f87a3aca5ebf/); sonic `0x8bcd59...ae53ef` | ⚠️ Unaudited |
 | EnzoBTC | unknown | ethereum | [`0x6a9a65...fbce4a`](./contracts/ethereum-1/0x6a9a65b84843f5fd4ac9a0471c4fc11afffbce4a/) | ⚠️ Unaudited |
 | LBTC | unknown | sonic | [`0xecac9c...5c11c1`](./contracts/sonic-146/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited |
 | ProxyMock | unknown | ethereum | [`0xecac9c...5c11c1`](./contracts/ethereum-1/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited |
@@ -120,7 +119,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [2024-09-27-cyfrin-bima-v2.0.pdf](https://github.com/Bima-Labs/bima-core-audits/blob/main/aduits/2024-09-27-cyfrin-bima-v2.0.pdf) | Cyfrin | Audit | 2024-09 | aging | Direct | contract_name | 42 | high |
 | [20241023-Bima-Final-Audit-Report.pdf](https://github.com/Bima-Labs/bima-core-audits/blob/main/aduits/20241023-Bima-Final-Audit-Report.pdf) | Unknown | Audit | 2024-09 | aging | Direct | contract_name | 35 | high |
-| [cantina_competition_bima_december2024.pdf](https://github.com/Bima-Labs/bima-core-audits/blob/main/aduits/cantina_competition_bima_december2024.pdf) | Spearbit | Audit | 2025-06 | fresh | Direct | contract_name | 32 | medium |
+| [cantina_competition_bima_december2024.pdf](https://github.com/Bima-Labs/bima-core-audits/blob/main/aduits/cantina_competition_bima_december2024.pdf) | Spearbit | Audit | 2025-06 | aging | Direct | contract_name | 32 | medium |
 
 ## Coverage Gaps
 
@@ -145,7 +144,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 29 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 0 |
 | needs_review | 8 |
 

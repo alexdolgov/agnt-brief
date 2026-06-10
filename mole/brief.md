@@ -5,8 +5,8 @@
 - Project: Mole (`mole`)
 - Website: [https://mole.fi](https://mole.fi)
 - Lifecycle: active (Tier 0, 54.6% below peak)
-- Generated: 2026-05-29T10:53:26.005Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-06-10T20:59:07.778Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche
 - Contract surface: 49 unique implementations (220 raw deployments)
 - DeFi Llama TVL: $8,787,127.81
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Mole is a yield optimization protocol on Avalanche that automates delta-neutral strategies, primarily through leveraged staking and liquidity provision on Trader Joe. It uses a system of vaults, workers, and oracles to manage user deposits and generate yield.
+Mole is a DeFi yield protocol with current project activity and TVL attributed to Aptos and Sui. Any Avalanche EVM Trader Joe delta-neutral vault, worker, and oracle deployments should be treated as a separate legacy or currentness-unverified contract surface unless current project documentation or DefiLlama data confirms active Avalanche usage.
 
 ### Architecture
 

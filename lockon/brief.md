@@ -5,17 +5,17 @@
 - Project: LOCKON (`lockon`)
 - Website: [https://lockon.finance](https://lockon.finance)
 - Lifecycle: active (Tier 0, 58.3% below peak)
-- Generated: 2026-05-25T07:09:35.298Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:07.027Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, polygon
 - Contract surface: 23 unique implementations (62 raw deployments)
-- DeFi Llama TVL: $1,058,934.33
+- DeFi Llama TVL: $1,049,561.71
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-LOCKON is a DeFi protocol that issues index tokens (SetTokens) representing baskets of assets, managed by Controller contracts. It also provides staking, vesting, and airdrop mechanisms to incentivize participation and distribute rewards.
+LOCKON is a DeFi protocol for automated index tokens composed using wallet-portfolio analytics, including analysis of portfolios held by high-performing wallet addresses. Its on-chain system uses Set Protocol-style contracts and related modules for index token issuance, redemption, and rebalancing. Separate incentive-related contracts, if present, should not be treated as part of the current core product without contract-linkage evidence.
 
 ### Architecture
 

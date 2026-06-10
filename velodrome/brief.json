@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "velodrome",
-  "generated_at": "2026-05-26T14:44:14.992Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:18.531Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "velodrome",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 5,
     "coverage_pct": 40.4,
-    "total_audits": 8,
+    "total_audits": 6,
     "scoreable_audits": 2,
     "dl_tvl_usd": 40174427,
     "tvl_usd": 40174427,
@@ -55,13 +55,18 @@
       "fresh": 0,
       "aging": 1,
       "stale": 3,
-      "unknown": 3
+      "unknown": 2
     }
   },
   "topography": {
-    "project_purpose": "Velodrome is a decentralized exchange (DEX) protocol on Optimism and Celo that facilitates low-slippage token swaps and liquidity provision. It uses a ve(3,3) tokenomics model where VELO token holders can lock tokens to vote on gauge emissions and earn trading fees.",
+    "project_purpose": "Velodrome is a decentralized AMM and liquidity hub for the Optimism/Superchain ecosystem, with current deployments beyond only Optimism and Celo. It facilitates token swaps and liquidity provision and uses a ve(3,3) model in which VELO holders can lock tokens to vote on gauge emissions and earn trading fees.",
     "relationship_narrative": "Velodrome V2 and V3 share the VELO token for governance and emissions, with both versions having their own factory and pool contracts. The Gnosis Safe governs the overall protocol, controlling parameters across both product families.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 52,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1031,7 +1036,7 @@
       "chain_name": "optimism",
       "address": "0x0b98e071c552c3a70796589c0cc9d4f9a68a7356",
       "name": "NonfungiblePositionManager",
-      "role": "governance",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -2336,27 +2341,6 @@
   ],
   "audits": [
     {
-      "audit_id": 3917,
-      "audit_key": "audit-3917",
-      "report_name": "Active Bug Bounty Program",
-      "report_url": "https://immunefi.com/bug-bounty/velodromefinance/information",
-      "auditor": "Immunefi",
-      "audit_type": "bug_bounty",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 3918,
       "audit_key": "audit-3918",
       "report_name": "Audit",
@@ -2481,27 +2465,6 @@
       "audit_key": "audit-3921",
       "report_name": "ChainSecurity Audit",
       "report_url": "https://www.chainsecurity.com/security-audit/velodrome-superchain-interoperability",
-      "auditor": "ChainSecurity",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3922,
-      "audit_key": "audit-3922",
-      "report_name": "ChainSecurity Extended Audit",
-      "report_url": "https://www.chainsecurity.com/security-audit/superchain-diff",
       "auditor": "ChainSecurity",
       "audit_type": "audit",
       "freshness": "unknown",
@@ -2828,10 +2791,6 @@
         "report_name": "ChainSecurity Audit"
       },
       {
-        "audit_id": 3922,
-        "report_name": "ChainSecurity Extended Audit"
-      },
-      {
         "audit_id": 3923,
         "report_name": "ChainSecurity Slipstream Audit"
       },
@@ -2842,9 +2801,5 @@
     ],
     "inherited_remapped_matches": []
   },
-  "active_bug_bounty": {
-    "platform": "Immunefi",
-    "url": "https://immunefi.com/bug-bounty/velodromefinance/information",
-    "tier": 1
-  }
+  "active_bug_bounty": null
 }

@@ -5,17 +5,17 @@
 - Project: Looping Collective (`looping-collective`)
 - Website: [https://www.loopingcollective.org/](https://www.loopingcollective.org/)
 - Lifecycle: active (Tier 0, 74% below peak)
-- Generated: 2026-05-22T18:38:10.281Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:07.034Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, hyperliquid
 - Contract surface: 14 unique implementations (94 raw deployments)
-- DeFi Llama TVL: $18,116,341.00
+- DeFi Llama TVL: $15,634,441.00
 - On-chain TVL (included contracts): $11,811,614.34
 - TVL by chain: Ethereum $11,607,539.08 | Hyperliquid $204,075.26
 
 ## Project Description
 
-Looping Collective is a yield protocol that aggregates user deposits into vaults which deploy capital across DeFi strategies, including leveraged looping and integration with Hyperliquid. It offers multiple vault products with rate providers and oracles to optimize and report yields.
+Looping Collective is an active yield protocol offering user-facing vault products including LHYPE, wHLP, and LcBTC/loopedBTC. Its vaults aggregate deposits and deploy capital across DeFi strategies, including leveraged looping and Hyperliquid integrations, with supporting rate providers, accountants, adapters, and oracle-related components used to optimize and report yields.
 
 ### Architecture
 
@@ -23,42 +23,39 @@ The Vault Infrastructure family provides reusable UltraVault logic and rate prov
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/13 (7.7%)
-- Verified + Unaudited implementations: 11
+- Verified implementations audited: 0/13 (0.0%)
+- Verified + Unaudited implementations: 12
 - Verified by bytecode match: 1
 - Unverified implementations: 1
 - Unique implementations: 14
 - Raw deployments: 94
-- Audits discovered: 13
-- Scoreable audits (matched contracts): 1
+- Audits discovered: 0
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $11,811,614.34
-- Latest audit: 2026-01 (fresh)
-- Staleness: 3 fresh, 0 aging, 0 stale, 10 unknown
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| Zenith | Tier 2 | 1 | 7.7% | 2026-01 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (1)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AccountantWithRateProviders | operational_periphery | hyperliquid | 2 deployments: hyperliquid [`0x470bd1...e8bdff`](./contracts/hyperliquid-999/0x470bd109a24f608590d85fc1f5a4b6e625e8bdff/); hyperliquid `0xce621a...f001c3` | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (11)
+### ⚠️ Verified + Unaudited (12)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | UltraVault | core_logic | ethereum | 20 deployments: ethereum [`0x26573c...a95318`](./contracts/ethereum-1/0x26573c17e2399c19f64e61bf295c85e150a95318/); ethereum `0x36bdae...5bbcb3`; ethereum `0x472425...99914f`; ethereum `0x48bf9f...3a14c1`; ethereum `0x546329...00bca1`; ethereum `0x597768...c4da81`; ethereum `0x599c41...afa67e`; ethereum `0x686013...a23832`; ethereum `0x6b13ca...8ca3c6`; ethereum `0x776c93...b6c871`; ethereum `0x77e649...86948a`; ethereum `0x82157f...7d391f`; ethereum `0x88300e...ecd847`; ethereum `0x8ecc0b...be91db`; ethereum `0xaa3cb3...1e957d`; ethereum `0xbb876b...e6c1ec`; ethereum `0xc46efc...3b7908`; ethereum `0xe66f6a...46abe2`; ethereum `0xef8699...410729`; ethereum `0xfacaa2...198ae9` | ⚠️ Unaudited |
 | BoringVault | core_logic | hyperliquid | 2 deployments: hyperliquid [`0x1359b0...4c0de8`](./contracts/hyperliquid-999/0x1359b05241ca5076c9f59605214f4f84114c0de8/); hyperliquid `0x5748ae...485562` | ⚠️ Unaudited |
+| AccountantWithRateProviders | operational_periphery | hyperliquid | 2 deployments: hyperliquid [`0x470bd1...e8bdff`](./contracts/hyperliquid-999/0x470bd109a24f608590d85fc1f5a4b6e625e8bdff/); hyperliquid `0xce621a...f001c3` | ⚠️ Unaudited |
 | AtomicQueueUCP | unknown | hyperliquid | [`0x228c44...5112e5`](./contracts/hyperliquid-999/0x228c44bb4885c6633f4b6c83f14622f37d5112e5/) | ⚠️ Unaudited |
 | HyperLiquidComposer | unknown | hyperliquid | 2 deployments: hyperliquid [`0x036afc...44484b`](./contracts/hyperliquid-999/0x036afc9e3498ec863239e9e3f7eeb5af9c44484b/); hyperliquid `0xcb768e...dc59cc` | ⚠️ Unaudited |
-| HyperliquidExtension | adapter | hyperliquid | 2 deployments: hyperliquid [`0xb8ce59...625ebb`](./contracts/hyperliquid-999/0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb/); hyperliquid `0xf555a1...db34b9` | ⚠️ Unaudited |
+| HyperliquidExtension | proxy | hyperliquid | 2 deployments: hyperliquid [`0xb8ce59...625ebb`](./contracts/hyperliquid-999/0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb/); hyperliquid `0xf555a1...db34b9` | ⚠️ Unaudited |
 | PermissionedUltraVault | core_logic | ethereum | 2 deployments: ethereum [`0x2720ea...8a6d28`](./contracts/ethereum-1/0x2720eaedca08e7ffd05afe8e142ded40c18a6d28/); ethereum `0x91fe26...ec3b28` | ⚠️ Unaudited |
 | ProxyAdmin | governance | hyperliquid | [`0x779ded...713736`](./contracts/hyperliquid-999/0x779ded0c9e1022225f8e0630b35a9b54be713736/) | ⚠️ Unaudited |
 | UltraFrontendHelper | periphery | ethereum | 19 deployments: ethereum [`0x1414c2...25ffd9`](./contracts/ethereum-1/0x1414c25624a80540cad83f123ff2e0be8925ffd9/); ethereum `0x264638...808921`; ethereum `0x2bf69e...7f3e5d`; ethereum `0x3054fc...817dc9`; ethereum `0x481cac...2f2a71`; ethereum `0x722b39...fe4060`; ethereum `0x7d159f...de32e7`; ethereum `0x7de61e...5e8b98`; ethereum `0x7f37fa...d6d1c1`; ethereum `0x93bffc...55571b`; ethereum `0xa2b51c...e5bb6f`; ethereum `0xa95d73...92a778`; ethereum `0xaea48c...114414`; ethereum `0xc1bf23...ccbbfa`; ethereum `0xcb3858...367bd3`; ethereum `0xda4939...a3f1df`; ethereum `0xea8baf...bda2a9`; ethereum `0xf076c4...544729`; ethereum `0xf1b807...f362d2` | ⚠️ Unaudited |
@@ -92,19 +89,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [0xmacro-boring-vault-arctic-0.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-0.pdf) | 0xMacro | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0xmacro-boring-vault-arctic-1.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-1.pdf) | 0xMacro | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [pashov-boring-vault.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-boring-vault.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [pashov-hlp-controller:account.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-hlp-controller%3Aaccount.pdf) | Pashov Audit Group | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [pashov-hyperlane.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-hyperlane.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [pashov-one-to-one-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-one-to-one-queue.pdf) | Pashov Audit Group | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
-| [pashov-predicate-freeze-supply-cap.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-predicate-freeze-supply-cap.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [pashov-withdraw-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-withdraw-queue.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [spearbit-boring-vault-arctic-0.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/spearbit-boring-vault-arctic-0.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [zenith-one-to-one-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/zenith-one-to-one-queue.pdf) | Zenith | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [zenith-withdraw-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/zenith-withdraw-queue.pdf) | Zenith | Audit | 2026-01 | fresh | Direct | contract_name | 2 | high |
-| [v1_May_2025_ChainSecurity.pdf](https://github.com/UltraYield/contracts/blob/main/audits/v1_May_2025_ChainSecurity.pdf) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [v2_Sep_2025_Omniscia.pdf](https://github.com/UltraYield/contracts/blob/main/audits/v2_Sep_2025_Omniscia.pdf) | Omniscia | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -113,6 +97,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | hyperliquid | [`0x1359b0...4c0de8`](./contracts/hyperliquid-999/0x1359b05241ca5076c9f59605214f4f84114c0de8/) | BoringVault | core_logic | $204,075.26 | Verified native implementation with $204,075.26 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x470bd1...e8bdff`](./contracts/hyperliquid-999/0x470bd109a24f608590d85fc1f5a4b6e625e8bdff/) | AccountantWithRateProviders | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | hyperliquid | [`0x036afc...44484b`](./contracts/hyperliquid-999/0x036afc9e3498ec863239e9e3f7eeb5af9c44484b/) | HyperLiquidComposer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1414c2...25ffd9`](./contracts/ethereum-1/0x1414c25624a80540cad83f123ff2e0be8925ffd9/) | UltraFrontendHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x230f64...c172fb`](./contracts/ethereum-1/0x230f6426987535b2478a7b7470385590b5c172fb/) | UltraVaultEthAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -133,24 +118,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 12
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=2
-
-Zero-match audit list:
-
-- [1952] 0xmacro-boring-vault-arctic-0.pdf
-- [1953] 0xmacro-boring-vault-arctic-1.pdf
-- [1954] pashov-boring-vault.pdf
-- [1955] pashov-hlp-controller:account.pdf
-- [1956] pashov-hyperlane.pdf
-- [1957] pashov-one-to-one-queue.pdf
-- [1958] pashov-predicate-freeze-supply-cap.pdf
-- [1959] pashov-withdraw-queue.pdf
-- [1960] spearbit-boring-vault-arctic-0.pdf
-- [1961] zenith-one-to-one-queue.pdf
-- [1963] v1_May_2025_ChainSecurity.pdf
-- [1964] v2_Sep_2025_Omniscia.pdf
+- Extraction confidence breakdown: n/a
+- Match method counts: n/a
 
 Fork inheritance lineage and inherited audits are included when available.

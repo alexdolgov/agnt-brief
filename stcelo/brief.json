@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stcelo",
-  "generated_at": "2026-05-24T18:21:34.811Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.654Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stcelo",
@@ -35,7 +35,7 @@
     "coverage_pct": 50,
     "total_audits": 2,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 1701436.55613,
+    "dl_tvl_usd": 1598039.51756,
     "tvl_usd": 1635081.823928974,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -61,6 +61,11 @@
     "project_purpose": "stCELO is a liquid staking protocol on Celo that allows users to stake CELO and receive a liquid staking token (stCELO) representing their staked position, while earning staking rewards. It also provides a rebasing variant (rstCELO) that automatically compounds rewards.",
     "relationship_narrative": "The stCELO family relies on the Account family for user account management and staking logic, with both families using ERC1967Proxy for upgradeability. The Manager contract governs the stCELO system, while StakedCelo and RebasedStakedCelo tokens represent user stakes.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 19,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

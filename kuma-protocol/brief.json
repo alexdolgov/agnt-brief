@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kuma-protocol",
-  "generated_at": "2026-05-24T08:01:43.504Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:06.773Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "kuma-protocol",
@@ -26,16 +26,16 @@
     "total_addresses": 210,
     "unique_implementations": 53,
     "total_deployments": 210,
-    "audited_contracts": 11,
-    "unaudited_contracts": 21,
-    "contracts_verified_audited": 11,
-    "contracts_verified_unaudited": 21,
+    "audited_contracts": 9,
+    "unaudited_contracts": 23,
+    "contracts_verified_audited": 9,
+    "contracts_verified_unaudited": 23,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 21,
-    "coverage_pct": 34.4,
-    "total_audits": 3,
-    "scoreable_audits": 2,
-    "dl_tvl_usd": 3079914.8355799997,
+    "coverage_pct": 28.1,
+    "total_audits": 2,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 3091274.45922,
     "tvl_usd": 3102306.926969789,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -51,7 +51,7 @@
       "mantle",
       "polygon"
     ],
-    "tier1_coverage_pct": 34.4,
+    "tier1_coverage_pct": 28.1,
     "tier1_auditors": [
       "Code4rena"
     ],
@@ -60,14 +60,19 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 2,
+      "stale": 1,
       "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "KUMA Protocol is a decentralized platform for issuing and managing yield-bearing tokens backed by real-world assets (RWAs), specifically sovereign bonds. It provides infrastructure for tokenizing bonds, managing interest rate feeds, and facilitating swaps between bond tokens and stablecoins.",
+    "project_purpose": "KUMA Protocol provides infrastructure for regulated real-world-asset-backed yield tokens. It swaps regulated MCAG-issued KUMA NFTs, initially backed by sovereign bonds, into transferable interest-bearing ERC-20 KIBTs, supported by KIBToken, KBCToken/KUMABondToken components, address-provider and access-control registry infrastructure, rate/feed integrations, fee collection, and swap contracts. Claims that KUMA directly tokenizes sovereign bonds or primarily facilitates stablecoin swaps should be qualified unless separately sourced.",
     "relationship_narrative": "The KUMA Protocol family provides the core infrastructure (rate feeds, swaps, fee collection) shared by all token instances. Individual token families (EGK, FRK, USK) are specific deployments of KIBToken that rely on the protocol's registries and access controllers for operation.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 53,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -234,8 +239,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2758",
-        "audit-2760"
+        "audit-2758"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -349,7 +353,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -358,7 +362,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -367,7 +371,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -376,7 +380,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -385,7 +389,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -394,7 +398,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -403,7 +407,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -412,7 +416,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -421,7 +425,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -430,7 +434,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -439,7 +443,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -448,7 +452,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -457,7 +461,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -466,16 +470,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2760"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -606,8 +608,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2758",
-        "audit-2760"
+        "audit-2758"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1189,8 +1190,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2758",
-        "audit-2760"
+        "audit-2758"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1277,7 +1277,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -1286,7 +1286,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -1295,7 +1295,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -1304,7 +1304,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -1313,7 +1313,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -1322,16 +1322,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2760"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1458,8 +1456,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2758",
-        "audit-2760"
+        "audit-2758"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1528,8 +1525,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2758",
-        "audit-2760"
+        "audit-2758"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1679,8 +1675,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2758",
-        "audit-2760"
+        "audit-2758"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1830,8 +1825,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2758",
-        "audit-2760"
+        "audit-2758"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1976,8 +1970,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2758",
-        "audit-2760"
+        "audit-2758"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2109,8 +2102,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2758",
-        "audit-2760"
+        "audit-2758"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -3216,58 +3208,14 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2760,
-      "audit_key": "audit-2760",
-      "report_name": "Public Github Repo: <>",
-      "report_url": "https://github.com/code-423n4/2023-02-kuma",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "stale",
-      "date": "2023-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AccessController",
-        "Blacklist",
-        "IBlacklist",
-        "IKBCToken",
-        "IKIBToken",
-        "IKUMAAddressProvider",
-        "IKUMABondToken",
-        "IKUMAFeeCollector",
-        "IKUMASwap",
-        "IKYCToken",
-        "IMCAGRateFeed",
-        "KBCToken",
-        "KIBToken",
-        "KUMAAccessController",
-        "KUMAAddressProvider",
-        "KUMABondToken",
-        "KUMAFeeCollector",
-        "KUMASwap",
-        "KYCToken",
-        "MCAGAggregator",
-        "MCAGAggregatorInterface",
-        "MCAGRateFeed"
-      ],
-      "matched_contracts": 118,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
       "auditor": "Code4rena",
       "tier": 1,
-      "contracts_covered": 11,
-      "coverage_pct": 34.4,
+      "contracts_covered": 9,
+      "coverage_pct": 28.1,
       "latest_audit": "2023-02"
     }
   ],
@@ -3281,6 +3229,16 @@
       "origin_kind": "native",
       "tvl_usd": 23142.22376775833,
       "risk_note": "Verified native implementation with $23,142.22 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x00142b50b435a6ddef5d91bfbb7208ecd2a05e7c",
+      "name": "AccessController",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 137,
@@ -3348,6 +3306,16 @@
       "address": "0x82c3e5aa2b31a9bdcc9149fb8050464d2c77b4f0",
       "name": "KIBTAggregator",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5fad6f80312aee6f19784a7fc359f90d441163de",
+      "name": "KUMAAccessController",
+      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -3451,10 +3419,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 216
+      "extraction_exact": 98
     },
     "extraction_confidence_counts": {
-      "high": 2
+      "high": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

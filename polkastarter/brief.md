@@ -1,27 +1,26 @@
 # Agentic Audit Brief: Polkastarter
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Polkastarter (`polkastarter`)
 - Website: [https://polkastarter.com/#upcoming-projects](https://polkastarter.com/#upcoming-projects)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:18:37.986Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:09.350Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $2,996,295.21
 - On-chain TVL (included contracts): $9,606,725.61
 - TVL by chain: Ethereum $9,606,725.61
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Polkastarter is a decentralized launchpad platform that enables early-stage blockchain projects to raise capital through token sales. It provides a permissionless environment for fundraising and token distribution.
-
-### Architecture
-
-The project consists of a single product family centered around the POLS token, with no additional contracts or families to relate.
+Polkastarter is a curated crypto launchpad and IDO platform that connects blockchain projects with early backers for token launches and fundraising. The POLS token is used for access, staking/POLS Power, and related launchpad participation.
 
 ## Audit Coverage Summary
 
@@ -37,7 +36,6 @@ The project consists of a single product family centered around the POLS token, 
 - Latest audit: 2021-06 (stale)
 - Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $9,606,725.61 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

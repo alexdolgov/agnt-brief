@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "swappi",
-  "generated_at": "2026-05-24T15:47:11.328Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.873Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1963061.77655,
-    "tvl_usd": 1963061.77655,
+    "dl_tvl_usd": 1884776.49566,
+    "tvl_usd": 1884776.49566,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Swappi is a decentralized exchange (DEX) protocol that enables users to swap tokens and provide liquidity in automated market maker (AMM) pools. It appears to be based on the Uniswap V2 model, facilitating permissionless token trading and yield generation for liquidity providers.",
-    "relationship_narrative": "No contract inventory or structural relationships were provided, so no shared infrastructure or dependencies can be described.",
+    "project_purpose": "Swappi is an AMM-based decentralized exchange (DEX) deployed on Conflux Network. It enables users to swap tokens and provide liquidity in automated market maker pools, appears to be based on the Uniswap V2 model, and facilitates permissionless token trading and yield generation for liquidity providers.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

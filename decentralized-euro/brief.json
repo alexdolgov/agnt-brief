@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "decentralized-euro",
-  "generated_at": "2026-05-25T14:30:55.782Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:01.655Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "decentralized-euro",
@@ -35,7 +35,7 @@
     "coverage_pct": 28.2,
     "total_audits": 3,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 2077487.13916,
+    "dl_tvl_usd": 2066429.17095,
     "tvl_usd": 230430927.12046355,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -65,9 +65,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Decentralized Euro is a collateralized debt position (CDP) protocol that issues EUR-pegged stablecoins against various crypto assets. It also provides savings vaults, cross-chain bridges, and governance tokens to manage the system.",
+    "project_purpose": "Decentralized Euro is a collateralized debt position (CDP) protocol that issues the EUR-pegged dEURO stablecoin against supported collateral assets. Its in-scope protocol surface is focused on dEURO minting/CDP functionality, savings, and protocol-share/governance-related tokens; external euro stablecoins, bridges, and standard tokens should be treated only as integrations or counterparty assets, not as dEURO-owned protocol contracts.",
     "relationship_narrative": "The Decentralized Euro Core family provides the foundational CDP and stablecoin logic, while the Active EUR Stablecoin Bridges family extends it cross-chain. SavingsVault, MintingHub, PositionFactory, and PositionRoller families interact with the core to manage vaults, minting, and positions, and the DEPS/nDEPS tokens serve as governance and equity across the system.",
     "product_family_count": 11
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 72,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -465,7 +470,7 @@
       "chain_name": "arbitrum",
       "address": "0x5e85faf503621830ca857a5f38b982e0cc57d537",
       "name": "ClonableBeaconProxy",
-      "role": "registry",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Decentralized Euro",
@@ -2819,7 +2824,7 @@
       "chain_name": "arbitrum",
       "address": "0x5e85faf503621830ca857a5f38b982e0cc57d537",
       "name": "ClonableBeaconProxy",
-      "role": "registry",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

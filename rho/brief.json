@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "rho",
-  "generated_at": "2026-05-24T11:37:09.273Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:11.410Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "rho",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 5.016009325820867
   },
   "summary": {
-    "total_contracts": 32,
-    "total_addresses": 36,
-    "unique_implementations": 32,
-    "total_deployments": 36,
+    "total_contracts": 31,
+    "total_addresses": 35,
+    "unique_implementations": 31,
+    "total_deployments": 35,
     "audited_contracts": 0,
-    "unaudited_contracts": 3,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 29,
     "coverage_pct": 0,
-    "total_audits": 4,
+    "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2441166,
-    "tvl_usd": 2441166,
+    "dl_tvl_usd": 2472255,
+    "tvl_usd": 2472255,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -51,14 +51,19 @@
     "staleness_breakdown": {
       "fresh": 2,
       "aging": 0,
-      "stale": 1,
+      "stale": 0,
       "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Rho is a DeFi protocol offering structured yield and derivatives products. It includes vaults that generate yield on stablecoins and a separate product line (Rho X) that issues a yield-bearing stablecoin (YUSD) backed by LP positions.",
+    "project_purpose": "Rho is a crypto-native interest-rate derivatives and funding-rate trading venue. Its product surface includes vaults for passive USDT/USDC liquidity and yield. Do not describe Rho X as a YUSD minting or YUSD-backed yield-bearing stablecoin system unless project-owned evidence establishes that connection.",
     "relationship_narrative": "The Mainnet family provides the foundational vault logic and proxy infrastructure, while Rho X extends it with a stablecoin minted against LP vault positions. Both families share the same deployer cluster and likely interact through token flows between vaults and the YUSD contract.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 31,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1061,37 +1066,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a",
-      "name": "YUSD",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Rho X",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "YUSD",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     }
   ],
   "audits": [
@@ -1157,27 +1131,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2814,
-      "audit_key": "audit-2814",
-      "report_name": "Rho Protocol Audit Report",
-      "report_url": "https://oxor-io.github.io/public_audits/Rho/Rho%20Protocol%20Audit%20Report.pdf",
-      "auditor": "Halborn",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -1191,20 +1144,10 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a",
-      "name": "YUSD",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 5,
+    "native": 4,
     "upstream": 0,
     "standard_library": 1,
     "needs_review": 26
@@ -1226,10 +1169,6 @@
       {
         "audit_id": 2813,
         "report_name": "Vault Contracts v2 Audit"
-      },
-      {
-        "audit_id": 2814,
-        "report_name": "Rho Protocol Audit Report"
       }
     ],
     "inherited_remapped_matches": []

@@ -5,17 +5,17 @@
 - Project: BiFi (`bifi`)
 - Website: [https://bifi.finance/](https://bifi.finance/)
 - Lifecycle: active (Tier 0, 84.2% below peak)
-- Generated: 2026-05-23T08:35:31.827Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:58:59.187Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, ethereum, klaytn
 - Contract surface: 170 unique implementations (238 raw deployments)
-- DeFi Llama TVL: $7,540,816.50
+- DeFi Llama TVL: $7,429,579.52
 - On-chain TVL (included contracts): $236,661.09
 - TVL by chain: Ethereum $236,661.09
 
 ## Project Description
 
-BiFi is a multi-chain lending protocol that enables users to supply and borrow assets through handler contracts managing token-specific pools. It uses proxy-based upgradeability and a centralized manager to coordinate operations across different tokens and chains.
+BiFi is a cross-chain lending and borrowing platform powered by Bifrost, positioned around native cross-chain functionality without relying on bridges or wrapped tokens. Its current Cross-chain BiFi deployment on Bifrost Network and Binance/BSC should be distinguished from legacy Ethereum, Avalanche, and Klaytn lending deployments that used handler/manager-style contracts and proxy-based upgradeability.
 
 ### Architecture
 

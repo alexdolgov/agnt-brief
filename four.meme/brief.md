@@ -5,21 +5,22 @@
 - Project: four.meme (`four.meme`)
 - Website: [https://four.meme?code=DZ9DF74J64FA](https://four.meme?code=DZ9DF74J64FA)
 - Lifecycle: active (Tier 0, 54.7% below peak)
-- Generated: 2026-05-23T18:50:22.710Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:04.053Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $4,894,948.33
+- DeFi Llama TVL: $4,904,447.58
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Four.meme is a launchpad protocol on BSC that enables users to create and trade meme tokens. It provides a platform for token launches and initial liquidity events.
-
-### Architecture
-
-The two proxy contracts likely represent the main launchpad logic and a supporting module (e.g., fee handler or token factory), sharing the same product family with no external dependencies.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 
@@ -69,7 +70,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | Proxy (impl: 0x57df49f5d8412d05e792c30c023ee974c48a90b5) | proxy | bsc | `0xec4549...33bfbc` | ❓ Unverified |
-| Proxy (impl: 0xd63cbf542c7096b1df52c7e97644f365c0ebc6fe) | proxy | bsc | `0x5c9520...50762b` | ❓ Unverified |
+| Proxy (impl: 0x7f9411ea1a34b0b0d91a54b4776d00e78a329bbf) | proxy | bsc | `0x5c9520...50762b` | ❓ Unverified |
 
 ## Audit Inventory
 

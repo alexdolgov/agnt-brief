@@ -7,30 +7,31 @@
 - Project: NeuralAI (`neuralai`)
 - Website: [https://goneural.ai/](https://goneural.ai/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:06:21.786Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:08.138Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 3 unique implementations (3 raw deployments)
+- Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $1,220,164.43
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-NeuralAI is a DeFi protocol that enables users to stake tokens and earn rewards, likely centered around a staking mechanism involving its native token and a wrapped TAO token.
-
-### Architecture
-
-The NeuralAI contract likely serves as the main farm or coordinator, while NeuralStaking is the staking token and wTAO is a wrapped token used within the staking ecosystem.
+NeuralAI is an AI/Web3 gaming infrastructure project. Its Ethereum $NEURAL token is part of the project's tokenomics, while any launchpad, staking, or related ecosystem mechanics should be treated as tokenomics or upcoming ecosystem features only where separately supported. wTAO should not be described as a core NeuralAI staking component without evidence of integration, and the broader project identity should account for both Ethereum and Solana $NEURAL token presence where in scope.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
-- Verified + Unaudited implementations: 3
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 3
-- Raw deployments: 3
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -49,13 +50,12 @@ The NeuralAI contract likely serves as the main farm or coordinator, while Neura
 
 - None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | NeuralAI | unknown | ethereum | [`0x32b053...bde6e1`](./contracts/ethereum-1/0x32b053f2cba79f80ada5078cb6b305da92bde6e1/) | ⚠️ Unaudited |
 | NeuralStaking | token | ethereum | [`0xbe2cf8...9b20c3`](./contracts/ethereum-1/0xbe2cf8da9887e2ab997ed53cc49263ebd09b20c3/) | ⚠️ Unaudited |
-| wTAO | unknown | ethereum | [`0x77e06c...5b0a44`](./contracts/ethereum-1/0x77e06c9eccf2e797fd462a92b6d7642ef85b0a44/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 2 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |
 

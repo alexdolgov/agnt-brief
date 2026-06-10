@@ -7,8 +7,8 @@
 - Project: Parasail (`parasail`)
 - Website: [https://www.parasail.network/](https://www.parasail.network/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:12:30.915Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:09.197Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum
 - Contract surface: 41 unique implementations (43 raw deployments)
 - DeFi Llama TVL: $3,597,668.87
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Parasail is a restaking protocol on Arbitrum One that enables users to restake assets to secure external services. It uses an InterchainToken for cross-chain functionality and proxy-based upgradeable contracts.
+Parasail is a DePIN/restaking incentive interface tracked across multiple networks, including Fluence, Arbitrum, Swan, and Filecoin, with TVL primarily on Filecoin rather than Arbitrum. It should not be described as an Arbitrum-only restaking protocol.
 
 ### Architecture
 

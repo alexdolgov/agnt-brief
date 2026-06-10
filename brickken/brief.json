@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "brickken",
-  "generated_at": "2026-05-31T07:34:59.917Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.120Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "brickken",
@@ -59,9 +59,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Brickken is a real-world asset (RWA) tokenization protocol that enables the issuance, management, and trading of tokenized securities. It provides a factory-based infrastructure for creating and managing security token offerings (STOs), including token and escrow contracts.",
+    "project_purpose": "Brickken is an institutional digital asset and real-world asset (RWA) tokenization platform. It provides infrastructure for no-code asset issuance, compliance workflows such as KYC/KYB, investor onboarding, token offerings, white-label token stores or portals, marketplace-style functionality, and lifecycle management across multiple asset classes.",
     "relationship_narrative": "The STOFactoryManagedUpgradeable acts as a central registry and factory, deploying and managing STOTokenManagedUpgradeable and STOEscrowManagedUpgradeable instances via proxy patterns. UpgradeableBeaconToken and UpgradeableBeaconEscrow serve as beacon proxies that point to the respective implementation contracts, enabling upgradeability across all deployed tokens and escrows.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 29,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

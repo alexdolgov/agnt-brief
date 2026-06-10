@@ -7,17 +7,17 @@
 - Project: DerivaDEX (`derivadex`)
 - Website: [http://derivadex.com](http://derivadex.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T07:50:57.875Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.839Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 9 unique implementations (10 raw deployments)
+- Contract surface: 8 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $1,617,904.02
-- On-chain TVL (included contracts): $16,891,211.09
-- TVL by chain: Ethereum $16,891,211.09
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-DerivaDEX is a decentralized derivatives exchange that enables trustless trading of perpetual contracts and other derivative products. It uses an insurance fund to manage risk and a tokenized representation of assets for collateral and settlement.
+DerivaDEX is a decentralized, community-governed crypto derivatives exchange. The protocol is associated with the DDX token and uses an insurance fund, including insurance mining, to help manage protocol risk.
 
 ### Architecture
 
@@ -25,19 +25,19 @@ The DerivaDEX proxy delegates to the InsuranceFund implementation, indicating th
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/7 (0.0%)
-- Verified + Unaudited implementations: 7
+- Verified implementations audited: 0/6 (0.0%)
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 9
-- Raw deployments: 10
+- Unique implementations: 8
+- Raw deployments: 9
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $16,891,211.09
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $16,891,211.09 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,11 +49,10 @@ The DerivaDEX proxy delegates to the InsuranceFund implementation, indicating th
 
 - None
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| CErc20Delegate | token | ethereum | [`0xf650c3...07dcc9`](./contracts/ethereum-1/0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9/) | ⚠️ Unaudited |
 | DDXWalletCloneable | unknown | ethereum | [`0xc1e9e3...edfb3a`](./contracts/ethereum-1/0xc1e9e37c8bc1ef53dc5843a14407ee8743edfb3a/) | ⚠️ Unaudited |
 | DIFundTokenFactory | registry | ethereum | [`0xe49478...4ff91c`](./contracts/ethereum-1/0xe49478b6973e7c9e0236081c89c609643f4ff91c/) | ⚠️ Unaudited |
 | Governance | unknown | ethereum | [`0xbfd5a7...b249c2`](./contracts/ethereum-1/0xbfd5a73bafc692190846e04fa7b3f22325b249c2/) | ⚠️ Unaudited |
@@ -107,7 +106,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 8 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

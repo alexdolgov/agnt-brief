@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Overnight Finance
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 44.4% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 44.4% over 90 days
 
 ## Project Overview
 
 - Project: Overnight Finance (`overnight-finance`)
 - Website: [https://overnight.fi](https://overnight.fi)
-- Lifecycle: unknown (Tier 0, 63.6% below peak)
-- Generated: 2026-05-31T10:13:25.939Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 63.6% below peak)
+- Generated: 2026-06-10T20:59:09.094Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, blast, bsc, ethereum, linea, optimism, polygon, sonic, zksync-era
 - Contract surface: 4353 unique implementations (4353 raw deployments)
 - DeFi Llama TVL: $10,007,795.66
@@ -29,7 +29,7 @@
 - Latest audit: 2023-03 (stale)
 - Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

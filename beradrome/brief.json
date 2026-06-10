@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "beradrome",
-  "generated_at": "2026-05-30T19:20:03.712Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-30-c7d699-40af",
+  "generated_at": "2026-06-10T20:58:59.176Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "beradrome",
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Beradrome is a yield protocol on Berachain that provides tokenized vaults for automated liquidity management. It uses adapter contracts to integrate with external routers for yield optimization.",
+    "project_purpose": "Beradrome is a Berachain restaking and liquidity marketplace with ve(3,3)-style incentives. Any vault or adapter functionality should be limited to verified Kodiak-related adapters unless additional vault contracts or documentation are confirmed.",
     "relationship_narrative": "The Vaults family uses adapter contracts to interact with external Kodiak Island routers, while the Beradrome token likely serves as the governance or reward token across these vaults. Both families are deployed by the same deployer, indicating shared ownership and potential integration.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

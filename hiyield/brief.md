@@ -5,8 +5,8 @@
 - Project: HiYield (`hiyield`)
 - Website: [https://www.hiyield.xyz](https://www.hiyield.xyz)
 - Lifecycle: active (Tier 0, 33.6% below peak)
-- Generated: 2026-05-31T08:21:51.104Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.631Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, canto, ethereum
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $2,727,183.81
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-HiYield is a Real World Asset (RWA) protocol that tokenizes off-chain assets, enabling users to earn yield from real-world financial instruments on-chain.
+HiYield is a single Real World Asset (RWA) protocol that tokenizes off-chain assets and enables users to earn yield from real-world financial instruments on-chain. The currently collected contract addresses should be treated as unclassified by chain unless further evidence establishes their specific roles or product relationships.
 
 ### Architecture
 

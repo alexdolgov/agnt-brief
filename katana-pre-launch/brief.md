@@ -5,17 +5,17 @@
 - Project: Katana Pre-Launch (`katana-pre-launch`)
 - Website: [https://app.katana.network/](https://app.katana.network/)
 - Lifecycle: active (Tier 0, 92.6% below peak)
-- Generated: 2026-05-22T17:51:33.302Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:06.459Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, ethereum
-- Contract surface: 166 unique implementations (646 raw deployments)
-- DeFi Llama TVL: $18,639,553.55
-- On-chain TVL (included contracts): $18,323,996.17
-- TVL by chain: Ethereum $18,323,996.17
+- Contract surface: 165 unique implementations (642 raw deployments)
+- DeFi Llama TVL: $18,422,900.76
+- On-chain TVL (included contracts): $307,618.81
+- TVL by chain: Ethereum $307,618.81
 
 ## Project Description
 
-Katana Pre-Launch is a DeFi protocol that provides yield-bearing vaults and cross-chain token bridging. It enables users to deposit assets into Yearn V3 and BoringVaults for automated yield generation, and to move tokens across chains via LayerZero and a canonical Agglayer bridge.
+Katana Pre-Launch is an Ethereum pre-launch deposit/farm product where users deposit eligible tokens into Yearn vaults to earn Krates and a pro-rata KAT allocation. Bridge, swap, perps, chain infrastructure, LayerZero, Agglayer, OP Stack, SP1, and other app or chain components should be treated as dependencies or out-of-scope unless directly tied to the pre-launch deposit contracts.
 
 ### Architecture
 
@@ -23,17 +23,17 @@ The Katana Pre-Launch vaults mint yield-bearing tokens that can be bridged via t
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/98 (0.0%)
-- Verified + Unaudited implementations: 97
+- Verified implementations audited: 0/97 (0.0%)
+- Verified + Unaudited implementations: 96
 - Verified by bytecode match: 1
 - Unverified implementations: 68
-- Unique implementations: 166
-- Raw deployments: 646
-- Audits discovered: 29
+- Unique implementations: 165
+- Raw deployments: 642
+- Audits discovered: 28
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $18,323,996.17
+- ASD (verified + unaudited TVL): $307,618.81
 - Latest audit: 2025-09 (fresh)
-- Staleness: 6 fresh, 10 aging, 3 stale, 10 unknown
+- Staleness: 6 fresh, 7 aging, 6 stale, 9 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -46,11 +46,10 @@ The Katana Pre-Launch vaults mint yield-bearing tokens that can be bridged via t
 
 - None
 
-### ⚠️ Verified + Unaudited (97)
+### ⚠️ Verified + Unaudited (96)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| Yearn V3 Vault | core_logic | ethereum | 4 deployments: ethereum [`0x77570c...97ea2f`](./contracts/ethereum-1/0x77570cfecf83bc6bb08e2cd9e8537aea9f97ea2f/); ethereum `0xa5dab3...7d3896`; ethereum `0xe1ac97...55544a`; ethereum `0xf470eb...cc014d` | ⚠️ Unaudited |
 | BoringVault | core_logic | ethereum | 2 deployments: ethereum [`0x69d210...44c16b`](./contracts/ethereum-1/0x69d210d3b60e939bfa6e87cccc4fab7e8f44c16b/); ethereum `0x752310...565ab5` | ⚠️ Unaudited |
 | TokenChwomper | token | ethereum | 3 deployments: ethereum [`0x5c2e11...92559c`](./contracts/ethereum-1/0x5c2e112783a6854653b4bc7dc22248d3e592559c/); ethereum `0xdbeca8...b3e9eb`; ethereum `0xde7259...1d5667` | ⚠️ Unaudited |
 | LockReleaseTokenPool | core_logic | ethereum | 43 deployments: ethereum [`0x0238d2...25e2e4`](./contracts/ethereum-1/0x0238d2c272f17cf11aedb08cde515d56ed25e2e4/); ethereum `0x047204...8e0786`; ethereum `0x0bc426...f075b4`; ethereum `0x0c291a...c1f4aa`; ethereum `0x0dafed...8b2602`; ethereum `0x1e28dd...c9c3d3`; ethereum `0x21377f...4df45e`; ethereum `0x26cdfc...c7c520`; ethereum `0x2c5c39...25b5b4`; ethereum `0x4ce6f5...bf675c`; ethereum `0x4edc3a...eda56a`; ethereum `0x50f663...a882ac`; ethereum `0x55562a...11c1e6`; ethereum `0x619ed9...b5924e`; ethereum `0x6452d6...3f37a6`; ethereum `0x69c24c...78f93a`; ethereum `0x6ce8b7...4a28f4`; ethereum `0x6ddf2f...494db2`; ethereum `0x6ff6bf...b6cd7e`; ethereum `0x73aeb5...3d90c1`; ethereum `0x8272db...ba413a`; ethereum `0x8291a8...9f3b06`; ethereum `0x82df5c...db012b`; ethereum `0x923f27...c3ee81`; ethereum `0xa00853...00cd91`; ethereum `0xa35304...16c215`; ethereum `0xa370ce...7574da`; ethereum `0xa82a87...eaf858`; ethereum `0xa904b9...19d000`; ethereum `0xa96787...9d349b`; ethereum `0xb5f146...8e0c80`; ethereum `0xb85453...19d7ba`; ethereum `0xc22919...570df4`; ethereum `0xc43c01...778df2`; ethereum `0xc456ea...56cd29`; ethereum `0xcc75c8...c8fa14`; ethereum `0xcd69c1...322733`; ethereum `0xd0b84f...d48595`; ethereum `0xd1b301...af49de`; ethereum `0xdca0a2...add6d0`; ethereum `0xde04b3...dd19df`; ethereum `0xe2f0da...93e366`; ethereum `0xf84bf7...15fa72` | ⚠️ Unaudited |
@@ -241,7 +240,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [docs.optimism.io/stack/security/audits-report](https://docs.optimism.io/op-stack/security/audit-reports) | OP Stack | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [cantina.pdf](https://github.com/succinctlabs/sp1/blob/dev/audits/cantina.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [code4rena.pdf](https://github.com/succinctlabs/sp1/blob/dev/audits/code4rena.pdf) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
 | [hypercube-zellic.pdf](https://github.com/succinctlabs/sp1/blob/dev/audits/hypercube-zellic.pdf) | Zellic | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -250,8 +248,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [sp1-v4.md](https://github.com/succinctlabs/sp1/blob/dev/audits/sp1-v4.md) | Unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [veridise.pdf](https://github.com/succinctlabs/sp1/blob/dev/audits/veridise.pdf) | Veridise | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [zellic.pdf](https://github.com/succinctlabs/sp1/blob/dev/audits/zellic.pdf) | Zellic | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_audit.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_audit.pdf) | Trail of Bits | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
-| [2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_response.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_response.pdf) | Trail of Bits | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
+| [2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_audit.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_audit.pdf) | Trail of Bits | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
+| [2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_response.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_response.pdf) | Trail of Bits | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
 | [2024-12_aggregation-layer_d9d33885b6_sigma-prime_audit.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2024-12_aggregation-layer_d9d33885b6_sigma-prime_audit.pdf) | Sigma Prime | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
 | [2025-04_aggregation-layer_d7b3dd1c28_sigma-prime_audit-part-1.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2025-04_aggregation-layer_d7b3dd1c28_sigma-prime_audit-part-1.pdf) | Sigma Prime | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
 | [2025-04_aggregation-layer_f084ad78b6_sigma-prime_audit-part-2.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2025-04_aggregation-layer_f084ad78b6_sigma-prime_audit-part-2.pdf) | Sigma Prime | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
@@ -259,7 +257,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [2025-07_aggregation_layer_f084ad7_sigma-prime_audit-part-2.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2025-07_aggregation_layer_f084ad7_sigma-prime_audit-part-2.pdf) | Sigma Prime | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
 | [2025-07_aggregation_layer_f084ad7_sigma-prime_response.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2025-07_aggregation_layer_f084ad7_sigma-prime_response.pdf) | Sigma Prime | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
 | [Hexens_Polygon_zkEVM_PUBLIC_27.02.23.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Hexens_Polygon_zkEVM_PUBLIC_27.02.23.pdf) | Hexens | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Sigma Prime - Polygon - LXLY Banana - Security Assessment Report - 2.0.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Sigma%20Prime%20-%20Polygon%20-%20LXLY%20Banana%20-%20Security%20Assessment%20Report%20-%202.0.pdf) | Sigma Prime | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
+| [Sigma Prime - Polygon - LXLY Banana - Security Assessment Report - 2.0.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Sigma%20Prime%20-%20Polygon%20-%20LXLY%20Banana%20-%20Security%20Assessment%20Report%20-%202.0.pdf) | Sigma Prime | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
 | [Sigma_Prime_Polygon_AggLayer_v0.3.0_Smart_Contract_Updates_Security_Assessment_Report_v2_1.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Sigma_Prime_Polygon_AggLayer_v0.3.0_Smart_Contract_Updates_Security_Assessment_Report_v2_1.pdf) | Sigma Prime | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
 | [Sigma_Prime_Polygon_AggOracleCommittee_Contract_Security_Assessment_Report_v2_0.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Sigma_Prime_Polygon_AggOracleCommittee_Contract_Security_Assessment_Report_v2_0.pdf) | Sigma Prime | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
 | [Sigma_Prime_Polygon_Agglayer_Contracts_v0_3_5_Security_Assessment_Report_v2_0.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Sigma_Prime_Polygon_Agglayer_Contracts_v0_3_5_Security_Assessment_Report_v2_0.pdf) | Sigma Prime | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
@@ -300,7 +298,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 17 |
-| upstream | 58 |
+| upstream | 57 |
 | standard_library | 19 |
 | needs_review | 72 |
 
@@ -308,14 +306,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 29
+- Audits with zero matched contracts: 28
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 
 Zero-match audit list:
 
-- [1918] docs.optimism.io/stack/security/audits-report
 - [1919] cantina.pdf
 - [1920] code4rena.pdf
 - [1921] hypercube-zellic.pdf

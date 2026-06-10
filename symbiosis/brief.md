@@ -5,17 +5,17 @@
 - Project: Symbiosis (`symbiosis`)
 - Website: [https://symbiosis.finance](https://symbiosis.finance)
 - Lifecycle: active (Tier 0, 76.5% below peak)
-- Generated: 2026-05-25T15:06:33.924Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:16.950Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: cronos, ethereum, scroll
 - Contract surface: 40 unique implementations (77 raw deployments)
-- DeFi Llama TVL: $9,352,402.05
+- DeFi Llama TVL: $8,716,214.46
 - On-chain TVL (included contracts): $236,145,411.90
 - TVL by chain: Ethereum $236,145,411.90
 
 ## Project Description
 
-Symbiosis is a cross-chain bridge and liquidity protocol that enables users to swap and transfer assets across multiple blockchains. It aggregates liquidity and routes transactions through a network of contracts including portals, routers, and token adapters.
+Symbiosis is an active cross-chain bridge and liquidity protocol that enables users to swap and transfer assets across multiple blockchains. The currently analyzed contract inventory should be treated as a limited discovered subset, not the full live protocol surface; staking, pools, relayers, depository, TON/non-EVM integrations, and supported EVM-chain deployments may be out of scope unless separately inventoried.
 
 ### Architecture
 

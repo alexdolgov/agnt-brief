@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "manta-pacific",
-  "generated_at": "2026-05-31T09:51:26.548Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:07.185Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "manta-pacific",
@@ -57,9 +57,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Manta Pacific is a Layer 2 scaling solution for Ethereum that uses the OP Stack to enable fast and low-cost transactions. It provides a canonical bridge for transferring assets between Ethereum and the Manta Pacific network.",
+    "project_purpose": "This record covers the canonical bridge for transferring assets between Ethereum and Manta Pacific. It should not be treated as a full audit scope for the entire Manta Pacific Layer 2 unless a separate broader project scope and supporting evidence are added.",
     "relationship_narrative": "All contracts belong to a single product family that implements the OP Stack bridging system. The L1StandardBridge and L1ERC721Bridge handle asset transfers, while the OptimismPortal manages deposits and withdrawals, and the L1CrossDomainMessenger enables cross-chain communication, all configured by the SystemConfig and secured by the L2OutputOracle.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 3,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -133,7 +138,7 @@
       "chain_name": "ethereum",
       "address": "0x9168765ee952de7c6f8fc6fad5ec209b960b7622",
       "name": "OptimismPortal",
-      "role": "unknown",
+      "role": "proxy",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Manta Pacific",
@@ -188,7 +193,7 @@
       "chain_name": "ethereum",
       "address": "0x9168765ee952de7c6f8fc6fad5ec209b960b7622",
       "name": "OptimismPortal",
-      "role": "unknown",
+      "role": "proxy",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

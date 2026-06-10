@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hyperbeat",
-  "generated_at": "2026-05-26T12:37:48.458Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:06.054Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hyperbeat",
@@ -22,17 +22,17 @@
     "drop_from_peak_pct": 89.82465849111935
   },
   "summary": {
-    "total_contracts": 222,
-    "total_addresses": 616,
-    "unique_implementations": 222,
-    "total_deployments": 616,
+    "total_contracts": 221,
+    "total_addresses": 615,
+    "unique_implementations": 221,
+    "total_deployments": 615,
     "audited_contracts": 15,
-    "unaudited_contracts": 126,
+    "unaudited_contracts": 125,
     "contracts_verified_audited": 15,
-    "contracts_verified_unaudited": 126,
+    "contracts_verified_unaudited": 125,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 81,
-    "coverage_pct": 10.6,
+    "coverage_pct": 10.7,
     "total_audits": 14,
     "scoreable_audits": 5,
     "dl_tvl_usd": 47369186,
@@ -62,9 +62,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Hyperbeat is a yield aggregation and liquid staking protocol operating on Ethereum and HyperEVM. It offers vaults that mint yield-bearing tokens (e.g., lstHYPE, liquidHYPE) and integrates with external protocols like Morpho and Pendle to optimize returns.",
+    "project_purpose": "Hyperbeat is a Hyperliquid-focused DeFi and money application spanning liquid staking, yield and Meta-Yield vaults, borrow/lend money markets, swap, payments, fiat-crypto conversion, high-yield accounts, credit-card functionality, and strategies such as delta-neutral yield. Its on-chain HyperEVM/Hyperliquid deployments include HYPE liquid staking tokens such as lstHYPE and related vault/account infrastructure, with integrations to external protocols where supported by current contracts or documentation.",
     "relationship_narrative": "Hyperbeat Earn vaults on Ethereum feed into HyperEVM Vaults via TokenizedAccount proxies, enabling cross-chain yield aggregation. The Morpho integration supplies lending markets for vault strategies, while beHYPE provides staking infrastructure that may be utilized by other product families.",
     "product_family_count": 6
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 221,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -5331,37 +5336,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 999,
-      "chain_name": "hyperliquid",
-      "address": "0x68e37de8d93d3496ae143f2e900490f6280c57cd",
-      "name": "Morpho",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Morpho",
-      "product_line": "Morpho",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Morpho",
-      "deployments": [
-        {
-          "chain_id": 999,
-          "chain_name": "hyperliquid",
-          "address": "0x68e37de8d93d3496ae143f2e900490f6280c57cd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 999,
@@ -10937,7 +10911,7 @@
       "auditor": "Nethermind",
       "tier": 2,
       "contracts_covered": 13,
-      "coverage_pct": 9.2,
+      "coverage_pct": 9.3,
       "latest_audit": "2025-10"
     },
     {
@@ -10951,7 +10925,7 @@
       "auditor": "Pashov Audit Group",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 3.5,
+      "coverage_pct": 3.6,
       "latest_audit": "2025-09"
     },
     {
@@ -11396,7 +11370,7 @@
   ],
   "origin_summary": {
     "native": 75,
-    "upstream": 8,
+    "upstream": 7,
     "standard_library": 4,
     "needs_review": 135
   },

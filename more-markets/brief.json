@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "more-markets",
-  "generated_at": "2026-05-31T10:00:21.981Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:07.799Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "more-markets",
@@ -69,9 +69,14 @@
     }
   },
   "topography": {
-    "project_purpose": "MORE Markets is a lending and onchain capital allocation protocol that enables users to deposit assets into vaults for yield generation and leverage. It integrates with external DeFi protocols like Aave, Curve, and Uniswap to optimize capital efficiency.",
+    "project_purpose": "MORE Markets should be described with its surfaces separated: DefiLlama currently lists MORE Markets as a Flow lending protocol with approximately $2.91M TVL at fetch time, while the current homepage presents MORE Vaults as non-custodial omnichain vault infrastructure for yield and capital allocation. The Flow lending TVL should not be attributed to the listed EVM vault/facet contracts unless an adapter or on-chain attribution proves that connection.",
     "relationship_narrative": "The MORE Vaults family uses a Diamond proxy pattern where VaultsFactory creates vault instances and VaultsRegistry tracks them. Core logic is composed via MoreVaultsComposer and VaultFacet, while protocol integrations (Aave, Curve, Uniswap) are handled by dedicated facets, all governed by AccessControlFacet and ConfigurationFacet.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 21,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

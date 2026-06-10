@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "derivadex",
-  "generated_at": "2026-05-31T07:50:57.875Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.839Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "derivadex",
@@ -32,26 +32,24 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 9,
-    "total_addresses": 10,
-    "unique_implementations": 9,
-    "total_deployments": 10,
+    "total_contracts": 8,
+    "total_addresses": 9,
+    "unique_implementations": 8,
+    "total_deployments": 9,
     "audited_contracts": 0,
-    "unaudited_contracts": 7,
+    "unaudited_contracts": 6,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 7,
+    "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 1617904.02235,
-    "tvl_usd": 16891211.090585217,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 16891211.09
-    },
-    "asd_usd": 16891211.090585217,
+    "tvl_usd": 1617904.02235,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "http://derivadex.com",
     "chains": [
       "ethereum"
@@ -68,46 +66,20 @@
     }
   },
   "topography": {
-    "project_purpose": "DerivaDEX is a decentralized derivatives exchange that enables trustless trading of perpetual contracts and other derivative products. It uses an insurance fund to manage risk and a tokenized representation of assets for collateral and settlement.",
+    "project_purpose": "DerivaDEX is a decentralized, community-governed crypto derivatives exchange. The protocol is associated with the DDX token and uses an insurance fund, including insurance mining, to help manage protocol risk.",
     "relationship_narrative": "The DerivaDEX proxy delegates to the InsuranceFund implementation, indicating the exchange logic is tightly coupled with the insurance fund. The CErc20Delegator token contract likely serves as the collateral asset, integrating with the exchange and insurance fund for trading and risk management.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 8,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
-      "name": "CErc20Delegate",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "DerivaDEX",
-      "tvl_usd": 16891211.090585217,
-      "is_proxy": true,
-      "impl_address": "0x3363bae2fc44da742df13cd3ee94b6bb868ea376",
-      "impl_name": "CErc20Delegate",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 16891211.090585217,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -434,7 +406,7 @@
     "native": 8,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

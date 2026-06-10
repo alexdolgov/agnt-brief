@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "wombat-exchange",
-  "generated_at": "2026-05-24T19:27:15.091Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:18.841Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "wombat-exchange",
     "tier": 1,
@@ -43,9 +43,9 @@
     "contracts_verified_by_bytecode": 5,
     "contracts_unverified": 41,
     "coverage_pct": 32.7,
-    "total_audits": 14,
+    "total_audits": 11,
     "scoreable_audits": 9,
-    "dl_tvl_usd": 1652470.77175,
+    "dl_tvl_usd": 1648226.0335500003,
     "tvl_usd": 817605.8303898586,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -74,14 +74,19 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 1,
-      "stale": 11,
-      "unknown": 2
+      "stale": 10,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Wombat Exchange is a multi-chain decentralized exchange (DEX) specializing in stablecoin and liquid staking token swaps with low slippage. It uses a veToken governance model and bribe system to incentivize liquidity and direct emissions.",
+    "project_purpose": "Wombat Exchange is a multi-chain decentralized exchange and cross-chain swap/bridge platform focused on stablecoin and liquid staking token swaps with low slippage using a single-sided liquidity AMM design. It also supports aggregator-style routing for swaps and uses WOM and veWOM governance with emissions and bribe incentives for liquidity direction.",
     "relationship_narrative": "Pools rely on Governance for parameter control and emission rates, while Bribes and Rewarders incentivize liquidity direction and provider participation. Cross-chain functionality is enabled through WormholeAdaptor and CrossChainPool contracts, with Treasury securing protocol funds.",
     "product_family_count": 9
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 96,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -8675,27 +8680,6 @@
   ],
   "audits": [
     {
-      "audit_id": 3003,
-      "audit_key": "audit-3003",
-      "report_name": "DL audit link",
-      "report_url": "https://hacken.io/audits",
-      "auditor": "Hacken",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 3004,
       "audit_key": "audit-3004",
       "report_name": "PeckShield-Audit-Report-Wombat-v1.0.pdf",
@@ -8791,27 +8775,6 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3008,
-      "audit_key": "audit-3008",
-      "report_name": "DIP001_audit_report_2020_03_en_1_0.pdf",
-      "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/DIP001_audit_report_2020_03_en_1_0.pdf",
-      "auditor": "PeckShield",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2020-03",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -9001,27 +8964,6 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3016,
-      "audit_key": "audit-3016",
-      "report_name": "BitFi - BFBTC - SlowMist Audit Report.pdf",
-      "report_url": "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/BitFi%20-%20BFBTC%20-%20SlowMist%20Audit%20Report.pdf",
-      "auditor": "SlowMist",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -9327,24 +9269,12 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 3003,
-        "report_name": "DL audit link"
-      },
-      {
         "audit_id": 3005,
         "report_name": "Hacken"
       },
       {
-        "audit_id": 3008,
-        "report_name": "DIP001_audit_report_2020_03_en_1_0.pdf"
-      },
-      {
         "audit_id": 3010,
         "report_name": "Zokyo Audit"
-      },
-      {
-        "audit_id": 3016,
-        "report_name": "BitFi - BFBTC - SlowMist Audit Report.pdf"
       }
     ],
     "inherited_remapped_matches": []

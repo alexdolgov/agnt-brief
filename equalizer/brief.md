@@ -7,8 +7,8 @@
 - Project: Equalizer (`equalizer`)
 - Website: [https://equalizer.exchange/](https://equalizer.exchange/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T07:56:27.836Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:02.256Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, fantom, sonic
 - Contract surface: 292 unique implementations (506 raw deployments)
 - DeFi Llama TVL: $1,076,070.00
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Equalizer is a decentralized exchange and derivatives protocol operating across Sonic, Base, and Fantom. It provides automated market making, concentrated liquidity, and a ve(3,3) tokenomics system for liquidity incentives and governance.
+Equalizer is a decentralized exchange/AMM operating across Sonic, Base, and Fantom. It supports stable and volatile liquidity pools, vote-escrowed EQUAL/ve(3,3) incentive mechanics, liquidity incentives, bribes and fee distribution, and concentrated-liquidity deployments where supported by the deployed contract surface.
 
 ### Architecture
 
@@ -79,7 +79,7 @@ The THICK and 2THICK families provide the AMM layer, while the Scale and Deploye
 | multiNotifyEqualToEltokenGauge | operational_periphery | sonic | 10 deployments: sonic [`0x1244a7...b9c92c`](./contracts/sonic-146/0x1244a7a6ee179bbbd332f6f6673259e569b9c92c/); sonic `0x4e552d...ec2463`; sonic `0x608469...baa077`; sonic `0x79f90d...236f49`; sonic `0x8a9690...d83e9a`; sonic `0xac4dbd...19e075`; sonic `0xb959fa...ec8c8b`; sonic `0xe377f2...7cf89c`; sonic `0xfb3e3d...7be6bc`; sonic `0xff1329...62856e` | ⚠️ Unaudited |
 | NFP_Staker | core_logic | sonic | 8 deployments: sonic [`0x00a76d...df1306`](./contracts/sonic-146/0x00a76d63cf6a514f1f9038a5afd7fb5b29df1306/); sonic `0x8273ae...780af1`; sonic `0x9a1874...3b8209`; sonic `0xafe7ac...103ad8`; sonic `0xcfa61d...13dca2`; sonic `0xd7a6f1...35c56c`; sonic `0xdc5847...5ee35f`; sonic `0xdf8057...828c09` | ⚠️ Unaudited |
 | NFTDescriptor | token | base | [`0x97a7b2...d85073`](./contracts/base-8453/0x97a7b2f95fda7181da16aec3072cd55a58d85073/) | ⚠️ Unaudited |
-| NonfungiblePositionManager | governance | base | 4 deployments: sonic `0x79c26d...516de5`; sonic `0xc90526...23fa0b`; base [`0x2b5229...6d7c2f`](./contracts/base-8453/0x2b52294425a9a229322228de659ede9d146d7c2f/); base `0x79c26d...516de5` | ⚠️ Unaudited |
+| NonfungiblePositionManager | operational_periphery | base | 4 deployments: sonic `0x79c26d...516de5`; sonic `0xc90526...23fa0b`; base [`0x2b5229...6d7c2f`](./contracts/base-8453/0x2b52294425a9a229322228de659ede9d146d7c2f/); base `0x79c26d...516de5` | ⚠️ Unaudited |
 | PairFactory | registry | sonic | 10 deployments: sonic [`0x312e1f...00572d`](./contracts/sonic-146/0x312e1fd8f3281b8b476030ed1b058f62d800572d/); sonic `0xb6a21a...52f637`; sonic `0xcdc292...6bf6a0`; sonic `0xddd984...528fcc`; sonic `0xfcfa93...4fdf2d`; base `0x39cc81...b1d91c`; base `0x653ce1...ad3414`; base `0xc295f6...197250`; base `0xd7627e...b222e1`; base `0xed8db6...b5ec04` | ⚠️ Unaudited |
 | PriceGuru | operational_periphery | base | [`0x02c32e...d98666`](./contracts/base-8453/0x02c32e0a34ab6fa5825565254f79c8c690d98666/) | ⚠️ Unaudited |
 | ProxyAdmin4 | governance | sonic | [`0x8eb10e...ebfa10`](./contracts/sonic-146/0x8eb10eb24d258f832f0d6603544b7ab794ebfa10/) | ⚠️ Unaudited |

@@ -6,17 +6,17 @@
 
 - Project: Rook (`rook`)
 - Lifecycle: dead (Tier 0, 99.8% below peak)
-- Generated: 2026-05-31T10:29:32.941Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:12.108Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 74 unique implementations (175 raw deployments)
+- Contract surface: 73 unique implementations (168 raw deployments)
 - DeFi Llama TVL: $1,449,666.24
-- On-chain TVL (included contracts): $6,793,617.06
-- TVL by chain: Ethereum $6,793,617.06
+- On-chain TVL (included contracts): $190,122.36
+- TVL by chain: Ethereum $190,122.36
 
 ## Project Description
 
-Rook is a decentralized exchange and liquidity protocol that enables cross-chain asset transfers and trading. It provides tokenized representations of Bitcoin, Bitcoin Cash, and Zcash on Ethereum, along with liquidity pools and vaults for efficient trading and yield generation.
+Rook, formerly KeeperDAO, is an open settlement protocol designed to coordinate MEV-aware order flow and liquidity between traders, keepers, and protocols. Rook should not be described as the issuer or bridge for renBTC, renBCH, or renZEC; any Ren assets should be treated only as external integrations unless Rook ownership or control is independently proven.
 
 ### Architecture
 
@@ -24,19 +24,19 @@ The Rook family shares a common token logic implementation (RenERC20LogicV1) for
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/66 (0.0%)
-- Verified + Unaudited implementations: 66
+- Verified implementations audited: 0/65 (0.0%)
+- Verified + Unaudited implementations: 65
 - Verified by bytecode match: 0
 - Unverified implementations: 8
-- Unique implementations: 74
-- Raw deployments: 175
+- Unique implementations: 73
+- Raw deployments: 168
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $6,793,617.06
+- ASD (verified + unaudited TVL): $190,122.36
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $6,793,617.06 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [dead]. ASD of $190,122.36 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -48,11 +48,11 @@ The Rook family shares a common token logic implementation (RenERC20LogicV1) for
 
 - None
 
-### ⚠️ Verified + Unaudited (66)
+### ⚠️ Verified + Unaudited (65)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| RenERC20LogicV1 | token | ethereum | 13 deployments: ethereum [`0x0a2d36...8c1bee`](./contracts/ethereum-1/0x0a2d368e4eecbd515033ba29253909f2978c1bee/); ethereum `0x1c5db5...0b37c2`; ethereum `0x3832d2...0671a7`; ethereum `0x459086...fef5bf`; ethereum `0x52d87f...2cb641`; ethereum `0x82e728...966c8e`; ethereum `0x93e47e...5340ba`; ethereum `0xa07413...77f8ca`; ethereum `0xa2f0a9...8bf05b`; ethereum `0xd5147b...9276f5`; ethereum `0xe2d6cc...037e80`; ethereum `0xe3cb48...687f80`; ethereum `0xeb4c27...6bb27d` | ⚠️ Unaudited |
+| RenERC20LogicV1 | token | ethereum | 7 deployments: ethereum [`0x0a2d36...8c1bee`](./contracts/ethereum-1/0x0a2d368e4eecbd515033ba29253909f2978c1bee/); ethereum `0x3832d2...0671a7`; ethereum `0x52d87f...2cb641`; ethereum `0xa07413...77f8ca`; ethereum `0xd5147b...9276f5`; ethereum `0xe2d6cc...037e80`; ethereum `0xe3cb48...687f80` | ⚠️ Unaudited |
 | RookToken | token | ethereum | [`0xfa5047...313d4a`](./contracts/ethereum-1/0xfa5047c9c78b8877af97bdcb85db743fd7313d4a/) | ⚠️ Unaudited |
 | DarknodeRewardVault | core_logic | ethereum | [`0x880407...3cd588`](./contracts/ethereum-1/0x880407c9cd119bef48b1821cdfc434e3ca3cd588/) | ⚠️ Unaudited |
 | BasicAdapter | adapter | ethereum | 5 deployments: ethereum [`0x0807d0...41b7c3`](./contracts/ethereum-1/0x0807d0810714d85b49e40349a3002f06e841b7c3/); ethereum `0x32666b...b96e80`; ethereum `0x500dc5...30e090`; ethereum `0x67fc89...c365fa`; ethereum `0xae65b0...7f2b1a` | ⚠️ Unaudited |
@@ -61,7 +61,6 @@ The Rook family shares a common token logic implementation (RenERC20LogicV1) for
 | BCHShifter | unknown | ethereum | 3 deployments: ethereum [`0x2095be...0de6cd`](./contracts/ethereum-1/0x2095be01f9a30a8ac8302245fdfa524fb20de6cd/); ethereum `0xa76bea...021a8c`; ethereum `0xe0926b...cfe771` | ⚠️ Unaudited |
 | BTC_DAI_Reserve | unknown | ethereum | 3 deployments: ethereum [`0x11716a...aee110`](./contracts/ethereum-1/0x11716a1f51fad053e9b43da1025e8ace32aee110/); ethereum `0x1c0fdf...930cdd`; ethereum `0x2c4ce4...e292f6` | ⚠️ Unaudited |
 | BTCShifter | unknown | ethereum | 2 deployments: ethereum [`0x1258d7...61902a`](./contracts/ethereum-1/0x1258d7ff385d1d81017d4a3d464c02f74c61902a/); ethereum `0x2f4657...2d0cd6` | ⚠️ Unaudited |
-| Comptroller | unknown | ethereum | [`0x3d9819...c9cd3b`](./contracts/ethereum-1/0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b/) | ⚠️ Unaudited |
 | DarknodePayment | unknown | ethereum | 9 deployments: ethereum [`0x098e17...c370b9`](./contracts/ethereum-1/0x098e1708b920efbdd7afe33adb6a4cba30c370b9/); ethereum `0x18e610...1eda41`; ethereum `0x376d83...3e4faa`; ethereum `0x43f370...788e39`; ethereum `0x50190f...4a9123`; ethereum `0x5a7802...0a8b6a`; ethereum `0x989b7c...2ddb10`; ethereum `0xab61ac...82d900`; ethereum `0xdf2a33...085dec` | ⚠️ Unaudited |
 | DarknodePaymentMigrator | periphery | ethereum | [`0x085d9b...05f54d`](./contracts/ethereum-1/0x085d9b18be81f2b0c35086972caa46177205f54d/) | ⚠️ Unaudited |
 | DarknodePaymentStore | unknown | ethereum | 6 deployments: ethereum [`0x311999...effe49`](./contracts/ethereum-1/0x311999ee72b5826d664fd4f3ac09c0c462effe49/); ethereum `0x731ea4...cbe9d2`; ethereum `0x7546db...316677`; ethereum `0x9c5b07...84742b`; ethereum `0xc9ebe9...fcdc39`; ethereum `0xe33417...be23e7` | ⚠️ Unaudited |
@@ -157,7 +156,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x0a2d36...8c1bee`](./contracts/ethereum-1/0x0a2d368e4eecbd515033ba29253909f2978c1bee/) | RenERC20LogicV1 | token | $6,724,542.88 | Verified native implementation with $6,724,542.88 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0a2d36...8c1bee`](./contracts/ethereum-1/0x0a2d368e4eecbd515033ba29253909f2978c1bee/) | RenERC20LogicV1 | token | $121,048.18 | Verified native implementation with $121,048.18 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xfa5047...313d4a`](./contracts/ethereum-1/0xfa5047c9c78b8877af97bdcb85db743fd7313d4a/) | RookToken | token | $68,165.57 | Verified native implementation with $68,165.57 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x880407...3cd588`](./contracts/ethereum-1/0x880407c9cd119bef48b1821cdfc434e3ca3cd588/) | DarknodeRewardVault | core_logic | $908.60 | Verified native implementation with $908.60 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0807d0...41b7c3`](./contracts/ethereum-1/0x0807d0810714d85b49e40349a3002f06e841b7c3/) | BasicAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -228,7 +227,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 71 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 2 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

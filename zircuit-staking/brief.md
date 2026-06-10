@@ -7,8 +7,8 @@
 - Project: Zircuit Staking (`zircuit-staking`)
 - Website: [https://app.zircuit.com/liquidity-hub](https://app.zircuit.com/liquidity-hub)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-27T18:01:46.455Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:59:19.535Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, ethereum
 - Contract surface: 20 unique implementations (23 raw deployments)
 - DeFi Llama TVL: $54,157,008.72
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Zircuit Staking is a liquid staking protocol that allows users to stake ETH and receive a liquid staking token (rsETH) representing their staked position. It also includes institutional lending contracts for compliant tokenized strategies and integrates with the Optimism Superchain for cross-chain messaging and bridging.
+Zircuit Staking is a Zircuit Liquidity Hub and farming/staking rewards program where users deposit supported assets to earn staking or restaking APR, Zircuit points, partner points, and potential airdrop rewards. rsETH may be one supported deposit asset, but the protocol should not be described as issuing rsETH unless supported by primary documentation and contract ownership evidence. Broader Zircuit rollup, bridge, OFT/token, and institutional/compliance lending infrastructure should be separated from the zircuit-staking product scope unless directly proven to be part of its TVL surface.
 
 ### Architecture
 
@@ -31,11 +31,11 @@ The Zircuit Staking family issues rsETH, which may be used within the Institutio
 - Unverified implementations: 1
 - Unique implementations: 20
 - Raw deployments: 23
-- Audits discovered: 10
+- Audits discovered: 8
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): $140,430,966.05
-- Latest audit: 2025-05 (aging)
-- Staleness: 0 fresh, 7 aging, 2 stale, 1 unknown
+- Latest audit: 2024-09 (aging)
+- Staleness: 0 fresh, 6 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $140,430,966.05 represents exposure in a protocol with declining activity.
 
@@ -101,7 +101,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [index.html (also discovered via alternate URL)](https://certificate.quantstamp.com/full/zircuit-l-2-upgradeable-contract/e765bc0e-0cbc-40f8-9a84-a7cfbd91cae0/index.html) | Quantstamp | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Zircuit-USDCAdapter_Secure3_Audit_Report-updated.pdf](https://github.com/zircuit-labs/audit-report/blob/main/Zircuit-USDCAdapter_Secure3_Audit_Report-updated.pdf) | Secure3 | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
 | [Zircuit_zrc_token_Secure3_Audit_Report.pdf](https://github.com/zircuit-labs/audit-report/blob/main/Zircuit_zrc_token_Secure3_Audit_Report.pdf) | Secure3 | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
 | [Zircuit-Labs_Zkr-Staking_report_2024-09-17.pdf](https://github.com/zircuit-labs/audit-report/blob/main/Zircuit-Labs_Zkr-Staking_report_2024-09-17.pdf) | Unknown | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
@@ -110,7 +109,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Zircuit_OP_Bridge_July_24,_2024_Dedaub_Audit_Reports_gdoc.pdf](https://github.com/zircuit-labs/audit-report/blob/main/Zircuit_OP_Bridge_July_24%2C_2024_Dedaub_Audit_Reports_gdoc.pdf) | Dedaub | Audit | 2024-07 | aging | Direct | contract_name | 3 | high |
 | [dedaub-audit-zkr-staking-ztakingpool.pdf](https://github.com/zircuit-labs/audit-report/blob/main/dedaub-audit-zkr-staking-ztakingpool.pdf) | Dedaub | Audit | 2024-03 | stale | Direct | contract_name | 2 | high |
 | [ztakingpool_ottersec.pdf](https://github.com/zircuit-labs/audit-report/blob/main/ztakingpool_ottersec.pdf) | Ottersec | Audit | 2024-02 | stale | Direct | contract_name | 2 | high |
-| [ZRC_OFT_final_report_Quantstamp.pdf](https://github.com/zircuit-labs/audit-report/blob/main/ZRC_OFT_final_report_Quantstamp.pdf) | Quantstamp | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -134,19 +132,17 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 7
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=3
 - Match method counts: extraction_exact=7
 
 Zero-match audit list:
 
-- [4697] index.html
 - [4699] Zircuit-USDCAdapter_Secure3_Audit_Report-updated.pdf
 - [4700] Zircuit_zrc_token_Secure3_Audit_Report.pdf
 - [4701] Zircuit-Labs_Zkr-Staking_report_2024-09-17.pdf
 - [4702] Zircuit_Labs_zkr_staking_Migration_Contracts_Smart_Contract_Security.pdf
 - [4703] Zircuit-ZRC-Token-audit-report-2024-1.1.pdf
-- [4707] ZRC_OFT_final_report_Quantstamp.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -5,8 +5,8 @@
 - Project: Across (`across`)
 - Website: [https://across.to](https://across.to)
 - Lifecycle: active (Tier 0, 88.8% below peak)
-- Generated: 2026-06-10T20:10:09.121Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.492Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, blast, bsc, ethereum, hyperliquid, ink, linea, mode, optimism, plasma, polygon, unichain, zksync-era, zora
 - Contract surface: 142 unique implementations (532 raw deployments)
 - DeFi Llama TVL: $26,926,442.18

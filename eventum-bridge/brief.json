@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "eventum-bridge",
-  "generated_at": "2026-05-31T08:00:32.006Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:03.850Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "eventum-bridge",
@@ -22,18 +22,18 @@
     "drop_from_peak_pct": 0.06133026079710207
   },
   "summary": {
-    "total_contracts": 30,
-    "total_addresses": 60,
-    "unique_implementations": 30,
-    "total_deployments": 60,
+    "total_contracts": 28,
+    "total_addresses": 57,
+    "unique_implementations": 28,
+    "total_deployments": 57,
     "audited_contracts": 1,
-    "unaudited_contracts": 27,
+    "unaudited_contracts": 25,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 27,
+    "contracts_verified_unaudited": 25,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
-    "coverage_pct": 3.6,
-    "total_audits": 12,
+    "coverage_pct": 3.8,
+    "total_audits": 2,
     "scoreable_audits": 1,
     "dl_tvl_usd": 2820145.70258,
     "tvl_usd": 1642372.2305859486,
@@ -55,14 +55,19 @@
     "staleness_breakdown": {
       "fresh": 2,
       "aging": 0,
-      "stale": 8,
-      "unknown": 2
+      "stale": 0,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Eventum Bridge is a canonical bridge protocol enabling asset transfers between Ethereum and Arbitrum One. It provides vault-based deposit management, token wrapping (aeWETH), and governance-controlled swap and burn mechanisms.",
+    "project_purpose": "Eventum Bridge is the canonical bridge for Eventum, an Arbitrum Orbit L3 used by the EVEDEX exchange ecosystem. It supports asset movement into and out of the Eventum network for EVEDEX-related applications; it should not be described as a standalone Ethereum-to-Arbitrum One bridge unless Eventum-specific documentation supports those endpoints.",
     "relationship_narrative": "The Bridge family provides the core cross-chain messaging infrastructure, while the Eventum Bridge family extends it with vault-based asset management, token wrapping, and governance. Both families share proxy patterns and rely on common infrastructure like gateways and routers for asset flow.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 28,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -902,37 +907,6 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0dbbd1bb03ed63ae2bea0ce892567884dffb70a5",
-      "name": "Multicall2",
-      "role": "periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Multicall2",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0dbbd1bb03ed63ae2bea0ce892567884dffb70a5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0xec32bd08faf9533371384ad13045116930dbc040",
@@ -962,46 +936,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x70911642e4ea509735e77cba23ce1856abed87bf",
-      "name": "ProxyAdmin",
-      "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ProxyAdmin",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x70911642e4ea509735e77cba23ce1856abed87bf",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x92650ddc467ed628868bdba23cf81eafaab60175",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
     },
     {
       "chain_id": 42161,
@@ -1323,216 +1257,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10078,
-      "audit_key": "audit-10078",
-      "report_name": "chainlight_v3_0.pdf",
-      "report_url": "https://github.com/evedex-official/kernel-smart-account/blob/master/audits/chainlight_v3_0.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10079,
-      "audit_key": "audit-10079",
-      "report_name": "kalos_recovery_v1.pdf",
-      "report_url": "https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_recovery_v1.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10080,
-      "audit_key": "audit-10080",
-      "report_name": "kalos_recovery_v2.pdf",
-      "report_url": "https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_recovery_v2.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10081,
-      "audit_key": "audit-10081",
-      "report_name": "kalos_v1.pdf",
-      "report_url": "https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_v1.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10082,
-      "audit_key": "audit-10082",
-      "report_name": "kalos_v2_1.pdf",
-      "report_url": "https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_v2_1.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10083,
-      "audit_key": "audit-10083",
-      "report_name": "kalos_v2_2.pdf",
-      "report_url": "https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_v2_2.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10084,
-      "audit_key": "audit-10084",
-      "report_name": "kalos_v2_2_lite.pdf",
-      "report_url": "https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_v2_2_lite.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10085,
-      "audit_key": "audit-10085",
-      "report_name": "kalos_v3_plugins.pdf",
-      "report_url": "https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_v3_plugins.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10086,
-      "audit_key": "audit-10086",
-      "report_name": "kalos_webauthn_v1.pdf",
-      "report_url": "https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_webauthn_v1.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10087,
-      "audit_key": "audit-10087",
-      "report_name": "v_3_1_incremental_audit.pdf",
-      "report_url": "https://github.com/evedex-official/kernel-smart-account/blob/master/audits/v_3_1_incremental_audit.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -1540,7 +1264,7 @@
       "auditor": "HashEx",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 3.6,
+      "coverage_pct": 3.8,
       "latest_audit": "2025-08"
     }
   ],
@@ -1649,7 +1373,7 @@
   "origin_summary": {
     "native": 10,
     "upstream": 2,
-    "standard_library": 16,
+    "standard_library": 14,
     "needs_review": 2
   },
   "scope_matching_notes": {
@@ -1665,46 +1389,6 @@
       {
         "audit_id": 2789,
         "report_name": "skynet.certik.com/projects/evedex"
-      },
-      {
-        "audit_id": 10078,
-        "report_name": "chainlight_v3_0.pdf"
-      },
-      {
-        "audit_id": 10079,
-        "report_name": "kalos_recovery_v1.pdf"
-      },
-      {
-        "audit_id": 10080,
-        "report_name": "kalos_recovery_v2.pdf"
-      },
-      {
-        "audit_id": 10081,
-        "report_name": "kalos_v1.pdf"
-      },
-      {
-        "audit_id": 10082,
-        "report_name": "kalos_v2_1.pdf"
-      },
-      {
-        "audit_id": 10083,
-        "report_name": "kalos_v2_2.pdf"
-      },
-      {
-        "audit_id": 10084,
-        "report_name": "kalos_v2_2_lite.pdf"
-      },
-      {
-        "audit_id": 10085,
-        "report_name": "kalos_v3_plugins.pdf"
-      },
-      {
-        "audit_id": 10086,
-        "report_name": "kalos_webauthn_v1.pdf"
-      },
-      {
-        "audit_id": 10087,
-        "report_name": "v_3_1_incremental_audit.pdf"
       }
     ],
     "inherited_remapped_matches": []

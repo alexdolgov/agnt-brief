@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "near-intents",
-  "generated_at": "2026-05-31T10:01:19.311Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:08.053Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "near-intents",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "NEAR Intents is a cross-chain bridge protocol that enables asset transfers between NEAR and other blockchains. It uses governance-controlled token contracts and proxy-based upgradeability to manage bridged assets on Gnosis.",
+    "project_purpose": "NEAR Intents is an intents-based multichain liquidity, trading, and settlement system that powers cross-chain swaps and asset exchange across NEAR and other networks. The listed Gnosis/xDai contracts represent only one observed subset of its deployed surface, including token, proxy, governance, and validator-related contracts, and should not be treated as the full protocol-wide contract surface.",
     "relationship_narrative": "The protocol uses a single product family where governance contracts (GnosisControllerToken) control token proxies (FiatTokenProxy, TokenProxy) via upgradeable patterns. BlacklistValidatorUpgradeable contracts provide shared compliance infrastructure for token transfers.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 7,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

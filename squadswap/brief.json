@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "squadswap",
-  "generated_at": "2026-05-24T21:02:00.237Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.451Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "squadswap",
@@ -35,7 +35,7 @@
     "coverage_pct": 63.2,
     "total_audits": 5,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 1536276,
+    "dl_tvl_usd": 1525876,
     "tvl_usd": 13040877.001521166,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -66,6 +66,11 @@
     "project_purpose": "SquadSwap is a multi-chain decentralized exchange (DEX) protocol that enables users to swap tokens, provide liquidity, and earn yield through farming. It supports automated market-making (AMM) with concentrated liquidity (V3) and classic AMM (V2) pools, along with staking and yield optimization features.",
     "relationship_narrative": "SquadSwap V3 and V2 families share common farming infrastructure (MasterChefV2/V3) and token descriptors, while SquadSwap Dynamo is a separate V2 instance with its own factory and token. All families operate independently but may share peripheral contracts like routers and multicall interfaces across deployments.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 214,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1475,7 +1480,7 @@
       "chain_name": "blast",
       "address": "0x03439c1f8161c37e37202ab7fa9f390e01c8f7bb",
       "name": "NonfungiblePositionManager",
-      "role": "governance",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "SquadSwap",

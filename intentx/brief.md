@@ -5,8 +5,8 @@
 - Project: IntentX (`intentx`)
 - Website: [https://intentx.io](https://intentx.io)
 - Lifecycle: active (Tier 0, 10.2% below peak)
-- Generated: 2026-05-23T14:58:04.929Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:06.262Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, mantle
 - Contract surface: 56 unique implementations (123 raw deployments)
 - DeFi Llama TVL: $5,673,214.30
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-IntentX is a decentralized derivatives trading protocol that enables users to trade perpetual futures and other financial instruments on-chain. It leverages a multi-party computation (MPC) and intent-based architecture to provide efficient, non-custodial trading with features like staking, vesting, and fee rebates.
+IntentX is a decentralized derivatives/perpetuals trading protocol that enables users to trade perpetual futures and other financial instruments on-chain. It uses intent-based architecture to support non-custodial trading, with related features such as staking, vesting, and fee rebates.
 
 ### Architecture
 

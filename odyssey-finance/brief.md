@@ -5,8 +5,8 @@
 - Project: Odyssey Finance (`odyssey-finance`)
 - Website: [https://app.odyssey.finance/en](https://app.odyssey.finance/en)
 - Lifecycle: active (Tier 0, 38.2% below peak)
-- Generated: 2026-05-30T19:18:57.722Z
-- Pipeline run: v2-pipeline-2026-05-30-c7d699-40af
+- Generated: 2026-06-10T20:59:08.778Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, ethereum, optimism
 - Contract surface: 79 unique implementations (272 raw deployments)
 - DeFi Llama TVL: $10,182,418.44
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Odyssey Finance is a multi-chain yield aggregator that deploys user deposits into various lending and borrowing strategies across protocols like Aave, Compound, Morpho, and Ajna. It uses vaults (ERC4626), flash loans, and automated execution to optimize yields while managing risk through fee policies and position registries.
+Odyssey Finance is an active DeFi super-app and yield aggregator built around ERC-4337 smart accounts and gasless cross-chain strategies. Its product surface includes Loopr, Tradr, and Yieldr modules for trading, predictions, and yield, alongside vaults, ERC4626 integrations, lending/borrowing strategies, flash-loan execution, fee policies, position registries, and adapters for protocols such as Aave, Compound, Morpho, and Ajna.
 
 ### Architecture
 

@@ -7,8 +7,8 @@
 - Project: Synapse (`synapse`)
 - Website: [https://synapseprotocol.com](https://synapseprotocol.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:52:03.959Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:17.113Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, aurora, avalanche, base, blast, boba, bsc, canto, cronos, ethereum, fantom, harmony, klaytn, linea, metis, moonbeam, moonriver, optimism, polygon, scroll
 - Contract surface: 824 unique implementations (2632 raw deployments)
 - DeFi Llama TVL: $16,678,188.80
@@ -23,11 +23,11 @@
 - Unverified implementations: 613
 - Unique implementations: 824
 - Raw deployments: 2632
-- Audits discovered: 2
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $25,569,883.31
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $25,569,883.31 represents exposure in a protocol with declining activity.
 
@@ -894,8 +894,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [PausableUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/security/PausableUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Pausable.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/elin/contracts-4.5.0/security/Pausable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -916,14 +914,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [6248] PausableUpgradeable.md
-- [6462] Pausable.md
 
 Fork inheritance lineage and inherited audits are included when available.

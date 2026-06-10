@@ -7,17 +7,17 @@
 - Project: Fuel Bridge (`fuel-bridge`)
 - Website: [https://app.fuel.network/bridge](https://app.fuel.network/bridge)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T03:24:09.826Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:04.068Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 18 unique implementations (44 raw deployments)
-- DeFi Llama TVL: $10,809,346.54
+- DeFi Llama TVL: $10,575,231.14
 - On-chain TVL (included contracts): $10,748,049.19
 - TVL by chain: Ethereum $10,748,049.19
 
 ## Project Description
 
-Fuel Bridge enables cross-chain asset transfers between Ethereum and the Fuel network. It provides token bridging, staking, and reward distribution mechanisms to support the Fuel ecosystem.
+Fuel Bridge is an Ethereum-Fuel Ignition bridge for asset transfers and cross-chain messaging. Staking, reward distribution, sequencing, and Icon Link-related contracts should be treated as a separate related surface unless independently documented as part of Fuel Bridge.
 
 ### Architecture
 
@@ -31,11 +31,11 @@ The Fuel Bridge family handles cross-chain asset transfers, while the Icon Link 
 - Unverified implementations: 3
 - Unique implementations: 18
 - Raw deployments: 44
-- Audits discovered: 11
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): $7,633,472.42
 - Latest audit: 2025-11 (fresh)
-- Staleness: 1 fresh, 5 aging, 1 stale, 4 unknown
+- Staleness: 1 fresh, 3 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $7,633,472.42 represents exposure in a protocol with declining activity.
 
@@ -43,7 +43,7 @@ The Fuel Bridge family handles cross-chain asset transfers, while the Icon Link 
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 4 | 26.7% | 2025-11 |
+| Unknown | Tier 2 | 4 | 26.7% | 2025-11 |
 
 ## Contract Surface
 
@@ -98,17 +98,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [AuditsIcon Link](https://github.com/FuelLabs/audits) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ChainSecurity_Fuel_Sway_Optimizations_audit.pdf](https://github.com/FuelLabs/audits/blob/master/ChainSecurity_Fuel_Sway_Optimizations_audit.pdf) | ChainSecurity | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
-| [ChainSecurity_Fuel_Sway_Semantic_Analysis_audit.pdf](https://github.com/FuelLabs/audits/blob/master/ChainSecurity_Fuel_Sway_Semantic_Analysis_audit.pdf) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Fuel-Bridge-apr24(Public) (including Diffs).pdf](https://github.com/FuelLabs/audits/blob/master/Fuel-Bridge-apr24(Public)%20(including%20Diffs).pdf) | Unknown | Audit | 2024-04 | stale | Direct | contract_name | 10 | high |
 | [fuel-audit-september-2024(Connectors Predicates)(Public).pdf](https://github.com/FuelLabs/audits/blob/master/fuel-audit-september-2024(Connectors%20Predicates)(Public).pdf) | Unknown | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
 | [fuel-audit-september-2024(Diffs on the Bridge and State Contracts)(Public).pdf](https://github.com/FuelLabs/audits/blob/master/fuel-audit-september-2024(Diffs%20on%20the%20Bridge%20and%20State%20Contracts)(Public).pdf) | Unknown | Audit | 2024-09 | aging | Direct | contract_name | 10 | high |
 | [fuel-audit-september-2024(Points Migration Function)(Public).pdf](https://github.com/FuelLabs/audits/blob/master/fuel-audit-september-2024(Points%20Migration%20Function)(Public).pdf) | Unknown | Audit | 2024-09 | aging | Direct | contract_name | 3 | high |
-| [fuel-sway-standard-audit-july24(Public) (3).pdf](https://github.com/FuelLabs/audits/blob/master/fuel-sway-standard-audit-july24(Public)%20(3).pdf) | Unknown | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
-| [fuel_core_audit_report.pdf](https://github.com/FuelLabs/audits/blob/master/fuel_core_audit_report.pdf) | Unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [fuel_fast_bridge_audit_final.pdf](https://github.com/FuelLabs/audits/blob/master/fuel_fast_bridge_audit_final.pdf) | Unknown | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
-| [fuel_vm_audit_report.pdf](https://github.com/FuelLabs/audits/blob/master/fuel_vm_audit_report.pdf) | Unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -138,20 +132,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 8
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=3
 - Match method counts: extraction_exact=23
 
 Zero-match audit list:
 
-- [2053] AuditsIcon Link
-- [2054] ChainSecurity_Fuel_Sway_Optimizations_audit.pdf
-- [2055] ChainSecurity_Fuel_Sway_Semantic_Analysis_audit.pdf
 - [2057] fuel-audit-september-2024(Connectors Predicates)(Public).pdf
-- [2060] fuel-sway-standard-audit-july24(Public) (3).pdf
-- [2061] fuel_core_audit_report.pdf
 - [2062] fuel_fast_bridge_audit_final.pdf
-- [2063] fuel_vm_audit_report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

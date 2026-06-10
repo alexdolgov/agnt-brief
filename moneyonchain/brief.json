@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "moneyonchain",
-  "generated_at": "2026-05-26T13:04:25.796Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:07.784Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -17,7 +17,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 13,
+    "total_audits": 12,
     "scoreable_audits": 0,
     "dl_tvl_usd": 43710308.64238,
     "tvl_usd": 43710308.64238,
@@ -34,13 +34,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 6,
-      "unknown": 7
+      "unknown": 6
     }
   },
   "topography": {
-    "project_purpose": "MoneyOnChain is a dual-token stablecoin protocol that issues a price-stable token (DoC) pegged to fiat currency and a volatile token (BPro) that absorbs price fluctuations, enabling users to hedge or leverage Bitcoin exposure.",
-    "relationship_narrative": "The MoC contract acts as the central coordinator, interacting with MoCState for state management, MoCSettlement for settlement logic, and MoCExchange for token swaps, while MoCConnector provides a shared registry for all core and supporting contracts.",
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -48,27 +53,6 @@
   },
   "contracts": [],
   "audits": [
-    {
-      "audit_id": 3886,
-      "audit_key": "audit-3886",
-      "report_name": "* [Audits]()",
-      "report_url": "https://github.com/money-on-chain/Audits",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
     {
       "audit_id": 3887,
       "audit_key": "audit-3887",
@@ -336,10 +320,6 @@
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 3886,
-        "report_name": "* [Audits]()"
-      },
       {
         "audit_id": 3887,
         "report_name": "Money on Chain Dex Audit 2.pdf"

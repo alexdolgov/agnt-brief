@@ -7,8 +7,8 @@
 - Project: Beradrome (`beradrome`)
 - Website: [https://www.beradrome.com](https://www.beradrome.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-30T19:20:03.712Z
-- Pipeline run: v2-pipeline-2026-05-30-c7d699-40af
+- Generated: 2026-06-10T20:58:59.176Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: berachain
 - Contract surface: 2 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $7,001,960.07
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Beradrome is a yield protocol on Berachain that provides tokenized vaults for automated liquidity management. It uses adapter contracts to integrate with external routers for yield optimization.
+Beradrome is a Berachain restaking and liquidity marketplace with ve(3,3)-style incentives. Any vault or adapter functionality should be limited to verified Kodiak-related adapters unless additional vault contracts or documentation are confirmed.
 
 ### Architecture
 

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "paal-ai",
-  "generated_at": "2026-05-31T10:11:20.643Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:09.167Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "paal-ai",
     "tier": 0,
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "PAAL AI is a Telegram bot that provides AI-powered services, likely integrated with a token and staking mechanism on Ethereum. The protocol includes a native token (PAALAI) and multiple staking pools to incentivize user participation and token holding.",
+    "project_purpose": "PAAL AI is an AI bot and application ecosystem with on-chain infrastructure identified in this brief limited to the PAALAI token and Ethereum staking pools. The Ethereum contracts include the native PAALAI token and multiple staking pool contracts used for token staking participation.",
     "relationship_narrative": "The PAALAI token is the central asset used across all staking pools. Each StakingPool contract operates independently but shares the same token, allowing users to stake PAALAI in different pools, likely with varying reward structures or conditions.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 3,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

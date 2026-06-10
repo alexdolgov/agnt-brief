@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "ultron-staking-hub-nft",
-  "generated_at": "2026-05-23T09:04:31.613Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:18.481Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ultron-staking-hub-nft",
     "tier": 0,
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 150,
-    "total_addresses": 163,
+    "total_addresses": 162,
     "unique_implementations": 150,
-    "total_deployments": 163,
+    "total_deployments": 162,
     "audited_contracts": 0,
     "unaudited_contracts": 6,
     "contracts_verified_audited": 0,
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 7432485.36706,
+    "dl_tvl_usd": 7090109.59652,
     "tvl_usd": 43458.78759563767,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -65,9 +65,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Ultron Staking Hub NFT is a multi-chain staking protocol that allows users to stake assets and earn rewards, with a focus on NFT-based staking positions. It operates across Ethereum, BSC, Polygon, Avalanche, and Fantom, leveraging a shared ULX token and various staking-related contracts.",
+    "project_purpose": "Ultron Staking Hub NFT is an Ultron-network staking and rewards product where users mint and stake an NFT representing a five-year plan to earn ULX rewards. External ULX token deployments on other EVM chains should be treated as ancillary token references, not as the core Staking Hub NFT protocol or its TVL basis.",
     "relationship_narrative": "The ULX token family on other networks serves as the reward and staking token for the staking pools managed by the Ultron mainnet family. The proxy contracts (FuturaTreasury, Lottery, Autoplay, Platform) likely provide shared infrastructure for treasury management, lottery mechanics, automated play, and platform governance across both families.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 150,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -340,26 +345,17 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x70d3dd8dda1187aa7d3523de3407cbdfe7acac30",
+      "address": "0xff3731a75d4427f0c3447ee3129f1ad944f67e94",
       "name": "Platform",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x70d3dd8dda1187aa7d3523de3407cbdfe7acac30",
       "impl_name": "Platform",
       "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x70d3dd8dda1187aa7d3523de3407cbdfe7acac30",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 56,
           "chain_name": "bsc",
@@ -375,7 +371,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -4854,22 +4850,12 @@
       "origin_kind": "native",
       "tvl_usd": 43458.78759563767,
       "risk_note": "Verified native implementation with $43,458.79 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x70d3dd8dda1187aa7d3523de3407cbdfe7acac30",
-      "name": "Platform",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 3,
+    "native": 2,
     "upstream": 0,
-    "standard_library": 4,
+    "standard_library": 5,
     "needs_review": 143
   },
   "scope_matching_notes": {

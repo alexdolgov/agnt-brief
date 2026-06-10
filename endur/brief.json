@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "endur",
-  "generated_at": "2026-05-23T05:12:04.713Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:02.215Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 4,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 9724014.24857,
-    "tvl_usd": 9724014.24857,
+    "dl_tvl_usd": 9420505.39726,
+    "tvl_usd": 9420505.39726,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -29,18 +29,23 @@
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2025-06",
-    "audit_freshness": "fresh",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
-      "fresh": 1,
-      "aging": 3,
+      "fresh": 0,
+      "aging": 4,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Endur is a liquid staking protocol that allows users to stake assets and receive liquid derivative tokens representing their staked positions, enabling continued participation in DeFi while earning staking rewards.",
-    "relationship_narrative": "No product families or contracts are defined in the provided inventory, so no relationships can be described.",
+    "project_purpose": "Endur is a Starknet liquid-staking app/protocol for STRK and BTC, allowing users to stake assets and receive liquid staking tokens such as xSTRK and xyBTCs that represent staked positions while enabling continued DeFi participation and staking rewards.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -118,7 +123,7 @@
       "report_url": "https://drive.google.com/file/d/1NDr0HnKFbnk0NVlk51BWlxPiVH-IXNhY/view?usp=drive_link",
       "auditor": "Cairo Security Clan",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,

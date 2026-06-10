@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "pumpspace",
-  "generated_at": "2026-05-25T15:41:41.447Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:09.429Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "pumpspace",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 3.0092288946605916
   },
   "summary": {
-    "total_contracts": 667,
-    "total_addresses": 787,
-    "unique_implementations": 667,
-    "total_deployments": 787,
+    "total_contracts": 666,
+    "total_addresses": 786,
+    "unique_implementations": 666,
+    "total_deployments": 786,
     "audited_contracts": 2,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 4,
     "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 5,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 660,
-    "coverage_pct": 28.6,
-    "total_audits": 4,
+    "coverage_pct": 33.3,
+    "total_audits": 3,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 4025207,
-    "tvl_usd": 4025207,
+    "dl_tvl_usd": 3867225,
+    "tvl_usd": 3867225,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -52,50 +52,24 @@
       "fresh": 0,
       "aging": 3,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "PumpSpace is a decentralized exchange (DEX) protocol on Avalanche that facilitates token swaps and liquidity provision. It appears to support automated market making and yield farming, with multiple product versions indicating iterative upgrades.",
+    "project_purpose": "PumpSpace is an Avalanche-based memecoin and community-token liquidity platform supporting token swaps, liquidity provision, PumpSpace V2 and V3/Trident AMM-style markets, multi-token farms, and yield optimization. The live TVL-bearing product family should be identified as PumpSpace V2 where applicable; PumpSpace V3 should be treated as present in metadata but not assumed to have current DefiLlama TVL without independent supporting evidence.",
     "relationship_narrative": "PumpSpace V3 appears to be an evolution of the original PumpSpace, sharing the same deployer cluster and proxy patterns. Both families rely on a common set of proxy implementations (e.g., ERC1967Proxy, TransparentUpgradeableProxy) for upgradeability, indicating shared infrastructure.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 666,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x864a0b7f8466247a0e44558d29cdc37d4623f213",
-      "name": "AutoFarmV2_CrossChain",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "PumpSpace V3",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AutoFarmV2_CrossChain",
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x864a0b7f8466247a0e44558d29cdc37d4623f213",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
@@ -21829,27 +21803,6 @@
   ],
   "audits": [
     {
-      "audit_id": 2665,
-      "audit_key": "audit-2665",
-      "report_name": "DL audit link",
-      "report_url": "https://www.cyberscope.io/audits/pumpspace?assessmentIndex=1https://github.com/cyberscope-io/audits/blob/main/pumpspace/dexAudit.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 2666,
       "audit_key": "audit-2666",
       "report_name": "dexAudit.pdf",
@@ -21957,21 +21910,11 @@
       "auditor": "Cyberscope",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 28.6,
+      "coverage_pct": 33.3,
       "latest_audit": "2025-01"
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x864a0b7f8466247a0e44558d29cdc37d4623f213",
-      "name": "AutoFarmV2_CrossChain",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
@@ -21994,7 +21937,7 @@
     }
   ],
   "origin_summary": {
-    "native": 4,
+    "native": 3,
     "upstream": 0,
     "standard_library": 3,
     "needs_review": 660
@@ -22009,10 +21952,6 @@
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 2665,
-        "report_name": "DL audit link"
-      },
       {
         "audit_id": 2668,
         "report_name": "audit.pdf"

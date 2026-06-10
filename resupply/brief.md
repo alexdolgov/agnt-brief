@@ -5,8 +5,8 @@
 - Project: Resupply (`resupply`)
 - Website: [https://resupply.fi/](https://resupply.fi/)
 - Lifecycle: active (Tier 0, 73.6% below peak)
-- Generated: 2026-05-31T14:54:10.984Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-06-10T20:59:11.325Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $41,835,801.02
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Resupply is an Ethereum DeFi protocol centered on reUSD, a stablecoin-backed lending and rehypothecation system. Users can deposit supported collateral such as crvUSD- and frxUSD-related assets into markets to borrow reUSD, while the protocol routes collateral and liquidity through operators and related lending infrastructure. The protocol also includes governance/staking, insurance pool, liquidation/redemption, treasury and registry components that coordinate markets, risk management and system accounting.
 
 ## Audit Coverage Summary
 

@@ -1,32 +1,35 @@
 # Agentic Audit Brief: Overtime
 
+⚠️ Lifecycle status: DECLINING - TVL dropped 24.4% over 90 days
+
 ## Project Overview
 
 - Project: Overtime (`overtime`)
 - Website: [https://www.overtimemarkets.xyz/markets?referrerId=defillama](https://www.overtimemarkets.xyz/markets?referrerId=defillama)
-- Lifecycle: active (Tier 0, 75.2% below peak)
-- Generated: 2026-05-31T10:13:25.278Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 75.2% below peak)
+- Generated: 2026-06-10T20:59:09.158Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, ethereum, optimism, polygon
-- Contract surface: 201 unique implementations (1993 raw deployments)
+- Contract surface: 200 unique implementations (1988 raw deployments)
 - DeFi Llama TVL: $3,014,399.64
-- On-chain TVL (included contracts): $42,543,713.97
-- TVL by chain: Optimism $34,522,641.37 | Ethereum $7,582,814.91 | Base $280,163.77 | Arbitrum $158,093.91
+- On-chain TVL (included contracts): $42,475,484.94
+- TVL by chain: Optimism $34,476,170.99 | Ethereum $7,582,814.91 | Base $280,142.30 | Arbitrum $136,356.73
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/145 (0.0%)
-- Verified + Unaudited implementations: 141
+- Verified implementations audited: 0/144 (0.0%)
+- Verified + Unaudited implementations: 140
 - Verified by bytecode match: 4
 - Unverified implementations: 56
-- Unique implementations: 201
-- Raw deployments: 1993
-- Audits discovered: 3
+- Unique implementations: 200
+- Raw deployments: 1988
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $42,543,713.97
+- ASD (verified + unaudited TVL): $42,475,484.94
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [declining]. ASD of $42,475,484.94 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -38,14 +41,13 @@
 
 - None
 
-### ⚠️ Verified + Unaudited (141)
+### ⚠️ Verified + Unaudited (140)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | Pool | core_logic | optimism | 2 deployments: optimism [`0x1eaa86...877681`](./contracts/optimism-10/0x1eaa860dca29a5124f665f7d80affed92e877681/); base `0xb452f8...7afb4c` | ⚠️ Unaudited |
 | OverToken | token | ethereum | [`0x90ce57...ad1722`](./contracts/ethereum-1/0x90ce5720c17587d28e4af120ae2d313b3bad1722/) | ⚠️ Unaudited |
 | StandardArbERC20 | token | arbitrum | [`0xe85b66...53bf30`](./contracts/arbitrum-42161/0xe85b662fe97e8562f4099d8a1d5a92d4b453bf30/) | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | optimism | 5 deployments: optimism [`0x3f60fc...c3f2ad`](./contracts/optimism-10/0x3f60fca6c50ae3bcd95ae150b4c57f0ba5c3f2ad/); base `0x41a6e4...8dfd5f`; arbitrum `0x4d4904...369424`; arbitrum `0xf94997...ca4555`; arbitrum `0xfc90c3...274869` | ⚠️ Unaudited |
 | AddressManager | governance | polygon | 10 deployments: optimism `0x935b37...48a88c`; optimism `0x9b4c63...0d94bf`; polygon [`0x338154...27bf6f`](./contracts/polygon-137/0x338154cb2846d8422eb5a751411c858d2227bf6f/); polygon `0x6098f6...bb08d6`; polygon `0x652186...09ab61`; base `0xde4d28...33ce72`; base `0xe2a989...553050`; arbitrum `0x5b9d96...d945ba`; arbitrum `0x6dd969...ec1d53`; arbitrum `0x823d03...0bcdc3` | ⚠️ Unaudited |
 | Airdrop | operational_periphery | optimism | 5 deployments: optimism [`0x1071f3...bb70c0`](./contracts/optimism-10/0x1071f3b2893f41094b1c84f090ea023042bb70c0/); optimism `0x19c185...dcb781`; optimism `0x1f8e52...a3caef`; optimism `0x256592...ddb4a2`; optimism `0xafd4df...0a285e` | ⚠️ Unaudited |
 | AmmVault | core_logic | arbitrum | 17 deployments: optimism `0x0d1098...cfb7a9`; optimism `0x1dc1a6...829fac`; optimism `0x43318d...649c83`; optimism `0x5d68d6...2e741f`; optimism `0x63d6dd...d29f4b`; optimism `0x643e43...a1c83c`; optimism `0x6a763c...ab16ac`; optimism `0x6c7fd4...bca29f`; optimism `0x76711e...c22beb`; optimism `0x9a2017...557973`; optimism `0x9d3abe...3be41f`; optimism `0xb48402...196f93`; optimism `0xfb1d1a...e9a1f9`; arbitrum [`0x008a4e...d53b46`](./contracts/arbitrum-42161/0x008a4e30a8b41781f5cb017b197aa9aa4cd53b46/); arbitrum `0x0a29cd...7d2683`; arbitrum `0x4ad6bc...c04b3b`; arbitrum `0x640c34...0519ea` | ⚠️ Unaudited |
@@ -268,9 +270,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [overtime-disclaimer.pdf](https://github.com/thales-markets/thales-dapp/blob/main/src/assets/docs/overtime-disclaimer.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [overtime-privacy-policy.pdf](https://github.com/thales-markets/thales-dapp/blob/main/src/assets/docs/overtime-privacy-policy.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [overtime-terms-of-use.pdf](https://github.com/thales-markets/thales-dapp/blob/main/src/assets/docs/overtime-terms-of-use.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -285,21 +284,15 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 201 |
+| needs_review | 200 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [8132] overtime-disclaimer.pdf
-- [8133] overtime-privacy-policy.pdf
-- [8134] overtime-terms-of-use.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

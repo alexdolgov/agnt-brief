@@ -5,21 +5,22 @@
 - Project: RockSolid Network (`rocksolid-network`)
 - Website: [https://rocksolid.network/](https://rocksolid.network/)
 - Lifecycle: active (Tier 0, 15.8% below peak)
-- Generated: 2026-05-22T12:52:44.542Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:12.083Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (3 raw deployments)
-- DeFi Llama TVL: $25,008,589.38
+- DeFi Llama TVL: $24,218,317.85
 - On-chain TVL (included contracts): $24,958,194.47
 - TVL by chain: Ethereum $24,958,194.47
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-RockSolid Network is a yield protocol that provides ERC-4626 compliant vaults for passive yield generation. Users deposit assets into vaults that manage yield strategies on their behalf.
-
-### Architecture
-
-All vaults share the same implementation contract (Vault) and are deployed by a single deployer, indicating a unified infrastructure with no separate product families.
+RockSolid Network is an actively managed liquid DeFi vault platform that offers single-click deposits into vault strategies and supports institutional, white-label, and tailored vault solutions. Its vault products may use ERC-4626-style tokenized vault standards where verified, but should not be described only as passive yield vaults.
 
 ## Audit Coverage Summary
 

@@ -5,21 +5,22 @@
 - Project: Dexalot (`dexalot`)
 - Website: [https://app.dexalot.com/](https://app.dexalot.com/)
 - Lifecycle: active (Tier 0, 80.4% below peak)
-- Generated: 2026-05-31T07:52:06.405Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.845Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $9,501,408.00
 - On-chain TVL (included contracts): $4,212,791.98
 - TVL by chain: Avalanche $4,212,791.98
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Dexalot is a decentralized exchange (DEX) and bridge protocol on Avalanche, enabling users to trade assets and transfer tokens across chains. Its native token, DexalotToken, serves as the utility and governance token for the ecosystem.
-
-### Architecture
-
-The Dexalot Portfolio family centers on the DexalotToken, which is the sole contract identified. It likely integrates with the broader Dexalot DEX and bridge infrastructure, though those contracts are not listed in the inventory.
+Dexalot is an omni-chain, app-specific-chain order-book decentralized exchange. Its protocol surface includes trading/order-book infrastructure and portfolio/bridge deposit-withdraw components spanning multiple supported chains. DexalotToken is a token/supporting contract within the ecosystem and should not be treated as the sole protocol contract family or as representing the complete deployed protocol surface.
 
 ## Audit Coverage Summary
 

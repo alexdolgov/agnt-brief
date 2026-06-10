@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "crypto.com-liquid-staking",
-  "generated_at": "2026-05-31T07:45:04.304Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.558Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "crypto.com-liquid-staking",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Crypto.com Liquid Staking allows users to stake ETH and receive a liquid staking token representing their staked position, enabling them to earn staking rewards while maintaining liquidity.",
-    "relationship_narrative": "The protocol consists of a single product family with one core contract, so there are no cross-family relationships or shared infrastructure.",
+    "project_purpose": "Crypto.com Liquid Staking is tracked as liquid staking receipt tokens across Cronos and Solana, including CDCETH for staked ETH and, per DefiLlama, CDCSOL for Solana liquid staking; note that the current homepage may primarily highlight ETH/CDCETH.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

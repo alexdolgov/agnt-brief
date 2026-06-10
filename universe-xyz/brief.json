@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "universe-xyz",
-  "generated_at": "2026-05-24T19:40:06.387Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:18.514Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "universe-xyz",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 99.41111196173111
   },
   "summary": {
-    "total_contracts": 36,
-    "total_addresses": 218,
-    "unique_implementations": 36,
-    "total_deployments": 218,
+    "total_contracts": 34,
+    "total_addresses": 216,
+    "unique_implementations": 34,
+    "total_deployments": 216,
     "audited_contracts": 5,
-    "unaudited_contracts": 20,
+    "unaudited_contracts": 18,
     "contracts_verified_audited": 5,
-    "contracts_verified_unaudited": 20,
+    "contracts_verified_unaudited": 18,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 11,
-    "coverage_pct": 20,
+    "coverage_pct": 21.7,
     "total_audits": 3,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 1646633.55976,
-    "tvl_usd": 38952551.09010303,
+    "dl_tvl_usd": 1626488.5243300002,
+    "tvl_usd": 216115.34999999998,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 38952551.09
+      "ethereum": 216115.35
     },
-    "asd_usd": 38952551.09010303,
+    "asd_usd": 216115.34999999998,
     "website_url": null,
     "chains": [
       "ethereum"
@@ -58,46 +58,20 @@
     }
   },
   "topography": {
-    "project_purpose": "Universe XYZ is a yield protocol on Ethereum that enables users to stake tokens and earn rewards through a set of staking and liquidity pool contracts.",
+    "project_purpose": "Universe XYZ is an Ethereum NFT/community platform underpinned by the $XYZ token. Staking or yield components should only be described when specifically tied to verified Universe XYZ-owned contracts.",
     "relationship_narrative": "The IlluviumERC20 token is used within the Staking contract for reward distribution, while the UniswapV2Pair provides liquidity for the token. Supporting contracts like BarnBridgeToken and Comp may serve as external reward tokens or governance interfaces.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 34,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x767fe9edc9e0df98e07454847909b5e959d7ca0e",
-      "name": "IlluviumERC20",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Universe XYZ",
-      "tvl_usd": 38736435.74010303,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "IlluviumERC20",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x767fe9edc9e0df98e07454847909b5e959d7ca0e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 38736435.74010303,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -190,37 +164,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc00e94cb662c3520282e6f5717214004a7f26888",
-      "name": "Comp",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Universe XYZ",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Comp",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc00e94cb662c3520282e6f5717214004a7f26888",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -2948,28 +2891,18 @@
       "auditor": "Quantstamp",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 20,
+      "coverage_pct": 21.7,
       "latest_audit": "2021-02"
     },
     {
       "auditor": "Haechi Labs",
       "tier": 2,
       "contracts_covered": 4,
-      "coverage_pct": 16,
+      "coverage_pct": 17.4,
       "latest_audit": "2021-01"
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x767fe9edc9e0df98e07454847909b5e959d7ca0e",
-      "name": "IlluviumERC20",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 38736435.74010303,
-      "risk_note": "Verified native implementation with $38,736,435.74 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -3112,10 +3045,10 @@
     }
   ],
   "origin_summary": {
-    "native": 24,
+    "native": 23,
     "upstream": 1,
     "standard_library": 4,
-    "needs_review": 7
+    "needs_review": 6
   },
   "scope_matching_notes": {
     "match_method_counts": {

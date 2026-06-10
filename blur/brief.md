@@ -5,8 +5,8 @@
 - Project: Blur (`blur`)
 - Website: [https://blur.io/](https://blur.io/)
 - Lifecycle: active (Tier 0, 91.7% below peak)
-- Generated: 2026-05-31T07:31:59.321Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.001Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: blast, ethereum
 - Contract surface: 17 unique implementations (27 raw deployments)
 - DeFi Llama TVL: $18,568,794.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Blur is an NFT marketplace and lending protocol that enables users to trade NFTs with advanced order types and access liquidity through peer-to-peer perpetual lending. It operates on Ethereum and Blast, offering a native token for governance and incentives.
+Blur is an NFT marketplace with bidding and lending components operating on Ethereum and Blast. It enables NFT trading and access to NFT-backed liquidity, with a native token used for governance and incentives.
 
 ### Architecture
 
@@ -53,7 +53,7 @@ The Blur Bids and Blur Lending families share the BlurToken for governance and i
 | BlurToken | token | ethereum | [`0x5283d2...208b44`](./contracts/ethereum-1/0x5283d291dbcf85356a21ba090e6db59121208b44/) | ⚠️ Unaudited |
 | TokenLockup | token | ethereum | 5 deployments: ethereum [`0x00a644...2663df`](./contracts/ethereum-1/0x00a64427d66cca0303e2f761a1310143682663df/); ethereum `0x3f1be7...7db647`; ethereum `0x581e27...f3fb26`; ethereum `0x5a9c32...66422a`; ethereum `0xc75ade...800f53` | ⚠️ Unaudited |
 | BlurPool | core_logic | ethereum | [`0x02ab04...f12da7`](./contracts/ethereum-1/0x02ab0463ca0c98de2d9b6649dcdb4ab667f12da7/) | ⚠️ Unaudited |
-| BlurPoolBlast | core_logic | blast | [`0xb772d5...41b8e5`](./contracts/blast-81457/0xb772d5c5f4a2eef67dfbc89aa658d2711341b8e5/) | ⚠️ Unaudited |
+| BlurPoolBlast | proxy | blast | [`0xb772d5...41b8e5`](./contracts/blast-81457/0xb772d5c5f4a2eef67dfbc89aa658d2711341b8e5/) | ⚠️ Unaudited |
 | Blend | unknown | ethereum | 3 deployments: ethereum [`0x13244e...af0156`](./contracts/ethereum-1/0x13244ef110692c1d8256c8dd4aa0a09bb5af0156/); ethereum `0x294693...98a20b`; ethereum `0x97bdb4...22af72` | ⚠️ Unaudited |
 | BlurAirdrop | operational_periphery | ethereum | 2 deployments: ethereum [`0xee90e5...9833e1`](./contracts/ethereum-1/0xee90e5a180ff1be8894ff178bc75459da89833e1/); ethereum `0xf2d15c...6bce25` | ⚠️ Unaudited |
 | BlurAirdrop2 | operational_periphery | ethereum | [`0xb38283...ddf093`](./contracts/ethereum-1/0xb38283cb75faabb384c22f97c633606265ddf093/) | ⚠️ Unaudited |

@@ -5,8 +5,8 @@
 - Project: Sophon Bridge (`sophon-bridge`)
 - Website: [https://sophon.xyz/](https://sophon.xyz/)
 - Lifecycle: active (Tier 0, 88.9% below peak)
-- Generated: 2026-05-27T12:29:54.025Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:59:16.245Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 10 unique implementations (21 raw deployments)
 - DeFi Llama TVL: $83,963,216.16
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Sophon Bridge is a canonical bridge protocol that enables cross-chain asset transfers, primarily focusing on bridging USDC and staking tokens like Zentry and Aethir between Ethereum and other chains. It provides wrapped token representations and migration mechanisms for existing staked assets.
+Sophon Bridge is the Ethereum-side canonical bridge/asset-locking surface for Sophon, a ZK chain. The recorded surface includes L1USDCBridge plus associated token, wrapper, migration and reward contracts.
 
 ### Architecture
 
@@ -33,7 +33,7 @@ The L1USDCBridge and StakedZentry contracts are deployed behind TransparentUpgra
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $5,513,111.22
 - Latest audit: 2025-05 (aging)
-- Staleness: 0 fresh, 8 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 6 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -84,8 +84,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Quantstamp Audit Report for Farming on Ethereum](https://github.com/sophon-org/audits/blob/main/Quantstamp%20-%20Sophon%20Farming%20Final%20Report.pdf) | Quantstamp | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
-| [Sherlock Audit Report for Farming on Ethereum](https://github.com/sophon-org/audits/blob/main/Sherlock%20-%20sophon-farming-contracts-audit-report-1718619027.pdf) | Sherlock | Contest | 2024-06 | aging | Direct | n/a | 0 | n/a |
+| [Quantstamp Audit Report for Farming on Ethereum](https://github.com/sophon-org/audits/blob/main/Quantstamp%20-%20Sophon%20Farming%20Final%20Report.pdf) | Quantstamp | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
+| [Sherlock Audit Report for Farming on Ethereum](https://github.com/sophon-org/audits/blob/main/Sherlock%20-%20sophon-farming-contracts-audit-report-1718619027.pdf) | Sherlock | Contest | 2024-06 | stale | Direct | n/a | 0 | n/a |
 | [Omniscia Audit Report for Custom USDC Bridge](https://github.com/sophon-org/audits/blob/main/Omniscia%20-%20Security%20Review%20-%2011_20_2024.pdf) | Omniscia | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
 | [Omniscia Audit Report for Guardian NFT, L1 Paymaster, and SOPH Token](https://github.com/sophon-org/audits/blob/main/Omniscia%20-%20Security%20Review%20-%2011_01_2024.pdf) | Guardian | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
 | [Omniscia Audit Report for Farming on layer-2 oracle based allocation reward system](https://github.com/sophon-org/audits/blob/main/Omniscia%20-%20Security%20Review%20-%20Farming%20-%2001_08_2025.pdf) | Omniscia | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |

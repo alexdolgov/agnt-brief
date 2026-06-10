@@ -5,8 +5,8 @@
 - Project: BYDFi (`bydfi`)
 - Website: [https://www.bydfi.com/en](https://www.bydfi.com/en)
 - Lifecycle: active (Tier 0, 32.1% below peak)
-- Generated: 2026-05-31T14:53:59.030Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:59:01.218Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $92,693,923.21
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+BYDFi is a centralized cryptocurrency exchange offering spot trading, futures/derivatives, copy trading, trading bots, and fiat access. The covered on-chain contract surface is limited to an Ethereum Gnosis Safe SafeProxy wallet used for custody and operational fund management, and does not represent the full BYDFi exchange or reserve/TVL surface across Ethereum, Bitcoin, and Ripple.
 
 ## Audit Coverage Summary
 

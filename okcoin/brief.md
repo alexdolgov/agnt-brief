@@ -5,21 +5,22 @@
 - Project: Okcoin (`okcoin`)
 - Website: [https://www.okcoin.com](https://www.okcoin.com)
 - Lifecycle: unknown
-- Generated: 2026-05-22T12:05:55.832Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:08.783Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $26,007,678.35
+- DeFi Llama TVL: $25,768,090.20
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Okcoin is a centralized cryptocurrency exchange (CEX) that facilitates trading of digital assets. It provides a platform for users to buy, sell, and manage cryptocurrencies.
-
-### Architecture
-
-No on-chain product families or contracts are identified, as Okcoin operates as a centralized exchange without disclosed smart contract infrastructure.
+Okcoin is a centralized cryptocurrency exchange (CEX) currently rebranding to OKX, with a US-focused customer context. The platform supports buying, selling, spot trading, withdrawals, and management of digital assets, and presents proof-of-reserves messaging for its exchange reserves.
 
 ## Audit Coverage Summary
 

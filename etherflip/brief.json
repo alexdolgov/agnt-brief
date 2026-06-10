@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "etherflip",
-  "generated_at": "2026-05-31T07:55:25.133Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:02.341Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "etherflip",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "EtherFlip is a luck-based gaming protocol on Ethereum where users can participate in games of chance, likely involving token flips or similar randomized outcomes.",
+    "project_purpose": "EtherFlip is an Ethereum Luck Games / Dice-Farm DeFi application centered on on-chain games of chance. Its tracked contract surface should not be described as a single-core-contract architecture; it includes multiple distinct EtherFlip game variants as well as token, raffle, and related contracts.",
     "relationship_narrative": "The protocol consists of a single product family with one core contract, indicating a simple, self-contained architecture without shared infrastructure or dependencies.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 7,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -5,8 +5,8 @@
 - Project: ZEROBASE CeDeFi (`zerobase-cedefi`)
 - Website: [https://app.zerobase.pro/](https://app.zerobase.pro/)
 - Lifecycle: active (Tier 0, 89.6% below peak)
-- Generated: 2026-05-31T14:54:05.757Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:59:19.501Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, ethereum, optimism, polygon
 - Contract surface: 7 unique implementations (54 raw deployments)
 - DeFi Llama TVL: $58,318,541.70
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-ZEROBASE CeDeFi is a basis trading protocol that allows users to deposit assets into vaults to earn yield from delta-neutral strategies across multiple chains.
+ZEROBASE CeDeFi is a zk-powered stablecoin staking and CeDeFi yield protocol tied to prover-node security and ZKP generation. Users stake or deposit stablecoins into vault/staking flows and can withdraw through the protocol, while deposited funds are used for CeDeFi yield generation including arbitrage activity via Binance.
 
 ### Architecture
 

@@ -5,17 +5,17 @@
 - Project: Cyclone (`cyclone`)
 - Website: [https://cyclone.xyz](https://cyclone.xyz)
 - Lifecycle: active (Tier 0, 85.8% below peak)
-- Generated: 2026-05-25T16:15:17.807Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:01.585Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc, ethereum, polygon
-- Contract surface: 64 unique implementations (180 raw deployments)
-- DeFi Llama TVL: $1,306,683.42
+- Contract surface: 63 unique implementations (179 raw deployments)
+- DeFi Llama TVL: $1,301,416.14
 - On-chain TVL (included contracts): $165,469,302.49
 - TVL by chain: Polygon $165,418,183.05 | Bsc $33,942.48 | Ethereum $17,176.97
 
 ## Project Description
 
-Cyclone is a yield optimization protocol that aggregates liquidity pools and automates compounding across multiple chains. It offers vault-like products (CycloneV2, Aeolus) that auto-compound user deposits into underlying DeFi protocols, and includes a native token (CycloneToken) for governance and rewards.
+Cyclone is a zkSNARK-based transaction privacy protocol that provides mixer-style private transfers across supported chains. Its contract surface should be assessed as Cyclone-owned privacy-pool/deposit-withdrawal deployments and related protocol contracts, excluding third-party tokens, bridge/system contracts, DEX infrastructure, and other external dependencies. Tornado Cash audits may be treated only as inherited/reference evidence for reused zkSNARK implementation components unless Cyclone-specific audit scope is demonstrated.
 
 ### Architecture
 
@@ -23,17 +23,17 @@ All families share the CycloneToken as the governance and reward token, and rely
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/31 (0.0%)
-- Verified + Unaudited implementations: 31
+- Verified implementations audited: 0/30 (0.0%)
+- Verified + Unaudited implementations: 30
 - Verified by bytecode match: 0
 - Unverified implementations: 33
-- Unique implementations: 64
-- Raw deployments: 180
-- Audits discovered: 3
+- Unique implementations: 63
+- Raw deployments: 179
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $165,469,302.49
-- Latest audit: 2019-11 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 1 unknown
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -46,7 +46,7 @@ All families share the CycloneToken as the governance and reward token, and rely
 
 - None
 
-### ⚠️ Verified + Unaudited (31)
+### ⚠️ Verified + Unaudited (30)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -74,7 +74,6 @@ All families share the CycloneToken as the governance and reward token, and rely
 | Quick | unknown | polygon | [`0x831753...33dc13`](./contracts/polygon-137/0x831753dd7087cac61ab5644b308642cc1c33dc13/) | ⚠️ Unaudited |
 | Recovery | unknown | ethereum | 7 deployments: ethereum [`0x02ee06...8b689f`](./contracts/ethereum-1/0x02ee06c137a106255299589b3184f5ba438b689f/); ethereum `0x10ed43...56024e`; ethereum `0x1f5ecb...ff1996`; ethereum `0x2ad2c5...eb2c56`; ethereum `0x877fe7...15edb6`; ethereum `0xca143c...350c73`; ethereum `0xe47d22...81f408` | ⚠️ Unaudited |
 | TetherToken | token | ethereum | [`0xdac17f...831ec7`](./contracts/ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ⚠️ Unaudited |
-| TORN | unknown | ethereum | [`0x77777f...6a116c`](./contracts/ethereum-1/0x77777feddddffc19ff86db637967013e6c6a116c/) | ⚠️ Unaudited |
 | UChildAdministrableERC20 | token | polygon | 2 deployments: polygon [`0x2791bc...a84174`](./contracts/polygon-137/0x2791bca1f2de4661ed88a30c99a7a9449aa84174/); polygon `0xdd9185...812226` | ⚠️ Unaudited |
 | UChildDAI | unknown | polygon | 2 deployments: polygon [`0x490e37...7999a7`](./contracts/polygon-137/0x490e379c9cff64944be82b849f8fd5972c7999a7/); polygon `0x8f3cf7...c6a063` | ⚠️ Unaudited |
 | UChildUSDT0 | token | polygon | [`0xc2132d...b58e8f`](./contracts/polygon-137/0xc2132d05d31c914a87c6611c10748aeb04b58e8f/) | ⚠️ Unaudited |
@@ -138,9 +137,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](), [smart contracts](https://tornado.cash/Tornado_solidity_audit.pdf)). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9).](https://tornado.cash/Tornado_circuit_audit.pdf) | yAudit | Audit | 2019-11 | stale | Direct | n/a | 0 | n/a |
-| [As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](https://tornado.cash/Tornado_circuit_audit.pdf), [smart contracts]()). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9).](https://tornado.cash/Tornado_solidity_audit.pdf) | yAudit | Audit | 2019-11 | stale | Direct | n/a | 0 | n/a |
-| [[Для еще более глубокого погружения см. Криптографический обзор.]()](https://tornado.cash/Tornado_cryptographic_review.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -164,7 +160,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 17 |
-| upstream | 21 |
+| upstream | 20 |
 | standard_library | 0 |
 | needs_review | 26 |
 
@@ -172,15 +168,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [3115] As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](), [smart contracts](https://tornado.cash/Tornado_solidity_audit.pdf)). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9).
-- [3116] As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](https://tornado.cash/Tornado_circuit_audit.pdf), [smart contracts]()). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9).
-- [3117] [Для еще более глубокого погружения см. Криптографический обзор.]()
 
 Fork inheritance lineage and inherited audits are included when available.

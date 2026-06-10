@@ -6,21 +6,22 @@
 
 - Project: Unslashed (`unslashed`)
 - Lifecycle: declining (Tier 0, 98.2% below peak)
-- Generated: 2026-05-31T11:28:11.336Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:18.516Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $3,066,570.36
 - On-chain TVL (included contracts): $3,126,687.15
 - TVL by chain: Ethereum $3,126,687.15
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Unslashed is a decentralized insurance protocol that allows users to provide underwriting capital and earn premiums by depositing assets into vaults. It also includes tokenized risk pools and staking mechanisms to support coverage for various DeFi risks.
-
-### Architecture
-
-The Unslashed family centers on bVault contracts that hold underwriting capital, while BAC pools provide stablecoin risk coverage. Tokens like BlackPoolToken and ArcProxy facilitate governance and staking, with MasterChef distributing rewards, and Uniswap pairs providing liquidity for these tokens.
+Unslashed is a decentralized insurance protocol that allows users to provide underwriting capital and earn premiums by depositing assets into vaults. Unsupported or third-party components such as MasterChef rewards, Uniswap pairs, BAC pools, BlackPoolToken, ArcProxy, and other non-surface tokens or pools should not be described as part of the Unslashed contract surface unless independently verified as Unslashed-owned.
 
 ## Audit Coverage Summary
 

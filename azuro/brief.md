@@ -5,8 +5,8 @@
 - Project: Azuro (`azuro`)
 - Website: [https://azuro.org](https://azuro.org)
 - Lifecycle: active (Tier 0, 89.5% below peak)
-- Generated: 2026-06-10T20:50:46.484Z
-- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
+- Generated: 2026-06-10T20:58:57.972Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, bsc, gnosis, linea, polygon
 - Contract surface: 304 unique implementations (1870 raw deployments)
 - DeFi Llama TVL: $1,067,238.73

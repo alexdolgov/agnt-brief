@@ -7,8 +7,8 @@
 - Project: Allbridge (`allbridge`)
 - Website: [https://app.allbridge.io](https://app.allbridge.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:22:10.586Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.740Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, aurora, avalanche, base, bsc, celo, ethereum, fantom, harmony, optimism, polygon, sonic, unichain
 - Contract surface: 282 unique implementations (537 raw deployments)
 - DeFi Llama TVL: $26,552,200.00

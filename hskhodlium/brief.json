@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hskhodlium",
-  "generated_at": "2026-05-24T18:14:57.675Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:04.687Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1717088.6617,
-    "tvl_usd": 1717088.6617,
+    "dl_tvl_usd": 1506185.53972,
+    "tvl_usd": 1506185.53972,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "HSK Hodlium is a liquid staking protocol that allows users to stake their assets and receive liquid staking tokens in return, enabling them to earn staking rewards while maintaining liquidity.",
-    "relationship_narrative": "No product families or contracts are defined in the provided inventory, so no relationships can be described.",
+    "project_purpose": "HSK Hodlium is an HSK staking platform on HashKey Chain. DefiLlama classifies it as Liquid Staking, but available evidence only substantiates HSK staking and rewards, not generic multi-asset staking or liquid staking token issuance.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

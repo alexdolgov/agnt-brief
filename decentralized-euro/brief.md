@@ -5,17 +5,17 @@
 - Project: Decentralized Euro (`decentralized-euro`)
 - Website: [https://deuro.com/](https://deuro.com/)
 - Lifecycle: active (Tier 0, 71.5% below peak)
-- Generated: 2026-05-25T14:30:55.782Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:01.655Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, ethereum, optimism, polygon
 - Contract surface: 72 unique implementations (106 raw deployments)
-- DeFi Llama TVL: $2,077,487.14
+- DeFi Llama TVL: $2,066,429.17
 - On-chain TVL (included contracts): $230,430,927.12
 - TVL by chain: Ethereum $230,412,736.58 | Polygon $18,190.54
 
 ## Project Description
 
-Decentralized Euro is a collateralized debt position (CDP) protocol that issues EUR-pegged stablecoins against various crypto assets. It also provides savings vaults, cross-chain bridges, and governance tokens to manage the system.
+Decentralized Euro is a collateralized debt position (CDP) protocol that issues the EUR-pegged dEURO stablecoin against supported collateral assets. Its in-scope protocol surface is focused on dEURO minting/CDP functionality, savings, and protocol-share/governance-related tokens; external euro stablecoins, bridges, and standard tokens should be treated only as integrations or counterparty assets, not as dEURO-owned protocol contracts.
 
 ### Architecture
 
@@ -76,7 +76,7 @@ The Decentralized Euro Core family provides the foundational CDP and stablecoin 
 | BlacklistValidator | unknown | ethereum | [`0x774681...57254e`](./contracts/ethereum-1/0x774681a648125d46f35017cf6cec43a41857254e/) | ⚠️ Unaudited |
 | BridgedDecentralizedEURO | operational_periphery | optimism | 2 deployments: optimism [`0x1b5f7f...65a264`](./contracts/optimism-10/0x1b5f7fa46ed0f487f049c42f374ca4827d65a264/); base [`0x1b5f7f...65a264`](./contracts/base-8453/0x1b5f7fa46ed0f487f049c42f374ca4827d65a264/) | ⚠️ Unaudited |
 | BridgedDEPS | operational_periphery | base | [`0x5f674b...282722`](./contracts/base-8453/0x5f674bf6d559229bdd29d642d2e0978f1e282722/) | ⚠️ Unaudited |
-| ClonableBeaconProxy | registry | arbitrum | [`0x5e85fa...57d537`](./contracts/arbitrum-42161/0x5e85faf503621830ca857a5f38b982e0cc57d537/) | ⚠️ Unaudited |
+| ClonableBeaconProxy | token | arbitrum | [`0x5e85fa...57d537`](./contracts/arbitrum-42161/0x5e85faf503621830ca857a5f38b982e0cc57d537/) | ⚠️ Unaudited |
 | CoinLendingGateway | core_logic | ethereum | [`0x1da37d...ee89d2`](./contracts/ethereum-1/0x1da37d613fb590eed37520b72e9c6f0f6eee89d2/) | ⚠️ Unaudited |
 | ERC20Lib | token | ethereum | [`0x57724f...90f509`](./contracts/ethereum-1/0x57724f65b3f914de7820c6f76b2099fa3a90f509/) | ⚠️ Unaudited |
 | ERC677Lib | unknown | ethereum | [`0x0d43c5...6f0820`](./contracts/ethereum-1/0x0d43c529aab2a3c1bca65827eb5136c3276f0820/) | ⚠️ Unaudited |
@@ -166,7 +166,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x774681...57254e`](./contracts/ethereum-1/0x774681a648125d46f35017cf6cec43a41857254e/) | BlacklistValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x1b5f7f...65a264`](./contracts/optimism-10/0x1b5f7fa46ed0f487f049c42f374ca4827d65a264/) | BridgedDecentralizedEURO | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x5f674b...282722`](./contracts/base-8453/0x5f674bf6d559229bdd29d642d2e0978f1e282722/) | BridgedDEPS | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x5e85fa...57d537`](./contracts/arbitrum-42161/0x5e85faf503621830ca857a5f38b982e0cc57d537/) | ClonableBeaconProxy | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x5e85fa...57d537`](./contracts/arbitrum-42161/0x5e85faf503621830ca857a5f38b982e0cc57d537/) | ClonableBeaconProxy | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1da37d...ee89d2`](./contracts/ethereum-1/0x1da37d613fb590eed37520b72e9c6f0f6eee89d2/) | CoinLendingGateway | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x57724f...90f509`](./contracts/ethereum-1/0x57724f65b3f914de7820c6f76b2099fa3a90f509/) | ERC20Lib | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0d43c5...6f0820`](./contracts/ethereum-1/0x0d43c529aab2a3c1bca65827eb5136c3276f0820/) | ERC677Lib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |

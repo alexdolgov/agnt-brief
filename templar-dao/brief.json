@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "templar-dao",
-  "generated_at": "2026-05-31T10:55:06.211Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:17.338Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "templar-dao",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Templar DAO is a reserve currency protocol on BSC that issues the TEMPLAR token, backed by a treasury, and offers staking mechanisms to incentivize holding and participation.",
+    "project_purpose": "Templar DAO is described in current public metadata as a reserve-currency and hedge-fund/treasury-reverse protocol, available cross-chain on BSC and MOVR. Its BSC contract surface includes TemplarToken/TEM-related token, treasury, and staking components; the current evidence does not independently verify use of the TEMPLAR symbol over TEM/TemplarToken.",
     "relationship_narrative": "The TemplarToken is the central asset, while Staking and MasterChef contracts distribute rewards to stakers, likely using the token as the primary incentive.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 40,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

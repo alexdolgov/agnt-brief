@@ -5,8 +5,8 @@
 - Project: Tulipa Capital (`tulipa-capital`)
 - Website: [https://www.tulipa.capital](https://www.tulipa.capital)
 - Lifecycle: active (Tier 0, 74.1% below peak)
-- Generated: 2026-05-31T11:23:33.400Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:17.613Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, base, ethereum
 - Contract surface: 4 unique implementations (28 raw deployments)
 - DeFi Llama TVL: $49,287,690.74
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Tulipa Capital is a risk curation protocol that deploys user deposits into yield-bearing strategies via a system of upgradeable vaults and proxies. It operates across Ethereum, Base, and Avalanche, offering structured products that optimize returns while managing risk.
+Tulipa Capital is a DeFi risk-curation project focused on lending markets and vaults, emphasizing capital protection, transparency, and institutional-scale capital deployment. Its indexed contract set includes vaults and proxy-based deployments on Ethereum and Avalanche, while its broader DefiLlama-listed footprint spans additional chains; the indexed contracts should not be treated as the full multichain project surface.
 
 ### Architecture
 

@@ -7,8 +7,8 @@
 - Project: Aria Protocol (`aria-protocol`)
 - Website: [https://ariaprotocol.xyz](https://ariaprotocol.xyz)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-10T20:42:10.525Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.742Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $181,053.04
@@ -22,7 +22,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Aria is an intellectual-property real-world asset protocol focused on music/IP rights, royalties and yield, staking or vault participation, and licensing/remix use cases, with current project context tied to the Story ecosystem. The BSC AriaOFT contract should be treated separately as a token/bridge-related deployment unless independently evidenced as the current core protocol surface.
 
 ## Audit Coverage Summary
 

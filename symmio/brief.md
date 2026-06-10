@@ -5,8 +5,8 @@
 - Project: SYMMIO (`symmio`)
 - Website: [https://www.symm.io/](https://www.symm.io/)
 - Lifecycle: active (Tier 0, 63.3% below peak)
-- Generated: 2026-05-31T10:48:59.697Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.993Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, berachain, bsc, mantle, mode, polygon, sonic
 - Contract surface: 168 unique implementations (1064 raw deployments)
 - DeFi Llama TVL: $3,505,989.77
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-SYMMIO is a decentralized derivatives protocol enabling peer-to-peer trading of synthetic assets. It uses a two-party architecture where PartyA (traders) and PartyB (hedgers/liquidity providers) interact through a Diamond proxy system to create and settle bilateral contracts. The protocol supports multiple chains and includes fee distribution, multi-account management, and liquidation mechanisms.
+SYMMIO is a hybrid, intent-based derivatives clearing protocol for OTC and derivatives markets. It enables frontend builders and users to express trading intents that can be matched or serviced by solver-enabled counterparties, creating bilateral agreements between traders and hedgers/liquidity providers. Its on-chain architecture handles collateral, settlement, risk management, liquidations, fee distribution, and multi-account workflows across supported deployments. The PartyA/PartyB model and Diamond/facet contracts are implementation details of this bilateral clearing system rather than the full product scope.
 
 ### Architecture
 

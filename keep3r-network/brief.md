@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Keep3r Network
 
-⚠️ Lifecycle status: DEAD - TVL dropped 9.7% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 9.7% over 90 days
 
 ## Project Overview
 
 - Project: Keep3r Network (`keep3r-network`)
 - Website: [https://keep3r.network](https://keep3r.network)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-26T06:35:11.266Z
-- Pipeline run: v2-pipeline-2026-05-26-eff36e-a3ce
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:06.660Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 481 unique implementations (1714 raw deployments)
-- DeFi Llama TVL: $3,996,061.60
+- Contract surface: 480 unique implementations (1713 raw deployments)
+- DeFi Llama TVL: $3,674,192.75
 - On-chain TVL (included contracts): $2,070,483,544.11
 - TVL by chain: Ethereum $2,070,483,544.11
 
 ## Project Description
 
-Keep3r Network is a decentralized job marketplace that connects projects needing external DevOps and maintenance tasks with keepers who execute them. It uses the KP3R token for governance and incentivization, and integrates with various DeFi protocols to automate operations like harvesting, rebalancing, and liquidations.
+Keep3r Network is a decentralized keeper/job network where projects can register jobs and keepers execute external maintenance or automation tasks in exchange for ETH, token, or KP3R-denominated rewards. KP3R is used for network participation and governance/incentive mechanisms; third-party DeFi protocols may be integrations or job targets but should not be treated as Keep3r-owned product components without independent evidence.
 
 ### Architecture
 
@@ -25,19 +25,19 @@ The Keep3r Network family relies on a single governance proxy (GnosisSafe) and a
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/368 (0.3%)
-- Verified + Unaudited implementations: 367
+- Verified implementations audited: 1/367 (0.3%)
+- Verified + Unaudited implementations: 366
 - Verified by bytecode match: 0
 - Unverified implementations: 113
-- Unique implementations: 481
-- Raw deployments: 1714
+- Unique implementations: 480
+- Raw deployments: 1713
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $2,070,483,544.11
 - Latest audit: 2020-11 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $2,070,483,544.11 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $2,070,483,544.11 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -53,7 +53,7 @@ The Keep3r Network family relies on a single governance proxy (GnosisSafe) and a
 |---|---|---|---|---|
 | Keep3r | unknown | ethereum | 17 deployments: ethereum [`0x30f358...2f57f1`](./contracts/ethereum-1/0x30f3581ef6469334c8752d9b6ca3fb39c72f57f1/); ethereum `0x4a6cff...59edab`; ethereum `0x4bf466...4f88c1`; ethereum `0x4ff017...181544`; ethereum `0x5a09ad...3746e9`; ethereum `0x5e85e8...0b0e3f`; ethereum `0x6559a9...44729c`; ethereum `0x86887e...440c00`; ethereum `0x90a1de...60ae6f`; ethereum `0x9696fe...e54b32`; ethereum `0xb0a150...8b00b2`; ethereum `0xb63650...b6a8fe`; ethereum `0xb920eb...412b5b`; ethereum `0xc8c839...68a927`; ethereum `0xdc0298...3dcc6e`; ethereum `0xeb02ad...8c44cc`; ethereum `0xf9c461...398288` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (367)
+### ⚠️ Verified + Unaudited (366)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -117,7 +117,6 @@ The Keep3r Network family relies on a single governance proxy (GnosisSafe) and a
 | CollateralMaximizer | unknown | ethereum | 4 deployments: ethereum [`0x494ba8...1b96c1`](./contracts/ethereum-1/0x494ba8753a253bb314f1e8324c36f804d31b96c1/); ethereum `0x6ae0b2...bcca84`; ethereum `0xa0807c...5d7fd3`; ethereum `0xbc8c63...0158d1` | ⚠️ Unaudited |
 | CollateralShort | unknown | ethereum | 2 deployments: ethereum [`0x188c22...f84246`](./contracts/ethereum-1/0x188c2274b04ea392b21487b5de299e382ff84246/); ethereum `0x1f2c3a...73a516` | ⚠️ Unaudited |
 | CollateralState | token | ethereum | 6 deployments: ethereum [`0x04d923...796107`](./contracts/ethereum-1/0x04d9231b1fff88464a3d26fd91a1ba0b24796107/); ethereum `0x13a114...eddb0c`; ethereum `0x54277b...7828d6`; ethereum `0x8a1a00...db8cdb`; ethereum `0xbe5b5a...4f8ff8`; ethereum `0xd32225...5e870c` | ⚠️ Unaudited |
-| Comp | unknown | ethereum | [`0x2ba592...7cb200`](./contracts/ethereum-1/0x2ba592f78db6436527729929aaf6c908497cb200/) | ⚠️ Unaudited |
 | CompensationEscrow | operational_periphery | ethereum | [`0xda7b94...4b64c3`](./contracts/ethereum-1/0xda7b940be1bce0d6e2eecd96f5cf6ed0504b64c3/) | ⚠️ Unaudited |
 | COMPfarming | unknown | ethereum | 4 deployments: ethereum [`0x1532eb...6aa870`](./contracts/ethereum-1/0x1532eb6c6d134903a0dedfc840128007b36aa870/); ethereum `0x885f9e...514979`; ethereum `0xbdba8b...58e821`; ethereum `0xef9f5d...8198a0` | ⚠️ Unaudited |
 | Comptroller | unknown | ethereum | 28 deployments: ethereum [`0x3d5bc3...ae9258`](./contracts/ethereum-1/0x3d5bc3c8d13dcb8bf317092d84783c2697ae9258/); ethereum `0x44a420...dff193`; ethereum `0x4b1479...e5a083`; ethereum `0x5d6202...2117c8`; ethereum `0x5ef4c9...1205b4`; ethereum `0x76b34a...063828`; ethereum `0x78962e...892963`; ethereum `0x793027...cb16bd`; ethereum `0x79757e...5a86c7`; ethereum `0x7aa375...9f53ba`; ethereum `0x7d506f...ef9902`; ethereum `0x823498...239367`; ethereum `0x86c2bb...2e4fe9`; ethereum `0x8a2707...e4e088`; ethereum `0x9ac75f...7b64a7`; ethereum `0xa05e35...a7e88d`; ethereum `0xa7d4f8...34708b`; ethereum `0xab1c34...144cbb`; ethereum `0xb03614...64df27`; ethereum `0xb4cf50...38f957`; ethereum `0xc4ff0a...d0c4e9`; ethereum `0xc855b3...dd2dde`; ethereum `0xcbb626...e4111c`; ethereum `0xcdca61...8d5aa3`; ethereum `0xd96c52...76367d`; ethereum `0xe293a9...f76e63`; ethereum `0xe376ed...d11bb9`; ethereum `0xf1cd00...f494f4` | ⚠️ Unaudited |
@@ -728,7 +727,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 167 |
-| upstream | 110 |
+| upstream | 109 |
 | standard_library | 5 |
 | needs_review | 199 |
 

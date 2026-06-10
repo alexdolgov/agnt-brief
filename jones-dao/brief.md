@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Jones DAO
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 2.5% over 90 days
-
 ## Project Overview
 
 - Project: Jones DAO (`jones-dao`)
 - Website: [https://jonesdao.io](https://jonesdao.io)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T08:31:27.059Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:06.405Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, berachain, blast, ethereum
-- Contract surface: 500 unique implementations (1366 raw deployments)
+- Contract surface: 502 unique implementations (1339 raw deployments)
 - DeFi Llama TVL: $1,456,726.90
 - On-chain TVL (included contracts): $519,746,713.51
 - TVL by chain: Ethereum $452,536,081.49 | Arbitrum $67,210,632.02
 
 ## Project Description
 
-Jones DAO is a yield aggregation protocol that offers structured vaults and strategies for options, liquidity pools, and yield-bearing assets. It enables users to deposit assets into automated strategies that generate returns through options selling, liquidity provision, and compounding rewards.
+Jones DAO is an active yield, strategy, and liquidity vault protocol currently centered on Arbitrum and Ethereum/Mainnet. Its protocol-owned surface should be limited to live Jones-owned vault and strategy contracts; upstream protocols, standard tokens, bridges, routers, safes, admin/beacon infrastructure, and other dependencies should be tracked separately. Historical, experimental, or detected deployments on Base, Berachain, Blast, or other chains should not be presented as current core product surface unless independently verified as active Jones-supported products.
 
 ### Architecture
 
@@ -26,18 +24,17 @@ The families share governance via Gnosis Safe and ProxyAdmin, and use common inf
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/354 (0.0%)
-- Verified + Unaudited implementations: 339
-- Verified by bytecode match: 15
-- Unverified implementations: 146
-- Unique implementations: 500
-- Raw deployments: 1366
+- Verified + Unaudited implementations: 340
+- Verified by bytecode match: 14
+- Unverified implementations: 148
+- Unique implementations: 502
+- Raw deployments: 1339
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $519,746,713.51
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $519,746,713.51 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,7 +46,7 @@ The families share governance via Gnosis Safe and ProxyAdmin, and use common inf
 
 - None
 
-### ⚠️ Verified + Unaudited (339)
+### ⚠️ Verified + Unaudited (340)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -338,6 +335,7 @@ The families share governance via Gnosis Safe and ProxyAdmin, and use common inf
 | RewardsDistributionV2 | unknown | arbitrum | [`0xc4e63f...7fc134`](./contracts/arbitrum-42161/0xc4e63f3be080d932f6d2d1ba1936be72b37fc134/) | ⚠️ Unaudited |
 | RewardsDistributionV3 | unknown | arbitrum | 2 deployments: arbitrum [`0x7f3649...f6a40f`](./contracts/arbitrum-42161/0x7f3649c4b6acc01d50eaa725096df27a36f6a40f/); arbitrum `0xa5151f...e941c6` | ⚠️ Unaudited |
 | RoleController | governance | arbitrum | 4 deployments: arbitrum [`0x19f056...3950f7`](./contracts/arbitrum-42161/0x19f056cecd9599db1724de7a6814e779843950f7/); arbitrum `0x724bfb...d9b41d`; arbitrum `0xa7ce1a...00fbdf`; arbitrum `0xba5c01...59c838` | ⚠️ Unaudited |
+| Router | adapter | arbitrum | 9 deployments: arbitrum [`0x4bc4d2...e22a04`](./contracts/arbitrum-42161/0x4bc4d296dfce661f34dd72d642d2a7c348e22a04/); arbitrum `0x51c079...8a8314`; arbitrum `0x99d943...211fa2`; arbitrum `0x9c895c...fc2e4d`; arbitrum `0xa6a01f...1de163`; arbitrum `0xe22cef...671779`; arbitrum `0xe9c738...16b18e`; blast `0x6a0826...5d8e90`; blast `0x9880d5...599129` | ⚠️ Unaudited |
 | SsovAdapter | adapter | arbitrum | 4 deployments: arbitrum [`0x27cebe...cf68c1`](./contracts/arbitrum-42161/0x27cebe6b5075e4d6feec384b0a31ec6e53cf68c1/); arbitrum `0x51eb37...58ed04`; arbitrum `0x634ae8...fe18c2`; arbitrum `0xaa6348...3d5d47` | ⚠️ Unaudited |
 | SSOVDelegatorFactory | registry | arbitrum | [`0xfc2403...c314d0`](./contracts/arbitrum-42161/0xfc240385b257dac2600e7fd643090e02bdc314d0/) | ⚠️ Unaudited |
 | SSOVDpx | unknown | arbitrum | 3 deployments: arbitrum [`0x73b82e...6f8a84`](./contracts/arbitrum-42161/0x73b82eba5176d8aa02606459e416f13f686f8a84/); arbitrum `0x818ced...1a76ec`; arbitrum `0xc13e7c...cb3db4` | ⚠️ Unaudited |
@@ -399,7 +397,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ⚠️ Verified by Bytecode + Unaudited (15)
+### ⚠️ Verified by Bytecode + Unaudited (14)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
@@ -413,7 +411,6 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 | ProxyAdmin | governance | ethereum | 31 deployments: ethereum [`0x0a3492...e43de7`](./contracts/ethereum-1/0x0a3492adabfd852d5b48b0c7390221fbbfe43de7/); ethereum `0x12816c...f5fe85`; ethereum `0x55fb51...ef1746`; ethereum `0x78bf79...38233b`; ethereum `0x7b6cd8...155150`; ethereum `0x7ca237...1c0b69`; ethereum `0xcc2134...f75497`; base `0xc64b95...458dc1`; arbitrum `0x0ff5a8...738d11`; arbitrum `0x1756c4...39f6b9`; arbitrum `0x1daefd...a049d4`; arbitrum `0x2a0027...72dd81`; arbitrum `0x2c107b...09629f`; arbitrum `0x2ddb0d...0719a5`; arbitrum `0x2e6620...fb7c70`; arbitrum `0x36db57...ecdb27`; arbitrum `0x3db8cf...bf5cb0`; arbitrum `0x43f071...6b7d05`; arbitrum `0x5f7f00...eb7103`; arbitrum `0x73bc32...c5db04`; arbitrum `0x9933f4...c0c4aa`; arbitrum `0xc323c5...c1beb2`; arbitrum `0xcd8603...f00694`; arbitrum `0xd7ca56...bdaf39`; arbitrum `0xe0a28b...e24f3e`; arbitrum `0xe58917...c89a4d`; arbitrum `0xec5b07...6d94aa`; berachain `0x34d421...985d66`; berachain `0xd1d417...1b48c1`; blast `0xc185a2...855b8c`; blast `0xedc0ff...ed69df` | ⚠️ Unaudited (bytecode match) |
 | RewardReceiver | unknown | arbitrum | 17 deployments: base `0x26c6ce...4b4e75`; base `0x6a0826...5d8e90`; arbitrum [`0x0af020...6f7a0d`](./contracts/arbitrum-42161/0x0af020886c7fc1243c3f843ee76345e2ab6f7a0d/); arbitrum `0x152cc2...a9a1da`; arbitrum `0x311b17...84f875`; arbitrum `0x35da35...24a52a`; arbitrum `0x426b26...532157`; arbitrum `0x52c7f2...613554`; arbitrum `0x55f1bd...af47f2`; arbitrum `0x621c8e...92c1d8`; arbitrum `0x8c78bc...f480dd`; arbitrum `0xc64b95...458dc1`; arbitrum `0xccf028...c143de`; berachain `0x59794f...a874dd`; berachain `0xbc58d2...98f0a2`; blast `0x3be137...490edb`; blast `0xc8cb68...1db074` | ⚠️ Unaudited (bytecode match) |
 | RewardTracker | unknown | arbitrum | 16 deployments: base `0xa49bb2...07c5ff`; arbitrum [`0x124b6a...7d0458`](./contracts/arbitrum-42161/0x124b6aef712f9b2f8e239c01ce251287457d0458/); arbitrum `0x26f18b...423643`; arbitrum `0x3c3e0a...f7db2b`; arbitrum `0x4e0443...b54d90`; arbitrum `0x6ef6ba...91c92d`; arbitrum `0x77c5f0...8f612a`; arbitrum `0x9769ca...33712e`; arbitrum `0xaa1c7a...dbb3b9`; arbitrum `0xb66a96...fff9ea`; arbitrum `0xc57166...4886e8`; arbitrum `0xd85926...c7dd21`; berachain `0x26c6ce...4b4e75`; berachain `0x26f18b...423643`; blast `0xcd0505...667955`; blast `0xe71ad9...7bbce2` | ⚠️ Unaudited (bytecode match) |
-| Router | adapter | arbitrum | 38 deployments: base `0xbc99ef...3c114e`; arbitrum [`0x06974f...3f6c5f`](./contracts/arbitrum-42161/0x06974f42a1090f07d832240cb2375420eb3f6c5f/); arbitrum `0x06ea20...7e70c7`; arbitrum `0x0946e3...f2ed9b`; arbitrum `0x14c921...6d54e1`; arbitrum `0x15ee32...709e55`; arbitrum `0x204e14...530e9f`; arbitrum `0x33577c...cb7fd3`; arbitrum `0x4b5cf3...18cabe`; arbitrum `0x4bc4d2...e22a04`; arbitrum `0x5178f0...990b81`; arbitrum `0x51c079...8a8314`; arbitrum `0x661322...238c63`; arbitrum `0x6d7042...e5c3e1`; arbitrum `0x71b009...99a185`; arbitrum `0x7f7b47...335437`; arbitrum `0x99d943...211fa2`; arbitrum `0x9c895c...fc2e4d`; arbitrum `0xa49bb2...07c5ff`; arbitrum `0xa6a01f...1de163`; arbitrum `0xb7eae6...e2ca65`; arbitrum `0xbde8d5...104b62`; arbitrum `0xcb83a0...06b927`; arbitrum `0xdd9db4...5b3cc7`; arbitrum `0xe22cef...671779`; arbitrum `0xe9c738...16b18e`; arbitrum `0xea6491...61c767`; arbitrum `0xed1586...4d5753`; arbitrum `0xf18f2f...202b9c`; berachain `0xbde8d5...104b62`; berachain `0xf572c7...455c6d`; blast `0x26c6ce...4b4e75`; blast `0x29e9c7...67d2a8`; blast `0x428d38...768a3b`; blast `0x6a0826...5d8e90`; blast `0x9880d5...599129`; blast `0xb0390b...be6254`; blast `0xc16f61...105a68` | ⚠️ Unaudited (bytecode match) |
 | SingleRewardTracker | unknown | arbitrum | 23 deployments: base `0x1f6244...577485`; base `0xe6a316...883c8c`; arbitrum [`0x02af5c...c8748d`](./contracts/arbitrum-42161/0x02af5c07e96b40e3324390da4a794fff55c8748d/); arbitrum `0x067fe6...55c509`; arbitrum `0x0d490c...4790a9`; arbitrum `0x1efc5f...fc6c45`; arbitrum `0x3182a6...f3e2f6`; arbitrum `0x34831f...1ba670`; arbitrum `0x4ecafa...403a38`; arbitrum `0x8d8761...e26622`; arbitrum `0xc7e381...5654ca`; arbitrum `0xcfefb8...2bc59d`; arbitrum `0xd09991...bc51c8`; arbitrum `0xdae0a4...54b5ec`; arbitrum `0xf5692a...cce714`; berachain `0x067fe6...55c509`; berachain `0x367fe7...00a26e`; berachain `0x440713...f36231`; berachain `0xdae0a4...54b5ec`; blast `0x944fc7...2ec7c3`; blast `0xb1d090...81e475`; blast `0xbbf270...805389`; blast `0xccf028...c143de` | ⚠️ Unaudited (bytecode match) |
 | TransparentUpgradeableProxy | proxy | arbitrum | 98 deployments: ethereum `0x79ce13...3ef89f`; base `0x10498d...6caeb9`; base `0x250510...f2b931`; base `0x3e7a81...423c01`; base `0x61e40d...61eed5`; base `0x631a6b...22a71b`; base `0x698f96...6ae00d`; base `0x6eae8b...4987ae`; base `0x74fb98...876444`; base `0xa7272d...a3324c`; base `0xcb4e41...18978f`; base `0xe71b89...dbdef5`; base `0xf572c7...455c6d`; arbitrum [`0x00825a...873055`](./contracts/arbitrum-42161/0x00825a475911b51eda11bc8cbc79603991873055/); arbitrum `0x02b229...f35073`; arbitrum `0x0b61a3...7a4c07`; arbitrum `0x1137d4...3fd22e`; arbitrum `0x1c52bd...c5ab4e`; arbitrum `0x1e41d8...cd9d41`; arbitrum `0x24c90a...c0aae1`; arbitrum `0x2fb402...c33452`; arbitrum `0x319902...dc4f3c`; arbitrum `0x32fc66...bbdfb5`; arbitrum `0x391162...7918be`; arbitrum `0x3e6ff5...571e4b`; arbitrum `0x53ae22...5c9be3`; arbitrum `0x53d722...1d807c`; arbitrum `0x543c03...1b9df1`; arbitrum `0x5dc751...17925b`; arbitrum `0x64ecc5...afbd6f`; arbitrum `0x6b9a07...2a7da0`; arbitrum `0x6f333b...79abce`; arbitrum `0x727d5f...fa6e19`; arbitrum `0x7313c3...871fa4`; arbitrum `0x73ac69...443cd9`; arbitrum `0x79ed68...bccdce`; arbitrum `0x7c0b6f...45b092`; arbitrum `0x7ec56f...99869a`; arbitrum `0x872db3...56a8d6`; arbitrum `0x88410a...8df16e`; arbitrum `0x8d18a9...e12928`; arbitrum `0x91a9e8...7e5d0f`; arbitrum `0x944fc7...2ec7c3`; arbitrum `0x94f55e...f616db`; arbitrum `0xa33d49...cfd329`; arbitrum `0xa543ec...4a5b38`; arbitrum `0xa66316...e49379`; arbitrum `0xac3986...a5be1b`; arbitrum `0xad794d...1631a9`; arbitrum `0xae5ee1...995c4b`; arbitrum `0xb1d090...81e475`; arbitrum `0xbc58d2...98f0a2`; arbitrum `0xbc6c7f...efde67`; arbitrum `0xbf15b3...c0060d`; arbitrum `0xbf2d97...5841f0`; arbitrum `0xc51d1c...230ff9`; arbitrum `0xcb56b9...8cb251`; arbitrum `0xd0799b...56bdff`; arbitrum `0xd17d38...216d70`; arbitrum `0xd2e9c1...a832ce`; arbitrum `0xd79086...12b965`; arbitrum `0xda71a0...cad401`; arbitrum `0xe1df1f...8c4375`; arbitrum `0xef9d26...2105c3`; arbitrum `0xf3ba7f...e69011`; berachain `0x07ad6e...c71d15`; berachain `0x1f6244...577485`; berachain `0x252b8f...73ea55`; berachain `0x34a845...8535d7`; berachain `0x350b20...af0f39`; berachain `0x366328...a91322`; berachain `0x3b7281...853696`; berachain `0x428d38...768a3b`; berachain `0x57dba8...cd7320`; berachain `0x5ad326...922009`; berachain `0x644f8e...b4c50e`; berachain `0x6485dd...78573d`; berachain `0x7affa1...11e3b2`; berachain `0x836844...14c328`; berachain `0x93b41e...e9a561`; berachain `0xa45455...b952b0`; berachain `0xa6de2a...7f74a0`; berachain `0xa7272d...a3324c`; berachain `0xbbf270...805389`; berachain `0xbc99ef...3c114e`; berachain `0xc461af...f7af54`; berachain `0xc64b95...458dc1`; berachain `0xcd0505...667955`; berachain `0xcd82f8...085c31`; berachain `0xd59f6c...45491d`; blast `0x4cf08b...751669`; blast `0x66c2f3...66296e`; blast `0x885d89...cafeba`; blast `0xa37fef...25dd95`; blast `0xc461af...f7af54`; blast `0xc64b95...458dc1`; blast `0xc85955...c406d9`; blast `0xd05e41...4bec24` | ⚠️ Unaudited (bytecode match) |
 | UniversalSwapper | adapter | arbitrum | 16 deployments: ethereum `0xe4b4b9...72788c`; base `0x47aca1...41c4e0`; base `0xe71ad9...7bbce2`; arbitrum [`0x1cbbad...71baf9`](./contracts/arbitrum-42161/0x1cbbad4658379c5eaa7da1622d357954cf71baf9/); arbitrum `0x6ce9ea...0fa300`; arbitrum `0x8af1f3...ffb7b7`; arbitrum `0x9ed990...d98514`; arbitrum `0xda028b...51d240`; arbitrum `0xe2cae0...cff2e7`; arbitrum `0xf64a94...edfe66`; berachain `0xbd6663...e3f665`; berachain `0xd05e41...4bec24`; blast `0x5a6e4a...5ba32f`; blast `0x629101...c655de`; blast `0x8a5ef3...0f01b4`; blast `0xec5b07...6d94aa` | ⚠️ Unaudited (bytecode match) |
@@ -421,7 +418,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 | Viewer | periphery | arbitrum | 38 deployments: ethereum `0x0caeba...22ece1`; ethereum `0x2a7745...550526`; base `0x70be7c...a1d34a`; base `0xa45455...b952b0`; arbitrum [`0x034052...9f6872`](./contracts/arbitrum-42161/0x034052a9d34f2549a4fbe43eb07282ca7d9f6872/); arbitrum `0x139d38...33ac15`; arbitrum `0x16e669...c3f034`; arbitrum `0x23dfb4...051f32`; arbitrum `0x2d3329...b872f5`; arbitrum `0x329ba0...a69df0`; arbitrum `0x440e17...dc4c32`; arbitrum `0x4abc83...fa6e7d`; arbitrum `0x4cf08b...751669`; arbitrum `0x63fc93...87d253`; arbitrum `0x66c2f3...66296e`; arbitrum `0x6c3d87...1d2102`; arbitrum `0x6f0077...77895d`; arbitrum `0x730e89...8c7693`; arbitrum `0x757713...92fe3d`; arbitrum `0x7600ce...b3aa2f`; arbitrum `0x8ff8f0...46c6e0`; arbitrum `0xa14fed...770b98`; arbitrum `0xaec8d9...ed7ade`; arbitrum `0xaed6be...85bfb4`; arbitrum `0xc34f75...9e7560`; arbitrum `0xcd0505...667955`; arbitrum `0xee6f86...d16c17`; arbitrum `0xf13fd9...66335c`; arbitrum `0xf6afa2...a7b8de`; arbitrum `0xfc678b...003c36`; berachain `0x2d3329...b872f5`; berachain `0x5208a0...be440d`; blast `0x05170b...d8e30f`; blast `0x09a317...edc2d3`; blast `0x185848...301166`; blast `0x366328...a91322`; blast `0x8a1c4e...e1a46f`; blast `0xb52b3a...50e356` | ⚠️ Unaudited (bytecode match) |
 | WethAdapter | adapter | arbitrum | 9 deployments: base `0x34831f...1ba670`; arbitrum [`0x264ae3...03b65c`](./contracts/arbitrum-42161/0x264ae330b7d1d60903d26ba0750e2e59a003b65c/); arbitrum `0x96af04...d6e1a9`; arbitrum `0x9d5f86...8b9df5`; arbitrum `0xa09dd2...51cf82`; arbitrum `0xd0821a...0dce52`; berachain `0x61e1f7...90898d`; berachain `0x944fc7...2ec7c3`; blast `0x2eaefe...a73dd2` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (146)
+### ❓ Unverified (148)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -557,12 +554,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | berachain | `0x78e729...b20834` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0x9ed990...d98514` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xb1d090...81e475` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | `0xbde8d5...104b62` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xbe74a2...d8e488` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xcf943b...58d7b5` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xe06acb...39645b` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xe71ad9...7bbce2` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xec5b07...6d94aa` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xf54b95...9d12dd` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | `0xf572c7...455c6d` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xf663a2...ae4b85` | ❓ Unverified |
 | UnnamedContract | unknown | blast | `0x1c99b4...bb5eb0` | ❓ Unverified |
 | UnnamedContract | unknown | blast | `0x1e7d8e...79205a` | ❓ Unverified |
@@ -764,7 +763,6 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | [`0x7f3649...f6a40f`](./contracts/arbitrum-42161/0x7f3649c4b6acc01d50eaa725096df27a36f6a40f/) | RewardsDistributionV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x124b6a...7d0458`](./contracts/arbitrum-42161/0x124b6aef712f9b2f8e239c01ce251287457d0458/) | RewardTracker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x19f056...3950f7`](./contracts/arbitrum-42161/0x19f056cecd9599db1724de7a6814e779843950f7/) | RoleController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x06974f...3f6c5f`](./contracts/arbitrum-42161/0x06974f42a1090f07d832240cb2375420eb3f6c5f/) | Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x02af5c...c8748d`](./contracts/arbitrum-42161/0x02af5c07e96b40e3324390da4a794fff55c8748d/) | SingleRewardTracker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x27cebe...cf68c1`](./contracts/arbitrum-42161/0x27cebe6b5075e4d6feec384b0a31ec6e53cf68c1/) | SsovAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x73b82e...6f8a84`](./contracts/arbitrum-42161/0x73b82eba5176d8aa02606459e416f13f686f8a84/) | SSOVDpx | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -800,10 +798,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 258 |
+| native | 257 |
 | upstream | 81 |
-| standard_library | 24 |
-| needs_review | 137 |
+| standard_library | 25 |
+| needs_review | 139 |
 
 ## Scope Matching Notes
 

@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Seamless Protocol
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 77.7% over 90 days
+⚠️ Lifecycle status: DEAD - TVL dropped 77.7% over 90 days
 
 ## Project Overview
 
 - Project: Seamless Protocol (`seamless-protocol`)
 - Website: [https://www.seamlessprotocol.com](https://www.seamlessprotocol.com)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:32:33.857Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: dead (Tier 1, declining)
+- Generated: 2026-06-10T20:59:14.863Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, ethereum
 - Contract surface: 99 unique implementations (321 raw deployments)
 - DeFi Llama TVL: $46,492,107.00
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Seamless Protocol is a decentralized lending and leverage platform operating on Ethereum and Base. It enables users to supply assets into lending pools, borrow against them, and access leveraged positions through specialized tokenized products. The protocol integrates with Morpho for lending markets and offers governance-controlled emission and reward mechanisms.
+Seamless Protocol historically provided non-custodial lending and borrowing markets and tokenized leveraged or complex DeFi strategies on Base and Ethereum, including integrations with Morpho and governance-controlled emissions and rewards. The project is currently winding down, as announced on its homepage.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The Governance family controls protocol parameters and emissions that affect all
 - Latest audit: 2025-10 (fresh)
 - Staleness: 1 fresh, 4 aging, 0 stale, 0 unknown
 - Tier 1 coverage: 9.1% (Sherlock, Spearbit)
-- Note: This protocol is classified as [declining]. ASD of $34,752.77 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [dead]. ASD of $34,752.77 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 

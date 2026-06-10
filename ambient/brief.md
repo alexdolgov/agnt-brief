@@ -7,8 +7,8 @@
 - Project: Ambient (`ambient`)
 - Website: [https://ambient.finance/](https://ambient.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:31:32.729Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.840Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: blast, canto, ethereum, scroll, swellchain
 - Contract surface: 30 unique implementations (52 raw deployments)
 - DeFi Llama TVL: $2,695,530.51

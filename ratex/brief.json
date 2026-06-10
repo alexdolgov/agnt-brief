@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ratex",
-  "generated_at": "2026-05-23T16:00:35.300Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:09.483Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "ratex",
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 168,
-    "total_addresses": 400,
-    "unique_implementations": 168,
-    "total_deployments": 400,
+    "total_contracts": 166,
+    "total_addresses": 390,
+    "unique_implementations": 166,
+    "total_deployments": 390,
     "audited_contracts": 0,
-    "unaudited_contracts": 91,
+    "unaudited_contracts": 89,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 91,
+    "contracts_verified_unaudited": 89,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 77,
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5393748,
+    "dl_tvl_usd": 5218059,
     "tvl_usd": 98793.74151661556,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "RateX is a DeFi protocol on BSC that enables users to deposit collateral, borrow assets, and earn yield through a system of vaults, oracles, and liquidity pools. It features a stablecoin (lisUSD), liquid staking derivatives, and governance via veLISTA, with revenue distribution and buyback mechanisms.",
+    "project_purpose": "RateX is a leveraged yield exchange that enables users to trade and access leveraged yield opportunities. Its protocol surface should be described from RateX-owned sources, audits, and the DefiLlama adapter, including its dominant Solana programs/accounts where applicable, rather than as a BSC Lista/lisUSD collateralized debt, vault, oracle, or veLISTA governance system.",
     "relationship_narrative": "The RateX DEX family relies on shared infrastructure such as oracles (e.g., ResilientOracle, OracleCenter) and vaults (e.g., ListaVault, StakingVault) to manage collateral and distribute rewards. Multiple distributor contracts (e.g., BorrowListaDistributor, ERC20LpListaDistributor) interact with these core components to facilitate yield and governance across the protocol.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 166,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -80,35 +85,17 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x0fee401a16837b8a8c6c8b9f8d88744b5e36e05c",
+      "address": "0x307d13267f360f78005f476fa913f8848f30292a",
       "name": "ListaVault",
       "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": 98793.74151661556,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x29202d64986097a099575807ed8284b0fd457167",
       "impl_name": "ListaVault",
       "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x0fee401a16837b8a8c6c8b9f8d88744b5e36e05c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x18fce50936a7cbde5ced39de9c31307fe92164c4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 56,
           "chain_name": "bsc",
@@ -116,33 +103,6 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 98793.74151661556,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x36a7bd8a73aeba3a2a9769d6b69a762e75944c84",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x7dc9d0f14b0cd5ecdaa2453113727947d40c5ba0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xb7d76fca706ef87c51fa26aeb611312b8f90a4a4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -2768,37 +2728,6 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0xf5bd9b192092517d60e90c9af17b69b134c4d7f8",
-      "name": "LisUSD",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "LisUSD",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xf5bd9b192092517d60e90c9af17b69b134c4d7f8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
       "address": "0x37db1ae9b24055d1f9fe973aea40b7eb2995d0bf",
       "name": "LisUSDPoolSet",
       "role": "core_logic",
@@ -3192,46 +3121,6 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xee56eecd63999cc08a8dc77aaa29167fb8796dbb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x6f6a144760f8b4d7876eb6155a52393a8304932b",
-      "name": "Oracle",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Oracle",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x6f6a144760f8b4d7876eb6155a52393a8304932b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xb5c57d0de4457e4bd23da765089db7b7e21e4391",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -7026,24 +6915,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xee00deb0900e91e3eb5b2281e916d91b86e5319b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xf8d76299a6d722ebd8b2ea00e20fef2f23a9460a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -7423,16 +7294,6 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x0fee401a16837b8a8c6c8b9f8d88744b5e36e05c",
-      "name": "ListaVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 98793.74151661556,
-      "risk_note": "Verified native implementation with $98,793.74 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
       "address": "0xd74508ab3bdbedaa6589f913e0f89d98b2ad2754",
       "name": "BnbOracle",
       "role": "operational_periphery",
@@ -7633,16 +7494,6 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0xf5bd9b192092517d60e90c9af17b69b134c4d7f8",
-      "name": "LisUSD",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
       "address": "0x64e30b9e176b4551b5d9f17d72716152540cbd98",
       "name": "Market",
       "role": "unknown",
@@ -7676,16 +7527,6 @@
       "address": "0x7082528e908bfd0c42d2134fe7065457cfcfb755",
       "name": "NonTransferableLpERC20",
       "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x6f6a144760f8b4d7876eb6155a52393a8304932b",
-      "name": "Oracle",
-      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -7932,9 +7773,9 @@
     }
   ],
   "origin_summary": {
-    "native": 82,
+    "native": 79,
     "upstream": 7,
-    "standard_library": 23,
+    "standard_library": 24,
     "needs_review": 56
   },
   "scope_matching_notes": {

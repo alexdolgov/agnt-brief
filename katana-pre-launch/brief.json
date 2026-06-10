@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "katana-pre-launch",
-  "generated_at": "2026-05-22T17:51:33.302Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:06.459Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "katana-pre-launch",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 92.57275631757315
   },
   "summary": {
-    "total_contracts": 166,
-    "total_addresses": 646,
-    "unique_implementations": 166,
-    "total_deployments": 646,
+    "total_contracts": 165,
+    "total_addresses": 642,
+    "unique_implementations": 165,
+    "total_deployments": 642,
     "audited_contracts": 0,
-    "unaudited_contracts": 98,
+    "unaudited_contracts": 97,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 97,
+    "contracts_verified_unaudited": 96,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 68,
     "coverage_pct": 0,
-    "total_audits": 29,
+    "total_audits": 28,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 18639553.55398,
-    "tvl_usd": 18323996.17174982,
+    "dl_tvl_usd": 18422900.75934,
+    "tvl_usd": 307618.81352472666,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 18323996.17
+      "ethereum": 307618.81
     },
-    "asd_usd": 18323996.17174982,
+    "asd_usd": 307618.81352472666,
     "website_url": "https://app.katana.network/",
     "chains": [
       "base",
@@ -53,79 +53,26 @@
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 6,
-      "aging": 10,
-      "stale": 3,
-      "unknown": 10
+      "aging": 7,
+      "stale": 6,
+      "unknown": 9
     }
   },
   "topography": {
-    "project_purpose": "Katana Pre-Launch is a DeFi protocol that provides yield-bearing vaults and cross-chain token bridging. It enables users to deposit assets into Yearn V3 and BoringVaults for automated yield generation, and to move tokens across chains via LayerZero and a canonical Agglayer bridge.",
+    "project_purpose": "Katana Pre-Launch is an Ethereum pre-launch deposit/farm product where users deposit eligible tokens into Yearn vaults to earn Krates and a pro-rata KAT allocation. Bridge, swap, perps, chain infrastructure, LayerZero, Agglayer, OP Stack, SP1, and other app or chain components should be treated as dependencies or out-of-scope unless directly tied to the pre-launch deposit contracts.",
     "relationship_narrative": "The Katana Pre-Launch vaults mint yield-bearing tokens that can be bridged via the Vault Bridge or LayerZero adapters, while the Agglayer bridge provides a canonical path to the Katana chain. Shared infrastructure like GnosisSafe and Permit2 supports governance and token approvals across families.",
     "product_family_count": 10
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 165,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x77570cfecf83bc6bb08e2cd9e8537aea9f97ea2f",
-      "name": "Yearn V3 Vault",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "Yearn",
-      "product_line": "Katana Pre-Launch",
-      "tvl_usd": 18016377.358225092,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Yearn V3 Vault",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x77570cfecf83bc6bb08e2cd9e8537aea9f97ea2f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2054656.6814374274,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xa5dab32dbe68e6fa784e1e50e4f620a0477d3896",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 5669774.354547,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xe1ac97e2616ad80f69f705ff007a4bbb3655544a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2579319.611453668,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf470eb50b4a60c9b069f7fd6032532b8f5cc014d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 7712626.710787,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -9537,27 +9484,6 @@
   ],
   "audits": [
     {
-      "audit_id": 1918,
-      "audit_key": "audit-1918",
-      "report_name": "docs.optimism.io/stack/security/audits-report",
-      "report_url": "https://docs.optimism.io/op-stack/security/audit-reports",
-      "auditor": "OP Stack",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 1919,
       "audit_key": "audit-1919",
       "report_name": "cantina.pdf",
@@ -9732,7 +9658,7 @@
       "report_url": "https://github.com/agglayer/agglayer/blob/main/docs/audits/2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_audit.pdf",
       "auditor": "Trail of Bits",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -9753,7 +9679,7 @@
       "report_url": "https://github.com/agglayer/agglayer/blob/main/docs/audits/2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_response.pdf",
       "auditor": "Trail of Bits",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -9921,7 +9847,7 @@
       "report_url": "https://github.com/agglayer/agglayer-contracts/blob/main/audits/Sigma%20Prime%20-%20Polygon%20-%20LXLY%20Banana%20-%20Security%20Assessment%20Report%20-%202.0.pdf",
       "auditor": "Sigma Prime",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -10321,7 +10247,7 @@
   ],
   "origin_summary": {
     "native": 17,
-    "upstream": 58,
+    "upstream": 57,
     "standard_library": 19,
     "needs_review": 72
   },
@@ -10331,10 +10257,6 @@
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 1918,
-        "report_name": "docs.optimism.io/stack/security/audits-report"
-      },
       {
         "audit_id": 1919,
         "report_name": "cantina.pdf"

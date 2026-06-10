@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Ultron Staking Hub NFT
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Ultron Staking Hub NFT (`ultron-staking-hub-nft`)
 - Website: [https://ultron.foundation/technology#staking-hub](https://ultron.foundation/technology#staking-hub)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-23T09:04:31.613Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:18.481Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, bsc, ethereum, fantom, polygon
-- Contract surface: 150 unique implementations (163 raw deployments)
-- DeFi Llama TVL: $7,432,485.37
+- Contract surface: 150 unique implementations (162 raw deployments)
+- DeFi Llama TVL: $7,090,109.60
 - On-chain TVL (included contracts): $43,458.79
 - TVL by chain: Bsc $38,083.88 | Ethereum $5,374.03 | Avalanche $0.87 | Polygon $0.01
 
 ## Project Description
 
-Ultron Staking Hub NFT is a multi-chain staking protocol that allows users to stake assets and earn rewards, with a focus on NFT-based staking positions. It operates across Ethereum, BSC, Polygon, Avalanche, and Fantom, leveraging a shared ULX token and various staking-related contracts.
+Ultron Staking Hub NFT is an Ultron-network staking and rewards product where users mint and stake an NFT representing a five-year plan to earn ULX rewards. External ULX token deployments on other EVM chains should be treated as ancillary token references, not as the core Staking Hub NFT protocol or its TVL basis.
 
 ### Architecture
 
@@ -30,14 +28,13 @@ The ULX token family on other networks serves as the reward and staking token fo
 - Verified by bytecode match: 0
 - Unverified implementations: 144
 - Unique implementations: 150
-- Raw deployments: 163
+- Raw deployments: 162
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $43,458.79
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $43,458.79 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -58,7 +55,7 @@ The ULX token family on other networks serves as the reward and staking token fo
 | ERC1967Proxy | proxy | bsc | 9 deployments: bsc [`0x0553d0...701a72`](./contracts/bsc-56/0x0553d0a9a6b2740dc512535bd6af8ced7f701a72/); bsc `0x0ed930...f238b6`; bsc `0x659979...a6dd2f`; bsc `0x6759a8...c15ac5`; bsc `0x77b796...34a651`; bsc `0x9445fa...96f1b1`; bsc `0xaab8e6...e5d096`; bsc `0xc7bd33...e5bc47`; bsc `0xd60250...ed12c1` | ⚠️ Unaudited |
 | FuturaTreasury | operational_periphery | bsc | [`0x1d303f...368e97`](./contracts/bsc-56/0x1d303f80d711811091674de918b179e3aa368e97/) | ⚠️ Unaudited |
 | Lottery | unknown | bsc | 2 deployments: bsc [`0x39c626...b4475b`](./contracts/bsc-56/0x39c626a8d974311bc7e20a0228aeaf1979b4475b/); bsc `0x42e8d6...273ccf` | ⚠️ Unaudited |
-| Platform | unknown | bsc | 2 deployments: bsc [`0x70d3dd...acac30`](./contracts/bsc-56/0x70d3dd8dda1187aa7d3523de3407cbdfe7acac30/); bsc `0xff3731...f67e94` | ⚠️ Unaudited |
+| Platform | unknown | bsc | [`0xff3731...f67e94`](./contracts/bsc-56/0xff3731a75d4427f0c3447ee3129f1ad944f67e94/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -235,15 +232,14 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x5aa158...4a636f`](./contracts/ethereum-1/0x5aa158404fed6b4730c13f49d3a7f820e14a636f/) | ERC20Custom | token | $43,458.79 | Verified native implementation with $43,458.79 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x70d3dd...acac30`](./contracts/bsc-56/0x70d3dd8dda1187aa7d3523de3407cbdfe7acac30/) | Platform | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 2 |
 | upstream | 0 |
-| standard_library | 4 |
+| standard_library | 5 |
 | needs_review | 143 |
 
 ## Scope Matching Notes

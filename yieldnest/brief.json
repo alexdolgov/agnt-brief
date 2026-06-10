@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "yieldnest",
-  "generated_at": "2026-05-31T11:45:20.085Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:59:19.439Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "yieldnest",
     "tier": 1,
@@ -43,8 +43,8 @@
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 4,
     "coverage_pct": 44.8,
-    "total_audits": 21,
-    "scoreable_audits": 13,
+    "total_audits": 16,
+    "scoreable_audits": 12,
     "dl_tvl_usd": 22859932.38566,
     "tvl_usd": 19206391.984526806,
     "tvl_source": "on_chain",
@@ -74,14 +74,19 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 10,
-      "stale": 10,
-      "unknown": 1
+      "stale": 6,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "YieldNest is an onchain capital allocator that aggregates and manages yield-bearing strategies across multiple chains. It offers liquid restaking tokens (e.g., ynETH, ynLSDe) and vault products (e.g., ynETHx, ynBNBx) that optimize returns through EigenLayer and other DeFi protocols.",
+    "project_purpose": "YieldNest is an on-chain capital allocator and yield protocol offering liquid restaking and MAX Vault products across multiple assets and chains. Its products include restaking-focused tokens such as ynETH and ynLSDe as well as vault and allocator products such as ynETHx, ynBNBx, ynRWAx, and ynUSDx, which route capital across EigenLayer and other DeFi or yield strategies rather than relying on EigenLayer as the sole mechanism.",
     "relationship_narrative": "The ynETH family feeds rewards into ynETHx vaults, which issue L2YnERC20Upgradeable tokens. Kernel strategies like ynBTCk and vaults like ynBNBx share the same L2 token standard and are governed by multisigs, with YND serving as the ecosystem token.",
     "product_family_count": 13
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 33,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -797,8 +802,7 @@
         "audit-6053",
         "audit-6054",
         "audit-6067",
-        "audit-6068",
-        "audit-6074"
+        "audit-6068"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -875,7 +879,6 @@
         "audit-6054",
         "audit-6067",
         "audit-6068",
-        "audit-6074",
         "audit-6076",
         "audit-6078"
       ],
@@ -932,7 +935,6 @@
         "audit-6054",
         "audit-6067",
         "audit-6068",
-        "audit-6074",
         "audit-6076",
         "audit-6078"
       ],
@@ -1481,8 +1483,7 @@
         "audit-6053",
         "audit-6054",
         "audit-6067",
-        "audit-6068",
-        "audit-6074"
+        "audit-6068"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1523,37 +1524,6 @@
     }
   ],
   "audits": [
-    {
-      "audit_id": 6052,
-      "audit_key": "audit-6052",
-      "report_name": "README.md",
-      "report_url": "https://github.com/yieldnest/yieldnest-vault/blob/eth-max-vault/test/unit/vault/security/README.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 6052,
-          "report_url": "https://github.com/yieldnest/yieldnest-vault/blob/eth-max-vault/test/unit/vault/security/README.md"
-        },
-        {
-          "audit_id": 6084,
-          "report_url": "https://github.com/yieldnest/smart-contracts-mirror/blob/main/yieldnest-vault/test/unit/vault/security/README.md"
-        }
-      ]
-    },
     {
       "audit_id": 6053,
       "audit_key": "audit-6053",
@@ -1634,17 +1604,7 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 6054,
-          "report_url": "https://github.com/yieldnest/yieldnest-eigenlayer-lrt/blob/main/audits/2024-05-07-zokyo-yieldnest_protocol_audit.pdf"
-        },
-        {
-          "audit_id": 6081,
-          "report_url": "https://github.com/yieldnest/smart-contracts-mirror/blob/main/yieldnest-eigenlayer-lrt/audits/2024-05-07-zokyo-yieldnest_protocol_audit.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 6055,
@@ -1708,105 +1668,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6058,
-      "audit_key": "audit-6058",
-      "report_name": "Sigma_Prime_Eigen_Layer_Phase_2_Security_Assessment_Report_v2_1.pdf",
-      "report_url": "https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/eigenlayer-contracts/audits/Sigma_Prime_Eigen_Layer_Phase_2_Security_Assessment_Report_v2_1.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6059,
-      "audit_key": "audit-6059",
-      "report_name": "2017-03.md",
-      "report_url": "https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/eigenlayer-contracts/lib/openzeppelin-contracts-upgradeable/audit/2017-03.md",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2017-03",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 6059,
-          "report_url": "https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/eigenlayer-contracts/lib/openzeppelin-contracts-upgradeable/audit/2017-03.md"
-        },
-        {
-          "audit_id": 6061,
-          "report_url": "https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/eigenlayer-contracts/lib/openzeppelin-contracts/audit/2017-03.md"
-        },
-        {
-          "audit_id": 6063,
-          "report_url": "https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/openzeppelin-contracts-upgradeable/audit/2017-03.md"
-        },
-        {
-          "audit_id": 6065,
-          "report_url": "https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/openzeppelin-contracts/audit/2017-03.md"
-        }
-      ]
-    },
-    {
-      "audit_id": 6060,
-      "audit_key": "audit-6060",
-      "report_name": "2018-10.pdf",
-      "report_url": "https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/eigenlayer-contracts/lib/openzeppelin-contracts-upgradeable/audit/2018-10.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2018-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 6060,
-          "report_url": "https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/eigenlayer-contracts/lib/openzeppelin-contracts-upgradeable/audit/2018-10.pdf"
-        },
-        {
-          "audit_id": 6062,
-          "report_url": "https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/eigenlayer-contracts/lib/openzeppelin-contracts/audit/2018-10.pdf"
-        },
-        {
-          "audit_id": 6064,
-          "report_url": "https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/openzeppelin-contracts-upgradeable/audit/2018-10.pdf"
-        },
-        {
-          "audit_id": 6066,
-          "report_url": "https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/openzeppelin-contracts/audit/2018-10.pdf"
-        }
-      ]
     },
     {
       "audit_id": 6067,
@@ -2039,36 +1900,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 6074,
-      "audit_key": "audit-6074",
-      "report_name": "zokyo_audit_yieldnest_May7th_2024.pdf",
-      "report_url": "https://github.com/yieldnest/Publications/blob/main/audits/zokyo_audit_yieldnest_May7th_2024.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "LSDStakingNode",
-        "RewardDistributor",
-        "RewardsReceiver",
-        "StakingNode",
-        "StakingNodesManager",
-        "YieldNestOracle",
-        "ynETH",
-        "ynLSD"
-      ],
-      "matched_contracts": 8,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 6075,
       "audit_key": "audit-6075",
       "report_name": "zokyo_audit_yieldnest_dec12th_2024.pdf",
@@ -2270,18 +2101,14 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 112
+      "extraction_exact": 96
     },
     "extraction_confidence_counts": {
-      "high": 13
+      "high": 12
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 6052,
-        "report_name": "README.md"
-      },
       {
         "audit_id": 6055,
         "report_name": "M2 Mainnet - Dedaub - Feb 2024.pdf"
@@ -2293,18 +2120,6 @@
       {
         "audit_id": 6057,
         "report_name": "Sigma Prime - Core Audit - v2.0 FINAL - Feb'24.pdf"
-      },
-      {
-        "audit_id": 6058,
-        "report_name": "Sigma_Prime_Eigen_Layer_Phase_2_Security_Assessment_Report_v2_1.pdf"
-      },
-      {
-        "audit_id": 6059,
-        "report_name": "2017-03.md"
-      },
-      {
-        "audit_id": 6060,
-        "report_name": "2018-10.pdf"
       },
       {
         "audit_id": 6070,

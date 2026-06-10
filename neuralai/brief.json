@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "neuralai",
-  "generated_at": "2026-05-31T10:06:21.786Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:08.138Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "neuralai",
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 3,
-    "unique_implementations": 3,
-    "total_deployments": 3,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
     "audited_contracts": 0,
-    "unaudited_contracts": 3,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 3,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "NeuralAI is a DeFi protocol that enables users to stake tokens and earn rewards, likely centered around a staking mechanism involving its native token and a wrapped TAO token.",
-    "relationship_narrative": "The NeuralAI contract likely serves as the main farm or coordinator, while NeuralStaking is the staking token and wTAO is a wrapped token used within the staking ecosystem.",
+    "project_purpose": "NeuralAI is an AI/Web3 gaming infrastructure project. Its Ethereum $NEURAL token is part of the project's tokenomics, while any launchpad, staking, or related ecosystem mechanics should be treated as tokenomics or upcoming ecosystem features only where separately supported. wTAO should not be described as a core NeuralAI staking component without evidence of integration, and the broader project identity should account for both Ethereum and Solana $NEURAL token presence where in scope.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -126,37 +131,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x77e06c9eccf2e797fd462a92b6d7642ef85b0a44",
-      "name": "wTAO",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": null,
-      "product_line": "NeuralAI",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "wTAO",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x77e06c9eccf2e797fd462a92b6d7642ef85b0a44",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     }
   ],
   "audits": [
@@ -207,7 +181,7 @@
   ],
   "origin_summary": {
     "native": 2,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },

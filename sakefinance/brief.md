@@ -5,21 +5,22 @@
 - Project: SakeFinance (`sakefinance`)
 - Website: [https://app.sakefinance.com/](https://app.sakefinance.com/)
 - Lifecycle: unknown
-- Generated: 2026-05-24T11:53:20.696Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:12.202Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $2,426,134.77
+- DeFi Llama TVL: $2,389,025.93
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-SakeFinance is a lending protocol that enables users to supply and borrow assets, likely through a pooled lending model similar to Aave V3. It facilitates decentralized, non-custodial liquidity markets where depositors earn interest and borrowers can take out overcollateralized loans.
-
-### Architecture
-
-No product families or contracts are defined in the provided inventory, so no structural relationships can be described.
+Sake Finance is an integrated liquidity protocol on Soneium, with Aave V3-style lending markets for supplying and borrowing assets and additional app modules such as liquidity, strategies, rewards, and bridge access.
 
 ## Audit Coverage Summary
 

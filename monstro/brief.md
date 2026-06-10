@@ -7,8 +7,8 @@
 - Project: MONSTRO (`monstro`)
 - Website: [https://v2.monstro.fun](https://v2.monstro.fun)
 - Lifecycle: transitioning (Tier 1, transitioning)
-- Generated: 2026-05-31T10:00:23.680Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:07.787Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 9 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $3,391,717.90
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-MONSTRO is a yield protocol on Base that allows users to stake its native token to earn rewards.
+MONSTRO is/was a Base protocol historically tracked as a yield project with $MONSTRO staking, alongside related Monstro ecosystem contracts including native token, NFT, NFT sale/features/props, payment/USDC, and data-tracker contracts. The current v2 site indicates a migration toward a broader $MONSTRO ecosystem, Monstro DAO, and Monstro Labs rather than only staking.
 
 ### Architecture
 

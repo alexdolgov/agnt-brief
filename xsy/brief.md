@@ -5,17 +5,17 @@
 - Project: XSY (`xsy`)
 - Website: [https://xsy.fi](https://xsy.fi)
 - Lifecycle: active (Tier 0, 44.8% below peak)
-- Generated: 2026-05-30T19:21:45.136Z
-- Pipeline run: v2-pipeline-2026-05-30-c7d699-40af
+- Generated: 2026-06-10T20:59:19.372Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche
-- Contract surface: 16 unique implementations (23 raw deployments)
+- Contract surface: 15 unique implementations (22 raw deployments)
 - DeFi Llama TVL: $20,973,051.72
 - On-chain TVL (included contracts): $3,598,575.01
 - TVL by chain: Avalanche $3,598,575.01
 
 ## Project Description
 
-XSY is a basis trading protocol on Avalanche that enables users to execute delta-neutral strategies by capturing the spread between spot and futures markets. It provides automated vaults and liquidity pools to facilitate these trades.
+YieldPoint/XSY is a multi-product crypto yield platform centered on Unity/UTY, a dollar-pegged synthetic dollar, and yUTY yield participation. The protocol provides synthetic-dollar yield exposure, with market-neutral or basis-trading strategy exposure as part of the underlying yield approach. The currently tracked surface should be described as the DefiLlama-tracked Avalanche deployment unless additional Base or other chain contracts are verified.
 
 ### Architecture
 
@@ -23,12 +23,12 @@ The XSY vaults rely on the Use family's liquidity pools (ClPool) and stablecoin 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/5 (20.0%)
-- Verified + Unaudited implementations: 4
+- Verified implementations audited: 1/4 (25.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 11
-- Unique implementations: 16
-- Raw deployments: 23
+- Unique implementations: 15
+- Raw deployments: 22
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $3,598,575.01
@@ -40,7 +40,7 @@ The XSY vaults rely on the Use family's liquidity pools (ClPool) and stablecoin 
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Quantstamp | Tier 2 | 1 | 20.0% | 2025-03 |
+| Quantstamp | Tier 2 | 1 | 25.0% | 2025-03 |
 
 ## Contract Surface
 
@@ -50,14 +50,13 @@ The XSY vaults rely on the Use family's liquidity pools (ClPool) and stablecoin 
 |---|---|---|---|---|
 | Unity | unknown | avalanche | [`0x639c72...2587c4`](./contracts/avalanche-43114/0x639c72eea35e50f5e2911891389fc4e8422587c4/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | ClPool | core_logic | avalanche | [`0xca7bd8...ee07cf`](./contracts/avalanche-43114/0xca7bd86983a2474f3c7cb45207bc16760cee07cf/) | ⚠️ Unaudited |
 | BeaconProxy | registry | avalanche | 2 deployments: avalanche [`0x76de25...167e40`](./contracts/avalanche-43114/0x76de251bee4a3b902857f6a0fce8a320c4167e40/); avalanche `0x902714...3ecc0a` | ⚠️ Unaudited |
 | ERC1967Proxy | proxy | avalanche | 7 deployments: avalanche [`0x318323...063b73`](./contracts/avalanche-43114/0x3183236cdce208888c1857c2f718e3628c063b73/); avalanche `0x580d5e...f2ab01`; avalanche `0x65a83c...d33b6e`; avalanche `0x9b9cf4...d4c77a`; avalanche `0x9cf467...ef51f8`; avalanche `0xdbc519...f02b4a`; avalanche `0xf8adf3...a401a9` | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | avalanche | [`0xb97ef9...c48a6e`](./contracts/avalanche-43114/0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -108,7 +107,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 13 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 2 |
 | needs_review | 0 |
 

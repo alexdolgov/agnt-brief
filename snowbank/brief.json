@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "snowbank",
-  "generated_at": "2026-05-31T10:38:38.738Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.222Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "snowbank",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Snowbank is a reserve currency protocol on Avalanche that issues the SB token, which is backed by a basket of assets. It provides staking and auto-compounding mechanisms to incentivize long-term holding and grow the treasury.",
+    "project_purpose": "Snowbank is an Avalanche-based OHM-style reserve currency protocol that issues the SB token, which is backed by a basket of assets. It includes staking mechanisms for SB holders; any auto-compounding functionality should be treated as inferred from contract names unless verified by current project documentation.",
     "relationship_narrative": "The TimeERC20Token serves as the core SB token, while TimeStaking handles staking rewards and AutoFarmV2_CrossChain provides auto-compounding functionality, likely interacting with the staking contract to reinvest rewards.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 12,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

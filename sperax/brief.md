@@ -7,17 +7,17 @@
 - Project: Sperax (`sperax`)
 - Website: [http://sperax.io](http://sperax.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-24T14:14:54.649Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:16.359Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, bsc, ethereum
 - Contract surface: 142 unique implementations (159 raw deployments)
-- DeFi Llama TVL: $2,197,051.00
+- DeFi Llama TVL: $2,063,201.00
 - On-chain TVL (included contracts): $14,194,274.84
 - TVL by chain: Arbitrum $11,561,418.82 | Ethereum $1,625,232.17 | Bsc $1,007,623.85
 
 ## Project Description
 
-Sperax is a DeFi protocol that issues the USDs stablecoin and provides yield aggregation through auto-compounding vaults. It also features governance and staking tokens (SPA, veSPA, xSPA) to manage the protocol and incentivize liquidity.
+Sperax is currently positioned around SperaxOS, a DeFi agent layer. Its historical and on-chain protocol surface also includes the USDs stablecoin, SPA governance/staking assets including veSPA and xSPA, and related vault, strategy, and farm contracts.
 
 ### Architecture
 
@@ -34,8 +34,8 @@ The VaultCore uses strategies (Aave, Compound, Stargate) to generate yield, whil
 - Audits discovered: 9
 - Scoreable audits (matched contracts): 7
 - ASD (verified + unaudited TVL): $2,632,856.02
-- Latest audit: 2024-06 (aging)
-- Staleness: 0 fresh, 1 aging, 8 stale, 0 unknown
+- Latest audit: 2024-06 (stale)
+- Staleness: 0 fresh, 0 aging, 9 stale, 0 unknown
 - Tier 1 coverage: 8.8% (SlowMist)
 - Note: This protocol is classified as [declining]. ASD of $2,632,856.02 represents exposure in a protocol with declining activity.
 
@@ -86,7 +86,7 @@ The VaultCore uses strategies (Aave, Compound, Stargate) to generate yield, whil
 | RewardDistributor_v1 | operational_periphery | arbitrum | 2 deployments: ethereum `0xa61dd4...b36040`; arbitrum [`0x2c07bc...8d9e16`](./contracts/arbitrum-42161/0x2c07bc934974bbf413a4a4ceda98713dcb8d9e16/) | ⚠️ Unaudited |
 | RewardDistributor_v2 | operational_periphery | arbitrum | 3 deployments: ethereum `0x080f26...3411db`; arbitrum [`0x01bfd5...0a0c2e`](./contracts/arbitrum-42161/0x01bfd592b754169bba095663093678d3900a0c2e/); arbitrum `0xc9869e...4ae512` | ⚠️ Unaudited |
 | SPA_USDs_Farm | unknown | arbitrum | [`0x84f7f3...b97174`](./contracts/arbitrum-42161/0x84f7f3246fd8beaac8af4ab08a2161506cb97174/) | ⚠️ Unaudited |
-| Sperax | unknown | bsc | [`0xdb3c48...1fb08c`](./contracts/bsc-56/0xdb3c487c0c589f0e5590893f070abb534c1fb08c/) | ⚠️ Unaudited |
+| Sperax | token | bsc | [`0xdb3c48...1fb08c`](./contracts/bsc-56/0xdb3c487c0c589f0e5590893f070abb534c1fb08c/) | ⚠️ Unaudited |
 | SperaxTokenL1 | token | ethereum | [`0x2a95fe...f770cb`](./contracts/ethereum-1/0x2a95fe4c7e64e09856989f9ea0b57b9ab5f770cb/) | ⚠️ Unaudited |
 | Staking | unknown | arbitrum | [`0xc150cb...7039fd`](./contracts/arbitrum-42161/0xc150cbddc5932258fac768beb4d2352d127039fd/) | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | arbitrum | 7 deployments: ethereum `0xbf82a3...e7f403`; arbitrum [`0x0390c6...60f473`](./contracts/arbitrum-42161/0x0390c6c7c320e41fce0e6f0b982d20a88660f473/); arbitrum `0x9b8b92...9850a4`; arbitrum `0xbf82a3...e7f403`; arbitrum `0xdc118f...9d1eb4`; arbitrum `0xf3f980...86bbcd`; arbitrum `0xf783dd...340e3f` | ⚠️ Unaudited |
@@ -227,7 +227,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [Demeter_PeckShield_1.pdf](https://github.com/Sperax/Audit_Reports/blob/main/Demeter_PeckShield_1.pdf) | PeckShield | Audit | 2022-09 | stale | Direct | contract_name | 1 | medium |
 | [Sperax - USDs - Report (1).pdf](https://github.com/Sperax/Audit_Reports/blob/main/Sperax%20-%20USDs%20-%20Report%20(1).pdf) | unknown | Audit | 2023-12 | stale | Direct | contract_name | 13 | high |
-| [Demeter Audit Final Report.pdf](https://github.com/Sperax/Audit_Reports/blob/main/Demeter%20Audit%20Final%20Report.pdf) | Unknown | Audit | 2024-06 | aging | Direct | contract_name | 3 | high |
+| [Demeter Audit Final Report.pdf](https://github.com/Sperax/Audit_Reports/blob/main/Demeter%20Audit%20Final%20Report.pdf) | Unknown | Audit | 2024-06 | stale | Direct | contract_name | 3 | high |
 | [LM_Certik_1.pdf](https://github.com/Sperax/Audit_Reports/blob/main/LM_Certik_1.pdf) | CertiK | Audit | 2021-12 | stale | Direct | n/a | 0 | n/a |
 | [SPA_Certik_2.pdf](https://github.com/Sperax/Audit_Reports/blob/main/SPA_Certik_2.pdf) | CertiK | Audit | 2021-11 | stale | Direct | n/a | 0 | n/a |
 | [USDs_Quantstamp.pdf](https://github.com/Sperax/Audit_Reports/blob/main/USDs_Quantstamp.pdf) | Quantstamp | Audit | 2023-12 | stale | Direct | contract_name | 13 | high |
@@ -249,7 +249,7 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | [`0x2c07bc...8d9e16`](./contracts/arbitrum-42161/0x2c07bc934974bbf413a4a4ceda98713dcb8d9e16/) | RewardDistributor_v1 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x01bfd5...0a0c2e`](./contracts/arbitrum-42161/0x01bfd592b754169bba095663093678d3900a0c2e/) | RewardDistributor_v2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x84f7f3...b97174`](./contracts/arbitrum-42161/0x84f7f3246fd8beaac8af4ab08a2161506cb97174/) | SPA_USDs_Farm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xdb3c48...1fb08c`](./contracts/bsc-56/0xdb3c487c0c589f0e5590893f070abb534c1fb08c/) | Sperax | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xdb3c48...1fb08c`](./contracts/bsc-56/0xdb3c487c0c589f0e5590893f070abb534c1fb08c/) | Sperax | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2a95fe...f770cb`](./contracts/ethereum-1/0x2a95fe4c7e64e09856989f9ea0b57b9ab5f770cb/) | SperaxTokenL1 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xc150cb...7039fd`](./contracts/arbitrum-42161/0xc150cbddc5932258fac768beb4d2352d127039fd/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xe45af3...0095c8`](./contracts/arbitrum-42161/0xe45af3389384e29a9d698a89f1d97e61b30095c8/) | USDTswapStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |

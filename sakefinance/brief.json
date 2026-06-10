@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sakefinance",
-  "generated_at": "2026-05-24T11:53:20.696Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:12.202Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2426134.76808,
-    "tvl_usd": 2426134.76808,
+    "dl_tvl_usd": 2389025.92862,
+    "tvl_usd": 2389025.92862,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "SakeFinance is a lending protocol that enables users to supply and borrow assets, likely through a pooled lending model similar to Aave V3. It facilitates decentralized, non-custodial liquidity markets where depositors earn interest and borrowers can take out overcollateralized loans.",
-    "relationship_narrative": "No product families or contracts are defined in the provided inventory, so no structural relationships can be described.",
+    "project_purpose": "Sake Finance is an integrated liquidity protocol on Soneium, with Aave V3-style lending markets for supplying and borrowing assets and additional app modules such as liquidity, strategies, rewards, and bridge access.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Strata
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 42.9% over 90 days
-
 ## Project Overview
 
 - Project: Strata (`strata`)
 - Website: [https://strata.money](https://strata.money)
-- Lifecycle: unknown (Tier 0, 70.3% below peak)
-- Generated: 2026-05-27T10:54:51.292Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Lifecycle: active (Tier 0, 70.3% below peak)
+- Generated: 2026-06-10T20:59:16.697Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 39 unique implementations (227 raw deployments)
 - DeFi Llama TVL: $97,423,016.00
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Strata is a DeFi yield and structured products protocol on Ethereum. It offers vaults for yield-bearing tokens (like pUSDe) and a tranche-based market system that splits yield-generating strategies into senior and junior risk positions, enabling users to farm yields or trade risk-adjusted returns.
+Strata is a generalized DeFi risk-tranching and structured yield protocol on Ethereum. It splits yield-generating strategies into tokenized senior and junior tranche positions, allowing participants to choose different risk and return profiles. Vault or pUSDe-related components should be treated as ancillary to the core tranche-based structured-yield design unless separately sourced.
 
 ### Architecture
 
@@ -31,13 +29,12 @@ Strata Markets and Strata Vaults share governance and access control infrastruct
 - Unverified implementations: 1
 - Unique implementations: 39
 - Raw deployments: 227
-- Audits discovered: 8
+- Audits discovered: 7
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): $289,602.86
 - Latest audit: 2026-01 (fresh)
-- Staleness: 3 fresh, 0 aging, 1 stale, 4 unknown
+- Staleness: 3 fresh, 0 aging, 0 stale, 4 unknown
 - Tier 1 coverage: 28.9% (Cyfrin)
-- Note: This protocol is classified as [unknown]. ASD of $289,602.86 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -127,7 +124,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Strata_Tranches_report.pdf](https://github.com/GuardianAudits/Audits/blob/main/Strata/Strata_Tranches_report.pdf) | Guardian | Audit | 2025-10 | fresh | Direct | contract_name | 133 | high |
 | [www.papermark.com/view/cmgm9mjyd0001l204bjrh6r1b](https://www.papermark.com/view/cmgm9mjyd0001l204bjrh6r1b) | Cyfrin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [www.papermark.com/view/cmgm9op9b0003l404g395i6a5](https://www.papermark.com/view/cmgm9op9b0003l404g395i6a5) | Quantstamp | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [2023-03-07-linkpool_liquid_sd_index_pool.pdf](https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2023-03-07-linkpool_liquid_sd_index_pool.pdf) | Cyfrin | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -163,7 +159,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=3
 - Match method counts: extraction_exact=332
@@ -174,6 +170,5 @@ Zero-match audit list:
 - [4596] index.html
 - [4602] www.papermark.com/view/cmgm9mjyd0001l204bjrh6r1b
 - [4603] www.papermark.com/view/cmgm9op9b0003l404g395i6a5
-- [4604] 2023-03-07-linkpool_liquid_sd_index_pool.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

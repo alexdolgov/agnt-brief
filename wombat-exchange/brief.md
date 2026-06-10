@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Wombat Exchange
 
-⚠️ Lifecycle status: DEAD - TVL dropped 54.5% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 54.5% over 90 days
 
 ## Project Overview
 
 - Project: Wombat Exchange (`wombat-exchange`)
 - Website: [https://www.wombat.exchange/](https://www.wombat.exchange/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-24T19:27:15.091Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:18.841Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, bsc, ethereum, optimism, polygon, scroll
 - Contract surface: 96 unique implementations (714 raw deployments)
-- DeFi Llama TVL: $1,652,470.77
+- DeFi Llama TVL: $1,648,226.03
 - On-chain TVL (included contracts): $817,605.83
 - TVL by chain: Bsc $769,782.30 | Arbitrum $35,281.54 | Ethereum $12,541.99
 
 ## Project Description
 
-Wombat Exchange is a multi-chain decentralized exchange (DEX) specializing in stablecoin and liquid staking token swaps with low slippage. It uses a veToken governance model and bribe system to incentivize liquidity and direct emissions.
+Wombat Exchange is a multi-chain decentralized exchange and cross-chain swap/bridge platform focused on stablecoin and liquid staking token swaps with low slippage using a single-sided liquidity AMM design. It also supports aggregator-style routing for swaps and uses WOM and veWOM governance with emissions and bribe incentives for liquidity direction.
 
 ### Architecture
 
@@ -31,13 +31,13 @@ Pools rely on Governance for parameter control and emission rates, while Bribes 
 - Unverified implementations: 41
 - Unique implementations: 96
 - Raw deployments: 714
-- Audits discovered: 14
+- Audits discovered: 11
 - Scoreable audits (matched contracts): 9
 - ASD (verified + unaudited TVL): $47,823.53
 - Latest audit: 2024-08 (aging)
-- Staleness: 0 fresh, 1 aging, 11 stale, 2 unknown
+- Staleness: 0 fresh, 1 aging, 10 stale, 0 unknown
 - Tier 1 coverage: 7.3% (SlowMist)
-- Note: This protocol is classified as [dead]. ASD of $47,823.53 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $47,823.53 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -180,12 +180,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://hacken.io/audits) | Hacken | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [PeckShield-Audit-Report-Wombat-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Wombat-v1.0.pdf) | PeckShield | Audit | 2022-04 | stale | Direct | contract_name | 124 | high |
 | [Hacken](https://hacken.io/audits/wombat-exchange/sca-wombat-exchange-erc20-staking-apr2022) | Hacken | Audit | 2022-04 | stale | Direct | n/a | 0 | n/a |
 | [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-WombatV2-v1.0.pdf) | PeckShield | Audit | 2022-08 | stale | Direct | contract_name | 99 | high |
 | [Peckshield Audit - V3](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-WombatV3-v1.1.pdf) | PeckShield | Audit | 2022-12 | stale | Direct | contract_name | 18 | high |
-| [DIP001_audit_report_2020_03_en_1_0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/DIP001_audit_report_2020_03_en_1_0.pdf) | PeckShield | Audit | 2020-03 | stale | Direct | n/a | 0 | n/a |
 | [Slowmist Audit](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SlowMist%20Audit%20Report%20-%20WombatExchange_en-us.pdf) | SlowMist | Audit | 2023-05 | stale | Direct | contract_name | 25 | high |
 | [Zokyo Audit](https://github.com/wombat-exchange/v1-core/blob/master/audits/zokyo/2023-Sep-Wombat_audit_report.pdf) | Zokyo | Audit | 2023-09 | stale | Direct | n/a | 0 | n/a |
 | [PeckShield-Audit-Report-WombatV3-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-WombatV3-v1.0.pdf) | PeckShield | Audit | 2022-11 | stale | Direct | contract_name | 18 | high |
@@ -193,7 +191,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [PeckShield-Audit-Report-Wombat-VolatilePool-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Wombat-VolatilePool-v1.0.pdf) | PeckShield | Audit | 2024-08 | aging | Direct | contract_name | 3 | high |
 | [2023-Jun-Wombat_Exchange_Zokyo_audit_report_a68b1ad465.pdf](https://github.com/wombat-exchange/v1-core/blob/master/audits/zokyo/2023-Jun-Wombat_Exchange_Zokyo_audit_report_a68b1ad465.pdf) | Zokyo | Audit | 2023-06 | stale | Direct | contract_name | 23 | high |
 | [zokyo_wombat_audit_report.pdf](https://github.com/wombat-exchange/v1-core/blob/master/audits/zokyo/zokyo_wombat_audit_report.pdf) | Zokyo | Audit | 2022-04 | stale | Direct | contract_name | 120 | high |
-| [BitFi - BFBTC - SlowMist Audit Report.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/BitFi%20-%20BFBTC%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -241,17 +238,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=9
 - Match method counts: extraction_exact=440
 
 Zero-match audit list:
 
-- [3003] DL audit link
 - [3005] Hacken
-- [3008] DIP001_audit_report_2020_03_en_1_0.pdf
 - [3010] Zokyo Audit
-- [3016] BitFi - BFBTC - SlowMist Audit Report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

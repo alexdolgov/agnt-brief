@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "symmio",
-  "generated_at": "2026-05-31T10:48:59.697Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.993Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "symmio",
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "SYMMIO is a decentralized derivatives protocol enabling peer-to-peer trading of synthetic assets. It uses a two-party architecture where PartyA (traders) and PartyB (hedgers/liquidity providers) interact through a Diamond proxy system to create and settle bilateral contracts. The protocol supports multiple chains and includes fee distribution, multi-account management, and liquidation mechanisms.",
+    "project_purpose": "SYMMIO is a hybrid, intent-based derivatives clearing protocol for OTC and derivatives markets. It enables frontend builders and users to express trading intents that can be matched or serviced by solver-enabled counterparties, creating bilateral agreements between traders and hedgers/liquidity providers. Its on-chain architecture handles collateral, settlement, risk management, liquidations, fee distribution, and multi-account workflows across supported deployments. The PartyA/PartyB model and Diamond/facet contracts are implementation details of this bilateral clearing system rather than the full product scope.",
     "relationship_narrative": "The Core Trading Engine relies on the Diamond proxy to integrate facets for trading, accounts, and liquidations, while PartyB contracts (SymmioPartyB, HedgerPartyBV7) act as counterparties. Fee Distributors collect fees from trading activity and distribute them according to protocol rules. Depositor and Account Management contracts interface with the trading engine to manage user funds and sub-accounts, and Incentive contracts like Rakeback and RFL reward users based on their trading and liquidity activity.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 168,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -7,8 +7,8 @@
 - Project: Alien Base (`alien-base`)
 - Website: [https://alienbase.xyz/](https://alienbase.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:22:51.456Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.693Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 58 unique implementations (113 raw deployments)
 - DeFi Llama TVL: $4,725,226.00

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "goldfinger",
-  "generated_at": "2026-05-31T08:16:54.131Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.342Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "goldfinger",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "GoldFinger is a Real World Asset (RWA) protocol on BSC that tokenizes physical gold, allowing users to hold and transfer gold-backed tokens.",
+    "project_purpose": "GoldFinger is a BSC Real World Asset protocol centered on ART, a gold-backed token described as yield-bearing and redeemable. Its live surface should account for supporting infrastructure beyond the token itself, including vault, staking, distributor, oracle, registry, and GF token contracts.",
     "relationship_narrative": "The protocol consists of a single product family centered around the ARTToken contract, with no additional infrastructure or inter-family relationships.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 5,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

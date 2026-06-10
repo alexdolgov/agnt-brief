@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "strata",
-  "generated_at": "2026-05-27T10:54:51.292Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:16.697Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "strata",
     "tier": 0,
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 31.6,
-    "total_audits": 8,
+    "total_audits": 7,
     "scoreable_audits": 3,
     "dl_tvl_usd": 97423016,
     "tvl_usd": 97224620.4340663,
@@ -55,14 +55,19 @@
     "staleness_breakdown": {
       "fresh": 3,
       "aging": 0,
-      "stale": 1,
+      "stale": 0,
       "unknown": 4
     }
   },
   "topography": {
-    "project_purpose": "Strata is a DeFi yield and structured products protocol on Ethereum. It offers vaults for yield-bearing tokens (like pUSDe) and a tranche-based market system that splits yield-generating strategies into senior and junior risk positions, enabling users to farm yields or trade risk-adjusted returns.",
+    "project_purpose": "Strata is a generalized DeFi risk-tranching and structured yield protocol on Ethereum. It splits yield-generating strategies into tokenized senior and junior tranche positions, allowing participants to choose different risk and return profiles. Vault or pUSDe-related components should be treated as ancillary to the core tranche-based structured-yield design unless separately sourced.",
     "relationship_narrative": "Strata Markets and Strata Vaults share governance and access control infrastructure (AccessControlManager, TwoStepConfigManager) and rely on common oracle/APR feed contracts. The vaults may feed into or complement the tranche strategies, but the contract surface shows them as distinct product lines with no direct on-chain dependency.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 39,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -559,7 +564,7 @@
       "product_line": null,
       "tvl_usd": 0.0368814576620558,
       "is_proxy": false,
-      "impl_address": "0x9686e327a6f50aca2a1bea4219e04dc4449dc286",
+      "impl_address": "0xcaf0865334eb135b8c47fca6d9049d5eafe19d9b",
       "impl_name": "SaturnStrategy",
       "deployments": [
         {
@@ -3211,27 +3216,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4604,
-      "audit_key": "audit-4604",
-      "report_name": "2023-03-07-linkpool_liquid_sd_index_pool.pdf",
-      "report_url": "https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2023-03-07-linkpool_liquid_sd_index_pool.pdf",
-      "auditor": "Cyfrin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-03",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -3423,10 +3407,6 @@
       {
         "audit_id": 4603,
         "report_name": "www.papermark.com/view/cmgm9op9b0003l404g395i6a5"
-      },
-      {
-        "audit_id": 4604,
-        "report_name": "2023-03-07-linkpool_liquid_sd_index_pool.pdf"
       }
     ],
     "inherited_remapped_matches": []

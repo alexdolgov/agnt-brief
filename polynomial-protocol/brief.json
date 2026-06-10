@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "polynomial-protocol",
-  "generated_at": "2026-05-23T16:40:31.587Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:09.356Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "polynomial-protocol",
@@ -33,10 +33,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 18,
+    "total_audits": 17,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5318178,
-    "tvl_usd": 5318178,
+    "dl_tvl_usd": 5336566,
+    "tvl_usd": 5336566,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -50,15 +50,20 @@
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 5,
-      "stale": 8,
-      "unknown": 5
+      "aging": 4,
+      "stale": 9,
+      "unknown": 4
     }
   },
   "topography": {
-    "project_purpose": "Polynomial Protocol is a decentralized options vault and derivatives platform on Ethereum, enabling users to earn yield through automated options strategies and trade derivatives. It provides structured products that generate returns by selling options and managing risk.",
+    "project_purpose": "Polynomial is a decentralized perpetual futures exchange powered by the Polynomial Ethereum Layer 2/rollup. The current protocol focus is perps trading and rollup-based exchange infrastructure; any options, structured vault, or automated options-yield products should be treated as broader or legacy/future platform areas unless separately supported by current product evidence.",
     "relationship_narrative": "The Source Chain Contracts family provides the foundational cross-chain infrastructure, with the OptimismPortal2 and L1CrossDomainMessenger enabling secure message passing and asset transfers, while the L2OutputOracle ensures state root verification. These contracts are shared across the protocol's product families to facilitate seamless interaction between Ethereum and Optimism.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 5,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -229,7 +234,7 @@
       "report_url": "https://0xmacro.com/library/audits/polynomial-1.html",
       "auditor": "0xMacro",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -312,27 +317,6 @@
       "report_name": "Synthetix v3 Audits",
       "report_url": "https://docs.synthetix.io/v/v3/for-developers/smart-contract-audits",
       "auditor": "0xMacro",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2488,
-      "audit_key": "audit-2488",
-      "report_name": "Link",
-      "report_url": "https://docs.conduit.xyz/chains/supported-stacks/op-stack",
-      "auditor": "Conduit",
       "audit_type": "audit",
       "freshness": "unknown",
       "date": null,
@@ -685,10 +669,6 @@
       {
         "audit_id": 2487,
         "report_name": "Synthetix v3 Audits"
-      },
-      {
-        "audit_id": 2488,
-        "report_name": "Link"
       },
       {
         "audit_id": 2489,

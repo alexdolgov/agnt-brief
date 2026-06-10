@@ -6,17 +6,17 @@
 
 - Project: Set Protocol (`set-protocol`)
 - Lifecycle: declining (Tier 0, 98.2% below peak)
-- Generated: 2026-05-31T10:33:49.605Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:14.912Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 111 unique implementations (121 raw deployments)
+- Contract surface: 109 unique implementations (119 raw deployments)
 - DeFi Llama TVL: $11,121,221.15
-- On-chain TVL (included contracts): $21,200,447.62
-- TVL by chain: Ethereum $21,200,447.62
+- On-chain TVL (included contracts): $1,360,359.24
+- TVL by chain: Ethereum $1,360,359.24
 
 ## Project Description
 
-Set Protocol enables creation and management of tokenized index baskets (Sets) that automatically rebalance based on predefined strategies, allowing users to gain diversified exposure to multiple crypto assets through a single ERC-20 token.
+Set Protocol is an Ethereum protocol for creating and managing ERC-20 tokenized portfolios and index products, allowing users to gain diversified exposure to multiple crypto assets through a single token. Third-party lending-market contracts such as Compound cTokens are external dependencies or underlying assets, not Set-owned core contracts.
 
 ### Architecture
 
@@ -24,19 +24,19 @@ The Vault contract manages the issuance and rebalancing of Sets, while CErc20 an
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/15 (0.0%)
-- Verified + Unaudited implementations: 15
+- Verified implementations audited: 0/13 (0.0%)
+- Verified + Unaudited implementations: 13
 - Verified by bytecode match: 0
 - Unverified implementations: 96
-- Unique implementations: 111
-- Raw deployments: 121
-- Audits discovered: 5
+- Unique implementations: 109
+- Raw deployments: 119
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $21,200,447.62
-- Latest audit: 2020-12 (stale)
-- Staleness: 0 fresh, 0 aging, 5 stale, 0 unknown
+- ASD (verified + unaudited TVL): $1,360,359.24
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $21,200,447.62 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $1,360,359.24 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -48,12 +48,10 @@ The Vault contract manages the issuance and rebalancing of Sets, while CErc20 an
 
 - None
 
-### ⚠️ Verified + Unaudited (15)
+### ⚠️ Verified + Unaudited (13)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| CErc20Delegate | token | ethereum | [`0x5d3a53...8e3643`](./contracts/ethereum-1/0x5d3a536e4d6dbd6114cc1ead35777bab948e3643/) | ⚠️ Unaudited |
-| CErc20 | token | ethereum | [`0x39aa39...5e7563`](./contracts/ethereum-1/0x39aa39c021dfbae8fac545936693ac917d5e7563/) | ⚠️ Unaudited |
 | Vault | core_logic | ethereum | 2 deployments: ethereum [`0x5b6787...d986dc`](./contracts/ethereum-1/0x5b67871c3a857de81a1ca0f9f7945e5670d986dc/); ethereum `0xcd8554...d5605b` | ⚠️ Unaudited |
 | CommonValidationsLibrary | unknown | ethereum | [`0xc269e9...9e8d3a`](./contracts/ethereum-1/0xc269e9396556b6afb0c38eef4a590321ff9e8d3a/) | ⚠️ Unaudited |
 | Core | unknown | ethereum | 2 deployments: ethereum [`0x345ab8...545a07`](./contracts/ethereum-1/0x345ab8af61d107c3972f0d73640e33d8ac545a07/); ethereum `0xf55186...a120c8` | ⚠️ Unaudited |
@@ -187,11 +185,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Certik-aave-v2-03-12-2020.pdf](https://github.com/SetProtocol/aave-fork/blob/master/audits/Certik-aave-v2-03-12-2020.pdf) | CertiK | Audit | 2020-12 | stale | Direct | n/a | 0 | n/a |
-| [Certora-FV-aave-v2-03-12-2020.pdf](https://github.com/SetProtocol/aave-fork/blob/master/audits/Certora-FV-aave-v2-03-12-2020.pdf) | unknown | Audit | 2020-10 | stale | Direct | n/a | 0 | n/a |
-| [Mixbytes-aave-v2-03-12-2020.pdf](https://github.com/SetProtocol/aave-fork/blob/master/audits/Mixbytes-aave-v2-03-12-2020.pdf) | MixBytes | Audit | 2020 | stale | Direct | n/a | 0 | n/a |
-| [PeckShield-aave-v2-03-12-2020-CN.pdf](https://github.com/SetProtocol/aave-fork/blob/master/audits/PeckShield-aave-v2-03-12-2020-CN.pdf) | PeckShield | Audit | 2020 | stale | Direct | n/a | 0 | n/a |
-| [Peckshield-aave-v2-03-12-2020-EN.pdf](https://github.com/SetProtocol/aave-fork/blob/master/audits/Peckshield-aave-v2-03-12-2020-EN.pdf) | PeckShield | Audit | 2020 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -217,7 +210,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 43 |
-| upstream | 3 |
+| upstream | 1 |
 | standard_library | 0 |
 | needs_review | 65 |
 
@@ -225,17 +218,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [7032] Certik-aave-v2-03-12-2020.pdf
-- [7033] Certora-FV-aave-v2-03-12-2020.pdf
-- [7034] Mixbytes-aave-v2-03-12-2020.pdf
-- [7035] PeckShield-aave-v2-03-12-2020-CN.pdf
-- [7036] Peckshield-aave-v2-03-12-2020-EN.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

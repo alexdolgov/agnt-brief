@@ -1,12 +1,14 @@
 # Agentic Audit Brief: Hanji Protocol
 
+⚠️ Lifecycle status: DECLINING - TVL changed 4.0% over 90 days
+
 ## Project Overview
 
 - Project: Hanji Protocol (`hanji-protocol`)
 - Website: [https://hanji.io](https://hanji.io)
-- Lifecycle: active (Tier 0, 41.2% below peak)
-- Generated: 2026-05-31T08:18:48.998Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 41.2% below peak)
+- Generated: 2026-06-10T20:59:04.466Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 289 unique implementations (291 raw deployments)
 - DeFi Llama TVL: $2,738,368.95
@@ -15,7 +17,7 @@
 
 ## Project Description
 
-Hanji Protocol is a decentralized exchange (DEX) on Base that facilitates trading through an on-chain orderbook. It supports token swaps, limit orders, and liquidity provision, leveraging a set of smart contracts for order matching, settlement, and token management.
+Hanji Protocol is a multichain on-chain central limit order book exchange associated with Etherlink, Base, and Monad. It supports on-chain orderbook trading, including market orders and zero-fee limit orders; liquidity vault functionality should be described separately only where supported by current scope evidence.
 
 ### Architecture
 
@@ -23,40 +25,38 @@ The Orderbook Contracts rely on Token Contracts for the assets being traded, whi
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/6 (16.7%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 0/6 (0.0%)
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
 - Unverified implementations: 283
 - Unique implementations: 289
 - Raw deployments: 291
-- Audits discovered: 2
-- Scoreable audits (matched contracts): 2
+- Audits discovered: 0
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2025-04 (aging)
-- Staleness: 0 fresh, 2 aging, 0 stale, 0 unknown
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| yAudit | Tier 2 | 1 | 16.7% | 2025-04 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (1)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Proxy | proxy | base | 3 deployments: base [`0x15c8cb...25eee3`](./contracts/base-8453/0x15c8cb4e336b1e478d155d813830129fb225eee3/); base `0x628a1d...30eb28`; base `0xf455b3...354eea` | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | FiatTokenV2_1 | token | base | [`0xcbb7c0...ed33bf`](./contracts/base-8453/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | base | [`0x833589...a02913`](./contracts/base-8453/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/) | ⚠️ Unaudited |
 | LBTC | unknown | base | [`0xecac9c...5c11c1`](./contracts/base-8453/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited |
+| Proxy | proxy | base | 3 deployments: base [`0x15c8cb...25eee3`](./contracts/base-8453/0x15c8cb4e336b1e478d155d813830129fb225eee3/); base `0x628a1d...30eb28`; base `0xf455b3...354eea` | ⚠️ Unaudited |
 | WETH9 | token | base | [`0x420000...000006`](./contracts/base-8453/0x4200000000000000000000000000000000000006/) | ⚠️ Unaudited |
 | WXTZ | unknown | base | [`0xc9b53a...7a3eab`](./contracts/base-8453/0xc9b53ab2679f573e480d01e0f49e2b5cfb7a3eab/) | ⚠️ Unaudited |
 
@@ -366,8 +366,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Hanji Protocol Security Audit Report.pdf](https://github.com/mixbytes/audits_public/blob/master/Hanji/OnchainCLOB/Hanji%20Protocol%20Security%20Audit%20Report.pdf) | yAudit | Audit | 2025-04 | aging | Direct | contract_name | 3 | high |
-| [Hanji Liquidity Vault Security Audit Report.pdf](https://github.com/mixbytes/audits_public/blob/master/Hanji/Liquidity%20Vault/Hanji%20Liquidity%20Vault%20Security%20Audit%20Report.pdf) | yAudit | Audit | 2025-04 | aging | Direct | contract_name | 3 | high |
 
 ## Coverage Gaps
 
@@ -377,6 +375,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | base | [`0xcbb7c0...ed33bf`](./contracts/base-8453/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | FiatTokenV2_1 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x833589...a02913`](./contracts/base-8453/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x15c8cb...25eee3`](./contracts/base-8453/0x15c8cb4e336b1e478d155d813830129fb225eee3/) | Proxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
@@ -393,7 +392,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=6
+- Extraction confidence breakdown: n/a
+- Match method counts: n/a
 
 Fork inheritance lineage and inherited audits are included when available.

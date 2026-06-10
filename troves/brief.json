@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "troves",
-  "generated_at": "2026-05-23T18:36:35.980Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:17.595Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -17,10 +17,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 3,
+    "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4988787.34606,
-    "tvl_usd": 4988787.34606,
+    "dl_tvl_usd": 5023162.81294,
+    "tvl_usd": 5023162.81294,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -34,13 +34,18 @@
       "fresh": 1,
       "aging": 0,
       "stale": 0,
-      "unknown": 2
+      "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Troves is a yield protocol on StarkNet that enables users to deposit assets into vaults to earn yield through automated strategies.",
-    "relationship_narrative": "No product families or contracts are defined in the provided metadata, so no structural relationships can be described.",
+    "project_purpose": "Troves is a live Starknet yield protocol centered on curated vaults and automated strategy products. Users deposit assets into vaults that allocate through strategies and Starknet integrations such as Vesu, Ekubo, Endur, and Extended to generate yield.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -99,27 +104,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2519,
-      "audit_key": "audit-2519",
-      "report_name": "Audit link",
-      "report_url": "https://github.com/zenith-security/reports/blob/main/reports/Forge%20-%20Zenith%20Audit%20Report.pdf",
-      "auditor": "Zellic",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -143,10 +127,6 @@
       {
         "audit_id": 2518,
         "report_name": "Audit link - Sherlock"
-      },
-      {
-        "audit_id": 2519,
-        "report_name": "Audit link"
       }
     ],
     "inherited_remapped_matches": []

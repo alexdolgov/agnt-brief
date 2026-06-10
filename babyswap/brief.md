@@ -1,22 +1,20 @@
 # Agentic Audit Brief: BabySwap
 
-⚠️ Lifecycle status: DEAD - TVL changed 4.8% over 90 days
-
 ## Project Overview
 
 - Project: BabySwap (`babyswap`)
-- Lifecycle: dead (Tier 0, 99.6% below peak)
-- Generated: 2026-05-25T00:34:07.294Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: active (Tier 0, 99.6% below peak)
+- Generated: 2026-06-10T20:58:58.030Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 113 unique implementations (194 raw deployments)
-- DeFi Llama TVL: $1,351,943.98
+- DeFi Llama TVL: $1,344,585.94
 - On-chain TVL (included contracts): $241,077.08
 - TVL by chain: Bsc $241,077.08
 
 ## Project Description
 
-BabySwap is a decentralized exchange (DEX) on BSC that facilitates token swaps and liquidity provision, primarily targeting newborn and emerging crypto projects. It includes its own native token, BabyToken, and a router contract for executing trades.
+BabySwap is a BNB Chain AMM and NFT DEX ecosystem for swaps, liquidity provision, and emerging project markets. Its broader contract surface includes the BABY token, router infrastructure, NFT and marketplace components, farming, launchpad, and Wonderland-related modules.
 
 ### Architecture
 
@@ -36,7 +34,6 @@ The BabySmartRouter proxy delegates to the BabyNormalRouter implementation to ha
 - Latest audit: 2022-08 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $241,077.08 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 

@@ -5,17 +5,17 @@
 - Project: King Protocol (`king-protocol`)
 - Website: [https://kingprotocol.org/](https://kingprotocol.org/)
 - Lifecycle: active (Tier 0, 94% below peak)
-- Generated: 2026-05-25T01:50:37.689Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:06.698Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, ethereum, mantle, swellchain
 - Contract surface: 16 unique implementations (32 raw deployments)
-- DeFi Llama TVL: $1,283,601.34
+- DeFi Llama TVL: $1,540,496.18
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-King Protocol is a liquid restaking protocol that allows users to deposit assets and receive liquid restaking tokens (LRTs) representing their staked positions. It operates across multiple chains, using LayerZero's Omnichain Fungible Token (OFT) standard to enable cross-chain transfers of its LRTs.
+King Protocol is a rewards and vault-share protocol focused on consolidating DeFi and restaking rewards into a liquid token. Its observed deployments include cross-chain token components such as KingOFTL2/LayerZero OFT-related contracts, but these should be treated as cross-chain deployment infrastructure rather than the sole or primary product definition unless further supported by current documentation.
 
 ### Architecture
 

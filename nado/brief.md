@@ -5,17 +5,17 @@
 - Project: Nado (`nado`)
 - Website: [https://app.nado.xyz?join=sP6or8A](https://app.nado.xyz?join=sP6or8A)
 - Lifecycle: active (Tier 0, 13.5% below peak)
-- Generated: 2026-05-31T14:54:05.776Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-06-10T20:59:08.029Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ink
-- Contract surface: 23 unique implementations (23 raw deployments)
+- Contract surface: 22 unique implementations (22 raw deployments)
 - DeFi Llama TVL: $54,956,474.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Nado is a decentralized exchange protocol offering spot and perpetual derivatives trading on the Ink chain. It enables users to trade assets with leverage and access liquidity through a set of smart contracts.
+Nado is a decentralized trading protocol on Ink offering Nado Spot and Nado Perps. It uses a CLOB/orderbook trading model with off-chain sequencing and on-chain settlement, supports unified cross-margin for trading, and includes the NLP liquidity vault for protocol liquidity.
 
 ### Architecture
 
@@ -26,14 +26,14 @@ Both product families operate on the Ink chain and likely share common infrastru
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 23
-- Unique implementations: 23
-- Raw deployments: 23
-- Audits discovered: 3
+- Unverified implementations: 22
+- Unique implementations: 22
+- Raw deployments: 22
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -62,7 +62,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (23)
+### ❓ Unverified (22)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -71,7 +71,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ink | `0x0200c2...8470c1` | ❓ Unverified |
 | UnnamedContract | unknown | ink | `0x05ec92...65974e` | ❓ Unverified |
 | UnnamedContract | unknown | ink | `0x09fb49...5b9651` | ❓ Unverified |
-| UnnamedContract | unknown | ink | `0x123456...567890` | ❓ Unverified |
 | UnnamedContract | unknown | ink | `0x1e3818...1a45d0` | ❓ Unverified |
 | UnnamedContract | unknown | ink | `0x23a283...55cc73` | ❓ Unverified |
 | UnnamedContract | unknown | ink | `0x3352b2...f54e5d` | ❓ Unverified |
@@ -96,9 +95,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [cookie-policy.pdf](https://github.com/nadohq/nado-web-monorepo-snapshot/blob/main/apps/trade/public/docs/cookie-policy.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [privacy-policy.pdf](https://github.com/nadohq/nado-web-monorepo-snapshot/blob/main/apps/trade/public/docs/privacy-policy.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [terms-of-use.pdf](https://github.com/nadohq/nado-web-monorepo-snapshot/blob/main/apps/trade/public/docs/terms-of-use.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -113,21 +109,15 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 23 |
+| needs_review | 22 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [5672] cookie-policy.pdf
-- [5673] privacy-policy.pdf
-- [5674] terms-of-use.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

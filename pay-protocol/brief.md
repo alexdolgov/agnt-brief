@@ -7,8 +7,8 @@
 - Project: Pay Protocol (`pay-protocol`)
 - Website: [https://payprotocol.network](https://payprotocol.network)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:15:25.076Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:09.200Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 8 unique implementations (8 raw deployments)
 - DeFi Llama TVL: $1,422,299.22
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Pay Protocol is a payments-focused DeFi protocol on Ethereum that facilitates on-chain transactions, likely involving token swaps, payment routing, or settlement logic. Its contract surface suggests a unified system for managing payment flows.
+Pay Protocol is a non-custodial crypto payment and wallet infrastructure product for B2C businesses. It provides self-custodial checkout and wallet-as-a-service infrastructure, keyless smart-contract wallets, APIs, gas-optimized sweeping, and system-wide multi-signature controls across multiple supported networks. The available evidence does not support describing token swaps as a core product or scoping the project as Ethereum-only.
 
 ### Architecture
 

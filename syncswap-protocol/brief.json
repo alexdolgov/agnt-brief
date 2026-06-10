@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "syncswap-protocol",
-  "generated_at": "2026-05-23T04:28:41.782Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:17.132Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "syncswap-protocol",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 89.43454815524706
   },
   "summary": {
-    "total_contracts": 158,
-    "total_addresses": 198,
-    "unique_implementations": 158,
-    "total_deployments": 198,
+    "total_contracts": 157,
+    "total_addresses": 194,
+    "unique_implementations": 157,
+    "total_deployments": 194,
     "audited_contracts": 7,
-    "unaudited_contracts": 24,
+    "unaudited_contracts": 23,
     "contracts_verified_audited": 7,
-    "contracts_verified_unaudited": 24,
+    "contracts_verified_unaudited": 23,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 127,
-    "coverage_pct": 22.6,
-    "total_audits": 9,
+    "coverage_pct": 23.3,
+    "total_audits": 8,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 10032183,
+    "dl_tvl_usd": 9687624,
     "tvl_usd": 453683.49545300007,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -56,13 +56,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 8,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "SyncSwap is a decentralized exchange (DEX) protocol deployed on multiple chains, including Linea, Scroll, and zkSync Era. It enables users to swap tokens and provide liquidity through various pool types, including classic, stable, and concentrated liquidity pools.",
+    "project_purpose": "SyncSwap is a single decentralized exchange (DEX) protocol deployed across multiple chains, including Linea, Scroll, zkSync Era, and Sophon. It enables token swaps and liquidity provision through pool types such as classic, stable, and concentrated liquidity pools.",
     "relationship_narrative": "The SyncSwap family contains the core vault and pool master contracts that manage liquidity and swaps, while the Linea and Scroll families are chain-specific deployments of pool factories that rely on the same underlying pool logic. All families share the same architectural pattern of factory contracts creating and managing pools, with routers providing user-facing swap interfaces.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 157,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -310,7 +315,7 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
-      "address": "0x19bbe6bb16d9ff3f8c2fbfc5dfa5805dedd9a09d",
+      "address": "0xcc00f934a7541868b9a09f98d7928f727b9e4d75",
       "name": "NonfungiblePositionManager",
       "role": "governance",
       "origin_kind": "native",
@@ -321,15 +326,6 @@
       "impl_address": null,
       "impl_name": "NonfungiblePositionManager",
       "deployments": [
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x19bbe6bb16d9ff3f8c2fbfc5dfa5805dedd9a09d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 59144,
           "chain_name": "linea",
@@ -350,7 +346,7 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
-      "address": "0x575443cb6b368842f77f6d2054259a4d16fc6783",
+      "address": "0xe357304dc2edd2f9affbc64d69e7e278ef353431",
       "name": "NonfungibleTokenPositionDescriptorLinea",
       "role": "token",
       "origin_kind": "native",
@@ -361,24 +357,6 @@
       "impl_address": null,
       "impl_name": "NonfungibleTokenPositionDescriptorLinea",
       "deployments": [
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x575443cb6b368842f77f6d2054259a4d16fc6783",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x6c39303a65671252b52c03aa07e45938f10c2994",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 59144,
           "chain_name": "linea",
@@ -1275,37 +1253,6 @@
           "chain_id": 59144,
           "chain_name": "linea",
           "address": "0xb86284160348d0727e7fc6b131812082243b4604",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 59144,
-      "chain_name": "linea",
-      "address": "0x07507a719e7d040ebcbcf54715d7ce7ce5241c91",
-      "name": "UniversalRouter",
-      "role": "adapter",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "UniversalRouter",
-      "deployments": [
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x07507a719e7d040ebcbcf54715d7ce7ce5241c91",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -5568,27 +5515,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2079,
-      "audit_key": "audit-2079",
-      "report_name": "{% embed url=\"<>\" %}",
-      "report_url": "https://github.com/syncswap/reports",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -5596,14 +5522,14 @@
       "auditor": "MetaScan",
       "tier": 2,
       "contracts_covered": 7,
-      "coverage_pct": 22.6,
+      "coverage_pct": 23.3,
       "latest_audit": "2023-04"
     },
     {
       "auditor": "Zellic",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 3.2,
+      "coverage_pct": 3.3,
       "latest_audit": "2023-05"
     }
   ],
@@ -5651,7 +5577,7 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
-      "address": "0x19bbe6bb16d9ff3f8c2fbfc5dfa5805dedd9a09d",
+      "address": "0xcc00f934a7541868b9a09f98d7928f727b9e4d75",
       "name": "NonfungiblePositionManager",
       "role": "governance",
       "origin_kind": "native",
@@ -5661,7 +5587,7 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
-      "address": "0x575443cb6b368842f77f6d2054259a4d16fc6783",
+      "address": "0xe357304dc2edd2f9affbc64d69e7e278ef353431",
       "name": "NonfungibleTokenPositionDescriptorLinea",
       "role": "token",
       "origin_kind": "native",
@@ -5811,7 +5737,7 @@
   ],
   "origin_summary": {
     "native": 107,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 3,
     "needs_review": 47
   },
@@ -5844,10 +5770,6 @@
       {
         "audit_id": 2078,
         "report_name": "202304231022.pdf"
-      },
-      {
-        "audit_id": 2079,
-        "report_name": "{% embed url=\"<>\" %}"
       }
     ],
     "inherited_remapped_matches": []

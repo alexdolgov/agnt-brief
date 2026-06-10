@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bifi",
-  "generated_at": "2026-05-23T08:35:31.827Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:58:59.187Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bifi",
@@ -35,7 +35,7 @@
     "coverage_pct": 30.4,
     "total_audits": 7,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 7540816.502599999,
+    "dl_tvl_usd": 7429579.52329,
     "tvl_usd": 236661.09101012588,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -60,9 +60,14 @@
     }
   },
   "topography": {
-    "project_purpose": "BiFi is a multi-chain lending protocol that enables users to supply and borrow assets through handler contracts managing token-specific pools. It uses proxy-based upgradeability and a centralized manager to coordinate operations across different tokens and chains.",
+    "project_purpose": "BiFi is a cross-chain lending and borrowing platform powered by Bifrost, positioned around native cross-chain functionality without relying on bridges or wrapped tokens. Its current Cross-chain BiFi deployment on Bifrost Network and Binance/BSC should be distinguished from legacy Ethereum, Avalanche, and Klaytn lending deployments that used handler/manager-style contracts and proxy-based upgradeability.",
     "relationship_narrative": "All handler proxies (e.g., UsdtHandlerProxy, DaiHandlerProxy) delegate to shared implementation contracts (TokenHandler or CoinHandler) and are managed by the TokenManager (HandlerManager implementation). The XFactory likely deploys or configures these handlers, forming a unified lending infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 170,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

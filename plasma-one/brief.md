@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Plasma One
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Plasma One (`plasma-one`)
 - Website: [https://www.plasma.to/one](https://www.plasma.to/one)
-- Lifecycle: unknown (Tier 0, 22.1% below peak)
-- Generated: 2026-05-31T10:14:25.175Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, 22.1% below peak)
+- Generated: 2026-06-10T20:59:09.341Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: plasma
 - Contract surface: 7 unique implementations (15 raw deployments)
 - DeFi Llama TVL: $2,436,871.64
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Plasma One is a crypto card issuer that enables users to spend digital assets via a card product. It leverages cross-chain token bridges and yield-bearing vaults to manage and transfer value.
+Plasma One is a non-custodial stablecoin money app and crypto card product focused on stablecoin transfers, spending, and an Earn interface. Earn/yield functionality should be described as using or integrating third-party DeFi or vault providers unless Plasma One-operated vault contracts are verified. Do not assert Plasma One-owned bridge or vault internals without documented contract mapping.
 
 ### Architecture
 
@@ -31,13 +29,12 @@ The BoringVault holds user deposits and generates yield, while ATokenInstance re
 - Unverified implementations: 2
 - Unique implementations: 7
 - Raw deployments: 15
-- Audits discovered: 2
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $0.62
-- Latest audit: 2024-06 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 1 unknown
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $0.62 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -84,8 +81,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [sigma_prime_audit_v2.pdf](https://github.com/PlasmaLaboratories/reth/blob/main/audit/sigma_prime_audit_v2.pdf) | unknown | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
-| [review.md](https://github.com/PlasmaLaboratories/reth/blob/main/docs/design/review.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -108,14 +103,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [8928] sigma_prime_audit_v2.pdf
-- [8941] review.md
 
 Fork inheritance lineage and inherited audits are included when available.

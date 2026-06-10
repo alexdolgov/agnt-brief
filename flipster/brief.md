@@ -5,8 +5,8 @@
 - Project: Flipster (`flipster`)
 - Website: [https://flipster.io](https://flipster.io)
 - Lifecycle: active (Tier 0, 85.7% below peak)
-- Generated: 2026-05-31T14:54:11.133Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:04.012Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: klaytn
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $35,950,555.70
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Flipster is a centralized cryptocurrency exchange and perpetual futures trading platform offering digital asset trading services such as spot trading, perpetuals, copy trading, earn/rewards programs, and proof-of-reserves related services. The two listed Klaytn/Kaia addresses are only the DB-known smart-contract surface and are skeletal/non-representative of the full Flipster exchange, reserve wallet, and off-chain system footprint; they should not be interpreted as securing the project-wide CEX reserve TVL.
 
 ## Audit Coverage Summary
 

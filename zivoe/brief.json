@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "zivoe",
-  "generated_at": "2026-05-22T21:20:38.679Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-10T20:59:19.539Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "zivoe",
     "tier": 0,
@@ -22,31 +22,29 @@
     "drop_from_peak_pct": 83.36487269966184
   },
   "summary": {
-    "total_contracts": 32,
-    "total_addresses": 47,
-    "unique_implementations": 32,
-    "total_deployments": 47,
-    "audited_contracts": 18,
-    "unaudited_contracts": 13,
-    "contracts_verified_audited": 18,
-    "contracts_verified_unaudited": 13,
+    "total_contracts": 31,
+    "total_addresses": 46,
+    "unique_implementations": 31,
+    "total_deployments": 46,
+    "audited_contracts": 13,
+    "unaudited_contracts": 17,
+    "contracts_verified_audited": 13,
+    "contracts_verified_unaudited": 17,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
-    "coverage_pct": 58.1,
-    "total_audits": 3,
-    "scoreable_audits": 3,
-    "dl_tvl_usd": 13834731.792229999,
-    "tvl_usd": 87090531.92474364,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 87090531.92
-    },
-    "asd_usd": 87090531.92474364,
+    "coverage_pct": 43.3,
+    "total_audits": 2,
+    "scoreable_audits": 2,
+    "dl_tvl_usd": 13834786.44158,
+    "tvl_usd": 13834786.44158,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://zivoe.com/",
     "chains": [
       "ethereum"
     ],
-    "tier1_coverage_pct": 48.4,
+    "tier1_coverage_pct": 33.3,
     "tier1_auditors": [
       "Sherlock"
     ],
@@ -54,52 +52,26 @@
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 2,
+      "aging": 1,
       "stale": 1,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Zivoe is a real-world asset (RWA) credit protocol that connects on-chain liquidity with off-chain lending. It uses a tranche-based system to pool funds, generate yield through various strategies, and distribute returns to token holders.",
+    "project_purpose": "Zivoe is a real-world asset private credit protocol where qualified participants deposit USDC or other stablecoins to receive zVLT exposure to yield from private credit and consumer lending. Tranche, governance, and rewards contracts should be treated as protocol or legacy architecture only where still supported by current contract and product evidence.",
     "relationship_narrative": "The Governance & Accounting family sets global parameters and distributes yield to the Tranches and Yield Generation families. The Primary Contracts family (vault and credit origination) interacts with Tranches for funding and with Yield Generation for deploying capital, while the Zivoe Governance Token family provides the staking and rewards layer that ties into governance.",
     "product_family_count": 7
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 31,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x437cc33344a0b27a429f795ff6b469c72698b291",
-      "name": "WrappedMToken",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Zivoe",
-      "tvl_usd": 87090531.92474364,
-      "is_proxy": true,
-      "impl_address": "0x813b926b1d096e117721bd1eb017fba122302da0",
-      "impl_name": "WrappedMToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x437cc33344a0b27a429f795ff6b469c72698b291",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 87090531.92474364,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -797,16 +769,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-1987"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -834,8 +804,7 @@
         }
       ],
       "audits_covering": [
-        "audit-1986",
-        "audit-1987"
+        "audit-1986"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -864,16 +833,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-1987"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -901,8 +868,7 @@
         }
       ],
       "audits_covering": [
-        "audit-1986",
-        "audit-1987"
+        "audit-1986"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -953,8 +919,7 @@
         }
       ],
       "audits_covering": [
-        "audit-1986",
-        "audit-1987"
+        "audit-1986"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -987,8 +952,7 @@
         }
       ],
       "audits_covering": [
-        "audit-1986",
-        "audit-1987"
+        "audit-1986"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1050,16 +1014,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-1987"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -1083,16 +1045,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-1987"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -1120,8 +1080,7 @@
         }
       ],
       "audits_covering": [
-        "audit-1986",
-        "audit-1987"
+        "audit-1986"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1150,7 +1109,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1159,16 +1118,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-1987"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -1229,8 +1186,7 @@
         }
       ],
       "audits_covering": [
-        "audit-1986",
-        "audit-1987"
+        "audit-1986"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1272,7 +1228,7 @@
       "report_url": "https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2024.04.25%20-%20Final%20-%20Zivoe%20Audit%20Report.pdf",
       "auditor": "Sherlock",
       "audit_type": "contest",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -1297,59 +1253,21 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1987,
-      "audit_key": "audit-1987",
-      "report_name": "`08-18-2023 Runtime Verification (Locker Contracts)`",
-      "report_url": "https://github.com/runtimeverification/publications/blob/main/reports/smart-contracts/Zivoe_Core_Contracts.pdf",
-      "auditor": "Sherlock",
-      "audit_type": "contest",
-      "freshness": "stale",
-      "date": "2023-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "FloorMath",
-        "OwnableLocked",
-        "ZivoeDAO",
-        "ZivoeGTC",
-        "ZivoeGlobals",
-        "ZivoeGovernorV2",
-        "ZivoeITO",
-        "ZivoeLocker",
-        "ZivoeMath",
-        "ZivoeRewards",
-        "ZivoeRewardsVesting",
-        "ZivoeTLC",
-        "ZivoeToken",
-        "ZivoeTrancheToken",
-        "ZivoeTranches",
-        "ZivoeYDL"
-      ],
-      "matched_contracts": 14,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
       "auditor": "Sherlock",
       "tier": 1,
-      "contracts_covered": 15,
-      "coverage_pct": 48.4,
+      "contracts_covered": 10,
+      "coverage_pct": 33.3,
       "latest_audit": "2024-06"
     },
     {
       "auditor": "Runtime Verification",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 9.7,
+      "coverage_pct": 10,
       "latest_audit": "2025-03"
     }
   ],
@@ -1433,20 +1351,70 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb65a66621d7de34afec9b9ac0755133051550dd7",
+      "name": "ZivoeDAO",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x94ac60103b6b0df0cd828086b16eff2a3e32a71e",
+      "name": "ZivoeGovernorV2",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe1a68a0404426d6bbc459794e576640dee3fc916",
+      "name": "ZivoeTLC",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe412d46a0fbd567332b7689cfffe1f8a4f19a9d2",
+      "name": "ZivoeToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7aa5bf30042b2145b9f0629ea68de55b42ad3bb6",
+      "name": "ZivoeTrancheToken",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
     "native": 25,
     "upstream": 3,
-    "standard_library": 3,
+    "standard_library": 2,
     "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 33
+      "extraction_exact": 19
     },
     "extraction_confidence_counts": {
-      "high": 3
+      "high": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

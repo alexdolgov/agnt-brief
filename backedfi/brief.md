@@ -1,27 +1,26 @@
 # Agentic Audit Brief: BackedFi
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 34.7% over 90 days
-
 ## Project Overview
 
 - Project: BackedFi (`backedfi`)
 - Website: [https://backed.fi](https://backed.fi)
-- Lifecycle: unknown (Tier 0, 83.1% below peak)
-- Generated: 2026-05-31T07:27:19.688Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, 83.1% below peak)
+- Generated: 2026-06-10T20:58:58.033Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 2 unique implementations (11 raw deployments)
 - DeFi Llama TVL: $8,201,934.33
 - On-chain TVL (included contracts): $33,347,333.85
 - TVL by chain: Ethereum $33,347,333.85
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-BackedFi issues tokenized real-world assets (RWAs) on Ethereum, allowing users to gain on-chain exposure to traditional financial instruments like equities and ETFs. Each token is backed 1:1 by the underlying asset held by a licensed custodian.
-
-### Architecture
-
-All tokens share the same proxy pattern and implementation contracts, with most using BackedTokenImplementation and one using BackedAutoFeeTokenImplementation for automatic fee handling. They are deployed from a single deployer cluster, indicating a unified issuance infrastructure.
+BackedFi / Backed Finance is a multichain tokenized real-world asset issuer for stocks and ETFs, offering products such as bTokens and xStocks that provide on-chain exposure to traditional financial instruments. Tokens are intended to be backed 1:1 by the corresponding underlying assets held with regulated custodial arrangements.
 
 ## Audit Coverage Summary
 
@@ -37,7 +36,6 @@ All tokens share the same proxy pattern and implementation contracts, with most 
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $33,347,333.85 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Hera Finance
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Hera Finance (`hera-finance`)
 - Website: [https://staking.hera.finance](https://staking.hera.finance)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-23T14:42:19.441Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:04.629Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: metis
 - Contract surface: 28 unique implementations (28 raw deployments)
-- DeFi Llama TVL: $5,801,066.58
+- DeFi Llama TVL: $6,505,965.60
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Hera Finance is a decentralized exchange (DEX) on the Metis chain, enabling users to swap tokens and provide liquidity. It features a native token, HeraToken, which likely serves as a governance or utility token within the ecosystem.
+Hera Finance is a Metis-based DEX aggregator and portal focused on token swaps via route discovery, staking, and trade-mining programs around the HERA token. Current evidence supports aggregation and staking/trade-mining functionality, not an AMM-style DEX with user liquidity provision or independently documented HERA governance claims.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ All contracts are deployed by the same deployer cluster, indicating a unified in
 - Latest audit: 2022-10 (stale)
 - Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

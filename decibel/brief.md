@@ -5,21 +5,22 @@
 - Project: Decibel (`decibel`)
 - Website: [https://app.decibel.trade/trade](https://app.decibel.trade/trade)
 - Lifecycle: unknown
-- Generated: 2026-05-26T14:11:27.767Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:01.661Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $41,881,858.75
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Decibel is a derivatives protocol that enables users to trade and manage derivative instruments on-chain. It provides infrastructure for creating, trading, and settling derivative contracts.
-
-### Architecture
-
-No product families or contracts are defined in the provided inventory, so no relationships can be described.
+Decibel is an Aptos-based on-chain trading engine for spot and perpetual trading, as well as yield and vault opportunities. The protocol supports margin trading, order book/trade interfaces, funding, collateral management, and positions.
 
 ## Audit Coverage Summary
 

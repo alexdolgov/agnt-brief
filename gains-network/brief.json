@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "gains-network",
-  "generated_at": "2026-05-25T14:20:34.679Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:04.135Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "gains-network",
     "tier": 0,
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 19912437.79171,
+    "dl_tvl_usd": 18577383.479140002,
     "tvl_usd": 21861405.21781741,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -62,9 +62,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Gains Network is a decentralized leveraged trading platform that allows users to trade a wide range of assets (crypto, forex, commodities) with high leverage using synthetic assets. It operates across multiple chains and uses its own GNS token for staking, rewards, and governance.",
+    "project_purpose": "Gains Network / gTrade is a decentralized perpetuals exchange supporting leveraged trading across crypto, forex, stocks, indices and commodities, alongside lending vaults and GNS governance, staking and rewards components. GNS is the protocol governance and utility token, but the protocol also includes multi-collateral trading and lending components that use other assets.",
     "relationship_narrative": "The Gains Network family is a monolithic suite where all contracts share the same GNS token for staking, rewards, and fee mechanisms. Trading contracts rely on price aggregators and pair storage for market data, while staking and rewards contracts distribute incentives to users and oracles, all interconnected through the core token and trading flow.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 760,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

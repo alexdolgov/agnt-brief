@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "vnx",
-  "generated_at": "2026-05-31T11:35:54.035Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:18.722Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "vnx",
@@ -69,9 +69,14 @@
     }
   },
   "topography": {
-    "project_purpose": "VNX is a protocol for tokenized real-world assets (RWAs), issuing stablecoins and digital representations of fiat currencies on multiple blockchains. It provides regulated, fiat-backed tokens that enable on-chain payments, trading, and settlement.",
+    "project_purpose": "VNX is a real-world asset tokenization project focused primarily on tokenized precious metals, especially VNX Gold (VNXAU), and also offers fiat-referenced tokens such as VEUR and VCHF where applicable. Its tokens are deployed across multiple blockchains for on-chain holding, payments, trading, and settlement.",
     "relationship_narrative": "The VNX family consists of token implementations (VNXCToken) and governance/registry contracts (VNXDGR) deployed behind TransparentUpgradeableProxy instances, sharing a common upgradeable infrastructure. A VNXAnyTransferProvider likely facilitates cross-chain or arbitrary transfer logic, supporting the multi-chain token ecosystem.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 10,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

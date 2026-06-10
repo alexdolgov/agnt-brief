@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "byte-exchange",
-  "generated_at": "2026-05-26T14:09:07.233Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:01.220Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Byte Exchange is a centralized exchange (CEX) for trading digital assets. It provides a platform for users to buy, sell, and manage cryptocurrencies.",
-    "relationship_narrative": "No on-chain contracts or product families are present, as this is a centralized exchange with off-chain infrastructure.",
+    "project_purpose": "Byte Exchange is a centralized cryptocurrency exchange (CEX) offering digital asset trading and account-based crypto services. Current public sources indicate offerings including spot trading, P2P markets, earn/staking products, and OTC services. No project-owned on-chain smart-contract product families were identified in the available scope.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

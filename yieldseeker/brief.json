@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "yieldseeker",
-  "generated_at": "2026-05-25T02:33:18.599Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:19.465Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "yieldseeker",
     "tier": 0,
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 5.162975446253414
   },
   "summary": {
-    "total_contracts": 191,
-    "total_addresses": 697,
-    "unique_implementations": 191,
-    "total_deployments": 697,
+    "total_contracts": 190,
+    "total_addresses": 693,
+    "unique_implementations": 190,
+    "total_deployments": 693,
     "audited_contracts": 0,
-    "unaudited_contracts": 51,
+    "unaudited_contracts": 50,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 51,
+    "contracts_verified_unaudited": 50,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 140,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1258942.77576,
+    "dl_tvl_usd": 1294442.74355,
     "tvl_usd": 102881152.85793668,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "YieldSeeker is a yield aggregation protocol on Base that optimizes user deposits across lending markets and automated vaults. It offers vaults that auto-compound yields and strategies that route funds into Morpho Blue and other DeFi protocols.",
+    "project_purpose": "YieldSeeker is an AI-managed stablecoin yield agent on Base that allocates USDC and other stablecoin deposits across trusted DeFi venues to seek optimized yield. Its in-scope surface should distinguish YieldSeeker-owned agent/account infrastructure from external protocols and vaults, such as Morpho/MetaMorpho, Aave, Euler-style EVaults, Wasabi vaults, and other third-party venues where funds may be deployed.",
     "relationship_narrative": "The YieldSeeker family uses a shared set of vault implementations (EVault, UsdcVaultL2, V3Vault) deployed via proxy patterns, with a registry BeaconProxy coordinating their discovery. MetaMorpho and MetaMorphoV1_1 contracts serve as strategy adapters that channel deposits into Morpho Blue, while fToken represents the receipt token for vault shares.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 190,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1852,7 +1857,7 @@
       "chain_name": "base",
       "address": "0x611745c9107d0197f161556691c5129fd9b898d1",
       "name": "BeaconProxy",
-      "role": "registry",
+      "role": "proxy",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "YieldSeeker",
@@ -4427,64 +4432,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x0fabfeacedf47e890c50c8120177fff69c6a1d9b",
-      "name": "MetaMorpho",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "YieldSeeker",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MetaMorpho",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x0fabfeacedf47e890c50c8120177fff69c6a1d9b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x12afdefb2237a5963e7bab3e2d46ad0eee70406e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x236919f11ff9ea9550a4287696c2fc9e18e6e890",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xcbeef01994e24a60f7dcb8de98e75ad8bd4ad60d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 8453,
@@ -10711,16 +10658,6 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x0fabfeacedf47e890c50c8120177fff69c6a1d9b",
-      "name": "MetaMorpho",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
       "address": "0x1401d1271c47648ac70cbcdfa3776d4a87ce006b",
       "name": "MetaMorphoV1_1",
       "role": "unknown",
@@ -10830,7 +10767,7 @@
     }
   ],
   "origin_summary": {
-    "native": 51,
+    "native": 50,
     "upstream": 0,
     "standard_library": 22,
     "needs_review": 118

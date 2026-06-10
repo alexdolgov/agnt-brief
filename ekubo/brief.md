@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Ekubo
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 37.3% over 90 days
-
 ## Project Overview
 
 - Project: Ekubo (`ekubo`)
 - Website: [https://ekubo.org/](https://ekubo.org/)
-- Lifecycle: unknown (Tier 0, 73.2% below peak)
-- Generated: 2026-05-22T10:29:11.862Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: active (Tier 0, 73.2% below peak)
+- Generated: 2026-06-10T20:59:02.062Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 15 unique implementations (17 raw deployments)
-- DeFi Llama TVL: $27,158,210.42
+- DeFi Llama TVL: $27,323,056.00
 - On-chain TVL (included contracts): $5,648,264.12
 - TVL by chain: Ethereum $5,648,264.12
 
 ## Project Description
 
-Ekubo is a decentralized exchange protocol on Ethereum and Starknet that uses concentrated liquidity and a singleton-style Core contract. It provides efficient token swaps, liquidity provision, and MEV-resistant routing, with governance via the EkuboToken.
+Ekubo is a live decentralized exchange protocol built around concentrated liquidity and a singleton-style Core design. The project is primarily associated with Starknet and also supports Ethereum; its public interface advertises swaps on Ethereum, Arbitrum, and Starknet. The currently listed contract surface is an incomplete Ethereum-only subset and should not be treated as the full Ekubo deployment surface or as the original Starknet Core/periphery/governance surface. Arbitrum should be treated as interface-supported but outside the currently covered audited contract surface unless Arbitrum deployments are separately verified and added.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The EVM Contracts (V2) family extends the original Ekubo DEX to EVM chains, shar
 - Latest audit: 2026-02 (fresh)
 - Staleness: 4 fresh, 1 aging, 0 stale, 0 unknown
 - Tier 1 coverage: 22.2% (Code4rena)
-- Note: This protocol is classified as [unknown]. ASD of $5,648,264.12 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

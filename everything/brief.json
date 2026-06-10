@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "everything",
-  "generated_at": "2026-05-31T07:58:22.774Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:03.902Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "everything",
     "tier": 0,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Everything is a lending protocol on Arbitrum One that enables cross-chain asset transfers and management via Wormhole integration, with upgradeable proxy-based contracts for core logic and transceiver operations.",
+    "project_purpose": "Everything is an Arbitrum-based unified-liquidity AMM and oracle-less lending, borrowing, and leverage protocol for swaps, earning, borrowing, and leveraged positions. Wormhole/NTT-related contracts should be treated only as supporting cross-chain infrastructure where independently verified, not as the protocol's primary identity.",
     "relationship_narrative": "The EV contract serves as the core lending logic, while WormholeTransceiver and NttManager contracts handle cross-chain messaging and asset transfers, all managed through upgradeable proxy patterns and a shared UpgradeableBeacon.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 10,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

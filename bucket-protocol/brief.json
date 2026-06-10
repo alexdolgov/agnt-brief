@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bucket-protocol",
-  "generated_at": "2026-05-27T15:02:02.450Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-06-10T20:59:01.181Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Bucket Protocol is a decentralized finance (DeFi) platform that enables users to open collateralized debt positions (CDPs) and participate in yield farming. It allows users to deposit collateral to mint stablecoins and earn rewards through farming mechanisms.",
-    "relationship_narrative": "The CDP and Farm families share the protocol's native token for rewards and governance, with farming incentives potentially driving liquidity for the stablecoin minted through CDPs.",
+    "project_purpose": "Bucket Protocol is a Sui-based DeFi protocol centered on collateralized debt positions and stablecoin borrowing/minting. Users can deposit collateral to mint/borrow the protocol stablecoin, with functionality including real-time liquidation and flash loans. Bucket Farm should be treated as a related DeFi product only where independently scoped, and unsupported claims about a shared native governance or reward token should be removed unless separately verified.",
+    "relationship_narrative": null,
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

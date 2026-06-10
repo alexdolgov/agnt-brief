@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "backedfi",
-  "generated_at": "2026-05-31T07:27:19.688Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:58:58.033Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "backedfi",
     "tier": 0,
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "BackedFi issues tokenized real-world assets (RWAs) on Ethereum, allowing users to gain on-chain exposure to traditional financial instruments like equities and ETFs. Each token is backed 1:1 by the underlying asset held by a licensed custodian.",
-    "relationship_narrative": "All tokens share the same proxy pattern and implementation contracts, with most using BackedTokenImplementation and one using BackedAutoFeeTokenImplementation for automatic fee handling. They are deployed from a single deployer cluster, indicating a unified issuance infrastructure.",
+    "project_purpose": "BackedFi / Backed Finance is a multichain tokenized real-world asset issuer for stocks and ETFs, offering products such as bTokens and xStocks that provide on-chain exposure to traditional financial instruments. Tokens are intended to be backed 1:1 by the corresponding underlying assets held with regulated custodial arrangements.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

@@ -5,22 +5,22 @@
 - Project: Tangible (`tangible`)
 - Website: [https://www.tangible.store](https://www.tangible.store)
 - Lifecycle: active (Tier 0, 46.9% below peak)
-- Generated: 2026-05-31T10:53:06.738Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:17.285Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, bsc, ethereum, optimism, polygon
-- Contract surface: 476 unique implementations (2580 raw deployments)
+- Contract surface: 475 unique implementations (2579 raw deployments)
 - DeFi Llama TVL: $42,236,634.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/265 (0.0%)
-- Verified + Unaudited implementations: 263
+- Verified implementations audited: 0/264 (0.0%)
+- Verified + Unaudited implementations: 262
 - Verified by bytecode match: 2
 - Unverified implementations: 211
-- Unique implementations: 476
-- Raw deployments: 2580
+- Unique implementations: 475
+- Raw deployments: 2579
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -38,7 +38,7 @@
 
 - None
 
-### ⚠️ Verified + Unaudited (263)
+### ⚠️ Verified + Unaudited (262)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -46,7 +46,6 @@
 | AaveAmPipe | unknown | polygon | 3 deployments: polygon [`0x4ab624...83d5e9`](./contracts/polygon-137/0x4ab6242b727c3bd0b4cd1f90c51ed6316583d5e9/); polygon `0x4e3d7f...868bcc`; polygon `0x56066f...3962ad` | ⚠️ Unaudited |
 | ActivePool | core_logic | polygon | 3 deployments: polygon [`0x0f1364...b3076b`](./contracts/polygon-137/0x0f1364def5a7da8432e0c979161e8db9ceb3076b/); polygon `0x3c4863...90dd04`; polygon `0x47dd0f...1d2c16` | ⚠️ Unaudited |
 | AdminContract | governance | polygon | 3 deployments: polygon [`0x6e406d...1349ed`](./contracts/polygon-137/0x6e406d5bceddfc1e5417afd9292cf2ec1c1349ed/); polygon `0x7d6e99...bd7628`; polygon `0xbb3d55...bd1858` | ⚠️ Unaudited |
-| Aero | token | base | [`0x940181...d98631`](./contracts/base-8453/0x940181a94a35a4569e4529a3cdfb74e38fd98631/) | ⚠️ Unaudited |
 | AffiliateExchange | unknown | polygon | [`0xad437b...551f24`](./contracts/polygon-137/0xad437bb2e6ce7b25be9cd9a396cdf2cfe0551f24/) | ⚠️ Unaudited |
 | Airdrop | operational_periphery | polygon | [`0x437915...cee688`](./contracts/polygon-137/0x43791529b15358d0c24c7f13acf348195dcee688/) | ⚠️ Unaudited |
 | AirdropDistributor | operational_periphery | base | [`0xe4c69a...bc382f`](./contracts/base-8453/0xe4c69af018b2ea9e575026c0472b6531a2bc382f/) | ⚠️ Unaudited |
@@ -557,7 +556,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 476 |
+| needs_review | 475 |
 
 ## Scope Matching Notes
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hemibtc",
-  "generated_at": "2026-05-22T20:43:10.587Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:04.580Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hemibtc",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 6.309395554032111
   },
   "summary": {
-    "total_contracts": 47,
-    "total_addresses": 99,
-    "unique_implementations": 47,
-    "total_deployments": 99,
-    "audited_contracts": 1,
+    "total_contracts": 46,
+    "total_addresses": 98,
+    "unique_implementations": 46,
+    "total_deployments": 98,
+    "audited_contracts": 0,
     "unaudited_contracts": 36,
-    "contracts_verified_audited": 1,
+    "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 36,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 10,
-    "coverage_pct": 2.7,
-    "total_audits": 5,
-    "scoreable_audits": 2,
-    "dl_tvl_usd": 15091882.19575,
+    "coverage_pct": 0,
+    "total_audits": 2,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 14847047.27588,
     "tvl_usd": 46198.571892331114,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -53,16 +53,21 @@
     "latest_audit_date": "2025-10",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 2,
-      "aging": 3,
+      "fresh": 1,
+      "aging": 1,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "HemiBTC is a cross-chain bridge protocol that enables the transfer of BTC and other assets between Ethereum, Optimism, BSC, and the Hemi L2 network. It leverages the OP Stack for its L2 infrastructure and includes governance, token minting, and oracle components.",
+    "project_purpose": "hemiBTC is Hemi's native BTC representation and Bitcoin tunnel bridge, focused on representing and moving BTC in connection with Hemi. It should not be described as the broader Hemi protocol, the HEMI token, veHEMI governance, BSC/OFT deployments, oracle infrastructure, or generic OP Stack infrastructure unless those components are independently verified as part of the hemiBTC bridge product.",
     "relationship_narrative": "The L1 and L2 families are tightly coupled through the OP Stack bridge: L1 contracts lock assets and relay messages to L2 contracts, which mint or release assets accordingly. The $HEMI token family provides a cross-chain token used for governance and fees, interacting with both L1 and L2 via standard ERC20 and OFT interfaces.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 46,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -493,40 +498,6 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xeb964a1a6fab73b8c72a0d15c7337fa4804f484d",
-      "name": "Hemi",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "$HEMI Contract Details",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Hemi",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xeb964a1a6fab73b8c72a0d15c7337fa4804f484d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-1973",
-        "audit-1974"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -2040,84 +2011,9 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1973,
-      "audit_key": "audit-1973",
-      "report_name": "Audit_Report_HEMI-TOK_FINAL_21.pdf",
-      "report_url": "https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/Audit_Report_HEMI-TOK_FINAL_21.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Hemi"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1974,
-      "audit_key": "audit-1974",
-      "report_name": "HemiToken - Final Report.pdf",
-      "report_url": "https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/HemiToken%20-%20Final%20Report.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Hemi"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1975,
-      "audit_key": "audit-1975",
-      "report_name": "Audit_Report_HEMI-VOT_FINAL_21.pdf",
-      "report_url": "https://github.com/hemilabs/audit-reports/blob/master/veHEMI/Audit_Report_HEMI-VOT_FINAL_21.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [
-    {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 2.7,
-      "latest_audit": "2025-10"
-    }
-  ],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 10,
@@ -2311,18 +2207,14 @@
     }
   ],
   "origin_summary": {
-    "native": 25,
+    "native": 24,
     "upstream": 2,
     "standard_library": 2,
     "needs_review": 18
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 2
-    },
-    "extraction_confidence_counts": {
-      "high": 2
-    },
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -2333,10 +2225,6 @@
       {
         "audit_id": 1972,
         "report_name": "Quantstamp - BTC Tunnel - FinalReport (1).pdf"
-      },
-      {
-        "audit_id": 1975,
-        "report_name": "Audit_Report_HEMI-VOT_FINAL_21.pdf"
       }
     ],
     "inherited_remapped_matches": []

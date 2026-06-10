@@ -5,8 +5,8 @@
 - Project: Avalaunch (`avalaunch`)
 - Website: [https://avalaunch.app](https://avalaunch.app)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:46:23.519Z
-- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
+- Generated: 2026-06-10T20:58:57.905Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche
 - Contract surface: 38 unique implementations (142 raw deployments)
 - DeFi Llama TVL: $6,835,452.48

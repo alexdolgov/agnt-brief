@@ -5,8 +5,8 @@
 - Project: vfat.io (`vfat.io`)
 - Website: [https://vfat.io/yield](https://vfat.io/yield)
 - Lifecycle: active (Tier 0, 68.8% below peak)
-- Generated: 2026-05-27T07:30:03.815Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-a9ad
+- Generated: 2026-06-10T20:59:18.712Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, ethereum, fantom, fraxtal, ink, linea, mantle, mode, optimism, polygon, sonic, unichain
 - Contract surface: 553 unique implementations (3354 raw deployments)
 - DeFi Llama TVL: $36,595,740.62
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-vfat.io is a multi-chain yield aggregator that enables users to deposit liquidity into automated farming strategies. It manages concentrated liquidity positions, staking, and reward distribution across various decentralized exchanges and chains.
+vfat.io is a multi-chain yield aggregator built around the Sickle self-custodial smart-contract-wallet model. It helps users batch and automate yield-farming actions such as concentrated liquidity management, staking, and reward claiming across decentralized exchanges and chains, while users retain self-custody rather than depositing into a custodial vault-like strategy.
 
 ### Architecture
 
@@ -33,7 +33,7 @@ The protocol uses SickleFactory to deploy user-specific Sickle contracts that in
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-02 (fresh)
-- Staleness: 2 fresh, 3 aging, 5 stale, 0 unknown
+- Staleness: 1 fresh, 4 aging, 5 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -641,7 +641,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [reports.yaudit.dev/reports/06-2024-Sickle-4](https://reports.yaudit.dev/06-2024-Sickle-4) | yAudit | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [reports.yaudit.dev/2026-02-vfat-router](https://reports.yaudit.dev/2026-02-vfat-router) | yAudit | Audit | 2026-02 | fresh | Direct | n/a | 0 | n/a |
 | [ackee-blockchain-vfat-sickle-report.pdf](https://github.com/Ackee-Blockchain/public-audit-reports/blob/master/2025/ackee-blockchain-vfat-sickle-report.pdf) | Ackee Blockchain | Audit | 2025-05 | aging | Direct | contract_name | 507 | high |
-| [ackee-blockchain-vfat-farm-strategies-report.pdf](https://github.com/Ackee-Blockchain/public-audit-reports/blob/master/2025/ackee-blockchain-vfat-farm-strategies-report.pdf) | Ackee Blockchain | Audit | 2025-06 | fresh | Direct | contract_name | 737 | high |
+| [ackee-blockchain-vfat-farm-strategies-report.pdf](https://github.com/Ackee-Blockchain/public-audit-reports/blob/master/2025/ackee-blockchain-vfat-farm-strategies-report.pdf) | Ackee Blockchain | Audit | 2025-06 | aging | Direct | contract_name | 737 | high |
 | [omniscia.io/reports/vfat-sickle-contracts-678fbcce38f52b001894a175](https://omniscia.io/reports/vfat-sickle-contracts-678fbcce38f52b001894a175) | Omniscia | Audit | 2025-04 | aging | Direct | contract_name | 32 | high |
 
 ## Coverage Gaps

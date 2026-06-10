@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "usx.capital",
-  "generated_at": "2026-05-31T11:29:10.256Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:18.519Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "usx.capital",
@@ -32,18 +32,18 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 4,
-    "total_addresses": 7,
-    "unique_implementations": 4,
-    "total_deployments": 7,
+    "total_contracts": 3,
+    "total_addresses": 6,
+    "unique_implementations": 3,
+    "total_deployments": 6,
     "audited_contracts": 0,
-    "unaudited_contracts": 4,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 4,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 1311040.99001,
     "tvl_usd": 1311040.99001,
@@ -62,13 +62,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "USX.Capital is a stablecoin wrapper protocol on Scroll that integrates with Morpho lending markets. It likely enables users to deposit assets into Morpho vaults and receive a wrapped stablecoin representation, enhancing capital efficiency and composability.",
-    "relationship_narrative": "The USX.Capital family relies on the Morpho and MetaMorpho contracts for underlying lending market interactions, while the SafeProxy provides governance control. The singleton proxy in the Smart Contract Addresses family likely acts as a central address lookup for the protocol's contracts.",
+    "project_purpose": "USX.Capital is a fully collateralized neodollar/stablecoin wrapper on Scroll. Public materials position USX as private, gasless, spendable in real life, and supporting staking and rewards. Morpho or Blend references should be treated as possible infrastructure dependencies unless directly documented as the user-facing USX protocol flow.",
+    "relationship_narrative": null,
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 3,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -167,37 +172,6 @@
     {
       "chain_id": 534352,
       "chain_name": "scroll",
-      "address": "0x2d012edbadc37edc2bc62791b666f9193fdf5a55",
-      "name": "Morpho",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Morpho",
-      "product_line": "USX.Capital",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Morpho",
-      "deployments": [
-        {
-          "chain_id": 534352,
-          "chain_name": "scroll",
-          "address": "0x2d012edbadc37edc2bc62791b666f9193fdf5a55",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 534352,
-      "chain_name": "scroll",
       "address": "0xd09e956353fc641792a0f1a7d748773358848f65",
       "name": "SafeProxy",
       "role": "unknown",
@@ -227,34 +201,12 @@
       "contamination_flag": null
     }
   ],
-  "audits": [
-    {
-      "audit_id": 2981,
-      "audit_key": "audit-2981",
-      "report_name": "Blend (the yield infrastructure layer used by USX) has undergone 8 independent security audits by leading blockchain security firms. Find their complete audit reports here: <>",
-      "report_url": "https://docs.blend.money/resources/audits",
-      "auditor": "yAudit",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
     "native": 0,
-    "upstream": 2,
+    "upstream": 1,
     "standard_library": 2,
     "needs_review": 0
   },
@@ -263,12 +215,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 2981,
-        "report_name": "Blend (the yield infrastructure layer used by USX) has undergone 8 independent security audits by leading blockchain security firms. Find their complete audit reports here: <>"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

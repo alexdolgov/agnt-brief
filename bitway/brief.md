@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Bitway
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Bitway (`bitway`)
 - Website: [https://bitway.com/](https://bitway.com/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T14:54:05.747Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:00.509Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 8 unique implementations (30 raw deployments)
 - DeFi Llama TVL: $60,775,264.39
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Bitway is a basis trading protocol on BSC that enables users to deposit assets into vaults to earn yield from delta-neutral strategies. It issues LP tokens representing vault shares and includes a stablecoin component for settlement or collateral.
+Bitway Earn is a BSC/BNB Chain asset-management and capital-gateway product in the Bitway suite, with basis-trading and vault/share-token mechanics indicated by public descriptions and deployed contract names. Any stablecoin settlement/collateral purpose or named strategy family should be treated as inferred unless confirmed by documentation or audit scope.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The Bitway family shares LPToken and WithdrawVault contracts across multiple vau
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $136,353,317.08 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

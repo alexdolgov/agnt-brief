@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "izumi-finance",
-  "generated_at": "2026-05-31T08:31:42.054Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:06.341Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "izumi-finance",
     "tier": 1,
@@ -80,9 +80,14 @@
     }
   },
   "topography": {
-    "project_purpose": "iZUMi Finance is a multi-chain decentralized exchange and yield protocol that enables concentrated liquidity trading and liquidity mining. It provides automated market-making with customizable price ranges and incentivizes liquidity providers through token rewards.",
+    "project_purpose": "iZUMi Finance is a multi-chain DeFi protocol positioned around Liquidity-as-a-Service, with iZiSwap concentrated-liquidity trading, liquidity incentives/staking and Pool2-style reward programs, and ve/iZi tokenomics components where supported by deployed contracts and documentation.",
     "relationship_narrative": "iZiSwap and iZUMi LiquidBox share the iZi token, which is earned through liquidity provision on iZiSwap and staked in LiquidBox for governance power and boosted rewards. The veiZi contract manages voting escrow for the token, linking the two families.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 181,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1491,7 +1496,7 @@
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
-      "impl_address": "0x01fdea353849ca29f778b2663bcaca1d191bed0e",
+      "impl_address": null,
       "impl_name": "Swap",
       "deployments": [
         {

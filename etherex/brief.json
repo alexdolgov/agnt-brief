@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "etherex",
-  "generated_at": "2026-05-24T04:01:32.838Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:02.337Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "etherex",
@@ -36,17 +36,17 @@
     "total_addresses": 130,
     "unique_implementations": 58,
     "total_deployments": 130,
-    "audited_contracts": 20,
-    "unaudited_contracts": 27,
-    "contracts_verified_audited": 19,
-    "contracts_verified_unaudited": 26,
+    "audited_contracts": 17,
+    "unaudited_contracts": 30,
+    "contracts_verified_audited": 16,
+    "contracts_verified_unaudited": 29,
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 11,
-    "coverage_pct": 42.6,
-    "total_audits": 4,
-    "scoreable_audits": 3,
-    "dl_tvl_usd": 3600603,
-    "tvl_usd": 3600603,
+    "coverage_pct": 36.2,
+    "total_audits": 2,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 3577570,
+    "tvl_usd": 3577570,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -54,25 +54,28 @@
     "chains": [
       "linea"
     ],
-    "tier1_coverage_pct": 42.6,
+    "tier1_coverage_pct": 36.2,
     "tier1_auditors": [
-      "Code4rena",
-      "ConsenSys Diligence",
       "Spearbit"
     ],
     "latest_audit_date": "2025-10",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 1,
-      "aging": 3,
+      "aging": 1,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Etherex is a decentralized exchange (DEX) protocol on Linea that offers both classic automated market maker (AMM) pools and concentrated liquidity pools. It enables users to swap tokens, provide liquidity, and participate in governance through voting and fee distribution mechanisms.",
+    "project_purpose": "Etherex is a concentrated-liquidity decentralized exchange on Linea with x(3,3)/metaDEX tokenomics. It enables token swaps, liquidity provision, gauges, voting, and fee distribution, and its deployed surface also includes classic AMM, gauge, and governance components.",
     "relationship_narrative": "The Core and Concentrated Liquidity families share the Access Control infrastructure for upgrades and governance. Both families use separate but parallel factory and gauge systems, with the Voter contract in Core directing emissions across both pool types.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 58,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -556,8 +559,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2724",
-        "audit-2727"
+        "audit-2724"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -870,8 +872,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2724",
-        "audit-2727"
+        "audit-2724"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1124,8 +1125,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2724",
-        "audit-2727"
+        "audit-2724"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1185,17 +1185,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2726",
-        "audit-2727"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1234,7 +1231,7 @@
       "chain_name": "linea",
       "address": "0x2832e19221631e7082926e2bb354497613bf9d6f",
       "name": "Position",
-      "role": "unknown",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1250,16 +1247,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2726"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1283,16 +1278,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2726"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1455,9 +1448,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2724",
-        "audit-2726",
-        "audit-2727"
+        "audit-2724"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1490,8 +1481,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2724",
-        "audit-2726"
+        "audit-2724"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2639,74 +2629,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2726,
-      "audit_key": "audit-2726",
-      "report_name": "diligence.consensys.io/audits/2024/08/ramses-v3",
-      "report_url": "https://diligence.security/audits/2024/08/ramses-v3",
-      "auditor": "Consensys Diligence",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-08",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "IERC20Minimal",
-        "IRamsesV3Factory",
-        "IRamsesV3Pool",
-        "IRamsesV3PoolActions",
-        "IRamsesV3PoolDeployer",
-        "IRamsesV3PoolDerivedState",
-        "IRamsesV3PoolImmutables",
-        "IRamsesV3PoolOwnerActions",
-        "IRamsesV3PoolState",
-        "Oracle",
-        "PoolStorage",
-        "Position",
-        "ProtocolActions",
-        "RamsesV3Factory",
-        "RamsesV3Pool",
-        "RamsesV3PoolDeployer",
-        "Tick",
-        "TickBitmap"
-      ],
-      "matched_contracts": 5,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2727,
-      "audit_key": "audit-2727",
-      "report_name": "Report",
-      "report_url": "https://code4rena.com/reports/2024-10-ramses-exchange",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "aging",
-      "date": "2024-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "FeeCollector",
-        "GaugeV3",
-        "NonfungiblePositionManager",
-        "Oracle",
-        "RamsesV3Factory",
-        "RamsesV3Pool"
-      ],
-      "matched_contracts": 11,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -2716,20 +2638,6 @@
       "contracts_covered": 17,
       "coverage_pct": 36.2,
       "latest_audit": "2025-10"
-    },
-    {
-      "auditor": "Code4rena",
-      "tier": 1,
-      "contracts_covered": 5,
-      "coverage_pct": 10.6,
-      "latest_audit": "2024-10"
-    },
-    {
-      "auditor": "Consensys Diligence",
-      "tier": 1,
-      "contracts_covered": 5,
-      "coverage_pct": 10.6,
-      "latest_audit": "2024-08"
     }
   ],
   "coverage_gaps": [
@@ -2846,9 +2754,39 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
+      "address": "0x389df9430143880ddb13bdd5fd30daf2d57e7d55",
+      "name": "Oracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
       "address": "0xc0b920f6f1d6122b8187c031554dc8194f644592",
       "name": "PairFactory",
       "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x2832e19221631e7082926e2bb354497613bf9d6f",
+      "name": "Position",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x34413f3cddafef7db46f92296a7cea444b3140fd",
+      "name": "ProtocolActions",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2962,10 +2900,9 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 88
+      "extraction_exact": 72
     },
     "extraction_confidence_counts": {
-      "high": 2,
       "medium": 1
     },
     "audits_with_repo_references": [],

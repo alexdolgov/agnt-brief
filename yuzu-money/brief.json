@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "yuzu-money",
-  "generated_at": "2026-05-31T11:42:15.238Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:19.478Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "yuzu-money",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Yuzu Money is a yield-bearing stablecoin protocol on Plasma that issues YuzuUSD, a stablecoin backed by liquidity provider tokens, and offers staking derivatives to earn yield.",
+    "project_purpose": "Yuzu Money is an overcollateralized stablecoin and yield protocol spanning Plasma and Monad, with yzUSD/YuzuUSD and staked syzUSD products plus RWA, fixed-income, and T-Bills-style yield products such as yzPP.",
     "relationship_narrative": "All contracts belong to a single product family deployed by the same deployer. YuzuUSDV2 serves as the base stablecoin, StakedYuzuUSDV2 is its staking derivative, and YuzuILPV2 manages the liquidity pool backing; they share upgradeable proxy infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 8,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

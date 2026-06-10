@@ -7,17 +7,17 @@
 - Project: Gnosis Protocol v1 (`gnosis-protocol-v1`)
 - Website: [https://gnosis.io/](https://gnosis.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T08:12:29.461Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.338Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 112 unique implementations (165 raw deployments)
+- Contract surface: 110 unique implementations (163 raw deployments)
 - DeFi Llama TVL: $2,227,602.00
-- On-chain TVL (included contracts): $95,875,443.05
-- TVL by chain: Ethereum $95,875,443.05
+- On-chain TVL (included contracts): $94,385,998.56
+- TVL by chain: Ethereum $94,385,998.56
 
 ## Project Description
 
-Gnosis Protocol v1 is a decentralized exchange protocol that enables batch auctions for trading tokens, with a focus on prediction market outcomes and conditional tokens. It provides infrastructure for trustless, on-chain order matching and settlement.
+Gnosis Protocol v1 is a legacy decentralized exchange protocol centered on batch auctions for token trading, with on-chain order settlement through its BatchExchange contracts. Conditional Tokens, prediction-market infrastructure, GPv2/CoW Swap, Hashi, and other Gnosis ecosystem products should be treated as separate scopes unless explicitly tied to GPv1 deployments.
 
 ### Architecture
 
@@ -25,35 +25,31 @@ The BatchExchange contract relies on IdToAddressBiMap for efficient address-to-I
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/75 (1.3%)
-- Verified + Unaudited implementations: 74
+- Verified implementations audited: 0/73 (0.0%)
+- Verified + Unaudited implementations: 73
 - Verified by bytecode match: 0
 - Unverified implementations: 37
-- Unique implementations: 112
-- Raw deployments: 165
-- Audits discovered: 7
-- Scoreable audits (matched contracts): 2
+- Unique implementations: 110
+- Raw deployments: 163
+- Audits discovered: 0
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $94,385,998.56
-- Latest audit: 2021-12 (stale)
-- Staleness: 0 fresh, 0 aging, 3 stale, 4 unknown
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $94,385,998.56 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 1.3% | 2021-12 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (1)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ConditionalTokens | token | ethereum | [`0xc59b0e...407e0c`](./contracts/ethereum-1/0xc59b0e4de5f1248c1140964e0ff287b192407e0c/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (74)
+### ⚠️ Verified + Unaudited (73)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -69,7 +65,6 @@ The BatchExchange contract relies on IdToAddressBiMap for efficient address-to-I
 | BoostedSavingsVault | core_logic | ethereum | 10 deployments: ethereum [`0x760ea8...dc0731`](./contracts/ethereum-1/0x760ea8cfdcc4e78d8b9ca3088ecd460246dc0731/); ethereum `0x8dacbe...476958`; ethereum `0x931420...fd7df8`; ethereum `0xa283fc...559d5d`; ethereum `0xadeedd...343c99`; ethereum `0xb1ad72...99851b`; ethereum `0xce1284...d33dc4`; ethereum `0xd124b5...2a6207`; ethereum `0xf5ad2b...352107`; ethereum `0xf65d53...75e35c` | ⚠️ Unaudited |
 | BoostedSavingsVault_imbtc_mainnet_2 | core_logic | ethereum | [`0xf38522...8a3016`](./contracts/ethereum-1/0xf38522f63f40f9dd81abafd2b8efc2ec958a3016/) | ⚠️ Unaudited |
 | Collector | unknown | ethereum | [`0x3f63e5...6c0e43`](./contracts/ethereum-1/0x3f63e5bbb53e46f8b21f67c25bf2dd78bc6c0e43/) | ⚠️ Unaudited |
-| Comp | unknown | ethereum | [`0xc00e94...f26888`](./contracts/ethereum-1/0xc00e94cb662c3520282e6f5717214004a7f26888/) | ⚠️ Unaudited |
 | CompoundIntegration | unknown | ethereum | [`0xd55684...9db735`](./contracts/ethereum-1/0xd55684f4369040c12262949ff78299f2bc9db735/) | ⚠️ Unaudited |
 | DecentralizedAutonomousTrust | unknown | ethereum | 3 deployments: ethereum [`0x2825f4...016cfa`](./contracts/ethereum-1/0x2825f4ddaa5809da1af2a2d240c4ac4733016cfa/); ethereum `0x334cd6...0a7764`; ethereum `0xa1d65e...725521` | ⚠️ Unaudited |
 | DelayedProxyAdmin | governance | ethereum | [`0x5c8eb5...f92386`](./contracts/ethereum-1/0x5c8eb57b44c1c6391fc7a8a0cf44d26896f92386/) | ⚠️ Unaudited |
@@ -92,7 +87,7 @@ The BatchExchange contract relies on IdToAddressBiMap for efficient address-to-I
 | FeederWrapper | unknown | ethereum | [`0xdc6611...9f3a35`](./contracts/ethereum-1/0xdc66115be4eaa30fe8ca3b262bb8e3ff889f3a35/) | ⚠️ Unaudited |
 | Fixed192x64Math | unknown | ethereum | [`0x75a6d6...3805f3`](./contracts/ethereum-1/0x75a6d6251511af081f77f2b531c14808fb3805f3/) | ⚠️ Unaudited |
 | ForgeValidator | unknown | ethereum | 2 deployments: ethereum [`0x4ca912...138ded`](./contracts/ethereum-1/0x4ca9123afc43dc9dde52a57a51afc44324138ded/); ethereum `0xbb90d0...12eaa1` | ⚠️ Unaudited |
-| IdToAddressBiMap | unknown | ethereum | 2 deployments: ethereum [`0x6f4008...aa841f`](./contracts/ethereum-1/0x6f400810b62df8e13fded51be75ff5393eaa841f/); ethereum `0xed4d05...8d1761` | ⚠️ Unaudited |
+| IdToAddressBiMap | core_logic | ethereum | 2 deployments: ethereum [`0x6f4008...aa841f`](./contracts/ethereum-1/0x6f400810b62df8e13fded51be75ff5393eaa841f/); ethereum `0xed4d05...8d1761` | ⚠️ Unaudited |
 | IncentivisedVotingLockup | unknown | ethereum | [`0xae8bc9...a0e1bf`](./contracts/ethereum-1/0xae8bc96da4f9a9613c323478be181fdb2aa0e1bf/) | ⚠️ Unaudited |
 | InterestValidator | unknown | ethereum | 2 deployments: ethereum [`0x98c54f...f7ba0e`](./contracts/ethereum-1/0x98c54fd8c98eaf0938c4a00e7935a66341f7ba0e/); ethereum `0xf1049a...ff3262` | ⚠️ Unaudited |
 | InvariantValidator | unknown | ethereum | 2 deployments: ethereum [`0xca480d...e7d705`](./contracts/ethereum-1/0xca480d596e6717c95a62a4dc1bd4fbd7b7e7d705/); ethereum `0xd36050...0f2f3f` | ⚠️ Unaudited |
@@ -192,13 +187,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [2020-01-20_accumulator_audit.pdf](https://github.com/gnosis/conditional-tokens-contracts/blob/master/docs/audit/2020-01-20_accumulator_audit.pdf) | unknown | Audit | 2020-01 | stale | Direct | contract_name | 1 | high |
-| [AuditReport-ConditionalTokens.md](https://github.com/gnosis/conditional-tokens-contracts/blob/master/docs/audit/AuditReport-ConditionalTokens.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | high |
-| [Gnosis_Audit_Report.pdf](https://github.com/gnosis/pm-contracts/blob/master/docs/audit/Gnosis_Audit_Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [GnosisProtocolV2May2021.pdf](https://github.com/gnosis/gp-v2-contracts/blob/main/audits/GnosisProtocolV2May2021.pdf) | unknown | Audit | 2021-05 | stale | Direct | n/a | 0 | n/a |
-| [[Cowswap_10122021]SCAudit_Report_2.pdf](https://github.com/gnosis/gp-v2-contracts/blob/main/audits/%5BCowswap_10122021%5DSCAudit_Report_2.pdf) | unknown | Audit | 2021-12 | stale | Direct | n/a | 0 | n/a |
-| [HashiMay2023.pdf](https://github.com/gnosis/hashi/blob/main/audits/HashiMay2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [g0-HashiMar2024.pdf](https://github.com/gnosis/hashi/blob/main/audits/g0-HashiMar2024.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -228,7 +216,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x4fb30c...90752d`](./contracts/ethereum-1/0x4fb30c5a3ac8e85bc32785518633303c4590752d/) | FeederPoolV2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdc6611...9f3a35`](./contracts/ethereum-1/0xdc66115be4eaa30fe8ca3b262bb8e3ff889f3a35/) | FeederWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4ca912...138ded`](./contracts/ethereum-1/0x4ca9123afc43dc9dde52a57a51afc44324138ded/) | ForgeValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6f4008...aa841f`](./contracts/ethereum-1/0x6f400810b62df8e13fded51be75ff5393eaa841f/) | IdToAddressBiMap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6f4008...aa841f`](./contracts/ethereum-1/0x6f400810b62df8e13fded51be75ff5393eaa841f/) | IdToAddressBiMap | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xae8bc9...a0e1bf`](./contracts/ethereum-1/0xae8bc96da4f9a9613c323478be181fdb2aa0e1bf/) | IncentivisedVotingLockup | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x98c54f...f7ba0e`](./contracts/ethereum-1/0x98c54fd8c98eaf0938c4a00e7935a66341f7ba0e/) | InterestValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x37186b...256c4b`](./contracts/ethereum-1/0x37186b5d78ebb1f37bc56e5dca7f18ab98256c4b/) | LMSRMarketMakerFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -256,8 +244,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 57 |
-| upstream | 7 |
+| native | 56 |
+| upstream | 6 |
 | standard_library | 5 |
 | needs_review | 43 |
 
@@ -265,17 +253,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=2
-
-Zero-match audit list:
-
-- [9144] Gnosis_Audit_Report.pdf
-- [9145] GnosisProtocolV2May2021.pdf
-- [9146] [Cowswap_10122021]SCAudit_Report_2.pdf
-- [9149] HashiMay2023.pdf
-- [9150] g0-HashiMar2024.pdf
+- Extraction confidence breakdown: n/a
+- Match method counts: n/a
 
 Fork inheritance lineage and inherited audits are included when available.

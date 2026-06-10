@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bracket-protocol",
-  "generated_at": "2026-05-25T15:06:59.119Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:01.113Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bracket-protocol",
@@ -22,27 +22,27 @@
     "drop_from_peak_pct": 83.10736018316362
   },
   "summary": {
-    "total_contracts": 60,
-    "total_addresses": 150,
-    "unique_implementations": 60,
-    "total_deployments": 150,
+    "total_contracts": 58,
+    "total_addresses": 146,
+    "unique_implementations": 58,
+    "total_deployments": 146,
     "audited_contracts": 8,
-    "unaudited_contracts": 40,
+    "unaudited_contracts": 38,
     "contracts_verified_audited": 8,
-    "contracts_verified_unaudited": 40,
+    "contracts_verified_unaudited": 38,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 12,
-    "coverage_pct": 16.7,
+    "coverage_pct": 17.4,
     "total_audits": 5,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 3088501,
-    "tvl_usd": 923663481.4634147,
+    "dl_tvl_usd": 3082190,
+    "tvl_usd": 622427001.8747637,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "arbitrum": 11649783.94,
-      "ethereum": 912013697.52
+      "ethereum": 610777217.93
     },
-    "asd_usd": 920582399.5864676,
+    "asd_usd": 619345919.9978167,
     "website_url": "https://www.bracket.fi/",
     "chains": [
       "arbitrum",
@@ -60,9 +60,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Bracket Protocol is a multi-chain DeFi platform offering liquid staking, structured vaults, and escrow staking. It enables users to earn yield through automated strategies, stake assets for derivative tokens, and participate in governance-driven capital allocation.",
+    "project_purpose": "Bracket Protocol is an institutional digital asset vault infrastructure and managed DeFi strategy platform for allocators, issuers, and asset managers. Current product context should be aligned with DefiLlama child protocols including Bracket Vaults and Bracket LST, while legacy or zero-TVL products such as Bracket Escrow Staking and BracketX should be described only with their current status and TVL context. Unsupported claims about escrow derivative tokens flowing into Bracket Vaults or BrktETH serving as a vault deposit asset should be omitted unless directly evidenced.",
     "relationship_narrative": "Bracket Escrow Staking mints derivative tokens that can be used within Bracket Vaults for additional yield strategies. The BrktETH liquid staking token may serve as a deposit asset in vaults, creating a unified ecosystem where staked assets flow between escrow, LST, and vault products.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 58,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -99,46 +104,6 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x475e7d2bd7428deb68deaa933dbf0d5850b96702",
-      "name": "OsToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 301236479.5886508,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "OsToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x475e7d2bd7428deb68deaa933dbf0d5850b96702",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf1c9acdc66974dfb6decb12aa385b9cd01190e38",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 301236479.5886508,
           "is_audited": false
         }
       ],
@@ -2007,46 +1972,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x8023518b2192fb5384dadc596765b3dd1cdfe471",
-      "name": "PriceFeed",
-      "role": "operational_periphery",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PriceFeed",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8023518b2192fb5384dadc596765b3dd1cdfe471",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xb31f53e30b9a033661e33b87c101c58ccf11d702",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x01d34aee72325f1d4a748f13c2169404523ecee0",
       "name": "RewardEthToken",
       "role": "token",
@@ -2898,7 +2823,7 @@
       "auditor": "Guardian",
       "tier": 2,
       "contracts_covered": 8,
-      "coverage_pct": 16.7,
+      "coverage_pct": 17.4,
       "latest_audit": "2025-09"
     }
   ],
@@ -2912,16 +2837,6 @@
       "origin_kind": "native",
       "tvl_usd": 308378070.07465655,
       "risk_note": "Verified native implementation with $308,378,070.07 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x475e7d2bd7428deb68deaa933dbf0d5850b96702",
-      "name": "OsToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 301236479.5886508,
-      "risk_note": "Verified native implementation with $301,236,479.59 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -3245,10 +3160,10 @@
     }
   ],
   "origin_summary": {
-    "native": 43,
+    "native": 42,
     "upstream": 0,
     "standard_library": 7,
-    "needs_review": 10
+    "needs_review": 9
   },
   "scope_matching_notes": {
     "match_method_counts": {

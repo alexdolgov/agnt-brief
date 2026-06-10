@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sphere",
-  "generated_at": "2026-05-31T10:39:42.284Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.389Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "sphere",
@@ -65,9 +65,14 @@
     }
   },
   "topography": {
-    "project_purpose": "SPHERE is a multi-product DeFi protocol offering yield-optimizing vaults (Dyson), a collateralized debt position (CDP) stablecoin system (Preon Finance), and a governance token (Sphere Finance). It operates across multiple chains, integrating with various DEXs and lending protocols to manage liquidity and generate yield.",
+    "project_purpose": "SPHERE is a DeFi ecosystem exposure and revenue-stream project centered on the SPHERE token. Its historical and related contract surface includes attributed sub-surfaces such as Dyson, Preon, and Penrose, but those should be treated as related, legacy, or separately verified components unless current SPHERE ownership and operation are independently supported. Third-party protocol infrastructure and token contracts should not be counted as SPHERE-owned assets or defended TVL.",
     "relationship_narrative": "Dyson vaults and Preon Finance strategies share infrastructure such as oracles (e.g., ChainlinkManager, DysonLpOracle) and proxy patterns. The Sphere token likely serves as a governance and incentive layer across both families, though direct on-chain links are not explicit in the contract surface.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 217,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

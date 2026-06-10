@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kava-liquid",
-  "generated_at": "2026-05-31T05:42:31.020Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-6a3e7e-9cd8",
+  "generated_at": "2026-06-10T20:59:06.469Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "kava-liquid",
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Kava Liquid is a liquid staking protocol on the Kava chain that allows users to stake their assets and receive a liquid derivative token in return, enabling them to earn staking rewards while maintaining liquidity.",
-    "relationship_narrative": "The protocol consists of a single liquid staking contract that handles both staking and token issuance, with no additional infrastructure contracts identified.",
+    "project_purpose": "Kava Liquid is a KAVA liquid staking product on the Kava chain for bKAVA. Available evidence does not confirm that the single listed contract handles staking, liquid staking token issuance, or represents the complete live contract surface.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

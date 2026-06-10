@@ -7,17 +7,17 @@
 - Project: Zenlink (`zenlink`)
 - Website: [https://zenlink.pro](https://zenlink.pro)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T15:30:38.709Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:19.495Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: moonbeam, moonriver
 - Contract surface: 226 unique implementations (249 raw deployments)
-- DeFi Llama TVL: $5,523,913.00
+- DeFi Llama TVL: $5,337,021.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Zenlink is a decentralized exchange (DEX) protocol operating on Moonbeam and Moonriver, providing automated market maker (AMM) functionality including stable swaps and standard token swaps. It enables users to trade tokens, provide liquidity, and earn fees through its liquidity pools.
+Zenlink is a Polkadot-ecosystem cross-chain decentralized exchange (DEX) and AMM protocol, with deployments and liquidity across chains including Bifrost, Astar, Moonbeam, and Moonriver. It supports token swaps, liquidity provision, and fee earning through liquidity pools, including standard AMM and stable-swap functionality. The currently listed contract surface covers only Moonbeam and Moonriver and should not be treated as representative of Zenlink's full current cross-chain footprint or total protocol TVL without adding the missing Bifrost and Astar contracts.
 
 ### Architecture
 

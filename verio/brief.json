@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "verio",
-  "generated_at": "2026-05-23T08:45:45.893Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:18.566Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 11,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 7490623.85876,
-    "tvl_usd": 7490623.85876,
+    "dl_tvl_usd": 7190809.61766,
+    "tvl_usd": 7190809.61766,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Verio is a liquid staking protocol that allows users to stake assets and receive liquid derivative tokens representing their staked position, enabling continued participation in DeFi while earning staking rewards.",
-    "relationship_narrative": "No product families or contracts are defined in the provided inventory, so no structural relationships can be described.",
+    "project_purpose": "Verio is a Story-focused liquid staking and IP asset staking/restaking platform that supports IP validation and participation in the Story ecosystem.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

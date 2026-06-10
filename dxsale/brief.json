@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "dxsale",
-  "generated_at": "2026-05-31T07:53:59.783Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:02.046Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "dxsale",
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 75.9832717798295
   },
   "summary": {
-    "total_contracts": 353,
-    "total_addresses": 389,
-    "unique_implementations": 353,
-    "total_deployments": 389,
+    "total_contracts": 352,
+    "total_addresses": 388,
+    "unique_implementations": 352,
+    "total_deployments": 388,
     "audited_contracts": 0,
-    "unaudited_contracts": 16,
+    "unaudited_contracts": 15,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 10,
+    "contracts_verified_unaudited": 9,
     "contracts_verified_by_bytecode": 6,
     "contracts_unverified": 337,
     "coverage_pct": 0,
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "DxSale is a decentralized launchpad that enables projects to create and manage token presales, liquidity locks, and token generation events across multiple blockchains. It provides tools for fundraising, token distribution, and liquidity management without requiring coding skills.",
+    "project_purpose": "DX App, formerly DxSale, is a decentralized launchpad and token tooling platform that enables projects to create and manage token presales/IDOs, token minting, airdrops, liquidity locks, token distribution, and liquidity management across multiple blockchains without requiring coding skills.",
     "relationship_narrative": "The DxSale family includes token factories (DxStandardToken), presale management (PresaleOwnerFinalize), and liquidity lockers (DxLockLPDep) that work together to support the full lifecycle of a token launch. Supporting tokens like GGGTOKEN may serve as utility or fee tokens within the ecosystem.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 352,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -351,37 +356,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x1d37fb68b2679200844b57b2cf7a17260271589e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x25900017b3e7b6190f76451f5c89d01553206e77",
-      "name": "GGGTOKEN",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "DxSale",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "GGGTOKEN",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x25900017b3e7b6190f76451f5c89d01553206e77",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -11397,16 +11371,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x25900017b3e7b6190f76451f5c89d01553206e77",
-      "name": "GGGTOKEN",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x2ff131d69698e56f073ec60ef00274ebe216d20c",
@@ -11468,7 +11432,7 @@
     }
   ],
   "origin_summary": {
-    "native": 154,
+    "native": 153,
     "upstream": 0,
     "standard_library": 1,
     "needs_review": 198

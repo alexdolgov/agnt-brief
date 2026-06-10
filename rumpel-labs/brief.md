@@ -7,17 +7,17 @@
 - Project: Rumpel Labs (`rumpel-labs`)
 - Website: [https://www.rumpel.xyz](https://www.rumpel.xyz)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-25T16:43:04.436Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:12.153Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 115 unique implementations (316 raw deployments)
-- DeFi Llama TVL: $1,924,033.75
+- DeFi Llama TVL: $1,892,481.62
 - On-chain TVL (included contracts): $1,039,269,130.27
 - TVL by chain: Ethereum $1,039,269,130.27
 
 ## Project Description
 
-Rumpel Labs is a DeFi protocol that provides structured yield and synthetic asset exposure through a modular system of vaults, tokens, and oracles. It aggregates multiple strategies—including lending, staking, and liquidity provision—into composable products for users.
+Rumpel Labs is a point-tokenization protocol that enables users to tokenize, mint, and trade exposure to offchain loyalty or reward points earned through supported integrations. Its products are focused on representing points and potential future rewards onchain, including possible redemption or settlement mechanics, rather than operating as a broad structured-yield or synthetic-asset exposure aggregator.
 
 ### Architecture
 

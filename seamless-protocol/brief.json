@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "seamless-protocol",
-  "generated_at": "2026-05-31T10:32:33.857Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:59:14.863Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "seamless-protocol",
     "tier": 1,
@@ -72,9 +72,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Seamless Protocol is a decentralized lending and leverage platform operating on Ethereum and Base. It enables users to supply assets into lending pools, borrow against them, and access leveraged positions through specialized tokenized products. The protocol integrates with Morpho for lending markets and offers governance-controlled emission and reward mechanisms.",
+    "project_purpose": "Seamless Protocol historically provided non-custodial lending and borrowing markets and tokenized leveraged or complex DeFi strategies on Base and Ethereum, including integrations with Morpho and governance-controlled emissions and rewards. The project is currently winding down, as announced on its homepage.",
     "relationship_narrative": "The Governance family controls protocol parameters and emissions that affect all other families. Leverage Tokens and the weETH/WETH product both rely on Morpho lending adapters and rebalancing infrastructure, while Seamless Vaults on Morpho share the same underlying lending market integration.",
     "product_family_count": 7
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 99,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

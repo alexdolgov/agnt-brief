@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Infrared Finance
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 56.2% over 90 days
-
 ## Project Overview
 
 - Project: Infrared Finance (`infrared-finance`)
 - Website: [https://infrared.finance](https://infrared.finance)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T08:29:18.245Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:06.221Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: berachain, bsc
 - Contract surface: 27 unique implementations (121 raw deployments)
 - DeFi Llama TVL: $50,681,737.58
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Infrared Finance is a liquid staking protocol on Berachain and BSC that allows users to stake BERA tokens and receive a liquid staking derivative (iROFT) while earning staking rewards. It also manages fee distribution and bribe collection to optimize yield for stakers.
+Infrared Finance is a Berachain Proof-of-Liquidity and liquid-products protocol. Its product suite includes PoL vaults, iBGT, iBERA as the BERA liquid staking receipt token, sIR, and IR Swap. BSC IROFT/OFT deployments should be described separately as token/OFT infrastructure rather than as the main BERA staking derivative or a TVL-bearing protocol chain.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The core staking contracts (InfraredBERAV2_1 and InfraredV1_10) interact with su
 - Latest audit: 2026-04 (fresh)
 - Staleness: 15 fresh, 11 aging, 1 stale, 0 unknown
 - Tier 1 coverage: 66.7% (Spearbit)
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

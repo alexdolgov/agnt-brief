@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "landx-finance",
-  "generated_at": "2026-05-24T17:27:36.025Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:06.847Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "landx-finance",
@@ -35,8 +35,8 @@
     "coverage_pct": 100,
     "total_audits": 1,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 1770562.70196,
-    "tvl_usd": 1770562.70196,
+    "dl_tvl_usd": 1771095.82878,
+    "tvl_usd": 1771095.82878,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "LandX Finance tokenizes real-world agricultural assets, allowing users to invest in farmland and earn yield from crop rents. It provides on-chain exposure to physical farmland through its CToken and supporting infrastructure.",
+    "project_purpose": "LandX Finance is an agriculture/RWA financing protocol that provides on-chain exposure to yield from future harvests backed or secured by farmland. Its CToken and supporting infrastructure are part of a system for accessing agricultural yield opportunities, without implying direct farmland ownership, farmland shares, or crop rent distributions.",
     "relationship_narrative": "CToken represents tokenized farmland shares, OraclePrices provides price feeds for asset valuation, and RentFoundation likely manages rental income distribution, all deployed together as a cohesive unit.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 3,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

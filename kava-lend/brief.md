@@ -5,21 +5,22 @@
 - Project: Kava Lend (`kava-lend`)
 - Website: [https://app.kava.io/lend](https://app.kava.io/lend)
 - Lifecycle: active (Tier 0, 94.7% below peak)
-- Generated: 2026-05-30T19:22:45.417Z
-- Pipeline run: v2-pipeline-2026-05-30-c7d699-40af
+- Generated: 2026-06-10T20:59:06.466Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $7,791,610.97
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Kava Lend is a lending protocol on the Kava chain that allows users to supply and borrow assets through a single core contract.
-
-### Architecture
-
-The protocol consists of a single lending contract with no additional infrastructure or shared components.
+Kava Lend is a Kava-based cross-chain money market that allows users to supply and borrow assets. The listed address 0xa8e48fa04881dfacfc8d0ab84bc9ba57a449fc1f on chain 2222 should be treated as an unverified/unconfirmed contract until its liveness, proxy status, and audit scope coverage are independently verified.
 
 ## Audit Coverage Summary
 

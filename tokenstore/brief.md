@@ -4,8 +4,8 @@
 
 - Project: TokenStore (`tokenstore`)
 - Lifecycle: active (Tier 0, 87.9% below peak)
-- Generated: 2026-05-31T11:08:49.607Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:17.517Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 44 unique implementations (44 raw deployments)
 - DeFi Llama TVL: $1,327,120.84
@@ -14,7 +14,7 @@
 
 ## Project Description
 
-TokenStore is a decentralized exchange protocol on Ethereum that facilitates token swaps and liquidity provision through its native tokens.
+TokenStore is a trustless decentralized exchange on Ethereum where funds are held in open smart contracts.
 
 ### Architecture
 

@@ -5,8 +5,8 @@
 - Project: SuperEarn (`superearn`)
 - Website: [https://superearn.io/](https://superearn.io/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-26T14:48:16.628Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:16.805Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, klaytn
 - Contract surface: 94 unique implementations (190 raw deployments)
 - DeFi Llama TVL: $40,335,552.22
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-SuperEarn is a cross-chain yield aggregation protocol that deploys user deposits into curated DeFi strategies (e.g., Morpho, Pendle) across Ethereum and Klaytn. It uses vaults, routers, and cross-chain messaging to optimize and automate yield generation.
+SuperEarn is a Kaia/Klaytn DeFi yield optimization and yield-earning protocol. Public TVL/product scope should be treated as Kaia/Klaytn-focused; Ethereum and cross-chain contracts, if included, should be described as observed contract-surface evidence rather than confirmed current public TVL/product scope.
 
 ### Architecture
 

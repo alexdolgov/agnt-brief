@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bima-cdp",
-  "generated_at": "2026-05-23T16:31:39.611Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:58:59.196Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bima-cdp",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 72.18360656574377
   },
   "summary": {
-    "total_contracts": 38,
-    "total_addresses": 112,
-    "unique_implementations": 38,
-    "total_deployments": 112,
+    "total_contracts": 37,
+    "total_addresses": 109,
+    "unique_implementations": 37,
+    "total_deployments": 109,
     "audited_contracts": 16,
-    "unaudited_contracts": 16,
+    "unaudited_contracts": 15,
     "contracts_verified_audited": 14,
-    "contracts_verified_unaudited": 16,
+    "contracts_verified_unaudited": 15,
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 6,
-    "coverage_pct": 50,
+    "coverage_pct": 51.6,
     "total_audits": 3,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 5357645.39381,
-    "tvl_usd": 5357645.39381,
+    "dl_tvl_usd": 5315000.87418,
+    "tvl_usd": 5315000.87418,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -46,24 +46,29 @@
       "ethereum",
       "sonic"
     ],
-    "tier1_coverage_pct": 50,
+    "tier1_coverage_pct": 51.6,
     "tier1_auditors": [
       "Cyfrin",
       "Spearbit"
     ],
     "latest_audit_date": "2025-06",
-    "audit_freshness": "fresh",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
-      "fresh": 1,
-      "aging": 2,
+      "fresh": 0,
+      "aging": 3,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "BIMA CDP is a decentralized borrowing protocol that allows users to deposit collateral and mint a stablecoin (DebtToken) across multiple chains. It includes liquidation mechanisms, stability pools, and governance features to maintain the peg and manage risk.",
+    "project_purpose": "BIMA CDP is a decentralized Bitcoin-backed stablecoin and borrowing protocol positioned for universal yield. Users deposit collateral to mint the protocol stablecoin/debt token, with liquidation mechanisms, stability pools, and governance features used to maintain peg stability and manage risk across supported deployments and accounting chains.",
     "relationship_narrative": "The CDP family relies on Price Oracles for collateral valuation and Cross-Chain Assets as collateral types. BIMA Token & Governance controls protocol parameters and incentives, while Stability Mechanisms and Yield & Strategies support peg stability and capital efficiency.",
     "product_family_count": 8
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 37,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -639,55 +644,6 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x264990fbd0a4796a3e3d8e37c4d5f87a3aca5ebf",
-      "name": "EACAggregatorProxy",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Chainlink",
-      "product_line": "BSC Mainnet",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "EACAggregatorProxy",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf4030086522a5beea4988f8ca5b36dbc97bee88c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x264990fbd0a4796a3e3d8e37c4d5f87a3aca5ebf",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x8bcd59cb7eeeea8e2da3080c891609483dae53ef",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -2074,7 +2030,7 @@
       "report_url": "https://github.com/Bima-Labs/bima-core-audits/blob/main/aduits/cantina_competition_bima_december2024.pdf",
       "auditor": "Spearbit",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -2115,21 +2071,21 @@
       "auditor": "Cyfrin",
       "tier": 1,
       "contracts_covered": 14,
-      "coverage_pct": 43.8,
+      "coverage_pct": 45.2,
       "latest_audit": "2024-09"
     },
     {
       "auditor": "Unknown",
       "tier": 2,
       "contracts_covered": 11,
-      "coverage_pct": 34.4,
+      "coverage_pct": 35.5,
       "latest_audit": "2024-09"
     },
     {
       "auditor": "Spearbit",
       "tier": 1,
       "contracts_covered": 9,
-      "coverage_pct": 28.1,
+      "coverage_pct": 29,
       "latest_audit": "2025-06"
     }
   ],
@@ -2247,7 +2203,7 @@
   ],
   "origin_summary": {
     "native": 29,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 0,
     "needs_review": 8
   },

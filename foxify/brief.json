@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "foxify",
-  "generated_at": "2026-05-31T08:04:36.429Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:04.058Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "foxify",
     "tier": 0,
@@ -59,9 +59,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Foxify is a decentralized derivatives protocol enabling users to trade options and perpetuals with leverage. It uses vaults for liquidity and risk management, and controllers to manage trading parameters.",
+    "project_purpose": "Foxify is a funded-account/proprietary trading platform for leveraged perpetual trading. Its public product focuses on on-chain and partner-venue perpetual trading, funded trading accounts, and related FOX and ebFOX staking, membership, and rewards features. Current public sources do not evidence an options-trading product, so options should not be described as part of the protocol unless separately verified.",
     "relationship_narrative": "Vaults hold user funds and are managed by Controllers, which set trading rules. Foxify, FoxifyMaxi, and EBFOX tokens likely represent positions or governance within the ecosystem.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 5,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

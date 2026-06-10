@@ -1,14 +1,14 @@
 # Agentic Audit Brief: KyberSwap
 
-⚠️ Lifecycle status: DEAD - TVL dropped 0.7% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 0.7% over 90 days
 
 ## Project Overview
 
 - Project: KyberSwap (`kyberswap`)
 - Website: [https://kyberswap.com](https://kyberswap.com)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-31T08:38:03.785Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:06.807Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, aurora, avalanche, base, bsc, cronos, ethereum, fantom, linea, optimism, polygon, polygon-zkevm, scroll, unichain, zksync-era
 - Contract surface: 445 unique implementations (642 raw deployments)
 - DeFi Llama TVL: $10,470,441.00
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-KyberSwap is a multi-chain decentralized exchange (DEX) aggregator and liquidity protocol that enables users to trade tokens at optimal rates by routing swaps across various liquidity sources. It also provides yield aggregation and liquidity provision features through its Classic and Elastic automated market maker (AMM) products.
+KyberSwap is a non-custodial multichain decentralized exchange aggregator and liquidity protocol that enables token swaps by routing across multiple external and Kyber liquidity sources. It also provides liquidity through KyberSwap AMM products, including capital-efficient pools.
 
 ### Architecture
 
@@ -25,31 +25,31 @@ The KyberSwap Aggregator routes trades through Classic and Elastic pools, while 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 13/136 (9.6%)
-- Verified + Unaudited implementations: 117
+- Verified implementations audited: 12/136 (8.8%)
+- Verified + Unaudited implementations: 118
 - Verified by bytecode match: 6
 - Unverified implementations: 309
 - Unique implementations: 445
 - Raw deployments: 642
-- Audits discovered: 11
-- Scoreable audits (matched contracts): 10
+- Audits discovered: 6
+- Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): $58,323,780.48
 - Latest audit: 2026-01 (fresh)
-- Staleness: 2 fresh, 0 aging, 3 stale, 6 unknown
+- Staleness: 2 fresh, 0 aging, 3 stale, 1 unknown
 - Tier 1 coverage: 7.4% (ChainSecurity, Spearbit)
-- Note: This protocol is classified as [dead]. ASD of $58,323,780.48 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $58,323,780.48 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 10 | 7.4% | 2026-01 |
 | ChainSecurity | Tier 1 | 8 | 5.9% | 2019-01 |
+| unknown | Tier 2 | 8 | 5.9% | 2026-01 |
 | Spearbit | Tier 1 | 2 | 1.5% | 2025-10 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (13)
+### ✅ Verified + Audited (12)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -65,9 +65,8 @@ The KyberSwap Aggregator routes trades through Classic and Elastic pools, while 
 | UniswapV4KEMHook | unknown | ethereum | 2 deployments: ethereum [`0x444085...75c0c4`](./contracts/ethereum-1/0x4440854b2d02c57a0dc5c58b7a884562d875c0c4/); unichain `0x444139...f880c4` | ✅ Audited |
 | Utils | unknown | ethereum | 2 deployments: ethereum [`0x6fc613...20ee02`](./contracts/ethereum-1/0x6fc61357f00b7735e5a75156522def9cfb20ee02/); ethereum `0xaec7fa...018dcc` | ✅ Audited |
 | WhiteList | unknown | ethereum | [`0x6e106a...a669a3`](./contracts/ethereum-1/0x6e106a75d369d09a9ea1dcc16da844792aa669a3/) | ✅ Audited |
-| Wrapper | unknown | ethereum | 2 deployments: ethereum [`0x8f1a36...fcb608`](./contracts/ethereum-1/0x8f1a369ee7916491e43e412b0dcc7717e2fcb608/); ethereum `0xb6a1c0...e382b2` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (117)
+### ⚠️ Verified + Unaudited (118)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -187,6 +186,7 @@ The KyberSwap Aggregator routes trades through Classic and Elastic pools, while 
 | WhitelistedCollector | unknown | ethereum | [`0x9ed9af...00f6b9`](./contracts/ethereum-1/0x9ed9afb6b4cafbdfb2d833b0e70845997300f6b9/) | ⚠️ Unaudited |
 | WMATIC | unknown | polygon | [`0x0d500b...df1270`](./contracts/polygon-137/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270/) | ⚠️ Unaudited |
 | WrapConversionRate | unknown | ethereum | [`0xeb6857...e9aed1`](./contracts/ethereum-1/0xeb6857da49a5544a37c5c350a40c3c9cc8e9aed1/) | ⚠️ Unaudited |
+| Wrapper | unknown | ethereum | 2 deployments: ethereum [`0x8f1a36...fcb608`](./contracts/ethereum-1/0x8f1a369ee7916491e43e412b0dcc7717e2fcb608/); ethereum `0xb6a1c0...e382b2` | ⚠️ Unaudited |
 | ZapIn | adapter | ethereum | 3 deployments: ethereum [`0x61a6cb...ba4870`](./contracts/ethereum-1/0x61a6cb01c70db83b74db3c02bbfda9f025ba4870/); polygon `0xf79b1e...526975`; avalanche [`0x61a6cb...ba4870`](./contracts/avalanche-43114/0x61a6cb01c70db83b74db3c02bbfda9f025ba4870/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -529,14 +529,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [SmartDecAudit.pdf](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/APRAudit/SmartDecAudit.pdf) | unknown | Audit | 2019-12 | stale | Direct | contract_name | 3 | high |
-| [BlockchainLabs_Kyber_AuditReport.MD](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV1Audit2/BlockchainLabs_Kyber_AuditReport.MD) | unknown | Audit | n/a | unknown | Direct | contract_name | 13 | high |
-| [Kovan_tests.MD](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV1Audit2/Kovan_tests.MD) | unknown | Audit | n/a | unknown | Direct | contract_name | 13 | low |
 | [KyberNetwork BlockchainLabs Audit Report.pdf](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV1Audit2/KyberNetwork%20BlockchainLabs%20Audit%20Report.pdf) | unknown | Audit | n/a | unknown | Direct | contract_name | 13 | high |
-| [test-coverage.MD](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV1Audit2/test-coverage.MD) | unknown | Audit | n/a | unknown | Direct | contract_name | 15 | high |
-| [work-paper.MD](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV1Audit2/work-paper.MD) | unknown | Audit | n/a | unknown | Direct | contract_name | 15 | high |
 | [ChainSecurity_KyberNetwork_Public.pdf](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV2Audit/ChainSecurity_KyberNetwork_Public.pdf) | ChainSecurity | Audit | 2018-06 | stale | Direct | contract_name | 18 | high |
 | [ChainSecurity_Kyberv3.pdf](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV3Audit/ChainSecurity_Kyberv3.pdf) | ChainSecurity | Audit | 2019-01 | stale | Direct | contract_name | 16 | high |
-| [audits.md](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/security/audits.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Kyber-Hook-Uniswap-Foundation-Spearbit-Security-Review-October-2025.pdf](https://github.com/spearbit/portfolio/blob/master/pdfs/Kyber-Hook-Uniswap-Foundation-Spearbit-Security-Review-October-2025.pdf) | Spearbit | Audit | 2025-10 | fresh | Direct | contract_name | 3 | high |
 | [kyberswap-dec-25(Final).pdf](https://github.com/Hexens/Smart-Contract-Review-Public-Reports/blob/main/kyberswap-dec-25(Final).pdf) | unknown | Audit | 2026-01 | fresh | Direct | contract_name | 1 | high |
 
@@ -623,6 +618,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x27a15e...318a8d`](./contracts/ethereum-1/0x27a15e7a67fb812a8bd3b4969397fb2de7318a8d/) | WethUnwrapper | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9ed9af...00f6b9`](./contracts/ethereum-1/0x9ed9afb6b4cafbdfb2d833b0e70845997300f6b9/) | WhitelistedCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xeb6857...e9aed1`](./contracts/ethereum-1/0xeb6857da49a5544a37c5c350a40c3c9cc8e9aed1/) | WrapConversionRate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8f1a36...fcb608`](./contracts/ethereum-1/0x8f1a369ee7916491e43e412b0dcc7717e2fcb608/) | Wrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x61a6cb...ba4870`](./contracts/ethereum-1/0x61a6cb01c70db83b74db3c02bbfda9f025ba4870/) | ZapIn | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
@@ -638,13 +634,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=9, low=1
-- Match method counts: extraction_exact=110
-
-Zero-match audit list:
-
-- [10247] audits.md
+- Extraction confidence breakdown: high=6
+- Match method counts: extraction_exact=54
 
 Fork inheritance lineage and inherited audits are included when available.

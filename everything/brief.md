@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Everything
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Everything (`everything`)
 - Website: [https://everything.inc/](https://everything.inc/)
-- Lifecycle: unknown (Tier 0, 22.8% below peak)
-- Generated: 2026-05-31T07:58:22.774Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, 22.8% below peak)
+- Generated: 2026-06-10T20:59:03.902Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum
 - Contract surface: 10 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $945,261.28
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Everything is a lending protocol on Arbitrum One that enables cross-chain asset transfers and management via Wormhole integration, with upgradeable proxy-based contracts for core logic and transceiver operations.
+Everything is an Arbitrum-based unified-liquidity AMM and oracle-less lending, borrowing, and leverage protocol for swaps, earning, borrowing, and leveraged positions. Wormhole/NTT-related contracts should be treated only as supporting cross-chain infrastructure where independently verified, not as the protocol's primary identity.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The EV contract serves as the core lending logic, while WormholeTransceiver and 
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

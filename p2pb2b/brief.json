@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "p2pb2b",
-  "generated_at": "2026-05-23T19:25:54.246Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:09.165Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -17,10 +17,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4887807.27319,
-    "tvl_usd": 4887807.27319,
+    "dl_tvl_usd": 4842591.7557500005,
+    "tvl_usd": 4842591.7557500005,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -34,42 +34,25 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "P2PB2B is a centralized cryptocurrency exchange (CEX) that facilitates trading of digital assets. It provides a platform for users to buy, sell, and manage cryptocurrencies with various trading pairs and order types.",
-    "relationship_narrative": "No on-chain product families or contracts are present, as this is a centralized exchange with no smart contract infrastructure.",
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [],
-  "audits": [
-    {
-      "audit_id": 2546,
-      "audit_key": "audit-2546",
-      "report_name": "DL audit link",
-      "report_url": "https://cer.live/exchange/p2pb2b",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
@@ -83,12 +66,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 2546,
-        "report_name": "DL audit link"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

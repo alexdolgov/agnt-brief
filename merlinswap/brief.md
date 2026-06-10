@@ -1,27 +1,28 @@
 # Agentic Audit Brief: MerlinSwap
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 42.8% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 42.8% over 90 days
 
 ## Project Overview
 
 - Project: MerlinSwap (`merlinswap`)
 - Website: [https://merlinswap.org](https://merlinswap.org)
-- Lifecycle: unknown (Tier 0, 94.8% below peak)
-- Generated: 2026-05-31T09:56:01.458Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 94.8% below peak)
+- Generated: 2026-06-10T20:59:07.468Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: merlin
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $8,429,329.40
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-MerlinSwap is a decentralized exchange (DEX) protocol on the Merlin chain, enabling users to swap tokens and provide liquidity through automated market-making pools.
-
-### Architecture
-
-The two contracts likely represent the core AMM pool and a factory or router, sharing infrastructure for liquidity management and trade execution.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 
@@ -37,7 +38,7 @@ The two contracts likely represent the core AMM pool and a factory or router, sh
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

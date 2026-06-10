@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "set-protocol",
-  "generated_at": "2026-05-31T10:33:49.605Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:14.912Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "set-protocol",
@@ -22,113 +22,56 @@
     "drop_from_peak_pct": 98.15241103383043
   },
   "summary": {
-    "total_contracts": 111,
-    "total_addresses": 121,
-    "unique_implementations": 111,
-    "total_deployments": 121,
+    "total_contracts": 109,
+    "total_addresses": 119,
+    "unique_implementations": 109,
+    "total_deployments": 119,
     "audited_contracts": 0,
-    "unaudited_contracts": 15,
+    "unaudited_contracts": 13,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 15,
+    "contracts_verified_unaudited": 13,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 96,
     "coverage_pct": 0,
-    "total_audits": 5,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 11121221.15406,
-    "tvl_usd": 21200447.620155275,
+    "tvl_usd": 1360359.2358178808,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 21200447.62
+      "ethereum": 1360359.24
     },
-    "asd_usd": 21200447.620155275,
+    "asd_usd": 1360359.2358178808,
     "website_url": null,
     "chains": [
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2020-12",
-    "audit_freshness": "stale",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 5,
+      "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Set Protocol enables creation and management of tokenized index baskets (Sets) that automatically rebalance based on predefined strategies, allowing users to gain diversified exposure to multiple crypto assets through a single ERC-20 token.",
+    "project_purpose": "Set Protocol is an Ethereum protocol for creating and managing ERC-20 tokenized portfolios and index products, allowing users to gain diversified exposure to multiple crypto assets through a single token. Third-party lending-market contracts such as Compound cTokens are external dependencies or underlying assets, not Set-owned core contracts.",
     "relationship_narrative": "The Vault contract manages the issuance and rebalancing of Sets, while CErc20 and its proxy CErc20Delegator represent Compound lending market integrations that likely serve as yield-bearing components or collateral within the Set baskets.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 109,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
-      "name": "CErc20Delegate",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "compound-finance",
-      "product_line": "Set Protocol",
-      "tvl_usd": 11095571.622669639,
-      "is_proxy": true,
-      "impl_address": "0x3363bae2fc44da742df13cd3ee94b6bb868ea376",
-      "impl_name": "CErc20Delegate",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 11095571.622669639,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
-      "name": "CErc20",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "compound-finance",
-      "product_line": "Set Protocol",
-      "tvl_usd": 8744516.761667758,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "CErc20",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 8744516.761667758,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -3599,113 +3542,7 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 7032,
-      "audit_key": "audit-7032",
-      "report_name": "Certik-aave-v2-03-12-2020.pdf",
-      "report_url": "https://github.com/SetProtocol/aave-fork/blob/master/audits/Certik-aave-v2-03-12-2020.pdf",
-      "auditor": "CertiK",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2020-12",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7033,
-      "audit_key": "audit-7033",
-      "report_name": "Certora-FV-aave-v2-03-12-2020.pdf",
-      "report_url": "https://github.com/SetProtocol/aave-fork/blob/master/audits/Certora-FV-aave-v2-03-12-2020.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2020-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7034,
-      "audit_key": "audit-7034",
-      "report_name": "Mixbytes-aave-v2-03-12-2020.pdf",
-      "report_url": "https://github.com/SetProtocol/aave-fork/blob/master/audits/Mixbytes-aave-v2-03-12-2020.pdf",
-      "auditor": "MixBytes",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2020",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7035,
-      "audit_key": "audit-7035",
-      "report_name": "PeckShield-aave-v2-03-12-2020-CN.pdf",
-      "report_url": "https://github.com/SetProtocol/aave-fork/blob/master/audits/PeckShield-aave-v2-03-12-2020-CN.pdf",
-      "auditor": "PeckShield",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2020",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7036,
-      "audit_key": "audit-7036",
-      "report_name": "Peckshield-aave-v2-03-12-2020-EN.pdf",
-      "report_url": "https://github.com/SetProtocol/aave-fork/blob/master/audits/Peckshield-aave-v2-03-12-2020-EN.pdf",
-      "auditor": "PeckShield",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2020",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -3831,7 +3668,7 @@
   ],
   "origin_summary": {
     "native": 43,
-    "upstream": 3,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 65
   },
@@ -3840,28 +3677,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 7032,
-        "report_name": "Certik-aave-v2-03-12-2020.pdf"
-      },
-      {
-        "audit_id": 7033,
-        "report_name": "Certora-FV-aave-v2-03-12-2020.pdf"
-      },
-      {
-        "audit_id": 7034,
-        "report_name": "Mixbytes-aave-v2-03-12-2020.pdf"
-      },
-      {
-        "audit_id": 7035,
-        "report_name": "PeckShield-aave-v2-03-12-2020-CN.pdf"
-      },
-      {
-        "audit_id": 7036,
-        "report_name": "Peckshield-aave-v2-03-12-2020-EN.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

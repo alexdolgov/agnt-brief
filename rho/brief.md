@@ -5,17 +5,17 @@
 - Project: Rho (`rho`)
 - Website: [https://www.rho.trading/](https://www.rho.trading/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-24T11:37:09.273Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:11.410Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 32 unique implementations (36 raw deployments)
-- DeFi Llama TVL: $2,441,166.00
+- Contract surface: 31 unique implementations (35 raw deployments)
+- DeFi Llama TVL: $2,472,255.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Rho is a DeFi protocol offering structured yield and derivatives products. It includes vaults that generate yield on stablecoins and a separate product line (Rho X) that issues a yield-bearing stablecoin (YUSD) backed by LP positions.
+Rho is a crypto-native interest-rate derivatives and funding-rate trading venue. Its product surface includes vaults for passive USDT/USDC liquidity and yield. Do not describe Rho X as a YUSD minting or YUSD-backed yield-bearing stablecoin system unless project-owned evidence establishes that connection.
 
 ### Architecture
 
@@ -23,17 +23,17 @@ The Mainnet family provides the foundational vault logic and proxy infrastructur
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 1
 - Unverified implementations: 29
-- Unique implementations: 32
-- Raw deployments: 36
-- Audits discovered: 4
+- Unique implementations: 31
+- Raw deployments: 35
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-09 (fresh)
-- Staleness: 2 fresh, 0 aging, 1 stale, 1 unknown
+- Staleness: 2 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -46,12 +46,11 @@ The Mainnet family provides the foundational vault logic and proxy infrastructur
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | FixedRateMaturityVault | core_logic | ethereum | 3 deployments: ethereum [`0x535a5d...e9bb68`](./contracts/ethereum-1/0x535a5dbf628f79e36a0dbc7a3e8521df33e9bb68/); ethereum `0x9fc8b7...92b297`; ethereum `0xfa01d7...a6948a` | ⚠️ Unaudited |
-| YUSD | unknown | ethereum | [`0x4274cd...a8da0a`](./contracts/ethereum-1/0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -110,7 +109,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [DL audit link](https://audits.oxor.io/reports/-NsF0vIwYyzQJhrgL2nf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Rho Labs Audit Report](https://github.com/zokyo-sec/audit-reports/blob/main/Rho%20Labs/Rho_Labs_Zokyo_audit_report_Sep23rd_2025.pdf) | Zokyo | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
 | [Vault Contracts v2 Audit](https://www.halborn.com/audits/rho-labs/vault-contracts-v2-9d7cbb) | Halborn | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [Rho Protocol Audit Report](https://oxor-io.github.io/public_audits/Rho/Rho%20Protocol%20Audit%20Report.pdf) | Halborn | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -119,13 +117,12 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x535a5d...e9bb68`](./contracts/ethereum-1/0x535a5dbf628f79e36a0dbc7a3e8521df33e9bb68/) | FixedRateMaturityVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4274cd...a8da0a`](./contracts/ethereum-1/0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a/) | YUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 5 |
+| native | 4 |
 | upstream | 0 |
 | standard_library | 1 |
 | needs_review | 26 |
@@ -134,7 +131,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -144,6 +141,5 @@ Zero-match audit list:
 - [2811] DL audit link
 - [2812] Rho Labs Audit Report
 - [2813] Vault Contracts v2 Audit
-- [2814] Rho Protocol Audit Report
 
 Fork inheritance lineage and inherited audits are included when available.

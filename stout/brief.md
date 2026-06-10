@@ -7,8 +7,8 @@
 - Project: Stout (`stout`)
 - Website: [https://stout.fi/](https://stout.fi/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:43:45.539Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.679Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: sonic
 - Contract surface: 132 unique implementations (211 raw deployments)
 - DeFi Llama TVL: $2,065,136.90
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Stout is a collateralized debt position (CDP) protocol on Sonic that lets users deposit assets to mint stablecoins and earn yield. It provides vaults for staking, liquid staking tokens, and reward distribution.
+Stout is a Sonic-native collateralized debt position (CDP) and borrowing protocol offering low, quasi-fixed interest loans. Its ecosystem includes STTX/veSTTX-related collateral or staking, DUSX/staked DUSX, vault, lender, and PSM components.
 
 ### Architecture
 

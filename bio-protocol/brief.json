@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bio-protocol",
-  "generated_at": "2026-05-23T19:02:10.201Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:58:59.703Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bio-protocol",
@@ -35,7 +35,7 @@
     "coverage_pct": 10,
     "total_audits": 6,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 4898198.27822,
+    "dl_tvl_usd": 4563139.2800199995,
     "tvl_usd": 143807338.42811444,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -63,6 +63,11 @@
     "project_purpose": "Bio Protocol is a launchpad for decentralized science (DeSci) projects, enabling tokenization and liquidity for biotech intellectual property. It provides infrastructure for creating, staking, and governing tokens tied to scientific assets.",
     "relationship_narrative": "The Bio Protocol family provides the staking and governance layer for the BIO token, while Neuron-Gale tokens represent individual DeSci projects that may be launched or supported through the Bio Protocol launchpad. Shared infrastructure includes proxy-based upgradeability and cross-chain bridges (OptimismMintableERC20) used by Neuron-Gale tokens.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 41,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

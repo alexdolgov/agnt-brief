@@ -1,12 +1,14 @@
 # Agentic Audit Brief: YO Protocol
 
+⚠️ Lifecycle status: DECLINING - TVL dropped 22.0% over 90 days
+
 ## Project Overview
 
 - Project: YO Protocol (`yo-protocol`)
 - Website: [https://app.yo.xyz?ref=defillama](https://app.yo.xyz?ref=defillama)
-- Lifecycle: active (Tier 0, 51.7% below peak)
-- Generated: 2026-05-31T11:44:19.410Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 51.7% below peak)
+- Generated: 2026-06-10T20:59:19.472Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, ethereum
 - Contract surface: 20 unique implementations (48 raw deployments)
 - DeFi Llama TVL: $42,549,903.44
@@ -35,6 +37,7 @@ The yoVaults family relies on the Operational Periphery for price data (YoOracle
 - Latest audit: 2025-12 (fresh)
 - Staleness: 4 fresh, 3 aging, 0 stale, 0 unknown
 - Tier 1 coverage: 6.3% (Spearbit)
+- Note: This protocol is classified as [declining]. ASD of $12,571.38 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

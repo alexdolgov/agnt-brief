@@ -5,17 +5,17 @@
 - Project: Polynomial Protocol (`polynomial-protocol`)
 - Website: [https://www.polynomial.fi](https://www.polynomial.fi)
 - Lifecycle: active (Tier 0, 62.5% below peak)
-- Generated: 2026-05-23T16:40:31.587Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:09.356Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 5 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $5,318,178.00
+- DeFi Llama TVL: $5,336,566.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Polynomial Protocol is a decentralized options vault and derivatives platform on Ethereum, enabling users to earn yield through automated options strategies and trade derivatives. It provides structured products that generate returns by selling options and managing risk.
+Polynomial is a decentralized perpetual futures exchange powered by the Polynomial Ethereum Layer 2/rollup. The current protocol focus is perps trading and rollup-based exchange infrastructure; any options, structured vault, or automated options-yield products should be treated as broader or legacy/future platform areas unless separately supported by current product evidence.
 
 ### Architecture
 
@@ -29,11 +29,11 @@ The Source Chain Contracts family provides the foundational cross-chain infrastr
 - Unverified implementations: 0
 - Unique implementations: 5
 - Raw deployments: 5
-- Audits discovered: 18
+- Audits discovered: 17
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-04 (aging)
-- Staleness: 0 fresh, 5 aging, 8 stale, 5 unknown
+- Staleness: 0 fresh, 4 aging, 9 stale, 4 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -78,12 +78,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Link](https://0xmacro.com/library/audits/polynomial-1.html) | 0xMacro | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
+| [Link](https://0xmacro.com/library/audits/polynomial-1.html) | 0xMacro | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
 | [Link](https://0xmacro.com/library/audits/polynomial-4.html) | 0xMacro | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
 | [Link](https://0xmacro.com/library/audits/polynomial-5.html) | 0xMacro | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
 | [Link](https://0xmacro.com/library/audits/polynomial-3) | 0xMacro | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
 | [Synthetix v3 Audits](https://docs.synthetix.io/v/v3/for-developers/smart-contract-audits) | 0xMacro | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Link](https://docs.conduit.xyz/chains/supported-stacks/op-stack) | Conduit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Kernel v3.2 Incremental Audit Report.pdf](https://github.com/zerodevapp/kernel/blob/dev/audits/Kernel%20v3.2%20Incremental%20Audit%20Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Kernel v3.3 Incremental Audit Report.pdf](https://github.com/zerodevapp/kernel/blob/dev/audits/Kernel%20v3.3%20Incremental%20Audit%20Report.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [chainlight_v3_0.pdf](https://github.com/zerodevapp/kernel/blob/dev/audits/chainlight_v3_0.pdf) | Chainlight | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -122,7 +121,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 18
+- Audits with zero matched contracts: 17
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -134,7 +133,6 @@ Zero-match audit list:
 - [2485] Link
 - [2486] Link
 - [2487] Synthetix v3 Audits
-- [2488] Link
 - [2489] Kernel v3.2 Incremental Audit Report.pdf
 - [2490] Kernel v3.3 Incremental Audit Report.pdf
 - [2491] chainlight_v3_0.pdf

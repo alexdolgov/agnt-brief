@@ -1,23 +1,21 @@
 # Agentic Audit Brief: BEND
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 33.4% over 90 days
-
 ## Project Overview
 
 - Project: BEND (`bend`)
 - Website: [https://bend.berachain.com](https://bend.berachain.com)
-- Lifecycle: unknown (Tier 0, 63.6% below peak)
-- Generated: 2026-05-31T07:34:00.581Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, 63.6% below peak)
+- Generated: 2026-06-10T20:58:59.169Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: berachain, ethereum
-- Contract surface: 105 unique implementations (105 raw deployments)
+- Contract surface: 104 unique implementations (104 raw deployments)
 - DeFi Llama TVL: $12,591,438.21
 - On-chain TVL (included contracts): $15,462,171.69
 - TVL by chain: Berachain $15,462,171.69
 
 ## Project Description
 
-BEND is a decentralized lending protocol that enables users to supply and borrow assets using isolated markets and adaptive interest rate curves. It integrates with Morpho Blue for efficient lending markets and includes governance, staking, and NFT components.
+BEND is a Berachain lending protocol/fork of Morpho that enables users to supply and borrow assets through isolated lending markets, with Proof-of-Liquidity integration. Berachain governance, core PoL system contracts, staking infrastructure, Balancer liquidity infrastructure, tokens, and NFTs should be treated as external dependencies unless separately verified as BEND-owned.
 
 ### Architecture
 
@@ -25,25 +23,24 @@ The BEND lending family relies on Morpho Blue and its own adaptive curve IRM, wh
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 12/59 (20.3%)
-- Verified + Unaudited implementations: 47
+- Verified implementations audited: 12/58 (20.7%)
+- Verified + Unaudited implementations: 46
 - Verified by bytecode match: 0
 - Unverified implementations: 46
-- Unique implementations: 105
-- Raw deployments: 105
-- Audits discovered: 22
+- Unique implementations: 104
+- Raw deployments: 104
+- Audits discovered: 9
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $896,828.84
 - Latest audit: 2026-05 (fresh)
-- Staleness: 2 fresh, 0 aging, 9 stale, 11 unknown
-- Tier 1 coverage: 20.3% (Spearbit)
-- Note: This protocol is classified as [unknown]. ASD of $896,828.84 represents exposure in a protocol with unknown activity.
+- Staleness: 2 fresh, 0 aging, 5 stale, 2 unknown
+- Tier 1 coverage: 20.7% (Spearbit)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 12 | 20.3% | 2026-05 |
+| Spearbit | Tier 1 | 12 | 20.7% | 2026-05 |
 
 ## Contract Surface
 
@@ -64,7 +61,7 @@ The BEND lending family relies on Morpho Blue and its own adaptive curve IRM, wh
 | RewardVaultFactory | registry | berachain | [`0x94ad6a...ef52a8`](./contracts/berachain-80094/0x94ad6ac84f6c6fba8b8ccbd71d9f4f101def52a8/) | ✅ Audited |
 | RewardVaultHelper | core_logic | berachain | [`0xee233a...dce6e2`](./contracts/berachain-80094/0xee233a69a36db7fc10e03e921d90dec52cdce6e2/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (47)
+### ⚠️ Verified + Unaudited (46)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -112,7 +109,6 @@ The BEND lending family relies on Morpho Blue and its own adaptive curve IRM, wh
 | SwellOFTAdapter | adapter | ethereum | [`0xfd5c3e...9c1b14`](./contracts/ethereum-1/0xfd5c3ef2621241285ebbc31cc61f4820dd9c1b14/) | ⚠️ Unaudited |
 | TimeLock | governance | berachain | [`0xb5f200...b6862a`](./contracts/berachain-80094/0xb5f2000b5744f207c931526cae2134caa8b6862a/) | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | ethereum | [`0x9e802d...c205d9`](./contracts/ethereum-1/0x9e802dfddf951b701324332c688817b4bbc205d9/) | ⚠️ Unaudited |
-| WBERA | unknown | berachain | [`0x696969...696969`](./contracts/berachain-80094/0x6969696969696969696969696969696969696969/) | ⚠️ Unaudited |
 | WeightedPoolFactory | registry | berachain | [`0xa966fa...1af409`](./contracts/berachain-80094/0xa966fa8f2d5b087fffa499c0c1240589371af409/) | ⚠️ Unaudited |
 | WithdrawalVault | operational_periphery | berachain | [`0xe85880...cb52b4`](./contracts/berachain-80094/0xe858802ed532c6dad2d196ab5b1f2c15f9cb52b4/) | ⚠️ Unaudited |
 
@@ -187,26 +183,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [* [**PoL Next Audit by Zenith**]()](https://github.com/berachain/security-audits/blob/main/20260508-PoLNext-Zenith.pdf) | Spearbit | Audit | 2026-05 | fresh | Direct | contract_name | 1 | high |
 | [* [**PoL Next Audit by Cantina**]()](https://github.com/berachain/security-audits/blob/main/20260425-PoLNext-Spearbit.pdf) | Spearbit | Audit | 2026-04 | fresh | Direct | contract_name | 12 | high |
-| [2017-04-25_Geth-audit_Truesec.pdf](https://github.com/berachain/polaris-geth/blob/master/docs/audits/2017-04-25_Geth-audit_Truesec.pdf) | unknown | Audit | 2017-04 | stale | Direct | n/a | 0 | n/a |
-| [2018-09-14_Clef-audit_NCC.pdf](https://github.com/berachain/polaris-geth/blob/master/docs/audits/2018-09-14_Clef-audit_NCC.pdf) | unknown | Audit | 2018-09 | stale | Direct | n/a | 0 | n/a |
-| [2019-10-15_Discv5_audit_LeastAuthority.pdf](https://github.com/berachain/polaris-geth/blob/master/docs/audits/2019-10-15_Discv5_audit_LeastAuthority.pdf) | unknown | Audit | 2019-10 | stale | Direct | n/a | 0 | n/a |
-| [2020-01-24_DiscV5_audit_Cure53.pdf](https://github.com/berachain/polaris-geth/blob/master/docs/audits/2020-01-24_DiscV5_audit_Cure53.pdf) | unknown | Audit | 2020-01 | stale | Direct | n/a | 0 | n/a |
 | [2017-03.md (also discovered via alternate URL)](https://github.com/berachain/offchain-sdk/blob/main/contracts/lib/openzeppelin-contracts/audits/2017-03.md) | OpenZeppelin | Audit | 2017-03 | stale | Direct | n/a | 0 | n/a |
 | [2018-10.pdf (also discovered via alternate URL)](https://github.com/berachain/offchain-sdk/blob/main/contracts/lib/openzeppelin-contracts/audits/2018-10.pdf) | OpenZeppelin | Audit | 2018-10 | stale | Direct | n/a | 0 | n/a |
 | [2022-10-Checkpoints.pdf](https://github.com/berachain/offchain-sdk/blob/main/contracts/lib/openzeppelin-contracts/audits/2022-10-Checkpoints.pdf) | OpenZeppelin | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
 | [2022-10-ERC4626.pdf](https://github.com/berachain/offchain-sdk/blob/main/contracts/lib/openzeppelin-contracts/audits/2022-10-ERC4626.pdf) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
 | [2023-05-v4.9.pdf](https://github.com/berachain/offchain-sdk/blob/main/contracts/lib/openzeppelin-contracts/audits/2023-05-v4.9.pdf) | OpenZeppelin | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
-| [README.md (also discovered via alternate URL)](https://github.com/berachain/offchain-sdk/blob/main/contracts/lib/openzeppelin-contracts/audits/README.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [README.md](https://github.com/berachain/offchain-sdk/blob/main/contracts/lib/openzeppelin-contracts/audits/README.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [certik-07-03.pdf](https://github.com/berachain/offchain-sdk/blob/main/contracts/lib/reference/audits/certik-07-03.pdf) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [f1_fee_distr.pdf](https://github.com/berachain/cosmos-sdk/blob/main/docs/spec/fee_distribution/f1_fee_distr.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [rules.md](https://github.com/berachain/docs/blob/main/.cursor/rules.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [documentation.md](https://github.com/berachain/docs/blob/main/.github/ISSUE_TEMPLATE/documentation.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [pull_request_template.md](https://github.com/berachain/docs/blob/main/.github/pull_request_template.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [AGENTS.md](https://github.com/berachain/docs/blob/main/AGENTS.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [CODE_OF_CONDUCT.md](https://github.com/berachain/docs/blob/main/CODE_OF_CONDUCT.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [CONTRIBUTING.md](https://github.com/berachain/docs/blob/main/CONTRIBUTING.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [STRUCTURE.md](https://github.com/berachain/docs/blob/main/STRUCTURE.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [UBIQUITOUS_LANGUAGE.md](https://github.com/berachain/docs/blob/main/UBIQUITOUS_LANGUAGE.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -247,23 +230,19 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 25 |
 | upstream | 9 |
 | standard_library | 24 |
-| needs_review | 47 |
+| needs_review | 46 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 20
+- Audits with zero matched contracts: 7
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
 - Match method counts: extraction_exact=13
 
 Zero-match audit list:
 
-- [9801] 2017-04-25_Geth-audit_Truesec.pdf
-- [9802] 2018-09-14_Clef-audit_NCC.pdf
-- [9803] 2019-10-15_Discv5_audit_LeastAuthority.pdf
-- [9804] 2020-01-24_DiscV5_audit_Cure53.pdf
 - [9806] 2017-03.md
 - [9807] 2018-10.pdf
 - [9808] 2022-10-Checkpoints.pdf
@@ -271,14 +250,5 @@ Zero-match audit list:
 - [9810] 2023-05-v4.9.pdf
 - [9811] README.md
 - [9813] certik-07-03.pdf
-- [9969] f1_fee_distr.pdf
-- [9982] rules.md
-- [9983] documentation.md
-- [9984] pull_request_template.md
-- [9985] AGENTS.md
-- [9986] CODE_OF_CONDUCT.md
-- [9987] CONTRIBUTING.md
-- [9989] STRUCTURE.md
-- [9990] UBIQUITOUS_LANGUAGE.md
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "tokenworks",
-  "generated_at": "2026-05-31T11:08:49.298Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:17.522Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "tokenworks",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "TokenWorks provides automated NFT strategies, enabling users to deploy and manage yield-generating or utility-maximizing strategies for NFTs, starting with CryptoPunks.",
+    "project_purpose": "TokenWorks' NFTStrategy creates strategy tokens for NFT collections. The strategy uses trading fees to buy floor NFTs, relist them for profit, burn token supply, and pay creator royalties. The live product should be described as a broader NFT collection strategy-token mechanism rather than as primarily CryptoPunks-only or as generic NFT yield/utility maximization.",
     "relationship_narrative": "The NFTStrategyFactory deploys and registers strategy contracts like PunkStrategy and PunkStrategyPatch, which interact with the external CryptoPunksMarket contract to manage CryptoPunks NFTs.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 60,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

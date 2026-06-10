@@ -5,21 +5,22 @@
 - Project: Gimo (`gimo`)
 - Website: [https://gimofinance.xyz/](https://gimofinance.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-05-23T06:04:02.529Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:04.322Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $9,068,398.70
+- DeFi Llama TVL: $8,657,848.66
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Gimo is a liquid staking protocol that allows users to stake assets and receive liquid derivative tokens representing their staked positions, enabling continued participation in DeFi while earning staking rewards.
-
-### Architecture
-
-No product families or contracts are defined in the provided inventory, so no relationships can be described.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

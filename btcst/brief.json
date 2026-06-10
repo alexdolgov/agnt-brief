@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "btcst",
-  "generated_at": "2026-05-31T07:37:57.005Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.173Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "btcst",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "BTCST is a yield protocol on BSC that tokenizes Bitcoin hashrate, allowing users to stake BTCST to earn Bitcoin rewards. It also offers synthetic tokens (tBTC, tDOGE) and farming mechanisms to generate yield from staked assets.",
+    "project_purpose": "BTCST is the Bitcoin Standard Hashrate Token on BNB Chain/BSC, anchored at bsc:0x78650b139471520656b9e7aa7a5e9276814a38e9. It represents tokenized Bitcoin mining hashrate and is associated with staking for Bitcoin-denominated rewards. Other token contracts or balances, including 0xba2ae424d960c26247dd6c32edc70b295c744c43, should not be treated as BTCST protocol TVL or core BTCST product-line assets unless project ownership is independently verified.",
     "relationship_narrative": "All contracts are deployed by a single deployer cluster and share the AdminUpgradeabilityProxy pattern for upgradeability. The BTCST token is the central asset, with tBTC and tDOGE acting as synthetic representations used in staking and farming contracts.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 64,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -300,7 +305,7 @@
       "chain_name": "bsc",
       "address": "0x78650b139471520656b9e7aa7a5e9276814a38e9",
       "name": "BTCST",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "BTCST",

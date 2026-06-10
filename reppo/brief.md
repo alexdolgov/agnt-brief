@@ -7,21 +7,22 @@
 - Project: Reppo (`reppo`)
 - Website: [https://reppo.xyz/](https://reppo.xyz/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-23T10:46:39.737Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:09.501Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $6,438,351.99
+- DeFi Llama TVL: $5,831,508.96
 - On-chain TVL (included contracts): $19,774,880.15
 - TVL by chain: Base $19,774,880.15
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Reppo is a prediction market protocol on Base that enables users to create and trade outcome tokens tied to real-world events. The AgentTokenV2 contract serves as the core token representing positions in these markets.
-
-### Architecture
-
-The protocol consists of a single product family with no additional supporting contracts, indicating a self-contained token contract that handles all prediction market logic.
+Reppo is an AI training data network and data infrastructure project. Although it may be categorized under DefiLlama's "Prediction Market" label, the available verified information does not support describing it as a protocol for creating or trading real-world event outcome tokens.
 
 ## Audit Coverage Summary
 
@@ -35,7 +36,7 @@ The protocol consists of a single product family with no additional supporting c
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $19,774,880.15
 - Latest audit: 2026-03 (fresh)
-- Staleness: 3 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 2 fresh, 1 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $19,774,880.15 represents exposure in a protocol with unknown activity.
 
@@ -77,7 +78,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [2025-06-25.pdf](https://github.com/Reppo-Labs/audit-reports/blob/main/2025-06-25.pdf) | unknown | Audit | 2025-06 | fresh | Direct | n/a | 0 | n/a |
+| [2025-06-25.pdf](https://github.com/Reppo-Labs/audit-reports/blob/main/2025-06-25.pdf) | unknown | Audit | 2025-06 | aging | Direct | n/a | 0 | n/a |
 | [2025-07-15.pdf](https://github.com/Reppo-Labs/audit-reports/blob/main/2025-07-15.pdf) | unknown | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
 | [2026-03-24.pdf](https://github.com/Reppo-Labs/audit-reports/blob/main/2026-03-24.pdf) | unknown | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
 

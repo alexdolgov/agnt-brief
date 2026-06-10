@@ -5,10 +5,10 @@
 - Project: Brotocol (`brotocol`)
 - Website: [https://brotocol.xyz/](https://brotocol.xyz/)
 - Lifecycle: active (Tier 0, 81.8% below peak)
-- Generated: 2026-05-31T07:34:59.661Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.131Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, bsc, ethereum, linea, merlin, mode
-- Contract surface: 238 unique implementations (238 raw deployments)
+- Contract surface: 214 unique implementations (214 raw deployments)
 - DeFi Llama TVL: $12,240,302.37
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -18,9 +18,9 @@
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 238
-- Unique implementations: 238
-- Raw deployments: 238
+- Unverified implementations: 214
+- Unique implementations: 214
+- Raw deployments: 214
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -54,7 +54,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (238)
+### ❓ Unverified (214)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -77,37 +77,27 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | `0x19e64a...d82c2f` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x1a86ff...c56ce5` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x1bf786...25abc1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x2170ed...f933f8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x2260fa...c2c599` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x24a44c...aa29a7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x25d887...aebb00` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x2722c1...080841` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x2acc30...dccd7b` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x2aed35...938430` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x2e512b...02cbc8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x2f2a25...fc5b0f` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x305a85...9a6ee9` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x31761a...233b0b` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x3280a4...649f37` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x3fac7c...899526` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x420000...000006` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x430637...6cd41e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x49d5c2...c10bab` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x514910...f986ca` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x51cda8...992d94` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x521064...9d88f3` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x529871...840092` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x55d398...197955` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x57b9b4...03fe4c` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x5879cd...11b231` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x5e0e90...21fb59` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x5fd881...16a4c6` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x62f7d5...81e79c` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x65dfac...394090` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x698250...311933` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x6a7319...1cd6ee` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x707272...b257e2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x7130d2...3ead9c` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x715f26...5bf829` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x73f0f5...217138` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x795d27...6703f3` | ❓ Unverified |
@@ -115,11 +105,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | `0x79d1c9...b38e8a` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x7a087e...5eafe0` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x7a5912...3a5baf` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x7b7c00...000000` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x7d4de6...dd1d9d` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x80074f...dfb7cd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x82af49...3fbab1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x833589...a02913` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x88af5f...20d66c` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x916a82...39c81d` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x916e5d...ed21cb` | ❓ Unverified |
@@ -134,26 +121,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | `0xa6420e...3531bb` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xa831a4...703f37` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xab01bb...b560c5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xaf88d0...8e5831` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xb1c34a...31c94d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xb31f66...fd66c7` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xb598aa...79e374` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xb97ef9...c48a6e` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xba7ee8...fd2708` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xbacad5...a3c560` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xc02aaa...756cc2` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xca4e62...ca200b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xcbb7c0...ed33bf` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xcd5ed0...fba378` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xce83dd...0970cb` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xd0d1b5...7b192a` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xd15b99...81520d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xd31a59...71b89c` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xd491f2...7bcac9` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xd96f5d...26a060` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xdac17f...831ec7` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xdfd066...8caf71` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xe0f63a...b2c56c` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xe1a512...ade33b` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xe43599...865cdf` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xe67640...33291d` | ❓ Unverified |
@@ -163,7 +142,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | `0xf162b6...facf44` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xf4a617...273730` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xf5866c...f05c3a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xf97f4d...539fb4` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xfc57d3...5dec8c` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xffda60...61e7f5` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0x05c05e...8fac6f` | ❓ Unverified |
@@ -172,8 +150,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | bsc | `0x0f38ed...80ce03` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0x10eecc...aee32e` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0x18c05e...438fa7` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x2170ed...f933f8` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x25d887...aebb00` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0x2722c1...080841` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0x2acc30...dccd7b` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0x2e512b...02cbc8` | ❓ Unverified |
@@ -317,7 +293,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 238 |
+| needs_review | 214 |
 
 ## Scope Matching Notes
 

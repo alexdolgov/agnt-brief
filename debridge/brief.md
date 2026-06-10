@@ -7,10 +7,10 @@
 - Project: deBridge (`debridge`)
 - Website: [https://app.debridge.com/r/32425](https://app.debridge.com/r/32425)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T07:49:01.703Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.642Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, bsc, cronos, ethereum, hyperliquid, linea, optimism, polygon, sei
-- Contract surface: 161 unique implementations (436 raw deployments)
+- Contract surface: 161 unique implementations (435 raw deployments)
 - DeFi Llama TVL: $3,812,745.79
 - On-chain TVL (included contracts): $263,879,740.52
 - TVL by chain: Bsc $263,879,740.52
@@ -30,13 +30,12 @@ The EVM Bridge Core provides foundational cross-chain messaging and token infras
 - Verified by bytecode match: 5
 - Unverified implementations: 140
 - Unique implementations: 161
-- Raw deployments: 436
-- Audits discovered: 34
+- Raw deployments: 435
+- Audits discovered: 32
 - Scoreable audits (matched contracts): 13
-- Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/debridge/information))
 - ASD (verified + unaudited TVL): $263,879,740.52
 - Latest audit: 2024-11 (aging)
-- Staleness: 0 fresh, 5 aging, 27 stale, 1 unknown
+- Staleness: 0 fresh, 5 aging, 27 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $263,879,740.52 represents exposure in a protocol with declining activity.
 
@@ -66,7 +65,7 @@ The EVM Bridge Core provides foundational cross-chain messaging and token infras
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| BEP20TokenImplementation | token | bsc | 2 deployments: bsc [`0x8ac76a...cd580d`](./contracts/bsc-56/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d/); bsc `0xba2ae4...744c43` | ⚠️ Unaudited |
+| BEP20TokenImplementation | token | bsc | [`0xba2ae4...744c43`](./contracts/bsc-56/0xba2ae424d960c26247dd6c32edc70b295c744c43/) | ⚠️ Unaudited |
 | CrosschainForwarderProxy | periphery | optimism | 2 deployments: optimism [`0x663dc1...83c251`](./contracts/optimism-10/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/); linea [`0x663dc1...83c251`](./contracts/linea-59144/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | ⚠️ Unaudited |
 | DeBridgeRouter | operational_periphery | ethereum | 3 deployments: ethereum [`0x663dc1...83c251`](./contracts/ethereum-1/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/); bsc [`0x663dc1...83c251`](./contracts/bsc-56/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/); base [`0x663dc1...83c251`](./contracts/base-8453/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | ethereum | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
@@ -244,7 +243,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Active Bug Bounty Program](https://immunefi.com/bug-bounty/debridge/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
 | [CrosschainForwarder Allowances Audit.pdf](https://github.com/debridge-finance/debridge-security/blob/master/CrosschainForwarder%20Allowances%20Audit.pdf) | unknown | Audit | 2024-09 | aging | Direct | contract_name | 11 | high |
 | [DLN Solana Contracts _ SSC.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DLN%20Solana%20Contracts%20_%20SSC.pdf) | unknown | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
 | [DLN Solana Release Assessment Report.pdf](https://github.com/debridge-finance/debridge-security/blob/master/DLN%20Solana%20Release%20Assessment%20Report.pdf) | unknown | Audit | 2024-03 | stale | Direct | n/a | 0 | n/a |
@@ -277,7 +275,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [deBridge_Solana_Security_Audit_Neodyme.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Solana_Security_Audit_Neodyme.pdf) | unknown | Audit | 2022-03 | stale | Direct | n/a | 0 | n/a |
 | [debridge_backend_pentest_report_halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/debridge_backend_pentest_report_halborn.pdf) | Halborn | Audit | 2022-02 | stale | Direct | n/a | 0 | n/a |
 | [debridge_solidity_smart_contract_second_audit_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/debridge_solidity_smart_contract_second_audit_Halborn.pdf) | Halborn | Audit | 2022-04 | stale | Direct | contract_name | 137 | high |
-| [security.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/the-core-protocol/security.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -285,7 +282,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x8ac76a...cd580d`](./contracts/bsc-56/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d/) | BEP20TokenImplementation | token | $263,879,740.52 | Verified native implementation with $263,879,740.52 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xba2ae4...744c43`](./contracts/bsc-56/0xba2ae424d960c26247dd6c32edc70b295c744c43/) | BEP20TokenImplementation | token | $263,879,740.52 | Verified native implementation with $263,879,740.52 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2328ee...0c91a7`](./contracts/ethereum-1/0x2328ee20fa271073328dc94e52dd5b61aa0c91a7/) | Subscription | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
@@ -301,7 +298,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 20
+- Audits with zero matched contracts: 19
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=13
 - Match method counts: extraction_exact=940
@@ -327,6 +324,5 @@ Zero-match audit list:
 - [10026] deBridge_Solana_Security_Audit_Ackee.pdf
 - [10027] deBridge_Solana_Security_Audit_Neodyme.pdf
 - [10028] debridge_backend_pentest_report_halborn.pdf
-- [10063] security.md
 
 Fork inheritance lineage and inherited audits are included when available.

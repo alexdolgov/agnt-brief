@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "jones-dao",
-  "generated_at": "2026-05-31T08:31:27.059Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:59:06.405Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "jones-dao",
     "tier": 1,
@@ -32,16 +32,16 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 500,
-    "total_addresses": 1366,
-    "unique_implementations": 500,
-    "total_deployments": 1366,
+    "total_contracts": 502,
+    "total_addresses": 1339,
+    "unique_implementations": 502,
+    "total_deployments": 1339,
     "audited_contracts": 0,
     "unaudited_contracts": 354,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 339,
-    "contracts_verified_by_bytecode": 15,
-    "contracts_unverified": 146,
+    "contracts_verified_unaudited": 340,
+    "contracts_verified_by_bytecode": 14,
+    "contracts_unverified": 148,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
@@ -73,9 +73,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Jones DAO is a yield aggregation protocol that offers structured vaults and strategies for options, liquidity pools, and yield-bearing assets. It enables users to deposit assets into automated strategies that generate returns through options selling, liquidity provision, and compounding rewards.",
+    "project_purpose": "Jones DAO is an active yield, strategy, and liquidity vault protocol currently centered on Arbitrum and Ethereum/Mainnet. Its protocol-owned surface should be limited to live Jones-owned vault and strategy contracts; upstream protocols, standard tokens, bridges, routers, safes, admin/beacon infrastructure, and other dependencies should be tracked separately. Historical, experimental, or detected deployments on Base, Berachain, Blast, or other chains should not be presented as current core product surface unless independently verified as active Jones-supported products.",
     "relationship_narrative": "The families share governance via Gnosis Safe and ProxyAdmin, and use common infrastructure like WhitelistController, Factory, and UpgradeableBeacon for access control and upgradeability. Options vaults feed into hedging strategies, while liquidity management vaults use swappers and price helpers across multiple DEXs, and cross-chain wrappers enable asset mobility between Arbitrum and mainnet.",
     "product_family_count": 7
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 502,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -13954,98 +13959,17 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x06974f42a1090f07d832240cb2375420eb3f6c5f",
+      "address": "0x4bc4d296dfce661f34dd72d642d2a7c348e22a04",
       "name": "Router",
       "role": "adapter",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0xea649180619fa7f6b4100862aa90e718cd61c767",
       "impl_name": "Router",
       "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xbc99efd94ca6aff340555996e3a3d5614f3c114e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x06974f42a1090f07d832240cb2375420eb3f6c5f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x06ea20d8455c1c87b4028a9cd61e88d8c97e70c7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x0946e3193129928946c14619277e0d135ef2ed9b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x14c9211a65bc893e9ab9fa9c6b40295a226d54e1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x15ee32f858ec0a422d327da4461bd68a5b709e55",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x204e14f593ee21927c9fb450467dca21ea530e9f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x33577c99d85259405a206097b52295be36cb7fd3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x4b5cf363f3f0fc82678d347fbff9ec2d8118cabe",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
@@ -14058,52 +13982,7 @@
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
-          "address": "0x5178f01ea40cf3479b9f88bf715159c30d990b81",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
           "address": "0x51c0794f181d4214730cadefc2bc00b52c8a8314",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x6613225f5f7e72b6ed23be67c4e0cf2caf238c63",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x6d7042951e2f18279d8fafcb18687e9032e5c3e1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x71b009d65ec7d0358edacc9e721d8245a699a185",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x7f7b4727accb0f89cfaf9dd613820dc6e1335437",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -14130,52 +14009,7 @@
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
-          "address": "0xa49bb230b955e830c738718f081c4cdc2807c5ff",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
           "address": "0xa6a01f0264d5bf4733264e0bca29f916c61de163",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xb7eae649d8d5a4955dfd8d91676ea97346e2ca65",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xbde8d563a291d327bde234af38eaacad14104b62",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xcb83a02dc678548542206bd6faddd7ae4906b927",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xdd9db4775421cf940611befd941bbedc3b5b3cc7",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -14200,78 +14034,6 @@
           "is_audited": false
         },
         {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xea649180619fa7f6b4100862aa90e718cd61c767",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xed1586b25537718154d72844e9f40036234d5753",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xf18f2f2ae4a2b48b35c496c33cc848b6cb202b9c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xbde8d563a291d327bde234af38eaacad14104b62",
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xf572c7dedb4575127ff48153e35728ae74455c6d",
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 81457,
-          "chain_name": "blast",
-          "address": "0x26c6ce4b9fd5b83a44d7fbb00f7d5779354b4e75",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 81457,
-          "chain_name": "blast",
-          "address": "0x29e9c7c9b5b5aeec24e7b3ea370c587ad167d2a8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 81457,
-          "chain_name": "blast",
-          "address": "0x428d381cdaee696c46aadc224eb3476b00768a3b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
           "chain_id": 81457,
           "chain_name": "blast",
           "address": "0x6a08266995bbd483b224b871426846f8185d8e90",
@@ -14288,31 +14050,13 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 81457,
-          "chain_name": "blast",
-          "address": "0xb0390bad082fce5444af311054368892a8be6254",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 81457,
-          "chain_name": "blast",
-          "address": "0xc16f61a902c4bb360535201d711345c04a105a68",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
       "is_audited": false,
       "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -21284,6 +21028,37 @@
     {
       "chain_id": 80094,
       "chain_name": "berachain",
+      "address": "0xbde8d563a291d327bde234af38eaacad14104b62",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xbde8d563a291d327bde234af38eaacad14104b62",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
       "address": "0xbe74a202570aa31e30468fc29d4993036dd8e488",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -21454,6 +21229,37 @@
           "chain_id": 80094,
           "chain_name": "berachain",
           "address": "0xf54b9564fb7569c7ac92f13feafd0ca83a9d12dd",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0xf572c7dedb4575127ff48153e35728ae74455c6d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xf572c7dedb4575127ff48153e35728ae74455c6d",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -25173,16 +24979,6 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x06974f42a1090f07d832240cb2375420eb3f6c5f",
-      "name": "Router",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
       "address": "0x02af5c07e96b40e3324390da4a794fff55c8748d",
       "name": "SingleRewardTracker",
       "role": "unknown",
@@ -25482,10 +25278,10 @@
     }
   ],
   "origin_summary": {
-    "native": 258,
+    "native": 257,
     "upstream": 81,
-    "standard_library": 24,
-    "needs_review": 137
+    "standard_library": 25,
+    "needs_review": 139
   },
   "scope_matching_notes": {
     "match_method_counts": {},

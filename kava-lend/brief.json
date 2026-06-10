@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kava-lend",
-  "generated_at": "2026-05-30T19:22:45.417Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-30-c7d699-40af",
+  "generated_at": "2026-06-10T20:59:06.466Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "kava-lend",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Kava Lend is a lending protocol on the Kava chain that allows users to supply and borrow assets through a single core contract.",
-    "relationship_narrative": "The protocol consists of a single lending contract with no additional infrastructure or shared components.",
+    "project_purpose": "Kava Lend is a Kava-based cross-chain money market that allows users to supply and borrow assets. The listed address 0xa8e48fa04881dfacfc8d0ab84bc9ba57a449fc1f on chain 2222 should be treated as an unverified/unconfirmed contract until its liveness, proxy status, and audit scope coverage are independently verified.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

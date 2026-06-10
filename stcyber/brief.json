@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "stcyber",
-  "generated_at": "2026-05-24T19:50:27.618Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-10T20:59:16.658Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "stcyber",
     "tier": 0,
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 31,
-    "total_addresses": 54,
+    "total_addresses": 44,
     "unique_implementations": 31,
-    "total_deployments": 54,
+    "total_deployments": 44,
     "audited_contracts": 0,
     "unaudited_contracts": 26,
     "contracts_verified_audited": 0,
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 5,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1630857.51449,
+    "dl_tvl_usd": 1538238.34274,
     "tvl_usd": 51356497.64087489,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -53,19 +53,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2024-06",
-    "audit_freshness": "aging",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 1,
+      "aging": 0,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "stCYBER is a liquid staking protocol for the CYBER token, enabling users to stake CYBER and receive a liquid staking derivative while earning rewards. It also includes cross-chain functionality via LayerZero to facilitate token transfers across Ethereum, Optimism, BSC, and Base.",
+    "project_purpose": "stCYBER is a Cyber Mainnet staking/liquid staking product for CYBER, enabling users to stake CYBER and receive a liquid staking derivative while earning staking rewards. Cyber token bridges, LayerZero transfer infrastructure, and Cyber/OP Stack rollup infrastructure are separate Cyber ecosystem surfaces and should not be treated as part of the stCYBER staking protocol unless explicit evidence links them to the stCYBER product.",
     "relationship_narrative": "The CYBER token is the core asset used across all families: it is staked in the Liquid Staking family, bridged via the Cross-Chain Bridge family, and utilized within the OP Stack Infrastructure family for L2 operations. The OP Stack contracts provide the rollup environment that supports the staking and bridging activities, with governance shared through multisig and timelock mechanisms.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 31,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -350,22 +355,13 @@
       "product_line": "Contract Addresses",
       "tvl_usd": null,
       "is_proxy": false,
-      "impl_address": "0x0d93eaa86eb6948b977857750a5512bef6b05c51",
+      "impl_address": null,
       "impl_name": "DataAvailabilityChallenge",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x0d93eaa86eb6948b977857750a5512bef6b05c51",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x10e34efe14e4d270c0f77bf1af01b6c832161b49",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -382,26 +378,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x588dad44201885ff23068f1142e303d52d103919",
+      "address": "0x6daf222ad565522bfc1d9ef3cc78751f6c007e6d",
       "name": "DelayedWETH",
       "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "optimism",
       "product_line": "Contract Addresses",
       "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x6daf222ad565522bfc1d9ef3cc78751f6c007e6d",
+      "is_proxy": false,
+      "impl_address": null,
       "impl_name": "DelayedWETH",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x588dad44201885ff23068f1142e303d52d103919",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -430,22 +417,13 @@
       "product_line": "Contract Addresses",
       "tvl_usd": null,
       "is_proxy": false,
-      "impl_address": "0xb79cf113e524043b3ef9bf7861a05900bb3649a3",
+      "impl_address": null,
       "impl_name": "DisputeGameFactory",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xb79cf113e524043b3ef9bf7861a05900bb3649a3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xbf4676f21a7889e0fd61bcdc9b98e60b01c1b36f",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -581,22 +559,13 @@
       "product_line": "Contract Addresses",
       "tvl_usd": null,
       "is_proxy": false,
-      "impl_address": "0xae2af01232a6c4a4d3012c5ec5b1b35059caf10d",
+      "impl_address": null,
       "impl_name": "L1ERC721Bridge",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x1234c7a75f40551fce5aff1d58efd72f2ee2afb1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x4f4b716627d2ba0439327ce8b563b4443af47dbd",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -661,22 +630,13 @@
       "product_line": "Contract Addresses",
       "tvl_usd": null,
       "is_proxy": false,
-      "impl_address": "0x93e1c0d8ef27930130fb809ce18ca681a8c32f85",
+      "impl_address": null,
       "impl_name": "L2OutputOracle",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x93e1c0d8ef27930130fb809ce18ca681a8c32f85",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xa669a743b065828682ee16109273f5cfef5e676d",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -755,26 +715,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x51a00470eb50d758ecff3b96db0bf4a8e86268f4",
+      "address": "0x985f187489954435ddf9571d45500184566e4b46",
       "name": "OptimismMintableERC20Factory",
       "role": "registry",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "optimism",
       "product_line": "Contract Addresses",
       "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xe01efbeb1089d1d1db9c6c8b135c934c0734c846",
+      "is_proxy": false,
+      "impl_address": null,
       "impl_name": "OptimismMintableERC20Factory",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x51a00470eb50d758ecff3b96db0bf4a8e86268f4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -826,26 +777,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x1d59bc9fce6b8e2b1bf86d4777289ffd83d24c99",
+      "address": "0x544dbfe87c3c308502371468b23386a9486c9680",
       "name": "OptimismPortal2",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "optimism",
       "product_line": "Contract Addresses",
       "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xe2f826324b2faf99e513d16d266c3f80ae87832b",
+      "is_proxy": false,
+      "impl_address": null,
       "impl_name": "OptimismPortal2",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1d59bc9fce6b8e2b1bf86d4777289ffd83d24c99",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -897,26 +839,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xa1780b58a75816f69ac34d606486d98824d41a73",
+      "address": "0xc2e2d8150ae64367cadc3d47e98253e54b5458c7",
       "name": "ProtocolVersions",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "optimism",
       "product_line": "Contract Addresses",
       "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xc2e2d8150ae64367cadc3d47e98253e54b5458c7",
+      "is_proxy": false,
+      "impl_address": null,
       "impl_name": "ProtocolVersions",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xa1780b58a75816f69ac34d606486d98824d41a73",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -968,26 +901,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x1aec4c3be47c30d0befa7514cf9d99eac596959d",
+      "address": "0x579f8dfdaf8f180050c67b5d41342d686f2b28a6",
       "name": "SuperchainConfig",
       "role": "governance",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "optimism",
       "product_line": "Contract Addresses",
       "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x579f8dfdaf8f180050c67b5d41342d686f2b28a6",
+      "is_proxy": false,
+      "impl_address": null,
       "impl_name": "SuperchainConfig",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1aec4c3be47c30d0befa7514cf9d99eac596959d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -1008,26 +932,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x5d1f4bbaf6d484fa9d5d9705f92de6063bff6055",
+      "address": "0x726c6ac8a53061e56afb2c890545348ba6f0df0e",
       "name": "SystemConfig",
       "role": "governance",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "optimism",
       "product_line": "Contract Addresses",
       "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xab9d6cb7a427c0765163a7f45bb91cafe5f2d375",
+      "is_proxy": false,
+      "impl_address": null,
       "impl_name": "SystemConfig",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5d1f4bbaf6d484fa9d5d9705f92de6063bff6055",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -1241,29 +1156,7 @@
       "contamination_flag": "review"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 3020,
-      "audit_key": "audit-3020",
-      "report_name": "SlowMist Audit Report - Cyber Token Bridges.pdf",
-      "report_url": "https://github.com/cyberconnecthq/cyber-token-bridges/blob/main/audit/SlowMist%20Audit%20Report%20-%20Cyber%20Token%20Bridges.pdf",
-      "auditor": "SlowMist",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -1319,77 +1212,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x588dad44201885ff23068f1142e303d52d103919",
-      "name": "DelayedWETH",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x3c01ebf22e9c111528c1e027d68944edab08dfc9",
       "name": "L1CrossDomainMessenger",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x51a00470eb50d758ecff3b96db0bf4a8e86268f4",
-      "name": "OptimismMintableERC20Factory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1d59bc9fce6b8e2b1bf86d4777289ffd83d24c99",
-      "name": "OptimismPortal2",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa1780b58a75816f69ac34d606486d98824d41a73",
-      "name": "ProtocolVersions",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1aec4c3be47c30d0befa7514cf9d99eac596959d",
-      "name": "SuperchainConfig",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5d1f4bbaf6d484fa9d5d9705f92de6063bff6055",
-      "name": "SystemConfig",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 12,
-    "upstream": 8,
+    "native": 6,
+    "upstream": 14,
     "standard_library": 6,
     "needs_review": 5
   },
@@ -1398,12 +1231,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 3020,
-        "report_name": "SlowMist Audit Report - Cyber Token Bridges.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "babyswap",
-  "generated_at": "2026-05-25T00:34:07.294Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:58:58.030Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "babyswap",
     "tier": 0,
@@ -35,7 +35,7 @@
     "coverage_pct": 1.5,
     "total_audits": 1,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 1351943.98245,
+    "dl_tvl_usd": 1344585.9449,
     "tvl_usd": 241077.07556182094,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "BabySwap is a decentralized exchange (DEX) on BSC that facilitates token swaps and liquidity provision, primarily targeting newborn and emerging crypto projects. It includes its own native token, BabyToken, and a router contract for executing trades.",
+    "project_purpose": "BabySwap is a BNB Chain AMM and NFT DEX ecosystem for swaps, liquidity provision, and emerging project markets. Its broader contract surface includes the BABY token, router infrastructure, NFT and marketplace components, farming, launchpad, and Wonderland-related modules.",
     "relationship_narrative": "The BabySmartRouter proxy delegates to the BabyNormalRouter implementation to handle swap logic, while BabyToken serves as the protocol's native asset, likely used for fees or rewards. All contracts are deployed from a single deployer cluster, indicating a unified infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 113,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

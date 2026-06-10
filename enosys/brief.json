@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "enosys",
-  "generated_at": "2026-05-31T07:55:25.989Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:02.217Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "enosys",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Enosys is a multi-product DeFi protocol on Ethereum offering token bridging, AMM-based decentralized exchange, governance incentives, collateralized debt positions, and yield generation. It enables cross-chain asset transfers, liquidity provision, and lending/borrowing services.",
-    "relationship_narrative": "The bridge family uses StandardToken as the bridged asset representation, while WrapDepositRedeem contracts handle the locking and minting logic. Other families (AMM, loans, governance) likely share the bridged tokens and may depend on the bridge for cross-chain liquidity, though their contracts are not detailed here.",
+    "project_purpose": "Enosys is a multi-chain DeFi ecosystem primarily centered on Flare and Songbird, with additional activity across other supported chains. Its product surface includes DEX/AMM liquidity, farms and yield products, loans/collateralized debt positions, bridge functionality, NFTs, governance/APYCloud, and supporting infrastructure. The currently listed Ethereum contracts represent only a small, incomplete subset of the project surface and should not be treated as project-wide Enosys coverage without mapping the non-Ethereum product contracts.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

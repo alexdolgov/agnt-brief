@@ -7,28 +7,29 @@
 - Project: Kava Earn (`kava-earn`)
 - Website: [https://app.kava.io/home](https://app.kava.io/home)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-30T20:51:32.378Z
-- Pipeline run: v2-pipeline-2026-05-30-9de83b-6726
+- Generated: 2026-06-10T20:59:06.464Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,568,529.04
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Kava Earn is a yield aggregator on the Kava chain that optimizes user deposits across various DeFi strategies to maximize returns.
-
-### Architecture
-
-Only one contract is identified, so no inter-family relationships exist. The single contract likely handles all deposit, withdrawal, and strategy management functions.
+Kava Earn is a yield aggregator on the Kava chain.
 
 ## Fork Lineage
 
 This project is a code fork of **Kava Mint** (`kava-mint`).
-2 audits are inherited from this parent project.
+0 audits are inherited from this parent project.
 
-Total inherited audits: 2.
+Total inherited audits: 0.
 
 ## Audit Coverage Summary
 
@@ -38,11 +39,11 @@ Total inherited audits: 2.
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 2
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2021-09 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -84,8 +85,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [proto-docs.md](https://github.com/kava-labs/kava/blob/master/docs/core/proto-docs.md) | unknown | Audit | n/a | unknown | Inherited from Kava Mint | n/a | 0 | n/a |
-| [skynet.certik.com/projects/kava](https://skynet.certik.com/projects/kava) | CertiK | Audit | 2021-09 | stale | Inherited from Kava Mint | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -106,14 +105,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [11491] proto-docs.md
-- [11492] skynet.certik.com/projects/kava
 
 Fork inheritance lineage and inherited audits are included when available.

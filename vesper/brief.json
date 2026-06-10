@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "vesper",
-  "generated_at": "2026-05-31T11:34:48.285Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:59:18.586Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "vesper",
     "tier": 1,
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Vesper is a yield aggregator that optimizes returns on deposited assets by automatically allocating funds across various DeFi strategies. Users deposit tokens into pools, which are managed by strategies to earn yield, while the VSP token governs the protocol and rewards participants.",
+    "project_purpose": "Vesper is a multi-chain yield platform where users deposit assets into pools and related yield products that allocate funds across DeFi strategies to generate returns. The protocol includes pool-based deposits, protocol/institutional yield offerings, VSP governance/rewards, and related Metronome synthetics messaging across supported chains.",
     "relationship_narrative": "The VSP token serves as the governance and reward token across the protocol, while VVSP is a derivative token likely used for staking or enhanced rewards. All pools and rewards contracts are part of a single product family, sharing the same deployer and upgradeable proxy infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 44,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

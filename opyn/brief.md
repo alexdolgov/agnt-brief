@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Opyn
 
-⚠️ Lifecycle status: DEAD - TVL changed 3.7% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 3.7% over 90 days
 
 ## Project Overview
 
 - Project: Opyn (`opyn`)
 - Website: [https://www.opyn.co](https://www.opyn.co)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-31T10:10:24.835Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:08.824Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, ethereum
 - Contract surface: 103 unique implementations (200 raw deployments)
 - DeFi Llama TVL: $2,020,344.00
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Opyn is a decentralized options protocol that enables users to create, trade, and manage options and structured products on Ethereum and Avalanche. It offers capital-efficient derivatives through its Gamma and Squeeth product lines, allowing for hedging, speculation, and yield generation.
+Opyn includes legacy decentralized options infrastructure such as Gamma and Squeeth on Ethereum and Avalanche, with residual TVL and historical derivatives contracts. Its current public positioning has shifted toward Opyn Markets, described as a forthcoming Uniswap-like perpetuals ecosystem. Gamma and Squeeth should be treated as legacy or unresolved-current-status product lines unless current activity is independently verified.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ Opyn Gamma and Squeeth share infrastructure through the Controller contract, whi
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $1,022,254.47 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $1,022,254.47 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

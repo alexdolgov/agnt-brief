@@ -1,23 +1,23 @@
 # Agentic Audit Brief: SingularV
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 37.3% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 37.3% over 90 days
 
 ## Project Overview
 
 - Project: SingularV (`singularv`)
 - Website: [https://app.morpho.org/ethereum/curator/singularv](https://app.morpho.org/ethereum/curator/singularv)
-- Lifecycle: unknown (Tier 0, 92.8% below peak)
-- Generated: 2026-05-29T14:19:59.947Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Lifecycle: declining (Tier 0, 92.8% below peak)
+- Generated: 2026-06-10T20:59:16.193Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 83 unique implementations (776 raw deployments)
+- Contract surface: 83 unique implementations (775 raw deployments)
 - DeFi Llama TVL: $2,544,044.73
 - On-chain TVL (included contracts): $1,083,206,446.28
 - TVL by chain: Ethereum $1,083,206,446.28
 
 ## Project Description
 
-SingularV is a DeFi protocol that provides risk curation and lending optimization services, primarily built on top of Morpho. It offers tokenized supply vaults and migration tools to help users manage and optimize their positions across various lending markets.
+SingularV is a Morpho risk curator and onchain market-making firm focused on optimization and risk management for Morpho-curated vaults and markets. Morpho core contracts, Morpho periphery, Chainlink oracles, standard tokens, and migration tooling should be treated as upstream or third-party dependencies unless direct SingularV ownership is evidenced.
 
 ### Architecture
 
@@ -25,31 +25,30 @@ The Tokenized Supply Vaults and Vaults families represent the core user-facing p
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 13/70 (18.6%)
-- Verified + Unaudited implementations: 57
+- Verified implementations audited: 8/70 (11.4%)
+- Verified + Unaudited implementations: 62
 - Verified by bytecode match: 0
 - Unverified implementations: 13
 - Unique implementations: 83
-- Raw deployments: 776
-- Audits discovered: 12
-- Scoreable audits (matched contracts): 8
+- Raw deployments: 775
+- Audits discovered: 7
+- Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): $1,083,206,446.28
 - Latest audit: 2024-01 (stale)
-- Staleness: 0 fresh, 0 aging, 11 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 6 stale, 1 unknown
 - Tier 1 coverage: 11.4% (ChainSecurity, Spearbit)
-- Note: This protocol is classified as [unknown]. ASD of $1,083,206,446.28 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of $1,083,206,446.28 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 11 | 15.7% | 2023-11 |
 | Spearbit | Tier 1 | 8 | 11.4% | 2024-01 |
 | ChainSecurity | Tier 1 | 1 | 1.4% | 2022-09 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (13)
+### ✅ Verified + Audited (8)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -59,15 +58,10 @@ The Tokenized Supply Vaults and Vaults families represent the core user-facing p
 | AdaptiveCurveIrm | unknown | ethereum | [`0x870ac1...ba00bc`](./contracts/ethereum-1/0x870ac11d48b15db9a138cf899d20f13f79ba00bc/) | ✅ Audited |
 | CompoundV2MigrationBundler | operational_periphery | ethereum | [`0x26bf52...8c8647`](./contracts/ethereum-1/0x26bf52a84360ad3d01d7cdc28fc2ddc04d8c8647/) | ✅ Audited |
 | CompoundV3MigrationBundler | operational_periphery | ethereum | [`0x3a0e2e...479558`](./contracts/ethereum-1/0x3a0e2e9fb9c95fbc843daf166276c90b6c479558/) | ✅ Audited |
-| EthereumBundler | unknown | ethereum | [`0xa7995f...f55107`](./contracts/ethereum-1/0xa7995f71aa11525db02fc2473c37dee5dbf55107/) | ✅ Audited |
-| Lens | periphery | ethereum | 2 deployments: ethereum [`0x507fa3...a91ff4`](./contracts/ethereum-1/0x507fa343d0a90786d86c7cd885f5c49263a91ff4/); ethereum `0x930f1b...51ef67` | ✅ Audited |
-| MetaMorphoFactory | registry | ethereum | [`0xa9c3d3...c41101`](./contracts/ethereum-1/0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101/) | ✅ Audited |
-| Morpho | unknown | ethereum | 4 deployments: ethereum [`0x33333a...b33333`](./contracts/ethereum-1/0x33333aea097c193e66081e930c33020272b33333/); ethereum `0x777777...f5f3e0`; ethereum `0x888888...b58888`; ethereum `0xbbbbbb...eeffcb` | ✅ Audited |
+| Morpho | unknown | ethereum | 3 deployments: ethereum [`0x33333a...b33333`](./contracts/ethereum-1/0x33333aea097c193e66081e930c33020272b33333/); ethereum `0x777777...f5f3e0`; ethereum `0x888888...b58888` | ✅ Audited |
 | PositionsManager | governance | ethereum | 2 deployments: ethereum [`0x4592e4...dac6de`](./contracts/ethereum-1/0x4592e45e0c5dbee94a135720ccff2e4353dac6de/); ethereum `0xcecc75...93f869` | ✅ Audited |
-| UniversalRewardsDistributor | operational_periphery | ethereum | [`0x330eef...e61ddb`](./contracts/ethereum-1/0x330eefa8a787552dc5cad3c3ca644844b1e61ddb/) | ✅ Audited |
-| UrdFactory | registry | ethereum | [`0x9baa51...ee7c8d`](./contracts/ethereum-1/0x9baa51245cdd28d8d74afe8b3959b616e9ee7c8d/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (57)
+### ⚠️ Verified + Unaudited (62)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -90,12 +84,15 @@ The Tokenized Supply Vaults and Vaults families represent the core user-facing p
 | EACAggregatorProxy | unknown | ethereum | 146 deployments: ethereum [`0x00a773...9d7c29`](./contracts/ethereum-1/0x00a773bd2ce922f866bb43ab876009fb959d7c29/); ethereum `0x00cb80...eae050`; ethereum `0x014356...c1d0f3`; ethereum `0x01ce12...d7e26c`; ethereum `0x029849...5760e2`; ethereum `0x050c04...cec58f`; ethereum `0x06e416...a62eb5`; ethereum `0x0981af...5aca99`; ethereum `0x0bdb05...958274`; ethereum `0x0ca05b...0fe235`; ethereum `0x104cd0...f104d8`; ethereum `0x134fe0...b4fb82`; ethereum `0x139c85...d43587`; ethereum `0x15c8ea...144352`; ethereum `0x17d054...09f1c1`; ethereum `0x1b58b6...a36ac5`; ethereum `0x1b61ba...70bb1a`; ethereum `0x1b988a...c21b3a`; ethereum `0x1cedaa...576a4a`; ethereum `0x1ec437...448eb5`; ethereum `0x1f9eb0...39334a`; ethereum `0x24340e...dc56dd`; ethereum `0x2465ce...e2a028`; ethereum `0x26929b...a10fb1`; ethereum `0x2729f4...b4bb05`; ethereum `0x278833...80e143`; ethereum `0x2885d1...6c6023`; ethereum `0x2ca42d...5b1275`; ethereum `0x2f2ea2...b32d63`; ethereum `0x31e0a8...296ee9`; ethereum `0x35e3f7...36ec56`; ethereum `0x35f08e...457484`; ethereum `0x36d399...070219`; ethereum `0x38c5ae...b4699b`; ethereum `0x3affc4...6dc74a`; ethereum `0x3b41d5...f02dc9`; ethereum `0x3d7ae7...aba3a0`; ethereum `0x3e59bc...2b6914`; ethereum `0x3e7d1e...64e32d`; ethereum `0x418a6c...8b1685`; ethereum `0x478909...4ade0b`; ethereum `0x483d36...a69fbb`; ethereum `0x4d2574...b10eba`; ethereum `0x4ea6ec...618c0d`; ethereum `0x4ffc43...f01507`; ethereum `0x536218...54c2d0`; ethereum `0x5586bf...80189c`; ethereum `0x57c9ab...ba06a1`; ethereum `0x587738...fd2a93`; ethereum `0x58921a...4a2379`; ethereum `0x59f24f...2de8ca`; ethereum `0x5fb391...5a5745`; ethereum `0x605d5c...9bc360`; ethereum `0x60cbe8...11fea1`; ethereum `0x611e0d...015921`; ethereum `0x65a773...dbc232`; ethereum `0x67c2e6...605dde`; ethereum `0x68ff67...d8c4ed`; ethereum `0x6b54e8...2167b5`; ethereum `0x6bd37c...1f2849`; ethereum `0x6c8e01...35e6c4`; ethereum `0x6ebc52...c2233f`; ethereum `0x6f9d4d...e79aac`; ethereum `0x73a11e...09fb75`; ethereum `0x759bbc...976d02`; ethereum `0x764fb9...cc5c52`; ethereum `0x7bf3ad...1c548b`; ethereum `0x7d77fd...c55fa0`; ethereum `0x7ece4e...726797`; ethereum `0x7eed37...cc21ce`; ethereum `0x812436...626674`; ethereum `0x82597c...759607`; ethereum `0x833d8e...60965a`; ethereum `0x83441c...7e6fa7`; ethereum `0x851ec5...b0fe02`; ethereum `0x86392d...c52812`; ethereum `0x86cf33...65a5d2`; ethereum `0x875d60...91b97e`; ethereum `0x8797ab...35e3d8`; ethereum `0x891780...050622`; ethereum `0x899411...57d9fd`; ethereum `0x89c792...b578f6`; ethereum `0x8a4320...ca323a`; ethereum `0x8dd1cd...a97c61`; ethereum `0x8fffff...6818f6`; ethereum `0x919c77...2dd19f`; ethereum `0x926a93...313363`; ethereum `0x9288c1...b29254`; ethereum `0x9613a5...448739`; ethereum `0x96c455...10f4e2`; ethereum `0x971e8f...5eee0f`; ethereum `0x97e4f2...f944e5`; ethereum `0x98334b...d69c00`; ethereum `0x9ae961...9e543e`; ethereum `0x9b41ad...f25bfe`; ethereum `0x9f0052...9c6718`; ethereum `0x9fccf4...4b5751`; ethereum `0xa20623...a5a03a`; ethereum `0xa34317...981c8e`; ethereum `0xa61495...ea4727`; ethereum `0xa6bcac...d989ec`; ethereum `0xa8f16c...71df4c`; ethereum `0xaab2f6...557756`; ethereum `0xad35bd...f9ad94`; ethereum `0xae13f0...9bbf05`; ethereum `0xae2ebe...cd816e`; ethereum `0xaed0c3...9c1ee9`; ethereum `0xaf5e8d...1588a6`; ethereum `0xb09fc5...f477b5`; ethereum `0xb2ab82...803670`; ethereum `0xb2dde9...16874e`; ethereum `0xb3a474...9fb959`; ethereum `0xb9583c...b92216`; ethereum `0xbcf579...902539`; ethereum `0xbe456f...cb75d5`; ethereum `0xbf86e7...566b06`; ethereum `0xbfc189...b75534`; ethereum `0xc40ec8...a37ff2`; ethereum `0xc5c8c9...c6f603`; ethereum `0xce1051...657a7f`; ethereum `0xcfe54b...cab4a8`; ethereum `0xd41390...ce75ec`; ethereum `0xd48b96...bc6e3d`; ethereum `0xd54b03...848501`; ethereum `0xd6cc08...91c7a1`; ethereum `0xdb299d...f92f5f`; ethereum `0xdc4bdb...2edc75`; ethereum `0xdebc51...92009a`; ethereum `0xe20ca8...f57706`; ethereum `0xe25277...1f3e13`; ethereum `0xe6a7b5...50a01c`; ethereum `0xe7015c...ac3741`; ethereum `0xea286b...890596`; ethereum `0xeb988b...2d3cab`; ethereum `0xec1d1b...9484aa`; ethereum `0xee636e...39d40d`; ethereum `0xef8a4a...a7759a`; ethereum `0xf05d9b...a13deb`; ethereum `0xf0985f...382efe`; ethereum `0xf322fb...68c49f`; ethereum `0xf40300...bee88c`; ethereum `0xf62356...47505c`; ethereum `0xf8d0ea...1b097f`; ethereum `0xf9fcc6...6eee67`; ethereum `0xfcf181...246385`; ethereum `0xfdfa69...c02237` | ⚠️ Unaudited |
 | ERC20WrapperAdapter | adapter | ethereum | [`0xf83d17...87f962`](./contracts/ethereum-1/0xf83d17dfe160597b19e4fdd8ea61a23e9a87f962/) | ⚠️ Unaudited |
 | ERC4626Feed | unknown | ethereum | 4 deployments: ethereum [`0x6d3273...89891f`](./contracts/ethereum-1/0x6d32736220291d20e927b891aba976c6fc89891f/); ethereum `0x84e51a...5efcb8`; ethereum `0x8feccb...4b1342`; ethereum `0xa5f1a4...f459d1` | ⚠️ Unaudited |
+| EthereumBundler | unknown | ethereum | [`0xa7995f...f55107`](./contracts/ethereum-1/0xa7995f71aa11525db02fc2473c37dee5dbf55107/) | ⚠️ Unaudited |
 | EthereumBundlerV2 | unknown | ethereum | [`0x4095f0...e30077`](./contracts/ethereum-1/0x4095f064b8d3c3548a3bebfd0bbfd04750e30077/) | ⚠️ Unaudited |
 | EthereumGeneralAdapter1 | adapter | ethereum | [`0x4a6c31...be0ae0`](./contracts/ethereum-1/0x4a6c312ec70e8747a587ee860a0353cd42be0ae0/) | ⚠️ Unaudited |
 | Executor | unknown | ethereum | [`0x72d227...5e6938`](./contracts/ethereum-1/0x72d2277c7242a4464d9b277cf682e350205e6938/) | ⚠️ Unaudited |
 | Firefighter | unknown | ethereum | 2 deployments: ethereum [`0x213f30...9ffb23`](./contracts/ethereum-1/0x213f30e50892dc90d8893618c656316b769ffb23/); ethereum `0x6ec687...5a7385` | ⚠️ Unaudited |
 | KeeperRegistry | operational_periphery | ethereum | [`0x4f7595...dd08c7`](./contracts/ethereum-1/0x4f75953c2661d3a0138fcd80551ea10b80dd08c7/) | ⚠️ Unaudited |
+| Lens | periphery | ethereum | 2 deployments: ethereum [`0x507fa3...a91ff4`](./contracts/ethereum-1/0x507fa343d0a90786d86c7cd885f5c49263a91ff4/); ethereum `0x930f1b...51ef67` | ⚠️ Unaudited |
 | Liquidator | operational_periphery | ethereum | [`0xc88058...79dd4d`](./contracts/ethereum-1/0xc88058aa7c210e23e6cc54baba7ba6c51479dd4d/) | ⚠️ Unaudited |
+| MetaMorphoFactory | registry | ethereum | [`0xa9c3d3...c41101`](./contracts/ethereum-1/0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101/) | ⚠️ Unaudited |
 | MetaMorphoV1_1Factory | registry | ethereum | [`0x1897a8...535c24`](./contracts/ethereum-1/0x1897a8997241c1cd4bd0698647e4eb7213535c24/) | ⚠️ Unaudited |
 | MetaOracleDeviationTimelockFactory | operational_periphery | ethereum | 6 deployments: ethereum [`0x44d049...17a9f4`](./contracts/ethereum-1/0x44d049eed4ad33807859c45bbd3a8eb47917a9f4/); ethereum `0xa3603c...270985`; ethereum `0xab137e...16f893`; ethereum `0xc73a74...7ebf97`; ethereum `0xc741f6...935e3b`; ethereum `0xcfc5de...bd285d` | ⚠️ Unaudited |
 | MorphoChainlinkOracleV2 | operational_periphery | ethereum | [`0x95e85f...24bd87`](./contracts/ethereum-1/0x95e85fef34b79f0030f41fb619733bf7e024bd87/) | ⚠️ Unaudited |
@@ -120,6 +117,8 @@ The Tokenized Supply Vaults and Vaults families represent the core user-facing p
 | SwapperRusd | adapter | ethereum | 3 deployments: ethereum [`0x242db4...9dacee`](./contracts/ethereum-1/0x242db4438ba1686050d679680478da876a9dacee/); ethereum `0xa6d9d3...524310`; ethereum `0xeafd23...d5882a` | ⚠️ Unaudited |
 | SwapperSimpleUniV3 | adapter | ethereum | 2 deployments: ethereum [`0x45241b...33d54a`](./contracts/ethereum-1/0x45241b97afbe5b9883b8439615d9f7e28033d54a/); ethereum `0x71aafd...b078c7` | ⚠️ Unaudited |
 | SwapperWsteth | adapter | ethereum | 3 deployments: ethereum [`0x8fa444...9dc868`](./contracts/ethereum-1/0x8fa4443df3989ed5c51a4e6f436f1f51129dc868/); ethereum `0xc2d777...3efe00`; ethereum `0xebbb2b...0e0e55` | ⚠️ Unaudited |
+| UniversalRewardsDistributor | operational_periphery | ethereum | [`0x330eef...e61ddb`](./contracts/ethereum-1/0x330eefa8a787552dc5cad3c3ca644844b1e61ddb/) | ⚠️ Unaudited |
+| UrdFactory | registry | ethereum | [`0x9baa51...ee7c8d`](./contracts/ethereum-1/0x9baa51245cdd28d8d74afe8b3959b616e9ee7c8d/) | ⚠️ Unaudited |
 | UsycBot | unknown | ethereum | [`0x3e33c1...900c03`](./contracts/ethereum-1/0x3e33c1e80cf8fd074da6eb408f2059c2a9900c03/) | ⚠️ Unaudited |
 | UsycLiquidator | operational_periphery | ethereum | [`0x385826...4728ce`](./contracts/ethereum-1/0x3858266579f2913cbba5eaa6381cddfc684728ce/) | ⚠️ Unaudited |
 | VaultV2Factory | registry | ethereum | [`0xa1d94f...6c0405`](./contracts/ethereum-1/0xa1d94f746defa1928926b84fb2596c06926c0405/) | ⚠️ Unaudited |
@@ -165,18 +164,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [2023-10-13-morpho-blue-and-speed-jump-irm-open-zeppelin.pdf](https://github.com/morpho-org/morpho-blue/blob/main/audits/2023-10-13-morpho-blue-and-speed-jump-irm-open-zeppelin.pdf) | unknown | Audit | 2023-10 | stale | Direct | contract_name | 4 | high |
 | [2023-11-13-morpho-blue-cantina-managed-review.pdf](https://github.com/morpho-org/morpho-blue/blob/main/audits/2023-11-13-morpho-blue-cantina-managed-review.pdf) | Spearbit | Audit | 2023-11 | stale | Direct | contract_name | 4 | high |
 | [2024-01-05-morpho-blue-cantina-competition.pdf](https://github.com/morpho-org/morpho-blue/blob/main/audits/2024-01-05-morpho-blue-cantina-competition.pdf) | Spearbit | Audit | 2024-01 | stale | Direct | contract_name | 5 | medium |
 | [2023-11-14-metamorpho-cantina-managed-review.pdf](https://github.com/morpho-org/metamorpho/blob/main/audits/2023-11-14-metamorpho-cantina-managed-review.pdf) | Spearbit | Audit | 2023-11 | stale | Direct | n/a | 0 | n/a |
-| [2023-11-16-morpho-blue-periphery-open-zeppelin.pdf](https://github.com/morpho-org/metamorpho/blob/main/audits/2023-11-16-morpho-blue-periphery-open-zeppelin.pdf) | unknown | Audit | 2023-11 | stale | Direct | contract_name | 9 | high |
 | [2024-01-05-periphery-cantina-competition.pdf](https://github.com/morpho-org/metamorpho/blob/main/audits/2024-01-05-periphery-cantina-competition.pdf) | Spearbit | Audit | 2024-01 | stale | Direct | contract_name | 5 | high |
 | [ChainSecurity_Morpho_Labs_Morpho_Aave_v3_audit.pdf](https://github.com/morpho-org/morpho-optimizers/blob/main/audits/ChainSecurity_Morpho_Labs_Morpho_Aave_v3_audit.pdf) | ChainSecurity | Audit | 2022-09 | stale | Direct | contract_name | 4 | high |
-| [Omniscia_Morpho_HeapOrdering.pdf](https://github.com/morpho-org/morpho-optimizers/blob/main/audits/Omniscia_Morpho_HeapOrdering.pdf) | unknown | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
-| [Pessimistic_Morpho_Aave_V2.pdf](https://github.com/morpho-org/morpho-optimizers/blob/main/audits/Pessimistic_Morpho_Aave_V2.pdf) | unknown | Audit | 2022-07 | stale | Direct | contract_name | 6 | high |
 | [Spearbit_MorphoV1.pdf](https://github.com/morpho-org/morpho-optimizers/blob/main/audits/Spearbit_MorphoV1.pdf) | Spearbit | Audit | 2023-03 | stale | Direct | contract_name | 6 | medium |
 | [TrailOfBits_Morpho_Compound.pdf](https://github.com/morpho-org/morpho-optimizers/blob/main/audits/TrailOfBits_Morpho_Compound.pdf) | Trail of Bits | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Morpho_Omniscia.pdf](https://github.com/morpho-org/morpho-data-structures/blob/main/audits/Morpho_Omniscia.pdf) | unknown | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -192,10 +186,12 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xc3866d...88973d`](./contracts/ethereum-1/0xc3866d726c204c0836e0677a31973c649888973d/) | DummyFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf83d17...87f962`](./contracts/ethereum-1/0xf83d17dfe160597b19e4fdd8ea61a23e9a87f962/) | ERC20WrapperAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6d3273...89891f`](./contracts/ethereum-1/0x6d32736220291d20e927b891aba976c6fc89891f/) | ERC4626Feed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa7995f...f55107`](./contracts/ethereum-1/0xa7995f71aa11525db02fc2473c37dee5dbf55107/) | EthereumBundler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4095f0...e30077`](./contracts/ethereum-1/0x4095f064b8d3c3548a3bebfd0bbfd04750e30077/) | EthereumBundlerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4a6c31...be0ae0`](./contracts/ethereum-1/0x4a6c312ec70e8747a587ee860a0353cd42be0ae0/) | EthereumGeneralAdapter1 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x72d227...5e6938`](./contracts/ethereum-1/0x72d2277c7242a4464d9b277cf682e350205e6938/) | Executor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc88058...79dd4d`](./contracts/ethereum-1/0xc88058aa7c210e23e6cc54baba7ba6c51479dd4d/) | Liquidator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa9c3d3...c41101`](./contracts/ethereum-1/0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101/) | MetaMorphoFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1897a8...535c24`](./contracts/ethereum-1/0x1897a8997241c1cd4bd0698647e4eb7213535c24/) | MetaMorphoV1_1Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x44d049...17a9f4`](./contracts/ethereum-1/0x44d049eed4ad33807859c45bbd3a8eb47917a9f4/) | MetaOracleDeviationTimelockFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6ff336...f83476`](./contracts/ethereum-1/0x6ff33615e792e35ed1026ea7caccf42d9bf83476/) | PreLiquidationFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -206,6 +202,8 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x242db4...9dacee`](./contracts/ethereum-1/0x242db4438ba1686050d679680478da876a9dacee/) | SwapperRusd | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x45241b...33d54a`](./contracts/ethereum-1/0x45241b97afbe5b9883b8439615d9f7e28033d54a/) | SwapperSimpleUniV3 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8fa444...9dc868`](./contracts/ethereum-1/0x8fa4443df3989ed5c51a4e6f436f1f51129dc868/) | SwapperWsteth | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x330eef...e61ddb`](./contracts/ethereum-1/0x330eefa8a787552dc5cad3c3ca644844b1e61ddb/) | UniversalRewardsDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9baa51...ee7c8d`](./contracts/ethereum-1/0x9baa51245cdd28d8d74afe8b3959b616e9ee7c8d/) | UrdFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3e33c1...900c03`](./contracts/ethereum-1/0x3e33c1e80cf8fd074da6eb408f2059c2a9900c03/) | UsycBot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x385826...4728ce`](./contracts/ethereum-1/0x3858266579f2913cbba5eaa6381cddfc684728ce/) | UsycLiquidator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa1d94f...6c0405`](./contracts/ethereum-1/0xa1d94f746defa1928926b84fb2596c06926c0405/) | VaultV2Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -227,16 +225,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=6, medium=2
-- Match method counts: extraction_exact=43
+- Extraction confidence breakdown: high=3, medium=2
+- Match method counts: extraction_exact=24
 
 Zero-match audit list:
 
 - [8734] 2023-11-14-metamorpho-cantina-managed-review.pdf
-- [8738] Omniscia_Morpho_HeapOrdering.pdf
 - [8741] TrailOfBits_Morpho_Compound.pdf
-- [8742] Morpho_Omniscia.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

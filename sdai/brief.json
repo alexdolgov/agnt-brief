@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sdai",
-  "generated_at": "2026-05-27T14:05:57.028Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-06-10T20:59:14.831Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "sdai",
@@ -22,26 +22,24 @@
     "drop_from_peak_pct": 40.7712381814825
   },
   "summary": {
-    "total_contracts": 93,
-    "total_addresses": 178,
-    "unique_implementations": 93,
-    "total_deployments": 178,
+    "total_contracts": 91,
+    "total_addresses": 153,
+    "unique_implementations": 91,
+    "total_deployments": 153,
     "audited_contracts": 0,
-    "unaudited_contracts": 48,
+    "unaudited_contracts": 46,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 48,
+    "contracts_verified_unaudited": 46,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 45,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 71997196.50704,
-    "tvl_usd": 3819.17022888701,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "gnosis": 3819.17
-    },
-    "asd_usd": 3819.17022888701,
+    "tvl_usd": 71997196.50704,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": null,
     "chains": [
       "gnosis"
@@ -58,208 +56,20 @@
     }
   },
   "topography": {
-    "project_purpose": "sDAI is a yield-bearing token that represents deposits into the Savings xDAI contract, allowing users to earn interest on their xDAI holdings on the Gnosis chain.",
+    "project_purpose": "sDAI on Gnosis Chain is a yield-bearing token for deposits into the Savings xDAI contract at 0xaf204776c7245bf4147c2612bf6e5972ee483701, allowing users to earn MakerDAO DAI Savings Rate-derived interest on bridged DAI/xDAI. Aave, Agave, StaticATokenLM/aToken, Uniswap, Angle, and generic library or periphery contracts should be treated as external integrations or infrastructure unless separately proven to be owned sDAI core contracts.",
     "relationship_narrative": "The SavingsXDai contract is the core savings pool, while the StaticATokenLM implementations serve as upgradeable proxies that likely wrap the underlying aToken logic to provide the sDAI token interface.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 91,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x01ac9005f8446af28b065af87216b85faac5f6e2",
-      "name": "StaticATokenLM",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 3819.17022888701,
-      "is_proxy": true,
-      "impl_address": "0x248ce8d11c990190642aa4eb34e8af2c832acc13",
-      "impl_name": "StaticATokenLM",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x01ac9005f8446af28b065af87216b85faac5f6e2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x110e2d3d4c94596f5698c753d5cd43221d3ec78b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1584.1223087900669,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x13f2b819b7165686f36af81d887e1459d19de3fb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x20e5eb701e8d711d419d444814308f8c2243461f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1572.5855373703193,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x248ce8d11c990190642aa4eb34e8af2c832acc13",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x365d2e94e3c0e84e7f7a678482f6029151f35322",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x3d938f90ac251c1bcf6b4e399dd72c8c685a9bbc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 484.35878824724165,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x4a0c32e9079bf9e42eeeac31f2a05dccd07e8adb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x6d9dc1282b9e25a91b266b6b61ef65a38f949f22",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 119.88353698389237,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x85822764fe473028c753bc1124c5df6607fcb2f0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x8e0dbc8b165268943121527639889069c92bc339",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x9a4dcbcb82fac32580dc419fab3b8226868631ea",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x9ae6d606d9ca14c59b703494bea2d8870e5c97ed",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xa357efdaf20a1b3498400b029314a826b20ae61e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xa9502766df45f1bbdc4ea55a3fc38053be25cc68",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc1593302979e5e8e16e53c3303bf99ffa319d314",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 58.22005749549016,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xce02a2fb42d93438e508a32e80555add2fd8daff",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xd28490e975a49ce009163bb9feb566133ace4ed2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xe22b9b998366b42886c76fb69c436ec3e5e0ef13",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
     {
       "chain_id": 100,
       "chain_name": "gnosis",
@@ -593,82 +403,6 @@
           "chain_id": 100,
           "chain_name": "gnosis",
           "address": "0x91ed5609e5b9d6991f024570025c872382890018",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x223fe000fc6ef0ed36576d912e506b5f572c7ac2",
-      "name": "AToken",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "Aave",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AToken",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x223fe000fc6ef0ed36576d912e506b5f572c7ac2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x3e2081400517e9ef8436401e0c06dc2cbe9ec2d2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x8f0563a7987db44dfaea62d156deb8ec79b9ee40",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x8f40f69ceb986aa66fc64f18bad8d6491a3a27ba",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc8270d4a1c6b552b242db93b10056288b5e23725",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xdc77a058e11c341a54890dea56a3f4faf992f381",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -3812,9 +3546,9 @@
   ],
   "origin_summary": {
     "native": 9,
-    "upstream": 36,
+    "upstream": 35,
     "standard_library": 1,
-    "needs_review": 47
+    "needs_review": 46
   },
   "scope_matching_notes": {
     "match_method_counts": {},

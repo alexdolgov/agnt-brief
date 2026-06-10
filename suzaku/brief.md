@@ -5,17 +5,17 @@
 - Project: Suzaku (`suzaku`)
 - Website: [https://www.suzaku.network/](https://www.suzaku.network/)
 - Lifecycle: active (Tier 0, 88.1% below peak)
-- Generated: 2026-05-25T03:05:06.105Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:16.847Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche
 - Contract surface: 49 unique implementations (90 raw deployments)
-- DeFi Llama TVL: $1,238,311.81
+- DeFi Llama TVL: $1,231,417.65
 - On-chain TVL (included contracts): $1,179,711.62
 - TVL by chain: Avalanche $1,179,711.62
 
 ## Project Description
 
-Suzaku is a restaking protocol on Avalanche that allows users to stake assets and earn rewards. It provides liquid staking tokens and manages validator operations for restaking.
+Suzaku is an Avalanche L1 and sovereign-network decentralization and (re)staking hub that connects builders, stakers, and operators.
 
 ### Architecture
 
@@ -23,40 +23,37 @@ The SuzakuToken is the core liquid staking token, while LSTWrapper handles wrapp
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/21 (4.8%)
-- Verified + Unaudited implementations: 20
+- Verified implementations audited: 0/21 (0.0%)
+- Verified + Unaudited implementations: 21
 - Verified by bytecode match: 0
 - Unverified implementations: 28
 - Unique implementations: 49
 - Raw deployments: 90
-- Audits discovered: 2
-- Scoreable audits (matched contracts): 1
+- Audits discovered: 0
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $1,179,711.62
-- Latest audit: 2024-05 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
-- Tier 1 coverage: 4.8% (ChainSecurity)
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| ChainSecurity | Tier 1 | 1 | 4.8% | 2024-05 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (1)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| DefaultCollateralFactory | registry | avalanche | [`0xe52966...41a93c`](./contracts/avalanche-43114/0xe5296638aa86bd4175d802a210e158688e41a93c/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (20)
+### ⚠️ Verified + Unaudited (21)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | SuzakuToken | token | avalanche | [`0x451532...f6f5ef`](./contracts/avalanche-43114/0x451532f1c9eb7e4dc2d493db52b682c0acf6f5ef/) | ⚠️ Unaudited |
 | AvalancheL1Middleware | unknown | avalanche | 8 deployments: avalanche [`0x1bdc44...2427a7`](./contracts/avalanche-43114/0x1bdc44dd7195b067b945bc8d034b592aff2427a7/); avalanche `0x3fc510...56f00b`; avalanche `0x4817d2...636710`; avalanche `0x881f38...cbb037`; avalanche `0x8d453f...791830`; avalanche `0x941130...f0dc34`; avalanche `0xa6170c...a7e14b`; avalanche `0xbd02b1...2b26f4` | ⚠️ Unaudited |
 | BalancerValidatorManager | governance | avalanche | [`0xcff0fc...fa8ac7`](./contracts/avalanche-43114/0xcff0fc701ef47d6217fdf9def903990b7afa8ac7/) | ⚠️ Unaudited |
+| DefaultCollateralFactory | registry | avalanche | [`0xe52966...41a93c`](./contracts/avalanche-43114/0xe5296638aa86bd4175d802a210e158688e41a93c/) | ⚠️ Unaudited |
 | DelegatorFactory | registry | avalanche | [`0x657741...c8c2be`](./contracts/avalanche-43114/0x657741f081e7c7ea74cabb8e9c9004c913c8c2be/) | ⚠️ Unaudited |
 | L1Registry | registry | avalanche | [`0xaa59b1...746110`](./contracts/avalanche-43114/0xaa59b19a7636bf6d821aa124a14eee6c92746110/) | ⚠️ Unaudited |
 | L1RestakeDelegator | unknown | avalanche | [`0x826414...598096`](./contracts/avalanche-43114/0x8264147715e6da0900c11143c6e5879aa6598096/) | ⚠️ Unaudited |
@@ -126,8 +123,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [ChainSecurity_DefaultCollateral.pdf](https://github.com/symbioticfi/collateral/blob/main/audits/ChainSecurity_DefaultCollateral.pdf) | ChainSecurity | Audit | 2024-05 | stale | Direct | contract_name | 1 | high |
-| [Statemind_DefaultCollateral.pdf](https://github.com/symbioticfi/collateral/blob/main/audits/Statemind_DefaultCollateral.pdf) | Statemind | Audit | 2024-05 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -137,6 +132,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | avalanche | [`0x451532...f6f5ef`](./contracts/avalanche-43114/0x451532f1c9eb7e4dc2d493db52b682c0acf6f5ef/) | SuzakuToken | token | $1,179,711.62 | Verified native implementation with $1,179,711.62 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x1bdc44...2427a7`](./contracts/avalanche-43114/0x1bdc44dd7195b067b945bc8d034b592aff2427a7/) | AvalancheL1Middleware | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0xe52966...41a93c`](./contracts/avalanche-43114/0xe5296638aa86bd4175d802a210e158688e41a93c/) | DefaultCollateralFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x657741...c8c2be`](./contracts/avalanche-43114/0x657741f081e7c7ea74cabb8e9c9004c913c8c2be/) | DelegatorFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xaa59b1...746110`](./contracts/avalanche-43114/0xaa59b19a7636bf6d821aa124a14eee6c92746110/) | L1Registry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x826414...598096`](./contracts/avalanche-43114/0x8264147715e6da0900c11143c6e5879aa6598096/) | L1RestakeDelegator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -166,13 +162,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=1
-
-Zero-match audit list:
-
-- [3162] Statemind_DefaultCollateral.pdf
+- Extraction confidence breakdown: n/a
+- Match method counts: n/a
 
 Fork inheritance lineage and inherited audits are included when available.

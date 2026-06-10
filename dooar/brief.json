@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "dooar",
-  "generated_at": "2026-05-31T07:53:58.325Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.999Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "dooar",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "DOOAR is a decentralized exchange (DEX) protocol on BSC that enables users to swap tokens and provide liquidity through automated market maker (AMM) pools.",
+    "project_purpose": "DOOAR is a multi-chain decentralized exchange built by Find Satoshi Lab for STEPN users and broader DeFi users. It supports token swaps and liquidity provision through automated market maker pools. The currently recorded contract inventory represents only the Binance/BSC side of the project and should be treated as a partial BSC-only surface, not the full multi-chain DOOAR deployment.",
     "relationship_narrative": "The single product family contains the core factory contract that deploys and manages liquidity pools, with no additional supporting contracts identified.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -101,7 +106,7 @@
       "chain_name": "bsc",
       "address": "0x53e0e51b5ed9202110d7ecd637a4581db8b9879f",
       "name": "DooarSwapV2Router02",
-      "role": "adapter",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -146,7 +151,7 @@
       "chain_name": "bsc",
       "address": "0x53e0e51b5ed9202110d7ecd637a4581db8b9879f",
       "name": "DooarSwapV2Router02",
-      "role": "adapter",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

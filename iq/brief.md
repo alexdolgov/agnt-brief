@@ -1,27 +1,26 @@
 # Agentic Audit Brief: IQ
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: IQ (`iq`)
 - Website: [https://iq.wiki](https://iq.wiki)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T08:30:29.229Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:06.324Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $5,039,162.28
 - On-chain TVL (included contracts): $23,853,191.63
 - TVL by chain: Ethereum $23,853,191.63
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-IQ is a blockchain-based knowledge and information platform that tokenizes contributions and governance through the IQ token. It aims to create a decentralized encyclopedia and knowledge graph.
-
-### Architecture
-
-The IQ token contract is the core asset, while the Vyper contract likely serves as a supporting infrastructure component such as a staking or governance mechanism, sharing the same deployer cluster.
+IQ.wiki is a blockchain and cryptocurrency encyclopedia powered by the IQ token. The IQ token is used within the ecosystem for governance and staking, including HiIQ staking as reflected in DefiLlama staking data.
 
 ## Audit Coverage Summary
 
@@ -37,7 +36,6 @@ The IQ token contract is the core asset, while the Vyper contract likely serves 
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $23,853,191.63 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "primefi",
-  "generated_at": "2026-05-24T05:53:53.694Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:09.369Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "primefi",
     "tier": 0,
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 93.0333010219774
   },
   "summary": {
-    "total_contracts": 119,
-    "total_addresses": 191,
-    "unique_implementations": 119,
-    "total_deployments": 191,
+    "total_contracts": 117,
+    "total_addresses": 187,
+    "unique_implementations": 117,
+    "total_deployments": 187,
     "audited_contracts": 0,
-    "unaudited_contracts": 62,
+    "unaudited_contracts": 60,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 58,
+    "contracts_verified_unaudited": 56,
     "contracts_verified_by_bytecode": 4,
     "contracts_unverified": 57,
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3283364.1088300003,
+    "dl_tvl_usd": 233172.38496,
     "tvl_usd": 4115964.0391949997,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -59,9 +59,14 @@
     }
   },
   "topography": {
-    "project_purpose": "PrimeFi is a cross-chain lending protocol that enables users to supply assets to earn interest and borrow against collateral. It operates on HyperEVM and Base, integrating with Stargate for cross-chain liquidity and Hyperliquid for perpetual trading.",
+    "project_purpose": "PrimeFi is a cross-chain lending protocol that enables users to supply assets to earn interest and borrow against collateral. It supports deployments across HyperEVM/Hyperliquid, Base, and XDC. Third-party tokens, pools, Multicall, WETH/native wrappers, Circle USDC, and upstream bridge or liquidity infrastructure should be treated as dependencies or integrations rather than PrimeFi-owned contract surface or TVL.",
     "relationship_narrative": "The Core Protocol family provides the lending infrastructure, with pTokens and vdTokens representing supply and borrow positions respectively. Incentives, Fees & Governance contracts distribute rewards and manage protocol parameters, while cross-chain adapters like StargateBorrow and HyperliquidExtension extend functionality to external liquidity and trading venues.",
     "product_family_count": 6
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 117,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -621,15 +626,6 @@
       "impl_name": "FiatTokenV2_2",
       "deployments": [
         {
-          "chain_id": 999,
-          "chain_name": "hyperliquid",
-          "address": "0xb88339cb7199b77e23db6e890353e22632ba630f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
@@ -774,37 +770,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 999,
-      "chain_name": "hyperliquid",
-      "address": "0x981f145a71da6df4a7cbe892807782c9cc9a5515",
-      "name": "HyperswapPair",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "PrimeFi",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "HyperswapPair",
-      "deployments": [
-        {
-          "chain_id": 999,
-          "chain_name": "hyperliquid",
-          "address": "0x981f145a71da6df4a7cbe892807782c9cc9a5515",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 8453,
@@ -1476,9 +1441,9 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 999,
-      "chain_name": "hyperliquid",
-      "address": "0x5eb7ed8e58e7ed4509612f3e9ccb5433ee822dc9",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xc7c567e10656eb2f4b1024757263a587ac1942ad",
       "name": "Multicall3",
       "role": "periphery",
       "origin_kind": "standard_library",
@@ -1489,15 +1454,6 @@
       "impl_address": null,
       "impl_name": "Multicall3",
       "deployments": [
-        {
-          "chain_id": 999,
-          "chain_name": "hyperliquid",
-          "address": "0x5eb7ed8e58e7ed4509612f3e9ccb5433ee822dc9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 8453,
           "chain_name": "base",
@@ -4373,37 +4329,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 999,
-      "chain_name": "hyperliquid",
-      "address": "0x5555555555555555555555555555555555555555",
-      "name": "WHYPE9",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "PrimeFi",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "WHYPE9",
-      "deployments": [
-        {
-          "chain_id": 999,
-          "chain_name": "hyperliquid",
-          "address": "0x5555555555555555555555555555555555555555",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     }
   ],
   "audits": [
@@ -4787,7 +4712,7 @@
     "native": 61,
     "upstream": 7,
     "standard_library": 19,
-    "needs_review": 32
+    "needs_review": 30
   },
   "scope_matching_notes": {
     "match_method_counts": {},

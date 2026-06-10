@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "cyclone",
-  "generated_at": "2026-05-25T16:15:17.807Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:01.585Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "cyclone",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 85.7509520903931
   },
   "summary": {
-    "total_contracts": 64,
-    "total_addresses": 180,
-    "unique_implementations": 64,
-    "total_deployments": 180,
+    "total_contracts": 63,
+    "total_addresses": 179,
+    "unique_implementations": 63,
+    "total_deployments": 179,
     "audited_contracts": 0,
-    "unaudited_contracts": 31,
+    "unaudited_contracts": 30,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 31,
+    "contracts_verified_unaudited": 30,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 33,
     "coverage_pct": 0,
-    "total_audits": 3,
+    "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1306683.4168200002,
+    "dl_tvl_usd": 1301416.13677,
     "tvl_usd": 165469302.48964313,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -52,19 +52,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2019-11",
-    "audit_freshness": "stale",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 2,
-      "unknown": 1
+      "stale": 0,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Cyclone is a yield optimization protocol that aggregates liquidity pools and automates compounding across multiple chains. It offers vault-like products (CycloneV2, Aeolus) that auto-compound user deposits into underlying DeFi protocols, and includes a native token (CycloneToken) for governance and rewards.",
+    "project_purpose": "Cyclone is a zkSNARK-based transaction privacy protocol that provides mixer-style private transfers across supported chains. Its contract surface should be assessed as Cyclone-owned privacy-pool/deposit-withdrawal deployments and related protocol contracts, excluding third-party tokens, bridge/system contracts, DEX infrastructure, and other external dependencies. Tornado Cash audits may be treated only as inherited/reference evidence for reused zkSNARK implementation components unless Cyclone-specific audit scope is demonstrated.",
     "relationship_narrative": "All families share the CycloneToken as the governance and reward token, and rely on similar vault architectures (CycloneV2, Aeolus) adapted per chain. The Cyclone family provides the core token and base vault logic, while chain-specific families deploy these vaults with local adapters (e.g., PancakeRouter on BSC, UniswapV2CycloneRouter on Polygon) to interact with native DEXs.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 63,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1833,37 +1838,6 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x77777feddddffc19ff86db637967013e6c6a116c",
-      "name": "TORN",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "tornado-cash",
-      "product_line": "Cyclone",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "TORN",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x77777feddddffc19ff86db637967013e6c6a116c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 137,
       "chain_name": "polygon",
       "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
@@ -3100,71 +3074,7 @@
       "contamination_flag": null
     }
   ],
-  "audits": [
-    {
-      "audit_id": 3115,
-      "audit_key": "audit-3115",
-      "report_name": "As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](), [smart contracts](https://tornado.cash/Tornado_solidity_audit.pdf)). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9).",
-      "report_url": "https://tornado.cash/Tornado_circuit_audit.pdf",
-      "auditor": "yAudit",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2019-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3116,
-      "audit_key": "audit-3116",
-      "report_name": "As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](https://tornado.cash/Tornado_circuit_audit.pdf), [smart contracts]()). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9).",
-      "report_url": "https://tornado.cash/Tornado_solidity_audit.pdf",
-      "auditor": "yAudit",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2019-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3117,
-      "audit_key": "audit-3117",
-      "report_name": "[Для еще более глубокого погружения см. Криптографический обзор.]()",
-      "report_url": "https://tornado.cash/Tornado_cryptographic_review.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -3270,7 +3180,7 @@
   ],
   "origin_summary": {
     "native": 17,
-    "upstream": 21,
+    "upstream": 20,
     "standard_library": 0,
     "needs_review": 26
   },
@@ -3279,20 +3189,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 3115,
-        "report_name": "As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](), [smart contracts](https://tornado.cash/Tornado_solidity_audit.pdf)). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9)."
-      },
-      {
-        "audit_id": 3116,
-        "report_name": "As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](https://tornado.cash/Tornado_circuit_audit.pdf), [smart contracts]()). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9)."
-      },
-      {
-        "audit_id": 3117,
-        "report_name": "[Для еще более глубокого погружения см. Криптографический обзор.]()"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

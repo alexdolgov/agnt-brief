@@ -5,8 +5,8 @@
 - Project: Api3 (`api3`)
 - Website: [https://api3.org/](https://api3.org/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:39:05.643Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.667Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, mantle
 - Contract surface: 28 unique implementations (32 raw deployments)
 - DeFi Llama TVL: $55,284,496.11

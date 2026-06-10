@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "blur",
-  "generated_at": "2026-05-31T07:31:59.321Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.001Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "blur",
@@ -60,9 +60,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Blur is an NFT marketplace and lending protocol that enables users to trade NFTs with advanced order types and access liquidity through peer-to-peer perpetual lending. It operates on Ethereum and Blast, offering a native token for governance and incentives.",
+    "project_purpose": "Blur is an NFT marketplace with bidding and lending components operating on Ethereum and Blast. It enables NFT trading and access to NFT-backed liquidity, with a native token used for governance and incentives.",
     "relationship_narrative": "The Blur Bids and Blur Lending families share the BlurToken for governance and incentives, while the BlurPoolBlast contract in Blur Bids may interact with the lending protocol for liquidity or collateral management. Both families rely on ERC1967Proxy patterns for upgradeability, indicating a shared infrastructure approach.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 17,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -203,7 +208,7 @@
       "chain_name": "blast",
       "address": "0xb772d5c5f4a2eef67dfbc89aa658d2711341b8e5",
       "name": "BlurPoolBlast",
-      "role": "core_logic",
+      "role": "proxy",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "Blur Bids",

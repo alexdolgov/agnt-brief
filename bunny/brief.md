@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Bunny
 
-⚠️ Lifecycle status: DEAD - TVL changed 3.9% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 3.9% over 90 days
 
 ## Project Overview
 
 - Project: Bunny (`bunny`)
 - Website: [https://pancakebunny.finance/](https://pancakebunny.finance/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-24T06:07:00.348Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:01.210Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc, polygon
 - Contract surface: 101 unique implementations (453 raw deployments)
-- DeFi Llama TVL: $3,315,193.06
+- DeFi Llama TVL: $3,316,661.11
 - On-chain TVL (included contracts): $1,887,126.18
 - TVL by chain: Bsc $1,840,442.48 | Polygon $46,683.70
 
 ## Project Description
 
-Bunny is a yield optimization protocol that aggregates user deposits into auto-compounding vaults, primarily on BSC and Polygon. It leverages strategies like flipping LP tokens and staking in external platforms (e.g., Venus, PancakeSwap) to maximize returns, while distributing rewards in its native BUNNY token.
+Bunny is primarily a yield optimization protocol that aggregates user deposits into auto-compounding vaults, historically across BSC and Polygon, using strategies such as LP token handling and staking in external platforms like Venus and PancakeSwap. Its broader recorded contract surface also includes historical or ancillary product lines and operational contracts such as MoundTokenBSC, MoundOfferingBSC, VaultMND, VaultQBTBNB, VaultFlipToQBT, PotBunnyLover, PotCakeLover, BankBNB, CompensationTreasury, and safeSwapBNB, so not all deployments should be described as a single BUNNY-reward vault family.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ All vaults and pools share the BUNNY token for rewards, minted by BunnyMinterV2 
 - Latest audit: 2021-01 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $1,362,197.50 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $1,362,197.50 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

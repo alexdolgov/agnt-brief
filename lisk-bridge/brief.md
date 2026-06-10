@@ -5,17 +5,17 @@
 - Project: Lisk Bridge (`lisk-bridge`)
 - Website: [https://lisk.com](https://lisk.com)
 - Lifecycle: active (Tier 0, 90.7% below peak)
-- Generated: 2026-05-31T08:39:08.426Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
-- Chains: base, ethereum
-- Contract surface: 97 unique implementations (211 raw deployments)
+- Generated: 2026-06-10T20:59:07.002Z
+- Pipeline run: correction-skeletal-description-fix-all
+- Chains: ethereum
+- Contract surface: 96 unique implementations (210 raw deployments)
 - DeFi Llama TVL: $38,109,077.20
-- On-chain TVL (included contracts): $51,134,589.18
-- TVL by chain: Ethereum $50,938,346.36 | Base $196,242.82
+- On-chain TVL (included contracts): $50,938,346.36
+- TVL by chain: Ethereum $50,938,346.36
 
 ## Project Description
 
-Lisk Bridge is a canonical bridge enabling asset transfers between Ethereum L1 and the Lisk L2 network. It uses the OP Stack for rollup infrastructure and includes custom token bridging, vesting, and governance contracts.
+Lisk Bridge is the canonical bridge / bridged-assets surface for Lisk Chain, focused on asset transfers between Ethereum and the Lisk EVM L2 using OP Stack bridge infrastructure. It should be treated separately from the broader Lisk platform, incubator/fund programs, governance, vesting, testing, third-party application contracts, and unrelated token deployments.
 
 ### Architecture
 
@@ -23,15 +23,15 @@ The L1 family provides the core OP Stack bridge infrastructure, which is extende
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/88 (0.0%)
-- Verified + Unaudited implementations: 88
+- Verified implementations audited: 0/87 (0.0%)
+- Verified + Unaudited implementations: 87
 - Verified by bytecode match: 0
 - Unverified implementations: 9
-- Unique implementations: 97
-- Raw deployments: 211
+- Unique implementations: 96
+- Raw deployments: 210
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $51,134,589.18
+- ASD (verified + unaudited TVL): $50,938,346.36
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,13 +46,12 @@ The L1 family provides the core OP Stack bridge infrastructure, which is extende
 
 - None
 
-### ⚠️ Verified + Unaudited (88)
+### ⚠️ Verified + Unaudited (87)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | L1LiskToken | token | ethereum | [`0x6033f7...90ae3f`](./contracts/ethereum-1/0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f/) | ⚠️ Unaudited |
 | SwarmMarketsToken | token | ethereum | 2 deployments: ethereum [`0xb17548...247173`](./contracts/ethereum-1/0xb17548c7b510427baac4e267bea62e800b247173/); ethereum `0xfc63b1...216b33` | ⚠️ Unaudited |
-| L2LiskToken | token | base | [`0xac4853...2d1a24`](./contracts/base-8453/0xac485391eb2d7d88253a7f1ef18c37f4242d1a24/) | ⚠️ Unaudited |
 | UTUToken | token | ethereum | 2 deployments: ethereum [`0x804dd5...150993`](./contracts/ethereum-1/0x804dd5e6c45181b0b13ab58a3480956026150993/); ethereum `0xa58a4f...94189b` | ⚠️ Unaudited |
 | XTokenWrapper | token | ethereum | [`0x2b9dc6...da0cce`](./contracts/ethereum-1/0x2b9dc65253c035eb21778cb3898eab5a0ada0cce/) | ⚠️ Unaudited |
 | ActionManager | governance | ethereum | 3 deployments: ethereum [`0x7005e1...68c820`](./contracts/ethereum-1/0x7005e13e8118b72f0d77e3418cdf4b48e768c820/); ethereum `0x9835fa...56c477`; ethereum `0xbda574...dfe5f4` | ⚠️ Unaudited |
@@ -179,7 +178,6 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x6033f7...90ae3f`](./contracts/ethereum-1/0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f/) | L1LiskToken | token | $47,510,644.56 | Verified native implementation with $47,510,644.56 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xac4853...2d1a24`](./contracts/base-8453/0xac485391eb2d7d88253a7f1ef18c37f4242d1a24/) | L2LiskToken | token | $196,242.82 | Verified native implementation with $196,242.82 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x804dd5...150993`](./contracts/ethereum-1/0x804dd5e6c45181b0b13ab58a3480956026150993/) | UTUToken | token | $147,274.96 | Verified native implementation with $147,274.96 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2b9dc6...da0cce`](./contracts/ethereum-1/0x2b9dc65253c035eb21778cb3898eab5a0ada0cce/) | XTokenWrapper | token | $26,559.00 | Verified native implementation with $26,559.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7005e1...68c820`](./contracts/ethereum-1/0x7005e13e8118b72f0d77e3418cdf4b48e768c820/) | ActionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -244,7 +242,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 63 |
+| native | 62 |
 | upstream | 9 |
 | standard_library | 13 |
 | needs_review | 12 |

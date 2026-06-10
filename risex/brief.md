@@ -5,21 +5,22 @@
 - Project: RISEx (`risex`)
 - Website: [https://www.rise.trade/en](https://www.rise.trade/en)
 - Lifecycle: unknown
-- Generated: 2026-05-24T00:39:13.336Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:11.467Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $3,933,037.61
+- DeFi Llama TVL: $4,286,885.43
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-RISEx is a decentralized derivatives protocol enabling users to trade synthetic assets and manage risk through on-chain financial instruments.
-
-### Architecture
-
-No product families or contracts are defined in the provided metadata, so no structural relationships can be described.
+RISEx is a fully onchain perpetuals exchange / unified exchange built on RISE Chain, featuring a composable orderbook and collateral yield features.
 
 ## Audit Coverage Summary
 

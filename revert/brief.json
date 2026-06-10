@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "revert",
-  "generated_at": "2026-05-23T02:15:58.609Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:11.339Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "revert",
@@ -35,7 +35,7 @@
     "coverage_pct": 11.1,
     "total_audits": 2,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 11614833,
+    "dl_tvl_usd": 11629176,
     "tvl_usd": 2087284.042930571,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Revert is a DeFi protocol that provides automated liquidity management, lending, and position optimization tools for Uniswap V3 and V4. It enables users to automate compounding, rebalancing, and exit strategies for concentrated liquidity positions, while also offering lending markets and leverage transformers.",
+    "project_purpose": "Revert provides analytics and tools for AMM liquidity providers, with a focus on Uniswap concentrated liquidity positions. Its contract surface includes Uniswap V3/V4 position utilities, automation and compounding components, V3Vault contracts, and related lending or leverage functionality where applicable.",
     "relationship_narrative": "The Revert automation suite uses shared infrastructure like V3Oracle for price feeds and InterestRateModel for lending rate calculations, while FlashloanLiquidator and LeverageTransformer support advanced operations. Revert Lend vaults rely on the same oracle and interest rate models, and the V3 Staker integrates with the broader Uniswap V3 ecosystem managed by Revert's utilities.",
     "product_family_count": 6
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 84,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

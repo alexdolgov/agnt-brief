@@ -1,27 +1,26 @@
 # Agentic Audit Brief: Punks Terminal
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Punks Terminal (`punks-terminal`)
 - Website: [https://punks.lightyear.build/stash](https://punks.lightyear.build/stash)
-- Lifecycle: unknown (Tier 0, 35.5% below peak)
-- Generated: 2026-05-31T10:20:44.136Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, 35.5% below peak)
+- Generated: 2026-06-10T20:59:09.437Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,490,670.98
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Punks Terminal is an NFT marketplace on Ethereum that facilitates the creation and trading of NFTs. It provides a registry contract to manage and track NFT collections.
-
-### Architecture
-
-The project consists of a single product family with one registry contract, so there are no cross-family relationships or shared infrastructure.
+Punks Terminal is a CryptoPunks-focused Stash trading terminal on Ethereum. Its StashFactory deploys user-managed Stash contracts that support ETH/WETH liquidity, order placement, trading, and withdrawals for CryptoPunks-related activity.
 
 ## Audit Coverage Summary
 
@@ -37,7 +36,6 @@ The project consists of a single product family with one registry contract, so t
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

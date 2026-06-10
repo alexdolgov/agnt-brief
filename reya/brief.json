@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "reya",
-  "generated_at": "2026-05-31T10:25:51.100Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:11.381Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "reya",
     "tier": 0,
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 77.72803415786478
   },
   "summary": {
-    "total_contracts": 294,
-    "total_addresses": 873,
-    "unique_implementations": 294,
-    "total_deployments": 873,
+    "total_contracts": 293,
+    "total_addresses": 847,
+    "unique_implementations": 293,
+    "total_deployments": 847,
     "audited_contracts": 0,
-    "unaudited_contracts": 81,
+    "unaudited_contracts": 80,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 74,
+    "contracts_verified_unaudited": 73,
     "contracts_verified_by_bytecode": 7,
     "contracts_unverified": 213,
     "coverage_pct": 0,
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Reya is a cross-chain liquidity protocol that enables users to deposit assets into vaults on multiple chains, facilitating bridging and derivatives trading. It provides a canonical bridge for moving funds across Ethereum, Optimism, Polygon, Base, and Arbitrum One.",
+    "project_purpose": "Reya is a DEX and trading application built around ReyaChain, a based rollup. Its vaults and bridging components should be treated as deposit and bridging infrastructure only where Reya ownership and current app relevance are verified, not as the protocol's primary product or as a canonical cross-chain bridge surface.",
     "relationship_narrative": "The Vault contracts on each chain are the core user-facing components, while CommonPlug proxies serve as shared infrastructure for access control or adapters. All vaults are deployed by the same deployer cluster, indicating a unified management system.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 293,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1408,57 +1413,21 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x44ebf1a711082e6373fb142ecfcb469cffe08cc2",
+      "address": "0x57c651b7623690d5545a6aa8999f2a198bc3f84e",
       "name": "CommonPlug",
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0xafbe4bc31b3e5636e1446a987a42d8ad5b4eccf2",
       "impl_name": "CommonPlug",
       "deployments": [
         {
           "chain_id": 10,
           "chain_name": "optimism",
-          "address": "0x5df06caa38ed2c60a49174176fc745c532426fb4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x6a8be071c1f37e0a5abbbc7700769548f5bc1e46",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
           "address": "0x9d245fdef1164a4d4014c2570fd88855ea9545d0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xf5b588306867992201fc78de045bce01be6ea2fd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x44ebf1a711082e6373fb142ecfcb469cffe08cc2",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1512,24 +1481,6 @@
         {
           "chain_id": 137,
           "chain_name": "polygon",
-          "address": "0xae7ab947dc04b2e4965a9d99c109c65b4f0ee139",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xafbe4bc31b3e5636e1446a987a42d8ad5b4eccf2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
           "address": "0xb1b65cb85f4f3b90285309cab7467abc0031e2c9",
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1557,25 +1508,7 @@
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
-          "address": "0x4611a4c47893d57ad2005c9d674f27ddb121919c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
           "address": "0x765cfbb5efc15a384c24828e782dcffa3f9690fb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xcea535b2a0a690eba76ac6a4af2a1ee7b9fed1aa",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -6765,190 +6698,6 @@
           "chain_id": 137,
           "chain_name": "polygon",
           "address": "0x61ce6673b00b2f0281e8b95c6b68c8275865ff34",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x12e6e58864ce4402cf2b4b8a8e9c75ead7280156",
-      "name": "Socket",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Socket",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x943ac2775928318653e91d350574436a1b9b16f9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x1eb392aba52a2d933e58f7e86ca96b9a3e2d8166",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x2344621d5aa6e784e8c6f4c54b0b29dd9c3ad4b6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x301bd265f0b3c16a58cbdb886ad87842e3a1c0a4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x91ce463148bd7695d4db41f4aa36088e502428f7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xd10cb28719302698d7fa685d73dccd330b6bf573",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x8b361319e3157fa01ffa7b8abd202aacf98d2571",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x8bc5054ef0943494ec981b58082035cca804873f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xad0fa55b09ee01d4f69d0c9a9ed6467efe7d23b3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xc20687f8dc0ad51d01003013d1c5b02d10ded001",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xfd1256602f99a8cb2b43114e41af4ca0b4c7e47f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x12e6e58864ce4402cf2b4b8a8e9c75ead7280156",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x1d6811553aff8231add04a84f300b89e15d99ea4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x16e4a6af6e81c7997fc784c8e621316e480a4ee8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x37cc674582049b579571e2ffd890a4d99355f6ba",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x9e3e4755411f8529cbed5a974a85fa9a8a13a9d1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xbc080a2e2593045fffc1b8c3cafc67732f8306a7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xfb6daf96202bd3815b2e602464adc10317634066",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -14487,7 +14236,7 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x44ebf1a711082e6373fb142ecfcb469cffe08cc2",
+      "address": "0x57c651b7623690d5545a6aa8999f2a198bc3f84e",
       "name": "CommonPlug",
       "role": "unknown",
       "origin_kind": "native",
@@ -14925,16 +14674,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x12e6e58864ce4402cf2b4b8a8e9c75ead7280156",
-      "name": "Socket",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x107e182815c5e164e05f0c2cf478ace44fd468a8",
@@ -15046,7 +14785,7 @@
     }
   ],
   "origin_summary": {
-    "native": 193,
+    "native": 192,
     "upstream": 8,
     "standard_library": 1,
     "needs_review": 92

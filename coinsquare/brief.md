@@ -4,31 +4,32 @@
 
 - Project: Coinsquare (`coinsquare`)
 - Website: [https://coinsquare.com](https://coinsquare.com)
-- Lifecycle: active (Tier 0, 93.3% below peak)
-- Generated: 2026-05-22T23:54:59.133Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
-- Chains: ethereum
-- Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $12,417,261.21
+- Lifecycle: unknown
+- Generated: 2026-06-10T20:59:01.458Z
+- Pipeline run: correction-skeletal-description-fix-all
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
+- DeFi Llama TVL: $12,077,710.44
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Coinsquare is a centralized exchange (CEX) that facilitates cryptocurrency trading and related financial services. The provided smart contract inventory appears to be a placeholder or misattribution, as it includes only a single unrelated contract (KittyCore) rather than a coherent set of exchange contracts.
-
-### Architecture
-
-No meaningful relationships can be inferred, as the contract inventory consists of a single unrelated contract with no shared infrastructure or token flows evident.
+Coinsquare is a centralized cryptocurrency exchange providing custodial cryptocurrency trading and related financial services. No validated Coinsquare-owned smart contract surface has been identified from the provided inventory; the listed KittyCore contract is an unrelated CryptoKitties contract and should not be counted as a Coinsquare contract.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/0 (0.0%)
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,11 +47,9 @@ No meaningful relationships can be inferred, as the contract inventory consists 
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| KittyCore | unknown | ethereum | [`0x06012c...7a266d`](./contracts/ethereum-1/0x06012c8cf97bead5deae237070f9587f8e7a266d/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,7 +85,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 0 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |
 

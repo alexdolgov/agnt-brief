@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hyperswap",
-  "generated_at": "2026-05-31T05:43:36.882Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-6a3e7e-9cd8",
+  "generated_at": "2026-06-10T20:59:06.102Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hyperswap",
@@ -47,18 +47,23 @@
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2025-06",
-    "audit_freshness": "fresh",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
-      "fresh": 1,
-      "aging": 2,
+      "fresh": 0,
+      "aging": 3,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "HyperSwap is a multi-chain DeFi protocol offering a terminal for yield farming, staking, and liquidity provision. It aggregates various vaults, pools, and reward mechanisms across numerous blockchains to optimize user returns.",
+    "project_purpose": "HyperSwap is a Hyperliquid/HyperEVM-focused decentralized exchange and interface for token swaps, liquidity management, and token launches. Its product set includes HyperSwap V2 as an official DEX product line, with Terminal treated as an interface rather than a yield, staking, vault aggregation, or cross-chain rewards product.",
     "relationship_narrative": "HyperSwap Terminal serves as the primary user-facing product, integrating multiple yield strategies and liquidity pools. HyperSwap V3 appears to be a separate, evolving product line that may eventually share infrastructure or tokenomics with the Terminal, but currently operates independently.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 5,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -271,7 +276,7 @@
       "report_url": "https://3308851984-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4EuEeIhLFXp6HBAjMQG5%2Fuploads%2Fr6TksVPyZO1QVyB1VR67%2FPeckShield-Audit-Report-DelegatedPositionVault-v1.0.pdf?alt=media&token=ab435ee1-335e-4bc5-aa75-02f14814c7bb",
       "auditor": "peckshield",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,

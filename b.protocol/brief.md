@@ -7,8 +7,8 @@
 - Project: B.Protocol (`b.protocol`)
 - Website: [https://app.bprotocol.org/](https://app.bprotocol.org/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:51:53.143Z
-- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
+- Generated: 2026-06-10T20:58:58.015Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum, fantom, polygon
 - Contract surface: 162 unique implementations (323 raw deployments)
 - DeFi Llama TVL: $1,784,728.19

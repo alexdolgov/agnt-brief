@@ -5,8 +5,8 @@
 - Project: BounceBit Prime (`bouncebit-prime`)
 - Website: [https://prime.bouncebit.io/](https://prime.bouncebit.io/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T07:34:59.406Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.078Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 9 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $11,944,143.28
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-BounceBit Prime is a basis trading protocol that enables users to execute delta-neutral strategies by capturing funding rate differentials between spot and derivatives markets.
+BounceBit Prime provides tokenized income and RWA strategy vaults using collateral such as Franklin BENJI and BlackRock BUIDL held in custody and deployed as collateral for delta-neutral or basis strategies across approved venues.
 
 ### Architecture
 

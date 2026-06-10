@@ -1,14 +1,12 @@
 # Agentic Audit Brief: PAAL AI
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: PAAL AI (`paal-ai`)
 - Website: [https://www.paal.ai/](https://www.paal.ai/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:11:20.643Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:09.167Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 3 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $1,605,477.52
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-PAAL AI is a Telegram bot that provides AI-powered services, likely integrated with a token and staking mechanism on Ethereum. The protocol includes a native token (PAALAI) and multiple staking pools to incentivize user participation and token holding.
+PAAL AI is an AI bot and application ecosystem with on-chain infrastructure identified in this brief limited to the PAALAI token and Ethereum staking pools. The Ethereum contracts include the native PAALAI token and multiple staking pool contracts used for token staking participation.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The PAALAI token is the central asset used across all staking pools. Each Stakin
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $830,132.91 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

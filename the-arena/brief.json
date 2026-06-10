@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "the-arena",
-  "generated_at": "2026-05-31T10:59:09.727Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:17.473Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "the-arena",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "The Arena is a multi-chain DeFi ecosystem offering decentralized exchange, token launchpad, perpetual trading, and social finance features. It aggregates liquidity, enables project launches, provides leveraged trading, and integrates social engagement across numerous blockchains.",
+    "project_purpose": "The Arena is a SocialFi application on Avalanche centered on social engagement and the ARENA token. Its verified on-chain surface includes SocialFi-related token, registry, governance, and helper contracts; unsupported claims about a multi-chain DeFi ecosystem, DEX, launchpad, perpetual trading, or broad liquidity aggregation should be removed unless separately verified by current official sources and contract ownership evidence.",
     "relationship_narrative": "Arena DEX and Arena Launch share the ArenaToken for governance and fee discounts, while Arena Perps relies on separate vault and pool contracts for leveraged trading. Arena SocialFi may use the same token or proxy infrastructure to incentivize user participation across the ecosystem.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 119,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

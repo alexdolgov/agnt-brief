@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "nerona",
-  "generated_at": "2026-05-31T10:04:20.112Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:08.067Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "nerona",
     "tier": 0,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": null,
+    "project_purpose": "Nerona is a yield aggregator. Current metadata describes the protocol as active on Fluent, with no separate homepage content available from the provided evidence.",
     "relationship_narrative": null,
     "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -107,7 +112,7 @@
       "product_line": "Nerona",
       "tvl_usd": null,
       "is_proxy": false,
-      "impl_address": null,
+      "impl_address": "0x1028a0e146d2915c509c8e019e0e5c66d3d22ae0",
       "impl_name": null,
       "deployments": [
         {

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "iq",
-  "generated_at": "2026-05-31T08:30:29.229Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:06.324Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "iq",
     "tier": 0,
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "IQ is a blockchain-based knowledge and information platform that tokenizes contributions and governance through the IQ token. It aims to create a decentralized encyclopedia and knowledge graph.",
-    "relationship_narrative": "The IQ token contract is the core asset, while the Vyper contract likely serves as a supporting infrastructure component such as a staking or governance mechanism, sharing the same deployer cluster.",
+    "project_purpose": "IQ.wiki is a blockchain and cryptocurrency encyclopedia powered by the IQ token. The IQ token is used within the ecosystem for governance and staking, including HiIQ staking as reflected in DefiLlama staking data.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

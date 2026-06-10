@@ -7,17 +7,17 @@
 - Project: SuperFarm (`superfarm`)
 - Website: [https://superverse.co/](https://superverse.co/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:46:45.943Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.815Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 50 unique implementations (78 raw deployments)
+- Contract surface: 49 unique implementations (77 raw deployments)
 - DeFi Llama TVL: $1,182,708.42
 - On-chain TVL (included contracts): $211,051,062.44
 - TVL by chain: Ethereum $211,051,062.44
 
 ## Project Description
 
-SuperFarm is a cross-chain DeFi protocol that enables users to stake assets and earn rewards, primarily through its native SUPER token and partner tokens. It provides staking pools and token infrastructure to facilitate yield generation and liquidity provision.
+SuperFarm, now branded around SuperVerse, is a web3 gaming and crypto ecosystem centered on the SUPER token. Its historical products included no-code DeFi/NFT farm deployment and staking/rewards infrastructure, while its current positioning emphasizes gaming-network integrations, SUPER token utility, rewards, and the BlackHole DEX highlighted on the project homepage. It should not be characterized solely as a staking, yield, or liquidity-provision protocol.
 
 ### Architecture
 
@@ -25,12 +25,12 @@ The Staker contracts interact with the SUPER token and partner tokens like Injec
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/43 (0.0%)
-- Verified + Unaudited implementations: 43
+- Verified implementations audited: 0/42 (0.0%)
+- Verified + Unaudited implementations: 42
 - Verified by bytecode match: 0
 - Unverified implementations: 7
-- Unique implementations: 50
-- Raw deployments: 78
+- Unique implementations: 49
+- Raw deployments: 77
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $211,051,062.44
@@ -49,7 +49,7 @@ The Staker contracts interact with the SUPER token and partner tokens like Injec
 
 - None
 
-### ⚠️ Verified + Unaudited (43)
+### ⚠️ Verified + Unaudited (42)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -95,7 +95,6 @@ The Staker contracts interact with the SUPER token and partner tokens like Injec
 | TokenLaunchpadVouchers | token | ethereum | [`0x87a374...a37c0d`](./contracts/ethereum-1/0x87a3747c9942d8351cc85aac2f94807b27a37c0d/) | ⚠️ Unaudited |
 | TokenLaunchpadVouchersSale | token | ethereum | [`0x70ff3c...f591ad`](./contracts/ethereum-1/0x70ff3c8a979b7f4e6b8100da78a1b2ea9af591ad/) | ⚠️ Unaudited |
 | Unipool | core_logic | ethereum | [`0x4ef639...1575f0`](./contracts/ethereum-1/0x4ef6394d1a857a7825ab51d6c482f1a5471575f0/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | [`0x25647e...1d0888`](./contracts/ethereum-1/0x25647e01bd0967c1b9599fa3521939871d1d0888/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -172,7 +171,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 36 |
-| upstream | 3 |
+| upstream | 2 |
 | standard_library | 0 |
 | needs_review | 11 |
 

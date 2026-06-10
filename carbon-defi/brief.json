@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "carbon-defi",
-  "generated_at": "2026-05-25T15:53:01.613Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:01.272Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "carbon-defi",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 69.63283237724444
   },
   "summary": {
-    "total_contracts": 157,
-    "total_addresses": 345,
-    "unique_implementations": 157,
-    "total_deployments": 345,
+    "total_contracts": 158,
+    "total_addresses": 338,
+    "unique_implementations": 158,
+    "total_deployments": 338,
     "audited_contracts": 17,
-    "unaudited_contracts": 40,
+    "unaudited_contracts": 38,
     "contracts_verified_audited": 15,
-    "contracts_verified_unaudited": 38,
-    "contracts_verified_by_bytecode": 4,
-    "contracts_unverified": 100,
-    "coverage_pct": 29.8,
+    "contracts_verified_unaudited": 37,
+    "contracts_verified_by_bytecode": 3,
+    "contracts_unverified": 103,
+    "coverage_pct": 30.9,
     "total_audits": 4,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 3512848.0463299993,
-    "tvl_usd": 41699647.34156157,
+    "dl_tvl_usd": 2922950.09728,
+    "tvl_usd": 5121040.06870144,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 41699647.34
+      "ethereum": 5121040.07
     },
-    "asd_usd": 36578607.27286013,
+    "asd_usd": null,
     "website_url": "https://app.carbondefi.xyz/",
     "chains": [
       "blast",
@@ -49,7 +49,7 @@
       "ethereum",
       "sei"
     ],
-    "tier1_coverage_pct": 26.3,
+    "tier1_coverage_pct": 27.3,
     "tier1_auditors": [
       "ChainSecurity"
     ],
@@ -63,91 +63,20 @@
     }
   },
   "topography": {
-    "project_purpose": "Carbon Defi is a decentralized exchange protocol that enables automated on-chain trading and liquidity provision. It offers concentrated liquidity, dynamic fee structures, and cross-chain bridging to optimize capital efficiency for traders and liquidity providers.",
+    "project_purpose": "Carbon DeFi is an on-chain automated trading protocol and DEX that lets users create custom limit orders, range orders, and recurring or grid-like trading strategies using programmable liquidity curves. Cross-chain Vortex bridge contracts, where present, should be treated as ancillary infrastructure rather than the core protocol value proposition.",
     "relationship_narrative": "The Carbon Defi family provides core trading logic and is extended by Blast contracts for cross-chain bridging via VortexAcrossBridge. Both families share CarbonVortex and proxy infrastructure, while Example tokens are used across all families as trading assets.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 158,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x164a1229f4826c9dd70ee3d9f4f3d7b68a172153",
-      "name": "SmartToken",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 36578604.33226436,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SmartToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x164a1229f4826c9dd70ee3d9f4f3d7b68a172153",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 36578604.33226436,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x970d48531bd6da34dfa5f867c3bc0afe17c0c4dd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x99ebd396ce7aa095412a4cd1a0c959d6fd67b340",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xee01b3ab5f6728adc137be101d99c678938e6e72",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf132d2538076e373b0c186f1ddb86f3be8cfc8dc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -197,64 +126,6 @@
       "source_verified": true,
       "verified_by_bytecode": true,
       "verification_bucket": "verified_bytecode_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8",
-      "name": "Vault",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 2.9405957771231637,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Vault",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x60917e542addd13bfd1a7f81cd654758052dadc4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.9405957771231637,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8",
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x8ce318919438982514f9f479fdfb40d32c6ab749",
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 81457,
-          "chain_name": "blast",
-          "address": "0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8",
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1399,7 +1270,7 @@
       "chain_name": "ethereum",
       "address": "0x16b9b6f8d2077db1032531f0e1f6019d2679d72d",
       "name": "CarbonController",
-      "role": "governance",
+      "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -5419,6 +5290,37 @@
     {
       "chain_id": 42220,
       "chain_name": "celo",
+      "address": "0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
       "address": "0x45f7eacd310fa649a4b239df8dd448084aad8cf3",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -5651,6 +5553,37 @@
           "chain_id": 42220,
           "chain_name": "celo",
           "address": "0x77e925eebcc9ecb03b03e1fb2b1906e7bcf3c20d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x8ce318919438982514f9f479fdfb40d32c6ab749",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x8ce318919438982514f9f479fdfb40d32c6ab749",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -6054,6 +5987,37 @@
           "chain_id": 81457,
           "chain_name": "blast",
           "address": "0x37a65dda75a4c32959834c9b391a24dca17eec10",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -6780,28 +6744,18 @@
       "auditor": "ChainSecurity",
       "tier": 1,
       "contracts_covered": 15,
-      "coverage_pct": 26.3,
+      "coverage_pct": 27.3,
       "latest_audit": "2023-04"
     },
     {
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 4,
-      "coverage_pct": 7,
+      "coverage_pct": 7.3,
       "latest_audit": "2024-07"
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0x45d2e25c04f43a06f6c3e21e4f39b860d05a7ac8",
-      "name": "Vault",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": 2.9405957771231637,
-      "risk_note": "Verified native implementation with $2.94 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -6934,7 +6888,7 @@
     }
   ],
   "origin_summary": {
-    "native": 71,
+    "native": 72,
     "upstream": 10,
     "standard_library": 9,
     "needs_review": 67

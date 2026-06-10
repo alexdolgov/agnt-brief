@@ -5,17 +5,17 @@
 - Project: Zoth (`zoth`)
 - Website: [https://zoth.io](https://zoth.io)
 - Lifecycle: active (Tier 0, 92.5% below peak)
-- Generated: 2026-05-24T13:57:30.464Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:19.681Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, base, ethereum, manta, metis
 - Contract surface: 43 unique implementations (149 raw deployments)
-- DeFi Llama TVL: $2,198,154.00
+- DeFi Llama TVL: $2,197,589.00
 - On-chain TVL (included contracts): $6.50
 - TVL by chain: Ethereum $6.50
 
 ## Project Description
 
-Zoth is a DeFi protocol that bridges real-world assets (RWAs) with decentralized finance by offering tokenized yield-bearing products and a collateralized debt position (CDP) system. Users can deposit stablecoins or tokenized real-world assets into vaults to earn yield, mint the ZeUSD stablecoin against collateral, and manage positions across multiple chains.
+Zoth currently positions itself as a stablecoin neobank and RWA-yield platform, with products spanning stablecoin Earn, Send, Tokenize, Agentic/automation features, payments, cards, compliance, and privacy-first neobanking. Its on-chain surface includes historical or related ZeUSD, vault, redemption, zOPAL, ZTLNPrime, governance, proxy, and implementation contracts, but ZeUSD/CDP functionality should not be described as the sole or primary current product unless supported by current documentation.
 
 ### Architecture
 

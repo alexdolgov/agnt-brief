@@ -5,8 +5,8 @@
 - Project: Clearpool (`clearpool`)
 - Website: [https://clearpool.finance](https://clearpool.finance)
 - Lifecycle: active (Tier 0, 31.2% below peak)
-- Generated: 2026-05-31T07:44:02.615Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.405Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, base, ethereum, mantle, optimism, polygon, polygon-zkevm
 - Contract surface: 61 unique implementations (220 raw deployments)
 - DeFi Llama TVL: $42,176,788.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Clearpool is a decentralized finance protocol that enables uncollateralized institutional lending and borrowing, primarily focused on real-world assets (RWA). It provides a marketplace where borrowers can access liquidity from lenders without posting collateral, using reputation and creditworthiness instead.
+Clearpool is a DeFi protocol for professionally managed on-chain credit, tokenization, and real-world-yield products. Its product lines include Clearpool Lending, which supports unsecured institutional borrowing and lending based on borrower creditworthiness, and Clearpool TPOOL/RWA structured-product vaults, which provide tokenized real-world yield exposure through managed on-chain products.
 
 ### Architecture
 
@@ -29,11 +29,11 @@ The Clearpool family provides the foundational lending infrastructure (pools, au
 - Unverified implementations: 35
 - Unique implementations: 61
 - Raw deployments: 220
-- Audits discovered: 6
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $10,712.83
 - Latest audit: 2024-12 (aging)
-- Staleness: 0 fresh, 1 aging, 2 stale, 3 unknown
+- Staleness: 0 fresh, 1 aging, 2 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -141,7 +141,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [pashov-boring-vault.pdf](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/audit/pashov-boring-vault.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [pashov-hyperlane.pdf](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/audit/pashov-hyperlane.pdf) | Pashov Audit Group | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
 | [spearbit-boring-vault-arctic-0.pdf](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/audit/spearbit-boring-vault-arctic-0.pdf) | Spearbit | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
-| [AUDIT_SCOPE.md](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/docs/AUDIT_SCOPE.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -185,7 +184,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 6
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -197,6 +196,5 @@ Zero-match audit list:
 - [5807] pashov-boring-vault.pdf
 - [5808] pashov-hyperlane.pdf
 - [5809] spearbit-boring-vault-arctic-0.pdf
-- [5810] AUDIT_SCOPE.md
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "depth",
-  "generated_at": "2026-05-25T04:47:28.305Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:01.701Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "depth",
     "tier": 0,
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1172290.28597,
-    "tvl_usd": 1172290.28597,
+    "dl_tvl_usd": 1171105.59868,
+    "tvl_usd": 1171105.59868,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Depth is a decentralized exchange (DEX) protocol operating on the Heco chain, enabling users to swap tokens and provide liquidity.",
-    "relationship_narrative": "The protocol consists of a single product family with one contract, so there are no inter-family relationships or shared infrastructure.",
+    "project_purpose": "Depth is a stablecoin-focused asset management and stablecoin swap protocol. Current DefiLlama data attributes its TVL to Binance, with Heco TVL at zero; the listed Heco address is not sufficient to represent the full current contract surface and should not be described as the sole core protocol contract without further verification.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

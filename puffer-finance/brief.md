@@ -1,12 +1,14 @@
 # Agentic Audit Brief: Puffer Finance
 
+⚠️ Lifecycle status: DECLINING - TVL dropped 6.3% over 90 days
+
 ## Project Overview
 
 - Project: Puffer Finance (`puffer-finance`)
 - Website: [https://puffer.fi](https://puffer.fi)
-- Lifecycle: active (Tier 0, 96.8% below peak)
-- Generated: 2026-05-27T16:54:59.437Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Lifecycle: declining (Tier 0, 96.8% below peak)
+- Generated: 2026-06-10T20:59:09.396Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 65 unique implementations (119 raw deployments)
 - DeFi Llama TVL: $59,113,534.71
@@ -15,7 +17,7 @@
 
 ## Project Description
 
-Puffer Finance is a liquid restaking protocol that allows users to stake ETH and earn rewards while maintaining liquidity. It also provides infrastructure for restaking operations and yield optimization through vaults and reward management.
+Puffer Finance is a broader Ethereum infrastructure protocol suite. Its current product families include Liquid Restaking for ETH/restaking exposure, UniFi as a based rollup/L2 product, Puffer Preconf as an EigenLayer-based preconfirmation service, and Puffer Institutional for staking/restaking infrastructure. Any vault, reward-management, token/governance, bridge, or UniFi-related contract surfaces should be scoped explicitly to these product families or excluded with rationale.
 
 ### Architecture
 
@@ -35,6 +37,7 @@ Puffer Stake's PufferVaultV5 interacts with Puffer Vaults' BoringVault and Accou
 - Latest audit: 2024-05 (stale)
 - Staleness: 0 fresh, 0 aging, 4 stale, 0 unknown
 - Tier 1 coverage: 22.7% (SlowMist)
+- Note: This protocol is classified as [declining]. ASD of $169,155,461.36 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

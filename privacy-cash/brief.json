@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "privacy-cash",
-  "generated_at": "2026-05-24T10:45:34.995Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:09.374Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "privacy-cash",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 10,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2618743.93511,
+    "dl_tvl_usd": 2482541.1565900003,
     "tvl_usd": 48088.20756837759,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Privacy Cash is a privacy-focused protocol on Base that enables users to deposit ETH or ERC-20 tokens into pools to obfuscate transaction trails, using zero-knowledge proofs or similar techniques to preserve anonymity.",
+    "project_purpose": "Privacy Cash is a privacy-focused protocol spanning Solana and Base that enables users to deposit supported assets including SOL, ETH, and USDC into privacy pools to obfuscate transaction trails, using zero-knowledge proofs or similar techniques to preserve anonymity.",
     "relationship_narrative": "The protocol consists of a single product family with two core pool contracts (EtherPool and ERCPool) that share the same proxy pattern via ERC1967Proxy, indicating a unified upgradeable infrastructure for managing deposits and withdrawals.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 6,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

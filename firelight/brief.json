@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "firelight",
-  "generated_at": "2026-05-27T12:42:05.630Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-06-10T20:59:04.002Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Firelight is a DeFi farming protocol that allows users to stake assets and earn yield. Based on the limited metadata, it appears to be a yield farming platform, but specific details about its mechanisms are not available.",
-    "relationship_narrative": "No product families or contracts are defined, so no relationships can be described.",
+    "project_purpose": "Firelight is a DeFi protection and cover marketplace on Flare. The protocol uses staked XRP and other digital assets to back coverage, issues liquid staking tokens on Flare, allows builders or protocols to buy cover, and lets stakers earn fees and rewards for providing protection capacity.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

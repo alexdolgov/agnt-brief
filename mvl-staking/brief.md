@@ -7,17 +7,17 @@
 - Project: MVL Staking (`mvl-staking`)
 - Website: [https://mvlchain.io/](https://mvlchain.io/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-25T05:45:03.907Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:08.016Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 50 unique implementations (50 raw deployments)
-- DeFi Llama TVL: $1,117,433.81
+- Contract surface: 49 unique implementations (49 raw deployments)
+- DeFi Llama TVL: $1,098,255.27
 - On-chain TVL (included contracts): $38,089,085.81
 - TVL by chain: Ethereum $38,089,085.81
 
 ## Project Description
 
-MVL Staking is a yield protocol on Ethereum that allows users to stake MVL tokens and earn rewards. It leverages a staking mechanism with supporting contracts to manage token distribution and incentives.
+MVL Staking/MVL Fi is the staking component of the MVL mobility ecosystem, spanning Ethereum and BNB/BSC deployments. It includes MVL single staking and LP/pool2 staking, with rewards tied to MVL ecosystem businesses and token incentives. The currently listed Ethereum MVLToken is token infrastructure, while the listed UniswapV2Pair should be treated as an external LP/pool2 asset or dependency rather than MVL-owned staking logic; the full staking, LP staking, BNB/BSC and bridge-related contract surface requires separate identification.
 
 ### Architecture
 
@@ -25,12 +25,12 @@ The MVL Staking family consists of a single product family where the MVLToken is
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/3 (33.3%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 1/2 (50.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 47
-- Unique implementations: 50
-- Raw deployments: 50
+- Unique implementations: 49
+- Raw deployments: 49
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -43,7 +43,7 @@ The MVL Staking family consists of a single product family where the MVLToken is
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| CertiK | Tier 2 | 1 | 33.3% | 2022-02 |
+| CertiK | Tier 2 | 1 | 50.0% | 2022-02 |
 
 ## Contract Surface
 
@@ -53,12 +53,11 @@ The MVL Staking family consists of a single product family where the MVLToken is
 |---|---|---|---|---|
 | MVLToken | token | ethereum | [`0xa849ea...18dc71`](./contracts/ethereum-1/0xa849eaae994fb86afa73382e9bd88c2b6b18dc71/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | TransparentUpgradeableProxy | proxy | ethereum | [`0x7f29fb...8f9fec`](./contracts/ethereum-1/0x7f29fba2e7543d7ad524e9c5db3522f6448f9fec/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | [`0x3c8ad3...2b5c7a`](./contracts/ethereum-1/0x3c8ad34155b83ddb7f43119a19503d34ed2b5c7a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -144,7 +143,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 29 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 1 |
 | needs_review | 19 |
 

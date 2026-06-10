@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "tothemoon",
-  "generated_at": "2026-05-24T01:58:30.526Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:17.528Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3790653.4502000003,
-    "tvl_usd": 3790653.4502000003,
+    "dl_tvl_usd": 2401152.6027100002,
+    "tvl_usd": 2401152.6027100002,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Tothemoon is a centralized exchange (CEX) platform that facilitates cryptocurrency trading and related financial services. It operates off-chain with no on-chain smart contracts, relying on a traditional order book and custodial model.",
-    "relationship_narrative": "No on-chain product families or contract relationships exist, as the protocol is a centralized exchange without deployed smart contracts.",
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

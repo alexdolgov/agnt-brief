@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "rumpel-labs",
-  "generated_at": "2026-05-25T16:43:04.436Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:12.153Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "rumpel-labs",
@@ -45,7 +45,7 @@
     "coverage_pct": 2,
     "total_audits": 4,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 1924033.7523100001,
+    "dl_tvl_usd": 1892481.61977,
     "tvl_usd": 1039269130.2695215,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Rumpel Labs is a DeFi protocol that provides structured yield and synthetic asset exposure through a modular system of vaults, tokens, and oracles. It aggregates multiple strategies—including lending, staking, and liquidity provision—into composable products for users.",
+    "project_purpose": "Rumpel Labs is a point-tokenization protocol that enables users to tokenize, mint, and trade exposure to offchain loyalty or reward points earned through supported integrations. Its products are focused on representing points and potential future rewards onchain, including possible redemption or settlement mechanics, rather than operating as a broad structured-yield or synthetic-asset exposure aggregator.",
     "relationship_narrative": "All contracts belong to a single product family, sharing infrastructure like proxy patterns (TransparentUpgradeableProxy, BeaconProxy) and token wrappers. Vaults interact with external protocols (Fluid, Pendle, Mellow) and use supporting resolvers and collateral contracts to manage positions and risk.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 115,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

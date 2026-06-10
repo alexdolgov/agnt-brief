@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Flying Tulip
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Flying Tulip (`flying-tulip`)
 - Website: [https://flyingtulip.com/](https://flyingtulip.com/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T08:01:33.235Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:04.042Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, base, bsc, ethereum, sonic
 - Contract surface: 62 unique implementations (254 raw deployments)
 - DeFi Llama TVL: $5,814,816.78
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Flying Tulip is a multi-chain DeFi protocol offering yield aggregation, lending, and a stablecoin (ftUSD) backed by options strategies. It enables users to deposit assets into yield-optimizing vaults, borrow against them, and mint ftUSD through put option mechanisms.
+Flying Tulip is a multi-chain DeFi yield aggregation protocol focused on wrapper contracts and automated yield strategies. Its current contract surface includes lending, ftUSD, marketplace, governance, registry, adapter, and other proxy-based components, but public evidence does not currently substantiate describing ftUSD as an options-backed stablecoin or claiming that users mint ftUSD through put-option mechanisms.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The protocol shares infrastructure across families: ftYieldWrapper contracts are
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $51,254,594.39 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

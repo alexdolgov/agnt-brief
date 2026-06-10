@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "lair-finance",
-  "generated_at": "2026-05-23T13:12:01.690Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:06.839Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "lair-finance",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 11,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6144906.64017,
+    "dl_tvl_usd": 5549655.05287,
     "tvl_usd": 3407775.663761971,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -51,16 +51,21 @@
     "latest_audit_date": "2025-10",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 3,
-      "aging": 8,
+      "fresh": 2,
+      "aging": 9,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Lair Finance is a liquid staking protocol on Berachain that allows users to stake BERA tokens and receive a liquid staking token (LairToken) representing their staked position, while earning rewards from the underlying staking infrastructure.",
+    "project_purpose": "Lair Finance is a cross-chain liquid staking and liquid restaking protocol with products across KAIA/Klaytn, Somnia, and Berachain. Its current public positioning includes KAIA liquid staking, Somnia staking, and Berachain/restaking-related deployments, so Berachain-only BERA liquid staking should not be presented as the full-project scope.",
     "relationship_narrative": "The Lair Finance family uses upgradeable proxy contracts to manage vault logic and token interactions, with the InfraredVault serving as the core staking mechanism and LairToken as the liquid representation of staked assets.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 78,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -3511,7 +3516,7 @@
       "report_url": "https://github.com/bug4city/lair-lsd/blob/master/audit/lrBGT/Bera%20LRT%20Contracts%20_%20SSC.pdf",
       "auditor": "SSC",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,

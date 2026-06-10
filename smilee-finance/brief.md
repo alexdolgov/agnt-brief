@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Smilee Finance
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 36.8% over 90 days
-
 ## Project Overview
 
 - Project: Smilee Finance (`smilee-finance`)
 - Website: [https://smilee.finance/](https://smilee.finance/)
-- Lifecycle: unknown (Tier 0, 94.8% below peak)
-- Generated: 2026-05-24T17:09:21.927Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: active (Tier 0, 94.8% below peak)
+- Generated: 2026-06-10T20:59:16.217Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, berachain
 - Contract surface: 186 unique implementations (223 raw deployments)
-- DeFi Llama TVL: $1,830,890.00
+- DeFi Llama TVL: $1,740,942.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Smilee Finance is a DeFi protocol offering options and liquid staking products. It enables users to trade options and earn yield through liquid staking derivatives across Arbitrum and Berachain.
+Smilee Finance's current primary product is gBERA, a Berachain liquid staking and yield product. Its Arbitrum options/vault contracts should be treated as legacy or secondary/low-TVL surfaces if retained in scope.
 
 ### Architecture
 
@@ -25,35 +23,30 @@ The two families operate on separate chains with no direct contract dependencies
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/23 (4.3%)
-- Verified + Unaudited implementations: 22
+- Verified implementations audited: 0/23 (0.0%)
+- Verified + Unaudited implementations: 23
 - Verified by bytecode match: 0
 - Unverified implementations: 163
 - Unique implementations: 186
 - Raw deployments: 223
-- Audits discovered: 3
-- Scoreable audits (matched contracts): 3
+- Audits discovered: 0
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2025-05 (aging)
-- Staleness: 0 fresh, 3 aging, 0 stale, 0 unknown
-- Tier 1 coverage: 4.3% (Spearbit)
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| Spearbit | Tier 1 | 1 | 4.3% | 2025-05 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (1)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| GBeraAssetManager | governance | berachain | [`0x3f7755...f2ebce`](./contracts/berachain-80094/0x3f7755117f1fec1981aefb01887240dbf5f2ebce/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (22)
+### ⚠️ Verified + Unaudited (23)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -65,6 +58,7 @@ The two families operate on separate chains with no direct contract dependencies
 | Finance | unknown | arbitrum | [`0x1e5132...7517e5`](./contracts/arbitrum-42161/0x1e5132a2636deb590521ad0efbd8ff8ffc7517e5/) | ⚠️ Unaudited |
 | FinanceIGPayoff | unknown | arbitrum | 5 deployments: arbitrum [`0x07c970...c7467c`](./contracts/arbitrum-42161/0x07c9707cb86b236cc8cce3f6de41d80baac7467c/); arbitrum `0x4c0418...757f97`; arbitrum `0x6b8b6d...8ce95a`; arbitrum `0x7b2eaf...c53be7`; arbitrum `0xb68271...70d284` | ⚠️ Unaudited |
 | FinanceIGVega | unknown | arbitrum | [`0xb13170...5b9738`](./contracts/arbitrum-42161/0xb13170e36007a09d6962e23cbef5c50b775b9738/) | ⚠️ Unaudited |
+| GBeraAssetManager | governance | berachain | [`0x3f7755...f2ebce`](./contracts/berachain-80094/0x3f7755117f1fec1981aefb01887240dbf5f2ebce/) | ⚠️ Unaudited |
 | IG | unknown | arbitrum | 9 deployments: arbitrum [`0x1e0aa0...c5c016`](./contracts/arbitrum-42161/0x1e0aa028fcbe1fcd5b6b8394e5eacfaa6fc5c016/); arbitrum `0x1ee870...9f003f`; arbitrum `0x4e5121...00c933`; arbitrum `0x521e16...7b7153`; arbitrum `0x550f20...3361b8`; arbitrum `0x70def9...0548ae`; arbitrum `0x9650a8...e86f77`; arbitrum `0xc5cd71...fc4fac`; arbitrum `0xc9293c...fed768` | ⚠️ Unaudited |
 | IGAccessNFT | token | arbitrum | [`0x3d4d50...f6dceb`](./contracts/arbitrum-42161/0x3d4d50654574f8c8fd417fc77adf5c6165f6dceb/) | ⚠️ Unaudited |
 | MarketOracle | operational_periphery | arbitrum | 2 deployments: arbitrum [`0x121e69...ec70f6`](./contracts/arbitrum-42161/0x121e694d4f4fafee48a2a6ab69a96daa04ec70f6/); arbitrum `0x130648...7cd0d5` | ⚠️ Unaudited |
@@ -266,9 +260,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Rendered PDF capture](https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FK3W9Hj6sr2y8j6Zdkgub%2FGuardefy_Audit_gBERA_SmileeFinance.pdf) | Spearbit | Audit | 2025-01 | aging | Direct | contract_name | 1 | high |
-| [Rendered PDF capture](https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FyKq7K1kTTAd57CnP2ask%2FCantina_Audit_gBERA_SmileeFinance.pdf) | Spearbit | Audit | 2025-02 | aging | Direct | contract_name | 1 | medium |
-| [Rendered PDF capture](https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FvhApBDZa65vO2FueUH9y%2FGuardefy_Audit_gBERA%20Update_Smilee%20Finance.pdf) | Spearbit | Audit | 2025-05 | aging | Direct | contract_name | 1 | high |
 
 ## Coverage Gaps
 
@@ -314,7 +305,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2, medium=1
-- Match method counts: extraction_exact=3
+- Extraction confidence breakdown: n/a
+- Match method counts: n/a
 
 Fork inheritance lineage and inherited audits are included when available.

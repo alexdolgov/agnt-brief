@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "symbiosis",
-  "generated_at": "2026-05-25T15:06:33.924Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:16.950Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "symbiosis",
@@ -35,7 +35,7 @@
     "coverage_pct": 15.4,
     "total_audits": 15,
     "scoreable_audits": 5,
-    "dl_tvl_usd": 9352402.05382,
+    "dl_tvl_usd": 8716214.455589999,
     "tvl_usd": 236145411.90014604,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -62,9 +62,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Symbiosis is a cross-chain bridge and liquidity protocol that enables users to swap and transfer assets across multiple blockchains. It aggregates liquidity and routes transactions through a network of contracts including portals, routers, and token adapters.",
+    "project_purpose": "Symbiosis is an active cross-chain bridge and liquidity protocol that enables users to swap and transfer assets across multiple blockchains. The currently analyzed contract inventory should be treated as a limited discovered subset, not the full live protocol surface; staking, pools, relayers, depository, TON/non-EVM integrations, and supported EVM-chain deployments may be out of scope unless separately inventoried.",
     "relationship_narrative": "The Symbiosis family relies on Portal contracts as the main entry points for cross-chain operations, with MetaRouter handling routing logic and WOFTAdapterFactory managing token adapters. Supporting proxy contracts provide upgradeability and access control, while verifier contracts ensure transaction integrity.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 40,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

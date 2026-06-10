@@ -5,17 +5,17 @@
 - Project: Ring Protocol (`ring-protocol`)
 - Website: [https://ring.exchange/](https://ring.exchange/)
 - Lifecycle: active (Tier 0, 88.5% below peak)
-- Generated: 2026-05-26T17:11:06.109Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:11.460Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, blast, bsc, celo, ethereum, ink, optimism, polygon, unichain, zora
-- Contract surface: 91 unique implementations (254 raw deployments)
+- Contract surface: 90 unique implementations (233 raw deployments)
 - DeFi Llama TVL: $36,201,030.00
-- On-chain TVL (included contracts): $354,886,806.65
-- TVL by chain: Ethereum $218,931,228.78 | Blast $83,515,359.86 | Base $26,844,907.89 | Bsc $9,533,809.21 | Arbitrum $9,320,440.56 | Unichain $4,537,132.88 | Polygon $1,045,662.54 | Optimism $971,231.12 | Avalanche $98,301.71 | Celo $88,732.10
+- On-chain TVL (included contracts): $83,508,000.00
+- TVL by chain: Blast $83,508,000.00
 
 ## Project Description
 
-Ring Protocol is a multi-chain decentralized exchange and bridge aggregator that provides automated market-making, liquidity provision, and token swapping across numerous EVM-compatible chains. It combines Uniswap V4-style concentrated liquidity pools with V2-style constant-product pools and a dedicated bridge product (Ring Few) to facilitate cross-chain asset transfers.
+Ring Protocol is a multi-chain decentralized exchange and swap interface with DEX deployments across EVM-compatible chains. It supports token swapping and liquidity-related functionality, including Uniswap V4-style pool infrastructure where applicable. Do not characterize Ring Protocol as a bridge aggregator or as operating a dedicated Ring Few bridge for cross-chain asset transfers unless supported by current project documentation or verified bridge contracts.
 
 ### Architecture
 
@@ -23,25 +23,25 @@ The three product families share common infrastructure such as Permit2 for token
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 5/48 (10.4%)
-- Verified + Unaudited implementations: 40
+- Verified implementations audited: 5/47 (10.6%)
+- Verified + Unaudited implementations: 39
 - Verified by bytecode match: 3
 - Unverified implementations: 43
-- Unique implementations: 91
-- Raw deployments: 254
-- Audits discovered: 9
+- Unique implementations: 90
+- Raw deployments: 233
+- Audits discovered: 8
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $83,508,000.00
 - Latest audit: 2025-11 (fresh)
-- Staleness: 1 fresh, 3 aging, 0 stale, 5 unknown
-- Tier 1 coverage: 8.3% (Spearbit)
+- Staleness: 1 fresh, 3 aging, 0 stale, 4 unknown
+- Tier 1 coverage: 8.5% (Spearbit)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 4 | 8.3% | 2024-09 |
-| ABDK | Tier 2 | 3 | 6.3% | 2025-11 |
+| Spearbit | Tier 1 | 4 | 8.5% | 2024-09 |
+| ABDK | Tier 2 | 3 | 6.4% | 2025-11 |
 
 ## Contract Surface
 
@@ -49,13 +49,13 @@ The three product families share common infrastructure such as Permit2 for token
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| PoolManager | core_logic | ethereum | 11 deployments: ethereum [`0x000000...e08a90`](./contracts/ethereum-1/0x000000000004444c5dc75cb358380d2e3de08a90/); optimism `0x9a13f9...264ec3`; bsc `0x28e2ea...e9e9df`; unichain `0x1f9840...000004`; polygon `0x673667...3e5cd6`; base `0x498581...652b2b`; arbitrum `0x360e68...b9fb32`; arbitrum `0x870246...b92650`; celo `0x288dc8...cd87bc`; avalanche `0x06380c...dbbc85`; blast `0x163155...ab6446` | ✅ Audited |
+| PoolManager | core_logic | arbitrum | [`0x870246...b92650`](./contracts/arbitrum-42161/0x8702463e73f74d0b6765abceb314ef07acb92650/) | ✅ Audited |
 | PositionManager | governance | arbitrum | 11 deployments: ethereum `0xbd2165...64ee9e`; optimism `0x3c3ea4...9a1017`; bsc `0x7a4a5c...87f95b`; unichain `0x4529a0...2617bf`; polygon `0x1ec2eb...3ceef9`; base `0x7c5f5a...429bdc`; arbitrum [`0x170732...7d7a9f`](./contracts/arbitrum-42161/0x1707327f626496a7b5b3872e7e4d2879df7d7a9f/); arbitrum `0xd88f38...3dd869`; celo `0xf7965f...068ca9`; avalanche `0xb74b1f...ab8acd`; blast `0x4ad2f4...f1baad` | ✅ Audited |
 | Quoter | periphery | ethereum | [`0xb27308...ce5ab6`](./contracts/ethereum-1/0xb27308f9f90d607463bb33ea1bebb41c27ce5ab6/) | ✅ Audited |
 | StateView | unknown | blast | 11 deployments: ethereum `0x7ffe42...597227`; optimism `0xc18a31...75ecdb`; bsc `0xd13dd3...aee0c4`; unichain `0x86e863...dee8f2`; polygon `0x5ea1bd...b3ba5a`; base `0xa3c0c9...867a71`; arbitrum `0x182a92...b10f59`; arbitrum `0x76fd29...6e9990`; celo `0xbc21f8...6f2bfb`; avalanche `0xc3c9e1...b69286`; blast [`0x12a88a...85df30`](./contracts/blast-81457/0x12a88ae16f46dce4e8b15368008ab3380885df30/) | ✅ Audited |
 | UniversalRouter | adapter | polygon | 20 deployments: ethereum `0x5597ac...4c81c2`; ethereum `0x66a989...dba8af`; ethereum `0x7d80c9...fd484f`; ethereum `0xeff87a...a15a24`; optimism `0x851116...8b3507`; bsc `0x1906c1...4eae07`; unichain `0xef740b...c8eaf3`; polygon [`0x109569...c49223`](./contracts/polygon-137/0x1095692a6237d83c6a72f3f5efedb9a670c49223/); base `0x6ff569...299b43`; base `0x9a8c67...1f1e07`; arbitrum `0x4b2ab3...1d6804`; arbitrum `0xa51afa...e381a3`; arbitrum `0xdb671f...6db8e5`; arbitrum `0xf29309...1749b8`; celo `0xcb695b...a0233a`; avalanche `0x94b753...aa73b7`; blast `0x6a7c92...6e0ee5`; blast `0xc9dd68...a3f201`; blast `0xce69ec...60a940`; blast `0xeabbcb...025be3` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (40)
+### ⚠️ Verified + Unaudited (39)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -77,7 +77,6 @@ The three product families share common infrastructure such as Permit2 for token
 | MultipleModesDuoExchange | unknown | blast | [`0x63d842...c0819e`](./contracts/blast-81457/0x63d8423977624ead67af0ff33c2d1adc62c0819e/) | ⚠️ Unaudited |
 | NFTDescriptor | token | blast | 3 deployments: ethereum `0x42b24a...0a48ec`; blast [`0x0d5ecc...a662c2`](./contracts/blast-81457/0x0d5ecc10610f23e1e9c8e03f0cc6a5f052a662c2/); blast `0x29a4e1...ed8778` | ⚠️ Unaudited |
 | NonfungiblePositionManager | governance | blast | 2 deployments: base `0xf9d7ff...97916f`; blast [`0xebec26...5300fa`](./contracts/blast-81457/0xebec263be79a02131258a1033d8490b11a5300fa/) | ⚠️ Unaudited |
-| Permit2 | unknown | ethereum | 11 deployments: ethereum [`0x000000...c78ba3`](./contracts/ethereum-1/0x000000000022d473030f116ddee9f6b43ac78ba3/); optimism [`0x000000...c78ba3`](./contracts/optimism-10/0x000000000022d473030f116ddee9f6b43ac78ba3/); bsc [`0x000000...c78ba3`](./contracts/bsc-56/0x000000000022d473030f116ddee9f6b43ac78ba3/); unichain [`0x000000...c78ba3`](./contracts/unichain-130/0x000000000022d473030f116ddee9f6b43ac78ba3/); polygon [`0x000000...c78ba3`](./contracts/polygon-137/0x000000000022d473030f116ddee9f6b43ac78ba3/); base [`0x000000...c78ba3`](./contracts/base-8453/0x000000000022d473030f116ddee9f6b43ac78ba3/); base `0x4de602...c4dd9b`; arbitrum [`0x000000...c78ba3`](./contracts/arbitrum-42161/0x000000000022d473030f116ddee9f6b43ac78ba3/); celo [`0x000000...c78ba3`](./contracts/celo-42220/0x000000000022d473030f116ddee9f6b43ac78ba3/); avalanche [`0x000000...c78ba3`](./contracts/avalanche-43114/0x000000000022d473030f116ddee9f6b43ac78ba3/); blast [`0x000000...c78ba3`](./contracts/blast-81457/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited |
 | PositionDescriptor | periphery | blast | 12 deployments: ethereum `0xd1428b...63f06c`; optimism `0xedd814...a66743`; bsc `0xf0432f...d380e1`; unichain `0x9fb284...f7f722`; polygon `0x089277...6e6794`; base `0x25d093...f3e7d5`; arbitrum `0xbbbcc6...e25df2`; arbitrum `0xe2023f...7843f4`; arbitrum `0xe783de...19ebad`; celo `0x5727e2...102d8a`; avalanche `0x2b1aed...51f0a9`; blast [`0x0747ad...676f97`](./contracts/blast-81457/0x0747ad2b2e1f5761b1dcf0d8672bd1ffc3676f97/) | ⚠️ Unaudited |
 | QuoterV2 | periphery | ethereum | 3 deployments: ethereum [`0x61ffe0...30b21e`](./contracts/ethereum-1/0x61ffe014ba17989e743c5f6cb21bf9697530b21e/); base `0xd69ed5...baa46a`; blast `0x766f7e...e21ae1` | ⚠️ Unaudited |
 | RingLaunchpad | unknown | arbitrum | 5 deployments: unichain `0xd69ed5...baa46a`; base `0x4ea40d...bca913`; base `0x76c8dd...3d1d4e`; base `0x833d47...c0da30`; arbitrum [`0x4de602...c4dd9b`](./contracts/arbitrum-42161/0x4de602a30ad7fef8223dcf67a9fb704324c4dd9b/) | ⚠️ Unaudited |
@@ -170,7 +169,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [> [Open Zeppelin report]() from July 17th 2024.](https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/OpenZeppelin_audit_core.pdf) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [> [Certora draft report]() from July 2024.](https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/DRAFT_Certora_audit_core.pdf) | Certora | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
 | [> [Trail of Bits report]() from September 5th 2024.](https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/TrailOfBits_audit_core.pdf) | Trail of Bits | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [> [Spearbit draft report]() from September 5th 2024.](https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/DRAFT_Spearbit_audit_core.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -217,23 +215,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 32 |
-| upstream | 11 |
-| standard_library | 8 |
+| native | 31 |
+| upstream | 12 |
+| standard_library | 7 |
 | needs_review | 40 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 7
+- Audits with zero matched contracts: 6
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
 - Match method counts: extraction_exact=66
 
 Zero-match audit list:
 
-- [3964] > [Open Zeppelin report]() from July 17th 2024.
 - [3965] > [Certora draft report]() from July 2024.
 - [3966] > [Trail of Bits report]() from September 5th 2024.
 - [3967] > [Spearbit draft report]() from September 5th 2024.

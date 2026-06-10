@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "toupee.tech",
-  "generated_at": "2026-05-31T11:08:49.615Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:17.532Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "toupee.tech",
     "tier": 0,
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Toupee.tech is a yield optimization protocol on Base that allows users to deposit liquidity into pools and earn rewards. It uses a ve(3,3) tokenomics model where TOKEN holders can vote on gauge weights to direct emissions, and plugins integrate with external protocols like Aerodrome and Velocimeter to capture additional yield.",
+    "project_purpose": "Toupee.tech is an incentive coordination protocol on Base centered on WIG, oWIG, and vWIG mechanics. The protocol combines farm emission voting, staking and farming rewards, voting rewards, WETH-backed bonding-curve/floor-price liquidity mechanics, and vWIG-backed borrowing. Gauge and plugin integrations with external protocols may be used as implementation details for directing incentives and rewards, but the primary product is incentive coordination rather than generic yield optimization.",
     "relationship_narrative": "The BASE Mainnet family contains all core and supporting contracts. The governance contracts (Controller, TOKENGovernor) manage the TOKEN and its emissions, while the Voter contract directs rewards to gauges created by GaugeFactory. Plugin factories (AeroGaugePluginFactory, VelociGaugePluginFactory, etc.) deploy plugin instances that integrate with external protocols, and these plugins are used by the core Pool and Voter to optimize yield. The testnet family only includes a Multicall contract for testing purposes.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 29,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

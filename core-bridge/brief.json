@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "core-bridge",
-  "generated_at": "2026-05-31T07:41:50.295Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.510Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "core-bridge",
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 76.53416095042995
   },
   "summary": {
-    "total_contracts": 9,
-    "total_addresses": 9,
-    "unique_implementations": 9,
-    "total_deployments": 9,
+    "total_contracts": 6,
+    "total_addresses": 6,
+    "unique_implementations": 6,
+    "total_deployments": 6,
     "audited_contracts": 0,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 5,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 4,
     "coverage_pct": 0,
@@ -57,77 +57,20 @@
     }
   },
   "topography": {
-    "project_purpose": "CORE Bridge is a canonical cross-chain bridge enabling asset transfers between Avalanche and Base. It uses a lightweight node architecture to relay messages and facilitate token bridging.",
+    "project_purpose": "CORE Bridge is a cross-chain bridge for the Core DAO ecosystem, with observed bridge TVL across Ethereum, BNB Chain, Polygon, Arbitrum, Optimism, Avalanche, and Base. The listed Avalanche/Base contracts should be treated as a partial contract inventory only, and LayerZero contracts should be treated as third-party messaging dependencies rather than CORE-owned core bridge contracts unless independently verified.",
     "relationship_narrative": "The OriginalTokenBridge relies on the UltraLightNodeV2 for cross-chain message verification and delivery. Both contracts are deployed by the same deployer, indicating a shared infrastructure for the bridge functionality.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 6,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x462f7ec57c6492b983a8c8322b4369a7f149b859",
-      "name": "MPTValidator01",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "LayerZero",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MPTValidator01",
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x462f7ec57c6492b983a8c8322b4369a7f149b859",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x5b905fe05f81f3a8ad8b28c6e17779cfabf76068",
-      "name": "NonceContract",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "LayerZero",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "NonceContract",
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x5b905fe05f81f3a8ad8b28c6e17779cfabf76068",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
     {
       "chain_id": 8453,
       "chain_name": "base",
@@ -189,37 +132,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "review"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x4d73adb72bc3dd368966edd0f0b2148401a178e2",
-      "name": "UltraLightNodeV2",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "layer-zero",
-      "product_line": "CORE Bridge",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "UltraLightNodeV2",
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x4d73adb72bc3dd368966edd0f0b2148401a178e2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 43114,
@@ -372,7 +284,7 @@
   ],
   "origin_summary": {
     "native": 5,
-    "upstream": 3,
+    "upstream": 0,
     "standard_library": 0,
     "needs_review": 1
   },

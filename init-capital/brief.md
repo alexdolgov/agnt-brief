@@ -7,17 +7,17 @@
 - Project: INIT Capital (`init-capital`)
 - Website: [https://app.init.capital](https://app.init.capital)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-25T17:26:47.361Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:06.243Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: blast, mantle
-- Contract surface: 102 unique implementations (167 raw deployments)
-- DeFi Llama TVL: $4,514,490.46
+- Contract surface: 99 unique implementations (164 raw deployments)
+- DeFi Llama TVL: $4,285,355.62
 - On-chain TVL (included contracts): $66,515,699.03
 - TVL by chain: Mantle $66,512,508.56 | Blast $3,190.47
 
 ## Project Description
 
-INIT Capital is a decentralized lending protocol that enables users to supply and borrow assets across multiple chains. It features isolated lending pools with configurable risk parameters, interest rate models, and hooks for money market and margin trading operations.
+INIT Capital is a decentralized lending and money-market protocol with native pool, hook, oracle, configuration, risk, position, and periphery contracts. External assets such as USDC, USDT, WBTC, METH, cmETH, FBTC, and similar token contracts should be treated as underlying assets, not INIT-owned protocol/product contracts.
 
 ### Architecture
 
@@ -25,12 +25,12 @@ Lending Pools rely on Core Contracts for governance (Config, RiskManager), posit
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 6/28 (21.4%)
-- Verified + Unaudited implementations: 21
+- Verified implementations audited: 6/25 (24.0%)
+- Verified + Unaudited implementations: 18
 - Verified by bytecode match: 2
 - Unverified implementations: 74
-- Unique implementations: 102
-- Raw deployments: 167
+- Unique implementations: 99
+- Raw deployments: 164
 - Audits discovered: 7
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): $66,152,699.74
@@ -43,9 +43,9 @@ Lending Pools rely on Core Contracts for governance (Config, RiskManager), posit
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Trust Security | Tier 2 | 5 | 17.9% | 2023-12 |
-| PeckShield | Tier 2 | 3 | 10.7% | 2024-01 |
-| Sparkware | Tier 2 | 1 | 3.6% | n/a |
+| Trust Security | Tier 2 | 5 | 20.0% | 2023-12 |
+| PeckShield | Tier 2 | 3 | 12.0% | 2024-01 |
+| Sparkware | Tier 2 | 1 | 4.0% | n/a |
 
 ## Contract Surface
 
@@ -59,7 +59,7 @@ Lending Pools rely on Core Contracts for governance (Config, RiskManager), posit
 | InitOracle | operational_periphery | mantle | 2 deployments: mantle [`0x4e195a...2c0350`](./contracts/mantle-5000/0x4e195a32b2f6eba9c4565ba49bef34f23c2c0350/); mantle `0x792841...b14f81` | ✅ Audited |
 | MarginTradingHook | unknown | mantle | 10 deployments: mantle [`0x213754...9718b5`](./contracts/mantle-5000/0x2137546635595919a66468cf08cb9e9e879718b5/); mantle `0x42aa4e...6aa7f9`; mantle `0x497949...1c94bd`; mantle `0x8bc7df...4dfcbb`; mantle `0x917a9f...d3dc14`; mantle `0x956794...ae7d33`; mantle `0xe4fe22...1ad1ad`; mantle `0xebf3ed...8cdefd`; mantle `0xefb43e...000763`; mantle `0xfd5c7d...b21aa7` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (21)
+### ⚠️ Verified + Unaudited (18)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -67,7 +67,6 @@ Lending Pools rely on Core Contracts for governance (Config, RiskManager), posit
 | AccessControlManager | governance | mantle | [`0xce3292...30675a`](./contracts/mantle-5000/0xce3292ca5abbdfa1db02142a67cffc708530675a/) | ⚠️ Unaudited |
 | BVM_ETH | unknown | mantle | [`0xdeadde...ad1111`](./contracts/mantle-5000/0xdeaddeaddeaddeaddeaddeaddeaddeaddead1111/) | ⚠️ Unaudited |
 | DoubleSlopeIRM | unknown | mantle | 7 deployments: mantle [`0x00fa41...4748ec`](./contracts/mantle-5000/0x00fa41248f6c3a26863ec56634fe78ad4e4748ec/); mantle `0x0959a6...1ae7e4`; mantle `0x204e80...712255`; mantle `0x594485...d1fdbf`; mantle `0x71e0b2...8b2cf6`; mantle `0xb4d787...bb640b`; mantle `0xf25e43...18398e` | ⚠️ Unaudited |
-| FBTC | unknown | mantle | [`0xc96de2...d6c364`](./contracts/mantle-5000/0xc96de26018a54d51c097160568752c4e3bd6c364/) | ⚠️ Unaudited |
 | FiatTokenV2_1_1 | token | mantle | [`0x09bc4e...0d0df9`](./contracts/mantle-5000/0x09bc4e0d864854c6afb6eb9a9cdf58ac190d0df9/) | ⚠️ Unaudited |
 | InitLens | periphery | blast | 2 deployments: mantle `0x7d2b27...456042`; blast [`0x56fba2...b2860e`](./contracts/blast-81457/0x56fba2cc045c02d7adae5a9dfdce795900b2860e/) | ⚠️ Unaudited |
 | L2cmETH | unknown | mantle | [`0xe6829d...59e8fa`](./contracts/mantle-5000/0xe6829d9a7ee3040e1276fa75293bde931859e8fa/) | ⚠️ Unaudited |
@@ -80,9 +79,7 @@ Lending Pools rely on Core Contracts for governance (Config, RiskManager), posit
 | TransparentUpgradeableProxyBlast | proxy | blast | 7 deployments: blast [`0x0c2da1...96fc06`](./contracts/blast-81457/0x0c2da1659c2351d504c80e60c6077d971b96fc06/); blast `0x4b246c...f0993a`; blast `0x57200d...cea2f7`; blast `0xd97bb3...4c68c1`; blast `0xe31686...75e2ef`; blast `0xed9d7e...11904b`; blast `0xf683ce...f33d21` | ⚠️ Unaudited |
 | TransparentUpgradeableProxyReceiveETH | proxy | mantle | 4 deployments: mantle [`0x0bddc3...9a22f3`](./contracts/mantle-5000/0x0bddc3c0669aeb9dc00a9f4c8e2e8c38f59a22f3/); mantle `0x49a69a...e883c5`; mantle `0x7dac40...534a09`; mantle `0x7fa704...408eaa` | ⚠️ Unaudited |
 | USDeOFT | unknown | mantle | [`0x5d3a1f...52ef34`](./contracts/mantle-5000/0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34/) | ⚠️ Unaudited |
-| USDT | token | mantle | [`0x201eba...e956ae`](./contracts/mantle-5000/0x201eba5cc46d216ce6dc03f6a759e8e766e956ae/) | ⚠️ Unaudited |
 | USDYW | unknown | mantle | [`0x5be265...57c5a6`](./contracts/mantle-5000/0x5be26527e817998a7206475496fde1e68957c5a6/) | ⚠️ Unaudited |
-| WBTC | token | mantle | [`0xcabae6...aebfa2`](./contracts/mantle-5000/0xcabae6f6ea1ecab08ad02fe02ce9a44f09aebfa2/) | ⚠️ Unaudited |
 | WMANTLE | unknown | mantle | [`0x78c1b0...7f4cb8`](./contracts/mantle-5000/0x78c1b0c915c4faa5fffa6cabf0219da63d7f4cb8/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (1)
@@ -211,7 +208,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 33 |
-| upstream | 7 |
+| upstream | 4 |
 | standard_library | 12 |
 | needs_review | 50 |
 

@@ -7,8 +7,8 @@
 - Project: Angstrom (`angstrom`)
 - Website: [https://angstrom.xyz/](https://angstrom.xyz/)
 - Lifecycle: declining (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:35:49.051Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.567Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, ethereum
 - Contract surface: 13 unique implementations (14 raw deployments)
 - DeFi Llama TVL: $11,258,670.88

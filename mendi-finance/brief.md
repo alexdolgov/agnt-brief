@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Mendi Finance
 
-⚠️ Lifecycle status: SUNSETTING - TVL dropped 34.1% over 90 days
+⚠️ Lifecycle status: DEAD - TVL dropped 34.1% over 90 days
 
 ## Project Overview
 
 - Project: Mendi Finance (`mendi-finance`)
 - Website: [https://malda.xyz/](https://malda.xyz/)
-- Lifecycle: sunsetting (Tier 1, sunsetting)
-- Generated: 2026-05-24T15:27:59.892Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: dead (Tier 1, sunsetting)
+- Generated: 2026-06-10T20:59:07.456Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: linea
 - Contract surface: 39 unique implementations (122 raw deployments)
-- DeFi Llama TVL: $2,031,007.18
+- DeFi Llama TVL: $2,009,233.43
 - On-chain TVL (included contracts): $79,070,837.41
 - TVL by chain: Linea $79,070,837.41
 
 ## Project Description
 
-Mendi Finance is a decentralized lending protocol on Linea that allows users to supply and borrow crypto assets. It uses a Compound-like architecture with cToken markets, a Comptroller for risk management, and reward distribution mechanisms.
+Mendi Finance began as a Compound-style decentralized lending protocol on Linea, with cToken-style markets, a Comptroller for risk management, and reward distribution mechanisms. The project later rebranded/evolved into Malda, a unified cross-chain lending protocol positioning itself around zkProof-based cross-chain functionality. The current brief should distinguish the legacy Linea-only Mendi deployment from the broader Malda cross-chain lending system, and note that Malda has since been sunset and open-sourced.
 
 ### Architecture
 
@@ -31,19 +31,19 @@ The Comptroller manages all lending markets and coordinates reward distribution.
 - Unverified implementations: 11
 - Unique implementations: 39
 - Raw deployments: 122
-- Audits discovered: 6
+- Audits discovered: 4
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $79,070,837.41
 - Latest audit: 2025-08 (fresh)
-- Staleness: 1 fresh, 4 aging, 0 stale, 1 unknown
+- Staleness: 1 fresh, 2 aging, 0 stale, 1 unknown
 - Tier 1 coverage: 3.6% (Sherlock)
-- Note: This protocol is classified as [sunsetting]. ASD of $79,070,837.41 represents exposure in a protocol with sunsetting activity.
+- Note: This protocol is classified as [dead]. ASD of $79,070,837.41 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Veridise | Tier 2 | 3 | 10.7% | 2025-05 |
+| Veridise | Tier 2 | 3 | 10.7% | 2025-04 |
 | Sherlock | Tier 1 | 1 | 3.6% | 2025-08 |
 
 ## Contract Surface
@@ -124,8 +124,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [* [malda-lending report]()](https://github.com/malda-protocol/malda-lending/blob/main/audit/VAR_Malda_250120_malda_lending_V5.pdf) | Veridise | Audit | 2025-04 | aging | Direct | contract_name | 6 | high |
 | [Audit Reports](https://ionian.gitbook.io/malda/malda-protocol/audit-reports.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [* [malda-zk-coprocessor report]()](https://github.com/malda-protocol/malda-zk-coprocessor/blob/main/audit/VAR_Malda_250120_malda_zkcoprocessor.pdf) | Veridise | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
-| [* [malda-lending report]()](https://veridise.com/audits-archive/company/malda/malda-lending-2025-05-20) | Veridise | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
-| [* [malda-zk-coprocessor report]()](https://veridise.com/audits-archive/company/malda/malda-zk-coprocessor-2025-05-20) | Veridise | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -164,7 +162,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
 - Match method counts: extraction_exact=8
@@ -173,7 +171,5 @@ Zero-match audit list:
 
 - [2932] Audit Reports
 - [2933] * [malda-zk-coprocessor report]()
-- [2934] * [malda-lending report]()
-- [2935] * [malda-zk-coprocessor report]()
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -5,21 +5,22 @@
 - Project: Perpl (`perpl`)
 - Website: [https://perpl.xyz/](https://perpl.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-05-25T04:49:50.360Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:09.277Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,168,217.74
+- DeFi Llama TVL: $1,184,516.77
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Perpl is a derivatives protocol. Based on the limited metadata, it likely enables trading or issuance of derivative instruments on-chain.
-
-### Architecture
-
-No contract families or infrastructure relationships can be identified from the provided data.
+Perpl is an on-chain perpetual futures exchange, described as a CLOB-based perpetuals DEX on Monad.
 
 ## Audit Coverage Summary
 

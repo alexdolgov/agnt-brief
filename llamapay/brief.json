@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "llamapay",
-  "generated_at": "2026-05-31T09:50:28.199Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:07.021Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "llamapay",
@@ -22,18 +22,18 @@
     "drop_from_peak_pct": 71.74774285710943
   },
   "summary": {
-    "total_contracts": 20,
-    "total_addresses": 105,
-    "unique_implementations": 20,
-    "total_deployments": 105,
+    "total_contracts": 19,
+    "total_addresses": 98,
+    "unique_implementations": 19,
+    "total_deployments": 98,
     "audited_contracts": 0,
-    "unaudited_contracts": 9,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 6,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 3,
     "contracts_unverified": 11,
     "coverage_pct": 0,
-    "total_audits": 2,
+    "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 25777577.1865,
     "tvl_usd": 25777577.1865,
@@ -68,104 +68,24 @@
       "fresh": 0,
       "aging": 0,
       "stale": 1,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "LlamaPay is a multi-chain payment protocol that enables automated, recurring salary and token distribution streams. It provides factories to deploy escrow contracts for scheduled payments and vesting, along with bot infrastructure for executing transactions.",
+    "project_purpose": "LlamaPay is a multi-chain protocol for by-the-second recurring payment streams, commonly used for salaries, grants, subscriptions, and other continuous token payments. It also supports related vesting and escrow functionality through factory-deployed payment contracts. Claim automation/bots and upstream Disperse-style batch distribution utilities should be treated as supporting or external utilities rather than the core product purpose.",
     "relationship_narrative": "The Live family's LlamaPayFactory and Vesting Escrow Factory deploy TokenEscrow instances from the Scheduled Payments family, which hold and release funds. LlamaPayBot contracts interact with these escrows to automate payment execution, while Disperse assists in batch token distributions.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 19,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x6f9fb43274e9011804bf516e78caf5e89856301a",
-      "name": "Disperse",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "disperse",
-      "product_line": "Live",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Disperse",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xd152f549545093347a162dce210e7293f1452150",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xd152f549545093347a162dce210e7293f1452150",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xd152f549545093347a162dce210e7293f1452150",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xd152f549545093347a162dce210e7293f1452150",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xd152f549545093347a162dce210e7293f1452150",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x6f9fb43274e9011804bf516e78caf5e89856301a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x6f9fb43274e9011804bf516e78caf5e89856301a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -1488,27 +1408,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5985,
-      "audit_key": "audit-5985",
-      "report_name": "bounty.md",
-      "report_url": "https://github.com/LlamaPay/docs/blob/master/security/bounty.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -1566,7 +1465,7 @@
   ],
   "origin_summary": {
     "native": 10,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 0,
     "needs_review": 9
   },
@@ -1579,10 +1478,6 @@
       {
         "audit_id": 5984,
         "report_name": "PeckShield-Audit-Report-LlamaPay-v1.0.pdf"
-      },
-      {
-        "audit_id": 5985,
-        "report_name": "bounty.md"
       }
     ],
     "inherited_remapped_matches": []

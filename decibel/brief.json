@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "decibel",
-  "generated_at": "2026-05-26T14:11:27.767Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:01.661Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Decibel is a derivatives protocol that enables users to trade and manage derivative instruments on-chain. It provides infrastructure for creating, trading, and settling derivative contracts.",
-    "relationship_narrative": "No product families or contracts are defined in the provided inventory, so no relationships can be described.",
+    "project_purpose": "Decibel is an Aptos-based on-chain trading engine for spot and perpetual trading, as well as yield and vault opportunities. The protocol supports margin trading, order book/trade interfaces, funding, collateral management, and positions.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

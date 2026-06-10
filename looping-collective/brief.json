@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "looping-collective",
-  "generated_at": "2026-05-22T18:38:10.281Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:07.034Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "looping-collective",
@@ -26,16 +26,16 @@
     "total_addresses": 94,
     "unique_implementations": 14,
     "total_deployments": 94,
-    "audited_contracts": 1,
-    "unaudited_contracts": 12,
-    "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 11,
+    "audited_contracts": 0,
+    "unaudited_contracts": 13,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 12,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 1,
-    "coverage_pct": 7.7,
-    "total_audits": 13,
-    "scoreable_audits": 1,
-    "dl_tvl_usd": 18116341,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 15634441,
     "tvl_usd": 11811614.34192763,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -50,19 +50,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2026-01",
-    "audit_freshness": "fresh",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
-      "fresh": 3,
+      "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 10
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Looping Collective is a yield protocol that aggregates user deposits into vaults which deploy capital across DeFi strategies, including leveraged looping and integration with Hyperliquid. It offers multiple vault products with rate providers and oracles to optimize and report yields.",
+    "project_purpose": "Looping Collective is an active yield protocol offering user-facing vault products including LHYPE, wHLP, and LcBTC/loopedBTC. Its vaults aggregate deposits and deploy capital across DeFi strategies, including leveraged looping and Hyperliquid integrations, with supporting rate providers, accountants, adapters, and oracle-related components used to optimize and report yields.",
     "relationship_narrative": "The Vault Infrastructure family provides reusable UltraVault logic and rate providers used by other vault products. Wrapped HLP operates independently as an adapter to Hyperliquid, while Contract Addresses and Looped Hype are separate BoringVault-based products that do not share the UltraVault infrastructure.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 14,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -332,7 +337,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 999,
@@ -341,16 +346,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-1962"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -429,7 +432,7 @@
       "chain_name": "hyperliquid",
       "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
       "name": "HyperliquidExtension",
-      "role": "adapter",
+      "role": "proxy",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "Wrapped HLP",
@@ -1226,295 +1229,8 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 1952,
-      "audit_key": "audit-1952",
-      "report_name": "0xmacro-boring-vault-arctic-0.pdf",
-      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-0.pdf",
-      "auditor": "0xMacro",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1953,
-      "audit_key": "audit-1953",
-      "report_name": "0xmacro-boring-vault-arctic-1.pdf",
-      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-1.pdf",
-      "auditor": "0xMacro",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1954,
-      "audit_key": "audit-1954",
-      "report_name": "pashov-boring-vault.pdf",
-      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-boring-vault.pdf",
-      "auditor": "Pashov Audit Group",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1955,
-      "audit_key": "audit-1955",
-      "report_name": "pashov-hlp-controller:account.pdf",
-      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-hlp-controller%3Aaccount.pdf",
-      "auditor": "Pashov Audit Group",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1956,
-      "audit_key": "audit-1956",
-      "report_name": "pashov-hyperlane.pdf",
-      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-hyperlane.pdf",
-      "auditor": "Pashov Audit Group",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1957,
-      "audit_key": "audit-1957",
-      "report_name": "pashov-one-to-one-queue.pdf",
-      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-one-to-one-queue.pdf",
-      "auditor": "Pashov Audit Group",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1958,
-      "audit_key": "audit-1958",
-      "report_name": "pashov-predicate-freeze-supply-cap.pdf",
-      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-predicate-freeze-supply-cap.pdf",
-      "auditor": "Pashov Audit Group",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1959,
-      "audit_key": "audit-1959",
-      "report_name": "pashov-withdraw-queue.pdf",
-      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-withdraw-queue.pdf",
-      "auditor": "Pashov Audit Group",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1960,
-      "audit_key": "audit-1960",
-      "report_name": "spearbit-boring-vault-arctic-0.pdf",
-      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/spearbit-boring-vault-arctic-0.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1961,
-      "audit_key": "audit-1961",
-      "report_name": "zenith-one-to-one-queue.pdf",
-      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/zenith-one-to-one-queue.pdf",
-      "auditor": "Zenith",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1962,
-      "audit_key": "audit-1962",
-      "report_name": "zenith-withdraw-queue.pdf",
-      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/zenith-withdraw-queue.pdf",
-      "auditor": "Zenith",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2026-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AccountantWithRateProviders",
-        "CrossChainTellerBase",
-        "TellerWithMultiAssetSupport",
-        "WithdrawQueue"
-      ],
-      "matched_contracts": 2,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1963,
-      "audit_key": "audit-1963",
-      "report_name": "v1_May_2025_ChainSecurity.pdf",
-      "report_url": "https://github.com/UltraYield/contracts/blob/main/audits/v1_May_2025_ChainSecurity.pdf",
-      "auditor": "ChainSecurity",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1964,
-      "audit_key": "audit-1964",
-      "report_name": "v2_Sep_2025_Omniscia.pdf",
-      "report_url": "https://github.com/UltraYield/contracts/blob/main/audits/v2_Sep_2025_Omniscia.pdf",
-      "auditor": "Omniscia",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
-  "auditor_coverage": [
-    {
-      "auditor": "Zenith",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 7.7,
-      "latest_audit": "2026-01"
-    }
-  ],
+  "audits": [],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 999,
@@ -1525,6 +1241,16 @@
       "origin_kind": "native",
       "tvl_usd": 204075.2594195031,
       "risk_note": "Verified native implementation with $204,075.26 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x470bd109a24f608590d85fc1f5a4b6e625e8bdff",
+      "name": "AccountantWithRateProviders",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 999,
@@ -1594,64 +1320,11 @@
     "needs_review": 4
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 2
-    },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 1952,
-        "report_name": "0xmacro-boring-vault-arctic-0.pdf"
-      },
-      {
-        "audit_id": 1953,
-        "report_name": "0xmacro-boring-vault-arctic-1.pdf"
-      },
-      {
-        "audit_id": 1954,
-        "report_name": "pashov-boring-vault.pdf"
-      },
-      {
-        "audit_id": 1955,
-        "report_name": "pashov-hlp-controller:account.pdf"
-      },
-      {
-        "audit_id": 1956,
-        "report_name": "pashov-hyperlane.pdf"
-      },
-      {
-        "audit_id": 1957,
-        "report_name": "pashov-one-to-one-queue.pdf"
-      },
-      {
-        "audit_id": 1958,
-        "report_name": "pashov-predicate-freeze-supply-cap.pdf"
-      },
-      {
-        "audit_id": 1959,
-        "report_name": "pashov-withdraw-queue.pdf"
-      },
-      {
-        "audit_id": 1960,
-        "report_name": "spearbit-boring-vault-arctic-0.pdf"
-      },
-      {
-        "audit_id": 1961,
-        "report_name": "zenith-one-to-one-queue.pdf"
-      },
-      {
-        "audit_id": 1963,
-        "report_name": "v1_May_2025_ChainSecurity.pdf"
-      },
-      {
-        "audit_id": 1964,
-        "report_name": "v2_Sep_2025_Omniscia.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

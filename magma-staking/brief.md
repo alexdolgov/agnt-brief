@@ -5,21 +5,22 @@
 - Project: Magma Staking (`magma-staking`)
 - Website: [https://www.magmastaking.xyz/](https://www.magmastaking.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-05-25T02:15:06.809Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:07.079Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,257,903.01
+- DeFi Llama TVL: $1,159,805.29
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Magma Staking is a liquid staking protocol that allows users to stake assets and receive liquid staking tokens in return, enabling them to earn staking rewards while maintaining liquidity.
-
-### Architecture
-
-No product families or contracts are defined in the provided metadata, so no relationships can be described.
+Magma Staking is a liquid staking protocol on Monad that allows users to stake MON, delegate stake to validators, and receive gMON as a liquid staking token while earning MEV-boosted staking rewards and maintaining liquidity.
 
 ## Audit Coverage Summary
 

@@ -1,23 +1,23 @@
 # Agentic Audit Brief: DAO Maker
 
-⚠️ Lifecycle status: DEAD - TVL changed 0.2% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 0.2% over 90 days
 
 ## Project Overview
 
 - Project: DAO Maker (`dao-maker`)
 - Website: [https://daomaker.com/](https://daomaker.com/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-24T14:41:39.305Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:01.622Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 17 unique implementations (24 raw deployments)
-- DeFi Llama TVL: $2,101,902.00
+- DeFi Llama TVL: $1,997,131.00
 - On-chain TVL (included contracts): $9,341,771.08
 - TVL by chain: Ethereum $9,341,771.08
 
 ## Project Description
 
-DAO Maker provides a vesting and token distribution platform, enabling projects to lock and release tokens to stakeholders over time. It also includes a staking mechanism for its native token.
+DAO Maker is a launchpad, fundraising, and growth-platform ecosystem for crypto projects, with user-facing products that include token launches, airdrops, vesting, staking, farms, vaults, and DAO Swap. Vesting and token distribution are product components rather than the full scope of the protocol.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The vesting family is self-contained, with the token contract serving as the cor
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 7 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $9,341,771.08 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $9,341,771.08 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

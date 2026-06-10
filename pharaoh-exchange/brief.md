@@ -5,8 +5,8 @@
 - Project: Pharaoh Exchange (`pharaoh-exchange`)
 - Website: [https://pharaoh.exchange](https://pharaoh.exchange)
 - Lifecycle: active (Tier 0, 28.6% below peak)
-- Generated: 2026-05-31T05:40:30.306Z
-- Pipeline run: v2-pipeline-2026-05-31-6a3e7e-9cd8
+- Generated: 2026-06-10T20:59:09.285Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche
 - Contract surface: 48 unique implementations (95 raw deployments)
 - DeFi Llama TVL: $50,255,510.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Pharaoh Exchange is a decentralized exchange (DEX) on Avalanche that facilitates token swaps and liquidity provision. It appears to support both concentrated liquidity (V3) and legacy AMM models, with integrated yield farming and governance features.
+Pharaoh Exchange is a decentralized exchange on Avalanche offering token swaps, liquidity provision, incentive mechanisms, and governance features. Its contract surface should be reviewed carefully to distinguish confirmed Pharaoh-owned deployments from Ramses/upstream or other potentially contaminated contracts before making ownership or coverage claims.
 
 ### Architecture
 

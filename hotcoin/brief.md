@@ -5,21 +5,22 @@
 - Project: Hotcoin (`hotcoin`)
 - Website: [https://www.hotcoin.com/](https://www.hotcoin.com/)
 - Lifecycle: active (Tier 0, 75.7% below peak)
-- Generated: 2026-05-31T08:21:52.618Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.681Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: scroll
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $5,391,703.23
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Hotcoin is a centralized exchange (CEX) that provides trading services for digital assets. The on-chain contract likely serves as a wallet or operational address for exchange-related activities on the Scroll network.
-
-### Architecture
-
-Only one contract is identified, serving as the sole on-chain component for the exchange's operations on Scroll.
+Hotcoin is a centralized exchange (CEX) that provides trading services for digital assets. One unverified Scroll address is tracked; its role is unknown.
 
 ## Audit Coverage Summary
 

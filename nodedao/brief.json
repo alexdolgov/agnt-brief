@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nodedao",
-  "generated_at": "2026-05-26T18:17:45.606Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:08.705Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "nodedao",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "NodeDAO is a liquid staking protocol that allows users to stake ETH and receive liquid staking tokens while earning staking rewards. It also provides restaking and DeFi strategy integration to optimize yields.",
+    "project_purpose": "NodeDAO is a DAO-operated staking protocol spanning ETH liquid staking, rnETH restaking, BTC staking products including oBTC/oyBTC, and DeFi/L2 strategy integrations for earning and optimizing staking-related yields.",
     "relationship_narrative": "The NodeDAOView contract serves as a read-only aggregation point for the protocol, while the ERC1967Proxy enables upgradeability. Other contracts like RestakingPool, ELVault, and DefiStrategy likely interact with the view contract to provide data to users.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 18,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -495,7 +500,7 @@
       "chain_name": "ethereum",
       "address": "0x857bf02b1f5fd85e064e6726658ea1864a14d948",
       "name": "NodeDAOView",
-      "role": "unknown",
+      "role": "periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "NodeDAO",
@@ -1009,7 +1014,7 @@
       "chain_name": "ethereum",
       "address": "0x857bf02b1f5fd85e064e6726658ea1864a14d948",
       "name": "NodeDAOView",
-      "role": "unknown",
+      "role": "periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

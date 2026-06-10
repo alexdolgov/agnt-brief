@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mainstreet",
-  "generated_at": "2026-05-31T14:54:04.149Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-06-10T20:59:07.143Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "mainstreet",
@@ -56,7 +56,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Mainstreet is an Ethereum basis-trading and synthetic-dollar protocol centered on msUSD, a yield-bearing or rebasing synthetic dollar minted against yield-bearing collateral.",
     "relationship_narrative": null,
     "product_family_count": 1
   },
@@ -75,7 +75,7 @@
       "chain_name": "ethereum",
       "address": "0x4ba01f22827018b4772cd326c7627fb4956a7c00",
       "name": "msUSDV2",
-      "role": "unknown",
+      "role": "proxy",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "Mainstreet",

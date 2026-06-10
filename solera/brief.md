@@ -5,21 +5,22 @@
 - Project: Solera (`solera`)
 - Website: [https://app.solera.market/](https://app.solera.market/)
 - Lifecycle: unknown
-- Generated: 2026-05-23T07:26:51.983Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:16.239Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $8,090,331.08
+- DeFi Llama TVL: $8,358,480.77
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Solera is a lending protocol that enables users to supply and borrow assets. It likely provides interest-bearing deposits and overcollateralized loans.
-
-### Architecture
-
-No product families or contracts are defined in the provided data, so no relationships can be described.
+Solera is a lending and credit hub with RWA-focused vault interfaces and live Earn/Borrow products, powered in part by Morpho and Gauntlet infrastructure.
 
 ## Audit Coverage Summary
 

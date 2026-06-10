@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "vest-markets",
-  "generated_at": "2026-05-31T11:32:36.408Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:18.592Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "vest-markets",
@@ -70,9 +70,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Vest Markets is a cross-chain derivatives protocol enabling users to trade perpetual futures and other synthetic assets. It uses a bridge infrastructure to facilitate asset transfers and settlement across multiple chains.",
+    "project_purpose": "Vest Markets is a perpetuals and leveraged trading DEX for equities, crypto and FX. Its bridge contracts are supporting infrastructure rather than the primary protocol identity.",
     "relationship_narrative": "The SrcBridge contract handles cross-chain asset transfers and is deployed on multiple chains, while the Treasury manages protocol fees. The Exchange and RouterV2 contracts facilitate trading and routing, sharing the bridge and treasury infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 4,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

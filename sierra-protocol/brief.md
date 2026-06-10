@@ -5,8 +5,8 @@
 - Project: Sierra Protocol (`sierra-protocol`)
 - Website: [https://sierra.money/](https://sierra.money/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-26T19:01:56.471Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:16.077Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, ethereum
 - Contract surface: 78 unique implementations (127 raw deployments)
 - DeFi Llama TVL: $32,675,268.71
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Sierra Protocol is a yield-bearing DeFi protocol that enables users to deposit assets into dynamic pools to earn yield. It operates across Ethereum and Avalanche, using a registry-based architecture to manage pools and track user deposits.
+SIERRA is a Liquid Yield Token protocol designed to grow through intrinsic yield generated from a portfolio of real-world assets and DeFi/CeFi strategies. Its on-chain contracts, including pools and related registry or accounting components where applicable, should be described as implementation infrastructure for the yield-generating SIERRA product rather than as a separate deposit-address management product family.
 
 ### Architecture
 

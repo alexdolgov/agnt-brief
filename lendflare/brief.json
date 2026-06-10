@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "lendflare",
-  "generated_at": "2026-05-25T14:09:47.607Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:06.939Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "lendflare",
@@ -35,7 +35,7 @@
     "coverage_pct": 5.3,
     "total_audits": 1,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 1143827.23854,
+    "dl_tvl_usd": 1137068.3229,
     "tvl_usd": 1051.875,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "LendFlare is a decentralized lending protocol on Ethereum that enables users to supply assets, borrow against them, and earn yield through boosted rewards. It integrates with Curve and Convex to optimize returns for liquidity providers.",
+    "project_purpose": "LendFlare is an Ethereum borrowing platform for Curve LP holders, enabling fixed-rate, fixed-term, high-LTV loans against Curve LP collateral. Lender liquidity is linked to Compound-funded supply, while Curve/Convex reward infrastructure is ancillary to the protocol’s collateral and yield mechanics.",
     "relationship_narrative": "The LendFlare family shares a common proxy infrastructure (LendFlareProxy and TransparentUpgradeableProxy) for upgradeability. Core lending markets interact with Convex booster contracts to maximize yield, while VirtualBalanceWrappers and Vyper contracts serve as supporting adapters and pools.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 74,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -174,7 +179,7 @@
       "chain_name": "ethereum",
       "address": "0x4c3c78cebc9cc87436deed2782998bc002f2b69f",
       "name": "ConvexBoosterV2",
-      "role": "core_logic",
+      "role": "proxy",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "LendFlare",
@@ -826,7 +831,7 @@
       "chain_name": "ethereum",
       "address": "0x19ac8e582a9e6f059e56ce77015c46e250c711d2",
       "name": "LendFlareVotingEscrowV2",
-      "role": "operational_periphery",
+      "role": "proxy",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -915,7 +920,7 @@
       "chain_name": "ethereum",
       "address": "0x402e3c8e2ba9db00005d934260157b1b648cac5e",
       "name": "LendingMarket",
-      "role": "core_logic",
+      "role": "proxy",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -5311,7 +5316,7 @@
       "chain_name": "ethereum",
       "address": "0x19ac8e582a9e6f059e56ce77015c46e250c711d2",
       "name": "LendFlareVotingEscrowV2",
-      "role": "operational_periphery",
+      "role": "proxy",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -5321,7 +5326,7 @@
       "chain_name": "ethereum",
       "address": "0x402e3c8e2ba9db00005d934260157b1b648cac5e",
       "name": "LendingMarket",
-      "role": "core_logic",
+      "role": "proxy",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

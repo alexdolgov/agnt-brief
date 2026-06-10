@@ -5,8 +5,8 @@
 - Project: OSL (`osl`)
 - Website: [https://www.osl.com/en](https://www.osl.com/en)
 - Lifecycle: active (Tier 0, 60% below peak)
-- Generated: 2026-05-31T14:54:10.989Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:08.866Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: scroll
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $41,485,095.07
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-OSL is a centralized exchange (CEX) operating on the Scroll chain, providing trading and related financial services through a set of smart contracts.
+OSL is a regulated centralized digital asset exchange and digital asset payments/infrastructure provider. The four listed Scroll addresses are an incomplete, unknown-role on-chain surface and should not be characterized as facilitating OSL's core centralized exchange operations or representing the full multi-chain OSL/DefiLlama reserve surface without further verification.
 
 ### Architecture
 

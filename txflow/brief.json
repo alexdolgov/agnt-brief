@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "txflow",
-  "generated_at": "2026-05-31T11:23:32.839Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:18.186Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "txflow",
     "tier": 0,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "TxFlow is a multi-chain DeFi protocol offering a cross-chain bridge for asset transfers and a perpetuals trading platform for leveraged derivatives.",
-    "relationship_narrative": "TxFlow Bridge and TxFlow Perps share cross-chain infrastructure, with tokens like L2TBTC and MantaMintableERC20 bridging assets into perpetual pools. Governance and staking contracts (e.g., FarmV2Controller, ArcProxy) are used across the perps ecosystem to manage rewards and protocol parameters.",
+    "project_purpose": "TxFlow is an open Layer 1 blockchain built around TIP Liquidity Standards, enabling shared on-chain liquidity, settlement, and market data without bridging. The currently tracked Arbitrum Bridge2 contract should be treated as a limited DefiLlama bridge/TVL adapter surface, not as evidence that the whole project is primarily a cross-chain bridge or perpetuals platform.",
+    "relationship_narrative": null,
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

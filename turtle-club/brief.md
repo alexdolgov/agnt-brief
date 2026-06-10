@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Turtle Club
 
-⚠️ Lifecycle status: DEAD - TVL dropped 80.8% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 80.8% over 90 days
 
 ## Project Overview
 
 - Project: Turtle Club (`turtle-club`)
 - Website: [https://app.turtle.xyz/](https://app.turtle.xyz/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-31T11:25:02.029Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:17.679Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, bsc, ethereum, linea
 - Contract surface: 516 unique implementations (1230 raw deployments)
 - DeFi Llama TVL: $1,231,786.55
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Turtle Club is an onchain capital allocator that provides yield‑generating vaults, liquid staking derivatives, and governance infrastructure across multiple EVM chains. It aggregates user deposits into strategies like EigenLayer restaking, Morpho lending, and Aave/Compound yield, while managing rewards and voting power through its token ecosystem.
+Turtle Club is a liquidity-distribution and onchain capital-allocation incentives protocol. Its public product positioning is focused on routing and incentivizing liquidity across supported EVM deployments and integrations. Vaults, restaking, Morpho, Aave, Compound, liquid-staking assets, and similar yield sources should be described only as integrations or underlying exposures where independently verified, not as Turtle Club's own core protocol surface.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The Contracts family provides the governance and staking token layer that underp
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $59,810,162.27 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $59,810,162.27 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

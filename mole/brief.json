@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mole",
-  "generated_at": "2026-05-29T10:53:26.005Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
+  "generated_at": "2026-06-10T20:59:07.778Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "mole",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Mole is a yield optimization protocol on Avalanche that automates delta-neutral strategies, primarily through leveraged staking and liquidity provision on Trader Joe. It uses a system of vaults, workers, and oracles to manage user deposits and generate yield.",
+    "project_purpose": "Mole is a DeFi yield protocol with current project activity and TVL attributed to Aptos and Sui. Any Avalanche EVM Trader Joe delta-neutral vault, worker, and oracle deployments should be treated as a separate legacy or currentness-unverified contract surface unless current project documentation or DefiLlama data confirms active Avalanche usage.",
     "relationship_narrative": "The protocol consists of a single product family where all contracts are deployed by the same deployer and share a common proxy pattern. Core worker contracts execute strategies, while numerous proxy contracts serve as upgradeable access points, indicating a centralized but modular infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 49,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

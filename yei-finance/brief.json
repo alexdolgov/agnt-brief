@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "yei-finance",
-  "generated_at": "2026-05-31T11:45:17.033Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:19.409Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "yei-finance",
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Yei Finance is a lending and decentralized exchange protocol on Sei, enabling users to supply and borrow assets through its lending market and swap tokens via its DEX. It leverages cross-chain infrastructure for asset transfers and governance.",
+    "project_purpose": "Yei Finance is a DeFi protocol on Sei with marketed products including YeiLend lending markets, YeiSwap token swaps, and bridge/cross-chain pre-deposit vault features. The project brief should distinguish these product surfaces and avoid unverified governance or cross-product support assumptions unless confirmed by documentation or contract analysis.",
     "relationship_narrative": "The protocol uses shared proxy-based infrastructure for cross-chain asset management (NttManager, WormholeTransceiver) and governance (Collector), which likely support both lending and DEX operations. The deployer clusters suggest modular development with distinct groups managing core and peripheral contracts.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 44,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

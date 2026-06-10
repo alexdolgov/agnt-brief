@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "thorswap",
-  "generated_at": "2026-05-23T04:10:06.375Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:17.498Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "thorswap",
@@ -35,7 +35,7 @@
     "coverage_pct": 13,
     "total_audits": 2,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 10259640.47164,
+    "dl_tvl_usd": 16729673.39748,
     "tvl_usd": 15542115.041694487,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -61,6 +61,11 @@
     "project_purpose": "THORSwap is a decentralized exchange aggregator that enables cross-chain token swaps by leveraging the THORChain liquidity network. It provides users with a unified interface to trade assets across multiple blockchains without wrapped tokens or centralized intermediaries.",
     "relationship_narrative": "The THORSwap family shares the ThorToken as the base asset, with uTHOR, vTHOR, and yTHOR representing wrapped or staked variants used across the protocol's staking and governance mechanisms. These contracts are deployed from a common deployer cluster, indicating a unified infrastructure for token management.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 34,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -457,7 +462,7 @@
       "chain_name": "ethereum",
       "address": "0xf892fef9da200d9e84c9b0647ecff0f34633abe8",
       "name": "TSAggregatorTokenTransferProxy",
-      "role": "token",
+      "role": "proxy",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,

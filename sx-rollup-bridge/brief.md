@@ -7,17 +7,17 @@
 - Project: SX Rollup Bridge (`sx-rollup-bridge`)
 - Website: [https://sx.bet/wallet/bridge](https://sx.bet/wallet/bridge)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:50:05.542Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.944Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 134 unique implementations (138 raw deployments)
+- Contract surface: 133 unique implementations (137 raw deployments)
 - DeFi Llama TVL: $6,369,742.14
 - On-chain TVL (included contracts): $6,117,892.20
 - TVL by chain: Ethereum $6,117,892.20
 
 ## Project Description
 
-The SX Rollup Bridge is a canonical bridge enabling asset transfers between Ethereum and the SX Network rollup. It uses gateway and bridge contracts to lock tokens on L1 and mint corresponding representations on the rollup.
+The SX Rollup Bridge is the canonical bridge between Ethereum and the SX Network rollup, enabling asset transfers through the bridge and gateway contracts required for cross-chain deposit and withdrawal flows. SportX/SX.bet application contracts and broader SX token or governance infrastructure should not be treated as bridge operational support unless explicitly tied to bridge operation.
 
 ### Architecture
 
@@ -25,12 +25,12 @@ The L1OrbitERC20Gateway manages token deposits and withdrawals, interacting with
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/69 (0.0%)
-- Verified + Unaudited implementations: 69
+- Verified implementations audited: 0/68 (0.0%)
+- Verified + Unaudited implementations: 68
 - Verified by bytecode match: 0
 - Unverified implementations: 65
-- Unique implementations: 134
-- Raw deployments: 138
+- Unique implementations: 133
+- Raw deployments: 137
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $6,117,892.20
@@ -49,7 +49,7 @@ The L1OrbitERC20Gateway manages token deposits and withdrawals, interacting with
 
 - None
 
-### ⚠️ Verified + Unaudited (69)
+### ⚠️ Verified + Unaudited (68)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -113,7 +113,6 @@ The L1OrbitERC20Gateway manages token deposits and withdrawals, interacting with
 | SEP2022Timelock | governance | ethereum | [`0x5083b3...0e3e60`](./contracts/ethereum-1/0x5083b37dab6825705bfaed8cae77c9dcf40e3e60/) | ⚠️ Unaudited |
 | SEP2023Timelock | governance | ethereum | [`0x4f5589...999e19`](./contracts/ethereum-1/0x4f55893f65261e08b8df6290676f68b891999e19/) | ⚠️ Unaudited |
 | SEP2024Timelock | governance | ethereum | [`0xe28332...5c454c`](./contracts/ethereum-1/0xe28332068ea01a7ec27a4cc60a87484a925c454c/) | ⚠️ Unaudited |
-| SportX | unknown | ethereum | [`0x99fe3b...f41452`](./contracts/ethereum-1/0x99fe3b1391503a1bc1788051347a1324bff41452/) | ⚠️ Unaudited |
 | SuperAdminRole | unknown | ethereum | [`0x87d712...76452e`](./contracts/ethereum-1/0x87d712688a706d4343704eeb382cb72abe76452e/) | ⚠️ Unaudited |
 | SX | unknown | ethereum | 3 deployments: ethereum [`0x2571e3...d974fc`](./contracts/ethereum-1/0x2571e3232ea10140b676c42b4bd1956c08d974fc/); ethereum `0xd26ea9...b38a1a`; ethereum `0xf6db95...50ea4a` | ⚠️ Unaudited |
 | SXNetwork | unknown | ethereum | 2 deployments: ethereum [`0x309ef6...d07c41`](./contracts/ethereum-1/0x309ef6c302f4b617a6723a8a26d9bb2503d07c41/); ethereum `0xbe9f61...d96624` | ⚠️ Unaudited |
@@ -277,7 +276,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x5083b3...0e3e60`](./contracts/ethereum-1/0x5083b37dab6825705bfaed8cae77c9dcf40e3e60/) | SEP2022Timelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4f5589...999e19`](./contracts/ethereum-1/0x4f55893f65261e08b8df6290676f68b891999e19/) | SEP2023Timelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xe28332...5c454c`](./contracts/ethereum-1/0xe28332068ea01a7ec27a4cc60a87484a925c454c/) | SEP2024Timelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x99fe3b...f41452`](./contracts/ethereum-1/0x99fe3b1391503a1bc1788051347a1324bff41452/) | SportX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x87d712...76452e`](./contracts/ethereum-1/0x87d712688a706d4343704eeb382cb72abe76452e/) | SuperAdminRole | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2571e3...d974fc`](./contracts/ethereum-1/0x2571e3232ea10140b676c42b4bd1956c08d974fc/) | SX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x309ef6...d07c41`](./contracts/ethereum-1/0x309ef6c302f4b617a6723a8a26d9bb2503d07c41/) | SXNetwork | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -290,7 +288,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 67 |
+| native | 66 |
 | upstream | 1 |
 | standard_library | 1 |
 | needs_review | 65 |

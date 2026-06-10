@@ -5,8 +5,8 @@
 - Project: PepeTeam (`pepeteam`)
 - Website: [https://pepe.team](https://pepe.team)
 - Lifecycle: active (Tier 0, 91.1% below peak)
-- Generated: 2026-05-31T10:14:26.014Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:09.272Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, polygon
 - Contract surface: 21 unique implementations (64 raw deployments)
 - DeFi Llama TVL: $1,319,181.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-PepeTeam is a multi-chain DeFi protocol offering cross-chain asset bridging, decentralized exchange (DEX) functionality, and liquid staking. It enables users to transfer tokens between Ethereum and Polygon, trade assets via vault-based DEX contracts, and participate in liquid staking through sWAVES.
+PepeTeam is a multi-chain product development team whose current products include P2P trading and escrow, a pepeCash fiat/crypto purchase flow, a Telegram bot, and pepeBridge cross-chain communication and liquidity-transfer infrastructure. Do not describe the project as offering a vault-based DEX or sWAVES liquid staking unless those claims are independently supported.
 
 ### Architecture
 

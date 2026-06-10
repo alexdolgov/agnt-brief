@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "yieldfi",
-  "generated_at": "2026-05-25T18:38:18.742Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:59:19.425Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "yieldfi",
     "tier": 1,
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 23,
-    "total_addresses": 113,
-    "unique_implementations": 23,
-    "total_deployments": 113,
+    "total_contracts": 22,
+    "total_addresses": 112,
+    "unique_implementations": 22,
+    "total_deployments": 112,
     "audited_contracts": 12,
-    "unaudited_contracts": 6,
+    "unaudited_contracts": 5,
     "contracts_verified_audited": 10,
-    "contracts_verified_unaudited": 5,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 3,
     "contracts_unverified": 5,
-    "coverage_pct": 66.7,
-    "total_audits": 7,
+    "coverage_pct": 70.6,
+    "total_audits": 6,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 12104433.95633,
+    "dl_tvl_usd": 12046272.430939998,
     "tvl_usd": 43740151.439364165,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -71,7 +71,7 @@
       "plasma",
       "sonic"
     ],
-    "tier1_coverage_pct": 66.7,
+    "tier1_coverage_pct": 70.6,
     "tier1_auditors": [
       "Cyfrin",
       "Sherlock"
@@ -79,16 +79,21 @@
     "latest_audit_date": "2026-01",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 2,
-      "aging": 2,
+      "fresh": 1,
+      "aging": 3,
       "stale": 1,
-      "unknown": 2
+      "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "YieldFi is a yield aggregator that optimizes returns across multiple chains by pooling user deposits into vaults and issuing yield-bearing tokens. It supports cross-chain operations through bridges and manages governance via dedicated manager contracts.",
+    "project_purpose": "YieldFi is an active Yield Aggregator and capital-markets / asset-management platform focused on tokenized yield-vault issuance and distribution. Its current V3 positioning includes curated yield products, institutionally managed vaults, proof-of-reserves and exposure reporting, transparency metrics, and migration support for legacy vault products.",
     "relationship_narrative": "V1 and V2 families share governance infrastructure through Manager contracts and rely on bridges for cross-chain asset movement. The YieldFi vaults likely interact with yield-bearing tokens from both versions to aggregate user deposits.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 22,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -958,37 +963,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-      "name": "FiatTokenV2_2",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "circle",
-      "product_line": "YieldFi",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
-      "impl_name": "FiatTokenV2_2",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x0407d37e3a8cc7e8bcbc69ab31b8da4be25f4d6d",
       "name": "LockBox",
       "role": "unknown",
@@ -1719,7 +1693,7 @@
       "report_url": "https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2025-06-17-cyfrin-yieldfi-pr19-vytoken-v2.2.pdf",
       "auditor": "Cyfrin",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -1829,27 +1803,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2038,
-      "audit_key": "audit-2038",
-      "report_name": ".gitkeep",
-      "report_url": "https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/.gitkeep",
-      "auditor": "Sherlock",
-      "audit_type": "contest",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 2039,
       "audit_key": "audit-2039",
       "report_name": "2023-03-07-linkpool_liquid_sd_index_pool.pdf",
@@ -1876,14 +1829,14 @@
       "auditor": "Cyfrin",
       "tier": 1,
       "contracts_covered": 11,
-      "coverage_pct": 61.1,
+      "coverage_pct": 64.7,
       "latest_audit": "2025-06"
     },
     {
       "auditor": "Sherlock",
       "tier": 1,
       "contracts_covered": 3,
-      "coverage_pct": 16.7,
+      "coverage_pct": 17.6,
       "latest_audit": "2026-01"
     }
   ],
@@ -1941,7 +1894,7 @@
   ],
   "origin_summary": {
     "native": 13,
-    "upstream": 2,
+    "upstream": 1,
     "standard_library": 2,
     "needs_review": 6
   },
@@ -1962,10 +1915,6 @@
       {
         "audit_id": 2037,
         "report_name": "**Cantina Solo Audit Report**"
-      },
-      {
-        "audit_id": 2038,
-        "report_name": ".gitkeep"
       },
       {
         "audit_id": 2039,

@@ -6,17 +6,17 @@
 
 - Project: LendFlare (`lendflare`)
 - Lifecycle: declining (Tier 0, 97.2% below peak)
-- Generated: 2026-05-25T14:09:47.607Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:06.939Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 74 unique implementations (380 raw deployments)
-- DeFi Llama TVL: $1,143,827.24
+- DeFi Llama TVL: $1,137,068.32
 - On-chain TVL (included contracts): $1,051.88
 - TVL by chain: Ethereum $1,051.88
 
 ## Project Description
 
-LendFlare is a decentralized lending protocol on Ethereum that enables users to supply assets, borrow against them, and earn yield through boosted rewards. It integrates with Curve and Convex to optimize returns for liquidity providers.
+LendFlare is an Ethereum borrowing platform for Curve LP holders, enabling fixed-rate, fixed-term, high-LTV loans against Curve LP collateral. Lender liquidity is linked to Compound-funded supply, while Curve/Convex reward infrastructure is ancillary to the protocol’s collateral and yield mechanics.
 
 ### Architecture
 
@@ -50,7 +50,7 @@ The LendFlare family shares a common proxy infrastructure (LendFlareProxy and Tr
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| ConvexBoosterV2 | core_logic | ethereum | [`0x4c3c78...f2b69f`](./contracts/ethereum-1/0x4c3c78cebc9cc87436deed2782998bc002f2b69f/) | ✅ Audited |
+| ConvexBoosterV2 | proxy | ethereum | [`0x4c3c78...f2b69f`](./contracts/ethereum-1/0x4c3c78cebc9cc87436deed2782998bc002f2b69f/) | ✅ Audited |
 | LendingMarketV2 | core_logic | ethereum | 4 deployments: ethereum [`0x03f744...fce26d`](./contracts/ethereum-1/0x03f744a9ec8d350d1991ac6704fce0c211fce26d/); ethereum `0x4f69ad...b79d52`; ethereum `0xac86b0...8daa07`; ethereum `0xc8937e...061119` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (36)
@@ -73,9 +73,9 @@ The LendFlare family shares a common proxy infrastructure (LendFlareProxy and Tr
 | LendFlareTokenMinter | token | ethereum | [`0x7b278f...17b831`](./contracts/ethereum-1/0x7b278f27506cbd890975df0b70fe6bd3b917b831/) | ⚠️ Unaudited |
 | LendFlareVault | core_logic | ethereum | 6 deployments: ethereum [`0x29042e...4d492c`](./contracts/ethereum-1/0x29042e6389075f7181361ee5bca1df9a524d492c/); ethereum `0x35f962...75ea87`; ethereum `0x4169fa...a08ac0`; ethereum `0x6c3cb7...53094e`; ethereum `0x803ffd...d9c378`; ethereum `0xd61401...5810ff` | ⚠️ Unaudited |
 | LendFlareVotingEscrow | operational_periphery | ethereum | 2 deployments: ethereum [`0xe6615c...f6f9a6`](./contracts/ethereum-1/0xe6615c44bc3cc90839ad6f729eeeabd2aaf6f9a6/); ethereum `0xf706fd...cff2ee` | ⚠️ Unaudited |
-| LendFlareVotingEscrowV2 | operational_periphery | ethereum | 3 deployments: ethereum [`0x19ac8e...c711d2`](./contracts/ethereum-1/0x19ac8e582a9e6f059e56ce77015c46e250c711d2/); ethereum `0x70ffe9...ca5b3b`; ethereum `0x96738a...d4bf00` | ⚠️ Unaudited |
+| LendFlareVotingEscrowV2 | proxy | ethereum | 3 deployments: ethereum [`0x19ac8e...c711d2`](./contracts/ethereum-1/0x19ac8e582a9e6f059e56ce77015c46e250c711d2/); ethereum `0x70ffe9...ca5b3b`; ethereum `0x96738a...d4bf00` | ⚠️ Unaudited |
 | LendFlareZap | adapter | ethereum | 2 deployments: ethereum [`0xbcdc45...98619c`](./contracts/ethereum-1/0xbcdc45372847b95bb4bd6d524b4a801aac98619c/); ethereum `0xd7c86a...a303ca` | ⚠️ Unaudited |
-| LendingMarket | core_logic | ethereum | 3 deployments: ethereum [`0x402e3c...8cac5e`](./contracts/ethereum-1/0x402e3c8e2ba9db00005d934260157b1b648cac5e/); ethereum `0x9997fd...f7f179`; ethereum `0xa7c45b...5e88c0` | ⚠️ Unaudited |
+| LendingMarket | proxy | ethereum | 3 deployments: ethereum [`0x402e3c...8cac5e`](./contracts/ethereum-1/0x402e3c8e2ba9db00005d934260157b1b648cac5e/); ethereum `0x9997fd...f7f179`; ethereum `0xa7c45b...5e88c0` | ⚠️ Unaudited |
 | LiquidityTransformer | unknown | ethereum | [`0x8038dd...2b059a`](./contracts/ethereum-1/0x8038dd8356f84ebe440c0a0847e553d9692b059a/) | ⚠️ Unaudited |
 | MerkleAirdrop | operational_periphery | ethereum | [`0xf23801...96857c`](./contracts/ethereum-1/0xf23801f0c81b8e31ce95bc980ecaf069d296857c/) | ⚠️ Unaudited |
 | MovingLeverageBase | unknown | ethereum | [`0xd132c6...814a46`](./contracts/ethereum-1/0xd132c63a09fccfef56b88c5aca8ecbb63f814a46/) | ⚠️ Unaudited |
@@ -176,8 +176,8 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x7b278f...17b831`](./contracts/ethereum-1/0x7b278f27506cbd890975df0b70fe6bd3b917b831/) | LendFlareTokenMinter | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x29042e...4d492c`](./contracts/ethereum-1/0x29042e6389075f7181361ee5bca1df9a524d492c/) | LendFlareVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xe6615c...f6f9a6`](./contracts/ethereum-1/0xe6615c44bc3cc90839ad6f729eeeabd2aaf6f9a6/) | LendFlareVotingEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x19ac8e...c711d2`](./contracts/ethereum-1/0x19ac8e582a9e6f059e56ce77015c46e250c711d2/) | LendFlareVotingEscrowV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x402e3c...8cac5e`](./contracts/ethereum-1/0x402e3c8e2ba9db00005d934260157b1b648cac5e/) | LendingMarket | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x19ac8e...c711d2`](./contracts/ethereum-1/0x19ac8e582a9e6f059e56ce77015c46e250c711d2/) | LendFlareVotingEscrowV2 | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x402e3c...8cac5e`](./contracts/ethereum-1/0x402e3c8e2ba9db00005d934260157b1b648cac5e/) | LendingMarket | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8038dd...2b059a`](./contracts/ethereum-1/0x8038dd8356f84ebe440c0a0847e553d9692b059a/) | LiquidityTransformer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf23801...96857c`](./contracts/ethereum-1/0xf23801f0c81b8e31ce95bc980ecaf069d296857c/) | MerkleAirdrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd132c6...814a46`](./contracts/ethereum-1/0xd132c63a09fccfef56b88c5aca8ecbb63f814a46/) | MovingLeverageBase | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |

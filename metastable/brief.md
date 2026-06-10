@@ -5,21 +5,22 @@
 - Project: Metastable (`metastable`)
 - Website: [https://mstable.io](https://mstable.io)
 - Lifecycle: unknown
-- Generated: 2026-05-24T11:25:22.270Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:07.487Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $2,543,967.51
+- DeFi Llama TVL: $2,066,663.72
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Metastable is a Collateralized Debt Position (CDP) protocol that allows users to lock collateral and mint a stablecoin. It provides a decentralized mechanism for generating stable assets against crypto collateral.
-
-### Architecture
-
-No product families or contracts are defined in the provided inventory, so no structural relationships can be described.
+Metastable is a Sui-based decentralized stablecoin and unified stablecoin liquidity protocol associated with a single stablecoin vault. DefiLlama categorizes Metastable as a CDP, but the available sourced descriptions emphasize stablecoin liquidity and vault functionality rather than specific collateral-locking or minting mechanics.
 
 ## Audit Coverage Summary
 

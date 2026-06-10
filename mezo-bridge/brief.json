@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mezo-bridge",
-  "generated_at": "2026-05-31T09:57:09.582Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:07.703Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "mezo-bridge",
@@ -32,26 +32,26 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 6,
-    "total_addresses": 6,
-    "unique_implementations": 6,
-    "total_deployments": 6,
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
     "audited_contracts": 0,
-    "unaudited_contracts": 6,
+    "unaudited_contracts": 4,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 6,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 21293979.42985,
-    "tvl_usd": 203885920.80178645,
+    "tvl_usd": 2629300.3955008853,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 203885920.8
+      "ethereum": 2629300.4
     },
-    "asd_usd": 203885920.80178645,
+    "asd_usd": 2629300.3955008853,
     "website_url": "https://mezo.org",
     "chains": [
       "ethereum"
@@ -68,46 +68,20 @@
     }
   },
   "topography": {
-    "project_purpose": "Mezo Bridge is a cross-chain bridging protocol that enables users to transfer Bitcoin and other assets between Ethereum and the Mezo network. It provides deposit, redemption, and staking mechanisms, leveraging infrastructure like Wormhole for cross-chain messaging and tBTC for Bitcoin custody.",
+    "project_purpose": "Mezo Bridge is the bridge/application surface associated with Mezo for moving supported assets between Ethereum and the Mezo network. Its owned contract surface should be limited to verified Mezo bridge, lockbox, borrowing, MUSD, or vault contracts, and should exclude upstream asset tokens, external vaults, and other contracts not evidenced as Mezo-controlled.",
     "relationship_narrative": "The Mezo Bridge family integrates multiple components: MezoBridge and Portal handle core bridging logic, while BitcoinDepositor and BitcoinRedeemer manage Bitcoin-specific flows. NttManager and WormholeTransceiver enable cross-chain token transfers via Wormhole. Staking is managed by TokenStaking and GrantStaking, with yield-bearing tokens like stBTC and SolvBTCYieldTokenV3_1. Infrastructure contracts like WalletRegistry, WalletCoordinator, and RedemptionWatchtower support tBTC custody, and KeepRandomBeaconService provides randomness for beacon operations.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 4,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xcfc5bd99915aaa815401c5a41a927ab7a38d29cf",
-      "name": "THUSDToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Mezo Bridge",
-      "tvl_usd": 200791494.99914226,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "THUSDToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xcfc5bd99915aaa815401c5a41a927ab7a38d29cf",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 200791494.99914226,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -129,37 +103,6 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2629300.3955008853,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x8db2350d78abc13f5673a411d4700bcf87864dde",
-      "name": "Yearn V3 Vault",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "Yearn",
-      "product_line": "Mezo Bridge",
-      "tvl_usd": 465125.4071433039,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Yearn V3 Vault",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8db2350d78abc13f5673a411d4700bcf87864dde",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 465125.4071433039,
           "is_audited": false
         }
       ],
@@ -270,16 +213,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xcfc5bd99915aaa815401c5a41a927ab7a38d29cf",
-      "name": "THUSDToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 200791494.99914226,
-      "risk_note": "Verified native implementation with $200,791,495.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xcdf7028ceab81fa0c6971208e83fa7872994bee5",
       "name": "T",
       "role": "unknown",
@@ -289,8 +222,8 @@
     }
   ],
   "origin_summary": {
-    "native": 2,
-    "upstream": 1,
+    "native": 1,
+    "upstream": 0,
     "standard_library": 3,
     "needs_review": 0
   },

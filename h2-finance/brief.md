@@ -5,21 +5,22 @@
 - Project: H2 Finance (`h2-finance`)
 - Website: [https://h2.finance](https://h2.finance)
 - Lifecycle: unknown
-- Generated: 2026-05-24T02:23:50.023Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:04.447Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $3,692,889.00
+- DeFi Llama TVL: $3,568,233.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-H2 Finance is a decentralized exchange protocol that facilitates token swaps and liquidity provision. It operates across multiple versions (V2 and V3) to offer efficient trading and yield opportunities.
-
-### Architecture
-
-No product families or contracts are defined in the provided inventory, so no relationships can be described.
+H2 Finance is a Uniswap v2- and v3-style decentralized exchange fork on Cronos zkEVM for token swaps and liquidity provision.
 
 ## Audit Coverage Summary
 

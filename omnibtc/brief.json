@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "omnibtc",
-  "generated_at": "2026-05-31T10:07:19.708Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:08.786Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "omnibtc",
@@ -61,9 +61,14 @@
     }
   },
   "topography": {
-    "project_purpose": "OmniBTC is a cross-chain lending protocol that enables users to supply and borrow assets across multiple blockchains, including Ethereum, Optimism, Polygon, Base, Arbitrum One, and Avalanche.",
+    "project_purpose": "OmniBTC is an omnichain/cross-chain financial platform providing swap and lend/borrow functionality across multiple blockchains, with a focus that includes BTC omnichain lending. Its supported chain footprint includes Sui as a dominant current TVL chain, as well as EVM networks such as Ethereum, Optimism, Polygon, Base, Arbitrum One, Avalanche, and Binance where applicable.",
     "relationship_narrative": "All contracts belong to a single product family with no explicit sub-families or shared infrastructure identified; they likely represent the core lending logic deployed across multiple chains.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 6,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

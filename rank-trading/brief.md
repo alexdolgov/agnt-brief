@@ -5,17 +5,17 @@
 - Project: Rank Trading (`rank-trading`)
 - Website: [https://rank.trading/](https://rank.trading/)
 - Lifecycle: active (Tier 0, 69.1% below peak)
-- Generated: 2026-05-24T11:50:14.131Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:09.464Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 13 unique implementations (31 raw deployments)
-- DeFi Llama TVL: $2,381,514.37
+- DeFi Llama TVL: $2,326,890.56
 - On-chain TVL (included contracts): $1,188,950.00
 - TVL by chain: Bsc $1,188,950.00
 
 ## Project Description
 
-Rank Trading is a yield protocol on BSC that provides token staking and liquidity locking services. It enables users to earn yield through its native RankToken and secure liquidity via Uniswap V3 locker contracts.
+Rank Trading is a BSC-based decentralized quant and algorithmic trading platform focused on automated trading strategies, trader and AI-agent marketplace functionality, and strategy vaults. Its native RAN token supports platform utility such as staking and potential revenue-share features, but staking is not the sole product focus and liquidity locking should not be characterized as a core Rank Trading service unless separately documented by the project.
 
 ### Architecture
 

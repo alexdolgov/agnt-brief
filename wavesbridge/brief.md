@@ -1,12 +1,14 @@
 # Agentic Audit Brief: WavesBridge
 
+⚠️ Lifecycle status: DECLINING - TVL dropped 9.0% over 90 days
+
 ## Project Overview
 
 - Project: WavesBridge (`wavesbridge`)
 - Website: [https://wavesbridge.io/](https://wavesbridge.io/)
-- Lifecycle: active (Tier 0, 78.9% below peak)
-- Generated: 2026-05-31T11:35:54.568Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 78.9% below peak)
+- Generated: 2026-06-10T20:59:18.801Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 5 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $1,026,786.12
@@ -15,7 +17,7 @@
 
 ## Project Description
 
-WavesBridge is a cross-chain bridge enabling asset transfers between Waves and Ethereum networks. It uses a set of contracts on Ethereum to lock and release tokens, facilitating interoperability.
+WavesBridge is a multi-chain token bridge supporting asset transfers across Waves, Ethereum, and other connected networks. The Ethereum contracts tracked in this brief represent only the Ethereum-side contract surface of the broader multi-chain bridge system; token contracts such as Neiro and RealGames should be treated as external or supported assets unless separately verified as core WavesBridge components.
 
 ### Architecture
 
@@ -35,6 +37,7 @@ The Bridge contract serves as the operational core, interacting with token contr
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [declining]. ASD of $136,632,939.38 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

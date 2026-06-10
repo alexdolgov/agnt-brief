@@ -5,17 +5,17 @@
 - Project: Hyperbeat (`hyperbeat`)
 - Website: [https://app.hyperbeat.org/earn?referral=5C37264D](https://app.hyperbeat.org/earn?referral=5C37264D)
 - Lifecycle: active (Tier 0, 89.8% below peak)
-- Generated: 2026-05-26T12:37:48.458Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:06.054Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, hyperliquid
-- Contract surface: 222 unique implementations (616 raw deployments)
+- Contract surface: 221 unique implementations (615 raw deployments)
 - DeFi Llama TVL: $47,369,186.00
 - On-chain TVL (included contracts): $22,600,906.28
 - TVL by chain: Hyperliquid $22,395,013.34 | Ethereum $205,892.94
 
 ## Project Description
 
-Hyperbeat is a yield aggregation and liquid staking protocol operating on Ethereum and HyperEVM. It offers vaults that mint yield-bearing tokens (e.g., lstHYPE, liquidHYPE) and integrates with external protocols like Morpho and Pendle to optimize returns.
+Hyperbeat is a Hyperliquid-focused DeFi and money application spanning liquid staking, yield and Meta-Yield vaults, borrow/lend money markets, swap, payments, fiat-crypto conversion, high-yield accounts, credit-card functionality, and strategies such as delta-neutral yield. Its on-chain HyperEVM/Hyperliquid deployments include HYPE liquid staking tokens such as lstHYPE and related vault/account infrastructure, with integrations to external protocols where supported by current contracts or documentation.
 
 ### Architecture
 
@@ -23,12 +23,12 @@ Hyperbeat Earn vaults on Ethereum feed into HyperEVM Vaults via TokenizedAccount
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 15/141 (10.6%)
-- Verified + Unaudited implementations: 126
+- Verified implementations audited: 15/140 (10.7%)
+- Verified + Unaudited implementations: 125
 - Verified by bytecode match: 0
 - Unverified implementations: 81
-- Unique implementations: 222
-- Raw deployments: 616
+- Unique implementations: 221
+- Raw deployments: 615
 - Audits discovered: 14
 - Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): $22,600,885.89
@@ -40,9 +40,9 @@ Hyperbeat Earn vaults on Ethereum feed into HyperEVM Vaults via TokenizedAccount
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Nethermind | Tier 2 | 13 | 9.2% | 2025-10 |
+| Nethermind | Tier 2 | 13 | 9.3% | 2025-10 |
 | Certora | Tier 1 | 7 | 5.0% | 2025-10 |
-| Pashov Audit Group | Tier 2 | 5 | 3.5% | 2025-09 |
+| Pashov Audit Group | Tier 2 | 5 | 3.6% | 2025-09 |
 | Zellic | Tier 2 | 2 | 1.4% | 2025-01 |
 
 ## Contract Surface
@@ -67,7 +67,7 @@ Hyperbeat Earn vaults on Ethereum feed into HyperEVM Vaults via TokenizedAccount
 | WithdrawalQueue | operational_periphery | hyperliquid | 29 deployments: hyperliquid [`0x0d30b2...4b9e0e`](./contracts/hyperliquid-999/0x0d30b29042e2d6802689be6ade022a0c4d4b9e0e/); hyperliquid `0x0d7f3d...7aad82`; hyperliquid `0x0dfe20...bcb423`; hyperliquid `0x100242...438be3`; hyperliquid `0x1cc393...8e5869`; hyperliquid `0x1d749e...4fc4bf`; hyperliquid `0x202b34...a2511c`; hyperliquid `0x240e0b...45b1c6`; hyperliquid `0x261a2b...49f906`; hyperliquid `0x368995...2134d6`; hyperliquid `0x43cacc...8f8e8c`; hyperliquid `0x5236b7...6e5bd6`; hyperliquid `0x52784b...ba7c4a`; hyperliquid `0x667859...bec1b7`; hyperliquid `0x66d9be...7449f0`; hyperliquid `0x6b68c4...9c1089`; hyperliquid `0x70bc29...109f39`; hyperliquid `0x73905d...3d3949`; hyperliquid `0x788c7c...43a143`; hyperliquid `0x8b04cd...d09d98`; hyperliquid `0x9d90b2...a0e294`; hyperliquid `0xa03e0e...5a84fe`; hyperliquid `0xb62b28...bf085e`; hyperliquid `0xbc63a6...058dd1`; hyperliquid `0xbe2f89...8f16bc`; hyperliquid `0xc7becb...4b8225`; hyperliquid `0xda768e...157a38`; hyperliquid `0xdac07c...36094c`; hyperliquid `0xe73722...df7507` | ✅ Audited |
 | WithdrawManager | operational_periphery | hyperliquid | [`0x9d0b08...822538`](./contracts/hyperliquid-999/0x9d0b0877b9f2204cf414ca7862e4f03506822538/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (126)
+### ⚠️ Verified + Unaudited (125)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -162,7 +162,6 @@ Hyperbeat Earn vaults on Ethereum feed into HyperEVM Vaults via TokenizedAccount
 | MidasTimelockController | governance | hyperliquid | [`0x76613b...c37d5f`](./contracts/hyperliquid-999/0x76613bddb3d89393b4bd70d6894b1c85f6c37d5f/) | ⚠️ Unaudited |
 | MidasVaultComposerSync | core_logic | hyperliquid | 2 deployments: hyperliquid [`0x0b6e5d...2744cd`](./contracts/hyperliquid-999/0x0b6e5dd5bede87af12b37b8c1e49129afd2744cd/); hyperliquid `0x718c52...312457` | ⚠️ Unaudited |
 | MockERC20 | token | hyperliquid | [`0x4f5fa9...4ab61f`](./contracts/hyperliquid-999/0x4f5fa9d9820a6ca224aebe1b1c39b3af904ab61f/) | ⚠️ Unaudited |
-| Morpho | unknown | hyperliquid | [`0x68e37d...0c57cd`](./contracts/hyperliquid-999/0x68e37de8d93d3496ae143f2e900490f6280c57cd/) | ⚠️ Unaudited |
 | MorphoChainlinkOracleV2Factory | operational_periphery | hyperliquid | [`0xeb476f...6f9af5`](./contracts/hyperliquid-999/0xeb476f124fad625178759d13557a72394a6f9af5/) | ⚠️ Unaudited |
 | Multicall3 | periphery | hyperliquid | [`0x5730ac...04ad74`](./contracts/hyperliquid-999/0x5730ac0720227bae2f62133305c543ee2204ad74/) | ⚠️ Unaudited |
 | MultiRolesAuthority | governance | hyperliquid | 40 deployments: hyperliquid [`0x060690...342312`](./contracts/hyperliquid-999/0x060690ec182a5a61f5cdfa0aefae058e04342312/); hyperliquid `0x164b7e...dccab0`; hyperliquid `0x16cc58...52bff9`; hyperliquid `0x1c9b0b...7d16b1`; hyperliquid `0x20790f...a0d156`; hyperliquid `0x2193fa...a903c9`; hyperliquid `0x22630f...f8630e`; hyperliquid `0x2cb0ec...c0fcdf`; hyperliquid `0x2e685e...9e9e09`; hyperliquid `0x304505...d56b10`; hyperliquid `0x342fb4...8c6fc1`; hyperliquid `0x36fad7...b28a5f`; hyperliquid `0x40f5b5...6cfc45`; hyperliquid `0x421d2d...f87c60`; hyperliquid `0x49943e...0d096c`; hyperliquid `0x4fe4ba...2ed10e`; hyperliquid `0x549baf...0713d9`; hyperliquid `0x54fff0...c35734`; hyperliquid `0x5a4015...1dadf1`; hyperliquid `0x614775...773160`; hyperliquid `0x621810...c0d6ba`; hyperliquid `0x6278d7...05099a`; hyperliquid `0x763ab4...bfa215`; hyperliquid `0x786108...42d523`; hyperliquid `0x79285f...7ae5b6`; hyperliquid `0x7b12a8...ff9fa2`; hyperliquid `0x829995...27c4eb`; hyperliquid `0x85717d...f8bad0`; hyperliquid `0x9cd4c8...665411`; hyperliquid `0xa105c5...9fef5e`; hyperliquid `0xa2321f...558280`; hyperliquid `0xa43bfa...b83597`; hyperliquid `0xa9d525...ba3275`; hyperliquid `0xb68a5b...3301b9`; hyperliquid `0xb7fc0b...5cb46f`; hyperliquid `0xd9b07f...b91a2a`; hyperliquid `0xe062f4...a265dc`; hyperliquid `0xf05dd2...fe00d2`; hyperliquid `0xf420df...7a9b47`; hyperliquid `0xf81795...c251cf` | ⚠️ Unaudited |
@@ -372,7 +371,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 75 |
-| upstream | 8 |
+| upstream | 7 |
 | standard_library | 4 |
 | needs_review | 135 |
 

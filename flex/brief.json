@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "flex",
-  "generated_at": "2026-05-31T08:03:38.328Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:04.010Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "flex",
     "tier": 0,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Flex is a lending protocol on Ethereum that allows users to deposit and borrow assets through a registry-based system.",
-    "relationship_narrative": "The protocol consists of a single product family with one core registry contract that orchestrates all lending operations.",
+    "project_purpose": "Flex is an Ethereum fixed-rate money market and lending protocol where borrowers choose their own interest rates.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

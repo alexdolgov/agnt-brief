@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "botto",
-  "generated_at": "2026-05-23T21:26:56.868Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:01.069Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "botto",
     "tier": 0,
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 19,
-    "total_addresses": 34,
-    "unique_implementations": 19,
-    "total_deployments": 34,
+    "total_contracts": 18,
+    "total_addresses": 33,
+    "unique_implementations": 18,
+    "total_deployments": 33,
     "audited_contracts": 0,
-    "unaudited_contracts": 14,
+    "unaudited_contracts": 13,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 14,
+    "contracts_verified_unaudited": 13,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 5,
     "coverage_pct": 0,
     "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4348865.1706,
-    "tvl_usd": 4348865.1706,
+    "dl_tvl_usd": 4107150.7803800004,
+    "tvl_usd": 4107150.7803800004,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -57,9 +57,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Botto is a decentralized AI artist governed by a DAO. The protocol manages the creation, curation, and sale of AI-generated art, with revenue distributed to token holders and active participants through staking, liquidity mining, and governance rewards.",
+    "project_purpose": "Botto is a decentralized autonomous AI artist governed and trained by its community. The protocol supports the creation and curation of AI-generated art through DAO governance, with token, staking, liquidity-mining, and rewards contracts serving as supporting protocol components.",
     "relationship_narrative": "The Governance family controls parameters for Liquidity Mining and Rewards, which distribute BOTTO tokens to users. The Token family provides the BOTTO token used across all families, with a bridged version on Base for cross-chain functionality.",
     "product_family_count": 7
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 18,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -607,37 +612,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x9ff68f61ca5eb0c6606dc517a9d44001e564bb66",
-      "name": "UniswapV2Pair",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
-      "product_line": "Botto",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "UniswapV2Pair",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9ff68f61ca5eb0c6606dc517a9d44001e564bb66",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x08b5d710102289b5888a2b2773980c0ae40d22cc",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -931,7 +905,7 @@
   ],
   "origin_summary": {
     "native": 12,
-    "upstream": 2,
+    "upstream": 1,
     "standard_library": 5,
     "needs_review": 0
   },

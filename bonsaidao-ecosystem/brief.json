@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bonsaidao-ecosystem",
-  "generated_at": "2026-05-31T07:37:01.109Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.053Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bonsaidao-ecosystem",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "BonsaiDAO Ecosystem is a multi-product DeFi protocol offering liquidity management, yield optimization, and lending services. It encompasses the exit.tech exit liquidity platform, the Umami Finance yield aggregator, and the Vendor V2 lending market, operating across Base, Arbitrum One, and Berachain.",
+    "project_purpose": "Bonsai DAO is a DeFi studio / parent ecosystem for interconnected products called Leaves. Current material product lines include exit.tech, Umami Finance, and Vendor V2, spanning chains such as Base, Arbitrum One, and Berachain. Vendor V1 may be treated as a legacy/negligible child protocol where relevant. Claims about common deployer infrastructure, a unified development team, or shared treasury/governance ties should be omitted or explicitly qualified unless independently verified.",
     "relationship_narrative": "The families share a common deployer infrastructure and proxy patterns, indicating a unified development team. Vendor V2's PoolFactory and FeesManager proxies are deployed across multiple chains, while exit.tech and Umami Finance operate as distinct product lines with their own token contracts, likely sharing treasury or governance ties within the BonsaiDAO ecosystem.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 190,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

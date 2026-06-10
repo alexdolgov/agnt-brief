@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "synfutures",
-  "generated_at": "2026-05-23T12:38:12.892Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:17.149Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "synfutures",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 91.22010742752987
   },
   "summary": {
-    "total_contracts": 482,
-    "total_addresses": 486,
-    "unique_implementations": 482,
-    "total_deployments": 486,
+    "total_contracts": 481,
+    "total_addresses": 485,
+    "unique_implementations": 481,
+    "total_deployments": 485,
     "audited_contracts": 0,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 4,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 4,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 477,
     "coverage_pct": 0,
-    "total_audits": 4,
+    "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6311913,
+    "dl_tvl_usd": 6281834,
     "tvl_usd": 52438726.487115555,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -54,19 +54,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2025-02",
-    "audit_freshness": "aging",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 1,
-      "stale": 3,
+      "aging": 0,
+      "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "SynFutures is a decentralized derivatives protocol enabling permissionless futures and options trading on multiple chains. It provides an automated market maker (AMM) model for synthetic assets, allowing users to trade and provide liquidity without intermediaries.",
+    "project_purpose": "SynFutures is an onchain trading protocol and decentralized exchange focused on perpetual futures and spot/RWA markets, including crypto assets, tokenized stocks, ETFs, and other real-world assets. Its current product emphasizes Base-heavy deployment, Oyster AMM hybrid liquidity, and an onchain/CLOB-style trading model. Tokenized stocks are described as 1:1 backed rather than synthetic exposure; unsupported options-trading claims should be removed.",
     "relationship_narrative": "SynFutures V3 is the active product family, with multiple proxy contracts pointing to shared implementation contracts (e.g., 0xc4f801..., 0xb19e3a..., 0xc7b285...) that serve as the core AMM and market logic. Supporting contracts include various market-specific or auxiliary implementations, while V1 and V2 remain as legacy, isolated deployments.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 481,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -192,37 +197,6 @@
       "verified_by_bytecode": true,
       "verification_bucket": "verified_bytecode_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x2c24497d4086490e7ead87cc12597fb50c2e6ed6",
-      "name": "OptimismMintableERC20",
-      "role": "bridge_template",
-      "origin_kind": "upstream",
-      "origin_provider": "optimism",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "OptimismMintableERC20",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x2c24497d4086490e7ead87cc12597fb50c2e6ed6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 8453,
@@ -15052,92 +15026,7 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 2297,
-      "audit_key": "audit-2297",
-      "report_name": "DL audit link",
-      "report_url": "https://www.synfutures.com/peckshield-audit-report-synfutures-v1.1.pdf",
-      "auditor": "PeckShield",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2021-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2298,
-      "audit_key": "audit-2298",
-      "report_name": "DL audit link",
-      "report_url": "https://www.synfutures.com/PeckShield-Audit-Report-SynFuturesV2-v1.0.pdf",
-      "auditor": "PeckShield",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2299,
-      "audit_key": "audit-2299",
-      "report_name": "DL audit link",
-      "report_url": "https://www.synfutures.com/Quantstamp-Audit-Report-SynFuturesV3.pdf",
-      "auditor": "Quantstamp",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2300,
-      "audit_key": "audit-2300",
-      "report_name": "here",
-      "report_url": "https://www.synfutures.com/PeckShield-Audit-Report-Oyster-v1.0.pdf",
-      "auditor": "PeckShield",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -15153,7 +15042,7 @@
   ],
   "origin_summary": {
     "native": 110,
-    "upstream": 8,
+    "upstream": 7,
     "standard_library": 1,
     "needs_review": 363
   },
@@ -15162,24 +15051,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 2297,
-        "report_name": "DL audit link"
-      },
-      {
-        "audit_id": 2298,
-        "report_name": "DL audit link"
-      },
-      {
-        "audit_id": 2299,
-        "report_name": "DL audit link"
-      },
-      {
-        "audit_id": 2300,
-        "report_name": "here"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

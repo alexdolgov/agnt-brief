@@ -1,27 +1,26 @@
 # Agentic Audit Brief: Kaito
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Kaito (`kaito`)
 - Website: [https://yaps.kaito.ai](https://yaps.kaito.ai)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T08:34:00.257Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:06.424Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $18,723,239.69
 - On-chain TVL (included contracts): $9,477,642.45
 - TVL by chain: Base $9,477,642.45
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Kaito is a protocol that allows users to stake KAITO tokens to receive StakedKAITO, representing their staked position and likely earning rewards.
-
-### Architecture
-
-The Kaito token contract is staked into the StakedKAITO contract, which mints StakedKAITO tokens to users, forming a direct staking relationship between the two contracts.
+Kaito is a crypto attention, data, and capital distribution service described as a distribution powerhouse for the crypto ecosystem. The tracked on-chain surface currently consists of the KAITO token contract and the StakedKAITO staking/token contract on Base; staking TVL should be reported separately from overall protocol TVL.
 
 ## Audit Coverage Summary
 
@@ -37,7 +36,6 @@ The Kaito token contract is staked into the StakedKAITO contract, which mints St
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $9,477,642.45 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -54,7 +52,7 @@ The Kaito token contract is staked into the StakedKAITO contract, which mints St
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | StakedKAITO | token | base | [`0x548d3b...cd1ef7`](./contracts/base-8453/0x548d3b444da39686d1a6f1544781d154e7cd1ef7/) | ⚠️ Unaudited |
-| Kaito | unknown | base | [`0x98d0ba...537553`](./contracts/base-8453/0x98d0baa52b2d063e780de12f615f963fe8537553/) | ⚠️ Unaudited |
+| Kaito | token | base | [`0x98d0ba...537553`](./contracts/base-8453/0x98d0baa52b2d063e780de12f615f963fe8537553/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,7 +84,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | base | [`0x548d3b...cd1ef7`](./contracts/base-8453/0x548d3b444da39686d1a6f1544781d154e7cd1ef7/) | StakedKAITO | token | $9,477,642.45 | Verified native implementation with $9,477,642.45 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x98d0ba...537553`](./contracts/base-8453/0x98d0baa52b2d063e780de12f615f963fe8537553/) | Kaito | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x98d0ba...537553`](./contracts/base-8453/0x98d0baa52b2d063e780de12f615f963fe8537553/) | Kaito | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

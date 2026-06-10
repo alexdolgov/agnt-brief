@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gravity-bridge",
-  "generated_at": "2026-05-31T08:15:02.127Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.390Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "gravity-bridge",
@@ -26,15 +26,15 @@
     "total_addresses": 225,
     "unique_implementations": 152,
     "total_deployments": 225,
-    "audited_contracts": 1,
-    "unaudited_contracts": 73,
-    "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 73,
+    "audited_contracts": 0,
+    "unaudited_contracts": 74,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 74,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 78,
-    "coverage_pct": 1.4,
-    "total_audits": 1,
-    "scoreable_audits": 1,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 12141492.34649,
     "tvl_usd": 91299805.77391307,
     "tvl_source": "on_chain",
@@ -54,13 +54,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Gravity Bridge is a cross-chain bridge protocol that enables the transfer of assets between Ethereum and the Cosmos ecosystem. It uses a set of bridge contracts and token representations to lock assets on Ethereum and mint corresponding tokens on Cosmos, and vice versa.",
+    "project_purpose": "Gravity Bridge is a decentralized Cosmos blockchain and cross-chain bridge connecting Ethereum with the Cosmos ecosystem. It includes Ethereum-side bridge contracts and Cosmos/IBC-side components that together support asset transfers between Ethereum and Cosmos chains.",
     "relationship_narrative": "The Gravity Bridge family relies on a set of proxy contracts (AdminUpgradeabilityProxy, TransparentUpgradeableProxy) to manage upgradeability of core bridge logic (CosmosBridge, BridgeBank, BridgeRegistry). Token representations (CosmosERC20, BridgeToken) are deployed via factories or beacons and interact with the bridge contracts to lock and release assets.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 152,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1490,16 +1495,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-7010"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -5439,40 +5442,8 @@
       "contamination_flag": null
     }
   ],
-  "audits": [
-    {
-      "audit_id": 7010,
-      "audit_key": "audit-7010",
-      "report_name": "security.md",
-      "report_url": "https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/security.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Gravity"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    }
-  ],
-  "auditor_coverage": [
-    {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 1.4,
-      "latest_audit": null
-    }
-  ],
+  "audits": [],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -5580,6 +5551,16 @@
       "address": "0xefb546ec7babc97af3791033cc3ca1cc1f680993",
       "name": "CudosAccessControls",
       "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa4108aa1ec4967f8b52220a4f7e94a8201f2d906",
+      "name": "Gravity",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -5792,12 +5773,8 @@
     "needs_review": 105
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 1
-    },
-    "extraction_confidence_counts": {
-      "low": 1
-    },
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

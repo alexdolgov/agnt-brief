@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "blackhole",
-  "generated_at": "2026-05-22T08:40:29.799Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:00.978Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "blackhole",
     "tier": 0,
@@ -35,8 +35,8 @@
     "coverage_pct": 31.1,
     "total_audits": 3,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 29942734,
-    "tvl_usd": 29942734,
+    "dl_tvl_usd": 29689404,
+    "tvl_usd": 29689404,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -51,16 +51,21 @@
     "latest_audit_date": "2025-07",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 2,
-      "aging": 1,
+      "fresh": 1,
+      "aging": 2,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Blackhole is a decentralized exchange (DEX) protocol on Avalanche that enables concentrated liquidity automated market making (CLMM). It allows users to create and manage liquidity pools with custom parameters, swap tokens, and earn rewards through gauge-based incentives.",
+    "project_purpose": "Blackhole is an Avalanche decentralized exchange protocol with both AMM and concentrated-liquidity AMM (CLMM) components. It supports token swaps, liquidity pool creation and management, LP position infrastructure, and gauge-based incentive mechanisms for liquidity providers.",
     "relationship_narrative": "The Blackhole CLMM family relies on a set of factory contracts (AlgebraFactory, PairFactory, GaugeFactoryCL) to deploy pool and gauge instances, while the RouterV2 facilitates user swaps. Supporting infrastructure includes multiple CustomPoolDeployer proxies for pool creation and TransparentUpgradeableProxy instances for upgradeability across core components.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 86,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1018,7 +1023,7 @@
       "chain_name": "avalanche",
       "address": "0x3fed017ec0f5517cdf2e8a9a4156c64d74252146",
       "name": "NonfungiblePositionManager",
-      "role": "governance",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -3329,7 +3334,7 @@
       "report_url": "https://security-audit-links.s3.us-east-1.amazonaws.com/Code4rena+Audit-Blackhole-report.pdf",
       "auditor": "Code4rena",
       "audit_type": "contest",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -3563,7 +3568,7 @@
       "chain_name": "avalanche",
       "address": "0x3fed017ec0f5517cdf2e8a9a4156c64d74252146",
       "name": "NonfungiblePositionManager",
-      "role": "governance",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

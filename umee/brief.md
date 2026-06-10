@@ -6,21 +6,22 @@
 
 - Project: Umee (`umee`)
 - Lifecycle: declining (Tier 0, 98.8% below peak)
-- Generated: 2026-05-31T11:25:55.909Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:18.485Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $2,510,742.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Umee is a decentralized lending protocol that enables users to supply and borrow assets across multiple blockchains. It focuses on cross-chain interoperability and capital efficiency.
-
-### Architecture
-
-The protocol consists of a single product family with one proxy contract that handles all lending operations. No additional infrastructure contracts are identified.
+Umee is a decentralized lending protocol and blockchain with activity across Umee/Cosmos modules and Ethereum. The listed Ethereum proxy should be treated as partial EVM coverage, not as the complete lending surface for the protocol.
 
 ## Audit Coverage Summary
 
@@ -30,11 +31,11 @@ The protocol consists of a single product family with one proxy contract that ha
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 8
+- Audits discovered: 7
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-07 (stale)
-- Staleness: 0 fresh, 0 aging, 7 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 7 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -83,7 +84,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Umee Leverage Module Audit Report_RV Inc..pdf](https://github.com/umee-network/docs/blob/main/docs/.vuepress/public/audits/Umee%20Leverage%20Module%20Audit%20Report_RV%20Inc..pdf) | unknown | Audit | 2022-06 | stale | Direct | n/a | 0 | n/a |
 | [Umee_Oracle_Price_Feeder_Cosmos_Security_Audit_Report_Halborn_Final.pdf](https://github.com/umee-network/docs/blob/main/docs/.vuepress/public/audits/Umee_Oracle_Price_Feeder_Cosmos_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-06 | stale | Direct | n/a | 0 | n/a |
 | [Umee_WebApp_Pentest_Report_Halborn_Final.pdf](https://github.com/umee-network/docs/blob/main/docs/.vuepress/public/audits/Umee_WebApp_Pentest_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-03 | stale | Direct | n/a | 0 | n/a |
-| [security-audits.md (also discovered via alternate URL)](https://github.com/umee-network/docs/blob/main/docs/additional-info/security-audits.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -104,7 +104,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 8
+- Audits with zero matched contracts: 7
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -118,6 +118,5 @@ Zero-match audit list:
 - [8772] Umee Leverage Module Audit Report_RV Inc..pdf
 - [8773] Umee_Oracle_Price_Feeder_Cosmos_Security_Audit_Report_Halborn_Final.pdf
 - [8774] Umee_WebApp_Pentest_Report_Halborn_Final.pdf
-- [8779] security-audits.md
 
 Fork inheritance lineage and inherited audits are included when available.

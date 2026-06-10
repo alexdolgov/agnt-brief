@@ -5,21 +5,22 @@
 - Project: Easedefi.org (`easedefi.org`)
 - Website: [https://easedefi.org](https://easedefi.org)
 - Lifecycle: active (Tier 0, 66.3% below peak)
-- Generated: 2026-05-23T21:08:55.510Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:02.057Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $4,423,066.11
+- DeFi Llama TVL: $4,371,974.69
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Easedefi.org is a decentralized insurance protocol on Ethereum that allows users to purchase coverage for smart contract risks. It uses a vault-based model where premiums are pooled and claims are assessed and paid out according to predefined rules.
-
-### Architecture
-
-The protocol consists of a single product family centered around the arNXMVault, which is deployed behind an OwnedUpgradeabilityProxy for upgradeability. All insurance logic, including premium collection and claim payouts, is handled within this vault contract.
+EaseDeFi is a DeFi coverage protocol on Ethereum offering multiple coverage and yield-related products, including stNXM underwriting, premium-free Uninsurance mutual coverage without traditional premium purchases, and in-development cross-asset yield vaults. The currently recorded contract surface covers only the OwnedUpgradeabilityProxy at 0x1337def1fc06783d4b03cb8c1bf3ebf7d0593fc4 with implementation 0xc38bfa29f70b3f0f40784d7861f1665e47f37f2e, and should not be treated as representing the entire current Ease protocol unless additional product contract addresses are verified.
 
 ## Audit Coverage Summary
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "1sec",
-  "generated_at": "2026-06-10T19:56:01.141Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "generated_at": "2026-06-10T20:58:56.362Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -38,7 +38,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "1Sec is a message-passing bridge between ICP and EVM chains.",
     "relationship_narrative": null,
     "product_family_count": 0
   },

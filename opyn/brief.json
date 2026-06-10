@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "opyn",
-  "generated_at": "2026-05-31T10:10:24.835Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:08.824Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "opyn",
     "tier": 1,
@@ -70,9 +70,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Opyn is a decentralized options protocol that enables users to create, trade, and manage options and structured products on Ethereum and Avalanche. It offers capital-efficient derivatives through its Gamma and Squeeth product lines, allowing for hedging, speculation, and yield generation.",
+    "project_purpose": "Opyn includes legacy decentralized options infrastructure such as Gamma and Squeeth on Ethereum and Avalanche, with residual TVL and historical derivatives contracts. Its current public positioning has shifted toward Opyn Markets, described as a forthcoming Uniswap-like perpetuals ecosystem. Gamma and Squeeth should be treated as legacy or unresolved-current-status product lines unless current activity is independently verified.",
     "relationship_narrative": "Opyn Gamma and Squeeth share infrastructure through the Controller contract, which is used in Squeeth and may interact with Gamma's margin pools. The Convexity factory is a legacy component for deploying options, while Gamma and Squeeth represent the active product lines with distinct collateral and trading mechanisms.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 103,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

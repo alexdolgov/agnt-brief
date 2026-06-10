@@ -5,8 +5,8 @@
 - Project: alphagrowth (`alphagrowth`)
 - Website: [https://app.euler.finance/governor/alphagrowth?network=unichain](https://app.euler.finance/governor/alphagrowth?network=unichain)
 - Lifecycle: active (Tier 0, 15.7% below peak)
-- Generated: 2026-06-10T20:23:53.121Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.805Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, ethereum, linea, unichain
 - Contract surface: 55 unique implementations (177 raw deployments)
 - DeFi Llama TVL: $8,526,731.85

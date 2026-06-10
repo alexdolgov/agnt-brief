@@ -7,8 +7,8 @@
 - Project: Tokenlon (`tokenlon`)
 - Website: [https://tokenlon.im](https://tokenlon.im)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T11:11:53.023Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:17.512Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 21 unique implementations (34 raw deployments)
 - DeFi Llama TVL: $37,169,283.00
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Tokenlon is a decentralized exchange protocol that provides both an aggregator for optimal trade routing and an automated market maker (AMM) for direct token swaps. It also includes staking mechanisms for its native LON token to incentivize liquidity provision and governance participation.
+Tokenlon is a decentralized exchange and payment settlement protocol for trustless token-to-token swaps. It provides quote-based routing and execution, including RFQ/market-maker liquidity and integrations with external AMM or swap sources to seek best-price trades. It should not be described as a Tokenlon-native AMM family based on upstream UniswapV2Pair contracts.
 
 ### Architecture
 
@@ -31,11 +31,11 @@ The Tokenlon AMM family relies on the LON token as the core asset, with LONStaki
 - Unverified implementations: 0
 - Unique implementations: 21
 - Raw deployments: 34
-- Audits discovered: 7
+- Audits discovered: 6
 - Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-07 (stale)
-- Staleness: 0 fresh, 0 aging, 6 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 6 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -106,7 +106,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [PeckShield-Audit-Report-Tokenlonv5.2-v1.0.pdf](https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/PeckShield-Audit-Report-Tokenlonv5.2-v1.0.pdf) | PeckShield | Audit | 2021-05 | stale | Direct | contract_name | 2 | high |
 | [PeckShield-Audit-TokenlonV5-v1.0.pdf](https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/PeckShield-Audit-TokenlonV5-v1.0.pdf) | PeckShield | Audit | 2020-12 | stale | Direct | contract_name | 17 | high |
 | [PeckShield-Audit-TokenlonV5-v1.0rc.pdf](https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/PeckShield-Audit-TokenlonV5-v1.0rc.pdf) | PeckShield | Audit | 2021-03 | stale | Direct | contract_name | 20 | high |
-| [README.md](https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Tokenlon-v6.0.0-Smart-Contract-Audit-Report-Decurity.pdf](https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/Tokenlon-v6.0.0-Smart-Contract-Audit-Report-Decurity.pdf) | Decurity | Audit | 2023-07 | stale | Direct | contract_name | 3 | high |
 
 ## Coverage Gaps
@@ -136,13 +135,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=6
 - Match method counts: extraction_exact=50
-
-Zero-match audit list:
-
-- [5898] README.md
 
 Fork inheritance lineage and inherited audits are included when available.

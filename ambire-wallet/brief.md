@@ -5,8 +5,8 @@
 - Project: Ambire Wallet (`ambire-wallet`)
 - Website: [https://www.ambire.com](https://www.ambire.com)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:30:59.046Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.845Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 9 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $9,896,682.05

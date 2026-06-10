@@ -5,8 +5,8 @@
 - Project: Anthias Labs (`anthias-labs`)
 - Website: [https://anthias.xyz](https://anthias.xyz)
 - Lifecycle: active (Tier 0, 19.4% below peak)
-- Generated: 2026-06-10T20:32:37.675Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.576Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 2 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $21,649,055.52

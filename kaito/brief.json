@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "kaito",
-  "generated_at": "2026-05-31T08:34:00.257Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:06.424Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "kaito",
     "tier": 0,
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Kaito is a protocol that allows users to stake KAITO tokens to receive StakedKAITO, representing their staked position and likely earning rewards.",
-    "relationship_narrative": "The Kaito token contract is staked into the StakedKAITO contract, which mints StakedKAITO tokens to users, forming a direct staking relationship between the two contracts.",
+    "project_purpose": "Kaito is a crypto attention, data, and capital distribution service described as a distribution powerhouse for the crypto ecosystem. The tracked on-chain surface currently consists of the KAITO token contract and the StakedKAITO staking/token contract on Base; staking TVL should be reported separately from overall protocol TVL.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -103,7 +108,7 @@
       "chain_name": "base",
       "address": "0x98d0baa52b2d063e780de12f615f963fe8537553",
       "name": "Kaito",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Kaito",
@@ -148,7 +153,7 @@
       "chain_name": "base",
       "address": "0x98d0baa52b2d063e780de12f615f963fe8537553",
       "name": "Kaito",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

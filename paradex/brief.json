@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "paradex",
-  "generated_at": "2026-05-31T14:54:11.143Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:09.180Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "paradex",
@@ -66,7 +66,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Paradex is a decentralized exchange protocol that enables cross-chain asset transfers between Ethereum and StarkNet via a token bridge, and supports trading of spot, options, and perpetual derivatives.",
+    "project_purpose": "Paradex is a perpetuals decentralized exchange. The recorded Ethereum contracts appear to represent bridge/deposit-withdrawal infrastructure for Ethereum/Starknet connectivity, not the complete trading protocol or sole on-chain infrastructure.",
     "relationship_narrative": "The Paradex Bridge serves as the sole on-chain infrastructure, with the Proxy contract managing upgrades to the StarknetTokenBridge implementation, which handles all cross-chain token transfers.",
     "product_family_count": 1
   },

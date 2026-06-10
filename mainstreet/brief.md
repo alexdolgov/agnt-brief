@@ -5,8 +5,8 @@
 - Project: Mainstreet (`mainstreet`)
 - Website: [https://mainstreet.finance/](https://mainstreet.finance/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T14:54:04.149Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:59:07.143Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $78,184,322.02
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Mainstreet is an Ethereum basis-trading and synthetic-dollar protocol centered on msUSD, a yield-bearing or rebasing synthetic dollar minted against yield-bearing collateral.
 
 ## Audit Coverage Summary
 
@@ -49,7 +49,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| msUSDV2 | unknown | ethereum | [`0x4ba01f...6a7c00`](./contracts/ethereum-1/0x4ba01f22827018b4772cd326c7627fb4956a7c00/) | ✅ Audited |
+| msUSDV2 | proxy | ethereum | [`0x4ba01f...6a7c00`](./contracts/ethereum-1/0x4ba01f22827018b4772cd326c7627fb4956a7c00/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

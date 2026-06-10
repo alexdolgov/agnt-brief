@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "yala",
-  "generated_at": "2026-05-31T11:41:04.284Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:19.400Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "yala",
     "tier": 1,
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Yala is a CDP (Collateralized Debt Position) protocol that allows users to lock collateral and mint a stablecoin (DebtToken). It also includes a BridgeToken for cross-chain operations.",
+    "project_purpose": "Yala should be described with a caveat: the legacy/DefiLlama DeFi protocol was a CDP/stablecoin system that allowed users to lock collateral and mint a DebtToken, with BridgeToken-related cross-chain components. However, the current public homepage presents Yala as an AI fair-value/prediction product, so the legacy CDP/stablecoin system should not be stated as the current project purpose without distinguishing it from the current/pivoted product.",
     "relationship_narrative": "The Yala family consists of a core DebtToken for CDP operations and a supporting BridgeToken for cross-chain transfers, both deployed by the same deployer cluster.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 30,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -5,8 +5,8 @@
 - Project: Alchemix (`alchemix`)
 - Website: [https://alchemix.fi/](https://alchemix.fi/)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:22:16.706Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.668Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum, fantom, optimism
 - Contract surface: 388 unique implementations (1035 raw deployments)
 - DeFi Llama TVL: $37,880,562.00

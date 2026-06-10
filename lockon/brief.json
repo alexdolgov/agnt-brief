@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "lockon",
-  "generated_at": "2026-05-25T07:09:35.298Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:07.027Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "lockon",
@@ -35,8 +35,8 @@
     "coverage_pct": 56.3,
     "total_audits": 7,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 1058934.3343,
-    "tvl_usd": 1058934.3343,
+    "dl_tvl_usd": 1049561.7133,
+    "tvl_usd": 1049561.7133,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -57,9 +57,14 @@
     }
   },
   "topography": {
-    "project_purpose": "LOCKON is a DeFi protocol that issues index tokens (SetTokens) representing baskets of assets, managed by Controller contracts. It also provides staking, vesting, and airdrop mechanisms to incentivize participation and distribute rewards.",
+    "project_purpose": "LOCKON is a DeFi protocol for automated index tokens composed using wallet-portfolio analytics, including analysis of portfolios held by high-performing wallet addresses. Its on-chain system uses Set Protocol-style contracts and related modules for index token issuance, redemption, and rebalancing. Separate incentive-related contracts, if present, should not be treated as part of the current core product without contract-linkage evidence.",
     "relationship_narrative": "The LOCKON family integrates index management (Controllers and SetTokens) with incentive contracts (LockStaking, LockonVesting, IndexStaking, LockToken, Airdrop) that likely use the SetTokens as staking or reward assets. All contracts share the same deployer cluster and proxy patterns, indicating a unified infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 23,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

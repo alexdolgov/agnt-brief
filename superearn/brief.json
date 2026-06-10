@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "superearn",
-  "generated_at": "2026-05-26T14:48:16.628Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:16.805Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "superearn",
@@ -59,9 +59,14 @@
     }
   },
   "topography": {
-    "project_purpose": "SuperEarn is a cross-chain yield aggregation protocol that deploys user deposits into curated DeFi strategies (e.g., Morpho, Pendle) across Ethereum and Klaytn. It uses vaults, routers, and cross-chain messaging to optimize and automate yield generation.",
+    "project_purpose": "SuperEarn is a Kaia/Klaytn DeFi yield optimization and yield-earning protocol. Public TVL/product scope should be treated as Kaia/Klaytn-focused; Ethereum and cross-chain contracts, if included, should be described as observed contract-surface evidence rather than confirmed current public TVL/product scope.",
     "relationship_narrative": "Ethereum vaults rely on asset providers and swappers to execute strategies, while cross-chain messaging agents and keepers synchronize state with Kaia vaults. The SuperEarnRouter serves as the unified user interface, directing funds to either Ethereum or Kaia vaults based on strategy availability.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 94,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

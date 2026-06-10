@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "switcheo-finance",
-  "generated_at": "2026-05-31T10:49:00.182Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.928Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "switcheo-finance",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 76.44299157457051
   },
   "summary": {
-    "total_contracts": 48,
-    "total_addresses": 101,
-    "unique_implementations": 48,
-    "total_deployments": 101,
+    "total_contracts": 47,
+    "total_addresses": 100,
+    "unique_implementations": 47,
+    "total_deployments": 100,
     "audited_contracts": 0,
-    "unaudited_contracts": 30,
+    "unaudited_contracts": 29,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 30,
+    "contracts_verified_unaudited": 29,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 18,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 1234738.76403,
-    "tvl_usd": 68368860.50754197,
+    "tvl_usd": 68279527.21574716,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 68368860.51
+      "ethereum": 68279527.22
     },
-    "asd_usd": 68368860.50754197,
+    "asd_usd": 68279527.21574716,
     "website_url": null,
     "chains": [
       "ethereum"
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Switcheo Finance is a decentralized exchange (DEX) protocol that facilitates token swaps and trading on Ethereum. It appears to use a broker model for order matching and settlement, with various token contracts integrated for trading pairs.",
+    "project_purpose": "Switcheo Finance is a decentralized exchange protocol on Ethereum that facilitates token swaps and trading through exchange and broker-style settlement contracts. External ERC-20 token contracts traded or referenced by the exchange should not be described as Switcheo-owned protocol components or included in project-owned contract counts or protocol TVL calculations.",
     "relationship_narrative": "The BrokerV2 contract acts as the core execution engine, relying on the Utils library for shared logic. Various token contracts (e.g., BalancerGovernanceToken, CelsiusToken) are integrated as trading assets, while supporting contracts like EIP20 provide standard token interfaces.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 47,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -119,37 +124,6 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 596353.9490737156,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9",
-      "name": "Token",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Switcheo Finance",
-      "tvl_usd": 89333.29179480675,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Token",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 89333.29179480675,
           "is_audited": false
         }
       ],
@@ -2230,7 +2204,7 @@
   "origin_summary": {
     "native": 30,
     "upstream": 5,
-    "standard_library": 6,
+    "standard_library": 5,
     "needs_review": 7
   },
   "scope_matching_notes": {

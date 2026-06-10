@@ -6,8 +6,8 @@
 
 - Project: Gro (`gro`)
 - Lifecycle: declining (Tier 0, 97.4% below peak)
-- Generated: 2026-05-31T08:13:54.073Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.401Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 124 unique implementations (161 raw deployments)
 - DeFi Llama TVL: $4,661,057.66
@@ -16,7 +16,7 @@
 
 ## Project Description
 
-Gro is a yield optimization protocol that offers users exposure to stablecoin and DeFi yields through tokenized vault products. It provides both rebasing and non-rebasing tokens representing shares in yield-generating strategies.
+Gro is a stablecoin yield aggregator that optimizes DeFi yield while tranching risk and return across its main products, including PWRD for lower-risk protected exposure and Vault strategies for higher-yield stablecoin exposure.
 
 ### Architecture
 

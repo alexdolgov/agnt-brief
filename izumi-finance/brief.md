@@ -1,14 +1,14 @@
 # Agentic Audit Brief: iZUMi Finance
 
-⚠️ Lifecycle status: DEAD - TVL dropped 33.2% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 33.2% over 90 days
 
 ## Project Overview
 
 - Project: iZUMi Finance (`izumi-finance`)
 - Website: [https://izumi.finance/home](https://izumi.finance/home)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-31T08:31:42.054Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:06.341Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, aurora, base, blast, cronos, ethereum, kava, linea, manta, mantle, mode, polygon, scroll
 - Contract surface: 181 unique implementations (324 raw deployments)
 - DeFi Llama TVL: $3,827,165.00
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-iZUMi Finance is a multi-chain decentralized exchange and yield protocol that enables concentrated liquidity trading and liquidity mining. It provides automated market-making with customizable price ranges and incentivizes liquidity providers through token rewards.
+iZUMi Finance is a multi-chain DeFi protocol positioned around Liquidity-as-a-Service, with iZiSwap concentrated-liquidity trading, liquidity incentives/staking and Pool2-style reward programs, and ve/iZi tokenomics components where supported by deployed contracts and documentation.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ iZiSwap and iZUMi LiquidBox share the iZi token, which is earned through liquidi
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $2,759,198.18 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $2,759,198.18 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

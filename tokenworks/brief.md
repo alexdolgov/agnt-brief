@@ -5,8 +5,8 @@
 - Project: TokenWorks (`tokenworks`)
 - Website: [https://www.nftstrategy.fun/](https://www.nftstrategy.fun/)
 - Lifecycle: active (Tier 0, 88.7% below peak)
-- Generated: 2026-05-31T11:08:49.298Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:17.522Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 60 unique implementations (90 raw deployments)
 - DeFi Llama TVL: $2,136,220.53
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-TokenWorks provides automated NFT strategies, enabling users to deploy and manage yield-generating or utility-maximizing strategies for NFTs, starting with CryptoPunks.
+TokenWorks' NFTStrategy creates strategy tokens for NFT collections. The strategy uses trading fees to buy floor NFTs, relist them for profit, burn token supply, and pay creator royalties. The live product should be described as a broader NFT collection strategy-token mechanism rather than as primarily CryptoPunks-only or as generic NFT yield/utility maximization.
 
 ### Architecture
 

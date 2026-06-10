@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "dnax",
-  "generated_at": "2026-05-31T07:53:58.723Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.921Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "dnax",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Dnax is a decentralized exchange (DEX) protocol on BSC that facilitates token swaps and liquidity provision. It uses a single upgradeable CarbonController contract to manage its core trading and liquidity logic.",
-    "relationship_narrative": "The protocol consists of a single product family where the OptimizedTransparentUpgradeableProxy serves as the governance-controlled entry point, delegating all logic to the CarbonController implementation.",
+    "project_purpose": "Dnax is a BSC onchain trading and DEX protocol focused on automated trading features, including automated limit orders, custom price ranges, grid and recurring orders, and orderbook-like trading functionality through its upgradeable core controller contract.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -70,7 +75,7 @@
       "chain_name": "bsc",
       "address": "0xafc43fae32302d725fc4d448525c44c522a9a1b9",
       "name": "CarbonController",
-      "role": "governance",
+      "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Dnax",
@@ -105,7 +110,7 @@
       "chain_name": "bsc",
       "address": "0xafc43fae32302d725fc4d448525c44c522a9a1b9",
       "name": "CarbonController",
-      "role": "governance",
+      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

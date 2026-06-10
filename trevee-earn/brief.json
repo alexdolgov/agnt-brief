@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "trevee-earn",
-  "generated_at": "2026-05-31T11:13:50.458Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "transitioning",
+  "generated_at": "2026-06-10T20:59:17.583Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "trevee-earn",
     "tier": 1,
@@ -72,9 +72,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Trevee Earn is a yield aggregation protocol that pools user deposits into lending markets and vault strategies to generate optimized returns. It issues interest-bearing tokens (ATokens, fTokens) representing user shares and employs upgradeable proxy patterns for modularity and governance.",
+    "project_purpose": "Trevee/Rings is a USD and ETH meta-stablecoin and yield product focused on yield for stakers, Sonic DeFi liquidity, and lockers. Its native surface should be distinguished from external integrations and upstream assets: fToken, Pool, and BoringVault-style components may be Trevee/Rings-native where ownership is verified, while Aave ATokens, Frax, Morpho, and other third-party protocol contracts should not be described as Trevee-issued or counted as native Trevee contract surface without supporting evidence.",
     "relationship_narrative": "All contracts belong to a single product family, sharing upgradeable proxy infrastructure for governance and modularity. Core lending and vault contracts interact through tokenized positions, with proxies managing implementation upgrades across the system.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 15,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

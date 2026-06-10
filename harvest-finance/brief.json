@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "harvest-finance",
-  "generated_at": "2026-05-31T08:20:50.047Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.519Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "harvest-finance",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 180,
     "coverage_pct": 46.4,
-    "total_audits": 6,
+    "total_audits": 5,
     "scoreable_audits": 5,
     "dl_tvl_usd": 12929392.29156,
     "tvl_usd": 12929392.29156,
@@ -66,13 +66,18 @@
       "fresh": 0,
       "aging": 1,
       "stale": 4,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
     "project_purpose": null,
     "relationship_narrative": null,
     "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 445,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -21726,27 +21731,6 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6941,
-      "audit_key": "audit-6941",
-      "report_name": "README.md",
-      "report_url": "https://github.com/harvestfi/audits/blob/main/README.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -21795,12 +21779,7 @@
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 6941,
-        "report_name": "README.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

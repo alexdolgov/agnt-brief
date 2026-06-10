@@ -4,17 +4,17 @@
 
 - Project: SingularX (`singularx`)
 - Lifecycle: active (Tier 0, 56.3% below peak)
-- Generated: 2026-05-31T10:38:38.798Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.201Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 4 unique implementations (5 raw deployments)
+- Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $1,796,185.69
 - On-chain TVL (included contracts): $21,448,655.86
 - TVL by chain: Ethereum $21,448,655.86
 
 ## Project Description
 
-SingularX is a decentralized exchange (DEX) protocol on Ethereum that facilitates token swaps and liquidity provision. It includes a custom token bridging mechanism via L1ArbitrumToken and a gateway for cross-chain interactions.
+SingularX is an Ethereum peer-to-peer decentralized exchange (DEX). No verified project-owned documentation supports treating Arbitrum token bridge or gateway contracts as part of the SingularX protocol surface.
 
 ### Architecture
 
@@ -27,7 +27,7 @@ The DEX contract interacts with the L1ArbitrumToken (via its proxy) for token sw
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 4
-- Raw deployments: 5
+- Raw deployments: 4
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $21,448,655.86
@@ -49,7 +49,7 @@ The DEX contract interacts with the L1ArbitrumToken (via its proxy) for token sw
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| L1ArbitrumToken | token | ethereum | 2 deployments: ethereum [`0xad0c36...3c6fc7`](./contracts/ethereum-1/0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7/); ethereum `0xb50721...234ad1` | ⚠️ Unaudited |
+| L1ArbitrumToken | token | ethereum | [`0xb50721...234ad1`](./contracts/ethereum-1/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1/) | ⚠️ Unaudited |
 | Dex | unknown | ethereum | [`0x9a2d16...566f80`](./contracts/ethereum-1/0x9a2d163ab40f88c625fd475e807bbc3556566f80/) | ⚠️ Unaudited |
 | L1ForceOnlyReverseCustomGateway | unknown | ethereum | [`0xbbce8a...11db27`](./contracts/ethereum-1/0xbbce8aa77782f13d4202a230d978f361b011db27/) | ⚠️ Unaudited |
 | UpgradeExecutor | unknown | ethereum | [`0x86f0cf...298a17`](./contracts/ethereum-1/0x86f0cf42ad673b3d666d103e009ec142d1298a17/) | ⚠️ Unaudited |
@@ -83,16 +83,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xad0c36...3c6fc7`](./contracts/ethereum-1/0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7/) | L1ArbitrumToken | token | $21,448,655.86 | Verified native implementation with $21,448,655.86 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9a2d16...566f80`](./contracts/ethereum-1/0x9a2d163ab40f88c625fd475e807bbc3556566f80/) | Dex | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 1 |
 | upstream | 0 |
-| standard_library | 1 |
+| standard_library | 2 |
 | needs_review | 1 |
 
 ## Scope Matching Notes

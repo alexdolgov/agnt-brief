@@ -7,17 +7,17 @@
 - Project: TruFin Protocol (`trufin-protocol`)
 - Website: [https://www.trufin.io/](https://www.trufin.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T10:11:49.498Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:17.606Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 7 unique implementations (24 raw deployments)
-- DeFi Llama TVL: $6,835,153.00
+- DeFi Llama TVL: $7,016,995.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-TruFin Protocol provides liquid staking and yield-generation products, allowing users to stake assets and receive liquid derivative tokens while earning rewards. It includes legacy vaults for staking and newer TruStake contracts for liquid staking of MATIC and other tokens.
+TruYields is an institutional onchain yield platform with product lines including TruCore, TruStake, and TruVault. TruStake includes liquid staking products such as MATIC/POL staking, while TruVault and related products cover additional yield strategies. The Ethereum contracts listed in this brief represent only a subset of the broader TruYields platform and should not be treated as the complete multi-chain protocol surface.
 
 ### Architecture
 

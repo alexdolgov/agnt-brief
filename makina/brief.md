@@ -5,8 +5,8 @@
 - Project: Makina (`makina`)
 - Website: [https://app.makina.finance/](https://app.makina.finance/)
 - Lifecycle: active (Tier 0, 65.2% below peak)
-- Generated: 2026-05-26T16:19:43.457Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:07.148Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, ethereum, ink
 - Contract surface: 36 unique implementations (60 raw deployments)
 - DeFi Llama TVL: $36,799,164.34
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Makina is an onchain capital allocator that enables users to deposit assets into strategy vaults (Machines) and earn yield. It provides infrastructure for deploying and managing these vaults, including bridging, oracles, and fee management.
+Makina is DeFi execution engine and vault infrastructure for professional Operators, enabling strategy vaults called Machines to deploy and manage capital across onchain venues with supporting periphery for operations such as oracles and fee management.
 
 ### Architecture
 
@@ -29,19 +29,19 @@ The Deployments family provides shared infrastructure (registries, bridges, orac
 - Unverified implementations: 3
 - Unique implementations: 36
 - Raw deployments: 60
-- Audits discovered: 10
-- Scoreable audits (matched contracts): 6
+- Audits discovered: 4
+- Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): $12,895,621.86
-- Latest audit: 2026-01 (fresh)
-- Staleness: 10 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2025-09 (fresh)
+- Staleness: 4 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: 84.8% (ChainSecurity)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ChainSecurity | Tier 1 | 28 | 84.8% | 2026-01 |
-| Enigma Ventures | Tier 2 | 6 | 18.2% | 2025-09 |
+| ChainSecurity | Tier 1 | 28 | 84.8% | 2025-09 |
+| Enigma Ventures | Tier 2 | 2 | 6.1% | 2025-09 |
 
 ## Contract Surface
 
@@ -115,15 +115,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [- **Enigma Dark**: [Makina-Core Fuzz/Invariant Testing - Jul 2025]()](https://github.com/Enigma-Dark/security-review-reports/blob/main/2025-07_Invariant_Testing_Engagement_Makina_Finance_Makina_Core.pdf) | Enigma Ventures | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [Makina-Periphery, Machine Share Oracle - Sep 2025](https://docs.makina.finance/assets/files/2025-09_Security_Review_Makina_Finance_Makina_Periphery_Machine_Share_Oracle-5e55078d01641076fd04b09430d314ed.pdf) | Enigma Ventures | Audit | 2025-09 | fresh | Direct | contract_name | 8 | high |
-| [- **SigmaPrime**: [Makina-Core & Makina-Periphery - Aug 2025]()](https://github.com/sigp/public-audits/blob/master/reports/makina/review.pdf) | Enigma Ventures | Audit | 2025-08 | fresh | Direct | contract_name | 4 | high |
-| [Makina-Core - Sep 2025](https://www.chainsecurity.com/security-audit/makina-core) | ChainSecurity | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
 | [- **ChainSecurity**: [Makina-Core - Sep 2025](https://www.chainsecurity.com/security-audit/makina-core), [Jan 2026]()](https://reports.chainsecurity.com/Makina/ChainSecurity_Makina_MakinaCoreSmartContracts_Audit.pdf) | ChainSecurity | Audit | 2025-09 | fresh | Direct | contract_name | 17 | high |
-| [Makina-Periphery - Sep 2025](https://www.chainsecurity.com/security-audit/makina-periphery) | ChainSecurity | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
 | [- **ChainSecurity**: [Makina-Periphery - Sep 2025](https://www.chainsecurity.com/security-audit/makina-periphery), [Jan 2026]()](https://reports.chainsecurity.com/Makina/ChainSecurity_Makina_MakinaPeripherySmartContracts_Audit.pdf) | ChainSecurity | Audit | 2025-09 | fresh | Direct | contract_name | 30 | high |
-| [- **Ottersec**: [Makina-Core & Makina-Periphery - Nov 2025]()](https://ottersec.notion.site/Sampled-Public-Audit-Reports-a296e98838aa4fdb8f3b192663400772?p=2a284d4e41468027b796e222fbbb8939&pm=s) | Spearbit | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
 | [2025-09_Security_Review_Makina_Finance_Makina_Periphery_Machine_Share_Oracle.pdf](https://github.com/Enigma-Dark/security-review-reports/blob/main/2025-09_Security_Review_Makina_Finance_Makina_Periphery_Machine_Share_Oracle.pdf) | Enigma Ventures | Audit | 2025-09 | fresh | Direct | contract_name | 8 | high |
-| [ChainSecurity_Makina_MakinaCore_Audit-v11-0e3e924ad10fe5c6cef095d7e0311011.pdf](https://docs.makina.finance/assets/files/ChainSecurity_Makina_MakinaCore_Audit-v11-0e3e924ad10fe5c6cef095d7e0311011.pdf) | ChainSecurity | Audit | 2026-01 | fresh | Direct | contract_name | 17 | high |
 
 ## Coverage Gaps
 
@@ -146,16 +140,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=6
-- Match method counts: extraction_exact=84
+- Extraction confidence breakdown: high=3
+- Match method counts: extraction_exact=55
 
 Zero-match audit list:
 
 - [3949] - **Enigma Dark**: [Makina-Core Fuzz/Invariant Testing - Jul 2025]()
-- [3952] Makina-Core - Sep 2025
-- [3954] Makina-Periphery - Sep 2025
-- [3956] - **Ottersec**: [Makina-Core & Makina-Periphery - Nov 2025]()
 
 Fork inheritance lineage and inherited audits are included when available.

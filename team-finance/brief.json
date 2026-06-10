@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "team-finance",
-  "generated_at": "2026-05-31T10:55:07.136Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:17.313Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "team-finance",
@@ -70,9 +70,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Team Finance is a token locker protocol that allows projects to lock their tokens for a set period, providing trust and transparency to investors. It supports multiple chains and offers features like liquidity locking and vesting schedules.",
+    "project_purpose": "Team Finance is a multi-chain non-custodial token launch and management platform. Its products include token creation, token and LP liquidity locking, vesting schedules, and staking pools across supported chains.",
     "relationship_narrative": "The protocol consists of a single product family centered around token locking. Core locking logic is implemented in LockToken contracts, which are deployed behind upgradeable proxies (AdminUpgradeabilityProxy and TransparentUpgradeableProxy) for future improvements. Supporting contracts like StakingPool and PriceEstimator provide additional functionality, while unnamed contracts likely serve as registries or adapters.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 66,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

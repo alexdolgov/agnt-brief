@@ -5,21 +5,22 @@
 - Project: Syntropia (`syntropia`)
 - Website: [https://syntropia.ai/](https://syntropia.ai/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:53:05.462Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:17.158Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $3,662,459.78
 - On-chain TVL (included contracts): $3,659,411.44
 - TVL by chain: Ethereum $3,659,411.44
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Syntropia is a yield aggregator on Ethereum that optimizes user deposits across DeFi strategies. It uses Vault contracts to manage funds and generate yield.
-
-### Architecture
-
-All three OptinProxy contracts share the same Vault implementation, indicating a single product family with multiple instances. No separate infrastructure contracts are identified, suggesting a self-contained vault design.
+Syntropia is an Ethereum-based DeFi yield protocol focused on risk-adjusted stablecoin yield, including DeFi market-making yield and synUSD tranche products. Its deployed surface consists of OptinProxy proxy contracts pointing to a shared Vault implementation, with advertised protection layers such as circuit breakers and anomaly detection to help manage strategy and market risk.
 
 ## Audit Coverage Summary
 

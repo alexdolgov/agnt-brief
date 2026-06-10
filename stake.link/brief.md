@@ -5,8 +5,8 @@
 - Project: stake.link (`stake.link`)
 - Website: [https://stake.link](https://stake.link)
 - Lifecycle: active (Tier 0, 53.8% below peak)
-- Generated: 2026-05-31T10:41:44.186Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.546Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, ethereum, polygon
 - Contract surface: 71 unique implementations (184 raw deployments)
 - DeFi Llama TVL: $79,772,694.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-stake.link is a liquid staking and index protocol for Chainlink (LINK) and its ecosystem. It allows users to stake LINK, receive liquid staking derivatives (LSDs), and participate in curated index pools that aggregate yields from multiple staking strategies across chains.
+stake.link is primarily a Chainlink/LINK liquid staking protocol. It enables users to stake LINK and receive liquid staking-related tokens/derivatives, with additional auxiliary staking, rewards, vesting, and historical index-pool components where supported by current live contracts and documentation.
 
 ### Architecture
 
@@ -33,7 +33,7 @@ All staking families share common infrastructure such as StakingPool, PriorityPo
 - Scoreable audits (matched contracts): 18
 - ASD (verified + unaudited TVL): $35,905.19
 - Latest audit: 2026-03 (fresh)
-- Staleness: 6 fresh, 6 aging, 8 stale, 0 unknown
+- Staleness: 5 fresh, 7 aging, 8 stale, 0 unknown
 - Tier 1 coverage: 45.7% (Cyfrin)
 
 ### Auditor Coverage
@@ -166,7 +166,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [[2025-02-04] Trust - LINK Staking Withdrawals.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-02-04%5D%20Trust%20-%20LINK%20Staking%20Withdrawals.pdf) | unknown | Audit | 2025-02 | aging | Direct | contract_name | 60 | high |
 | [[2025-02-28] Cyfrin - CL Rewards Claiming.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-02-28%5D%20Cyfrin%20-%20CL%20Rewards%20Claiming.pdf) | Cyfrin | Audit | 2025-02 | aging | Direct | contract_name | 35 | high |
 | [[2025-05-19] Cyfrin - Polygon Staking.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-05-19%5D%20Cyfrin%20-%20Polygon%20Staking.pdf) | Cyfrin | Audit | 2025-05 | aging | Direct | contract_name | 2 | high |
-| [[2025-06-04] Cyfrin - LINK Migrator.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-06-04%5D%20Cyfrin%20-%20LINK%20Migrator.pdf) | Cyfrin | Audit | 2025-06 | fresh | Direct | contract_name | 10 | high |
+| [[2025-06-04] Cyfrin - LINK Migrator.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-06-04%5D%20Cyfrin%20-%20LINK%20Migrator.pdf) | Cyfrin | Audit | 2025-06 | aging | Direct | contract_name | 10 | high |
 | [[2025-08-02] Cyfrin - SDL Vesting.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-08-02%5D%20Cyfrin%20-%20SDL%20Vesting.pdf) | Cyfrin | Audit | 2025-08 | fresh | Direct | contract_name | 19 | high |
 | [[2025-08-02] Cyfrin - Vesting.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-08-02%5D%20Cyfrin%20-%20Vesting.pdf) | Cyfrin | Audit | 2025-08 | fresh | Direct | contract_name | 19 | high |
 | [[2026-02-04] Cyfrin - Espresso Staking.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2026-02-04%5D%20Cyfrin%20-%20Espresso%20Staking.pdf) | Cyfrin | Audit | 2026-02 | fresh | Direct | contract_name | 2 | high |

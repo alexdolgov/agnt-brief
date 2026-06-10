@@ -4,21 +4,22 @@
 
 - Project: Themis Pro (`themis-pro`)
 - Lifecycle: unknown
-- Generated: 2026-05-25T04:50:09.875Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:17.495Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,164,359.00
+- DeFi Llama TVL: $1,164,180.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Themis Pro is a decentralized exchange and liquid staking protocol that also functions as a reserve currency system. It enables users to trade assets, stake tokens to earn yield, and participate in a protocol-owned liquidity model.
-
-### Architecture
-
-The product families share a common token and treasury infrastructure, with the reserve currency underpinning liquidity incentives for the exchange and staking derivatives feeding back into the reserve system.
+Themis Pro is part of Themis Protocol, a DeFi protocol on Filecoin Virtual Machine (FVM) with products including Themis Pro, Themis Swap, Themis Pool, and Themis Stablecoin. Available evidence supports describing it as part of Themis Protocol's FVM DeFi portfolio, but does not substantiate claims that Themis Pro is itself a reserve currency system or uses a protocol-owned liquidity model.
 
 ## Audit Coverage Summary
 

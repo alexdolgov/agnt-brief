@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "keep3r-network",
-  "generated_at": "2026-05-26T06:35:11.266Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-eff36e-a3ce",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:06.660Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "keep3r-network",
     "tier": 1,
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 481,
-    "total_addresses": 1714,
-    "unique_implementations": 481,
-    "total_deployments": 1714,
+    "total_contracts": 480,
+    "total_addresses": 1713,
+    "unique_implementations": 480,
+    "total_deployments": 1713,
     "audited_contracts": 1,
-    "unaudited_contracts": 367,
+    "unaudited_contracts": 366,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 367,
+    "contracts_verified_unaudited": 366,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 113,
     "coverage_pct": 0.3,
     "total_audits": 1,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 3996061.6047099996,
+    "dl_tvl_usd": 3674192.74551,
     "tvl_usd": 2070483544.1128855,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Keep3r Network is a decentralized job marketplace that connects projects needing external DevOps and maintenance tasks with keepers who execute them. It uses the KP3R token for governance and incentivization, and integrates with various DeFi protocols to automate operations like harvesting, rebalancing, and liquidations.",
+    "project_purpose": "Keep3r Network is a decentralized keeper/job network where projects can register jobs and keepers execute external maintenance or automation tasks in exchange for ETH, token, or KP3R-denominated rewards. KP3R is used for network participation and governance/incentive mechanisms; third-party DeFi protocols may be integrations or job targets but should not be treated as Keep3r-owned product components without independent evidence.",
     "relationship_narrative": "The Keep3r Network family relies on a single governance proxy (GnosisSafe) and a registry (ffregistry) to manage job listings and keeper interactions. Token contracts like KP3R and various Uniswap pairs provide liquidity and reward mechanisms, while CErc20Delegator proxies suggest integration with lending markets for capital efficiency.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 480,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -5065,37 +5070,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xd322259b4d93f81a2a59f6010bec166f6f5e870c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2ba592f78db6436527729929aaf6c908497cb200",
-      "name": "Comp",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "compound-finance",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Comp",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2ba592f78db6436527729929aaf6c908497cb200",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -27657,7 +27631,7 @@
   ],
   "origin_summary": {
     "native": 167,
-    "upstream": 110,
+    "upstream": 109,
     "standard_library": 5,
     "needs_review": 199
   },

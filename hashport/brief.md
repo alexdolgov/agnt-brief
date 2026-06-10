@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Hashport
 
-⚠️ Lifecycle status: SUNSETTING - TVL dropped 54.8% over 90 days
+⚠️ Lifecycle status: DEAD - TVL dropped 54.8% over 90 days
 
 ## Project Overview
 
 - Project: Hashport (`hashport`)
 - Website: [https://www.hashport.network](https://www.hashport.network)
-- Lifecycle: sunsetting (Tier 1, sunsetting)
-- Generated: 2026-05-24T18:44:43.878Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: dead (Tier 1, sunsetting)
+- Generated: 2026-06-10T20:59:04.551Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, aurora, avalanche, base, cronos, ethereum, fantom, moonbeam, optimism, polygon
 - Contract surface: 21 unique implementations (297 raw deployments)
-- DeFi Llama TVL: $1,686,236.00
+- DeFi Llama TVL: $1,536,497.14
 - On-chain TVL (included contracts): $152,610.27
 - TVL by chain: Ethereum $124,561.26 | Base $26,257.68 | Avalanche $1,694.79 | Polygon $81.37 | Arbitrum $15.16
 
 ## Project Description
 
-Hashport is a cross-chain bridge that enables users to transfer tokens between multiple blockchain networks. It uses a network of Router contracts to facilitate secure, decentralized asset movement across supported chains.
+Hashport was a Hedera-native public bridge that used a validator swarm and Hedera Consensus Service to support asset movement between Hedera and other networks through routers, router facets, diamond facets, governance, fee, payment, pausable facets, and ERC20/ERC721 wrapper-token contracts. The project has been permanently decommissioned: bridging infrastructure is offline, bridging is no longer available, and wrapped assets are stated by the project to be permanently unredeemable.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The Hashport family consists solely of Router and RouterFacet contracts, which a
 - Latest audit: 2022-08 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [sunsetting]. ASD of n/a represents exposure in a protocol with sunsetting activity.
+- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 

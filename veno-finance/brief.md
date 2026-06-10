@@ -5,8 +5,8 @@
 - Project: Veno Finance (`veno-finance`)
 - Website: [https://veno.finance/](https://veno.finance/)
 - Lifecycle: active (Tier 0, 72.5% below peak)
-- Generated: 2026-05-31T11:31:37.860Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:18.561Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: cronos, ethereum, zksync-era
 - Contract surface: 49 unique implementations (56 raw deployments)
 - DeFi Llama TVL: $42,842,322.56
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Veno Finance is a liquid staking protocol that allows users to stake assets like CRO and ETH to receive yield-bearing liquid tokens (e.g., ZkCro, YbEth, YBUSD). These tokens can be used across DeFi while earning staking rewards.
+Veno Finance is an active liquid staking and DeFi protocol whose current public liquid-staking-token surface includes LCRO, LATOM, LETH and LTIA. VNO should be described separately as the protocol token. ZkCro, YbEth and YBUSD should not be presented as the current main liquid-staking-token examples; if retained, they should be labeled as separate bridge or yield-bearing products. Cronos should be treated as a core current product surface for Veno rather than as a legacy or isolated component.
 
 ### Architecture
 
@@ -55,7 +55,7 @@ The Liquid Staking Tokens family uses ERC1967Proxy contracts to enable upgradeab
 | YbEth | unknown | ethereum | 2 deployments: ethereum [`0x76bf2d...dfc351`](./contracts/ethereum-1/0x76bf2d1e6dfda645c0c17440b17eccc181dfc351/); ethereum `0xc0c23f...52d6a2` | ⚠️ Unaudited |
 | YbEthBridge | operational_periphery | ethereum | 2 deployments: ethereum [`0xd91629...bdf73f`](./contracts/ethereum-1/0xd91629518a1ec964cfce27c2a939f689dcbdf73f/); ethereum `0xded4dd...50643d` | ⚠️ Unaudited |
 | YbEthNft | token | ethereum | 2 deployments: ethereum [`0x43df9d...86d2c5`](./contracts/ethereum-1/0x43df9d854d3fcb882847b9a638cabd06fe86d2c5/); ethereum `0x8f6b05...90762d` | ⚠️ Unaudited |
-| YBUSD | unknown | ethereum | 2 deployments: ethereum [`0xd501a4...32b7ce`](./contracts/ethereum-1/0xd501a4d2141799f3228c40af972df622c632b7ce/); ethereum `0xfa5907...0f594a` | ⚠️ Unaudited |
+| YBUSD | bridge_template | ethereum | 2 deployments: ethereum [`0xd501a4...32b7ce`](./contracts/ethereum-1/0xd501a4d2141799f3228c40af972df622c632b7ce/); ethereum `0xfa5907...0f594a` | ⚠️ Unaudited |
 | YBUSDBridge | operational_periphery | ethereum | 2 deployments: ethereum [`0x17daca...d014f8`](./contracts/ethereum-1/0x17dacad8aa962963830136422e2eaa8d27d014f8/); ethereum `0x42696a...7b0dff` | ⚠️ Unaudited |
 | ZkCro | unknown | ethereum | 2 deployments: ethereum [`0x28ff2e...1e44e2`](./contracts/ethereum-1/0x28ff2e4dd1b58efeb0fc138602a28d5ae81e44e2/); ethereum `0x34b35b...4616a5` | ⚠️ Unaudited |
 | ZkCroMintAndBridge | operational_periphery | ethereum | [`0xe69a53...ab4e12`](./contracts/ethereum-1/0xe69a535730858fd8dc386b448972a9f801ab4e12/) | ⚠️ Unaudited |
@@ -134,7 +134,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xe8dd48...32d2ac`](./contracts/ethereum-1/0xe8dd4838c47ebf87d8fdb63e7f6dd02c7432d2ac/) | EthereumDeposit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd91629...bdf73f`](./contracts/ethereum-1/0xd91629518a1ec964cfce27c2a939f689dcbdf73f/) | YbEthBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x43df9d...86d2c5`](./contracts/ethereum-1/0x43df9d854d3fcb882847b9a638cabd06fe86d2c5/) | YbEthNft | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd501a4...32b7ce`](./contracts/ethereum-1/0xd501a4d2141799f3228c40af972df622c632b7ce/) | YBUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd501a4...32b7ce`](./contracts/ethereum-1/0xd501a4d2141799f3228c40af972df622c632b7ce/) | YBUSD | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x17daca...d014f8`](./contracts/ethereum-1/0x17dacad8aa962963830136422e2eaa8d27d014f8/) | YBUSDBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xe69a53...ab4e12`](./contracts/ethereum-1/0xe69a535730858fd8dc386b448972a9f801ab4e12/) | ZkCroMintAndBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 

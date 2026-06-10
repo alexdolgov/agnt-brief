@@ -5,8 +5,8 @@
 - Project: Extra Finance (`extra-finance`)
 - Website: [https://extrafi.io/](https://extrafi.io/)
 - Lifecycle: active (Tier 0, 82.7% below peak)
-- Generated: 2026-05-26T19:33:08.128Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:03.977Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, berachain, optimism
 - Contract surface: 268 unique implementations (290 raw deployments)
 - DeFi Llama TVL: $32,304,487.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Extra Finance is a DeFi protocol offering leveraged farming, lending, and vault-based yield strategies. It enables users to amplify returns on liquidity provision and manage capital across multiple chains.
+Extra Finance is primarily a DeFi lending and leveraged yield farming protocol deployed on Optimism and Base. It enables users to lend assets and use leverage in yield farming strategies. Berachain/Bera contracts should be treated as an additional deployment with negligible current TVL unless documentation supports otherwise; any vault products should be described as related or curated vaults rather than the primary native protocol architecture.
 
 ### Architecture
 
@@ -23,42 +23,39 @@ The LendingPool supplies liquidity for leveraged farming positions managed by Be
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 4/19 (21.1%)
-- Verified + Unaudited implementations: 13
+- Verified implementations audited: 1/19 (5.3%)
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 2
 - Unverified implementations: 249
 - Unique implementations: 268
 - Raw deployments: 290
-- Audits discovered: 4
-- Scoreable audits (matched contracts): 2
+- Audits discovered: 3
+- Scoreable audits (matched contracts): 1
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/extrafinance/information))
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-12 (aging)
-- Staleness: 0 fresh, 2 aging, 1 stale, 0 unknown
+- Staleness: 0 fresh, 2 aging, 0 stale, 0 unknown
 - Tier 1 coverage: 5.3% (Sherlock)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| PeckShield | Tier 2 | 3 | 15.8% | 2024-11 |
 | Sherlock | Tier 1 | 1 | 5.3% | 2024-12 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (4)
+### ✅ Verified + Audited (1)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | LendingPool | core_logic | optimism | 3 deployments: optimism [`0xbb505c...c71cbd`](./contracts/optimism-10/0xbb505c54d71e9e599cb8435b4f0ceec05fc71cbd/); base [`0xbb505c...c71cbd`](./contracts/base-8453/0xbb505c54d71e9e599cb8435b4f0ceec05fc71cbd/); berachain [`0xbb505c...c71cbd`](./contracts/berachain-80094/0xbb505c54d71e9e599cb8435b4f0ceec05fc71cbd/) | ✅ Audited |
-| AddressRegistry | registry | optimism | 2 deployments: optimism [`0x856031...3a01d2`](./contracts/optimism-10/0x85603119c938750dfb5904f8a501b64f3f3a01d2/); base [`0x856031...3a01d2`](./contracts/base-8453/0x85603119c938750dfb5904f8a501b64f3f3a01d2/) | ✅ Audited |
-| VaultFactory | registry | base | [`0x155620...25729b`](./contracts/base-8453/0x155620a2e6a9392c754b73296d9655061525729b/) | ✅ Audited |
-| VeloPositionManager | governance | optimism | 2 deployments: optimism [`0xf9cfb8...957055`](./contracts/optimism-10/0xf9cfb8a62f50e10adde5aa888b44cf01c5957055/); base [`0xf9cfb8...957055`](./contracts/base-8453/0xf9cfb8a62f50e10adde5aa888b44cf01c5957055/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (13)
+### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| AddressRegistry | registry | optimism | 2 deployments: optimism [`0x856031...3a01d2`](./contracts/optimism-10/0x85603119c938750dfb5904f8a501b64f3f3a01d2/); base [`0x856031...3a01d2`](./contracts/base-8453/0x85603119c938750dfb5904f8a501b64f3f3a01d2/) | ⚠️ Unaudited |
 | Airdrop | operational_periphery | optimism | [`0x5b4140...9556a8`](./contracts/optimism-10/0x5b414093362a7c768273d5f0405744b8c09556a8/) | ⚠️ Unaudited |
 | BeraFarmingVaultFactory | registry | berachain | 2 deployments: berachain [`0x155620...25729b`](./contracts/berachain-80094/0x155620a2e6a9392c754b73296d9655061525729b/); berachain `0x6fbc69...5487b2` | ⚠️ Unaudited |
 | BeraPositionManager | governance | berachain | 2 deployments: berachain [`0xf9cfb8...957055`](./contracts/berachain-80094/0xf9cfb8a62f50e10adde5aa888b44cf01c5957055/); berachain `0xf9d40a...1dc9cc` | ⚠️ Unaudited |
@@ -71,6 +68,8 @@ The LendingPool supplies liquidity for leveraged farming positions managed by Be
 | ProxyAdmin | governance | optimism | [`0x777a16...21be10`](./contracts/optimism-10/0x777a1665e66218fb020fb15b0b1f0ee66621be10/) | ⚠️ Unaudited |
 | RewardsDistributorV2 | operational_periphery | optimism | [`0x269270...6b77b8`](./contracts/optimism-10/0x2692709313de4dc1ca15fe77a385c9eb2b6b77b8/) | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | optimism | 3 deployments: optimism [`0xc60e33...c38600`](./contracts/optimism-10/0xc60e33b114131e9dd577bc6bebf29c44c8c38600/); optimism `0xcb7669...bc499e`; berachain `0xc99255...2ebd50` | ⚠️ Unaudited |
+| VaultFactory | registry | base | [`0x155620...25729b`](./contracts/base-8453/0x155620a2e6a9392c754b73296d9655061525729b/) | ⚠️ Unaudited |
+| VeloPositionManager | governance | optimism | 2 deployments: optimism [`0xf9cfb8...957055`](./contracts/optimism-10/0xf9cfb8a62f50e10adde5aa888b44cf01c5957055/); base [`0xf9cfb8...957055`](./contracts/base-8453/0xf9cfb8a62f50e10adde5aa888b44cf01c5957055/) | ⚠️ Unaudited |
 | VestingWallet | operational_periphery | optimism | 5 deployments: optimism [`0x8756d9...4fdb9c`](./contracts/optimism-10/0x8756d971a8fcede86763a67980fa161ff54fdb9c/); optimism `0x8774da...a35545`; optimism `0x8edfb6...a7f0f7`; optimism `0x94114a...7d4ec4`; optimism `0xa24c39...438ba2` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -349,7 +348,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Active Bug Bounty Program](https://immunefi.com/bug-bounty/extrafinance/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
-| [1. <>](https://github.com/blocksecteam/audit-reports/blob/main/solidity/blocksec_extrafinance_v1.0-signed.pdf) | PeckShield | Audit | 2023-09 | stale | Direct | contract_name | 5 | high |
 | [Source](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-ExtraFi-v1.0.pdf) | PeckShield | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
 | [3. <>](https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2024.12.01%20-%20Final%20-%20Extra%20Finance%20Audit%20Report.pdf) | Sherlock | Contest | 2024-12 | aging | Direct | contract_name | 3 | high |
 
@@ -359,12 +357,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| optimism | [`0x856031...3a01d2`](./contracts/optimism-10/0x85603119c938750dfb5904f8a501b64f3f3a01d2/) | AddressRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x5b4140...9556a8`](./contracts/optimism-10/0x5b414093362a7c768273d5f0405744b8c09556a8/) | Airdrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x2dad3a...7938f8`](./contracts/optimism-10/0x2dad3a13ef0c6366220f989157009e501e7938f8/) | EXTRA | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x2dad3a...7938f8`](./contracts/base-8453/0x2dad3a13ef0c6366220f989157009e501e7938f8/) | EXTRAoft | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x0c9d44...616ef4`](./contracts/optimism-10/0x0c9d44f5a573f6cfc9e8264a5ca72a1184616ef4/) | EXTRAoftProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0xb7d861...1d322a`](./contracts/optimism-10/0xb7d8613728efcfbb18bcd63deec06f64441d322a/) | RewardDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x269270...6b77b8`](./contracts/optimism-10/0x2692709313de4dc1ca15fe77a385c9eb2b6b77b8/) | RewardsDistributorV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x155620...25729b`](./contracts/base-8453/0x155620a2e6a9392c754b73296d9655061525729b/) | VaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0xf9cfb8...957055`](./contracts/optimism-10/0xf9cfb8a62f50e10adde5aa888b44cf01c5957055/) | VeloPositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x292a1f...5f5e66`](./contracts/optimism-10/0x292a1f318b1ab0c7701f30f42603adc7f95f5e66/) | VeToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
@@ -382,8 +383,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=8
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=3
 
 Zero-match audit list:
 

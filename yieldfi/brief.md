@@ -1,23 +1,21 @@
 # Agentic Audit Brief: YieldFi
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 64.1% over 90 days
-
 ## Project Overview
 
 - Project: YieldFi (`yieldfi`)
 - Website: [https://yield.fi/](https://yield.fi/)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-25T18:38:18.742Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:19.425Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, bsc, ethereum, linea, optimism, plasma, sonic
-- Contract surface: 23 unique implementations (113 raw deployments)
-- DeFi Llama TVL: $12,104,433.96
+- Contract surface: 22 unique implementations (112 raw deployments)
+- DeFi Llama TVL: $12,046,272.43
 - On-chain TVL (included contracts): $43,740,151.44
 - TVL by chain: Ethereum $43,234,618.81 | Arbitrum $234,615.62 | Base $206,581.08 | Bsc $24,879.92 | Avalanche $23,461.23 | Optimism $13,619.76 | Sonic $2,357.90 | Linea $17.11
 
 ## Project Description
 
-YieldFi is a yield aggregator that optimizes returns across multiple chains by pooling user deposits into vaults and issuing yield-bearing tokens. It supports cross-chain operations through bridges and manages governance via dedicated manager contracts.
+YieldFi is an active Yield Aggregator and capital-markets / asset-management platform focused on tokenized yield-vault issuance and distribution. Its current V3 positioning includes curated yield products, institutionally managed vaults, proof-of-reserves and exposure reporting, transparency metrics, and migration support for legacy vault products.
 
 ### Architecture
 
@@ -25,26 +23,25 @@ V1 and V2 families share governance infrastructure through Manager contracts and
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 12/18 (66.7%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 12/17 (70.6%)
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 3
 - Unverified implementations: 5
-- Unique implementations: 23
-- Raw deployments: 113
-- Audits discovered: 7
+- Unique implementations: 22
+- Raw deployments: 112
+- Audits discovered: 6
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): $16,264,753.96
 - Latest audit: 2026-01 (fresh)
-- Staleness: 2 fresh, 2 aging, 1 stale, 2 unknown
-- Tier 1 coverage: 66.7% (Cyfrin, Sherlock)
-- Note: This protocol is classified as [declining]. ASD of $16,264,753.96 represents exposure in a protocol with declining activity.
+- Staleness: 1 fresh, 3 aging, 1 stale, 1 unknown
+- Tier 1 coverage: 70.6% (Cyfrin, Sherlock)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Cyfrin | Tier 1 | 11 | 61.1% | 2025-06 |
-| Sherlock | Tier 1 | 3 | 16.7% | 2026-01 |
+| Cyfrin | Tier 1 | 11 | 64.7% | 2025-06 |
+| Sherlock | Tier 1 | 3 | 17.6% | 2026-01 |
 
 ## Contract Surface
 
@@ -63,13 +60,12 @@ V1 and V2 families share governance infrastructure through Manager contracts and
 | SwapHelper | periphery | arbitrum | 3 deployments: arbitrum [`0x20fa2a...affad3`](./contracts/arbitrum-42161/0x20fa2ad95de41777260fba4909a67f46c3affad3/); arbitrum `0xd62311...319939`; arbitrum `0xf41e58...c8cb27` | ✅ Audited |
 | Yield | unknown | ethereum | 2 deployments: ethereum [`0xa52bc2...5df01a`](./contracts/ethereum-1/0xa52bc229c750b35c10d54f23ad3cb6e8155df01a/); ethereum `0xf4ef3b...78427b` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | SToken | token | ethereum | 9 deployments: ethereum [`0x20b8f4...f4dc0d`](./contracts/ethereum-1/0x20b8f4a172e3a0bdb96c89d49629e83f73f4dc0d/); ethereum `0x4f8e14...cb95f2`; ethereum `0x9f4a9e...2cedcc`; optimism `0x4ca1da...92c87b`; optimism `0xc35eaf...67dfed`; base `0x4ca1da...92c87b`; base `0x8f88d7...083e2b`; arbitrum `0x4ca1da...92c87b`; arbitrum `0x8f88d7...083e2b` | ⚠️ Unaudited |
 | vyToken | token | ethereum | 3 deployments: ethereum [`0x1e2a56...749e1b`](./contracts/ethereum-1/0x1e2a5622178f93efd4349e2eb3dbdf2761749e1b/); ethereum `0x2e3c5e...0d92fc`; ethereum `0x307311...a5c9f9` | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | ethereum | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
 | STokenL2 | token | optimism | [`0x8f88d7...083e2b`](./contracts/optimism-10/0x8f88d71b25d385a388704cf32058e194b4083e2b/) | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | ethereum | 3 deployments: ethereum [`0x24bc41...cb6e01`](./contracts/ethereum-1/0x24bc4128942786f7cff18af3f71041d003cb6e01/); ethereum `0xaec8c1...337026`; sonic `0xf4f447...ee55de` | ⚠️ Unaudited |
 
@@ -107,11 +103,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [**Sherlock Audit Report**](https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2026.02.03%20-%20Final%20-%20YieldFi%20Collaborative%20Audit%20Report%201770139561.pdf) | Sherlock | Contest | 2026-01 | fresh | Direct | contract_name | 27 | high |
-| [**Cyfrin Audit Report**](https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2025-06-17-cyfrin-yieldfi-pr19-vytoken-v2.2.pdf) | Cyfrin | Audit | 2025-06 | fresh | Direct | contract_name | 55 | high |
+| [**Cyfrin Audit Report**](https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2025-06-17-cyfrin-yieldfi-pr19-vytoken-v2.2.pdf) | Cyfrin | Audit | 2025-06 | aging | Direct | contract_name | 55 | high |
 | [**Cyfrin Audit Report**](https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2025-04-24-cyfrin-yieldfi-v2.0.pdf) | Cyfrin | Audit | 2025-04 | aging | Direct | contract_name | 77 | high |
 | [**Halborn Audit Report**](https://www.halborn.com/audits/yieldfi) | Halborn | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [**Cantina Solo Audit Report**](https://cantina.xyz/portfolio/d13d31e4-72c7-404c-b281-f6ccdd3c534f) | Spearbit | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
-| [.gitkeep](https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/.gitkeep) | Sherlock | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
 | [2023-03-07-linkpool_liquid_sd_index_pool.pdf](https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2023-03-07-linkpool_liquid_sd_index_pool.pdf) | Cyfrin | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -131,7 +126,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 13 |
-| upstream | 2 |
+| upstream | 1 |
 | standard_library | 2 |
 | needs_review | 6 |
 
@@ -139,7 +134,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=3
 - Match method counts: extraction_exact=159
@@ -148,7 +143,6 @@ Zero-match audit list:
 
 - [2036] **Halborn Audit Report**
 - [2037] **Cantina Solo Audit Report**
-- [2038] .gitkeep
 - [2039] 2023-03-07-linkpool_liquid_sd_index_pool.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

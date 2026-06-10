@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "swapscanner",
-  "generated_at": "2026-05-23T20:21:33.867Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.896Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "swapscanner",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4683395,
-    "tvl_usd": 4683395,
+    "dl_tvl_usd": 4383473,
+    "tvl_usd": 4383473,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Swapscanner is a DeFi protocol on Klaytn offering a decentralized exchange and liquid staking services, enabling users to trade tokens and stake assets while receiving liquid staking derivatives.",
-    "relationship_narrative": "The protocol consists of a single product family with two core contracts that likely represent the staking pool and the derivative token, sharing infrastructure for liquid staking operations.",
+    "project_purpose": "Swapscanner is a DEX aggregator on Kaia, formerly Klaytn, focused on routing and price optimization for token swaps. Any staking or wrapping functionality should be treated as separate site features unless official documentation verifies liquid-staking derivative issuance.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

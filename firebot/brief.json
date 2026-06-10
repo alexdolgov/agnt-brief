@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "firebot",
-  "generated_at": "2026-05-24T13:50:56.909Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:03.999Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "firebot",
@@ -26,16 +26,16 @@
     "total_addresses": 65,
     "unique_implementations": 29,
     "total_deployments": 65,
-    "audited_contracts": 2,
-    "unaudited_contracts": 19,
-    "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 19,
+    "audited_contracts": 1,
+    "unaudited_contracts": 20,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 20,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 8,
-    "coverage_pct": 9.5,
-    "total_audits": 3,
-    "scoreable_audits": 2,
-    "dl_tvl_usd": 2217222.81822,
+    "coverage_pct": 4.8,
+    "total_audits": 2,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 2264926.05172,
     "tvl_usd": 3673167.120444524,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -53,14 +53,19 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 3,
+      "stale": 2,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "FireBot is a yield farming protocol on Polygon that allows users to stake tokens and earn rewards through vaults and farms. It features a native token, FireBotToken, and integrates with Uniswap V2 liquidity pairs.",
+    "project_purpose": "FireBot is a Polygon-based DeFi project centered on FBX/FireBot token utilities, Fire Vaults staking, swapping, and deflationary-token mechanics. Public positioning should not overstate it as primarily a yield-farming protocol or infer unsupported Uniswap V2 pair staking behavior without contract- or documentation-level evidence.",
     "relationship_narrative": "The FireVaultFBXV2 contract likely manages user deposits and interacts with the Farm contract to distribute rewards. The UniswapV2Pair contracts provide liquidity for the FireBotToken, enabling trading and possibly serving as staking targets.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 29,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -123,8 +128,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2865",
-        "audit-2867"
+        "audit-2865"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -486,7 +490,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -495,7 +499,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -504,7 +508,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -513,7 +517,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -522,7 +526,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -531,7 +535,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -540,7 +544,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -549,7 +553,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -558,7 +562,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -567,7 +571,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -576,7 +580,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -585,7 +589,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -594,7 +598,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -603,7 +607,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -612,7 +616,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -621,7 +625,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -630,7 +634,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -639,16 +643,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2867"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1341,38 +1343,14 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2867,
-      "audit_key": "audit-2867",
-      "report_name": "Rendered PDF capture",
-      "report_url": "https://firebot.gg/audits/UnblockLabs_FireBot_2022.pdf",
-      "auditor": "RedTiger",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "ElementalParticles",
-        "FireVaultFBXV2"
-      ],
-      "matched_contracts": 19,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
       "auditor": "RedTiger",
       "tier": 2,
-      "contracts_covered": 2,
-      "coverage_pct": 9.5,
+      "contracts_covered": 1,
+      "coverage_pct": 4.8,
       "latest_audit": "2023-10"
     }
   ],
@@ -1480,6 +1458,16 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
+      "address": "0x09083fa4a172e52df84808edc31fa167e591c049",
+      "name": "FireVaultFBXV2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
       "address": "0x4d979fed1defc256c02a97687840c0afb7022594",
       "name": "FireVaultFBXV3",
       "role": "core_logic",
@@ -1556,10 +1544,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 20
+      "extraction_exact": 1
     },
     "extraction_confidence_counts": {
-      "high": 2
+      "high": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

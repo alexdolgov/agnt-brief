@@ -5,17 +5,17 @@
 - Project: Privacy Cash (`privacy-cash`)
 - Website: [https://privacycash.org/](https://privacycash.org/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-24T10:45:34.995Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:09.374Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 6 unique implementations (12 raw deployments)
-- DeFi Llama TVL: $2,618,743.94
+- DeFi Llama TVL: $2,482,541.16
 - On-chain TVL (included contracts): $48,088.21
 - TVL by chain: Base $48,088.21
 
 ## Project Description
 
-Privacy Cash is a privacy-focused protocol on Base that enables users to deposit ETH or ERC-20 tokens into pools to obfuscate transaction trails, using zero-knowledge proofs or similar techniques to preserve anonymity.
+Privacy Cash is a privacy-focused protocol spanning Solana and Base that enables users to deposit supported assets including SOL, ETH, and USDC into privacy pools to obfuscate transaction trails, using zero-knowledge proofs or similar techniques to preserve anonymity.
 
 ### Architecture
 

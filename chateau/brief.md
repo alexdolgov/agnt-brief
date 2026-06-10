@@ -5,17 +5,17 @@
 - Project: CHATEAU (`chateau`)
 - Website: [https://www.chateau.capital](https://www.chateau.capital)
 - Lifecycle: active (Tier 0, 17.1% below peak)
-- Generated: 2026-05-25T07:19:27.137Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:01.394Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: hyperliquid, plasma
 - Contract surface: 5 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $1,036,447.88
+- DeFi Llama TVL: $1,036,282.93
 - On-chain TVL (included contracts): $19,062.45
 - TVL by chain: Plasma $19,062.45
 
 ## Project Description
 
-CHATEAU is a real-world asset (RWA) protocol that issues the chUSD stablecoin backed by real-world assets and offers staking derivatives (StakedchUSDOFT, StakedchUSDV2) to earn yield on chUSD deposits.
+CHATEAU is an RWA/institutional-asset DeFi protocol centered on chUSD, an overcollateralized synthetic dollar/stable-value asset. Its staked chUSD products, including StakedchUSDOFT and StakedchUSDV2 where applicable, represent vault-style exposure to off-chain institutional/private credit strategies rather than a simple stablecoin backed directly by real-world assets.
 
 ### Architecture
 
@@ -48,7 +48,7 @@ The two chUSD instances likely represent the same stablecoin across different ch
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| chUSD | unknown | plasma | 2 deployments: hyperliquid `0x222222...abea02`; plasma [`0x222222...f5fdc1`](./contracts/plasma-9745/0x22222215d4edc5510d23d0886133e7ece7f5fdc1/) | ✅ Audited |
+| chUSD | token | plasma | 2 deployments: hyperliquid `0x222222...abea02`; plasma [`0x222222...f5fdc1`](./contracts/plasma-9745/0x22222215d4edc5510d23d0886133e7ece7f5fdc1/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 

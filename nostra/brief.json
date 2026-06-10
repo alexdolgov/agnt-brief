@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nostra",
-  "generated_at": "2026-05-23T09:49:25.336Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:08.724Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 7026505,
-    "tvl_usd": 7026505,
+    "dl_tvl_usd": 6815331,
+    "tvl_usd": 6815331,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Nostra is a DeFi protocol on StarkNet offering lending, liquid staking, and decentralized exchange services. It enables users to supply and borrow assets, stake STRK for a liquid token, and provide liquidity in pools.",
-    "relationship_narrative": "The product families share the Nostra brand and likely integrate through common token standards and infrastructure on StarkNet, though no explicit contract dependencies are provided.",
+    "project_purpose": "Nostra is a DeFi protocol on Starknet offering lending, borrowing, swaps, liquidity pools, and bridging. It enables users to supply and borrow assets, swap tokens, provide liquidity, and bridge assets within the Starknet ecosystem.",
+    "relationship_narrative": null,
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

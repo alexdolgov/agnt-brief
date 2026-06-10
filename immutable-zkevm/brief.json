@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "immutable-zkevm",
-  "generated_at": "2026-05-22T09:13:17.265Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:06.123Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "immutable-zkevm",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 55.08810185655925
   },
   "summary": {
-    "total_contracts": 11,
-    "total_addresses": 12,
-    "unique_implementations": 11,
-    "total_deployments": 12,
+    "total_contracts": 9,
+    "total_addresses": 9,
+    "unique_implementations": 9,
+    "total_deployments": 9,
     "audited_contracts": 2,
-    "unaudited_contracts": 9,
+    "unaudited_contracts": 7,
     "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 9,
+    "contracts_verified_unaudited": 7,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 18.2,
-    "total_audits": 5,
+    "coverage_pct": 22.2,
+    "total_audits": 4,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 29239192.64876,
-    "tvl_usd": 29239192.64876,
+    "dl_tvl_usd": 28544432.06595,
+    "tvl_usd": 28544432.06595,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -52,13 +52,18 @@
       "fresh": 0,
       "aging": 1,
       "stale": 1,
-      "unknown": 3
+      "unknown": 2
     }
   },
   "topography": {
-    "project_purpose": "Immutable zkEVM is a Layer 2 scaling solution for Ethereum focused on gaming and NFTs, providing a bridge for ERC-20 tokens and NFT assets between Ethereum and the Immutable zkEVM chain.",
+    "project_purpose": "Immutable zkEVM is Immutable's EVM-compatible gaming chain and Layer 2 infrastructure for Ethereum, designed to support blockchain games and related products in the Immutable ecosystem such as Passport and Immutable Chain. It should not be described as a Doodles-related bridge or NFT-collection project unless independently evidenced.",
     "relationship_narrative": "The RootERC20BridgeFlowRate and RootAxelarBridgeAdaptor contracts handle token bridging, while GnosisSafe manages governance. Doodles represents an NFT collection deployed on the chain, leveraging the bridge for cross-chain functionality.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 9,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -97,37 +102,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x8a90cab2b38dba80c64b7734e58ee1db38b8992e",
-      "name": "Doodles",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Immutable zkEVM",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Doodles",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8a90cab2b38dba80c64b7734e58ee1db38b8992e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -378,46 +352,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5d663edd9c884b2398634d68ec1cca083957b91c",
-      "name": "SpaceDoodles",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SpaceDoodles",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5d663edd9c884b2398634d68ec1cca083957b91c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x620b70123fb810f6c653da7644b5dd0b6312e4d8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
     }
   ],
   "audits": [
@@ -459,27 +393,6 @@
       "audit_type": "audit",
       "freshness": "stale",
       "date": "2023-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1816,
-      "audit_key": "audit-1816",
-      "report_name": "202309_audit_background.md",
-      "report_url": "https://github.com/immutable/wallet-contracts/blob/main/audits/202309_audit_background.md",
-      "auditor": "Unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -540,21 +453,11 @@
       "auditor": "Perimeter",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 18.2,
+      "coverage_pct": 22.2,
       "latest_audit": "2024-09"
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x8a90cab2b38dba80c64b7734e58ee1db38b8992e",
-      "name": "Doodles",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -574,20 +477,10 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5d663edd9c884b2398634d68ec1cca083957b91c",
-      "name": "SpaceDoodles",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 5,
+    "native": 3,
     "upstream": 0,
     "standard_library": 6,
     "needs_review": 0
@@ -605,10 +498,6 @@
       {
         "audit_id": 1815,
         "report_name": "202309_Halborn_Final.pdf"
-      },
-      {
-        "audit_id": 1816,
-        "report_name": "202309_audit_background.md"
       },
       {
         "audit_id": 1817,

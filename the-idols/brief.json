@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "the-idols",
-  "generated_at": "2026-05-31T10:59:09.639Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:17.477Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "the-idols",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "The Idols is a reserve currency protocol on Ethereum that issues the VirtueToken, manages idol NFTs, and provides staking rewards. It aims to create a decentralized reserve asset backed by a basket of tokens and NFTs.",
+    "project_purpose": "The Idols is an Ethereum NFT collection and membership community centered on 10,000 Idols NFTs, VirtueToken, and associated marketplace and rewards/staking mechanics. Current evidence supports NFT ownership, staked ETH/NFT rewards, VirtueToken, and protocol token/NFT holder rewards, but not a basket-backed reserve asset model.",
     "relationship_narrative": "All contracts are deployed by the same address and form a single integrated system. VirtueToken serves as the reserve asset, IdolMain manages idol NFTs, IdolMarketplace enables trading, and VirtueEthRewards/RewardsCollector handle staking and reward distribution.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 17,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

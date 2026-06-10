@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "grvt",
-  "generated_at": "2026-05-31T08:17:51.134Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:04.407Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "grvt",
     "tier": 0,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Grvt is a DeFi protocol on Ethereum that provides a bridge for cross-chain asset transfers and a derivatives platform for perpetual trading. It uses treasury vaults to manage bridged assets and integrates with lending strategies like Aave to generate yield.",
+    "project_purpose": "Grvt is a zero-knowledge/privacy-focused DEX or exchange. The indexed Ethereum TVL and contract surface in this record primarily reflects Grvt's bridge, treasury vault, and related strategy infrastructure rather than verified perpetual trading contracts.",
     "relationship_narrative": "The Grvt Bridge family relies on the NativeBridgeGateway to handle cross-chain messages and the GRVTL1TreasuryVault to secure assets. The AaveV3Strategy is used as a supporting contract to deploy vault funds into Aave for yield generation.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 7,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

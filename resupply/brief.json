@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "resupply",
-  "generated_at": "2026-05-31T14:54:10.984Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
+  "generated_at": "2026-06-10T20:59:11.325Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "resupply",
@@ -58,7 +58,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Resupply is an Ethereum DeFi protocol centered on reUSD, a stablecoin-backed lending and rehypothecation system. Users can deposit supported collateral such as crvUSD- and frxUSD-related assets into markets to borrow reUSD, while the protocol routes collateral and liquidity through operators and related lending infrastructure. The protocol also includes governance/staking, insurance pool, liquidation/redemption, treasury and registry components that coordinate markets, risk management and system accounting.",
     "relationship_narrative": null,
     "product_family_count": 1
   },

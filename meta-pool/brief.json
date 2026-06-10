@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "meta-pool",
-  "generated_at": "2026-05-31T09:58:06.369Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:07.481Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "meta-pool",
@@ -50,18 +50,23 @@
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2024-06",
-    "audit_freshness": "aging",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 1,
-      "stale": 2,
+      "aging": 0,
+      "stale": 3,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Meta Pool is a liquid staking and restaking protocol operating on Ethereum and Aurora. It allows users to stake assets and receive liquid tokens representing their staked positions, which can be used across DeFi while earning staking rewards.",
+    "project_purpose": "Meta Pool is a multi-chain liquid staking DAO and product suite with validator infrastructure, governance, and incubator activity. The protocol has major activity on NEAR and Ethereum, with additional products on Solana, Story, Aurora, and other supported networks. Any analysis limited to Ethereum and Aurora contracts should be presented as partial EVM coverage, not as protocol-wide coverage.",
     "relationship_narrative": "The Meta Pool family provides shared governance (MpDaoToken, VotingPowerV1) and proxy infrastructure (ProxyAdmin, GnosisSafeProxy) used across all product lines. Meta Pool ETH and Meta Pool Near are chain-specific extensions that rely on the core liquid staking logic and token standards from the main family.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 41,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1597,7 +1602,7 @@
       "report_url": "https://github.com/Meta-Pool/metapool-shortcut/blob/main/audit/2024-06%20Blocksec%20Audit.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,

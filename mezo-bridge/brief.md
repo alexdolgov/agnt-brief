@@ -7,17 +7,17 @@
 - Project: Mezo Bridge (`mezo-bridge`)
 - Website: [https://mezo.org](https://mezo.org)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T09:57:09.582Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:07.703Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 6 unique implementations (6 raw deployments)
+- Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $21,293,979.43
-- On-chain TVL (included contracts): $203,885,920.80
-- TVL by chain: Ethereum $203,885,920.80
+- On-chain TVL (included contracts): $2,629,300.40
+- TVL by chain: Ethereum $2,629,300.40
 
 ## Project Description
 
-Mezo Bridge is a cross-chain bridging protocol that enables users to transfer Bitcoin and other assets between Ethereum and the Mezo network. It provides deposit, redemption, and staking mechanisms, leveraging infrastructure like Wormhole for cross-chain messaging and tBTC for Bitcoin custody.
+Mezo Bridge is the bridge/application surface associated with Mezo for moving supported assets between Ethereum and the Mezo network. Its owned contract surface should be limited to verified Mezo bridge, lockbox, borrowing, MUSD, or vault contracts, and should exclude upstream asset tokens, external vaults, and other contracts not evidenced as Mezo-controlled.
 
 ### Architecture
 
@@ -25,19 +25,19 @@ The Mezo Bridge family integrates multiple components: MezoBridge and Portal han
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/6 (0.0%)
-- Verified + Unaudited implementations: 6
+- Verified implementations audited: 0/4 (0.0%)
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 6
-- Raw deployments: 6
+- Unique implementations: 4
+- Raw deployments: 4
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $203,885,920.80
+- ASD (verified + unaudited TVL): $2,629,300.40
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $203,885,920.80 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $2,629,300.40 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,13 +49,11 @@ The Mezo Bridge family integrates multiple components: MezoBridge and Portal han
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| THUSDToken | token | ethereum | [`0xcfc5bd...8d29cf`](./contracts/ethereum-1/0xcfc5bd99915aaa815401c5a41a927ab7a38d29cf/) | ⚠️ Unaudited |
 | SolvBTCYieldTokenV3_1 | token | ethereum | [`0xd9d920...159def`](./contracts/ethereum-1/0xd9d920aa40f578ab794426f5c90f6c731d159def/) | ⚠️ Unaudited |
-| Yearn V3 Vault | core_logic | ethereum | [`0x8db235...864dde`](./contracts/ethereum-1/0x8db2350d78abc13f5673a411d4700bcf87864dde/) | ⚠️ Unaudited |
 | MezoBridge | operational_periphery | ethereum | [`0xf6680e...e6908c`](./contracts/ethereum-1/0xf6680ea3b480ca2b72d96ea13ccaf2cfd8e6908c/) | ⚠️ Unaudited |
 | Portal | unknown | ethereum | [`0xab13b8...5b8a39`](./contracts/ethereum-1/0xab13b8eecf5aa2460841d75da5d5d861fd5b8a39/) | ⚠️ Unaudited |
 | T | unknown | ethereum | [`0xcdf702...94bee5`](./contracts/ethereum-1/0xcdf7028ceab81fa0c6971208e83fa7872994bee5/) | ⚠️ Unaudited |
@@ -89,15 +87,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xcfc5bd...8d29cf`](./contracts/ethereum-1/0xcfc5bd99915aaa815401c5a41a927ab7a38d29cf/) | THUSDToken | token | $200,791,495.00 | Verified native implementation with $200,791,495.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xcdf702...94bee5`](./contracts/ethereum-1/0xcdf7028ceab81fa0c6971208e83fa7872994bee5/) | T | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
-| upstream | 1 |
+| native | 1 |
+| upstream | 0 |
 | standard_library | 3 |
 | needs_review | 0 |
 

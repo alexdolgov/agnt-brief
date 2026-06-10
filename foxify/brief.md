@@ -1,14 +1,12 @@
 # Agentic Audit Brief: foxify
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: foxify (`foxify`)
 - Website: [https://www.foxify.trade/](https://www.foxify.trade/)
-- Lifecycle: unknown (Tier 0, 99.8% below peak)
-- Generated: 2026-05-31T08:04:36.429Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, 99.8% below peak)
+- Generated: 2026-06-10T20:59:04.058Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, sonic
 - Contract surface: 5 unique implementations (10 raw deployments)
 - DeFi Llama TVL: $3,570,035.38
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Foxify is a decentralized derivatives protocol enabling users to trade options and perpetuals with leverage. It uses vaults for liquidity and risk management, and controllers to manage trading parameters.
+Foxify is a funded-account/proprietary trading platform for leveraged perpetual trading. Its public product focuses on on-chain and partner-venue perpetual trading, funded trading accounts, and related FOX and ebFOX staking, membership, and rewards features. Current public sources do not evidence an options-trading product, so options should not be described as part of the protocol unless separately verified.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ Vaults hold user funds and are managed by Controllers, which set trading rules. 
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $72,645.21 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

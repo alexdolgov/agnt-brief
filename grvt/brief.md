@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Grvt
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 44.4% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 44.4% over 90 days
 
 ## Project Overview
 
 - Project: Grvt (`grvt`)
 - Website: [https://grvt.io/?ref=WCDISXW](https://grvt.io/?ref=WCDISXW)
-- Lifecycle: unknown (Tier 0, 52.2% below peak)
-- Generated: 2026-05-31T08:17:51.134Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 52.2% below peak)
+- Generated: 2026-06-10T20:59:04.407Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 7 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $55,387,476.00
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Grvt is a DeFi protocol on Ethereum that provides a bridge for cross-chain asset transfers and a derivatives platform for perpetual trading. It uses treasury vaults to manage bridged assets and integrates with lending strategies like Aave to generate yield.
+Grvt is a zero-knowledge/privacy-focused DEX or exchange. The indexed Ethereum TVL and contract surface in this record primarily reflects Grvt's bridge, treasury vault, and related strategy infrastructure rather than verified perpetual trading contracts.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The Grvt Bridge family relies on the NativeBridgeGateway to handle cross-chain m
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

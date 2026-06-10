@@ -1,23 +1,23 @@
 # Agentic Audit Brief: SpookySwap
 
-⚠️ Lifecycle status: DEAD - TVL changed 13.7% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 13.7% over 90 days
 
 ## Project Overview
 
 - Project: SpookySwap (`spookyswap`)
 - Website: [https://spooky.fi](https://spooky.fi)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-25T16:40:56.640Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:16.411Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: fantom, sonic
-- Contract surface: 137 unique implementations (171 raw deployments)
-- DeFi Llama TVL: $1,386,988.00
+- Contract surface: 136 unique implementations (170 raw deployments)
+- DeFi Llama TVL: $1,350,469.00
 - On-chain TVL (included contracts): $841.67
 - TVL by chain: Sonic $841.67
 
 ## Project Description
 
-SpookySwap is a decentralized exchange (DEX) and DeFi protocol operating on Fantom and Sonic chains. It provides automated market making (AMM) via Uniswap V2 and V3 forks, token swaps, liquidity provision, yield farming, and a launchpad. The protocol also includes bridging, perpetuals, and various token adapters for cross-chain and synthetic asset support.
+SpookySwap is a decentralized exchange and DeFi hub with swaps, AMM liquidity provision, farming, and launchpad-related functionality. Bridge or token-related contracts should be distinguished from SpookySwap-owned protocol contracts where they are third-party infrastructure or external dependencies.
 
 ### Architecture
 
@@ -25,19 +25,19 @@ The Sonic Mainnet family provides the core DEX functionality, relying on token c
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/37 (0.0%)
-- Verified + Unaudited implementations: 36
+- Verified implementations audited: 0/36 (0.0%)
+- Verified + Unaudited implementations: 35
 - Verified by bytecode match: 1
 - Unverified implementations: 100
-- Unique implementations: 137
-- Raw deployments: 171
+- Unique implementations: 136
+- Raw deployments: 170
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $841.67
 - Latest audit: 2021-06 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $841.67 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $841.67 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,7 +49,7 @@ The Sonic Mainnet family provides the core DEX functionality, relying on token c
 
 - None
 
-### ⚠️ Verified + Unaudited (36)
+### ⚠️ Verified + Unaudited (35)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -68,7 +68,6 @@ The Sonic Mainnet family provides the core DEX functionality, relying on token c
 | NonfungiblePositionManager | governance | sonic | 2 deployments: sonic [`0x839216...db3b55`](./contracts/sonic-146/0x8392166e9e45fb568d84c9ab3cd7566977db3b55/); sonic `0xf807ac...b17fac` | ⚠️ Unaudited |
 | NonfungibleTokenPositionDescriptor | token | sonic | [`0x7d0776...53d32d`](./contracts/sonic-146/0x7d0776b117c87f4bc174870ec19719972853d32d/) | ⚠️ Unaudited |
 | OracleRouterChainlink | operational_periphery | sonic | [`0xfb0497...5a32e8`](./contracts/sonic-146/0xfb04979bda6546f114afcff2a78d35446d5a32e8/) | ⚠️ Unaudited |
-| Permit2 | unknown | sonic | [`0x981ef1...162723`](./contracts/sonic-146/0x981ef1f1644715ae797434de4c0aad16e6162723/) | ⚠️ Unaudited |
 | PositionsManager | governance | sonic | [`0x31b68b...ef0303`](./contracts/sonic-146/0x31b68b75a817d74fad9a9cb04b63ab9b61ef0303/) | ⚠️ Unaudited |
 | PrizeToken | token | sonic | [`0x78d976...d94c69`](./contracts/sonic-146/0x78d97679b6582eb0adfd2b1b52a7dced76d94c69/) | ⚠️ Unaudited |
 | Quoter | periphery | sonic | 3 deployments: sonic [`0x593856...d1aa68`](./contracts/sonic-146/0x593856bbfd6aaf0b714277c0bf06307900d1aa68/); sonic `0x746c97...7f78e1`; sonic `0xddafeb...9c6a47` | ⚠️ Unaudited |
@@ -243,7 +242,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 41 |
 | upstream | 11 |
-| standard_library | 9 |
+| standard_library | 8 |
 | needs_review | 76 |
 
 ## Scope Matching Notes

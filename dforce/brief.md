@@ -7,17 +7,17 @@
 - Project: dForce (`dforce`)
 - Website: [https://dforce.network/](https://dforce.network/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T07:52:57.986Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.900Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, bsc, ethereum, kava, optimism, polygon
-- Contract surface: 450 unique implementations (1011 raw deployments)
+- Contract surface: 449 unique implementations (1004 raw deployments)
 - DeFi Llama TVL: $12,480,361.00
 - On-chain TVL (included contracts): $3,605,459.70
 - TVL by chain: Ethereum $2,823,167.08 | Bsc $572,234.41 | Arbitrum $156,970.71 | Polygon $31,932.33 | Optimism $21,155.16
 
 ## Project Description
 
-dForce is a decentralized finance protocol offering lending, borrowing, and yield aggregation services across multiple blockchains. It provides users with interest-bearing tokens (iTokens) for deposits, stablecoin minting, and governance through its DF token.
+dForce is a multi-chain DeFi protocol family spanning lending and borrowing markets, stablecoin-related products, yield and liquidity services, and trading/bridge components governed by the DF token. Current parent-level scope should be explicit about whether it includes child/product-family surfaces such as Unitus and MaxShot, as well as deployments beyond the legacy dForce lending surface including Conflux, Base, Plasma, and other supported chains. If using parent-level DefiLlama data as ground truth, the brief should also reflect dForce's current DeFAI/AI-agent positioning rather than describing it only as legacy lending, borrowing, and yield aggregation.
 
 ### Architecture
 
@@ -25,38 +25,31 @@ The dForce and dForce Lending families share similar lending logic and token sta
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 4/110 (3.6%)
-- Verified + Unaudited implementations: 95
+- Verified implementations audited: 0/109 (0.0%)
+- Verified + Unaudited implementations: 98
 - Verified by bytecode match: 11
 - Unverified implementations: 340
-- Unique implementations: 450
-- Raw deployments: 1011
-- Audits discovered: 3
-- Scoreable audits (matched contracts): 1
+- Unique implementations: 449
+- Raw deployments: 1004
+- Audits discovered: 0
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $3,605,459.70
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $3,605,459.70 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| unknown | Tier 2 | 4 | 3.6% | n/a |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (4)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| DFEngine | unknown | ethereum | [`0x8dc753...b60202`](./contracts/ethereum-1/0x8dc753d30b9f9f86dac3380e37d5bc03d6b60202/) | ✅ Audited |
-| DFPool | core_logic | ethereum | [`0x786bf5...23d895`](./contracts/ethereum-1/0x786bf554473f9ab733fd683c528212492a23d895/) | ✅ Audited |
-| DFProtocol | unknown | ethereum | [`0x5843f1...d1a1e8`](./contracts/ethereum-1/0x5843f1ccc5baa448528eb0e8bc567cda7ed1a1e8/) | ✅ Audited |
-| DFProtocolView | unknown | ethereum | 2 deployments: ethereum [`0x097dd2...f3396f`](./contracts/ethereum-1/0x097dd22173f0e382dae42baaeb9bdbc9fdf3396f/); ethereum `0x1351e1...6bf55e` | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (95)
+### ⚠️ Verified + Unaudited (98)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -68,7 +61,6 @@ The dForce and dForce Lending families share similar lending logic and token sta
 | YieldVault | core_logic | arbitrum | 2 deployments: arbitrum [`0xce0f05...39b880`](./contracts/arbitrum-42161/0xce0f05f19845cde36058ccfb53c755ab8739b880/); arbitrum `0xd507d9...f59cfb` | ⚠️ Unaudited |
 | Unipool | core_logic | ethereum | 8 deployments: ethereum [`0x308777...2fe874`](./contracts/ethereum-1/0x308777ddec61f5000d8394626d55dbb0312fe874/); ethereum `0x324eeb...8538df`; ethereum `0x5e84fc...dc41c1`; ethereum `0xa94e20...600c48`; ethereum `0xb71def...3fd3b5`; ethereum `0xd26033...0ccadf`; ethereum `0xd2fa07...adba8b`; ethereum `0xdc7a84...9a8adc` | ⚠️ Unaudited |
 | AaveHandler | unknown | ethereum | [`0xbb7d75...316953`](./contracts/ethereum-1/0xbb7d75be4dc8eb15ff90422137c0a5bcbd316953/) | ⚠️ Unaudited |
-| AggregatorProxy | unknown | arbitrum | 7 deployments: ethereum `0x5a8b3b...593b01`; optimism `0xc9d1cb...77c627`; optimism `0xd7a23b...6fca38`; polygon `0x7d25d2...a87aea`; arbitrum [`0x0d535c...16bafe`](./contracts/arbitrum-42161/0x0d535ca4c27f0c25a20e2d474ee3e99c1316bafe/); arbitrum `0x40be37...01c499`; avalanche `0x7da545...fd49a5` | ⚠️ Unaudited |
 | BNBLikeInterestModel | unknown | bsc | [`0x9b0fd2...7c7e27`](./contracts/bsc-56/0x9b0fd221c2682a8990b41140a88fdac2f17c7e27/) | ⚠️ Unaudited |
 | CakeLikeInterestModel | unknown | bsc | [`0x0068af...c7bd25`](./contracts/bsc-56/0x0068afa287993c5498d041e25532476665c7bd25/) | ⚠️ Unaudited |
 | CompoundHandler | unknown | bsc | [`0xde399d...42cc5f`](./contracts/bsc-56/0xde399d88ea8331fe2f18306793893a46d142cc5f/) | ⚠️ Unaudited |
@@ -78,9 +70,13 @@ The dForce and dForce Lending families share similar lending logic and token sta
 | CrossChainRouter | adapter | optimism | 3 deployments: ethereum `0x841714...342390`; optimism [`0x1cc2a5...96a02a`](./contracts/optimism-10/0x1cc2a5a1f7c4ea9c29be62a58a5591e82f96a02a/); arbitrum `0x2ca083...af271e` | ⚠️ Unaudited |
 | DFCollateral | unknown | ethereum | [`0x617bed...1f5235`](./contracts/ethereum-1/0x617bed8699f71fe830a50469bd474bc8481f5235/) | ⚠️ Unaudited |
 | DFDispatcher | unknown | ethereum | 3 deployments: ethereum [`0x5738e2...49bec6`](./contracts/ethereum-1/0x5738e22bace1f51b50c140684c02dd604a49bec6/); ethereum `0x6bac35...d868fa`; ethereum `0x6c1101...f30e91` | ⚠️ Unaudited |
+| DFEngine | unknown | ethereum | [`0x8dc753...b60202`](./contracts/ethereum-1/0x8dc753d30b9f9f86dac3380e37d5bc03d6b60202/) | ⚠️ Unaudited |
 | DFEngineV2 | unknown | ethereum | 2 deployments: ethereum [`0x071b49...4613d5`](./contracts/ethereum-1/0x071b49f6a26ffa31f67e833d3dfec500cc4613d5/); ethereum `0x3ea496...2c7d7c` | ⚠️ Unaudited |
 | DFFunds | unknown | ethereum | [`0xd54780...54ce6d`](./contracts/ethereum-1/0xd5478011ccb79189a240a96ec913a8021b54ce6d/) | ⚠️ Unaudited |
 | DForceLendingHandler | core_logic | ethereum | 4 deployments: ethereum [`0x10a49c...219c08`](./contracts/ethereum-1/0x10a49c54babef0d39f5531f0d1a5d98fbe219c08/); ethereum `0x1ec23c...42229f`; ethereum `0xe3412d...5ee5ff`; ethereum `0xeeeaf7...d3aeaa` | ⚠️ Unaudited |
+| DFPool | core_logic | ethereum | [`0x786bf5...23d895`](./contracts/ethereum-1/0x786bf554473f9ab733fd683c528212492a23d895/) | ⚠️ Unaudited |
+| DFProtocol | unknown | ethereum | [`0x5843f1...d1a1e8`](./contracts/ethereum-1/0x5843f1ccc5baa448528eb0e8bc567cda7ed1a1e8/) | ⚠️ Unaudited |
+| DFProtocolView | unknown | ethereum | 2 deployments: ethereum [`0x097dd2...f3396f`](./contracts/ethereum-1/0x097dd22173f0e382dae42baaeb9bdbc9fdf3396f/); ethereum `0x1351e1...6bf55e` | ⚠️ Unaudited |
 | DFProxy | proxy | ethereum | [`0x7fdcda...4f57ba`](./contracts/ethereum-1/0x7fdcdad3b4a67e00d9fd5f22f4fd89a5fa4f57ba/) | ⚠️ Unaudited |
 | DFSetting | unknown | ethereum | [`0x801c4a...48a32e`](./contracts/ethereum-1/0x801c4a04aad875b6aa91a2ec1346393ee348a32e/) | ⚠️ Unaudited |
 | DFStore | unknown | ethereum | [`0xd30d06...91ba8d`](./contracts/ethereum-1/0xd30d06b276867cfa2266542791242ff37c91ba8d/) | ⚠️ Unaudited |
@@ -531,9 +527,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [How_to_integrate_with_USDx.pdf](https://github.com/dforce-network/USDx_1.0/blob/master/docs/How_to_integrate_with_USDx.pdf) | unknown | Audit | n/a | unknown | Direct | contract_name | 5 | medium |
-| [dip001_design.pdf](https://github.com/dforce-network/DIP001/blob/master/docs/dip001_design.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [report.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/report.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -554,9 +547,13 @@ Verified + unaudited native implementations ranked by TVL:
 | optimism | [`0x1cc2a5...96a02a`](./contracts/optimism-10/0x1cc2a5a1f7c4ea9c29be62a58a5591e82f96a02a/) | CrossChainRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x617bed...1f5235`](./contracts/ethereum-1/0x617bed8699f71fe830a50469bd474bc8481f5235/) | DFCollateral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5738e2...49bec6`](./contracts/ethereum-1/0x5738e22bace1f51b50c140684c02dd604a49bec6/) | DFDispatcher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8dc753...b60202`](./contracts/ethereum-1/0x8dc753d30b9f9f86dac3380e37d5bc03d6b60202/) | DFEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x071b49...4613d5`](./contracts/ethereum-1/0x071b49f6a26ffa31f67e833d3dfec500cc4613d5/) | DFEngineV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd54780...54ce6d`](./contracts/ethereum-1/0xd5478011ccb79189a240a96ec913a8021b54ce6d/) | DFFunds | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x10a49c...219c08`](./contracts/ethereum-1/0x10a49c54babef0d39f5531f0d1a5d98fbe219c08/) | DForceLendingHandler | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x786bf5...23d895`](./contracts/ethereum-1/0x786bf554473f9ab733fd683c528212492a23d895/) | DFPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5843f1...d1a1e8`](./contracts/ethereum-1/0x5843f1ccc5baa448528eb0e8bc567cda7ed1a1e8/) | DFProtocol | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x097dd2...f3396f`](./contracts/ethereum-1/0x097dd22173f0e382dae42baaeb9bdbc9fdf3396f/) | DFProtocolView | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7fdcda...4f57ba`](./contracts/ethereum-1/0x7fdcdad3b4a67e00d9fd5f22f4fd89a5fa4f57ba/) | DFProxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x801c4a...48a32e`](./contracts/ethereum-1/0x801c4a04aad875b6aa91a2ec1346393ee348a32e/) | DFSetting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd30d06...91ba8d`](./contracts/ethereum-1/0xd30d06b276867cfa2266542791242ff37c91ba8d/) | DFStore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -624,7 +621,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 210 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 9 |
 | needs_review | 230 |
 
@@ -632,14 +629,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: medium=1
-- Match method counts: extraction_exact=5
-
-Zero-match audit list:
-
-- [6953] dip001_design.pdf
-- [6958] report.md
+- Extraction confidence breakdown: n/a
+- Match method counts: n/a
 
 Fork inheritance lineage and inherited audits are included when available.

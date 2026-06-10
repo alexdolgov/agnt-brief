@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "dtrinity",
-  "generated_at": "2026-05-31T07:53:59.163Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:02.028Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "dtrinity",
@@ -61,9 +61,14 @@
     }
   },
   "topography": {
-    "project_purpose": "dTRINITY is a decentralized lending protocol that enables users to supply and borrow assets across multiple chains. It also features a partially algorithmic stablecoin (dUSD) and liquid staking vaults (dSTAKE) to enhance capital efficiency and yield generation.",
+    "project_purpose": "dTRINITY is a subsidized stablecoin protocol centered on dUSD. Its model uses reserve yield to subsidize stablecoin borrowing and provide yield rebates, with dLEND serving as the native lending-market component and publicly described as an Aave v3 fork. dSTAKE consists of ERC-4626 yield vaults, such as sdUSD vaults that stake or deposit dUSD into dLEND, rather than liquid staking vaults.",
     "relationship_narrative": "The lending markets rely on the oracle family for asset prices and the dUSD stablecoin as a borrowable asset, while dSTAKE vaults may be used as collateral. Governance multisigs and AMO managers control parameters across all families, and proxy contracts provide upgradeability for core logic.",
     "product_family_count": 8
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 209,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

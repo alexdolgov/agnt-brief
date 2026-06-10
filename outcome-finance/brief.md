@@ -1,26 +1,27 @@
 # Agentic Audit Brief: Outcome Finance
 
-⚠️ Lifecycle status: DEAD - TVL changed 60.3% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 60.3% over 90 days
 
 ## Project Overview
 
 - Project: Outcome Finance (`outcome-finance`)
-- Lifecycle: dead (Tier 0, 99.4% below peak)
-- Generated: 2026-05-31T10:09:24.574Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 99.4% below peak)
+- Generated: 2026-06-10T20:59:08.877Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: boba, ethereum, polygon
 - Contract surface: 3 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $1,326,106.28
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Outcome Finance is a synthetic asset protocol that enables users to create and trade long and short tokens representing exposure to various price outcomes. It leverages UMA's optimistic oracle infrastructure to settle contracts based on real-world data.
-
-### Architecture
-
-The LongShortPairCreator and ExpiringMultiPartyCreator contracts are factory contracts that deploy individual synthetic token pairs, sharing the same deployer cluster and likely relying on UMA's oracle and collateral infrastructure. The unnamed contract may serve as a registry or helper for these factories.
+Outcome Finance is listed by DefiLlama as a Synthetics project that helps DAOs generate positive outcomes and uses UMA-related outcome/synthetic infrastructure. The currently recorded contract surface consists primarily of UMA creator/factory contracts, rather than verified trading venues or the deployed collateral-holding outcome contracts.
 
 ## Audit Coverage Summary
 
@@ -36,7 +37,7 @@ The LongShortPairCreator and ExpiringMultiPartyCreator contracts are factory con
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

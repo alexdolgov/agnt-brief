@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zircuit-staking",
-  "generated_at": "2026-05-27T18:01:46.455Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-06-10T20:59:19.535Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "zircuit-staking",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 21.1,
-    "total_audits": 10,
+    "total_audits": 8,
     "scoreable_audits": 3,
     "dl_tvl_usd": 54157008.72464,
     "tvl_usd": 178402442.05493143,
@@ -60,19 +60,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2025-05",
+    "latest_audit_date": "2024-09",
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 7,
+      "aging": 6,
       "stale": 2,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Zircuit Staking is a liquid staking protocol that allows users to stake ETH and receive a liquid staking token (rsETH) representing their staked position. It also includes institutional lending contracts for compliant tokenized strategies and integrates with the Optimism Superchain for cross-chain messaging and bridging.",
+    "project_purpose": "Zircuit Staking is a Zircuit Liquidity Hub and farming/staking rewards program where users deposit supported assets to earn staking or restaking APR, Zircuit points, partner points, and potential airdrop rewards. rsETH may be one supported deposit asset, but the protocol should not be described as issuing rsETH unless supported by primary documentation and contract ownership evidence. Broader Zircuit rollup, bridge, OFT/token, and institutional/compliance lending infrastructure should be separated from the zircuit-staking product scope unless directly proven to be part of its TVL surface.",
     "relationship_narrative": "The Zircuit Staking family issues rsETH, which may be used within the Institutional Contracts for compliant lending strategies. The Ethereum family provides the cross-chain infrastructure that likely supports Zircuit's L2 operations, with governance controlled by the Multisig addresses.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 20,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -738,37 +743,6 @@
   ],
   "audits": [
     {
-      "audit_id": 4697,
-      "audit_key": "audit-4697",
-      "report_name": "index.html",
-      "report_url": "https://certificate.quantstamp.com/full/zircuit-l-2-upgradeable-contract/e765bc0e-0cbc-40f8-9a84-a7cfbd91cae0/index.html",
-      "auditor": "Quantstamp",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 4697,
-          "report_url": "https://certificate.quantstamp.com/full/zircuit-l-2-upgradeable-contract/e765bc0e-0cbc-40f8-9a84-a7cfbd91cae0/index.html"
-        },
-        {
-          "audit_id": 4698,
-          "report_url": "https://certificate.quantstamp.com/full/zircuit-lido-new-proposal/a8c75e25-29ae-4628-ab06-4c3a35123652/index.html"
-        }
-      ]
-    },
-    {
       "audit_id": 4699,
       "audit_key": "audit-4699",
       "report_name": "Zircuit-USDCAdapter_Secure3_Audit_Report-updated.pdf",
@@ -949,27 +923,6 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4707,
-      "audit_key": "audit-4707",
-      "report_name": "ZRC_OFT_final_report_Quantstamp.pdf",
-      "report_url": "https://github.com/zircuit-labs/audit-report/blob/main/ZRC_OFT_final_report_Quantstamp.pdf",
-      "auditor": "Quantstamp",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -1027,10 +980,6 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 4697,
-        "report_name": "index.html"
-      },
-      {
         "audit_id": 4699,
         "report_name": "Zircuit-USDCAdapter_Secure3_Audit_Report-updated.pdf"
       },
@@ -1049,10 +998,6 @@
       {
         "audit_id": 4703,
         "report_name": "Zircuit-ZRC-Token-audit-report-2024-1.1.pdf"
-      },
-      {
-        "audit_id": 4707,
-        "report_name": "ZRC_OFT_final_report_Quantstamp.pdf"
       }
     ],
     "inherited_remapped_matches": []

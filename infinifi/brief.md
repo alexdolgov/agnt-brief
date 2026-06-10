@@ -1,23 +1,23 @@
 # Agentic Audit Brief: infiniFi
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 45.8% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 45.8% over 90 days
 
 ## Project Overview
 
 - Project: infiniFi (`infinifi`)
 - Website: [https://infinifi.xyz?ref=XXKTY1S9](https://infinifi.xyz?ref=XXKTY1S9)
-- Lifecycle: unknown (Tier 0, 49.7% below peak)
-- Generated: 2026-05-31T08:28:21.253Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 49.7% below peak)
+- Generated: 2026-06-10T20:59:06.203Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc, ethereum, plasma
-- Contract surface: 118 unique implementations (208 raw deployments)
+- Contract surface: 114 unique implementations (204 raw deployments)
 - DeFi Llama TVL: $90,227,546.41
 - On-chain TVL (included contracts): $145,943,366.91
 - TVL by chain: Ethereum $145,943,366.91
 
 ## Project Description
 
-InfiniFi is a yield optimization protocol that allows users to deposit assets into vaults and receive locked position tokens representing their yield-bearing positions. It integrates with external protocols like Pendle and 1inch to manage and enhance yields across multiple chains.
+InfiniFi is on-chain banking and yield infrastructure that uses liquid and illiquid assets with transparent fractional reserves. Its contract surface includes receipt, staked, and locked-position tokens, farms and vaults, gateways, controllers, oracles, and operational periphery. Documented integrations include protocols such as AAVE, Pendle, and Ethena; third-party routers and settlement systems should be treated as external dependencies rather than InfiniFi-owned core contracts.
 
 ### Architecture
 
@@ -25,19 +25,19 @@ The Core Contracts family orchestrates user deposits and withdrawals, minting Lo
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/73 (0.0%)
-- Verified + Unaudited implementations: 72
+- Verified implementations audited: 0/69 (0.0%)
+- Verified + Unaudited implementations: 68
 - Verified by bytecode match: 1
 - Unverified implementations: 45
-- Unique implementations: 118
-- Raw deployments: 208
-- Audits discovered: 18
+- Unique implementations: 114
+- Raw deployments: 204
+- Audits discovered: 12
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $145,943,366.91
 - Latest audit: 2024-10 (aging)
-- Staleness: 0 fresh, 2 aging, 6 stale, 10 unknown
+- Staleness: 0 fresh, 2 aging, 3 stale, 7 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $145,943,366.91 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of $145,943,366.91 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,7 +49,7 @@ The Core Contracts family orchestrates user deposits and withdrawals, minting Lo
 
 - None
 
-### ⚠️ Verified + Unaudited (72)
+### ⚠️ Verified + Unaudited (68)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -60,7 +60,6 @@ The Core Contracts family orchestrates user deposits and withdrawals, minting Lo
 | OVault_USDC_iUSD | core_logic | ethereum | 2 deployments: ethereum [`0x5ddbdc...55f105`](./contracts/ethereum-1/0x5ddbdc875ae800b1d61cc8c49324f259ef55f105/); ethereum `0xefaf2b...02ab00` | ⚠️ Unaudited |
 | OVault_iUSD_siUSD | core_logic | ethereum | 2 deployments: ethereum [`0x6345d9...a47fef`](./contracts/ethereum-1/0x6345d938a607b8f5da825d1670b4890f5aa47fef/); ethereum `0xea52ce...59f3a3` | ⚠️ Unaudited |
 | Accounting | unknown | ethereum | 2 deployments: ethereum [`0x7a5c5d...e842b3`](./contracts/ethereum-1/0x7a5c5dba4fbd0e1e1a2ecdbe752fae55f6e842b3/); plasma `0xdeb028...ce765f` | ⚠️ Unaudited |
-| ActionAddRemoveLiqV3 | unknown | ethereum | [`0x888888...58f946`](./contracts/ethereum-1/0x888888888889758f76e7103c6cbf23abbf58f946/) | ⚠️ Unaudited |
 | AfterMintHook | unknown | plasma | 2 deployments: ethereum `0xa5e274...4797a8`; plasma [`0x1b286d...4de53d`](./contracts/plasma-9745/0x1b286d4c12c9f7cc8a49836bd88d33ae804de53d/) | ⚠️ Unaudited |
 | AllocationVoting | unknown | plasma | 2 deployments: ethereum `0x49fa67...0ff853`; plasma [`0x13dd80...043bb6`](./contracts/plasma-9745/0x13dd8034601ae91d1abcef4632083474fb043bb6/) | ⚠️ Unaudited |
 | AssetsChecker | unknown | ethereum | [`0x16a139...cd8619`](./contracts/ethereum-1/0x16a139da0405eb9777ade4f5f0cc2416e5cd8619/) | ⚠️ Unaudited |
@@ -77,8 +76,6 @@ The Core Contracts family orchestrates user deposits and withdrawals, minting Lo
 | FluidRewardsClaimer | operational_periphery | plasma | 3 deployments: ethereum `0xd0ec80...65241e`; plasma [`0x7ba3bc...4995a5`](./contracts/plasma-9745/0x7ba3bc4e47f9c44847caf58ba2e3957d984995a5/); plasma `0xc1fe7f...eb9bae` | ⚠️ Unaudited |
 | FxSaveFarm | unknown | ethereum | [`0xc9c06c...9beabc`](./contracts/ethereum-1/0xc9c06c49ed83d12bca88bed999d4920f049beabc/) | ⚠️ Unaudited |
 | GauntletAlphaFarm | unknown | ethereum | [`0x2f59b7...608c25`](./contracts/ethereum-1/0x2f59b7ee5aa0f7834b4526a015bc506a4c608c25/) | ⚠️ Unaudited |
-| GPv2Settlement | unknown | ethereum | [`0x9008d1...60ab41`](./contracts/ethereum-1/0x9008d19f58aabd9ed0d60971565aa8510560ab41/) | ⚠️ Unaudited |
-| GPv2VaultRelayer | core_logic | ethereum | [`0xc92e8b...fe0110`](./contracts/ethereum-1/0xc92e8bdf79f0507f65a392b0ab4667716bfe0110/) | ⚠️ Unaudited |
 | InfiniFiCore | unknown | plasma | 3 deployments: ethereum `0xf6d487...d25490`; plasma [`0x160300...5c1d8a`](./contracts/plasma-9745/0x160300d5c1ea377b823127d2d6668d43dd5c1d8a/); plasma `0x4b174a...327c32` | ⚠️ Unaudited |
 | InfiniFiGatewayV1 | unknown | ethereum | [`0x7954d5...296d33`](./contracts/ethereum-1/0x7954d563cbd9ee121a77805bce5fe3c44f296d33/) | ⚠️ Unaudited |
 | InfiniFiGatewayV2 | unknown | ethereum | [`0xd04b37...1fb41f`](./contracts/ethereum-1/0xd04b37f673c42baa46923fe74a830bae721fb41f/) | ⚠️ Unaudited |
@@ -97,7 +94,6 @@ The Core Contracts family orchestrates user deposits and withdrawals, minting Lo
 | MapleFarm | unknown | ethereum | 3 deployments: ethereum [`0x5f9f59...a922f7`](./contracts/ethereum-1/0x5f9f597e020bb2b30e92180eee617f4f81a922f7/); ethereum `0x6e6e73...8c4acd`; ethereum `0xf56e94...8163b3` | ⚠️ Unaudited |
 | MaturedFarmCleaner | unknown | ethereum | [`0x607b5a...d4fa56`](./contracts/ethereum-1/0x607b5ab25b2ed5575d296a1cafc3a17161d4fa56/) | ⚠️ Unaudited |
 | MerklRewardsClaimer | operational_periphery | plasma | 2 deployments: plasma [`0x7a6724...b661c6`](./contracts/plasma-9745/0x7a67248a73f9763203d4cd0fc8ef1c22c1b661c6/); plasma `0x9b3bf0...396754` | ⚠️ Unaudited |
-| MetaAggregationRouterV2 | adapter | ethereum | [`0x6131b5...6337b5`](./contracts/ethereum-1/0x6131b5fae19ea4f9d964eac0408e4408b66337b5/) | ⚠️ Unaudited |
 | MidasFarm | unknown | ethereum | [`0x7373a7...d31679`](./contracts/ethereum-1/0x7373a7ce3c023c56cb66747afbdf827627d31679/) | ⚠️ Unaudited |
 | MigrationController | operational_periphery | ethereum | [`0x5f5403...1839f8`](./contracts/ethereum-1/0x5f5403656e4db95accf1064a714b1bce351839f8/) | ⚠️ Unaudited |
 | MinorRolesManager | governance | plasma | 2 deployments: ethereum `0xa08bf8...66be9b`; plasma [`0x2c0dfa...c19fe7`](./contracts/plasma-9745/0x2c0dfada99dff7ada03952a39302a16be2c19fe7/) | ⚠️ Unaudited |
@@ -196,15 +192,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [0xleastwood-Part 1 + 2.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/0xleastwood/0xleastwood-Part%201%20%2B%202.pdf) | unknown | Audit | 2022-09 | stale | Direct | n/a | 0 | n/a |
-| [0xleastwood-Part 2.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/0xleastwood/0xleastwood-Part%202.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Ackee-Part 1.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/Ackee/Ackee-Part%201.pdf) | Ackee Blockchain | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [CMichel-Part 2.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/CMichel/CMichel-Part%202.pdf) | unknown | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
-| [Cmichel-Part 1.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/CMichel/Cmichel-Part%201.pdf) | unknown | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
 | [ChainSecurity.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/ChainSecurity.pdf) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Dedaub-Part 1.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/Dedaub/Dedaub-Part%201.pdf) | Dedaub | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Dingbats-Part 1.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/Dingbats/Dingbats-Part%201.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Dingbats-Part 2.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/Dingbats/Dingbats-Part%202.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Spearbit.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/Spearbit.pdf) | Spearbit | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
 | [WatchPug-LpOracle.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/WatchPug/WatchPug-LpOracle.pdf) | WatchPug | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
 | [WatchPug-Part 1 Follow Up 1.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/WatchPug/WatchPug-Part%201%20Follow%20Up%201.pdf) | WatchPug | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -245,8 +235,6 @@ Verified + unaudited native implementations ranked by TVL:
 | plasma | [`0x7ba3bc...4995a5`](./contracts/plasma-9745/0x7ba3bc4e47f9c44847caf58ba2e3957d984995a5/) | FluidRewardsClaimer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc9c06c...9beabc`](./contracts/ethereum-1/0xc9c06c49ed83d12bca88bed999d4920f049beabc/) | FxSaveFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2f59b7...608c25`](./contracts/ethereum-1/0x2f59b7ee5aa0f7834b4526a015bc506a4c608c25/) | GauntletAlphaFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9008d1...60ab41`](./contracts/ethereum-1/0x9008d19f58aabd9ed0d60971565aa8510560ab41/) | GPv2Settlement | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc92e8b...fe0110`](./contracts/ethereum-1/0xc92e8bdf79f0507f65a392b0ab4667716bfe0110/) | GPv2VaultRelayer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | plasma | [`0x160300...5c1d8a`](./contracts/plasma-9745/0x160300d5c1ea377b823127d2d6668d43dd5c1d8a/) | InfiniFiCore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7954d5...296d33`](./contracts/ethereum-1/0x7954d563cbd9ee121a77805bce5fe3c44f296d33/) | InfiniFiGatewayV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd04b37...1fb41f`](./contracts/ethereum-1/0xd04b37f673c42baa46923fe74a830bae721fb41f/) | InfiniFiGatewayV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -291,8 +279,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 93 |
-| upstream | 3 |
+| native | 91 |
+| upstream | 1 |
 | standard_library | 5 |
 | needs_review | 17 |
 
@@ -300,22 +288,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 18
+- Audits with zero matched contracts: 12
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 
 Zero-match audit list:
 
-- [4767] 0xleastwood-Part 1 + 2.pdf
-- [4768] 0xleastwood-Part 2.pdf
 - [4769] Ackee-Part 1.pdf
-- [4770] CMichel-Part 2.pdf
-- [4771] Cmichel-Part 1.pdf
 - [4772] ChainSecurity.pdf
 - [4773] Dedaub-Part 1.pdf
-- [4774] Dingbats-Part 1.pdf
-- [4775] Dingbats-Part 2.pdf
 - [4776] Spearbit.pdf
 - [4777] WatchPug-LpOracle.pdf
 - [4778] WatchPug-Part 1 Follow Up 1.pdf

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "wemix.fi",
-  "generated_at": "2026-05-26T15:16:02.307Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:18.802Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "WEMIX.FI is a multi-product DeFi protocol on the WEMIX blockchain offering concentrated and full-range liquidity provision, liquid staking, lending, and staking pools. It enables users to earn yield, borrow assets, and participate in governance through a unified ecosystem.",
-    "relationship_narrative": "The product families share common infrastructure such as token standards and likely a unified governance token, but no explicit contract-level dependencies are visible from the provided metadata.",
+    "project_purpose": "WEMIX.FI is a fully on-chain DeFi platform and decentralized exchange on WEMIX3.0. Its sourced product surface includes Swap/exchange, Pool/liquidity, Liquid Staking, Dashboard, Portfolio, Claim, Help Center, and Docs, with DefiLlama describing support for storage, exchange, borrowing, settlement, and investment. Claims about governance participation, concentrated/full-range liquidity products, separate lending and staking-pool product families should be removed or qualified unless verified from current docs or contracts.",
+    "relationship_narrative": null,
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

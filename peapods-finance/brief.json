@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "peapods-finance",
-  "generated_at": "2026-05-23T10:00:38.503Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:09.266Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "peapods-finance",
@@ -45,7 +45,7 @@
     "coverage_pct": 53.1,
     "total_audits": 4,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 7095883.1326399995,
+    "dl_tvl_usd": 6984703.21409,
     "tvl_usd": 949461.8084164185,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -75,9 +75,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Peapods Finance is a yield-bearing index protocol that allows users to create and manage tokenized baskets of assets (Pods) and earn yield through staking, liquidity provision, and leverage strategies. It operates across multiple chains, integrating with various DEXs to facilitate index composition and rebalancing.",
+    "project_purpose": "Peapods Finance is a DeFi protocol focused on Volatility Farming: enabling users to generate sustainable yield for liquid assets through Pods and related staking/liquidity mechanisms. Its index, pod, leverage, and DEX-integration components should be treated as implementation mechanics rather than the sole project identity, and any PEAS governance or utility claims should be separately substantiated.",
     "relationship_narrative": "IndexManager creates and manages Pods using WeightedIndex implementations, while LeverageManager adds leverage to these Pods. StakingPoolToken and TokenRewards handle staking and yield distribution for Pod tokens, and ERC20Bridgeable facilitates cross-chain token transfers. All families rely on UpgradeableBeacon proxies for upgradeability and share the PEAS token as a common utility and governance asset.",
     "product_family_count": 8
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 130,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

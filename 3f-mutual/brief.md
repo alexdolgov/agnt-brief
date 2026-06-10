@@ -4,8 +4,8 @@
 
 - Project: 3F Mutual (`3f-mutual`)
 - Lifecycle: active (Tier 0, 55.8% below peak)
-- Generated: 2026-06-10T19:56:01.766Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.368Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 21 unique implementations (25 raw deployments)
 - DeFi Llama TVL: $3,884,840.54

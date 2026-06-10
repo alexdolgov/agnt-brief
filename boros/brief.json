@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "boros",
-  "generated_at": "2026-05-23T03:44:52.408Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:01.064Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "boros",
@@ -35,8 +35,8 @@
     "coverage_pct": 100,
     "total_audits": 5,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 10383882.77283,
-    "tvl_usd": 10383882.77283,
+    "dl_tvl_usd": 10311393.61508,
+    "tvl_usd": 10311393.61508,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Boros is a derivatives protocol on Arbitrum One that enables users to trade perpetual contracts and other derivative products. It provides a market hub for order management and a router for trade execution and liquidity routing.",
+    "project_purpose": "Boros is Pendle's Arbitrum-based interest-rate and funding-rate derivatives platform for leveraged funding-rate or yield exposure, enabling users to speculate on rate shifts or hedge perpetuals funding-rate exposure through its market hub, router, and AMM components.",
     "relationship_narrative": "The MarketHubEntry serves as the main entry point for user interactions, while the Router handles trade execution and liquidity aggregation. Both contracts are upgradeable proxies, indicating a shared upgrade management pattern.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

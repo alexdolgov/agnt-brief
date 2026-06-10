@@ -4,17 +4,17 @@
 
 - Project: Proxy (`proxy`)
 - Lifecycle: active (Tier 0, 38.7% below peak)
-- Generated: 2026-05-22T16:13:50.696Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:09.385Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, polygon
 - Contract surface: 278 unique implementations (372 raw deployments)
-- DeFi Llama TVL: $20,234,833.22
+- DeFi Llama TVL: $19,955,618.58
 - On-chain TVL (included contracts): $735.64
 - TVL by chain: Polygon $735.64
 
 ## Project Description
 
-Proxy is a bridge protocol enabling cross-chain asset transfers, primarily focusing on moving Bitcoin liquidity to Ethereum and Polygon. It issues wrapped tokens like BTCpx and iBTCpx to represent bridged assets, and includes staking mechanisms for its native PRXY token.
+Proxy Finance is a Bitcoin-focused DeFi protocol centered on BTCpx, a BTC wrapper, and related yield mechanisms. Its ecosystem includes PRXY governance/staking, farmProxy/fPRXY rewards, bonding, and programs for other assets; DefiLlama categorizes the protocol as a Bridge, but the description should not imply that active cross-chain transfer infrastructure is its sole or primary function without additional supporting evidence.
 
 ### Architecture
 

@@ -5,17 +5,17 @@
 - Project: HyperWave (`hyperwave`)
 - Website: [https://app.hyperwavefi.xyz/hyperfren/DEFILLAMA](https://app.hyperwavefi.xyz/hyperfren/DEFILLAMA)
 - Lifecycle: active (Tier 0, 86.2% below peak)
-- Generated: 2026-05-31T08:24:52.190Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:06.106Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, ethereum, hyperliquid
-- Contract surface: 12 unique implementations (29 raw deployments)
+- Contract surface: 11 unique implementations (26 raw deployments)
 - DeFi Llama TVL: $6,383,775.03
 - On-chain TVL (included contracts): $322,694,300.53
 - TVL by chain: Ethereum $322,694,245.24 | Hyperliquid $55.30
 
 ## Project Description
 
-HyperWave is a yield optimization protocol that aggregates user deposits into BoringVaults and MetaMorpho vaults, managed by accountants and tellers, to generate returns across multiple chains. It issues receipt tokens (AToken proxies) representing user shares in these strategies.
+HyperWave is Hyperliquid-focused financial infrastructure centered on HYPE and USD yield vault products, tokenized HLP exposure through hwHLP, and on-chain forex/payments infrastructure. Aave aTokens and Morpho MetaMorpho vaults should be treated as external integrations or upstream dependencies unless separate evidence establishes HyperWave ownership of those contracts.
 
 ### Architecture
 
@@ -23,12 +23,12 @@ All product families share the BoringVault pattern for asset custody and rely on
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/8 (0.0%)
-- Verified + Unaudited implementations: 8
+- Verified implementations audited: 0/7 (0.0%)
+- Verified + Unaudited implementations: 7
 - Verified by bytecode match: 0
 - Unverified implementations: 4
-- Unique implementations: 12
-- Raw deployments: 29
+- Unique implementations: 11
+- Raw deployments: 26
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $322,694,300.53
@@ -46,7 +46,7 @@ All product families share the BoringVault pattern for asset custody and rely on
 
 - None
 
-### ⚠️ Verified + Unaudited (8)
+### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -54,7 +54,6 @@ All product families share the BoringVault pattern for asset custody and rely on
 | BoringVault | core_logic | hyperliquid | 5 deployments: ethereum `0x9ba2ed...1bb160`; hyperliquid [`0x4de03c...2f5858`](./contracts/hyperliquid-999/0x4de03ca1f02591b717495cfa19913ad56a2f5858/); hyperliquid `0x855ced...f55c4f`; hyperliquid `0x9fd746...8d72d1`; hyperliquid `0xa2f8da...a4ff77` | ⚠️ Unaudited |
 | AccountantWithRateProviders | operational_periphery | hyperliquid | 4 deployments: hyperliquid [`0x74f3b2...510e3b`](./contracts/hyperliquid-999/0x74f3b2edc56df9d2a7db9249d9bae6e346510e3b/); hyperliquid `0x78e3ac...d0b03e`; hyperliquid `0xa77f32...46055d`; hyperliquid `0xcf9be8...ee2a32` | ⚠️ Unaudited |
 | ManagerWithMerkleVerification | operational_periphery | hyperliquid | 3 deployments: hyperliquid [`0xd0f20e...df11d2`](./contracts/hyperliquid-999/0xd0f20e410503fb2b5431bf802263f4671cdf11d2/); hyperliquid `0xe3d3b6...0d1cc1`; hyperliquid `0xf0cd28...1f1929` | ⚠️ Unaudited |
-| MetaMorpho | unknown | ethereum | 3 deployments: ethereum [`0xbeef01...2a64cb`](./contracts/ethereum-1/0xbeef01735c132ada46aa9aa4c54623caa92a64cb/); ethereum `0xbeefff...86f5bc`; ethereum `0xd63070...d33a3d` | ⚠️ Unaudited |
 | MetaMorphoV1_1 | unknown | base | [`0x616a4e...273738`](./contracts/base-8453/0x616a4e1db48e22028f6bbf20444cd3b8e3273738/) | ⚠️ Unaudited |
 | RolesAuthority | governance | hyperliquid | 4 deployments: hyperliquid [`0x4d1cf3...9da917`](./contracts/hyperliquid-999/0x4d1cf31a919d62c65fa616185824fe78a09da917/); hyperliquid `0x5ed141...6ff4cc`; hyperliquid `0xce9dff...1e3b8f`; hyperliquid `0xe4b9c0...204b75` | ⚠️ Unaudited |
 | TellerWithMultiAssetSupport | core_logic | hyperliquid | 2 deployments: hyperliquid [`0x70cb1a...9b3dd5`](./contracts/hyperliquid-999/0x70cb1a1888afee738344dd879d818e1f369b3dd5/); hyperliquid `0xfa8035...d079d7` | ⚠️ Unaudited |
@@ -102,7 +101,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 3 |
-| upstream | 3 |
+| upstream | 2 |
 | standard_library | 0 |
 | needs_review | 6 |
 

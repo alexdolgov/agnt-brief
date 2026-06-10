@@ -1,26 +1,25 @@
 # Agentic Audit Brief: Tender Finance
 
-⚠️ Lifecycle status: DECLINING - TVL changed 30.5% over 90 days
-
 ## Project Overview
 
 - Project: Tender Finance (`tender-finance`)
-- Lifecycle: declining (Tier 0, 96.6% below peak)
-- Generated: 2026-05-25T01:18:09.990Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: active (Tier 0, 96.6% below peak)
+- Generated: 2026-06-10T20:59:17.342Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,292,330.57
+- DeFi Llama TVL: $1,287,317.93
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Tender Finance is a lending protocol on Arbitrum One that allows users to supply and borrow assets. It appears to be a fork of Compound, providing algorithmic money markets.
-
-### Architecture
-
-The protocol consists of a single product family with one known contract, TND, which likely serves as the governance or utility token for the lending market.
+Tender Finance is a live lending and borrowing protocol on Arbitrum One, plausibly Compound-style, with TVL-bearing money market infrastructure. The currently captured contract inventory only includes the TND token and should not be treated as representing the full protocol surface; the lending controller/comptroller, market tokens, oracle, interest-rate model, admin/governance, proxy, and related core contracts still need to be identified and scoped.
 
 ## Audit Coverage Summary
 
@@ -36,7 +35,6 @@ The protocol consists of a single product family with one known contract, TND, w
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

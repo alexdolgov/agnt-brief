@@ -5,8 +5,8 @@
 - Project: Steer Protocol (`steer-protocol`)
 - Website: [https://app.steer.finance?af=defillama](https://app.steer.finance?af=defillama)
 - Lifecycle: active (Tier 0, 64.9% below peak)
-- Generated: 2026-05-31T10:42:48.350Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.663Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum
 - Contract surface: 43 unique implementations (71 raw deployments)
 - DeFi Llama TVL: $20,474,767.66
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Steer Protocol is a liquidity management platform that automates and optimizes liquidity provision for decentralized exchanges. It uses smart vaults and strategies to manage concentrated liquidity positions, aiming to maximize yields for liquidity providers.
+Steer Protocol is a decentralized off-chain compute and automation protocol. Its DeFi use cases include automated liquidity management, smart vaults, and strategy execution for decentralized exchange liquidity positions.
 
 ### Architecture
 

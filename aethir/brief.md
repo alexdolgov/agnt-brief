@@ -5,8 +5,8 @@
 - Project: Aethir (`aethir`)
 - Website: [https://aethir.com/](https://aethir.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:14:47.978Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.552Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 5 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $9,183,816.30

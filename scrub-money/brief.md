@@ -5,17 +5,17 @@
 - Project: Scrub Money (`scrub-money`)
 - Website: [https://scrub.money](https://scrub.money)
 - Lifecycle: active (Tier 0, 32.4% below peak)
-- Generated: 2026-05-23T09:36:11.701Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:14.812Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, kava
 - Contract surface: 19 unique implementations (19 raw deployments)
-- DeFi Llama TVL: $7,148,520.00
+- DeFi Llama TVL: $6,748,342.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Scrub Money is a DeFi protocol offering prediction markets, algorithmic stablecoins, yield generation, and basis trading across Kava and Arbitrum One. It encompasses multiple product families including a football-themed prediction market, a commerce platform, a core Scrub ecosystem, and a vault system.
+Scrub Money is a decentralized commerce and services ecosystem spanning DeFi vaults and strategies, NFT marketplace and staking through Scrubplace, peer-to-peer sports markets through Kava Football Club, crypto commerce and gift cards through Lion Commerce, and on-chain games through Scrub Games. Its ecosystem also references LION as a future-backed stablecoin and TIGER as a related token, but the brief should not characterize LION as an algorithmic stablecoin or claim broad basis-trading functionality without independent support.
 
 ### Architecture
 
@@ -29,11 +29,11 @@ The Scrub family provides core DeFi primitives (stablecoins, yield) that likely 
 - Unverified implementations: 18
 - Unique implementations: 19
 - Raw deployments: 19
-- Audits discovered: 1
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -93,7 +93,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://scrub.finance/how-to-know-if-it-is-a-cryptocurrency-scam-or-not) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -114,13 +113,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [2184] DL audit link
 
 Fork inheritance lineage and inherited audits are included when available.

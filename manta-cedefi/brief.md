@@ -7,8 +7,8 @@
 - Project: Manta CeDeFi (`manta-cedefi`)
 - Website: [https://cedefi.manta.network](https://cedefi.manta.network)
 - Lifecycle: unknown (Tier 0, 81.2% below peak)
-- Generated: 2026-05-31T09:48:24.388Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:07.183Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: manta
 - Contract surface: 17 unique implementations (45 raw deployments)
 - DeFi Llama TVL: $26,702,791.45
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Manta CeDeFi is a basis trading protocol that combines centralized and decentralized finance to generate yield. It allows users to deposit assets into a single vault contract, which then executes basis trading strategies to earn returns.
+Manta CeDeFi is a Manta-based yield and basis-trading product that combines centralized and decentralized finance to generate returns. Its on-chain surface is broader than a single vault and includes multiple deposit, vault, withdrawal, token or staking, routing or management, messaging, and upgrade components, including TransparentUpgradeableProxy deployments whose current implementations should be tracked separately from the proxy shells.
 
 ### Architecture
 

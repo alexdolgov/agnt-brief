@@ -5,17 +5,17 @@
 - Project: SynFutures (`synfutures`)
 - Website: [https://www.synfutures.com/](https://www.synfutures.com/)
 - Lifecycle: active (Tier 0, 91.2% below peak)
-- Generated: 2026-05-23T12:38:12.892Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:17.149Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, blast, bsc, ethereum, polygon
-- Contract surface: 482 unique implementations (486 raw deployments)
-- DeFi Llama TVL: $6,311,913.00
+- Contract surface: 481 unique implementations (485 raw deployments)
+- DeFi Llama TVL: $6,281,834.00
 - On-chain TVL (included contracts): $52,438,726.49
 - TVL by chain: Ethereum $51,469,366.33 | Bsc $969,360.15
 
 ## Project Description
 
-SynFutures is a decentralized derivatives protocol enabling permissionless futures and options trading on multiple chains. It provides an automated market maker (AMM) model for synthetic assets, allowing users to trade and provide liquidity without intermediaries.
+SynFutures is an onchain trading protocol and decentralized exchange focused on perpetual futures and spot/RWA markets, including crypto assets, tokenized stocks, ETFs, and other real-world assets. Its current product emphasizes Base-heavy deployment, Oyster AMM hybrid liquidity, and an onchain/CLOB-style trading model. Tokenized stocks are described as 1:1 backed rather than synthetic exposure; unsupported options-trading claims should be removed.
 
 ### Architecture
 
@@ -23,17 +23,17 @@ SynFutures V3 is the active product family, with multiple proxy contracts pointi
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
-- Verified + Unaudited implementations: 4
+- Verified implementations audited: 0/4 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 1
 - Unverified implementations: 477
-- Unique implementations: 482
-- Raw deployments: 486
-- Audits discovered: 4
+- Unique implementations: 481
+- Raw deployments: 485
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $52,438,726.49
-- Latest audit: 2025-02 (aging)
-- Staleness: 0 fresh, 1 aging, 3 stale, 0 unknown
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -46,13 +46,12 @@ SynFutures V3 is the active product family, with multiple proxy contracts pointi
 
 - None
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | SynFuturesToken | token | ethereum | 2 deployments: ethereum [`0x4b2853...c78857`](./contracts/ethereum-1/0x4b28532fb636bab662fff29d56d133c3d9c78857/); ethereum `0x6e15a5...0252f9` | ⚠️ Unaudited |
 | SynFuturesTokenOFT | token | bsc | [`0xc9ccbd...04d3bb`](./contracts/bsc-56/0xc9ccbd76c2353e593cc975f13295e8289d04d3bb/) | ⚠️ Unaudited |
-| OptimismMintableERC20 | bridge_template | base | [`0x2c2449...2e6ed6`](./contracts/base-8453/0x2c24497d4086490e7ead87cc12597fb50c2e6ed6/) | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | base | 2 deployments: base [`0x7ef84c...df33ac`](./contracts/base-8453/0x7ef84cbe4ef6899a4c4f1b006597da6d14df33ac/); base `0x996f26...bd8130` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -557,10 +556,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://www.synfutures.com/peckshield-audit-report-synfutures-v1.1.pdf) | PeckShield | Audit | 2021-05 | stale | Direct | n/a | 0 | n/a |
-| [DL audit link](https://www.synfutures.com/PeckShield-Audit-Report-SynFuturesV2-v1.0.pdf) | PeckShield | Audit | 2022-07 | stale | Direct | n/a | 0 | n/a |
-| [DL audit link](https://www.synfutures.com/Quantstamp-Audit-Report-SynFuturesV3.pdf) | Quantstamp | Audit | 2023-11 | stale | Direct | n/a | 0 | n/a |
-| [here](https://www.synfutures.com/PeckShield-Audit-Report-Oyster-v1.0.pdf) | PeckShield | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -575,7 +570,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 110 |
-| upstream | 8 |
+| upstream | 7 |
 | standard_library | 1 |
 | needs_review | 363 |
 
@@ -583,16 +578,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [2297] DL audit link
-- [2298] DL audit link
-- [2299] DL audit link
-- [2300] here
 
 Fork inheritance lineage and inherited audits are included when available.

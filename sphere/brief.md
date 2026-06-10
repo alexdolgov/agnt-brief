@@ -5,8 +5,8 @@
 - Project: SPHERE (`sphere`)
 - Website: [https://www.sphere.finance](https://www.sphere.finance)
 - Lifecycle: active (Tier 0, 75.4% below peak)
-- Generated: 2026-05-31T10:39:42.284Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.389Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, kava, polygon
 - Contract surface: 217 unique implementations (648 raw deployments)
 - DeFi Llama TVL: $6,675,979.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-SPHERE is a multi-product DeFi protocol offering yield-optimizing vaults (Dyson), a collateralized debt position (CDP) stablecoin system (Preon Finance), and a governance token (Sphere Finance). It operates across multiple chains, integrating with various DEXs and lending protocols to manage liquidity and generate yield.
+SPHERE is a DeFi ecosystem exposure and revenue-stream project centered on the SPHERE token. Its historical and related contract surface includes attributed sub-surfaces such as Dyson, Preon, and Penrose, but those should be treated as related, legacy, or separately verified components unless current SPHERE ownership and operation are independently supported. Third-party protocol infrastructure and token contracts should not be counted as SPHERE-owned assets or defended TVL.
 
 ### Architecture
 

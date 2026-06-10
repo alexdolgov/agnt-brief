@@ -5,21 +5,22 @@
 - Project: PotatoSwap (`potatoswap`)
 - Website: [https://potatoswap.finance](https://potatoswap.finance)
 - Lifecycle: unknown
-- Generated: 2026-05-23T19:36:24.587Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:09.360Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $4,826,218.00
+- DeFi Llama TVL: $5,173,121.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-PotatoSwap is a decentralized exchange (DEX) protocol that enables users to swap tokens, provide liquidity, and earn fees. It appears to support multiple versions (V2 and V3) with automated market-making functionality.
-
-### Architecture
-
-No contract inventory or structural relationships are available to analyze.
+PotatoSwap is a decentralized exchange (DEX) and launchpad built for the X Layer ecosystem. Current public evidence supports V3 AMM branding; any V2 support should be treated as unverified until confirmed by contract inventory, documentation, or current site evidence.
 
 ## Audit Coverage Summary
 

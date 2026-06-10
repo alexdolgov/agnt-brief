@@ -5,17 +5,17 @@
 - Project: CORE Bridge (`core-bridge`)
 - Website: [https://bridge.coredao.org/bridge](https://bridge.coredao.org/bridge)
 - Lifecycle: active (Tier 0, 76.5% below peak)
-- Generated: 2026-05-31T07:41:50.295Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.510Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, base
-- Contract surface: 9 unique implementations (9 raw deployments)
+- Contract surface: 6 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $4,024,033.91
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-CORE Bridge is a canonical cross-chain bridge enabling asset transfers between Avalanche and Base. It uses a lightweight node architecture to relay messages and facilitate token bridging.
+CORE Bridge is a cross-chain bridge for the Core DAO ecosystem, with observed bridge TVL across Ethereum, BNB Chain, Polygon, Arbitrum, Optimism, Avalanche, and Base. The listed Avalanche/Base contracts should be treated as a partial contract inventory only, and LayerZero contracts should be treated as third-party messaging dependencies rather than CORE-owned core bridge contracts unless independently verified.
 
 ### Architecture
 
@@ -23,12 +23,12 @@ The OriginalTokenBridge relies on the UltraLightNodeV2 for cross-chain message v
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 4
-- Unique implementations: 9
-- Raw deployments: 9
+- Unique implementations: 6
+- Raw deployments: 6
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,15 +46,12 @@ The OriginalTokenBridge relies on the UltraLightNodeV2 for cross-chain message v
 
 - None
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| MPTValidator01 | unknown | avalanche | [`0x462f7e...49b859`](./contracts/avalanche-43114/0x462f7ec57c6492b983a8c8322b4369a7f149b859/) | ⚠️ Unaudited |
-| NonceContract | unknown | avalanche | [`0x5b905f...f76068`](./contracts/avalanche-43114/0x5b905fe05f81f3a8ad8b28c6e17779cfabf76068/) | ⚠️ Unaudited |
 | OriginalTokenBridge | operational_periphery | base | [`0x84fb20...507879`](./contracts/base-8453/0x84fb2086fed7b3c9b3a4bc559f60ffaa91507879/) | ⚠️ Unaudited |
 | TreasuryV2 | operational_periphery | avalanche | [`0x3773e1...6ce34d`](./contracts/avalanche-43114/0x3773e1e9deb273fcdf9f80bc88bb387b1e6ce34d/) | ⚠️ Unaudited |
-| UltraLightNodeV2 | unknown | avalanche | [`0x4d73ad...a178e2`](./contracts/avalanche-43114/0x4d73adb72bc3dd368966edd0f0b2148401a178e2/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -98,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 5 |
-| upstream | 3 |
+| upstream | 0 |
 | standard_library | 0 |
 | needs_review | 1 |
 

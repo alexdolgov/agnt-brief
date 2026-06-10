@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "coin8",
-  "generated_at": "2026-05-27T17:53:03.012Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-06-10T20:59:01.455Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Coin8 is a centralized exchange (CEX) that facilitates trading of digital assets. It provides a platform for users to buy, sell, and manage cryptocurrencies.",
-    "relationship_narrative": "No on-chain contracts or product families are present, as this is a centralized exchange with no smart contract infrastructure.",
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

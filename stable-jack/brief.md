@@ -5,17 +5,17 @@
 - Project: Stable Jack (`stable-jack`)
 - Website: [https://www.stablejack.xyz](https://www.stablejack.xyz)
 - Lifecycle: active (Tier 0, 85.7% below peak)
-- Generated: 2026-05-24T17:13:41.382Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:16.489Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche, sonic
 - Contract surface: 249 unique implementations (368 raw deployments)
-- DeFi Llama TVL: $1,817,064.00
+- DeFi Llama TVL: $1,785,928.00
 - On-chain TVL (included contracts): $76,851,427.99
 - TVL by chain: Avalanche $76,829,444.38 | Sonic $21,983.60
 
 ## Project Description
 
-Stable Jack is a DeFi protocol that provides yield-bearing stablecoin and liquid staking token products. It enables users to deposit assets into vaults to receive wrapped tokens that accrue yield, and offers mechanisms for boosting rewards and managing tokenized positions.
+Stable Jack is a DeFi protocol focused on markets for trading yield, volatility, and points to help users increase or manage exposure to assets. Its observed on-chain components include vault, wrapper, and staking-token contracts, but these should be treated as implementation infrastructure rather than the full product identity.
 
 ### Architecture
 
@@ -32,8 +32,8 @@ Stable Jack V2 builds upon V1 by introducing more sophisticated token wrappers a
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $76,851,427.99
-- Latest audit: 2024-06 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
+- Latest audit: 2024-06 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -324,7 +324,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [aUSD_SC_Final_Audit_Report.pdf](https://github.com/Credshields/audit-reports/blob/master/aUSD_SC_Final_Audit_Report.pdf) | unknown | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
+| [aUSD_SC_Final_Audit_Report.pdf](https://github.com/Credshields/audit-reports/blob/master/aUSD_SC_Final_Audit_Report.pdf) | unknown | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 

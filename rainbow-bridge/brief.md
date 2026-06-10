@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Rainbow Bridge
 
-⚠️ Lifecycle status: DEAD - TVL changed 13.6% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 13.6% over 90 days
 
 ## Project Overview
 
 - Project: Rainbow Bridge (`rainbow-bridge`)
 - Website: [https://rainbowbridge.app/transfer](https://rainbowbridge.app/transfer)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-31T10:24:37.553Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:09.461Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $2,108,492.13
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Rainbow Bridge is a trustless bridge enabling asset transfers between Ethereum and NEAR Protocol. It uses a custodian contract on Ethereum to lock assets and a corresponding contract on NEAR to mint wrapped tokens, secured by light client verification.
+Rainbow Bridge is an Aurora product that enables asset transfers between Ethereum, NEAR Protocol, and Aurora. Its Ethereum-side surface includes bridge infrastructure such as NearBridge, an EthCustodian contract for locking assets, and token/asset contracts such as eNear, with cross-chain transfers secured by light client verification.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The EthCustodian contract is the sole Ethereum component, interacting with NEAR'
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

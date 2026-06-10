@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "tokenlon",
-  "generated_at": "2026-05-31T11:11:53.023Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:17.512Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "tokenlon",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 57.1,
-    "total_audits": 7,
+    "total_audits": 6,
     "scoreable_audits": 6,
     "dl_tvl_usd": 37169283,
     "tvl_usd": 37169283,
@@ -62,13 +62,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 6,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Tokenlon is a decentralized exchange protocol that provides both an aggregator for optimal trade routing and an automated market maker (AMM) for direct token swaps. It also includes staking mechanisms for its native LON token to incentivize liquidity provision and governance participation.",
+    "project_purpose": "Tokenlon is a decentralized exchange and payment settlement protocol for trustless token-to-token swaps. It provides quote-based routing and execution, including RFQ/market-maker liquidity and integrations with external AMM or swap sources to seek best-price trades. It should not be described as a Tokenlon-native AMM family based on upstream UniswapV2Pair contracts.",
     "relationship_narrative": "The Tokenlon AMM family relies on the LON token as the core asset, with LONStaking and xLON managing staking and governance power. Multiple StakingRewards contracts distribute incentives to liquidity providers, while UniswapV2Pair contracts facilitate token swaps. Governance is managed via a GnosisSafeProxy, and a TransparentUpgradeableProxy provides permanent storage for protocol parameters.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 21,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1024,27 +1029,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 5898,
-      "audit_key": "audit-5898",
-      "report_name": "README.md",
-      "report_url": "https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/README.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 5899,
       "audit_key": "audit-5899",
       "report_name": "Tokenlon-v6.0.0-Smart-Contract-Audit-Report-Decurity.pdf",
@@ -1177,12 +1161,7 @@
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 5898,
-        "report_name": "README.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

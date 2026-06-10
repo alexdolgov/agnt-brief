@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hiyield",
-  "generated_at": "2026-05-31T08:21:51.104Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.631Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hiyield",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "HiYield is a Real World Asset (RWA) protocol that tokenizes off-chain assets, enabling users to earn yield from real-world financial instruments on-chain.",
+    "project_purpose": "HiYield is a single Real World Asset (RWA) protocol that tokenizes off-chain assets and enables users to earn yield from real-world financial instruments on-chain. The currently collected contract addresses should be treated as unclassified by chain unless further evidence establishes their specific roles or product relationships.",
     "relationship_narrative": "The HiYield family represents the core protocol logic, while the Mainnet family contains the deployed instances on Ethereum mainnet, sharing the same deployer cluster and likely interacting through shared token standards or oracle infrastructure.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 4,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

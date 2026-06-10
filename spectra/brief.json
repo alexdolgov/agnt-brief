@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "spectra",
-  "generated_at": "2026-05-31T10:38:40.794Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.340Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "spectra",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 10,
     "contracts_unverified": 65,
     "coverage_pct": 0,
-    "total_audits": 9,
+    "total_audits": 3,
     "scoreable_audits": 0,
     "dl_tvl_usd": 50945360,
     "tvl_usd": 10462429.025591368,
@@ -58,19 +58,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2023-10",
+    "latest_audit_date": "2022-10",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 7,
-      "unknown": 2
+      "stale": 2,
+      "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Spectra is an on-chain capital allocator and yield aggregator that enables users to deposit assets into yield-generating strategies, trade future yield, and manage liquidity across multiple chains. It provides infrastructure for creating and managing yield-bearing tokens, meta-vaults, and bridges to optimize returns.",
+    "project_purpose": "Spectra is a permissionless interest-rate derivatives and yield-tokenization protocol. It enables users to split yield-bearing assets into principal tokens and yield tokens, trade fixed-rate and future-yield exposure, access yield leverage, and provide liquidity through PT/YT markets and AMM pools. Spectra also includes MetaVaults and related periphery that can automate access to curated yield strategies, but these are features of the broader yield-tokenization and interest-rate market protocol rather than the protocol’s primary identity.",
     "relationship_narrative": "Spectra V2 factories deploy yield tokens and principal tokens, which are wrapped by Spectra Wrappers and priced by Spectra Oracles. MetaVaults aggregate these tokens, while Bridges enable cross-chain movement, and Governance/Rewards contracts manage incentives and protocol control.",
     "product_family_count": 14
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 214,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -16080,69 +16085,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 5698,
-      "audit_key": "audit-5698",
-      "report_name": "2017-03.md",
-      "report_url": "https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2017-03.md",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2017-03",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5699,
-      "audit_key": "audit-5699",
-      "report_name": "2018-10.pdf",
-      "report_url": "https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2018-10.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2018-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5700,
-      "audit_key": "audit-5700",
-      "report_name": "2022-10-Checkpoints.pdf",
-      "report_url": "https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2022-10-Checkpoints.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 5701,
       "audit_key": "audit-5701",
       "report_name": "2022-10-ERC4626.pdf",
@@ -16151,69 +16093,6 @@
       "audit_type": "contest",
       "freshness": "stale",
       "date": "2022-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5702,
-      "audit_key": "audit-5702",
-      "report_name": "2023-05-v4.9.pdf",
-      "report_url": "https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2023-05-v4.9.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5703,
-      "audit_key": "audit-5703",
-      "report_name": "2023-10-v5.0.pdf",
-      "report_url": "https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2023-10-v5.0.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5704,
-      "audit_key": "audit-5704",
-      "report_name": "README.md",
-      "report_url": "https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/README.md",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -16931,32 +16810,8 @@
         "report_name": "opengsn-audit-march2021_front-page-summaries.pdf"
       },
       {
-        "audit_id": 5698,
-        "report_name": "2017-03.md"
-      },
-      {
-        "audit_id": 5699,
-        "report_name": "2018-10.pdf"
-      },
-      {
-        "audit_id": 5700,
-        "report_name": "2022-10-Checkpoints.pdf"
-      },
-      {
         "audit_id": 5701,
         "report_name": "2022-10-ERC4626.pdf"
-      },
-      {
-        "audit_id": 5702,
-        "report_name": "2023-05-v4.9.pdf"
-      },
-      {
-        "audit_id": 5703,
-        "report_name": "2023-10-v5.0.pdf"
-      },
-      {
-        "audit_id": 5704,
-        "report_name": "README.md"
       }
     ],
     "inherited_remapped_matches": []

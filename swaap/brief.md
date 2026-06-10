@@ -7,17 +7,17 @@
 - Project: Swaap (`swaap`)
 - Website: [https://www.swaap.finance](https://www.swaap.finance)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T21:16:09.239Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:16.863Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, bsc, ethereum, linea, mantle, mode, optimism, polygon, scroll
 - Contract surface: 128 unique implementations (177 raw deployments)
-- DeFi Llama TVL: $4,424,348.00
+- DeFi Llama TVL: $4,412,221.00
 - On-chain TVL (included contracts): $3,809,615.57
 - TVL by chain: Ethereum $3,350,078.07 | Base $398,761.58 | Bsc $36,855.69 | Optimism $23,919.12 | Linea $1.12
 
 ## Project Description
 
-Swaap is a DeFi protocol that provides yield generation and decentralized exchange services. It uses vaults to manage liquidity and safeguard factories to deploy and manage these vaults across multiple chains.
+Swaap is an onchain trading and market-neutral AMM protocol. Its contract surface includes Vault contracts, SafeguardFactory registry/deployment contracts, SafeguardPool core logic, and related operational periphery such as oracle or adapter components where applicable. Claims that Swaap primarily operates yield-generation vault strategies should be removed or explicitly qualified unless supported by current documentation or audit scope.
 
 ### Architecture
 

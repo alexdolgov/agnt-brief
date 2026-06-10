@@ -5,8 +5,8 @@
 - Project: Fiamma (`fiamma`)
 - Website: [https://www.fiammalabs.io/](https://www.fiammalabs.io/)
 - Lifecycle: active (Tier 0, 46% below peak)
-- Generated: 2026-05-30T19:23:42.241Z
-- Pipeline run: v2-pipeline-2026-05-30-c7d699-40af
+- Generated: 2026-06-10T20:59:03.989Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc, ethereum, hyperliquid, sei
 - Contract surface: 33 unique implementations (78 raw deployments)
 - DeFi Llama TVL: $1,150,915.03
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Fiamma is a cross-chain bridge protocol that enables the transfer of Bitcoin liquidity to EVM-compatible chains. It issues a wrapped Bitcoin token (FiaBTC) and uses a bridge architecture to lock native BTC and mint equivalent tokens on destination chains.
+Fiamma Labs' DefiLlama-listed Bridge/FIABTC product is a Bitcoin-to-EVM liquidity protocol that issues FIABTC, a 1:1 Bitcoin-backed asset, on supported EVM chains. The covered protocol uses a trust-minimized bridge design emphasizing BitVM2 and zero-knowledge proof mechanics to support moving Bitcoin liquidity into EVM ecosystems; it should be distinguished from the broader Fiamma Labs product suite shown on the homepage, including Ride social trading and the FIRE earn/trade app.
 
 ### Architecture
 

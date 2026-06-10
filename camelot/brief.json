@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "camelot",
-  "generated_at": "2026-05-25T16:57:54.254Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:01.241Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "camelot",
@@ -35,7 +35,7 @@
     "coverage_pct": 17.6,
     "total_audits": 1,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 27140357,
+    "dl_tvl_usd": 26054683,
     "tvl_usd": 6402979.58126799,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Camelot is a decentralized exchange (DEX) protocol on Arbitrum One that enables users to swap tokens, provide liquidity, and earn yield through staking and farming. It supports both classic AMM pools and concentrated liquidity (Algebra-based) pools, along with launchpad and yield-boosting features.",
+    "project_purpose": "Camelot is a decentralized exchange and liquidity hub for Arbitrum and supported Orbit chains. Its original/Camelot V2 infrastructure is based on classic UniswapV2-style AMM pools, while Camelot V3 uses Algebra-based concentrated-liquidity infrastructure; adapters and periphery contracts may connect to Algebra deployments. The protocol enables token swaps, liquidity provision, staking, farming, launchpad features, and yield-boosting mechanisms. If the audit brief is limited to Arbitrum One contracts, that scope limitation should be stated explicitly.",
     "relationship_narrative": "The Camelot and Camelot V3 families share a common Algebra-based AMM architecture but use separate factory and periphery contracts. The original Camelot family includes yield farming and staking contracts that interact with the GRAIL token, while Camelot V3 introduces StakedUSDX and its own staking dynamics. Both families rely on shared adapter and router patterns for integration.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 118,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

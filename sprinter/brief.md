@@ -5,17 +5,17 @@
 - Project: Sprinter (`sprinter`)
 - Website: [https://sprinter.tech/](https://sprinter.tech/)
 - Lifecycle: active (Tier 0, 59.7% below peak)
-- Generated: 2026-05-25T05:33:15.369Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:16.418Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 4 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $1,139,008.44
+- DeFi Llama TVL: $940,717.31
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Sprinter is a yield protocol on Base that aggregates liquidity into ERC-4626 vaults and optimizes yield through strategies like Aave integration. It also includes liquidity mining incentives to reward depositors.
+Sprinter is credit and liquidity infrastructure with Sprinter Solve/Credit and Stash/yield components. The currently matched DefiLlama-tracked contract surface covers the Base Stash/ERC-4626 vault subset, including yield-oriented vault infrastructure and integrations such as Aave strategies, rather than the full Sprinter project surface.
 
 ### Architecture
 
@@ -33,7 +33,7 @@ The LiquidityPool and LiquidityPoolAave contracts serve as the core vaults, whil
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-03 (fresh)
-- Staleness: 3 fresh, 3 aging, 0 stale, 0 unknown
+- Staleness: 2 fresh, 4 aging, 0 stale, 0 unknown
 - Tier 1 coverage: 50.0% (Spearbit)
 
 ### Auditor Coverage
@@ -83,7 +83,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Sprinter remote collateral security review Cantina - final.pdf](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/Sprinter%20remote%20collateral%20security%20review%20Cantina%20-%20final.pdf) | Spearbit | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
 | [VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf) | Sygma Labs | Audit | 2025-02 | aging | Direct | contract_name | 2 | high |
 | [VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf) | Sygma Labs | Audit | 2025-03 | aging | Direct | contract_name | 2 | high |
-| [cantina_sprinter_may2025.pdf](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/cantina_sprinter_may2025.pdf) | Spearbit | Audit | 2025-06 | fresh | Direct | contract_name | 2 | medium |
+| [cantina_sprinter_may2025.pdf](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/cantina_sprinter_may2025.pdf) | Spearbit | Audit | 2025-06 | aging | Direct | contract_name | 2 | medium |
 | [* **Secure & Credible:** MPC-secured multi-party threshold signing, risk mitigation mechanisms, and smart contract audits by [Veridise](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf) and [Spearbit/Cantina]() make Sprinter Stash a secure platform. Built in partnership with [ChainSafe](https://chainsafe.io), a team with 7+ years of industry expertise across core protocol development, standardization/EIPs and security audits/council work.](https://cantina.xyz/portfolio/fe3c634c-d06d-47c2-a70a-f19d2f820f58) | Spearbit | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
 | [* [Sprinter Credit]() - Spearbit/Cantina](https://cantina.xyz/portfolio/2a4c73be-7566-4d0b-af12-d94a037c4b01) | Spearbit | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
 

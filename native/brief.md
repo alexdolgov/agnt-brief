@@ -5,8 +5,8 @@
 - Project: Native (`native`)
 - Website: [https://native.org](https://native.org)
 - Lifecycle: active (Tier 0, 38.8% below peak)
-- Generated: 2026-05-31T10:01:20.461Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:08.048Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, bsc, ethereum, linea, manta, mantle, polygon, scroll
 - Contract surface: 80 unique implementations (684 raw deployments)
 - DeFi Llama TVL: $65,174,838.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Native is a multi-chain DeFi protocol offering lending and decentralized exchange services. It enables users to supply assets into credit vaults for yield and to swap tokens via automated market maker pools, with cross-chain bridging capabilities.
+Native is an on-chain liquidity-building platform focused on token liquidity infrastructure. It uses the Native Swap Engine to route and execute swaps and the Native Credit Pool to support liquidity and yield opportunities, with related cross-chain bridging capabilities. It should not be framed as a traditional AMM-pool DEX unless the scoped contracts or documentation explicitly support that characterization.
 
 ### Architecture
 

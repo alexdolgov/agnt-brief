@@ -5,8 +5,8 @@
 - Project: Arcadia Finance (`arcadia-finance`)
 - Website: [https://arcadia.finance](https://arcadia.finance)
 - Lifecycle: active (Tier 0, 67.1% below peak)
-- Generated: 2026-06-10T20:41:31.076Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.737Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, optimism, unichain
 - Contract surface: 55 unique implementations (151 raw deployments)
 - DeFi Llama TVL: $7,209,275.00

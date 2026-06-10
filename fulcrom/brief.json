@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "fulcrom",
-  "generated_at": "2026-05-31T08:04:37.307Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.077Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "fulcrom",
@@ -57,9 +57,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Fulcrom is a decentralized exchange and derivatives protocol operating on Cronos and zkSync Era. It offers spot trading via an automated market maker (AMM) and perpetual futures trading, enabling users to swap tokens and trade leveraged positions.",
+    "project_purpose": "Fulcrom is a decentralized perpetual/leverage trading protocol with FUL and FLP staking and liquidity products. Its current chain presence includes Cronos, zkSync Era, and Cronos zkEVM; the indexed contract surface should be understood as covering only the listed contracts unless Cronos zkEVM contracts are added separately. Unsupported claims that Fulcrom provides general spot trading through a Fulcrom-owned AMM should be removed unless independently verified contracts and documentation are added.",
     "relationship_narrative": "The Fulcrom AMM and Perps families rely on the shared Fulcrom Core infrastructure for vaults, tokens, and oracles. The Cronos and zkSync Era families provide chain-specific adapters that integrate the core protocol with each blockchain.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 79,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

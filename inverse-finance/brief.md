@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Inverse Finance
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 47.8% over 90 days
-
 ## Project Overview
 
 - Project: Inverse Finance (`inverse-finance`)
 - Website: [https://www.inverse.finance](https://www.inverse.finance)
-- Lifecycle: unknown (Tier 0, 80.2% below peak)
-- Generated: 2026-05-31T14:54:09.451Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Lifecycle: active (Tier 0, 80.2% below peak)
+- Generated: 2026-06-10T20:59:06.281Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, berachain, ethereum, optimism
 - Contract surface: 154 unique implementations (451 raw deployments)
 - DeFi Llama TVL: $41,929,884.00
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Inverse Finance is a decentralized lending protocol that enables users to borrow its native stablecoin, DOLA, against interest-bearing collateral. It also provides yield-bearing token wrappers and governance mechanisms to manage protocol parameters and risk.
+Inverse Finance is a decentralized fixed-rate lending protocol centered on DOLA. Its FiRM markets enable fixed-rate DOLA borrowing against supported collateral using DBR, while sDOLA is the protocol's yield-bearing DOLA product. The protocol also includes governance and risk-management mechanisms for supported markets and parameters.
 
 ### Architecture
 
@@ -31,13 +29,12 @@ The Inverse Finance family provides the core lending infrastructure where Market
 - Unverified implementations: 10
 - Unique implementations: 154
 - Raw deployments: 451
-- Audits discovered: 9
+- Audits discovered: 7
 - Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): $428,774,798.84
 - Latest audit: 2025-11 (fresh)
-- Staleness: 2 fresh, 1 aging, 5 stale, 1 unknown
+- Staleness: 2 fresh, 0 aging, 4 stale, 1 unknown
 - Tier 1 coverage: 7.6% (Code4rena, Sherlock)
-- Note: This protocol is classified as [unknown]. ASD of $428,774,798.84 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -243,9 +240,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Firm, by Nomoi, May 11th, 2023](https://www.inverse.finance/audits/firm-nomoi.pdf) | Nomoi | Audit | 2023-05 | stale | Direct | contract_name | 69 | medium |
 | [Firm, by Code4rena, December 20th, 2022](https://code4rena.com/reports/2022-10-inverse) | Code4rena | Contest | 2022-10 | stale | Direct | contract_name | 68 | high |
 | [By Sherlock, live since March 30th, 2026](https://audits.sherlock.xyz/bug-bounties/233) | Sherlock | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
-| [The RWG onboarded boutique auditing firm [DefiMoon](https://www.inverse.finance/blog/posts/en-US/new-security-layer-a-welcome-to-the-defi-moon-team) during Q3 and Q4 2022 as security partners, with the intent of having their team complement internal QA and testing and bolster our security infrastructure. After a period of research and introductions into several qualified auditing firms, DeFi Moon stood out as a talented and genuine team eager to take on the challenge. During this time they performed an informal audit of FiRM contracts prior to the Code4Rena bug bounty contest. Pre-launch audit can be found [here.]() DefiMoon also provided security consulting and auditing for the [Convex Fed](https://www.inverse.finance/governance/proposals/mills/66), [Aura Fed](https://www.inverse.finance/governance/proposals/mills/71), and [Velo Fed](https://www.inverse.finance/governance/proposals/mills/68) contracts. Their expertise helped us identify and address potential risks and improve the safety and security of these deployments. We’re grateful for their support.](https://github.com/Defimoonorg/Audit-Report/blob/main/InverseFinance.pdf) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
 | [An audit of the bad debt repayment products and a new INV oracle solution was performed by Peckshield in Q2 2022. Their report can be found [here]().](https://drive.google.com/file/d/1LWNG08mib2GcI1WqnMt5IdFoW73QU2F8/view) | PeckShield | Audit | 2022-04 | stale | Direct | n/a | 0 | n/a |
-| [Rendered PDF capture](https://www.inverse.finance/brand-assets-2025-v1.1.0.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -385,7 +380,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=4, medium=1
 - Match method counts: extraction_exact=188
@@ -393,8 +388,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [1763] By Sherlock, live since March 30th, 2026
-- [1764] The RWG onboarded boutique auditing firm [DefiMoon](https://www.inverse.finance/blog/posts/en-US/new-security-layer-a-welcome-to-the-defi-moon-team) during Q3 and Q4 2022 as security partners, with the intent of having their team complement internal QA and testing and bolster our security infrastructure. After a period of research and introductions into several qualified auditing firms, DeFi Moon stood out as a talented and genuine team eager to take on the challenge. During this time they performed an informal audit of FiRM contracts prior to the Code4Rena bug bounty contest. Pre-launch audit can be found [here.]() DefiMoon also provided security consulting and auditing for the [Convex Fed](https://www.inverse.finance/governance/proposals/mills/66), [Aura Fed](https://www.inverse.finance/governance/proposals/mills/71), and [Velo Fed](https://www.inverse.finance/governance/proposals/mills/68) contracts. Their expertise helped us identify and address potential risks and improve the safety and security of these deployments. We’re grateful for their support.
 - [1765] An audit of the bad debt repayment products and a new INV oracle solution was performed by Peckshield in Q2 2022. Their report can be found [here]().
-- [3899] Rendered PDF capture
 
 Fork inheritance lineage and inherited audits are included when available.

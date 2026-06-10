@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "xfi-native-staking-protocol",
-  "generated_at": "2026-05-25T05:37:46.453Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:19.357Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1113239.17454,
-    "tvl_usd": 1113239.17454,
+    "dl_tvl_usd": 1173680.82382,
+    "tvl_usd": 1173680.82382,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "The XFI Native Staking Protocol enables users to stake tokens in a staking pool to earn rewards. It provides a simple mechanism for token holders to lock their assets and receive yield.",
-    "relationship_narrative": "The protocol consists of a single staking pool family with no additional contracts or infrastructure identified.",
+    "project_purpose": "The XFI Native Staking Protocol enables native staking of XFI within the CrossFi ecosystem, connecting CrossFi's EVM and Cosmos components so XFI holders can stake in the network and earn staking rewards.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

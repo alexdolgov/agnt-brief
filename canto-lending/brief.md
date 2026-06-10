@@ -7,17 +7,17 @@
 - Project: Canto Lending (`canto-lending`)
 - Website: [https://canto.io/lending](https://canto.io/lending)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-24T08:25:03.638Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:01.250Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: canto, ethereum
 - Contract surface: 84 unique implementations (84 raw deployments)
-- DeFi Llama TVL: $3,010,392.27
+- DeFi Llama TVL: $3,025,530.14
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Canto Lending is a decentralized lending protocol on Canto and Ethereum, enabling users to supply and borrow assets through interest rate markets. It appears to be a fork of Compound, with additional token contracts for cross-chain functionality.
+Canto Lending is a decentralized lending protocol deployed and tracked on Canto. The Ethereum CantoOFTV2 and CNoteOFT entries are cross-chain token contracts listed separately and should not be described as Ethereum lending markets without supporting documentation. The project appears Compound-inspired, but unsupported claims about CantoOFTV2 being a lending market asset or deployer patterns proving a unified deployment should be omitted.
 
 ### Architecture
 
@@ -31,11 +31,11 @@ The Canto Lending family uses the CantoOFTV2 token (from the Tokens family) as o
 - Unverified implementations: 82
 - Unique implementations: 84
 - Raw deployments: 84
-- Audits discovered: 4
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-07 (stale)
-- Staleness: 0 fresh, 0 aging, 4 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -164,7 +164,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [* [Canto open audit contest 1 ]()](https://code4rena.com/audits/2022-06-canto-contest) | Code4rena | Contest | 2022-06 | stale | Direct | n/a | 0 | n/a |
 | [* [Canto open audit contest 2]() based on mitigations from contest 1](https://code4rena.com/audits/2022-06-canto-v2-contest) | Code4rena | Contest | 2022-06 | stale | Direct | n/a | 0 | n/a |
 | [* [Canto audit 3: Solo audit by Ghoul.sol]() based on mitigations from contest 2](https://code4rena.com/reports/2022-07-canto) | Code4rena | Contest | 2022-07 | stale | Direct | n/a | 0 | n/a |
-| [* [Gravity Bridge audit report ]()](https://code4rena.com/reports/2021-08-gravitybridge) | Code4rena | Contest | 2021-08 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -188,7 +187,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -198,6 +197,5 @@ Zero-match audit list:
 - [2761] * [Canto open audit contest 1 ]()
 - [2762] * [Canto open audit contest 2]() based on mitigations from contest 1
 - [2763] * [Canto audit 3: Solo audit by Ghoul.sol]() based on mitigations from contest 2
-- [2764] * [Gravity Bridge audit report ]()
 
 Fork inheritance lineage and inherited audits are included when available.

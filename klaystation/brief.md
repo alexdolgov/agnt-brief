@@ -1,27 +1,28 @@
 # Agentic Audit Brief: KLAYstation
 
-⚠️ Lifecycle status: DEAD - TVL dropped 100.0% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 100.0% over 90 days
 
 ## Project Overview
 
 - Project: KLAYstation (`klaystation`)
 - Website: [https://klaystation.io](https://klaystation.io)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-31T08:36:05.577Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:06.727Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: klaytn
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $0.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-KLAYstation is a liquid staking protocol on Klaytn that allows users to stake KLAY tokens and receive a liquid staking derivative in return, enabling them to earn staking rewards while maintaining liquidity.
-
-### Architecture
-
-The protocol consists of a single product family with one core contract that handles all liquid staking functionality, with no additional supporting contracts or shared infrastructure identified.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 
@@ -37,7 +38,7 @@ The protocol consists of a single product family with one core contract that han
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

@@ -5,21 +5,22 @@
 - Project: Endur (`endur`)
 - Website: [https://app.endur.fi/](https://app.endur.fi/)
 - Lifecycle: unknown
-- Generated: 2026-05-23T05:12:04.713Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:02.215Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $9,724,014.25
+- DeFi Llama TVL: $9,420,505.40
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Endur is a liquid staking protocol that allows users to stake assets and receive liquid derivative tokens representing their staked positions, enabling continued participation in DeFi while earning staking rewards.
-
-### Architecture
-
-No product families or contracts are defined in the provided inventory, so no relationships can be described.
+Endur is a Starknet liquid-staking app/protocol for STRK and BTC, allowing users to stake assets and receive liquid staking tokens such as xSTRK and xyBTCs that represent staked positions while enabling continued DeFi participation and staking rewards.
 
 ## Audit Coverage Summary
 
@@ -32,8 +33,8 @@ No product families or contracts are defined in the provided inventory, so no re
 - Audits discovered: 4
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2025-06 (fresh)
-- Staleness: 1 fresh, 3 aging, 0 stale, 0 unknown
+- Latest audit: 2025-06 (aging)
+- Staleness: 0 fresh, 4 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -75,7 +76,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Link](https://drive.google.com/file/d/1EufZmcW9k5yq5Jivek1MjTCVnft5WRER/view) | Cairo Security Clan | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
 | [Link](https://drive.google.com/file/d/1IUySv0Z924vfRDMDNVupH9VR9WdoqKax/view?usp=drive_link) | Cairo Security Clan | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
 | [Link](https://drive.google.com/file/d/17A4ivPm55aRCJvUQ5D17PhUpsxjKsLoc/view?usp=sharing) | Cairo Security Clan | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
-| [Link](https://drive.google.com/file/d/1NDr0HnKFbnk0NVlk51BWlxPiVH-IXNhY/view?usp=drive_link) | Cairo Security Clan | Audit | 2025-06 | fresh | Direct | n/a | 0 | n/a |
+| [Link](https://drive.google.com/file/d/1NDr0HnKFbnk0NVlk51BWlxPiVH-IXNhY/view?usp=drive_link) | Cairo Security Clan | Audit | 2025-06 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 

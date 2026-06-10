@@ -1,27 +1,26 @@
 # Agentic Audit Brief: TxFlow
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: TxFlow (`txflow`)
 - Website: [https://txflow.com/](https://txflow.com/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T11:23:32.839Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:18.186Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $3,758,764.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-TxFlow is a multi-chain DeFi protocol offering a cross-chain bridge for asset transfers and a perpetuals trading platform for leveraged derivatives.
-
-### Architecture
-
-TxFlow Bridge and TxFlow Perps share cross-chain infrastructure, with tokens like L2TBTC and MantaMintableERC20 bridging assets into perpetual pools. Governance and staking contracts (e.g., FarmV2Controller, ArcProxy) are used across the perps ecosystem to manage rewards and protocol parameters.
+TxFlow is an open Layer 1 blockchain built around TIP Liquidity Standards, enabling shared on-chain liquidity, settlement, and market data without bridging. The currently tracked Arbitrum Bridge2 contract should be treated as a limited DefiLlama bridge/TVL adapter surface, not as evidence that the whole project is primarily a cross-chain bridge or perpetuals platform.
 
 ## Audit Coverage Summary
 
@@ -37,7 +36,6 @@ TxFlow Bridge and TxFlow Perps share cross-chain infrastructure, with tokens lik
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

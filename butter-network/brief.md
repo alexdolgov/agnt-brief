@@ -7,8 +7,8 @@
 - Project: Butter Network (`butter-network`)
 - Website: [https://www.butterswap.io/swap](https://www.butterswap.io/swap)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T07:40:57.167Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.215Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, blast, ethereum, klaytn, linea, mantle, merlin, optimism, polygon, scroll
 - Contract surface: 6 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $1,227,686.59
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Butter Network is a cross-chain bridge protocol that enables asset transfers across multiple blockchains. It uses a unified OmniServiceProxy architecture to facilitate interoperability between Ethereum, Optimism, Polygon, and other supported chains.
+Butter Network, also presented as ButterSwap, is an omnichain interoperability hub and one-step cross-chain swap and bridge product. Its EVM contract surface includes chain-specific OmniServiceProxy proxy deployments with distinct current implementations, while the broader live product advertises support for additional networks beyond the listed EVM OmniServiceProxy deployments.
 
 ### Architecture
 
@@ -31,11 +31,11 @@ The protocol consists of a single product family where multiple OmniServiceProxy
 - Unverified implementations: 4
 - Unique implementations: 6
 - Raw deployments: 13
-- Audits discovered: 1
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -83,7 +83,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [security.md](https://github.com/butternetwork/butter-documents/blob/master/docs/security.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -107,13 +106,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [9512] security.md
 
 Fork inheritance lineage and inherited audits are included when available.

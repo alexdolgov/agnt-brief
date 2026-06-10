@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hyperwave",
-  "generated_at": "2026-05-31T08:24:52.190Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:06.106Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hyperwave",
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 86.24776849203879
   },
   "summary": {
-    "total_contracts": 12,
-    "total_addresses": 29,
-    "unique_implementations": 12,
-    "total_deployments": 29,
+    "total_contracts": 11,
+    "total_addresses": 26,
+    "unique_implementations": 11,
+    "total_deployments": 26,
     "audited_contracts": 0,
-    "unaudited_contracts": 8,
+    "unaudited_contracts": 7,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 8,
+    "contracts_verified_unaudited": 7,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 4,
     "coverage_pct": 0,
@@ -61,9 +61,14 @@
     }
   },
   "topography": {
-    "project_purpose": "HyperWave is a yield optimization protocol that aggregates user deposits into BoringVaults and MetaMorpho vaults, managed by accountants and tellers, to generate returns across multiple chains. It issues receipt tokens (AToken proxies) representing user shares in these strategies.",
+    "project_purpose": "HyperWave is Hyperliquid-focused financial infrastructure centered on HYPE and USD yield vault products, tokenized HLP exposure through hwHLP, and on-chain forex/payments infrastructure. Aave aTokens and Morpho MetaMorpho vaults should be treated as external integrations or upstream dependencies unless separate evidence establishes HyperWave ownership of those contracts.",
     "relationship_narrative": "All product families share the BoringVault pattern for asset custody and rely on AccountantWithRateProviders for yield calculations, while the HyperWave family provides the AToken receipt tokens that represent user deposits across the other vaults. Governance is decentralized via separate RolesAuthority contracts per family, and MetaMorpho vaults in the HyperWave family serve as underlying yield sources for the AToken proxies.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 11,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -280,55 +285,6 @@
           "chain_id": 999,
           "chain_name": "hyperliquid",
           "address": "0xf0cd28d6ff2c1a84fc88215e920452842d1f1929",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xbeef01735c132ada46aa9aa4c54623caa92a64cb",
-      "name": "MetaMorpho",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "morpho-blue",
-      "product_line": "HyperWave",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MetaMorpho",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xbeef01735c132ada46aa9aa4c54623caa92a64cb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xbeefff209270748ddd194831b3fa287a5386f5bc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xd63070114470f685b75b74d60eec7c1113d33a3d",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -632,7 +588,7 @@
   ],
   "origin_summary": {
     "native": 3,
-    "upstream": 3,
+    "upstream": 2,
     "standard_library": 0,
     "needs_review": 6
   },

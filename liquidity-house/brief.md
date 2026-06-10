@@ -5,21 +5,22 @@
 - Project: Liquidity House (`liquidity-house`)
 - Website: [https://liquidity.house](https://liquidity.house)
 - Lifecycle: unknown
-- Generated: 2026-05-24T22:38:03.349Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:06.982Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,439,631.35
+- DeFi Llama TVL: $1,437,366.59
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Liquidity House is a prediction market protocol that allows users to create and trade on the outcome of events. It provides a decentralized platform for event-based speculation and hedging.
-
-### Architecture
-
-No product families or contracts are defined in the provided inventory, so no relationships can be described.
+Liquidity House is GambleFi liquidity infrastructure providing Bankroll-as-a-Service for casino operators, enabling liquidity/backing for on-chain gaming and casino operations rather than a user-facing prediction market for creating and trading event outcomes.
 
 ## Audit Coverage Summary
 

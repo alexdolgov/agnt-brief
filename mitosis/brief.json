@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "mitosis",
-  "generated_at": "2026-05-25T15:54:31.826Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:07.718Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "mitosis",
     "tier": 1,
@@ -32,29 +32,28 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 72,
-    "total_addresses": 167,
-    "unique_implementations": 72,
-    "total_deployments": 167,
-    "audited_contracts": 2,
-    "unaudited_contracts": 44,
-    "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 44,
+    "total_contracts": 66,
+    "total_addresses": 160,
+    "unique_implementations": 66,
+    "total_deployments": 160,
+    "audited_contracts": 0,
+    "unaudited_contracts": 43,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 43,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 26,
-    "coverage_pct": 4.3,
-    "total_audits": 3,
-    "scoreable_audits": 1,
-    "dl_tvl_usd": 1475153.9005999998,
-    "tvl_usd": 329076424.0103584,
+    "contracts_unverified": 23,
+    "coverage_pct": 0,
+    "total_audits": 2,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 1489070.0570600003,
+    "tvl_usd": 329004729.1051147,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "arbitrum": 139149782.44,
       "bsc": 10557657.18,
-      "ethereum": 179297289.49,
-      "linea": 71694.91
+      "ethereum": 179297289.49
     },
-    "asd_usd": 329076424.0103584,
+    "asd_usd": 329004729.1051147,
     "website_url": "https://mitosis.org",
     "chains": [
       "arbitrum",
@@ -69,23 +68,26 @@
       "optimism",
       "scroll"
     ],
-    "tier1_coverage_pct": 4.3,
-    "tier1_auditors": [
-      "Code4rena"
-    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
     "latest_audit_date": "2025-09",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 1,
       "aging": 1,
-      "stale": 1,
+      "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Mitosis is an onchain capital allocator that aggregates multiple liquid staking and restaking tokens (e.g., uniETH, uniBTC, eETH, ezETH) into unified vault products. It enables cross-chain yield strategies and liquidity management through a system of vaults, tokens, and migration contracts.",
+    "project_purpose": "Mitosis is currently positioned as a Layer 1 / global execution layer for programmable liquidity, enabling liquidity to be deployed and coordinated across chains and applications. Historical vault, wrapper, token, and migration contracts related to LST/LRT or restaking aggregation should be treated as legacy or supporting components rather than the sole description of the current project.",
     "relationship_narrative": "All product families rely on the Mitosis Core Infrastructure for vault creation, cap management, and cross-chain migrations. The BasicVaultMigration contracts serve as the primary mechanism for upgrading user positions from external tokens to Mitosis-wrapped versions, while the Cap contracts enforce supply limits across the ecosystem.",
     "product_family_count": 19
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 66,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -326,37 +328,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 59144,
-      "chain_name": "linea",
-      "address": "0x823106e745a62d0c2fc4d27644c62ade946d9cca",
-      "name": "EtherfiL2LineaSyncPoolETH",
-      "role": "core_logic",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": 71694.90524370954,
-      "is_proxy": true,
-      "impl_address": "0x390624d61f03075d7e14d909d6c3f46ecac8b984",
-      "impl_name": "EtherfiL2LineaSyncPoolETH",
-      "deployments": [
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x823106e745a62d0c2fc4d27644c62ade946d9cca",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 71694.90524370954,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
     },
     {
       "chain_id": 42161,
@@ -927,37 +898,6 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 59144,
-      "chain_name": "linea",
-      "address": "0x3a19866d5e0fae0ce19adda617f9d2b9fd5a3975",
-      "name": "BucketRateLimiter",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x6d2cf73d4c59364b824cd1c2588213eec4e7e7af",
-      "impl_name": "BucketRateLimiter",
-      "deployments": [
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x3a19866d5e0fae0ce19adda617f9d2b9fd5a3975",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
       "chain_id": 81457,
       "chain_name": "blast",
       "address": "0x096430ef0a653c067df32e93ff77090e084169de",
@@ -978,7 +918,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -987,7 +927,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -996,7 +936,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -1005,7 +945,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -1014,7 +954,7 @@
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -1023,7 +963,7 @@
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -1032,7 +972,7 @@
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -1041,7 +981,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -1050,7 +990,7 @@
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -1059,7 +999,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 81457,
@@ -1068,16 +1008,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3055"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1150,7 +1088,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -1159,16 +1097,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3055"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1201,46 +1137,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 59144,
-      "chain_name": "linea",
-      "address": "0x22c498b5c42c787c790f8f1fcef50b33a830f5dc",
-      "name": "EtherfiL2ExchangeRateProvider",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xc42853c0c6624f42fcb8219aceb67ad188087dcb",
-      "impl_name": "EtherfiL2ExchangeRateProvider",
-      "deployments": [
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x22c498b5c42c787c790f8f1fcef50b33a830f5dc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x241a91f095b2020890bc8518bea168c195518344",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
     },
     {
       "chain_id": 59144,
@@ -2671,37 +2567,6 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
-      "address": "0x20ee00f43ef299dba82ba6fef537756dabe38cc7",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x20ee00f43ef299dba82ba6fef537756dabe38cc7",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 59144,
-      "chain_name": "linea",
       "address": "0x4a6219e25a41fd4165fbd158d89723a7175ea382",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -2733,37 +2598,6 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
-      "address": "0x60be06699abe614e0fba99ec11a1cda6b2238755",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x60be06699abe614e0fba99ec11a1cda6b2238755",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 59144,
-      "chain_name": "linea",
       "address": "0x9b6544a01efdaafaaaf495e1ba14e9798ccf42e0",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -2791,37 +2625,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 59144,
-      "chain_name": "linea",
-      "address": "0xfd503fdb6d37bc1e864b4b58f787f0a3f704402c",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0xfd503fdb6d37bc1e864b4b58f787f0a3f704402c",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
     },
     {
       "chain_id": 534352,
@@ -3186,31 +2989,6 @@
   ],
   "audits": [
     {
-      "audit_id": 3055,
-      "audit_key": "audit-3055",
-      "report_name": "Introduction",
-      "report_url": "https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "stale",
-      "date": "2024-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "CCDMHost",
-        "Cap",
-        "EETHDepositHelper"
-      ],
-      "matched_contracts": 13,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 3056,
       "audit_key": "audit-3056",
       "report_name": "Rendered PDF capture",
@@ -3267,15 +3045,7 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [
-    {
-      "auditor": "Code4rena",
-      "tier": 1,
-      "contracts_covered": 2,
-      "coverage_pct": 4.3,
-      "latest_audit": "2024-04"
-    }
-  ],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -3322,6 +3092,16 @@
       "chain_name": "arbitrum",
       "address": "0x877b9ea7ce0358ef7982b2967ae7e538530a6031",
       "name": "CCDMClient",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x5bd64950b2885070e172d01e49b69842a5a4b5e2",
+      "name": "CCDMHost",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -3381,16 +3161,12 @@
   "origin_summary": {
     "native": 11,
     "upstream": 7,
-    "standard_library": 25,
-    "needs_review": 29
+    "standard_library": 22,
+    "needs_review": 26
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 13
-    },
-    "extraction_confidence_counts": {
-      "low": 1
-    },
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [

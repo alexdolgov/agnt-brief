@@ -5,8 +5,8 @@
 - Project: Aegis (`aegis`)
 - Website: [https://aegis.im/](https://aegis.im/)
 - Lifecycle: active (Tier 0, 19.3% below peak)
-- Generated: 2026-06-10T20:14:47.919Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.544Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 6 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $35,799,876.00

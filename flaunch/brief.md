@@ -5,21 +5,22 @@
 - Project: flaunch (`flaunch`)
 - Website: [https://flaunch.gg](https://flaunch.gg)
 - Lifecycle: active (Tier 0, 35% below peak)
-- Generated: 2026-05-24T14:31:03.040Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:04.008Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 3 unique implementations (52 raw deployments)
-- DeFi Llama TVL: $2,134,796.43
+- DeFi Llama TVL: $2,101,965.17
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Flaunch is a launchpad protocol on Base that enables users to create and trade memecoins. It provides infrastructure for deploying new tokens and managing their initial liquidity.
-
-### Architecture
-
-The Unnamed Infrastructure contract likely acts as a factory that deploys the numerous Memecoin instances across both the Memecoin Launchpad and Flaunch Core families. The flETH token may be used as a base asset for liquidity or staking within the Flaunch ecosystem.
+Flaunch is a launchpad protocol on Base that enables users to create and trade memecoins.
 
 ## Audit Coverage Summary
 
@@ -29,11 +30,11 @@ The Unnamed Infrastructure contract likely acts as a factory that deploys the nu
 - Unverified implementations: 1
 - Unique implementations: 3
 - Raw deployments: 52
-- Audits discovered: 21
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2026-03 (fresh)
-- Staleness: 10 fresh, 5 aging, 6 stale, 0 unknown
+- Latest audit: 2022-10 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -77,27 +78,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [2017-03.md](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2017-03.md) | OpenZeppelin | Audit | 2017-03 | stale | Direct | n/a | 0 | n/a |
-| [2018-10.pdf](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2018-10.pdf) | OpenZeppelin | Audit | 2018-10 | stale | Direct | n/a | 0 | n/a |
-| [2022-10-Checkpoints.pdf](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2022-10-Checkpoints.pdf) | OpenZeppelin | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
 | [2022-10-ERC4626.pdf](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2022-10-ERC4626.pdf) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
-| [2023-05-v4.9.pdf](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2023-05-v4.9.pdf) | OpenZeppelin | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
-| [2023-10-v5.0.pdf](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2023-10-v5.0.pdf) | OpenZeppelin | Audit | 2023-10 | stale | Direct | n/a | 0 | n/a |
-| [2024-10-v5.1.pdf](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2024-10-v5.1.pdf) | OpenZeppelin | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
-| [2024-12-v5.2.pdf](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2024-12-v5.2.pdf) | OpenZeppelin | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
-| [2025-04-v5.3.pdf](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2025-04-v5.3.pdf) | OpenZeppelin | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
-| [2025-07-v5.4.pdf](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2025-07-v5.4.pdf) | OpenZeppelin | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [2025-10-v5.5.pdf](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2025-10-v5.5.pdf) | OpenZeppelin | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
-| [2025-11-RLP.pdf](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2025-11-RLP.pdf) | OpenZeppelin | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
-| [2026-02-v5.6.pdf](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2026-02-v5.6.pdf) | OpenZeppelin | Audit | 2026-02 | fresh | Direct | n/a | 0 | n/a |
-| [2025-05-v0.1.pdf](https://github.com/OpenZeppelin/openzeppelin-confidential-contracts/blob/master/audits/2025-05-v0.1.pdf) | OpenZeppelin | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
-| [2025-07-v0.2.pdf](https://github.com/OpenZeppelin/openzeppelin-confidential-contracts/blob/master/audits/2025-07-v0.2.pdf) | OpenZeppelin | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [2025-11-v0.3.pdf](https://github.com/OpenZeppelin/openzeppelin-confidential-contracts/blob/master/audits/2025-11-v0.3.pdf) | OpenZeppelin | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
-| [2026-01-v0.3.1.pdf](https://github.com/OpenZeppelin/openzeppelin-confidential-contracts/blob/master/audits/2026-01-v0.3.1.pdf) | OpenZeppelin | Audit | 2026-01 | fresh | Direct | n/a | 0 | n/a |
-| [2026-03-v0.4.pdf](https://github.com/OpenZeppelin/openzeppelin-confidential-contracts/blob/master/audits/2026-03-v0.4.pdf) | OpenZeppelin | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
-| [2025-01-v1.0.0.pdf](https://github.com/OpenZeppelin/cairo-contracts/blob/main/audits/2025-01-v1.0.0.pdf) | OpenZeppelin | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
-| [2025-06-v2.0.0.pdf](https://github.com/OpenZeppelin/cairo-contracts/blob/main/audits/2025-06-v2.0.0.pdf) | OpenZeppelin | Audit | 2025-06 | fresh | Direct | n/a | 0 | n/a |
-| [2025-11-v3.0.0.pdf](https://github.com/OpenZeppelin/cairo-contracts/blob/main/audits/2025-11-v3.0.0.pdf) | OpenZeppelin | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -121,33 +102,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 21
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 
 Zero-match audit list:
 
-- [2897] 2017-03.md
-- [2898] 2018-10.pdf
-- [2899] 2022-10-Checkpoints.pdf
 - [2900] 2022-10-ERC4626.pdf
-- [2901] 2023-05-v4.9.pdf
-- [2902] 2023-10-v5.0.pdf
-- [2903] 2024-10-v5.1.pdf
-- [2904] 2024-12-v5.2.pdf
-- [2905] 2025-04-v5.3.pdf
-- [2906] 2025-07-v5.4.pdf
-- [2907] 2025-10-v5.5.pdf
-- [2908] 2025-11-RLP.pdf
-- [2909] 2026-02-v5.6.pdf
-- [2910] 2025-05-v0.1.pdf
-- [2911] 2025-07-v0.2.pdf
-- [2912] 2025-11-v0.3.pdf
-- [2913] 2026-01-v0.3.1.pdf
-- [2914] 2026-03-v0.4.pdf
-- [2915] 2025-01-v1.0.0.pdf
-- [2916] 2025-06-v2.0.0.pdf
-- [2917] 2025-11-v3.0.0.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

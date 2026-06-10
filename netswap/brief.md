@@ -1,23 +1,23 @@
 # Agentic Audit Brief: NetSwap
 
-⚠️ Lifecycle status: DEAD - TVL changed 5.2% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 5.2% over 90 days
 
 ## Project Overview
 
 - Project: NetSwap (`netswap`)
 - Website: [https://netswap.io/#/home](https://netswap.io/#/home)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-25T00:00:14.418Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:08.134Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: metis
 - Contract surface: 48 unique implementations (90 raw deployments)
-- DeFi Llama TVL: $1,361,962.35
+- DeFi Llama TVL: $1,336,674.22
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-NetSwap is a decentralized exchange (DEX) on Metis that enables token swaps, liquidity provision, and yield farming. It also offers staking and governance features through its NETT token and related contracts.
+NetSwap is a decentralized exchange (DEX) on Metis that enables token swaps, liquidity provision, and yield farming. It uses the NETT governance token and includes NETT/veNETT staking-related contracts, but active voting or community governance should not be assumed without additional supporting evidence.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The NetSwap family relies on the NETT token from the Governance family for staki
 - Latest audit: 2022-01 (stale)
 - Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

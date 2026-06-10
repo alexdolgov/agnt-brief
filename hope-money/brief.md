@@ -4,21 +4,22 @@
 
 - Project: HOPE Money (`hope-money`)
 - Lifecycle: active (Tier 0, 81.1% below peak)
-- Generated: 2026-05-25T15:33:26.579Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:04.669Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $1,689,759.00
+- DeFi Llama TVL: $1,673,641.00
 - On-chain TVL (included contracts): $21,983,584.15
 - TVL by chain: Ethereum $21,983,584.15
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-HOPE Money is a DeFi protocol offering liquid staking, restaking, and BTC-backed tokens. It enables users to stake ETH for liquid tokens, restake for additional yield, and mint BTC-pegged assets for use in lending and trading.
-
-### Architecture
-
-The liquid staking family provides RockXETH, which can be restaked for rewards. BTC-backed tokens rely on vaults and rate oracles, and cross-chain infrastructure enables movement of these assets across networks.
+HOPE Money is an all-in-one DeFi ecosystem featuring HOPE, a crypto-native distributed stablecoin, with related stablecoin and ecosystem components across its supported deployment surface.
 
 ## Audit Coverage Summary
 

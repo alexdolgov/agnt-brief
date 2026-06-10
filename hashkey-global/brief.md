@@ -5,21 +5,22 @@
 - Project: HashKey Global (`hashkey-global`)
 - Website: [https://www.hashkey.com](https://www.hashkey.com)
 - Lifecycle: active (Tier 0, 85.6% below peak)
-- Generated: 2026-05-31T08:17:50.280Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.534Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: scroll
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $15,094,354.09
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-HashKey Global is a centralized exchange (CEX) that provides trading and custody services for digital assets. The on-chain contracts on Scroll likely support deposit/withdrawal operations or token management for the exchange.
-
-### Architecture
-
-The two contracts likely form a deposit/withdrawal system where one handles user deposits and the other manages withdrawal requests or token custody, sharing the same operational context for the exchange.
+HashKey Global is a centralized exchange (CEX) that provides trading and custody services for digital assets. The reviewed on-chain surface consists of two unverified Scroll addresses with unknown roles and an unconfirmed relationship to HashKey exchange operations; these addresses should not be described as a verified deposit/withdrawal or token-management system without further evidence.
 
 ## Audit Coverage Summary
 

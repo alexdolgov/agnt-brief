@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "generic.money",
-  "generated_at": "2026-05-24T02:01:20.370Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-10T20:59:04.317Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "generic.money",
     "tier": 0,
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 3.7462742875789345
   },
   "summary": {
-    "total_contracts": 13,
-    "total_addresses": 26,
-    "unique_implementations": 13,
-    "total_deployments": 26,
+    "total_contracts": 12,
+    "total_addresses": 25,
+    "unique_implementations": 12,
+    "total_deployments": 25,
     "audited_contracts": 9,
-    "unaudited_contracts": 3,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 9,
-    "contracts_verified_unaudited": 3,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
-    "coverage_pct": 75,
+    "coverage_pct": 81.8,
     "total_audits": 1,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 3739999.63975,
+    "dl_tvl_usd": 3740768.64398,
     "tvl_usd": 3742840.769960022,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -46,7 +46,7 @@
     "chains": [
       "ethereum"
     ],
-    "tier1_coverage_pct": 75,
+    "tier1_coverage_pct": 81.8,
     "tier1_auditors": [
       "Spearbit"
     ],
@@ -60,9 +60,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Generic.Money is a DeFi protocol that issues algorithmic stablecoins (GenericUSD) and provides vaults for yield-bearing deposits. It includes bridging infrastructure for cross-chain operations and governance via a DAO.",
+    "project_purpose": "Generic.Money provides GUSD, a fully collateralized stablecoin-as-a-service/onchain dollar backed by stablecoin collateral. The protocol includes vault-based yield routing, shared liquidity and accounting, cross-chain messaging, and marketed privacy features including confidential payments and an FHE-powered Privacy Pool, with sGUSD/staking usage and live deployments or usage on networks including StatusL2 and Citrea that should be evaluated for scope.",
     "relationship_narrative": "The Core Protocol Contracts issue GenericUSD, which is used by the Mainnet GUSD vaults for payments and yield. The Bridging Infrastructure enables cross-chain movement of GenericUSD, while Periphery Contracts facilitate deposits and swaps, all governed by the DAO.",
     "product_family_count": 6
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 12,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -137,37 +142,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x111111125421ca6dc452d289314280a0f8842a65",
-      "name": "AggregationRouterV6",
-      "role": "adapter",
-      "origin_kind": "upstream",
-      "origin_provider": "1inch",
-      "product_line": "External Integrations",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AggregationRouterV6",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x111111125421ca6dc452d289314280a0f8842a65",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -675,14 +649,14 @@
       "auditor": "Spearbit",
       "tier": 1,
       "contracts_covered": 9,
-      "coverage_pct": 75,
+      "coverage_pct": 81.8,
       "latest_audit": "2026-01"
     }
   ],
   "coverage_gaps": [],
   "origin_summary": {
     "native": 5,
-    "upstream": 4,
+    "upstream": 3,
     "standard_library": 3,
     "needs_review": 1
   },

@@ -7,17 +7,17 @@
 - Project: Wing Finance (`wing-finance`)
 - Website: [https://wing.finance](https://wing.finance)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T11:39:01.351Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:18.815Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc, ethereum, klaytn
-- Contract surface: 180 unique implementations (199 raw deployments)
+- Contract surface: 179 unique implementations (198 raw deployments)
 - DeFi Llama TVL: $32,459,100.32
 - On-chain TVL (included contracts): $20,266,638.25
 - TVL by chain: Ethereum $20,266,638.25
 
 ## Project Description
 
-Wing Finance is a decentralized lending protocol that allows users to supply and borrow crypto assets across multiple chains. It also includes governance and token distribution mechanisms.
+Wing Finance is a credit-based cross-chain DeFi lending platform for supplying and borrowing crypto assets. Compound protocol contracts and balances should be treated only as external integrations or underlyings unless project-specific documentation or verified deployer evidence proves Wing ownership.
 
 ### Architecture
 
@@ -25,17 +25,17 @@ The Wing Token family provides the governance token used by the Governance Accou
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/14 (0.0%)
-- Verified + Unaudited implementations: 12
+- Verified implementations audited: 0/13 (0.0%)
+- Verified + Unaudited implementations: 11
 - Verified by bytecode match: 2
 - Unverified implementations: 166
-- Unique implementations: 180
-- Raw deployments: 199
-- Audits discovered: 2
+- Unique implementations: 179
+- Raw deployments: 198
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $20,266,638.25
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $20,266,638.25 represents exposure in a protocol with declining activity.
 
@@ -49,7 +49,7 @@ The Wing Token family provides the governance token used by the Governance Accou
 
 - None
 
-### ⚠️ Verified + Unaudited (12)
+### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -61,7 +61,6 @@ The Wing Token family provides the governance token used by the Governance Accou
 | BEP20TokenImplementation | token | bsc | 2 deployments: bsc [`0x3cb737...f1f969`](./contracts/bsc-56/0x3cb7378565718c64ab86970802140cc48ef1f969/); bsc `0xdfebae...0c3817` | ⚠️ Unaudited |
 | BNFTRegistry | registry | ethereum | 2 deployments: ethereum [`0xbd1df6...e534a1`](./contracts/ethereum-1/0xbd1df6a8da9983578d6f0aaf2af4c9f564e534a1/); ethereum `0xed3eb0...20a6fd` | ⚠️ Unaudited |
 | CEther | unknown | ethereum | [`0x4ddc2d...270ed5`](./contracts/ethereum-1/0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5/) | ⚠️ Unaudited |
-| Comp | unknown | ethereum | [`0xc00e94...f26888`](./contracts/ethereum-1/0xc00e94cb662c3520282e6f5717214004a7f26888/) | ⚠️ Unaudited |
 | LockProxy | unknown | ethereum | [`0x250e76...4cc906`](./contracts/ethereum-1/0x250e76987d838a75310c34bf422ea9f1ac4cc906/) | ⚠️ Unaudited |
 | OSWAP | unknown | ethereum | [`0xe9b0db...95bcab`](./contracts/ethereum-1/0xe9b0db26a0085e5119757a5179a499abf595bcab/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | [`0x3d5754...e1dce9`](./contracts/ethereum-1/0x3d5754ebbf1220dac838d02fcdcfe729dee1dce9/) | ⚠️ Unaudited |
@@ -258,8 +257,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [The WING protocol has been reviewed & audited by [**BEOSIN**]()**.**](https://lianantech.com/) | BEOSIN | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [The Wing Flash Pool (EVM) has been reviewed & audited by [**PeckShield**]().](https://peckshield.com/en) | PeckShield | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -281,7 +278,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 12 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 1 |
 | needs_review | 166 |
 
@@ -289,14 +286,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [3991] The WING protocol has been reviewed & audited by [**BEOSIN**]()**.**
-- [3992] The Wing Flash Pool (EVM) has been reviewed & audited by [**PeckShield**]().
 
 Fork inheritance lineage and inherited audits are included when available.

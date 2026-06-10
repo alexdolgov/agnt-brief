@@ -1,23 +1,21 @@
 # Agentic Audit Brief: SatLayer
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 97.0% over 90 days
-
 ## Project Overview
 
 - Project: SatLayer (`satlayer`)
 - Website: [https://satlayer.xyz/](https://satlayer.xyz/)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-25T15:43:08.923Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:13.448Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, berachain, bsc, ethereum
-- Contract surface: 313 unique implementations (765 raw deployments)
-- DeFi Llama TVL: $1,179,014.15
+- Contract surface: 311 unique implementations (747 raw deployments)
+- DeFi Llama TVL: $1,136,445.48
 - On-chain TVL (included contracts): $289,459,726.45
 - TVL by chain: Ethereum $227,438,810.76 | Bsc $60,838,498.38 | Berachain $1,182,417.30
 
 ## Project Description
 
-SatLayer is a Bitcoin liquid staking and restaking protocol that allows users to deposit BTC and receive liquid staking tokens (LSTs) like uniBTC, brBTC, and stBTC. These LSTs can be used across DeFi to earn yield while maintaining Bitcoin exposure, and the protocol includes vaults and pools for restaking and reward distribution.
+SatLayer is Bitcoin's economic and restaking layer for Bitcoin Validated Services. It enables Bitcoin-backed collateral and supported Bitcoin liquid staking or wrapped assets to be restaked to help secure BVS networks and participate in reward mechanisms. Assets such as uniBTC, brBTC, stBTC, and LBTC should be treated as supported or partner collateral unless specific evidence shows SatLayer issues them directly.
 
 ### Architecture
 
@@ -25,19 +23,18 @@ The Deposit Contracts family mints LSTs from user BTC deposits, which are then u
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 5/113 (4.4%)
-- Verified + Unaudited implementations: 108
+- Verified implementations audited: 5/111 (4.5%)
+- Verified + Unaudited implementations: 106
 - Verified by bytecode match: 0
 - Unverified implementations: 200
-- Unique implementations: 313
-- Raw deployments: 765
+- Unique implementations: 311
+- Raw deployments: 747
 - Audits discovered: 12
 - Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): $287,192,748.00
 - Latest audit: 2025-08 (fresh)
-- Staleness: 3 fresh, 8 aging, 0 stale, 1 unknown
+- Staleness: 1 fresh, 10 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $287,192,748.00 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -58,10 +55,10 @@ The Deposit Contracts family mints LSTs from user BTC deposits, which are then u
 | SLAYToken | token | ethereum | [`0x51477a...ee5147`](./contracts/ethereum-1/0x51477a3002ee04b7542adfe63ccdb50c00ee5147/) | ✅ Audited |
 | ReceiptToken | token | ethereum | 19 deployments: ethereum [`0x067e11...67152f`](./contracts/ethereum-1/0x067e11ac5471c853aea205b3c1933a5f6367152f/); ethereum `0x0c4dd6...3430c7`; ethereum `0x17140b...ad24ff`; ethereum `0x69223b...82c566`; ethereum `0xe2c675...a912dc`; ethereum `0xf7de2b...1e076e`; ethereum `0xff2858...b5ee5b`; bsc [`0x067e11...67152f`](./contracts/bsc-56/0x067e11ac5471c853aea205b3c1933a5f6367152f/); bsc `0x17140b...ad24ff`; bsc `0xe2c675...a912dc`; base `0x422d6c...7f9802`; base `0x9ed4b1...165add`; berachain `0x2a5fc0...f415c9`; berachain `0x7b4dc4...85705c`; berachain `0x961395...3ab763`; berachain `0xad9f7d...ca4ec8`; berachain `0xd23557...27abc2`; berachain `0xe70419...48b126`; berachain `0xff21f4...cfdb9b` | ✅ Audited |
 | SatlayerPool | core_logic | ethereum | 4 deployments: ethereum [`0x42a856...102819`](./contracts/ethereum-1/0x42a856dbebb97abc1269eab32f3bb40c15102819/); bsc [`0x42a856...102819`](./contracts/bsc-56/0x42a856dbebb97abc1269eab32f3bb40c15102819/); base `0xb57752...b0b9b3`; berachain `0x50198b...9bc99d` | ✅ Audited |
-| LBTC | unknown | ethereum | 6 deployments: ethereum [`0x12364c...348eea`](./contracts/ethereum-1/0x12364c9d095a2a43abb71b0d8313663ff0348eea/); ethereum `0x4cbd88...d0c4bc`; ethereum `0x80a23c...00053c`; ethereum `0xa1a961...bc0122`; ethereum `0xa1bc65...a3845a`; berachain `0xecac9c...5c11c1` | ✅ Audited |
+| LBTC | unknown | berachain | [`0xecac9c...5c11c1`](./contracts/berachain-80094/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ✅ Audited |
 | SatLayerPoolV2 | core_logic | ethereum | 10 deployments: ethereum [`0x0559bb...7e6ee5`](./contracts/ethereum-1/0x0559bbbe074d820f2079883f1ef54b928b7e6ee5/); ethereum `0x0d988b...2fc179`; ethereum `0x32fd8e...39fb83`; ethereum `0x3aaadf...3ff3c4`; ethereum `0x617ca1...aacdcd`; ethereum `0x6f88e8...58703c`; ethereum `0xbd7e31...0e7fec`; ethereum `0xe14c98...539336`; ethereum `0xe276cb...4aedfc`; ethereum `0xf80361...e773b0` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (108)
+### ⚠️ Verified + Unaudited (106)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -84,10 +81,9 @@ The Deposit Contracts family mints LSTs from user BTC deposits, which are then u
 | BaseBridgeHelper | operational_periphery | ethereum | 3 deployments: ethereum [`0x237eff...24912f`](./contracts/ethereum-1/0x237eff231c41016d9b4305148b6be9294824912f/); ethereum `0x8d34ae...09e37d`; ethereum `0xe9a659...891740` | ⚠️ Unaudited |
 | BEP20Token | token | bsc | 2 deployments: bsc [`0x7130d2...3ead9c`](./contracts/bsc-56/0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c/); bsc `0xe9e7ce...087d56` | ⚠️ Unaudited |
 | BeraPseudoBridge | operational_periphery | ethereum | [`0x8a95f2...60d500`](./contracts/ethereum-1/0x8a95f22c5a2da7c325cf95b58f1b4f9b8460d500/) | ⚠️ Unaudited |
-| brBTC | unknown | base | 8 deployments: base [`0x3376eb...61514a`](./contracts/base-8453/0x3376ebca0a85fc8d791b1001a571c41fdd61514a/); base `0x89b2c7...740aeb`; base `0xa16113...2059be`; base `0xd3c8da...b1d58d`; base `0xdfc7d2...2b511e`; base `0xf97750...31ab18`; berachain `0x552b0c...42fa05`; berachain `0x939197...2b593e` | ⚠️ Unaudited |
+| brBTC | unknown | berachain | 2 deployments: base `0xf97750...31ab18`; berachain [`0x939197...2b593e`](./contracts/berachain-80094/0x93919784c523f39cacaa98ee0a9d96c3f32b593e/) | ⚠️ Unaudited |
 | Bridge | operational_periphery | ethereum | [`0x1b67c2...7a4717`](./contracts/ethereum-1/0x1b67c2908ef408f6612e025fe3cf12c8507a4717/) | ⚠️ Unaudited |
 | BridgeV2 | operational_periphery | ethereum | 2 deployments: ethereum [`0xc1fe8a...2059c8`](./contracts/ethereum-1/0xc1fe8a0daed7e912d3b5b56ff6e05f17d82059c8/); ethereum `0xc78524...41a235` | ⚠️ Unaudited |
-| brVault | core_logic | berachain | 2 deployments: berachain [`0xd3c8da...b1d58d`](./contracts/berachain-80094/0xd3c8da379d71a33bfee8875f87ac2748beb1d58d/); berachain `0xf97750...31ab18` | ⚠️ Unaudited |
 | CianFlowControl | unknown | ethereum | 2 deployments: ethereum [`0x7a116f...99edc4`](./contracts/ethereum-1/0x7a116f6dc0966495462e7480125157c1e699edc4/); ethereum `0xd3d547...b747c9` | ⚠️ Unaudited |
 | CianOFTWrapper | unknown | ethereum | 7 deployments: ethereum [`0x237978...0f48ec`](./contracts/ethereum-1/0x237978176c3811a1648f3106797e3c3e070f48ec/); ethereum `0x508339...9ca0ce`; ethereum `0x67a919...694dd6`; ethereum `0x79dd84...e660e8`; ethereum `0xafb6a7...012b7b`; ethereum `0xafc13b...4aafdb`; ethereum `0xcb742c...0563ed` | ⚠️ Unaudited |
 | CLAdapter | adapter | ethereum | [`0x2298d4...9b1fbb`](./contracts/ethereum-1/0x2298d44cfda0ceafe7f5ef5fd587b67d7b9b1fbb/) | ⚠️ Unaudited |
@@ -126,7 +122,7 @@ The Deposit Contracts family mints LSTs from user BTC deposits, which are then u
 | ParaswapAdapter | adapter | ethereum | 3 deployments: ethereum [`0x55ad78...1ed0cc`](./contracts/ethereum-1/0x55ad7823630c7ea56cce53ee33c760bece1ed0cc/); ethereum `0x9633d6...864caa`; ethereum `0x9aa8b1...d8e544` | ⚠️ Unaudited |
 | ParaSwapHelper | periphery | ethereum | [`0x0f00dc...eb2a64`](./contracts/ethereum-1/0x0f00dc481864dc0f1c1ff10b24fc5e21c5eb2a64/) | ⚠️ Unaudited |
 | PositionManagementAAVEV3 | unknown | ethereum | 2 deployments: ethereum [`0x4509c4...f203a4`](./contracts/ethereum-1/0x4509c4fb07f681385f21cf03c28a6f2aa1f203a4/); ethereum `0x815a3d...e4103f` | ⚠️ Unaudited |
-| ProxyAdmin | governance | berachain | 3 deployments: ethereum `0xa2b94c...91945d`; berachain [`0x17c3b6...d551ab`](./contracts/berachain-80094/0x17c3b688badd6dd11244096a9fbc4ae0add551ab/); berachain `0x9203ce...718031` | ⚠️ Unaudited |
+| ProxyAdmin | governance | berachain | 2 deployments: ethereum `0xa2b94c...91945d`; berachain [`0x17c3b6...d551ab`](./contracts/berachain-80094/0x17c3b688badd6dd11244096a9fbc4ae0add551ab/) | ⚠️ Unaudited |
 | ProxyMock | unknown | ethereum | [`0x72233f...dee7db`](./contracts/ethereum-1/0x72233ff361ebd3e157e3fa5224365137b6dee7db/) | ⚠️ Unaudited |
 | PumpStaking | unknown | ethereum | 3 deployments: ethereum [`0x1fcca6...404e1e`](./contracts/ethereum-1/0x1fcca65fb6ae3b2758b9b2b394cb227eae404e1e/); ethereum `0x3d9bcc...5e6083`; ethereum `0xc0c687...622f88` | ⚠️ Unaudited |
 | PumpToken | token | ethereum | [`0xf469fb...0a012e`](./contracts/ethereum-1/0xf469fbd2abcd6b9de8e169d128226c0fc90a012e/) | ⚠️ Unaudited |
@@ -139,7 +135,6 @@ The Deposit Contracts family mints LSTs from user BTC deposits, which are then u
 | StakeAndBakeNativeToken | token | ethereum | [`0x0bca0f...7eae88`](./contracts/ethereum-1/0x0bca0fb61480530e87dddbb3bb5f0539c97eae88/) | ⚠️ Unaudited |
 | StakedLBTC | token | ethereum | 4 deployments: ethereum [`0x072072...782bd9`](./contracts/ethereum-1/0x072072317469ebb6c340a47e41561c9c3b782bd9/); ethereum `0x21f352...083b02`; ethereum `0x8236a8...634494`; ethereum `0x8c21ab...760a0a` | ⚠️ Unaudited |
 | StakedLBTCOracle | operational_periphery | ethereum | 2 deployments: ethereum [`0x5e28ef...1fdc1c`](./contracts/ethereum-1/0x5e28ef6d59fa87530fd058e0d5a94f657f1fdc1c/); ethereum `0x6db63b...5c9cd6` | ⚠️ Unaudited |
-| stBTC | unknown | ethereum | 2 deployments: ethereum [`0xf6718b...28b8a3`](./contracts/ethereum-1/0xf6718b2701d4a6498ef77d7c152b2137ab28b8a3/); bsc [`0xf6718b...28b8a3`](./contracts/bsc-56/0xf6718b2701d4a6498ef77d7c152b2137ab28b8a3/) | ⚠️ Unaudited |
 | StrategyAvalon | core_logic | ethereum | [`0xf42b8e...d5cf00`](./contracts/ethereum-1/0xf42b8eb69b6fcadb9191c15aa005a9c4a6d5cf00/) | ⚠️ Unaudited |
 | StrategyBedrock | core_logic | ethereum | 7 deployments: ethereum [`0x302d70...23a755`](./contracts/ethereum-1/0x302d709611a4fbacef396f05493918257a23a755/); ethereum `0x38b4e0...ede466`; ethereum `0x580445...6cd54f`; ethereum `0xa04a26...522398`; ethereum `0xa22772...4c6465`; ethereum `0xc091a0...678ff5`; ethereum `0xd1828c...f92138` | ⚠️ Unaudited |
 | StrategyBedrock18DEC2025 | core_logic | ethereum | 2 deployments: ethereum [`0x24a4fb...6d9425`](./contracts/ethereum-1/0x24a4fb8cc04313c0c45c06ac87159f09546d9425/); ethereum `0x74dce5...63f752` | ⚠️ Unaudited |
@@ -164,7 +159,7 @@ The Deposit Contracts family mints LSTs from user BTC deposits, which are then u
 | TokenAdapter | adapter | ethereum | 2 deployments: ethereum [`0x873ec2...ddc238`](./contracts/ethereum-1/0x873ec230a070a165198a6c5bce1e62c94fddc238/); ethereum `0xb2afdd...595363` | ⚠️ Unaudited |
 | TokenApprovalVerifier | token | ethereum | 3 deployments: ethereum [`0x1cb9cf...076a9a`](./contracts/ethereum-1/0x1cb9cf5439dced63d8f5b7f1a5bf9834d8076a9a/); ethereum `0x641064...572f1a`; ethereum `0xfc3a51...17de71` | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | ethereum | 9 deployments: ethereum [`0x1eccf9...309582`](./contracts/ethereum-1/0x1eccf9c13d0c3512717d532740f64e43f4309582/); ethereum `0x201121...1c8a70`; ethereum `0x3f66e3...36a2c7`; ethereum `0x50fd70...04c10c`; ethereum `0x5b6f47...ea36be`; ethereum `0x8d76e7...3560a2`; ethereum `0x9fddad...f0a019`; ethereum `0xc8c3ab...3e8b0e`; ethereum `0xdc77ba...a317a0` | ⚠️ Unaudited |
-| uniBTC | unknown | ethereum | 5 deployments: ethereum [`0x004e9c...350568`](./contracts/ethereum-1/0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568/); base `0x552b0c...42fa05`; base `0x939197...2b593e`; berachain `0x50fa14...1b8190`; berachain `0xc3827a...db6e90` | ⚠️ Unaudited |
+| uniBTC | unknown | ethereum | 3 deployments: ethereum [`0x004e9c...350568`](./contracts/ethereum-1/0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568/); base `0x939197...2b593e`; berachain `0xc3827a...db6e90` | ⚠️ Unaudited |
 | USDS2USDC | unknown | ethereum | [`0xe13b6c...db26e3`](./contracts/ethereum-1/0xe13b6c5eafd3f0cdb461ce0138e0fd0fc7db26e3/) | ⚠️ Unaudited |
 | USDS2USDC2DAI | unknown | ethereum | [`0x4f119f...e60eee`](./contracts/ethereum-1/0x4f119f538cb77faafeb2a857e268ffb66fe60eee/) | ⚠️ Unaudited |
 | UserModule | unknown | ethereum | 2 deployments: ethereum [`0xc170b0...8d8183`](./contracts/ethereum-1/0xc170b044e40c58b96bac975f935fd41aa78d8183/); ethereum `0xfe5ca0...713969` | ⚠️ Unaudited |
@@ -403,9 +398,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [{% embed url="<>" %}](https://github.com/satlayer/satlayer-bvs/blob/main/docs/public/audits/satlayer-core-phase-1-coinspect-20250404.pdf) | Coinspect | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
 | [{% embed url="<>" %}](https://github.com/satlayer/satlayer-bvs/blob/main/docs/public/audits/satlayer-core-phase-1-dedaub-20250325.pdf) | Dedaub | Audit | 2025-03 | aging | Direct | n/a | 0 | n/a |
 | [{% embed url="<>" %}](https://github.com/satlayer/satlayer-sui/blob/main/audits/satlayer-sui-zenith-20250313.pdf) | Zenith | Audit | 2025-02 | aging | Direct | contract_name | 6 | high |
-| [satlayer-core-phase-2-dedaub-20250620.pdf](https://github.com/satlayer/satlayer-bvs/blob/main/docs/public/audits/satlayer-core-phase-2-dedaub-20250620.pdf) | Dedaub | Audit | 2025-06 | fresh | Direct | n/a | 0 | n/a |
+| [satlayer-core-phase-2-dedaub-20250620.pdf](https://github.com/satlayer/satlayer-bvs/blob/main/docs/public/audits/satlayer-core-phase-2-dedaub-20250620.pdf) | Dedaub | Audit | 2025-06 | aging | Direct | n/a | 0 | n/a |
 | [satlayer-evm-dedaub-20250809.pdf](https://github.com/satlayer/satlayer-bvs/blob/main/docs/public/audits/satlayer-evm-dedaub-20250809.pdf) | Dedaub | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
-| [satlayer-token-dedaub-20250616.pdf](https://github.com/satlayer/satlayer-bvs/blob/main/docs/public/audits/satlayer-token-dedaub-20250616.pdf) | Dedaub | Audit | 2025-06 | fresh | Direct | contract_name | 1 | high |
+| [satlayer-token-dedaub-20250616.pdf](https://github.com/satlayer/satlayer-bvs/blob/main/docs/public/audits/satlayer-token-dedaub-20250616.pdf) | Dedaub | Audit | 2025-06 | aging | Direct | contract_name | 1 | high |
 | [SatLayer Pool - Zellic Audit Report (Patch).pdf](https://github.com/satlayer/deposit-contract-public/blob/main/audits/SatLayer%20Pool%20-%20Zellic%20Audit%20Report%20(Patch).pdf) | Zellic | Audit | 2025-01 | aging | Direct | contract_name | 33 | high |
 | [{% embed url="<>" %}](https://github.com/satlayer/baby-lst/blob/main/audits/cube-by-satlayer-oak-security-20250410.pdf) | Oak Security | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
 | [{% embed url="<>" %}](https://github.com/satlayer/baby-lst/blob/main/audits/cube-by-satlayer-hashlock-20250408.pdf) | Hashlock | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
@@ -430,7 +425,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x8a95f2...60d500`](./contracts/ethereum-1/0x8a95f22c5a2da7c325cf95b58f1b4f9b8460d500/) | BeraPseudoBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1b67c2...7a4717`](./contracts/ethereum-1/0x1b67c2908ef408f6612e025fe3cf12c8507a4717/) | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc1fe8a...2059c8`](./contracts/ethereum-1/0xc1fe8a0daed7e912d3b5b56ff6e05f17d82059c8/) | BridgeV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0xd3c8da...b1d58d`](./contracts/berachain-80094/0xd3c8da379d71a33bfee8875f87ac2748beb1d58d/) | brVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2298d4...9b1fbb`](./contracts/ethereum-1/0x2298d44cfda0ceafe7f5ef5fd587b67d7b9b1fbb/) | CLAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9f8048...c5478e`](./contracts/ethereum-1/0x9f8048c81d00da5e757e20ad5fc89f8a32c5478e/) | Consortium | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x74d2be...54cdbb`](./contracts/ethereum-1/0x74d2bef5afe200dacc76fe2d3c4022435b54cdbb/) | ControllerLib | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -492,9 +486,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 165 |
-| upstream | 10 |
-| standard_library | 21 |
+| native | 163 |
+| upstream | 9 |
+| standard_library | 22 |
 | needs_review | 117 |
 
 ## Scope Matching Notes

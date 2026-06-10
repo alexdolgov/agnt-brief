@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "easedefi.org",
-  "generated_at": "2026-05-23T21:08:55.510Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:02.057Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "easedefi.org",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4423066.10589,
-    "tvl_usd": 4423066.10589,
+    "dl_tvl_usd": 4371974.68545,
+    "tvl_usd": 4371974.68545,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Easedefi.org is a decentralized insurance protocol on Ethereum that allows users to purchase coverage for smart contract risks. It uses a vault-based model where premiums are pooled and claims are assessed and paid out according to predefined rules.",
-    "relationship_narrative": "The protocol consists of a single product family centered around the arNXMVault, which is deployed behind an OwnedUpgradeabilityProxy for upgradeability. All insurance logic, including premium collection and claim payouts, is handled within this vault contract.",
+    "project_purpose": "EaseDeFi is a DeFi coverage protocol on Ethereum offering multiple coverage and yield-related products, including stNXM underwriting, premium-free Uninsurance mutual coverage without traditional premium purchases, and in-development cross-asset yield vaults. The currently recorded contract surface covers only the OwnedUpgradeabilityProxy at 0x1337def1fc06783d4b03cb8c1bf3ebf7d0593fc4 with implementation 0xc38bfa29f70b3f0f40784d7861f1665e47f37f2e, and should not be treated as representing the entire current Ease protocol unless additional product contract addresses are verified.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

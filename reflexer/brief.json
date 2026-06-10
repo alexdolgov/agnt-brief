@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "reflexer",
-  "generated_at": "2026-05-24T12:06:45.428Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:09.498Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "reflexer",
     "tier": 1,
@@ -45,8 +45,8 @@
     "coverage_pct": 40.9,
     "total_audits": 8,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 2365890.46779,
-    "tvl_usd": 2365890.46779,
+    "dl_tvl_usd": 2323116.35162,
+    "tvl_usd": 2323116.35162,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -69,6 +69,11 @@
     "project_purpose": "Reflexer is a decentralized collateralized debt position (CDP) protocol that allows users to lock collateral and mint RAI, a stablecoin with a managed float that is not pegged to any fiat currency.",
     "relationship_narrative": "The protocol consists of a single product family with one identified contract, CollateralJoin1, which likely serves as the entry point for collateral deposits and RAI generation, with no additional supporting contracts detected in the provided inventory.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 64,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

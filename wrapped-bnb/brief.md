@@ -7,21 +7,22 @@
 - Project: Wrapped BNB (`wrapped-bnb`)
 - Website: [https://www.kava.io](https://www.kava.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T11:41:08.761Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:18.871Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $6,014,080.67
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Wrapped BNB is a cross-chain bridge protocol that enables the transfer and use of BNB tokens across multiple blockchain networks. It provides wrapped BNB tokens and associated DeFi infrastructure such as vaults, staking, and liquidity pools to facilitate yield generation and asset management on non-BSC chains.
-
-### Architecture
-
-The Wrapped BNB family relies on shared token contracts like ERC20Peg and MantaMintableERC20 for wrapped asset representation, while governance controllers (FarmV2Controller, FarmV3Controller) manage farming operations across multiple vaults and pools. Proxy contracts (ArcProxy, TransparentUpgradeableProxy) provide upgradeability for core logic such as staking and cross-chain gateways.
+Wrapped BNB is a Kava chain wrapped-asset token backed 1:1 by BNB using the BEP3 protocol. It represents BNB on Kava rather than a broad DeFi platform; unsupported claims about vaults, staking, farming, liquidity pools, yield generation, and asset-management infrastructure should be removed.
 
 ## Audit Coverage Summary
 
@@ -31,11 +32,11 @@ The Wrapped BNB family relies on shared token contracts like ERC20Peg and MantaM
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2021-09 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -77,7 +78,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Auditsarrow_outward](https://skynet.certik.com/projects/kava) | CertiK | Audit | 2021-09 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -98,13 +98,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [2397] Auditsarrow_outward
 
 Fork inheritance lineage and inherited audits are included when available.

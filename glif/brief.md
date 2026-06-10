@@ -5,8 +5,8 @@
 - Project: GLIF (`glif`)
 - Website: [https://glif.io](https://glif.io)
 - Lifecycle: active (Tier 0, 90% below peak)
-- Generated: 2026-05-31T08:09:21.216Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.330Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 6 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $33,718,896.73
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-GLIF is a liquid staking protocol on Base that allows users to stake assets and receive liquid staking tokens, enabling them to earn staking rewards while maintaining liquidity. It provides a decentralized way to participate in network security without locking up capital.
+GLIF is a Filecoin/DePIN yield, credit, and liquidity protocol with activity on Filecoin and Base. Its product surface should not be described as Base-only; project-level coverage and TVL should account for Filecoin as well as Base, with any Base-only figures clearly labeled as such.
 
 ### Architecture
 

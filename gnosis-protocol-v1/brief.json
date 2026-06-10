@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gnosis-protocol-v1",
-  "generated_at": "2026-05-31T08:12:29.461Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.338Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "gnosis-protocol-v1",
@@ -32,24 +32,24 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 112,
-    "total_addresses": 165,
-    "unique_implementations": 112,
-    "total_deployments": 165,
-    "audited_contracts": 1,
-    "unaudited_contracts": 74,
-    "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 74,
+    "total_contracts": 110,
+    "total_addresses": 163,
+    "unique_implementations": 110,
+    "total_deployments": 163,
+    "audited_contracts": 0,
+    "unaudited_contracts": 73,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 73,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 37,
-    "coverage_pct": 1.3,
-    "total_audits": 7,
-    "scoreable_audits": 2,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 2227602.00202,
-    "tvl_usd": 95875443.05159259,
+    "tvl_usd": 94385998.55885388,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 95875443.05
+      "ethereum": 94385998.56
     },
     "asd_usd": 94385998.55885388,
     "website_url": "https://gnosis.io/",
@@ -58,19 +58,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2021-12",
-    "audit_freshness": "stale",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 3,
-      "unknown": 4
+      "stale": 0,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Gnosis Protocol v1 is a decentralized exchange protocol that enables batch auctions for trading tokens, with a focus on prediction market outcomes and conditional tokens. It provides infrastructure for trustless, on-chain order matching and settlement.",
+    "project_purpose": "Gnosis Protocol v1 is a legacy decentralized exchange protocol centered on batch auctions for token trading, with on-chain order settlement through its BatchExchange contracts. Conditional Tokens, prediction-market infrastructure, GPv2/CoW Swap, Hashi, and other Gnosis ecosystem products should be treated as separate scopes unless explicitly tied to GPv1 deployments.",
     "relationship_narrative": "The BatchExchange contract relies on IdToAddressBiMap for efficient address-to-ID mapping, while ConditionalTokens enable prediction market outcomes. Proxy contracts like AdminUpgradeabilityProxy and MassetProxy provide upgradeability and asset management, with various tokens serving as trading pairs or governance assets.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 110,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -169,40 +174,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc59b0e4de5f1248c1140964e0ff287b192407e0c",
-      "name": "ConditionalTokens",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Gnosis Protocol v1",
-      "tvl_usd": 1489444.4927387116,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ConditionalTokens",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc59b0e4de5f1248c1140964e0ff287b192407e0c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1489444.4927387116,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-9142",
-        "audit-9143"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -590,37 +561,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc00e94cb662c3520282e6f5717214004a7f26888",
-      "name": "Comp",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Compound Finance",
-      "product_line": "Gnosis Protocol v1",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Comp",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc00e94cb662c3520282e6f5717214004a7f26888",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -1390,7 +1330,7 @@
       "chain_name": "ethereum",
       "address": "0x6f400810b62df8e13fded51be75ff5393eaa841f",
       "name": "IdToAddressBiMap",
-      "role": "unknown",
+      "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Gnosis Protocol v1",
@@ -4030,169 +3970,8 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 9142,
-      "audit_key": "audit-9142",
-      "report_name": "2020-01-20_accumulator_audit.pdf",
-      "report_url": "https://github.com/gnosis/conditional-tokens-contracts/blob/master/docs/audit/2020-01-20_accumulator_audit.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2020-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "CTHelpers.sol",
-        "ConditionalTokens.sol"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9143,
-      "audit_key": "audit-9143",
-      "report_name": "AuditReport-ConditionalTokens.md",
-      "report_url": "https://github.com/gnosis/conditional-tokens-contracts/blob/master/docs/audit/AuditReport-ConditionalTokens.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "ConditionalTokens"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9144,
-      "audit_key": "audit-9144",
-      "report_name": "Gnosis_Audit_Report.pdf",
-      "report_url": "https://github.com/gnosis/pm-contracts/blob/master/docs/audit/Gnosis_Audit_Report.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9145,
-      "audit_key": "audit-9145",
-      "report_name": "GnosisProtocolV2May2021.pdf",
-      "report_url": "https://github.com/gnosis/gp-v2-contracts/blob/main/audits/GnosisProtocolV2May2021.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2021-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9146,
-      "audit_key": "audit-9146",
-      "report_name": "[Cowswap_10122021]SCAudit_Report_2.pdf",
-      "report_url": "https://github.com/gnosis/gp-v2-contracts/blob/main/audits/%5BCowswap_10122021%5DSCAudit_Report_2.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2021-12",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9149,
-      "audit_key": "audit-9149",
-      "report_name": "HashiMay2023.pdf",
-      "report_url": "https://github.com/gnosis/hashi/blob/main/audits/HashiMay2023.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9150,
-      "audit_key": "audit-9150",
-      "report_name": "g0-HashiMar2024.pdf",
-      "report_url": "https://github.com/gnosis/hashi/blob/main/audits/g0-HashiMar2024.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
-  "auditor_coverage": [
-    {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 1.3,
-      "latest_audit": "2021-12"
-    }
-  ],
+  "audits": [],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -4419,7 +4198,7 @@
       "chain_name": "ethereum",
       "address": "0x6f400810b62df8e13fded51be75ff5393eaa841f",
       "name": "IdToAddressBiMap",
-      "role": "unknown",
+      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -4646,42 +4425,17 @@
     }
   ],
   "origin_summary": {
-    "native": 57,
-    "upstream": 7,
+    "native": 56,
+    "upstream": 6,
     "standard_library": 5,
     "needs_review": 43
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 2
-    },
-    "extraction_confidence_counts": {
-      "high": 2
-    },
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 9144,
-        "report_name": "Gnosis_Audit_Report.pdf"
-      },
-      {
-        "audit_id": 9145,
-        "report_name": "GnosisProtocolV2May2021.pdf"
-      },
-      {
-        "audit_id": 9146,
-        "report_name": "[Cowswap_10122021]SCAudit_Report_2.pdf"
-      },
-      {
-        "audit_id": 9149,
-        "report_name": "HashiMay2023.pdf"
-      },
-      {
-        "audit_id": 9150,
-        "report_name": "g0-HashiMar2024.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "minefi",
-  "generated_at": "2026-05-24T22:52:03.153Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:07.706Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1433572.60199,
-    "tvl_usd": 1433572.60199,
+    "dl_tvl_usd": 1405717.90914,
+    "tvl_usd": 1405717.90914,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "MineFi is a liquid staking protocol that allows users to stake assets and receive liquid derivative tokens in return, enabling continued participation in DeFi while earning staking rewards.",
-    "relationship_narrative": "No product families or contracts are defined in the provided inventory, so no relationships can be described.",
+    "project_purpose": "MineFi is a Filecoin/FIL staking or liquid-staking protocol. Its smart-contract or Filecoin actor address inventory is currently unavailable, so deployment coverage should not be inferred from an empty contract list.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

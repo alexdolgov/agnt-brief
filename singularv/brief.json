@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "singularv",
-  "generated_at": "2026-05-29T14:19:59.947Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:16.193Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "singularv",
     "tier": 0,
@@ -23,18 +23,18 @@
   },
   "summary": {
     "total_contracts": 83,
-    "total_addresses": 776,
+    "total_addresses": 775,
     "unique_implementations": 83,
-    "total_deployments": 776,
-    "audited_contracts": 13,
-    "unaudited_contracts": 57,
-    "contracts_verified_audited": 13,
-    "contracts_verified_unaudited": 57,
+    "total_deployments": 775,
+    "audited_contracts": 8,
+    "unaudited_contracts": 62,
+    "contracts_verified_audited": 8,
+    "contracts_verified_unaudited": 62,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 13,
-    "coverage_pct": 18.6,
-    "total_audits": 12,
-    "scoreable_audits": 8,
+    "coverage_pct": 11.4,
+    "total_audits": 7,
+    "scoreable_audits": 5,
     "dl_tvl_usd": 2544044.73287,
     "tvl_usd": 1083206446.2792177,
     "tvl_source": "on_chain",
@@ -56,14 +56,19 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 11,
+      "stale": 6,
       "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "SingularV is a DeFi protocol that provides risk curation and lending optimization services, primarily built on top of Morpho. It offers tokenized supply vaults and migration tools to help users manage and optimize their positions across various lending markets.",
+    "project_purpose": "SingularV is a Morpho risk curator and onchain market-making firm focused on optimization and risk management for Morpho-curated vaults and markets. Morpho core contracts, Morpho periphery, Chainlink oracles, standard tokens, and migration tooling should be treated as upstream or third-party dependencies unless direct SingularV ownership is evidenced.",
     "relationship_narrative": "The Tokenized Supply Vaults and Vaults families represent the core user-facing products, while the Ethereum family provides the necessary infrastructure (adapters, factories, bundlers) to interact with external protocols like Aave and Compound. The Oracles family supplies critical price data to these vaults and migration tools, and the legacy Morpho V0 contracts serve as the foundational lending layer that some components may still rely on.",
     "product_family_count": 10
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 83,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -422,7 +427,6 @@
         }
       ],
       "audits_covering": [
-        "audit-8735",
         "audit-8736"
       ],
       "is_audited": true,
@@ -505,7 +509,6 @@
         }
       ],
       "audits_covering": [
-        "audit-8735",
         "audit-8736"
       ],
       "is_audited": true,
@@ -570,7 +573,6 @@
         }
       ],
       "audits_covering": [
-        "audit-8735",
         "audit-8736"
       ],
       "is_audited": true,
@@ -5120,7 +5122,6 @@
         }
       ],
       "audits_covering": [
-        "audit-8735",
         "audit-8736"
       ],
       "is_audited": true,
@@ -5185,7 +5186,6 @@
         }
       ],
       "audits_covering": [
-        "audit-8735",
         "audit-8736"
       ],
       "is_audited": true,
@@ -6805,16 +6805,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-8735"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -7002,7 +7000,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -7011,16 +7009,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-8739"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -7075,16 +7071,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-8735"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -7234,23 +7228,12 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
         }
       ],
       "audits_covering": [
-        "audit-8731",
         "audit-8732",
         "audit-8733",
         "audit-8737",
-        "audit-8739",
         "audit-8740"
       ],
       "is_audited": true,
@@ -8211,16 +8194,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-8735"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -8647,16 +8628,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-8735"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -8919,46 +8898,6 @@
   ],
   "audits": [
     {
-      "audit_id": 8731,
-      "audit_key": "audit-8731",
-      "report_name": "2023-10-13-morpho-blue-and-speed-jump-irm-open-zeppelin.pdf",
-      "report_url": "https://github.com/morpho-org/morpho-blue/blob/main/audits/2023-10-13-morpho-blue-and-speed-jump-irm-open-zeppelin.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "ConstantsLib",
-        "ErrorsLib",
-        "EventsLib",
-        "IERC20",
-        "IIrm",
-        "IMorpho",
-        "IMorphoCallbacks",
-        "IOracle",
-        "Irm",
-        "MarketsParamsLib",
-        "MathLib",
-        "Morpho",
-        "MorphoBalancesLib",
-        "MorphoLib",
-        "MorphoStorageLib",
-        "SafeTransferLib",
-        "SharesMathLib",
-        "UtilsLib"
-      ],
-      "matched_contracts": 4,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 8732,
       "audit_key": "audit-8732",
       "report_name": "2023-11-13-morpho-blue-cantina-managed-review.pdf",
@@ -9051,73 +8990,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 8735,
-      "audit_key": "audit-8735",
-      "report_name": "2023-11-16-morpho-blue-periphery-open-zeppelin.pdf",
-      "report_url": "https://github.com/morpho-org/metamorpho/blob/main/audits/2023-11-16-morpho-blue-periphery-open-zeppelin.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AaveV2EthereumMigrationBundler",
-        "AaveV2MigrationBundler",
-        "AaveV3MigrationBundler",
-        "AaveV3OptimizerMigrationBundler",
-        "AggregatorV3Interface",
-        "BaseBundler",
-        "ChainlinkDataFeedLib",
-        "ChainlinkOracle",
-        "CompoundV2MigrationBundler",
-        "CompoundV3MigrationBundler",
-        "ConstantsLib",
-        "ERC4626Bundler",
-        "ErrorsLib",
-        "EthereumBundler",
-        "EthereumPermitBundler",
-        "EthereumStEthBundler",
-        "EventsLib",
-        "ICEth",
-        "ICToken",
-        "ICompoundV3",
-        "IComptroller",
-        "IDaiPermit",
-        "IERC4626",
-        "IMetaMorpho",
-        "IMorphoBundler",
-        "IMorphoMarketParams",
-        "IMulticall",
-        "IStEth",
-        "IUniversalRewardsDistributor",
-        "IWNative",
-        "IWstEth",
-        "MainnetLib",
-        "MetaMorpho",
-        "MetaMorphoFactory",
-        "MigrationBundler",
-        "MorphoBundler",
-        "Permit2Bundler",
-        "PermitBundler",
-        "StEthBundler",
-        "TransferBundler",
-        "UniversalRewardsDistributor",
-        "UrdBundler",
-        "UrdFactory",
-        "VaultLib",
-        "WNativeBundler"
-      ],
-      "matched_contracts": 9,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 8736,
       "audit_key": "audit-8736",
       "report_name": "2024-01-05-periphery-cantina-competition.pdf",
@@ -9183,61 +9055,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 8738,
-      "audit_key": "audit-8738",
-      "report_name": "Omniscia_Morpho_HeapOrdering.pdf",
-      "report_url": "https://github.com/morpho-org/morpho-optimizers/blob/main/audits/Omniscia_Morpho_HeapOrdering.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-08",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8739,
-      "audit_key": "audit-8739",
-      "report_name": "Pessimistic_Morpho_Aave_V2.pdf",
-      "report_url": "https://github.com/morpho-org/morpho-optimizers/blob/main/audits/Pessimistic_Morpho_Aave_V2.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "EntryPositionsManager",
-        "ExitPositionsManager",
-        "IncentivesVault",
-        "InterestRatesManager",
-        "Lens",
-        "MatchingEngine",
-        "Morpho",
-        "MorphoGovernance",
-        "MorphoStorage",
-        "MorphoUtils",
-        "PositionsManagerUtils",
-        "SwapManagerUniV2"
-      ],
-      "matched_contracts": 6,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 8740,
       "audit_key": "audit-8740",
       "report_name": "Spearbit_MorphoV1.pdf",
@@ -9291,37 +9108,9 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8742,
-      "audit_key": "audit-8742",
-      "report_name": "Morpho_Omniscia.pdf",
-      "report_url": "https://github.com/morpho-org/morpho-data-structures/blob/main/audits/Morpho_Omniscia.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-08",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
-    {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 11,
-      "coverage_pct": 15.7,
-      "latest_audit": "2023-11"
-    },
     {
       "auditor": "Spearbit",
       "tier": 1,
@@ -9421,6 +9210,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xa7995f71aa11525db02fc2473c37dee5dbf55107",
+      "name": "EthereumBundler",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x4095f064b8d3c3548a3bebfd0bbfd04750e30077",
       "name": "EthereumBundlerV2",
       "role": "unknown",
@@ -9454,6 +9253,16 @@
       "address": "0xc88058aa7c210e23e6cc54baba7ba6c51479dd4d",
       "name": "Liquidator",
       "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101",
+      "name": "MetaMorphoFactory",
+      "role": "registry",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -9561,6 +9370,26 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x330eefa8a787552dc5cad3c3ca644844b1e61ddb",
+      "name": "UniversalRewardsDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9baa51245cdd28d8d74afe8b3959b616e9ee7c8d",
+      "name": "UrdFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x3e33c1e80cf8fd074da6eb408f2059c2a9900c03",
       "name": "UsycBot",
       "role": "unknown",
@@ -9637,10 +9466,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 43
+      "extraction_exact": 24
     },
     "extraction_confidence_counts": {
-      "high": 6,
+      "high": 3,
       "medium": 2
     },
     "audits_with_repo_references": [],
@@ -9651,16 +9480,8 @@
         "report_name": "2023-11-14-metamorpho-cantina-managed-review.pdf"
       },
       {
-        "audit_id": 8738,
-        "report_name": "Omniscia_Morpho_HeapOrdering.pdf"
-      },
-      {
         "audit_id": 8741,
         "report_name": "TrailOfBits_Morpho_Compound.pdf"
-      },
-      {
-        "audit_id": 8742,
-        "report_name": "Morpho_Omniscia.pdf"
       }
     ],
     "inherited_remapped_matches": []

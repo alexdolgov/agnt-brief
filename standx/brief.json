@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "standx",
-  "generated_at": "2026-05-26T11:54:50.607Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:16.616Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "standx",
     "tier": 0,
@@ -22,26 +22,24 @@
     "drop_from_peak_pct": 54.73525041166236
   },
   "summary": {
-    "total_contracts": 18,
-    "total_addresses": 27,
-    "unique_implementations": 18,
-    "total_deployments": 27,
+    "total_contracts": 17,
+    "total_addresses": 26,
+    "unique_implementations": 17,
+    "total_deployments": 26,
     "audited_contracts": 4,
-    "unaudited_contracts": 4,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 4,
-    "contracts_verified_unaudited": 4,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 10,
-    "coverage_pct": 50,
+    "coverage_pct": 57.1,
     "total_audits": 6,
     "scoreable_audits": 5,
     "dl_tvl_usd": 48272335,
-    "tvl_usd": 12710657.83887345,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "bsc": 12710657.84
-    },
-    "asd_usd": 12710657.83887345,
+    "tvl_usd": 48272335,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://standx.com/referral?code=defillama",
     "chains": [
       "bsc"
@@ -58,46 +56,20 @@
     }
   },
   "topography": {
-    "project_purpose": "StandX is a DeFi protocol on BSC that provides a canonical bridge for cross-chain asset transfers and a derivatives platform for trading perpetual contracts. It issues a stablecoin (StandDUSD) and uses proxy-based upgradeable contracts for core logic.",
+    "project_purpose": "StandX is a multi-chain Perps DEX on BNB/BSC and Solana powered by yield-bearing DUSD, with a DefiLlama-tracked canonical bridge component. Solana/SVM audit coverage should be tracked separately from BSC/EVM contract coverage unless an audit explicitly covers the same EVM code or a verified equivalence mapping exists.",
     "relationship_narrative": "The BSC family provides the core stablecoin (StandDUSD) and settlement logic, which is used by both the Pools family for liquidity and the StandX Bridge family for cross-chain transfers. The bridge relies on the same StandDUSD token contract and uses a Safe multisig for governance, while pools facilitate trading of the stablecoin.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 17,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xb67e5eaf770a384ab28029d08b9bc5ebe32beb0f",
-      "name": "PancakeV3Pool",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "pancakeswap",
-      "product_line": "Pools",
-      "tvl_usd": 12710657.83887345,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PancakeV3Pool",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xb67e5eaf770a384ab28029d08b9bc5ebe32beb0f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 12710657.83887345,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -888,21 +860,21 @@
       "auditor": "WatchPug",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 37.5,
+      "coverage_pct": 42.9,
       "latest_audit": "2025-11"
     },
     {
       "auditor": "RigSec",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 25,
+      "coverage_pct": 28.6,
       "latest_audit": "2025-05"
     }
   ],
   "coverage_gaps": [],
   "origin_summary": {
     "native": 14,
-    "upstream": 2,
+    "upstream": 1,
     "standard_library": 2,
     "needs_review": 0
   },

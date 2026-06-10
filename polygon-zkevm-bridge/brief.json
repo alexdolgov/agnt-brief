@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "polygon-zkevm-bridge",
-  "generated_at": "2026-05-31T14:54:04.155Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-06-10T20:59:09.351Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "polygon-zkevm-bridge",
@@ -56,7 +56,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Polygon zkEVM Bridge is the canonical bridge for transferring assets between Ethereum and Polygon zkEVM. On Ethereum, the bridge is exposed through a TransparentUpgradeableProxy that delegates to native Polygon/AggLayer bridge implementation logic for custody, deposits, and withdrawals; the logical bridge implementation should not be treated as OpenZeppelin standard-library code.",
     "relationship_narrative": null,
     "product_family_count": 1
   },
@@ -75,7 +75,7 @@
       "chain_name": "ethereum",
       "address": "0x2a3dd3eb832af982ec71669e178424b10dca2ede",
       "name": "AgglayerBridge",
-      "role": "operational_periphery",
+      "role": "bridge_template",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "Polygon zkEVM Bridge",

@@ -5,17 +5,17 @@
 - Project: Boros (`boros`)
 - Website: [https://boros.pendle.finance/markets](https://boros.pendle.finance/markets)
 - Lifecycle: active (Tier 0, 16.9% below peak)
-- Generated: 2026-05-23T03:44:52.408Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:01.064Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $10,383,882.77
+- DeFi Llama TVL: $10,311,393.62
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Boros is a derivatives protocol on Arbitrum One that enables users to trade perpetual contracts and other derivative products. It provides a market hub for order management and a router for trade execution and liquidity routing.
+Boros is Pendle's Arbitrum-based interest-rate and funding-rate derivatives platform for leveraged funding-rate or yield exposure, enabling users to speculate on rate shifts or hedge perpetuals funding-rate exposure through its market hub, router, and AMM components.
 
 ### Architecture
 

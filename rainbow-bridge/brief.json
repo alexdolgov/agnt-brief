@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "rainbow-bridge",
-  "generated_at": "2026-05-31T10:24:37.553Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:09.461Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "rainbow-bridge",
     "tier": 1,
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Rainbow Bridge is a trustless bridge enabling asset transfers between Ethereum and NEAR Protocol. It uses a custodian contract on Ethereum to lock assets and a corresponding contract on NEAR to mint wrapped tokens, secured by light client verification.",
+    "project_purpose": "Rainbow Bridge is an Aurora product that enables asset transfers between Ethereum, NEAR Protocol, and Aurora. Its Ethereum-side surface includes bridge infrastructure such as NearBridge, an EthCustodian contract for locking assets, and token/asset contracts such as eNear, with cross-chain transfers secured by light client verification.",
     "relationship_narrative": "The EthCustodian contract is the sole Ethereum component, interacting with NEAR's light client and prover contracts to validate transfers. No additional infrastructure contracts are present on Ethereum.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

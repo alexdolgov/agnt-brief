@@ -5,8 +5,8 @@
 - Project: Asseto AoABT (`asseto-aoabt`)
 - Website: [https://asseto.finance/product](https://asseto.finance/product)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:43:10.430Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.775Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $22,280,390.66
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Asseto AoABT is an Asseto-operated real-world asset token/product backed 1:1 by Class C Shares of an underlying fund, with subscribe and redeem functionality. DefiLlama tracks AoABT on Avalanche and HashKey Chain; currently only one Avalanche proxy contract is identified in the mapped contract surface, so the HashKey Chain deployment surface remains missing or unmapped.
 
 ## Audit Coverage Summary
 

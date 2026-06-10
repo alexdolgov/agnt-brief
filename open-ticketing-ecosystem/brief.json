@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "open-ticketing-ecosystem",
-  "generated_at": "2026-05-31T10:09:24.405Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:08.799Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "open-ticketing-ecosystem",
     "tier": 0,
@@ -61,9 +61,14 @@
     }
   },
   "topography": {
-    "project_purpose": "The OPEN Ticketing Ecosystem is a decentralized event ticketing protocol that enables event creation, ticket sales, and on-chain revenue distribution. It uses a modular architecture with factories, registries, and economic models to manage events and fuel (gas) costs across multiple chains.",
+    "project_purpose": "The OPEN Ticketing Ecosystem is a decentralized event ticketing protocol that enables event creation, ticket sales, and on-chain revenue distribution. It uses a modular architecture with factories, registries, and economic models to manage events and OPN-based ticketing fees or ecosystem fuel across multiple chains.",
     "relationship_narrative": "The Event Management family relies on the Registry and Auth for access control, while the Economics & Fuel family uses the PriceOracle for conversions and the Token family for fee payments. All families share the Auth contract for permissioned operations, and the EconomicsFactory likely deploys Economics instances tied to events.",
     "product_family_count": 11
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 24,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

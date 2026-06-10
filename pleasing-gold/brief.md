@@ -7,8 +7,8 @@
 - Project: Pleasing Gold (`pleasing-gold`)
 - Website: [https://www.pleasinggold.com/](https://www.pleasinggold.com/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-27T11:52:37.844Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:59:09.347Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum
 - Contract surface: 8 unique implementations (11 raw deployments)
 - DeFi Llama TVL: $87,873,758.84
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Pleasing Gold is a real-world asset (RWA) protocol on Arbitrum One that tokenizes gold exposure. It issues PGOLD, a token representing gold, and includes related tokens PLSP and PUSD, likely for liquidity and stablecoin functionality.
+Pleasing Gold is a real-world asset (RWA) protocol on Arbitrum One evidenced by the PGOLD gold-backed token product. PLSP and PUSD are related token contracts in the observed contract surface, but their specific product roles are not independently confirmed by the available evidence.
 
 ### Architecture
 

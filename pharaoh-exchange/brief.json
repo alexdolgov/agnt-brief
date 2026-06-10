@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "pharaoh-exchange",
-  "generated_at": "2026-05-31T05:40:30.306Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-6a3e7e-9cd8",
+  "generated_at": "2026-06-10T20:59:09.285Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "pharaoh-exchange",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Pharaoh Exchange is a decentralized exchange (DEX) on Avalanche that facilitates token swaps and liquidity provision. It appears to support both concentrated liquidity (V3) and legacy AMM models, with integrated yield farming and governance features.",
+    "project_purpose": "Pharaoh Exchange is a decentralized exchange on Avalanche offering token swaps, liquidity provision, incentive mechanisms, and governance features. Its contract surface should be reviewed carefully to distinguish confirmed Pharaoh-owned deployments from Ramses/upstream or other potentially contaminated contracts before making ownership or coverage claims.",
     "relationship_narrative": "The V3 family relies on shared infrastructure contracts like AccessHub for access control, Voter for governance, and Pulse for incentives. The PharaohMigrator and TreasuryHelper support token migration and treasury management across the protocol.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 48,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "prime-staking",
-  "generated_at": "2026-05-23T18:18:37.298Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:09.363Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "prime-staking",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5087815.56268,
-    "tvl_usd": 5087815.56268,
+    "dl_tvl_usd": 4768361.635,
+    "tvl_usd": 4768361.635,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Prime Staking is a liquid staking protocol on Base that allows users to stake assets and receive liquid derivative tokens, enabling them to earn staking rewards while maintaining liquidity. It also includes vesting mechanisms for token distribution.",
+    "project_purpose": "Prime Staking is an XDC staking/liquid staking protocol. Its public TVL-bearing product is associated with XDC staking and liquid staking; Base PRFI/ONFT/vesting contracts should be treated only as ancillary or unverified infrastructure unless independently documented as part of the Prime Staking staking system.",
     "relationship_narrative": "The ONFTDiamond token contract is the primary liquid staking derivative, while PRFI is a related token. The PRFIVestingV2Proxy manages vesting of PRFI tokens, indicating a shared token economy where staking rewards or allocations are distributed through vesting.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 10,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

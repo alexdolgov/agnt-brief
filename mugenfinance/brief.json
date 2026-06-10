@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mugenfinance",
-  "generated_at": "2026-05-31T10:01:19.049Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:07.820Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "mugenfinance",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "MugenFinance is a yield aggregator on Arbitrum One that optimizes returns for users by automatically compounding rewards. It uses a native token (Mugen) and a staked version (xMugen) to facilitate yield strategies and governance.",
+    "project_purpose": "MugenFinance is a DeFi project tracked by DefiLlama on Arbitrum One and associated with the on-chain Mugen token contract. The current mugenfinance.com homepage appears stale, mismatched, or repurposed and should not be used as live protocol evidence. Protocol details should be verified against DefiLlama, archived/project documentation, and contract source with manual review; claims about governance and auto-compounding should not be included unless corroborated.",
     "relationship_narrative": "The Mugen token is the core asset, while xMugen represents staked Mugen for yield accrual. The Treasury contract manages protocol-owned funds and supports the yield strategies.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 12,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

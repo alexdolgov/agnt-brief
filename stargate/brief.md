@@ -5,21 +5,22 @@
 - Project: StarGate (`stargate`)
 - Website: [https://stargate.vechain.org/](https://stargate.vechain.org/)
 - Lifecycle: unknown
-- Generated: 2026-05-23T13:07:38.885Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:16.620Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $6,168,830.51
+- DeFi Llama TVL: $5,922,096.47
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-StarGate is a cross-chain liquidity transfer protocol that enables users to swap native assets across different blockchains with unified liquidity pools and instant guaranteed finality.
-
-### Architecture
-
-No product families or contracts were identified in the provided metadata, so no structural relationships can be described.
+StarGate is a VeChain-based staking protocol that supports on-chain staking, validator delegation, rewards, and related NFT/migration functionality for the VeChain ecosystem.
 
 ## Audit Coverage Summary
 

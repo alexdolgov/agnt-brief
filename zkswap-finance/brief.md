@@ -5,11 +5,11 @@
 - Project: zkSwap Finance (`zkswap-finance`)
 - Website: [https://zkswap.finance](https://zkswap.finance)
 - Lifecycle: active (Tier 0, 92.4% below peak)
-- Generated: 2026-05-25T02:51:49.768Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:19.626Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: sonic, zksync-era
 - Contract surface: 98 unique implementations (131 raw deployments)
-- DeFi Llama TVL: $1,254,813.00
+- DeFi Llama TVL: $1,219,349.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -63,9 +63,9 @@ The AMM families (V2, V3, StableSwap) form the core trading infrastructure, whil
 | BulkSender | unknown | sonic | [`0xaf02a2...d5533e`](./contracts/sonic-146/0xaf02a22ea072d8a7fc573935aea7152345d5533e/) | ⚠️ Unaudited |
 | GnosisSafeProxy | governance | sonic | 2 deployments: sonic [`0x4780ea...7c2262`](./contracts/sonic-146/0x4780ea7fc1fc4c51732ab31d797d4e24757c2262/); sonic `0x825e62...ff1e13` | ⚠️ Unaudited |
 | LongOFT | unknown | sonic | 2 deployments: sonic [`0xbdd352...f6146f`](./contracts/sonic-146/0xbdd352f339e27e07089039ba80029f9135f6146f/); sonic `0xfe5714...1ecd49` | ⚠️ Unaudited |
-| Multicall3 | periphery | sonic | [`0x3be99d...a84917`](./contracts/sonic-146/0x3be99db246c81df2bd8dc0d708e03f64e1a84917/) | ⚠️ Unaudited |
-| NonfungiblePositionManager | governance | sonic | 2 deployments: sonic [`0x2e1164...0094f5`](./contracts/sonic-146/0x2e11640ee1368f2cd90c36607760a274a30094f5/); zksync-era `0xe8a9c6...683860` | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptor | token | sonic | [`0xf5fb98...2ae0d5`](./contracts/sonic-146/0xf5fb98fce5ee81b4e2c5ac1829b12259f32ae0d5/) | ⚠️ Unaudited |
+| Multicall3 | operational_periphery | sonic | [`0x3be99d...a84917`](./contracts/sonic-146/0x3be99db246c81df2bd8dc0d708e03f64e1a84917/) | ⚠️ Unaudited |
+| NonfungiblePositionManager | operational_periphery | sonic | 2 deployments: sonic [`0x2e1164...0094f5`](./contracts/sonic-146/0x2e11640ee1368f2cd90c36607760a274a30094f5/); zksync-era `0xe8a9c6...683860` | ⚠️ Unaudited |
+| NonfungibleTokenPositionDescriptor | operational_periphery | sonic | [`0xf5fb98...2ae0d5`](./contracts/sonic-146/0xf5fb98fce5ee81b4e2c5ac1829b12259f32ae0d5/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | sonic | [`0x486d7c...def71b`](./contracts/sonic-146/0x486d7c009b78310528aca11574ec816d2fdef71b/) | ⚠️ Unaudited |
 | QuoterV2 | periphery | sonic | [`0x3a59bf...ca1caa`](./contracts/sonic-146/0x3a59bfe426f81726c31280aaeae1125f50ca1caa/) | ⚠️ Unaudited |
 | TickLens | periphery | sonic | [`0x783438...7ca5ac`](./contracts/sonic-146/0x7834387b0f48c0a2bf9c8fab696e2ab2587ca5ac/) | ⚠️ Unaudited |
@@ -196,7 +196,7 @@ Verified + unaudited native implementations ranked by TVL:
 | sonic | [`0x7f2038...2aac65`](./contracts/sonic-146/0x7f2038b9a6d80b34dc5ec66208bccfd9332aac65/) | AggregatorSmartV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0xaf02a2...d5533e`](./contracts/sonic-146/0xaf02a22ea072d8a7fc573935aea7152345d5533e/) | BulkSender | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0xbdd352...f6146f`](./contracts/sonic-146/0xbdd352f339e27e07089039ba80029f9135f6146f/) | LongOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x2e1164...0094f5`](./contracts/sonic-146/0x2e11640ee1368f2cd90c36607760a274a30094f5/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x2e1164...0094f5`](./contracts/sonic-146/0x2e11640ee1368f2cd90c36607760a274a30094f5/) | NonfungiblePositionManager | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x3a59bf...ca1caa`](./contracts/sonic-146/0x3a59bfe426f81726c31280aaeae1125f50ca1caa/) | QuoterV2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x783438...7ca5ac`](./contracts/sonic-146/0x7834387b0f48c0a2bf9c8fab696e2ab2587ca5ac/) | TickLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x3ebf33...00997f`](./contracts/sonic-146/0x3ebf331e045128d05ec374e90dd6448d4400997f/) | ZFOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |

@@ -5,8 +5,8 @@
 - Project: Sonic Gateway (`sonic-gateway`)
 - Website: [https://gateway.soniclabs.com/ethereum/sonic/s](https://gateway.soniclabs.com/ethereum/sonic/s)
 - Lifecycle: active (Tier 0, 94.6% below peak)
-- Generated: 2026-05-31T14:54:04.177Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:59:16.242Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $67,153,153.23
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Sonic Gateway is Sonic's canonical bridge between Ethereum and Sonic, enabling users to deposit tokens on Ethereum and receive equivalent tokens on the Sonic network for cross-chain asset transfers.
 
 ## Audit Coverage Summary
 
@@ -30,11 +30,11 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 2
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $7,800,454.70
-- Latest audit: 2018-06 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -51,7 +51,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| TokenDeposit | token | ethereum | [`0xa1e248...3bec20`](./contracts/ethereum-1/0xa1e2481a9cd0cb0447eeb1cbc26f1b3fff3bec20/) | ⚠️ Unaudited |
+| TokenDeposit | bridge_template | ethereum | [`0xa1e248...3bec20`](./contracts/ethereum-1/0xa1e2481a9cd0cb0447eeb1cbc26f1b3fff3bec20/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -75,8 +75,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [fantom-audit-first.pdf](https://github.com/Fantom-foundation/tokensale/blob/master/audits/fantom-audit-first.pdf) | unknown | Audit | 2018-06 | stale | Direct | n/a | 0 | n/a |
-| [fantom-audit-second.pdf](https://github.com/Fantom-foundation/tokensale/blob/master/audits/fantom-audit-second.pdf) | unknown | Audit | 2018-06 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -97,14 +95,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [4670] fantom-audit-first.pdf
-- [4671] fantom-audit-second.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

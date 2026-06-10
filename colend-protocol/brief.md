@@ -5,21 +5,22 @@
 - Project: Colend Protocol (`colend-protocol`)
 - Website: [https://www.colend.xyz](https://www.colend.xyz)
 - Lifecycle: unknown
-- Generated: 2026-05-23T21:28:42.882Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:01.462Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $4,319,128.32
+- DeFi Llama TVL: $4,187,307.88
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Colend Protocol is a decentralized lending platform that enables users to supply and borrow crypto assets. It uses a pool-based model where lenders earn interest and borrowers provide collateral to take out loans.
-
-### Architecture
-
-No contract families or infrastructure relationships are identifiable from the provided metadata.
+Colend Protocol is a BTCFi lending and borrowing liquidity market on Core, enabling users to supply assets to earn yield and borrow against collateral. The protocol includes CLND-related governance and yield-boost features for participants in its lending markets.
 
 ## Audit Coverage Summary
 

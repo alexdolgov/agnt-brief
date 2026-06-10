@@ -4,17 +4,17 @@
 
 - Project: Switcheo Finance (`switcheo-finance`)
 - Lifecycle: active (Tier 0, 76.4% below peak)
-- Generated: 2026-05-31T10:49:00.182Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.928Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 48 unique implementations (101 raw deployments)
+- Contract surface: 47 unique implementations (100 raw deployments)
 - DeFi Llama TVL: $1,234,738.76
-- On-chain TVL (included contracts): $68,368,860.51
-- TVL by chain: Ethereum $68,368,860.51
+- On-chain TVL (included contracts): $68,279,527.22
+- TVL by chain: Ethereum $68,279,527.22
 
 ## Project Description
 
-Switcheo Finance is a decentralized exchange (DEX) protocol that facilitates token swaps and trading on Ethereum. It appears to use a broker model for order matching and settlement, with various token contracts integrated for trading pairs.
+Switcheo Finance is a decentralized exchange protocol on Ethereum that facilitates token swaps and trading through exchange and broker-style settlement contracts. External ERC-20 token contracts traded or referenced by the exchange should not be described as Switcheo-owned protocol components or included in project-owned contract counts or protocol TVL calculations.
 
 ### Architecture
 
@@ -22,15 +22,15 @@ The BrokerV2 contract acts as the core execution engine, relying on the Utils li
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/30 (0.0%)
-- Verified + Unaudited implementations: 30
+- Verified implementations audited: 0/29 (0.0%)
+- Verified + Unaudited implementations: 29
 - Verified by bytecode match: 0
 - Unverified implementations: 18
-- Unique implementations: 48
-- Raw deployments: 101
+- Unique implementations: 47
+- Raw deployments: 100
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $68,368,860.51
+- ASD (verified + unaudited TVL): $68,279,527.22
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -45,13 +45,12 @@ The BrokerV2 contract acts as the core execution engine, relying on the Utils li
 
 - None
 
-### ⚠️ Verified + Unaudited (30)
+### ⚠️ Verified + Unaudited (29)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | DuskToken | token | ethereum | [`0x940a2d...4aa551`](./contracts/ethereum-1/0x940a2db1b7008b6c776d4faaca729d6d4a4aa551/) | ⚠️ Unaudited |
 | CelsiusToken | token | ethereum | [`0xaaaebe...09d42d`](./contracts/ethereum-1/0xaaaebe6fe48e54f431b0c390cfaf0b017d09d42d/) | ⚠️ Unaudited |
-| Token | token | ethereum | [`0xc0f9bd...df54a9`](./contracts/ethereum-1/0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9/) | ⚠️ Unaudited |
 | BalancerGovernanceToken | token | ethereum | [`0xba1000...424e3d`](./contracts/ethereum-1/0xba100000625a3754423978a60c9317c58a424e3d/) | ⚠️ Unaudited |
 | AlephPaymentProcessor | unknown | ethereum | [`0x6b55f3...e8cb8b`](./contracts/ethereum-1/0x6b55f32ea969910838defd03746ced5e2ae8cb8b/) | ⚠️ Unaudited |
 | Crowdsale | unknown | ethereum | [`0x398e41...a446f7`](./contracts/ethereum-1/0x398e41ac3d5972b4bac2320cd130c7a25ca446f7/) | ⚠️ Unaudited |
@@ -154,7 +153,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 30 |
 | upstream | 5 |
-| standard_library | 6 |
+| standard_library | 5 |
 | needs_review | 7 |
 
 ## Scope Matching Notes

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "goplus-security",
-  "generated_at": "2026-05-31T14:54:11.146Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:04.381Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "goplus-security",
@@ -22,26 +22,24 @@
     "drop_from_peak_pct": 50.367736234567076
   },
   "summary": {
-    "total_contracts": 26,
-    "total_addresses": 40,
-    "unique_implementations": 26,
-    "total_deployments": 40,
+    "total_contracts": 23,
+    "total_addresses": 37,
+    "unique_implementations": 23,
+    "total_deployments": 37,
     "audited_contracts": 0,
-    "unaudited_contracts": 14,
+    "unaudited_contracts": 11,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 14,
+    "contracts_verified_unaudited": 11,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 12,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 32764727,
-    "tvl_usd": 3447064.766836483,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 3447064.77
-    },
-    "asd_usd": 3447064.766836483,
+    "tvl_usd": 32764727,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://gopluslabs.io",
     "chains": [
       "arbitrum",
@@ -61,12 +59,12 @@
     }
   },
   "topography": {
-    "project_purpose": "GoPlus Security provides token locker services that allow project teams to lock tokens or liquidity positions, enhancing trust and security for investors. It also offers developer tools and security APIs for risk detection.",
+    "project_purpose": "GoPlus Security is a Web3 and AI security platform that provides a modular user security layer, security APIs, token risk checks, app and browser-extension security tools, GoPlus Security Module, SafeToken Protocol products including SafeToken Locker, AgentGuard, and DeepScan.",
     "relationship_narrative": "The locker families (V2 and V3) share the same deployer cluster, indicating a common development team and likely shared infrastructure. The OpenAPI family includes standard token contracts that may be referenced by the security APIs, but no direct on-chain dependency is visible.",
     "product_family_count": 3
   },
   "surface_sufficiency": {
-    "unique_implementations": 26,
+    "unique_implementations": 23,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -75,68 +73,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x408e41876cccdc0f92210600ef50372656052a38",
-      "name": "RepublicToken",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "OpenAPI definition",
-      "tvl_usd": 3447052.552098967,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "RepublicToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x408e41876cccdc0f92210600ef50372656052a38",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 3447052.552098967,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4639cd8cd52ec1cf2e496a606ce28d8afb1c792f",
-      "name": "Token",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "OpenAPI definition",
-      "tvl_usd": 12.214737515987926,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Token",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x4639cd8cd52ec1cf2e496a606ce28d8afb1c792f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 12.214737515987926,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -186,37 +122,6 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x0c1dc73159e30c4b06170f2593d3118968a0dca5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xea51801b8f5b88543ddad3d1727400c15b209d8f",
-      "name": "INUKO",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "OpenAPI definition",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "INUKO",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xea51801b8f5b88543ddad3d1727400c15b209d8f",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1106,7 +1011,7 @@
     "native": 21,
     "upstream": 2,
     "standard_library": 0,
-    "needs_review": 3
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

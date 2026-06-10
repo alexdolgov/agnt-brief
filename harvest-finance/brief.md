@@ -7,8 +7,8 @@
 - Project: Harvest Finance (`harvest-finance`)
 - Website: [https://harvest.finance/](https://harvest.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T08:20:50.047Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.519Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, bsc, ethereum, polygon
 - Contract surface: 445 unique implementations (1257 raw deployments)
 - DeFi Llama TVL: $12,929,392.29
@@ -23,11 +23,11 @@
 - Unverified implementations: 180
 - Unique implementations: 445
 - Raw deployments: 1257
-- Audits discovered: 6
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-01 (aging)
-- Staleness: 0 fresh, 1 aging, 4 stale, 1 unknown
+- Staleness: 0 fresh, 1 aging, 4 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -525,7 +525,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [PeckShield-Harvest.pdf](https://github.com/harvestfi/audits/blob/main/PeckShield-Harvest.pdf) | PeckShield | Audit | 2020-10 | stale | Direct | contract_name | 150 | high |
 | [CertiK-Harvest.pdf](https://github.com/harvestfi/audits/blob/main/CertiK-Harvest.pdf) | CertiK | Audit | 2020-11 | stale | Direct | contract_name | 207 | high |
 | [Halborn-Harvest-2025.pdf](https://github.com/harvestfi/audits/blob/main/Halborn-Harvest-2025.pdf) | Halborn | Audit | 2025-01 | aging | Direct | contract_name | 436 | high |
-| [README.md](https://github.com/harvestfi/audits/blob/main/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -546,13 +545,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=5
 - Match method counts: extraction_exact=1242
-
-Zero-match audit list:
-
-- [6941] README.md
 
 Fork inheritance lineage and inherited audits are included when available.

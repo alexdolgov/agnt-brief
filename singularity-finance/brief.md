@@ -7,21 +7,22 @@
 - Project: Singularity Finance (`singularity-finance`)
 - Website: [https://singularityfinance.ai/](https://singularityfinance.ai/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T16:24:13.433Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:16.163Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $5,364,404.02
+- DeFi Llama TVL: $5,990,316.81
 - On-chain TVL (included contracts): $2,686,081.32
 - TVL by chain: Ethereum $2,686,081.32
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Singularity Finance is a yield-focused protocol on Ethereum, centered around its native SFI token. The protocol appears to offer yield generation opportunities, likely through staking or farming mechanisms involving the SFI token.
-
-### Architecture
-
-The protocol consists of a single product family built around the SFI token. All functionality is encapsulated within this token contract, with no additional supporting contracts identified.
+Singularity Finance is a broader AI/DeFAI finance platform positioned around AI-Fi, real-world assets, and financial-layer infrastructure, with multichain ambitions across networks such as Ethereum, Base, and BNB Chain. It should not be characterized solely as an Ethereum yield farm or as functionality fully encapsulated in the SFI token contract.
 
 ## Audit Coverage Summary
 

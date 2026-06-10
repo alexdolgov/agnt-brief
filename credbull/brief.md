@@ -6,8 +6,8 @@
 
 - Project: Credbull (`credbull`)
 - Lifecycle: dead (Tier 0, 99.9% below peak)
-- Generated: 2026-05-31T07:45:04.433Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.549Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, polygon
 - Contract surface: 83 unique implementations (128 raw deployments)
 - DeFi Llama TVL: $10,940,088.68
@@ -16,7 +16,7 @@
 
 ## Project Description
 
-Credbull is a DeFi protocol offering fixed-yield vaults that allow users to deposit assets and earn predictable returns. It operates on Polygon and Arbitrum, using a modular architecture with shared configuration and fee management.
+Credbull is a DeFi protocol offering fixed-yield vaults that allow users to deposit assets and earn predictable returns. DefiLlama indicates a broader current chain scope than the verified contract surface represented here; this brief's verified contract surface covers the recognized Polygon and Arbitrum chain IDs only.
 
 ### Architecture
 

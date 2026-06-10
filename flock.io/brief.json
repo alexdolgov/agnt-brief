@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "flock.io",
-  "generated_at": "2026-05-31T08:01:33.397Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.021Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "flock.io",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "FLock.io is a decentralized AI protocol that enables collaborative model training and inference. It uses token incentives and staking to coordinate participants in federated learning tasks.",
+    "project_purpose": "FLock.io is a private AI training platform for custom models that emphasizes user data control. Current accessible evidence does not substantiate claims about collaborative inference, federated-learning tasks, staking, or token-incentive mechanisms.",
     "relationship_narrative": "The Token and Staking family provides the FLock token and staking infrastructure used by the Task and Pool Management family to incentivize participation. The gmFlock Exchange family operates alongside, potentially offering liquidity for staked or reward tokens, while FlockConfig serves as a shared configuration contract across families.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 15,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

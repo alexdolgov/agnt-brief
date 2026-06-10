@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "sideshift",
-  "generated_at": "2026-05-31T10:35:20.992Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:16.066Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "sideshift",
     "tier": 0,
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "SideShift is a cross-chain bridge that enables users to shift tokens between different blockchains. It uses a vault contract to manage deposits and withdrawals, and an XAI token for governance or utility.",
+    "project_purpose": "SideShift is a direct-to-wallet crypto swap/exchange service that lets users swap assets across networks. It is categorized by DefiLlama under Cross Chain Bridge, but vault-based lock-and-release bridge mechanics should not be claimed without verified contract source or documentation. XAI is SideShift's native ERC20 token and can be staked for a share of revenues; it should not be described as a governance or fee-utility token unless supported by current documentation.",
     "relationship_narrative": "The SideShiftVault contract handles the core bridging logic, while the XAI token likely serves as a governance or fee token within the ecosystem. Both contracts are deployed by the same deployer, indicating a unified infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

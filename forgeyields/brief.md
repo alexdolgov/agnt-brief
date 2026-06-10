@@ -5,21 +5,22 @@
 - Project: ForgeYields (`forgeyields`)
 - Website: [https://app.forgeyields.com](https://app.forgeyields.com)
 - Lifecycle: active (Tier 0, 16.4% below peak)
-- Generated: 2026-05-24T16:14:48.659Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:04.051Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,885,557.35
+- DeFi Llama TVL: $1,826,878.97
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-ForgeYields is an onchain capital allocator that deploys assets into yield-generating strategies on Ethereum. It aggregates user deposits and routes them to various DeFi protocols to optimize returns.
-
-### Architecture
-
-The protocol consists of a single contract that serves as the capital allocator, with no additional supporting contracts or proxy structures identified.
+ForgeYields is a cross-chain yield aggregator and onchain capital allocator. It accepts deposits through token gateway contracts across multiple chains, including Starknet, and allocates capital into yield-generating strategies across Ethereum L1/L2 DeFi venues to optimize returns.
 
 ## Audit Coverage Summary
 

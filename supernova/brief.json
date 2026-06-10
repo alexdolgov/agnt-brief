@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "supernova",
-  "generated_at": "2026-05-31T10:46:46.244Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.841Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "supernova",
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Supernova is a decentralized exchange (DEX) protocol on Ethereum that facilitates automated market making (AMM) and concentrated liquidity trading. It enables users to swap tokens, provide liquidity, and participate in governance through ve-tokenomics and gauge-based incentives.",
+    "project_purpose": "Supernova is an Ethereum DEX protocol with two product families: Supernova AMM, covering V2-style pair, factory, router, bootstrapper, and pair API contracts; and Supernova CL, covering concentrated-liquidity trading infrastructure. The protocol enables token swaps and liquidity provision across these AMM and concentrated-liquidity surfaces.",
     "relationship_narrative": "The protocol's infrastructure is shared across multiple pool deployers (CustomPoolDeployer), gauge and bribe factories, and a unified voting and ve-token system (VoterV3, VeArtProxy, Minter). These components support liquidity incentives and governance across all pool types, including the concentrated liquidity pools from Supernova CL.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 47,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -408,7 +413,7 @@
       "chain_name": "ethereum",
       "address": "0x1fd265236e240f4f4487ae91de589ec88f7535aa",
       "name": "BlackholePairAPIV2",
-      "role": "unknown",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -933,7 +938,7 @@
       "chain_name": "ethereum",
       "address": "0x7f8f2b6d0b0aae8e95221ce90b5c26b128c1cb66",
       "name": "PairBootstrapper",
-      "role": "unknown",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1008,7 +1013,7 @@
       "chain_name": "ethereum",
       "address": "0x42a7a5baafb1818da3a39ce1b97a58799d69bbb8",
       "name": "PairGenerator",
-      "role": "unknown",
+      "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,

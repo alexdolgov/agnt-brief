@@ -7,17 +7,17 @@
 - Project: Multichain (`multichain`)
 - Website: [https://multichain.org/](https://multichain.org/)
 - Lifecycle: dead (Tier 0, 99.6% below peak)
-- Generated: 2026-05-27T07:23:17.911Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-a9ad
-- Chains: avalanche, ethereum
-- Contract surface: 20 unique implementations (30 raw deployments)
+- Generated: 2026-06-10T20:59:07.826Z
+- Pipeline run: correction-skeletal-description-fix-all
+- Chains: ethereum
+- Contract surface: 17 unique implementations (22 raw deployments)
 - DeFi Llama TVL: $44,466,550.29
 - On-chain TVL (included contracts): $12,482,372.81
 - TVL by chain: Ethereum $12,482,372.81
 
 ## Project Description
 
-Multichain is a cross-chain bridge protocol that enables users to transfer tokens and arbitrary messages between different blockchains. It provides infrastructure for cross-chain swaps, token bridging, and generic message passing.
+Multichain is a cross-chain bridge and router protocol that enables users to transfer tokens and perform cross-chain swaps between supported blockchains. Any contract surface, coverage, or product-family analysis should be based on confirmed Multichain/AnySwap deployments and should not treat Circle CCTP MessageTransmitter or TokenMessenger contracts as Multichain-owned infrastructure.
 
 ### Architecture
 
@@ -25,18 +25,18 @@ The Mainnet family provides generic cross-chain messaging infrastructure, while 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 6/17 (35.3%)
-- Verified + Unaudited implementations: 11
+- Verified implementations audited: 6/14 (42.9%)
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
 - Unverified implementations: 3
-- Unique implementations: 20
-- Raw deployments: 30
-- Audits discovered: 16
+- Unique implementations: 17
+- Raw deployments: 22
+- Audits discovered: 15
 - Scoreable audits (matched contracts): 3
 - Active bug bounty: BlockSec ([program](https://github.com/anyswap/Anyswap-Audit/blob/master/BlockSec/blocksec_audit_multichain_routerv7_v1.0-signed.pdf))
 - ASD (verified + unaudited TVL): $128.81
 - Latest audit: 2022-04 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [dead]. ASD of $128.81 represents exposure in a protocol with dead activity.
 
@@ -44,9 +44,9 @@ The Mainnet family provides generic cross-chain messaging infrastructure, while 
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| PeckShield | Tier 2 | 5 | 29.4% | 2022-03 |
-| Dedaub | Tier 2 | 2 | 11.8% | 2022-03 |
-| BlockSec | Tier 2 | 1 | 5.9% | 2022-08 |
+| PeckShield | Tier 2 | 5 | 35.7% | 2022-03 |
+| Dedaub | Tier 2 | 2 | 14.3% | 2022-03 |
+| BlockSec | Tier 2 | 1 | 7.1% | 2022-08 |
 
 ## Contract Surface
 
@@ -61,7 +61,7 @@ The Mainnet family provides generic cross-chain messaging infrastructure, while 
 | MultiDao | unknown | ethereum | [`0x172280...90d558`](./contracts/ethereum-1/0x1722800c0f1bfdf916ef948ef7790a861e90d558/) | ✅ Audited |
 | ve | unknown | ethereum | [`0xbba411...48ceba`](./contracts/ethereum-1/0xbba4115ecb1f811061ecb5a8dc8fcdee2748ceba/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (11)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -71,11 +71,8 @@ The Mainnet family provides generic cross-chain messaging infrastructure, while 
 | AnycallV7Config | governance | ethereum | [`0xc75b18...73eb03`](./contracts/ethereum-1/0xc75b1860f553012a16de727b2bb2402aaf73eb03/) | ⚠️ Unaudited |
 | AnyCallV7Upgradeable | unknown | ethereum | 2 deployments: ethereum [`0x6bc6e0...f04508`](./contracts/ethereum-1/0x6bc6e050b3db999a322093c6c8144da517f04508/); ethereum `0x8efd01...604374` | ⚠️ Unaudited |
 | BscBridge | operational_periphery | ethereum | [`0xc34277...b34972`](./contracts/ethereum-1/0xc342774492b54ce5f8ac662113ed702fc1b34972/) | ⚠️ Unaudited |
-| Message | unknown | ethereum | 5 deployments: ethereum [`0x0a992d...738f81`](./contracts/ethereum-1/0x0a992d191deec32afe36203ad87d7d289a738f81/); ethereum `0x33486c...9a38d8`; ethereum `0xb2f381...2fb2c8`; ethereum `0xbd3fa8...af3155`; avalanche `0x21f337...1232d1` | ⚠️ Unaudited |
-| MessageTransmitter | operational_periphery | ethereum | 2 deployments: ethereum [`0x7209b4...fc2092`](./contracts/ethereum-1/0x7209b4941e20787d7486a694d56c573e6dfc2092/); avalanche `0x818635...c29880` | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | 2 deployments: ethereum [`0x065d01...ab2261`](./contracts/ethereum-1/0x065d014e0c898ae6a35bcf1c5effa98796ab2261/); ethereum `0x6c24ba...303a4e` | ⚠️ Unaudited |
 | Reward | unknown | ethereum | [`0x44529a...ad7db6`](./contracts/ethereum-1/0x44529a37a43bab8af2336698e31f2e4585ad7db6/) | ⚠️ Unaudited |
-| TokenMessenger | token | avalanche | [`0x6b2553...de6982`](./contracts/avalanche-43114/0x6b25532e1060ce10cc3b0a99e5683b91bfde6982/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,7 +100,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Multichain Audit Reports](https://github.com/anyswap/Anyswap-Audit/find/master) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [blocksec_audit_multichain_routerv7_v1.0-signed.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/BlockSec/blocksec_audit_multichain_routerv7_v1.0-signed.pdf) | BlockSec | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
 | [Read [veMULTI proposal](https://medium.com/multichainorg/vemulti-proposal-stake-multi-get-multichain-fees-rewards-d8d13b9e20cb) and [code audit]()](https://github.com/anyswap/Anyswap-Audit/blob/master/BlockSec/blocksec_audit_multichain_v1.0-signed.pdf) | BlockSec | Audit | 2022-04 | stale | Direct | contract_name | 1 | high |
 | [CertiK_Public_Audit_Report_Multichain_Aptos_Router.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/CertiK/CertiK_Public_Audit_Report_Multichain_Aptos_Router.pdf) | CertiK | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
@@ -131,16 +127,13 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xc75b18...73eb03`](./contracts/ethereum-1/0xc75b1860f553012a16de727b2bb2402aaf73eb03/) | AnycallV7Config | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6bc6e0...f04508`](./contracts/ethereum-1/0x6bc6e050b3db999a322093c6c8144da517f04508/) | AnyCallV7Upgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc34277...b34972`](./contracts/ethereum-1/0xc342774492b54ce5f8ac662113ed702fc1b34972/) | BscBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0a992d...738f81`](./contracts/ethereum-1/0x0a992d191deec32afe36203ad87d7d289a738f81/) | Message | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7209b4...fc2092`](./contracts/ethereum-1/0x7209b4941e20787d7486a694d56c573e6dfc2092/) | MessageTransmitter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x44529a...ad7db6`](./contracts/ethereum-1/0x44529a37a43bab8af2336698e31f2e4585ad7db6/) | Reward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x6b2553...de6982`](./contracts/avalanche-43114/0x6b25532e1060ce10cc3b0a99e5683b91bfde6982/) | TokenMessenger | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 13 |
+| native | 10 |
 | upstream | 3 |
 | standard_library | 1 |
 | needs_review | 3 |
@@ -149,13 +142,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=3
 - Match method counts: extraction_exact=8
-
-Zero-match audit list:
-
-- [4568] Multichain Audit Reports
 
 Fork inheritance lineage and inherited audits are included when available.

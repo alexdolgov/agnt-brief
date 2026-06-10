@@ -5,21 +5,22 @@
 - Project: GETH (`geth`)
 - Website: [https://guarda.com/staking/ethereum-staking/](https://guarda.com/staking/ethereum-staking/)
 - Lifecycle: active (Tier 0, 51.4% below peak)
-- Generated: 2026-05-31T08:09:21.213Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.321Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $16,048,230.57
 - On-chain TVL (included contracts): $16,161,210.88
 - TVL by chain: Ethereum $16,161,210.88
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-GETH is a liquid staking protocol on Ethereum that allows users to stake ETH and receive a liquid staking token (GETH) representing their staked position and accrued rewards.
-
-### Architecture
-
-The protocol consists of a single product family with one core contract, the StakeToken, which handles both staking and token issuance.
+GETH is Guarda's Ethereum liquid staking/tokenized staking product. Users stake ETH and receive GETH as a liquid token representing their staked position and accrued rewards. The on-chain surface includes StakeToken and an EthStakingCrowdsale contract that should be reviewed as part of the protocol topology; no single-contract architecture should be assumed without further review.
 
 ## Audit Coverage Summary
 

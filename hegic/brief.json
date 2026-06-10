@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hegic",
-  "generated_at": "2026-05-31T08:23:55.391Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.559Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hegic",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 36,
     "coverage_pct": 0,
-    "total_audits": 2,
+    "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 10022682.550530002,
     "tvl_usd": 54068.4849904824,
@@ -54,13 +54,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 1,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Hegic is an on-chain options trading protocol that allows users to buy and sell call and put options on ETH and ERC-20 assets. It uses liquidity pools to underwrite options, enabling permissionless and non-custodial options trading.",
+    "project_purpose": "Hegic is a peer-to-pool on-chain options protocol tracked on Arbitrum and Ethereum. The current product lets users trade ETH and WBTC call and put options, including ATM and OTM options, and offers one-click option strategies backed by protocol liquidity pools. Legacy Ethereum HegicCALL/HegicPUT and HegicETHPool/HegicERCPool deployments should be distinguished from the current multi-chain Hegic options system, whose TVL is primarily on Arbitrum.",
     "relationship_narrative": "The Hegic contract acts as a registry or access control layer for the option contracts (HegicCALL and HegicPUT), which in turn draw liquidity from the shared HegicETHPool and HegicERCPool. These pools serve as the common underwriting infrastructure for all option types.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 63,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -2348,27 +2353,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7287,
-      "audit_key": "audit-7287",
-      "report_name": "specification.pdf",
-      "report_url": "https://github.com/hegic/hegic-hardcore-beta/blob/hegic-hardcore-beta/docs/specification.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -2649,10 +2633,6 @@
       {
         "audit_id": 7286,
         "report_name": "PeckShield-Audit-Report-Hegic-Herge-Protocol-Upgrade-v1.0.pdf"
-      },
-      {
-        "audit_id": 7287,
-        "report_name": "specification.pdf"
       }
     ],
     "inherited_remapped_matches": []

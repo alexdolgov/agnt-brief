@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Notional
 
-⚠️ Lifecycle status: DEAD - TVL dropped 13.8% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 13.8% over 90 days
 
 ## Project Overview
 
 - Project: Notional (`notional`)
 - Website: [https://notional.finance](https://notional.finance)
-- Lifecycle: dead (Tier 0, 99.6% below peak)
-- Generated: 2026-05-24T04:09:46.240Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 0, 99.6% below peak)
+- Generated: 2026-06-10T20:59:08.741Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum
 - Contract surface: 79 unique implementations (351 raw deployments)
-- DeFi Llama TVL: $3,585,621.00
+- DeFi Llama TVL: $3,585,994.00
 - On-chain TVL (included contracts): $1,244,511.36
 - TVL by chain: Ethereum $1,244,511.36
 
 ## Project Description
 
-Notional is a decentralized lending and borrowing protocol that enables fixed-rate and variable-rate loans, leveraged yield farming, and liquidity provision across multiple chains. It uses a system of nTokens for liquidity, PrimeCash and PrimeDebt for money-market positions, and vaults for yield strategies.
+Notional is a decentralized lending and borrowing protocol focused on fixed-rate and variable-rate lending, leveraged yield strategies, and liquidity provision. It uses nTokens for liquidity, PrimeCash and PrimeDebt for money-market positions, and vaults for yield strategies.
 
 ### Architecture
 
@@ -31,20 +31,19 @@ The Core Lending family provides the base assets (nTokens, PrimeCash, PrimeDebt)
 - Unverified implementations: 6
 - Unique implementations: 79
 - Raw deployments: 351
-- Audits discovered: 7
-- Scoreable audits (matched contracts): 5
+- Audits discovered: 6
+- Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): $755,738.95
 - Latest audit: 2026-03 (fresh)
-- Staleness: 4 fresh, 0 aging, 2 stale, 1 unknown
+- Staleness: 3 fresh, 0 aging, 2 stale, 1 unknown
 - Tier 1 coverage: 19.2% (Sherlock)
-- Note: This protocol is classified as [dead]. ASD of $755,738.95 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $755,738.95 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
 | Sherlock | Tier 1 | 14 | 19.2% | 2026-03 |
-| yAudit | Tier 2 | 12 | 16.4% | 2025-11 |
 
 ## Contract Surface
 
@@ -164,7 +163,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Sherlock Audits | January 2026](https://sherlock-files.ams3.digitaloceanspaces.com/reports/2026.01.17%20-%20Final%20-%20Notional%20Collaborative%20Audit%20Report%201768611627.pdf) | Sherlock | Contest | 2026-01 | fresh | Direct | contract_name | 8 | high |
 | [Sherlock Audits | September 2022](https://github.com/sherlock-audit/2022-09-notional-judging/blob/main/Audit_Report.pdf) | Sherlock | Contest | 2022-09 | stale | Direct | contract_name | 5 | high |
 | [Sherlock Audits | March 2026](https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2026.03.06%20-%20Final%20-%20Notional%20Collaborative%20Audit%20Report%201772819509.pdf) | Sherlock | Contest | 2026-03 | fresh | Direct | contract_name | 1 | high |
-| [Notional v4 Security Audit Report.pdf](https://github.com/mixbytes/audits_public/blob/master/Notional%20Finance/Notional%20v4/Notional%20v4%20Security%20Audit%20Report.pdf) | yAudit | Audit | 2025-11 | fresh | Direct | contract_name | 31 | high |
 | [DL audit link](https://www.openzeppelin.com/news/notional-audit) | OpenZeppelin | Audit | 2020-12 | stale | Direct | n/a | 0 | n/a |
 | [DL audit link](https://audits.sherlock.xyz/contests/59) | Sherlock | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
 
@@ -247,8 +245,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=5
-- Match method counts: extraction_exact=76
+- Extraction confidence breakdown: high=4
+- Match method counts: extraction_exact=45
 
 Zero-match audit list:
 

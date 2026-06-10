@@ -5,17 +5,17 @@
 - Project: Rip.xyz (`rip.xyz`)
 - Website: [https://www.rip.xyz/](https://www.rip.xyz/)
 - Lifecycle: active (Tier 0, 45.5% below peak)
-- Generated: 2026-05-31T10:25:48.393Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:11.465Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: hyperliquid
-- Contract surface: 8 unique implementations (10 raw deployments)
+- Contract surface: 6 unique implementations (8 raw deployments)
 - DeFi Llama TVL: $1,041,783.34
-- On-chain TVL (included contracts): $624,723.60
-- TVL by chain: Hyperliquid $624,723.60
+- On-chain TVL (included contracts): $0.00
+- TVL by chain: Hyperliquid $0.00
 
 ## Project Description
 
-Rip.xyz provides automated NFT strategies on HyperEVM, centered around a yield-bearing vault (rHYPURR) that accepts deposits and issues receipt tokens, with liquidity provision through a Uniswap V3 pool for the rHYPURR/wHYPE pair.
+Rip.xyz provides tokenized vault strategies on HyperEVM. Its initial strategy, Hypurr Vault, offers NFT-backed vault exposure for fractional access to Hypurr NFTs. External rHYPURR liquidity venues, such as third-party DEX pools, should be treated as dependencies rather than the core project purpose.
 
 ### Architecture
 
@@ -23,15 +23,15 @@ The rHYPURR vault (implemented behind an ERC1967 proxy) accepts wHYPE deposits a
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/4 (25.0%)
-- Verified + Unaudited implementations: 3
+- Verified implementations audited: 1/2 (50.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 4
-- Unique implementations: 8
-- Raw deployments: 10
+- Unique implementations: 6
+- Raw deployments: 8
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 1
-- ASD (verified + unaudited TVL): $624,723.60
+- ASD (verified + unaudited TVL): $0.00
 - Latest audit: 2026-01 (fresh)
 - Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -40,7 +40,7 @@ The rHYPURR vault (implemented behind an ERC1967 proxy) accepts wHYPE deposits a
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Three Sigma | Tier 2 | 1 | 25.0% | 2026-01 |
+| Three Sigma | Tier 2 | 1 | 50.0% | 2026-01 |
 
 ## Contract Surface
 
@@ -50,13 +50,11 @@ The rHYPURR vault (implemented behind an ERC1967 proxy) accepts wHYPE deposits a
 |---|---|---|---|---|
 | rHYPURR | unknown | hyperliquid | 2 deployments: hyperliquid [`0x0df4f6...94667b`](./contracts/hyperliquid-999/0x0df4f69cf9417b1817ab9579bf099537a694667b/); hyperliquid `0x533811...79bee7` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| UniswapV3Pool | core_logic | hyperliquid | [`0x1f6b7b...e34420`](./contracts/hyperliquid-999/0x1f6b7b53623b3039720a186b31ef7f50f0e34420/) | ⚠️ Unaudited |
 | Nft | token | hyperliquid | 2 deployments: hyperliquid [`0x3c7fd3...83b123`](./contracts/hyperliquid-999/0x3c7fd353d32344476d964deda8ea112a9d83b123/); hyperliquid `0x9125e2...bac685` | ⚠️ Unaudited |
-| WHYPE9 | unknown | hyperliquid | [`0x555555...555555`](./contracts/hyperliquid-999/0x5555555555555555555555555555555555555555/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -100,9 +98,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 1 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 1 |
-| needs_review | 5 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

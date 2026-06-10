@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "equilibria",
-  "generated_at": "2026-05-25T16:32:24.059Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:02.300Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "equilibria",
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 120,
-    "total_addresses": 834,
-    "unique_implementations": 120,
-    "total_deployments": 834,
+    "total_contracts": 119,
+    "total_addresses": 833,
+    "unique_implementations": 119,
+    "total_deployments": 833,
     "audited_contracts": 15,
-    "unaudited_contracts": 71,
+    "unaudited_contracts": 70,
     "contracts_verified_audited": 9,
-    "contracts_verified_unaudited": 62,
+    "contracts_verified_unaudited": 61,
     "contracts_verified_by_bytecode": 15,
     "contracts_unverified": 34,
-    "coverage_pct": 17.4,
+    "coverage_pct": 17.6,
     "total_audits": 6,
     "scoreable_audits": 5,
-    "dl_tvl_usd": 19993697.42108,
+    "dl_tvl_usd": 18142263.84557,
     "tvl_usd": 26877414.727821626,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -76,18 +76,23 @@
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2025-06",
-    "audit_freshness": "fresh",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
-      "fresh": 1,
-      "aging": 2,
+      "fresh": 0,
+      "aging": 3,
       "stale": 3,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Equilibria is a yield optimization protocol that builds on top of Pendle Finance to offer boosted yield strategies. It provides liquid restaking tokens (LRTs), vaults for Pendle yield tokens, and a cross-chain veTokenomics system with bribes and governance.",
+    "project_purpose": "Equilibria is a yield optimization protocol built on top of Pendle Finance, focused on ePENDLE/Pendle-related boosted yield strategies. Broader LRT, governance, bribe, and cross-chain veTokenomics claims should be treated as contract-surface observations unless supported by current public documentation.",
     "relationship_narrative": "The Equilibria Core on Ethereum issues EQB and vlEQB, which are bridged to sidechain deployments via XEqbToken and EPendleOFT tokens. Sidechain deployments replicate the booster/proxy/vault pattern and use shared infrastructure like BaseRewardPool and EqbZap, while the LRT family operates independently with its own set of oracles and deposit/withdrawal contracts.",
     "product_family_count": 12
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 119,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -6660,37 +6665,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 5000,
-      "chain_name": "mantle",
-      "address": "0xd27b18915e7acc8fd6ac75db6766a80f8d2f5729",
-      "name": "Pendle",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "Pendle",
-      "product_line": "Equilibria",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Pendle",
-      "deployments": [
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0xd27b18915e7acc8fd6ac75db6766a80f8d2f5729",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x4d32c8ff2facc771ec7efc70d6a8468bc30c26bf",
@@ -10282,7 +10256,7 @@
       "report_url": "https://2415009796-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fb5P1hkrsWCfUtKNR9bnR%2Fuploads%2FQKP8F3G6lbidKTu8nkEc%2FEquilibria_Staked_LP_Audit_Report_by_WatchPug-rev1.pdf",
       "auditor": "WatchPug",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -10453,7 +10427,7 @@
       "auditor": "WatchPug",
       "tier": 2,
       "contracts_covered": 15,
-      "coverage_pct": 17.4,
+      "coverage_pct": 17.6,
       "latest_audit": "2025-06"
     },
     {
@@ -10698,7 +10672,7 @@
   ],
   "origin_summary": {
     "native": 44,
-    "upstream": 5,
+    "upstream": 4,
     "standard_library": 16,
     "needs_review": 55
   },

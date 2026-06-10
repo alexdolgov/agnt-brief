@@ -5,8 +5,8 @@
 - Project: ShardingDAO (`shardingdao`)
 - Website: [https://shardingdao.com/](https://shardingdao.com/)
 - Lifecycle: active (Tier 0, 47.7% below peak)
-- Generated: 2026-05-31T10:36:04.767Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.055Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 12 unique implementations (22 raw deployments)
 - DeFi Llama TVL: $7,781,100.38
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-ShardingDAO is a staking pool protocol that allows users to stake assets and earn rewards. It includes mechanisms for marketing mining, token bar staking, shards market trading, and buyout proposals.
+ShardingDAO is an Ethereum staking and NFT-fragmentation protocol. It supports staking assets such as WBTC and ETH for rewards, fractionalizing NFTs into tradable shards, shard marketplace trading, collective shard ownership, buyout and governance mechanisms, and SHD-related reward/token features.
 
 ### Architecture
 

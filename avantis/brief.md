@@ -7,8 +7,8 @@
 - Project: Avantis (`avantis`)
 - Website: [https://www.avantisfi.com/referral?code=DefiLlama](https://www.avantisfi.com/referral?code=DefiLlama)
 - Lifecycle: declining (Tier 0, 61.9% below peak)
-- Generated: 2026-06-10T20:51:55.511Z
-- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
+- Generated: 2026-06-10T20:58:57.923Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 61 unique implementations (240 raw deployments)
 - DeFi Llama TVL: $45,493,850.13

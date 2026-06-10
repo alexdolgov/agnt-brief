@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "galaxy-curation",
-  "generated_at": "2026-05-27T14:44:22.030Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-06-10T20:59:04.143Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Galaxy Curation is a protocol for risk curators, likely providing tools or infrastructure for managing and assessing risk in DeFi. Based on the limited metadata, it appears to be a curation platform rather than a direct financial product.",
-    "relationship_narrative": "No product families or contracts are defined in the provided metadata, so no relationships can be described.",
+    "project_purpose": "Galaxy Curation is a DefiLlama-listed risk-curation activity associated with Galaxy, with TVL tracked on Ethereum and Base. Available evidence does not identify a standalone smart-contract protocol or curation-tool product, and no project-owned contract inventory is currently captured.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

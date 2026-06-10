@@ -1,14 +1,12 @@
 # Agentic Audit Brief: ChainGPT
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 1.4% over 90 days
-
 ## Project Overview
 
 - Project: ChainGPT (`chaingpt`)
 - Website: [https://pad.chaingpt.org/staking-pools](https://pad.chaingpt.org/staking-pools)
-- Lifecycle: unknown (Tier 0, 92.6% below peak)
-- Generated: 2026-05-31T07:41:50.054Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, 92.6% below peak)
+- Generated: 2026-06-10T20:59:01.377Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, bsc, ethereum, linea, polygon
 - Contract surface: 87 unique implementations (92 raw deployments)
 - DeFi Llama TVL: $4,610,938.17
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-ChainGPT is a launchpad protocol that facilitates token sales and fundraising across multiple chains. It provides infrastructure for projects to launch tokens and for users to participate in early-stage offerings.
+ChainGPT should be described as ChainGPT Pad, a launchpad/fundraising protocol with associated staking pools. Its topology and contract relationships should be treated as low-confidence unless supported by deployer, factory, event, or source-code evidence; do not assert that all observed or unnamed contracts are native modules tied to a single central ChainGPT contract.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ All contracts belong to a single product family deployed by two main deployer cl
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

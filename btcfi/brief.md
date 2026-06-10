@@ -5,8 +5,8 @@
 - Project: BTCFi (`btcfi`)
 - Website: [https://btcfi.one](https://btcfi.one)
 - Lifecycle: active (Tier 0, 58.9% below peak)
-- Generated: 2026-05-31T07:37:56.822Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.167Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 15 unique implementations (16 raw deployments)
 - DeFi Llama TVL: $11,758,166.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-BTCFi is a DeFi protocol on Base that enables users to deposit Bitcoin-pegged assets as collateral to mint a stablecoin, and to earn yield through farming mechanisms.
+BTCFi is a cross-chain Bitcoin collateralization/CDP and asset-management platform centered on using Bitcoin-pegged collateral to mint BtcUSD. Its public project surface spans multiple chains, including Bitcoin, Bifrost Network, Base, and CORE; the Base contracts represent only a small subset of the overall project and TVL. Any Base-only contract brief should be labeled as limited coverage and should not imply that total parent-project TVL is secured solely by the listed Base deployments.
 
 ### Architecture
 

@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Biswap
 
-⚠️ Lifecycle status: DEAD - TVL dropped 45.7% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 45.7% over 90 days
 
 ## Project Overview
 
 - Project: Biswap (`biswap`)
 - Website: [https://biswap.org](https://biswap.org)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-23T15:06:32.449Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:58:59.722Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, bsc, ethereum
 - Contract surface: 84 unique implementations (210 raw deployments)
-- DeFi Llama TVL: $5,702,407.00
+- DeFi Llama TVL: $5,641,146.00
 - On-chain TVL (included contracts): $609,279.41
 - TVL by chain: Bsc $609,279.41
 
 ## Project Description
 
-Biswap is a decentralized exchange (DEX) protocol operating across multiple chains, enabling users to swap tokens, provide liquidity, and earn yield through farming. It includes a native BSW token for governance and incentives.
+Biswap is a decentralized exchange (DEX) protocol operating across multiple chains, enabling token swaps, liquidity provision, and yield farming, with the BSW token used for incentives and governance-related functions. Current protocol activity should be described using accessible project metadata such as DefiLlama; do not claim the current homepage is withdrawal-only or lacks active protocol functionality unless directly reproducible.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The BSW token contract is shared across both Biswap and Biswap V3 families as th
 - Latest audit: 2023-11 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $609,279.41 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $609,279.41 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

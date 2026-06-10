@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nest-credit",
-  "generated_at": "2026-05-31T14:54:09.416Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-06-10T20:59:08.097Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "nest-credit",
@@ -33,8 +33,8 @@
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 9,
     "coverage_pct": 57.1,
-    "total_audits": 16,
-    "scoreable_audits": 2,
+    "total_audits": 15,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 50512175.43692,
     "tvl_usd": 66701.84393699658,
     "tvl_source": "on_chain",
@@ -52,21 +52,19 @@
       "ethereum",
       "plasma"
     ],
-    "tier1_coverage_pct": 42.9,
-    "tier1_auditors": [
-      "Spearbit"
-    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
     "latest_audit_date": "2026-04",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 3,
       "aging": 2,
-      "stale": 3,
+      "stale": 2,
       "unknown": 8
     }
   },
   "topography": {
-    "project_purpose": "Nest Credit is a multi-chain real-world asset (RWA) protocol that enables users to deposit assets into yield-bearing vaults and perform cross-chain operations. It uses LayerZero for cross-chain messaging and atomic solvers for efficient trade execution.",
+    "project_purpose": "Nest Credit is an RWA-focused yield and vault product on Plume that enables users to deposit stablecoins or supported assets into vaults for tokenized real-world asset yield exposure. Cross-chain messaging and atomic solver components should be treated as observed contract components unless confirmed as current product functionality in Nest documentation.",
     "relationship_narrative": "The Vault Contracts family relies on the Atomic Solver and Atomic Queue for efficient execution of vault operations like deposits and withdrawals. The Atomic Queue likely feeds operations to the Atomic Solver, which executes them atomically, while vaults use LayerZero tellers for cross-chain interactions.",
     "product_family_count": 5
   },
@@ -222,8 +220,7 @@
         }
       ],
       "audits_covering": [
-        "audit-4754",
-        "audit-4755"
+        "audit-4754"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -346,8 +343,7 @@
         }
       ],
       "audits_covering": [
-        "audit-4754",
-        "audit-4755"
+        "audit-4754"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -610,8 +606,7 @@
         }
       ],
       "audits_covering": [
-        "audit-4754",
-        "audit-4755"
+        "audit-4754"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1154,38 +1149,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 4755,
-      "audit_key": "audit-4755",
-      "report_name": "BoringVault smart contracts",
-      "report_url": "https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/spearbit-boring-vault-arctic-0.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AccountantWithRateProviders",
-        "BalancerV2DecoderAndSanitizer",
-        "BoringVault",
-        "CurveDecoderAndSanitizer",
-        "DexAggregatorUManager",
-        "DexSwapperUManager",
-        "ManagerWithMerkleVerification",
-        "MorphoBlueDecoderAndSanitizer",
-        "TellerWithMultiAssetSupport",
-        "UniswapV3DecoderAndSanitizer"
-      ],
-      "matched_contracts": 38,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 4756,
       "audit_key": "audit-4756",
       "report_name": "BoringVault follow-up audit",
@@ -1424,13 +1387,6 @@
       "contracts_covered": 4,
       "coverage_pct": 57.1,
       "latest_audit": "2024-04"
-    },
-    {
-      "auditor": "Spearbit",
-      "tier": 1,
-      "contracts_covered": 3,
-      "coverage_pct": 42.9,
-      "latest_audit": "2026-04"
     }
   ],
   "coverage_gaps": [
@@ -1463,10 +1419,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 78
+      "extraction_exact": 40
     },
     "extraction_confidence_counts": {
-      "high": 2
+      "high": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

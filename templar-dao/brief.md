@@ -7,8 +7,8 @@
 - Project: Templar DAO (`templar-dao`)
 - Website: [https://templar.finance/](https://templar.finance/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:55:06.211Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:17.338Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 40 unique implementations (63 raw deployments)
 - DeFi Llama TVL: $2,228,699.74
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Templar DAO is a reserve currency protocol on BSC that issues the TEMPLAR token, backed by a treasury, and offers staking mechanisms to incentivize holding and participation.
+Templar DAO is described in current public metadata as a reserve-currency and hedge-fund/treasury-reverse protocol, available cross-chain on BSC and MOVR. Its BSC contract surface includes TemplarToken/TEM-related token, treasury, and staking components; the current evidence does not independently verify use of the TEMPLAR symbol over TEM/TemplarToken.
 
 ### Architecture
 

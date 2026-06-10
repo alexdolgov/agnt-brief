@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "ventuals",
-  "generated_at": "2026-05-22T09:11:25.089Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:18.563Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ventuals",
     "tier": 0,
@@ -35,7 +35,7 @@
     "coverage_pct": 100,
     "total_audits": 2,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 28755891.50024,
+    "dl_tvl_usd": 29701346.63589,
     "tvl_usd": 273.7388188587553,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Ventuals is a staking protocol on HyperEVM that allows users to stake assets and earn rewards. It manages staking positions through vaults and a manager contract, with role-based access control.",
+    "project_purpose": "Ventuals is a decentralized trading protocol/interface for creating and trading perpetual futures markets on private-company valuations using Hyperliquid HIP-3 infrastructure. The four tracked HyperEVM proxy contracts should be treated as the currently mapped on-chain contract surface only, not as evidence that Ventuals is primarily a staking or rewards protocol.",
     "relationship_narrative": "The StakingVaultManager oversees multiple StakingVault instances, which hold user deposits and distribute rewards. The RoleRegistry provides access control for administrative functions across the system, and VHYPE likely serves as the reward or staking token.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 4,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

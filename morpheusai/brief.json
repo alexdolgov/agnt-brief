@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "morpheusai",
-  "generated_at": "2026-05-31T10:02:19.013Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:07.805Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "morpheusai",
@@ -69,9 +69,14 @@
     }
   },
   "topography": {
-    "project_purpose": "MorpheusAI is a decentralized AI agent protocol that allows users to deposit assets into pools to earn rewards and participate in AI agent operations. It uses a system of deposit pools, distributors, and reward mechanisms to facilitate staking and distribution of incentives across Ethereum and Arbitrum.",
+    "project_purpose": "MorpheusAI is decentralized AI infrastructure for building, deploying, and scaling AI applications and agents. The protocol combines yield-powered tokenomics, decentralized compute, open-source code, and MOR emissions across Capital, Compute, Code, and Builders participants. Its current surface should be described across Ethereum, Arbitrum, and Base/accounting exposure rather than only Ethereum and Arbitrum, and DepositPool deployments should only be claimed for Ethereum unless a live Arbitrum DepositPool address is separately verified.",
     "relationship_narrative": "The DepositPool contracts on Ethereum and Arbitrum interact with DistributorV2 and RewardPool to manage staking and reward distribution. Cross-chain communication is handled by L1Sender/L2MessageReceiver pairs, while ChainLinkDataConsumer provides oracle data and FeeConfig manages protocol fees.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 47,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

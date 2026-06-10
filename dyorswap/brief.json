@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "dyorswap",
-  "generated_at": "2026-05-31T07:55:25.587Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:02.055Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "dyorswap",
@@ -62,9 +62,14 @@
     }
   },
   "topography": {
-    "project_purpose": "DyorSwap is a decentralized exchange and launchpad protocol enabling token swaps and new project launches across multiple chains. It provides automated market maker (AMM) functionality for trading and a launchpad for token sales.",
+    "project_purpose": "DyorSwap is primarily a decentralized exchange/automated market maker (DEX/AMM) protocol enabling token swaps across multiple chains. DefiLlama also lists a DyorSwap launchpad child, but it has no current TVL and no identified launchpad-specific contracts in this inventory, so launchpad or token-sale functionality should not be treated as part of the verified active contract surface.",
     "relationship_narrative": "The DyorSwap AMM family relies on factory contracts to deploy and manage liquidity pools, with supporting contracts handling routing and token interactions. The launchpad functionality is not explicitly represented in the contract inventory but likely integrates with the AMM for token liquidity.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 93,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

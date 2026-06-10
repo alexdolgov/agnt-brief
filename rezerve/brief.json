@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "rezerve",
-  "generated_at": "2026-05-24T10:59:16.139Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:11.404Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "rezerve",
@@ -35,7 +35,7 @@
     "coverage_pct": 1.3,
     "total_audits": 3,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 2667149,
+    "dl_tvl_usd": 2634879,
     "tvl_usd": 1337064.972419,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -50,18 +50,23 @@
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2025-06",
-    "audit_freshness": "fresh",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
-      "fresh": 2,
-      "aging": 0,
+      "fresh": 0,
+      "aging": 2,
       "stale": 0,
       "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Rezerve is a DeFi protocol offering lending markets and a reserve currency system. It enables users to supply and borrow assets through EVault lending pools, and participate in a reserve currency ecosystem with staking, bonding, and treasury management.",
+    "project_purpose": "Rezerve Money/RZR is the primary Rezerve project, centered on a reserve-currency ecosystem with staking, bonding, and treasury management. Rezerve Lending is a related child product that provides EVault-based lending markets for supplying and borrowing assets, and should be scoped separately from the reserve-currency system when assessing TVL, audits, and contract coverage.",
     "relationship_narrative": "The two families operate independently on-chain, with no shared contracts between them. Rezerve Lending uses isolated EVault instances, while Rezerve Money relies on a suite of treasury, staking, and oracle contracts that do not interact with the lending pools.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 104,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -6858,7 +6863,7 @@
       "report_url": "https://github.com/rezervemoney/code/blob/main/audits/2025-06-21-halborn.pdf",
       "auditor": "Halborn",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -6881,7 +6886,7 @@
       "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-OlympusDAO-v1.0.pdf",
       "auditor": "PeckShield",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,

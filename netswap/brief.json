@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "netswap",
-  "generated_at": "2026-05-25T00:00:14.418Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:08.134Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "netswap",
     "tier": 1,
@@ -45,8 +45,8 @@
     "coverage_pct": 20.8,
     "total_audits": 2,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 1361962.34989,
-    "tvl_usd": 1361962.34989,
+    "dl_tvl_usd": 1336674.21618,
+    "tvl_usd": 1336674.21618,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "NetSwap is a decentralized exchange (DEX) on Metis that enables token swaps, liquidity provision, and yield farming. It also offers staking and governance features through its NETT token and related contracts.",
+    "project_purpose": "NetSwap is a decentralized exchange (DEX) on Metis that enables token swaps, liquidity provision, and yield farming. It uses the NETT governance token and includes NETT/veNETT staking-related contracts, but active voting or community governance should not be assumed without additional supporting evidence.",
     "relationship_narrative": "The NetSwap family relies on the NETT token from the Governance family for staking, rewards, and voting. Shared infrastructure includes proxy contracts and peripheral contracts like Multicall and FarmLens that support the core DEX and farming operations.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 48,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

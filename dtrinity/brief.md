@@ -5,8 +5,8 @@
 - Project: dTRINITY (`dtrinity`)
 - Website: [https://dtrinity.org/](https://dtrinity.org/)
 - Lifecycle: active (Tier 0, 35.2% below peak)
-- Generated: 2026-05-31T07:53:59.163Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:02.028Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, fraxtal, sonic
 - Contract surface: 209 unique implementations (580 raw deployments)
 - DeFi Llama TVL: $2,367,174.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-dTRINITY is a decentralized lending protocol that enables users to supply and borrow assets across multiple chains. It also features a partially algorithmic stablecoin (dUSD) and liquid staking vaults (dSTAKE) to enhance capital efficiency and yield generation.
+dTRINITY is a subsidized stablecoin protocol centered on dUSD. Its model uses reserve yield to subsidize stablecoin borrowing and provide yield rebates, with dLEND serving as the native lending-market component and publicly described as an Aave v3 fork. dSTAKE consists of ERC-4626 yield vaults, such as sdUSD vaults that stake or deposit dUSD into dLEND, rather than liquid staking vaults.
 
 ### Architecture
 

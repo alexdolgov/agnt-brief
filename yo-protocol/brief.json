@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "yo-protocol",
-  "generated_at": "2026-05-31T11:44:19.410Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-10T20:59:19.472Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "yo-protocol",
     "tier": 0,
@@ -66,6 +66,11 @@
     "project_purpose": "YO Protocol is a yield aggregator that deploys yield-optimizing vaults across multiple chains. Users deposit stablecoins or other assets into YoVaults, which automatically allocate funds to generate yield, while the protocol uses registries, oracles, and gateways to manage vault strategies and cross-chain operations.",
     "relationship_narrative": "The yoVaults family relies on the Operational Periphery for price data (YoOracle) and efficient withdrawals (RoadrunnerWithdrawer), while the yoGateway family enables cross-chain vault coordination. Protocol Governance controls upgrades and access across all families via the RolesAuthority and TimelockController.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 20,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

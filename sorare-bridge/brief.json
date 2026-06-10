@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "sorare-bridge",
-  "generated_at": "2026-05-31T10:38:38.639Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-10T20:59:16.259Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "sorare-bridge",
     "tier": 0,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Sorare Bridge is a canonical bridge that facilitates asset transfers between Ethereum and Starknet, enabling users to move ETH, ERC-20 tokens, and NFTs across chains. It also supports exchange and perpetual trading functionality on Starknet via StarkExchange and StarkPerpetual contracts.",
+    "project_purpose": "Sorare Bridge is a bridge between Ethereum and Sorare, supporting asset transfers related to Sorare's fantasy sports and digital player card product. It should not be described as a general Starknet bridge, Starknet exchange, or perpetual trading protocol unless supported by Sorare documentation.",
     "relationship_narrative": "The bridge contracts (StarknetTokenBridge, StarknetEthBridge, StarknetERC20Bridge) handle asset transfers to Starknet, while StarkExchange and StarkPerpetual provide trading functionality on Starknet. CallProxy contracts serve as infrastructure for cross-chain calls, and StarkExchangeMigrationV2 supports upgrades.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 58,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

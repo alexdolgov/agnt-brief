@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "opinion",
-  "generated_at": "2026-05-23T08:49:52.276Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:08.805Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "opinion",
@@ -45,7 +45,7 @@
     "coverage_pct": 100,
     "total_audits": 5,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 7536512.33268,
+    "dl_tvl_usd": 7320963.87459,
     "tvl_usd": 142523237.16437164,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -70,9 +70,14 @@
     }
   },
   "topography": {
-    "project_purpose": "OPINION is a prediction market protocol that allows users to create and trade conditional tokens representing outcomes of future events. It leverages a token-based system to facilitate decentralized betting and forecasting.",
+    "project_purpose": "Opinion is a prediction-market protocol on BNB Chain with contracts for conditional-token exchange execution and fee management. Protocol TVL should be treated separately from the OPN token market value and reported according to current DefiLlama protocol TVL methodology.",
     "relationship_narrative": "The OpinionToken likely serves as the native utility or governance token, while ConditionalTokens represent positions on event outcomes. They share infrastructure through a common deployer cluster, indicating a unified deployment.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 6,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

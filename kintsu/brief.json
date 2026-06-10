@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "kintsu",
-  "generated_at": "2026-05-24T10:22:51.490Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:06.701Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "kintsu",
     "tier": 0,
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 5,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2691031.57992,
-    "tvl_usd": 2691031.57992,
+    "dl_tvl_usd": 2345149.41855,
+    "tvl_usd": 2345149.41855,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Kintsu is a liquid staking protocol on HyperEVM that allows users to stake tokens and receive liquid staking derivatives, enabling them to earn staking rewards while maintaining liquidity.",
+    "project_purpose": "Kintsu is a composable liquid staking protocol centered on Monad, where users stake MON to receive liquid staking tokens such as sMON/superMON while maintaining liquidity. The protocol includes DAO-governed validator delegation and may also have a smaller Hyperliquid L1 component where applicable.",
     "relationship_narrative": "The Mainnet family uses a proxy pointing to the Kintsu family's implementation contract, indicating a shared codebase where the Kintsu contracts serve as the logic layer for the mainnet deployment.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 12,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

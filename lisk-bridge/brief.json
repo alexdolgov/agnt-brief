@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "lisk-bridge",
-  "generated_at": "2026-05-31T08:39:08.426Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:07.002Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "lisk-bridge",
@@ -22,30 +22,28 @@
     "drop_from_peak_pct": 90.738215161611
   },
   "summary": {
-    "total_contracts": 97,
-    "total_addresses": 211,
-    "unique_implementations": 97,
-    "total_deployments": 211,
+    "total_contracts": 96,
+    "total_addresses": 210,
+    "unique_implementations": 96,
+    "total_deployments": 210,
     "audited_contracts": 0,
-    "unaudited_contracts": 88,
+    "unaudited_contracts": 87,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 88,
+    "contracts_verified_unaudited": 87,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 9,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 38109077.204,
-    "tvl_usd": 51134589.17870227,
+    "tvl_usd": 50938346.361384965,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "base": 196242.82,
       "ethereum": 50938346.36
     },
-    "asd_usd": 51134589.17870227,
+    "asd_usd": 50938346.361384965,
     "website_url": "https://lisk.com",
     "chains": [
-      "base",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -60,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Lisk Bridge is a canonical bridge enabling asset transfers between Ethereum L1 and the Lisk L2 network. It uses the OP Stack for rollup infrastructure and includes custom token bridging, vesting, and governance contracts.",
+    "project_purpose": "Lisk Bridge is the canonical bridge / bridged-assets surface for Lisk Chain, focused on asset transfers between Ethereum and the Lisk EVM L2 using OP Stack bridge infrastructure. It should be treated separately from the broader Lisk platform, incubator/fund programs, governance, vesting, testing, third-party application contracts, and unrelated token deployments.",
     "relationship_narrative": "The L1 family provides the core OP Stack bridge infrastructure, which is extended by Lisk-specific contracts for custom token bridging and vesting. Lisk Mainnet contracts are standard token implementations that interact with the bridge adapters, while Predeploys and Testing contracts are auxiliary.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 96,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -139,37 +142,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xac485391eb2d7d88253a7f1ef18c37f4242d1a24",
-      "name": "L2LiskToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Lisk features-specific contracts ​",
-      "tvl_usd": 196242.81731730545,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "L2LiskToken",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xac485391eb2d7d88253a7f1ef18c37f4242d1a24",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 196242.81731730545,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -4117,16 +4089,6 @@
       "risk_note": "Verified native implementation with $47,510,644.56 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xac485391eb2d7d88253a7f1ef18c37f4242d1a24",
-      "name": "L2LiskToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 196242.81731730545,
-      "risk_note": "Verified native implementation with $196,242.82 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x804dd5e6c45181b0b13ab58a3480956026150993",
@@ -4718,7 +4680,7 @@
     }
   ],
   "origin_summary": {
-    "native": 63,
+    "native": 62,
     "upstream": 9,
     "standard_library": 13,
     "needs_review": 12

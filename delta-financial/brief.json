@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "delta-financial",
-  "generated_at": "2026-05-31T07:45:04.522Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:01.696Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "delta-financial",
     "tier": 0,
@@ -61,6 +61,11 @@
     "project_purpose": "Delta Financial is a DeFi options protocol that enables users to farm yield, provide liquidity, and trade options through deep farming vaults and rebasing liquidity tokens. It uses a system of core logic contracts, tokens, and transfer handlers to manage user positions and rewards.",
     "relationship_narrative": "The protocol consists of a single product family where the deep farming vaults interact with rebasing liquidity tokens to manage user deposits and rewards. The DELTAToken and OVLTransferHandler provide token transfer and access control infrastructure shared across the vaults and tokens.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 53,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

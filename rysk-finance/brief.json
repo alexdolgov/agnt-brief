@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "rysk-finance",
-  "generated_at": "2026-05-31T10:29:32.952Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:12.187Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "rysk-finance",
@@ -60,9 +60,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Rysk Finance is a decentralized options and yield protocol that enables users to trade options, provide liquidity, and earn yield across multiple chains. It offers structured products like vaults and liquidity pools, with components for hedging and market making.",
+    "project_purpose": "Rysk Finance is a DeFi protocol currently positioned around earning upfront yield or premium on crypto assets, described by DefiLlama as providing crypto uncorrelated returns. Its deployed contract surface includes options-related components such as Otoken contracts, MarginPool-style contracts, LiquidityPool deployments, and related registry or infrastructure components, rather than a single shared MarginPool across all product families.",
     "relationship_narrative": "The families share a common MarginPool contract used in both Rysk Premium and HyperEVM for asset management. Rysk V1's hedging reactor may interact with the options or liquidity pools from other families, while Rysk V12's oracle and unit contracts provide infrastructure for cross-chain operations and pricing across the protocol.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 186,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

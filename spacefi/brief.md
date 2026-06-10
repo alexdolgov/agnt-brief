@@ -5,17 +5,17 @@
 - Project: SpaceFi (`spacefi`)
 - Website: [https://spacefi.io](https://spacefi.io)
 - Lifecycle: active (Tier 0, 86.8% below peak)
-- Generated: 2026-05-24T21:54:46.991Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:16.274Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: scroll, zksync-era
 - Contract surface: 38 unique implementations (38 raw deployments)
-- DeFi Llama TVL: $1,484,878.00
+- DeFi Llama TVL: $1,459,366.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-SpaceFi is a decentralized exchange (DEX) and DeFi platform operating across multiple chains including Evmos, zkSync Era, and Scroll. It provides token swapping, liquidity provision, and yield farming services through a unified cross-chain architecture.
+SpaceFi is a cross-chain Web3 and DeFi platform with products including DEX/token swapping, liquidity provision, yield farming, NFTs, Starter, and Spacebase. Current contract and chain coverage should be treated cautiously until deployments are re-resolved and matched to audited scopes; no unified cross-chain architecture should be inferred without supporting evidence.
 
 ### Architecture
 

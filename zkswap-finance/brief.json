@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zkswap-finance",
-  "generated_at": "2026-05-25T02:51:49.768Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:19.626Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "zkswap-finance",
@@ -35,8 +35,8 @@
     "coverage_pct": 11.1,
     "total_audits": 8,
     "scoreable_audits": 5,
-    "dl_tvl_usd": 1254813,
-    "tvl_usd": 1254813,
+    "dl_tvl_usd": 1219349,
+    "tvl_usd": 1219349,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -60,6 +60,11 @@
     "project_purpose": "zkSwap Finance is a decentralized exchange (DEX) protocol on zkSync Era and Sonic, offering token swaps, liquidity provision, and yield farming. It includes multiple AMM versions (V2, V3, StableSwap), an aggregator, staking, and a swap-to-earn mechanism.",
     "relationship_narrative": "The AMM families (V2, V3, StableSwap) form the core trading infrastructure, while the Aggregator routes trades across them. Farming and Staking contracts distribute rewards to liquidity providers and stakers, often interacting with the AMMs and the ZF token vesting contracts.",
     "product_family_count": 10
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 98,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -271,7 +276,7 @@
       "chain_name": "sonic",
       "address": "0x3be99db246c81df2bd8dc0d708e03f64e1a84917",
       "name": "Multicall3",
-      "role": "periphery",
+      "role": "operational_periphery",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": null,
@@ -302,7 +307,7 @@
       "chain_name": "sonic",
       "address": "0x2e11640ee1368f2cd90c36607760a274a30094f5",
       "name": "NonfungiblePositionManager",
-      "role": "governance",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "V3 AMM Contracts",
@@ -342,7 +347,7 @@
       "chain_name": "sonic",
       "address": "0xf5fb98fce5ee81b4e2c5ac1829b12259f32ae0d5",
       "name": "NonfungibleTokenPositionDescriptor",
-      "role": "token",
+      "role": "operational_periphery",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "V3 AMM Contracts",
@@ -472,7 +477,7 @@
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
-      "impl_address": null,
+      "impl_address": "0x49685fbdb0ebd013d1c157dfb0c7cdafc3835af5",
       "impl_name": "TransparentUpgradeableProxy",
       "deployments": [
         {
@@ -3677,7 +3682,7 @@
       "chain_name": "sonic",
       "address": "0x2e11640ee1368f2cd90c36607760a274a30094f5",
       "name": "NonfungiblePositionManager",
-      "role": "governance",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

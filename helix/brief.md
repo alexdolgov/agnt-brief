@@ -7,8 +7,8 @@
 - Project: Helix (`helix`)
 - Website: [https://helixapp.com](https://helixapp.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T08:22:52.108Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.562Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 9 unique implementations (14 raw deployments)
 - DeFi Llama TVL: $1,501,882.00
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Helix is a decentralized derivatives and spot trading protocol on Ethereum. It provides infrastructure for creating and managing deal tokens, deal implementations, and identity verification, enabling structured financial products and trading.
+Helix is a decentralized spot and derivatives exchange. The currently listed Ethereum deal-token and identity-verification contracts should not be treated as the active TVL-bearing Helix exchange surface without further project confirmation; current public TVL attribution is on Injective.
 
 ### Architecture
 

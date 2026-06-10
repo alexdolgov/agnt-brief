@@ -7,8 +7,8 @@
 - Project: Paradex (`paradex`)
 - Website: [https://app.paradex.trade/r/defillama](https://app.paradex.trade/r/defillama)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T14:54:11.143Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:09.180Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 5 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $33,260,261.00
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Paradex is a decentralized exchange protocol that enables cross-chain asset transfers between Ethereum and StarkNet via a token bridge, and supports trading of spot, options, and perpetual derivatives.
+Paradex is a perpetuals decentralized exchange. The recorded Ethereum contracts appear to represent bridge/deposit-withdrawal infrastructure for Ethereum/Starknet connectivity, not the complete trading protocol or sole on-chain infrastructure.
 
 ### Architecture
 

@@ -5,21 +5,22 @@
 - Project: Neutral Trade (`neutral-trade`)
 - Website: [https://www.neutral.trade/](https://www.neutral.trade/)
 - Lifecycle: unknown
-- Generated: 2026-05-22T17:26:30.941Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:08.142Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $18,840,293.21
+- DeFi Llama TVL: $18,618,992.83
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Neutral Trade is an onchain capital allocator that deploys assets across DeFi strategies. It aims to optimize yield and manage risk through automated allocation logic.
-
-### Architecture
-
-No product families or contracts are defined in the provided inventory, so no relationships can be described.
+Neutral Trade is a Solana-based marketplace for professionally managed on-chain quant strategy vaults, enabling users to allocate capital to curated trading and yield strategies managed by quantitative strategy providers.
 
 ## Audit Coverage Summary
 

@@ -7,17 +7,17 @@
 - Project: Peapods Finance (`peapods-finance`)
 - Website: [https://peapods.finance](https://peapods.finance)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T10:00:38.503Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:09.266Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, berachain, ethereum, mode, sonic
 - Contract surface: 130 unique implementations (418 raw deployments)
-- DeFi Llama TVL: $7,095,883.13
+- DeFi Llama TVL: $6,984,703.21
 - On-chain TVL (included contracts): $949,461.81
 - TVL by chain: Ethereum $816,310.33 | Arbitrum $97,895.03 | Base $35,256.44
 
 ## Project Description
 
-Peapods Finance is a yield-bearing index protocol that allows users to create and manage tokenized baskets of assets (Pods) and earn yield through staking, liquidity provision, and leverage strategies. It operates across multiple chains, integrating with various DEXs to facilitate index composition and rebalancing.
+Peapods Finance is a DeFi protocol focused on Volatility Farming: enabling users to generate sustainable yield for liquid assets through Pods and related staking/liquidity mechanisms. Its index, pod, leverage, and DEX-integration components should be treated as implementation mechanics rather than the sole project identity, and any PEAS governance or utility claims should be separately substantiated.
 
 ### Architecture
 

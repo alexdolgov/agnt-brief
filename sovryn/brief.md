@@ -5,21 +5,22 @@
 - Project: Sovryn (`sovryn`)
 - Website: [https://sovryn.com/](https://sovryn.com/)
 - Lifecycle: unknown
-- Generated: 2026-05-26T15:18:21.014Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:16.266Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $38,321,665.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Sovryn is a decentralized finance protocol offering trading, lending, and borrowing services on Bitcoin sidechains. It enables users to swap assets, earn interest on deposits, and take out collateralized loans in a non-custodial manner.
-
-### Architecture
-
-No contract inventory or structural relationships were provided, so no product families or shared infrastructure can be identified.
+Sovryn is a non-custodial Bitcoin DeFi protocol offering trading, margin trading, lending and borrowing on Bitcoin sidechain ecosystems. Its broader product and ecosystem surface includes staking and governance, the Zero/Sovryn Dollar stablecoin system, and Origins/BitcoinOS-related initiatives.
 
 ## Audit Coverage Summary
 

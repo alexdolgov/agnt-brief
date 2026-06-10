@@ -7,17 +7,17 @@
 - Project: zkLink Nova (`zklink-nova`)
 - Website: [https://zklink.io](https://zklink.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-25T15:44:38.284Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:19.617Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, blast, ethereum, linea, manta, mantle, merlin, optimism, scroll, zksync-era
-- Contract surface: 381 unique implementations (848 raw deployments)
-- DeFi Llama TVL: $13,411,976.32
-- On-chain TVL (included contracts): $33,891,456.06
-- TVL by chain: Ethereum $33,887,953.11 | Mantle $3,502.95
+- Contract surface: 380 unique implementations (843 raw deployments)
+- DeFi Llama TVL: $12,953,291.66
+- On-chain TVL (included contracts): $33,887,953.11
+- TVL by chain: Ethereum $33,887,953.11
 
 ## Project Description
 
-zkLink Nova is a multi-chain Layer 2 network that aggregates liquidity and assets across Ethereum, its L2s, and other chains. It enables fast, low-cost cross-chain transfers and trading through a unified rollup architecture, using zero-knowledge proofs for security.
+zkLink Nova is an aggregated Layer 3 zkEVM network that unifies liquidity and assets across Ethereum and Ethereum Layer 2 rollups. It supports Ethereum-compatible dApp deployment and cross-chain liquidity aggregation through a unified zkEVM environment secured by zero-knowledge proofs.
 
 ### Architecture
 
@@ -25,26 +25,26 @@ The ZKL token is used across the zkLink Nova ecosystem for fees and governance. 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 17/111 (15.3%)
-- Verified + Unaudited implementations: 90
+- Verified implementations audited: 16/110 (14.5%)
+- Verified + Unaudited implementations: 89
 - Verified by bytecode match: 5
 - Unverified implementations: 270
-- Unique implementations: 381
-- Raw deployments: 848
-- Audits discovered: 11
-- Scoreable audits (matched contracts): 10
-- ASD (verified + unaudited TVL): $33,891,456.06
+- Unique implementations: 380
+- Raw deployments: 843
+- Audits discovered: 7
+- Scoreable audits (matched contracts): 7
+- ASD (verified + unaudited TVL): $33,887,953.11
 - Latest audit: 2024-07 (aging)
-- Staleness: 0 fresh, 2 aging, 9 stale, 0 unknown
+- Staleness: 0 fresh, 1 aging, 6 stale, 0 unknown
 - Tier 1 coverage: 3.6% (OpenZeppelin)
-- Note: This protocol is classified as [declining]. ASD of $33,891,456.06 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $33,887,953.11 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ABDK | Tier 2 | 16 | 14.4% | 2024-07 |
-| Secure3 | Tier 2 | 13 | 11.7% | 2024-04 |
+| ABDK | Tier 2 | 15 | 13.6% | 2024-07 |
+| Secure3 | Tier 2 | 13 | 11.8% | 2024-04 |
 | OpenZeppelin | Tier 1 | 4 | 3.6% | 2024-01 |
 
 ## Contract Surface
@@ -70,14 +70,13 @@ The ZKL token is used across the zkLink Nova ecosystem for fees and governance. 
 | ZkLinkPeriphery | periphery | ethereum | 39 deployments: ethereum [`0x070fc0...67284f`](./contracts/ethereum-1/0x070fc04f6ce2cd1ffbc2ae1d6a381e46f467284f/); ethereum `0x446fca...3c8007`; ethereum `0x4ac2cc...bee425`; ethereum `0x5bc75b...a73e61`; ethereum `0x5f58bc...fef28c`; ethereum `0xa107b6...a689d7`; ethereum `0xd784d7...455657`; optimism `0x664e1c...a83e10`; optimism `0x80d12a...1674d5`; optimism `0xd784d7...455657`; optimism `0xe2510e...25ddb4`; optimism `0xe469c1...6d344f`; optimism `0xf63e81...e0c3ea`; manta `0xdd5097...7a3545`; mantle `0xf04af2...9c84f2`; base `0x21fe89...86c3b8`; base `0x31f0c8...7f3611`; base `0x502c84...34af12`; base `0x703651...2a62a2`; base `0xd784d7...455657`; arbitrum `0x09cb6c...ee1c72`; arbitrum `0x0ed6e9...63b3e5`; arbitrum `0x1ba934...1b4172`; arbitrum `0x30b2c7...e81ad9`; arbitrum `0x3203e8...307352`; arbitrum `0x4563c3...cfc027`; arbitrum `0x803460...f2809b`; arbitrum `0x928732...88bc8d`; arbitrum `0xd784d7...455657`; arbitrum `0xe89635...99cc13`; linea `0x119b94...4fd1a2`; linea `0x47767b...d783c8`; linea `0x5bd512...326eaa`; linea `0x649dfa...7cd82d`; linea `0x975a87...6ef628`; linea `0xa6df49...55d1f6`; linea `0xba6163...9d7f66`; linea `0xe38f8b...686dba`; linea `0xe75ef0...5b8afb` | ✅ Audited |
 | ZkSyncL1Gateway | unknown | ethereum | 18 deployments: ethereum [`0x0163a4...d88a72`](./contracts/ethereum-1/0x0163a4ce18a566730c390b0e0fb5c78bcdd88a72/); ethereum `0x04bf7c...14d716`; ethereum `0x087fc8...b7d1e9`; ethereum `0x263e21...8af25f`; ethereum `0x30b2c7...e81ad9`; ethereum `0x413552...374b1d`; ethereum `0x4516a3...b17f2a`; ethereum `0x59ad35...3e4a22`; ethereum `0x6d2f5f...7541fb`; ethereum `0x6e21b3...69274a`; ethereum `0x76fa44...b77ae6`; ethereum `0x8915b1...3b497e`; ethereum `0x975a87...6ef628`; ethereum `0x98ceda...00673b`; ethereum `0x9de74e...1de1dc`; ethereum `0xb98ffd...30c9cc`; ethereum `0xecd189...c942ab`; ethereum `0xff2568...27d79e` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (90)
+### ⚠️ Verified + Unaudited (89)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | RestakingPool | core_logic | ethereum | 3 deployments: ethereum [`0x0d6f76...a725bc`](./contracts/ethereum-1/0x0d6f764452ca43eb8bd22788c9db43e4b5a725bc/); ethereum `0x512d8b...90285b`; ethereum `0x80c1ef...6bd0fc` | ⚠️ Unaudited |
 | NethPool | core_logic | ethereum | 3 deployments: ethereum [`0x9c6f15...6503fa`](./contracts/ethereum-1/0x9c6f151ff54b9820d4c54335369b76729e6503fa/); ethereum `0xa1ed35...82629a`; ethereum `0xf3c794...c07c18` | ⚠️ Unaudited |
 | ZkLinkToken | token | ethereum | 4 deployments: ethereum [`0x0b703a...3707c5`](./contracts/ethereum-1/0x0b703aecf1ad4c053c15c49b08c94767f73707c5/); ethereum `0xa30602...933218`; ethereum `0xe1eb64...53bc9d`; ethereum `0xfc385a...0fcede` | ⚠️ Unaudited |
-| Vault | core_logic | mantle | 5 deployments: mantle [`0x08231b...af27b3`](./contracts/mantle-5000/0x08231bcd66c5e4d2d1d4ad2bc24bfb4477af27b3/); mantle `0x2e488d...50dae1`; mantle `0x88ceb7...533fd8`; mantle `0xac5b26...253daf`; mantle `0xf627c5...263d87` | ⚠️ Unaudited |
 | ELVault | core_logic | ethereum | 6 deployments: ethereum [`0x2b763f...680863`](./contracts/ethereum-1/0x2b763f4f1053980ca71266dd55dafdbbd0680863/); ethereum `0x3dd8d9...afac23`; ethereum `0x96714c...c3f04e`; ethereum `0xa9d213...dee8f3`; ethereum `0xae5b6c...e60c1b`; ethereum `0xbdfe7f...def3d8` | ⚠️ Unaudited |
 | AggregatorV2 | unknown | ethereum | [`0x2dad78...523449`](./contracts/ethereum-1/0x2dad78e21bb2315d77a4ca07cb000fd8e4523449/) | ⚠️ Unaudited |
 | Array | unknown | ethereum | [`0x926cf8...4bedf1`](./contracts/ethereum-1/0x926cf8c6c07beaba0ecf55c9c41443614c4bedf1/) | ⚠️ Unaudited |
@@ -165,21 +164,20 @@ The ZKL token is used across the zkLink Nova ecosystem for fees and governance. 
 | ZKLCRelease | unknown | ethereum | 2 deployments: ethereum [`0x120d79...444038`](./contracts/ethereum-1/0x120d79adea9693786be90d5ffe8af32269444038/); ethereum `0xe4dcf1...b6f58e` | ⚠️ Unaudited |
 | ZKLinkAcross | unknown | base | 2 deployments: base [`0x7ae056...a74040`](./contracts/base-8453/0x7ae0563553008a45d91555f66b2ab34800a74040/); base `0xec30c5...6e3417` | ⚠️ Unaudited |
 
-### ✅ Verified by Bytecode + Audited (1)
+### ✅ Verified by Bytecode + Audited (0)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| EmptyVerifier | periphery | optimism | 27 deployments: ethereum `0x7f9de3...8a4c0d`; ethereum `0xbc28d1...94c4bd`; ethereum `0xd6c54b...829a08`; ethereum `0xe38f8b...686dba`; optimism [`0x119b94...4fd1a2`](./contracts/optimism-10/0x119b9459d9119d07c23ad06778aeabec804fd1a2/); optimism `0x83bc73...c0055c`; optimism `0xbb205c...275adc`; optimism `0xcdcdf6...80613d`; optimism `0xe89635...99cc13`; manta `0x437a10...2bbcac`; mantle `0x527f61...53dd5d`; mantle `0xd8428a...f1bce7`; base `0x4c5629...27c563`; base `0x624658...c283ab`; base `0x87743f...9a43fb`; base `0xb6b969...c3d78b`; base `0xbb205c...275adc`; base `0xef7007...e80cc7`; base `0xf63e81...e0c3ea`; base `0xfa7fb7...21a89c`; arbitrum `0x273d59...7583c0`; arbitrum `0x3fc412...0f92ec`; arbitrum `0xa84860...256cd6`; arbitrum `0xe54cac...34324f`; arbitrum `0xf9c947...8eee64`; linea `0x3d70dc...3a441e`; linea `0xf7f67b...d8cb8c` | ✅ Audited (bytecode match) |
+- None
 
-### ⚠️ Verified by Bytecode + Unaudited (4)
+### ⚠️ Verified by Bytecode + Unaudited (5)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | BrokerAccepter | unknown | linea | 6 deployments: ethereum `0xe473ce...7264dd`; ethereum `0xf8fe43...e843f5`; optimism `0x9dc756...bbc88c`; base `0x7c56da...bc88b3`; arbitrum `0xd5941f...d35bd2`; linea [`0x139abb...5c22e1`](./contracts/linea-59144/0x139abb67a33f6ddcf00fbab5e321184f4e5c22e1/) | ⚠️ Unaudited (bytecode match) |
+| EmptyVerifier | periphery | optimism | 27 deployments: ethereum `0x7f9de3...8a4c0d`; ethereum `0xbc28d1...94c4bd`; ethereum `0xd6c54b...829a08`; ethereum `0xe38f8b...686dba`; optimism [`0x119b94...4fd1a2`](./contracts/optimism-10/0x119b9459d9119d07c23ad06778aeabec804fd1a2/); optimism `0x83bc73...c0055c`; optimism `0xbb205c...275adc`; optimism `0xcdcdf6...80613d`; optimism `0xe89635...99cc13`; manta `0x437a10...2bbcac`; mantle `0x527f61...53dd5d`; mantle `0xd8428a...f1bce7`; base `0x4c5629...27c563`; base `0x624658...c283ab`; base `0x87743f...9a43fb`; base `0xb6b969...c3d78b`; base `0xbb205c...275adc`; base `0xef7007...e80cc7`; base `0xf63e81...e0c3ea`; base `0xfa7fb7...21a89c`; arbitrum `0x273d59...7583c0`; arbitrum `0x3fc412...0f92ec`; arbitrum `0xa84860...256cd6`; arbitrum `0xe54cac...34324f`; arbitrum `0xf9c947...8eee64`; linea `0x3d70dc...3a441e`; linea `0xf7f67b...d8cb8c` | ⚠️ Unaudited (bytecode match) |
 | MultiCall | unknown | linea | 14 deployments: ethereum `0x0c0404...f1e821`; ethereum `0x0dad20...90bac2`; ethereum `0x4be8a6...f75200`; optimism `0x79926e...410db0`; optimism `0x87743f...9a43fb`; manta `0xdc0771...d2208b`; mantle `0x0d53ce...731470`; base `0x85079c...8b1f4e`; base `0x98ceda...00673b`; arbitrum `0x7769c1...3ea458`; arbitrum `0xa00509...36fb60`; linea [`0x04bf7c...14d716`](./contracts/linea-59144/0x04bf7cf48a68dfc744fc22662b90e2ecaf14d716/); linea `0x0c89bc...2907aa`; linea `0xeb79fe...39f4ad` | ⚠️ Unaudited (bytecode match) |
 | UpgradeGatekeeper | unknown | base | 28 deployments: ethereum `0x457ce8...ba47b4`; ethereum `0xfbd686...072753`; optimism `0x72343e...f2fcad`; optimism `0x7bd79d...18483a`; optimism `0xa86ef3...ce9637`; optimism `0xf04af2...9c84f2`; manta `0x9dc756...bbc88c`; mantle `0x2b9ba2...744059`; mantle `0x5bc75b...a73e61`; base [`0x0c0404...f1e821`](./contracts/base-8453/0x0c04046546c46652969aa9eb4bfb758cfdf1e821/); base `0x50efc7...726211`; base `0x53d9d2...c6db6a`; base `0x649dfa...7cd82d`; base `0x72343e...f2fcad`; arbitrum `0x2e8ad1...f4a190`; arbitrum `0x3c3f4b...9aa98e`; arbitrum `0x89f273...24f0cc`; arbitrum `0xd6bbb0...a2e86c`; arbitrum `0xd8428a...f1bce7`; arbitrum `0xf9f8a1...341a70`; linea `0x3203e8...307352`; linea `0x4d4b1b...8b0d59`; linea `0x53d9d2...c6db6a`; linea `0x67ebb0...accb3e`; linea `0xba2be3...42602c`; linea `0xcc8256...c1f5dd`; linea `0xe5da2b...591d78`; linea `0xff2568...27d79e` | ⚠️ Unaudited (bytecode match) |
 | Verifier | periphery | linea | 22 deployments: ethereum `0x437a10...2bbcac`; ethereum `0x5715de...b8ce05`; optimism `0x5715de...b8ce05`; base `0x5715de...b8ce05`; arbitrum `0x235118...b6b68f`; arbitrum `0x5715de...b8ce05`; arbitrum `0x6d6ce5...927962`; arbitrum `0x6e21b3...69274a`; linea [`0x0163a4...d88a72`](./contracts/linea-59144/0x0163a4ce18a566730c390b0e0fb5c78bcdd88a72/); linea `0x161f4b...0477f0`; linea `0x413552...374b1d`; linea `0x437a10...2bbcac`; linea `0x683669...2216f5`; linea `0x803460...f2809b`; linea `0x80d12a...1674d5`; linea `0x902c38...400458`; linea `0xbfa352...63283f`; linea `0xcdcdf6...80613d`; linea `0xd784d7...455657`; linea `0xe946ab...ea39d0`; linea `0xef7007...e80cc7`; linea `0xfe3e63...96709f` | ⚠️ Unaudited (bytecode match) |
@@ -470,12 +468,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Secure3_zkLink_Nova_mergeToken & bridgeUpdate_2024.4](https://github.com/zkLinkProtocol/zklink-audit-report/blob/master/zkLink%20Nova/Secure3_zkLink_Nova_mergeToken_2024.4.pdf) | Secure3 | Audit | 2024-04 | stale | Direct | contract_name | 20 | high |
 | [ABDK_zkLink_Mergetoken_2024.7.pdf](https://github.com/zkLinkProtocol/zklink-audit-report/blob/master/zkLink%20Nova/ABDK_zkLink_Mergetoken_2024.7.pdf) | ABDK | Audit | 2024-07 | aging | Direct | contract_name | 22 | high |
 | [Secure3_zkLink Nova Arbitrator Upgrade_2024.4](https://github.com/zkLinkProtocol/zklink-audit-report/blob/master/zkLink%20Nova/Secure3_zkLink%20Nova%20Arbitrator%20Upgrade_2024.4.pdf) | Secure3 | Audit | 2024-04 | stale | Direct | contract_name | 65 | high |
-| [ABDK_zkLink_CostOptimisation_2024.6.pdf](https://github.com/zkLinkProtocol/zklink-audit-report/blob/master/zkLink%20Nova/ABDK_zkLink_CostOptimisation_2024.6.pdf) | ABDK | Audit | 2024-06 | aging | Direct | contract_name | 69 | high |
+| [ABDK_zkLink_CostOptimisation_2024.6.pdf](https://github.com/zkLinkProtocol/zklink-audit-report/blob/master/zkLink%20Nova/ABDK_zkLink_CostOptimisation_2024.6.pdf) | ABDK | Audit | 2024-06 | stale | Direct | contract_name | 69 | high |
 | [zkSync Era Governance Audit Report](https://www.openzeppelin.com/news/december-diff-and-governance-audit) | OpenZeppelin | Audit | 2024-01 | stale | Direct | contract_name | 24 | high |
-| [ABDK_zkLink_CircuitsSmartContracts_2023.7.pdf](https://github.com/zkLinkProtocol/zklink-audit-report/blob/master/zkLink%20X/ABDK_zkLink_CircuitsSmartContracts_2023.7.pdf) | ABDK | Audit | 2023-07 | stale | Direct | contract_name | 120 | high |
-| [ABDK_zkLink_CircuitsSmartContracts_2023.8.pdf](https://github.com/zkLinkProtocol/zklink-audit-report/blob/master/zkLink%20X/ABDK_zkLink_CircuitsSmartContracts_2023.8.pdf) | ABDK | Audit | 2023-08 | stale | Direct | contract_name | 120 | high |
-| [ABDK_zkLink_Circuits_2023.2.pdf](https://github.com/zkLinkProtocol/zklink-audit-report/blob/master/zkLink%20X/ABDK_zkLink_Circuits_2023.2.pdf) | ABDK | Audit | 2023-02 | stale | Direct | n/a | 0 | n/a |
-| [ABDK_zkLink_Solidity_2023.2.pdf](https://github.com/zkLinkProtocol/zklink-audit-report/blob/master/zkLink%20X/ABDK_zkLink_Solidity_2023.2.pdf) | ABDK | Audit | 2023-02 | stale | Direct | contract_name | 95 | high |
 
 ## Coverage Gaps
 
@@ -551,19 +545,15 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 198 |
 | upstream | 2 |
 | standard_library | 20 |
-| needs_review | 161 |
+| needs_review | 160 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=10
-- Match method counts: extraction_exact=832
-
-Zero-match audit list:
-
-- [2010] ABDK_zkLink_Circuits_2023.2.pdf
+- Extraction confidence breakdown: high=7
+- Match method counts: extraction_exact=497
 
 Fork inheritance lineage and inherited audits are included when available.

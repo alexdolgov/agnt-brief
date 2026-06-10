@@ -5,17 +5,17 @@
 - Project: Eventum Bridge (`eventum-bridge`)
 - Website: [https://evedex.com/en-US/](https://evedex.com/en-US/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T08:00:32.006Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:03.850Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum
-- Contract surface: 30 unique implementations (60 raw deployments)
+- Contract surface: 28 unique implementations (57 raw deployments)
 - DeFi Llama TVL: $2,820,145.70
 - On-chain TVL (included contracts): $1,642,372.23
 - TVL by chain: Ethereum $1,641,839.82 | Arbitrum $532.42
 
 ## Project Description
 
-Eventum Bridge is a canonical bridge protocol enabling asset transfers between Ethereum and Arbitrum One. It provides vault-based deposit management, token wrapping (aeWETH), and governance-controlled swap and burn mechanisms.
+Eventum Bridge is the canonical bridge for Eventum, an Arbitrum Orbit L3 used by the EVEDEX exchange ecosystem. It supports asset movement into and out of the Eventum network for EVEDEX-related applications; it should not be described as a standalone Ethereum-to-Arbitrum One bridge unless Eventum-specific documentation supports those endpoints.
 
 ### Architecture
 
@@ -23,24 +23,24 @@ The Bridge family provides the core cross-chain messaging infrastructure, while 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/28 (3.6%)
-- Verified + Unaudited implementations: 27
+- Verified implementations audited: 1/26 (3.8%)
+- Verified + Unaudited implementations: 25
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 30
-- Raw deployments: 60
-- Audits discovered: 12
+- Unique implementations: 28
+- Raw deployments: 57
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $1,642,372.23
 - Latest audit: 2025-08 (fresh)
-- Staleness: 2 fresh, 0 aging, 8 stale, 2 unknown
+- Staleness: 2 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| HashEx | Tier 2 | 1 | 3.6% | 2025-08 |
+| HashEx | Tier 2 | 1 | 3.8% | 2025-08 |
 
 ## Contract Surface
 
@@ -50,7 +50,7 @@ The Bridge family provides the core cross-chain messaging infrastructure, while 
 |---|---|---|---|---|
 | TreasuryV1 | operational_periphery | arbitrum | [`0x0a9591...b5735a`](./contracts/arbitrum-42161/0x0a9591c64fd9e8c1f9a81db1b668a5f211b5735a/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (27)
+### ⚠️ Verified + Unaudited (25)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -73,9 +73,7 @@ The Bridge family provides the core cross-chain messaging infrastructure, while 
 | L1ERC20Gateway | token | arbitrum | [`0x8d21df...33d4b1`](./contracts/arbitrum-42161/0x8d21dfea9231db85dce72b8d9f18e917d833d4b1/) | ⚠️ Unaudited |
 | L1GatewayRouter | adapter | arbitrum | [`0x1628ce...59e66a`](./contracts/arbitrum-42161/0x1628ce6477221fdd1cd88ea3d15d587dfc59e66a/) | ⚠️ Unaudited |
 | MinimalProxyFactory | registry | arbitrum | 2 deployments: arbitrum [`0x1ee981...fdd057`](./contracts/arbitrum-42161/0x1ee981c521f3c6cd520c0a30ef7a1d2910fdd057/); arbitrum `0x99be07...52977a` | ⚠️ Unaudited |
-| Multicall2 | periphery | ethereum | [`0x0dbbd1...fb70a5`](./contracts/ethereum-1/0x0dbbd1bb03ed63ae2bea0ce892567884dffb70a5/) | ⚠️ Unaudited |
 | Outbox | unknown | arbitrum | [`0xec32bd...dbc040`](./contracts/arbitrum-42161/0xec32bd08faf9533371384ad13045116930dbc040/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | 2 deployments: ethereum [`0x709116...ed87bf`](./contracts/ethereum-1/0x70911642e4ea509735e77cba23ce1856abed87bf/); ethereum `0x92650d...b60175` | ⚠️ Unaudited |
 | RollupAdminLogic | unknown | arbitrum | [`0xd226bd...1abbbc`](./contracts/arbitrum-42161/0xd226bd8d36725f4ce12961370211dfeeef1abbbc/) | ⚠️ Unaudited |
 | SequencerInbox | unknown | arbitrum | [`0x8696d3...6db025`](./contracts/arbitrum-42161/0x8696d32899e59f8a2ed76463cc0a0b07e56db025/) | ⚠️ Unaudited |
 | StandardArbERC20 | token | arbitrum | [`0x2f2a25...fc5b0f`](./contracts/arbitrum-42161/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f/) | ⚠️ Unaudited |
@@ -109,16 +107,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [hashex.org/audits/evedex](https://hashex.org/audits/evedex) | HashEx | Audit | 2025-08 | fresh | Direct | contract_name | 1 | high |
 | [skynet.certik.com/projects/evedex](https://skynet.certik.com/projects/evedex) | CertiK | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [chainlight_v3_0.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/chainlight_v3_0.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [kalos_recovery_v1.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_recovery_v1.pdf) | unknown | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
-| [kalos_recovery_v2.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_recovery_v2.pdf) | unknown | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
-| [kalos_v1.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_v1.pdf) | unknown | Audit | 2023-07 | stale | Direct | n/a | 0 | n/a |
-| [kalos_v2_1.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_v2_1.pdf) | unknown | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
-| [kalos_v2_2.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_v2_2.pdf) | unknown | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
-| [kalos_v2_2_lite.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_v2_2_lite.pdf) | unknown | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
-| [kalos_v3_plugins.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_v3_plugins.pdf) | unknown | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
-| [kalos_webauthn_v1.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_webauthn_v1.pdf) | unknown | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
-| [v_3_1_incremental_audit.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/v_3_1_incremental_audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -143,14 +131,14 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 10 |
 | upstream | 2 |
-| standard_library | 16 |
+| standard_library | 14 |
 | needs_review | 2 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 11
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=1
@@ -158,15 +146,5 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [2789] skynet.certik.com/projects/evedex
-- [10078] chainlight_v3_0.pdf
-- [10079] kalos_recovery_v1.pdf
-- [10080] kalos_recovery_v2.pdf
-- [10081] kalos_v1.pdf
-- [10082] kalos_v2_1.pdf
-- [10083] kalos_v2_2.pdf
-- [10084] kalos_v2_2_lite.pdf
-- [10085] kalos_v3_plugins.pdf
-- [10086] kalos_webauthn_v1.pdf
-- [10087] v_3_1_incremental_audit.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

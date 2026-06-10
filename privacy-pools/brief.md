@@ -5,21 +5,22 @@
 - Project: Privacy Pools (`privacy-pools`)
 - Website: [https://privacypools.com/](https://privacypools.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:22:43.041Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:09.375Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum, optimism
 - Contract surface: 1 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $6,624,610.42
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Privacy Pools is a protocol enabling private transactions on Ethereum, Optimism, and Arbitrum One. It allows users to deposit and withdraw funds while preserving privacy through zero-knowledge proofs.
-
-### Architecture
-
-The protocol consists of a single product family with Entrypoint contracts deployed behind ERC1967Proxy proxies. All contracts share the same deployer and are deployed on multiple chains, indicating a unified infrastructure.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 
@@ -48,7 +49,7 @@ The protocol consists of a single product family with Entrypoint contracts deplo
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| Entrypoint | unknown | optimism | 3 deployments: ethereum `0x681880...526b46`; optimism [`0x441922...25d15e`](./contracts/optimism-10/0x44192215fed782896be2ce24e0bfbf0bf825d15e/); arbitrum [`0x441922...25d15e`](./contracts/arbitrum-42161/0x44192215fed782896be2ce24e0bfbf0bf825d15e/) | ✅ Audited |
+| Entrypoint | proxy | optimism | 3 deployments: ethereum `0x681880...526b46`; optimism [`0x441922...25d15e`](./contracts/optimism-10/0x44192215fed782896be2ce24e0bfbf0bf825d15e/); arbitrum [`0x441922...25d15e`](./contracts/arbitrum-42161/0x44192215fed782896be2ce24e0bfbf0bf825d15e/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

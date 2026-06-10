@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hakka-finance",
-  "generated_at": "2026-05-25T15:05:32.693Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:04.452Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hakka-finance",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 70.81404078650426
   },
   "summary": {
-    "total_contracts": 52,
-    "total_addresses": 71,
-    "unique_implementations": 52,
-    "total_deployments": 71,
+    "total_contracts": 37,
+    "total_addresses": 50,
+    "unique_implementations": 37,
+    "total_deployments": 50,
     "audited_contracts": 9,
-    "unaudited_contracts": 40,
+    "unaudited_contracts": 25,
     "contracts_verified_audited": 9,
-    "contracts_verified_unaudited": 40,
+    "contracts_verified_unaudited": 25,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 3,
-    "coverage_pct": 18.4,
-    "total_audits": 8,
+    "coverage_pct": 26.5,
+    "total_audits": 7,
     "scoreable_audits": 6,
-    "dl_tvl_usd": 4741232.82923,
-    "tvl_usd": 1513209.8464625494,
+    "dl_tvl_usd": 4644553.14829,
+    "tvl_usd": 5425.4162312112985,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 1513209.85
+      "ethereum": 5425.42
     },
-    "asd_usd": 1513209.8464625494,
+    "asd_usd": 5425.4162312112985,
     "website_url": "https://hakka.finance/",
     "chains": [
       "ethereum"
@@ -54,250 +54,24 @@
       "fresh": 0,
       "aging": 0,
       "stale": 7,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Hakka Finance is a decentralized finance protocol offering a suite of derivative and yield-generating products. It includes vaults for automated yield strategies, liquidity pools for stablecoin and token swaps, and staking mechanisms for governance and rewards.",
+    "project_purpose": "Hakka Finance is a DeFi ecosystem in the derivatives category. Its historically associated products include derivative and yield-related contracts, but current product claims such as specific vaults, swap pools, or staking systems should be tied only to verified Hakka-owned contracts and should exclude third-party dependencies or unrelated token/LP contracts.",
     "relationship_narrative": "The protocol's vaults (bVault) and liquidity pools (BAC pools, BPool) are the core yield-generating components, while staking contracts (HakkaRewards, MasterChef) distribute rewards in the form of tokens like BlackPoolToken and StakedBPT. Supporting contracts such as GuildBank and ThreeFMutual provide treasury management and mutual cover, sharing the same deployer clusters and token infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 37,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1321f1f1aa541a56c31682c57b80ecfccd9bb288",
-      "name": "ArcxTokenV2",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Hakka Finance",
-      "tvl_usd": 949182.7041246513,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ArcxTokenV2",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1321f1f1aa541a56c31682c57b80ecfccd9bb288",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 949182.7041246513,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2c23276107b45e64c8c59482f4a24f4f2e568ea6",
-      "name": "bVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Hakka Finance",
-      "tvl_usd": 300315.24053127214,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "bVault",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2c23276107b45e64c8c59482f4a24f4f2e568ea6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 521.094199,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x378388aa69f3032fa46150221210c7fa70a35153",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 145773.7552376076,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x3fb6b07d77dace1ba6b5f6ab1d8668643d15a2cc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 68933.16057609346,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x750d30a8259e63ed72a075f5b6630f08ce7996d0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 12615.690950272112,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8016907d54ed8bcf5da100c4d0eb434c0185dc0e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 3243.392589,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8d9a39706d3b66446a298f1ae735730257ec6108",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 69228.14697929892,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xebd12620e29dc6c452db7b96e1f190f3ee02bde8",
-      "name": "BACDAIPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Hakka Finance",
-      "tvl_usd": 88280.57263998144,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BACDAIPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xebd12620e29dc6c452db7b96e1f190f3ee02bde8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 88280.57263998144,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x51882184b7f9beed6db9c617846140da1d429fd4",
-      "name": "BACUSDCPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Hakka Finance",
-      "tvl_usd": 86330.93511,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BACUSDCPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x51882184b7f9beed6db9c617846140da1d429fd4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 86330.93511,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2833bdc5b31269d356bdf92d0fd8f3674e877e44",
-      "name": "BACUSDTPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Hakka Finance",
-      "tvl_usd": 71162.695824,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BACUSDTPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2833bdc5b31269d356bdf92d0fd8f3674e877e44",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 71162.695824,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x9bffad7a6d5f52dbc51cae33e419793c72fd7d9d",
-      "name": "StakingAccrualERC20V5",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Hakka Finance",
-      "tvl_usd": 12500.281793938997,
-      "is_proxy": true,
-      "impl_address": "0x5a35c5a4d28fa2cb33eba3de485083b739df63bb",
-      "impl_name": "StakingAccrualERC20V5",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9bffad7a6d5f52dbc51cae33e419793c72fd7d9d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 12500.281793938997,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -328,68 +102,6 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c",
-      "name": "BACSUSDPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Hakka Finance",
-      "tvl_usd": 10,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BACSUSDPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 10,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x76bac85e1e82cd677faa2b3f00c4a2626c4c6e32",
-      "name": "ERC20Peg",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Hakka Finance",
-      "tvl_usd": 2.000207494355759,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ERC20Peg",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x76bac85e1e82cd677faa2b3f00c4a2626c4c6e32",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.000207494355759,
           "is_audited": false
         }
       ],
@@ -496,37 +208,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xc462d8ee54953e7d7bf276612b75387ea114c3bf",
-      "name": "BACyCRVPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Hakka Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BACyCRVPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc462d8ee54953e7d7bf276612b75387ea114c3bf",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x11baffebd829b490cf077ce7ef7700dd3cb1e534",
       "name": "bhsAlpha",
       "role": "unknown",
@@ -605,37 +286,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0ec9f76202a7061eb9b3a7d6b59d36215a7e37da",
-      "name": "BlackPoolToken",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Hakka Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BlackPoolToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0ec9f76202a7061eb9b3a7d6b59d36215a7e37da",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -1252,37 +902,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd",
-      "name": "MasterChef",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Hakka Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MasterChef",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xb925863a15ebdeae1a638bf2b6fd00d4db897a62",
       "name": "sHakka",
       "role": "unknown",
@@ -1350,37 +969,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x46c5098f73fa656e82d7e9afbf3c00b32b7b1ee2",
-      "name": "StakedBPT",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Hakka Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "StakedBPT",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x46c5098f73fa656e82d7e9afbf3c00b32b7b1ee2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -1582,37 +1170,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xc935285b0d88069305431dace0c3c01d7e793d84",
-      "name": "TokenPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Hakka Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "TokenPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc935285b0d88069305431dace0c3c01d7e793d84",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xe58cde3cbeecc8d9306f482729084b909afa2357",
       "name": "Underwriter",
       "role": "unknown",
@@ -1642,46 +1199,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x57024267e8272618f9c5037d373043a8646507e5",
-      "name": "UniswapV2Pair",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
-      "product_line": "Hakka Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "UniswapV2Pair",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x57024267e8272618f9c5037d373043a8646507e5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9f624b25991b99d7b14d6740a9d581dd77980808",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -1839,37 +1356,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8",
-      "name": "Vyper_contract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Hakka Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Vyper_contract",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     }
   ],
   "audits": [
@@ -2053,27 +1539,6 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3436,
-      "audit_key": "audit-3436",
-      "report_name": "Read Audit Report",
-      "report_url": "https://github.com/hakkafinance/audit-reports",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -2081,65 +1546,25 @@
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 7,
-      "coverage_pct": 14.3,
+      "coverage_pct": 20.6,
       "latest_audit": "2021-03"
     },
     {
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 6.1,
+      "coverage_pct": 8.8,
       "latest_audit": "2022-01"
     },
     {
       "auditor": "yAudit",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 4.1,
+      "coverage_pct": 5.9,
       "latest_audit": "2020-09"
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2c23276107b45e64c8c59482f4a24f4f2e568ea6",
-      "name": "bVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 300315.24053127214,
-      "risk_note": "Verified native implementation with $300,315.24 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xebd12620e29dc6c452db7b96e1f190f3ee02bde8",
-      "name": "BACDAIPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 88280.57263998144,
-      "risk_note": "Verified native implementation with $88,280.57 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x51882184b7f9beed6db9c617846140da1d429fd4",
-      "name": "BACUSDCPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 86330.93511,
-      "risk_note": "Verified native implementation with $86,330.94 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2833bdc5b31269d356bdf92d0fd8f3674e877e44",
-      "name": "BACUSDTPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 71162.695824,
-      "risk_note": "Verified native implementation with $71,162.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -2149,26 +1574,6 @@
       "origin_kind": "native",
       "tvl_usd": 5425.4162312112985,
       "risk_note": "Verified native implementation with $5,425.42 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c",
-      "name": "BACSUSDPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 10,
-      "risk_note": "Verified native implementation with $10.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x76bac85e1e82cd677faa2b3f00c4a2626c4c6e32",
-      "name": "ERC20Peg",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 2.000207494355759,
-      "risk_note": "Verified native implementation with $2.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -2193,29 +1598,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xc462d8ee54953e7d7bf276612b75387ea114c3bf",
-      "name": "BACyCRVPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x11baffebd829b490cf077ce7ef7700dd3cb1e534",
       "name": "bhsAlpha",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0ec9f76202a7061eb9b3a7d6b59d36215a7e37da",
-      "name": "BlackPoolToken",
-      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2343,16 +1728,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd",
-      "name": "MasterChef",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xb925863a15ebdeae1a638bf2b6fd00d4db897a62",
       "name": "sHakka",
       "role": "unknown",
@@ -2366,16 +1741,6 @@
       "address": "0x4eda33ea48052006850966fc1182cf46f325501d",
       "name": "SquidFarmer",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x46c5098f73fa656e82d7e9afbf3c00b32b7b1ee2",
-      "name": "StakedBPT",
-      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2433,16 +1798,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xc935285b0d88069305431dace0c3c01d7e793d84",
-      "name": "TokenPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x07224029d06a6973c93480a251862861416c583c",
       "name": "votingPowerViewer",
       "role": "periphery",
@@ -2452,10 +1807,10 @@
     }
   ],
   "origin_summary": {
-    "native": 47,
-    "upstream": 1,
+    "native": 36,
+    "upstream": 0,
     "standard_library": 1,
-    "needs_review": 3
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
@@ -2470,10 +1825,6 @@
       {
         "audit_id": 2557,
         "report_name": "Hakka Finance Vault contract wHakka audit.pdf"
-      },
-      {
-        "audit_id": 3436,
-        "report_name": "Read Audit Report"
       }
     ],
     "inherited_remapped_matches": []

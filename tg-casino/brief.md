@@ -1,14 +1,12 @@
 # Agentic Audit Brief: TG Casino
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: TG Casino (`tg-casino`)
 - Website: [https://token.tg.casino/staking](https://token.tg.casino/staking)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T11:07:26.839Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:17.455Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 15 unique implementations (20 raw deployments)
 - DeFi Llama TVL: $1,201,303.77
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-TG Casino is a decentralized gambling and staking platform on Ethereum, centered around its native TGC token. Users can stake tokens to earn rewards and participate in governance, while the protocol facilitates casino-style games of chance.
+TG.Casino is a Telegram casino-associated project centered on the TGC token on Ethereum. The verified on-chain scope supports TGC token contracts and staking/profit-share related contracts, including staking and multi-staking components. Current evidence does not support describing the listed on-chain contracts as facilitating casino games or token-holder governance.
 
 ### Architecture
 
@@ -31,13 +29,12 @@ The TGC token is the central asset used across staking contracts. StakingManager
 - Unverified implementations: 0
 - Unique implementations: 15
 - Raw deployments: 20
-- Audits discovered: 800
+- Audits discovered: 761
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2025-10 (fresh)
-- Staleness: 8 fresh, 123 aging, 92 stale, 577 unknown
+- Latest audit: 2025 (aging)
+- Staleness: 0 fresh, 103 aging, 81 stale, 577 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -65,9 +62,9 @@ The TGC token is the central asset used across staking contracts. StakingManager
 | PresaleV3 | unknown | ethereum | [`0x665fa1...6643fd`](./contracts/ethereum-1/0x665fa1b41c5102ee62b6c23818c2b4f1316643fd/) | ⚠️ Unaudited |
 | PresaleV4 | unknown | ethereum | 2 deployments: ethereum [`0x39fd3e...487f92`](./contracts/ethereum-1/0x39fd3e106fed3c80192d1849e13d900f45487f92/); ethereum `0x5188e2...77cc4a` | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | [`0x34813f...a7274e`](./contracts/ethereum-1/0x34813f4bc5e2a14c8fffb10bd43c59fa05a7274e/) | ⚠️ Unaudited |
-| StakingManager | governance | ethereum | [`0x9307d5...b692bb`](./contracts/ethereum-1/0x9307d50caae1fa22a08b3352b493797a7ab692bb/) | ⚠️ Unaudited |
+| StakingManager | operational_periphery | ethereum | [`0x9307d5...b692bb`](./contracts/ethereum-1/0x9307d50caae1fa22a08b3352b493797a7ab692bb/) | ⚠️ Unaudited |
 | StakingManagerV1 | governance | ethereum | [`0x21d6d6...540ae8`](./contracts/ethereum-1/0x21d6d6d6ffd8b68e94bf5159bb029635af540ae8/) | ⚠️ Unaudited |
-| StakingManagerV2 | governance | ethereum | 2 deployments: ethereum [`0xb5b77c...bf1a0e`](./contracts/ethereum-1/0xb5b77c895bf3c4c060da327fbc953e7fbdbf1a0e/); ethereum `0xfad6ef...f77b42` | ⚠️ Unaudited |
+| StakingManagerV2 | operational_periphery | ethereum | 2 deployments: ethereum [`0xb5b77c...bf1a0e`](./contracts/ethereum-1/0xb5b77c895bf3c4c060da327fbc953e7fbdbf1a0e/); ethereum `0xfad6ef...f77b42` | ⚠️ Unaudited |
 | StakingManagerV3 | governance | ethereum | [`0xc2db0d...fdd262`](./contracts/ethereum-1/0xc2db0df8ba54715ff73691c8c934120168fdd262/) | ⚠️ Unaudited |
 | StakingManagerV4 | governance | ethereum | [`0x700169...758cc8`](./contracts/ethereum-1/0x700169c3408f10e98c34ac1902e2b6ae89758cc8/) | ⚠️ Unaudited |
 | StakingManagerV5 | governance | ethereum | 2 deployments: ethereum [`0x258c31...db764e`](./contracts/ethereum-1/0x258c3104388f8cd72c8b4336fc536033e6db764e/); ethereum `0x4bb67f...694085` | ⚠️ Unaudited |
@@ -305,7 +302,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Coinsult_MetaMemeVault_0x8e...089c_Audit.pdf](https://github.com/Coinsult/Audits/blob/main/Coinsult_MetaMemeVault_0x8e...089c_Audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Coinsult_MetaNewsToken_No c...ress_Audit.pdf](https://github.com/Coinsult/Audits/blob/main/Coinsult_MetaNewsToken_No%20c...ress_Audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Coinsult_Meteor_Swap_0x0c...8fa6_Audit.pdf](https://github.com/Coinsult/Audits/blob/main/Coinsult_Meteor_Swap_0x0c...8fa6_Audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Coinsult_Meteor_Swap_FGUs...MBSv_Audit.pdf](https://github.com/Coinsult/Audits/blob/main/Coinsult_Meteor_Swap_FGUs...MBSv_Audit.pdf) | unknown | Audit | 2025-03 | aging | Direct | n/a | 0 | n/a |
 | [Coinsult_Milk_Mocha_0x7f...aeF2_Audit.pdf](https://github.com/Coinsult/Audits/blob/main/Coinsult_Milk_Mocha_0x7f...aeF2_Audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Coinsult_Milon_CYv7...hvMH_Audit.pdf](https://github.com/Coinsult/Audits/blob/main/Coinsult_Milon_CYv7...hvMH_Audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Coinsult_MiniBonk_0xD2...4444_Audit.pdf](https://github.com/Coinsult/Audits/blob/main/Coinsult_MiniBonk_0xD2...4444_Audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -396,7 +392,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Coinsult_SOSANA_49jd...YFMj_Audit.pdf](https://github.com/Coinsult/Audits/blob/main/Coinsult_SOSANA_49jd...YFMj_Audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Coinsult_STAKEREUM_0xA4...FF58_Audit.pdf](https://github.com/Coinsult/Audits/blob/main/Coinsult_STAKEREUM_0xA4...FF58_Audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Coinsult_STAKEREUM_0xb0...be4d_Audit.pdf](https://github.com/Coinsult/Audits/blob/main/Coinsult_STAKEREUM_0xb0...be4d_Audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Coinsult_SUBBD_0xEE...aCE1_Audit.pdf](https://github.com/Coinsult/Audits/blob/main/Coinsult_SUBBD_0xEE...aCE1_Audit.pdf) | unknown | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
 | [Coinsult_SafeBSC_0xf8...5d80_Audit.pdf](https://github.com/Coinsult/Audits/blob/main/Coinsult_SafeBSC_0xf8...5d80_Audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Coinsult_Satoshi_Yolo_0x75...6e63_Audit.pdf](https://github.com/Coinsult/Audits/blob/main/Coinsult_Satoshi_Yolo_0x75...6e63_Audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Coinsult_Satu_Wallet_EWnS...pump_Audit.pdf](https://github.com/Coinsult/Audits/blob/main/Coinsult_Satu_Wallet_EWnS...pump_Audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -502,14 +497,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Zylo Vortex _ PowerUp-audit-report (3).pdf](https://github.com/Coinsult/Audits/blob/main/Zylo%20Vortex%20_%20PowerUp-audit-report%20(3).pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [20230830_ASSUREDEFI_SHILLD_SHILLD_Audit.pdf](https://github.com/Assure-DeFi/Audits/blob/main/20230830_ASSUREDEFI_SHILLD_SHILLD_Audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [20230830_ASSUREDEFI_SHILLD_SHILLD_Audit_230830_231102.pdf](https://github.com/Assure-DeFi/Audits/blob/main/20230830_ASSUREDEFI_SHILLD_SHILLD_Audit_230830_231102.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [2024_12_04_ASSUREDEFI_The GameHub_GHUB_TOKEN_Audit.pdf](https://github.com/Assure-DeFi/Audits/blob/main/2024_12_04_ASSUREDEFI_The%20GameHub_GHUB_TOKEN_Audit.pdf) | unknown | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
 | [ABRAHAM_TOKEN_01_08_23.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ABRAHAM_TOKEN_01_08_23.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [ABRAHAM_TOKEN_12_31_23.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ABRAHAM_TOKEN_12_31_23.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [AIMBOT_TOKEN_02_28_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/AIMBOT_TOKEN_02_28_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [AITAX_ADVANCED_04_28_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/AITAX_ADVANCED_04_28_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [AITAX_ADVANCED_05_05_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/AITAX_ADVANCED_05_05_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [AIToken_ADV_04_20_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/AIToken_ADV_04_20_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
-| [AIToken_ADV_04_21_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/AIToken_ADV_04_21_25.pdf) | unknown | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
 | [AIToken_ADV_04_22_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/AIToken_ADV_04_22_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [ANYDEX_TOKEN_04_09_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ANYDEX_TOKEN_04_09_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [ANYDEX_TOKEN_04_11_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ANYDEX_TOKEN_04_11_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -518,14 +511,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [ARCANE_ERC 20_01_18_2024.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ARCANE_ERC%2020_01_18_2024.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [ARCANE_ERC20 token_01_22_2024.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ARCANE_ERC20%20token_01_22_2024.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [ASSUREDEFI - KASPACOM AND NEXUS DRAINER INVESTIGATION.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ASSUREDEFI%20-%20KASPACOM%20AND%20NEXUS%20DRAINER%20INVESTIGATION.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ASSUREDEFI_Block Social Network_BSN_TOKEN_2024_09_20_Audit.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ASSUREDEFI_Block%20Social%20Network_BSN_TOKEN_2024_09_20_Audit.pdf) | unknown | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
 | [ASSUREDEFI_CNDR_$CNDR_TOKEN_Audit_06_14_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ASSUREDEFI_CNDR_%24CNDR_TOKEN_Audit_06_14_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [ASSUREDEFI_Good Trouble_GTRB_TOKEN_Audit_06_11_2024.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ASSUREDEFI_Good%20Trouble_GTRB_TOKEN_Audit_06_11_2024.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [ASSUREDEFI_JEJE_JJ_TOKEN_Audit_06_24_2024.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ASSUREDEFI_JEJE_JJ_TOKEN_Audit_06_24_2024.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [ASSUREDEFI_Nodez_NODE_TOKEN_Audit_Final_09_26_2024.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ASSUREDEFI_Nodez_NODE_TOKEN_Audit_Final_09_26_2024.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [ASSUREDEFI_Nodez_TOKEN_Audit _09_26_2024.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ASSUREDEFI_Nodez_TOKEN_Audit%20_09_26_2024.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [AURK_ADV_1_12_26.pdf](https://github.com/Assure-DeFi/Audits/blob/main/AURK_ADV_1_12_26.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Abraham_ERC20 Token_12_27_23.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Abraham_ERC20%20Token_12_27_23.pdf) | unknown | Audit | 2023-12 | stale | Direct | n/a | 0 | n/a |
 | [Addon_ADV_01_20_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Addon_ADV_01_20_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Alpha City_ ERC 20 token_11_21_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Alpha%20City_%20ERC%2020%20token_11_21_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Alpha City_ ERC 20 token_11_23_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Alpha%20City_%20ERC%2020%20token_11_23_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -543,7 +534,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [BIONIC_ERC 20 Token_10_03_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/BIONIC_ERC%2020%20Token_10_03_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [BLOCKBETS_TOKEN_04_05_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/BLOCKBETS_TOKEN_04_05_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [BORNHUB_TOKEN_04_12_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/BORNHUB_TOKEN_04_12_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
-| [BSTRToken_ADV_06_10_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/BSTRToken_ADV_06_10_25.pdf) | unknown | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
 | [BakedBeans_TOKEN_04_19_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/BakedBeans_TOKEN_04_19_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [BakedBeans_TOKEN_04_20_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/BakedBeans_TOKEN_04_20_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [BankPad_Platform Audit_Updated 1_23_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/BankPad_Platform%20Audit_Updated%201_23_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
@@ -565,8 +555,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [BloxSIM_ADV_10_08_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/BloxSIM_ADV_10_08_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [CATE_ADV_09_18_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/CATE_ADV_09_18_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [CELLEX_ADV_06_13_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/CELLEX_ADV_06_13_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
-| [CHAIN BASED_ADV_11_22_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/CHAIN%20BASED_ADV_11_22_24.pdf) | unknown | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
-| [CHAIN BASED_ADV_12_02_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/CHAIN%20BASED_ADV_12_02_24.pdf) | unknown | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
 | [CHAIN BASED_TOKEN_11_27_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/CHAIN%20BASED_TOKEN_11_27_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [CHAINSPIN_ST_05_23_26.pdf](https://github.com/Assure-DeFi/Audits/blob/main/CHAINSPIN_ST_05_23_26.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [CLOAK_ADV_06_16_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/CLOAK_ADV_06_16_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
@@ -583,7 +571,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [CoinCreate_STAKENFT_11_04_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/CoinCreate_STAKENFT_11_04_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [CoinCreate_STOKEN_11_04_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/CoinCreate_STOKEN_11_04_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [CoinCreate_VESTING_11_04_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/CoinCreate_VESTING_11_04_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
-| [CryptoCoin_ADV_01_24_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/CryptoCoin_ADV_01_24_24.pdf) | unknown | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
 | [Cygnus Network_Token_DAO_02_02_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Cygnus%20Network_Token_DAO_02_02_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [DESTRA_TOKEN_03_13_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/DESTRA_TOKEN_03_13_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [DESTRA_TOKEN_03_14_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/DESTRA_TOKEN_03_14_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -608,21 +595,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [DecenterAI_ST2_05_14_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/DecenterAI_ST2_05_14_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [DecenterAI_ST_05_14_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/DecenterAI_ST_05_14_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [DefiOne.VAC_ERC 20 Token_09_12_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/DefiOne.VAC_ERC%2020%20Token_09_12_2023.pdf) | unknown | Audit | 2023-09 | stale | Direct | n/a | 0 | n/a |
-| [DefiOne.VAC_ERC 20 Token_10_10_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/DefiOne.VAC_ERC%2020%20Token_10_10_2023.pdf) | unknown | Audit | 2023-10 | stale | Direct | n/a | 0 | n/a |
 | [Deluge.Cash_Flash_Audit_12_16_23.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Deluge.Cash_Flash_Audit_12_16_23.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [ELONTIX Audit_ERC20 Token_7_28_23.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ELONTIX%20Audit_ERC20%20Token_7_28_23.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [EVA Token_ADV2_09_12_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/EVA%20Token_ADV2_09_12_24.pdf) | unknown | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
-| [EVA Token_ADV_09_12_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/EVA%20Token_ADV_09_12_24.pdf) | unknown | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
-| [EVA_ADV_09_18_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/EVA_ADV_09_18_24.pdf) | unknown | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
 | [EVA_FARM_09_28_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/EVA_FARM_09_28_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [EVA_FARM_09_29_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/EVA_FARM_09_29_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [EchoMetrix_ADV2_06_28_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/EchoMetrix_ADV2_06_28_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [EchoMetrix_ADV_06_28_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/EchoMetrix_ADV_06_28_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [Embark_ERC 20 Token_10_20_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Embark_ERC%2020%20Token_10_20_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Embark_ERC 20 Token_10_31_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Embark_ERC%2020%20Token_10_31_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [FGB_TOKENV2_01_30_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/FGB_TOKENV2_01_30_24.pdf) | unknown | Audit | 2024-01 | stale | Direct | n/a | 0 | n/a |
-| [FGB_TOKEN_01_29_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/FGB_TOKEN_01_29_24.pdf) | unknown | Audit | 2024-01 | stale | Direct | n/a | 0 | n/a |
-| [FGB_TOKEN_01_30_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/FGB_TOKEN_01_30_24.pdf) | unknown | Audit | 2024-01 | stale | Direct | n/a | 0 | n/a |
 | [FLEXIMINE_TOKEN_03_17_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/FLEXIMINE_TOKEN_03_17_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [FLOORISLAVA_ADV_1_19_26.pdf](https://github.com/Assure-DeFi/Audits/blob/main/FLOORISLAVA_ADV_1_19_26.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [FLOORISLAVA_ADV_1_23_26.pdf](https://github.com/Assure-DeFi/Audits/blob/main/FLOORISLAVA_ADV_1_23_26.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -637,7 +617,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [GG_GUARDIAN_ADV_05_01_26.pdf](https://github.com/Assure-DeFi/Audits/blob/main/GG_GUARDIAN_ADV_05_01_26.pdf) | Guardian | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [GG_PROTOCOL - ADV_04_15_26.pdf](https://github.com/Assure-DeFi/Audits/blob/main/GG_PROTOCOL%20-%20ADV_04_15_26.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [GG_PROTOCOL_ADV_05_01_26.pdf](https://github.com/Assure-DeFi/Audits/blob/main/GG_PROTOCOL_ADV_05_01_26.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [GRADIENT_MM_09_22_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/GRADIENT_MM_09_22_25.pdf) | unknown | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
 | [GROKCAT_TOKEN_04_12_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/GROKCAT_TOKEN_04_12_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [GROKS TOKEN_ERC 20 TOKEN_12_18_23.pdf](https://github.com/Assure-DeFi/Audits/blob/main/GROKS%20TOKEN_ERC%2020%20TOKEN_12_18_23.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [GUARDIAN_ADV_05_26_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/GUARDIAN_ADV_05_26_24.pdf) | Guardian | Audit | 2024-05 | stale | Direct | n/a | 0 | n/a |
@@ -645,11 +624,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Gempad_LOCKER_12_21_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Gempad_LOCKER_12_21_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [GeneAlphaAi_ADV_07_23_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/GeneAlphaAi_ADV_07_23_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [GnomeLand_NFT_02_09_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/GnomeLand_NFT_02_09_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
-| [GoodTrouble_ADV_06_02_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/GoodTrouble_ADV_06_02_24.pdf) | unknown | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
-| [Gradient_ADV_05_30_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Gradient_ADV_05_30_25.pdf) | unknown | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
 | [Gradient_ADV_06_02_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Gradient_ADV_06_02_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
-| [Gradient_ADV_06_05_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Gradient_ADV_06_05_25.pdf) | unknown | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
-| [Gradient_ADV_06_11_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Gradient_ADV_06_11_25.pdf) | unknown | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
 | [Gradient_ADV_4_09_20_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Gradient_ADV_4_09_20_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [Gradient_Bundle_07_06_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Gradient_Bundle_07_06_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [Gradient_Bundle_07_09_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Gradient_Bundle_07_09_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
@@ -664,8 +639,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [HedgeFi_ADV_06_18_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/HedgeFi_ADV_06_18_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [HedgeFi_ADV_06_19_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/HedgeFi_ADV_06_19_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [ICB Network_Vesting_04_18_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ICB%20Network_Vesting_04_18_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
-| [ICB_STAKING_04_28_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ICB_STAKING_04_28_24.pdf) | unknown | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
-| [IMAGINE_ST_07_30_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/IMAGINE_ST_07_30_25.pdf) | unknown | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
 | [INNOVIA_TOKEN_04_23_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/INNOVIA_TOKEN_04_23_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [IOTAI_ADV_07_25_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/IOTAI_ADV_07_25_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [IronClad Security_ST_04_18_26.pdf](https://github.com/Assure-DeFi/Audits/blob/main/IronClad%20Security_ST_04_18_26.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -674,7 +647,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [JOI AI_ERC 20 token_12_6_23.pdf.pdf](https://github.com/Assure-DeFi/Audits/blob/main/JOI%20AI_ERC%2020%20token_12_6_23.pdf.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [KENNY Audit_ERC20 Token_7_28_23.pdf](https://github.com/Assure-DeFi/Audits/blob/main/KENNY%20Audit_ERC20%20Token_7_28_23.pdf) | yAudit | Audit | 2023-07 | stale | Direct | n/a | 0 | n/a |
 | [KIMBERLITE_ST_10_26_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/KIMBERLITE_ST_10_26_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
-| [LADA_ERC20 Token_02_20_2024.pdf](https://github.com/Assure-DeFi/Audits/blob/main/LADA_ERC20%20Token_02_20_2024.pdf) | unknown | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
 | [LADA_TOKEN_02_20_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/LADA_TOKEN_02_20_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [LANNetwork_ERC 20 Token_09_03_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/LANNetwork_ERC%2020%20Token_09_03_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [LOOP_SOL_10_13_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/LOOP_SOL_10_13_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
@@ -682,8 +654,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [LYNX _Profit Sharing_10_13_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/LYNX%20_Profit%20Sharing_10_13_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [LYNX _Profit Sharing_10_22_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/LYNX%20_Profit%20Sharing_10_22_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [LYNX_ERC 20 Token_09_27_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/LYNX_ERC%2020%20Token_09_27_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [LegalX_ADV_03_02_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/LegalX_ADV_03_02_25.pdf) | unknown | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
-| [LegalX_ADV_03_03_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/LegalX_ADV_03_03_25.pdf) | unknown | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
 | [Lynx Tech_$Lynx_Staking_Audit_12_14_23.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Lynx%20Tech_%24Lynx_Staking_Audit_12_14_23.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [MAO_TOKEN_1_15_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MAO_TOKEN_1_15_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [MAO_TOKEN_V2_1_15_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MAO_TOKEN_V2_1_15_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -691,7 +661,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [MEME Alliance_SOL_09_09_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MEME%20Alliance_SOL_09_09_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [MEMELORDZ_BASE_10_22_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MEMELORDZ_BASE_10_22_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [MEMELORDZ_BSC_10_22_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MEMELORDZ_BSC_10_22_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [MENTAL_SOL_09_16_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MENTAL_SOL_09_16_25.pdf) | unknown | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
 | [METABOT_ADV_10_23_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/METABOT_ADV_10_23_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [METABRAWL_ADV_01_26_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/METABRAWL_ADV_01_26_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [METAZERO_ADVANCED_04_11_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/METAZERO_ADVANCED_04_11_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -699,24 +668,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [MEVDAO_ERC 20 Token_09_05_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MEVDAO_ERC%2020%20Token_09_05_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [MEVDAO_ERC 20 Token_09_06_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MEVDAO_ERC%2020%20Token_09_06_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [MLMX_ST_07_24_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MLMX_ST_07_24_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
-| [MODUS_V2_02_02_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MODUS_V2_02_02_24.pdf) | unknown | Audit | 2024-01 | stale | Direct | n/a | 0 | n/a |
 | [MODUS_V3_02_12_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MODUS_V3_02_12_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
-| [MODUS_V5_04_05_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MODUS_V5_04_05_24.pdf) | unknown | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
-| [MODUS_V6_04_05_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MODUS_V6_04_05_24.pdf) | unknown | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
 | [MOREPAD_ADV_12_19_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MOREPAD_ADV_12_19_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [MOREPAD_ADV_12_24_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MOREPAD_ADV_12_24_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [MOREPAD_ADV_12_28_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MOREPAD_ADV_12_28_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [MQSALA_ADV_06_30_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MQSALA_ADV_06_30_25.pdf) | unknown | Audit | 2025-06 | fresh | Direct | n/a | 0 | n/a |
 | [MQSALA_ADV_07_01_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MQSALA_ADV_07_01_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [MQSALA_ADV_07_04_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MQSALA_ADV_07_04_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [MUGA EARN_SOL_10_30_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MUGA%20EARN_SOL_10_30_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
-| [MULLET_ADV_06_04_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MULLET_ADV_06_04_24.pdf) | unknown | Audit | 2024-05 | stale | Direct | n/a | 0 | n/a |
 | [MUNCH_TOKEN_07_17_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MUNCH_TOKEN_07_17_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [MUNCH_TOKEN_07_23_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MUNCH_TOKEN_07_23_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [MUNCH_TOKEN_07_26_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MUNCH_TOKEN_07_26_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [ManaCoin_ERC 20 Token_09-21-2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ManaCoin_ERC%2020%20Token_09-21-2023.pdf) | unknown | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
 | [ManaCoin_MNC_Assure DeFi Audit.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ManaCoin_MNC_Assure%20DeFi%20Audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Meme Alliance_ ERC 20 token_11_10_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Meme%20Alliance_%20ERC%2020%20token_11_10_2023.pdf) | unknown | Audit | 2023-11 | stale | Direct | n/a | 0 | n/a |
 | [Meme Alliance_ ERC 20 token_11_20_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Meme%20Alliance_%20ERC%2020%20token_11_20_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Meme Stars_ ERC 20 token_11_10_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Meme%20Stars_%20ERC%2020%20token_11_10_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [MemeLordz_ADV_09_12_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MemeLordz_ADV_09_12_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
@@ -724,22 +687,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Metabot_ADV_10_12_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Metabot_ADV_10_12_24.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [MileStoneMillions_ERC 20 Token_09_13_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MileStoneMillions_ERC%2020%20Token_09_13_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Modus_ERC 20_01_26_2024.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Modus_ERC%2020_01_26_2024.pdf) | unknown | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
-| [Monolitify_Token_12_30_23.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Monolitify_Token_12_30_23.pdf) | unknown | Audit | 2023-12 | stale | Direct | n/a | 0 | n/a |
 | [MoonInu_ERC 20 Token_08_30_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MoonInu_ERC%2020%20Token_08_30_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Moonreum_ERC 20 Token_10_11_2023.pdf](https://github.com/Assure-DeFi/Audits/blob/main/Moonreum_ERC%2020%20Token_10_11_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [MrLightSpeedCoin_ST_11_13_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/MrLightSpeedCoin_ST_11_13_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [NEURASWAP_TOKEN_01_12_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/NEURASWAP_TOKEN_01_12_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [NOMOEX_TOKEN_07_11_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/NOMOEX_TOKEN_07_11_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [NOMOEX_TOKEN_ADV_07_11_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/NOMOEX_TOKEN_ADV_07_11_24.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [NOREXA_ADV_07_20_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/NOREXA_ADV_07_20_25.pdf) | unknown | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
 | [NOREXA_ADV_07_24_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/NOREXA_ADV_07_24_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [NOREXA_YieldOptimizer_09_23_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/NOREXA_YieldOptimizer_09_23_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [NOREXA_YieldOptimizer_10_13_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/NOREXA_YieldOptimizer_10_13_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
-| [NOVA BUILDERS_ADV_08_21_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/NOVA%20BUILDERS_ADV_08_21_25.pdf) | unknown | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
 | [NUMPAY_ADV_07_26_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/NUMPAY_ADV_07_26_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [NUMPAY_ADV_08_01_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/NUMPAY_ADV_08_01_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
-| [NovaQ_ADV_05_24_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/NovaQ_ADV_05_24_25.pdf) | unknown | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
-| [OMIRA LABS_ADV_12_03_24.pdf](https://github.com/Assure-DeFi/Audits/blob/main/OMIRA%20LABS_ADV_12_03_24.pdf) | unknown | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
 | [ONCHAIN BATTLES_ADV_07_29_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ONCHAIN%20BATTLES_ADV_07_29_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [ONCHAIN BATTLES_ADV_07_31_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ONCHAIN%20BATTLES_ADV_07_31_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 | [ONLYPUMP_ADV_07_03_25.pdf](https://github.com/Assure-DeFi/Audits/blob/main/ONLYPUMP_ADV_07_03_25.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
@@ -906,9 +864,9 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xa87e79...73009a`](./contracts/ethereum-1/0xa87e79652814a0239bf752d4d7be70f61b73009a/) | PresaleV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa1f35d...0d47c4`](./contracts/ethereum-1/0xa1f35da94d3c25c1c130092122db690ff10d47c4/) | PresaleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x665fa1...6643fd`](./contracts/ethereum-1/0x665fa1b41c5102ee62b6c23818c2b4f1316643fd/) | PresaleV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9307d5...b692bb`](./contracts/ethereum-1/0x9307d50caae1fa22a08b3352b493797a7ab692bb/) | StakingManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9307d5...b692bb`](./contracts/ethereum-1/0x9307d50caae1fa22a08b3352b493797a7ab692bb/) | StakingManager | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x21d6d6...540ae8`](./contracts/ethereum-1/0x21d6d6d6ffd8b68e94bf5159bb029635af540ae8/) | StakingManagerV1 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb5b77c...bf1a0e`](./contracts/ethereum-1/0xb5b77c895bf3c4c060da327fbc953e7fbdbf1a0e/) | StakingManagerV2 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb5b77c...bf1a0e`](./contracts/ethereum-1/0xb5b77c895bf3c4c060da327fbc953e7fbdbf1a0e/) | StakingManagerV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc2db0d...fdd262`](./contracts/ethereum-1/0xc2db0df8ba54715ff73691c8c934120168fdd262/) | StakingManagerV3 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x700169...758cc8`](./contracts/ethereum-1/0x700169c3408f10e98c34ac1902e2b6ae89758cc8/) | StakingManagerV4 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -925,7 +883,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 799
+- Audits with zero matched contracts: 760
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=2
@@ -1142,7 +1100,6 @@ Zero-match audit list:
 - [10719] Coinsult_MetaMemeVault_0x8e...089c_Audit.pdf
 - [10720] Coinsult_MetaNewsToken_No c...ress_Audit.pdf
 - [10721] Coinsult_Meteor_Swap_0x0c...8fa6_Audit.pdf
-- [10722] Coinsult_Meteor_Swap_FGUs...MBSv_Audit.pdf
 - [10723] Coinsult_Milk_Mocha_0x7f...aeF2_Audit.pdf
 - [10724] Coinsult_Milon_CYv7...hvMH_Audit.pdf
 - [10725] Coinsult_MiniBonk_0xD2...4444_Audit.pdf
@@ -1233,7 +1190,6 @@ Zero-match audit list:
 - [10810] Coinsult_SOSANA_49jd...YFMj_Audit.pdf
 - [10811] Coinsult_STAKEREUM_0xA4...FF58_Audit.pdf
 - [10812] Coinsult_STAKEREUM_0xb0...be4d_Audit.pdf
-- [10813] Coinsult_SUBBD_0xEE...aCE1_Audit.pdf
 - [10814] Coinsult_SafeBSC_0xf8...5d80_Audit.pdf
 - [10815] Coinsult_Satoshi_Yolo_0x75...6e63_Audit.pdf
 - [10816] Coinsult_Satu_Wallet_EWnS...pump_Audit.pdf
@@ -1339,14 +1295,12 @@ Zero-match audit list:
 - [10916] Zylo Vortex _ PowerUp-audit-report (3).pdf
 - [10917] 20230830_ASSUREDEFI_SHILLD_SHILLD_Audit.pdf
 - [10918] 20230830_ASSUREDEFI_SHILLD_SHILLD_Audit_230830_231102.pdf
-- [10919] 2024_12_04_ASSUREDEFI_The GameHub_GHUB_TOKEN_Audit.pdf
 - [10920] ABRAHAM_TOKEN_01_08_23.pdf
 - [10921] ABRAHAM_TOKEN_12_31_23.pdf
 - [10922] AIMBOT_TOKEN_02_28_24.pdf
 - [10923] AITAX_ADVANCED_04_28_24.pdf
 - [10924] AITAX_ADVANCED_05_05_24.pdf
 - [10925] AIToken_ADV_04_20_25.pdf
-- [10926] AIToken_ADV_04_21_25.pdf
 - [10927] AIToken_ADV_04_22_25.pdf
 - [10928] ANYDEX_TOKEN_04_09_24.pdf
 - [10929] ANYDEX_TOKEN_04_11_24.pdf
@@ -1355,14 +1309,12 @@ Zero-match audit list:
 - [10932] ARCANE_ERC 20_01_18_2024.pdf
 - [10933] ARCANE_ERC20 token_01_22_2024.pdf
 - [10934] ASSUREDEFI - KASPACOM AND NEXUS DRAINER INVESTIGATION.pdf
-- [10935] ASSUREDEFI_Block Social Network_BSN_TOKEN_2024_09_20_Audit.pdf
 - [10936] ASSUREDEFI_CNDR_$CNDR_TOKEN_Audit_06_14_2023.pdf
 - [10937] ASSUREDEFI_Good Trouble_GTRB_TOKEN_Audit_06_11_2024.pdf
 - [10938] ASSUREDEFI_JEJE_JJ_TOKEN_Audit_06_24_2024.pdf
 - [10939] ASSUREDEFI_Nodez_NODE_TOKEN_Audit_Final_09_26_2024.pdf
 - [10940] ASSUREDEFI_Nodez_TOKEN_Audit _09_26_2024.pdf
 - [10941] AURK_ADV_1_12_26.pdf
-- [10942] Abraham_ERC20 Token_12_27_23.pdf
 - [10943] Addon_ADV_01_20_24.pdf
 - [10944] Alpha City_ ERC 20 token_11_21_2023.pdf
 - [10945] Alpha City_ ERC 20 token_11_23_2023.pdf
@@ -1380,7 +1332,6 @@ Zero-match audit list:
 - [10957] BIONIC_ERC 20 Token_10_03_2023.pdf
 - [10958] BLOCKBETS_TOKEN_04_05_24.pdf
 - [10959] BORNHUB_TOKEN_04_12_24.pdf
-- [10960] BSTRToken_ADV_06_10_25.pdf
 - [10961] BakedBeans_TOKEN_04_19_24.pdf
 - [10962] BakedBeans_TOKEN_04_20_24.pdf
 - [10963] BankPad_Platform Audit_Updated 1_23_24.pdf
@@ -1402,8 +1353,6 @@ Zero-match audit list:
 - [10979] BloxSIM_ADV_10_08_24.pdf
 - [10980] CATE_ADV_09_18_24.pdf
 - [10981] CELLEX_ADV_06_13_25.pdf
-- [10982] CHAIN BASED_ADV_11_22_24.pdf
-- [10983] CHAIN BASED_ADV_12_02_24.pdf
 - [10984] CHAIN BASED_TOKEN_11_27_24.pdf
 - [10985] CHAINSPIN_ST_05_23_26.pdf
 - [10986] CLOAK_ADV_06_16_25.pdf
@@ -1420,7 +1369,6 @@ Zero-match audit list:
 - [10997] CoinCreate_STAKENFT_11_04_24.pdf
 - [10998] CoinCreate_STOKEN_11_04_24.pdf
 - [10999] CoinCreate_VESTING_11_04_24.pdf
-- [11000] CryptoCoin_ADV_01_24_24.pdf
 - [11001] Cygnus Network_Token_DAO_02_02_24.pdf
 - [11002] DESTRA_TOKEN_03_13_24.pdf
 - [11003] DESTRA_TOKEN_03_14_24.pdf
@@ -1445,21 +1393,14 @@ Zero-match audit list:
 - [11022] DecenterAI_ST2_05_14_25.pdf
 - [11023] DecenterAI_ST_05_14_25.pdf
 - [11024] DefiOne.VAC_ERC 20 Token_09_12_2023.pdf
-- [11025] DefiOne.VAC_ERC 20 Token_10_10_2023.pdf
 - [11026] Deluge.Cash_Flash_Audit_12_16_23.pdf
 - [11027] ELONTIX Audit_ERC20 Token_7_28_23.pdf
-- [11028] EVA Token_ADV2_09_12_24.pdf
-- [11029] EVA Token_ADV_09_12_24.pdf
-- [11030] EVA_ADV_09_18_24.pdf
 - [11031] EVA_FARM_09_28_24.pdf
 - [11032] EVA_FARM_09_29_24.pdf
 - [11033] EchoMetrix_ADV2_06_28_25.pdf
 - [11034] EchoMetrix_ADV_06_28_25.pdf
 - [11035] Embark_ERC 20 Token_10_20_2023.pdf
 - [11036] Embark_ERC 20 Token_10_31_2023.pdf
-- [11037] FGB_TOKENV2_01_30_24.pdf
-- [11038] FGB_TOKEN_01_29_24.pdf
-- [11039] FGB_TOKEN_01_30_24.pdf
 - [11040] FLEXIMINE_TOKEN_03_17_24.pdf
 - [11041] FLOORISLAVA_ADV_1_19_26.pdf
 - [11042] FLOORISLAVA_ADV_1_23_26.pdf
@@ -1474,7 +1415,6 @@ Zero-match audit list:
 - [11051] GG_GUARDIAN_ADV_05_01_26.pdf
 - [11052] GG_PROTOCOL - ADV_04_15_26.pdf
 - [11053] GG_PROTOCOL_ADV_05_01_26.pdf
-- [11054] GRADIENT_MM_09_22_25.pdf
 - [11055] GROKCAT_TOKEN_04_12_24.pdf
 - [11056] GROKS TOKEN_ERC 20 TOKEN_12_18_23.pdf
 - [11057] GUARDIAN_ADV_05_26_24.pdf
@@ -1482,11 +1422,7 @@ Zero-match audit list:
 - [11059] Gempad_LOCKER_12_21_24.pdf
 - [11060] GeneAlphaAi_ADV_07_23_25.pdf
 - [11061] GnomeLand_NFT_02_09_24.pdf
-- [11062] GoodTrouble_ADV_06_02_24.pdf
-- [11063] Gradient_ADV_05_30_25.pdf
 - [11064] Gradient_ADV_06_02_25.pdf
-- [11065] Gradient_ADV_06_05_25.pdf
-- [11066] Gradient_ADV_06_11_25.pdf
 - [11067] Gradient_ADV_4_09_20_25.pdf
 - [11068] Gradient_Bundle_07_06_25.pdf
 - [11069] Gradient_Bundle_07_09_25.pdf
@@ -1501,8 +1437,6 @@ Zero-match audit list:
 - [11078] HedgeFi_ADV_06_18_25.pdf
 - [11079] HedgeFi_ADV_06_19_25.pdf
 - [11080] ICB Network_Vesting_04_18_24.pdf
-- [11081] ICB_STAKING_04_28_24.pdf
-- [11082] IMAGINE_ST_07_30_25.pdf
 - [11083] INNOVIA_TOKEN_04_23_24.pdf
 - [11084] IOTAI_ADV_07_25_25.pdf
 - [11085] IronClad Security_ST_04_18_26.pdf
@@ -1511,7 +1445,6 @@ Zero-match audit list:
 - [11088] JOI AI_ERC 20 token_12_6_23.pdf.pdf
 - [11089] KENNY Audit_ERC20 Token_7_28_23.pdf
 - [11090] KIMBERLITE_ST_10_26_25.pdf
-- [11091] LADA_ERC20 Token_02_20_2024.pdf
 - [11092] LADA_TOKEN_02_20_24.pdf
 - [11093] LANNetwork_ERC 20 Token_09_03_2023.pdf
 - [11094] LOOP_SOL_10_13_25.pdf
@@ -1519,8 +1452,6 @@ Zero-match audit list:
 - [11096] LYNX _Profit Sharing_10_13_2023.pdf
 - [11097] LYNX _Profit Sharing_10_22_2023.pdf
 - [11098] LYNX_ERC 20 Token_09_27_2023.pdf
-- [11099] LegalX_ADV_03_02_25.pdf
-- [11100] LegalX_ADV_03_03_25.pdf
 - [11101] Lynx Tech_$Lynx_Staking_Audit_12_14_23.pdf
 - [11102] MAO_TOKEN_1_15_24.pdf
 - [11103] MAO_TOKEN_V2_1_15_24.pdf
@@ -1528,7 +1459,6 @@ Zero-match audit list:
 - [11105] MEME Alliance_SOL_09_09_24.pdf
 - [11106] MEMELORDZ_BASE_10_22_24.pdf
 - [11107] MEMELORDZ_BSC_10_22_24.pdf
-- [11108] MENTAL_SOL_09_16_25.pdf
 - [11109] METABOT_ADV_10_23_24.pdf
 - [11110] METABRAWL_ADV_01_26_24.pdf
 - [11111] METAZERO_ADVANCED_04_11_24.pdf
@@ -1536,24 +1466,18 @@ Zero-match audit list:
 - [11113] MEVDAO_ERC 20 Token_09_05_2023.pdf
 - [11114] MEVDAO_ERC 20 Token_09_06_2023.pdf
 - [11115] MLMX_ST_07_24_25.pdf
-- [11116] MODUS_V2_02_02_24.pdf
 - [11117] MODUS_V3_02_12_24.pdf
-- [11118] MODUS_V5_04_05_24.pdf
-- [11119] MODUS_V6_04_05_24.pdf
 - [11120] MOREPAD_ADV_12_19_24.pdf
 - [11121] MOREPAD_ADV_12_24_24.pdf
 - [11122] MOREPAD_ADV_12_28_24.pdf
-- [11123] MQSALA_ADV_06_30_25.pdf
 - [11124] MQSALA_ADV_07_01_25.pdf
 - [11125] MQSALA_ADV_07_04_25.pdf
 - [11126] MUGA EARN_SOL_10_30_25.pdf
-- [11127] MULLET_ADV_06_04_24.pdf
 - [11128] MUNCH_TOKEN_07_17_24.pdf
 - [11129] MUNCH_TOKEN_07_23_24.pdf
 - [11130] MUNCH_TOKEN_07_26_24.pdf
 - [11131] ManaCoin_ERC 20 Token_09-21-2023.pdf
 - [11132] ManaCoin_MNC_Assure DeFi Audit.pdf
-- [11133] Meme Alliance_ ERC 20 token_11_10_2023.pdf
 - [11134] Meme Alliance_ ERC 20 token_11_20_2023.pdf
 - [11135] Meme Stars_ ERC 20 token_11_10_2023.pdf
 - [11136] MemeLordz_ADV_09_12_24.pdf
@@ -1561,22 +1485,17 @@ Zero-match audit list:
 - [11138] Metabot_ADV_10_12_24.pdf
 - [11139] MileStoneMillions_ERC 20 Token_09_13_2023.pdf
 - [11140] Modus_ERC 20_01_26_2024.pdf
-- [11141] Monolitify_Token_12_30_23.pdf
 - [11142] MoonInu_ERC 20 Token_08_30_2023.pdf
 - [11143] Moonreum_ERC 20 Token_10_11_2023.pdf
 - [11144] MrLightSpeedCoin_ST_11_13_25.pdf
 - [11145] NEURASWAP_TOKEN_01_12_24.pdf
 - [11146] NOMOEX_TOKEN_07_11_24.pdf
 - [11147] NOMOEX_TOKEN_ADV_07_11_24.pdf
-- [11148] NOREXA_ADV_07_20_25.pdf
 - [11149] NOREXA_ADV_07_24_25.pdf
 - [11150] NOREXA_YieldOptimizer_09_23_25.pdf
 - [11151] NOREXA_YieldOptimizer_10_13_25.pdf
-- [11152] NOVA BUILDERS_ADV_08_21_25.pdf
 - [11153] NUMPAY_ADV_07_26_25.pdf
 - [11154] NUMPAY_ADV_08_01_25.pdf
-- [11155] NovaQ_ADV_05_24_25.pdf
-- [11156] OMIRA LABS_ADV_12_03_24.pdf
 - [11157] ONCHAIN BATTLES_ADV_07_29_25.pdf
 - [11158] ONCHAIN BATTLES_ADV_07_31_25.pdf
 - [11159] ONLYPUMP_ADV_07_03_25.pdf

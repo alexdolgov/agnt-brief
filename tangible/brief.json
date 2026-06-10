@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "tangible",
-  "generated_at": "2026-05-31T10:53:06.738Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:17.285Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "tangible",
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 46.942546229010645
   },
   "summary": {
-    "total_contracts": 476,
-    "total_addresses": 2580,
-    "unique_implementations": 476,
-    "total_deployments": 2580,
+    "total_contracts": 475,
+    "total_addresses": 2579,
+    "unique_implementations": 475,
+    "total_deployments": 2579,
     "audited_contracts": 0,
-    "unaudited_contracts": 265,
+    "unaudited_contracts": 264,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 263,
+    "contracts_verified_unaudited": 262,
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 211,
     "coverage_pct": 0,
@@ -64,6 +64,11 @@
     "project_purpose": null,
     "relationship_narrative": null,
     "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 475,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -244,37 +249,6 @@
           "chain_id": 137,
           "chain_name": "polygon",
           "address": "0xbb3d55d11b28c080d12d534b3213a07a42bd1858",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x940181a94a35a4569e4529a3cdfb74e38fd98631",
-      "name": "Aero",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Tangible RWA",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Aero",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x940181a94a35a4569e4529a3cdfb74e38fd98631",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -33770,7 +33744,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 476
+    "needs_review": 475
   },
   "scope_matching_notes": {
     "match_method_counts": {},

@@ -5,21 +5,22 @@
 - Project: Toobit (`toobit`)
 - Website: [https://www.toobit.com](https://www.toobit.com)
 - Lifecycle: unknown
-- Generated: 2026-05-27T14:44:33.153Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:59:17.525Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $69,148,305.81
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Toobit is a centralized exchange (CEX) that facilitates trading of digital assets. It provides a platform for users to buy, sell, and manage cryptocurrencies.
-
-### Architecture
-
-No on-chain contracts or product families were identified, as Toobit operates as a centralized exchange without on-chain smart contract infrastructure.
+Toobit is a centralized crypto exchange offering spot trading, futures/perpetual contract trading, copy trading, OTC/P2P/fiat on-ramp options, trading bots, Earn, Proof of Reserves, and related digital asset services. It also advertises DEX+/on-chain Web3 token access, but no project-owned smart-contract deployments are recorded in the provided contract surface.
 
 ## Audit Coverage Summary
 

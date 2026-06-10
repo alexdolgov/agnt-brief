@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "veno-finance",
-  "generated_at": "2026-05-31T11:31:37.860Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:18.561Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "veno-finance",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Veno Finance is a liquid staking protocol that allows users to stake assets like CRO and ETH to receive yield-bearing liquid tokens (e.g., ZkCro, YbEth, YBUSD). These tokens can be used across DeFi while earning staking rewards.",
+    "project_purpose": "Veno Finance is an active liquid staking and DeFi protocol whose current public liquid-staking-token surface includes LCRO, LATOM, LETH and LTIA. VNO should be described separately as the protocol token. ZkCro, YbEth and YBUSD should not be presented as the current main liquid-staking-token examples; if retained, they should be labeled as separate bridge or yield-bearing products. Cronos should be treated as a core current product surface for Veno rather than as a legacy or isolated component.",
     "relationship_narrative": "The Liquid Staking Tokens family uses ERC1967Proxy contracts to enable upgradeable token implementations. The Cronos Mainnet contract appears separate and may represent an earlier or standalone deployment.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 49,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1503,7 +1508,7 @@
       "chain_name": "ethereum",
       "address": "0xd501a4d2141799f3228c40af972df622c632b7ce",
       "name": "YBUSD",
-      "role": "unknown",
+      "role": "bridge_template",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Veno Finance",
@@ -1698,7 +1703,7 @@
       "chain_name": "ethereum",
       "address": "0xd501a4d2141799f3228c40af972df622c632b7ce",
       "name": "YBUSD",
-      "role": "unknown",
+      "role": "bridge_template",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

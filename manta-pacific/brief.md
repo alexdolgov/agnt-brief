@@ -5,8 +5,8 @@
 - Project: Manta Pacific (`manta-pacific`)
 - Website: [https://pacific-bridge.manta.network](https://pacific-bridge.manta.network)
 - Lifecycle: active (Tier 0, 91.2% below peak)
-- Generated: 2026-05-31T09:51:26.548Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:07.185Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, manta
 - Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $24,646,896.09
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Manta Pacific is a Layer 2 scaling solution for Ethereum that uses the OP Stack to enable fast and low-cost transactions. It provides a canonical bridge for transferring assets between Ethereum and the Manta Pacific network.
+This record covers the canonical bridge for transferring assets between Ethereum and Manta Pacific. It should not be treated as a full audit scope for the entire Manta Pacific Layer 2 unless a separate broader project scope and supporting evidence are added.
 
 ### Architecture
 
@@ -52,7 +52,7 @@ All contracts belong to a single product family that implements the OP Stack bri
 |---|---|---|---|---|
 | L1StandardBridge | bridge_template | ethereum | [`0x3b95bc...9715e5`](./contracts/ethereum-1/0x3b95bc951ee0f553ba487327278cac44f29715e5/) | ⚠️ Unaudited |
 | Manta | unknown | manta | [`0x95cef1...c544e5`](./contracts/manta-169/0x95cef13441be50d20ca4558cc0a27b601ac544e5/) | ⚠️ Unaudited |
-| OptimismPortal | unknown | ethereum | [`0x916876...0b7622`](./contracts/ethereum-1/0x9168765ee952de7c6f8fc6fad5ec209b960b7622/) | ⚠️ Unaudited |
+| OptimismPortal | proxy | ethereum | [`0x916876...0b7622`](./contracts/ethereum-1/0x9168765ee952de7c6f8fc6fad5ec209b960b7622/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,7 +85,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | ethereum | [`0x3b95bc...9715e5`](./contracts/ethereum-1/0x3b95bc951ee0f553ba487327278cac44f29715e5/) | L1StandardBridge | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | manta | [`0x95cef1...c544e5`](./contracts/manta-169/0x95cef13441be50d20ca4558cc0a27b601ac544e5/) | Manta | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x916876...0b7622`](./contracts/ethereum-1/0x9168765ee952de7c6f8fc6fad5ec209b960b7622/) | OptimismPortal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x916876...0b7622`](./contracts/ethereum-1/0x9168765ee952de7c6f8fc6fad5ec209b960b7622/) | OptimismPortal | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

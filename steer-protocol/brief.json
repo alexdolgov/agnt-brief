@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "steer-protocol",
-  "generated_at": "2026-05-31T10:42:48.350Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.663Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "steer-protocol",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Steer Protocol is a liquidity management platform that automates and optimizes liquidity provision for decentralized exchanges. It uses smart vaults and strategies to manage concentrated liquidity positions, aiming to maximize yields for liquidity providers.",
+    "project_purpose": "Steer Protocol is a decentralized off-chain compute and automation protocol. Its DeFi use cases include automated liquidity management, smart vaults, and strategy execution for decentralized exchange liquidity positions.",
     "relationship_narrative": "The Orchestrator coordinates the core vault logic, while registries (Vault, Strategy, Bundle, Keeper) manage the components and permissions. The SteerPeriphery provides user-facing interactions, and the GasVault handles transaction fee management, all sharing the STEER token for governance and incentives.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 43,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1118,7 +1123,7 @@
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
-      "impl_address": null,
+      "impl_address": "0x30138931beab8ee0233f8a094660c60a4383eb21",
       "impl_name": "TransparentUpgradeableProxy",
       "deployments": [
         {

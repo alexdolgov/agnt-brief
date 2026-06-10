@@ -7,8 +7,8 @@
 - Project: Yei Finance (`yei-finance`)
 - Website: [https://www.yei.finance/](https://www.yei.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T11:45:17.033Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:19.409Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: sei
 - Contract surface: 44 unique implementations (145 raw deployments)
 - DeFi Llama TVL: $32,332,654.00
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Yei Finance is a lending and decentralized exchange protocol on Sei, enabling users to supply and borrow assets through its lending market and swap tokens via its DEX. It leverages cross-chain infrastructure for asset transfers and governance.
+Yei Finance is a DeFi protocol on Sei with marketed products including YeiLend lending markets, YeiSwap token swaps, and bridge/cross-chain pre-deposit vault features. The project brief should distinguish these product surfaces and avoid unverified governance or cross-product support assumptions unless confirmed by documentation or contract analysis.
 
 ### Architecture
 

@@ -5,8 +5,8 @@
 - Project: Team Finance (`team-finance`)
 - Website: [https://www.team.finance](https://www.team.finance)
 - Lifecycle: active (Tier 0, 77.4% below peak)
-- Generated: 2026-05-31T10:55:07.136Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:17.313Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, blast, cronos, ethereum, fantom, kava, klaytn, mantle, polygon
 - Contract surface: 66 unique implementations (119 raw deployments)
 - DeFi Llama TVL: $53,004,117.17
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Team Finance is a token locker protocol that allows projects to lock their tokens for a set period, providing trust and transparency to investors. It supports multiple chains and offers features like liquidity locking and vesting schedules.
+Team Finance is a multi-chain non-custodial token launch and management platform. Its products include token creation, token and LP liquidity locking, vesting schedules, and staking pools across supported chains.
 
 ### Architecture
 

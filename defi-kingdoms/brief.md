@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Defi Kingdoms
 
-⚠️ Lifecycle status: DEAD - TVL dropped 57.0% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 57.0% over 90 days
 
 ## Project Overview
 
 - Project: Defi Kingdoms (`defi-kingdoms`)
 - Website: [https://www.defikingdoms.com](https://www.defikingdoms.com)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-23T10:48:36.134Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:01.678Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: harmony, klaytn
 - Contract surface: 5 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $6,452,595.94
+- DeFi Llama TVL: $7,705,351.69
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Defi Kingdoms is a decentralized exchange (DEX) that combines liquidity pools with gamified elements, allowing users to swap tokens, provide liquidity, and earn rewards through yield farming.
+DeFi Kingdoms is a cross-chain fantasy RPG/game integrated with DeFi features, including Hero NFTs, tokenized in-game resources, decentralized exchange functionality, liquidity pools, swaps, and reward mechanisms.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ All contracts belong to a single product family and likely share infrastructure 
 - Latest audit: 2021-09 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

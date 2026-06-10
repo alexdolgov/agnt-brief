@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "satlayer",
-  "generated_at": "2026-05-25T15:43:08.923Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:59:13.448Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "satlayer",
     "tier": 1,
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 313,
-    "total_addresses": 765,
-    "unique_implementations": 313,
-    "total_deployments": 765,
+    "total_contracts": 311,
+    "total_addresses": 747,
+    "unique_implementations": 311,
+    "total_deployments": 747,
     "audited_contracts": 5,
-    "unaudited_contracts": 108,
+    "unaudited_contracts": 106,
     "contracts_verified_audited": 5,
-    "contracts_verified_unaudited": 108,
+    "contracts_verified_unaudited": 106,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 200,
-    "coverage_pct": 4.4,
+    "coverage_pct": 4.5,
     "total_audits": 12,
     "scoreable_audits": 6,
-    "dl_tvl_usd": 1179014.15451,
+    "dl_tvl_usd": 1136445.4836399998,
     "tvl_usd": 289459726.44905734,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -66,16 +66,21 @@
     "latest_audit_date": "2025-08",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 3,
-      "aging": 8,
+      "fresh": 1,
+      "aging": 10,
       "stale": 0,
       "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "SatLayer is a Bitcoin liquid staking and restaking protocol that allows users to deposit BTC and receive liquid staking tokens (LSTs) like uniBTC, brBTC, and stBTC. These LSTs can be used across DeFi to earn yield while maintaining Bitcoin exposure, and the protocol includes vaults and pools for restaking and reward distribution.",
+    "project_purpose": "SatLayer is Bitcoin's economic and restaking layer for Bitcoin Validated Services. It enables Bitcoin-backed collateral and supported Bitcoin liquid staking or wrapped assets to be restaked to help secure BVS networks and participate in reward mechanisms. Assets such as uniBTC, brBTC, stBTC, and LBTC should be treated as supported or partner collateral unless specific evidence shows SatLayer issues them directly.",
     "relationship_narrative": "The Deposit Contracts family mints LSTs from user BTC deposits, which are then used across the LST Assets family for liquidity and yield. The SatLayer family provides vaults and pools that accept these LSTs for restaking, distributing rewards via the SLAY token and various strategy contracts, with shared infrastructure like oracles and bridges ensuring cross-chain functionality.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 311,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -2413,77 +2418,23 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x3376ebca0a85fc8d791b1001a571c41fdd61514a",
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0x93919784c523f39cacaa98ee0a9d96c3f32b593e",
       "name": "brBTC",
       "role": "unknown",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
-      "product_line": null,
+      "product_line": "LST Assets",
       "tvl_usd": null,
       "is_proxy": true,
-      "impl_address": "0x89b2c722abf9e1c8dd215e4e8352e0f293740aeb",
+      "impl_address": "0x6fc60782295b8c3d83bba1324cd2ab1e77330fbe",
       "impl_name": "brBTC",
       "deployments": [
         {
           "chain_id": 8453,
           "chain_name": "base",
-          "address": "0x3376ebca0a85fc8d791b1001a571c41fdd61514a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x89b2c722abf9e1c8dd215e4e8352e0f293740aeb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xa161132371c94299d215915d4cbc3b629e2059be",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xd3c8da379d71a33bfee8875f87ac2748beb1d58d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xdfc7d2d003a053b2e0490531e9317a59962b511e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
           "address": "0xf9775085d726e782e83585033b58606f7731ab18",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x552b0c6688fcae5cf0164f27fd129b882a42fa05",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2504,7 +2455,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -2564,46 +2515,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xc785247dc5a51223aeae23668c24a1a79841a235",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0xd3c8da379d71a33bfee8875f87ac2748beb1d58d",
-      "name": "brVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0xd3c8da379d71a33bfee8875f87ac2748beb1d58d",
-      "impl_name": "brVault",
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xd3c8da379d71a33bfee8875f87ac2748beb1d58d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xf9775085d726e782e83585033b58606f7731ab18",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -3441,64 +3352,19 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x12364c9d095a2a43abb71b0d8313663ff0348eea",
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0xecac9c5f704e954931349da37f60e39f515c11c1",
       "name": "LBTC",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "LST Assets",
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0xc832183d4d5fc5831daac892a93dbbfd798034e3",
       "impl_name": "LBTC",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x12364c9d095a2a43abb71b0d8313663ff0348eea",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x4cbd8802465f690e7637454783955fa8e6d0c4bc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x80a23cb6eceda270889eb165c41f55bcd300053c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xa1a961ce40c9bf5c255449194a97b85439bc0122",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xa1bc65ecf8bc7b2faa22c53bcc49b0376da3845a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
         {
           "chain_id": 80094,
           "chain_name": "berachain",
@@ -3517,7 +3383,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -6184,15 +6050,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x9203ce1bcded1a20f697e1780bc47d5b6d718031",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -7155,46 +7012,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xf6718b2701d4a6498ef77d7c152b2137ab28b8a3",
-      "name": "stBTC",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Lombard",
-      "product_line": "LST Assets",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "stBTC",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf6718b2701d4a6498ef77d7c152b2137ab28b8a3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xf6718b2701d4a6498ef77d7c152b2137ab28b8a3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -8596,25 +8413,7 @@
         {
           "chain_id": 8453,
           "chain_name": "base",
-          "address": "0x552b0c6688fcae5cf0164f27fd129b882a42fa05",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
           "address": "0x93919784c523f39cacaa98ee0a9d96c3f32b593e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x50fa1411201e2ac0361fb893e903b80f141b8190",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -8635,7 +8434,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -14014,7 +13813,7 @@
       "report_url": "https://github.com/satlayer/satlayer-bvs/blob/main/docs/public/audits/satlayer-core-phase-2-dedaub-20250620.pdf",
       "auditor": "Dedaub",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -14056,7 +13855,7 @@
       "report_url": "https://github.com/satlayer/satlayer-bvs/blob/main/docs/public/audits/satlayer-token-dedaub-20250616.pdf",
       "auditor": "Dedaub",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -14314,16 +14113,6 @@
       "address": "0xc1fe8a0daed7e912d3b5b56ff6e05f17d82059c8",
       "name": "BridgeV2",
       "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0xd3c8da379d71a33bfee8875f87ac2748beb1d58d",
-      "name": "brVault",
-      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -14890,9 +14679,9 @@
     }
   ],
   "origin_summary": {
-    "native": 165,
-    "upstream": 10,
-    "standard_library": 21,
+    "native": 163,
+    "upstream": 9,
+    "standard_library": 22,
     "needs_review": 117
   },
   "scope_matching_notes": {

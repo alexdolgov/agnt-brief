@@ -7,17 +7,17 @@
 - Project: Zircuit (`zircuit`)
 - Website: [https://www.zircuit.com/](https://www.zircuit.com/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-22T22:14:29.808Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:19.526Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, ethereum
 - Contract surface: 17 unique implementations (19 raw deployments)
-- DeFi Llama TVL: $13,311,045.79
+- DeFi Llama TVL: $13,098,809.53
 - On-chain TVL (included contracts): $144,242,723.68
 - TVL by chain: Ethereum $142,731,070.13 | Base $1,511,653.55
 
 ## Project Description
 
-Zircuit is a Layer 2 scaling solution built on the OP Stack, providing a canonical bridge for transferring assets between Ethereum and the Zircuit network. It also includes compliance-focused token infrastructure and institutional lending products.
+Zircuit is a secure onchain finance and zk-rollup platform. Its public product set includes the Zircuit L2 network with bridge and explorer, Zircuit Finance yield vaults, Liquidity Hub for LRTs/LSTs, AI Terminal, grants, and insured or institutional-grade vault offerings. Compliance-focused token infrastructure and institutional lending or strategy contracts should be treated as specific components of the broader Zircuit ecosystem, and tracked Base-deployed lending/strategy products should be distinguished from Zircuit L2 core infrastructure.
 
 ### Architecture
 

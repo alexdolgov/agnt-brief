@@ -5,21 +5,22 @@
 - Project: Scallop (`scallop`)
 - Website: [https://app.scallop.io/referral?ref=692ecd3798f63b5f44c040f9](https://app.scallop.io/referral?ref=692ecd3798f63b5f44c040f9)
 - Lifecycle: unknown
-- Generated: 2026-05-27T05:54:55.283Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-a9ad
+- Generated: 2026-06-10T20:59:14.096Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $38,174,851.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Scallop is a DeFi protocol on Sui that combines a DEX aggregator and a lending market. It enables users to swap tokens across multiple liquidity sources and to supply or borrow assets in a pooled lending environment.
-
-### Architecture
-
-The DEX Aggregator and Lending families share the same underlying token and oracle infrastructure, enabling seamless asset flows between swapping and lending operations.
+Scallop is a DeFi money market on Sui focused on lending and borrowing. It enables users to supply assets to pooled markets and borrow supported assets against collateral.
 
 ## Audit Coverage Summary
 

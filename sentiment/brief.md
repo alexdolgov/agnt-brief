@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Sentiment
 
-⚠️ Lifecycle status: SUNSETTING - TVL dropped 44.8% over 90 days
+⚠️ Lifecycle status: DEAD - TVL dropped 44.8% over 90 days
 
 ## Project Overview
 
 - Project: Sentiment (`sentiment`)
 - Website: [https://app.sentiment.xyz?refCode=dcd82abec7](https://app.sentiment.xyz?refCode=dcd82abec7)
-- Lifecycle: sunsetting (Tier 1, sunsetting)
-- Generated: 2026-05-25T03:31:12.098Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: dead (Tier 1, sunsetting)
+- Generated: 2026-06-10T20:59:14.895Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum
 - Contract surface: 297 unique implementations (368 raw deployments)
 - DeFi Llama TVL: $1,203,461.26
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Sentiment is a lending protocol on Arbitrum One that enables users to deposit assets into lending pools and borrow against them. It uses isolated risk engines and account management to facilitate permissionless borrowing and lending.
+Sentiment is/was a leveraged lending protocol that enabled users to deposit assets into lending pools and borrow against them using isolated risk engines and account management. The protocol should not be described as Arbitrum-only unless the brief is explicitly limited to Arbitrum contract coverage; current DefiLlama data indicates TVL is mainly on Hyperliquid L1, and the app states the protocol has wound down.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The protocol uses a single product family where AccountManager creates user acco
 - Latest audit: 2025-03 (aging)
 - Staleness: 0 fresh, 4 aging, 4 stale, 0 unknown
 - Tier 1 coverage: 46.7% (Sherlock)
-- Note: This protocol is classified as [sunsetting]. ASD of n/a represents exposure in a protocol with sunsetting activity.
+- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 

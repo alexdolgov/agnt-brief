@@ -5,8 +5,8 @@
 - Project: NEOPIN (`neopin`)
 - Website: [https://neopin.io](https://neopin.io)
 - Lifecycle: active (Tier 0, 70.1% below peak)
-- Generated: 2026-05-27T17:49:57.277Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:59:08.064Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, klaytn, polygon
 - Contract surface: 100 unique implementations (100 raw deployments)
 - DeFi Llama TVL: $55,370,847.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-NEOPIN is a DeFi protocol offering liquid staking, staking pools, and decentralized exchange services across Ethereum, Polygon, and Klaytn. It enables users to stake assets, receive liquid staking tokens, and participate in liquidity pools.
+NEOPIN is the legacy CeDeFi/DeFi product associated with staking, liquid staking, DEX swap, and farm services historically deployed across Ethereum, Polygon, and Klaytn/Kaia. The current public homepage is branded as Mayflower and positions the project around an AI guide for navigating crypto, with emphasis on a Solana launch, so the current identity should not be described primarily as a liquid-staking or DEX homepage. Contract and chain coverage should be refreshed to distinguish legacy NEOPIN deployments from current Mayflower/Solana positioning and current DefiLlama-reported Kaia, Tron, and staking surfaces.
 
 ### Architecture
 

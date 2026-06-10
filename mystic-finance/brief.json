@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mystic-finance",
-  "generated_at": "2026-05-23T15:22:53.155Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:08.026Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -17,10 +17,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 11,
+    "total_audits": 10,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5464668,
-    "tvl_usd": 5464668,
+    "dl_tvl_usd": 5786169,
+    "tvl_usd": 5786169,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -31,16 +31,21 @@
     "latest_audit_date": "2026-05",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 4,
+      "fresh": 3,
       "aging": 0,
       "stale": 0,
       "unknown": 7
     }
   },
   "topography": {
-    "project_purpose": "Mystic Finance is a DeFi protocol offering lending and liquid staking services. It enables users to lend assets and participate in staking while maintaining liquidity.",
-    "relationship_narrative": "No contract families are defined in the provided data, so no relationships can be described.",
+    "project_purpose": "Mystic Finance is a DeFi lending and money-market protocol that enables users to supply assets, borrow against collateral, access leverage, and participate in curated lending markets.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -257,27 +262,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2438,
-      "audit_key": "audit-2438",
-      "report_name": "Arche-security-review-2026-05-03.pdf",
-      "report_url": "https://github.com/Kann-Audits/Kann-Audits/blob/main/reports/pdf-format/Arche-security-review-2026-05-03.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2026-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -333,10 +317,6 @@
       {
         "audit_id": 2437,
         "report_name": "MysticFinance-security-review-2026-05-11.pdf"
-      },
-      {
-        "audit_id": 2438,
-        "report_name": "Arche-security-review-2026-05-03.pdf"
       }
     ],
     "inherited_remapped_matches": []

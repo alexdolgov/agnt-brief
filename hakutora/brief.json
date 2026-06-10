@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hakutora",
-  "generated_at": "2026-05-22T13:19:00.970Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:04.453Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 23759697.23559,
-    "tvl_usd": 23759697.23559,
+    "dl_tvl_usd": 23796953.38378,
+    "tvl_usd": 23796953.38378,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Hakutora is a risk curation protocol that provides risk assessment and management services for DeFi protocols. It likely offers tools or frameworks to evaluate and mitigate risks in decentralized finance.",
-    "relationship_narrative": "No product families or contracts are defined, so no relationships can be described.",
+    "project_purpose": "Hakutora provides on-chain asset management and risk control solutions for DeFi users, apps, communities, and protocols. Its offerings include DeFi strategy and risk analysis, optional protective withdrawal services, and customized low-risk arbitrage and asset management strategies such as spread arbitrage, carry trade, depeg arbitrage, and liquidation arbitrage.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

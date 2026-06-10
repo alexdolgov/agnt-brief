@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ferro",
-  "generated_at": "2026-05-31T08:02:46.205Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:03.983Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "ferro",
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Ferro is a decentralized exchange (DEX) on Cronos that enables users to swap tokens and provide liquidity. It uses a set of swap and liquidity pool contracts to facilitate trading and yield generation.",
+    "project_purpose": "Ferro is a stableswap AMM/DEX on Cronos focused on stablecoins and pegged-value assets, enabling users to swap, provide liquidity, stake, and access yield features.",
     "relationship_narrative": "Swap contracts interact with liquidity pool contracts to execute trades and manage reserves. The Ferro family likely orchestrates these interactions, while Other Contracts provide shared infrastructure like access control or adapters.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 21,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

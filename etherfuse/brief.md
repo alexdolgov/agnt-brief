@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Etherfuse
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 81.0% over 90 days
-
 ## Project Overview
 
 - Project: Etherfuse (`etherfuse`)
 - Website: [https://www.etherfuse.com/](https://www.etherfuse.com/)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T07:59:31.185Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:02.346Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, polygon
 - Contract surface: 25 unique implementations (58 raw deployments)
 - DeFi Llama TVL: $5,405,525.69
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Etherfuse is a protocol for tokenizing real-world assets (RWA) on-chain, enabling users to access and trade traditional financial instruments like bonds and securities in a decentralized manner.
+Etherfuse is an RWA protocol focused on tokenized sovereign-bond products and related financial infrastructure, including Stablebonds, Sovereign Coins/FX, treasury-yield products, compliance/KYC onboarding, custodial arrangements, and attestations for on-chain settlement and access to sovereign asset exposure.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ All contracts belong to a single product family, with proxy contracts pointing t
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

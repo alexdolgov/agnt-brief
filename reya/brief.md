@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Reya
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 50.2% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 50.2% over 90 days
 
 ## Project Overview
 
 - Project: Reya (`reya`)
 - Website: [https://app.reya.xyz/trade?referredBy=z9hwcwwd](https://app.reya.xyz/trade?referredBy=z9hwcwwd)
-- Lifecycle: unknown (Tier 0, 77.7% below peak)
-- Generated: 2026-05-31T10:25:51.100Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 77.7% below peak)
+- Generated: 2026-06-10T20:59:11.381Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, ethereum, optimism, polygon
-- Contract surface: 294 unique implementations (873 raw deployments)
+- Contract surface: 293 unique implementations (847 raw deployments)
 - DeFi Llama TVL: $17,801,617.00
 - On-chain TVL (included contracts): $57,285,303.85
 - TVL by chain: Arbitrum $25,498,622.13 | Optimism $17,673,037.53 | Ethereum $14,112,773.99 | Polygon $703.00 | Base $167.21
 
 ## Project Description
 
-Reya is a cross-chain liquidity protocol that enables users to deposit assets into vaults on multiple chains, facilitating bridging and derivatives trading. It provides a canonical bridge for moving funds across Ethereum, Optimism, Polygon, Base, and Arbitrum One.
+Reya is a DEX and trading application built around ReyaChain, a based rollup. Its vaults and bridging components should be treated as deposit and bridging infrastructure only where Reya ownership and current app relevance are verified, not as the protocol's primary product or as a canonical cross-chain bridge surface.
 
 ### Architecture
 
@@ -25,19 +25,19 @@ The Vault contracts on each chain are the core user-facing components, while Com
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/81 (0.0%)
-- Verified + Unaudited implementations: 74
+- Verified implementations audited: 0/80 (0.0%)
+- Verified + Unaudited implementations: 73
 - Verified by bytecode match: 7
 - Unverified implementations: 213
-- Unique implementations: 294
-- Raw deployments: 873
+- Unique implementations: 293
+- Raw deployments: 847
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $57,285,303.85
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $57,285,303.85 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of $57,285,303.85 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,7 +49,7 @@ The Vault contracts on each chain are the core user-facing components, while Com
 
 - None
 
-### ⚠️ Verified + Unaudited (74)
+### ⚠️ Verified + Unaudited (73)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -65,7 +65,7 @@ The Vault contracts on each chain are the core user-facing components, while Com
 | CapacitorFactory | registry | ethereum | 6 deployments: ethereum [`0x11fbb9...45fc9a`](./contracts/ethereum-1/0x11fbb9116801db54bb51ff4df423e34e8b45fc9a/); optimism `0x866829...8ee7d0`; polygon `0x915580...c02a2d`; base `0x2a1094...1e163a`; base `0xdc2384...f253d0`; arbitrum `0xbce4cd...67136a` | ⚠️ Unaudited |
 | CaptureTheFees | unknown | optimism | 2 deployments: optimism [`0x49c79e...38fa82`](./contracts/optimism-10/0x49c79ed56df2301ec851fad0b2a566e4fe38fa82/); optimism `0xc87dbb...e06e39` | ⚠️ Unaudited |
 | CelerImplL1L2 | unknown | arbitrum | 13 deployments: ethereum `0x47e136...1be60e`; ethereum `0x6086c6...e13c47`; ethereum `0xb6fb30...dbefb9`; optimism `0x0c0858...0c5db6`; optimism `0x11695f...40a2d8`; optimism `0xb584d4...204599`; optimism `0xb8c328...efd76d`; polygon `0x14ac5b...736628`; polygon `0xb364b8...357680`; polygon `0xb48b74...b6787f`; polygon `0xe48ae3...948561`; arbitrum [`0x0aa26a...b32fb9`](./contracts/arbitrum-42161/0x0aa26a14c2559319f9def7304e93db5ae6b32fb9/); arbitrum `0x3f367b...15531a` | ⚠️ Unaudited |
-| CommonPlug | unknown | polygon | 18 deployments: optimism `0x5df06c...426fb4`; optimism `0x6a8be0...bc1e46`; optimism `0x9d245f...9545d0`; optimism `0xf5b588...6ea2fd`; polygon [`0x44ebf1...e08cc2`](./contracts/polygon-137/0x44ebf1a711082e6373fb142ecfcb469cffe08cc2/); polygon `0x57c651...c3f84e`; polygon `0x6f0df1...d119a1`; polygon `0x72c948...f88dfe`; polygon `0x78771a...29128b`; polygon `0x9daef7...bf0d1f`; polygon `0xae7ab9...0ee139`; polygon `0xafbe4b...4eccf2`; polygon `0xb1b65c...31e2c9`; polygon `0xb5c4e1...3a7b7e`; polygon `0xd3ef3c...aefa1e`; arbitrum `0x4611a4...21919c`; arbitrum `0x765cfb...9690fb`; arbitrum `0xcea535...fed1aa` | ⚠️ Unaudited |
+| CommonPlug | unknown | polygon | 10 deployments: optimism `0x9d245f...9545d0`; polygon [`0x57c651...c3f84e`](./contracts/polygon-137/0x57c651b7623690d5545a6aa8999f2a198bc3f84e/); polygon `0x6f0df1...d119a1`; polygon `0x72c948...f88dfe`; polygon `0x78771a...29128b`; polygon `0x9daef7...bf0d1f`; polygon `0xb1b65c...31e2c9`; polygon `0xb5c4e1...3a7b7e`; polygon `0xd3ef3c...aefa1e`; arbitrum `0x765cfb...9690fb` | ⚠️ Unaudited |
 | ConnectIt | unknown | optimism | [`0x18358f...0b3a5f`](./contracts/optimism-10/0x18358f1b750a8c38f041384c1f4d8867820b3a5f/) | ⚠️ Unaudited |
 | ConnectorPlug | unknown | ethereum | 83 deployments: ethereum [`0x02d537...83f8e3`](./contracts/ethereum-1/0x02d53793b18d032cd94d745f7586c6f66f83f8e3/); ethereum `0x1ae19b...ac7a63`; ethereum `0x1eb392...2d8166`; ethereum `0x200af8...077b7a`; ethereum `0x223033...56fb8d`; ethereum `0x22d836...8d8a99`; ethereum `0x2dba37...6f7d06`; ethereum `0x322957...5fec62`; ethereum `0x3553c0...10b4b3`; ethereum `0x4e8329...ee1738`; ethereum `0x5afa7d...5d2d9b`; ethereum `0x7e6da8...3bfe4d`; ethereum `0x91ce46...2428f7`; ethereum `0x998d7c...11f2e6`; ethereum `0xa621bc...b5c181`; ethereum `0xaadd94...3e6aef`; ethereum `0xadbc2c...9dd66a`; ethereum `0xcb473d...335ccf`; ethereum `0xcea535...fed1aa`; ethereum `0xcf814e...9fa09c`; ethereum `0xe38dcc...42837f`; ethereum `0xe88f6b...a19537`; ethereum `0xf71a92...90e880`; ethereum `0xfab1ef...4373a9`; optimism `0x082526...1acee9`; optimism `0x0fd785...f1d970`; optimism `0x1812ff...9b16a8`; optimism `0x242b28...064aa5`; optimism `0x27f4b2...658f64`; optimism `0x32bf26...88174c`; optimism `0x499239...b75833`; optimism `0x4bd04a...9e24c7`; optimism `0x52ee36...45e493`; optimism `0x55fa08...5d7671`; optimism `0x5b64ce...7aeb6f`; optimism `0x619085...083736`; optimism `0x716206...c210d4`; optimism `0x906a44...1109b4`; optimism `0xbc31ec...153a25`; optimism `0xc0acbb...91546c`; optimism `0xeab499...602572`; optimism `0xecaa24...9700c0`; optimism `0xf0a0b2...139793`; optimism `0xfd76d8...096c13`; polygon `0x0c105e...919730`; polygon `0x125d3f...eb24f0`; polygon `0x3e6bd7...94bb0f`; polygon `0x44343a...241b02`; polygon `0x69c2a7...c38ce0`; polygon `0xa042c2...c1bb6c`; polygon `0xb41a8f...728861`; polygon `0xb8d31f...41c56c`; polygon `0xe59678...edcec9`; polygon `0xfecba3...b1c6b9`; base `0x1281c1...d8d187`; base `0x19609e...0d97ac`; base `0x4bfdf4...6e5e91`; base `0x4f3e01...9255cd`; base `0x858f61...146251`; base `0x9cac5d...7d8b66`; base `0xe0361b...747ccd`; arbitrum `0x070fea...8bce43`; arbitrum `0x0a2064...c93b12`; arbitrum `0x17fc4c...6f8b21`; arbitrum `0x2e63d6...cf4571`; arbitrum `0x31dbda...583c86`; arbitrum `0x380915...7c3c67`; arbitrum `0x42c846...234afc`; arbitrum `0x5ea117...e1ff41`; arbitrum `0x6284b3...034516`; arbitrum `0x63d893...577c0f`; arbitrum `0x69adf4...f944d3`; arbitrum `0x7deb24...a672ca`; arbitrum `0x8752c7...f0a5f7`; arbitrum `0xa451cc...bc4ad9`; arbitrum `0xa8eaae...72151d`; arbitrum `0xadec92...8702eb`; arbitrum `0xb0d573...e9be83`; arbitrum `0xdc5650...763288`; arbitrum `0xe02c75...90047e`; arbitrum `0xe0a298...c0b55c`; arbitrum `0xf9715b...10d9b2`; arbitrum `0xff17d3...d7ff54` | ⚠️ Unaudited |
 | Controller | governance | optimism | 4 deployments: optimism [`0x5e648e...55a6aa`](./contracts/optimism-10/0x5e648e8391b4e7f764b3e79d8a786078c755a6aa/); optimism `0x6dc5f8...6b470c`; polygon `0xe24007...73ddd1`; arbitrum `0x9cf6f3...a1bc56` | ⚠️ Unaudited |
@@ -113,7 +113,6 @@ The Vault contracts on each chain are the core user-facing components, while Com
 | SigMaker | unknown | optimism | 2 deployments: optimism [`0x03709c...ababe8`](./contracts/optimism-10/0x03709c48dec486b64ddedacfbed43acea5ababe8/); optimism `0xb02113...95aeb7` | ⚠️ Unaudited |
 | SimilarDeployer | unknown | optimism | [`0x8e304e...6eb0de`](./contracts/optimism-10/0x8e304e89dc574dc3296bbbf94b3f81ae256eb0de/) | ⚠️ Unaudited |
 | SimulatorUtils | unknown | polygon | 3 deployments: ethereum `0x63c10c...2a0416`; optimism `0xba9c93...da4f97`; polygon [`0x61ce66...65ff34`](./contracts/polygon-137/0x61ce6673b00b2f0281e8b95c6b68c8275865ff34/) | ⚠️ Unaudited |
-| Socket | unknown | base | 18 deployments: ethereum `0x943ac2...9b16f9`; optimism `0x1eb392...2d8166`; optimism `0x234462...3ad4b6`; optimism `0x301bd2...a1c0a4`; optimism `0x91ce46...2428f7`; optimism `0xd10cb2...6bf573`; polygon `0x8b3613...8d2571`; polygon `0x8bc505...04873f`; polygon `0xad0fa5...7d23b3`; polygon `0xc20687...ded001`; polygon `0xfd1256...c7e47f`; base [`0x12e6e5...280156`](./contracts/base-8453/0x12e6e58864ce4402cf2b4b8a8e9c75ead7280156/); base `0x1d6811...d99ea4`; arbitrum `0x16e4a6...0a4ee8`; arbitrum `0x37cc67...55f6ba`; arbitrum `0x9e3e47...13a9d1`; arbitrum `0xbc080a...8306a7`; arbitrum `0xfb6daf...634066` | ⚠️ Unaudited |
 | SocketBatcher | periphery | arbitrum | 20 deployments: ethereum `0xcff802...b9f568`; optimism `0x208cb8...c54408`; optimism `0x2b351e...86fb7b`; optimism `0x2c76df...920b7e`; optimism `0x321767...707b59`; optimism `0x5afa7d...5d2d9b`; optimism `0xffb098...0c8fce`; polygon `0x1c2ec0...0bd6b7`; polygon `0x1d3695...5eaa49`; polygon `0x1edd57...eca934`; polygon `0x657a9b...3702bc`; polygon `0x69adf4...f944d3`; polygon `0x6a3496...b23a4d`; base `0x17a89b...a3145c`; arbitrum [`0x107e18...d468a8`](./contracts/arbitrum-42161/0x107e182815c5e164e05f0c2cf478ace44fd468a8/); arbitrum `0x1808ca...c0113b`; arbitrum `0x2ea720...1f4b8e`; arbitrum `0x96fef4...ae3b0b`; arbitrum `0xd7b2e3...0255f7`; arbitrum `0xfbb3a5...7a8bd7` | ⚠️ Unaudited |
 | SocketSentinel | unknown | ethereum | [`0xbd76be...9e5e80`](./contracts/ethereum-1/0xbd76bef34d770a28d391d67f88af8e7e9e9e5e80/) | ⚠️ Unaudited |
 | SurgePass | unknown | optimism | [`0x35479b...75f937`](./contracts/optimism-10/0x35479b023e508ee9a7b533dbb5b516bb6875f937/) | ⚠️ Unaudited |
@@ -387,7 +386,7 @@ Verified + unaudited native implementations ranked by TVL:
 | optimism | [`0x5ee146...0a021f`](./contracts/optimism-10/0x5ee146ea004afbb339d9c4164ca04c89f00a021f/) | BugSubmission | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x11fbb9...45fc9a`](./contracts/ethereum-1/0x11fbb9116801db54bb51ff4df423e34e8b45fc9a/) | CapacitorFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x49c79e...38fa82`](./contracts/optimism-10/0x49c79ed56df2301ec851fad0b2a566e4fe38fa82/) | CaptureTheFees | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x44ebf1...e08cc2`](./contracts/polygon-137/0x44ebf1a711082e6373fb142ecfcb469cffe08cc2/) | CommonPlug | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x57c651...c3f84e`](./contracts/polygon-137/0x57c651b7623690d5545a6aa8999f2a198bc3f84e/) | CommonPlug | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x18358f...0b3a5f`](./contracts/optimism-10/0x18358f1b750a8c38f041384c1f4d8867820b3a5f/) | ConnectIt | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x02d537...83f8e3`](./contracts/ethereum-1/0x02d53793b18d032cd94d745f7586c6f66f83f8e3/) | ConnectorPlug | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x5e648e...55a6aa`](./contracts/optimism-10/0x5e648e8391b4e7f764b3e79d8a786078c755a6aa/) | Controller | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -431,7 +430,6 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | [`0x053407...5e62cd`](./contracts/arbitrum-42161/0x053407dfa30267f6332f3c94a9e9f704a55e62cd/) | SignatureVerifier | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x8e304e...6eb0de`](./contracts/optimism-10/0x8e304e89dc574dc3296bbbf94b3f81ae256eb0de/) | SimilarDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x61ce66...65ff34`](./contracts/polygon-137/0x61ce6673b00b2f0281e8b95c6b68c8275865ff34/) | SimulatorUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x12e6e5...280156`](./contracts/base-8453/0x12e6e58864ce4402cf2b4b8a8e9c75ead7280156/) | Socket | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x107e18...d468a8`](./contracts/arbitrum-42161/0x107e182815c5e164e05f0c2cf478ace44fd468a8/) | SocketBatcher | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x35479b...75f937`](./contracts/optimism-10/0x35479b023e508ee9a7b533dbb5b516bb6875f937/) | SurgePass | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x52a71b...c72daf`](./contracts/optimism-10/0x52a71b10ce5ecf54b6a583a8e1a2a6adf8c72daf/) | SwitchBeyond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -448,7 +446,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 193 |
+| native | 192 |
 | upstream | 8 |
 | standard_library | 1 |
 | needs_review | 92 |

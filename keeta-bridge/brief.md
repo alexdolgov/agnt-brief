@@ -5,8 +5,8 @@
 - Project: Keeta Bridge (`keeta-bridge`)
 - Website: [https://keeta.com/](https://keeta.com/)
 - Lifecycle: active (Tier 0, 20.4% below peak)
-- Generated: 2026-05-31T08:35:04.390Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:06.668Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $1,058,144.81
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Keeta Bridge is a canonical bridge protocol on Base that enables cross-chain asset transfers. It provides a secure mechanism for moving tokens between different blockchain networks.
+Keeta Bridge is a canonical bridge between Base and the Keeta network.
 
 ### Architecture
 

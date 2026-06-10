@@ -1,17 +1,17 @@
 # Agentic Audit Brief: Beanstalk
 
-⚠️ Lifecycle status: DEAD - TVL trajectory indicates non-active lifecycle.
+⚠️ Lifecycle status: DECLINING - TVL trajectory indicates non-active lifecycle.
 
 ## Project Overview
 
 - Project: Beanstalk (`beanstalk`)
 - Website: [https://bean.money](https://bean.money)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-25T14:23:51.805Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:58:59.043Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum
 - Contract surface: 244 unique implementations (1222 raw deployments)
-- DeFi Llama TVL: $6,661,854.94
+- DeFi Llama TVL: $6,456,546.87
 - On-chain TVL (included contracts): $142,549,167.87
 - TVL by chain: Arbitrum $142,549,167.87
 
@@ -38,7 +38,7 @@ Beanstalk relies on Oracles for price data to maintain the BEAN peg and facilita
 - Latest audit: 2023-07 (stale)
 - Staleness: 0 fresh, 0 aging, 5 stale, 1 unknown
 - Tier 1 coverage: 1.2% (Code4rena, Cyfrin, Immunefi)
-- Note: This protocol is classified as [dead]. ASD of $142,549,167.87 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $142,549,167.87 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

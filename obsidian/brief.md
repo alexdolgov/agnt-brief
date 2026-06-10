@@ -5,8 +5,8 @@
 - Project: Obsidian (`obsidian`)
 - Website: [https://obsidian.finance](https://obsidian.finance)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:07:19.995Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:08.758Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: cronos
 - Contract surface: 6 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $1,595,975.15
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Obsidian is a DEX aggregator on Cronos that routes trades across multiple liquidity sources to provide users with optimal swap rates.
+Obsidian is a Smart DEX and DEX aggregator ecosystem on Cronos and Cronos zkEVM, offering swap aggregation alongside staking/yield, launchpad, and bridge functionality.
 
 ### Architecture
 

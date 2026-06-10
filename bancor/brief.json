@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bancor",
-  "generated_at": "2026-05-26T19:56:50.596Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:58:58.055Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "bancor",
@@ -33,9 +33,9 @@
   },
   "summary": {
     "total_contracts": 121,
-    "total_addresses": 420,
+    "total_addresses": 403,
     "unique_implementations": 121,
-    "total_deployments": 420,
+    "total_deployments": 403,
     "audited_contracts": 19,
     "unaudited_contracts": 62,
     "contracts_verified_audited": 19,
@@ -71,9 +71,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Bancor is a decentralized exchange protocol that enables automated token swaps and single-sided liquidity provision using its BNT token as an intermediary. It offers impermanent loss protection and rewards for liquidity providers through a system of pools, vaults, and governance mechanisms.",
+    "project_purpose": "Bancor is a decentralized exchange protocol historically associated with automated token swaps and single-sided liquidity provision using BNT as an intermediary across Bancor V2.1 and Bancor V3. Current public access to the Bancor homepage/app should be treated as restricted or not independently verified; claims about current impermanent loss protection or liquidity provider rewards should be made only when supported by current documentation or data sources such as DefiLlama.",
     "relationship_narrative": "The Bancor V2.1 family relies on the Tokens family for BNT and pool tokens, while the Bancor V3 family upgrades the core infrastructure with a new MasterVault and BancorNetwork. Both V2.1 and V3 share governance and reward mechanisms, with V3 contracts proxied through TransparentUpgradeableProxyImmutable instances.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 121,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -2261,15 +2266,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x70ab8222a5fff4b360764bb51cbea76f0025842a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -2282,71 +2278,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x16b9b6f8d2077db1032531f0e1f6019d2679d72d",
+      "address": "0xc537e898cd774e2dcba3b14ea6f34c93d5ea45e1",
       "name": "CarbonController",
       "role": "governance",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x1e08049c180e25478bf7a0357171547b7332bf2c",
       "impl_name": "CarbonController",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x16b9b6f8d2077db1032531f0e1f6019d2679d72d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1a31220b36b6d02f59d12c04e221ae7926c218cf",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1e08049c180e25478bf7a0357171547b7332bf2c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x21f02ac7fc8915f1b884b532f6cbcd0ef0c086ee",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5ec3b3748a2af4e14977949c76c44d0ca54e5b20",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6db6ee351fc802833ed2f28a25bbbf971d8b12c1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -2355,15 +2297,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xd59bcabd00721b754acb79fe668fae4b6a063ff8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -2376,35 +2309,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x779b3bea233ebc5947c5ff0ffd7f4f90654ab123",
+      "address": "0xd06146d292f9651c1d7cf54a3162791dfc2bef46",
       "name": "CarbonPOL",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x779b3bea233ebc5947c5ff0ffd7f4f90654ab123",
       "impl_name": "CarbonPOL",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x779b3bea233ebc5947c5ff0ffd7f4f90654ab123",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x945ac60e655a84b6638216521b391ae984287105",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -2425,53 +2340,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x2c0fa8b5c3a26ae8f014efb50ff27d95dd923502",
+      "address": "0xba7d1581db6248dc9177466a328bf457703c8f84",
       "name": "CarbonVortex",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0xd241a762f4ca4e32e723e91b1138ac97b9be23ca",
       "impl_name": "CarbonVortex",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2c0fa8b5c3a26ae8f014efb50ff27d95dd923502",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x55effb50729c049ab8c87977d324246996f472ad",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x676b91af9eaae263485c95ccafb2764228ce95c0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x72717080da2e9e057dc29d25eeeb5d4873f0fb9e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -2485,15 +2364,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xd053dcd7037af7204cece544ea9f227824d79801",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xd241a762f4ca4e32e723e91b1138ac97b9be23ca",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -6525,24 +6395,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x460cb0b4fb97b5a05b6105d7fd8d464902109d0a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc6b2f9b6bf3521308fb9360e4a6fe05f63953997",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -6986,36 +6838,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x16b9b6f8d2077db1032531f0e1f6019d2679d72d",
-      "name": "CarbonController",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x779b3bea233ebc5947c5ff0ffd7f4f90654ab123",
-      "name": "CarbonPOL",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2c0fa8b5c3a26ae8f014efb50ff27d95dd923502",
-      "name": "CarbonVortex",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xf8a2fb650e25a26ce839d64be8a0abbcb0b87b32",
       "name": "CheckpointStore",
       "role": "unknown",
@@ -7345,9 +7167,9 @@
     }
   ],
   "origin_summary": {
-    "native": 97,
+    "native": 94,
     "upstream": 0,
-    "standard_library": 13,
+    "standard_library": 16,
     "needs_review": 11
   },
   "scope_matching_notes": {

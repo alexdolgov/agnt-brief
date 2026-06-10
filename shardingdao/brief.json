@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "shardingdao",
-  "generated_at": "2026-05-31T10:36:04.767Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.055Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "shardingdao",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "ShardingDAO is a staking pool protocol that allows users to stake assets and earn rewards. It includes mechanisms for marketing mining, token bar staking, shards market trading, and buyout proposals.",
+    "project_purpose": "ShardingDAO is an Ethereum staking and NFT-fragmentation protocol. It supports staking assets such as WBTC and ETH for rewards, fractionalizing NFTs into tradable shards, shard marketplace trading, collective shard ownership, buyout and governance mechanisms, and SHD-related reward/token features.",
     "relationship_narrative": "All contracts are deployed by the same deployer and share a common proxy pattern where delegator proxies point to delegate implementations. The protocol's components are tightly integrated under a single product family, with no separate families identified.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 12,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

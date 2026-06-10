@@ -5,17 +5,17 @@
 - Project: ZyFAI (`zyfai`)
 - Website: [https://zyf.ai](https://zyf.ai)
 - Lifecycle: active (Tier 0, 44.8% below peak)
-- Generated: 2026-05-31T11:46:26.083Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:19.692Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, ethereum, plasma, sonic
-- Contract surface: 106 unique implementations (402 raw deployments)
+- Contract surface: 105 unique implementations (396 raw deployments)
 - DeFi Llama TVL: $6,488,909.30
 - On-chain TVL (included contracts): $1,557,525,865.33
 - TVL by chain: Ethereum $1,188,668,971.55 | Base $178,926,202.27 | Arbitrum $173,085,247.13 | Sonic $16,845,444.39
 
 ## Project Description
 
-ZyFAI is a yield aggregation protocol that deploys user deposits across multiple DeFi strategies including lending, vaults, and yield tokenization. It integrates with protocols like Morpho, Pendle, Aave, Silo, and Yearn to optimize returns.
+ZyFAI is a self-custodial DeFi yield agent that uses autonomous and rule-based agents to monitor positions and automate on-chain actions such as rebalancing. Third-party protocols should be treated as external dependencies unless their integration is confirmed by ZyFAI documentation or verified project-owned contracts.
 
 ### Architecture
 
@@ -23,12 +23,12 @@ All contracts belong to a single product family that aggregates yield from multi
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/100 (0.0%)
-- Verified + Unaudited implementations: 100
+- Verified implementations audited: 0/99 (0.0%)
+- Verified + Unaudited implementations: 99
 - Verified by bytecode match: 0
 - Unverified implementations: 6
-- Unique implementations: 106
-- Raw deployments: 402
+- Unique implementations: 105
+- Raw deployments: 396
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $1,557,525,865.33
@@ -46,7 +46,7 @@ All contracts belong to a single product family that aggregates yield from multi
 
 - None
 
-### ⚠️ Verified + Unaudited (100)
+### ⚠️ Verified + Unaudited (99)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -125,7 +125,6 @@ All contracts belong to a single product family that aggregates yield from multi
 | RsETHScalingPriceFeed | operational_periphery | ethereum | 2 deployments: ethereum [`0x3c30b5...7ed178`](./contracts/ethereum-1/0x3c30b5a5a04656565686f800481580ac4e7ed178/); ethereum `0xfa454d...b89f45` | ⚠️ Unaudited |
 | ScalingPriceFeed | operational_periphery | ethereum | 14 deployments: ethereum [`0x0a4f4f...af887d`](./contracts/ethereum-1/0x0a4f4f9e84fc4f674f0d209f94d41fafe5af887d/); ethereum `0x23a982...bb5549`; ethereum `0x2c7118...5f2921`; ethereum `0x2d0914...05722d`; ethereum `0x351a13...ddec91`; ethereum `0x540487...37fb93`; ethereum `0x66f5af...44d04d`; ethereum `0x7b03a0...06bc37`; ethereum `0x87641f...f74188`; ethereum `0x970ffd...1d5dc3`; ethereum `0x9f2f60...e97c1f`; ethereum `0x9f57e4...b00230`; ethereum `0xaa9527...8d3484`; ethereum `0xcb3643...9d4ba3` | ⚠️ Unaudited |
 | Signing | unknown | ethereum | [`0xd3bb84...6e6094`](./contracts/ethereum-1/0xd3bb8475c30fd70675f6250fb725e30b3a6e6094/) | ⚠️ Unaudited |
-| Silo | unknown | sonic | 6 deployments: sonic [`0x4935fa...86f8d0`](./contracts/sonic-146/0x4935fadb17df859667cc4f7bfe6a8cb24f86f8d0/); sonic `0x4e216c...5810df`; sonic `0x5954ce...3ab2de`; sonic `0x6030ad...d6eb64`; sonic `0x7e88ae...7caa62`; sonic `0xa18a8f...ae7893` | ⚠️ Unaudited |
 | SiloIncentivesControllerCL | governance | sonic | 2 deployments: sonic [`0xf6bc16...47a581`](./contracts/sonic-146/0xf6bc16b79c469b94cdd25f3e2334dd4fee47a581/); sonic `0xf6f870...f89885` | ⚠️ Unaudited |
 | SparkArbitrumOne_20250320 | unknown | arbitrum | [`0x1d54a0...34b3d5`](./contracts/arbitrum-42161/0x1d54a093b8fddfcc6fbb411d9af31d96e034b3d5/) | ⚠️ Unaudited |
 | SSRAuthOracle | operational_periphery | arbitrum | [`0xee2816...033a36`](./contracts/arbitrum-42161/0xee2816c1e1eed14d444552654ed3027abc033a36/) | ⚠️ Unaudited |
@@ -251,7 +250,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 56 |
 | upstream | 17 |
 | standard_library | 8 |
-| needs_review | 25 |
+| needs_review | 24 |
 
 ## Scope Matching Notes
 

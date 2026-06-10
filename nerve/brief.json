@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "nerve",
-  "generated_at": "2026-05-31T10:04:20.705Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:08.071Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "nerve",
     "tier": 0,
@@ -59,9 +59,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Nerve is a decentralized exchange (DEX) protocol that enables low-slippage swaps of stablecoins and pegged assets across multiple chains. It uses a specialized AMM design to facilitate efficient trading with minimal fees.",
+    "project_purpose": "Nerve is a trustless bridge/on-ramp and stableswap AMM for trading stablecoins and other pegged assets with low slippage and low fees. While historical or contract data may span multiple chains, current DefiLlama TVL is tracked on BNB Chain.",
     "relationship_narrative": "The Nerve family uses a proxy-based upgrade pattern where Swap contracts delegate to a shared SwapUtils library for core logic. AdminUpgradeabilityProxy contracts manage upgrades and access control across the system.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 66,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "king-protocol",
-  "generated_at": "2026-05-25T01:50:37.689Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:06.698Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "king-protocol",
@@ -35,8 +35,8 @@
     "coverage_pct": 60,
     "total_audits": 4,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 1283601.33962,
-    "tvl_usd": 1283601.33962,
+    "dl_tvl_usd": 1540496.18325,
+    "tvl_usd": 1540496.18325,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -60,9 +60,14 @@
     }
   },
   "topography": {
-    "project_purpose": "King Protocol is a liquid restaking protocol that allows users to deposit assets and receive liquid restaking tokens (LRTs) representing their staked positions. It operates across multiple chains, using LayerZero's Omnichain Fungible Token (OFT) standard to enable cross-chain transfers of its LRTs.",
+    "project_purpose": "King Protocol is a rewards and vault-share protocol focused on consolidating DeFi and restaking rewards into a liquid token. Its observed deployments include cross-chain token components such as KingOFTL2/LayerZero OFT-related contracts, but these should be treated as cross-chain deployment infrastructure rather than the sole or primary product definition unless further supported by current documentation.",
     "relationship_narrative": "The LRTSquaredCore contract manages the core restaking logic and interacts with the PriceProvider for asset pricing and the Swapper1InchV6 for trade execution. KingOFTL2 tokens are the liquid restaking tokens that are minted to users and can be bridged across chains via LayerZero.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 16,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

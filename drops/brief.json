@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "drops",
-  "generated_at": "2026-05-31T07:54:29.717Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:02.008Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "drops",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Drops is an NFT lending protocol that allows users to borrow against their NFTs by depositing them as collateral in isolated lending pools. It uses a Compound-like architecture with CEther and CErc721 tokens representing supplied assets and Unitroller/Comptroller contracts managing risk and liquidations.",
+    "project_purpose": "Drops is an Ethereum NFT and DeFi-asset lending protocol. Its contract surface includes Compound-style CErc20 and CEther liquidity markets for ERC20/ETH assets, CErc721 collateral markets for NFT-backed borrowing, and Unitroller/Comptroller risk-management components for market configuration, collateral, borrowing, and liquidation logic. Upgradeability should be described only for the relevant proxy-based components rather than as a pattern shared by all contracts.",
     "relationship_narrative": "The Drops family consists of multiple isolated lending pools, each with its own Unitroller proxy pointing to a Comptroller implementation that manages risk parameters and liquidations. CEther contracts serve as the interest-bearing receipt tokens for supplied ETH, while CErc721 variants handle NFT collateral, all sharing a common upgradeable proxy pattern.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 77,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

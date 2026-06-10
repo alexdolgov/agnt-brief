@@ -5,8 +5,8 @@
 - Project: OmniBTC (`omnibtc`)
 - Website: [https://www.omnibtc.finance](https://www.omnibtc.finance)
 - Lifecycle: active (Tier 0, 83.1% below peak)
-- Generated: 2026-05-31T10:07:19.708Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:08.786Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, ethereum, optimism, polygon
 - Contract surface: 6 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $2,201,232.35
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-OmniBTC is a cross-chain lending protocol that enables users to supply and borrow assets across multiple blockchains, including Ethereum, Optimism, Polygon, Base, Arbitrum One, and Avalanche.
+OmniBTC is an omnichain/cross-chain financial platform providing swap and lend/borrow functionality across multiple blockchains, with a focus that includes BTC omnichain lending. Its supported chain footprint includes Sui as a dominant current TVL chain, as well as EVM networks such as Ethereum, Optimism, Polygon, Base, Arbitrum One, Avalanche, and Binance where applicable.
 
 ### Architecture
 

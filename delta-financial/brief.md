@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Delta Financial
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Delta Financial (`delta-financial`)
 - Website: [https://www.delta.finance](https://www.delta.finance)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T07:45:04.522Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:01.696Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 53 unique implementations (110 raw deployments)
 - DeFi Llama TVL: $10,311,499.01
@@ -37,7 +35,6 @@ The protocol consists of a single product family where the deep farming vaults i
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $4,511,630.13 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

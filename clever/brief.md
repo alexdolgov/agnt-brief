@@ -5,17 +5,17 @@
 - Project: CLever (`clever`)
 - Website: [https://clever.aladdin.club/](https://clever.aladdin.club/)
 - Lifecycle: active (Tier 0, 83.1% below peak)
-- Generated: 2026-05-23T14:59:31.074Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:01.451Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 78 unique implementations (180 raw deployments)
-- DeFi Llama TVL: $5,722,260.52
-- On-chain TVL (included contracts): $12,438,607.52
-- TVL by chain: Ethereum $12,438,607.52
+- Contract surface: 76 unique implementations (174 raw deployments)
+- DeFi Llama TVL: $5,614,458.12
+- On-chain TVL (included contracts): $3,249,669.23
+- TVL by chain: Ethereum $3,249,669.23
 
 ## Project Description
 
-CLever is a yield optimization protocol that automates the compounding and management of Curve and Convex liquidity positions. It offers leveraged yield strategies and liquid locker tokens to maximize returns for liquidity providers.
+CLever is a DeFi protocol for CVX and stablecoin-related future-yield and leverage positions. Its native surface includes CLever modules such as Furnace/MetaFurnace, farming, locker, vesting, governance, token, and strategy components that handle yield claims, reward harvesting, swapping, and redemption flows. Third-party systems such as Balancer and StakeDAO should be treated as external integrations or dependencies rather than CLever-owned core contracts or TVL.
 
 ### Architecture
 
@@ -23,15 +23,15 @@ The CLever family consists of a single product line where the Vault contract int
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 7/68 (10.3%)
-- Verified + Unaudited implementations: 61
+- Verified implementations audited: 7/66 (10.6%)
+- Verified + Unaudited implementations: 59
 - Verified by bytecode match: 0
 - Unverified implementations: 10
-- Unique implementations: 78
-- Raw deployments: 180
+- Unique implementations: 76
+- Raw deployments: 174
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 3
-- ASD (verified + unaudited TVL): $10,779,785.82
+- ASD (verified + unaudited TVL): $1,590,847.52
 - Latest audit: 2022-11 (stale)
 - Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -40,8 +40,8 @@ The CLever family consists of a single product line where the Vault contract int
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| SECBIT | Tier 2 | 6 | 8.8% | 2022-11 |
-| unknown | Tier 2 | 4 | 5.9% | 2022-04 |
+| SECBIT | Tier 2 | 6 | 9.1% | 2022-11 |
+| unknown | Tier 2 | 4 | 6.1% | 2022-04 |
 
 ## Contract Surface
 
@@ -57,12 +57,10 @@ The CLever family consists of a single product line where the Vault contract int
 | MetaFurnace | unknown | ethereum | 4 deployments: ethereum [`0x6f7768...7950f9`](./contracts/ethereum-1/0x6f77685ae7a1288d2480440b7bb0fa2c317950f9/); ethereum `0x7059ea...e81e3c`; ethereum `0x7f160e...5761a9`; ethereum `0xeb937d...009773` | ✅ Audited |
 | Vesting | operational_periphery | ethereum | 5 deployments: ethereum [`0x28f576...a7309b`](./contracts/ethereum-1/0x28f5763b7779ed64b9e0da0a9862571ba4a7309b/); ethereum `0x592e35...695593`; ethereum `0x834188...f28742`; ethereum `0x84c82d...6f7a4e`; ethereum `0xd2b094...6ae099` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (61)
+### ⚠️ Verified + Unaudited (59)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| Vault | core_logic | ethereum | [`0xba1222...6bf2c8`](./contracts/ethereum-1/0xba12222222228d8ba445958a75a0704d566bf2c8/) | ⚠️ Unaudited |
-| StakeDAOCRVVault | core_logic | ethereum | 5 deployments: ethereum [`0x0e20d8...eaae8a`](./contracts/ethereum-1/0x0e20d8b0ec57ca8157d9bc2beec2c28a80eaae8a/); ethereum `0x2b3e72...e1e3f6`; ethereum `0x7dd09b...8acda6`; ethereum `0xe86cf5...6e4aad`; ethereum `0xf29faf...d254c1` | ⚠️ Unaudited |
 | FractionalToken | token | ethereum | 2 deployments: ethereum [`0x2a906e...745748`](./contracts/ethereum-1/0x2a906eab9b088e6753670bc8d3840f9473745748/); ethereum `0x53805a...633726` | ⚠️ Unaudited |
 | LeveragedToken | token | ethereum | 2 deployments: ethereum [`0x92d0cb...75fe83`](./contracts/ethereum-1/0x92d0cb7e56806bf977e7f5296ea2fe84b475fe83/); ethereum `0xe063f0...703ae2` | ⚠️ Unaudited |
 | RebalancePool | core_logic | ethereum | 2 deployments: ethereum [`0x3415fc...6473c7`](./contracts/ethereum-1/0x3415fcd2885c486e2d848403d51077f7176473c7/); ethereum `0xa677d9...01a49e` | ⚠️ Unaudited |
@@ -212,7 +210,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 50 |
-| upstream | 3 |
+| upstream | 1 |
 | standard_library | 15 |
 | needs_review | 10 |
 

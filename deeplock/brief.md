@@ -4,8 +4,8 @@
 
 - Project: DeepLock (`deeplock`)
 - Lifecycle: active (Tier 0, 86.8% below peak)
-- Generated: 2026-05-31T07:45:04.696Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.674Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 70 unique implementations (137 raw deployments)
 - DeFi Llama TVL: $2,143,342.40
@@ -14,7 +14,7 @@
 
 ## Project Description
 
-DeepLock is a launchpad protocol on BSC that enables projects to create and lock liquidity, distribute tokens, and incentivize participation through staking and mining. It provides tools for token launches, liquidity locking, and yield farming to support new token ecosystems.
+DeepLock is a BSC launchpad and liquidity-locking platform that provides tools for token launches, liquidity locking, token distribution, staking, and mining. Launched-token contracts, AMM pools, or other third-party ecosystem contracts should not be treated as DeepLock-owned protocol infrastructure unless independently verified.
 
 ### Architecture
 

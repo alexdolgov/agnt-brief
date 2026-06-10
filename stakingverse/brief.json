@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stakingverse",
-  "generated_at": "2026-05-23T22:14:12.419Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.613Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stakingverse",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
     "coverage_pct": 0,
-    "total_audits": 18,
+    "total_audits": 14,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4195339.39503,
+    "dl_tvl_usd": 4028554.3659,
     "tvl_usd": 3542371.788202899,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -53,15 +53,20 @@
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 2,
-      "aging": 5,
-      "stale": 6,
-      "unknown": 5
+      "aging": 4,
+      "stale": 5,
+      "unknown": 3
     }
   },
   "topography": {
-    "project_purpose": "Stakingverse is a liquid staking protocol that allows users to stake ETH and receive a liquid staking token (SLYX) representing their staked position, while earning staking rewards. It operates on Ethereum and LUKSO, providing a vault-based architecture for managing staked assets.",
-    "relationship_narrative": "The ERC1967Proxy delegates to the EthVault implementation, which likely mints and burns SLYX tokens in response to user deposits and withdrawals. The StakingverseVault may interact with the same SLYX token or share infrastructure with the main vault.",
+    "project_purpose": "Stakingverse is a liquid staking protocol operating on LUKSO and Ethereum, supporting liquid staking for LYX/LUKSO and ETH/Ethereum through a vault-based architecture. Receipt-token relationships should be stated only where independently verified; do not claim that SLYX represents staked ETH without verification.",
+    "relationship_narrative": null,
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 3,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -73,7 +78,7 @@
       "chain_name": "ethereum",
       "address": "0x8a93a876912c9f03f88bc9114847cf5b63c89f56",
       "name": "EthVault",
-      "role": "core_logic",
+      "role": "proxy",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "Resources",
@@ -299,48 +304,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2615,
-      "audit_key": "audit-2615",
-      "report_name": "slither_report_SLYXToken.md",
-      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/slither_report_SLYXToken.md",
-      "auditor": "Slither",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2616,
-      "audit_key": "audit-2616",
-      "report_name": "slither_report_StakingverseVault.md",
-      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/slither_report_StakingverseVault.md",
-      "auditor": "Slither",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 2620,
       "audit_key": "audit-2620",
       "report_name": "Rendered PDF capture",
@@ -349,48 +312,6 @@
       "audit_type": "audit",
       "freshness": "unknown",
       "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2621,
-      "audit_key": "audit-2621",
-      "report_name": "2023-1-9-UniversalPage.md",
-      "report_url": "https://github.com/Universal-Page/contracts/blob/main/audits/2023-1-9-UniversalPage.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2622,
-      "audit_key": "audit-2622",
-      "report_name": "2024-2-1-UniversalPage-Vault-security-review.pdf",
-      "report_url": "https://github.com/Universal-Page/contracts/blob/main/audits/2024-2-1-UniversalPage-Vault-security-review.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-02",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -515,7 +436,7 @@
       "report_url": "https://github.com/stakewise/v3-core/blob/main/audits/2024-06-Sigma-Prime.pdf",
       "auditor": "Sigma Prime",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -607,24 +528,8 @@
         "report_name": "nethermind-findings.md"
       },
       {
-        "audit_id": 2615,
-        "report_name": "slither_report_SLYXToken.md"
-      },
-      {
-        "audit_id": 2616,
-        "report_name": "slither_report_StakingverseVault.md"
-      },
-      {
         "audit_id": 2620,
         "report_name": "Rendered PDF capture"
-      },
-      {
-        "audit_id": 2621,
-        "report_name": "2023-1-9-UniversalPage.md"
-      },
-      {
-        "audit_id": 2622,
-        "report_name": "2024-2-1-UniversalPage-Vault-security-review.pdf"
       },
       {
         "audit_id": 2623,

@@ -1,19 +1,19 @@
 # Agentic Audit Brief: CREAM Finance
 
-⚠️ Lifecycle status: DEAD - TVL changed 11.6% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 11.6% over 90 days
 
 ## Project Overview
 
 - Project: CREAM Finance (`cream-finance`)
 - Website: [https://cream.finance/](https://cream.finance/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-24T18:55:43.317Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:01.541Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, bsc, ethereum, polygon
-- Contract surface: 95 unique implementations (619 raw deployments)
-- DeFi Llama TVL: $1,684,796.00
-- On-chain TVL (included contracts): $2,280,012,092.24
-- TVL by chain: Ethereum $2,059,574,950.42 | Bsc $220,410,132.58 | Polygon $24,915.91 | Arbitrum $2,093.33
+- Contract surface: 94 unique implementations (618 raw deployments)
+- DeFi Llama TVL: $1,657,586.00
+- On-chain TVL (included contracts): $2,280,006,585.95
+- TVL by chain: Ethereum $2,059,569,444.12 | Bsc $220,410,132.58 | Polygon $24,915.91 | Arbitrum $2,093.33
 
 ## Project Description
 
@@ -25,19 +25,19 @@ The lending family uses Unitroller/Comptroller as the central risk management an
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/65 (0.0%)
-- Verified + Unaudited implementations: 63
+- Verified implementations audited: 0/64 (0.0%)
+- Verified + Unaudited implementations: 62
 - Verified by bytecode match: 2
 - Unverified implementations: 30
-- Unique implementations: 95
-- Raw deployments: 619
+- Unique implementations: 94
+- Raw deployments: 618
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $2,280,012,092.24
+- ASD (verified + unaudited TVL): $2,280,006,585.95
 - Latest audit: 2021-01 (stale)
 - Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $2,280,012,092.24 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $2,280,006,585.95 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,7 +49,7 @@ The lending family uses Unitroller/Comptroller as the central risk management an
 
 - None
 
-### ⚠️ Verified + Unaudited (63)
+### ⚠️ Verified + Unaudited (62)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -59,7 +59,6 @@ The lending family uses Unitroller/Comptroller as the central risk management an
 | TetherToken | token | ethereum | [`0xc581b7...ede491`](./contracts/ethereum-1/0xc581b735a1688071a1746c968e0798d642ede491/) | ⚠️ Unaudited |
 | CCTokenDelegate | token | ethereum | 6 deployments: ethereum [`0x4f0800...909b9e`](./contracts/ethereum-1/0x4f08008ef178929e3866f1aeea75beaa8b909b9e/); ethereum `0x4f12c9...64d045`; ethereum `0x950027...2b6c09`; ethereum `0xbb4b06...728e36`; ethereum `0xe3d7a3...287a27`; ethereum `0xfbfb92...3f0aa9` | ⚠️ Unaudited |
 | CCapableErc20Delegate | token | ethereum | 17 deployments: ethereum [`0x018a82...9ff5ab`](./contracts/ethereum-1/0x018a82a5bd6e0a4ae8c5cf54527775d17d9ff5ab/); ethereum `0x1a9e50...edb509`; ethereum `0x1bcafa...8d1eb5`; ethereum `0x218e5b...ff6117`; ethereum `0x22b243...2b2e9e`; ethereum `0x2939f9...ccff07`; ethereum `0x460ea7...715adc`; ethereum `0x852dc3...68aaf3`; ethereum `0xa87e8e...5f4d01`; ethereum `0xb72cf0...c3aaa5`; ethereum `0xbddeb5...e5b6c6`; ethereum `0xcc4457...9b2afc`; ethereum `0xe9ea58...f0ceb6`; ethereum `0xf047d4...295922`; ethereum `0xf7c531...9b8531`; bsc `0x225a75...750d65`; bsc `0xb316f4...255f53` | ⚠️ Unaudited |
-| DepositContract | core_logic | ethereum | [`0x000000...7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | ⚠️ Unaudited |
 | StandardArbERC20 | token | arbitrum | [`0xf4d48c...4d7234`](./contracts/arbitrum-42161/0xf4d48ce3ee1ac3651998971541badbb9a14d7234/) | ⚠️ Unaudited |
 | BEP20CREAM | adapter | bsc | [`0x2f7347...120326`](./contracts/bsc-56/0x2f7347ebb25f2e314a5806b71dd67fe96c120326/) | ⚠️ Unaudited |
 | BFactory | registry | ethereum | 3 deployments: ethereum [`0x0d3303...9b619f`](./contracts/ethereum-1/0x0d3303ffaf107cd732396570bf07b2dbd79b619f/); ethereum `0x136d6f...a6ddec`; ethereum `0xf8062e...ab4e54` | ⚠️ Unaudited |
@@ -244,7 +243,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 78 |
-| upstream | 3 |
+| upstream | 2 |
 | standard_library | 2 |
 | needs_review | 12 |
 

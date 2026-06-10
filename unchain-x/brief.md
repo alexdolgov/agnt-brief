@@ -5,21 +5,22 @@
 - Project: Unchain X (`unchain-x`)
 - Website: [https://unchainx.io](https://unchainx.io)
 - Lifecycle: active (Tier 0, 63.4% below peak)
-- Generated: 2026-05-25T02:42:02.390Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:18.486Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,254,590.72
+- DeFi Llama TVL: $1,208,578.29
 - On-chain TVL (included contracts): $35,109,981.13
 - TVL by chain: Bsc $35,109,981.13
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Unchain X is a decentralized exchange protocol on BSC that provides token swapping and liquidity provision, likely using a Uniswap V3-style concentrated liquidity model.
-
-### Architecture
-
-The protocol consists of a single product family centered around the UNX token, with no additional supporting contracts identified.
+Unchain X is a BSC AMM/DEX, apparently using a Uniswap V3-style concentrated liquidity model for token swapping and liquidity provision. The current contract inventory only includes the UNX token address and should not be treated as the complete protocol surface; additional DEX, staking/launchpad, liquidity mining/farming, governance/timelock, and related protocol contracts appear to be missing or unknown.
 
 ## Audit Coverage Summary
 

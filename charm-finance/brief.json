@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "charm-finance",
-  "generated_at": "2026-05-24T14:07:26.988Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:01.392Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "charm-finance",
     "tier": 0,
@@ -35,7 +35,7 @@
     "coverage_pct": 50,
     "total_audits": 6,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 2195939,
+    "dl_tvl_usd": 2343526,
     "tvl_usd": 14217.518066482353,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -57,18 +57,23 @@
       "Spearbit"
     ],
     "latest_audit_date": "2025-06",
-    "audit_freshness": "fresh",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
-      "fresh": 1,
-      "aging": 0,
+      "fresh": 0,
+      "aging": 1,
       "stale": 4,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Charm Finance is a liquidity management protocol that automates concentrated liquidity positions on Uniswap V3-style AMMs. It uses AlphaProVaults to manage user deposits, rebalance ranges, and compound fees to optimize yields.",
+    "project_purpose": "Charm Finance is a permissionless liquidity management protocol with both legacy Ethereum V1 products and active V2 AlphaPro vault deployments. Its contracts include vaults and strategy/periphery components for managing concentrated liquidity positions on Uniswap V3-style AMMs, including user deposits, range rebalancing, and fee compounding.",
     "relationship_narrative": "The protocol consists of a single product family, Charm Finance V2, centered around the AlphaProVaultFactory which deploys and manages vault instances. No shared infrastructure or cross-family dependencies are present.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 10,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -523,7 +528,7 @@
       "report_url": "https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FIM3bniGpiEo24osqeSJ5%2Freport-cantinacode-charm-0604.pdf",
       "auditor": "Spearbit",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,

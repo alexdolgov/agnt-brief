@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "kiloex",
-  "generated_at": "2026-05-24T09:24:19.200Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:59:06.683Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "kiloex",
     "tier": 1,
@@ -32,27 +32,26 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 111,
-    "total_addresses": 156,
-    "unique_implementations": 111,
-    "total_deployments": 156,
+    "total_contracts": 110,
+    "total_addresses": 155,
+    "unique_implementations": 110,
+    "total_deployments": 155,
     "audited_contracts": 1,
-    "unaudited_contracts": 7,
+    "unaudited_contracts": 6,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 7,
+    "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 103,
-    "coverage_pct": 12.5,
+    "coverage_pct": 14.3,
     "total_audits": 10,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 2938597.16445,
-    "tvl_usd": 7252777.461516596,
+    "dl_tvl_usd": 2454202.39997,
+    "tvl_usd": 5709133.230527142,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "base": 1543644.23,
       "bsc": 5709133.23
     },
-    "asd_usd": 1543644.2309894545,
+    "asd_usd": null,
     "website_url": "https://app.kiloex.io/#/trade",
     "chains": [
       "base",
@@ -71,9 +70,14 @@
     }
   },
   "topography": {
-    "project_purpose": "KiloEx is a decentralized derivatives trading platform that enables users to trade perpetual contracts with leverage. It operates across multiple chains and uses a native token (KiloExToken) along with various synthetic and wrapped assets to facilitate trading and liquidity.",
+    "project_purpose": "KiloEx is a decentralized derivatives exchange that enables users to trade leveraged perpetual futures across multiple chains.",
     "relationship_narrative": "The KiloEx family uses TransparentUpgradeableProxy contracts to manage upgradeable logic for core components, while BeaconProxy and StoneCross provide cross-chain and staking infrastructure. Tokens like IBTC, OBTC, and SolvBTCV3 serve as collateral or trading pairs within the derivatives platform.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 110,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -121,37 +125,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xf469fbd2abcd6b9de8e169d128226c0fc90a012e",
-      "name": "PumpTokenOFT",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "KiloEx",
-      "tvl_usd": 1543644.2309894545,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PumpTokenOFT",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xf469fbd2abcd6b9de8e169d128226c0fc90a012e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1543644.2309894545,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 8453,
@@ -4150,7 +4123,7 @@
       "auditor": "Scalebit",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 12.5,
+      "coverage_pct": 14.3,
       "latest_audit": "2024-07"
     }
   ],
@@ -4159,7 +4132,7 @@
     "native": 1,
     "upstream": 0,
     "standard_library": 4,
-    "needs_review": 106
+    "needs_review": 105
   },
   "scope_matching_notes": {
     "match_method_counts": {

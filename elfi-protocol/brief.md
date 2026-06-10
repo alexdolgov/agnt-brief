@@ -1,23 +1,23 @@
 # Agentic Audit Brief: ELFi Protocol
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 34.2% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 34.2% over 90 days
 
 ## Project Overview
 
 - Project: ELFi Protocol (`elfi-protocol`)
 - Website: [https://www.elfi.xyz](https://www.elfi.xyz)
-- Lifecycle: unknown (Tier 0, 81.8% below peak)
-- Generated: 2026-05-25T20:18:37.264Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Lifecycle: declining (Tier 0, 81.8% below peak)
+- Generated: 2026-06-10T20:59:02.193Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base
-- Contract surface: 2406 unique implementations (2473 raw deployments)
-- DeFi Llama TVL: $3,012,278.92
+- Contract surface: 2406 unique implementations (2470 raw deployments)
+- DeFi Llama TVL: $3,440,720.25
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-ELFi Protocol is a decentralized derivatives trading platform that enables users to deposit assets, trade derivatives, and manage portfolios through a set of vaults and a diamond proxy architecture. It operates on Base and Arbitrum One, providing liquidity and staking mechanisms.
+ELFi Protocol is a P2Pool decentralized perpetuals and derivatives exchange deployed on Base and Arbitrum One. It supports portfolio margin, multi-asset collateral, ELP liquidity and yield pools, and staking/rewards mechanisms; internal vault and diamond proxy architecture should be treated as implementation details rather than the primary product description.
 
 ### Architecture
 
@@ -25,25 +25,25 @@ The Diamond proxy serves as the central access point for user accounts, routing 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 28/96 (29.2%)
+- Verified implementations audited: 28/95 (29.5%)
 - Verified + Unaudited implementations: 61
-- Verified by bytecode match: 8
-- Unverified implementations: 2310
+- Verified by bytecode match: 7
+- Unverified implementations: 2311
 - Unique implementations: 2406
-- Raw deployments: 2473
+- Raw deployments: 2470
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-07 (aging)
 - Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
-- Tier 1 coverage: 29.2% (Sherlock)
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
+- Tier 1 coverage: 29.5% (Sherlock)
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Sherlock | Tier 1 | 28 | 29.2% | 2024-07 |
+| Sherlock | Tier 1 | 28 | 29.5% | 2024-07 |
 
 ## Contract Surface
 
@@ -153,7 +153,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 |---|---|---|---|---|
 | AccountFacet | unknown | arbitrum | 5 deployments: base `0x957e0c...729d50`; arbitrum [`0x07fa37...3f9d55`](./contracts/arbitrum-42161/0x07fa377a5114c4f14b583f58a3ce79004c3f9d55/); arbitrum `0x153c61...aa5d55`; arbitrum `0x1cbd25...4f2055`; arbitrum `0x6a093a...f34452` | ✅ Audited (bytecode match) |
 
-### ⚠️ Verified by Bytecode + Unaudited (7)
+### ⚠️ Verified by Bytecode + Unaudited (6)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
@@ -165,9 +165,8 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 | DiamondLoupeFacet | unknown | base | 2 deployments: base [`0x8771ae...164342`](./contracts/base-8453/0x8771ae6cce489d8227141439cc26aed3a5164342/); arbitrum `0x91e082...0c2fdb` | ⚠️ Unaudited (bytecode match) |
 | Multicall3 | unknown | base | 2 deployments: base [`0x0c96e0...9551c5`](./contracts/base-8453/0x0c96e0f4240624b489ad8b5b638a70feef9551c5/); arbitrum `0xcf371c...19a82f` | ⚠️ Unaudited (bytecode match) |
 | RoleAccessControlFacet | unknown | base | 2 deployments: base [`0xbbbf28...78b07e`](./contracts/base-8453/0xbbbf2876527c6c2a78d9e2c370a87695fa78b07e/); arbitrum `0xc25aa7...25a8fe` | ⚠️ Unaudited (bytecode match) |
-| WETH | token | arbitrum | 4 deployments: base `0x41ba6c...57c61f`; arbitrum [`0x36f32d...cc3d4b`](./contracts/arbitrum-42161/0x36f32dd52bfc834c40a3f0b3ebb341ff3acc3d4b/); arbitrum `0x385dd8...7826ff`; arbitrum `0x3a40d1...605f2b` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (2310)
+### ❓ Unverified (2311)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -364,6 +363,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | base | `0x40f477...997513` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x413b17...808f99` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x4194f2...b73739` | ❓ Unverified |
+| UnnamedContract | unknown | base | `0x41ba6c...57c61f` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x41d580...3d25c0` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x422555...32472a` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x427957...49abc4` | ❓ Unverified |
@@ -2553,9 +2553,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 219 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 2 |
-| needs_review | 2184 |
+| needs_review | 2185 |
 
 ## Scope Matching Notes
 

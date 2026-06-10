@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nonkyc",
-  "generated_at": "2026-05-31T10:07:19.787Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:08.710Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "nonkyc",
@@ -59,9 +59,14 @@
     }
   },
   "topography": {
-    "project_purpose": "NonKYC is a centralized exchange (CEX) that allows users to trade digital assets without requiring identity verification. It operates across multiple chains including Ethereum, Optimism, Base, and Arbitrum One.",
+    "project_purpose": "NonKYC is primarily a centralized/no-KYC cryptocurrency exchange. The four recorded EVM accounts on Ethereum, Optimism, Base, and Arbitrum One should be treated as unverified, unknown-role, very-small-code accounts unless their exact role is documented; they should not be inferred to implement exchange trading logic or to represent the complete CEX reserve/TVL surface.",
     "relationship_narrative": "Only one product family is identified, with four unnamed contracts at the same address, likely representing a single exchange contract or a set of related functions. No shared infrastructure or inter-family relationships are evident.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 4,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

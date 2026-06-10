@@ -1,14 +1,14 @@
 # Agentic Audit Brief: DeSyn Protocol
 
-⚠️ Lifecycle status: DEAD - TVL changed 10.9% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 10.9% over 90 days
 
 ## Project Overview
 
 - Project: DeSyn Protocol (`desyn-protocol`)
 - Website: [https://www.desyn.io/#/](https://www.desyn.io/#/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-31T07:51:12.437Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:01.843Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, mode
 - Contract surface: 11 unique implementations (15 raw deployments)
 - DeFi Llama TVL: $10,730,444.00
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-DeSyn Protocol is a decentralized asset management platform offering yield aggregation, basis trading, and liquid strategies. It enables users to deposit assets into liquidity pools that execute automated yield and trading strategies across multiple chains.
+DeSyn Protocol is a decentralized asset management platform spanning multiple product families tracked as DeSyn Basis Trading, DeSyn Liquid Strategy, and DeSyn Safe/Farm. Its current protocol surface should be modeled across the active TVL-bearing deployments, with parent-protocol TVL primarily associated with Basis Trading rather than only legacy Ethereum or Mode DeSyn Safe liquidity pools.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The governance family (GnosisSafeProxy) likely manages upgrades and parameters f
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

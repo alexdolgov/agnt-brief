@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "tulipa-capital",
-  "generated_at": "2026-05-31T11:23:33.400Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:17.613Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "tulipa-capital",
@@ -62,9 +62,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Tulipa Capital is a risk curation protocol that deploys user deposits into yield-bearing strategies via a system of upgradeable vaults and proxies. It operates across Ethereum, Base, and Avalanche, offering structured products that optimize returns while managing risk.",
+    "project_purpose": "Tulipa Capital is a DeFi risk-curation project focused on lending markets and vaults, emphasizing capital protection, transparency, and institutional-scale capital deployment. Its indexed contract set includes vaults and proxy-based deployments on Ethereum and Avalanche, while its broader DefiLlama-listed footprint spans additional chains; the indexed contracts should not be treated as the full multichain project surface.",
     "relationship_narrative": "All product families share the same proxy-based upgradeability pattern, with BeaconProxy and OptinProxy instances pointing to a small set of Vault implementations. The TokenizedAccount contract likely serves as a user-facing entry point or receipt token, while BoringVault and LendingVault represent specialized strategy vaults within the same infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 4,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

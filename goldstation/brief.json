@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "goldstation",
-  "generated_at": "2026-05-24T13:16:54.415Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:04.344Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "goldstation",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2259142.09829,
-    "tvl_usd": 2259142.09829,
+    "dl_tvl_usd": 2154383.4249400003,
+    "tvl_usd": 2154383.4249400003,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -57,9 +57,14 @@
     }
   },
   "topography": {
-    "project_purpose": "GOLDSTATION is a decentralized exchange and real-world asset protocol that enables token swaps, liquidity provision, and staking. It also offers tokenized gold exposure through its RWA product.",
+    "project_purpose": "GOLDSTATION is a broad RWA-focused DeFi platform with swap, liquidity provision, earn, and mint-burn functionality. Gold appears to be one RWA vertical or product area rather than the entirety of the platform; specific gold-related claims should be tied to identified audited contracts or documented product materials.",
     "relationship_narrative": "The DEX likely provides liquidity for the RWA token, while the staking contract may distribute rewards from DEX fees or RWA yields. All families share the same deployer and operate on Klaytn and Avalanche.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 5,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

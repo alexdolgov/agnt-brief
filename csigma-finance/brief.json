@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "csigma-finance",
-  "generated_at": "2026-05-22T23:16:21.720Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:01.572Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "csigma-finance",
@@ -35,7 +35,7 @@
     "coverage_pct": 41,
     "total_audits": 3,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 12657576.82631,
+    "dl_tvl_usd": 12657655.143330002,
     "tvl_usd": 69526.03631499999,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -63,6 +63,11 @@
     "project_purpose": "cSigma Finance is a decentralized lending protocol that enables real-world asset (RWA) backed loans. It provides vaults for collateral management, pools for liquidity, and factories for deploying new lending markets.",
     "relationship_narrative": "The cSigma Finance family uses VaultFacet for core vault logic and CsigmaV3Pool for liquidity pools, both managed through factory contracts. The Discover family's Sigma contract appears to be a predecessor or alternative implementation, sharing the same deployer cluster but no direct on-chain dependency with the main protocol.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 50,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

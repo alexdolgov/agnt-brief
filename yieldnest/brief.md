@@ -1,14 +1,12 @@
 # Agentic Audit Brief: YieldNest
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 4.8% over 90 days
-
 ## Project Overview
 
 - Project: YieldNest (`yieldnest`)
 - Website: [https://yieldnest.finance/](https://yieldnest.finance/)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T11:45:20.085Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:19.439Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, berachain, bsc, ethereum, ink, optimism
 - Contract surface: 33 unique implementations (72 raw deployments)
 - DeFi Llama TVL: $22,859,932.39
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-YieldNest is an onchain capital allocator that aggregates and manages yield-bearing strategies across multiple chains. It offers liquid restaking tokens (e.g., ynETH, ynLSDe) and vault products (e.g., ynETHx, ynBNBx) that optimize returns through EigenLayer and other DeFi protocols.
+YieldNest is an on-chain capital allocator and yield protocol offering liquid restaking and MAX Vault products across multiple assets and chains. Its products include restaking-focused tokens such as ynETH and ynLSDe as well as vault and allocator products such as ynETHx, ynBNBx, ynRWAx, and ynUSDx, which route capital across EigenLayer and other DeFi or yield strategies rather than relying on EigenLayer as the sole mechanism.
 
 ### Architecture
 
@@ -31,13 +29,12 @@ The ynETH family feeds rewards into ynETHx vaults, which issue L2YnERC20Upgradea
 - Unverified implementations: 4
 - Unique implementations: 33
 - Raw deployments: 72
-- Audits discovered: 21
-- Scoreable audits (matched contracts): 13
+- Audits discovered: 16
+- Scoreable audits (matched contracts): 12
 - ASD (verified + unaudited TVL): $295,088.52
 - Latest audit: 2025-05 (aging)
-- Staleness: 0 fresh, 10 aging, 10 stale, 1 unknown
+- Staleness: 0 fresh, 10 aging, 6 stale, 0 unknown
 - Tier 1 coverage: 31.0% (ChainSecurity)
-- Note: This protocol is classified as [declining]. ASD of $295,088.52 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -115,15 +112,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [README.md (also discovered via alternate URL)](https://github.com/yieldnest/yieldnest-vault/blob/eth-max-vault/test/unit/vault/security/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [2024-04-10-chainsecurity_yieldnest_protocol_audit.pdf (also discovered via alternate URL)](https://github.com/yieldnest/yieldnest-eigenlayer-lrt/blob/main/audits/2024-04-10-chainsecurity_yieldnest_protocol_audit.pdf) | ChainSecurity | Audit | 2024-04 | stale | Direct | contract_name | 9 | high |
-| [2024-05-07-zokyo-yieldnest_protocol_audit.pdf (also discovered via alternate URL)](https://github.com/yieldnest/yieldnest-eigenlayer-lrt/blob/main/audits/2024-05-07-zokyo-yieldnest_protocol_audit.pdf) | unknown | Audit | 2024-05 | stale | Direct | contract_name | 8 | high |
+| [2024-05-07-zokyo-yieldnest_protocol_audit.pdf](https://github.com/yieldnest/yieldnest-eigenlayer-lrt/blob/main/audits/2024-05-07-zokyo-yieldnest_protocol_audit.pdf) | unknown | Audit | 2024-05 | stale | Direct | contract_name | 8 | high |
 | [M2 Mainnet - Dedaub - Feb 2024.pdf](https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/audits/M2%20Mainnet%20-%20Dedaub%20-%20Feb%202024.pdf) | Dedaub | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
 | [EigenLabs — EigenLayer ConsenSys Diligence.pdf](https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/eigenlayer-contracts/audits/EigenLabs%20%E2%80%94%20EigenLayer%20ConsenSys%20Diligence.pdf) | Consensys Diligence | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
 | [Sigma Prime - Core Audit - v2.0 FINAL - Feb'24.pdf](https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/eigenlayer-contracts/audits/Sigma%20Prime%20-%20Core%20Audit%20-%20v2.0%20FINAL%20-%20Feb'24.pdf) | Sigma Prime | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
-| [Sigma_Prime_Eigen_Layer_Phase_2_Security_Assessment_Report_v2_1.pdf](https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/eigenlayer-contracts/audits/Sigma_Prime_Eigen_Layer_Phase_2_Security_Assessment_Report_v2_1.pdf) | unknown | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
-| [2017-03.md (also discovered via alternate URL)](https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/eigenlayer-contracts/lib/openzeppelin-contracts-upgradeable/audit/2017-03.md) | OpenZeppelin | Audit | 2017-03 | stale | Direct | n/a | 0 | n/a |
-| [2018-10.pdf (also discovered via alternate URL)](https://github.com/yieldnest/point-guard/blob/main/contracts/lib/eigenlayer-middleware/lib/eigenlayer-contracts/lib/openzeppelin-contracts-upgradeable/audit/2018-10.pdf) | OpenZeppelin | Audit | 2018-10 | stale | Direct | n/a | 0 | n/a |
 | [chainsecurity_yieldnest_protocol_audit.pdf](https://github.com/yieldnest/Publications/blob/main/audits/chainsecurity_yieldnest_protocol_audit.pdf) | ChainSecurity | Audit | 2024-04 | stale | Direct | contract_name | 9 | high |
 | [chainsecurity_yieldnest_protocol_audit_aug_2024.pdf](https://github.com/yieldnest/Publications/blob/main/audits/chainsecurity_yieldnest_protocol_audit_aug_2024.pdf) | ChainSecurity | Audit | 2024-08 | aging | Direct | contract_name | 16 | high |
 | [composable_security_yieldnest_jan_2025.pdf](https://github.com/yieldnest/Publications/blob/main/audits/composable_security_yieldnest_jan_2025.pdf) | unknown | Audit | 2025-01 | aging | Direct | contract_name | 8 | high |
@@ -131,7 +124,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [yieldnest_default_asset_index_audit_report.pdf](https://github.com/yieldnest/Publications/blob/main/audits/yieldnest_default_asset_index_audit_report.pdf) | unknown | Audit | 2025-05 | aging | Direct | contract_name | 6 | high |
 | [yieldnest_max_vault_withdrawer_audit_report.pdf](https://github.com/yieldnest/Publications/blob/main/audits/yieldnest_max_vault_withdrawer_audit_report.pdf) | unknown | Audit | 2025-02 | aging | Direct | contract_name | 3 | high |
 | [zokyo_audit_yieldnest_Jan8th_2025.pdf](https://github.com/yieldnest/Publications/blob/main/audits/zokyo_audit_yieldnest_Jan8th_2025.pdf) | unknown | Audit | 2025-01 | aging | Direct | contract_name | 1 | high |
-| [zokyo_audit_yieldnest_May7th_2024.pdf](https://github.com/yieldnest/Publications/blob/main/audits/zokyo_audit_yieldnest_May7th_2024.pdf) | unknown | Audit | 2024-05 | stale | Direct | contract_name | 8 | high |
 | [zokyo_audit_yieldnest_dec12th_2024.pdf](https://github.com/yieldnest/Publications/blob/main/audits/zokyo_audit_yieldnest_dec12th_2024.pdf) | unknown | Audit | 2024-12 | aging | Direct | contract_name | 7 | high |
 | [zokyo_audit_yieldnest_feb4th_2025.pdf](https://github.com/yieldnest/Publications/blob/main/audits/zokyo_audit_yieldnest_feb4th_2025.pdf) | unknown | Audit | 2025-02 | aging | Direct | contract_name | 9 | high |
 | [zokyo_yneigen_audit_yieldnest_april_2025.pdf](https://github.com/yieldnest/Publications/blob/main/audits/zokyo_yneigen_audit_yieldnest_april_2025.pdf) | unknown | Audit | 2025-04 | aging | Direct | contract_name | 6 | high |
@@ -164,20 +156,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 8
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=13
-- Match method counts: extraction_exact=112
+- Extraction confidence breakdown: high=12
+- Match method counts: extraction_exact=96
 
 Zero-match audit list:
 
-- [6052] README.md
 - [6055] M2 Mainnet - Dedaub - Feb 2024.pdf
 - [6056] EigenLabs — EigenLayer ConsenSys Diligence.pdf
 - [6057] Sigma Prime - Core Audit - v2.0 FINAL - Feb'24.pdf
-- [6058] Sigma_Prime_Eigen_Layer_Phase_2_Security_Assessment_Report_v2_1.pdf
-- [6059] 2017-03.md
-- [6060] 2018-10.pdf
 - [6070] yieldnest_clisbnb_strategy_audit_report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,13 +1,13 @@
 # Agentic Audit Brief: Nerve
 
-⚠️ Lifecycle status: DEAD - TVL dropped 6.4% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 6.4% over 90 days
 
 ## Project Overview
 
 - Project: Nerve (`nerve`)
-- Lifecycle: dead (Tier 0, 99.8% below peak)
-- Generated: 2026-05-31T10:04:20.705Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 99.8% below peak)
+- Generated: 2026-06-10T20:59:08.071Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc, ethereum
 - Contract surface: 66 unique implementations (108 raw deployments)
 - DeFi Llama TVL: $1,500,085.77
@@ -16,7 +16,7 @@
 
 ## Project Description
 
-Nerve is a decentralized exchange (DEX) protocol that enables low-slippage swaps of stablecoins and pegged assets across multiple chains. It uses a specialized AMM design to facilitate efficient trading with minimal fees.
+Nerve is a trustless bridge/on-ramp and stableswap AMM for trading stablecoins and other pegged assets with low slippage and low fees. While historical or contract data may span multiple chains, current DefiLlama TVL is tracked on BNB Chain.
 
 ### Architecture
 
@@ -36,7 +36,7 @@ The Nerve family uses a proxy-based upgrade pattern where Swap contracts delegat
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $508.66 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $508.66 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

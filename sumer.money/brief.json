@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sumer.money",
-  "generated_at": "2026-05-24T16:15:46.920Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.709Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -17,10 +17,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 3,
+    "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1890655.3431600002,
-    "tvl_usd": 1890655.3431600002,
+    "dl_tvl_usd": 1853501.3830300001,
+    "tvl_usd": 1853501.3830300001,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -34,13 +34,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 3
+      "unknown": 2
     }
   },
   "topography": {
-    "project_purpose": "Sumer.money is a decentralized lending protocol that allows users to supply and borrow crypto assets. It is based on the Compound Finance codebase, enabling interest accrual and collateralized loans.",
-    "relationship_narrative": "No product families or contracts are defined in the provided inventory, so no relationships can be described.",
+    "project_purpose": "Sumer.money is cross-chain synthetic-asset and liquidity infrastructure that supports suTokens such as suETH and suUSD, alongside lending and borrowing markets. Its design includes a correlation-aware risk engine for collateral and liquidity management; any Compound-style lineage should be treated as code/audit-supported context rather than the primary project description.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -89,27 +94,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2952,
-      "audit_key": "audit-2952",
-      "report_name": "SumerMoneyAuditCertik.pdf",
-      "report_url": "https://github.com/meterio/sumer-contracts/blob/main/audits/Certik/SumerMoneyAuditCertik.pdf",
-      "auditor": "yAudit",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -133,10 +117,6 @@
       {
         "audit_id": 2951,
         "report_name": "SumerAuditReportAnciliav1.6.pdf"
-      },
-      {
-        "audit_id": 2952,
-        "report_name": "SumerMoneyAuditCertik.pdf"
       }
     ],
     "inherited_remapped_matches": []

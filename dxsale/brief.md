@@ -5,17 +5,17 @@
 - Project: DxSale (`dxsale`)
 - Website: [https://dx.app](https://dx.app)
 - Lifecycle: active (Tier 0, 76% below peak)
-- Generated: 2026-05-31T07:53:59.783Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:02.046Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, bsc, celo, ethereum, fantom, gnosis, harmony, moonriver, polygon
-- Contract surface: 353 unique implementations (389 raw deployments)
+- Contract surface: 352 unique implementations (388 raw deployments)
 - DeFi Llama TVL: $25,965,918.43
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-DxSale is a decentralized launchpad that enables projects to create and manage token presales, liquidity locks, and token generation events across multiple blockchains. It provides tools for fundraising, token distribution, and liquidity management without requiring coding skills.
+DX App, formerly DxSale, is a decentralized launchpad and token tooling platform that enables projects to create and manage token presales/IDOs, token minting, airdrops, liquidity locks, token distribution, and liquidity management across multiple blockchains without requiring coding skills.
 
 ### Architecture
 
@@ -23,12 +23,12 @@ The DxSale family includes token factories (DxStandardToken), presale management
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/16 (0.0%)
-- Verified + Unaudited implementations: 10
+- Verified implementations audited: 0/15 (0.0%)
+- Verified + Unaudited implementations: 9
 - Verified by bytecode match: 6
 - Unverified implementations: 337
-- Unique implementations: 353
-- Raw deployments: 389
+- Unique implementations: 352
+- Raw deployments: 388
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,7 +46,7 @@ The DxSale family includes token factories (DxStandardToken), presale management
 
 - None
 
-### ⚠️ Verified + Unaudited (10)
+### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -55,7 +55,6 @@ The DxSale family includes token factories (DxStandardToken), presale management
 | DxLockLPDep | unknown | polygon | 2 deployments: gnosis `0x832ccf...620d37`; polygon [`0x6fcc2e...687666`](./contracts/polygon-137/0x6fcc2e4efb4e05ddfc2154abe209356d5a687666/) | ⚠️ Unaudited |
 | DxNativeDividendToken | token | avalanche | 2 deployments: avalanche [`0x4bf72a...4e3604`](./contracts/avalanche-43114/0x4bf72a0d761bc31dca243ca5ee572dedf34e3604/); avalanche `0xe1cd76...c74ed5` | ⚠️ Unaudited |
 | DxStandardToken | token | ethereum | [`0x1d37fb...71589e`](./contracts/ethereum-1/0x1d37fb68b2679200844b57b2cf7a17260271589e/) | ⚠️ Unaudited |
-| GGGTOKEN | token | bsc | [`0x259000...206e77`](./contracts/bsc-56/0x25900017b3e7b6190f76451f5c89d01553206e77/) | ⚠️ Unaudited |
 | hashFinder | unknown | arbitrum | [`0x2ff131...16d20c`](./contracts/arbitrum-42161/0x2ff131d69698e56f073ec60ef00274ebe216d20c/) | ⚠️ Unaudited |
 | RouterDeployer | adapter | avalanche | 2 deployments: avalanche [`0xa5da59...7cd7f9`](./contracts/avalanche-43114/0xa5da59f5126ee48ffd44e184c489ef8b2e7cd7f9/); avalanche `0xef8b07...ad2e25` | ⚠️ Unaudited |
 | RouterInterface | adapter | avalanche | [`0xd50715...af47ff`](./contracts/avalanche-43114/0xd5071536d1a2aff6db130917b4c1fa7b8daf47ff/) | ⚠️ Unaudited |
@@ -440,7 +439,6 @@ Verified + unaudited native implementations ranked by TVL:
 | polygon | [`0x6fcc2e...687666`](./contracts/polygon-137/0x6fcc2e4efb4e05ddfc2154abe209356d5a687666/) | DxLockLPDep | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x4bf72a...4e3604`](./contracts/avalanche-43114/0x4bf72a0d761bc31dca243ca5ee572dedf34e3604/) | DxNativeDividendToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1d37fb...71589e`](./contracts/ethereum-1/0x1d37fb68b2679200844b57b2cf7a17260271589e/) | DxStandardToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x259000...206e77`](./contracts/bsc-56/0x25900017b3e7b6190f76451f5c89d01553206e77/) | GGGTOKEN | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2ff131...16d20c`](./contracts/arbitrum-42161/0x2ff131d69698e56f073ec60ef00274ebe216d20c/) | hashFinder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x10f485...817b95`](./contracts/ethereum-1/0x10f485b855be8e7d377fbe60e5d5676d88817b95/) | PresaleOwnerFinalize | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xa5da59...7cd7f9`](./contracts/avalanche-43114/0xa5da59f5126ee48ffd44e184c489ef8b2e7cd7f9/) | RouterDeployer | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -452,7 +450,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 154 |
+| native | 153 |
 | upstream | 0 |
 | standard_library | 1 |
 | needs_review | 198 |

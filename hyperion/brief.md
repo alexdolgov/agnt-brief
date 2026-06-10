@@ -5,21 +5,22 @@
 - Project: Hyperion (`hyperion`)
 - Website: [https://hyperion.xyz/](https://hyperion.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-05-22T15:43:34.708Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:06.065Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $20,984,714.04
+- DeFi Llama TVL: $21,073,597.39
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Hyperion is a decentralized exchange (DEX) protocol enabling trustless token swaps and liquidity provision. It facilitates peer-to-peer trading through automated market-making mechanisms.
-
-### Architecture
-
-No product families or contracts are defined in the provided metadata, so no structural relationships can be described.
+Hyperion is an Aptos-native, fully on-chain hybrid orderbook-AMM decentralized exchange (DEX). In addition to its core trading and liquidity functionality, audited Hyperion components include OFT, Token, LaunchPad, and Vaults scopes whose contract inventories have not yet been extracted or modeled.
 
 ## Audit Coverage Summary
 
@@ -33,7 +34,7 @@ No product families or contracts are defined in the provided metadata, so no str
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-07 (fresh)
-- Staleness: 2 fresh, 0 aging, 0 stale, 3 unknown
+- Staleness: 1 fresh, 1 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -76,7 +77,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [[Report Link]()](https://github.com/Hyperionxyz/audits/blob/main/ExVul%20Smart%20Contract%20Audit%20Report%20for%20Hyperionxyz%20Vaults.pdf) | ExVul | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Hyperion OFT Audit Report-2025-7-8.pdf](https://github.com/Hyperionxyz/audits/blob/main/Hyperion%20OFT%20Audit%20Report-2025-7-8.pdf) | Unknown | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
 | [Hyperion Token Audit Report.pdf](https://github.com/Hyperionxyz/audits/blob/main/Hyperion%20Token%20Audit%20Report.pdf) | Unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [LaunchPad Audit Report-2025-6-18.pdf](https://github.com/Hyperionxyz/audits/blob/main/LaunchPad%20Audit%20Report-2025-6-18.pdf) | Unknown | Audit | 2025-06 | fresh | Direct | n/a | 0 | n/a |
+| [LaunchPad Audit Report-2025-6-18.pdf](https://github.com/Hyperionxyz/audits/blob/main/LaunchPad%20Audit%20Report-2025-6-18.pdf) | Unknown | Audit | 2025-06 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 

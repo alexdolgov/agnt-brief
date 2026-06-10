@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "gondi",
-  "generated_at": "2026-05-24T23:46:19.688Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:59:04.372Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "gondi",
     "tier": 1,
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 33,
-    "total_addresses": 87,
-    "unique_implementations": 33,
-    "total_deployments": 87,
+    "total_contracts": 30,
+    "total_addresses": 84,
+    "unique_implementations": 30,
+    "total_deployments": 84,
     "audited_contracts": 3,
-    "unaudited_contracts": 15,
+    "unaudited_contracts": 12,
     "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 15,
+    "contracts_verified_unaudited": 12,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 15,
-    "coverage_pct": 16.7,
+    "coverage_pct": 20,
     "total_audits": 2,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 1401263,
+    "dl_tvl_usd": 1367523,
     "tvl_usd": 35.592940190274554,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -69,9 +69,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Gondi is an NFT lending protocol that enables borrowers to obtain loans against their NFTs and lenders to earn yield by providing liquidity. It supports multiple loan types, including single and multi-source loans, with liquidation mechanisms to protect lenders.",
+    "project_purpose": "Gondi is an NFT liquidity marketplace and lending protocol that enables users to borrow, lend, refinance loans, and sell or repay collateralized NFTs.",
     "relationship_narrative": "The Gondi family shares governance contracts like AddressManager and AddressMethodManager across its components. Core loan logic in MultiSourceLoan and UserVault relies on validators (RangeValidator, MultiAddressValidator) and liquidators (AuctionLoanLiquidator, AuctionWithBuyoutLoanLiquidator) for risk management, while PurchaseBundler and UniswapV3TwapQuoter support peripheral operations.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 30,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -385,37 +390,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x00000000000000447e69651d841bd8d104bed493",
-      "name": "DelegateRegistry",
-      "role": "registry",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Gondi",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x00000000000000447e69651d841bd8d104bed493",
-      "impl_name": "DelegateRegistry",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x00000000000000447e69651d841bd8d104bed493",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -1039,68 +1013,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xfaaff69da43b8195e5b0945c4fea4476e4264157",
-      "name": "SampleCollection",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Gondi",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SampleCollection",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xfaaff69da43b8195e5b0945c4fea4476e4264157",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x7d60c8350267ff6d42741177056051d897cbb40e",
-      "name": "SampleToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Gondi",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SampleToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x7d60c8350267ff6d42741177056051d897cbb40e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xcad3b037b56cbd2b4cae2b35b878894e541af68a",
       "name": "UniswapV3TwapQuoter",
       "role": "periphery",
@@ -1654,7 +1566,7 @@
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 16.7,
+      "coverage_pct": 20,
       "latest_audit": "2026-02"
     }
   ],
@@ -1728,33 +1640,13 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xfaaff69da43b8195e5b0945c4fea4476e4264157",
-      "name": "SampleCollection",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x7d60c8350267ff6d42741177056051d897cbb40e",
-      "name": "SampleToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 23,
+    "native": 21,
     "upstream": 1,
     "standard_library": 0,
-    "needs_review": 9
+    "needs_review": 8
   },
   "scope_matching_notes": {
     "match_method_counts": {

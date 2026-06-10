@@ -5,8 +5,8 @@
 - Project: Mansory (`mansory`)
 - Website: [https://www.mansory.com/](https://www.mansory.com/)
 - Lifecycle: active (Tier 0, 80.9% below peak)
-- Generated: 2026-05-31T09:48:23.443Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:07.161Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 5 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $6,286,314.60
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Mansory is a Real World Asset (RWA) protocol on BSC that tokenizes assets using LayerZero's Omnichain Fungible Token (OFT) standard, enabling cross-chain transferability. It also includes lottery and NFT staking mechanisms for user engagement and rewards.
+Mansory / MNSRY should be described as a Mansory-branded utility or RWA-style token associated with luxury automotive benefits, VIP events, NFT-authenticated assets, and lifestyle rewards, consistent with the current DefiLlama framing and homepage evidence. The public homepage does not substantiate broad protocol-level claims that Mansory is primarily a BSC asset-tokenization, lottery, or staking protocol. Separately, the observed BSC contract surface includes components named MyOFTUpgradeable, IpfsProofLotteryUpgradeable, NftTierStaking variants, and URI-builder/helper bytecode, indicating OFT, lottery, staking, and metadata-related smart-contract components where supported by contract names. The project should not be presented as BSC-only: DefiLlama tracks Mansory on both Binance/BSC and Solana, and any BSC-only contract review should explicitly disclose that Solana coverage is excluded.
 
 ### Architecture
 
@@ -51,8 +51,8 @@ All contracts are deployed by the same deployer and share the TransparentUpgrade
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | NftTierStakingUpgradeable | token | bsc | 4 deployments: bsc [`0x2bd867...2a54c2`](./contracts/bsc-56/0x2bd86707412fadc3b453558ac32013e7d82a54c2/); bsc `0x88fa77...31b7a8`; bsc `0xa033ab...b7bde3`; bsc `0xd6dd93...039f2a` | ⚠️ Unaudited |
-| IpfsProofLotteryUpgradeable | unknown | bsc | 2 deployments: bsc [`0xbc7dee...462d38`](./contracts/bsc-56/0xbc7dee0f48ca7aa4e9b7603329b0fc4b5e462d38/); bsc `0xda7ac0...bbac68` | ⚠️ Unaudited |
-| MyOFTUpgradeable | unknown | bsc | 2 deployments: bsc [`0x0fcfe3...8f9255`](./contracts/bsc-56/0x0fcfe33b46e5b21e5e96b722d4c85510198f9255/); bsc `0x1ed605...8f1a0e` | ⚠️ Unaudited |
+| IpfsProofLotteryUpgradeable | proxy | bsc | 2 deployments: bsc [`0xbc7dee...462d38`](./contracts/bsc-56/0xbc7dee0f48ca7aa4e9b7603329b0fc4b5e462d38/); bsc `0xda7ac0...bbac68` | ⚠️ Unaudited |
+| MyOFTUpgradeable | proxy | bsc | 2 deployments: bsc [`0x0fcfe3...8f9255`](./contracts/bsc-56/0x0fcfe33b46e5b21e5e96b722d4c85510198f9255/); bsc `0x1ed605...8f1a0e` | ⚠️ Unaudited |
 | ProxyAdmin | governance | bsc | 2 deployments: bsc [`0x023820...85d489`](./contracts/bsc-56/0x0238200679ce049f2dc3c335ae817d594885d489/); bsc `0xdf07c9...56b0e8` | ⚠️ Unaudited |
 | TierStakingTokenUriBuilder | token | bsc | 2 deployments: bsc [`0x88c5b9...f626e7`](./contracts/bsc-56/0x88c5b935c63a047898dbbebc6af294cc7df626e7/); bsc `0xc5bd1f...6e8ddc` | ⚠️ Unaudited |
 

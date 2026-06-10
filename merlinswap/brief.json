@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "merlinswap",
-  "generated_at": "2026-05-31T09:56:01.458Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:07.468Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "merlinswap",
     "tier": 0,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "MerlinSwap is a decentralized exchange (DEX) protocol on the Merlin chain, enabling users to swap tokens and provide liquidity through automated market-making pools.",
-    "relationship_narrative": "The two contracts likely represent the core AMM pool and a factory or router, sharing infrastructure for liquidity management and trade execution.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

@@ -5,8 +5,8 @@
 - Project: Polygon zkEVM Bridge (`polygon-zkevm-bridge`)
 - Website: [https://portal.polygon.technology/bridge](https://portal.polygon.technology/bridge)
 - Lifecycle: active (Tier 0, 82.6% below peak)
-- Generated: 2026-05-31T14:54:04.155Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:59:09.351Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $77,973,709.76
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Polygon zkEVM Bridge is the canonical bridge for transferring assets between Ethereum and Polygon zkEVM. On Ethereum, the bridge is exposed through a TransparentUpgradeableProxy that delegates to native Polygon/AggLayer bridge implementation logic for custody, deposits, and withdrawals; the logical bridge implementation should not be treated as OpenZeppelin standard-library code.
 
 ## Audit Coverage Summary
 
@@ -51,7 +51,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| AgglayerBridge | operational_periphery | ethereum | [`0x2a3dd3...ca2ede`](./contracts/ethereum-1/0x2a3dd3eb832af982ec71669e178424b10dca2ede/) | ⚠️ Unaudited |
+| AgglayerBridge | bridge_template | ethereum | [`0x2a3dd3...ca2ede`](./contracts/ethereum-1/0x2a3dd3eb832af982ec71669e178424b10dca2ede/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

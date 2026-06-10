@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "tender-finance",
-  "generated_at": "2026-05-25T01:18:09.990Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:59:17.342Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "tender-finance",
     "tier": 0,
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1292330.57457,
-    "tvl_usd": 1292330.57457,
+    "dl_tvl_usd": 1287317.93271,
+    "tvl_usd": 1287317.93271,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Tender Finance is a lending protocol on Arbitrum One that allows users to supply and borrow assets. It appears to be a fork of Compound, providing algorithmic money markets.",
-    "relationship_narrative": "The protocol consists of a single product family with one known contract, TND, which likely serves as the governance or utility token for the lending market.",
+    "project_purpose": "Tender Finance is a live lending and borrowing protocol on Arbitrum One, plausibly Compound-style, with TVL-bearing money market infrastructure. The currently captured contract inventory only includes the TND token and should not be treated as representing the full protocol surface; the lending controller/comptroller, market tokens, oracle, interest-rate model, admin/governance, proxy, and related core contracts still need to be identified and scoped.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

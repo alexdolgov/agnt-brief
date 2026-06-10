@@ -5,8 +5,8 @@
 - Project: MugenFinance (`mugenfinance`)
 - Website: [https://www.mugenfinance.com](https://www.mugenfinance.com)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:01:19.049Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:07.820Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum
 - Contract surface: 12 unique implementations (19 raw deployments)
 - DeFi Llama TVL: $3,354,846.66
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-MugenFinance is a yield aggregator on Arbitrum One that optimizes returns for users by automatically compounding rewards. It uses a native token (Mugen) and a staked version (xMugen) to facilitate yield strategies and governance.
+MugenFinance is a DeFi project tracked by DefiLlama on Arbitrum One and associated with the on-chain Mugen token contract. The current mugenfinance.com homepage appears stale, mismatched, or repurposed and should not be used as live protocol evidence. Protocol details should be verified against DefiLlama, archived/project documentation, and contract source with manual review; claims about governance and auto-compounding should not be included unless corroborated.
 
 ### Architecture
 

@@ -5,17 +5,17 @@
 - Project: PumpSpace (`pumpspace`)
 - Website: [https://pumpspace.io/](https://pumpspace.io/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-25T15:41:41.447Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:59:09.429Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche
-- Contract surface: 667 unique implementations (787 raw deployments)
-- DeFi Llama TVL: $4,025,207.00
+- Contract surface: 666 unique implementations (786 raw deployments)
+- DeFi Llama TVL: $3,867,225.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-PumpSpace is a decentralized exchange (DEX) protocol on Avalanche that facilitates token swaps and liquidity provision. It appears to support automated market making and yield farming, with multiple product versions indicating iterative upgrades.
+PumpSpace is an Avalanche-based memecoin and community-token liquidity platform supporting token swaps, liquidity provision, PumpSpace V2 and V3/Trident AMM-style markets, multi-token farms, and yield optimization. The live TVL-bearing product family should be identified as PumpSpace V2 where applicable; PumpSpace V3 should be treated as present in metadata but not assumed to have current DefiLlama TVL without independent supporting evidence.
 
 ### Architecture
 
@@ -23,24 +23,24 @@ PumpSpace V3 appears to be an evolution of the original PumpSpace, sharing the s
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/7 (28.6%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 2/6 (33.3%)
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
 - Unverified implementations: 660
-- Unique implementations: 667
-- Raw deployments: 787
-- Audits discovered: 4
+- Unique implementations: 666
+- Raw deployments: 786
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-01 (aging)
-- Staleness: 0 fresh, 3 aging, 0 stale, 1 unknown
+- Staleness: 0 fresh, 3 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Cyberscope | Tier 2 | 2 | 28.6% | 2025-01 |
+| Cyberscope | Tier 2 | 2 | 33.3% | 2025-01 |
 
 ## Contract Surface
 
@@ -51,11 +51,10 @@ PumpSpace V3 appears to be an evolution of the original PumpSpace, sharing the s
 | DexRouter | adapter | avalanche | [`0xe8a55f...a59946`](./contracts/avalanche-43114/0xe8a55f6b4ee94d2dbe02e724bc23228e15a59946/) | ✅ Audited |
 | TransparentUpgradeableProxy | proxy | avalanche | 83 deployments: avalanche [`0x0091eb...efe2e8`](./contracts/avalanche-43114/0x0091eb7bd9b40d258695335bebf07f4d31efe2e8/); avalanche `0x03be74...f92f39`; avalanche `0x0565d2...b95093`; avalanche `0x0567ea...2e61d9`; avalanche `0x05c36f...14f9a9`; avalanche `0x0655fa...c46f6a`; avalanche `0x08ea82...18a999`; avalanche `0x0ceca8...f97e7c`; avalanche `0x170af5...fa0cf1`; avalanche `0x1bc3b0...cef890`; avalanche `0x1c654e...19128d`; avalanche `0x1cb5af...2f7762`; avalanche `0x1cf028...f2d30d`; avalanche `0x20d6cc...25471f`; avalanche `0x264f4f...48966d`; avalanche `0x2b0771...f95ac0`; avalanche `0x2b20f3...3c6a78`; avalanche `0x33ad5c...40a190`; avalanche `0x33f436...74ef65`; avalanche `0x36206c...9b38c8`; avalanche `0x377366...12b342`; avalanche `0x38554e...dbb0dc`; avalanche `0x388983...cd0aca`; avalanche `0x3d04c0...a2fa41`; avalanche `0x40b937...1e6e4e`; avalanche `0x4731bc...711d8d`; avalanche `0x53cb24...bc88d7`; avalanche `0x53ee88...b640ba`; avalanche `0x558ff3...3dca38`; avalanche `0x567a6d...c37205`; avalanche `0x56d6cd...2128dd`; avalanche `0x5f4038...e7798e`; avalanche `0x63eadf...7102c7`; avalanche `0x65ba62...cef275`; avalanche `0x68e315...163136`; avalanche `0x6ca89f...cb9fcf`; avalanche `0x6f0885...7811bf`; avalanche `0x7023be...77f0d6`; avalanche `0x703079...09fc31`; avalanche `0x72a992...514018`; avalanche `0x77c8df...4f474f`; avalanche `0x7c12fc...4d046c`; avalanche `0x83fff7...021a73`; avalanche `0x84c931...284c97`; avalanche `0x89aee1...f05dad`; avalanche `0x8a23e3...e321bf`; avalanche `0x8f164d...76be5c`; avalanche `0x9070fb...55e55e`; avalanche `0x95207b...f550cf`; avalanche `0x9c6bbe...7e1b2f`; avalanche `0xa84304...0547ba`; avalanche `0xa90f84...8078e8`; avalanche `0xaf52c1...838de2`; avalanche `0xb10d16...7e5866`; avalanche `0xb53486...17fa72`; avalanche `0xb56ef6...660c48`; avalanche `0xb6e2f9...ebfda8`; avalanche `0xb71a01...1e1f91`; avalanche `0xb8c9d8...849657`; avalanche `0xbba343...960acf`; avalanche `0xbce94b...050961`; avalanche `0xc13e4d...5de4b3`; avalanche `0xc1ecba...146bfd`; avalanche `0xc5fd93...7174bd`; avalanche `0xc7a901...8aa357`; avalanche `0xc91c9f...d3a04e`; avalanche `0xd4ed16...5332ce`; avalanche `0xd6d1dc...0dd368`; avalanche `0xd6f5fe...2ddfb0`; avalanche `0xdbf831...93a7bf`; avalanche `0xdcf100...587dfc`; avalanche `0xdf724b...34e3e5`; avalanche `0xe64bcb...201a27`; avalanche `0xe749c1...037ced`; avalanche `0xe8288d...f7950a`; avalanche `0xe88ab8...b9b0b1`; avalanche `0xebe319...c0e78f`; avalanche `0xee27a3...598068`; avalanche `0xee9d94...6fca06`; avalanche `0xfbff2e...f86d30`; avalanche `0xfc320c...8276fd`; avalanche `0xfddb02...90f7a4`; avalanche `0xfea23d...e2dc52` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| AutoFarmV2_CrossChain | unknown | avalanche | [`0x864a0b...23f213`](./contracts/avalanche-43114/0x864a0b7f8466247a0e44558d29cdc37d4623f213/) | ⚠️ Unaudited |
 | ERC1967Proxy | proxy | avalanche | 38 deployments: avalanche [`0x08b61d...ececb1`](./contracts/avalanche-43114/0x08b61d8879602e4f38739bba2505b609e1ececb1/); avalanche `0x1d2a2e...a4d094`; avalanche `0x273630...19501c`; avalanche `0x2ab55a...d3a0e9`; avalanche `0x2d0c9b...b124bb`; avalanche `0x2ff702...d44e62`; avalanche `0x31b5e9...02e832`; avalanche `0x36494c...97066f`; avalanche `0x3bd66a...19cd29`; avalanche `0x3de4f7...3f29cc`; avalanche `0x511d2f...2a656d`; avalanche `0x55cee3...2cf36a`; avalanche `0x63e679...617aac`; avalanche `0x6cdccf...a2a647`; avalanche `0x718531...eaa888`; avalanche `0x760ba3...57243e`; avalanche `0x767987...a106e9`; avalanche `0x84952d...f29ff3`; avalanche `0x86b51c...e53dd3`; avalanche `0x87c0fc...203067`; avalanche `0x8e89cc...6ec4a1`; avalanche `0x90ba8d...49205b`; avalanche `0x91d6a2...8262e5`; avalanche `0x98a266...8d3a06`; avalanche `0x9d3641...cc49f8`; avalanche `0xa0d092...82682f`; avalanche `0xa56957...7266d1`; avalanche `0xaf82f0...89954f`; avalanche `0xb9bb8f...a32feb`; avalanche `0xc1a744...229af4`; avalanche `0xc7ea0e...4cf887`; avalanche `0xc8d07d...6d6a6d`; avalanche `0xd0dc4e...79c049`; avalanche `0xd5eeb0...7358e9`; avalanche `0xe2245a...2f1e92`; avalanche `0xf8ba27...06c4e0`; avalanche `0xfa7bf5...fe8e5e`; avalanche `0xfc14c5...f00d01` | ⚠️ Unaudited |
 | ProxyAdmin | governance | avalanche | 2 deployments: avalanche [`0x2116ac...82ce66`](./contracts/avalanche-43114/0x2116ac862bc0a5b7b01cf1dd92f6fe127d82ce66/); avalanche `0xdce8c2...d00214` | ⚠️ Unaudited |
 | PumpSpecialRouter | adapter | avalanche | [`0x4ec533...8390e2`](./contracts/avalanche-43114/0x4ec53317186098956956ae9a7092853e218390e2/) | ⚠️ Unaudited |
@@ -744,7 +743,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://www.cyberscope.io/audits/pumpspace?assessmentIndex=1https://github.com/cyberscope-io/audits/blob/main/pumpspace/dexAudit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [dexAudit.pdf](https://github.com/cyberscope-io/audits/blob/main/pumpspace/dexAudit.pdf) | Cyberscope | Audit | 2025-01 | aging | Direct | contract_name | 1 | high |
 | [DexAudit](https://www.cyberscope.io/audits/pumpspace?assessmentIndex=1) | Cyberscope | Audit | 2025-01 | aging | Direct | contract_name | 83 | high |
 | [audit.pdf (also discovered via alternate URL)](https://github.com/cyberscope-io/audits/blob/main/pumpspace/audit.pdf) | unknown | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
@@ -755,7 +753,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| avalanche | [`0x864a0b...23f213`](./contracts/avalanche-43114/0x864a0b7f8466247a0e44558d29cdc37d4623f213/) | AutoFarmV2_CrossChain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x4ec533...8390e2`](./contracts/avalanche-43114/0x4ec53317186098956956ae9a7092853e218390e2/) | PumpSpecialRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x27d8d5...a553ba`](./contracts/avalanche-43114/0x27d8d5d536581daaf743abaf339f4658e9a553ba/) | PumpSplitRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -763,7 +760,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 3 |
 | upstream | 0 |
 | standard_library | 3 |
 | needs_review | 660 |
@@ -772,14 +769,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
 - Match method counts: extraction_exact=84
 
 Zero-match audit list:
 
-- [2665] DL audit link
 - [2668] audit.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

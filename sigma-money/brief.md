@@ -5,10 +5,10 @@
 - Project: Sigma Money (`sigma-money`)
 - Website: [https://sigma.money](https://sigma.money)
 - Lifecycle: active (Tier 0, 82.6% below peak)
-- Generated: 2026-05-31T10:35:20.993Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.155Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
-- Contract surface: 231 unique implementations (1393 raw deployments)
+- Contract surface: 231 unique implementations (1379 raw deployments)
 - DeFi Llama TVL: $3,089,795.81
 - On-chain TVL (included contracts): $593,368,835.44
 - TVL by chain: Bsc $593,368,835.44
@@ -20,7 +20,7 @@
 - Verified by bytecode match: 0
 - Unverified implementations: 43
 - Unique implementations: 231
-- Raw deployments: 1393
+- Raw deployments: 1379
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $593,368,835.44
@@ -123,7 +123,7 @@
 | Minter | operational_periphery | bsc | [`0xa12663...55ee3d`](./contracts/bsc-56/0xa1266373dd701fc179f60eafbc3ae76cf355ee3d/) | ⚠️ Unaudited |
 | MockERC20 | token | bsc | [`0x13393f...059bb4`](./contracts/bsc-56/0x13393ff6a9db93b3c3383f1be2cb4ba9a8059bb4/) | ⚠️ Unaudited |
 | MockGauge | operational_periphery | bsc | 6 deployments: bsc [`0x489981...d9e513`](./contracts/bsc-56/0x48998147af0c904efa9fcabeec5737fe88d9e513/); bsc `0x501240...dd53d2`; bsc `0x71fbec...8d7b41`; bsc `0xb03e82...684ce0`; bsc `0xc8dd8a...2a2f7f`; bsc `0xf08d6c...384c0f` | ⚠️ Unaudited |
-| Moolah | unknown | bsc | 15 deployments: bsc [`0x0af5cd...6bc34f`](./contracts/bsc-56/0x0af5cd9555bc52c34a5f7b20042109d0136bc34f/); bsc `0x0cc33d...16d779`; bsc `0x25a0e4...f9e473`; bsc `0x316039...95e316`; bsc `0x4b1ec9...3510b9`; bsc `0x627527...294be9`; bsc `0x6660a8...08e12e`; bsc `0x75c42e...059686`; bsc `0x7ee9ed...2b13b6`; bsc `0x8f73b6...8e5d8c`; bsc `0x932158...3bb79a`; bsc `0xa621ef...f14dca`; bsc `0xd3b6aa...53004a`; bsc `0xdb33cc...c20e2f`; bsc `0xf97ce1...0d8568` | ⚠️ Unaudited |
+| Moolah | unknown | bsc | [`0x8f73b6...8e5d8c`](./contracts/bsc-56/0x8f73b65b4caaf64fba2af91cc5d4a2a1318e5d8c/) | ⚠️ Unaudited |
 | MoolahVaultFactory | registry | bsc | 11 deployments: bsc [`0x0d1fac...b9fb52`](./contracts/bsc-56/0x0d1fac46e766aa64cf4a23c07fbb966937b9fb52/); bsc `0x2a0cb6...1d9671`; bsc `0x3984e9...28a443`; bsc `0x49fab7...7d5bdf`; bsc `0x54ec19...8e2728`; bsc `0x55a937...8cf5fc`; bsc `0x79367b...415c28`; bsc `0x7cc20a...596569`; bsc `0xa505ac...4af80f`; bsc `0xcd13a4...cb91ac`; bsc `0xdcae13...535134` | ⚠️ Unaudited |
 | MultiPathConverter | unknown | bsc | [`0xf44ef3...3179a3`](./contracts/bsc-56/0xf44ef3dd983d4a8612c7176eb71243ac113179a3/) | ⚠️ Unaudited |
 | mXRPPriceFeed | operational_periphery | bsc | 2 deployments: bsc [`0x0999ca...3f84bf`](./contracts/bsc-56/0x0999ca2e63fbb2923bc4c3853b37e371b33f84bf/); bsc `0xcec9dd...6d2a51` | ⚠️ Unaudited |

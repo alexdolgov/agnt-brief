@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hop-protocol",
-  "generated_at": "2026-05-24T03:45:40.193Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:04.663Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "hop-protocol",
@@ -43,9 +43,9 @@
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 301,
     "coverage_pct": 10.9,
-    "total_audits": 4,
-    "scoreable_audits": 4,
-    "dl_tvl_usd": 3618952.3865099996,
+    "total_audits": 2,
+    "scoreable_audits": 2,
+    "dl_tvl_usd": 3580514.0896699997,
     "tvl_usd": 258692841.41606358,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -63,23 +63,26 @@
       "optimism",
       "polygon"
     ],
-    "tier1_coverage_pct": 10.9,
-    "tier1_auditors": [
-      "Trail of Bits"
-    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
     "latest_audit_date": "2021-05",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 4,
+      "stale": 2,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Hop Protocol is a cross-chain bridge that enables fast, trustless transfers of tokens between Ethereum and Layer 2 networks (Arbitrum, Optimism, Polygon, Gnosis) using a network of bonded validators and automated market makers to provide liquidity and swap assets across chains.",
+    "project_purpose": "Hop Protocol is a cross-chain bridge that enables fast transfers of tokens between Ethereum and supported Layer 2 networks using bonders/liquidity providers and AMM pools to provide liquidity and swap assets across chains.",
     "relationship_narrative": "The Cross-Chain Bridge family relies on the Liquidity Pools family to facilitate swaps between canonical tokens and Hop Bridge Tokens during transfers. Both families share the HopBridgeToken contract, which is minted and burned by the bridge contracts and traded in the AMM pools.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 402,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1459,7 +1462,6 @@
         }
       ],
       "audits_covering": [
-        "audit-2721",
         "audit-2723"
       ],
       "is_audited": true,
@@ -3069,8 +3071,6 @@
         }
       ],
       "audits_covering": [
-        "audit-2720",
-        "audit-2721",
         "audit-2722",
         "audit-2723"
       ],
@@ -3382,8 +3382,6 @@
         }
       ],
       "audits_covering": [
-        "audit-2720",
-        "audit-2721",
         "audit-2722",
         "audit-2723"
       ],
@@ -3418,8 +3416,6 @@
         }
       ],
       "audits_covering": [
-        "audit-2720",
-        "audit-2721",
         "audit-2722",
         "audit-2723"
       ],
@@ -3736,8 +3732,6 @@
         }
       ],
       "audits_covering": [
-        "audit-2720",
-        "audit-2721",
         "audit-2722",
         "audit-2723"
       ],
@@ -3853,7 +3847,6 @@
         }
       ],
       "audits_covering": [
-        "audit-2721",
         "audit-2723"
       ],
       "is_audited": true,
@@ -3918,8 +3911,6 @@
         }
       ],
       "audits_covering": [
-        "audit-2720",
-        "audit-2721",
         "audit-2722",
         "audit-2723"
       ],
@@ -4035,8 +4026,6 @@
         }
       ],
       "audits_covering": [
-        "audit-2720",
-        "audit-2721",
         "audit-2722",
         "audit-2723"
       ],
@@ -5241,8 +5230,6 @@
         }
       ],
       "audits_covering": [
-        "audit-2720",
-        "audit-2721",
         "audit-2722",
         "audit-2723"
       ],
@@ -6960,7 +6947,6 @@
         }
       ],
       "audits_covering": [
-        "audit-2720",
         "audit-2722"
       ],
       "is_audited": true,
@@ -16790,8 +16776,6 @@
         }
       ],
       "audits_covering": [
-        "audit-2720",
-        "audit-2721",
         "audit-2722",
         "audit-2723"
       ],
@@ -16865,97 +16849,6 @@
     }
   ],
   "audits": [
-    {
-      "audit_id": 2720,
-      "audit_key": "audit-2720",
-      "report_name": "Moreover, Hop has undergone audits by [Solidified]() and [Monoceros Alpha](https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/042021_MonocerosAlpha.pdf). A third audit by Trail of Bits is planned for September.\\",
-      "report_url": "https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/052021_Solidified.pdf",
-      "auditor": "Trail of Bits",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2021-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Accounting",
-        "Bridge",
-        "HopBridgeToken",
-        "IArbSys",
-        "IBridge",
-        "IGlobalInbox",
-        "IInbox",
-        "IMessageProvider",
-        "IMessengerWrapper",
-        "IOutbox",
-        "IWETH",
-        "L1_Bridge",
-        "L1_ERC20_Bridge",
-        "L1_ETH_Bridge",
-        "L2_AmmWrapper",
-        "L2_Bridge",
-        "L2_OptimismBridge",
-        "L2_PolygonBridge",
-        "L2_PolygonMessengerProxy",
-        "L2_UniswapWrapper",
-        "L2_XDaiBridge",
-        "MerkleUtils",
-        "MessengerWrapper",
-        "OptimismMessengerWrapper",
-        "PolygonWrapper",
-        "Timelock",
-        "XDaiMessengerWrapper",
-        "iArbitraryMessageBridge",
-        "iOVM_BaseCrossDomainMessenger",
-        "iOVM_L1CrossDomainMessenger",
-        "iOVM_L2CrossDomainMessenger"
-      ],
-      "matched_contracts": 129,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2721,
-      "audit_key": "audit-2721",
-      "report_name": "Moreover, Hop has undergone audits by [Solidified](https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/052021_Solidified.pdf) and [Monoceros Alpha](). A third audit by Trail of Bits is planned for September.\\",
-      "report_url": "https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/042021_MonocerosAlpha.pdf",
-      "auditor": "Trail of Bits",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2021-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Accounting",
-        "ArbitrumMessengerWrapper",
-        "Bridge",
-        "HopBridgeToken",
-        "L1_Bridge",
-        "L1_ERC20_Bridge",
-        "L1_ETH_Bridge",
-        "L2_AmmWrapper",
-        "L2_ArbitrumBridge",
-        "L2_Bridge",
-        "L2_OptimismBridge",
-        "L2_UniswapWrapper",
-        "L2_XDaiBridge",
-        "MessengerWrapper",
-        "OptimismMessengerWrapper",
-        "XDaiMessengerWrapper"
-      ],
-      "matched_contracts": 174,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
     {
       "audit_id": 2722,
       "audit_key": "audit-2722",
@@ -17049,13 +16942,6 @@
     }
   ],
   "auditor_coverage": [
-    {
-      "auditor": "Trail of Bits",
-      "tier": 1,
-      "contracts_covered": 11,
-      "coverage_pct": 10.9,
-      "latest_audit": "2021-05"
-    },
     {
       "auditor": "MonocerosAlpha",
       "tier": 2,
@@ -17621,10 +17507,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 606
+      "extraction_exact": 303
     },
     "extraction_confidence_counts": {
-      "high": 4
+      "high": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "fomo3d",
-  "generated_at": "2026-05-31T08:04:37.306Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.048Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "fomo3d",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Fomo3D is a gamified lottery and investment protocol where players buy keys to earn dividends from subsequent purchases, with the last buyer winning a jackpot if no one buys for a set time.",
+    "project_purpose": "Fomo3D is a gamified lottery and investment protocol centered on the FoMo3Dlong and FoMo3DSoon game variants, where players buy keys to earn dividends from subsequent purchases and the last buyer can win a jackpot if no one buys before the timer expires. The broader contract surface also includes associated support or adjacent contracts such as Divies deployments and other Fomo3D-related contracts/libraries; shared infrastructure or implementation equivalence should only be asserted where verified by call relationships or exact bytecode/source matching.",
     "relationship_narrative": "The two contracts, FoMo3Dlong and FoMo3DSoon, are variants of the same game logic deployed by the same deployer, likely representing different round lengths or parameters, and share no explicit infrastructure beyond their common deployer.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 23,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -5,8 +5,8 @@
 - Project: Noon (`noon`)
 - Website: [https://app.noon.capital/get?referralCode=f6f6df83-3c3a-479f-950a-d6f24907b4fa](https://app.noon.capital/get?referralCode=f6f6df83-3c3a-479f-950a-d6f24907b4fa)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-26T19:48:13.539Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:08.718Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, hyperliquid, zksync-era
 - Contract surface: 40 unique implementations (83 raw deployments)
 - DeFi Llama TVL: $30,422,226.01
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Noon is a yield-bearing stablecoin protocol that issues USN, a stablecoin backed by staked assets, and NOON, a governance token. It integrates cross-chain functionality via Hyperlane and uses oracles for price feeds.
+Noon is a yield-generating stablecoin and yield optimization protocol for USN. The protocol allocates collateral into delta-neutral strategies and distributes raw yield and governance-token rewards. NOON is its governance token, and the protocol integrates cross-chain functionality via Hyperlane and uses oracles for price feeds.
 
 ### Architecture
 

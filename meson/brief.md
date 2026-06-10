@@ -5,17 +5,17 @@
 - Project: Meson (`meson`)
 - Website: [https://meson.fi/home](https://meson.fi/home)
 - Lifecycle: active (Tier 0, 93.9% below peak)
-- Generated: 2026-05-25T05:11:04.174Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:07.476Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: blast, merlin
 - Contract surface: 129 unique implementations (129 raw deployments)
-- DeFi Llama TVL: $1,144,238.59
+- DeFi Llama TVL: $1,097,461.24
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Meson is a cross-chain bridge protocol that enables fast, low-cost token transfers between different blockchains using a network of liquidity providers and atomic swaps. It supports stablecoins and other assets across multiple chains like Blast and Merlin.
+Meson is a cross-chain connectivity and swap protocol supporting crypto-to-crypto transfers, CEX-to-chain flows, and partner-supported currency, RWA, and fiat-related flows across multiple networks. Its current protocol surface should not be characterized as centered on the FixSupplyToken contract unless confirmed by official contract documentation, and unsupported claims about atomic-swap mechanics or a specific liquidity-provider network should be removed or explicitly qualified.
 
 ### Architecture
 

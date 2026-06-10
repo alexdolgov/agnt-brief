@@ -5,17 +5,17 @@
 - Project: Lair Finance (`lair-finance`)
 - Website: [https://lair.fi](https://lair.fi)
 - Lifecycle: active (Tier 0, 93% below peak)
-- Generated: 2026-05-23T13:12:01.690Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:06.839Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: berachain
 - Contract surface: 78 unique implementations (191 raw deployments)
-- DeFi Llama TVL: $6,144,906.64
+- DeFi Llama TVL: $5,549,655.05
 - On-chain TVL (included contracts): $3,407,775.66
 - TVL by chain: Berachain $3,407,775.66
 
 ## Project Description
 
-Lair Finance is a liquid staking protocol on Berachain that allows users to stake BERA tokens and receive a liquid staking token (LairToken) representing their staked position, while earning rewards from the underlying staking infrastructure.
+Lair Finance is a cross-chain liquid staking and liquid restaking protocol with products across KAIA/Klaytn, Somnia, and Berachain. Its current public positioning includes KAIA liquid staking, Somnia staking, and Berachain/restaking-related deployments, so Berachain-only BERA liquid staking should not be presented as the full-project scope.
 
 ### Architecture
 
@@ -33,7 +33,7 @@ The Lair Finance family uses upgradeable proxy contracts to manage vault logic a
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $3,407,775.66
 - Latest audit: 2025-10 (fresh)
-- Staleness: 3 fresh, 8 aging, 0 stale, 0 unknown
+- Staleness: 2 fresh, 9 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -152,7 +152,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Bera LRT Contracts _ SSC.pdf](https://github.com/bug4city/lair-lsd/blob/master/audit/lrBGT/Bera%20LRT%20Contracts%20_%20SSC.pdf) | SSC | Audit | 2025-06 | fresh | Direct | n/a | 0 | n/a |
+| [Bera LRT Contracts _ SSC.pdf](https://github.com/bug4city/lair-lsd/blob/master/audit/lrBGT/Bera%20LRT%20Contracts%20_%20SSC.pdf) | SSC | Audit | 2025-06 | aging | Direct | n/a | 0 | n/a |
 | [Lair Restaking_Omniscia_Security_Review.pdf](https://github.com/bug4city/lair-lsd/blob/master/audit/restake/Lair%20Restaking_Omniscia_Security_Review.pdf) | Omniscia | Audit | 2025-03 | aging | Direct | n/a | 0 | n/a |
 | [Lair_Restaking_v01.pdf](https://github.com/bug4city/lair-lsd/blob/master/audit/restake/Lair_Restaking_v01.pdf) | unknown | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
 | [Lair_Restaking_v2.pdf](https://github.com/bug4city/lair-lsd/blob/master/audit/restake/Lair_Restaking_v2.pdf) | unknown | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |

@@ -5,8 +5,8 @@
 - Project: Taiko Bridge (`taiko-bridge`)
 - Website: [https://bridge.taiko.xyz/](https://bridge.taiko.xyz/)
 - Lifecycle: active (Tier 0, 90.7% below peak)
-- Generated: 2026-05-31T10:53:06.215Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:17.169Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 52 unique implementations (210 raw deployments)
 - DeFi Llama TVL: $16,768,686.97
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Taiko Bridge is the canonical bridge for the Taiko rollup, enabling users to deposit and withdraw ERC-20, ERC-721, and ERC-1155 tokens between Ethereum and Taiko. It uses a vault-based architecture with verifiers and provers to ensure secure cross-chain message passing.
+Taiko Bridge is the canonical asset-transfer bridge for the Taiko rollup, enabling deposits and withdrawals of supported ERC-20, ERC-721, and ERC-1155 tokens between Ethereum and Taiko through bridge/vault and message-passing contracts. Related Taiko rollup, prover, verifier, and token infrastructure may be security dependencies for finality and cross-chain messaging, but should be distinguished from the bridge's user-facing asset vault and transfer contract surface.
 
 ### Architecture
 

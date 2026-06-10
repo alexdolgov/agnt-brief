@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "solera",
-  "generated_at": "2026-05-23T07:26:51.983Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.239Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 8090331.08045,
-    "tvl_usd": 8090331.08045,
+    "dl_tvl_usd": 8358480.7693,
+    "tvl_usd": 8358480.7693,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Solera is a lending protocol that enables users to supply and borrow assets. It likely provides interest-bearing deposits and overcollateralized loans.",
-    "relationship_narrative": "No product families or contracts are defined in the provided data, so no relationships can be described.",
+    "project_purpose": "Solera is a lending and credit hub with RWA-focused vault interfaces and live Earn/Borrow products, powered in part by Morpho and Gauntlet infrastructure.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

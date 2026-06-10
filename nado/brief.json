@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nado",
-  "generated_at": "2026-05-31T14:54:05.776Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
+  "generated_at": "2026-06-10T20:59:08.029Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "nado",
@@ -22,18 +22,18 @@
     "drop_from_peak_pct": 13.451440473343764
   },
   "summary": {
-    "total_contracts": 23,
-    "total_addresses": 23,
-    "unique_implementations": 23,
-    "total_deployments": 23,
+    "total_contracts": 22,
+    "total_addresses": 22,
+    "unique_implementations": 22,
+    "total_deployments": 22,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 23,
+    "contracts_unverified": 22,
     "coverage_pct": 0,
-    "total_audits": 3,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 54956474,
     "tvl_usd": 54956474,
@@ -52,16 +52,16 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 3
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Nado is a decentralized exchange protocol offering spot and perpetual derivatives trading on the Ink chain. It enables users to trade assets with leverage and access liquidity through a set of smart contracts.",
+    "project_purpose": "Nado is a decentralized trading protocol on Ink offering Nado Spot and Nado Perps. It uses a CLOB/orderbook trading model with off-chain sequencing and on-chain settlement, supports unified cross-margin for trading, and includes the NLP liquidity vault for protocol liquidity.",
     "relationship_narrative": "Both product families operate on the Ink chain and likely share common infrastructure such as oracles and liquidity pools, though no explicit shared contracts are identified in the provided inventory.",
     "product_family_count": 2
   },
   "surface_sufficiency": {
-    "unique_implementations": 23,
+    "unique_implementations": 22,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -150,37 +150,6 @@
           "chain_id": 57073,
           "chain_name": "ink",
           "address": "0x09fb495aa7859635f755e827d64c4c9a2e5b9651",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x1234567890123456789012345678901234567890",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Nado",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 57073,
-          "chain_name": "ink",
-          "address": "0x1234567890123456789012345678901234567890",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -784,98 +753,21 @@
       "contamination_flag": null
     }
   ],
-  "audits": [
-    {
-      "audit_id": 5672,
-      "audit_key": "audit-5672",
-      "report_name": "cookie-policy.pdf",
-      "report_url": "https://github.com/nadohq/nado-web-monorepo-snapshot/blob/main/apps/trade/public/docs/cookie-policy.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5673,
-      "audit_key": "audit-5673",
-      "report_name": "privacy-policy.pdf",
-      "report_url": "https://github.com/nadohq/nado-web-monorepo-snapshot/blob/main/apps/trade/public/docs/privacy-policy.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5674,
-      "audit_key": "audit-5674",
-      "report_name": "terms-of-use.pdf",
-      "report_url": "https://github.com/nadohq/nado-web-monorepo-snapshot/blob/main/apps/trade/public/docs/terms-of-use.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 23
+    "needs_review": 22
   },
   "scope_matching_notes": {
     "match_method_counts": {},
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 5672,
-        "report_name": "cookie-policy.pdf"
-      },
-      {
-        "audit_id": 5673,
-        "report_name": "privacy-policy.pdf"
-      },
-      {
-        "audit_id": 5674,
-        "report_name": "terms-of-use.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

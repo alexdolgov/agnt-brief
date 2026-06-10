@@ -5,8 +5,8 @@
 - Project: Meta Pool (`meta-pool`)
 - Website: [https://metapool.app](https://metapool.app)
 - Lifecycle: active (Tier 0, 55.2% below peak)
-- Generated: 2026-05-31T09:58:06.369Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:07.481Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: aurora, ethereum
 - Contract surface: 41 unique implementations (65 raw deployments)
 - DeFi Llama TVL: $95,295,173.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Meta Pool is a liquid staking and restaking protocol operating on Ethereum and Aurora. It allows users to stake assets and receive liquid tokens representing their staked positions, which can be used across DeFi while earning staking rewards.
+Meta Pool is a multi-chain liquid staking DAO and product suite with validator infrastructure, governance, and incubator activity. The protocol has major activity on NEAR and Ethereum, with additional products on Solana, Story, Aurora, and other supported networks. Any analysis limited to Ethereum and Aurora contracts should be presented as partial EVM coverage, not as protocol-wide coverage.
 
 ### Architecture
 
@@ -32,8 +32,8 @@ The Meta Pool family provides shared governance (MpDaoToken, VotingPowerV1) and 
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $3,963,969.94
-- Latest audit: 2024-06 (aging)
-- Staleness: 0 fresh, 1 aging, 2 stale, 0 unknown
+- Latest audit: 2024-06 (stale)
+- Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -119,7 +119,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [blocksec_lockup_v1.0-signed-audit.pdf](https://github.com/Meta-Pool/lockup-stake-metapool/blob/master/docs/blocksec_lockup_v1.0-signed-audit.pdf) | unknown | Audit | 2023-08 | stale | Direct | n/a | 0 | n/a |
-| [2024-06 Blocksec Audit.pdf](https://github.com/Meta-Pool/metapool-shortcut/blob/main/audit/2024-06%20Blocksec%20Audit.pdf) | unknown | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
+| [2024-06 Blocksec Audit.pdf](https://github.com/Meta-Pool/metapool-shortcut/blob/main/audit/2024-06%20Blocksec%20Audit.pdf) | unknown | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
 | [MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf](https://github.com/Meta-Pool/staking-pool-aurora/blob/main/audits/MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf) | unknown | Audit | 2023-05 | stale | Direct | contract_name | 19 | high |
 
 ## Coverage Gaps

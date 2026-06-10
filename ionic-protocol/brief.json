@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ionic-protocol",
-  "generated_at": "2026-05-25T20:09:58.988Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:06.308Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "ionic-protocol",
@@ -70,6 +70,11 @@
     "project_purpose": "Ionic Protocol is a lending protocol that enables users to supply and borrow digital assets across multiple chains. It provides money markets where lenders earn interest and borrowers can take out overcollateralized loans.",
     "relationship_narrative": "The Ionic Protocol family uses the ERC1967Proxy as the main entry point for lending operations, while the IonicSdk.supportedAssets family provides the token contracts that can be supplied or borrowed. The IonicSdk.chainDeployment contract likely serves as a configuration hub linking the protocol to its supported assets on the chain.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 420,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -4,9 +4,9 @@
 
 - Project: Mantle Restaking (`mantle-restaking`)
 - Website: [https://www.methprotocol.xyz/](https://www.methprotocol.xyz/)
-- Lifecycle: unknown
-- Generated: 2026-05-31T14:54:04.080Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Lifecycle: active
+- Generated: 2026-06-10T20:59:07.190Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 8 unique implementations (14 raw deployments)
 - DeFi Llama TVL: $79,688,066.50
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Mantle Restaking is a liquid restaking protocol that allows users to deposit assets into a BoringVault and manage positions through PositionManager contracts, enabling yield generation while maintaining liquidity.
+Mantle Restaking is part of the mETH Protocol on Ethereum, centered on liquid staking and restaking products using mETH and cmETH. Users participate through Mantle's staking/restaking product surface while retaining liquid token exposure. Internal vault and position-management components such as BoringVault or PositionManager should be treated as implementation details only where their relationship to mETH/cmETH and the current deployed contract surface is independently verified.
 
 ### Architecture
 
@@ -29,11 +29,11 @@ The BoringVault holds user deposits and is managed by the PositionManagerNoVault
 - Unverified implementations: 3
 - Unique implementations: 8
 - Raw deployments: 14
-- Audits discovered: 14
+- Audits discovered: 13
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-10 (fresh)
-- Staleness: 2 fresh, 3 aging, 0 stale, 9 unknown
+- Staleness: 2 fresh, 3 aging, 0 stale, 8 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -50,7 +50,7 @@ The BoringVault holds user deposits and is managed by the PositionManagerNoVault
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| BoringVaultUpgradeable | core_logic | ethereum | [`0x33272d...5d4fe4`](./contracts/ethereum-1/0x33272d40b247c4cd9c646582c9bbad44e85d4fe4/) | ⚠️ Unaudited |
+| BoringVaultUpgradeable | proxy | ethereum | [`0x33272d...5d4fe4`](./contracts/ethereum-1/0x33272d40b247c4cd9c646582c9bbad44e85d4fe4/) | ⚠️ Unaudited |
 | DelayedWithdraw | operational_periphery | ethereum | [`0x12be34...66b113`](./contracts/ethereum-1/0x12be34be067ebd201f6eaf78a861d90b2a66b113/) | ⚠️ Unaudited |
 | PositionManager | governance | ethereum | 2 deployments: ethereum [`0x1c17ea...c21e56`](./contracts/ethereum-1/0x1c17eab0a50931850f1f23fdbacbd0197bc21e56/); ethereum `0xcd694b...f881d9` | ⚠️ Unaudited |
 | PositionManagerNoVaultOwnable2StepWithShortcut | core_logic | ethereum | [`0x919531...2c1d36`](./contracts/ethereum-1/0x919531146f9a25dfc161d5ab23b117feae2c1d36/) | ⚠️ Unaudited |
@@ -91,7 +91,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Hexens-11-25.pdf](https://github.com/mantle-lsp/audits/blob/main/buffer-pool/Hexens-11-25.pdf) | Hexens | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [MixBytes-11-25.pdf](https://github.com/mantle-lsp/audits/blob/main/buffer-pool/MixBytes-11-25.pdf) | MixBytes | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [blocksec.pdf](https://github.com/mantle-lsp/audits/blob/main/fixed-yield-vault/blocksec.pdf) | BlockSec | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
-| [verilog.pdf](https://github.com/mantle-lsp/audits/blob/main/fixed-yield-vault/verilog.pdf) | Verilog | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Mantle_L2_ERC20_Token_Bridge_Report.pdf](https://github.com/Verilog-Solutions/.github/blob/main/Audit/Mantle_Ecosystem_Audit/Mantle_L2_ERC20_Token_Bridge_Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Mantle_LSP_L2_Report.pdf](https://github.com/Verilog-Solutions/.github/blob/main/Audit/Mantle_Ecosystem_Audit/Mantle_LSP_L2_Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Mantle_MDI_Quests_Report.pdf](https://github.com/Verilog-Solutions/.github/blob/main/Audit/Mantle_Ecosystem_Audit/Mantle_MDI_Quests_Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -121,7 +120,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 14
+- Audits with zero matched contracts: 13
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -137,7 +136,6 @@ Zero-match audit list:
 - [4631] Hexens-11-25.pdf
 - [4632] MixBytes-11-25.pdf
 - [4633] blocksec.pdf
-- [4634] verilog.pdf
 - [4635] Mantle_L2_ERC20_Token_Bridge_Report.pdf
 - [4636] Mantle_LSP_L2_Report.pdf
 - [4637] Mantle_MDI_Quests_Report.pdf

@@ -1,21 +1,23 @@
 # Agentic Audit Brief: Zivoe
 
+⚠️ Lifecycle status: DECLINING - TVL dropped 15.8% over 90 days
+
 ## Project Overview
 
 - Project: Zivoe (`zivoe`)
 - Website: [https://zivoe.com/](https://zivoe.com/)
-- Lifecycle: active (Tier 0, 83.4% below peak)
-- Generated: 2026-05-22T21:20:38.679Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 0, 83.4% below peak)
+- Generated: 2026-06-10T20:59:19.539Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 32 unique implementations (47 raw deployments)
-- DeFi Llama TVL: $13,834,731.79
-- On-chain TVL (included contracts): $87,090,531.92
-- TVL by chain: Ethereum $87,090,531.92
+- Contract surface: 31 unique implementations (46 raw deployments)
+- DeFi Llama TVL: $13,834,786.44
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Zivoe is a real-world asset (RWA) credit protocol that connects on-chain liquidity with off-chain lending. It uses a tranche-based system to pool funds, generate yield through various strategies, and distribute returns to token holders.
+Zivoe is a real-world asset private credit protocol where qualified participants deposit USDC or other stablecoins to receive zVLT exposure to yield from private credit and consumer lending. Tranche, governance, and rewards contracts should be treated as protocol or legacy architecture only where still supported by current contract and product evidence.
 
 ### Architecture
 
@@ -23,29 +25,30 @@ The Governance & Accounting family sets global parameters and distributes yield 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 18/31 (58.1%)
-- Verified + Unaudited implementations: 13
+- Verified implementations audited: 13/30 (43.3%)
+- Verified + Unaudited implementations: 17
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 32
-- Raw deployments: 47
-- Audits discovered: 3
-- Scoreable audits (matched contracts): 3
-- ASD (verified + unaudited TVL): $87,090,531.92
+- Unique implementations: 31
+- Raw deployments: 46
+- Audits discovered: 2
+- Scoreable audits (matched contracts): 2
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-03 (aging)
-- Staleness: 0 fresh, 2 aging, 1 stale, 0 unknown
-- Tier 1 coverage: 48.4% (Sherlock)
+- Staleness: 0 fresh, 1 aging, 1 stale, 0 unknown
+- Tier 1 coverage: 33.3% (Sherlock)
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Sherlock | Tier 1 | 15 | 48.4% | 2024-06 |
-| Runtime Verification | Tier 2 | 3 | 9.7% | 2025-03 |
+| Sherlock | Tier 1 | 10 | 33.3% | 2024-06 |
+| Runtime Verification | Tier 2 | 3 | 10.0% | 2025-03 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (18)
+### ✅ Verified + Audited (13)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -54,25 +57,19 @@ The Governance & Accounting family sets global parameters and distributes yield 
 | OCT_Convert | unknown | ethereum | 2 deployments: ethereum [`0x6e300a...4b321e`](./contracts/ethereum-1/0x6e300a96e5d6b015e1761488a85e4341bd4b321e/); ethereum `0x8c5fa1...951a85` | ✅ Audited |
 | OCY_Convex_A | unknown | ethereum | [`0x2c0508...41e427`](./contracts/ethereum-1/0x2c0508d0c6340d7d9a383109d6171c3cbf41e427/) | ✅ Audited |
 | OCY_Convex_C | unknown | ethereum | [`0x0df8aa...4b9df6`](./contracts/ethereum-1/0x0df8aa43a6919926be6ed15c956329f2cd4b9df6/) | ✅ Audited |
-| ZivoeDAO | unknown | ethereum | [`0xb65a66...550dd7`](./contracts/ethereum-1/0xb65a66621d7de34afec9b9ac0755133051550dd7/) | ✅ Audited |
 | ZivoeGlobals | unknown | ethereum | [`0xea537e...83da66`](./contracts/ethereum-1/0xea537eb0bbcc7783bdf7c595bf9371984583da66/) | ✅ Audited |
-| ZivoeGovernorV2 | governance | ethereum | [`0x94ac60...32a71e`](./contracts/ethereum-1/0x94ac60103b6b0df0cd828086b16eff2a3e32a71e/) | ✅ Audited |
 | ZivoeITO | unknown | ethereum | [`0xe59023...c52aba`](./contracts/ethereum-1/0xe590233c22e81a79a1768ab8c8597b7a55c52aba/) | ✅ Audited |
 | ZivoeRewards | unknown | ethereum | 3 deployments: ethereum [`0x0d45c2...9ded5d`](./contracts/ethereum-1/0x0d45c292bacdc47ce850e4c83a2fa2e8509ded5d/); ethereum `0xb397aa...6b2dce`; ethereum `0xcacdb1...78aa7c` | ✅ Audited |
 | ZivoeRewardsVesting | operational_periphery | ethereum | [`0x520f2b...1168f6`](./contracts/ethereum-1/0x520f2b5766176fd94b62507c848599b6251168f6/) | ✅ Audited |
 | ZivoeRouter | adapter | ethereum | [`0x420909...a2c3b6`](./contracts/ethereum-1/0x420909ba4b361853703668e19461b3a5dea2c3b6/) | ✅ Audited |
-| ZivoeTLC | unknown | ethereum | [`0xe1a68a...3fc916`](./contracts/ethereum-1/0xe1a68a0404426d6bbc459794e576640dee3fc916/) | ✅ Audited |
-| ZivoeToken | token | ethereum | [`0xe412d4...19a9d2`](./contracts/ethereum-1/0xe412d46a0fbd567332b7689cfffe1f8a4f19a9d2/) | ✅ Audited |
 | ZivoeTranches | core_logic | ethereum | [`0x6282b4...4715a8`](./contracts/ethereum-1/0x6282b480f0b989f0b603f821a840d964bc4715a8/) | ✅ Audited |
-| ZivoeTrancheToken | core_logic | ethereum | 2 deployments: ethereum [`0x7aa5bf...ad3bb6`](./contracts/ethereum-1/0x7aa5bf30042b2145b9f0629ea68de55b42ad3bb6/); ethereum `0xa923fa...ab6dd0` | ✅ Audited |
 | ZivoeVault | core_logic | ethereum | [`0x94babe...fbedd4`](./contracts/ethereum-1/0x94babe9ee75c38034920bc6ed42748e8eefbedd4/) | ✅ Audited |
 | ZivoeYDL | unknown | ethereum | [`0xfb7920...474b2b`](./contracts/ethereum-1/0xfb7920b55887840643e20952f22eb18ddc474b2b/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (13)
+### ⚠️ Verified + Unaudited (17)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| WrappedMToken | token | ethereum | [`0x437cc3...98b291`](./contracts/ethereum-1/0x437cc33344a0b27a429f795ff6b469c72698b291/) | ⚠️ Unaudited |
 | ATokenInstance | token | ethereum | [`0x98c23e...e16f5c`](./contracts/ethereum-1/0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c/) | ⚠️ Unaudited |
 | FrxUSD | unknown | ethereum | [`0xcacd6f...586e29`](./contracts/ethereum-1/0xcacd6fd266af91b8aed52accc382b4e165586e29/) | ⚠️ Unaudited |
 | OCC_Cycle | unknown | ethereum | 3 deployments: ethereum [`0x09c977...ddb69c`](./contracts/ethereum-1/0x09c977130743feec9a8cbe260b187814ebddb69c/); ethereum `0x161c42...ccc17f`; ethereum `0xb63c6a...986573` | ⚠️ Unaudited |
@@ -85,6 +82,11 @@ The Governance & Accounting family sets global parameters and distributes yield 
 | OCT_ZVL | unknown | ethereum | [`0x79d68d...ce396f`](./contracts/ethereum-1/0x79d68d40ef6f1dc7b220ef0a6df02e753dce396f/) | ⚠️ Unaudited |
 | OCY_OUSD | unknown | ethereum | 2 deployments: ethereum [`0x373a78...4270bb`](./contracts/ethereum-1/0x373a78d1ba7269a9164ea78c429fde90024270bb/); ethereum `0xdcfb98...6ae1d6` | ⚠️ Unaudited |
 | Safe | unknown | ethereum | 2 deployments: ethereum [`0x50c72f...eb0fd5`](./contracts/ethereum-1/0x50c72ff8c5e7498f64beaeb8ed5be83cabeb0fd5/); ethereum `0xc8d624...d5f026` | ⚠️ Unaudited |
+| ZivoeDAO | unknown | ethereum | [`0xb65a66...550dd7`](./contracts/ethereum-1/0xb65a66621d7de34afec9b9ac0755133051550dd7/) | ⚠️ Unaudited |
+| ZivoeGovernorV2 | governance | ethereum | [`0x94ac60...32a71e`](./contracts/ethereum-1/0x94ac60103b6b0df0cd828086b16eff2a3e32a71e/) | ⚠️ Unaudited |
+| ZivoeTLC | unknown | ethereum | [`0xe1a68a...3fc916`](./contracts/ethereum-1/0xe1a68a0404426d6bbc459794e576640dee3fc916/) | ⚠️ Unaudited |
+| ZivoeToken | token | ethereum | [`0xe412d4...19a9d2`](./contracts/ethereum-1/0xe412d46a0fbd567332b7689cfffe1f8a4f19a9d2/) | ⚠️ Unaudited |
+| ZivoeTrancheToken | core_logic | ethereum | 2 deployments: ethereum [`0x7aa5bf...ad3bb6`](./contracts/ethereum-1/0x7aa5bf30042b2145b9f0629ea68de55b42ad3bb6/); ethereum `0xa923fa...ab6dd0` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -111,8 +113,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [| Runtime Verification | Vault | <> |](https://amp.runtimeverification.com/public-report/zivoe-vault) | Runtime Verification | Audit | 2025-03 | aging | Direct | contract_name | 4 | high |
-| [`04-25-2024 Sherlock`](https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2024.04.25%20-%20Final%20-%20Zivoe%20Audit%20Report.pdf) | Sherlock | Contest | 2024-06 | aging | Direct | contract_name | 15 | high |
-| [`08-18-2023 Runtime Verification (Locker Contracts)`](https://github.com/runtimeverification/publications/blob/main/reports/smart-contracts/Zivoe_Core_Contracts.pdf) | Sherlock | Contest | 2023-07 | stale | Direct | contract_name | 14 | high |
+| [`04-25-2024 Sherlock`](https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2024.04.25%20-%20Final%20-%20Zivoe%20Audit%20Report.pdf) | Sherlock | Contest | 2024-06 | stale | Direct | contract_name | 15 | high |
 
 ## Coverage Gaps
 
@@ -128,6 +129,11 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xd70233...78d108`](./contracts/ethereum-1/0xd702332915fddf588793d54d63872a97ad78d108/) | OCT_DAO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6172f8...e6ef87`](./contracts/ethereum-1/0x6172f8103d156c49532e610232d33f0796e6ef87/) | OCT_YDL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x79d68d...ce396f`](./contracts/ethereum-1/0x79d68d40ef6f1dc7b220ef0a6df02e753dce396f/) | OCT_ZVL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb65a66...550dd7`](./contracts/ethereum-1/0xb65a66621d7de34afec9b9ac0755133051550dd7/) | ZivoeDAO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x94ac60...32a71e`](./contracts/ethereum-1/0x94ac60103b6b0df0cd828086b16eff2a3e32a71e/) | ZivoeGovernorV2 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe1a68a...3fc916`](./contracts/ethereum-1/0xe1a68a0404426d6bbc459794e576640dee3fc916/) | ZivoeTLC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe412d4...19a9d2`](./contracts/ethereum-1/0xe412d46a0fbd567332b7689cfffe1f8a4f19a9d2/) | ZivoeToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7aa5bf...ad3bb6`](./contracts/ethereum-1/0x7aa5bf30042b2145b9f0629ea68de55b42ad3bb6/) | ZivoeTrancheToken | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
@@ -135,7 +141,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 25 |
 | upstream | 3 |
-| standard_library | 3 |
+| standard_library | 2 |
 | needs_review | 1 |
 
 ## Scope Matching Notes
@@ -144,7 +150,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=3
-- Match method counts: extraction_exact=33
+- Extraction confidence breakdown: high=2
+- Match method counts: extraction_exact=19
 
 Fork inheritance lineage and inherited audits are included when available.

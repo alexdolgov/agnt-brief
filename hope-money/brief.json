@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hope-money",
-  "generated_at": "2026-05-25T15:33:26.579Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:04.669Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hope-money",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 4,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1689759,
+    "dl_tvl_usd": 1673641,
     "tvl_usd": 21983584.153083626,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "HOPE Money is a DeFi protocol offering liquid staking, restaking, and BTC-backed tokens. It enables users to stake ETH for liquid tokens, restake for additional yield, and mint BTC-pegged assets for use in lending and trading.",
-    "relationship_narrative": "The liquid staking family provides RockXETH, which can be restaked for rewards. BTC-backed tokens rely on vaults and rate oracles, and cross-chain infrastructure enables movement of these assets across networks.",
+    "project_purpose": "HOPE Money is an all-in-one DeFi ecosystem featuring HOPE, a crypto-native distributed stablecoin, with related stablecoin and ecosystem components across its supported deployment surface.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

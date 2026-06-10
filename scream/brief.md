@@ -7,21 +7,22 @@
 - Project: Scream (`scream`)
 - Website: [https://scream.sh/](https://scream.sh/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-29T13:49:08.616Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-06-10T20:59:14.806Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: fantom
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,288,676.91
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Scream is a decentralized lending protocol on Fantom that allows users to supply and borrow crypto assets. It operates through a single core contract that manages deposits, loans, and interest rates.
-
-### Architecture
-
-The protocol consists of a single product family with one contract, so there are no inter-family relationships or shared infrastructure.
+Scream is a Fantom-based decentralized lending and borrowing protocol. Its complete contract architecture is not established by the current brief; the listed single contract is insufficient to represent the protocol's lending surface, which likely includes controller, market token, oracle, interest-rate, rewards/distribution, and dripper-related components that must be mapped before coverage can be assessed.
 
 ## Audit Coverage Summary
 
@@ -31,11 +32,11 @@ The protocol consists of a single product family with one contract, so there are
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 2
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
@@ -77,7 +78,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [CompoundProtocol.pdf](https://github.com/Scream-Finance/scream-protocol-v3/blob/main/docs/CompoundProtocol.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Dripper.pdf](https://github.com/Scream-Finance/scream-protocol-v3/blob/main/docs/Dripper.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -99,14 +99,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 
 Zero-match audit list:
 
-- [9485] CompoundProtocol.pdf
 - [9486] Dripper.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

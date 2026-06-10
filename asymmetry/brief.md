@@ -7,8 +7,8 @@
 - Project: Asymmetry (`asymmetry`)
 - Website: [https://asymmetry.fi](https://asymmetry.fi)
 - Lifecycle: declining (Tier 0, 88.7% below peak)
-- Generated: 2026-06-10T20:43:12.424Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.806Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 203 unique implementations (576 raw deployments)
 - DeFi Llama TVL: $3,559,259.00

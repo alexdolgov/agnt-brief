@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "swamp-finance",
-  "generated_at": "2026-05-31T10:45:47.605Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.870Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "swamp-finance",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Swamp Finance is a yield farming protocol on BSC that allows users to stake tokens and earn rewards in its native SWAMP token.",
+    "project_purpose": "Swamp Finance is a BSC yield optimizer/yield protocol with multiple strategy contracts, alongside NativeFarm and SWAMP token reward components. Any governance-token characterization should be omitted or qualified unless supported by project documentation.",
     "relationship_narrative": "The NativeFarm contract distributes SWAMP token rewards to stakers, with SWAMP serving as the protocol's reward and governance token.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 11,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "taiko-bridge",
-  "generated_at": "2026-05-31T10:53:06.215Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:17.169Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "taiko-bridge",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Taiko Bridge is the canonical bridge for the Taiko rollup, enabling users to deposit and withdraw ERC-20, ERC-721, and ERC-1155 tokens between Ethereum and Taiko. It uses a vault-based architecture with verifiers and provers to ensure secure cross-chain message passing.",
+    "project_purpose": "Taiko Bridge is the canonical asset-transfer bridge for the Taiko rollup, enabling deposits and withdrawals of supported ERC-20, ERC-721, and ERC-1155 tokens between Ethereum and Taiko through bridge/vault and message-passing contracts. Related Taiko rollup, prover, verifier, and token infrastructure may be security dependencies for finality and cross-chain messaging, but should be distinguished from the bridge's user-facing asset vault and transfer contract surface.",
     "relationship_narrative": "The bridge family relies on shared infrastructure: SignalService for cross-chain message passing, verifiers (SP1, Risc0, Sgx) for proof validation, and address managers for contract resolution. Vaults handle token locking/unlocking, while MainnetBridge orchestrates message sending and receiving, with guardian provers and prover sets ensuring security.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 52,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

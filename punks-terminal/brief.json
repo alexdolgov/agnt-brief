@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "punks-terminal",
-  "generated_at": "2026-05-31T10:20:44.136Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:09.437Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "punks-terminal",
     "tier": 0,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Punks Terminal is an NFT marketplace on Ethereum that facilitates the creation and trading of NFTs. It provides a registry contract to manage and track NFT collections.",
-    "relationship_narrative": "The project consists of a single product family with one registry contract, so there are no cross-family relationships or shared infrastructure.",
+    "project_purpose": "Punks Terminal is a CryptoPunks-focused Stash trading terminal on Ethereum. Its StashFactory deploys user-managed Stash contracts that support ETH/WETH liquidity, order placement, trading, and withdrawals for CryptoPunks-related activity.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "umee",
-  "generated_at": "2026-05-31T11:25:55.909Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:18.485Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "umee",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
-    "total_audits": 8,
+    "total_audits": 7,
     "scoreable_audits": 0,
     "dl_tvl_usd": 2510742.0042000003,
     "tvl_usd": 2510742.0042000003,
@@ -52,13 +52,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 7,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Umee is a decentralized lending protocol that enables users to supply and borrow assets across multiple blockchains. It focuses on cross-chain interoperability and capital efficiency.",
-    "relationship_narrative": "The protocol consists of a single product family with one proxy contract that handles all lending operations. No additional infrastructure contracts are identified.",
+    "project_purpose": "Umee is a decentralized lending protocol and blockchain with activity across Umee/Cosmos modules and Ethereum. The listed Ethereum proxy should be treated as partial EVM coverage, not as the complete lending surface for the protocol.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -244,37 +249,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8779,
-      "audit_key": "audit-8779",
-      "report_name": "security-audits.md",
-      "report_url": "https://github.com/umee-network/docs/blob/main/docs/additional-info/security-audits.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 8779,
-          "report_url": "https://github.com/umee-network/docs/blob/main/docs/additional-info/security-audits.md"
-        },
-        {
-          "audit_id": 8876,
-          "report_url": "https://github.com/umee-network/docs/blob/main/docs/overview/UX-overview/security-audits.md"
-        }
-      ]
     }
   ],
   "auditor_coverage": [],
@@ -318,10 +292,6 @@
       {
         "audit_id": 8774,
         "report_name": "Umee_WebApp_Pentest_Report_Halborn_Final.pdf"
-      },
-      {
-        "audit_id": 8779,
-        "report_name": "security-audits.md"
       }
     ],
     "inherited_remapped_matches": []

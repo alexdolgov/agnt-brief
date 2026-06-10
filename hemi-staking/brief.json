@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hemi-staking",
-  "generated_at": "2026-05-26T16:24:47.058Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:04.573Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hemi-staking",
@@ -22,27 +22,27 @@
     "drop_from_peak_pct": 92.52719106864758
   },
   "summary": {
-    "total_contracts": 141,
-    "total_addresses": 236,
-    "unique_implementations": 141,
-    "total_deployments": 236,
-    "audited_contracts": 1,
-    "unaudited_contracts": 62,
-    "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 62,
+    "total_contracts": 120,
+    "total_addresses": 207,
+    "unique_implementations": 120,
+    "total_deployments": 207,
+    "audited_contracts": 0,
+    "unaudited_contracts": 42,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 42,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 78,
-    "coverage_pct": 1.6,
-    "total_audits": 5,
-    "scoreable_audits": 2,
+    "coverage_pct": 0,
+    "total_audits": 2,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 36924885.96636,
-    "tvl_usd": 16466868.704411106,
+    "tvl_usd": 16416309.46853453,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "ethereum": 16416017.69,
-      "optimism": 50851.02
+      "optimism": 291.78
     },
-    "asd_usd": 16466868.704411106,
+    "asd_usd": 16416309.46853453,
     "website_url": "https://app.hemi.xyz/en/stake/dashboard/",
     "chains": [
       "bsc",
@@ -55,16 +55,21 @@
     "latest_audit_date": "2025-10",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 3,
-      "aging": 2,
+      "fresh": 1,
+      "aging": 1,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Hemi Staking is a DeFi protocol that enables users to stake and farm tokens across multiple chains, including Ethereum, Optimism, BSC, and Swellchain. It provides token minting, debt token management, and reward vaults, integrated with cross-chain messaging via LayerZero and Optimism's OP Stack infrastructure.",
+    "project_purpose": "Hemi Staking is a Hemi-chain staking and farming product that lets users stake supported assets on Hemi to earn rewards and boost points. The staking brief should be limited to the Hemi staking app and its TVL-bearing staking contracts, not unrelated token, bridge, OP Stack, LayerZero, debt-token, or third-party infrastructure.",
     "relationship_narrative": "The Hemi Staking family relies on the L1 and L2 Hemi Contracts for cross-chain messaging and bridging, using OP Stack components to move assets and data between layers. The $HEMI token serves as the native asset across the ecosystem, while staking contracts interact with debt tokens and reward vaults that may be deployed on multiple chains.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 120,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -222,34 +227,7 @@
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0x583f89425edf276a178952ba413ff36bac18905d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5f88f74f2474925df0be9ef93ca8c3671d9b935a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
           "address": "0x84c59304aac67c65b31a30c7c0facb4c849dee22",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xd851910ea3e9246d1ddcebd06cd2e581776ac710",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -262,99 +240,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x420000000000000000000000000000000000001a",
-      "name": "L1FeeVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "L2 Hemi Contracts",
-      "tvl_usd": 22204.9984551378,
-      "is_proxy": true,
-      "impl_address": "0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3001a",
-      "impl_name": "L1FeeVault",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x420000000000000000000000000000000000001a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 22204.9984551378,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000011",
-      "name": "SequencerFeeVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "L2 Hemi Contracts",
-      "tvl_usd": 17372.91562587342,
-      "is_proxy": true,
-      "impl_address": "0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30011",
-      "impl_name": "SequencerFeeVault",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4200000000000000000000000000000000000011",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 17372.91562587342,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000019",
-      "name": "BaseFeeVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "L2 Hemi Contracts",
-      "tvl_usd": 10981.321795566453,
-      "is_proxy": true,
-      "impl_address": "0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30019",
-      "impl_name": "BaseFeeVault",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4200000000000000000000000000000000000019",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 10981.321795566453,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 10,
@@ -445,37 +330,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xa5f37791378c55941a52b4dcb70be4d8d09f5e43",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xf44007eaf2fafdd8ba8d3551f23cd2b879f54677",
-      "name": "AnchorStateRegistry",
-      "role": "registry",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "L1 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x865dc2d18e0c8e9089dac6c6a82d37319b8480cd",
-      "impl_name": "AnchorStateRegistry",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf44007eaf2fafdd8ba8d3551f23cd2b879f54677",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -586,68 +440,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc5627348dbc9179cfb5a24c8199635770ea575a3",
-      "name": "DelayedWETH",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "L1 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x6bef08fa97303472faeea494007f3b3a4a85f33d",
-      "impl_name": "DelayedWETH",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc5627348dbc9179cfb5a24c8199635770ea575a3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000021",
-      "name": "EAS",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "L2 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x4e0275ea5a89e7a3c1b58411379d1a0eddc5b088",
-      "impl_name": "EAS",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4200000000000000000000000000000000000021",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -877,37 +669,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x420000000000000000000000000000000000000f",
-      "name": "GasPriceOracle",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "L2 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x4f1db3c6abd250ba86e0928471a8f7db3afd88f1",
-      "impl_name": "GasPriceOracle",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x420000000000000000000000000000000000000f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x8434dc705e4b729405dd66c94dfc62bc3825ea69",
@@ -994,40 +755,6 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xeb964a1a6fab73b8c72a0d15c7337fa4804f484d",
-      "name": "Hemi",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "`$HEMI` **Contract Details**",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Hemi",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xeb964a1a6fab73b8c72a0d15c7337fa4804f484d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-3961",
-        "audit-3962"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -1129,37 +856,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000015",
-      "name": "L1Block",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "L2 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x3ba4007f5c922fbb33c454b41ea7a1f11e83df2c",
-      "impl_name": "L1Block",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4200000000000000000000000000000000000015",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xf005dfb08377fad44588af68d0884d272a6fb050",
@@ -1177,37 +873,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xf005dfb08377fad44588af68d0884d272a6fb050",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa446331bd28cbe0186a983a27c528f566b6bede0",
-      "name": "L1ERC721Bridge",
-      "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "L1 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xdb96a01a78c984aadcc72884d7c778dd38dfe41c",
-      "impl_name": "L1ERC721Bridge",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xa446331bd28cbe0186a983a27c528f566b6bede0",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1255,57 +920,17 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000007",
-      "name": "L2CrossDomainMessenger",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "L2 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30007",
-      "impl_name": "L2CrossDomainMessenger",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4200000000000000000000000000000000000007",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000014",
+      "address": "0x5a7749f83b81b301cab5f48eb8516b986daef23d",
       "name": "L2ERC721Bridge",
       "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "L2 Hemi Contracts",
+      "origin_kind": "upstream",
+      "origin_provider": "optimism",
+      "product_line": null,
       "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30014",
+      "is_proxy": false,
+      "impl_address": null,
       "impl_name": "L2ERC721Bridge",
       "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4200000000000000000000000000000000000014",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 10,
           "chain_name": "optimism",
@@ -1322,99 +947,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6daf3a3497d8abdfe12915add9829f83a79c0d51",
-      "name": "L2OutputOracle",
-      "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "L1 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x05d99cb268ccc0f88e6bebe0eb0af4e9c0b83cf4",
-      "impl_name": "L2OutputOracle",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6daf3a3497d8abdfe12915add9829f83a79c0d51",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000010",
-      "name": "L2StandardBridge",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "L2 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30010",
-      "impl_name": "L2StandardBridge",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4200000000000000000000000000000000000010",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000016",
-      "name": "L2ToL1MessagePasser",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "L2 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30016",
-      "impl_name": "L2ToL1MessagePasser",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4200000000000000000000000000000000000016",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -2101,77 +1633,19 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0262fedc4a98f94ddb90cef0e058644d8409342c",
-      "name": "OptimismMintableERC20Factory",
-      "role": "registry",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "L1 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x380951156af4ed8d3b1923c0dfb7acbc59a045fc",
-      "impl_name": "OptimismMintableERC20Factory",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0262fedc4a98f94ddb90cef0e058644d8409342c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4200000000000000000000000000000000000012",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 10,
       "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000017",
+      "address": "0x69d67c1caa8d0717dffa6d2e5b1f7f19926e5ef0",
       "name": "OptimismMintableERC721Factory",
       "role": "registry",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "L2 Hemi Contracts",
+      "origin_kind": "upstream",
+      "origin_provider": "optimism",
+      "product_line": null,
       "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30017",
+      "is_proxy": false,
+      "impl_address": null,
       "impl_name": "OptimismMintableERC721Factory",
       "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4200000000000000000000000000000000000017",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4482b6510df4c723bdf80c4441dbdbc855ab29ac",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 10,
           "chain_name": "optimism",
@@ -2188,37 +1662,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x39a0005415256b9863afe2d55edcf75ecc3a4d7e",
-      "name": "OptimismPortal",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "L1 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x4b58ed755186326e77253444aade73c6e591c909",
-      "impl_name": "OptimismPortal",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x39a0005415256b9863afe2d55edcf75ecc3a4d7e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -2290,68 +1733,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x13cb1b6e69ec8ff6a5c8823d1e8dc78cccf3ce48",
-      "name": "ProtocolVersions",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "L1 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xa152cd2527991875e6a390f855f97f2812603d62",
-      "impl_name": "ProtocolVersions",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x13cb1b6e69ec8ff6a5c8823d1e8dc78cccf3ce48",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5442d0ddb33b396879d2d016a9ad09ad122562c3",
-      "name": "Proxy",
-      "role": "proxy",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "L1 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xb1caddc28a14182b354b47e2c12fe86dd97a029f",
-      "impl_name": "Proxy",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5442d0ddb33b396879d2d016a9ad09ad122562c3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -2819,32 +2200,23 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000018",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbe81a9d662422f667f634f3fc301e2e360fefb30",
       "name": "ProxyAdmin",
       "role": "governance",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "L2 Hemi Contracts",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "L1 Hemi Contracts",
       "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30018",
+      "is_proxy": false,
+      "impl_address": null,
       "impl_name": "ProxyAdmin",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xbe81a9d662422f667f634f3fc301e2e360fefb30",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4200000000000000000000000000000000000018",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2897,37 +2269,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000020",
-      "name": "SchemaRegistry",
-      "role": "registry",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "L2 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x6232208d66bac2305b46b4cb6bcb3857b298df13",
-      "impl_name": "SchemaRegistry",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4200000000000000000000000000000000000020",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -3066,68 +2407,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x15144fb8621cb3c4ed3db223c173ffb58c8d2ab8",
-      "name": "SuperchainConfig",
-      "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "L1 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x29db48723d864ae327c17e998de649e691cea1bf",
-      "impl_name": "SuperchainConfig",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x15144fb8621cb3c4ed3db223c173ffb58c8d2ab8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5ae68684d9179a8053883f1df599ea7fb35303c3",
-      "name": "SystemConfig",
-      "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "L1 Hemi Contracts",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x27392eb24eefce471992a42f374730c07e5bef26",
-      "impl_name": "SystemConfig",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5ae68684d9179a8053883f1df599ea7fb35303c3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -5343,84 +4622,9 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3961,
-      "audit_key": "audit-3961",
-      "report_name": "Audit_Report_HEMI-TOK_FINAL_21.pdf",
-      "report_url": "https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/Audit_Report_HEMI-TOK_FINAL_21.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Hemi"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3962,
-      "audit_key": "audit-3962",
-      "report_name": "HemiToken - Final Report.pdf",
-      "report_url": "https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/HemiToken%20-%20Final%20Report.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Hemi"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3963,
-      "audit_key": "audit-3963",
-      "report_name": "Audit_Report_HEMI-VOT_FINAL_21.pdf",
-      "report_url": "https://github.com/hemilabs/audit-reports/blob/master/veHEMI/Audit_Report_HEMI-VOT_FINAL_21.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [
-    {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 1.6,
-      "latest_audit": "2025-10"
-    }
-  ],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -5431,36 +4635,6 @@
       "origin_kind": "native",
       "tvl_usd": 7966536.659433155,
       "risk_note": "Verified native implementation with $7,966,536.66 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x420000000000000000000000000000000000001a",
-      "name": "L1FeeVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 22204.9984551378,
-      "risk_note": "Verified native implementation with $22,205.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000011",
-      "name": "SequencerFeeVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 17372.91562587342,
-      "risk_note": "Verified native implementation with $17,372.92 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000019",
-      "name": "BaseFeeVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 10981.321795566453,
-      "risk_note": "Verified native implementation with $10,981.32 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -5503,16 +4677,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000021",
-      "name": "EAS",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x6a9a65b84843f5fd4ac9a0471c4fc11afffbce4a",
@@ -5528,16 +4692,6 @@
       "address": "0x1c22531aa9747d76fff8f0a43b37954ca67d28e0",
       "name": "ERC20MintablePauseableUpgradeable",
       "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x420000000000000000000000000000000000000f",
-      "name": "GasPriceOracle",
-      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -5563,16 +4717,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000015",
-      "name": "L1Block",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xf005dfb08377fad44588af68d0884d272a6fb050",
@@ -5588,46 +4732,6 @@
       "address": "0x5eaa10f99e7e6d177ef9f74e519e319aa49f191e",
       "name": "L1StandardBridge",
       "role": "bridge_template",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000007",
-      "name": "L2CrossDomainMessenger",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000014",
-      "name": "L2ERC721Bridge",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000010",
-      "name": "L2StandardBridge",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000016",
-      "name": "L2ToL1MessagePasser",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -5703,16 +4807,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000017",
-      "name": "OptimismMintableERC721Factory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xef5e87476c4ac90a0973a2bf114ac770c4e05c1e",
@@ -5723,31 +4817,11 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000018",
-      "name": "ProxyAdmin",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x07bbc5a83b83a5c440d1caedbf1081426d0aa4ec",
       "name": "SatoshiXApp",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000020",
-      "name": "SchemaRegistry",
-      "role": "registry",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -5804,18 +4878,14 @@
     }
   ],
   "origin_summary": {
-    "native": 65,
-    "upstream": 3,
-    "standard_library": 19,
+    "native": 51,
+    "upstream": 5,
+    "standard_library": 10,
     "needs_review": 54
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 2
-    },
-    "extraction_confidence_counts": {
-      "high": 2
-    },
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -5826,10 +4896,6 @@
       {
         "audit_id": 3960,
         "report_name": "Quantstamp - BTC Tunnel - FinalReport (1).pdf"
-      },
-      {
-        "audit_id": 3963,
-        "report_name": "Audit_Report_HEMI-VOT_FINAL_21.pdf"
       }
     ],
     "inherited_remapped_matches": []

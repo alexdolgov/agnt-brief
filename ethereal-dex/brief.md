@@ -5,21 +5,22 @@
 - Project: Ethereal DEX (`ethereal-dex`)
 - Website: [https://app.ethereal.trade/](https://app.ethereal.trade/)
 - Lifecycle: unknown
-- Generated: 2026-05-26T19:20:55.504Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:02.314Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $30,717,765.08
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Ethereal DEX is a decentralized exchange protocol focused on derivatives trading. It enables users to trade perpetual contracts and other derivative instruments in a non-custodial manner.
-
-### Architecture
-
-No product families or contracts are defined in the provided inventory, so no relationships can be described.
+Ethereal DEX is a non-custodial decentralized exchange for spot and perpetual trading, built on the Ethena Network and using USDe as primary collateral.
 
 ## Audit Coverage Summary
 

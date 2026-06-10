@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "trisolaris",
-  "generated_at": "2026-05-31T11:13:50.666Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:17.592Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "trisolaris",
     "tier": 1,
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Trisolaris is a decentralized exchange (DEX) on Aurora that enables users to swap tokens, provide liquidity, and earn yield through automated market-making and farming. It includes a native TRI token and supports cross-chain farming via AutoFarmV2.",
+    "project_purpose": "Trisolaris is a decentralized exchange in the Aurora/NEAR ecosystem that provides UniswapV2-style token swaps and liquidity pools through factory/router-based AMM contracts. The protocol has also included historical farming, staking, rewards, vesting, fee-maker, stable-swap/LP-maker, and related incentive contracts. Claims about current cross-chain farming or active TRI governance should be qualified unless supported by current documentation or verified contract functionality.",
     "relationship_narrative": "The UniswapV2Factory creates liquidity pools using the EvmErc20 token standard, while the Tri token serves as the protocol's incentive and governance asset. AutoFarmV2_CrossChain extends yield farming across chains, and the unnamed supporting contracts likely handle routing, periphery, or access control for the core DEX operations.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 119,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "meeds-finance",
-  "generated_at": "2026-05-31T09:51:26.703Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:07.449Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "meeds-finance",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Meeds Finance is a farming protocol that allows users to stake tokens and earn rewards, likely through NFT-based reward mechanisms.",
+    "project_purpose": "Meeds Finance is a Web3 community app and decentralized engagement platform with an Ethereum token, staking, and reward components.",
     "relationship_narrative": "The TokenFactory registry supports the creation and management of tokens used within the Meeds Finance ecosystem, while the proxy contracts (DeedTenantRentingProxy and DeedTenantProvisioningProxy) provide upgradeable infrastructure for renting and provisioning deeds, likely integrating with the core staking and reward mechanisms.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 4,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

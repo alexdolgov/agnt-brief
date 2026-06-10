@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Mitosis
 
-⚠️ Lifecycle status: DEAD - TVL dropped 38.1% over 90 days
-
 ## Project Overview
 
 - Project: Mitosis (`mitosis`)
 - Website: [https://mitosis.org](https://mitosis.org)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-25T15:54:31.826Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Lifecycle: active (Tier 1, dead)
+- Generated: 2026-06-10T20:59:07.718Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, blast, bsc, ethereum, linea, manta, mantle, mode, optimism, scroll
-- Contract surface: 72 unique implementations (167 raw deployments)
-- DeFi Llama TVL: $1,475,153.90
-- On-chain TVL (included contracts): $329,076,424.01
-- TVL by chain: Ethereum $179,297,289.49 | Arbitrum $139,149,782.44 | Bsc $10,557,657.18 | Linea $71,694.91
+- Contract surface: 66 unique implementations (160 raw deployments)
+- DeFi Llama TVL: $1,489,070.06
+- On-chain TVL (included contracts): $329,004,729.11
+- TVL by chain: Ethereum $179,297,289.49 | Arbitrum $139,149,782.44 | Bsc $10,557,657.18
 
 ## Project Description
 
-Mitosis is an onchain capital allocator that aggregates multiple liquid staking and restaking tokens (e.g., uniETH, uniBTC, eETH, ezETH) into unified vault products. It enables cross-chain yield strategies and liquidity management through a system of vaults, tokens, and migration contracts.
+Mitosis is currently positioned as a Layer 1 / global execution layer for programmable liquidity, enabling liquidity to be deployed and coordinated across chains and applications. Historical vault, wrapper, token, and migration contracts related to LST/LRT or restaking aggregation should be treated as legacy or supporting components rather than the sole description of the current project.
 
 ### Architecture
 
@@ -25,36 +23,30 @@ All product families rely on the Mitosis Core Infrastructure for vault creation,
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/46 (4.3%)
-- Verified + Unaudited implementations: 44
+- Verified implementations audited: 0/43 (0.0%)
+- Verified + Unaudited implementations: 43
 - Verified by bytecode match: 0
-- Unverified implementations: 26
-- Unique implementations: 72
-- Raw deployments: 167
-- Audits discovered: 3
-- Scoreable audits (matched contracts): 1
-- ASD (verified + unaudited TVL): $329,076,424.01
+- Unverified implementations: 23
+- Unique implementations: 66
+- Raw deployments: 160
+- Audits discovered: 2
+- Scoreable audits (matched contracts): 0
+- ASD (verified + unaudited TVL): $329,004,729.11
 - Latest audit: 2025-09 (fresh)
-- Staleness: 1 fresh, 1 aging, 1 stale, 0 unknown
-- Tier 1 coverage: 4.3% (Code4rena)
-- Note: This protocol is classified as [dead]. ASD of $329,076,424.01 represents exposure in a protocol with dead activity.
+- Staleness: 1 fresh, 1 aging, 0 stale, 0 unknown
+- Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| Code4rena | Tier 1 | 2 | 4.3% | 2024-04 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (2)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| Cap | unknown | blast | 11 deployments: ethereum `0x451d79...2b16f9`; optimism `0xb883ee...92b1d2`; arbitrum `0x1d28de...c57c56`; arbitrum `0xb883ee...92b1d2`; arbitrum `0xbc986f...b158b2`; arbitrum `0xdd8bea...00d9aa`; linea `0x2bfbb9...f567d4`; linea `0x3cda62...fc0f1f`; linea `0x8f34cf...3ebb4c`; linea `0xcd3287...f33a91`; blast [`0x096430...4169de`](./contracts/blast-81457/0x096430ef0a653c067df32e93ff77090e084169de/) | ✅ Audited |
-| CCDMHost | unknown | linea | 2 deployments: arbitrum `0x7671f4...4e0c41`; linea [`0x5bd649...a4b5e2`](./contracts/linea-59144/0x5bd64950b2885070e172d01e49b69842a5a4b5e2/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (44)
+### ⚠️ Verified + Unaudited (43)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -65,7 +57,6 @@ All product families rely on the Mitosis Core Infrastructure for vault creation,
 | XERC20 | token | arbitrum | [`0x241609...cceea5`](./contracts/arbitrum-42161/0x2416092f143378750bb29b79ed961ab195cceea5/) | ⚠️ Unaudited |
 | ExtensibleVaultWithExtraData | core_logic | bsc | 3 deployments: ethereum `0xdfb48a...c1042d`; bsc [`0x6d1703...1a5943`](./contracts/bsc-56/0x6d1703d913c74afaedd4b78deee7f32aa91a5943/); bsc `0xa5deb1...8df42d` | ⚠️ Unaudited |
 | BoringVault | core_logic | ethereum | [`0x917cee...909d88`](./contracts/ethereum-1/0x917cee801a67f933f2e6b33fc0cd1ed2d5909d88/) | ⚠️ Unaudited |
-| EtherfiL2LineaSyncPoolETH | core_logic | linea | [`0x823106...6d9cca`](./contracts/linea-59144/0x823106e745a62d0c2fc4d27644c62ade946d9cca/) | ⚠️ Unaudited |
 | TheoDepositVault | core_logic | arbitrum | 8 deployments: ethereum `0x0b75e1...eaa2fa`; arbitrum [`0x01f90a...43381d`](./contracts/arbitrum-42161/0x01f90a7b1c749f4a0b7d115120deda0e2343381d/); arbitrum `0x263b7b...55da11`; arbitrum `0x3ca8f1...319009`; arbitrum `0x54602e...2cee34`; linea `0x3ca8f1...319009`; linea `0xca538a...27630f`; linea `0xcf101e...95b28c` | ⚠️ Unaudited |
 | ATM | unknown | arbitrum | 4 deployments: arbitrum [`0x13cad3...56aab4`](./contracts/arbitrum-42161/0x13cad3aa86df1233dc9930a8f88f43237056aab4/); arbitrum `0xbc33eb...a1b46c`; linea `0x86c4dc...5f6e99`; linea `0xf57104...3ad1b3` | ⚠️ Unaudited |
 | BasicVault | core_logic | arbitrum | 3 deployments: arbitrum [`0x472edc...86e584`](./contracts/arbitrum-42161/0x472edca59afdb7dd4ade8d92caca1ebc2586e584/); arbitrum `0xf57104...3ad1b3`; linea `0x877b9e...0a6031` | ⚠️ Unaudited |
@@ -73,10 +64,10 @@ All product families rely on the Mitosis Core Infrastructure for vault creation,
 | BasicVaultMigration | operational_periphery | ethereum | 22 deployments: ethereum [`0x0109e9...fa5358`](./contracts/ethereum-1/0x0109e9f292516dab3e15efc61811c5e5a7fa5358/); ethereum `0x02ff1f...b94cf3`; ethereum `0x14c5a9...d8cdbf`; ethereum `0xa1ebd2...629182`; ethereum `0xe4cf2d...59a3ec`; optimism `0x5616fe...6821be`; optimism `0xea8edd...da0dd7`; bsc `0xadd585...1abfc2`; mantle `0x6ff000...dbce55`; arbitrum `0x3c09fb...beb0df`; arbitrum `0x73981b...f2a007`; arbitrum `0x7e8cff...53e8ba`; arbitrum `0x96d98f...087b23`; arbitrum `0xbed575...749471`; arbitrum `0xddded3...df94d8`; linea `0x3478de...b5eaa5`; linea `0x56ced4...b08768`; linea `0x6000ed...487e9b`; linea `0x96d6ce...d9ec2d`; blast `0x0817b8...ae31ef`; blast `0x8506fd...3f60a0`; scroll `0xa0eeb4...28bd28` | ⚠️ Unaudited |
 | BeaconProxy | registry | manta | 4 deployments: manta [`0x8735c8...61981e`](./contracts/manta-169/0x8735c80fb5aeff60d35c9d6e663758af7861981e/); mode `0xa30c15...dfa442`; mode `0xbed575...749471`; scroll `0xb9ca61...4308d6` | ⚠️ Unaudited |
 | BEP20USDT | token | bsc | [`0x55d398...197955`](./contracts/bsc-56/0x55d398326f99059ff775485246999027b3197955/) | ⚠️ Unaudited |
-| BucketRateLimiter | unknown | linea | [`0x3a1986...5a3975`](./contracts/linea-59144/0x3a19866d5e0fae0ce19adda617f9d2b9fd5a3975/) | ⚠️ Unaudited |
+| Cap | unknown | blast | 11 deployments: ethereum `0x451d79...2b16f9`; optimism `0xb883ee...92b1d2`; arbitrum `0x1d28de...c57c56`; arbitrum `0xb883ee...92b1d2`; arbitrum `0xbc986f...b158b2`; arbitrum `0xdd8bea...00d9aa`; linea `0x2bfbb9...f567d4`; linea `0x3cda62...fc0f1f`; linea `0x8f34cf...3ebb4c`; linea `0xcd3287...f33a91`; blast [`0x096430...4169de`](./contracts/blast-81457/0x096430ef0a653c067df32e93ff77090e084169de/) | ⚠️ Unaudited |
 | CCDMClient | unknown | arbitrum | 3 deployments: arbitrum [`0x877b9e...0a6031`](./contracts/arbitrum-42161/0x877b9ea7ce0358ef7982b2967ae7e538530a6031/); arbitrum `0x8c3bb8...ff522d`; linea `0xbc33eb...a1b46c` | ⚠️ Unaudited |
+| CCDMHost | unknown | linea | 2 deployments: arbitrum `0x7671f4...4e0c41`; linea [`0x5bd649...a4b5e2`](./contracts/linea-59144/0x5bd64950b2885070e172d01e49b69842a5a4b5e2/) | ⚠️ Unaudited |
 | EETH | unknown | ethereum | [`0x35fa16...118ac2`](./contracts/ethereum-1/0x35fa164735182de50811e8e2e824cfb9b6118ac2/) | ⚠️ Unaudited |
-| EtherfiL2ExchangeRateProvider | unknown | linea | 2 deployments: linea [`0x22c498...30f5dc`](./contracts/linea-59144/0x22c498b5c42c787c790f8f1fcef50b33a830f5dc/); linea `0x241a91...518344` | ⚠️ Unaudited |
 | EtherfiOFTUpgradeable | unknown | linea | [`0x1bf74c...0b8aa6`](./contracts/linea-59144/0x1bf74c010e6320bab11e2e5a532b5ac15e0b8aa6/) | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | base | [`0x833589...a02913`](./contracts/base-8453/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/) | ⚠️ Unaudited |
 | GnosisSafe | governance | ethereum | [`0x818116...d4cf3c`](./contracts/ethereum-1/0x8181164cb98cab2f6a52283da6f149cdf2d4cf3c/) | ⚠️ Unaudited |
@@ -115,7 +106,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (26)
+### ❓ Unverified (23)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -138,11 +129,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | arbitrum | `0xf91d94...f1c2d2` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0x13cad3...56aab4` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0x1d28de...c57c56` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0x20ee00...e38cc7` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0x4a6219...5ea382` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0x60be06...238755` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0x9b6544...cf42e0` | ❓ Unverified |
-| UnnamedContract | unknown | linea | `0xfd503f...04402c` | ❓ Unverified |
 | UnnamedContract | unknown | scroll | `0x0b75e1...eaa2fa` | ❓ Unverified |
 | UnnamedContract | unknown | scroll | `0x54602e...2cee34` | ❓ Unverified |
 | UnnamedContract | unknown | scroll | `0xb9e834...b86690` | ❓ Unverified |
@@ -152,7 +140,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Introduction](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8) | Code4rena | Contest | 2024-04 | stale | Direct | contract_name | 13 | low |
 | [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/mitosis-org/chain/203384fc62b6203525f486c5130fd484344c2668/audits/2025-05-22_Zellic_Mainnet.pdf) | Zellic | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
 | [2025-09-21_Zenith_Protocol.pdf](https://github.com/mitosis-org/protocol/blob/main/audits/2025-09-21_Zenith_Protocol.pdf) | Zenith | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
 
@@ -167,6 +154,7 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | [`0x13cad3...56aab4`](./contracts/arbitrum-42161/0x13cad3aa86df1233dc9930a8f88f43237056aab4/) | ATM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x472edc...86e584`](./contracts/arbitrum-42161/0x472edca59afdb7dd4ade8d92caca1ebc2586e584/) | BasicVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x877b9e...0a6031`](./contracts/arbitrum-42161/0x877b9ea7ce0358ef7982b2967ae7e538530a6031/) | CCDMClient | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x5bd649...a4b5e2`](./contracts/linea-59144/0x5bd64950b2885070e172d01e49b69842a5a4b5e2/) | CCDMHost | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x346e03...0e08f0`](./contracts/optimism-10/0x346e03f8cce9fe01dcb3d0da3e9d00dc2c0e08f0/) | OptimismMintableERC20 | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x74c691...f38c17`](./contracts/arbitrum-42161/0x74c6913c268d929ae06bafc3071fadd079f38c17/) | RefundUSDC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x4d11a4...9e87ce`](./contracts/arbitrum-42161/0x4d11a4ba2ded004c3fe5560a029050326d9e87ce/) | TheoVaultRoundsTracker | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -179,8 +167,8 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 11 |
 | upstream | 7 |
-| standard_library | 25 |
-| needs_review | 29 |
+| standard_library | 22 |
+| needs_review | 26 |
 
 ## Scope Matching Notes
 
@@ -188,8 +176,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: low=1
-- Match method counts: extraction_exact=13
+- Extraction confidence breakdown: n/a
+- Match method counts: n/a
 
 Zero-match audit list:
 

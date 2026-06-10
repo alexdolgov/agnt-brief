@@ -5,8 +5,8 @@
 - Project: Augur (`augur`)
 - Website: [https://augur.net/](https://augur.net/)
 - Lifecycle: active (Tier 0, 87.4% below peak)
-- Generated: 2026-06-10T20:48:32.362Z
-- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
+- Generated: 2026-06-10T20:58:57.824Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 39 unique implementations (42 raw deployments)
 - DeFi Llama TVL: $1,669,254.78

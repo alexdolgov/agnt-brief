@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "pnetwork",
-  "generated_at": "2026-05-31T10:15:36.676Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:09.349Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "pnetwork",
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "pNetwork is a cross-chain bridge protocol that enables the transfer of assets between different blockchains. It also provides yield farming and staking mechanisms through various vaults and reward contracts.",
+    "project_purpose": "pNetwork is primarily a cross-chain interoperability and bridge protocol, governed by the pNetwork DAO, for moving assets and messages across blockchains. Farming, staking, or reward contracts should be treated only as ancillary or legacy components where current pNetwork ownership and operation are independently verified, not as a core current product line.",
     "relationship_narrative": "The pNetwork family shares infrastructure through proxy contracts like ArcProxy and TransparentUpgradeableProxy, which manage upgradeable logic for tokens and gateways. Vaults and pools interact with reward contracts and external DeFi protocols to facilitate yield generation and cross-chain asset transfers.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 10,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "native",
-  "generated_at": "2026-05-31T10:01:20.461Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:08.048Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "native",
@@ -71,9 +71,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Native is a multi-chain DeFi protocol offering lending and decentralized exchange services. It enables users to supply assets into credit vaults for yield and to swap tokens via automated market maker pools, with cross-chain bridging capabilities.",
+    "project_purpose": "Native is an on-chain liquidity-building platform focused on token liquidity infrastructure. It uses the Native Swap Engine to route and execute swaps and the Native Credit Pool to support liquidity and yield opportunities, with related cross-chain bridging capabilities. It should not be framed as a traditional AMM-pool DEX unless the scoped contracts or documentation explicitly support that characterization.",
     "relationship_narrative": "Both product families share the NativePoolFactory for pool creation and NativeRouter for trade routing. AquaLpToken serves as the LP token for liquidity positions, while NativeBridge enables cross-chain asset transfers between deployments.",
     "product_family_count": 7
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 80,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mansory",
-  "generated_at": "2026-05-31T09:48:23.443Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:07.161Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "mansory",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Mansory is a Real World Asset (RWA) protocol on BSC that tokenizes assets using LayerZero's Omnichain Fungible Token (OFT) standard, enabling cross-chain transferability. It also includes lottery and NFT staking mechanisms for user engagement and rewards.",
+    "project_purpose": "Mansory / MNSRY should be described as a Mansory-branded utility or RWA-style token associated with luxury automotive benefits, VIP events, NFT-authenticated assets, and lifestyle rewards, consistent with the current DefiLlama framing and homepage evidence. The public homepage does not substantiate broad protocol-level claims that Mansory is primarily a BSC asset-tokenization, lottery, or staking protocol. Separately, the observed BSC contract surface includes components named MyOFTUpgradeable, IpfsProofLotteryUpgradeable, NftTierStaking variants, and URI-builder/helper bytecode, indicating OFT, lottery, staking, and metadata-related smart-contract components where supported by contract names. The project should not be presented as BSC-only: DefiLlama tracks Mansory on both Binance/BSC and Solana, and any BSC-only contract review should explicitly disclose that Solana coverage is excluded.",
     "relationship_narrative": "All contracts are deployed by the same deployer and share the TransparentUpgradeableProxy pattern, indicating a unified upgradeable infrastructure. The OFT token likely serves as the core asset used in the lottery and staking contracts.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 5,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -130,7 +135,7 @@
       "chain_name": "bsc",
       "address": "0xbc7dee0f48ca7aa4e9b7603329b0fc4b5e462d38",
       "name": "IpfsProofLotteryUpgradeable",
-      "role": "unknown",
+      "role": "proxy",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": null,
@@ -170,7 +175,7 @@
       "chain_name": "bsc",
       "address": "0x0fcfe33b46e5b21e5e96b722d4c85510198f9255",
       "name": "MyOFTUpgradeable",
-      "role": "unknown",
+      "role": "proxy",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "Mansory",

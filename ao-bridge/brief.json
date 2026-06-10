@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ao-bridge",
-  "generated_at": "2026-06-10T20:36:51.378Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "generated_at": "2026-06-10T20:58:57.599Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ao-bridge",

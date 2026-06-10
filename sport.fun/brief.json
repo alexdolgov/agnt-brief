@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sport.fun",
-  "generated_at": "2026-05-31T10:39:41.224Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.415Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "sport.fun",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Sport.fun is a prediction market protocol on Base that allows users to trade on the outcomes of sports events. It uses a pair-based mechanism where each market is represented by a proxy contract pointing to the FDFPairV3 implementation.",
-    "relationship_narrative": "The protocol consists of a single product family with two proxy contracts sharing the same FDFPairV3 implementation, indicating a standardized market structure. No additional infrastructure contracts are present in the inventory.",
+    "project_purpose": "Sport.fun is a Base fantasy soccer protocol where users trade fractional shares of football players backed by player performance. The protocol uses Gold, pegged to USDC, rather than a generic binary sports-event outcome prediction market model.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

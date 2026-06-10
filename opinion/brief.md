@@ -7,17 +7,17 @@
 - Project: OPINION (`opinion`)
 - Website: [https://app.opinion.trade?code=hV0KVj](https://app.opinion.trade?code=hV0KVj)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T08:49:52.276Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:08.805Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc, ethereum
 - Contract surface: 6 unique implementations (22 raw deployments)
-- DeFi Llama TVL: $7,536,512.33
+- DeFi Llama TVL: $7,320,963.87
 - On-chain TVL (included contracts): $142,523,237.16
 - TVL by chain: Ethereum $135,005,578.47 | Bsc $7,517,658.70
 
 ## Project Description
 
-OPINION is a prediction market protocol that allows users to create and trade conditional tokens representing outcomes of future events. It leverages a token-based system to facilitate decentralized betting and forecasting.
+Opinion is a prediction-market protocol on BNB Chain with contracts for conditional-token exchange execution and fee management. Protocol TVL should be treated separately from the OPN token market value and reported according to current DefiLlama protocol TVL methodology.
 
 ### Architecture
 

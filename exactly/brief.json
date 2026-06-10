@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "exactly",
-  "generated_at": "2026-05-31T08:00:29.882Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:03.956Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "exactly",
@@ -26,15 +26,15 @@
     "total_addresses": 1384,
     "unique_implementations": 65,
     "total_deployments": 1384,
-    "audited_contracts": 29,
-    "unaudited_contracts": 15,
-    "contracts_verified_audited": 29,
-    "contracts_verified_unaudited": 15,
+    "audited_contracts": 28,
+    "unaudited_contracts": 16,
+    "contracts_verified_audited": 28,
+    "contracts_verified_unaudited": 16,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 21,
-    "coverage_pct": 65.9,
-    "total_audits": 38,
-    "scoreable_audits": 33,
+    "coverage_pct": 63.6,
+    "total_audits": 32,
+    "scoreable_audits": 31,
     "dl_tvl_usd": 3986030.9627900003,
     "tvl_usd": 189515.62700637398,
     "tvl_source": "on_chain",
@@ -57,15 +57,20 @@
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 3,
-      "aging": 6,
-      "stale": 23,
-      "unknown": 6
+      "aging": 5,
+      "stale": 24,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Exactly is a decentralized lending protocol that enables users to supply and borrow assets through isolated lending markets. It features variable and fixed interest rates, a governance token (EXA), and staking mechanisms for rewards and protocol security.",
+    "project_purpose": "Exactly is a decentralized fixed- and variable-rate lending/credit protocol that enables users to supply and borrow assets. It includes the EXA governance token and staking mechanisms for rewards and protocol security.",
     "relationship_narrative": "Lending Markets rely on Auditor contracts for risk assessment and InterestRateModel for rate calculations, while Governance and Staking contracts manage EXA token incentives and protocol parameters. Security contracts like Firewall and TimelockController provide shared access control and transaction validation across all families.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 65,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -222,8 +227,7 @@
         "audit-7917",
         "audit-7918",
         "audit-7919",
-        "audit-7931",
-        "audit-7936"
+        "audit-7931"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -799,8 +803,7 @@
         "audit-7903",
         "audit-7906",
         "audit-7907",
-        "audit-7908",
-        "audit-7936"
+        "audit-7908"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2848,8 +2851,7 @@
         "audit-7920",
         "audit-7925",
         "audit-7926",
-        "audit-7931",
-        "audit-7936"
+        "audit-7931"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2964,8 +2966,7 @@
         }
       ],
       "audits_covering": [
-        "audit-7915",
-        "audit-7940"
+        "audit-7915"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -4051,7 +4052,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -4060,7 +4061,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -4069,16 +4070,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-7936"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -14913,146 +14912,13 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 7936,
-      "audit_key": "audit-7936",
-      "report_name": "access-control.md",
-      "report_url": "https://github.com/exactly/docs/blob/main/security/access-control.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Auditor",
-        "EXA",
-        "Market",
-        "TimelockController"
-      ],
-      "matched_contracts": 86,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7937,
-      "audit_key": "audit-7937",
-      "report_name": "audits.md",
-      "report_url": "https://github.com/exactly/docs/blob/main/security/audits.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7938,
-      "audit_key": "audit-7938",
-      "report_name": "bug-bounty-program.md",
-      "report_url": "https://github.com/exactly/docs/blob/main/security/bug-bounty-program.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7939,
-      "audit_key": "audit-7939",
-      "report_name": "emergency-procedure.md",
-      "report_url": "https://github.com/exactly/docs/blob/main/security/emergency-procedure.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7940,
-      "audit_key": "audit-7940",
-      "report_name": "hypernative.md",
-      "report_url": "https://github.com/exactly/docs/blob/main/security/hypernative.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Pauser"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7941,
-      "audit_key": "audit-7941",
-      "report_name": "testing.md",
-      "report_url": "https://github.com/exactly/docs/blob/main/security/testing.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 7942,
       "audit_key": "audit-7942",
       "report_name": "2024-06-10-quantstamp.pdf",
       "report_url": "https://github.com/exactly/webauthn-owner-plugin/blob/main/audits/2024-06-10-quantstamp.pdf",
       "auditor": "Quantstamp",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -15083,8 +14949,8 @@
     {
       "auditor": "unknown",
       "tier": 2,
-      "contracts_covered": 12,
-      "coverage_pct": 27.3,
+      "contracts_covered": 10,
+      "coverage_pct": 22.7,
       "latest_audit": "2024-08"
     },
     {
@@ -15189,11 +15055,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 2381
+      "extraction_exact": 2294
     },
     "extraction_confidence_counts": {
-      "high": 31,
-      "low": 2
+      "high": 31
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -15201,22 +15066,6 @@
       {
         "audit_id": 7924,
         "report_name": "Cryptecon_Economics_of_the_Exactly_Protocol(Sep-22).pdf"
-      },
-      {
-        "audit_id": 7937,
-        "report_name": "audits.md"
-      },
-      {
-        "audit_id": 7938,
-        "report_name": "bug-bounty-program.md"
-      },
-      {
-        "audit_id": 7939,
-        "report_name": "emergency-procedure.md"
-      },
-      {
-        "audit_id": 7941,
-        "report_name": "testing.md"
       }
     ],
     "inherited_remapped_matches": []

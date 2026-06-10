@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "t-rize",
-  "generated_at": "2026-05-31T10:53:05.421Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:17.160Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "t-rize",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "T RIZE is a protocol for tokenizing real-world assets (RWA), enabling on-chain representation and transfer of off-chain assets. It provides a single token contract on Base that likely represents fractional ownership or claims on underlying real-world assets.",
-    "relationship_narrative": "The protocol consists of a single product family with one core token contract; there are no additional families or shared infrastructure to relate.",
+    "project_purpose": "T-RIZE is an institutional-grade real-world asset (RWA) tokenization platform/infrastructure. Its broader platform describes tokenization of assets such as bonds, ETFs, funds, real estate, and commodities, including Canton-based infrastructure and decentralized machine-learning enhancements. The currently documented DefiLlama-tracked EVM surface is limited to the RizeToken contract on Base; this should not be interpreted as the entirety of the broader T-RIZE infrastructure or as confirmed evidence of fractional ownership or claims on underlying assets.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

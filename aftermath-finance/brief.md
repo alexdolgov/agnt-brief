@@ -5,8 +5,8 @@
 - Project: Aftermath Finance (`aftermath-finance`)
 - Website: [https://aftermath.finance?ref=defillama](https://aftermath.finance?ref=defillama)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:16:00.051Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.583Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $4,981,345.38
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Aftermath Finance is a Sui-based on-chain trading platform offering spot and perpetuals trading, smart-router swaps, afSUI liquid staking, LP pools, and farm rewards across its Sui Move protocol components.
 
 ## Audit Coverage Summary
 

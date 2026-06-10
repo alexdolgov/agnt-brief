@@ -5,8 +5,8 @@
 - Project: The Idols (`the-idols`)
 - Website: [https://www.theidols.io](https://www.theidols.io)
 - Lifecycle: active (Tier 0, 57.7% below peak)
-- Generated: 2026-05-31T10:59:09.639Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:17.477Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 17 unique implementations (20 raw deployments)
 - DeFi Llama TVL: $5,665,507.10
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-The Idols is a reserve currency protocol on Ethereum that issues the VirtueToken, manages idol NFTs, and provides staking rewards. It aims to create a decentralized reserve asset backed by a basket of tokens and NFTs.
+The Idols is an Ethereum NFT collection and membership community centered on 10,000 Idols NFTs, VirtueToken, and associated marketplace and rewards/staking mechanics. Current evidence supports NFT ownership, staked ETH/NFT rewards, VirtueToken, and protocol token/NFT holder rewards, but not a basket-backed reserve asset model.
 
 ### Architecture
 

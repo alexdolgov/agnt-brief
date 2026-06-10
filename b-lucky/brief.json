@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "b-lucky",
-  "generated_at": "2026-06-10T20:52:46.606Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-b05b29-7564",
+  "generated_at": "2026-06-10T20:58:57.995Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "b-lucky",

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "defil",
-  "generated_at": "2026-05-24T17:29:43.871Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:01.687Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "defil",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1801797.9174900001,
+    "dl_tvl_usd": 1801686.8490699998,
     "tvl_usd": 1007207.1793767853,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -61,6 +61,11 @@
     "project_purpose": "DeFIL is a decentralized lending protocol that allows users to deposit Filecoin (FIL) and earn interest, while also providing a staking mechanism for its governance token DFL. It issues derivative tokens like FILST and EFIL to represent staked or lent positions.",
     "relationship_narrative": "The DeFIL family shares a common deployer cluster and uses proxy patterns (Unitroller, RewardPoolDelegator) for upgradeability. Staking contracts interact with the DFL token and likely feed into the lending market represented by CErc20Delegator, while UniswapV2 pairs provide liquidity for DFL and derivative tokens.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 51,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

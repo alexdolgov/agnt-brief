@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "loopring",
-  "generated_at": "2026-05-31T09:49:31.418Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:07.063Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "loopring",
@@ -70,9 +70,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Loopring is a decentralized exchange protocol that enables high-throughput, low-cost trading and automated market making on Ethereum and Base. It uses zkRollup technology to batch off-chain order matching with on-chain settlement, providing a non-custodial trading experience.",
+    "project_purpose": "Loopring is a zkRollup Layer 2 exchange and payment protocol that uses zero-knowledge rollups to provide high-throughput, low-cost, non-custodial trading, transfers, and payments. Its system includes DEX and AMM functionality with off-chain batching/order processing and on-chain settlement. DefiLlama currently reports Loopring TVL across Ethereum, Base, and Taiko; any contract-surface or coverage analysis should distinguish the indexed contract set from the full DefiLlama-reported chain set.",
     "relationship_narrative": "The ExchangeV3 contract serves as the central hub for trade settlement, while numerous LoopringAmmPool proxies provide liquidity for individual token pairs. Supporting infrastructure like the PriceOracleDelegate and OfficialGuardian ensures accurate pricing and security across the system.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 145,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

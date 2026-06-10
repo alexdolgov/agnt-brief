@@ -5,17 +5,17 @@
 - Project: Orbit Bridge (`orbit-bridge`)
 - Website: [https://bridge.orbitchain.io](https://bridge.orbitchain.io)
 - Lifecycle: active (Tier 0, 94.4% below peak)
-- Generated: 2026-05-22T18:30:47.758Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:08.846Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: celo, ethereum, heco, klaytn, polygon
 - Contract surface: 22 unique implementations (25 raw deployments)
-- DeFi Llama TVL: $17,870,567.14
+- DeFi Llama TVL: $17,464,468.32
 - On-chain TVL (included contracts): $640,230.40
 - TVL by chain: Ethereum $631,043.73 | Polygon $9,164.65 | Celo $22.03
 
 ## Project Description
 
-Orbit Bridge is a cross-chain bridge that enables users to transfer assets between multiple blockchains, including Ethereum, Polygon, Celo, Heco, and Klaytn. It uses vault contracts to lock assets on one chain and mint or release corresponding tokens on another.
+Orbit Bridge is an active interchain bridge supporting a broad set of EVM and non-EVM networks across 15+ chains. It enables cross-chain asset transfers using bridge/vault or equivalent custody contracts that lock, release, or otherwise custody assets on source and destination chains. The currently listed contracts represent only a partial EVM contract surface and should not be treated as complete coverage of all current TVL-bearing Orbit Bridge deployments.
 
 ### Architecture
 

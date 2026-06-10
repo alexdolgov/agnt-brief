@@ -5,8 +5,8 @@
 - Project: Acre (`acre`)
 - Website: [https://acre.fi](https://acre.fi)
 - Lifecycle: active (Tier 0, 31.9% below peak)
-- Generated: 2026-06-10T20:10:38.609Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.464Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 220 unique implementations (568 raw deployments)
 - DeFi Llama TVL: $4,266,336.18

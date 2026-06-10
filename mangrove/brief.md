@@ -5,17 +5,17 @@
 - Project: Mangrove (`mangrove`)
 - Website: [https://www.mangrove.exchange](https://www.mangrove.exchange)
 - Lifecycle: active (Tier 0, 47.5% below peak)
-- Generated: 2026-05-23T22:26:07.539Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:07.158Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, blast, sei
 - Contract surface: 68 unique implementations (147 raw deployments)
-- DeFi Llama TVL: $4,250,949.45
+- DeFi Llama TVL: $4,261,402.60
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Mangrove is a decentralized exchange protocol that enables on-chain limit order books and automated market making. It provides infrastructure for liquidity provision, order matching, and vault-based strategies across multiple chains.
+Mangrove is an EVM-based order-book DEX and adaptive liquidity protocol that lets liquidity providers post programmable offers, restake otherwise idle liquidity, and run market-making or vault-based strategies across supported deployments.
 
 ### Architecture
 
@@ -23,30 +23,29 @@ The Mangrove core DEX provides the base order book, while Vaults and Strategies 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 10/41 (24.4%)
-- Verified + Unaudited implementations: 31
+- Verified implementations audited: 9/41 (22.0%)
+- Verified + Unaudited implementations: 32
 - Verified by bytecode match: 0
 - Unverified implementations: 27
 - Unique implementations: 68
 - Raw deployments: 147
-- Audits discovered: 8
-- Scoreable audits (matched contracts): 7
+- Audits discovered: 6
+- Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-10 (aging)
-- Staleness: 0 fresh, 1 aging, 7 stale, 0 unknown
-- Tier 1 coverage: 17.1% (ChainSecurity, Code4rena)
+- Staleness: 0 fresh, 1 aging, 5 stale, 0 unknown
+- Tier 1 coverage: 14.6% (ChainSecurity)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
 | ChainSecurity | Tier 1 | 6 | 14.6% | 2023-11 |
-| Code4rena | Tier 1 | 3 | 7.3% | 2024-02 |
 | unknown | Tier 2 | 3 | 7.3% | 2024-10 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (10)
+### ✅ Verified + Audited (9)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -59,9 +58,8 @@ The Mangrove core DEX provides the base order book, while Vaults and Strategies 
 | MangroveChainlinkOracleFactory | operational_periphery | arbitrum | 2 deployments: base `0x9d05c7...9e5712`; arbitrum [`0x31c47e...1f2587`](./contracts/arbitrum-42161/0x31c47e3f442f521e1c65b5b626ac2e978c1f2587/) | ✅ Audited |
 | MangroveOrder | unknown | arbitrum | 8 deployments: sei `0x5ba076...75928b`; base `0xa3c363...2adf36`; arbitrum [`0x0ea85f...28e3fa`](./contracts/arbitrum-42161/0x0ea85f9e19763eec0e376f988fe9a19c9328e3fa/); arbitrum `0x50793d...d2ffcc`; blast `0x50793d...d2ffcc`; blast `0x83251e...32d80e`; blast `0x920474...08e418`; blast `0xded8e2...b0a424` | ✅ Audited |
 | MangroveVaultFactory | registry | base | 4 deployments: sei `0xd6cc0b...ba369e`; base [`0x26a0e4...1dafa5`](./contracts/base-8453/0x26a0e433f89317ca5585945198a5f0760c1dafa5/); base `0xda5ecd...8cce79`; arbitrum `0x6b82ce...dab41a` | ✅ Audited |
-| RouterProxyFactory | adapter | base | 4 deployments: sei `0x91d001...516d93`; base [`0x2926cc...af54e9`](./contracts/base-8453/0x2926cc3977f93a51465f9742c548e67220af54e9/); arbitrum `0x396614...77e0f1`; blast `0x79c3f2...8b7131` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (31)
+### ⚠️ Verified + Unaudited (32)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -90,6 +88,7 @@ The Mangrove core DEX provides the base order book, while Vaults and Strategies 
 | MockTokenFactory | registry | base | [`0x789a28...603151`](./contracts/base-8453/0x789a28a6fcc5682365e5144e05c04d4af4603151/) | ⚠️ Unaudited |
 | OracleCombinerFactory | operational_periphery | base | 3 deployments: sei `0xfd8e85...fbeb19`; base [`0xb898c4...f3efed`](./contracts/base-8453/0xb898c4a986a1e4fd31b9818772f9ec16dbf3efed/); base `0xf9d160...5f4fa7` | ⚠️ Unaudited |
 | OracleLib | operational_periphery | sei | 2 deployments: sei [`0x555557...00acfd`](./contracts/sei-1329/0x5555571f9cbec32d6a8dcb5042b73cddd000acfd/); sei `0xb9d022...cc5b1d` | ⚠️ Unaudited |
+| RouterProxyFactory | adapter | base | 4 deployments: sei `0x91d001...516d93`; base [`0x2926cc...af54e9`](./contracts/base-8453/0x2926cc3977f93a51465f9742c548e67220af54e9/); arbitrum `0x396614...77e0f1`; blast `0x79c3f2...8b7131` | ⚠️ Unaudited |
 | SmartKandelSeeder | unknown | arbitrum | 2 deployments: base `0x614fe2...5d770a`; arbitrum [`0x43bb29...3ea7b7`](./contracts/arbitrum-42161/0x43bb29f47b7b14f252fba32d686f4902823ea7b7/) | ⚠️ Unaudited |
 | TakaraKandelSeeder | unknown | sei | 7 deployments: sei [`0x2f0c90...def08d`](./contracts/sei-1329/0x2f0c903973501859b9ebba0c6c6afffb07def08d/); sei `0x76aa9e...027eaf`; sei `0xa04bc2...8378ee`; sei `0xaccc07...4ce055`; sei `0xb9028a...6aecc4`; sei `0xdcc3d2...96af2c`; sei `0xf150ab...5e3f60` | ⚠️ Unaudited |
 | TakaraRouterProxyDeployer | adapter | sei | 3 deployments: sei [`0x1feae2...94cfbf`](./contracts/sei-1329/0x1feae24e399cdee3ad009570b6c1418b5494cfbf/); sei `0x7964be...c8663b`; sei `0xf63535...ce6c5b` | ⚠️ Unaudited |
@@ -147,11 +146,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [ChainSecurity_Mangrove_Association_(ADDMA)_Mangrove_audit-c7a5bd87cc411539606ff9082bb5c8a1.pdf](https://github.com/mangrovedao/audits/blob/main/core/v0/ChainSecurity_Mangrove_Association_(ADDMA)_Mangrove_audit-c7a5bd87cc411539606ff9082bb5c8a1.pdf) | Code4rena | Contest | 2023-03 | stale | Direct | contract_name | 4 | high |
 | [ChainSecurity_Mangrove_Association_ADDMA_Mangrove_Core_audit_2-d3425cee36b3dad60bfac272af328fd4.pdf](https://github.com/mangrovedao/audits/blob/main/core/v1/ChainSecurity_Mangrove_Association_ADDMA_Mangrove_Core_audit_2-d3425cee36b3dad60bfac272af328fd4.pdf) | ChainSecurity | Audit | 2023-11 | stale | Direct | contract_name | 4 | high |
 | [ChainSecurity_Mangrove_Association_ADDMA_Kandel_Strats_audit-db1b0f4516874f622d2a7f5bc7837f7c.pdf](https://github.com/mangrovedao/audits/blob/main/strats/v0/ChainSecurity_Mangrove_Association_ADDMA_Kandel_Strats_audit-db1b0f4516874f622d2a7f5bc7837f7c.pdf) | ChainSecurity | Audit | 2023-04 | stale | Direct | contract_name | 11 | high |
 | [ChainSecurity_Mangrove_Association_ADDMA_MangroveOrder_audit-7e289d0c705233f1d69d419d7689cab5.pdf](https://github.com/mangrovedao/audits/blob/main/strats/v0/ChainSecurity_Mangrove_Association_ADDMA_MangroveOrder_audit-7e289d0c705233f1d69d419d7689cab5.pdf) | ChainSecurity | Audit | 2023-03 | stale | Direct | contract_name | 8 | high |
-| [2024-02-14-NM-0162-Nethermind_SmartRouter_MangroveOrder_MangroveAmplifier_audit-26ca97c4578d39c3ca4cb82ae7a0f374.pdf](https://github.com/mangrovedao/audits/blob/main/strats/v1/2024-02-14-NM-0162-Nethermind_SmartRouter_MangroveOrder_MangroveAmplifier_audit-26ca97c4578d39c3ca4cb82ae7a0f374.pdf) | Code4rena | Contest | 2024-02 | stale | Direct | contract_name | 12 | high |
 | [ChainSecurity_Mangrove_Association_Mangrove_Strategies_audit-caa8fc55eadb26bf40eead2b80af0c99.pdf](https://github.com/mangrovedao/audits/blob/main/strats/v1/ChainSecurity_Mangrove_Association_Mangrove_Strategies_audit-caa8fc55eadb26bf40eead2b80af0c99.pdf) | ChainSecurity | Audit | 2023-11 | stale | Direct | contract_name | 25 | high |
 | [NM0208_FINAL_MANGROVE-684a6582cd4f3a18a25feeed05fb5482.pdf](https://github.com/mangrovedao/audits/blob/main/strats/v1/NM0208_FINAL_MANGROVE-684a6582cd4f3a18a25feeed05fb5482.pdf) | Nethermind | Audit | 2024-03 | stale | Direct | n/a | 0 | n/a |
 | [NM_0339_Mangrove_Vault_FINAL.pdf](https://github.com/mangrovedao/audits/blob/main/vaults/NM_0339_Mangrove_Vault_FINAL.pdf) | unknown | Audit | 2024-10 | aging | Direct | contract_name | 8 | high |
@@ -184,6 +181,7 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0x789a28...603151`](./contracts/base-8453/0x789a28a6fcc5682365e5144e05c04d4af4603151/) | MockTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xb898c4...f3efed`](./contracts/base-8453/0xb898c4a986a1e4fd31b9818772f9ec16dbf3efed/) | OracleCombinerFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sei | [`0x555557...00acfd`](./contracts/sei-1329/0x5555571f9cbec32d6a8dcb5042b73cddd000acfd/) | OracleLib | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x2926cc...af54e9`](./contracts/base-8453/0x2926cc3977f93a51465f9742c548e67220af54e9/) | RouterProxyFactory | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x43bb29...3ea7b7`](./contracts/arbitrum-42161/0x43bb29f47b7b14f252fba32d686f4902823ea7b7/) | SmartKandelSeeder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sei | [`0x2f0c90...def08d`](./contracts/sei-1329/0x2f0c903973501859b9ebba0c6c6afffb07def08d/) | TakaraKandelSeeder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sei | [`0x1feae2...94cfbf`](./contracts/sei-1329/0x1feae24e399cdee3ad009570b6c1418b5494cfbf/) | TakaraRouterProxyDeployer | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -205,8 +203,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=7
-- Match method counts: extraction_exact=72
+- Extraction confidence breakdown: high=5
+- Match method counts: extraction_exact=56
 
 Zero-match audit list:
 

@@ -7,17 +7,17 @@
 - Project: Tenderize (`tenderize`)
 - Website: [https://tenderize.me](https://tenderize.me)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-25T06:32:05.680Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:17.350Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum
 - Contract surface: 43 unique implementations (86 raw deployments)
-- DeFi Llama TVL: $1,077,988.00
+- DeFi Llama TVL: $1,095,343.00
 - On-chain TVL (included contracts): $332,491,563.37
 - TVL by chain: Ethereum $332,437,064.95 | Arbitrum $54,498.42
 
 ## Project Description
 
-Tenderize is a liquid staking protocol that issues liquid staking tokens (LSTs) representing staked assets, enabling users to earn staking rewards while maintaining liquidity. It also provides a decentralized exchange (TenderSwap) for trading these LSTs against their underlying assets.
+Tenderize is a liquid staking ecosystem that issues liquid staking tokens for validator-specific and multi-validator staking positions, allowing users to earn staking rewards while retaining liquidity. Its products include TenderSwap for instant unstaking and swaps between LSTs and underlying assets, and may also include current homepage-advertised components such as BeefyBank collateralized stablecoin borrowing/lending and the WAGYU governance/value-accrual token where those deployments are verified in scope.
 
 ### Architecture
 
@@ -31,11 +31,11 @@ Tenderize V1 and V2 are different generations of the liquid staking protocol, wi
 - Unverified implementations: 5
 - Unique implementations: 43
 - Raw deployments: 86
-- Audits discovered: 7
+- Audits discovered: 6
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $332,491,563.37
 - Latest audit: 2024-03 (stale)
-- Staleness: 0 fresh, 0 aging, 6 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 6 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $332,491,563.37 represents exposure in a protocol with declining activity.
 
@@ -124,7 +124,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://hacken.io/audits) | Hacken | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Halborn_Tenderize_Livepeer_Adapter_Smart_Contract_Security_Assessment_Report.pdf](https://github.com/Tenderize/staking/blob/main/audits/Halborn_Tenderize_Livepeer_Adapter_Smart_Contract_Security_Assessment_Report.pdf) | Halborn | Audit | 2023-09 | stale | Direct | n/a | 0 | n/a |
 | [Halborn_Tenderize_Polygon_Integration_Smart_Contract_Security_Assessment.pdf](https://github.com/Tenderize/staking/blob/main/audits/Halborn_Tenderize_Polygon_Integration_Smart_Contract_Security_Assessment.pdf) | Halborn | Audit | 2023-09 | stale | Direct | n/a | 0 | n/a |
 | [Halborn_Tenderize_The_Graph_Adapter_Smart_Contract_Security_Assessment_Report.pdf](https://github.com/Tenderize/staking/blob/main/audits/Halborn_Tenderize_The_Graph_Adapter_Smart_Contract_Security_Assessment_Report.pdf) | Halborn | Audit | 2023-09 | stale | Direct | n/a | 0 | n/a |
@@ -154,14 +153,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
 - Match method counts: extraction_exact=14
 
 Zero-match audit list:
 
-- [3213] DL audit link
 - [3214] Halborn_Tenderize_Livepeer_Adapter_Smart_Contract_Security_Assessment_Report.pdf
 - [3215] Halborn_Tenderize_Polygon_Integration_Smart_Contract_Security_Assessment.pdf
 - [3216] Halborn_Tenderize_The_Graph_Adapter_Smart_Contract_Security_Assessment_Report.pdf

@@ -7,8 +7,8 @@
 - Project: Ferro (`ferro`)
 - Website: [https://ferroprotocol.com](https://ferroprotocol.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T08:02:46.205Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:03.983Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: cronos
 - Contract surface: 21 unique implementations (21 raw deployments)
 - DeFi Llama TVL: $5,035,727.25
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Ferro is a decentralized exchange (DEX) on Cronos that enables users to swap tokens and provide liquidity. It uses a set of swap and liquidity pool contracts to facilitate trading and yield generation.
+Ferro is a stableswap AMM/DEX on Cronos focused on stablecoins and pegged-value assets, enabling users to swap, provide liquidity, stake, and access yield features.
 
 ### Architecture
 

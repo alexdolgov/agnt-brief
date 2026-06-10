@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Mento
 
-⚠️ Lifecycle status: DECLINING - TVL changed 28.0% over 90 days
-
 ## Project Overview
 
 - Project: Mento (`mento`)
 - Website: [https://www.mento.org/](https://www.mento.org/)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T09:55:03.944Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:07.465Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: celo, ethereum
 - Contract surface: 180 unique implementations (180 raw deployments)
 - DeFi Llama TVL: $19,575,119.00
@@ -23,13 +21,12 @@
 - Unverified implementations: 180
 - Unique implementations: 180
 - Raw deployments: 180
-- Audits discovered: 12
+- Audits discovered: 11
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-08 (fresh)
-- Staleness: 1 fresh, 4 aging, 4 stale, 3 unknown
+- Staleness: 1 fresh, 4 aging, 3 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -249,7 +246,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [2024-04-11-cyfrin-wormhole-evm-ntt.pdf](https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/audits/evm/2024-04-11-cyfrin-wormhole-evm-ntt.pdf) | Cyfrin | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
-| [2024-04-cantina-wormhole-evm-ntt.pdf](https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/audits/evm/2024-04-cantina-wormhole-evm-ntt.pdf) | Spearbit | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
 | [2024-07-23-cyfrin-wormhole-evm-ntt-diff-v1.1.0.pdf](https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/audits/evm/2024-07-23-cyfrin-wormhole-evm-ntt-diff-v1.1.0.pdf) | Cyfrin | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
 | [2024-03-28-ottersec-solana-ntt.pdf](https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/audits/solana/2024-03-28-ottersec-solana-ntt.pdf) | unknown | Audit | 2024-03 | stale | Direct | n/a | 0 | n/a |
 | [2024-04-12-neodyme-solana-ntt.pdf](https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/audits/solana/2024-04-12-neodyme-solana-ntt.pdf) | unknown | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
@@ -280,7 +276,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 12
+- Audits with zero matched contracts: 11
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -288,7 +284,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [6138] 2024-04-11-cyfrin-wormhole-evm-ntt.pdf
-- [6139] 2024-04-cantina-wormhole-evm-ntt.pdf
 - [6140] 2024-07-23-cyfrin-wormhole-evm-ntt-diff-v1.1.0.pdf
 - [6141] 2024-03-28-ottersec-solana-ntt.pdf
 - [6142] 2024-04-12-neodyme-solana-ntt.pdf

@@ -5,8 +5,8 @@
 - Project: Kasu (`kasu`)
 - Website: [https://kasu.finance/](https://kasu.finance/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T08:33:59.260Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:06.428Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 22 unique implementations (56 raw deployments)
 - DeFi Llama TVL: $10,291,597.97
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Kasu is a real-world asset (RWA) lending protocol on Base that enables users to deposit funds into lending pools and earn yield from off-chain credit facilities. It manages loan origination, clearing, and rewards through a system of upgradeable smart contracts.
+Kasu is a multi-chain real-world asset (RWA) and private-credit lending protocol with TVL on Base and XDC. It enables users to deposit funds into lending pools and earn yield from off-chain credit facilities, with loan origination, clearing, and rewards managed through upgradeable smart contracts. The currently captured contract surface appears to cover Base deployments only; XDC and any other chain deployments should be treated as out of scope unless separately indexed.
 
 ### Architecture
 

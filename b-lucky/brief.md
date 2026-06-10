@@ -5,8 +5,8 @@
 - Project: B-Lucky (`b-lucky`)
 - Website: [https://b-lucky.gg/](https://b-lucky.gg/)
 - Lifecycle: active (Tier 0, 47.7% below peak)
-- Generated: 2026-06-10T20:52:46.606Z
-- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
+- Generated: 2026-06-10T20:58:57.995Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 16 unique implementations (16 raw deployments)
 - DeFi Llama TVL: $1,016,214.98

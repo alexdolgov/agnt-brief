@@ -5,21 +5,22 @@
 - Project: LeveX (`levex`)
 - Website: [https://levex.com/en/assets/proof-of-reserve](https://levex.com/en/assets/proof-of-reserve)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T08:39:07.813Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:06.974Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 2 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $10,914,160.31
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-LeveX is a centralized exchange (CEX) operating on Ethereum, using Gnosis Safe multisig wallets for treasury and operational management.
-
-### Architecture
-
-All contracts are Gnosis Safe multisig wallets deployed by the same deployer, indicating a shared operational infrastructure for treasury and governance.
+LeveX is a centralized cryptocurrency exchange offering spot trading, leveraged futures trading, and proof-of-reserves across multiple chains. The listed Ethereum contracts are four recorded Safe/Gnosis Safe proxy wallet contracts and should be treated only as the currently recorded Ethereum multisig/wallet contract surface, not as a complete LeveX proof-of-reserve or reserve-address surface across all supported chains.
 
 ## Audit Coverage Summary
 

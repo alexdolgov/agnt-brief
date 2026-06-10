@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ethereal-dex",
-  "generated_at": "2026-05-26T19:20:55.504Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:02.314Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Ethereal DEX is a decentralized exchange protocol focused on derivatives trading. It enables users to trade perpetual contracts and other derivative instruments in a non-custodial manner.",
-    "relationship_narrative": "No product families or contracts are defined in the provided inventory, so no relationships can be described.",
+    "project_purpose": "Ethereal DEX is a non-custodial decentralized exchange for spot and perpetual trading, built on the Ethena Network and using USDe as primary collateral.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

@@ -7,17 +7,17 @@
 - Project: Hop Protocol (`hop-protocol`)
 - Website: [https://hop.exchange](https://hop.exchange)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-24T03:45:40.193Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:04.663Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, ethereum, gnosis, optimism, polygon
 - Contract surface: 402 unique implementations (876 raw deployments)
-- DeFi Llama TVL: $3,618,952.39
+- DeFi Llama TVL: $3,580,514.09
 - On-chain TVL (included contracts): $258,692,841.42
 - TVL by chain: Polygon $164,992,795.68 | Arbitrum $51,104,479.57 | Optimism $25,808,957.73 | Gnosis $16,786,608.43
 
 ## Project Description
 
-Hop Protocol is a cross-chain bridge that enables fast, trustless transfers of tokens between Ethereum and Layer 2 networks (Arbitrum, Optimism, Polygon, Gnosis) using a network of bonded validators and automated market makers to provide liquidity and swap assets across chains.
+Hop Protocol is a cross-chain bridge that enables fast transfers of tokens between Ethereum and supported Layer 2 networks using bonders/liquidity providers and AMM pools to provide liquidity and swap assets across chains.
 
 ### Architecture
 
@@ -31,19 +31,18 @@ The Cross-Chain Bridge family relies on the Liquidity Pools family to facilitate
 - Unverified implementations: 301
 - Unique implementations: 402
 - Raw deployments: 876
-- Audits discovered: 4
-- Scoreable audits (matched contracts): 4
+- Audits discovered: 2
+- Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $258,692,841.42
 - Latest audit: 2021-05 (stale)
-- Staleness: 0 fresh, 0 aging, 4 stale, 0 unknown
-- Tier 1 coverage: 10.9% (Trail of Bits)
+- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
+- Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $258,692,841.42 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Trail of Bits | Tier 1 | 11 | 10.9% | 2021-05 |
 | MonocerosAlpha | Tier 2 | 10 | 9.9% | 2021-04 |
 | Solidified | Tier 2 | 9 | 8.9% | 2021-05 |
 
@@ -485,8 +484,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Moreover, Hop has undergone audits by [Solidified]() and [Monoceros Alpha](https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/042021_MonocerosAlpha.pdf). A third audit by Trail of Bits is planned for September.\](https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/052021_Solidified.pdf) | Trail of Bits | Audit | 2021-05 | stale | Direct | contract_name | 129 | high |
-| [Moreover, Hop has undergone audits by [Solidified](https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/052021_Solidified.pdf) and [Monoceros Alpha](). A third audit by Trail of Bits is planned for September.\](https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/042021_MonocerosAlpha.pdf) | Trail of Bits | Audit | 2021-04 | stale | Direct | contract_name | 174 | high |
 | [* [Solidified Report (PDF)]()](https://s3.us-west-1.amazonaws.com/assets.hop.exchange/reports/Audit_Report_-_Hop_05.05.2021.pdf) | Solidified | Audit | 2021-05 | stale | Direct | contract_name | 129 | high |
 | [* [MonocerosAlpha (PDF)]()](https://s3.us-west-1.amazonaws.com/assets.hop.exchange/reports/MonocerosAlpha_-_Hop_Audit.pdf) | MonocerosAlpha | Audit | 2021-04 | stale | Direct | contract_name | 174 | high |
 
@@ -566,7 +563,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=4
-- Match method counts: extraction_exact=606
+- Extraction confidence breakdown: high=2
+- Match method counts: extraction_exact=303
 
 Fork inheritance lineage and inherited audits are included when available.

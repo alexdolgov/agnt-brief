@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "index-coop",
-  "generated_at": "2026-05-25T17:10:36.184Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:59:06.187Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "index-coop",
     "tier": 1,
@@ -32,27 +32,27 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 236,
-    "total_addresses": 601,
-    "unique_implementations": 236,
-    "total_deployments": 601,
+    "total_contracts": 235,
+    "total_addresses": 600,
+    "unique_implementations": 235,
+    "total_deployments": 600,
     "audited_contracts": 15,
-    "unaudited_contracts": 97,
+    "unaudited_contracts": 96,
     "contracts_verified_audited": 15,
-    "contracts_verified_unaudited": 97,
+    "contracts_verified_unaudited": 96,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 124,
-    "coverage_pct": 13.4,
-    "total_audits": 7,
+    "coverage_pct": 13.5,
+    "total_audits": 5,
     "scoreable_audits": 5,
-    "dl_tvl_usd": 13141320.128370002,
-    "tvl_usd": 28180066.608991325,
+    "dl_tvl_usd": 12566445.288150001,
+    "tvl_usd": 19435053.145872466,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 27843475.77,
+      "ethereum": 19098462.31,
       "polygon": 336590.84
     },
-    "asd_usd": 28180066.608991325,
+    "asd_usd": 19435053.145872466,
     "website_url": "https://www.indexcoop.com/",
     "chains": [
       "arbitrum",
@@ -70,13 +70,18 @@
       "fresh": 0,
       "aging": 2,
       "stale": 3,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Index Coop is a decentralized asset management protocol that creates and manages structured tokens (SetTokens) representing baskets of crypto assets. It offers index products, leveraged tokens, and yield-generating strategies, enabling users to gain diversified exposure or enhanced returns through a single token.",
+    "project_purpose": "Index Coop is an active decentralized asset management protocol focused on automated DeFi structured products, including leverage and yield strategies such as Smart Loops, alongside tokenized products built on SetToken infrastructure. Legacy index products remain part of the historical product set but should be distinguished from the current product focus on automated leverage and yield offerings.",
     "relationship_narrative": "The Bankless GMI and Web3 DATA families are standalone SetTokens that likely rely on the shared infrastructure of the Index Coop family, such as the Controller, IntegrationRegistry, and issuance modules, for their management and lifecycle operations. The Index Coop family itself contains a diverse set of SetTokens and supporting contracts that provide governance, leverage strategies, and exchange issuance capabilities, forming the backbone for all product families.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 235,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -536,37 +541,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
-      "name": "CErc20",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "Compound Finance",
-      "product_line": "Index Coop",
-      "tvl_usd": 8745013.463118859,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "CErc20",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 8745013.463118859,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 137,
@@ -10717,27 +10691,6 @@
   ],
   "audits": [
     {
-      "audit_id": 2023,
-      "audit_key": "audit-2023",
-      "report_name": "Active Bug Bounty Program",
-      "report_url": "https://immunefi.com/bug-bounty/indexcoop/information",
-      "auditor": "Immunefi",
-      "audit_type": "bug_bounty",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 2024,
       "audit_key": "audit-2024",
       "report_name": "IndexIcUSDAuditReport.md",
@@ -10821,27 +10774,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2027,
-      "audit_key": "audit-2027",
-      "report_name": "blog.openzeppelin.com/set-protocol-audit",
-      "report_url": "https://www.openzeppelin.com/news/set-protocol-audit",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 3576,
       "audit_key": "audit-3576",
       "report_name": "iosiro_set-protocol-aave-leverage-module-audit-draft.md",
@@ -10901,7 +10833,7 @@
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 13,
-      "coverage_pct": 11.6,
+      "coverage_pct": 11.7,
       "latest_audit": "2024-09"
     },
     {
@@ -11753,7 +11685,7 @@
   ],
   "origin_summary": {
     "native": 184,
-    "upstream": 7,
+    "upstream": 6,
     "standard_library": 0,
     "needs_review": 45
   },
@@ -11766,17 +11698,8 @@
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 2027,
-        "report_name": "blog.openzeppelin.com/set-protocol-audit"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
-  "active_bug_bounty": {
-    "platform": "Immunefi",
-    "url": "https://immunefi.com/bug-bounty/indexcoop/information",
-    "tier": 1
-  }
+  "active_bug_bounty": null
 }

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "piku",
-  "generated_at": "2026-05-22T19:28:46.152Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:09.323Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "piku",
@@ -26,16 +26,16 @@
     "total_addresses": 52,
     "unique_implementations": 29,
     "total_deployments": 52,
-    "audited_contracts": 4,
-    "unaudited_contracts": 23,
-    "contracts_verified_audited": 4,
-    "contracts_verified_unaudited": 23,
+    "audited_contracts": 0,
+    "unaudited_contracts": 27,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 27,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
-    "coverage_pct": 14.8,
-    "total_audits": 3,
-    "scoreable_audits": 1,
-    "dl_tvl_usd": 17125567.17164,
+    "coverage_pct": 0,
+    "total_audits": 2,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 17202624.48695,
     "tvl_usd": 21373677.08371292,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -48,19 +48,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2024-06",
-    "audit_freshness": "aging",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 1,
+      "aging": 0,
       "stale": 0,
       "unknown": 2
     }
   },
   "topography": {
-    "project_purpose": "Piku is a yield protocol built on Pendle that tokenizes and trades yield-bearing assets. It offers structured products through Standardized Yield (SY) tokens, Principal Tokens (PT), and Yield Tokens (YT), enabling users to speculate on or hedge yield fluctuations.",
+    "project_purpose": "Piku is a Piku Finance/PikuDAO yield-optimized stablecoin and global yield gateway. Its purpose should be described around providing access to optimized stablecoin yield and related Piku product contracts, while distinguishing those product contracts from any upstream Inverter framework components. Pendle should not be described as the core protocol unless independently evidenced as an integration or held position.",
     "relationship_narrative": "The Piku family relies on the Oracle Module for asset pricing and the Token & Workflow Contracts for governance token issuance. All families share the Inverter beacon proxy pattern for upgradeability and access control, with Piku's SY wrappers and market depending on external Pendle infrastructure.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 29,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -323,16 +328,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-1966"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -356,16 +359,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-1966"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -389,16 +390,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-1966"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -1045,16 +1044,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-1966"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -1205,56 +1202,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1966,
-      "audit_key": "audit-1966",
-      "report_name": "* **Report:** <>&#x20;",
-      "report_url": "https://github.com/InverterNetwork/contracts/blob/main/audits/2024-06-19-macro.pdf",
-      "auditor": "0xMacro",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AUT_Roles_v1",
-        "AUT_TokenGated_Roles_v1",
-        "BancorFormula",
-        "BondingCurveBase_v1",
-        "ERC20Issuance_v1",
-        "ERC20PaymentClientBase_v1",
-        "FM_BC_Bancor_Redeeming_VirtualSupply_v1",
-        "FeeManager_v1",
-        "Governor_v1",
-        "InverterBeaconProxy_v1",
-        "InverterBeacon_v1",
-        "LM_PC_KPIRewarder_v1",
-        "LM_PC_Staking_v1",
-        "LibMetadata",
-        "ModuleFactory_v1",
-        "ModuleManagerBase_v1",
-        "Module_v1",
-        "OptimisticOracleIntegrator",
-        "OrchestratorFactory_v1",
-        "Orchestrator_v1",
-        "PP_Simple_v1",
-        "PP_Streaming_v1",
-        "RedeemingBondingCurveBase_v1",
-        "SafeMath",
-        "TransactionForwarder_v1",
-        "Utils",
-        "VirtualCollateralSupplyBase_v1",
-        "VirtualIssuanceSupplyBase_v1"
-      ],
-      "matched_contracts": 4,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 1967,
       "audit_key": "audit-1967",
       "report_name": "* **Report**: <>&#x20;",
@@ -1276,15 +1223,7 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [
-    {
-      "auditor": "0xMacro",
-      "tier": 2,
-      "contracts_covered": 4,
-      "coverage_pct": 14.8,
-      "latest_audit": "2024-06"
-    }
-  ],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -1299,8 +1238,48 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x2f76563dd0d491eb6c128f846cff2a98047c2fb3",
+      "name": "AUT_Roles_v1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7e0305b212df3fb56366251c054c07748bf9a797",
+      "name": "FM_PC_Oracle_Redeeming_v1",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x433471901ba1a8bde764e8421790c7d9bab33552",
+      "name": "LM_Oracle_Permissioned_v1",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x2e4039e8e31475d65dc00293c366fdbfbbc02dc3",
       "name": "PIKU",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5a2d08b194e1764b0ff271c691b6a46fa10f6fd2",
+      "name": "PP_Queue_ManualExecution_v1",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -1324,12 +1303,8 @@
     "needs_review": 2
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 4
-    },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [

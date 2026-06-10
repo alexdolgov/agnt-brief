@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zeebu",
-  "generated_at": "2026-05-23T15:49:54.279Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:19.482Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "zeebu",
@@ -35,7 +35,7 @@
     "coverage_pct": 66.7,
     "total_audits": 3,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 5392905.26692,
+    "dl_tvl_usd": 5210326.346030001,
     "tvl_usd": 87874707.28615615,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -63,9 +63,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Zeebu is a DeFi protocol that provides a token (ZeebuToken) and a voting escrow mechanism for token locking and governance. It operates on Ethereum and Base, enabling users to stake tokens and participate in protocol decisions.",
+    "project_purpose": "Zeebu is a blockchain-based B2B/neobank settlement platform for telecom carriers that uses the ZBU token as a loyalty and settlement token. The reviewed contract surface includes ZBU token deployments, voting-escrow/token-locking related contracts, Lens periphery contracts, and Launchpad contracts on Ethereum and Base; staking and voting-escrow functionality should be described as associated contract functionality rather than the core project purpose. DefiLlama also currently lists Binance/BSC staking activity for Zeebu, so any Ethereum/Base-only review should explicitly state that Binance/BSC staking is excluded from the covered contract surface.",
     "relationship_narrative": "The ZeebuToken is deployed behind multiple TransparentUpgradeableProxy instances, and the Voting Escrow contracts interact with the token to enable locking and governance functionality.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 8,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

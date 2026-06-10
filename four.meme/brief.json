@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "four.meme",
-  "generated_at": "2026-05-23T18:50:22.710Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:04.053Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "four.meme",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4894948.33061,
-    "tvl_usd": 4894948.33061,
+    "dl_tvl_usd": 4904447.57921,
+    "tvl_usd": 4904447.57921,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Four.meme is a launchpad protocol on BSC that enables users to create and trade meme tokens. It provides a platform for token launches and initial liquidity events.",
-    "relationship_narrative": "The two proxy contracts likely represent the main launchpad logic and a supporting module (e.g., fee handler or token factory), sharing the same product family with no external dependencies.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -100,14 +105,14 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x5c952063c7fc8610ffdb798152d69f0b9550762b",
-      "name": "Proxy (impl: 0xd63cbf542c7096b1df52c7e97644f365c0ebc6fe)",
+      "name": "Proxy (impl: 0x7f9411ea1a34b0b0d91a54b4776d00e78a329bbf)",
       "role": "proxy",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "four.meme",
       "tvl_usd": null,
       "is_proxy": true,
-      "impl_address": "0xd63cbf542c7096b1df52c7e97644f365c0ebc6fe",
+      "impl_address": "0x7f9411ea1a34b0b0d91a54b4776d00e78a329bbf",
       "impl_name": null,
       "deployments": [
         {

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "giza",
-  "generated_at": "2026-05-31T08:10:28.230Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.325Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "giza",
@@ -70,9 +70,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Giza is a decentralized lending and borrowing protocol that enables users to supply assets to earn yield and borrow against collateral. It integrates with Morpho Blue and Compound-based markets to offer optimized lending vaults and interest-bearing tokens.",
+    "project_purpose": "Giza is autonomous financial intelligence / AI-agent infrastructure for non-custodial DeFi strategy execution. Its agents can route and manage capital across DeFi venues and strategies, including lending markets such as Morpho or Compound where applicable, but Giza itself should not be described as a standalone decentralized lending and borrowing protocol.",
     "relationship_narrative": "The Giza family combines Compound-based lending markets (MErc20 tokens) with Morpho vaults (MetaMorpho) to optimize yield. Shared infrastructure includes data providers and a registry beacon proxy, while fTokens represent user positions across these markets.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 16,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -330,7 +335,7 @@
       "product_line": "Giza",
       "tvl_usd": null,
       "is_proxy": true,
-      "impl_address": "0x4a89f4ff11fb24333e2d235ab1a0d31d3506e6c0",
+      "impl_address": "0x731fd1ba790e97d61ef16b031cf76ffe4e70e765",
       "impl_name": "CometWithExtendedAssetList",
       "deployments": [
         {

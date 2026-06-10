@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Lendle
 
-⚠️ Lifecycle status: SUNSETTING - TVL dropped 89.3% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 89.3% over 90 days
 
 ## Project Overview
 
 - Project: Lendle (`lendle`)
 - Website: [https://www.lendle.xyz/](https://www.lendle.xyz/)
-- Lifecycle: sunsetting (Tier 1, sunsetting)
-- Generated: 2026-05-25T02:50:51.863Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 1, sunsetting)
+- Generated: 2026-06-10T20:59:06.961Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: mantle
 - Contract surface: 64 unique implementations (181 raw deployments)
-- DeFi Llama TVL: $1,248,255.00
+- DeFi Llama TVL: $1,130,408.00
 - On-chain TVL (included contracts): $60,666.62
 - TVL by chain: Mantle $60,666.62
 
 ## Project Description
 
-Lendle is a decentralized lending and yield optimization protocol on Mantle. It enables users to supply and borrow assets through pooled lending markets, earn yield via automated vaults, and participate in staking and incentive programs.
+Lendle is a Mantle-based decentralized lending and borrowing money market. The protocol is currently sunsetting/shutting down, so current risk and coverage should be assessed in that context. Yield vaults, staking, and incentive programs should be treated as secondary or historical components unless confirmed active in the current contract surface.
 
 ### Architecture
 
@@ -31,13 +31,13 @@ The Lendle lending markets and Lendle Yield vaults share the LendleToken for inc
 - Unverified implementations: 20
 - Unique implementations: 64
 - Raw deployments: 181
-- Audits discovered: 10
+- Audits discovered: 9
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $5,556.53
 - Latest audit: 2025-07 (fresh)
-- Staleness: 1 fresh, 0 aging, 1 stale, 8 unknown
+- Staleness: 1 fresh, 0 aging, 1 stale, 7 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [sunsetting]. ASD of $5,556.53 represents exposure in a protocol with sunsetting activity.
+- Note: This protocol is classified as [declining]. ASD of $5,556.53 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -153,7 +153,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [{% embed url="<>" %}](https://drive.google.com/file/d/1xassyT4bMz6I7eSJmmuUi1-esZJKjKLf/view?usp=sharing) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [{% embed url="<>" %}](https://drive.google.com/file/d/1ahPwg-QK4zQGp6dHADmwwvfVFcIacSKJ/view?usp=sharing) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [{% embed url="<>" %}](https://drive.google.com/file/d/1mlOeteL6Oi9HM0FBakaKnwsivIlGcvMH/view?usp=sharing) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [The code for our V1 lendle.xyz application is a straight-up fork from Geist, configured by our devs. Geist code has been audited by [solidity finance]() and has secured over $2 billion in TVL. \](https://sourcehat.com/audits/GeistProtocol) | SourceHat | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -186,7 +185,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 9
+- Audits with zero matched contracts: 8
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=51
@@ -201,6 +200,5 @@ Zero-match audit list:
 - [3148] {% embed url="<>" %}
 - [3149] {% embed url="<>" %}
 - [3150] {% embed url="<>" %}
-- [3151] The code for our V1 lendle.xyz application is a straight-up fork from Geist, configured by our devs. Geist code has been audited by [solidity finance]() and has secured over $2 billion in TVL. \
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "pickle",
-  "generated_at": "2026-05-25T14:19:40.212Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:09.318Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "pickle",
@@ -45,7 +45,7 @@
     "coverage_pct": 2.7,
     "total_audits": 4,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 4727983.849109999,
+    "dl_tvl_usd": 4646287.41258,
     "tvl_usd": 2881379.5437131044,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Pickle is a yield aggregator that optimizes returns on deposited assets by automatically compounding rewards and shifting funds between strategies. It uses its native PICKLE token for governance and incentives.",
+    "project_purpose": "Pickle is an auto-compounding yield aggregator for DeFi and LP positions. PICKLE can be locked or staked as DILL, which is used for governance, revenue sharing, and farm APY boosts.",
     "relationship_narrative": "The Timelocks & Multisig family governs the Pickle family by controlling parameters like gauge weights and reward emissions. The MasterChef contract likely distributes PICKLE rewards to stakers, bridging governance decisions to user incentives.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 235,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

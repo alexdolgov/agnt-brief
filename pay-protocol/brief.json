@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "pay-protocol",
-  "generated_at": "2026-05-31T10:15:25.076Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:09.200Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "pay-protocol",
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Pay Protocol is a payments-focused DeFi protocol on Ethereum that facilitates on-chain transactions, likely involving token swaps, payment routing, or settlement logic. Its contract surface suggests a unified system for managing payment flows.",
+    "project_purpose": "Pay Protocol is a non-custodial crypto payment and wallet infrastructure product for B2C businesses. It provides self-custodial checkout and wallet-as-a-service infrastructure, keyless smart-contract wallets, APIs, gas-optimized sweeping, and system-wide multi-signature controls across multiple supported networks. The available evidence does not support describing token swaps as a core product or scoping the project as Ethereum-only.",
     "relationship_narrative": "All contracts are deployed by the same address and belong to a single product family, indicating a tightly integrated system. The supporting contracts likely provide shared infrastructure such as access control or configuration for the core payment contracts.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 8,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

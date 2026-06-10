@@ -5,8 +5,8 @@
 - Project: NonKYC (`nonkyc`)
 - Website: [https://nonkyc.io](https://nonkyc.io)
 - Lifecycle: active (Tier 0, 72.7% below peak)
-- Generated: 2026-05-31T10:07:19.787Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:08.710Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, ethereum, optimism
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $5,725,456.37
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-NonKYC is a centralized exchange (CEX) that allows users to trade digital assets without requiring identity verification. It operates across multiple chains including Ethereum, Optimism, Base, and Arbitrum One.
+NonKYC is primarily a centralized/no-KYC cryptocurrency exchange. The four recorded EVM accounts on Ethereum, Optimism, Base, and Arbitrum One should be treated as unverified, unknown-role, very-small-code accounts unless their exact role is documented; they should not be inferred to implement exchange trading logic or to represent the complete CEX reserve/TVL surface.
 
 ### Architecture
 

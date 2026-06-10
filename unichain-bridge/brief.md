@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Unichain Bridge
 
-⚠️ Lifecycle status: DEAD - TVL dropped 19.8% over 90 days
-
 ## Project Overview
 
 - Project: Unichain Bridge (`unichain-bridge`)
 - Website: [https://www.unichain.org](https://www.unichain.org)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-31T11:29:18.644Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, dead)
+- Generated: 2026-06-10T20:59:18.489Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 15 unique implementations (30 raw deployments)
 - DeFi Llama TVL: $2,752,550.54
@@ -31,13 +29,12 @@ The bridge family shares infrastructure through the OP Stack's modular design: t
 - Unverified implementations: 0
 - Unique implementations: 15
 - Raw deployments: 30
-- Audits discovered: 10
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 10 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -91,16 +88,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [audit.pdf (also discovered via alternate URL)](https://github.com/Uniswap/v3-core/blob/main/audits/abdk/audit.pdf) | ABDK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [README.md](https://github.com/Uniswap/v3-core/blob/main/audits/tob/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Known_Effects_of_Hook_Permissions.pdf](https://github.com/Uniswap/v4-core/blob/main/docs/security/Known_Effects_of_Hook_Permissions.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [DRAFT_ABDK_audit_core.pdf](https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/DRAFT_ABDK_audit_core.pdf) | ABDK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [DRAFT_Certora_audit_core.pdf](https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/DRAFT_Certora_audit_core.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [DRAFT_Spearbit_audit_core.pdf](https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/DRAFT_Spearbit_audit_core.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [OpenZeppelin_audit_core.pdf](https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/OpenZeppelin_audit_core.pdf) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [TrailOfBits_audit_core.pdf](https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/TrailOfBits_audit_core.pdf) | Trail of Bits | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [whitepaper-v4.pdf](https://github.com/Uniswap/v4-core/blob/main/docs/whitepaper/whitepaper-v4.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [whitepaper-zh.pdf](https://github.com/Uniswap/v4-core/blob/main/docs/whitepaper/whitepaper-zh.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -136,22 +123,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 10
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [8642] audit.pdf
-- [8643] README.md
-- [8645] Known_Effects_of_Hook_Permissions.pdf
-- [8646] DRAFT_ABDK_audit_core.pdf
-- [8647] DRAFT_Certora_audit_core.pdf
-- [8648] DRAFT_Spearbit_audit_core.pdf
-- [8649] OpenZeppelin_audit_core.pdf
-- [8650] TrailOfBits_audit_core.pdf
-- [8651] whitepaper-v4.pdf
-- [8652] whitepaper-zh.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

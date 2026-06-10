@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "scallop",
-  "generated_at": "2026-05-27T05:54:55.283Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-a9ad",
+  "generated_at": "2026-06-10T20:59:14.096Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Scallop is a DeFi protocol on Sui that combines a DEX aggregator and a lending market. It enables users to swap tokens across multiple liquidity sources and to supply or borrow assets in a pooled lending environment.",
-    "relationship_narrative": "The DEX Aggregator and Lending families share the same underlying token and oracle infrastructure, enabling seamless asset flows between swapping and lending operations.",
+    "project_purpose": "Scallop is a DeFi money market on Sui focused on lending and borrowing. It enables users to supply assets to pooled markets and borrow supported assets against collateral.",
+    "relationship_narrative": null,
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

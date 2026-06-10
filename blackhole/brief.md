@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Blackhole
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 31.5% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 31.5% over 90 days
 
 ## Project Overview
 
 - Project: Blackhole (`blackhole`)
 - Website: [https://blackhole.xyz/](https://blackhole.xyz/)
-- Lifecycle: unknown (Tier 0, 89.8% below peak)
-- Generated: 2026-05-22T08:40:29.799Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 0, 89.8% below peak)
+- Generated: 2026-06-10T20:59:00.978Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche
 - Contract surface: 86 unique implementations (144 raw deployments)
-- DeFi Llama TVL: $29,942,734.00
+- DeFi Llama TVL: $29,689,404.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Blackhole is a decentralized exchange (DEX) protocol on Avalanche that enables concentrated liquidity automated market making (CLMM). It allows users to create and manage liquidity pools with custom parameters, swap tokens, and earn rewards through gauge-based incentives.
+Blackhole is an Avalanche decentralized exchange protocol with both AMM and concentrated-liquidity AMM (CLMM) components. It supports token swaps, liquidity pool creation and management, LP position infrastructure, and gauge-based incentive mechanisms for liquidity providers.
 
 ### Architecture
 
@@ -35,9 +35,9 @@ The Blackhole CLMM family relies on a set of factory contracts (AlgebraFactory, 
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-07 (fresh)
-- Staleness: 2 fresh, 1 aging, 0 stale, 0 unknown
+- Staleness: 1 fresh, 2 aging, 0 stale, 0 unknown
 - Tier 1 coverage: 31.1% (Code4rena)
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -87,7 +87,7 @@ The Blackhole CLMM family relies on a set of factory contracts (AlgebraFactory, 
 | GaugeOwner | operational_periphery | avalanche | 2 deployments: avalanche [`0x6c6630...c66de5`](./contracts/avalanche-43114/0x6c6630b76c7d2b0269cf66fd4425491d9ec66de5/); avalanche `0xdd3589...f3f946` | ⚠️ Unaudited |
 | GSCORE | unknown | avalanche | [`0xd9c5a9...bcc6f1`](./contracts/avalanche-43114/0xd9c5a9b5fe4006cd0fce1f4020beb9020cbcc6f1/) | ⚠️ Unaudited |
 | NFTDescriptor | token | avalanche | 2 deployments: avalanche [`0x469412...519e13`](./contracts/avalanche-43114/0x4694123cbe1d3d1f72ccc4d68122ddfb5a519e13/); avalanche `0xf91d96...ec3485` | ⚠️ Unaudited |
-| NonfungiblePositionManager | governance | avalanche | 3 deployments: avalanche [`0x3fed01...252146`](./contracts/avalanche-43114/0x3fed017ec0f5517cdf2e8a9a4156c64d74252146/); avalanche `0xbf5b19...9b9d70`; avalanche `0xfd1c72...329545` | ⚠️ Unaudited |
+| NonfungiblePositionManager | operational_periphery | avalanche | 3 deployments: avalanche [`0x3fed01...252146`](./contracts/avalanche-43114/0x3fed017ec0f5517cdf2e8a9a4156c64d74252146/); avalanche `0xbf5b19...9b9d70`; avalanche `0xfd1c72...329545` | ⚠️ Unaudited |
 | NonfungibleTokenPositionDescriptor | token | avalanche | 2 deployments: avalanche [`0x23b216...9a81e7`](./contracts/avalanche-43114/0x23b216788e78c8a4755473b8b2ed7be7929a81e7/); avalanche `0x8ce534...f8830e` | ⚠️ Unaudited |
 | PairBootstrapper | unknown | avalanche | 2 deployments: avalanche [`0xa053ca...e09a22`](./contracts/avalanche-43114/0xa053ca9c51524d67e5e435c62031ad2031e09a22/); avalanche `0xa589c8...b2bd8d` | ⚠️ Unaudited |
 | PluginV3Deployer | unknown | avalanche | 2 deployments: avalanche [`0xecbbc0...7863d3`](./contracts/avalanche-43114/0xecbbc09d3f52a2133bed0304ed0dcdf4b67863d3/); avalanche `0xefc098...bde662` | ⚠️ Unaudited |
@@ -168,7 +168,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [link](https://security-audit-links.s3.us-east-1.amazonaws.com/PeckShield-Audit-Report-Blackhole-AlgebraPools-v1.0.pdf) | PeckShield | Audit | 2025-05 | aging | Direct | contract_name | 7 | high |
-| [Report](https://security-audit-links.s3.us-east-1.amazonaws.com/Code4rena+Audit-Blackhole-report.pdf) | Code4rena | Contest | 2025-06 | fresh | Direct | contract_name | 23 | high |
+| [Report](https://security-audit-links.s3.us-east-1.amazonaws.com/Code4rena+Audit-Blackhole-report.pdf) | Code4rena | Contest | 2025-06 | aging | Direct | contract_name | 23 | high |
 | [link](https://security-audit-links.s3.us-east-1.amazonaws.com/Addendum+to+Code4rena+Audit+Report.pdf) | Code4rena | Contest | 2025-07 | fresh | Direct | contract_name | 8 | medium |
 
 ## Coverage Gaps
@@ -189,7 +189,7 @@ Verified + unaudited native implementations ranked by TVL:
 | avalanche | [`0x233433...3adc02`](./contracts/avalanche-43114/0x2334338da0bb192dcfc33356f5d1cc6bc03adc02/) | FeeDiscountRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x6c6630...c66de5`](./contracts/avalanche-43114/0x6c6630b76c7d2b0269cf66fd4425491d9ec66de5/) | GaugeOwner | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x469412...519e13`](./contracts/avalanche-43114/0x4694123cbe1d3d1f72ccc4d68122ddfb5a519e13/) | NFTDescriptor | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x3fed01...252146`](./contracts/avalanche-43114/0x3fed017ec0f5517cdf2e8a9a4156c64d74252146/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x3fed01...252146`](./contracts/avalanche-43114/0x3fed017ec0f5517cdf2e8a9a4156c64d74252146/) | NonfungiblePositionManager | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x23b216...9a81e7`](./contracts/avalanche-43114/0x23b216788e78c8a4755473b8b2ed7be7929a81e7/) | NonfungibleTokenPositionDescriptor | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xa053ca...e09a22`](./contracts/avalanche-43114/0xa053ca9c51524d67e5e435c62031ad2031e09a22/) | PairBootstrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xecbbc0...7863d3`](./contracts/avalanche-43114/0xecbbc09d3f52a2133bed0304ed0dcdf4b67863d3/) | PluginV3Deployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |

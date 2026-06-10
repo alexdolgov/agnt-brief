@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Safe
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Safe (`safe`)
 - Website: [https://safe.global/](https://safe.global/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T14:53:59.005Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:12.198Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $99,267,282.27
@@ -22,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Safe is a smart-account and multisig wallet platform for decentralized custody and transaction execution. Its core architecture consists of Safe smart-account singleton/mastercopy contracts, proxy factories and deployment infrastructure, fallback handlers, libraries, modules, guards, and related production contracts. The currently captured VestingPool contract is only a peripheral vesting-related contract and does not represent Safe's core project architecture.
 
 ## Audit Coverage Summary
 
@@ -32,13 +30,12 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 19
+- Audits discovered: 18
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-07 (fresh)
-- Staleness: 1 fresh, 3 aging, 7 stale, 8 unknown
+- Staleness: 1 fresh, 3 aging, 7 stale, 7 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -79,7 +76,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [2025.07 - Certora Audit.pdf](https://github.com/safe-global/safe-wallet-monorepo/blob/dev/apps/mobile/docs/audits/2025.07%20-%20Certora%20Audit.pdf) | unknown | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [SECURITY_CHECKS_MATRIX.md](https://github.com/safe-global/safe-wallet-monorepo/blob/dev/apps/web/src/features/security/SECURITY_CHECKS_MATRIX.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Gnosis_Safe_Audit_Report.pdf](https://github.com/safe-global/safe-smart-account/blob/main/docs/Gnosis_Safe_Audit_Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Gnosis_Safe_Audit_Report_1_1_0.pdf](https://github.com/safe-global/safe-smart-account/blob/main/docs/Gnosis_Safe_Audit_Report_1_1_0.pdf) | unknown | Audit | 2019-11 | stale | Direct | n/a | 0 | n/a |
 | [Gnosis_Safe_Audit_Report_1_1_1.pdf](https://github.com/safe-global/safe-smart-account/blob/main/docs/Gnosis_Safe_Audit_Report_1_1_1.pdf) | unknown | Audit | 2019-11 | stale | Direct | n/a | 0 | n/a |
@@ -119,7 +115,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 19
+- Audits with zero matched contracts: 18
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -127,7 +123,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [4792] 2025.07 - Certora Audit.pdf
-- [4809] SECURITY_CHECKS_MATRIX.md
 - [4831] Gnosis_Safe_Audit_Report.pdf
 - [4832] Gnosis_Safe_Audit_Report_1_1_0.pdf
 - [4833] Gnosis_Safe_Audit_Report_1_1_1.pdf

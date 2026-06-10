@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "re7-labs",
-  "generated_at": "2026-05-31T10:23:38.016Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:09.488Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "re7-labs",
@@ -61,9 +61,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Re7 Labs is a risk curation protocol that deploys and manages yield-generating vaults across multiple chains. It provides users with optimized DeFi strategies through MultiVault and MellowVaultCompat contracts, governed by multisig wallets.",
+    "project_purpose": "Re7 Labs is a DeFi risk curator, advisor, ecosystem designer, and research/risk tooling organization active across multiple ecosystems. Its on-chain surface includes managed yield vault deployments such as captured MultiVault and MellowVaultCompat vault contracts governed through multisig infrastructure, but those contracts represent only part of the broader Re7 Labs project footprint.",
     "relationship_narrative": "All vaults are governed by Gnosis Safe multisigs, which control upgrades and parameter changes. The vaults share common implementation contracts (MultiVault and MellowVaultCompat) deployed via TransparentUpgradeableProxy, enabling consistent risk management across chains.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 6,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

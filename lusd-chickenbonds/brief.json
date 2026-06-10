@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "lusd-chickenbonds",
-  "generated_at": "2026-05-24T21:15:57.931Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:07.076Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "lusd-chickenbonds",
@@ -45,7 +45,7 @@
     "coverage_pct": 28.6,
     "total_audits": 7,
     "scoreable_audits": 6,
-    "dl_tvl_usd": 1493483.26322,
+    "dl_tvl_usd": 1491358.00784,
     "tvl_usd": 362849.47034178185,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "LUSD ChickenBonds is a yield aggregator that allows users to deposit LUSD into bond-like positions to earn enhanced yield through a managed strategy. The protocol optimizes returns by deploying deposited LUSD into various yield sources while maintaining a bond-like structure.",
+    "project_purpose": "LUSD ChickenBonds is a bonding and liquidity-bootstrapping mechanism first applied to Liquity's LUSD. Users create cancel-anytime, no-lock-up bond positions with protected principal, receiving dynamic NFT representations of their bonds and the option to acquire discounted boosted LUSD (bLUSD). The mechanism amplifies yield through bLUSD and is designed to help protocols bootstrap sustainable liquidity rather than operate as a generic managed yield aggregator.",
     "relationship_narrative": "The protocol consists of a single product family centered around the ChickenBondManager contract, which serves as the governance and operational hub for all bond management functions.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 24,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

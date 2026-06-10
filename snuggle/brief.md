@@ -5,11 +5,11 @@
 - Project: Snuggle (`snuggle`)
 - Website: [https://snuggle.fi/](https://snuggle.fi/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-25T01:28:10.712Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:16.232Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base
-- Contract surface: 89 unique implementations (188 raw deployments)
-- DeFi Llama TVL: $1,290,275.70
+- Contract surface: 88 unique implementations (179 raw deployments)
+- DeFi Llama TVL: $1,295,890.02
 - On-chain TVL (included contracts): $0.00
 - TVL by chain: Base $0.00
 
@@ -23,24 +23,24 @@ Both families share the same core vault logic (SnuggleVaultUpgradeable) and adap
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 12/52 (23.1%)
-- Verified + Unaudited implementations: 40
+- Verified implementations audited: 12/51 (23.5%)
+- Verified + Unaudited implementations: 39
 - Verified by bytecode match: 0
 - Unverified implementations: 37
-- Unique implementations: 89
-- Raw deployments: 188
-- Audits discovered: 3
+- Unique implementations: 88
+- Raw deployments: 179
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $0.00
 - Latest audit: 2026-02 (fresh)
-- Staleness: 2 fresh, 0 aging, 0 stale, 1 unknown
+- Staleness: 2 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 12 | 23.1% | 2026-02 |
+| unknown | Tier 2 | 12 | 23.5% | 2026-02 |
 
 ## Contract Surface
 
@@ -61,7 +61,7 @@ Both families share the same core vault logic (SnuggleVaultUpgradeable) and adap
 | UniswapV3Adapter | adapter | arbitrum | 4 deployments: base `0xca4cf9...debabd`; base `0xf757c9...f33010`; arbitrum [`0x76bdb4...c44ef2`](./contracts/arbitrum-42161/0x76bdb43d2ec3b190087076649224f47a58c44ef2/); arbitrum `0xa6e465...be082c` | ✅ Audited |
 | ViewHelper | periphery | arbitrum | 4 deployments: base `0x286490...ce18bd`; base `0x298028...976a1c`; arbitrum [`0x0ef66d...3da5b6`](./contracts/arbitrum-42161/0x0ef66de171293285a8f8ffd0d0d564ca093da5b6/); arbitrum `0x4a14af...a19df9` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (40)
+### ⚠️ Verified + Unaudited (39)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -87,7 +87,6 @@ Both families share the same core vault logic (SnuggleVaultUpgradeable) and adap
 | MiniChefV2 | unknown | arbitrum | [`0xf4d733...bd62c3`](./contracts/arbitrum-42161/0xf4d73326c13a4fc5fd7a064217e12780e9bd62c3/) | ⚠️ Unaudited |
 | Multicall2 | periphery | arbitrum | 2 deployments: arbitrum [`0x0769fd...b2841f`](./contracts/arbitrum-42161/0x0769fd68dfb93167989c6f7254cd0d766fb2841f/); arbitrum `0x80c7dd...a314de` | ⚠️ Unaudited |
 | NFTDescriptor | token | arbitrum | 3 deployments: arbitrum [`0x0367a6...d7f2c6`](./contracts/arbitrum-42161/0x0367a647a68f304f2a6e453c25033a4249d7f2c6/); arbitrum `0x1e12aa...781dae`; arbitrum `0xff7da6...fb3a62` | ⚠️ Unaudited |
-| NonfungiblePositionManager | governance | arbitrum | 9 deployments: arbitrum [`0x00c7f3...4dcd15`](./contracts/arbitrum-42161/0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15/); arbitrum `0x197de4...e8d31b`; arbitrum `0x368435...babbc8`; arbitrum `0x46a15b...7f4364`; arbitrum `0x5c8d79...8c5905`; arbitrum `0xacdcc3...890db3`; arbitrum `0xe6988b...7a5383`; arbitrum `0xf0cbce...63ef49`; arbitrum `0xf41599...7020f9` | ⚠️ Unaudited |
 | NonfungibleTokenPositionDescriptor | token | arbitrum | 7 deployments: arbitrum [`0x1ad8c5...e14abc`](./contracts/arbitrum-42161/0x1ad8c5aed1d18cb7c5f30cd2b486251e87e14abc/); arbitrum `0x2d22aa...7606dc`; arbitrum `0x49f598...32067c`; arbitrum `0x52d2eb...b48325`; arbitrum `0x674d07...e7a7ef`; arbitrum `0x89a13b...b8a68a`; arbitrum `0x96e045...c19385` | ⚠️ Unaudited |
 | NonfungibleTokenPositionDescriptorOffChain | token | arbitrum | 2 deployments: arbitrum [`0x3d00cd...652227`](./contracts/arbitrum-42161/0x3d00cdb4785f0ef20c903a13596e0b9b2c652227/); arbitrum `0xb099b4...456cff` | ⚠️ Unaudited |
 | Quoter | periphery | arbitrum | 9 deployments: arbitrum [`0x02102b...1b88ac`](./contracts/arbitrum-42161/0x02102bd5b57c128b19d4d4fa4d8f8192ea1b88ac/); arbitrum `0x0fc730...4fa76e`; arbitrum `0x27d3ce...fefe92`; arbitrum `0x32ab0c...54e73c`; arbitrum `0x6c78f2...bbc0bd`; arbitrum `0x9b7a7c...38c063`; arbitrum `0xaaf703...2eb3ac`; arbitrum `0xc50b12...9fe056`; arbitrum `0xd70dd6...63b955` | ⚠️ Unaudited |
@@ -167,7 +166,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [DL audit link](https://d3cny4im7ppv5.cloudfront.net/Abyss.pdf) | unknown | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
-| [AUDIT PARTNERAudited by Valves SecurityValves Security is one of the top security firms in the industry. We have also been audited by multiple independent researchers and white hat groups, with more third-party audits to come.Visit Valves Security →](https://valvessecurity.com/) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [security review](https://www.snuggle.fi/security) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 36 | high |
 
 ## Coverage Gaps
@@ -191,7 +189,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 22 |
-| upstream | 19 |
+| upstream | 18 |
 | standard_library | 5 |
 | needs_review | 43 |
 
@@ -199,7 +197,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=36
@@ -207,6 +205,5 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [3119] DL audit link
-- [3120] AUDIT PARTNERAudited by Valves SecurityValves Security is one of the top security firms in the industry. We have also been audited by multiple independent researchers and white hat groups, with more third-party audits to come.Visit Valves Security →
 
 Fork inheritance lineage and inherited audits are included when available.

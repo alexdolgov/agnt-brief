@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "btcfi",
-  "generated_at": "2026-05-31T07:37:56.822Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:01.167Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "btcfi",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "BTCFi is a DeFi protocol on Base that enables users to deposit Bitcoin-pegged assets as collateral to mint a stablecoin, and to earn yield through farming mechanisms.",
+    "project_purpose": "BTCFi is a cross-chain Bitcoin collateralization/CDP and asset-management platform centered on using Bitcoin-pegged collateral to mint BtcUSD. Its public project surface spans multiple chains, including Bitcoin, Bifrost Network, Base, and CORE; the Base contracts represent only a small subset of the overall project and TVL. Any Base-only contract brief should be labeled as limited coverage and should not imply that total parent-project TVL is secured solely by the listed Base deployments.",
     "relationship_narrative": "The CDP family uses proxy contracts for upgradeability, with implementation contracts shared between proxies; the protocol also includes a bridged ERC20 token and a farm component that likely distributes rewards to CDP users.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 15,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

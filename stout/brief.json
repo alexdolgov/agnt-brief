@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stout",
-  "generated_at": "2026-05-31T10:43:45.539Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:16.679Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "stout",
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Stout is a collateralized debt position (CDP) protocol on Sonic that lets users deposit assets to mint stablecoins and earn yield. It provides vaults for staking, liquid staking tokens, and reward distribution.",
+    "project_purpose": "Stout is a Sonic-native collateralized debt position (CDP) and borrowing protocol offering low, quasi-fixed interest loans. Its ecosystem includes STTX/veSTTX-related collateral or staking, DUSX/staked DUSX, vault, lender, and PSM components.",
     "relationship_narrative": "The Stout family uses proxy contracts (WOSonicProxy, WrappedAnsProxy) to manage upgradeable logic for WOSonic and wanS tokens. These tokens interact with vaults and drippers to distribute rewards and manage collateral within the CDP system.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 132,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

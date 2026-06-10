@@ -5,8 +5,8 @@
 - Project: Ink Bridge (`ink-bridge`)
 - Website: [https://inkonchain.com/bridge](https://inkonchain.com/bridge)
 - Lifecycle: active (Tier 0, 60.5% below peak)
-- Generated: 2026-05-31T08:32:49.089Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:06.254Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum, ink, optimism
 - Contract surface: 68 unique implementations (70 raw deployments)
 - DeFi Llama TVL: $59,290,618.92
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Ink Bridge is a canonical bridge protocol enabling asset transfers between Ethereum, Ink, and Optimism chains. It uses the OP Stack framework with dispute games, cross-domain messaging, and standard token bridges to facilitate secure cross-chain communication.
+Ink Bridge is Kraken/Ink's canonical bridge between Ethereum and the Ink L2. It uses OP Stack technology for cross-domain messaging and standard bridge functionality; Optimism/OP Stack security reviews should be treated as upstream inherited coverage unless an audit specifically reviews Ink-specific deployments, versions, or deltas.
 
 ### Architecture
 
@@ -23,30 +23,29 @@ The Ethereum Mainnet family provides the L1 bridge infrastructure, while Ink Bri
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 12/25 (48.0%)
-- Verified + Unaudited implementations: 13
+- Verified implementations audited: 11/25 (44.0%)
+- Verified + Unaudited implementations: 14
 - Verified by bytecode match: 0
 - Unverified implementations: 43
 - Unique implementations: 68
 - Raw deployments: 70
-- Audits discovered: 27
-- Scoreable audits (matched contracts): 8
+- Audits discovered: 17
+- Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-03 (aging)
-- Staleness: 0 fresh, 10 aging, 16 stale, 1 unknown
+- Staleness: 0 fresh, 6 aging, 11 stale, 0 unknown
 - Tier 1 coverage: 44.0% (Spearbit, Trail of Bits)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 12 | 48.0% | 2025-01 |
 | Spearbit | Tier 1 | 11 | 44.0% | 2025-03 |
 | Trail of Bits | Tier 1 | 1 | 4.0% | 2023-01 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (12)
+### ✅ Verified + Audited (11)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -60,10 +59,9 @@ The Ethereum Mainnet family provides the L1 bridge infrastructure, while Ink Bri
 | OptimismMintableERC20Factory | registry | ethereum | [`0xa8b389...d34d29`](./contracts/ethereum-1/0xa8b389a82e088b164cd03230e900980cced34d29/) | ✅ Audited |
 | OptimismPortal2 | unknown | ethereum | [`0x5d66c1...5d3e4f`](./contracts/ethereum-1/0x5d66c1782664115999c47c9fa5cd031f495d3e4f/) | ✅ Audited |
 | Proxy | proxy | optimism | [`0x420000...000028`](./contracts/optimism-10/0x4200000000000000000000000000000000000028/) | ✅ Audited |
-| ProxyAdmin | governance | ethereum | [`0xd56045...241f79`](./contracts/ethereum-1/0xd56045e68956fce2576e680c95a4750cf8241f79/) | ✅ Audited |
 | SystemConfig | governance | ethereum | [`0x62c0a1...6e8364`](./contracts/ethereum-1/0x62c0a111929fa32cec2f76adba54c16afb6e8364/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (13)
+### ⚠️ Verified + Unaudited (14)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -79,6 +77,7 @@ The Ethereum Mainnet family provides the L1 bridge infrastructure, while Ink Bri
 | MultiSend | unknown | ethereum | [`0x998739...8f9eda`](./contracts/ethereum-1/0x998739bfdaadde7c933b942a68053933098f9eda/) | ⚠️ Unaudited |
 | MultiSendCallOnly | unknown | ethereum | [`0xa1dabe...44102b`](./contracts/ethereum-1/0xa1dabef33b3b82c7814b6d82a79e50f4ac44102b/) | ⚠️ Unaudited |
 | Permit2 | unknown | ethereum | [`0x000000...c78ba3`](./contracts/ethereum-1/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | ethereum | [`0xd56045...241f79`](./contracts/ethereum-1/0xd56045e68956fce2576e680c95a4750cf8241f79/) | ⚠️ Unaudited |
 | SenderCreator | unknown | ethereum | 2 deployments: ethereum [`0x7fc984...088348`](./contracts/ethereum-1/0x7fc98430eaedbb6070b35b39d798725049088348/); ethereum `0xefc2c1...7a167c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -148,32 +147,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [2020_10-Rollup-TrailOfBits.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2020_10-Rollup-TrailOfBits.pdf) | Trail of Bits | Audit | 2020-10 | stale | Direct | n/a | 0 | n/a |
-| [2020_11-Dapphub-ECDSA_Wallet.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2020_11-Dapphub-ECDSA_Wallet.pdf) | unknown | Audit | 2020-11 | stale | Direct | n/a | 0 | n/a |
 | [2021_03-OVM_and_Rollup-OpenZeppelin.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2021_03-OVM_and_Rollup-OpenZeppelin.pdf) | OpenZeppelin | Audit | 2021-03 | stale | Direct | n/a | 0 | n/a |
 | [2021_03-SafetyChecker-ConsenSysDiligence.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2021_03-SafetyChecker-ConsenSysDiligence.pdf) | Consensys Diligence | Audit | 2021-03 | stale | Direct | n/a | 0 | n/a |
-| [2022_05-Bedrock_Contracts-Zeppelin.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_05-Bedrock_Contracts-Zeppelin.pdf) | unknown | Audit | 2022-05 | stale | Direct | contract_name | 1 | low |
 | [2022_05-OpNode-TrailOfBits.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_05-OpNode-TrailOfBits.pdf) | Trail of Bits | Audit | 2022-05 | stale | Direct | n/a | 0 | n/a |
 | [2022_08-Bedrock_GoLang-SigmaPrime.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_08-Bedrock_GoLang-SigmaPrime.pdf) | Sigma Prime | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
-| [2022_09-Bedrock_and_Periphery-Zeppelin.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_09-Bedrock_and_Periphery-Zeppelin.pdf) | unknown | Audit | 2022-09 | stale | Direct | contract_name | 12 | high |
 | [2022_10-Drippie-Spearbit.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_10-Drippie-Spearbit.pdf) | Spearbit | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
 | [2022_11-Invariant_Testing-TrailOfBits.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_11-Invariant_Testing-TrailOfBits.pdf) | Trail of Bits | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
-| [2022_12-DepositTransaction-RuntimeVerification.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_12-DepositTransaction-RuntimeVerification.pdf) | unknown | Audit | 2022-12 | stale | Direct | n/a | 0 | n/a |
 | [2023_01-Bedrock_Updates-TrailOfBits.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2023_01-Bedrock_Updates-TrailOfBits.pdf) | Trail of Bits | Audit | 2023-01 | stale | Direct | contract_name | 1 | high |
-| [2023_12_SuperchainConfigUpgrade_Trust.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2023_12_SuperchainConfigUpgrade_Trust.pdf) | unknown | Audit | 2023-12 | stale | Direct | n/a | 0 | n/a |
 | [2024_02-MCP_L1-Cantina.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_02-MCP_L1-Cantina.pdf) | Spearbit | Audit | 2024-02 | stale | Direct | contract_name | 11 | medium |
 | [2024_05-FaultProofs-Sherlock.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_05-FaultProofs-Sherlock.pdf) | Sherlock | Contest | 2024-05 | stale | Direct | n/a | 0 | n/a |
 | [2024_05_SafeLivenessExtensions-Cantina.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_05_SafeLivenessExtensions-Cantina.pdf) | Spearbit | Audit | 2024-05 | stale | Direct | n/a | 0 | n/a |
 | [2024_08_Fault-Proofs-MIPS_Cantina.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_08_Fault-Proofs-MIPS_Cantina.pdf) | Spearbit | Audit | 2024-08 | aging | Direct | n/a | 0 | n/a |
 | [2024_08_Fault-Proofs-No-MIPS_Spearbit.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_08_Fault-Proofs-No-MIPS_Spearbit.pdf) | Spearbit | Audit | 2024-08 | aging | Direct | contract_name | 2 | medium |
-| [2024_10-Cannon-FGETFD-3DocSecurity.md](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_10-Cannon-FGETFD-3DocSecurity.md) | unknown | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
 | [2024_12-DPM-MiloTruck.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_12-DPM-MiloTruck.pdf) | MiloTruck | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
-| [2024_12-DPM-RadiantLabs.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_12-DPM-RadiantLabs.pdf) | unknown | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
-| [2025_01-IRI-OffbeatLabs.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_01-IRI-OffbeatLabs.pdf) | unknown | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
-| [2025_01-MT-Cannon-Base.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_01-MT-Cannon-Base.pdf) | unknown | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
 | [2025_01-MT-Cannon-Spearbit.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_01-MT-Cannon-Spearbit.pdf) | Spearbit | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
 | [2025_02-Upgrade13-Spearbit.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_02-Upgrade13-Spearbit.pdf) | Spearbit | Audit | 2025-02 | aging | Direct | contract_name | 6 | high |
 | [2025_03-Interop-Contracts-Spearbit.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_03-Interop-Contracts-Spearbit.pdf) | Spearbit | Audit | 2025-03 | aging | Direct | contract_name | 2 | medium |
-| [README.md](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/README.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 5 | high |
 
 ## Coverage Gaps
 
@@ -196,31 +185,24 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 19
+- Audits with zero matched contracts: 12
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=4, low=1, medium=3
-- Match method counts: extraction_exact=40
+- Extraction confidence breakdown: high=2, medium=3
+- Match method counts: extraction_exact=22
 
 Zero-match audit list:
 
 - [5531] 2020_10-Rollup-TrailOfBits.pdf
-- [5532] 2020_11-Dapphub-ECDSA_Wallet.pdf
 - [5533] 2021_03-OVM_and_Rollup-OpenZeppelin.pdf
 - [5534] 2021_03-SafetyChecker-ConsenSysDiligence.pdf
 - [5536] 2022_05-OpNode-TrailOfBits.pdf
 - [5537] 2022_08-Bedrock_GoLang-SigmaPrime.pdf
 - [5539] 2022_10-Drippie-Spearbit.pdf
 - [5540] 2022_11-Invariant_Testing-TrailOfBits.pdf
-- [5541] 2022_12-DepositTransaction-RuntimeVerification.pdf
-- [5543] 2023_12_SuperchainConfigUpgrade_Trust.pdf
 - [5545] 2024_05-FaultProofs-Sherlock.pdf
 - [5546] 2024_05_SafeLivenessExtensions-Cantina.pdf
 - [5547] 2024_08_Fault-Proofs-MIPS_Cantina.pdf
-- [5549] 2024_10-Cannon-FGETFD-3DocSecurity.md
 - [5550] 2024_12-DPM-MiloTruck.pdf
-- [5551] 2024_12-DPM-RadiantLabs.pdf
-- [5552] 2025_01-IRI-OffbeatLabs.pdf
-- [5553] 2025_01-MT-Cannon-Base.pdf
 - [5554] 2025_01-MT-Cannon-Spearbit.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

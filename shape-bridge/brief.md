@@ -5,17 +5,17 @@
 - Project: Shape Bridge (`shape-bridge`)
 - Website: [https://shape.network/bridge](https://shape.network/bridge)
 - Lifecycle: active (Tier 0, 57.7% below peak)
-- Generated: 2026-05-25T06:42:45.658Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:14.917Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
-- Contract surface: 28 unique implementations (29 raw deployments)
-- DeFi Llama TVL: $1,071,172.78
+- Contract surface: 26 unique implementations (27 raw deployments)
+- DeFi Llama TVL: $1,055,412.84
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Shape Bridge is the canonical bridge for the Shape L2 network, enabling asset transfers between Ethereum L1 and Shape Mainnet. It uses the OP Stack framework with standard bridge components, dispute resolution, and governance infrastructure.
+Shape Bridge refers to Shape Network's OP Stack canonical bridge infrastructure for asset transfers between Ethereum L1 and Shape Mainnet. The public Shape bridge page currently routes users to independent third-party bridge providers such as Relay and Superbridge and disclaims responsibility for their operation, so those providers should be distinguished from Shape-operated canonical bridge contracts.
 
 ### Architecture
 
@@ -23,17 +23,17 @@ The L1 family provides the canonical bridge infrastructure that secures and rela
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/24 (0.0%)
-- Verified + Unaudited implementations: 24
+- Verified implementations audited: 0/22 (0.0%)
+- Verified + Unaudited implementations: 22
 - Verified by bytecode match: 0
 - Unverified implementations: 4
-- Unique implementations: 28
-- Raw deployments: 29
-- Audits discovered: 2
+- Unique implementations: 26
+- Raw deployments: 27
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2025-09 (fresh)
-- Staleness: 1 fresh, 1 aging, 0 stale, 0 unknown
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -46,13 +46,12 @@ The L1 family provides the canonical bridge infrastructure that secures and rela
 
 - None
 
-### ⚠️ Verified + Unaudited (24)
+### ⚠️ Verified + Unaudited (22)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | AddressManager | governance | ethereum | [`0xcee784...fd7479`](./contracts/ethereum-1/0xcee78437ae9e15cee9c78e63757e0153c0fd7479/) | ⚠️ Unaudited |
 | AnchorStateRegistry | registry | ethereum | [`0x02987e...6222d1`](./contracts/ethereum-1/0x02987e7294379b9dda99d593b0c94c68266222d1/) | ⚠️ Unaudited |
-| ConduitController | governance | ethereum | [`0x000000...00ad63`](./contracts/ethereum-1/0x00000000f9490004c11cef243f5400493c00ad63/) | ⚠️ Unaudited |
 | Create2Deployer | unknown | ethereum | [`0x13b0d8...e9bef2`](./contracts/ethereum-1/0x13b0d85ccb8bf860b6b79af3029fca081ae9bef2/) | ⚠️ Unaudited |
 | DisputeGameFactory | registry | ethereum | [`0x575aec...0bd8b0`](./contracts/ethereum-1/0x575aecd84083f93877291901907698f7db0bd8b0/) | ⚠️ Unaudited |
 | GnosisSafe | governance | ethereum | [`0xacaf17...90a005`](./contracts/ethereum-1/0xacaf178b5048cb56712dc59e95fba72f7990a005/) | ⚠️ Unaudited |
@@ -71,7 +70,6 @@ The L1 family provides the canonical bridge infrastructure that secures and rela
 | ProtocolVersions | unknown | ethereum | [`0xa77995...a32ddd`](./contracts/ethereum-1/0xa77995e10b0a833cdd4fa414c26e869f7aa32ddd/) | ⚠️ Unaudited |
 | Proxy | proxy | ethereum | [`0xfec786...1c2d57`](./contracts/ethereum-1/0xfec7865dac5139886585f03146ff61d9b31c2d57/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | [`0x11b190...db842e`](./contracts/ethereum-1/0x11b190ae661c6d6884dfee48e215691e0ddb842e/) | ⚠️ Unaudited |
-| Seaport | unknown | ethereum | [`0x000000...3eb395`](./contracts/ethereum-1/0x0000000000000068f116a894984e2db1123eb395/) | ⚠️ Unaudited |
 | SuperchainConfig | governance | ethereum | [`0x125664...ccde09`](./contracts/ethereum-1/0x125664bef08177ca43f6f301e63118b1e4ccde09/) | ⚠️ Unaudited |
 | SystemConfig | governance | ethereum | [`0xff11e4...8f7355`](./contracts/ethereum-1/0xff11e41d5c4f522e423ff6c064ff8d55af8f7355/) | ⚠️ Unaudited |
 
@@ -102,8 +100,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/trailofbits/publications/0e25a3fafa976d5bc2e5bf476463adec67c3630e/reviews/2025-05-shapenetwork-token-securityreview.pdf) | Trail of Bits | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
-| [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/trailofbits/publications/0e25a3fafa976d5bc2e5bf476463adec67c3630e/reviews/2025-09-shapenetwork-buybackcontract-securityreview.pdf) | Trail of Bits | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -134,7 +130,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 17 |
-| upstream | 2 |
+| upstream | 0 |
 | standard_library | 6 |
 | needs_review | 3 |
 
@@ -142,14 +138,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [3220] Rendered PDF capture
-- [3221] Rendered PDF capture
 
 Fork inheritance lineage and inherited audits are included when available.

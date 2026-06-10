@@ -5,8 +5,8 @@
 - Project: Aegis Markets (`aegis-markets`)
 - Website: [https://aegis.markets/](https://aegis.markets/)
 - Lifecycle: active (Tier 0, 70.6% below peak)
-- Generated: 2026-06-10T20:16:30.914Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.549Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, unichain
 - Contract surface: 15 unique implementations (33 raw deployments)
 - DeFi Llama TVL: $2,328,928.83

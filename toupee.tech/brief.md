@@ -1,14 +1,14 @@
 # Agentic Audit Brief: toupee.tech
 
-⚠️ Lifecycle status: UNKNOWN - TVL changed 3.6% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 3.6% over 90 days
 
 ## Project Overview
 
 - Project: toupee.tech (`toupee.tech`)
 - Website: [https://www.toupee.tech](https://www.toupee.tech)
-- Lifecycle: unknown (Tier 0, 74.5% below peak)
-- Generated: 2026-05-31T11:08:49.615Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 74.5% below peak)
+- Generated: 2026-06-10T20:59:17.532Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base
 - Contract surface: 29 unique implementations (53 raw deployments)
 - DeFi Llama TVL: $6,291,303.16
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Toupee.tech is a yield optimization protocol on Base that allows users to deposit liquidity into pools and earn rewards. It uses a ve(3,3) tokenomics model where TOKEN holders can vote on gauge weights to direct emissions, and plugins integrate with external protocols like Aerodrome and Velocimeter to capture additional yield.
+Toupee.tech is an incentive coordination protocol on Base centered on WIG, oWIG, and vWIG mechanics. The protocol combines farm emission voting, staking and farming rewards, voting rewards, WETH-backed bonding-curve/floor-price liquidity mechanics, and vWIG-backed borrowing. Gauge and plugin integrations with external protocols may be used as implementation details for directing incentives and rewards, but the primary product is incentive coordination rather than generic yield optimization.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The BASE Mainnet family contains all core and supporting contracts. The governan
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $24.29 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of $24.29 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

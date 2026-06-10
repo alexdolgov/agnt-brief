@@ -5,21 +5,22 @@
 - Project: hskhodlium (`hskhodlium`)
 - Website: [https://www.hskhodlium.xyz/](https://www.hskhodlium.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-05-24T18:14:57.675Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:04.687Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,717,088.66
+- DeFi Llama TVL: $1,506,185.54
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-HSK Hodlium is a liquid staking protocol that allows users to stake their assets and receive liquid staking tokens in return, enabling them to earn staking rewards while maintaining liquidity.
-
-### Architecture
-
-No product families or contracts are defined in the provided inventory, so no relationships can be described.
+HSK Hodlium is an HSK staking platform on HashKey Chain. DefiLlama classifies it as Liquid Staking, but available evidence only substantiates HSK staking and rewards, not generic multi-asset staking or liquid staking token issuance.
 
 ## Audit Coverage Summary
 

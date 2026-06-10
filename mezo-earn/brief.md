@@ -7,8 +7,8 @@
 - Project: Mezo Earn (`mezo-earn`)
 - Website: [https://mezo.org/earn/lock](https://mezo.org/earn/lock)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T14:54:05.769Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:07.704Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $55,180,986.82
@@ -22,7 +22,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Mezo Earn is the earning/allocation component of the Mezo protocol, allowing users to allocate supported assets into Mezo Earn/MezoAllocator logic to participate in the protocol's rewards and TVL program. The protocol/TVL chain should be identified as Mezo, while the discovered Ethereum address is part of the contract inventory as an upgradeable proxy pointing to the MezoAllocator implementation.
 
 ## Audit Coverage Summary
 
@@ -54,7 +54,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| MezoAllocator | operational_periphery | ethereum | [`0xb90fda...e20122`](./contracts/ethereum-1/0xb90fdad3dfd180458d62cc6acedc983d78e20122/) | ⚠️ Unaudited |
+| MezoAllocator | core_logic | ethereum | [`0xb90fda...e20122`](./contracts/ethereum-1/0xb90fdad3dfd180458d62cc6acedc983d78e20122/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

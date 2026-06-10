@@ -5,11 +5,11 @@
 - Project: stCELO (`stcelo`)
 - Website: [https://stcelo.xyz/](https://stcelo.xyz/)
 - Lifecycle: active (Tier 0, 55.6% below peak)
-- Generated: 2026-05-24T18:21:34.811Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:16.654Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: celo
 - Contract surface: 19 unique implementations (140 raw deployments)
-- DeFi Llama TVL: $1,701,436.56
+- DeFi Llama TVL: $1,598,039.52
 - On-chain TVL (included contracts): $1,635,081.82
 - TVL by chain: Celo $1,635,081.82
 

@@ -7,17 +7,17 @@
 - Project: FireBot (`firebot`)
 - Website: [https://firebot.gg](https://firebot.gg)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-24T13:50:56.909Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:03.999Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: polygon
 - Contract surface: 29 unique implementations (65 raw deployments)
-- DeFi Llama TVL: $2,217,222.82
+- DeFi Llama TVL: $2,264,926.05
 - On-chain TVL (included contracts): $3,673,167.12
 - TVL by chain: Polygon $3,673,167.12
 
 ## Project Description
 
-FireBot is a yield farming protocol on Polygon that allows users to stake tokens and earn rewards through vaults and farms. It features a native token, FireBotToken, and integrates with Uniswap V2 liquidity pairs.
+FireBot is a Polygon-based DeFi project centered on FBX/FireBot token utilities, Fire Vaults staking, swapping, and deflationary-token mechanics. Public positioning should not overstate it as primarily a yield-farming protocol or infer unsupported Uniswap V2 pair staking behavior without contract- or documentation-level evidence.
 
 ### Architecture
 
@@ -25,17 +25,17 @@ The FireVaultFBXV2 contract likely manages user deposits and interacts with the 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/21 (9.5%)
-- Verified + Unaudited implementations: 19
+- Verified implementations audited: 1/21 (4.8%)
+- Verified + Unaudited implementations: 20
 - Verified by bytecode match: 0
 - Unverified implementations: 8
 - Unique implementations: 29
 - Raw deployments: 65
-- Audits discovered: 3
-- Scoreable audits (matched contracts): 2
+- Audits discovered: 2
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $3,673,167.12
 - Latest audit: 2023-10 (stale)
-- Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $3,673,167.12 represents exposure in a protocol with unknown activity.
 
@@ -43,18 +43,17 @@ The FireVaultFBXV2 contract likely manages user deposits and interacts with the 
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| RedTiger | Tier 2 | 2 | 9.5% | 2023-10 |
+| RedTiger | Tier 2 | 1 | 4.8% | 2023-10 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (2)
+### ✅ Verified + Audited (1)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | ElementalParticles | unknown | polygon | [`0x60ed6a...751af2`](./contracts/polygon-137/0x60ed6acef3a96f8cdaf0c0d207bbafa66e751af2/) | ✅ Audited |
-| FireVaultFBXV2 | core_logic | polygon | 18 deployments: polygon [`0x09083f...91c049`](./contracts/polygon-137/0x09083fa4a172e52df84808edc31fa167e591c049/); polygon `0x098534...a6d4df`; polygon `0x0f3226...8b22d9`; polygon `0x2b5f17...1ded23`; polygon `0x30f096...0bd486`; polygon `0x364663...abbf56`; polygon `0x4758d9...e16044`; polygon `0x651042...cd9047`; polygon `0x65b8e5...7f936d`; polygon `0x77ff4f...583348`; polygon `0x869f1e...8e241b`; polygon `0x960d43...14dfbe`; polygon `0x9bf581...9c14c7`; polygon `0xa163f1...8f5cfe`; polygon `0xd0e489...e7c271`; polygon `0xda6167...7046d1`; polygon `0xe44f4e...05f5f8`; polygon `0xf584be...4ef875` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (19)
+### ⚠️ Verified + Unaudited (20)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -68,6 +67,7 @@ The FireVaultFBXV2 contract likely manages user deposits and interacts with the 
 | firebotMarket | unknown | polygon | 2 deployments: polygon [`0xc99567...c1d334`](./contracts/polygon-137/0xc99567b0b5649120fe882554cacfcaa68bc1d334/); polygon `0xf312bf...7eb39c` | ⚠️ Unaudited |
 | FireBots | unknown | polygon | [`0xe9eee7...333295`](./contracts/polygon-137/0xe9eee7294dc7c3bb64fd57a514e755022a333295/) | ⚠️ Unaudited |
 | FireVaultFBX | core_logic | polygon | 3 deployments: polygon [`0xa461b5...cf132b`](./contracts/polygon-137/0xa461b57d4794447bb53ad584844c4a19c6cf132b/); polygon `0xd3368e...a78e75`; polygon `0xe344db...127b9a` | ⚠️ Unaudited |
+| FireVaultFBXV2 | core_logic | polygon | 18 deployments: polygon [`0x09083f...91c049`](./contracts/polygon-137/0x09083fa4a172e52df84808edc31fa167e591c049/); polygon `0x098534...a6d4df`; polygon `0x0f3226...8b22d9`; polygon `0x2b5f17...1ded23`; polygon `0x30f096...0bd486`; polygon `0x364663...abbf56`; polygon `0x4758d9...e16044`; polygon `0x651042...cd9047`; polygon `0x65b8e5...7f936d`; polygon `0x77ff4f...583348`; polygon `0x869f1e...8e241b`; polygon `0x960d43...14dfbe`; polygon `0x9bf581...9c14c7`; polygon `0xa163f1...8f5cfe`; polygon `0xd0e489...e7c271`; polygon `0xda6167...7046d1`; polygon `0xe44f4e...05f5f8`; polygon `0xf584be...4ef875` | ⚠️ Unaudited |
 | FireVaultFBXV3 | core_logic | polygon | [`0x4d979f...022594`](./contracts/polygon-137/0x4d979fed1defc256c02a97687840c0afb7022594/) | ⚠️ Unaudited |
 | FireVaultFBXV4 | core_logic | polygon | [`0x7ccfb7...067577`](./contracts/polygon-137/0x7ccfb7d2598421ea897ba94f5d3fd598f4067577/) | ⚠️ Unaudited |
 | item_selector | unknown | polygon | [`0xad79b4...76dcf0`](./contracts/polygon-137/0xad79b4a1905de5e505a7c8b34a20d7456676dcf0/) | ⚠️ Unaudited |
@@ -111,7 +111,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [Rendered PDF capture](https://firebot.gg/audits/RedTiger_FireBot_2023.pdf) | RedTiger | Audit | 2023-07 | stale | Direct | contract_name | 1 | high |
 | [Rendered PDF capture](https://firebot.gg/audits/RedTiger_Sweeep_2023.pdf) | RedTiger | Audit | 2023-10 | stale | Direct | n/a | 0 | n/a |
-| [Rendered PDF capture](https://firebot.gg/audits/UnblockLabs_FireBot_2022.pdf) | RedTiger | Audit | 2022-10 | stale | Direct | contract_name | 19 | high |
 
 ## Coverage Gaps
 
@@ -129,6 +128,7 @@ Verified + unaudited native implementations ranked by TVL:
 | polygon | [`0xc99567...c1d334`](./contracts/polygon-137/0xc99567b0b5649120fe882554cacfcaa68bc1d334/) | firebotMarket | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xe9eee7...333295`](./contracts/polygon-137/0xe9eee7294dc7c3bb64fd57a514e755022a333295/) | FireBots | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xa461b5...cf132b`](./contracts/polygon-137/0xa461b57d4794447bb53ad584844c4a19c6cf132b/) | FireVaultFBX | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x09083f...91c049`](./contracts/polygon-137/0x09083fa4a172e52df84808edc31fa167e591c049/) | FireVaultFBXV2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x4d979f...022594`](./contracts/polygon-137/0x4d979fed1defc256c02a97687840c0afb7022594/) | FireVaultFBXV3 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x7ccfb7...067577`](./contracts/polygon-137/0x7ccfb7d2598421ea897ba94f5d3fd598f4067577/) | FireVaultFBXV4 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xad79b4...76dcf0`](./contracts/polygon-137/0xad79b4a1905de5e505a7c8b34a20d7456676dcf0/) | item_selector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -152,8 +152,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=20
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=1
 
 Zero-match audit list:
 

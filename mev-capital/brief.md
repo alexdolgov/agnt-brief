@@ -5,8 +5,8 @@
 - Project: MEV Capital (`mev-capital`)
 - Website: [https://mevcapital.com](https://mevcapital.com)
 - Lifecycle: active (Tier 0, 95.6% below peak)
-- Generated: 2026-05-31T09:56:02.085Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:07.691Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, berachain, ethereum, polygon, sonic, unichain
 - Contract surface: 783 unique implementations (4392 raw deployments)
 - DeFi Llama TVL: $67,024,637.41

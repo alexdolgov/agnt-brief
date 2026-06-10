@@ -5,21 +5,22 @@
 - Project: Capx AI (`capx-ai`)
 - Website: [https://capx.ai](https://capx.ai)
 - Lifecycle: active (Tier 0, 19.2% below peak)
-- Generated: 2026-05-24T14:07:13.155Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:01.253Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $2,155,363.47
+- DeFi Llama TVL: $2,143,133.58
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Capx AI is a protocol on BSC that deploys and manages AI agent tokens via a factory contract, enabling the creation and trading of burnable/mintable ERC20 tokens.
-
-### Architecture
-
-The single product family contains the core factory contract, which serves as the registry and deployer for all AI agent tokens; no additional infrastructure contracts are present.
+Capx AI is an Ethereum Layer 2 / Capx Chain ecosystem for building, tokenizing, owning, and trading AI apps. The listed BSC FactoryBurnMintERC20 contract should be treated as an associated factory/registry contract rather than the complete protocol surface or the TVL-bearing Capx Chain trading infrastructure.
 
 ## Audit Coverage Summary
 

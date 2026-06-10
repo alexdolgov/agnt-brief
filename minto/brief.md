@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Minto
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Minto (`minto`)
 - Website: [https://minto.finance](https://minto.finance)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T09:59:10.737Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:07.707Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc, ethereum, heco
-- Contract surface: 11 unique implementations (12 raw deployments)
+- Contract surface: 9 unique implementations (10 raw deployments)
 - DeFi Llama TVL: $3,797,520.69
-- On-chain TVL (included contracts): $1,664,699.88
-- TVL by chain: Bsc $1,664,699.88
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Minto is a yield optimization protocol that automates staking and farming strategies across multiple chains. It offers users tokenized yield-bearing assets and auto-compounding vaults to maximize returns.
+Minto is a Bitcoin mining hashpower tokenization and staking project centered on BTCMT, a token representing exposure to mining power, with staking/mining-related participation rather than multi-chain yield optimization, farming strategies, or auto-compounding vaults.
 
 ### Architecture
 
@@ -25,25 +23,24 @@ The GnosisSafeProxy serves as a shared governance contract for both families, wh
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/8 (12.5%)
-- Verified + Unaudited implementations: 7
+- Verified implementations audited: 1/6 (16.7%)
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
 - Unverified implementations: 3
-- Unique implementations: 11
-- Raw deployments: 12
+- Unique implementations: 9
+- Raw deployments: 10
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 1
-- ASD (verified + unaudited TVL): $1,664,699.88
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-07 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $1,664,699.88 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| yAudit | Tier 2 | 1 | 12.5% | 2021-07 |
+| yAudit | Tier 2 | 1 | 16.7% | 2021-07 |
 
 ## Contract Surface
 
@@ -53,15 +50,13 @@ The GnosisSafeProxy serves as a shared governance contract for both families, wh
 |---|---|---|---|---|
 | BTCMT | unknown | bsc | [`0x410a56...f09567`](./contracts/bsc-56/0x410a56541bd912f9b60943fcb344f1e3d6f09567/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| PancakeV3Pool | core_logic | bsc | [`0x11bd73...3f065f`](./contracts/bsc-56/0x11bd737757b86c16646313fdf9e86681dd3f065f/) | ⚠️ Unaudited |
 | BTCMTSale | unknown | bsc | [`0x2b775b...741827`](./contracts/bsc-56/0x2b775b778f84b10877a41b78d6724634c7741827/) | ⚠️ Unaudited |
 | GnosisSafe | governance | ethereum | [`0x005fe0...e7c1c1`](./contracts/ethereum-1/0x005fe03e5d3a3390f7ec43d95adf08be4ee7c1c1/) | ⚠️ Unaudited |
 | MintoAutofarmV2 | unknown | bsc | 2 deployments: bsc [`0x572b06...b1e746`](./contracts/bsc-56/0x572b0666e801f3ba80d4a66d7f10460658b1e746/); bsc `0xe5c659...53105a` | ⚠️ Unaudited |
-| PancakePair | unknown | bsc | [`0x00951a...97625a`](./contracts/bsc-56/0x00951a8d4f9bdfae11bb9e5da9bd50c03297625a/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | bsc | [`0xb64ea1...08976c`](./contracts/bsc-56/0xb64ea148a6b9975ad335e56a688b4a11b508976c/) | ⚠️ Unaudited |
 | StakingOwn | unknown | bsc | [`0x78ae30...5ebcfb`](./contracts/bsc-56/0x78ae303182fca96a4629a78ee13235e6525ebcfb/) | ⚠️ Unaudited |
 
@@ -108,7 +103,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 4 |
-| upstream | 2 |
+| upstream | 0 |
 | standard_library | 2 |
 | needs_review | 3 |
 

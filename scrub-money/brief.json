@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "scrub-money",
-  "generated_at": "2026-05-23T09:36:11.701Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:14.812Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "scrub-money",
@@ -33,10 +33,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 18,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 7148520,
-    "tvl_usd": 7148520,
+    "dl_tvl_usd": 6748342,
+    "tvl_usd": 6748342,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,13 +53,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Scrub Money is a DeFi protocol offering prediction markets, algorithmic stablecoins, yield generation, and basis trading across Kava and Arbitrum One. It encompasses multiple product families including a football-themed prediction market, a commerce platform, a core Scrub ecosystem, and a vault system.",
+    "project_purpose": "Scrub Money is a decentralized commerce and services ecosystem spanning DeFi vaults and strategies, NFT marketplace and staking through Scrubplace, peer-to-peer sports markets through Kava Football Club, crypto commerce and gift cards through Lion Commerce, and on-chain games through Scrub Games. Its ecosystem also references LION as a future-backed stablecoin and TIGER as a related token, but the brief should not characterize LION as an algorithmic stablecoin or claim broad basis-trading functionality without independent support.",
     "relationship_narrative": "The Scrub family provides core DeFi primitives (stablecoins, yield) that likely feed into the ScrubVault for optimized returns. Kava Football Club and Lion Commerce appear as separate verticals, possibly sharing the Scrub token or stablecoin as a medium of exchange.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 19,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -656,29 +661,7 @@
       "contamination_flag": null
     }
   ],
-  "audits": [
-    {
-      "audit_id": 2184,
-      "audit_key": "audit-2184",
-      "report_name": "DL audit link",
-      "report_url": "https://scrub.finance/how-to-know-if-it-is-a-cryptocurrency-scam-or-not",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
@@ -692,12 +675,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 2184,
-        "report_name": "DL audit link"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

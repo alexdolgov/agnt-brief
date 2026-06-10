@@ -7,8 +7,8 @@
 - Project: Plasma Saving Vaults (`plasma-saving-vaults`)
 - Website: [https://app.plasma.to/](https://app.plasma.to/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:15:25.095Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:09.343Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: plasma
 - Contract surface: 6 unique implementations (14 raw deployments)
 - DeFi Llama TVL: $45,454,265.53
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Plasma Saving Vaults is an onchain capital allocator that enables users to deposit assets into yield-generating vaults. It uses a BoringVault core for asset management and AToken-like receipt tokens to represent user positions.
+Plasma Saving Vaults is an on-chain savings/yield vault product. Its live Savings Lending Vault is publicly described as using Veda vault infrastructure to deploy deposited assets into Aave for yield. BoringVault-style vault infrastructure may be part of the checked surface, but ATokenInstance receipt-token claims and TetherTokenOFTExtension adapter scope should be treated as unconfirmed unless supported by project documentation or source verification.
 
 ### Architecture
 

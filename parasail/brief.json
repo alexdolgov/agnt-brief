@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "parasail",
-  "generated_at": "2026-05-31T10:12:30.915Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:09.197Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "parasail",
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Parasail is a restaking protocol on Arbitrum One that enables users to restake assets to secure external services. It uses an InterchainToken for cross-chain functionality and proxy-based upgradeable contracts.",
+    "project_purpose": "Parasail is a DePIN/restaking incentive interface tracked across multiple networks, including Fluence, Arbitrum, Swan, and Filecoin, with TVL primarily on Filecoin rather than Arbitrum. It should not be described as an Arbitrum-only restaking protocol.",
     "relationship_narrative": "The protocol consists of a single product family where the ERC1967Proxy serves as the upgradeable entry point, delegating to implementation contracts, while the InterchainToken facilitates cross-chain asset transfers.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 41,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

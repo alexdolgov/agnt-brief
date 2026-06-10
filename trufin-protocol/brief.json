@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "trufin-protocol",
-  "generated_at": "2026-05-23T10:11:49.498Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:17.606Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "trufin-protocol",
@@ -45,8 +45,8 @@
     "coverage_pct": 66.7,
     "total_audits": 12,
     "scoreable_audits": 7,
-    "dl_tvl_usd": 6835153,
-    "tvl_usd": 6835153,
+    "dl_tvl_usd": 7016995,
+    "tvl_usd": 7016995,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "TruFin Protocol provides liquid staking and yield-generation products, allowing users to stake assets and receive liquid derivative tokens while earning rewards. It includes legacy vaults for staking and newer TruStake contracts for liquid staking of MATIC and other tokens.",
+    "project_purpose": "TruYields is an institutional onchain yield platform with product lines including TruCore, TruStake, and TruVault. TruStake includes liquid staking products such as MATIC/POL staking, while TruVault and related products cover additional yield strategies. The Ethereum contracts listed in this brief represent only a subset of the broader TruYields platform and should not be treated as the complete multi-chain protocol surface.",
     "relationship_narrative": "Both families share the MasterWhitelist contract for access control, and the TruStake family builds upon the staking concepts from the legacy vaults, with TruStakePOL potentially interacting with the Staker contract for reward distribution.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 7,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

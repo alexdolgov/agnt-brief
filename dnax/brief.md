@@ -5,21 +5,22 @@
 - Project: Dnax (`dnax`)
 - Website: [https://dnax.us/](https://dnax.us/)
 - Lifecycle: active (Tier 0, 39.5% below peak)
-- Generated: 2026-05-31T07:53:58.723Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:01.921Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $3,536,397.04
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Dnax is a decentralized exchange (DEX) protocol on BSC that facilitates token swaps and liquidity provision. It uses a single upgradeable CarbonController contract to manage its core trading and liquidity logic.
-
-### Architecture
-
-The protocol consists of a single product family where the OptimizedTransparentUpgradeableProxy serves as the governance-controlled entry point, delegating all logic to the CarbonController implementation.
+Dnax is a BSC onchain trading and DEX protocol focused on automated trading features, including automated limit orders, custom price ranges, grid and recurring orders, and orderbook-like trading functionality through its upgradeable core controller contract.
 
 ## Audit Coverage Summary
 
@@ -50,7 +51,7 @@ The protocol consists of a single product family where the OptimizedTransparentU
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| CarbonController | governance | bsc | [`0xafc43f...a9a1b9`](./contracts/bsc-56/0xafc43fae32302d725fc4d448525c44c522a9a1b9/) | ⚠️ Unaudited |
+| CarbonController | core_logic | bsc | [`0xafc43f...a9a1b9`](./contracts/bsc-56/0xafc43fae32302d725fc4d448525c44c522a9a1b9/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,7 +82,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xafc43f...a9a1b9`](./contracts/bsc-56/0xafc43fae32302d725fc4d448525c44c522a9a1b9/) | CarbonController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xafc43f...a9a1b9`](./contracts/bsc-56/0xafc43fae32302d725fc4d448525c44c522a9a1b9/) | CarbonController | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

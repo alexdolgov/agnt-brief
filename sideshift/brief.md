@@ -1,14 +1,12 @@
 # Agentic Audit Brief: SideShift
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: SideShift (`sideshift`)
 - Website: [https://sideshift.ai](https://sideshift.ai)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:35:20.992Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:16.066Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 2 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $15,003,690.37
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-SideShift is a cross-chain bridge that enables users to shift tokens between different blockchains. It uses a vault contract to manage deposits and withdrawals, and an XAI token for governance or utility.
+SideShift is a direct-to-wallet crypto swap/exchange service that lets users swap assets across networks. It is categorized by DefiLlama under Cross Chain Bridge, but vault-based lock-and-release bridge mechanics should not be claimed without verified contract source or documentation. XAI is SideShift's native ERC20 token and can be staked for a share of revenues; it should not be described as a governance or fee-utility token unless supported by current documentation.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The SideShiftVault contract handles the core bridging logic, while the XAI token
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $12,328,298.64 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

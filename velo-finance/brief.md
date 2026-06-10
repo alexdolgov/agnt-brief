@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Velo Finance
 
-⚠️ Lifecycle status: UNKNOWN - TVL changed 10.2% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 10.2% over 90 days
 
 ## Project Overview
 
 - Project: Velo Finance (`velo-finance`)
 - Website: [https://velofinance.io](https://velofinance.io)
-- Lifecycle: unknown (Tier 0, 66.3% below peak)
-- Generated: 2026-05-31T11:31:36.288Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 66.3% below peak)
+- Generated: 2026-06-10T20:59:18.525Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 28 unique implementations (30 raw deployments)
 - DeFi Llama TVL: $1,773,497.17
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Velo Finance is a decentralized exchange (DEX) protocol on BSC that enables token swaps and liquidity provision. It includes farming contracts for yield generation and a factory for creating liquidity pools.
+Velo Finance is listed by DefiLlama as a DEX on Binance/BNB Chain. The current homepage provides no substantive product text confirming specific swap, liquidity provision, farming, or pool factory behavior; those details should be treated as unconfirmed unless supported by project documentation or verified contract analysis. EVRY/Evry references should be treated as observed contract names only unless project documentation confirms their relationship to Velo Finance.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The EvryFactory registry creates and manages liquidity pools, while the Farms co
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $117,629,046.32 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of $117,629,046.32 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

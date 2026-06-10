@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stargate",
-  "generated_at": "2026-05-23T13:07:38.885Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.620Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6168830.51295,
-    "tvl_usd": 6168830.51295,
+    "dl_tvl_usd": 5922096.47456,
+    "tvl_usd": 5922096.47456,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "StarGate is a cross-chain liquidity transfer protocol that enables users to swap native assets across different blockchains with unified liquidity pools and instant guaranteed finality.",
-    "relationship_narrative": "No product families or contracts were identified in the provided metadata, so no structural relationships can be described.",
+    "project_purpose": "StarGate is a VeChain-based staking protocol that supports on-chain staking, validator delegation, rewards, and related NFT/migration functionality for the VeChain ecosystem.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

@@ -1,14 +1,14 @@
 # Agentic Audit Brief: SuiBridge
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 44.0% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 44.0% over 90 days
 
 ## Project Overview
 
 - Project: SuiBridge (`suibridge`)
 - Website: [https://bridge.sui.io](https://bridge.sui.io)
-- Lifecycle: unknown (Tier 0, 93.1% below peak)
-- Generated: 2026-05-31T10:42:45.601Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 93.1% below peak)
+- Generated: 2026-06-10T20:59:16.706Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 5 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $41,855,877.23
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-SuiBridge is a canonical bridge enabling asset transfers between Ethereum and the Sui blockchain. It uses a committee-based validation model to secure cross-chain messages and a vault to lock assets on Ethereum.
+SuiBridge is the canonical/native bridge enabling asset transfers and cross-chain messaging between Ethereum and the Sui blockchain. On Ethereum, the live system includes several ERC1967 proxy deployments for components such as SuiBridge, BridgeCommittee, BridgeConfig, and BridgeLimiter, each pointing to separate implementation contracts, while BridgeVault and the implementation contracts themselves are non-proxy deployments. The bridge uses committee-based validation, configuration and rate-limiting controls, and an Ethereum vault that locks value for bridged assets.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The SuiBridge contract coordinates with BridgeCommittee for validation, BridgeLi
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -54,10 +54,10 @@ The SuiBridge contract coordinates with BridgeCommittee for validation, BridgeLi
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | BridgeCommittee | operational_periphery | ethereum | 2 deployments: ethereum [`0xa470ca...23b63b`](./contracts/ethereum-1/0xa470ca92126bd6b6f6e98f3010c7e384f223b63b/); ethereum `0xee2d52...5b416f` | ⚠️ Unaudited |
-| BridgeConfig | operational_periphery | ethereum | 2 deployments: ethereum [`0x72d34f...6a1540`](./contracts/ethereum-1/0x72d34fe82c71bf8120647518e5128e53106a1540/); ethereum `0xb083c4...fec50c` | ⚠️ Unaudited |
-| BridgeLimiter | operational_periphery | ethereum | 2 deployments: ethereum [`0x12183b...736767`](./contracts/ethereum-1/0x12183b0796bbc4678999100e8c6c5715d5736767/); ethereum `0xd754e5...887340` | ⚠️ Unaudited |
-| BridgeVault | operational_periphery | ethereum | [`0x312e67...f80b53`](./contracts/ethereum-1/0x312e67b47a2a29ae200184949093d92369f80b53/) | ⚠️ Unaudited |
-| SuiBridge | operational_periphery | ethereum | 2 deployments: ethereum [`0xa60f29...bb036c`](./contracts/ethereum-1/0xa60f29201aeae592d9ab95747ae1cf425dbb036c/); ethereum `0xda3bd1...8a92fd` | ⚠️ Unaudited |
+| BridgeConfig | proxy | ethereum | 2 deployments: ethereum [`0x72d34f...6a1540`](./contracts/ethereum-1/0x72d34fe82c71bf8120647518e5128e53106a1540/); ethereum `0xb083c4...fec50c` | ⚠️ Unaudited |
+| BridgeLimiter | proxy | ethereum | 2 deployments: ethereum [`0x12183b...736767`](./contracts/ethereum-1/0x12183b0796bbc4678999100e8c6c5715d5736767/); ethereum `0xd754e5...887340` | ⚠️ Unaudited |
+| BridgeVault | bridge_template | ethereum | [`0x312e67...f80b53`](./contracts/ethereum-1/0x312e67b47a2a29ae200184949093d92369f80b53/) | ⚠️ Unaudited |
+| SuiBridge | bridge_template | ethereum | 2 deployments: ethereum [`0xa60f29...bb036c`](./contracts/ethereum-1/0xa60f29201aeae592d9ab95747ae1cf425dbb036c/); ethereum `0xda3bd1...8a92fd` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,8 +89,8 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0xa470ca...23b63b`](./contracts/ethereum-1/0xa470ca92126bd6b6f6e98f3010c7e384f223b63b/) | BridgeCommittee | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x312e67...f80b53`](./contracts/ethereum-1/0x312e67b47a2a29ae200184949093d92369f80b53/) | BridgeVault | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa60f29...bb036c`](./contracts/ethereum-1/0xa60f29201aeae592d9ab95747ae1cf425dbb036c/) | SuiBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x312e67...f80b53`](./contracts/ethereum-1/0x312e67b47a2a29ae200184949093d92369f80b53/) | BridgeVault | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa60f29...bb036c`](./contracts/ethereum-1/0xa60f29201aeae592d9ab95747ae1cf425dbb036c/) | SuiBridge | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

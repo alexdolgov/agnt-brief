@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hashkey-global",
-  "generated_at": "2026-05-31T08:17:50.280Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.534Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hashkey-global",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "HashKey Global is a centralized exchange (CEX) that provides trading and custody services for digital assets. The on-chain contracts on Scroll likely support deposit/withdrawal operations or token management for the exchange.",
-    "relationship_narrative": "The two contracts likely form a deposit/withdrawal system where one handles user deposits and the other manages withdrawal requests or token custody, sharing the same operational context for the exchange.",
+    "project_purpose": "HashKey Global is a centralized exchange (CEX) that provides trading and custody services for digital assets. The reviewed on-chain surface consists of two unverified Scroll addresses with unknown roles and an unconfirmed relationship to HashKey exchange operations; these addresses should not be described as a verified deposit/withdrawal or token-management system without further evidence.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

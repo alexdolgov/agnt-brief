@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "hanji-protocol",
-  "generated_at": "2026-05-31T08:18:48.998Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-10T20:59:04.466Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "hanji-protocol",
     "tier": 0,
@@ -26,15 +26,15 @@
     "total_addresses": 291,
     "unique_implementations": 289,
     "total_deployments": 291,
-    "audited_contracts": 1,
-    "unaudited_contracts": 5,
-    "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 5,
+    "audited_contracts": 0,
+    "unaudited_contracts": 6,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 283,
-    "coverage_pct": 16.7,
-    "total_audits": 2,
-    "scoreable_audits": 2,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 2738368.9507899997,
     "tvl_usd": 2738368.9507899997,
     "tvl_source": "defillama",
@@ -46,19 +46,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2025-04",
-    "audit_freshness": "aging",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 2,
+      "aging": 0,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Hanji Protocol is a decentralized exchange (DEX) on Base that facilitates trading through an on-chain orderbook. It supports token swaps, limit orders, and liquidity provision, leveraging a set of smart contracts for order matching, settlement, and token management.",
+    "project_purpose": "Hanji Protocol is a multichain on-chain central limit order book exchange associated with Etherlink, Base, and Monad. It supports on-chain orderbook trading, including market orders and zero-fee limit orders; liquidity vault functionality should be described separately only where supported by current scope evidence.",
     "relationship_narrative": "The Orderbook Contracts rely on Token Contracts for the assets being traded, while the Hanji Protocol family orchestrates trade logic and settlement. Helper Contracts provide shared utilities used across the orderbook and protocol families.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 289,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -179,7 +184,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -188,7 +193,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -197,17 +202,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2790",
-        "audit-2791"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -9046,92 +9048,8 @@
       "contamination_flag": null
     }
   ],
-  "audits": [
-    {
-      "audit_id": 2790,
-      "audit_key": "audit-2790",
-      "report_name": "Hanji Protocol Security Audit Report.pdf",
-      "report_url": "https://github.com/mixbytes/audits_public/blob/master/Hanji/OnchainCLOB/Hanji%20Protocol%20Security%20Audit%20Report.pdf",
-      "auditor": "yAudit",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "HanjiErrors",
-        "HanjiFP24",
-        "HanjiHelper",
-        "HanjiLOB",
-        "HanjiLOBFactory",
-        "HanjiTrie",
-        "HanjiTrieFactory",
-        "HanjiWatchDog",
-        "HanjiWatchDogFactory",
-        "Helper",
-        "OnchainCLOB",
-        "OnchainCLOBFactory",
-        "Proxy",
-        "Trie",
-        "TrieFactory",
-        "WatchDog",
-        "WatchDogFactory"
-      ],
-      "matched_contracts": 3,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2791,
-      "audit_key": "audit-2791",
-      "report_name": "Hanji Liquidity Vault Security Audit Report.pdf",
-      "report_url": "https://github.com/mixbytes/audits_public/blob/master/Hanji/Liquidity%20Vault/Hanji%20Liquidity%20Vault%20Security%20Audit%20Report.pdf",
-      "auditor": "yAudit",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Ecdsa",
-        "ErrorReporter",
-        "LPManager",
-        "LPManagerFactory",
-        "LPManagerHelper",
-        "LPToken",
-        "Proxy",
-        "ProxyLOB",
-        "ProxyLOBBatch",
-        "ProxyPyth",
-        "PythPriceHelper",
-        "RfqOrderLib",
-        "RfqProxyLOB",
-        "TokenValueCalculator"
-      ],
-      "matched_contracts": 3,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    }
-  ],
-  "auditor_coverage": [
-    {
-      "auditor": "yAudit",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 16.7,
-      "latest_audit": "2025-04"
-    }
-  ],
+  "audits": [],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 8453,
@@ -9152,6 +9070,16 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x15c8cb4e336b1e478d155d813830129fb225eee3",
+      "name": "Proxy",
+      "role": "proxy",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
@@ -9161,12 +9089,8 @@
     "needs_review": 278
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 6
-    },
-    "extraction_confidence_counts": {
-      "high": 2
-    },
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

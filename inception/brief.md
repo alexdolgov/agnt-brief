@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Inception
 
-⚠️ Lifecycle status: SUNSETTING - TVL changed 5.3% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 5.3% over 90 days
 
 ## Project Overview
 
 - Project: Inception (`inception`)
 - Website: [https://www.inceptionlrt.com/](https://www.inceptionlrt.com/)
-- Lifecycle: sunsetting (Tier 1, sunsetting)
-- Generated: 2026-05-23T14:34:33.597Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 1, sunsetting)
+- Generated: 2026-06-10T20:59:06.139Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, blast, bsc, ethereum, fraxtal, linea, mode, optimism
-- Contract surface: 79 unique implementations (293 raw deployments)
-- DeFi Llama TVL: $5,950,081.00
-- On-chain TVL (included contracts): $15,930,653.34
-- TVL by chain: Ethereum $15,868,115.57 | Blast $49,928.36 | Linea $11,180.07 | Arbitrum $1,216.39 | Optimism $168.83 | Bsc $44.13
+- Contract surface: 78 unique implementations (290 raw deployments)
+- DeFi Llama TVL: $5,860,583.00
+- On-chain TVL (included contracts): $9,815,001.75
+- TVL by chain: Ethereum $9,752,463.98 | Blast $49,928.36 | Linea $11,180.07 | Arbitrum $1,216.39 | Optimism $168.83 | Bsc $44.13
 
 ## Project Description
 
-Inception is a multi-chain liquid restaking protocol that allows users to deposit assets into vaults and receive liquid restaking tokens (LRTs) representing their staked positions. It supports both native and isolated restaking strategies, enabling yield generation across various Ethereum-based networks.
+Inception is a liquid restaking protocol for Ethereum-based assets that allows users to deposit into Inception-controlled vault and restaking contracts and receive liquid restaking tokens representing their positions. External third-party vault systems such as Amphor should be treated as integrations or out-of-scope infrastructure unless separate ownership evidence is provided.
 
 ### Architecture
 
@@ -25,33 +25,32 @@ The Inception family issues LRTs that are used across the protocol, while Incept
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 18/66 (27.3%)
-- Verified + Unaudited implementations: 47
+- Verified implementations audited: 16/65 (24.6%)
+- Verified + Unaudited implementations: 48
 - Verified by bytecode match: 1
 - Unverified implementations: 13
-- Unique implementations: 79
-- Raw deployments: 293
-- Audits discovered: 11
-- Scoreable audits (matched contracts): 10
-- ASD (verified + unaudited TVL): $15,643,661.34
+- Unique implementations: 78
+- Raw deployments: 290
+- Audits discovered: 9
+- Scoreable audits (matched contracts): 8
+- ASD (verified + unaudited TVL): $9,532,387.79
 - Latest audit: 2025-03 (aging)
-- Staleness: 0 fresh, 4 aging, 7 stale, 0 unknown
+- Staleness: 0 fresh, 3 aging, 6 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [sunsetting]. ASD of $15,643,661.34 represents exposure in a protocol with sunsetting activity.
+- Note: This protocol is classified as [declining]. ASD of $9,532,387.79 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Halborn | Tier 2 | 7 | 10.6% | 2024-10 |
-| VAR | Tier 2 | 6 | 9.1% | 2024-01 |
-| Oxorio | Tier 2 | 5 | 7.6% | 2025-03 |
-| Veridise | Tier 2 | 4 | 6.1% | 2025-03 |
-| unknown | Tier 2 | 2 | 3.0% | 2023-11 |
+| Halborn | Tier 2 | 7 | 10.8% | 2024-10 |
+| VAR | Tier 2 | 6 | 9.2% | 2024-01 |
+| Oxorio | Tier 2 | 5 | 7.7% | 2025-03 |
+| Veridise | Tier 2 | 4 | 6.2% | 2025-03 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (18)
+### ✅ Verified + Audited (16)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -61,8 +60,6 @@ The Inception family issues LRTs that are used across the protocol, while Incept
 | RestakingPool | core_logic | ethereum | 9 deployments: ethereum [`0x043b7d...05fcb7`](./contracts/ethereum-1/0x043b7dd4979fb34deca99a131ca69dac3805fcb7/); ethereum `0x180e0f...914246`; ethereum `0x429e9c...5f292d`; ethereum `0x46199c...15831a`; ethereum `0x65b13b...63a614`; ethereum `0x7efc15...c0e405`; ethereum `0xa0044e...e48b4d`; ethereum `0xa27f2f...589e7d`; ethereum `0xf7ebce...9d0567` | ✅ Audited |
 | InceptionVault_EL | core_logic | ethereum | 4 deployments: ethereum [`0x6e17a8...d93322`](./contracts/ethereum-1/0x6e17a8b5d33e6dbdb9fc61d758bf554b6ad93322/); ethereum `0x99d648...1ccd5b`; ethereum `0xc4181d...95321c`; ethereum `0xfe7153...735d5e` | ✅ Audited |
 | InVault_S_E2 | core_logic | ethereum | 7 deployments: ethereum [`0x110a4a...62ec3e`](./contracts/ethereum-1/0x110a4a90d7c8fb68c35f01f5ece186256b62ec3e/); ethereum `0x24ee75...5bfa50`; ethereum `0x3b7373...04e68b`; ethereum `0xdae6ab...22241a`; ethereum `0xe740e5...f6088b`; ethereum `0xebc5b1...63ee53`; ethereum `0xf9d9f8...f5ec97` | ✅ Audited |
-| AmphorSyntheticVaultWithPermit | core_logic | ethereum | 2 deployments: ethereum [`0x2791eb...701744`](./contracts/ethereum-1/0x2791eb5807d69fe10c02eed6b4dc12bac0701744/); ethereum `0x3b022e...b5096b` | ✅ Audited |
-| AmphorSyntheticVault | core_logic | ethereum | [`0xc4a324...f96489`](./contracts/ethereum-1/0xc4a324fdf8a2495776b4d6ca46599b5a52f96489/) | ✅ Audited |
 | IMellowRestaker | core_logic | ethereum | 11 deployments: ethereum [`0x09740e...728378`](./contracts/ethereum-1/0x09740e3b2ccf6e82f4fb3a57519c8b65da728378/); ethereum `0x2313ce...9c00a2`; ethereum `0x2eb6a1...546958`; ethereum `0x3c9991...8dd129`; ethereum `0x69bd17...dc6b55`; ethereum `0x7c374b...09019b`; ethereum `0xa50299...a2251b`; ethereum `0xb94063...46875d`; ethereum `0xc4f4d6...7f8691`; ethereum `0xd7a622...82feba`; ethereum `0xdd3a08...a356c4` | ✅ Audited |
 | InceptionBridge | operational_periphery | ethereum | 16 deployments: ethereum [`0x1f696f...a33eaf`](./contracts/ethereum-1/0x1f696f13dcdb2cd0f1927ad598613c7c95a33eaf/); ethereum `0xc00cd5...83b3ac`; optimism `0xc00cd5...83b3ac`; bsc `0xc00cd5...83b3ac`; fraxtal `0x80d69e...8802e2`; fraxtal `0xc00cd5...83b3ac`; base `0xc00cd5...83b3ac`; mode `0xb81e55...4d1f1e`; mode `0xc00cd5...83b3ac`; arbitrum `0x80d69e...8802e2`; arbitrum `0xb2f447...3b6163`; arbitrum `0xc00cd5...83b3ac`; linea `0x80d69e...8802e2`; linea `0xc00cd5...83b3ac`; blast `0xb81e55...4d1f1e`; blast `0xc00cd5...83b3ac` | ✅ Audited |
 | InceptionLibrary | unknown | ethereum | 4 deployments: ethereum [`0x313d6c...cb7d07`](./contracts/ethereum-1/0x313d6c1b075077ce10b3229ee75e0af453cb7d07/); ethereum `0x8a6a8a...d69f66`; ethereum `0xa2aeaf...9423b1`; ethereum `0xf6940a...55116a` | ✅ Audited |
@@ -74,16 +71,17 @@ The Inception family issues LRTs that are used across the protocol, while Incept
 | RestakerDeployer | core_logic | ethereum | [`0x10ccb7...1bf57a`](./contracts/ethereum-1/0x10ccb7afb5c2c20fffa38eaf1fbc99db571bf57a/) | ✅ Audited |
 | XERC20Lockbox | token | ethereum | 3 deployments: ethereum [`0x4c8588...047f37`](./contracts/ethereum-1/0x4c858892decbf31460603f4bfc4620c328047f37/); ethereum `0xa5a5b4...478452`; ethereum `0xff8690...ea6159` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (47)
+### ⚠️ Verified + Unaudited (48)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| AmphorVaultWithPermit | core_logic | ethereum | 3 deployments: ethereum [`0x0498b8...358a15`](./contracts/ethereum-1/0x0498b85fb4ec85ef5efe82513aa9daf767358a15/); ethereum `0x920f17...82c079`; ethereum `0xf97ecd...8f2e00` | ⚠️ Unaudited |
+| AmphorVaultWithPermit | core_logic | ethereum | 2 deployments: ethereum [`0x920f17...82c079`](./contracts/ethereum-1/0x920f17e741029d904936c58a545dffc72f82c079/); ethereum `0xf97ecd...8f2e00` | ⚠️ Unaudited |
 | AsyncVault | core_logic | ethereum | 3 deployments: ethereum [`0x3cda5e...e0e958`](./contracts/ethereum-1/0x3cda5e72fa2550c2bcf2a8db3d6a6cac15e0e958/); ethereum `0xcdc51f...4df54e`; ethereum `0xf74753...355229` | ⚠️ Unaudited |
 | InVault_E1 | core_logic | ethereum | 21 deployments: ethereum [`0x13e4a6...af144e`](./contracts/ethereum-1/0x13e4a6a36b61bef57f2f4b6032da945a33af144e/); ethereum `0x1aa53b...d59f12`; ethereum `0x295234...151161`; ethereum `0x36b429...815e55`; ethereum `0x453fcf...da9e86`; ethereum `0x47489d...1d3544`; ethereum `0x4878f6...f86bed`; ethereum `0x4a85b9...42a4ec`; ethereum `0x5198be...4b725e`; ethereum `0x540529...b61c2f`; ethereum `0x6bb087...663495`; ethereum `0x814cc6...977d8d`; ethereum `0x872979...02d1ac`; ethereum `0x90e80e...9023c2`; ethereum `0x9bb0f6...bc0ed4`; ethereum `0xa9f8c7...c780ff`; ethereum `0xaa95d0...5fea5a`; ethereum `0xc06609...e9a2b6`; ethereum `0xd0ee89...426355`; ethereum `0xfbe36c...04a78d`; ethereum `0xfe20c6...3cd0eb` | ⚠️ Unaudited |
 | LRTVault | core_logic | ethereum | 6 deployments: ethereum [`0x06824c...4dcec3`](./contracts/ethereum-1/0x06824c27c8a0dbde5f72f770ec82e3c0fd4dcec3/); ethereum `0x1a9c36...967cbd`; ethereum `0x848829...cc7c3e`; ethereum `0x8df05f...603494`; ethereum `0xd3281a...542231`; ethereum `0xed0469...2972e1` | ⚠️ Unaudited |
 | InStrategyBaseVault_E1 | core_logic | ethereum | 9 deployments: ethereum [`0x016e07...da2a5f`](./contracts/ethereum-1/0x016e074ca7304b815e29a9b9d8cf7a5603da2a5f/); ethereum `0x3d3b17...a11e70`; ethereum `0x459d34...4c9e36`; ethereum `0x4c9c84...813638`; ethereum `0x8f55d3...c3e7d3`; ethereum `0xc33a82...ed7357`; ethereum `0xc6cc13...778db4`; ethereum `0xc73737...a31d18`; ethereum `0xefaf12...49c2ba` | ⚠️ Unaudited |
 | InVault_S_E1 | core_logic | ethereum | 10 deployments: ethereum [`0x295a73...84a2d1`](./contracts/ethereum-1/0x295a7386bf8d307183ae10e3c10eb25ebe84a2d1/); ethereum `0x3748be...d3c8db`; ethereum `0x3aeb60...6f7193`; ethereum `0x5aa102...549ea3`; ethereum `0x653067...8f333a`; ethereum `0x9a5969...6592c1`; ethereum `0xa8211b...b360ae`; ethereum `0xb83ad6...6fce4d`; ethereum `0xd26b63...4f9503`; ethereum `0xd49641...85f529` | ⚠️ Unaudited |
+| AmphorSyntheticVault | core_logic | ethereum | [`0xc4a324...f96489`](./contracts/ethereum-1/0xc4a324fdf8a2495776b4d6ca46599b5a52f96489/) | ⚠️ Unaudited |
 | ERC20Rebalancer | adapter | ethereum | [`0x203d19...723f62`](./contracts/ethereum-1/0x203d19635e6df0263a431c4d9b8e654dec723f62/) | ⚠️ Unaudited |
 | ERC4626Facet_EL_E1 | unknown | ethereum | [`0x80e273...3a89f3`](./contracts/ethereum-1/0x80e27343ab9540cdebd6b865f84a91f3ad3a89f3/) | ⚠️ Unaudited |
 | ERC4626Facet_EL_E2 | unknown | ethereum | [`0x7eed68...4bd58e`](./contracts/ethereum-1/0x7eed6897d9f032abccffd2f6aafcfb59b24bd58e/) | ⚠️ Unaudited |
@@ -164,8 +162,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Salus_final_report.pdf](https://github.com/AmphorProtocol/synthetic-vault/blob/main/audits/Salus_final_report.pdf) | unknown | Audit | 2023-10 | stale | Direct | contract_name | 3 | high |
-| [Bailsec_final_report.pdf](https://github.com/AmphorProtocol/synthetic-vault/blob/main/audits/Bailsec_final_report.pdf) | unknown | Audit | 2023-11 | stale | Direct | contract_name | 1 | high |
 | [* [**Veridise Report**]()](https://github.com/inceptionlrt/smart-contracts/blob/master/audits/InceptionV1_Veridise.pdf) | Halborn | Audit | 2024-01 | stale | Direct | n/a | 0 | n/a |
 | [* [**Halborn Report**]()](https://github.com/inceptionlrt/smart-contracts/blob/master/audits/InceptionV2_Halborn.pdf) | Halborn | Audit | 2024-04 | stale | Direct | contract_name | 2 | high |
 | [* [**Oxorio Report**]()](https://github.com/inceptionlrt/smart-contracts/blob/master/audits/Inception_MellowV2_Symbiotic_Oxorio.pdf) | Oxorio | Audit | 2025-03 | aging | Direct | contract_name | 60 | high |
@@ -173,7 +169,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [* [**Halborn Report**]()](https://github.com/inceptionlrt/bridge/blob/master/audits/InceptionBridge_Halborn.pdf) | Halborn | Audit | 2024-04 | stale | Direct | contract_name | 45 | high |
 | [* [**Veridise Report**]()](https://github.com/inceptionlrt/bridge/blob/master/audits/InceptionBridge_Veridise.pdf) | Veridise | Audit | 2024-04 | stale | Direct | contract_name | 16 | high |
 | [Inception_DiamondProxy_SymbioticVault_Halborn.pdf](https://github.com/inceptionlrt/smart-contracts/blob/master/audits/Inception_DiamondProxy_SymbioticVault_Halborn.pdf) | Halborn | Audit | 2024-10 | aging | Direct | contract_name | 15 | high |
-| [Inception_FlashWithdrawal_Halborn.pdf](https://github.com/inceptionlrt/smart-contracts/blob/master/audits/Inception_FlashWithdrawal_Halborn.pdf) | Halborn | Audit | 2024-06 | aging | Direct | contract_name | 4 | high |
+| [Inception_FlashWithdrawal_Halborn.pdf](https://github.com/inceptionlrt/smart-contracts/blob/master/audits/Inception_FlashWithdrawal_Halborn.pdf) | Halborn | Audit | 2024-06 | stale | Direct | contract_name | 4 | high |
 | [VAR_GenesisLRT_231221-V1.pdf](https://github.com/inceptionlrt/smart-contracts/blob/master/audits/VAR_GenesisLRT_231221-V1.pdf) | VAR | Audit | 2024-01 | stale | Direct | contract_name | 22 | high |
 
 ## Coverage Gaps
@@ -182,9 +178,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x0498b8...358a15`](./contracts/ethereum-1/0x0498b85fb4ec85ef5efe82513aa9daf767358a15/) | AmphorVaultWithPermit | core_logic | $15,613,624.81 | Verified native implementation with $15,613,624.81 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x920f17...82c079`](./contracts/ethereum-1/0x920f17e741029d904936c58a545dffc72f82c079/) | AmphorVaultWithPermit | core_logic | $9,502,351.25 | Verified native implementation with $9,502,351.25 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x13e4a6...af144e`](./contracts/ethereum-1/0x13e4a6a36b61bef57f2f4b6032da945a33af144e/) | InVault_E1 | core_logic | $10,720.07 | Verified native implementation with $10,720.07 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x295a73...84a2d1`](./contracts/ethereum-1/0x295a7386bf8d307183ae10e3c10eb25ebe84a2d1/) | InVault_S_E1 | core_logic | $29.39 | Verified native implementation with $29.39 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc4a324...f96489`](./contracts/ethereum-1/0xc4a324fdf8a2495776b4d6ca46599b5a52f96489/) | AmphorSyntheticVault | core_logic | $0.01 | Verified native implementation with $0.01 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x80e273...3a89f3`](./contracts/ethereum-1/0x80e27343ab9540cdebd6b865f84a91f3ad3a89f3/) | ERC4626Facet_EL_E1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7eed68...4bd58e`](./contracts/ethereum-1/0x7eed6897d9f032abccffd2f6aafcfb59b24bd58e/) | ERC4626Facet_EL_E2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc70470...158638`](./contracts/ethereum-1/0xc70470cdc428d6a3966cd25f476f84d898158638/) | GenesisTimeLock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -223,7 +220,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 51 |
+| native | 50 |
 | upstream | 0 |
 | standard_library | 18 |
 | needs_review | 10 |
@@ -234,8 +231,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=10
-- Match method counts: extraction_exact=213
+- Extraction confidence breakdown: high=8
+- Match method counts: extraction_exact=209
 
 Zero-match audit list:
 

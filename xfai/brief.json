@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "xfai",
-  "generated_at": "2026-05-25T07:02:59.410Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:19.350Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "xfai",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 66.27729917956297
   },
   "summary": {
-    "total_contracts": 51,
-    "total_addresses": 80,
-    "unique_implementations": 51,
-    "total_deployments": 80,
+    "total_contracts": 48,
+    "total_addresses": 67,
+    "unique_implementations": 48,
+    "total_deployments": 67,
     "audited_contracts": 0,
-    "unaudited_contracts": 20,
+    "unaudited_contracts": 17,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 20,
+    "contracts_verified_unaudited": 17,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 31,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1040171.33121,
+    "dl_tvl_usd": 1030555.92715,
     "tvl_usd": 2.0001,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Xfai is a decentralized exchange (DEX) protocol on Linea that provides liquidity and trading services. It includes yield-bearing tokens (UsdPlusTokenV3) and portfolio management strategies, enabling users to earn returns on stablecoins and other assets.",
+    "project_purpose": "Xfai is a decentralized exchange on Linea for token swaps and entangled liquidity pools. USD+/portfolio-management, Mark2Market, HedgeExchanger, PythOracle, and strategy-yield narratives should not be described as part of Xfai unless supported by project documentation; upstream oracle infrastructure should be treated as a third-party dependency rather than Xfai-owned core contracts.",
     "relationship_narrative": "The Xfai family shares infrastructure through proxy-based upgradeability, with core contracts like PortfolioManager and Exchange interacting with various strategy contracts (e.g., StrategyEts, StrategyUsdc) to manage assets. Yield-bearing tokens (UsdPlusTokenV3) are minted via these strategies, and Mark2Market provides valuation, while HedgeExchanger facilitates asset swaps.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 48,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -238,7 +243,7 @@
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
-      "impl_address": "0x80212fc2baa3782ec0b5384ffe6e1ed8306340b0",
+      "impl_address": null,
       "impl_name": "Exchange",
       "deployments": [
         {
@@ -253,74 +258,7 @@
         {
           "chain_id": 59144,
           "chain_name": "linea",
-          "address": "0x2602848d8eb53aa9bff5b41b38656439c15dc72a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x7cb1b38591021309c64f451859d79312d8ca2789",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
           "address": "0xbe24082cf05aaaabb1c479aded4d8a6c015add27",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 59144,
-      "chain_name": "linea",
-      "address": "0x40ae104c59af1b9d23dcd9c5715780e2132631f1",
-      "name": "HedgeExchanger",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x88280fe59278237f16fb93a3c272b745007f71dd",
-      "impl_name": "HedgeExchanger",
-      "deployments": [
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x40ae104c59af1b9d23dcd9c5715780e2132631f1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x631e1a02b52e48311c7fc91f55ffb15c26b50503",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x88280fe59278237f16fb93a3c272b745007f71dd",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -368,55 +306,6 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
-      "address": "0x1f4947cd5a5c058dd5ea6fd1ccd5c311ada9e6fb",
-      "name": "Mark2Market",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x431bf3ab7be5d8e34b7aa7de6eabfbf4a7d48403",
-      "impl_name": "Mark2Market",
-      "deployments": [
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x1f4947cd5a5c058dd5ea6fd1ccd5c311ada9e6fb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x3d67655a49adb0f44530233cbf8375d33ffade41",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x431bf3ab7be5d8e34b7aa7de6eabfbf4a7d48403",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 59144,
-      "chain_name": "linea",
       "address": "0x0932bb4c7e4bdd9cd717331b86d999046f8420e0",
       "name": "PortfolioManager",
       "role": "governance",
@@ -441,73 +330,6 @@
           "chain_id": 59144,
           "chain_name": "linea",
           "address": "0x27b12f3282f1d02682d7d1ad30e45e818b78f7b8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x3e93772b43bf4befa4b22bdc08c254e6354fb4ee",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x610c08c3858012db7cef4fd9e467733c99a2f4ba",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 59144,
-      "chain_name": "linea",
-      "address": "0x066948fce990b4addc3bafa680338132a862b81a",
-      "name": "PythOracle",
-      "role": "operational_periphery",
-      "origin_kind": "upstream",
-      "origin_provider": "pyth-network",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PythOracle",
-      "deployments": [
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x066948fce990b4addc3bafa680338132a862b81a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x0714705a377c26ac60bd69dd6356609600f6f3c0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x5a40180749902fb0ee29dc32fed074f58367154c",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2048,8 +1870,8 @@
   ],
   "origin_summary": {
     "native": 12,
-    "upstream": 1,
-    "standard_library": 8,
+    "upstream": 0,
+    "standard_library": 6,
     "needs_review": 30
   },
   "scope_matching_notes": {

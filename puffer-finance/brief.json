@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "puffer-finance",
-  "generated_at": "2026-05-27T16:54:59.437Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-10T20:59:09.396Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "puffer-finance",
     "tier": 0,
@@ -60,9 +60,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Puffer Finance is a liquid restaking protocol that allows users to stake ETH and earn rewards while maintaining liquidity. It also provides infrastructure for restaking operations and yield optimization through vaults and reward management.",
+    "project_purpose": "Puffer Finance is a broader Ethereum infrastructure protocol suite. Its current product families include Liquid Restaking for ETH/restaking exposure, UniFi as a based rollup/L2 product, Puffer Preconf as an EigenLayer-based preconfirmation service, and Puffer Institutional for staking/restaking infrastructure. Any vault, reward-management, token/governance, bridge, or UniFi-related contract surfaces should be scoped explicitly to these product families or excluded with rationale.",
     "relationship_narrative": "Puffer Stake's PufferVaultV5 interacts with Puffer Vaults' BoringVault and AccountantWithRateProviders to manage staked ETH and distribute rewards. Puffer UniFi's BoringVault may share similar infrastructure for restaking operations.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 65,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

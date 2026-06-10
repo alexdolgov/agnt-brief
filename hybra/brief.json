@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hybra",
-  "generated_at": "2026-05-31T08:24:52.749Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:04.690Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hybra",
@@ -59,6 +59,11 @@
     "project_purpose": "Hybra is a decentralized exchange (DEX) protocol on HyperEVM that facilitates token swaps, liquidity provision, and yield farming. It employs a ve(3,3) tokenomics model with gauges, bribes, and voting to incentivize liquidity and governance.",
     "relationship_narrative": "The Hybra V4 family relies on shared infrastructure contracts such as GaugeFactory, BribeFactoryV3, VoterV3, and MinterUpgradeable to manage liquidity incentives, governance voting, and token emissions across the protocol.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 81,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

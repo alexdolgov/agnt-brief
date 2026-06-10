@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "superform",
-  "generated_at": "2026-05-26T18:43:14.879Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:59:16.832Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "superform",
@@ -22,27 +22,27 @@
     "drop_from_peak_pct": 82.16001035295758
   },
   "summary": {
-    "total_contracts": 159,
-    "total_addresses": 249,
-    "unique_implementations": 159,
-    "total_deployments": 249,
-    "audited_contracts": 48,
-    "unaudited_contracts": 70,
-    "contracts_verified_audited": 48,
-    "contracts_verified_unaudited": 70,
+    "total_contracts": 158,
+    "total_addresses": 246,
+    "unique_implementations": 158,
+    "total_deployments": 246,
+    "audited_contracts": 23,
+    "unaudited_contracts": 94,
+    "contracts_verified_audited": 23,
+    "contracts_verified_unaudited": 94,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 41,
-    "coverage_pct": 40.7,
-    "total_audits": 9,
-    "scoreable_audits": 8,
+    "coverage_pct": 19.7,
+    "total_audits": 3,
+    "scoreable_audits": 2,
     "dl_tvl_usd": 33178253.20656,
-    "tvl_usd": 2014588.0918740227,
+    "tvl_usd": 1987659.6617364995,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "arbitrum": 28812.2,
+      "arbitrum": 1883.77,
       "base": 1985775.89
     },
-    "asd_usd": 28812.201083701813,
+    "asd_usd": 1883.7709461785378,
     "website_url": "https://app.superform.xyz/earn?ref=3TSV5oRxhsPiRq8F3aoi7",
     "chains": [
       "arbitrum",
@@ -52,23 +52,26 @@
       "hyperliquid",
       "linea"
     ],
-    "tier1_coverage_pct": 32.2,
-    "tier1_auditors": [
-      "Spearbit"
-    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
     "latest_audit_date": "2025-11",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 7,
-      "aging": 2,
+      "fresh": 3,
+      "aging": 0,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Superform is a yield aggregation protocol that enables users to deposit assets into various yield-bearing vaults across multiple chains. It provides a unified interface for managing deposits, redemptions, and cross-chain operations through a system of hooks, adapters, and oracles.",
+    "project_purpose": "Superform is a non-custodial onchain wealth app and yield platform that lets users save, swap, send, earn, and stake across supported chains. Its app includes Earn/SuperVault products, Swap, Market, Rewards, Activity, and $UP staking flows; SuperVaults, $UP token staking, and third-party earning opportunities should be treated as distinct product areas rather than conflated contract surfaces.",
     "relationship_narrative": "The Superform family provides the core vault and factory, while Hooks extend vault actions and Bridge Adapters enable cross-chain transfers. Yield Source Oracles supply pricing data to SuperVault Contracts, which aggregate yields, and the Infrastructure family manages accounts and execution across chains, with the $UP Token serving as the ecosystem's native asset.",
     "product_family_count": 7
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 158,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -100,64 +103,13 @@
         }
       ],
       "audits_covering": [
-        "audit-3987",
-        "audit-3988",
-        "audit-3989"
+        "audit-3987"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xc9ed56fbcbc3f0ce764d38e039cdaf36aa3c284c",
-      "name": "Vault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 26928.430137523275,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Vault",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xc9ed56fbcbc3f0ce764d38e039cdaf36aa3c284c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 52.57138856571688,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xd11a312a7d9745c62dfc014d72e7bb2403dabf72",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 4083.147657957558,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xd3a17928245064b6df5095a76e277fe441d538a4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 22792.711091,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
     },
     {
       "chain_id": 42161,
@@ -296,18 +248,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982",
-        "audit-3984",
-        "audit-3985"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -433,17 +381,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982",
-        "audit-3984"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -467,16 +412,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -500,16 +443,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3984"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -597,17 +538,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982",
-        "audit-3984"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -635,8 +573,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3981",
-        "audit-3982"
+        "audit-3981"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -919,16 +856,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -1018,8 +953,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3981",
-        "audit-3983"
+        "audit-3981"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1083,8 +1017,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3981",
-        "audit-3982"
+        "audit-3981"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1144,16 +1077,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3985"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -1177,16 +1108,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -1210,16 +1139,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3984"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -1247,9 +1174,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3987",
-        "audit-3988",
-        "audit-3989"
+        "audit-3987"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1278,16 +1203,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -1311,18 +1234,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982",
-        "audit-3984",
-        "audit-3985"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -1346,17 +1265,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3985",
-        "audit-3988"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -1411,16 +1327,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -1444,16 +1358,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -1477,17 +1389,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982",
-        "audit-3984"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -2039,8 +1948,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3981",
-        "audit-3988"
+        "audit-3981"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2295,16 +2203,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -2359,16 +2265,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -2789,16 +2693,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -2822,16 +2724,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -2886,16 +2786,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3989"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -2919,16 +2817,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3989"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -3201,16 +3097,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3984"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -3269,8 +3163,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3987",
-        "audit-3988"
+        "audit-3987"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -3303,9 +3196,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3981",
-        "audit-3982",
-        "audit-3983"
+        "audit-3981"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -3338,10 +3229,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3981",
-        "audit-3982",
-        "audit-3983",
-        "audit-3984"
+        "audit-3981"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -3374,10 +3262,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3981",
-        "audit-3982",
-        "audit-3984",
-        "audit-3985"
+        "audit-3981"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -3441,9 +3326,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3987",
-        "audit-3988",
-        "audit-3989"
+        "audit-3987"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -3472,17 +3355,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982",
-        "audit-3984"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -3506,18 +3386,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3982",
-        "audit-3984",
-        "audit-3985"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -3545,10 +3421,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3981",
-        "audit-3982",
-        "audit-3984",
-        "audit-3985"
+        "audit-3981"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -3581,8 +3454,6 @@
         }
       ],
       "audits_covering": [
-        "audit-3984",
-        "audit-3985",
         "audit-3987"
       ],
       "is_audited": true,
@@ -3711,9 +3582,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3987",
-        "audit-3988",
-        "audit-3989"
+        "audit-3987"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -3810,11 +3679,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3981",
-        "audit-3982",
-        "audit-3984",
-        "audit-3985",
-        "audit-3989"
+        "audit-3981"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -3905,16 +3770,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3984"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -6000,198 +5863,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3982,
-      "audit_key": "audit-3982",
-      "report_name": "Report",
-      "report_url": "https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.06.02-cantina-competition.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-08",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AbstractYieldSourceOracle",
-        "AcrossSendFundsAndExecuteOnDstHook",
-        "ApproveAndDeposit4626VaultHook",
-        "ApproveAndDeposit5115VaultHook",
-        "ApproveAndRedeem4626VaultHook",
-        "ApproveAndRedeem5115VaultHook",
-        "ApproveAndSwapOdosHook",
-        "ApproveERC20Hook",
-        "BaseLedger",
-        "BatchTransferFromHook",
-        "ClaimCancelRedeemRequest7540Hook",
-        "DeBridgeSendOrderAndExecuteOnDstHook",
-        "Deposit5115VaultHook",
-        "ERC4626YieldSourceOracle",
-        "ERC5115YieldSourceOracle",
-        "EthenaCooldownSharesHook",
-        "EthenaUnstakeHook",
-        "FlatFeeLedger",
-        "FluidClaimRewardHook",
-        "GearboxClaimRewardHook",
-        "MorphoBorrowHook",
-        "MorphoRepayAndWithdrawHook",
-        "MorphoRepayHook",
-        "PendlePTYieldSourceOracle",
-        "PendleRouterSwapHook",
-        "Redeem4626VaultHook",
-        "Redeem5115VaultHook",
-        "SpectraExchangeHook",
-        "SuperBundler",
-        "SuperDestinationExecutor",
-        "SuperDestinationValidator",
-        "SuperExecutor",
-        "SuperExecutorBase",
-        "SuperLedger",
-        "SuperLedgerConfiguration",
-        "SuperMerkleValidator",
-        "SuperNativePaymaster",
-        "SuperValidatorBase",
-        "Swap1InchHook",
-        "SwapOdosHook",
-        "YearnClaimOneRewardHook"
-      ],
-      "matched_contracts": 24,
-      "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3983,
-      "audit_key": "audit-3983",
-      "report_name": "Report",
-      "report_url": "https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.05.05-nodesecurity.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "DebridgeAdapter",
-        "SuperDestinationExecutor",
-        "SuperDestinationValidator"
-      ],
-      "matched_contracts": 3,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3984,
-      "audit_key": "audit-3984",
-      "report_name": "Report",
-      "report_url": "https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.04.19-cantinacode.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AcrossReceiveFundsAndExecuteGateway",
-        "AcrossSendFundsAndExecuteOnDstHook",
-        "AcrossTargetExecutor",
-        "ApproveAndDeposit4626VaultHook",
-        "ApproveAndRequestDeposit7540VaultHook",
-        "ApproveAndSwapOdosHook",
-        "ApproveERC20Hook",
-        "BaseClaimRewardHook",
-        "BaseHook",
-        "BaseLedger",
-        "Deposit7540VaultHook",
-        "ERC5115YieldSourceOracle",
-        "FlatFeeLedger",
-        "FluidUnstakeHook",
-        "FluidYieldSourceOracle",
-        "GearboxUnstakeHook",
-        "GearboxYieldSourceOracle",
-        "HookDataDecoder",
-        "PaymasterGasCalculator",
-        "StakingYieldSourceOracle",
-        "SuperDestinationValidator",
-        "SuperExecutor",
-        "SuperLedger",
-        "SuperLedgerConfiguration",
-        "SuperMerkleValidator",
-        "SuperNativePaymaster",
-        "SuperOracle",
-        "Swap1InchHook",
-        "SwapOdosHook",
-        "TransferERC20Hook",
-        "Withdraw7540VaultHook"
-      ],
-      "matched_contracts": 16,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3985,
-      "audit_key": "audit-3985",
-      "report_name": "Report",
-      "report_url": "https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.03.24-sujithsomraaj.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AbstractYieldSourceOracle",
-        "AcrossReceiveFundsAndExecuteGateway",
-        "AcrossSendFundsAndExecuteOnDstHook",
-        "BaseClaimRewardHook",
-        "BaseHook",
-        "BaseLedger",
-        "BasePaymaster",
-        "Deposit4626VaultHook",
-        "ERC1155Ledger",
-        "ERC5115YieldSourceOracle",
-        "ERC7540YieldSourceOracle",
-        "FluidStakeHook",
-        "FluidStakeWithPermitHook",
-        "FluidUnstakeHook",
-        "GearboxStakeHook",
-        "GearboxUnstakeHook",
-        "ISuperLedger",
-        "PeripheryRegistry",
-        "SuperExecutor",
-        "SuperLedgerConfiguration",
-        "SuperMerkleValidator",
-        "SuperNativePaymaster",
-        "SuperOracle",
-        "SuperRegistry",
-        "SuperRegistryImplementer",
-        "Swap1InchHook",
-        "SwapOdosHook",
-        "Withdraw4626VaultHook",
-        "YearnClaimOneRewardHook"
-      ],
-      "matched_contracts": 9,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 3986,
       "audit_key": "audit-3986",
       "report_name": "Report",
@@ -6257,113 +5928,25 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3988,
-      "audit_key": "audit-3988",
-      "report_name": "Report",
-      "report_url": "https://github.com/superform-xyz/v2-periphery/blob/dev/audits/2025.11.07-GetRecon.pdf",
-      "auditor": "0xMacro",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AbstractYieldSourceOracle",
-        "Bank",
-        "ECDSAPPSOracle",
-        "ERC4626YieldOracle",
-        "ERC7540YieldSourceOracle",
-        "MerklClaimRewardHook",
-        "SuperAssetPriceLib",
-        "SuperBank",
-        "SuperGovernor",
-        "SuperOracleBase",
-        "SuperVault",
-        "SuperVaultAggregator",
-        "SuperVaultStrategy"
-      ],
-      "matched_contracts": 7,
-      "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3989,
-      "audit_key": "audit-3989",
-      "report_name": "Report",
-      "report_url": "https://github.com/superform-xyz/v2-periphery/blob/dev/audits/2025.06.30-cantinacode.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2025-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "ApproveAndFluidStakeHook",
-        "ApproveAndGearboxStakeHook",
-        "BaseHook",
-        "BundlerRegistry",
-        "ECDSAPPSOracle",
-        "RequestDeposit7540VaultHook",
-        "RequestRedeem7540VaultHook",
-        "SuperGovernor",
-        "SuperVault",
-        "SuperVaultAggregator",
-        "SuperVaultEscrow",
-        "SuperVaultStrategy",
-        "Swap1InchHook",
-        "UpDistributor"
-      ],
-      "matched_contracts": 7,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
-      "auditor": "Spearbit",
-      "tier": 1,
-      "contracts_covered": 38,
-      "coverage_pct": 32.2,
-      "latest_audit": "2025-11"
-    },
-    {
       "auditor": "Orion Security",
       "tier": 2,
       "contracts_covered": 16,
-      "coverage_pct": 13.6,
+      "coverage_pct": 13.7,
       "latest_audit": "2025-08"
     },
     {
       "auditor": "0xMacro",
       "tier": 2,
-      "contracts_covered": 9,
-      "coverage_pct": 7.6,
+      "contracts_covered": 7,
+      "coverage_pct": 6,
       "latest_audit": "2025-11"
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xc9ed56fbcbc3f0ce764d38e039cdaf36aa3c284c",
-      "name": "Vault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 26928.430137523275,
-      "risk_note": "Verified native implementation with $26,928.43 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
@@ -6390,6 +5973,46 @@
       "address": "0x935c01e50f7c216dc7a97b1884f7431aaa164552",
       "name": "AdminProxy",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf37535d96712fbaef6d868e721e7b987ad1e6a86",
+      "name": "ApproveAndDeposit4626VaultHook",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x44c7a40f05771fdaeaee61f36902d95cbf593988",
+      "name": "ApproveAndDeposit5115VaultHook",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x840b2b0553683de46c5e6382d1a405f44773b43f",
+      "name": "ApproveAndRequestDeposit7540VaultHook",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8b789980dc6cc7d88e30c442d704646ff7f6d306",
+      "name": "ApproveERC20Hook",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -6435,6 +6058,16 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0668f9a638f34928f0bd91588e7b157f0699d594",
+      "name": "ClaimCancelRedeemRequest7540Hook",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x57c041e4504b05a7b3a3597134a1da78e719fc73",
@@ -6455,11 +6088,81 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa067037b29431c1ff23deb9b10cc8a1669b0698e",
+      "name": "Deposit4626VaultHook",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x32209a2302865784bc1dc0bd3c55d0a6eb205851",
+      "name": "Deposit5115VaultHook",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0ab1b12e090775fa67df6e1b44dfaee676c1dc84",
+      "name": "Deposit7540VaultHook",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd12a40b2abd166e17f18854f57ccd202091d9fb8",
+      "name": "ERC4626YieldSourceOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xec64fe4256e9e2b935f9acb13cf0b1ce06c6dd5c",
+      "name": "ERC5115YieldSourceOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8963d668adce629996ca0247885771b490612005",
+      "name": "ERC7540YieldSourceOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x6cb30b737ba441d7b5cf449d122223c55c03b3f8",
       "name": "esVKAToken",
       "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xab56d09ad9975116fceb14970f2ffb3bb0ad683e",
+      "name": "FlatFeeLedger",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -6637,8 +6340,48 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x5c3edf3f7c43828bb72a668e2b29f9e2d9af5a69",
+      "name": "Redeem4626VaultHook",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6ab1fd107825f9bb3e079d23508a07486b44e6f5",
+      "name": "Redeem5115VaultHook",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xe165fbbc89a60756f57cf0e34c04c35cc1bba79d",
       "name": "Redeem7540VaultHook",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbe7738b26992a322d53edeb9a39331bf11b60097",
+      "name": "RequestDeposit7540VaultHook",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9c21c130acf3eadd781ae79d75ff5fc4bd216797",
+      "name": "RequestRedeem7540VaultHook",
       "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -6705,11 +6448,41 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6a685cad15b7bb46094497243dcf94ad6557394c",
+      "name": "StakingYieldSourceOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 59144,
       "chain_name": "linea",
       "address": "0xd85ec15a9f814d6173bf1a89273bfb3964aadaec",
       "name": "SuperformFactory",
       "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x04916bb42564cded96e10f55c059d65e4fcb1be6",
+      "name": "SuperLedger",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2e2d71289cba19f831856f85dec7f194b0165e69",
+      "name": "SuperLedgerConfiguration",
+      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -6750,6 +6523,16 @@
       "address": "0x1ea65ae3d7e60e374221cde29844df81f447d68c",
       "name": "TemplateRegistry",
       "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6031c3953bc12d9af4651b7ed517190a31a67ca4",
+      "name": "TransferERC20Hook",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -6866,18 +6649,17 @@
     }
   ],
   "origin_summary": {
-    "native": 112,
+    "native": 111,
     "upstream": 13,
     "standard_library": 8,
     "needs_review": 26
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 89
+      "extraction_exact": 23
     },
     "extraction_confidence_counts": {
-      "high": 6,
-      "medium": 2
+      "high": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

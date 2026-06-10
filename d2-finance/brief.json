@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "d2-finance",
-  "generated_at": "2026-05-22T13:08:46.954Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:01.612Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "d2-finance",
@@ -35,7 +35,7 @@
     "coverage_pct": 48.4,
     "total_audits": 2,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 24574551.73937,
+    "dl_tvl_usd": 24602352.40501,
     "tvl_usd": 14911339.946370011,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "D2 Finance is an onchain capital allocator that deploys user funds into yield-generating strategies across multiple chains. It offers a suite of vaults and token sale mechanisms to manage and raise capital.",
+    "project_purpose": "D2 Finance is an onchain managed strategy and vault protocol that deploys user funds into tokenized yield and derivative strategies across multiple chains. Token sale and vesting contracts should be treated as historical or peripheral DSQ distribution infrastructure rather than the core current product offering.",
     "relationship_narrative": "The D2 Finance vault family represents the current core product, while the Vault Contracts family contains earlier V0 deployments from a different deployer cluster. Sales Contracts handle DSQ token distribution, and Protocol Multisig Wallets provide governance across all families.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 184,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

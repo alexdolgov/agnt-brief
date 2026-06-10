@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "velo-finance",
-  "generated_at": "2026-05-31T11:31:36.288Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:18.525Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "velo-finance",
     "tier": 0,
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Velo Finance is a decentralized exchange (DEX) protocol on BSC that enables token swaps and liquidity provision. It includes farming contracts for yield generation and a factory for creating liquidity pools.",
+    "project_purpose": "Velo Finance is listed by DefiLlama as a DEX on Binance/BNB Chain. The current homepage provides no substantive product text confirming specific swap, liquidity provision, farming, or pool factory behavior; those details should be treated as unconfirmed unless supported by project documentation or verified contract analysis. EVRY/Evry references should be treated as observed contract names only unless project documentation confirms their relationship to Velo Finance.",
     "relationship_narrative": "The EvryFactory registry creates and manages liquidity pools, while the Farms contracts distribute rewards to liquidity providers. The EVRY token and two additional tokens serve as core assets within the ecosystem.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 28,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -5,8 +5,8 @@
 - Project: Guru Network DAO (`guru-network-dao`)
 - Website: [https://ftm.guru/](https://ftm.guru/)
 - Lifecycle: active (Tier 0, 83% below peak)
-- Generated: 2026-05-31T08:17:51.627Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:04.413Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, avalanche, base, fantom, kava, metis, polygon, sonic
 - Contract surface: 54 unique implementations (71 raw deployments)
 - DeFi Llama TVL: $2,305,169.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Guru Network DAO is a multi-chain DeFi protocol offering decentralized exchange, lending, yield optimization, and liquid staking services. It aggregates liquidity and automates yield strategies across several EVM-compatible chains.
+Guru Network DAO is a multi-chain DeFi protocol described by DefiLlama as operating across multiple chains, with observed contract surface including liquidity-book routing and quoting components such as LBRouter and LBQuoter deployments. Its exact product scope should be treated cautiously unless supported by current documentation or verified contract source; lending, liquid staking, yield optimization, liquidity aggregation, or automated yield strategies should not be asserted without further verification.
 
 ### Architecture
 

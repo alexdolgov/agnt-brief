@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "monstro",
-  "generated_at": "2026-05-31T10:00:23.680Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:07.787Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "transitioning",
   "lifecycle_signal": {
     "slug": "monstro",
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "MONSTRO is a yield protocol on Base that allows users to stake its native token to earn rewards.",
+    "project_purpose": "MONSTRO is/was a Base protocol historically tracked as a yield project with $MONSTRO staking, alongside related Monstro ecosystem contracts including native token, NFT, NFT sale/features/props, payment/USDC, and data-tracker contracts. The current v2 site indicates a migration toward a broader $MONSTRO ecosystem, Monstro DAO, and Monstro Labs rather than only staking.",
     "relationship_narrative": "The MonstroToken is the core asset, and MonstroStaking is the contract that manages staking and reward distribution, with no additional shared infrastructure detected.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 9,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

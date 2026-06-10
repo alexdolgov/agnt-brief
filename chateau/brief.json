@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "chateau",
-  "generated_at": "2026-05-25T07:19:27.137Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:01.394Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "chateau",
@@ -35,7 +35,7 @@
     "coverage_pct": 33.3,
     "total_audits": 1,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 1036447.87805,
+    "dl_tvl_usd": 1036282.93155,
     "tvl_usd": 19062.448015579543,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -59,9 +59,14 @@
     }
   },
   "topography": {
-    "project_purpose": "CHATEAU is a real-world asset (RWA) protocol that issues the chUSD stablecoin backed by real-world assets and offers staking derivatives (StakedchUSDOFT, StakedchUSDV2) to earn yield on chUSD deposits.",
+    "project_purpose": "CHATEAU is an RWA/institutional-asset DeFi protocol centered on chUSD, an overcollateralized synthetic dollar/stable-value asset. Its staked chUSD products, including StakedchUSDOFT and StakedchUSDV2 where applicable, represent vault-style exposure to off-chain institutional/private credit strategies rather than a simple stablecoin backed directly by real-world assets.",
     "relationship_narrative": "The two chUSD instances likely represent the same stablecoin across different chains or pools, while StakedchUSDOFT and StakedchUSDV2 are staking derivatives that depend on chUSD as the underlying asset. The unnamed contracts likely provide infrastructure such as staking logic or access control shared between the staking tokens.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 5,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -104,7 +109,7 @@
       "chain_name": "plasma",
       "address": "0x22222215d4edc5510d23d0886133e7ece7f5fdc1",
       "name": "chUSD",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Smart Contracts",

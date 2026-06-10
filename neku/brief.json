@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "neku",
-  "generated_at": "2026-05-24T20:04:00.904Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:08.059Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "neku",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Neku is a lending protocol on Arbitrum One that enables users to supply and borrow crypto assets through a Compound-based architecture. It uses a Comptroller for risk management and a governance token (Comp) for protocol incentives.",
+    "project_purpose": "Neku is a decentralized multi-chain lending protocol that enables users to supply and borrow crypto assets through a Compound-based architecture. The listed contracts represent the Arbitrum deployment subset, including a Unitroller/Comptroller control plane and CErc20Delegator market contracts. Governance or incentive-token claims should be treated as unverified unless supported by contract, documentation, or audit evidence.",
     "relationship_narrative": "The Unitroller proxy delegates to the ComptrollerG7 implementation, which governs the lending markets and interacts with the Comp token for reward distribution. All contracts are deployed by a single deployer, indicating a unified protocol structure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 17,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

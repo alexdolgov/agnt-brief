@@ -4,8 +4,8 @@
 
 - Project: EtherFlip (`etherflip`)
 - Lifecycle: active (Tier 0, 56.3% below peak)
-- Generated: 2026-05-31T07:55:25.133Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:02.341Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 7 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $1,577,166.36
@@ -14,7 +14,7 @@
 
 ## Project Description
 
-EtherFlip is a luck-based gaming protocol on Ethereum where users can participate in games of chance, likely involving token flips or similar randomized outcomes.
+EtherFlip is an Ethereum Luck Games / Dice-Farm DeFi application centered on on-chain games of chance. Its tracked contract surface should not be described as a single-core-contract architecture; it includes multiple distinct EtherFlip game variants as well as token, raffle, and related contracts.
 
 ### Architecture
 

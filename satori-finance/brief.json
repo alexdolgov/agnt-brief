@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "satori-finance",
-  "generated_at": "2026-05-25T13:51:34.819Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:13.457Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "satori-finance",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1279808,
+    "dl_tvl_usd": 1279341,
     "tvl_usd": 40944.595808,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -63,9 +63,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Satori Finance is a decentralized derivatives and spot trading platform operating across multiple chains. It offers perpetual futures and spot trading products, leveraging a modular architecture with vaults, oracles, and staking infrastructure.",
+    "project_purpose": "Satori Finance is a decentralized perpetuals and financial derivatives trading platform. Its evidenced product focus is derivatives/perpetual trading; spot-trading, staking infrastructure, yield-bearing vaults, and shared oracle/registry architecture should not be described as core Satori product families unless supported by project documentation or verified contract roles.",
     "relationship_narrative": "Both product families share infrastructure such as proxy contracts for upgradeability and likely common oracle or registry services. The perpetual family relies on yield-bearing vaults and staking managers that may also be used in spot trading for collateral or liquidity.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 40,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

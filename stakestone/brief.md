@@ -1,14 +1,12 @@
 # Agentic Audit Brief: StakeStone
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 2.1% over 90 days
-
 ## Project Overview
 
 - Project: StakeStone (`stakestone`)
 - Website: [https://stakestone.io](https://stakestone.io)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:40:41.295Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:16.567Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, berachain, bsc, ethereum, linea, mantle, merlin, scroll
 - Contract surface: 183 unique implementations (264 raw deployments)
 - DeFi Llama TVL: $23,274,618.56
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-StakeStone is an on-chain capital allocator that provides liquid staking and yield aggregation across multiple chains. It issues liquid staking tokens (STONE, SBTC) representing staked assets and optimizes yields through vaults and strategies.
+StakeStone has evolved beyond its legacy DeFiLlama-style identity as primarily a liquid staking and yield aggregation protocol issuing assets such as STONE and SBTC. Its current public positioning presents StakeStone as a crypto-native, autonomous neo bank and payments/yield layer, offering personal accounts, borderless payments, AI-agent payment capabilities, and yield-bearing USD products, while its legacy staking and on-chain yield products remain part of the broader historical protocol context.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The StakeStone family provides core vaults and tokens (STONE, SBTC) used across 
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $49,725,394.58 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

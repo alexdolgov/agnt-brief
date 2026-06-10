@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "treehouse-protocol",
-  "generated_at": "2026-05-31T11:10:57.991Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:17.578Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "treehouse-protocol",
     "tier": 0,
@@ -22,31 +22,31 @@
     "drop_from_peak_pct": 86.1189622335601
   },
   "summary": {
-    "total_contracts": 78,
-    "total_addresses": 94,
-    "unique_implementations": 78,
-    "total_deployments": 94,
+    "total_contracts": 77,
+    "total_addresses": 92,
+    "unique_implementations": 77,
+    "total_deployments": 92,
     "audited_contracts": 29,
-    "unaudited_contracts": 40,
+    "unaudited_contracts": 39,
     "contracts_verified_audited": 29,
-    "contracts_verified_unaudited": 40,
+    "contracts_verified_unaudited": 39,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 9,
-    "coverage_pct": 42,
+    "coverage_pct": 42.6,
     "total_audits": 20,
     "scoreable_audits": 16,
     "dl_tvl_usd": 87665909.36648999,
-    "tvl_usd": 31172969.01946407,
+    "tvl_usd": 23978444.770373065,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 31172969.02
+      "ethereum": 23978444.77
     },
     "asd_usd": 1798114.2263752294,
     "website_url": "https://www.treehouse.finance/",
     "chains": [
       "ethereum"
     ],
-    "tier1_coverage_pct": 15.9,
+    "tier1_coverage_pct": 16.2,
     "tier1_auditors": [
       "Trail of Bits"
     ],
@@ -60,9 +60,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Treehouse Protocol is a DeFi platform that provides liquid staking, lending, and stablecoin minting services. It allows users to stake ETH to receive a liquid staking token (tETH), borrow against their assets, and interact with stablecoin pools.",
+    "project_purpose": "Treehouse Protocol is a DeFi fixed-income protocol focused on tAssets, including tETH, and decentralized offered rates (DOR). It provides tokenized yield and fixed-income products rather than operating as a native lending, borrowing, or stablecoin-minting platform.",
     "relationship_narrative": "The protocol's core Vault and SimpleStakingERC20 token handle staking and liquid token issuance, while the LendingPoolv3 proxy enables borrowing. Supporting contracts like WithdrawalQueueERC721 manage unstaking, and CurveStableSwapNG pools facilitate stablecoin swaps, all sharing the same staking and lending infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 77,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -78,7 +83,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Treehouse Protocol",
-      "tvl_usd": 29374738.195875548,
+      "tvl_usd": 22180213.94678454,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "Vault",
@@ -90,15 +95,6 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 22180213.94678454,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xba12222222228d8ba445958a75a0704d566bf2c8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 7194524.249091009,
           "is_audited": true
         }
       ],
@@ -315,37 +311,6 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa331d84ec860bf466b4cdccfb4ac09a1b43f3ae6",
-      "name": "Authorizer",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "balancer",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Authorizer",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xa331d84ec860bf466b4cdccfb4ac09a1b43f3ae6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -3313,28 +3278,28 @@
       "auditor": "WatchPug",
       "tier": 2,
       "contracts_covered": 19,
-      "coverage_pct": 27.5,
+      "coverage_pct": 27.9,
       "latest_audit": "2026-05"
     },
     {
       "auditor": "Sigma Prime",
       "tier": 2,
       "contracts_covered": 17,
-      "coverage_pct": 24.6,
+      "coverage_pct": 25,
       "latest_audit": "2025-03"
     },
     {
       "auditor": "Trail of Bits",
       "tier": 1,
       "contracts_covered": 11,
-      "coverage_pct": 15.9,
+      "coverage_pct": 16.2,
       "latest_audit": "2024-10"
     },
     {
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 6,
-      "coverage_pct": 8.7,
+      "coverage_pct": 8.8,
       "latest_audit": "2024-09"
     }
   ],
@@ -3572,7 +3537,7 @@
   ],
   "origin_summary": {
     "native": 53,
-    "upstream": 11,
+    "upstream": 10,
     "standard_library": 7,
     "needs_review": 7
   },

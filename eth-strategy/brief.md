@@ -5,8 +5,8 @@
 - Project: ETH Strategy (`eth-strategy`)
 - Website: [https://www.ethstrat.xyz/](https://www.ethstrat.xyz/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T07:57:25.232Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:02.311Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 49 unique implementations (161 raw deployments)
 - DeFi Llama TVL: $3,883,275.14
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-ETH Strategy is an onchain capital allocator that deploys assets into structured yield strategies. It offers perpetual note products and liquidity provision mechanisms, primarily on Ethereum.
+ETH Strategy is an Ethereum-based treasury accumulation protocol focused on providing leveraged ETH exposure without margin-liquidation or volatility-decay risks. Its on-chain surface includes vault-style contracts and related strategy components; references to perpetual or convertible note products should be limited to cases supported by identified contract names or parsed audit scope.
 
 ### Architecture
 

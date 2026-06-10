@@ -5,21 +5,22 @@
 - Project: Republic Note (`republic-note`)
 - Website: [https://republic.com/note](https://republic.com/note)
 - Lifecycle: active (Tier 0, 58.4% below peak)
-- Generated: 2026-05-31T10:23:37.026Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:09.504Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: avalanche
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $16,054,934.84
 - On-chain TVL (included contracts): $51,200,000.00
 - TVL by chain: Avalanche $51,200,000.00
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Republic Note is a tokenized real-world asset (RWA) protocol that issues a restricted, lockup-based token representing fractional ownership or revenue-sharing rights in private equity or venture capital assets.
-
-### Architecture
-
-The protocol consists of a single product family with no shared infrastructure or dependencies beyond the core token contract.
+Republic Note is an Avalanche RWA/digital asset providing broad exposure to venture and crypto, implemented through a restricted lockup token with transfer-rule logic and apparent dividend and swap support contracts.
 
 ## Audit Coverage Summary
 

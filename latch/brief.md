@@ -7,21 +7,22 @@
 - Project: Latch (`latch`)
 - Website: [https://savings.latch.io/](https://savings.latch.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T08:40:08.492Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:06.864Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,606,674.69
 - On-chain TVL (included contracts): $189.85
 - TVL by chain: Ethereum $189.85
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Latch is a yield protocol on Ethereum that allows users to deposit assets into a pool to earn yield. The single DepositPool contract manages user deposits and yield generation.
-
-### Architecture
-
-The protocol consists of a single product family with one core contract, so there are no cross-family relationships or shared infrastructure.
+Latch is a yield/interoperability protocol on Ethereum where users can deposit idle tokens, select a preferred vault, and earn yield and/or points. Public descriptions position Latch as unifying yield, liquidity, and chains; the currently surfaced DepositPool contract should not be assumed to represent all protocol yield generation or total value at risk without further verification.
 
 ## Audit Coverage Summary
 

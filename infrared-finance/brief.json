@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "infrared-finance",
-  "generated_at": "2026-05-31T08:29:18.245Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:59:06.221Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "infrared-finance",
     "tier": 1,
@@ -71,9 +71,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Infrared Finance is a liquid staking protocol on Berachain and BSC that allows users to stake BERA tokens and receive a liquid staking derivative (iROFT) while earning staking rewards. It also manages fee distribution and bribe collection to optimize yield for stakers.",
+    "project_purpose": "Infrared Finance is a Berachain Proof-of-Liquidity and liquid-products protocol. Its product suite includes PoL vaults, iBGT, iBERA as the BERA liquid staking receipt token, sIR, and IR Swap. BSC IROFT/OFT deployments should be described separately as token/OFT infrastructure rather than as the main BERA staking derivative or a TVL-bearing protocol chain.",
     "relationship_narrative": "The core staking contracts (InfraredBERAV2_1 and InfraredV1_10) interact with supporting infrastructure: depositor and withdrawor handle user flows, distributor manages reward distribution, fee receivor collects protocol fees, and bribe collector optimizes yield, all sharing the iROFT token.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 27,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

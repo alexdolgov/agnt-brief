@@ -4,17 +4,17 @@
 
 - Project: sDAI (`sdai`)
 - Lifecycle: active (Tier 0, 40.8% below peak)
-- Generated: 2026-05-27T14:05:57.028Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:59:14.831Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: gnosis
-- Contract surface: 93 unique implementations (178 raw deployments)
+- Contract surface: 91 unique implementations (153 raw deployments)
 - DeFi Llama TVL: $71,997,196.51
-- On-chain TVL (included contracts): $3,819.17
-- TVL by chain: Gnosis $3,819.17
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-sDAI is a yield-bearing token that represents deposits into the Savings xDAI contract, allowing users to earn interest on their xDAI holdings on the Gnosis chain.
+sDAI on Gnosis Chain is a yield-bearing token for deposits into the Savings xDAI contract at 0xaf204776c7245bf4147c2612bf6e5972ee483701, allowing users to earn MakerDAO DAI Savings Rate-derived interest on bridged DAI/xDAI. Aave, Agave, StaticATokenLM/aToken, Uniswap, Angle, and generic library or periphery contracts should be treated as external integrations or infrastructure unless separately proven to be owned sDAI core contracts.
 
 ### Architecture
 
@@ -22,15 +22,15 @@ The SavingsXDai contract is the core savings pool, while the StaticATokenLM impl
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/48 (0.0%)
-- Verified + Unaudited implementations: 48
+- Verified implementations audited: 0/46 (0.0%)
+- Verified + Unaudited implementations: 46
 - Verified by bytecode match: 0
 - Unverified implementations: 45
-- Unique implementations: 93
-- Raw deployments: 178
+- Unique implementations: 91
+- Raw deployments: 153
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $3,819.17
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -45,11 +45,10 @@ The SavingsXDai contract is the core savings pool, while the StaticATokenLM impl
 
 - None
 
-### ⚠️ Verified + Unaudited (48)
+### ⚠️ Verified + Unaudited (46)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| StaticATokenLM | token | gnosis | 19 deployments: gnosis [`0x01ac90...c5f6e2`](./contracts/gnosis-100/0x01ac9005f8446af28b065af87216b85faac5f6e2/); gnosis `0x110e2d...3ec78b`; gnosis `0x13f2b8...9de3fb`; gnosis `0x20e5eb...43461f`; gnosis `0x248ce8...2acc13`; gnosis `0x365d2e...f35322`; gnosis `0x3d938f...5a9bbc`; gnosis `0x4a0c32...7e8adb`; gnosis `0x6d9dc1...949f22`; gnosis `0x858227...fcb2f0`; gnosis `0x8e0dbc...2bc339`; gnosis `0x9a4dcb...8631ea`; gnosis `0x9ae6d6...5c97ed`; gnosis `0xa357ef...0ae61e`; gnosis `0xa95027...25cc68`; gnosis `0xc15933...19d314`; gnosis `0xce02a2...d8daff`; gnosis `0xd28490...ce4ed2`; gnosis `0xe22b9b...e0ef13` | ⚠️ Unaudited |
 | AgaveBuybackOrder | unknown | gnosis | [`0x5d1e9f...5befb4`](./contracts/gnosis-100/0x5d1e9fa09ed123660775c395beac281f405befb4/) | ⚠️ Unaudited |
 | AgaveHoldingsOracle | operational_periphery | gnosis | 2 deployments: gnosis [`0xa671d7...ec8791`](./contracts/gnosis-100/0xa671d7d0c571e5b92510de6c5d0b5c1635ec8791/); gnosis `0xbe76f3...f615ef` | ⚠️ Unaudited |
 | AgaveIncentivesBulkClaimer | operational_periphery | gnosis | [`0xc777eb...913277`](./contracts/gnosis-100/0xc777eb53b224ab27dd348d2a678bfd20ce913277/) | ⚠️ Unaudited |
@@ -60,7 +59,6 @@ The SavingsXDai contract is the core savings pool, while the StaticATokenLM impl
 | AgaveswapV3Factory | registry | gnosis | 2 deployments: gnosis [`0x0cf086...55b66f`](./contracts/gnosis-100/0x0cf086e8714571c85b3e88b541fcac763555b66f/); gnosis `0xa98c2e...d047c3` | ⚠️ Unaudited |
 | AgaveTreasuryRedeemer | operational_periphery | gnosis | [`0x33805e...bbc457`](./contracts/gnosis-100/0x33805e4ef17cf0f391d25ead14fa9d2b74bbc457/) | ⚠️ Unaudited |
 | AgaveTreasuryWithdrawer | operational_periphery | gnosis | [`0x91ed56...890018`](./contracts/gnosis-100/0x91ed5609e5b9d6991f024570025c872382890018/) | ⚠️ Unaudited |
-| AToken | token | gnosis | 6 deployments: gnosis [`0x223fe0...2c7ac2`](./contracts/gnosis-100/0x223fe000fc6ef0ed36576d912e506b5f572c7ac2/); gnosis `0x3e2081...9ec2d2`; gnosis `0x8f0563...b9ee40`; gnosis `0x8f40f6...3a27ba`; gnosis `0xc8270d...e23725`; gnosis `0xdc77a0...92f381` | ⚠️ Unaudited |
 | BridgeInterestReceiver | operational_periphery | gnosis | 2 deployments: gnosis [`0x17780d...625122`](./contracts/gnosis-100/0x17780d40287eb6d9605ec8b324605cf98a625122/); gnosis `0x670dae...059088` | ⚠️ Unaudited |
 | BulkMerkleClaimer | operational_periphery | gnosis | [`0xb22935...f644b1`](./contracts/gnosis-100/0xb229353e8d34349e8e2951d06642902c87f644b1/) | ⚠️ Unaudited |
 | CLSynchronicityPriceAdapterPegToBase | operational_periphery | gnosis | [`0xae27e6...7b48c3`](./contracts/gnosis-100/0xae27e63307963850c4d30bfba78fc1116d7b48c3/) | ⚠️ Unaudited |
@@ -188,9 +186,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 9 |
-| upstream | 36 |
+| upstream | 35 |
 | standard_library | 1 |
-| needs_review | 47 |
+| needs_review | 46 |
 
 ## Scope Matching Notes
 

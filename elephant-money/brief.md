@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Elephant Money
 
-⚠️ Lifecycle status: DEAD - TVL trajectory indicates non-active lifecycle.
+⚠️ Lifecycle status: DECLINING - TVL trajectory indicates non-active lifecycle.
 
 ## Project Overview
 
 - Project: Elephant Money (`elephant-money`)
 - Website: [https://elephant.money](https://elephant.money)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-31T14:54:04.140Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:59:02.089Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 346 unique implementations (667 raw deployments)
 - DeFi Llama TVL: $79,150,904.90
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Elephant Money is a DeFi yield protocol on BSC offering vaults, futures, and NFT-based products. It provides mechanisms for staking, yield generation, and liquidity management through a suite of interconnected contracts.
+Elephant Money is a decentralized community-bank and economic-engine ecosystem centered on ELEPHANT/WELEPHANT and TRUNK. Its historical BNB Chain products include vault/reserve-style yield and liquidity mechanisms, while the current public site also advertises WELEPHANT activity on Base and BNB Chain and TRUNK/USDC activity on Solana. Non-BNB deployments and products should be treated as out of scope unless their contracts are explicitly collected and mapped.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ Vaults and yield strategies interact with treasuries and engines to manage funds
 - Latest audit: 2022-08 (stale)
 - Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $1,571,321.59 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $1,571,321.59 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

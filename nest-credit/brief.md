@@ -5,8 +5,8 @@
 - Project: Nest Credit (`nest-credit`)
 - Website: [https://nest.credit/](https://nest.credit/)
 - Lifecycle: active (Tier 0, 39.9% below peak)
-- Generated: 2026-05-31T14:54:09.416Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:59:08.097Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, bsc, ethereum, plasma
 - Contract surface: 16 unique implementations (65 raw deployments)
 - DeFi Llama TVL: $50,512,175.44
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Nest Credit is a multi-chain real-world asset (RWA) protocol that enables users to deposit assets into yield-bearing vaults and perform cross-chain operations. It uses LayerZero for cross-chain messaging and atomic solvers for efficient trade execution.
+Nest Credit is an RWA-focused yield and vault product on Plume that enables users to deposit stablecoins or supported assets into vaults for tokenized real-world asset yield exposure. Cross-chain messaging and atomic solver components should be treated as observed contract components unless confirmed as current product functionality in Nest documentation.
 
 ### Architecture
 
@@ -29,19 +29,18 @@ The Vault Contracts family relies on the Atomic Solver and Atomic Queue for effi
 - Unverified implementations: 9
 - Unique implementations: 16
 - Raw deployments: 65
-- Audits discovered: 16
-- Scoreable audits (matched contracts): 2
+- Audits discovered: 15
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-04 (fresh)
-- Staleness: 3 fresh, 2 aging, 3 stale, 8 unknown
-- Tier 1 coverage: 42.9% (Spearbit)
+- Staleness: 3 fresh, 2 aging, 2 stale, 8 unknown
+- Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
 | 0xMacro | Tier 2 | 4 | 57.1% | 2024-04 |
-| Spearbit | Tier 1 | 3 | 42.9% | 2026-04 |
 
 ## Contract Surface
 
@@ -99,7 +98,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [slowmist2.pdf](https://github.com/plumenetwork/contracts/blob/main/staking/audit/slowmist2.pdf) | SlowMist | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
 | [| 2026/04/10 | [Nest vault, share & accountant contracts with cross-chain orchestration]() | Cantina |](https://github.com/plumenetwork/nest-protocol/blob/main/audits/report_cantinacode_2601.pdf) | Spearbit | Audit | 2026-04 | fresh | Direct | n/a | 0 | n/a |
 | [BoringVault smart contracts](https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-0.pdf) | 0xMacro | Audit | 2024-03 | stale | Direct | contract_name | 40 | high |
-| [BoringVault smart contracts](https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/spearbit-boring-vault-arctic-0.pdf) | Spearbit | Audit | 2024-04 | stale | Direct | contract_name | 38 | high |
 | [BoringVault follow-up audit](https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-1.pdf) | 0xMacro | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
 | [Nucleus cross-chain infrastructure](https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/pashov-boring-vault.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Nucleus + Hyperlane integration](https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/pashov-hyperlane.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -136,8 +134,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 14
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=78
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=40
 
 Zero-match audit list:
 

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "credit-coop",
-  "generated_at": "2026-05-25T17:28:35.089Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:59:01.552Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "credit-coop",
     "tier": 0,
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 3,
+    "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4554277.04285,
+    "dl_tvl_usd": 4559555.580089999,
     "tvl_usd": 2075800.607235,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -50,19 +50,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2024-09",
-    "audit_freshness": "aging",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 2,
-      "stale": 1,
+      "aging": 0,
+      "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Credit Coop is a decentralized lending protocol that enables real-world asset (RWA) backed loans. It uses lending vaults to pool stablecoins and issue loans, with USDC as the primary settlement token.",
+    "project_purpose": "Credit Coop is a decentralized lending protocol for real-world-asset-backed loans. It uses native LendingVault contracts to pool deposited assets and issue loans; USDC should be treated as an external settlement/deposit token dependency, not as a Credit Coop product line or project-owned contract surface.",
     "relationship_narrative": "The Credit Coop lending vaults rely on the PayFi Vault's USDC tokens as the deposit and loan currency. All vaults interact with the same USDC contracts, sharing a common settlement layer across Ethereum and Base.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -159,71 +164,7 @@
       "contamination_flag": null
     }
   ],
-  "audits": [
-    {
-      "audit_id": 2570,
-      "audit_key": "audit-2570",
-      "report_name": "IndexDIMv3AuditReport.md",
-      "report_url": "https://github.com/IndexCoop/audits/blob/main/audits/IndexDIMv3AuditReport.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2571,
-      "audit_key": "audit-2571",
-      "report_name": "IndexIcUSDAuditReport.md",
-      "report_url": "https://github.com/IndexCoop/audits/blob/main/audits/IndexIcUSDAuditReport.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-09",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2572,
-      "audit_key": "audit-2572",
-      "report_name": "IndexPRTAuditReport.md",
-      "report_url": "https://github.com/IndexCoop/audits/blob/main/audits/IndexPRTAuditReport.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -248,20 +189,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 2570,
-        "report_name": "IndexDIMv3AuditReport.md"
-      },
-      {
-        "audit_id": 2571,
-        "report_name": "IndexIcUSDAuditReport.md"
-      },
-      {
-        "audit_id": 2572,
-        "report_name": "IndexPRTAuditReport.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

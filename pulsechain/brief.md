@@ -5,8 +5,8 @@
 - Project: Pulsechain (`pulsechain`)
 - Website: [https://pulsechain.com/](https://pulsechain.com/)
 - Lifecycle: active (Tier 0, 70.3% below peak)
-- Generated: 2026-05-31T10:20:45.560Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:09.400Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 5 unique implementations (10 raw deployments)
 - DeFi Llama TVL: $51,978,339.28
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Pulsechain is a blockchain network that provides cross-chain bridging infrastructure, enabling asset transfers between Ethereum and Pulsechain via omnibridge and arbitrary message bridge contracts.
+PulseChain is an Ethereum-fork Layer 1 blockchain. The covered Ethereum-side contracts appear to be bridge/Omnibridge infrastructure used for asset transfers and message passing between Ethereum and PulseChain, rather than representing the full scope of the PulseChain network.
 
 ### Architecture
 

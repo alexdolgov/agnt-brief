@@ -7,8 +7,8 @@
 - Project: Verus Market (`verus-market`)
 - Website: [https://eth.verusbridge.io/](https://eth.verusbridge.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T11:32:43.735Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:18.572Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 32 unique implementations (32 raw deployments)
 - DeFi Llama TVL: $9,647,253.92
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Verus Market is a decentralized exchange (DEX) protocol on Ethereum, enabling users to trade tokens through a single proxy contract that routes to its implementation logic.
+Verus Market is a DefiLlama-listed decentralized exchange (DEX) on the Verus chain. Separately, multiple Ethereum contracts are associated or suspected in the available contract surface, including VerusProof and NotarizationSerializer, but their roles should be treated as verifier/support/unknown infrastructure unless independently verified. The current evidence does not support describing the product as an Ethereum DEX or as a single-proxy contract family.
 
 ### Architecture
 

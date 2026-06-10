@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "illuvium",
-  "generated_at": "2026-05-31T08:26:59.744Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:06.119Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "illuvium",
     "tier": 1,
@@ -32,14 +32,14 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 17,
-    "total_addresses": 29,
-    "unique_implementations": 17,
-    "total_deployments": 29,
+    "total_contracts": 16,
+    "total_addresses": 28,
+    "unique_implementations": 16,
+    "total_deployments": 28,
     "audited_contracts": 0,
-    "unaudited_contracts": 15,
+    "unaudited_contracts": 14,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 15,
+    "contracts_verified_unaudited": 14,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
     "coverage_pct": 0,
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Illuvium is a gaming protocol that provides staking and liquidity pool contracts for its native ILV token, enabling users to earn rewards and participate in the Illuvium ecosystem.",
+    "project_purpose": "Illuvium is a gaming ecosystem centered on a decentralized NFT collection and auto-battler game, with Ethereum-based ILV staking and pool2/liquidity contracts supporting participation in the broader Illuvium ecosystem.",
     "relationship_narrative": "The Illuvium family uses ERC1967Proxy contracts to upgrade ILVPool and SushiLPPool logic, while IlluviumCorePool interacts with the ILV token and UniswapV2Pair for staking and liquidity rewards.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 16,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -519,37 +524,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x6a091a3406e0073c3cd6340122143009adac0eda",
-      "name": "UniswapV2Pair",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
-      "product_line": "Illuvium",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "UniswapV2Pair",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6a091a3406e0073c3cd6340122143009adac0eda",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x088823fa2c0ceb120198d9e1006bf2596bcae7b8",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -839,7 +813,7 @@
   ],
   "origin_summary": {
     "native": 14,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 2,
     "needs_review": 0
   },

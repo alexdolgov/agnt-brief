@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "desyn-protocol",
-  "generated_at": "2026-05-31T07:51:12.437Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:59:01.843Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "desyn-protocol",
     "tier": 1,
@@ -67,9 +67,14 @@
     }
   },
   "topography": {
-    "project_purpose": "DeSyn Protocol is a decentralized asset management platform offering yield aggregation, basis trading, and liquid strategies. It enables users to deposit assets into liquidity pools that execute automated yield and trading strategies across multiple chains.",
+    "project_purpose": "DeSyn Protocol is a decentralized asset management platform spanning multiple product families tracked as DeSyn Basis Trading, DeSyn Liquid Strategy, and DeSyn Safe/Farm. Its current protocol surface should be modeled across the active TVL-bearing deployments, with parent-protocol TVL primarily associated with Basis Trading rather than only legacy Ethereum or Mode DeSyn Safe liquidity pools.",
     "relationship_narrative": "The governance family (GnosisSafeProxy) likely manages upgrades and parameters for the DeSyn Safe liquidity pools. The unnamed supporting contracts in DeSyn Safe may include adapters, registries, or access control modules that facilitate pool operations and strategy execution.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 11,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

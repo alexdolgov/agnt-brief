@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "republic-note",
-  "generated_at": "2026-05-31T10:23:37.026Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:59:09.504Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "republic-note",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Republic Note is a tokenized real-world asset (RWA) protocol that issues a restricted, lockup-based token representing fractional ownership or revenue-sharing rights in private equity or venture capital assets.",
-    "relationship_narrative": "The protocol consists of a single product family with no shared infrastructure or dependencies beyond the core token contract.",
+    "project_purpose": "Republic Note is an Avalanche RWA/digital asset providing broad exposure to venture and crypto, implemented through a restricted lockup token with transfer-rule logic and apparent dividend and swap support contracts.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

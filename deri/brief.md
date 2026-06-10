@@ -5,17 +5,17 @@
 - Project: Deri (`deri`)
 - Website: [https://deri.io/#/index](https://deri.io/#/index)
 - Lifecycle: active (Tier 0, 90.3% below peak)
-- Generated: 2026-05-26T05:22:18.980Z
-- Pipeline run: v2-pipeline-2026-05-26-eff36e-a3ce
+- Generated: 2026-06-10T20:59:01.820Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, blast, bsc, ethereum, linea, manta, polygon, polygon-zkevm, scroll, sonic, zksync-era
 - Contract surface: 868 unique implementations (1904 raw deployments)
-- DeFi Llama TVL: $7,440,548.00
+- DeFi Llama TVL: $7,308,245.00
 - On-chain TVL (included contracts): $2,426.94
 - TVL by chain: Polygon $2,401.91 | Bsc $23.84 | Arbitrum $1.07 | Base $0.12
 
 ## Project Description
 
-Deri Protocol is a decentralized derivatives platform that enables users to trade perpetual futures, options, and other derivatives on-chain. It uses liquidity pools and automated market-making to facilitate trading without traditional order books.
+Deri is a multi-chain decentralized derivatives protocol for trading futures, options, powers, and other on-chain risk exposures; it uses protocol liquidity, gateways, oracles, and related execution infrastructure.
 
 ### Architecture
 

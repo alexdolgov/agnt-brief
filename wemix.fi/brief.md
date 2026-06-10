@@ -5,21 +5,22 @@
 - Project: WEMIX.FI (`wemix.fi`)
 - Website: [https://wemix.fi](https://wemix.fi)
 - Lifecycle: unknown
-- Generated: 2026-05-26T15:16:02.307Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T20:59:18.802Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $38,180,746.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-WEMIX.FI is a multi-product DeFi protocol on the WEMIX blockchain offering concentrated and full-range liquidity provision, liquid staking, lending, and staking pools. It enables users to earn yield, borrow assets, and participate in governance through a unified ecosystem.
-
-### Architecture
-
-The product families share common infrastructure such as token standards and likely a unified governance token, but no explicit contract-level dependencies are visible from the provided metadata.
+WEMIX.FI is a fully on-chain DeFi platform and decentralized exchange on WEMIX3.0. Its sourced product surface includes Swap/exchange, Pool/liquidity, Liquid Staking, Dashboard, Portfolio, Claim, Help Center, and Docs, with DefiLlama describing support for storage, exchange, borrowing, settlement, and investment. Claims about governance participation, concentrated/full-range liquidity products, separate lending and staking-pool product families should be removed or qualified unless verified from current docs or contracts.
 
 ## Audit Coverage Summary
 

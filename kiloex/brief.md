@@ -1,23 +1,21 @@
 # Agentic Audit Brief: KiloEx
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 37.9% over 90 days
-
 ## Project Overview
 
 - Project: KiloEx (`kiloex`)
 - Website: [https://app.kiloex.io/#/trade](https://app.kiloex.io/#/trade)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-24T09:24:19.200Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:59:06.683Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, bsc, manta
-- Contract surface: 111 unique implementations (156 raw deployments)
-- DeFi Llama TVL: $2,938,597.16
-- On-chain TVL (included contracts): $7,252,777.46
-- TVL by chain: Bsc $5,709,133.23 | Base $1,543,644.23
+- Contract surface: 110 unique implementations (155 raw deployments)
+- DeFi Llama TVL: $2,454,202.40
+- On-chain TVL (included contracts): $5,709,133.23
+- TVL by chain: Bsc $5,709,133.23
 
 ## Project Description
 
-KiloEx is a decentralized derivatives trading platform that enables users to trade perpetual contracts with leverage. It operates across multiple chains and uses a native token (KiloExToken) along with various synthetic and wrapped assets to facilitate trading and liquidity.
+KiloEx is a decentralized derivatives exchange that enables users to trade leveraged perpetual futures across multiple chains.
 
 ### Architecture
 
@@ -25,25 +23,24 @@ The KiloEx family uses TransparentUpgradeableProxy contracts to manage upgradeab
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/8 (12.5%)
-- Verified + Unaudited implementations: 7
+- Verified implementations audited: 1/7 (14.3%)
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
 - Unverified implementations: 103
-- Unique implementations: 111
-- Raw deployments: 156
+- Unique implementations: 110
+- Raw deployments: 155
 - Audits discovered: 10
 - Scoreable audits (matched contracts): 1
-- ASD (verified + unaudited TVL): $1,543,644.23
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-03 (aging)
 - Staleness: 0 fresh, 3 aging, 7 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $1,543,644.23 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Scalebit | Tier 2 | 1 | 12.5% | 2024-07 |
+| Scalebit | Tier 2 | 1 | 14.3% | 2024-07 |
 
 ## Contract Surface
 
@@ -53,11 +50,10 @@ The KiloEx family uses TransparentUpgradeableProxy contracts to manage upgradeab
 |---|---|---|---|---|
 | KiloExToken | token | bsc | 2 deployments: bsc [`0x503fa2...c1df53`](./contracts/bsc-56/0x503fa24b7972677f00c4618e5fbe237780c1df53/); bsc `0xfcd054...a7019a` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| PumpTokenOFT | token | base | [`0xf469fb...0a012e`](./contracts/base-8453/0xf469fbd2abcd6b9de8e169d128226c0fc90a012e/) | ⚠️ Unaudited |
 | IBTC | unknown | base | [`0x124187...21cf62`](./contracts/base-8453/0x12418783e860997eb99e8acf682df952f721cf62/) | ⚠️ Unaudited |
 | OBTC | unknown | base | [`0xe3c0ff...808b35`](./contracts/base-8453/0xe3c0ff176ef92fc225096c6d1788ccb818808b35/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | base | 2 deployments: base [`0xc2e5ae...651b72`](./contracts/base-8453/0xc2e5ae7c5ed7ec86b8ff0b3d8030ad8931651b72/); base `0xc7437d...3a6b0f` | ⚠️ Unaudited |
@@ -215,7 +211,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 1 |
 | upstream | 0 |
 | standard_library | 4 |
-| needs_review | 106 |
+| needs_review | 105 |
 
 ## Scope Matching Notes
 

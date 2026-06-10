@@ -5,21 +5,22 @@
 - Project: Hyperdrive HL (`hyperdrive-hl`)
 - Website: [https://hyperdrive.fi/](https://hyperdrive.fi/)
 - Lifecycle: unknown
-- Generated: 2026-05-24T09:46:49.508Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:06.061Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $2,826,322.37
+- DeFi Llama TVL: $2,776,023.51
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Hyperdrive HL is a lending protocol that enables users to provide and borrow assets through a structured market. It facilitates fixed-rate lending and borrowing by matching liquidity providers with borrowers.
-
-### Architecture
-
-No product families or contracts are defined in the provided inventory, so no relationships can be described.
+Hyperdrive HL is a DeFi protocol centered on a stablecoin money market with dynamically priced lending and borrowing, including supported leverage functionality. Its product areas include the Money Market, HYPE LST, Liquid HLP, and Earn, which together represent Hyperdrive HL's lending, staking/liquid-staking, liquidity/tokenization, and yield-oriented offerings.
 
 ## Audit Coverage Summary
 

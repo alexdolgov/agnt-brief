@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bridgers",
-  "generated_at": "2026-05-24T14:41:21.329Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:01.123Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bridgers",
@@ -22,26 +22,24 @@
     "drop_from_peak_pct": 40.43838354449532
   },
   "summary": {
-    "total_contracts": 9,
-    "total_addresses": 13,
-    "unique_implementations": 9,
-    "total_deployments": 13,
+    "total_contracts": 6,
+    "total_addresses": 10,
+    "unique_implementations": 6,
+    "total_deployments": 10,
     "audited_contracts": 0,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 4,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 4,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2082876.93072,
-    "tvl_usd": 71921779.86332713,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 71921779.86
-    },
-    "asd_usd": 71921779.86332713,
+    "dl_tvl_usd": 1599052.31235,
+    "tvl_usd": 1599052.31235,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://bridgers.ai/",
     "chains": [
       "arbitrum",
@@ -65,46 +63,20 @@
     }
   },
   "topography": {
-    "project_purpose": "Bridgers is a cross-chain DEX aggregator and bridge that enables users to swap and transfer assets across multiple blockchains. It provides liquidity aggregation and token bridging services through a unified interface.",
+    "project_purpose": "Bridgers is a cross-chain swap/DEX aggregation protocol that enables users to exchange and transfer assets across multiple blockchains through a unified interface. Third-party ERC20 token contracts such as HBToken, PepeToken, SwftCoin, and similar asset tokens should not be treated as Bridgers-owned core protocol contracts unless separate ownership and protocol-control evidence is available.",
     "relationship_narrative": "The Bridgers family includes core token contracts (HBToken, PepeToken, SwftCoin, WLD) that represent bridged or wrapped assets, while operational periphery contracts handle routing and execution logic. All contracts are deployed across multiple chains to support cross-chain functionality.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 6,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6f259637dcd74c767781e37bc6133cd6a68aa161",
-      "name": "HBToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Bridgers",
-      "tvl_usd": 71921779.86332713,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "HBToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6f259637dcd74c767781e37bc6133cd6a68aa161",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 71921779.86332713,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -170,68 +142,6 @@
       "source_verified": true,
       "verified_by_bytecode": true,
       "verification_bucket": "verified_bytecode_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6982508145454ce325ddbe47a25d4ec3d2311933",
-      "name": "PepeToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Bridgers",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PepeToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6982508145454ce325ddbe47a25d4ec3d2311933",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0bb217e40f8a5cb79adf04e1aab60e5abd0dfc1e",
-      "name": "SwftCoin",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Bridgers",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SwftCoin",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0bb217e40f8a5cb79adf04e1aab60e5abd0dfc1e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -418,39 +328,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x6f259637dcd74c767781e37bc6133cd6a68aa161",
-      "name": "HBToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 71921779.86332713,
-      "risk_note": "Verified native implementation with $71,921,779.86 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xb685760ebd368a891f27ae547391f4e2a289895b",
       "name": "Bridgers",
       "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6982508145454ce325ddbe47a25d4ec3d2311933",
-      "name": "PepeToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0bb217e40f8a5cb79adf04e1aab60e5abd0dfc1e",
-      "name": "SwftCoin",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -467,7 +347,7 @@
     }
   ],
   "origin_summary": {
-    "native": 9,
+    "native": 6,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

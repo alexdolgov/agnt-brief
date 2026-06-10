@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "suzaku",
-  "generated_at": "2026-05-25T03:05:06.105Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.847Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "suzaku",
@@ -26,16 +26,16 @@
     "total_addresses": 90,
     "unique_implementations": 49,
     "total_deployments": 90,
-    "audited_contracts": 1,
-    "unaudited_contracts": 20,
-    "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 20,
+    "audited_contracts": 0,
+    "unaudited_contracts": 21,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 21,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 28,
-    "coverage_pct": 4.8,
-    "total_audits": 2,
-    "scoreable_audits": 1,
-    "dl_tvl_usd": 1238311.8094,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 1231417.64893,
     "tvl_usd": 1179711.617588217,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -46,23 +46,26 @@
     "chains": [
       "avalanche"
     ],
-    "tier1_coverage_pct": 4.8,
-    "tier1_auditors": [
-      "ChainSecurity"
-    ],
-    "latest_audit_date": "2024-05",
-    "audit_freshness": "stale",
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 2,
+      "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Suzaku is a restaking protocol on Avalanche that allows users to stake assets and earn rewards. It provides liquid staking tokens and manages validator operations for restaking.",
+    "project_purpose": "Suzaku is an Avalanche L1 and sovereign-network decentralization and (re)staking hub that connects builders, stakers, and operators.",
     "relationship_narrative": "The SuzakuToken is the core liquid staking token, while LSTWrapper handles wrapping of staked assets. RewardsNativeToken distributes native token rewards, and BalancerValidatorManager manages validator operations, all supporting the restaking infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 49,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -246,16 +249,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3161"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -1960,64 +1961,8 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 3161,
-      "audit_key": "audit-3161",
-      "report_name": "ChainSecurity_DefaultCollateral.pdf",
-      "report_url": "https://github.com/symbioticfi/collateral/blob/main/audits/ChainSecurity_DefaultCollateral.pdf",
-      "auditor": "ChainSecurity",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "DefaultCollateral",
-        "DefaultCollateralFactory",
-        "Factory",
-        "Permit2Lib"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3162,
-      "audit_key": "audit-3162",
-      "report_name": "Statemind_DefaultCollateral.pdf",
-      "report_url": "https://github.com/symbioticfi/collateral/blob/main/audits/Statemind_DefaultCollateral.pdf",
-      "auditor": "Statemind",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
-  "auditor_coverage": [
-    {
-      "auditor": "ChainSecurity",
-      "tier": 1,
-      "contracts_covered": 1,
-      "coverage_pct": 4.8,
-      "latest_audit": "2024-05"
-    }
-  ],
+  "audits": [],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 43114,
@@ -2035,6 +1980,16 @@
       "address": "0x1bdc44dd7195b067b945bc8d034b592aff2427a7",
       "name": "AvalancheL1Middleware",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xe5296638aa86bd4175d802a210e158688e41a93c",
+      "name": "DefaultCollateralFactory",
+      "role": "registry",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2197,20 +2152,11 @@
     "needs_review": 6
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 1
-    },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 3162,
-        "report_name": "Statemind_DefaultCollateral.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

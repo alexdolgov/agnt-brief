@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "initiadex",
-  "generated_at": "2026-05-24T05:25:42.867Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:06.248Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -17,10 +17,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 8,
+    "total_audits": 7,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3315423.25086,
-    "tvl_usd": 3315423.25086,
+    "dl_tvl_usd": 3028354.01193,
+    "tvl_usd": 3028354.01193,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -34,13 +34,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 8
+      "unknown": 7
     }
   },
   "topography": {
-    "project_purpose": "InitiaDEX is a decentralized exchange protocol enabling token swaps and liquidity provision. Based on the limited metadata, it appears to be a standard DEX implementation.",
-    "relationship_narrative": "No product families or contracts are defined in the provided inventory, so no relationships can be described.",
+    "project_purpose": "InitiaDEX is a decentralized exchange on Initia L1 featuring Balancer-style weighted pools and StableSwap pools for token swaps and liquidity provision.",
+    "relationship_narrative": null,
     "product_family_count": 0
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -48,27 +53,6 @@
   },
   "contracts": [],
   "audits": [
-    {
-      "audit_id": 2742,
-      "audit_key": "audit-2742",
-      "report_name": "[audits repository]().",
-      "report_url": "https://github.com/initia-labs/audits",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
     {
       "audit_id": 2743,
       "audit_key": "audit-2743",
@@ -231,10 +215,6 @@
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 2742,
-        "report_name": "[audits repository]()."
-      },
       {
         "audit_id": 2743,
         "report_name": "chainlight_initia_oct_16_2024.pdf"

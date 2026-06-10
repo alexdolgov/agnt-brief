@@ -5,8 +5,8 @@
 - Project: Armitage by Wintermute (`armitage-by-wintermute`)
 - Website: [https://armitage.wintermute.com](https://armitage.wintermute.com)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:41:01.416Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.746Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 1 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $51,051,101.46
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Armitage by Wintermute is Wintermute's onchain vault curation product for yield-bearing DeFi vaults. It curates and manages risk for depositors, currently including Prime and Select USDC vaults on Ethereum.
 
 ## Audit Coverage Summary
 

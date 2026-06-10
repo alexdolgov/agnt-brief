@@ -5,8 +5,8 @@
 - Project: AITECH (`aitech`)
 - Website: [https://aitech.io](https://aitech.io)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:20:52.261Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:56.591Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $3,961,626.08
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+AITECH / Solidus AI Tech is an AI infrastructure and cloud compute project focused on GPU/HPC compute, a compute marketplace, and AI agent/workflow services. The AITECH token and staking contracts are supporting components of the ecosystem rather than the core product; unsupported yield-farming framing should be removed unless backed by current documentation or contract behavior.
 
 ## Audit Coverage Summary
 

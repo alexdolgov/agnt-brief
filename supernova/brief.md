@@ -7,8 +7,8 @@
 - Project: Supernova (`supernova`)
 - Website: [https://supernova.xyz/](https://supernova.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T10:46:46.244Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:59:16.841Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 47 unique implementations (82 raw deployments)
 - DeFi Llama TVL: $2,116,535.00
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Supernova is a decentralized exchange (DEX) protocol on Ethereum that facilitates automated market making (AMM) and concentrated liquidity trading. It enables users to swap tokens, provide liquidity, and participate in governance through ve-tokenomics and gauge-based incentives.
+Supernova is an Ethereum DEX protocol with two product families: Supernova AMM, covering V2-style pair, factory, router, bootstrapper, and pair API contracts; and Supernova CL, covering concentrated-liquidity trading infrastructure. The protocol enables token swaps and liquidity provision across these AMM and concentrated-liquidity surfaces.
 
 ### Architecture
 
@@ -53,16 +53,16 @@ The protocol's infrastructure is shared across multiple pool deployers (CustomPo
 |---|---|---|---|---|
 | AlgebraVaultFactory | registry | ethereum | 2 deployments: ethereum [`0x789a0e...a43e62`](./contracts/ethereum-1/0x789a0e0a6aedf3e6c090d305ac59cfaf75a43e62/); ethereum `0xafc049...03038d` | ✅ Audited |
 | BasePluginV3Factory | registry | ethereum | [`0xdbfd67...f99b97`](./contracts/ethereum-1/0xdbfd67d12cadb8925c1417ff3638693f2bf99b97/) | ✅ Audited |
-| BlackholePairAPIV2 | unknown | ethereum | 2 deployments: ethereum [`0x1fd265...7535aa`](./contracts/ethereum-1/0x1fd265236e240f4f4487ae91de589ec88f7535aa/); ethereum `0x2b9fc4...4963dc` | ✅ Audited |
+| BlackholePairAPIV2 | operational_periphery | ethereum | 2 deployments: ethereum [`0x1fd265...7535aa`](./contracts/ethereum-1/0x1fd265236e240f4f4487ae91de589ec88f7535aa/); ethereum `0x2b9fc4...4963dc` | ✅ Audited |
 | BribeFactoryV3 | operational_periphery | ethereum | 2 deployments: ethereum [`0x8bd718...89cbfb`](./contracts/ethereum-1/0x8bd718554d2644e4d1c7796f9097e1b93a89cbfb/); ethereum `0xeb37f1...37344c` | ✅ Audited |
 | CustomPoolDeployer | core_logic | ethereum | 6 deployments: ethereum [`0x1c7986...59e963`](./contracts/ethereum-1/0x1c798614ef4c6a8f8a1aab25785714933e59e963/); ethereum `0x2493b3...89af4a`; ethereum `0x42f5ec...2493da`; ethereum `0x44acd9...cdddc0`; ethereum `0xc815b4...928eb8`; ethereum `0xd7b7cc...ac090e` | ✅ Audited |
 | GaugeFactory | operational_periphery | ethereum | 2 deployments: ethereum [`0x66647a...16adb0`](./contracts/ethereum-1/0x66647a19452e98e98a9f479883f241e33016adb0/); ethereum `0x92ec1b...646a0c` | ✅ Audited |
 | GaugeFactoryCL | operational_periphery | ethereum | 2 deployments: ethereum [`0x056f24...542c80`](./contracts/ethereum-1/0x056f244a27f4d2a3467f80724b466976ee542c80/); ethereum `0x8d3820...8cd674` | ✅ Audited |
 | GaugeManager | operational_periphery | ethereum | 2 deployments: ethereum [`0x120ea9...a6a9e3`](./contracts/ethereum-1/0x120ea99bdc2da6de1b98fbeb84cfaead96a6a9e3/); ethereum `0x19a410...517ae2` | ✅ Audited |
 | MinterUpgradeable | unknown | ethereum | 2 deployments: ethereum [`0xa2b9c0...c32732`](./contracts/ethereum-1/0xa2b9c0f8d866562ce744497c3160749268c32732/); ethereum `0xfe29ea...da84a2` | ✅ Audited |
-| PairBootstrapper | unknown | ethereum | [`0x7f8f2b...c1cb66`](./contracts/ethereum-1/0x7f8f2b6d0b0aae8e95221ce90b5c26b128c1cb66/) | ✅ Audited |
+| PairBootstrapper | operational_periphery | ethereum | [`0x7f8f2b...c1cb66`](./contracts/ethereum-1/0x7f8f2b6d0b0aae8e95221ce90b5c26b128c1cb66/) | ✅ Audited |
 | PairFactory | registry | ethereum | 2 deployments: ethereum [`0x5aef44...5bdc30`](./contracts/ethereum-1/0x5aef44edfc5a7edd30826c724ea12d7be15bdc30/); ethereum `0xb2fc25...5660d4` | ✅ Audited |
-| PairGenerator | unknown | ethereum | [`0x42a7a5...69bbb8`](./contracts/ethereum-1/0x42a7a5baafb1818da3a39ce1b97a58799d69bbb8/) | ✅ Audited |
+| PairGenerator | registry | ethereum | [`0x42a7a5...69bbb8`](./contracts/ethereum-1/0x42a7a5baafb1818da3a39ce1b97a58799d69bbb8/) | ✅ Audited |
 | PermissionsRegistry | registry | ethereum | [`0x344eec...67c28d`](./contracts/ethereum-1/0x344eec31c725187cd026db73ed8805e72967c28d/) | ✅ Audited |
 | RewardsDistributor | operational_periphery | ethereum | [`0xb3410a...90ea97`](./contracts/ethereum-1/0xb3410a30af5033af822b8ea5ad3bd0a19490ea97/) | ✅ Audited |
 | RouterHelper | adapter | ethereum | 8 deployments: ethereum [`0x2d0a16...cff5c9`](./contracts/ethereum-1/0x2d0a16356d61dd3c8b49a587f0a91f1cd2cff5c9/); ethereum `0x46b6f6...335620`; ethereum `0x4ead88...55dae2`; ethereum `0x8e4387...a829a1`; ethereum `0xb7796f...370396`; ethereum `0xb8b5b1...89a4ba`; ethereum `0xbaed8d...6f00da`; ethereum `0xd8377a...0803c6` | ✅ Audited |

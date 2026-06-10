@@ -1,23 +1,23 @@
 # Agentic Audit Brief: PrimeFi
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 45.8% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 45.8% over 90 days
 
 ## Project Overview
 
 - Project: PrimeFi (`primefi`)
 - Website: [https://primefi.xyz/](https://primefi.xyz/)
-- Lifecycle: unknown (Tier 0, 93% below peak)
-- Generated: 2026-05-24T05:53:53.694Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 0, 93% below peak)
+- Generated: 2026-06-10T20:59:09.369Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: base, hyperliquid
-- Contract surface: 119 unique implementations (191 raw deployments)
-- DeFi Llama TVL: $3,283,364.11
+- Contract surface: 117 unique implementations (187 raw deployments)
+- DeFi Llama TVL: $233,172.38
 - On-chain TVL (included contracts): $4,115,964.04
 - TVL by chain: Base $4,115,964.04
 
 ## Project Description
 
-PrimeFi is a cross-chain lending protocol that enables users to supply assets to earn interest and borrow against collateral. It operates on HyperEVM and Base, integrating with Stargate for cross-chain liquidity and Hyperliquid for perpetual trading.
+PrimeFi is a cross-chain lending protocol that enables users to supply assets to earn interest and borrow against collateral. It supports deployments across HyperEVM/Hyperliquid, Base, and XDC. Third-party tokens, pools, Multicall, WETH/native wrappers, Circle USDC, and upstream bridge or liquidity infrastructure should be treated as dependencies or integrations rather than PrimeFi-owned contract surface or TVL.
 
 ### Architecture
 
@@ -25,19 +25,19 @@ The Core Protocol family provides the lending infrastructure, with pTokens and v
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/62 (0.0%)
-- Verified + Unaudited implementations: 58
+- Verified implementations audited: 0/60 (0.0%)
+- Verified + Unaudited implementations: 56
 - Verified by bytecode match: 4
 - Unverified implementations: 57
-- Unique implementations: 119
-- Raw deployments: 191
+- Unique implementations: 117
+- Raw deployments: 187
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $4,115,964.04
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $4,115,964.04 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of $4,115,964.04 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,7 +49,7 @@ The Core Protocol family provides the lending infrastructure, with pTokens and v
 
 - None
 
-### ⚠️ Verified + Unaudited (58)
+### ⚠️ Verified + Unaudited (56)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -64,11 +64,10 @@ The Core Protocol family provides the lending infrastructure, with pTokens and v
 | EligibilityDataProvider | unknown | hyperliquid | 3 deployments: hyperliquid [`0xb3dd71...07ba97`](./contracts/hyperliquid-999/0xb3dd71a3ef63b7becefbc68a87352fcc4507ba97/); hyperliquid `0xc1f647...9d6e25`; base `0xe8df0d...af4084` | ⚠️ Unaudited |
 | ERC1967Proxy | proxy | hyperliquid | [`0x9fdbda...993463`](./contracts/hyperliquid-999/0x9fdbda0a5e284c32744d2f17ee5c74b284993463/) | ⚠️ Unaudited |
 | FiatTokenV2_1 | token | base | [`0xcbb7c0...ed33bf`](./contracts/base-8453/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | base | 2 deployments: hyperliquid `0xb88339...ba630f`; base [`0x833589...a02913`](./contracts/base-8453/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/) | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | base | [`0x833589...a02913`](./contracts/base-8453/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/) | ⚠️ Unaudited |
 | Flik | unknown | hyperliquid | 3 deployments: hyperliquid [`0x448356...8f219b`](./contracts/hyperliquid-999/0x4483564436120d7fbbac8a346ae0bbad4c8f219b/); hyperliquid `0xd27fb8...0c9576`; base `0x76c645...28f506` | ⚠️ Unaudited |
 | GenericLogic | unknown | hyperliquid | 2 deployments: hyperliquid [`0x3ad943...b0462f`](./contracts/hyperliquid-999/0x3ad9435fe5dc18d295a2816aaea590b710b0462f/); hyperliquid `0xf532fd...7f6b30` | ⚠️ Unaudited |
 | HyperliquidExtension | adapter | hyperliquid | 2 deployments: hyperliquid [`0xb8ce59...625ebb`](./contracts/hyperliquid-999/0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb/); hyperliquid `0xf555a1...db34b9` | ⚠️ Unaudited |
-| HyperswapPair | unknown | hyperliquid | [`0x981f14...9a5515`](./contracts/hyperliquid-999/0x981f145a71da6df4a7cbe892807782c9cc9a5515/) | ⚠️ Unaudited |
 | IncentivesControllerGetter | governance | hyperliquid | [`0xc69ba5...6151be`](./contracts/hyperliquid-999/0xc69ba5c734e68aca6c034c2e5a4170e5966151be/) | ⚠️ Unaudited |
 | InitializableImmutableAdminUpgradeabilityProxy | proxy | hyperliquid | 20 deployments: hyperliquid [`0x009a18...fa748a`](./contracts/hyperliquid-999/0x009a18797c9c7eb06811d4cdc44881f3c5fa748a/); hyperliquid `0x07cb5a...905690`; hyperliquid `0x182cfb...b9a9fa`; hyperliquid `0x386f40...21095b`; hyperliquid `0x5fc173...31cab9`; hyperliquid `0x6e811a...447a6e`; hyperliquid `0x71f719...1e8817`; hyperliquid `0x9601c4...2b2d5c`; hyperliquid `0x98b705...89d2d6`; hyperliquid `0xcf4642...7348ba`; hyperliquid `0xd00fe5...6e5365`; hyperliquid `0xd218a5...e3114c`; base `0x1ff5e0...a30401`; base `0x2a50be...fa954e`; base `0x47c4d7...46e0a4`; base `0x834695...ca4375`; base `0xaae0d3...95d656`; base `0xb9a14b...68741c`; base `0xc12bdd...2a9066`; base `0xdbed51...42d406` | ⚠️ Unaudited |
 | LendingPool | core_logic | hyperliquid | 3 deployments: hyperliquid [`0x88b60d...0bb7d0`](./contracts/hyperliquid-999/0x88b60d926754accb8facadd092f68f066c0bb7d0/); hyperliquid `0xb33944...9f113f`; base `0x8a619d...c739c3` | ⚠️ Unaudited |
@@ -80,7 +79,7 @@ The Core Protocol family provides the lending infrastructure, with pTokens and v
 | LockerList | unknown | hyperliquid | 2 deployments: hyperliquid [`0x6584bf...2f42ad`](./contracts/hyperliquid-999/0x6584bfe4d784bb8f1fd81d569a2202ce6f2f42ad/); base `0x7d08e4...7895a8` | ⚠️ Unaudited |
 | Looper | unknown | hyperliquid | 3 deployments: hyperliquid [`0x1853d7...5f89e8`](./contracts/hyperliquid-999/0x1853d7da8986a3c20f9ab51759e9a3967c5f89e8/); hyperliquid `0xc95766...9f0da1`; base `0x515fbd...a769f4` | ⚠️ Unaudited |
 | MiddleFeeDistribution | unknown | hyperliquid | 3 deployments: hyperliquid [`0x1b2164...acb8f6`](./contracts/hyperliquid-999/0x1b2164d254c7fa14901d54fb1043fb228eacb8f6/); hyperliquid `0xfb5c7d...80ed8a`; base `0x7f2ebf...6eb8df` | ⚠️ Unaudited |
-| Multicall3 | periphery | hyperliquid | 2 deployments: hyperliquid [`0x5eb7ed...822dc9`](./contracts/hyperliquid-999/0x5eb7ed8e58e7ed4509612f3e9ccb5433ee822dc9/); base `0xc7c567...1942ad` | ⚠️ Unaudited |
+| Multicall3 | periphery | base | [`0xc7c567...1942ad`](./contracts/base-8453/0xc7c567e10656eb2f4b1024757263a587ac1942ad/) | ⚠️ Unaudited |
 | MultiFeeDistribution | unknown | hyperliquid | 3 deployments: hyperliquid [`0x33cd73...b813ef`](./contracts/hyperliquid-999/0x33cd734739c6ded500fd080d476d93135cb813ef/); hyperliquid `0x6a8255...10907c`; base `0x5b6d95...debd80` | ⚠️ Unaudited |
 | PRFI | unknown | hyperliquid | 2 deployments: hyperliquid [`0x7bbcf1...de3255`](./contracts/hyperliquid-999/0x7bbcf1b600565ae023a1806ef637af4739de3255/); base [`0x7bbcf1...de3255`](./contracts/base-8453/0x7bbcf1b600565ae023a1806ef637af4739de3255/) | ⚠️ Unaudited |
 | PRFIVesting | operational_periphery | base | [`0x16db15...50e38e`](./contracts/base-8453/0x16db157393eb152a0c708d053c2b91e5a350e38e/) | ⚠️ Unaudited |
@@ -110,7 +109,6 @@ The Core Protocol family provides the lending infrastructure, with pTokens and v
 | WalletBalanceProvider | unknown | base | 2 deployments: hyperliquid `0xa911af...918af9`; base [`0x33cd73...b813ef`](./contracts/base-8453/0x33cd734739c6ded500fd080d476d93135cb813ef/) | ⚠️ Unaudited |
 | WETH9 | token | base | [`0x420000...000006`](./contracts/base-8453/0x4200000000000000000000000000000000000006/) | ⚠️ Unaudited |
 | WETHGateway | token | hyperliquid | 2 deployments: hyperliquid [`0x88ae25...92fcae`](./contracts/hyperliquid-999/0x88ae2596dac8e7e9e235b465ee8215cc3192fcae/); hyperliquid `0xac57f0...74b2ca` | ⚠️ Unaudited |
-| WHYPE9 | unknown | hyperliquid | [`0x555555...555555`](./contracts/hyperliquid-999/0x5555555555555555555555555555555555555555/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -247,7 +245,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 61 |
 | upstream | 7 |
 | standard_library | 19 |
-| needs_review | 32 |
+| needs_review | 30 |
 
 ## Scope Matching Notes
 

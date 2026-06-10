@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sprinter",
-  "generated_at": "2026-05-25T05:33:15.369Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:59:16.418Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "sprinter",
@@ -35,8 +35,8 @@
     "coverage_pct": 100,
     "total_audits": 6,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 1139008.44018,
-    "tvl_usd": 1139008.44018,
+    "dl_tvl_usd": 940717.30544,
+    "tvl_usd": 940717.30544,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -51,16 +51,21 @@
     "latest_audit_date": "2026-03",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 3,
-      "aging": 3,
+      "fresh": 2,
+      "aging": 4,
       "stale": 0,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Sprinter is a yield protocol on Base that aggregates liquidity into ERC-4626 vaults and optimizes yield through strategies like Aave integration. It also includes liquidity mining incentives to reward depositors.",
+    "project_purpose": "Sprinter is credit and liquidity infrastructure with Sprinter Solve/Credit and Stash/yield components. The currently matched DefiLlama-tracked contract surface covers the Base Stash/ERC-4626 vault subset, including yield-oriented vault infrastructure and integrations such as Aave strategies, rather than the full Sprinter project surface.",
     "relationship_narrative": "The LiquidityPool and LiquidityPoolAave contracts serve as the core vaults, while SprinterLiquidityMining distributes incentives to depositors. The TransparentUpgradeableProxy points to a LiquidityHub implementation, likely managing shared logic or access control across the system.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 4,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -283,7 +288,7 @@
       "report_url": "https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/cantina_sprinter_may2025.pdf",
       "auditor": "Spearbit",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,

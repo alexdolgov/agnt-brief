@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Bitway Earn
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Bitway Earn (`bitway-earn`)
 - Website: [https://bitway.com/](https://bitway.com/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T14:54:05.311Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:59:00.964Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: bsc
 - Contract surface: 8 unique implementations (30 raw deployments)
 - DeFi Llama TVL: $62,225,117.31
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Bitway Earn is a DeFi protocol on BSC that enables users to earn yield through basis trading strategies. It provides vaults that manage deposits and execute delta-neutral positions, issuing LP tokens representing user shares.
+Bitway Earn is a DeFi protocol on BSC categorized by DefiLlama as Basis Trading and positioned as a capital/yield gateway. Its observed contract surface includes vault, token, token-lock, and proxy-based token/stablecoin components. Specific claims that vaults execute delta-neutral positions or issue LP share tokens should be omitted unless supported by verified documentation, audit scope, or source code.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The Bitway Earn family provides the core infrastructure including the stablecoin
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $136,353,317.08 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

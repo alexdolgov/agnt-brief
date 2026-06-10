@@ -5,8 +5,8 @@
 - Project: AO Bridge (`ao-bridge`)
 - Website: [https://ao.arweave.net/](https://ao.arweave.net/)
 - Lifecycle: active (Tier 0, 90.5% below peak)
-- Generated: 2026-06-10T20:36:51.378Z
-- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Generated: 2026-06-10T20:58:57.599Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: ethereum
 - Contract surface: 3 unique implementations (43 raw deployments)
 - DeFi Llama TVL: $54,042,727.52

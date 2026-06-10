@@ -5,17 +5,17 @@
 - Project: Harmonix Finance (`harmonix-finance`)
 - Website: [https://app.harmonix.fi/?ref=s4rk2Hrs](https://app.harmonix.fi/?ref=s4rk2Hrs)
 - Lifecycle: active (Tier 0, 73.5% below peak)
-- Generated: 2026-05-23T19:28:18.167Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:59:04.475Z
+- Pipeline run: correction-skeletal-description-fix-all
 - Chains: arbitrum, base, ethereum, hyperliquid
 - Contract surface: 127 unique implementations (186 raw deployments)
-- DeFi Llama TVL: $4,888,105.59
+- DeFi Llama TVL: $4,866,950.07
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Harmonix Finance is a yield optimization protocol that deploys user deposits into delta-neutral and hedged strategies across multiple chains. It uses vaults and staking contracts to generate returns while managing risk.
+Harmonix Finance is a yield optimization protocol focused on vault-based strategies, including restaking and delta-neutral or hedged yield products. The observed contract surface includes vaults, factories, HAR/staking contracts, and proxy infrastructure.
 
 ### Architecture
 
@@ -33,7 +33,7 @@ All product families share the same upgradeable proxy infrastructure (Transparen
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-09 (fresh)
-- Staleness: 1 fresh, 3 aging, 0 stale, 0 unknown
+- Staleness: 1 fresh, 2 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -207,7 +207,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [Harmonix Finance - Zenith Audit Report.pdf](https://github.com/harmonixfi/core-smart-contract/blob/main/audits/Harmonix%20Finance%20-%20Zenith%20Audit%20Report.pdf) | Zenith | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
 | [HarmonixFinance-Hyperliquid-Security-Review.pdf](https://github.com/harmonixfi/core-smart-contract/blob/main/audits/HarmonixFinance-Hyperliquid-Security-Review.pdf) | Hyperliquid | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
-| [Verichains Public Report - HarmonixFinance.pdf](https://github.com/harmonixfi/core-smart-contract/blob/main/audits/Verichains%20Public%20Report%20-%20HarmonixFinance.pdf) | Verichains | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
+| [Verichains Public Report - HarmonixFinance.pdf](https://github.com/harmonixfi/core-smart-contract/blob/main/audits/Verichains%20Public%20Report%20-%20HarmonixFinance.pdf) | Verichains | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
 | [Verichains Public Report - Kelp Delta.pdf](https://github.com/harmonixfi/core-smart-contract/blob/main/audits/Verichains%20Public%20Report%20-%20Kelp%20Delta.pdf) | Verichains | Audit | 2024-08 | aging | Direct | contract_name | 7 | high |
 
 ## Coverage Gaps

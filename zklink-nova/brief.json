@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zklink-nova",
-  "generated_at": "2026-05-25T15:44:38.284Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:59:19.617Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-all",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "zklink-nova",
@@ -32,27 +32,26 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 381,
-    "total_addresses": 848,
-    "unique_implementations": 381,
-    "total_deployments": 848,
-    "audited_contracts": 17,
+    "total_contracts": 380,
+    "total_addresses": 843,
+    "unique_implementations": 380,
+    "total_deployments": 843,
+    "audited_contracts": 16,
     "unaudited_contracts": 94,
     "contracts_verified_audited": 16,
-    "contracts_verified_unaudited": 90,
+    "contracts_verified_unaudited": 89,
     "contracts_verified_by_bytecode": 5,
     "contracts_unverified": 270,
-    "coverage_pct": 15.3,
-    "total_audits": 11,
-    "scoreable_audits": 10,
-    "dl_tvl_usd": 13411976.3174,
-    "tvl_usd": 33891456.06170192,
+    "coverage_pct": 14.5,
+    "total_audits": 7,
+    "scoreable_audits": 7,
+    "dl_tvl_usd": 12953291.662130002,
+    "tvl_usd": 33887953.11459158,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 33887953.11,
-      "mantle": 3502.95
+      "ethereum": 33887953.11
     },
-    "asd_usd": 33891456.06170192,
+    "asd_usd": 33887953.11459158,
     "website_url": "https://zklink.io",
     "chains": [
       "arbitrum",
@@ -75,15 +74,20 @@
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 2,
-      "stale": 9,
+      "aging": 1,
+      "stale": 6,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "zkLink Nova is a multi-chain Layer 2 network that aggregates liquidity and assets across Ethereum, its L2s, and other chains. It enables fast, low-cost cross-chain transfers and trading through a unified rollup architecture, using zero-knowledge proofs for security.",
+    "project_purpose": "zkLink Nova is an aggregated Layer 3 zkEVM network that unifies liquidity and assets across Ethereum and Ethereum Layer 2 rollups. It supports Ethereum-compatible dApp deployment and cross-chain liquidity aggregation through a unified zkEVM environment secured by zero-knowledge proofs.",
     "relationship_narrative": "The ZKL token is used across the zkLink Nova ecosystem for fees and governance. The zkLink Nova family relies on gateway contracts and verifiers to enable cross-chain transfers, while the Contract Addresses family provides additional proxy and bridge instances that extend the protocol's multi-chain reach.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 380,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -236,73 +240,6 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 513860.7049338697,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
-      "address": "0x08231bcd66c5e4d2d1d4ad2bc24bfb4477af27b3",
-      "name": "Vault",
-      "role": "core_logic",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 3502.9471103418964,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Vault",
-      "deployments": [
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0x08231bcd66c5e4d2d1d4ad2bc24bfb4477af27b3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0x2e488d7ed78171793fa91fad5352be423a50dae1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 3502.9471103418964,
-          "is_audited": false
-        },
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0x88ceb7b7f8c7483197798df59442aa5516533fd8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0xac5b265cb763109e274d9a6c69fca18d38253daf",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0xf627c5dc6183b924d6a52325b0659c0384263d87",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -1224,7 +1161,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1233,7 +1170,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1242,7 +1179,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1251,7 +1188,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -1260,7 +1197,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -1269,7 +1206,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -1278,7 +1215,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -1287,7 +1224,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -1296,7 +1233,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 169,
@@ -1305,7 +1242,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -1314,7 +1251,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -1323,7 +1260,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -1332,7 +1269,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -1341,7 +1278,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -1350,7 +1287,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -1359,7 +1296,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -1368,7 +1305,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -1377,7 +1314,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -1386,7 +1323,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -1395,7 +1332,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -1404,7 +1341,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -1413,7 +1350,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -1422,7 +1359,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -1431,7 +1368,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -1440,7 +1377,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -1461,14 +1398,11 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-2008",
-        "audit-2009"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_audited",
+      "verification_bucket": "verified_bytecode_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -15549,10 +15483,7 @@
         "audit-2001",
         "audit-2002",
         "audit-2005",
-        "audit-2006",
-        "audit-2008",
-        "audit-2009",
-        "audit-2011"
+        "audit-2006"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -15621,7 +15552,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -15630,7 +15561,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -15639,7 +15570,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -15648,7 +15579,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -15657,7 +15588,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -15666,7 +15597,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -15675,7 +15606,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -15684,7 +15615,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -15693,7 +15624,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -15702,7 +15633,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -15711,7 +15642,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -15720,7 +15651,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -15729,7 +15660,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 169,
@@ -15738,7 +15669,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 5000,
@@ -15747,7 +15678,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -15756,7 +15687,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -15765,7 +15696,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -15774,7 +15705,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -15783,7 +15714,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -15792,7 +15723,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -15801,7 +15732,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -15810,7 +15741,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -15828,7 +15759,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -15837,7 +15768,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -15846,7 +15777,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -15855,7 +15786,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -15864,7 +15795,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -15873,7 +15804,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -15882,7 +15813,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -15891,7 +15822,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -15900,7 +15831,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -15909,7 +15840,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -15918,7 +15849,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -15927,7 +15858,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -15936,7 +15867,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -15945,7 +15876,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -15954,7 +15885,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -15963,17 +15894,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
         "audit-2001",
         "audit-2002",
         "audit-2005",
-        "audit-2006",
-        "audit-2008",
-        "audit-2009",
-        "audit-2011"
+        "audit-2006"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -16385,7 +16313,7 @@
       "report_url": "https://github.com/zkLinkProtocol/zklink-audit-report/blob/master/zkLink%20Nova/ABDK_zkLink_CostOptimisation_2024.6.pdf",
       "auditor": "ABDK",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -16473,158 +16401,21 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2008,
-      "audit_key": "audit-2008",
-      "report_name": "ABDK_zkLink_CircuitsSmartContracts_2023.7.pdf",
-      "report_url": "https://github.com/zkLinkProtocol/zklink-audit-report/blob/master/zkLink%20X/ABDK_zkLink_CircuitsSmartContracts_2023.7.pdf",
-      "auditor": "ABDK",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "DeployFactory",
-        "EmptyVerifier",
-        "Iverifier",
-        "LayerZeroBridge",
-        "LayerZeroStorage",
-        "Storage",
-        "ZkLink",
-        "ZkLinkPeriphery"
-      ],
-      "matched_contracts": 120,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2009,
-      "audit_key": "audit-2009",
-      "report_name": "ABDK_zkLink_CircuitsSmartContracts_2023.8.pdf",
-      "report_url": "https://github.com/zkLinkProtocol/zklink-audit-report/blob/master/zkLink%20X/ABDK_zkLink_CircuitsSmartContracts_2023.8.pdf",
-      "auditor": "ABDK",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-08",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "DeployFactory.sol",
-        "EmptyVerifier.sol",
-        "Iverifier.sol",
-        "LayerZeroBridge.sol",
-        "LayerZeroStorage.sol",
-        "Storage.sol",
-        "ZkLink.sol",
-        "ZkLinkPeriphery.sol",
-        "account.rs",
-        "allocated_structures.rs",
-        "change_pubkey_offchain.rs",
-        "circuit.rs",
-        "deposit.rs",
-        "element.rs",
-        "exit_circuit.rs",
-        "forced_Exit.rs",
-        "full_exit.rs",
-        "mod.rs",
-        "noop.rs",
-        "op_circuit/deposit.rs",
-        "op_circuit/forced_exit.rs",
-        "op_circuit/order_matching.rs",
-        "op_circuit/transfer.rs",
-        "op_circuit/transfer_to_new.rs",
-        "operation.rs",
-        "order_matching.rs",
-        "serialization.rs",
-        "signature.rs",
-        "transfer.rs",
-        "transfer_to_new.rs",
-        "utils.rs",
-        "withdraw.rs"
-      ],
-      "matched_contracts": 120,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2010,
-      "audit_key": "audit-2010",
-      "report_name": "ABDK_zkLink_Circuits_2023.2.pdf",
-      "report_url": "https://github.com/zkLinkProtocol/zklink-audit-report/blob/master/zkLink%20X/ABDK_zkLink_Circuits_2023.2.pdf",
-      "auditor": "ABDK",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2011,
-      "audit_key": "audit-2011",
-      "report_name": "ABDK_zkLink_Solidity_2023.2.pdf",
-      "report_url": "https://github.com/zkLinkProtocol/zklink-audit-report/blob/master/zkLink%20X/ABDK_zkLink_Solidity_2023.2.pdf",
-      "auditor": "ABDK",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "DeployFactory",
-        "ILayerZeroEndpoint",
-        "ILayerZeroReceiver",
-        "ILayerZeroUserApplicationConfig",
-        "IZKL",
-        "LayerZeroBridge",
-        "LayerZeroStorage",
-        "Storage",
-        "ZkLink",
-        "ZkLinkPeriphery"
-      ],
-      "matched_contracts": 95,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
       "auditor": "ABDK",
       "tier": 2,
-      "contracts_covered": 16,
-      "coverage_pct": 14.4,
+      "contracts_covered": 15,
+      "coverage_pct": 13.6,
       "latest_audit": "2024-07"
     },
     {
       "auditor": "Secure3",
       "tier": 2,
       "contracts_covered": 13,
-      "coverage_pct": 11.7,
+      "coverage_pct": 11.8,
       "latest_audit": "2024-04"
     },
     {
@@ -17241,23 +17032,18 @@
     "native": 198,
     "upstream": 2,
     "standard_library": 20,
-    "needs_review": 161
+    "needs_review": 160
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 832
+      "extraction_exact": 497
     },
     "extraction_confidence_counts": {
-      "high": 10
+      "high": 7
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 2010,
-        "report_name": "ABDK_zkLink_Circuits_2023.2.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

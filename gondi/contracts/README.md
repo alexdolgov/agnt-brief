@@ -1,6 +1,6 @@
 # gondi — Contract Index
 
-33 unique implementations across 2 chains · 87 deployments · 3 audited · 15 unaudited · 15 unverified
+30 unique implementations across 2 chains · 84 deployments · 3 audited · 12 unaudited · 15 unverified
 
 ## core_logic (1)
 
@@ -30,21 +30,19 @@
 | [PositionMigrator](./ethereum-1/0xdcd85fee491de4b1fc11cbc0ba0e78537732f5b8/) | ethereum | [`0xdcd85f...32f5b8`](./ethereum-1/0xdcd85fee491de4b1fc11cbc0ba0e78537732f5b8/) | ⚠️ Unaudited | Verified |
 | [UniswapV3TwapQuoter](./ethereum-1/0xcad3b037b56cbd2b4cae2b35b878894e541af68a/) | ethereum | [`0xcad3b0...1af68a`](./ethereum-1/0xcad3b037b56cbd2b4cae2b35b878894e541af68a/) | ⚠️ Unaudited | Verified |
 
-## registry (2)
+## registry (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [DelegateRegistry](./ethereum-1/0x00000000000000447e69651d841bd8d104bed493/) | ethereum | [`0x000000...bed493`](./ethereum-1/0x00000000000000447e69651d841bd8d104bed493/) | ⚠️ Unaudited | Verified |
 | [LoanManagerRegistry (3 deployments)](./ethereum-1/0x1e09403be51029fe676e684743b6aad2dab7c9f5/) | ethereum | 3 deployments: ethereum [`0x1e0940...b7c9f5`](./ethereum-1/0x1e09403be51029fe676e684743b6aad2dab7c9f5/); ethereum `0xcf0f38...0740f3`; hyperliquid `0x97ba36...5866d7` | ⚠️ Unaudited | Verified |
 
-## token (2)
+## token (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [OldERC721Wrapper (3 deployments)](./ethereum-1/0x17770d9d996b8266fd07b736a014d8f06a5dafff/) | ethereum | 3 deployments: ethereum [`0x17770d...5dafff`](./ethereum-1/0x17770d9d996b8266fd07b736a014d8f06a5dafff/); ethereum `0xb14b31...46e0b9`; ethereum `0xc0ec4e...fc5497` | ⚠️ Unaudited | Verified |
-| [SampleToken](./ethereum-1/0x7d60c8350267ff6d42741177056051d897cbb40e/) | ethereum | [`0x7d60c8...cbb40e`](./ethereum-1/0x7d60c8350267ff6d42741177056051d897cbb40e/) | ⚠️ Unaudited | Verified |
 
-## unknown (21)
+## unknown (20)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -53,7 +51,6 @@
 | [MultiSourceLoan (6 deployments)](./ethereum-1/0x478f6f994c6fb3cf3e444a489b3ad9edb8ccae16/) | ethereum | 6 deployments: ethereum [`0x478f6f...ccae16`](./ethereum-1/0x478f6f994c6fb3cf3e444a489b3ad9edb8ccae16/); ethereum `0x52cdce...bf7e54`; ethereum `0xdff887...859634`; ethereum `0xf41b38...c08a56`; ethereum `0xf65b99...a7d9a8`; hyperliquid `0x6ad675...927fd9` | ✅ Audited | Verified |
 | [PurchaseBundler (20 deployments)](./ethereum-1/0x01981beeb1b36eb0aa3544161d3c4f4397377530/) | ethereum | 20 deployments: ethereum [`0x01981b...377530`](./ethereum-1/0x01981beeb1b36eb0aa3544161d3c4f4397377530/); ethereum `0x0d886f...05f166`; ethereum `0x1cef7e...50df96`; ethereum `0x1f87ea...b8f302`; ethereum `0x1fba53...0fcd62`; ethereum `0x2f3d5c...51a53b`; ethereum `0x3b59bf...ecdf5f`; ethereum `0x468a9a...10527a`; ethereum `0x500007...77c333`; ethereum `0x53ceda...489140`; ethereum `0x6fee50...cc28fd`; ethereum `0x857271...28fc25`; ethereum `0x893b2d...e9c6ec`; ethereum `0xc10472...c90814`; ethereum `0xcea7ee...2d260a`; ethereum `0xd2f1c0...4a1445`; ethereum `0xe02d85...855a59`; ethereum `0xf46a58...506feb`; ethereum `0xfd31a0...1aca61`; hyperliquid `0xfaaff6...264157` | ✅ Audited | Verified |
 | [RangeValidator (4 deployments)](./ethereum-1/0x039bc1010f0295246d8004224600d65d804f2b0a/) | ethereum | 4 deployments: ethereum [`0x039bc1...4f2b0a`](./ethereum-1/0x039bc1010f0295246d8004224600d65d804f2b0a/); ethereum `0x18905f...75573b`; ethereum `0x265a38...d1fb00`; ethereum `0xac9cd5...43a8b6` | ⚠️ Unaudited | Verified |
-| [SampleCollection](./ethereum-1/0xfaaff69da43b8195e5b0945c4fea4476e4264157/) | ethereum | [`0xfaaff6...264157`](./ethereum-1/0xfaaff69da43b8195e5b0945c4fea4476e4264157/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x125e1d...acc2cc` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x17cb96...c1d8b4` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x8364dd...49a57a` | ❓ Unverified | Unverified |

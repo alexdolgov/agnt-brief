@@ -5,8 +5,8 @@
 - Project: GOLDSTATION (`goldstation`)
 - Website: [https://goldstation.io](https://goldstation.io)
 - Lifecycle: active (Tier 0, 63.1% below peak)
-- Generated: 2026-06-10T20:59:04.344Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:38:01.228Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: avalanche, klaytn
 - Contract surface: 5 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $2,154,383.42

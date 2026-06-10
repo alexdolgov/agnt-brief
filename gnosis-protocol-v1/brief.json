@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gnosis-protocol-v1",
-  "generated_at": "2026-06-10T20:59:04.338Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-10T23:37:05.935Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "gnosis-protocol-v1",

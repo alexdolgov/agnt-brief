@@ -5,8 +5,8 @@
 - Project: Gondi (`gondi`)
 - Website: [https://www.gondi.xyz](https://www.gondi.xyz)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:59:04.372Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:37:06.561Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: ethereum, hyperliquid
 - Contract surface: 30 unique implementations (84 raw deployments)
 - DeFi Llama TVL: $1,367,523.00

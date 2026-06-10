@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "asseto-cash+",
-  "generated_at": "2026-05-24T23:42:04.282Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:45:11.381Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "asseto-cash+",
@@ -45,8 +45,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1399182.9407000002,
-    "tvl_usd": 1399182.9407000002,
+    "dl_tvl_usd": 1399224.83893,
+    "tvl_usd": 1399224.83893,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Asseto CASH+ is a protocol for tokenized real-world assets (RWA), specifically offering on-chain money market fund shares. It uses upgradeable proxy contracts to represent fund positions, enabling users to gain exposure to traditional financial instruments on Ethereum.",
+    "project_purpose": "Asseto CASH+ is a 1:1 asset-backed RWA token designed to provide stablecoin liquidity and money-market-rate yield, collateralized by the CMS USD Money Market Fund. TVL is reported across Ethereum and Binance/BNB Chain exposure; the indexed Ethereum surface includes ERC1967 proxy deployments and separate SAmMMF implementation contracts, while any Binance/BNB Chain TVL should be treated as unsurfaced unless corresponding contracts are indexed.",
     "relationship_narrative": "All contracts belong to a single product family with no shared infrastructure across families. The proxies point to SAmMMF implementations, indicating a direct tokenization pattern without additional supporting contracts.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -80,7 +85,7 @@
       "chain_name": "ethereum",
       "address": "0x048a8afa8cf69ea53b72298d50033d1e2560b809",
       "name": "SAmMMF",
-      "role": "unknown",
+      "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -438,7 +443,7 @@
       "chain_name": "ethereum",
       "address": "0x048a8afa8cf69ea53b72298d50033d1e2560b809",
       "name": "SAmMMF",
-      "role": "unknown",
+      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

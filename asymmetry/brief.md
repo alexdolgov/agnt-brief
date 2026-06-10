@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Asymmetry
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 38.9% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 38.9% over 90 days
 
 ## Project Overview
 
 - Project: Asymmetry (`asymmetry`)
 - Website: [https://asymmetry.fi](https://asymmetry.fi)
-- Lifecycle: unknown (Tier 0, 88.7% below peak)
-- Generated: 2026-05-31T07:24:11.912Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: declining (Tier 0, 88.7% below peak)
+- Generated: 2026-06-10T20:43:12.424Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: ethereum
-- Contract surface: 203 unique implementations (586 raw deployments)
+- Contract surface: 203 unique implementations (576 raw deployments)
 - DeFi Llama TVL: $3,559,259.00
 - On-chain TVL (included contracts): $37,147,849.35
 - TVL by chain: Ethereum $37,147,849.35
 
 ## Project Description
 
-Asymmetry Finance provides liquid staking derivative (LSD) index products and a collateralized debt position (CDP) stablecoin system. It aggregates multiple LSD tokens into diversified baskets and enables users to mint a stablecoin against these assets.
+Asymmetry Finance is a DeFi protocol offering liquid staking and index products such as safETH and afETH, a USDaf collateralized debt position stablecoin system, and yield-optimizing vault products. It supports diversified collateral and yield strategies across liquid staking and other crypto assets without assuming that Asymmetry LSD index tokens are the sole asset base for USDaf unless verified by current configuration.
 
 ### Architecture
 
@@ -30,14 +30,14 @@ The Asymmetry Finance family issues LSD index tokens (like afETH) that serve as 
 - Verified by bytecode match: 0
 - Unverified implementations: 83
 - Unique implementations: 203
-- Raw deployments: 586
-- Audits discovered: 1
+- Raw deployments: 576
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $37,147,849.35
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $37,147,849.35 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of $37,147,849.35 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -100,7 +100,7 @@ The Asymmetry Finance family issues LSD index tokens (like afETH) that serve as 
 | Price Oracle | operational_periphery | ethereum | [`0xb1d07f...39cad4`](./contracts/ethereum-1/0xb1d07f500393b768c64b9ceeba85c58dc639cad4/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | 6 deployments: ethereum [`0x12a14d...878d40`](./contracts/ethereum-1/0x12a14d3e78a2b0368ea784e04457af2bb6878d40/); ethereum `0x2b408d...66809e`; ethereum `0x3777c5...d262cb`; ethereum `0xa30e67...ad1ed3`; ethereum `0xc6798b...8a6c11`; ethereum `0xdf9f1f...88aeac` | ⚠️ Unaudited |
 | RateSender | unknown | ethereum | 2 deployments: ethereum [`0x655603...219665`](./contracts/ethereum-1/0x655603c5c034f89d8e0c25c7bb22cae091219665/); ethereum `0xc9e039...1e795d` | ⚠️ Unaudited |
-| Reth | token | ethereum | 8 deployments: ethereum [`0x228f6a...c328d3`](./contracts/ethereum-1/0x228f6ae1c458929427253e14879711d303c328d3/); ethereum `0x50ea7b...c44cc4`; ethereum `0x7b6633...1f5ca3`; ethereum `0x8d5dd2...d890d0`; ethereum `0xa5ad76...78c32b`; ethereum `0xb3e64c...905b8b`; ethereum `0xbcfed6...8a115e`; ethereum `0xd8ed29...8c4908` | ⚠️ Unaudited |
+| Reth | token | ethereum | 3 deployments: ethereum [`0x7b6633...1f5ca3`](./contracts/ethereum-1/0x7b6633c0cd81dc338688a528c0a3f346561f5ca3/); ethereum `0x8d5dd2...d890d0`; ethereum `0xd8ed29...8c4908` | ⚠️ Unaudited |
 | RETHPriceFeed | operational_periphery | ethereum | [`0x6c3774...898c56`](./contracts/ethereum-1/0x6c3774c30cb609e13ffdbae7c5ecd189b0898c56/) | ⚠️ Unaudited |
 | RETHRateProvider | unknown | ethereum | [`0x3d40f9...c1f1ac`](./contracts/ethereum-1/0x3d40f9dd83bd404fa4047c15da494e58c3c1f1ac/) | ⚠️ Unaudited |
 | RETHToBOLDExchange | unknown | ethereum | [`0x6aed7c...4fab76`](./contracts/ethereum-1/0x6aed7c8e57f905863caaab59fc10b5d95a4fab76/) | ⚠️ Unaudited |
@@ -165,7 +165,7 @@ The Asymmetry Finance family issues LSD index tokens (like afETH) that serve as 
 | WETHToCRVUSDExchange | token | ethereum | [`0xf00850...e3caac`](./contracts/ethereum-1/0xf00850a4384878c66c54fde0bdc29aa825e3caac/) | ⚠️ Unaudited |
 | WrappedCbbtc | unknown | ethereum | 4 deployments: ethereum [`0x71d335...fd086c`](./contracts/ethereum-1/0x71d33511d53ee8a89724ec9cbbddf9cfd5fd086c/); ethereum `0x7fd713...b27d15`; ethereum `0x97f775...1e70b7`; ethereum `0xc2fdf0...1b4402` | ⚠️ Unaudited |
 | WrappedSpot | unknown | ethereum | 2 deployments: ethereum [`0x253da8...1df194`](./contracts/ethereum-1/0x253da8f1f6cd0fb33aadc13999df9b124f1df194/); ethereum `0xfe097e...3150eb` | ⚠️ Unaudited |
-| WstEth | token | ethereum | 9 deployments: ethereum [`0x1533ed...9b306f`](./contracts/ethereum-1/0x1533edbe274aa1b9fb5db2652d6d143e939b306f/); ethereum `0x91d410...96ba17`; ethereum `0x972a53...f23fad`; ethereum `0xc56aef...e75a12`; ethereum `0xc57d67...d76208`; ethereum `0xcac2c9...86ae74`; ethereum `0xda8a4d...8458a9`; ethereum `0xf430e4...92c915`; ethereum `0xffd7da...6b9ca4` | ⚠️ Unaudited |
+| WstEth | token | ethereum | 4 deployments: ethereum [`0x1533ed...9b306f`](./contracts/ethereum-1/0x1533edbe274aa1b9fb5db2652d6d143e939b306f/); ethereum `0x972a53...f23fad`; ethereum `0xc56aef...e75a12`; ethereum `0xda8a4d...8458a9` | ⚠️ Unaudited |
 | WSTETHPriceFeed | operational_periphery | ethereum | [`0xa94a6c...09cef3`](./contracts/ethereum-1/0xa94a6cb1796a6404683786d3b56c3102a709cef3/) | ⚠️ Unaudited |
 | WSTETHToBOLDExchange | unknown | ethereum | [`0xdfe9ac...c5ca9a`](./contracts/ethereum-1/0xdfe9ace42684879ee17620bcce218711f1c5ca9a/) | ⚠️ Unaudited |
 | WSTETHToCRVUSDExchange | unknown | ethereum | [`0x63bf36...ee881f`](./contracts/ethereum-1/0x63bf3669a8784d279165a80ea877c74f92ee881f/) | ⚠️ Unaudited |
@@ -280,7 +280,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Apollon Report.MD](https://github.com/GalloDaSballo/Apollon-Review/blob/main/Apollon%20Report.MD) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -323,7 +322,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x746c23...898f62`](./contracts/ethereum-1/0x746c238e34a6dbfe1d35d50471467bd7bf898f62/) | OnLossDepositLimit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb1d07f...39cad4`](./contracts/ethereum-1/0xb1d07f500393b768c64b9ceeba85c58dc639cad4/) | Price Oracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x655603...219665`](./contracts/ethereum-1/0x655603c5c034f89d8e0c25c7bb22cae091219665/) | RateSender | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x228f6a...c328d3`](./contracts/ethereum-1/0x228f6ae1c458929427253e14879711d303c328d3/) | Reth | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6c3774...898c56`](./contracts/ethereum-1/0x6c3774c30cb609e13ffdbae7c5ecd189b0898c56/) | RETHPriceFeed | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x013c06...0bbcfb`](./contracts/ethereum-1/0x013c0652f5d700c875d45f1608e5089ed80bbcfb/) | SafEth | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1ef013...137801`](./contracts/ethereum-1/0x1ef01391c3fe1723dc32717b7112c54da3137801/) | sanity | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -381,22 +379,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 116 |
+| native | 115 |
 | upstream | 3 |
-| standard_library | 12 |
+| standard_library | 13 |
 | needs_review | 72 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [2676] Apollon Report.MD
 
 Fork inheritance lineage and inherited audits are included when available.

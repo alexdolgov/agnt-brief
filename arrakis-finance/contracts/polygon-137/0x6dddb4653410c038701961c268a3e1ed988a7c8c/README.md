@@ -6,8 +6,8 @@
 | Address | `0x6dddb4653410c038701961c268a3e1ed988a7c8c` |
 | Role | operational_periphery |
 | Origin | native |
-| Audited | Yes |
-| Audits | [Arrakis_V2_Periphery_Audit_Statemind.pdf](https://github.com/ArrakisFinance/v2-periphery/blob/main/audit/Arrakis_V2_Periphery_Audit_Statemind.pdf) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 2 (polygon [`0x6dddb4653410c038701961c268a3e1ed988a7c8c`](../0x6dddb4653410c038701961c268a3e1ed988a7c8c/); polygon `0xac31a467549595cc715dfa3e1ea20a6f52e29681`) |
 | Proxy | No (implementation for 1 proxy: `0xac31a4...e29681`) |
 | Source | Sourcify (full match) |

@@ -48,11 +48,11 @@
 | [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-06-10 |
 | [aria-protocol](./aria-protocol/) | $181.1K | 0.0% | ? | dead | 1 | 1 | 2026-06-10 |
 | [armitage-by-wintermute](./armitage-by-wintermute/) | $51.8M | 0.0% | $51.8M | active | 0 | 1 | 2026-06-10 |
-| [arrakis-finance](./arrakis-finance/) | $128.2K | 29.1% | $3.1K | active | 12 | 124 | 2026-05-31 |
-| [asseto-aoabt](./asseto-aoabt/) | $22.3M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
-| [asseto-cash+](./asseto-cash+/) | $1.4M | 0.0% | ? | declining | 1 | 2 | 2026-05-24 |
-| [asymmetry](./asymmetry/) | $37.1M | 0.0% | $37.1M | unknown | 1 | 203 | 2026-05-31 |
-| [atlendis](./atlendis/) | $4.3M | 14.3% | $4.3M | declining | 2 | 43 | 2026-05-31 |
+| [arrakis-finance](./arrakis-finance/) | $128.2K | 19.4% | $3.1K | active | 8 | 124 | 2026-06-10 |
+| [asseto-aoabt](./asseto-aoabt/) | $22.3M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
+| [asseto-cash+](./asseto-cash+/) | $1.4M | 0.0% | ? | declining | 1 | 2 | 2026-06-10 |
+| [asymmetry](./asymmetry/) | $37.1M | 0.0% | $37.1M | declining | 0 | 203 | 2026-06-10 |
+| [atlendis](./atlendis/) | $4.3M | 14.3% | $4.3M | active | 2 | 43 | 2026-06-10 |
 | [augur](./augur/) | $1.7M | 64.1% | ? | active | 7 | 39 | 2026-05-24 |
 | [aura](./aura/) | $277.0M | 19.0% | $238.3M | declining | 18 | 502 | 2026-05-31 |
 | [aurora-plus](./aurora-plus/) | $2.0M | 33.3% | ? | active | 3 | 31 | 2026-05-24 |

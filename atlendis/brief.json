@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "atlendis",
-  "generated_at": "2026-05-31T07:24:13.684Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:43:11.185Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "atlendis",
     "tier": 0,
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Atlendis is a decentralized protocol enabling uncollateralized lending, primarily for real-world assets (RWA). It allows borrowers to access liquidity without posting collateral, while lenders earn yield by providing funds to borrower-specific pools.",
+    "project_purpose": "Atlendis is an active decentralized private-credit and RWA lending protocol. The parent Atlendis project includes Atlendis V1 uncollateralized lending pools as well as newer V2/Mode deployments, so audit and coverage conclusions should distinguish V1-only audited contracts from the broader current Atlendis protocol surface. External assets and third-party token contracts should be treated as dependencies or held assets, not as native Atlendis protocol components unless explicitly confirmed by Atlendis documentation.",
     "relationship_narrative": "The protocol consists of a single product family, Atlendis V1, where BorrowerPools manages lending logic, AToken represents lender deposits, and TokenPolygonUpgradeableNameable likely serves as the debt token. Supporting proxies and the ZeroYieldProvider handle upgrades and yield routing.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 43,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

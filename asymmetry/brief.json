@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "asymmetry",
-  "generated_at": "2026-05-31T07:24:11.912Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:43:12.424Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "asymmetry",
     "tier": 0,
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 203,
-    "total_addresses": 586,
+    "total_addresses": 576,
     "unique_implementations": 203,
-    "total_deployments": 586,
+    "total_deployments": 576,
     "audited_contracts": 0,
     "unaudited_contracts": 120,
     "contracts_verified_audited": 0,
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 83,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 3559259,
     "tvl_usd": 37147849.34987606,
@@ -54,13 +54,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Asymmetry Finance provides liquid staking derivative (LSD) index products and a collateralized debt position (CDP) stablecoin system. It aggregates multiple LSD tokens into diversified baskets and enables users to mint a stablecoin against these assets.",
+    "project_purpose": "Asymmetry Finance is a DeFi protocol offering liquid staking and index products such as safETH and afETH, a USDaf collateralized debt position stablecoin system, and yield-optimizing vault products. It supports diversified collateral and yield strategies across liquid staking and other crypto assets without assuming that Asymmetry LSD index tokens are the sole asset base for USDaf unless verified by current configuration.",
     "relationship_narrative": "The Asymmetry Finance family issues LSD index tokens (like afETH) that serve as collateral within the Asymmetry USDaf CDP system. Collateral registries in USDaf reference these index tokens, creating a direct dependency where the index products provide the asset base for stablecoin minting.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 203,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -3048,35 +3053,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x228f6ae1c458929427253e14879711d303c328d3",
+      "address": "0x7b6633c0cd81dc338688a528c0a3f346561f5ca3",
       "name": "Reth",
       "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Asymmetry Finance",
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0xb3e64c481f0fc82344a7045592284fddb9905b8b",
       "impl_name": "Reth",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x228f6ae1c458929427253e14879711d303c328d3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x50ea7bca3088b04ff0cb69fe72d70d9daec44cc4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -3090,33 +3077,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x8d5dd29592bf3bd5dc98eb6c0e895fea4bd890d0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xa5ad76eaec4a6982e79a69020e75413c9e78c32b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xb3e64c481f0fc82344a7045592284fddb9905b8b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xbcfed6cc8ed838b7a8433ad83c271145798a115e",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -9288,15 +9248,6 @@
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0x91d4109e2058c229bb96509e0254ed50ad96ba17",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
           "address": "0x972a53e3a9114f61b98921fb5b86c517e8f23fad",
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -9315,43 +9266,7 @@
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0xc57d67ca8888c74d979a4fa1c9cde0333ed76208",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xcac2c9f10780d2f73085a83523eecdc8bf86ae74",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
           "address": "0xda8a4d1cbdd5b78a89ef889e9fea082a138458a9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf430e45f4001c37d2ff443e7a0405df3e592c915",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xffd7da746c46f7f0d779a6cd6f5ff59b7b6b9ca4",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -9808,29 +9723,7 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 2676,
-      "audit_key": "audit-2676",
-      "report_name": "Apollon Report.MD",
-      "report_url": "https://github.com/GalloDaSballo/Apollon-Review/blob/main/Apollon%20Report.MD",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -10179,16 +10072,6 @@
       "address": "0x655603c5c034f89d8e0c25c7bb22cae091219665",
       "name": "RateSender",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x228f6ae1c458929427253e14879711d303c328d3",
-      "name": "Reth",
-      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -10715,9 +10598,9 @@
     }
   ],
   "origin_summary": {
-    "native": 116,
+    "native": 115,
     "upstream": 3,
-    "standard_library": 12,
+    "standard_library": 13,
     "needs_review": 72
   },
   "scope_matching_notes": {
@@ -10725,12 +10608,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 2676,
-        "report_name": "Apollon Report.MD"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -1,13 +1,11 @@
 # Agentic Audit Brief: Atlendis
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 0.3% over 90 days
-
 ## Project Overview
 
 - Project: Atlendis (`atlendis`)
-- Lifecycle: declining (Tier 0, 99% below peak)
-- Generated: 2026-05-31T07:24:13.684Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, 99% below peak)
+- Generated: 2026-06-10T20:43:11.185Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: polygon
 - Contract surface: 43 unique implementations (106 raw deployments)
 - DeFi Llama TVL: $10,993,274.00
@@ -16,7 +14,7 @@
 
 ## Project Description
 
-Atlendis is a decentralized protocol enabling uncollateralized lending, primarily for real-world assets (RWA). It allows borrowers to access liquidity without posting collateral, while lenders earn yield by providing funds to borrower-specific pools.
+Atlendis is an active decentralized private-credit and RWA lending protocol. The parent Atlendis project includes Atlendis V1 uncollateralized lending pools as well as newer V2/Mode deployments, so audit and coverage conclusions should distinguish V1-only audited contracts from the broader current Atlendis protocol surface. External assets and third-party token contracts should be treated as dependencies or held assets, not as native Atlendis protocol components unless explicitly confirmed by Atlendis documentation.
 
 ### Architecture
 
@@ -36,7 +34,6 @@ The protocol consists of a single product family, Atlendis V1, where BorrowerPoo
 - Latest audit: 2022-05 (stale)
 - Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $4,280,776.69 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

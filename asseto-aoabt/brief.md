@@ -5,21 +5,22 @@
 - Project: Asseto AoABT (`asseto-aoabt`)
 - Website: [https://asseto.finance/product](https://asseto.finance/product)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T07:24:12.917Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:43:10.430Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: avalanche
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $22,280,390.66
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Asseto AoABT is a protocol for tokenizing real-world assets (RWA) on Avalanche, enabling on-chain representation and management of off-chain assets.
-
-### Architecture
-
-The protocol consists of a single product family with one proxy contract, indicating a monolithic architecture without shared infrastructure across multiple families.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

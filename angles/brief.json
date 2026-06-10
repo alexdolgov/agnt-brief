@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "angles",
-  "generated_at": "2026-05-31T07:10:18.051Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:29:26.096Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "angles",
     "tier": 1,
@@ -70,9 +70,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Angles is an onchain capital allocator on Sonic that provides liquid staking and yield-bearing vault products. It enables users to stake assets and receive liquid staking tokens, while the protocol allocates capital to validator infrastructure.",
+    "project_purpose": "Angles is primarily a Sonic liquid staking protocol centered on anS, enabling users to participate in Sonic staking while retaining a liquid staking token. Any vault, wanS, or capital-allocation components should be treated as secondary products or wrappers unless explicitly supported by protocol documentation.",
     "relationship_narrative": "Angles Stake vaults likely mint or interact with Angles Liquid's wanS token, creating a flow where staked assets are represented as liquid tokens. Both families share the Sonic chain infrastructure and may use common registries or proxy patterns for upgradeability.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 40,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

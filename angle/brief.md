@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Angle
 
-⚠️ Lifecycle status: DEAD - TVL dropped 31.9% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 31.9% over 90 days
 
 ## Project Overview
 
 - Project: Angle (`angle`)
 - Website: [https://app.angle.money](https://app.angle.money)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-26T05:20:02.204Z
-- Pipeline run: v2-pipeline-2026-05-26-eff36e-a3ce
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:29:21.214Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: arbitrum, avalanche, celo, ethereum, gnosis, optimism, polygon
-- Contract surface: 624 unique implementations (1558 raw deployments)
-- DeFi Llama TVL: $3,464,436.91
-- On-chain TVL (included contracts): $1,397,791,887.66
-- TVL by chain: Optimism $1,006,267,351.29 | Ethereum $391,121,714.62 | Celo $222,346.39 | Polygon $93,159.01 | Arbitrum $87,316.35
+- Contract surface: 547 unique implementations (1207 raw deployments)
+- DeFi Llama TVL: $3,707,604.51
+- On-chain TVL (included contracts): $1,397,790,797.71
+- TVL by chain: Optimism $1,006,266,437.31 | Ethereum $391,121,714.62 | Celo $222,346.39 | Polygon $93,159.01 | Arbitrum $87,140.37
 
 ## Project Description
 
-Angle is a decentralized stablecoin protocol that issues over-collateralized, euro-pegged stablecoins (agEUR) and provides yield-bearing savings products. It operates across multiple chains, using a CDP model for borrowing and a suite of strategies to generate yield on deposited assets.
+Angle is a decentralized euro stablecoin protocol centered on Angle Core/Borrowing, agEUR/EUR stablecoin infrastructure, savings products, governance, and bridge-related deployments. Its project-owned surface should be separated from third-party dependencies, integration targets, tokens, lending markets, Celo core contracts, Chainlink infrastructure, Safe infrastructure, and generic proxy or timelock contracts not verified as deployed or owned by Angle.
 
 ### Architecture
 
@@ -25,30 +25,29 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 6/337 (1.8%)
-- Verified + Unaudited implementations: 325
-- Verified by bytecode match: 6
-- Unverified implementations: 287
-- Unique implementations: 624
-- Raw deployments: 1558
-- Audits discovered: 3
-- Scoreable audits (matched contracts): 2
-- ASD (verified + unaudited TVL): $1,397,791,887.66
-- Latest audit: 2022-01 (stale)
-- Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
+- Verified implementations audited: 5/286 (1.7%)
+- Verified + Unaudited implementations: 279
+- Verified by bytecode match: 2
+- Unverified implementations: 261
+- Unique implementations: 547
+- Raw deployments: 1207
+- Audits discovered: 1
+- Scoreable audits (matched contracts): 1
+- ASD (verified + unaudited TVL): $1,397,790,797.71
+- Latest audit: 2021-09 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $1,397,791,887.66 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of $1,397,790,797.71 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| yAudit | Tier 2 | 6 | 1.8% | 2022-01 |
-| Sigma Prime | Tier 2 | 5 | 1.5% | 2021-09 |
+| Sigma Prime | Tier 2 | 5 | 1.7% | 2021-09 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (6)
+### ✅ Verified + Audited (5)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -57,9 +56,8 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | RewardsDistributor | operational_periphery | optimism | [`0x5d5bea...3f784f`](./contracts/optimism-10/0x5d5bea9f0fc13d967511668a60a3369fd53f784f/) | ✅ Audited |
 | SanToken | token | ethereum | 2 deployments: ethereum [`0x5d8d3a...1ec804`](./contracts/ethereum-1/0x5d8d3ac6d21c016f9c935030480b7057b21ec804/); ethereum `0xb3b209...15f1fe` | ✅ Audited |
 | StakingRewards | unknown | ethereum | 7 deployments: ethereum [`0x3d7e67...db6ad5`](./contracts/ethereum-1/0x3d7e670d105e8fbcae3bf2bfc54324302cdb6ad5/); ethereum `0x4a0772...6cdb49`; ethereum `0x7ee4a0...7b6a76`; ethereum `0xbb9485...9c40c2`; ethereum `0xbcb307...309dc6`; ethereum `0xd7c1b4...34f935`; polygon `0xcc0098...0f7616` | ✅ Audited |
-| Strategy | core_logic | ethereum | 2 deployments: ethereum [`0x2d78b6...9deb2e`](./contracts/ethereum-1/0x2d78b6f5dc8985d90145f27c8f5a3782eb9deb2e/); ethereum `0xb46a42...a8907e` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (325)
+### ⚠️ Verified + Unaudited (279)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -80,16 +78,12 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | yxToken | token | ethereum | 4 deployments: ethereum [`0x0d81b0...2685ce`](./contracts/ethereum-1/0x0d81b042bb9939b4d32cdf7861774c442a2685ce/); ethereum `0xb299bc...00dc4a`; ethereum `0xd2f458...0da0c3`; ethereum `0xf424b1...013d49` | ⚠️ Unaudited |
 | GearboxStrategy | core_logic | ethereum | 4 deployments: ethereum [`0x29c794...387510`](./contracts/ethereum-1/0x29c794b9a70752c41d65ebccef1c1ee697387510/); ethereum `0x67f2c6...2a84e6`; ethereum `0x9fb97f...ac099b`; ethereum `0xee4043...701dfa` | ⚠️ Unaudited |
 | AaveTokenV3 | token | ethereum | [`0x7fc665...2ddae9`](./contracts/ethereum-1/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9/) | ⚠️ Unaudited |
-| VaultManagerLiquidationBoost | core_logic | arbitrum | 14 deployments: optimism `0x16cd38...43d5aa`; optimism `0x9818bc...899ad1`; optimism `0xaec831...f96c57`; optimism `0xcf5a29...f78bb6`; optimism `0xfc48e3...790ab1`; arbitrum [`0x04437e...5173b9`](./contracts/arbitrum-42161/0x04437e94af860afbb0429a7d36b9c00a5a5173b9/); arbitrum `0x92d84b...2e9135`; arbitrum `0xa202fe...52d7cf`; arbitrum `0xe9f183...9ad8ed`; arbitrum `0xf66411...3839b9`; avalanche `0x4a44f7...f935ab`; avalanche `0x65e499...07e91d`; avalanche `0x735ff1...bcae9b`; avalanche `0xc4df24...d3c564` | ⚠️ Unaudited |
 | ConvexStrategyMeta3Pool | core_logic | ethereum | 3 deployments: ethereum [`0x351683...f77865`](./contracts/ethereum-1/0x35168324dc1981addc3bc915788e200bedf77865/); ethereum `0xbc1707...b6b79f`; ethereum `0xdb7306...29e20d` | ⚠️ Unaudited |
 | IdleTokenV3USDT | token | ethereum | 2 deployments: ethereum [`0x427406...1d862b`](./contracts/ethereum-1/0x42740698959761baf1b06baa51efbd88cb1d862b/); ethereum `0x63d27b...2d2f2d` | ⚠️ Unaudited |
 | IdleTokenFungible | token | ethereum | 15 deployments: ethereum [`0x0d41f8...e906ca`](./contracts/ethereum-1/0x0d41f858d803af86e5192a77a798ad7d97e906ca/); ethereum `0x1247b1...f955c1`; ethereum `0x144046...158647`; ethereum `0x15bb11...bd218b`; ethereum `0x169e44...ff692f`; ethereum `0x1fc957...c01c0e`; ethereum `0x2f5c26...4e26a1`; ethereum `0x62a036...89514b`; ethereum `0x742cf0...0bcb68`; ethereum `0xaeff59...a77f16`; ethereum `0xbdbc6d...eeb907`; ethereum `0xdc7777...8f320e`; ethereum `0xec9482...3068e1`; ethereum `0xf6954b...1ee5d2`; ethereum `0xfa3afc...3eaaad` | ⚠️ Unaudited |
 | IdleTokenV3SUSD | token | ethereum | 4 deployments: ethereum [`0x51c776...83eef1`](./contracts/ethereum-1/0x51c77689a9c2e8ccbecd4ec9770a1fa5fa83eef1/); ethereum `0x7db7a4...f8e5b6`; ethereum `0xb39ca0...963de5`; ethereum `0xe79e17...30fc9b` | ⚠️ Unaudited |
-| Convex2PoolStaker | core_logic | arbitrum | [`0x42dc54...4830ea`](./contracts/arbitrum-42161/0x42dc54fb50db556fa6ffba765f1141536d4830ea/) | ⚠️ Unaudited |
 | IdleClearpoolPSMStrategy | core_logic | ethereum | 4 deployments: ethereum [`0x3687c0...ded5a0`](./contracts/ethereum-1/0x3687c0f8760371fc1bd1c7bc28695c388cded5a0/); ethereum `0x89a13b...fcf347`; ethereum `0xfca6b0...df6cec`; ethereum `0xfe91b8...e17e79` | ⚠️ Unaudited |
-| CoreBorrow | core_logic | celo | 18 deployments: optimism `0x1a7e4e...fcbce8`; optimism `0xa61beb...1125b4`; optimism `0xc2c7a0...d08fb4`; optimism `0xe324d9...6d50ac`; gnosis `0x31429d...e214c2`; gnosis `0x3e399a...62c03b`; gnosis `0x67b9c7...70bdab`; gnosis `0xfd0dfc...5f99e0`; arbitrum `0x31429d...e214c2`; arbitrum `0x5183f0...32301e`; arbitrum `0xa86cc1...673267`; arbitrum `0xb38ba2...f97e82`; celo [`0x03c2d2...19f4b3`](./contracts/celo-42220/0x03c2d2014795ee8ca78b62738433b457ab19f4b3/); celo `0x3e399a...62c03b`; celo `0x59153e...55373b`; avalanche `0x1033dd...68ac6d`; avalanche `0x41f064...93f7f5`; avalanche `0xe9f183...9ad8ed` | ⚠️ Unaudited |
 | ConvexStrategyETH | core_logic | ethereum | [`0x3bcba0...d122cb`](./contracts/ethereum-1/0x3bcba0afd36c9b350f46c570f89ab70817d122cb/) | ⚠️ Unaudited |
-| ERC4626Strategy | core_logic | arbitrum | [`0xc0077e...e82a05`](./contracts/arbitrum-42161/0xc0077e921c30c39cdd8b693e25af572c10e82a05/) | ⚠️ Unaudited |
 | IdleTruefiStrategy | core_logic | ethereum | 2 deployments: ethereum [`0x62b17c...8b58fb`](./contracts/ethereum-1/0x62b17c9083db5941197e83bd385985b8878b58fb/); ethereum `0x7ccaf1...c08eb5` | ⚠️ Unaudited |
 | IdleRibbonStrategy | core_logic | ethereum | 3 deployments: ethereum [`0x25e733...518893`](./contracts/ethereum-1/0x25e7337037817dd9bddd0334ca1591f370518893/); ethereum `0x263283...3fc16c`; ethereum `0x73f3fb...42fd6a` | ⚠️ Unaudited |
 | IdleLeveragedEulerStrategy | core_logic | ethereum | 6 deployments: ethereum [`0x37de1d...870dc5`](./contracts/ethereum-1/0x37de1d299c93743472343699c58ec95000870dc5/); ethereum `0x54449c...908d74`; ethereum `0x736949...1bb8c9`; ethereum `0x7a7723...d44a51`; ethereum `0x96078f...20eae8`; ethereum `0xee5ec9...3f0073` | ⚠️ Unaudited |
@@ -97,7 +91,6 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | StakeDaoGovernance | token | ethereum | 2 deployments: ethereum [`0xbe3e89...cd782b`](./contracts/ethereum-1/0xbe3e89d333ff21f920656f02c2400e7720cd782b/); ethereum `0xc5e69b...9adf87` | ⚠️ Unaudited |
 | ConvexStrategyMUSD | core_logic | ethereum | [`0x271ce5...9920f0`](./contracts/ethereum-1/0x271ce5ded4ccbd28833bddf8a8093517299920f0/) | ⚠️ Unaudited |
 | IdleMStableStrategy | core_logic | ethereum | 3 deployments: ethereum [`0x7b8c3e...083619`](./contracts/ethereum-1/0x7b8c3ee1bafb4af5826d41137cd5caf878083619/); ethereum `0x854b5b...4252a2`; ethereum `0x944d36...b5045a` | ⚠️ Unaudited |
-| StakeDAO2PoolStaker | core_logic | arbitrum | 2 deployments: arbitrum [`0x58441e...8ff665`](./contracts/arbitrum-42161/0x58441e37255b09f9f545e9dc957f1c41658ff665/); arbitrum `0xc8711b...cb553c` | ⚠️ Unaudited |
 | IdleUsualStrategy | core_logic | ethereum | 5 deployments: ethereum [`0x1d659f...62dcc8`](./contracts/ethereum-1/0x1d659f4357e30de73ed2dc02ed4e34bca262dcc8/); ethereum `0x438020...6d29f6`; ethereum `0x775d6f...475408`; ethereum `0xa48d5e...859e71`; ethereum `0xd48237...078e81` | ⚠️ Unaudited |
 | IdleTokenWrapper | token | ethereum | [`0x544897...ae18e1`](./contracts/ethereum-1/0x544897a3b944fdeb1f94a0ed973ea31a80ae18e1/) | ⚠️ Unaudited |
 | AaveEcosystemReserveV2 | unknown | ethereum | [`0x25f222...286491`](./contracts/ethereum-1/0x25f2226b597e8f9514b3f68f00f494cf4f286491/) | ⚠️ Unaudited |
@@ -112,15 +105,8 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | AmphorStrategy | core_logic | ethereum | 3 deployments: ethereum [`0x35df8a...5ac1c8`](./contracts/ethereum-1/0x35df8a95b348dd87167ed00b3421ba15d95ac1c8/); ethereum `0x697655...16305b`; ethereum `0x73a99d...e57b16` | ⚠️ Unaudited |
 | AngleAccumulator | unknown | ethereum | [`0x9dddf9...d1c888`](./contracts/ethereum-1/0x9dddf9c8a7447993bcfef18f6b5421f28bd1c888/) | ⚠️ Unaudited |
 | AngleAccumulatorV2 | unknown | ethereum | [`0x943671...c6aa51`](./contracts/ethereum-1/0x943671e6c3a98e28abdbc60a7ac703b3c0c6aa51/) | ⚠️ Unaudited |
-| AngleBorrowHelpers | core_logic | optimism | 10 deployments: optimism [`0x033181...294b27`](./contracts/optimism-10/0x0331814f183d6a782e93e46810e76b5d21294b27/); optimism `0x0750b6...997d81`; optimism `0x28c5d2...9039ef`; optimism `0x5e9ab8...a294bc`; optimism `0x7f2708...b9d43c`; optimism `0xb78ecd...c18a6b`; arbitrum `0xc9cb57...2a6947`; arbitrum `0xdd6a0a...7ce11c`; avalanche `0x352742...0fdd97`; avalanche `0x431dc3...0234a0` | ⚠️ Unaudited |
-| AngleGovernor | governance | gnosis | 4 deployments: gnosis [`0x29e496...431011`](./contracts/gnosis-100/0x29e496419fd2558aa66af23c63f4df8a6b431011/); gnosis `0x566ec2...cd1769`; gnosis `0xf18303...2c6a16`; gnosis `0xf990e3...62cf09` | ⚠️ Unaudited |
 | AngleLocker | unknown | ethereum | [`0xd13f8c...4dcaf5`](./contracts/ethereum-1/0xd13f8c25cced32cdfa79eb5ed654ce3e484dcaf5/) | ⚠️ Unaudited |
 | AngleNFT | token | polygon | 2 deployments: polygon [`0x588c06...ba226b`](./contracts/polygon-137/0x588c06d6b15cb6d6f3428fa589a8fff1b6ba226b/); polygon `0xa124ef...4535da` | ⚠️ Unaudited |
-| AngleRouterArbitrum | adapter | arbitrum | 6 deployments: arbitrum [`0x3ee021...83f78d`](./contracts/arbitrum-42161/0x3ee021f6f91911b8a2af6047889c54cc4983f78d/); arbitrum `0x4b1e2c...d35984`; arbitrum `0x9a33e6...8be835`; arbitrum `0xc16b81...1e3049`; arbitrum `0xd31d6e...52e20b`; arbitrum `0xfd0087...d40a0b` | ⚠️ Unaudited |
-| AngleRouterAvalanche | adapter | avalanche | 2 deployments: avalanche [`0x62cba6...ff5f73`](./contracts/avalanche-43114/0x62cba6dcdae5992d44cd9bd8989d27718eff5f73/); avalanche `0xef66c9...85325e` | ⚠️ Unaudited |
-| AngleRouterCelo | adapter | celo | 3 deployments: celo [`0x81ac0f...f2836d`](./contracts/celo-42220/0x81ac0f2e39088c73dce9b354fdc6c302e9f2836d/); celo `0x892bf7...6decea`; celo `0xdb2fd6...638b46` | ⚠️ Unaudited |
-| AngleRouterGnosis | adapter | gnosis | 3 deployments: gnosis [`0xb8c135...b732a7`](./contracts/gnosis-100/0xb8c1350c2fdbe2f652c6869c5cd48268d0b732a7/); gnosis `0xbdd9a4...538c99`; gnosis `0xe77edd...7a0578` | ⚠️ Unaudited |
-| AngleRouterOptimism | adapter | optimism | 6 deployments: optimism [`0x0d7105...eccf52`](./contracts/optimism-10/0x0d710512e100c171139d2cf5708f22c680eccf52/); optimism `0x2859a4...642b20`; optimism `0x2ac724...d2c1cc`; optimism `0x4fa745...cdf982`; optimism `0x658286...cb27e1`; optimism `0xfb16d8...7c990b` | ⚠️ Unaudited |
 | AssetVotingWeightProvider | unknown | ethereum | 2 deployments: ethereum [`0x5ac493...5574aa`](./contracts/ethereum-1/0x5ac493b8c2cef1f02f117b9ba2797e7da95574aa/); ethereum `0xedac33...dc5c7b` | ⚠️ Unaudited |
 | Attestations | unknown | celo | 3 deployments: celo [`0x572912...15e071`](./contracts/celo-42220/0x5729126891355e3c2626338151dd50cc0415e071/); celo `0x936d74...dd40a8`; celo `0xf65903...63758c` | ⚠️ Unaudited |
 | AttestationsProxy | unknown | celo | 18 deployments: celo [`0x2496fd...8e9a3d`](./contracts/celo-42220/0x2496fda4b928e8cf799ac04ea79861ac828e9a3d/); celo `0x252b03...5f1649`; celo `0x30b3c1...0595ac`; celo `0x3a4936...edb3f4`; celo `0x488deb...6c8fa6`; celo `0x4a241b...877da9`; celo `0x65e25c...799411`; celo `0x673f19...74eecb`; celo `0x68da81...504785`; celo `0x93d52a...a0ecf7`; celo `0xb53ce2...d8d96a`; celo `0xc834e7...359afd`; celo `0xcc6517...9e8fbe`; celo `0xdadd05...6f9303`; celo `0xdd944d...99f451`; celo `0xeaaf55...bc9149`; celo `0xf114c7...f5406a`; celo `0xff2ba5...c9fd2d` | ⚠️ Unaudited |
@@ -136,7 +122,6 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | CEtherDelegate | unknown | ethereum | [`0xf148cd...5c5851`](./contracts/ethereum-1/0xf148cdec066b94410d403ac5fe1bb17ec75c5851/) | ⚠️ Unaudited |
 | ChainlinkSourcesRegistry | registry | ethereum | [`0xcd5526...6b72bd`](./contracts/ethereum-1/0xcd55262c3ea354a58661597f71037d5fa26b72bd/) | ⚠️ Unaudited |
 | ClaimRewards | unknown | ethereum | 2 deployments: ethereum [`0x633120...b1be0f`](./contracts/ethereum-1/0x633120100e108f03ace79d6c78aac9a56db1be0f/); ethereum `0xf30f23...c9f8c2` | ⚠️ Unaudited |
-| Comp | unknown | ethereum | [`0xc00e94...f26888`](./contracts/ethereum-1/0xc00e94cb662c3520282e6f5717214004a7f26888/) | ⚠️ Unaudited |
 | Comptroller | unknown | optimism | 7 deployments: optimism [`0x3d943c...8cb8a8`](./contracts/optimism-10/0x3d943ced08b53546254bc751a6931401328cb8a8/); optimism `0x480435...2e1f95`; optimism `0x4e0e20...d6c815`; optimism `0x60cf09...751c58`; optimism `0xa714aa...7a24d8`; optimism `0xdb0c52...5006ac`; optimism `0xe8ff14...83c03f` | ⚠️ Unaudited |
 | Controller | governance | arbitrum | 4 deployments: ethereum `0x29d378...73f08a`; ethereum `0x408179...2116ae`; ethereum `0xbe81e3...a5467a`; arbitrum [`0x23c717...6ac713`](./contracts/arbitrum-42161/0x23c7170fd3fec8ef421eba8f69b8e72dd86ac713/) | ⚠️ Unaudited |
 | ConvexStrategyMetaBTC | core_logic | ethereum | [`0x019879...7a4cdc`](./contracts/ethereum-1/0x0198792f2849397908c092b6b57654e1a57a4cdc/) | ⚠️ Unaudited |
@@ -147,17 +132,10 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | DarkParadiseV2 | unknown | ethereum | [`0x20d1b5...e642c3`](./contracts/ethereum-1/0x20d1b558ef44a6e23d9bf4bf8db1653626e642c3/) | ⚠️ Unaudited |
 | DelegateStakingRewardsIDLE | unknown | ethereum | [`0x747e81...7ff388`](./contracts/ethereum-1/0x747e819b878956fb6e5eb936a6415a5d037ff388/) | ⚠️ Unaudited |
 | Depositor | unknown | ethereum | 6 deployments: ethereum [`0x070df1...eef1ca`](./contracts/ethereum-1/0x070df1b96059f5dc34fcb140ffdc8c41d6eef1ca/); ethereum `0x344959...8c88c9`; ethereum `0x8a97e8...ce7121`; ethereum `0xa65d25...f46c87`; ethereum `0xca9ca3...09197d`; ethereum `0xfaf374...9b6285` | ⚠️ Unaudited |
-| DiamondCut | unknown | gnosis | 7 deployments: gnosis [`0x1d0cdc...396332`](./contracts/gnosis-100/0x1d0cdcf2294e2e301d0a06d0ca59ed4c43396332/); gnosis `0x787541...af51b8`; gnosis `0xa53796...beed99`; gnosis `0xc9cb57...2a6947`; gnosis `0xca7ee0...2613d9`; gnosis `0xe14bfa...fdd5b5`; gnosis `0xe9da5f...5d5eba` | ⚠️ Unaudited |
-| DiamondEtherscan | unknown | gnosis | 3 deployments: gnosis [`0x5506bc...4c15d2`](./contracts/gnosis-100/0x5506bc7ff32c33dbcb7012c1508d1242a34c15d2/); gnosis `0x752de7...11deb1`; gnosis `0xc2c7a0...d08fb4` | ⚠️ Unaudited |
-| DiamondEtherscanFacet | unknown | gnosis | [`0xc492fb...c90e4c`](./contracts/gnosis-100/0xc492fbae68ce6c5e14c7ed5cd8a59babd5c90e4c/) | ⚠️ Unaudited |
-| DiamondLoupe | unknown | gnosis | 7 deployments: gnosis [`0xa013ee...5cc208`](./contracts/gnosis-100/0xa013ee06ddc7073c1b6e84601ddffa237f5cc208/); gnosis `0xa31a7e...5ef0a1`; gnosis `0xad96b6...fff5a5`; gnosis `0xc06481...b24e20`; gnosis `0xd31d6e...52e20b`; gnosis `0xdd6a0a...7ce11c`; gnosis `0xfcc0bd...5270d3` | ⚠️ Unaudited |
-| DiamondProxy | unknown | gnosis | 2 deployments: gnosis [`0x02c477...9b67a8`](./contracts/gnosis-100/0x02c4771ed8d48d0d01a16303bbe2e9f4369b67a8/); gnosis `0xff091a...b9feac` | ⚠️ Unaudited |
-| DistributionCreator | unknown | arbitrum | 8 deployments: optimism `0x53d6ea...9eebbe`; optimism `0x94b488...bfddf2`; gnosis `0x79e4df...38113e`; arbitrum [`0x0b3bf9...9266f8`](./contracts/arbitrum-42161/0x0b3bf915eb02ceee25d2416b9721688dba9266f8/); arbitrum `0x10be88...fe8b57`; arbitrum `0x6450d6...0b2cca`; arbitrum `0x7b2d77...fddcd3`; arbitrum `0xc5a136...f6e05c` | ⚠️ Unaudited |
-| Distributor | operational_periphery | optimism | 4 deployments: optimism [`0x52b88b...1a8253`](./contracts/optimism-10/0x52b88b300a8dd0808e53203eb499cfca051a8253/); gnosis `0x60157f...5948ab`; arbitrum `0xc2aaba...93a5ae`; arbitrum `0xc8b81f...179494` | ⚠️ Unaudited |
 | DoubleSigningSlasher | unknown | celo | 3 deployments: celo [`0x078d04...82ffdf`](./contracts/celo-42220/0x078d04807e1a2ab0a1fbe75e7dcf7ce60c82ffdf/); celo `0x4bb82b...568a12`; celo `0xd6d73e...32f0cb` | ⚠️ Unaudited |
 | DowntimeSlasher | unknown | celo | 4 deployments: celo [`0x71cac3...463fdd`](./contracts/celo-42220/0x71cac3b31c138f3327c6ca14f9a1c8d752463fdd/); celo `0x7ae1bd...b3145e`; celo `0x9ebb6a...a7246f`; celo `0xb07329...8e4c4b` | ⚠️ Unaudited |
 | Dummy | unknown | ethereum | [`0x0d4bb5...6d022a`](./contracts/ethereum-1/0x0d4bb5613cc2187b95958e18b7c13fe1a76d022a/) | ⚠️ Unaudited |
-| DummyDiamondImplementation | unknown | ethereum | 5 deployments: ethereum [`0x002535...4cefab`](./contracts/ethereum-1/0x00253582b2a3fe112feec532221d9708c64cefab/); ethereum `0x222222...4d0137`; gnosis `0x1a42a3...f429b9`; gnosis `0x4a44f7...f935ab`; gnosis `0x891108...5b1589` | ⚠️ Unaudited |
+| DummyDiamondImplementation | unknown | ethereum | 2 deployments: ethereum [`0x002535...4cefab`](./contracts/ethereum-1/0x00253582b2a3fe112feec532221d9708c64cefab/); ethereum `0x222222...4d0137` | ⚠️ Unaudited |
 | DummyMaster | unknown | ethereum | [`0xbb6fbb...5bcacb`](./contracts/ethereum-1/0xbb6fbb48d3bfddb2e0690e87894623e2e65bcacb/) | ⚠️ Unaudited |
 | EarlyRewards | unknown | ethereum | [`0xa1f71e...5d88fc`](./contracts/ethereum-1/0xa1f71ed24aba6c8da8ca8c046bbc9804625d88fc/) | ⚠️ Unaudited |
 | Election | unknown | celo | 6 deployments: celo [`0x169c94...3009bc`](./contracts/celo-42220/0x169c946c9f70094b8ad74ee16477f27e713009bc/); celo `0x31efa3...70d77b`; celo `0x3db69c...9f6f28`; celo `0x5ad30f...c0d10b`; celo `0xbd7d39...31780e`; celo `0xcde503...c455d4` | ⚠️ Unaudited |
@@ -165,14 +143,12 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | EpochManagerEnabler | governance | celo | 3 deployments: celo [`0x27075b...5bf0e3`](./contracts/celo-42220/0x27075b83a1df9dcc098c95f0bc45f079f05bf0e3/); celo `0x2d4148...38b687`; celo `0x6d78c7...015312` | ⚠️ Unaudited |
 | EpochManagerEnablerProxy | governance | celo | [`0xb50216...f223a3`](./contracts/celo-42220/0xb50216c8225b0802f0197cc8c7e567a6d5f223a3/) | ⚠️ Unaudited |
 | EpochRewards | unknown | celo | 6 deployments: celo [`0x33285c...63464b`](./contracts/celo-42220/0x33285cab4df24f37899dc14f324530661c63464b/); celo `0x4cadba...562aba`; celo `0x563ba8...177eda`; celo `0x755c14...73ff33`; celo `0x97f1b9...382e89`; celo `0x9dc549...f050d9` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | optimism | 2 deployments: optimism [`0x3d53aa...e998dd`](./contracts/optimism-10/0x3d53aa9e22dc0fe145bf1ea13ee8585cb4e998dd/); optimism `0x7097aa...e1cc63` | ⚠️ Unaudited |
 | Escrow | operational_periphery | celo | 2 deployments: celo [`0x7a097d...4420c1`](./contracts/celo-42220/0x7a097d13f2b9f4e32efffbf2a5ea756dab4420c1/); celo `0xcc4e6c...88e835` | ⚠️ Unaudited |
 | EulerStakingPYTStrategy | core_logic | ethereum | [`0xcf9347...098ffb`](./contracts/ethereum-1/0xcf93471a82241c2be469d83d960932721b098ffb/) | ⚠️ Unaudited |
 | Exchange | unknown | celo | 2 deployments: celo [`0x9a470d...39906c`](./contracts/celo-42220/0x9a470d789bcd392ae4c8f22db8425b5ef139906c/); celo `0xedf3f7...2501a4` | ⚠️ Unaudited |
 | ExchangeBRL | unknown | celo | 3 deployments: celo [`0x0d4a42...a2d112`](./contracts/celo-42220/0x0d4a42b2fc30afbf6b6e8f5ce49a659e38a2d112/); celo `0x21772f...883fee`; celo `0x8f2cf9...68a4ea` | ⚠️ Unaudited |
 | ExchangeEUR | unknown | celo | 3 deployments: celo [`0x32c2dc...b5dc8d`](./contracts/celo-42220/0x32c2dcb7730ed6fc1eac0444a668f38fd7b5dc8d/); celo `0x622833...0234d9`; celo `0xe38339...d53d1d` | ⚠️ Unaudited |
 | ExternalRewardDistributor | operational_periphery | optimism | 7 deployments: optimism [`0x2b1d11...ae2597`](./contracts/optimism-10/0x2b1d11f82fc70e2693ab19c4c3da23da75ae2597/); optimism `0x3b8075...86d04c`; optimism `0x493f11...2c9402`; optimism `0x9117ec...389b6a`; optimism `0x938ed6...dcf13f`; optimism `0xc793f5...6e5340`; optimism `0xd19746...2d5ed9` | ⚠️ Unaudited |
-| FakeGnosis | unknown | gnosis | 7 deployments: gnosis [`0x029f04...d407a8`](./contracts/gnosis-100/0x029f049c59a6b56610a34ba01d0d28e26ed407a8/); gnosis `0x033181...294b27`; gnosis `0x0945de...3b87a0`; gnosis `0x456f47...dabd6b`; gnosis `0x68c1c2...64d89f`; gnosis `0xa2875b...b7c2b1`; gnosis `0xe0688a...10d691` | ⚠️ Unaudited |
 | FalconXAAAdapter | adapter | ethereum | 3 deployments: ethereum [`0x48fc1a...f57724`](./contracts/ethereum-1/0x48fc1a04e5e18c994c3165c9ad0d3553d7f57724/); ethereum `0x8fed61...83667e`; ethereum `0xefffa4...2c8fa2` | ⚠️ Unaudited |
 | FederatedAttestations | unknown | celo | 2 deployments: celo [`0x0ad5b1...d6aff2`](./contracts/celo-42220/0x0ad5b1d0c25ecf6266dd951403723b2687d6aff2/); celo `0x76a4da...53ea85` | ⚠️ Unaudited |
 | FeeCurrencyDirectory | unknown | celo | 3 deployments: celo [`0x15f344...2c6276`](./contracts/celo-42220/0x15f344b9e6c3cb6f0376a36a64928b13f62c6276/); celo `0x8a9acf...ae24b6`; celo `0xf6fb74...6d0463` | ⚠️ Unaudited |
@@ -181,20 +157,17 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | FeeHandler | unknown | celo | 4 deployments: celo [`0x558c20...fea36c`](./contracts/celo-42220/0x558c209b246d5f21cc32a11da29a1cdbdcfea36c/); celo `0x90ed9a...7373a5`; celo `0xcd4377...6b8778`; celo `0xea8f09...0fa97f` | ⚠️ Unaudited |
 | FiatTokenV2_1 | token | ethereum | [`0x5e007b...5e4753`](./contracts/ethereum-1/0x5e007bc170861e27952ca4118d7af3e8aa5e4753/) | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | ethereum | 2 deployments: ethereum [`0x1abaea...1bc33c`](./contracts/ethereum-1/0x1abaea1f7c830bd89acc67ec4af516284b1bc33c/); ethereum `0x5e620d...e79ce2` | ⚠️ Unaudited |
-| FlashAngle | unknown | avalanche | 6 deployments: optimism `0xf1ddca...efe123`; optimism `0xfa5ed5...3528e7`; arbitrum `0x3e399a...62c03b`; arbitrum `0x59153e...55373b`; avalanche [`0x04437e...5173b9`](./contracts/avalanche-43114/0x04437e94af860afbb0429a7d36b9c00a5a5173b9/); avalanche `0x9c2152...a36dad` | ⚠️ Unaudited |
 | Fundraising | unknown | optimism | [`0x5b8978...f81e5f`](./contracts/optimism-10/0x5b89789fb230d17c4b0ae1461f26828554f81e5f/) | ⚠️ Unaudited |
 | FxsAccumulator | unknown | ethereum | [`0x1cc16b...c59fb2`](./contracts/ethereum-1/0x1cc16bedaacd15848bca5eb80188e0931bc59fb2/) | ⚠️ Unaudited |
 | FxsLocker | unknown | ethereum | [`0xcd3a26...ce448f`](./contracts/ethereum-1/0xcd3a267de09196c48bbb1d9e842d7d7645ce448f/) | ⚠️ Unaudited |
 | GasPriceMinimum | operational_periphery | celo | 5 deployments: celo [`0x0b8464...da1b0f`](./contracts/celo-42220/0x0b8464659baa4e12a2eee42745e1131a6eda1b0f/); celo `0x28905e...3ab53e`; celo `0x52737f...bd6610`; celo `0x7c4194...a52361`; celo `0x8c3d2a...e3ba90` | ⚠️ Unaudited |
 | GaugeFactory | operational_periphery | arbitrum | 2 deployments: optimism `0xc5be2c...fa42c5`; arbitrum [`0x330b0a...1a5094`](./contracts/arbitrum-42161/0x330b0aac13e389313e48f9b70e4d1531c71a5094/) | ⚠️ Unaudited |
 | GaugeMultiRewards | operational_periphery | ethereum | [`0x3c310f...4352d1`](./contracts/ethereum-1/0x3c310fc54c0534dc3c45312934508722284352d1/) | ⚠️ Unaudited |
-| Getters | unknown | gnosis | 7 deployments: gnosis [`0x2904a4...3894f7`](./contracts/gnosis-100/0x2904a4d96f88ad4bd548507ba139e892083894f7/); gnosis `0x600ab5...6bb739`; gnosis `0x7ca73c...8a87a1`; gnosis `0x826098...817a78`; gnosis `0xb6b481...40a82b`; gnosis `0xc7f583...2c99d9`; gnosis `0xf2eda0...bcef64` | ⚠️ Unaudited |
 | GnosisSafe | governance | ethereum | 3 deployments: ethereum [`0x0c2553...42d430`](./contracts/ethereum-1/0x0c2553e4b9dfa9f83b1a6d3eab96c4baab42d430/); ethereum `0x57eedc...aa89fc`; ethereum `0xdc4e6d...4eb1c8` | ⚠️ Unaudited |
 | GnosisSafeL2 | governance | gnosis | 8 deployments: optimism `0x3245d3...5e08a6`; gnosis [`0x0f70ee...bafd69`](./contracts/gnosis-100/0x0f70eed1bb51d5edb1a2e46142638df959bafd69/); gnosis `0xf0a31f...3f11f0`; polygon `0x3b9d32...ff6f8d`; polygon `0xda2d2f...4c02ea`; arbitrum `0x55f01d...560a9c`; arbitrum `0xaa2dac...54df0b`; celo `0x434153...5086f5` | ⚠️ Unaudited |
 | GnosisSafeProxy | governance | celo | 4 deployments: optimism `0xd24567...2fd080`; celo [`0x2ba5a5...99bfe1`](./contracts/celo-42220/0x2ba5a55dbdad03023e6872a8d57c458e9399bfe1/); avalanche `0x43a794...d41613`; avalanche `0xccd449...10870d` | ⚠️ Unaudited |
 | GoldToken | token | celo | 7 deployments: celo [`0x04a182...c7edb2`](./contracts/celo-42220/0x04a182a01a303a4f1333a5ce1213ae54f0c7edb2/); celo `0x4ddeb8...f4abb4`; celo `0x8f5eca...31255e`; celo `0xb16516...b2c19d`; celo `0xcb8710...6a7a39`; celo `0xfa7752...0ad6d5`; celo `0xfea1b3...c4f7b1` | ⚠️ Unaudited |
 | GovernableFund | unknown | ethereum | 3 deployments: ethereum [`0x107a36...31b925`](./contracts/ethereum-1/0x107a369bc066c77ff061c7d2420618a6ce31b925/); ethereum `0x69a62c...1bcb94`; ethereum `0xb0aa1f...5571c7` | ⚠️ Unaudited |
-| Governance | unknown | celo | 8 deployments: celo [`0x074a48...3db55e`](./contracts/celo-42220/0x074a4810015d67bafac5fe522c70761f343db55e/); celo `0x1914ea...347f46`; celo `0x19f78d...211b28`; celo `0x40bca4...1824e6`; celo `0x40cac0...a6c57a`; celo `0xd8476f...490966`; celo `0xf2d7aa...24cb13`; celo `0xf51d27...7a215d` | ⚠️ Unaudited |
 | GovernanceParamsProvider | unknown | ethereum | 2 deployments: ethereum [`0xf3b2c2...443a06`](./contracts/ethereum-1/0xf3b2c28c7245c49ea5e6c6db98026f180b443a06/); ethereum `0xf7ff0a...2fd0b2` | ⚠️ Unaudited |
 | GovernanceSlasher | unknown | celo | 2 deployments: celo [`0xb1b7b6...c51e9e`](./contracts/celo-42220/0xb1b7b6af5bb6b527094c7cc5ce8bab32f4c51e9e/); celo `0xed1073...6dbe14` | ⚠️ Unaudited |
 | GovernanceTreasury | operational_periphery | arbitrum | [`0x1b94ca...c13360`](./contracts/arbitrum-42161/0x1b94ca0d99a7cd14e67c9d3618a9726094c13360/) | ⚠️ Unaudited |
@@ -250,8 +223,6 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | IntegerSortedLinkedList | unknown | celo | [`0xa86051...0d047c`](./contracts/celo-42220/0xa86051f29c45218b5f6cd121ebafb690660d047c/) | ⚠️ Unaudited |
 | JumpRateModelV4 | operational_periphery | optimism | 3 deployments: optimism [`0x3f6fb8...02631e`](./contracts/optimism-10/0x3f6fb832279ac7db0b4f92b79cbb8df03702631e/); optimism `0x7320bd...6f741e`; optimism `0xbbbd75...7f13c6` | ⚠️ Unaudited |
 | KeyringIdleWhitelist | unknown | ethereum | 6 deployments: ethereum [`0x1a4d23...2bcc68`](./contracts/ethereum-1/0x1a4d23403c31ba26a4b84af09364d503ad2bcc68/); ethereum `0x42e645...3d7cbd`; ethereum `0x637595...bf2688`; ethereum `0x6a6a91...0450e3`; ethereum `0xb84957...0d77a0`; ethereum `0xda7514...dbf80c` | ⚠️ Unaudited |
-| LayerZeroBridgeToken | operational_periphery | avalanche | 11 deployments: optimism `0x840b25...230a72`; optimism `0xc69e66...bb5c88`; optimism `0xcf6cf3...36b45b`; gnosis `0x4dd475...cd077d`; gnosis `0xfa5ed5...3528e7`; arbitrum `0x16cd38...43d5aa`; arbitrum `0x8f4245...fc0ade`; arbitrum `0xea8239...38fee5`; celo `0xdd6a0a...7ce11c`; celo `0xf1ddca...efe123`; avalanche [`0x14c000...8f5434`](./contracts/avalanche-43114/0x14c00080f97b9069ae3b4eb506ee8a633f8f5434/) | ⚠️ Unaudited |
-| LayerZeroBridgeTokenERC20 | operational_periphery | arbitrum | 3 deployments: optimism `0x9201cc...15313a`; arbitrum [`0x366cee...019695`](./contracts/arbitrum-42161/0x366cee609a64037a4910868c5b3cd62b9d019695/); avalanche `0xc01188...640c8f` | ⚠️ Unaudited |
 | LendToAaveMigrator | periphery | ethereum | 2 deployments: ethereum [`0x317625...291de4`](./contracts/ethereum-1/0x317625234562b1526ea2fac4030ea499c5291de4/); ethereum `0x3368fe...e4738a` | ⚠️ Unaudited |
 | LendVoteStrategyToken | core_logic | ethereum | [`0x0671ca...b3ffdf`](./contracts/ethereum-1/0x0671ca7e039af2cf2d2c5e7f1aa261ae78b3ffdf/) | ⚠️ Unaudited |
 | LiquidityGenerator | unknown | optimism | [`0x17063a...a00ed7`](./contracts/optimism-10/0x17063ad4e83b0aba4ca0f3fc3a9794e807a00ed7/) | ⚠️ Unaudited |
@@ -288,12 +259,7 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | MetaMorpho | unknown | ethereum | [`0xbeef01...2a64cb`](./contracts/ethereum-1/0xbeef01735c132ada46aa9aa4c54623caa92a64cb/) | ⚠️ Unaudited |
 | MetaMorphoStrategy | core_logic | ethereum | 4 deployments: ethereum [`0x0186e3...78a73b`](./contracts/ethereum-1/0x0186e34de71987303b4ed4a027ed939a1178a73b/); ethereum `0x0f0500...61da57`; ethereum `0x4bfd21...208ac2`; ethereum `0x937c51...6d515d` | ⚠️ Unaudited |
 | Minter | operational_periphery | optimism | [`0x3460dc...a4102d`](./contracts/optimism-10/0x3460dc71a8863710d1c907b8d9d5dbc053a4102d/) | ⚠️ Unaudited |
-| MockANGLE | unknown | gnosis | 2 deployments: gnosis [`0xd08667...cb75df`](./contracts/gnosis-100/0xd08667fc2f323b7d64096e8ad79ff49e96cb75df/); gnosis `0xe09e56...11d38a` | ⚠️ Unaudited |
-| MockCoreBorrow | core_logic | gnosis | 7 deployments: gnosis [`0x210c6c...ed1276`](./contracts/gnosis-100/0x210c6c3fbb709bfc68d4588b14317e319bed1276/); gnosis `0x2b11d8...e05a50`; gnosis `0x2f2e0b...10927e`; gnosis `0x4a5c64...021cb0`; gnosis `0xbdbdf1...96f49f`; gnosis `0xe1e6d7...141eea`; gnosis `0xeb7c84...9f1d4d` | ⚠️ Unaudited |
-| MockToken | token | gnosis | [`0x65a1df...e6b1ed`](./contracts/gnosis-100/0x65a1dfb54cdec9011688b1818a27a8c687e6b1ed/) | ⚠️ Unaudited |
-| MockTokenPermit | token | gnosis | 28 deployments: gnosis [`0x05214c...41f00a`](./contracts/gnosis-100/0x05214c5e95e756e4de26e12611495e260241f00a/); gnosis `0x06486a...2a004f`; gnosis `0x1b0c95...717ce4`; gnosis `0x1e5b48...26514a`; gnosis `0x1ece8c...2734b4`; gnosis `0x28c5d2...9039ef`; gnosis `0x3f125e...3707ab`; gnosis `0x4b81f5...359aa3`; gnosis `0x58441e...8ff665`; gnosis `0x5c6f17...31156c`; gnosis `0x5e6955...eb63c1`; gnosis `0x5f7797...c181ab`; gnosis `0x5fe0e4...ce14a3`; gnosis `0x7f66dc...683a39`; gnosis `0x821801...69928a`; gnosis `0x8c6afd...5e0941`; gnosis `0x9a33e6...8be835`; gnosis `0xa6a505...4a651d`; gnosis `0xa8ce8e...84d56d`; gnosis `0xa988ff...7e9c29`; gnosis `0xbc71f5...cddedb`; gnosis `0xc01188...640c8f`; gnosis `0xc1f926...acdb8f`; gnosis `0xc8711b...cb553c`; gnosis `0xdd8670...7e1895`; gnosis `0xe682aa...1b0297`; gnosis `0xf530b8...1cec86`; gnosis `0xf89fa5...7c8e12` | ⚠️ Unaudited |
 | MorphoAaveV2SupplyVaultStrategy | core_logic | ethereum | 4 deployments: ethereum [`0x57e142...862f32`](./contracts/ethereum-1/0x57e142278e93d721f3ebd52ec5d2d28484862f32/); ethereum `0x6c14a1...401cfd`; ethereum `0x9182a7...fc56bb`; ethereum `0x9708b5...c2c860` | ⚠️ Unaudited |
-| MultiCallWithFailure | periphery | avalanche | 3 deployments: optimism `0x6cd24a...07eaf5`; arbitrum `0x97b689...1f227f`; avalanche [`0x03c2d2...19f4b3`](./contracts/avalanche-43114/0x03c2d2014795ee8ca78b62738433b457ab19f4b3/) | ⚠️ Unaudited |
 | NewStrategyAngleStakeDao | core_logic | ethereum | [`0x79b738...a0e05f`](./contracts/ethereum-1/0x79b738e404208e9607c3b4d4b3800ed0d4a0e05f/) | ⚠️ Unaudited |
 | NFTBoosterVault | core_logic | ethereum | [`0xa324a2...68bdd9`](./contracts/ethereum-1/0xa324a2e3a6f64bd588565e0e1e2dd50e7a68bdd9/) | ⚠️ Unaudited |
 | OdisPayments | unknown | celo | 2 deployments: celo [`0x9ea5e9...14bf78`](./contracts/celo-42220/0x9ea5e9b9b48a72325d59b3eba147f42b1b14bf78/); celo `0xae6b29...56d0cb` | ⚠️ Unaudited |
@@ -310,20 +276,15 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | PriceOracleV3 | operational_periphery | ethereum | [`0x886b10...c201f1`](./contracts/ethereum-1/0x886b102953ab3eaf719df7b80b03cd5203c201f1/) | ⚠️ Unaudited |
 | ProgrammableBorrower | core_logic | ethereum | 4 deployments: ethereum [`0x36569d...5f1bf6`](./contracts/ethereum-1/0x36569d9afafc8bfd6bb844ee371f401c695f1bf6/); ethereum `0x7bfe8d...6f9eb7`; ethereum `0x8a5d39...5b346c`; ethereum `0xb5cebe...b5d459` | ⚠️ Unaudited |
 | Proposals | unknown | celo | [`0x38afc0...ebfba8`](./contracts/celo-42220/0x38afc0dc55415ae27b81c24b5a5fbfe433ebfba8/) | ⚠️ Unaudited |
-| ProposalSender | unknown | gnosis | 11 deployments: gnosis [`0x00e0f3...905958`](./contracts/gnosis-100/0x00e0f3d12a38b6284c02ccf9efbfaf4f61905958/); gnosis `0x2aaae8...83624c`; gnosis `0x499c86...8a4f4e`; gnosis `0x56de2e...4506f7`; gnosis `0x93701c...c2cca9`; gnosis `0x946942...9d6669`; gnosis `0xc5a136...f6e05c`; gnosis `0xde8e46...7615a3`; gnosis `0xdfbe6d...d6c446`; gnosis `0xec0d13...8a6803`; gnosis `0xf93062...b720a6` | ⚠️ Unaudited |
-| Proxy | proxy | celo | 3 deployments: celo [`0x38dd9f...181c9f`](./contracts/celo-42220/0x38dd9fa2409758fa0d73440ee18f8e0249181c9f/); celo `0xd626c0...a1bbbb`; celo `0xf10011...e4cf27` | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | 25 deployments: ethereum [`0x0138a8...8b725e`](./contracts/ethereum-1/0x0138a84f821809e2d01b16d053f4b4a5b88b725e/); ethereum `0x071163...843f5b`; ethereum `0x120508...c68a14`; ethereum `0x3f8c62...d05ea9`; ethereum `0x774079...e01417`; ethereum `0x943890...9af351`; ethereum `0xc2ff10...e5e3e8`; ethereum `0xfe612c...f91b9b`; optimism `0x2778d9...b0a7ea`; optimism `0x4b2455...7b353d`; optimism `0x4b3ee1...5238cf`; optimism `0x8d5d5b...b8346d`; optimism `0xc16b81...1e3049`; optimism `0xe14bfa...fdd5b5`; gnosis `0x2101f6...0a6671`; gnosis `0x50ecc9...04d067`; gnosis `0x9a5b06...0afb19`; polygon `0xbfca29...bae6d6`; arbitrum `0x0400b6...224ba2`; arbitrum `0x9a5b06...0afb19`; arbitrum `0xf2eda0...bcef64`; celo `0x5183f0...32301e`; celo `0x9a5b06...0afb19`; avalanche `0x7ab641...142ddb`; avalanche `0xb1f2a2...a3eaab` | ⚠️ Unaudited |
+| ProxyAdmin | governance | ethereum | 14 deployments: ethereum [`0x0138a8...8b725e`](./contracts/ethereum-1/0x0138a84f821809e2d01b16d053f4b4a5b88b725e/); ethereum `0x071163...843f5b`; ethereum `0x120508...c68a14`; ethereum `0x3f8c62...d05ea9`; ethereum `0x774079...e01417`; ethereum `0x943890...9af351`; ethereum `0xc2ff10...e5e3e8`; ethereum `0xfe612c...f91b9b`; optimism `0x2778d9...b0a7ea`; optimism `0x4b2455...7b353d`; optimism `0x4b3ee1...5238cf`; optimism `0x8d5d5b...b8346d`; polygon `0xbfca29...bae6d6`; arbitrum `0x0400b6...224ba2` | ⚠️ Unaudited |
 | Random | unknown | celo | 3 deployments: celo [`0x221a13...e3bdab`](./contracts/celo-42220/0x221a13e96d5c0cecb17ffd8a4a458c47ece3bdab/); celo `0x42e074...65bacd`; celo `0xe43ea9...457028` | ⚠️ Unaudited |
-| Redeemer | unknown | gnosis | 2 deployments: gnosis [`0x6f5e42...7b8c6f`](./contracts/gnosis-100/0x6f5e42be8d24255a376fffa8a3fffae8a77b8c6f/); gnosis `0xd681af...479000` | ⚠️ Unaudited |
 | RedemptionReceiver | unknown | optimism | [`0x846e82...25a951`](./contracts/optimism-10/0x846e822e9a00669dcc647079d7d625d2cd25a951/) | ⚠️ Unaudited |
 | Reserve | unknown | celo | 2 deployments: celo [`0x907f37...726aa0`](./contracts/celo-42220/0x907f37a0e9b003df15500c025f7acb496a726aa0/); celo `0xc683e6...85d607` | ⚠️ Unaudited |
 | ReserveManager | governance | optimism | 2 deployments: optimism [`0xb112e4...bfb110`](./contracts/optimism-10/0xb112e4cc83f0df154fe3fb088109be2ac5bfb110/); optimism `0xe39ccd...9370a3` | ⚠️ Unaudited |
 | Reservoir | unknown | ethereum | [`0x031f71...1e42c6`](./contracts/ethereum-1/0x031f71b5369c251a6544c41ce059e6b3d61e42c6/) | ⚠️ Unaudited |
-| RewardHandler | unknown | gnosis | 7 deployments: gnosis [`0x13bac7...1d7164`](./contracts/gnosis-100/0x13bac78046b5625167c1c3542b0f8656df1d7164/); gnosis `0x5199ba...542991`; gnosis `0x67ab61...4e79d8`; gnosis `0x892bf7...6decea`; gnosis `0x8b450a...8b4483`; gnosis `0x972034...762c4f`; gnosis `0xa5fb71...b2173c` | ⚠️ Unaudited |
 | RewardManager | governance | optimism | [`0x5da3ea...c3f5c2`](./contracts/optimism-10/0x5da3ea9167e159de0d3003c21c86db1334c3f5c2/) | ⚠️ Unaudited |
 | Router | adapter | optimism | [`0xa132da...23f9c9`](./contracts/optimism-10/0xa132dab612db5cb9fc9ac426a0cc215a3423f9c9/) | ⚠️ Unaudited |
 | Sanctuary | unknown | ethereum | [`0xac1486...1247d3`](./contracts/ethereum-1/0xac14864ce5a98af3248ffbf549441b04421247d3/) | ⚠️ Unaudited |
-| Savings | unknown | gnosis | 7 deployments: optimism `0xb23786...e4dc14`; gnosis [`0x6c04c3...ef1024`](./contracts/gnosis-100/0x6c04c39b9e73ac91106d12f828e2e29fd8ef1024/); gnosis `0x8928d0...f5a564`; gnosis `0x9de6ef...432e59`; arbitrum `0xadf566...0eaf7c`; celo `0xb1f2a2...a3eaab`; avalanche `0xdd8670...7e1895` | ⚠️ Unaudited |
 | SavingsNameable | unknown | ethereum | 5 deployments: ethereum [`0x002222...ab5776`](./contracts/ethereum-1/0x0022228a2cc5e7ef0274a7baa600d44da5ab5776/); optimism [`0x002222...ab5776`](./contracts/optimism-10/0x0022228a2cc5e7ef0274a7baa600d44da5ab5776/); gnosis [`0x002222...ab5776`](./contracts/gnosis-100/0x0022228a2cc5e7ef0274a7baa600d44da5ab5776/); arbitrum [`0x002222...ab5776`](./contracts/arbitrum-42161/0x0022228a2cc5e7ef0274a7baa600d44da5ab5776/); celo [`0x002222...ab5776`](./contracts/celo-42220/0x0022228a2cc5e7ef0274a7baa600d44da5ab5776/) | ⚠️ Unaudited |
 | ScoreManager | governance | celo | 3 deployments: celo [`0x1077e8...d5a937`](./contracts/celo-42220/0x1077e8bd92b2fe31f605631390cb7436aed5a937/); celo `0xba8332...1bf3eb`; celo `0xef3b9c...2f603b` | ⚠️ Unaudited |
 | ScoreManagerProxy | governance | celo | [`0x19cdf4...620505`](./contracts/celo-42220/0x19cdf4689d9ee3590fdbe75adefee375b4620505/) | ⚠️ Unaudited |
@@ -331,11 +292,9 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | SDT | unknown | ethereum | 2 deployments: ethereum [`0x73968b...6cdb2f`](./contracts/ethereum-1/0x73968b9a57c6e53d41345fd57a6e6ae27d6cdb2f/); ethereum `0x7d60f2...7ec120` | ⚠️ Unaudited |
 | SdtDistributor | operational_periphery | ethereum | 2 deployments: ethereum [`0x06f66b...a2b5dc`](./contracts/ethereum-1/0x06f66bc79aed1b49a393bf5fcf68a70499a2b5dc/); ethereum `0x216e18...388272` | ⚠️ Unaudited |
 | sdToken | token | ethereum | 3 deployments: ethereum [`0x08bb29...c75130`](./contracts/ethereum-1/0x08bb294267d25c6ab4101b3a3cf7fbde61c75130/); ethereum `0x402f87...68ac36`; ethereum `0x752b4c...00f87c` | ⚠️ Unaudited |
-| SettersGovernor | governance | gnosis | 7 deployments: gnosis [`0x07573b...f83ec1`](./contracts/gnosis-100/0x07573b3e99468d5d058f58ad54bfed449af83ec1/); gnosis `0x0f198a...8b3ff1`; gnosis `0x2fa125...6850a3`; gnosis `0x735ff1...bcae9b`; gnosis `0xa5479b...90df60`; gnosis `0xcf5a29...f78bb6`; gnosis `0xe84264...8ff8eb` | ⚠️ Unaudited |
-| SettersGuardian | governance | gnosis | 7 deployments: gnosis [`0x287859...bdf00a`](./contracts/gnosis-100/0x2878596427bfa6b52fa6d93b519a0c610bbdf00a/); gnosis `0x381a81...ef85a2`; gnosis `0x433652...ae2ad5`; gnosis `0x89c485...4aedb4`; gnosis `0xac6494...a56c17`; gnosis `0xf66411...3839b9`; gnosis `0xfbb53f...0c6dae` | ⚠️ Unaudited |
 | ShortOTokenActionWithSwap | token | ethereum | 4 deployments: ethereum [`0x36e0f6...df3845`](./contracts/ethereum-1/0x36e0f6896ab1e02c0d86d0c10f2928dbd2df3845/); ethereum `0x7f845a...16d344`; ethereum `0xc03504...266f30`; ethereum `0xd41509...105bc4` | ⚠️ Unaudited |
 | SmartWalletChecker | unknown | ethereum | [`0x2d8b5b...4169d3`](./contracts/ethereum-1/0x2d8b5b65c6464651403955ac6d71f9c0204169d3/) | ⚠️ Unaudited |
-| SmartWalletWhitelist | unknown | ethereum | 3 deployments: ethereum [`0x37e838...95f1b5`](./contracts/ethereum-1/0x37e8386602d9ebea2c56dd11d8e142290595f1b5/); gnosis `0x4b813c...c0bf5f`; gnosis `0x9b4c3f...00d37b` | ⚠️ Unaudited |
+| SmartWalletWhitelist | unknown | ethereum | [`0x37e838...95f1b5`](./contracts/ethereum-1/0x37e8386602d9ebea2c56dd11d8e142290595f1b5/) | ⚠️ Unaudited |
 | Sonne | unknown | optimism | [`0x1db246...2245f0`](./contracts/optimism-10/0x1db2466d9f5e10d7090e7152b68d62703a2245f0/) | ⚠️ Unaudited |
 | SonneTimelockController | governance | optimism | 4 deployments: optimism [`0x5b22bd...e163b0`](./contracts/optimism-10/0x5b22bd2fc485afe2deaf1ac9e2fad316dde163b0/); optimism `0x6baa13...e374ea`; optimism `0xd257c9...1763e9`; optimism `0xe2cfad...54e1fb` | ⚠️ Unaudited |
 | SortedOracles | operational_periphery | celo | 3 deployments: celo [`0x35a4f0...6f6ab5`](./contracts/celo-42220/0x35a4f0c8c0b48769f036b79f9d428bea286f6ab5/); celo `0x6ceb70...09d171`; celo `0x93da60...f41f72` | ⚠️ Unaudited |
@@ -345,32 +304,26 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | StableTokenEUR | token | celo | 2 deployments: celo [`0x09933e...240bb3`](./contracts/celo-42220/0x09933e89986fea776c3be3556dbf9ba23c240bb3/); celo `0x665cb5...a60b78` | ⚠️ Unaudited |
 | StableTokenV3 | token | celo | [`0xd8763c...d6ca73`](./contracts/celo-42220/0xd8763cba276a3738e6de85b4b3bf5fded6d6ca73/) | ⚠️ Unaudited |
 | StakedAave | token | ethereum | [`0x9e85cb...b66569`](./contracts/ethereum-1/0x9e85cb1dc092818ceb0498c45cd0f7963db66569/) | ⚠️ Unaudited |
-| StakeDAOLevSwapper2Pool | adapter | arbitrum | [`0xe6239b...cf97f5`](./contracts/arbitrum-42161/0xe6239baf1b79acfff180bf7dd8647ef9b0cf97f5/) | ⚠️ Unaudited |
 | StakeDaoNFT | token | ethereum | [`0xdd4f84...e66bd5`](./contracts/ethereum-1/0xdd4f84e4f3cd31d6c91d80122b5a26cb4ae66bd5/) | ⚠️ Unaudited |
 | StakeDaoNFT_V2 | token | ethereum | [`0xc5f572...5bb6cd`](./contracts/ethereum-1/0xc5f572b705cae1893cdceb5161ce40e2fc5bb6cd/) | ⚠️ Unaudited |
 | StakeDaoNFT_V3 | token | ethereum | 2 deployments: ethereum [`0x5ccbae...1b02da`](./contracts/ethereum-1/0x5ccbae7a340351d5253be99337626c6a341b02da/); ethereum `0x6dd223...e38ea2` | ⚠️ Unaudited |
 | StakeDaoNFTPalace | token | ethereum | [`0x221738...8c751f`](./contracts/ethereum-1/0x221738f73fa4bfca91918e77d112b87d918c751f/) | ⚠️ Unaudited |
 | StakedDistributor | operational_periphery | optimism | 2 deployments: optimism [`0x41279e...171166`](./contracts/optimism-10/0x41279e29586eb20f9a4f65e031af09fced171166/); optimism `0xdc05d8...f12618` | ⚠️ Unaudited |
 | StakeUIHelper | periphery | ethereum | 3 deployments: ethereum [`0x06abcc...76ae68`](./contracts/ethereum-1/0x06abcc3b98b7310f50197f0f9cec6cf6e176ae68/); ethereum `0x76fdb6...42b1e8`; ethereum `0xfbddac...926f19` | ⚠️ Unaudited |
+| Strategy | core_logic | ethereum | 2 deployments: ethereum [`0x2d78b6...9deb2e`](./contracts/ethereum-1/0x2d78b6f5dc8985d90145f27c8f5a3782eb9deb2e/); ethereum `0xb46a42...a8907e` | ⚠️ Unaudited |
 | StrategyAngleStakeDao | core_logic | ethereum | [`0x9eef12...fce257`](./contracts/ethereum-1/0x9eef1244ae7aeedeaa3df2a91b63eaabc4fce257/) | ⚠️ Unaudited |
 | StrategyBunchyDev | core_logic | ethereum | [`0x7d3b52...821911`](./contracts/ethereum-1/0x7d3b52a6ae25545f825bc230f7011fc97e821911/) | ⚠️ Unaudited |
 | StrategyProxy | core_logic | ethereum | 2 deployments: ethereum [`0xe953d9...0f6b33`](./contracts/ethereum-1/0xe953d93838ca7d5ea60090c5edd38db51e0f6b33/); ethereum `0xf34ae3...274f1a` | ⚠️ Unaudited |
 | SwapLibrary | unknown | arbitrum | [`0x9d598b...1c6df4`](./contracts/arbitrum-42161/0x9d598b5735e4466100b1d8af5875be5ead1c6df4/) | ⚠️ Unaudited |
-| Swapper | adapter | arbitrum | 11 deployments: optimism `0x3f125e...3707ab`; gnosis `0x4ce0a4...875feb`; gnosis `0x927ed3...c9ecc6`; gnosis `0xc7f199...93047d`; gnosis `0xd23b51...cfdf85`; gnosis `0xd8f2cd...7ce440`; gnosis `0xdb2fd6...638b46`; gnosis `0xf0a5fc...57e20f`; arbitrum [`0x2904a4...3894f7`](./contracts/arbitrum-42161/0x2904a4d96f88ad4bd548507ba139e892083894f7/); avalanche `0x5e6955...eb63c1`; avalanche `0x656b80...610253` | ⚠️ Unaudited |
-| SwapperSidechain | adapter | arbitrum | 2 deployments: optimism `0xa014a4...97a549`; arbitrum [`0x9c2152...a36dad`](./contracts/arbitrum-42161/0x9c215206da4bf108ae5aeef9da7cad3352a36dad/) | ⚠️ Unaudited |
 | Timelock | governance | ethereum | 4 deployments: ethereum [`0xa4d46e...3f2627`](./contracts/ethereum-1/0xa4d46e86fc0c7d3e46bee208d1b49b21d53f2627/); ethereum `0xd3cfc4...411616`; ethereum `0xd6dabb...dc2556`; ethereum `0xda86e1...575a44` | ⚠️ Unaudited |
-| TimelockController | governance | optimism | 5 deployments: optimism [`0x37ff10...0d60b6`](./contracts/optimism-10/0x37ff10390f22fabdc2137e428a6e6965960d60b6/); optimism `0xce3c96...59f0c6`; optimism `0xec4b28...838f84`; optimism `0xf6cba3...9f9f3c`; gnosis `0xf92934...524b28` | ⚠️ Unaudited |
+| TimelockController | governance | optimism | 4 deployments: optimism [`0x37ff10...0d60b6`](./contracts/optimism-10/0x37ff10390f22fabdc2137e428a6e6965960d60b6/); optimism `0xce3c96...59f0c6`; optimism `0xec4b28...838f84`; optimism `0xf6cba3...9f9f3c` | ⚠️ Unaudited |
 | TokenPolygonUpgradeable | token | polygon | 2 deployments: polygon [`0x7660b2...3caa24`](./contracts/polygon-137/0x7660b2b53f6e9ecebebfade61fdeb1f3703caa24/); polygon `0x900f71...60ebf1` | ⚠️ Unaudited |
-| TokenSideChainMultiBridge | operational_periphery | arbitrum | 6 deployments: optimism `0x42dc54...4830ea`; optimism `0x58441e...8ff665`; arbitrum [`0x03c2d2...19f4b3`](./contracts/arbitrum-42161/0x03c2d2014795ee8ca78b62738433b457ab19f4b3/); arbitrum `0x656b80...610253`; avalanche `0x5ee94c...4d9217`; avalanche `0xbdbdf1...96f49f` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | ethereum | 20 deployments: ethereum [`0x0962fb...42e6b6`](./contracts/ethereum-1/0x0962fb33a7e0172d0e413b0fab003bee5142e6b6/); ethereum `0x0cdcbe...63a8d6`; ethereum `0x209d0d...fd4eb8`; ethereum `0x39c70a...e23647`; ethereum `0x3f6686...bc30a2`; ethereum `0x425a82...682817`; ethereum `0x42c21c...28f2d3`; ethereum `0x53b981...985f44`; ethereum `0x675a13...a3f8c2`; ethereum `0x6b4ee7...25af48`; ethereum `0xa8c7b9...b9649c`; ethereum `0xc9daab...7a5915`; ethereum `0xe9f183...9ad8ed`; optimism `0x93d9e5...3b7469`; optimism `0xc5ba10...2654cd`; arbitrum `0x513f80...a3e2a4`; arbitrum `0xabe9a9...ce3b1d`; arbitrum `0xfc2b25...49cca1`; avalanche `0xaec831...f96c57`; avalanche `0xf530b8...1cec86` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | ethereum | 19 deployments: ethereum [`0x0962fb...42e6b6`](./contracts/ethereum-1/0x0962fb33a7e0172d0e413b0fab003bee5142e6b6/); ethereum `0x0cdcbe...63a8d6`; ethereum `0x209d0d...fd4eb8`; ethereum `0x39c70a...e23647`; ethereum `0x3f6686...bc30a2`; ethereum `0x425a82...682817`; ethereum `0x42c21c...28f2d3`; ethereum `0x53b981...985f44`; ethereum `0x675a13...a3f8c2`; ethereum `0x6b4ee7...25af48`; ethereum `0xa8c7b9...b9649c`; ethereum `0xc9daab...7a5915`; ethereum `0xe9f183...9ad8ed`; optimism `0x93d9e5...3b7469`; optimism `0xc5ba10...2654cd`; arbitrum `0x513f80...a3e2a4`; arbitrum `0xabe9a9...ce3b1d`; arbitrum `0xfc2b25...49cca1`; avalanche `0xaec831...f96c57` | ⚠️ Unaudited |
 | TreasuryVault | operational_periphery | ethereum | 2 deployments: ethereum [`0x22d0b6...d094ca`](./contracts/ethereum-1/0x22d0b68a88bcff9a0d9f08fff03dd969eed094ca/); ethereum `0x9d75c8...9b909c` | ⚠️ Unaudited |
 | TreasuryZap | operational_periphery | ethereum | 2 deployments: ethereum [`0x0665ef...993ad4`](./contracts/ethereum-1/0x0665ef3556520b21368754fb644ed3ebf1993ad4/); ethereum `0x1ee1a4...4febfc` | ⚠️ Unaudited |
 | Unitroller | unknown | optimism | [`0x7d6969...8d6778`](./contracts/optimism-10/0x7d69692389cda1ed99fd04d3081d7ac9368d6778/) | ⚠️ Unaudited |
 | Validators | unknown | celo | 4 deployments: celo [`0x2e3b47...e7c68d`](./contracts/celo-42220/0x2e3b47cf3163de47e852ff11d53a9ad8dfe7c68d/); celo `0x4b84c7...b71428`; celo `0xa47961...c8dc95`; celo `0xbc8ca2...b88d1a` | ⚠️ Unaudited |
-| VaultManager | core_logic | arbitrum | 2 deployments: optimism `0x97b689...1f227f`; arbitrum [`0x1033dd...68ac6d`](./contracts/arbitrum-42161/0x1033dd8415a282db52f14902e91de6e91868ac6d/) | ⚠️ Unaudited |
-| VaultManagerListing | core_logic | arbitrum | 3 deployments: arbitrum [`0x7f2708...b9d43c`](./contracts/arbitrum-42161/0x7f27082eabdddc9dc3cc6632c9f594d210b9d43c/); arbitrum `0x8928d0...f5a564`; arbitrum `0xe682aa...1b0297` | ⚠️ Unaudited |
 | Ve | unknown | arbitrum | [`0x29d362...e293e4`](./contracts/arbitrum-42161/0x29d3622c78615a1e7459e4be434d816b7de293e4/) | ⚠️ Unaudited |
-| VeANGLEVotingDelegation | unknown | gnosis | [`0xd622c7...2bf23b`](./contracts/gnosis-100/0xd622c71aba9060f393fec67d3e2b9335292bf23b/) | ⚠️ Unaudited |
 | VeArtProxy | unknown | optimism | [`0x5f2f67...dcfa1d`](./contracts/optimism-10/0x5f2f6721ca0c5ac522bc875fa3f09bf693dcfa1d/) | ⚠️ Unaudited |
 | VeDist | unknown | arbitrum | [`0xbfa51d...539b86`](./contracts/arbitrum-42161/0xbfa51d9635fa9be5117093efeff06d388d539b86/) | ⚠️ Unaudited |
 | Velo | token | optimism | [`0x3c8b65...a11a05`](./contracts/optimism-10/0x3c8b650257cfb5f272f799f5e2b4e65093a11a05/) | ⚠️ Unaudited |
@@ -384,7 +337,6 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | Voting Escrow v2.0.0 | operational_periphery | ethereum | [`0x0c3047...6c9e8a`](./contracts/ethereum-1/0x0c30476f66034e11782938df8e4384970b6c9e8a/) | ⚠️ Unaudited |
 | VotingEscrow | operational_periphery | optimism | [`0x9c7305...9a2e26`](./contracts/optimism-10/0x9c7305eb78a432ced5c4d14cac27e8ed569a2e26/) | ⚠️ Unaudited |
 | Vyper_contract | unknown | ethereum | 86 deployments: ethereum [`0x008cfa...7ac315`](./contracts/ethereum-1/0x008cfa89df5b0c780ca3462fc2602d7f8c7ac315/); ethereum `0x017db2...1e1d39`; ethereum `0x051d7e...a74301`; ethereum `0x08780f...aa95da`; ethereum `0x0acca1...cefd76`; ethereum `0x0c3310...9c4320`; ethereum `0x1005f7...13d546`; ethereum `0x193aa4...06cff8`; ethereum `0x1aaea3...a663db`; ethereum `0x1cd24f...769995`; ethereum `0x201798...7ea04c`; ethereum `0x21042b...45266b`; ethereum `0x2717c6...a9754d`; ethereum `0x28bf9d...a31e6b`; ethereum `0x2932a8...3423f5`; ethereum `0x29f3dd...3e5d92`; ethereum `0x2e158e...9463ba`; ethereum `0x2eb244...73032d`; ethereum `0x2ed5c3...f5b82a`; ethereum `0x30849b...ac91ac`; ethereum `0x3175df...3473cc`; ethereum `0x33bb0e...250067`; ethereum `0x348831...4d9181`; ethereum `0x373f19...2f694c`; ethereum `0x3ce751...8696e4`; ethereum `0x40845c...3815c5`; ethereum `0x42027f...5f2390`; ethereum `0x4329c8...7934f9`; ethereum `0x4dcb55...4718c4`; ethereum `0x4e0915...f22273`; ethereum `0x501611...d160aa`; ethereum `0x5519d8...552c0d`; ethereum `0x552dad...357851`; ethereum `0x57d59d...9754f3`; ethereum `0x5a8fdc...77c8a1`; ethereum `0x5d7f95...182827`; ethereum `0x5db3a1...c3d5d8`; ethereum `0x5f75a0...b7879a`; ethereum `0x63f222...428ce7`; ethereum `0x668d88...9131be`; ethereum `0x696b5d...72a53d`; ethereum `0x6c3f90...e6e490`; ethereum `0x6d7871...6e5af3`; ethereum `0x742c3c...de9571`; ethereum `0x75f8f7...fce882`; ethereum `0x7f5078...4e3466`; ethereum `0x81c46f...cd3dd7`; ethereum `0x8f1959...30c1b2`; ethereum `0x8fb539...d8abf4`; ethereum `0x93c951...2f4c17`; ethereum `0x94b4df...c5d45b`; ethereum `0x99851d...9edef5`; ethereum `0x99a584...b5788f`; ethereum `0x9ac7dd...114575`; ethereum `0x9e7f8d...b0036c`; ethereum `0x9f330d...2109d8`; ethereum `0x9f99fd...2eb8c9`; ethereum `0xa1f8a6...24e577`; ethereum `0xa2d40e...ba628e`; ethereum `0xaa1ba3...b30d9e`; ethereum `0xabc533...0a252f`; ethereum `0xb71cb9...15defe`; ethereum `0xb97133...4e2331`; ethereum `0xba3436...d5cc73`; ethereum `0xc629a0...701497`; ethereum `0xc78fa2...8cf247`; ethereum `0xc7f5d0...1c3cbc`; ethereum `0xcb6158...d3e067`; ethereum `0xced78d...b3bf27`; ethereum `0xceda55...94b2bb`; ethereum `0xcfc251...a59503`; ethereum `0xd00fdb...096371`; ethereum `0xd05ad7...30d564`; ethereum `0xd09216...9d3778`; ethereum `0xd67bdb...173506`; ethereum `0xdcef96...4241a2`; ethereum `0xe0dff1...67403f`; ethereum `0xe55843...3f35d5`; ethereum `0xecebb5...e28825`; ethereum `0xed8ffe...abd5e6`; ethereum `0xf253f8...55a07f`; ethereum `0xf3c6e8...d63106`; ethereum `0xf3d4f5...1950d9`; ethereum `0xf43211...366c7a`; ethereum `0xfa1cdc...5c9014`; ethereum `0xfa2685...9c4b61` | ⚠️ Unaudited |
-| VyperDeployer | unknown | gnosis | 2 deployments: gnosis [`0x39ce9c...09393f`](./contracts/gnosis-100/0x39ce9cdad28d08d32fd94284070a8b0c8309393f/); gnosis `0x4e4c68...2cba18` | ⚠️ Unaudited |
 | WrappedExternalBribeFactory | operational_periphery | optimism | [`0x795551...3086a8`](./contracts/optimism-10/0x7955519e14fdf498e28831f4cc06af4b8e3086a8/) | ⚠️ Unaudited |
 | xTokenWrapper | token | ethereum | 2 deployments: ethereum [`0x829c3d...da5e44`](./contracts/ethereum-1/0x829c3d9b01eb54a6acfffb06183b1fd489da5e44/); ethereum `0xb4d4fd...4a61f5` | ⚠️ Unaudited |
 | XYZ Broadcaster | unknown | ethereum | 2 deployments: ethereum [`0x578669...ff8d89`](./contracts/ethereum-1/0x5786696bb5be7fcdb9997e7f89355d9e97ff8d89/); ethereum `0xc03544...f56fe5` | ⚠️ Unaudited |
@@ -395,20 +347,16 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ⚠️ Verified by Bytecode + Unaudited (6)
+### ⚠️ Verified by Bytecode + Unaudited (2)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | AgTokenNameable | token | ethereum | 2 deployments: ethereum [`0x000020...c63274`](./contracts/ethereum-1/0x0000206329b97db379d5e1bf586bbdb969c63274/); avalanche [`0x000020...c63274`](./contracts/avalanche-43114/0x0000206329b97db379d5e1bf586bbdb969c63274/) | ⚠️ Unaudited (bytecode match) |
-| AgTokenSideChainMultiBridge | operational_periphery | arbitrum | 12 deployments: optimism `0x7ab641...142ddb`; optimism `0x9c2152...a36dad`; optimism `0xd278d8...ba1d4e`; gnosis `0x59153e...55373b`; gnosis `0xc63aaf...6fb629`; arbitrum [`0x12f31b...fe5f89`](./contracts/arbitrum-42161/0x12f31b73d812c6bb0d735a218c086d44d5fe5f89/); arbitrum `0x1a7e4e...fcbce8`; arbitrum `0x862f59...bdc763`; celo `0x4b1e2c...d35984`; celo `0x656b80...610253`; avalanche `0x287859...bdf00a`; avalanche `0x97b689...1f227f` | ⚠️ Unaudited (bytecode match) |
 | MultiSig | unknown | celo | 10 deployments: celo [`0x066f67...bd25f2`](./contracts/celo-42220/0x066f672c03347a24ee3f52d1f184f04f7abd25f2/); celo `0x120c00...49e892`; celo `0x65534a...043372`; celo `0x68e231...ee3903`; celo `0x72306f...72c33d`; celo `0xad52b8...14e7fc`; celo `0xb7feac...ff582a`; celo `0xbcb789...c3a567`; celo `0xc99d54...dd411e`; celo `0xed68f8...84aaf7` | ⚠️ Unaudited (bytecode match) |
-| ProposalReceiver | unknown | avalanche | 5 deployments: optimism `0xd67881...bab514`; gnosis `0x4d9a15...836cfc`; arbitrum `0xcda39b...ca8df4`; celo `0x456f47...dabd6b`; avalanche [`0x0750b6...997d81`](./contracts/avalanche-43114/0x0750b6fdada48057dbc7103e1e9286f00f997d81/) | ⚠️ Unaudited (bytecode match) |
-| TimelockControllerWithCounter | governance | gnosis | 13 deployments: optimism `0x343902...5e8227`; gnosis [`0x0f2b51...9d2fef`](./contracts/gnosis-100/0x0f2b510bfb0b83fc692b5601ef7a800d1d9d2fef/); gnosis `0x20b63c...d8fb36`; gnosis `0x64b478...096a1f`; gnosis `0x769a71...c35f39`; gnosis `0x7b979b...733525`; gnosis `0x80d1cd...30381b`; gnosis `0x85a619...5c6cf8`; gnosis `0xb2ea59...1848ef`; gnosis `0xd2a211...e24396`; arbitrum `0x169487...37a373`; celo `0x9b3c71...101dc6`; avalanche `0x7f2708...b9d43c` | ⚠️ Unaudited (bytecode match) |
-| Treasury | operational_periphery | celo | 17 deployments: optimism `0x1033dd...68ac6d`; optimism `0x770f7c...252fe0`; optimism `0xe9f183...9ad8ed`; gnosis `0x3e9ea7...0a1db0`; gnosis `0x5addc8...086a87`; gnosis `0xc16b81...1e3049`; arbitrum `0x0d7105...eccf52`; arbitrum `0x79e4df...38113e`; arbitrum `0xf1ddca...efe123`; celo [`0x029f04...d407a8`](./contracts/celo-42220/0x029f049c59a6b56610a34ba01d0d28e26ed407a8/); celo `0x5addc8...086a87`; celo `0xa61beb...1125b4`; avalanche `0x16cd38...43d5aa`; avalanche `0xa014a4...97a549`; avalanche `0xc492fb...c90e4c`; avalanche `0xde7255...058e92`; avalanche `0xe84264...8ff8eb` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (287)
+### ❓ Unverified (261)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -567,51 +515,26 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | optimism | `0x30f433...ee2f0b` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0x3dc9fa...54f3bb` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0x3fb2ef...5bb103` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x41a65a...72758e` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0x4c988e...5ef341` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0x5479de...c49582` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x5c8e22...baf2d9` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x615d8b...2cb09b` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0x656ae2...eeec6a` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x68d483...d5deb7` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0x6a7f68...e65efc` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0x6ee388...4c5634` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0x9131de...370f41` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0xb74007...8c8a20` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0xbe4db5...da2d67` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0xc0a2b7...0e021c` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xc1626d...632751` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xc7faa0...e2418c` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0xcfdae1...8fb023` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0xd50c9e...e041c1` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0xedb12d...de0299` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0xfa2ecf...5a6dff` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0x152773...c9c61c` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0x1e6aa5...b10f1e` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0x3076f7...3e298f` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0x4e6651...194748` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0x6828a5...0ddef8` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0x81ac0f...f2836d` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0x882dd0...b3af4a` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0x8a7a49...21adb7` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0x9c98a5...6a752b` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0xc3963e...b94e8e` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0xc8c22f...6dd6fe` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0xce3fd1...4c91e1` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0xf868da...a7bae3` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0xfc48e3...790ab1` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0xfd0a40...c7f4aa` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0xfd89b0...25f680` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0xfe0e49...3abb18` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x5a4ab9...b71e2f` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x69a942...62ac67` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xaeb763...4ddf47` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x101dc0...721b8c` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x4cddfb...a4bb46` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xa61beb...1125b4` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0xacd0c2...7851ae` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0xaf2dab...efd6e7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0xe0688a...10d691` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0x017fa8...763148` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0x031961...c0c5ff` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0x033392...4d7d5e` | ❓ Unverified |
@@ -700,14 +623,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | celo | `0xf8dc3b...0d9374` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0xf9cc29...dcffdf` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0xfabf6a...8464c5` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0xfc48e3...790ab1` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Chainsecurity Audit Report December 21.pdf](https://github.com/AngleProtocol/angle-core/blob/main/audits/Chainsecurity%20Audit%20Report%20December%2021.pdf) | yAudit | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
-| [Chainsecurity Audit Report July 21.pdf](https://github.com/AngleProtocol/angle-core/blob/main/audits/Chainsecurity%20Audit%20Report%20July%2021.pdf) | yAudit | Audit | 2021-10 | stale | Direct | contract_name | 16 | high |
 | [Sigma Prime Audit Report July 21.pdf](https://github.com/AngleProtocol/angle-core/blob/main/audits/Sigma%20Prime%20Audit%20Report%20July%2021.pdf) | Sigma Prime | Audit | 2021-09 | stale | Direct | contract_name | 14 | high |
 
 ## Coverage Gaps
@@ -721,19 +641,14 @@ Verified + unaudited native implementations ranked by TVL:
 | celo | [`0xe8537a...ab4787`](./contracts/celo-42220/0xe8537a3d056da446677b9e9d6c5db704eaab4787/) | StableTokenV2 | token | $222,346.39 | Verified native implementation with $222,346.39 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xcf96f4...1fe66d`](./contracts/ethereum-1/0xcf96f4b91c6d424fb34aa9a33855b5c8ed1fe66d/) | TrancheWrapper | core_logic | $9,936.22 | Verified native implementation with $9,936.22 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0d81b0...2685ce`](./contracts/ethereum-1/0x0d81b042bb9939b4d32cdf7861774c442a2685ce/) | yxToken | token | $1,635.34 | Verified native implementation with $1,635.34 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xc0077e...e82a05`](./contracts/arbitrum-42161/0xc0077e921c30c39cdd8b693e25af572c10e82a05/) | ERC4626Strategy | core_logic | $23.03 | Verified native implementation with $23.03 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x051ba9...9b0933`](./contracts/ethereum-1/0x051ba97b84a921f4134376af2c7e3a38229b0933/) | IdleRibbonPSMStrategy | core_logic | $8.13 | Verified native implementation with $8.13 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x939c9c...712801`](./contracts/celo-42220/0x939c9cefbce3aa3a212d424b5ba978ac1b712801/) | AddressLinkedList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1a7e4e...fcbce8`](./contracts/ethereum-1/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8/) | AgEURNameable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x12f31b...fe5f89`](./contracts/arbitrum-42161/0x12f31b73d812c6bb0d735a218c086d44d5fe5f89/) | AgTokenSideChainMultiBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x000020...c63274`](./contracts/optimism-10/0x0000206329b97db379d5e1bf586bbdb969c63274/) | AgTokenSideChainMultiBridgeNameable | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9dddf9...d1c888`](./contracts/ethereum-1/0x9dddf9c8a7447993bcfef18f6b5421f28bd1c888/) | AngleAccumulator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x943671...c6aa51`](./contracts/ethereum-1/0x943671e6c3a98e28abdbc60a7ac703b3c0c6aa51/) | AngleAccumulatorV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd13f8c...4dcaf5`](./contracts/ethereum-1/0xd13f8c25cced32cdfa79eb5ed654ce3e484dcaf5/) | AngleLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x588c06...ba226b`](./contracts/polygon-137/0x588c06d6b15cb6d6f3428fa589a8fff1b6ba226b/) | AngleNFT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x3ee021...83f78d`](./contracts/arbitrum-42161/0x3ee021f6f91911b8a2af6047889c54cc4983f78d/) | AngleRouterArbitrum | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x62cba6...ff5f73`](./contracts/avalanche-43114/0x62cba6dcdae5992d44cd9bd8989d27718eff5f73/) | AngleRouterAvalanche | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x0d7105...eccf52`](./contracts/optimism-10/0x0d710512e100c171139d2cf5708f22c680eccf52/) | AngleRouterOptimism | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5ac493...5574aa`](./contracts/ethereum-1/0x5ac493b8c2cef1f02f117b9ba2797e7da95574aa/) | AssetVotingWeightProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x2496fd...8e9a3d`](./contracts/celo-42220/0x2496fda4b928e8cf799ac04ea79861ac828e9a3d/) | AttestationsProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x22ba8e...12baa0`](./contracts/ethereum-1/0x22ba8eeac5bddf7b5a298d2169a24c6f9e12baa0/) | BadgerHunt | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -744,16 +659,11 @@ Verified + unaudited native implementations ranked by TVL:
 | celo | [`0x0148a2...0ec9d7`](./contracts/celo-42220/0x0148a25d13cbd39d2ff5749369356cbde20ec9d7/) | CeloUnreleasedTreasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x2efd9e...e86c03`](./contracts/celo-42220/0x2efd9e29cfbfaf32713fbe53fd9033217ee86c03/) | CeloUnreleasedTreasuryProxy | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x633120...b1be0f`](./contracts/ethereum-1/0x633120100e108f03ace79d6c78aac9a56db1be0f/) | ClaimRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc00e94...f26888`](./contracts/ethereum-1/0xc00e94cb662c3520282e6f5717214004a7f26888/) | Comp | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x3d943c...8cb8a8`](./contracts/optimism-10/0x3d943ced08b53546254bc751a6931401328cb8a8/) | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x23c717...6ac713`](./contracts/arbitrum-42161/0x23c7170fd3fec8ef421eba8f69b8e72dd86ac713/) | Controller | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf08fa0...7d4e7d`](./contracts/ethereum-1/0xf08fa0aea90f9904f0c4853a3225408b5a7d4e7d/) | Cross-Chain Gauge Mass Killer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xbd4dc0...f56da1`](./contracts/ethereum-1/0xbd4dc0bd2786f176d39cc1b24de540e6b2f56da1/) | DarkParadise | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x070df1...eef1ca`](./contracts/ethereum-1/0x070df1b96059f5dc34fcb140ffdc8c41d6eef1ca/) | Depositor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0xa013ee...5cc208`](./contracts/gnosis-100/0xa013ee06ddc7073c1b6e84601ddffa237f5cc208/) | DiamondLoupe | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x02c477...9b67a8`](./contracts/gnosis-100/0x02c4771ed8d48d0d01a16303bbe2e9f4369b67a8/) | DiamondProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0b3bf9...9266f8`](./contracts/arbitrum-42161/0x0b3bf915eb02ceee25d2416b9721688dba9266f8/) | DistributionCreator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x52b88b...1a8253`](./contracts/optimism-10/0x52b88b300a8dd0808e53203eb499cfca051a8253/) | Distributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x71cac3...463fdd`](./contracts/celo-42220/0x71cac3b31c138f3327c6ca14f9a1c8d752463fdd/) | DowntimeSlasher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0d4bb5...6d022a`](./contracts/ethereum-1/0x0d4bb5613cc2187b95958e18b7c13fe1a76d022a/) | Dummy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x002535...4cefab`](./contracts/ethereum-1/0x00253582b2a3fe112feec532221d9708c64cefab/) | DummyDiamondImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -766,13 +676,11 @@ Verified + unaudited native implementations ranked by TVL:
 | celo | [`0x0d4a42...a2d112`](./contracts/celo-42220/0x0d4a42b2fc30afbf6b6e8f5ce49a659e38a2d112/) | ExchangeBRL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x32c2dc...b5dc8d`](./contracts/celo-42220/0x32c2dcb7730ed6fc1eac0444a668f38fd7b5dc8d/) | ExchangeEUR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x2b1d11...ae2597`](./contracts/optimism-10/0x2b1d11f82fc70e2693ab19c4c3da23da75ae2597/) | ExternalRewardDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x029f04...d407a8`](./contracts/gnosis-100/0x029f049c59a6b56610a34ba01d0d28e26ed407a8/) | FakeGnosis | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x0ad5b1...d6aff2`](./contracts/celo-42220/0x0ad5b1d0c25ecf6266dd951403723b2687d6aff2/) | FederatedAttestations | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x15f344...2c6276`](./contracts/celo-42220/0x15f344b9e6c3cb6f0376a36a64928b13f62c6276/) | FeeCurrencyDirectory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x60f636...d210fa`](./contracts/celo-42220/0x60f6362550868fd1d6e92b2f680f5e02f4d210fa/) | FeeCurrencyDirectoryProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5e007b...5e4753`](./contracts/ethereum-1/0x5e007bc170861e27952ca4118d7af3e8aa5e4753/) | FiatTokenV2_1 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1abaea...1bc33c`](./contracts/ethereum-1/0x1abaea1f7c830bd89acc67ec4af516284b1bc33c/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x04437e...5173b9`](./contracts/avalanche-43114/0x04437e94af860afbb0429a7d36b9c00a5a5173b9/) | FlashAngle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x5b8978...f81e5f`](./contracts/optimism-10/0x5b89789fb230d17c4b0ae1461f26828554f81e5f/) | Fundraising | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1cc16b...c59fb2`](./contracts/ethereum-1/0x1cc16bedaacd15848bca5eb80188e0931bc59fb2/) | FxsAccumulator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x330b0a...1a5094`](./contracts/arbitrum-42161/0x330b0aac13e389313e48f9b70e4d1531c71a5094/) | GaugeFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -830,9 +738,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xbeb3e5...3c3a5c`](./contracts/ethereum-1/0xbeb3e5cd895c1b7e95d5cd39b1ac1efb6c3c3a5c/) | MerkleDistributor3CRV | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2de8e9...0d4f5f`](./contracts/ethereum-1/0x2de8e91b6fdb5f6575cafb0827aca9fa1d0d4f5f/) | MerkleDistributorSdt | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x3460dc...a4102d`](./contracts/optimism-10/0x3460dc71a8863710d1c907b8d9d5dbc053a4102d/) | Minter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0xd08667...cb75df`](./contracts/gnosis-100/0xd08667fc2f323b7d64096e8ad79ff49e96cb75df/) | MockANGLE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x05214c...41f00a`](./contracts/gnosis-100/0x05214c5e95e756e4de26e12611495e260241f00a/) | MockTokenPermit | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x03c2d2...19f4b3`](./contracts/avalanche-43114/0x03c2d2014795ee8ca78b62738433b457ab19f4b3/) | MultiCallWithFailure | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x79b738...a0e05f`](./contracts/ethereum-1/0x79b738e404208e9607c3b4d4b3800ed0d4a0e05f/) | NewStrategyAngleStakeDao | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa324a2...68bdd9`](./contracts/ethereum-1/0xa324a2e3a6f64bd588565e0e1e2dd50e7a68bdd9/) | NFTBoosterVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x9ea5e9...14bf78`](./contracts/celo-42220/0x9ea5e9b9b48a72325d59b3eba147f42b1b14bf78/) | OdisPayments | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -841,12 +746,8 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x972a64...5ef181`](./contracts/ethereum-1/0x972a64d108e250df98dbeac8170678501f5ef181/) | PriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x22c7e5...1c0fea`](./contracts/optimism-10/0x22c7e5ce392bc951f63b68a8020b121a8e1c0fea/) | PriceOracleV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x886b10...c201f1`](./contracts/ethereum-1/0x886b102953ab3eaf719df7b80b03cd5203c201f1/) | PriceOracleV3 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x0750b6...997d81`](./contracts/avalanche-43114/0x0750b6fdada48057dbc7103e1e9286f00f997d81/) | ProposalReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x38afc0...ebfba8`](./contracts/celo-42220/0x38afc0dc55415ae27b81c24b5a5fbfe433ebfba8/) | Proposals | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x00e0f3...905958`](./contracts/gnosis-100/0x00e0f3d12a38b6284c02ccf9efbfaf4f61905958/) | ProposalSender | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x38dd9f...181c9f`](./contracts/celo-42220/0x38dd9fa2409758fa0d73440ee18f8e0249181c9f/) | Proxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x221a13...e3bdab`](./contracts/celo-42220/0x221a13e96d5c0cecb17ffd8a4a458c47ece3bdab/) | Random | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x6f5e42...7b8c6f`](./contracts/gnosis-100/0x6f5e42be8d24255a376fffa8a3fffae8a77b8c6f/) | Redeemer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x846e82...25a951`](./contracts/optimism-10/0x846e822e9a00669dcc647079d7d625d2cd25a951/) | RedemptionReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x907f37...726aa0`](./contracts/celo-42220/0x907f37a0e9b003df15500c025f7acb496a726aa0/) | Reserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0xb112e4...bfb110`](./contracts/optimism-10/0xb112e4cc83f0df154fe3fb088109be2ac5bfb110/) | ReserveManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -862,25 +763,20 @@ Verified + unaudited native implementations ranked by TVL:
 | optimism | [`0x5b22bd...e163b0`](./contracts/optimism-10/0x5b22bd2fc485afe2deaf1ac9e2fad316dde163b0/) | SonneTimelockController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5addc8...086a87`](./contracts/ethereum-1/0x5addc89785d75c86ab939e9e15bfbbb7fc086a87/) | StableMasterFront | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0xd8763c...d6ca73`](./contracts/celo-42220/0xd8763cba276a3738e6de85b4b3bf5fded6d6ca73/) | StableTokenV3 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xe6239b...cf97f5`](./contracts/arbitrum-42161/0xe6239baf1b79acfff180bf7dd8647ef9b0cf97f5/) | StakeDAOLevSwapper2Pool | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x41279e...171166`](./contracts/optimism-10/0x41279e29586eb20f9a4f65e031af09fced171166/) | StakedDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x06abcc...76ae68`](./contracts/ethereum-1/0x06abcc3b98b7310f50197f0f9cec6cf6e176ae68/) | StakeUIHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2d78b6...9deb2e`](./contracts/ethereum-1/0x2d78b6f5dc8985d90145f27c8f5a3782eb9deb2e/) | Strategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9eef12...fce257`](./contracts/ethereum-1/0x9eef1244ae7aeedeaa3df2a91b63eaabc4fce257/) | StrategyAngleStakeDao | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7d3b52...821911`](./contracts/ethereum-1/0x7d3b52a6ae25545f825bc230f7011fc97e821911/) | StrategyBunchyDev | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xe953d9...0f6b33`](./contracts/ethereum-1/0xe953d93838ca7d5ea60090c5edd38db51e0f6b33/) | StrategyProxy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x9d598b...1c6df4`](./contracts/arbitrum-42161/0x9d598b5735e4466100b1d8af5875be5ead1c6df4/) | SwapLibrary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x2904a4...3894f7`](./contracts/arbitrum-42161/0x2904a4d96f88ad4bd548507ba139e892083894f7/) | Swapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x9c2152...a36dad`](./contracts/arbitrum-42161/0x9c215206da4bf108ae5aeef9da7cad3352a36dad/) | SwapperSidechain | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa4d46e...3f2627`](./contracts/ethereum-1/0xa4d46e86fc0c7d3e46bee208d1b49b21d53f2627/) | Timelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x7660b2...3caa24`](./contracts/polygon-137/0x7660b2b53f6e9ecebebfade61fdeb1f3703caa24/) | TokenPolygonUpgradeable | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x03c2d2...19f4b3`](./contracts/arbitrum-42161/0x03c2d2014795ee8ca78b62738433b457ab19f4b3/) | TokenSideChainMultiBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x22d0b6...d094ca`](./contracts/ethereum-1/0x22d0b68a88bcff9a0d9f08fff03dd969eed094ca/) | TreasuryVault | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0665ef...993ad4`](./contracts/ethereum-1/0x0665ef3556520b21368754fb644ed3ebf1993ad4/) | TreasuryZap | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x7d6969...8d6778`](./contracts/optimism-10/0x7d69692389cda1ed99fd04d3081d7ac9368d6778/) | Unitroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x2e3b47...e7c68d`](./contracts/celo-42220/0x2e3b47cf3163de47e852ff11d53a9ad8dfe7c68d/) | Validators | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x1033dd...68ac6d`](./contracts/arbitrum-42161/0x1033dd8415a282db52f14902e91de6e91868ac6d/) | VaultManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x29d362...e293e4`](./contracts/arbitrum-42161/0x29d3622c78615a1e7459e4be434d816b7de293e4/) | Ve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0xd622c7...2bf23b`](./contracts/gnosis-100/0xd622c71aba9060f393fec67d3e2b9335292bf23b/) | VeANGLEVotingDelegation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x5f2f67...dcfa1d`](./contracts/optimism-10/0x5f2f6721ca0c5ac522bc875fa3f09bf693dcfa1d/) | VeArtProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xbfa51d...539b86`](./contracts/arbitrum-42161/0xbfa51d9635fa9be5117093efeff06d388d539b86/) | VeDist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xf699ed...8ff064`](./contracts/arbitrum-42161/0xf699eddeac1541e7202c14f6c4d656eee88ff064/) | VeLogo | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -894,22 +790,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 294 |
-| upstream | 58 |
-| standard_library | 58 |
-| needs_review | 214 |
+| native | 259 |
+| upstream | 57 |
+| standard_library | 51 |
+| needs_review | 180 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=30
-
-Zero-match audit list:
-
-- [3680] Chainsecurity Audit Report December 21.pdf
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=14
 
 Fork inheritance lineage and inherited audits are included when available.

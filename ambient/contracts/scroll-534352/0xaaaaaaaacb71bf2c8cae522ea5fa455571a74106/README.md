@@ -4,7 +4,7 @@
 |---|---|
 | Chain | scroll (534352) |
 | Address | `0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106` |
-| Role | unknown |
+| Role | proxy |
 | Origin | native |
 | Audited | Yes |
 | Audits | [QuantstampV1.pdf](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/audits/QuantstampV1.pdf); [QuantstampV2.pdf](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/audits/QuantstampV2.pdf) |

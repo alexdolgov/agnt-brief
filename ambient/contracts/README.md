@@ -17,7 +17,13 @@
 | [GnosisSafeL2](./blast-81457/0xc73c8c60ea7d7f4338f9a8542927f4f1471e36ed/) | blast | [`0xc73c8c...1e36ed`](./blast-81457/0xc73c8c60ea7d7f4338f9a8542927f4f1471e36ed/) | ⚠️ Unaudited | Verified |
 | [TimelockAccepts (4 deployments)](./blast-81457/0x19d005f3d4a9c5b0211457339dda9822dc2dee94/) | blast | 4 deployments: ethereum `0x41114a...38cb7b`; ethereum `0x7237c1...4962b7`; blast [`0x19d005...2dee94`](./blast-81457/0x19d005f3d4a9c5b0211457339dda9822dc2dee94/); blast `0x786fbc...71eb8f` | ⚠️ Unaudited | Verified |
 
-## unknown (25)
+## proxy (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [CrocSwapDex](./scroll-534352/0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106/) | scroll | [`0xaaaaaa...a74106`](./scroll-534352/0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106/) | ✅ Audited | Verified |
+
+## unknown (24)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -26,7 +32,6 @@
 | [CrocImpact (2 deployments)](./ethereum-1/0x3e3edd3ed7621891e574e5d7f47b1f30a994c0d0/) | ethereum | 2 deployments: ethereum [`0x3e3edd...94c0d0`](./ethereum-1/0x3e3edd3ed7621891e574e5d7f47b1f30a994c0d0/); blast `0x6a699a...5efdb9` | ✅ Audited | Verified |
 | [CrocPolicy (3 deployments)](./ethereum-1/0x0b6cd0ecb176cb39ad99b3a0e4294167a80b68a3/) | ethereum | 3 deployments: ethereum [`0x0b6cd0...0b68a3`](./ethereum-1/0x0b6cd0ecb176cb39ad99b3a0e4294167a80b68a3/); blast `0x503e3d...8c162c`; scroll `0x70b161...e9dc4f` | ✅ Audited | Verified |
 | [CrocQuery (5 deployments)](./scroll-534352/0x62223e90605845cf5cc6dae6e0de4cda130d6ddf/) | scroll | 5 deployments: ethereum `0xbc75a2...79b305`; ethereum `0xc2e1f7...2004c8`; ethereum `0xca0092...7b6b56`; blast `0xa3bd3b...36a8a7`; scroll [`0x62223e...0d6ddf`](./scroll-534352/0x62223e90605845cf5cc6dae6e0de4cda130d6ddf/) | ✅ Audited | Verified |
-| [CrocSwapDex](./scroll-534352/0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106/) | scroll | [`0xaaaaaa...a74106`](./scroll-534352/0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106/) | ✅ Audited | Verified |
 | [HotProxy (3 deployments)](./ethereum-1/0x37e00522ce66507239d59b541940f99ea19ff81f/) | ethereum | 3 deployments: ethereum [`0x37e005...9ff81f`](./ethereum-1/0x37e00522ce66507239d59b541940f99ea19ff81f/); blast `0x79cf6e...7ef6e9`; blast `0xaaaaaa...1fb958` | ✅ Audited | Verified |
 | [KnockoutFlagPath (2 deployments)](./ethereum-1/0x509de582af6b4658a1830f7882077fba5523c957/) | ethereum | 2 deployments: ethereum [`0x509de5...23c957`](./ethereum-1/0x509de582af6b4658a1830f7882077fba5523c957/); blast `0xe3150c...fe0bfe` | ✅ Audited | Verified |
 | [KnockoutLiqPath (2 deployments)](./blast-81457/0x67231c7db63e5d7378596aadd6ba69345e6a53aa/) | blast | 2 deployments: ethereum `0x7f5d75...7ea794`; blast [`0x67231c...6a53aa`](./blast-81457/0x67231c7db63e5d7378596aadd6ba69345e6a53aa/) | ✅ Audited | Verified |

@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Angles
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 8.9% over 90 days
-
 ## Project Overview
 
 - Project: Angles (`angles`)
 - Website: [https://angles.fi/](https://angles.fi/)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T07:10:18.051Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:29:26.096Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: sonic
 - Contract surface: 40 unique implementations (80 raw deployments)
 - DeFi Llama TVL: $1,009,126.00
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Angles is an onchain capital allocator on Sonic that provides liquid staking and yield-bearing vault products. It enables users to stake assets and receive liquid staking tokens, while the protocol allocates capital to validator infrastructure.
+Angles is primarily a Sonic liquid staking protocol centered on anS, enabling users to participate in Sonic staking while retaining a liquid staking token. Any vault, wanS, or capital-allocation components should be treated as secondary products or wrappers unless explicitly supported by protocol documentation.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ Angles Stake vaults likely mint or interact with Angles Liquid's wanS token, cre
 - Latest audit: 2025-02 (aging)
 - Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
 - Tier 1 coverage: 4.0% (Spearbit)
-- Note: This protocol is classified as [declining]. ASD of $7.53 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

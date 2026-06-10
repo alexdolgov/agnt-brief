@@ -15,7 +15,7 @@ Each project directory contains:
 | [reservoir-protocol](./reservoir-protocol/brief.md) | $75.10M | 9 | 278 | 265/278 (95%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2082.66M |
 | [keep3r-network](./keep3r-network/brief.md) | $4.00M | ethereum | 481 | 368/481 (77%) | 0.3% | 0.0% (-) | 1 | stale | 💀 dead | $2070.48M |
 | [zyfai](./zyfai/brief.md) | $6.49M | 5 | 106 | 100/106 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1557.53M |
-| [angle](./angle/brief.md) | $3.46M | 7 | 624 | 331/624 (53%) | 1.8% | 0.0% (-) | 2 | stale | 💀 dead | $1397.79M |
+| [angle](./angle/brief.md) | $3.71M | 7 | 547 | 284/547 (52%) | 1.7% | 0.0% (-) | 1 | stale | ⚠️ declining | $1397.79M |
 | [singularv](./singularv/brief.md) | $2.54M | ethereum | 83 | 70/83 (84%) | 18.6% | 11.4% (ChainSecurity, Spearbit) | 8 | stale | ❓ unknown | $1083.21M |
 | [rumpel-labs](./rumpel-labs/brief.md) | $1.92M | ethereum | 115 | 101/115 (88%) | 2.0% | 0.0% (-) | 2 | aging | ⚠️ declining | $1039.27M |
 | [volta-club](./volta-club/brief.md) | $1.28M | avalanche, ethereum | 319 | 181/319 (57%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $976.19M |
@@ -178,7 +178,7 @@ Each project directory contains:
 | [alphagrowth](./alphagrowth/brief.md) | $8.53M | 4 | 55 | 43/55 (78%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $6.29M |
 | [nftx](./nftx/brief.md) | $1.61M | arbitrum, ethereum | 184 | 135/184 (73%) | 11.1% | 9.6% (Code4rena) | 3 | stale | ⚠️ declining | $6.27M |
 | [sx-rollup-bridge](./sx-rollup-bridge/brief.md) | $6.37M | ethereum | 134 | 69/134 (51%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $6.12M |
-| [ambire-wallet](./ambire-wallet/brief.md) | $6.21M | ethereum | 9 | 2/9 (22%) | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | $5.82M |
+| [ambire-wallet](./ambire-wallet/brief.md) | $9.90M | ethereum | 9 | 2/9 (22%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | $5.82M |
 | [ekubo](./ekubo/brief.md) | $27.16M | ethereum | 15 | 9/15 (60%) | 44.4% | 22.2% (Code4rena) | 3 | fresh | ❓ unknown | $5.65M |
 | [dango](./dango/brief.md) | $4.09M | 17 | 56 | 39/56 (70%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $5.58M |
 | [sophon-bridge](./sophon-bridge/brief.md) | $83.96M | ethereum | 10 | 9/10 (90%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | $5.51M |
@@ -368,7 +368,7 @@ Each project directory contains:
 | [toupee.tech](./toupee.tech/brief.md) | $6.29M | base | 29 | 25/29 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $24.29 |
 | [noon](./noon/brief.md) | $30.42M | ethereum, hyperliquid, zksync-era | 40 | 30/40 (75%) | 3.3% | 0.0% (-) | 1 | aging | ✅ active | $17.99 |
 | [goose](./goose/brief.md) | $12.80M | ethereum | 7 | 3/7 (43%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $7.87 |
-| [angles](./angles/brief.md) | $1.01M | sonic | 40 | 25/40 (63%) | 4.0% | 4.0% (Spearbit) | 1 | aging | ⚠️ declining | $7.53 |
+| [angles](./angles/brief.md) | $1.01M | sonic | 40 | 25/40 (63%) | 4.0% | 4.0% (Spearbit) | 1 | aging | ✅ active | $7.53 |
 | [royco-protocol](./royco-protocol/brief.md) | $35.41M | 6 | 14 | 9/14 (64%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $7.16 |
 | [lynex](./lynex/brief.md) | $1.07M | linea | 30 | 29/30 (97%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.89 |
 | [acre](./acre/brief.md) | $4.27M | ethereum | 220 | 207/220 (94%) | 0.5% | 0.0% (-) | 2 | aging | ✅ active | $3.02 |
@@ -392,7 +392,7 @@ Each project directory contains:
 | [alphaping](./alphaping/brief.md) | $67.87M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [altitude.fi](./altitude.fi/brief.md) | $13.71M | ethereum | 124 | 18/124 (15%) | 72.2% | 0.0% (-) | 6 | aging | ⚠️ declining | - |
 | [ambient](./ambient/brief.md) | $2.70M | 5 | 30 | 17/30 (57%) | 64.7% | 0.0% (-) | 2 | stale | ⚠️ declining | - |
-| [amnis-finance](./amnis-finance/brief.md) | $11.93M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [amnis-finance](./amnis-finance/brief.md) | $11.92M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [angstrom](./angstrom/brief.md) | $11.35M | base, ethereum | 13 | 13/13 (100%) | 7.7% | 7.7% (Spearbit) | 1 | fresh | ✅ active | - |
 | [antarctic](./antarctic/brief.md) | $9.58M | arbitrum | 11 | 8/11 (73%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [anvil](./anvil/brief.md) | $18.35M | ethereum | 3 | 3/3 (100%) | 100.0% | 100.0% (OpenZeppelin, Trail of Bits) | 3 | fresh | ❓ unknown | - |
@@ -724,5 +724,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-10T20:27:50.767Z_
+_Generated: 2026-06-10T20:32:14.147Z_
 _Projects: 712_

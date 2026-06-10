@@ -7,8 +7,8 @@
 - Project: Ambient (`ambient`)
 - Website: [https://ambient.finance/](https://ambient.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T07:12:22.954Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:31:32.729Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: blast, canto, ethereum, scroll, swellchain
 - Contract surface: 30 unique implementations (52 raw deployments)
 - DeFi Llama TVL: $2,695,530.51
@@ -55,7 +55,7 @@ All chain-specific DEX families (Ambient, Blast, Scroll, Swell Chain) share the 
 | CrocImpact | unknown | ethereum | 2 deployments: ethereum [`0x3e3edd...94c0d0`](./contracts/ethereum-1/0x3e3edd3ed7621891e574e5d7f47b1f30a994c0d0/); blast `0x6a699a...5efdb9` | ✅ Audited |
 | CrocPolicy | unknown | ethereum | 3 deployments: ethereum [`0x0b6cd0...0b68a3`](./contracts/ethereum-1/0x0b6cd0ecb176cb39ad99b3a0e4294167a80b68a3/); blast `0x503e3d...8c162c`; scroll `0x70b161...e9dc4f` | ✅ Audited |
 | CrocQuery | unknown | scroll | 5 deployments: ethereum `0xbc75a2...79b305`; ethereum `0xc2e1f7...2004c8`; ethereum `0xca0092...7b6b56`; blast `0xa3bd3b...36a8a7`; scroll [`0x62223e...0d6ddf`](./contracts/scroll-534352/0x62223e90605845cf5cc6dae6e0de4cda130d6ddf/) | ✅ Audited |
-| CrocSwapDex | unknown | scroll | [`0xaaaaaa...a74106`](./contracts/scroll-534352/0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106/) | ✅ Audited |
+| CrocSwapDex | proxy | scroll | [`0xaaaaaa...a74106`](./contracts/scroll-534352/0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106/) | ✅ Audited |
 | HotProxy | unknown | ethereum | 3 deployments: ethereum [`0x37e005...9ff81f`](./contracts/ethereum-1/0x37e00522ce66507239d59b541940f99ea19ff81f/); blast `0x79cf6e...7ef6e9`; blast `0xaaaaaa...1fb958` | ✅ Audited |
 | KnockoutFlagPath | unknown | ethereum | 2 deployments: ethereum [`0x509de5...23c957`](./contracts/ethereum-1/0x509de582af6b4658a1830f7882077fba5523c957/); blast `0xe3150c...fe0bfe` | ✅ Audited |
 | KnockoutLiqPath | unknown | blast | 2 deployments: ethereum `0x7f5d75...7ea794`; blast [`0x67231c...6a53aa`](./contracts/blast-81457/0x67231c7db63e5d7378596aadd6ba69345e6a53aa/) | ✅ Audited |

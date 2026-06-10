@@ -28,11 +28,11 @@
 | [alphaping](./alphaping/) | $67.9M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
 | [alphax](./alphax/) | $218.2K | 0.0% | $218.2K | active | 1 | 1 | 2026-06-10 |
 | [altitude.fi](./altitude.fi/) | $16.1M | 72.2% | ? | declining | 7 | 124 | 2026-06-10 |
-| [ambient](./ambient/) | $2.7M | 64.7% | ? | declining | 3 | 30 | 2026-05-31 |
-| [ambire-wallet](./ambire-wallet/) | $5.8M | 0.0% | $5.8M | unknown | 12 | 9 | 2026-05-23 |
-| [amnis-finance](./amnis-finance/) | $11.9M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
-| [angle](./angle/) | $1.4B | 1.8% | $1.4B | dead | 3 | 624 | 2026-05-26 |
-| [angles](./angles/) | $441.0K | 4.0% | $7.5 | declining | 1 | 40 | 2026-05-31 |
+| [ambient](./ambient/) | $2.7M | 64.7% | ? | declining | 3 | 30 | 2026-06-10 |
+| [ambire-wallet](./ambire-wallet/) | $5.8M | 0.0% | $5.8M | active | 12 | 9 | 2026-06-10 |
+| [amnis-finance](./amnis-finance/) | $11.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
+| [angle](./angle/) | $1.4B | 1.7% | $1.4B | declining | 1 | 547 | 2026-06-10 |
+| [angles](./angles/) | $441.0K | 4.0% | $7.5 | active | 1 | 40 | 2026-06-10 |
 | [angstrom](./angstrom/) | $11.3M | 7.7% | ? | active | 3 | 13 | 2026-05-23 |
 | [ankr](./ankr/) | $47.4 | 13.6% | $47.4 | active | 14 | 32 | 2026-05-25 |
 | [antarctic](./antarctic/) | $9.6M | 0.0% | ? | active | 0 | 11 | 2026-05-31 |

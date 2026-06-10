@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ambient",
-  "generated_at": "2026-05-31T07:12:22.954Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:31:32.729Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "ambient",
@@ -73,6 +73,11 @@
     "project_purpose": "Ambient is a decentralized exchange protocol that enables single-contract, multi-chain concentrated and ambient liquidity pools. It supports efficient token swaps, liquidity provision, and on-chain governance across multiple EVM chains.",
     "relationship_narrative": "All chain-specific DEX families (Ambient, Blast, Scroll, Swell Chain) share the same core contract logic (WarmPath/HotProxy) and are governed by the Governance Contracts family. Router contracts on each chain provide user-facing swap interfaces that interact with the respective CrocSwapDex proxy.",
     "product_family_count": 7
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 30,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -322,7 +327,7 @@
       "chain_name": "scroll",
       "address": "0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106",
       "name": "CrocSwapDex",
-      "role": "unknown",
+      "role": "proxy",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Scroll",

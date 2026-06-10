@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Ambire Wallet
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Ambire Wallet (`ambire-wallet`)
 - Website: [https://www.ambire.com](https://www.ambire.com)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-23T12:46:34.734Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:30:59.046Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: ethereum
 - Contract surface: 9 unique implementations (9 raw deployments)
-- DeFi Llama TVL: $6,209,190.08
+- DeFi Llama TVL: $9,896,682.05
 - On-chain TVL (included contracts): $5,815,389.72
 - TVL by chain: Ethereum $5,815,389.72
 
 ## Project Description
 
-Ambire Wallet is a smart contract wallet that enables users to manage assets and interact with DeFi protocols. It includes a staking mechanism for its native WALLET token, allowing users to earn rewards.
+Ambire is a self-custodial Web3 wallet, primarily offered as a browser-extension wallet, that enables users to manage assets, swap, bridge, interact with dApps, and use smart-account features including EIP-7702 support for EOAs. Its WALLET token and related staking contracts are token-related components rather than the entirety of the Ambire Wallet product.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The StakingPool contract interacts with the WALLETToken to manage staking and re
 - Latest audit: 2025-02 (aging)
 - Staleness: 0 fresh, 2 aging, 6 stale, 4 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $5,815,389.72 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

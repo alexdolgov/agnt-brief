@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "angle",
-  "generated_at": "2026-05-26T05:20:02.204Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-eff36e-a3ce",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:29:21.214Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "angle",
     "tier": 1,
@@ -32,30 +32,30 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 624,
-    "total_addresses": 1558,
-    "unique_implementations": 624,
-    "total_deployments": 1558,
-    "audited_contracts": 6,
-    "unaudited_contracts": 331,
-    "contracts_verified_audited": 6,
-    "contracts_verified_unaudited": 325,
-    "contracts_verified_by_bytecode": 6,
-    "contracts_unverified": 287,
-    "coverage_pct": 1.8,
-    "total_audits": 3,
-    "scoreable_audits": 2,
-    "dl_tvl_usd": 3464436.9122699997,
-    "tvl_usd": 1397791887.6612725,
+    "total_contracts": 547,
+    "total_addresses": 1207,
+    "unique_implementations": 547,
+    "total_deployments": 1207,
+    "audited_contracts": 5,
+    "unaudited_contracts": 281,
+    "contracts_verified_audited": 5,
+    "contracts_verified_unaudited": 279,
+    "contracts_verified_by_bytecode": 2,
+    "contracts_unverified": 261,
+    "coverage_pct": 1.7,
+    "total_audits": 1,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 3707604.5120800002,
+    "tvl_usd": 1397790797.7080855,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "arbitrum": 87316.35,
+      "arbitrum": 87140.37,
       "celo": 222346.39,
       "ethereum": 391121714.62,
-      "optimism": 1006267351.29,
+      "optimism": 1006266437.31,
       "polygon": 93159.01
     },
-    "asd_usd": 1397791887.6612725,
+    "asd_usd": 1397790797.7080855,
     "website_url": "https://app.angle.money",
     "chains": [
       "arbitrum",
@@ -68,19 +68,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022-01",
+    "latest_audit_date": "2021-09",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 3,
+      "stale": 1,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Angle is a decentralized stablecoin protocol that issues over-collateralized, euro-pegged stablecoins (agEUR) and provides yield-bearing savings products. It operates across multiple chains, using a CDP model for borrowing and a suite of strategies to generate yield on deposited assets.",
+    "project_purpose": "Angle is a decentralized euro stablecoin protocol centered on Angle Core/Borrowing, agEUR/EUR stablecoin infrastructure, savings products, governance, and bridge-related deployments. Its project-owned surface should be separated from third-party dependencies, integration targets, tokens, lending markets, Celo core contracts, Chainlink infrastructure, Safe infrastructure, and generic proxy or timelock contracts not verified as deployed or owned by Angle.",
     "relationship_narrative": "The Angle family is a monolithic CDP stablecoin system where core borrowing and treasury contracts interact with a wide array of yield strategies and cross-chain bridges. Governance multisigs (GnosisSafe) control upgrades and parameters, while proxy contracts (TransparentUpgradeableProxy, DiamondProxy) enable modularity and upgradability across all components.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 547,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1582,154 +1587,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x04437e94af860afbb0429a7d36b9c00a5a5173b9",
-      "name": "VaultManagerLiquidationBoost",
-      "role": "core_logic",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 860.0145887161153,
-      "is_proxy": true,
-      "impl_address": "0xa202feaf7c2ad2148984cf3acefc1e3b1e52d7cf",
-      "impl_name": "VaultManagerLiquidationBoost",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x16cd38b1b54e7abf307cb2697e2d9321e843d5aa",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 295.1907977578101,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x9818bc9c4e09b1c542235dc969ad1c6136899ad1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xaec8318a9a59baeb39861d10ff6c7f7bf1f96c57",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 501.31099606923055,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xcf5a2934fe43666c24823dfd455c617edff78bb6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 63.51279488907463,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xfc48e39fed51f2937c8ce7ee95ed9181c2790ab1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x04437e94af860afbb0429a7d36b9c00a5a5173b9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x92d84b0687361cd0753e95f5a8746fbaf42e9135",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xa202feaf7c2ad2148984cf3acefc1e3b1e52d7cf",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xe9f183fc656656f1f17af1f2b0df79b8ff9ad8ed",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xf664118e79c0b34f1ed20e6606a0068d213839b9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x4a44f77978daa3e92eb3d97210bd11645cf935ab",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x65e4992250b296790c07fadf0f0723902a07e91d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x735ff13c7af33583b2c657680c2809464dbcae9b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xc4df24680fe23ad109401a4a200de3994ad3c564",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x35168324dc1981addc3bc915788e200bedf77865",
@@ -2034,37 +1891,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x42dc54fb50db556fa6ffba765f1141536d4830ea",
-      "name": "Convex2PoolStaker",
-      "role": "core_logic",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": 152.84401529981253,
-      "is_proxy": true,
-      "impl_address": "0x4a5c6420d2efddea4579528e9659c8de54021cb0",
-      "impl_name": "Convex2PoolStaker",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x42dc54fb50db556fa6ffba765f1141536d4830ea",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 152.84401529981253,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x3687c0f8760371fc1bd1c7bc28695c388cded5a0",
@@ -2123,190 +1949,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0x03c2d2014795ee8ca78b62738433b457ab19f4b3",
-      "name": "CoreBorrow",
-      "role": "core_logic",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": 53.96512929961473,
-      "is_proxy": true,
-      "impl_address": "0x3e399ae5b4d8bc0021e53b51c8bcdd66dd62c03b",
-      "impl_name": "CoreBorrow",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x1a7e4e63778b4f12a199c062f3efdd288afcbce8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 53.96512929961473,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xa61beb4a3d02decb01039e378237032b351125b4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xc2c7a0d9a9e0467090281c3a4f28d40504d08fb4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xe324d92516be618afd776c8c87386196e76d50ac",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x31429d1856ad1377a8a0079410b297e1a9e214c2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x3e399ae5b4d8bc0021e53b51c8bcdd66dd62c03b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x67b9c7c45bbdd1a78aed4b8ff3b1bb3c8170bdab",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xfd0dfc837fe7ed19b23df589b6f6da5a775f99e0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x31429d1856ad1377a8a0079410b297e1a9e214c2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x5183f032bf42109cd370b9559fd22207e432301e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xa86cc1ae2d94c6ed2ab3bf68fb128c2825673267",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xb38ba207d02f07653a37b53c1c0a250b04f97e82",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x03c2d2014795ee8ca78b62738433b457ab19f4b3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x3e399ae5b4d8bc0021e53b51c8bcdd66dd62c03b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x59153e939c5b4721543251ff3049ea04c755373b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x1033dd8415a282db52f14902e91de6e91868ac6d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x41f064e85e2558171711b90cc95292d2f893f7f5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xe9f183fc656656f1f17af1f2b0df79b8ff9ad8ed",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x3bcba0afd36c9b350f46c570f89ab70817d122cb",
@@ -2327,37 +1969,6 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 42.178948108023064,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xc0077e921c30c39cdd8b693e25af572c10e82a05",
-      "name": "ERC4626Strategy",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 23.025048979792963,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ERC4626Strategy",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xc0077e921c30c39cdd8b693e25af572c10e82a05",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 23.025048979792963,
           "is_audited": false
         }
       ],
@@ -2683,46 +2294,6 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x58441e37255b09f9f545e9dc957f1c41658ff665",
-      "name": "StakeDAO2PoolStaker",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "stake-dao",
-      "product_line": null,
-      "tvl_usd": 0.1044043535751638,
-      "is_proxy": false,
-      "impl_address": "0x58441e37255b09f9f545e9dc957f1c41658ff665",
-      "impl_name": "StakeDAO2PoolStaker",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x58441e37255b09f9f545e9dc957f1c41658ff665",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xc8711b1206cd3e89799ec32973f583e696cb553c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.1044043535751638,
           "is_audited": false
         }
       ],
@@ -3170,136 +2741,6 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x12f31b73d812c6bb0d735a218c086d44d5fe5f89",
-      "name": "AgTokenSideChainMultiBridge",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AgTokenSideChainMultiBridge",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x7ab641e661a9728913a44e06f6a4879481142ddb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x9c215206da4bf108ae5aeef9da7cad3352a36dad",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xd278d822a040457324043619e962a5b093ba1d4e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x59153e939c5b4721543251ff3049ea04c755373b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc63aaf16f1fa309e97cabe3937472d6ca16fb629",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x12f31b73d812c6bb0d735a218c086d44d5fe5f89",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x1a7e4e63778b4f12a199c062f3efdd288afcbce8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x862f596e76a549363ffba54b4be296988cbdc763",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x4b1e2c2762667331bc91648052f646d1b0d35984",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x656b80b667a46869144047e6e6c0000c81610253",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x2878596427bfa6b52fa6d93b519a0c610bbdf00a",
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x97b6897aad7aba3861c04c0e6388fc02af1f227f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0x0000206329b97db379d5e1bf586bbdb969c63274",
@@ -3514,176 +2955,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x0331814f183d6a782e93e46810e76b5d21294b27",
-      "name": "AngleBorrowHelpers",
-      "role": "core_logic",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x5e9ab86e99caee6df6578e0fbbd4a915a4a294bc",
-      "impl_name": "AngleBorrowHelpers",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x0331814f183d6a782e93e46810e76b5d21294b27",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x0750b6fdada48057dbc7103e1e9286f00f997d81",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x28c5d220278429eaf720a4b51d4b9141599039ef",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x5e9ab86e99caee6df6578e0fbbd4a915a4a294bc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x7f27082eabdddc9dc3cc6632c9f594d210b9d43c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xb78ecddbb770fa270f3869777c82e81e05c18a6b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xc9cb5703c109d4fe46d2f29b0454c434e42a6947",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xdd6a0a00fe3353e813f3b3864694d55d2a7ce11c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x352742b8c16bf83b83107283e151f843e80fdd97",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x431dc3341f401451b3b42420d2571ae09e0234a0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x29e496419fd2558aa66af23c63f4df8a6b431011",
-      "name": "AngleGovernor",
-      "role": "governance",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AngleGovernor",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x29e496419fd2558aa66af23c63f4df8a6b431011",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x566ec28dd2af956937bf9b7a6969fb6098cd1769",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xf18303e2dd58cf29cad655b3bd2e1cc4582c6a16",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xf990e3a34cdf3042186d253d364154faf862cf09",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xd13f8c25cced32cdfa79eb5ed654ce3e484dcaf5",
@@ -3741,296 +3012,6 @@
           "chain_id": 137,
           "chain_name": "polygon",
           "address": "0xa124ef5d320261f50e2381ffc71430dfa04535da",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x3ee021f6f91911b8a2af6047889c54cc4983f78d",
-      "name": "AngleRouterArbitrum",
-      "role": "adapter",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x3ee021f6f91911b8a2af6047889c54cc4983f78d",
-      "impl_name": "AngleRouterArbitrum",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x3ee021f6f91911b8a2af6047889c54cc4983f78d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x4b1e2c2762667331bc91648052f646d1b0d35984",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x9a33e690aa78a4c346e72f7a5e16e5d7278be835",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xc16b81af351ba9e64c1a069e3ab18c244a1e3049",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xd31d6e964f96b38b8e324212fc423b6b4e52e20b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xfd0087e170bb5cc31c3340b3d3a477b9c5d40a0b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x62cba6dcdae5992d44cd9bd8989d27718eff5f73",
-      "name": "AngleRouterAvalanche",
-      "role": "adapter",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AngleRouterAvalanche",
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x62cba6dcdae5992d44cd9bd8989d27718eff5f73",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xef66c906879ec3904ff441c4693b33f3b285325e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0x81ac0f2e39088c73dce9b354fdc6c302e9f2836d",
-      "name": "AngleRouterCelo",
-      "role": "adapter",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x892bf71463bd9fa57f3c2266ab74dbe1b96decea",
-      "impl_name": "AngleRouterCelo",
-      "deployments": [
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x81ac0f2e39088c73dce9b354fdc6c302e9f2836d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x892bf71463bd9fa57f3c2266ab74dbe1b96decea",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xdb2fd6a9f5138246c6dfa1b8a1d5f366cc638b46",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xb8c1350c2fdbe2f652c6869c5cd48268d0b732a7",
-      "name": "AngleRouterGnosis",
-      "role": "adapter",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xbdd9a43790bfe85da12a9efbf0eafd8135538c99",
-      "impl_name": "AngleRouterGnosis",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xb8c1350c2fdbe2f652c6869c5cd48268d0b732a7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xbdd9a43790bfe85da12a9efbf0eafd8135538c99",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xe77edd217c589aba9887edf802e8ebe0a57a0578",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x0d710512e100c171139d2cf5708f22c680eccf52",
-      "name": "AngleRouterOptimism",
-      "role": "adapter",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x0d710512e100c171139d2cf5708f22c680eccf52",
-      "impl_name": "AngleRouterOptimism",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x0d710512e100c171139d2cf5708f22c680eccf52",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x2859a4ebcb58c8dd5cac1419c4f63a071b642b20",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x2ac724460d3dc68881a5b136f368219f5ed2c1cc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4fa745fccc04555f2afa8874cd23961636cdf982",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x658286fc9605f6ff4d0311d0b58670e26ecb27e1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xfb16d8e96c0c6e9b72541bfd8d4c3d9e867c990b",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -4834,37 +3815,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc00e94cb662c3520282e6f5717214004a7f26888",
-      "name": "Comp",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Angle",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Comp",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc00e94cb662c3520282e6f5717214004a7f26888",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0x3d943ced08b53546254bc751a6931401328cb8a8",
@@ -5301,448 +4251,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x1d0cdcf2294e2e301d0a06d0ca59ed4c43396332",
-      "name": "DiamondCut",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DiamondCut",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x1d0cdcf2294e2e301d0a06d0ca59ed4c43396332",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x78754109cb73772d70a6560297037657c2af51b8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xa5379675a758a55ccb8cf34a54022c7f76beed99",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc9cb5703c109d4fe46d2f29b0454c434e42a6947",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xca7ee04ae36cf051780f3b7a8e67224ff82613d9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xe14bfa5575d9906ba35beb15c9dbe5c77bfdd5b5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xe9da5f4af9c89320780ffb9e970a3c9e915d5eba",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x5506bc7ff32c33dbcb7012c1508d1242a34c15d2",
-      "name": "DiamondEtherscan",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DiamondEtherscan",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x5506bc7ff32c33dbcb7012c1508d1242a34c15d2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x752de78fc09e730292b3dbca8c063ac63711deb1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc2c7a0d9a9e0467090281c3a4f28d40504d08fb4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xc492fbae68ce6c5e14c7ed5cd8a59babd5c90e4c",
-      "name": "DiamondEtherscanFacet",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DiamondEtherscanFacet",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc492fbae68ce6c5e14c7ed5cd8a59babd5c90e4c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xa013ee06ddc7073c1b6e84601ddffa237f5cc208",
-      "name": "DiamondLoupe",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DiamondLoupe",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xa013ee06ddc7073c1b6e84601ddffa237f5cc208",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xa31a7ee3bd17c114eebde49c2c1ef5a7fd5ef0a1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xad96b6342e4ebbbfbaff0df248e84c7304fff5a5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc06481fc1d0196c138770fd2148dcb306cb24e20",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xd31d6e964f96b38b8e324212fc423b6b4e52e20b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xdd6a0a00fe3353e813f3b3864694d55d2a7ce11c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xfcc0bd6cb2fdc18637894b34bc4cd2d3355270d3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x02c4771ed8d48d0d01a16303bbe2e9f4369b67a8",
-      "name": "DiamondProxy",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DiamondProxy",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x02c4771ed8d48d0d01a16303bbe2e9f4369b67a8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xff091a4fdbcddce68805183dffdea47cdbb9feac",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x0b3bf915eb02ceee25d2416b9721688dba9266f8",
-      "name": "DistributionCreator",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DistributionCreator",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x53d6ea4775e08232a2c88d2f103cb124089eebbe",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x94b488c9f36b8430180e7375eec67db757bfddf2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x79e4df078a06ac31bfaa0f672f1f6e9b7f38113e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x0b3bf915eb02ceee25d2416b9721688dba9266f8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x10be886c0c93615d1d109be6c9415eea34fe8b57",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x6450d62d135331f67541fa5d747701f66d0b2cca",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x7b2d773af5b00f4233a8366f0d1635094ffddcd3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xc5a1368f1971aa6b19bd6a936476188020f6e05c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x52b88b300a8dd0808e53203eb499cfca051a8253",
-      "name": "Distributor",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Distributor",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x52b88b300a8dd0808e53203eb499cfca051a8253",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x60157fc156063f73f4327cb78cd3e0a9de5948ab",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xc2aaba70df4450c413bfbe7a1baffaf25d93a5ae",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xc8b81f809cc59a17130997648a2b601320179494",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 42220,
       "chain_name": "celo",
       "address": "0x078d04807e1a2ab0a1fbe75e7dcf7ce60c82ffdf",
@@ -5911,33 +4419,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x1a42a30dcba20a22b69c40098d89cb7304f429b9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x4a44f77978daa3e92eb3d97210bd11645cf935ab",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x8911084ef979ac1b02d6d9aabfad86927c5b1589",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -5945,7 +4426,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -6309,46 +4790,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x3d53aa9e22dc0fe145bf1ea13ee8585cb4e998dd",
-      "name": "ERC1967Proxy",
-      "role": "proxy",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xc7faa06d1d6c0205133635b0dd4961028fe2418c",
-      "impl_name": "ERC1967Proxy",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x3d53aa9e22dc0fe145bf1ea13ee8585cb4e998dd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x7097aab446f0cb33381410004f80b90d87e1cc63",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 42220,
       "chain_name": "celo",
       "address": "0x7a097d13f2b9f4e32efffbf2a5ea756dab4420c1",
@@ -6629,91 +5070,6 @@
           "chain_id": 10,
           "chain_name": "optimism",
           "address": "0xd1974664d191a9ca1cfcf483066f9e2b942d5ed9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x029f049c59a6b56610a34ba01d0d28e26ed407a8",
-      "name": "FakeGnosis",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "FakeGnosis",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x029f049c59a6b56610a34ba01d0d28e26ed407a8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x0331814f183d6a782e93e46810e76b5d21294b27",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x0945de4f356de3569fe12850ab85a91f533b87a0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x456f478a7210e0dc35ed67a5fec1d86cdcdabd6b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x68c1c25c5dd3db1a6e5fe74e057ff8d4a264d89f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xa2875bc2e4d1567190fa7a045427041d51b7c2b1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xe0688a2fe90d0f93f17f273235031062a210d691",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -7037,7 +5393,6 @@
         }
       ],
       "audits_covering": [
-        "audit-3681",
         "audit-3682"
       ],
       "is_audited": true,
@@ -7104,82 +5459,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x5e620d573cdaf414d70fc85b116dd8f1e7e79ce2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x04437e94af860afbb0429a7d36b9c00a5a5173b9",
-      "name": "FlashAngle",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x3e399ae5b4d8bc0021e53b51c8bcdd66dd62c03b",
-      "impl_name": "FlashAngle",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xf1ddcaca7d17f8030ab2eb54f2d9811365efe123",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xfa5ed56a203466cbbc2430a43c66b9d8723528e7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x3e399ae5b4d8bc0021e53b51c8bcdd66dd62c03b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x59153e939c5b4721543251ff3049ea04c755373b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x04437e94af860afbb0429a7d36b9c00a5a5173b9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x9c215206da4bf108ae5aeef9da7cad3352a36dad",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -7411,91 +5690,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x3c310fc54c0534dc3c45312934508722284352d1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x2904a4d96f88ad4bd548507ba139e892083894f7",
-      "name": "Getters",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Getters",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x2904a4d96f88ad4bd548507ba139e892083894f7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x600ab52922a37c06897816a59d7c22956c6bb739",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x7ca73c7402e7c532546e27679623dc90e88a87a1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x82609811d2c3e9b8a32c690546953bd11f817a78",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xb6b481d241171c4609ca61d514071b1e1240a82b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc7f58335129561f37f3795a636c4d75b002c99d9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xf2eda0829e8a9cf53ebcb8afcbb558d2eabcef64",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -7831,100 +6025,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xb0aa1f98523ec15932dd5faac5d86e57115571c7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0x074a4810015d67bafac5fe522c70761f343db55e",
-      "name": "Governance",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Governance",
-      "deployments": [
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x074a4810015d67bafac5fe522c70761f343db55e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x1914ea95139fed935a524984497895619b347f46",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x19f78d207493bf6f7e8d54900d01bb387f211b28",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x40bca46d9f7db71ecaa1e76655c3038a5a1824e6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x40cac0be7e25b14e39f782d5b7e5c3076aa6c57a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xd8476f998c87899600645811fb02d67dff490966",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xf2d7aa9dd1870b2e5be16643b9e1bcb5c624cb13",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xf51d27777e5b2b910e0caad467ae945e4b7a215d",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -10985,176 +9085,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x14c00080f97b9069ae3b4eb506ee8a633f8f5434",
-      "name": "LayerZeroBridgeToken",
-      "role": "operational_periphery",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x2904a4d96f88ad4bd548507ba139e892083894f7",
-      "impl_name": "LayerZeroBridgeToken",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x840b25c87b626a259ca5ac32124fa752f0230a72",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xc69e66109943faf5cbda22f360b7eb7c27bb5c88",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xcf6cf33e5cbd20548e8fc4f2c75bb0d9f336b45b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x4dd4758f594b60551dc64f30289204d34ccd077d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xfa5ed56a203466cbbc2430a43c66b9d8723528e7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x16cd38b1b54e7abf307cb2697e2d9321e843d5aa",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x8f4245d2efec45af24e5fa35f07172a830fc0ade",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xea8239fc12a1c9d075bfa61aa08a50dcdf38fee5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xdd6a0a00fe3353e813f3b3864694d55d2a7ce11c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xf1ddcaca7d17f8030ab2eb54f2d9811365efe123",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x14c00080f97b9069ae3b4eb506ee8a633f8f5434",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x366cee609a64037a4910868c5b3cd62b9d019695",
-      "name": "LayerZeroBridgeTokenERC20",
-      "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xa6a505eeb4e1e93052c48126f2d42ef6694a651d",
-      "impl_name": "LayerZeroBridgeTokenERC20",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x9201cc18965792808549566e6b06b016d915313a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x366cee609a64037a4910868c5b3cd62b9d019695",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xc011882d0f7672d8942e7fe2248c174eed640c8f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x317625234562b1526ea2fac4030ea499c5291de4",
@@ -12541,436 +10471,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xd08667fc2f323b7d64096e8ad79ff49e96cb75df",
-      "name": "MockANGLE",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MockANGLE",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xd08667fc2f323b7d64096e8ad79ff49e96cb75df",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xe09e56c778d24859aa12a731c430921ed811d38a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x210c6c3fbb709bfc68d4588b14317e319bed1276",
-      "name": "MockCoreBorrow",
-      "role": "core_logic",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MockCoreBorrow",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x210c6c3fbb709bfc68d4588b14317e319bed1276",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x2b11d82caadd76985861e858029c28446de05a50",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x2f2e0ba9746aae15888cf234c4eb5b301710927e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x4a5c6420d2efddea4579528e9659c8de54021cb0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xbdbdf128368de1cf6a3aa37f67bc19405c96f49f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xe1e6d7370fb8ea42cc9169d18571579c67141eea",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xeb7c849eb9c2582fc6ec99847c501d90b49f1d4d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x65a1dfb54cdec9011688b1818a27a8c687e6b1ed",
-      "name": "MockToken",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MockToken",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x65a1dfb54cdec9011688b1818a27a8c687e6b1ed",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x05214c5e95e756e4de26e12611495e260241f00a",
-      "name": "MockTokenPermit",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MockTokenPermit",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x05214c5e95e756e4de26e12611495e260241f00a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x06486a422b8742218693f874cea95a69c92a004f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x1b0c95852fa547c44600f70ef473640e1b717ce4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x1e5b48c08d6b5efe0792d04f27602bd90026514a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x1ece8c666f104803f77c31d2a0a83264e22734b4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x28c5d220278429eaf720a4b51d4b9141599039ef",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x3f125ecd51181af1f344adf76e4271d2923707ab",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x4b81f51988cd6a9f44350cdabee9620d16359aa3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x58441e37255b09f9f545e9dc957f1c41658ff665",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x5c6f17778fd036fc6b3db9f757f18b926a31156c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x5e6955627e30660eca4bca2fb8ac09e0dbeb63c1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x5f77974810617995f27bb4c91c88886df9c181ab",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x5fe0e497ac676d8ba78598fc8016ebc1e6ce14a3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x7f66dcc27c5c07e87945cb808483bb9eca683a39",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x8218013027be0041e31e58781f87a9cdae69928a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x8c6afde64a44aeb58a0e76ac9659982bbc5e0941",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x9a33e690aa78a4c346e72f7a5e16e5d7278be835",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xa6a505eeb4e1e93052c48126f2d42ef6694a651d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xa8ce8e2498dcbc0ee755583b0e6c74a0c184d56d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xa988ff110386d140e4e7a3691a328d49597e9c29",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xbc71f517af43b296663ae03228f25d7cbfcddedb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc011882d0f7672d8942e7fe2248c174eed640c8f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc1f9266c6d3389e981639ee873121199a7acdb8f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc8711b1206cd3e89799ec32973f583e696cb553c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xdd8670b64b8ec2c4f7da9f8f6d1f757d107e1895",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xe682aa5f491bd775c89b160462f7911d8a1b0297",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xf530b844fb797d2c6863d56a94777c3e411cec86",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xf89fa5d0f1a85c2bada78dbcc1d6cdc09a7c8e12",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x57e142278e93d721f3ebd52ec5d2d28484862f32",
@@ -13015,55 +10515,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x9708b5398382ee064a8e718972670351f1c2c860",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x03c2d2014795ee8ca78b62738433b457ab19f4b3",
-      "name": "MultiCallWithFailure",
-      "role": "periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MultiCallWithFailure",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x6cd24ac05103c2c911347a6d3628d64a9f07eaf5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x97b6897aad7aba3861c04c0e6388fc02af1f227f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x03c2d2014795ee8ca78b62738433b457ab19f4b3",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -13672,7 +11123,6 @@
         }
       ],
       "audits_covering": [
-        "audit-3681",
         "audit-3682"
       ],
       "is_audited": true,
@@ -13842,73 +11292,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x0750b6fdada48057dbc7103e1e9286f00f997d81",
-      "name": "ProposalReceiver",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ProposalReceiver",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xd6788102627462d1a679282e726125ccdebab514",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x4d9a15925f972bc4d45233132efd0fb498836cfc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xcda39b74054effb230156f21b334e50295ca8df4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x456f478a7210e0dc35ed67a5fec1d86cdcdabd6b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x0750b6fdada48057dbc7103e1e9286f00f997d81",
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 42220,
       "chain_name": "celo",
       "address": "0x38afc0dc55415ae27b81c24b5a5fbfe433ebfba8",
@@ -13926,176 +11309,6 @@
           "chain_id": 42220,
           "chain_name": "celo",
           "address": "0x38afc0dc55415ae27b81c24b5a5fbfe433ebfba8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x00e0f3d12a38b6284c02ccf9efbfaf4f61905958",
-      "name": "ProposalSender",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ProposalSender",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x00e0f3d12a38b6284c02ccf9efbfaf4f61905958",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x2aaae852a35332bba4abad69bbf9b256b683624c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x499c86959a330eb860fdfff6e87896d4298a4f4e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x56de2ee55a0915d81724d07d8e5c86fde34506f7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x93701cae5a709f1dfd619981c7b6c5449dc2cca9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x946942e13a909527265b845e0b18d38f139d6669",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc5a1368f1971aa6b19bd6a936476188020f6e05c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xde8e46cc73d9d1c94f9b99ce518cf69a7a7615a3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xdfbe6d2383c11fe2a21d140638088a6625d6c446",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xec0d13a48340eef7f0007f4186249b97d78a6803",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xf93062c0ff84bba688b4c25c3af6837c38b720a6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0x38dd9fa2409758fa0d73440ee18f8e0249181c9f",
-      "name": "Proxy",
-      "role": "proxy",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Proxy",
-      "deployments": [
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x38dd9fa2409758fa0d73440ee18f8e0249181c9f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xd626c08eba9d1d44304d02ed66b761b0aea1bbbb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xf10011424a0f35b8411e9abcf120ecf067e4cf27",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -14232,51 +11445,6 @@
           "is_audited": false
         },
         {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xc16b81af351ba9e64c1a069e3ab18c244a1e3049",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xe14bfa5575d9906ba35beb15c9dbe5c77bfdd5b5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x2101f65a51d545cd51896160230bcc6a360a6671",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x50ecc9f45cac262c7edb78aa704f1320a904d067",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x9a5b060bd7b8f86c4c0d720a17367729670afb19",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
           "chain_id": 137,
           "chain_name": "polygon",
           "address": "0xbfca293e17e067e8abdca30a5d35addd0cbae6d6",
@@ -14289,60 +11457,6 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x0400b6e4cbe9aa651f078df0a1ebe3054b224ba2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x9a5b060bd7b8f86c4c0d720a17367729670afb19",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xf2eda0829e8a9cf53ebcb8afcbb558d2eabcef64",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x5183f032bf42109cd370b9559fd22207e432301e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x9a5b060bd7b8f86c4c0d720a17367729670afb19",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x7ab641e661a9728913a44e06f6a4879481142ddb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xb1f2a25ffb2b095e99f430caf507cc31f9a3eaab",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -14392,46 +11506,6 @@
           "chain_id": 42220,
           "chain_name": "celo",
           "address": "0xe43ea9c641a2af9959caeee54adb089f65457028",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x6f5e42be8d24255a376fffa8a3fffae8a77b8c6f",
-      "name": "Redeemer",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Redeemer",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x6f5e42be8d24255a376fffa8a3fffae8a77b8c6f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xd681af564cada7d6952ac39ea14b4a8654479000",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -14588,91 +11662,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x13bac78046b5625167c1c3542b0f8656df1d7164",
-      "name": "RewardHandler",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "RewardHandler",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x13bac78046b5625167c1c3542b0f8656df1d7164",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x5199ba2b0ee6cc970f42ab35bbed3a265c542991",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x67ab61d45add5624fc4e21e921d91627c14e79d8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x892bf71463bd9fa57f3c2266ab74dbe1b96decea",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x8b450a1c108c008e5145f5d1ad28159caf8b4483",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x97203498d0c2b6785af06b832cdeafdddb762c4f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xa5fb7174c9306f63426e1f43f5c629a578b2173c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0x5da3ea9167e159de0d3003c21c86db1334c3f5c2",
@@ -14728,7 +11717,6 @@
         }
       ],
       "audits_covering": [
-        "audit-3681",
         "audit-3682"
       ],
       "is_audited": true,
@@ -14833,98 +11821,12 @@
         }
       ],
       "audits_covering": [
-        "audit-3681",
         "audit-3682"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x6c04c39b9e73ac91106d12f828e2e29fd8ef1024",
-      "name": "Savings",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x8928d0c942ca48ea86f458857de61b92d6f5a564",
-      "impl_name": "Savings",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xb2378660daebb9ba6c1ce2a38d3ee1d6a6e4dc14",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x6c04c39b9e73ac91106d12f828e2e29fd8ef1024",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x8928d0c942ca48ea86f458857de61b92d6f5a564",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x9de6efe3454f8eff8c8c8d1314cd019af2432e59",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xadf56645e6796e32a805e5bc70267c656d0eaf7c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xb1f2a25ffb2b095e99f430caf507cc31f9a3eaab",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xdd8670b64b8ec2c4f7da9f8f6d1f757d107e1895",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -15235,176 +12137,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x07573b3e99468d5d058f58ad54bfed449af83ec1",
-      "name": "SettersGovernor",
-      "role": "governance",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SettersGovernor",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x07573b3e99468d5d058f58ad54bfed449af83ec1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x0f198afb705964a675feb230e8be2de5558b3ff1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x2fa1255383364f6e17be6a6ac7a56c9acd6850a3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x735ff13c7af33583b2c657680c2809464dbcae9b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xa5479b8864a3e22d45b145452d31d44ba990df60",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xcf5a2934fe43666c24823dfd455c617edff78bb6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xe8426450d46f4ed4e667e96c7ea53bae518ff8eb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x2878596427bfa6b52fa6d93b519a0c610bbdf00a",
-      "name": "SettersGuardian",
-      "role": "governance",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SettersGuardian",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x2878596427bfa6b52fa6d93b519a0c610bbdf00a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x381a815b112a394f27121e2a99e86f88b1ef85a2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x43365213237ab259c707bc2cbc3e07d123ae2ad5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x89c4851accc79384243da946451a82b1b44aedb4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xac64946faec438557c3ac95475225b1eeaa56c17",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xf664118e79c0b34f1ed20e6606a0068d213839b9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xfbb53f48da13f9919dbdb6abab4b5cc7800c6dae",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x36e0f6896ab1e02c0d86d0c10f2928dbd2df3845",
@@ -15511,24 +12243,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x37e8386602d9ebea2c56dd11d8e142290595f1b5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x4b813c09ee83f6a308135d60658b22fbb8c0bf5f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x9b4c3f0eb7e732a64c549ec989d62ec82b00d37b",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -15876,37 +12590,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xe6239baf1b79acfff180bf7dd8647ef9b0cf97f5",
-      "name": "StakeDAOLevSwapper2Pool",
-      "role": "adapter",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "StakeDAOLevSwapper2Pool",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xe6239baf1b79acfff180bf7dd8647ef9b0cf97f5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xdd4f84e4f3cd31d6c91d80122b5a26cb4ae66bd5",
@@ -16207,7 +12890,6 @@
         }
       ],
       "audits_covering": [
-        "audit-3681",
         "audit-3682"
       ],
       "is_audited": true,
@@ -16237,7 +12919,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -16246,16 +12928,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3681"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -16392,167 +13072,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x2904a4d96f88ad4bd548507ba139e892083894f7",
-      "name": "Swapper",
-      "role": "adapter",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Swapper",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x3f125ecd51181af1f344adf76e4271d2923707ab",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x4ce0a4a86a18fa864284ad385a7cda7444875feb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x927ed3c2e8f309c195b90c87040f884979c9ecc6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc7f199ae6633b9336cf1b5a60c020b6cd993047d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xd23b51d6f2cb3ec7ca9599d4332a2f10c3cfdf85",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xd8f2cda6de4f6e23414a00a2226ef5f58e7ce440",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xdb2fd6a9f5138246c6dfa1b8a1d5f366cc638b46",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xf0a5fccc650b374eb5db6880064d050f1857e20f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x2904a4d96f88ad4bd548507ba139e892083894f7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x5e6955627e30660eca4bca2fb8ac09e0dbeb63c1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x656b80b667a46869144047e6e6c0000c81610253",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x9c215206da4bf108ae5aeef9da7cad3352a36dad",
-      "name": "SwapperSidechain",
-      "role": "adapter",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SwapperSidechain",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xa014a485d64efb236423004ab1a99c0aaa97a549",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x9c215206da4bf108ae5aeef9da7cad3352a36dad",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xa4d46e86fc0c7d3e46bee208d1b49b21d53f2627",
@@ -16659,15 +13178,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xf929345e5a5ac2f86c7a5802c1ce4aa46f524b28",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -16675,145 +13185,6 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x0f2b510bfb0b83fc692b5601ef7a800d1d9d2fef",
-      "name": "TimelockControllerWithCounter",
-      "role": "governance",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "TimelockControllerWithCounter",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x343902fe4d72e24b29f22d787b2e54eeea5e8227",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x0f2b510bfb0b83fc692b5601ef7a800d1d9d2fef",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x20b63ccfdb926904c2cfa8c9424b28c4bfd8fb36",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x64b478b7537395036c65468a6eb9b52fa6096a1f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x769a713bf0589d495008e5a7c78fabafb9c35f39",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x7b979b965cd124501d87007b2421d0e585733525",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x80d1cd24b10c0ba5d6ee5043cbdc80e00830381b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x85a61981669292e44250c6a1a1fed4ba0c5c6cf8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xb2ea590fcea142dcceaeb3912da4c1df721848ef",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xd2a211acea98c799a67ac47c274ebdf7dee24396",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x169487a55de79476125a56b07c36ca8dbf37a373",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x9b3c71edeb2e965d043e546d01323690a3101dc6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x7f27082eabdddc9dc3cc6632c9f594d210b9d43c",
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -16843,82 +13214,6 @@
           "chain_id": 137,
           "chain_name": "polygon",
           "address": "0x900f717ea076e1e7a484ad9dd2db81ceec60ebf1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x03c2d2014795ee8ca78b62738433b457ab19f4b3",
-      "name": "TokenSideChainMultiBridge",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x42dc54fb50db556fa6ffba765f1141536d4830ea",
-      "impl_name": "TokenSideChainMultiBridge",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x42dc54fb50db556fa6ffba765f1141536d4830ea",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x58441e37255b09f9f545e9dc957f1c41658ff665",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x03c2d2014795ee8ca78b62738433b457ab19f4b3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x656b80b667a46869144047e6e6c0000c81610253",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x5ee94c25e3d5113cd055537340b9d19cfa4d9217",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xbdbdf128368de1cf6a3aa37f67bc19405c96f49f",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -17116,15 +13411,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xf530b844fb797d2c6863d56a94777c3e411cec86",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -17132,181 +13418,6 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0x029f049c59a6b56610a34ba01d0d28e26ed407a8",
-      "name": "Treasury",
-      "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x5addc89785d75c86ab939e9e15bfbbb7fc086a87",
-      "impl_name": "Treasury",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x1033dd8415a282db52f14902e91de6e91868ac6d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x770f7cdfae5ecaa3a0538da7cb1d6c8f22252fe0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xe9f183fc656656f1f17af1f2b0df79b8ff9ad8ed",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x3e9ea799c447b3c65702c82f8193085f330a1db0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x5addc89785d75c86ab939e9e15bfbbb7fc086a87",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc16b81af351ba9e64c1a069e3ab18c244a1e3049",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x0d710512e100c171139d2cf5708f22c680eccf52",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x79e4df078a06ac31bfaa0f672f1f6e9b7f38113e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xf1ddcaca7d17f8030ab2eb54f2d9811365efe123",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x029f049c59a6b56610a34ba01d0d28e26ed407a8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x5addc89785d75c86ab939e9e15bfbbb7fc086a87",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xa61beb4a3d02decb01039e378237032b351125b4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x16cd38b1b54e7abf307cb2697e2d9321e843d5aa",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xa014a485d64efb236423004ab1a99c0aaa97a549",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xc492fbae68ce6c5e14c7ed5cd8a59babd5c90e4c",
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xde725566fa2bafd175066943d8d50ae762058e92",
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xe8426450d46f4ed4e667e96c7ea53bae518ff8eb",
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -22166,37 +18277,6 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
-      "address": "0x41a65aae5d1c8437288d5a29b4d049897572758e",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x41a65aae5d1c8437288d5a29b4d049897572758e",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
       "address": "0x4c988e12c38fea0a4018605aaa5349d3495ef341",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -22259,68 +18339,6 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
-      "address": "0x5c8e22bbc48997e59bc83dce9a9356f60bbaf2d9",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x5c8e22bbc48997e59bc83dce9a9356f60bbaf2d9",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x615d8b6565d92083ea3ba72639ba025bcb2cb09b",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x615d8b6565d92083ea3ba72639ba025bcb2cb09b",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
       "address": "0x656ae279bcfac02d8e5a51306b72090b3aeeec6a",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -22336,37 +18354,6 @@
           "chain_id": 10,
           "chain_name": "optimism",
           "address": "0x656ae279bcfac02d8e5a51306b72090b3aeeec6a",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x68d483b75ffbb7fff96385f9a9fa23a7d6d5deb7",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x68d483b75ffbb7fff96385f9a9fa23a7d6d5deb7",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -22569,68 +18556,6 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
-      "address": "0xc1626da69573ad647b66a7bd94a65c336f632751",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xc1626da69573ad647b66a7bd94a65c336f632751",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0xc7faa06d1d6c0205133635b0dd4961028fe2418c",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xc7faa06d1d6c0205133635b0dd4961028fe2418c",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
       "address": "0xcfdae153097b3ad134595e70fd128a2f5f8fb023",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -22739,533 +18664,6 @@
           "chain_id": 10,
           "chain_name": "optimism",
           "address": "0xfa2ecffc6dc11e1e6466bda293ff4a5f6d5a6dff",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x152773abbfb66eded0c3c2b9a5e021a62dc9c61c",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x152773abbfb66eded0c3c2b9a5e021a62dc9c61c",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x1e6aa5a1577e3668a78f3bcfd840e503b3b10f1e",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x1e6aa5a1577e3668a78f3bcfd840e503b3b10f1e",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x3076f77962fbda30a85641590468314dea3e298f",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x3076f77962fbda30a85641590468314dea3e298f",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x4e66516437b858207d6ad2cc7f0a7eaf81194748",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x4e66516437b858207d6ad2cc7f0a7eaf81194748",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x6828a57a9cef9480c13cd669865b2f97820ddef8",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x6828a57a9cef9480c13cd669865b2f97820ddef8",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x81ac0f2e39088c73dce9b354fdc6c302e9f2836d",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x81ac0f2e39088c73dce9b354fdc6c302e9f2836d",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x882dd02d7f2f06b7e968ecb97b1b62bf51b3af4a",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x882dd02d7f2f06b7e968ecb97b1b62bf51b3af4a",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x8a7a498782db973f8ba322b9f4bafcb0db21adb7",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x8a7a498782db973f8ba322b9f4bafcb0db21adb7",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x9c98a5af0ef9f200bd58eae79b94ff5acf6a752b",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x9c98a5af0ef9f200bd58eae79b94ff5acf6a752b",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xc3963e5549fcb36c7053b600f51622fbc8b94e8e",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc3963e5549fcb36c7053b600f51622fbc8b94e8e",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xc8c22f59a931768fae6b12708f450b4fab6dd6fe",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xc8c22f59a931768fae6b12708f450b4fab6dd6fe",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xce3fd179eaa09bbd60eaea70d8b1c81b304c91e1",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xce3fd179eaa09bbd60eaea70d8b1c81b304c91e1",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xf868da244c17cf0e288ae4a92c8636f072a7bae3",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xf868da244c17cf0e288ae4a92c8636f072a7bae3",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xfc48e39fed51f2937c8ce7ee95ed9181c2790ab1",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xfc48e39fed51f2937c8ce7ee95ed9181c2790ab1",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xfd0a40d9fa2cd02ee0fe0600d68de808aac7f4aa",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xfd0a40d9fa2cd02ee0fe0600d68de808aac7f4aa",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xfd89b096320826f9de878a8c85ae01ea5525f680",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xfd89b096320826f9de878a8c85ae01ea5525f680",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xfe0e499fbb529214ce9744a66fce8b05413abb18",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xfe0e499fbb529214ce9744a66fce8b05413abb18",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -23437,37 +18835,6 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0xa61beb4a3d02decb01039e378237032b351125b4",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xa61beb4a3d02decb01039e378237032b351125b4",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
       "address": "0xacd0c2f3be110ecec98da64a86974512b27851ae",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -23514,37 +18881,6 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xaf2dab253269f2d54221ea7cc499c073ffefd6e7",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xe0688a2fe90d0f93f17f273235031062a210d691",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xe0688a2fe90d0f93f17f273235031062a210d691",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -26287,37 +21623,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0xfc48e39fed51f2937c8ce7ee95ed9181c2790ab1",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xfc48e39fed51f2937c8ce7ee95ed9181c2790ab1",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 42220,
       "chain_name": "celo",
       "address": "0x2e3b47cf3163de47e852ff11d53a9ad8dfe7c68d",
@@ -26378,95 +21683,6 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x1033dd8415a282db52f14902e91de6e91868ac6d",
-      "name": "VaultManager",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "VaultManager",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x97b6897aad7aba3861c04c0e6388fc02af1f227f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x1033dd8415a282db52f14902e91de6e91868ac6d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x7f27082eabdddc9dc3cc6632c9f594d210b9d43c",
-      "name": "VaultManagerListing",
-      "role": "core_logic",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x8928d0c942ca48ea86f458857de61b92d6f5a564",
-      "impl_name": "VaultManagerListing",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x7f27082eabdddc9dc3cc6632c9f594d210b9d43c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x8928d0c942ca48ea86f458857de61b92d6f5a564",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xe682aa5f491bd775c89b160462f7911d8a1b0297",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
       "address": "0x29d3622c78615a1e7459e4be434d816b7de293e4",
       "name": "Ve",
       "role": "unknown",
@@ -26482,37 +21698,6 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x29d3622c78615a1e7459e4be434d816b7de293e4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xd622c71aba9060f393fec67d3e2b9335292bf23b",
-      "name": "VeANGLEVotingDelegation",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "VeANGLEVotingDelegation",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0xd622c71aba9060f393fec67d3e2b9335292bf23b",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -27704,46 +22889,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x39ce9cdad28d08d32fd94284070a8b0c8309393f",
-      "name": "VyperDeployer",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "VyperDeployer",
-      "deployments": [
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x39ce9cdad28d08d32fd94284070a8b0c8309393f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 100,
-          "chain_name": "gnosis",
-          "address": "0x4e4c68b5de42afe4fdcefe4e2f9da684822cba18",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0x7955519e14fdf498e28831f4cc06af4b8e3086a8",
@@ -27857,73 +23002,6 @@
   ],
   "audits": [
     {
-      "audit_id": 3680,
-      "audit_key": "audit-3680",
-      "report_name": "Chainsecurity Audit Report December 21.pdf",
-      "report_url": "https://github.com/AngleProtocol/angle-core/blob/main/audits/Chainsecurity%20Audit%20Report%20December%2021.pdf",
-      "auditor": "yAudit",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3681,
-      "audit_key": "audit-3681",
-      "report_name": "Chainsecurity Audit Report July 21.pdf",
-      "report_url": "https://github.com/AngleProtocol/angle-core/blob/main/audits/Chainsecurity%20Audit%20Report%20July%2021.pdf",
-      "auditor": "yAudit",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2021-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AgToken",
-        "BondingCurve",
-        "CollateralSettler",
-        "Core",
-        "FeeManager",
-        "GenericAave",
-        "ModuleChainlinkMulti",
-        "ModuleUniswapMulti",
-        "OracleAbstract",
-        "OracleChainlinkSingle",
-        "OracleMath",
-        "OracleMulti",
-        "PerpetualManager",
-        "PerpetualManagerFront",
-        "PerpetualManagerInternal",
-        "PoolManager",
-        "PoolManagerInternal",
-        "RewardsDistributor",
-        "SanToken",
-        "StableMaster",
-        "StableMasterStorage",
-        "StakingRewards",
-        "Strategy",
-        "UniswapUtils"
-      ],
-      "matched_contracts": 16,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 3682,
       "audit_key": "audit-3682",
       "report_name": "Sigma Prime Audit Report July 21.pdf",
@@ -27977,17 +23055,10 @@
   ],
   "auditor_coverage": [
     {
-      "auditor": "yAudit",
-      "tier": 2,
-      "contracts_covered": 6,
-      "coverage_pct": 1.8,
-      "latest_audit": "2022-01"
-    },
-    {
       "auditor": "Sigma Prime",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 1.5,
+      "coverage_pct": 1.7,
       "latest_audit": "2021-09"
     }
   ],
@@ -28043,16 +23114,6 @@
       "risk_note": "Verified native implementation with $1,635.34 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xc0077e921c30c39cdd8b693e25af572c10e82a05",
-      "name": "ERC4626Strategy",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 23.025048979792963,
-      "risk_note": "Verified native implementation with $23.03 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x051ba97b84a921f4134376af2c7e3a38229b0933",
@@ -28078,16 +23139,6 @@
       "address": "0x1a7e4e63778b4f12a199c062f3efdd288afcbce8",
       "name": "AgEURNameable",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x12f31b73d812c6bb0d735a218c086d44d5fe5f89",
-      "name": "AgTokenSideChainMultiBridge",
-      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -28138,36 +23189,6 @@
       "address": "0x588c06d6b15cb6d6f3428fa589a8fff1b6ba226b",
       "name": "AngleNFT",
       "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x3ee021f6f91911b8a2af6047889c54cc4983f78d",
-      "name": "AngleRouterArbitrum",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x62cba6dcdae5992d44cd9bd8989d27718eff5f73",
-      "name": "AngleRouterAvalanche",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x0d710512e100c171139d2cf5708f22c680eccf52",
-      "name": "AngleRouterOptimism",
-      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -28273,16 +23294,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc00e94cb662c3520282e6f5717214004a7f26888",
-      "name": "Comp",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0x3d943ced08b53546254bc751a6931401328cb8a8",
@@ -28328,46 +23339,6 @@
       "address": "0x070df1b96059f5dc34fcb140ffdc8c41d6eef1ca",
       "name": "Depositor",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xa013ee06ddc7073c1b6e84601ddffa237f5cc208",
-      "name": "DiamondLoupe",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x02c4771ed8d48d0d01a16303bbe2e9f4369b67a8",
-      "name": "DiamondProxy",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x0b3bf915eb02ceee25d2416b9721688dba9266f8",
-      "name": "DistributionCreator",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x52b88b300a8dd0808e53203eb499cfca051a8253",
-      "name": "Distributor",
-      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -28493,16 +23464,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x029f049c59a6b56610a34ba01d0d28e26ed407a8",
-      "name": "FakeGnosis",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 42220,
       "chain_name": "celo",
       "address": "0x0ad5b1d0c25ecf6266dd951403723b2687d6aff2",
@@ -28548,16 +23509,6 @@
       "address": "0x1abaea1f7c830bd89acc67ec4af516284b1bc33c",
       "name": "FiatTokenV2_2",
       "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x04437e94af860afbb0429a7d36b9c00a5a5173b9",
-      "name": "FlashAngle",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -29133,36 +24084,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xd08667fc2f323b7d64096e8ad79ff49e96cb75df",
-      "name": "MockANGLE",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x05214c5e95e756e4de26e12611495e260241f00a",
-      "name": "MockTokenPermit",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x03c2d2014795ee8ca78b62738433b457ab19f4b3",
-      "name": "MultiCallWithFailure",
-      "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x79b738e404208e9607c3b4d4b3800ed0d4a0e05f",
@@ -29243,16 +24164,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x0750b6fdada48057dbc7103e1e9286f00f997d81",
-      "name": "ProposalReceiver",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 42220,
       "chain_name": "celo",
       "address": "0x38afc0dc55415ae27b81c24b5a5fbfe433ebfba8",
@@ -29263,40 +24174,10 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x00e0f3d12a38b6284c02ccf9efbfaf4f61905958",
-      "name": "ProposalSender",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0x38dd9fa2409758fa0d73440ee18f8e0249181c9f",
-      "name": "Proxy",
-      "role": "proxy",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 42220,
       "chain_name": "celo",
       "address": "0x221a13e96d5c0cecb17ffd8a4a458c47ece3bdab",
       "name": "Random",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x6f5e42be8d24255a376fffa8a3fffae8a77b8c6f",
-      "name": "Redeemer",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -29453,16 +24334,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xe6239baf1b79acfff180bf7dd8647ef9b0cf97f5",
-      "name": "StakeDAOLevSwapper2Pool",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0x41279e29586eb20f9a4f65e031af09fced171166",
@@ -29478,6 +24349,16 @@
       "address": "0x06abcc3b98b7310f50197f0f9cec6cf6e176ae68",
       "name": "StakeUIHelper",
       "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2d78b6f5dc8985d90145f27c8f5a3782eb9deb2e",
+      "name": "Strategy",
+      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -29523,26 +24404,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x2904a4d96f88ad4bd548507ba139e892083894f7",
-      "name": "Swapper",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x9c215206da4bf108ae5aeef9da7cad3352a36dad",
-      "name": "SwapperSidechain",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xa4d46e86fc0c7d3e46bee208d1b49b21d53f2627",
@@ -29558,16 +24419,6 @@
       "address": "0x7660b2b53f6e9ecebebfade61fdeb1f3703caa24",
       "name": "TokenPolygonUpgradeable",
       "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x03c2d2014795ee8ca78b62738433b457ab19f4b3",
-      "name": "TokenSideChainMultiBridge",
-      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -29615,28 +24466,8 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x1033dd8415a282db52f14902e91de6e91868ac6d",
-      "name": "VaultManager",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
       "address": "0x29d3622c78615a1e7459e4be434d816b7de293e4",
       "name": "Ve",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0xd622c71aba9060f393fec67d3e2b9335292bf23b",
-      "name": "VeANGLEVotingDelegation",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -29724,26 +24555,21 @@
     }
   ],
   "origin_summary": {
-    "native": 294,
-    "upstream": 58,
-    "standard_library": 58,
-    "needs_review": 214
+    "native": 259,
+    "upstream": 57,
+    "standard_library": 51,
+    "needs_review": 180
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 30
+      "extraction_exact": 14
     },
     "extraction_confidence_counts": {
-      "high": 2
+      "high": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 3680,
-        "report_name": "Chainsecurity Audit Report December 21.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

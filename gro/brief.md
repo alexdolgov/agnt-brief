@@ -6,8 +6,8 @@
 
 - Project: Gro (`gro`)
 - Lifecycle: declining (Tier 0, 97.4% below peak)
-- Generated: 2026-06-10T20:59:04.401Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:39:59.674Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: ethereum
 - Contract surface: 124 unique implementations (161 raw deployments)
 - DeFi Llama TVL: $4,661,057.66

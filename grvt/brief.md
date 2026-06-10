@@ -7,8 +7,8 @@
 - Project: Grvt (`grvt`)
 - Website: [https://grvt.io/?ref=WCDISXW](https://grvt.io/?ref=WCDISXW)
 - Lifecycle: declining (Tier 0, 52.2% below peak)
-- Generated: 2026-06-10T20:59:04.407Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:39:58.552Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: ethereum
 - Contract surface: 7 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $55,387,476.00

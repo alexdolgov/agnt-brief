@@ -1,6 +1,6 @@
 # gravity-bridge — Contract Index
 
-152 unique implementations on ethereum · 225 deployments · 1 audited · 73 unaudited · 78 unverified
+152 unique implementations on ethereum · 225 deployments · 0 audited · 74 unaudited · 78 unverified
 
 ## core_logic (2)
 
@@ -79,7 +79,7 @@
 | [eEUR](./ethereum-1/0x0badd7af129efac1f7bb7253716a589cc5e6c17c/) | ethereum | [`0x0badd7...e6c17c`](./ethereum-1/0x0badd7af129efac1f7bb7253716a589cc5e6c17c/) | ⚠️ Unaudited | Verified |
 | [eNOK](./ethereum-1/0x9ec749faa086bb604b96bfe02bd49c53cef47ea5/) | ethereum | [`0x9ec749...f47ea5`](./ethereum-1/0x9ec749faa086bb604b96bfe02bd49c53cef47ea5/) | ⚠️ Unaudited | Verified |
 | [eSEK](./ethereum-1/0x0f7f6531af9792c9a42e2befced5ed81c0d63a23/) | ethereum | [`0x0f7f65...d63a23`](./ethereum-1/0x0f7f6531af9792c9a42e2befced5ed81c0d63a23/) | ⚠️ Unaudited | Verified |
-| [Gravity](./ethereum-1/0xa4108aa1ec4967f8b52220a4f7e94a8201f2d906/) | ethereum | [`0xa4108a...f2d906`](./ethereum-1/0xa4108aa1ec4967f8b52220a4f7e94a8201f2d906/) | ✅ Audited | Verified |
+| [Gravity](./ethereum-1/0xa4108aa1ec4967f8b52220a4f7e94a8201f2d906/) | ethereum | [`0xa4108a...f2d906`](./ethereum-1/0xa4108aa1ec4967f8b52220a4f7e94a8201f2d906/) | ⚠️ Unaudited | Verified |
 | [MNW](./ethereum-1/0xd3e4ba569045546d09cf021ecc5dfe42b1d7f6e4/) | ethereum | [`0xd3e4ba...d7f6e4`](./ethereum-1/0xd3e4ba569045546d09cf021ecc5dfe42b1d7f6e4/) | ⚠️ Unaudited | Verified |
 | [NGM](./ethereum-1/0xed0d5747a9ab03a75fbfec3228cd55848245b75d/) | ethereum | [`0xed0d57...45b75d`](./ethereum-1/0xed0d5747a9ab03a75fbfec3228cd55848245b75d/) | ⚠️ Unaudited | Verified |
 | [Orchestrator](./ethereum-1/0x92febab0073d48aa600d95d19e579d4a667a2c50/) | ethereum | [`0x92feba...7a2c50`](./ethereum-1/0x92febab0073d48aa600d95d19e579d4a667a2c50/) | ⚠️ Unaudited | Verified |

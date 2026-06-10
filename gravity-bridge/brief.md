@@ -5,8 +5,8 @@
 - Project: Gravity Bridge (`gravity-bridge`)
 - Website: [https://www.gravitybridge.net](https://www.gravitybridge.net)
 - Lifecycle: active (Tier 0, 89.3% below peak)
-- Generated: 2026-06-10T20:59:04.390Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:40:00.276Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: ethereum
 - Contract surface: 152 unique implementations (225 raw deployments)
 - DeFi Llama TVL: $12,141,492.35

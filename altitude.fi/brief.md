@@ -1,21 +1,23 @@
 # Agentic Audit Brief: Altitude.Fi
 
+⚠️ Lifecycle status: DECLINING - TVL dropped 19.2% over 90 days
+
 ## Project Overview
 
 - Project: Altitude.Fi (`altitude.fi`)
 - Website: [https://www.altitude.fi/](https://www.altitude.fi/)
-- Lifecycle: active (Tier 0, 69.8% below peak)
-- Generated: 2026-05-22T21:24:21.206Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 0, 69.8% below peak)
+- Generated: 2026-06-10T20:27:11.262Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: ethereum
 - Contract surface: 124 unique implementations (174 raw deployments)
-- DeFi Llama TVL: $13,728,110.95
+- DeFi Llama TVL: $13,707,166.05
 - On-chain TVL (included contracts): $16,144,587.86
 - TVL by chain: Ethereum $16,144,587.86
 
 ## Project Description
 
-Altitude.Fi is a lending protocol on Ethereum that enables users to supply and borrow assets through isolated lending pools. It uses a vault-based architecture with supply and debt tokens to represent positions, and includes mechanisms for rebalancing and incentives.
+Altitude.Fi is an Ethereum DeFi borrowing and lending aggregator focused on self-repaying loans against BTC and ETH collateral. The protocol routes collateral and debt positions through integrations such as Aave, Morpho, and other venues to optimize rates, uses vault-based accounting with supply and debt tokens, and applies yield/rebalancing mechanics to help pay down USDC debt over time.
 
 ### Architecture
 
@@ -35,6 +37,7 @@ All product families share the core Altitude.Fi contracts (VaultERC20, SupplyTok
 - Latest audit: 2025-05 (aging)
 - Staleness: 0 fresh, 7 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "alpaca-finance",
-  "generated_at": "2026-05-31T07:06:36.701Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:26:07.488Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "alpaca-finance",
@@ -60,9 +60,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Alpaca Finance is a DeFi protocol on BSC offering leveraged yield farming and a perpetual futures exchange. It enables users to borrow assets to amplify farming returns and trade derivatives with leverage.",
+    "project_purpose": "Alpaca Finance is a multi-chain DeFi protocol with lending and leveraged yield farming as core products, including Alpaca Finance 2.0 lending and deployments beyond BSC such as Fantom. Users can lend assets, borrow to amplify yield-farming strategies, and interact with associated vaults, workers, adapters, and stablecoin-related modules. Alpaca also has a smaller derivatives/perpetuals product, but it should be treated as secondary to the lending and leveraged yield-farming surface rather than as one of only two primary product families.",
     "relationship_narrative": "Both families share infrastructure such as oracles (e.g., ChainLinkPriceOracle, BandPriceOracle), access control (AccessControlConfig), and the ALPACA token. The perpetual futures exchange uses its own stablecoin (AlpacaStablecoin) and debt engine, while leveraged farming relies on vaults, debt tokens, and DEX-specific workers.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 144,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -952,7 +957,7 @@
       "chain_name": "bsc",
       "address": "0x18a15bf2aa1e514dc660cc4b08d05f9f6f0fdc4e",
       "name": "AdminFacet",
-      "role": "unknown",
+      "role": "proxy",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Alpaca Perpetual Futures Exchange",
@@ -9035,7 +9040,7 @@
       "chain_name": "bsc",
       "address": "0x18a15bf2aa1e514dc660cc4b08d05f9f6f0fdc4e",
       "name": "AdminFacet",
-      "role": "unknown",
+      "role": "proxy",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

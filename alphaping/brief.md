@@ -5,8 +5,8 @@
 - Project: AlphaPing (`alphaping`)
 - Website: [https://alphaping.ch/](https://alphaping.ch/)
 - Lifecycle: active (Tier 0, 35.3% below peak)
-- Generated: 2026-05-31T14:54:04.172Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-06-10T20:23:53.109Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $67,874,222.07
@@ -51,7 +51,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| Safe | unknown | ethereum | [`0xeb4af6...c04645`](./contracts/ethereum-1/0xeb4af6fa3afa08b10d593ec8ff87efb03bc04645/) | ⚠️ Unaudited |
+| Safe | proxy | ethereum | [`0xeb4af6...c04645`](./contracts/ethereum-1/0xeb4af6fa3afa08b10d593ec8ff87efb03bc04645/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

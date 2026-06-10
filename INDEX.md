@@ -23,11 +23,11 @@
 | [alchemix](./alchemix/) | $340.7M | 6.4% | $338.7M | active | 11 | 388 | 2026-06-10 |
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 15 | 58 | 2026-06-10 |
 | [allbridge](./allbridge/) | $19.3M | 0.0% | $19.3M | declining | 8 | 282 | 2026-06-10 |
-| [alpaca-finance](./alpaca-finance/) | $11.5M | 57.4% | $11.2M | declining | 19 | 144 | 2026-05-31 |
-| [alphagrowth](./alphagrowth/) | $6.3M | 18.2% | $6.3M | active | 16 | 56 | 2026-05-25 |
-| [alphaping](./alphaping/) | $67.9M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
-| [alphax](./alphax/) | $218.2K | 0.0% | $218.2K | active | 1 | 1 | 2026-05-24 |
-| [altitude.fi](./altitude.fi/) | $16.1M | 72.2% | ? | active | 7 | 124 | 2026-05-22 |
+| [alpaca-finance](./alpaca-finance/) | $11.5M | 57.4% | $11.2M | declining | 19 | 144 | 2026-06-10 |
+| [alphagrowth](./alphagrowth/) | $6.3M | 0.0% | $6.3M | active | 0 | 55 | 2026-06-10 |
+| [alphaping](./alphaping/) | $67.9M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
+| [alphax](./alphax/) | $218.2K | 0.0% | $218.2K | active | 1 | 1 | 2026-06-10 |
+| [altitude.fi](./altitude.fi/) | $16.1M | 72.2% | ? | declining | 7 | 124 | 2026-06-10 |
 | [ambient](./ambient/) | $2.7M | 64.7% | ? | declining | 3 | 30 | 2026-05-31 |
 | [ambire-wallet](./ambire-wallet/) | $5.8M | 0.0% | $5.8M | unknown | 12 | 9 | 2026-05-23 |
 | [amnis-finance](./amnis-finance/) | $11.9M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |

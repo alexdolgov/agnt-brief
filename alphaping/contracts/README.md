@@ -2,7 +2,7 @@
 
 1 unique implementations on ethereum · 1 deployments · 0 audited · 1 unaudited · 0 unverified
 
-## unknown (1)
+## proxy (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|

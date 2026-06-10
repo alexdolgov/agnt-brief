@@ -6,8 +6,8 @@
 
 - Project: Alpaca Finance (`alpaca-finance`)
 - Lifecycle: declining (Tier 0, 97.5% below peak)
-- Generated: 2026-05-31T07:06:36.701Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:26:07.488Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: bsc
 - Contract surface: 144 unique implementations (550 raw deployments)
 - DeFi Llama TVL: $46,096,508.00
@@ -16,7 +16,7 @@
 
 ## Project Description
 
-Alpaca Finance is a DeFi protocol on BSC offering leveraged yield farming and a perpetual futures exchange. It enables users to borrow assets to amplify farming returns and trade derivatives with leverage.
+Alpaca Finance is a multi-chain DeFi protocol with lending and leveraged yield farming as core products, including Alpaca Finance 2.0 lending and deployments beyond BSC such as Fantom. Users can lend assets, borrow to amplify yield-farming strategies, and interact with associated vaults, workers, adapters, and stablecoin-related modules. Alpaca also has a smaller derivatives/perpetuals product, but it should be treated as secondary to the lending and leveraged yield-farming surface rather than as one of only two primary product families.
 
 ### Architecture
 
@@ -132,7 +132,7 @@ Both families share infrastructure such as oracles (e.g., ChainLinkPriceOracle, 
 | WaultSwapRestrictedStrategyAddTwoSidesOptimal | core_logic | bsc | 4 deployments: bsc [`0xa7559b...748439`](./contracts/bsc-56/0xa7559bb0235a1c6003d0e48d2cfa89a6c8748439/); bsc `0xce37fd...0ec585`; bsc `0xd58b96...32ced3`; bsc `0xda5c06...e98586` | ⚠️ Unaudited |
 | PancakeswapV2StrategyAddTwoSidesOptimal | core_logic | bsc | 5 deployments: bsc [`0xa48fea...4c0f21`](./contracts/bsc-56/0xa48fea4153c3bd79ce12220580f4a1e0974c0f21/); bsc `0xbbf2a7...1d8f06`; bsc `0xe3cbb6...79eef3`; bsc `0xf02be2...7f3a97`; bsc `0xf25034...121c45` | ⚠️ Unaudited |
 | PancakeswapV2StrategyAddBaseTokenOnly | core_logic | bsc | 2 deployments: bsc [`0x77d23a...bfb40e`](./contracts/bsc-56/0x77d23aff927f3d46e51d449372c957b3cbbfb40e/); bsc `0xe38ebf...bed0be` | ⚠️ Unaudited |
-| AdminFacet | unknown | bsc | [`0x18a15b...0fdc4e`](./contracts/bsc-56/0x18a15bf2aa1e514dc660cc4b08d05f9f6f0fdc4e/) | ⚠️ Unaudited |
+| AdminFacet | proxy | bsc | [`0x18a15b...0fdc4e`](./contracts/bsc-56/0x18a15bf2aa1e514dc660cc4b08d05f9f6f0fdc4e/) | ⚠️ Unaudited |
 | AdminUpgradeabilityProxy | proxy | bsc | 69 deployments: bsc [`0x0159f4...31fe53`](./contracts/bsc-56/0x0159f44892ffed7bc9c00ac7ad3d60dcf331fe53/); bsc `0x05f34e...d85fb4`; bsc `0x091765...a2bb3a`; bsc `0x104c62...61545d`; bsc `0x10e691...594236`; bsc `0x158da8...951e59`; bsc `0x174e30...71f192`; bsc `0x1a174d...5f4db8`; bsc `0x20e5d4...365e82`; bsc `0x226bcb...a4c81f`; bsc `0x2c4a24...3bfd8c`; bsc `0x2ec106...52296b`; bsc `0x30a937...c0724e`; bsc `0x3be235...4c56eb`; bsc `0x3e0c8a...120934`; bsc `0x41c1d9...83c46f`; bsc `0x462bc5...207aaa`; bsc `0x4bfe94...bc1b5a`; bsc `0x50380a...0e6c90`; bsc `0x51782e...a5a695`; bsc `0x596958...e212c3`; bsc `0x5e2911...58f2e6`; bsc `0x61e58d...283c81`; bsc `0x6389ee...954962`; bsc `0x693430...8ea482`; bsc `0x6d203f...35378c`; bsc `0x74eec5...e68b1b`; bsc `0x7c9e73...87592f`; bsc `0x7f8be6...de0900`; bsc `0x844766...203f06`; bsc `0x86547e...2de1cc`; bsc `0x8ce75f...0dfeaa`; bsc `0x8e90eb...834a46`; bsc `0x90c9f3...28bb5e`; bsc `0x9328df...64b5f4`; bsc `0x93cf6e...6a4fdf`; bsc `0x946eb7...2581f7`; bsc `0x958bcc...240c15`; bsc `0x98b7e1...bb13a0`; bsc `0x9ed2ee...2f8f5a`; bsc `0xa09e12...78765f`; bsc `0xa8f37d...a82d51`; bsc `0xa964fc...9679a8`; bsc `0xaa5c95...e14124`; bsc `0xac712f...aa6682`; bsc `0xb222b4...54e1ee`; bsc `0xb2a587...24b891`; bsc `0xb63a71...887db2`; bsc `0xb82b93...017a14`; bsc `0xbde156...24a07c`; bsc `0xc40158...f1107a`; bsc `0xc5954c...66492b`; bsc `0xc5c5e6...cbf936`; bsc `0xc979ca...ec49ac`; bsc `0xcec250...e6780e`; bsc `0xd12b15...83353a`; bsc `0xd431e0...d60253`; bsc `0xd4bc4c...702285`; bsc `0xd6260d...39627f`; bsc `0xd7d069...fc0063`; bsc `0xd80783...f86f68`; bsc `0xd8bfe8...ee89cd`; bsc `0xddcf0f...f5f95e`; bsc `0xe36154...b01792`; bsc `0xe632ac...82b1fb`; bsc `0xe862d4...057130`; bsc `0xeb6e0b...7b7480`; bsc `0xebdecf...7073e7`; bsc `0xef1c5d...7d1bad` | ⚠️ Unaudited |
 | AlpacaFeeder | unknown | bsc | [`0x25be5d...3f6fad`](./contracts/bsc-56/0x25be5dae973894acfa810e9f4db7e3d73a3f6fad/) | ⚠️ Unaudited |
 | AusdPriceFeedKeepers | operational_periphery | bsc | [`0x4acb44...7f303f`](./contracts/bsc-56/0x4acb447a4fc0fa7d95cfd8fef1131526cb7f303f/) | ⚠️ Unaudited |
@@ -255,7 +255,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | bsc | [`0x744bb9...fc21d3`](./contracts/bsc-56/0x744bb95c6f31a0b6f7e7b53c46342b42aafc21d3/) | WaultSwapRestrictedStrategyAddBaseTokenOnly | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x77d23a...bfb40e`](./contracts/bsc-56/0x77d23aff927f3d46e51d449372c957b3cbbfb40e/) | PancakeswapV2StrategyAddBaseTokenOnly | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x18a15b...0fdc4e`](./contracts/bsc-56/0x18a15bf2aa1e514dc660cc4b08d05f9f6f0fdc4e/) | AdminFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x18a15b...0fdc4e`](./contracts/bsc-56/0x18a15bf2aa1e514dc660cc4b08d05f9f6f0fdc4e/) | AdminFacet | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x25be5d...3f6fad`](./contracts/bsc-56/0x25be5dae973894acfa810e9f4db7e3d73a3f6fad/) | AlpacaFeeder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x4acb44...7f303f`](./contracts/bsc-56/0x4acb447a4fc0fa7d95cfd8fef1131526cb7f303f/) | AusdPriceFeedKeepers | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x64fe10...5284ae`](./contracts/bsc-56/0x64fe10f7afbc6ffbd8f849b7a36a3295c45284ae/) | EmissionBridgeKeepers | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |

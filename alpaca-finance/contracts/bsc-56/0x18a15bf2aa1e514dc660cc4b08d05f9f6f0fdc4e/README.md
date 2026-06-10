@@ -4,7 +4,7 @@
 |---|---|
 | Chain | bsc (56) |
 | Address | `0x18a15bf2aa1e514dc660cc4b08d05f9f6f0fdc4e` |
-| Role | unknown |
+| Role | proxy |
 | Origin | native |
 | Audited | No |
 | Audits | n/a |

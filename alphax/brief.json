@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "alphax",
-  "generated_at": "2026-05-24T22:04:29.739Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:25:57.043Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "alphax",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1461018.79366,
+    "dl_tvl_usd": 1486770.26859,
     "tvl_usd": 218199.400552,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -59,9 +59,14 @@
     }
   },
   "topography": {
-    "project_purpose": "AlphaX is a derivatives protocol that enables users to trade perpetual contracts and other derivative products on-chain. It uses vault-based architecture to manage liquidity and positions.",
-    "relationship_narrative": "The protocol consists of a single product family where DEXVaultV1 serves as the core logic contract, and ERC1967Proxy acts as the upgradeable proxy pointing to it. All contracts are deployed by the same deployer, indicating a unified infrastructure.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

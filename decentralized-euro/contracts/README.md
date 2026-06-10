@@ -17,17 +17,17 @@
 | [BridgedDEPS](./base-8453/0x5f674bf6d559229bdd29d642d2e0978f1e282722/) | base | [`0x5f674b...282722`](./base-8453/0x5f674bf6d559229bdd29d642d2e0978f1e282722/) | ⚠️ Unaudited | Verified |
 | [StablecoinBridge (17 deployments)](./ethereum-1/0x0423f419de1c44151b6b000e2daa51859c1d5d2a/) | ethereum | 17 deployments: ethereum [`0x0423f4...1d5d2a`](./ethereum-1/0x0423f419de1c44151b6b000e2daa51859c1d5d2a/); ethereum `0x05620f...771702`; ethereum `0x20b0a1...19f1a7`; ethereum `0x2353d1...2c609f`; ethereum `0x3ed40f...9e1fee`; ethereum `0x3ef3d0...630341`; ethereum `0x4125cd...d8402b`; ethereum `0x4dfd46...3a13b1`; ethereum `0x73f38c...4f5897`; ethereum `0x76d8f5...43692b`; ethereum `0x7bbe8f...e346df`; ethereum `0x7f5173...4f2e11`; ethereum `0x8d8b5d...0fa020`; ethereum `0xb4ff74...092fd1`; ethereum `0xb66a40...8c9afe`; ethereum `0xd03cd3...182dbe`; ethereum `0xdc6450...be0130` | ✅ Audited | Verified |
 
-## registry (2)
+## registry (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [PositionFactory (5 deployments)](./ethereum-1/0x0cde500e6940931ed190ded77bb48640c9486392/) | ethereum | 5 deployments: ethereum [`0x0cde50...486392`](./ethereum-1/0x0cde500e6940931ed190ded77bb48640c9486392/); ethereum `0x167144...1ee5a8`; ethereum `0x3a3985...defe81`; ethereum `0x63cf7c...706b7e`; ethereum `0xcfa9b5...be2080` | ✅ Audited | Verified |
+
+## token (15)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [ClonableBeaconProxy](./arbitrum-42161/0x5e85faf503621830ca857a5f38b982e0cc57d537/) | arbitrum | [`0x5e85fa...57d537`](./arbitrum-42161/0x5e85faf503621830ca857a5f38b982e0cc57d537/) | ⚠️ Unaudited | Verified |
-| [PositionFactory (5 deployments)](./ethereum-1/0x0cde500e6940931ed190ded77bb48640c9486392/) | ethereum | 5 deployments: ethereum [`0x0cde50...486392`](./ethereum-1/0x0cde500e6940931ed190ded77bb48640c9486392/); ethereum `0x167144...1ee5a8`; ethereum `0x3a3985...defe81`; ethereum `0x63cf7c...706b7e`; ethereum `0xcfa9b5...be2080` | ✅ Audited | Verified |
-
-## token (14)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
 | [ERC20Lib](./ethereum-1/0x57724f65b3f914de7820c6f76b2099fa3a90f509/) | ethereum | [`0x57724f...90f509`](./ethereum-1/0x57724f65b3f914de7820c6f76b2099fa3a90f509/) | ⚠️ Unaudited | Verified |
 | [EUROPToken (2 deployments)](./ethereum-1/0x888883b5f5d21fb10dfeb70e8f9722b9fb0e5e51/) | ethereum | 2 deployments: ethereum [`0x888883...0e5e51`](./ethereum-1/0x888883b5f5d21fb10dfeb70e8f9722b9fb0e5e51/); ethereum `0xfbdaf9...2cff43` | ⚠️ Unaudited | Verified |
 | [EURSToken](./ethereum-1/0xdb25f211ab05b1c97d595516f45794528a807ad8/) | ethereum | [`0xdb25f2...807ad8`](./ethereum-1/0xdb25f211ab05b1c97d595516f45794528a807ad8/) | ⚠️ Unaudited | Verified |

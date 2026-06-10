@@ -4,7 +4,7 @@
 |---|---|
 | Chain | arbitrum (42161) |
 | Address | `0x5e85faf503621830ca857a5f38b982e0cc57d537` |
-| Role | registry |
+| Role | token |
 | Origin | native |
 | Audited | No |
 | Audits | n/a |

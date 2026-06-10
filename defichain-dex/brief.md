@@ -5,8 +5,8 @@
 - Project: DefiChain DEX (`defichain-dex`)
 - Website: [https://defichain.com/dex](https://defichain.com/dex)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:01.680Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:44:45.391Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $1,167,102.70

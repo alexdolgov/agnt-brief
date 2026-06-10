@@ -7,8 +7,8 @@
 - Project: Defi Kingdoms (`defi-kingdoms`)
 - Website: [https://www.defikingdoms.com](https://www.defikingdoms.com)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:01.678Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:46:47.303Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: harmony, klaytn
 - Contract surface: 5 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $7,705,351.69

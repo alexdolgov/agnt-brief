@@ -6,8 +6,8 @@
 
 - Project: Depth (`depth`)
 - Lifecycle: declining (Tier 0, 99.7% below peak)
-- Generated: 2026-06-10T20:59:01.701Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:47:41.388Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: heco
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,171,105.60

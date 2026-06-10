@@ -5,8 +5,8 @@
 - Project: DefiTuna (`defituna`)
 - Website: [https://defituna.com](https://defituna.com)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:01.691Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:48:50.564Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $4,626,739.00

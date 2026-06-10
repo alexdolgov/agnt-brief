@@ -4,8 +4,8 @@
 
 - Project: DeFIL (`defil`)
 - Lifecycle: active (Tier 0, 64.2% below peak)
-- Generated: 2026-06-10T20:59:01.687Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:49:41.909Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: ethereum
 - Contract surface: 51 unique implementations (86 raw deployments)
 - DeFi Llama TVL: $1,801,686.85

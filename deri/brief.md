@@ -5,8 +5,8 @@
 - Project: Deri (`deri`)
 - Website: [https://deri.io/#/index](https://deri.io/#/index)
 - Lifecycle: active (Tier 0, 90.3% below peak)
-- Generated: 2026-06-10T20:59:01.820Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:49:44.991Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: arbitrum, base, blast, bsc, ethereum, linea, manta, polygon, polygon-zkevm, scroll, sonic, zksync-era
 - Contract surface: 868 unique implementations (1904 raw deployments)
 - DeFi Llama TVL: $7,308,245.00
@@ -34,7 +34,7 @@ The Deri families share a common architecture of pools and gateways, with later 
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/deriprotocol/information))
 - ASD (verified + unaudited TVL): $2,403.10
 - Latest audit: 2025-03 (aging)
-- Staleness: 0 fresh, 1 aging, 5 stale, 1 unknown
+- Staleness: 0 fresh, 1 aging, 6 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -952,7 +952,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [{% embed url="<>" %}](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-DeriV3-1.0.pdf) | PeckShield | Audit | 2021-12 | stale | Direct | contract_name | 55 | high |
 | [{% embed url="<>" %}](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Deri-v1.0.pdf) | PeckShield | Audit | 2021-02 | stale | Direct | contract_name | 42 | high |
 | [{% embed url="<>" %} (also discovered via alternate URL)](https://github.com/peckshield/publications/blob/693bdb69e3e3e422b4f7e1f3130d841e631b4dab/audit_reports/PeckShield-Audit-Report-DeriV2-v1.0.pdf) | PeckShield | Audit | 2021-05 | stale | Direct | contract_name | 71 | high |
-| [{% embed url="<>" %}](https://skynet.certik.com/projects/deriprotocol) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://skynet.certik.com/projects/deriprotocol) | CertiK | Audit | 2021-06 | stale | Direct | n/a | 0 | n/a |
 | [{% embed url="<>" %}](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-DeriV2EverLasting-v1.0.pdf) | PeckShield | Audit | 2021-08 | stale | Direct | contract_name | 10 | high |
 | [PeckShield-Audit-Report-DeriV4-Supra-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-DeriV4-Supra-v1.0.pdf) | PeckShield | Audit | 2025-03 | aging | Direct | contract_name | 16 | high |
 | [Active Bug Bounty Program](https://immunefi.com/bug-bounty/deriprotocol/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |

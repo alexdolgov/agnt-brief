@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "deri",
-  "generated_at": "2026-06-10T20:59:01.820Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-10T22:49:44.991Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "deri",
@@ -67,8 +67,8 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 1,
-      "stale": 5,
-      "unknown": 1
+      "stale": 6,
+      "unknown": 0
     }
   },
   "topography": {
@@ -36478,8 +36478,8 @@
       "report_url": "https://skynet.certik.com/projects/deriprotocol",
       "auditor": "CertiK",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2021-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,

@@ -5,17 +5,17 @@
 - Project: Aevo (`aevo`)
 - Website: [https://app.aevo.xyz/r/defillama](https://app.aevo.xyz/r/defillama)
 - Lifecycle: active (Tier 0, 83.8% below peak)
-- Generated: 2026-05-25T14:50:22.699Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:17:42.599Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: arbitrum, base, ethereum, optimism
-- Contract surface: 271 unique implementations (652 raw deployments)
-- DeFi Llama TVL: $20,565,266.00
-- On-chain TVL (included contracts): $98,285,026.70
-- TVL by chain: Ethereum $53,511,285.78 | Arbitrum $25,537,058.85 | Optimism $17,669,989.51 | Base $1,566,692.57
+- Contract surface: 256 unique implementations (631 raw deployments)
+- DeFi Llama TVL: $20,277,667.00
+- On-chain TVL (included contracts): $96,768,351.97
+- TVL by chain: Ethereum $51,994,611.05 | Arbitrum $25,537,058.85 | Optimism $17,669,989.51 | Base $1,566,692.57
 
 ## Project Description
 
-Aevo is a decentralized derivatives exchange offering options and perpetual futures trading. It uses a combination of on-chain vaults for deposits and off-chain order matching, with settlement on Ethereum and Layer 2 networks.
+Aevo is a decentralized crypto derivatives exchange focused on options and perpetual futures trading. Current protocol characterization should be tied to verified Aevo deployments and DefiLlama's Aevo Perps derivatives tracking, while legacy Ribbon/Aevo Options components and inherited Ribbon Finance contracts or audits should be labeled separately unless current production use and bytecode/version equivalence are verified.
 
 ### Architecture
 
@@ -23,39 +23,36 @@ The Deposit contracts family provides the bridging infrastructure that feeds int
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 13/108 (12.0%)
-- Verified + Unaudited implementations: 90
+- Verified implementations audited: 11/93 (11.8%)
+- Verified + Unaudited implementations: 77
 - Verified by bytecode match: 5
 - Unverified implementations: 163
-- Unique implementations: 271
-- Raw deployments: 652
-- Audits discovered: 17
-- Scoreable audits (matched contracts): 6
-- ASD (verified + unaudited TVL): $1,516,674.73
-- Latest audit: 2024-01 (stale)
-- Staleness: 0 fresh, 0 aging, 16 stale, 1 unknown
+- Unique implementations: 256
+- Raw deployments: 631
+- Audits discovered: 13
+- Scoreable audits (matched contracts): 4
+- ASD (verified + unaudited TVL): $26,144,406.34
+- Latest audit: 2023-10 (stale)
+- Staleness: 0 fresh, 0 aging, 12 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Quantstamp | Tier 2 | 7 | 6.5% | 2021-05 |
-| PeckShield | Tier 2 | 2 | 1.9% | 2022-03 |
-| Ribbon | Tier 2 | 2 | 1.9% | 2024-01 |
-| Unknown | Tier 2 | 1 | 0.9% | 2021-07 |
-| VAR | Tier 2 | 1 | 0.9% | 2023-10 |
+| Quantstamp | Tier 2 | 7 | 7.5% | 2021-05 |
+| PeckShield | Tier 2 | 2 | 2.2% | 2022-03 |
+| Unknown | Tier 2 | 1 | 1.1% | 2021-07 |
+| VAR | Tier 2 | 1 | 1.1% | 2023-10 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (13)
+### ✅ Verified + Audited (11)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | Vault | core_logic | arbitrum | 46 deployments: optimism `0x2bbc2e...625626`; optimism `0x31a7ab...4ab9e4`; optimism `0x3ab7b9...7a4ec2`; optimism `0x3bb3b7...f35984`; optimism `0x44343a...241b02`; optimism `0x4436ba...576e72`; optimism `0x5c7dd6...10ae7e`; optimism `0x61ce66...65ff34`; optimism `0x780962...3a28ef`; optimism `0x88ce86...8a6965`; optimism `0x923960...3590b6`; optimism `0xad7bdd...2c1bae`; optimism `0xb15f96...bb83fc`; optimism `0xbb9cf2...8fbd8c`; optimism `0xcbecd6...19b608`; optimism `0xd7b091...1d20e8`; optimism `0xdd4c71...eab86d`; optimism `0xdef0bf...7aa98e`; optimism `0xe59678...edcec9`; optimism `0xe8fea3...3dfa99`; optimism `0xe9f2ed...9e0415`; optimism `0xfff4a3...e80584`; base `0x5d6689...64e198`; base `0x6ee390...27fb48`; base `0xa8bd0e...779e8b`; arbitrum [`0x082526...1acee9`](./contracts/arbitrum-42161/0x0825266f72e8841d7fea350b20dd65aa861acee9/); arbitrum `0x087607...4082c3`; arbitrum `0x11b3a7...8524a8`; arbitrum `0x3d20c6...60896f`; arbitrum `0x3faf49...69d990`; arbitrum `0x492baf...e9da07`; arbitrum `0x4ed9ed...743553`; arbitrum `0x5e027a...e32882`; arbitrum `0x7711c9...3e9ddb`; arbitrum `0x80d40e...4d137c`; arbitrum `0x8e9f58...dfc922`; arbitrum `0x90bfb3...30e161`; arbitrum `0x9d3e02...b4df67`; arbitrum `0xa0e9b6...0fde77`; arbitrum `0xb2cb9a...1a60a6`; arbitrum `0xb37130...c68901`; arbitrum `0xd7bbe2...d13047`; arbitrum `0xd7e13d...76165d`; arbitrum `0xed9021...df7bc3`; arbitrum `0xf476d9...1a4b5a`; arbitrum `0xfb7b06...076e0b` | ✅ Audited |
-| AevoToken | token | ethereum | [`0xb528ed...13b997`](./contracts/ethereum-1/0xb528edbef013aff855ac3c50b381f253af13b997/) | ✅ Audited |
 | RibbonToken | token | ethereum | 3 deployments: ethereum [`0x3d11e0...efe64f`](./contracts/ethereum-1/0x3d11e0c0de0cf8bfdf85ea05509cfed9f0efe64f/); ethereum `0x5f7160...9737d2`; ethereum `0x6123b0...21fa6b` | ✅ Audited |
-| AevoStaking | unknown | ethereum | 10 deployments: ethereum [`0x0e238a...4e6f5e`](./contracts/ethereum-1/0x0e238a03757c7739840a2b3982c5cb85064e6f5e/); ethereum `0x389130...46ad81`; ethereum `0x665f89...dfeec0`; ethereum `0x70924e...334f1e`; ethereum `0x7a3567...9f6d3b`; ethereum `0x8ac509...8f72ad`; ethereum `0x8f9c5d...3551cd`; ethereum `0xdf4061...a25261`; ethereum `0xec4f5c...d8fa69`; ethereum `0xffc3fa...735d1c` | ✅ Audited |
 | Controller | governance | optimism | 3 deployments: optimism [`0x5e648e...55a6aa`](./contracts/optimism-10/0x5e648e8391b4e7f764b3e79d8a786078c755a6aa/); optimism `0x6dc5f8...6b470c`; arbitrum `0x9cf6f3...a1bc56` | ✅ Audited |
 | L1ERC721Bridge | operational_periphery | ethereum | 6 deployments: ethereum [`0x2e7d7b...d676f0`](./contracts/ethereum-1/0x2e7d7b188d663f38c2e4ff9c59328458a2d676f0/); ethereum `0x66cee1...30a748`; ethereum `0x69ce76...155821`; ethereum `0x93314c...d66630`; ethereum `0xe4fc17...62381d`; ethereum `0xe7935c...30c639` | ✅ Audited |
 | L2OutputOracle | operational_periphery | ethereum | 6 deployments: ethereum [`0x2efa0d...83a722`](./contracts/ethereum-1/0x2efa0d1cbd36aa0db7c0b59d32f6da68ca83a722/); ethereum `0x3e5209...2f5b14`; ethereum `0x909e51...ae3770`; ethereum `0x94c0d6...08e4f1`; ethereum `0x9f82b5...2eb376`; ethereum `0xf482aa...fba567` | ✅ Audited |
@@ -66,27 +63,19 @@ The Deposit contracts family provides the bridging infrastructure that feeds int
 | ProxyAdmin | governance | ethereum | 3 deployments: ethereum [`0x27ff92...7c5019`](./contracts/ethereum-1/0x27ff92b30cae00dabcf8045cc68fc9dcb67c5019/); ethereum `0x9bd8c9...890f09`; ethereum `0xb145c0...dd0f39` | ✅ Audited |
 | SystemConfig | governance | ethereum | [`0xf761cc...0cd9ca`](./contracts/ethereum-1/0xf761cc49bb127ab666899b41cdc4e62fa50cd9ca/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (90)
+### ⚠️ Verified + Unaudited (77)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| ArcxTokenV2 | token | ethereum | [`0x1321f1...9bb288`](./contracts/ethereum-1/0x1321f1f1aa541a56c31682c57b80ecfccd9bb288/) | ⚠️ Unaudited |
-| bVault | core_logic | ethereum | 6 deployments: ethereum [`0x2c2327...568ea6`](./contracts/ethereum-1/0x2c23276107b45e64c8c59482f4a24f4f2e568ea6/); ethereum `0x378388...a35153`; ethereum `0x3fb6b0...15a2cc`; ethereum `0x750d30...7996d0`; ethereum `0x801690...85dc0e`; ethereum `0x8d9a39...ec6108` | ⚠️ Unaudited |
-| BACDAIPool | core_logic | ethereum | [`0xebd126...02bde8`](./contracts/ethereum-1/0xebd12620e29dc6c452db7b96e1f190f3ee02bde8/) | ⚠️ Unaudited |
-| BACUSDCPool | core_logic | ethereum | [`0x518821...429fd4`](./contracts/ethereum-1/0x51882184b7f9beed6db9c617846140da1d429fd4/) | ⚠️ Unaudited |
-| BACUSDTPool | core_logic | ethereum | [`0x2833bd...877e44`](./contracts/ethereum-1/0x2833bdc5b31269d356bdf92d0fd8f3674e877e44/) | ⚠️ Unaudited |
-| StakingAccrualERC20V5 | token | ethereum | [`0x9bffad...fd7d9d`](./contracts/ethereum-1/0x9bffad7a6d5f52dbc51cae33e419793c72fd7d9d/) | ⚠️ Unaudited |
-| BACSUSDPool | core_logic | ethereum | [`0xdc42a2...93305c`](./contracts/ethereum-1/0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c/) | ⚠️ Unaudited |
-| ERC20Peg | token | ethereum | [`0x76bac8...4c6e32`](./contracts/ethereum-1/0x76bac85e1e82cd677faa2b3f00c4a2626c4c6e32/) | ⚠️ Unaudited |
+| AevoToken | token | ethereum | [`0xb528ed...13b997`](./contracts/ethereum-1/0xb528edbef013aff855ac3c50b381f253af13b997/) | ⚠️ Unaudited |
 | L1SwapVault | core_logic | ethereum | 3 deployments: ethereum [`0x426d1f...aecbe6`](./contracts/ethereum-1/0x426d1f3866bfcdf4d0efefed1ba3c5e06caecbe6/); ethereum `0x60453f...74aefc`; ethereum `0x728113...b92a3a` | ⚠️ Unaudited |
 | AcrossImplL2 | unknown | optimism | [`0x2ddf16...b41fc0`](./contracts/optimism-10/0x2ddf16ba6d0180e5357d5e170ef1917a01b41fc0/) | ⚠️ Unaudited |
 | AcrossImplV2 | unknown | arbitrum | 2 deployments: optimism `0xa7f7e4...d7de47`; arbitrum [`0x0c0858...0c5db6`](./contracts/arbitrum-42161/0x0c0858290b6b268a93fb557af06390a3460c5db6/) | ⚠️ Unaudited |
 | AddressAssemble | unknown | optimism | 2 deployments: optimism [`0x4513f5...cfc24c`](./contracts/optimism-10/0x4513f50921a0333f2067ebdb9369daa81bcfc24c/); optimism `0xf5cada...19d5e8` | ⚠️ Unaudited |
 | AddressManager | governance | ethereum | 3 deployments: ethereum [`0x7a616b...28ecc1`](./contracts/ethereum-1/0x7a616b25e7c96fc4d652966d7ddabb51de28ecc1/); ethereum `0xbbb4a5...bb02d9`; ethereum `0xeace26...3b3d2e` | ⚠️ Unaudited |
+| AevoStaking | unknown | ethereum | 10 deployments: ethereum [`0x0e238a...4e6f5e`](./contracts/ethereum-1/0x0e238a03757c7739840a2b3982c5cb85064e6f5e/); ethereum `0x389130...46ad81`; ethereum `0x665f89...dfeec0`; ethereum `0x70924e...334f1e`; ethereum `0x7a3567...9f6d3b`; ethereum `0x8ac509...8f72ad`; ethereum `0x8f9c5d...3551cd`; ethereum `0xdf4061...a25261`; ethereum `0xec4f5c...d8fa69`; ethereum `0xffc3fa...735d1c` | ⚠️ Unaudited |
 | AnyswapImplL2 | unknown | arbitrum | [`0x853730...efff41`](./contracts/arbitrum-42161/0x8537307810fc40f4073a12a38554d4ff78efff41/) | ⚠️ Unaudited |
 | ArbitrumL2Switchboard | unknown | arbitrum | 5 deployments: arbitrum [`0x6a4715...94a8d0`](./contracts/arbitrum-42161/0x6a4715fc607c9ebda1377563552d45cbd194a8d0/); arbitrum `0xab2f8c...5770d3`; arbitrum `0xd9f45c...88a8e8`; arbitrum `0xdff78a...2a75f7`; arbitrum `0xf9a512...1400d5` | ⚠️ Unaudited |
-| BACyCRVPool | core_logic | ethereum | [`0xc462d8...14c3bf`](./contracts/ethereum-1/0xc462d8ee54953e7d7bf276612b75387ea114c3bf/) | ⚠️ Unaudited |
-| BlackPoolToken | core_logic | ethereum | [`0x0ec9f7...7e37da`](./contracts/ethereum-1/0x0ec9f76202a7061eb9b3a7d6b59d36215a7e37da/) | ⚠️ Unaudited |
 | BlockHashChain | unknown | optimism | [`0x792b49...17e90d`](./contracts/optimism-10/0x792b49617491b936cbd61592f2c7d2e07d17e90d/) | ⚠️ Unaudited |
 | BugSubmission | unknown | optimism | 2 deployments: optimism [`0x5ee146...0a021f`](./contracts/optimism-10/0x5ee146ea004afbb339d9c4164ca04c89f00a021f/); optimism `0x6c7a28...06d9ae` | ⚠️ Unaudited |
 | CapacitorFactory | registry | optimism | 2 deployments: optimism [`0x866829...8ee7d0`](./contracts/optimism-10/0x8668293ba7de23e2e8e9dd5368e6e4eb778ee7d0/); arbitrum `0xbce4cd...67136a` | ⚠️ Unaudited |
@@ -119,7 +108,6 @@ The Deposit contracts family provides the bridging infrastructure that feeds int
 | LootDAI | unknown | optimism | 10 deployments: optimism [`0x053178...60c76d`](./contracts/optimism-10/0x0531789edca5f6e641b8d3ae48ef9fda4660c76d/); optimism `0x8f5e37...7159d1`; optimism `0xadf215...d5282a`; optimism `0xc6962f...c176a4`; optimism `0xc893bd...5cec55`; arbitrum `0x488b62...d80093`; arbitrum `0x4a77fb...0bc5d4`; arbitrum `0x9b9875...bce6a8`; arbitrum `0xce7c4d...fda626`; arbitrum `0xfaee8c...253ecf` | ⚠️ Unaudited |
 | LootVault | core_logic | arbitrum | 10 deployments: optimism `0x85e9f9...bb9363`; optimism `0x87afc9...9a63a7`; optimism `0x97c783...a12765`; optimism `0x97fad2...5139a4`; optimism `0x9b76a2...5b6fcd`; arbitrum [`0x1f7e83...af2a7c`](./contracts/arbitrum-42161/0x1f7e83f14c18f1f1cdaab77142805338dcaf2a7c/); arbitrum `0x6426ca...5ae16f`; arbitrum `0x93783b...305e3b`; arbitrum `0x97c31d...cd8d62`; arbitrum `0xacd33c...a1ec8a` | ⚠️ Unaudited |
 | MakeItRain | unknown | optimism | [`0x60e04b...b5f8fb`](./contracts/optimism-10/0x60e04bab3d82a16a7963bcd44b494bd9bbb5f8fb/) | ⚠️ Unaudited |
-| MasterChef | unknown | ethereum | [`0xc2edad...a888cd`](./contracts/ethereum-1/0xc2edad668740f1aa35e4d8f227fb8e17dca888cd/) | ⚠️ Unaudited |
 | MerkleDistributorAdjustable | operational_periphery | ethereum | 5 deployments: ethereum [`0x04b47c...9ceeed`](./contracts/ethereum-1/0x04b47c3b679c588a23e905b8579e4cc9f19ceeed/); ethereum `0x5c648b...184d76`; ethereum `0x778046...f21591`; ethereum `0x80c86b...5de404`; ethereum `0x9946a1...b76769` | ⚠️ Unaudited |
 | MerkleDistributorWithDeadline | operational_periphery | ethereum | 2 deployments: ethereum [`0x1f197c...7d9381`](./contracts/ethereum-1/0x1f197ccb582179ef4a408f94c78137eeb77d9381/); ethereum `0xd4b812...2a2483` | ⚠️ Unaudited |
 | MerkleDistributorWithStaking | operational_periphery | ethereum | [`0xce90d5...3223e6`](./contracts/ethereum-1/0xce90d5f1f313e25a3e32da3da97a041ee93223e6/) | ⚠️ Unaudited |
@@ -145,18 +133,14 @@ The Deposit contracts family provides the bridging infrastructure that feeds int
 | SimulatorUtils | unknown | optimism | [`0xba9c93...da4f97`](./contracts/optimism-10/0xba9c93014648fc64a0beac857b95c0ff22da4f97/) | ⚠️ Unaudited |
 | Socket | unknown | arbitrum | 10 deployments: optimism `0x1eb392...2d8166`; optimism `0x234462...3ad4b6`; optimism `0x301bd2...a1c0a4`; optimism `0x91ce46...2428f7`; optimism `0xd10cb2...6bf573`; arbitrum [`0x16e4a6...0a4ee8`](./contracts/arbitrum-42161/0x16e4a6af6e81c7997fc784c8e621316e480a4ee8/); arbitrum `0x37cc67...55f6ba`; arbitrum `0x9e3e47...13a9d1`; arbitrum `0xbc080a...8306a7`; arbitrum `0xfb6daf...634066` | ⚠️ Unaudited |
 | SocketBatcher | periphery | arbitrum | 12 deployments: optimism `0x208cb8...c54408`; optimism `0x2b351e...86fb7b`; optimism `0x2c76df...920b7e`; optimism `0x321767...707b59`; optimism `0x5afa7d...5d2d9b`; optimism `0xffb098...0c8fce`; arbitrum [`0x107e18...d468a8`](./contracts/arbitrum-42161/0x107e182815c5e164e05f0c2cf478ace44fd468a8/); arbitrum `0x1808ca...c0113b`; arbitrum `0x2ea720...1f4b8e`; arbitrum `0x96fef4...ae3b0b`; arbitrum `0xd7b2e3...0255f7`; arbitrum `0xfbb3a5...7a8bd7` | ⚠️ Unaudited |
-| StakedBPT | token | ethereum | [`0x46c509...7b1ee2`](./contracts/ethereum-1/0x46c5098f73fa656e82d7e9afbf3c00b32b7b1ee2/) | ⚠️ Unaudited |
 | SurgePass | unknown | optimism | [`0x35479b...75f937`](./contracts/optimism-10/0x35479b023e508ee9a7b533dbb5b516bb6875f937/) | ⚠️ Unaudited |
 | SwitchBeyond | unknown | optimism | 3 deployments: optimism [`0x52a71b...c72daf`](./contracts/optimism-10/0x52a71b10ce5ecf54b6a583a8e1a2a6adf8c72daf/); optimism `0x91e4c4...75c76b`; optimism `0xd075c9...8172dd` | ⚠️ Unaudited |
 | SwitchboardSimulator | unknown | optimism | [`0xbd69f4...b86056`](./contracts/optimism-10/0xbd69f42d91c57fe6ac84d1e57fc5c84428b86056/) | ⚠️ Unaudited |
 | SyncPlug | unknown | arbitrum | 2 deployments: optimism `0x74af6d...7081df`; arbitrum [`0x50d1f0...803319`](./contracts/arbitrum-42161/0x50d1f0d98a59441e43ecd259598d90b305803319/) | ⚠️ Unaudited |
 | ThreeMessageCounts | unknown | optimism | [`0x7a369b...d821bc`](./contracts/optimism-10/0x7a369b3d9cba81d338b98e25422335bfd5d821bc/) | ⚠️ Unaudited |
-| TokenPool | core_logic | ethereum | [`0xc93528...793d84`](./contracts/ethereum-1/0xc935285b0d88069305431dace0c3c01d7e793d84/) | ⚠️ Unaudited |
 | TransmitManager | governance | optimism | 10 deployments: optimism [`0x0a523d...ae6163`](./contracts/optimism-10/0x0a523d8d8e2ad6f6623b3318a59743546cae6163/); optimism `0x48261a...b752c1`; optimism `0x6fedde...68dce5`; optimism `0x7398da...cb1470`; optimism `0xd3f391...66fa3e`; arbitrum `0x43a9b2...9755ca`; arbitrum `0x63c10c...2a0416`; arbitrum `0x6fc8d9...f8b4b6`; arbitrum `0xbf0572...cbb5d4`; arbitrum `0xd648a4...0d7f2e` | ⚠️ Unaudited |
 | Traveller | unknown | optimism | 2 deployments: optimism [`0xb81de2...849000`](./contracts/optimism-10/0xb81de21eb8811968c03c8ca96b2c5901ee849000/); optimism `0xd6ff17...ed7b22` | ⚠️ Unaudited |
 | TwoMessageCounts | unknown | optimism | [`0xafbe4b...4eccf2`](./contracts/optimism-10/0xafbe4bc31b3e5636e1446a987a42d8ad5b4eccf2/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | 2 deployments: ethereum [`0x570242...6507e5`](./contracts/ethereum-1/0x57024267e8272618f9c5037d373043a8646507e5/); ethereum `0x9f624b...980808` | ⚠️ Unaudited |
-| Vyper_contract | unknown | ethereum | [`0xdf5e0e...d806a8`](./contracts/ethereum-1/0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8/) | ⚠️ Unaudited |
 | Window | unknown | optimism | [`0x6f0df1...d119a1`](./contracts/optimism-10/0x6f0df1d93dc1673c933a81eb122112c511d119a1/) | ⚠️ Unaudited |
 | ZeroXRefuelImpl | unknown | optimism | [`0x029057...9d88d0`](./contracts/optimism-10/0x029057df831cce19fc7adbb8d7283afcbb9d88d0/) | ⚠️ Unaudited |
 | ZeroXSwapImpl | unknown | optimism | [`0x2d7f2b...9071fe`](./contracts/optimism-10/0x2d7f2b4cee097f08ed8d30d928a40eb1379071fe/) | ⚠️ Unaudited |
@@ -366,10 +350,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Quantstamp Theta Vault.pdf](https://github.com/ribbon-finance/audit/blob/master/reports/Quantstamp%20Theta%20Vault.pdf) | Quantstamp | Audit | 2021-05 | stale | Direct | contract_name | 21 | high |
 | [RibbonThetaVault V2 Smart Contract Review And Verification.pdf](https://github.com/ribbon-finance/audit/blob/master/reports/RibbonThetaVault%20V2%20Smart%20Contract%20Review%20And%20Verification.pdf) | Unknown | Audit | 2021-07 | stale | Direct | contract_name | 46 | high |
 | [RibbonThetaYearn-18june.pdf](https://github.com/ribbon-finance/audit/blob/master/reports/RibbonThetaYearn-18june.pdf) | Unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [VAR-Ribbon230918.pdf](https://github.com/aevoxyz/audit/blob/main/VAR-Ribbon230918.pdf) | Ribbon | Audit | 2023-10 | stale | Direct | n/a | 0 | n/a |
-| [VAR_Ribbon.pdf](https://github.com/aevoxyz/audit/blob/main/VAR_Ribbon.pdf) | Ribbon | Audit | 2022-06 | stale | Direct | n/a | 0 | n/a |
-| [VAR_Ribbon_230604.pdf](https://github.com/aevoxyz/audit/blob/main/VAR_Ribbon_230604.pdf) | Ribbon | Audit | 2023-06 | stale | Direct | contract_name | 1 | high |
-| [VAR_Ribbon_240116_aevo_governance_2-V1.pdf](https://github.com/aevoxyz/audit/blob/main/VAR_Ribbon_240116_aevo_governance_2-V1.pdf) | Ribbon | Audit | 2024-01 | stale | Direct | contract_name | 11 | high |
 
 ## Coverage Gaps
 
@@ -377,7 +357,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x2c2327...568ea6`](./contracts/ethereum-1/0x2c23276107b45e64c8c59482f4a24f4f2e568ea6/) | bVault | core_logic | $309,205.54 | Verified native implementation with $309,205.54 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb528ed...13b997`](./contracts/ethereum-1/0xb528edbef013aff855ac3c50b381f253af13b997/) | AevoToken | token | $26,144,406.34 | Verified native implementation with $26,144,406.34 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x4513f5...cfc24c`](./contracts/optimism-10/0x4513f50921a0333f2067ebdb9369daa81bcfc24c/) | AddressAssemble | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7a616b...28ecc1`](./contracts/ethereum-1/0x7a616b25e7c96fc4d652966d7ddabb51de28ecc1/) | AddressManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x6a4715...94a8d0`](./contracts/arbitrum-42161/0x6a4715fc607c9ebda1377563552d45cbd194a8d0/) | ArbitrumL2Switchboard | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -446,19 +426,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 136 |
-| upstream | 18 |
+| native | 135 |
+| upstream | 12 |
 | standard_library | 3 |
-| needs_review | 114 |
+| needs_review | 106 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 11
+- Audits with zero matched contracts: 9
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=6
-- Match method counts: extraction_exact=87
+- Extraction confidence breakdown: high=4
+- Match method counts: extraction_exact=75
 
 Zero-match audit list:
 
@@ -471,7 +451,5 @@ Zero-match audit list:
 - [1903] PeckShield-Audit-Report-RibbonSwap.pdf
 - [1904] PeckShield-Audit-Report-RibbonTreasuryVault.pdf
 - [1907] RibbonThetaYearn-18june.pdf
-- [1909] VAR-Ribbon230918.pdf
-- [1910] VAR_Ribbon.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

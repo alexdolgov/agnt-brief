@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "aethir",
-  "generated_at": "2026-05-31T06:57:08.605Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:14:47.978Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "aethir",
     "tier": 0,
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 9144702.2515,
+    "dl_tvl_usd": 9183816.3045,
     "tvl_usd": 257030903.7042486,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Aethir provides a token and a wrapper contract that likely enables staking, wrapping, or governance functionality for the AethirToken on Ethereum.",
+    "project_purpose": "Aethir is an on-demand distributed GPU compute and cloud infrastructure network. Its Ethereum contracts, including ATH token-related wrapper, staking or reward components, checker-node/reward infrastructure, and related Web3 mechanisms, support the tokenized and incentive layers of the broader GPU compute network rather than defining the entire project as only a token, wrapper, staking, or governance system.",
     "relationship_narrative": "The TransparentUpgradeableProxy serves as the upgradeable proxy for the AethirWrapper implementation, allowing the wrapper logic to be updated while preserving state. The AethirToken is the core asset that the wrapper likely interacts with.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 5,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

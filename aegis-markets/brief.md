@@ -5,17 +5,17 @@
 - Project: Aegis Markets (`aegis-markets`)
 - Website: [https://aegis.markets/](https://aegis.markets/)
 - Lifecycle: active (Tier 0, 70.6% below peak)
-- Generated: 2026-05-24T12:02:26.239Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:16:30.914Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: base, unichain
 - Contract surface: 15 unique implementations (33 raw deployments)
-- DeFi Llama TVL: $2,362,405.99
+- DeFi Llama TVL: $2,328,928.83
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Aegis Markets is a liquidity management protocol that automates concentrated liquidity positions on Uniswap V3-style AMMs. It dynamically adjusts position ranges and fees to optimize returns for liquidity providers.
+Aegis Markets is Uniswap v4 programmable market infrastructure focused on dynamic-fee hooks and related liquidity/market mechanisms, including margin-interest activity where supported, rather than a Uniswap V3-style concentrated-liquidity range rebalancer.
 
 ### Architecture
 

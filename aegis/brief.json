@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "aegis",
-  "generated_at": "2026-05-31T14:54:11.136Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T20:14:47.919Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "aegis",
@@ -56,7 +56,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Aegis is a DeFi protocol focused on basis trading, offering yield-bearing stablecoin-like tokens. It provides users with exposure to basis trading strategies through its YUSD token.",
+    "project_purpose": "Aegis is an active stablecoin and yield protocol centered on YUSD and marketed/upcoming jUSD, using delta-neutral, basis-trading, and funding-rate strategies to generate stablecoin yield. Its Ethereum contract topology includes YUSD as the stablecoin token, AegisMinting for core issuance/minting, AegisRewards for rewards/distribution, AegisOracle for pricing/periphery infrastructure, and AegisConfig for governance/configuration. The currently verified Ethereum live code-bearing surface excludes the no-code address 0xab3dbcd9b096c3ff76275038bf58eac10d22c61f; BSC/Binance exposure should be discovered or separately noted because project TVL includes BSC.",
     "relationship_narrative": "The protocol consists of a single product family centered around the YUSD token, with no additional supporting contracts identified in the inventory.",
     "product_family_count": 1
   },
@@ -106,7 +106,7 @@
       "chain_name": "ethereum",
       "address": "0xa30644ca67e0a93805c443df4a6e1856d8bd815b",
       "name": "AegisMinting",
-      "role": "unknown",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -168,7 +168,7 @@
       "chain_name": "ethereum",
       "address": "0x8adcfaf1b64cc514524b80565bcc732273ddeafd",
       "name": "AegisRewards",
-      "role": "unknown",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -230,7 +230,7 @@
       "chain_name": "ethereum",
       "address": "0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a",
       "name": "YUSD",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Aegis YUSD",
@@ -275,7 +275,7 @@
       "chain_name": "ethereum",
       "address": "0xa30644ca67e0a93805c443df4a6e1856d8bd815b",
       "name": "AegisMinting",
-      "role": "unknown",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -295,7 +295,7 @@
       "chain_name": "ethereum",
       "address": "0x8adcfaf1b64cc514524b80565bcc732273ddeafd",
       "name": "AegisRewards",
-      "role": "unknown",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -305,7 +305,7 @@
       "chain_name": "ethereum",
       "address": "0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a",
       "name": "YUSD",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

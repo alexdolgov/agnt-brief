@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Aethir
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Aethir (`aethir`)
 - Website: [https://aethir.com/](https://aethir.com/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T06:57:08.605Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:14:47.978Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: ethereum
 - Contract surface: 5 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $9,144,702.25
+- DeFi Llama TVL: $9,183,816.30
 - On-chain TVL (included contracts): $257,030,903.70
 - TVL by chain: Ethereum $257,030,903.70
 
 ## Project Description
 
-Aethir provides a token and a wrapper contract that likely enables staking, wrapping, or governance functionality for the AethirToken on Ethereum.
+Aethir is an on-demand distributed GPU compute and cloud infrastructure network. Its Ethereum contracts, including ATH token-related wrapper, staking or reward components, checker-node/reward infrastructure, and related Web3 mechanisms, support the tokenized and incentive layers of the broader GPU compute network rather than defining the entire project as only a token, wrapper, staking, or governance system.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The TransparentUpgradeableProxy serves as the upgradeable proxy for the AethirWr
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $257,030,903.70 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

@@ -13,11 +13,11 @@
 | [acre](./acre/) | $3.0 | 0.5% | $3.0 | active | 4 | 220 | 2026-06-10 |
 | [across](./across/) | $28.1M | 0.0% | $28.1M | active | 0 | 142 | 2026-06-10 |
 | [acryptos](./acryptos/) | $5.2M | 25.0% | $253.0K | active | 7 | 311 | 2026-06-10 |
-| [aegis-markets](./aegis-markets/) | $2.4M | 0.0% | ? | active | 2 | 15 | 2026-05-24 |
-| [aegis](./aegis/) | $35.8M | 0.0% | ? | active | 0 | 6 | 2026-05-31 |
-| [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 0 | 5 | 2026-05-31 |
-| [aevo](./aevo/) | $98.3M | 12.0% | $1.5M | active | 17 | 271 | 2026-05-25 |
-| [aftermath-finance](./aftermath-finance/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
+| [aegis-markets](./aegis-markets/) | $2.3M | 0.0% | ? | active | 2 | 15 | 2026-06-10 |
+| [aegis](./aegis/) | $35.8M | 0.0% | ? | active | 0 | 6 | 2026-06-10 |
+| [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | active | 0 | 5 | 2026-06-10 |
+| [aevo](./aevo/) | $96.8M | 11.8% | $26.1M | active | 13 | 256 | 2026-06-10 |
+| [aftermath-finance](./aftermath-finance/) | $5.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [ailayer-farm](./ailayer-farm/) | $211.9K | 0.0% | $211.9K | active | 0 | 1 | 2026-05-31 |
 | [aitech](./aitech/) | $4.0M | 0.0% | ? | unknown | 1 | 2 | 2026-05-23 |
 | [alchemix](./alchemix/) | $340.7M | 6.4% | $338.7M | declining | 13 | 388 | 2026-05-31 |

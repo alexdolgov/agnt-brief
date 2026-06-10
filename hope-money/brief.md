@@ -4,8 +4,8 @@
 
 - Project: HOPE Money (`hope-money`)
 - Lifecycle: active (Tier 0, 81.1% below peak)
-- Generated: 2026-06-10T20:59:04.669Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:52:33.393Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $1,673,641.00

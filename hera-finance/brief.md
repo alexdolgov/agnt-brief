@@ -5,8 +5,8 @@
 - Project: Hera Finance (`hera-finance`)
 - Website: [https://staking.hera.finance](https://staking.hera.finance)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:04.629Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:50:21.932Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: metis
 - Contract surface: 28 unique implementations (28 raw deployments)
 - DeFi Llama TVL: $6,505,965.60

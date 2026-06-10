@@ -7,8 +7,8 @@
 - Project: Hop Protocol (`hop-protocol`)
 - Website: [https://hop.exchange](https://hop.exchange)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:04.663Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:51:30.394Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: arbitrum, ethereum, gnosis, optimism, polygon
 - Contract surface: 402 unique implementations (876 raw deployments)
 - DeFi Llama TVL: $3,580,514.09

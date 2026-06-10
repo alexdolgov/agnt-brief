@@ -5,8 +5,8 @@
 - Project: hemiBTC (`hemibtc`)
 - Website: [https://app.hemi.xyz/en/tunnel/](https://app.hemi.xyz/en/tunnel/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:04.580Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:52:25.895Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: bsc, ethereum, optimism
 - Contract surface: 46 unique implementations (98 raw deployments)
 - DeFi Llama TVL: $14,847,047.28

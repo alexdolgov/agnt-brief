@@ -1,6 +1,6 @@
 # hemibtc — Contract Index
 
-47 unique implementations across 3 chains · 99 deployments · 1 audited · 36 unaudited · 10 unverified
+46 unique implementations across 3 chains · 98 deployments · 0 audited · 36 unaudited · 10 unverified
 
 ## bridge_template (1)
 
@@ -60,13 +60,12 @@
 | [DelayedWETH](./ethereum-1/0xc5627348dbc9179cfb5a24c8199635770ea575a3/) | ethereum | [`0xc56273...a575a3`](./ethereum-1/0xc5627348dbc9179cfb5a24c8199635770ea575a3/) | ⚠️ Unaudited | Verified |
 | [GovernanceToken](./optimism-10/0x4200000000000000000000000000000000000042/) | optimism | [`0x420000...000042`](./optimism-10/0x4200000000000000000000000000000000000042/) | ⚠️ Unaudited | Verified |
 
-## unknown (24)
+## unknown (23)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BinanceHemiOFT (4 deployments)](./bsc-56/0x5ffd0eadc186af9512542d0d5e5eafc65d5afc5b/) | bsc | 4 deployments: bsc [`0x5ffd0e...5afc5b`](./bsc-56/0x5ffd0eadc186af9512542d0d5e5eafc65d5afc5b/); bsc `0xb8dbff...a2c3c3`; bsc `0xd275f9...42506e`; bsc `0xfc5538...e91575` | ⚠️ Unaudited | Verified |
 | [EAS](./optimism-10/0x4200000000000000000000000000000000000021/) | optimism | [`0x420000...000021`](./optimism-10/0x4200000000000000000000000000000000000021/) | ⚠️ Unaudited | Verified |
-| [Hemi](./ethereum-1/0xeb964a1a6fab73b8c72a0d15c7337fa4804f484d/) | ethereum | [`0xeb964a...4f484d`](./ethereum-1/0xeb964a1a6fab73b8c72a0d15c7337fa4804f484d/) | ✅ Audited | Verified |
 | [HemiLock (4 deployments)](./bsc-56/0x0795a3c4898d823946f953bd1234c0e7b7ff1026/) | bsc | 4 deployments: bsc [`0x0795a3...ff1026`](./bsc-56/0x0795a3c4898d823946f953bd1234c0e7b7ff1026/); bsc `0x7070fa...fb89f9`; bsc `0x86bb2b...94046b`; bsc `0xfbe1ba...6eae8b` | ⚠️ Unaudited | Verified |
 | [L1Block](./optimism-10/0x4200000000000000000000000000000000000015/) | optimism | [`0x420000...000015`](./optimism-10/0x4200000000000000000000000000000000000015/) | ⚠️ Unaudited | Verified |
 | [L1CrossDomainMessenger](./ethereum-1/0xf005dfb08377fad44588af68d0884d272a6fb050/) | ethereum | [`0xf005df...6fb050`](./ethereum-1/0xf005dfb08377fad44588af68d0884d272a6fb050/) | ⚠️ Unaudited | Verified |

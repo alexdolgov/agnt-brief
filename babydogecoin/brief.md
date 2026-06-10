@@ -7,8 +7,8 @@
 - Project: BabyDogeCoin (`babydogecoin`)
 - Website: [https://swap.babydoge.com/](https://swap.babydoge.com/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:58:58.019Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:54:23.415Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $2,082,997.00

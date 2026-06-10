@@ -7,8 +7,8 @@
 - Project: Beanstalk (`beanstalk`)
 - Website: [https://bean.money](https://bean.money)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:58:59.043Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:53:08.965Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: arbitrum, ethereum
 - Contract surface: 244 unique implementations (1222 raw deployments)
 - DeFi Llama TVL: $6,456,546.87

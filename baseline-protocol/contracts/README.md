@@ -1,13 +1,6 @@
 # baseline-protocol — Contract Index
 
-115 unique implementations across 3 chains · 116 deployments · 1 audited · 6 unaudited · 108 unverified
-
-## core_logic (2)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [ThrusterPool (2 deployments)](./blast-81457/0x1d16788b97edb7d9a6ae66d5c5c16469037faa00/) | blast | 2 deployments: blast [`0x1d1678...7faa00`](./blast-81457/0x1d16788b97edb7d9a6ae66d5c5c16469037faa00/); blast `0xd0f1e1...56dc13` | ⚠️ Unaudited | Verified |
-| [UniswapV3Pool](./base-8453/0xdfcfdf5dd0569d591e0bce28b5da3b13de09e3cb/) | base | [`0xdfcfdf...09e3cb`](./base-8453/0xdfcfdf5dd0569d591e0bce28b5da3b13de09e3cb/) | ⚠️ Unaudited | Verified |
+112 unique implementations across 3 chains · 112 deployments · 1 audited · 3 unaudited · 108 unverified
 
 ## governance (1)
 
@@ -20,12 +13,6 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | Proxy (impl: 0x1117c9c13d152e2c84504533066676163b3b7470) | ethereum | `0xc81fd8...3568e8` | ❓ Unverified | Unverified |
-
-## token (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [WETH9](./base-8453/0x4200000000000000000000000000000000000006/) | base | [`0x420000...000006`](./base-8453/0x4200000000000000000000000000000000000006/) | ⚠️ Unaudited | Verified |
 
 ## unknown (110)
 

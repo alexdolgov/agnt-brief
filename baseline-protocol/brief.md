@@ -5,8 +5,8 @@
 - Project: Baseline Protocol (`baseline-protocol`)
 - Website: [https://www.baseline.markets/](https://www.baseline.markets/)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:58:58.076Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:54:36.838Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: base, blast, ethereum
 - Contract surface: 112 unique implementations (112 raw deployments)
 - DeFi Llama TVL: $69,255,851.63

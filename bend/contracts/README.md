@@ -1,6 +1,6 @@
 # bend — Contract Index
 
-105 unique implementations across 2 chains · 105 deployments · 12 audited · 47 unaudited · 46 unverified
+104 unique implementations across 2 chains · 104 deployments · 12 audited · 46 unaudited · 46 unverified
 
 ## adapter (7)
 
@@ -84,7 +84,7 @@
 | [BongBearsONFT1155Wrapper](./ethereum-1/0x1897c001341f81ca72154b75b882ae708e06bf48/) | ethereum | [`0x1897c0...06bf48`](./ethereum-1/0x1897c001341f81ca72154b75b882ae708e06bf48/) | ⚠️ Unaudited | Verified |
 | [BooBearsONFT](./berachain-80094/0xf49ec5db255854c4a567de5ab3826c9aabafc7cf/) | berachain | [`0xf49ec5...afc7cf`](./berachain-80094/0xf49ec5db255854c4a567de5ab3826c9aabafc7cf/) | ⚠️ Unaudited | Verified |
 
-## unknown (63)
+## unknown (62)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -150,4 +150,3 @@
 | UnnamedContract | berachain | `0xf12a81...43a297` | ❓ Unverified | Unverified |
 | UnnamedContract | berachain | `0xf64a17...c84678` | ❓ Unverified | Unverified |
 | UnnamedContract | berachain | `0xfb047f...9ad2b8` | ❓ Unverified | Unverified |
-| [WBERA](./berachain-80094/0x6969696969696969696969696969696969696969/) | berachain | [`0x696969...696969`](./berachain-80094/0x6969696969696969696969696969696969696969/) | ⚠️ Unaudited | Verified |

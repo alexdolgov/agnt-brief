@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "3f-mutual",
-  "generated_at": "2026-05-31T06:57:09.390Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T19:56:01.766Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "3f-mutual",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3782829.34907,
-    "tvl_usd": 3782829.34907,
+    "dl_tvl_usd": 3884840.53617,
+    "tvl_usd": 3884840.53617,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "3F Mutual is a decentralized insurance protocol on Ethereum that allows users to purchase coverage and pool risk. It provides a platform for mutual insurance where members share risk and receive payouts based on predefined conditions.",
+    "project_purpose": "3F Mutual is an Ethereum insurance pool associated with MakerDAO crash insurance. Users can buy insurance units priced by a formula.",
     "relationship_narrative": "The protocol consists of a single product family with one core contract, so there are no cross-family relationships or shared infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 21,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

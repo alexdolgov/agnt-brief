@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "1inch",
-  "generated_at": "2026-05-31T07:03:31.505Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:09:00.351Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "1inch",
     "tier": 1,
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 274,
-    "total_addresses": 814,
-    "unique_implementations": 274,
-    "total_deployments": 814,
-    "audited_contracts": 24,
-    "unaudited_contracts": 83,
-    "contracts_verified_audited": 24,
-    "contracts_verified_unaudited": 83,
+    "total_contracts": 275,
+    "total_addresses": 809,
+    "unique_implementations": 275,
+    "total_deployments": 809,
+    "audited_contracts": 23,
+    "unaudited_contracts": 82,
+    "contracts_verified_audited": 23,
+    "contracts_verified_unaudited": 82,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 167,
-    "coverage_pct": 22.4,
+    "contracts_unverified": 170,
+    "coverage_pct": 21.9,
     "total_audits": 149,
     "scoreable_audits": 56,
-    "dl_tvl_usd": 2810724.1260699998,
+    "dl_tvl_usd": 2888530.43195,
     "tvl_usd": 16092203.525373122,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -56,7 +56,7 @@
     "chains": [
       "ethereum"
     ],
-    "tier1_coverage_pct": 13.1,
+    "tier1_coverage_pct": 13.3,
     "tier1_auditors": [
       "ChainSecurity",
       "MixBytes",
@@ -66,16 +66,21 @@
     "latest_audit_date": "2025-09",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 16,
-      "aging": 18,
+      "fresh": 13,
+      "aging": 21,
       "stale": 109,
       "unknown": 6
     }
   },
   "topography": {
-    "project_purpose": "1inch is a DEX aggregator that routes trades across multiple liquidity sources to find the best prices for users. It also includes a governance token (1INCH) and related staking mechanisms.",
+    "project_purpose": "1inch is an active DeFi ecosystem centered on DEX aggregation and best-execution swaps across many liquidity sources. Its current product lines include the 1inch Aggregation Protocol/router, Limit Order Protocol, Fusion intent-based swaps, Fusion+/cross-chain swap infrastructure, wallet, portfolio, card, and developer/API products across 13+ supported chains. The 1INCH governance and utility token is 0x111111111117dc0aa78b770fa6a738034120c302 on Ethereum. MoverToken is not the 1inch governance token, and MooniswapFactory should not be described as the current core liquidity infrastructure for 1inch.",
     "relationship_narrative": "The single product family encompasses all contracts, with the MooniswapFactory serving as the core liquidity infrastructure and MoverToken as the governance token. Supporting contracts include proxy and external tokens that interact with the core aggregation and governance functions.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 275,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -242,15 +247,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": 15209.986859755618,
           "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xb05e8de2036ba9eaa4439b3c2243494a162203a5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -258,7 +254,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -3299,85 +3295,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x806d9073136c8a4a3fd21e0e708a9e17c87129e8",
-      "name": "PowerPod",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PowerPod",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x806d9073136c8a4a3fd21e0e708a9e17c87129e8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8dd297f5e487f2a6243bf7962303cdd4563d1b9c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xaccfac2339e16dc80c50d2fa81b5c2b049b4f947",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xad9aebfd9875e27b569c0125c35ee8e4227792e3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xdaf782667d98d5069ee7ba139932945c4d08fde9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xeee4b3a0de82e3dbceb0a0060ebcb4c7be448741",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-8248",
-        "audit-8249"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x5e92d4021e49f9a2967b4ea1d20213b3a1c7c912",
       "name": "PriorityFeeLimiter",
       "role": "unknown",
@@ -3881,37 +3798,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xecd2f91e2aa27646681efc1c3c1c359518b212f9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xedb2f430b951cfaa48cce0ce5be9621f52ec6554",
-      "name": "SmartTreasury",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SmartTreasury",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xedb2f430b951cfaa48cce0ce5be9621f52ec6554",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -8266,6 +8152,37 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x18acf236eb40c0d4824fb8f2582ebbecd325ef6a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "1inch",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x18acf236eb40c0d4824fb8f2582ebbecd325ef6a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x18bcfc93e30db323befa50788cdcb7cb0ab50b1f",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -8913,6 +8830,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x30dcf96a8a0c742aa1f534fac79e99d320c97901",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "1inch",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x30dcf96a8a0c742aa1f534fac79e99d320c97901",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -9595,6 +9543,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x58730ae0faa10d73b0cddb5e7b87c3594f7a20cb",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "1inch",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x58730ae0faa10d73b0cddb5e7b87c3594f7a20cb",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -16832,7 +16811,7 @@
       "report_url": "https://github.com/1inch/1inch-audits/blob/master/Solana%20Fusion%20v1/Solana%20Fusion%20-%20Ottersec%20v1.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -16979,7 +16958,7 @@
       "report_url": "https://github.com/1inch/1inch-audits/blob/master/Solana%20cross-chain%20v1/Solana%20cross-chain%20v1.0_Decurity.pdf",
       "auditor": "Decurity",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -17021,7 +17000,7 @@
       "report_url": "https://github.com/1inch/1inch-audits/blob/master/Solana%20cross-chain%20v1/Solana%20cross-chain%20v1.0_Sherlock.pdf",
       "auditor": "Sherlock",
       "audit_type": "contest",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -17342,50 +17321,50 @@
     {
       "auditor": "unknown",
       "tier": 2,
-      "contracts_covered": 24,
-      "coverage_pct": 22.4,
+      "contracts_covered": 23,
+      "coverage_pct": 21.9,
       "latest_audit": "2025-09"
     },
     {
       "auditor": "CertiK",
       "tier": 2,
       "contracts_covered": 7,
-      "coverage_pct": 6.5,
+      "coverage_pct": 6.7,
       "latest_audit": "2021-11"
     },
     {
       "auditor": "MixBytes",
       "tier": 1,
       "contracts_covered": 7,
-      "coverage_pct": 6.5,
+      "coverage_pct": 6.7,
       "latest_audit": "2022-11"
     },
     {
       "auditor": "ChainSecurity",
       "tier": 1,
       "contracts_covered": 6,
-      "coverage_pct": 5.6,
+      "coverage_pct": 5.7,
       "latest_audit": "2023-01"
     },
     {
       "auditor": "ABDK",
       "tier": 2,
       "contracts_covered": 4,
-      "coverage_pct": 3.7,
+      "coverage_pct": 3.8,
       "latest_audit": "2023-02"
     },
     {
       "auditor": "Decurity",
       "tier": 2,
       "contracts_covered": 4,
-      "coverage_pct": 3.7,
+      "coverage_pct": 3.8,
       "latest_audit": "2025-08"
     },
     {
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 2.8,
+      "coverage_pct": 2.9,
       "latest_audit": "2023-12"
     },
     {
@@ -17406,14 +17385,14 @@
       "auditor": "Ackee Blockchain",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 0.9,
+      "coverage_pct": 1,
       "latest_audit": "2021-08"
     },
     {
       "auditor": "Sherlock",
       "tier": 1,
       "contracts_covered": 1,
-      "coverage_pct": 0.9,
+      "coverage_pct": 1,
       "latest_audit": "2025-08"
     }
   ],
@@ -17861,16 +17840,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xedb2f430b951cfaa48cce0ce5be9621f52ec6554",
-      "name": "SmartTreasury",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xb63aeee274c5b3e17e3070f00eeafc916b7f3452",
       "name": "SmartTreasuryV2",
       "role": "operational_periphery",
@@ -17970,10 +17939,10 @@
     }
   ],
   "origin_summary": {
-    "native": 165,
+    "native": 163,
     "upstream": 5,
     "standard_library": 15,
-    "needs_review": 89
+    "needs_review": 92
   },
   "scope_matching_notes": {
     "match_method_counts": {

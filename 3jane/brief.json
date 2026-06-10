@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "3jane",
-  "generated_at": "2026-05-26T14:26:51.850Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-06-10T19:57:14.550Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "3jane",
@@ -70,9 +70,14 @@
     }
   },
   "topography": {
-    "project_purpose": "3Jane is a DeFi protocol offering uncollateralized lending and options vaults. It enables users to borrow without collateral and earn yield through automated options strategies.",
+    "project_purpose": "3Jane is a credit-based DeFi money market centered on USD3 and sUSD3, providing fintech and cryptonative credit-backed financing and yield opportunities. Options vaults may exist as a separate, smaller, or legacy product rather than the protocol’s primary focus.",
     "relationship_narrative": "The lending and options families rely on the core infrastructure family for stablecoin (USD3), credit assessment (CreditLine, AdaptiveCurveIrm), and risk management (InsuranceFund). Governance is controlled by the Permissions family via ProtocolConfig and timelock.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 23,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

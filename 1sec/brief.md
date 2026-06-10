@@ -5,21 +5,22 @@
 - Project: 1sec (`1sec`)
 - Website: [https://1sec.to/](https://1sec.to/)
 - Lifecycle: unknown
-- Generated: 2026-05-24T22:00:59.150Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T19:56:01.141Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,455,181.42
+- DeFi Llama TVL: $1,478,271.63
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-1sec is a bridge protocol that enables cross-chain asset transfers. It facilitates moving tokens between different blockchain networks.
-
-### Architecture
-
-No product families or contracts are defined in the provided data, so no relationships can be described.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

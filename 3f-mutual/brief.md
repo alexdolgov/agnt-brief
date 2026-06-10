@@ -4,17 +4,17 @@
 
 - Project: 3F Mutual (`3f-mutual`)
 - Lifecycle: active (Tier 0, 55.8% below peak)
-- Generated: 2026-05-31T06:57:09.390Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T19:56:01.766Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: ethereum
 - Contract surface: 21 unique implementations (25 raw deployments)
-- DeFi Llama TVL: $3,782,829.35
+- DeFi Llama TVL: $3,884,840.54
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-3F Mutual is a decentralized insurance protocol on Ethereum that allows users to purchase coverage and pool risk. It provides a platform for mutual insurance where members share risk and receive payouts based on predefined conditions.
+3F Mutual is an Ethereum insurance pool associated with MakerDAO crash insurance. Users can buy insurance units priced by a formula.
 
 ### Architecture
 

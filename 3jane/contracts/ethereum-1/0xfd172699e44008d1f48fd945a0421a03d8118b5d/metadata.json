@@ -1,0 +1,18 @@
+{
+  "address": "0xfd172699e44008d1f48fd945a0421a03d8118b5d",
+  "chain_id": 1,
+  "contract_name": "MarkdownManager",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "shanghai",
+  "license": "GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-10T19:57:21.793Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x33333333bd7045f1a601a1e289d7ab21036fb5ef",
+  "chain_id": 1,
+  "contract_name": "GnosisSafeProxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "GNU LGPLv3",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0xfb1bffc9d739b8d520daf37df666da4c687191ea",
+  "fetched_at": "2026-06-10T19:57:20.062Z"
+}

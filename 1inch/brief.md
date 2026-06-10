@@ -1,23 +1,21 @@
 # Agentic Audit Brief: 1inch
 
-⚠️ Lifecycle status: DECLINING - TVL changed 1.8% over 90 days
-
 ## Project Overview
 
 - Project: 1inch (`1inch`)
 - Website: [https://1inch.com](https://1inch.com)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T07:03:31.505Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:09:00.351Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: ethereum
-- Contract surface: 274 unique implementations (814 raw deployments)
-- DeFi Llama TVL: $2,810,724.13
+- Contract surface: 275 unique implementations (809 raw deployments)
+- DeFi Llama TVL: $2,888,530.43
 - On-chain TVL (included contracts): $16,092,203.53
 - TVL by chain: Ethereum $16,092,203.53
 
 ## Project Description
 
-1inch is a DEX aggregator that routes trades across multiple liquidity sources to find the best prices for users. It also includes a governance token (1INCH) and related staking mechanisms.
+1inch is an active DeFi ecosystem centered on DEX aggregation and best-execution swaps across many liquidity sources. Its current product lines include the 1inch Aggregation Protocol/router, Limit Order Protocol, Fusion intent-based swaps, Fusion+/cross-chain swap infrastructure, wallet, portfolio, card, and developer/API products across 13+ supported chains. The 1INCH governance and utility token is 0x111111111117dc0aa78b770fa6a738034120c302 on Ethereum. MoverToken is not the 1inch governance token, and MooniswapFactory should not be described as the current core liquidity infrastructure for 1inch.
 
 ### Architecture
 
@@ -25,39 +23,38 @@ The single product family encompasses all contracts, with the MooniswapFactory s
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 24/107 (22.4%)
-- Verified + Unaudited implementations: 83
+- Verified implementations audited: 23/105 (21.9%)
+- Verified + Unaudited implementations: 82
 - Verified by bytecode match: 0
-- Unverified implementations: 167
-- Unique implementations: 274
-- Raw deployments: 814
+- Unverified implementations: 170
+- Unique implementations: 275
+- Raw deployments: 809
 - Audits discovered: 149
 - Scoreable audits (matched contracts): 56
 - ASD (verified + unaudited TVL): $16,092,203.53
 - Latest audit: 2025-09 (fresh)
-- Staleness: 16 fresh, 18 aging, 109 stale, 6 unknown
-- Tier 1 coverage: 13.1% (ChainSecurity, MixBytes, OpenZeppelin, Sherlock)
-- Note: This protocol is classified as [declining]. ASD of $16,092,203.53 represents exposure in a protocol with declining activity.
+- Staleness: 13 fresh, 21 aging, 109 stale, 6 unknown
+- Tier 1 coverage: 13.3% (ChainSecurity, MixBytes, OpenZeppelin, Sherlock)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 24 | 22.4% | 2025-09 |
-| CertiK | Tier 2 | 7 | 6.5% | 2021-11 |
-| MixBytes | Tier 1 | 7 | 6.5% | 2022-11 |
-| ChainSecurity | Tier 1 | 6 | 5.6% | 2023-01 |
-| ABDK | Tier 2 | 4 | 3.7% | 2023-02 |
-| Decurity | Tier 2 | 4 | 3.7% | 2025-08 |
-| PeckShield | Tier 2 | 3 | 2.8% | 2023-12 |
+| unknown | Tier 2 | 23 | 21.9% | 2025-09 |
+| CertiK | Tier 2 | 7 | 6.7% | 2021-11 |
+| MixBytes | Tier 1 | 7 | 6.7% | 2022-11 |
+| ChainSecurity | Tier 1 | 6 | 5.7% | 2023-01 |
+| ABDK | Tier 2 | 4 | 3.8% | 2023-02 |
+| Decurity | Tier 2 | 4 | 3.8% | 2025-08 |
+| PeckShield | Tier 2 | 3 | 2.9% | 2023-12 |
 | OpenZeppelin | Tier 1 | 2 | 1.9% | 2025-08 |
 | Pashov Audit Group | Tier 2 | 2 | 1.9% | 2024-03 |
-| Ackee Blockchain | Tier 2 | 1 | 0.9% | 2021-08 |
-| Sherlock | Tier 1 | 1 | 0.9% | 2025-08 |
+| Ackee Blockchain | Tier 2 | 1 | 1.0% | 2021-08 |
+| Sherlock | Tier 1 | 1 | 1.0% | 2025-08 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (24)
+### ✅ Verified + Audited (23)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -73,7 +70,6 @@ The single product family encompasses all contracts, with the MooniswapFactory s
 | Mooniswap | unknown | ethereum | [`0x59a0a6...063ade`](./contracts/ethereum-1/0x59a0a6d73e6a5224871f45e6d845ce1574063ade/) | ✅ Audited |
 | MooniswapDeployer | unknown | ethereum | 2 deployments: ethereum [`0xa31bb3...b3b28e`](./contracts/ethereum-1/0xa31bb36c5164b165f9c36955ea4ccbab42b3b28e/); ethereum `0xcb06df...da85b1` | ✅ Audited |
 | MooniswapFactory | registry | ethereum | 3 deployments: ethereum [`0xbaf9a5...3a9643`](./contracts/ethereum-1/0xbaf9a5d4b0052359326a6cdab54babaa3a3a9643/); ethereum `0xc4a8b7...5a148d`; ethereum `0xe1b8ff...dc04d3` | ✅ Audited |
-| PowerPod | unknown | ethereum | 6 deployments: ethereum [`0x806d90...7129e8`](./contracts/ethereum-1/0x806d9073136c8a4a3fd21e0e708a9e17c87129e8/); ethereum `0x8dd297...3d1b9c`; ethereum `0xaccfac...b4f947`; ethereum `0xad9aeb...7792e3`; ethereum `0xdaf782...08fde9`; ethereum `0xeee4b3...448741` | ✅ Audited |
 | ReferralFeeReceiver | unknown | ethereum | 4 deployments: ethereum [`0x1cc617...d91b9d`](./contracts/ethereum-1/0x1cc61726b11613b37854a1c9ebc9a2092ed91b9d/); ethereum `0x2eea44...301e40`; ethereum `0x735247...31295f`; ethereum `0xf5ab9b...0bb538` | ✅ Audited |
 | ResolverMetadata | unknown | ethereum | 6 deployments: ethereum [`0x2031a8...2792fd`](./contracts/ethereum-1/0x2031a8f571ac808da3117462fc32cd933f2792fd/); ethereum `0x755585...85610e`; ethereum `0x9c6883...49e15d`; ethereum `0xa18d49...bf2097`; ethereum `0xbf4543...90a58a`; ethereum `0xf18293...a1434f` | ✅ Audited |
 | Settlement | unknown | ethereum | 8 deployments: ethereum [`0x0634db...eb01a3`](./contracts/ethereum-1/0x0634db834043922d8907edbf588aa57e42eb01a3/); ethereum `0x5e918e...a2e335`; ethereum `0x62c142...96e69c`; ethereum `0x8273f3...a25d9c`; ethereum `0xa515e1...f4cc0f`; ethereum `0xa88800...b47647`; ethereum `0xac3225...715fdb`; ethereum `0xf4f4d1...2364bf` | ✅ Audited |
@@ -86,14 +82,14 @@ The single product family encompasses all contracts, with the MooniswapFactory s
 | WhitelistHelper | periphery | ethereum | 6 deployments: ethereum [`0x1ad2ae...6d3963`](./contracts/ethereum-1/0x1ad2aef39a9036147aee2a8edd5c5092466d3963/); ethereum `0x441619...4a5c54`; ethereum `0x8c3e43...26a2fa`; ethereum `0xb61c79...79c96d`; ethereum `0xf6b000...ae4a93`; ethereum `0xf779bd...65642d` | ✅ Audited |
 | WhitelistRegistry | registry | ethereum | 6 deployments: ethereum [`0x105bc5...e53aa7`](./contracts/ethereum-1/0x105bc5c5cdd224f48be9d279dd114f0a3fe53aa7/); ethereum `0x8797c2...9efad5`; ethereum `0xa49ecb...461a0b`; ethereum `0xbcf2e5...21fbcb`; ethereum `0xcb8308...e5cc77`; ethereum `0xd64134...5093b0` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (83)
+### ⚠️ Verified + Unaudited (82)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | MiniMeToken | token | ethereum | 3 deployments: ethereum [`0x53f2ea...c7a793`](./contracts/ethereum-1/0x53f2eab746305b1f500f783abefa5954b2c7a793/); ethereum `0xcd62b1...80b184`; ethereum `0xf60e55...ceab44` | ⚠️ Unaudited |
 | HolyToken | token | ethereum | 3 deployments: ethereum [`0x11777d...10daab`](./contracts/ethereum-1/0x11777d951cc9be0bafff437d30fbcc759410daab/); ethereum `0x39eae9...1a6e09`; ethereum `0xa59b00...17cf4e` | ⚠️ Unaudited |
 | HolyPoolV2 | core_logic | ethereum | 2 deployments: ethereum [`0x1e7062...efdb58`](./contracts/ethereum-1/0x1e7062f6458d67e74f84c37c189ab3e69eefdb58/); ethereum `0xaf9854...523719` | ⚠️ Unaudited |
-| MoverToken | token | ethereum | 2 deployments: ethereum [`0x3fa729...d5324c`](./contracts/ethereum-1/0x3fa729b4548becbad4eab6ef18413470e6d5324c/); ethereum `0xb05e8d...2203a5` | ⚠️ Unaudited |
+| MoverToken | token | ethereum | [`0x3fa729...d5324c`](./contracts/ethereum-1/0x3fa729b4548becbad4eab6ef18413470e6d5324c/) | ⚠️ Unaudited |
 | HolyValorYearnUSDCVaultV2 | core_logic | ethereum | [`0xfa9ba2...184e61`](./contracts/ethereum-1/0xfa9ba210f70987477f4d65639ebd194dc1184e61/) | ⚠️ Unaudited |
 | AdminUpgradeabilityProxy | unknown | ethereum | 3 deployments: ethereum [`0x1fac81...b8e755`](./contracts/ethereum-1/0x1fac81af4dde6276e5e3283ff2b0bd9970b8e755/); ethereum `0x6ad299...1c48b4`; ethereum `0xbb2390...b123ad` | ⚠️ Unaudited |
 | CEOofMoneyNFT | token | ethereum | [`0x8c4075...2e4411`](./contracts/ethereum-1/0x8c4075ef135aaebb2f0fd445635e305a162e4411/) | ⚠️ Unaudited |
@@ -155,7 +151,6 @@ The single product family encompasses all contracts, with the MooniswapFactory s
 | ProxyAdmin | governance | ethereum | 4 deployments: ethereum [`0x0f7615...360fff`](./contracts/ethereum-1/0x0f7615375e3671de18ca653a5a7f332c50360fff/); ethereum `0x9d2efa...c03466`; ethereum `0x9fc17a...87e532`; ethereum `0xca3391...fa5cce` | ⚠️ Unaudited |
 | SeriesNonceManager | governance | ethereum | 2 deployments: ethereum [`0x2dadf9...df01aa`](./contracts/ethereum-1/0x2dadf9264db7eb9e24470a2e6c73efbc4bdf01aa/); ethereum `0x303389...b28e10` | ⚠️ Unaudited |
 | SignatureMerkleDrop128 | operational_periphery | ethereum | 13 deployments: ethereum [`0x153818...aaf79e`](./contracts/ethereum-1/0x153818040e114e0775e14c9029619d765aaaf79e/); ethereum `0x25ac81...4c2c77`; ethereum `0x64c671...df2680`; ethereum `0x6b7c8e...cdb261`; ethereum `0x7749eb...21cbe1`; ethereum `0x9bd9e0...5bdb69`; ethereum `0xa1df96...f91107`; ethereum `0xa2286c...ecfec6`; ethereum `0xc5a113...e42311`; ethereum `0xc890d5...71555a`; ethereum `0xe02469...26638f`; ethereum `0xe45007...a550cf`; ethereum `0xecd2f9...b212f9` | ⚠️ Unaudited |
-| SmartTreasury | operational_periphery | ethereum | [`0xedb2f4...ec6554`](./contracts/ethereum-1/0xedb2f430b951cfaa48cce0ce5be9621f52ec6554/) | ⚠️ Unaudited |
 | SmartTreasuryFragmentPWC | operational_periphery | ethereum | 2 deployments: ethereum [`0xa8afb8...9a2e68`](./contracts/ethereum-1/0xa8afb8272434f76f9cd0fd483f15c69aaf9a2e68/); ethereum `0xf5d7bd...de157d` | ⚠️ Unaudited |
 | SmartTreasuryV2 | operational_periphery | ethereum | [`0xb63aee...7f3452`](./contracts/ethereum-1/0xb63aeee274c5b3e17e3070f00eeafc916b7f3452/) | ⚠️ Unaudited |
 | SmartTreasuryV3 | operational_periphery | ethereum | [`0xfcd791...2601ef`](./contracts/ethereum-1/0xfcd791c74f16061f341fe2a1f5d8fdd3d32601ef/) | ⚠️ Unaudited |
@@ -186,7 +181,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (167)
+### ❓ Unverified (170)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -209,6 +204,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | `0x15a3c2...3de233` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x15a57d...2a63bc` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x168d49...656d41` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | `0x18acf2...25ef6a` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x18bcfc...b50b1f` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x19ea2e...e0797b` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x1d68da...4d6fa7` | ❓ Unverified |
@@ -230,6 +226,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | `0x2c26cc...8f3b74` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x2d96fd...a59a39` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x2e5748...4d5f11` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | `0x30dcf9...c97901` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x320868...b7d4f0` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x3451b6...a1e812` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x35ea38...28ab15` | ❓ Unverified |
@@ -252,6 +249,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | `0x532224...e63f20` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x54fc51...a3dbe1` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x57eaec...c87ba2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | `0x58730a...7a20cb` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x5deb3f...b0982f` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x609262...233741` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x611207...32538c` | ❓ Unverified |
@@ -489,16 +487,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Solana Fusion - Decurity v1.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20Fusion%20v1/Solana%20Fusion%20-%20Decurity%20v1.pdf) | Decurity | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
 | [Solana Fusion - Hexens v1.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20Fusion%20v1/Solana%20Fusion%20-%20Hexens%20v1.pdf) | unknown | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
 | [Solana Fusion - Open Zepplin v1.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20Fusion%20v1/Solana%20Fusion%20-%20Open%20Zepplin%20v1.pdf) | unknown | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
-| [Solana Fusion - Ottersec v1.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20Fusion%20v1/Solana%20Fusion%20-%20Ottersec%20v1.pdf) | unknown | Audit | 2025-06 | fresh | Direct | n/a | 0 | n/a |
+| [Solana Fusion - Ottersec v1.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20Fusion%20v1/Solana%20Fusion%20-%20Ottersec%20v1.pdf) | unknown | Audit | 2025-06 | aging | Direct | n/a | 0 | n/a |
 | [Solana Fusion - Quantstamp v1.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20Fusion%20v1/Solana%20Fusion%20-%20Quantstamp%20v1.pdf) | Quantstamp | Audit | 2025-03 | aging | Direct | n/a | 0 | n/a |
 | [Solana Fusion - Zenith v1.01.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20Fusion%20v1/Solana%20Fusion%20-%20Zenith%20v1.01.pdf) | unknown | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
 | [Solana Fusion v1_Kudelski.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20Fusion%20v1/Solana%20Fusion%20v1_Kudelski.pdf) | unknown | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
 | [Solana Fusion v1_OffsideLabs.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20Fusion%20v1/Solana%20Fusion%20v1_OffsideLabs.pdf) | unknown | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
 | [Solana cross-chain v1.0-Hexens.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20cross-chain%20v1/Solana%20cross-chain%20v1.0-Hexens.pdf) | unknown | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
 | [Solana cross-chain v1.0-Zenith.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20cross-chain%20v1/Solana%20cross-chain%20v1.0-Zenith.pdf) | unknown | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [Solana cross-chain v1.0_Decurity.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20cross-chain%20v1/Solana%20cross-chain%20v1.0_Decurity.pdf) | Decurity | Audit | 2025-06 | fresh | Direct | n/a | 0 | n/a |
+| [Solana cross-chain v1.0_Decurity.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20cross-chain%20v1/Solana%20cross-chain%20v1.0_Decurity.pdf) | Decurity | Audit | 2025-06 | aging | Direct | n/a | 0 | n/a |
 | [Solana cross-chain v1.0_OffsideLabs.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20cross-chain%20v1/Solana%20cross-chain%20v1.0_OffsideLabs.pdf) | unknown | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [Solana cross-chain v1.0_Sherlock.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20cross-chain%20v1/Solana%20cross-chain%20v1.0_Sherlock.pdf) | Sherlock | Contest | 2025-06 | fresh | Direct | n/a | 0 | n/a |
+| [Solana cross-chain v1.0_Sherlock.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20cross-chain%20v1/Solana%20cross-chain%20v1.0_Sherlock.pdf) | Sherlock | Contest | 2025-06 | aging | Direct | n/a | 0 | n/a |
 | [Solana cross-chain v1.1_Decurity.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20cross-chain%20v1/Solana%20cross-chain%20v1.1_Decurity.pdf) | Decurity | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
 | [Solana cross-chain v1.1_Hexens.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20cross-chain%20v1/Solana%20cross-chain%20v1.1_Hexens.pdf) | unknown | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
 | [Solana cross-chain v1.1_OffsideLabs.pdf](https://github.com/1inch/1inch-audits/blob/master/Solana%20cross-chain%20v1/Solana%20cross-chain%20v1.1_OffsideLabs.pdf) | unknown | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
@@ -564,7 +562,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x5e92d4...c7c912`](./contracts/ethereum-1/0x5e92d4021e49f9a2967b4ea1d20213b3a1c7c912/) | PriorityFeeLimiter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2dadf9...df01aa`](./contracts/ethereum-1/0x2dadf9264db7eb9e24470a2e6c73efbc4bdf01aa/) | SeriesNonceManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x153818...aaf79e`](./contracts/ethereum-1/0x153818040e114e0775e14c9029619d765aaaf79e/) | SignatureMerkleDrop128 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xedb2f4...ec6554`](./contracts/ethereum-1/0xedb2f430b951cfaa48cce0ce5be9621f52ec6554/) | SmartTreasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb63aee...7f3452`](./contracts/ethereum-1/0xb63aeee274c5b3e17e3070f00eeafc916b7f3452/) | SmartTreasuryV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xfcd791...2601ef`](./contracts/ethereum-1/0xfcd791c74f16061f341fe2a1f5d8fdd3d32601ef/) | SmartTreasuryV3 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3c16bb...2813fa`](./contracts/ethereum-1/0x3c16bb476315ce0c66c659e0c2fd1657e62813fa/) | SmartTreasuryV3_1 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -580,10 +577,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 165 |
+| native | 163 |
 | upstream | 5 |
 | standard_library | 15 |
-| needs_review | 89 |
+| needs_review | 92 |
 
 ## Scope Matching Notes
 

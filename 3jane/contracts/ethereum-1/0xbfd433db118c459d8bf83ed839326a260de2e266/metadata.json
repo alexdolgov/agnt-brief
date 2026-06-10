@@ -1,0 +1,18 @@
+{
+  "address": "0xbfd433db118c459d8bf83ed839326a260de2e266",
+  "chain_id": 1,
+  "contract_name": "PYTLocker",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "shanghai",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-10T19:57:20.891Z"
+}

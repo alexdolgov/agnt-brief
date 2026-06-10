@@ -7,8 +7,8 @@
 - Project: 3Jane (`3jane`)
 - Website: [https://www.3jane.xyz/](https://www.3jane.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-26T14:26:51.850Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-06-10T19:57:14.550Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: ethereum
 - Contract surface: 23 unique implementations (49 raw deployments)
 - DeFi Llama TVL: $40,708,011.00
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-3Jane is a DeFi protocol offering uncollateralized lending and options vaults. It enables users to borrow without collateral and earn yield through automated options strategies.
+3Jane is a credit-based DeFi money market centered on USD3 and sUSD3, providing fintech and cryptonative credit-backed financing and yield opportunities. Options vaults may exist as a separate, smaller, or legacy product rather than the protocol’s primary focus.
 
 ### Architecture
 

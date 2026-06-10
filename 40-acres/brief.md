@@ -5,8 +5,8 @@
 - Project: 40 Acres (`40-acres`)
 - Website: [https://www.40acres.finance/](https://www.40acres.finance/)
 - Lifecycle: active (Tier 0, 57.7% below peak)
-- Generated: 2026-05-27T06:58:44.461Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-a9ad
+- Generated: 2026-06-10T19:57:40.547Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: avalanche, base, ethereum, optimism
 - Contract surface: 325 unique implementations (940 raw deployments)
 - DeFi Llama TVL: $40,565,188.78
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-40 Acres is a multi-chain lending protocol that enables users to borrow against and lend assets through isolated vaults and loan contracts. It operates across Ethereum, Optimism, Base, and Avalanche, with governance and configuration managed via dedicated voting and config contracts.
+40 Acres is a DeFi lending protocol offering self-repaying, non-liquidating USDC loans against yield-bearing collateral and veNFTs. The live product is currently described as operating on Base, Optimism, and Avalanche; Ethereum deployments should be treated as historical, configuration, or deployment artifacts unless independently verified as live product contracts.
 
 ### Architecture
 

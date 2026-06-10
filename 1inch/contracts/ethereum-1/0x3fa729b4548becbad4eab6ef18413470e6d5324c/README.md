@@ -8,7 +8,7 @@
 | Origin | standard_library |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (ethereum [`0x3fa729b4548becbad4eab6ef18413470e6d5324c`](../0x3fa729b4548becbad4eab6ef18413470e6d5324c/); ethereum `0xb05e8de2036ba9eaa4439b3c2243494a162203a5`) |
+| Deployments | 1 (ethereum [`0x3fa729b4548becbad4eab6ef18413470e6d5324c`](../0x3fa729b4548becbad4eab6ef18413470e6d5324c/)) |
 | Proxy | Yes → `0xb05e8d...2203a5` |
 | Source | Sourcify (full match) |
 | TVL | $15,209.99 |

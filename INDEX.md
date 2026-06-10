@@ -2,11 +2,11 @@
 
 | Project | TVL | Coverage | ASD | Lifecycle | Audits | Contracts | Updated |
 |---|---|---|---|---|---|---|---|
-| [1inch](./1inch/) | $16.1M | 22.4% | $16.1M | declining | 149 | 274 | 2026-05-31 |
-| [1sec](./1sec/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
-| [3f-mutual](./3f-mutual/) | $3.8M | 0.0% | ? | active | 0 | 21 | 2026-05-31 |
-| [3jane](./3jane/) | $76.6M | 61.9% | $76.6M | declining | 4 | 23 | 2026-05-26 |
-| [40-acres](./40-acres/) | $10.0M | 0.0% | $10.0M | active | 4 | 325 | 2026-05-27 |
+| [1inch](./1inch/) | $16.1M | 21.9% | $16.1M | active | 149 | 275 | 2026-06-10 |
+| [1sec](./1sec/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
+| [3f-mutual](./3f-mutual/) | $3.9M | 0.0% | ? | active | 0 | 21 | 2026-06-10 |
+| [3jane](./3jane/) | $76.6M | 61.9% | $76.6M | declining | 4 | 23 | 2026-06-10 |
+| [40-acres](./40-acres/) | $10.0M | 0.0% | $10.0M | active | 4 | 325 | 2026-06-10 |
 | [abc-pool](./abc-pool/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [abracadabra](./abracadabra/) | $8.1M | 0.0% | ? | dead | 5 | 2568 | 2026-05-31 |
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 6 | 43 | 2026-05-25 |

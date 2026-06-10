@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "40-acres",
-  "generated_at": "2026-05-27T06:58:44.461Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-a9ad",
+  "generated_at": "2026-06-10T19:57:40.547Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "40-acres",
@@ -64,9 +64,14 @@
     }
   },
   "topography": {
-    "project_purpose": "40 Acres is a multi-chain lending protocol that enables users to borrow against and lend assets through isolated vaults and loan contracts. It operates across Ethereum, Optimism, Base, and Avalanche, with governance and configuration managed via dedicated voting and config contracts.",
+    "project_purpose": "40 Acres is a DeFi lending protocol offering self-repaying, non-liquidating USDC loans against yield-bearing collateral and veNFTs. The live product is currently described as operating on Base, Optimism, and Avalanche; Ethereum deployments should be treated as historical, configuration, or deployment artifacts unless independently verified as live product contracts.",
     "relationship_narrative": "The 40 Acres family provides the core lending infrastructure (vaults, loan contracts, tokens) that is reused across chain-specific deployments like Base, Optimism, and Avalanche variants. Governance and configuration are centralized through shared VotingConfig, PortfolioManager, and various config contracts, while chain-specific loan and vault implementations inherit from the core logic.",
     "product_family_count": 8
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 325,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

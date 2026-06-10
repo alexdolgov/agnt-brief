@@ -7,8 +7,8 @@
 - Project: HashDAO Finance (`hashdao-finance`)
 - Website: [https://www.hashdao.finance](https://www.hashdao.finance)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-10T20:59:04.530Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:45:23.998Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: arbitrum, optimism
 - Contract surface: 50 unique implementations (122 raw deployments)
 - DeFi Llama TVL: $1,639,221.29

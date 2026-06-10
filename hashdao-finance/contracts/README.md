@@ -1,6 +1,6 @@
 # hashdao-finance — Contract Index
 
-51 unique implementations across 2 chains · 123 deployments · 10 audited · 9 unaudited · 32 unverified
+50 unique implementations across 2 chains · 122 deployments · 10 audited · 8 unaudited · 32 unverified
 
 ## core_logic (3)
 
@@ -41,14 +41,13 @@
 | [Token (2 deployments)](./optimism-10/0x2e80259c9071b6176205ff5f5eb6f7ec8361b93f/) | optimism | 2 deployments: optimism [`0x2e8025...61b93f`](./optimism-10/0x2e80259c9071b6176205ff5f5eb6f7ec8361b93f/); arbitrum `0x2e8025...61b93f` | ✅ Audited | Verified |
 | [VeToken (4 deployments)](./optimism-10/0x133bec4ac9ccbcc479aa9b9cb7a1c916a72485d6/) | optimism | 4 deployments: optimism [`0x133bec...2485d6`](./optimism-10/0x133bec4ac9ccbcc479aa9b9cb7a1c916a72485d6/); arbitrum `0x8b5264...1c73a5`; arbitrum `0xb7047f...9aef47`; arbitrum `0xda4f46...54ff87` | ✅ Audited | Verified |
 
-## unknown (37)
+## unknown (36)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [ETHUnwrapper (2 deployments)](./optimism-10/0xcec45b47f809f7ae4c47fbcd4df37a71a8f9c5d8/) | optimism | 2 deployments: optimism [`0xcec45b...f9c5d8`](./optimism-10/0xcec45b47f809f7ae4c47fbcd4df37a71a8f9c5d8/); arbitrum `0xec59fb...734fb7` | ⚠️ Unaudited | Verified |
 | [LiqLocker](./arbitrum-42161/0x703b9994c47ba7521b432b8fac0a954cf6f1ebf8/) | arbitrum | [`0x703b99...f1ebf8`](./arbitrum-42161/0x703b9994c47ba7521b432b8fac0a954cf6f1ebf8/) | ⚠️ Unaudited | Verified |
 | [MasterChefV3 (6 deployments)](./arbitrum-42161/0x0517a00f1dbb2ec4adbe422255633d5b0a4beade/) | arbitrum | 6 deployments: optimism `0x958882...815006`; arbitrum [`0x0517a0...4beade`](./arbitrum-42161/0x0517a00f1dbb2ec4adbe422255633d5b0a4beade/); arbitrum `0x72f19d...436ab1`; arbitrum `0x824321...42f4d6`; arbitrum `0x882105...c42f85`; arbitrum `0xcec45b...f9c5d8` | ⚠️ Unaudited | Verified |
-| [Pair](./optimism-10/0xb426ae40e43be57215ba7daa06cbc5d48ed35dcf/) | optimism | [`0xb426ae...d35dcf`](./optimism-10/0xb426ae40e43be57215ba7daa06cbc5d48ed35dcf/) | ⚠️ Unaudited | Verified |
 | [UniswapV2Pair](./arbitrum-42161/0x8dc6efd57a13b7ba3ff7824c9708db24d3190703/) | arbitrum | [`0x8dc6ef...190703`](./arbitrum-42161/0x8dc6efd57a13b7ba3ff7824c9708db24d3190703/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | optimism | `0x2b9c8b...becd19` | ❓ Unverified | Unverified |
 | UnnamedContract | optimism | `0x303cc9...8cf6d6` | ❓ Unverified | Unverified |

@@ -5,8 +5,8 @@
 - Project: HashKey Global (`hashkey-global`)
 - Website: [https://www.hashkey.com](https://www.hashkey.com)
 - Lifecycle: active (Tier 0, 85.6% below peak)
-- Generated: 2026-06-10T20:59:04.534Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:44:15.857Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: scroll
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $15,094,354.09

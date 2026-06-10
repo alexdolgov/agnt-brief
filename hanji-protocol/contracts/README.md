@@ -1,12 +1,12 @@
 # hanji-protocol — Contract Index
 
-289 unique implementations on base · 291 deployments · 1 audited · 5 unaudited · 283 unverified
+289 unique implementations on base · 291 deployments · 0 audited · 6 unaudited · 283 unverified
 
 ## proxy (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Proxy (3 deployments)](./base-8453/0x15c8cb4e336b1e478d155d813830129fb225eee3/) | base | 3 deployments: base [`0x15c8cb...25eee3`](./base-8453/0x15c8cb4e336b1e478d155d813830129fb225eee3/); base `0x628a1d...30eb28`; base `0xf455b3...354eea` | ✅ Audited | Verified |
+| [Proxy (3 deployments)](./base-8453/0x15c8cb4e336b1e478d155d813830129fb225eee3/) | base | 3 deployments: base [`0x15c8cb...25eee3`](./base-8453/0x15c8cb4e336b1e478d155d813830129fb225eee3/); base `0x628a1d...30eb28`; base `0xf455b3...354eea` | ⚠️ Unaudited | Verified |
 | Proxy (impl: 0x66672de0d193c5e988d40f6b9d948c2dc811c865) | base | `0xc032b6...3609de` | ❓ Unverified | Unverified |
 
 ## token (3)

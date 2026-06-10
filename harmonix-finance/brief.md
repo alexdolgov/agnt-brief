@@ -5,8 +5,8 @@
 - Project: Harmonix Finance (`harmonix-finance`)
 - Website: [https://app.harmonix.fi/?ref=s4rk2Hrs](https://app.harmonix.fi/?ref=s4rk2Hrs)
 - Lifecycle: active (Tier 0, 73.5% below peak)
-- Generated: 2026-06-10T20:59:04.475Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:46:23.448Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: arbitrum, base, ethereum, hyperliquid
 - Contract surface: 127 unique implementations (186 raw deployments)
 - DeFi Llama TVL: $4,866,950.07

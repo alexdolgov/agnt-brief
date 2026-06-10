@@ -7,17 +7,17 @@
 - Project: Anzen Finance (`anzen-finance`)
 - Website: [https://anzen.finance/](https://anzen.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T08:37:54.063Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:40:01.272Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: arbitrum, base, blast, ethereum, manta
-- Contract surface: 48 unique implementations (163 raw deployments)
-- DeFi Llama TVL: $7,592,970.00
+- Contract surface: 47 unique implementations (121 raw deployments)
+- DeFi Llama TVL: $7,527,300.00
 - On-chain TVL (included contracts): $671,202.64
 - TVL by chain: Base $654,186.65 | Blast $10,863.02 | Ethereum $6,152.97
 
 ## Project Description
 
-Anzen Finance is a real-world asset (RWA) protocol that issues stablecoins (USDz, sUSDz) backed by real-world assets. It enables cross-chain transfers via LayerZero and offers staking and governance through ve-tokenomics.
+Anzen Finance is the issuer of USDz, an omnichain real-world-asset-backed digital dollar, with associated staking/rewards and LayerZero-based cross-chain bridging. sUSDz and governance-related mechanics should be treated as associated protocol components only where verified by Anzen documentation or audits.
 
 ### Architecture
 
@@ -25,17 +25,17 @@ The Mainnet family serves as the hub with SPCTPool, USDz, and sUSDz, while L2 fa
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 14/40 (35.0%)
-- Verified + Unaudited implementations: 26
+- Verified implementations audited: 14/39 (35.9%)
+- Verified + Unaudited implementations: 25
 - Verified by bytecode match: 0
 - Unverified implementations: 8
-- Unique implementations: 48
-- Raw deployments: 163
-- Audits discovered: 6
+- Unique implementations: 47
+- Raw deployments: 121
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): $10,863.02
 - Latest audit: 2024-12 (aging)
-- Staleness: 0 fresh, 1 aging, 4 stale, 1 unknown
+- Staleness: 0 fresh, 1 aging, 3 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $10,863.02 represents exposure in a protocol with declining activity.
 
@@ -43,9 +43,9 @@ The Mainnet family serves as the hub with SPCTPool, USDz, and sUSDz, while L2 fa
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Zellic | Tier 2 | 14 | 35.0% | 2024-12 |
-| Halborn | Tier 2 | 5 | 12.5% | 2024-05 |
-| PeckShield | Tier 2 | 3 | 7.5% | 2024-04 |
+| Zellic | Tier 2 | 14 | 35.9% | 2024-12 |
+| Halborn | Tier 2 | 5 | 12.8% | 2024-05 |
+| PeckShield | Tier 2 | 3 | 7.7% | 2024-04 |
 
 ## Contract Surface
 
@@ -68,13 +68,12 @@ The Mainnet family serves as the hub with SPCTPool, USDz, and sUSDz, while L2 fa
 | VotingEscrowAnzenMainchain | operational_periphery | base | [`0xa90ed3...d11ba2`](./contracts/base-8453/0xa90ed3ec34e78fd26d59f43ed67a7cbff4d11ba2/) | ✅ Audited |
 | VotingResultBroadcaster | unknown | base | [`0xa0e160...55206f`](./contracts/base-8453/0xa0e160cacde318b059aa8cb69995803e1955206f/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (26)
+### ⚠️ Verified + Unaudited (25)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | VaultV2 | core_logic | arbitrum | 2 deployments: arbitrum [`0x73d23f...f2a7e4`](./contracts/arbitrum-42161/0x73d23f3778a90be8846e172354a115543df2a7e4/); blast `0xf3588e...0cfe09` | ⚠️ Unaudited |
 | USDzVault | core_logic | base | 2 deployments: base [`0xa87c98...1f6f4d`](./contracts/base-8453/0xa87c9808c0ebe20a1427b5c769623c77201f6f4d/); base `0xc34292...3eb526` | ⚠️ Unaudited |
-| AccessControlledOffchainAggregator | governance | base | 42 deployments: base [`0x00be87...bd552a`](./contracts/base-8453/0x00be872906c07d6d7d0ec3968b99c4e3d6bd552a/); base `0x04d3d7...ee3bdd`; base `0x05acfe...ce42f2`; base `0x19e682...514dc8`; base `0x233a45...b4e3d2`; base `0x29a0bf...4796c0`; base `0x2c3321...faca44`; base `0x3c6490...392642`; base `0x43f92e...baa261`; base `0x4a61db...46f850`; base `0x4d1d92...0aad68`; base `0x52d743...355a00`; base `0x55012e...cc998d`; base `0x61140c...1cae95`; base `0x63a3b4...323b3c`; base `0x6f9829...d6bc04`; base `0x728bbc...f6cca6`; base `0x74f70d...496a01`; base `0x777936...b76c55`; base `0x801b6e...d1da99`; base `0x834ce4...4b8920`; base `0x84eff9...5d7ca6`; base `0x851a36...781805`; base `0x852ae0...976ca8`; base `0x8eda55...ba8c19`; base `0xa1923f...c39f4d`; base `0xa24aaf...f494d2`; base `0xa33eab...60486f`; base `0xa9bdec...35e7f1`; base `0xae4602...564a3d`; base `0xb5882f...809ccf`; base `0xb76eec...ee9e3d`; base `0xbbdcbc...f145f5`; base `0xbf477e...7e88e3`; base `0xc18cc9...56d4b9`; base `0xc2b36e...bc057b`; base `0xc73b76...c27826`; base `0xc95cd3...88c482`; base `0xcad16d...dc216c`; base `0xd27766...61828a`; base `0xec509c...db500f`; base `0xf2d85e...dbdfdd` | ⚠️ Unaudited |
 | AnzenGenericOFTAdapter | adapter | base | [`0xdfdc54...877c88`](./contracts/base-8453/0xdfdc54f14a4783fe8e8ef7de7159744725877c88/) | ⚠️ Unaudited |
 | AnzenLayerZeroAdapter | adapter | manta | 7 deployments: manta [`0x04d5dd...7f1938`](./contracts/manta-169/0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938/); manta `0xe31ee1...cbf0cf`; base `0x547213...a27fd7`; arbitrum `0xdd2161...30d58e`; arbitrum `0xe563ec...ddac32`; blast [`0x04d5dd...7f1938`](./contracts/blast-81457/0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938/); blast `0x5a1b8c...6ea129` | ⚠️ Unaudited |
 | AnzenMsgSendEndpointUpg | operational_periphery | base | 2 deployments: base [`0x22264d...db76d3`](./contracts/base-8453/0x22264d999286db15f56ec1f9fac563422cdb76d3/); base `0xf72307...84201d` | ⚠️ Unaudited |
@@ -134,7 +133,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Anzen - PeckShield Audit Report.pdf](https://github.com/Anzen-Finance/audits/blob/master/Anzen%20-%20PeckShield%20Audit%20Report.pdf) | PeckShield | Audit | 2024-04 | stale | Direct | contract_name | 4 | high |
 | [Anzen - Zellic Audit Report.pdf](https://github.com/Anzen-Finance/audits/blob/master/Anzen%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2024-05 | stale | Direct | contract_name | 8 | high |
 | [{% embed url="<>" %}](https://github.com/Zellic/publications/blob/master/Anzen%20and%20protocol-v2%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2024-12 | aging | Direct | contract_name | 15 | high |
-| [Gudchain staking contract has been audited by Halborn. [See the audit report here]().](https://cdn.gudchain.com/documents/Gudchain%20-%20Smart%20Contract%20Audit%20Report.pdf) | Halborn | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
 | [<>\](https://drive.google.com/drive/folders/1xjQkrQJJeMZQldfdnCGaaj5FiGHaGRmm?usp=sharing) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -166,7 +164,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 34 |
-| upstream | 3 |
+| upstream | 2 |
 | standard_library | 10 |
 | needs_review | 1 |
 
@@ -174,14 +172,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=4
 - Match method counts: extraction_exact=35
 
 Zero-match audit list:
 
-- [2165] Gudchain staking contract has been audited by Halborn. [See the audit report here]().
 - [2166] <>\
 
 Fork inheritance lineage and inherited audits are included when available.

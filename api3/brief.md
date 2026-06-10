@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Api3
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Api3 (`api3`)
 - Website: [https://api3.org/](https://api3.org/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-27T17:48:36.975Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:39:05.643Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: ethereum, mantle
 - Contract surface: 28 unique implementations (32 raw deployments)
 - DeFi Llama TVL: $55,284,496.11
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Api3 is a decentralized oracle network that provides first-party data feeds to smart contracts. It uses risk curators to manage data quality and a native token for staking and governance.
+Api3 provides first-party oracle data feeds for smart contracts, with a current product focus that includes OEV Rewards and OEV-enabled, risk-curated DeFi markets. The protocol uses the API3 token for staking and governance, and its ecosystem centers on delivering oracle infrastructure and value recapture mechanisms for DeFi integrations rather than a separate documented 'Update parameters' product family.
 
 ### Architecture
 
@@ -37,7 +35,6 @@ The Api3 family provides the token and staking infrastructure, while the Update 
 - Latest audit: 2024-10 (aging)
 - Staleness: 0 fresh, 1 aging, 5 stale, 0 unknown
 - Tier 1 coverage: 7.1% (Trail of Bits)
-- Note: This protocol is classified as [unknown]. ASD of $55,231,460.87 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "anzen-finance",
-  "generated_at": "2026-05-23T08:37:54.063Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:40:01.272Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "anzen-finance",
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 48,
-    "total_addresses": 163,
-    "unique_implementations": 48,
-    "total_deployments": 163,
+    "total_contracts": 47,
+    "total_addresses": 121,
+    "unique_implementations": 47,
+    "total_deployments": 121,
     "audited_contracts": 14,
-    "unaudited_contracts": 26,
+    "unaudited_contracts": 25,
     "contracts_verified_audited": 14,
-    "contracts_verified_unaudited": 26,
+    "contracts_verified_unaudited": 25,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 8,
-    "coverage_pct": 35,
-    "total_audits": 6,
+    "coverage_pct": 35.9,
+    "total_audits": 5,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 7592970,
+    "dl_tvl_usd": 7527300,
     "tvl_usd": 671202.6425055043,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -69,14 +69,19 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 1,
-      "stale": 4,
+      "stale": 3,
       "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Anzen Finance is a real-world asset (RWA) protocol that issues stablecoins (USDz, sUSDz) backed by real-world assets. It enables cross-chain transfers via LayerZero and offers staking and governance through ve-tokenomics.",
+    "project_purpose": "Anzen Finance is the issuer of USDz, an omnichain real-world-asset-backed digital dollar, with associated staking/rewards and LayerZero-based cross-chain bridging. sUSDz and governance-related mechanics should be treated as associated protocol components only where verified by Anzen documentation or audits.",
     "relationship_narrative": "The Mainnet family serves as the hub with SPCTPool, USDz, and sUSDz, while L2 families (Arbitrum, Base, Blast, Manta) use Vaults and Child tokens to extend stablecoin functionality cross-chain via LayerZero adapters. Governance and staking are unified through AnzenToken and Treasury multisigs.",
     "product_family_count": 8
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 47,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -330,406 +335,6 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0xc34292764c78e54de568ef0f4d475944233eb526",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x00be872906c07d6d7d0ec3968b99c4e3d6bd552a",
-      "name": "AccessControlledOffchainAggregator",
-      "role": "governance",
-      "origin_kind": "upstream",
-      "origin_provider": "Chainlink",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AccessControlledOffchainAggregator",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x00be872906c07d6d7d0ec3968b99c4e3d6bd552a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x04d3d700150e03ed1df763363d746f0e9dee3bdd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x05acfee2c0b4efbbce705932239a30613ace42f2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x19e6821ee47a4c23e5971febee29f78c2e514dc8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x233a45bf331b35440d45e9beb1fdf2fbb7b4e3d2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x29a0bf5d5e677d38f7abbd4d292895a3574796c0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x2c332178c0c9e4ec1dd75d35df5fdf42eefaca44",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x3c6490e4c60bd8246071a014aace7a596d392642",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x43f92e6805196fa6cd7a19f3d769957f95baa261",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x4a61db12d0cb4293d799ecdd82e5994b5746f850",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x4d1d9223b5d6806815506b9ba034dd35390aad68",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x52d743436f6ba414050bd8869c8bf6537c355a00",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x55012ef027ae9b4e2bb5a5f529e5a1184bcc998d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x61140c09956495f1ce49d28e125ed4035e1cae95",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x63a3b4e2aeea2d1cc883987aec22e9aa88323b3c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x6f9829a2278a5b017b6e997e2bafcdbcb8d6bc04",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x728bbcfe2817b4d19b3bdbd06cdd1ea257f6cca6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x74f70d08c92f1cd4ed70b9aa3f8edc0ba5496a01",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x7779366444605bc5b31b4b01d14700d722b76c55",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x801b6e7d186370eee854f76481643c22c7d1da99",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x834ce448a994ca9f4cfe2bf0c6bb5ab7f24b8920",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x84eff9466d371ccab94728e8bdfcd9bc095d7ca6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x851a369f1c7e3f82a2ae8d75ee94eabfd9781805",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x852ae0b1af1aaedb0fc4428b4b24420780976ca8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x8eda55983ecbeb28ab02959aa9e7203e24ba8c19",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xa1923f93b032bf2dfedcdfd0da93037d32c39f4d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xa24aafb9d49d0cf43dcd8a5f2442a30391f494d2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xa33eabc524b691f2d8e5a7ab46e79a6b0360486f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xa9bdecf007120ebb013e223d2a4eea4c8c35e7f1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xae4602716079c0be7948c0b84553dee0e6564a3d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xb5882f52428d10c99bbf56539c02820dda809ccf",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xb76eecece7a7cbf10a55dc4284fb762577ee9e3d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xbbdcbc2c5610992d4acfbfef59d02ee8a7f145f5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xbf477e69a0adf91b6e3d6e70cb67e5d1a27e88e3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xc18cc9b106a50d945024f0a25eff16b6dc56d4b9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xc2b36eebe261eeec502dfe761ba8cdb0e9bc057b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xc73b7635630a94a3e9a595741cbb8a3845c27826",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xc95cd3490be4af06f0a25435e21c2c91b988c482",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xcad16df709bfe62d02cde5d4039684fa47dc216c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xd27766c20df630a7d7e1e5885ae581fb0e61828a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xec509c1f0791504667972d5ff705ae4bd2db500f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xf2d85ee7cd9e75f3ffff4b44ade48581d2dbdfdd",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2786,27 +2391,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2165,
-      "audit_key": "audit-2165",
-      "report_name": "Gudchain staking contract has been audited by Halborn. [See the audit report here]().",
-      "report_url": "https://cdn.gudchain.com/documents/Gudchain%20-%20Smart%20Contract%20Audit%20Report.pdf",
-      "auditor": "Halborn",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 2166,
       "audit_key": "audit-2166",
       "report_name": "<>\\",
@@ -2833,21 +2417,21 @@
       "auditor": "Zellic",
       "tier": 2,
       "contracts_covered": 14,
-      "coverage_pct": 35,
+      "coverage_pct": 35.9,
       "latest_audit": "2024-12"
     },
     {
       "auditor": "Halborn",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 12.5,
+      "coverage_pct": 12.8,
       "latest_audit": "2024-05"
     },
     {
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 7.5,
+      "coverage_pct": 7.7,
       "latest_audit": "2024-04"
     }
   ],
@@ -3025,7 +2609,7 @@
   ],
   "origin_summary": {
     "native": 34,
-    "upstream": 3,
+    "upstream": 2,
     "standard_library": 10,
     "needs_review": 1
   },
@@ -3039,10 +2623,6 @@
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 2165,
-        "report_name": "Gudchain staking contract has been audited by Halborn. [See the audit report here]()."
-      },
       {
         "audit_id": 2166,
         "report_name": "<>\\"

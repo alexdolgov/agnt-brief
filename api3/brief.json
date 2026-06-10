@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "api3",
-  "generated_at": "2026-05-27T17:48:36.975Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:39:05.643Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "api3",
     "tier": 0,
@@ -61,9 +61,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Api3 is a decentralized oracle network that provides first-party data feeds to smart contracts. It uses risk curators to manage data quality and a native token for staking and governance.",
+    "project_purpose": "Api3 provides first-party oracle data feeds for smart contracts, with a current product focus that includes OEV Rewards and OEV-enabled, risk-curated DeFi markets. The protocol uses the API3 token for staking and governance, and its ecosystem centers on delivering oracle infrastructure and value recapture mechanisms for DeFi integrations rather than a separate documented 'Update parameters' product family.",
     "relationship_narrative": "The Api3 family provides the token and staking infrastructure, while the Update parameters family manages oracle configurations. Both families share the Api3ReaderProxyV1 contracts to serve data to consumers.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 28,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

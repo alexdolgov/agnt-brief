@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ao-bridge",
-  "generated_at": "2026-05-31T07:13:20.296Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:36:51.378Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ao-bridge",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "AO Bridge is a canonical bridge protocol that facilitates cross-chain asset transfers between Ethereum and the AO ecosystem. It uses a network of Distribution contracts to manage token distributions and bridge operations.",
+    "project_purpose": "AO Bridge is tracked by DefiLlama as a Canonical Bridge on Ethereum associated with the AO/Arweave ecosystem. The indexed Ethereum contract surface includes ERC1967 proxy deployments pointing to native Distribution implementations, along with Refunder and LinearDistributionIntervalDecrease contracts. Detailed bridge mechanics and deployer-cluster rollout claims should not be asserted without additional evidence.",
     "relationship_narrative": "The AO Bridge family consists of multiple Distribution contracts deployed behind ERC1967Proxy instances, all sharing the same upgradeable proxy pattern. These contracts are deployed by two distinct deployer clusters, indicating a phased rollout or separate operational components within the same bridge infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 3,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -70,7 +75,7 @@
       "chain_name": "ethereum",
       "address": "0x033b274ff36837d72d4baf7b7fcf4f84f6ab8a0e",
       "name": "Distribution",
-      "role": "unknown",
+      "role": "proxy",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": null,
@@ -326,7 +331,7 @@
       "chain_name": "ethereum",
       "address": "0x7e209b1833ae5313c2923116c78baedf14d1d482",
       "name": "LinearDistributionIntervalDecrease",
-      "role": "unknown",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -527,7 +532,7 @@
       "chain_name": "ethereum",
       "address": "0x7e209b1833ae5313c2923116c78baedf14d1d482",
       "name": "LinearDistributionIntervalDecrease",
-      "role": "unknown",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"

@@ -1,6 +1,6 @@
 # anzen-finance — Contract Index
 
-48 unique implementations across 5 chains · 163 deployments · 14 audited · 26 unaudited · 8 unverified
+47 unique implementations across 5 chains · 121 deployments · 14 audited · 25 unaudited · 8 unverified
 
 ## adapter (4)
 
@@ -23,11 +23,10 @@
 | [Vault (3 deployments)](./manta-169/0x5a1b8c0e9fe27b9db4913df6b361dea5e96ea129/) | manta | 3 deployments: manta [`0x5a1b8c...6ea129`](./manta-169/0x5a1b8c0e9fe27b9db4913df6b361dea5e96ea129/); base `0xd4cd16...cbbaac`; blast `0x69213c...024ddc` | ✅ Audited | Verified |
 | [VaultV2 (2 deployments)](./arbitrum-42161/0x73d23f3778a90be8846e172354a115543df2a7e4/) | arbitrum | 2 deployments: arbitrum [`0x73d23f...f2a7e4`](./arbitrum-42161/0x73d23f3778a90be8846e172354a115543df2a7e4/); blast `0xf3588e...0cfe09` | ⚠️ Unaudited | Verified |
 
-## governance (6)
+## governance (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AccessControlledOffchainAggregator (42 deployments)](./base-8453/0x00be872906c07d6d7d0ec3968b99c4e3d6bd552a/) | base | 42 deployments: base [`0x00be87...bd552a`](./base-8453/0x00be872906c07d6d7d0ec3968b99c4e3d6bd552a/); base `0x04d3d7...ee3bdd`; base `0x05acfe...ce42f2`; base `0x19e682...514dc8`; base `0x233a45...b4e3d2`; base `0x29a0bf...4796c0`; base `0x2c3321...faca44`; base `0x3c6490...392642`; base `0x43f92e...baa261`; base `0x4a61db...46f850`; base `0x4d1d92...0aad68`; base `0x52d743...355a00`; base `0x55012e...cc998d`; base `0x61140c...1cae95`; base `0x63a3b4...323b3c`; base `0x6f9829...d6bc04`; base `0x728bbc...f6cca6`; base `0x74f70d...496a01`; base `0x777936...b76c55`; base `0x801b6e...d1da99`; base `0x834ce4...4b8920`; base `0x84eff9...5d7ca6`; base `0x851a36...781805`; base `0x852ae0...976ca8`; base `0x8eda55...ba8c19`; base `0xa1923f...c39f4d`; base `0xa24aaf...f494d2`; base `0xa33eab...60486f`; base `0xa9bdec...35e7f1`; base `0xae4602...564a3d`; base `0xb5882f...809ccf`; base `0xb76eec...ee9e3d`; base `0xbbdcbc...f145f5`; base `0xbf477e...7e88e3`; base `0xc18cc9...56d4b9`; base `0xc2b36e...bc057b`; base `0xc73b76...c27826`; base `0xc95cd3...88c482`; base `0xcad16d...dc216c`; base `0xd27766...61828a`; base `0xec509c...db500f`; base `0xf2d85e...dbdfdd` | ⚠️ Unaudited | Verified |
 | [AnzenVotingControllerUpg (2 deployments)](./base-8453/0x128ef61fdc9a36240b3372bd226479b66d63db38/) | base | 2 deployments: base [`0x128ef6...63db38`](./base-8453/0x128ef61fdc9a36240b3372bd226479b66d63db38/); base `0xed85dc...b00ada` | ✅ Audited | Verified |
 | [GnosisSafe](./ethereum-1/0x20b15ee712b3c368af48ea5a59430be93a71eb3b/) | ethereum | [`0x20b15e...71eb3b`](./ethereum-1/0x20b15ee712b3c368af48ea5a59430be93a71eb3b/) | ⚠️ Unaudited | Verified |
 | [GnosisSafeProxy (3 deployments)](./manta-169/0x13649b6c7e177ffa373eeeeef485952843147210/) | manta | 3 deployments: manta [`0x13649b...147210`](./manta-169/0x13649b6c7e177ffa373eeeeef485952843147210/); manta `0x18b7d4...2ad582`; base `0x18b7d4...2ad582` | ⚠️ Unaudited | Verified |

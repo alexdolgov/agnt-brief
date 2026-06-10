@@ -5,8 +5,8 @@
 - Project: ApeX Protocol (`apex-protocol`)
 - Website: [https://omni.apex.exchange/referral?referralCode=T0S8V482](https://omni.apex.exchange/referral?referralCode=T0S8V482)
 - Lifecycle: active (Tier 0, 63.4% below peak)
-- Generated: 2026-05-31T07:15:22.897Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:38:55.288Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: arbitrum, avalanche, base, ethereum, mantle, optimism, polygon
 - Contract surface: 206 unique implementations (763 raw deployments)
 - DeFi Llama TVL: $36,243,675.00
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-ApeX Protocol is a decentralized derivatives trading platform offering perpetual contracts. It provides two main products: ApeX Pro, a StarkWare-based order book exchange, and Apex Omni, a cross-chain liquidity aggregation layer using ZkLink.
+ApeX Protocol is a decentralized derivatives trading platform offering perpetual contracts. Its product family includes ApeX Pro, a StarkWare-based order book exchange, and ApeX Omni, which is associated with ZkLink-based cross-chain trading/liquidity infrastructure. Any shared gateway or bridge infrastructure between ApeX Pro and ApeX Omni should be treated as unverified unless supported by explicit project documentation or contract linkage.
 
 ### Architecture
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "apex-protocol",
-  "generated_at": "2026-05-31T07:15:22.897Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:38:55.288Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "apex-protocol",
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "ApeX Protocol is a decentralized derivatives trading platform offering perpetual contracts. It provides two main products: ApeX Pro, a StarkWare-based order book exchange, and Apex Omni, a cross-chain liquidity aggregation layer using ZkLink.",
+    "project_purpose": "ApeX Protocol is a decentralized derivatives trading platform offering perpetual contracts. Its product family includes ApeX Pro, a StarkWare-based order book exchange, and ApeX Omni, which is associated with ZkLink-based cross-chain trading/liquidity infrastructure. Any shared gateway or bridge infrastructure between ApeX Pro and ApeX Omni should be treated as unverified unless supported by explicit project documentation or contract linkage.",
     "relationship_narrative": "ApeX Pro and Apex Omni share infrastructure through cross-chain bridges and gateways, with Apex Omni's ZkLink contracts relying on L1/L2 gateways also used by ApeX Pro's StarkWare components. Both families utilize common proxy patterns and deployer clusters, indicating a unified development framework.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 206,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

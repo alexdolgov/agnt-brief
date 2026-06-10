@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "apechain-bridge",
-  "generated_at": "2026-05-31T14:54:09.421Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-6fc5",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-10T20:36:51.356Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "apechain-bridge",
     "tier": 0,
@@ -58,7 +58,7 @@
     }
   },
   "topography": {
-    "project_purpose": "ApeChain Bridge enables cross-chain transfers of assets between Ethereum and ApeChain, focusing on staking and bridging of ApeCoin and related tokens.",
+    "project_purpose": "ApeChain Bridge is a bridge/portal for moving assets to and from ApeChain. Product UI features such as swaps, on-ramps, staking, Relay, or specific messaging infrastructure should only be described where directly supported by verified documentation or in-scope contracts.",
     "relationship_narrative": "The L1Oft4626Router adapter connects the StETHVault and SimpleToken to the LayerZero OFT standard for cross-chain messaging, while ApeCoinStaking manages staking rewards, all deployed by a shared set of deployer addresses.",
     "product_family_count": 1
   },

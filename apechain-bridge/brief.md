@@ -1,12 +1,14 @@
 # Agentic Audit Brief: ApeChain Bridge
 
+⚠️ Lifecycle status: DECLINING - TVL dropped 8.2% over 90 days
+
 ## Project Overview
 
 - Project: ApeChain Bridge (`apechain-bridge`)
 - Website: [https://apechain.com/portal#bridge](https://apechain.com/portal#bridge)
-- Lifecycle: active (Tier 0, 90.8% below peak)
-- Generated: 2026-05-31T14:54:09.421Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-6fc5
+- Lifecycle: declining (Tier 0, 90.8% below peak)
+- Generated: 2026-06-10T20:36:51.356Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: ethereum
 - Contract surface: 9 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $44,918,026.08
@@ -15,7 +17,7 @@
 
 ## Project Description
 
-ApeChain Bridge enables cross-chain transfers of assets between Ethereum and ApeChain, focusing on staking and bridging of ApeCoin and related tokens.
+ApeChain Bridge is a bridge/portal for moving assets to and from ApeChain. Product UI features such as swaps, on-ramps, staking, Relay, or specific messaging infrastructure should only be described where directly supported by verified documentation or in-scope contracts.
 
 ### Architecture
 
@@ -35,6 +37,7 @@ The L1Oft4626Router adapter connects the StETHVault and SimpleToken to the Layer
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [declining]. ASD of $138,232,772.62 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

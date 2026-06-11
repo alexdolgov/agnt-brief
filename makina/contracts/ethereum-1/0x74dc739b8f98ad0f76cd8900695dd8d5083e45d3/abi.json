@@ -1,0 +1,132 @@
+[
+  {
+    "inputs": [],
+    "name": "IndexOutOfBounds",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "a",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "b",
+        "type": "bytes32"
+      }
+    ],
+    "name": "arrayOf",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "a",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "b",
+        "type": "bytes32"
+      }
+    ],
+    "name": "eq",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "arr",
+        "type": "bytes32[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getArrayWord",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "tuple",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTupleWord",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "condition",
+        "type": "bool"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "a",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "b",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ternary",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

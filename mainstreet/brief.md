@@ -5,8 +5,8 @@
 - Project: Mainstreet (`mainstreet`)
 - Website: [https://mainstreet.finance/](https://mainstreet.finance/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:07.143Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:49:50.643Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $78,184,322.02

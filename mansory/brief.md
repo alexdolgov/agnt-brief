@@ -5,8 +5,8 @@
 - Project: Mansory (`mansory`)
 - Website: [https://www.mansory.com/](https://www.mansory.com/)
 - Lifecycle: active (Tier 0, 80.9% below peak)
-- Generated: 2026-06-10T20:59:07.161Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:49:50.805Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: bsc
 - Contract surface: 5 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $6,286,314.60

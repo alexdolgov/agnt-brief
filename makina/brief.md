@@ -5,8 +5,8 @@
 - Project: Makina (`makina`)
 - Website: [https://app.makina.finance/](https://app.makina.finance/)
 - Lifecycle: active (Tier 0, 65.2% below peak)
-- Generated: 2026-06-10T20:59:07.148Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:51:51.960Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: base, ethereum, ink
 - Contract surface: 36 unique implementations (60 raw deployments)
 - DeFi Llama TVL: $36,799,164.34

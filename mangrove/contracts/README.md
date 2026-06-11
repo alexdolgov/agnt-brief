@@ -1,6 +1,6 @@
 # mangrove — Contract Index
 
-68 unique implementations across 4 chains · 147 deployments · 10 audited · 31 unaudited · 27 unverified
+68 unique implementations across 4 chains · 147 deployments · 9 audited · 32 unaudited · 27 unverified
 
 ## adapter (6)
 
@@ -9,7 +9,7 @@
 | [BalancerV2Swapper](./sei-1329/0x369022670f2c623ee6894ae4053ef54c2c685dd0/) | sei | [`0x369022...685dd0`](./sei-1329/0x369022670f2c623ee6894ae4053ef54c2c685dd0/) | ⚠️ Unaudited | Verified |
 | [ERC4626RouterDeployer (3 deployments)](./base-8453/0x5f4d596c58a1d171196923fd8c45a09e9dee7b34/) | base | 3 deployments: sei `0xb37f7a...ee14d9`; sei `0xc698f8...121b72`; base [`0x5f4d59...ee7b34`](./base-8453/0x5f4d596c58a1d171196923fd8c45a09e9dee7b34/) | ⚠️ Unaudited | Verified |
 | [ERC4626RouterProxyDeployer](./sei-1329/0x84bf03a254151afc147ad09cd85a3d5ab75ea71c/) | sei | [`0x84bf03...5ea71c`](./sei-1329/0x84bf03a254151afc147ad09cd85a3d5ab75ea71c/) | ⚠️ Unaudited | Verified |
-| [RouterProxyFactory (4 deployments)](./base-8453/0x2926cc3977f93a51465f9742c548e67220af54e9/) | base | 4 deployments: sei `0x91d001...516d93`; base [`0x2926cc...af54e9`](./base-8453/0x2926cc3977f93a51465f9742c548e67220af54e9/); arbitrum `0x396614...77e0f1`; blast `0x79c3f2...8b7131` | ✅ Audited | Verified |
+| [RouterProxyFactory (4 deployments)](./base-8453/0x2926cc3977f93a51465f9742c548e67220af54e9/) | base | 4 deployments: sei `0x91d001...516d93`; base [`0x2926cc...af54e9`](./base-8453/0x2926cc3977f93a51465f9742c548e67220af54e9/); arbitrum `0x396614...77e0f1`; blast `0x79c3f2...8b7131` | ⚠️ Unaudited | Verified |
 | [TakaraRouterProxyDeployer (3 deployments)](./sei-1329/0x1feae24e399cdee3ad009570b6c1418b5494cfbf/) | sei | 3 deployments: sei [`0x1feae2...94cfbf`](./sei-1329/0x1feae24e399cdee3ad009570b6c1418b5494cfbf/); sei `0x7964be...c8663b`; sei `0xf63535...ce6c5b` | ⚠️ Unaudited | Verified |
 | [UniswapV3Swapper (2 deployments)](./arbitrum-42161/0x22ba67eb361ec40e0949ed034f3ce08af51099fa/) | arbitrum | 2 deployments: base `0xaf31be...21ea3f`; arbitrum [`0x22ba67...1099fa`](./arbitrum-42161/0x22ba67eb361ec40e0949ed034f3ce08af51099fa/) | ⚠️ Unaudited | Verified |
 

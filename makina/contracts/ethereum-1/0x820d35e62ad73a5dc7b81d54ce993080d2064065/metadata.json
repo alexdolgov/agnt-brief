@@ -1,0 +1,18 @@
+{
+  "address": "0x820d35e62ad73a5dc7b81d54ce993080d2064065",
+  "chain_id": 1,
+  "contract_name": "FlashloanAggregator",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 150,
+  "evm_version": "cancun",
+  "license": "GPL-2.0-or-later, GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 47,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-11T00:51:58.279Z"
+}

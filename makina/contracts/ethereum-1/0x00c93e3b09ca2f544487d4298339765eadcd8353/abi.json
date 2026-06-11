@@ -1,0 +1,105 @@
+[
+  {
+    "inputs": [],
+    "name": "ConditionIsFalse",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ConditionIsTrue",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "x",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "y",
+        "type": "bool"
+      }
+    ],
+    "name": "and",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "x",
+        "type": "bool"
+      }
+    ],
+    "name": "not",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "x",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "y",
+        "type": "bool"
+      }
+    ],
+    "name": "or",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "x",
+        "type": "bool"
+      }
+    ],
+    "name": "revertIfFalse",
+    "outputs": [],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "x",
+        "type": "bool"
+      }
+    ],
+    "name": "revertIfTrue",
+    "outputs": [],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

@@ -4,7 +4,7 @@
 |---|---|
 | Chain | ethereum (1) |
 | Address | `0x4ba01f22827018b4772cd326c7627fb4956a7c00` |
-| Role | unknown |
+| Role | proxy |
 | Origin | standard_library |
 | Audited | Yes |
 | Audits | [Mainstreet_v2_Audit_Report_by_WatchPug.pdf](https://github.com/Mainstreet-Labs/mainstreet-watchpug-audit/blob/main/Mainstreet_v2_Audit_Report_by_WatchPug.pdf) |

@@ -343,11 +343,11 @@
 | [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-31 |
 | [magma-staking](./magma-staking/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [magpie-ecosystem](./magpie-ecosystem/) | $24.6M | 0.0% | ? | declining | 4 | 662 | 2026-06-11 |
-| [mainstreet](./mainstreet/) | $78.2M | 100.0% | ? | active | 1 | 1 | 2026-06-10 |
-| [makina](./makina/) | $12.9M | 90.9% | $12.9M | active | 4 | 36 | 2026-06-10 |
-| [mangrove](./mangrove/) | $4.3M | 22.0% | ? | active | 6 | 68 | 2026-06-10 |
-| [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 0 | 5 | 2026-06-10 |
-| [manta-atlantic-stake](./manta-atlantic-stake/) | $5.4M | 0.0% | ? | sunsetting | 0 | 109 | 2026-06-10 |
+| [mainstreet](./mainstreet/) | $78.2M | 100.0% | ? | active | 1 | 1 | 2026-06-11 |
+| [makina](./makina/) | $12.9M | 90.9% | $12.9M | active | 4 | 36 | 2026-06-11 |
+| [mangrove](./mangrove/) | $4.3M | 22.0% | ? | active | 6 | 68 | 2026-06-11 |
+| [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 0 | 5 | 2026-06-11 |
+| [manta-atlantic-stake](./manta-atlantic-stake/) | $5.4M | 0.0% | ? | sunsetting | 0 | 109 | 2026-06-11 |
 | [manta-cedefi](./manta-cedefi/) | $26.7M | 0.0% | ? | unknown | 0 | 17 | 2026-06-10 |
 | [manta-pacific](./manta-pacific/) | $24.6M | 0.0% | ? | active | 0 | 3 | 2026-06-10 |
 | [mantle-restaking](./mantle-restaking/) | $79.7M | 0.0% | ? | active | 13 | 8 | 2026-06-10 |

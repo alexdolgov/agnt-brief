@@ -1,0 +1,17 @@
+{
+  "address": "0xe11b4879a771222cdae84e4392b03adaa151bc4d",
+  "chain_id": 1,
+  "contract_name": "SignedMathHelper",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 150,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-11T00:52:00.060Z"
+}

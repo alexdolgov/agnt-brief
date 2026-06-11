@@ -5,8 +5,8 @@
 - Project: Neemo Finance (`neemo-finance`)
 - Website: [https://neemo.finance/](https://neemo.finance/)
 - Lifecycle: active (Tier 0, 74.5% below peak)
-- Generated: 2026-06-10T20:59:08.057Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:22:41.052Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: ethereum
 - Contract surface: 14 unique implementations (15 raw deployments)
 - DeFi Llama TVL: $1,369,797.95

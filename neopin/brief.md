@@ -5,8 +5,8 @@
 - Project: NEOPIN (`neopin`)
 - Website: [https://neopin.io](https://neopin.io)
 - Lifecycle: active (Tier 0, 70.1% below peak)
-- Generated: 2026-06-10T20:59:08.064Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:22:47.809Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: ethereum, klaytn, polygon
 - Contract surface: 100 unique implementations (100 raw deployments)
 - DeFi Llama TVL: $55,370,847.00

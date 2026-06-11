@@ -4,8 +4,8 @@
 
 - Project: Neku (`neku`)
 - Lifecycle: active (Tier 0, 86.4% below peak)
-- Generated: 2026-06-10T20:59:08.059Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:22:41.057Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: arbitrum
 - Contract surface: 17 unique implementations (55 raw deployments)
 - DeFi Llama TVL: $1,598,052.81

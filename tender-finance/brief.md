@@ -4,8 +4,8 @@
 
 - Project: Tender Finance (`tender-finance`)
 - Lifecycle: active (Tier 0, 96.6% below peak)
-- Generated: 2026-06-10T20:59:17.342Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:30:05.096Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: arbitrum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,287,317.93

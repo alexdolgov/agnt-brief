@@ -5,8 +5,8 @@
 - Project: TG Casino (`tg-casino`)
 - Website: [https://token.tg.casino/staking](https://token.tg.casino/staking)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:17.455Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:32:00.866Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: ethereum
 - Contract surface: 15 unique implementations (20 raw deployments)
 - DeFi Llama TVL: $1,201,303.77

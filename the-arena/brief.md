@@ -5,8 +5,8 @@
 - Project: The Arena (`the-arena`)
 - Website: [https://arena.social/](https://arena.social/)
 - Lifecycle: active (Tier 0, 81.1% below peak)
-- Generated: 2026-06-10T20:59:17.473Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:29:33.469Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: avalanche
 - Contract surface: 119 unique implementations (222 raw deployments)
 - DeFi Llama TVL: $2,202,689.00

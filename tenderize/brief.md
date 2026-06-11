@@ -7,8 +7,8 @@
 - Project: Tenderize (`tenderize`)
 - Website: [https://tenderize.me](https://tenderize.me)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:17.350Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:32:54.421Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: arbitrum, ethereum
 - Contract surface: 43 unique implementations (86 raw deployments)
 - DeFi Llama TVL: $1,095,343.00

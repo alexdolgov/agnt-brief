@@ -6,8 +6,8 @@
 
 - Project: Kine Finance (`kine-finance`)
 - Lifecycle: declining (Tier 0, 95.8% below peak)
-- Generated: 2026-06-10T20:59:06.692Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:23:05.088Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: avalanche, bsc, ethereum, polygon
 - Contract surface: 35 unique implementations (169 raw deployments)
 - DeFi Llama TVL: $1,094,539.10

@@ -5,8 +5,8 @@
 - Project: KiloEx (`kiloex`)
 - Website: [https://app.kiloex.io/#/trade](https://app.kiloex.io/#/trade)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:59:06.683Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:26:41.919Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: base, bsc, manta
 - Contract surface: 110 unique implementations (155 raw deployments)
 - DeFi Llama TVL: $2,454,202.40

@@ -1,6 +1,6 @@
 # kiloex — Contract Index
 
-111 unique implementations across 3 chains · 156 deployments · 1 audited · 7 unaudited · 103 unverified
+110 unique implementations across 3 chains · 155 deployments · 1 audited · 6 unaudited · 103 unverified
 
 ## governance (1)
 
@@ -14,12 +14,11 @@
 |---|---|---|---|---|
 | [TransparentUpgradeableProxy (44 deployments)](./base-8453/0x01f4e3617aac0085729aae649714fe87117319fb/) | base | 44 deployments: base [`0x01f4e3...7319fb`](./base-8453/0x01f4e3617aac0085729aae649714fe87117319fb/); base `0x19653d...a2717c`; base `0x1a7b3f...62f981`; base `0x1ebed4...6e8c46`; base `0x22c40b...92dae5`; base `0x27a2bf...80be1e`; base `0x2f75b5...7b21b6`; base `0x2f94c6...2054bc`; base `0x3274b6...ebe7c8`; base `0x34c625...54690e`; base `0x43e3e6...c6b477`; base `0x499dc9...b485ef`; base `0x54e874...d34aed`; base `0x618370...0e63e1`; base `0x61e120...50ffd5`; base `0x66dc90...5dbd7a`; base `0x7637e3...47c9c9`; base `0x796f17...f3aa9d`; base `0x7ab5c3...9af634`; base `0x7bc8d5...ac44ce`; base `0x9088e3...a2cf3c`; base `0x92a381...feafcc`; base `0x9438b8...6ae107`; base `0x994f4e...a5696e`; base `0x9a51dc...5b83c1`; base `0xa02d43...536acc`; base `0xa2e2f3...4fc5b2`; base `0xa39efa...957e86`; base `0xa9f9e1...9f6405`; base `0xac9bb9...17f5de`; base `0xb1c7f6...4670b9`; base `0xb31c98...abf56f`; base `0xc5655a...ffff97`; base `0xc56d3b...546ead`; base `0xc7444b...10977d`; base `0xc8d733...963292`; base `0xcf07e1...c0ae28`; base `0xd62d82...54b95c`; base `0xdf5acc...93ebbb`; base `0xe6999f...da76f6`; base `0xeae561...d67630`; base `0xef5d9f...356909`; base `0xf4d446...f709fe`; base `0xfdc7bc...3627ed` | ⚠️ Unaudited | Verified |
 
-## token (2)
+## token (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [KiloExToken (2 deployments)](./bsc-56/0x503fa24b7972677f00c4618e5fbe237780c1df53/) | bsc | 2 deployments: bsc [`0x503fa2...c1df53`](./bsc-56/0x503fa24b7972677f00c4618e5fbe237780c1df53/); bsc `0xfcd054...a7019a` | ✅ Audited | Verified |
-| [PumpTokenOFT](./base-8453/0xf469fbd2abcd6b9de8e169d128226c0fc90a012e/) | base | [`0xf469fb...0a012e`](./base-8453/0xf469fbd2abcd6b9de8e169d128226c0fc90a012e/) | ⚠️ Unaudited | Verified |
 
 ## unknown (107)
 

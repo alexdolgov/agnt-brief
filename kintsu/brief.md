@@ -7,8 +7,8 @@
 - Project: Kintsu (`kintsu`)
 - Website: [https://kintsu.xyz/](https://kintsu.xyz/)
 - Lifecycle: declining (Tier 0, 60.2% below peak)
-- Generated: 2026-06-10T20:59:06.701Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:26:20.949Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: hyperliquid
 - Contract surface: 12 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $2,345,149.42

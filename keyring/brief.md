@@ -5,8 +5,8 @@
 - Project: Keyring (`keyring`)
 - Website: [https://app.euler.finance/governor/keyring?network=avalanche](https://app.euler.finance/governor/keyring?network=avalanche)
 - Lifecycle: active (Tier 0, 72.2% below peak)
-- Generated: 2026-06-10T20:59:06.676Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:23:03.487Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: avalanche, ethereum
 - Contract surface: 53 unique implementations (144 raw deployments)
 - DeFi Llama TVL: $6,222,268.01

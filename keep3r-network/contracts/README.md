@@ -1,6 +1,6 @@
 # keep3r-network — Contract Index
 
-481 unique implementations on ethereum · 1714 deployments · 1 audited · 367 unaudited · 113 unverified
+480 unique implementations on ethereum · 1713 deployments · 1 audited · 366 unaudited · 113 unverified
 
 ## adapter (23)
 
@@ -250,7 +250,7 @@
 | [yUSDT (7 deployments)](./ethereum-1/0x3118eec34240620ffd044dfa3aaa0a0f78b9aade/) | ethereum | 7 deployments: ethereum [`0x3118ee...b9aade`](./ethereum-1/0x3118eec34240620ffd044dfa3aaa0a0f78b9aade/); ethereum `0x4d96fb...b66311`; ethereum `0x83f798...f1707d`; ethereum `0x90339d...20e249`; ethereum `0xa17872...a1dd14`; ethereum `0xa1e644...0436bf`; ethereum `0xe6354e...92d447` | ⚠️ Unaudited | Verified |
 | [yWBTC (2 deployments)](./ethereum-1/0x04aa51bbcb46541455ccf1b8bef2ebc5d3787ec9/) | ethereum | 2 deployments: ethereum [`0x04aa51...787ec9`](./ethereum-1/0x04aa51bbcb46541455ccf1b8bef2ebc5d3787ec9/); ethereum `0x04ef81...2514e9` | ⚠️ Unaudited | Verified |
 
-## unknown (273)
+## unknown (272)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -271,7 +271,6 @@
 | [CollateralEth](./ethereum-1/0x3ff5c0a14121ca39211c95f6ceb221b86a90729e/) | ethereum | [`0x3ff5c0...90729e`](./ethereum-1/0x3ff5c0a14121ca39211c95f6ceb221b86a90729e/) | ⚠️ Unaudited | Verified |
 | [CollateralMaximizer (4 deployments)](./ethereum-1/0x494ba8753a253bb314f1e8324c36f804d31b96c1/) | ethereum | 4 deployments: ethereum [`0x494ba8...1b96c1`](./ethereum-1/0x494ba8753a253bb314f1e8324c36f804d31b96c1/); ethereum `0x6ae0b2...bcca84`; ethereum `0xa0807c...5d7fd3`; ethereum `0xbc8c63...0158d1` | ⚠️ Unaudited | Verified |
 | [CollateralShort (2 deployments)](./ethereum-1/0x188c2274b04ea392b21487b5de299e382ff84246/) | ethereum | 2 deployments: ethereum [`0x188c22...f84246`](./ethereum-1/0x188c2274b04ea392b21487b5de299e382ff84246/); ethereum `0x1f2c3a...73a516` | ⚠️ Unaudited | Verified |
-| [Comp](./ethereum-1/0x2ba592f78db6436527729929aaf6c908497cb200/) | ethereum | [`0x2ba592...7cb200`](./ethereum-1/0x2ba592f78db6436527729929aaf6c908497cb200/) | ⚠️ Unaudited | Verified |
 | [COMPfarming (4 deployments)](./ethereum-1/0x1532eb6c6d134903a0dedfc840128007b36aa870/) | ethereum | 4 deployments: ethereum [`0x1532eb...6aa870`](./ethereum-1/0x1532eb6c6d134903a0dedfc840128007b36aa870/); ethereum `0x885f9e...514979`; ethereum `0xbdba8b...58e821`; ethereum `0xef9f5d...8198a0` | ⚠️ Unaudited | Verified |
 | [Comptroller (28 deployments)](./ethereum-1/0x3d5bc3c8d13dcb8bf317092d84783c2697ae9258/) | ethereum | 28 deployments: ethereum [`0x3d5bc3...ae9258`](./ethereum-1/0x3d5bc3c8d13dcb8bf317092d84783c2697ae9258/); ethereum `0x44a420...dff193`; ethereum `0x4b1479...e5a083`; ethereum `0x5d6202...2117c8`; ethereum `0x5ef4c9...1205b4`; ethereum `0x76b34a...063828`; ethereum `0x78962e...892963`; ethereum `0x793027...cb16bd`; ethereum `0x79757e...5a86c7`; ethereum `0x7aa375...9f53ba`; ethereum `0x7d506f...ef9902`; ethereum `0x823498...239367`; ethereum `0x86c2bb...2e4fe9`; ethereum `0x8a2707...e4e088`; ethereum `0x9ac75f...7b64a7`; ethereum `0xa05e35...a7e88d`; ethereum `0xa7d4f8...34708b`; ethereum `0xab1c34...144cbb`; ethereum `0xb03614...64df27`; ethereum `0xb4cf50...38f957`; ethereum `0xc4ff0a...d0c4e9`; ethereum `0xc855b3...dd2dde`; ethereum `0xcbb626...e4111c`; ethereum `0xcdca61...8d5aa3`; ethereum `0xd96c52...76367d`; ethereum `0xe293a9...f76e63`; ethereum `0xe376ed...d11bb9`; ethereum `0xf1cd00...f494f4` | ⚠️ Unaudited | Verified |
 | [ConverterDAItoYCRV](./ethereum-1/0x98158e133f7f56a574fc806e579e1355048039ca/) | ethereum | [`0x98158e...8039ca`](./ethereum-1/0x98158e133f7f56a574fc806e579e1355048039ca/) | ⚠️ Unaudited | Verified |

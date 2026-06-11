@@ -6,10 +6,10 @@
 | Address | `0x09959798b95d00a3183d20fac298e4594e599eab` |
 | Role | registry |
 | Origin | native |
-| Audited | Yes |
-| Audits | [consensys.net/diligence/audits/2020/02/thesis-tbtc-and-keep](https://diligence.security/audits/2020/02/thesis-tbtc-and-keep) |
-| Deployments | 3 (ethereum [`0x09959798b95d00a3183d20fac298e4594e599eab`](../0x09959798b95d00a3183d20fac298e4594e599eab/); ethereum `0x292c9fdf2e2475599cbe350cc473c221bd67ae28`; ethereum `0x50510e691c90ea098e3fdd23c311731bf394aafd`) |
-| Proxy | No (implementation for 1 proxy: `0x50510e...94aafd`) |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (ethereum [`0x09959798b95d00a3183d20fac298e4594e599eab`](../0x09959798b95d00a3183d20fac298e4594e599eab/)) |
+| Proxy | No |
 | Source | Sourcify (partial match) |
 | TVL | n/a |
 

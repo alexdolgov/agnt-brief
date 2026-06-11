@@ -301,11 +301,11 @@
 | [katana-pre-launch](./katana-pre-launch/) | $307.6K | 0.0% | $307.6K | active | 28 | 165 | 2026-06-11 |
 | [kava-earn](./kava-earn/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
 | [kava-lend](./kava-lend/) | $7.8M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
-| [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-10 |
-| [kava-mint](./kava-mint/) | $52.2M | 0.0% | ? | active | 1 | 1 | 2026-06-10 |
-| [keep-network](./keep-network/) | $25.5M | 7.1% | $24.7M | declining | 18 | 225 | 2026-06-10 |
-| [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | declining | 1 | 480 | 2026-06-10 |
-| [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 0 | 4 | 2026-06-10 |
+| [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
+| [kava-mint](./kava-mint/) | $52.2M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
+| [keep-network](./keep-network/) | $25.5M | 7.9% | $24.7M | declining | 18 | 225 | 2026-06-11 |
+| [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | declining | 1 | 480 | 2026-06-11 |
+| [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 0 | 4 | 2026-06-11 |
 | [keyring](./keyring/) | $6.2M | 0.0% | ? | active | 0 | 53 | 2026-06-10 |
 | [kiloex](./kiloex/) | $5.7M | 14.3% | ? | active | 10 | 110 | 2026-06-10 |
 | [kine-finance](./kine-finance/) | $351.8M | 0.0% | $351.8M | declining | 0 | 35 | 2026-06-10 |

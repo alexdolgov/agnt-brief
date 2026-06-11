@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "keep-network",
-  "generated_at": "2026-06-10T20:59:06.530Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T00:21:58.155Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "keep-network",
@@ -36,15 +36,15 @@
     "total_addresses": 1088,
     "unique_implementations": 225,
     "total_deployments": 1088,
-    "audited_contracts": 9,
-    "unaudited_contracts": 117,
-    "contracts_verified_audited": 9,
-    "contracts_verified_unaudited": 116,
+    "audited_contracts": 10,
+    "unaudited_contracts": 116,
+    "contracts_verified_audited": 10,
+    "contracts_verified_unaudited": 115,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 99,
-    "coverage_pct": 7.1,
+    "coverage_pct": 7.9,
     "total_audits": 18,
-    "scoreable_audits": 5,
+    "scoreable_audits": 6,
     "dl_tvl_usd": 1460227.73487,
     "tvl_usd": 25504015.045029026,
     "tvl_source": "on_chain",
@@ -11087,14 +11087,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3419"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -15292,12 +15294,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "tBTC",
+        "wormhole-gateway"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
@@ -15336,6 +15341,13 @@
       "contracts_covered": 1,
       "coverage_pct": 0.8,
       "latest_audit": "2021-11"
+    },
+    {
+      "auditor": "LeastAuthority",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 0.8,
+      "latest_audit": "2023-08"
     }
   ],
   "coverage_gaps": [
@@ -15842,16 +15854,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x18084fba666a33d37592fa2633fd49a74dd93a88",
-      "name": "TBTC",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x9c070027cdc9dc8f82416b2e5314e11dfb4fe3cd",
       "name": "TBTCVault",
       "role": "core_logic",
@@ -15918,10 +15920,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 64
+      "extraction_exact": 65
     },
     "extraction_confidence_counts": {
-      "high": 5
+      "high": 6
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -15973,10 +15975,6 @@
       {
         "audit_id": 3418,
         "report_name": "* **Report:** [View Audit PDF](https://github.com/threshold-network/security-audits/blob/main/09-Nov-2021-ChainSecurity.pdf) - [Link to ChainSecurity]()"
-      },
-      {
-        "audit_id": 3419,
-        "report_name": "29-Aug-2023-LeastAuthority.pdf"
       }
     ],
     "inherited_remapped_matches": []

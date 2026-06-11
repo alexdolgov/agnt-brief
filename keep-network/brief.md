@@ -7,8 +7,8 @@
 - Project: KEEP Network (`keep-network`)
 - Website: [https://app.threshold.network/](https://app.threshold.network/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:06.530Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:21:58.155Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: arbitrum, base, ethereum, optimism, polygon
 - Contract surface: 225 unique implementations (1088 raw deployments)
 - DeFi Llama TVL: $1,460,227.73
@@ -25,14 +25,14 @@ The tBTC L1 contracts serve as the hub for Bitcoin bridging, with L2 families (A
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 9/126 (7.1%)
-- Verified + Unaudited implementations: 116
+- Verified implementations audited: 10/126 (7.9%)
+- Verified + Unaudited implementations: 115
 - Verified by bytecode match: 1
 - Unverified implementations: 99
 - Unique implementations: 225
 - Raw deployments: 1088
 - Audits discovered: 18
-- Scoreable audits (matched contracts): 5
+- Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): $24,655,565.20
 - Latest audit: 2025-11 (fresh)
 - Staleness: 6 fresh, 1 aging, 11 stale, 0 unknown
@@ -48,10 +48,11 @@ The tBTC L1 contracts serve as the hub for Bitcoin bridging, with L2 families (A
 | Thesis Defense | Tier 2 | 3 | 2.4% | 2024-04 |
 | ChainSecurity | Tier 1 | 2 | 1.6% | 2021-11 |
 | CertiK | Tier 2 | 1 | 0.8% | 2021-11 |
+| LeastAuthority | Tier 2 | 1 | 0.8% | 2023-08 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (9)
+### ✅ Verified + Audited (10)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -63,9 +64,10 @@ The tBTC L1 contracts serve as the hub for Bitcoin bridging, with L2 families (A
 | L2BitcoinDepositor | unknown | arbitrum | 7 deployments: base `0x203438...2ef4ea`; base `0xa2a81d...8c512e`; base `0xda04b0...8c3d4a`; base `0xdebd9a...540bd5`; arbitrum [`0x1c8d7b...258f9e`](./contracts/arbitrum-42161/0x1c8d7b744b474c080faadd5bf9ad965be4258f9e/); arbitrum `0x75a6e4...2c619a`; arbitrum `0xff79fc...a64db1` | ✅ Audited |
 | Redemption | unknown | ethereum | 4 deployments: ethereum [`0x1b0534...d7e29d`](./contracts/ethereum-1/0x1b0534bc3f43b11ebde71f0fc68cf61df4d7e29d/); ethereum `0x1d1385...56e9a4`; ethereum `0x713f58...dceb35`; ethereum `0xa7fed1...2f5d0d` | ✅ Audited |
 | T | unknown | ethereum | [`0xcdf702...94bee5`](./contracts/ethereum-1/0xcdf7028ceab81fa0c6971208e83fa7872994bee5/) | ✅ Audited |
+| TBTC | unknown | ethereum | [`0x18084f...d93a88`](./contracts/ethereum-1/0x18084fba666a33d37592fa2633fd49a74dd93a88/) | ✅ Audited |
 | WalletRegistry | registry | ethereum | 2 deployments: ethereum [`0x420c99...a1ac6e`](./contracts/ethereum-1/0x420c99a4b0e4cb65c4cabf2b4d2526372aa1ac6e/); ethereum `0x46d52e...5204eb` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (116)
+### ⚠️ Verified + Unaudited (115)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -169,7 +171,6 @@ The tBTC L1 contracts serve as the hub for Bitcoin bridging, with L2 families (A
 | StarknetTokenBridge | operational_periphery | ethereum | 22 deployments: ethereum [`0x00b046...dd082b`](./contracts/ethereum-1/0x00b0466f8dc04b0782dbf1a1dfdce333f0dd082b/); ethereum `0x1febb8...1633bb`; ethereum `0x205fef...4762b7`; ethereum `0x2111a4...9866b9`; ethereum `0x264c70...4df778`; ethereum `0x30a155...dbf483`; ethereum `0x3236da...a50124`; ethereum `0x4ea91e...5744d5`; ethereum `0x52c65b...c9b9d7`; ethereum `0x594cca...135d7a`; ethereum `0x5cd684...42379c`; ethereum `0x6095f6...67175a`; ethereum `0x6f3229...9eefd5`; ethereum `0x70a368...59a356`; ethereum `0x9aaa37...96860e`; ethereum `0x9bb621...5af2ed`; ethereum `0x9fada9...b7ea7e`; ethereum `0xa86b9b...32ab10`; ethereum `0xe0d1fa...ba3f18`; ethereum `0xea90d8...6f244e`; ethereum `0xf39d31...563aff`; ethereum `0xf5b6ee...3f69eb` | ⚠️ Unaudited |
 | StarkPerpetual | unknown | ethereum | 9 deployments: ethereum [`0x1ce5d7...353c65`](./contracts/ethereum-1/0x1ce5d7f52a8abd23551e91248151ca5a13353c65/); ethereum `0x316761...03eae4`; ethereum `0x32771a...5311fc`; ethereum `0x67bc24...dec5f0`; ethereum `0x8c43c9...abd35d`; ethereum `0xa1d544...52dcbb`; ethereum `0xc4a7c5...34fc74`; ethereum `0xdd8133...528396`; ethereum `0xe53a6e...482e6b` | ⚠️ Unaudited |
 | TACoApplication | unknown | ethereum | 7 deployments: ethereum [`0x347cc7...edcf07`](./contracts/ethereum-1/0x347cc7ede7e5517bd47d20620b2cf1b406edcf07/); ethereum `0x66ac6a...f64595`; ethereum `0x76e9e5...6854a8`; ethereum `0x947685...b630b9`; ethereum `0x98f643...6659db`; ethereum `0x9a4c2f...5e2b51`; ethereum `0xafa132...3ae743` | ⚠️ Unaudited |
-| TBTC | unknown | ethereum | [`0x18084f...d93a88`](./contracts/ethereum-1/0x18084fba666a33d37592fa2633fd49a74dd93a88/) | ⚠️ Unaudited |
 | TBTCVault | core_logic | ethereum | [`0x9c0700...4fe3cd`](./contracts/ethereum-1/0x9c070027cdc9dc8f82416b2e5314e11dfb4fe3cd/) | ⚠️ Unaudited |
 | TestToken | token | ethereum | [`0xcf0ecb...468746`](./contracts/ethereum-1/0xcf0ecbe2174ef46af58906afb217af0767468746/) | ⚠️ Unaudited |
 | Timelock | governance | base | 3 deployments: ethereum `0x92f2d8...b4913d`; base [`0x86b035...b85017`](./contracts/base-8453/0x86b035ce06c4a754d58872b305522ef193b85017/); base `0xaa60f9...3b672f` | ⚠️ Unaudited |
@@ -327,7 +328,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [* **Report:** [View Audit PDF](https://github.com/threshold-network/security-audits/blob/main/19-Nov-2021-CertiK.pdf) - [Link to CertiK]()](https://skynet.certik.com/projects/threshold-network) | CertiK | Audit | 2021-11 | stale | Direct | contract_name | 1 | high |
 | [* **Report:** [View Audit PDF]() - [Link to ChainSecurity](https://chainsecurity.com/security-audit/threshold-network)](https://github.com/threshold-network/security-audits/blob/main/09-Nov-2021-ChainSecurity.pdf) | ChainSecurity | Audit | 2021-11 | stale | Direct | contract_name | 12 | high |
 | [* **Report:** [View Audit PDF](https://github.com/threshold-network/security-audits/blob/main/09-Nov-2021-ChainSecurity.pdf) - [Link to ChainSecurity]()](https://www.chainsecurity.com/security-audit/threshold-network) | ChainSecurity | Audit | 2021-11 | stale | Direct | n/a | 0 | n/a |
-| [29-Aug-2023-LeastAuthority.pdf](https://github.com/threshold-network/security-audits/blob/main/29-Aug-2023-LeastAuthority.pdf) | LeastAuthority | Audit | 2023-08 | stale | Direct | n/a | 0 | n/a |
+| [29-Aug-2023-LeastAuthority.pdf](https://github.com/threshold-network/security-audits/blob/main/29-Aug-2023-LeastAuthority.pdf) | LeastAuthority | Audit | 2023-08 | stale | Direct | contract_name | 1 | high |
 
 ## Coverage Gaps
 
@@ -385,7 +386,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x0a9558...4d9359`](./contracts/ethereum-1/0x0a9558ce70daa574c715616d68978808504d9359/) | StarkgateManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x179fa5...3656a0`](./contracts/ethereum-1/0x179fa59e4d19ac7c7b4e3daa0cd6557a553656a0/) | StarknetERC20Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x455603...603581`](./contracts/ethereum-1/0x455603ad9ae671f6c1f0f746f24d7904ca603581/) | StarknetEthBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x18084f...d93a88`](./contracts/ethereum-1/0x18084fba666a33d37592fa2633fd49a74dd93a88/) | TBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9c0700...4fe3cd`](./contracts/ethereum-1/0x9c070027cdc9dc8f82416b2e5314e11dfb4fe3cd/) | TBTCVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5524cb...cb6298`](./contracts/ethereum-1/0x5524cb52490e01cba4eb64f230cc661780cb6298/) | TokensAndRamping | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x39bff2...408b8e`](./contracts/ethereum-1/0x39bff2c9f7e377d8466d3180be7dd0ae7d408b8e/) | UpdatePerpetualConfigExternalInitializer | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -406,10 +406,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 13
+- Audits with zero matched contracts: 12
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=5
-- Match method counts: extraction_exact=64
+- Extraction confidence breakdown: high=6
+- Match method counts: extraction_exact=65
 
 Zero-match audit list:
 
@@ -425,6 +425,5 @@ Zero-match audit list:
 - [3414] * **Report:** [View Audit PDF](https://github.com/threshold-network/security-audits/blob/main/29-Sep-2022-LeastAuthority.pdf) - [Link to Least Authority]()
 - [3415] * **Report:** [View Audit PDF]() - [Link to CertiK](https://www.certik.com/projects/threshold-network)
 - [3418] * **Report:** [View Audit PDF](https://github.com/threshold-network/security-audits/blob/main/09-Nov-2021-ChainSecurity.pdf) - [Link to ChainSecurity]()
-- [3419] 29-Aug-2023-LeastAuthority.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

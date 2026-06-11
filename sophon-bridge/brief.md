@@ -5,8 +5,8 @@
 - Project: Sophon Bridge (`sophon-bridge`)
 - Website: [https://sophon.xyz/](https://sophon.xyz/)
 - Lifecycle: active (Tier 0, 88.9% below peak)
-- Generated: 2026-06-10T20:59:16.245Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:51:24.601Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: ethereum
 - Contract surface: 10 unique implementations (21 raw deployments)
 - DeFi Llama TVL: $83,963,216.16

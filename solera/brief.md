@@ -5,8 +5,8 @@
 - Project: Solera (`solera`)
 - Website: [https://app.solera.market/](https://app.solera.market/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:16.239Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:48:58.465Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $8,358,480.77

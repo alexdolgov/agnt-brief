@@ -4,7 +4,7 @@
 |---|---|
 | Chain | ethereum (1) |
 | Address | `0xa1e2481a9cd0cb0447eeb1cbc26f1b3fff3bec20` |
-| Role | token |
+| Role | bridge_template |
 | Origin | standard_library |
 | Audited | No |
 | Audits | n/a |

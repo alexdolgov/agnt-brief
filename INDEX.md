@@ -546,11 +546,11 @@
 | [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 12 | 2026-06-11 |
 | [snuggle](./snuggle/) | $0.0 | 23.5% | $0.0 | active | 2 | 88 | 2026-06-11 |
 | [sofa.org](./sofa.org/) | $49.2K | 33.3% | $46.8K | declining | 8 | 38 | 2026-05-24 |
-| [solayer](./solayer/) | $13.0M | 0.0% | ? | unknown | 5 | 0 | 2026-06-10 |
-| [solera](./solera/) | $8.4M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
-| [sonic-gateway](./sonic-gateway/) | $7.8M | 0.0% | $7.8M | active | 0 | 1 | 2026-06-10 |
-| [sophon-bridge](./sophon-bridge/) | $5.5M | 0.0% | $5.5M | active | 8 | 10 | 2026-06-10 |
-| [sophon-farm](./sophon-farm/) | $6.8M | 100.0% | ? | active | 9 | 1 | 2026-06-10 |
+| [solayer](./solayer/) | $13.0M | 0.0% | ? | unknown | 5 | 0 | 2026-06-11 |
+| [solera](./solera/) | $8.4M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
+| [sonic-gateway](./sonic-gateway/) | $7.8M | 0.0% | $7.8M | active | 0 | 1 | 2026-06-11 |
+| [sophon-bridge](./sophon-bridge/) | $5.5M | 0.0% | $5.5M | active | 8 | 10 | 2026-06-11 |
+| [sophon-farm](./sophon-farm/) | $6.8M | 100.0% | ? | active | 9 | 1 | 2026-06-11 |
 | [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | declining | 0 | 58 | 2026-06-10 |
 | [sovryn-bridge](./sovryn-bridge/) | $2.9M | 0.0% | ? | active | 0 | 47 | 2026-06-10 |
 | [sovryn](./sovryn/) | $38.3M | 0.0% | ? | unknown | 11 | 0 | 2026-06-10 |

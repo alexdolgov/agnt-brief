@@ -5,8 +5,8 @@
 - Project: Sonic Gateway (`sonic-gateway`)
 - Website: [https://gateway.soniclabs.com/ethereum/sonic/s](https://gateway.soniclabs.com/ethereum/sonic/s)
 - Lifecycle: active (Tier 0, 94.6% below peak)
-- Generated: 2026-06-10T20:59:16.242Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:50:06.631Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $67,153,153.23

@@ -5,8 +5,8 @@
 - Project: Solayer (`solayer`)
 - Website: [https://solayer.org](https://solayer.org)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:16.237Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:50:05.442Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $12,992,357.00

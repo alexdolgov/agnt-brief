@@ -7,8 +7,8 @@
 - Project: Pangolin (`pangolin`)
 - Website: [https://pangolin.exchange](https://pangolin.exchange)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:09.178Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:48:23.064Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: avalanche
 - Contract surface: 163 unique implementations (205 raw deployments)
 - DeFi Llama TVL: $3,769,583.00

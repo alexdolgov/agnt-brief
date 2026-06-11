@@ -437,11 +437,11 @@
 | [p2pb2b](./p2pb2b/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | active | 0 | 3 | 2026-06-11 |
 | [pact](./pact/) | $2.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
-| [pangolin](./pangolin/) | $3.8M | 53.8% | ? | declining | 12 | 163 | 2026-06-10 |
-| [paradex](./paradex/) | $33.3M | 0.0% | ? | declining | 0 | 5 | 2026-06-10 |
-| [paragonsdao](./paragonsdao/) | $6.4M | 50.0% | ? | active | 7 | 2 | 2026-06-10 |
-| [parallel-protocol](./parallel-protocol/) | $3.6M | 3.8% | $3.0M | active | 2 | 38 | 2026-06-10 |
-| [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-06-10 |
+| [pangolin](./pangolin/) | $3.8M | 53.8% | ? | declining | 12 | 163 | 2026-06-11 |
+| [paradex](./paradex/) | $33.3M | 0.0% | ? | declining | 0 | 5 | 2026-06-11 |
+| [paragonsdao](./paragonsdao/) | $6.4M | 50.0% | ? | active | 7 | 2 | 2026-06-11 |
+| [parallel-protocol](./parallel-protocol/) | $3.6M | 3.8% | $3.0M | active | 2 | 38 | 2026-06-11 |
+| [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-06-11 |
 | [pay-protocol](./pay-protocol/) | $1.4M | 0.0% | ? | declining | 0 | 8 | 2026-06-10 |
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-06-10 |
 | [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 0 | 21 | 2026-06-10 |

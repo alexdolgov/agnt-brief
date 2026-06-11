@@ -7,8 +7,8 @@
 - Project: Paradex (`paradex`)
 - Website: [https://app.paradex.trade/r/defillama](https://app.paradex.trade/r/defillama)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:09.180Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:46:19.606Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: ethereum
 - Contract surface: 5 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $33,260,261.00

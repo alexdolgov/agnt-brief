@@ -5,8 +5,8 @@
 - Project: ParagonsDAO (`paragonsdao`)
 - Website: [https://app.paragonsdao.com](https://app.paragonsdao.com)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:09.183Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:47:10.577Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: base
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $6,358,988.13

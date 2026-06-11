@@ -5,8 +5,8 @@
 - Project: Parallel Protocol (`parallel-protocol`)
 - Website: [https://parallel.best/](https://parallel.best/)
 - Lifecycle: active (Tier 0, 93.7% below peak)
-- Generated: 2026-06-10T20:59:09.193Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:45:08.294Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: arbitrum, avalanche, base, berachain, bsc, ethereum, fantom, fraxtal, gnosis, hyperliquid, ink, linea, optimism, plasma, polygon, scroll, sei, sonic, unichain
 - Contract surface: 38 unique implementations (227 raw deployments)
 - DeFi Llama TVL: $3,770,941.00

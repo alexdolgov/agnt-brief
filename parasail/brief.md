@@ -7,8 +7,8 @@
 - Project: Parasail (`parasail`)
 - Website: [https://www.parasail.network/](https://www.parasail.network/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:09.197Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:46:22.092Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: arbitrum
 - Contract surface: 41 unique implementations (43 raw deployments)
 - DeFi Llama TVL: $3,597,668.87

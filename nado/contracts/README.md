@@ -1,15 +1,14 @@
 # nado — Contract Index
 
-23 unique implementations on ink · 23 deployments · 0 audited · 0 unaudited · 23 unverified
+22 unique implementations on ink · 22 deployments · 0 audited · 0 unaudited · 22 unverified
 
-## unknown (23)
+## unknown (22)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | UnnamedContract | ink | `0x0200c2...8470c1` | ❓ Unverified | Unverified |
 | UnnamedContract | ink | `0x05ec92...65974e` | ❓ Unverified | Unverified |
 | UnnamedContract | ink | `0x09fb49...5b9651` | ❓ Unverified | Unverified |
-| UnnamedContract | ink | `0x123456...567890` | ❓ Unverified | Unverified |
 | UnnamedContract | ink | `0x1e3818...1a45d0` | ❓ Unverified | Unverified |
 | UnnamedContract | ink | `0x23a283...55cc73` | ❓ Unverified | Unverified |
 | UnnamedContract | ink | `0x3352b2...f54e5d` | ❓ Unverified | Unverified |

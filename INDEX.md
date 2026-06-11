@@ -386,11 +386,11 @@
 | [mu-digital](./mu-digital/) | $19.4M | 100.0% | ? | active | 2 | 12 | 2026-06-11 |
 | [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-06-11 |
 | [multichain](./multichain/) | $12.5M | 42.9% | $128.8 | dead | 15 | 17 | 2026-06-11 |
-| [mux-protocol](./mux-protocol/) | $862.0K | 21.7% | $862.0K | active | 2 | 1198 | 2026-06-10 |
-| [mvl-staking](./mvl-staking/) | $38.1M | 50.0% | ? | unknown | 2 | 49 | 2026-06-10 |
-| [mystic-finance](./mystic-finance/) | $5.8M | 0.0% | ? | unknown | 10 | 0 | 2026-06-10 |
-| [nado](./nado/) | $55.0M | 0.0% | ? | active | 0 | 22 | 2026-06-10 |
-| [native](./native/) | $67.6M | 0.0% | $67.6M | active | 0 | 80 | 2026-06-10 |
+| [mux-protocol](./mux-protocol/) | $862.0K | 21.7% | $862.0K | active | 2 | 1198 | 2026-06-11 |
+| [mvl-staking](./mvl-staking/) | $38.1M | 50.0% | ? | unknown | 2 | 49 | 2026-06-11 |
+| [mystic-finance](./mystic-finance/) | $5.8M | 0.0% | ? | unknown | 10 | 0 | 2026-06-11 |
+| [nado](./nado/) | $55.0M | 0.0% | ? | active | 0 | 22 | 2026-06-11 |
+| [native](./native/) | $67.6M | 0.0% | $67.6M | active | 0 | 80 | 2026-06-11 |
 | [nawa-protocol](./nawa-protocol/) | $4.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-10 |
 | [nbx](./nbx/) | $1.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [near-intents](./near-intents/) | $3.7M | 0.0% | $3.7M | active | 0 | 7 | 2026-06-10 |

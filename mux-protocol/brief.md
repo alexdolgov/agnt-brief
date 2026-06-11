@@ -5,8 +5,8 @@
 - Project: MUX Protocol (`mux-protocol`)
 - Website: [https://mux.network](https://mux.network)
 - Lifecycle: active (Tier 0, 89.2% below peak)
-- Generated: 2026-06-10T20:59:07.960Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:17:47.521Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: arbitrum, avalanche, bsc, fantom, optimism
 - Contract surface: 1198 unique implementations (2180 raw deployments)
 - DeFi Llama TVL: $9,667,090.00

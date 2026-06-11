@@ -5,8 +5,8 @@
 - Project: Mystic Finance (`mystic-finance`)
 - Website: [https://www.mysticfinance.xyz/](https://www.mysticfinance.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:08.026Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:17:45.547Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $5,786,169.00

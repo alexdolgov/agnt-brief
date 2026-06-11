@@ -5,8 +5,8 @@
 - Project: Native (`native`)
 - Website: [https://native.org](https://native.org)
 - Lifecycle: active (Tier 0, 38.8% below peak)
-- Generated: 2026-06-10T20:59:08.048Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:17:47.489Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: arbitrum, avalanche, base, bsc, ethereum, linea, manta, mantle, polygon, scroll
 - Contract surface: 80 unique implementations (684 raw deployments)
 - DeFi Llama TVL: $65,174,838.00

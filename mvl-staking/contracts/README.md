@@ -1,6 +1,6 @@
 # mvl-staking — Contract Index
 
-50 unique implementations on ethereum · 50 deployments · 1 audited · 2 unaudited · 47 unverified
+49 unique implementations on ethereum · 49 deployments · 1 audited · 1 unaudited · 47 unverified
 
 ## proxy (1)
 
@@ -14,11 +14,10 @@
 |---|---|---|---|---|
 | [MVLToken](./ethereum-1/0xa849eaae994fb86afa73382e9bd88c2b6b18dc71/) | ethereum | [`0xa849ea...18dc71`](./ethereum-1/0xa849eaae994fb86afa73382e9bd88c2b6b18dc71/) | ✅ Audited | Verified |
 
-## unknown (48)
+## unknown (47)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [UniswapV2Pair](./ethereum-1/0x3c8ad34155b83ddb7f43119a19503d34ed2b5c7a/) | ethereum | [`0x3c8ad3...2b5c7a`](./ethereum-1/0x3c8ad34155b83ddb7f43119a19503d34ed2b5c7a/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x024cc7...8ca388` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x0283c1...0b4f31` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x0d9607...587ff6` | ❓ Unverified | Unverified |

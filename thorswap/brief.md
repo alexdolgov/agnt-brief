@@ -7,8 +7,8 @@
 - Project: THORSwap (`thorswap`)
 - Website: [https://www.thorswap.finance/](https://www.thorswap.finance/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:17.498Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:33:51.407Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: ethereum
 - Contract surface: 34 unique implementations (56 raw deployments)
 - DeFi Llama TVL: $16,729,673.40

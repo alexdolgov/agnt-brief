@@ -7,8 +7,8 @@
 - Project: Tokenlon (`tokenlon`)
 - Website: [https://tokenlon.im](https://tokenlon.im)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:17.512Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:35:05.953Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: ethereum
 - Contract surface: 21 unique implementations (34 raw deployments)
 - DeFi Llama TVL: $37,169,283.00

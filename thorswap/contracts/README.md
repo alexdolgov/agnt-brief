@@ -20,12 +20,17 @@
 | [TSFeeDistributor_V3 (2 deployments)](./ethereum-1/0x546e7b1f4b4df6cdb19fbddff325133ebfe04ba7/) | ethereum | 2 deployments: ethereum [`0x546e7b...e04ba7`](./ethereum-1/0x546e7b1f4b4df6cdb19fbddff325133ebfe04ba7/); ethereum `0xfb6820...b87b6a` | ⚠️ Unaudited | Verified |
 | [TSOracle_V1 (2 deployments)](./ethereum-1/0x849ec611ee47bee012fe9274b78e10ddae167d05/) | ethereum | 2 deployments: ethereum [`0x849ec6...167d05`](./ethereum-1/0x849ec611ee47bee012fe9274b78e10ddae167d05/); ethereum `0xd0b385...02f28c` | ⚠️ Unaudited | Verified |
 
-## token (2)
+## proxy (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [TSAggregatorTokenTransferProxy](./ethereum-1/0xf892fef9da200d9e84c9b0647ecff0f34633abe8/) | ethereum | [`0xf892fe...33abe8`](./ethereum-1/0xf892fef9da200d9e84c9b0647ecff0f34633abe8/) | ✅ Audited | Verified |
+
+## token (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [ThorToken](./ethereum-1/0xa5f2211b9b8170f694421f2046281775e8468044/) | ethereum | [`0xa5f221...468044`](./ethereum-1/0xa5f2211b9b8170f694421f2046281775e8468044/) | ⚠️ Unaudited | Verified |
-| [TSAggregatorTokenTransferProxy](./ethereum-1/0xf892fef9da200d9e84c9b0647ecff0f34633abe8/) | ethereum | [`0xf892fe...33abe8`](./ethereum-1/0xf892fef9da200d9e84c9b0647ecff0f34633abe8/) | ✅ Audited | Verified |
 
 ## unknown (24)
 

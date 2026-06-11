@@ -5,8 +5,8 @@
 - Project: TheDeep (`thedeep`)
 - Website: [https://app.thedeep.ink/](https://app.thedeep.ink/)
 - Lifecycle: active (Tier 0, 48% below peak)
-- Generated: 2026-06-10T20:59:17.490Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:33:52.125Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: base, celo, ink, polygon
 - Contract surface: 164 unique implementations (244 raw deployments)
 - DeFi Llama TVL: $8,217,310.84

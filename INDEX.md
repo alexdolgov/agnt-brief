@@ -496,11 +496,11 @@
 | [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 2 | 84 | 2026-06-11 |
 | [rex-staking](./rex-staking/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [reya](./reya/) | $57.3M | 0.0% | $57.3M | declining | 0 | 293 | 2026-06-11 |
-| [rezerve](./rezerve/) | $1.3M | 1.3% | $1.3M | active | 3 | 104 | 2026-06-10 |
-| [rho](./rho/) | $2.5M | 0.0% | ? | active | 3 | 31 | 2026-06-10 |
-| [ribbon-finance](./ribbon-finance/) | $179.3M | 31.0% | $148.6M | declining | 14 | 147 | 2026-06-10 |
-| [ring-protocol](./ring-protocol/) | $83.5M | 10.6% | $83.5M | active | 8 | 90 | 2026-06-10 |
-| [rip.xyz](./rip.xyz/) | $0.0 | 50.0% | $0.0 | active | 1 | 6 | 2026-06-10 |
+| [rezerve](./rezerve/) | $1.3M | 1.3% | $1.3M | active | 3 | 104 | 2026-06-11 |
+| [rho](./rho/) | $2.5M | 0.0% | ? | active | 3 | 31 | 2026-06-11 |
+| [ribbon-finance](./ribbon-finance/) | $179.3M | 31.0% | $148.6M | declining | 14 | 147 | 2026-06-11 |
+| [ring-protocol](./ring-protocol/) | $83.5M | 10.6% | $83.5M | active | 8 | 90 | 2026-06-11 |
+| [rip.xyz](./rip.xyz/) | $0.0 | 50.0% | $0.0 | active | 1 | 6 | 2026-06-11 |
 | [risex](./risex/) | $4.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-06-10 |
 | [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 0 | 11 | 2026-05-31 |

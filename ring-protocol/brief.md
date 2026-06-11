@@ -5,8 +5,8 @@
 - Project: Ring Protocol (`ring-protocol`)
 - Website: [https://ring.exchange/](https://ring.exchange/)
 - Lifecycle: active (Tier 0, 88.5% below peak)
-- Generated: 2026-06-10T20:59:11.460Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:23:25.943Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: arbitrum, avalanche, base, blast, bsc, celo, ethereum, ink, optimism, polygon, unichain, zora
 - Contract surface: 90 unique implementations (233 raw deployments)
 - DeFi Llama TVL: $36,201,030.00

@@ -5,8 +5,8 @@
 - Project: Rezerve (`rezerve`)
 - Website: [https://rezerve.money](https://rezerve.money)
 - Lifecycle: active (Tier 0, 89.2% below peak)
-- Generated: 2026-06-10T20:59:11.404Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:23:33.651Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum, sonic
 - Contract surface: 104 unique implementations (499 raw deployments)
 - DeFi Llama TVL: $2,634,879.00

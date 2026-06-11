@@ -1,6 +1,6 @@
 # rho — Contract Index
 
-32 unique implementations on ethereum · 36 deployments · 0 audited · 3 unaudited · 29 unverified
+31 unique implementations on ethereum · 35 deployments · 0 audited · 2 unaudited · 29 unverified
 
 ## core_logic (1)
 
@@ -14,7 +14,7 @@
 |---|---|---|---|---|
 | ERC1967Proxy (3 deployments) | ethereum | 3 deployments: ethereum `0x461ffa...f7ba36`; ethereum `0xcf60f0...a340ec`; ethereum [`0xed96fe...c91fc1`](./ethereum-1/0xed96feea08a03bfce1620070193ddf840ac91fc1/) | ⚠️ Unaudited | Verified |
 
-## unknown (30)
+## unknown (29)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -47,4 +47,3 @@
 | UnnamedContract | ethereum | `0xf33bcb...a5330d` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xf95441...aaed06` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xfbb3c9...bdcd4a` | ❓ Unverified | Unverified |
-| [YUSD](./ethereum-1/0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a/) | ethereum | [`0x4274cd...a8da0a`](./ethereum-1/0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a/) | ⚠️ Unaudited | Verified |

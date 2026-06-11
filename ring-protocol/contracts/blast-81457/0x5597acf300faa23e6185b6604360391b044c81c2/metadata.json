@@ -1,0 +1,17 @@
+{
+  "address": "0x5597acf300faa23e6185b6604360391b044c81c2",
+  "chain_id": 81457,
+  "contract_name": "RingLiquidityToken",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "000000000000000000000000ff790875de1f44d4ddc1f905a2b9cf0c11116859000000000000000000000000ff790875de1f44d4ddc1f905a2b9cf0c11116859",
+  "implementation_address": null,
+  "fetched_at": "2026-06-11T02:23:31.103Z"
+}

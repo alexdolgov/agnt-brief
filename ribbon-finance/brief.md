@@ -7,8 +7,8 @@
 - Project: Ribbon Finance (`ribbon-finance`)
 - Website: [https://www.ribbon.finance/](https://www.ribbon.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:11.443Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:22:34.759Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: avalanche, ethereum
 - Contract surface: 147 unique implementations (598 raw deployments)
 - DeFi Llama TVL: $4,851,720.00

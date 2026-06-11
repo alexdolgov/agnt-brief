@@ -5,8 +5,8 @@
 - Project: Rip.xyz (`rip.xyz`)
 - Website: [https://www.rip.xyz/](https://www.rip.xyz/)
 - Lifecycle: active (Tier 0, 45.5% below peak)
-- Generated: 2026-06-10T20:59:11.465Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:21:23.962Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: hyperliquid
 - Contract surface: 6 unique implementations (8 raw deployments)
 - DeFi Llama TVL: $1,041,783.34

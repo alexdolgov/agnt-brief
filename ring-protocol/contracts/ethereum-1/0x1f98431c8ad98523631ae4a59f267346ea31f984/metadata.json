@@ -1,0 +1,18 @@
+{
+  "address": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+  "chain_id": 1,
+  "contract_name": "UniswapV3Factory",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 392,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-11T02:23:29.277Z"
+}

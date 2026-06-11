@@ -1,0 +1,17 @@
+{
+  "address": "0x1707327f626496a7b5b3872e7e4d2879df7d7a9f",
+  "chain_id": 42161,
+  "contract_name": "PositionManager",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 30000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 69,
+  "constructor_arguments": "0000000000000000000000008702463e73f74d0b6765abceb314ef07acb92650000000000000000000000000000000000022d473030f116ddee9f6b43ac78ba300000000000000000000000000000000000000000000000000000000000493e0000000000000000000000000e783de89a7f0408687f051e3e6d0beb62719ebad00000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab1",
+  "implementation_address": null,
+  "fetched_at": "2026-06-11T02:23:29.620Z"
+}

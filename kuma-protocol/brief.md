@@ -5,8 +5,8 @@
 - Project: KUMA Protocol (`kuma-protocol`)
 - Website: [https://kuma.bond](https://kuma.bond)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:06.773Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:34:03.251Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: ethereum, linea, mantle, polygon
 - Contract surface: 53 unique implementations (210 raw deployments)
 - DeFi Llama TVL: $3,091,274.46

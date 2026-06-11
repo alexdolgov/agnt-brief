@@ -7,7 +7,7 @@
 | Role | unknown |
 | Origin | native |
 | Audited | Yes |
-| Audits | [BlockchainLabs_Kyber_AuditReport.MD](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV1Audit2/BlockchainLabs_Kyber_AuditReport.MD); [Kovan_tests.MD](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV1Audit2/Kovan_tests.MD); [KyberNetwork BlockchainLabs Audit Report.pdf](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV1Audit2/KyberNetwork%20BlockchainLabs%20Audit%20Report.pdf); [test-coverage.MD](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV1Audit2/test-coverage.MD); [work-paper.MD](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV1Audit2/work-paper.MD); [ChainSecurity_KyberNetwork_Public.pdf](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV2Audit/ChainSecurity_KyberNetwork_Public.pdf) |
+| Audits | [KyberNetwork BlockchainLabs Audit Report.pdf](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV1Audit2/KyberNetwork%20BlockchainLabs%20Audit%20Report.pdf); [ChainSecurity_KyberNetwork_Public.pdf](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV2Audit/ChainSecurity_KyberNetwork_Public.pdf) |
 | Deployments | 1 (ethereum [`0x6e106a75d369d09a9ea1dcc16da844792aa669a3`](../0x6e106a75d369d09a9ea1dcc16da844792aa669a3/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |

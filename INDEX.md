@@ -316,11 +316,11 @@
 | [klayswap](./klayswap/) | $4.5M | 0.0% | ? | declining | 4 | 22 | 2026-06-11 |
 | [kodiak](./kodiak/) | $29.0M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
 | [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-06-11 |
-| [kuma-protocol](./kuma-protocol/) | $3.1M | 28.1% | $23.1K | active | 2 | 53 | 2026-06-10 |
-| [kyberswap](./kyberswap/) | $58.3M | 8.8% | $58.3M | declining | 6 | 445 | 2026-06-10 |
-| [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-06-10 |
-| [landx-finance](./landx-finance/) | $1.8M | 100.0% | ? | active | 1 | 3 | 2026-06-10 |
-| [larix](./larix/) | $1.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
+| [kuma-protocol](./kuma-protocol/) | $3.1M | 28.1% | $23.1K | active | 2 | 53 | 2026-06-11 |
+| [kyberswap](./kyberswap/) | $58.3M | 8.8% | $58.3M | declining | 6 | 445 | 2026-06-11 |
+| [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-06-11 |
+| [landx-finance](./landx-finance/) | $1.8M | 100.0% | ? | active | 1 | 3 | 2026-06-11 |
+| [larix](./larix/) | $1.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [latch](./latch/) | $189.8 | 0.0% | $189.8 | declining | 0 | 1 | 2026-06-10 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | declining | 4 | 91 | 2026-06-10 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |

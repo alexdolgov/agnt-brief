@@ -7,8 +7,8 @@
 - Project: KyberSwap (`kyberswap`)
 - Website: [https://kyberswap.com](https://kyberswap.com)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:06.807Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:33:20.808Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: arbitrum, aurora, avalanche, base, bsc, cronos, ethereum, fantom, linea, optimism, polygon, polygon-zkevm, scroll, unichain, zksync-era
 - Contract surface: 445 unique implementations (642 raw deployments)
 - DeFi Llama TVL: $10,470,441.00

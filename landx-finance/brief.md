@@ -5,8 +5,8 @@
 - Project: LandX Finance (`landx-finance`)
 - Website: [https://landx.fi](https://landx.fi)
 - Lifecycle: active (Tier 0, 21.6% below peak)
-- Generated: 2026-06-10T20:59:06.847Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:32:02.842Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: ethereum
 - Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $1,771,095.83

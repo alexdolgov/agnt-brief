@@ -1,6 +1,6 @@
 # kyberswap — Contract Index
 
-445 unique implementations across 15 chains · 642 deployments · 13 audited · 123 unaudited · 309 unverified
+445 unique implementations across 15 chains · 642 deployments · 12 audited · 124 unaudited · 309 unverified
 
 ## adapter (14)
 
@@ -495,4 +495,4 @@
 | [WhitelistedCollector](./ethereum-1/0x9ed9afb6b4cafbdfb2d833b0e70845997300f6b9/) | ethereum | [`0x9ed9af...00f6b9`](./ethereum-1/0x9ed9afb6b4cafbdfb2d833b0e70845997300f6b9/) | ⚠️ Unaudited | Verified |
 | [WMATIC](./polygon-137/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270/) | polygon | [`0x0d500b...df1270`](./polygon-137/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270/) | ⚠️ Unaudited | Verified |
 | [WrapConversionRate](./ethereum-1/0xeb6857da49a5544a37c5c350a40c3c9cc8e9aed1/) | ethereum | [`0xeb6857...e9aed1`](./ethereum-1/0xeb6857da49a5544a37c5c350a40c3c9cc8e9aed1/) | ⚠️ Unaudited | Verified |
-| [Wrapper (2 deployments)](./ethereum-1/0x8f1a369ee7916491e43e412b0dcc7717e2fcb608/) | ethereum | 2 deployments: ethereum [`0x8f1a36...fcb608`](./ethereum-1/0x8f1a369ee7916491e43e412b0dcc7717e2fcb608/); ethereum `0xb6a1c0...e382b2` | ✅ Audited | Verified |
+| [Wrapper (2 deployments)](./ethereum-1/0x8f1a369ee7916491e43e412b0dcc7717e2fcb608/) | ethereum | 2 deployments: ethereum [`0x8f1a36...fcb608`](./ethereum-1/0x8f1a369ee7916491e43e412b0dcc7717e2fcb608/); ethereum `0xb6a1c0...e382b2` | ⚠️ Unaudited | Verified |

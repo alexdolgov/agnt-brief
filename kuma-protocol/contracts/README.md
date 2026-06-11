@@ -1,6 +1,6 @@
 # kuma-protocol — Contract Index
 
-53 unique implementations across 4 chains · 210 deployments · 11 audited · 21 unaudited · 21 unverified
+53 unique implementations across 4 chains · 210 deployments · 9 audited · 23 unaudited · 21 unverified
 
 ## core_logic (3)
 
@@ -14,12 +14,12 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AccessController (14 deployments)](./polygon-137/0x00142b50b435a6ddef5d91bfbb7208ecd2a05e7c/) | polygon | 14 deployments: ethereum `0x8b853d...30a725`; ethereum `0xe3aaef...92351e`; polygon [`0x00142b...a05e7c`](./polygon-137/0x00142b50b435a6ddef5d91bfbb7208ecd2a05e7c/); polygon `0x02b23b...c0a8b1`; polygon `0x302888...652584`; polygon `0x4de405...467e23`; polygon `0x6bfad3...5d4cd6`; polygon `0xaea58d...56f3bf`; polygon `0xc7b973...d77c0d`; polygon `0xe7ec63...8a5c8f`; mantle `0x291cb8...ae299a`; mantle `0x8cf407...e3494a`; linea `0x3037e0...c4604e`; linea `0x80a31c...701a40` | ✅ Audited | Verified |
+| [AccessController (14 deployments)](./polygon-137/0x00142b50b435a6ddef5d91bfbb7208ecd2a05e7c/) | polygon | 14 deployments: ethereum `0x8b853d...30a725`; ethereum `0xe3aaef...92351e`; polygon [`0x00142b...a05e7c`](./polygon-137/0x00142b50b435a6ddef5d91bfbb7208ecd2a05e7c/); polygon `0x02b23b...c0a8b1`; polygon `0x302888...652584`; polygon `0x4de405...467e23`; polygon `0x6bfad3...5d4cd6`; polygon `0xaea58d...56f3bf`; polygon `0xc7b973...d77c0d`; polygon `0xe7ec63...8a5c8f`; mantle `0x291cb8...ae299a`; mantle `0x8cf407...e3494a`; linea `0x3037e0...c4604e`; linea `0x80a31c...701a40` | ⚠️ Unaudited | Verified |
 | [ConfigProvider (3 deployments)](./polygon-137/0x20a83af929f1de7d518d49e93f5465d040a9fab4/) | polygon | 3 deployments: polygon [`0x20a83a...a9fab4`](./polygon-137/0x20a83af929f1de7d518d49e93f5465d040a9fab4/); polygon `0x44aded...646163`; polygon `0xfed8a7...7bdb22` | ⚠️ Unaudited | Verified |
 | [GnosisSafe (2 deployments)](./ethereum-1/0x33da84dd937779f3edaccf87e7ddcdc216e0d1bf/) | ethereum | 2 deployments: ethereum [`0x33da84...e0d1bf`](./ethereum-1/0x33da84dd937779f3edaccf87e7ddcdc216e0d1bf/); ethereum `0xb55027...33f450` | ⚠️ Unaudited | Verified |
 | [GnosisSafeL2 (4 deployments)](./linea-59144/0x1151d63eb6154843d4b4898cf4c63af556642997/) | linea | 4 deployments: polygon `0x1a1a40...a70156`; polygon `0x5219bc...1d2247`; linea [`0x1151d6...642997`](./linea-59144/0x1151d63eb6154843d4b4898cf4c63af556642997/); linea `0x7cf34a...025432` | ⚠️ Unaudited | Verified |
 | [GnosisSafeProxy (2 deployments)](./mantle-5000/0x37d1c94087643dfe5288f72cd1e4a6fde5b130a9/) | mantle | 2 deployments: mantle [`0x37d1c9...b130a9`](./mantle-5000/0x37d1c94087643dfe5288f72cd1e4a6fde5b130a9/); mantle `0xfef638...3207b6` | ⚠️ Unaudited | Verified |
-| [KUMAAccessController (6 deployments)](./ethereum-1/0x5fad6f80312aee6f19784a7fc359f90d441163de/) | ethereum | 6 deployments: ethereum [`0x5fad6f...1163de`](./ethereum-1/0x5fad6f80312aee6f19784a7fc359f90d441163de/); polygon `0xfe7261...a42a54`; mantle `0xcdf658...9a3b66`; linea `0x85dd3a...3be78f`; linea `0xad5c32...74ad6b`; linea `0xb9cee0...6a52ae` | ✅ Audited | Verified |
+| [KUMAAccessController (6 deployments)](./ethereum-1/0x5fad6f80312aee6f19784a7fc359f90d441163de/) | ethereum | 6 deployments: ethereum [`0x5fad6f...1163de`](./ethereum-1/0x5fad6f80312aee6f19784a7fc359f90d441163de/); polygon `0xfe7261...a42a54`; mantle `0xcdf658...9a3b66`; linea `0x85dd3a...3be78f`; linea `0xad5c32...74ad6b`; linea `0xb9cee0...6a52ae` | ⚠️ Unaudited | Verified |
 | [LiquidationManager (3 deployments)](./polygon-137/0x4986af7f4194af50586f8236f76bef909cb9d5f3/) | polygon | 3 deployments: polygon [`0x4986af...b9d5f3`](./polygon-137/0x4986af7f4194af50586f8236f76bef909cb9d5f3/); polygon `0x8b45ce...d22047`; polygon `0x97b6d9...f5b740` | ⚠️ Unaudited | Verified |
 | [RatesManager (2 deployments)](./polygon-137/0xd58f48f533e3896b51854bd95165fdd87605497a/) | polygon | 2 deployments: polygon [`0xd58f48...05497a`](./polygon-137/0xd58f48f533e3896b51854bd95165fdd87605497a/); polygon `0xfc3631...ff1686` | ⚠️ Unaudited | Verified |
 
@@ -42,7 +42,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AddressProvider (5 deployments)](./polygon-137/0x38519093cc62d83e31afb53c00c0bf4dc8fdcd15/) | polygon | 5 deployments: polygon [`0x385190...fdcd15`](./polygon-137/0x38519093cc62d83e31afb53c00c0bf4dc8fdcd15/); polygon `0x3d58b7...8ebd58`; polygon `0xb89ddc...855b88`; polygon `0xdf4f21...cd79fa`; polygon `0xede773...997c53` | ⚠️ Unaudited | Verified |
-| GovernanceAddressProvider (2 deployments) | polygon | 2 deployments: polygon `0x026fa9...fa0ecf`; polygon `0xa918fa...f47e63` | ⚠️ Unaudited | Verified |
+| [GovernanceAddressProvider (2 deployments)](./polygon-137/0x026fa9b2bc828c7e0acca440fdf77a19d3fa0ecf/) | polygon | 2 deployments: polygon [`0x026fa9...fa0ecf`](./polygon-137/0x026fa9b2bc828c7e0acca440fdf77a19d3fa0ecf/); polygon `0xa918fa...f47e63` | ⚠️ Unaudited | Verified |
 | [KUMAAddressProvider (12 deployments)](./mantle-5000/0x2bb3f79b89a33dbcec846ec706c650ccefc742a1/) | mantle | 12 deployments: ethereum `0xb091c1...97338a`; ethereum `0xdc024b...3d7dc9`; polygon `0x4dba79...19941c`; polygon `0x7714fc...b54f65`; mantle [`0x2bb3f7...c742a1`](./mantle-5000/0x2bb3f79b89a33dbcec846ec706c650ccefc742a1/); mantle `0xe740e2...ede6be`; linea `0x2fb3b4...f16840`; linea `0x5a22c2...a77fb3`; linea `0x69c6d6...6e27f2`; linea `0x96ae40...767b8f`; linea `0xdc5767...e6f34e`; linea `0xeb4afe...f0fd12` | ✅ Audited | Verified |
 | [WrappedRebaseTokenFactory (2 deployments)](./polygon-137/0x9bdd10f41b4de9dc1d63ae6ff9075c075298f735/) | polygon | 2 deployments: polygon [`0x9bdd10...98f735`](./polygon-137/0x9bdd10f41b4de9dc1d63ae6ff9075c075298f735/); linea `0xae136f...efabbd` | ⚠️ Unaudited | Verified |
 

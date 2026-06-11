@@ -5,8 +5,8 @@
 - Project: vfat.io (`vfat.io`)
 - Website: [https://vfat.io/yield](https://vfat.io/yield)
 - Lifecycle: active (Tier 0, 68.8% below peak)
-- Generated: 2026-06-10T20:59:18.712Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:58:32.361Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: arbitrum, avalanche, base, ethereum, fantom, fraxtal, ink, linea, mantle, mode, optimism, polygon, sonic, unichain
 - Contract surface: 553 unique implementations (3354 raw deployments)
 - DeFi Llama TVL: $36,595,740.62

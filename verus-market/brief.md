@@ -7,8 +7,8 @@
 - Project: Verus Market (`verus-market`)
 - Website: [https://eth.verusbridge.io/](https://eth.verusbridge.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:18.572Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:59:08.605Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: ethereum
 - Contract surface: 32 unique implementations (32 raw deployments)
 - DeFi Llama TVL: $9,647,253.92

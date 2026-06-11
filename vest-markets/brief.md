@@ -7,8 +7,8 @@
 - Project: Vest Markets (`vest-markets`)
 - Website: [https://alpha.vestmarkets.com/join/LLAMA](https://alpha.vestmarkets.com/join/LLAMA)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:18.592Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:59:11.518Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: arbitrum, base, ethereum, optimism, polygon
 - Contract surface: 4 unique implementations (68 raw deployments)
 - DeFi Llama TVL: $1,655,524.87

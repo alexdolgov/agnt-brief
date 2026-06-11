@@ -667,11 +667,11 @@
 | [velvet.capital](./velvet.capital/) | $95.2M | 77.8% | $95.2M | declining | 13 | 420 | 2026-06-11 |
 | [veno-finance](./veno-finance/) | $42.8M | 0.0% | ? | active | 0 | 49 | 2026-06-11 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | active | 2 | 4 | 2026-06-11 |
-| [verio](./verio/) | $7.2M | 0.0% | ? | unknown | 11 | 0 | 2026-06-10 |
-| [verus-market](./verus-market/) | $9.6M | 0.0% | ? | declining | 0 | 32 | 2026-06-10 |
-| [vesper](./vesper/) | $694.0K | 51.3% | $351.7K | active | 30 | 44 | 2026-06-10 |
-| [vest-markets](./vest-markets/) | $1.7M | 0.0% | ? | declining | 0 | 4 | 2026-06-10 |
-| [vfat.io](./vfat.io/) | $0.0 | 10.0% | ? | active | 10 | 553 | 2026-06-10 |
+| [verio](./verio/) | $7.2M | 0.0% | ? | unknown | 11 | 0 | 2026-06-11 |
+| [verus-market](./verus-market/) | $9.6M | 0.0% | ? | declining | 0 | 32 | 2026-06-11 |
+| [vesper](./vesper/) | $694.0K | 51.3% | $351.7K | active | 30 | 44 | 2026-06-11 |
+| [vest-markets](./vest-markets/) | $1.7M | 0.0% | ? | declining | 0 | 4 | 2026-06-11 |
+| [vfat.io](./vfat.io/) | $0.0 | 10.0% | ? | active | 10 | 553 | 2026-06-11 |
 | [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 0 | 65 | 2026-05-31 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-06-10 |
 | [volta-club](./volta-club/) | $976.2M | 0.0% | $976.2M | unknown | 0 | 316 | 2026-06-10 |

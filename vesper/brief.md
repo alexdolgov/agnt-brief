@@ -5,8 +5,8 @@
 - Project: Vesper (`vesper`)
 - Website: [https://vesper.finance/](https://vesper.finance/)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:59:18.586Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:01:25.460Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: ethereum
 - Contract surface: 44 unique implementations (147 raw deployments)
 - DeFi Llama TVL: $44,440,251.37

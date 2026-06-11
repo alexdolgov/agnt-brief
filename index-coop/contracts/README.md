@@ -1,6 +1,6 @@
 # index-coop — Contract Index
 
-236 unique implementations across 4 chains · 601 deployments · 15 audited · 97 unaudited · 124 unverified
+235 unique implementations across 4 chains · 600 deployments · 15 audited · 96 unaudited · 124 unverified
 
 ## adapter (24)
 
@@ -97,11 +97,10 @@
 | [RebalancingSetTokenFactory](./ethereum-1/0x15518cdd49d83471e9f85cdcfbd72c8e2a78dde2/) | ethereum | [`0x15518c...78dde2`](./ethereum-1/0x15518cdd49d83471e9f85cdcfbd72c8e2a78dde2/) | ⚠️ Unaudited | Verified |
 | [WrappedfCashFactoryMock](./ethereum-1/0xa39f94fc8290ed03328b9fca82d07cae26ce2a37/) | ethereum | [`0xa39f94...ce2a37`](./ethereum-1/0xa39f94fc8290ed03328b9fca82d07cae26ce2a37/) | ⚠️ Unaudited | Verified |
 
-## token (6)
+## token (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [CErc20](./ethereum-1/0x39aa39c021dfbae8fac545936693ac917d5e7563/) | ethereum | [`0x39aa39...5e7563`](./ethereum-1/0x39aa39c021dfbae8fac545936693ac917d5e7563/) | ⚠️ Unaudited | Verified |
 | [HolonToken](./polygon-137/0x3c2e12f800d893b5a417cc3a1c5e412f0f38f80f/) | polygon | [`0x3c2e12...38f80f`](./polygon-137/0x3c2e12f800d893b5a417cc3a1c5e412f0f38f80f/) | ⚠️ Unaudited | Verified |
 | [SetToken (48 deployments)](./ethereum-1/0x02ec0c9e6d3c08b8fb12fec51ccba048afbc36a6/) | ethereum | 48 deployments: ethereum [`0x02ec0c...bc36a6`](./ethereum-1/0x02ec0c9e6d3c08b8fb12fec51ccba048afbc36a6/); ethereum `0x0b498f...801c2b`; ethereum `0x1494ca...ba3c2b`; ethereum `0x1d86fb...68bb08`; ethereum `0x23c3e5...adefd8`; ethereum `0x2af1df...0c7dc6`; ethereum `0x33d63b...4cf5f1`; ethereum `0x341c05...0bb3be`; ethereum `0x36c833...36065e`; ethereum `0x47110d...7eb44f`; ethereum `0x48ccc6...3bbd0f`; ethereum `0x58222d...163a4a`; ethereum `0x65c4c0...d148a2`; ethereum `0x72e364...d634d7`; ethereum `0x7c07f7...256a84`; ethereum `0xaa6e81...5665bd`; ethereum `0xada0a1...f3ed42`; ethereum `0xc45060...9b99ee`; ethereum `0xc70686...ff6de5`; ethereum `0xd2ac55...fde759`; ethereum `0xf860f9...bbf1bc`; ethereum `0xfa10e1...3e4e37`; polygon `0x130ce4...0bb8d2`; polygon `0x340f41...ae6abc`; polygon `0x3ad707...d66473`; polygon `0x4f0258...f1e609`; polygon `0xd6ca86...dbbc14`; polygon `0xf287d9...2c7976`; base `0x0a0fbd...cdc9c6`; base `0x16c469...043571`; base `0x186f3d...c39cde`; base `0x1f4609...685699`; base `0x2f67e4...208d40`; base `0x329f66...272acb`; base `0x32bb8f...d392fc`; base `0x5c6005...a48f73`; base `0x8d08ce...a2dc22`; base `0xc88464...3e35a6`; arbitrum `0x26d7d3...bca43c`; arbitrum `0x3bdd0d...bec0e6`; arbitrum `0x749654...b1c89b`; arbitrum `0x77f691...7712c3`; arbitrum `0x80e58a...c087fc`; arbitrum `0xa0a17b...dfa543`; arbitrum `0xaf0408...878913`; arbitrum `0xe7b1ce...e43ed1`; arbitrum `0xeb5be6...4f59d7`; arbitrum `0xfc01f2...90d6cb` | ⚠️ Unaudited | Verified |
 | [SetTokenCreator (5 deployments)](./ethereum-1/0x2758bf6af0ec63f1710d3d7890e1c263a247b75e/) | ethereum | 5 deployments: ethereum [`0x2758bf...47b75e`](./ethereum-1/0x2758bf6af0ec63f1710d3d7890e1c263a247b75e/); ethereum `0x86a73e...14ef43`; polygon `0x2b44c2...7627f7`; polygon `0x2e45e7...82e9a3`; polygon `0xc8657a...83dbd8` | ⚠️ Unaudited | Verified |

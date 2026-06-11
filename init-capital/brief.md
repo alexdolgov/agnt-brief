@@ -7,8 +7,8 @@
 - Project: INIT Capital (`init-capital`)
 - Website: [https://app.init.capital](https://app.init.capital)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:06.243Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:07:25.235Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: blast, mantle
 - Contract surface: 99 unique implementations (164 raw deployments)
 - DeFi Llama TVL: $4,285,355.62

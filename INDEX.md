@@ -279,11 +279,11 @@
 | [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | active | 0 | 16 | 2026-06-11 |
 | [immutable-zkevm](./immutable-zkevm/) | $28.5M | 22.2% | ? | active | 4 | 9 | 2026-06-11 |
 | [inception](./inception/) | $9.8M | 24.6% | $9.5M | declining | 9 | 78 | 2026-06-11 |
-| [index-coop](./index-coop/) | $19.4M | 13.5% | $19.4M | active | 5 | 235 | 2026-06-10 |
-| [infinifi](./infinifi/) | $145.9M | 0.0% | $145.9M | declining | 12 | 114 | 2026-06-10 |
-| [infrared-finance](./infrared-finance/) | $861.9K | 100.0% | ? | active | 27 | 27 | 2026-06-10 |
-| [init-capital](./init-capital/) | $66.5M | 24.0% | $66.2M | declining | 7 | 99 | 2026-06-10 |
-| [initiadex](./initiadex/) | $3.0M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
+| [index-coop](./index-coop/) | $19.4M | 13.5% | $19.4M | active | 5 | 235 | 2026-06-11 |
+| [infinifi](./infinifi/) | $145.9M | 0.0% | $145.9M | declining | 12 | 114 | 2026-06-11 |
+| [infrared-finance](./infrared-finance/) | $861.9K | 100.0% | ? | active | 27 | 27 | 2026-06-11 |
+| [init-capital](./init-capital/) | $66.5M | 24.0% | $66.2M | declining | 7 | 99 | 2026-06-11 |
+| [initiadex](./initiadex/) | $3.0M | 0.0% | ? | unknown | 7 | 0 | 2026-06-11 |
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-05-31 |
 | [ink-bridge](./ink-bridge/) | $59.3M | 44.0% | ? | active | 17 | 68 | 2026-06-10 |
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-06-10 |

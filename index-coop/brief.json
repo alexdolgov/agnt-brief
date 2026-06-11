@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "index-coop",
-  "generated_at": "2026-06-10T20:59:06.187Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T00:05:23.038Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "index-coop",

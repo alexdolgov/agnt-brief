@@ -5,8 +5,8 @@
 - Project: Index Coop (`index-coop`)
 - Website: [https://www.indexcoop.com/](https://www.indexcoop.com/)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:59:06.187Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:05:23.038Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: arbitrum, base, ethereum, polygon
 - Contract surface: 235 unique implementations (600 raw deployments)
 - DeFi Llama TVL: $12,566,445.29

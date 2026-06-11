@@ -1,6 +1,6 @@
 # init-capital — Contract Index
 
-102 unique implementations across 2 chains · 167 deployments · 6 audited · 22 unaudited · 74 unverified
+99 unique implementations across 2 chains · 164 deployments · 6 audited · 19 unaudited · 74 unverified
 
 ## core_logic (1)
 
@@ -41,22 +41,19 @@
 | [TransparentUpgradeableProxyBlast (7 deployments)](./blast-81457/0x0c2da1659c2351d504c80e60c6077d971b96fc06/) | blast | 7 deployments: blast [`0x0c2da1...96fc06`](./blast-81457/0x0c2da1659c2351d504c80e60c6077d971b96fc06/); blast `0x4b246c...f0993a`; blast `0x57200d...cea2f7`; blast `0xd97bb3...4c68c1`; blast `0xe31686...75e2ef`; blast `0xed9d7e...11904b`; blast `0xf683ce...f33d21` | ⚠️ Unaudited | Verified |
 | [TransparentUpgradeableProxyReceiveETH (4 deployments)](./mantle-5000/0x0bddc3c0669aeb9dc00a9f4c8e2e8c38f59a22f3/) | mantle | 4 deployments: mantle [`0x0bddc3...9a22f3`](./mantle-5000/0x0bddc3c0669aeb9dc00a9f4c8e2e8c38f59a22f3/); mantle `0x49a69a...e883c5`; mantle `0x7dac40...534a09`; mantle `0x7fa704...408eaa` | ⚠️ Unaudited | Verified |
 
-## token (4)
+## token (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [FiatTokenV2_1_1](./mantle-5000/0x09bc4e0d864854c6afb6eb9a9cdf58ac190d0df9/) | mantle | [`0x09bc4e...0d0df9`](./mantle-5000/0x09bc4e0d864854c6afb6eb9a9cdf58ac190d0df9/) | ⚠️ Unaudited | Verified |
 | METHL2 | mantle | `0xcda86a...b90bb0` | ⚠️ Unaudited | Verified |
-| [USDT](./mantle-5000/0x201eba5cc46d216ce6dc03f6a759e8e766e956ae/) | mantle | [`0x201eba...e956ae`](./mantle-5000/0x201eba5cc46d216ce6dc03f6a759e8e766e956ae/) | ⚠️ Unaudited | Verified |
-| [WBTC](./mantle-5000/0xcabae6f6ea1ecab08ad02fe02ce9a44f09aebfa2/) | mantle | [`0xcabae6...aebfa2`](./mantle-5000/0xcabae6f6ea1ecab08ad02fe02ce9a44f09aebfa2/) | ⚠️ Unaudited | Verified |
 
-## unknown (84)
+## unknown (83)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BVM_ETH](./mantle-5000/0xdeaddeaddeaddeaddeaddeaddeaddeaddead1111/) | mantle | [`0xdeadde...ad1111`](./mantle-5000/0xdeaddeaddeaddeaddeaddeaddeaddeaddead1111/) | ⚠️ Unaudited | Verified |
 | [DoubleSlopeIRM (7 deployments)](./mantle-5000/0x00fa41248f6c3a26863ec56634fe78ad4e4748ec/) | mantle | 7 deployments: mantle [`0x00fa41...4748ec`](./mantle-5000/0x00fa41248f6c3a26863ec56634fe78ad4e4748ec/); mantle `0x0959a6...1ae7e4`; mantle `0x204e80...712255`; mantle `0x594485...d1fdbf`; mantle `0x71e0b2...8b2cf6`; mantle `0xb4d787...bb640b`; mantle `0xf25e43...18398e` | ⚠️ Unaudited | Verified |
-| [FBTC](./mantle-5000/0xc96de26018a54d51c097160568752c4e3bd6c364/) | mantle | [`0xc96de2...d6c364`](./mantle-5000/0xc96de26018a54d51c097160568752c4e3bd6c364/) | ⚠️ Unaudited | Verified |
 | [InitCore (4 deployments)](./blast-81457/0x815e63d6b5e1b8d74876fc9a2c08b79d4185494b/) | blast | 4 deployments: mantle `0x972bcb...bcafc5`; mantle `0xf8b855...dba05d`; blast [`0x815e63...85494b`](./blast-81457/0x815e63d6b5e1b8d74876fc9a2c08b79d4185494b/); blast `0xa7d36f...113a10` | ✅ Audited | Verified |
 | [L2cmETH](./mantle-5000/0xe6829d9a7ee3040e1276fa75293bde931859e8fa/) | mantle | [`0xe6829d...59e8fa`](./mantle-5000/0xe6829d9a7ee3040e1276fa75293bde931859e8fa/) | ⚠️ Unaudited | Verified |
 | [LiqIncentiveCalculator](./mantle-5000/0xddc99aeef7d5f87118a3a2636f7d0fb6c60dacf3/) | mantle | [`0xddc99a...0dacf3`](./mantle-5000/0xddc99aeef7d5f87118a3a2636f7d0fb6c60dacf3/) | ⚠️ Unaudited | Verified |

@@ -7,8 +7,8 @@
 - Project: Reya (`reya`)
 - Website: [https://app.reya.xyz/trade?referredBy=z9hwcwwd](https://app.reya.xyz/trade?referredBy=z9hwcwwd)
 - Lifecycle: declining (Tier 0, 77.7% below peak)
-- Generated: 2026-06-10T20:59:11.381Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:17:00.277Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: arbitrum, base, ethereum, optimism, polygon
 - Contract surface: 293 unique implementations (847 raw deployments)
 - DeFi Llama TVL: $17,801,617.00

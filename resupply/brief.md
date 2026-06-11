@@ -5,8 +5,8 @@
 - Project: Resupply (`resupply`)
 - Website: [https://resupply.fi/](https://resupply.fi/)
 - Lifecycle: active (Tier 0, 73.6% below peak)
-- Generated: 2026-06-10T20:59:11.325Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:19:14.962Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $41,835,801.02

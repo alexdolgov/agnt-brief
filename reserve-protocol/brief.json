@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "reserve-protocol",
-  "generated_at": "2026-06-10T20:59:09.647Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T02:20:23.935Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "reserve-protocol",
@@ -34,7 +34,7 @@
     "contracts_unverified": 214,
     "coverage_pct": 53.9,
     "total_audits": 27,
-    "scoreable_audits": 23,
+    "scoreable_audits": 24,
     "dl_tvl_usd": 82521774.88885,
     "tvl_usd": 7983861.230553319,
     "tvl_source": "on_chain",
@@ -9433,6 +9433,7 @@
         "audit-5392",
         "audit-5393",
         "audit-5394",
+        "audit-5395",
         "audit-5396",
         "audit-5397",
         "audit-5398",
@@ -22196,12 +22197,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "3_4_0.sol",
+        "GnosisTrade.sol"
+      ],
+      "matched_contracts": 19,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -22988,10 +22992,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 3737
+      "extraction_exact": 3756
     },
     "extraction_confidence_counts": {
-      "high": 22,
+      "high": 23,
       "medium": 1
     },
     "audits_with_repo_references": [],
@@ -23000,10 +23004,6 @@
       {
         "audit_id": 5383,
         "report_name": "Certora Formal Verification FixLib.pdf"
-      },
-      {
-        "audit_id": 5395,
-        "report_name": "Trust Security - Reserve Audit 3.4.0 Spell.pdf"
       },
       {
         "audit_id": 5399,

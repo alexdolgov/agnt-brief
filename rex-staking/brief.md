@@ -5,8 +5,8 @@
 - Project: REX Staking (`rex-staking`)
 - Website: [https://eosauthority.com/rex](https://eosauthority.com/rex)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:11.344Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:18:08.258Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $2,014,545.47

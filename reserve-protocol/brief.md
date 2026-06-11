@@ -7,8 +7,8 @@
 - Project: Reserve Protocol (`reserve-protocol`)
 - Website: [https://reserve.org](https://reserve.org)
 - Lifecycle: declining (Tier 0, 88.9% below peak)
-- Generated: 2026-06-10T20:59:09.647Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:20:23.935Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: arbitrum, base, bsc, ethereum
 - Contract surface: 329 unique implementations (1530 raw deployments)
 - DeFi Llama TVL: $82,521,774.89
@@ -32,7 +32,7 @@ The Reserve Protocol family provides the foundational stablecoin infrastructure,
 - Unique implementations: 329
 - Raw deployments: 1530
 - Audits discovered: 27
-- Scoreable audits (matched contracts): 23
+- Scoreable audits (matched contracts): 24
 - ASD (verified + unaudited TVL): $255,214.14
 - Latest audit: 2026-03 (fresh)
 - Staleness: 3 fresh, 8 aging, 16 stale, 0 unknown
@@ -428,7 +428,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Solidified - Audit Report - Reserve Protocol - April 25 2024.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Solidified%20-%20Audit%20Report%20-%20Reserve%20Protocol%20-%20April%2025%202024.pdf) | unknown | Audit | 2024-04 | stale | Direct | contract_name | 600 | high |
 | [Solidified - Audit Report - Reserve Protocol 3.4.0.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Solidified%20-%20Audit%20Report%20-%20Reserve%20Protocol%203.4.0.pdf) | unknown | Audit | 2024-06 | stale | Direct | contract_name | 604 | high |
 | [Solidified - Audit Report - Reserve Protocol.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Solidified%20-%20Audit%20Report%20-%20Reserve%20Protocol.pdf) | unknown | Audit | 2022-10 | stale | Direct | contract_name | 464 | high |
-| [Trust Security - Reserve Audit 3.4.0 Spell.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Trust%20Security%20-%20Reserve%20Audit%203.4.0%20Spell.pdf) | unknown | Audit | 2024-05 | stale | Direct | n/a | 0 | n/a |
+| [Trust Security - Reserve Audit 3.4.0 Spell.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Trust%20Security%20-%20Reserve%20Audit%203.4.0%20Spell.pdf) | unknown | Audit | 2024-05 | stale | Direct | contract_name | 19 | high |
 | [Trust Security - Reserve Audit Report 3_1_0.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Trust%20Security%20-%20Reserve%20Audit%20Report%203_1_0.pdf) | unknown | Audit | 2024-01 | stale | Direct | contract_name | 470 | high |
 | [Trust Security - Reserve Audit Report 3_2_0.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Trust%20Security%20-%20Reserve%20Audit%20Report%203_2_0.pdf) | unknown | Audit | 2024-02 | stale | Direct | contract_name | 124 | high |
 | [Trust Security - Reserve Audit Report 4_2_0.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/Trust%20Security%20-%20Reserve%20Audit%20Report%204_2_0.pdf) | unknown | Audit | 2026-01 | fresh | Direct | contract_name | 99 | high |
@@ -485,15 +485,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=22, medium=1
-- Match method counts: extraction_exact=3737
+- Extraction confidence breakdown: high=23, medium=1
+- Match method counts: extraction_exact=3756
 
 Zero-match audit list:
 
 - [5383] Certora Formal Verification FixLib.pdf
-- [5395] Trust Security - Reserve Audit 3.4.0 Spell.pdf
 - [5399] Reserve_ETH_Plus_LP_v1.pdf
 - [5400] Reserve_MetaMorpho_plugins_v2.pdf
 

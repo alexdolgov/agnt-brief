@@ -5,8 +5,8 @@
 - Project: Revert (`revert`)
 - Website: [https://revert.finance/#/ref/w6vno3](https://revert.finance/#/ref/w6vno3)
 - Lifecycle: active (Tier 0, 40.1% below peak)
-- Generated: 2026-06-10T20:59:11.339Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:17:02.879Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: arbitrum, base, blast, bsc, ethereum, optimism, polygon, unichain
 - Contract surface: 84 unique implementations (546 raw deployments)
 - DeFi Llama TVL: $11,629,176.00

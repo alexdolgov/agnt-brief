@@ -1,0 +1,18 @@
+{
+  "address": "0x21fc615cf9cbb3ced17ed622afdbbed3d909028d",
+  "chain_id": 1,
+  "contract_name": "EModeLogic",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "london",
+  "license": "AGPL-3.0, BUSL-1.1, LGPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-11T03:15:14.420Z"
+}

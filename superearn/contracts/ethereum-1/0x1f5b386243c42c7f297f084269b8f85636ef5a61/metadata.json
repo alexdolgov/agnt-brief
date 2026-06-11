@@ -1,0 +1,18 @@
+{
+  "address": "0x1f5b386243c42c7f297f084269b8f85636ef5a61",
+  "chain_id": 1,
+  "contract_name": "StrategyMorphoV1Vault",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 250,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, GPL-2.0-or-later, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 40,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-11T03:15:58.636Z"
+}

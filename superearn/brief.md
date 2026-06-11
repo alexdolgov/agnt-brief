@@ -5,8 +5,8 @@
 - Project: SuperEarn (`superearn`)
 - Website: [https://superearn.io/](https://superearn.io/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:16.805Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:15:53.980Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: ethereum, klaytn
 - Contract surface: 94 unique implementations (190 raw deployments)
 - DeFi Llama TVL: $40,335,552.22

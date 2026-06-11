@@ -4,8 +4,8 @@
 
 - Project: Sunny (`sunny`)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:16.789Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:13:55.719Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $2,510,697.35

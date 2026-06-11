@@ -1,6 +1,6 @@
 # superfarm — Contract Index
 
-50 unique implementations on ethereum · 78 deployments · 0 audited · 43 unaudited · 7 unverified
+49 unique implementations on ethereum · 77 deployments · 0 audited · 42 unaudited · 7 unverified
 
 ## adapter (2)
 
@@ -46,7 +46,7 @@
 | [TokenLaunchpadVouchers](./ethereum-1/0x87a3747c9942d8351cc85aac2f94807b27a37c0d/) | ethereum | [`0x87a374...a37c0d`](./ethereum-1/0x87a3747c9942d8351cc85aac2f94807b27a37c0d/) | ⚠️ Unaudited | Verified |
 | [TokenLaunchpadVouchersSale](./ethereum-1/0x70ff3c8a979b7f4e6b8100da78a1b2ea9af591ad/) | ethereum | [`0x70ff3c...f591ad`](./ethereum-1/0x70ff3c8a979b7f4e6b8100da78a1b2ea9af591ad/) | ⚠️ Unaudited | Verified |
 
-## unknown (31)
+## unknown (30)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -73,7 +73,6 @@
 | [Super1155](./ethereum-1/0x6110dd87b7a6fbbebb0ea0f0dffb59ae59009af2/) | ethereum | [`0x6110dd...009af2`](./ethereum-1/0x6110dd87b7a6fbbebb0ea0f0dffb59ae59009af2/) | ⚠️ Unaudited | Verified |
 | [SuperStaking](./ethereum-1/0x5304334ac100a6576ac3c15e8fca41e18386d03b/) | ethereum | [`0x530433...86d03b`](./ethereum-1/0x5304334ac100a6576ac3c15e8fca41e18386d03b/) | ⚠️ Unaudited | Verified |
 | [TimeTrialEliteLeague (3 deployments)](./ethereum-1/0x654291175cdedc48679f290c318949d9b6b6cead/) | ethereum | 3 deployments: ethereum [`0x654291...b6cead`](./ethereum-1/0x654291175cdedc48679f290c318949d9b6b6cead/); ethereum `0x736a68...25a393`; ethereum `0x9d5919...52c91e` | ⚠️ Unaudited | Verified |
-| [UniswapV2Pair](./ethereum-1/0x25647e01bd0967c1b9599fa3521939871d1d0888/) | ethereum | [`0x25647e...1d0888`](./ethereum-1/0x25647e01bd0967c1b9599fa3521939871d1d0888/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x038b0a...97e26b` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x3d592a...313921` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x581d18...bd2954` | ❓ Unverified | Unverified |

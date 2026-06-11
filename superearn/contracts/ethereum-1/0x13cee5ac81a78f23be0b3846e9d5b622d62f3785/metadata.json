@@ -1,0 +1,17 @@
+{
+  "address": "0x13cee5ac81a78f23be0b3846e9d5b622d62f3785",
+  "chain_id": 1,
+  "contract_name": "MultiMorphoDirectAssetsProvider",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 250,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-11T03:15:57.400Z"
+}

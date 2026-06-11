@@ -5,8 +5,8 @@
 - Project: Sumer.money (`sumer.money`)
 - Website: [https://sumer.money](https://sumer.money)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:16.709Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:15:03.837Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $1,853,501.38

@@ -586,11 +586,11 @@
 | [stratis-mstrax](./stratis-mstrax/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [stusdt](./stusdt/) | $1.9M | 0.0% | $1.9M | active | 0 | 10 | 2026-06-11 |
 | [suibridge](./suibridge/) | $41.9M | 0.0% | ? | declining | 0 | 5 | 2026-06-11 |
-| [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-10 |
-| [summer.fi](./summer.fi/) | $140.9M | 0.0% | $140.9M | declining | 0 | 482 | 2026-06-10 |
-| [sunny](./sunny/) | $2.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [superearn](./superearn/) | $295.4 | 0.0% | $295.4 | active | 1 | 94 | 2026-06-10 |
-| [superfarm](./superfarm/) | $211.1M | 0.0% | $211.1M | declining | 0 | 49 | 2026-06-10 |
+| [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
+| [summer.fi](./summer.fi/) | $140.9M | 0.0% | $140.9M | declining | 0 | 482 | 2026-06-11 |
+| [sunny](./sunny/) | $2.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [superearn](./superearn/) | $295.4 | 0.0% | $295.4 | active | 1 | 94 | 2026-06-11 |
+| [superfarm](./superfarm/) | $211.1M | 0.0% | $211.1M | declining | 0 | 49 | 2026-06-11 |
 | [superfluid](./superfluid/) | $12.7M | 20.8% | ? | active | 8 | 397 | 2026-05-31 |
 | [superform](./superform/) | $2.0M | 19.7% | $1.9K | active | 3 | 158 | 2026-06-10 |
 | [supernova](./supernova/) | $2.1M | 48.9% | ? | declining | 1 | 47 | 2026-06-10 |

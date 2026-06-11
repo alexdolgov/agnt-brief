@@ -1,0 +1,18 @@
+{
+  "address": "0x3311d2a0d88597da3be946aa4d0d112b486bfde8",
+  "chain_id": 1,
+  "contract_name": "PendlePTDiamond",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 250,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": "0x7d2e5fd66d7d691a735bab88bac409b6a9d14ab6",
+  "fetched_at": "2026-06-11T03:15:58.399Z"
+}

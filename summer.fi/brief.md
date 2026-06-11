@@ -7,8 +7,8 @@
 - Project: Summer.fi (`summer.fi`)
 - Website: [https://summer.fi/earn?referralCode=2001317](https://summer.fi/earn?referralCode=2001317)
 - Lifecycle: declining (Tier 0, 91% below peak)
-- Generated: 2026-06-10T20:59:16.781Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:15:11.787Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: arbitrum, base, ethereum, optimism, sonic
 - Contract surface: 482 unique implementations (1939 raw deployments)
 - DeFi Llama TVL: $47,583,731.00

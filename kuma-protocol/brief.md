@@ -5,11 +5,11 @@
 - Project: KUMA Protocol (`kuma-protocol`)
 - Website: [https://kuma.bond](https://kuma.bond)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T00:34:03.251Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-11T12:10:01.129Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: ethereum, linea, mantle, polygon
 - Contract surface: 53 unique implementations (210 raw deployments)
-- DeFi Llama TVL: $3,091,274.46
+- DeFi Llama TVL: $3,075,023.64
 - On-chain TVL (included contracts): $3,102,306.93
 - TVL by chain: Ethereum $3,044,482.43 | Linea $55,765.24 | Polygon $2,059.26
 
@@ -29,11 +29,11 @@ The KUMA Protocol family provides the core infrastructure (rate feeds, swaps, fe
 - Unverified implementations: 21
 - Unique implementations: 53
 - Raw deployments: 210
-- Audits discovered: 2
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $23,142.22
 - Latest audit: 2023-02 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 2 stale, 1 unknown
 - Tier 1 coverage: 28.1% (Code4rena)
 
 ### Auditor Coverage
@@ -132,6 +132,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [Code4rena](https://code4rena.com/reports/2023-02-kuma) | Code4rena | Contest | 2023-02 | stale | Direct | contract_name | 98 | high |
 | [KUMA Audit report #3](https://www.chainsecurity.com/security-audit/kuma-protocol) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Public Github Repo: <>](https://github.com/code-423n4/2023-02-kuma) | Code4rena | Contest | 2023-02 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -172,7 +173,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=98
@@ -180,5 +181,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [2759] KUMA Audit report #3
+- [11948] Public Github Repo: <>
 
 Fork inheritance lineage and inherited audits are included when available.

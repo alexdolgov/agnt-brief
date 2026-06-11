@@ -5,11 +5,11 @@
 - Project: Hypha (`hypha`)
 - Website: [https://www.hypha.sh/](https://www.hypha.sh/)
 - Lifecycle: active (Tier 0, 83.1% below peak)
-- Generated: 2026-06-11T00:01:23.987Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
+- Generated: 2026-06-11T12:09:03.261Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: avalanche
 - Contract surface: 60 unique implementations (88 raw deployments)
-- DeFi Llama TVL: $14,619,915.18
+- DeFi Llama TVL: $7,380,182.18
 - On-chain TVL (included contracts): $16,373,227.04
 - TVL by chain: Avalanche $16,373,227.04
 
@@ -29,11 +29,11 @@ The liquid staking family relies on the token infrastructure (GGP) for incentive
 - Unverified implementations: 30
 - Unique implementations: 60
 - Raw deployments: 88
-- Audits discovered: 2
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $16,373,227.04
 - Latest audit: 2023-02 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -136,6 +136,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [here](https://github.com/Zellic/publications/blob/master/GoGoPool%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [here](https://github.com/code-423n4/2023-02-gogopool-mitigation-contest) | Code4rena | Contest | 2023-02 | stale | Direct | n/a | 0 | n/a |
+| [here](https://assets-global.website-files.com/62f90a8443126c2ee50f4c4e/643ee88bf91b375b39ba2613_Kudelski_multisig_labs_report_1.1.pdf) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -181,7 +182,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -190,5 +191,6 @@ Zero-match audit list:
 
 - [1968] here
 - [1970] here
+- [11933] here
 
 Fork inheritance lineage and inherited audits are included when available.

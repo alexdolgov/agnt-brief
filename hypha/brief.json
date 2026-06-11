@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hypha",
-  "generated_at": "2026-06-11T00:01:23.987Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-11T12:09:03.261Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hypha",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 30,
     "coverage_pct": 0,
-    "total_audits": 2,
+    "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 14619915.17936,
+    "dl_tvl_usd": 7380182.17867,
     "tvl_usd": 16373227.036054784,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -54,7 +54,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 1,
-      "unknown": 1
+      "unknown": 2
     }
   },
   "topography": {
@@ -2227,6 +2227,27 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11933,
+      "audit_key": "audit-11933",
+      "report_name": "here",
+      "report_url": "https://assets-global.website-files.com/62f90a8443126c2ee50f4c4e/643ee88bf91b375b39ba2613_Kudelski_multisig_labs_report_1.1.pdf",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -2490,6 +2511,10 @@
       },
       {
         "audit_id": 1970,
+        "report_name": "here"
+      },
+      {
+        "audit_id": 11933,
         "report_name": "here"
       }
     ],

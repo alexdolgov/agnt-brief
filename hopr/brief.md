@@ -5,11 +5,11 @@
 - Project: HOPR (`hopr`)
 - Website: [https://hoprnet.org](https://hoprnet.org)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T23:53:28.081Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
+- Generated: 2026-06-11T12:08:01.902Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: gnosis
 - Contract surface: 81 unique implementations (253 raw deployments)
-- DeFi Llama TVL: $1,164,330.35
+- DeFi Llama TVL: $1,432,521.78
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ The HOPR family consists of two core contracts that work together: HoprNodeStake
 - Unverified implementations: 58
 - Unique implementations: 81
 - Raw deployments: 253
-- Audits discovered: 1
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-09 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
 - Tier 1 coverage: 4.3% (ChainSecurity)
 
 ### Auditor Coverage
@@ -159,6 +159,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [download report](https://reports.chainsecurity.com/HOPRNet/ChainSecurity_HOPRNet_PaymentChannel_Audit.pdf) | ChainSecurity | Audit | 2021-09 | stale | Direct | contract_name | 21 | high |
+| [DL audit link](https://www.chainsecurity.com/security-audit/hopr-payment-channels) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -191,9 +192,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=21
+
+Zero-match audit list:
+
+- [11795] DL audit link
 
 Fork inheritance lineage and inherited audits are included when available.

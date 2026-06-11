@@ -253,7 +253,7 @@
 | [hashkey-global](./hashkey-global/) | $15.1M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
 | [hashport](./hashport/) | $152.6K | 100.0% | ? | dead | 3 | 21 | 2026-06-10 |
 | [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 2 | 63 | 2026-06-11 |
-| [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | active | 0 | 9 | 2026-06-10 |
+| [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | active | 1 | 9 | 2026-06-11 |
 | [helix](./helix/) | $1.5M | 0.0% | ? | declining | 0 | 9 | 2026-06-10 |
 | [hemi-staking](./hemi-staking/) | $16.4M | 0.0% | $16.4M | active | 5 | 120 | 2026-06-11 |
 | [hemi](./hemi/) | $49.6K | 2.7% | $49.6K | unknown | 5 | 47 | 2026-05-25 |
@@ -262,7 +262,7 @@
 | [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-06-10 |
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-06-11 |
 | [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 4 | 2 | 2026-06-10 |
-| [hopr](./hopr/) | $1.2M | 4.3% | ? | active | 1 | 81 | 2026-06-10 |
+| [hopr](./hopr/) | $1.4M | 4.3% | ? | active | 2 | 81 | 2026-06-11 |
 | [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
 | [houses-of-rome](./houses-of-rome/) | $0.0 | 0.0% | ? | dead | 0 | 51 | 2026-06-10 |
 | [hskhodlium](./hskhodlium/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -273,7 +273,7 @@
 | [hypersurface](./hypersurface/) | $161.0M | 0.0% | $161.0M | active | 0 | 242 | 2026-06-10 |
 | [hyperswap](./hyperswap/) | $17.4M | 0.0% | ? | active | 3 | 5 | 2026-06-10 |
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 0 | 11 | 2026-06-11 |
-| [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 2 | 60 | 2026-06-11 |
+| [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 3 | 60 | 2026-06-11 |
 | [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 0 | 45 | 2026-05-31 |
 | [ichi](./ichi/) | $36.1M | 0.9% | $36.1M | active | 9 | 616 | 2026-06-11 |
 | [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | active | 0 | 16 | 2026-06-11 |
@@ -316,7 +316,7 @@
 | [klayswap](./klayswap/) | $4.5M | 0.0% | ? | declining | 4 | 22 | 2026-06-11 |
 | [kodiak](./kodiak/) | $29.0M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
 | [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-06-11 |
-| [kuma-protocol](./kuma-protocol/) | $3.1M | 28.1% | $23.1K | active | 2 | 53 | 2026-06-11 |
+| [kuma-protocol](./kuma-protocol/) | $3.1M | 28.1% | $23.1K | active | 3 | 53 | 2026-06-11 |
 | [kyberswap](./kyberswap/) | $58.3M | 8.8% | $58.3M | declining | 6 | 445 | 2026-06-11 |
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-06-11 |
 | [landx-finance](./landx-finance/) | $1.8M | 100.0% | ? | active | 1 | 3 | 2026-06-11 |
@@ -337,7 +337,7 @@
 | [llamapay](./llamapay/) | $25.8M | 0.0% | ? | active | 1 | 19 | 2026-06-11 |
 | [lockon](./lockon/) | $1.0M | 56.3% | ? | active | 7 | 23 | 2026-06-11 |
 | [looping-collective](./looping-collective/) | $11.8M | 0.0% | $11.8M | active | 13 | 14 | 2026-06-11 |
-| [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 0 | 145 | 2026-06-11 |
+| [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 1 | 145 | 2026-06-11 |
 | [lumenswap](./lumenswap/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-06-11 |
 | [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-31 |

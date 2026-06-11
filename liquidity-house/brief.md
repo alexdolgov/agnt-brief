@@ -5,8 +5,8 @@
 - Project: Liquidity House (`liquidity-house`)
 - Website: [https://liquidity.house](https://liquidity.house)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:06.982Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:39:45.780Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $1,437,366.59

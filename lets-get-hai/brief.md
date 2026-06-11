@@ -5,8 +5,8 @@
 - Project: Lets Get HAI (`lets-get-hai`)
 - Website: [https://www.letsgethai.com](https://www.letsgethai.com)
 - Lifecycle: active (Tier 0, 79.2% below peak)
-- Generated: 2026-06-10T20:59:06.969Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:41:46.366Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: optimism
 - Contract surface: 54 unique implementations (68 raw deployments)
 - DeFi Llama TVL: $1,195,115.22

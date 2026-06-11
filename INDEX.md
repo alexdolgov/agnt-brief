@@ -327,11 +327,11 @@
 | [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | active | 0 | 107 | 2026-06-11 |
 | [lendflare](./lendflare/) | $1.1K | 5.3% | $1.1K | declining | 1 | 74 | 2026-06-11 |
 | [lendle](./lendle/) | $60.7K | 43.2% | $5.6K | declining | 9 | 64 | 2026-06-11 |
-| [lets-get-hai](./lets-get-hai/) | $13.5M | 77.4% | $12.6M | active | 5 | 54 | 2026-06-10 |
-| [levex](./levex/) | $10.9M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
-| [liminal](./liminal/) | $24.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | active | 4 | 20 | 2026-06-10 |
+| [lets-get-hai](./lets-get-hai/) | $13.5M | 77.4% | $12.6M | active | 5 | 54 | 2026-06-11 |
+| [levex](./levex/) | $10.9M | 0.0% | ? | active | 0 | 2 | 2026-06-11 |
+| [liminal](./liminal/) | $24.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | active | 4 | 20 | 2026-06-11 |
 | [lisk-bridge](./lisk-bridge/) | $50.9M | 0.0% | $50.9M | active | 0 | 96 | 2026-06-10 |
 | [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | declining | 0 | 93 | 2026-06-10 |
 | [llamapay](./llamapay/) | $25.8M | 0.0% | ? | active | 1 | 19 | 2026-06-10 |

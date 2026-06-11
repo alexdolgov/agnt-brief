@@ -47,7 +47,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| CommunityIssuance (2 deployments) | base | 2 deployments: base `0x025853...ae2903`; base `0x40d561...f39db5` | ✅ Audited | Verified |
+| [CommunityIssuance (2 deployments)](./base-8453/0x025853fafb436ee00542c414bc0292bf5cae2903/) | base | 2 deployments: base [`0x025853...ae2903`](./base-8453/0x025853fafb436ee00542c414bc0292bf5cae2903/); base `0x40d561...f39db5` | ✅ Audited | Verified |
 | [LOANStaking (2 deployments)](./base-8453/0x9e991a40e7d08b8a85ad51a0d00b921b92dc649e/) | base | 2 deployments: base [`0x9e991a...dc649e`](./base-8453/0x9e991a40e7d08b8a85ad51a0d00b921b92dc649e/); base `0xdc4675...2462b0` | ⚠️ Unaudited | Verified |
 | [LockupContract (2 deployments)](./base-8453/0x0e97a8a5a3b25f1a4a1e133360c5e2622a453a96/) | base | 2 deployments: base [`0x0e97a8...453a96`](./base-8453/0x0e97a8a5a3b25f1a4a1e133360c5e2622a453a96/); base `0xc0a202...641dd0` | ✅ Audited | Verified |
 | [LockupContractCreator (2 deployments)](./base-8453/0x57ed23f9d729031886ece75c31aef3f41bd58b3f/) | base | 2 deployments: base [`0x57ed23...d58b3f`](./base-8453/0x57ed23f9d729031886ece75c31aef3f41bd58b3f/); base `0xe0117a...3c5ca1` | ✅ Audited | Verified |

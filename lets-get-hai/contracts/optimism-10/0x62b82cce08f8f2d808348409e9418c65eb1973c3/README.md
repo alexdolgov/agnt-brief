@@ -4,7 +4,7 @@
 |---|---|
 | Chain | optimism (10) |
 | Address | `0x62b82cce08f8f2d808348409e9418c65eb1973c3` |
-| Role | unknown |
+| Role | core_logic |
 | Origin | native |
 | Audited | Yes |
 | Audits | [solidified_HAI_audit_report.pdf](https://github.com/hai-on-op/audit-reports/blob/main/solidified_HAI_audit_report.pdf) |

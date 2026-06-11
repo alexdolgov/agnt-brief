@@ -5,8 +5,8 @@
 - Project: LiquidLoans (`liquidloans`)
 - Website: [https://www.liquidloans.io](https://www.liquidloans.io)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:59:06.986Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:40:52.529Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: base
 - Contract surface: 20 unique implementations (39 raw deployments)
 - DeFi Llama TVL: $3,917,338.83

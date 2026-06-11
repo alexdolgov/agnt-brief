@@ -5,8 +5,8 @@
 - Project: Taiko Bridge (`taiko-bridge`)
 - Website: [https://bridge.taiko.xyz/](https://bridge.taiko.xyz/)
 - Lifecycle: active (Tier 0, 90.7% below peak)
-- Generated: 2026-06-10T20:59:17.169Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:26:37.100Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: ethereum
 - Contract surface: 52 unique implementations (210 raw deployments)
 - DeFi Llama TVL: $16,768,686.97

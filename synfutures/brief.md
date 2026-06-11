@@ -5,8 +5,8 @@
 - Project: SynFutures (`synfutures`)
 - Website: [https://www.synfutures.com/](https://www.synfutures.com/)
 - Lifecycle: active (Tier 0, 91.2% below peak)
-- Generated: 2026-06-10T20:59:17.149Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:26:36.807Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: arbitrum, base, blast, bsc, ethereum, polygon
 - Contract surface: 481 unique implementations (485 raw deployments)
 - DeFi Llama TVL: $6,281,834.00

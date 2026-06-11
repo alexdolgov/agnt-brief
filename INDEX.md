@@ -607,11 +607,11 @@
 | [symmio](./symmio/) | $24.5 | 0.0% | $24.5 | active | 0 | 168 | 2026-06-11 |
 | [synapse](./synapse/) | $25.6M | 0.0% | $25.6M | declining | 0 | 824 | 2026-06-11 |
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 23.3% | ? | active | 8 | 157 | 2026-06-11 |
-| [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 0 | 481 | 2026-06-10 |
-| [synthetix](./synthetix/) | $10.3M | 0.0% | $10.3M | active | 0 | 13 | 2026-06-10 |
-| [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 0 | 1 | 2026-06-10 |
-| [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-06-10 |
-| [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-06-10 |
+| [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 0 | 481 | 2026-06-11 |
+| [synthetix](./synthetix/) | $10.3M | 0.0% | $10.3M | active | 0 | 13 | 2026-06-11 |
+| [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 0 | 1 | 2026-06-11 |
+| [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-06-11 |
+| [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-06-11 |
 | [tangible](./tangible/) | $42.2M | 0.0% | ? | active | 0 | 475 | 2026-06-10 |
 | [tarot](./tarot/) | $154.4K | 0.0% | $154.4K | dead | 1 | 139 | 2026-05-31 |
 | [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | declining | 0 | 179 | 2026-06-10 |

@@ -5,8 +5,8 @@
 - Project: Syntropia (`syntropia`)
 - Website: [https://syntropia.ai/](https://syntropia.ai/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:17.158Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:26:36.044Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: ethereum
 - Contract surface: 1 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $3,662,459.78

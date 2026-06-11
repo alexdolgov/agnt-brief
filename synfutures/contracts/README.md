@@ -1,12 +1,6 @@
 # synfutures — Contract Index
 
-482 unique implementations across 6 chains · 486 deployments · 0 audited · 5 unaudited · 477 unverified
-
-## bridge_template (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [OptimismMintableERC20](./base-8453/0x2c24497d4086490e7ead87cc12597fb50c2e6ed6/) | base | [`0x2c2449...2e6ed6`](./base-8453/0x2c24497d4086490e7ead87cc12597fb50c2e6ed6/) | ⚠️ Unaudited | Verified |
+481 unique implementations across 6 chains · 485 deployments · 0 audited · 4 unaudited · 477 unverified
 
 ## proxy (82)
 

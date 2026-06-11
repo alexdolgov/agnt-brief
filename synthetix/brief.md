@@ -5,8 +5,8 @@
 - Project: Synthetix (`synthetix`)
 - Website: [https://synthetix.io](https://synthetix.io)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:59:17.156Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:27:41.188Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: arbitrum, base, ethereum, optimism
 - Contract surface: 13 unique implementations (40 raw deployments)
 - DeFi Llama TVL: $41,667,156.00

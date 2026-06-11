@@ -5,8 +5,8 @@
 - Project: Privacy Cash (`privacy-cash`)
 - Website: [https://privacycash.org/](https://privacycash.org/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:09.374Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:04:44.102Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: base
 - Contract surface: 6 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $2,482,541.16

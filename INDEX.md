@@ -466,11 +466,11 @@
 | [powh3d](./powh3d/) | $4.4M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
 | [predict-fun](./predict-fun/) | $1.5M | 8.0% | $1.5M | unknown | 9 | 40 | 2026-05-22 |
 | [prime-staking](./prime-staking/) | $4.8M | 0.0% | ? | active | 2 | 10 | 2026-06-11 |
-| [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | declining | 2 | 117 | 2026-06-10 |
-| [privacy-cash](./privacy-cash/) | $48.1K | 0.0% | $48.1K | active | 10 | 6 | 2026-06-10 |
-| [privacy-pools](./privacy-pools/) | $6.6M | 100.0% | ? | active | 4 | 1 | 2026-06-10 |
-| [probit-global](./probit-global/) | $12.8M | 0.0% | ? | dead | 0 | 3 | 2026-06-10 |
-| [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-06-10 |
+| [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | declining | 2 | 117 | 2026-06-11 |
+| [privacy-cash](./privacy-cash/) | $48.1K | 0.0% | $48.1K | active | 10 | 6 | 2026-06-11 |
+| [privacy-pools](./privacy-pools/) | $6.6M | 100.0% | ? | active | 4 | 1 | 2026-06-11 |
+| [probit-global](./probit-global/) | $12.8M | 0.0% | ? | dead | 0 | 3 | 2026-06-11 |
+| [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-06-11 |
 | [puffer-finance](./puffer-finance/) | $225.1M | 36.4% | $169.2M | declining | 4 | 65 | 2026-06-10 |
 | [pulsechain-bridge](./pulsechain-bridge/) | $52.0M | 0.0% | ? | active | 0 | 5 | 2026-05-31 |
 | [pulsechain](./pulsechain/) | $52.0M | 0.0% | ? | active | 0 | 5 | 2026-06-10 |

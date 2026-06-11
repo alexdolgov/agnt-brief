@@ -5,8 +5,8 @@
 - Project: Privacy Pools (`privacy-pools`)
 - Website: [https://privacypools.com/](https://privacypools.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T21:23:55.810Z
-- Pipeline run: correction-skeletal-description-fix-topography
+- Generated: 2026-06-11T02:04:14.132Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: arbitrum, ethereum, optimism
 - Contract surface: 1 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $6,624,610.42

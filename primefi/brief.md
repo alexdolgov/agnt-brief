@@ -7,8 +7,8 @@
 - Project: PrimeFi (`primefi`)
 - Website: [https://primefi.xyz/](https://primefi.xyz/)
 - Lifecycle: declining (Tier 0, 93% below peak)
-- Generated: 2026-06-10T20:59:09.369Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:02:44.332Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: base, hyperliquid
 - Contract surface: 117 unique implementations (187 raw deployments)
 - DeFi Llama TVL: $233,172.38

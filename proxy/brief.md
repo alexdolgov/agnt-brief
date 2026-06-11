@@ -4,8 +4,8 @@
 
 - Project: Proxy (`proxy`)
 - Lifecycle: active (Tier 0, 38.7% below peak)
-- Generated: 2026-06-10T20:59:09.385Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:02:13.960Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum, polygon
 - Contract surface: 278 unique implementations (372 raw deployments)
 - DeFi Llama TVL: $19,955,618.58

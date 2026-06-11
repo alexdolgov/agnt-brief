@@ -4,7 +4,7 @@
 |---|---|
 | Chain | optimism (10) |
 | Address | `0x44192215fed782896be2ce24e0bfbf0bf825d15e` |
-| Role | unknown |
+| Role | proxy |
 | Origin | standard_library |
 | Audited | Yes |
 | Audits | [contracts_audit_auditware.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/audit/contracts_audit_auditware.md); [contracts_audit_oxorio.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/audit/contracts_audit_oxorio.md); [entrypoint_upgrade_audit_oxorio.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/audit/entrypoint_upgrade_audit_oxorio.md) |

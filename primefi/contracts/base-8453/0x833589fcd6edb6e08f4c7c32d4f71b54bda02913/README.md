@@ -8,7 +8,7 @@
 | Origin | upstream |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (hyperliquid `0xb88339cb7199b77e23db6e890353e22632ba630f`; base [`0x833589fcd6edb6e08f4c7c32d4f71b54bda02913`](../0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/)) |
+| Deployments | 1 (base [`0x833589fcd6edb6e08f4c7c32d4f71b54bda02913`](../0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/)) |
 | Proxy | Yes → `0x2ce631...9fd779` |
 | Source | Sourcify (full match) |
 | TVL | n/a |

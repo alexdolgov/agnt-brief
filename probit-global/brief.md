@@ -7,8 +7,8 @@
 - Project: ProBit Global (`probit-global`)
 - Website: [https://www.probit.com](https://www.probit.com)
 - Lifecycle: dead (Tier 0, 51.6% below peak)
-- Generated: 2026-06-10T20:59:09.377Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:02:14.034Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: fantom
 - Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $12,830,307.30

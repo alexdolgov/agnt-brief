@@ -4,7 +4,7 @@
 |---|---|
 | Chain | ethereum (1) |
 | Address | `0x9168765ee952de7c6f8fc6fad5ec209b960b7622` |
-| Role | unknown |
+| Role | proxy |
 | Origin | native |
 | Audited | No |
 | Audits | n/a |

@@ -348,11 +348,11 @@
 | [mangrove](./mangrove/) | $4.3M | 22.0% | ? | active | 6 | 68 | 2026-06-11 |
 | [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 0 | 5 | 2026-06-11 |
 | [manta-atlantic-stake](./manta-atlantic-stake/) | $5.4M | 0.0% | ? | sunsetting | 0 | 109 | 2026-06-11 |
-| [manta-cedefi](./manta-cedefi/) | $26.7M | 0.0% | ? | unknown | 0 | 17 | 2026-06-10 |
-| [manta-pacific](./manta-pacific/) | $24.6M | 0.0% | ? | active | 0 | 3 | 2026-06-10 |
-| [mantle-restaking](./mantle-restaking/) | $79.7M | 0.0% | ? | active | 13 | 8 | 2026-06-10 |
-| [mantra-dao](./mantra-dao/) | $611.0M | 0.0% | $611.0M | declining | 1 | 195 | 2026-06-10 |
-| [matstake](./matstake/) | $4.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
+| [manta-cedefi](./manta-cedefi/) | $26.7M | 0.0% | ? | unknown | 0 | 17 | 2026-06-11 |
+| [manta-pacific](./manta-pacific/) | $24.6M | 0.0% | ? | active | 0 | 3 | 2026-06-11 |
+| [mantle-restaking](./mantle-restaking/) | $79.7M | 0.0% | ? | active | 13 | 8 | 2026-06-11 |
+| [mantra-dao](./mantra-dao/) | $611.0M | 0.0% | $611.0M | declining | 1 | 195 | 2026-06-11 |
+| [matstake](./matstake/) | $4.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [maverick-protocol](./maverick-protocol/) | $26.8M | 35.3% | $26.8M | declining | 7 | 93 | 2026-06-10 |
 | [mcdex](./mcdex/) | $1.1M | 8.3% | $1.1M | dead | 2 | 1465 | 2026-06-10 |
 | [mdex](./mdex/) | $235.5K | 85.7% | $20.2K | declining | 3 | 13 | 2026-06-10 |

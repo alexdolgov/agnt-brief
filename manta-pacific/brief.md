@@ -5,8 +5,8 @@
 - Project: Manta Pacific (`manta-pacific`)
 - Website: [https://pacific-bridge.manta.network](https://pacific-bridge.manta.network)
 - Lifecycle: active (Tier 0, 91.2% below peak)
-- Generated: 2026-06-10T20:59:07.185Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:52:54.986Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: ethereum, manta
 - Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $24,646,896.09

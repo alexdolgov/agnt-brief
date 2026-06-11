@@ -7,8 +7,8 @@
 - Project: MANTRA DAO (`mantra-dao`)
 - Website: [https://mantrachain.io/](https://mantrachain.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:07.248Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:54:30.217Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: ethereum, polygon
 - Contract surface: 195 unique implementations (489 raw deployments)
 - DeFi Llama TVL: $1,744,800.24

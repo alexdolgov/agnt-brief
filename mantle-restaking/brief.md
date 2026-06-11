@@ -5,8 +5,8 @@
 - Project: Mantle Restaking (`mantle-restaking`)
 - Website: [https://www.methprotocol.xyz/](https://www.methprotocol.xyz/)
 - Lifecycle: active
-- Generated: 2026-06-10T20:59:07.190Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:53:58.538Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: ethereum
 - Contract surface: 8 unique implementations (14 raw deployments)
 - DeFi Llama TVL: $79,688,066.50

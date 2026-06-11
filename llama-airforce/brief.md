@@ -7,8 +7,8 @@
 - Project: Llama Airforce (`llama-airforce`)
 - Website: [https://llama.airforce](https://llama.airforce)
 - Lifecycle: declining (Tier 0, 88.9% below peak)
-- Generated: 2026-06-10T20:59:07.014Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:43:47.746Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: ethereum
 - Contract surface: 93 unique implementations (180 raw deployments)
 - DeFi Llama TVL: $3,827,128.96

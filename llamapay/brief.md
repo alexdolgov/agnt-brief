@@ -5,8 +5,8 @@
 - Project: LlamaPay (`llamapay`)
 - Website: [https://llamapay.io](https://llamapay.io)
 - Lifecycle: active (Tier 0, 71.7% below peak)
-- Generated: 2026-06-10T20:59:07.021Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:44:45.256Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: arbitrum, avalanche, base, berachain, blast, bsc, cronos, ethereum, fantom, fraxtal, gnosis, mantle, mode, optimism, polygon, sonic, zora
 - Contract surface: 19 unique implementations (98 raw deployments)
 - DeFi Llama TVL: $25,777,577.19

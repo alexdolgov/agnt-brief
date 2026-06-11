@@ -332,11 +332,11 @@
 | [liminal](./liminal/) | $24.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | active | 4 | 20 | 2026-06-11 |
-| [lisk-bridge](./lisk-bridge/) | $50.9M | 0.0% | $50.9M | active | 0 | 96 | 2026-06-10 |
-| [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | declining | 0 | 93 | 2026-06-10 |
-| [llamapay](./llamapay/) | $25.8M | 0.0% | ? | active | 1 | 19 | 2026-06-10 |
-| [lockon](./lockon/) | $1.0M | 56.3% | ? | active | 7 | 23 | 2026-06-10 |
-| [looping-collective](./looping-collective/) | $11.8M | 0.0% | $11.8M | active | 0 | 14 | 2026-06-10 |
+| [lisk-bridge](./lisk-bridge/) | $50.9M | 0.0% | $50.9M | active | 0 | 96 | 2026-06-11 |
+| [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | declining | 0 | 93 | 2026-06-11 |
+| [llamapay](./llamapay/) | $25.8M | 0.0% | ? | active | 1 | 19 | 2026-06-11 |
+| [lockon](./lockon/) | $1.0M | 56.3% | ? | active | 7 | 23 | 2026-06-11 |
+| [looping-collective](./looping-collective/) | $11.8M | 0.0% | $11.8M | active | 0 | 14 | 2026-06-11 |
 | [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 0 | 145 | 2026-06-10 |
 | [lumenswap](./lumenswap/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-06-10 |

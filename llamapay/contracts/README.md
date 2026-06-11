@@ -1,6 +1,6 @@
 # llamapay — Contract Index
 
-20 unique implementations across 17 chains · 105 deployments · 0 audited · 9 unaudited · 11 unverified
+19 unique implementations across 17 chains · 98 deployments · 0 audited · 8 unaudited · 11 unverified
 
 ## operational_periphery (5)
 
@@ -18,11 +18,10 @@
 |---|---|---|---|---|
 | [LlamaPayFactory (14 deployments)](./sonic-146/0x09c39b8311e4b7c678cbdad76556877ecd3aea07/) | sonic | 14 deployments: ethereum `0xde1c04...f84c7f`; optimism `0xde1c04...f84c7f`; bsc `0xde1c04...f84c7f`; gnosis `0xde1c04...f84c7f`; polygon `0xde1c04...f84c7f`; sonic [`0x09c39b...3aea07`](./sonic-146/0x09c39b8311e4b7c678cbdad76556877ecd3aea07/); base `0x09c39b...3aea07`; arbitrum `0xde1c04...f84c7f`; avalanche `0x27fba1...247f9b`; avalanche `0x402ab0...dd76b2`; avalanche `0x6bbafc...9fd768`; avalanche `0x7d507b...25f4a3`; avalanche `0xedf040...38c481`; berachain `0x09c39b...3aea07` | ⚠️ Unaudited | Verified |
 
-## unknown (14)
+## unknown (13)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Disperse (7 deployments)](./arbitrum-42161/0x6f9fb43274e9011804bf516e78caf5e89856301a/) | arbitrum | 7 deployments: ethereum `0xd152f5...452150`; optimism `0xd152f5...452150`; bsc `0xd152f5...452150`; gnosis `0xd152f5...452150`; polygon `0xd152f5...452150`; arbitrum [`0x6f9fb4...56301a`](./arbitrum-42161/0x6f9fb43274e9011804bf516e78caf5e89856301a/); avalanche `0x6f9fb4...56301a` | ⚠️ Unaudited | Verified |
 | [LlamaPayBot (17 deployments)](./ethereum-1/0x0327a00f37115115038c289827480ddaabae948e/) | ethereum | 17 deployments: ethereum [`0x0327a0...ae948e`](./ethereum-1/0x0327a00f37115115038c289827480ddaabae948e/); ethereum `0xc5a4fe...074ab9`; ethereum `0xe10eb2...218ee9`; optimism `0x6f9fb4...56301a`; optimism `0xc5a4fe...074ab9`; bsc `0xc5a4fe...074ab9`; polygon `0xc5a4fe...074ab9`; arbitrum `0xb1870e...b184e0`; avalanche `0x0327a0...ae948e`; avalanche `0x0e52b1...c258cf`; avalanche `0x3addfd...b6cb0f`; avalanche `0x57547f...0353d7`; avalanche `0x9410fb...1b633c`; avalanche `0xb7caa9...8b268c`; avalanche `0xda33d4...5294d1`; avalanche `0xe10eb2...218ee9`; avalanche `0xf13563...bac057` | ⚠️ Unaudited | Verified |
 | UnnamedContract | cronos | `0x62e13b...cd4c10` | ❓ Unverified | Unverified |
 | UnnamedContract | fantom | `0x62e13b...cd4c10` | ❓ Unverified | Unverified |

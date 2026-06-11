@@ -5,8 +5,8 @@
 - Project: LOCKON (`lockon`)
 - Website: [https://lockon.finance](https://lockon.finance)
 - Lifecycle: active (Tier 0, 58.3% below peak)
-- Generated: 2026-06-10T20:59:07.027Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:44:42.769Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: arbitrum, polygon
 - Contract surface: 23 unique implementations (62 raw deployments)
 - DeFi Llama TVL: $1,049,561.71

@@ -1,6 +1,6 @@
 # lisk-bridge — Contract Index
 
-97 unique implementations across 2 chains · 211 deployments · 0 audited · 88 unaudited · 9 unverified
+96 unique implementations on ethereum · 210 deployments · 0 audited · 87 unaudited · 9 unverified
 
 ## adapter (1)
 
@@ -90,7 +90,7 @@
 | [SX1155NFTFactory](./ethereum-1/0xab7aa6495f8694656b59bc6309d3f6190dbc8b14/) | ethereum | [`0xab7aa6...bc8b14`](./ethereum-1/0xab7aa6495f8694656b59bc6309d3f6190dbc8b14/) | ⚠️ Unaudited | Verified |
 | [XTokenFactory (3 deployments)](./ethereum-1/0x20bf447fe55ac3718538e89c8c32396b174e82a6/) | ethereum | 3 deployments: ethereum [`0x20bf44...4e82a6`](./ethereum-1/0x20bf447fe55ac3718538e89c8c32396b174e82a6/); ethereum `0x247d08...b55c14`; ethereum `0xe1532d...8f33b5` | ⚠️ Unaudited | Verified |
 
-## token (14)
+## token (13)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -99,7 +99,6 @@
 | [FiatTokenV2_1](./ethereum-1/0x5e007bc170861e27952ca4118d7af3e8aa5e4753/) | ethereum | [`0x5e007b...5e4753`](./ethereum-1/0x5e007bc170861e27952ca4118d7af3e8aa5e4753/) | ⚠️ Unaudited | Verified |
 | [FiatTokenV2_2 (3 deployments)](./ethereum-1/0x1abaea1f7c830bd89acc67ec4af516284b1bc33c/) | ethereum | 3 deployments: ethereum [`0x1abaea...1bc33c`](./ethereum-1/0x1abaea1f7c830bd89acc67ec4af516284b1bc33c/); ethereum `0x5e620d...e79ce2`; ethereum `0xa0b869...06eb48` | ⚠️ Unaudited | Verified |
 | [L1LiskToken](./ethereum-1/0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f/) | ethereum | [`0x6033f7...90ae3f`](./ethereum-1/0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f/) | ⚠️ Unaudited | Verified |
-| [L2LiskToken](./base-8453/0xac485391eb2d7d88253a7f1ef18c37f4242d1a24/) | base | [`0xac4853...2d1a24`](./base-8453/0xac485391eb2d7d88253a7f1ef18c37f4242d1a24/) | ⚠️ Unaudited | Verified |
 | [SwarmMarketsToken (2 deployments)](./ethereum-1/0xb17548c7b510427baac4e267bea62e800b247173/) | ethereum | 2 deployments: ethereum [`0xb17548...247173`](./ethereum-1/0xb17548c7b510427baac4e267bea62e800b247173/); ethereum `0xfc63b1...216b33` | ⚠️ Unaudited | Verified |
 | [TetherToken](./ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ethereum | [`0xdac17f...831ec7`](./ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ⚠️ Unaudited | Verified |
 | [TokenTransferor (2 deployments)](./ethereum-1/0xa75d8afd8d3a36dd3935078e4d05153946cee84c/) | ethereum | 2 deployments: ethereum [`0xa75d8a...cee84c`](./ethereum-1/0xa75d8afd8d3a36dd3935078e4d05153946cee84c/); ethereum `0xcd465d...b6ad12` | ⚠️ Unaudited | Verified |

@@ -2,7 +2,7 @@
 
 3 unique implementations across 2 chains · 3 deployments · 0 audited · 1 unaudited · 2 unverified
 
-## core_logic (1)
+## proxy (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|

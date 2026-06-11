@@ -568,11 +568,11 @@
 | [squadswap](./squadswap/) | $13.0M | 63.2% | ? | active | 5 | 214 | 2026-06-11 |
 | [stable-jack](./stable-jack/) | $76.9M | 0.0% | $76.9M | active | 1 | 249 | 2026-06-11 |
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 2 | 2026-06-11 |
-| [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-06-10 |
-| [stake.link](./stake.link/) | $76.8M | 60.9% | $35.9K | active | 20 | 71 | 2026-06-10 |
-| [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | active | 0 | 183 | 2026-06-10 |
-| [stakingverse](./stakingverse/) | $3.5M | 0.0% | $3.5M | active | 14 | 3 | 2026-06-10 |
-| [standx](./standx/) | $48.3M | 57.1% | ? | declining | 6 | 17 | 2026-06-10 |
+| [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-06-11 |
+| [stake.link](./stake.link/) | $76.8M | 60.9% | $35.9K | active | 20 | 71 | 2026-06-11 |
+| [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | active | 0 | 183 | 2026-06-11 |
+| [stakingverse](./stakingverse/) | $3.5M | 0.0% | $3.5M | active | 14 | 3 | 2026-06-11 |
+| [standx](./standx/) | $48.3M | 57.1% | ? | declining | 6 | 17 | 2026-06-11 |
 | [stargate-finance](./stargate-finance/) | $203.9M | 50.0% | $5.2M | active | 17 | 294 | 2026-06-10 |
 | [stargate](./stargate/) | $5.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [starknet-btc-staking](./starknet-btc-staking/) | $412.2M | 0.0% | $412.2M | unknown | 42 | 1 | 2026-05-31 |

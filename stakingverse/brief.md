@@ -5,8 +5,8 @@
 - Project: Stakingverse (`stakingverse`)
 - Website: [https://stakingverse.io](https://stakingverse.io)
 - Lifecycle: active (Tier 0, 62.1% below peak)
-- Generated: 2026-06-10T20:59:16.613Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:06:08.294Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: ethereum, lukso
 - Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $4,028,554.37

@@ -1,12 +1,6 @@
 # standx — Contract Index
 
-18 unique implementations on bsc · 27 deployments · 4 audited · 4 unaudited · 10 unverified
-
-## core_logic (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [PancakeV3Pool](./bsc-56/0xb67e5eaf770a384ab28029d08b9bc5ebe32beb0f/) | bsc | [`0xb67e5e...2beb0f`](./bsc-56/0xb67e5eaf770a384ab28029d08b9bc5ebe32beb0f/) | ⚠️ Unaudited | Verified |
+17 unique implementations on bsc · 26 deployments · 4 audited · 3 unaudited · 10 unverified
 
 ## proxy (1)
 

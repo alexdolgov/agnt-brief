@@ -7,8 +7,8 @@
 - Project: Stafi (`stafi`)
 - Website: [https://www.stafi.io/](https://www.stafi.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:16.500Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:07:13.577Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: ethereum
 - Contract surface: 42 unique implementations (58 raw deployments)
 - DeFi Llama TVL: $3,990,023.60

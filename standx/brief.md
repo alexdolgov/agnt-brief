@@ -7,8 +7,8 @@
 - Project: StandX (`standx`)
 - Website: [https://standx.com/referral?code=defillama](https://standx.com/referral?code=defillama)
 - Lifecycle: declining (Tier 0, 54.7% below peak)
-- Generated: 2026-06-10T20:59:16.616Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:05:49.958Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: bsc
 - Contract surface: 17 unique implementations (26 raw deployments)
 - DeFi Llama TVL: $48,272,335.00

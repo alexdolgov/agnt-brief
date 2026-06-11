@@ -5,8 +5,8 @@
 - Project: StakeStone (`stakestone`)
 - Website: [https://stakestone.io](https://stakestone.io)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:59:16.567Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:05:03.217Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: base, berachain, bsc, ethereum, linea, mantle, merlin, scroll
 - Contract surface: 183 unique implementations (264 raw deployments)
 - DeFi Llama TVL: $23,274,618.56

@@ -5,8 +5,8 @@
 - Project: Onyx (`onyx`)
 - Website: [https://app.onyx.org/](https://app.onyx.org/)
 - Lifecycle: active (Tier 1, dead)
-- Generated: 2026-06-10T20:59:08.790Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:35:12.669Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: ethereum
 - Contract surface: 16 unique implementations (42 raw deployments)
 - DeFi Llama TVL: $58,891,762.00

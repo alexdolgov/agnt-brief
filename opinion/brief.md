@@ -7,8 +7,8 @@
 - Project: OPINION (`opinion`)
 - Website: [https://app.opinion.trade?code=hV0KVj](https://app.opinion.trade?code=hV0KVj)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:08.805Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:37:09.909Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: bsc, ethereum
 - Contract surface: 6 unique implementations (22 raw deployments)
 - DeFi Llama TVL: $7,320,963.87

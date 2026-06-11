@@ -5,8 +5,8 @@
 - Project: OrangeX (`orangex`)
 - Website: [https://www.orangex.com](https://www.orangex.com)
 - Lifecycle: active (Tier 0, 34.8% below peak)
-- Generated: 2026-06-10T20:59:08.830Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:34:03.359Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: base, ethereum
 - Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $39,839,466.40

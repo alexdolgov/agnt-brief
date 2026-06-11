@@ -7,8 +7,8 @@
 - Project: Opyn (`opyn`)
 - Website: [https://www.opyn.co](https://www.opyn.co)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:08.824Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:35:12.849Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: avalanche, ethereum
 - Contract surface: 103 unique implementations (200 raw deployments)
 - DeFi Llama TVL: $2,020,344.00

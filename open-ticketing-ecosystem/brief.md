@@ -5,8 +5,8 @@
 - Project: OPEN Ticketing Ecosystem (`open-ticketing-ecosystem`)
 - Website: [https://onopen.xyz](https://onopen.xyz)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:08.799Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:34:04.428Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: base, ethereum, polygon
 - Contract surface: 24 unique implementations (153 raw deployments)
 - DeFi Llama TVL: $1,343,702.63

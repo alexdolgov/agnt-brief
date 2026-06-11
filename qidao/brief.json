@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "qidao",
-  "generated_at": "2026-06-11T02:08:51.965Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-11T12:11:09.128Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "qidao",
@@ -33,10 +33,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 298,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3042769.70324,
-    "tvl_usd": 3042769.70324,
+    "dl_tvl_usd": 2641554.94321,
+    "tvl_usd": 2641554.94321,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -71,7 +71,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 1
     }
   },
   "topography": {
@@ -9328,7 +9328,29 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11652,
+      "audit_key": "audit-11652",
+      "report_name": "Here is the report",
+      "report_url": "https://cybersecadvisor.org/",
+      "auditor": "Bramah Systems",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
@@ -9342,7 +9364,12 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11652,
+        "report_name": "Here is the report"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

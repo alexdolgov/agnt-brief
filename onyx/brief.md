@@ -5,11 +5,11 @@
 - Project: Onyx (`onyx`)
 - Website: [https://app.onyx.org/](https://app.onyx.org/)
 - Lifecycle: active (Tier 1, dead)
-- Generated: 2026-06-11T01:35:12.669Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-11T12:12:09.311Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: ethereum
 - Contract surface: 16 unique implementations (42 raw deployments)
-- DeFi Llama TVL: $58,891,762.00
+- DeFi Llama TVL: $46,612,024.00
 - On-chain TVL (included contracts): $384,427,279.69
 - TVL by chain: Ethereum $384,427,279.69
 
@@ -29,11 +29,11 @@ The Lending family relies on the OnyxDAORegistry for configuration and access co
 - Unverified implementations: 2
 - Unique implementations: 16
 - Raw deployments: 42
-- Audits discovered: 0
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $384,427,279.69
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2022-03 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -90,6 +90,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [XCN-token-Certik-Audit-2022-03-06.pdf](https://github.com/chain/chain-token/blob/main/XCN-token-Certik-Audit-2022-03-06.pdf) | CertiK | Audit | 2022-03 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -124,9 +125,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11640] XCN-token-Certik-Audit-2022-03-06.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

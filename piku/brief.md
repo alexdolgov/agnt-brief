@@ -5,11 +5,11 @@
 - Project: Piku (`piku`)
 - Website: [https://piku.co/](https://piku.co/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T01:51:44.344Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-11T12:11:36.883Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: ethereum
 - Contract surface: 29 unique implementations (52 raw deployments)
-- DeFi Llama TVL: $17,202,624.49
+- DeFi Llama TVL: $18,279,989.32
 - On-chain TVL (included contracts): $21,373,677.08
 - TVL by chain: Ethereum $21,373,677.08
 
@@ -29,11 +29,11 @@ The Piku family relies on the Oracle Module for asset pricing and the Token & Wo
 - Unverified implementations: 2
 - Unique implementations: 29
 - Raw deployments: 52
-- Audits discovered: 2
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $21,373,677.08
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
+- Latest audit: 2024-06 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -105,6 +105,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [* **Report**: <>](https://drive.google.com/file/d/1qXOajYt-r68EWirW8K2PKKSNVzEZTx38/view) | Omega Security | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [* **Report**: <>&#x20;](https://github.com/hats-finance/Inverter-Network-0xe47e52c4fea05e555920f1dcdcc6fb8eca103eeb/blob/main/report.md) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [* **Report:** <>&#x20;](https://github.com/InverterNetwork/contracts/blob/main/audits/2024-06-19-macro.pdf) | 0xMacro | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -133,7 +134,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -142,5 +143,6 @@ Zero-match audit list:
 
 - [1965] * **Report**: <>
 - [1967] * **Report**: <>&#x20;
+- [11968] * **Report:** <>&#x20;
 
 Fork inheritance lineage and inherited audits are included when available.

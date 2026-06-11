@@ -7,11 +7,11 @@
 - Project: ObeliskBTC (`obeliskbtc`)
 - Website: [https://obelisk.nodedao.com](https://obelisk.nodedao.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T01:31:09.367Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-11T12:12:10.720Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: ethereum
 - Contract surface: 19 unique implementations (32 raw deployments)
-- DeFi Llama TVL: $8,953,906.82
+- DeFi Llama TVL: $7,411,613.38
 - On-chain TVL (included contracts): $33,187,987.45
 - TVL by chain: Ethereum $33,187,987.45
 
@@ -31,11 +31,11 @@ The protocol consists of a single product family with no shared infrastructure a
 - Unverified implementations: 0
 - Unique implementations: 19
 - Raw deployments: 32
-- Audits discovered: 0
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $33,187,987.45
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $33,187,987.45 represents exposure in a protocol with declining activity.
 
@@ -95,6 +95,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [CertiK-Obelisk-final-20240805T174639Z.pdf](https://github.com/NodeDAO/audit/blob/main/CertiK-Obelisk-final-20240805T174639Z.pdf) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -125,9 +126,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11639] CertiK-Obelisk-final-20240805T174639Z.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

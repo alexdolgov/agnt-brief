@@ -416,13 +416,13 @@
 | [notional](./notional/) | $1.2M | 19.2% | $755.7K | declining | 6 | 79 | 2026-06-11 |
 | [nucleus](./nucleus/) | $996.4K | 50.0% | ? | active | 11 | 6 | 2026-05-26 |
 | [nuls](./nuls/) | $7.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 0 | 19 | 2026-06-11 |
+| [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 1 | 19 | 2026-06-11 |
 | [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
 | [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 1 | 40 | 2026-06-11 |
 | [odyssey-finance](./odyssey-finance/) | $10.2M | 0.0% | ? | active | 0 | 79 | 2026-06-11 |
 | [okcoin](./okcoin/) | $25.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [omnibtc](./omnibtc/) | $2.2M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
-| [onyx](./onyx/) | $384.4M | 0.0% | $384.4M | active | 0 | 16 | 2026-06-11 |
+| [onyx](./onyx/) | $384.4M | 0.0% | $384.4M | active | 1 | 16 | 2026-06-11 |
 | [open-ticketing-ecosystem](./open-ticketing-ecosystem/) | $3.3M | 0.0% | $3.3M | active | 0 | 24 | 2026-06-11 |
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-06-11 |
 | [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | declining | 0 | 103 | 2026-06-11 |
@@ -449,7 +449,7 @@
 | [pharaoh-exchange](./pharaoh-exchange/) | $38.7M | 0.0% | ? | active | 3 | 48 | 2026-06-11 |
 | [phoenix](./phoenix/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [pickle](./pickle/) | $2.9M | 2.7% | $2.9M | declining | 4 | 235 | 2026-06-11 |
-| [piku](./piku/) | $21.4M | 0.0% | $21.4M | active | 2 | 29 | 2026-06-11 |
+| [piku](./piku/) | $21.4M | 0.0% | $21.4M | active | 3 | 29 | 2026-06-11 |
 | [pionex](./pionex/) | $37.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [planet](./planet/) | $778.3M | 7.7% | $778.3M | declining | 1 | 34 | 2026-06-11 |
 | [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | active | 0 | 7 | 2026-06-11 |
@@ -477,7 +477,7 @@
 | [pumpspace](./pumpspace/) | $3.9M | 33.3% | ? | active | 3 | 666 | 2026-06-11 |
 | [punks-terminal](./punks-terminal/) | $1.5M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
 | [puzzleswaporg](./puzzleswaporg/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [qidao](./qidao/) | $3.0M | 0.0% | ? | declining | 0 | 298 | 2026-06-11 |
+| [qidao](./qidao/) | $2.6M | 0.0% | ? | declining | 1 | 298 | 2026-06-11 |
 | [radiant](./radiant/) | $1.1M | 31.6% | $515.0K | dead | 94 | 390 | 2026-05-26 |
 | [rain](./rain/) | $9.2M | 0.0% | ? | active | 1 | 28 | 2026-06-11 |
 | [rainbow-bridge](./rainbow-bridge/) | $2.1M | 0.0% | ? | declining | 0 | 2 | 2026-06-11 |
@@ -522,7 +522,7 @@
 | [sceptre-liquid](./sceptre-liquid/) | $20.0M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [scream](./scream/) | $1.3M | 0.0% | ? | dead | 1 | 1 | 2026-06-11 |
 | [scroll-bridge](./scroll-bridge/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 32 | 2026-05-31 |
-| [scrub-money](./scrub-money/) | $6.7M | 0.0% | ? | active | 0 | 19 | 2026-06-11 |
+| [scrub-money](./scrub-money/) | $7.2M | 0.0% | ? | active | 1 | 19 | 2026-06-11 |
 | [sdai](./sdai/) | $72.0M | 0.0% | ? | active | 0 | 91 | 2026-06-11 |
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 9.1% | $34.8K | dead | 5 | 99 | 2026-06-11 |
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-31 |

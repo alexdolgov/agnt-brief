@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "piku",
-  "generated_at": "2026-06-11T01:51:44.344Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-11T12:11:36.883Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "piku",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
     "coverage_pct": 0,
-    "total_audits": 2,
+    "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 17202624.48695,
+    "dl_tvl_usd": 18279989.32155,
     "tvl_usd": 21373677.08371292,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -48,12 +48,12 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2024-06",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
+      "stale": 1,
       "unknown": 2
     }
   },
@@ -1221,6 +1221,27 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11968,
+      "audit_key": "audit-11968",
+      "report_name": "* **Report:** <>&#x20;",
+      "report_url": "https://github.com/InverterNetwork/contracts/blob/main/audits/2024-06-19-macro.pdf",
+      "auditor": "0xMacro",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -1315,6 +1336,10 @@
       {
         "audit_id": 1967,
         "report_name": "* **Report**: <>&#x20;"
+      },
+      {
+        "audit_id": 11968,
+        "report_name": "* **Report:** <>&#x20;"
       }
     ],
     "inherited_remapped_matches": []

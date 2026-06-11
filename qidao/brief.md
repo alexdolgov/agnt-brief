@@ -7,11 +7,11 @@
 - Project: QiDao (`qidao`)
 - Website: [https://app.mai.finance](https://app.mai.finance)
 - Lifecycle: declining (Tier 0, 99.2% below peak)
-- Generated: 2026-06-11T02:08:51.965Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-11T12:11:09.128Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: arbitrum, avalanche, base, bsc, cronos, ethereum, fantom, fraxtal, gnosis, harmony, kava, linea, mantle, metis, moonbeam, moonriver, optimism, polygon, polygon-zkevm, zksync-era
 - Contract surface: 298 unique implementations (298 raw deployments)
-- DeFi Llama TVL: $3,042,769.70
+- DeFi Llama TVL: $2,641,554.94
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,11 +23,11 @@
 - Unverified implementations: 298
 - Unique implementations: 298
 - Raw deployments: 298
-- Audits discovered: 0
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -366,6 +366,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Here is the report](https://cybersecadvisor.org/) | Bramah Systems | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -386,9 +387,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11652] Here is the report
 
 Fork inheritance lineage and inherited audits are included when available.

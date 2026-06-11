@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "seamless-protocol",
-  "generated_at": "2026-06-10T20:59:14.863Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T02:36:09.628Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "seamless-protocol",

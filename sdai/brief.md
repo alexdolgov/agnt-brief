@@ -4,8 +4,8 @@
 
 - Project: sDAI (`sdai`)
 - Lifecycle: active (Tier 0, 40.8% below peak)
-- Generated: 2026-06-10T20:59:14.831Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:34:59.449Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: gnosis
 - Contract surface: 91 unique implementations (153 raw deployments)
 - DeFi Llama TVL: $71,997,196.51

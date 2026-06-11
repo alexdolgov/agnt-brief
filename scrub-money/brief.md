@@ -5,8 +5,8 @@
 - Project: Scrub Money (`scrub-money`)
 - Website: [https://scrub.money](https://scrub.money)
 - Lifecycle: active (Tier 0, 32.4% below peak)
-- Generated: 2026-06-10T20:59:14.812Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:34:59.600Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: arbitrum, kava
 - Contract surface: 19 unique implementations (19 raw deployments)
 - DeFi Llama TVL: $6,748,342.00

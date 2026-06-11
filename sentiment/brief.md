@@ -7,8 +7,8 @@
 - Project: Sentiment (`sentiment`)
 - Website: [https://app.sentiment.xyz?refCode=dcd82abec7](https://app.sentiment.xyz?refCode=dcd82abec7)
 - Lifecycle: dead (Tier 1, sunsetting)
-- Generated: 2026-06-10T20:59:14.895Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:38:07.578Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: arbitrum
 - Contract surface: 297 unique implementations (368 raw deployments)
 - DeFi Llama TVL: $1,203,461.26

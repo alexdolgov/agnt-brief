@@ -1,6 +1,6 @@
 # sdai — Contract Index
 
-93 unique implementations on gnosis · 178 deployments · 0 audited · 48 unaudited · 45 unverified
+91 unique implementations on gnosis · 153 deployments · 0 audited · 46 unaudited · 45 unverified
 
 ## adapter (7)
 
@@ -64,16 +64,14 @@
 | [AgaveswapV3Factory (2 deployments)](./gnosis-100/0x0cf086e8714571c85b3e88b541fcac763555b66f/) | gnosis | 2 deployments: gnosis [`0x0cf086...55b66f`](./gnosis-100/0x0cf086e8714571c85b3e88b541fcac763555b66f/); gnosis `0xa98c2e...d047c3` | ⚠️ Unaudited | Verified |
 | [WrappedAgTokenFactory](./gnosis-100/0x6c1878a83884b9f14a342c7d96fc00c9a0d434d2/) | gnosis | [`0x6c1878...d434d2`](./gnosis-100/0x6c1878a83884b9f14a342c7d96fc00c9a0d434d2/) | ⚠️ Unaudited | Verified |
 
-## token (9)
+## token (7)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AToken (6 deployments)](./gnosis-100/0x223fe000fc6ef0ed36576d912e506b5f572c7ac2/) | gnosis | 6 deployments: gnosis [`0x223fe0...2c7ac2`](./gnosis-100/0x223fe000fc6ef0ed36576d912e506b5f572c7ac2/); gnosis `0x3e2081...9ec2d2`; gnosis `0x8f0563...b9ee40`; gnosis `0x8f40f6...3a27ba`; gnosis `0xc8270d...e23725`; gnosis `0xdc77a0...92f381` | ⚠️ Unaudited | Verified |
 | [NFTDescriptor](./gnosis-100/0xedc96ca776c0336cf3924dbfd1d0a54fbba05cf1/) | gnosis | [`0xedc96c...a05cf1`](./gnosis-100/0xedc96ca776c0336cf3924dbfd1d0a54fbba05cf1/) | ⚠️ Unaudited | Verified |
 | [NonfungibleTokenPositionDescriptor](./gnosis-100/0x5ad43460308287189cf7207f7750373649137bed/) | gnosis | [`0x5ad434...137bed`](./gnosis-100/0x5ad43460308287189cf7207f7750373649137bed/) | ⚠️ Unaudited | Verified |
 | [StableDebtToken (6 deployments)](./gnosis-100/0x059c47cdad2c96ca5551921124b75b82119bf73a/) | gnosis | 6 deployments: gnosis [`0x059c47...9bf73a`](./gnosis-100/0x059c47cdad2c96ca5551921124b75b82119bf73a/); gnosis `0x100bd9...7ec7c3`; gnosis `0x3eb706...ddfdf4`; gnosis `0x5d9a99...c7dc09`; gnosis `0xeb5767...658af6`; gnosis `0xfcdd91...cd3d23` | ⚠️ Unaudited | Verified |
 | [StakedAgave](./gnosis-100/0x2e91cd1bf5ab2104633112ef35a7eb6998ec2695/) | gnosis | [`0x2e91cd...ec2695`](./gnosis-100/0x2e91cd1bf5ab2104633112ef35a7eb6998ec2695/) | ⚠️ Unaudited | Verified |
-| [StaticATokenLM (19 deployments)](./gnosis-100/0x01ac9005f8446af28b065af87216b85faac5f6e2/) | gnosis | 19 deployments: gnosis [`0x01ac90...c5f6e2`](./gnosis-100/0x01ac9005f8446af28b065af87216b85faac5f6e2/); gnosis `0x110e2d...3ec78b`; gnosis `0x13f2b8...9de3fb`; gnosis `0x20e5eb...43461f`; gnosis `0x248ce8...2acc13`; gnosis `0x365d2e...f35322`; gnosis `0x3d938f...5a9bbc`; gnosis `0x4a0c32...7e8adb`; gnosis `0x6d9dc1...949f22`; gnosis `0x858227...fcb2f0`; gnosis `0x8e0dbc...2bc339`; gnosis `0x9a4dcb...8631ea`; gnosis `0x9ae6d6...5c97ed`; gnosis `0xa357ef...0ae61e`; gnosis `0xa95027...25cc68`; gnosis `0xc15933...19d314`; gnosis `0xce02a2...d8daff`; gnosis `0xd28490...ce4ed2`; gnosis `0xe22b9b...e0ef13` | ⚠️ Unaudited | Verified |
 | [VariableDebtToken (6 deployments)](./gnosis-100/0x0d23359086cbdda2f49e29de370ab85b451e81dd/) | gnosis | 6 deployments: gnosis [`0x0d2335...1e81dd`](./gnosis-100/0x0d23359086cbdda2f49e29de370ab85b451e81dd/); gnosis `0x25fa1d...376471`; gnosis `0x563062...a35789`; gnosis `0x954632...7325b0`; gnosis `0xa476a5...034fd7`; gnosis `0xf63736...f3a2c4` | ⚠️ Unaudited | Verified |
 | [WETHGateway](./gnosis-100/0x4e1461882e72232807f7a65081321b543e2e52c0/) | gnosis | [`0x4e1461...2e52c0`](./gnosis-100/0x4e1461882e72232807f7a65081321b543e2e52c0/) | ⚠️ Unaudited | Verified |
 | [WrappedAgTokenUpgradeable (3 deployments)](./gnosis-100/0x78eb5d51d620ff9e6c70ef02208e5ac7079c304b/) | gnosis | 3 deployments: gnosis [`0x78eb5d...9c304b`](./gnosis-100/0x78eb5d51d620ff9e6c70ef02208e5ac7079c304b/); gnosis `0xa1d0ad...a6bdc5`; gnosis `0xfc4c44...b0d716` | ⚠️ Unaudited | Verified |

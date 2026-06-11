@@ -19,25 +19,26 @@
 | [ZFStableSwapTwoPoolInfo](./sonic-146/0x9829e43951319848e0a78540ff1de77ac20a7f6c/) | sonic | [`0x9829e4...0a7f6c`](./sonic-146/0x9829e43951319848e0a78540ff1de77ac20a7f6c/) | ⚠️ Unaudited | Verified |
 | [ZFV3PoolDeployer (2 deployments)](./sonic-146/0x0ff16867bcac3c5fdc2dc73558e3f8e2ed89eea2/) | sonic | 2 deployments: sonic [`0x0ff168...89eea2`](./sonic-146/0x0ff16867bcac3c5fdc2dc73558e3f8e2ed89eea2/); zksync-era `0x57d28a...ad4cfb` | ⚠️ Unaudited | Verified |
 
-## governance (3)
+## governance (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [GnosisSafeProxy (2 deployments)](./sonic-146/0x4780ea7fc1fc4c51732ab31d797d4e24757c2262/) | sonic | 2 deployments: sonic [`0x4780ea...7c2262`](./sonic-146/0x4780ea7fc1fc4c51732ab31d797d4e24757c2262/); sonic `0x825e62...ff1e13` | ⚠️ Unaudited | Verified |
-| [NonfungiblePositionManager (2 deployments)](./sonic-146/0x2e11640ee1368f2cd90c36607760a274a30094f5/) | sonic | 2 deployments: sonic [`0x2e1164...0094f5`](./sonic-146/0x2e11640ee1368f2cd90c36607760a274a30094f5/); zksync-era `0xe8a9c6...683860` | ⚠️ Unaudited | Verified |
 | [ProxyAdmin](./sonic-146/0x486d7c009b78310528aca11574ec816d2fdef71b/) | sonic | [`0x486d7c...def71b`](./sonic-146/0x486d7c009b78310528aca11574ec816d2fdef71b/) | ⚠️ Unaudited | Verified |
 
-## operational_periphery (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [ZFRewardDistributor (6 deployments)](./sonic-146/0x66349deb1eb7d855894bfde287ac68d0eb2344fe/) | sonic | 6 deployments: sonic [`0x66349d...2344fe`](./sonic-146/0x66349deb1eb7d855894bfde287ac68d0eb2344fe/); sonic `0x78caac...dbc5d5`; sonic `0x807fa0...3e795f`; sonic `0xb2d779...b74de5`; sonic `0xda85e0...d23e8d`; sonic `0xfcc8d3...5d3164` | ⚠️ Unaudited | Verified |
-
-## periphery (3)
+## operational_periphery (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [Multicall3](./sonic-146/0x3be99db246c81df2bd8dc0d708e03f64e1a84917/) | sonic | [`0x3be99d...a84917`](./sonic-146/0x3be99db246c81df2bd8dc0d708e03f64e1a84917/) | ⚠️ Unaudited | Verified |
+| [NonfungiblePositionManager (2 deployments)](./sonic-146/0x2e11640ee1368f2cd90c36607760a274a30094f5/) | sonic | 2 deployments: sonic [`0x2e1164...0094f5`](./sonic-146/0x2e11640ee1368f2cd90c36607760a274a30094f5/); zksync-era `0xe8a9c6...683860` | ⚠️ Unaudited | Verified |
+| NonfungibleTokenPositionDescriptor | sonic | `0xf5fb98...2ae0d5` | ⚠️ Unaudited | Verified |
+| [ZFRewardDistributor (6 deployments)](./sonic-146/0x66349deb1eb7d855894bfde287ac68d0eb2344fe/) | sonic | 6 deployments: sonic [`0x66349d...2344fe`](./sonic-146/0x66349deb1eb7d855894bfde287ac68d0eb2344fe/); sonic `0x78caac...dbc5d5`; sonic `0x807fa0...3e795f`; sonic `0xb2d779...b74de5`; sonic `0xda85e0...d23e8d`; sonic `0xfcc8d3...5d3164` | ⚠️ Unaudited | Verified |
+
+## periphery (2)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
 | [QuoterV2](./sonic-146/0x3a59bfe426f81726c31280aaeae1125f50ca1caa/) | sonic | [`0x3a59bf...ca1caa`](./sonic-146/0x3a59bfe426f81726c31280aaeae1125f50ca1caa/) | ⚠️ Unaudited | Verified |
 | [TickLens](./sonic-146/0x7834387b0f48c0a2bf9c8fab696e2ab2587ca5ac/) | sonic | [`0x783438...7ca5ac`](./sonic-146/0x7834387b0f48c0a2bf9c8fab696e2ab2587ca5ac/) | ⚠️ Unaudited | Verified |
 
@@ -55,12 +56,6 @@
 | [ZFStableSwapFactory](./sonic-146/0x447fd2fab1985bb80b477cf186f216fc72b90c50/) | sonic | [`0x447fd2...b90c50`](./sonic-146/0x447fd2fab1985bb80b477cf186f216fc72b90c50/) | ⚠️ Unaudited | Verified |
 | [ZFStableSwapLPFactory](./sonic-146/0x5271d6f66d4d881421fc2b1c48d4f99a9ba1d04c/) | sonic | [`0x5271d6...a1d04c`](./sonic-146/0x5271d6f66d4d881421fc2b1c48d4f99a9ba1d04c/) | ⚠️ Unaudited | Verified |
 | [ZFV3Factory (2 deployments)](./sonic-146/0x6d977fcc945261b80d128a5a91cbf9a9148032a4/) | sonic | 2 deployments: sonic [`0x6d977f...8032a4`](./sonic-146/0x6d977fcc945261b80d128a5a91cbf9a9148032a4/); zksync-era `0x88add6...cd7850` | ⚠️ Unaudited | Verified |
-
-## token (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| NonfungibleTokenPositionDescriptor | sonic | `0xf5fb98...2ae0d5` | ⚠️ Unaudited | Verified |
 
 ## unknown (78)
 

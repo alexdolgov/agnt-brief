@@ -7,8 +7,8 @@
 - Project: Zircuit Staking (`zircuit-staking`)
 - Website: [https://app.zircuit.com/liquidity-hub](https://app.zircuit.com/liquidity-hub)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:19.535Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:29:32.418Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: base, ethereum
 - Contract surface: 20 unique implementations (23 raw deployments)
 - DeFi Llama TVL: $54,157,008.72

@@ -7,8 +7,8 @@
 - Project: zkLink Nova (`zklink-nova`)
 - Website: [https://zklink.io](https://zklink.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:19.617Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:27:20.683Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: arbitrum, base, blast, ethereum, linea, manta, mantle, merlin, optimism, scroll, zksync-era
 - Contract surface: 380 unique implementations (843 raw deployments)
 - DeFi Llama TVL: $12,953,291.66

@@ -1,6 +1,6 @@
 # zklink-nova — Contract Index
 
-381 unique implementations across 11 chains · 848 deployments · 17 audited · 94 unaudited · 270 unverified
+380 unique implementations across 11 chains · 843 deployments · 16 audited · 94 unaudited · 270 unverified
 
 ## adapter (7)
 
@@ -14,7 +14,7 @@
 | [RNethOFTAdapter](./ethereum-1/0xcea3681131dd151ee72a5c8dbba555cb8b8ded56/) | ethereum | [`0xcea368...8ded56`](./ethereum-1/0xcea3681131dd151ee72a5c8dbba555cb8b8ded56/) | ⚠️ Unaudited | Verified |
 | [Router (5 deployments)](./mantle-5000/0x8970c235a4e4d8e0ae5c340549efda5db20d2b44/) | mantle | 5 deployments: mantle [`0x8970c2...0d2b44`](./mantle-5000/0x8970c235a4e4d8e0ae5c340549efda5db20d2b44/); mantle `0x9355c7...23bf1b`; mantle `0x9c2407...08950d`; mantle `0xb230db...75bf38`; mantle `0xea02de...dc4583` | ⚠️ Unaudited | Verified |
 
-## core_logic (11)
+## core_logic (10)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -27,7 +27,6 @@
 | [PoolConfig (2 deployments)](./ethereum-1/0x54f661260dd47b6178cf4f6f3e90cc30d8d1ea62/) | ethereum | 2 deployments: ethereum [`0x54f661...d1ea62`](./ethereum-1/0x54f661260dd47b6178cf4f6f3e90cc30d8d1ea62/); ethereum `0xea66a6...ad497a` | ⚠️ Unaudited | Verified |
 | [RestakingPool (3 deployments)](./ethereum-1/0x0d6f764452ca43eb8bd22788c9db43e4b5a725bc/) | ethereum | 3 deployments: ethereum [`0x0d6f76...a725bc`](./ethereum-1/0x0d6f764452ca43eb8bd22788c9db43e4b5a725bc/); ethereum `0x512d8b...90285b`; ethereum `0x80c1ef...6bd0fc` | ⚠️ Unaudited | Verified |
 | [StrategyManager (2 deployments)](./ethereum-1/0x36f57f0379cb36e54248d219954274ee86a16e16/) | ethereum | 2 deployments: ethereum [`0x36f57f...a16e16`](./ethereum-1/0x36f57f0379cb36e54248d219954274ee86a16e16/); ethereum `0x995f4e...8d5e38` | ⚠️ Unaudited | Verified |
-| [Vault (5 deployments)](./mantle-5000/0x08231bcd66c5e4d2d1d4ad2bc24bfb4477af27b3/) | mantle | 5 deployments: mantle [`0x08231b...af27b3`](./mantle-5000/0x08231bcd66c5e4d2d1d4ad2bc24bfb4477af27b3/); mantle `0x2e488d...50dae1`; mantle `0x88ceb7...533fd8`; mantle `0xac5b26...253daf`; mantle `0xf627c5...263d87` | ⚠️ Unaudited | Verified |
 | [VaultManager (3 deployments)](./ethereum-1/0x3ad85a55904b8ef62f30b5811717d6982a99f700/) | ethereum | 3 deployments: ethereum [`0x3ad85a...99f700`](./ethereum-1/0x3ad85a55904b8ef62f30b5811717d6982a99f700/); ethereum `0xdb4209...a40913`; ethereum `0xdbbad2...04057a` | ⚠️ Unaudited | Verified |
 
 ## governance (7)
@@ -65,7 +64,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [EmptyVerifier (27 deployments)](./optimism-10/0x119b9459d9119d07c23ad06778aeabec804fd1a2/) | optimism | 27 deployments: ethereum `0x7f9de3...8a4c0d`; ethereum `0xbc28d1...94c4bd`; ethereum `0xd6c54b...829a08`; ethereum `0xe38f8b...686dba`; optimism [`0x119b94...4fd1a2`](./optimism-10/0x119b9459d9119d07c23ad06778aeabec804fd1a2/); optimism `0x83bc73...c0055c`; optimism `0xbb205c...275adc`; optimism `0xcdcdf6...80613d`; optimism `0xe89635...99cc13`; manta `0x437a10...2bbcac`; mantle `0x527f61...53dd5d`; mantle `0xd8428a...f1bce7`; base `0x4c5629...27c563`; base `0x624658...c283ab`; base `0x87743f...9a43fb`; base `0xb6b969...c3d78b`; base `0xbb205c...275adc`; base `0xef7007...e80cc7`; base `0xf63e81...e0c3ea`; base `0xfa7fb7...21a89c`; arbitrum `0x273d59...7583c0`; arbitrum `0x3fc412...0f92ec`; arbitrum `0xa84860...256cd6`; arbitrum `0xe54cac...34324f`; arbitrum `0xf9c947...8eee64`; linea `0x3d70dc...3a441e`; linea `0xf7f67b...d8cb8c` | ✅ Audited | Verified |
+| [EmptyVerifier (27 deployments)](./optimism-10/0x119b9459d9119d07c23ad06778aeabec804fd1a2/) | optimism | 27 deployments: ethereum `0x7f9de3...8a4c0d`; ethereum `0xbc28d1...94c4bd`; ethereum `0xd6c54b...829a08`; ethereum `0xe38f8b...686dba`; optimism [`0x119b94...4fd1a2`](./optimism-10/0x119b9459d9119d07c23ad06778aeabec804fd1a2/); optimism `0x83bc73...c0055c`; optimism `0xbb205c...275adc`; optimism `0xcdcdf6...80613d`; optimism `0xe89635...99cc13`; manta `0x437a10...2bbcac`; mantle `0x527f61...53dd5d`; mantle `0xd8428a...f1bce7`; base `0x4c5629...27c563`; base `0x624658...c283ab`; base `0x87743f...9a43fb`; base `0xb6b969...c3d78b`; base `0xbb205c...275adc`; base `0xef7007...e80cc7`; base `0xf63e81...e0c3ea`; base `0xfa7fb7...21a89c`; arbitrum `0x273d59...7583c0`; arbitrum `0x3fc412...0f92ec`; arbitrum `0xa84860...256cd6`; arbitrum `0xe54cac...34324f`; arbitrum `0xf9c947...8eee64`; linea `0x3d70dc...3a441e`; linea `0xf7f67b...d8cb8c` | ⚠️ Unaudited | Verified |
 | [Verifier (22 deployments)](./linea-59144/0x0163a4ce18a566730c390b0e0fb5c78bcdd88a72/) | linea | 22 deployments: ethereum `0x437a10...2bbcac`; ethereum `0x5715de...b8ce05`; optimism `0x5715de...b8ce05`; base `0x5715de...b8ce05`; arbitrum `0x235118...b6b68f`; arbitrum `0x5715de...b8ce05`; arbitrum `0x6d6ce5...927962`; arbitrum `0x6e21b3...69274a`; linea [`0x0163a4...d88a72`](./linea-59144/0x0163a4ce18a566730c390b0e0fb5c78bcdd88a72/); linea `0x161f4b...0477f0`; linea `0x413552...374b1d`; linea `0x437a10...2bbcac`; linea `0x683669...2216f5`; linea `0x803460...f2809b`; linea `0x80d12a...1674d5`; linea `0x902c38...400458`; linea `0xbfa352...63283f`; linea `0xcdcdf6...80613d`; linea `0xd784d7...455657`; linea `0xe946ab...ea39d0`; linea `0xef7007...e80cc7`; linea `0xfe3e63...96709f` | ⚠️ Unaudited | Verified |
 | [ZkLinkPeriphery (39 deployments)](./ethereum-1/0x070fc04f6ce2cd1ffbc2ae1d6a381e46f467284f/) | ethereum | 39 deployments: ethereum [`0x070fc0...67284f`](./ethereum-1/0x070fc04f6ce2cd1ffbc2ae1d6a381e46f467284f/); ethereum `0x446fca...3c8007`; ethereum `0x4ac2cc...bee425`; ethereum `0x5bc75b...a73e61`; ethereum `0x5f58bc...fef28c`; ethereum `0xa107b6...a689d7`; ethereum `0xd784d7...455657`; optimism `0x664e1c...a83e10`; optimism `0x80d12a...1674d5`; optimism `0xd784d7...455657`; optimism `0xe2510e...25ddb4`; optimism `0xe469c1...6d344f`; optimism `0xf63e81...e0c3ea`; manta `0xdd5097...7a3545`; mantle `0xf04af2...9c84f2`; base `0x21fe89...86c3b8`; base `0x31f0c8...7f3611`; base `0x502c84...34af12`; base `0x703651...2a62a2`; base `0xd784d7...455657`; arbitrum `0x09cb6c...ee1c72`; arbitrum `0x0ed6e9...63b3e5`; arbitrum `0x1ba934...1b4172`; arbitrum `0x30b2c7...e81ad9`; arbitrum `0x3203e8...307352`; arbitrum `0x4563c3...cfc027`; arbitrum `0x803460...f2809b`; arbitrum `0x928732...88bc8d`; arbitrum `0xd784d7...455657`; arbitrum `0xe89635...99cc13`; linea `0x119b94...4fd1a2`; linea `0x47767b...d783c8`; linea `0x5bd512...326eaa`; linea `0x649dfa...7cd82d`; linea `0x975a87...6ef628`; linea `0xa6df49...55d1f6`; linea `0xba6163...9d7f66`; linea `0xe38f8b...686dba`; linea `0xe75ef0...5b8afb` | ✅ Audited | Verified |
 

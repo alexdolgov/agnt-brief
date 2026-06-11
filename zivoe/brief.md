@@ -7,8 +7,8 @@
 - Project: Zivoe (`zivoe`)
 - Website: [https://zivoe.com/](https://zivoe.com/)
 - Lifecycle: declining (Tier 0, 83.4% below peak)
-- Generated: 2026-06-10T20:59:19.539Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:26:12.877Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: ethereum
 - Contract surface: 31 unique implementations (46 raw deployments)
 - DeFi Llama TVL: $13,834,786.44

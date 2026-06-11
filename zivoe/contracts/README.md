@@ -1,6 +1,6 @@
 # zivoe — Contract Index
 
-32 unique implementations on ethereum · 47 deployments · 18 audited · 13 unaudited · 1 unverified
+31 unique implementations on ethereum · 46 deployments · 13 audited · 17 unaudited · 1 unverified
 
 ## adapter (1)
 
@@ -13,14 +13,14 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [ZivoeTranches](./ethereum-1/0x6282b480f0b989f0b603f821a840d964bc4715a8/) | ethereum | [`0x6282b4...4715a8`](./ethereum-1/0x6282b480f0b989f0b603f821a840d964bc4715a8/) | ✅ Audited | Verified |
-| [ZivoeTrancheToken (2 deployments)](./ethereum-1/0x7aa5bf30042b2145b9f0629ea68de55b42ad3bb6/) | ethereum | 2 deployments: ethereum [`0x7aa5bf...ad3bb6`](./ethereum-1/0x7aa5bf30042b2145b9f0629ea68de55b42ad3bb6/); ethereum `0xa923fa...ab6dd0` | ✅ Audited | Verified |
+| [ZivoeTrancheToken (2 deployments)](./ethereum-1/0x7aa5bf30042b2145b9f0629ea68de55b42ad3bb6/) | ethereum | 2 deployments: ethereum [`0x7aa5bf...ad3bb6`](./ethereum-1/0x7aa5bf30042b2145b9f0629ea68de55b42ad3bb6/); ethereum `0xa923fa...ab6dd0` | ⚠️ Unaudited | Verified |
 | [ZivoeVault](./ethereum-1/0x94babe9ee75c38034920bc6ed42748e8eefbedd4/) | ethereum | [`0x94babe...fbedd4`](./ethereum-1/0x94babe9ee75c38034920bc6ed42748e8eefbedd4/) | ✅ Audited | Verified |
 
 ## governance (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [ZivoeGovernorV2](./ethereum-1/0x94ac60103b6b0df0cd828086b16eff2a3e32a71e/) | ethereum | [`0x94ac60...32a71e`](./ethereum-1/0x94ac60103b6b0df0cd828086b16eff2a3e32a71e/) | ✅ Audited | Verified |
+| [ZivoeGovernorV2](./ethereum-1/0x94ac60103b6b0df0cd828086b16eff2a3e32a71e/) | ethereum | [`0x94ac60...32a71e`](./ethereum-1/0x94ac60103b6b0df0cd828086b16eff2a3e32a71e/) | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (1)
 
@@ -28,13 +28,12 @@
 |---|---|---|---|---|
 | [ZivoeRewardsVesting](./ethereum-1/0x520f2b5766176fd94b62507c848599b6251168f6/) | ethereum | [`0x520f2b...1168f6`](./ethereum-1/0x520f2b5766176fd94b62507c848599b6251168f6/) | ✅ Audited | Verified |
 
-## token (3)
+## token (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [ATokenInstance](./ethereum-1/0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c/) | ethereum | [`0x98c23e...e16f5c`](./ethereum-1/0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c/) | ⚠️ Unaudited | Verified |
-| [WrappedMToken](./ethereum-1/0x437cc33344a0b27a429f795ff6b469c72698b291/) | ethereum | [`0x437cc3...98b291`](./ethereum-1/0x437cc33344a0b27a429f795ff6b469c72698b291/) | ⚠️ Unaudited | Verified |
-| [ZivoeToken](./ethereum-1/0xe412d46a0fbd567332b7689cfffe1f8a4f19a9d2/) | ethereum | [`0xe412d4...19a9d2`](./ethereum-1/0xe412d46a0fbd567332b7689cfffe1f8a4f19a9d2/) | ✅ Audited | Verified |
+| [ZivoeToken](./ethereum-1/0xe412d46a0fbd567332b7689cfffe1f8a4f19a9d2/) | ethereum | [`0xe412d4...19a9d2`](./ethereum-1/0xe412d46a0fbd567332b7689cfffe1f8a4f19a9d2/) | ⚠️ Unaudited | Verified |
 
 ## unknown (23)
 
@@ -57,9 +56,9 @@
 | [OCY_OUSD (2 deployments)](./ethereum-1/0x373a78d1ba7269a9164ea78c429fde90024270bb/) | ethereum | 2 deployments: ethereum [`0x373a78...4270bb`](./ethereum-1/0x373a78d1ba7269a9164ea78c429fde90024270bb/); ethereum `0xdcfb98...6ae1d6` | ⚠️ Unaudited | Verified |
 | [Safe (2 deployments)](./ethereum-1/0x50c72ff8c5e7498f64beaeb8ed5be83cabeb0fd5/) | ethereum | 2 deployments: ethereum [`0x50c72f...eb0fd5`](./ethereum-1/0x50c72ff8c5e7498f64beaeb8ed5be83cabeb0fd5/); ethereum `0xc8d624...d5f026` | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0xd4b4e6...29c6d2` | ❓ Unverified | Unverified |
-| [ZivoeDAO](./ethereum-1/0xb65a66621d7de34afec9b9ac0755133051550dd7/) | ethereum | [`0xb65a66...550dd7`](./ethereum-1/0xb65a66621d7de34afec9b9ac0755133051550dd7/) | ✅ Audited | Verified |
+| [ZivoeDAO](./ethereum-1/0xb65a66621d7de34afec9b9ac0755133051550dd7/) | ethereum | [`0xb65a66...550dd7`](./ethereum-1/0xb65a66621d7de34afec9b9ac0755133051550dd7/) | ⚠️ Unaudited | Verified |
 | [ZivoeGlobals](./ethereum-1/0xea537eb0bbcc7783bdf7c595bf9371984583da66/) | ethereum | [`0xea537e...83da66`](./ethereum-1/0xea537eb0bbcc7783bdf7c595bf9371984583da66/) | ✅ Audited | Verified |
 | [ZivoeITO](./ethereum-1/0xe590233c22e81a79a1768ab8c8597b7a55c52aba/) | ethereum | [`0xe59023...c52aba`](./ethereum-1/0xe590233c22e81a79a1768ab8c8597b7a55c52aba/) | ✅ Audited | Verified |
 | [ZivoeRewards (3 deployments)](./ethereum-1/0x0d45c292bacdc47ce850e4c83a2fa2e8509ded5d/) | ethereum | 3 deployments: ethereum [`0x0d45c2...9ded5d`](./ethereum-1/0x0d45c292bacdc47ce850e4c83a2fa2e8509ded5d/); ethereum `0xb397aa...6b2dce`; ethereum `0xcacdb1...78aa7c` | ✅ Audited | Verified |
-| [ZivoeTLC](./ethereum-1/0xe1a68a0404426d6bbc459794e576640dee3fc916/) | ethereum | [`0xe1a68a...3fc916`](./ethereum-1/0xe1a68a0404426d6bbc459794e576640dee3fc916/) | ✅ Audited | Verified |
+| [ZivoeTLC](./ethereum-1/0xe1a68a0404426d6bbc459794e576640dee3fc916/) | ethereum | [`0xe1a68a...3fc916`](./ethereum-1/0xe1a68a0404426d6bbc459794e576640dee3fc916/) | ⚠️ Unaudited | Verified |
 | [ZivoeYDL](./ethereum-1/0xfb7920b55887840643e20952f22eb18ddc474b2b/) | ethereum | [`0xfb7920...474b2b`](./ethereum-1/0xfb7920b55887840643e20952f22eb18ddc474b2b/) | ✅ Audited | Verified |

@@ -5,8 +5,8 @@
 - Project: Zoo Finance (`zoo-finance`)
 - Website: [https://zoofi.io](https://zoofi.io)
 - Lifecycle: active (Tier 0, 55.7% below peak)
-- Generated: 2026-06-10T20:59:19.633Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:28:14.836Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: arbitrum, base, bsc, sei
 - Contract surface: 58 unique implementations (72 raw deployments)
 - DeFi Llama TVL: $41,364,453.65

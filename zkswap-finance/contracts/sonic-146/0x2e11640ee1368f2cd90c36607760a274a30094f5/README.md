@@ -4,7 +4,7 @@
 |---|---|
 | Chain | sonic (146) |
 | Address | `0x2e11640ee1368f2cd90c36607760a274a30094f5` |
-| Role | governance |
+| Role | operational_periphery |
 | Origin | native |
 | Audited | No |
 | Audits | n/a |

@@ -5,8 +5,8 @@
 - Project: Sovryn Bridge (`sovryn-bridge`)
 - Website: [https://alpha.sovryn.app](https://alpha.sovryn.app)
 - Lifecycle: active (Tier 0, 85.5% below peak)
-- Generated: 2026-06-10T20:59:16.269Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:53:18.237Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: ethereum
 - Contract surface: 47 unique implementations (50 raw deployments)
 - DeFi Llama TVL: $2,869,052.79

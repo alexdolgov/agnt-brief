@@ -7,8 +7,8 @@
 - Project: Sorare Bridge (`sorare-bridge`)
 - Website: [https://sorare.com/](https://sorare.com/)
 - Lifecycle: declining (Tier 0, 84.7% below peak)
-- Generated: 2026-06-10T20:59:16.259Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:53:17.570Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: ethereum
 - Contract surface: 58 unique implementations (210 raw deployments)
 - DeFi Llama TVL: $3,952,453.46

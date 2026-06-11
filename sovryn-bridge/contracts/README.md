@@ -15,7 +15,7 @@
 |---|---|---|---|---|
 | [AdminUpgradeabilityProxy](./ethereum-1/0x33c0d33a0d4312562ad622f91d12b0ac47366ee1/) | ethereum | [`0x33c0d3...366ee1`](./ethereum-1/0x33c0d33a0d4312562ad622f91d12b0ac47366ee1/) | ⚠️ Unaudited | Verified |
 
-## token (1)
+## registry (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|

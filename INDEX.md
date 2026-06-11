@@ -551,11 +551,11 @@
 | [sonic-gateway](./sonic-gateway/) | $7.8M | 0.0% | $7.8M | active | 0 | 1 | 2026-06-11 |
 | [sophon-bridge](./sophon-bridge/) | $5.5M | 0.0% | $5.5M | active | 8 | 10 | 2026-06-11 |
 | [sophon-farm](./sophon-farm/) | $6.8M | 100.0% | ? | active | 9 | 1 | 2026-06-11 |
-| [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | declining | 0 | 58 | 2026-06-10 |
-| [sovryn-bridge](./sovryn-bridge/) | $2.9M | 0.0% | ? | active | 0 | 47 | 2026-06-10 |
-| [sovryn](./sovryn/) | $38.3M | 0.0% | ? | unknown | 11 | 0 | 2026-06-10 |
-| [spacefi](./spacefi/) | $1.5M | 0.0% | ? | active | 5 | 38 | 2026-06-10 |
-| [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 8 | 0 | 2026-06-10 |
+| [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | declining | 0 | 58 | 2026-06-11 |
+| [sovryn-bridge](./sovryn-bridge/) | $2.9M | 0.0% | ? | active | 0 | 47 | 2026-06-11 |
+| [sovryn](./sovryn/) | $38.3M | 0.0% | ? | unknown | 11 | 0 | 2026-06-11 |
+| [spacefi](./spacefi/) | $1.5M | 0.0% | ? | active | 5 | 38 | 2026-06-11 |
+| [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 8 | 0 | 2026-06-11 |
 | [spectra](./spectra/) | $10.5M | 0.0% | $10.5M | active | 3 | 214 | 2026-06-10 |
 | [sperax](./sperax/) | $14.2M | 47.1% | $2.6M | declining | 9 | 142 | 2026-06-10 |
 | [sphere](./sphere/) | $229.4M | 0.0% | $229.4M | active | 0 | 217 | 2026-06-10 |

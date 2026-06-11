@@ -5,8 +5,8 @@
 - Project: Sovryn (`sovryn`)
 - Website: [https://sovryn.com/](https://sovryn.com/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:16.266Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:53:18.371Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $38,321,665.00

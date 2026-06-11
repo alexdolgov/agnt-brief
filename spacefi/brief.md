@@ -5,8 +5,8 @@
 - Project: SpaceFi (`spacefi`)
 - Website: [https://spacefi.io](https://spacefi.io)
 - Lifecycle: active (Tier 0, 86.8% below peak)
-- Generated: 2026-06-10T20:59:16.274Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:55:34.676Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: scroll, zksync-era
 - Contract surface: 38 unique implementations (38 raw deployments)
 - DeFi Llama TVL: $1,459,366.00

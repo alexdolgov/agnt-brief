@@ -5,8 +5,8 @@
 - Project: SparkDEX (`sparkdex`)
 - Website: [https://sparkdex.ai/home](https://sparkdex.ai/home)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:16.280Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:53:18.158Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $29,407,095.00

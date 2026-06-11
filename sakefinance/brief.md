@@ -5,8 +5,8 @@
 - Project: SakeFinance (`sakefinance`)
 - Website: [https://app.sakefinance.com/](https://app.sakefinance.com/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:12.202Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:27:43.416Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $2,389,025.93

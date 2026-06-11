@@ -5,8 +5,8 @@
 - Project: Safe (`safe`)
 - Website: [https://safe.global/](https://safe.global/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:12.198Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:29:35.998Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $99,267,282.27

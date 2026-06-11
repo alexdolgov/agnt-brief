@@ -7,8 +7,8 @@
 - Project: Rumpel Labs (`rumpel-labs`)
 - Website: [https://www.rumpel.xyz](https://www.rumpel.xyz)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:12.153Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:29:39.802Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: ethereum
 - Contract surface: 115 unique implementations (316 raw deployments)
 - DeFi Llama TVL: $1,892,481.62

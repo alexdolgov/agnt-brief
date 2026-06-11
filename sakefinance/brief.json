@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sakefinance",
-  "generated_at": "2026-06-10T20:59:12.202Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T02:27:43.416Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {

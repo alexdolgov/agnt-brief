@@ -5,8 +5,8 @@
 - Project: Rysk Finance (`rysk-finance`)
 - Website: [https://app.rysk.finance/join?code=DEFILLAMA](https://app.rysk.finance/join?code=DEFILLAMA)
 - Lifecycle: active (Tier 0, 17% below peak)
-- Generated: 2026-06-10T20:59:12.187Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:26:35.002Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: arbitrum, ethereum, hyperliquid
 - Contract surface: 186 unique implementations (770 raw deployments)
 - DeFi Llama TVL: $57,743,924.00

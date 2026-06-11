@@ -509,11 +509,11 @@
 | [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [royco-protocol](./royco-protocol/) | $7.2 | 0.0% | $7.2 | active | 0 | 14 | 2026-06-11 |
 | [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 15 | 2026-05-31 |
-| [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-06-10 |
-| [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 0 | 186 | 2026-06-10 |
-| [saber](./saber/) | $4.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [safe](./safe/) | $99.3M | 0.0% | ? | active | 18 | 1 | 2026-06-10 |
-| [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-10 |
+| [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-06-11 |
+| [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 0 | 186 | 2026-06-11 |
+| [saber](./saber/) | $4.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [safe](./safe/) | $99.3M | 0.0% | ? | active | 18 | 1 | 2026-06-11 |
+| [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-06-10 |
 | [satlayer](./satlayer/) | $289.5M | 4.5% | $287.2M | active | 12 | 311 | 2026-06-10 |
 | [satori-finance](./satori-finance/) | $40.9K | 0.0% | $40.9K | active | 1 | 40 | 2026-06-10 |

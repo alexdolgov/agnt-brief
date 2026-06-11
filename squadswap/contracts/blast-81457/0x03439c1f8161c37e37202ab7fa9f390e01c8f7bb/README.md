@@ -4,7 +4,7 @@
 |---|---|
 | Chain | blast (81457) |
 | Address | `0x03439c1f8161c37e37202ab7fa9f390e01c8f7bb` |
-| Role | governance |
+| Role | operational_periphery |
 | Origin | native |
 | Audited | Yes |
 | Audits | [audit.pdf](https://github.com/cyberscope-io/audits/blob/main/squadswap/v1/audit.pdf) |

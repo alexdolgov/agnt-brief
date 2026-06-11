@@ -5,8 +5,8 @@
 - Project: Sport.fun (`sport.fun`)
 - Website: [https://pro.sport.fun/login/?referral_code=UBJWCCSWOVU](https://pro.sport.fun/login/?referral_code=UBJWCCSWOVU)
 - Lifecycle: active (Tier 0, 48.6% below peak)
-- Generated: 2026-06-10T20:59:16.415Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:00:38.368Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: base
 - Contract surface: 1 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $3,682,014.46

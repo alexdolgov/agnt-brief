@@ -5,8 +5,8 @@
 - Project: SquadSwap (`squadswap`)
 - Website: [https://squadswap.com/](https://squadswap.com/)
 - Lifecycle: active (Tier 0, 92.9% below peak)
-- Generated: 2026-06-10T20:59:16.451Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:02:39.329Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: arbitrum, base, blast, bsc, optimism, polygon
 - Contract surface: 214 unique implementations (721 raw deployments)
 - DeFi Llama TVL: $1,525,876.00

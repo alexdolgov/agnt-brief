@@ -5,8 +5,8 @@
 - Project: Sprinter (`sprinter`)
 - Website: [https://sprinter.tech/](https://sprinter.tech/)
 - Lifecycle: active (Tier 0, 59.7% below peak)
-- Generated: 2026-06-10T20:59:16.418Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:02:55.720Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: base
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $940,717.31

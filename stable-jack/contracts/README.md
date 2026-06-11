@@ -8,7 +8,7 @@
 |---|---|---|---|---|
 | [DistributionSwapper (18 deployments)](./sonic-146/0x05d61aca7111e177ca0a03e7145f342494bfee01/) | sonic | 18 deployments: sonic [`0x05d61a...bfee01`](./sonic-146/0x05d61aca7111e177ca0a03e7145f342494bfee01/); sonic `0x14cedd...227230`; sonic `0x1bc06e...d86e52`; sonic `0x324a04...64527c`; sonic `0x3692b1...28d3a6`; sonic `0x3a15cc...4b53eb`; sonic `0x4cba4a...c338fd`; sonic `0x4ce11a...e7fb29`; sonic `0x58d02d...df52b2`; sonic `0x61b9bf...54dd5b`; sonic `0x633ff2...7b3b83`; sonic `0x67e199...24875d`; sonic `0x7f8a67...da3743`; sonic `0x9a7d08...19cf7b`; sonic `0xa55d93...891248`; sonic `0xa9d889...b67eb3`; sonic `0xb8c5b4...6b8b5d`; sonic `0xed801d...8678c5` | ⚠️ Unaudited | Verified |
 | [OSonicZapper (2 deployments)](./sonic-146/0x8bb67820e8ac1a775da25e50391718c1457d07ac/) | sonic | 2 deployments: sonic [`0x8bb678...7d07ac`](./sonic-146/0x8bb67820e8ac1a775da25e50391718c1457d07ac/); sonic `0xe25a2b...2fab21` | ⚠️ Unaudited | Verified |
-| Router (2 deployments) | sonic | 2 deployments: sonic `0x10c490...30a829`; sonic `0x4d6223...8dc9e0` | ⚠️ Unaudited | Verified |
+| [Router (2 deployments)](./sonic-146/0x10c490921916e6d2d38535e63080d54e7e30a829/) | sonic | 2 deployments: sonic [`0x10c490...30a829`](./sonic-146/0x10c490921916e6d2d38535e63080d54e7e30a829/); sonic `0x4d6223...8dc9e0` | ⚠️ Unaudited | Verified |
 
 ## core_logic (6)
 

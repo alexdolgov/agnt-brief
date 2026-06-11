@@ -5,8 +5,8 @@
 - Project: Stable Jack (`stable-jack`)
 - Website: [https://www.stablejack.xyz](https://www.stablejack.xyz)
 - Lifecycle: active (Tier 0, 85.7% below peak)
-- Generated: 2026-06-10T20:59:16.489Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:02:39.941Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: avalanche, sonic
 - Contract surface: 249 unique implementations (368 raw deployments)
 - DeFi Llama TVL: $1,785,928.00

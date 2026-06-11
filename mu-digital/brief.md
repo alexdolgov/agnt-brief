@@ -5,8 +5,8 @@
 - Project: Mu Digital (`mu-digital`)
 - Website: [https://mudigital.net](https://mudigital.net)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:07.809Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:15:41.259Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: ethereum
 - Contract surface: 12 unique implementations (42 raw deployments)
 - DeFi Llama TVL: $19,416,287.38

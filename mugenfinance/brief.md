@@ -5,8 +5,8 @@
 - Project: MugenFinance (`mugenfinance`)
 - Website: [https://www.mugenfinance.com](https://www.mugenfinance.com)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:07.820Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:13:41.112Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: arbitrum
 - Contract surface: 12 unique implementations (19 raw deployments)
 - DeFi Llama TVL: $3,354,846.66

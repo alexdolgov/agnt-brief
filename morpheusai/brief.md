@@ -7,8 +7,8 @@
 - Project: MorpheusAI (`morpheusai`)
 - Website: [https://mor.org](https://mor.org)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:07.805Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:14:44.581Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: arbitrum, ethereum
 - Contract surface: 47 unique implementations (96 raw deployments)
 - DeFi Llama TVL: $29,557,739.01

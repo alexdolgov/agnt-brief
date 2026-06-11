@@ -7,8 +7,8 @@
 - Project: Multichain (`multichain`)
 - Website: [https://multichain.org/](https://multichain.org/)
 - Lifecycle: dead (Tier 0, 99.6% below peak)
-- Generated: 2026-06-10T20:59:07.826Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:16:52.851Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: ethereum
 - Contract surface: 17 unique implementations (22 raw deployments)
 - DeFi Llama TVL: $44,466,550.29

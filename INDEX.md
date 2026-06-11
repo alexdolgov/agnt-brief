@@ -380,12 +380,12 @@
 | [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-06-11 |
 | [moola-market](./moola-market/) | $73.9K | 0.0% | $73.9K | declining | 1 | 53 | 2026-06-11 |
 | [moonlander](./moonlander/) | $31.4M | 0.0% | ? | active | 0 | 11 | 2026-06-11 |
-| [more-markets](./more-markets/) | $11.5M | 0.0% | ? | declining | 0 | 21 | 2026-06-10 |
+| [more-markets](./more-markets/) | $11.5M | 0.0% | ? | declining | 0 | 21 | 2026-06-11 |
 | [morph-bridge](./morph-bridge/) | $15.7M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
-| [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 0 | 47 | 2026-06-10 |
-| [mu-digital](./mu-digital/) | $19.4M | 100.0% | ? | active | 2 | 12 | 2026-06-10 |
-| [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-06-10 |
-| [multichain](./multichain/) | $12.5M | 42.9% | $128.8 | dead | 15 | 17 | 2026-06-10 |
+| [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 0 | 47 | 2026-06-11 |
+| [mu-digital](./mu-digital/) | $19.4M | 100.0% | ? | active | 2 | 12 | 2026-06-11 |
+| [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-06-11 |
+| [multichain](./multichain/) | $12.5M | 42.9% | $128.8 | dead | 15 | 17 | 2026-06-11 |
 | [mux-protocol](./mux-protocol/) | $862.0K | 21.7% | $862.0K | active | 2 | 1198 | 2026-06-10 |
 | [mvl-staking](./mvl-staking/) | $38.1M | 50.0% | ? | unknown | 2 | 49 | 2026-06-10 |
 | [mystic-finance](./mystic-finance/) | $5.8M | 0.0% | ? | unknown | 10 | 0 | 2026-06-10 |

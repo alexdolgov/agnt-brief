@@ -5,11 +5,11 @@
 - Project: ICHI (`ichi`)
 - Website: [https://www.ichi.org](https://www.ichi.org)
 - Lifecycle: active (Tier 0, 90.3% below peak)
-- Generated: 2026-05-31T08:25:49.468Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-11T11:30:54.139Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, avalanche, base, blast, bsc, celo, ethereum, fantom, kava, linea, mantle, mode, opbnb, polygon, polygon-zkevm, scroll, sonic, zksync-era
 - Contract surface: 616 unique implementations (1073 raw deployments)
-- DeFi Llama TVL: $12,782,422.64
+- DeFi Llama TVL: $10,695,458.24
 - On-chain TVL (included contracts): $36,116,255.20
 - TVL by chain: Ethereum $36,116,255.20
 
@@ -29,11 +29,11 @@ The ICHI Vaults family relies on factory contracts like ICHIVaultFactory and Reb
 - Unverified implementations: 501
 - Unique implementations: 616
 - Raw deployments: 1073
-- Audits discovered: 1
+- Audits discovered: 9
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $36,116,255.20
 - Latest audit: 2021-04 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 8 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -695,6 +695,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [CertiK Audit Report for ICHI - FarmV2.pdf](https://github.com/ichifarm/ichi-farming/blob/main/audits/CertiK%20Audit%20Report%20for%20ICHI%20-%20FarmV2.pdf) | CertiK | Audit | 2021-04 | stale | Direct | contract_name | 2 | high |
+| [Audit Report (also discovered via alternate URL)](https://github.com/ichifarm/ichi-oneToken/blob/master/audits/quantstamp/audit.pdf) | Quantstamp | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Audit Report](https://skynet.certik.com/projects/ichi) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Audit Report](https://de.fi/audit-database/defiyield/ichi) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Audit Report](https://github.com/ichifarm/audit) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Audit Report](https://drive.google.com/file/d/1DA8qnvezkfBpIlLQaSENi9MAq3ps7M0o/view?usp=sharing) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Audit Report](https://drive.google.com/file/d/1YyK49Hbo2DqFVzDMYwQLLl-56_uCHIPR/view?usp=drive_link) | FYEO: Quality Assessment | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Ichi_Farm_Audit_Bramah.pdf](https://github.com/ichifarm/audit/blob/main/Ichi_Farm_Audit_Bramah.pdf) | Bramah | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [quantstamp](https://github.com/ichifarm/ichi-oneToken/blob/master/audits/quantstamp) | Quantstamp | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -797,9 +805,20 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 8
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=2
+
+Zero-match audit list:
+
+- [11799] Audit Report
+- [11801] Audit Report
+- [11802] Audit Report
+- [11803] Audit Report
+- [11804] Audit Report
+- [11805] Audit Report
+- [11806] Ichi_Farm_Audit_Bramah.pdf
+- [11807] quantstamp
 
 Fork inheritance lineage and inherited audits are included when available.

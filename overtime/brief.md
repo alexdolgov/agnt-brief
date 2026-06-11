@@ -5,13 +5,13 @@
 ## Project Overview
 
 - Project: Overtime (`overtime`)
-- Website: [https://www.overtimemarkets.xyz/markets?referrerId=defillama](https://www.overtimemarkets.xyz/markets?referrerId=defillama)
+- Website: [https://www.overtimemarkets.xyz](https://www.overtimemarkets.xyz)
 - Lifecycle: declining (Tier 0, 75.2% below peak)
-- Generated: 2026-06-11T01:42:06.966Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-11T11:30:49.373Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, base, ethereum, optimism, polygon
 - Contract surface: 200 unique implementations (1988 raw deployments)
-- DeFi Llama TVL: $3,014,399.64
+- DeFi Llama TVL: $2,074,314.11
 - On-chain TVL (included contracts): $42,475,484.94
 - TVL by chain: Optimism $34,476,170.99 | Ethereum $7,582,814.91 | Base $280,142.30 | Arbitrum $136,356.73
 
@@ -23,11 +23,11 @@
 - Unverified implementations: 56
 - Unique implementations: 200
 - Raw deployments: 1988
-- Audits discovered: 0
+- Audits discovered: 8
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $42,475,484.94
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 8 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $42,475,484.94 represents exposure in a protocol with declining activity.
 
@@ -270,6 +270,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [DL audit link](https://iosiro.com/audits/thales-airdrop-and-staking-smart-contract-audit) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [thales-market-speedmarkets-audit-report-1.1.pdf](https://github.com/decurity/audits/blob/master/ThalesMarket/thales-market-speedmarkets-audit-report-1.1.pdf) | Decurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [thales-market-liquidity-pool-audit-report-1.1.pdf](https://github.com/Decurity/audits/blob/master/ThalesMarket/thales-market-liquidity-pool-audit-report-1.1.pdf) | Decurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DL audit link](https://iosiro.com/audits/thales-parlay-market-amm-smart-contract-audit) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DL audit link](https://iosiro.com/audits/thales-amm-smart-contract-audit) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DL audit link](https://skynet.certik.com/projects/thales) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DL audit link](https://iosiro.com/audits/thales-binary-option-market-smart-contract-audit) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DL audit link](https://iosiro.com/audits/staked-thales-betting-proxy-smart-contract-audit) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -290,9 +298,20 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 8
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11641] DL audit link
+- [11642] thales-market-speedmarkets-audit-report-1.1.pdf
+- [11643] thales-market-liquidity-pool-audit-report-1.1.pdf
+- [11644] DL audit link
+- [11645] DL audit link
+- [11646] DL audit link
+- [11647] DL audit link
+- [11648] DL audit link
 
 Fork inheritance lineage and inherited audits are included when available.

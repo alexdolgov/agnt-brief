@@ -5,11 +5,11 @@
 - Project: Juicebox (`juicebox`)
 - Website: [https://juicebox.money/](https://juicebox.money/)
 - Lifecycle: active (Tier 0, 57.8% below peak)
-- Generated: 2026-05-31T08:34:00.682Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-11T11:30:50.643Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, base, chain-11155111, chain-11155420, chain-421614, chain-84532, ethereum, optimism
 - Contract surface: 77 unique implementations (236 raw deployments)
-- DeFi Llama TVL: $11,041,334.00
+- DeFi Llama TVL: $8,630,201.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,18 +29,18 @@ The Juicebox Core family provides shared infrastructure (controller, tokens, rul
 - Unverified implementations: 9
 - Unique implementations: 77
 - Raw deployments: 236
-- Audits discovered: 1
+- Audits discovered: 10
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2022 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Latest audit: 2023-05 (stale)
+- Staleness: 0 fresh, 0 aging, 9 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 4 | 5.9% | 2022 |
+| unknown | Tier 2 | 4 | 5.9% | 2023-01 |
 
 ## Contract Surface
 
@@ -155,6 +155,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [5.24.2022.md (also discovered via alternate URL)](https://github.com/jbx-protocol/juice-contracts-v2/blob/main/security/postmortem/5.24.2022.md) | unknown | Audit | 2022 | stale | Direct | contract_name | 19 | medium |
+| [DL audit link](https://hacken.io/audits/constitution-dao/sca-constitution-dao-governance-erc20-jan2022) | Hacken | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
+| [DL audit link](https://hackmd.io/@berndartmueller/2023-01-juice-v3-migration) | unknown | Audit | 2023-01 | stale | Direct | n/a | 0 | n/a |
+| [DL audit link](https://code4rena.com/reports/2022-10-juicebox) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
+| [C4 Juicebox contest repository](https://github.com/code-423n4/2022-10-juicebox) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
+| [DL audit link](https://docs.juicebox.money/assets/files/certik-audit-report-12b48328d22ac38207dad74162cac1db.pdf) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DL audit link](https://code4rena.com/audits/2022-07-juicebox-v2-contest) | Code4rena | Contest | 2022-07 | stale | Direct | n/a | 0 | n/a |
+| [View report](https://code4rena.com/reports/2022-07-juicebox) | Code4rena | Contest | 2022-07 | stale | Direct | n/a | 0 | n/a |
+| [DL audit link](https://docs.juicebox.money/assets/files/peckshield-audit-report-ab36ee2b5dfb2a387410b4d64276f6ba.pdf) | PeckShield | Audit | 2022 | stale | Direct | n/a | 0 | n/a |
+| [code4rena.com/reports/2023-05-juicebox](https://code4rena.com/reports/2023-05-juicebox) | Code4rena | Contest | 2023-05 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -237,9 +246,21 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 9
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: medium=1
 - Match method counts: extraction_exact=38
+
+Zero-match audit list:
+
+- [11935] DL audit link
+- [11936] DL audit link
+- [11937] DL audit link
+- [11938] C4 Juicebox contest repository
+- [11939] DL audit link
+- [11940] DL audit link
+- [11941] View report
+- [11942] DL audit link
+- [11943] code4rena.com/reports/2023-05-juicebox
 
 Fork inheritance lineage and inherited audits are included when available.

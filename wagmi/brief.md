@@ -7,11 +7,11 @@
 - Project: WAGMI (`wagmi`)
 - Website: [https://wagmi.com/](https://wagmi.com/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T04:03:31.806Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
+- Generated: 2026-06-11T11:31:52.266Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, avalanche, base, bsc, ethereum, fantom, kava, metis, optimism, polygon, sonic, zksync-era
 - Contract surface: 334 unique implementations (334 raw deployments)
-- DeFi Llama TVL: $2,324,516.44
+- DeFi Llama TVL: $1,250,372.93
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,11 +23,11 @@
 - Unverified implementations: 334
 - Unique implementations: 334
 - Raw deployments: 334
-- Audits discovered: 0
+- Audits discovered: 10
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2024-03 (stale)
+- Staleness: 0 fresh, 0 aging, 3 stale, 7 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -402,6 +402,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Rendered PDF capture](https://raw.githubusercontent.com/sherlock-protocol/sherlock-reports/f5b20449ff1a769af108c2b2fa6ee928a0c77232/audits/2024.03.23%20-%20Final%20-%20WagmiLeverage%20V2%20Audit%20Report.pdf) | Hacken | Audit | 2024-03 | stale | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://raw.githubusercontent.com/pashov/audits/bed0a845f5af0047206ce423d111673183dba1e9/team/pdf/Wagmi-security-review.pdf) | Hacken | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2024.03.23%20-%20Final%20-%20WagmiLeverage%20V2%20Audit%20Report.pdf) | Sherlock | Contest | 2024-03 | stale | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://github.com/pashov/audits/blob/master/team/pdf/Wagmi-security-review.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Wagmi Leverage V1.0 0-V2.0 AstraSec.pdf](https://github.com/RealWagmi/wagmi-leverage/blob/main/audit/Wagmi%20Leverage%20V1.0%200-V2.0%20AstraSec.pdf) | AstraSec | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Wagmi Leverage V1.0 Sherlock.pdf](https://github.com/RealWagmi/wagmi-leverage/blob/main/audit/Wagmi%20Leverage%20V1.0%20Sherlock.pdf) | Sherlock | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Wagmi Leverage V1.1 Hacken.pdf](https://github.com/RealWagmi/wagmi-leverage/blob/main/audit/Wagmi%20Leverage%20V1.1%20Hacken.pdf) | Hacken | Audit | 2023-12 | stale | Direct | n/a | 0 | n/a |
+| [Wagmi Leverage V1.5 Sherlock.pdf](https://github.com/RealWagmi/wagmi-leverage/blob/main/audit/Wagmi%20Leverage%20V1.5%20Sherlock.pdf) | Sherlock | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Wagmi Leverage V2.0 Pashov.pdf](https://github.com/RealWagmi/wagmi-leverage/blob/main/audit/Wagmi%20Leverage%20V2.0%20Pashov.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Wagmi Leverage V2.0 Sherlock.pdf](https://github.com/RealWagmi/wagmi-leverage/blob/main/audit/Wagmi%20Leverage%20V2.0%20Sherlock.pdf) | Sherlock | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -422,9 +432,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 10
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11719] Rendered PDF capture
+- [11720] Rendered PDF capture
+- [11721] {% embed url="<>" %}
+- [11722] {% embed url="<>" %}
+- [11723] Wagmi Leverage V1.0 0-V2.0 AstraSec.pdf
+- [11724] Wagmi Leverage V1.0 Sherlock.pdf
+- [11725] Wagmi Leverage V1.1 Hacken.pdf
+- [11726] Wagmi Leverage V1.5 Sherlock.pdf
+- [11727] Wagmi Leverage V2.0 Pashov.pdf
+- [11728] Wagmi Leverage V2.0 Sherlock.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "overtime",
-  "generated_at": "2026-06-11T01:42:06.966Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-11T11:30:49.373Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "overtime",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 4,
     "contracts_unverified": 56,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 8,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3014399.63559,
+    "dl_tvl_usd": 2074314.10978,
     "tvl_usd": 42475484.939811066,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -45,7 +45,7 @@
       "optimism": 34476170.99
     },
     "asd_usd": 42475484.939811066,
-    "website_url": "https://www.overtimemarkets.xyz/markets?referrerId=defillama",
+    "website_url": "https://www.overtimemarkets.xyz",
     "chains": [
       "arbitrum",
       "base",
@@ -61,7 +61,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 8
     }
   },
   "topography": {
@@ -22372,7 +22372,176 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11641,
+      "audit_key": "audit-11641",
+      "report_name": "DL audit link",
+      "report_url": "https://iosiro.com/audits/thales-airdrop-and-staking-smart-contract-audit",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11642,
+      "audit_key": "audit-11642",
+      "report_name": "thales-market-speedmarkets-audit-report-1.1.pdf",
+      "report_url": "https://github.com/decurity/audits/blob/master/ThalesMarket/thales-market-speedmarkets-audit-report-1.1.pdf",
+      "auditor": "Decurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11643,
+      "audit_key": "audit-11643",
+      "report_name": "thales-market-liquidity-pool-audit-report-1.1.pdf",
+      "report_url": "https://github.com/Decurity/audits/blob/master/ThalesMarket/thales-market-liquidity-pool-audit-report-1.1.pdf",
+      "auditor": "Decurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11644,
+      "audit_key": "audit-11644",
+      "report_name": "DL audit link",
+      "report_url": "https://iosiro.com/audits/thales-parlay-market-amm-smart-contract-audit",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11645,
+      "audit_key": "audit-11645",
+      "report_name": "DL audit link",
+      "report_url": "https://iosiro.com/audits/thales-amm-smart-contract-audit",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11646,
+      "audit_key": "audit-11646",
+      "report_name": "DL audit link",
+      "report_url": "https://skynet.certik.com/projects/thales",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11647,
+      "audit_key": "audit-11647",
+      "report_name": "DL audit link",
+      "report_url": "https://iosiro.com/audits/thales-binary-option-market-smart-contract-audit",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11648,
+      "audit_key": "audit-11648",
+      "report_name": "DL audit link",
+      "report_url": "https://iosiro.com/audits/staked-thales-betting-proxy-smart-contract-audit",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
@@ -22386,7 +22555,40 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11641,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 11642,
+        "report_name": "thales-market-speedmarkets-audit-report-1.1.pdf"
+      },
+      {
+        "audit_id": 11643,
+        "report_name": "thales-market-liquidity-pool-audit-report-1.1.pdf"
+      },
+      {
+        "audit_id": 11644,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 11645,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 11646,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 11647,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 11648,
+        "report_name": "DL audit link"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

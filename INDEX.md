@@ -57,7 +57,7 @@
 | [aura](./aura/) | $107.0M | 19.4% | $68.2M | active | 18 | 497 | 2026-06-10 |
 | [aurora-plus](./aurora-plus/) | $2.3M | 33.3% | ? | active | 3 | 31 | 2026-06-10 |
 | [autofarm](./autofarm/) | $6.1M | 0.0% | ? | declining | 1 | 10 | 2026-06-10 |
-| [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 0 | 570 | 2026-05-31 |
+| [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 8 | 570 | 2026-06-11 |
 | [avalaunch](./avalaunch/) | $31.3M | 84.6% | ? | active | 13 | 38 | 2026-06-10 |
 | [avantis](./avantis/) | $196.5M | 68.8% | $150.9M | declining | 3 | 61 | 2026-06-10 |
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 1 | 2026-06-10 |
@@ -275,7 +275,7 @@
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 0 | 11 | 2026-06-11 |
 | [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 2 | 60 | 2026-06-11 |
 | [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 0 | 45 | 2026-05-31 |
-| [ichi](./ichi/) | $36.1M | 0.9% | $36.1M | active | 1 | 616 | 2026-05-31 |
+| [ichi](./ichi/) | $36.1M | 0.9% | $36.1M | active | 9 | 616 | 2026-06-11 |
 | [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | active | 0 | 16 | 2026-06-11 |
 | [immutable-zkevm](./immutable-zkevm/) | $28.5M | 22.2% | ? | active | 4 | 9 | 2026-06-11 |
 | [inception](./inception/) | $9.8M | 24.6% | $9.5M | declining | 9 | 78 | 2026-06-11 |
@@ -293,7 +293,7 @@
 | [iq](./iq/) | $23.9M | 0.0% | $23.9M | active | 0 | 2 | 2026-06-11 |
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | declining | 0 | 181 | 2026-06-11 |
 | [jones-dao](./jones-dao/) | $519.7M | 0.0% | $519.7M | active | 0 | 502 | 2026-06-11 |
-| [juicebox](./juicebox/) | $11.0M | 5.9% | ? | active | 1 | 77 | 2026-05-31 |
+| [juicebox](./juicebox/) | $8.6M | 5.9% | ? | active | 10 | 77 | 2026-06-11 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-06-11 |
 | [kaio](./kaio/) | $60.8M | 0.0% | ? | declining | 0 | 35 | 2026-06-11 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | active | 0 | 2 | 2026-06-11 |
@@ -433,7 +433,7 @@
 | [ostium](./ostium/) | $29.1M | 47.1% | ? | active | 1 | 17 | 2026-06-11 |
 | [outcome-finance](./outcome-finance/) | $1.3M | 0.0% | ? | declining | 0 | 3 | 2026-06-11 |
 | [overnight-finance](./overnight-finance/) | $10.0M | 0.0% | ? | declining | 2 | 4353 | 2026-06-11 |
-| [overtime](./overtime/) | $42.5M | 0.0% | $42.5M | declining | 0 | 200 | 2026-06-11 |
+| [overtime](./overtime/) | $42.5M | 0.0% | $42.5M | declining | 8 | 200 | 2026-06-11 |
 | [p2pb2b](./p2pb2b/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | active | 0 | 3 | 2026-06-11 |
 | [pact](./pact/) | $2.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
@@ -675,7 +675,7 @@
 | [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 0 | 65 | 2026-05-31 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-06-11 |
 | [volta-club](./volta-club/) | $976.2M | 0.0% | $976.2M | unknown | 0 | 316 | 2026-06-11 |
-| [wagmi](./wagmi/) | $2.3M | 0.0% | ? | declining | 0 | 334 | 2026-06-11 |
+| [wagmi](./wagmi/) | $1.3M | 0.0% | ? | declining | 10 | 334 | 2026-06-11 |
 | [wan-bridge](./wan-bridge/) | $4.6K | 0.0% | $4.6K | active | 3 | 129 | 2026-06-11 |
 | [wanswap-dex](./wanswap-dex/) | $1.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | declining | 8 | 83 | 2026-06-11 |

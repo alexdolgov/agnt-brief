@@ -7,11 +7,11 @@
 - Project: AUTOfinance (`autofinance`)
 - Website: [https://www.auto.finance](https://www.auto.finance)
 - Lifecycle: transitioning (Tier 1, transitioning)
-- Generated: 2026-05-31T07:28:23.719Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-11T11:32:04.486Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, base, ethereum, linea, plasma
 - Contract surface: 570 unique implementations (1752 raw deployments)
-- DeFi Llama TVL: $48,297,791.68
+- DeFi Llama TVL: $39,393,220.49
 - On-chain TVL (included contracts): $175,724,182.92
 - TVL by chain: Ethereum $158,270,775.78 | Base $15,266,107.05 | Arbitrum $2,147,674.98 | Plasma $39,381.66 | Linea $243.45
 
@@ -31,11 +31,11 @@ Autopools serve as the entry point for users, delegating asset management to Des
 - Unverified implementations: 161
 - Unique implementations: 570
 - Raw deployments: 1752
-- Audits discovered: 0
+- Audits discovered: 8
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $175,724,182.92
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2025 (aging)
+- Staleness: 0 fresh, 2 aging, 6 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [transitioning]. ASD of $175,724,182.92 represents exposure in a protocol with transitioning activity.
 
@@ -648,6 +648,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [{% embed url="<>" %}](https://drive.google.com/file/d/16OhVtmuEB57k6tAiGb9Su4gQ9Dy_Nv4n/view) | Hexens | Audit | 2024-05 | stale | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://drive.google.com/file/d/19kZJEkwiP62HlH33IccWVYaweWE4GEI1/view?usp=sharing) | Hexens | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://drive.google.com/file/d/1CcKw0ig7eBXV6q8jNjuvOFdEF_ozh_ZE/view) | Hexens | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://certora.cdn.prismic.io/certora/Zhba6TjCgu4jzvAQ_Tokemak-CertoraAuditReport.pdf) | Certora | Audit | 2024-03 | stale | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://github.com/Certora/tokemak-v2-core-fv/blob/main/Report.md) | Certora | Contest | 2024-03 | stale | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS0VKxLL6FMLB1onYrDVu%2Fuploads%2Fm9vasMSC35JbnaqfyPVN%2FTokemak_Autopilot_Smart_Contract_Security_Assessment_Report_Halborn.pdf?alt=media) | Halborn | Audit | 2023-09 | stale | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS0VKxLL6FMLB1onYrDVu%2Fuploads%2FauBJzmmsZIR0afW4AD7c%2FTokemak_V2_Smart_Contract_Formal_Verification_Report_Halborn_Draft.pdf?alt=media) | Halborn | Audit | 2023-09 | stale | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://drive.google.com/file/d/1rE-u847zxv49vShADpMhgVIE1cYvZujG/view) | Halborn | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -703,9 +711,20 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 8
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11542] {% embed url="<>" %}
+- [11543] {% embed url="<>" %}
+- [11544] {% embed url="<>" %}
+- [11545] {% embed url="<>" %}
+- [11546] {% embed url="<>" %}
+- [11547] {% embed url="<>" %}
+- [11548] {% embed url="<>" %}
+- [11549] {% embed url="<>" %}
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "autofinance",
-  "generated_at": "2026-05-31T07:28:23.719Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-11T11:32:04.486Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "transitioning",
   "lifecycle_signal": {
     "slug": "autofinance",
@@ -43,9 +43,9 @@
     "contracts_verified_by_bytecode": 3,
     "contracts_unverified": 161,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 8,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 48297791.68173,
+    "dl_tvl_usd": 39393220.488350004,
     "tvl_usd": 175724182.9211718,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -66,12 +66,12 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2025",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 0,
-      "stale": 0,
+      "aging": 2,
+      "stale": 6,
       "unknown": 0
     }
   },
@@ -79,6 +79,11 @@
     "project_purpose": "AUTOfinance is a yield optimization protocol that aggregates liquidity into Autopools, which dynamically allocate assets across various DeFi strategies (e.g., lending, liquidity provision, staking) to maximize returns. It uses a modular system of destination vaults, oracles, and swappers to manage risk and execute rebalancing across multiple chains.",
     "relationship_narrative": "Autopools serve as the entry point for users, delegating asset management to Destination Vaults which execute specific strategies. Oracles and Calculators supply the necessary pricing and performance data to guide allocation and rewards, while the Swap Infrastructure facilitates rebalancing and liquidations. All components are coordinated through the System Registry and AccessController, ensuring consistent configuration and security across chains.",
     "product_family_count": 33
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 570,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -28394,7 +28399,176 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11542,
+      "audit_key": "audit-11542",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://drive.google.com/file/d/16OhVtmuEB57k6tAiGb9Su4gQ9Dy_Nv4n/view",
+      "auditor": "Hexens",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11543,
+      "audit_key": "audit-11543",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://drive.google.com/file/d/19kZJEkwiP62HlH33IccWVYaweWE4GEI1/view?usp=sharing",
+      "auditor": "Hexens",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11544,
+      "audit_key": "audit-11544",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://drive.google.com/file/d/1CcKw0ig7eBXV6q8jNjuvOFdEF_ozh_ZE/view",
+      "auditor": "Hexens",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11545,
+      "audit_key": "audit-11545",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://certora.cdn.prismic.io/certora/Zhba6TjCgu4jzvAQ_Tokemak-CertoraAuditReport.pdf",
+      "auditor": "Certora",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11546,
+      "audit_key": "audit-11546",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://github.com/Certora/tokemak-v2-core-fv/blob/main/Report.md",
+      "auditor": "Certora",
+      "audit_type": "contest",
+      "freshness": "stale",
+      "date": "2024-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11547,
+      "audit_key": "audit-11547",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS0VKxLL6FMLB1onYrDVu%2Fuploads%2Fm9vasMSC35JbnaqfyPVN%2FTokemak_Autopilot_Smart_Contract_Security_Assessment_Report_Halborn.pdf?alt=media",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11548,
+      "audit_key": "audit-11548",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS0VKxLL6FMLB1onYrDVu%2Fuploads%2FauBJzmmsZIR0afW4AD7c%2FTokemak_V2_Smart_Contract_Formal_Verification_Report_Halborn_Draft.pdf?alt=media",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11549,
+      "audit_key": "audit-11549",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://drive.google.com/file/d/1rE-u847zxv49vShADpMhgVIE1cYvZujG/view",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -28749,7 +28923,40 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11542,
+        "report_name": "{% embed url=\"<>\" %}"
+      },
+      {
+        "audit_id": 11543,
+        "report_name": "{% embed url=\"<>\" %}"
+      },
+      {
+        "audit_id": 11544,
+        "report_name": "{% embed url=\"<>\" %}"
+      },
+      {
+        "audit_id": 11545,
+        "report_name": "{% embed url=\"<>\" %}"
+      },
+      {
+        "audit_id": 11546,
+        "report_name": "{% embed url=\"<>\" %}"
+      },
+      {
+        "audit_id": 11547,
+        "report_name": "{% embed url=\"<>\" %}"
+      },
+      {
+        "audit_id": 11548,
+        "report_name": "{% embed url=\"<>\" %}"
+      },
+      {
+        "audit_id": 11549,
+        "report_name": "{% embed url=\"<>\" %}"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

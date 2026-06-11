@@ -7,8 +7,8 @@
 - Project: SuiBridge (`suibridge`)
 - Website: [https://bridge.sui.io](https://bridge.sui.io)
 - Lifecycle: declining (Tier 0, 93.1% below peak)
-- Generated: 2026-06-10T20:59:16.706Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:12:12.412Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: ethereum
 - Contract surface: 5 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $41,855,877.23

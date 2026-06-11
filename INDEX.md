@@ -337,12 +337,12 @@
 | [llamapay](./llamapay/) | $25.8M | 0.0% | ? | active | 1 | 19 | 2026-06-11 |
 | [lockon](./lockon/) | $1.0M | 56.3% | ? | active | 7 | 23 | 2026-06-11 |
 | [looping-collective](./looping-collective/) | $11.8M | 0.0% | $11.8M | active | 0 | 14 | 2026-06-11 |
-| [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 0 | 145 | 2026-06-10 |
-| [lumenswap](./lumenswap/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-06-10 |
+| [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 0 | 145 | 2026-06-11 |
+| [lumenswap](./lumenswap/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-06-11 |
 | [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-31 |
-| [magma-staking](./magma-staking/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [magpie-ecosystem](./magpie-ecosystem/) | $24.6M | 0.0% | ? | declining | 4 | 662 | 2026-06-10 |
+| [magma-staking](./magma-staking/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [magpie-ecosystem](./magpie-ecosystem/) | $24.6M | 0.0% | ? | declining | 4 | 662 | 2026-06-11 |
 | [mainstreet](./mainstreet/) | $78.2M | 100.0% | ? | active | 1 | 1 | 2026-06-10 |
 | [makina](./makina/) | $12.9M | 90.9% | $12.9M | active | 4 | 36 | 2026-06-10 |
 | [mangrove](./mangrove/) | $4.3M | 22.0% | ? | active | 6 | 68 | 2026-06-10 |

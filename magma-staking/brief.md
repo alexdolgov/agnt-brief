@@ -5,8 +5,8 @@
 - Project: Magma Staking (`magma-staking`)
 - Website: [https://www.magmastaking.xyz/](https://www.magmastaking.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:07.079Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:45:39.848Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $1,159,805.29

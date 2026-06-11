@@ -7,8 +7,8 @@
 - Project: Magpie Ecosystem (`magpie-ecosystem`)
 - Website: [https://link3.to/magpiexyz](https://link3.to/magpiexyz)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:07.136Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:48:59.499Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: arbitrum, base, berachain, bsc, ethereum, optimism, plasma, sonic
 - Contract surface: 662 unique implementations (662 raw deployments)
 - DeFi Llama TVL: $24,646,869.00

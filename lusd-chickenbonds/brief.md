@@ -7,8 +7,8 @@
 - Project: LUSD ChickenBonds (`lusd-chickenbonds`)
 - Website: [https://www.chickenbonds.org](https://www.chickenbonds.org)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:07.076Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:48:47.842Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: ethereum
 - Contract surface: 24 unique implementations (57 raw deployments)
 - DeFi Llama TVL: $1,491,358.01

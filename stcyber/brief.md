@@ -7,8 +7,8 @@
 - Project: stCYBER (`stcyber`)
 - Website: [https://cyber.co/stake](https://cyber.co/stake)
 - Lifecycle: declining (Tier 0, 85.8% below peak)
-- Generated: 2026-06-10T20:59:16.658Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:08:07.779Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: base, bsc, ethereum, optimism
 - Contract surface: 31 unique implementations (44 raw deployments)
 - DeFi Llama TVL: $1,538,238.34

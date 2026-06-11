@@ -5,8 +5,8 @@
 - Project: Steer Protocol (`steer-protocol`)
 - Website: [https://app.steer.finance?af=defillama](https://app.steer.finance?af=defillama)
 - Lifecycle: active (Tier 0, 64.9% below peak)
-- Generated: 2026-06-10T20:59:16.663Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:08:08.875Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: arbitrum
 - Contract surface: 43 unique implementations (71 raw deployments)
 - DeFi Llama TVL: $20,474,767.66

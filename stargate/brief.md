@@ -5,8 +5,8 @@
 - Project: StarGate (`stargate`)
 - Website: [https://stargate.vechain.org/](https://stargate.vechain.org/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:16.620Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:09:16.398Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $5,922,096.47

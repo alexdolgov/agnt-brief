@@ -702,12 +702,12 @@
 | [yo-protocol](./yo-protocol/) | $40.9M | 56.3% | $12.6K | declining | 7 | 20 | 2026-06-11 |
 | [yuzu-money](./yuzu-money/) | $41.0M | 0.0% | $41.0M | active | 0 | 8 | 2026-06-11 |
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-06-11 |
-| [zenlink](./zenlink/) | $5.3M | 0.0% | ? | declining | 1 | 226 | 2026-06-10 |
-| [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-06-10 |
-| [zerolend](./zerolend/) | $16.1M | 0.0% | ? | declining | 0 | 565 | 2026-06-10 |
-| [zircuit-finance](./zircuit-finance/) | $1.5M | 0.0% | $1.5M | active | 0 | 2 | 2026-06-10 |
+| [zenlink](./zenlink/) | $5.3M | 0.0% | ? | declining | 1 | 226 | 2026-06-11 |
+| [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-06-11 |
+| [zerolend](./zerolend/) | $16.1M | 0.0% | ? | declining | 0 | 565 | 2026-06-11 |
+| [zircuit-finance](./zircuit-finance/) | $1.5M | 0.0% | $1.5M | active | 0 | 2 | 2026-06-11 |
 | [zircuit-staking](./zircuit-staking/) | $178.4M | 21.1% | $140.4M | declining | 8 | 20 | 2026-06-10 |
-| [zircuit](./zircuit/) | $144.2M | 25.0% | $144.2M | declining | 10 | 17 | 2026-06-10 |
+| [zircuit](./zircuit/) | $144.2M | 25.0% | $144.2M | declining | 10 | 17 | 2026-06-11 |
 | [zivoe](./zivoe/) | $13.8M | 43.3% | ? | declining | 2 | 31 | 2026-06-10 |
 | [zklink-nova](./zklink-nova/) | $33.9M | 14.5% | $33.9M | declining | 7 | 380 | 2026-06-10 |
 | [zkswap-finance](./zkswap-finance/) | $1.2M | 11.1% | ? | active | 8 | 98 | 2026-06-10 |

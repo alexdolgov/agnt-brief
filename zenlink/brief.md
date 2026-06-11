@@ -7,8 +7,8 @@
 - Project: Zenlink (`zenlink`)
 - Website: [https://zenlink.pro](https://zenlink.pro)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:19.495Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:25:08.343Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: moonbeam, moonriver
 - Contract surface: 226 unique implementations (249 raw deployments)
 - DeFi Llama TVL: $5,337,021.00

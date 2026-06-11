@@ -5,8 +5,8 @@
 - Project: ZEROBASE CeDeFi (`zerobase-cedefi`)
 - Website: [https://app.zerobase.pro/](https://app.zerobase.pro/)
 - Lifecycle: active (Tier 0, 89.6% below peak)
-- Generated: 2026-06-10T20:59:19.501Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:23:57.567Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: arbitrum, avalanche, base, ethereum, optimism, polygon
 - Contract surface: 7 unique implementations (54 raw deployments)
 - DeFi Llama TVL: $58,318,541.70

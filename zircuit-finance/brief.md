@@ -5,8 +5,8 @@
 - Project: Zircuit Finance (`zircuit-finance`)
 - Website: [https://finance.zircuit.com/](https://finance.zircuit.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:19.530Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:22:00.267Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: base, ethereum
 - Contract surface: 2 unique implementations (7 raw deployments)
 - DeFi Llama TVL: $1,513,608.93

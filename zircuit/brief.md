@@ -7,8 +7,8 @@
 - Project: Zircuit (`zircuit`)
 - Website: [https://www.zircuit.com/](https://www.zircuit.com/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:19.526Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:25:22.141Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: base, ethereum
 - Contract surface: 17 unique implementations (19 raw deployments)
 - DeFi Llama TVL: $13,098,809.53

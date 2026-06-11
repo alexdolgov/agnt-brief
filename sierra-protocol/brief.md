@@ -5,8 +5,8 @@
 - Project: Sierra Protocol (`sierra-protocol`)
 - Website: [https://sierra.money/](https://sierra.money/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:16.077Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:41:55.180Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: avalanche, ethereum
 - Contract surface: 78 unique implementations (127 raw deployments)
 - DeFi Llama TVL: $32,675,268.71

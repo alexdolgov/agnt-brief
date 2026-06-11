@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sicx",
-  "generated_at": "2026-06-10T21:23:56.339Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-topography",
+  "generated_at": "2026-06-11T02:43:05.855Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {

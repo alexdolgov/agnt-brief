@@ -533,12 +533,12 @@
 | [shape-bridge](./shape-bridge/) | $1.1M | 0.0% | ? | active | 0 | 26 | 2026-06-11 |
 | [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | active | 3 | 40 | 2026-06-11 |
 | [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-06-11 |
-| [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | active | 0 | 2 | 2026-06-10 |
-| [sierra-protocol](./sierra-protocol/) | $39.6M | 4.0% | $5.3M | active | 1 | 78 | 2026-06-10 |
-| [sigma-money](./sigma-money/) | $593.4M | 0.0% | $593.4M | active | 0 | 231 | 2026-06-10 |
+| [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | active | 0 | 2 | 2026-06-11 |
+| [sierra-protocol](./sierra-protocol/) | $39.6M | 4.0% | $5.3M | active | 1 | 78 | 2026-06-11 |
+| [sigma-money](./sigma-money/) | $593.4M | 0.0% | $593.4M | active | 0 | 231 | 2026-06-11 |
 | [silo-finance](./silo-finance/) | $3.3M | 15.7% | $641.3K | unknown | 10 | 529 | 2026-05-31 |
-| [singularity-finance](./singularity-finance/) | $2.7M | 0.0% | $2.7M | declining | 2 | 1 | 2026-06-10 |
+| [singularity-finance](./singularity-finance/) | $2.7M | 0.0% | $2.7M | declining | 2 | 1 | 2026-06-11 |
 | [singularv](./singularv/) | $1.1B | 11.4% | $1.1B | declining | 7 | 83 | 2026-06-10 |
 | [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 0 | 4 | 2026-06-10 |
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |

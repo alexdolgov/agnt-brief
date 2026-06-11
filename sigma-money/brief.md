@@ -5,8 +5,8 @@
 - Project: Sigma Money (`sigma-money`)
 - Website: [https://sigma.money](https://sigma.money)
 - Lifecycle: active (Tier 0, 82.6% below peak)
-- Generated: 2026-06-10T20:59:16.155Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:41:56.252Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: bsc
 - Contract surface: 231 unique implementations (1379 raw deployments)
 - DeFi Llama TVL: $3,089,795.81

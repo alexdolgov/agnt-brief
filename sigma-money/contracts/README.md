@@ -1,6 +1,6 @@
 # sigma-money — Contract Index
 
-231 unique implementations on bsc · 1393 deployments · 0 audited · 188 unaudited · 43 unverified
+231 unique implementations on bsc · 1379 deployments · 0 audited · 188 unaudited · 43 unverified
 
 ## adapter (5)
 
@@ -205,7 +205,7 @@
 | [LpProxy (2 deployments)](./bsc-56/0x12b09bb62fb7bbcf732e6c2e166012dd7c1424c0/) | bsc | 2 deployments: bsc [`0x12b09b...1424c0`](./bsc-56/0x12b09bb62fb7bbcf732e6c2e166012dd7c1424c0/); bsc `0x81d163...6e2e4d` | ⚠️ Unaudited | Verified |
 | [LpUsd (7 deployments)](./bsc-56/0x0a23817c68a234425f7ebec215d4e8ea528802de/) | bsc | 7 deployments: bsc [`0x0a2381...8802de`](./bsc-56/0x0a23817c68a234425f7ebec215d4e8ea528802de/); bsc `0x1b7ba5...181f2f`; bsc `0x5887c3...73106e`; bsc `0x81de52...1d4ade`; bsc `0xbe924a...6d02ee`; bsc `0xe9fddd...60d96f`; bsc `0xee3f09...e3eea1` | ⚠️ Unaudited | Verified |
 | [mBTCProvider](./bsc-56/0xad745bcb555746317e3c2bc6aa583f43ad731521/) | bsc | [`0xad745b...731521`](./bsc-56/0xad745bcb555746317e3c2bc6aa583f43ad731521/) | ⚠️ Unaudited | Verified |
-| [Moolah (15 deployments)](./bsc-56/0x0af5cd9555bc52c34a5f7b20042109d0136bc34f/) | bsc | 15 deployments: bsc [`0x0af5cd...6bc34f`](./bsc-56/0x0af5cd9555bc52c34a5f7b20042109d0136bc34f/); bsc `0x0cc33d...16d779`; bsc `0x25a0e4...f9e473`; bsc `0x316039...95e316`; bsc `0x4b1ec9...3510b9`; bsc `0x627527...294be9`; bsc `0x6660a8...08e12e`; bsc `0x75c42e...059686`; bsc `0x7ee9ed...2b13b6`; bsc `0x8f73b6...8e5d8c`; bsc `0x932158...3bb79a`; bsc `0xa621ef...f14dca`; bsc `0xd3b6aa...53004a`; bsc `0xdb33cc...c20e2f`; bsc `0xf97ce1...0d8568` | ⚠️ Unaudited | Verified |
+| [Moolah](./bsc-56/0x8f73b65b4caaf64fba2af91cc5d4a2a1318e5d8c/) | bsc | [`0x8f73b6...8e5d8c`](./bsc-56/0x8f73b65b4caaf64fba2af91cc5d4a2a1318e5d8c/) | ⚠️ Unaudited | Verified |
 | [MultiPathConverter](./bsc-56/0xf44ef3dd983d4a8612c7176eb71243ac113179a3/) | bsc | [`0xf44ef3...3179a3`](./bsc-56/0xf44ef3dd983d4a8612c7176eb71243ac113179a3/) | ⚠️ Unaudited | Verified |
 | [OwnershipFacet (6 deployments)](./bsc-56/0x030e6f7089591f9b3145991c0228071d311f09a2/) | bsc | 6 deployments: bsc [`0x030e6f...1f09a2`](./bsc-56/0x030e6f7089591f9b3145991c0228071d311f09a2/); bsc `0x31527f...1e2f95`; bsc `0x620632...caab3f`; bsc `0x84047b...238c77`; bsc `0xb83d60...4abd6d`; bsc `0xdc7365...f622f8` | ⚠️ Unaudited | Verified |
 | [PancakeSwapExample (2 deployments)](./bsc-56/0x354c4bc4cc6c81362e049c0de57dffd3632e46bc/) | bsc | 2 deployments: bsc [`0x354c4b...2e46bc`](./bsc-56/0x354c4bc4cc6c81362e049c0de57dffd3632e46bc/); bsc `0x89f85f...675e1e` | ⚠️ Unaudited | Verified |

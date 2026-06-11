@@ -5,8 +5,8 @@
 - Project: SideShift (`sideshift`)
 - Website: [https://sideshift.ai](https://sideshift.ai)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:16.066Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:41:55.935Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: ethereum
 - Contract surface: 2 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $15,003,690.37

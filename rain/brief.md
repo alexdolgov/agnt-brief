@@ -5,8 +5,8 @@
 - Project: Rain (`rain`)
 - Website: [https://www.rain.one/](https://www.rain.one/)
 - Lifecycle: active (Tier 0, 18.4% below peak)
-- Generated: 2026-06-10T20:59:09.457Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:10:35.579Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: arbitrum
 - Contract surface: 28 unique implementations (134 raw deployments)
 - DeFi Llama TVL: $9,232,237.87

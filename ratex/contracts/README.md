@@ -1,6 +1,6 @@
 # ratex — Contract Index
 
-168 unique implementations on bsc · 400 deployments · 0 audited · 91 unaudited · 77 unverified
+166 unique implementations on bsc · 390 deployments · 0 audited · 89 unaudited · 77 unverified
 
 ## adapter (6)
 
@@ -18,7 +18,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [EarnPool (2 deployments)](./bsc-56/0x143c8b6b1161dec945d1fb7c2ca13c3b1d164642/) | bsc | 2 deployments: bsc [`0x143c8b...164642`](./bsc-56/0x143c8b6b1161dec945d1fb7c2ca13c3b1d164642/); bsc `0x66de07...1796f3` | ⚠️ Unaudited | Verified |
-| [ListaVault (6 deployments)](./bsc-56/0x0fee401a16837b8a8c6c8b9f8d88744b5e36e05c/) | bsc | 6 deployments: bsc [`0x0fee40...36e05c`](./bsc-56/0x0fee401a16837b8a8c6c8b9f8d88744b5e36e05c/); bsc `0x18fce5...2164c4`; bsc `0x307d13...30292a`; bsc `0x36a7bd...944c84`; bsc `0x7dc9d0...0c5ba0`; bsc `0xb7d76f...90a4a4` | ⚠️ Unaudited | Verified |
+| [ListaVault](./bsc-56/0x307d13267f360f78005f476fa913f8848f30292a/) | bsc | [`0x307d13...30292a`](./bsc-56/0x307d13267f360f78005f476fa913f8848f30292a/) | ⚠️ Unaudited | Verified |
 | [LisUSDPoolSet (2 deployments)](./bsc-56/0x37db1ae9b24055d1f9fe973aea40b7eb2995d0bf/) | bsc | 2 deployments: bsc [`0x37db1a...95d0bf`](./bsc-56/0x37db1ae9b24055d1f9fe973aea40b7eb2995d0bf/); bsc `0x586034...c7bb0f` | ⚠️ Unaudited | Verified |
 | [MasterVault](./bsc-56/0x034f0ae5d952c2ffe4247d396010c50ce6929b37/) | bsc | [`0x034f0a...929b37`](./bsc-56/0x034f0ae5d952c2ffe4247d396010c50ce6929b37/) | ⚠️ Unaudited | Verified |
 | [SnBnbYieldConverterStrategy (4 deployments)](./bsc-56/0x1101ff0f0545f3e2ed54fd986814295356923dc3/) | bsc | 4 deployments: bsc [`0x1101ff...923dc3`](./bsc-56/0x1101ff0f0545f3e2ed54fd986814295356923dc3/); bsc `0x84c445...b27190`; bsc `0x89a9bc...d3f2cf`; bsc `0xf9b24c...49ebaa` | ⚠️ Unaudited | Verified |
@@ -34,7 +34,7 @@
 | [SnStakeManager](./bsc-56/0x9b83f26e9626e81d8f7d059400c4e25ebd6cfb6c/) | bsc | [`0x9b83f2...6cfb6c`](./bsc-56/0x9b83f26e9626e81d8f7d059400c4e25ebd6cfb6c/) | ⚠️ Unaudited | Verified |
 | [TimeLock](./bsc-56/0x07d274a68393e8b8a2ccf19a2ce4ba3518735253/) | bsc | [`0x07d274...735253`](./bsc-56/0x07d274a68393e8b8a2ccf19a2ce4ba3518735253/) | ⚠️ Unaudited | Verified |
 
-## operational_periphery (37)
+## operational_periphery (36)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -57,7 +57,6 @@
 | [mCAKEOracle (2 deployments)](./bsc-56/0x01b39e969a76d2f7c9a8a81ecd1b2f7116b44e23/) | bsc | 2 deployments: bsc [`0x01b39e...b44e23`](./bsc-56/0x01b39e969a76d2f7c9a8a81ecd1b2f7116b44e23/); bsc `0x7db21c...1c3ce7` | ⚠️ Unaudited | Verified |
 | [MerkleVerifier (2 deployments)](./bsc-56/0xdeb5985e45edcb44af736f7739ec00983239ceaa/) | bsc | 2 deployments: bsc [`0xdeb598...39ceaa`](./bsc-56/0xdeb5985e45edcb44af736f7739ec00983239ceaa/); bsc `0xf625b8...39386d` | ⚠️ Unaudited | Verified |
 | [mwBETHOracle (2 deployments)](./bsc-56/0x3605c70f8512f6c257bbe144e365f1a564db95b1/) | bsc | 2 deployments: bsc [`0x3605c7...db95b1`](./bsc-56/0x3605c70f8512f6c257bbe144e365f1a564db95b1/); bsc `0xaa4912...6d50d0` | ⚠️ Unaudited | Verified |
-| [Oracle (2 deployments)](./bsc-56/0x6f6a144760f8b4d7876eb6155a52393a8304932b/) | bsc | 2 deployments: bsc [`0x6f6a14...04932b`](./bsc-56/0x6f6a144760f8b4d7876eb6155a52393a8304932b/); bsc `0xb5c57d...1e4391` | ⚠️ Unaudited | Verified |
 | [OracleCenter (2 deployments)](./bsc-56/0x47dbcae9c5a8eb4ed847fa9283c3e42457784a41/) | bsc | 2 deployments: bsc [`0x47dbca...784a41`](./bsc-56/0x47dbcae9c5a8eb4ed847fa9283c3e42457784a41/); bsc `0x946a68...f7c53b` | ⚠️ Unaudited | Verified |
 | [PTLinearDiscountOracle (2 deployments)](./bsc-56/0x138288f20a4d7c22e2b3fbffbf3a45e7c69ddd59/) | bsc | 2 deployments: bsc [`0x138288...9ddd59`](./bsc-56/0x138288f20a4d7c22e2b3fbffbf3a45e7c69ddd59/); bsc `0xa34627...505281` | ⚠️ Unaudited | Verified |
 | [PumpBtcOracle (2 deployments)](./bsc-56/0x420a16f03e7f623556ccee452d4caafe1fdde28b/) | bsc | 2 deployments: bsc [`0x420a16...dde28b`](./bsc-56/0x420a16f03e7f623556ccee452d4caafe1fdde28b/); bsc `0xd06233...544c6f` | ⚠️ Unaudited | Verified |
@@ -92,7 +91,7 @@
 | [NonTransferableLpERC20 (4 deployments)](./bsc-56/0x7082528e908bfd0c42d2134fe7065457cfcfb755/) | bsc | 4 deployments: bsc [`0x708252...cfb755`](./bsc-56/0x7082528e908bfd0c42d2134fe7065457cfcfb755/); bsc `0xb894de...4f9c26`; bsc `0xc74efa...4fb7dd`; bsc `0xee56ee...796dbb` | ⚠️ Unaudited | Verified |
 | [PToken (5 deployments)](./bsc-56/0x34f18e18330468ffaedfdcd8ffdaff23aa80eafc/) | bsc | 5 deployments: bsc [`0x34f18e...80eafc`](./bsc-56/0x34f18e18330468ffaedfdcd8ffdaff23aa80eafc/); bsc `0x660e36...5bc300`; bsc `0x79427f...94aec0`; bsc `0xbfc693...7f2750`; bsc `0xccbfd5...10241b` | ⚠️ Unaudited | Verified |
 
-## unknown (108)
+## unknown (107)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -113,7 +112,6 @@
 | [LinearDecrease (3 deployments)](./bsc-56/0x5faa44a3f92eab686f6ad1d1ad15a1995b20552e/) | bsc | 3 deployments: bsc [`0x5faa44...20552e`](./bsc-56/0x5faa44a3f92eab686f6ad1d1ad15a1995b20552e/); bsc `0xbaf8b4...e3cc03`; bsc `0xd209d1...d75283` | ⚠️ Unaudited | Verified |
 | [LiquidityImp](./bsc-56/0x8b3c75bf9e038d6ab44d803eb501bfbab5b4933c/) | bsc | [`0x8b3c75...b4933c`](./bsc-56/0x8b3c75bf9e038d6ab44d803eb501bfbab5b4933c/) | ⚠️ Unaudited | Verified |
 | [ListaAutoBuyback (2 deployments)](./bsc-56/0x0f4c128a811a0b0da2845634c736ff1d9f61d415/) | bsc | 2 deployments: bsc [`0x0f4c12...61d415`](./bsc-56/0x0f4c128a811a0b0da2845634c736ff1d9f61d415/); bsc `0xffd3a5...9908e6` | ⚠️ Unaudited | Verified |
-| [LisUSD](./bsc-56/0xf5bd9b192092517d60e90c9af17b69b134c4d7f8/) | bsc | [`0xf5bd9b...c4d7f8`](./bsc-56/0xf5bd9b192092517d60e90c9af17b69b134c4d7f8/) | ⚠️ Unaudited | Verified |
 | [LpProxy (3 deployments)](./bsc-56/0x5a0e3291514f5f1797a0c7efefdac81eec70ec01/) | bsc | 3 deployments: bsc [`0x5a0e32...70ec01`](./bsc-56/0x5a0e3291514f5f1797a0c7efefdac81eec70ec01/); bsc `0xac6d58...8d8460`; bsc `0xf87e70...377799` | ⚠️ Unaudited | Verified |
 | [Market](./bsc-56/0x64e30b9e176b4551b5d9f17d72716152540cbd98/) | bsc | [`0x64e30b...0cbd98`](./bsc-56/0x64e30b9e176b4551b5d9f17d72716152540cbd98/) | ⚠️ Unaudited | Verified |
 | [mBTCProvider](./bsc-56/0x8a016f1896dc2939ffdbb60f6e42bcc245e2bb0b/) | bsc | [`0x8a016f...e2bb0b`](./bsc-56/0x8a016f1896dc2939ffdbb60f6e42bcc245e2bb0b/) | ⚠️ Unaudited | Verified |
@@ -201,6 +199,6 @@
 | UnnamedContract | bsc | `0xfbf173...cb7e1c` | ❓ Unverified | Unverified |
 | UnnamedContract | bsc | `0xfd8ef9...4e46b9` | ❓ Unverified | Unverified |
 | [UpdateImp](./bsc-56/0xb844d65c4c27a57203989235a7cd765317b80f13/) | bsc | [`0xb844d6...b80f13`](./bsc-56/0xb844d65c4c27a57203989235a7cd765317b80f13/) | ⚠️ Unaudited | Verified |
-| [VeLista (3 deployments)](./bsc-56/0xd0c380d31db43cd291e2bbe2da2fd6dc877b87b3/) | bsc | 3 deployments: bsc [`0xd0c380...7b87b3`](./bsc-56/0xd0c380d31db43cd291e2bbe2da2fd6dc877b87b3/); bsc `0xee00de...e5319b`; bsc `0xf8d762...a9460a` | ⚠️ Unaudited | Verified |
+| [VeLista](./bsc-56/0xd0c380d31db43cd291e2bbe2da2fd6dc877b87b3/) | bsc | [`0xd0c380...7b87b3`](./bsc-56/0xd0c380d31db43cd291e2bbe2da2fd6dc877b87b3/) | ⚠️ Unaudited | Verified |
 | [VeListaRewardsCourier (2 deployments)](./bsc-56/0x87e994de2a997385aff4f991c233f07bb9f9070f/) | bsc | 2 deployments: bsc [`0x87e994...f9070f`](./bsc-56/0x87e994de2a997385aff4f991c233f07bb9f9070f/); bsc `0xca8d24...2b72e9` | ⚠️ Unaudited | Verified |
 | [VotingIncentive (2 deployments)](./bsc-56/0x05ac03faeb31c8102a29dc1fa4365dc9e18a4c9c/) | bsc | 2 deployments: bsc [`0x05ac03...8a4c9c`](./bsc-56/0x05ac03faeb31c8102a29dc1fa4365dc9e18a4c9c/); bsc `0xbc380e...570b82` | ⚠️ Unaudited | Verified |

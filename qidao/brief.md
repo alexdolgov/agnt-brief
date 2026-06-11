@@ -7,8 +7,8 @@
 - Project: QiDao (`qidao`)
 - Website: [https://app.mai.finance](https://app.mai.finance)
 - Lifecycle: declining (Tier 0, 99.2% below peak)
-- Generated: 2026-06-10T20:59:09.448Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:08:51.965Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: arbitrum, avalanche, base, bsc, cronos, ethereum, fantom, fraxtal, gnosis, harmony, kava, linea, mantle, metis, moonbeam, moonriver, optimism, polygon, polygon-zkevm, zksync-era
 - Contract surface: 298 unique implementations (298 raw deployments)
 - DeFi Llama TVL: $3,042,769.70

@@ -7,8 +7,8 @@
 - Project: RateX (`ratex`)
 - Website: [https://app.rate-x.io/referral?ref=VS71Wksp](https://app.rate-x.io/referral?ref=VS71Wksp)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:09.483Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:11:54.790Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: bsc
 - Contract surface: 166 unique implementations (390 raw deployments)
 - DeFi Llama TVL: $5,218,059.00

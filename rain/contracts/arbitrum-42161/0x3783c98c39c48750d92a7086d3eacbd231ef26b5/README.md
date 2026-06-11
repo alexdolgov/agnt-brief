@@ -4,7 +4,7 @@
 |---|---|
 | Chain | arbitrum (42161) |
 | Address | `0x3783c98c39c48750d92a7086d3eacbd231ef26b5` |
-| Role | unknown |
+| Role | proxy |
 | Origin | standard_library |
 | Audited | No |
 | Audits | n/a |

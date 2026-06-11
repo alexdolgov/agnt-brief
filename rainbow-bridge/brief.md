@@ -7,8 +7,8 @@
 - Project: Rainbow Bridge (`rainbow-bridge`)
 - Website: [https://rainbowbridge.app/transfer](https://rainbowbridge.app/transfer)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:09.461Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:09:42.664Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $2,108,492.13

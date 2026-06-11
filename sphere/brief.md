@@ -5,8 +5,8 @@
 - Project: SPHERE (`sphere`)
 - Website: [https://www.sphere.finance](https://www.sphere.finance)
 - Lifecycle: active (Tier 0, 75.4% below peak)
-- Generated: 2026-06-10T20:59:16.389Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:56:25.926Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: arbitrum, avalanche, base, kava, polygon
 - Contract surface: 217 unique implementations (648 raw deployments)
 - DeFi Llama TVL: $6,675,979.00

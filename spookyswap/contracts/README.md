@@ -1,6 +1,6 @@
 # spookyswap — Contract Index
 
-137 unique implementations across 2 chains · 171 deployments · 0 audited · 37 unaudited · 100 unverified
+136 unique implementations across 2 chains · 170 deployments · 0 audited · 36 unaudited · 100 unverified
 
 ## adapter (3)
 
@@ -67,7 +67,7 @@
 | [NonfungibleTokenPositionDescriptor](./sonic-146/0x7d0776b117c87f4bc174870ec19719972853d32d/) | sonic | [`0x7d0776...53d32d`](./sonic-146/0x7d0776b117c87f4bc174870ec19719972853d32d/) | ⚠️ Unaudited | Verified |
 | PrizeToken | sonic | `0x78d976...d94c69` | ⚠️ Unaudited | Verified |
 
-## unknown (112)
+## unknown (111)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -76,7 +76,6 @@
 | [BrewBooV3 (3 deployments)](./sonic-146/0x79710d58c3600401fe21e799ff97f37100c8b179/) | sonic | 3 deployments: sonic [`0x79710d...c8b179`](./sonic-146/0x79710d58c3600401fe21e799ff97f37100c8b179/); sonic `0x84a190...6b09b0`; sonic `0xc3815b...ef00ea` | ⚠️ Unaudited | Verified |
 | [FeeSender](./sonic-146/0x2bb0bda25fbf103176337551729741b4d5748e0b/) | sonic | [`0x2bb0bd...748e0b`](./sonic-146/0x2bb0bda25fbf103176337551729741b4d5748e0b/) | ⚠️ Unaudited | Verified |
 | [LeverageFiller](./sonic-146/0x053714a436ea716e14b3430f2ee8e2488c83f16a/) | sonic | [`0x053714...83f16a`](./sonic-146/0x053714a436ea716e14b3430f2ee8e2488c83f16a/) | ⚠️ Unaudited | Verified |
-| [Permit2](./sonic-146/0x981ef1f1644715ae797434de4c0aad16e6162723/) | sonic | [`0x981ef1...162723`](./sonic-146/0x981ef1f1644715ae797434de4c0aad16e6162723/) | ⚠️ Unaudited | Verified |
 | [RfqEngine](./sonic-146/0x20116919299625b1b3e474d5a594a5b4ed13e95b/) | sonic | [`0x201169...13e95b`](./sonic-146/0x20116919299625b1b3e474d5a594a5b4ed13e95b/) | ⚠️ Unaudited | Verified |
 | [SignatureChecker (6 deployments)](./sonic-146/0x01798076f71e0e48c37b670af7752d74d6e6bf1b/) | sonic | 6 deployments: sonic [`0x017980...e6bf1b`](./sonic-146/0x01798076f71e0e48c37b670af7752d74d6e6bf1b/); sonic `0x26c060...7d4e81`; sonic `0x5d0311...68f887`; sonic `0x6edf3f...b6d820`; sonic `0xb4a197...2dd7cf`; sonic `0xb90f6a...b502fe` | ⚠️ Unaudited | Verified |
 | [SpookyLaunchpad](./sonic-146/0xb52c0eb864722c313d2c084c6ffa2a6e46850c31/) | sonic | [`0xb52c0e...850c31`](./sonic-146/0xb52c0eb864722c313d2c084c6ffa2a6e46850c31/) | ⚠️ Unaudited | Verified |

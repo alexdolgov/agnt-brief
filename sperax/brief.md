@@ -7,8 +7,8 @@
 - Project: Sperax (`sperax`)
 - Website: [http://sperax.io](http://sperax.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:16.359Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:59:36.021Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: arbitrum, bsc, ethereum
 - Contract surface: 142 unique implementations (159 raw deployments)
 - DeFi Llama TVL: $2,063,201.00

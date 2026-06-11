@@ -46,16 +46,17 @@
 | FarmRegistry | arbitrum | `0x45bc6b...e222e0` | ❓ Unverified | Unverified |
 | [RewarderFactory](./arbitrum-42161/0x926477baf60c25857419cc9bf52e914881e1bdd3/) | arbitrum | [`0x926477...e1bdd3`](./arbitrum-42161/0x926477baf60c25857419cc9bf52e914881e1bdd3/) | ✅ Audited | Verified |
 
-## token (4)
+## token (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [HypERC20Collateral](./bsc-56/0x09614d7520be83baec78c21bcabf574a0a274a22/) | bsc | [`0x09614d...274a22`](./bsc-56/0x09614d7520be83baec78c21bcabf574a0a274a22/) | ⚠️ Unaudited | Verified |
+| [Sperax](./bsc-56/0xdb3c487c0c589f0e5590893f070abb534c1fb08c/) | bsc | [`0xdb3c48...1fb08c`](./bsc-56/0xdb3c487c0c589f0e5590893f070abb534c1fb08c/) | ⚠️ Unaudited | Verified |
 | [SperaxToken (5 deployments)](./bsc-56/0x1a9fd6ec3144da3dd6ea13ec1c25c58423a379b1/) | bsc | 5 deployments: ethereum `0x963148...215bc3`; ethereum `0xb4a3b0...d59008`; ethereum `0xfb931d...ac4f93`; bsc [`0x1a9fd6...a379b1`](./bsc-56/0x1a9fd6ec3144da3dd6ea13ec1c25c58423a379b1/); bsc `0x8ae739...ac1e0e` | ⚠️ Unaudited | Verified |
 | [SperaxTokenL1](./ethereum-1/0x2a95fe4c7e64e09856989f9ea0b57b9ab5f770cb/) | ethereum | [`0x2a95fe...f770cb`](./ethereum-1/0x2a95fe4c7e64e09856989f9ea0b57b9ab5f770cb/) | ⚠️ Unaudited | Verified |
 | [SperaxTokenL2](./arbitrum-42161/0x5575552988a3a80504bbaeb1311674fcfd40ad4b/) | arbitrum | [`0x557555...40ad4b`](./arbitrum-42161/0x5575552988a3a80504bbaeb1311674fcfd40ad4b/) | ✅ Audited | Verified |
 
-## unknown (119)
+## unknown (118)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -68,7 +69,6 @@
 | [FeeCalculator](./arbitrum-42161/0xd122840fa5b48b2ddb723ccc5928f88dcb558afc/) | arbitrum | [`0xd12284...558afc`](./arbitrum-42161/0xd122840fa5b48b2ddb723ccc5928f88dcb558afc/) | ✅ Audited | Verified |
 | [SPA_USDs_Farm](./arbitrum-42161/0x84f7f3246fd8beaac8af4ab08a2161506cb97174/) | arbitrum | [`0x84f7f3...b97174`](./arbitrum-42161/0x84f7f3246fd8beaac8af4ab08a2161506cb97174/) | ⚠️ Unaudited | Verified |
 | SPABuyback | arbitrum | `0xfbc0d3...77afe3` | ❓ Unverified | Unverified |
-| [Sperax](./bsc-56/0xdb3c487c0c589f0e5590893f070abb534c1fb08c/) | bsc | [`0xdb3c48...1fb08c`](./bsc-56/0xdb3c487c0c589f0e5590893f070abb534c1fb08c/) | ⚠️ Unaudited | Verified |
 | [Staking](./arbitrum-42161/0xc150cbddc5932258fac768beb4d2352d127039fd/) | arbitrum | [`0xc150cb...7039fd`](./arbitrum-42161/0xc150cbddc5932258fac768beb4d2352d127039fd/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x318d98...403847` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x7ed4fd...1c8f56` | ❓ Unverified | Unverified |

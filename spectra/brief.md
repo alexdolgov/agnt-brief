@@ -5,8 +5,8 @@
 - Project: Spectra (`spectra`)
 - Website: [https://www.spectra.finance](https://www.spectra.finance)
 - Lifecycle: active (Tier 0, 81.8% below peak)
-- Generated: 2026-06-10T20:59:16.340Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:56:26.614Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: arbitrum, avalanche, base, bsc, ethereum, hyperliquid, optimism, sonic
 - Contract surface: 214 unique implementations (1250 raw deployments)
 - DeFi Llama TVL: $50,945,360.00

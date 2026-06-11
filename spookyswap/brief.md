@@ -7,8 +7,8 @@
 - Project: SpookySwap (`spookyswap`)
 - Website: [https://spooky.fi](https://spooky.fi)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:16.411Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:59:39.846Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: fantom, sonic
 - Contract surface: 136 unique implementations (170 raw deployments)
 - DeFi Llama TVL: $1,350,469.00

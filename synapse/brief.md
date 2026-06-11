@@ -7,8 +7,8 @@
 - Project: Synapse (`synapse`)
 - Website: [https://synapseprotocol.com](https://synapseprotocol.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:17.113Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:24:12.689Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: arbitrum, aurora, avalanche, base, blast, boba, bsc, canto, cronos, ethereum, fantom, harmony, klaytn, linea, metis, moonbeam, moonriver, optimism, polygon, scroll
 - Contract surface: 824 unique implementations (2632 raw deployments)
 - DeFi Llama TVL: $16,678,188.80

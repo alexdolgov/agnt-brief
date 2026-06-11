@@ -5,8 +5,8 @@
 - Project: SyncSwap Protocol (`syncswap-protocol`)
 - Website: [https://syncswap.xyz/](https://syncswap.xyz/)
 - Lifecycle: active (Tier 0, 89.4% below peak)
-- Generated: 2026-06-10T20:59:17.132Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:25:19.339Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: linea, scroll, zksync-era
 - Contract surface: 157 unique implementations (194 raw deployments)
 - DeFi Llama TVL: $9,687,624.00

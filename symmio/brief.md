@@ -5,8 +5,8 @@
 - Project: SYMMIO (`symmio`)
 - Website: [https://www.symm.io/](https://www.symm.io/)
 - Lifecycle: active (Tier 0, 63.3% below peak)
-- Generated: 2026-06-10T20:59:16.993Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:23:07.285Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: arbitrum, base, berachain, bsc, mantle, mode, polygon, sonic
 - Contract surface: 168 unique implementations (1064 raw deployments)
 - DeFi Llama TVL: $3,505,989.77

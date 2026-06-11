@@ -1,6 +1,6 @@
 # sx-rollup-bridge — Contract Index
 
-134 unique implementations on ethereum · 138 deployments · 0 audited · 69 unaudited · 65 unverified
+133 unique implementations on ethereum · 137 deployments · 0 audited · 68 unaudited · 65 unverified
 
 ## governance (48)
 
@@ -78,7 +78,7 @@
 | [TokenTransferProxy](./ethereum-1/0x60e8aa8a997da2c58bc9894aaa08a28524e63bb5/) | ethereum | [`0x60e8aa...e63bb5`](./ethereum-1/0x60e8aa8a997da2c58bc9894aaa08a28524e63bb5/) | ⚠️ Unaudited | Verified |
 | [WETH](./ethereum-1/0x9d7c2a11322416436f0827e7bbdb3ae40ba693f9/) | ethereum | [`0x9d7c2a...a693f9`](./ethereum-1/0x9d7c2a11322416436f0827e7bbdb3ae40ba693f9/) | ⚠️ Unaudited | Verified |
 
-## unknown (78)
+## unknown (77)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -89,7 +89,6 @@
 | [Fills](./ethereum-1/0x9d5323e0b722647dfe44512017f451dc1a2f3a8a/) | ethereum | [`0x9d5323...2f3a8a`](./ethereum-1/0x9d5323e0b722647dfe44512017f451dc1a2f3a8a/) | ⚠️ Unaudited | Verified |
 | [OrderValidator](./ethereum-1/0x3305399e1954441300138f71fdfe96a8943b3119/) | ethereum | [`0x330539...3b3119`](./ethereum-1/0x3305399e1954441300138f71fdfe96a8943b3119/) | ⚠️ Unaudited | Verified |
 | [OutcomeReporter](./ethereum-1/0x78b5731afa14bf0f023f803220a6c24edf04de75/) | ethereum | [`0x78b573...04de75`](./ethereum-1/0x78b5731afa14bf0f023f803220a6c24edf04de75/) | ⚠️ Unaudited | Verified |
-| [SportX](./ethereum-1/0x99fe3b1391503a1bc1788051347a1324bff41452/) | ethereum | [`0x99fe3b...f41452`](./ethereum-1/0x99fe3b1391503a1bc1788051347a1324bff41452/) | ⚠️ Unaudited | Verified |
 | [SuperAdminRole](./ethereum-1/0x87d712688a706d4343704eeb382cb72abe76452e/) | ethereum | [`0x87d712...76452e`](./ethereum-1/0x87d712688a706d4343704eeb382cb72abe76452e/) | ⚠️ Unaudited | Verified |
 | [SX (3 deployments)](./ethereum-1/0x2571e3232ea10140b676c42b4bd1956c08d974fc/) | ethereum | 3 deployments: ethereum [`0x2571e3...d974fc`](./ethereum-1/0x2571e3232ea10140b676c42b4bd1956c08d974fc/); ethereum `0xd26ea9...b38a1a`; ethereum `0xf6db95...50ea4a` | ⚠️ Unaudited | Verified |
 | [SXNetwork (2 deployments)](./ethereum-1/0x309ef6c302f4b617a6723a8a26d9bb2503d07c41/) | ethereum | 2 deployments: ethereum [`0x309ef6...d07c41`](./ethereum-1/0x309ef6c302f4b617a6723a8a26d9bb2503d07c41/); ethereum `0xbe9f61...d96624` | ⚠️ Unaudited | Verified |

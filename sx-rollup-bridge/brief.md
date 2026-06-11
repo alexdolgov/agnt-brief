@@ -7,8 +7,8 @@
 - Project: SX Rollup Bridge (`sx-rollup-bridge`)
 - Website: [https://sx.bet/wallet/bridge](https://sx.bet/wallet/bridge)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:16.944Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:24:12.648Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: ethereum
 - Contract surface: 133 unique implementations (137 raw deployments)
 - DeFi Llama TVL: $6,369,742.14

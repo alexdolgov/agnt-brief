@@ -1,8 +1,8 @@
 # syncswap-protocol — Contract Index
 
-158 unique implementations across 3 chains · 198 deployments · 7 audited · 24 unaudited · 127 unverified
+157 unique implementations across 3 chains · 194 deployments · 7 audited · 23 unaudited · 127 unverified
 
-## adapter (5)
+## adapter (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -10,7 +10,6 @@
 | [SyncSwapRouter](./linea-59144/0x80e38291e06339d10aab483c65695d004dbd5c69/) | linea | [`0x80e382...bd5c69`](./linea-59144/0x80e38291e06339d10aab483c65695d004dbd5c69/) | ✅ Audited | Verified |
 | [SyncSwapRouterV2 (3 deployments)](./linea-59144/0x60f9b3a705f1fbdcdee1ba2c2331b8aa8f98cf3f/) | linea | 3 deployments: linea [`0x60f9b3...98cf3f`](./linea-59144/0x60f9b3a705f1fbdcdee1ba2c2331b8aa8f98cf3f/); linea `0xc2a194...3e8a1e`; scroll `0xfd541d...dc9115` | ⚠️ Unaudited | Verified |
 | [SyncSwapRouterV3 (6 deployments)](./linea-59144/0x0b64ba230d4c9d133aa7a52ceff1620178b07c55/) | linea | 6 deployments: linea [`0x0b64ba...b07c55`](./linea-59144/0x0b64ba230d4c9d133aa7a52ceff1620178b07c55/); linea `0x363277...61fd9d`; linea `0x41706c...8c1cf7`; linea `0x60210a...c059e5`; linea `0x62f9d1...16f89f`; linea `0x729680...4755f0` | ⚠️ Unaudited | Verified |
-| [UniversalRouter](./linea-59144/0x07507a719e7d040ebcbcf54715d7ce7ce5241c91/) | linea | [`0x07507a...241c91`](./linea-59144/0x07507a719e7d040ebcbcf54715d7ce7ce5241c91/) | ⚠️ Unaudited | Verified |
 
 ## core_logic (5)
 
@@ -27,7 +26,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [FeeManagerV3 (5 deployments)](./linea-59144/0x019f6f1d08d9b76969132aa6e29cb6a5cadc5785/) | linea | 5 deployments: linea [`0x019f6f...dc5785`](./linea-59144/0x019f6f1d08d9b76969132aa6e29cb6a5cadc5785/); linea `0x2a1417...b20fe6`; linea `0x4100b8...5d8e17`; linea `0x49d982...e110a2`; linea `0xa4bc20...1bd8a1` | ⚠️ Unaudited | Verified |
-| [NonfungiblePositionManager (2 deployments)](./linea-59144/0x19bbe6bb16d9ff3f8c2fbfc5dfa5805dedd9a09d/) | linea | 2 deployments: linea [`0x19bbe6...d9a09d`](./linea-59144/0x19bbe6bb16d9ff3f8c2fbfc5dfa5805dedd9a09d/); linea `0xcc00f9...9e4d75` | ⚠️ Unaudited | Verified |
+| [NonfungiblePositionManager](./linea-59144/0xcc00f934a7541868b9a09f98d7928f727b9e4d75/) | linea | [`0xcc00f9...9e4d75`](./linea-59144/0xcc00f934a7541868b9a09f98d7928f727b9e4d75/) | ⚠️ Unaudited | Verified |
 | [SyncSwapFeeManager](./linea-59144/0x12af3ec993ec5d5bd789b3e989c9e95a2f6c586d/) | linea | [`0x12af3e...6c586d`](./linea-59144/0x12af3ec993ec5d5bd789b3e989c9e95a2f6c586d/) | ✅ Audited | Verified |
 
 ## operational_periphery (1)
@@ -61,7 +60,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [NonfungibleTokenPositionDescriptorLinea (4 deployments)](./linea-59144/0x575443cb6b368842f77f6d2054259a4d16fc6783/) | linea | 4 deployments: linea [`0x575443...fc6783`](./linea-59144/0x575443cb6b368842f77f6d2054259a4d16fc6783/); linea `0x6c3930...0c2994`; linea `0xe35730...353431`; linea `0xf96d83...f76e41` | ⚠️ Unaudited | Verified |
+| [NonfungibleTokenPositionDescriptorLinea (2 deployments)](./linea-59144/0xe357304dc2edd2f9affbc64d69e7e278ef353431/) | linea | 2 deployments: linea [`0xe35730...353431`](./linea-59144/0xe357304dc2edd2f9affbc64d69e7e278ef353431/); linea `0xf96d83...f76e41` | ⚠️ Unaudited | Verified |
 | [WETH9](./linea-59144/0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f/) | linea | [`0xe5d7c2...5cf34f`](./linea-59144/0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f/) | ⚠️ Unaudited | Verified |
 
 ## unknown (131)

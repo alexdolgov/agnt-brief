@@ -602,11 +602,11 @@
 | [swell](./swell/) | $130.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [swellchain-bridge](./swellchain-bridge/) | $1.2M | 0.0% | ? | declining | 0 | 10 | 2026-06-11 |
 | [switcheo-finance](./switcheo-finance/) | $68.3M | 0.0% | $68.3M | active | 0 | 47 | 2026-06-11 |
-| [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 133 | 2026-06-10 |
-| [symbiosis](./symbiosis/) | $236.1M | 15.4% | $236.1M | active | 15 | 40 | 2026-06-10 |
-| [symmio](./symmio/) | $24.5 | 0.0% | $24.5 | active | 0 | 168 | 2026-06-10 |
-| [synapse](./synapse/) | $25.6M | 0.0% | $25.6M | declining | 0 | 824 | 2026-06-10 |
-| [syncswap-protocol](./syncswap-protocol/) | $453.7K | 23.3% | ? | active | 8 | 157 | 2026-06-10 |
+| [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 133 | 2026-06-11 |
+| [symbiosis](./symbiosis/) | $236.1M | 15.4% | $236.1M | active | 15 | 40 | 2026-06-11 |
+| [symmio](./symmio/) | $24.5 | 0.0% | $24.5 | active | 0 | 168 | 2026-06-11 |
+| [synapse](./synapse/) | $25.6M | 0.0% | $25.6M | declining | 0 | 824 | 2026-06-11 |
+| [syncswap-protocol](./syncswap-protocol/) | $453.7K | 23.3% | ? | active | 8 | 157 | 2026-06-11 |
 | [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 0 | 481 | 2026-06-10 |
 | [synthetix](./synthetix/) | $10.3M | 0.0% | $10.3M | active | 0 | 13 | 2026-06-10 |
 | [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 0 | 1 | 2026-06-10 |

@@ -7,8 +7,8 @@
 - Project: Pleasing Gold (`pleasing-gold`)
 - Website: [https://www.pleasinggold.com/](https://www.pleasinggold.com/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:09.347Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:55:19.291Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: arbitrum
 - Contract surface: 8 unique implementations (11 raw deployments)
 - DeFi Llama TVL: $87,873,758.84

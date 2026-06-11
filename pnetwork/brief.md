@@ -7,8 +7,8 @@
 - Project: pNetwork (`pnetwork`)
 - Website: [https://p.network](https://p.network)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:09.349Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:56:27.940Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: arbitrum, gnosis, polygon
 - Contract surface: 10 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $13,099,805.90

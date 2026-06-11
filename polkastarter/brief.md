@@ -5,8 +5,8 @@
 - Project: Polkastarter (`polkastarter`)
 - Website: [https://polkastarter.com/#upcoming-projects](https://polkastarter.com/#upcoming-projects)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:09.350Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:57:24.583Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $2,996,295.21

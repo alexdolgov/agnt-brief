@@ -5,8 +5,8 @@
 - Project: Polygon zkEVM Bridge (`polygon-zkevm-bridge`)
 - Website: [https://portal.polygon.technology/bridge](https://portal.polygon.technology/bridge)
 - Lifecycle: active (Tier 0, 82.6% below peak)
-- Generated: 2026-06-10T20:59:09.351Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:55:23.087Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $77,973,709.76

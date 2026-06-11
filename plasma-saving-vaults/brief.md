@@ -7,8 +7,8 @@
 - Project: Plasma Saving Vaults (`plasma-saving-vaults`)
 - Website: [https://app.plasma.to/](https://app.plasma.to/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:09.343Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:56:26.679Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: plasma
 - Contract surface: 6 unique implementations (14 raw deployments)
 - DeFi Llama TVL: $45,454,265.53

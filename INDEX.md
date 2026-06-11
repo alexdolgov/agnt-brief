@@ -191,7 +191,7 @@
 | [eth-strategy](./eth-strategy/) | $30.8M | 0.0% | $30.8M | active | 1 | 49 | 2026-06-10 |
 | [ethereal-dex](./ethereal-dex/) | $30.7M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
 | [ethereal-season-zero](./ethereal-season-zero/) | $2.8M | 0.0% | $2.8M | dead | 4 | 1 | 2026-05-24 |
-| [etherex](./etherex/) | $3.6M | 36.2% | ? | declining | 2 | 58 | 2026-06-10 |
+| [etherex](./etherex/) | $1.4M | 36.2% | ? | declining | 4 | 58 | 2026-06-11 |
 | [etherflip](./etherflip/) | $1.6M | 0.0% | ? | active | 0 | 7 | 2026-06-10 |
 | [etherfuse](./etherfuse/) | $5.4M | 0.0% | ? | active | 0 | 25 | 2026-06-10 |
 | [ethichub](./ethichub/) | $22.7M | 0.0% | $22.7M | active | 2 | 58 | 2026-06-10 |
@@ -246,7 +246,7 @@
 | [h2-finance](./h2-finance/) | $3.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [hakka-finance](./hakka-finance/) | $5.4K | 26.5% | $5.4K | active | 7 | 37 | 2026-06-10 |
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [hanji-protocol](./hanji-protocol/) | $2.7M | 0.0% | ? | declining | 0 | 289 | 2026-06-10 |
+| [hanji-protocol](./hanji-protocol/) | $728.4K | 0.0% | ? | declining | 2 | 289 | 2026-06-11 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 10.0% | ? | active | 4 | 127 | 2026-06-10 |
 | [harvest-finance](./harvest-finance/) | $12.9M | 46.4% | ? | declining | 5 | 445 | 2026-06-10 |
 | [hashdao-finance](./hashdao-finance/) | $2.8M | 55.6% | ? | dead | 3 | 50 | 2026-06-10 |
@@ -260,7 +260,7 @@
 | [hemibtc](./hemibtc/) | $46.2K | 0.0% | $46.2K | active | 5 | 46 | 2026-06-11 |
 | [hera-finance](./hera-finance/) | $6.5M | 42.9% | ? | active | 3 | 28 | 2026-06-10 |
 | [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-06-10 |
-| [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 2 | 402 | 2026-06-10 |
+| [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-06-11 |
 | [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 4 | 2 | 2026-06-10 |
 | [hopr](./hopr/) | $1.2M | 4.3% | ? | active | 1 | 81 | 2026-06-10 |
 | [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
@@ -297,7 +297,7 @@
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-06-11 |
 | [kaio](./kaio/) | $60.8M | 0.0% | ? | declining | 0 | 35 | 2026-06-11 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | active | 0 | 2 | 2026-06-11 |
-| [kasu](./kasu/) | $10.3M | 0.0% | ? | active | 0 | 22 | 2026-06-11 |
+| [kasu](./kasu/) | $10.6M | 0.0% | ? | active | 2 | 22 | 2026-06-11 |
 | [katana-pre-launch](./katana-pre-launch/) | $307.6K | 0.0% | $307.6K | active | 28 | 165 | 2026-06-11 |
 | [kava-earn](./kava-earn/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
 | [kava-lend](./kava-lend/) | $7.8M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
@@ -354,7 +354,7 @@
 | [mantra-dao](./mantra-dao/) | $611.0M | 0.0% | $611.0M | declining | 1 | 195 | 2026-06-11 |
 | [matstake](./matstake/) | $4.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [maverick-protocol](./maverick-protocol/) | $26.8M | 35.3% | $26.8M | declining | 7 | 93 | 2026-06-11 |
-| [mcdex](./mcdex/) | $1.1M | 8.3% | $1.1M | dead | 2 | 1465 | 2026-06-11 |
+| [mcdex](./mcdex/) | $1.1M | 8.3% | $1.1M | dead | 4 | 1465 | 2026-06-11 |
 | [mdex](./mdex/) | $235.5K | 85.7% | $20.2K | declining | 3 | 13 | 2026-06-11 |
 | [meeds-finance](./meeds-finance/) | $1.8M | 0.0% | $1.8M | unknown | 0 | 4 | 2026-06-11 |
 | [meld-gold](./meld-gold/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-05-31 |

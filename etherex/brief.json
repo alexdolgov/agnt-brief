@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "etherex",
-  "generated_at": "2026-06-10T23:12:10.523Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-11T11:52:32.272Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "etherex",
@@ -43,10 +43,10 @@
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 11,
     "coverage_pct": 36.2,
-    "total_audits": 2,
+    "total_audits": 4,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 3577570,
-    "tvl_usd": 3577570,
+    "dl_tvl_usd": 1355190,
+    "tvl_usd": 1355190,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -62,9 +62,9 @@
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 1,
-      "aging": 1,
+      "aging": 2,
       "stale": 0,
-      "unknown": 0
+      "unknown": 1
     }
   },
   "topography": {
@@ -2629,6 +2629,48 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11903,
+      "audit_key": "audit-11903",
+      "report_name": "diligence.consensys.io/audits/2024/08/ramses-v3",
+      "report_url": "https://diligence.security/audits/2024/08/ramses-v3",
+      "auditor": "Consensys Diligence",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11904,
+      "audit_key": "audit-11904",
+      "report_name": "Report",
+      "report_url": "https://code4rena.com/reports/2024-10-ramses-exchange",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "aging",
+      "date": "2024-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -2911,6 +2953,14 @@
       {
         "audit_id": 2725,
         "report_name": "cantina.xyz/portfolio/98695d75-ee7d-4e1c-aa96-6379f73c5b2c"
+      },
+      {
+        "audit_id": 11903,
+        "report_name": "diligence.consensys.io/audits/2024/08/ramses-v3"
+      },
+      {
+        "audit_id": 11904,
+        "report_name": "Report"
       }
     ],
     "inherited_remapped_matches": []

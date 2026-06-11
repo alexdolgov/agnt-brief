@@ -7,11 +7,11 @@
 - Project: MCDEX (`mcdex`)
 - Website: [https://mux.network/](https://mux.network/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-11T00:58:32.950Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
+- Generated: 2026-06-11T11:52:33.565Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, avalanche, bsc, ethereum, fantom, optimism
 - Contract surface: 1465 unique implementations (2597 raw deployments)
-- DeFi Llama TVL: $1,185,811.48
+- DeFi Llama TVL: $943,029.15
 - On-chain TVL (included contracts): $1,130,116.41
 - TVL by chain: Arbitrum $861,918.47 | Bsc $263,607.64 | Avalanche $4,590.31
 
@@ -31,12 +31,12 @@ The MCDEX family serves as the core perpetual trading engine, while chain-specif
 - Unverified implementations: 1308
 - Unique implementations: 1465
 - Raw deployments: 2597
-- Audits discovered: 2
+- Audits discovered: 4
 - Scoreable audits (matched contracts): 1
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/mux/information))
 - ASD (verified + unaudited TVL): $1,130,116.41
-- Latest audit: 2022-06 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Latest audit: 2025 (aging)
+- Staleness: 0 fresh, 1 aging, 1 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [dead]. ASD of $1,130,116.41 represents exposure in a protocol with dead activity.
 
@@ -1550,6 +1550,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [Certik-Audit-20220601.pdf](https://github.com/mux-world/mux-protocol/blob/main/audit/Certik-Audit-20220601.pdf) | CertiK | Audit | 2022-06 | stale | Direct | contract_name | 198 | high |
 | [Active Bug Bounty Program](https://immunefi.com/bug-bounty/mux/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
+| [DL audit link](https://skynet.certik.com/projects/mux-protocol) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [* MUX V3 Trading Protocol contracts have been audited by [Guardian](https://guardianaudits.com/). Please check [here]()](https://github.com/mux-world/mux3-protocol/blob/main/audit/MUX%203%20Protocol%20Report.pdf) | Guardian | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -1648,9 +1650,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=198
+
+Zero-match audit list:
+
+- [11956] DL audit link
+- [11957] * MUX V3 Trading Protocol contracts have been audited by [Guardian](https://guardianaudits.com/). Please check [here]()
 
 Fork inheritance lineage and inherited audits are included when available.

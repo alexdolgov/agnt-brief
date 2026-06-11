@@ -7,11 +7,11 @@
 - Project: Etherex (`etherex`)
 - Website: [https://etherex.finance/](https://etherex.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T23:12:10.523Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-11T11:52:32.272Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: linea
 - Contract surface: 58 unique implementations (130 raw deployments)
-- DeFi Llama TVL: $3,577,570.00
+- DeFi Llama TVL: $1,355,190.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -31,11 +31,11 @@ The Core and Concentrated Liquidity families share the Access Control infrastruc
 - Unverified implementations: 11
 - Unique implementations: 58
 - Raw deployments: 130
-- Audits discovered: 2
+- Audits discovered: 4
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-10 (fresh)
-- Staleness: 1 fresh, 1 aging, 0 stale, 0 unknown
+- Staleness: 1 fresh, 2 aging, 0 stale, 1 unknown
 - Tier 1 coverage: 36.2% (Spearbit)
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -142,6 +142,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [cantina.xyz/portfolio/48fc9b98-ded3-43fa-80a2-5aedb3a5a51e](https://cantina.xyz/portfolio/48fc9b98-ded3-43fa-80a2-5aedb3a5a51e) | Spearbit | Audit | 2025-10 | fresh | Direct | contract_name | 72 | medium |
 | [cantina.xyz/portfolio/98695d75-ee7d-4e1c-aa96-6379f73c5b2c](https://cantina.xyz/portfolio/98695d75-ee7d-4e1c-aa96-6379f73c5b2c) | Spearbit | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
+| [diligence.consensys.io/audits/2024/08/ramses-v3](https://diligence.security/audits/2024/08/ramses-v3) | Consensys Diligence | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Report](https://code4rena.com/reports/2024-10-ramses-exchange) | Code4rena | Contest | 2024-10 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -188,7 +190,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: medium=1
 - Match method counts: extraction_exact=72
@@ -196,5 +198,7 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [2725] cantina.xyz/portfolio/98695d75-ee7d-4e1c-aa96-6379f73c5b2c
+- [11903] diligence.consensys.io/audits/2024/08/ramses-v3
+- [11904] Report
 
 Fork inheritance lineage and inherited audits are included when available.

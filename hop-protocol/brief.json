@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hop-protocol",
-  "generated_at": "2026-06-10T23:51:30.394Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-11T11:50:34.452Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "hop-protocol",
@@ -43,9 +43,9 @@
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 301,
     "coverage_pct": 10.9,
-    "total_audits": 2,
+    "total_audits": 4,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 3580514.0896699997,
+    "dl_tvl_usd": 3116830.0224200003,
     "tvl_usd": 258692841.41606358,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -70,8 +70,8 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 2,
-      "unknown": 0
+      "stale": 3,
+      "unknown": 1
     }
   },
   "topography": {
@@ -16939,6 +16939,48 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11916,
+      "audit_key": "audit-11916",
+      "report_name": "Moreover, Hop has undergone audits by [Solidified]() and [Monoceros Alpha](https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/042021_MonocerosAlpha.pdf). A third audit by Trail of Bits is planned for September.\\",
+      "report_url": "https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/052021_Solidified.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11917,
+      "audit_key": "audit-11917",
+      "report_name": "Moreover, Hop has undergone audits by [Solidified](https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/052021_Solidified.pdf) and [Monoceros Alpha](). A third audit by Trail of Bits is planned for September.\\",
+      "report_url": "https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/042021_MonocerosAlpha.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -17514,7 +17556,16 @@
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11916,
+        "report_name": "Moreover, Hop has undergone audits by [Solidified]() and [Monoceros Alpha](https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/042021_MonocerosAlpha.pdf). A third audit by Trail of Bits is planned for September.\\"
+      },
+      {
+        "audit_id": 11917,
+        "report_name": "Moreover, Hop has undergone audits by [Solidified](https://github.com/hop-protocol/contracts/blob/cf9f2765f2cfe8b51e3f4c54f3d451a2300ce379/audits/052021_Solidified.pdf) and [Monoceros Alpha](). A third audit by Trail of Bits is planned for September.\\"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

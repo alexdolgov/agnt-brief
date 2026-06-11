@@ -7,11 +7,11 @@
 - Project: Hanji Protocol (`hanji-protocol`)
 - Website: [https://hanji.io](https://hanji.io)
 - Lifecycle: declining (Tier 0, 41.2% below peak)
-- Generated: 2026-06-10T23:45:22.897Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
+- Generated: 2026-06-11T11:50:35.073Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: base
 - Contract surface: 289 unique implementations (291 raw deployments)
-- DeFi Llama TVL: $2,738,368.95
+- DeFi Llama TVL: $728,406.56
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -31,11 +31,11 @@ The Orderbook Contracts rely on Token Contracts for the assets being traded, whi
 - Unverified implementations: 283
 - Unique implementations: 289
 - Raw deployments: 291
-- Audits discovered: 0
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -366,6 +366,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Hanji Protocol Security Audit Report.pdf](https://github.com/mixbytes/audits_public/blob/master/Hanji/OnchainCLOB/Hanji%20Protocol%20Security%20Audit%20Report.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Hanji Liquidity Vault Security Audit Report.pdf](https://github.com/mixbytes/audits_public/blob/master/Hanji/Liquidity%20Vault/Hanji%20Liquidity%20Vault%20Security%20Audit%20Report.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -390,9 +392,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11585] Hanji Protocol Security Audit Report.pdf
+- [11586] Hanji Liquidity Vault Security Audit Report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

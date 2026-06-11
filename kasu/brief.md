@@ -5,11 +5,11 @@
 - Project: Kasu (`kasu`)
 - Website: [https://kasu.finance/](https://kasu.finance/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T00:14:27.932Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-11T11:49:33.472Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: base
 - Contract surface: 22 unique implementations (56 raw deployments)
-- DeFi Llama TVL: $10,291,597.97
+- DeFi Llama TVL: $10,553,247.03
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ All contracts belong to a single product family and share infrastructure through
 - Unverified implementations: 2
 - Unique implementations: 22
 - Raw deployments: 56
-- Audits discovered: 0
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2024-06 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -96,6 +96,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Kasu_0xCommit.pdf](https://github.com/Kasu-Finance/security/blob/main/audits/Kasu_0xCommit.pdf) | 0xCommit | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
+| [Kasu_ChainSecurity.pdf](https://github.com/Kasu-Finance/security/blob/main/audits/Kasu_ChainSecurity.pdf) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -129,9 +131,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11593] Kasu_0xCommit.pdf
+- [11594] Kasu_ChainSecurity.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

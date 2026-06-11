@@ -5,8 +5,8 @@
 - Project: Meson (`meson`)
 - Website: [https://meson.fi/home](https://meson.fi/home)
 - Lifecycle: active (Tier 0, 93.9% below peak)
-- Generated: 2026-06-10T20:59:07.476Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:03:06.293Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: blast, merlin
 - Contract surface: 129 unique implementations (129 raw deployments)
 - DeFi Llama TVL: $1,097,461.24

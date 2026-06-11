@@ -359,12 +359,12 @@
 | [meeds-finance](./meeds-finance/) | $1.8M | 0.0% | $1.8M | unknown | 0 | 4 | 2026-06-11 |
 | [meld-gold](./meld-gold/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-05-31 |
 | [mendi-finance](./mendi-finance/) | $79.1M | 10.7% | $79.1M | dead | 4 | 39 | 2026-06-11 |
-| [mento](./mento/) | $19.6M | 0.0% | ? | active | 11 | 180 | 2026-06-10 |
+| [mento](./mento/) | $19.6M | 0.0% | ? | active | 11 | 180 | 2026-06-11 |
 | [merchant-moe](./merchant-moe/) | $37.3M | 50.0% | ? | unknown | 1 | 53 | 2026-05-31 |
-| [merlinswap](./merlinswap/) | $8.4M | 0.0% | ? | declining | 0 | 2 | 2026-06-10 |
-| [meson](./meson/) | $1.1M | 0.0% | ? | active | 4 | 129 | 2026-06-10 |
-| [meta-pool](./meta-pool/) | $4.2M | 50.0% | $4.0M | active | 3 | 41 | 2026-06-10 |
-| [metadao](./metadao/) | $13.1M | 0.0% | ? | unknown | 10 | 0 | 2026-06-10 |
+| [merlinswap](./merlinswap/) | $8.4M | 0.0% | ? | declining | 0 | 2 | 2026-06-11 |
+| [meson](./meson/) | $1.1M | 0.0% | ? | active | 4 | 129 | 2026-06-11 |
+| [meta-pool](./meta-pool/) | $4.2M | 50.0% | $4.0M | active | 3 | 41 | 2026-06-11 |
+| [metadao](./metadao/) | $13.1M | 0.0% | ? | unknown | 10 | 0 | 2026-06-11 |
 | [metastable](./metastable/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [mev-capital](./mev-capital/) | $67.0M | 0.0% | ? | active | 0 | 783 | 2026-06-10 |
 | [mezo-bridge](./mezo-bridge/) | $2.6M | 0.0% | $2.6M | declining | 0 | 4 | 2026-06-10 |

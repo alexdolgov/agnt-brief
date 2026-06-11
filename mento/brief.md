@@ -5,8 +5,8 @@
 - Project: Mento (`mento`)
 - Website: [https://www.mento.org/](https://www.mento.org/)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:59:07.465Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:03:24.490Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: celo, ethereum
 - Contract surface: 180 unique implementations (180 raw deployments)
 - DeFi Llama TVL: $19,575,119.00

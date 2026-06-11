@@ -5,8 +5,8 @@
 - Project: Meta Pool (`meta-pool`)
 - Website: [https://metapool.app](https://metapool.app)
 - Lifecycle: active (Tier 0, 55.2% below peak)
-- Generated: 2026-06-10T20:59:07.481Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:01:47.363Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: aurora, ethereum
 - Contract surface: 41 unique implementations (65 raw deployments)
 - DeFi Llama TVL: $95,295,173.00

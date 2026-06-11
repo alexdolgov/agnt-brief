@@ -5,8 +5,8 @@
 - Project: MetaDao (`metadao`)
 - Website: [https://metadao.fi](https://metadao.fi)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:07.485Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:59:42.435Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $13,054,710.00

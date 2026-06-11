@@ -4,8 +4,8 @@
 
 - Project: Switcheo Finance (`switcheo-finance`)
 - Lifecycle: active (Tier 0, 76.4% below peak)
-- Generated: 2026-06-10T20:59:16.928Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:20:20.331Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: ethereum
 - Contract surface: 47 unique implementations (100 raw deployments)
 - DeFi Llama TVL: $1,234,738.76

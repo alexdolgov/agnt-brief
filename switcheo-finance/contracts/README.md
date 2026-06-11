@@ -1,6 +1,6 @@
 # switcheo-finance — Contract Index
 
-48 unique implementations on ethereum · 101 deployments · 0 audited · 30 unaudited · 18 unverified
+47 unique implementations on ethereum · 100 deployments · 0 audited · 29 unaudited · 18 unverified
 
 ## governance (4)
 
@@ -25,7 +25,7 @@
 | [MiniMeTokenFactory](./ethereum-1/0x8e9ac0de3ab634ce0e2f0e397efc5ce8a72a12b8/) | ethereum | [`0x8e9ac0...2a12b8`](./ethereum-1/0x8e9ac0de3ab634ce0e2f0e397efc5ce8a72a12b8/) | ⚠️ Unaudited | Verified |
 | [TransferRegistry (2 deployments)](./ethereum-1/0x68818d468c0e1fefdc56824ab4f3f053a8a9a6c1/) | ethereum | 2 deployments: ethereum [`0x68818d...a9a6c1`](./ethereum-1/0x68818d468c0e1fefdc56824ab4f3f053a8a9a6c1/); ethereum `0xc3ca38...ca9c26` | ⚠️ Unaudited | Verified |
 
-## token (7)
+## token (6)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -34,7 +34,6 @@
 | [DuskToken](./ethereum-1/0x940a2db1b7008b6c776d4faaca729d6d4a4aa551/) | ethereum | [`0x940a2d...4aa551`](./ethereum-1/0x940a2db1b7008b6c776d4faaca729d6d4a4aa551/) | ⚠️ Unaudited | Verified |
 | [LogERC20](./ethereum-1/0x047f18e7f21aa714c6a5f4b346318eb384434a4b/) | ethereum | [`0x047f18...434a4b`](./ethereum-1/0x047f18e7f21aa714c6a5f4b346318eb384434a4b/) | ⚠️ Unaudited | Verified |
 | [StandardToken](./ethereum-1/0x4a220e6096b25eadb88358cb44068a3248254675/) | ethereum | [`0x4a220e...254675`](./ethereum-1/0x4a220e6096b25eadb88358cb44068a3248254675/) | ⚠️ Unaudited | Verified |
-| [Token](./ethereum-1/0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9/) | ethereum | [`0xc0f9bd...df54a9`](./ethereum-1/0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9/) | ⚠️ Unaudited | Verified |
 | [TokenList](./ethereum-1/0xc860598a9a38eff76dbbbe67fdc1b7975c0c17bd/) | ethereum | [`0xc86059...0c17bd`](./ethereum-1/0xc860598a9a38eff76dbbbe67fdc1b7975c0c17bd/) | ⚠️ Unaudited | Verified |
 
 ## unknown (33)

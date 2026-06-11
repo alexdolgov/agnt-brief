@@ -597,11 +597,11 @@
 | [suzaku](./suzaku/) | $1.2M | 0.0% | $1.2M | active | 0 | 49 | 2026-06-11 |
 | [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-06-11 |
 | [swamp-finance](./swamp-finance/) | $0.1 | 0.0% | $0.1 | declining | 0 | 11 | 2026-06-11 |
-| [swappi](./swappi/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-10 |
-| [swapscanner](./swapscanner/) | $4.4M | 0.0% | ? | active | 1 | 2 | 2026-06-10 |
-| [swell](./swell/) | $130.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [swellchain-bridge](./swellchain-bridge/) | $1.2M | 0.0% | ? | declining | 0 | 10 | 2026-06-10 |
-| [switcheo-finance](./switcheo-finance/) | $68.3M | 0.0% | $68.3M | active | 0 | 47 | 2026-06-10 |
+| [swappi](./swappi/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
+| [swapscanner](./swapscanner/) | $4.4M | 0.0% | ? | active | 1 | 2 | 2026-06-11 |
+| [swell](./swell/) | $130.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [swellchain-bridge](./swellchain-bridge/) | $1.2M | 0.0% | ? | declining | 0 | 10 | 2026-06-11 |
+| [switcheo-finance](./switcheo-finance/) | $68.3M | 0.0% | $68.3M | active | 0 | 47 | 2026-06-11 |
 | [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 133 | 2026-06-10 |
 | [symbiosis](./symbiosis/) | $236.1M | 15.4% | $236.1M | active | 15 | 40 | 2026-06-10 |
 | [symmio](./symmio/) | $24.5 | 0.0% | $24.5 | active | 0 | 168 | 2026-06-10 |

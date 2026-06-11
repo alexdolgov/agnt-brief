@@ -5,8 +5,8 @@
 - Project: Swappi (`swappi`)
 - Website: [https://app.swappi.io](https://app.swappi.io)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:16.873Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:21:28.014Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $1,884,776.50

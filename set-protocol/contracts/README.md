@@ -1,6 +1,6 @@
 # set-protocol — Contract Index
 
-111 unique implementations on ethereum · 121 deployments · 0 audited · 15 unaudited · 96 unverified
+109 unique implementations on ethereum · 119 deployments · 0 audited · 13 unaudited · 96 unverified
 
 ## core_logic (1)
 
@@ -27,12 +27,10 @@
 |---|---|---|---|---|
 | [SetTokenFactory](./ethereum-1/0xe1cd722575801fe92eeef2ca23396557f7e3b967/) | ethereum | [`0xe1cd72...e3b967`](./ethereum-1/0xe1cd722575801fe92eeef2ca23396557f7e3b967/) | ⚠️ Unaudited | Verified |
 
-## token (3)
+## token (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [CErc20](./ethereum-1/0x39aa39c021dfbae8fac545936693ac917d5e7563/) | ethereum | [`0x39aa39...5e7563`](./ethereum-1/0x39aa39c021dfbae8fac545936693ac917d5e7563/) | ⚠️ Unaudited | Verified |
-| [CErc20Delegate](./ethereum-1/0x5d3a536e4d6dbd6114cc1ead35777bab948e3643/) | ethereum | [`0x5d3a53...8e3643`](./ethereum-1/0x5d3a536e4d6dbd6114cc1ead35777bab948e3643/) | ⚠️ Unaudited | Verified |
 | [ERC20Wrapper (2 deployments)](./ethereum-1/0xb553ebbc620d8c8b0c65e8676420742919a70eb5/) | ethereum | 2 deployments: ethereum [`0xb553eb...a70eb5`](./ethereum-1/0xb553ebbc620d8c8b0c65e8676420742919a70eb5/); ethereum `0xeadada...68f8d6` | ⚠️ Unaudited | Verified |
 
 ## unknown (103)

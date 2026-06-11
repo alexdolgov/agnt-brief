@@ -5,8 +5,8 @@
 - Project: ShardingDAO (`shardingdao`)
 - Website: [https://shardingdao.com/](https://shardingdao.com/)
 - Lifecycle: active (Tier 0, 47.7% below peak)
-- Generated: 2026-06-10T20:59:16.055Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:39:45.218Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: ethereum
 - Contract surface: 12 unique implementations (22 raw deployments)
 - DeFi Llama TVL: $7,781,100.38

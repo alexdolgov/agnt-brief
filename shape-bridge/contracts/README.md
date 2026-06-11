@@ -1,6 +1,6 @@
 # shape-bridge — Contract Index
 
-28 unique implementations on ethereum · 29 deployments · 0 audited · 24 unaudited · 4 unverified
+26 unique implementations on ethereum · 27 deployments · 0 audited · 22 unaudited · 4 unverified
 
 ## bridge_template (1)
 
@@ -8,12 +8,11 @@
 |---|---|---|---|---|
 | [L1StandardBridge](./ethereum-1/0x62edd5f4930ea92dca3fb81689bdd9b9d076b57b/) | ethereum | [`0x62edd5...76b57b`](./ethereum-1/0x62edd5f4930ea92dca3fb81689bdd9b9d076b57b/) | ⚠️ Unaudited | Verified |
 
-## governance (6)
+## governance (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AddressManager](./ethereum-1/0xcee78437ae9e15cee9c78e63757e0153c0fd7479/) | ethereum | [`0xcee784...fd7479`](./ethereum-1/0xcee78437ae9e15cee9c78e63757e0153c0fd7479/) | ⚠️ Unaudited | Verified |
-| [ConduitController](./ethereum-1/0x00000000f9490004c11cef243f5400493c00ad63/) | ethereum | [`0x000000...00ad63`](./ethereum-1/0x00000000f9490004c11cef243f5400493c00ad63/) | ⚠️ Unaudited | Verified |
 | [GnosisSafe](./ethereum-1/0xacaf178b5048cb56712dc59e95fba72f7990a005/) | ethereum | [`0xacaf17...90a005`](./ethereum-1/0xacaf178b5048cb56712dc59e95fba72f7990a005/) | ⚠️ Unaudited | Verified |
 | [ProxyAdmin](./ethereum-1/0x11b190ae661c6d6884dfee48e215691e0ddb842e/) | ethereum | [`0x11b190...db842e`](./ethereum-1/0x11b190ae661c6d6884dfee48e215691e0ddb842e/) | ⚠️ Unaudited | Verified |
 | [SuperchainConfig](./ethereum-1/0x125664bef08177ca43f6f301e63118b1e4ccde09/) | ethereum | [`0x125664...ccde09`](./ethereum-1/0x125664bef08177ca43f6f301e63118b1e4ccde09/) | ⚠️ Unaudited | Verified |
@@ -48,7 +47,7 @@
 | [ImmutableCreate2Factory](./ethereum-1/0x0000000000ffe8b47b3e2130213b802212439497/) | ethereum | [`0x000000...439497`](./ethereum-1/0x0000000000ffe8b47b3e2130213b802212439497/) | ⚠️ Unaudited | Verified |
 | [OptimismMintableERC20Factory](./ethereum-1/0x319322906beadf69df5d4607169c63d692b1adc1/) | ethereum | [`0x319322...b1adc1`](./ethereum-1/0x319322906beadf69df5d4607169c63d692b1adc1/) | ⚠️ Unaudited | Verified |
 
-## unknown (12)
+## unknown (11)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -59,7 +58,6 @@
 | [MIPS](./ethereum-1/0xd30c2cd3cd6112e61fdfb03e4b232564d7e5c91f/) | ethereum | [`0xd30c2c...e5c91f`](./ethereum-1/0xd30c2cd3cd6112e61fdfb03e4b232564d7e5c91f/) | ⚠️ Unaudited | Verified |
 | [OptimismPortal2](./ethereum-1/0xeb06ffa16011b5628bab98e29776361c83741dd3/) | ethereum | [`0xeb06ff...741dd3`](./ethereum-1/0xeb06ffa16011b5628bab98e29776361c83741dd3/) | ⚠️ Unaudited | Verified |
 | [ProtocolVersions](./ethereum-1/0xa77995e10b0a833cdd4fa414c26e869f7aa32ddd/) | ethereum | [`0xa77995...a32ddd`](./ethereum-1/0xa77995e10b0a833cdd4fa414c26e869f7aa32ddd/) | ⚠️ Unaudited | Verified |
-| [Seaport](./ethereum-1/0x0000000000000068f116a894984e2db1123eb395/) | ethereum | [`0x000000...3eb395`](./ethereum-1/0x0000000000000068f116a894984e2db1123eb395/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x000f3d...beac02` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x4e59b4...b4956c` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x84e2fd...96467c` | ❓ Unverified | Unverified |

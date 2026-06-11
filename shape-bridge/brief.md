@@ -5,8 +5,8 @@
 - Project: Shape Bridge (`shape-bridge`)
 - Website: [https://shape.network/bridge](https://shape.network/bridge)
 - Lifecycle: active (Tier 0, 57.7% below peak)
-- Generated: 2026-06-10T20:59:14.917Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:39:00.675Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: ethereum
 - Contract surface: 26 unique implementations (27 raw deployments)
 - DeFi Llama TVL: $1,055,412.84

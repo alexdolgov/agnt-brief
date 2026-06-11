@@ -5,8 +5,8 @@
 - Project: ShapeShift (`shapeshift`)
 - Website: [https://shapeshift.com](https://shapeshift.com)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:14.925Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:41:03.375Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: arbitrum, ethereum, gnosis, polygon
 - Contract surface: 40 unique implementations (111 raw deployments)
 - DeFi Llama TVL: $1,603,814.61

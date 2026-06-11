@@ -527,12 +527,12 @@
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 9.1% | $34.8K | dead | 5 | 99 | 2026-06-11 |
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-31 |
 | [sentiment](./sentiment/) | $64.3 | 73.3% | ? | dead | 8 | 297 | 2026-06-11 |
-| [serum](./serum/) | $15.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [set-protocol](./set-protocol/) | $1.4M | 0.0% | $1.4M | declining | 0 | 109 | 2026-06-10 |
+| [serum](./serum/) | $15.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [set-protocol](./set-protocol/) | $1.4M | 0.0% | $1.4M | declining | 0 | 109 | 2026-06-11 |
 | [shadow-exchange](./shadow-exchange/) | $999.8 | 21.6% | $999.8 | declining | 3 | 84 | 2026-05-23 |
-| [shape-bridge](./shape-bridge/) | $1.1M | 0.0% | ? | active | 0 | 26 | 2026-06-10 |
-| [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | active | 3 | 40 | 2026-06-10 |
-| [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-06-10 |
+| [shape-bridge](./shape-bridge/) | $1.1M | 0.0% | ? | active | 0 | 26 | 2026-06-11 |
+| [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | active | 3 | 40 | 2026-06-11 |
+| [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-06-11 |
 | [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | active | 0 | 2 | 2026-06-10 |
 | [sierra-protocol](./sierra-protocol/) | $39.6M | 4.0% | $5.3M | active | 1 | 78 | 2026-06-10 |

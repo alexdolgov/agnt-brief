@@ -1,13 +1,13 @@
 # shapeshift — Contract Index
 
-40 unique implementations across 4 chains · 115 deployments · 3 audited · 25 unaudited · 12 unverified
+40 unique implementations across 4 chains · 111 deployments · 3 audited · 25 unaudited · 12 unverified
 
 ## core_logic (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [EthPool (4 deployments)](./ethereum-1/0x77f18a6968a38f9aef1af676420c4799e8b864ee/) | ethereum | 4 deployments: ethereum [`0x77f18a...b864ee`](./ethereum-1/0x77f18a6968a38f9aef1af676420c4799e8b864ee/); ethereum `0xb104a7...8246d5`; ethereum `0xca77a2...d5da31`; ethereum `0xd3d13a...2a2f36` | ⚠️ Unaudited | Verified |
-| [Pool (28 deployments)](./ethereum-1/0x0139b34012a6639e896b883901b7dc1bb6e6f15a/) | ethereum | 28 deployments: ethereum [`0x0139b3...e6f15a`](./ethereum-1/0x0139b34012a6639e896b883901b7dc1bb6e6f15a/); ethereum `0x03dccc...2d360d`; ethereum `0x04bda0...0e860d`; ethereum `0x061aee...b2a7e7`; ethereum `0x0ce34f...fdfb75`; ethereum `0x15a629...b79415`; ethereum `0x1b429e...192fd3`; ethereum `0x2d3ead...022029`; ethereum `0x2e9f9b...bd4fed`; ethereum `0x2fc6e9...ad22e1`; ethereum `0x41f6a9...b00263`; ethereum `0x482258...e6b03d`; ethereum `0x721150...ad4b4c`; ethereum `0x7a75ec...ac63fd`; ethereum `0x808d3e...ed5311`; ethereum `0x8858a7...61faa3`; ethereum `0x8d2254...d97832`; ethereum `0x94671a...20efb2`; ethereum `0x9eee9e...9797a3`; ethereum `0xadf15e...81e655`; ethereum `0xbbfc7d...c7ba8a`; ethereum `0xca5e07...d58d4e`; ethereum `0xd3b5d9...f9aa84`; ethereum `0xd899ac...5fc03e`; ethereum `0xdc0b02...9709b0`; ethereum `0xe7a7d1...31532d`; ethereum `0xeff721...ffc8de`; ethereum `0xf49764...629777` | ⚠️ Unaudited | Verified |
+| [Pool (24 deployments)](./ethereum-1/0x03dcccd17cc36ee61f9004bcfd7a85f58b2d360d/) | ethereum | 24 deployments: ethereum [`0x03dccc...2d360d`](./ethereum-1/0x03dcccd17cc36ee61f9004bcfd7a85f58b2d360d/); ethereum `0x04bda0...0e860d`; ethereum `0x061aee...b2a7e7`; ethereum `0x0ce34f...fdfb75`; ethereum `0x15a629...b79415`; ethereum `0x1b429e...192fd3`; ethereum `0x2d3ead...022029`; ethereum `0x2e9f9b...bd4fed`; ethereum `0x2fc6e9...ad22e1`; ethereum `0x41f6a9...b00263`; ethereum `0x482258...e6b03d`; ethereum `0x721150...ad4b4c`; ethereum `0x7a75ec...ac63fd`; ethereum `0x808d3e...ed5311`; ethereum `0x8858a7...61faa3`; ethereum `0x8d2254...d97832`; ethereum `0x94671a...20efb2`; ethereum `0x9eee9e...9797a3`; ethereum `0xadf15e...81e655`; ethereum `0xd3b5d9...f9aa84`; ethereum `0xdc0b02...9709b0`; ethereum `0xe7a7d1...31532d`; ethereum `0xeff721...ffc8de`; ethereum `0xf49764...629777` | ⚠️ Unaudited | Verified |
 | [UniswapV3Pool (2 deployments)](./arbitrum-42161/0x76d4d1eaa0c4b3645e75c46e573c1d4f75e9041e/) | arbitrum | 2 deployments: ethereum `0xad0e10...f8b376`; arbitrum [`0x76d4d1...e9041e`](./arbitrum-42161/0x76d4d1eaa0c4b3645e75c46e573c1d4f75e9041e/) | ⚠️ Unaudited | Verified |
 
 ## governance (5)

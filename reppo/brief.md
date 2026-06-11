@@ -7,8 +7,8 @@
 - Project: Reppo (`reppo`)
 - Website: [https://reppo.xyz/](https://reppo.xyz/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:09.501Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:14:59.266Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: base
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $5,831,508.96

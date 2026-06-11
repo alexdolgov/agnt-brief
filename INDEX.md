@@ -484,11 +484,11 @@
 | [rank-trading](./rank-trading/) | $1.2M | 30.0% | ? | active | 2 | 13 | 2026-06-11 |
 | [rari-capital](./rari-capital/) | $321.4M | 0.0% | $321.4M | dead | 1 | 253 | 2026-05-24 |
 | [ratex](./ratex/) | $98.8K | 0.0% | $98.8K | declining | 2 | 166 | 2026-06-11 |
-| [re7-labs](./re7-labs/) | $1.6M | 0.0% | $1.6M | active | 0 | 6 | 2026-06-10 |
-| [reddex](./reddex/) | $4.2M | 0.0% | ? | declining | 0 | 5 | 2026-06-10 |
-| [reflexer](./reflexer/) | $2.3M | 40.9% | ? | declining | 8 | 64 | 2026-06-10 |
-| [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 1 | 2026-06-10 |
-| [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | active | 0 | 2 | 2026-06-10 |
+| [re7-labs](./re7-labs/) | $1.6M | 0.0% | $1.6M | active | 0 | 6 | 2026-06-11 |
+| [reddex](./reddex/) | $4.2M | 0.0% | ? | declining | 0 | 5 | 2026-06-11 |
+| [reflexer](./reflexer/) | $2.3M | 40.9% | ? | declining | 8 | 64 | 2026-06-11 |
+| [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 1 | 2026-06-11 |
+| [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | active | 0 | 2 | 2026-06-11 |
 | [reserve-protocol](./reserve-protocol/) | $8.0M | 53.9% | $255.2K | declining | 27 | 329 | 2026-06-10 |
 | [reservoir-protocol](./reservoir-protocol/) | $2.1B | 0.0% | $2.1B | active | 0 | 278 | 2026-05-31 |
 | [resupply](./resupply/) | $41.8M | 100.0% | ? | active | 8 | 1 | 2026-06-10 |

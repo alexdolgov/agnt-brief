@@ -7,8 +7,8 @@
 - Project: reddex (`reddex`)
 - Website: [https://reddex.io](https://reddex.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:09.491Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:14:08.804Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum
 - Contract surface: 5 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $4,190,945.31

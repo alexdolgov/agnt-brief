@@ -7,8 +7,8 @@
 - Project: Reflexer (`reflexer`)
 - Website: [https://reflexer.finance/](https://reflexer.finance/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:09.498Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:16:10.875Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum
 - Contract surface: 64 unique implementations (85 raw deployments)
 - DeFi Llama TVL: $2,323,116.35

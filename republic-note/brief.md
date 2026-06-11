@@ -5,8 +5,8 @@
 - Project: Republic Note (`republic-note`)
 - Website: [https://republic.com/note](https://republic.com/note)
 - Lifecycle: active (Tier 0, 58.4% below peak)
-- Generated: 2026-06-10T20:59:09.504Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:12:50.636Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: avalanche
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $16,054,934.84

@@ -5,8 +5,8 @@
 - Project: Re7 Labs (`re7-labs`)
 - Website: [https://www.re7labs.xyz](https://www.re7labs.xyz)
 - Lifecycle: active (Tier 0, 90.4% below peak)
-- Generated: 2026-06-10T20:59:09.488Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:12:51.422Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: avalanche, base, ethereum, sonic
 - Contract surface: 6 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $82,888,616.27

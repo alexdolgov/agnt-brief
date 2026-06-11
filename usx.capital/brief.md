@@ -7,11 +7,11 @@
 - Project: USX.Capital (`usx.capital`)
 - Website: [https://www.usx.capital/home](https://www.usx.capital/home)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T03:53:06.415Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
+- Generated: 2026-06-11T12:18:09.850Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: scroll
 - Contract surface: 3 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $1,311,040.99
+- DeFi Llama TVL: $763,328.84
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -32,11 +32,11 @@ USX.Capital is a fully collateralized neodollar/stablecoin wrapper on Scroll. Pu
 - Unverified implementations: 0
 - Unique implementations: 3
 - Raw deployments: 6
-- Audits discovered: 0
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -80,6 +80,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Blend (the yield infrastructure layer used by USX) has undergone 8 independent security audits by leading blockchain security firms. Find their complete audit reports here: <>](https://docs.blend.money/resources/audits) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -100,9 +101,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11712] Blend (the yield infrastructure layer used by USX) has undergone 8 independent security audits by leading blockchain security firms. Find their complete audit reports here: <>
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -697,7 +697,7 @@ Each project directory contains:
 | [unitas](./unitas/brief.md) | $83.17M | bsc | 9 | 3/9 (33%) | 100.0% | 100.0% (SlowMist) | 3 | fresh | ✅ active | - |
 | [universal-bridge](./universal-bridge/brief.md) | $7.68M | base | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [uranium.io](./uranium.io/brief.md) | $7.38M | ethereum | 3 | 1/3 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
-| [usx.capital](./usx.capital/brief.md) | $1.31M | scroll | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [usx.capital](./usx.capital/brief.md) | $763.33K | scroll | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [vedelegate](./vedelegate/brief.md) | $1.16M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [velodrome](./velodrome/brief.md) | $40.17M | celo, optimism | 52 | 47/52 (90%) | 40.4% | 40.4% (Sherlock, Spearbit) | 3 | aging | ✅ active | - |
 | [veno-finance](./veno-finance/brief.md) | $37.49M | cronos, ethereum, zksync-era | 49 | 9/49 (18%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
@@ -711,7 +711,7 @@ Each project directory contains:
 | [wemix.fi](./wemix.fi/brief.md) | $38.18M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [woo-x](./woo-x/brief.md) | $7.08M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [wrapped](./wrapped/brief.md) | $23.88M | celo | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
-| [wrapped-bnb](./wrapped-bnb/brief.md) | $6.01M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [wrapped-bnb](./wrapped-bnb/brief.md) | $5.48M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/brief.md) | $1.17M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [ybtc.b](./ybtc.b/brief.md) | $83.93M | bsc | 12 | 0/12 (0%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [yei-finance](./yei-finance/brief.md) | $32.33M | sei | 44 | 35/44 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -725,5 +725,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-11T12:16:45.416Z_
+_Generated: 2026-06-11T12:18:46.298Z_
 _Projects: 713_

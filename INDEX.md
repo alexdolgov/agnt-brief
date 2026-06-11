@@ -660,7 +660,7 @@
 | [universe-xyz](./universe-xyz/) | $216.1K | 21.7% | $216.1K | dead | 3 | 34 | 2026-06-11 |
 | [unslashed](./unslashed/) | $3.1M | 0.0% | $3.1M | declining | 0 | 1 | 2026-06-11 |
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-06-11 |
-| [usx.capital](./usx.capital/) | $1.3M | 0.0% | ? | declining | 0 | 3 | 2026-06-11 |
+| [usx.capital](./usx.capital/) | $763.3K | 0.0% | ? | declining | 1 | 3 | 2026-06-11 |
 | [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | declining | 0 | 28 | 2026-06-11 |
 | [velodrome](./velodrome/) | $40.2M | 40.4% | ? | active | 6 | 52 | 2026-06-11 |
@@ -685,7 +685,7 @@
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | declining | 11 | 96 | 2026-06-11 |
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [woofi](./woofi/) | $9.8M | 18.8% | $9.7M | declining | 6 | 200 | 2026-06-11 |
-| [wrapped-bnb](./wrapped-bnb/) | $6.0M | 0.0% | ? | declining | 0 | 1 | 2026-06-11 |
+| [wrapped-bnb](./wrapped-bnb/) | $5.5M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
 | [wrapped](./wrapped/) | $23.9M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
 | [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 48 | 2026-06-11 |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |

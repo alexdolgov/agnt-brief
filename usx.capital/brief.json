@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "usx.capital",
-  "generated_at": "2026-06-11T03:53:06.415Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
+  "generated_at": "2026-06-11T12:18:09.850Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "usx.capital",
@@ -43,10 +43,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1311040.99001,
-    "tvl_usd": 1311040.99001,
+    "dl_tvl_usd": 763328.84273,
+    "tvl_usd": 763328.84273,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -62,7 +62,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 1
     }
   },
   "topography": {
@@ -201,7 +201,29 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11712,
+      "audit_key": "audit-11712",
+      "report_name": "Blend (the yield infrastructure layer used by USX) has undergone 8 independent security audits by leading blockchain security firms. Find their complete audit reports here: <>",
+      "report_url": "https://docs.blend.money/resources/audits",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
@@ -215,7 +237,12 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11712,
+        "report_name": "Blend (the yield infrastructure layer used by USX) has undergone 8 independent security audits by leading blockchain security firms. Find their complete audit reports here: <>"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

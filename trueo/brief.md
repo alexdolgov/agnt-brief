@@ -7,8 +7,8 @@
 - Project: Trueo (`trueo`)
 - Website: [https://trueo.com/](https://trueo.com/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:17.602Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:42:12.015Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: base
 - Contract surface: 23 unique implementations (45 raw deployments)
 - DeFi Llama TVL: $3,764,672.39

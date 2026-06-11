@@ -7,8 +7,8 @@
 - Project: TrueFi (`truefi`)
 - Website: [https://app.truefi.io/](https://app.truefi.io/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:17.599Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:45:11.751Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: arbitrum, ethereum
 - Contract surface: 8 unique implementations (11 raw deployments)
 - DeFi Llama TVL: $15,393,827.90

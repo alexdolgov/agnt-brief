@@ -5,8 +5,8 @@
 - Project: Trust Wallet (`trust-wallet`)
 - Website: [https://trustwallet.com/](https://trustwallet.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:17.610Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:41:06.043Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: bsc
 - Contract surface: 5 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $39,041,004.00

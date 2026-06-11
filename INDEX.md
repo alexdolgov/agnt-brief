@@ -642,11 +642,11 @@
 | [trevee-earn](./trevee-earn/) | $582.2M | 0.0% | $582.2M | declining | 0 | 15 | 2026-06-11 |
 | [trisolaris](./trisolaris/) | $1.5M | 0.0% | ? | declining | 0 | 119 | 2026-06-11 |
 | [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
-| [truefi](./truefi/) | $15.4M | 37.5% | ? | declining | 24 | 8 | 2026-06-10 |
-| [trueo](./trueo/) | $4.0M | 0.0% | $4.0M | declining | 0 | 23 | 2026-06-10 |
+| [truefi](./truefi/) | $15.4M | 37.5% | ? | declining | 24 | 8 | 2026-06-11 |
+| [trueo](./trueo/) | $4.0M | 0.0% | $4.0M | declining | 0 | 23 | 2026-06-11 |
 | [trufin-protocol](./trufin-protocol/) | $7.0M | 66.7% | ? | declining | 12 | 7 | 2026-06-10 |
-| [trust-wallet](./trust-wallet/) | $470.2M | 0.0% | $470.2M | active | 0 | 5 | 2026-06-10 |
-| [tulipa-capital](./tulipa-capital/) | $55.7M | 0.0% | $55.7M | active | 0 | 4 | 2026-06-10 |
+| [trust-wallet](./trust-wallet/) | $470.2M | 0.0% | $470.2M | active | 0 | 5 | 2026-06-11 |
+| [tulipa-capital](./tulipa-capital/) | $55.7M | 0.0% | $55.7M | active | 0 | 4 | 2026-06-11 |
 | [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | declining | 2 | 516 | 2026-06-10 |
 | [twyne](./twyne/) | $985.7K | 3.8% | $985.7K | active | 6 | 59 | 2026-06-10 |
 | [txflow](./txflow/) | $3.8M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |

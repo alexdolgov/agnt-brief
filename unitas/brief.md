@@ -5,8 +5,8 @@
 - Project: Unitas (`unitas`)
 - Website: [https://app.unitas.so/points?ref=llama](https://app.unitas.so/points?ref=llama)
 - Lifecycle: active (Tier 0, 38.6% below peak)
-- Generated: 2026-06-10T20:59:18.492Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:50:50.605Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: bsc
 - Contract surface: 9 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $83,171,426.72

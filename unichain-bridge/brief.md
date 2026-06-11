@@ -5,8 +5,8 @@
 - Project: Unichain Bridge (`unichain-bridge`)
 - Website: [https://www.unichain.org](https://www.unichain.org)
 - Lifecycle: active (Tier 1, dead)
-- Generated: 2026-06-10T20:59:18.489Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:49:52.820Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: ethereum
 - Contract surface: 15 unique implementations (30 raw deployments)
 - DeFi Llama TVL: $2,752,550.54

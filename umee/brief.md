@@ -6,8 +6,8 @@
 
 - Project: Umee (`umee`)
 - Lifecycle: declining (Tier 0, 98.8% below peak)
-- Generated: 2026-06-10T20:59:18.485Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:51:08.180Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $2,510,742.00

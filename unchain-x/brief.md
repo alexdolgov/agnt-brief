@@ -5,8 +5,8 @@
 - Project: Unchain X (`unchain-x`)
 - Website: [https://unchainx.io](https://unchainx.io)
 - Lifecycle: active (Tier 0, 63.4% below peak)
-- Generated: 2026-06-10T20:59:18.486Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:50:47.956Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,208,578.29

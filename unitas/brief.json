@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "unitas",
-  "generated_at": "2026-06-10T20:59:18.492Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T03:50:50.605Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "unitas",

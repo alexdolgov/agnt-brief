@@ -5,8 +5,8 @@
 - Project: Toobit (`toobit`)
 - Website: [https://www.toobit.com](https://www.toobit.com)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:17.525Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:35:58.829Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $69,148,305.81

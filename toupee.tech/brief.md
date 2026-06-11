@@ -7,8 +7,8 @@
 - Project: toupee.tech (`toupee.tech`)
 - Website: [https://www.toupee.tech](https://www.toupee.tech)
 - Lifecycle: declining (Tier 0, 74.5% below peak)
-- Generated: 2026-06-10T20:59:17.532Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:35:59.568Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: base
 - Contract surface: 29 unique implementations (53 raw deployments)
 - DeFi Llama TVL: $6,291,303.16

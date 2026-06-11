@@ -631,11 +631,11 @@
 | [thruster](./thruster/) | $5.7M | 0.0% | ? | dead | 0 | 20 | 2026-05-31 |
 | [tinyman](./tinyman/) | $6.6M | 0.0% | ? | unknown | 18 | 0 | 2026-06-11 |
 | [tokenlon](./tokenlon/) | $37.2M | 57.1% | ? | declining | 6 | 21 | 2026-06-11 |
-| [tokenstore](./tokenstore/) | $265.7K | 0.0% | $265.7K | active | 0 | 44 | 2026-06-10 |
-| [tokenworks](./tokenworks/) | $0.0 | 0.0% | $0.0 | active | 0 | 60 | 2026-06-10 |
-| [toobit](./toobit/) | $69.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [tothemoon](./tothemoon/) | $2.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | declining | 0 | 29 | 2026-06-10 |
+| [tokenstore](./tokenstore/) | $265.7K | 0.0% | $265.7K | active | 0 | 44 | 2026-06-11 |
+| [tokenworks](./tokenworks/) | $0.0 | 0.0% | $0.0 | active | 0 | 60 | 2026-06-11 |
+| [toobit](./toobit/) | $69.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [tothemoon](./tothemoon/) | $2.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | declining | 0 | 29 | 2026-06-11 |
 | [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-06-10 |
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
 | [treehouse-protocol](./treehouse-protocol/) | $24.0M | 42.6% | $1.8M | declining | 20 | 77 | 2026-06-10 |

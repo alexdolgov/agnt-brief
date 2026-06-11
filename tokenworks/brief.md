@@ -5,8 +5,8 @@
 - Project: TokenWorks (`tokenworks`)
 - Website: [https://www.nftstrategy.fun/](https://www.nftstrategy.fun/)
 - Lifecycle: active (Tier 0, 88.7% below peak)
-- Generated: 2026-06-10T20:59:17.522Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:35:59.362Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: ethereum
 - Contract surface: 60 unique implementations (90 raw deployments)
 - DeFi Llama TVL: $2,136,220.53

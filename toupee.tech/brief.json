@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "toupee.tech",
-  "generated_at": "2026-06-10T20:59:17.532Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T03:35:59.568Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "toupee.tech",

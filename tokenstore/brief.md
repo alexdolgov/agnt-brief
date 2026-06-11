@@ -4,8 +4,8 @@
 
 - Project: TokenStore (`tokenstore`)
 - Lifecycle: active (Tier 0, 87.9% below peak)
-- Generated: 2026-06-10T20:59:17.517Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:36:01.601Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: ethereum
 - Contract surface: 44 unique implementations (44 raw deployments)
 - DeFi Llama TVL: $1,327,120.84

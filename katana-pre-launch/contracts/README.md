@@ -1,6 +1,6 @@
 # katana-pre-launch — Contract Index
 
-166 unique implementations across 2 chains · 646 deployments · 0 audited · 98 unaudited · 68 unverified
+165 unique implementations across 2 chains · 642 deployments · 0 audited · 97 unaudited · 68 unverified
 
 ## adapter (5)
 
@@ -12,7 +12,7 @@
 | [NonDefaultOftAdapter (20 deployments)](./ethereum-1/0x0d8745a84259ab5a38e89d5cb4db642003d8f874/) | ethereum | 20 deployments: ethereum [`0x0d8745...d8f874`](./ethereum-1/0x0d8745a84259ab5a38e89d5cb4db642003d8f874/); ethereum `0x1e283d...ed0bba`; ethereum `0x4224f6...e51d36`; ethereum `0x4690f3...5b985e`; ethereum `0x4ed3c8...9881e1`; ethereum `0x519fbc...2a462a`; ethereum `0x667efc...a7cd81`; ethereum `0x694d16...cab683`; ethereum `0x807275...d293c0`; ethereum `0x8169e5...520dfc`; ethereum `0x839dc0...95ab82`; ethereum `0x8d09c4...c131d4`; ethereum `0x8f45f7...ff949b`; ethereum `0x93ed06...9a7f24`; ethereum `0xad132b...bb050a`; ethereum `0xb42ab6...621665`; ethereum `0xb5bada...957bb3`; ethereum `0xd28d73...e84092`; ethereum `0xd9e705...62d0c3`; ethereum `0xe5971a...76cf4a` | ⚠️ Unaudited | Verified |
 | [Router (4 deployments)](./ethereum-1/0x7fb5895cbcb3264dc7984e8f61037f5d37fde90b/) | ethereum | 4 deployments: ethereum [`0x7fb589...fde90b`](./ethereum-1/0x7fb5895cbcb3264dc7984e8f61037f5d37fde90b/); ethereum `0x80226f...146f7d`; ethereum `0x8c6d31...81ed46`; ethereum `0xe561d5...9a1476` | ⚠️ Unaudited | Verified |
 
-## core_logic (11)
+## core_logic (10)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -26,7 +26,6 @@
 | [LockReleaseTokenPoolAndProxy (33 deployments)](./ethereum-1/0x0d736853812a12f085de867adf4ea4aba9521fc0/) | ethereum | 33 deployments: ethereum [`0x0d7368...521fc0`](./ethereum-1/0x0d736853812a12f085de867adf4ea4aba9521fc0/); ethereum `0x2ccd6b...52b0f6`; ethereum `0x2e3c68...b10f73`; ethereum `0x399949...a3e576`; ethereum `0x45af36...4f8aa3`; ethereum `0x4913fd...e1f196`; ethereum `0x4e6300...371ed0`; ethereum `0x542bf6...95be84`; ethereum `0x5c1667...c57a59`; ethereum `0x61d405...7ef92f`; ethereum `0x6a888f...31480b`; ethereum `0x75a852...0d9799`; ethereum `0x79bc41...721d49`; ethereum `0x89c903...9a6d04`; ethereum `0x8e7ebb...3bcaea`; ethereum `0x9b8fef...db0dcc`; ethereum `0x9c7922...8fe192`; ethereum `0x9e72f9...8c75a0`; ethereum `0x9ec9f9...ec50f0`; ethereum `0xa27501...a5bbbd`; ethereum `0xa7689c...3a660f`; ethereum `0xac3453...5bf95b`; ethereum `0xafcc99...0bdd1d`; ethereum `0xbdcc99...0218b7`; ethereum `0xbfc86c...e63351`; ethereum `0xc2ef2f...379979`; ethereum `0xc55d7b...c01b79`; ethereum `0xe31009...291739`; ethereum `0xe48320...8ae86f`; ethereum `0xe742e9...c5810e`; ethereum `0xead31b...26461d`; ethereum `0xf57fc1...9ee89a`; ethereum `0xf6c88f...c11b99` | ⚠️ Unaudited | Verified |
 | [MyOVaultComposer](./ethereum-1/0x7b6dd022e7ed1dabcf0c3537f710eb5c8f2566e9/) | ethereum | [`0x7b6dd0...2566e9`](./ethereum-1/0x7b6dd022e7ed1dabcf0c3537f710eb5c8f2566e9/) | ⚠️ Unaudited | Verified |
 | [USDCTokenPool (2 deployments)](./ethereum-1/0x4a580c62889ddcd6c2213582270e03ca130df59d/) | ethereum | 2 deployments: ethereum [`0x4a580c...0df59d`](./ethereum-1/0x4a580c62889ddcd6c2213582270e03ca130df59d/); ethereum `0xa81f4a...0fefda` | ⚠️ Unaudited | Verified |
-| [Yearn V3 Vault (4 deployments)](./ethereum-1/0x77570cfecf83bc6bb08e2cd9e8537aea9f97ea2f/) | ethereum | 4 deployments: ethereum [`0x77570c...97ea2f`](./ethereum-1/0x77570cfecf83bc6bb08e2cd9e8537aea9f97ea2f/); ethereum `0xa5dab3...7d3896`; ethereum `0xe1ac97...55544a`; ethereum `0xf470eb...cc014d` | ⚠️ Unaudited | Verified |
 
 ## governance (5)
 

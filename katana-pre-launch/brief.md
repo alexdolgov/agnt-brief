@@ -5,8 +5,8 @@
 - Project: Katana Pre-Launch (`katana-pre-launch`)
 - Website: [https://app.katana.network/](https://app.katana.network/)
 - Lifecycle: active (Tier 0, 92.6% below peak)
-- Generated: 2026-06-10T20:59:06.459Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:16:32.769Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: base, ethereum
 - Contract surface: 165 unique implementations (642 raw deployments)
 - DeFi Llama TVL: $18,422,900.76

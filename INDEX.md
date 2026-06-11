@@ -296,11 +296,11 @@
 | [juicebox](./juicebox/) | $11.0M | 5.9% | ? | active | 1 | 77 | 2026-05-31 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-06-11 |
 | [kaio](./kaio/) | $60.8M | 0.0% | ? | declining | 0 | 35 | 2026-06-11 |
-| [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | active | 0 | 2 | 2026-06-10 |
-| [kasu](./kasu/) | $10.3M | 0.0% | ? | active | 0 | 22 | 2026-06-10 |
-| [katana-pre-launch](./katana-pre-launch/) | $307.6K | 0.0% | $307.6K | active | 28 | 165 | 2026-06-10 |
-| [kava-earn](./kava-earn/) | $1.6M | 0.0% | ? | declining | 0 | 1 | 2026-06-10 |
-| [kava-lend](./kava-lend/) | $7.8M | 0.0% | ? | active | 1 | 1 | 2026-06-10 |
+| [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | active | 0 | 2 | 2026-06-11 |
+| [kasu](./kasu/) | $10.3M | 0.0% | ? | active | 0 | 22 | 2026-06-11 |
+| [katana-pre-launch](./katana-pre-launch/) | $307.6K | 0.0% | $307.6K | active | 28 | 165 | 2026-06-11 |
+| [kava-earn](./kava-earn/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
+| [kava-lend](./kava-lend/) | $7.8M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
 | [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-10 |
 | [kava-mint](./kava-mint/) | $52.2M | 0.0% | ? | active | 1 | 1 | 2026-06-10 |
 | [keep-network](./keep-network/) | $25.5M | 7.1% | $24.7M | declining | 18 | 225 | 2026-06-10 |

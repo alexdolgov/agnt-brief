@@ -4,7 +4,7 @@
 |---|---|
 | Chain | base (8453) |
 | Address | `0x98d0baa52b2d063e780de12f615f963fe8537553` |
-| Role | unknown |
+| Role | token |
 | Origin | native |
 | Audited | No |
 | Audits | n/a |

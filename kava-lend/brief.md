@@ -5,8 +5,8 @@
 - Project: Kava Lend (`kava-lend`)
 - Website: [https://app.kava.io/lend](https://app.kava.io/lend)
 - Lifecycle: active (Tier 0, 94.7% below peak)
-- Generated: 2026-06-10T20:59:06.466Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:17:36.583Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $7,791,610.97

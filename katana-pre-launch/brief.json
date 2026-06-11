@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "katana-pre-launch",
-  "generated_at": "2026-06-10T20:59:06.459Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T00:16:32.769Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "katana-pre-launch",

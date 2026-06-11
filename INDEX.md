@@ -370,7 +370,7 @@
 | [mezo-bridge](./mezo-bridge/) | $2.6M | 0.0% | $2.6M | declining | 0 | 4 | 2026-06-11 |
 | [mezo-earn](./mezo-earn/) | $55.2M | 0.0% | ? | unknown | 0 | 1 | 2026-06-11 |
 | [minefi](./minefi/) | $1.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
-| [minto](./minto/) | $3.8M | 16.7% | ? | active | 1 | 9 | 2026-06-11 |
+| [minto](./minto/) | $3.8M | 16.7% | ? | active | 2 | 9 | 2026-06-11 |
 | [mitosis](./mitosis/) | $329.0M | 0.0% | $329.0M | active | 2 | 66 | 2026-06-11 |
 | [mm-finance](./mm-finance/) | $1.8M | 4.5% | $1.8M | declining | 3 | 192 | 2026-06-11 |
 | [mobox](./mobox/) | $6.6M | 0.0% | $6.6M | unknown | 1 | 323 | 2026-06-11 |
@@ -438,7 +438,7 @@
 | [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | active | 0 | 3 | 2026-06-11 |
 | [pact](./pact/) | $2.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [pangolin](./pangolin/) | $3.8M | 53.8% | ? | declining | 12 | 163 | 2026-06-11 |
-| [paradex](./paradex/) | $33.3M | 0.0% | ? | declining | 0 | 5 | 2026-06-11 |
+| [paradex](./paradex/) | $27.3M | 0.0% | ? | declining | 5 | 5 | 2026-06-11 |
 | [paragonsdao](./paragonsdao/) | $6.4M | 50.0% | ? | active | 7 | 2 | 2026-06-11 |
 | [parallel-protocol](./parallel-protocol/) | $3.6M | 3.8% | $3.0M | active | 5 | 38 | 2026-06-11 |
 | [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-06-11 |

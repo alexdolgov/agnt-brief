@@ -7,11 +7,11 @@
 - Project: Paradex (`paradex`)
 - Website: [https://app.paradex.trade/r/defillama](https://app.paradex.trade/r/defillama)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T01:46:19.606Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-11T15:55:46.441Z
+- Pipeline run: v2-pipeline-2026-06-11-e34b49-4ec3
 - Chains: ethereum
 - Contract surface: 5 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $33,260,261.00
+- DeFi Llama TVL: $27,280,553.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -31,11 +31,11 @@ The Paradex Bridge serves as the sole on-chain infrastructure, with the Proxy co
 - Unverified implementations: 3
 - Unique implementations: 5
 - Raw deployments: 6
-- Audits discovered: 0
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2025-05 (aging)
+- Staleness: 0 fresh, 3 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -82,6 +82,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [May 2025 (Cairo Security Clan)](https://github.com/Cairo-Security-Clan/Audit-Portfolio/blob/main/Paradex_Audit_Report.pdf) | Cairo Security Clan | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
+| [Oct 2024 (Zellic)](https://github.com/tradeparadex/paradex-docs/blob/main/fern/assets/StarkGate_Oct_2024.pdf) | Zellic | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
+| [Oct 2023 (Zellic)](https://github.com/tradeparadex/paradex-docs/blob/main/fern/assets/StarkGate_Oct_2023.pdf) | Zellic | Audit | 2023-10 | stale | Direct | n/a | 0 | n/a |
+| [Nov 2022 (Trail of Bits)](https://github.com/tradeparadex/paradex-docs/blob/main/fern/assets/Starknet_Core_Summary_Report_Sept_2022.pdf) | Trail of Bits | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
+| [March 2025 (HackerOne)](https://github.com/tradeparadex/paradex-docs/blob/main/fern/assets/Paradex_Penetration_Test_March_25_2025.pdf) | HackerOne | Audit | 2025-03 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -105,9 +110,17 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [12218] May 2025 (Cairo Security Clan)
+- [12219] Oct 2024 (Zellic)
+- [12220] Oct 2023 (Zellic)
+- [12221] Nov 2022 (Trail of Bits)
+- [12222] March 2025 (HackerOne)
 
 Fork inheritance lineage and inherited audits are included when available.

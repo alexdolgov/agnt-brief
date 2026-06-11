@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "paradex",
-  "generated_at": "2026-06-11T01:46:19.606Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-11T15:55:46.441Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-e34b49-4ec3",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "paradex",
@@ -43,10 +43,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 3,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 5,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 33260261,
-    "tvl_usd": 33260261,
+    "dl_tvl_usd": 27280553,
+    "tvl_usd": 27280553,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,12 +56,12 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2025-05",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 0,
-      "stale": 0,
+      "aging": 3,
+      "stale": 2,
       "unknown": 0
     }
   },
@@ -245,7 +245,113 @@
       "contamination_flag": "review"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 12218,
+      "audit_key": "audit-12218",
+      "report_name": "May 2025 (Cairo Security Clan)",
+      "report_url": "https://github.com/Cairo-Security-Clan/Audit-Portfolio/blob/main/Paradex_Audit_Report.pdf",
+      "auditor": "Cairo Security Clan",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12219,
+      "audit_key": "audit-12219",
+      "report_name": "Oct 2024 (Zellic)",
+      "report_url": "https://github.com/tradeparadex/paradex-docs/blob/main/fern/assets/StarkGate_Oct_2024.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12220,
+      "audit_key": "audit-12220",
+      "report_name": "Oct 2023 (Zellic)",
+      "report_url": "https://github.com/tradeparadex/paradex-docs/blob/main/fern/assets/StarkGate_Oct_2023.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12221,
+      "audit_key": "audit-12221",
+      "report_name": "Nov 2022 (Trail of Bits)",
+      "report_url": "https://github.com/tradeparadex/paradex-docs/blob/main/fern/assets/Starknet_Core_Summary_Report_Sept_2022.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12222,
+      "audit_key": "audit-12222",
+      "report_name": "March 2025 (HackerOne)",
+      "report_url": "https://github.com/tradeparadex/paradex-docs/blob/main/fern/assets/Paradex_Penetration_Test_March_25_2025.pdf",
+      "auditor": "HackerOne",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -280,7 +386,28 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 12218,
+        "report_name": "May 2025 (Cairo Security Clan)"
+      },
+      {
+        "audit_id": 12219,
+        "report_name": "Oct 2024 (Zellic)"
+      },
+      {
+        "audit_id": 12220,
+        "report_name": "Oct 2023 (Zellic)"
+      },
+      {
+        "audit_id": 12221,
+        "report_name": "Nov 2022 (Trail of Bits)"
+      },
+      {
+        "audit_id": 12222,
+        "report_name": "March 2025 (HackerOne)"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

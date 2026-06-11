@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "minto",
-  "generated_at": "2026-06-11T01:06:23.811Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-2b99",
+  "generated_at": "2026-06-11T15:54:46.256Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-e34b49-4ec3",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "minto",
@@ -33,10 +33,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 3,
     "coverage_pct": 16.7,
-    "total_audits": 1,
+    "total_audits": 2,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 3797520.6857,
-    "tvl_usd": 3797520.6857,
+    "dl_tvl_usd": 3761396.56474,
+    "tvl_usd": 3761396.56474,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -54,7 +54,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 1,
-      "unknown": 0
+      "unknown": 1
     }
   },
   "topography": {
@@ -387,6 +387,27 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12203,
+      "audit_key": "audit-12203",
+      "report_name": "DL audit link",
+      "report_url": "https://devcfirma.cconducir.com/ingreso.php",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -445,7 +466,12 @@
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 12203,
+        "report_name": "DL audit link"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

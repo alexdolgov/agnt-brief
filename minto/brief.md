@@ -5,11 +5,11 @@
 - Project: Minto (`minto`)
 - Website: [https://minto.finance](https://minto.finance)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T01:06:23.811Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
+- Generated: 2026-06-11T15:54:46.256Z
+- Pipeline run: v2-pipeline-2026-06-11-e34b49-4ec3
 - Chains: bsc, ethereum, heco
 - Contract surface: 9 unique implementations (10 raw deployments)
-- DeFi Llama TVL: $3,797,520.69
+- DeFi Llama TVL: $3,761,396.56
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ The GnosisSafeProxy serves as a shared governance contract for both families, wh
 - Unverified implementations: 3
 - Unique implementations: 9
 - Raw deployments: 10
-- Audits discovered: 1
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-07 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -87,6 +87,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Audit report](https://files.minto.finance/MintoAuditReport.pdf) | yAudit | Audit | 2021-07 | stale | Direct | contract_name | 1 | high |
+| [DL audit link](https://devcfirma.cconducir.com/ingreso.php) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -111,9 +112,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=1
+
+Zero-match audit list:
+
+- [12203] DL audit link
 
 Fork inheritance lineage and inherited audits are included when available.

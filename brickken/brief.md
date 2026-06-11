@@ -5,8 +5,8 @@
 - Project: Brickken (`brickken`)
 - Website: [https://www.brickken.com](https://www.brickken.com)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T14:13:37.879Z
-- Pipeline run: v2-pipeline-2026-06-11-e34b49-faf8
+- Generated: 2026-06-11T15:54:46.258Z
+- Pipeline run: v2-pipeline-2026-06-11-e34b49-4ec3
 - Chains: avalanche, base, ethereum, polygon
 - Contract surface: 29 unique implementations (55 raw deployments)
 - DeFi Llama TVL: $42,197,681.59

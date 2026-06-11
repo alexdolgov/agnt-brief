@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "brickken",
-  "generated_at": "2026-06-11T14:13:37.879Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-e34b49-faf8",
+  "generated_at": "2026-06-11T15:54:46.258Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-e34b49-4ec3",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "brickken",

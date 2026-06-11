@@ -5,8 +5,8 @@
 - Project: TownSquare (`townsquare`)
 - Website: [https://app.townsq.xyz/](https://app.townsq.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:17.536Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:36:54.807Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $1,796,630.92

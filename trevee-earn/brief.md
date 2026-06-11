@@ -7,8 +7,8 @@
 - Project: Trevee Earn (`trevee-earn`)
 - Website: [https://rings.money/](https://rings.money/)
 - Lifecycle: declining (Tier 1, transitioning)
-- Generated: 2026-06-10T20:59:17.583Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:38:01.921Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: ethereum, plasma, sonic
 - Contract surface: 15 unique implementations (29 raw deployments)
 - DeFi Llama TVL: $1,146,226.61

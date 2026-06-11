@@ -7,8 +7,8 @@
 - Project: Treehouse Protocol (`treehouse-protocol`)
 - Website: [https://www.treehouse.finance/](https://www.treehouse.finance/)
 - Lifecycle: declining (Tier 0, 86.1% below peak)
-- Generated: 2026-06-10T20:59:17.578Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:40:13.694Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: ethereum
 - Contract surface: 77 unique implementations (92 raw deployments)
 - DeFi Llama TVL: $87,665,909.37

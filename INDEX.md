@@ -636,12 +636,12 @@
 | [toobit](./toobit/) | $69.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [tothemoon](./tothemoon/) | $2.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | declining | 0 | 29 | 2026-06-11 |
-| [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-06-10 |
+| [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
-| [treehouse-protocol](./treehouse-protocol/) | $24.0M | 42.6% | $1.8M | declining | 20 | 77 | 2026-06-10 |
-| [trevee-earn](./trevee-earn/) | $582.2M | 0.0% | $582.2M | declining | 0 | 15 | 2026-06-10 |
-| [trisolaris](./trisolaris/) | $1.5M | 0.0% | ? | declining | 0 | 119 | 2026-06-10 |
-| [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-10 |
+| [treehouse-protocol](./treehouse-protocol/) | $24.0M | 42.6% | $1.8M | declining | 20 | 77 | 2026-06-11 |
+| [trevee-earn](./trevee-earn/) | $582.2M | 0.0% | $582.2M | declining | 0 | 15 | 2026-06-11 |
+| [trisolaris](./trisolaris/) | $1.5M | 0.0% | ? | declining | 0 | 119 | 2026-06-11 |
+| [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
 | [truefi](./truefi/) | $15.4M | 37.5% | ? | declining | 24 | 8 | 2026-06-10 |
 | [trueo](./trueo/) | $4.0M | 0.0% | $4.0M | declining | 0 | 23 | 2026-06-10 |
 | [trufin-protocol](./trufin-protocol/) | $7.0M | 66.7% | ? | declining | 12 | 7 | 2026-06-10 |

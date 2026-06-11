@@ -5,8 +5,8 @@
 - Project: Troves (`troves`)
 - Website: [https://www.troves.fi/](https://www.troves.fi/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:17.595Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:38:01.175Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $5,023,162.81

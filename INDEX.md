@@ -102,7 +102,7 @@
 | [bounce.tech](./bounce.tech/) | $1.1M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
 | [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 9 | 2026-06-10 |
 | [bracket-protocol](./bracket-protocol/) | $622.4M | 17.4% | $619.3M | active | 5 | 58 | 2026-06-10 |
-| [brickken](./brickken/) | $42.2M | 0.0% | ? | active | 1 | 29 | 2026-06-11 |
+| [brickken](./brickken/) | $42.2M | 0.0% | ? | active | 2 | 29 | 2026-06-11 |
 | [bridgers](./bridgers/) | $1.6M | 0.0% | ? | active | 1 | 6 | 2026-06-10 |
 | [brotocol](./brotocol/) | $6.5M | 0.0% | ? | active | 14 | 214 | 2026-06-11 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-06-10 |

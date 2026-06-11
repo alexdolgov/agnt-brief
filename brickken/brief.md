@@ -5,11 +5,11 @@
 - Project: Brickken (`brickken`)
 - Website: [https://www.brickken.com](https://www.brickken.com)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T12:00:34.543Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
+- Generated: 2026-06-11T14:13:37.879Z
+- Pipeline run: v2-pipeline-2026-06-11-e34b49-faf8
 - Chains: avalanche, base, ethereum, polygon
 - Contract surface: 29 unique implementations (55 raw deployments)
-- DeFi Llama TVL: $42,194,649.92
+- DeFi Llama TVL: $42,197,681.59
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ The STOFactoryManagedUpgradeable acts as a central registry and factory, deployi
 - Unverified implementations: 23
 - Unique implementations: 29
 - Raw deployments: 55
-- Audits discovered: 1
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2026 (fresh)
+- Staleness: 1 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -105,6 +105,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [skynet.certik.com/projects/brickken](https://skynet.certik.com/projects/brickken) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [69e0f131a3c7f0b39a48f86d_BRICKKEN_AI 2026_signed.pdf](https://cdn.prod.website-files.com/680a2df699085611f5f9221a/69e0f131a3c7f0b39a48f86d_BRICKKEN_AI%202026_signed.pdf) | unknown | Audit | 2026 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -131,7 +132,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -139,5 +140,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [11550] skynet.certik.com/projects/brickken
+- [12093] 69e0f131a3c7f0b39a48f86d_BRICKKEN_AI 2026_signed.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

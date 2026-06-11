@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "brickken",
-  "generated_at": "2026-06-11T12:00:34.543Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
+  "generated_at": "2026-06-11T14:13:37.879Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-e34b49-faf8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "brickken",
@@ -33,10 +33,10 @@
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 23,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 42194649.91859,
-    "tvl_usd": 42194649.91859,
+    "dl_tvl_usd": 42197681.59026,
+    "tvl_usd": 42197681.59026,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -49,10 +49,10 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2026",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
+      "fresh": 1,
       "aging": 0,
       "stale": 0,
       "unknown": 1
@@ -1228,6 +1228,27 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12093,
+      "audit_key": "audit-12093",
+      "report_name": "69e0f131a3c7f0b39a48f86d_BRICKKEN_AI 2026_signed.pdf",
+      "report_url": "https://cdn.prod.website-files.com/680a2df699085611f5f9221a/69e0f131a3c7f0b39a48f86d_BRICKKEN_AI%202026_signed.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -1298,6 +1319,10 @@
       {
         "audit_id": 11550,
         "report_name": "skynet.certik.com/projects/brickken"
+      },
+      {
+        "audit_id": 12093,
+        "report_name": "69e0f131a3c7f0b39a48f86d_BRICKKEN_AI 2026_signed.pdf"
       }
     ],
     "inherited_remapped_matches": []

@@ -6,9 +6,9 @@
 
 - Project: Mezo Earn (`mezo-earn`)
 - Website: [https://mezo.org/earn/lock](https://mezo.org/earn/lock)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:07.704Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Lifecycle: unknown (Tier 0, 37.5% below peak)
+- Generated: 2026-06-11T01:04:14.777Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $55,180,986.82

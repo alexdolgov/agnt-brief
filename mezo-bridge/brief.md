@@ -7,8 +7,8 @@
 - Project: Mezo Bridge (`mezo-bridge`)
 - Website: [https://mezo.org](https://mezo.org)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:07.703Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:05:23.356Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: ethereum
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $21,293,979.43

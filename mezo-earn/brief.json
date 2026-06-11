@@ -1,25 +1,25 @@
 {
   "schema_version": "2.0",
   "project_key": "mezo-earn",
-  "generated_at": "2026-06-10T20:59:07.704Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T01:04:14.777Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-2b99",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "mezo-earn",
     "tier": 0,
     "peak_tvl": 56465444,
     "peak_date": "2026-05-21T00:00:00.000Z",
-    "tvl_30d_ago": null,
+    "tvl_30d_ago": 33995292,
     "tvl_90d_ago": null,
-    "tvl_current": 53025694,
+    "tvl_current": 35308026,
     "tier0_reason": "no_rule_matched",
     "tvl_180d_ago": null,
-    "change_30d_pct": null,
+    "change_30d_pct": 3.8615170594798833,
     "change_90d_pct": null,
-    "days_since_peak": 10,
+    "days_since_peak": 21,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 6.091778894008165
+    "drop_from_peak_pct": 37.469674372878394
   },
   "summary": {
     "total_contracts": 1,

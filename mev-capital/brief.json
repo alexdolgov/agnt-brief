@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mev-capital",
-  "generated_at": "2026-06-10T20:59:07.691Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T01:04:16.125Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-2b99",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "mev-capital",

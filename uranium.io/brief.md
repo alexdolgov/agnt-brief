@@ -5,8 +5,8 @@
 - Project: Uranium.io (`uranium.io`)
 - Website: [https://uranium.io/en](https://uranium.io/en)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:18.518Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:51:58.674Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: ethereum
 - Contract surface: 3 unique implementations (7 raw deployments)
 - DeFi Llama TVL: $7,384,209.92

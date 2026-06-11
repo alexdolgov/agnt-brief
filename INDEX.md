@@ -657,11 +657,11 @@
 | [unichain-bridge](./unichain-bridge/) | $2.8M | 0.0% | ? | active | 0 | 15 | 2026-06-11 |
 | [unitas](./unitas/) | $47.8M | 100.0% | ? | active | 5 | 9 | 2026-06-11 |
 | [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
-| [universe-xyz](./universe-xyz/) | $216.1K | 21.7% | $216.1K | dead | 3 | 34 | 2026-06-10 |
-| [unslashed](./unslashed/) | $3.1M | 0.0% | $3.1M | declining | 0 | 1 | 2026-06-10 |
-| [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-06-10 |
-| [usx.capital](./usx.capital/) | $1.3M | 0.0% | ? | declining | 0 | 3 | 2026-06-10 |
-| [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-10 |
+| [universe-xyz](./universe-xyz/) | $216.1K | 21.7% | $216.1K | dead | 3 | 34 | 2026-06-11 |
+| [unslashed](./unslashed/) | $3.1M | 0.0% | $3.1M | declining | 0 | 1 | 2026-06-11 |
+| [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-06-11 |
+| [usx.capital](./usx.capital/) | $1.3M | 0.0% | ? | declining | 0 | 3 | 2026-06-11 |
+| [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | declining | 0 | 28 | 2026-06-10 |
 | [velodrome](./velodrome/) | $40.2M | 40.4% | ? | active | 6 | 52 | 2026-06-10 |
 | [velvet.capital](./velvet.capital/) | $95.2M | 77.8% | $95.2M | declining | 13 | 420 | 2026-06-10 |

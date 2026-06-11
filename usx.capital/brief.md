@@ -7,8 +7,8 @@
 - Project: USX.Capital (`usx.capital`)
 - Website: [https://www.usx.capital/home](https://www.usx.capital/home)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:18.519Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:53:06.415Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: scroll
 - Contract surface: 3 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $1,311,040.99

@@ -6,8 +6,8 @@
 
 - Project: Unslashed (`unslashed`)
 - Lifecycle: declining (Tier 0, 98.2% below peak)
-- Generated: 2026-06-10T20:59:18.516Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:51:59.102Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $3,066,570.36

@@ -1,6 +1,6 @@
 # universe-xyz — Contract Index
 
-36 unique implementations on ethereum · 218 deployments · 5 audited · 20 unaudited · 11 unverified
+34 unique implementations on ethereum · 216 deployments · 5 audited · 18 unaudited · 11 unverified
 
 ## core_logic (4)
 
@@ -37,22 +37,20 @@
 |---|---|---|---|---|
 | [PoolFactory (2 deployments)](./ethereum-1/0x53aff3b5059a48e4ee37e63c03e3ad563756d6e1/) | ethereum | 2 deployments: ethereum [`0x53aff3...56d6e1`](./ethereum-1/0x53aff3b5059a48e4ee37e63c03e3ad563756d6e1/); ethereum `0x9dca38...94597c` | ⚠️ Unaudited | Verified |
 
-## token (6)
+## token (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [HolderToken](./ethereum-1/0x5e4e6685a84eb1a597c7f794700893ab8ffd04f4/) | ethereum | [`0x5e4e66...fd04f4`](./ethereum-1/0x5e4e6685a84eb1a597c7f794700893ab8ffd04f4/) | ⚠️ Unaudited | Verified |
-| [IlluviumERC20](./ethereum-1/0x767fe9edc9e0df98e07454847909b5e959d7ca0e/) | ethereum | [`0x767fe9...d7ca0e`](./ethereum-1/0x767fe9edc9e0df98e07454847909b5e959d7ca0e/) | ⚠️ Unaudited | Verified |
 | [IlluviumNFT](./ethereum-1/0x384aa03d8b7cc6a818e7cb7a037ba0cd81af9fdf/) | ethereum | [`0x384aa0...af9fdf`](./ethereum-1/0x384aa03d8b7cc6a818e7cb7a037ba0cd81af9fdf/) | ⚠️ Unaudited | Verified |
 | [NFTDisperser](./ethereum-1/0xf5df4f4bb2cc79949b37a0a7ea7ce09248b3233c/) | ethereum | [`0xf5df4f...b3233c`](./ethereum-1/0xf5df4f4bb2cc79949b37a0a7ea7ce09248b3233c/) | ⚠️ Unaudited | Verified |
 | [XYZToken](./ethereum-1/0x618679df9efcd19694bb1daa8d00718eacfa2883/) | ethereum | [`0x618679...fa2883`](./ethereum-1/0x618679df9efcd19694bb1daa8d00718eacfa2883/) | ⚠️ Unaudited | Verified |
 | [YieldFarmGenericToken (7 deployments)](./ethereum-1/0x0ef4852645fa17fdad5f15f7b4021251090ea0c7/) | ethereum | 7 deployments: ethereum [`0x0ef485...0ea0c7`](./ethereum-1/0x0ef4852645fa17fdad5f15f7b4021251090ea0c7/); ethereum `0x1d59a8...d7fc8f`; ethereum `0x1f926b...d0185e`; ethereum `0x49e01d...9fdf29`; ethereum `0x4c82b9...2811a9`; ethereum `0x9f8b01...7ea659`; ethereum `0xe3e186...7a5f32` | ⚠️ Unaudited | Verified |
 
-## unknown (20)
+## unknown (19)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Comp](./ethereum-1/0xc00e94cb662c3520282e6f5717214004a7f26888/) | ethereum | [`0xc00e94...f26888`](./ethereum-1/0xc00e94cb662c3520282e6f5717214004a7f26888/) | ⚠️ Unaudited | Verified |
 | [DevFund](./ethereum-1/0xf1e72f91f6319b50d64536fe6777c9c0a8b083d7/) | ethereum | [`0xf1e72f...b083d7`](./ethereum-1/0xf1e72f91f6319b50d64536fe6777c9c0a8b083d7/) | ⚠️ Unaudited | Verified |
 | [DiamondCutFacet](./ethereum-1/0x441710f49efe5cb0f50ffa4c24066269c141a68e/) | ethereum | [`0x441710...41a68e`](./ethereum-1/0x441710f49efe5cb0f50ffa4c24066269c141a68e/) | ✅ Audited | Verified |
 | [DiamondLoupeFacet](./ethereum-1/0x75e333b48d71886c433c7beb879a6601bd801ec3/) | ethereum | [`0x75e333...801ec3`](./ethereum-1/0x75e333b48d71886c433c7beb879a6601bd801ec3/) | ✅ Audited | Verified |

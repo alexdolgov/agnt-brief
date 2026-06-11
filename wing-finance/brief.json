@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "wing-finance",
-  "generated_at": "2026-06-11T04:06:37.640Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-026d",
+  "generated_at": "2026-06-11T11:59:12.025Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "wing-finance",
@@ -43,9 +43,9 @@
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 166,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 32459100.31933,
+    "dl_tvl_usd": 27113965.21847,
     "tvl_usd": 20266638.248274427,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -66,7 +66,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 2
     }
   },
   "topography": {
@@ -5805,7 +5805,50 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11717,
+      "audit_key": "audit-11717",
+      "report_name": "The WING protocol has been reviewed & audited by [**BEOSIN**]()**.**",
+      "report_url": "https://lianantech.com/",
+      "auditor": "BEOSIN",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11718,
+      "audit_key": "audit-11718",
+      "report_name": "The Wing Flash Pool (EVM) has been reviewed & audited by [**PeckShield**]().",
+      "report_url": "https://peckshield.com/en",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -5900,7 +5943,16 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11717,
+        "report_name": "The WING protocol has been reviewed & audited by [**BEOSIN**]()**.**"
+      },
+      {
+        "audit_id": 11718,
+        "report_name": "The Wing Flash Pool (EVM) has been reviewed & audited by [**PeckShield**]()."
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

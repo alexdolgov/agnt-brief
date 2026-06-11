@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "suzaku",
-  "generated_at": "2026-06-11T03:17:01.698Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-11T11:58:13.518Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "suzaku",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 28,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1231417.64893,
+    "dl_tvl_usd": 1077442.66151,
     "tvl_usd": 1179711.617588217,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -54,7 +54,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 2
     }
   },
   "topography": {
@@ -1961,7 +1961,50 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11693,
+      "audit_key": "audit-11693",
+      "report_name": "ChainSecurity_DefaultCollateral.pdf",
+      "report_url": "https://github.com/symbioticfi/collateral/blob/main/audits/ChainSecurity_DefaultCollateral.pdf",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11694,
+      "audit_key": "audit-11694",
+      "report_name": "Statemind_DefaultCollateral.pdf",
+      "report_url": "https://github.com/symbioticfi/collateral/blob/main/audits/Statemind_DefaultCollateral.pdf",
+      "auditor": "Statemind",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -2156,7 +2199,16 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11693,
+        "report_name": "ChainSecurity_DefaultCollateral.pdf"
+      },
+      {
+        "audit_id": 11694,
+        "report_name": "Statemind_DefaultCollateral.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

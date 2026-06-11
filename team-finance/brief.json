@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "team-finance",
-  "generated_at": "2026-06-11T03:28:35.117Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-11T11:58:13.329Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "team-finance",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 4,
     "contracts_unverified": 59,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 53004117.1737,
+    "dl_tvl_usd": 44986132.427700005,
     "tvl_usd": 4817.351408628372,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -66,7 +66,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 2
     }
   },
   "topography": {
@@ -2608,7 +2608,50 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11702,
+      "audit_key": "audit-11702",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://2491867235-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FcC38SHSHMB696ztGk5L9%2Fuploads%2FhBZpTk3UcUBhL9NrB5A3%2FBailsec%20-%20TrustSwap%20SWAP%20Token%20Audit.pdf",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11703,
+      "audit_key": "audit-11703",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://2491867235-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FcC38SHSHMB696ztGk5L9%2Fuploads%2F9HLnqL9xaTELvjjEZJtH%2FBailsec%20Audit%20of%20Team%20Finance%20Staking%20Solution.pdf",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -2643,7 +2686,16 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11702,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 11703,
+        "report_name": "Rendered PDF capture"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -49,7 +49,7 @@
 | [aria-protocol](./aria-protocol/) | $181.1K | 0.0% | ? | dead | 1 | 1 | 2026-06-10 |
 | [armitage-by-wintermute](./armitage-by-wintermute/) | $51.8M | 0.0% | $51.8M | active | 0 | 1 | 2026-06-10 |
 | [arrakis-finance](./arrakis-finance/) | $128.2K | 19.4% | $3.1K | active | 8 | 124 | 2026-06-10 |
-| [asseto-aoabt](./asseto-aoabt/) | $22.3M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
+| [asseto-aoabt](./asseto-aoabt/) | $24.3M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
 | [asseto-cash+](./asseto-cash+/) | $1.4M | 0.0% | ? | declining | 1 | 2 | 2026-06-10 |
 | [asymmetry](./asymmetry/) | $37.1M | 0.0% | $37.1M | declining | 0 | 203 | 2026-06-10 |
 | [atlendis](./atlendis/) | $4.3M | 14.3% | $4.3M | active | 2 | 43 | 2026-06-10 |
@@ -548,7 +548,7 @@
 | [sofa.org](./sofa.org/) | $49.2K | 33.3% | $46.8K | declining | 8 | 38 | 2026-05-24 |
 | [solayer](./solayer/) | $13.0M | 0.0% | ? | unknown | 5 | 0 | 2026-06-11 |
 | [solera](./solera/) | $8.4M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
-| [sonic-gateway](./sonic-gateway/) | $7.8M | 0.0% | $7.8M | active | 0 | 1 | 2026-06-11 |
+| [sonic-gateway](./sonic-gateway/) | $7.8M | 0.0% | $7.8M | active | 2 | 1 | 2026-06-11 |
 | [sophon-bridge](./sophon-bridge/) | $5.5M | 0.0% | $5.5M | active | 8 | 10 | 2026-06-11 |
 | [sophon-farm](./sophon-farm/) | $6.8M | 100.0% | ? | active | 9 | 1 | 2026-06-11 |
 | [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | declining | 0 | 58 | 2026-06-11 |
@@ -594,7 +594,7 @@
 | [superfluid](./superfluid/) | $12.7M | 20.8% | ? | active | 8 | 397 | 2026-05-31 |
 | [superform](./superform/) | $2.0M | 19.7% | $1.9K | active | 3 | 158 | 2026-06-11 |
 | [supernova](./supernova/) | $2.1M | 48.9% | ? | declining | 1 | 47 | 2026-06-11 |
-| [suzaku](./suzaku/) | $1.2M | 0.0% | $1.2M | active | 0 | 49 | 2026-06-11 |
+| [suzaku](./suzaku/) | $1.2M | 0.0% | $1.2M | active | 2 | 49 | 2026-06-11 |
 | [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-06-11 |
 | [swamp-finance](./swamp-finance/) | $0.1 | 0.0% | $0.1 | declining | 0 | 11 | 2026-06-11 |
 | [swappi](./swappi/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
@@ -615,7 +615,7 @@
 | [tangible](./tangible/) | $41.9M | 0.0% | ? | active | 7 | 475 | 2026-06-11 |
 | [tarot](./tarot/) | $154.4K | 0.0% | $154.4K | dead | 1 | 139 | 2026-05-31 |
 | [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | declining | 0 | 179 | 2026-06-11 |
-| [team-finance](./team-finance/) | $4.8K | 0.0% | $4.8K | active | 0 | 66 | 2026-06-11 |
+| [team-finance](./team-finance/) | $4.8K | 0.0% | $4.8K | active | 2 | 66 | 2026-06-11 |
 | [teller](./teller/) | $1.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 40 | 2026-06-11 |
 | [tender-finance](./tender-finance/) | $1.3M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
@@ -681,7 +681,7 @@
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | declining | 8 | 83 | 2026-06-11 |
 | [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | declining | 0 | 5 | 2026-06-11 |
 | [wemix.fi](./wemix.fi/) | $38.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [wing-finance](./wing-finance/) | $20.3M | 0.0% | $20.3M | declining | 0 | 179 | 2026-06-11 |
+| [wing-finance](./wing-finance/) | $20.3M | 0.0% | $20.3M | declining | 2 | 179 | 2026-06-11 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | declining | 11 | 96 | 2026-06-11 |
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [woofi](./woofi/) | $9.8M | 18.8% | $9.7M | declining | 6 | 200 | 2026-06-11 |

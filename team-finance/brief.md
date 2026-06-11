@@ -5,11 +5,11 @@
 - Project: Team Finance (`team-finance`)
 - Website: [https://www.team.finance](https://www.team.finance)
 - Lifecycle: active (Tier 0, 77.4% below peak)
-- Generated: 2026-06-11T03:28:35.117Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
+- Generated: 2026-06-11T11:58:13.329Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: arbitrum, avalanche, base, blast, cronos, ethereum, fantom, kava, klaytn, mantle, polygon
 - Contract surface: 66 unique implementations (119 raw deployments)
-- DeFi Llama TVL: $53,004,117.17
+- DeFi Llama TVL: $44,986,132.43
 - On-chain TVL (included contracts): $4,817.35
 - TVL by chain: Ethereum $4,796.64 | Base $20.01 | Mantle $0.71
 
@@ -29,11 +29,11 @@ The protocol consists of a single product family centered around token locking. 
 - Unverified implementations: 59
 - Unique implementations: 66
 - Raw deployments: 119
-- Audits discovered: 0
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $4,817.35
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -141,6 +141,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Rendered PDF capture](https://2491867235-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FcC38SHSHMB696ztGk5L9%2Fuploads%2FhBZpTk3UcUBhL9NrB5A3%2FBailsec%20-%20TrustSwap%20SWAP%20Token%20Audit.pdf) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://2491867235-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FcC38SHSHMB696ztGk5L9%2Fuploads%2F9HLnqL9xaTELvjjEZJtH%2FBailsec%20Audit%20of%20Team%20Finance%20Staking%20Solution.pdf) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -164,9 +166,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11702] Rendered PDF capture
+- [11703] Rendered PDF capture
 
 Fork inheritance lineage and inherited audits are included when available.

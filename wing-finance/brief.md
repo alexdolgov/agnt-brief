@@ -7,11 +7,11 @@
 - Project: Wing Finance (`wing-finance`)
 - Website: [https://wing.finance](https://wing.finance)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T04:06:37.640Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
+- Generated: 2026-06-11T11:59:12.025Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: bsc, ethereum, klaytn
 - Contract surface: 179 unique implementations (198 raw deployments)
-- DeFi Llama TVL: $32,459,100.32
+- DeFi Llama TVL: $27,113,965.22
 - On-chain TVL (included contracts): $20,266,638.25
 - TVL by chain: Ethereum $20,266,638.25
 
@@ -31,11 +31,11 @@ The Wing Token family provides the governance token used by the Governance Accou
 - Unverified implementations: 166
 - Unique implementations: 179
 - Raw deployments: 198
-- Audits discovered: 0
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $20,266,638.25
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $20,266,638.25 represents exposure in a protocol with declining activity.
 
@@ -257,6 +257,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [The WING protocol has been reviewed & audited by [**BEOSIN**]()**.**](https://lianantech.com/) | BEOSIN | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [The Wing Flash Pool (EVM) has been reviewed & audited by [**PeckShield**]().](https://peckshield.com/en) | PeckShield | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -286,9 +288,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11717] The WING protocol has been reviewed & audited by [**BEOSIN**]()**.**
+- [11718] The Wing Flash Pool (EVM) has been reviewed & audited by [**PeckShield**]().
 
 Fork inheritance lineage and inherited audits are included when available.

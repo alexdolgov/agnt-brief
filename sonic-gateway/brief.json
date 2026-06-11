@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sonic-gateway",
-  "generated_at": "2026-06-11T02:50:06.631Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
+  "generated_at": "2026-06-11T11:59:13.431Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "sonic-gateway",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 67153153.2322,
+    "dl_tvl_usd": 45530369.76901,
     "tvl_usd": 7800454.703418822,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -48,12 +48,12 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2018-06",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
+      "stale": 2,
       "unknown": 0
     }
   },
@@ -104,7 +104,50 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11677,
+      "audit_key": "audit-11677",
+      "report_name": "fantom-audit-first.pdf",
+      "report_url": "https://github.com/Fantom-foundation/tokensale/blob/master/audits/fantom-audit-first.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2018-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11678,
+      "audit_key": "audit-11678",
+      "report_name": "fantom-audit-second.pdf",
+      "report_url": "https://github.com/Fantom-foundation/tokensale/blob/master/audits/fantom-audit-second.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2018-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
@@ -118,7 +161,16 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11677,
+        "report_name": "fantom-audit-first.pdf"
+      },
+      {
+        "audit_id": 11678,
+        "report_name": "fantom-audit-second.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

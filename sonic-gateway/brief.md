@@ -5,11 +5,11 @@
 - Project: Sonic Gateway (`sonic-gateway`)
 - Website: [https://gateway.soniclabs.com/ethereum/sonic/s](https://gateway.soniclabs.com/ethereum/sonic/s)
 - Lifecycle: active (Tier 0, 94.6% below peak)
-- Generated: 2026-06-11T02:50:06.631Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-11T11:59:13.431Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $67,153,153.23
+- DeFi Llama TVL: $45,530,369.77
 - On-chain TVL (included contracts): $7,800,454.70
 - TVL by chain: Ethereum $7,800,454.70
 
@@ -30,11 +30,11 @@ Sonic Gateway is Sonic's canonical bridge between Ethereum and Sonic, enabling u
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 0
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $7,800,454.70
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2018-06 (stale)
+- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -75,6 +75,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [fantom-audit-first.pdf](https://github.com/Fantom-foundation/tokensale/blob/master/audits/fantom-audit-first.pdf) | unknown | Audit | 2018-06 | stale | Direct | n/a | 0 | n/a |
+| [fantom-audit-second.pdf](https://github.com/Fantom-foundation/tokensale/blob/master/audits/fantom-audit-second.pdf) | unknown | Audit | 2018-06 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -95,9 +97,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11677] fantom-audit-first.pdf
+- [11678] fantom-audit-second.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

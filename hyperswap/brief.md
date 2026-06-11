@@ -5,8 +5,8 @@
 - Project: HyperSwap (`hyperswap`)
 - Website: [https://app.hyperswap.exchange/#/swap?referral=defillama](https://app.hyperswap.exchange/#/swap?referral=defillama)
 - Lifecycle: active (Tier 0, 87.9% below peak)
-- Generated: 2026-06-10T20:59:06.102Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:57:30.397Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: hyperliquid
 - Contract surface: 5 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $17,368,006.00

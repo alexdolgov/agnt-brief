@@ -5,8 +5,8 @@
 - Project: Hyperbeat (`hyperbeat`)
 - Website: [https://app.hyperbeat.org/earn?referral=5C37264D](https://app.hyperbeat.org/earn?referral=5C37264D)
 - Lifecycle: active (Tier 0, 89.8% below peak)
-- Generated: 2026-06-10T20:59:06.054Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:58:51.466Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: ethereum, hyperliquid
 - Contract surface: 221 unique implementations (615 raw deployments)
 - DeFi Llama TVL: $47,369,186.00

@@ -1,6 +1,6 @@
 # hyperbeat — Contract Index
 
-222 unique implementations across 2 chains · 616 deployments · 15 audited · 126 unaudited · 81 unverified
+221 unique implementations across 2 chains · 615 deployments · 15 audited · 125 unaudited · 81 unverified
 
 ## adapter (23)
 
@@ -121,7 +121,7 @@
 | [LstHypeDataFeed (2 deployments)](./hyperliquid-999/0x7d876e544f12bd3347b9e904f0fb2d83bed59a27/) | hyperliquid | 2 deployments: hyperliquid [`0x7d876e...d59a27`](./hyperliquid-999/0x7d876e544f12bd3347b9e904f0fb2d83bed59a27/); hyperliquid `0xfcf86f...0b29ba` | ⚠️ Unaudited | Verified |
 | [MockERC20](./hyperliquid-999/0x4f5fa9d9820a6ca224aebe1b1c39b3af904ab61f/) | hyperliquid | [`0x4f5fa9...4ab61f`](./hyperliquid-999/0x4f5fa9d9820a6ca224aebe1b1c39b3af904ab61f/) | ⚠️ Unaudited | Verified |
 
-## unknown (143)
+## unknown (142)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -171,7 +171,6 @@
 | [LiquidHypeCustomAggregatorFeed (2 deployments)](./hyperliquid-999/0x1ceab703956e24b18a0af6b272e0bf3f499aca0f/) | hyperliquid | 2 deployments: hyperliquid [`0x1ceab7...9aca0f`](./hyperliquid-999/0x1ceab703956e24b18a0af6b272e0bf3f499aca0f/); hyperliquid `0x20a9bb...29bff8` | ⚠️ Unaudited | Verified |
 | [LiquidHypeDataFeed (2 deployments)](./hyperliquid-999/0x156286ed5ce3ac31f20ef501ad6a3de915fdb01e/) | hyperliquid | 2 deployments: hyperliquid [`0x156286...fdb01e`](./hyperliquid-999/0x156286ed5ce3ac31f20ef501ad6a3de915fdb01e/); hyperliquid `0x705197...c907bd` | ⚠️ Unaudited | Verified |
 | [MetaMorphoV1_1 (3 deployments)](./hyperliquid-999/0x08c00f8279dff5b0cb5a04d349e7d79708ceadf3/) | hyperliquid | 3 deployments: hyperliquid [`0x08c00f...ceadf3`](./hyperliquid-999/0x08c00f8279dff5b0cb5a04d349e7d79708ceadf3/); hyperliquid `0x264a06...856578`; hyperliquid `0x4851d4...dffd34` | ⚠️ Unaudited | Verified |
-| [Morpho](./hyperliquid-999/0x68e37de8d93d3496ae143f2e900490f6280c57cd/) | hyperliquid | [`0x68e37d...0c57cd`](./hyperliquid-999/0x68e37de8d93d3496ae143f2e900490f6280c57cd/) | ⚠️ Unaudited | Verified |
 | [obeatUSD (2 deployments)](./hyperliquid-999/0x4295e58a4a784f1cc05d505e868d531061085391/) | hyperliquid | 2 deployments: hyperliquid [`0x4295e5...085391`](./hyperliquid-999/0x4295e58a4a784f1cc05d505e868d531061085391/); hyperliquid `0x94bf32...3ec9e6` | ⚠️ Unaudited | Verified |
 | [ObeatUsdCustomAggregatorFeed (2 deployments)](./hyperliquid-999/0x3c16823833cdda2dde93dae77299223572b391ca/) | hyperliquid | 2 deployments: hyperliquid [`0x3c1682...b391ca`](./hyperliquid-999/0x3c16823833cdda2dde93dae77299223572b391ca/); hyperliquid `0x8407e1...c515c3` | ⚠️ Unaudited | Verified |
 | [ObeatUsdDataFeed (2 deployments)](./hyperliquid-999/0x3cdf50753d78a5fb386105f7799110783f81f28e/) | hyperliquid | 2 deployments: hyperliquid [`0x3cdf50...81f28e`](./hyperliquid-999/0x3cdf50753d78a5fb386105f7799110783f81f28e/); hyperliquid `0x44219e...4062a3` | ⚠️ Unaudited | Verified |

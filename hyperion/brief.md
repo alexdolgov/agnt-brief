@@ -5,8 +5,8 @@
 - Project: Hyperion (`hyperion`)
 - Website: [https://hyperion.xyz/](https://hyperion.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:06.065Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:56:37.290Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $21,073,597.39

@@ -417,11 +417,11 @@
 | [nucleus](./nucleus/) | $996.4K | 50.0% | ? | active | 11 | 6 | 2026-05-26 |
 | [nuls](./nuls/) | $7.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 0 | 19 | 2026-06-11 |
-| [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-06-10 |
-| [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 1 | 40 | 2026-06-10 |
-| [odyssey-finance](./odyssey-finance/) | $10.2M | 0.0% | ? | active | 0 | 79 | 2026-06-10 |
-| [okcoin](./okcoin/) | $25.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [omnibtc](./omnibtc/) | $2.2M | 0.0% | ? | active | 0 | 6 | 2026-06-10 |
+| [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
+| [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 1 | 40 | 2026-06-11 |
+| [odyssey-finance](./odyssey-finance/) | $10.2M | 0.0% | ? | active | 0 | 79 | 2026-06-11 |
+| [okcoin](./okcoin/) | $25.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [omnibtc](./omnibtc/) | $2.2M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
 | [onyx](./onyx/) | $384.4M | 0.0% | $384.4M | active | 0 | 16 | 2026-06-10 |
 | [open-ticketing-ecosystem](./open-ticketing-ecosystem/) | $3.3M | 0.0% | $3.3M | active | 0 | 24 | 2026-06-10 |
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-06-10 |

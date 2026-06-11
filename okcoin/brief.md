@@ -5,8 +5,8 @@
 - Project: Okcoin (`okcoin`)
 - Website: [https://www.okcoin.com](https://www.okcoin.com)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:08.783Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:33:07.387Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $25,768,090.20

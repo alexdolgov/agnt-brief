@@ -7,8 +7,8 @@
 - Project: Ocean Point (`ocean-point`)
 - Website: [https://app.oceanpoint.fi/](https://app.oceanpoint.fi/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:08.763Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:33:07.405Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: ethereum
 - Contract surface: 40 unique implementations (56 raw deployments)
 - DeFi Llama TVL: $1,135,721.93

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ocean-point",
-  "generated_at": "2026-06-10T20:59:08.763Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T01:33:07.405Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "ocean-point",
@@ -16,7 +16,7 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 566,
+    "days_since_peak": 577,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0

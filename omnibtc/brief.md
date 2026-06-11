@@ -5,8 +5,8 @@
 - Project: OmniBTC (`omnibtc`)
 - Website: [https://www.omnibtc.finance](https://www.omnibtc.finance)
 - Lifecycle: active (Tier 0, 83.1% below peak)
-- Generated: 2026-06-10T20:59:08.786Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:33:09.654Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: arbitrum, avalanche, base, ethereum, optimism, polygon
 - Contract surface: 6 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $2,201,232.35

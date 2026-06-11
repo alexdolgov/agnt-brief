@@ -7,11 +7,11 @@
 - Project: stCYBER (`stcyber`)
 - Website: [https://cyber.co/stake](https://cyber.co/stake)
 - Lifecycle: declining (Tier 0, 85.8% below peak)
-- Generated: 2026-06-11T03:08:07.779Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
+- Generated: 2026-06-11T12:13:39.438Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: base, bsc, ethereum, optimism
 - Contract surface: 31 unique implementations (44 raw deployments)
-- DeFi Llama TVL: $1,538,238.34
+- DeFi Llama TVL: $1,142,501.11
 - On-chain TVL (included contracts): $51,356,497.64
 - TVL by chain: Ethereum $46,608,269.54 | Optimism $3,887,002.28 | Bsc $861,225.83
 
@@ -31,11 +31,11 @@ The CYBER token is the core asset used across all families: it is staked in the 
 - Unverified implementations: 5
 - Unique implementations: 31
 - Raw deployments: 44
-- Audits discovered: 0
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $51,356,497.64
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $51,356,497.64 represents exposure in a protocol with declining activity.
 
@@ -108,6 +108,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [SlowMist Audit Report - Cyber Token Bridges.pdf](https://github.com/cyberconnecthq/cyber-token-bridges/blob/main/audit/SlowMist%20Audit%20Report%20-%20Cyber%20Token%20Bridges.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -135,9 +136,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11687] SlowMist Audit Report - Cyber Token Bridges.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "synfutures",
-  "generated_at": "2026-06-11T03:26:36.807Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-11T12:13:37.774Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "synfutures",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 477,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6281834,
+    "dl_tvl_usd": 4852382,
     "tvl_usd": 52438726.487115555,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -54,10 +54,10 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2026-04",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
+      "fresh": 1,
       "aging": 0,
       "stale": 0,
       "unknown": 0
@@ -15026,7 +15026,29 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11701,
+      "audit_key": "audit-11701",
+      "report_name": "Yes. Anchored, SynFutures’ partner for RWA Trading, has completed a smart contract audit with [Sherlock](https://sherlock.xyz/). The audit report is now available and can be [reviewed]() here.",
+      "report_url": "https://sherlock-files.ams3.digitaloceanspaces.com/reports/2026.04.02%20-%20Final%20-%20Anchored%20Collaborative%20Audit%20Report%201775117748.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "fresh",
+      "date": "2026-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -15051,7 +15073,12 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11701,
+        "report_name": "Yes. Anchored, SynFutures’ partner for RWA Trading, has completed a smart contract audit with [Sherlock](https://sherlock.xyz/). The audit report is now available and can be [reviewed]() here."
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

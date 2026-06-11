@@ -5,11 +5,11 @@
 - Project: SynFutures (`synfutures`)
 - Website: [https://www.synfutures.com/](https://www.synfutures.com/)
 - Lifecycle: active (Tier 0, 91.2% below peak)
-- Generated: 2026-06-11T03:26:36.807Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
+- Generated: 2026-06-11T12:13:37.774Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: arbitrum, base, blast, bsc, ethereum, polygon
 - Contract surface: 481 unique implementations (485 raw deployments)
-- DeFi Llama TVL: $6,281,834.00
+- DeFi Llama TVL: $4,852,382.00
 - On-chain TVL (included contracts): $52,438,726.49
 - TVL by chain: Ethereum $51,469,366.33 | Bsc $969,360.15
 
@@ -29,11 +29,11 @@ SynFutures V3 is the active product family, with multiple proxy contracts pointi
 - Unverified implementations: 477
 - Unique implementations: 481
 - Raw deployments: 485
-- Audits discovered: 0
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $52,438,726.49
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2026-04 (fresh)
+- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -556,6 +556,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Yes. Anchored, SynFutures’ partner for RWA Trading, has completed a smart contract audit with [Sherlock](https://sherlock.xyz/). The audit report is now available and can be [reviewed]() here.](https://sherlock-files.ams3.digitaloceanspaces.com/reports/2026.04.02%20-%20Final%20-%20Anchored%20Collaborative%20Audit%20Report%201775117748.pdf) | Sherlock | Contest | 2026-04 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -578,9 +579,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11701] Yes. Anchored, SynFutures’ partner for RWA Trading, has completed a smart contract audit with [Sherlock](https://sherlock.xyz/). The audit report is now available and can be [reviewed]() here.
 
 Fork inheritance lineage and inherited audits are included when available.

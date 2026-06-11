@@ -5,11 +5,11 @@
 - Project: Snuggle (`snuggle`)
 - Website: [https://snuggle.fi/](https://snuggle.fi/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T02:48:04.142Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-11T12:15:37.271Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: arbitrum, base
 - Contract surface: 88 unique implementations (179 raw deployments)
-- DeFi Llama TVL: $1,295,890.02
+- DeFi Llama TVL: $1,001,156.36
 - On-chain TVL (included contracts): $0.00
 - TVL by chain: Base $0.00
 
@@ -29,11 +29,11 @@ Both families share the same core vault logic (SnuggleVaultUpgradeable) and adap
 - Unverified implementations: 37
 - Unique implementations: 88
 - Raw deployments: 179
-- Audits discovered: 2
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $0.00
 - Latest audit: 2026-02 (fresh)
-- Staleness: 2 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 2 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -167,6 +167,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [DL audit link](https://d3cny4im7ppv5.cloudfront.net/Abyss.pdf) | unknown | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
 | [security review](https://www.snuggle.fi/security) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 36 | high |
+| [AUDIT PARTNERAudited by Valves SecurityValves Security is one of the top security firms in the industry. We have also been audited by multiple independent researchers and white hat groups, with more third-party audits to come.Visit Valves Security →](https://valvessecurity.com/) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -197,7 +198,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=36
@@ -205,5 +206,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [3119] DL audit link
+- [11989] AUDIT PARTNERAudited by Valves SecurityValves Security is one of the top security firms in the industry. We have also been audited by multiple independent researchers and white hat groups, with more third-party audits to come.Visit Valves Security →
 
 Fork inheritance lineage and inherited audits are included when available.

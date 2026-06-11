@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "snuggle",
-  "generated_at": "2026-06-11T02:48:04.142Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
+  "generated_at": "2026-06-11T12:15:37.271Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "snuggle",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 37,
     "coverage_pct": 23.5,
-    "total_audits": 2,
+    "total_audits": 3,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 1295890.02343,
+    "dl_tvl_usd": 1001156.35916,
     "tvl_usd": 0.000002,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -55,7 +55,7 @@
       "fresh": 2,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 1
     }
   },
   "topography": {
@@ -3704,6 +3704,27 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11989,
+      "audit_key": "audit-11989",
+      "report_name": "AUDIT PARTNERAudited by Valves SecurityValves Security is one of the top security firms in the industry. We have also been audited by multiple independent researchers and white hat groups, with more third-party audits to come.Visit Valves Security →",
+      "report_url": "https://valvessecurity.com/",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -3826,6 +3847,10 @@
       {
         "audit_id": 3119,
         "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 11989,
+        "report_name": "AUDIT PARTNERAudited by Valves SecurityValves Security is one of the top security firms in the industry. We have also been audited by multiple independent researchers and white hat groups, with more third-party audits to come.Visit Valves Security →"
       }
     ],
     "inherited_remapped_matches": []

@@ -544,7 +544,7 @@
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |
 | [smilee-finance](./smilee-finance/) | $1.1M | 0.0% | ? | active | 3 | 186 | 2026-06-11 |
 | [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 12 | 2026-06-11 |
-| [snuggle](./snuggle/) | $0.0 | 23.5% | $0.0 | active | 2 | 88 | 2026-06-11 |
+| [snuggle](./snuggle/) | $0.0 | 23.5% | $0.0 | active | 3 | 88 | 2026-06-11 |
 | [sofa.org](./sofa.org/) | $49.2K | 33.3% | $46.8K | declining | 8 | 38 | 2026-05-24 |
 | [solayer](./solayer/) | $13.0M | 0.0% | ? | unknown | 5 | 0 | 2026-06-11 |
 | [solera](./solera/) | $8.4M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
@@ -577,7 +577,7 @@
 | [stargate](./stargate/) | $5.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [starknet-btc-staking](./starknet-btc-staking/) | $412.2M | 0.0% | $412.2M | unknown | 42 | 1 | 2026-05-31 |
 | [stcelo](./stcelo/) | $1.6M | 50.0% | ? | active | 2 | 19 | 2026-06-11 |
-| [stcyber](./stcyber/) | $51.4M | 0.0% | $51.4M | declining | 0 | 31 | 2026-06-11 |
+| [stcyber](./stcyber/) | $51.4M | 0.0% | $51.4M | declining | 1 | 31 | 2026-06-11 |
 | [steer-protocol](./steer-protocol/) | $3.3M | 0.0% | $3.3M | active | 5 | 43 | 2026-06-11 |
 | [stfil](./stfil/) | $5.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [stobox](./stobox/) | $15.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
@@ -607,7 +607,7 @@
 | [symmio](./symmio/) | $24.5 | 0.0% | $24.5 | active | 0 | 168 | 2026-06-11 |
 | [synapse](./synapse/) | $25.6M | 0.0% | $25.6M | declining | 0 | 824 | 2026-06-11 |
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 23.3% | ? | active | 8 | 157 | 2026-06-11 |
-| [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 0 | 481 | 2026-06-11 |
+| [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 1 | 481 | 2026-06-11 |
 | [synthetix](./synthetix/) | $10.3M | 0.0% | $10.3M | active | 0 | 13 | 2026-06-11 |
 | [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 0 | 1 | 2026-06-11 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-06-11 |
@@ -624,7 +624,7 @@
 | [tg-casino](./tg-casino/) | $13.4M | 6.7% | ? | active | 761 | 15 | 2026-06-11 |
 | [the-arena](./the-arena/) | $7.8M | 0.0% | $7.8M | active | 0 | 119 | 2026-06-11 |
 | [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 17 | 2026-06-11 |
-| [thedeep](./thedeep/) | $8.2M | 0.0% | ? | active | 0 | 164 | 2026-06-11 |
+| [thedeep](./thedeep/) | $7.0M | 0.0% | ? | active | 1 | 164 | 2026-06-11 |
 | [themis-pro](./themis-pro/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [thena](./thena/) | $208.2 | 10.2% | $208.2 | declining | 3 | 131 | 2026-05-25 |
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-06-11 |
@@ -647,7 +647,7 @@
 | [trufin-protocol](./trufin-protocol/) | $7.0M | 66.7% | ? | declining | 12 | 7 | 2026-06-10 |
 | [trust-wallet](./trust-wallet/) | $470.2M | 0.0% | $470.2M | active | 0 | 5 | 2026-06-11 |
 | [tulipa-capital](./tulipa-capital/) | $55.7M | 0.0% | $55.7M | active | 0 | 4 | 2026-06-11 |
-| [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | declining | 2 | 516 | 2026-06-11 |
+| [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | declining | 3 | 516 | 2026-06-11 |
 | [twyne](./twyne/) | $985.7K | 3.8% | $985.7K | active | 6 | 59 | 2026-06-11 |
 | [txflow](./txflow/) | $3.8M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
 | [ultrayield](./ultrayield/) | $87.6M | 0.0% | ? | declining | 0 | 4520 | 2026-06-11 |

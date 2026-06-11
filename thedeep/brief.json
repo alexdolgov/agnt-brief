@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "thedeep",
-  "generated_at": "2026-06-11T03:33:52.125Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
+  "generated_at": "2026-06-11T12:13:39.486Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "thedeep",
@@ -33,10 +33,10 @@
     "contracts_verified_by_bytecode": 4,
     "contracts_unverified": 149,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 8217310.83532,
-    "tvl_usd": 8217310.83532,
+    "dl_tvl_usd": 7045249.405540001,
+    "tvl_usd": 7045249.405540001,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -55,7 +55,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 1
     }
   },
   "topography": {
@@ -5878,7 +5878,29 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11711,
+      "audit_key": "audit-11711",
+      "report_name": "View Security Audit Report →",
+      "report_url": "https://github.com/bailsec/BailSec/blob/main/Bailsec%20-%20ICHI%20-%20Vaults%20-%20Final%20Report.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -6023,7 +6045,12 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11711,
+        "report_name": "View Security Audit Report →"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -5,11 +5,11 @@
 - Project: DxSale (`dxsale`)
 - Website: [https://dx.app](https://dx.app)
 - Lifecycle: active (Tier 0, 76% below peak)
-- Generated: 2026-06-10T22:57:52.165Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-11T12:00:34.555Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: arbitrum, avalanche, base, bsc, celo, ethereum, fantom, gnosis, harmony, moonriver, polygon
 - Contract surface: 352 unique implementations (388 raw deployments)
-- DeFi Llama TVL: $25,965,918.43
+- DeFi Llama TVL: $17,802,955.24
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ The DxSale family includes token factories (DxStandardToken), presale management
 - Unverified implementations: 337
 - Unique implementations: 352
 - Raw deployments: 388
-- Audits discovered: 0
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -427,6 +427,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [DL audit link](https://skynet.certik.com/projects/dxsale) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -459,9 +460,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11578] DL audit link
 
 Fork inheritance lineage and inherited audits are included when available.

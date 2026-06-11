@@ -52,7 +52,7 @@
 | [asseto-aoabt](./asseto-aoabt/) | $24.3M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
 | [asseto-cash+](./asseto-cash+/) | $1.4M | 0.0% | ? | declining | 1 | 2 | 2026-06-10 |
 | [asymmetry](./asymmetry/) | $37.1M | 0.0% | $37.1M | declining | 0 | 203 | 2026-06-10 |
-| [atlendis](./atlendis/) | $4.3M | 14.3% | $4.3M | active | 2 | 43 | 2026-06-10 |
+| [atlendis](./atlendis/) | $4.3M | 14.3% | $4.3M | active | 2 | 43 | 2026-06-11 |
 | [augur](./augur/) | $1.7M | 64.1% | ? | active | 7 | 39 | 2026-06-10 |
 | [aura](./aura/) | $107.0M | 19.4% | $68.2M | active | 18 | 497 | 2026-06-10 |
 | [aurora-plus](./aurora-plus/) | $2.3M | 33.3% | ? | active | 3 | 31 | 2026-06-10 |
@@ -79,7 +79,7 @@
 | [bifi](./bifi/) | $236.7K | 30.4% | ? | active | 7 | 170 | 2026-06-10 |
 | [bigone](./bigone/) | $35.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [bima-cdp](./bima-cdp/) | $5.3M | 51.6% | ? | active | 3 | 37 | 2026-06-10 |
-| [binaryx-platform](./binaryx-platform/) | $8.6M | 0.0% | ? | active | 2 | 133 | 2026-05-31 |
+| [binaryx-platform](./binaryx-platform/) | $8.7M | 0.0% | ? | active | 3 | 133 | 2026-06-11 |
 | [bio-protocol](./bio-protocol/) | $143.8M | 10.0% | $139.6M | active | 6 | 41 | 2026-06-10 |
 | [biswap](./biswap/) | $609.3K | 0.0% | $609.3K | declining | 1 | 84 | 2026-06-10 |
 | [bitlo](./bitlo/) | $16.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
@@ -102,7 +102,7 @@
 | [bounce.tech](./bounce.tech/) | $1.1M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
 | [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 9 | 2026-06-10 |
 | [bracket-protocol](./bracket-protocol/) | $622.4M | 17.4% | $619.3M | active | 5 | 58 | 2026-06-10 |
-| [brickken](./brickken/) | $41.7M | 0.0% | ? | active | 0 | 29 | 2026-06-10 |
+| [brickken](./brickken/) | $42.2M | 0.0% | ? | active | 1 | 29 | 2026-06-11 |
 | [bridgers](./bridgers/) | $1.6M | 0.0% | ? | active | 1 | 6 | 2026-06-10 |
 | [brotocol](./brotocol/) | $6.5M | 0.0% | ? | active | 14 | 214 | 2026-06-11 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-06-10 |
@@ -121,7 +121,7 @@
 | [capx-ai](./capx-ai/) | $2.1M | 0.0% | ? | active | 1 | 1 | 2026-06-10 |
 | [carbon-defi](./carbon-defi/) | $5.1M | 30.9% | ? | active | 4 | 158 | 2026-06-10 |
 | [cbridge](./cbridge/) | $18.2M | 0.0% | ? | active | 12 | 2007 | 2026-06-10 |
-| [cex.io](./cex.io/) | $7.6M | 0.0% | ? | active | 0 | 3 | 2026-06-10 |
+| [cex.io](./cex.io/) | $11.6M | 0.0% | ? | active | 1 | 3 | 2026-06-11 |
 | [cgo-finance](./cgo-finance/) | $1.2M | 0.0% | ? | declining | 0 | 2 | 2026-06-10 |
 | [chain-fusion](./chain-fusion/) | $18.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [chainflip](./chainflip/) | $3.7M | 27.3% | ? | active | 3 | 12 | 2026-06-10 |
@@ -174,7 +174,7 @@
 | [dooar](./dooar/) | $5.1M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
 | [drops](./drops/) | $16.5M | 0.0% | $16.5M | declining | 0 | 77 | 2026-06-10 |
 | [dtrinity](./dtrinity/) | $1.8M | 0.0% | $1.8M | active | 5 | 209 | 2026-06-11 |
-| [dxsale](./dxsale/) | $26.0M | 0.0% | ? | active | 0 | 352 | 2026-06-10 |
+| [dxsale](./dxsale/) | $17.8M | 0.0% | ? | active | 1 | 352 | 2026-06-11 |
 | [dyorswap](./dyorswap/) | $2.2M | 0.0% | ? | active | 0 | 93 | 2026-06-10 |
 | [easedefi.org](./easedefi.org/) | $4.4M | 0.0% | ? | active | 3 | 1 | 2026-06-10 |
 | [egas-swap](./egas-swap/) | $18.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |

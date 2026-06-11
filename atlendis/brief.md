@@ -4,11 +4,11 @@
 
 - Project: Atlendis (`atlendis`)
 - Lifecycle: active (Tier 0, 99% below peak)
-- Generated: 2026-06-10T20:58:57.817Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T12:00:35.595Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: polygon
 - Contract surface: 43 unique implementations (106 raw deployments)
-- DeFi Llama TVL: $10,993,274.00
+- DeFi Llama TVL: $10,993,162.00
 - On-chain TVL (included contracts): $4,280,776.69
 - TVL by chain: Polygon $4,280,776.69
 
@@ -121,7 +121,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [PeckShield-Audit-Report-Atlendis-v1.0.pdf](https://github.com/Atlendis/protocol-v1/blob/master/audits/PeckShield-Audit-Report-Atlendis-v1.0.pdf) | PeckShield | Audit | 2022-05 | stale | Direct | contract_name | 4 | high |
-| [atlendis-audit-report.pdf](https://github.com/Atlendis/protocol-v1/blob/master/audits/atlendis-audit-report.pdf) | unknown | Audit | 2022-02 | stale | Direct | contract_name | 4 | high |
+| [atlendis-audit-report.pdf (also discovered via alternate URL)](https://github.com/Atlendis/protocol-v1/blob/master/audits/atlendis-audit-report.pdf) | unknown | Audit | 2022-02 | stale | Direct | contract_name|n/a | 4 | high |
 
 ## Coverage Gaps
 

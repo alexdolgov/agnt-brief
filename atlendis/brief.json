@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "atlendis",
-  "generated_at": "2026-06-10T20:58:57.817Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T12:00:35.595Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "atlendis",
@@ -35,7 +35,7 @@
     "coverage_pct": 14.3,
     "total_audits": 2,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 10993274,
+    "dl_tvl_usd": 10993162,
     "tvl_usd": 4280776.690686222,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -2018,7 +2018,7 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "scope_format": "contract_name|n/a",
       "extracted_names": [
         "BorrowerPools",
         "Errors",
@@ -2038,7 +2038,17 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 7049,
+          "report_url": "https://github.com/Atlendis/protocol-v1/blob/master/audits/atlendis-audit-report.pdf"
+        },
+        {
+          "audit_id": 11880,
+          "report_url": "https://github.com/runtimeverification/publications/blob/main/reports/smart-contracts/atlendis-audit-report.pdf"
+        }
+      ]
     }
   ],
   "auditor_coverage": [

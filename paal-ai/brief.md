@@ -5,8 +5,8 @@
 - Project: PAAL AI (`paal-ai`)
 - Website: [https://www.paal.ai/](https://www.paal.ai/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:09.167Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:42:05.939Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: ethereum
 - Contract surface: 3 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $1,605,477.52

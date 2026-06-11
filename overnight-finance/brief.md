@@ -7,8 +7,8 @@
 - Project: Overnight Finance (`overnight-finance`)
 - Website: [https://overnight.fi](https://overnight.fi)
 - Lifecycle: declining (Tier 0, 63.6% below peak)
-- Generated: 2026-06-10T20:59:09.094Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:44:10.793Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: arbitrum, base, blast, bsc, ethereum, linea, optimism, polygon, sonic, zksync-era
 - Contract surface: 4353 unique implementations (4353 raw deployments)
 - DeFi Llama TVL: $10,007,795.66

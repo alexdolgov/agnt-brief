@@ -7,8 +7,8 @@
 - Project: Overtime (`overtime`)
 - Website: [https://www.overtimemarkets.xyz/markets?referrerId=defillama](https://www.overtimemarkets.xyz/markets?referrerId=defillama)
 - Lifecycle: declining (Tier 0, 75.2% below peak)
-- Generated: 2026-06-10T20:59:09.158Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:42:06.966Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: arbitrum, base, ethereum, optimism, polygon
 - Contract surface: 200 unique implementations (1988 raw deployments)
 - DeFi Llama TVL: $3,014,399.64

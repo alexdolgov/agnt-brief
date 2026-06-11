@@ -432,11 +432,11 @@
 | [osmosis-dex](./osmosis-dex/) | $18.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [ostium](./ostium/) | $29.1M | 47.1% | ? | active | 1 | 17 | 2026-06-11 |
 | [outcome-finance](./outcome-finance/) | $1.3M | 0.0% | ? | declining | 0 | 3 | 2026-06-11 |
-| [overnight-finance](./overnight-finance/) | $10.0M | 0.0% | ? | declining | 2 | 4353 | 2026-06-10 |
-| [overtime](./overtime/) | $42.5M | 0.0% | $42.5M | declining | 0 | 200 | 2026-06-10 |
-| [p2pb2b](./p2pb2b/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | active | 0 | 3 | 2026-06-10 |
-| [pact](./pact/) | $2.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-10 |
+| [overnight-finance](./overnight-finance/) | $10.0M | 0.0% | ? | declining | 2 | 4353 | 2026-06-11 |
+| [overtime](./overtime/) | $42.5M | 0.0% | $42.5M | declining | 0 | 200 | 2026-06-11 |
+| [p2pb2b](./p2pb2b/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | active | 0 | 3 | 2026-06-11 |
+| [pact](./pact/) | $2.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [pangolin](./pangolin/) | $3.8M | 53.8% | ? | declining | 12 | 163 | 2026-06-10 |
 | [paradex](./paradex/) | $33.3M | 0.0% | ? | declining | 0 | 5 | 2026-06-10 |
 | [paragonsdao](./paragonsdao/) | $6.4M | 50.0% | ? | active | 7 | 2 | 2026-06-10 |

@@ -1,6 +1,6 @@
 # overtime — Contract Index
 
-201 unique implementations across 5 chains · 1993 deployments · 0 audited · 145 unaudited · 56 unverified
+200 unique implementations across 5 chains · 1988 deployments · 0 audited · 144 unaudited · 56 unverified
 
 ## adapter (1)
 
@@ -14,7 +14,7 @@
 |---|---|---|---|---|
 | [OptimismMintableERC20](./base-8453/0xf34e0cff046e154cafcae502c7541b9e5fd8c249/) | base | [`0xf34e0c...d8c249`](./base-8453/0xf34e0cff046e154cafcae502c7541b9e5fd8c249/) | ⚠️ Unaudited | Verified |
 
-## core_logic (20)
+## core_logic (19)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -36,7 +36,6 @@
 | [ThalesAMMLiquidityPool (14 deployments)](./optimism-10/0x092e6b8dfddb4b732c89deb4a700868cc5d58b70/) | optimism | 14 deployments: optimism [`0x092e6b...d58b70`](./optimism-10/0x092e6b8dfddb4b732c89deb4a700868cc5d58b70/); optimism `0x33425d...bddc01`; optimism `0x47da40...246124`; optimism `0x95e8c8...e11a14`; optimism `0xc10a0a...85ea40`; optimism `0xc33cab...b44cc4`; base `0x5713ab...6f9e3b`; base `0x865551...373532`; base `0xa56659...2e57b9`; arbitrum `0x1aafc0...bfb5e8`; arbitrum `0x362b16...58b0d4`; arbitrum `0x40b6f4...8cabb4`; arbitrum `0xde609c...3f2819`; arbitrum `0xea4c23...544735` | ⚠️ Unaudited | Verified |
 | [ThalesAMMLiquidityPoolData (10 deployments)](./optimism-10/0x1e95faca5f99dcc8e517fea193a3c3b0aac1e0a1/) | optimism | 10 deployments: optimism [`0x1e95fa...c1e0a1`](./optimism-10/0x1e95faca5f99dcc8e517fea193a3c3b0aac1e0a1/); optimism `0x23823f...8150c2`; optimism `0x8ee4f3...1b376c`; optimism `0xb23ea6...420608`; base `0x25e951...141325`; base `0x33bf03...681197`; base `0xa23409...0485c9`; arbitrum `0x230893...b6541b`; arbitrum `0xade539...4347bf`; arbitrum `0xc7909c...9fd00c` | ⚠️ Unaudited | Verified |
 | [ThalesAMMLiquidityPoolRoundMastercopy (4 deployments)](./arbitrum-42161/0x4098707cb3effb072c0ef867ede1564375678f05/) | arbitrum | 4 deployments: optimism `0x8f8cc3...132018`; base `0x9e0b49...2604e6`; arbitrum [`0x409870...678f05`](./arbitrum-42161/0x4098707cb3effb072c0ef867ede1564375678f05/); arbitrum `0xe69d18...071ceb` | ⚠️ Unaudited | Verified |
-| [UniswapV3Pool (5 deployments)](./optimism-10/0x3f60fca6c50ae3bcd95ae150b4c57f0ba5c3f2ad/) | optimism | 5 deployments: optimism [`0x3f60fc...c3f2ad`](./optimism-10/0x3f60fca6c50ae3bcd95ae150b4c57f0ba5c3f2ad/); base `0x41a6e4...8dfd5f`; arbitrum `0x4d4904...369424`; arbitrum `0xf94997...ca4555`; arbitrum `0xfc90c3...274869` | ⚠️ Unaudited | Verified |
 | [Vault (2 deployments)](./optimism-10/0x5ebc0a9278a87caffc090f8e1e53f2fe60f76f9e/) | optimism | 2 deployments: optimism [`0x5ebc0a...f76f9e`](./optimism-10/0x5ebc0a9278a87caffc090f8e1e53f2fe60f76f9e/); optimism `0xf4507b...167f4d` | ⚠️ Unaudited | Verified |
 
 ## governance (10)

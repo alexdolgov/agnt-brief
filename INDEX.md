@@ -311,11 +311,11 @@
 | [kine-finance](./kine-finance/) | $351.8M | 0.0% | $351.8M | declining | 0 | 35 | 2026-06-11 |
 | [king-protocol](./king-protocol/) | $1.5M | 60.0% | ? | active | 4 | 16 | 2026-06-11 |
 | [kintsu](./kintsu/) | $2.3M | 0.0% | ? | declining | 5 | 12 | 2026-06-11 |
-| [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 2 | 154 | 2026-06-10 |
-| [klaystation](./klaystation/) | $0.0 | 0.0% | ? | declining | 0 | 1 | 2026-06-10 |
-| [klayswap](./klayswap/) | $4.5M | 0.0% | ? | declining | 4 | 22 | 2026-06-10 |
-| [kodiak](./kodiak/) | $29.0M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
-| [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-06-10 |
+| [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 2 | 154 | 2026-06-11 |
+| [klaystation](./klaystation/) | $0.0 | 0.0% | ? | declining | 0 | 1 | 2026-06-11 |
+| [klayswap](./klayswap/) | $4.5M | 0.0% | ? | declining | 4 | 22 | 2026-06-11 |
+| [kodiak](./kodiak/) | $29.0M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
+| [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-06-11 |
 | [kuma-protocol](./kuma-protocol/) | $3.1M | 28.1% | $23.1K | active | 2 | 53 | 2026-06-10 |
 | [kyberswap](./kyberswap/) | $58.3M | 8.8% | $58.3M | declining | 6 | 445 | 2026-06-10 |
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-06-10 |

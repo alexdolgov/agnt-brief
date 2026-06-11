@@ -7,8 +7,8 @@
 - Project: KlaySwap (`klayswap`)
 - Website: [https://klayswap.com/dashboard](https://klayswap.com/dashboard)
 - Lifecycle: declining (Tier 1, sunsetting)
-- Generated: 2026-06-10T20:59:06.735Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:31:10.582Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: klaytn
 - Contract surface: 22 unique implementations (22 raw deployments)
 - DeFi Llama TVL: $4,507,746.00

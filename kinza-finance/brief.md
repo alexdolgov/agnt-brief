@@ -7,8 +7,8 @@
 - Project: Kinza Finance (`kinza-finance`)
 - Website: [https://app.kinza.finance/#/referral?referralCode=28UAHQ](https://app.kinza.finance/#/referral?referralCode=28UAHQ)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:06.722Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:30:44.502Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: bsc, ethereum, mantle, opbnb
 - Contract surface: 154 unique implementations (252 raw deployments)
 - DeFi Llama TVL: $7,776,309.13

@@ -5,8 +5,8 @@
 - Project: Kodiak (`kodiak`)
 - Website: [https://kodiak.finance/](https://kodiak.finance/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:06.754Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:28:42.185Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $29,044,670.00

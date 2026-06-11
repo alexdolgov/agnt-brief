@@ -5,8 +5,8 @@
 - Project: Kromatika (`kromatika`)
 - Website: [https://app.kromatika.finance/limitorder#/pool](https://app.kromatika.finance/limitorder#/pool)
 - Lifecycle: active (Tier 0, 40.6% below peak)
-- Generated: 2026-06-10T20:59:06.762Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:29:38.903Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: arbitrum, ethereum, optimism, polygon
 - Contract surface: 30 unique implementations (69 raw deployments)
 - DeFi Llama TVL: $1,091,186.50

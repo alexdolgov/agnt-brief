@@ -5,8 +5,8 @@
 - Project: NonKYC (`nonkyc`)
 - Website: [https://nonkyc.io](https://nonkyc.io)
 - Lifecycle: active (Tier 0, 72.7% below peak)
-- Generated: 2026-06-10T20:59:08.710Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:26:47.103Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: arbitrum, base, ethereum, optimism
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $5,725,456.37

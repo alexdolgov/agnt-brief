@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "neutral-trade",
-  "generated_at": "2026-06-10T20:59:08.142Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T01:26:46.574Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {

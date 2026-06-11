@@ -34,13 +34,18 @@
 |---|---|---|---|---|
 | [CumulativeMerkleDrop (2 deployments)](./ethereum-1/0x1349a8d352b1971cbebeacf55fb75526f47b6610/) | ethereum | 2 deployments: ethereum [`0x1349a8...7b6610`](./ethereum-1/0x1349a8d352b1971cbebeacf55fb75526f47b6610/); ethereum `0x4d68f9...a1bfd6` | ⚠️ Unaudited | Verified |
 
-## unknown (6)
+## periphery (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [NodeDAOView (2 deployments)](./ethereum-1/0x857bf02b1f5fd85e064e6726658ea1864a14d948/) | ethereum | 2 deployments: ethereum [`0x857bf0...14d948`](./ethereum-1/0x857bf02b1f5fd85e064e6726658ea1864a14d948/); ethereum `0xd7c049...812121` | ⚠️ Unaudited | Verified |
+
+## unknown (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [LsdETH](./ethereum-1/0x9dc7e196092dac94f0c76cfb020b60fa75b97c5b/) | ethereum | [`0x9dc7e1...b97c5b`](./ethereum-1/0x9dc7e196092dac94f0c76cfb020b60fa75b97c5b/) | ⚠️ Unaudited | Verified |
 | [MintSecurity (2 deployments)](./ethereum-1/0xa57dc79b2852415448b66100bf59753318f9d25f/) | ethereum | 2 deployments: ethereum [`0xa57dc7...f9d25f`](./ethereum-1/0xa57dc79b2852415448b66100bf59753318f9d25f/); ethereum `0xd297dc...befb57` | ✅ Audited | Verified |
-| [NodeDAOView (2 deployments)](./ethereum-1/0x857bf02b1f5fd85e064e6726658ea1864a14d948/) | ethereum | 2 deployments: ethereum [`0x857bf0...14d948`](./ethereum-1/0x857bf02b1f5fd85e064e6726658ea1864a14d948/); ethereum `0xd7c049...812121` | ⚠️ Unaudited | Verified |
 | ObeliskCustody | ethereum | `0x9f836f...8b1a2c` | ⚠️ Unaudited | Verified |
 | ObeliskNetwork | ethereum | `0xe423b9...1cd999` | ✅ Audited | Verified |
 | [RestakingPod](./ethereum-1/0x9efdeb695f1e3f0ad3bcfb1e07d2749b50a3b75c/) | ethereum | [`0x9efdeb...a3b75c`](./ethereum-1/0x9efdeb695f1e3f0ad3bcfb1e07d2749b50a3b75c/) | ⚠️ Unaudited | Verified |

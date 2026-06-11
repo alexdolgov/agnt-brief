@@ -6,8 +6,8 @@
 
 - Project: Nerve (`nerve`)
 - Lifecycle: declining (Tier 0, 99.8% below peak)
-- Generated: 2026-06-10T20:59:08.071Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:23:38.777Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: bsc, ethereum
 - Contract surface: 66 unique implementations (108 raw deployments)
 - DeFi Llama TVL: $1,500,085.77

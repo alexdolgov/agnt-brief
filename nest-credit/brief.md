@@ -5,8 +5,8 @@
 - Project: Nest Credit (`nest-credit`)
 - Website: [https://nest.credit/](https://nest.credit/)
 - Lifecycle: active (Tier 0, 39.9% below peak)
-- Generated: 2026-06-10T20:59:08.097Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:25:53.755Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: arbitrum, bsc, ethereum, plasma
 - Contract surface: 16 unique implementations (65 raw deployments)
 - DeFi Llama TVL: $50,512,175.44

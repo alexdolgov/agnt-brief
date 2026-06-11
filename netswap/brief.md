@@ -7,8 +7,8 @@
 - Project: NetSwap (`netswap`)
 - Website: [https://netswap.io/#/home](https://netswap.io/#/home)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:08.134Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:24:57.536Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: metis
 - Contract surface: 48 unique implementations (90 raw deployments)
 - DeFi Llama TVL: $1,336,674.22

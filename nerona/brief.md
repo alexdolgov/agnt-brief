@@ -6,8 +6,8 @@
 
 - Project: Nerona (`nerona`)
 - Lifecycle: declining (Tier 0, 77.5% below peak)
-- Generated: 2026-06-10T20:59:08.067Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:23:37.893Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $7,940,325.87

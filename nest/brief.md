@@ -5,8 +5,8 @@
 - Project: NEST (`nest`)
 - Website: [https://app.usenest.xyz/](https://app.usenest.xyz/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:08.087Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:23:37.800Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: bsc, ethereum, hyperliquid, polygon
 - Contract surface: 349 unique implementations (510 raw deployments)
 - DeFi Llama TVL: $12,591,365.00

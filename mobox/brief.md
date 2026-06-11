@@ -7,8 +7,8 @@
 - Project: MOBOX (`mobox`)
 - Website: [https://www.mobox.io/home/#/iframe/momo](https://www.mobox.io/home/#/iframe/momo)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:07.758Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:08:24.980Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: bsc
 - Contract surface: 323 unique implementations (423 raw deployments)
 - DeFi Llama TVL: $2,144,898.95

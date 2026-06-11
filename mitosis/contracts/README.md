@@ -1,6 +1,6 @@
 # mitosis — Contract Index
 
-72 unique implementations across 11 chains · 167 deployments · 2 audited · 44 unaudited · 26 unverified
+66 unique implementations across 11 chains · 160 deployments · 0 audited · 43 unaudited · 23 unverified
 
 ## bridge_template (1)
 
@@ -8,13 +8,12 @@
 |---|---|---|---|---|
 | [OptimismMintableERC20](./optimism-10/0x346e03f8cce9fe01dcb3d0da3e9d00dc2c0e08f0/) | optimism | [`0x346e03...0e08f0`](./optimism-10/0x346e03f8cce9fe01dcb3d0da3e9d00dc2c0e08f0/) | ⚠️ Unaudited | Verified |
 
-## core_logic (8)
+## core_logic (7)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BasicVault (3 deployments)](./arbitrum-42161/0x472edca59afdb7dd4ade8d92caca1ebc2586e584/) | arbitrum | 3 deployments: arbitrum [`0x472edc...86e584`](./arbitrum-42161/0x472edca59afdb7dd4ade8d92caca1ebc2586e584/); arbitrum `0xf57104...3ad1b3`; linea `0x877b9e...0a6031` | ⚠️ Unaudited | Verified |
 | [BoringVault](./ethereum-1/0x917cee801a67f933f2e6b33fc0cd1ed2d5909d88/) | ethereum | [`0x917cee...909d88`](./ethereum-1/0x917cee801a67f933f2e6b33fc0cd1ed2d5909d88/) | ⚠️ Unaudited | Verified |
-| [EtherfiL2LineaSyncPoolETH](./linea-59144/0x823106e745a62d0c2fc4d27644c62ade946d9cca/) | linea | [`0x823106...6d9cca`](./linea-59144/0x823106e745a62d0c2fc4d27644c62ade946d9cca/) | ⚠️ Unaudited | Verified |
 | [ExtensibleVaultWithExtraData (3 deployments)](./bsc-56/0x6d1703d913c74afaedd4b78deee7f32aa91a5943/) | bsc | 3 deployments: ethereum `0xdfb48a...c1042d`; bsc [`0x6d1703...1a5943`](./bsc-56/0x6d1703d913c74afaedd4b78deee7f32aa91a5943/); bsc `0xa5deb1...8df42d` | ⚠️ Unaudited | Verified |
 | [TheoDepositVault (8 deployments)](./arbitrum-42161/0x01f90a7b1c749f4a0b7d115120deda0e2343381d/) | arbitrum | 8 deployments: ethereum `0x0b75e1...eaa2fa`; arbitrum [`0x01f90a...43381d`](./arbitrum-42161/0x01f90a7b1c749f4a0b7d115120deda0e2343381d/); arbitrum `0x263b7b...55da11`; arbitrum `0x3ca8f1...319009`; arbitrum `0x54602e...2cee34`; linea `0x3ca8f1...319009`; linea `0xca538a...27630f`; linea `0xcf101e...95b28c` | ⚠️ Unaudited | Verified |
 | [TheoVaultRoundsTracker (4 deployments)](./arbitrum-42161/0x4d11a4ba2ded004c3fe5560a029050326d9e87ce/) | arbitrum | 4 deployments: arbitrum [`0x4d11a4...9e87ce`](./arbitrum-42161/0x4d11a4ba2ded004c3fe5560a029050326d9e87ce/); arbitrum `0x7ca71e...4e8225`; arbitrum `0xa3819f...4bd9c3`; arbitrum `0xcf101e...95b28c` | ⚠️ Unaudited | Verified |
@@ -67,17 +66,15 @@
 | [WETH9](./base-8453/0x4200000000000000000000000000000000000006/) | base | [`0x420000...000006`](./base-8453/0x4200000000000000000000000000000000000006/) | ⚠️ Unaudited | Verified |
 | [XERC20](./arbitrum-42161/0x2416092f143378750bb29b79ed961ab195cceea5/) | arbitrum | [`0x241609...cceea5`](./arbitrum-42161/0x2416092f143378750bb29b79ed961ab195cceea5/) | ⚠️ Unaudited | Verified |
 
-## unknown (42)
+## unknown (37)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [ATM (4 deployments)](./arbitrum-42161/0x13cad3aa86df1233dc9930a8f88f43237056aab4/) | arbitrum | 4 deployments: arbitrum [`0x13cad3...56aab4`](./arbitrum-42161/0x13cad3aa86df1233dc9930a8f88f43237056aab4/); arbitrum `0xbc33eb...a1b46c`; linea `0x86c4dc...5f6e99`; linea `0xf57104...3ad1b3` | ⚠️ Unaudited | Verified |
-| [BucketRateLimiter](./linea-59144/0x3a19866d5e0fae0ce19adda617f9d2b9fd5a3975/) | linea | [`0x3a1986...5a3975`](./linea-59144/0x3a19866d5e0fae0ce19adda617f9d2b9fd5a3975/) | ⚠️ Unaudited | Verified |
-| [Cap (11 deployments)](./blast-81457/0x096430ef0a653c067df32e93ff77090e084169de/) | blast | 11 deployments: ethereum `0x451d79...2b16f9`; optimism `0xb883ee...92b1d2`; arbitrum `0x1d28de...c57c56`; arbitrum `0xb883ee...92b1d2`; arbitrum `0xbc986f...b158b2`; arbitrum `0xdd8bea...00d9aa`; linea `0x2bfbb9...f567d4`; linea `0x3cda62...fc0f1f`; linea `0x8f34cf...3ebb4c`; linea `0xcd3287...f33a91`; blast [`0x096430...4169de`](./blast-81457/0x096430ef0a653c067df32e93ff77090e084169de/) | ✅ Audited | Verified |
+| [Cap (11 deployments)](./blast-81457/0x096430ef0a653c067df32e93ff77090e084169de/) | blast | 11 deployments: ethereum `0x451d79...2b16f9`; optimism `0xb883ee...92b1d2`; arbitrum `0x1d28de...c57c56`; arbitrum `0xb883ee...92b1d2`; arbitrum `0xbc986f...b158b2`; arbitrum `0xdd8bea...00d9aa`; linea `0x2bfbb9...f567d4`; linea `0x3cda62...fc0f1f`; linea `0x8f34cf...3ebb4c`; linea `0xcd3287...f33a91`; blast [`0x096430...4169de`](./blast-81457/0x096430ef0a653c067df32e93ff77090e084169de/) | ⚠️ Unaudited | Verified |
 | [CCDMClient (3 deployments)](./arbitrum-42161/0x877b9ea7ce0358ef7982b2967ae7e538530a6031/) | arbitrum | 3 deployments: arbitrum [`0x877b9e...0a6031`](./arbitrum-42161/0x877b9ea7ce0358ef7982b2967ae7e538530a6031/); arbitrum `0x8c3bb8...ff522d`; linea `0xbc33eb...a1b46c` | ⚠️ Unaudited | Verified |
-| [CCDMHost (2 deployments)](./linea-59144/0x5bd64950b2885070e172d01e49b69842a5a4b5e2/) | linea | 2 deployments: arbitrum `0x7671f4...4e0c41`; linea [`0x5bd649...a4b5e2`](./linea-59144/0x5bd64950b2885070e172d01e49b69842a5a4b5e2/) | ✅ Audited | Verified |
+| [CCDMHost (2 deployments)](./linea-59144/0x5bd64950b2885070e172d01e49b69842a5a4b5e2/) | linea | 2 deployments: arbitrum `0x7671f4...4e0c41`; linea [`0x5bd649...a4b5e2`](./linea-59144/0x5bd64950b2885070e172d01e49b69842a5a4b5e2/) | ⚠️ Unaudited | Verified |
 | [EETH](./ethereum-1/0x35fa164735182de50811e8e2e824cfb9b6118ac2/) | ethereum | [`0x35fa16...118ac2`](./ethereum-1/0x35fa164735182de50811e8e2e824cfb9b6118ac2/) | ⚠️ Unaudited | Verified |
-| [EtherfiL2ExchangeRateProvider (2 deployments)](./linea-59144/0x22c498b5c42c787c790f8f1fcef50b33a830f5dc/) | linea | 2 deployments: linea [`0x22c498...30f5dc`](./linea-59144/0x22c498b5c42c787c790f8f1fcef50b33a830f5dc/); linea `0x241a91...518344` | ⚠️ Unaudited | Verified |
 | [EtherfiOFTUpgradeable](./linea-59144/0x1bf74c010e6320bab11e2e5a532b5ac15e0b8aa6/) | linea | [`0x1bf74c...0b8aa6`](./linea-59144/0x1bf74c010e6320bab11e2e5a532b5ac15e0b8aa6/) | ⚠️ Unaudited | Verified |
 | [L2cmETH](./mantle-5000/0xe6829d9a7ee3040e1276fa75293bde931859e8fa/) | mantle | [`0xe6829d...59e8fa`](./mantle-5000/0xe6829d9a7ee3040e1276fa75293bde931859e8fa/) | ⚠️ Unaudited | Verified |
 | [MintableOFTUpgradeable](./linea-59144/0x04c0599ae5a44757c0af6f9ec3b93da8976c150a/) | linea | [`0x04c059...6c150a`](./linea-59144/0x04c0599ae5a44757c0af6f9ec3b93da8976c150a/) | ⚠️ Unaudited | Verified |
@@ -103,11 +100,8 @@
 | UnnamedContract | arbitrum | `0xf91d94...f1c2d2` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x13cad3...56aab4` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x1d28de...c57c56` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0x20ee00...e38cc7` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x4a6219...5ea382` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0x60be06...238755` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x9b6544...cf42e0` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0xfd503f...04402c` | ❓ Unverified | Unverified |
 | UnnamedContract | scroll | `0x0b75e1...eaa2fa` | ❓ Unverified | Unverified |
 | UnnamedContract | scroll | `0x54602e...2cee34` | ❓ Unverified | Unverified |
 | UnnamedContract | scroll | `0xb9e834...b86690` | ❓ Unverified | Unverified |

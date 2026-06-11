@@ -370,11 +370,11 @@
 | [mezo-bridge](./mezo-bridge/) | $2.6M | 0.0% | $2.6M | declining | 0 | 4 | 2026-06-11 |
 | [mezo-earn](./mezo-earn/) | $55.2M | 0.0% | ? | unknown | 0 | 1 | 2026-06-11 |
 | [minefi](./minefi/) | $1.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
-| [minto](./minto/) | $3.8M | 16.7% | ? | active | 1 | 9 | 2026-06-10 |
-| [mitosis](./mitosis/) | $329.0M | 0.0% | $329.0M | active | 2 | 66 | 2026-06-10 |
-| [mm-finance](./mm-finance/) | $1.8M | 4.5% | $1.8M | declining | 3 | 192 | 2026-06-10 |
-| [mobox](./mobox/) | $6.6M | 0.0% | $6.6M | unknown | 1 | 323 | 2026-06-10 |
-| [mode-bridge](./mode-bridge/) | $6.1M | 2.9% | ? | declining | 21 | 100 | 2026-06-10 |
+| [minto](./minto/) | $3.8M | 16.7% | ? | active | 1 | 9 | 2026-06-11 |
+| [mitosis](./mitosis/) | $329.0M | 0.0% | $329.0M | active | 2 | 66 | 2026-06-11 |
+| [mm-finance](./mm-finance/) | $1.8M | 4.5% | $1.8M | declining | 3 | 192 | 2026-06-11 |
+| [mobox](./mobox/) | $6.6M | 0.0% | $6.6M | unknown | 1 | 323 | 2026-06-11 |
+| [mode-bridge](./mode-bridge/) | $6.1M | 2.9% | ? | declining | 21 | 100 | 2026-06-11 |
 | [mole](./mole/) | $8.8M | 0.0% | ? | active | 1 | 49 | 2026-06-10 |
 | [moneyonchain](./moneyonchain/) | $43.7M | 0.0% | ? | unknown | 12 | 0 | 2026-06-10 |
 | [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-06-10 |

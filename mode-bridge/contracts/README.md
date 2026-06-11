@@ -1,6 +1,6 @@
 # mode-bridge — Contract Index
 
-100 unique implementations across 2 chains · 129 deployments · 1 audited · 33 unaudited · 66 unverified
+100 unique implementations across 2 chains · 127 deployments · 1 audited · 33 unaudited · 66 unverified
 
 ## adapter (1)
 
@@ -21,7 +21,7 @@
 |---|---|---|---|---|
 | [AddressManager](./ethereum-1/0x50ef494573f28cad6b64c31b7a00cdaa48306e15/) | ethereum | [`0x50ef49...306e15`](./ethereum-1/0x50ef494573f28cad6b64c31b7a00cdaa48306e15/) | ⚠️ Unaudited | Verified |
 | [ProxyAdmin (3 deployments)](./ethereum-1/0x470d87b1dae09a454a43d1fd772a561a03276ab7/) | ethereum | 3 deployments: ethereum [`0x470d87...276ab7`](./ethereum-1/0x470d87b1dae09a454a43d1fd772a561a03276ab7/); mode `0x68a9ec...4e2b72`; mode `0xbe7777...d61f60` | ⚠️ Unaudited | Verified |
-| [SystemConfig (2 deployments)](./ethereum-1/0x5e6432f18bc5d497b1ab2288a025fbf9d69e2221/) | ethereum | 2 deployments: ethereum [`0x5e6432...9e2221`](./ethereum-1/0x5e6432f18bc5d497b1ab2288a025fbf9d69e2221/); ethereum `0x951754...d5bcaf` | ⚠️ Unaudited | Verified |
+| [SystemConfig](./ethereum-1/0x951754b08c52b2ac5d5a2af1d52c2d12aed5bcaf/) | ethereum | [`0x951754...d5bcaf`](./ethereum-1/0x951754b08c52b2ac5d5a2af1d52c2d12aed5bcaf/) | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (7)
 
@@ -48,7 +48,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [OptimismMintableERC20Factory (2 deployments)](./ethereum-1/0x69216395a62dfb243c05ef4f1c27af8655096a95/) | ethereum | 2 deployments: ethereum [`0x692163...096a95`](./ethereum-1/0x69216395a62dfb243c05ef4f1c27af8655096a95/); ethereum `0xc0c6a8...e8c73e` | ⚠️ Unaudited | Verified |
+| [OptimismMintableERC20Factory](./ethereum-1/0xc0c6a811bbf07fa01b946f1c46a9a94c2ee8c73e/) | ethereum | [`0xc0c6a8...e8c73e`](./ethereum-1/0xc0c6a811bbf07fa01b946f1c46a9a94c2ee8c73e/) | ⚠️ Unaudited | Verified |
 | [ProxyFactory](./mode-34443/0x30c2b5f5c74b855d99792e485bdbce1dd2f2e1a9/) | mode | [`0x30c2b5...f2e1a9`](./mode-34443/0x30c2b5f5c74b855d99792e485bdbce1dd2f2e1a9/) | ⚠️ Unaudited | Verified |
 
 ## token (4)

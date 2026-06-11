@@ -6,8 +6,8 @@
 | Address | `0x5bd64950b2885070e172d01e49b69842a5a4b5e2` |
 | Role | unknown |
 | Origin | native |
-| Audited | Yes |
-| Audits | [Introduction](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 2 (arbitrum `0x7671f415c76baa3ed21beb8e16a9c971934e0c41`; linea [`0x5bd64950b2885070e172d01e49b69842a5a4b5e2`](../0x5bd64950b2885070e172d01e49b69842a5a4b5e2/)) |
 | Proxy | No |
 | Source | Etherscan |

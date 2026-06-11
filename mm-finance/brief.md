@@ -6,8 +6,8 @@
 
 - Project: MM Finance (`mm-finance`)
 - Lifecycle: declining (Tier 0, 99.9% below peak)
-- Generated: 2026-06-10T20:59:07.731Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:08:26.101Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: arbitrum, cronos, polygon
 - Contract surface: 192 unique implementations (262 raw deployments)
 - DeFi Llama TVL: $1,462,523.00

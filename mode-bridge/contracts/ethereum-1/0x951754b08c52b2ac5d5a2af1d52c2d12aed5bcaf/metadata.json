@@ -1,0 +1,18 @@
+{
+  "address": "0x951754b08c52b2ac5d5a2af1d52c2d12aed5bcaf",
+  "chain_id": 1,
+  "contract_name": "SystemConfig",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-11T01:09:37.773Z"
+}

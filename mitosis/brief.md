@@ -5,8 +5,8 @@
 - Project: Mitosis (`mitosis`)
 - Website: [https://mitosis.org](https://mitosis.org)
 - Lifecycle: active (Tier 1, dead)
-- Generated: 2026-06-10T20:59:07.718Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:09:52.458Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: arbitrum, base, blast, bsc, ethereum, linea, manta, mantle, mode, optimism, scroll
 - Contract surface: 66 unique implementations (160 raw deployments)
 - DeFi Llama TVL: $1,489,070.06

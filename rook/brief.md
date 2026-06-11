@@ -6,8 +6,8 @@
 
 - Project: Rook (`rook`)
 - Lifecycle: dead (Tier 0, 99.8% below peak)
-- Generated: 2026-06-10T20:59:12.108Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:24:37.895Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum
 - Contract surface: 73 unique implementations (168 raw deployments)
 - DeFi Llama TVL: $1,449,666.24

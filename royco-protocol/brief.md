@@ -5,8 +5,8 @@
 - Project: Royco Protocol (`royco-protocol`)
 - Website: [https://www.royco.org](https://www.royco.org)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:59:12.124Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:25:41.865Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: arbitrum, avalanche, base, ethereum, hyperliquid, sonic
 - Contract surface: 14 unique implementations (47 raw deployments)
 - DeFi Llama TVL: $35,412,432.00

@@ -5,8 +5,8 @@
 - Project: RockSolid Network (`rocksolid-network`)
 - Website: [https://rocksolid.network/](https://rocksolid.network/)
 - Lifecycle: active (Tier 0, 15.8% below peak)
-- Generated: 2026-06-10T20:59:12.083Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:25:18.413Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum
 - Contract surface: 1 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $24,218,317.85

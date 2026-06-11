@@ -7,8 +7,8 @@
 - Project: Swaap (`swaap`)
 - Website: [https://www.swaap.finance](https://www.swaap.finance)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:16.863Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:19:21.384Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: arbitrum, avalanche, base, bsc, ethereum, linea, mantle, mode, optimism, polygon, scroll
 - Contract surface: 128 unique implementations (177 raw deployments)
 - DeFi Llama TVL: $4,412,221.00

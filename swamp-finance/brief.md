@@ -6,8 +6,8 @@
 
 - Project: Swamp Finance (`swamp-finance`)
 - Lifecycle: declining (Tier 0, 97.2% below peak)
-- Generated: 2026-06-10T20:59:16.870Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:17:02.974Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: bsc
 - Contract surface: 11 unique implementations (55 raw deployments)
 - DeFi Llama TVL: $1,198,039.12

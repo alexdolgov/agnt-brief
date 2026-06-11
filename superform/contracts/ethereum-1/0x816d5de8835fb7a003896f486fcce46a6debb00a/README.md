@@ -7,7 +7,7 @@
 | Role | periphery |
 | Origin | native |
 | Audited | Yes |
-| Audits | [Report](https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.08.22-orion.pdf); [Report](https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.06.02-cantina-competition.pdf) |
+| Audits | [Report](https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.08.22-orion.pdf) |
 | Deployments | 1 (ethereum [`0x816d5de8835fb7a003896f486fcce46a6debb00a`](../0x816d5de8835fb7a003896f486fcce46a6debb00a/)) |
 | Proxy | No |
 | Source | Etherscan |

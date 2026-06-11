@@ -6,8 +6,8 @@
 | Address | `0xf37535d96712fbaef6d868e721e7b987ad1e6a86` |
 | Role | core_logic |
 | Origin | native |
-| Audited | Yes |
-| Audits | [Report](https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.06.02-cantina-competition.pdf); [Report](https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.04.19-cantinacode.pdf) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 1 (ethereum [`0xf37535d96712fbaef6d868e721e7b987ad1e6a86`](../0xf37535d96712fbaef6d868e721e7b987ad1e6a86/)) |
 | Proxy | No |
 | Source | Etherscan |

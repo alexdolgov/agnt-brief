@@ -7,7 +7,7 @@
 | Role | governance |
 | Origin | native |
 | Audited | Yes |
-| Audits | [Report](https://github.com/superform-xyz/v2-periphery/blob/dev/audits/2025.11.27-0xMacro.pdf); [Report](https://github.com/superform-xyz/v2-periphery/blob/dev/audits/2025.11.07-GetRecon.pdf); [Report](https://github.com/superform-xyz/v2-periphery/blob/dev/audits/2025.06.30-cantinacode.pdf) |
+| Audits | [Report](https://github.com/superform-xyz/v2-periphery/blob/dev/audits/2025.11.27-0xMacro.pdf) |
 | Deployments | 1 (ethereum [`0xb5396ef2bf8ca360ceb4166b77afb2bed20e74d4`](../0xb5396ef2bf8ca360ceb4166b77afb2bed20e74d4/)) |
 | Proxy | No |
 | Source | Etherscan |

@@ -5,8 +5,8 @@
 - Project: Superform (`superform`)
 - Website: [https://app.superform.xyz/earn?ref=3TSV5oRxhsPiRq8F3aoi7](https://app.superform.xyz/earn?ref=3TSV5oRxhsPiRq8F3aoi7)
 - Lifecycle: active (Tier 0, 82.2% below peak)
-- Generated: 2026-06-10T20:59:16.832Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:19:03.970Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: arbitrum, base, ethereum, fantom, hyperliquid, linea
 - Contract surface: 158 unique implementations (246 raw deployments)
 - DeFi Llama TVL: $33,178,253.21

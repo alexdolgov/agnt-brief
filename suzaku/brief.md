@@ -5,8 +5,8 @@
 - Project: Suzaku (`suzaku`)
 - Website: [https://www.suzaku.network/](https://www.suzaku.network/)
 - Lifecycle: active (Tier 0, 88.1% below peak)
-- Generated: 2026-06-10T20:59:16.847Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:17:01.698Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: avalanche
 - Contract surface: 49 unique implementations (90 raw deployments)
 - DeFi Llama TVL: $1,231,417.65

@@ -4,7 +4,7 @@
 |---|---|
 | Chain | ethereum (1) |
 | Address | `0x7f8f2b6d0b0aae8e95221ce90b5c26b128c1cb66` |
-| Role | unknown |
+| Role | operational_periphery |
 | Origin | native |
 | Audited | Yes |
 | Audits | [link](https://resources.supernova.xyz/Paladin_Supernova_Final_Report.pdf) |

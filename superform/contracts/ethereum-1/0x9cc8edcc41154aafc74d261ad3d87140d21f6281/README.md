@@ -7,7 +7,7 @@
 | Role | unknown |
 | Origin | native |
 | Audited | Yes |
-| Audits | [Report](https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.08.22-orion.pdf); [Report](https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.06.02-cantina-competition.pdf); [Report](https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.04.19-cantinacode.pdf); [Report](https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.03.24-sujithsomraaj.pdf) |
+| Audits | [Report](https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.08.22-orion.pdf) |
 | Deployments | 1 (ethereum [`0x9cc8edcc41154aafc74d261ad3d87140d21f6281`](../0x9cc8edcc41154aafc74d261ad3d87140d21f6281/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |

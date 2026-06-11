@@ -7,7 +7,7 @@
 | Role | unknown |
 | Origin | upstream |
 | Audited | Yes |
-| Audits | [Report](https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.08.22-orion.pdf); [Report](https://github.com/superform-xyz/v2-periphery/blob/dev/audits/2025.11.07-GetRecon.pdf) |
+| Audits | [Report](https://github.com/superform-xyz/v2-core/blob/dev/audits/2025.08.22-orion.pdf) |
 | Deployments | 1 (ethereum [`0x6c12d4453ed2278b37ecd169f4b8693537b228df`](../0x6c12d4453ed2278b37ecd169f4b8693537b228df/)) |
 | Proxy | No |
 | Source | Etherscan |

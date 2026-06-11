@@ -1,6 +1,6 @@
 # suzaku — Contract Index
 
-49 unique implementations on avalanche · 90 deployments · 1 audited · 20 unaudited · 28 unverified
+49 unique implementations on avalanche · 90 deployments · 0 audited · 21 unaudited · 28 unverified
 
 ## core_logic (4)
 
@@ -27,7 +27,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [DefaultCollateralFactory](./avalanche-43114/0xe5296638aa86bd4175d802a210e158688e41a93c/) | avalanche | [`0xe52966...41a93c`](./avalanche-43114/0xe5296638aa86bd4175d802a210e158688e41a93c/) | ✅ Audited | Verified |
+| [DefaultCollateralFactory](./avalanche-43114/0xe5296638aa86bd4175d802a210e158688e41a93c/) | avalanche | [`0xe52966...41a93c`](./avalanche-43114/0xe5296638aa86bd4175d802a210e158688e41a93c/) | ⚠️ Unaudited | Verified |
 | [DelegatorFactory](./avalanche-43114/0x657741f081e7c7ea74cabb8e9c9004c913c8c2be/) | avalanche | [`0x657741...c8c2be`](./avalanche-43114/0x657741f081e7c7ea74cabb8e9c9004c913c8c2be/) | ⚠️ Unaudited | Verified |
 | [L1Registry](./avalanche-43114/0xaa59b19a7636bf6d821aa124a14eee6c92746110/) | avalanche | [`0xaa59b1...746110`](./avalanche-43114/0xaa59b19a7636bf6d821aa124a14eee6c92746110/) | ⚠️ Unaudited | Verified |
 | [LSTWrapperFactory (2 deployments)](./avalanche-43114/0x6389b838d11a04ad68c56a9bf0a569c041dfefcb/) | avalanche | 2 deployments: avalanche [`0x6389b8...dfefcb`](./avalanche-43114/0x6389b838d11a04ad68c56a9bf0a569c041dfefcb/); avalanche `0xd096f4...535a77` | ⚠️ Unaudited | Verified |

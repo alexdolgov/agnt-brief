@@ -592,11 +592,11 @@
 | [superearn](./superearn/) | $295.4 | 0.0% | $295.4 | active | 1 | 94 | 2026-06-11 |
 | [superfarm](./superfarm/) | $211.1M | 0.0% | $211.1M | declining | 0 | 49 | 2026-06-11 |
 | [superfluid](./superfluid/) | $12.7M | 20.8% | ? | active | 8 | 397 | 2026-05-31 |
-| [superform](./superform/) | $2.0M | 19.7% | $1.9K | active | 3 | 158 | 2026-06-10 |
-| [supernova](./supernova/) | $2.1M | 48.9% | ? | declining | 1 | 47 | 2026-06-10 |
-| [suzaku](./suzaku/) | $1.2M | 0.0% | $1.2M | active | 0 | 49 | 2026-06-10 |
-| [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-06-10 |
-| [swamp-finance](./swamp-finance/) | $0.1 | 0.0% | $0.1 | declining | 0 | 11 | 2026-06-10 |
+| [superform](./superform/) | $2.0M | 19.7% | $1.9K | active | 3 | 158 | 2026-06-11 |
+| [supernova](./supernova/) | $2.1M | 48.9% | ? | declining | 1 | 47 | 2026-06-11 |
+| [suzaku](./suzaku/) | $1.2M | 0.0% | $1.2M | active | 0 | 49 | 2026-06-11 |
+| [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-06-11 |
+| [swamp-finance](./swamp-finance/) | $0.1 | 0.0% | $0.1 | declining | 0 | 11 | 2026-06-11 |
 | [swappi](./swappi/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-10 |
 | [swapscanner](./swapscanner/) | $4.4M | 0.0% | ? | active | 1 | 2 | 2026-06-10 |
 | [swell](./swell/) | $130.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |

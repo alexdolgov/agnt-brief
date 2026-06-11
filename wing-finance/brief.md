@@ -7,8 +7,8 @@
 - Project: Wing Finance (`wing-finance`)
 - Website: [https://wing.finance](https://wing.finance)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:18.815Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:06:37.640Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: bsc, ethereum, klaytn
 - Contract surface: 179 unique implementations (198 raw deployments)
 - DeFi Llama TVL: $32,459,100.32

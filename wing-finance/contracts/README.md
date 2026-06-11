@@ -1,6 +1,6 @@
 # wing-finance — Contract Index
 
-180 unique implementations across 3 chains · 199 deployments · 0 audited · 14 unaudited · 166 unverified
+179 unique implementations across 3 chains · 198 deployments · 0 audited · 13 unaudited · 166 unverified
 
 ## governance (2)
 
@@ -48,12 +48,11 @@
 | [CErc20Delegate (2 deployments)](./ethereum-1/0x5d3a536e4d6dbd6114cc1ead35777bab948e3643/) | ethereum | 2 deployments: ethereum [`0x5d3a53...8e3643`](./ethereum-1/0x5d3a536e4d6dbd6114cc1ead35777bab948e3643/); ethereum `0x70e36f...43e8e4` | ⚠️ Unaudited | Verified |
 | [ERC20Template](./ethereum-1/0xdb0f18081b505a7de20b18ac41856bcb4ba86a1a/) | ethereum | [`0xdb0f18...a86a1a`](./ethereum-1/0xdb0f18081b505a7de20b18ac41856bcb4ba86a1a/) | ⚠️ Unaudited | Verified |
 
-## unknown (159)
+## unknown (158)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [CEther](./ethereum-1/0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5/) | ethereum | [`0x4ddc2d...270ed5`](./ethereum-1/0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5/) | ⚠️ Unaudited | Verified |
-| [Comp](./ethereum-1/0xc00e94cb662c3520282e6f5717214004a7f26888/) | ethereum | [`0xc00e94...f26888`](./ethereum-1/0xc00e94cb662c3520282e6f5717214004a7f26888/) | ⚠️ Unaudited | Verified |
 | [LockProxy](./ethereum-1/0x250e76987d838a75310c34bf422ea9f1ac4cc906/) | ethereum | [`0x250e76...4cc906`](./ethereum-1/0x250e76987d838a75310c34bf422ea9f1ac4cc906/) | ⚠️ Unaudited | Verified |
 | [OSWAP](./ethereum-1/0xe9b0db26a0085e5119757a5179a499abf595bcab/) | ethereum | [`0xe9b0db...95bcab`](./ethereum-1/0xe9b0db26a0085e5119757a5179a499abf595bcab/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x00e0a0...427c75` | ❓ Unverified | Unverified |

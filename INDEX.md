@@ -678,11 +678,11 @@
 | [wagmi](./wagmi/) | $2.3M | 0.0% | ? | declining | 0 | 334 | 2026-06-11 |
 | [wan-bridge](./wan-bridge/) | $4.6K | 0.0% | $4.6K | active | 3 | 129 | 2026-06-11 |
 | [wanswap-dex](./wanswap-dex/) | $1.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
-| [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | declining | 8 | 83 | 2026-06-10 |
-| [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | declining | 0 | 5 | 2026-06-10 |
-| [wemix.fi](./wemix.fi/) | $38.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [wing-finance](./wing-finance/) | $20.3M | 0.0% | $20.3M | declining | 0 | 179 | 2026-06-10 |
-| [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | declining | 11 | 96 | 2026-06-10 |
+| [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | declining | 8 | 83 | 2026-06-11 |
+| [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | declining | 0 | 5 | 2026-06-11 |
+| [wemix.fi](./wemix.fi/) | $38.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [wing-finance](./wing-finance/) | $20.3M | 0.0% | $20.3M | declining | 0 | 179 | 2026-06-11 |
+| [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | declining | 11 | 96 | 2026-06-11 |
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [woofi](./woofi/) | $9.8M | 18.8% | $9.7M | declining | 6 | 200 | 2026-06-10 |
 | [wrapped-bnb](./wrapped-bnb/) | $6.0M | 0.0% | ? | declining | 0 | 1 | 2026-06-10 |

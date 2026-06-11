@@ -7,8 +7,8 @@
 - Project: Wombat Exchange (`wombat-exchange`)
 - Website: [https://www.wombat.exchange/](https://www.wombat.exchange/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:18.841Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:08:45.833Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: arbitrum, avalanche, base, bsc, ethereum, optimism, polygon, scroll
 - Contract surface: 96 unique implementations (714 raw deployments)
 - DeFi Llama TVL: $1,648,226.03

@@ -5,8 +5,8 @@
 - Project: XFI Native Staking Protocol (`xfi-native-staking-protocol`)
 - Website: [https://xficonsole.com/](https://xficonsole.com/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:19.357Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:09:40.034Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $1,173,680.82

@@ -7,8 +7,8 @@
 - Project: WOOFi (`woofi`)
 - Website: [https://woofi.com/en/trade?ref=DEFILLAMA](https://woofi.com/en/trade?ref=DEFILLAMA)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:18.866Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:12:55.757Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: arbitrum, avalanche, base, berachain, ethereum, fantom, linea, mantle, optimism, polygon, polygon-zkevm, sonic
 - Contract surface: 200 unique implementations (735 raw deployments)
 - DeFi Llama TVL: $21,325,145.00

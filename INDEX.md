@@ -684,12 +684,12 @@
 | [wing-finance](./wing-finance/) | $20.3M | 0.0% | $20.3M | declining | 0 | 179 | 2026-06-11 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | declining | 11 | 96 | 2026-06-11 |
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
-| [woofi](./woofi/) | $9.8M | 18.8% | $9.7M | declining | 6 | 200 | 2026-06-10 |
-| [wrapped-bnb](./wrapped-bnb/) | $6.0M | 0.0% | ? | declining | 0 | 1 | 2026-06-10 |
+| [woofi](./woofi/) | $9.8M | 18.8% | $9.7M | declining | 6 | 200 | 2026-06-11 |
+| [wrapped-bnb](./wrapped-bnb/) | $6.0M | 0.0% | ? | declining | 0 | 1 | 2026-06-11 |
 | [wrapped](./wrapped/) | $23.9M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
-| [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 48 | 2026-06-10 |
-| [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [xsy](./xsy/) | $3.6M | 25.0% | $3.6M | active | 1 | 15 | 2026-06-10 |
+| [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 48 | 2026-06-11 |
+| [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [xsy](./xsy/) | $3.6M | 25.0% | $3.6M | active | 1 | 15 | 2026-06-11 |
 | [xwin-finance](./xwin-finance/) | $1.8M | 0.0% | $1.8M | active | 1 | 1 | 2026-06-10 |
 | [yala](./yala/) | $4.6M | 0.0% | $4.6M | active | 1 | 30 | 2026-06-10 |
 | [yamato-protocol](./yamato-protocol/) | $910.9 | 47.8% | $818.3 | active | 3 | 63 | 2026-05-24 |

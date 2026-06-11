@@ -1,6 +1,6 @@
 # xsy — Contract Index
 
-16 unique implementations on avalanche · 23 deployments · 1 audited · 4 unaudited · 11 unverified
+15 unique implementations on avalanche · 22 deployments · 1 audited · 3 unaudited · 11 unverified
 
 ## core_logic (1)
 
@@ -19,12 +19,6 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BeaconProxy (2 deployments)](./avalanche-43114/0x76de251bee4a3b902857f6a0fce8a320c4167e40/) | avalanche | 2 deployments: avalanche [`0x76de25...167e40`](./avalanche-43114/0x76de251bee4a3b902857f6a0fce8a320c4167e40/); avalanche `0x902714...3ecc0a` | ⚠️ Unaudited | Verified |
-
-## token (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [FiatTokenV2_2](./avalanche-43114/0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e/) | avalanche | [`0xb97ef9...c48a6e`](./avalanche-43114/0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e/) | ⚠️ Unaudited | Verified |
 
 ## unknown (12)
 

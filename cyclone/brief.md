@@ -5,11 +5,11 @@
 - Project: Cyclone (`cyclone`)
 - Website: [https://cyclone.xyz](https://cyclone.xyz)
 - Lifecycle: active (Tier 0, 85.8% below peak)
-- Generated: 2026-06-10T22:38:39.477Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-11T11:43:29.534Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: bsc, ethereum, polygon
 - Contract surface: 63 unique implementations (179 raw deployments)
-- DeFi Llama TVL: $1,301,416.14
+- DeFi Llama TVL: $1,160,723.71
 - On-chain TVL (included contracts): $165,469,302.49
 - TVL by chain: Polygon $165,418,183.05 | Bsc $33,942.48 | Ethereum $17,176.97
 
@@ -29,11 +29,11 @@ All families share the CycloneToken as the governance and reward token, and rely
 - Unverified implementations: 33
 - Unique implementations: 63
 - Raw deployments: 179
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $165,469,302.49
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2019-11 (stale)
+- Staleness: 0 fresh, 0 aging, 2 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -137,6 +137,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](), [smart contracts](https://tornado.cash/Tornado_solidity_audit.pdf)). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9).](https://tornado.cash/Tornado_circuit_audit.pdf) | yAudit | Audit | 2019-11 | stale | Direct | n/a | 0 | n/a |
+| [As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](https://tornado.cash/Tornado_circuit_audit.pdf), [smart contracts]()). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9).](https://tornado.cash/Tornado_solidity_audit.pdf) | yAudit | Audit | 2019-11 | stale | Direct | n/a | 0 | n/a |
+| [Предварительный отчет сделан [ChainShield](). Никаких серьезных проблем не обнаружено. В ближайшее время мы предоставим отчет.](https://chainshield.io/) | ChainShield | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -168,9 +171,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11566] As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](), [smart contracts](https://tornado.cash/Tornado_solidity_audit.pdf)). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9).
+- [11567] As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](https://tornado.cash/Tornado_circuit_audit.pdf), [smart contracts]()). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9).
+- [11568] Предварительный отчет сделан [ChainShield](). Никаких серьезных проблем не обнаружено. В ближайшее время мы предоставим отчет.
 
 Fork inheritance lineage and inherited audits are included when available.

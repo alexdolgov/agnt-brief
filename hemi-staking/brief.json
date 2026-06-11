@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hemi-staking",
-  "generated_at": "2026-06-10T23:49:23.019Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-11T11:45:35.363Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hemi-staking",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 78,
     "coverage_pct": 0,
-    "total_audits": 2,
+    "total_audits": 5,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 36924885.96636,
+    "dl_tvl_usd": 29140145.02869,
     "tvl_usd": 16416309.46853453,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,7 +58,7 @@
       "fresh": 1,
       "aging": 1,
       "stale": 0,
-      "unknown": 0
+      "unknown": 3
     }
   },
   "topography": {
@@ -4622,6 +4622,69 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11922,
+      "audit_key": "audit-11922",
+      "report_name": "Audit_Report_HEMI-TOK_FINAL_21.pdf",
+      "report_url": "https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/Audit_Report_HEMI-TOK_FINAL_21.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11923,
+      "audit_key": "audit-11923",
+      "report_name": "HemiToken - Final Report.pdf",
+      "report_url": "https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/HemiToken%20-%20Final%20Report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11924,
+      "audit_key": "audit-11924",
+      "report_name": "Audit_Report_HEMI-VOT_FINAL_21.pdf",
+      "report_url": "https://github.com/hemilabs/audit-reports/blob/master/veHEMI/Audit_Report_HEMI-VOT_FINAL_21.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -4896,6 +4959,18 @@
       {
         "audit_id": 3960,
         "report_name": "Quantstamp - BTC Tunnel - FinalReport (1).pdf"
+      },
+      {
+        "audit_id": 11922,
+        "report_name": "Audit_Report_HEMI-TOK_FINAL_21.pdf"
+      },
+      {
+        "audit_id": 11923,
+        "report_name": "HemiToken - Final Report.pdf"
+      },
+      {
+        "audit_id": 11924,
+        "report_name": "Audit_Report_HEMI-VOT_FINAL_21.pdf"
       }
     ],
     "inherited_remapped_matches": []

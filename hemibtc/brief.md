@@ -5,11 +5,11 @@
 - Project: hemiBTC (`hemibtc`)
 - Website: [https://app.hemi.xyz/en/tunnel/](https://app.hemi.xyz/en/tunnel/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T23:52:25.895Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
+- Generated: 2026-06-11T11:45:35.361Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: bsc, ethereum, optimism
 - Contract surface: 46 unique implementations (98 raw deployments)
-- DeFi Llama TVL: $14,847,047.28
+- DeFi Llama TVL: $10,779,156.30
 - On-chain TVL (included contracts): $46,198.57
 - TVL by chain: Optimism $46,198.57
 
@@ -29,11 +29,11 @@ The L1 and L2 families are tightly coupled through the OP Stack bridge: L1 contr
 - Unverified implementations: 10
 - Unique implementations: 46
 - Raw deployments: 98
-- Audits discovered: 2
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $46,198.57
 - Latest audit: 2025-10 (fresh)
-- Staleness: 1 fresh, 1 aging, 0 stale, 0 unknown
+- Staleness: 1 fresh, 1 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -122,6 +122,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [Audit_Report_HEMI-PRO_FINAL_22.pdf](https://github.com/hemilabs/audit-reports/blob/master/Bitcoin_Tunnel/Audit_Report_HEMI-PRO_FINAL_22.pdf) | HEMI-PRO | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
 | [Quantstamp - BTC Tunnel - FinalReport (1).pdf](https://github.com/hemilabs/audit-reports/blob/master/Bitcoin_Tunnel/Quantstamp%20-%20BTC%20Tunnel%20-%20FinalReport%20(1).pdf) | Quantstamp | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
+| [Audit_Report_HEMI-TOK_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/Audit_Report_HEMI-TOK_FINAL_21.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [HemiToken - Final Report.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/HemiToken%20-%20Final%20Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Audit_Report_HEMI-VOT_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/veHEMI/Audit_Report_HEMI-VOT_FINAL_21.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -162,7 +165,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -171,5 +174,8 @@ Zero-match audit list:
 
 - [1971] Audit_Report_HEMI-PRO_FINAL_22.pdf
 - [1972] Quantstamp - BTC Tunnel - FinalReport (1).pdf
+- [11927] Audit_Report_HEMI-TOK_FINAL_21.pdf
+- [11928] HemiToken - Final Report.pdf
+- [11929] Audit_Report_HEMI-VOT_FINAL_21.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

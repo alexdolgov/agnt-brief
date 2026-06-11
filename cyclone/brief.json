@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "cyclone",
-  "generated_at": "2026-06-10T22:38:39.477Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
+  "generated_at": "2026-06-11T11:43:29.534Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "cyclone",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 33,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1301416.13677,
+    "dl_tvl_usd": 1160723.7133,
     "tvl_usd": 165469302.48964313,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -52,13 +52,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2019-11",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 0
+      "stale": 2,
+      "unknown": 1
     }
   },
   "topography": {
@@ -3074,7 +3074,71 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11566,
+      "audit_key": "audit-11566",
+      "report_name": "As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](), [smart contracts](https://tornado.cash/Tornado_solidity_audit.pdf)). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9).",
+      "report_url": "https://tornado.cash/Tornado_circuit_audit.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2019-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11567,
+      "audit_key": "audit-11567",
+      "report_name": "As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](https://tornado.cash/Tornado_circuit_audit.pdf), [smart contracts]()). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9).",
+      "report_url": "https://tornado.cash/Tornado_solidity_audit.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2019-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11568,
+      "audit_key": "audit-11568",
+      "report_name": "Предварительный отчет сделан [ChainShield](). Никаких серьезных проблем не обнаружено. В ближайшее время мы предоставим отчет.",
+      "report_url": "https://chainshield.io/",
+      "auditor": "ChainShield",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -3189,7 +3253,20 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11566,
+        "report_name": "As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](), [smart contracts](https://tornado.cash/Tornado_solidity_audit.pdf)). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9)."
+      },
+      {
+        "audit_id": 11567,
+        "report_name": "As an anonymous team, we value complete transparency and aim for a safe and smooth launch of Cyclone. Everything is open-source and verifiable -- we apply the exact zkSNARKs [implementation](https://github.com/tornadocash/tornado-core/releases/tag/v2.1) used by tornado.cash, which has been extensively audited ([circuit](https://tornado.cash/Tornado_circuit_audit.pdf), [smart contracts]()). In addition, we directly use the result from `Trusted Setup MPC` which is [successful](https://ceremony.tornado.cash/) and running [well on Ethereum](https://medium.com/@tornado.cash/the-biggest-trusted-setup-ceremony-in-the-world-3c6ab9c8fffa#43d9)."
+      },
+      {
+        "audit_id": 11568,
+        "report_name": "Предварительный отчет сделан [ChainShield](). Никаких серьезных проблем не обнаружено. В ближайшее время мы предоставим отчет."
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

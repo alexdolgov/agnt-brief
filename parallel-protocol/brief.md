@@ -5,11 +5,11 @@
 - Project: Parallel Protocol (`parallel-protocol`)
 - Website: [https://parallel.best/](https://parallel.best/)
 - Lifecycle: active (Tier 0, 93.7% below peak)
-- Generated: 2026-06-11T01:45:08.294Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-11T11:43:29.442Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, avalanche, base, berachain, bsc, ethereum, fantom, fraxtal, gnosis, hyperliquid, ink, linea, optimism, plasma, polygon, scroll, sei, sonic, unichain
 - Contract surface: 38 unique implementations (227 raw deployments)
-- DeFi Llama TVL: $3,770,941.00
+- DeFi Llama TVL: $3,903,603.00
 - On-chain TVL (included contracts): $3,589,825.49
 - TVL by chain: Avalanche $1,944,673.36 | Hyperliquid $752,312.16 | Ethereum $707,815.46 | Base $182,516.35 | Sonic $2,508.16
 
@@ -29,11 +29,11 @@ The Core Protocol's TokenP stablecoin is used across the Flashloan, Bridging, an
 - Unverified implementations: 12
 - Unique implementations: 38
 - Raw deployments: 227
-- Audits discovered: 2
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $2,983,161.13
-- Latest audit: 2021-06 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
+- Latest audit: 2025-01 (aging)
+- Staleness: 0 fresh, 2 aging, 2 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -118,6 +118,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [Rendered PDF capture](https://raw.githubusercontent.com/code-423n4/2022-04-mimo/b18670f44d595483df2c0f76d1c57a7bfbfbc083/core/audits/certik.pdf) | CertiK | Audit | 2021-06 | stale | Direct | contract_name | 13 | high |
 | [Rendered PDF capture](https://certificate.quantstamp.com/full/ten-x-titan.pdf) | Quantstamp | Audit | 2021-01 | stale | Direct | contract_name | 13 | high |
+| [Rendered PDF capture](https://raw.githubusercontent.com/parallel-protocol/parallel-prl/dba8cdcac982a9b59006730cd890870bfc807e15/docs/audits/Parallel%20Protocol%20-%20Zenith%20Audit%20Report.pdf) | Guardian | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://raw.githubusercontent.com/parallel-protocol/parallel-prl/dba8cdcac982a9b59006730cd890870bfc807e15/docs/audits/Bailsec%20-%20Parallel%20Protocol%20-%20PRL%20Token%20-%20Final%20Report%20-%20January%202025.pdf) | Guardian | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://raw.githubusercontent.com/parallel-protocol/bridging-module/ad58d439a5e0cae78fa7e53aa0698347bd83b921/docs/audits/Bailsec%20-%20Parallel%20Bridge%20-%20BridgeableToken%20-%20Final%20Report%20-%20December%202024.pdf) | Guardian | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -160,9 +163,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
 - Match method counts: extraction_exact=26
+
+Zero-match audit list:
+
+- [11981] Rendered PDF capture
+- [11982] Rendered PDF capture
+- [11983] Rendered PDF capture
 
 Fork inheritance lineage and inherited audits are included when available.

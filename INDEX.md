@@ -146,7 +146,7 @@
 | [credit-coop](./credit-coop/) | $2.1M | 0.0% | $2.1M | active | 3 | 2 | 2026-06-11 |
 | [crypto.com-liquid-staking](./crypto.com-liquid-staking/) | $25.4M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
 | [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-06-10 |
-| [cyclone](./cyclone/) | $165.5M | 0.0% | $165.5M | active | 0 | 63 | 2026-06-10 |
+| [cyclone](./cyclone/) | $165.5M | 0.0% | $165.5M | active | 3 | 63 | 2026-06-11 |
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-06-10 |
 | [dango](./dango/) | $4.1M | 0.0% | $4.1M | active | 1 | 3 | 2026-06-10 |
 | [dao-maker](./dao-maker/) | $9.3M | 0.0% | $9.3M | declining | 7 | 17 | 2026-06-10 |
@@ -204,7 +204,7 @@
 | [extra-finance](./extra-finance/) | $100.0 | 5.3% | ? | active | 3 | 268 | 2026-06-10 |
 | [feather](./feather/) | $16.5M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
 | [ferro](./ferro/) | $5.0M | 0.0% | ? | declining | 0 | 21 | 2026-06-10 |
-| [fiamma](./fiamma/) | $1.2M | 0.0% | ? | active | 0 | 33 | 2026-06-10 |
+| [fiamma](./fiamma/) | $1.2M | 0.0% | ? | active | 3 | 33 | 2026-06-11 |
 | [firebot](./firebot/) | $3.7M | 4.8% | $3.7M | unknown | 2 | 29 | 2026-06-10 |
 | [firelight](./firelight/) | $80.3M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
 | [flamingo](./flamingo/) | $2.2M | 0.0% | ? | unknown | 6 | 0 | 2026-06-10 |
@@ -255,9 +255,9 @@
 | [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 1 | 63 | 2026-06-10 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | active | 0 | 9 | 2026-06-10 |
 | [helix](./helix/) | $1.5M | 0.0% | ? | declining | 0 | 9 | 2026-06-10 |
-| [hemi-staking](./hemi-staking/) | $16.4M | 0.0% | $16.4M | active | 2 | 120 | 2026-06-10 |
+| [hemi-staking](./hemi-staking/) | $16.4M | 0.0% | $16.4M | active | 5 | 120 | 2026-06-11 |
 | [hemi](./hemi/) | $49.6K | 2.7% | $49.6K | unknown | 5 | 47 | 2026-05-25 |
-| [hemibtc](./hemibtc/) | $46.2K | 0.0% | $46.2K | active | 2 | 46 | 2026-06-10 |
+| [hemibtc](./hemibtc/) | $46.2K | 0.0% | $46.2K | active | 5 | 46 | 2026-06-11 |
 | [hera-finance](./hera-finance/) | $6.5M | 42.9% | ? | active | 3 | 28 | 2026-06-10 |
 | [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-06-10 |
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 2 | 402 | 2026-06-10 |
@@ -440,7 +440,7 @@
 | [pangolin](./pangolin/) | $3.8M | 53.8% | ? | declining | 12 | 163 | 2026-06-11 |
 | [paradex](./paradex/) | $33.3M | 0.0% | ? | declining | 0 | 5 | 2026-06-11 |
 | [paragonsdao](./paragonsdao/) | $6.4M | 50.0% | ? | active | 7 | 2 | 2026-06-11 |
-| [parallel-protocol](./parallel-protocol/) | $3.6M | 3.8% | $3.0M | active | 2 | 38 | 2026-06-11 |
+| [parallel-protocol](./parallel-protocol/) | $3.6M | 3.8% | $3.0M | active | 5 | 38 | 2026-06-11 |
 | [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-06-11 |
 | [pay-protocol](./pay-protocol/) | $1.4M | 0.0% | ? | declining | 0 | 8 | 2026-06-11 |
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-06-11 |

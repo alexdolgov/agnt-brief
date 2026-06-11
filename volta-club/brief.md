@@ -7,8 +7,8 @@
 - Project: Volta Club (`volta-club`)
 - Website: [https://volta.club/](https://volta.club/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:18.741Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:02:22.209Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: avalanche, ethereum
 - Contract surface: 316 unique implementations (640 raw deployments)
 - DeFi Llama TVL: $1,276,932.51

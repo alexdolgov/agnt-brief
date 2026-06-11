@@ -5,8 +5,8 @@
 - Project: Wan Bridge (`wan-bridge`)
 - Website: [https://bridge.wanchain.org](https://bridge.wanchain.org)
 - Lifecycle: active (Tier 0, 38% below peak)
-- Generated: 2026-06-10T20:59:18.768Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:04:31.322Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: arbitrum, avalanche, base, blast, celo, ethereum, fantom, linea, metis, moonbeam, moonriver, optimism, polygon, polygon-zkevm
 - Contract surface: 129 unique implementations (338 raw deployments)
 - DeFi Llama TVL: $26,052,327.62

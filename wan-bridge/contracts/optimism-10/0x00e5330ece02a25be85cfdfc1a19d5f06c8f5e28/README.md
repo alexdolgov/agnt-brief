@@ -4,7 +4,7 @@
 |---|---|
 | Chain | optimism (10) |
 | Address | `0x00e5330ece02a25be85cfdfc1a19d5f06c8f5e28` |
-| Role | unknown |
+| Role | bridge_template |
 | Origin | native |
 | Audited | No |
 | Audits | n/a |

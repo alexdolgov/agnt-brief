@@ -673,11 +673,11 @@
 | [vest-markets](./vest-markets/) | $1.7M | 0.0% | ? | declining | 0 | 4 | 2026-06-11 |
 | [vfat.io](./vfat.io/) | $0.0 | 10.0% | ? | active | 10 | 553 | 2026-06-11 |
 | [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 0 | 65 | 2026-05-31 |
-| [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-06-10 |
-| [volta-club](./volta-club/) | $976.2M | 0.0% | $976.2M | unknown | 0 | 316 | 2026-06-10 |
-| [wagmi](./wagmi/) | $2.3M | 0.0% | ? | declining | 0 | 334 | 2026-06-10 |
-| [wan-bridge](./wan-bridge/) | $4.6K | 0.0% | $4.6K | active | 3 | 129 | 2026-06-10 |
-| [wanswap-dex](./wanswap-dex/) | $1.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-10 |
+| [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-06-11 |
+| [volta-club](./volta-club/) | $976.2M | 0.0% | $976.2M | unknown | 0 | 316 | 2026-06-11 |
+| [wagmi](./wagmi/) | $2.3M | 0.0% | ? | declining | 0 | 334 | 2026-06-11 |
+| [wan-bridge](./wan-bridge/) | $4.6K | 0.0% | $4.6K | active | 3 | 129 | 2026-06-11 |
+| [wanswap-dex](./wanswap-dex/) | $1.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | declining | 8 | 83 | 2026-06-10 |
 | [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | declining | 0 | 5 | 2026-06-10 |
 | [wemix.fi](./wemix.fi/) | $38.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |

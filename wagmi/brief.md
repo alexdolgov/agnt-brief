@@ -7,8 +7,8 @@
 - Project: WAGMI (`wagmi`)
 - Website: [https://wagmi.com/](https://wagmi.com/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:18.753Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:03:31.806Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: arbitrum, avalanche, base, bsc, ethereum, fantom, kava, metis, optimism, polygon, sonic, zksync-era
 - Contract surface: 334 unique implementations (334 raw deployments)
 - DeFi Llama TVL: $2,324,516.44

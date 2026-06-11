@@ -7,8 +7,8 @@
 - Project: SashimiSwap (`sashimiswap`)
 - Website: [https://sashimi.cool/home/swap](https://sashimi.cool/home/swap)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-10T20:59:13.385Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:32:30.723Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: ethereum, heco
 - Contract surface: 61 unique implementations (111 raw deployments)
 - DeFi Llama TVL: $4,985,528.24

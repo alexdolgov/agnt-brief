@@ -5,8 +5,8 @@
 - Project: Satori Finance (`satori-finance`)
 - Website: [https://satori.finance](https://satori.finance)
 - Lifecycle: active (Tier 0, 81.1% below peak)
-- Generated: 2026-06-10T20:59:13.457Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:32:36.965Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: arbitrum, base, ethereum, linea, polygon-zkevm, scroll
 - Contract surface: 40 unique implementations (59 raw deployments)
 - DeFi Llama TVL: $1,279,341.00

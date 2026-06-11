@@ -5,8 +5,8 @@
 - Project: Sceptre Liquid (`sceptre-liquid`)
 - Website: [https://flare.sceptre.fi](https://flare.sceptre.fi)
 - Lifecycle: unknown
-- Generated: 2026-06-10T21:23:56.328Z
-- Pipeline run: correction-skeletal-description-fix-topography
+- Generated: 2026-06-11T02:30:35.008Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $20,032,855.90

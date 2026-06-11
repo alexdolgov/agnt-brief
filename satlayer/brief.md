@@ -5,8 +5,8 @@
 - Project: SatLayer (`satlayer`)
 - Website: [https://satlayer.xyz/](https://satlayer.xyz/)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:59:13.448Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:33:59.784Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: base, berachain, bsc, ethereum
 - Contract surface: 311 unique implementations (747 raw deployments)
 - DeFi Llama TVL: $1,136,445.48

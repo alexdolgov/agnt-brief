@@ -5,8 +5,8 @@
 - Project: Scallop (`scallop`)
 - Website: [https://app.scallop.io/referral?ref=692ecd3798f63b5f44c040f9](https://app.scallop.io/referral?ref=692ecd3798f63b5f44c040f9)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:14.096Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:30:36.258Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $38,174,851.00

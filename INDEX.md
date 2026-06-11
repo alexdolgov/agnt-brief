@@ -514,12 +514,12 @@
 | [saber](./saber/) | $4.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [safe](./safe/) | $99.3M | 0.0% | ? | active | 18 | 1 | 2026-06-11 |
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
-| [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-06-10 |
-| [satlayer](./satlayer/) | $289.5M | 4.5% | $287.2M | active | 12 | 311 | 2026-06-10 |
-| [satori-finance](./satori-finance/) | $40.9K | 0.0% | $40.9K | active | 1 | 40 | 2026-06-10 |
+| [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-06-11 |
+| [satlayer](./satlayer/) | $289.5M | 4.5% | $287.2M | active | 12 | 311 | 2026-06-11 |
+| [satori-finance](./satori-finance/) | $40.9K | 0.0% | $40.9K | active | 1 | 40 | 2026-06-11 |
 | [saucerswap](./saucerswap/) | $32.9M | 0.0% | ? | unknown | 8 | 0 | 2026-05-27 |
-| [scallop](./scallop/) | $38.2M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
-| [sceptre-liquid](./sceptre-liquid/) | $20.0M | 0.0% | ? | unknown | 1 | 0 | 2026-06-10 |
+| [scallop](./scallop/) | $38.2M | 0.0% | ? | unknown | 4 | 0 | 2026-06-11 |
+| [sceptre-liquid](./sceptre-liquid/) | $20.0M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [scream](./scream/) | $1.3M | 0.0% | ? | dead | 1 | 1 | 2026-06-10 |
 | [scroll-bridge](./scroll-bridge/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 32 | 2026-05-31 |
 | [scrub-money](./scrub-money/) | $6.7M | 0.0% | ? | active | 0 | 19 | 2026-06-10 |

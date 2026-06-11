@@ -7,11 +7,11 @@
 - Project: EverRise (`everrise`)
 - Website: [https://www.everrise.com](https://www.everrise.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T23:16:12.642Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-11T12:06:34.303Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: avalanche, bsc, ethereum, fantom, polygon
 - Contract surface: 210 unique implementations (458 raw deployments)
-- DeFi Llama TVL: $1,486,826.64
+- DeFi Llama TVL: $643,730.60
 - On-chain TVL (included contracts): $23,074,467.87
 - TVL by chain: Avalanche $21,534,575.07 | Bsc $1,539,892.80
 
@@ -31,11 +31,11 @@ The EverRise family provides foundational bridging and liquidity infrastructure,
 - Unverified implementations: 134
 - Unique implementations: 210
 - Raw deployments: 458
-- Audits discovered: 2
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $23,074,467.87
 - Latest audit: 2023-07 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $23,074,467.87 represents exposure in a protocol with declining activity.
 
@@ -289,7 +289,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [DL audit link](https://skynet.certik.com/projects/everrise) | CertiK | Audit | 2023-07 | stale | Direct | n/a | 0 | n/a |
-| [02_Smart_Contract_Audit_EverRise_Token_Staking_v3.pdf](https://github.com/chainsulting/Smart-Contract-Security-Audits/blob/master/EverRise/02_Smart_Contract_Audit_EverRise_Token_Staking_v3.pdf) | chainsulting | Audit | 2022-04 | stale | Direct | n/a | 0 | n/a |
+| [02_Smart_Contract_Audit_EverRise_Token_Staking_v3.pdf](https://github.com/chainsulting/Smart-Contract-Security-Audits/blob/master/EverRise/02_Smart_Contract_Audit_EverRise_Token_Staking_v3.pdf) | chainsulting | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [audit.md](https://github.com/chainsulting/Smart-Contract-Security-Audits/blob/master/EverRise/audit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -359,7 +360,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -367,6 +368,7 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [3046] DL audit link
-- [3548] 02_Smart_Contract_Audit_EverRise_Token_Staking_v3.pdf
+- [11910] 02_Smart_Contract_Audit_EverRise_Token_Staking_v3.pdf
+- [11911] audit.md
 
 Fork inheritance lineage and inherited audits are included when available.

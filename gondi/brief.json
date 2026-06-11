@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gondi",
-  "generated_at": "2026-06-10T23:37:06.561Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-11T12:04:33.456Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "gondi",
@@ -45,7 +45,7 @@
     "coverage_pct": 20,
     "total_audits": 2,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 1367523,
+    "dl_tvl_usd": 752461,
     "tvl_usd": 35.592940190274554,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -1547,7 +1547,7 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "scope_format": "contract_name|n/a",
       "extracted_names": [
         "Hash",
         "IMultiSourceLoan",
@@ -1558,7 +1558,17 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 3095,
+          "report_url": "https://raw.githubusercontent.com/zenith-security/reports/985c60dd51497dfd8540cdc16bf243265ba154b5/reports/Gondi%20-%20Zenith%20Audit%20Report.pdf"
+        },
+        {
+          "audit_id": 11914,
+          "report_url": "https://raw.githubusercontent.com/zenith-security/reports/84cd8bcd63d6a9e9f4385fa3f7aa87dca4c8c2fa/reports/Gondi%20-%20Zenith%20Audit%20Report.pdf"
+        }
+      ]
     }
   ],
   "auditor_coverage": [

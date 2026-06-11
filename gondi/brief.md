@@ -5,11 +5,11 @@
 - Project: Gondi (`gondi`)
 - Website: [https://www.gondi.xyz](https://www.gondi.xyz)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T23:37:06.561Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
+- Generated: 2026-06-11T12:04:33.456Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: ethereum, hyperliquid
 - Contract surface: 30 unique implementations (84 raw deployments)
-- DeFi Llama TVL: $1,367,523.00
+- DeFi Llama TVL: $752,461.00
 - On-chain TVL (included contracts): $35.59
 - TVL by chain: Ethereum $35.59
 
@@ -108,7 +108,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Rendered PDF capture](https://2893171050-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FW2WSJrV6PSLWo4p8vIGq%2Fuploads%2FaRsUvzn1bAxcW38gJGOA%2FGondi%20-%20Zenith%20Audit%20Report%20(5).pdf) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 26 | high |
-| [Rendered PDF capture](https://raw.githubusercontent.com/zenith-security/reports/985c60dd51497dfd8540cdc16bf243265ba154b5/reports/Gondi%20-%20Zenith%20Audit%20Report.pdf) | unknown | Audit | 2025-08 | fresh | Direct | contract_name | 8 | high |
+| [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/zenith-security/reports/985c60dd51497dfd8540cdc16bf243265ba154b5/reports/Gondi%20-%20Zenith%20Audit%20Report.pdf) | unknown | Audit | 2025-08 | fresh | Direct | contract_name|n/a | 8 | high |
 
 ## Coverage Gaps
 

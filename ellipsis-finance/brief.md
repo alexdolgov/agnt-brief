@@ -7,11 +7,11 @@
 - Project: Ellipsis Finance (`ellipsis-finance`)
 - Website: [https://ellipsis.finance/](https://ellipsis.finance/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-10T23:02:01.101Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-11T12:04:32.070Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: bsc
 - Contract surface: 22 unique implementations (130 raw deployments)
-- DeFi Llama TVL: $1,195,518.80
+- DeFi Llama TVL: $1,095,739.94
 - On-chain TVL (included contracts): $59,039.41
 - TVL by chain: Bsc $59,039.41
 
@@ -31,11 +31,11 @@ All contracts belong to a single product family sharing the Ellipsis ecosystem. 
 - Unverified implementations: 5
 - Unique implementations: 22
 - Raw deployments: 130
-- Audits discovered: 2
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $8,967.41
 - Latest audit: 2022-03 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 2 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [dead]. ASD of $8,967.41 represents exposure in a protocol with dead activity.
 
@@ -105,6 +105,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [010421_Hacken_Ellipsis_SC_Audit_Report.pdf](https://github.com/ellipsis-finance/ellipsis-audits/blob/master/010421_Hacken_Ellipsis_SC_Audit_Report.pdf) | Hacken | Audit | 2021-04 | stale | Direct | contract_name | 4 | high |
 | [here](https://github.com/ellipsis-finance/ellipsis-audits/blob/master/PeckShield-Audit-Report-EllipsisV2Staking-v1.0.pdf) | PeckShield | Audit | 2022-03 | stale | Direct | contract_name | 2 | high |
+| [The Ellipsis codebase is based on code from Curve Finance; [their audits can be found here]().&#x20;](https://www.curve.finance/audits) | Curve Finance | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -138,9 +139,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
 - Match method counts: extraction_exact=6
+
+Zero-match audit list:
+
+- [11900] The Ellipsis codebase is based on code from Curve Finance; [their audits can be found here]().&#x20;
 
 Fork inheritance lineage and inherited audits are included when available.

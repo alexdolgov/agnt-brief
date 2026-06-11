@@ -3,13 +3,13 @@
 ## Project Overview
 
 - Project: Hegic (`hegic`)
-- Website: [https://www.hegic.co/?ref=0x798ff1e6d7afd28c333ee6ebe03125d30ec6ef10](https://www.hegic.co/?ref=0x798ff1e6d7afd28c333ee6ebe03125d30ec6ef10)
+- Website: [https://www.hegic.co](https://www.hegic.co)
 - Lifecycle: active (Tier 0, 91.2% below peak)
-- Generated: 2026-06-10T23:49:19.608Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
+- Generated: 2026-06-11T12:05:34.886Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: ethereum
 - Contract surface: 63 unique implementations (97 raw deployments)
-- DeFi Llama TVL: $10,022,682.55
+- DeFi Llama TVL: $8,461,080.77
 - On-chain TVL (included contracts): $54,068.48
 - TVL by chain: Ethereum $54,068.48
 
@@ -29,11 +29,11 @@ The Hegic contract acts as a registry or access control layer for the option con
 - Unverified implementations: 36
 - Unique implementations: 63
 - Raw deployments: 97
-- Audits discovered: 1
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $54,068.48
 - Latest audit: 2022-10 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -139,6 +139,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [PeckShield-Audit-Report-Hegic-Herge-Protocol-Upgrade-v1.0.pdf](https://github.com/hegic/contracts/blob/main/packages/herge/docs/PeckShield-Audit-Report-Hegic-Herge-Protocol-Upgrade-v1.0.pdf) | PeckShield | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
+| [PeckShield-Audit-Report-Hegic-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Hegic-v1.0.pdf) | PeckShield | Audit | 2020 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -186,7 +187,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -194,5 +195,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [7286] PeckShield-Audit-Report-Hegic-Herge-Protocol-Upgrade-v1.0.pdf
+- [11793] PeckShield-Audit-Report-Hegic-v1.0.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

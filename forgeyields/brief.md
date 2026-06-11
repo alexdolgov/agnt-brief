@@ -5,11 +5,11 @@
 - Project: ForgeYields (`forgeyields`)
 - Website: [https://app.forgeyields.com](https://app.forgeyields.com)
 - Lifecycle: active (Tier 0, 16.4% below peak)
-- Generated: 2026-06-10T23:27:06.100Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-11T12:05:33.699Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,826,878.97
+- DeFi Llama TVL: $1,266,599.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -30,11 +30,11 @@ ForgeYields is a cross-chain yield aggregator and onchain capital allocator. It 
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2025-09 (fresh)
+- Staleness: 1 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -76,6 +76,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Audits](https://forge-labs.gitbook.io/forge-docs/other/audits.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://raw.githubusercontent.com/ForgeYields/audits/4f1d3d0cd2b241a78990c8f7113bebde2d339498/Forge%20-%20Csc%20Audit%20Report.pdf) | unknown | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -96,7 +97,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -104,5 +105,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [2949] Audits
+- [11783] Rendered PDF capture
 
 Fork inheritance lineage and inherited audits are included when available.

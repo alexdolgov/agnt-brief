@@ -181,7 +181,7 @@
 | [ekubo](./ekubo/) | $5.6M | 44.4% | $5.6M | active | 5 | 15 | 2026-06-10 |
 | [elephant-money](./elephant-money/) | $1.6M | 5.9% | $1.6M | declining | 2 | 346 | 2026-06-10 |
 | [elfi-protocol](./elfi-protocol/) | $3.4M | 29.5% | ? | declining | 1 | 2406 | 2026-06-10 |
-| [ellipsis-finance](./ellipsis-finance/) | $59.0K | 29.4% | $9.0K | dead | 2 | 22 | 2026-06-10 |
+| [ellipsis-finance](./ellipsis-finance/) | $59.0K | 29.4% | $9.0K | dead | 3 | 22 | 2026-06-11 |
 | [elyfi](./elyfi/) | $434.8K | 5.9% | $175.9 | dead | 2 | 30 | 2026-05-24 |
 | [endur](./endur/) | $9.4M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
 | [enosys](./enosys/) | $26.9M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
@@ -197,7 +197,7 @@
 | [ethichub](./ethichub/) | $22.7M | 0.0% | $22.7M | active | 2 | 58 | 2026-06-10 |
 | [ethos](./ethos/) | $1.9M | 30.0% | ? | active | 2 | 27 | 2026-06-10 |
 | [eventum-bridge](./eventum-bridge/) | $1.6M | 3.8% | $1.6M | active | 2 | 28 | 2026-06-10 |
-| [everrise](./everrise/) | $23.1M | 0.0% | $23.1M | declining | 2 | 210 | 2026-06-10 |
+| [everrise](./everrise/) | $23.1M | 0.0% | $23.1M | declining | 3 | 210 | 2026-06-11 |
 | [everything](./everything/) | $945.3K | 0.0% | ? | active | 0 | 10 | 2026-06-10 |
 | [exactly](./exactly/) | $189.5K | 63.6% | ? | active | 32 | 65 | 2026-06-10 |
 | [exmo](./exmo/) | $2.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -215,7 +215,7 @@
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-06-10 |
 | [flying-tulip](./flying-tulip/) | $51.3M | 0.0% | $51.3M | active | 0 | 62 | 2026-06-10 |
 | [fomo3d](./fomo3d/) | $2.5M | 0.0% | ? | active | 0 | 23 | 2026-06-10 |
-| [forgeyields](./forgeyields/) | $1.8M | 0.0% | ? | active | 1 | 1 | 2026-06-10 |
+| [forgeyields](./forgeyields/) | $1.3M | 0.0% | ? | active | 2 | 1 | 2026-06-11 |
 | [four.meme](./four.meme/) | $4.9M | 0.0% | ? | active | 1 | 2 | 2026-06-10 |
 | [foxify](./foxify/) | $72.6K | 0.0% | $72.6K | active | 0 | 5 | 2026-06-10 |
 | [frankencoin](./frankencoin/) | $70.0M | 80.0% | ? | active | 5 | 5 | 2026-06-10 |
@@ -234,7 +234,7 @@
 | [gnosis-protocol-v1](./gnosis-protocol-v1/) | $94.4M | 0.0% | $94.4M | declining | 0 | 110 | 2026-06-10 |
 | [goldfinger](./goldfinger/) | $0.0 | 0.0% | ? | active | 8 | 5 | 2026-06-11 |
 | [goldstation](./goldstation/) | $2.2M | 0.0% | ? | active | 3 | 5 | 2026-06-10 |
-| [gondi](./gondi/) | $35.6 | 20.0% | $35.6 | active | 2 | 30 | 2026-06-10 |
+| [gondi](./gondi/) | $35.6 | 20.0% | $35.6 | active | 2 | 30 | 2026-06-11 |
 | [goose](./goose/) | $7.9 | 0.0% | $7.9 | active | 0 | 7 | 2026-06-10 |
 | [goplus-security](./goplus-security/) | $32.8M | 0.0% | ? | active | 0 | 23 | 2026-06-10 |
 | [gravity-bridge](./gravity-bridge/) | $91.3M | 0.0% | $91.3M | active | 0 | 152 | 2026-06-10 |
@@ -252,7 +252,7 @@
 | [hashdao-finance](./hashdao-finance/) | $2.8M | 55.6% | ? | dead | 3 | 50 | 2026-06-10 |
 | [hashkey-global](./hashkey-global/) | $15.1M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
 | [hashport](./hashport/) | $152.6K | 100.0% | ? | dead | 3 | 21 | 2026-06-10 |
-| [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 1 | 63 | 2026-06-10 |
+| [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 2 | 63 | 2026-06-11 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | active | 0 | 9 | 2026-06-10 |
 | [helix](./helix/) | $1.5M | 0.0% | ? | declining | 0 | 9 | 2026-06-10 |
 | [hemi-staking](./hemi-staking/) | $16.4M | 0.0% | $16.4M | active | 5 | 120 | 2026-06-11 |

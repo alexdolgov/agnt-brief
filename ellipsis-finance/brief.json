@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ellipsis-finance",
-  "generated_at": "2026-06-10T23:02:01.101Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-11T12:04:32.070Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "ellipsis-finance",
@@ -43,9 +43,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 5,
     "coverage_pct": 29.4,
-    "total_audits": 2,
+    "total_audits": 3,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 1195518.8006900002,
+    "dl_tvl_usd": 1095739.93543,
     "tvl_usd": 59039.41279261302,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -64,7 +64,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 2,
-      "unknown": 0
+      "unknown": 1
     }
   },
   "topography": {
@@ -1798,6 +1798,27 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11900,
+      "audit_key": "audit-11900",
+      "report_name": "The Ellipsis codebase is based on code from Curve Finance; [their audits can be found here]().&#x20;",
+      "report_url": "https://www.curve.finance/audits",
+      "auditor": "Curve Finance",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -1953,7 +1974,12 @@
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11900,
+        "report_name": "The Ellipsis codebase is based on code from Curve Finance; [their audits can be found here]().&#x20;"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

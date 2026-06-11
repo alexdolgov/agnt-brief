@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "everrise",
-  "generated_at": "2026-06-10T23:16:12.642Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-11T12:06:34.303Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "everrise",
@@ -43,9 +43,9 @@
     "contracts_verified_by_bytecode": 3,
     "contracts_unverified": 134,
     "coverage_pct": 0,
-    "total_audits": 2,
+    "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1486826.64126,
+    "dl_tvl_usd": 643730.59834,
     "tvl_usd": 23074467.865482014,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -68,8 +68,8 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 2,
-      "unknown": 0
+      "stale": 1,
+      "unknown": 2
     }
   },
   "topography": {
@@ -8853,14 +8853,35 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3548,
-      "audit_key": "audit-3548",
+      "audit_id": 11910,
+      "audit_key": "audit-11910",
       "report_name": "02_Smart_Contract_Audit_EverRise_Token_Staking_v3.pdf",
       "report_url": "https://github.com/chainsulting/Smart-Contract-Security-Audits/blob/master/EverRise/02_Smart_Contract_Audit_EverRise_Token_Staking_v3.pdf",
       "auditor": "chainsulting",
       "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-04",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11911,
+      "audit_key": "audit-11911",
+      "report_name": "audit.md",
+      "report_url": "https://github.com/chainsulting/Smart-Contract-Security-Audits/blob/master/EverRise/audit.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -9374,8 +9395,12 @@
         "report_name": "DL audit link"
       },
       {
-        "audit_id": 3548,
+        "audit_id": 11910,
         "report_name": "02_Smart_Contract_Audit_EverRise_Token_Staking_v3.pdf"
+      },
+      {
+        "audit_id": 11911,
+        "report_name": "audit.md"
       }
     ],
     "inherited_remapped_matches": []

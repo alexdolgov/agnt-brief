@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hegic",
-  "generated_at": "2026-06-10T23:49:19.608Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-11T12:05:34.886Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hegic",
@@ -33,16 +33,16 @@
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 36,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 10022682.550530002,
+    "dl_tvl_usd": 8461080.76636,
     "tvl_usd": 54068.4849904824,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "ethereum": 54068.48
     },
     "asd_usd": 54068.4849904824,
-    "website_url": "https://www.hegic.co/?ref=0x798ff1e6d7afd28c333ee6ebe03125d30ec6ef10",
+    "website_url": "https://www.hegic.co",
     "chains": [
       "ethereum"
     ],
@@ -53,7 +53,7 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 1,
+      "stale": 2,
       "unknown": 0
     }
   },
@@ -2353,6 +2353,27 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11793,
+      "audit_key": "audit-11793",
+      "report_name": "PeckShield-Audit-Report-Hegic-v1.0.pdf",
+      "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Hegic-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -2633,6 +2654,10 @@
       {
         "audit_id": 7286,
         "report_name": "PeckShield-Audit-Report-Hegic-Herge-Protocol-Upgrade-v1.0.pdf"
+      },
+      {
+        "audit_id": 11793,
+        "report_name": "PeckShield-Audit-Report-Hegic-v1.0.pdf"
       }
     ],
     "inherited_remapped_matches": []

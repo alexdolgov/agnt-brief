@@ -5,8 +5,8 @@
 - Project: ZyFAI (`zyfai`)
 - Website: [https://zyf.ai](https://zyf.ai)
 - Lifecycle: active (Tier 0, 44.8% below peak)
-- Generated: 2026-06-10T20:59:19.692Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:30:26.483Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: arbitrum, base, ethereum, plasma, sonic
 - Contract surface: 105 unique implementations (396 raw deployments)
 - DeFi Llama TVL: $6,488,909.30

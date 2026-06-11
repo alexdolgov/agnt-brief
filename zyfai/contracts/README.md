@@ -1,6 +1,6 @@
 # zyfai — Contract Index
 
-106 unique implementations across 5 chains · 402 deployments · 0 audited · 100 unaudited · 6 unverified
+105 unique implementations across 5 chains · 396 deployments · 0 audited · 99 unaudited · 6 unverified
 
 ## adapter (2)
 
@@ -105,7 +105,7 @@
 | [PendlePrincipalToken (3 deployments)](./sonic-146/0x0fb682c9692addcc1769f4d4d938c54420d54fa3/) | sonic | 3 deployments: sonic [`0x0fb682...d54fa3`](./sonic-146/0x0fb682c9692addcc1769f4d4d938c54420d54fa3/); sonic `0x930441...7e6643`; sonic `0x973184...12a8c8` | ⚠️ Unaudited | Verified |
 | [PendleYieldToken (2 deployments)](./sonic-146/0x18d2d54f42ba720851bae861b98a0f4b079e6027/) | sonic | 2 deployments: sonic [`0x18d2d5...9e6027`](./sonic-146/0x18d2d54f42ba720851bae861b98a0f4b079e6027/); sonic `0x3ab072...078920` | ⚠️ Unaudited | Verified |
 
-## unknown (38)
+## unknown (37)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -132,7 +132,6 @@
 | [PSM3](./arbitrum-42161/0x2b05f8e1cacc6974fd79a673a341fe1f58d27266/) | arbitrum | [`0x2b05f8...d27266`](./arbitrum-42161/0x2b05f8e1cacc6974fd79a673a341fe1f58d27266/) | ⚠️ Unaudited | Verified |
 | [RateLimits](./arbitrum-42161/0x19d08879851fb54c2dcc4bb32b5a1ea5e9ad6838/) | arbitrum | [`0x19d088...ad6838`](./arbitrum-42161/0x19d08879851fb54c2dcc4bb32b5a1ea5e9ad6838/) | ⚠️ Unaudited | Verified |
 | [Signing](./ethereum-1/0xd3bb8475c30fd70675f6250fb725e30b3a6e6094/) | ethereum | [`0xd3bb84...6e6094`](./ethereum-1/0xd3bb8475c30fd70675f6250fb725e30b3a6e6094/) | ⚠️ Unaudited | Verified |
-| [Silo (6 deployments)](./sonic-146/0x4935fadb17df859667cc4f7bfe6a8cb24f86f8d0/) | sonic | 6 deployments: sonic [`0x4935fa...86f8d0`](./sonic-146/0x4935fadb17df859667cc4f7bfe6a8cb24f86f8d0/); sonic `0x4e216c...5810df`; sonic `0x5954ce...3ab2de`; sonic `0x6030ad...d6eb64`; sonic `0x7e88ae...7caa62`; sonic `0xa18a8f...ae7893` | ⚠️ Unaudited | Verified |
 | [SparkArbitrumOne_20250320](./arbitrum-42161/0x1d54a093b8fddfcc6fbb411d9af31d96e034b3d5/) | arbitrum | [`0x1d54a0...34b3d5`](./arbitrum-42161/0x1d54a093b8fddfcc6fbb411d9af31d96e034b3d5/) | ⚠️ Unaudited | Verified |
 | [Streamer](./ethereum-1/0xf86b6b0cc4d7178e118db3179a2d2191959ea752/) | ethereum | [`0xf86b6b...9ea752`](./ethereum-1/0xf86b6b0cc4d7178e118db3179a2d2191959ea752/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x082481...1b595f` | ❓ Unverified | Unverified |

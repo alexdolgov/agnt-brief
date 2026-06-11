@@ -5,8 +5,8 @@
 - Project: Zoth (`zoth`)
 - Website: [https://zoth.io](https://zoth.io)
 - Lifecycle: active (Tier 0, 92.5% below peak)
-- Generated: 2026-06-10T20:59:19.681Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:30:25.780Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: avalanche, base, ethereum, manta, metis
 - Contract surface: 43 unique implementations (149 raw deployments)
 - DeFi Llama TVL: $2,197,589.00

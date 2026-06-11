@@ -4,7 +4,7 @@
 |---|---|
 | Chain | ethereum (1) |
 | Address | `0x4c3c78cebc9cc87436deed2782998bc002f2b69f` |
-| Role | core_logic |
+| Role | proxy |
 | Origin | native |
 | Audited | Yes |
 | Audits | [www.certik.com/projects/lend-flare](https://skynet.certik.com/projects/lend-flare) |

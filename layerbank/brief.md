@@ -7,8 +7,8 @@
 - Project: LayerBank (`layerbank`)
 - Website: [https://layerbank.finance](https://layerbank.finance)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:06.880Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:38:51.464Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: linea, manta, mode, scroll
 - Contract surface: 91 unique implementations (216 raw deployments)
 - DeFi Llama TVL: $23,190,417.69

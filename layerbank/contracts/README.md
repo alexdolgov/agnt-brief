@@ -32,7 +32,7 @@
 | [Core (7 deployments)](./linea-59144/0x009a0b7c38b542208936f1179151cd08e2943833/) | linea | 7 deployments: manta `0xb7a23f...748bbf`; mode `0x809808...c1ff50`; linea [`0x009a0b...943833`](./linea-59144/0x009a0b7c38b542208936f1179151cd08e2943833/); linea `0x43eac5...5de866`; linea `0x850515...0577fb`; linea `0x887d64...fec715`; scroll `0xec53c8...4289aa` | ⚠️ Unaudited | Verified |
 | [Leverager (5 deployments)](./linea-59144/0x06502df8986d53bb44444ba065e42f53f475d7eb/) | linea | 5 deployments: manta `0x4054f4...bda9a6`; mode `0xf0dcba...9029e5`; linea [`0x06502d...75d7eb`](./linea-59144/0x06502df8986d53bb44444ba065e42f53f475d7eb/); linea `0xc98b93...eefff3`; linea `0xe10157...c8200a` | ✅ Audited | Verified |
 | [Locker](./linea-59144/0x14c5a2b562754ed412708a103fb9cb65b1b16494/) | linea | [`0x14c5a2...b16494`](./linea-59144/0x14c5a2b562754ed412708a103fb9cb65b1b16494/) | ⚠️ Unaudited | Verified |
-| SaleLabOverflowFarm | linea | `0x6474df...373b51` | ✅ Audited | Verified |
+| [SaleLabOverflowFarm](./linea-59144/0x6474df49abab65c0d06b5b4336fea2f1f9373b51/) | linea | [`0x6474df...373b51`](./linea-59144/0x6474df49abab65c0d06b5b4336fea2f1f9373b51/) | ✅ Audited | Verified |
 | UnnamedContract | manta | `0x126eb7...d8d118` | ❓ Unverified | Unverified |
 | UnnamedContract | manta | `0x147967...14aba6` | ❓ Unverified | Unverified |
 | UnnamedContract | manta | `0x21a3d6...bb5069` | ❓ Unverified | Unverified |

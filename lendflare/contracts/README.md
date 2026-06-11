@@ -8,17 +8,15 @@
 |---|---|---|---|---|
 | [LendFlareZap (2 deployments)](./ethereum-1/0xbcdc45372847b95bb4bd6d524b4a801aac98619c/) | ethereum | 2 deployments: ethereum [`0xbcdc45...98619c`](./ethereum-1/0xbcdc45372847b95bb4bd6d524b4a801aac98619c/); ethereum `0xd7c86a...a303ca` | ⚠️ Unaudited | Verified |
 
-## core_logic (11)
+## core_logic (9)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [ConvexBooster](./ethereum-1/0x64e965deed764b84882903e26d021e4856b083e6/) | ethereum | [`0x64e965...b083e6`](./ethereum-1/0x64e965deed764b84882903e26d021e4856b083e6/) | ⚠️ Unaudited | Verified |
-| [ConvexBoosterV2](./ethereum-1/0x4c3c78cebc9cc87436deed2782998bc002f2b69f/) | ethereum | [`0x4c3c78...f2b69f`](./ethereum-1/0x4c3c78cebc9cc87436deed2782998bc002f2b69f/) | ✅ Audited | Verified |
 | [GenerateLendingPools (13 deployments)](./ethereum-1/0x0429593646407b1f7a7dce3ce9dc4724bc60afbd/) | ethereum | 13 deployments: ethereum [`0x042959...60afbd`](./ethereum-1/0x0429593646407b1f7a7dce3ce9dc4724bc60afbd/); ethereum `0x046348...673c11`; ethereum `0x04ac5c...5f4fd2`; ethereum `0x5086f6...bd338f`; ethereum `0x55a03d...c2772c`; ethereum `0x73a1a5...ead527`; ethereum `0x73da41...271c48`; ethereum `0x76973c...b50c97`; ethereum `0x786a84...28ba9a`; ethereum `0x9a1677...abe043`; ethereum `0xb985a1...4b4c18`; ethereum `0xe0aa24...b9be5a`; ethereum `0xfdb13c...e2b829` | ⚠️ Unaudited | Verified |
 | [GenerateLendingPoolsV2](./ethereum-1/0xd6aaba4ef2540a69d8e99cbc8647d194cfd17241/) | ethereum | [`0xd6aaba...d17241`](./ethereum-1/0xd6aaba4ef2540a69d8e99cbc8647d194cfd17241/) | ⚠️ Unaudited | Verified |
 | [GenerateLendingPoolsV3](./ethereum-1/0x447413fbf9c992ab6a967541f204d8f40419c9ec/) | ethereum | [`0x447413...19c9ec`](./ethereum-1/0x447413fbf9c992ab6a967541f204d8f40419c9ec/) | ⚠️ Unaudited | Verified |
 | [LendFlareVault (6 deployments)](./ethereum-1/0x29042e6389075f7181361ee5bca1df9a524d492c/) | ethereum | 6 deployments: ethereum [`0x29042e...4d492c`](./ethereum-1/0x29042e6389075f7181361ee5bca1df9a524d492c/); ethereum `0x35f962...75ea87`; ethereum `0x4169fa...a08ac0`; ethereum `0x6c3cb7...53094e`; ethereum `0x803ffd...d9c378`; ethereum `0xd61401...5810ff` | ⚠️ Unaudited | Verified |
-| [LendingMarket (3 deployments)](./ethereum-1/0x402e3c8e2ba9db00005d934260157b1b648cac5e/) | ethereum | 3 deployments: ethereum [`0x402e3c...8cac5e`](./ethereum-1/0x402e3c8e2ba9db00005d934260157b1b648cac5e/); ethereum `0x9997fd...f7f179`; ethereum `0xa7c45b...5e88c0` | ⚠️ Unaudited | Verified |
 | [LendingMarketV2 (4 deployments)](./ethereum-1/0x03f744a9ec8d350d1991ac6704fce0c211fce26d/) | ethereum | 4 deployments: ethereum [`0x03f744...fce26d`](./ethereum-1/0x03f744a9ec8d350d1991ac6704fce0c211fce26d/); ethereum `0x4f69ad...b79d52`; ethereum `0xac86b0...8daa07`; ethereum `0xc8937e...061119` | ✅ Audited | Verified |
 | [LendingSponsor (2 deployments)](./ethereum-1/0x1284ef9ebd1d4e0ae30fb7de5ab636eea218da30/) | ethereum | 2 deployments: ethereum [`0x1284ef...18da30`](./ethereum-1/0x1284ef9ebd1d4e0ae30fb7de5ab636eea218da30/); ethereum `0x807047...57036d` | ⚠️ Unaudited | Verified |
 | [SupplyBooster (3 deployments)](./ethereum-1/0x8237720bbdbcfbe59c3d447beaf1133b72f3320f/) | ethereum | 3 deployments: ethereum [`0x823772...f3320f`](./ethereum-1/0x8237720bbdbcfbe59c3d447beaf1133b72f3320f/); ethereum `0xbabb97...98522f`; ethereum `0xff9e83...195f21` | ⚠️ Unaudited | Verified |
@@ -31,23 +29,25 @@
 | [RouteConfigs (2 deployments)](./ethereum-1/0x6fbea2e735c67882553791c5d9f9423f56690ed9/) | ethereum | 2 deployments: ethereum [`0x6fbea2...690ed9`](./ethereum-1/0x6fbea2e735c67882553791c5d9f9423f56690ed9/); ethereum `0x886c47...46373a` | ⚠️ Unaudited | Verified |
 | [Timelock](./ethereum-1/0x63d7a70c17a1fca27dc4100bc737a0dbeb52a5b2/) | ethereum | [`0x63d7a7...52a5b2`](./ethereum-1/0x63d7a70c17a1fca27dc4100bc737a0dbeb52a5b2/) | ⚠️ Unaudited | Verified |
 
-## operational_periphery (7)
+## operational_periphery (6)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [LendFlareGaugeModel (2 deployments)](./ethereum-1/0xc7817927c9f3629717b5d237caa15968424246b6/) | ethereum | 2 deployments: ethereum [`0xc78179...4246b6`](./ethereum-1/0xc7817927c9f3629717b5d237caa15968424246b6/); ethereum `0xe06ee2...51028c` | ⚠️ Unaudited | Verified |
 | [LendFlareVotingEscrow (2 deployments)](./ethereum-1/0xe6615c44bc3cc90839ad6f729eeeabd2aaf6f9a6/) | ethereum | 2 deployments: ethereum [`0xe6615c...f6f9a6`](./ethereum-1/0xe6615c44bc3cc90839ad6f729eeeabd2aaf6f9a6/); ethereum `0xf706fd...cff2ee` | ⚠️ Unaudited | Verified |
-| [LendFlareVotingEscrowV2 (3 deployments)](./ethereum-1/0x19ac8e582a9e6f059e56ce77015c46e250c711d2/) | ethereum | 3 deployments: ethereum [`0x19ac8e...c711d2`](./ethereum-1/0x19ac8e582a9e6f059e56ce77015c46e250c711d2/); ethereum `0x70ffe9...ca5b3b`; ethereum `0x96738a...d4bf00` | ⚠️ Unaudited | Verified |
 | [MerkleAirdrop](./ethereum-1/0xf23801f0c81b8e31ce95bc980ecaf069d296857c/) | ethereum | [`0xf23801...96857c`](./ethereum-1/0xf23801f0c81b8e31ce95bc980ecaf069d296857c/) | ⚠️ Unaudited | Verified |
 | [RewardClaimer](./ethereum-1/0x8fcfd0eec0cca95b5bcebd33a076b29fd8998884/) | ethereum | [`0x8fcfd0...998884`](./ethereum-1/0x8fcfd0eec0cca95b5bcebd33a076b29fd8998884/) | ⚠️ Unaudited | Verified |
 | [SupplyPoolGaugeFactory](./ethereum-1/0x8929369821b1e8ac62e5e59514fda7378bcd4a6e/) | ethereum | [`0x892936...cd4a6e`](./ethereum-1/0x8929369821b1e8ac62e5e59514fda7378bcd4a6e/) | ⚠️ Unaudited | Verified |
 | [SupplyTreasuryFundForAgEUR](./ethereum-1/0x5d7417ca434cb90f587c62597087386e58475a0d/) | ethereum | [`0x5d7417...475a0d`](./ethereum-1/0x5d7417ca434cb90f587c62597087386e58475a0d/) | ⚠️ Unaudited | Verified |
 
-## proxy (1)
+## proxy (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
+| [ConvexBoosterV2](./ethereum-1/0x4c3c78cebc9cc87436deed2782998bc002f2b69f/) | ethereum | [`0x4c3c78...f2b69f`](./ethereum-1/0x4c3c78cebc9cc87436deed2782998bc002f2b69f/) | ✅ Audited | Verified |
 | [LendFlareProxy (3 deployments)](./ethereum-1/0x1fa362339392f910bd69af8e13dd20c5942d446f/) | ethereum | 3 deployments: ethereum [`0x1fa362...2d446f`](./ethereum-1/0x1fa362339392f910bd69af8e13dd20c5942d446f/); ethereum `0x7720a9...cd7aa5`; ethereum `0xb620be...bc3f82` | ⚠️ Unaudited | Verified |
+| [LendFlareVotingEscrowV2 (3 deployments)](./ethereum-1/0x19ac8e582a9e6f059e56ce77015c46e250c711d2/) | ethereum | 3 deployments: ethereum [`0x19ac8e...c711d2`](./ethereum-1/0x19ac8e582a9e6f059e56ce77015c46e250c711d2/); ethereum `0x70ffe9...ca5b3b`; ethereum `0x96738a...d4bf00` | ⚠️ Unaudited | Verified |
+| [LendingMarket (3 deployments)](./ethereum-1/0x402e3c8e2ba9db00005d934260157b1b648cac5e/) | ethereum | 3 deployments: ethereum [`0x402e3c...8cac5e`](./ethereum-1/0x402e3c8e2ba9db00005d934260157b1b648cac5e/); ethereum `0x9997fd...f7f179`; ethereum `0xa7c45b...5e88c0` | ⚠️ Unaudited | Verified |
 
 ## registry (4)
 

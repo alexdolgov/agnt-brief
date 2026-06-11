@@ -7,8 +7,8 @@
 - Project: Lendle (`lendle`)
 - Website: [https://www.lendle.xyz/](https://www.lendle.xyz/)
 - Lifecycle: declining (Tier 1, sunsetting)
-- Generated: 2026-06-10T20:59:06.961Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:38:44.862Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: mantle
 - Contract surface: 64 unique implementations (181 raw deployments)
 - DeFi Llama TVL: $1,130,408.00

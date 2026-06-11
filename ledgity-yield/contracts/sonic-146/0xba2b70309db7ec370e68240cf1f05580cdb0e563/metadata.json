@@ -1,0 +1,17 @@
+{
+  "address": "0xba2b70309db7ec370e68240cf1f05580cdb0e563",
+  "chain_id": 146,
+  "contract_name": "FiatTokenProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0x6f0444a3915f63a2bf2677843d9a94c48de28d6a",
+  "fetched_at": "2026-06-11T00:35:38.976Z"
+}

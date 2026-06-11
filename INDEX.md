@@ -321,12 +321,12 @@
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-06-11 |
 | [landx-finance](./landx-finance/) | $1.8M | 100.0% | ? | active | 1 | 3 | 2026-06-11 |
 | [larix](./larix/) | $1.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [latch](./latch/) | $189.8 | 0.0% | $189.8 | declining | 0 | 1 | 2026-06-10 |
-| [layerbank](./layerbank/) | $116.7K | 50.0% | ? | declining | 4 | 91 | 2026-06-10 |
+| [latch](./latch/) | $189.8 | 0.0% | $189.8 | declining | 0 | 1 | 2026-06-11 |
+| [layerbank](./layerbank/) | $116.7K | 50.0% | ? | declining | 4 | 91 | 2026-06-11 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
-| [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | active | 0 | 107 | 2026-06-10 |
-| [lendflare](./lendflare/) | $1.1K | 5.3% | $1.1K | declining | 1 | 74 | 2026-06-10 |
-| [lendle](./lendle/) | $60.7K | 43.2% | $5.6K | declining | 9 | 64 | 2026-06-10 |
+| [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | active | 0 | 107 | 2026-06-11 |
+| [lendflare](./lendflare/) | $1.1K | 5.3% | $1.1K | declining | 1 | 74 | 2026-06-11 |
+| [lendle](./lendle/) | $60.7K | 43.2% | $5.6K | declining | 9 | 64 | 2026-06-11 |
 | [lets-get-hai](./lets-get-hai/) | $13.5M | 77.4% | $12.6M | active | 5 | 54 | 2026-06-10 |
 | [levex](./levex/) | $10.9M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
 | [liminal](./liminal/) | $24.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |

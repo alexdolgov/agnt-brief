@@ -442,11 +442,11 @@
 | [paragonsdao](./paragonsdao/) | $6.4M | 50.0% | ? | active | 7 | 2 | 2026-06-11 |
 | [parallel-protocol](./parallel-protocol/) | $3.6M | 3.8% | $3.0M | active | 2 | 38 | 2026-06-11 |
 | [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-06-11 |
-| [pay-protocol](./pay-protocol/) | $1.4M | 0.0% | ? | declining | 0 | 8 | 2026-06-10 |
-| [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-06-10 |
-| [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 0 | 21 | 2026-06-10 |
-| [perpl](./perpl/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [pharaoh-exchange](./pharaoh-exchange/) | $50.3M | 0.0% | ? | active | 0 | 48 | 2026-06-10 |
+| [pay-protocol](./pay-protocol/) | $1.4M | 0.0% | ? | declining | 0 | 8 | 2026-06-11 |
+| [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-06-11 |
+| [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 0 | 21 | 2026-06-11 |
+| [perpl](./perpl/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [pharaoh-exchange](./pharaoh-exchange/) | $50.3M | 0.0% | ? | active | 0 | 48 | 2026-06-11 |
 | [phoenix](./phoenix/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [pickle](./pickle/) | $2.9M | 2.7% | $2.9M | declining | 4 | 235 | 2026-06-10 |
 | [piku](./piku/) | $21.4M | 0.0% | $21.4M | active | 2 | 29 | 2026-06-10 |

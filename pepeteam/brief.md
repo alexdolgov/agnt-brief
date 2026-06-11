@@ -5,8 +5,8 @@
 - Project: PepeTeam (`pepeteam`)
 - Website: [https://pepe.team](https://pepe.team)
 - Lifecycle: active (Tier 0, 91.1% below peak)
-- Generated: 2026-06-10T20:59:09.272Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:49:15.956Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: ethereum, polygon
 - Contract surface: 21 unique implementations (64 raw deployments)
 - DeFi Llama TVL: $1,319,181.00

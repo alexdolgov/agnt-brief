@@ -5,8 +5,8 @@
 - Project: Perpl (`perpl`)
 - Website: [https://perpl.xyz/](https://perpl.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:09.277Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:49:14.816Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $1,184,516.77

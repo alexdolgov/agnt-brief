@@ -7,8 +7,8 @@
 - Project: Peapods Finance (`peapods-finance`)
 - Website: [https://peapods.finance](https://peapods.finance)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:09.266Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:50:21.273Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: arbitrum, base, berachain, ethereum, mode, sonic
 - Contract surface: 130 unique implementations (418 raw deployments)
 - DeFi Llama TVL: $6,984,703.21

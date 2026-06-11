@@ -5,8 +5,8 @@
 - Project: Pharaoh Exchange (`pharaoh-exchange`)
 - Website: [https://pharaoh.exchange](https://pharaoh.exchange)
 - Lifecycle: active (Tier 0, 28.6% below peak)
-- Generated: 2026-06-10T20:59:09.285Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:49:16.538Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: avalanche
 - Contract surface: 48 unique implementations (95 raw deployments)
 - DeFi Llama TVL: $50,255,510.00

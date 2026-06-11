@@ -5,8 +5,8 @@
 - Project: PotatoSwap (`potatoswap`)
 - Website: [https://potatoswap.finance](https://potatoswap.finance)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:09.360Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:58:14.576Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $5,173,121.00

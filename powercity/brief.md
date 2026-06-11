@@ -5,8 +5,8 @@
 - Project: POWERCITY (`powercity`)
 - Website: [https://powercity.io](https://powercity.io)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:09.362Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:59:23.194Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $3,252,107.00

@@ -7,8 +7,8 @@
 - Project: Pond0x (`pond0x`)
 - Website: [http://pond0x.com/](http://pond0x.com/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:09.359Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:58:14.542Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum
 - Contract surface: 14 unique implementations (20 raw deployments)
 - DeFi Llama TVL: $2,872,834.29

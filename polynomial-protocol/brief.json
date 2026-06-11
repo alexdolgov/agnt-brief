@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "polynomial-protocol",
-  "generated_at": "2026-06-10T20:59:09.356Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T02:00:22.889Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "polynomial-protocol",

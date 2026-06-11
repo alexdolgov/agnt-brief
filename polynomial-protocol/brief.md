@@ -5,8 +5,8 @@
 - Project: Polynomial Protocol (`polynomial-protocol`)
 - Website: [https://www.polynomial.fi](https://www.polynomial.fi)
 - Lifecycle: active (Tier 0, 62.5% below peak)
-- Generated: 2026-06-10T20:59:09.356Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:00:22.889Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum
 - Contract surface: 5 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $5,336,566.00

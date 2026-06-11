@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "pond0x",
-  "generated_at": "2026-06-10T20:59:09.359Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T01:58:14.542Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "pond0x",
@@ -16,7 +16,7 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 821,
+    "days_since_peak": 832,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0

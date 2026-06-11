@@ -5,8 +5,8 @@
 - Project: Ultron Staking Hub NFT (`ultron-staking-hub-nft`)
 - Website: [https://ultron.foundation/technology#staking-hub](https://ultron.foundation/technology#staking-hub)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:18.481Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:46:02.983Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: avalanche, bsc, ethereum, fantom, polygon
 - Contract surface: 150 unique implementations (162 raw deployments)
 - DeFi Llama TVL: $7,090,109.60

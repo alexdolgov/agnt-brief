@@ -7,8 +7,8 @@
 - Project: Turtle Club (`turtle-club`)
 - Website: [https://app.turtle.xyz/](https://app.turtle.xyz/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:17.679Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:47:42.697Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: avalanche, bsc, ethereum, linea
 - Contract surface: 516 unique implementations (1230 raw deployments)
 - DeFi Llama TVL: $1,231,786.55

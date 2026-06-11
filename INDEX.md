@@ -647,11 +647,11 @@
 | [trufin-protocol](./trufin-protocol/) | $7.0M | 66.7% | ? | declining | 12 | 7 | 2026-06-10 |
 | [trust-wallet](./trust-wallet/) | $470.2M | 0.0% | $470.2M | active | 0 | 5 | 2026-06-11 |
 | [tulipa-capital](./tulipa-capital/) | $55.7M | 0.0% | $55.7M | active | 0 | 4 | 2026-06-11 |
-| [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | declining | 2 | 516 | 2026-06-10 |
-| [twyne](./twyne/) | $985.7K | 3.8% | $985.7K | active | 6 | 59 | 2026-06-10 |
-| [txflow](./txflow/) | $3.8M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
-| [ultrayield](./ultrayield/) | $87.6M | 0.0% | ? | declining | 0 | 4520 | 2026-06-10 |
-| [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | active | 0 | 150 | 2026-06-10 |
+| [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | declining | 2 | 516 | 2026-06-11 |
+| [twyne](./twyne/) | $985.7K | 3.8% | $985.7K | active | 6 | 59 | 2026-06-11 |
+| [txflow](./txflow/) | $3.8M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
+| [ultrayield](./ultrayield/) | $87.6M | 0.0% | ? | declining | 0 | 4520 | 2026-06-11 |
+| [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | active | 0 | 150 | 2026-06-11 |
 | [umee](./umee/) | $2.5M | 0.0% | ? | declining | 7 | 1 | 2026-06-10 |
 | [unchain-x](./unchain-x/) | $35.1M | 100.0% | ? | active | 2 | 1 | 2026-06-10 |
 | [unichain-bridge](./unichain-bridge/) | $2.8M | 0.0% | ? | active | 0 | 15 | 2026-06-10 |

@@ -5,8 +5,8 @@
 - Project: Twyne (`twyne`)
 - Website: [https://twyne.xyz/](https://twyne.xyz/)
 - Lifecycle: active (Tier 0, 78% below peak)
-- Generated: 2026-06-10T20:59:18.180Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:46:51.406Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: ethereum
 - Contract surface: 59 unique implementations (102 raw deployments)
 - DeFi Llama TVL: $2,476,616.60

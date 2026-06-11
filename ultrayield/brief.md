@@ -7,8 +7,8 @@
 - Project: UltraYield (`ultrayield`)
 - Website: [https://ultrayield.app/](https://ultrayield.app/)
 - Lifecycle: declining (Tier 0, 79.4% below peak)
-- Generated: 2026-06-10T20:59:18.460Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:47:10.695Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: arbitrum, base, ethereum, linea, optimism, plasma
 - Contract surface: 4520 unique implementations (4520 raw deployments)
 - DeFi Llama TVL: $87,626,484.00

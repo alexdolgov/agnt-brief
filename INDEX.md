@@ -612,12 +612,12 @@
 | [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 0 | 1 | 2026-06-11 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-06-11 |
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-06-11 |
-| [tangible](./tangible/) | $42.2M | 0.0% | ? | active | 0 | 475 | 2026-06-10 |
+| [tangible](./tangible/) | $42.2M | 0.0% | ? | active | 0 | 475 | 2026-06-11 |
 | [tarot](./tarot/) | $154.4K | 0.0% | $154.4K | dead | 1 | 139 | 2026-05-31 |
-| [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | declining | 0 | 179 | 2026-06-10 |
-| [team-finance](./team-finance/) | $4.8K | 0.0% | $4.8K | active | 0 | 66 | 2026-06-10 |
-| [teller](./teller/) | $1.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 40 | 2026-06-10 |
+| [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | declining | 0 | 179 | 2026-06-11 |
+| [team-finance](./team-finance/) | $4.8K | 0.0% | $4.8K | active | 0 | 66 | 2026-06-11 |
+| [teller](./teller/) | $1.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 40 | 2026-06-11 |
 | [tender-finance](./tender-finance/) | $1.3M | 0.0% | ? | active | 1 | 1 | 2026-06-10 |
 | [tenderize](./tenderize/) | $332.5M | 2.6% | $332.5M | declining | 6 | 43 | 2026-06-10 |
 | [tensorplex](./tensorplex/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-05-31 |

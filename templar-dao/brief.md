@@ -7,8 +7,8 @@
 - Project: Templar DAO (`templar-dao`)
 - Website: [https://templar.finance/](https://templar.finance/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:17.338Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:28:33.707Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: bsc
 - Contract surface: 40 unique implementations (63 raw deployments)
 - DeFi Llama TVL: $2,228,699.74

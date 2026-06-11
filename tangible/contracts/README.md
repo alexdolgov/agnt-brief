@@ -1,6 +1,6 @@
 # tangible — Contract Index
 
-476 unique implementations across 6 chains · 2580 deployments · 0 audited · 265 unaudited · 211 unverified
+475 unique implementations across 6 chains · 2579 deployments · 0 audited · 264 unaudited · 211 unverified
 
 ## adapter (10)
 
@@ -188,11 +188,10 @@
 | [VaultFactory (5 deployments)](./polygon-137/0x7da32c32e1c05e6572321275925301fdf916fcf5/) | polygon | 5 deployments: polygon [`0x7da32c...16fcf5`](./polygon-137/0x7da32c32e1c05e6572321275925301fdf916fcf5/); polygon `0x80adb9...5767b4`; polygon `0x8a42c1...ce1267`; polygon `0xaacccf...1cd068`; polygon `0xaad7a2...ccc074` | ⚠️ Unaudited | Verified |
 | [VotingRewardsFactory](./base-8453/0x45ca74858c579e717ee29a86042e0d53b252b504/) | base | [`0x45ca74...52b504`](./base-8453/0x45ca74858c579e717ee29a86042e0d53b252b504/) | ⚠️ Unaudited | Verified |
 
-## token (19)
+## token (18)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Aero](./base-8453/0x940181a94a35a4569e4529a3cdfb74e38fd98631/) | base | [`0x940181...d98631`](./base-8453/0x940181a94a35a4569e4529a3cdfb74e38fd98631/) | ⚠️ Unaudited | Verified |
 | [AnyswapV6ERC20 (4 deployments)](./bsc-56/0x2952beb1326accbb5243725bd4da2fc937bca087/) | bsc | 4 deployments: ethereum `0xd5a140...8e80b5`; optimism `0x340fe1...7b717a`; bsc [`0x2952be...bca087`](./bsc-56/0x2952beb1326accbb5243725bd4da2fc937bca087/); arbitrum `0xddc038...dfeb52` | ⚠️ Unaudited | Verified |
 | [DebtToken (2 deployments)](./polygon-137/0x4f63b49aa81c4d0b3915d22d02f76d051514566b/) | polygon | 2 deployments: polygon [`0x4f63b4...14566b`](./polygon-137/0x4f63b49aa81c4d0b3915d22d02f76d051514566b/); polygon `0xc19669...be57f5` | ⚠️ Unaudited | Verified |
 | [LiquidityTokenMath (2 deployments)](./polygon-137/0x64148550320f5652326cd8a2b0deefecea0d69a5/) | polygon | 2 deployments: polygon [`0x641485...0d69a5`](./polygon-137/0x64148550320f5652326cd8a2b0deefecea0d69a5/); polygon `0x8a5556...5110c3` | ⚠️ Unaudited | Verified |

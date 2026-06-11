@@ -5,8 +5,8 @@
 - Project: Teller (`teller`)
 - Website: [https://teller.org](https://teller.org)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:17.326Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:28:34.950Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $1,870,840.19

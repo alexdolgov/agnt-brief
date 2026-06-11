@@ -5,8 +5,8 @@
 - Project: Tangible (`tangible`)
 - Website: [https://www.tangible.store](https://www.tangible.store)
 - Lifecycle: active (Tier 0, 46.9% below peak)
-- Generated: 2026-06-10T20:59:17.285Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:28:34.715Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: arbitrum, base, bsc, ethereum, optimism, polygon
 - Contract surface: 475 unique implementations (2579 raw deployments)
 - DeFi Llama TVL: $42,236,634.00

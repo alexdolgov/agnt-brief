@@ -5,8 +5,8 @@
 - Project: Team Finance (`team-finance`)
 - Website: [https://www.team.finance](https://www.team.finance)
 - Lifecycle: active (Tier 0, 77.4% below peak)
-- Generated: 2026-06-10T20:59:17.313Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:28:35.117Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
 - Chains: arbitrum, avalanche, base, blast, cronos, ethereum, fantom, kava, klaytn, mantle, polygon
 - Contract surface: 66 unique implementations (119 raw deployments)
 - DeFi Llama TVL: $53,004,117.17

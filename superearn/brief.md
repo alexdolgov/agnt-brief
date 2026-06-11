@@ -5,11 +5,11 @@
 - Project: SuperEarn (`superearn`)
 - Website: [https://superearn.io/](https://superearn.io/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T03:15:53.980Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
+- Generated: 2026-06-11T11:42:30.356Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: ethereum, klaytn
 - Contract surface: 94 unique implementations (190 raw deployments)
-- DeFi Llama TVL: $40,335,552.22
+- DeFi Llama TVL: $10,129,669.88
 - On-chain TVL (included contracts): $295.42
 - TVL by chain: Ethereum $295.42
 
@@ -29,11 +29,11 @@ Ethereum vaults rely on asset providers and swappers to execute strategies, whil
 - Unverified implementations: 68
 - Unique implementations: 94
 - Raw deployments: 190
-- Audits discovered: 1
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $295.42
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2026-05 (fresh)
+- Staleness: 4 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -170,6 +170,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [SuperEarn's smart contracts have been audited by [Spearbit](https://spearbit.com) and [CertiK](https://www.certik.com/en). The full audit reports are available in our [audit reports repository]().](https://github.com/superearn-io/superearn-audit-reports) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [2026.05.21-spearbit.pdf](https://github.com/superearn-io/superearn-audit-reports/blob/main/2026.05.21-spearbit.pdf) | Spearbit | Audit | 2026-05 | fresh | Direct | n/a | 0 | n/a |
+| [2026.04.28-certik.pdf](https://github.com/superearn-io/superearn-audit-reports/blob/main/2026.04.28-certik.pdf) | CertiK | Audit | 2026-04 | fresh | Direct | n/a | 0 | n/a |
+| [2026.04.07-certik.pdf](https://github.com/superearn-io/superearn-audit-reports/blob/main/2026.04.07-certik.pdf) | CertiK | Audit | 2026-04 | fresh | Direct | n/a | 0 | n/a |
+| [2026.02.19-certik.pdf](https://github.com/superearn-io/superearn-audit-reports/blob/main/2026.02.19-certik.pdf) | CertiK | Audit | 2026-02 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -199,7 +203,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -207,5 +211,9 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [3925] SuperEarn's smart contracts have been audited by [Spearbit](https://spearbit.com) and [CertiK](https://www.certik.com/en). The full audit reports are available in our [audit reports repository]().
+- [11865] 2026.05.21-spearbit.pdf
+- [11866] 2026.04.28-certik.pdf
+- [11867] 2026.04.07-certik.pdf
+- [11868] 2026.02.19-certik.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

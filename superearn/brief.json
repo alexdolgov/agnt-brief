@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "superearn",
-  "generated_at": "2026-06-11T03:15:53.980Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-11T11:42:30.356Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "superearn",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 68,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 5,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 40335552.22386,
+    "dl_tvl_usd": 10129669.88338,
     "tvl_usd": 295.4247887045162,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -49,10 +49,10 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2026-05",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
+      "fresh": 4,
       "aging": 0,
       "stale": 0,
       "unknown": 1
@@ -3873,6 +3873,90 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11865,
+      "audit_key": "audit-11865",
+      "report_name": "2026.05.21-spearbit.pdf",
+      "report_url": "https://github.com/superearn-io/superearn-audit-reports/blob/main/2026.05.21-spearbit.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11866,
+      "audit_key": "audit-11866",
+      "report_name": "2026.04.28-certik.pdf",
+      "report_url": "https://github.com/superearn-io/superearn-audit-reports/blob/main/2026.04.28-certik.pdf",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11867,
+      "audit_key": "audit-11867",
+      "report_name": "2026.04.07-certik.pdf",
+      "report_url": "https://github.com/superearn-io/superearn-audit-reports/blob/main/2026.04.07-certik.pdf",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11868,
+      "audit_key": "audit-11868",
+      "report_name": "2026.02.19-certik.pdf",
+      "report_url": "https://github.com/superearn-io/superearn-audit-reports/blob/main/2026.02.19-certik.pdf",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -3973,6 +4057,22 @@
       {
         "audit_id": 3925,
         "report_name": "SuperEarn's smart contracts have been audited by [Spearbit](https://spearbit.com) and [CertiK](https://www.certik.com/en). The full audit reports are available in our [audit reports repository]()."
+      },
+      {
+        "audit_id": 11865,
+        "report_name": "2026.05.21-spearbit.pdf"
+      },
+      {
+        "audit_id": 11866,
+        "report_name": "2026.04.28-certik.pdf"
+      },
+      {
+        "audit_id": 11867,
+        "report_name": "2026.04.07-certik.pdf"
+      },
+      {
+        "audit_id": 11868,
+        "report_name": "2026.02.19-certik.pdf"
       }
     ],
     "inherited_remapped_matches": []

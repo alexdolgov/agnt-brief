@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "shape-bridge",
-  "generated_at": "2026-06-11T02:39:00.675Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
+  "generated_at": "2026-06-11T11:40:29.948Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "shape-bridge",
@@ -33,10 +33,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 4,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1055412.84202,
-    "tvl_usd": 1055412.84202,
+    "dl_tvl_usd": 760428.26532,
+    "tvl_usd": 760428.26532,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -46,11 +46,11 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2025-09",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
-      "aging": 0,
+      "fresh": 1,
+      "aging": 1,
       "stale": 0,
       "unknown": 0
     }
@@ -886,7 +886,70 @@
       "contamination_flag": "review"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11660,
+      "audit_key": "audit-11660",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/trailofbits/publications/1c2295698d654066038156c206fb3dd5502fa1a5/reviews/2025-09-shapenetwork-buybackcontract-securityreview.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 11660,
+          "report_url": "https://raw.githubusercontent.com/trailofbits/publications/1c2295698d654066038156c206fb3dd5502fa1a5/reviews/2025-09-shapenetwork-buybackcontract-securityreview.pdf"
+        },
+        {
+          "audit_id": 11662,
+          "report_url": "https://github.com/trailofbits/publications/blob/master/reviews/2025-09-shapenetwork-buybackcontract-securityreview.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 11661,
+      "audit_key": "audit-11661",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/trailofbits/publications/1c2295698d654066038156c206fb3dd5502fa1a5/reviews/2025-05-shapenetwork-token-securityreview.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 11661,
+          "report_url": "https://raw.githubusercontent.com/trailofbits/publications/1c2295698d654066038156c206fb3dd5502fa1a5/reviews/2025-05-shapenetwork-token-securityreview.pdf"
+        },
+        {
+          "audit_id": 11663,
+          "report_url": "https://github.com/trailofbits/publications/blob/master/reviews/2025-05-shapenetwork-token-securityreview.pdf"
+        }
+      ]
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -1071,7 +1134,16 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11660,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 11661,
+        "report_name": "Rendered PDF capture"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

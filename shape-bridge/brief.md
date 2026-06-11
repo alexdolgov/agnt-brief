@@ -5,11 +5,11 @@
 - Project: Shape Bridge (`shape-bridge`)
 - Website: [https://shape.network/bridge](https://shape.network/bridge)
 - Lifecycle: active (Tier 0, 57.7% below peak)
-- Generated: 2026-06-11T02:39:00.675Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-11T11:40:29.948Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: ethereum
 - Contract surface: 26 unique implementations (27 raw deployments)
-- DeFi Llama TVL: $1,055,412.84
+- DeFi Llama TVL: $760,428.27
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ The L1 family provides the canonical bridge infrastructure that secures and rela
 - Unverified implementations: 4
 - Unique implementations: 26
 - Raw deployments: 27
-- Audits discovered: 0
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2025-09 (fresh)
+- Staleness: 1 fresh, 1 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -100,6 +100,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/trailofbits/publications/1c2295698d654066038156c206fb3dd5502fa1a5/reviews/2025-09-shapenetwork-buybackcontract-securityreview.pdf) | Trail of Bits | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/trailofbits/publications/1c2295698d654066038156c206fb3dd5502fa1a5/reviews/2025-05-shapenetwork-token-securityreview.pdf) | Trail of Bits | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -138,9 +140,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11660] Rendered PDF capture
+- [11661] Rendered PDF capture
 
 Fork inheritance lineage and inherited audits are included when available.

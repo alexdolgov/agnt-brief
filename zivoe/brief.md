@@ -7,11 +7,11 @@
 - Project: Zivoe (`zivoe`)
 - Website: [https://zivoe.com/](https://zivoe.com/)
 - Lifecycle: declining (Tier 0, 83.4% below peak)
-- Generated: 2026-06-11T04:26:12.877Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
+- Generated: 2026-06-11T11:40:31.675Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: ethereum
 - Contract surface: 31 unique implementations (46 raw deployments)
-- DeFi Llama TVL: $13,834,786.44
+- DeFi Llama TVL: $13,857,273.02
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -31,11 +31,11 @@ The Governance & Accounting family sets global parameters and distributes yield 
 - Unverified implementations: 1
 - Unique implementations: 31
 - Raw deployments: 46
-- Audits discovered: 2
+- Audits discovered: 6
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-03 (aging)
-- Staleness: 0 fresh, 1 aging, 1 stale, 0 unknown
+- Staleness: 0 fresh, 1 aging, 1 stale, 4 unknown
 - Tier 1 coverage: 33.3% (Sherlock)
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -114,6 +114,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [| Runtime Verification | Vault | <> |](https://amp.runtimeverification.com/public-report/zivoe-vault) | Runtime Verification | Audit | 2025-03 | aging | Direct | contract_name | 4 | high |
 | [`04-25-2024 Sherlock`](https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2024.04.25%20-%20Final%20-%20Zivoe%20Audit%20Report.pdf) | Sherlock | Contest | 2024-06 | stale | Direct | contract_name | 15 | high |
+| [Zivoe_Core_Contracts.pdf](https://github.com/runtimeverification/publications/blob/main/reports/smart-contracts/Zivoe_Core_Contracts.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Zivoe_Locker_Contracts.pdf](https://github.com/runtimeverification/publications/blob/main/reports/smart-contracts/Zivoe_Locker_Contracts.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [.gitkeep](https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/.gitkeep) | Sherlock | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Alchemix_v2.pdf](https://github.com/runtimeverification/publications/blob/main/reports/smart-contracts/Alchemix_v2.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -148,9 +152,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
 - Match method counts: extraction_exact=19
+
+Zero-match audit list:
+
+- [12017] Zivoe_Core_Contracts.pdf
+- [12018] Zivoe_Locker_Contracts.pdf
+- [12020] .gitkeep
+- [12021] Alchemix_v2.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

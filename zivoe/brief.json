@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zivoe",
-  "generated_at": "2026-06-11T04:26:12.877Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-026d",
+  "generated_at": "2026-06-11T11:40:31.675Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "zivoe",
@@ -33,10 +33,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 43.3,
-    "total_audits": 2,
+    "total_audits": 6,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 13834786.44158,
-    "tvl_usd": 13834786.44158,
+    "dl_tvl_usd": 13857273.02451,
+    "tvl_usd": 13857273.02451,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -54,7 +54,7 @@
       "fresh": 0,
       "aging": 1,
       "stale": 1,
-      "unknown": 0
+      "unknown": 4
     }
   },
   "topography": {
@@ -1253,6 +1253,90 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12017,
+      "audit_key": "audit-12017",
+      "report_name": "Zivoe_Core_Contracts.pdf",
+      "report_url": "https://github.com/runtimeverification/publications/blob/main/reports/smart-contracts/Zivoe_Core_Contracts.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12018,
+      "audit_key": "audit-12018",
+      "report_name": "Zivoe_Locker_Contracts.pdf",
+      "report_url": "https://github.com/runtimeverification/publications/blob/main/reports/smart-contracts/Zivoe_Locker_Contracts.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12020,
+      "audit_key": "audit-12020",
+      "report_name": ".gitkeep",
+      "report_url": "https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/.gitkeep",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12021,
+      "audit_key": "audit-12021",
+      "report_name": "Alchemix_v2.pdf",
+      "report_url": "https://github.com/runtimeverification/publications/blob/main/reports/smart-contracts/Alchemix_v2.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -1418,7 +1502,24 @@
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 12017,
+        "report_name": "Zivoe_Core_Contracts.pdf"
+      },
+      {
+        "audit_id": 12018,
+        "report_name": "Zivoe_Locker_Contracts.pdf"
+      },
+      {
+        "audit_id": 12020,
+        "report_name": ".gitkeep"
+      },
+      {
+        "audit_id": 12021,
+        "report_name": "Alchemix_v2.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

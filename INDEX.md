@@ -143,7 +143,7 @@
 | [cozy-finance](./cozy-finance/) | $2.3M | 0.0% | ? | active | 5 | 48 | 2026-06-10 |
 | [cream-finance](./cream-finance/) | $2.3B | 0.0% | $2.3B | declining | 2 | 94 | 2026-06-10 |
 | [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-06-10 |
-| [credit-coop](./credit-coop/) | $2.1M | 0.0% | $2.1M | active | 0 | 2 | 2026-06-10 |
+| [credit-coop](./credit-coop/) | $2.1M | 0.0% | $2.1M | active | 3 | 2 | 2026-06-11 |
 | [crypto.com-liquid-staking](./crypto.com-liquid-staking/) | $25.4M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
 | [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-06-10 |
 | [cyclone](./cyclone/) | $165.5M | 0.0% | $165.5M | active | 0 | 63 | 2026-06-10 |
@@ -166,7 +166,7 @@
 | [desyn-protocol](./desyn-protocol/) | $10.7M | 0.0% | ? | declining | 0 | 11 | 2026-06-10 |
 | [dexalot](./dexalot/) | $4.2M | 100.0% | ? | active | 5 | 1 | 2026-06-10 |
 | [dflow](./dflow/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [dforce](./dforce/) | $3.6M | 0.0% | $3.6M | declining | 0 | 449 | 2026-06-10 |
+| [dforce](./dforce/) | $3.6M | 0.0% | $3.6M | declining | 4 | 449 | 2026-06-11 |
 | [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | declining | 4 | 71 | 2026-06-10 |
 | [dnax](./dnax/) | $3.5M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
 | [dodo](./dodo/) | $19.1M | 0.0% | $19.1M | declining | 1 | 552 | 2026-06-10 |
@@ -530,7 +530,7 @@
 | [serum](./serum/) | $15.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [set-protocol](./set-protocol/) | $1.4M | 0.0% | $1.4M | declining | 0 | 109 | 2026-06-11 |
 | [shadow-exchange](./shadow-exchange/) | $999.8 | 21.6% | $999.8 | declining | 3 | 84 | 2026-05-23 |
-| [shape-bridge](./shape-bridge/) | $1.1M | 0.0% | ? | active | 0 | 26 | 2026-06-11 |
+| [shape-bridge](./shape-bridge/) | $760.4K | 0.0% | ? | active | 2 | 26 | 2026-06-11 |
 | [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | active | 3 | 40 | 2026-06-11 |
 | [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-06-11 |
 | [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
@@ -589,7 +589,7 @@
 | [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
 | [summer.fi](./summer.fi/) | $140.9M | 0.0% | $140.9M | declining | 6 | 482 | 2026-06-11 |
 | [sunny](./sunny/) | $2.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [superearn](./superearn/) | $295.4 | 0.0% | $295.4 | active | 1 | 94 | 2026-06-11 |
+| [superearn](./superearn/) | $295.4 | 0.0% | $295.4 | active | 5 | 94 | 2026-06-11 |
 | [superfarm](./superfarm/) | $211.1M | 0.0% | $211.1M | declining | 0 | 49 | 2026-06-11 |
 | [superfluid](./superfluid/) | $12.7M | 20.8% | ? | active | 8 | 397 | 2026-05-31 |
 | [superform](./superform/) | $2.0M | 19.7% | $1.9K | active | 3 | 158 | 2026-06-11 |
@@ -708,7 +708,7 @@
 | [zircuit-finance](./zircuit-finance/) | $1.5M | 0.0% | $1.5M | active | 0 | 2 | 2026-06-11 |
 | [zircuit-staking](./zircuit-staking/) | $178.4M | 21.1% | $140.4M | declining | 8 | 20 | 2026-06-11 |
 | [zircuit](./zircuit/) | $144.2M | 25.0% | $144.2M | declining | 10 | 17 | 2026-06-11 |
-| [zivoe](./zivoe/) | $13.8M | 43.3% | ? | declining | 2 | 31 | 2026-06-11 |
+| [zivoe](./zivoe/) | $13.9M | 43.3% | ? | declining | 6 | 31 | 2026-06-11 |
 | [zklink-nova](./zklink-nova/) | $33.9M | 14.5% | $33.9M | declining | 7 | 380 | 2026-06-11 |
 | [zkswap-finance](./zkswap-finance/) | $1.2M | 11.1% | ? | active | 8 | 98 | 2026-06-11 |
 | [zoo-finance](./zoo-finance/) | $83.0M | 0.0% | $83.0M | active | 1 | 58 | 2026-06-11 |

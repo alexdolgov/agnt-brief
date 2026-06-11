@@ -7,11 +7,11 @@
 - Project: dForce (`dforce`)
 - Website: [https://dforce.network/](https://dforce.network/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T22:51:49.565Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-11T11:41:30.034Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, avalanche, bsc, ethereum, kava, optimism, polygon
 - Contract surface: 449 unique implementations (1004 raw deployments)
-- DeFi Llama TVL: $12,480,361.00
+- DeFi Llama TVL: $12,550,019.00
 - On-chain TVL (included contracts): $3,605,459.70
 - TVL by chain: Ethereum $2,823,167.08 | Bsc $572,234.41 | Arbitrum $156,970.71 | Polygon $31,932.33 | Optimism $21,155.16
 
@@ -31,11 +31,11 @@ The dForce and dForce Lending families share similar lending logic and token sta
 - Unverified implementations: 340
 - Unique implementations: 449
 - Raw deployments: 1004
-- Audits discovered: 0
+- Audits discovered: 4
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $3,605,459.70
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2021-03 (stale)
+- Staleness: 0 fresh, 0 aging, 4 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $3,605,459.70 represents exposure in a protocol with declining activity.
 
@@ -527,6 +527,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [dForceLending-Audit-Report-Certik-Feb-2021.pdf](https://github.com/dforce-network/documents/blob/master/audit_report/Lending/dForceLending-Audit-Report-Certik-Feb-2021.pdf) | CertiK | Audit | 2021-02 | stale | Direct | n/a | 0 | n/a |
+| [dForceLending-Audit-Report-Certora-Feb-2021.pdf](https://github.com/dforce-network/documents/blob/master/audit_report/Lending/dForceLending-Audit-Report-Certora-Feb-2021.pdf) | Certora | Audit | 2021-02 | stale | Direct | n/a | 0 | n/a |
+| [dForceLending-Audit-Report-Consensys-Mar-2021.pdf](https://github.com/dforce-network/documents/blob/master/audit_report/Lending/dForceLending-Audit-Report-Consensys-Mar-2021.pdf) | Consensys | Audit | 2021-03 | stale | Direct | n/a | 0 | n/a |
+| [dForceLending-Audit-Report-TrailofBits-Mar-2021.pdf](https://github.com/dforce-network/documents/blob/master/audit_report/Lending/dForceLending-Audit-Report-TrailofBits-Mar-2021.pdf) | Trail of Bits | Audit | 2021-03 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -629,9 +633,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11569] dForceLending-Audit-Report-Certik-Feb-2021.pdf
+- [11570] dForceLending-Audit-Report-Certora-Feb-2021.pdf
+- [11571] dForceLending-Audit-Report-Consensys-Mar-2021.pdf
+- [11572] dForceLending-Audit-Report-TrailofBits-Mar-2021.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

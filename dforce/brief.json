@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "dforce",
-  "generated_at": "2026-06-10T22:51:49.565Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
+  "generated_at": "2026-06-11T11:41:30.034Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "dforce",
@@ -43,9 +43,9 @@
     "contracts_verified_by_bytecode": 11,
     "contracts_unverified": 340,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 4,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 12480361,
+    "dl_tvl_usd": 12550019,
     "tvl_usd": 3605459.701459337,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -68,12 +68,12 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2021-03",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
+      "stale": 4,
       "unknown": 0
     }
   },
@@ -19007,7 +19007,92 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11569,
+      "audit_key": "audit-11569",
+      "report_name": "dForceLending-Audit-Report-Certik-Feb-2021.pdf",
+      "report_url": "https://github.com/dforce-network/documents/blob/master/audit_report/Lending/dForceLending-Audit-Report-Certik-Feb-2021.pdf",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11570,
+      "audit_key": "audit-11570",
+      "report_name": "dForceLending-Audit-Report-Certora-Feb-2021.pdf",
+      "report_url": "https://github.com/dforce-network/documents/blob/master/audit_report/Lending/dForceLending-Audit-Report-Certora-Feb-2021.pdf",
+      "auditor": "Certora",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11571,
+      "audit_key": "audit-11571",
+      "report_name": "dForceLending-Audit-Report-Consensys-Mar-2021.pdf",
+      "report_url": "https://github.com/dforce-network/documents/blob/master/audit_report/Lending/dForceLending-Audit-Report-Consensys-Mar-2021.pdf",
+      "auditor": "Consensys",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11572,
+      "audit_key": "audit-11572",
+      "report_name": "dForceLending-Audit-Report-TrailofBits-Mar-2021.pdf",
+      "report_url": "https://github.com/dforce-network/documents/blob/master/audit_report/Lending/dForceLending-Audit-Report-TrailofBits-Mar-2021.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -19832,7 +19917,24 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11569,
+        "report_name": "dForceLending-Audit-Report-Certik-Feb-2021.pdf"
+      },
+      {
+        "audit_id": 11570,
+        "report_name": "dForceLending-Audit-Report-Certora-Feb-2021.pdf"
+      },
+      {
+        "audit_id": 11571,
+        "report_name": "dForceLending-Audit-Report-Consensys-Mar-2021.pdf"
+      },
+      {
+        "audit_id": 11572,
+        "report_name": "dForceLending-Audit-Report-TrailofBits-Mar-2021.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

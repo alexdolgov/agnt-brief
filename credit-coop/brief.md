@@ -5,11 +5,11 @@
 - Project: Credit Coop (`credit-coop`)
 - Website: [https://www.creditcoop.xyz/](https://www.creditcoop.xyz/)
 - Lifecycle: active (Tier 0, 48.8% below peak)
-- Generated: 2026-06-10T22:34:38.787Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-11T11:40:29.952Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: base, ethereum
 - Contract surface: 2 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $4,559,555.58
+- DeFi Llama TVL: $4,587,572.59
 - On-chain TVL (included contracts): $2,075,800.61
 - TVL by chain: Base $2,075,798.49 | Ethereum $2.11
 
@@ -29,11 +29,11 @@ The Credit Coop lending vaults rely on the PayFi Vault's USDC tokens as the depo
 - Unverified implementations: 0
 - Unique implementations: 2
 - Raw deployments: 5
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $2,075,800.61
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -75,6 +75,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [IndexDIMv3AuditReport.md](https://github.com/IndexCoop/audits/blob/main/audits/IndexDIMv3AuditReport.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [IndexIcUSDAuditReport.md](https://github.com/IndexCoop/audits/blob/main/audits/IndexIcUSDAuditReport.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [IndexPRTAuditReport.md](https://github.com/IndexCoop/audits/blob/main/audits/IndexPRTAuditReport.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -97,9 +100,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11579] IndexDIMv3AuditReport.md
+- [11580] IndexIcUSDAuditReport.md
+- [11581] IndexPRTAuditReport.md
 
 Fork inheritance lineage and inherited audits are included when available.

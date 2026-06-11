@@ -1,0 +1,18 @@
+{
+  "address": "0xdf49ff386344d3b687f56c02d0b1784b19013e25",
+  "chain_id": 10,
+  "contract_name": "VelodromeV2Oracle",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-11T03:57:07.869Z"
+}

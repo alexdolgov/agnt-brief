@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "velodrome",
-  "generated_at": "2026-06-10T20:59:18.531Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T03:57:00.373Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "velodrome",
@@ -34,7 +34,7 @@
     "contracts_unverified": 5,
     "coverage_pct": 40.4,
     "total_audits": 6,
-    "scoreable_audits": 2,
+    "scoreable_audits": 3,
     "dl_tvl_usd": 40174427,
     "tvl_usd": 40174427,
     "tvl_source": "defillama",
@@ -47,6 +47,7 @@
     ],
     "tier1_coverage_pct": 40.4,
     "tier1_auditors": [
+      "Sherlock",
       "Spearbit"
     ],
     "latest_audit_date": "2024-10",
@@ -2266,7 +2267,8 @@
         }
       ],
       "audits_covering": [
-        "audit-3919"
+        "audit-3919",
+        "audit-3924"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2515,12 +2517,36 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CrossChainRegistry",
+        "FeesVotingReward",
+        "ICrosschainERC20",
+        "IHLHandler",
+        "IMailbox",
+        "IVotingEscrow",
+        "IXERC20",
+        "IncentiveVotingReward",
+        "InterchainGasPaymaster",
+        "LeafGauge",
+        "LeafMessageBridge",
+        "RootFeesVotingReward",
+        "RootHLMessageModule",
+        "RootIncentiveVotingReward",
+        "RootMessageBridge",
+        "RootVotingRewardsFactory",
+        "StandardHookMetadata",
+        "TokenBridge",
+        "TypeCasts",
+        "Voter",
+        "XERC20",
+        "XERC20Factory",
+        "XERC20Lockbox"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
@@ -2531,6 +2557,13 @@
       "contracts_covered": 19,
       "coverage_pct": 40.4,
       "latest_audit": "2024-01"
+    },
+    {
+      "auditor": "Sherlock",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 2.1,
+      "latest_audit": "2024-10"
     }
   ],
   "coverage_gaps": [
@@ -2773,10 +2806,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 54
+      "extraction_exact": 55
     },
     "extraction_confidence_counts": {
-      "high": 1,
+      "high": 2,
       "medium": 1
     },
     "audits_with_repo_references": [],
@@ -2793,10 +2826,6 @@
       {
         "audit_id": 3923,
         "report_name": "ChainSecurity Slipstream Audit"
-      },
-      {
-        "audit_id": 3924,
-        "report_name": "Sherlock Audit"
       }
     ],
     "inherited_remapped_matches": []

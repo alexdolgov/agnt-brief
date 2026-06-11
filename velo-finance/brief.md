@@ -7,8 +7,8 @@
 - Project: Velo Finance (`velo-finance`)
 - Website: [https://velofinance.io](https://velofinance.io)
 - Lifecycle: declining (Tier 0, 66.3% below peak)
-- Generated: 2026-06-10T20:59:18.525Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:54:51.894Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: bsc
 - Contract surface: 28 unique implementations (30 raw deployments)
 - DeFi Llama TVL: $1,773,497.17

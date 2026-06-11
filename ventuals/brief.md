@@ -5,8 +5,8 @@
 - Project: Ventuals (`ventuals`)
 - Website: [https://ventuals.com/trade](https://ventuals.com/trade)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:18.563Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:54:51.641Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: hyperliquid
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $29,701,346.64

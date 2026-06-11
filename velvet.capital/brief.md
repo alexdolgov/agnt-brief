@@ -7,8 +7,8 @@
 - Project: Velvet.Capital (`velvet.capital`)
 - Website: [https://dapp.velvet.capital/Referred/6956901b440d4fc522b2eb7b](https://dapp.velvet.capital/Referred/6956901b440d4fc522b2eb7b)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:18.555Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:56:04.131Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: arbitrum, base, bsc, ethereum
 - Contract surface: 420 unique implementations (624 raw deployments)
 - DeFi Llama TVL: $1,426,218.00

@@ -1,0 +1,18 @@
+{
+  "address": "0x6315dc8ffeaf4278f062a3a9137eeee54f3056a3",
+  "chain_id": 10,
+  "contract_name": "MixedRouteQuoterV1",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-11T03:57:06.481Z"
+}

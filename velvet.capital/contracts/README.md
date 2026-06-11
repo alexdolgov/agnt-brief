@@ -2,12 +2,11 @@
 
 420 unique implementations across 4 chains · 624 deployments · 35 audited · 10 unaudited · 375 unverified
 
-## core_logic (2)
+## core_logic (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [DepositManager (14 deployments)](./ethereum-1/0x1a79346c914b3164733599cbcfa0fadd5256a584/) | ethereum | 14 deployments: ethereum [`0x1a7934...56a584`](./ethereum-1/0x1a79346c914b3164733599cbcfa0fadd5256a584/); ethereum `0x271caa...fe6f06`; ethereum `0x77814d...687653`; ethereum `0xbc1b87...865706`; ethereum `0xcdb6e3...6e6c7f`; ethereum `0xcffd5f...5dfc41`; ethereum `0xe12c59...7f71af`; ethereum `0xf908e0...c30094`; ethereum `0xff6221...e6ee7c`; base `0x61f18d...598448`; base `0x85d68c...d01ff1`; base `0xb2448b...6f0c4e`; base `0xe3f8d5...965739`; base `0xe4e231...f6e2ed` | ✅ Audited | Verified |
-| [VaultProxy](./base-8453/0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92/) | base | [`0x4da07a...df2e92`](./base-8453/0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92/) | ⚠️ Unaudited | Verified |
 
 ## governance (6)
 
@@ -36,11 +35,12 @@
 |---|---|---|---|---|
 | [DepositBatch (9 deployments)](./ethereum-1/0x0be44bcb5f0001e3cb247c30a575e18509bb1c4c/) | ethereum | 9 deployments: ethereum [`0x0be44b...bb1c4c`](./ethereum-1/0x0be44bcb5f0001e3cb247c30a575e18509bb1c4c/); ethereum `0x32c249...78e3b6`; ethereum `0xe6afac...4b9694`; ethereum `0xea9fd1...3c6bf1`; ethereum `0xf674e7...c08f59`; base `0x6e3e0f...e63e05`; base `0xa166de...1aeeb1`; base `0xef521a...2b6e16`; base `0xfe0861...031fe6` | ✅ Audited | Verified |
 
-## proxy (1)
+## proxy (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [ERC1967Proxy (60 deployments)](./base-8453/0x085606d8ae07f1b457dc814bdda315078c8711b8/) | base | 60 deployments: ethereum `0xd5c3b4...5379b2`; base [`0x085606...8711b8`](./base-8453/0x085606d8ae07f1b457dc814bdda315078c8711b8/); base `0x09ce0a...9e5ae7`; base `0x0a6c29...d321e3`; base `0x0fe7c8...d13529`; base `0x19c6d3...80532c`; base `0x1b902c...44346a`; base `0x1d0f17...8cf0a1`; base `0x1fecf4...f7f142`; base `0x2f692e...9eb079`; base `0x303e89...bb9144`; base `0x321c15...c3ac14`; base `0x364a15...b8516d`; base `0x3dfb1d...aeff13`; base `0x440908...4b75fe`; base `0x4c5727...00ef82`; base `0x56b697...2f3ca8`; base `0x57de05...668c7b`; base `0x60939a...1b2389`; base `0x638463...746a51`; base `0x682200...cc5dab`; base `0x6952ad...762ae6`; base `0x6bec6a...07d131`; base `0x6decb1...5f7c8e`; base `0x6e9036...e1dae5`; base `0x6f7cdd...ca224d`; base `0x81d083...927d9d`; base `0x88b2bb...c98d86`; base `0x89c087...c6ce2e`; base `0x8b71ee...3a6c2b`; base `0x8d3f1b...c03463`; base `0x90dcd1...866f95`; base `0xa019e0...523b62`; base `0xa2cb7e...8ef5f4`; base `0xa68901...270207`; base `0xab1a20...bdbfc9`; base `0xadaf29...db7c6c`; base `0xb0c31b...e25854`; base `0xb9c922...da8999`; base `0xbd3e97...4c15c4`; base `0xc0a0f2...3854db`; base `0xc13246...5d95ed`; base `0xcf3be6...d7862d`; base `0xcfc13b...e42c0c`; base `0xd2a158...cfd8a3`; base `0xd48c15...2c4542`; base `0xd6ef57...333acd`; base `0xd7b766...6ed91d`; base `0xe3df7e...bd8d3c`; base `0xe45a01...af05d5`; base `0xe58545...4ca67d`; base `0xe6b12d...1a22db`; base `0xeecd5a...16c435`; base `0xf171ca...ac5962`; base `0xf1acb5...2bfadf`; base `0xf31b95...9faca3`; arbitrum `0x240222...458bc9`; arbitrum `0x2bc9b4...3877c1`; arbitrum `0x3a15a0...4f85e4`; arbitrum `0x6293a8...ffe402` | ⚠️ Unaudited | Verified |
+| [VaultProxy](./base-8453/0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92/) | base | [`0x4da07a...df2e92`](./base-8453/0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92/) | ⚠️ Unaudited | Verified |
 
 ## registry (3)
 

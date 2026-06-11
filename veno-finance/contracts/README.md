@@ -2,6 +2,12 @@
 
 49 unique implementations across 3 chains · 56 deployments · 0 audited · 9 unaudited · 40 unverified
 
+## bridge_template (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [YBUSD (2 deployments)](./ethereum-1/0xd501a4d2141799f3228c40af972df622c632b7ce/) | ethereum | 2 deployments: ethereum [`0xd501a4...32b7ce`](./ethereum-1/0xd501a4d2141799f3228c40af972df622c632b7ce/); ethereum `0xfa5907...0f594a` | ⚠️ Unaudited | Verified |
+
 ## operational_periphery (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
@@ -17,7 +23,7 @@
 |---|---|---|---|---|
 | [YbEthNft (2 deployments)](./ethereum-1/0x43df9d854d3fcb882847b9a638cabd06fe86d2c5/) | ethereum | 2 deployments: ethereum [`0x43df9d...86d2c5`](./ethereum-1/0x43df9d854d3fcb882847b9a638cabd06fe86d2c5/); ethereum `0x8f6b05...90762d` | ⚠️ Unaudited | Verified |
 
-## unknown (44)
+## unknown (43)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -63,5 +69,4 @@
 | UnnamedContract | zksync-era | `0xf8b19e...e903ab` | ❓ Unverified | Unverified |
 | UnnamedContract | zksync-era | `0xfea419...404936` | ❓ Unverified | Unverified |
 | [YbEth (2 deployments)](./ethereum-1/0x76bf2d1e6dfda645c0c17440b17eccc181dfc351/) | ethereum | 2 deployments: ethereum [`0x76bf2d...dfc351`](./ethereum-1/0x76bf2d1e6dfda645c0c17440b17eccc181dfc351/); ethereum `0xc0c23f...52d6a2` | ⚠️ Unaudited | Verified |
-| [YBUSD (2 deployments)](./ethereum-1/0xd501a4d2141799f3228c40af972df622c632b7ce/) | ethereum | 2 deployments: ethereum [`0xd501a4...32b7ce`](./ethereum-1/0xd501a4d2141799f3228c40af972df622c632b7ce/); ethereum `0xfa5907...0f594a` | ⚠️ Unaudited | Verified |
 | [ZkCro (2 deployments)](./ethereum-1/0x28ff2e4dd1b58efeb0fc138602a28d5ae81e44e2/) | ethereum | 2 deployments: ethereum [`0x28ff2e...1e44e2`](./ethereum-1/0x28ff2e4dd1b58efeb0fc138602a28d5ae81e44e2/); ethereum `0x34b35b...4616a5` | ⚠️ Unaudited | Verified |

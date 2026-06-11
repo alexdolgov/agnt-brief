@@ -4,7 +4,7 @@
 |---|---|
 | Chain | base (8453) |
 | Address | `0x4da07a07f40f877a587acfcdbb0c84c73fdf2e92` |
-| Role | core_logic |
+| Role | proxy |
 | Origin | native |
 | Audited | No |
 | Audits | n/a |

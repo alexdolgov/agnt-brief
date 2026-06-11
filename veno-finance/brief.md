@@ -5,8 +5,8 @@
 - Project: Veno Finance (`veno-finance`)
 - Website: [https://veno.finance/](https://veno.finance/)
 - Lifecycle: active (Tier 0, 72.5% below peak)
-- Generated: 2026-06-10T20:59:18.561Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:54:51.540Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: cronos, ethereum, zksync-era
 - Contract surface: 49 unique implementations (56 raw deployments)
 - DeFi Llama TVL: $42,842,322.56

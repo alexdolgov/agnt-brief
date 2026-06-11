@@ -5,8 +5,8 @@
 - Project: Velodrome (`velodrome`)
 - Website: [https://velodrome.finance](https://velodrome.finance)
 - Lifecycle: active (Tier 0, 88.5% below peak)
-- Generated: 2026-06-10T20:59:18.531Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T03:57:00.373Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
 - Chains: celo, optimism
 - Contract surface: 52 unique implementations (120 raw deployments)
 - DeFi Llama TVL: $40,174,427.00
@@ -30,17 +30,18 @@ Velodrome V2 and V3 share the VELO token for governance and emissions, with both
 - Unique implementations: 52
 - Raw deployments: 120
 - Audits discovered: 6
-- Scoreable audits (matched contracts): 2
+- Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-10 (aging)
 - Staleness: 0 fresh, 1 aging, 3 stale, 2 unknown
-- Tier 1 coverage: 40.4% (Spearbit)
+- Tier 1 coverage: 40.4% (Sherlock, Spearbit)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
 | Spearbit | Tier 1 | 19 | 40.4% | 2024-01 |
+| Sherlock | Tier 1 | 1 | 2.1% | 2024-10 |
 
 ## Contract Surface
 
@@ -134,7 +135,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Audit](https://raw.githubusercontent.com/spearbit/portfolio/master/pdfs/Velodrome-Spearbit-Security-Review-Nov23.pdf) | Spearbit | Audit | 2024-01 | stale | Direct | contract_name | 44 | high |
 | [ChainSecurity Audit](https://www.chainsecurity.com/security-audit/velodrome-superchain-interoperability) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [ChainSecurity Slipstream Audit](https://www.chainsecurity.com/security-audit/velodrome-superchain-slipstream) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Sherlock Audit](https://raw.githubusercontent.com/sherlock-protocol/sherlock-reports/main/audits/2024.11.13%20-%20Final%20-%20Velodrome.pdf) | Sherlock | Contest | 2024-10 | aging | Direct | n/a | 0 | n/a |
+| [Sherlock Audit](https://raw.githubusercontent.com/sherlock-protocol/sherlock-reports/main/audits/2024.11.13%20-%20Final%20-%20Velodrome.pdf) | Sherlock | Contest | 2024-10 | aging | Direct | contract_name | 1 | high |
 
 ## Coverage Gaps
 
@@ -179,16 +180,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1, medium=1
-- Match method counts: extraction_exact=54
+- Extraction confidence breakdown: high=2, medium=1
+- Match method counts: extraction_exact=55
 
 Zero-match audit list:
 
 - [3918] Audit
 - [3921] ChainSecurity Audit
 - [3923] ChainSecurity Slipstream Audit
-- [3924] Sherlock Audit
 
 Fork inheritance lineage and inherited audits are included when available.

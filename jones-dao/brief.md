@@ -5,11 +5,11 @@
 - Project: Jones DAO (`jones-dao`)
 - Website: [https://jonesdao.io](https://jonesdao.io)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-11T00:13:21.834Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-11T11:38:42.542Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, base, berachain, blast, ethereum
 - Contract surface: 502 unique implementations (1339 raw deployments)
-- DeFi Llama TVL: $1,456,726.90
+- DeFi Llama TVL: $1,318,309.60
 - On-chain TVL (included contracts): $519,746,713.51
 - TVL by chain: Ethereum $452,536,081.49 | Arbitrum $67,210,632.02
 
@@ -29,11 +29,11 @@ The families share governance via Gnosis Safe and ProxyAdmin, and use common inf
 - Unverified implementations: 148
 - Unique implementations: 502
 - Raw deployments: 1339
-- Audits discovered: 0
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $519,746,713.51
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 5 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -577,6 +577,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [audit report](https://sourcehat.com/audits/JonesDAO) | SourceHat | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [third audit report (latest)](https://sourcehat.com/audits/JonesDAOGLPVaults) | SourceHat | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [**Advanced Strategy Vaults:** [third audit report (latest)](https://solidity.finance/audits/JonesDAOGLPVaults/), [second audit report](< >), [first audit report](<https://solidity.finance/audits/JonesDAOVaults/ >)](https://sourcehat.com/audits/JonesDAOVaultsV2) | SourceHat | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [**Advanced Strategy Vaults:** [third audit report (latest)](https://solidity.finance/audits/JonesDAOGLPVaults/), [second audit report](<https://solidity.finance/audits/JonesDAOVaultsV2/ >), [first audit report](< >)](https://sourcehat.com/audits/JonesDAOVaults) | SourceHat | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [audit report](https://sourcehat.com/audits/JonesAURA) | SourceHat | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -807,9 +812,17 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11588] audit report
+- [11589] third audit report (latest)
+- [11590] **Advanced Strategy Vaults:** [third audit report (latest)](https://solidity.finance/audits/JonesDAOGLPVaults/), [second audit report](< >), [first audit report](<https://solidity.finance/audits/JonesDAOVaults/ >)
+- [11591] **Advanced Strategy Vaults:** [third audit report (latest)](https://solidity.finance/audits/JonesDAOGLPVaults/), [second audit report](<https://solidity.finance/audits/JonesDAOVaultsV2/ >), [first audit report](< >)
+- [11592] audit report
 
 Fork inheritance lineage and inherited audits are included when available.

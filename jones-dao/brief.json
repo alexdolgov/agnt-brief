@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "jones-dao",
-  "generated_at": "2026-06-11T00:13:21.834Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
+  "generated_at": "2026-06-11T11:38:42.542Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "jones-dao",
@@ -43,9 +43,9 @@
     "contracts_verified_by_bytecode": 14,
     "contracts_unverified": 148,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 5,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1456726.8957699998,
+    "dl_tvl_usd": 1318309.60009,
     "tvl_usd": 519746713.5148632,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -69,7 +69,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 5
     }
   },
   "topography": {
@@ -23183,7 +23183,113 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11588,
+      "audit_key": "audit-11588",
+      "report_name": "audit report",
+      "report_url": "https://sourcehat.com/audits/JonesDAO",
+      "auditor": "SourceHat",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11589,
+      "audit_key": "audit-11589",
+      "report_name": "third audit report (latest)",
+      "report_url": "https://sourcehat.com/audits/JonesDAOGLPVaults",
+      "auditor": "SourceHat",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11590,
+      "audit_key": "audit-11590",
+      "report_name": "**Advanced Strategy Vaults:** [third audit report (latest)](https://solidity.finance/audits/JonesDAOGLPVaults/), [second audit report](< >), [first audit report](<https://solidity.finance/audits/JonesDAOVaults/ >)",
+      "report_url": "https://sourcehat.com/audits/JonesDAOVaultsV2",
+      "auditor": "SourceHat",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11591,
+      "audit_key": "audit-11591",
+      "report_name": "**Advanced Strategy Vaults:** [third audit report (latest)](https://solidity.finance/audits/JonesDAOGLPVaults/), [second audit report](<https://solidity.finance/audits/JonesDAOVaultsV2/ >), [first audit report](< >)",
+      "report_url": "https://sourcehat.com/audits/JonesDAOVaults",
+      "auditor": "SourceHat",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11592,
+      "audit_key": "audit-11592",
+      "report_name": "audit report",
+      "report_url": "https://sourcehat.com/audits/JonesAURA",
+      "auditor": "SourceHat",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -25288,7 +25394,28 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11588,
+        "report_name": "audit report"
+      },
+      {
+        "audit_id": 11589,
+        "report_name": "third audit report (latest)"
+      },
+      {
+        "audit_id": 11590,
+        "report_name": "**Advanced Strategy Vaults:** [third audit report (latest)](https://solidity.finance/audits/JonesDAOGLPVaults/), [second audit report](< >), [first audit report](<https://solidity.finance/audits/JonesDAOVaults/ >)"
+      },
+      {
+        "audit_id": 11591,
+        "report_name": "**Advanced Strategy Vaults:** [third audit report (latest)](https://solidity.finance/audits/JonesDAOGLPVaults/), [second audit report](<https://solidity.finance/audits/JonesDAOVaultsV2/ >), [first audit report](< >)"
+      },
+      {
+        "audit_id": 11592,
+        "report_name": "audit report"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

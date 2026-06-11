@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "summer.fi",
-  "generated_at": "2026-06-11T03:15:11.787Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-11T11:38:43.592Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "summer.fi",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 5,
     "contracts_unverified": 201,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 6,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 47583731,
+    "dl_tvl_usd": 32919445,
     "tvl_usd": 140925721.03365448,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -61,7 +61,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 6
     }
   },
   "topography": {
@@ -28135,7 +28135,134 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11695,
+      "audit_key": "audit-11695",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://github.com/phoenixlabsresearch/spark-docs/blob/main/deployed-contracts/ChainSecurity_Oazo_Apps_Limited_Savings_Dai_audit.pdf",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11696,
+      "audit_key": "audit-11696",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://www.chainsecurity.com/security-audit/oasis-automation-consultancy-smart-contracts",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11697,
+      "audit_key": "audit-11697",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://www.chainsecurity.com/security-audit/oasis-multiply-fmm-extension",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11698,
+      "audit_key": "audit-11698",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://www.chainsecurity.com/security-audit/oasis-app-modular-proxy-actions",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11699,
+      "audit_key": "audit-11699",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://www.chainsecurity.com/security-audit/summer-fi-defi-modular-actions-v2",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11700,
+      "audit_key": "audit-11700",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://www.chainsecurity.com/security-audit/summer-fi-automation-v2-smart-contracts",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -29210,7 +29337,32 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11695,
+        "report_name": "{% embed url=\"<>\" %}"
+      },
+      {
+        "audit_id": 11696,
+        "report_name": "{% embed url=\"<>\" %}"
+      },
+      {
+        "audit_id": 11697,
+        "report_name": "{% embed url=\"<>\" %}"
+      },
+      {
+        "audit_id": 11698,
+        "report_name": "{% embed url=\"<>\" %}"
+      },
+      {
+        "audit_id": 11699,
+        "report_name": "{% embed url=\"<>\" %}"
+      },
+      {
+        "audit_id": 11700,
+        "report_name": "{% embed url=\"<>\" %}"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

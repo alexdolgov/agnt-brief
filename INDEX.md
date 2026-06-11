@@ -173,7 +173,7 @@
 | [domination-finance](./domination-finance/) | $1.2M | 75.0% | ? | active | 1 | 30 | 2026-05-25 |
 | [dooar](./dooar/) | $5.1M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
 | [drops](./drops/) | $16.5M | 0.0% | $16.5M | declining | 0 | 77 | 2026-06-10 |
-| [dtrinity](./dtrinity/) | $1.8M | 0.0% | $1.8M | active | 0 | 209 | 2026-06-10 |
+| [dtrinity](./dtrinity/) | $1.8M | 0.0% | $1.8M | active | 5 | 209 | 2026-06-11 |
 | [dxsale](./dxsale/) | $26.0M | 0.0% | ? | active | 0 | 352 | 2026-06-10 |
 | [dyorswap](./dyorswap/) | $2.2M | 0.0% | ? | active | 0 | 93 | 2026-06-10 |
 | [easedefi.org](./easedefi.org/) | $4.4M | 0.0% | ? | active | 3 | 1 | 2026-06-10 |
@@ -292,7 +292,7 @@
 | [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 39 | 2026-06-11 |
 | [iq](./iq/) | $23.9M | 0.0% | $23.9M | active | 0 | 2 | 2026-06-11 |
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | declining | 0 | 181 | 2026-06-11 |
-| [jones-dao](./jones-dao/) | $519.7M | 0.0% | $519.7M | active | 0 | 502 | 2026-06-11 |
+| [jones-dao](./jones-dao/) | $519.7M | 0.0% | $519.7M | active | 5 | 502 | 2026-06-11 |
 | [juicebox](./juicebox/) | $8.6M | 5.9% | ? | active | 10 | 77 | 2026-06-11 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-06-11 |
 | [kaio](./kaio/) | $60.8M | 0.0% | ? | declining | 0 | 35 | 2026-06-11 |
@@ -507,7 +507,7 @@
 | [rook](./rook/) | $190.1K | 0.0% | $190.1K | dead | 0 | 73 | 2026-06-11 |
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
-| [royco-protocol](./royco-protocol/) | $7.2 | 0.0% | $7.2 | active | 0 | 14 | 2026-06-11 |
+| [royco-protocol](./royco-protocol/) | $7.2 | 0.0% | $7.2 | active | 6 | 14 | 2026-06-11 |
 | [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 15 | 2026-05-31 |
 | [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-06-11 |
 | [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 0 | 186 | 2026-06-11 |
@@ -578,7 +578,7 @@
 | [starknet-btc-staking](./starknet-btc-staking/) | $412.2M | 0.0% | $412.2M | unknown | 42 | 1 | 2026-05-31 |
 | [stcelo](./stcelo/) | $1.6M | 50.0% | ? | active | 2 | 19 | 2026-06-11 |
 | [stcyber](./stcyber/) | $51.4M | 0.0% | $51.4M | declining | 0 | 31 | 2026-06-11 |
-| [steer-protocol](./steer-protocol/) | $3.3M | 0.0% | $3.3M | active | 0 | 43 | 2026-06-11 |
+| [steer-protocol](./steer-protocol/) | $3.3M | 0.0% | $3.3M | active | 5 | 43 | 2026-06-11 |
 | [stfil](./stfil/) | $5.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [stobox](./stobox/) | $15.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [stout](./stout/) | $12.6K | 0.0% | $12.6K | declining | 0 | 132 | 2026-06-11 |
@@ -587,7 +587,7 @@
 | [stusdt](./stusdt/) | $1.9M | 0.0% | $1.9M | active | 0 | 10 | 2026-06-11 |
 | [suibridge](./suibridge/) | $41.9M | 0.0% | ? | declining | 0 | 5 | 2026-06-11 |
 | [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
-| [summer.fi](./summer.fi/) | $140.9M | 0.0% | $140.9M | declining | 0 | 482 | 2026-06-11 |
+| [summer.fi](./summer.fi/) | $140.9M | 0.0% | $140.9M | declining | 6 | 482 | 2026-06-11 |
 | [sunny](./sunny/) | $2.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [superearn](./superearn/) | $295.4 | 0.0% | $295.4 | active | 1 | 94 | 2026-06-11 |
 | [superfarm](./superfarm/) | $211.1M | 0.0% | $211.1M | declining | 0 | 49 | 2026-06-11 |

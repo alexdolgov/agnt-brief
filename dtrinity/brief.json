@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "dtrinity",
-  "generated_at": "2026-06-10T22:57:51.424Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
+  "generated_at": "2026-06-11T11:37:41.859Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "dtrinity",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 120,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 5,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2367174,
+    "dl_tvl_usd": 2304060,
     "tvl_usd": 1761175.170394233,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -57,7 +57,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 5
     }
   },
   "topography": {
@@ -9894,7 +9894,113 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11573,
+      "audit_key": "audit-11573",
+      "report_name": "Link",
+      "report_url": "https://drive.google.com/file/d/1Q58ewyXYxWTpbUoGct6Rdl4PuvJQD1N9/view?usp=drive_link",
+      "auditor": "Verichains",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11574,
+      "audit_key": "audit-11574",
+      "report_name": "Link",
+      "report_url": "https://drive.google.com/file/d/1WJSIYMoLZLeQ5ix9gxKYqRrzePowU2BO/view?usp=sharing",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11575,
+      "audit_key": "audit-11575",
+      "report_name": "Link",
+      "report_url": "https://drive.google.com/file/d/13K-vwkwb3NJKhSa3eaBf1rVeSscHxAxY/view?usp=sharing",
+      "auditor": "Cyberscope",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11576,
+      "audit_key": "audit-11576",
+      "report_name": "Link",
+      "report_url": "https://github.com/hats-finance/dTRINITY-0xee5c6f15e8d0b55a5eff84bb66beeee0e6140ffe/blob/report-update-20250822T111243728Z/report.md",
+      "auditor": "Hats Finance",
+      "audit_type": "contest",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11577,
+      "audit_key": "audit-11577",
+      "report_name": "Link",
+      "report_url": "https://drive.google.com/file/d/1iVIOl8xwNr__d9J_gArV-xZlHidBDst3/view?usp=sharing",
+      "auditor": "Hashlock",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -10499,7 +10605,28 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11573,
+        "report_name": "Link"
+      },
+      {
+        "audit_id": 11574,
+        "report_name": "Link"
+      },
+      {
+        "audit_id": 11575,
+        "report_name": "Link"
+      },
+      {
+        "audit_id": 11576,
+        "report_name": "Link"
+      },
+      {
+        "audit_id": 11577,
+        "report_name": "Link"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

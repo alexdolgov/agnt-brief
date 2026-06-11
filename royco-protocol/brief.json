@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "royco-protocol",
-  "generated_at": "2026-06-11T02:25:41.865Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-11T11:38:44.381Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "royco-protocol",
@@ -43,9 +43,9 @@
     "contracts_verified_by_bytecode": 4,
     "contracts_unverified": 1,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 6,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 35412432,
+    "dl_tvl_usd": 31920059,
     "tvl_usd": 7.156652,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -64,13 +64,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2026-01",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
-      "aging": 0,
+      "fresh": 3,
+      "aging": 1,
       "stale": 0,
-      "unknown": 0
+      "unknown": 2
     }
   },
   "topography": {
@@ -820,7 +820,134 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11653,
+      "audit_key": "audit-11653",
+      "report_name": "| Hexens | Royco Dawn protocol contracts ([Jan 2026 Audit]() \\| [Mar 2026 Update](https://hexens.io/audit-reports/royco-risk-tranching-protocol-update-mar-2026) \\| [Apr 2026 Update](https://hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026)) | Manual review |",
+      "report_url": "https://hexens.io/audit-reports/royco-perpetual-risk-tranching-protocol-jan-2026",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11654,
+      "audit_key": "audit-11654",
+      "report_name": "| Hexens | Royco Dawn protocol contracts ([Jan 2026 Audit](https://hexens.io/audit-reports/royco-perpetual-risk-tranching-protocol-jan-2026) \\| [Mar 2026 Update]() \\| [Apr 2026 Update](https://hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026)) | Manual review |",
+      "report_url": "https://hexens.io/audit-reports/royco-risk-tranching-protocol-update-mar-2026",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11655,
+      "audit_key": "audit-11655",
+      "report_name": "| Hexens | Royco Dawn protocol contracts ([Jan 2026 Audit](https://hexens.io/audit-reports/royco-perpetual-risk-tranching-protocol-jan-2026) \\| [Mar 2026 Update](https://hexens.io/audit-reports/royco-risk-tranching-protocol-update-mar-2026) \\| [Apr 2026 Update]()) | Manual review |",
+      "report_url": "https://hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11656,
+      "audit_key": "audit-11656",
+      "report_name": "Royco's audits can be found in [Section 7](/security-and-audits). Concrete has completed audits with [Cantina]() and [Halborn](https://docs.concrete.xyz/assets/files/Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf/). Additionally, Makina has completed audits from [ChainSecurity, Enigma Dark, Sigma Prime, Cantina and Ottersec](https://docs.makina.finance/contracts/security).",
+      "report_url": "https://docs.concrete.xyz/assets/files/cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11657,
+      "audit_key": "audit-11657",
+      "report_name": "Royco's audits can be found in [Section 7](/security-and-audits). Concrete has completed audits with [Cantina](https://docs.concrete.xyz/assets/files/cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf/) and [Halborn](). Additionally, Makina has completed audits from [ChainSecurity, Enigma Dark, Sigma Prime, Cantina and Ottersec](https://docs.makina.finance/contracts/security).",
+      "report_url": "https://docs.concrete.xyz/assets/files/Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf",
+      "auditor": "Enigma Ventures",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11658,
+      "audit_key": "audit-11658",
+      "report_name": "Royco's audits can be found in [Section 7](/security-and-audits). Concrete has completed audits with [Cantina](https://docs.concrete.xyz/assets/files/cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf/) and [Halborn](https://docs.concrete.xyz/assets/files/Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf/). Additionally, Makina has completed audits from [ChainSecurity, Enigma Dark, Sigma Prime, Cantina and Ottersec]().",
+      "report_url": "https://docs.makina.finance/contracts/security",
+      "auditor": "Enigma Ventures",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -945,7 +1072,32 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11653,
+        "report_name": "| Hexens | Royco Dawn protocol contracts ([Jan 2026 Audit]() \\| [Mar 2026 Update](https://hexens.io/audit-reports/royco-risk-tranching-protocol-update-mar-2026) \\| [Apr 2026 Update](https://hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026)) | Manual review |"
+      },
+      {
+        "audit_id": 11654,
+        "report_name": "| Hexens | Royco Dawn protocol contracts ([Jan 2026 Audit](https://hexens.io/audit-reports/royco-perpetual-risk-tranching-protocol-jan-2026) \\| [Mar 2026 Update]() \\| [Apr 2026 Update](https://hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026)) | Manual review |"
+      },
+      {
+        "audit_id": 11655,
+        "report_name": "| Hexens | Royco Dawn protocol contracts ([Jan 2026 Audit](https://hexens.io/audit-reports/royco-perpetual-risk-tranching-protocol-jan-2026) \\| [Mar 2026 Update](https://hexens.io/audit-reports/royco-risk-tranching-protocol-update-mar-2026) \\| [Apr 2026 Update]()) | Manual review |"
+      },
+      {
+        "audit_id": 11656,
+        "report_name": "Royco's audits can be found in [Section 7](/security-and-audits). Concrete has completed audits with [Cantina]() and [Halborn](https://docs.concrete.xyz/assets/files/Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf/). Additionally, Makina has completed audits from [ChainSecurity, Enigma Dark, Sigma Prime, Cantina and Ottersec](https://docs.makina.finance/contracts/security)."
+      },
+      {
+        "audit_id": 11657,
+        "report_name": "Royco's audits can be found in [Section 7](/security-and-audits). Concrete has completed audits with [Cantina](https://docs.concrete.xyz/assets/files/cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf/) and [Halborn](). Additionally, Makina has completed audits from [ChainSecurity, Enigma Dark, Sigma Prime, Cantina and Ottersec](https://docs.makina.finance/contracts/security)."
+      },
+      {
+        "audit_id": 11658,
+        "report_name": "Royco's audits can be found in [Section 7](/security-and-audits). Concrete has completed audits with [Cantina](https://docs.concrete.xyz/assets/files/cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf/) and [Halborn](https://docs.concrete.xyz/assets/files/Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf/). Additionally, Makina has completed audits from [ChainSecurity, Enigma Dark, Sigma Prime, Cantina and Ottersec]()."
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

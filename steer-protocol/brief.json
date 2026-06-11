@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "steer-protocol",
-  "generated_at": "2026-06-11T03:08:08.875Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-11T11:37:43.773Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "steer-protocol",
@@ -33,16 +33,16 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 12,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 5,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 20474767.6633,
+    "dl_tvl_usd": 17072743.73926,
     "tvl_usd": 3257998.703123109,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "arbitrum": 3257998.7
     },
     "asd_usd": 3257998.703123109,
-    "website_url": "https://app.steer.finance?af=defillama",
+    "website_url": "https://app.steer.finance",
     "chains": [
       "arbitrum"
     ],
@@ -54,7 +54,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 5
     }
   },
   "topography": {
@@ -1658,7 +1658,113 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11688,
+      "audit_key": "audit-11688",
+      "report_name": "Audit report by Hashlock",
+      "report_url": "https://hashlock.com/wp-content/uploads/2025/04/Steer-Protocol-Smart-Contract-Audit-Report-Final-Report.pdf",
+      "auditor": "Hashlock",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11689,
+      "audit_key": "audit-11689",
+      "report_name": "Audit report by Omniscia",
+      "report_url": "https://omniscia.io/reports/steer-protocol-poolshark-vaults-660552b2d0e471001941c8f4",
+      "auditor": "Omniscia",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11690,
+      "audit_key": "audit-11690",
+      "report_name": "Audit report by Omniscia",
+      "report_url": "https://omniscia.io/reports/steer-protocol-algebra-integral-position-manager-smart-rewarder-661909e09ce51e0018065566",
+      "auditor": "Omniscia",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11691,
+      "audit_key": "audit-11691",
+      "report_name": "Audit report by Omniscia",
+      "report_url": "https://omniscia.io/reports/steer-protocol-algebra-strategies-6508231259c40e0014bce243",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11692,
+      "audit_key": "audit-11692",
+      "report_name": "Audit report by Omniscia",
+      "report_url": "https://omniscia.io/reports/steer-protocol-core-implementation-636b8fca6693a100164bf02f",
+      "auditor": "Omniscia",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -1923,7 +2029,28 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11688,
+        "report_name": "Audit report by Hashlock"
+      },
+      {
+        "audit_id": 11689,
+        "report_name": "Audit report by Omniscia"
+      },
+      {
+        "audit_id": 11690,
+        "report_name": "Audit report by Omniscia"
+      },
+      {
+        "audit_id": 11691,
+        "report_name": "Audit report by Omniscia"
+      },
+      {
+        "audit_id": 11692,
+        "report_name": "Audit report by Omniscia"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

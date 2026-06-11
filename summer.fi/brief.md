@@ -7,11 +7,11 @@
 - Project: Summer.fi (`summer.fi`)
 - Website: [https://summer.fi/earn?referralCode=2001317](https://summer.fi/earn?referralCode=2001317)
 - Lifecycle: declining (Tier 0, 91% below peak)
-- Generated: 2026-06-11T03:15:11.787Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
+- Generated: 2026-06-11T11:38:43.592Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, base, ethereum, optimism, sonic
 - Contract surface: 482 unique implementations (1939 raw deployments)
-- DeFi Llama TVL: $47,583,731.00
+- DeFi Llama TVL: $32,919,445.00
 - On-chain TVL (included contracts): $140,925,721.03
 - TVL by chain: Ethereum $137,443,132.22 | Base $3,221,071.35 | Sonic $261,498.77 | Arbitrum $18.70
 
@@ -31,11 +31,11 @@ The Lazy Summer Protocol and Summer.fi Pro share governance infrastructure (Summ
 - Unverified implementations: 201
 - Unique implementations: 482
 - Raw deployments: 1939
-- Audits discovered: 0
+- Audits discovered: 6
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $140,925,721.03
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 6 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $140,925,721.03 represents exposure in a protocol with declining activity.
 
@@ -560,6 +560,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [{% embed url="<>" %}](https://github.com/phoenixlabsresearch/spark-docs/blob/main/deployed-contracts/ChainSecurity_Oazo_Apps_Limited_Savings_Dai_audit.pdf) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://www.chainsecurity.com/security-audit/oasis-automation-consultancy-smart-contracts) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://www.chainsecurity.com/security-audit/oasis-multiply-fmm-extension) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://www.chainsecurity.com/security-audit/oasis-app-modular-proxy-actions) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://www.chainsecurity.com/security-audit/summer-fi-defi-modular-actions-v2) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://www.chainsecurity.com/security-audit/summer-fi-automation-v2-smart-contracts) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -687,9 +693,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 6
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11695] {% embed url="<>" %}
+- [11696] {% embed url="<>" %}
+- [11697] {% embed url="<>" %}
+- [11698] {% embed url="<>" %}
+- [11699] {% embed url="<>" %}
+- [11700] {% embed url="<>" %}
 
 Fork inheritance lineage and inherited audits are included when available.

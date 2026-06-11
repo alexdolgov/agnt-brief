@@ -5,8 +5,8 @@
 - Project: Ostium (`ostium`)
 - Website: [https://www.ostium.io/](https://www.ostium.io/)
 - Lifecycle: active (Tier 0, 54.4% below peak)
-- Generated: 2026-06-10T20:59:08.873Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:38:00.772Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: arbitrum
 - Contract surface: 17 unique implementations (40 raw deployments)
 - DeFi Llama TVL: $41,776,032.21

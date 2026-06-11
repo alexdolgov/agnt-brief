@@ -5,8 +5,8 @@
 - Project: Orbit Bridge (`orbit-bridge`)
 - Website: [https://bridge.orbitchain.io](https://bridge.orbitchain.io)
 - Lifecycle: active (Tier 0, 94.4% below peak)
-- Generated: 2026-06-10T20:59:08.846Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:41:14.411Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: celo, ethereum, heco, klaytn, polygon
 - Contract surface: 22 unique implementations (25 raw deployments)
 - DeFi Llama TVL: $17,464,468.32

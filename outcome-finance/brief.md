@@ -6,8 +6,8 @@
 
 - Project: Outcome Finance (`outcome-finance`)
 - Lifecycle: declining (Tier 0, 99.4% below peak)
-- Generated: 2026-06-10T20:59:08.877Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:38:02.409Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: boba, ethereum, polygon
 - Contract surface: 3 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $1,326,106.28

@@ -5,8 +5,8 @@
 - Project: Osmosis DEX (`osmosis-dex`)
 - Website: [https://osmosis.zone/](https://osmosis.zone/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:08.868Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:39:11.239Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $18,533,746.03

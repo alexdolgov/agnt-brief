@@ -427,11 +427,11 @@
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-06-11 |
 | [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | declining | 0 | 103 | 2026-06-11 |
 | [orangex](./orangex/) | $39.8M | 0.0% | ? | active | 0 | 3 | 2026-06-11 |
-| [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-06-10 |
-| [osl](./osl/) | $41.5M | 0.0% | ? | active | 0 | 4 | 2026-06-10 |
-| [osmosis-dex](./osmosis-dex/) | $18.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [ostium](./ostium/) | $29.1M | 47.1% | ? | active | 1 | 17 | 2026-06-10 |
-| [outcome-finance](./outcome-finance/) | $1.3M | 0.0% | ? | declining | 0 | 3 | 2026-06-10 |
+| [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-06-11 |
+| [osl](./osl/) | $41.5M | 0.0% | ? | active | 0 | 4 | 2026-06-11 |
+| [osmosis-dex](./osmosis-dex/) | $18.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [ostium](./ostium/) | $29.1M | 47.1% | ? | active | 1 | 17 | 2026-06-11 |
+| [outcome-finance](./outcome-finance/) | $1.3M | 0.0% | ? | declining | 0 | 3 | 2026-06-11 |
 | [overnight-finance](./overnight-finance/) | $10.0M | 0.0% | ? | declining | 2 | 4353 | 2026-06-10 |
 | [overtime](./overtime/) | $42.5M | 0.0% | $42.5M | declining | 0 | 200 | 2026-06-10 |
 | [p2pb2b](./p2pb2b/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |

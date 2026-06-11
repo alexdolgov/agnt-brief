@@ -5,8 +5,8 @@
 - Project: YieldSeeker (`yieldseeker`)
 - Website: [https://yieldseeker.xyz](https://yieldseeker.xyz)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:19.465Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:19:52.923Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: base
 - Contract surface: 190 unique implementations (693 raw deployments)
 - DeFi Llama TVL: $1,294,442.74

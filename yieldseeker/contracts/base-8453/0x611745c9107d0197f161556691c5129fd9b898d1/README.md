@@ -4,7 +4,7 @@
 |---|---|
 | Chain | base (8453) |
 | Address | `0x611745c9107d0197f161556691c5129fd9b898d1` |
-| Role | registry |
+| Role | proxy |
 | Origin | standard_library |
 | Audited | No |
 | Audits | n/a |

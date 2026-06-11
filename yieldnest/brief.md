@@ -5,8 +5,8 @@
 - Project: YieldNest (`yieldnest`)
 - Website: [https://yieldnest.finance/](https://yieldnest.finance/)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:59:19.439Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:21:01.521Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: arbitrum, base, berachain, bsc, ethereum, ink, optimism
 - Contract surface: 33 unique implementations (72 raw deployments)
 - DeFi Llama TVL: $22,859,932.39

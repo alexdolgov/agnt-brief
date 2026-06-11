@@ -7,8 +7,8 @@
 - Project: Zeebu (`zeebu`)
 - Website: [https://www.zeebu.com/](https://www.zeebu.com/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:19.482Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:19:53.779Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: base, ethereum
 - Contract surface: 8 unique implementations (16 raw deployments)
 - DeFi Llama TVL: $5,210,326.35

@@ -5,8 +5,8 @@
 - Project: Yuzu Money (`yuzu-money`)
 - Website: [https://app.yuzu.money?ref=ZRSJY3HG](https://app.yuzu.money?ref=ZRSJY3HG)
 - Lifecycle: active (Tier 0, 28.6% below peak)
-- Generated: 2026-06-10T20:59:19.478Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:17:50.374Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: plasma
 - Contract surface: 8 unique implementations (17 raw deployments)
 - DeFi Llama TVL: $50,939,265.75

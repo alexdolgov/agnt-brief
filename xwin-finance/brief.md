@@ -5,8 +5,8 @@
 - Project: xWin Finance (`xwin-finance`)
 - Website: [https://xwin.finance](https://xwin.finance)
 - Lifecycle: active (Tier 0, 57.9% below peak)
-- Generated: 2026-06-10T20:59:19.395Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:15:53.323Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $6,105,445.77

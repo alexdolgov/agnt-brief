@@ -5,8 +5,8 @@
 - Project: Yala (`yala`)
 - Website: [https://www.yala.org](https://www.yala.org)
 - Lifecycle: active (Tier 1, dead)
-- Generated: 2026-06-10T20:59:19.400Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:16:59.413Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: ethereum
 - Contract surface: 30 unique implementations (30 raw deployments)
 - DeFi Llama TVL: $2,196,263.11

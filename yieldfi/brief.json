@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "yieldfi",
-  "generated_at": "2026-06-10T20:59:19.425Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T04:15:54.788Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-026d",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "yieldfi",

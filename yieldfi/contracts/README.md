@@ -1,6 +1,6 @@
 # yieldfi — Contract Index
 
-23 unique implementations across 9 chains · 113 deployments · 12 audited · 6 unaudited · 5 unverified
+22 unique implementations across 9 chains · 112 deployments · 12 audited · 5 unaudited · 5 unverified
 
 ## core_logic (1)
 
@@ -36,11 +36,10 @@
 | Proxy (impl: 0x6c6e88a438092fda33ad2304c54180b41c35fa64) | linea | `0x168bc4...7569e7` | ❓ Unverified | Unverified |
 | [TransparentUpgradeableProxy (3 deployments)](./ethereum-1/0x24bc4128942786f7cff18af3f71041d003cb6e01/) | ethereum | 3 deployments: ethereum [`0x24bc41...cb6e01`](./ethereum-1/0x24bc4128942786f7cff18af3f71041d003cb6e01/); ethereum `0xaec8c1...337026`; sonic `0xf4f447...ee55de` | ⚠️ Unaudited | Verified |
 
-## token (7)
+## token (6)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [FiatTokenV2_2](./ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ethereum | [`0xa0b869...06eb48`](./ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited | Verified |
 | [SToken (9 deployments)](./ethereum-1/0x20b8f4a172e3a0bdb96c89d49629e83f73f4dc0d/) | ethereum | 9 deployments: ethereum [`0x20b8f4...f4dc0d`](./ethereum-1/0x20b8f4a172e3a0bdb96c89d49629e83f73f4dc0d/); ethereum `0x4f8e14...cb95f2`; ethereum `0x9f4a9e...2cedcc`; optimism `0x4ca1da...92c87b`; optimism `0xc35eaf...67dfed`; base `0x4ca1da...92c87b`; base `0x8f88d7...083e2b`; arbitrum `0x4ca1da...92c87b`; arbitrum `0x8f88d7...083e2b` | ⚠️ Unaudited | Verified |
 | [STokenL2](./optimism-10/0x8f88d71b25d385a388704cf32058e194b4083e2b/) | optimism | [`0x8f88d7...083e2b`](./optimism-10/0x8f88d71b25d385a388704cf32058e194b4083e2b/) | ⚠️ Unaudited | Verified |
 | [vyToken (3 deployments)](./ethereum-1/0x1e2a5622178f93efd4349e2eb3dbdf2761749e1b/) | ethereum | 3 deployments: ethereum [`0x1e2a56...749e1b`](./ethereum-1/0x1e2a5622178f93efd4349e2eb3dbdf2761749e1b/); ethereum `0x2e3c5e...0d92fc`; ethereum `0x307311...a5c9f9` | ⚠️ Unaudited | Verified |

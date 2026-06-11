@@ -7,8 +7,8 @@
 - Project: Yei Finance (`yei-finance`)
 - Website: [https://www.yei.finance/](https://www.yei.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:19.409Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:16:56.470Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: sei
 - Contract surface: 44 unique implementations (145 raw deployments)
 - DeFi Llama TVL: $32,332,654.00

@@ -5,8 +5,8 @@
 - Project: Yield Yak (`yield-yak`)
 - Website: [https://yieldyak.com](https://yieldyak.com)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:59:19.414Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T04:15:01.301Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
 - Chains: avalanche, mantle
 - Contract surface: 8 unique implementations (8 raw deployments)
 - DeFi Llama TVL: $16,579,181.00

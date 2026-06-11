@@ -5,11 +5,11 @@
 - Project: Spectra (`spectra`)
 - Website: [https://www.spectra.finance](https://www.spectra.finance)
 - Lifecycle: active (Tier 0, 81.8% below peak)
-- Generated: 2026-06-11T02:56:26.614Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-11T11:33:40.935Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, avalanche, base, bsc, ethereum, hyperliquid, optimism, sonic
 - Contract surface: 214 unique implementations (1250 raw deployments)
-- DeFi Llama TVL: $50,945,360.00
+- DeFi Llama TVL: $40,073,123.00
 - On-chain TVL (included contracts): $10,462,429.03
 - TVL by chain: Base $10,332,350.24 | Hyperliquid $120,648.39 | Ethereum $8,896.35 | Sonic $534.04
 
@@ -29,11 +29,11 @@ Spectra V2 factories deploy yield tokens and principal tokens, which are wrapped
 - Unverified implementations: 65
 - Unique implementations: 214
 - Raw deployments: 1250
-- Audits discovered: 3
+- Audits discovered: 7
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $10,462,429.03
-- Latest audit: 2022-10 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 1 unknown
+- Latest audit: 2024-02 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 6 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -289,9 +289,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Least-Authority-Ethereum-Foundation-GSN-Final-Audit-Report-v2.pdf](https://github.com/perspectivefi/spectra-governance/blob/main/lib/gsn/audits/Least-Authority-Ethereum-Foundation-GSN-Final-Audit-Report-v2.pdf) | unknown | Audit | 2020-12 | stale | Direct | n/a | 0 | n/a |
-| [opengsn-audit-march2021_front-page-summaries.pdf](https://github.com/perspectivefi/spectra-governance/blob/main/lib/gsn/audits/opengsn-audit-march2021_front-page-summaries.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [2022-10-ERC4626.pdf](https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2022-10-ERC4626.pdf) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/pashov/audits/bed0a845f5af0047206ce423d111673183dba1e9/team/pdf/Spectra-security-review.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://1608032478-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSE6NakmHsqUzyells7H%2Fuploads%2FoaRoctf29lEXC7Gi2dy6%2FMetaVault%20-%20Spectra%20Finance%20Audit%20-%20Sherlock.pdf) | Sherlock | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://1608032478-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSE6NakmHsqUzyells7H%2Fuploads%2FvuzYJLjktAmIGOhM9sKL%2FMetaVault%20Bridge%20-%20Spectra%20Finance%20Audit%20-%20Sherlock.pdf) | Sherlock | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [| 42 security auditors of Code4rena | <https://github.com/code-423n4/2024-02-spectra> | March-April 2024 | <> | <p>0 High-risk findings <br>️2 Medium-risk findings<br>11 low risk/non-cricital findings</p> |](https://code4rena.com/reports/2024-02-spectra) | Code4rena | Contest | 2024-02 | stale | Direct | n/a | 0 | n/a |
+| [4naly3er-report.md](https://github.com/code-423n4/2024-02-spectra/blob/main/4naly3er-report.md) | 4naly3er | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [bot-report.json](https://github.com/code-423n4/2024-02-spectra/blob/main/bot-report.json) | bot | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [bot-report.md](https://github.com/code-423n4/2024-02-spectra/blob/main/bot-report.md) | bot | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -381,15 +385,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 7
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 
 Zero-match audit list:
 
-- [5696] Least-Authority-Ethereum-Foundation-GSN-Final-Audit-Report-v2.pdf
-- [5697] opengsn-audit-march2021_front-page-summaries.pdf
-- [5701] 2022-10-ERC4626.pdf
+- [11679] Rendered PDF capture
+- [11680] Rendered PDF capture
+- [11681] Rendered PDF capture
+- [11682] | 42 security auditors of Code4rena | <https://github.com/code-423n4/2024-02-spectra> | March-April 2024 | <> | <p>0 High-risk findings <br>️2 Medium-risk findings<br>11 low risk/non-cricital findings</p> |
+- [11684] 4naly3er-report.md
+- [11685] bot-report.json
+- [11686] bot-report.md
 
 Fork inheritance lineage and inherited audits are included when available.

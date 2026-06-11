@@ -3,13 +3,13 @@
 ## Project Overview
 
 - Project: Yuzu Money (`yuzu-money`)
-- Website: [https://app.yuzu.money?ref=ZRSJY3HG](https://app.yuzu.money?ref=ZRSJY3HG)
+- Website: [https://app.yuzu.money](https://app.yuzu.money)
 - Lifecycle: active (Tier 0, 28.6% below peak)
-- Generated: 2026-06-11T04:17:50.374Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
+- Generated: 2026-06-11T11:33:38.518Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: plasma
 - Contract surface: 8 unique implementations (17 raw deployments)
-- DeFi Llama TVL: $50,939,265.75
+- DeFi Llama TVL: $48,954,053.07
 - On-chain TVL (included contracts): $41,016,284.51
 - TVL by chain: Plasma $41,016,284.51
 
@@ -29,11 +29,11 @@ All contracts belong to a single product family deployed by the same deployer. Y
 - Unverified implementations: 0
 - Unique implementations: 8
 - Raw deployments: 17
-- Audits discovered: 0
+- Audits discovered: 6
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $41,016,284.51
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2026-01 (fresh)
+- Staleness: 6 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -81,6 +81,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [YuzuUSD Security Review (Pashov)](https://github.com/pashov/audits/blob/master/team/pdf/YuzuUSD-security-review_2025-08-28.pdf) | Pashov Audit Group | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
+| [YuzuUSD Smart Contract Security Assessment (Dedaub)](https://dedaub.com/audits/yuzu-money/yuzuusd-october-6-2025) | Dedaub | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
+| [YuzuUSD Security Review (Pashov) (also discovered via alternate URL)](https://github.com/pashov/audits/blob/5911d22f3575a90650b2a6c22758a8f1712b8880/team/pdf/YuzuUSD-security-review_2026-01-14.pdf) | Pashov Audit Group | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
+| [YuzuUSD Smart Contract Security Assessment (Dedaub)](https://dedaub.com/audits/yuzu-money/yuzuusd-psm-february-09-2026) | Dedaub | Audit | 2026-01 | fresh | Direct | n/a | 0 | n/a |
+| [YuzuUSD-security-review_2025-08-28.md](https://github.com/pashov/audits/blob/master/team/md/YuzuUSD-security-review_2025-08-28.md) | Pashov Audit Group | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
+| [YuzuUSD-security-review_2026-01-14.md](https://github.com/pashov/audits/blob/master/team/md/YuzuUSD-security-review_2026-01-14.md) | Pashov Audit Group | Audit | 2026-01 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -106,9 +112,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 6
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11732] YuzuUSD Security Review (Pashov)
+- [11733] YuzuUSD Smart Contract Security Assessment (Dedaub)
+- [11734] YuzuUSD Security Review (Pashov)
+- [11735] YuzuUSD Smart Contract Security Assessment (Dedaub)
+- [11736] YuzuUSD-security-review_2025-08-28.md
+- [11737] YuzuUSD-security-review_2026-01-14.md
 
 Fork inheritance lineage and inherited audits are included when available.

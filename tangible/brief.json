@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "tangible",
-  "generated_at": "2026-06-11T03:28:34.715Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-11T11:33:39.836Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "tangible",
@@ -33,10 +33,10 @@
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 211,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 7,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 42236634,
-    "tvl_usd": 42236634,
+    "dl_tvl_usd": 41930357,
+    "tvl_usd": 41930357,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -51,13 +51,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2023-10",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 0
+      "stale": 3,
+      "unknown": 4
     }
   },
   "topography": {
@@ -33737,7 +33737,155 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11704,
+      "audit_key": "audit-11704",
+      "report_name": "audit.pdf",
+      "report_url": "https://github.com/cyberscope-io/audits/blob/main/tngbl/audit.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11705,
+      "audit_key": "audit-11705",
+      "report_name": "Introduction",
+      "report_url": "https://omniscia.io/reports/tangible-ustb-contract-655fb224a7ddc0001831f72e",
+      "auditor": "Omniscia",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11706,
+      "audit_key": "audit-11706",
+      "report_name": "Omniscia - Cross Chain Rebasing Token Security Audit",
+      "report_url": "https://omniscia.io/reports/tangible-cross-chain-rebasing-token-655fab113e426a0018b0bffd",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11707,
+      "audit_key": "audit-11707",
+      "report_name": "Omniscia - Baskets",
+      "report_url": "https://omniscia.io/reports/tangible-nft-baskets-65b179009eeaeb0018a4839d",
+      "auditor": "Omniscia",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11708,
+      "audit_key": "audit-11708",
+      "report_name": "Omniscia - TNFT V2 Security Audit",
+      "report_url": "https://omniscia.io/reports/tangible-tnft-v2-654b658635a6d00018202a55",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11709,
+      "audit_key": "audit-11709",
+      "report_name": "Github",
+      "report_url": "https://github.com/mountainprotocol/audits/blob/main/OpenZeppelin%20Mountain%20Protocol%20USDM%20-%20Audit%20Report%20Jun%202023.pdf",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11710,
+      "audit_key": "audit-11710",
+      "report_name": "OpenZeppelin Mountain Protocol wUSDM - Audit Report Oct 2023.pdf",
+      "report_url": "https://github.com/mountainprotocol/audits/blob/main/OpenZeppelin%20Mountain%20Protocol%20wUSDM%20-%20Audit%20Report%20Oct%202023.pdf",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
@@ -33751,7 +33899,36 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11704,
+        "report_name": "audit.pdf"
+      },
+      {
+        "audit_id": 11705,
+        "report_name": "Introduction"
+      },
+      {
+        "audit_id": 11706,
+        "report_name": "Omniscia - Cross Chain Rebasing Token Security Audit"
+      },
+      {
+        "audit_id": 11707,
+        "report_name": "Omniscia - Baskets"
+      },
+      {
+        "audit_id": 11708,
+        "report_name": "Omniscia - TNFT V2 Security Audit"
+      },
+      {
+        "audit_id": 11709,
+        "report_name": "Github"
+      },
+      {
+        "audit_id": 11710,
+        "report_name": "OpenZeppelin Mountain Protocol wUSDM - Audit Report Oct 2023.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -5,11 +5,11 @@
 - Project: Ostium (`ostium`)
 - Website: [https://www.ostium.io/](https://www.ostium.io/)
 - Lifecycle: active (Tier 0, 54.4% below peak)
-- Generated: 2026-06-11T01:38:00.772Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-11T11:33:38.573Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum
 - Contract surface: 17 unique implementations (40 raw deployments)
-- DeFi Llama TVL: $41,776,032.21
+- DeFi Llama TVL: $47,184,559.22
 - On-chain TVL (included contracts): $29,117,113.47
 - TVL by chain: Arbitrum $29,117,113.47
 
@@ -29,11 +29,11 @@ The OstiumVault holds user collateral and interacts with OstiumTrading for trade
 - Unverified implementations: 0
 - Unique implementations: 17
 - Raw deployments: 40
-- Audits discovered: 1
+- Audits discovered: 7
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-01 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 7 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -94,6 +94,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [- [Smart Contract Audits](): Independent audits by Zellic, ThreeSigma, and Pashov](https://docs.ostium.com/protocol/security/audits.md) | Pashov Audit Group | Audit | 2026-01 | fresh | Direct | contract_name | 24 | high |
+| [Rendered PDF capture](https://1263702948-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCEDPLHGTrrpP1i2dbe3d%2Fuploads%2FaMgw1k5iR4SvbYWRcs7q%2FOstium%20-%20Zellic%20Audit%20Report%20(1).pdf) | Zellic | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://1263702948-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCEDPLHGTrrpP1i2dbe3d%2Fuploads%2F1NAt99nKJ1HesxyWjElF%2FZellic%20Nov%2025.pdf) | Zellic | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://1263702948-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCEDPLHGTrrpP1i2dbe3d%2Fuploads%2FMpYIMzIusmebDMScUlYB%2FOstiumAudit.pdf) | Zellic | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://1263702948-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCEDPLHGTrrpP1i2dbe3d%2Fuploads%2FG0Of6YAPlrOIPs51aj16%2FOstium-security-review_2025-01-21.pdf) | Zellic | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://1263702948-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCEDPLHGTrrpP1i2dbe3d%2Fuploads%2F7b08UITTgMLh1ej19d7I%2FOstium-security-review_2025-04-06.pdf) | Zellic | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://1263702948-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCEDPLHGTrrpP1i2dbe3d%2Fuploads%2F342r2xPX6yppDzAfPLVz%2FPashov%20Jan%2026.pdf) | Pashov Audit Group | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -121,9 +127,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 6
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=24
+
+Zero-match audit list:
+
+- [11846] Rendered PDF capture
+- [11847] Rendered PDF capture
+- [11848] Rendered PDF capture
+- [11849] Rendered PDF capture
+- [11850] Rendered PDF capture
+- [11851] Rendered PDF capture
 
 Fork inheritance lineage and inherited audits are included when available.

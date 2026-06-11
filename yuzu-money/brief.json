@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "yuzu-money",
-  "generated_at": "2026-06-11T04:17:50.374Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-026d",
+  "generated_at": "2026-06-11T11:33:38.518Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "yuzu-money",
@@ -33,25 +33,25 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 6,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 50939265.74925,
+    "dl_tvl_usd": 48954053.06726,
     "tvl_usd": 41016284.514609635,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "plasma": 41016284.51
     },
     "asd_usd": 41016284.514609635,
-    "website_url": "https://app.yuzu.money?ref=ZRSJY3HG",
+    "website_url": "https://app.yuzu.money",
     "chains": [
       "plasma"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2026-01",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
+      "fresh": 6,
       "aging": 0,
       "stale": 0,
       "unknown": 0
@@ -402,7 +402,144 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11732,
+      "audit_key": "audit-11732",
+      "report_name": "YuzuUSD Security Review (Pashov)",
+      "report_url": "https://github.com/pashov/audits/blob/master/team/pdf/YuzuUSD-security-review_2025-08-28.pdf",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11733,
+      "audit_key": "audit-11733",
+      "report_name": "YuzuUSD Smart Contract Security Assessment (Dedaub)",
+      "report_url": "https://dedaub.com/audits/yuzu-money/yuzuusd-october-6-2025",
+      "auditor": "Dedaub",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11734,
+      "audit_key": "audit-11734",
+      "report_name": "YuzuUSD Security Review (Pashov)",
+      "report_url": "https://github.com/pashov/audits/blob/5911d22f3575a90650b2a6c22758a8f1712b8880/team/pdf/YuzuUSD-security-review_2026-01-14.pdf",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 11734,
+          "report_url": "https://github.com/pashov/audits/blob/5911d22f3575a90650b2a6c22758a8f1712b8880/team/pdf/YuzuUSD-security-review_2026-01-14.pdf"
+        },
+        {
+          "audit_id": 11738,
+          "report_url": "https://github.com/pashov/audits/blob/master/team/pdf/YuzuUSD-security-review_2026-01-14.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 11735,
+      "audit_key": "audit-11735",
+      "report_name": "YuzuUSD Smart Contract Security Assessment (Dedaub)",
+      "report_url": "https://dedaub.com/audits/yuzu-money/yuzuusd-psm-february-09-2026",
+      "auditor": "Dedaub",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11736,
+      "audit_key": "audit-11736",
+      "report_name": "YuzuUSD-security-review_2025-08-28.md",
+      "report_url": "https://github.com/pashov/audits/blob/master/team/md/YuzuUSD-security-review_2025-08-28.md",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11737,
+      "audit_key": "audit-11737",
+      "report_name": "YuzuUSD-security-review_2026-01-14.md",
+      "report_url": "https://github.com/pashov/audits/blob/master/team/md/YuzuUSD-security-review_2026-01-14.md",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -457,7 +594,32 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11732,
+        "report_name": "YuzuUSD Security Review (Pashov)"
+      },
+      {
+        "audit_id": 11733,
+        "report_name": "YuzuUSD Smart Contract Security Assessment (Dedaub)"
+      },
+      {
+        "audit_id": 11734,
+        "report_name": "YuzuUSD Security Review (Pashov)"
+      },
+      {
+        "audit_id": 11735,
+        "report_name": "YuzuUSD Smart Contract Security Assessment (Dedaub)"
+      },
+      {
+        "audit_id": 11736,
+        "report_name": "YuzuUSD-security-review_2025-08-28.md"
+      },
+      {
+        "audit_id": 11737,
+        "report_name": "YuzuUSD-security-review_2026-01-14.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

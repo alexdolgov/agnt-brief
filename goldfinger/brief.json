@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "goldfinger",
-  "generated_at": "2026-06-10T23:39:04.256Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-11T11:36:39.159Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "goldfinger",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 8,
     "scoreable_audits": 0,
     "dl_tvl_usd": 0,
     "tvl_usd": 0,
@@ -52,7 +52,7 @@
       "fresh": 1,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 7
     }
   },
   "topography": {
@@ -283,6 +283,153 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11786,
+      "audit_key": "audit-11786",
+      "report_name": "GFDistributor",
+      "report_url": "https://app.solidproof.io/projects/goldfinger?audit=b14fbb55-1679-47fd-92de-2b5780e48cac",
+      "auditor": "SolidProof",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11787,
+      "audit_key": "audit-11787",
+      "report_name": "GFStaking",
+      "report_url": "https://app.solidproof.io/projects/goldfinger?audit=56927176-71cc-496e-8b59-e46b4dcdbdc9",
+      "auditor": "SolidProof",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11788,
+      "audit_key": "audit-11788",
+      "report_name": "GFToken",
+      "report_url": "https://app.solidproof.io/projects/goldfinger?audit=812d8642-0312-4d0c-a5de-f7d13e850273",
+      "auditor": "SolidProof",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11789,
+      "audit_key": "audit-11789",
+      "report_name": "ARTVault",
+      "report_url": "https://app.solidproof.io/projects/goldfinger?audit=bcdbd3a6-0ca2-4d05-9183-601437701a8d",
+      "auditor": "SolidProof",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11790,
+      "audit_key": "audit-11790",
+      "report_name": "ARTToken",
+      "report_url": "https://app.solidproof.io/projects/goldfinger?audit=a5a2744f-aeb6-4ed4-abf3-85ae5c160b43",
+      "auditor": "SolidProof",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11791,
+      "audit_key": "audit-11791",
+      "report_name": "GFPriceOracle",
+      "report_url": "https://app.solidproof.io/projects/goldfinger?audit=00cd8637-f69d-4a1d-b6dd-8a7a34315d1c",
+      "auditor": "SolidProof",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11792,
+      "audit_key": "audit-11792",
+      "report_name": "GFRegistry",
+      "report_url": "https://app.solidproof.io/projects/goldfinger?audit=e2da520d-75a2-4461-b5c0-53fb5858ff8d",
+      "auditor": "SolidProof",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -343,6 +490,34 @@
       {
         "audit_id": 9641,
         "report_name": "goldfinger-zerodrift-report.pdf"
+      },
+      {
+        "audit_id": 11786,
+        "report_name": "GFDistributor"
+      },
+      {
+        "audit_id": 11787,
+        "report_name": "GFStaking"
+      },
+      {
+        "audit_id": 11788,
+        "report_name": "GFToken"
+      },
+      {
+        "audit_id": 11789,
+        "report_name": "ARTVault"
+      },
+      {
+        "audit_id": 11790,
+        "report_name": "ARTToken"
+      },
+      {
+        "audit_id": 11791,
+        "report_name": "GFPriceOracle"
+      },
+      {
+        "audit_id": 11792,
+        "report_name": "GFRegistry"
       }
     ],
     "inherited_remapped_matches": []

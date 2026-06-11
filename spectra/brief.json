@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "spectra",
-  "generated_at": "2026-06-11T02:56:26.614Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
+  "generated_at": "2026-06-11T11:33:40.935Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "spectra",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 10,
     "contracts_unverified": 65,
     "coverage_pct": 0,
-    "total_audits": 3,
+    "total_audits": 7,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 50945360,
+    "dl_tvl_usd": 40073123,
     "tvl_usd": 10462429.025591368,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,13 +58,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022-10",
+    "latest_audit_date": "2024-02",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 2,
-      "unknown": 1
+      "stale": 1,
+      "unknown": 6
     }
   },
   "topography": {
@@ -16043,14 +16043,45 @@
   ],
   "audits": [
     {
-      "audit_id": 5696,
-      "audit_key": "audit-5696",
-      "report_name": "Least-Authority-Ethereum-Foundation-GSN-Final-Audit-Report-v2.pdf",
-      "report_url": "https://github.com/perspectivefi/spectra-governance/blob/main/lib/gsn/audits/Least-Authority-Ethereum-Foundation-GSN-Final-Audit-Report-v2.pdf",
+      "audit_id": 11679,
+      "audit_key": "audit-11679",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/pashov/audits/bed0a845f5af0047206ce423d111673183dba1e9/team/pdf/Spectra-security-review.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2020-12",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 11679,
+          "report_url": "https://raw.githubusercontent.com/pashov/audits/bed0a845f5af0047206ce423d111673183dba1e9/team/pdf/Spectra-security-review.pdf"
+        },
+        {
+          "audit_id": 11683,
+          "report_url": "https://github.com/pashov/audits/blob/master/team/pdf/Spectra-security-review.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 11680,
+      "audit_key": "audit-11680",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://1608032478-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSE6NakmHsqUzyells7H%2Fuploads%2FoaRoctf29lEXC7Gi2dy6%2FMetaVault%20-%20Spectra%20Finance%20Audit%20-%20Sherlock.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "unknown",
+      "date": null,
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -16064,11 +16095,53 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 5697,
-      "audit_key": "audit-5697",
-      "report_name": "opengsn-audit-march2021_front-page-summaries.pdf",
-      "report_url": "https://github.com/perspectivefi/spectra-governance/blob/main/lib/gsn/audits/opengsn-audit-march2021_front-page-summaries.pdf",
-      "auditor": "unknown",
+      "audit_id": 11681,
+      "audit_key": "audit-11681",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://1608032478-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSE6NakmHsqUzyells7H%2Fuploads%2FvuzYJLjktAmIGOhM9sKL%2FMetaVault%20Bridge%20-%20Spectra%20Finance%20Audit%20-%20Sherlock.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11682,
+      "audit_key": "audit-11682",
+      "report_name": "| 42 security auditors of Code4rena | <https://github.com/code-423n4/2024-02-spectra> | March-April 2024 | <> | <p>0 High-risk findings <br>️2 Medium-risk findings<br>11 low risk/non-cricital findings</p> |",
+      "report_url": "https://code4rena.com/reports/2024-02-spectra",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "stale",
+      "date": "2024-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11684,
+      "audit_key": "audit-11684",
+      "report_name": "4naly3er-report.md",
+      "report_url": "https://github.com/code-423n4/2024-02-spectra/blob/main/4naly3er-report.md",
+      "auditor": "4naly3er",
       "audit_type": "audit",
       "freshness": "unknown",
       "date": null,
@@ -16085,14 +16158,35 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 5701,
-      "audit_key": "audit-5701",
-      "report_name": "2022-10-ERC4626.pdf",
-      "report_url": "https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2022-10-ERC4626.pdf",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "stale",
-      "date": "2022-10",
+      "audit_id": 11685,
+      "audit_key": "audit-11685",
+      "report_name": "bot-report.json",
+      "report_url": "https://github.com/code-423n4/2024-02-spectra/blob/main/bot-report.json",
+      "auditor": "bot",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11686,
+      "audit_key": "audit-11686",
+      "report_name": "bot-report.md",
+      "report_url": "https://github.com/code-423n4/2024-02-spectra/blob/main/bot-report.md",
+      "auditor": "bot",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -16802,16 +16896,32 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 5696,
-        "report_name": "Least-Authority-Ethereum-Foundation-GSN-Final-Audit-Report-v2.pdf"
+        "audit_id": 11679,
+        "report_name": "Rendered PDF capture"
       },
       {
-        "audit_id": 5697,
-        "report_name": "opengsn-audit-march2021_front-page-summaries.pdf"
+        "audit_id": 11680,
+        "report_name": "Rendered PDF capture"
       },
       {
-        "audit_id": 5701,
-        "report_name": "2022-10-ERC4626.pdf"
+        "audit_id": 11681,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 11682,
+        "report_name": "| 42 security auditors of Code4rena | <https://github.com/code-423n4/2024-02-spectra> | March-April 2024 | <> | <p>0 High-risk findings <br>️2 Medium-risk findings<br>11 low risk/non-cricital findings</p> |"
+      },
+      {
+        "audit_id": 11684,
+        "report_name": "4naly3er-report.md"
+      },
+      {
+        "audit_id": 11685,
+        "report_name": "bot-report.json"
+      },
+      {
+        "audit_id": 11686,
+        "report_name": "bot-report.md"
       }
     ],
     "inherited_remapped_matches": []

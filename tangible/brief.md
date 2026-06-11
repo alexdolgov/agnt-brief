@@ -5,11 +5,11 @@
 - Project: Tangible (`tangible`)
 - Website: [https://www.tangible.store](https://www.tangible.store)
 - Lifecycle: active (Tier 0, 46.9% below peak)
-- Generated: 2026-06-11T03:28:34.715Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
+- Generated: 2026-06-11T11:33:39.836Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, base, bsc, ethereum, optimism, polygon
 - Contract surface: 475 unique implementations (2579 raw deployments)
-- DeFi Llama TVL: $42,236,634.00
+- DeFi Llama TVL: $41,930,357.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,11 +21,11 @@
 - Unverified implementations: 211
 - Unique implementations: 475
 - Raw deployments: 2579
-- Audits discovered: 0
+- Audits discovered: 7
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2023-10 (stale)
+- Staleness: 0 fresh, 0 aging, 3 stale, 4 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -542,6 +542,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [audit.pdf](https://github.com/cyberscope-io/audits/blob/main/tngbl/audit.pdf) | unknown | Audit | 2023-01 | stale | Direct | n/a | 0 | n/a |
+| [Introduction](https://omniscia.io/reports/tangible-ustb-contract-655fb224a7ddc0001831f72e) | Omniscia | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Omniscia - Cross Chain Rebasing Token Security Audit](https://omniscia.io/reports/tangible-cross-chain-rebasing-token-655fab113e426a0018b0bffd) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Omniscia - Baskets](https://omniscia.io/reports/tangible-nft-baskets-65b179009eeaeb0018a4839d) | Omniscia | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Omniscia - TNFT V2 Security Audit](https://omniscia.io/reports/tangible-tnft-v2-654b658635a6d00018202a55) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Github](https://github.com/mountainprotocol/audits/blob/main/OpenZeppelin%20Mountain%20Protocol%20USDM%20-%20Audit%20Report%20Jun%202023.pdf) | OpenZeppelin | Audit | 2023-06 | stale | Direct | n/a | 0 | n/a |
+| [OpenZeppelin Mountain Protocol wUSDM - Audit Report Oct 2023.pdf](https://github.com/mountainprotocol/audits/blob/main/OpenZeppelin%20Mountain%20Protocol%20wUSDM%20-%20Audit%20Report%20Oct%202023.pdf) | OpenZeppelin | Audit | 2023-10 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -562,9 +569,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 7
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11704] audit.pdf
+- [11705] Introduction
+- [11706] Omniscia - Cross Chain Rebasing Token Security Audit
+- [11707] Omniscia - Baskets
+- [11708] Omniscia - TNFT V2 Security Audit
+- [11709] Github
+- [11710] OpenZeppelin Mountain Protocol wUSDM - Audit Report Oct 2023.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

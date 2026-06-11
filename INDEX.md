@@ -232,7 +232,7 @@
 | [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 0 | 16 | 2026-06-10 |
 | [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 0 | 6 | 2026-06-10 |
 | [gnosis-protocol-v1](./gnosis-protocol-v1/) | $94.4M | 0.0% | $94.4M | declining | 0 | 110 | 2026-06-10 |
-| [goldfinger](./goldfinger/) | $0.0 | 0.0% | ? | active | 1 | 5 | 2026-06-10 |
+| [goldfinger](./goldfinger/) | $0.0 | 0.0% | ? | active | 8 | 5 | 2026-06-11 |
 | [goldstation](./goldstation/) | $2.2M | 0.0% | ? | active | 3 | 5 | 2026-06-10 |
 | [gondi](./gondi/) | $35.6 | 20.0% | $35.6 | active | 2 | 30 | 2026-06-10 |
 | [goose](./goose/) | $7.9 | 0.0% | $7.9 | active | 0 | 7 | 2026-06-10 |
@@ -430,7 +430,7 @@
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-06-11 |
 | [osl](./osl/) | $41.5M | 0.0% | ? | active | 0 | 4 | 2026-06-11 |
 | [osmosis-dex](./osmosis-dex/) | $18.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [ostium](./ostium/) | $29.1M | 47.1% | ? | active | 1 | 17 | 2026-06-11 |
+| [ostium](./ostium/) | $29.1M | 47.1% | ? | active | 7 | 17 | 2026-06-11 |
 | [outcome-finance](./outcome-finance/) | $1.3M | 0.0% | ? | declining | 0 | 3 | 2026-06-11 |
 | [overnight-finance](./overnight-finance/) | $10.0M | 0.0% | ? | declining | 2 | 4353 | 2026-06-11 |
 | [overtime](./overtime/) | $42.5M | 0.0% | $42.5M | declining | 8 | 200 | 2026-06-11 |
@@ -556,7 +556,7 @@
 | [sovryn](./sovryn/) | $38.3M | 0.0% | ? | unknown | 11 | 0 | 2026-06-11 |
 | [spacefi](./spacefi/) | $1.5M | 0.0% | ? | active | 5 | 38 | 2026-06-11 |
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 8 | 0 | 2026-06-11 |
-| [spectra](./spectra/) | $10.5M | 0.0% | $10.5M | active | 3 | 214 | 2026-06-11 |
+| [spectra](./spectra/) | $10.5M | 0.0% | $10.5M | active | 7 | 214 | 2026-06-11 |
 | [sperax](./sperax/) | $14.2M | 47.1% | $2.6M | declining | 9 | 142 | 2026-06-11 |
 | [sphere](./sphere/) | $229.4M | 0.0% | $229.4M | active | 0 | 217 | 2026-06-11 |
 | [spiraldao](./spiraldao/) | $6.4M | 44.0% | ? | dead | 3 | 56 | 2026-05-23 |
@@ -612,7 +612,7 @@
 | [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 0 | 1 | 2026-06-11 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-06-11 |
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-06-11 |
-| [tangible](./tangible/) | $42.2M | 0.0% | ? | active | 0 | 475 | 2026-06-11 |
+| [tangible](./tangible/) | $41.9M | 0.0% | ? | active | 7 | 475 | 2026-06-11 |
 | [tarot](./tarot/) | $154.4K | 0.0% | $154.4K | dead | 1 | 139 | 2026-05-31 |
 | [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | declining | 0 | 179 | 2026-06-11 |
 | [team-finance](./team-finance/) | $4.8K | 0.0% | $4.8K | active | 0 | 66 | 2026-06-11 |
@@ -700,7 +700,7 @@
 | [yieldnest](./yieldnest/) | $19.2M | 44.8% | $295.1K | active | 16 | 33 | 2026-06-11 |
 | [yieldseeker](./yieldseeker/) | $102.9M | 0.0% | $102.9M | active | 1 | 190 | 2026-06-11 |
 | [yo-protocol](./yo-protocol/) | $40.9M | 56.3% | $12.6K | declining | 7 | 20 | 2026-06-11 |
-| [yuzu-money](./yuzu-money/) | $41.0M | 0.0% | $41.0M | active | 0 | 8 | 2026-06-11 |
+| [yuzu-money](./yuzu-money/) | $41.0M | 0.0% | $41.0M | active | 6 | 8 | 2026-06-11 |
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-06-11 |
 | [zenlink](./zenlink/) | $5.3M | 0.0% | ? | declining | 1 | 226 | 2026-06-11 |
 | [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-06-11 |

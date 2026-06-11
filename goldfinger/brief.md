@@ -5,8 +5,8 @@
 - Project: GoldFinger (`goldfinger`)
 - Website: [https://goldfinger.finance/en](https://goldfinger.finance/en)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T23:39:04.256Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
+- Generated: 2026-06-11T11:36:39.159Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: bsc
 - Contract surface: 5 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $0.00
@@ -29,11 +29,11 @@ The protocol consists of a single product family centered around the ARTToken co
 - Unverified implementations: 1
 - Unique implementations: 5
 - Raw deployments: 9
-- Audits discovered: 1
+- Audits discovered: 8
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-01 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 1 fresh, 0 aging, 0 stale, 7 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -80,6 +80,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [goldfinger-zerodrift-report.pdf](https://github.com/GoldFingerRWA/token-contracts/blob/main/docs/goldfinger-zerodrift-report.pdf) | unknown | Audit | 2026-01 | fresh | Direct | n/a | 0 | n/a |
+| [GFDistributor](https://app.solidproof.io/projects/goldfinger?audit=b14fbb55-1679-47fd-92de-2b5780e48cac) | SolidProof | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [GFStaking](https://app.solidproof.io/projects/goldfinger?audit=56927176-71cc-496e-8b59-e46b4dcdbdc9) | SolidProof | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [GFToken](https://app.solidproof.io/projects/goldfinger?audit=812d8642-0312-4d0c-a5de-f7d13e850273) | SolidProof | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ARTVault](https://app.solidproof.io/projects/goldfinger?audit=bcdbd3a6-0ca2-4d05-9183-601437701a8d) | SolidProof | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ARTToken](https://app.solidproof.io/projects/goldfinger?audit=a5a2744f-aeb6-4ed4-abf3-85ae5c160b43) | SolidProof | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [GFPriceOracle](https://app.solidproof.io/projects/goldfinger?audit=00cd8637-f69d-4a1d-b6dd-8a7a34315d1c) | SolidProof | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [GFRegistry](https://app.solidproof.io/projects/goldfinger?audit=e2da520d-75a2-4461-b5c0-53fb5858ff8d) | SolidProof | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -105,7 +112,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 8
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -113,5 +120,12 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [9641] goldfinger-zerodrift-report.pdf
+- [11786] GFDistributor
+- [11787] GFStaking
+- [11788] GFToken
+- [11789] ARTVault
+- [11790] ARTToken
+- [11791] GFPriceOracle
+- [11792] GFRegistry
 
 Fork inheritance lineage and inherited audits are included when available.

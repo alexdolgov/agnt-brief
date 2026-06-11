@@ -5,8 +5,8 @@
 - Project: Immutable zkEVM (`immutable-zkevm`)
 - Website: [https://www.immutable.com/](https://www.immutable.com/)
 - Lifecycle: active (Tier 0, 55.1% below peak)
-- Generated: 2026-06-10T20:59:06.123Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:02:15.327Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: ethereum
 - Contract surface: 9 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $28,544,432.07

@@ -1,6 +1,6 @@
 # illuvium — Contract Index
 
-17 unique implementations on ethereum · 29 deployments · 0 audited · 15 unaudited · 2 unverified
+16 unique implementations on ethereum · 28 deployments · 0 audited · 14 unaudited · 2 unverified
 
 ## core_logic (3)
 
@@ -38,13 +38,12 @@
 | [IlluviumNFT (2 deployments)](./ethereum-1/0x384aa03d8b7cc6a818e7cb7a037ba0cd81af9fdf/) | ethereum | 2 deployments: ethereum [`0x384aa0...af9fdf`](./ethereum-1/0x384aa03d8b7cc6a818e7cb7a037ba0cd81af9fdf/); ethereum `0xb90161...cbf8b9` | ⚠️ Unaudited | Verified |
 | [NFTDisperser](./ethereum-1/0xf5df4f4bb2cc79949b37a0a7ea7ce09248b3233c/) | ethereum | [`0xf5df4f...b3233c`](./ethereum-1/0xf5df4f4bb2cc79949b37a0a7ea7ce09248b3233c/) | ⚠️ Unaudited | Verified |
 
-## unknown (6)
+## unknown (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [IlluviumIDOCollection](./ethereum-1/0x4222b2a98daa443c6a0a761300d7d6bfd9161e52/) | ethereum | [`0x4222b2...161e52`](./ethereum-1/0x4222b2a98daa443c6a0a761300d7d6bfd9161e52/) | ⚠️ Unaudited | Verified |
 | [PreIlluvium](./ethereum-1/0xabdef64e297a6dd56e0efa3005972da47d78f11f/) | ethereum | [`0xabdef6...78f11f`](./ethereum-1/0xabdef64e297a6dd56e0efa3005972da47d78f11f/) | ⚠️ Unaudited | Verified |
-| [UniswapV2Pair](./ethereum-1/0x6a091a3406e0073c3cd6340122143009adac0eda/) | ethereum | [`0x6a091a...ac0eda`](./ethereum-1/0x6a091a3406e0073c3cd6340122143009adac0eda/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x088823...cae7b8` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xa305cd...a3dc70` | ❓ Unverified | Unverified |
 | [VotingIlluvium (9 deployments)](./ethereum-1/0x035dc7dd0e90de650bc8b94196a5419e33b08207/) | ethereum | 9 deployments: ethereum [`0x035dc7...b08207`](./ethereum-1/0x035dc7dd0e90de650bc8b94196a5419e33b08207/); ethereum `0x04da3f...21392c`; ethereum `0x19ac50...413945`; ethereum `0x2e15ea...14b71b`; ethereum `0x487e58...173032`; ethereum `0x5f04ca...436418`; ethereum `0x98c7c1...ca0c76`; ethereum `0xbf9a92...8ce17e`; ethereum `0xe8d3c5...73fb00` | ⚠️ Unaudited | Verified |

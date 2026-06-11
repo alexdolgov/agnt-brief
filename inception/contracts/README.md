@@ -1,6 +1,6 @@
 # inception — Contract Index
 
-79 unique implementations across 9 chains · 293 deployments · 18 audited · 48 unaudited · 13 unverified
+78 unique implementations across 9 chains · 290 deployments · 16 audited · 49 unaudited · 13 unverified
 
 ## adapter (5)
 
@@ -12,13 +12,12 @@
 | [NativeRebalancer](./ethereum-1/0x113a5a84f42b7485970d0ea6061dd2cbed35f7fa/) | ethereum | [`0x113a5a...35f7fa`](./ethereum-1/0x113a5a84f42b7485970d0ea6061dd2cbed35f7fa/) | ⚠️ Unaudited | Verified |
 | [VaultZapper (3 deployments)](./ethereum-1/0x14dc6a564ac137e4017a39657daed582820ebe8d/) | ethereum | 3 deployments: ethereum [`0x14dc6a...0ebe8d`](./ethereum-1/0x14dc6a564ac137e4017a39657daed582820ebe8d/); ethereum `0x6b4158...ca499c`; ethereum `0xd697d2...5d05fb` | ⚠️ Unaudited | Verified |
 
-## core_logic (20)
+## core_logic (19)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AmphorSyntheticVault](./ethereum-1/0xc4a324fdf8a2495776b4d6ca46599b5a52f96489/) | ethereum | [`0xc4a324...f96489`](./ethereum-1/0xc4a324fdf8a2495776b4d6ca46599b5a52f96489/) | ✅ Audited | Verified |
-| [AmphorSyntheticVaultWithPermit (2 deployments)](./ethereum-1/0x2791eb5807d69fe10c02eed6b4dc12bac0701744/) | ethereum | 2 deployments: ethereum [`0x2791eb...701744`](./ethereum-1/0x2791eb5807d69fe10c02eed6b4dc12bac0701744/); ethereum `0x3b022e...b5096b` | ✅ Audited | Verified |
-| [AmphorVaultWithPermit (3 deployments)](./ethereum-1/0x0498b85fb4ec85ef5efe82513aa9daf767358a15/) | ethereum | 3 deployments: ethereum [`0x0498b8...358a15`](./ethereum-1/0x0498b85fb4ec85ef5efe82513aa9daf767358a15/); ethereum `0x920f17...82c079`; ethereum `0xf97ecd...8f2e00` | ⚠️ Unaudited | Verified |
+| [AmphorSyntheticVault](./ethereum-1/0xc4a324fdf8a2495776b4d6ca46599b5a52f96489/) | ethereum | [`0xc4a324...f96489`](./ethereum-1/0xc4a324fdf8a2495776b4d6ca46599b5a52f96489/) | ⚠️ Unaudited | Verified |
+| [AmphorVaultWithPermit (2 deployments)](./ethereum-1/0x920f17e741029d904936c58a545dffc72f82c079/) | ethereum | 2 deployments: ethereum [`0x920f17...82c079`](./ethereum-1/0x920f17e741029d904936c58a545dffc72f82c079/); ethereum `0xf97ecd...8f2e00` | ⚠️ Unaudited | Verified |
 | AsyncVault (3 deployments) | ethereum | 3 deployments: ethereum `0x3cda5e...e0e958`; ethereum `0xcdc51f...4df54e`; ethereum `0xf74753...355229` | ⚠️ Unaudited | Verified |
 | [IMellowRestaker (11 deployments)](./ethereum-1/0x09740e3b2ccf6e82f4fb3a57519c8b65da728378/) | ethereum | 11 deployments: ethereum [`0x09740e...728378`](./ethereum-1/0x09740e3b2ccf6e82f4fb3a57519c8b65da728378/); ethereum `0x2313ce...9c00a2`; ethereum `0x2eb6a1...546958`; ethereum `0x3c9991...8dd129`; ethereum `0x69bd17...dc6b55`; ethereum `0x7c374b...09019b`; ethereum `0xa50299...a2251b`; ethereum `0xb94063...46875d`; ethereum `0xc4f4d6...7f8691`; ethereum `0xd7a622...82feba`; ethereum `0xdd3a08...a356c4` | ✅ Audited | Verified |
 | [InceptionRestaker (2 deployments)](./ethereum-1/0x02e2fce3efe6619ad882b159e7d897a9c03a33f0/) | ethereum | 2 deployments: ethereum [`0x02e2fc...3a33f0`](./ethereum-1/0x02e2fce3efe6619ad882b159e7d897a9c03a33f0/); ethereum `0x3d662f...8e9c9a` | ✅ Audited | Verified |

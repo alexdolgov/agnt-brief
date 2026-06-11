@@ -5,8 +5,8 @@
 - Project: Illuvium (`illuvium`)
 - Website: [https://illuvium.io](https://illuvium.io)
 - Lifecycle: active (Tier 1, dead)
-- Generated: 2026-06-10T20:59:06.119Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:01:23.987Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: ethereum
 - Contract surface: 16 unique implementations (28 raw deployments)
 - DeFi Llama TVL: $9,071,695.89

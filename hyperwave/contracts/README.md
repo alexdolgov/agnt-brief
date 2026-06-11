@@ -1,6 +1,6 @@
 # hyperwave — Contract Index
 
-12 unique implementations across 3 chains · 29 deployments · 0 audited · 8 unaudited · 4 unverified
+11 unique implementations across 3 chains · 26 deployments · 0 audited · 7 unaudited · 4 unverified
 
 ## core_logic (2)
 
@@ -28,11 +28,10 @@
 |---|---|---|---|---|
 | [ATokenInstance (3 deployments)](./ethereum-1/0x23878914efe38d27c4d67ab83ed1b93a74d4086a/) | ethereum | 3 deployments: ethereum [`0x238789...d4086a`](./ethereum-1/0x23878914efe38d27c4d67ab83ed1b93a74d4086a/); ethereum `0x4f5923...12decf`; ethereum `0x98c23e...e16f5c` | ⚠️ Unaudited | Verified |
 
-## unknown (6)
+## unknown (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [MetaMorpho (3 deployments)](./ethereum-1/0xbeef01735c132ada46aa9aa4c54623caa92a64cb/) | ethereum | 3 deployments: ethereum [`0xbeef01...2a64cb`](./ethereum-1/0xbeef01735c132ada46aa9aa4c54623caa92a64cb/); ethereum `0xbeefff...86f5bc`; ethereum `0xd63070...d33a3d` | ⚠️ Unaudited | Verified |
 | [MetaMorphoV1_1](./base-8453/0x616a4e1db48e22028f6bbf20444cd3b8e3273738/) | base | [`0x616a4e...273738`](./base-8453/0x616a4e1db48e22028f6bbf20444cd3b8e3273738/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | hyperliquid | `0x0e01e3...22e79d` | ❓ Unverified | Unverified |
 | UnnamedContract | hyperliquid | `0xfa9d7d...d24bc4` | ❓ Unverified | Unverified |

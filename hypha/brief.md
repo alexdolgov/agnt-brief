@@ -5,8 +5,8 @@
 - Project: Hypha (`hypha`)
 - Website: [https://www.hypha.sh/](https://www.hypha.sh/)
 - Lifecycle: active (Tier 0, 83.1% below peak)
-- Generated: 2026-06-10T20:59:06.113Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:01:23.987Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: avalanche
 - Contract surface: 60 unique implementations (88 raw deployments)
 - DeFi Llama TVL: $14,619,915.18

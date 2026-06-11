@@ -5,8 +5,8 @@
 - Project: Noon (`noon`)
 - Website: [https://app.noon.capital/get?referralCode=f6f6df83-3c3a-479f-950a-d6f24907b4fa](https://app.noon.capital/get?referralCode=f6f6df83-3c3a-479f-950a-d6f24907b4fa)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:08.718Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:32:03.258Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: ethereum, hyperliquid, zksync-era
 - Contract surface: 40 unique implementations (83 raw deployments)
 - DeFi Llama TVL: $30,422,226.01

@@ -5,8 +5,8 @@
 - Project: Nostra (`nostra`)
 - Website: [https://nostra.finance/](https://nostra.finance/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:08.724Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:31:06.551Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $6,815,331.00

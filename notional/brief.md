@@ -7,8 +7,8 @@
 - Project: Notional (`notional`)
 - Website: [https://notional.finance](https://notional.finance)
 - Lifecycle: declining (Tier 0, 99.6% below peak)
-- Generated: 2026-06-10T20:59:08.741Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:32:11.229Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: arbitrum, ethereum
 - Contract surface: 79 unique implementations (351 raw deployments)
 - DeFi Llama TVL: $3,585,994.00

@@ -7,8 +7,8 @@
 - Project: ObeliskBTC (`obeliskbtc`)
 - Website: [https://obelisk.nodedao.com](https://obelisk.nodedao.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:08.753Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:31:09.367Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
 - Chains: ethereum
 - Contract surface: 19 unique implementations (32 raw deployments)
 - DeFi Llama TVL: $8,953,906.82

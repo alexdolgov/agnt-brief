@@ -411,12 +411,12 @@
 | [nodedao](./nodedao/) | $33.3M | 38.9% | $33.3M | active | 5 | 18 | 2026-06-11 |
 | [nomiswap](./nomiswap/) | $1.4M | 15.8% | ? | declining | 1 | 47 | 2026-05-24 |
 | [nonkyc](./nonkyc/) | $5.7M | 0.0% | ? | active | 0 | 4 | 2026-06-11 |
-| [noon](./noon/) | $20.4M | 3.3% | $18.0 | active | 5 | 40 | 2026-06-10 |
-| [nostra](./nostra/) | $6.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [notional](./notional/) | $1.2M | 19.2% | $755.7K | declining | 6 | 79 | 2026-06-10 |
+| [noon](./noon/) | $20.4M | 3.3% | $18.0 | active | 5 | 40 | 2026-06-11 |
+| [nostra](./nostra/) | $6.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [notional](./notional/) | $1.2M | 19.2% | $755.7K | declining | 6 | 79 | 2026-06-11 |
 | [nucleus](./nucleus/) | $996.4K | 50.0% | ? | active | 11 | 6 | 2026-05-26 |
-| [nuls](./nuls/) | $7.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 0 | 19 | 2026-06-10 |
+| [nuls](./nuls/) | $7.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 0 | 19 | 2026-06-11 |
 | [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-06-10 |
 | [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 1 | 40 | 2026-06-10 |
 | [odyssey-finance](./odyssey-finance/) | $10.2M | 0.0% | ? | active | 0 | 79 | 2026-06-10 |

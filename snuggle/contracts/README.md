@@ -1,6 +1,6 @@
 # snuggle — Contract Index
 
-89 unique implementations across 2 chains · 188 deployments · 12 audited · 40 unaudited · 37 unverified
+88 unique implementations across 2 chains · 179 deployments · 12 audited · 39 unaudited · 37 unverified
 
 ## adapter (8)
 
@@ -25,11 +25,10 @@
 | [SnuggleVaultAdminSatellite (3 deployments)](./arbitrum-42161/0x1195c074f898b7644ba732407619c9804dfe6dce/) | arbitrum | 3 deployments: base `0x5a332c...e4d271`; arbitrum [`0x1195c0...fe6dce`](./arbitrum-42161/0x1195c074f898b7644ba732407619c9804dfe6dce/); arbitrum `0x454059...d7d3f4` | ⚠️ Unaudited | Verified |
 | [SnuggleVaultUpgradeable (11 deployments)](./base-8453/0x02415b4e29e00cf76b27ab0403e1e1382d0224c0/) | base | 11 deployments: base [`0x02415b...0224c0`](./base-8453/0x02415b4e29e00cf76b27ab0403e1e1382d0224c0/); base `0x43ca8d...43f043`; base `0x7d27cd...2afd55`; base `0xd3923b...6b7470`; arbitrum `0x0d8039...da22da`; arbitrum `0x1638b6...894f9d`; arbitrum `0x413ca9...2630f6`; arbitrum `0x4b1cbd...bcb07d`; arbitrum `0x572351...9cd430`; arbitrum `0x9da886...bab114`; arbitrum `0xa86b81...a85c68` | ⚠️ Unaudited | Verified |
 
-## governance (4)
+## governance (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [NonfungiblePositionManager (9 deployments)](./arbitrum-42161/0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15/) | arbitrum | 9 deployments: arbitrum [`0x00c7f3...4dcd15`](./arbitrum-42161/0x00c7f3082833e796a5b3e4bd59f6642ff44dcd15/); arbitrum `0x197de4...e8d31b`; arbitrum `0x368435...babbc8`; arbitrum `0x46a15b...7f4364`; arbitrum `0x5c8d79...8c5905`; arbitrum `0xacdcc3...890db3`; arbitrum `0xe6988b...7a5383`; arbitrum `0xf0cbce...63ef49`; arbitrum `0xf41599...7020f9` | ⚠️ Unaudited | Verified |
 | [ProxyAdmin (4 deployments)](./base-8453/0x269dc2f974abed1c7a55a447758fcaef2dcca86f/) | base | 4 deployments: base [`0x269dc2...cca86f`](./base-8453/0x269dc2f974abed1c7a55a447758fcaef2dcca86f/); arbitrum `0x427bf5...5396c1`; arbitrum `0x8bca45...e037df`; arbitrum `0x999a74...a891de` | ✅ Audited | Verified |
 | [SliverConfig](./arbitrum-42161/0xe7b13bb95d5fc2ae028187d50e4f083573e299f1/) | arbitrum | [`0xe7b13b...e299f1`](./arbitrum-42161/0xe7b13bb95d5fc2ae028187d50e4f083573e299f1/) | ⚠️ Unaudited | Verified |
 | [StakingManager (3 deployments)](./arbitrum-42161/0x020ed29a0b1ced89c4309b32709a2a97699948bd/) | arbitrum | 3 deployments: base `0x3f928d...a270c1`; arbitrum [`0x020ed2...9948bd`](./arbitrum-42161/0x020ed29a0b1ced89c4309b32709a2a97699948bd/); arbitrum `0xd977c0...e2b40d` | ✅ Audited | Verified |

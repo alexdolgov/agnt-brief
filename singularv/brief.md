@@ -7,8 +7,8 @@
 - Project: SingularV (`singularv`)
 - Website: [https://app.morpho.org/ethereum/curator/singularv](https://app.morpho.org/ethereum/curator/singularv)
 - Lifecycle: declining (Tier 0, 92.8% below peak)
-- Generated: 2026-06-10T20:59:16.193Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:48:04.250Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: ethereum
 - Contract surface: 83 unique implementations (775 raw deployments)
 - DeFi Llama TVL: $2,544,044.73

@@ -1,6 +1,6 @@
 # smilee-finance — Contract Index
 
-186 unique implementations across 2 chains · 223 deployments · 1 audited · 22 unaudited · 163 unverified
+186 unique implementations across 2 chains · 223 deployments · 0 audited · 23 unaudited · 163 unverified
 
 ## adapter (1)
 
@@ -22,7 +22,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [FeeManager](./arbitrum-42161/0xff7699c47326516759be8902e87d09bcf4700d75/) | arbitrum | [`0xff7699...700d75`](./arbitrum-42161/0xff7699c47326516759be8902e87d09bcf4700d75/) | ⚠️ Unaudited | Verified |
-| [GBeraAssetManager](./berachain-80094/0x3f7755117f1fec1981aefb01887240dbf5f2ebce/) | berachain | [`0x3f7755...f2ebce`](./berachain-80094/0x3f7755117f1fec1981aefb01887240dbf5f2ebce/) | ✅ Audited | Verified |
+| [GBeraAssetManager](./berachain-80094/0x3f7755117f1fec1981aefb01887240dbf5f2ebce/) | berachain | [`0x3f7755...f2ebce`](./berachain-80094/0x3f7755117f1fec1981aefb01887240dbf5f2ebce/) | ⚠️ Unaudited | Verified |
 | [PositionManager (3 deployments)](./arbitrum-42161/0x49a07a6ba53f600106055764cb35f30a6c34056a/) | arbitrum | 3 deployments: arbitrum [`0x49a07a...34056a`](./arbitrum-42161/0x49a07a6ba53f600106055764cb35f30a6c34056a/); arbitrum `0x838370...05fee6`; arbitrum `0xabb4e0...fa10cb` | ⚠️ Unaudited | Verified |
 | [TimeLock](./arbitrum-42161/0x2f8b57d0d542945986250e51b9fb0059f095ae80/) | arbitrum | [`0x2f8b57...95ae80`](./arbitrum-42161/0x2f8b57d0d542945986250e51b9fb0059f095ae80/) | ⚠️ Unaudited | Verified |
 

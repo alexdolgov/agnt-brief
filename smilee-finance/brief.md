@@ -5,8 +5,8 @@
 - Project: Smilee Finance (`smilee-finance`)
 - Website: [https://smilee.finance/](https://smilee.finance/)
 - Lifecycle: active (Tier 0, 94.8% below peak)
-- Generated: 2026-06-10T20:59:16.217Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:47:08.766Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
 - Chains: arbitrum, berachain
 - Contract surface: 186 unique implementations (223 raw deployments)
 - DeFi Llama TVL: $1,740,942.00

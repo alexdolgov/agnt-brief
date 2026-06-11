@@ -5,8 +5,8 @@
 - Project: Plasma One (`plasma-one`)
 - Website: [https://www.plasma.to/one](https://www.plasma.to/one)
 - Lifecycle: active (Tier 0, 22.1% below peak)
-- Generated: 2026-06-10T20:59:09.341Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:51:15.613Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: plasma
 - Contract surface: 7 unique implementations (15 raw deployments)
 - DeFi Llama TVL: $2,436,871.64

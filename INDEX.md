@@ -447,12 +447,12 @@
 | [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 0 | 21 | 2026-06-11 |
 | [perpl](./perpl/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [pharaoh-exchange](./pharaoh-exchange/) | $50.3M | 0.0% | ? | active | 0 | 48 | 2026-06-11 |
-| [phoenix](./phoenix/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [pickle](./pickle/) | $2.9M | 2.7% | $2.9M | declining | 4 | 235 | 2026-06-10 |
-| [piku](./piku/) | $21.4M | 0.0% | $21.4M | active | 2 | 29 | 2026-06-10 |
+| [phoenix](./phoenix/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [pickle](./pickle/) | $2.9M | 2.7% | $2.9M | declining | 4 | 235 | 2026-06-11 |
+| [piku](./piku/) | $21.4M | 0.0% | $21.4M | active | 2 | 29 | 2026-06-11 |
 | [pionex](./pionex/) | $37.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
-| [planet](./planet/) | $778.3M | 7.7% | $778.3M | declining | 1 | 34 | 2026-06-10 |
-| [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | active | 0 | 7 | 2026-06-10 |
+| [planet](./planet/) | $778.3M | 7.7% | $778.3M | declining | 1 | 34 | 2026-06-11 |
+| [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | active | 0 | 7 | 2026-06-11 |
 | [plasma-saving-vaults](./plasma-saving-vaults/) | $2.6M | 0.0% | $2.6M | declining | 0 | 6 | 2026-06-10 |
 | [pleasing-gold](./pleasing-gold/) | $88.1M | 0.0% | $88.1M | unknown | 0 | 8 | 2026-06-10 |
 | [pnetwork](./pnetwork/) | $13.1M | 0.0% | ? | declining | 0 | 10 | 2026-06-10 |

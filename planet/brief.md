@@ -7,8 +7,8 @@
 - Project: Planet (`planet`)
 - Website: [https://app.planet.finance/](https://app.planet.finance/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:09.336Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:52:22.770Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: bsc
 - Contract surface: 34 unique implementations (298 raw deployments)
 - DeFi Llama TVL: $1,820,176.00

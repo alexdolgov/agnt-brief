@@ -7,8 +7,8 @@
 - Project: Pickle (`pickle`)
 - Website: [https://pickle.finance/](https://pickle.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:09.318Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:54:27.464Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum
 - Contract surface: 235 unique implementations (622 raw deployments)
 - DeFi Llama TVL: $4,646,287.41

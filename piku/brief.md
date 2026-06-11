@@ -5,8 +5,8 @@
 - Project: Piku (`piku`)
 - Website: [https://piku.co/](https://piku.co/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:09.323Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:51:44.344Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum
 - Contract surface: 29 unique implementations (52 raw deployments)
 - DeFi Llama TVL: $17,202,624.49

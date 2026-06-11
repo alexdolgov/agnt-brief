@@ -5,8 +5,8 @@
 - Project: Punks Terminal (`punks-terminal`)
 - Website: [https://punks.lightyear.build/stash](https://punks.lightyear.build/stash)
 - Lifecycle: active (Tier 0, 35.5% below peak)
-- Generated: 2026-06-10T20:59:09.437Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:05:36.331Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,490,670.98

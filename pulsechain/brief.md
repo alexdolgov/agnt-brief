@@ -5,8 +5,8 @@
 - Project: Pulsechain (`pulsechain`)
 - Website: [https://pulsechain.com/](https://pulsechain.com/)
 - Lifecycle: active (Tier 0, 70.3% below peak)
-- Generated: 2026-06-10T20:59:09.400Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:05:39.326Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: ethereum
 - Contract surface: 5 unique implementations (10 raw deployments)
 - DeFi Llama TVL: $51,978,339.28

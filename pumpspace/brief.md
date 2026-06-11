@@ -5,8 +5,8 @@
 - Project: PumpSpace (`pumpspace`)
 - Website: [https://pumpspace.io/](https://pumpspace.io/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:09.429Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T02:07:42.871Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
 - Chains: avalanche
 - Contract surface: 666 unique implementations (786 raw deployments)
 - DeFi Llama TVL: $3,867,225.00

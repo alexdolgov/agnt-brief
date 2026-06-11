@@ -1,6 +1,6 @@
 # pumpspace — Contract Index
 
-667 unique implementations on avalanche · 787 deployments · 2 audited · 5 unaudited · 660 unverified
+666 unique implementations on avalanche · 786 deployments · 2 audited · 4 unaudited · 660 unverified
 
 ## adapter (3)
 
@@ -76,11 +76,10 @@
 | Proxy (impl: 0xf582f02738d4cbec56900b9e220bdb6a6f15ef50) | avalanche | `0x096f6d...10140c` | ❓ Unverified | Unverified |
 | [TransparentUpgradeableProxy (83 deployments)](./avalanche-43114/0x0091eb7bd9b40d258695335bebf07f4d31efe2e8/) | avalanche | 83 deployments: avalanche [`0x0091eb...efe2e8`](./avalanche-43114/0x0091eb7bd9b40d258695335bebf07f4d31efe2e8/); avalanche `0x03be74...f92f39`; avalanche `0x0565d2...b95093`; avalanche `0x0567ea...2e61d9`; avalanche `0x05c36f...14f9a9`; avalanche `0x0655fa...c46f6a`; avalanche `0x08ea82...18a999`; avalanche `0x0ceca8...f97e7c`; avalanche `0x170af5...fa0cf1`; avalanche `0x1bc3b0...cef890`; avalanche `0x1c654e...19128d`; avalanche `0x1cb5af...2f7762`; avalanche `0x1cf028...f2d30d`; avalanche `0x20d6cc...25471f`; avalanche `0x264f4f...48966d`; avalanche `0x2b0771...f95ac0`; avalanche `0x2b20f3...3c6a78`; avalanche `0x33ad5c...40a190`; avalanche `0x33f436...74ef65`; avalanche `0x36206c...9b38c8`; avalanche `0x377366...12b342`; avalanche `0x38554e...dbb0dc`; avalanche `0x388983...cd0aca`; avalanche `0x3d04c0...a2fa41`; avalanche `0x40b937...1e6e4e`; avalanche `0x4731bc...711d8d`; avalanche `0x53cb24...bc88d7`; avalanche `0x53ee88...b640ba`; avalanche `0x558ff3...3dca38`; avalanche `0x567a6d...c37205`; avalanche `0x56d6cd...2128dd`; avalanche `0x5f4038...e7798e`; avalanche `0x63eadf...7102c7`; avalanche `0x65ba62...cef275`; avalanche `0x68e315...163136`; avalanche `0x6ca89f...cb9fcf`; avalanche `0x6f0885...7811bf`; avalanche `0x7023be...77f0d6`; avalanche `0x703079...09fc31`; avalanche `0x72a992...514018`; avalanche `0x77c8df...4f474f`; avalanche `0x7c12fc...4d046c`; avalanche `0x83fff7...021a73`; avalanche `0x84c931...284c97`; avalanche `0x89aee1...f05dad`; avalanche `0x8a23e3...e321bf`; avalanche `0x8f164d...76be5c`; avalanche `0x9070fb...55e55e`; avalanche `0x95207b...f550cf`; avalanche `0x9c6bbe...7e1b2f`; avalanche `0xa84304...0547ba`; avalanche `0xa90f84...8078e8`; avalanche `0xaf52c1...838de2`; avalanche `0xb10d16...7e5866`; avalanche `0xb53486...17fa72`; avalanche `0xb56ef6...660c48`; avalanche `0xb6e2f9...ebfda8`; avalanche `0xb71a01...1e1f91`; avalanche `0xb8c9d8...849657`; avalanche `0xbba343...960acf`; avalanche `0xbce94b...050961`; avalanche `0xc13e4d...5de4b3`; avalanche `0xc1ecba...146bfd`; avalanche `0xc5fd93...7174bd`; avalanche `0xc7a901...8aa357`; avalanche `0xc91c9f...d3a04e`; avalanche `0xd4ed16...5332ce`; avalanche `0xd6d1dc...0dd368`; avalanche `0xd6f5fe...2ddfb0`; avalanche `0xdbf831...93a7bf`; avalanche `0xdcf100...587dfc`; avalanche `0xdf724b...34e3e5`; avalanche `0xe64bcb...201a27`; avalanche `0xe749c1...037ced`; avalanche `0xe8288d...f7950a`; avalanche `0xe88ab8...b9b0b1`; avalanche `0xebe319...c0e78f`; avalanche `0xee27a3...598068`; avalanche `0xee9d94...6fca06`; avalanche `0xfbff2e...f86d30`; avalanche `0xfc320c...8276fd`; avalanche `0xfddb02...90f7a4`; avalanche `0xfea23d...e2dc52` | ✅ Audited | Verified |
 
-## unknown (608)
+## unknown (607)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AutoFarmV2_CrossChain](./avalanche-43114/0x864a0b7f8466247a0e44558d29cdc37d4623f213/) | avalanche | [`0x864a0b...23f213`](./avalanche-43114/0x864a0b7f8466247a0e44558d29cdc37d4623f213/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | avalanche | `0x0086e2...210f85` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x0095e0...1bff5b` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x00a194...1b608c` | ❓ Unverified | Unverified |

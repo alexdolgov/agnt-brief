@@ -7,8 +7,8 @@
 - Project: MDEX (`mdex`)
 - Website: [https://mdex.com/](https://mdex.com/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:07.446Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:56:40.087Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: bsc, heco
 - Contract surface: 13 unique implementations (24 raw deployments)
 - DeFi Llama TVL: $1,374,300.40

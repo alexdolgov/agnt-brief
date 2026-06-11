@@ -353,12 +353,12 @@
 | [mantle-restaking](./mantle-restaking/) | $79.7M | 0.0% | ? | active | 13 | 8 | 2026-06-11 |
 | [mantra-dao](./mantra-dao/) | $611.0M | 0.0% | $611.0M | declining | 1 | 195 | 2026-06-11 |
 | [matstake](./matstake/) | $4.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [maverick-protocol](./maverick-protocol/) | $26.8M | 35.3% | $26.8M | declining | 7 | 93 | 2026-06-10 |
-| [mcdex](./mcdex/) | $1.1M | 8.3% | $1.1M | dead | 2 | 1465 | 2026-06-10 |
-| [mdex](./mdex/) | $235.5K | 85.7% | $20.2K | declining | 3 | 13 | 2026-06-10 |
-| [meeds-finance](./meeds-finance/) | $1.8M | 0.0% | $1.8M | unknown | 0 | 4 | 2026-06-10 |
+| [maverick-protocol](./maverick-protocol/) | $26.8M | 35.3% | $26.8M | declining | 7 | 93 | 2026-06-11 |
+| [mcdex](./mcdex/) | $1.1M | 8.3% | $1.1M | dead | 2 | 1465 | 2026-06-11 |
+| [mdex](./mdex/) | $235.5K | 85.7% | $20.2K | declining | 3 | 13 | 2026-06-11 |
+| [meeds-finance](./meeds-finance/) | $1.8M | 0.0% | $1.8M | unknown | 0 | 4 | 2026-06-11 |
 | [meld-gold](./meld-gold/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-05-31 |
-| [mendi-finance](./mendi-finance/) | $79.1M | 10.7% | $79.1M | dead | 4 | 39 | 2026-06-10 |
+| [mendi-finance](./mendi-finance/) | $79.1M | 10.7% | $79.1M | dead | 4 | 39 | 2026-06-11 |
 | [mento](./mento/) | $19.6M | 0.0% | ? | active | 11 | 180 | 2026-06-10 |
 | [merchant-moe](./merchant-moe/) | $37.3M | 50.0% | ? | unknown | 1 | 53 | 2026-05-31 |
 | [merlinswap](./merlinswap/) | $8.4M | 0.0% | ? | declining | 0 | 2 | 2026-06-10 |

@@ -7,8 +7,8 @@
 - Project: Meeds Finance (`meeds-finance`)
 - Website: [https://www.meeds.io/](https://www.meeds.io/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:07.449Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:55:25.045Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: ethereum
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $1,692,897.47

@@ -7,8 +7,8 @@
 - Project: Maverick Protocol (`maverick-protocol`)
 - Website: [https://www.mav.xyz](https://www.mav.xyz)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:07.294Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:58:47.503Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: arbitrum, base, bsc, ethereum, scroll, zksync-era
 - Contract surface: 93 unique implementations (141 raw deployments)
 - DeFi Llama TVL: $2,200,711.00

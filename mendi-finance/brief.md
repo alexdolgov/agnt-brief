@@ -7,8 +7,8 @@
 - Project: Mendi Finance (`mendi-finance`)
 - Website: [https://malda.xyz/](https://malda.xyz/)
 - Lifecycle: dead (Tier 1, sunsetting)
-- Generated: 2026-06-10T20:59:07.456Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:58:42.675Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: linea
 - Contract surface: 39 unique implementations (122 raw deployments)
 - DeFi Llama TVL: $2,009,233.43

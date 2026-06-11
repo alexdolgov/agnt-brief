@@ -1,0 +1,17 @@
+{
+  "address": "0x53276a64d4b41ba3e40c31a0136a9054735b530d",
+  "chain_id": 42161,
+  "contract_name": "MuxPoolUpdater202404",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-11T00:58:35.690Z"
+}

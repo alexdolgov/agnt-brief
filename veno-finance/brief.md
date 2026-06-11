@@ -5,11 +5,11 @@
 - Project: Veno Finance (`veno-finance`)
 - Website: [https://veno.finance/](https://veno.finance/)
 - Lifecycle: active (Tier 0, 72.5% below peak)
-- Generated: 2026-06-11T03:54:51.540Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
+- Generated: 2026-06-11T11:47:01.210Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: cronos, ethereum, zksync-era
 - Contract surface: 49 unique implementations (56 raw deployments)
-- DeFi Llama TVL: $42,842,322.56
+- DeFi Llama TVL: $37,489,443.49
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ The Liquid Staking Tokens family uses ERC1967Proxy contracts to enable upgradeab
 - Unverified implementations: 40
 - Unique implementations: 49
 - Raw deployments: 56
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2022-11 (stale)
+- Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -123,6 +123,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Rendered PDF capture](https://220372747-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FoOzYIbXVNt7O4xPrl0tz%2Fuploads%2FkW555WIVoUbzUslDZTlZ%2FSlowMist%20Audit%20Report%20-%20Veno-Liquid%20Staking%20Contracts%20Core.pdf) | SlowMist | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://220372747-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FoOzYIbXVNt7O4xPrl0tz%2Fuploads%2FgvneLOUCCjnAQYcHhFj7%2FSlowMist%20Audit%20Report%20-%20Veno%20-%20Liquid%20Staking%20Contracts%20Tokenomic.pdf) | SlowMist | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://220372747-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FoOzYIbXVNt7O4xPrl0tz%2Fuploads%2FtzPxX5tBafm0DUCRrLqa%2FSlowMist%20Audit%20Report%20-%20Veno%20Liquid%20Staking%20Strategy%20Vault.pdf) | SlowMist | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -151,9 +154,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11713] Rendered PDF capture
+- [11714] Rendered PDF capture
+- [11715] Rendered PDF capture
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -6,8 +6,8 @@
 | Address | `0x5d8d3ac6d21c016f9c935030480b7057b21ec804` |
 | Role | token |
 | Origin | needs_review |
-| Audited | Yes |
-| Audits | [Sigma Prime Audit Report July 21.pdf](https://github.com/AngleProtocol/angle-core/blob/main/audits/Sigma%20Prime%20Audit%20Report%20July%2021.pdf) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 2 (ethereum [`0x5d8d3ac6d21c016f9c935030480b7057b21ec804`](../0x5d8d3ac6d21c016f9c935030480b7057b21ec804/); ethereum `0xb3b209bb213a5da5b947c56f2c770b3e1015f1fe`) |
 | Proxy | Yes → `0x6cd24a...07eaf5` |
 | Source | Sourcify (full match) |

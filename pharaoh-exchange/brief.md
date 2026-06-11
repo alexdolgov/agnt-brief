@@ -3,13 +3,13 @@
 ## Project Overview
 
 - Project: Pharaoh Exchange (`pharaoh-exchange`)
-- Website: [https://pharaoh.exchange](https://pharaoh.exchange)
+- Website: [https://www.phar.gg/](https://www.phar.gg/)
 - Lifecycle: active (Tier 0, 28.6% below peak)
-- Generated: 2026-06-11T01:49:16.538Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-11T11:47:01.198Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: avalanche
 - Contract surface: 48 unique implementations (95 raw deployments)
-- DeFi Llama TVL: $50,255,510.00
+- DeFi Llama TVL: $38,708,358.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ The V3 family relies on shared infrastructure contracts like AccessHub for acces
 - Unverified implementations: 12
 - Unique implementations: 48
 - Raw deployments: 95
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2024-10 (aging)
+- Staleness: 0 fresh, 1 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -122,6 +122,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Report](https://cantina.xyz/portfolio/98695d75-ee7d-4e1c-aa96-6379f73c5b2c) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Report](https://diligence.security/audits/2024/08/ramses-v3) | Consensys Diligence | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Report](https://code4rena.com/reports/2024-10-ramses-exchange) | Code4rena | Contest | 2024-10 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -171,9 +174,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11649] Report
+- [11650] Report
+- [11651] Report
 
 Fork inheritance lineage and inherited audits are included when available.

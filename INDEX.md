@@ -31,7 +31,7 @@
 | [ambient](./ambient/) | $2.7M | 64.7% | ? | declining | 3 | 30 | 2026-06-10 |
 | [ambire-wallet](./ambire-wallet/) | $5.8M | 0.0% | $5.8M | active | 12 | 9 | 2026-06-10 |
 | [amnis-finance](./amnis-finance/) | $11.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
-| [angle](./angle/) | $1.4B | 1.7% | $1.4B | declining | 1 | 547 | 2026-06-10 |
+| [angle](./angle/) | $1.4B | 0.0% | $1.4B | declining | 3 | 547 | 2026-06-11 |
 | [angles](./angles/) | $441.0K | 4.0% | $7.5 | active | 1 | 40 | 2026-06-10 |
 | [angstrom](./angstrom/) | $11.3M | 7.7% | ? | declining | 3 | 13 | 2026-06-10 |
 | [ankr](./ankr/) | $21.7M | 0.0% | ? | active | 14 | 6 | 2026-06-10 |
@@ -446,7 +446,7 @@
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-06-11 |
 | [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 0 | 21 | 2026-06-11 |
 | [perpl](./perpl/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [pharaoh-exchange](./pharaoh-exchange/) | $50.3M | 0.0% | ? | active | 0 | 48 | 2026-06-11 |
+| [pharaoh-exchange](./pharaoh-exchange/) | $38.7M | 0.0% | ? | active | 3 | 48 | 2026-06-11 |
 | [phoenix](./phoenix/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [pickle](./pickle/) | $2.9M | 2.7% | $2.9M | declining | 4 | 235 | 2026-06-11 |
 | [piku](./piku/) | $21.4M | 0.0% | $21.4M | active | 2 | 29 | 2026-06-11 |
@@ -542,7 +542,7 @@
 | [singularv](./singularv/) | $1.1B | 11.4% | $1.1B | declining | 7 | 83 | 2026-06-11 |
 | [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 0 | 4 | 2026-06-11 |
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |
-| [smilee-finance](./smilee-finance/) | $1.7M | 0.0% | ? | active | 0 | 186 | 2026-06-11 |
+| [smilee-finance](./smilee-finance/) | $1.1M | 0.0% | ? | active | 3 | 186 | 2026-06-11 |
 | [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 12 | 2026-06-11 |
 | [snuggle](./snuggle/) | $0.0 | 23.5% | $0.0 | active | 2 | 88 | 2026-06-11 |
 | [sofa.org](./sofa.org/) | $49.2K | 33.3% | $46.8K | declining | 8 | 38 | 2026-05-24 |
@@ -665,7 +665,7 @@
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | declining | 0 | 28 | 2026-06-11 |
 | [velodrome](./velodrome/) | $40.2M | 40.4% | ? | active | 6 | 52 | 2026-06-11 |
 | [velvet.capital](./velvet.capital/) | $95.2M | 77.8% | $95.2M | declining | 13 | 420 | 2026-06-11 |
-| [veno-finance](./veno-finance/) | $42.8M | 0.0% | ? | active | 0 | 49 | 2026-06-11 |
+| [veno-finance](./veno-finance/) | $37.5M | 0.0% | ? | active | 3 | 49 | 2026-06-11 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | active | 2 | 4 | 2026-06-11 |
 | [verio](./verio/) | $7.2M | 0.0% | ? | unknown | 11 | 0 | 2026-06-11 |
 | [verus-market](./verus-market/) | $9.6M | 0.0% | ? | declining | 0 | 32 | 2026-06-11 |
@@ -695,7 +695,7 @@
 | [yamato-protocol](./yamato-protocol/) | $910.9 | 47.8% | $818.3 | active | 3 | 63 | 2026-05-24 |
 | [ybtc.b](./ybtc.b/) | $83.9M | 0.0% | ? | active | 6 | 12 | 2026-05-31 |
 | [yei-finance](./yei-finance/) | $32.3M | 0.0% | ? | declining | 1 | 44 | 2026-06-11 |
-| [yield-yak](./yield-yak/) | $16.6M | 0.0% | ? | active | 0 | 8 | 2026-06-11 |
+| [yield-yak](./yield-yak/) | $13.7M | 0.0% | ? | active | 3 | 8 | 2026-06-11 |
 | [yieldfi](./yieldfi/) | $43.7M | 70.6% | $16.3M | active | 6 | 22 | 2026-06-11 |
 | [yieldnest](./yieldnest/) | $19.2M | 44.8% | $295.1K | active | 16 | 33 | 2026-06-11 |
 | [yieldseeker](./yieldseeker/) | $102.9M | 0.0% | $102.9M | active | 1 | 190 | 2026-06-11 |

@@ -7,11 +7,11 @@
 - Project: Angle (`angle`)
 - Website: [https://app.angle.money](https://app.angle.money)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:58:57.541Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T11:48:03.272Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, avalanche, celo, ethereum, gnosis, optimism, polygon
 - Contract surface: 547 unique implementations (1207 raw deployments)
-- DeFi Llama TVL: $3,707,604.51
+- DeFi Llama TVL: $2,044,033.69
 - On-chain TVL (included contracts): $1,397,790,797.71
 - TVL by chain: Optimism $1,006,266,437.31 | Ethereum $391,121,714.62 | Celo $222,346.39 | Polygon $93,159.01 | Arbitrum $87,140.37
 
@@ -25,39 +25,31 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 5/286 (1.7%)
-- Verified + Unaudited implementations: 279
+- Verified implementations audited: 0/286 (0.0%)
+- Verified + Unaudited implementations: 284
 - Verified by bytecode match: 2
 - Unverified implementations: 261
 - Unique implementations: 547
 - Raw deployments: 1207
-- Audits discovered: 1
-- Scoreable audits (matched contracts): 1
+- Audits discovered: 3
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $1,397,790,797.71
 - Latest audit: 2021-09 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $1,397,790,797.71 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| Sigma Prime | Tier 2 | 5 | 1.7% | 2021-09 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (5)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| FeeManager | governance | ethereum | 2 deployments: ethereum [`0x4a5e96...7e95a4`](./contracts/ethereum-1/0x4a5e967100ca28566cb2a39216992c6db57e95a4/); ethereum `0x9c8438...115bc9` | ✅ Audited |
-| PerpetualManagerFront | governance | ethereum | 2 deployments: ethereum [`0x4121a2...592114`](./contracts/ethereum-1/0x4121a258674e507c990cdf390f74d4ef27592114/); ethereum `0x98fdbc...a4cea5` | ✅ Audited |
-| RewardsDistributor | operational_periphery | optimism | [`0x5d5bea...3f784f`](./contracts/optimism-10/0x5d5bea9f0fc13d967511668a60a3369fd53f784f/) | ✅ Audited |
-| SanToken | token | ethereum | 2 deployments: ethereum [`0x5d8d3a...1ec804`](./contracts/ethereum-1/0x5d8d3ac6d21c016f9c935030480b7057b21ec804/); ethereum `0xb3b209...15f1fe` | ✅ Audited |
-| StakingRewards | unknown | ethereum | 7 deployments: ethereum [`0x3d7e67...db6ad5`](./contracts/ethereum-1/0x3d7e670d105e8fbcae3bf2bfc54324302cdb6ad5/); ethereum `0x4a0772...6cdb49`; ethereum `0x7ee4a0...7b6a76`; ethereum `0xbb9485...9c40c2`; ethereum `0xbcb307...309dc6`; ethereum `0xd7c1b4...34f935`; polygon `0xcc0098...0f7616` | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (279)
+### ⚠️ Verified + Unaudited (284)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -155,6 +147,7 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | FeeCurrencyDirectoryProxy | unknown | celo | [`0x60f636...d210fa`](./contracts/celo-42220/0x60f6362550868fd1d6e92b2f680f5e02f4d210fa/) | ⚠️ Unaudited |
 | FeeCurrencyWhitelist | unknown | celo | 3 deployments: celo [`0x07bd1d...619f58`](./contracts/celo-42220/0x07bd1d6c15c9caed92bedec84f1ae0fc54619f58/); celo `0xa9d609...881afd`; celo `0xbc7534...220953` | ⚠️ Unaudited |
 | FeeHandler | unknown | celo | 4 deployments: celo [`0x558c20...fea36c`](./contracts/celo-42220/0x558c209b246d5f21cc32a11da29a1cdbdcfea36c/); celo `0x90ed9a...7373a5`; celo `0xcd4377...6b8778`; celo `0xea8f09...0fa97f` | ⚠️ Unaudited |
+| FeeManager | governance | ethereum | 2 deployments: ethereum [`0x4a5e96...7e95a4`](./contracts/ethereum-1/0x4a5e967100ca28566cb2a39216992c6db57e95a4/); ethereum `0x9c8438...115bc9` | ⚠️ Unaudited |
 | FiatTokenV2_1 | token | ethereum | [`0x5e007b...5e4753`](./contracts/ethereum-1/0x5e007bc170861e27952ca4118d7af3e8aa5e4753/) | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | ethereum | 2 deployments: ethereum [`0x1abaea...1bc33c`](./contracts/ethereum-1/0x1abaea1f7c830bd89acc67ec4af516284b1bc33c/); ethereum `0x5e620d...e79ce2` | ⚠️ Unaudited |
 | Fundraising | unknown | optimism | [`0x5b8978...f81e5f`](./contracts/optimism-10/0x5b89789fb230d17c4b0ae1461f26828554f81e5f/) | ⚠️ Unaudited |
@@ -271,6 +264,7 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | ParetoDollar | unknown | ethereum | 2 deployments: ethereum [`0x7b70fc...68c337`](./contracts/ethereum-1/0x7b70fca01ab3745e24303b56f72296614768c337/); ethereum `0x97ccc1...e54c88` | ⚠️ Unaudited |
 | ParetoDollarQueue | unknown | ethereum | 3 deployments: ethereum [`0x07ace8...a4c3fd`](./contracts/ethereum-1/0x07ace8d682987c2219fe8cd314b858c326a4c3fd/); ethereum `0xa77800...a50d89`; ethereum `0xf81b88...669997` | ⚠️ Unaudited |
 | ParetoDollarStaking | unknown | ethereum | 3 deployments: ethereum [`0x271c61...0edf16`](./contracts/ethereum-1/0x271c616157e69a43b4977412a64183cf110edf16/); ethereum `0x7baf5f...b617f8`; ethereum `0xc238a4...e029c8` | ⚠️ Unaudited |
+| PerpetualManagerFront | governance | ethereum | 2 deployments: ethereum [`0x4121a2...592114`](./contracts/ethereum-1/0x4121a258674e507c990cdf390f74d4ef27592114/); ethereum `0x98fdbc...a4cea5` | ⚠️ Unaudited |
 | PriceOracle | operational_periphery | ethereum | [`0x972a64...5ef181`](./contracts/ethereum-1/0x972a64d108e250df98dbeac8170678501f5ef181/) | ⚠️ Unaudited |
 | PriceOracleV2 | operational_periphery | optimism | 2 deployments: ethereum `0xb5a8f0...95e8c5`; optimism [`0x22c7e5...1c0fea`](./contracts/optimism-10/0x22c7e5ce392bc951f63b68a8020b121a8e1c0fea/) | ⚠️ Unaudited |
 | PriceOracleV3 | operational_periphery | ethereum | [`0x886b10...c201f1`](./contracts/ethereum-1/0x886b102953ab3eaf719df7b80b03cd5203c201f1/) | ⚠️ Unaudited |
@@ -283,8 +277,10 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | ReserveManager | governance | optimism | 2 deployments: optimism [`0xb112e4...bfb110`](./contracts/optimism-10/0xb112e4cc83f0df154fe3fb088109be2ac5bfb110/); optimism `0xe39ccd...9370a3` | ⚠️ Unaudited |
 | Reservoir | unknown | ethereum | [`0x031f71...1e42c6`](./contracts/ethereum-1/0x031f71b5369c251a6544c41ce059e6b3d61e42c6/) | ⚠️ Unaudited |
 | RewardManager | governance | optimism | [`0x5da3ea...c3f5c2`](./contracts/optimism-10/0x5da3ea9167e159de0d3003c21c86db1334c3f5c2/) | ⚠️ Unaudited |
+| RewardsDistributor | operational_periphery | optimism | [`0x5d5bea...3f784f`](./contracts/optimism-10/0x5d5bea9f0fc13d967511668a60a3369fd53f784f/) | ⚠️ Unaudited |
 | Router | adapter | optimism | [`0xa132da...23f9c9`](./contracts/optimism-10/0xa132dab612db5cb9fc9ac426a0cc215a3423f9c9/) | ⚠️ Unaudited |
 | Sanctuary | unknown | ethereum | [`0xac1486...1247d3`](./contracts/ethereum-1/0xac14864ce5a98af3248ffbf549441b04421247d3/) | ⚠️ Unaudited |
+| SanToken | token | ethereum | 2 deployments: ethereum [`0x5d8d3a...1ec804`](./contracts/ethereum-1/0x5d8d3ac6d21c016f9c935030480b7057b21ec804/); ethereum `0xb3b209...15f1fe` | ⚠️ Unaudited |
 | SavingsNameable | unknown | ethereum | 5 deployments: ethereum [`0x002222...ab5776`](./contracts/ethereum-1/0x0022228a2cc5e7ef0274a7baa600d44da5ab5776/); optimism [`0x002222...ab5776`](./contracts/optimism-10/0x0022228a2cc5e7ef0274a7baa600d44da5ab5776/); gnosis [`0x002222...ab5776`](./contracts/gnosis-100/0x0022228a2cc5e7ef0274a7baa600d44da5ab5776/); arbitrum [`0x002222...ab5776`](./contracts/arbitrum-42161/0x0022228a2cc5e7ef0274a7baa600d44da5ab5776/); celo [`0x002222...ab5776`](./contracts/celo-42220/0x0022228a2cc5e7ef0274a7baa600d44da5ab5776/) | ⚠️ Unaudited |
 | ScoreManager | governance | celo | 3 deployments: celo [`0x1077e8...d5a937`](./contracts/celo-42220/0x1077e8bd92b2fe31f605631390cb7436aed5a937/); celo `0xba8332...1bf3eb`; celo `0xef3b9c...2f603b` | ⚠️ Unaudited |
 | ScoreManagerProxy | governance | celo | [`0x19cdf4...620505`](./contracts/celo-42220/0x19cdf4689d9ee3590fdbe75adefee375b4620505/) | ⚠️ Unaudited |
@@ -310,6 +306,7 @@ The Angle family is a monolithic CDP stablecoin system where core borrowing and 
 | StakeDaoNFTPalace | token | ethereum | [`0x221738...8c751f`](./contracts/ethereum-1/0x221738f73fa4bfca91918e77d112b87d918c751f/) | ⚠️ Unaudited |
 | StakedDistributor | operational_periphery | optimism | 2 deployments: optimism [`0x41279e...171166`](./contracts/optimism-10/0x41279e29586eb20f9a4f65e031af09fced171166/); optimism `0xdc05d8...f12618` | ⚠️ Unaudited |
 | StakeUIHelper | periphery | ethereum | 3 deployments: ethereum [`0x06abcc...76ae68`](./contracts/ethereum-1/0x06abcc3b98b7310f50197f0f9cec6cf6e176ae68/); ethereum `0x76fdb6...42b1e8`; ethereum `0xfbddac...926f19` | ⚠️ Unaudited |
+| StakingRewards | unknown | ethereum | 7 deployments: ethereum [`0x3d7e67...db6ad5`](./contracts/ethereum-1/0x3d7e670d105e8fbcae3bf2bfc54324302cdb6ad5/); ethereum `0x4a0772...6cdb49`; ethereum `0x7ee4a0...7b6a76`; ethereum `0xbb9485...9c40c2`; ethereum `0xbcb307...309dc6`; ethereum `0xd7c1b4...34f935`; polygon `0xcc0098...0f7616` | ⚠️ Unaudited |
 | Strategy | core_logic | ethereum | 2 deployments: ethereum [`0x2d78b6...9deb2e`](./contracts/ethereum-1/0x2d78b6f5dc8985d90145f27c8f5a3782eb9deb2e/); ethereum `0xb46a42...a8907e` | ⚠️ Unaudited |
 | StrategyAngleStakeDao | core_logic | ethereum | [`0x9eef12...fce257`](./contracts/ethereum-1/0x9eef1244ae7aeedeaa3df2a91b63eaabc4fce257/) | ⚠️ Unaudited |
 | StrategyBunchyDev | core_logic | ethereum | [`0x7d3b52...821911`](./contracts/ethereum-1/0x7d3b52a6ae25545f825bc230f7011fc97e821911/) | ⚠️ Unaudited |
@@ -628,7 +625,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Sigma Prime Audit Report July 21.pdf](https://github.com/AngleProtocol/angle-core/blob/main/audits/Sigma%20Prime%20Audit%20Report%20July%2021.pdf) | Sigma Prime | Audit | 2021-09 | stale | Direct | contract_name | 14 | high |
+| [Chainsecurity Audit Report December 21.pdf](https://github.com/AngleProtocol/angle-core/blob/main/audits/Chainsecurity%20Audit%20Report%20December%2021.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Chainsecurity Audit Report July 21.pdf](https://github.com/AngleProtocol/angle-core/blob/main/audits/Chainsecurity%20Audit%20Report%20July%2021.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Sigma Prime Audit Report July 21.pdf](https://github.com/AngleProtocol/angle-core/blob/main/audits/Sigma%20Prime%20Audit%20Report%20July%2021.pdf) | Sigma Prime | Audit | 2021-09 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -679,6 +678,7 @@ Verified + unaudited native implementations ranked by TVL:
 | celo | [`0x0ad5b1...d6aff2`](./contracts/celo-42220/0x0ad5b1d0c25ecf6266dd951403723b2687d6aff2/) | FederatedAttestations | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x15f344...2c6276`](./contracts/celo-42220/0x15f344b9e6c3cb6f0376a36a64928b13f62c6276/) | FeeCurrencyDirectory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x60f636...d210fa`](./contracts/celo-42220/0x60f6362550868fd1d6e92b2f680f5e02f4d210fa/) | FeeCurrencyDirectoryProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4a5e96...7e95a4`](./contracts/ethereum-1/0x4a5e967100ca28566cb2a39216992c6db57e95a4/) | FeeManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5e007b...5e4753`](./contracts/ethereum-1/0x5e007bc170861e27952ca4118d7af3e8aa5e4753/) | FiatTokenV2_1 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1abaea...1bc33c`](./contracts/ethereum-1/0x1abaea1f7c830bd89acc67ec4af516284b1bc33c/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x5b8978...f81e5f`](./contracts/optimism-10/0x5b89789fb230d17c4b0ae1461f26828554f81e5f/) | Fundraising | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -752,6 +752,7 @@ Verified + unaudited native implementations ranked by TVL:
 | celo | [`0x907f37...726aa0`](./contracts/celo-42220/0x907f37a0e9b003df15500c025f7acb496a726aa0/) | Reserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0xb112e4...bfb110`](./contracts/optimism-10/0xb112e4cc83f0df154fe3fb088109be2ac5bfb110/) | ReserveManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x5da3ea...c3f5c2`](./contracts/optimism-10/0x5da3ea9167e159de0d3003c21c86db1334c3f5c2/) | RewardManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0x5d5bea...3f784f`](./contracts/optimism-10/0x5d5bea9f0fc13d967511668a60a3369fd53f784f/) | RewardsDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0xa132da...23f9c9`](./contracts/optimism-10/0xa132dab612db5cb9fc9ac426a0cc215a3423f9c9/) | Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xac1486...1247d3`](./contracts/ethereum-1/0xac14864ce5a98af3248ffbf549441b04421247d3/) | Sanctuary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x002222...ab5776`](./contracts/ethereum-1/0x0022228a2cc5e7ef0274a7baa600d44da5ab5776/) | SavingsNameable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -799,9 +800,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=14
+- Extraction confidence breakdown: n/a
+- Match method counts: n/a
+
+Zero-match audit list:
+
+- [11740] Chainsecurity Audit Report December 21.pdf
+- [11741] Chainsecurity Audit Report July 21.pdf
+- [11742] Sigma Prime Audit Report July 21.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

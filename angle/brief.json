@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "angle",
-  "generated_at": "2026-06-10T20:58:57.541Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T11:48:03.272Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "angle",
@@ -36,16 +36,16 @@
     "total_addresses": 1207,
     "unique_implementations": 547,
     "total_deployments": 1207,
-    "audited_contracts": 5,
-    "unaudited_contracts": 281,
-    "contracts_verified_audited": 5,
-    "contracts_verified_unaudited": 279,
+    "audited_contracts": 0,
+    "unaudited_contracts": 286,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 284,
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 261,
-    "coverage_pct": 1.7,
-    "total_audits": 1,
-    "scoreable_audits": 1,
-    "dl_tvl_usd": 3707604.5120800002,
+    "coverage_pct": 0,
+    "total_audits": 3,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 2044033.68631,
     "tvl_usd": 1397790797.7080855,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -74,7 +74,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 1,
-      "unknown": 0
+      "unknown": 2
     }
   },
   "topography": {
@@ -5380,7 +5380,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -5389,16 +5389,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3682"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -11110,7 +11108,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -11119,16 +11117,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3682"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -11713,16 +11709,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3682"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -11808,7 +11802,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -11817,16 +11811,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3682"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -12832,7 +12824,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -12841,7 +12833,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -12850,7 +12842,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -12859,7 +12851,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -12868,7 +12860,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -12877,7 +12869,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -12886,16 +12878,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-3682"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -23002,8 +22992,50 @@
   ],
   "audits": [
     {
-      "audit_id": 3682,
-      "audit_key": "audit-3682",
+      "audit_id": 11740,
+      "audit_key": "audit-11740",
+      "report_name": "Chainsecurity Audit Report December 21.pdf",
+      "report_url": "https://github.com/AngleProtocol/angle-core/blob/main/audits/Chainsecurity%20Audit%20Report%20December%2021.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11741,
+      "audit_key": "audit-11741",
+      "report_name": "Chainsecurity Audit Report July 21.pdf",
+      "report_url": "https://github.com/AngleProtocol/angle-core/blob/main/audits/Chainsecurity%20Audit%20Report%20July%2021.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11742,
+      "audit_key": "audit-11742",
       "report_name": "Sigma Prime Audit Report July 21.pdf",
       "report_url": "https://github.com/AngleProtocol/angle-core/blob/main/audits/Sigma%20Prime%20Audit%20Report%20July%2021.pdf",
       "auditor": "Sigma Prime",
@@ -23014,54 +23046,16 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "ANGLE",
-        "AgToken",
-        "AgTokenEvents",
-        "BondingCurve",
-        "BondingCurveEvents",
-        "CollateralSettler",
-        "CollateralSettlerERC20",
-        "Core",
-        "FeeManager",
-        "FunctionUtils",
-        "ModuleChainlinkMulti",
-        "ModuleUniswapMulti",
-        "Oracle",
-        "OracleChainlinkSingle",
-        "OracleMath",
-        "OracleMulti",
-        "PerpetualManager",
-        "PerpetualManagerEvents",
-        "PerpetualManagerFront",
-        "PerpetualManagerInternal",
-        "PoolManager",
-        "RewardsDistributor",
-        "SanToken",
-        "StableMaster",
-        "StableMasterInternal",
-        "Staking",
-        "StakingRewards",
-        "UniswapUtils",
-        "Utils"
-      ],
-      "matched_contracts": 14,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [
-    {
-      "auditor": "Sigma Prime",
-      "tier": 2,
-      "contracts_covered": 5,
-      "coverage_pct": 1.7,
-      "latest_audit": "2021-09"
-    }
-  ],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -23489,6 +23483,16 @@
       "address": "0x60f6362550868fd1d6e92b2f680f5e02f4d210fa",
       "name": "FeeCurrencyDirectoryProxy",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4a5e967100ca28566cb2a39216992c6db57e95a4",
+      "name": "FeeManager",
+      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -24226,6 +24230,16 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
+      "address": "0x5d5bea9f0fc13d967511668a60a3369fd53f784f",
+      "name": "RewardsDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
       "address": "0xa132dab612db5cb9fc9ac426a0cc215a3423f9c9",
       "name": "Router",
       "role": "adapter",
@@ -24561,15 +24575,24 @@
     "needs_review": 180
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 14
-    },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11740,
+        "report_name": "Chainsecurity Audit Report December 21.pdf"
+      },
+      {
+        "audit_id": 11741,
+        "report_name": "Chainsecurity Audit Report July 21.pdf"
+      },
+      {
+        "audit_id": 11742,
+        "report_name": "Sigma Prime Audit Report July 21.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "pharaoh-exchange",
-  "generated_at": "2026-06-11T01:49:16.538Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-11T11:47:01.198Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "pharaoh-exchange",
@@ -33,26 +33,26 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 12,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 50255510,
-    "tvl_usd": 50255510,
+    "dl_tvl_usd": 38708358,
+    "tvl_usd": 38708358,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
-    "website_url": "https://pharaoh.exchange",
+    "website_url": "https://www.phar.gg/",
     "chains": [
       "avalanche"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2024-10",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 0,
+      "aging": 1,
       "stale": 0,
-      "unknown": 0
+      "unknown": 2
     }
   },
   "topography": {
@@ -1982,7 +1982,71 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11649,
+      "audit_key": "audit-11649",
+      "report_name": "Report",
+      "report_url": "https://cantina.xyz/portfolio/98695d75-ee7d-4e1c-aa96-6379f73c5b2c",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11650,
+      "audit_key": "audit-11650",
+      "report_name": "Report",
+      "report_url": "https://diligence.security/audits/2024/08/ramses-v3",
+      "auditor": "Consensys Diligence",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11651,
+      "audit_key": "audit-11651",
+      "report_name": "Report",
+      "report_url": "https://code4rena.com/reports/2024-10-ramses-exchange",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "aging",
+      "date": "2024-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -2277,7 +2341,20 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11649,
+        "report_name": "Report"
+      },
+      {
+        "audit_id": 11650,
+        "report_name": "Report"
+      },
+      {
+        "audit_id": 11651,
+        "report_name": "Report"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

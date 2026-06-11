@@ -375,11 +375,11 @@
 | [mm-finance](./mm-finance/) | $1.8M | 4.5% | $1.8M | declining | 3 | 192 | 2026-06-11 |
 | [mobox](./mobox/) | $6.6M | 0.0% | $6.6M | unknown | 1 | 323 | 2026-06-11 |
 | [mode-bridge](./mode-bridge/) | $6.1M | 2.9% | ? | declining | 21 | 100 | 2026-06-11 |
-| [mole](./mole/) | $8.8M | 0.0% | ? | active | 1 | 49 | 2026-06-10 |
-| [moneyonchain](./moneyonchain/) | $43.7M | 0.0% | ? | unknown | 12 | 0 | 2026-06-10 |
-| [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-06-10 |
-| [moola-market](./moola-market/) | $73.9K | 0.0% | $73.9K | declining | 1 | 53 | 2026-06-10 |
-| [moonlander](./moonlander/) | $31.4M | 0.0% | ? | active | 0 | 11 | 2026-06-10 |
+| [mole](./mole/) | $8.8M | 0.0% | ? | active | 1 | 49 | 2026-06-11 |
+| [moneyonchain](./moneyonchain/) | $43.7M | 0.0% | ? | unknown | 12 | 0 | 2026-06-11 |
+| [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-06-11 |
+| [moola-market](./moola-market/) | $73.9K | 0.0% | $73.9K | declining | 1 | 53 | 2026-06-11 |
+| [moonlander](./moonlander/) | $31.4M | 0.0% | ? | active | 0 | 11 | 2026-06-11 |
 | [more-markets](./more-markets/) | $11.5M | 0.0% | ? | declining | 0 | 21 | 2026-06-10 |
 | [morph-bridge](./morph-bridge/) | $15.7M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 0 | 47 | 2026-06-10 |

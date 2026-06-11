@@ -1,6 +1,6 @@
 # moola-market — Contract Index
 
-53 unique implementations on celo · 91 deployments · 4 audited · 33 unaudited · 16 unverified
+53 unique implementations on celo · 91 deployments · 0 audited · 37 unaudited · 16 unverified
 
 ## adapter (1)
 
@@ -12,8 +12,8 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [LendingPool (4 deployments)](./celo-42220/0x29b4923d64b3196afd81d5f91185d693330cdb7a/) | celo | 4 deployments: celo [`0x29b492...0cdb7a`](./celo-42220/0x29b4923d64b3196afd81d5f91185d693330cdb7a/); celo `0x97256c...ae92fc`; celo `0xb9f812...cf1a59`; celo `0xbecd34...97711f` | ✅ Audited | Verified |
-| [LendingPoolAddressesProvider](./celo-42220/0xd1088091a174d33412a968fa34cb67131188b332/) | celo | [`0xd10880...88b332`](./celo-42220/0xd1088091a174d33412a968fa34cb67131188b332/) | ✅ Audited | Verified |
+| [LendingPool (4 deployments)](./celo-42220/0x29b4923d64b3196afd81d5f91185d693330cdb7a/) | celo | 4 deployments: celo [`0x29b492...0cdb7a`](./celo-42220/0x29b4923d64b3196afd81d5f91185d693330cdb7a/); celo `0x97256c...ae92fc`; celo `0xb9f812...cf1a59`; celo `0xbecd34...97711f` | ⚠️ Unaudited | Verified |
+| [LendingPoolAddressesProvider](./celo-42220/0xd1088091a174d33412a968fa34cb67131188b332/) | celo | [`0xd10880...88b332`](./celo-42220/0xd1088091a174d33412a968fa34cb67131188b332/) | ⚠️ Unaudited | Verified |
 | [LendingPoolCollateralManager](./celo-42220/0xe99ef38aeb4359ea36190c7d2c16802c2edf399e/) | celo | [`0xe99ef3...df399e`](./celo-42220/0xe99ef38aeb4359ea36190c7d2c16802c2edf399e/) | ⚠️ Unaudited | Verified |
 | [LendingPoolCollateralManagerWithReserve](./celo-42220/0xa2db2e70a795b566f129ae7dff242a4ad1393b32/) | celo | [`0xa2db2e...393b32`](./celo-42220/0xa2db2e70a795b566f129ae7dff242a4ad1393b32/) | ⚠️ Unaudited | Verified |
 | [LendingPoolConfigurator](./celo-42220/0x2cca742585b39e0538f7cc01ab8ffa005f1b1f1c/) | celo | [`0x2cca74...1b1f1c`](./celo-42220/0x2cca742585b39e0538f7cc01ab8ffa005f1b1f1c/) | ⚠️ Unaudited | Verified |
@@ -25,7 +25,7 @@
 | [AaCELOAirdrop](./celo-42220/0xa19a98f07a3f48a2a40bc4dd262fdb8e9d09209f/) | celo | [`0xa19a98...09209f`](./celo-42220/0xa19a98f07a3f48a2a40bc4dd262fdb8e9d09209f/) | ⚠️ Unaudited | Verified |
 | [AaMooAirdrop (2 deployments)](./celo-42220/0xa7307f1a971f64dca8301a160f358bb97ec93700/) | celo | 2 deployments: celo [`0xa7307f...c93700`](./celo-42220/0xa7307f1a971f64dca8301a160f358bb97ec93700/); celo `0xc6a6de...1d681c` | ⚠️ Unaudited | Verified |
 | [AccumulatingMerkleDistributor](./celo-42220/0x5b41b0c78659636c6664f08f7ccb620cea3f1206/) | celo | [`0x5b41b0...3f1206`](./celo-42220/0x5b41b0c78659636c6664f08f7ccb620cea3f1206/) | ⚠️ Unaudited | Verified |
-| [DefaultReserveInterestRateStrategy](./celo-42220/0xb3072f5f0d5e8b9036aec29f37bab70e86ea0018/) | celo | [`0xb3072f...ea0018`](./celo-42220/0xb3072f5f0d5e8b9036aec29f37bab70e86ea0018/) | ✅ Audited | Verified |
+| [DefaultReserveInterestRateStrategy](./celo-42220/0xb3072f5f0d5e8b9036aec29f37bab70e86ea0018/) | celo | [`0xb3072f...ea0018`](./celo-42220/0xb3072f5f0d5e8b9036aec29f37bab70e86ea0018/) | ⚠️ Unaudited | Verified |
 | [FixedPriceOracle (6 deployments)](./celo-42220/0x042b7d495650ff2c99e095e1e3deb7f8bce5b08d/) | celo | 6 deployments: celo [`0x042b7d...e5b08d`](./celo-42220/0x042b7d495650ff2c99e095e1e3deb7f8bce5b08d/); celo `0x321429...89bd50`; celo `0x59f9c3...1092d8`; celo `0x81d952...a293a7`; celo `0xca41e1...c2804e`; celo `0xebfaaa...5317e9` | ⚠️ Unaudited | Verified |
 | [LendingRateOracle](./celo-42220/0xaa6e0f0b63287eac5ddbeefd1f133fc7f554ee9b/) | celo | [`0xaa6e0f...54ee9b`](./celo-42220/0xaa6e0f0b63287eac5ddbeefd1f133fc7f554ee9b/) | ⚠️ Unaudited | Verified |
 | [MOOAirdrop2205](./celo-42220/0x6aef087821393bf3d4b15b5048f4377cf71a8dfb/) | celo | [`0x6aef08...1a8dfb`](./celo-42220/0x6aef087821393bf3d4b15b5048f4377cf71a8dfb/) | ⚠️ Unaudited | Verified |
@@ -44,7 +44,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AToken (2 deployments)](./celo-42220/0x55bfced2451b2154e06604d4269c9349f31141e6/) | celo | 2 deployments: celo [`0x55bfce...1141e6`](./celo-42220/0x55bfced2451b2154e06604d4269c9349f31141e6/); celo `0xf44e15...c97a2a` | ✅ Audited | Verified |
+| [AToken (2 deployments)](./celo-42220/0x55bfced2451b2154e06604d4269c9349f31141e6/) | celo | 2 deployments: celo [`0x55bfce...1141e6`](./celo-42220/0x55bfced2451b2154e06604d4269c9349f31141e6/); celo `0xf44e15...c97a2a` | ⚠️ Unaudited | Verified |
 | [ATokensAndRatesHelper](./celo-42220/0x22060a5e21921d1cfbebd301ff40f91f2d4c26f1/) | celo | [`0x22060a...4c26f1`](./celo-42220/0x22060a5e21921d1cfbebd301ff40f91f2d4c26f1/) | ⚠️ Unaudited | Verified |
 | [ATokenV4](./celo-42220/0xa2726942a99ca8ce9f212c97d8f1bd6378f501f0/) | celo | [`0xa27269...f501f0`](./celo-42220/0xa2726942a99ca8ce9f212c97d8f1bd6378f501f0/) | ⚠️ Unaudited | Verified |
 | [ATokenWithTransferForMoolaFix](./celo-42220/0xc8c5765bd5690e6df761a13db0e133d158b3c64d/) | celo | [`0xc8c576...b3c64d`](./celo-42220/0xc8c5765bd5690e6df761a13db0e133d158b3c64d/) | ⚠️ Unaudited | Verified |

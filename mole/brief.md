@@ -5,8 +5,8 @@
 - Project: Mole (`mole`)
 - Website: [https://mole.fi](https://mole.fi)
 - Lifecycle: active (Tier 0, 54.6% below peak)
-- Generated: 2026-06-10T20:59:07.778Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:12:50.568Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: avalanche
 - Contract surface: 49 unique implementations (220 raw deployments)
 - DeFi Llama TVL: $8,787,127.81

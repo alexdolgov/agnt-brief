@@ -7,8 +7,8 @@
 - Project: MONSTRO (`monstro`)
 - Website: [https://v2.monstro.fun](https://v2.monstro.fun)
 - Lifecycle: transitioning (Tier 1, transitioning)
-- Generated: 2026-06-10T20:59:07.787Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:11:54.797Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: base
 - Contract surface: 9 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $3,391,717.90

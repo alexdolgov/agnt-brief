@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "monstro",
-  "generated_at": "2026-06-10T20:59:07.787Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T01:11:54.797Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-2b99",
   "lifecycle_status": "transitioning",
   "lifecycle_signal": {
     "slug": "monstro",

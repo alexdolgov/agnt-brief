@@ -7,8 +7,8 @@
 - Project: Moola Market (`moola-market`)
 - Website: [https://moola.market](https://moola.market)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:07.793Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T01:12:22.139Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
 - Chains: celo
 - Contract surface: 53 unique implementations (91 raw deployments)
 - DeFi Llama TVL: $1,212,721.35

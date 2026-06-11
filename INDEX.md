@@ -285,11 +285,11 @@
 | [init-capital](./init-capital/) | $66.5M | 24.0% | $66.2M | declining | 7 | 99 | 2026-06-11 |
 | [initiadex](./initiadex/) | $3.0M | 0.0% | ? | unknown | 7 | 0 | 2026-06-11 |
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-05-31 |
-| [ink-bridge](./ink-bridge/) | $59.3M | 44.0% | ? | active | 17 | 68 | 2026-06-10 |
-| [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-06-10 |
-| [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | active | 7 | 154 | 2026-06-10 |
-| [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-06-10 |
-| [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 39 | 2026-06-10 |
+| [ink-bridge](./ink-bridge/) | $59.3M | 44.0% | ? | active | 17 | 68 | 2026-06-11 |
+| [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-06-11 |
+| [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | active | 7 | 154 | 2026-06-11 |
+| [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-06-11 |
+| [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 39 | 2026-06-11 |
 | [iq](./iq/) | $23.9M | 0.0% | $23.9M | active | 0 | 2 | 2026-06-10 |
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | declining | 0 | 181 | 2026-06-10 |
 | [jones-dao](./jones-dao/) | $519.7M | 0.0% | $519.7M | active | 0 | 502 | 2026-06-10 |

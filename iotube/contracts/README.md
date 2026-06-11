@@ -1,6 +1,6 @@
 # iotube — Contract Index
 
-40 unique implementations across 3 chains · 97 deployments · 0 audited · 17 unaudited · 23 unverified
+39 unique implementations across 3 chains · 96 deployments · 0 audited · 16 unaudited · 23 unverified
 
 ## adapter (3)
 
@@ -22,7 +22,7 @@
 |---|---|---|---|---|
 | [VestingManager (2 deployments)](./bsc-56/0x31603c352dcb06e5973afcf7d831824e4900b001/) | bsc | 2 deployments: bsc [`0x31603c...00b001`](./bsc-56/0x31603c352dcb06e5973afcf7d831824e4900b001/); bsc `0x668b60...3baae0` | ⚠️ Unaudited | Verified |
 
-## token (7)
+## token (6)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -32,7 +32,6 @@
 | [TokenCashierWithPayload (5 deployments)](./ethereum-1/0x1b9aa865d74b2b77ffdbcf507b56a7b3ab43bac4/) | ethereum | 5 deployments: ethereum [`0x1b9aa8...43bac4`](./ethereum-1/0x1b9aa865d74b2b77ffdbcf507b56a7b3ab43bac4/); ethereum `0xd57bde...a8d7d4`; bsc `0x78de1e...940204`; polygon `0x6bba6b...21e049`; polygon `0x990b50...18d731` | ⚠️ Unaudited | Verified |
 | [TokenList (10 deployments)](./bsc-56/0x0d793f4d4287265b9bda86b7a4083193e8743b34/) | bsc | 10 deployments: ethereum `0x73ffdf...e35b3e`; ethereum `0x7c0bef...08aede`; bsc [`0x0d793f...743b34`](./bsc-56/0x0d793f4d4287265b9bda86b7a4083193e8743b34/); bsc `0xa6ae93...321ee3`; bsc `0xc8dc8d...303f3e`; bsc `0xde9395...4bb0f7`; polygon `0x14bf34...966277`; polygon `0xb4d3ce...9d6ad1`; polygon `0xc8dc8d...303f3e`; polygon `0xde9395...4bb0f7` | ⚠️ Unaudited | Verified |
 | [TokenSafe (4 deployments)](./bsc-56/0xa239f03cda98a7d2aaaa51e7bf408e5d73399e45/) | bsc | 4 deployments: ethereum `0xc2e0f3...7f0d7a`; bsc [`0xa239f0...399e45`](./bsc-56/0xa239f03cda98a7d2aaaa51e7bf408e5d73399e45/); bsc `0xfbe9a4...c4ce4b`; polygon `0xa239f0...399e45` | ⚠️ Unaudited | Verified |
-| [WETH9](./ethereum-1/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/) | ethereum | [`0xc02aaa...756cc2`](./ethereum-1/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/) | ⚠️ Unaudited | Verified |
 
 ## unknown (28)
 

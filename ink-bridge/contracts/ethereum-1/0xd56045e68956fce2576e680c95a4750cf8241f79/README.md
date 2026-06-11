@@ -6,8 +6,8 @@
 | Address | `0xd56045e68956fce2576e680c95a4750cf8241f79` |
 | Role | governance |
 | Origin | standard_library |
-| Audited | Yes |
-| Audits | [2022_09-Bedrock_and_Periphery-Zeppelin.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_09-Bedrock_and_Periphery-Zeppelin.pdf) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 1 (ethereum [`0xd56045e68956fce2576e680c95a4750cf8241f79`](../0xd56045e68956fce2576e680c95a4750cf8241f79/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |

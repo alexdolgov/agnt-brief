@@ -7,7 +7,7 @@
 | Role | proxy |
 | Origin | native |
 | Audited | Yes |
-| Audits | [2022_09-Bedrock_and_Periphery-Zeppelin.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_09-Bedrock_and_Periphery-Zeppelin.pdf); [2024_02-MCP_L1-Cantina.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_02-MCP_L1-Cantina.pdf) |
+| Audits | [2024_02-MCP_L1-Cantina.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_02-MCP_L1-Cantina.pdf) |
 | Deployments | 1 (optimism [`0x4200000000000000000000000000000000000028`](../0x4200000000000000000000000000000000000028/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |

@@ -7,8 +7,8 @@
 - Project: ioTube (`iotube`)
 - Website: [https://iotube.org](https://iotube.org)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:06.320Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:10:04.957Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: bsc, ethereum, polygon
 - Contract surface: 39 unique implementations (96 raw deployments)
 - DeFi Llama TVL: $3,291,693.13

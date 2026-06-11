@@ -5,8 +5,8 @@
 - Project: Inverse Finance (`inverse-finance`)
 - Website: [https://www.inverse.finance](https://www.inverse.finance)
 - Lifecycle: active (Tier 0, 80.2% below peak)
-- Generated: 2026-06-10T20:59:06.281Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T00:10:56.960Z
+- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
 - Chains: arbitrum, base, berachain, ethereum, optimism
 - Contract surface: 154 unique implementations (451 raw deployments)
 - DeFi Llama TVL: $41,929,884.00

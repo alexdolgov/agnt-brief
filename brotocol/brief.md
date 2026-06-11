@@ -5,11 +5,11 @@
 - Project: Brotocol (`brotocol`)
 - Website: [https://brotocol.xyz/](https://brotocol.xyz/)
 - Lifecycle: active (Tier 0, 81.8% below peak)
-- Generated: 2026-06-10T22:13:31.041Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
+- Generated: 2026-06-11T11:26:18.655Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, avalanche, base, bsc, ethereum, linea, merlin, mode
 - Contract surface: 214 unique implementations (214 raw deployments)
-- DeFi Llama TVL: $12,240,302.37
+- DeFi Llama TVL: $6,475,562.48
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,11 +21,11 @@
 - Unverified implementations: 214
 - Unique implementations: 214
 - Raw deployments: 214
-- Audits discovered: 0
+- Audits discovered: 14
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2025-05 (aging)
+- Staleness: 0 fresh, 4 aging, 5 stale, 5 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -279,6 +279,20 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [2022-12 Bridge Endpoints](https://cdn.xlink.network/pdf/ALEX_Audit_bridge_coinfabrik_202212.pdf) | CoinFabrik | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [2023-04 Bridge Backend and Endpoints](https://cdn.xlink.network/pdf/ALEX_Audit_Bridge_2023-04.pdf) | CoinFabrik | Audit | 2023-04 | stale | Direct | n/a | 0 | n/a |
+| [2023-10 Bitcoin Oracle and Bridge](https://cdn.xlink.network/pdf/ALEX_Audit_202310_Bitcoin_Oracle_and_Bridge.pdf) | CoinFabrik | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [2024-06 BridgeEndpoint, BridgeRegistry and BridgeEndpointWithAxelar](https://cdn.xlink.network/pdf/XLink_Bridge_Endpoint_Audit_2024-06.pdf) | CoinFabrik | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
+| [2024-06 MultisigWallet and BridgeToken](https://cdn.xlink.network/pdf/XLink_MultisigWallet_BridgeToken_2024-06.pdf) | CoinFabrik | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
+| [2024-11 Brotocol Staking Manager](https://cdn.xlink.network/pdf/XLINK_Staking_Audit_2024_11_final.pdf) | CoinFabrik | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
+| [2024-11 Brotocol Peg-out Endpoints](https://cdn.xlink.network/pdf/XLINK_Peg-out_Endpoints_Audit%2011-2024.pdf) | CoinFabrik | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
+| [2024-11 Brotocol Peg-in Endpoints](https://cdn.xlink.network/pdf/XLINK_Peg-in_Endpoints_Audit_11-2024.pdf) | CoinFabrik | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
+| [2025-03 Endpoint Update](https://cdn.brotocol.xyz/pdf/XLink_Endpoits_Update_Audit_2025-03.pdf) | CoinFabrik | Audit | 2025-03 | aging | Direct | n/a | 0 | n/a |
+| [2025-04 EVM Endpoints](https://cdn.brotocol.xyz/pdf/XLink_EVM_Endpoint_Audit_2025-04.pdf) | CoinFabrik | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
+| [2025-05 Solana Endpoints](https://cdn.brotocol.xyz/pdf/XLINK_Solana_Endpoint_Audit_2025-05.pdf) | CoinFabrik | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
+| [2025-08 EVM BridgeEndpoint](https://cdn.brotocol.xyz/pdf/250825_Defense_by_Thesis_Brotocol_BridgeEndPoint_Smart_Contract.pdf) | Defence (Thesis) | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Brotocol is audited by [CoinFabrik]() and [Defence](https://thesis.co/defense), covering both the contracts and the backends.](https://www.coinfabrik.com/) | CoinFabrik | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Brotocol is audited by [CoinFabrik](https://www.coinfabrik.com/) and [Defence](), covering both the contracts and the backends.](https://thesis.co/defense) | Defence | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -299,9 +313,26 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 14
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11552] 2022-12 Bridge Endpoints
+- [11553] 2023-04 Bridge Backend and Endpoints
+- [11554] 2023-10 Bitcoin Oracle and Bridge
+- [11555] 2024-06 BridgeEndpoint, BridgeRegistry and BridgeEndpointWithAxelar
+- [11556] 2024-06 MultisigWallet and BridgeToken
+- [11557] 2024-11 Brotocol Staking Manager
+- [11558] 2024-11 Brotocol Peg-out Endpoints
+- [11559] 2024-11 Brotocol Peg-in Endpoints
+- [11560] 2025-03 Endpoint Update
+- [11561] 2025-04 EVM Endpoints
+- [11562] 2025-05 Solana Endpoints
+- [11563] 2025-08 EVM BridgeEndpoint
+- [11564] Brotocol is audited by [CoinFabrik]() and [Defence](https://thesis.co/defense), covering both the contracts and the backends.
+- [11565] Brotocol is audited by [CoinFabrik](https://www.coinfabrik.com/) and [Defence](), covering both the contracts and the backends.
 
 Fork inheritance lineage and inherited audits are included when available.

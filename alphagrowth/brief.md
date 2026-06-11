@@ -5,11 +5,11 @@
 - Project: alphagrowth (`alphagrowth`)
 - Website: [https://app.euler.finance/governor/alphagrowth?network=unichain](https://app.euler.finance/governor/alphagrowth?network=unichain)
 - Lifecycle: active (Tier 0, 15.7% below peak)
-- Generated: 2026-06-10T20:58:56.805Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T11:26:21.382Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: base, ethereum, linea, unichain
 - Contract surface: 55 unique implementations (177 raw deployments)
-- DeFi Llama TVL: $8,526,731.85
+- DeFi Llama TVL: $7,380,188.65
 - On-chain TVL (included contracts): $6,293,379.13
 - TVL by chain: Unichain $3,835,218.03 | Base $2,117,387.18 | Ethereum $194,988.52 | Linea $145,785.40
 
@@ -29,11 +29,11 @@ The Governor family controls the GenericFactory, which deploys EVaults for the a
 - Unverified implementations: 12
 - Unique implementations: 55
 - Raw deployments: 177
-- Audits discovered: 0
+- Audits discovered: 16
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $6,293,379.13
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2025-11 (fresh)
+- Staleness: 7 fresh, 2 aging, 0 stale, 7 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -129,6 +129,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Pashov Audit Group EulerEarn (also discovered via alternate URL)](https://github.com/euler-xyz/euler-earn/blob/master/audits/Pashov%5FAudit%5FGroup%5Freport.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Certora EulerEarn](https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora%5FEulerEarn%5Freport.pdf) | Pashov Audit Group | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [Sigma Prime EulerEarn](https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma%5FPrime%5FEulerEarn%5Freport.pdf) | Sigma Prime | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Certora_EulerEarn_report.pdf) | Spearbit | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Sigma_Prime_EulerEarn_report.pdf) | Spearbit | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [Omniscia Euler Earn Report](https://omniscia.io/reports/euler-finance-earn-yield-aggregator-66faae519dcc3c0018b9097e) | Enigma Ventures | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Certora_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora_EulerEarn_report.pdf) | Certora | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [Sigma_Prime_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma_Prime_EulerEarn_report.pdf) | Sigma Prime | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [Cyfrin EulerSwap](https://github.com/euler-xyz/euler-swap/blob/master/audits/2025-05-26-cyfrin-eulerswap-v2.0.pdf) | Cyfrin | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
+| [Cantina Managed EulerSwap May 3](https://github.com/euler-xyz/euler-swap/blob/master/audits/report-cantinacode-uniswap-euler-0422.pdf) | Spearbit | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
+| [ChainSecurity EulerSwap (also discovered via alternate URL)](https://github.com/euler-xyz/euler-swap/blob/master/audits/ChainSecurity%5FEulerSwap%5Faudit.pdf) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Cantina Managed EulerSwap Mar 29](https://github.com/euler-xyz/euler-swap/blob/master/audits/report-euler-swap-050325.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Fuzzland EulerSwap](https://github.com/euler-xyz/euler-swap/blob/master/audits/eulerswap-audit-report.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [report-cantinacode-euler-0901.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/report-cantinacode-euler-0901.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [yAudit ERC4626 and Vault Securitize Report](https://github.com/euler-xyz/evk-periphery/blob/master/audits/yAudit%20ERC4626%20and%20Vault%20Securitize.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Pashov Group ERC4626 and Vault Securitize Report](https://github.com/euler-xyz/evk-periphery/blob/master/audits/Pashov%20Group%20ERC4626%20and%20Vault%20Securitize.pdf) | Pashov Audit Group | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -188,9 +204,28 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 16
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11522] Pashov Audit Group EulerEarn
+- [11523] Certora EulerEarn
+- [11524] Sigma Prime EulerEarn
+- [11525] Rendered PDF capture
+- [11526] Rendered PDF capture
+- [11528] Omniscia Euler Earn Report
+- [11529] Certora_EulerEarn_report.pdf
+- [11531] Sigma_Prime_EulerEarn_report.pdf
+- [11532] Cyfrin EulerSwap
+- [11533] Cantina Managed EulerSwap May 3
+- [11534] ChainSecurity EulerSwap
+- [11535] Cantina Managed EulerSwap Mar 29
+- [11536] Fuzzland EulerSwap
+- [11538] report-cantinacode-euler-0901.pdf
+- [11539] yAudit ERC4626 and Vault Securitize Report
+- [11540] Pashov Group ERC4626 and Vault Securitize Report
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -5,11 +5,11 @@
 - Project: Looping Collective (`looping-collective`)
 - Website: [https://www.loopingcollective.org/](https://www.loopingcollective.org/)
 - Lifecycle: active (Tier 0, 74% below peak)
-- Generated: 2026-06-11T00:42:40.364Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-11T11:26:21.165Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: ethereum, hyperliquid
 - Contract surface: 14 unique implementations (94 raw deployments)
-- DeFi Llama TVL: $15,634,441.00
+- DeFi Llama TVL: $11,937,641.00
 - On-chain TVL (included contracts): $11,811,614.34
 - TVL by chain: Ethereum $11,607,539.08 | Hyperliquid $204,075.26
 
@@ -29,11 +29,11 @@ The Vault Infrastructure family provides reusable UltraVault logic and rate prov
 - Unverified implementations: 1
 - Unique implementations: 14
 - Raw deployments: 94
-- Audits discovered: 0
+- Audits discovered: 13
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $11,811,614.34
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 13 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -89,6 +89,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0xmacro-boring-vault-arctic-0.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-0.pdf) | 0xMacro | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0xmacro-boring-vault-arctic-1.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-1.pdf) | 0xMacro | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [pashov-boring-vault.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-boring-vault.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [pashov-hlp-controller:account.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-hlp-controller%3Aaccount.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [pashov-hyperlane.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-hyperlane.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [pashov-one-to-one-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-one-to-one-queue.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [pashov-predicate-freeze-supply-cap.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-predicate-freeze-supply-cap.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [pashov-withdraw-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-withdraw-queue.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [spearbit-boring-vault-arctic-0.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/spearbit-boring-vault-arctic-0.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [zenith-one-to-one-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/zenith-one-to-one-queue.pdf) | Zenith | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [zenith-withdraw-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/zenith-withdraw-queue.pdf) | Zenith | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [v1_May_2025_ChainSecurity.pdf](https://github.com/UltraYield/contracts/blob/main/audits/v1_May_2025_ChainSecurity.pdf) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [v2_Sep_2025_Omniscia.pdf](https://github.com/UltraYield/contracts/blob/main/audits/v2_Sep_2025_Omniscia.pdf) | Omniscia | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -118,9 +131,25 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 13
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11608] 0xmacro-boring-vault-arctic-0.pdf
+- [11609] 0xmacro-boring-vault-arctic-1.pdf
+- [11610] pashov-boring-vault.pdf
+- [11611] pashov-hlp-controller:account.pdf
+- [11612] pashov-hyperlane.pdf
+- [11613] pashov-one-to-one-queue.pdf
+- [11614] pashov-predicate-freeze-supply-cap.pdf
+- [11615] pashov-withdraw-queue.pdf
+- [11616] spearbit-boring-vault-arctic-0.pdf
+- [11617] zenith-one-to-one-queue.pdf
+- [11618] zenith-withdraw-queue.pdf
+- [11619] v1_May_2025_ChainSecurity.pdf
+- [11620] v2_Sep_2025_Omniscia.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

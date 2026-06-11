@@ -24,7 +24,7 @@
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 15 | 58 | 2026-06-10 |
 | [allbridge](./allbridge/) | $19.3M | 0.0% | $19.3M | declining | 8 | 282 | 2026-06-10 |
 | [alpaca-finance](./alpaca-finance/) | $11.5M | 57.4% | $11.2M | declining | 19 | 144 | 2026-06-10 |
-| [alphagrowth](./alphagrowth/) | $6.3M | 0.0% | $6.3M | active | 0 | 55 | 2026-06-10 |
+| [alphagrowth](./alphagrowth/) | $6.3M | 0.0% | $6.3M | active | 16 | 55 | 2026-06-11 |
 | [alphaping](./alphaping/) | $67.9M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
 | [alphax](./alphax/) | $218.2K | 0.0% | $218.2K | active | 1 | 1 | 2026-06-10 |
 | [altitude.fi](./altitude.fi/) | $16.1M | 72.2% | ? | declining | 7 | 124 | 2026-06-10 |
@@ -104,7 +104,7 @@
 | [bracket-protocol](./bracket-protocol/) | $622.4M | 17.4% | $619.3M | active | 5 | 58 | 2026-06-10 |
 | [brickken](./brickken/) | $41.7M | 0.0% | ? | active | 0 | 29 | 2026-06-10 |
 | [bridgers](./bridgers/) | $1.6M | 0.0% | ? | active | 1 | 6 | 2026-06-10 |
-| [brotocol](./brotocol/) | $12.2M | 0.0% | ? | active | 0 | 214 | 2026-06-10 |
+| [brotocol](./brotocol/) | $6.5M | 0.0% | ? | active | 14 | 214 | 2026-06-11 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-06-10 |
 | [btcfi](./btcfi/) | $11.8M | 0.0% | ? | active | 0 | 15 | 2026-06-10 |
 | [btcst](./btcst/) | $263.7M | 0.0% | $263.7M | active | 0 | 64 | 2026-06-10 |
@@ -336,7 +336,7 @@
 | [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | declining | 0 | 93 | 2026-06-11 |
 | [llamapay](./llamapay/) | $25.8M | 0.0% | ? | active | 1 | 19 | 2026-06-11 |
 | [lockon](./lockon/) | $1.0M | 56.3% | ? | active | 7 | 23 | 2026-06-11 |
-| [looping-collective](./looping-collective/) | $11.8M | 0.0% | $11.8M | active | 0 | 14 | 2026-06-11 |
+| [looping-collective](./looping-collective/) | $11.8M | 0.0% | $11.8M | active | 13 | 14 | 2026-06-11 |
 | [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 0 | 145 | 2026-06-11 |
 | [lumenswap](./lumenswap/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-06-11 |
@@ -382,7 +382,7 @@
 | [moonlander](./moonlander/) | $31.4M | 0.0% | ? | active | 0 | 11 | 2026-06-11 |
 | [more-markets](./more-markets/) | $11.5M | 0.0% | ? | declining | 0 | 21 | 2026-06-11 |
 | [morph-bridge](./morph-bridge/) | $15.7M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
-| [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 0 | 47 | 2026-06-11 |
+| [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 18 | 47 | 2026-06-11 |
 | [mu-digital](./mu-digital/) | $19.4M | 100.0% | ? | active | 2 | 12 | 2026-06-11 |
 | [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-06-11 |
 | [multichain](./multichain/) | $12.5M | 42.9% | $128.8 | dead | 15 | 17 | 2026-06-11 |
@@ -704,7 +704,7 @@
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-06-11 |
 | [zenlink](./zenlink/) | $5.3M | 0.0% | ? | declining | 1 | 226 | 2026-06-11 |
 | [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-06-11 |
-| [zerolend](./zerolend/) | $16.1M | 0.0% | ? | declining | 0 | 565 | 2026-06-11 |
+| [zerolend](./zerolend/) | $13.2M | 0.0% | ? | declining | 9 | 565 | 2026-06-11 |
 | [zircuit-finance](./zircuit-finance/) | $1.5M | 0.0% | $1.5M | active | 0 | 2 | 2026-06-11 |
 | [zircuit-staking](./zircuit-staking/) | $178.4M | 21.1% | $140.4M | declining | 8 | 20 | 2026-06-11 |
 | [zircuit](./zircuit/) | $144.2M | 25.0% | $144.2M | declining | 10 | 17 | 2026-06-11 |

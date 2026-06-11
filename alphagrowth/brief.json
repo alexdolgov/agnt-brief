@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "alphagrowth",
-  "generated_at": "2026-06-10T20:58:56.805Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T11:26:21.382Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "alphagrowth",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 12,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 16,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 8526731.852740001,
+    "dl_tvl_usd": 7380188.65378,
     "tvl_usd": 6293379.13307328,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -54,13 +54,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2025-11",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
-      "aging": 0,
+      "fresh": 7,
+      "aging": 2,
       "stale": 0,
-      "unknown": 0
+      "unknown": 7
     }
   },
   "topography": {
@@ -2882,7 +2882,368 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11522,
+      "audit_key": "audit-11522",
+      "report_name": "Pashov Audit Group EulerEarn",
+      "report_url": "https://github.com/euler-xyz/euler-earn/blob/master/audits/Pashov%5FAudit%5FGroup%5Freport.pdf",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 11522,
+          "report_url": "https://github.com/euler-xyz/euler-earn/blob/master/audits/Pashov%5FAudit%5FGroup%5Freport.pdf"
+        },
+        {
+          "audit_id": 11527,
+          "report_url": "https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Pashov_Audit_Group_report.pdf"
+        },
+        {
+          "audit_id": 11530,
+          "report_url": "https://github.com/euler-xyz/euler-earn/blob/master/audits/Pashov_Audit_Group_report.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 11523,
+      "audit_key": "audit-11523",
+      "report_name": "Certora EulerEarn",
+      "report_url": "https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora%5FEulerEarn%5Freport.pdf",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11524,
+      "audit_key": "audit-11524",
+      "report_name": "Sigma Prime EulerEarn",
+      "report_url": "https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma%5FPrime%5FEulerEarn%5Freport.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11525,
+      "audit_key": "audit-11525",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Certora_EulerEarn_report.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11526,
+      "audit_key": "audit-11526",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Sigma_Prime_EulerEarn_report.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11528,
+      "audit_key": "audit-11528",
+      "report_name": "Omniscia Euler Earn Report",
+      "report_url": "https://omniscia.io/reports/euler-finance-earn-yield-aggregator-66faae519dcc3c0018b9097e",
+      "auditor": "Enigma Ventures",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11529,
+      "audit_key": "audit-11529",
+      "report_name": "Certora_EulerEarn_report.pdf",
+      "report_url": "https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora_EulerEarn_report.pdf",
+      "auditor": "Certora",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11531,
+      "audit_key": "audit-11531",
+      "report_name": "Sigma_Prime_EulerEarn_report.pdf",
+      "report_url": "https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma_Prime_EulerEarn_report.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11532,
+      "audit_key": "audit-11532",
+      "report_name": "Cyfrin EulerSwap",
+      "report_url": "https://github.com/euler-xyz/euler-swap/blob/master/audits/2025-05-26-cyfrin-eulerswap-v2.0.pdf",
+      "auditor": "Cyfrin",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11533,
+      "audit_key": "audit-11533",
+      "report_name": "Cantina Managed EulerSwap May 3",
+      "report_url": "https://github.com/euler-xyz/euler-swap/blob/master/audits/report-cantinacode-uniswap-euler-0422.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11534,
+      "audit_key": "audit-11534",
+      "report_name": "ChainSecurity EulerSwap",
+      "report_url": "https://github.com/euler-xyz/euler-swap/blob/master/audits/ChainSecurity%5FEulerSwap%5Faudit.pdf",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 11534,
+          "report_url": "https://github.com/euler-xyz/euler-swap/blob/master/audits/ChainSecurity%5FEulerSwap%5Faudit.pdf"
+        },
+        {
+          "audit_id": 11537,
+          "report_url": "https://github.com/euler-xyz/euler-swap/blob/master/audits/ChainSecurity_EulerSwap_audit.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 11535,
+      "audit_key": "audit-11535",
+      "report_name": "Cantina Managed EulerSwap Mar 29",
+      "report_url": "https://github.com/euler-xyz/euler-swap/blob/master/audits/report-euler-swap-050325.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11536,
+      "audit_key": "audit-11536",
+      "report_name": "Fuzzland EulerSwap",
+      "report_url": "https://github.com/euler-xyz/euler-swap/blob/master/audits/eulerswap-audit-report.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11538,
+      "audit_key": "audit-11538",
+      "report_name": "report-cantinacode-euler-0901.pdf",
+      "report_url": "https://github.com/euler-xyz/euler-swap/blob/master/audits/report-cantinacode-euler-0901.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11539,
+      "audit_key": "audit-11539",
+      "report_name": "yAudit ERC4626 and Vault Securitize Report",
+      "report_url": "https://github.com/euler-xyz/evk-periphery/blob/master/audits/yAudit%20ERC4626%20and%20Vault%20Securitize.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11540,
+      "audit_key": "audit-11540",
+      "report_name": "Pashov Group ERC4626 and Vault Securitize Report",
+      "report_url": "https://github.com/euler-xyz/evk-periphery/blob/master/audits/Pashov%20Group%20ERC4626%20and%20Vault%20Securitize.pdf",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -3277,7 +3638,72 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11522,
+        "report_name": "Pashov Audit Group EulerEarn"
+      },
+      {
+        "audit_id": 11523,
+        "report_name": "Certora EulerEarn"
+      },
+      {
+        "audit_id": 11524,
+        "report_name": "Sigma Prime EulerEarn"
+      },
+      {
+        "audit_id": 11525,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 11526,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 11528,
+        "report_name": "Omniscia Euler Earn Report"
+      },
+      {
+        "audit_id": 11529,
+        "report_name": "Certora_EulerEarn_report.pdf"
+      },
+      {
+        "audit_id": 11531,
+        "report_name": "Sigma_Prime_EulerEarn_report.pdf"
+      },
+      {
+        "audit_id": 11532,
+        "report_name": "Cyfrin EulerSwap"
+      },
+      {
+        "audit_id": 11533,
+        "report_name": "Cantina Managed EulerSwap May 3"
+      },
+      {
+        "audit_id": 11534,
+        "report_name": "ChainSecurity EulerSwap"
+      },
+      {
+        "audit_id": 11535,
+        "report_name": "Cantina Managed EulerSwap Mar 29"
+      },
+      {
+        "audit_id": 11536,
+        "report_name": "Fuzzland EulerSwap"
+      },
+      {
+        "audit_id": 11538,
+        "report_name": "report-cantinacode-euler-0901.pdf"
+      },
+      {
+        "audit_id": 11539,
+        "report_name": "yAudit ERC4626 and Vault Securitize Report"
+      },
+      {
+        "audit_id": 11540,
+        "report_name": "Pashov Group ERC4626 and Vault Securitize Report"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

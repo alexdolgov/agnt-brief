@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zerolend",
-  "generated_at": "2026-06-11T04:23:05.671Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-026d",
+  "generated_at": "2026-06-11T11:27:20.719Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "zerolend",
@@ -43,10 +43,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 565,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 9,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 16140039,
-    "tvl_usd": 16140039,
+    "dl_tvl_usd": 13186422,
+    "tvl_usd": 13186422,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -63,13 +63,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2023-04",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 0
+      "stale": 2,
+      "unknown": 7
     }
   },
   "topography": {
@@ -17603,7 +17603,267 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11746,
+      "audit_key": "audit-11746",
+      "report_name": "zerolend_report_depcheck_final.pdf",
+      "report_url": "https://github.com/zerolend/audits/blob/main/mundus/zerolend_report_depcheck_final.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 11746,
+          "report_url": "https://github.com/zerolend/audits/blob/main/mundus/zerolend_report_depcheck_final.pdf"
+        },
+        {
+          "audit_id": 11747,
+          "report_url": "https://raw.githubusercontent.com/zerolend/audits/0f5060304b52cc7aa55ea8d6575078f8aced5e8c/mundus/zerolend_report_depcheck_final.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 11748,
+      "audit_key": "audit-11748",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/27-01-2022_ABDK_AaveV3.pdf",
+      "auditor": "ABDK",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 11748,
+          "report_url": "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/27-01-2022_ABDK_AaveV3.pdf"
+        },
+        {
+          "audit_id": 11754,
+          "report_url": "https://github.com/aave/aave-v3-core/blob/master/audits/27-01-2022_ABDK_AaveV3.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 11749,
+      "audit_key": "audit-11749",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/27-01-2022_SigmaPrime_AaveV3.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 11749,
+          "report_url": "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/27-01-2022_SigmaPrime_AaveV3.pdf"
+        },
+        {
+          "audit_id": 11755,
+          "report_url": "https://github.com/aave/aave-v3-core/blob/master/audits/27-01-2022_SigmaPrime_AaveV3.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 11750,
+      "audit_key": "audit-11750",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/certora/Aave_V3_Formal_Verification_Report_Jan2022.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 11750,
+          "report_url": "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/certora/Aave_V3_Formal_Verification_Report_Jan2022.pdf"
+        },
+        {
+          "audit_id": 11756,
+          "report_url": "https://github.com/aave/aave-v3-core/blob/master/certora/Aave_V3_Formal_Verification_Report_Jan2022.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 11751,
+      "audit_key": "audit-11751",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/14-01-2022_PeckShield_AaveV3.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 11751,
+          "report_url": "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/14-01-2022_PeckShield_AaveV3.pdf"
+        },
+        {
+          "audit_id": 11757,
+          "report_url": "https://github.com/aave/aave-v3-core/blob/master/audits/14-01-2022_PeckShield_AaveV3.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 11752,
+      "audit_key": "audit-11752",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/07-01-2022_TrailOfBits_AaveV3.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 11752,
+          "report_url": "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/07-01-2022_TrailOfBits_AaveV3.pdf"
+        },
+        {
+          "audit_id": 11758,
+          "report_url": "https://github.com/aave/aave-v3-core/blob/master/audits/07-01-2022_TrailOfBits_AaveV3.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 11753,
+      "audit_key": "audit-11753",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/01-11-2021_OpenZeppelin_AaveV3.pdf",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 11753,
+          "report_url": "https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/01-11-2021_OpenZeppelin_AaveV3.pdf"
+        },
+        {
+          "audit_id": 11759,
+          "report_url": "https://github.com/aave/aave-v3-core/blob/master/audits/01-11-2021_OpenZeppelin_AaveV3.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 11760,
+      "audit_key": "audit-11760",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://www.halborn.com/case-studies/post/case-study-strengthening-zerolend-s-multi-chain-lending-platform-with-halborn",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11761,
+      "audit_key": "audit-11761",
+      "report_name": "PeckShield-Audit-Report-ZeroLend-v1.0rc.pdf",
+      "report_url": "https://github.com/zerolend/audits/blob/main/peckshield/PeckShield-Audit-Report-ZeroLend-v1.0rc.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
@@ -17617,7 +17877,44 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11746,
+        "report_name": "zerolend_report_depcheck_final.pdf"
+      },
+      {
+        "audit_id": 11748,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 11749,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 11750,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 11751,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 11752,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 11753,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 11760,
+        "report_name": "{% embed url=\"<>\" %}"
+      },
+      {
+        "audit_id": 11761,
+        "report_name": "PeckShield-Audit-Report-ZeroLend-v1.0rc.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

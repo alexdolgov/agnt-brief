@@ -7,11 +7,11 @@
 - Project: MorpheusAI (`morpheusai`)
 - Website: [https://mor.org](https://mor.org)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T01:14:44.581Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
+- Generated: 2026-06-11T11:27:21.308Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, ethereum
 - Contract surface: 47 unique implementations (96 raw deployments)
-- DeFi Llama TVL: $29,557,739.01
+- DeFi Llama TVL: $20,738,151.00
 - On-chain TVL (included contracts): $621.83
 - TVL by chain: Ethereum $621.83
 
@@ -31,11 +31,11 @@ The DepositPool contracts on Ethereum and Arbitrum interact with DistributorV2 a
 - Unverified implementations: 0
 - Unique implementations: 47
 - Raw deployments: 96
-- Audits discovered: 0
+- Audits discovered: 18
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $621.83
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2024 (stale)
+- Staleness: 0 fresh, 0 aging, 2 stale, 16 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $621.83 represents exposure in a protocol with declining activity.
 
@@ -123,6 +123,24 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Code4rena x Morpheus Capital V2 Audit Report.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Code4rena%20x%20Morpheus%20Capital%20V2%20Audit%20Report.pdf) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [MOR20 Contracts | Renascence.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/MOR20%20Contracts%20%7C%20Renascence.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Morpheus Capital V2 Zenith Audit Report.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Morpheus%20Capital%20V2%20Zenith%20Audit%20Report.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Morpheus BuildersV2 Audit Report | Trust Security.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Builders/Morpheus%20BuildersV2%20Audit%20Report%20%7C%20Trust%20Security.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Morpheus Lumerin Audit Report 1 | Renascence.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Compute/Morpheus%20Lumerin%20Audit%20Report%201%20%7C%20Renascence.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Morpheus Lumerin Audit Report 2 | Renascence.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Compute/Morpheus%20Lumerin%20Audit%20Report%202%20%7C%20Renascence.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Morpheus Lumerin Audit Report 3 | Renascence.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Compute/Morpheus%20Lumerin%20Audit%20Report%203%20%7C%20Renascence.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Distribution V1 Audit | Community.md](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Distribution%20Contract/Distribution%20V1%20Audit%20%7C%20Community.md) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Distribution V1 Public Bug Bounty | Code Hawks.md](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Distribution%20Contract/Distribution%20V1%20Public%20Bug%20Bounty%20%7C%20Code%20Hawks.md) | Cyfrin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Distribution V2 Audit | Renascence.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Distribution%20Contract/Distribution%20V2%20Audit%20%7C%20Renascence.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Distribution V3 (Capital Staking) Audit | Renascence.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Distribution%20Contract/Distribution%20V3%20(Capital%20Staking)%20Audit%20%7C%20Renascence.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Distribution V3 (Code Staking) Audit | Renascence.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Distribution%20Contract/Distribution%20V3%20(Code%20Staking)%20Audit%20%7C%20Renascence.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Distribution V4 (Claim Lock) Audit | Renascence.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Distribution%20Contract/Distribution%20V4%20(Claim%20Lock)%20Audit%20%7C%20Renascence.pdf) | yAudit | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
+| [Distribution V5 (Referral Program) Audit | Renascence.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Distribution%20Contract/Distribution%20V5%20(Referral%20Program)%20Audit%20%7C%20Renascence.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [L2TokenReceiverV2 Audit (Final) | Renascence.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/L2%20Token%20Receiver%20V2/L2TokenReceiverV2%20Audit%20(Final)%20%7C%20Renascence.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [L2TokenReceiverV2 Audit (Initial) | Renascence.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/L2%20Token%20Receiver%20V2/L2TokenReceiverV2%20Audit%20(Initial)%20%7C%20Renascence.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [MOR Dynamic Minter Security Audit (Wormhole) | Renascence.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/MOR%20OFT%20Token/MOR%20Dynamic%20Minter%20Security%20Audit%20(Wormhole)%20%7C%20Renascence.pdf) | yAudit | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
+| [MOR Token Contract | OpenZepellin.pdf](https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/MOR%20OFT%20Token/MOR%20Token%20Contract%20%7C%20OpenZepellin.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -182,9 +200,30 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 18
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11621] Code4rena x Morpheus Capital V2 Audit Report.pdf
+- [11622] MOR20 Contracts | Renascence.pdf
+- [11623] Morpheus Capital V2 Zenith Audit Report.pdf
+- [11624] Morpheus BuildersV2 Audit Report | Trust Security.pdf
+- [11625] Morpheus Lumerin Audit Report 1 | Renascence.pdf
+- [11626] Morpheus Lumerin Audit Report 2 | Renascence.pdf
+- [11627] Morpheus Lumerin Audit Report 3 | Renascence.pdf
+- [11628] Distribution V1 Audit | Community.md
+- [11629] Distribution V1 Public Bug Bounty | Code Hawks.md
+- [11630] Distribution V2 Audit | Renascence.pdf
+- [11631] Distribution V3 (Capital Staking) Audit | Renascence.pdf
+- [11632] Distribution V3 (Code Staking) Audit | Renascence.pdf
+- [11633] Distribution V4 (Claim Lock) Audit | Renascence.pdf
+- [11634] Distribution V5 (Referral Program) Audit | Renascence.pdf
+- [11635] L2TokenReceiverV2 Audit (Final) | Renascence.pdf
+- [11636] L2TokenReceiverV2 Audit (Initial) | Renascence.pdf
+- [11637] MOR Dynamic Minter Security Audit (Wormhole) | Renascence.pdf
+- [11638] MOR Token Contract | OpenZepellin.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

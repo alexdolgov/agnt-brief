@@ -7,11 +7,11 @@
 - Project: ZeroLend (`zerolend`)
 - Website: [https://zerolend.xyz/](https://zerolend.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T04:23:05.671Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
+- Generated: 2026-06-11T11:27:20.719Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: base, berachain, blast, ethereum, linea, manta, polygon, zksync-era
 - Contract surface: 565 unique implementations (565 raw deployments)
-- DeFi Llama TVL: $16,140,039.00
+- DeFi Llama TVL: $13,186,422.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,11 +23,11 @@
 - Unverified implementations: 565
 - Unique implementations: 565
 - Raw deployments: 565
-- Audits discovered: 0
+- Audits discovered: 9
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2023-04 (stale)
+- Staleness: 0 fresh, 0 aging, 2 stale, 7 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -633,6 +633,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [zerolend_report_depcheck_final.pdf (also discovered via alternate URL)](https://github.com/zerolend/audits/blob/main/mundus/zerolend_report_depcheck_final.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/27-01-2022_ABDK_AaveV3.pdf) | ABDK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/27-01-2022_SigmaPrime_AaveV3.pdf) | Sigma Prime | Audit | 2023-04 | stale | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/certora/Aave_V3_Formal_Verification_Report_Jan2022.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/14-01-2022_PeckShield_AaveV3.pdf) | PeckShield | Audit | 2022 | stale | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/07-01-2022_TrailOfBits_AaveV3.pdf) | Trail of Bits | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture (also discovered via alternate URL)](https://raw.githubusercontent.com/aave/aave-v3-core/782f51917056a53a2c228701058a6c3fb233684a/audits/01-11-2021_OpenZeppelin_AaveV3.pdf) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://www.halborn.com/case-studies/post/case-study-strengthening-zerolend-s-multi-chain-lending-platform-with-halborn) | Halborn | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [PeckShield-Audit-Report-ZeroLend-v1.0rc.pdf](https://github.com/zerolend/audits/blob/main/peckshield/PeckShield-Audit-Report-ZeroLend-v1.0rc.pdf) | PeckShield | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -653,9 +662,21 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 9
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11746] zerolend_report_depcheck_final.pdf
+- [11748] Rendered PDF capture
+- [11749] Rendered PDF capture
+- [11750] Rendered PDF capture
+- [11751] Rendered PDF capture
+- [11752] Rendered PDF capture
+- [11753] Rendered PDF capture
+- [11760] {% embed url="<>" %}
+- [11761] PeckShield-Audit-Report-ZeroLend-v1.0rc.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

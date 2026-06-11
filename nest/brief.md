@@ -1,15 +1,15 @@
-# Agentic Audit Brief: NEST
+# Agentic Audit Brief: nest
 
 ## Project Overview
 
-- Project: NEST (`nest`)
+- Project: nest (`nest`)
 - Website: [https://app.usenest.xyz/](https://app.usenest.xyz/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T01:23:37.800Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-11T11:29:11.748Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: bsc, ethereum, hyperliquid, polygon
 - Contract surface: 349 unique implementations (510 raw deployments)
-- DeFi Llama TVL: $12,591,365.00
+- DeFi Llama TVL: $17,707,575.00
 - On-chain TVL (included contracts): $69,415,308.58
 - TVL by chain: Ethereum $58,240,508.58 | Bsc $11,174,800.00
 
@@ -29,11 +29,11 @@ The Core family provides the ve(3,3) layer that governs emissions and incentives
 - Unverified implementations: 217
 - Unique implementations: 349
 - Raw deployments: 510
-- Audits discovered: 1
+- Audits discovered: 10
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $69,415,308.58
 - Latest audit: 2026-03 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 1 fresh, 2 aging, 1 stale, 6 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -427,6 +427,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [[\[Final Report\]]()](https://github.com/bailsec/BailSec/blob/main/Bailsec%20-%20Nest%20-%20VE%20Core%20-%20Final%20Report.pdf) | BailSec | Audit | 2026-03 | fresh | Direct | contract_name | 31 | high |
+| [* **Final report (Code4rena):** [](https://code4rena.com/reports/2024-09-fenix-finance?utm_source=chatgpt.com)](https://code4rena.com/reports/2024-09-fenix-finance) | Code4rena | Contest | 2024-09 | aging | Direct | n/a | 0 | n/a |
+| [* **Contest page (Code4rena):** [](https://code4rena.com/audits/2024-09-fenix-finance-invitational?utm_source=chatgpt.com)](https://code4rena.com/audits/2024-09-fenix-finance-invitational) | Code4rena | Contest | 2024-09 | aging | Direct | n/a | 0 | n/a |
+| [Algebra_Paladin_report.pdf (also discovered via alternate URL)](https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Algebra_Paladin_report.pdf) | Paladin | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
+| [Core_audit_report_MixBytes.pdf (also discovered via alternate URL)](https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Core_audit_report_MixBytes.pdf) | MixBytes | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Farming_Plugin_report_MixBytes.pdf (also discovered via alternate URL)](https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Farming_Plugin_report_MixBytes.pdf) | MixBytes | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Riley_Holterhus_Algebra_Integral.pdf (also discovered via alternate URL)](https://github.com/hats-finance/Fenix-Finance-0x83dbe5aa378f3ce160ed084daf85f621289fb92f/blob/main/audits/Riley_Holterhus_Algebra_Integral.pdf) | Riley Holterhus | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Bailsec_Algebra_Integral_Update_Audit_differential_Report.pdf](https://github.com/cryptoalgebra/Algebra/blob/master/audits/Bailsec_Algebra_Integral_Update_Audit_differential_Report.pdf) | Bailsec | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Bailsec_Algebra_Integralv1.2_Core_Update_Audit.pdf](https://github.com/cryptoalgebra/Algebra/blob/master/audits/Bailsec_Algebra_Integralv1.2_Core_Update_Audit.pdf) | Bailsec | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Base_Plugin_report_MixBytes.pdf](https://github.com/cryptoalgebra/Algebra/blob/master/audits/Base_Plugin_report_MixBytes.pdf) | MixBytes | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -530,9 +539,21 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 9
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=31
+
+Zero-match audit list:
+
+- [11829] * **Final report (Code4rena):** [](https://code4rena.com/reports/2024-09-fenix-finance?utm_source=chatgpt.com)
+- [11830] * **Contest page (Code4rena):** [](https://code4rena.com/audits/2024-09-fenix-finance-invitational?utm_source=chatgpt.com)
+- [11831] Algebra_Paladin_report.pdf
+- [11832] Core_audit_report_MixBytes.pdf
+- [11833] Farming_Plugin_report_MixBytes.pdf
+- [11834] Riley_Holterhus_Algebra_Integral.pdf
+- [11836] Bailsec_Algebra_Integral_Update_Audit_differential_Report.pdf
+- [11837] Bailsec_Algebra_Integralv1.2_Core_Update_Audit.pdf
+- [11838] Base_Plugin_report_MixBytes.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

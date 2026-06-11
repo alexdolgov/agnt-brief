@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sigma-money",
-  "generated_at": "2026-06-11T02:41:56.252Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
+  "generated_at": "2026-06-11T11:29:10.256Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "sigma-money",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 43,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 10,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3089795.81226,
+    "dl_tvl_usd": 2831330.8039,
     "tvl_usd": 593368835.4393357,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -54,7 +54,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 10
     }
   },
   "topography": {
@@ -17566,7 +17566,218 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11667,
+      "audit_key": "audit-11667",
+      "report_name": "SigmaMoney round 2 - SlowMist Audit Report.pdf",
+      "report_url": "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SigmaMoney%20round%202%20-%20SlowMist%20Audit%20Report.pdf",
+      "auditor": "SlowMist",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11668,
+      "audit_key": "audit-11668",
+      "report_name": "Supremacy-Audit-Report-SigmaMoney-v1.2.pdf",
+      "report_url": "https://github.com/SupremacyTeam/publications/blob/main/Sigma%20Money/Supremacy-Audit-Report-SigmaMoney-v1.2.pdf",
+      "auditor": "Supremacy",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11669,
+      "audit_key": "audit-11669",
+      "report_name": "SigmaMoney round 3 - SlowMist Audit Report.pdf",
+      "report_url": "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SigmaMoney%20round%203%20-%20SlowMist%20Audit%20Report.pdf",
+      "auditor": "SlowMist",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11670,
+      "audit_key": "audit-11670",
+      "report_name": "Supremacy-Audit-Report-SigmaMoney-v1.6.pdf",
+      "report_url": "https://github.com/SupremacyTeam/publications/blob/main/Sigma%20Money/Supremacy-Audit-Report-SigmaMoney-v1.6.pdf",
+      "auditor": "Supremacy",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11671,
+      "audit_key": "audit-11671",
+      "report_name": "SigmaMoney round 4 - SlowMist Audit Report.pdf",
+      "report_url": "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SigmaMoney%20round%204%20-%20SlowMist%20Audit%20Report.pdf",
+      "auditor": "SlowMist",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11672,
+      "audit_key": "audit-11672",
+      "report_name": "Sigma DAO round 1 - SlowMist Audit Report.pdf",
+      "report_url": "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/Sigma%20DAO%20round%201%20-%20SlowMist%20Audit%20Report.pdf",
+      "auditor": "SlowMist",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11673,
+      "audit_key": "audit-11673",
+      "report_name": "Sigma DAO round 2 - SlowMist Audit Report.pdf",
+      "report_url": "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/Sigma%20DAO%20round%202%20-%20SlowMist%20Audit%20Report.pdf",
+      "auditor": "SlowMist",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11674,
+      "audit_key": "audit-11674",
+      "report_name": "Sigma DAO round 3&4&5 - SlowMist Audit Report.pdf",
+      "report_url": "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/Sigma%20DAO%20round%203%264%265%20-%20SlowMist%20Audit%20Report.pdf",
+      "auditor": "SlowMist",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11675,
+      "audit_key": "audit-11675",
+      "report_name": "SigmaMoney Round 7 - SlowMist Audit Report.pdf",
+      "report_url": "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SigmaMoney%20Round%207%20-%20SlowMist%20Audit%20Report.pdf",
+      "auditor": "SlowMist",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11676,
+      "audit_key": "audit-11676",
+      "report_name": "Sigma_Dao_round_6_&_Money_round_8_SlowMist_Audit_Report.pdf",
+      "report_url": "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/Sigma_Dao_round_6_%26_Money_round_8_SlowMist_Audit_Report.pdf",
+      "auditor": "SlowMist",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
@@ -17580,7 +17791,48 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11667,
+        "report_name": "SigmaMoney round 2 - SlowMist Audit Report.pdf"
+      },
+      {
+        "audit_id": 11668,
+        "report_name": "Supremacy-Audit-Report-SigmaMoney-v1.2.pdf"
+      },
+      {
+        "audit_id": 11669,
+        "report_name": "SigmaMoney round 3 - SlowMist Audit Report.pdf"
+      },
+      {
+        "audit_id": 11670,
+        "report_name": "Supremacy-Audit-Report-SigmaMoney-v1.6.pdf"
+      },
+      {
+        "audit_id": 11671,
+        "report_name": "SigmaMoney round 4 - SlowMist Audit Report.pdf"
+      },
+      {
+        "audit_id": 11672,
+        "report_name": "Sigma DAO round 1 - SlowMist Audit Report.pdf"
+      },
+      {
+        "audit_id": 11673,
+        "report_name": "Sigma DAO round 2 - SlowMist Audit Report.pdf"
+      },
+      {
+        "audit_id": 11674,
+        "report_name": "Sigma DAO round 3&4&5 - SlowMist Audit Report.pdf"
+      },
+      {
+        "audit_id": 11675,
+        "report_name": "SigmaMoney Round 7 - SlowMist Audit Report.pdf"
+      },
+      {
+        "audit_id": 11676,
+        "report_name": "Sigma_Dao_round_6_&_Money_round_8_SlowMist_Audit_Report.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

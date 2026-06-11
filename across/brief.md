@@ -5,11 +5,11 @@
 - Project: Across (`across`)
 - Website: [https://across.to](https://across.to)
 - Lifecycle: active (Tier 0, 88.8% below peak)
-- Generated: 2026-06-10T20:58:56.492Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-11T11:29:06.370Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, base, blast, bsc, ethereum, hyperliquid, ink, linea, mode, optimism, plasma, polygon, unichain, zksync-era, zora
 - Contract surface: 142 unique implementations (532 raw deployments)
-- DeFi Llama TVL: $26,926,442.18
+- DeFi Llama TVL: $20,101,835.26
 - On-chain TVL (included contracts): $28,143,485.44
 - TVL by chain: Ethereum $27,154,708.39 | Optimism $431,080.26 | Linea $416,646.24 | Base $64,189.73 | Bsc $51,370.01 | Blast $15,958.92 | Unichain $7,905.39 | Hyperliquid $832.96 | Plasma $607.11 | Arbitrum $186.43
 
@@ -29,11 +29,11 @@ The 'Chains Live on the Swap API' family forms the core bridge infrastructure, w
 - Unverified implementations: 81
 - Unique implementations: 142
 - Raw deployments: 532
-- Audits discovered: 0
+- Audits discovered: 11
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $28,143,485.44
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 11 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -217,6 +217,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [blog.openzeppelin.com/uma-audit-l2-bridges](https://www.openzeppelin.com/news/uma-audit-l2-bridges) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [the decentralized oracle](https://www.openzeppelin.com/news/uma-audit-phase-1) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [a particular financial contract template](https://www.openzeppelin.com/news/uma-audit-phase-2) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [some ad hoc pull requests](https://www.openzeppelin.com/news/uma-audit-phase-3) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [the Perpetual Multiparty template](https://www.openzeppelin.com/news/uma-audit-phase-4) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [various incremental pull requests over a longer engagement](https://www.openzeppelin.com/news/uma-continuous-audit) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [* [Across V3 Incremental Audit]()](https://www.openzeppelin.com/news/across-v3-and-oval-incremental-audit) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [* [Across V3 Audit]()](https://blog.openzeppelin.com/across-v3-incremental-audit?hs_preview=lerUtAnm-157915368784) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [* [Across Token and Token Distributor Audit]()](https://www.openzeppelin.com/news/across-token-and-token-distributor-audit) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [* [Across V2 Audit]()](https://www.openzeppelin.com/news/uma-across-v2-audit) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [* [UMA Audit – Phase 6]()](https://www.openzeppelin.com/news/uma-audit-phase-6) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -284,9 +295,23 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 11
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11500] blog.openzeppelin.com/uma-audit-l2-bridges
+- [11501] the decentralized oracle
+- [11502] a particular financial contract template
+- [11503] some ad hoc pull requests
+- [11504] the Perpetual Multiparty template
+- [11505] various incremental pull requests over a longer engagement
+- [11506] * [Across V3 Incremental Audit]()
+- [11507] * [Across V3 Audit]()
+- [11508] * [Across Token and Token Distributor Audit]()
+- [11509] * [Across V2 Audit]()
+- [11510] * [UMA Audit – Phase 6]()
 
 Fork inheritance lineage and inherited audits are included when available.

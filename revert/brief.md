@@ -5,11 +5,11 @@
 - Project: Revert (`revert`)
 - Website: [https://revert.finance/#/ref/w6vno3](https://revert.finance/#/ref/w6vno3)
 - Lifecycle: active (Tier 0, 40.1% below peak)
-- Generated: 2026-06-11T02:17:02.879Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-11T11:29:09.959Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: arbitrum, base, blast, bsc, ethereum, optimism, polygon, unichain
 - Contract surface: 84 unique implementations (546 raw deployments)
-- DeFi Llama TVL: $11,629,176.00
+- DeFi Llama TVL: $7,430,343.00
 - On-chain TVL (included contracts): $2,087,284.04
 - TVL by chain: Arbitrum $853,511.07 | Base $840,626.20 | Ethereum $393,146.77 | Polygon $0.00
 
@@ -29,18 +29,18 @@ The Revert automation suite uses shared infrastructure like V3Oracle for price f
 - Unverified implementations: 66
 - Unique implementations: 84
 - Raw deployments: 546
-- Audits discovered: 2
+- Audits discovered: 12
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $2,087,284.04
-- Latest audit: 2022-09 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
+- Latest audit: 2025 (aging)
+- Staleness: 0 fresh, 1 aging, 6 stale, 5 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| PeckShield | Tier 2 | 2 | 11.1% | 2022-09 |
+| PeckShield | Tier 2 | 2 | 11.1% | 2025 |
 
 ## Contract Surface
 
@@ -163,6 +163,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [PeckShield-Audit-Report-Revert-Compoundor-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Revert-Compoundor-v1.0.pdf) | PeckShield | Audit | 2022-08 | stale | Direct | contract_name | 8 | high |
 | [PeckShield-Audit-Report-Revert-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Revert-v1.0.pdf) | PeckShield | Audit | 2022-09 | stale | Direct | contract_name | 1 | high |
+| [The V3Utils contract has undergone a comprehensive audit by Peckshield, resulting in its redeployment with enhanced security measures. The audit successfully identified and addressed two low-severity issues and one informational issue. For those who are interested, the full audit report is available [here]().](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Revert-V3utils-v1.0.pdf) | PeckShield | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
+| [The Self-Compoundor contract has gone through an audit process with PeckShield. The full report is [available here]().](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-RevertFinance-SelfCompoundor-v1.0.pdf) | PeckShield | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
+| [Version 2 of the automator contracts were also audited by [Hydn Security](https://hydnsec.com/) and the full report is [available here]().](https://github.com/hydnsec/audits/blob/main/Revert%20Finance%20-%20Exit%20Auto%20%26%20Range%20Auto/HYDN%20-%20Revert%20Finance%20autoExit_autoRange%20Audit%20Report.pdf) | Hydn Security | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [The Auto-Exit and Auto-Range have undergone an audit process with [Hydn Security](https://hydnsec.com/), the full report is [available here]().](https://github.com/hydnsec/audits/blob/main/Revert%20Finance%20-%20Exit%20Auto%20%20%26%20Move%20Range/Revert_Finance_Audit_Report_%20Auto-Exit_Auto-Move_Range.pdf) | Hydn Security | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Hydn Security: [Report available here]()\](https://github.com/hydnsec/audits/blob/main/Revert%20Finance%20-%20Lend/HYDN%20-%20Revert%20Finance%20Lend%20Audit%20Report.pdf) | Hydn Security | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Code4rena: [Report available here]()](https://code4rena.com/audits/2024-03-revert-lend) | Code4rena | Contest | 2024-03 | stale | Direct | n/a | 0 | n/a |
+| [PeckShield: [Report available here]()](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Revert-Lend-v1.0.pdf) | PeckShield | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
+| [PeckShield: [Report available here]()<br>](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Revert-v4Utils-v1.0.pdf) | PeckShield | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
+| [The Aerodrome Slipstream deployment of Revert Lend, including the GaugeManager custody layer and the AERO auto-compounding, was reviewed through a competitive audit on [Cantina](https://cantina.xyz/). The full report is [available here]().](https://github.com/revert-finance/lend/blob/aerodrome-slipstream/report_cli_cantina_efb6f308_f13b_4110_aff8_0d67181608dd_revert_finance.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [HYDN - Revert Finance Lend - aero - Audit.pdf](https://github.com/hydnsec/audits/blob/main/Revert%20Finance%20-%20Lend/HYDN%20-%20Revert%20Finance%20Lend%20-%20aero%20-%20Audit.pdf) | HYDN | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -195,9 +205,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 10
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
 - Match method counts: extraction_exact=9
+
+Zero-match audit list:
+
+- [11995] The V3Utils contract has undergone a comprehensive audit by Peckshield, resulting in its redeployment with enhanced security measures. The audit successfully identified and addressed two low-severity issues and one informational issue. For those who are interested, the full audit report is available [here]().
+- [11996] The Self-Compoundor contract has gone through an audit process with PeckShield. The full report is [available here]().
+- [11997] Version 2 of the automator contracts were also audited by [Hydn Security](https://hydnsec.com/) and the full report is [available here]().
+- [11998] The Auto-Exit and Auto-Range have undergone an audit process with [Hydn Security](https://hydnsec.com/), the full report is [available here]().
+- [11999] Hydn Security: [Report available here]()\
+- [12000] Code4rena: [Report available here]()
+- [12001] PeckShield: [Report available here]()
+- [12002] PeckShield: [Report available here]()<br>
+- [12003] The Aerodrome Slipstream deployment of Revert Lend, including the GaugeManager custody layer and the AERO auto-compounding, was reviewed through a competitive audit on [Cantina](https://cantina.xyz/). The full report is [available here]().
+- [12004] HYDN - Revert Finance Lend - aero - Audit.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

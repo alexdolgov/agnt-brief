@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "across",
-  "generated_at": "2026-06-10T20:58:56.492Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-11T11:29:06.370Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "across",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 3,
     "contracts_unverified": 81,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 11,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 26926442.17584,
+    "dl_tvl_usd": 20101835.25805,
     "tvl_usd": 28143485.438329387,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -77,7 +77,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 11
     }
   },
   "topography": {
@@ -8008,7 +8008,239 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11500,
+      "audit_key": "audit-11500",
+      "report_name": "blog.openzeppelin.com/uma-audit-l2-bridges",
+      "report_url": "https://www.openzeppelin.com/news/uma-audit-l2-bridges",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11501,
+      "audit_key": "audit-11501",
+      "report_name": "the decentralized oracle",
+      "report_url": "https://www.openzeppelin.com/news/uma-audit-phase-1",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11502,
+      "audit_key": "audit-11502",
+      "report_name": "a particular financial contract template",
+      "report_url": "https://www.openzeppelin.com/news/uma-audit-phase-2",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11503,
+      "audit_key": "audit-11503",
+      "report_name": "some ad hoc pull requests",
+      "report_url": "https://www.openzeppelin.com/news/uma-audit-phase-3",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11504,
+      "audit_key": "audit-11504",
+      "report_name": "the Perpetual Multiparty template",
+      "report_url": "https://www.openzeppelin.com/news/uma-audit-phase-4",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11505,
+      "audit_key": "audit-11505",
+      "report_name": "various incremental pull requests over a longer engagement",
+      "report_url": "https://www.openzeppelin.com/news/uma-continuous-audit",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11506,
+      "audit_key": "audit-11506",
+      "report_name": "* [Across V3 Incremental Audit]()",
+      "report_url": "https://www.openzeppelin.com/news/across-v3-and-oval-incremental-audit",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11507,
+      "audit_key": "audit-11507",
+      "report_name": "* [Across V3 Audit]()",
+      "report_url": "https://blog.openzeppelin.com/across-v3-incremental-audit?hs_preview=lerUtAnm-157915368784",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11508,
+      "audit_key": "audit-11508",
+      "report_name": "* [Across Token and Token Distributor Audit]()",
+      "report_url": "https://www.openzeppelin.com/news/across-token-and-token-distributor-audit",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11509,
+      "audit_key": "audit-11509",
+      "report_name": "* [Across V2 Audit]()",
+      "report_url": "https://www.openzeppelin.com/news/uma-across-v2-audit",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11510,
+      "audit_key": "audit-11510",
+      "report_name": "* [UMA Audit – Phase 6]()",
+      "report_url": "https://www.openzeppelin.com/news/uma-audit-phase-6",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -8483,7 +8715,52 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11500,
+        "report_name": "blog.openzeppelin.com/uma-audit-l2-bridges"
+      },
+      {
+        "audit_id": 11501,
+        "report_name": "the decentralized oracle"
+      },
+      {
+        "audit_id": 11502,
+        "report_name": "a particular financial contract template"
+      },
+      {
+        "audit_id": 11503,
+        "report_name": "some ad hoc pull requests"
+      },
+      {
+        "audit_id": 11504,
+        "report_name": "the Perpetual Multiparty template"
+      },
+      {
+        "audit_id": 11505,
+        "report_name": "various incremental pull requests over a longer engagement"
+      },
+      {
+        "audit_id": 11506,
+        "report_name": "* [Across V3 Incremental Audit]()"
+      },
+      {
+        "audit_id": 11507,
+        "report_name": "* [Across V3 Audit]()"
+      },
+      {
+        "audit_id": 11508,
+        "report_name": "* [Across Token and Token Distributor Audit]()"
+      },
+      {
+        "audit_id": 11509,
+        "report_name": "* [Across V2 Audit]()"
+      },
+      {
+        "audit_id": 11510,
+        "report_name": "* [UMA Audit – Phase 6]()"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

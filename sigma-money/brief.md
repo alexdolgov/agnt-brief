@@ -5,11 +5,11 @@
 - Project: Sigma Money (`sigma-money`)
 - Website: [https://sigma.money](https://sigma.money)
 - Lifecycle: active (Tier 0, 82.6% below peak)
-- Generated: 2026-06-11T02:41:56.252Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-11T11:29:10.256Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: bsc
 - Contract surface: 231 unique implementations (1379 raw deployments)
-- DeFi Llama TVL: $3,089,795.81
+- DeFi Llama TVL: $2,831,330.80
 - On-chain TVL (included contracts): $593,368,835.44
 - TVL by chain: Bsc $593,368,835.44
 
@@ -21,11 +21,11 @@
 - Unverified implementations: 43
 - Unique implementations: 231
 - Raw deployments: 1379
-- Audits discovered: 0
+- Audits discovered: 10
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $593,368,835.44
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 10 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -297,6 +297,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [SigmaMoney round 2 - SlowMist Audit Report.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SigmaMoney%20round%202%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Supremacy-Audit-Report-SigmaMoney-v1.2.pdf](https://github.com/SupremacyTeam/publications/blob/main/Sigma%20Money/Supremacy-Audit-Report-SigmaMoney-v1.2.pdf) | Supremacy | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [SigmaMoney round 3 - SlowMist Audit Report.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SigmaMoney%20round%203%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Supremacy-Audit-Report-SigmaMoney-v1.6.pdf](https://github.com/SupremacyTeam/publications/blob/main/Sigma%20Money/Supremacy-Audit-Report-SigmaMoney-v1.6.pdf) | Supremacy | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [SigmaMoney round 4 - SlowMist Audit Report.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SigmaMoney%20round%204%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Sigma DAO round 1 - SlowMist Audit Report.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/Sigma%20DAO%20round%201%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Sigma DAO round 2 - SlowMist Audit Report.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/Sigma%20DAO%20round%202%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Sigma DAO round 3&4&5 - SlowMist Audit Report.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/Sigma%20DAO%20round%203%264%265%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [SigmaMoney Round 7 - SlowMist Audit Report.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SigmaMoney%20Round%207%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Sigma_Dao_round_6_&_Money_round_8_SlowMist_Audit_Report.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/Sigma_Dao_round_6_%26_Money_round_8_SlowMist_Audit_Report.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -317,9 +327,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 10
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11667] SigmaMoney round 2 - SlowMist Audit Report.pdf
+- [11668] Supremacy-Audit-Report-SigmaMoney-v1.2.pdf
+- [11669] SigmaMoney round 3 - SlowMist Audit Report.pdf
+- [11670] Supremacy-Audit-Report-SigmaMoney-v1.6.pdf
+- [11671] SigmaMoney round 4 - SlowMist Audit Report.pdf
+- [11672] Sigma DAO round 1 - SlowMist Audit Report.pdf
+- [11673] Sigma DAO round 2 - SlowMist Audit Report.pdf
+- [11674] Sigma DAO round 3&4&5 - SlowMist Audit Report.pdf
+- [11675] SigmaMoney Round 7 - SlowMist Audit Report.pdf
+- [11676] Sigma_Dao_round_6_&_Money_round_8_SlowMist_Audit_Report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

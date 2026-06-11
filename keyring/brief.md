@@ -5,11 +5,11 @@
 - Project: Keyring (`keyring`)
 - Website: [https://app.euler.finance/governor/keyring?network=avalanche](https://app.euler.finance/governor/keyring?network=avalanche)
 - Lifecycle: active (Tier 0, 72.2% below peak)
-- Generated: 2026-06-11T00:23:03.487Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-11T11:29:09.575Z
+- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
 - Chains: avalanche, ethereum
 - Contract surface: 53 unique implementations (144 raw deployments)
-- DeFi Llama TVL: $6,222,268.01
+- DeFi Llama TVL: $6,221,961.28
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ The Governor family controls risk parameters and protocol configurations, which 
 - Unverified implementations: 11
 - Unique implementations: 53
 - Raw deployments: 144
-- Audits discovered: 0
+- Audits discovered: 10
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2025-11 (fresh)
+- Staleness: 7 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -127,6 +127,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Pashov Audit Group EulerEarn (also discovered via alternate URL)](https://github.com/euler-xyz/euler-earn/blob/master/audits/Pashov%5FAudit%5FGroup%5Freport.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Certora EulerEarn](https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora%5FEulerEarn%5Freport.pdf) | Pashov Audit Group | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [Sigma Prime EulerEarn](https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma%5FPrime%5FEulerEarn%5Freport.pdf) | Sigma Prime | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Certora_EulerEarn_report.pdf) | Spearbit | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Sigma_Prime_EulerEarn_report.pdf) | Spearbit | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [Omniscia Euler Earn Report](https://omniscia.io/reports/euler-finance-earn-yield-aggregator-66faae519dcc3c0018b9097e) | Enigma Ventures | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Certora_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora_EulerEarn_report.pdf) | Certora | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [Sigma_Prime_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma_Prime_EulerEarn_report.pdf) | Sigma Prime | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [yAudit ERC4626 and Vault Securitize Report](https://github.com/euler-xyz/evk-periphery/blob/master/audits/yAudit%20ERC4626%20and%20Vault%20Securitize.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Pashov Group ERC4626 and Vault Securitize Report](https://github.com/euler-xyz/evk-periphery/blob/master/audits/Pashov%20Group%20ERC4626%20and%20Vault%20Securitize.pdf) | Pashov Audit Group | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -184,9 +194,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 10
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11595] Pashov Audit Group EulerEarn
+- [11596] Certora EulerEarn
+- [11597] Sigma Prime EulerEarn
+- [11599] Rendered PDF capture
+- [11600] Rendered PDF capture
+- [11601] Omniscia Euler Earn Report
+- [11602] Certora_EulerEarn_report.pdf
+- [11604] Sigma_Prime_EulerEarn_report.pdf
+- [11605] yAudit ERC4626 and Vault Securitize Report
+- [11606] Pashov Group ERC4626 and Vault Securitize Report
 
 Fork inheritance lineage and inherited audits are included when available.

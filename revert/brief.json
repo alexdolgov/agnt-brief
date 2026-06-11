@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "revert",
-  "generated_at": "2026-06-11T02:17:02.879Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-11T11:29:09.959Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "revert",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 66,
     "coverage_pct": 11.1,
-    "total_audits": 2,
+    "total_audits": 12,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 11629176,
+    "dl_tvl_usd": 7430343,
     "tvl_usd": 2087284.042930571,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,13 +58,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022-09",
-    "audit_freshness": "stale",
+    "latest_audit_date": "2025",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 0,
-      "stale": 2,
-      "unknown": 0
+      "aging": 1,
+      "stale": 6,
+      "unknown": 5
     }
   },
   "topography": {
@@ -6895,6 +6895,216 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11995,
+      "audit_key": "audit-11995",
+      "report_name": "The V3Utils contract has undergone a comprehensive audit by Peckshield, resulting in its redeployment with enhanced security measures. The audit successfully identified and addressed two low-severity issues and one informational issue. For those who are interested, the full audit report is available [here]().",
+      "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Revert-V3utils-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11996,
+      "audit_key": "audit-11996",
+      "report_name": "The Self-Compoundor contract has gone through an audit process with PeckShield. The full report is [available here]().",
+      "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-RevertFinance-SelfCompoundor-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11997,
+      "audit_key": "audit-11997",
+      "report_name": "Version 2 of the automator contracts were also audited by [Hydn Security](https://hydnsec.com/) and the full report is [available here]().",
+      "report_url": "https://github.com/hydnsec/audits/blob/main/Revert%20Finance%20-%20Exit%20Auto%20%26%20Range%20Auto/HYDN%20-%20Revert%20Finance%20autoExit_autoRange%20Audit%20Report.pdf",
+      "auditor": "Hydn Security",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11998,
+      "audit_key": "audit-11998",
+      "report_name": "The Auto-Exit and Auto-Range have undergone an audit process with [Hydn Security](https://hydnsec.com/), the full report is [available here]().",
+      "report_url": "https://github.com/hydnsec/audits/blob/main/Revert%20Finance%20-%20Exit%20Auto%20%20%26%20Move%20Range/Revert_Finance_Audit_Report_%20Auto-Exit_Auto-Move_Range.pdf",
+      "auditor": "Hydn Security",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11999,
+      "audit_key": "audit-11999",
+      "report_name": "Hydn Security: [Report available here]()\\",
+      "report_url": "https://github.com/hydnsec/audits/blob/main/Revert%20Finance%20-%20Lend/HYDN%20-%20Revert%20Finance%20Lend%20Audit%20Report.pdf",
+      "auditor": "Hydn Security",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12000,
+      "audit_key": "audit-12000",
+      "report_name": "Code4rena: [Report available here]()",
+      "report_url": "https://code4rena.com/audits/2024-03-revert-lend",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "stale",
+      "date": "2024-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12001,
+      "audit_key": "audit-12001",
+      "report_name": "PeckShield: [Report available here]()",
+      "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Revert-Lend-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12002,
+      "audit_key": "audit-12002",
+      "report_name": "PeckShield: [Report available here]()<br>",
+      "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Revert-v4Utils-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12003,
+      "audit_key": "audit-12003",
+      "report_name": "The Aerodrome Slipstream deployment of Revert Lend, including the GaugeManager custody layer and the AERO auto-compounding, was reviewed through a competitive audit on [Cantina](https://cantina.xyz/). The full report is [available here]().",
+      "report_url": "https://github.com/revert-finance/lend/blob/aerodrome-slipstream/report_cli_cantina_efb6f308_f13b_4110_aff8_0d67181608dd_revert_finance.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12004,
+      "audit_key": "audit-12004",
+      "report_name": "HYDN - Revert Finance Lend - aero - Audit.pdf",
+      "report_url": "https://github.com/hydnsec/audits/blob/main/Revert%20Finance%20-%20Lend/HYDN%20-%20Revert%20Finance%20Lend%20-%20aero%20-%20Audit.pdf",
+      "auditor": "HYDN",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -6903,7 +7113,7 @@
       "tier": 2,
       "contracts_covered": 2,
       "coverage_pct": 11.1,
-      "latest_audit": "2022-09"
+      "latest_audit": "2025"
     }
   ],
   "coverage_gaps": [
@@ -7033,7 +7243,48 @@
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11995,
+        "report_name": "The V3Utils contract has undergone a comprehensive audit by Peckshield, resulting in its redeployment with enhanced security measures. The audit successfully identified and addressed two low-severity issues and one informational issue. For those who are interested, the full audit report is available [here]()."
+      },
+      {
+        "audit_id": 11996,
+        "report_name": "The Self-Compoundor contract has gone through an audit process with PeckShield. The full report is [available here]()."
+      },
+      {
+        "audit_id": 11997,
+        "report_name": "Version 2 of the automator contracts were also audited by [Hydn Security](https://hydnsec.com/) and the full report is [available here]()."
+      },
+      {
+        "audit_id": 11998,
+        "report_name": "The Auto-Exit and Auto-Range have undergone an audit process with [Hydn Security](https://hydnsec.com/), the full report is [available here]()."
+      },
+      {
+        "audit_id": 11999,
+        "report_name": "Hydn Security: [Report available here]()\\"
+      },
+      {
+        "audit_id": 12000,
+        "report_name": "Code4rena: [Report available here]()"
+      },
+      {
+        "audit_id": 12001,
+        "report_name": "PeckShield: [Report available here]()"
+      },
+      {
+        "audit_id": 12002,
+        "report_name": "PeckShield: [Report available here]()<br>"
+      },
+      {
+        "audit_id": 12003,
+        "report_name": "The Aerodrome Slipstream deployment of Revert Lend, including the GaugeManager custody layer and the AERO auto-compounding, was reviewed through a competitive audit on [Cantina](https://cantina.xyz/). The full report is [available here]()."
+      },
+      {
+        "audit_id": 12004,
+        "report_name": "HYDN - Revert Finance Lend - aero - Audit.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

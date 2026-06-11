@@ -11,7 +11,7 @@
 | [abracadabra](./abracadabra/) | $8.1M | 0.0% | ? | dead | 5 | 2568 | 2026-05-31 |
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 3 | 43 | 2026-06-10 |
 | [acre](./acre/) | $3.0 | 0.5% | $3.0 | active | 4 | 220 | 2026-06-10 |
-| [across](./across/) | $28.1M | 0.0% | $28.1M | active | 0 | 142 | 2026-06-10 |
+| [across](./across/) | $28.1M | 0.0% | $28.1M | active | 11 | 142 | 2026-06-11 |
 | [acryptos](./acryptos/) | $5.2M | 25.0% | $253.0K | active | 7 | 311 | 2026-06-10 |
 | [aegis-markets](./aegis-markets/) | $2.3M | 0.0% | ? | active | 2 | 15 | 2026-06-10 |
 | [aegis](./aegis/) | $35.8M | 0.0% | ? | active | 0 | 6 | 2026-06-10 |
@@ -306,7 +306,7 @@
 | [keep-network](./keep-network/) | $25.5M | 7.9% | $24.7M | declining | 18 | 225 | 2026-06-11 |
 | [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | declining | 1 | 480 | 2026-06-11 |
 | [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 0 | 4 | 2026-06-11 |
-| [keyring](./keyring/) | $6.2M | 0.0% | ? | active | 0 | 53 | 2026-06-11 |
+| [keyring](./keyring/) | $6.2M | 0.0% | ? | active | 10 | 53 | 2026-06-11 |
 | [kiloex](./kiloex/) | $5.7M | 14.3% | ? | active | 10 | 110 | 2026-06-11 |
 | [kine-finance](./kine-finance/) | $351.8M | 0.0% | $351.8M | declining | 0 | 35 | 2026-06-11 |
 | [king-protocol](./king-protocol/) | $1.5M | 60.0% | ? | active | 4 | 16 | 2026-06-11 |
@@ -402,7 +402,7 @@
 | [nerona](./nerona/) | $7.9M | 0.0% | ? | declining | 0 | 2 | 2026-06-11 |
 | [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | declining | 0 | 66 | 2026-06-11 |
 | [nest-credit](./nest-credit/) | $66.7K | 57.1% | ? | active | 15 | 16 | 2026-06-11 |
-| [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 1 | 349 | 2026-06-11 |
+| [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-06-11 |
 | [netswap](./netswap/) | $1.3M | 20.8% | ? | declining | 2 | 48 | 2026-06-11 |
 | [neuralai](./neuralai/) | $1.2M | 0.0% | ? | unknown | 1 | 2 | 2026-06-11 |
 | [neutral-trade](./neutral-trade/) | $18.6M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
@@ -493,7 +493,7 @@
 | [reservoir-protocol](./reservoir-protocol/) | $2.1B | 0.0% | $2.1B | active | 0 | 278 | 2026-05-31 |
 | [resupply](./resupply/) | $41.8M | 100.0% | ? | active | 8 | 1 | 2026-06-11 |
 | [revault](./revault/) | $2.5K | 45.0% | ? | declining | 1 | 75 | 2026-05-24 |
-| [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 2 | 84 | 2026-06-11 |
+| [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 12 | 84 | 2026-06-11 |
 | [rex-staking](./rex-staking/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [reya](./reya/) | $57.3M | 0.0% | $57.3M | declining | 0 | 293 | 2026-06-11 |
 | [rezerve](./rezerve/) | $1.3M | 1.3% | $1.3M | active | 3 | 104 | 2026-06-11 |
@@ -536,7 +536,7 @@
 | [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | active | 0 | 2 | 2026-06-11 |
 | [sierra-protocol](./sierra-protocol/) | $39.6M | 4.0% | $5.3M | active | 1 | 78 | 2026-06-11 |
-| [sigma-money](./sigma-money/) | $593.4M | 0.0% | $593.4M | active | 0 | 231 | 2026-06-11 |
+| [sigma-money](./sigma-money/) | $593.4M | 0.0% | $593.4M | active | 10 | 231 | 2026-06-11 |
 | [silo-finance](./silo-finance/) | $3.3M | 15.7% | $641.3K | unknown | 10 | 529 | 2026-05-31 |
 | [singularity-finance](./singularity-finance/) | $2.7M | 0.0% | $2.7M | declining | 2 | 1 | 2026-06-11 |
 | [singularv](./singularv/) | $1.1B | 11.4% | $1.1B | declining | 7 | 83 | 2026-06-11 |

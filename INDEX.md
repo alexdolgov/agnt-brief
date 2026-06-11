@@ -290,12 +290,12 @@
 | [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | active | 7 | 154 | 2026-06-11 |
 | [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-06-11 |
 | [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 39 | 2026-06-11 |
-| [iq](./iq/) | $23.9M | 0.0% | $23.9M | active | 0 | 2 | 2026-06-10 |
-| [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | declining | 0 | 181 | 2026-06-10 |
-| [jones-dao](./jones-dao/) | $519.7M | 0.0% | $519.7M | active | 0 | 502 | 2026-06-10 |
+| [iq](./iq/) | $23.9M | 0.0% | $23.9M | active | 0 | 2 | 2026-06-11 |
+| [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | declining | 0 | 181 | 2026-06-11 |
+| [jones-dao](./jones-dao/) | $519.7M | 0.0% | $519.7M | active | 0 | 502 | 2026-06-11 |
 | [juicebox](./juicebox/) | $11.0M | 5.9% | ? | active | 1 | 77 | 2026-05-31 |
-| [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-06-10 |
-| [kaio](./kaio/) | $60.8M | 0.0% | ? | declining | 0 | 35 | 2026-06-10 |
+| [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-06-11 |
+| [kaio](./kaio/) | $60.8M | 0.0% | ? | declining | 0 | 35 | 2026-06-11 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | active | 0 | 2 | 2026-06-10 |
 | [kasu](./kasu/) | $10.3M | 0.0% | ? | active | 0 | 22 | 2026-06-10 |
 | [katana-pre-launch](./katana-pre-launch/) | $307.6K | 0.0% | $307.6K | active | 28 | 165 | 2026-06-10 |

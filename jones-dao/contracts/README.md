@@ -1,6 +1,6 @@
 # jones-dao — Contract Index
 
-500 unique implementations across 5 chains · 1366 deployments · 0 audited · 354 unaudited · 146 unverified
+502 unique implementations across 5 chains · 1339 deployments · 0 audited · 354 unaudited · 148 unverified
 
 ## adapter (42)
 
@@ -34,7 +34,7 @@
 | [PatchOfTheAdapter](./arbitrum-42161/0x3f84734005bda494d3718f7a507e18dd83a92a1c/) | arbitrum | [`0x3f8473...a92a1c`](./arbitrum-42161/0x3f84734005bda494d3718f7a507e18dd83a92a1c/) | ⚠️ Unaudited | Verified |
 | [plsSYKAdapter (5 deployments)](./arbitrum-42161/0x095bd2500a20be6351ad86605457f22a489f366c/) | arbitrum | 5 deployments: arbitrum [`0x095bd2...9f366c`](./arbitrum-42161/0x095bd2500a20be6351ad86605457f22a489f366c/); arbitrum `0x2bf156...fbb332`; arbitrum `0x3fa53b...ee8aae`; arbitrum `0x690847...1e5a02`; arbitrum `0x964d0b...784fef` | ⚠️ Unaudited | Verified |
 | [RamsesSwapper (6 deployments)](./arbitrum-42161/0x19a70792f88f4da9272114ae00e03998e21f6abc/) | arbitrum | 6 deployments: arbitrum [`0x19a707...1f6abc`](./arbitrum-42161/0x19a70792f88f4da9272114ae00e03998e21f6abc/); arbitrum `0x367fe7...00a26e`; arbitrum `0x445e1e...170dbd`; arbitrum `0x644f8e...b4c50e`; arbitrum `0x6a0826...5d8e90`; arbitrum `0xc579bc...b39461` | ⚠️ Unaudited | Verified |
-| [Router (38 deployments)](./arbitrum-42161/0x06974f42a1090f07d832240cb2375420eb3f6c5f/) | arbitrum | 38 deployments: base `0xbc99ef...3c114e`; arbitrum [`0x06974f...3f6c5f`](./arbitrum-42161/0x06974f42a1090f07d832240cb2375420eb3f6c5f/); arbitrum `0x06ea20...7e70c7`; arbitrum `0x0946e3...f2ed9b`; arbitrum `0x14c921...6d54e1`; arbitrum `0x15ee32...709e55`; arbitrum `0x204e14...530e9f`; arbitrum `0x33577c...cb7fd3`; arbitrum `0x4b5cf3...18cabe`; arbitrum `0x4bc4d2...e22a04`; arbitrum `0x5178f0...990b81`; arbitrum `0x51c079...8a8314`; arbitrum `0x661322...238c63`; arbitrum `0x6d7042...e5c3e1`; arbitrum `0x71b009...99a185`; arbitrum `0x7f7b47...335437`; arbitrum `0x99d943...211fa2`; arbitrum `0x9c895c...fc2e4d`; arbitrum `0xa49bb2...07c5ff`; arbitrum `0xa6a01f...1de163`; arbitrum `0xb7eae6...e2ca65`; arbitrum `0xbde8d5...104b62`; arbitrum `0xcb83a0...06b927`; arbitrum `0xdd9db4...5b3cc7`; arbitrum `0xe22cef...671779`; arbitrum `0xe9c738...16b18e`; arbitrum `0xea6491...61c767`; arbitrum `0xed1586...4d5753`; arbitrum `0xf18f2f...202b9c`; berachain `0xbde8d5...104b62`; berachain `0xf572c7...455c6d`; blast `0x26c6ce...4b4e75`; blast `0x29e9c7...67d2a8`; blast `0x428d38...768a3b`; blast `0x6a0826...5d8e90`; blast `0x9880d5...599129`; blast `0xb0390b...be6254`; blast `0xc16f61...105a68` | ⚠️ Unaudited | Verified |
+| [Router (9 deployments)](./arbitrum-42161/0x4bc4d296dfce661f34dd72d642d2a7c348e22a04/) | arbitrum | 9 deployments: arbitrum [`0x4bc4d2...e22a04`](./arbitrum-42161/0x4bc4d296dfce661f34dd72d642d2a7c348e22a04/); arbitrum `0x51c079...8a8314`; arbitrum `0x99d943...211fa2`; arbitrum `0x9c895c...fc2e4d`; arbitrum `0xa6a01f...1de163`; arbitrum `0xe22cef...671779`; arbitrum `0xe9c738...16b18e`; blast `0x6a0826...5d8e90`; blast `0x9880d5...599129` | ⚠️ Unaudited | Verified |
 | [SsovAdapter (4 deployments)](./arbitrum-42161/0x27cebe6b5075e4d6feec384b0a31ec6e53cf68c1/) | arbitrum | 4 deployments: arbitrum [`0x27cebe...cf68c1`](./arbitrum-42161/0x27cebe6b5075e4d6feec384b0a31ec6e53cf68c1/); arbitrum `0x51eb37...58ed04`; arbitrum `0x634ae8...fe18c2`; arbitrum `0xaa6348...3d5d47` | ⚠️ Unaudited | Verified |
 | [SsovV3Router (3 deployments)](./arbitrum-42161/0x1962ceb5c394ed5ad20dc72f98f2617d9d8f0d66/) | arbitrum | 3 deployments: arbitrum [`0x1962ce...8f0d66`](./arbitrum-42161/0x1962ceb5c394ed5ad20dc72f98f2617d9d8f0d66/); arbitrum `0x8bebc5...3a16c5`; arbitrum `0xb11fe3...bf04c0` | ⚠️ Unaudited | Verified |
 | [StableSwapper](./arbitrum-42161/0xd916561da38ad838577f631f67aef889d75f4926/) | arbitrum | [`0xd91656...5f4926`](./arbitrum-42161/0xd916561da38ad838577f631f67aef889d75f4926/) | ⚠️ Unaudited | Verified |
@@ -292,7 +292,7 @@
 | [StandardArbERC20](./arbitrum-42161/0x6c2c06790b3e3e3c38e12ee22f8183b37a13ee55/) | arbitrum | [`0x6c2c06...13ee55`](./arbitrum-42161/0x6c2c06790b3e3e3c38e12ee22f8183b37a13ee55/) | ⚠️ Unaudited | Verified |
 | [SynapseERC20](./arbitrum-42161/0x8d9ba570d6cb60c7e3e0f31343efe75ab8e65fb1/) | arbitrum | [`0x8d9ba5...e65fb1`](./arbitrum-42161/0x8d9ba570d6cb60c7e3e0f31343efe75ab8e65fb1/) | ⚠️ Unaudited | Verified |
 
-## unknown (250)
+## unknown (252)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -526,12 +526,14 @@
 | UnnamedContract | berachain | `0x78e729...b20834` | ❓ Unverified | Unverified |
 | UnnamedContract | berachain | `0x9ed990...d98514` | ❓ Unverified | Unverified |
 | UnnamedContract | berachain | `0xb1d090...81e475` | ❓ Unverified | Unverified |
+| UnnamedContract | berachain | `0xbde8d5...104b62` | ❓ Unverified | Unverified |
 | UnnamedContract | berachain | `0xbe74a2...d8e488` | ❓ Unverified | Unverified |
 | UnnamedContract | berachain | `0xcf943b...58d7b5` | ❓ Unverified | Unverified |
 | UnnamedContract | berachain | `0xe06acb...39645b` | ❓ Unverified | Unverified |
 | UnnamedContract | berachain | `0xe71ad9...7bbce2` | ❓ Unverified | Unverified |
 | UnnamedContract | berachain | `0xec5b07...6d94aa` | ❓ Unverified | Unverified |
 | UnnamedContract | berachain | `0xf54b95...9d12dd` | ❓ Unverified | Unverified |
+| UnnamedContract | berachain | `0xf572c7...455c6d` | ❓ Unverified | Unverified |
 | UnnamedContract | berachain | `0xf663a2...ae4b85` | ❓ Unverified | Unverified |
 | UnnamedContract | blast | `0x1c99b4...bb5eb0` | ❓ Unverified | Unverified |
 | UnnamedContract | blast | `0x1e7d8e...79205a` | ❓ Unverified | Unverified |

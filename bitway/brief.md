@@ -5,8 +5,8 @@
 - Project: Bitway (`bitway`)
 - Website: [https://bitway.com/](https://bitway.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T21:59:56.105Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
+- Generated: 2026-06-12T07:18:08.518Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-d6af
 - Chains: bsc
 - Contract surface: 8 unique implementations (30 raw deployments)
 - DeFi Llama TVL: $60,775,264.39
@@ -90,22 +90,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| bsc | [`0x32e060...3270e0`](./contracts/bsc-56/0x32e060f88398d16b086e5040566cb1897d3270e0/) | BitwayToken | token | $136,323,504.74 | Verified native implementation with $136,323,504.74 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x1f0681...538188`](./contracts/bsc-56/0x1f068133a960ecf58f938164e0fd5364cb538188/) | Vault | core_logic | $29,812.35 | Verified native implementation with $29,812.35 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x4e1743...c81b73`](./contracts/bsc-56/0x4e1743201775794e313dd621dfe89c61eec81b73/) | BitwayTokenLock | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x2a0109...65dbee`](./contracts/bsc-56/0x2a0109ac682794b78a9715568abac9d60665dbee/) | LPToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x2b8464...f157cb`](./contracts/bsc-56/0x2b8464ffb2b77de64cfefdeb00ad925576f157cb/) | WithdrawVault | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 5 |
+| native | 0 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 2 |
+| standard_library | 0 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 

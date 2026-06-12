@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bitway",
-  "generated_at": "2026-06-10T21:59:56.105Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-7a87",
+  "generated_at": "2026-06-12T07:18:08.518Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-d6af",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bitway",
@@ -78,7 +78,7 @@
       "address": "0x32e060f88398d16b086e5040566cb1897d3270e0",
       "name": "BitwayToken",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": 136323504.73581663,
@@ -127,7 +127,7 @@
       "address": "0x1f068133a960ecf58f938164e0fd5364cb538188",
       "name": "Vault",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": 29812.34639023905,
@@ -177,7 +177,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 56,
@@ -216,7 +216,7 @@
       "address": "0x4e1743201775794e313dd621dfe89c61eec81b73",
       "name": "BitwayTokenLock",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -274,7 +274,7 @@
       "address": "0x2a0109ac682794b78a9715568abac9d60665dbee",
       "name": "LPToken",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -396,7 +396,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 56,
@@ -404,8 +404,8 @@
       "address": "0xce24439f2d9c6a2289f741120fe202248b666666",
       "name": "StablecoinV2",
       "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": "Bitway",
       "tvl_usd": null,
       "is_proxy": true,
@@ -458,7 +458,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 56,
@@ -466,7 +466,7 @@
       "address": "0x2b8464ffb2b77de64cfefdeb00ad925576f157cb",
       "name": "WithdrawVault",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Bitway",
       "tvl_usd": null,
@@ -516,7 +516,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     }
   ],
   "audits": [
@@ -585,63 +585,12 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x32e060f88398d16b086e5040566cb1897d3270e0",
-      "name": "BitwayToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 136323504.73581663,
-      "risk_note": "Verified native implementation with $136,323,504.74 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x1f068133a960ecf58f938164e0fd5364cb538188",
-      "name": "Vault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 29812.34639023905,
-      "risk_note": "Verified native implementation with $29,812.35 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x4e1743201775794e313dd621dfe89c61eec81b73",
-      "name": "BitwayTokenLock",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x2a0109ac682794b78a9715568abac9d60665dbee",
-      "name": "LPToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x2b8464ffb2b77de64cfefdeb00ad925576f157cb",
-      "name": "WithdrawVault",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 5,
+    "native": 0,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 2
+    "standard_library": 0,
+    "needs_review": 8
   },
   "scope_matching_notes": {
     "match_method_counts": {},

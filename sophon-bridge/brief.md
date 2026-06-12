@@ -5,13 +5,13 @@
 - Project: Sophon Bridge (`sophon-bridge`)
 - Website: [https://sophon.xyz/](https://sophon.xyz/)
 - Lifecycle: active (Tier 0, 88.9% below peak)
-- Generated: 2026-06-11T02:51:24.601Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-12T07:39:22.665Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-d6af
 - Chains: ethereum
-- Contract surface: 10 unique implementations (21 raw deployments)
-- DeFi Llama TVL: $83,963,216.16
-- On-chain TVL (included contracts): $5,513,111.22
-- TVL by chain: Ethereum $5,513,111.22
+- Contract surface: 25 unique implementations (43 raw deployments)
+- DeFi Llama TVL: $60,238,099.13
+- On-chain TVL (included contracts): $44,638,737.31
+- TVL by chain: Ethereum $44,638,737.31
 
 ## Project Description
 
@@ -23,15 +23,15 @@ The L1USDCBridge and StakedZentry contracts are deployed behind TransparentUpgra
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/9 (0.0%)
-- Verified + Unaudited implementations: 9
+- Verified implementations audited: 0/24 (0.0%)
+- Verified + Unaudited implementations: 24
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 10
-- Raw deployments: 21
+- Unique implementations: 25
+- Raw deployments: 43
 - Audits discovered: 8
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $5,513,111.22
+- ASD (verified + unaudited TVL): $44,638,737.31
 - Latest audit: 2025-05 (aging)
 - Staleness: 0 fresh, 6 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,19 +46,34 @@ The L1USDCBridge and StakedZentry contracts are deployed behind TransparentUpgra
 
 - None
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (24)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| L1NativeTokenVault | core_logic | ethereum | [`0xbed1eb...1111f6`](./contracts/ethereum-1/0xbed1eb542f9a5aa6419ff3deb921a372681111f6/) | ⚠️ Unaudited |
 | StakedZentry | token | ethereum | 4 deployments: ethereum [`0x996d67...1fdb90`](./contracts/ethereum-1/0x996d67aa9b37df96428ad3608cb21352bf1fdb90/); ethereum `0x9e741f...b5d14e`; ethereum `0xa694c0...150b80`; ethereum `0xa7b9c8...a76c27` | ⚠️ Unaudited |
-| AethirWrapper | unknown | ethereum | [`0x3f69bb...3f7fee`](./contracts/ethereum-1/0x3f69bb14860f7f3348ac8a5f0d445322143f7fee/) | ⚠️ Unaudited |
+| AethirWrapper | unknown | ethereum | 2 deployments: ethereum [`0x1ecb43...33a13c`](./contracts/ethereum-1/0x1ecb43e02d6573119eaf0e6509a4725b8633a13c/); ethereum `0x3f69bb...3f7fee` | ⚠️ Unaudited |
+| Bridgehub | operational_periphery | ethereum | [`0x303a46...eb5213`](./contracts/ethereum-1/0x303a465b659cbb0ab36ee643ea362c509eeb5213/) | ⚠️ Unaudited |
+| ChainAdmin | unknown | ethereum | [`0xe1eea4...ac2ad3`](./contracts/ethereum-1/0xe1eea4d6443b19d373fe99de838b930ef0ac2ad3/) | ⚠️ Unaudited |
+| ChainAssetHandler | unknown | ethereum | [`0xdd5cb8...b61076`](./contracts/ethereum-1/0xdd5cb8b9037357b4cd37391a073798f8aab61076/) | ⚠️ Unaudited |
+| ChainTypeManager | unknown | ethereum | [`0xc2ee6b...0f5f5c`](./contracts/ethereum-1/0xc2ee6b6af7d616f6e27ce7f4a451aedc2b0f5f5c/) | ⚠️ Unaudited |
+| DiamondProxy | unknown | ethereum | [`0x05ede6...7241e3`](./contracts/ethereum-1/0x05ede6ad1f39b7a16c949d5c33a0658c9c7241e3/) | ⚠️ Unaudited |
+| GFFeeder01 | unknown | ethereum | 2 deployments: ethereum [`0x04136c...d2eae5`](./contracts/ethereum-1/0x04136ccfd17c2cece18a63a09aeadcfb4ad2eae5/); ethereum `0x300eda...824580` | ⚠️ Unaudited |
+| GFFeeder02 | unknown | ethereum | [`0x7a0157...850de4`](./contracts/ethereum-1/0x7a0157879bea0c0bdc1c6b2e2401fc878a850de4/) | ⚠️ Unaudited |
+| L1Nullifier | unknown | ethereum | [`0xd7f9f5...8cb2cb`](./contracts/ethereum-1/0xd7f9f54194c633f36ccd5f3da84ad4a1c38cb2cb/) | ⚠️ Unaudited |
 | L1USDCBridge | operational_periphery | ethereum | 5 deployments: ethereum [`0x21b064...d4cae4`](./contracts/ethereum-1/0x21b0644fb63bd057042b6cd34753fc690ad4cae4/); ethereum `0x2ccd54...f66cbb`; ethereum `0x86df12...337715`; ethereum `0x9c26d9...cb357a`; ethereum `0xf553e6...a8f987` | ⚠️ Unaudited |
+| LensRewardV2 | periphery | ethereum | [`0xdf4aa3...8124ff`](./contracts/ethereum-1/0xdf4aa37a2927deb886f3dc3d070c55b5088124ff/) | ⚠️ Unaudited |
 | LpMigrator | periphery | ethereum | [`0xec10fa...21a736`](./contracts/ethereum-1/0xec10fa42c7d0c743b1ed015ae18711bb5921a736/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | [`0xb35e62...c26268`](./contracts/ethereum-1/0xb35e62457b3fd40a43f24722538c98e265c26268/) | ⚠️ Unaudited |
 | RewardManager | governance | ethereum | 5 deployments: ethereum [`0x0cca93...569aec`](./contracts/ethereum-1/0x0cca930828eabd65d1c044668d652e04d1569aec/); ethereum `0x58de2f...820d98`; ethereum `0x5b250f...85ee2b`; ethereum `0xb85166...f12bb2`; ethereum `0xbb9595...86a9b8` | ⚠️ Unaudited |
+| Safe | unknown | ethereum | [`0xe4644b...f052d1`](./contracts/ethereum-1/0xe4644b6d106a18062344c0a853666bc0b8f052d1/) | ⚠️ Unaudited |
+| SmartWalletChecker | unknown | ethereum | [`0xb91eb8...41bed4`](./contracts/ethereum-1/0xb91eb8907c34147b1ab58dc663a3594bb241bed4/) | ⚠️ Unaudited |
+| SophonTransactionFilterer | unknown | ethereum | [`0x9d06b3...da3063`](./contracts/ethereum-1/0x9d06b34adc3026ef876e4dabb859c424dbda3063/) | ⚠️ Unaudited |
 | StAethir | unknown | ethereum | [`0xc96aa6...19e59c`](./contracts/ethereum-1/0xc96aa65f31e41b4ca6924b86d93e25686019e59c/) | ⚠️ Unaudited |
-| xGFETHMigrator | periphery | ethereum | [`0xae6763...008275`](./contracts/ethereum-1/0xae6763befecc374e49422fc14a96d62d88008275/) | ⚠️ Unaudited |
-| xGFMigrator | periphery | ethereum | [`0xf5497d...77a84e`](./contracts/ethereum-1/0xf5497d363348bcbb2a04c091ed306d5bc777a84e/) | ⚠️ Unaudited |
+| VeAethir | unknown | ethereum | [`0x1b49f5...1b7490`](./contracts/ethereum-1/0x1b49f587feca530a7bf7cf2bd3fbda780e1b7490/) | ⚠️ Unaudited |
+| xGF | unknown | ethereum | 3 deployments: ethereum [`0x6539f0...212639`](./contracts/ethereum-1/0x6539f093873a0e9f058b64dd6473464685212639/); ethereum `0x7a728b...d75f38`; ethereum `0x7b6777...fca676` | ⚠️ Unaudited |
+| xGFETHMigrator | periphery | ethereum | 3 deployments: ethereum [`0x50a7f0...9fb5b1`](./contracts/ethereum-1/0x50a7f0fd3f6a2e3238e105bc36cf7010c89fb5b1/); ethereum `0x5b589f...41c7f5`; ethereum `0xae6763...008275` | ⚠️ Unaudited |
+| xGFMigrator | periphery | ethereum | 2 deployments: ethereum [`0xf5497d...77a84e`](./contracts/ethereum-1/0xf5497d363348bcbb2a04c091ed306d5bc777a84e/); ethereum `0xf7ab7d...944234` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,21 +112,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x21b064...d4cae4`](./contracts/ethereum-1/0x21b0644fb63bd057042b6cd34753fc690ad4cae4/) | L1USDCBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xec10fa...21a736`](./contracts/ethereum-1/0xec10fa42c7d0c743b1ed015ae18711bb5921a736/) | LpMigrator | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0cca93...569aec`](./contracts/ethereum-1/0x0cca930828eabd65d1c044668d652e04d1569aec/) | RewardManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc96aa6...19e59c`](./contracts/ethereum-1/0xc96aa65f31e41b4ca6924b86d93e25686019e59c/) | StAethir | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 5 |
+| native | 0 |
 | upstream | 0 |
-| standard_library | 5 |
-| needs_review | 0 |
+| standard_library | 0 |
+| needs_review | 25 |
 
 ## Scope Matching Notes
 

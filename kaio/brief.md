@@ -7,11 +7,11 @@
 - Project: KAIO (`kaio`)
 - Website: [https://www.kaio.xyz/](https://www.kaio.xyz/)
 - Lifecycle: declining (Tier 0, 49.4% below peak)
-- Generated: 2026-06-11T00:12:14.017Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-12T07:17:14.886Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-d6af
 - Chains: avalanche, ethereum, polygon, sei
 - Contract surface: 35 unique implementations (206 raw deployments)
-- DeFi Llama TVL: $60,800,519.13
+- DeFi Llama TVL: $60,807,206.79
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -118,18 +118,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| sei | [`0x1f981b...0d825c`](./contracts/sei-1329/0x1f981b595adb59be43cf346d5583c228f30d825c/) | InvestorRegistryMirror | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 11 |
+| native | 0 |
 | upstream | 0 |
-| standard_library | 4 |
-| needs_review | 20 |
+| standard_library | 0 |
+| needs_review | 35 |
 
 ## Scope Matching Notes
 

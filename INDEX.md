@@ -86,8 +86,8 @@
 | [bitomato](./bitomato/) | $2.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [bitu-protocol](./bitu-protocol/) | $22.3M | 75.0% | ? | active | 2 | 4 | 2026-06-10 |
 | [bitvenus](./bitvenus/) | $20.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
-| [bitway-earn](./bitway-earn/) | $136.4M | 0.0% | $136.4M | active | 3 | 8 | 2026-06-10 |
-| [bitway](./bitway/) | $136.4M | 0.0% | $136.4M | active | 3 | 8 | 2026-06-10 |
+| [bitway-earn](./bitway-earn/) | $136.4M | 0.0% | $136.4M | active | 3 | 8 | 2026-06-12 |
+| [bitway](./bitway/) | $136.4M | 0.0% | $136.4M | active | 3 | 8 | 2026-06-12 |
 | [blackhole](./blackhole/) | $29.7M | 31.1% | ? | declining | 3 | 86 | 2026-06-10 |
 | [block-analitica](./block-analitica/) | $252.8K | 0.0% | $252.8K | declining | 0 | 18 | 2026-06-10 |
 | [blueshift](./blueshift/) | $4.3M | 0.0% | ? | active | 1 | 23 | 2026-06-10 |
@@ -295,7 +295,7 @@
 | [jones-dao](./jones-dao/) | $519.7M | 0.0% | $519.7M | active | 5 | 502 | 2026-06-11 |
 | [juicebox](./juicebox/) | $8.6M | 5.9% | ? | active | 10 | 77 | 2026-06-11 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-06-11 |
-| [kaio](./kaio/) | $60.8M | 0.0% | ? | declining | 0 | 35 | 2026-06-11 |
+| [kaio](./kaio/) | $60.8M | 0.0% | ? | declining | 0 | 35 | 2026-06-12 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | active | 0 | 2 | 2026-06-11 |
 | [kasu](./kasu/) | $10.6M | 0.0% | ? | active | 2 | 22 | 2026-06-11 |
 | [katana-pre-launch](./katana-pre-launch/) | $307.6K | 0.0% | $307.6K | active | 28 | 165 | 2026-06-11 |
@@ -549,7 +549,7 @@
 | [solayer](./solayer/) | $13.0M | 0.0% | ? | unknown | 5 | 0 | 2026-06-11 |
 | [solera](./solera/) | $8.4M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
 | [sonic-gateway](./sonic-gateway/) | $7.8M | 0.0% | $7.8M | active | 2 | 1 | 2026-06-11 |
-| [sophon-bridge](./sophon-bridge/) | $5.5M | 0.0% | $5.5M | active | 8 | 10 | 2026-06-11 |
+| [sophon-bridge](./sophon-bridge/) | $44.6M | 0.0% | $44.6M | active | 8 | 25 | 2026-06-12 |
 | [sophon-farm](./sophon-farm/) | $6.8M | 100.0% | ? | active | 9 | 1 | 2026-06-11 |
 | [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | declining | 0 | 58 | 2026-06-11 |
 | [sovryn-bridge](./sovryn-bridge/) | $2.9M | 0.0% | ? | active | 0 | 47 | 2026-06-11 |
@@ -584,7 +584,7 @@
 | [stout](./stout/) | $12.6K | 0.0% | $12.6K | declining | 0 | 132 | 2026-06-11 |
 | [strata](./strata/) | $97.2M | 31.6% | $289.6K | active | 7 | 39 | 2026-06-11 |
 | [stratis-mstrax](./stratis-mstrax/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
-| [stusdt](./stusdt/) | $1.9M | 0.0% | $1.9M | active | 0 | 10 | 2026-06-11 |
+| [stusdt](./stusdt/) | $1.9M | 0.0% | $1.9M | active | 0 | 12 | 2026-06-12 |
 | [suibridge](./suibridge/) | $41.9M | 0.0% | ? | declining | 0 | 5 | 2026-06-11 |
 | [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
 | [summer.fi](./summer.fi/) | $140.9M | 0.0% | $140.9M | declining | 6 | 482 | 2026-06-11 |

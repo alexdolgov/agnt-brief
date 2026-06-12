@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "clearpool",
-  "generated_at": "2026-06-10T22:30:21.140Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
+  "generated_at": "2026-06-12T16:17:02.645Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-c7aee3-9d35",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "clearpool",
@@ -22,27 +22,27 @@
     "drop_from_peak_pct": 31.24430663220283
   },
   "summary": {
-    "total_contracts": 61,
-    "total_addresses": 220,
-    "unique_implementations": 61,
-    "total_deployments": 220,
-    "audited_contracts": 0,
+    "total_contracts": 63,
+    "total_addresses": 229,
+    "unique_implementations": 63,
+    "total_deployments": 229,
+    "audited_contracts": 2,
     "unaudited_contracts": 26,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 21,
-    "contracts_verified_by_bytecode": 5,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 23,
+    "contracts_verified_by_bytecode": 4,
     "contracts_unverified": 35,
-    "coverage_pct": 0,
-    "total_audits": 5,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 42176788,
-    "tvl_usd": 10712.832282,
+    "coverage_pct": 7.1,
+    "total_audits": 7,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 34318404,
+    "tvl_usd": 17583.09124,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 10712.83,
-      "optimism": 0
+      "ethereum": 11252.72,
+      "optimism": 6330.37
     },
-    "asd_usd": 10712.832282,
+    "asd_usd": 17583.09124,
     "website_url": "https://clearpool.finance",
     "chains": [
       "avalanche",
@@ -60,8 +60,8 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 1,
-      "stale": 2,
-      "unknown": 2
+      "stale": 3,
+      "unknown": 3
     }
   },
   "topography": {
@@ -70,7 +70,7 @@
     "product_family_count": 4
   },
   "surface_sufficiency": {
-    "unique_implementations": 61,
+    "unique_implementations": 63,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -85,7 +85,7 @@
       "address": "0x66761fa41377003622aee3c7675fc7b5c1c2fac5",
       "name": "CPOOL",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Clearpool",
       "tvl_usd": 10712.832273,
@@ -116,10 +116,10 @@
       "address": "0x0fc1a124af80535747c5439c3e0667146a0a2ff3",
       "name": "PoolMaster",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 0.000009,
+      "tvl_usd": 6870.258967,
       "is_proxy": false,
       "impl_address": "0x8d4f1609d46bbdecc4b46b2f2faace4fd56dbba1",
       "impl_name": "PoolMaster",
@@ -149,6 +149,15 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa0749f550a336b031f63bd095062204e1a56055b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": 539.890089,
           "is_audited": false
         },
         {
@@ -212,6 +221,15 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.000009,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x72947e3c613670e4a0a0b99ae15773482a7fe0f6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 6330.368869,
           "is_audited": false
         },
         {
@@ -372,7 +390,7 @@
       "address": "0x3f17cfad23c2014c5a32722557df87dff46819da",
       "name": "AMPT",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -403,7 +421,7 @@
       "address": "0x01af79c842e2089b16e2013d2ac02fc1c731f26d",
       "name": "Auction",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -418,7 +436,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -427,7 +445,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -436,7 +454,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -445,7 +463,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -454,7 +472,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -463,7 +481,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -472,7 +490,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -481,7 +499,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -490,7 +508,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -499,7 +517,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -508,7 +526,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -517,7 +535,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -526,7 +544,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -535,7 +553,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -544,7 +562,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -553,7 +571,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -562,7 +580,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -571,7 +589,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -580,7 +598,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -592,11 +610,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12320"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -605,7 +625,7 @@
       "address": "0x022741f3047a5d040d52f7a57dc6a2b1b456729d",
       "name": "BondNFT",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -636,7 +656,7 @@
       "address": "0x6278bcb4ada5f9bd83b0e0745db6246274b9e79b",
       "name": "ClearpoolLens",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -703,7 +723,7 @@
       "address": "0x0c8927de225bb1ed9db05aa7d641e434b95279d8",
       "name": "CosineInterestRateModel",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -806,7 +826,7 @@
       "address": "0x29157e2b6a34ae1787cddd05ad54dd4aa9783a5c",
       "name": "CPOOLOFT",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -846,7 +866,7 @@
       "address": "0x0c8927de225bb1ed9db05aa7d641e434b95279d8",
       "name": "CPOOLOFT20",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Clearpool",
       "tvl_usd": null,
@@ -892,52 +912,21 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x7a486f809c952a6f8dec8cb0ff68173f2b8ed56c",
-      "name": "HexTrustUSDV2",
+      "address": "0xe87e1f571a485deac08a81117ef1713d1261bce9",
+      "name": "HexTrustUSD",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Clearpool TPOOL",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xffa1f1ec3f6ee0d68bab21d79cef4292f56e7e26",
-      "impl_name": "HexTrustUSDV2",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x7a486f809c952a6f8dec8cb0ff68173f2b8ed56c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa158cb5ebb9a9622c7025a3b7a495b38d9f076ba",
-      "name": "InterestRateModel",
-      "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": "InterestRateModel",
+      "impl_name": "HexTrustUSD",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0xa158cb5ebb9a9622c7025a3b7a495b38d9f076ba",
+          "address": "0xe87e1f571a485deac08a81117ef1713d1261bce9",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -954,10 +943,101 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x7a486f809c952a6f8dec8cb0ff68173f2b8ed56c",
+      "name": "HexTrustUSDV2",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Clearpool TPOOL",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xffa1f1ec3f6ee0d68bab21d79cef4292f56e7e26",
+      "impl_name": "HexTrustUSDV2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7a486f809c952a6f8dec8cb0ff68173f2b8ed56c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xce2d107b6046e61a651484b4ee65023d89a42d7b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf8750b54d86be7ae9e32b4a0c826811198d63313",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xffa1f1ec3f6ee0d68bab21d79cef4292f56e7e26",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa158cb5ebb9a9622c7025a3b7a495b38d9f076ba",
+      "name": "InterestRateModel",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "InterestRateModel",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa158cb5ebb9a9622c7025a3b7a495b38d9f076ba",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12320"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x03fe982544befb24478bce33278bef073725741f",
       "name": "MembershipStaking",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1069,7 +1149,7 @@
       "address": "0x34aeed1248b4585ea79354c03bf96374a908d9de",
       "name": "NFTDescriptor",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1100,7 +1180,7 @@
       "address": "0x0f37f0a064a642240f92b86abf8d41ffd358e06b",
       "name": "PermissionPool",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1140,7 +1220,7 @@
       "address": "0x1de6ba3ec39f9e68ee3bdff0f00746c21cfc6a4c",
       "name": "Pool",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1152,8 +1232,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xa3badd653426d61f88396d6d96e1b7aafb16d74e",
-          "source_verified": false,
-          "verified_by_bytecode": true,
+          "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -1161,6 +1241,15 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xc5d1d387fa6f316849f628793f0bcc455466877c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd2f124063b160dd1beace0ee6a230019ab3b73a2",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1224,8 +1313,8 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1234,7 +1323,7 @@
       "address": "0x01af79c842e2089b16e2013d2ac02fc1c731f26d",
       "name": "PoolFactory",
       "role": "registry",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1517,7 +1606,7 @@
       "address": "0x5a9c1b19038f88b235be0eab23333472b01e2be5",
       "name": "Prime",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1593,8 +1682,8 @@
       "address": "0x1d881611e48c806606d59c1591795514805016e2",
       "name": "ProxyAdmin",
       "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1741,7 +1830,7 @@
       "address": "0x2c8fbc541bff60878fd3a8a0a18bc6db9300e518",
       "name": "SoloFlashGovernor",
       "role": "governance",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1790,7 +1879,7 @@
       "address": "0x1a5c169fbcbfb00b2c20c6746681aa774d8a613a",
       "name": "TermPool",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1857,7 +1946,7 @@
       "address": "0x422199a9d2a56bf120d9191ea82b6084ef002494",
       "name": "TermPoolFactory",
       "role": "registry",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Clearpool",
       "tvl_usd": null,
@@ -1942,7 +2031,7 @@
       "address": "0x229f0fb3445ecd573024368a41af68c7225be470",
       "name": "TpToken",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1991,8 +2080,8 @@
       "address": "0x454ee951da04afce32df8dd3400a1f159f4d2e1b",
       "name": "TransparentUpgradeableProxy",
       "role": "proxy",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -2094,7 +2183,7 @@
       "address": "0x2854084bd9aac5cc9f7bcf4356858fd19973f117",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2125,7 +2214,7 @@
       "address": "0x40e997a443548ce7a368e6ed00fd3d9e7ccef15f",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2156,7 +2245,7 @@
       "address": "0x4aed21ec0e3a301cae55c51bf363d1ecd4251e51",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2280,7 +2369,7 @@
       "address": "0xd19c3b0ea546887f0151840bb32358338c1c0885",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2311,7 +2400,7 @@
       "address": "0xd70ec4c933b57d090ac29e7733118c91252b8f0a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2342,7 +2431,7 @@
       "address": "0xe0fbc0c758d41d96a682038ca064614a2c8120db",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2373,7 +2462,7 @@
       "address": "0xe5c99573627a24501dd2530c14c3bba8a5c3a884",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2404,7 +2493,7 @@
       "address": "0x1c91b3841c41b0536e88552f85256727be114aa9",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2435,7 +2524,7 @@
       "address": "0x3786a1046c0b7581b64e28331997dc2d279324e2",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2466,7 +2555,7 @@
       "address": "0x544c9160505712d6b5e12888b5eb9bcb708885af",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2497,7 +2586,7 @@
       "address": "0x5c328d87e0680b5039c318699062d5607250642f",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2559,7 +2648,7 @@
       "address": "0x703a4988266c87167c68459d560895251a7e1fb0",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2683,7 +2772,7 @@
       "address": "0xea25566b794c9d701aa8b495a99239954fdc1ff1",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2714,7 +2803,7 @@
       "address": "0xed70675910a30ed75042a4b4fb1c32ca1bd6bcf3",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2745,7 +2834,7 @@
       "address": "0xfa1152e75d5ce85309cf0f1fa898a76f70044464",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2776,7 +2865,7 @@
       "address": "0xfd61cda6a6f1d32a531239ecb0d7bb3e3c173776",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2931,7 +3020,7 @@
       "address": "0x8996e0410530777b23444a9c3c57ea323764200e",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2962,7 +3051,7 @@
       "address": "0x919e8392759f4c48b92d7e00605d20b71da262c8",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2993,7 +3082,7 @@
       "address": "0x246df152bdc6ba317be8799f3f531fb3f4ef50e0",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3024,7 +3113,7 @@
       "address": "0x281af75c2919a1f579b507f4ab8ce77fcacd4197",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3055,7 +3144,7 @@
       "address": "0x7593e8fc59cb7fb3839a2b4815576c68b3df23ff",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Clearpool Lending",
       "tvl_usd": null,
@@ -3086,7 +3175,7 @@
       "address": "0x79740bcd9aae3a15a36736e896cd77368ac58690",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3117,7 +3206,7 @@
       "address": "0xb98c680443f28ccdeb525da31419a4aea6edb66c",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3148,7 +3237,7 @@
       "address": "0xbdf5575ec1cc0a14bd3e94648a2453fdc7b56943",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3179,8 +3268,8 @@
       "address": "0x0e07ce3e7ad3c61fcb7f7e5542a8c61e18002e7d",
       "name": "UpgradeableBeacon",
       "role": "registry",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -3300,7 +3389,7 @@
       "address": "0x046667c768da32ef1e81a5cbbcd49103a207e72c",
       "name": "Vesting",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3344,12 +3433,52 @@
       "contamination_flag": "cleared"
     },
     {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x2a4a3494e1f8d8fd3eef2b53c6105f2bb0c07322",
+      "name": "ViaRouter",
+      "role": "adapter",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ViaRouter",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x2a4a3494e1f8d8fd3eef2b53c6105f2bb0c07322",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x47a96072d4d565a6de6864f44e79136ec2505a3b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
       "chain_id": 43114,
       "chain_name": "avalanche",
       "address": "0x5a9c1b19038f88b235be0eab23333472b01e2be5",
       "name": "WhitelistControl",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3507,240 +3636,76 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12320,
+      "audit_key": "audit-12320",
+      "report_name": "DL audit link",
+      "report_url": "https://skynet.certik.com/projects/clearpool",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Auction",
+        "InterestRateModel"
+      ],
+      "matched_contracts": 20,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12321,
+      "audit_key": "audit-12321",
+      "report_name": "DL audit link",
+      "report_url": "https://3929482601-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhkiSI8bK3ThlypJ3jdEC%2Fuploads%2FOFonx1OQS6ni5lUsyiPx%2FClearpool%20Security%20Analysis%20by%20Pessimistic.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [
+  "auditor_coverage": [
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x66761fa41377003622aee3c7675fc7b5c1c2fac5",
-      "name": "CPOOL",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 10712.832273,
-      "risk_note": "Verified native implementation with $10,712.83 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x0fc1a124af80535747c5439c3e0667146a0a2ff3",
-      "name": "PoolMaster",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 0.000009,
-      "risk_note": "Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x3f17cfad23c2014c5a32722557df87dff46819da",
-      "name": "AMPT",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x01af79c842e2089b16e2013d2ac02fc1c731f26d",
-      "name": "Auction",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x022741f3047a5d040d52f7a57dc6a2b1b456729d",
-      "name": "BondNFT",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
-      "address": "0x6278bcb4ada5f9bd83b0e0745db6246274b9e79b",
-      "name": "ClearpoolLens",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x0c8927de225bb1ed9db05aa7d641e434b95279d8",
-      "name": "CosineInterestRateModel",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x29157e2b6a34ae1787cddd05ad54dd4aa9783a5c",
-      "name": "CPOOLOFT",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
-      "address": "0x0c8927de225bb1ed9db05aa7d641e434b95279d8",
-      "name": "CPOOLOFT20",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa158cb5ebb9a9622c7025a3b7a495b38d9f076ba",
-      "name": "InterestRateModel",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x03fe982544befb24478bce33278bef073725741f",
-      "name": "MembershipStaking",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x34aeed1248b4585ea79354c03bf96374a908d9de",
-      "name": "NFTDescriptor",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0f37f0a064a642240f92b86abf8d41ffd358e06b",
-      "name": "PermissionPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
-      "address": "0x1de6ba3ec39f9e68ee3bdff0f00746c21cfc6a4c",
-      "name": "Pool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x01af79c842e2089b16e2013d2ac02fc1c731f26d",
-      "name": "PoolFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x5a9c1b19038f88b235be0eab23333472b01e2be5",
-      "name": "Prime",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2c8fbc541bff60878fd3a8a0a18bc6db9300e518",
-      "name": "SoloFlashGovernor",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1a5c169fbcbfb00b2c20c6746681aa774d8a613a",
-      "name": "TermPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x422199a9d2a56bf120d9191ea82b6084ef002494",
-      "name": "TermPoolFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x229f0fb3445ecd573024368a41af68c7225be470",
-      "name": "TpToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x046667c768da32ef1e81a5cbbcd49103a207e72c",
-      "name": "Vesting",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x5a9c1b19038f88b235be0eab23333472b01e2be5",
-      "name": "WhitelistControl",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "auditor": "CertiK",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 7.1,
+      "latest_audit": "2022-03"
     }
   ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 46,
+    "native": 0,
     "upstream": 0,
-    "standard_library": 4,
-    "needs_review": 11
+    "standard_library": 0,
+    "needs_review": 63
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 20
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -3763,6 +3728,10 @@
       {
         "audit_id": 5809,
         "report_name": "spearbit-boring-vault-arctic-0.pdf"
+      },
+      {
+        "audit_id": 12321,
+        "report_name": "DL audit link"
       }
     ],
     "inherited_remapped_matches": []

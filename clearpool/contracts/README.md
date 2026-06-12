@@ -1,6 +1,12 @@
 # clearpool — Contract Index
 
-61 unique implementations across 7 chains · 220 deployments · 0 audited · 26 unaudited · 35 unverified
+63 unique implementations across 7 chains · 229 deployments · 2 audited · 26 unaudited · 35 unverified
+
+## adapter (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [ViaRouter (2 deployments)](./polygon-137/0x2a4a3494e1f8d8fd3eef2b53c6105f2bb0c07322/) | polygon | 2 deployments: polygon [`0x2a4a34...c07322`](./polygon-137/0x2a4a3494e1f8d8fd3eef2b53c6105f2bb0c07322/); polygon `0x47a960...505a3b` | ⚠️ Unaudited | Verified |
 
 ## core_logic (8)
 
@@ -11,8 +17,8 @@
 | [CPOOLOFT (2 deployments)](./base-8453/0x29157e2b6a34ae1787cddd05ad54dd4aa9783a5c/) | base | 2 deployments: optimism `0x379c8d...faacd9`; base [`0x29157e...783a5c`](./base-8453/0x29157e2b6a34ae1787cddd05ad54dd4aa9783a5c/) | ⚠️ Unaudited | Verified |
 | [CPOOLOFT20 (3 deployments)](./mantle-5000/0x0c8927de225bb1ed9db05aa7d641e434b95279d8/) | mantle | 3 deployments: optimism `0xc3630b...f3d3fe`; polygon `0xb08b36...3a2d91`; mantle [`0x0c8927...5279d8`](./mantle-5000/0x0c8927de225bb1ed9db05aa7d641e434b95279d8/) | ⚠️ Unaudited | Verified |
 | [PermissionPool (2 deployments)](./ethereum-1/0x0f37f0a064a642240f92b86abf8d41ffd358e06b/) | ethereum | 2 deployments: ethereum [`0x0f37f0...58e06b`](./ethereum-1/0x0f37f0a064a642240f92b86abf8d41ffd358e06b/); ethereum `0x9eb1c0...baa5e5` | ⚠️ Unaudited | Verified |
-| [Pool (8 deployments)](./mantle-5000/0x1de6ba3ec39f9e68ee3bdff0f00746c21cfc6a4c/) | mantle | 8 deployments: ethereum `0xa3badd...16d74e`; ethereum `0xc5d1d3...66877c`; optimism `0x281af7...cd4197`; optimism `0xa7209c...42d729`; optimism `0xbdf557...b56943`; mantle [`0x1de6ba...fc6a4c`](./mantle-5000/0x1de6ba3ec39f9e68ee3bdff0f00746c21cfc6a4c/); base `0x8e5573...ab2b7a`; base `0xb98c68...edb66c` | ⚠️ Unaudited | Verified |
-| [PoolMaster (26 deployments)](./base-8453/0x0fc1a124af80535747c5439c3e0667146a0a2ff3/) | base | 26 deployments: ethereum `0x2ec008...bb9a25`; ethereum `0x64d1c7...4bc5bf`; ethereum `0x82d438...a868d6`; ethereum `0xaeb362...2cdbbc`; ethereum `0xcb8da0...c1c2fb`; ethereum `0xd12ec3...a2035e`; ethereum `0xf1f662...00fe31`; optimism `0x3b0bbd...29d55b`; optimism `0x5ed4e4...3920b1`; optimism `0x616b66...9db213`; optimism `0xc3d7f8...4d35a7`; polygon `0x1d8816...5016e2`; polygon `0x331781...c850ff`; polygon `0x45e766...dc1fe0`; polygon `0x5cda11...255900`; polygon `0x5f04bc...a4f91a`; polygon `0x6cc5f6...93acc5`; polygon `0x9590e7...ba31f8`; polygon `0x9827d9...280cfd`; polygon `0xf20f5f...c446c8`; mantle `0xc15871...41fe72`; mantle `0xe16860...f8c7c7`; base [`0x0fc1a1...0a2ff3`](./base-8453/0x0fc1a124af80535747c5439c3e0667146a0a2ff3/); base `0x207ac3...575a47`; base `0xa83b8f...78d27a`; base `0xca7aaa...738314` | ⚠️ Unaudited | Verified |
+| [Pool (9 deployments)](./mantle-5000/0x1de6ba3ec39f9e68ee3bdff0f00746c21cfc6a4c/) | mantle | 9 deployments: ethereum `0xa3badd...16d74e`; ethereum `0xc5d1d3...66877c`; ethereum `0xd2f124...3b73a2`; optimism `0x281af7...cd4197`; optimism `0xa7209c...42d729`; optimism `0xbdf557...b56943`; mantle [`0x1de6ba...fc6a4c`](./mantle-5000/0x1de6ba3ec39f9e68ee3bdff0f00746c21cfc6a4c/); base `0x8e5573...ab2b7a`; base `0xb98c68...edb66c` | ⚠️ Unaudited | Verified |
+| [PoolMaster (28 deployments)](./base-8453/0x0fc1a124af80535747c5439c3e0667146a0a2ff3/) | base | 28 deployments: ethereum `0x2ec008...bb9a25`; ethereum `0x64d1c7...4bc5bf`; ethereum `0x82d438...a868d6`; ethereum `0xa0749f...56055b`; ethereum `0xaeb362...2cdbbc`; ethereum `0xcb8da0...c1c2fb`; ethereum `0xd12ec3...a2035e`; ethereum `0xf1f662...00fe31`; optimism `0x3b0bbd...29d55b`; optimism `0x5ed4e4...3920b1`; optimism `0x616b66...9db213`; optimism `0x72947e...7fe0f6`; optimism `0xc3d7f8...4d35a7`; polygon `0x1d8816...5016e2`; polygon `0x331781...c850ff`; polygon `0x45e766...dc1fe0`; polygon `0x5cda11...255900`; polygon `0x5f04bc...a4f91a`; polygon `0x6cc5f6...93acc5`; polygon `0x9590e7...ba31f8`; polygon `0x9827d9...280cfd`; polygon `0xf20f5f...c446c8`; mantle `0xc15871...41fe72`; mantle `0xe16860...f8c7c7`; base [`0x0fc1a1...0a2ff3`](./base-8453/0x0fc1a124af80535747c5439c3e0667146a0a2ff3/); base `0x207ac3...575a47`; base `0xa83b8f...78d27a`; base `0xca7aaa...738314` | ⚠️ Unaudited | Verified |
 | [TermPool (5 deployments)](./ethereum-1/0x1a5c169fbcbfb00b2c20c6746681aa774d8a613a/) | ethereum | 5 deployments: ethereum [`0x1a5c16...8a613a`](./ethereum-1/0x1a5c169fbcbfb00b2c20c6746681aa774d8a613a/); polygon `0x82d533...e8c956`; polygon `0x83d5c0...be1791`; polygon `0xc510d1...ad25bd`; polygon `0xd12ec3...a2035e` | ⚠️ Unaudited | Verified |
 
 ## governance (2)
@@ -27,7 +33,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [CosineInterestRateModel (9 deployments)](./optimism-10/0x0c8927de225bb1ed9db05aa7d641e434b95279d8/) | optimism | 9 deployments: optimism [`0x0c8927...5279d8`](./optimism-10/0x0c8927de225bb1ed9db05aa7d641e434b95279d8/); optimism `0xb98c68...edb66c`; optimism `0xd51f04...61e5ce`; optimism `0xf041a2...896a9b`; optimism `0xf55ec6...96f150`; polygon `0x43cb89...e5afe5`; mantle `0x244ef5...33903d`; mantle `0x56713f...1db71b`; mantle `0xd4f764...1c6ef2` | ⚠️ Unaudited | Verified |
-| [InterestRateModel](./ethereum-1/0xa158cb5ebb9a9622c7025a3b7a495b38d9f076ba/) | ethereum | [`0xa158cb...f076ba`](./ethereum-1/0xa158cb5ebb9a9622c7025a3b7a495b38d9f076ba/) | ⚠️ Unaudited | Verified |
+| [InterestRateModel](./ethereum-1/0xa158cb5ebb9a9622c7025a3b7a495b38d9f076ba/) | ethereum | [`0xa158cb...f076ba`](./ethereum-1/0xa158cb5ebb9a9622c7025a3b7a495b38d9f076ba/) | ✅ Audited | Verified |
 | [Vesting (3 deployments)](./ethereum-1/0x046667c768da32ef1e81a5cbbcd49103a207e72c/) | ethereum | 3 deployments: ethereum [`0x046667...07e72c`](./ethereum-1/0x046667c768da32ef1e81a5cbbcd49103a207e72c/); ethereum `0x512a81...66c15b`; ethereum `0x702997...764ac5` | ⚠️ Unaudited | Verified |
 
 ## proxy (1)
@@ -52,13 +58,14 @@
 | [NFTDescriptor](./base-8453/0x34aeed1248b4585ea79354c03bf96374a908d9de/) | base | [`0x34aeed...08d9de`](./base-8453/0x34aeed1248b4585ea79354c03bf96374a908d9de/) | ⚠️ Unaudited | Verified |
 | [TpToken (3 deployments)](./ethereum-1/0x229f0fb3445ecd573024368a41af68c7225be470/) | ethereum | 3 deployments: ethereum [`0x229f0f...5be470`](./ethereum-1/0x229f0fb3445ecd573024368a41af68c7225be470/); polygon `0x2ec008...bb9a25`; polygon `0x36d3d0...cb4436` | ⚠️ Unaudited | Verified |
 
-## unknown (41)
+## unknown (42)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AMPT](./ethereum-1/0x3f17cfad23c2014c5a32722557df87dff46819da/) | ethereum | [`0x3f17cf...6819da`](./ethereum-1/0x3f17cfad23c2014c5a32722557df87dff46819da/) | ⚠️ Unaudited | Verified |
-| Auction (20 deployments) | avalanche | 20 deployments: ethereum `0x0cdf8b...04074c`; ethereum `0x15ef08...787ad6`; ethereum `0x5f04bc...a4f91a`; ethereum `0xbe45e6...c633f5`; ethereum `0xce3fec...c7ca16`; ethereum `0xfd96b2...98166b`; optimism `0x5cda11...255900`; optimism `0xe746cd...a6a2d7`; polygon `0x3b194b...798d00`; polygon `0x7e5034...d9251c`; polygon `0xdad6e9...c66453`; polygon `0xf1f662...00fe31`; polygon `0xf55ec6...96f150`; mantle `0x661bf0...8519df`; mantle `0x7554fa...4479ae`; mantle `0xa36937...1786f7`; mantle `0xfe0c81...e74103`; base [`0x0762a9...dd2447`](./base-8453/0x0762a9399d03430451f39045b0c4d3eb5fdd2447/); base `0xb939a6...10d052`; avalanche `0x01af79...31f26d` | ⚠️ Unaudited | Verified |
-| [HexTrustUSDV2](./ethereum-1/0x7a486f809c952a6f8dec8cb0ff68173f2b8ed56c/) | ethereum | [`0x7a486f...8ed56c`](./ethereum-1/0x7a486f809c952a6f8dec8cb0ff68173f2b8ed56c/) | ⚠️ Unaudited | Verified |
+| Auction (20 deployments) | avalanche | 20 deployments: ethereum `0x0cdf8b...04074c`; ethereum `0x15ef08...787ad6`; ethereum `0x5f04bc...a4f91a`; ethereum `0xbe45e6...c633f5`; ethereum `0xce3fec...c7ca16`; ethereum `0xfd96b2...98166b`; optimism `0x5cda11...255900`; optimism `0xe746cd...a6a2d7`; polygon `0x3b194b...798d00`; polygon `0x7e5034...d9251c`; polygon `0xdad6e9...c66453`; polygon `0xf1f662...00fe31`; polygon `0xf55ec6...96f150`; mantle `0x661bf0...8519df`; mantle `0x7554fa...4479ae`; mantle `0xa36937...1786f7`; mantle `0xfe0c81...e74103`; base [`0x0762a9...dd2447`](./base-8453/0x0762a9399d03430451f39045b0c4d3eb5fdd2447/); base `0xb939a6...10d052`; avalanche `0x01af79...31f26d` | ✅ Audited | Verified |
+| [HexTrustUSD](./ethereum-1/0xe87e1f571a485deac08a81117ef1713d1261bce9/) | ethereum | [`0xe87e1f...61bce9`](./ethereum-1/0xe87e1f571a485deac08a81117ef1713d1261bce9/) | ⚠️ Unaudited | Verified |
+| [HexTrustUSDV2 (4 deployments)](./ethereum-1/0x7a486f809c952a6f8dec8cb0ff68173f2b8ed56c/) | ethereum | 4 deployments: ethereum [`0x7a486f...8ed56c`](./ethereum-1/0x7a486f809c952a6f8dec8cb0ff68173f2b8ed56c/); ethereum `0xce2d10...a42d7b`; ethereum `0xf8750b...d63313`; ethereum `0xffa1f1...6e7e26` | ⚠️ Unaudited | Verified |
 | [MembershipStaking (10 deployments)](./ethereum-1/0x03fe982544befb24478bce33278bef073725741f/) | ethereum | 10 deployments: ethereum [`0x03fe98...25741f`](./ethereum-1/0x03fe982544befb24478bce33278bef073725741f/); ethereum `0x9b2f78...d85dbc`; ethereum `0xa02514...dbf635`; ethereum `0xa2b464...7f84bd`; optimism `0x5f04bc...a4f91a`; optimism `0xce3fec...c7ca16`; polygon `0x4a7e8e...3b7c2a`; polygon `0x67a24c...ac9b67`; mantle `0x1f64d0...433db3`; mantle `0xe5860c...6a798a` | ⚠️ Unaudited | Verified |
 | [Prime (6 deployments)](./optimism-10/0x5a9c1b19038f88b235be0eab23333472b01e2be5/) | optimism | 6 deployments: ethereum `0xe746cd...a6a2d7`; ethereum `0xf55ec6...96f150`; optimism [`0x5a9c1b...1e2be5`](./optimism-10/0x5a9c1b19038f88b235be0eab23333472b01e2be5/); optimism `0xc31761...ec16de`; base `0xb8a7e3...b50865`; base `0xf041a2...896a9b` | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x285408...73f117` | ❓ Unverified | Unverified |

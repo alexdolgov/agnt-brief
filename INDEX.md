@@ -131,7 +131,7 @@
 | [charm-finance](./charm-finance/) | $14.2K | 50.0% | $0.0 | declining | 6 | 10 | 2026-06-10 |
 | [chateau](./chateau/) | $19.1K | 33.3% | $19.1K | active | 1 | 5 | 2026-06-10 |
 | [citrea-bridge](./citrea-bridge/) | $6.6M | 50.0% | ? | active | 10 | 3 | 2026-06-10 |
-| [clearpool](./clearpool/) | $10.7K | 0.0% | $10.7K | active | 5 | 61 | 2026-06-10 |
+| [clearpool](./clearpool/) | $17.6K | 7.1% | $17.6K | active | 7 | 63 | 2026-06-12 |
 | [clever](./clever/) | $3.2M | 10.6% | $1.6M | active | 3 | 76 | 2026-06-10 |
 | [coin8](./coin8/) | $53.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [coinsquare](./coinsquare/) | $12.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -447,7 +447,7 @@
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-06-11 |
 | [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 0 | 21 | 2026-06-11 |
 | [perpl](./perpl/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [pharaoh-exchange](./pharaoh-exchange/) | $38.7M | 0.0% | ? | active | 3 | 48 | 2026-06-11 |
+| [pharaoh-exchange](./pharaoh-exchange/) | $15.6M | 0.0% | $15.6M | active | 3 | 60 | 2026-06-12 |
 | [phoenix](./phoenix/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [pickle](./pickle/) | $2.9M | 2.7% | $2.9M | declining | 4 | 235 | 2026-06-11 |
 | [piku](./piku/) | $21.4M | 0.0% | $21.4M | active | 3 | 29 | 2026-06-11 |
@@ -508,7 +508,7 @@
 | [rook](./rook/) | $190.1K | 0.0% | $190.1K | dead | 0 | 73 | 2026-06-11 |
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
-| [royco-protocol](./royco-protocol/) | $7.2 | 0.0% | $7.2 | active | 6 | 14 | 2026-06-11 |
+| [royco-protocol](./royco-protocol/) | $13.0M | 0.0% | $13.0M | active | 6 | 17 | 2026-06-12 |
 | [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 15 | 2026-05-31 |
 | [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-06-11 |
 | [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 0 | 193 | 2026-06-12 |
@@ -557,7 +557,7 @@
 | [sovryn](./sovryn/) | $38.3M | 0.0% | ? | unknown | 11 | 0 | 2026-06-11 |
 | [spacefi](./spacefi/) | $1.5M | 0.0% | ? | active | 5 | 38 | 2026-06-11 |
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 8 | 0 | 2026-06-11 |
-| [spectra](./spectra/) | $10.5M | 0.0% | $10.5M | active | 7 | 214 | 2026-06-11 |
+| [spectra](./spectra/) | $10.5M | 12.2% | $5.8M | active | 7 | 229 | 2026-06-12 |
 | [sperax](./sperax/) | $14.2M | 47.1% | $2.6M | declining | 9 | 142 | 2026-06-11 |
 | [sphere](./sphere/) | $229.4M | 0.0% | $229.4M | active | 0 | 217 | 2026-06-11 |
 | [spiraldao](./spiraldao/) | $6.4M | 44.0% | ? | dead | 3 | 56 | 2026-05-23 |
@@ -588,7 +588,7 @@
 | [stusdt](./stusdt/) | $1.9M | 0.0% | $1.9M | active | 0 | 12 | 2026-06-12 |
 | [suibridge](./suibridge/) | $34.8M | 0.0% | ? | declining | 0 | 5 | 2026-06-12 |
 | [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
-| [summer.fi](./summer.fi/) | $140.9M | 0.0% | $140.9M | declining | 6 | 482 | 2026-06-11 |
+| [summer.fi](./summer.fi/) | $140.9M | 0.0% | $140.9M | declining | 6 | 484 | 2026-06-12 |
 | [sunny](./sunny/) | $2.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [superearn](./superearn/) | $295.4 | 0.0% | $295.4 | active | 5 | 94 | 2026-06-11 |
 | [superfarm](./superfarm/) | $211.1M | 0.0% | $211.1M | declining | 0 | 49 | 2026-06-11 |

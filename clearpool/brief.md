@@ -5,13 +5,13 @@
 - Project: Clearpool (`clearpool`)
 - Website: [https://clearpool.finance](https://clearpool.finance)
 - Lifecycle: active (Tier 0, 31.2% below peak)
-- Generated: 2026-06-10T22:30:21.140Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-12T16:17:02.645Z
+- Pipeline run: v2-pipeline-2026-06-12-c7aee3-9d35
 - Chains: avalanche, base, ethereum, mantle, optimism, polygon, polygon-zkevm
-- Contract surface: 61 unique implementations (220 raw deployments)
-- DeFi Llama TVL: $42,176,788.00
-- On-chain TVL (included contracts): $10,712.83
-- TVL by chain: Ethereum $10,712.83 | Optimism $0.00
+- Contract surface: 63 unique implementations (229 raw deployments)
+- DeFi Llama TVL: $34,318,404.00
+- On-chain TVL (included contracts): $17,583.09
+- TVL by chain: Ethereum $11,252.72 | Optimism $6,330.37
 
 ## Project Description
 
@@ -23,30 +23,34 @@ The Clearpool family provides the foundational lending infrastructure (pools, au
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/26 (0.0%)
-- Verified + Unaudited implementations: 21
-- Verified by bytecode match: 5
+- Verified implementations audited: 2/28 (7.1%)
+- Verified + Unaudited implementations: 23
+- Verified by bytecode match: 4
 - Unverified implementations: 35
-- Unique implementations: 61
-- Raw deployments: 220
-- Audits discovered: 5
-- Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $10,712.83
+- Unique implementations: 63
+- Raw deployments: 229
+- Audits discovered: 7
+- Scoreable audits (matched contracts): 1
+- ASD (verified + unaudited TVL): $17,583.09
 - Latest audit: 2024-12 (aging)
-- Staleness: 0 fresh, 1 aging, 2 stale, 2 unknown
+- Staleness: 0 fresh, 1 aging, 3 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| CertiK | Tier 2 | 2 | 7.1% | 2022-03 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (1)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| InterestRateModel | operational_periphery | ethereum | [`0xa158cb...f076ba`](./contracts/ethereum-1/0xa158cb5ebb9a9622c7025a3b7a495b38d9f076ba/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (21)
+### ⚠️ Verified + Unaudited (23)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -57,11 +61,12 @@ The Clearpool family provides the foundational lending infrastructure (pools, au
 | CosineInterestRateModel | operational_periphery | optimism | 9 deployments: optimism [`0x0c8927...5279d8`](./contracts/optimism-10/0x0c8927de225bb1ed9db05aa7d641e434b95279d8/); optimism `0xb98c68...edb66c`; optimism `0xd51f04...61e5ce`; optimism `0xf041a2...896a9b`; optimism `0xf55ec6...96f150`; polygon `0x43cb89...e5afe5`; mantle `0x244ef5...33903d`; mantle `0x56713f...1db71b`; mantle `0xd4f764...1c6ef2` | ⚠️ Unaudited |
 | CPOOLOFT | core_logic | base | 2 deployments: optimism `0x379c8d...faacd9`; base [`0x29157e...783a5c`](./contracts/base-8453/0x29157e2b6a34ae1787cddd05ad54dd4aa9783a5c/) | ⚠️ Unaudited |
 | CPOOLOFT20 | core_logic | mantle | 3 deployments: optimism `0xc3630b...f3d3fe`; polygon `0xb08b36...3a2d91`; mantle [`0x0c8927...5279d8`](./contracts/mantle-5000/0x0c8927de225bb1ed9db05aa7d641e434b95279d8/) | ⚠️ Unaudited |
-| HexTrustUSDV2 | unknown | ethereum | [`0x7a486f...8ed56c`](./contracts/ethereum-1/0x7a486f809c952a6f8dec8cb0ff68173f2b8ed56c/) | ⚠️ Unaudited |
-| InterestRateModel | operational_periphery | ethereum | [`0xa158cb...f076ba`](./contracts/ethereum-1/0xa158cb5ebb9a9622c7025a3b7a495b38d9f076ba/) | ⚠️ Unaudited |
+| HexTrustUSD | unknown | ethereum | [`0xe87e1f...61bce9`](./contracts/ethereum-1/0xe87e1f571a485deac08a81117ef1713d1261bce9/) | ⚠️ Unaudited |
+| HexTrustUSDV2 | unknown | ethereum | 4 deployments: ethereum [`0x7a486f...8ed56c`](./contracts/ethereum-1/0x7a486f809c952a6f8dec8cb0ff68173f2b8ed56c/); ethereum `0xce2d10...a42d7b`; ethereum `0xf8750b...d63313`; ethereum `0xffa1f1...6e7e26` | ⚠️ Unaudited |
 | MembershipStaking | unknown | ethereum | 10 deployments: ethereum [`0x03fe98...25741f`](./contracts/ethereum-1/0x03fe982544befb24478bce33278bef073725741f/); ethereum `0x9b2f78...d85dbc`; ethereum `0xa02514...dbf635`; ethereum `0xa2b464...7f84bd`; optimism `0x5f04bc...a4f91a`; optimism `0xce3fec...c7ca16`; polygon `0x4a7e8e...3b7c2a`; polygon `0x67a24c...ac9b67`; mantle `0x1f64d0...433db3`; mantle `0xe5860c...6a798a` | ⚠️ Unaudited |
 | NFTDescriptor | token | base | [`0x34aeed...08d9de`](./contracts/base-8453/0x34aeed1248b4585ea79354c03bf96374a908d9de/) | ⚠️ Unaudited |
 | PermissionPool | core_logic | ethereum | 2 deployments: ethereum [`0x0f37f0...58e06b`](./contracts/ethereum-1/0x0f37f0a064a642240f92b86abf8d41ffd358e06b/); ethereum `0x9eb1c0...baa5e5` | ⚠️ Unaudited |
+| Pool | core_logic | mantle | 9 deployments: ethereum `0xa3badd...16d74e`; ethereum `0xc5d1d3...66877c`; ethereum `0xd2f124...3b73a2`; optimism `0x281af7...cd4197`; optimism `0xa7209c...42d729`; optimism `0xbdf557...b56943`; mantle [`0x1de6ba...fc6a4c`](./contracts/mantle-5000/0x1de6ba3ec39f9e68ee3bdff0f00746c21cfc6a4c/); base `0x8e5573...ab2b7a`; base `0xb98c68...edb66c` | ⚠️ Unaudited |
 | Prime | unknown | optimism | 6 deployments: ethereum `0xe746cd...a6a2d7`; ethereum `0xf55ec6...96f150`; optimism [`0x5a9c1b...1e2be5`](./contracts/optimism-10/0x5a9c1b19038f88b235be0eab23333472b01e2be5/); optimism `0xc31761...ec16de`; base `0xb8a7e3...b50865`; base `0xf041a2...896a9b` | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | 14 deployments: ethereum [`0x1d8816...5016e2`](./contracts/ethereum-1/0x1d881611e48c806606d59c1591795514805016e2/); ethereum `0x5ed4e4...3920b1`; ethereum `0x69aa48...5eca78`; ethereum `0xcc95f3...68c65a`; optimism `0x785395...cd9552`; optimism `0xcb8da0...c1c2fb`; polygon `0x5ed4e4...3920b1`; polygon `0xa3badd...16d74e`; polygon `0xee3eac...4aa19e`; mantle `0x8eff31...9bd1cc`; base `0x616b66...9db213`; base `0xe3e26d...9eb755`; avalanche `0x8bc02e...18b2b3`; avalanche `0xb8a7e3...b50865` | ⚠️ Unaudited |
 | SoloFlashGovernor | governance | ethereum | 3 deployments: ethereum [`0x2c8fbc...00e518`](./contracts/ethereum-1/0x2c8fbc541bff60878fd3a8a0a18bc6db9300e518/); ethereum `0x327ae9...45f637`; ethereum `0x93ee35...08ed37` | ⚠️ Unaudited |
@@ -71,22 +76,23 @@ The Clearpool family provides the foundational lending infrastructure (pools, au
 | TransparentUpgradeableProxy | proxy | ethereum | 9 deployments: ethereum [`0x454ee9...4d2e1b`](./contracts/ethereum-1/0x454ee951da04afce32df8dd3400a1f159f4d2e1b/); ethereum `0x969d7d...a6b47b`; ethereum `0xc03dd6...3fa348`; ethereum `0xf38a4e...6b1187`; avalanche `0x7a0528...c89067`; avalanche `0x8e5573...ab2b7a`; avalanche `0xb4546c...b009df`; avalanche `0xc31761...ec16de`; avalanche `0xe3e26d...9eb755` | ⚠️ Unaudited |
 | UpgradeableBeacon | registry | mantle | 11 deployments: ethereum `0x350154...3273b0`; ethereum `0x3ebd21...e84f4a`; optimism `0xf1f662...00fe31`; polygon `0x229f0f...5be470`; polygon `0x625e7f...c7471c`; polygon `0xaa61d4...aaa688`; mantle [`0x0e07ce...002e7d`](./contracts/mantle-5000/0x0e07ce3e7ad3c61fcb7f7e5542a8c61e18002e7d/); base `0x379c8d...faacd9`; avalanche `0x428d56...4d4dca`; avalanche `0x721dbb...5cc5cd`; avalanche `0x785395...cd9552` | ⚠️ Unaudited |
 | Vesting | operational_periphery | ethereum | 3 deployments: ethereum [`0x046667...07e72c`](./contracts/ethereum-1/0x046667c768da32ef1e81a5cbbcd49103a207e72c/); ethereum `0x512a81...66c15b`; ethereum `0x702997...764ac5` | ⚠️ Unaudited |
+| ViaRouter | adapter | polygon | 2 deployments: polygon [`0x2a4a34...c07322`](./contracts/polygon-137/0x2a4a3494e1f8d8fd3eef2b53c6105f2bb0c07322/); polygon `0x47a960...505a3b` | ⚠️ Unaudited |
 
-### ✅ Verified by Bytecode + Audited (0)
-
-Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
-
-- None
-
-### ⚠️ Verified by Bytecode + Unaudited (5)
+### ✅ Verified by Bytecode + Audited (1)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| PoolMaster | core_logic | base | 26 deployments: ethereum `0x2ec008...bb9a25`; ethereum `0x64d1c7...4bc5bf`; ethereum `0x82d438...a868d6`; ethereum `0xaeb362...2cdbbc`; ethereum `0xcb8da0...c1c2fb`; ethereum `0xd12ec3...a2035e`; ethereum `0xf1f662...00fe31`; optimism `0x3b0bbd...29d55b`; optimism `0x5ed4e4...3920b1`; optimism `0x616b66...9db213`; optimism `0xc3d7f8...4d35a7`; polygon `0x1d8816...5016e2`; polygon `0x331781...c850ff`; polygon `0x45e766...dc1fe0`; polygon `0x5cda11...255900`; polygon `0x5f04bc...a4f91a`; polygon `0x6cc5f6...93acc5`; polygon `0x9590e7...ba31f8`; polygon `0x9827d9...280cfd`; polygon `0xf20f5f...c446c8`; mantle `0xc15871...41fe72`; mantle `0xe16860...f8c7c7`; base [`0x0fc1a1...0a2ff3`](./contracts/base-8453/0x0fc1a124af80535747c5439c3e0667146a0a2ff3/); base `0x207ac3...575a47`; base `0xa83b8f...78d27a`; base `0xca7aaa...738314` | ⚠️ Unaudited (bytecode match) |
-| Auction | unknown | avalanche | 20 deployments: ethereum `0x0cdf8b...04074c`; ethereum `0x15ef08...787ad6`; ethereum `0x5f04bc...a4f91a`; ethereum `0xbe45e6...c633f5`; ethereum `0xce3fec...c7ca16`; ethereum `0xfd96b2...98166b`; optimism `0x5cda11...255900`; optimism `0xe746cd...a6a2d7`; polygon `0x3b194b...798d00`; polygon `0x7e5034...d9251c`; polygon `0xdad6e9...c66453`; polygon `0xf1f662...00fe31`; polygon `0xf55ec6...96f150`; mantle `0x661bf0...8519df`; mantle `0x7554fa...4479ae`; mantle `0xa36937...1786f7`; mantle `0xfe0c81...e74103`; base `0x0762a9...dd2447`; base `0xb939a6...10d052`; avalanche [`0x01af79...31f26d`](./contracts/avalanche-43114/0x01af79c842e2089b16e2013d2ac02fc1c731f26d/) | ⚠️ Unaudited (bytecode match) |
-| Pool | core_logic | mantle | 8 deployments: ethereum `0xa3badd...16d74e`; ethereum `0xc5d1d3...66877c`; optimism `0x281af7...cd4197`; optimism `0xa7209c...42d729`; optimism `0xbdf557...b56943`; mantle [`0x1de6ba...fc6a4c`](./contracts/mantle-5000/0x1de6ba3ec39f9e68ee3bdff0f00746c21cfc6a4c/); base `0x8e5573...ab2b7a`; base `0xb98c68...edb66c` | ⚠️ Unaudited (bytecode match) |
+| Auction | unknown | avalanche | 20 deployments: ethereum `0x0cdf8b...04074c`; ethereum `0x15ef08...787ad6`; ethereum `0x5f04bc...a4f91a`; ethereum `0xbe45e6...c633f5`; ethereum `0xce3fec...c7ca16`; ethereum `0xfd96b2...98166b`; optimism `0x5cda11...255900`; optimism `0xe746cd...a6a2d7`; polygon `0x3b194b...798d00`; polygon `0x7e5034...d9251c`; polygon `0xdad6e9...c66453`; polygon `0xf1f662...00fe31`; polygon `0xf55ec6...96f150`; mantle `0x661bf0...8519df`; mantle `0x7554fa...4479ae`; mantle `0xa36937...1786f7`; mantle `0xfe0c81...e74103`; base `0x0762a9...dd2447`; base `0xb939a6...10d052`; avalanche [`0x01af79...31f26d`](./contracts/avalanche-43114/0x01af79c842e2089b16e2013d2ac02fc1c731f26d/) | ✅ Audited (bytecode match) |
+
+### ⚠️ Verified by Bytecode + Unaudited (3)
+
+Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
+
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| PoolMaster | core_logic | base | 28 deployments: ethereum `0x2ec008...bb9a25`; ethereum `0x64d1c7...4bc5bf`; ethereum `0x82d438...a868d6`; ethereum `0xa0749f...56055b`; ethereum `0xaeb362...2cdbbc`; ethereum `0xcb8da0...c1c2fb`; ethereum `0xd12ec3...a2035e`; ethereum `0xf1f662...00fe31`; optimism `0x3b0bbd...29d55b`; optimism `0x5ed4e4...3920b1`; optimism `0x616b66...9db213`; optimism `0x72947e...7fe0f6`; optimism `0xc3d7f8...4d35a7`; polygon `0x1d8816...5016e2`; polygon `0x331781...c850ff`; polygon `0x45e766...dc1fe0`; polygon `0x5cda11...255900`; polygon `0x5f04bc...a4f91a`; polygon `0x6cc5f6...93acc5`; polygon `0x9590e7...ba31f8`; polygon `0x9827d9...280cfd`; polygon `0xf20f5f...c446c8`; mantle `0xc15871...41fe72`; mantle `0xe16860...f8c7c7`; base [`0x0fc1a1...0a2ff3`](./contracts/base-8453/0x0fc1a124af80535747c5439c3e0667146a0a2ff3/); base `0x207ac3...575a47`; base `0xa83b8f...78d27a`; base `0xca7aaa...738314` | ⚠️ Unaudited (bytecode match) |
 | PoolFactory | registry | optimism | 29 deployments: ethereum `0x83d5c0...be1791`; ethereum `0x97b6a7...b110bf`; ethereum `0x99c10a...356b80`; ethereum `0xaa61d4...aaa688`; ethereum `0xb61547...6ceb57`; ethereum `0xc3630b...f3d3fe`; ethereum `0xde204e...4c2d48`; ethereum `0xf3322c...3f4e8d`; optimism [`0x01af79...31f26d`](./contracts/optimism-10/0x01af79c842e2089b16e2013d2ac02fc1c731f26d/); optimism `0x99c10a...356b80`; optimism `0xb217d9...bcde41`; optimism `0xb90c0d...ba1bac`; optimism `0xe3e26d...9eb755`; polygon `0x16497f...0c2508`; polygon `0x215cca...da79ba`; polygon `0x3b0bbd...29d55b`; polygon `0x7de081...ccee87`; polygon `0xa919d3...9584e3`; polygon `0xc3630b...f3d3fe`; mantle `0x063d68...3850a7`; mantle `0x8e40e7...f25172`; mantle `0xa7209c...42d729`; mantle `0xb217d9...bcde41`; mantle `0xd51f04...61e5ce`; base [`0x01af79...31f26d`](./contracts/base-8453/0x01af79c842e2089b16e2013d2ac02fc1c731f26d/); base `0x199a01...05dfad`; base `0x721dbb...5cc5cd`; base `0xbdf557...b56943`; avalanche `0xf041a2...896a9b` | ⚠️ Unaudited (bytecode match) |
 | WhitelistControl | unknown | avalanche | 4 deployments: mantle `0xb4f37f...3cdd51`; base `0x72429e...d2fe0f`; base `0x8ef02f...89b280`; avalanche [`0x5a9c1b...1e2be5`](./contracts/avalanche-43114/0x5a9c1b19038f88b235be0eab23333472b01e2be5/) | ⚠️ Unaudited (bytecode match) |
 
@@ -141,53 +147,32 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [pashov-boring-vault.pdf](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/audit/pashov-boring-vault.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [pashov-hyperlane.pdf](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/audit/pashov-hyperlane.pdf) | Pashov Audit Group | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
 | [spearbit-boring-vault-arctic-0.pdf](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/audit/spearbit-boring-vault-arctic-0.pdf) | Spearbit | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
+| [DL audit link](https://skynet.certik.com/projects/clearpool) | CertiK | Audit | 2022-03 | stale | Direct | contract_name | 20 | high |
+| [DL audit link](https://3929482601-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhkiSI8bK3ThlypJ3jdEC%2Fuploads%2FOFonx1OQS6ni5lUsyiPx%2FClearpool%20Security%20Analysis%20by%20Pessimistic.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x66761f...c2fac5`](./contracts/ethereum-1/0x66761fa41377003622aee3c7675fc7b5c1c2fac5/) | CPOOL | core_logic | $10,712.83 | Verified native implementation with $10,712.83 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0fc1a1...0a2ff3`](./contracts/base-8453/0x0fc1a124af80535747c5439c3e0667146a0a2ff3/) | PoolMaster | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3f17cf...6819da`](./contracts/ethereum-1/0x3f17cfad23c2014c5a32722557df87dff46819da/) | AMPT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x01af79...31f26d`](./contracts/avalanche-43114/0x01af79c842e2089b16e2013d2ac02fc1c731f26d/) | Auction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x022741...56729d`](./contracts/base-8453/0x022741f3047a5d040d52f7a57dc6a2b1b456729d/) | BondNFT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mantle | [`0x6278bc...b9e79b`](./contracts/mantle-5000/0x6278bcb4ada5f9bd83b0e0745db6246274b9e79b/) | ClearpoolLens | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x0c8927...5279d8`](./contracts/optimism-10/0x0c8927de225bb1ed9db05aa7d641e434b95279d8/) | CosineInterestRateModel | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x29157e...783a5c`](./contracts/base-8453/0x29157e2b6a34ae1787cddd05ad54dd4aa9783a5c/) | CPOOLOFT | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mantle | [`0x0c8927...5279d8`](./contracts/mantle-5000/0x0c8927de225bb1ed9db05aa7d641e434b95279d8/) | CPOOLOFT20 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa158cb...f076ba`](./contracts/ethereum-1/0xa158cb5ebb9a9622c7025a3b7a495b38d9f076ba/) | InterestRateModel | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x03fe98...25741f`](./contracts/ethereum-1/0x03fe982544befb24478bce33278bef073725741f/) | MembershipStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x34aeed...08d9de`](./contracts/base-8453/0x34aeed1248b4585ea79354c03bf96374a908d9de/) | NFTDescriptor | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0f37f0...58e06b`](./contracts/ethereum-1/0x0f37f0a064a642240f92b86abf8d41ffd358e06b/) | PermissionPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mantle | [`0x1de6ba...fc6a4c`](./contracts/mantle-5000/0x1de6ba3ec39f9e68ee3bdff0f00746c21cfc6a4c/) | Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x01af79...31f26d`](./contracts/optimism-10/0x01af79c842e2089b16e2013d2ac02fc1c731f26d/) | PoolFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x5a9c1b...1e2be5`](./contracts/optimism-10/0x5a9c1b19038f88b235be0eab23333472b01e2be5/) | Prime | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2c8fbc...00e518`](./contracts/ethereum-1/0x2c8fbc541bff60878fd3a8a0a18bc6db9300e518/) | SoloFlashGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1a5c16...8a613a`](./contracts/ethereum-1/0x1a5c169fbcbfb00b2c20c6746681aa774d8a613a/) | TermPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x422199...002494`](./contracts/polygon-137/0x422199a9d2a56bf120d9191ea82b6084ef002494/) | TermPoolFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x229f0f...5be470`](./contracts/ethereum-1/0x229f0fb3445ecd573024368a41af68c7225be470/) | TpToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x046667...07e72c`](./contracts/ethereum-1/0x046667c768da32ef1e81a5cbbcd49103a207e72c/) | Vesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x5a9c1b...1e2be5`](./contracts/avalanche-43114/0x5a9c1b19038f88b235be0eab23333472b01e2be5/) | WhitelistControl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 46 |
+| native | 0 |
 | upstream | 0 |
-| standard_library | 4 |
-| needs_review | 11 |
+| standard_library | 0 |
+| needs_review | 63 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 6
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=20
 
 Zero-match audit list:
 
@@ -196,5 +181,6 @@ Zero-match audit list:
 - [5807] pashov-boring-vault.pdf
 - [5808] pashov-hyperlane.pdf
 - [5809] spearbit-boring-vault-arctic-0.pdf
+- [12321] DL audit link
 
 Fork inheritance lineage and inherited audits are included when available.

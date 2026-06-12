@@ -5,7 +5,7 @@
 | Chain | sonic (146) |
 | Address | `0x589269998df4d7d16351aa2ff996486aec1db6c2` |
 | Role | unknown |
-| Origin | standard_library |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (sonic [`0x589269998df4d7d16351aa2ff996486aec1db6c2`](../0x589269998df4d7d16351aa2ff996486aec1db6c2/)) |

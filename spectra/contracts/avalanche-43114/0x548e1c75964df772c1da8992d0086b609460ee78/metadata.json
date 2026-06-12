@@ -1,0 +1,17 @@
+{
+  "address": "0x548e1c75964df772c1da8992d0086b609460ee78",
+  "chain_id": 43114,
+  "contract_name": "CurveStableSwapNG",
+  "compiler_version": "vyper:0.3.10",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T16:17:12.248Z"
+}

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "royco-protocol",
-  "generated_at": "2026-06-11T11:38:44.381Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
+  "generated_at": "2026-06-12T16:17:53.341Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-c7aee3-9d35",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "royco-protocol",
@@ -32,27 +32,27 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 14,
-    "total_addresses": 47,
-    "unique_implementations": 14,
-    "total_deployments": 47,
+    "total_contracts": 17,
+    "total_addresses": 52,
+    "unique_implementations": 17,
+    "total_deployments": 52,
     "audited_contracts": 0,
-    "unaudited_contracts": 13,
+    "unaudited_contracts": 16,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 9,
+    "contracts_verified_unaudited": 12,
     "contracts_verified_by_bytecode": 4,
     "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 6,
     "scoreable_audits": 0,
     "dl_tvl_usd": 31920059,
-    "tvl_usd": 7.156652,
+    "tvl_usd": 13013556.535605,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 0.16,
-      "sonic": 7
+      "ethereum": 12983021.2,
+      "sonic": 30535.34
     },
-    "asd_usd": 7.156652,
+    "asd_usd": 13013556.535605,
     "website_url": "https://www.royco.org",
     "chains": [
       "arbitrum",
@@ -79,7 +79,7 @@
     "product_family_count": 7
   },
   "surface_sufficiency": {
-    "unique_implementations": 14,
+    "unique_implementations": 17,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -91,13 +91,44 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x74d1fafa4e0163b2f1035f1b052137f3f9bad5cc",
+      "address": "0xcd9f5907f92818bc06c9ad70217f089e190d2a32",
+      "name": "ConcreteAsyncVaultImpl",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 12983021.038673,
+      "is_proxy": true,
+      "impl_address": "0x1b5cd91e61505d431d2a61192a1006146bd9bb28",
+      "impl_name": "ConcreteAsyncVaultImpl",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcd9f5907f92818bc06c9ad70217f089e190d2a32",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 12983021.038673,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x45088fb2ffebfdcf4dff7b7201bfa4cd2077c30e",
       "name": "BoringVault",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Royco V1",
-      "tvl_usd": 7.156652,
+      "product_line": null,
+      "tvl_usd": 30535.496932000002,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "BoringVault",
@@ -109,6 +140,15 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.156652,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x45088fb2ffebfdcf4dff7b7201bfa4cd2077c30e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 30528.34028,
           "is_audited": false
         },
         {
@@ -134,7 +174,7 @@
       "address": "0x80f0b206b7e5daa1b1ba4ea1478a33241ee6bac9",
       "name": "AccountantWithRateProviders",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Royco V1",
       "tvl_usd": null,
@@ -159,6 +199,15 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x8301294e84ca5a2644e7f3cd47a86369f1b0416e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -174,7 +223,7 @@
       "address": "0x90983ebf38e981ae38f7da9e71804380e316a396",
       "name": "ArcticArchitectureLens",
       "role": "periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Royco V1",
       "tvl_usd": null,
@@ -242,10 +291,41 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xd3f8edff57570c4f9b11cc95ea65117e2d7a6c2d",
+      "name": "MultisigStrategy",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb417a7c43a7a8aa27bba2b2bb4639878532f9d0c",
+      "impl_name": "MultisigStrategy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd3f8edff57570c4f9b11cc95ea65117e2d7a6c2d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x19112adbdafb465ddf0b57ecc07e68110ad09c50",
       "name": "PointsFactory",
       "role": "registry",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "**Ethereum**",
       "tvl_usd": null,
@@ -312,7 +392,7 @@
       "address": "0x6af057b1c423d108ab710d6f4e3e46f3536787fd",
       "name": "RecipeMarketHub",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Hyperliquid EVM Mainnet",
       "tvl_usd": null,
@@ -379,8 +459,8 @@
       "address": "0x7cc6fb28ec7b5e7afc3cb3986141797ffc27253c",
       "name": "RoycoFactory",
       "role": "registry",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": "Royco V2",
       "tvl_usd": null,
       "is_proxy": true,
@@ -423,12 +503,43 @@
       "contamination_flag": null
     },
     {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x170ff06326ebb64bf609a848fc143143994af6c8",
+      "name": "Safe",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x41675c099f32341bf84bfc5382af534df5c7461a",
+      "impl_name": "Safe",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x170ff06326ebb64bf609a848fc143143994af6c8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 146,
       "chain_name": "sonic",
       "address": "0x0f75c8176d4ebdff78d9a0c486b35d8f94b00a42",
       "name": "TellerWithMultiAssetSupport",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Royco V1",
       "tvl_usd": null,
@@ -459,7 +570,7 @@
       "address": "0xda0a91f0fcc2a7c1922165a28038d89babe8ccfa",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Hyperliquid EVM Mainnet",
       "tvl_usd": null,
@@ -490,7 +601,7 @@
       "address": "0x1e3fcccbafdbdf3cb17b7470c8a6cc64eb5f94a2",
       "name": "VaultMarketHub",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Sonic Mainnet",
       "tvl_usd": null,
@@ -557,7 +668,7 @@
       "address": "0x40a1c08084671e9a799b73853e82308225309dc0",
       "name": "WeirollWallet",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "**Ethereum**",
       "tvl_usd": null,
@@ -624,7 +735,7 @@
       "address": "0x07899ac8be7462151d6515fcd4773dd9267c9911",
       "name": "WeirollWalletHelper",
       "role": "periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "**Ethereum**",
       "tvl_usd": null,
@@ -691,7 +802,7 @@
       "address": "0x3c44c20377e252567d283dc7746d1bea67eb3e66",
       "name": "WrappedVault",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "**Ethereum**",
       "tvl_usd": null,
@@ -767,7 +878,7 @@
       "address": "0x7212d98a88d44f714fd29dd980cb846be8e7491a",
       "name": "WrappedVaultFactory",
       "role": "registry",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Sonic Mainnet",
       "tvl_usd": null,
@@ -949,123 +1060,12 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x74d1fafa4e0163b2f1035f1b052137f3f9bad5cc",
-      "name": "BoringVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 7.156652,
-      "risk_note": "Verified native implementation with $7.16 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x80f0b206b7e5daa1b1ba4ea1478a33241ee6bac9",
-      "name": "AccountantWithRateProviders",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x90983ebf38e981ae38f7da9e71804380e316a396",
-      "name": "ArcticArchitectureLens",
-      "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x19112adbdafb465ddf0b57ecc07e68110ad09c50",
-      "name": "PointsFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 999,
-      "chain_name": "hyperliquid",
-      "address": "0x6af057b1c423d108ab710d6f4e3e46f3536787fd",
-      "name": "RecipeMarketHub",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x0f75c8176d4ebdff78d9a0c486b35d8f94b00a42",
-      "name": "TellerWithMultiAssetSupport",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x1e3fcccbafdbdf3cb17b7470c8a6cc64eb5f94a2",
-      "name": "VaultMarketHub",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x40a1c08084671e9a799b73853e82308225309dc0",
-      "name": "WeirollWallet",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x07899ac8be7462151d6515fcd4773dd9267c9911",
-      "name": "WeirollWalletHelper",
-      "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x3c44c20377e252567d283dc7746d1bea67eb3e66",
-      "name": "WrappedVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x7212d98a88d44f714fd29dd980cb846be8e7491a",
-      "name": "WrappedVaultFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 12,
+    "native": 0,
     "upstream": 1,
-    "standard_library": 1,
-    "needs_review": 0
+    "standard_library": 0,
+    "needs_review": 16
   },
   "scope_matching_notes": {
     "match_method_counts": {},

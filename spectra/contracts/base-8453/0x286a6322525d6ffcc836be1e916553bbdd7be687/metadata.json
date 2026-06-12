@@ -1,0 +1,17 @@
+{
+  "address": "0x286a6322525d6ffcc836be1e916553bbdd7be687",
+  "chain_id": 8453,
+  "contract_name": "RegistryManagerModule",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T16:17:13.891Z"
+}

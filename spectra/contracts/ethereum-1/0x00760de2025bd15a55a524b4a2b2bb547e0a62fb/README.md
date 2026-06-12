@@ -5,7 +5,7 @@
 | Chain | ethereum (1) |
 | Address | `0x00760de2025bd15a55a524b4a2b2bb547e0a62fb` |
 | Role | core_logic |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 5 (ethereum [`0x00760de2025bd15a55a524b4a2b2bb547e0a62fb`](../0x00760de2025bd15a55a524b4a2b2bb547e0a62fb/); ethereum `0x1d220bd76c2f004bde2958c643173189d8db3a7a`; ethereum `0x2506f2d6e49838ed116bcd772c9fa8738c520284`; ethereum `0x261ca4e645578a9ed304ac98d5243ebb518a162d`; ethereum `0x609ebd0a8b06dabb805f1e64b35301c185d94f95`) |

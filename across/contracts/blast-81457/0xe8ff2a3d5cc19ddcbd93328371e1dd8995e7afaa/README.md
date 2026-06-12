@@ -5,7 +5,7 @@
 | Chain | blast (81457) |
 | Address | `0xe8ff2a3d5cc19ddcbd93328371e1dd8995e7afaa` |
 | Role | operational_periphery |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (blast [`0xe8ff2a3d5cc19ddcbd93328371e1dd8995e7afaa`](../0xe8ff2a3d5cc19ddcbd93328371e1dd8995e7afaa/)) |

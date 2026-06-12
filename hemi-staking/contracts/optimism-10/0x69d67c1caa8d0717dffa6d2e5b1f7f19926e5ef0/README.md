@@ -5,7 +5,7 @@
 | Chain | optimism (10) |
 | Address | `0x69d67c1caa8d0717dffa6d2e5b1f7f19926e5ef0` |
 | Role | registry |
-| Origin | upstream |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (optimism [`0x69d67c1caa8d0717dffa6d2e5b1f7f19926e5ef0`](../0x69d67c1caa8d0717dffa6d2e5b1f7f19926e5ef0/)) |

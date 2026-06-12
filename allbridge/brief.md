@@ -7,13 +7,13 @@
 - Project: Allbridge (`allbridge`)
 - Website: [https://app.allbridge.io](https://app.allbridge.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:58:56.740Z
-- Pipeline run: correction-skeletal-description-fix-all
-- Chains: arbitrum, aurora, avalanche, base, bsc, celo, ethereum, fantom, harmony, optimism, polygon, sonic, unichain
-- Contract surface: 282 unique implementations (537 raw deployments)
-- DeFi Llama TVL: $26,552,200.00
-- On-chain TVL (included contracts): $19,333,323.22
-- TVL by chain: Ethereum $16,153,065.95 | Arbitrum $761,941.23 | Polygon $663,601.83 | Base $652,024.37 | Bsc $539,697.07 | Celo $282,251.27 | Avalanche $158,422.69 | Optimism $74,308.37 | Unichain $26,646.96 | Sonic $21,363.48
+- Generated: 2026-06-12T16:23:25.120Z
+- Pipeline run: v2-pipeline-2026-06-12-c7aee3-9d35
+- Chains: arbitrum, aurora, avalanche, base, bsc, celo, ethereum, fantom, harmony, linea, optimism, polygon, sonic, unichain
+- Contract surface: 287 unique implementations (548 raw deployments)
+- DeFi Llama TVL: $21,162,719.00
+- On-chain TVL (included contracts): $21,725,287.74
+- TVL by chain: Ethereum $16,153,065.95 | Bsc $2,931,661.59 | Arbitrum $761,941.23 | Polygon $663,601.83 | Base $652,024.37 | Celo $282,251.27 | Avalanche $158,422.69 | Optimism $74,308.37 | Unichain $26,646.96 | Sonic $21,363.48
 
 ## Project Description
 
@@ -25,19 +25,19 @@ Allbridge Classic and Allbridge Core are separate bridge implementations that do
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/82 (0.0%)
-- Verified + Unaudited implementations: 75
+- Verified implementations audited: 0/85 (0.0%)
+- Verified + Unaudited implementations: 78
 - Verified by bytecode match: 7
-- Unverified implementations: 200
-- Unique implementations: 282
-- Raw deployments: 537
-- Audits discovered: 8
+- Unverified implementations: 202
+- Unique implementations: 287
+- Raw deployments: 548
+- Audits discovered: 11
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $19,333,323.22
-- Latest audit: 2022-07 (stale)
-- Staleness: 0 fresh, 0 aging, 3 stale, 5 unknown
+- ASD (verified + unaudited TVL): $21,725,287.74
+- Latest audit: 2026-03 (fresh)
+- Staleness: 1 fresh, 0 aging, 4 stale, 6 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $19,333,323.22 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $21,725,287.74 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,7 +49,7 @@ Allbridge Classic and Allbridge Core are separate bridge implementations that do
 
 - None
 
-### ⚠️ Verified + Unaudited (75)
+### ⚠️ Verified + Unaudited (78)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -60,10 +60,11 @@ Allbridge Classic and Allbridge Core are separate bridge implementations that do
 | AddressLinkedList | unknown | celo | [`0x939c9c...712801`](./contracts/celo-42220/0x939c9cefbce3aa3a212d424b5ba978ac1b712801/) | ⚠️ Unaudited |
 | AddressSortedLinkedList | unknown | celo | [`0x0e3e96...5a1552`](./contracts/celo-42220/0x0e3e96a0d64b59b46872432f47bed6a1825a1552/) | ⚠️ Unaudited |
 | Ariadne | unknown | ethereum | [`0xb1c9bc...2a81d2`](./contracts/ethereum-1/0xb1c9bc94acd2fae6aabf4ffae4429b93512a81d2/) | ⚠️ Unaudited |
+| Attestations | unknown | celo | 3 deployments: celo [`0x572912...15e071`](./contracts/celo-42220/0x5729126891355e3c2626338151dd50cc0415e071/); celo `0x936d74...dd40a8`; celo `0xf65903...63758c` | ⚠️ Unaudited |
 | AttestationsProxy | unknown | celo | 18 deployments: celo [`0x2496fd...8e9a3d`](./contracts/celo-42220/0x2496fda4b928e8cf799ac04ea79861ac828e9a3d/); celo `0x252b03...5f1649`; celo `0x30b3c1...0595ac`; celo `0x3a4936...edb3f4`; celo `0x488deb...6c8fa6`; celo `0x4a241b...877da9`; celo `0x65e25c...799411`; celo `0x673f19...74eecb`; celo `0x68da81...504785`; celo `0x93d52a...a0ecf7`; celo `0xb53ce2...d8d96a`; celo `0xc834e7...359afd`; celo `0xcc6517...9e8fbe`; celo `0xdadd05...6f9303`; celo `0xdd944d...99f451`; celo `0xeaaf55...bc9149`; celo `0xf114c7...f5406a`; celo `0xff2ba5...c9fd2d` | ⚠️ Unaudited |
 | BatchTransfer | periphery | polygon | [`0x61a588...60be1b`](./contracts/polygon-137/0x61a58822d24534fdb1b035ac8fb85611ce60be1b/) | ⚠️ Unaudited |
 | BlockchainParameters | unknown | celo | 3 deployments: celo [`0x3058c4...c46672`](./contracts/celo-42220/0x3058c4197c56c9a9c92d3516f2d4bb8a76c46672/); celo `0xdefbc8...217955`; celo `0xf33854...832d25` | ⚠️ Unaudited |
-| CctpBridge | operational_periphery | optimism | 10 deployments: ethereum `0x965a5e...5f31d1`; ethereum `0xc51397...2210d6`; optimism [`0x08391e...7c1cd0`](./contracts/optimism-10/0x08391edf36f41f05d27a1e0fd7a29448417c1cd0/); optimism `0x125ead...13b5d2`; polygon `0x43330f...166dcf`; base `0x1efe2c...6314f6`; base `0xaefb62...56af62`; arbitrum `0x23e1ae...92ccdb`; arbitrum `0x2ed095...b98a29`; avalanche `0x791a36...47ba6d` | ⚠️ Unaudited |
+| CctpBridge | operational_periphery | optimism | 11 deployments: ethereum `0x965a5e...5f31d1`; ethereum `0xc51397...2210d6`; optimism [`0x08391e...7c1cd0`](./contracts/optimism-10/0x08391edf36f41f05d27a1e0fd7a29448417c1cd0/); optimism `0x125ead...13b5d2`; polygon `0x43330f...166dcf`; polygon `0x710282...1ac82c`; base `0x1efe2c...6314f6`; base `0xaefb62...56af62`; arbitrum `0x23e1ae...92ccdb`; arbitrum `0x2ed095...b98a29`; avalanche `0x791a36...47ba6d` | ⚠️ Unaudited |
 | CeloUnreleasedTreasury | operational_periphery | celo | 3 deployments: celo [`0x0148a2...0ec9d7`](./contracts/celo-42220/0x0148a25d13cbd39d2ff5749369356cbde20ec9d7/); celo `0x7a8c7a...8a434f`; celo `0xa58ce5...f2fae5` | ⚠️ Unaudited |
 | CeloUnreleasedTreasuryProxy | operational_periphery | celo | 2 deployments: celo [`0x2efd9e...e86c03`](./contracts/celo-42220/0x2efd9e29cfbfaf32713fbe53fd9033217ee86c03/); celo `0xc50a46...c90c12` | ⚠️ Unaudited |
 | Distributor | operational_periphery | ethereum | [`0x92f7cc...fb9bf4`](./contracts/ethereum-1/0x92f7cc43fcba972c4296d851cc31c33676fb9bf4/) | ⚠️ Unaudited |
@@ -126,6 +127,8 @@ Allbridge Classic and Allbridge Core are separate bridge implementations that do
 | TetherTokenOFTExtension | adapter | unichain | 3 deployments: unichain [`0x01bff4...bc1071`](./contracts/unichain-130/0x01bff41798a0bcf287b996046ca68b395dbc1071/); unichain `0x915143...60ecc5`; unichain `0xaf37e8...0847ff` | ⚠️ Unaudited |
 | TreasureVault | core_logic | polygon | 2 deployments: polygon [`0x68d1e3...74d852`](./contracts/polygon-137/0x68d1e3f802058ce517e9ba871ab182299e74d852/); polygon `0xa0f014...d246d8` | ⚠️ Unaudited |
 | TwoWeeksNotice | unknown | bsc | [`0xee170d...8626f6`](./contracts/bsc-56/0xee170d3dc00f792e5116b42fe36628f4f28626f6/) | ⚠️ Unaudited |
+| USDe | unknown | ethereum | [`0x4c9edd...1e68b3`](./contracts/ethereum-1/0x4c9edd5852cd905f086c759e8383e09bff1e68b3/) | ⚠️ Unaudited |
+| USDeOFT | unknown | arbitrum | [`0x5d3a1f...52ef34`](./contracts/arbitrum-42161/0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34/) | ⚠️ Unaudited |
 | Validators | unknown | celo | 4 deployments: celo [`0x2e3b47...e7c68d`](./contracts/celo-42220/0x2e3b47cf3163de47e852ff11d53a9ad8dfe7c68d/); celo `0x4b84c7...b71428`; celo `0xa47961...c8dc95`; celo `0xbc8ca2...b88d1a` | ⚠️ Unaudited |
 | WormholeMessenger | unknown | arbitrum | 2 deployments: optimism `0xf98a37...49e377`; arbitrum [`0x5f4e0a...bfc313`](./contracts/arbitrum-42161/0x5f4e0a6b848db318f4afc0b238c09747eebfc313/) | ⚠️ Unaudited |
 
@@ -141,15 +144,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| Pool | core_logic | polygon | 28 deployments: ethereum `0x1d3df1...8d403c`; ethereum `0x542ad3...a9ce97`; ethereum `0x7dbf07...74135d`; ethereum `0xa7062b...c57c4d`; ethereum `0xb827b1...9d1b0e`; ethereum `0xcab34d...51abad`; ethereum `0xce01bc...539172`; ethereum `0xe6fc2a...97063c`; optimism `0x3b96f8...f1f68f`; optimism `0xb24a05...b0deea`; unichain `0xba2fba...a094d7`; unichain `0xd0a1ff...d9fce1`; polygon [`0x0394c4...090791`](./contracts/polygon-137/0x0394c4f17738a10096510832beab89a9dd090791/); polygon `0x171f3f...a47826`; polygon `0x218556...0bd604`; polygon `0x4c42df...2eb0a6`; polygon `0x58cc62...9437da`; polygon `0x6d92cf...9e3622`; sonic `0xca0dc3...43c71f`; base `0xda6bb1...5e96d5`; arbitrum `0x2b5e5e...c59d6d`; arbitrum `0x47235c...8472c7`; arbitrum `0x690e66...8a21df`; arbitrum `0xb51905...0f9f82`; arbitrum `0xfd22b7...7c5423`; celo `0xfb2c7c...e2b5af`; avalanche `0x2d2f46...8b5784`; avalanche `0xe82735...38ec9f` | ⚠️ Unaudited (bytecode match) |
+| Pool | core_logic | polygon | 30 deployments: ethereum `0x1d3df1...8d403c`; ethereum `0x542ad3...a9ce97`; ethereum `0x7dbf07...74135d`; ethereum `0xa7062b...c57c4d`; ethereum `0xb827b1...9d1b0e`; ethereum `0xcab34d...51abad`; ethereum `0xce01bc...539172`; ethereum `0xe6fc2a...97063c`; optimism `0x3b96f8...f1f68f`; optimism `0xb24a05...b0deea`; bsc `0x731822...f29953`; bsc `0xf833af...537811`; unichain `0xba2fba...a094d7`; unichain `0xd0a1ff...d9fce1`; polygon [`0x0394c4...090791`](./contracts/polygon-137/0x0394c4f17738a10096510832beab89a9dd090791/); polygon `0x171f3f...a47826`; polygon `0x218556...0bd604`; polygon `0x4c42df...2eb0a6`; polygon `0x58cc62...9437da`; polygon `0x6d92cf...9e3622`; sonic `0xca0dc3...43c71f`; base `0xda6bb1...5e96d5`; arbitrum `0x2b5e5e...c59d6d`; arbitrum `0x47235c...8472c7`; arbitrum `0x690e66...8a21df`; arbitrum `0xb51905...0f9f82`; arbitrum `0xfd22b7...7c5423`; celo `0xfb2c7c...e2b5af`; avalanche `0x2d2f46...8b5784`; avalanche `0xe82735...38ec9f` | ⚠️ Unaudited (bytecode match) |
 | Token | unknown | polygon | 4 deployments: ethereum `0xa11bd3...ce8c7c`; ethereum `0xf74134...ea3615`; bsc `0x37dfac...0aacb7`; polygon [`0x14743e...4103e7`](./contracts/polygon-137/0x14743e1c6f812154f7ecc980d890f0f5234103e7/) | ⚠️ Unaudited (bytecode match) |
 | WrappedToken | token | polygon | 48 deployments: ethereum `0x087095...f1863f`; ethereum `0x2bd1f3...3f5f0f`; ethereum `0x34ac7e...52d469`; ethereum `0x48b847...9bba72`; ethereum `0x572614...9ab9da`; ethereum `0x934ac3...6ee8a9`; ethereum `0xac5c23...94c294`; bsc `0x0556c7...cbe29c`; bsc `0x4f161e...f8ce9e`; bsc `0x6756d5...4b86fd`; bsc `0x68784f...f42b4a`; bsc `0x6ae4b1...2ff416`; bsc `0x8445b8...a153d7`; bsc `0x9df465...71f8f0`; bsc `0xa0a996...e73d97`; bsc `0xb3404f...b2ea1d`; bsc `0xc259b0...1bbae1`; bsc `0xcd41ef...c3731b`; polygon [`0x04429f...293346`](./contracts/polygon-137/0x04429fbb948bbd09327763214b45e505a5293346/); polygon `0x42a16b...a1fd01`; polygon `0x5639c4...319543`; polygon `0x707d64...830b4d`; polygon `0x72bd80...af6f2f`; polygon `0x7dff46...2ea7a4`; polygon `0xb6ebc3...7b38ca`; polygon `0xbe276e...9b4b19`; polygon `0xbe8096...a9547c`; polygon `0xfc69f1...3c8831`; celo `0x173234...aed450`; celo `0x33827b...0e941d`; celo `0x47264a...7346a8`; celo `0x6e512b...680cc9`; celo `0x8d2c77...95f92d`; celo `0x8e3670...89b690`; celo `0xed193c...02835c`; celo `0xf0c3fc...3e8b34`; avalanche `0x48b847...9bba72`; avalanche `0x9a3b53...007388`; avalanche `0xafc436...b291c9`; aurora `0x0f0057...5afd48`; aurora `0x0fad0e...bf41b5`; aurora `0x2bae00...630111`; aurora `0x486d4c...3d785b`; aurora `0x5c92a4...589783`; aurora `0x5ce9f0...34a9dc`; aurora `0x7b8d18...bc51eb`; aurora `0xb14674...f6e762`; aurora `0xc4bdd2...038096` | ⚠️ Unaudited (bytecode match) |
-| Bridge | operational_periphery | base | 20 deployments: ethereum `0x609c69...af0c9e`; ethereum `0xa31433...a3bea9`; ethereum `0xbbbd1b...1de884`; ethereum `0xd5d6b2...5d6fc4`; optimism `0x97e5bf...50d5ab`; bsc `0xbbbd1b...1de884`; bsc `0xd5d6b2...5d6fc4`; unichain `0x782e91...05c598`; polygon `0x7775d6...d7d3e0`; polygon `0xbbbd1b...1de884`; polygon `0xd5d6b2...5d6fc4`; sonic `0x801217...19a116`; base [`0x001e3f...35def7`](./contracts/base-8453/0x001e3f136c2f804854581da55ad7660a2b35def7/); arbitrum `0x9ce344...92d189`; celo `0x80858f...c6ba0e`; celo `0xbbbd1b...1de884`; celo `0xd5d6b2...5d6fc4`; avalanche `0x9068e1...caeea9`; avalanche `0xbbbd1b...1de884`; aurora `0xbbbd1b...1de884` | ⚠️ Unaudited (bytecode match) |
+| Bridge | operational_periphery | base | 21 deployments: ethereum `0x609c69...af0c9e`; ethereum `0xa31433...a3bea9`; ethereum `0xbbbd1b...1de884`; ethereum `0xd5d6b2...5d6fc4`; optimism `0x97e5bf...50d5ab`; bsc `0x3c4fa6...58312f`; bsc `0xbbbd1b...1de884`; bsc `0xd5d6b2...5d6fc4`; unichain `0x782e91...05c598`; polygon `0x7775d6...d7d3e0`; polygon `0xbbbd1b...1de884`; polygon `0xd5d6b2...5d6fc4`; sonic `0x801217...19a116`; base [`0x001e3f...35def7`](./contracts/base-8453/0x001e3f136c2f804854581da55ad7660a2b35def7/); arbitrum `0x9ce344...92d189`; celo `0x80858f...c6ba0e`; celo `0xbbbd1b...1de884`; celo `0xd5d6b2...5d6fc4`; avalanche `0x9068e1...caeea9`; avalanche `0xbbbd1b...1de884`; aurora `0xbbbd1b...1de884` | ⚠️ Unaudited (bytecode match) |
 | FeeOracle | unknown | ethereum | 5 deployments: ethereum [`0xba6d8d...f2e1f6`](./contracts/ethereum-1/0xba6d8de08f13a3d22fcec54752812dd4dcf2e1f6/); bsc [`0xba6d8d...f2e1f6`](./contracts/bsc-56/0xba6d8de08f13a3d22fcec54752812dd4dcf2e1f6/); polygon [`0xba6d8d...f2e1f6`](./contracts/polygon-137/0xba6d8de08f13a3d22fcec54752812dd4dcf2e1f6/); celo [`0xba6d8d...f2e1f6`](./contracts/celo-42220/0xba6d8de08f13a3d22fcec54752812dd4dcf2e1f6/); avalanche [`0xba6d8d...f2e1f6`](./contracts/avalanche-43114/0xba6d8de08f13a3d22fcec54752812dd4dcf2e1f6/) | ⚠️ Unaudited (bytecode match) |
 | MultiSig | unknown | celo | 10 deployments: celo [`0x066f67...bd25f2`](./contracts/celo-42220/0x066f672c03347a24ee3f52d1f184f04f7abd25f2/); celo `0x120c00...49e892`; celo `0x65534a...043372`; celo `0x68e231...ee3903`; celo `0x72306f...72c33d`; celo `0xad52b8...14e7fc`; celo `0xb7feac...ff582a`; celo `0xbcb789...c3a567`; celo `0xc99d54...dd411e`; celo `0xed68f8...84aaf7` | ⚠️ Unaudited (bytecode match) |
 | Validator | unknown | polygon | 6 deployments: ethereum `0x937465...5bd74b`; bsc `0x937465...5bd74b`; polygon [`0x0fad0e...bf41b5`](./contracts/polygon-137/0x0fad0ed848a7a16526e8a7574e418b015dbf41b5/); polygon `0xa1f17b...889d0f`; celo `0x937465...5bd74b`; avalanche `0x937465...5bd74b` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (200)
+### ❓ Unverified (202)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -347,6 +350,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | avalanche | `0xda0a16...99eabf` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0xdcf579...ea40d2` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0xf216f2...7fd100` | ❓ Unverified |
+| UnnamedContract | unknown | linea | `0x39a421...60e2c4` | ❓ Unverified |
+| UnnamedContract | unknown | linea | `0xf3dd9d...99b907` | ❓ Unverified |
 | UnnamedContract | unknown | aurora | `0x788ba0...dcad4f` | ❓ Unverified |
 | UnnamedContract | unknown | aurora | `0x937465...5bd74b` | ❓ Unverified |
 | UnnamedContract | unknown | aurora | `0xba6d8d...f2e1f6` | ❓ Unverified |
@@ -368,79 +373,30 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [20221104-AckeeBlockchain.pdf](https://github.com/allbridge-public/neon-evm/blob/container/audit/20221104-AckeeBlockchain.pdf) | Ackee Blockchain | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [20221208-Halborn.pdf](https://github.com/allbridge-public/neon-evm/blob/container/audit/20221208-Halborn.pdf) | Halborn | Audit | 2022 | stale | Direct | n/a | 0 | n/a |
 | [20230607-Neodyme.pdf](https://github.com/allbridge-public/neon-evm/blob/container/audit/20230607-Neodyme.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DL audit link](https://hacken.io/audits/allbridge) | Hacken | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
+| [DL audit link](https://drive.google.com/file/d/1PV5MN6L5FGCLYEUnLa8D5LI4Ev5157EX/view) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DL audit link](https://www.coinfabrik.com/blog/allbridge-audit-report) | unknown | Audit | 2023-07 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| polygon | [`0x0394c4...090791`](./contracts/polygon-137/0x0394c4f17738a10096510832beab89a9dd090791/) | Pool | core_logic | $9,678,982.91 | Verified native implementation with $9,678,982.91 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x14743e...4103e7`](./contracts/polygon-137/0x14743e1c6f812154f7ecc980d890f0f5234103e7/) | Token | unknown | $6,401,612.94 | Verified native implementation with $6,401,612.94 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0xe8537a...ab4787`](./contracts/celo-42220/0xe8537a3d056da446677b9e9d6c5db704eaab4787/) | StableTokenV2 | token | $222,962.24 | Verified native implementation with $222,962.24 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x04429f...293346`](./contracts/polygon-137/0x04429fbb948bbd09327763214b45e505a5293346/) | WrappedToken | token | $77,316.70 | Verified native implementation with $77,316.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x939c9c...712801`](./contracts/celo-42220/0x939c9cefbce3aa3a212d424b5ba978ac1b712801/) | AddressLinkedList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x0e3e96...5a1552`](./contracts/celo-42220/0x0e3e96a0d64b59b46872432f47bed6a1825a1552/) | AddressSortedLinkedList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb1c9bc...2a81d2`](./contracts/ethereum-1/0xb1c9bc94acd2fae6aabf4ffae4429b93512a81d2/) | Ariadne | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x2496fd...8e9a3d`](./contracts/celo-42220/0x2496fda4b928e8cf799ac04ea79861ac828e9a3d/) | AttestationsProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x61a588...60be1b`](./contracts/polygon-137/0x61a58822d24534fdb1b035ac8fb85611ce60be1b/) | BatchTransfer | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x3058c4...c46672`](./contracts/celo-42220/0x3058c4197c56c9a9c92d3516f2d4bb8a76c46672/) | BlockchainParameters | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x001e3f...35def7`](./contracts/base-8453/0x001e3f136c2f804854581da55ad7660a2b35def7/) | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x08391e...7c1cd0`](./contracts/optimism-10/0x08391edf36f41f05d27a1e0fd7a29448417c1cd0/) | CctpBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x2efd9e...e86c03`](./contracts/celo-42220/0x2efd9e29cfbfaf32713fbe53fd9033217ee86c03/) | CeloUnreleasedTreasuryProxy | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x92f7cc...fb9bf4`](./contracts/ethereum-1/0x92f7cc43fcba972c4296d851cc31c33676fb9bf4/) | Distributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x71cac3...463fdd`](./contracts/celo-42220/0x71cac3b31c138f3327c6ca14f9a1c8d752463fdd/) | DowntimeSlasher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x1debb8...1febe2`](./contracts/polygon-137/0x1debb826578c6736898982d6c6b4b8511a1febe2/) | DucklingsV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x2e1380...f57977`](./contracts/polygon-137/0x2e13807a9b9577651f37322fc79ae786fff57977/) | DuckyFamilyV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x169c94...3009bc`](./contracts/celo-42220/0x169c946c9f70094b8ad74ee16477f27e713009bc/) | Election | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0xb50216...f223a3`](./contracts/celo-42220/0xb50216c8225b0802f0197cc8c7e567a6d5f223a3/) | EpochManagerEnablerProxy | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6e7285...1e7ef0`](./contracts/ethereum-1/0x6e7285c3e47c242e3ad62edd5d0f19886f1e7ef0/) | ERC20Lookup | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x9a470d...39906c`](./contracts/celo-42220/0x9a470d789bcd392ae4c8f22db8425b5ef139906c/) | Exchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x0d4a42...a2d112`](./contracts/celo-42220/0x0d4a42b2fc30afbf6b6e8f5ce49a659e38a2d112/) | ExchangeBRL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x32c2dc...b5dc8d`](./contracts/celo-42220/0x32c2dcb7730ed6fc1eac0444a668f38fd7b5dc8d/) | ExchangeEUR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x0ad5b1...d6aff2`](./contracts/celo-42220/0x0ad5b1d0c25ecf6266dd951403723b2687d6aff2/) | FederatedAttestations | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x15f344...2c6276`](./contracts/celo-42220/0x15f344b9e6c3cb6f0376a36a64928b13f62c6276/) | FeeCurrencyDirectory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x60f636...d210fa`](./contracts/celo-42220/0x60f6362550868fd1d6e92b2f680f5e02f4d210fa/) | FeeCurrencyDirectoryProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x558c20...fea36c`](./contracts/celo-42220/0x558c209b246d5f21cc32a11da29a1cdbdcfea36c/) | FeeHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xba6d8d...f2e1f6`](./contracts/ethereum-1/0xba6d8de08f13a3d22fcec54752812dd4dcf2e1f6/) | FeeOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x187b9b...1c8f80`](./contracts/ethereum-1/0x187b9ba6dc6df1c03c39afe6711c2216181c8f80/) | FixedAmountVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0bdf61...5b96e0`](./contracts/ethereum-1/0x0bdf6139f2841a7856ca154d851182c52f5b96e0/) | GasOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x074a48...3db55e`](./contracts/celo-42220/0x074a4810015d67bafac5fe522c70761f343db55e/) | Governance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x03f684...454a49`](./contracts/celo-42220/0x03f6842b82dd2c9276931a17dd23d73c16454a49/) | GrandaMento | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd9c2d3...84fb54`](./contracts/ethereum-1/0xd9c2d319cd7e6177336b0a9c93c21cb48d84fb54/) | HAPI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0xa86051...0d047c`](./contracts/celo-42220/0xa86051f29c45218b5f6cd121ebafb690660d047c/) | IntegerSortedLinkedList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xff3dfe...a87286`](./contracts/bsc-56/0xff3dfebdc111178297289003aabe7cee36a87286/) | LPStaker | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x4efa27...921a74`](./contracts/celo-42220/0x4efa274b7e33476c961065000d58ee09f7921a74/) | MentoFeeHandlerSeller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x203e87...9086da`](./contracts/ethereum-1/0x203e8785b4d4312c4152d0c42ba3fa8bd79086da/) | Messenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5ee318...c88f66`](./contracts/ethereum-1/0x5ee3188a3f8adee1d736edd4ae85000105c88f66/) | PEN | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0xbeff0c...63120d`](./contracts/celo-42220/0xbeff0ca03f5a9d4eb79057c81d2596265a63120d/) | PortfolioToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x38afc0...ebfba8`](./contracts/celo-42220/0x38afc0dc55415ae27b81c24b5a5fbfe433ebfba8/) | Proposals | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x38dd9f...181c9f`](./contracts/celo-42220/0x38dd9fa2409758fa0d73440ee18f8e0249181c9f/) | Proxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x221a13...e3bdab`](./contracts/celo-42220/0x221a13e96d5c0cecb17ffd8a4a458c47ece3bdab/) | Random | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x88f042...085110`](./contracts/bsc-56/0x88f042fdea1d94ccd7b848686f9f529552085110/) | Rewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x19cdf4...620505`](./contracts/celo-42220/0x19cdf4689d9ee3590fdbe75adefee375b4620505/) | ScoreManagerProxy | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x35a4f0...6f6ab5`](./contracts/celo-42220/0x35a4f0c8c0b48769f036b79f9d428bea286f6ab5/) | SortedOracles | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x18e6bf...495bcb`](./contracts/celo-42220/0x18e6bfdc909063f7445e410a5495264619495bcb/) | StableToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x5e7297...eddec8`](./contracts/celo-42220/0x5e72978225b5777298b28b7ea543bf0c5feddec8/) | StableTokenBRL | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x09933e...240bb3`](./contracts/celo-42220/0x09933e89986fea776c3be3556dbf9ba23c240bb3/) | StableTokenEUR | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0xd8763c...d6ca73`](./contracts/celo-42220/0xd8763cba276a3738e6de85b4b3bf5fded6d6ca73/) | StableTokenV3 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xee170d...8626f6`](./contracts/bsc-56/0xee170d3dc00f792e5116b42fe36628f4f28626f6/) | TwoWeeksNotice | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x2e3b47...e7c68d`](./contracts/celo-42220/0x2e3b47cf3163de47e852ff11d53a9ad8dfe7c68d/) | Validators | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 144 |
-| upstream | 13 |
-| standard_library | 6 |
-| needs_review | 119 |
+| native | 0 |
+| upstream | 1 |
+| standard_library | 0 |
+| needs_review | 286 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 8
+- Audits with zero matched contracts: 11
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -455,5 +411,8 @@ Zero-match audit list:
 - [9791] 20221104-AckeeBlockchain.pdf
 - [9792] 20221208-Halborn.pdf
 - [9793] 20230607-Neodyme.pdf
+- [12352] DL audit link
+- [12354] DL audit link
+- [12355] DL audit link
 
 Fork inheritance lineage and inherited audits are included when available.

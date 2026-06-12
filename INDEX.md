@@ -11,7 +11,7 @@
 | [abracadabra](./abracadabra/) | $8.1M | 0.0% | ? | dead | 5 | 2568 | 2026-05-31 |
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 3 | 43 | 2026-06-10 |
 | [acre](./acre/) | $3.0 | 0.5% | $3.0 | active | 4 | 220 | 2026-06-10 |
-| [across](./across/) | $28.1M | 0.0% | $28.1M | active | 11 | 142 | 2026-06-11 |
+| [across](./across/) | $28.1M | 26.2% | $9.2M | active | 11 | 147 | 2026-06-12 |
 | [acryptos](./acryptos/) | $5.2M | 25.0% | $253.0K | active | 7 | 311 | 2026-06-10 |
 | [aegis-markets](./aegis-markets/) | $2.3M | 0.0% | ? | active | 2 | 15 | 2026-06-10 |
 | [aegis](./aegis/) | $35.9M | 0.0% | ? | active | 0 | 12 | 2026-06-12 |
@@ -22,7 +22,7 @@
 | [aitech](./aitech/) | $4.0M | 0.0% | ? | active | 1 | 2 | 2026-06-10 |
 | [alchemix](./alchemix/) | $340.7M | 6.4% | $338.7M | active | 11 | 388 | 2026-06-10 |
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 15 | 58 | 2026-06-10 |
-| [allbridge](./allbridge/) | $19.3M | 0.0% | $19.3M | declining | 8 | 282 | 2026-06-10 |
+| [allbridge](./allbridge/) | $21.7M | 0.0% | $21.7M | declining | 11 | 287 | 2026-06-12 |
 | [alpaca-finance](./alpaca-finance/) | $11.5M | 57.4% | $11.2M | declining | 19 | 144 | 2026-06-10 |
 | [alphagrowth](./alphagrowth/) | $6.3M | 0.0% | $6.3M | active | 16 | 55 | 2026-06-11 |
 | [alphaping](./alphaping/) | $73.6M | 0.0% | $73.6M | active | 0 | 4 | 2026-06-12 |
@@ -256,7 +256,7 @@
 | [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 2 | 63 | 2026-06-11 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | active | 1 | 9 | 2026-06-11 |
 | [helix](./helix/) | $1.5M | 0.0% | ? | declining | 0 | 9 | 2026-06-10 |
-| [hemi-staking](./hemi-staking/) | $16.4M | 0.0% | $16.4M | active | 5 | 120 | 2026-06-11 |
+| [hemi-staking](./hemi-staking/) | $16.4M | 0.0% | $16.4M | active | 5 | 130 | 2026-06-12 |
 | [hemi](./hemi/) | $49.6K | 2.7% | $49.6K | unknown | 5 | 47 | 2026-05-25 |
 | [hemibtc](./hemibtc/) | $46.2K | 0.0% | $46.2K | active | 5 | 46 | 2026-06-11 |
 | [hera-finance](./hera-finance/) | $6.5M | 42.9% | ? | active | 3 | 28 | 2026-06-10 |
@@ -439,7 +439,7 @@
 | [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | active | 0 | 3 | 2026-06-11 |
 | [pact](./pact/) | $2.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [pangolin](./pangolin/) | $3.8M | 53.8% | ? | declining | 12 | 163 | 2026-06-11 |
-| [paradex](./paradex/) | $27.3M | 0.0% | ? | declining | 5 | 5 | 2026-06-11 |
+| [paradex](./paradex/) | $27.3M | 50.0% | ? | declining | 5 | 5 | 2026-06-12 |
 | [paragonsdao](./paragonsdao/) | $6.4M | 50.0% | ? | active | 7 | 2 | 2026-06-11 |
 | [parallel-protocol](./parallel-protocol/) | $3.6M | 3.8% | $3.0M | active | 5 | 38 | 2026-06-11 |
 | [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-06-11 |
@@ -492,6 +492,7 @@
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | active | 0 | 2 | 2026-06-11 |
 | [reserve-protocol](./reserve-protocol/) | $8.0M | 53.9% | $255.2K | declining | 27 | 329 | 2026-06-11 |
 | [reservoir-protocol](./reservoir-protocol/) | $2.1B | 0.0% | $2.1B | active | 0 | 278 | 2026-06-12 |
+| [resolv](./resolv/) | $50.5M | 3.1% | $50.5M | rugged | 1 | 80 | 2026-06-12 |
 | [resupply](./resupply/) | $3.2M | 2.4% | $3.2M | active | 8 | 41 | 2026-06-12 |
 | [revault](./revault/) | $2.5K | 45.0% | ? | declining | 1 | 75 | 2026-05-24 |
 | [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 12 | 84 | 2026-06-11 |

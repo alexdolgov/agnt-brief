@@ -1,0 +1,18 @@
+{
+  "address": "0x10f4d4ead6bcd4de7849898403d88528e3dfc872",
+  "chain_id": 1,
+  "contract_name": "ExternalRequestsManager",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "paris",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T16:23:12.030Z"
+}

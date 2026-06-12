@@ -5,7 +5,7 @@
 | Chain | optimism (10) |
 | Address | `0x4200000000000000000000000000000000000042` |
 | Role | token |
-| Origin | upstream |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (optimism [`0x4200000000000000000000000000000000000042`](../0x4200000000000000000000000000000000000042/)) |

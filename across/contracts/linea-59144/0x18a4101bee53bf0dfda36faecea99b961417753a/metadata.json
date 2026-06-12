@@ -1,0 +1,17 @@
+{
+  "address": "0x18a4101bee53bf0dfda36faecea99b961417753a",
+  "chain_id": 59144,
+  "contract_name": "CounterfactualBeacon",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T16:22:39.613Z"
+}

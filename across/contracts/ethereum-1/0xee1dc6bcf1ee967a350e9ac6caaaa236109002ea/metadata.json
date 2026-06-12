@@ -1,0 +1,18 @@
+{
+  "address": "0xee1dc6bcf1ee967a350e9ac6caaaa236109002ea",
+  "chain_id": 1,
+  "contract_name": "BondToken",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T16:22:38.794Z"
+}

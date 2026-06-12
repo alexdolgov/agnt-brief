@@ -5,10 +5,10 @@
 - Project: Hemi Staking (`hemi-staking`)
 - Website: [https://app.hemi.xyz/en/stake/dashboard/](https://app.hemi.xyz/en/stake/dashboard/)
 - Lifecycle: active (Tier 0, 92.5% below peak)
-- Generated: 2026-06-11T11:45:35.363Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
+- Generated: 2026-06-12T16:22:24.568Z
+- Pipeline run: v2-pipeline-2026-06-12-c7aee3-9d35
 - Chains: bsc, ethereum, optimism, swellchain
-- Contract surface: 120 unique implementations (207 raw deployments)
+- Contract surface: 130 unique implementations (220 raw deployments)
 - DeFi Llama TVL: $29,140,145.03
 - On-chain TVL (included contracts): $16,416,309.47
 - TVL by chain: Ethereum $16,416,017.69 | Optimism $291.78
@@ -23,17 +23,17 @@ The Hemi Staking family relies on the L1 and L2 Hemi Contracts for cross-chain m
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/42 (0.0%)
-- Verified + Unaudited implementations: 42
+- Verified implementations audited: 0/52 (0.0%)
+- Verified + Unaudited implementations: 52
 - Verified by bytecode match: 0
 - Unverified implementations: 78
-- Unique implementations: 120
-- Raw deployments: 207
+- Unique implementations: 130
+- Raw deployments: 220
 - Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $16,416,309.47
 - Latest audit: 2025-10 (fresh)
-- Staleness: 1 fresh, 1 aging, 0 stale, 3 unknown
+- Staleness: 2 fresh, 3 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -46,18 +46,20 @@ The Hemi Staking family relies on the L1 and L2 Hemi Contracts for cross-chain m
 
 - None
 
-### ⚠️ Verified + Unaudited (42)
+### ⚠️ Verified + Unaudited (52)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | DebtTokenWithLz | token | ethereum | 4 deployments: ethereum [`0x195885...f0d0d2`](./contracts/ethereum-1/0x1958853a8be062dc4f401750eb233f5850f0d0d2/); ethereum `0xa32313...9d6c8d`; ethereum `0xb247bc...2b5a9d`; ethereum `0xb4818b...2766cb` | ⚠️ Unaudited |
 | StakingVault | core_logic | ethereum | 4 deployments: ethereum [`0xb4d479...8e93ec`](./contracts/ethereum-1/0xb4d4793a1cd57b6ecebadf6fcbe5aed03e8e93ec/); ethereum `0xccfd19...029825`; ethereum `0xcdace5...2f4f9b`; ethereum `0xce91e9...0e8f7e` | ⚠️ Unaudited |
-| RewardVault | core_logic | ethereum | 3 deployments: ethereum [`0x2863e3...542c02`](./contracts/ethereum-1/0x2863e3d0f29e2eec6adefc0df0d3171dad542c02/); ethereum `0x56cabe...acf261`; ethereum `0x84c593...9dee22` | ⚠️ Unaudited |
+| RewardVault | core_logic | ethereum | 6 deployments: ethereum [`0x2863e3...542c02`](./contracts/ethereum-1/0x2863e3d0f29e2eec6adefc0df0d3171dad542c02/); ethereum `0x56cabe...acf261`; ethereum `0x583f89...18905d`; ethereum `0x5f88f7...9b935a`; ethereum `0x84c593...9dee22`; ethereum `0xd85191...6ac710` | ⚠️ Unaudited |
 | GovernanceToken | token | optimism | [`0x420000...000042`](./contracts/optimism-10/0x4200000000000000000000000000000000000042/) | ⚠️ Unaudited |
 | GasPool | core_logic | ethereum | 2 deployments: ethereum [`0x627524...0400c9`](./contracts/ethereum-1/0x627524aec280300dfa58ddb30709a0f3810400c9/); ethereum `0xfe851a...1be184` | ⚠️ Unaudited |
 | AddressManager | governance | ethereum | [`0xa5f377...9f5e43`](./contracts/ethereum-1/0xa5f37791378c55941a52b4dcb70be4d8d09f5e43/) | ⚠️ Unaudited |
+| AnchorStateRegistry | registry | ethereum | [`0xf44007...f54677`](./contracts/ethereum-1/0xf44007eaf2fafdd8ba8d3551f23cd2b879f54677/) | ⚠️ Unaudited |
 | BinanceHemiOFT | unknown | bsc | 4 deployments: bsc [`0x5ffd0e...5afc5b`](./contracts/bsc-56/0x5ffd0eadc186af9512542d0d5e5eafc65d5afc5b/); bsc `0xb8dbff...a2c3c3`; bsc `0xd275f9...42506e`; bsc `0xfc5538...e91575` | ⚠️ Unaudited |
 | CoreFacet | unknown | ethereum | 2 deployments: ethereum [`0x90b9e5...a0014f`](./contracts/ethereum-1/0x90b9e5de5dbe8d5c882aac8c097fd5a235a0014f/); ethereum `0xe16e1d...d52301` | ⚠️ Unaudited |
+| DelayedWETH | token | ethereum | [`0xc56273...a575a3`](./contracts/ethereum-1/0xc5627348dbc9179cfb5a24c8199635770ea575a3/) | ⚠️ Unaudited |
 | EnzoBTC | unknown | ethereum | [`0x6a9a65...fbce4a`](./contracts/ethereum-1/0x6a9a65b84843f5fd4ac9a0471c4fc11afffbce4a/) | ⚠️ Unaudited |
 | EnzoBTCOFTAdapter | adapter | ethereum | [`0x99de52...7d63d5`](./contracts/ethereum-1/0x99de5239a8ad65ed86db3d36e0fd9f9cba7d63d5/) | ⚠️ Unaudited |
 | EnzoNetwork | unknown | ethereum | 4 deployments: ethereum [`0x7efb35...c5c567`](./contracts/ethereum-1/0x7efb3515d9ec4537fafca635a1de7da7a5c5c567/); ethereum `0x8dd5ac...8d18c3`; ethereum `0xdc2156...950068`; ethereum `0xe8ca7c...43fd71` | ⚠️ Unaudited |
@@ -68,8 +70,10 @@ The Hemi Staking family relies on the L1 and L2 Hemi Contracts for cross-chain m
 | HemiLock | unknown | bsc | 4 deployments: bsc [`0x0795a3...ff1026`](./contracts/bsc-56/0x0795a3c4898d823946f953bd1234c0e7b7ff1026/); bsc `0x7070fa...fb89f9`; bsc `0x86bb2b...94046b`; bsc `0xfbe1ba...6eae8b` | ⚠️ Unaudited |
 | Initializer | unknown | ethereum | 2 deployments: ethereum [`0x03d9c4...676872`](./contracts/ethereum-1/0x03d9c4e4bc5d3678a9076cac50db0251d8676872/); ethereum `0xfec7c4...3d8d9c` | ⚠️ Unaudited |
 | L1CrossDomainMessenger | unknown | ethereum | [`0xf005df...6fb050`](./contracts/ethereum-1/0xf005dfb08377fad44588af68d0884d272a6fb050/) | ⚠️ Unaudited |
+| L1ERC721Bridge | operational_periphery | ethereum | [`0xa44633...6bede0`](./contracts/ethereum-1/0xa446331bd28cbe0186a983a27c528f566b6bede0/) | ⚠️ Unaudited |
 | L1StandardBridge | bridge_template | ethereum | [`0x5eaa10...9f191e`](./contracts/ethereum-1/0x5eaa10f99e7e6d177ef9f74e519e319aa49f191e/) | ⚠️ Unaudited |
 | L2ERC721Bridge | operational_periphery | optimism | [`0x5a7749...aef23d`](./contracts/optimism-10/0x5a7749f83b81b301cab5f48eb8516b986daef23d/) | ⚠️ Unaudited |
+| L2OutputOracle | operational_periphery | ethereum | [`0x6daf3a...9c0d51`](./contracts/ethereum-1/0x6daf3a3497d8abdfe12915add9829f83a79c0d51/) | ⚠️ Unaudited |
 | LiquidationFacet | unknown | ethereum | 2 deployments: ethereum [`0x38e2a4...852695`](./contracts/ethereum-1/0x38e2a41ab14b382e0188c8368937ee392e852695/); ethereum `0xde8714...4fe7b8` | ⚠️ Unaudited |
 | MintSecurity | unknown | ethereum | 2 deployments: ethereum [`0x316c1b...2ab302`](./contracts/ethereum-1/0x316c1b6b0c7051a10073abf0d06f9cc5ae2ab302/); ethereum `0x47c4ac...620a1c` | ⚠️ Unaudited |
 | MintStrategy | core_logic | ethereum | 2 deployments: ethereum [`0x81d7da...6b2c59`](./contracts/ethereum-1/0x81d7dab8b95085034d9ce90958038251726b2c59/); ethereum `0xb3cf78...3d02ab` | ⚠️ Unaudited |
@@ -79,14 +83,20 @@ The Hemi Staking family relies on the L1 and L2 Hemi Contracts for cross-chain m
 | MultiCollateralHintHelpers | periphery | ethereum | 2 deployments: ethereum [`0x90d3b9...b9a9a2`](./contracts/ethereum-1/0x90d3b9982c2fbc9ebb583e9906ec4e3449b9a9a2/); ethereum `0xca5ded...efe8f2` | ⚠️ Unaudited |
 | MultiTroveGetter | unknown | ethereum | 2 deployments: ethereum [`0x3e83fd...d385ec`](./contracts/ethereum-1/0x3e83fd30fb9df3cdceb07a834e890dc287d385ec/); ethereum `0xd6a233...c41d93` | ⚠️ Unaudited |
 | OFT | unknown | bsc | 6 deployments: bsc [`0x10061d...7b180c`](./contracts/bsc-56/0x10061d0593441ff74536158592e1be3f4c7b180c/); bsc `0x37d8c0...74d931`; bsc `0x64b5bb...609373`; bsc `0x707c24...412075`; bsc `0xa30e1a...076f30`; bsc `0xc141b6...a96515` | ⚠️ Unaudited |
+| OptimismMintableERC20Factory | registry | ethereum | [`0x0262fe...09342c`](./contracts/ethereum-1/0x0262fedc4a98f94ddb90cef0e058644d8409342c/) | ⚠️ Unaudited |
 | OptimismMintableERC721Factory | registry | optimism | [`0x69d67c...6e5ef0`](./contracts/optimism-10/0x69d67c1caa8d0717dffa6d2e5b1f7f19926e5ef0/) | ⚠️ Unaudited |
+| OptimismPortal | unknown | ethereum | [`0x39a000...3a4d7e`](./contracts/ethereum-1/0x39a0005415256b9863afe2d55edcf75ecc3a4d7e/) | ⚠️ Unaudited |
 | PreimageOracle | operational_periphery | ethereum | [`0x613f36...24ed20`](./contracts/ethereum-1/0x613f36be58ba712b37474f4b82484d680d24ed20/) | ⚠️ Unaudited |
 | PriceFeedAggregatorFacet | operational_periphery | ethereum | 2 deployments: ethereum [`0xef5e87...e05c1e`](./contracts/ethereum-1/0xef5e87476c4ac90a0973a2bf114ac770c4e05c1e/); ethereum `0xefaa8b...026860` | ⚠️ Unaudited |
+| ProtocolVersions | unknown | ethereum | [`0x13cb1b...f3ce48`](./contracts/ethereum-1/0x13cb1b6e69ec8ff6a5c8823d1e8dc78cccf3ce48/) | ⚠️ Unaudited |
+| Proxy | proxy | ethereum | [`0x5442d0...2562c3`](./contracts/ethereum-1/0x5442d0ddb33b396879d2d016a9ad09ad122562c3/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | [`0xbe81a9...fefb30`](./contracts/ethereum-1/0xbe81a9d662422f667f634f3fc301e2e360fefb30/) | ⚠️ Unaudited |
 | SatoshiXApp | unknown | ethereum | 2 deployments: ethereum [`0x07bbc5...0aa4ec`](./contracts/ethereum-1/0x07bbc5a83b83a5c440d1caedbf1081426d0aa4ec/); ethereum `0xb8374e...5b67e6` | ⚠️ Unaudited |
 | SmartVault | core_logic | ethereum | 4 deployments: ethereum [`0x306e4d...1c86a8`](./contracts/ethereum-1/0x306e4d77e31db86f7f01463a7da3bf10b81c86a8/); ethereum `0x980963...56ba45`; ethereum `0x980fe4...ce4665`; ethereum `0xcc128e...58076d` | ⚠️ Unaudited |
 | SmartVaultManager | core_logic | ethereum | 2 deployments: ethereum [`0x355961...4aed86`](./contracts/ethereum-1/0x355961ace96134fe7ba72b24b24559e7ca4aed86/); ethereum `0xf3d691...0c3e20` | ⚠️ Unaudited |
 | StabilityPoolFacet | core_logic | ethereum | 2 deployments: ethereum [`0x23e727...08ccff`](./contracts/ethereum-1/0x23e727e4919eb9f11200197014ab96d03008ccff/); ethereum `0x9a3c72...811dd3` | ⚠️ Unaudited |
+| SuperchainConfig | governance | ethereum | [`0x15144f...8d2ab8`](./contracts/ethereum-1/0x15144fb8621cb3c4ed3db223c173ffb58c8d2ab8/) | ⚠️ Unaudited |
+| SystemConfig | governance | ethereum | [`0x5ae686...5303c3`](./contracts/ethereum-1/0x5ae68684d9179a8053883f1df599ea7fb35303c3/) | ⚠️ Unaudited |
 | TokenAuthority | governance | ethereum | [`0x2989c3...0a4663`](./contracts/ethereum-1/0x2989c38fb3cfcc0eeaf384ee5f1dc7dc520a4663/) | ⚠️ Unaudited |
 | TransferStrategy | core_logic | ethereum | [`0x26cfab...52bb9e`](./contracts/ethereum-1/0x26cfabb6548e744219fa4b8923efd51f7352bb9e/) | ⚠️ Unaudited |
 | TroveHelper | periphery | ethereum | 2 deployments: ethereum [`0x00072c...f9428f`](./contracts/ethereum-1/0x00072c48501f53cb2bb9efcdd7a0ee569cf9428f/); ethereum `0x205631...44ce59` | ⚠️ Unaudited |
@@ -196,50 +206,24 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [Audit_Report_HEMI-PRO_FINAL_22.pdf](https://github.com/hemilabs/audit-reports/blob/master/Bitcoin_Tunnel/Audit_Report_HEMI-PRO_FINAL_22.pdf) | HEMI-PRO | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
 | [Quantstamp - BTC Tunnel - FinalReport (1).pdf](https://github.com/hemilabs/audit-reports/blob/master/Bitcoin_Tunnel/Quantstamp%20-%20BTC%20Tunnel%20-%20FinalReport%20(1).pdf) | Quantstamp | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
-| [Audit_Report_HEMI-TOK_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/Audit_Report_HEMI-TOK_FINAL_21.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [HemiToken - Final Report.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/HemiToken%20-%20Final%20Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Audit_Report_HEMI-VOT_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/veHEMI/Audit_Report_HEMI-VOT_FINAL_21.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Audit_Report_HEMI-TOK_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/Audit_Report_HEMI-TOK_FINAL_21.pdf) | unknown | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
+| [HemiToken - Final Report.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/HemiToken%20-%20Final%20Report.pdf) | unknown | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
+| [Audit_Report_HEMI-VOT_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/veHEMI/Audit_Report_HEMI-VOT_FINAL_21.pdf) | unknown | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0xb4d479...8e93ec`](./contracts/ethereum-1/0xb4d4793a1cd57b6ecebadf6fcbe5aed03e8e93ec/) | StakingVault | core_logic | $7,966,536.66 | Verified native implementation with $7,966,536.66 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x627524...0400c9`](./contracts/ethereum-1/0x627524aec280300dfa58ddb30709a0f3810400c9/) | GasPool | core_logic | $99.43 | Verified native implementation with $99.43 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa5f377...9f5e43`](./contracts/ethereum-1/0xa5f37791378c55941a52b4dcb70be4d8d09f5e43/) | AddressManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x5ffd0e...5afc5b`](./contracts/bsc-56/0x5ffd0eadc186af9512542d0d5e5eafc65d5afc5b/) | BinanceHemiOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x90b9e5...a0014f`](./contracts/ethereum-1/0x90b9e5de5dbe8d5c882aac8c097fd5a235a0014f/) | CoreFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6a9a65...fbce4a`](./contracts/ethereum-1/0x6a9a65b84843f5fd4ac9a0471c4fc11afffbce4a/) | EnzoBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1c2253...7d28e0`](./contracts/ethereum-1/0x1c22531aa9747d76fff8f0a43b37954ca67d28e0/) | ERC20MintablePauseableUpgradeable | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x0795a3...ff1026`](./contracts/bsc-56/0x0795a3c4898d823946f953bd1234c0e7b7ff1026/) | HemiLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x03d9c4...676872`](./contracts/ethereum-1/0x03d9c4e4bc5d3678a9076cac50db0251d8676872/) | Initializer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf005df...6fb050`](./contracts/ethereum-1/0xf005dfb08377fad44588af68d0884d272a6fb050/) | L1CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5eaa10...9f191e`](./contracts/ethereum-1/0x5eaa10f99e7e6d177ef9f74e519e319aa49f191e/) | L1StandardBridge | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x38e2a4...852695`](./contracts/ethereum-1/0x38e2a41ab14b382e0188c8368937ee392e852695/) | LiquidationFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x81d7da...6b2c59`](./contracts/ethereum-1/0x81d7dab8b95085034d9ce90958038251726b2c59/) | MintStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x04db2d...cec72c`](./contracts/bsc-56/0x04db2da16318e616d28f0da7aa59eeb12acec72c/) | MockDstOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x32a21e...169a23`](./contracts/bsc-56/0x32a21ec8ee93971d4b4093c0895fd841c7169a23/) | MockLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x90d3b9...b9a9a2`](./contracts/ethereum-1/0x90d3b9982c2fbc9ebb583e9906ec4e3449b9a9a2/) | MultiCollateralHintHelpers | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3e83fd...d385ec`](./contracts/ethereum-1/0x3e83fd30fb9df3cdceb07a834e890dc287d385ec/) | MultiTroveGetter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x10061d...7b180c`](./contracts/bsc-56/0x10061d0593441ff74536158592e1be3f4c7b180c/) | OFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xef5e87...e05c1e`](./contracts/ethereum-1/0xef5e87476c4ac90a0973a2bf114ac770c4e05c1e/) | PriceFeedAggregatorFacet | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x07bbc5...0aa4ec`](./contracts/ethereum-1/0x07bbc5a83b83a5c440d1caedbf1081426d0aa4ec/) | SatoshiXApp | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x23e727...08ccff`](./contracts/ethereum-1/0x23e727e4919eb9f11200197014ab96d03008ccff/) | StabilityPoolFacet | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2989c3...0a4663`](./contracts/ethereum-1/0x2989c38fb3cfcc0eeaf384ee5f1dc7dc520a4663/) | TokenAuthority | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x26cfab...52bb9e`](./contracts/ethereum-1/0x26cfabb6548e744219fa4b8923efd51f7352bb9e/) | TransferStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x00072c...f9428f`](./contracts/ethereum-1/0x00072c48501f53cb2bb9efcdd7a0ee569cf9428f/) | TroveHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8ab3cf...a34985`](./contracts/ethereum-1/0x8ab3cf1d5a8b8ec661eff615f2882c9938a34985/) | TroveManagerGetters | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 51 |
-| upstream | 5 |
-| standard_library | 10 |
-| needs_review | 54 |
+| native | 0 |
+| upstream | 0 |
+| standard_library | 0 |
+| needs_review | 130 |
 
 ## Scope Matching Notes
 

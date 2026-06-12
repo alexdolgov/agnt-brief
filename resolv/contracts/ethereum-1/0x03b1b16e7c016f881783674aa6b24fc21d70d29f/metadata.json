@@ -1,0 +1,18 @@
+{
+  "address": "0x03b1b16e7c016f881783674aa6b24fc21d70d29f",
+  "chain_id": 1,
+  "contract_name": "FunctionsClientUpgradeHelper",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": "BSD-2-Clause, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 47,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T16:23:11.352Z"
+}

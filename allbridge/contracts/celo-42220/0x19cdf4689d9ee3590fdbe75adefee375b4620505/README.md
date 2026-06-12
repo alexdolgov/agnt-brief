@@ -5,7 +5,7 @@
 | Chain | celo (42220) |
 | Address | `0x19cdf4689d9ee3590fdbe75adefee375b4620505` |
 | Role | governance |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (celo [`0x19cdf4689d9ee3590fdbe75adefee375b4620505`](../0x19cdf4689d9ee3590fdbe75adefee375b4620505/)) |

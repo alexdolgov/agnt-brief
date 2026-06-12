@@ -231,7 +231,7 @@
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 1 | 2026-06-10 |
 | [gimo](./gimo/) | $8.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 0 | 16 | 2026-06-10 |
-| [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 0 | 6 | 2026-06-10 |
+| [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 0 | 6 | 2026-06-12 |
 | [gnosis-protocol-v1](./gnosis-protocol-v1/) | $94.4M | 0.0% | $94.4M | declining | 0 | 110 | 2026-06-10 |
 | [goldfinger](./goldfinger/) | $0.0 | 0.0% | ? | active | 8 | 5 | 2026-06-11 |
 | [goldstation](./goldstation/) | $2.2M | 0.0% | ? | active | 3 | 5 | 2026-06-10 |
@@ -349,7 +349,7 @@
 | [mangrove](./mangrove/) | $4.3M | 22.0% | ? | active | 6 | 68 | 2026-06-11 |
 | [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 0 | 5 | 2026-06-11 |
 | [manta-atlantic-stake](./manta-atlantic-stake/) | $5.4M | 0.0% | ? | sunsetting | 0 | 109 | 2026-06-11 |
-| [manta-cedefi](./manta-cedefi/) | $26.7M | 0.0% | ? | unknown | 0 | 17 | 2026-06-11 |
+| [manta-cedefi](./manta-cedefi/) | $26.5M | 0.0% | ? | unknown | 0 | 17 | 2026-06-12 |
 | [manta-pacific](./manta-pacific/) | $24.6M | 0.0% | ? | active | 0 | 3 | 2026-06-11 |
 | [mantle-restaking](./mantle-restaking/) | $79.7M | 0.0% | ? | active | 13 | 8 | 2026-06-11 |
 | [mantra-dao](./mantra-dao/) | $611.0M | 0.0% | $611.0M | declining | 1 | 195 | 2026-06-11 |
@@ -480,7 +480,7 @@
 | [puzzleswaporg](./puzzleswaporg/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [qidao](./qidao/) | $2.6M | 0.0% | ? | declining | 1 | 298 | 2026-06-11 |
 | [radiant](./radiant/) | $1.1M | 31.6% | $515.0K | dead | 94 | 390 | 2026-05-26 |
-| [rain](./rain/) | $9.2M | 0.0% | ? | active | 1 | 28 | 2026-06-11 |
+| [rain](./rain/) | $26.1M | 0.0% | ? | active | 3 | 29 | 2026-06-12 |
 | [rainbow-bridge](./rainbow-bridge/) | $2.1M | 0.0% | ? | declining | 0 | 2 | 2026-06-11 |
 | [rank-trading](./rank-trading/) | $1.2M | 30.0% | ? | active | 2 | 13 | 2026-06-11 |
 | [rari-capital](./rari-capital/) | $321.4M | 0.0% | $321.4M | dead | 1 | 253 | 2026-05-24 |
@@ -677,7 +677,7 @@
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-06-11 |
 | [volta-club](./volta-club/) | $976.2M | 0.0% | $976.2M | unknown | 0 | 316 | 2026-06-11 |
 | [wagmi](./wagmi/) | $1.3M | 0.0% | ? | declining | 10 | 334 | 2026-06-11 |
-| [wan-bridge](./wan-bridge/) | $4.6K | 0.0% | $4.6K | active | 3 | 129 | 2026-06-11 |
+| [wan-bridge](./wan-bridge/) | $4.6K | 0.0% | $4.6K | active | 3 | 135 | 2026-06-12 |
 | [wanswap-dex](./wanswap-dex/) | $1.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | declining | 8 | 83 | 2026-06-11 |
 | [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | declining | 0 | 5 | 2026-06-11 |

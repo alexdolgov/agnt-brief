@@ -5,11 +5,11 @@
 - Project: GLIF (`glif`)
 - Website: [https://glif.io](https://glif.io)
 - Lifecycle: active (Tier 0, 90% below peak)
-- Generated: 2026-06-10T23:33:58.288Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-12T12:08:34.160Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-fc52
 - Chains: base
 - Contract surface: 6 unique implementations (13 raw deployments)
-- DeFi Llama TVL: $33,718,896.73
+- DeFi Llama TVL: $25,413,698.24
 - On-chain TVL (included contracts): $726,983.69
 - TVL by chain: Base $726,983.69
 
@@ -84,21 +84,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| base | [`0x530a0c...5edceb`](./contracts/base-8453/0x530a0cdd4e5f24a5be77587146a05056c35edceb/) | PoolV2 | core_logic | $726,983.69 | Verified native implementation with $726,983.69 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x4a7c37...e53746`](./contracts/base-8453/0x4a7c3792995c9f6e0a3fb8d01ecd633c53e53746/) | ERC20Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x24d242...4ad082`](./contracts/base-8453/0x24d242e7e7c8bf7f022204d94aaf49c76a4ad082/) | Periphery | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xed236d...024cf0`](./contracts/base-8453/0xed236d2f99346a17555f4161b2b099be80024cf0/) | Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 0 |
 | upstream | 0 |
-| standard_library | 2 |
-| needs_review | 0 |
+| standard_library | 0 |
+| needs_review | 6 |
 
 ## Scope Matching Notes
 

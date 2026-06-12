@@ -5,7 +5,7 @@
 | Chain | base (8453) |
 | Address | `0x35e1371b87b742a99ab863d3cecf04e73ef1ecff` |
 | Role | periphery |
-| Origin | standard_library |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (base [`0x35e1371b87b742a99ab863d3cecf04e73ef1ecff`](../0x35e1371b87b742a99ab863d3cecf04e73ef1ecff/)) |

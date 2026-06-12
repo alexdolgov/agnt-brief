@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "glif",
-  "generated_at": "2026-06-10T23:33:58.288Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-12T12:08:34.160Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-fc52",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "glif",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 33718896.72937,
+    "dl_tvl_usd": 25413698.23584,
     "tvl_usd": 726983.6948869135,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -78,7 +78,7 @@
       "address": "0x530a0cdd4e5f24a5be77587146a05056c35edceb",
       "name": "PoolV2",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "GLIF",
       "tvl_usd": 726983.6948869135,
@@ -118,7 +118,7 @@
       "address": "0x4a7c3792995c9f6e0a3fb8d01ecd633c53e53746",
       "name": "ERC20Token",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -150,7 +150,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 8453,
@@ -158,7 +158,7 @@
       "address": "0x24d242e7e7c8bf7f022204d94aaf49c76a4ad082",
       "name": "Periphery",
       "role": "periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -199,7 +199,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 8453,
@@ -207,8 +207,8 @@
       "address": "0x35e1371b87b742a99ab863d3cecf04e73ef1ecff",
       "name": "PeripheryV2",
       "role": "periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -230,7 +230,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 8453,
@@ -238,8 +238,8 @@
       "address": "0x2223eff8c8acaac86cca206a10e707b2e9830bd8",
       "name": "PeripheryV3",
       "role": "periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -288,7 +288,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 8453,
@@ -296,7 +296,7 @@
       "address": "0xed236d2f99346a17555f4161b2b099be80024cf0",
       "name": "Pool",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -319,58 +319,17 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x530a0cdd4e5f24a5be77587146a05056c35edceb",
-      "name": "PoolV2",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 726983.6948869135,
-      "risk_note": "Verified native implementation with $726,983.69 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x4a7c3792995c9f6e0a3fb8d01ecd633c53e53746",
-      "name": "ERC20Token",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x24d242e7e7c8bf7f022204d94aaf49c76a4ad082",
-      "name": "Periphery",
-      "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xed236d2f99346a17555f4161b2b099be80024cf0",
-      "name": "Pool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 4,
+    "native": 0,
     "upstream": 0,
-    "standard_library": 2,
-    "needs_review": 0
+    "standard_library": 0,
+    "needs_review": 6
   },
   "scope_matching_notes": {
     "match_method_counts": {},

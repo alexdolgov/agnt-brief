@@ -5,7 +5,7 @@
 | Chain | manta (169) |
 | Address | `0x1860f0eabc4e4d4955f88dacd1e01ea9a047647e` |
 | Role | token |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (manta [`0x1860f0eabc4e4d4955f88dacd1e01ea9a047647e`](../0x1860f0eabc4e4d4955f88dacd1e01ea9a047647e/)) |

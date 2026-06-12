@@ -5,7 +5,7 @@
 | Chain | manta (169) |
 | Address | `0x97f62d9b3251d8013f0bef0d0eafeba25557a957` |
 | Role | core_logic |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 2 (manta [`0x97f62d9b3251d8013f0bef0d0eafeba25557a957`](../0x97f62d9b3251d8013f0bef0d0eafeba25557a957/); manta `0xb82a6f1f16077ca92b6168b3d8d883e7f9ec41b2`) |

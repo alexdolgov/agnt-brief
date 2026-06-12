@@ -5,11 +5,11 @@
 - Project: Wan Bridge (`wan-bridge`)
 - Website: [https://bridge.wanchain.org](https://bridge.wanchain.org)
 - Lifecycle: active (Tier 0, 38% below peak)
-- Generated: 2026-06-11T04:04:31.322Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
-- Chains: arbitrum, avalanche, base, blast, celo, ethereum, fantom, linea, metis, moonbeam, moonriver, optimism, polygon, polygon-zkevm
-- Contract surface: 129 unique implementations (338 raw deployments)
-- DeFi Llama TVL: $26,052,327.62
+- Generated: 2026-06-12T12:10:45.584Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-fc52
+- Chains: arbitrum, avalanche, base, blast, bsc, celo, ethereum, fantom, linea, metis, moonbeam, moonriver, opbnb, optimism, polygon, polygon-zkevm, zksync-era
+- Contract surface: 135 unique implementations (354 raw deployments)
+- DeFi Llama TVL: $24,281,486.03
 - On-chain TVL (included contracts): $4,597.48
 - TVL by chain: Base $3,871.21 | Avalanche $676.35 | Moonbeam $49.92
 
@@ -23,12 +23,12 @@ The Wan Bridge family relies on CrossProxy and CrossDelegateV4 contracts to mana
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/48 (0.0%)
-- Verified + Unaudited implementations: 44
+- Verified implementations audited: 0/53 (0.0%)
+- Verified + Unaudited implementations: 49
 - Verified by bytecode match: 4
-- Unverified implementations: 81
-- Unique implementations: 129
-- Raw deployments: 338
+- Unverified implementations: 82
+- Unique implementations: 135
+- Raw deployments: 354
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $4,597.48
@@ -46,11 +46,11 @@ The Wan Bridge family relies on CrossProxy and CrossDelegateV4 contracts to mana
 
 - None
 
-### ⚠️ Verified + Unaudited (44)
+### ⚠️ Verified + Unaudited (49)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| WrappedToken | token | base | 12 deployments: base [`0x05e030...010282`](./contracts/base-8453/0x05e0302e690632b33b831c61a847f159ae010282/); base `0x1e7e46...b4a625`; base `0x3bb870...85e3ee`; base `0x4b1690...0fc95e`; base `0x72ccf6...9178ae`; base `0x73d923...62728c`; base `0x7e5fe1...a35aac`; base `0xb1f19e...325b4d`; base `0xb30778...bb2546`; base `0xc5cd7e...3810c2`; base `0xd7466f...a34c69`; base `0xe0cf5a...3a5e01` | ⚠️ Unaudited |
+| WrappedToken | token | base | 18 deployments: polygon `0x4d1496...c15588`; polygon `0x599b4d...10c016`; polygon `0x6dc2fc...17f3b6`; polygon `0x789acf...77d1a4`; polygon `0xa07c87...3f7113`; polygon `0xa3f9e7...1a6d89`; base [`0x05e030...010282`](./contracts/base-8453/0x05e0302e690632b33b831c61a847f159ae010282/); base `0x1e7e46...b4a625`; base `0x3bb870...85e3ee`; base `0x4b1690...0fc95e`; base `0x72ccf6...9178ae`; base `0x73d923...62728c`; base `0x7e5fe1...a35aac`; base `0xb1f19e...325b4d`; base `0xb30778...bb2546`; base `0xc5cd7e...3810c2`; base `0xd7466f...a34c69`; base `0xe0cf5a...3a5e01` | ⚠️ Unaudited |
 | MappingTokenV2 | token | moonriver | 29 deployments: moonbeam `0x283ad8...812d09`; moonbeam `0x30950e...bbbc27`; moonbeam `0x455feb...878d90`; moonbeam `0x533114...c89ef4`; moonbeam `0x5f0061...d52776`; moonbeam `0x935ad1...3a93bb`; moonbeam `0xb43645...7f2c36`; moonbeam `0xcd6f47...b2dedd`; moonriver [`0x147dba...57446d`](./contracts/moonriver-1285/0x147dbae284bbd624b7b5a98dc862e21e8857446d/); moonriver `0x15b9ca...b3d445`; moonriver `0x41562a...36b09f`; moonriver `0x53f14c...6925ae`; moonriver `0x576fde...af1111`; moonriver `0x748134...4bdeb3`; moonriver `0x78f811...2897c3`; moonriver `0x9d5bc9...bba2fe`; moonriver `0xa4dd0b...f27862`; moonriver `0xa4fc4a...406cac`; moonriver `0xb668cd...b32804`; moonriver `0xbef008...6e958f`; moonriver `0xc005a7...304993`; moonriver `0xd924f1...6039de`; moonriver `0xdd7f2b...374ae7`; moonriver `0xe936ca...84cda7`; moonriver `0xffef26...b20613`; avalanche `0x8d9dcc...eb70b6`; avalanche `0x9e529b...1448e5`; avalanche `0xd38bfd...21fff9`; avalanche `0xea6887...5cddef` | ⚠️ Unaudited |
 | ApeRewards | unknown | arbitrum | [`0xb970e2...e46655`](./contracts/arbitrum-42161/0xb970e280f9ddaa3349ab9f3ecf778970cde46655/) | ⚠️ Unaudited |
 | ARBIS | unknown | arbitrum | [`0x9f20de...b03461`](./contracts/arbitrum-42161/0x9f20de1fc9b161b34089cbeae888168b44b03461/) | ⚠️ Unaudited |
@@ -59,8 +59,9 @@ The Wan Bridge family relies on CrossProxy and CrossDelegateV4 contracts to mana
 | CarbonRewards | unknown | arbitrum | [`0x2c5058...d49f45`](./contracts/arbitrum-42161/0x2c5058325373d02dfd6c08e48d91fcaf8fd49f45/) | ⚠️ Unaudited |
 | CommonProxy | unknown | polygon | [`0x2055ae...f58a3a`](./contracts/polygon-137/0x2055ae7250f814995ab41499ba1963f2c2f58a3a/) | ⚠️ Unaudited |
 | CrossAdminManager | governance | optimism | [`0xe1efc9...cbd269`](./contracts/optimism-10/0xe1efc9336d6ee679f1b47a01d4d0ef5ab8cbd269/) | ⚠️ Unaudited |
-| CrossDelegate | bridge_template | ethereum | 2 deployments: ethereum [`0x0b9818...5d3895`](./contracts/ethereum-1/0x0b98183f06ce5694736880ed644c74606e5d3895/); ethereum `0x81677c...bb388e` | ⚠️ Unaudited |
+| CrossDelegate | unknown | ethereum | 2 deployments: ethereum [`0x0b9818...5d3895`](./contracts/ethereum-1/0x0b98183f06ce5694736880ed644c74606e5d3895/); ethereum `0x81677c...bb388e` | ⚠️ Unaudited |
 | CrossDelegateV2 | unknown | arbitrum | [`0x75df5d...6f9e85`](./contracts/arbitrum-42161/0x75df5dc2769770789e6a053fe2e14454e36f9e85/) | ⚠️ Unaudited |
+| CrossDelegateV6 | unknown | bsc | [`0xc3711b...82baee`](./contracts/bsc-56/0xc3711bdbe7e3063bf6c22e7fed42f782ac82baee/) | ⚠️ Unaudited |
 | CrossProxy | proxy | avalanche | 4 deployments: metis `0xc6ae1d...bf9dbf`; avalanche [`0x079ae7...81099e`](./contracts/avalanche-43114/0x079ae74b9ebd1d4f51ce2d1848565829b081099e/); avalanche `0x74e121...037c3a`; linea `0xc21e55...91f603` | ⚠️ Unaudited |
 | CrossSwapEntrance | unknown | base | 2 deployments: optimism `0x9cf661...3a28c6`; base [`0x5bc813...e444d6`](./contracts/base-8453/0x5bc813a8bf026e099ee8ec16fe6b178761e444d6/) | ⚠️ Unaudited |
 | FeeHelper | periphery | linea | 2 deployments: optimism `0xeac9c2...574988`; linea [`0xb30778...bb2546`](./contracts/linea-59144/0xb30778550a959c207601d77ff13fe38a5abb2546/) | ⚠️ Unaudited |
@@ -75,6 +76,8 @@ The Wan Bridge family relies on CrossProxy and CrossDelegateV4 contracts to mana
 | Messager | unknown | optimism | [`0x012297...c86f86`](./contracts/optimism-10/0x012297f3d1cb0d685b195a70231730f4c8c86f86/) | ⚠️ Unaudited |
 | Multicall2 | periphery | celo | 7 deployments: base `0x1ed353...232fb6`; base `0xbe5187...5000d3`; celo [`0x149180...160765`](./contracts/celo-42220/0x149180976acce60ced0a9c339853c9d1d4160765/); linea `0x5b0b9d...530f6b`; linea `0x8d42d3...3f3fe8`; linea `0xd4b5f1...8a1437`; blast `0xd4b5f1...8a1437` | ⚠️ Unaudited |
 | MulticallV2 | periphery | metis | [`0x0d10a0...22353b`](./contracts/metis-1088/0x0d10a02696cb9cfdc4de45bd5580eda85f22353b/) | ⚠️ Unaudited |
+| NFTHelper | token | polygon | [`0xa39ee0...3fa01d`](./contracts/polygon-137/0xa39ee04e8208c3309026f34007f036cbb03fa01d/) | ⚠️ Unaudited |
+| NFTHelperERC721T | token | polygon | [`0xd8dde3...54a480`](./contracts/polygon-137/0xd8dde3abe038519cb46afd36bf8777fdc754a480/) | ⚠️ Unaudited |
 | NyanRewards | unknown | arbitrum | 3 deployments: arbitrum [`0x32e559...1aa724`](./contracts/arbitrum-42161/0x32e5594f14de658b0d577d6560fa0d9c6f1aa724/); arbitrum `0x62ff5b...d2da2c`; arbitrum `0xf6a377...4a703d` | ⚠️ Unaudited |
 | OracleDelegate | operational_periphery | moonbeam | 26 deployments: ethereum `0xbb38d1...b9f228`; ethereum `0xeeeab4...64fda2`; optimism `0xbe5187...5000d3`; optimism `0xc21e55...91f603`; polygon `0x7f70d0...ea93aa`; polygon `0x8d5085...1c5858`; polygon `0xbf9076...f47d18`; metis `0xc21e55...91f603`; moonbeam [`0x079497...8935ba`](./contracts/moonbeam-1284/0x079497f92f4522b3b17112aa8d28c4ce138935ba/); moonbeam `0xcaa36d...3b1748`; moonriver `0x1d920b...27627c`; moonriver `0x9c9ec2...7d7d79`; moonriver `0xffd3e7...dd6e05`; base `0x290108...78a61b`; base `0x70114d...491799`; arbitrum `0x7f70d0...ea93aa`; arbitrum `0xbf9076...f47d18`; celo `0x4c0cad...04c11a`; celo `0x9c1153...b914c8`; avalanche `0x69f3cd...3a0fbb`; avalanche `0x716f88...ebd035`; linea `0x7e0195...e4dfc9`; linea `0xbe5187...5000d3`; linea `0xdf8af8...85e3fe`; blast `0x8d42d3...3f3fe8`; blast `0xbe5187...5000d3` | ⚠️ Unaudited |
 | OracleProxy | operational_periphery | polygon | 2 deployments: polygon [`0x75df5d...6f9e85`](./contracts/polygon-137/0x75df5dc2769770789e6a053fe2e14454e36f9e85/); metis `0xbe5187...5000d3` | ⚠️ Unaudited |
@@ -94,6 +97,8 @@ The Wan Bridge family relies on CrossProxy and CrossDelegateV4 contracts to mana
 | TransparentUpgradeableProxy | proxy | ethereum | [`0xeb986d...373674`](./contracts/ethereum-1/0xeb986da994e4a118d5956b02d8b7c3c7ce373674/) | ⚠️ Unaudited |
 | WanCctpV2 | unknown | base | 10 deployments: optimism `0x2f676c...2296fb`; optimism `0x555cf9...9cd6a3`; optimism `0xa63a35...7b4f27`; optimism `0xf5db31...3b5d43`; base [`0x2ab376...38c838`](./contracts/base-8453/0x2ab37662ac4dc8aada595256cd57221c0c38c838/); base `0x40c1aa...4e890d`; base `0x441bff...24d859`; base `0x510703...5c72f8`; base `0x697986...d7ed15`; base `0x76c513...a4610e` | ⚠️ Unaudited |
 | WmbGateway | unknown | linea | 4 deployments: optimism `0x9c0e23...478408`; base `0xa67a44...ee252e`; base `0xe15698...7fb272`; linea [`0x2e042c...389a3d`](./contracts/linea-59144/0x2e042cf87aea59c4826b379e3302b8ac02389a3d/) | ⚠️ Unaudited |
+| WrappedERC1155T1 | token | polygon | [`0x990825...984e07`](./contracts/polygon-137/0x990825c5d894385f1c5bd36b6427c5336d984e07/) | ⚠️ Unaudited |
+| WrappedERC721T1 | token | polygon | 2 deployments: polygon [`0xcfad8a...66c472`](./contracts/polygon-137/0xcfad8a6ed9b7075c5a3b42557cf2b343b266c472/); polygon `0xf6b9cd...fdf245` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -107,12 +112,12 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| CrossDelegateV4 | bridge_template | optimism | 24 deployments: ethereum `0xfceaaa...bc334e`; optimism [`0x00e533...8f5e28`](./contracts/optimism-10/0x00e5330ece02a25be85cfdfc1a19d5f06c8f5e28/); optimism `0xc6ae1d...bf9dbf`; optimism `0xc95a4b...55446d`; polygon `0x221607...f201ab`; polygon `0x6a60b5...5a72f6`; metis `0xc02642...383e41`; metis `0xc95a4b...55446d`; moonbeam `0x6372ae...6b95b5`; moonriver `0xde1ae3...d6671d`; base `0x2715aa...60cd04`; base `0x2f676c...2296fb`; base `0x97e088...d3ca7b`; arbitrum `0x011754...5b2a06`; arbitrum `0xf7ba15...b97613`; celo `0x14ca89...4d6a1d`; celo `0xee9192...96858e`; linea `0x65b3ae...5d3bf9`; linea `0x70114d...491799`; linea `0xc6ae1d...bf9dbf`; linea `0xffb876...5f4a65`; blast [`0x00e533...8f5e28`](./contracts/blast-81457/0x00e5330ece02a25be85cfdfc1a19d5f06c8f5e28/); blast `0xc21e55...91f603`; blast `0xc6ae1d...bf9dbf` | ⚠️ Unaudited (bytecode match) |
+| CrossDelegateV4 | unknown | optimism | 26 deployments: ethereum `0x8f8165...27c490`; ethereum `0xfceaaa...bc334e`; optimism [`0x00e533...8f5e28`](./contracts/optimism-10/0x00e5330ece02a25be85cfdfc1a19d5f06c8f5e28/); optimism `0xc6ae1d...bf9dbf`; optimism `0xc95a4b...55446d`; polygon `0x221607...f201ab`; polygon `0x6a60b5...5a72f6`; opbnb `0xd6b24d...2689de`; metis `0xc02642...383e41`; metis `0xc95a4b...55446d`; moonbeam `0x6372ae...6b95b5`; moonriver `0xde1ae3...d6671d`; base `0x2715aa...60cd04`; base `0x2f676c...2296fb`; base `0x97e088...d3ca7b`; arbitrum `0x011754...5b2a06`; arbitrum `0xf7ba15...b97613`; celo `0x14ca89...4d6a1d`; celo `0xee9192...96858e`; linea `0x65b3ae...5d3bf9`; linea `0x70114d...491799`; linea `0xc6ae1d...bf9dbf`; linea `0xffb876...5f4a65`; blast [`0x00e533...8f5e28`](./contracts/blast-81457/0x00e5330ece02a25be85cfdfc1a19d5f06c8f5e28/); blast `0xc21e55...91f603`; blast `0xc6ae1d...bf9dbf` | ⚠️ Unaudited (bytecode match) |
 | Fee | unknown | base | 2 deployments: optimism `0x592de3...02e0b6`; base [`0x012297...c86f86`](./contracts/base-8453/0x012297f3d1cb0d685b195a70231730f4c8c86f86/) | ⚠️ Unaudited (bytecode match) |
 | NFTLibV1 | unknown | linea | 11 deployments: optimism `0x50133f...1f0cf2`; optimism `0xb30778...bb2546`; metis `0x50133f...1f0cf2`; base `0x5b0b9d...530f6b`; base `0xa63a35...7b4f27`; base `0xc95a4b...55446d`; linea [`0x1289f7...ac9f8b`](./contracts/linea-59144/0x1289f70b8a16797cccbfcca8a845f36324ac9f8b/); linea `0x2715aa...60cd04`; linea `0x8968cc...a6b5f3`; blast [`0x1289f7...ac9f8b`](./contracts/blast-81457/0x1289f70b8a16797cccbfcca8a845f36324ac9f8b/); blast `0xb30778...bb2546` | ⚠️ Unaudited (bytecode match) |
-| RapidityLibV4 | unknown | optimism | 10 deployments: optimism [`0x1289f7...ac9f8b`](./contracts/optimism-10/0x1289f70b8a16797cccbfcca8a845f36324ac9f8b/); optimism `0xbe2019...5aa17d`; metis [`0x1289f7...ac9f8b`](./contracts/metis-1088/0x1289f70b8a16797cccbfcca8a845f36324ac9f8b/); base `0x4f1ab7...935bad`; base `0x555cf9...9cd6a3`; linea `0x290108...78a61b`; linea `0x3bb870...85e3ee`; linea `0xc95a4b...55446d`; blast `0xbe2019...5aa17d`; blast `0xc95a4b...55446d` | ⚠️ Unaudited (bytecode match) |
+| RapidityLibV4 | unknown | optimism | 11 deployments: optimism [`0x1289f7...ac9f8b`](./contracts/optimism-10/0x1289f70b8a16797cccbfcca8a845f36324ac9f8b/); optimism `0xbe2019...5aa17d`; bsc `0xbdf2b2...919e2f`; metis [`0x1289f7...ac9f8b`](./contracts/metis-1088/0x1289f70b8a16797cccbfcca8a845f36324ac9f8b/); base `0x4f1ab7...935bad`; base `0x555cf9...9cd6a3`; linea `0x290108...78a61b`; linea `0x3bb870...85e3ee`; linea `0xc95a4b...55446d`; blast `0xbe2019...5aa17d`; blast `0xc95a4b...55446d` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (81)
+### ❓ Unverified (82)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -140,6 +145,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | fantom | `0x76b8c3...34cbaa` | ❓ Unverified |
 | UnnamedContract | unknown | fantom | `0x9c30e4...ed894e` | ❓ Unverified |
 | UnnamedContract | unknown | fantom | `0xccffe9...d69ee3` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | `0x102f0c...8389a1` | ❓ Unverified |
 | UnnamedContract | unknown | metis | `0x691201...5640c6` | ❓ Unverified |
 | UnnamedContract | unknown | metis | `0xdd4b9b...be6e2c` | ❓ Unverified |
 | UnnamedContract | unknown | polygon-zkevm | `0xb13afe...39a754` | ❓ Unverified |
@@ -212,55 +218,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| base | [`0x05e030...010282`](./contracts/base-8453/0x05e0302e690632b33b831c61a847f159ae010282/) | WrappedToken | token | $3,871.21 | Verified native implementation with $3,871.21 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x147dba...57446d`](./contracts/moonriver-1285/0x147dbae284bbd624b7b5a98dc862e21e8857446d/) | MappingTokenV2 | token | $726.27 | Verified native implementation with $726.27 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xb970e2...e46655`](./contracts/arbitrum-42161/0xb970e280f9ddaa3349ab9f3ecf778970cde46655/) | ApeRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x9f20de...b03461`](./contracts/arbitrum-42161/0x9f20de1fc9b161b34089cbeae888168b44b03461/) | ARBIS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonbeam | [`0x77286f...8573a6`](./contracts/moonbeam-1284/0x77286f5257e090b1bedbc6df6726d53cbf8573a6/) | AutoFarmV2_CrossChain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x2c5058...d49f45`](./contracts/arbitrum-42161/0x2c5058325373d02dfd6c08e48d91fcaf8fd49f45/) | CarbonRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x2055ae...f58a3a`](./contracts/polygon-137/0x2055ae7250f814995ab41499ba1963f2c2f58a3a/) | CommonProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0xe1efc9...cbd269`](./contracts/optimism-10/0xe1efc9336d6ee679f1b47a01d4d0ef5ab8cbd269/) | CrossAdminManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0b9818...5d3895`](./contracts/ethereum-1/0x0b98183f06ce5694736880ed644c74606e5d3895/) | CrossDelegate | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x75df5d...6f9e85`](./contracts/arbitrum-42161/0x75df5dc2769770789e6a053fe2e14454e36f9e85/) | CrossDelegateV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x00e533...8f5e28`](./contracts/optimism-10/0x00e5330ece02a25be85cfdfc1a19d5f06c8f5e28/) | CrossDelegateV4 | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x079ae7...81099e`](./contracts/avalanche-43114/0x079ae74b9ebd1d4f51ce2d1848565829b081099e/) | CrossProxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x5bc813...e444d6`](./contracts/base-8453/0x5bc813a8bf026e099ee8ec16fe6b178761e444d6/) | CrossSwapEntrance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0xb30778...bb2546`](./contracts/linea-59144/0xb30778550a959c207601d77ff13fe38a5abb2546/) | FeeHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x131dfc...655132`](./contracts/blast-81457/0x131dfc3ca32d3a959012606855320cbe8e655132/) | GroupApprove | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6b052e...14aeef`](./contracts/ethereum-1/0x6b052e5abeaed172cb485ae11cdecd130c14aeef/) | HTLCDebtLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x47be7c...61ba53`](./contracts/polygon-137/0x47be7cc7c13315fdd1bbf3dbab512af23961ba53/) | HTLCDebtLibV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x63c5ac...34f18f`](./contracts/polygon-137/0x63c5acc9bd1cfc14582a5520415480c33734f18f/) | HTLCTxLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x382b08...61af7a`](./contracts/arbitrum-42161/0x382b085a47cff1ea34bac4fe016f5fa5f061af7a/) | Layer2BridgeDelegate | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x011754...5b2a06`](./contracts/polygon-137/0x011754d9a4661d914141a96a03684f147e5b2a06/) | Layer2BridgeDelegateV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x1922c3...1684ab`](./contracts/arbitrum-42161/0x1922c36f3bc762ca300b4a46bb2102f84b1684ab/) | MarinateAutoCompounder | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x012297...c86f86`](./contracts/optimism-10/0x012297f3d1cb0d685b195a70231730f4c8c86f86/) | Messager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x32e559...1aa724`](./contracts/arbitrum-42161/0x32e5594f14de658b0d577d6560fa0d9c6f1aa724/) | NyanRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonbeam | [`0x079497...8935ba`](./contracts/moonbeam-1284/0x079497f92f4522b3b17112aa8d28c4ce138935ba/) | OracleDelegate | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x75df5d...6f9e85`](./contracts/polygon-137/0x75df5dc2769770789e6a053fe2e14454e36f9e85/) | OracleProxy | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xe34003...098bc2`](./contracts/arbitrum-42161/0xe340031b61a394c7811868ef81d2eacc79098bc2/) | PONGRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xae110a...2b7534`](./contracts/avalanche-43114/0xae110a0e6e5ddb0108f6d752f754b575d62b7534/) | PooledMappingToken | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0eff4c...10c601`](./contracts/ethereum-1/0x0eff4c50f6c32a2815d79bded30eb60e2410c601/) | QuotaDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf6fad8...b6bd9c`](./contracts/ethereum-1/0xf6fad8f166c4a766568f0d821a30ff5d21b6bd9c/) | RapidityLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x8d5085...1c5858`](./contracts/arbitrum-42161/0x8d508595f094c42ade6d3625a206abe9551c5858/) | RapidityLibV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x1289f7...ac9f8b`](./contracts/optimism-10/0x1289f70b8a16797cccbfcca8a845f36324ac9f8b/) | RapidityLibV4 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0e57db...a9f1df`](./contracts/base-8453/0x0e57db96f34aaa743a3f77e8fc0b17641ca9f1df/) | SimpleMultiSender | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xbf0075...d2db86`](./contracts/arbitrum-42161/0xbf00759d7e329d7a7fa1d4dcdc914c53d1d2db86/) | stARBIS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6a132d...2c288d`](./contracts/ethereum-1/0x6a132d12b674d93e32b4877dc0381c72332c288d/) | TokenManagerDelegate | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x09cdfc...82bcd2`](./contracts/base-8453/0x09cdfc56439643d151585b77899d0dc0f982bcd2/) | TokenManagerDelegateV2 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x1289f7...ac9f8b`](./contracts/base-8453/0x1289f70b8a16797cccbfcca8a845f36324ac9f8b/) | TokenManagerProxy | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x2ab376...38c838`](./contracts/base-8453/0x2ab37662ac4dc8aada595256cd57221c0c38c838/) | WanCctpV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x2e042c...389a3d`](./contracts/linea-59144/0x2e042cf87aea59c4826b379e3302b8ac02389a3d/) | WmbGateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 85 |
+| native | 0 |
 | upstream | 0 |
-| standard_library | 8 |
-| needs_review | 36 |
+| standard_library | 0 |
+| needs_review | 135 |
 
 ## Scope Matching Notes
 

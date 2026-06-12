@@ -1,0 +1,17 @@
+{
+  "address": "0x6a368244019146427f7243f9875f82a99ce03b32",
+  "chain_id": 42161,
+  "contract_name": "RainPoolDiamond",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 35000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T12:07:55.012Z"
+}

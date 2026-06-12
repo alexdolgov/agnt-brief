@@ -5,7 +5,7 @@
 | Chain | polygon (137) |
 | Address | `0x47be7cc7c13315fdd1bbf3dbab512af23961ba53` |
 | Role | unknown |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 2 (polygon [`0x47be7cc7c13315fdd1bbf3dbab512af23961ba53`](../0x47be7cc7c13315fdd1bbf3dbab512af23961ba53/); arbitrum `0x47be7cc7c13315fdd1bbf3dbab512af23961ba53`) |

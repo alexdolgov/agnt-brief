@@ -5,7 +5,7 @@
 | Chain | ethereum (1) |
 | Address | `0xeb986da994e4a118d5956b02d8b7c3c7ce373674` |
 | Role | proxy |
-| Origin | standard_library |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (ethereum [`0xeb986da994e4a118d5956b02d8b7c3c7ce373674`](../0xeb986da994e4a118d5956b02d8b7c3c7ce373674/)) |

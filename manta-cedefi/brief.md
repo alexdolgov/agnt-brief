@@ -1,17 +1,17 @@
 # Agentic Audit Brief: Manta CeDeFi
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 34.4% over 90 days
+⚠️ Lifecycle status: UNKNOWN - TVL dropped 34.1% over 90 days
 
 ## Project Overview
 
 - Project: Manta CeDeFi (`manta-cedefi`)
 - Website: [https://cedefi.manta.network](https://cedefi.manta.network)
 - Lifecycle: unknown (Tier 0, 81.4% below peak)
-- Generated: 2026-06-11T00:52:54.658Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
+- Generated: 2026-06-12T12:05:49.272Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-fc52
 - Chains: manta
 - Contract surface: 17 unique implementations (45 raw deployments)
-- DeFi Llama TVL: $26,702,791.45
+- DeFi Llama TVL: $26,475,528.10
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -99,29 +99,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| manta | [`0x0f8130...686b74`](./contracts/manta-169/0x0f813042a20697d121a18de2f1b4dd3cea686b74/) | BatchTransfer | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x97f62d...57a957`](./contracts/manta-169/0x97f62d9b3251d8013f0bef0d0eafeba25557a957/) | DepositManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x9e7478...2ef15a`](./contracts/manta-169/0x9e7478b044ba9c27948f770e32aa00954e2ef15a/) | DepositManagerV2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x2cf590...075560`](./contracts/manta-169/0x2cf5900d1f47f49ce8d0d08718b88a84db075560/) | Manager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x1860f0...47647e`](./contracts/manta-169/0x1860f0eabc4e4d4955f88dacd1e01ea9a047647e/) | MToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0xc8693e...d4018e`](./contracts/manta-169/0xc8693e492d1ec721a254daf3c075a440edd4018e/) | MTokenDepositEntry | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x46df6b...00f8a5`](./contracts/manta-169/0x46df6ba8e85bb6147c241bf3904918a6c800f8a5/) | MTokenStake | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0xefacdd...0412c9`](./contracts/manta-169/0xefacdd72800324b3e5ff35edaa3de629d30412c9/) | Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x399440...d9858c`](./contracts/manta-169/0x39944059395a387a8ec327b4fb5ab7c5f6d9858c/) | TokenDistributer | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x146817...553089`](./contracts/manta-169/0x1468177dbcb2a772f3d182d2f1358d442b553089/) | TransparentUpgradeableProxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x09f21a...480931`](./contracts/manta-169/0x09f21ae31fb70af04480b5f0811821cce9480931/) | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x37f151...dfbeb0`](./contracts/manta-169/0x37f1516de5425cdda58c20c6ac29ba775adfbeb0/) | WithdrawQueue | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 13 |
+| native | 0 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 3 |
+| standard_library | 0 |
+| needs_review | 17 |
 
 ## Scope Matching Notes
 

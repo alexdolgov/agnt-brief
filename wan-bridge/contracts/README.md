@@ -1,19 +1,12 @@
 # wan-bridge — Contract Index
 
-129 unique implementations across 14 chains · 338 deployments · 0 audited · 48 unaudited · 81 unverified
+135 unique implementations across 17 chains · 354 deployments · 0 audited · 53 unaudited · 82 unverified
 
 ## adapter (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [MarinateAutoCompounder](./arbitrum-42161/0x1922c36f3bc762ca300b4a46bb2102f84b1684ab/) | arbitrum | [`0x1922c3...1684ab`](./arbitrum-42161/0x1922c36f3bc762ca300b4a46bb2102f84b1684ab/) | ⚠️ Unaudited | Verified |
-
-## bridge_template (2)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [CrossDelegate (2 deployments)](./ethereum-1/0x0b98183f06ce5694736880ed644c74606e5d3895/) | ethereum | 2 deployments: ethereum [`0x0b9818...5d3895`](./ethereum-1/0x0b98183f06ce5694736880ed644c74606e5d3895/); ethereum `0x81677c...bb388e` | ⚠️ Unaudited | Verified |
-| [CrossDelegateV4 (24 deployments)](./optimism-10/0x00e5330ece02a25be85cfdfc1a19d5f06c8f5e28/) | optimism | 24 deployments: ethereum `0xfceaaa...bc334e`; optimism [`0x00e533...8f5e28`](./optimism-10/0x00e5330ece02a25be85cfdfc1a19d5f06c8f5e28/); optimism `0xc6ae1d...bf9dbf`; optimism `0xc95a4b...55446d`; polygon `0x221607...f201ab`; polygon `0x6a60b5...5a72f6`; metis `0xc02642...383e41`; metis `0xc95a4b...55446d`; moonbeam `0x6372ae...6b95b5`; moonriver `0xde1ae3...d6671d`; base `0x2715aa...60cd04`; base `0x2f676c...2296fb`; base `0x97e088...d3ca7b`; arbitrum `0x011754...5b2a06`; arbitrum `0xf7ba15...b97613`; celo `0x14ca89...4d6a1d`; celo `0xee9192...96858e`; linea `0x65b3ae...5d3bf9`; linea `0x70114d...491799`; linea `0xc6ae1d...bf9dbf`; linea `0xffb876...5f4a65`; blast `0x00e533...8f5e28`; blast `0xc21e55...91f603`; blast `0xc6ae1d...bf9dbf` | ⚠️ Unaudited | Verified |
 
 ## core_logic (1)
 
@@ -61,14 +54,18 @@
 | Proxy (impl: 0xc0264277fcca5fcfabd41a8bc01c1fcaf8383e41) | optimism | `0x7f27b1...319c4b` | ❓ Unverified | Unverified |
 | [TransparentUpgradeableProxy](./ethereum-1/0xeb986da994e4a118d5956b02d8b7c3c7ce373674/) | ethereum | [`0xeb986d...373674`](./ethereum-1/0xeb986da994e4a118d5956b02d8b7c3c7ce373674/) | ⚠️ Unaudited | Verified |
 
-## token (2)
+## token (6)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [MappingTokenV2 (29 deployments)](./moonriver-1285/0x147dbae284bbd624b7b5a98dc862e21e8857446d/) | moonriver | 29 deployments: moonbeam `0x283ad8...812d09`; moonbeam `0x30950e...bbbc27`; moonbeam `0x455feb...878d90`; moonbeam `0x533114...c89ef4`; moonbeam `0x5f0061...d52776`; moonbeam `0x935ad1...3a93bb`; moonbeam `0xb43645...7f2c36`; moonbeam `0xcd6f47...b2dedd`; moonriver [`0x147dba...57446d`](./moonriver-1285/0x147dbae284bbd624b7b5a98dc862e21e8857446d/); moonriver `0x15b9ca...b3d445`; moonriver `0x41562a...36b09f`; moonriver `0x53f14c...6925ae`; moonriver `0x576fde...af1111`; moonriver `0x748134...4bdeb3`; moonriver `0x78f811...2897c3`; moonriver `0x9d5bc9...bba2fe`; moonriver `0xa4dd0b...f27862`; moonriver `0xa4fc4a...406cac`; moonriver `0xb668cd...b32804`; moonriver `0xbef008...6e958f`; moonriver `0xc005a7...304993`; moonriver `0xd924f1...6039de`; moonriver `0xdd7f2b...374ae7`; moonriver `0xe936ca...84cda7`; moonriver `0xffef26...b20613`; avalanche `0x8d9dcc...eb70b6`; avalanche `0x9e529b...1448e5`; avalanche `0xd38bfd...21fff9`; avalanche `0xea6887...5cddef` | ⚠️ Unaudited | Verified |
-| [WrappedToken (12 deployments)](./base-8453/0x05e0302e690632b33b831c61a847f159ae010282/) | base | 12 deployments: base [`0x05e030...010282`](./base-8453/0x05e0302e690632b33b831c61a847f159ae010282/); base `0x1e7e46...b4a625`; base `0x3bb870...85e3ee`; base `0x4b1690...0fc95e`; base `0x72ccf6...9178ae`; base `0x73d923...62728c`; base `0x7e5fe1...a35aac`; base `0xb1f19e...325b4d`; base `0xb30778...bb2546`; base `0xc5cd7e...3810c2`; base `0xd7466f...a34c69`; base `0xe0cf5a...3a5e01` | ⚠️ Unaudited | Verified |
+| [NFTHelper](./polygon-137/0xa39ee04e8208c3309026f34007f036cbb03fa01d/) | polygon | [`0xa39ee0...3fa01d`](./polygon-137/0xa39ee04e8208c3309026f34007f036cbb03fa01d/) | ⚠️ Unaudited | Verified |
+| [NFTHelperERC721T](./polygon-137/0xd8dde3abe038519cb46afd36bf8777fdc754a480/) | polygon | [`0xd8dde3...54a480`](./polygon-137/0xd8dde3abe038519cb46afd36bf8777fdc754a480/) | ⚠️ Unaudited | Verified |
+| [WrappedERC1155T1](./polygon-137/0x990825c5d894385f1c5bd36b6427c5336d984e07/) | polygon | [`0x990825...984e07`](./polygon-137/0x990825c5d894385f1c5bd36b6427c5336d984e07/) | ⚠️ Unaudited | Verified |
+| [WrappedERC721T1 (2 deployments)](./polygon-137/0xcfad8a6ed9b7075c5a3b42557cf2b343b266c472/) | polygon | 2 deployments: polygon [`0xcfad8a...66c472`](./polygon-137/0xcfad8a6ed9b7075c5a3b42557cf2b343b266c472/); polygon `0xf6b9cd...fdf245` | ⚠️ Unaudited | Verified |
+| [WrappedToken (18 deployments)](./base-8453/0x05e0302e690632b33b831c61a847f159ae010282/) | base | 18 deployments: polygon `0x4d1496...c15588`; polygon `0x599b4d...10c016`; polygon `0x6dc2fc...17f3b6`; polygon `0x789acf...77d1a4`; polygon `0xa07c87...3f7113`; polygon `0xa3f9e7...1a6d89`; base [`0x05e030...010282`](./base-8453/0x05e0302e690632b33b831c61a847f159ae010282/); base `0x1e7e46...b4a625`; base `0x3bb870...85e3ee`; base `0x4b1690...0fc95e`; base `0x72ccf6...9178ae`; base `0x73d923...62728c`; base `0x7e5fe1...a35aac`; base `0xb1f19e...325b4d`; base `0xb30778...bb2546`; base `0xc5cd7e...3810c2`; base `0xd7466f...a34c69`; base `0xe0cf5a...3a5e01` | ⚠️ Unaudited | Verified |
 
-## unknown (103)
+## unknown (107)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -77,7 +74,10 @@
 | [AutoFarmV2_CrossChain (4 deployments)](./moonbeam-1284/0x77286f5257e090b1bedbc6df6726d53cbf8573a6/) | moonbeam | 4 deployments: moonbeam [`0x77286f...8573a6`](./moonbeam-1284/0x77286f5257e090b1bedbc6df6726d53cbf8573a6/); moonriver `0xfada8c...d4680e`; celo `0xdd11b6...12303f`; avalanche `0x864a0b...23f213` | ⚠️ Unaudited | Verified |
 | [CarbonRewards](./arbitrum-42161/0x2c5058325373d02dfd6c08e48d91fcaf8fd49f45/) | arbitrum | [`0x2c5058...d49f45`](./arbitrum-42161/0x2c5058325373d02dfd6c08e48d91fcaf8fd49f45/) | ⚠️ Unaudited | Verified |
 | [CommonProxy](./polygon-137/0x2055ae7250f814995ab41499ba1963f2c2f58a3a/) | polygon | [`0x2055ae...f58a3a`](./polygon-137/0x2055ae7250f814995ab41499ba1963f2c2f58a3a/) | ⚠️ Unaudited | Verified |
+| [CrossDelegate (2 deployments)](./ethereum-1/0x0b98183f06ce5694736880ed644c74606e5d3895/) | ethereum | 2 deployments: ethereum [`0x0b9818...5d3895`](./ethereum-1/0x0b98183f06ce5694736880ed644c74606e5d3895/); ethereum `0x81677c...bb388e` | ⚠️ Unaudited | Verified |
 | [CrossDelegateV2](./arbitrum-42161/0x75df5dc2769770789e6a053fe2e14454e36f9e85/) | arbitrum | [`0x75df5d...6f9e85`](./arbitrum-42161/0x75df5dc2769770789e6a053fe2e14454e36f9e85/) | ⚠️ Unaudited | Verified |
+| [CrossDelegateV4 (26 deployments)](./optimism-10/0x00e5330ece02a25be85cfdfc1a19d5f06c8f5e28/) | optimism | 26 deployments: ethereum `0x8f8165...27c490`; ethereum `0xfceaaa...bc334e`; optimism [`0x00e533...8f5e28`](./optimism-10/0x00e5330ece02a25be85cfdfc1a19d5f06c8f5e28/); optimism `0xc6ae1d...bf9dbf`; optimism `0xc95a4b...55446d`; polygon `0x221607...f201ab`; polygon `0x6a60b5...5a72f6`; opbnb `0xd6b24d...2689de`; metis `0xc02642...383e41`; metis `0xc95a4b...55446d`; moonbeam `0x6372ae...6b95b5`; moonriver `0xde1ae3...d6671d`; base `0x2715aa...60cd04`; base `0x2f676c...2296fb`; base `0x97e088...d3ca7b`; arbitrum `0x011754...5b2a06`; arbitrum `0xf7ba15...b97613`; celo `0x14ca89...4d6a1d`; celo `0xee9192...96858e`; linea `0x65b3ae...5d3bf9`; linea `0x70114d...491799`; linea `0xc6ae1d...bf9dbf`; linea `0xffb876...5f4a65`; blast `0x00e533...8f5e28`; blast `0xc21e55...91f603`; blast `0xc6ae1d...bf9dbf` | ⚠️ Unaudited | Verified |
+| [CrossDelegateV6](./bsc-56/0xc3711bdbe7e3063bf6c22e7fed42f782ac82baee/) | bsc | [`0xc3711b...82baee`](./bsc-56/0xc3711bdbe7e3063bf6c22e7fed42f782ac82baee/) | ⚠️ Unaudited | Verified |
 | [CrossSwapEntrance (2 deployments)](./base-8453/0x5bc813a8bf026e099ee8ec16fe6b178761e444d6/) | base | 2 deployments: optimism `0x9cf661...3a28c6`; base [`0x5bc813...e444d6`](./base-8453/0x5bc813a8bf026e099ee8ec16fe6b178761e444d6/) | ⚠️ Unaudited | Verified |
 | Fee (2 deployments) | base | 2 deployments: optimism [`0x592de3...02e0b6`](./optimism-10/0x592de30bebff484b5a43a6e8e3ec1a814902e0b6/); base `0x012297...c86f86` | ⚠️ Unaudited | Verified |
 | [GroupApprove (6 deployments)](./blast-81457/0x131dfc3ca32d3a959012606855320cbe8e655132/) | blast | 6 deployments: optimism `0x329f16...f1cf83`; metis `0x16b389...3b4c6b`; base `0xd97de6...2ca082`; celo `0x48dbcc...204d38`; linea `0x3cc979...3c1058`; blast [`0x131dfc...655132`](./blast-81457/0x131dfc3ca32d3a959012606855320cbe8e655132/) | ⚠️ Unaudited | Verified |
@@ -92,7 +92,7 @@
 | [QuotaDelegate (8 deployments)](./ethereum-1/0x0eff4c50f6c32a2815d79bded30eb60e2410c601/) | ethereum | 8 deployments: ethereum [`0x0eff4c...10c601`](./ethereum-1/0x0eff4c50f6c32a2815d79bded30eb60e2410c601/); ethereum `0x169ea2...831f62`; moonriver `0x5950e8...ef1969`; moonriver `0x603be4...d076a5`; moonriver `0x7ee4c2...d5cb4a`; moonriver `0x83600c...c51f0d`; avalanche `0x3c84ef...28281b`; avalanche `0x4c4ca7...40c845` | ⚠️ Unaudited | Verified |
 | [RapidityLib](./ethereum-1/0xf6fad8f166c4a766568f0d821a30ff5d21b6bd9c/) | ethereum | [`0xf6fad8...b6bd9c`](./ethereum-1/0xf6fad8f166c4a766568f0d821a30ff5d21b6bd9c/) | ⚠️ Unaudited | Verified |
 | [RapidityLibV2 (2 deployments)](./arbitrum-42161/0x8d508595f094c42ade6d3625a206abe9551c5858/) | arbitrum | 2 deployments: polygon `0xf7ba15...b97613`; arbitrum [`0x8d5085...1c5858`](./arbitrum-42161/0x8d508595f094c42ade6d3625a206abe9551c5858/) | ⚠️ Unaudited | Verified |
-| [RapidityLibV4 (10 deployments)](./optimism-10/0x1289f70b8a16797cccbfcca8a845f36324ac9f8b/) | optimism | 10 deployments: optimism [`0x1289f7...ac9f8b`](./optimism-10/0x1289f70b8a16797cccbfcca8a845f36324ac9f8b/); optimism `0xbe2019...5aa17d`; metis `0x1289f7...ac9f8b`; base `0x4f1ab7...935bad`; base `0x555cf9...9cd6a3`; linea `0x290108...78a61b`; linea `0x3bb870...85e3ee`; linea `0xc95a4b...55446d`; blast `0xbe2019...5aa17d`; blast `0xc95a4b...55446d` | ⚠️ Unaudited | Verified |
+| [RapidityLibV4 (11 deployments)](./optimism-10/0x1289f70b8a16797cccbfcca8a845f36324ac9f8b/) | optimism | 11 deployments: optimism [`0x1289f7...ac9f8b`](./optimism-10/0x1289f70b8a16797cccbfcca8a845f36324ac9f8b/); optimism `0xbe2019...5aa17d`; bsc `0xbdf2b2...919e2f`; metis `0x1289f7...ac9f8b`; base `0x4f1ab7...935bad`; base `0x555cf9...9cd6a3`; linea `0x290108...78a61b`; linea `0x3bb870...85e3ee`; linea `0xc95a4b...55446d`; blast `0xbe2019...5aa17d`; blast `0xc95a4b...55446d` | ⚠️ Unaudited | Verified |
 | [SimpleMultiSender (2 deployments)](./base-8453/0x0e57db96f34aaa743a3f77e8fc0b17641ca9f1df/) | base | 2 deployments: optimism `0x1e7e46...b4a625`; base [`0x0e57db...a9f1df`](./base-8453/0x0e57db96f34aaa743a3f77e8fc0b17641ca9f1df/) | ⚠️ Unaudited | Verified |
 | [stARBIS](./arbitrum-42161/0xbf00759d7e329d7a7fa1d4dcdc914c53d1d2db86/) | arbitrum | [`0xbf0075...d2db86`](./arbitrum-42161/0xbf00759d7e329d7a7fa1d4dcdc914c53d1d2db86/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x2532d7...dfa000` | ❓ Unverified | Unverified |
@@ -114,6 +114,7 @@
 | UnnamedContract | fantom | `0x76b8c3...34cbaa` | ❓ Unverified | Unverified |
 | UnnamedContract | fantom | `0x9c30e4...ed894e` | ❓ Unverified | Unverified |
 | UnnamedContract | fantom | `0xccffe9...d69ee3` | ❓ Unverified | Unverified |
+| UnnamedContract | zksync-era | `0x102f0c...8389a1` | ❓ Unverified | Unverified |
 | UnnamedContract | metis | `0x691201...5640c6` | ❓ Unverified | Unverified |
 | UnnamedContract | metis | `0xdd4b9b...be6e2c` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon-zkevm | `0xb13afe...39a754` | ❓ Unverified | Unverified |

@@ -7,17 +7,17 @@
 - Project: Reppo (`reppo`)
 - Website: [https://reppo.xyz/](https://reppo.xyz/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T02:14:59.266Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-12T05:34:03.338Z
+- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
 - Chains: base
-- Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $5,831,508.96
+- Contract surface: 3 unique implementations (5 raw deployments)
+- DeFi Llama TVL: $3,826,175.20
 - On-chain TVL (included contracts): $19,774,880.15
 - TVL by chain: Base $19,774,880.15
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
@@ -26,12 +26,12 @@ Reppo is an AI training data network and data infrastructure project. Although i
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
+- Unverified implementations: 1
+- Unique implementations: 3
+- Raw deployments: 5
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $19,774,880.15
@@ -50,11 +50,12 @@ Reppo is an AI training data network and data infrastructure project. Although i
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| AgentTokenV2 | token | base | [`0xff8104...8583d6`](./contracts/base-8453/0xff8104251e7761163fac3211ef5583fb3f8583d6/) | ⚠️ Unaudited |
+| AgentTokenV2 | unknown | base | 2 deployments: base [`0x7bab5d...8ae2db`](./contracts/base-8453/0x7bab5d2e3ebde7293888b3f4c022aaaad88ae2db/); base `0xff8104...8583d6` | ⚠️ Unaudited |
+| VeReppo | unknown | base | 2 deployments: base [`0x0ace0e...1bf988`](./contracts/base-8453/0x0ace0e652add81c8907e4ae8fd07adbdec1bf988/); base `0x0efbe1...8b9009` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -68,11 +69,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| UnnamedContract | unknown | base | `0x365075...e25481` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -86,18 +89,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| base | [`0xff8104...8583d6`](./contracts/base-8453/0xff8104251e7761163fac3211ef5583fb3f8583d6/) | AgentTokenV2 | token | $19,774,880.15 | Verified native implementation with $19,774,880.15 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

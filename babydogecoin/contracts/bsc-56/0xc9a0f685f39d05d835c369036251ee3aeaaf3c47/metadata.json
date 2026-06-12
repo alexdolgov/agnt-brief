@@ -1,0 +1,18 @@
+{
+  "address": "0xc9a0f685f39d05d835c369036251ee3aeaaf3c47",
+  "chain_id": 56,
+  "contract_name": "BabyDogeRouter",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T05:31:55.203Z"
+}

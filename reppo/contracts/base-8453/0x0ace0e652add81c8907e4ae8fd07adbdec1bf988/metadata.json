@@ -1,0 +1,17 @@
+{
+  "address": "0x0ace0e652add81c8907e4ae8fd07adbdec1bf988",
+  "chain_id": 8453,
+  "contract_name": "VeReppo",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 69,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T05:34:06.540Z"
+}

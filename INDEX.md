@@ -60,11 +60,11 @@
 | [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 8 | 570 | 2026-06-11 |
 | [avalaunch](./avalaunch/) | $31.3M | 84.6% | ? | active | 13 | 38 | 2026-06-10 |
 | [avantis](./avantis/) | $196.5M | 68.8% | $150.9M | declining | 3 | 61 | 2026-06-10 |
-| [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 1 | 2026-06-10 |
+| [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 3 | 2026-06-12 |
 | [azuro](./azuro/) | $3.1K | 6.6% | $3.1K | active | 3 | 304 | 2026-06-10 |
 | [b-lucky](./b-lucky/) | $2.2M | 0.0% | $2.2M | active | 1 | 16 | 2026-06-10 |
 | [b.protocol](./b.protocol/) | $79.0K | 5.1% | $79.0K | declining | 4 | 162 | 2026-06-10 |
-| [babydogecoin](./babydogecoin/) | $164.9M | 0.0% | $164.9M | declining | 1 | 1 | 2026-06-10 |
+| [babydogecoin](./babydogecoin/) | $164.9M | 0.0% | $164.9M | declining | 1 | 17 | 2026-06-12 |
 | [babyswap](./babyswap/) | $241.1K | 1.5% | $241.1K | active | 1 | 113 | 2026-06-10 |
 | [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | active | 0 | 2 | 2026-06-12 |
 | [badger-dao](./badger-dao/) | $1.5M | 0.0% | $1.5M | sunsetting | 6 | 27 | 2026-05-25 |
@@ -487,7 +487,7 @@
 | [re7-labs](./re7-labs/) | $1.6M | 0.0% | $1.6M | active | 0 | 6 | 2026-06-11 |
 | [reddex](./reddex/) | $4.2M | 0.0% | ? | declining | 0 | 5 | 2026-06-11 |
 | [reflexer](./reflexer/) | $2.3M | 40.9% | ? | declining | 8 | 64 | 2026-06-11 |
-| [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 1 | 2026-06-11 |
+| [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 3 | 2026-06-12 |
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | active | 0 | 2 | 2026-06-11 |
 | [reserve-protocol](./reserve-protocol/) | $8.0M | 53.9% | $255.2K | declining | 27 | 329 | 2026-06-11 |
 | [reservoir-protocol](./reservoir-protocol/) | $2.1B | 0.0% | $2.1B | active | 0 | 278 | 2026-05-31 |
@@ -653,7 +653,7 @@
 | [ultrayield](./ultrayield/) | $87.6M | 0.0% | ? | declining | 0 | 4520 | 2026-06-11 |
 | [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | active | 0 | 150 | 2026-06-11 |
 | [umee](./umee/) | $2.5M | 0.0% | ? | declining | 7 | 1 | 2026-06-11 |
-| [unchain-x](./unchain-x/) | $35.1M | 100.0% | ? | active | 2 | 1 | 2026-06-11 |
+| [unchain-x](./unchain-x/) | $35.1M | 9.1% | ? | active | 2 | 12 | 2026-06-12 |
 | [unichain-bridge](./unichain-bridge/) | $2.8M | 0.0% | ? | active | 0 | 15 | 2026-06-11 |
 | [unitas](./unitas/) | $47.8M | 100.0% | ? | active | 5 | 9 | 2026-06-11 |
 | [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
@@ -690,7 +690,7 @@
 | [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 48 | 2026-06-11 |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [xsy](./xsy/) | $3.6M | 25.0% | $3.6M | active | 1 | 15 | 2026-06-11 |
-| [xwin-finance](./xwin-finance/) | $1.8M | 0.0% | $1.8M | active | 1 | 1 | 2026-06-11 |
+| [xwin-finance](./xwin-finance/) | $1.8M | 0.0% | $1.8M | active | 1 | 19 | 2026-06-12 |
 | [yala](./yala/) | $4.6M | 0.0% | $4.6M | active | 1 | 30 | 2026-06-11 |
 | [yamato-protocol](./yamato-protocol/) | $910.9 | 47.8% | $818.3 | active | 3 | 63 | 2026-05-24 |
 | [ybtc.b](./ybtc.b/) | $83.9M | 0.0% | ? | active | 6 | 12 | 2026-05-31 |

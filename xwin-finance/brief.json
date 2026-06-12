@@ -1,41 +1,41 @@
 {
   "schema_version": "2.0",
   "project_key": "xwin-finance",
-  "generated_at": "2026-06-11T04:15:53.323Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-026d",
+  "generated_at": "2026-06-12T05:32:01.835Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-c31370-dba8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "xwin-finance",
     "tier": 0,
     "peak_tvl": 12551201,
     "peak_date": "2025-10-07T00:00:00.000Z",
-    "tvl_30d_ago": 5041122,
-    "tvl_90d_ago": 851608,
-    "tvl_current": 5283006,
+    "tvl_30d_ago": 4834043,
+    "tvl_90d_ago": 5127942,
+    "tvl_current": 4404673,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 8244992,
-    "change_30d_pct": 4.798217539666765,
-    "change_90d_pct": 520.356549022555,
-    "days_since_peak": 228,
+    "tvl_180d_ago": 7158918,
+    "change_30d_pct": -8.882213087471502,
+    "change_90d_pct": -14.104469200314668,
+    "days_since_peak": 248,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 57.90836271365585
+    "drop_from_peak_pct": 64.9063623473164
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 19,
+    "total_addresses": 43,
+    "unique_implementations": 19,
+    "total_deployments": 43,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 18,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 18,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6105445.77198,
+    "dl_tvl_usd": 4941184.59883,
     "tvl_usd": 1844863.4020851008,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -44,7 +44,9 @@
     "asd_usd": 1844863.4020851008,
     "website_url": "https://xwin.finance",
     "chains": [
-      "bsc"
+      "arbitrum",
+      "bsc",
+      "polygon"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
@@ -59,13 +61,13 @@
   },
   "topography": {
     "project_purpose": "xWIN Finance is a multi-chain DeFi wealth-management platform offering robo-advisor, portfolio, index, and automated strategy products across multiple networks. The XWIN token is only the protocol token and should not be treated as containing all portfolio, index, or investment-management functionality; the protocol’s TVL-bearing product and strategy contracts are separate from the token contract and require independent inventory and coverage assessment.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The project currently consists of a single token contract, with no additional infrastructure or product families identified. All functionality is encapsulated within the XWINToken contract.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 19,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -78,7 +80,7 @@
       "address": "0xd88ca08d8eec1e9e09562213ae83a7853ebb5d28",
       "name": "XWINToken",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "xWin Finance",
       "tvl_usd": 1844863.4020851008,
@@ -93,6 +95,780 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1844863.4020851008,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x03d6fe36281cb82ddb52e7e5aff190abcc9a6988",
+      "name": "FundV2",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x00cc95c352f783438c0a95515b79620d8c3c74a8",
+      "impl_name": "FundV2",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x0a0817454710102f2bcb2215d616cbe3aff495e5",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x284b4add0c9669f635ea64418c216821c45d0b48",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x4d4f948c8e9ec3d1ce1b80d598f57f8c75c64e4a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x61d5722290f8755b2f31d260064658d6ad837f37",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xaaff5efe1376474a520ffe9129d8aa8d7422aabe",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe949d266e8740470a15dfb1f40a795b5a2b63f02",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xfa4d4b4243dda1f5f4d09269f61d57d02470635c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x03d6fe36281cb82ddb52e7e5aff190abcc9a6988",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x5b0d58149cbd7f041a8833f8efe4b2ddadac47d2",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xc9f5559faf40c515932a2a18ae1d676af83a0221",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xed83fdfaae296674d13672a629a8740724eeeed7",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x6cc1cad8b330731e6ff469eaebf19961ea1dfc03",
+      "name": "FundV2Factory",
+      "role": "registry",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x22c0fa31871adbb005a18b12d6339544ba707eeb",
+      "impl_name": "FundV2Factory",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x9ab3c504de0fda0087d378123bdc318aadbc60a0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x9ebc52d849f961b43289d6da55663f3b9f628a68",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x6cc1cad8b330731e6ff469eaebf19961ea1dfc03",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xd4a3dcf47887636b19ed1b54aab722bd620e5fb4",
+      "name": "PancakePair",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PancakePair",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd4a3dcf47887636b19ed1b54aab722bd620e5fb4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x7a8aa080eada0b670fb719d7e53f87898a1299ac",
+      "name": "UniSwapV2TWAPOracle",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniSwapV2TWAPOracle",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x7a8aa080eada0b670fb719d7e53f87898a1299ac",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x75dab5000af15e7a9dd9c2365ae69e394c252a5a",
+      "name": "xWinAllocations",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x03b22160d7c77b0483ba4dd3e550b5d0f5ea31bf",
+      "impl_name": "xWinAllocations",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x75dab5000af15e7a9dd9c2365ae69e394c252a5a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xb4319e7dfbb84c8160846359eba6d3b9b9440f69",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xc1c53b4a16b834599b1f6acfd869765b08d422ac",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x482ae949e4a70953fca090717b68359b73b8602a",
+      "name": "xWinDCA",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xcd591966cab588b80a14f8665a26147904ae7705",
+      "impl_name": "xWinDCA",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x482ae949e4a70953fca090717b68359b73b8602a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x1bf7fe7568211ecff68b6bc7ccad31ecd8fe8092",
+      "name": "xWinDefi",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "xWinDefi",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x1bf7fe7568211ecff68b6bc7ccad31ecd8fe8092",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x3f2bef656821fac3a969d6a1f831e5f3ce25c062",
+      "name": "xWinEmitEvent",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xc448d2b63a8a74bbc9fe9b5ef1be63a718e042e1",
+      "impl_name": "xWinEmitEvent",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xc4c0171a31b6ced6daa4342343425f2eea703cc6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x3f2bef656821fac3a969d6a1f831e5f3ce25c062",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x87b34058a5d38bf6cabd0a1ac497183a1f7b8e5a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x0a652784df3f8abde85daeeee77d1ea97f5c5b24",
+      "name": "xWinERC20Alpha",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb97f617e22c3f02916ae94f40e2ab9817c55ecb5",
+      "impl_name": "xWinERC20Alpha",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x0a652784df3f8abde85daeeee77d1ea97f5c5b24",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x4fdca7b4c19c70ad1f275934160400f9ded0bc18",
+      "name": "xWinFarm",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "xWinFarm",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x4fdca7b4c19c70ad1f275934160400f9ded0bc18",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x8f52e0c41164169818c1fb04b263fdc7c1e56088",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x9236a0e741e688f89dd697404611c81eb8269b22",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x548c42fe3d1a44496491d09db2457d671f3c7488",
+      "name": "xWinFund",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "xWinFund",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x548c42fe3d1a44496491d09db2457d671f3c7488",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x96303976fc1df9aaa2707861c7e44b365e4b9dc5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xa4ae0dcc89af9855946c0b2ad4a10ff27125a9fc",
+      "name": "xWinLockedStake",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd6f8548cffd8d37b0be85b563e73c082b961b810",
+      "impl_name": "xWinLockedStake",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xa4ae0dcc89af9855946c0b2ad4a10ff27125a9fc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xd09774e3d5dc02fa969896c53d3cbb5bc8900a60",
+      "name": "xWinMasterChef",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x367712b4be88d71cc82dd9b18640d3718ed979e7",
+      "impl_name": "xWinMasterChef",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd09774e3d5dc02fa969896c53d3cbb5bc8900a60",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x4259ed91681159e455629a35d81c0b0020e3feed",
+      "name": "xWinPriceMaster",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x294bbe960b32818e8cf82fa472004a466678f1d0",
+      "impl_name": "xWinPriceMaster",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb1233713fea0984fff84c7456d2cced43e5e48e2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x4259ed91681159e455629a35d81c0b0020e3feed",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x8a3c24716447992c85a86231606759931f83c667",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x8b7fcacb99124f009c8470fda6f5fcf60277bdb2",
+      "name": "xWinSingleAsset",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x911ba5335233de5d2f44a82e73a231104e314a5e",
+      "impl_name": "xWinSingleAsset",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x8b7fcacb99124f009c8470fda6f5fcf60277bdb2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x1db49d9871a61101275ea72d9b9498948434af2c",
+      "name": "xWinSingleAssetAave",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x256a6a55f316542fe9ad1de854cf2f4168d7b6f3",
+      "impl_name": "xWinSingleAssetAave",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x1db49d9871a61101275ea72d9b9498948434af2c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x6ae47584953ee351db0c089ece8e69429daebda6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x8a0fa3b0010c76099e935e2c8909d5441390ff62",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x5493881d5fc68be3519cb25f2a4717d192800707",
+      "name": "xWinSwapV3",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x0eb14eaa5f6b6d6cc49454b9b08877cae266e953",
+      "impl_name": "xWinSwapV3",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x5493881d5fc68be3519cb25f2a4717d192800707",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x800b4980bcd3218761f43ac2098fc82a9670406a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x9ce3fcffaeb4b7fbdf39e9313f845d977393d8d1",
+      "name": "xWinSwapV3Pancake",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xcd839b9a77ed09fab43e4a09bc71502144cbf578",
+      "impl_name": "xWinSwapV3Pancake",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x9ce3fcffaeb4b7fbdf39e9313f845d977393d8d1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -128,23 +904,12 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xd88ca08d8eec1e9e09562213ae83a7853ebb5d28",
-      "name": "XWINToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 1844863.4020851008,
-      "risk_note": "Verified native implementation with $1,844,863.40 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
-    "upstream": 0,
+    "native": 0,
+    "upstream": 1,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 18
   },
   "scope_matching_notes": {
     "match_method_counts": {},

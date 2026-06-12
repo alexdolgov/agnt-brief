@@ -1,0 +1,376 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "halving",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "nfpManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "v3Manager_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxAllocation_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxListing_",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "lmPool",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "allocation",
+        "type": "uint256"
+      }
+    ],
+    "name": "Allocate",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "v3Pool",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "lmPool",
+        "type": "address"
+      }
+    ],
+    "name": "CreateLmPool",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "v3Pool",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "lmPool",
+        "type": "address"
+      }
+    ],
+    "name": "Delisting",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "v3Pool",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "lmPool",
+        "type": "address"
+      }
+    ],
+    "name": "Listing",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldValue",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newValue",
+        "type": "uint256"
+      }
+    ],
+    "name": "SetMaxAllocation",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "v3Pool",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "allocation",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IUNXwapV3Manager.PoolAllocationParams[]",
+        "name": "params",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "allocate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "lmPool",
+        "type": "address"
+      }
+    ],
+    "name": "allocationOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "allocation",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "v3Pool",
+        "type": "address"
+      }
+    ],
+    "name": "createLmPool",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "lmPool",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "v3Pool",
+        "type": "address"
+      }
+    ],
+    "name": "delist",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "halvingProtocol",
+    "outputs": [
+      {
+        "internalType": "contract IHalvingProtocol",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "v3Pool",
+        "type": "address"
+      }
+    ],
+    "name": "list",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "lmPool",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "listedPools",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "v3Pool",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "allocation",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IUNXwapV3LmFactory.ListingInfo[]",
+        "name": "result",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "lmPools",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxAllocation",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxListing",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nonfungiblePositionManager",
+    "outputs": [
+      {
+        "internalType": "contract INonfungiblePositionManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "maxValue",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMaxAllocation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalAllocation",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "reward",
+        "type": "uint256"
+      }
+    ],
+    "name": "transferReward",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "v3Manager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -4,32 +4,31 @@
 
 - Project: Unchain X (`unchain-x`)
 - Website: [https://unchainx.io](https://unchainx.io)
-- Lifecycle: active (Tier 0, 63.4% below peak)
-- Generated: 2026-06-11T03:50:47.956Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
+- Lifecycle: active (Tier 0, 67.5% below peak)
+- Generated: 2026-06-12T05:32:02.641Z
+- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
 - Chains: bsc
-- Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,208,578.29
+- Contract surface: 12 unique implementations (16 raw deployments)
+- DeFi Llama TVL: $1,085,062.80
 - On-chain TVL (included contracts): $35,109,981.13
 - TVL by chain: Bsc $35,109,981.13
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Unchain X is a BSC AMM/DEX, apparently using a Uniswap V3-style concentrated liquidity model for token swapping and liquidity provision. The current contract inventory only includes the UNX token address and should not be treated as the complete protocol surface; additional DEX, staking/launchpad, liquidity mining/farming, governance/timelock, and related protocol contracts appear to be missing or unknown.
 
+### Architecture
+
+The protocol consists of a single product family centered around the UNX token, with no additional supporting contracts identified.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/1 (100.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 1/11 (9.1%)
+- Verified + Unaudited implementations: 10
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
+- Unverified implementations: 1
+- Unique implementations: 12
+- Raw deployments: 16
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -41,7 +40,7 @@ Unchain X is a BSC AMM/DEX, apparently using a Uniswap V3-style concentrated liq
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| CertiK | Tier 2 | 1 | 100.0% | 2024-09 |
+| CertiK | Tier 2 | 1 | 9.1% | 2024-09 |
 
 ## Contract Surface
 
@@ -51,9 +50,20 @@ Unchain X is a BSC AMM/DEX, apparently using a Uniswap V3-style concentrated liq
 |---|---|---|---|---|
 | UNXToken | token | bsc | [`0x4f0572...bdea6f`](./contracts/bsc-56/0x4f0572ca0bf96f5ae17b7062d97cea3f35bdea6f/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (10)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| HalvingProtocol | unknown | bsc | [`0xa6820d...c05db8`](./contracts/bsc-56/0xa6820deaeb44c70bf42dbe0b561d399297c05db8/) | ⚠️ Unaudited |
+| LaunchpadStakingV2 | unknown | bsc | 5 deployments: bsc [`0x057d5b...0fa015`](./contracts/bsc-56/0x057d5bf977ce40a7c1c63b1b58609120350fa015/); bsc `0x0ea8f9...ce0550`; bsc `0x8d2f48...0ae245`; bsc `0xd7d98c...1a1240`; bsc `0xf28961...f911e8` | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | bsc | [`0x854ec7...2703de`](./contracts/bsc-56/0x854ec70b78933fab3f95e5bc95d7af72b62703de/) | ⚠️ Unaudited |
+| QuoterV2 | unknown | bsc | [`0x03dd4e...0811f5`](./contracts/bsc-56/0x03dd4ebe7120d05d7cf75cbdf7a5f375e40811f5/) | ⚠️ Unaudited |
+| SwapRouter | adapter | bsc | [`0xc9d96c...061f7f`](./contracts/bsc-56/0xc9d96c797fb1ae135d56ccb96eae7f70be061f7f/) | ⚠️ Unaudited |
+| UNXFaucet | unknown | bsc | [`0xdc0b82...28a879`](./contracts/bsc-56/0xdc0b82969e27d7d44be0bcf8a3839ad7eb28a879/) | ⚠️ Unaudited |
+| UNXwapV3Factory | registry | bsc | [`0x82fa7b...d8d40c`](./contracts/bsc-56/0x82fa7b2ce2a76c7888a9d3b0a81e0b2ecfd8d40c/) | ⚠️ Unaudited |
+| UNXwapV3LmFactory | registry | bsc | [`0xb4339c...832aed`](./contracts/bsc-56/0xb4339c24f4705bf3e3049ebcfb2ba2ae43832aed/) | ⚠️ Unaudited |
+| UNXwapV3Manager | governance | bsc | [`0xb50024...a38d18`](./contracts/bsc-56/0xb50024ccb6fdeeb7a1bfb186184936a78ea38d18/) | ⚠️ Unaudited |
+| XPlosion | unknown | bsc | [`0x9e309f...88d650`](./contracts/bsc-56/0x9e309f126882f467f28b67d5cc6b746a4988d650/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -67,11 +77,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | `0x47059c...53c56a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -90,10 +102,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "axc-gift",
-  "generated_at": "2026-06-10T20:58:57.926Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-12T05:30:48.500Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-c31370-dba8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "axc-gift",
@@ -16,22 +16,22 @@
     "tvl_180d_ago": null,
     "change_30d_pct": 0,
     "change_90d_pct": 0,
-    "days_since_peak": 103,
+    "days_since_peak": 123,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 3,
+    "total_addresses": 4,
+    "unique_implementations": 3,
+    "total_deployments": 4,
     "audited_contracts": 0,
     "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
@@ -63,7 +63,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 3,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -75,17 +75,26 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x6eca9d3b1ef79f5b45572fb8204835c6a4502be9",
+      "address": "0x4e255f4f1a5575d20e14334c90b9605af3447b75",
       "name": "ShareToken",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": "AXC GIFT",
       "tvl_usd": 5290517,
-      "is_proxy": true,
+      "is_proxy": false,
       "impl_address": "0x4e255f4f1a5575d20e14334c90b9605af3447b75",
       "impl_name": "ShareToken",
       "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x4e255f4f1a5575d20e14334c90b9605af3447b75",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 56,
           "chain_name": "bsc",
@@ -102,6 +111,68 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x6bbf01dfe5852166aa1a5d64f6b7faadb11df2a5",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6bbf01dfe5852166aa1a5d64f6b7faadb11df2a5",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xa856ff3ba16d0fa4a790e77abc653f1304069027",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xa856ff3ba16d0fa4a790e77abc653f1304069027",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     }
   ],
   "audits": [],
@@ -110,8 +181,8 @@
   "origin_summary": {
     "native": 0,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 0
+    "standard_library": 0,
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {},

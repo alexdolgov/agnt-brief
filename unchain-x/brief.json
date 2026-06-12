@@ -1,41 +1,41 @@
 {
   "schema_version": "2.0",
   "project_key": "unchain-x",
-  "generated_at": "2026-06-11T03:50:47.956Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
+  "generated_at": "2026-06-12T05:32:02.641Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-c31370-dba8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "unchain-x",
     "tier": 0,
     "peak_tvl": 3376673,
     "peak_date": "2025-05-28T00:00:00.000Z",
-    "tvl_30d_ago": 1268416,
-    "tvl_90d_ago": 1124242,
-    "tvl_current": 1235810,
+    "tvl_30d_ago": 1291871,
+    "tvl_90d_ago": 1284554,
+    "tvl_current": 1095965,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 1652023,
-    "change_30d_pct": -2.570607750138756,
-    "change_90d_pct": 9.92384201977866,
-    "days_since_peak": 362,
+    "tvl_180d_ago": 1688562,
+    "change_30d_pct": -15.164517200246774,
+    "change_90d_pct": -14.681282375050017,
+    "days_since_peak": 380,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 63.401549394922164
+    "drop_from_peak_pct": 67.5430519923013
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 12,
+    "total_addresses": 16,
+    "unique_implementations": 12,
+    "total_deployments": 16,
     "audited_contracts": 1,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 10,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 10,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 100,
+    "contracts_unverified": 1,
+    "coverage_pct": 9.1,
     "total_audits": 2,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 1208578.29036,
+    "dl_tvl_usd": 1085062.80413,
     "tvl_usd": 35109981.12785818,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -59,13 +59,13 @@
   },
   "topography": {
     "project_purpose": "Unchain X is a BSC AMM/DEX, apparently using a Uniswap V3-style concentrated liquidity model for token swapping and liquidity provision. The current contract inventory only includes the UNX token address and should not be treated as the complete protocol surface; additional DEX, staking/launchpad, liquidity mining/farming, governance/timelock, and related protocol contracts appear to be missing or unknown.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The protocol consists of a single product family centered around the UNX token, with no additional supporting contracts identified.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 12,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -78,7 +78,7 @@
       "address": "0x4f0572ca0bf96f5ae17b7062d97cea3f35bdea6f",
       "name": "UNXToken",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Unchain X",
       "tvl_usd": 35109981.12785818,
@@ -103,6 +103,383 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xa6820deaeb44c70bf42dbe0b561d399297c05db8",
+      "name": "HalvingProtocol",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HalvingProtocol",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xa6820deaeb44c70bf42dbe0b561d399297c05db8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x057d5bf977ce40a7c1c63b1b58609120350fa015",
+      "name": "LaunchpadStakingV2",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LaunchpadStakingV2",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x057d5bf977ce40a7c1c63b1b58609120350fa015",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x0ea8f9b3eff635c7e5791bff899055e4f3ce0550",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x8d2f485bffc182278c7ca49f1629d5d5420ae245",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd7d98c9cf0a3b0b09e5b2848b9250101f21a1240",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xf28961b972163fad8f220a9df86014e74df911e8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x854ec70b78933fab3f95e5bc95d7af72b62703de",
+      "name": "NonfungiblePositionManager",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "NonfungiblePositionManager",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x854ec70b78933fab3f95e5bc95d7af72b62703de",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x03dd4ebe7120d05d7cf75cbdf7a5f375e40811f5",
+      "name": "QuoterV2",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "QuoterV2",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x03dd4ebe7120d05d7cf75cbdf7a5f375e40811f5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xc9d96c797fb1ae135d56ccb96eae7f70be061f7f",
+      "name": "SwapRouter",
+      "role": "adapter",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SwapRouter",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xc9d96c797fb1ae135d56ccb96eae7f70be061f7f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x47059c93c0925405672bffb6e1c1f9083253c56a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x47059c93c0925405672bffb6e1c1f9083253c56a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xdc0b82969e27d7d44be0bcf8a3839ad7eb28a879",
+      "name": "UNXFaucet",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UNXFaucet",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xdc0b82969e27d7d44be0bcf8a3839ad7eb28a879",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x82fa7b2ce2a76c7888a9d3b0a81e0b2ecfd8d40c",
+      "name": "UNXwapV3Factory",
+      "role": "registry",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UNXwapV3Factory",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x82fa7b2ce2a76c7888a9d3b0a81e0b2ecfd8d40c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xb4339c24f4705bf3e3049ebcfb2ba2ae43832aed",
+      "name": "UNXwapV3LmFactory",
+      "role": "registry",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UNXwapV3LmFactory",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb4339c24f4705bf3e3049ebcfb2ba2ae43832aed",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xb50024ccb6fdeeb7a1bfb186184936a78ea38d18",
+      "name": "UNXwapV3Manager",
+      "role": "governance",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UNXwapV3Manager",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb50024ccb6fdeeb7a1bfb186184936a78ea38d18",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x9e309f126882f467f28b67d5cc6b746a4988d650",
+      "name": "XPlosion",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "XPlosion",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x9e309f126882f467f28b67d5cc6b746a4988d650",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     }
   ],
@@ -164,16 +541,16 @@
       "auditor": "CertiK",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 100,
+      "coverage_pct": 9.1,
       "latest_audit": "2024-09"
     }
   ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 12
   },
   "scope_matching_notes": {
     "match_method_counts": {

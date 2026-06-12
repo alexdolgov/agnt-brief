@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ao-bridge",
-  "generated_at": "2026-06-10T20:58:57.599Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-12T09:21:48.247Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-645a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ao-bridge",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 54042727.51612,
-    "tvl_usd": 54042727.51612,
+    "dl_tvl_usd": 43014671.67543,
+    "tvl_usd": 43014671.67543,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -57,13 +57,13 @@
   },
   "topography": {
     "project_purpose": "AO Bridge is tracked by DefiLlama as a Canonical Bridge on Ethereum associated with the AO/Arweave ecosystem. The indexed Ethereum contract surface includes ERC1967 proxy deployments pointing to native Distribution implementations, along with Refunder and LinearDistributionIntervalDecrease contracts. Detailed bridge mechanics and deployer-cluster rollout claims should not be asserted without additional evidence.",
-    "relationship_narrative": "The AO Bridge family consists of multiple Distribution contracts deployed behind ERC1967Proxy instances, all sharing the same upgradeable proxy pattern. These contracts are deployed by two distinct deployer clusters, indicating a phased rollout or separate operational components within the same bridge infrastructure.",
+    "relationship_narrative": null,
     "product_family_count": 1
   },
   "surface_sufficiency": {
     "unique_implementations": 3,
-    "has_non_token_contracts": true,
-    "is_skeletal": false
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -75,9 +75,9 @@
       "chain_name": "ethereum",
       "address": "0x033b274ff36837d72d4baf7b7fcf4f84f6ab8a0e",
       "name": "Distribution",
-      "role": "proxy",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -331,8 +331,8 @@
       "chain_name": "ethereum",
       "address": "0x7e209b1833ae5313c2923116c78baedf14d1d482",
       "name": "LinearDistributionIntervalDecrease",
-      "role": "operational_periphery",
-      "origin_kind": "native",
+      "role": "unknown",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -363,7 +363,7 @@
       "address": "0x0278d076edccb596fca5de58e7e8e70d2a906a32",
       "name": "Refunder",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -526,33 +526,12 @@
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x7e209b1833ae5313c2923116c78baedf14d1d482",
-      "name": "LinearDistributionIntervalDecrease",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0278d076edccb596fca5de58e7e8e70d2a906a32",
-      "name": "Refunder",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 2,
+    "native": 0,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 0
+    "standard_library": 0,
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {},

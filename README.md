@@ -57,7 +57,7 @@ Each project directory contains:
 | [summer.fi](./summer.fi/brief.md) | $32.92M | 5 | 482 | 276/482 (57%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $140.93M |
 | [zircuit-staking](./zircuit-staking/brief.md) | $54.16M | base, ethereum | 20 | 19/20 (95%) | 21.1% | 0.0% (-) | 3 | aging | ⚠️ declining | $140.43M |
 | [bio-protocol](./bio-protocol/brief.md) | $4.56M | base, ethereum | 41 | 40/41 (98%) | 10.0% | 0.0% (-) | 2 | fresh | ✅ active | $139.62M |
-| [apechain-bridge](./apechain-bridge/brief.md) | $44.92M | ethereum | 9 | 7/9 (78%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $138.23M |
+| [apechain-bridge](./apechain-bridge/brief.md) | $40.86M | arbitrum, ethereum | 19 | 17/19 (89%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $138.23M |
 | [wavesbridge](./wavesbridge/brief.md) | $1.03M | ethereum | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $136.63M |
 | [bitway](./bitway/brief.md) | $60.78M | bsc | 8 | 7/8 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $136.35M |
 | [bitway-earn](./bitway-earn/brief.md) | $60.03M | bsc | 8 | 7/8 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $136.35M |
@@ -86,8 +86,8 @@ Each project directory contains:
 | [turtle-club](./turtle-club/brief.md) | $857.95K | 4 | 516 | 340/516 (66%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | $59.81M |
 | [kyberswap](./kyberswap/brief.md) | $10.47M | 15 | 445 | 130/445 (29%) | 8.8% | 7.4% (ChainSecurity, Spearbit) | 6 | fresh | ⚠️ declining | $58.32M |
 | [reya](./reya/brief.md) | $17.80M | 5 | 293 | 73/293 (25%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $57.29M |
+| [tulipa-capital](./tulipa-capital/brief.md) | $40.98M | 4 | 6 | 6/6 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $56.24M |
 | [deeplock](./deeplock/brief.md) | $2.14M | bsc | 70 | 38/70 (54%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $56.17M |
-| [tulipa-capital](./tulipa-capital/brief.md) | $49.29M | avalanche, base, ethereum | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $55.69M |
 | [api3](./api3/brief.md) | $55.28M | ethereum, mantle | 28 | 14/28 (50%) | 21.4% | 7.1% (Trail of Bits) | 3 | aging | ✅ active | $55.23M |
 | [synfutures](./synfutures/brief.md) | $4.85M | 6 | 481 | 3/481 (1%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $52.44M |
 | [armitage-by-wintermute](./armitage-by-wintermute/brief.md) | $52.01M | ethereum | 7 | 7/7 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $51.81M |
@@ -371,7 +371,7 @@ Each project directory contains:
 | [ankr](./ankr/brief.md) | $21.69M | avalanche, ethereum, fantom | 6 | 2/6 (33%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [antarctic](./antarctic/brief.md) | $9.58M | arbitrum | 11 | 8/11 (73%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [anvil](./anvil/brief.md) | $17.52M | ethereum | 3 | 3/3 (100%) | 100.0% | 100.0% (OpenZeppelin, Trail of Bits) | 3 | fresh | ⚠️ declining | - |
-| [ao-bridge](./ao-bridge/brief.md) | $54.04M | ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [ao-bridge](./ao-bridge/brief.md) | $43.01M | ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [arcade.xyz](./arcade.xyz/brief.md) | $5.12M | ethereum | 60 | 43/60 (72%) | 67.4% | 30.2% (Trail of Bits) | 10 | stale | ⚠️ declining | - |
 | [arcadia-finance](./arcadia-finance/brief.md) | $7.21M | base, optimism, unichain | 55 | 52/55 (95%) | 63.5% | 53.8% (Sherlock) | 12 | fresh | ✅ active | - |
 | [aria-protocol](./aria-protocol/brief.md) | $181.05K | bsc | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
@@ -726,5 +726,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-12T09:20:32.659Z_
+_Generated: 2026-06-12T09:34:56.892Z_
 _Projects: 714_

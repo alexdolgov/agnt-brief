@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "apechain-bridge",
-  "generated_at": "2026-06-10T20:58:57.603Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-12T09:33:28.388Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-645a",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "apechain-bridge",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 90.79413520517241
   },
   "summary": {
-    "total_contracts": 9,
-    "total_addresses": 9,
-    "unique_implementations": 9,
-    "total_deployments": 9,
+    "total_contracts": 19,
+    "total_addresses": 19,
+    "unique_implementations": 19,
+    "total_deployments": 19,
     "audited_contracts": 0,
-    "unaudited_contracts": 7,
+    "unaudited_contracts": 17,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 7,
+    "contracts_verified_unaudited": 17,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 44918026.07795,
+    "dl_tvl_usd": 40864739.409320004,
     "tvl_usd": 138232772.62146008,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -44,6 +44,7 @@
     "asd_usd": 138232772.62146008,
     "website_url": "https://apechain.com/portal#bridge",
     "chains": [
+      "arbitrum",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -63,7 +64,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 9,
+    "unique_implementations": 19,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -78,7 +79,7 @@
       "address": "0x4d224452801aced8b2f0aebe155379bb5d594381",
       "name": "SimpleToken",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "ApeChain Bridge",
       "tvl_usd": 138232772.61863253,
@@ -109,7 +110,7 @@
       "address": "0xc8a12b1db09ec5a43919906d94fa7eeaef1131d1",
       "name": "StETHVault",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "ApeChain Bridge",
       "tvl_usd": 0.002827548547174602,
@@ -137,10 +138,41 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x0187ae64e905b4fe7dd1568a5642fbef05e96e71",
+      "name": "ApeCoinStakedVoting",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ApeCoinStakedVoting",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0187ae64e905b4fe7dd1568a5642fbef05e96e71",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x5954ab967bc958940b7eb73ee84797dc8a2afbb9",
       "name": "ApeCoinStaking",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "ApeChain Bridge",
       "tvl_usd": null,
@@ -171,7 +203,7 @@
       "address": "0xcf800f4948d16f23333508191b1b1591daf70438",
       "name": "ApeETH",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -202,7 +234,7 @@
       "address": "0xa2235d059f80e176d931ef76b6c51953eb3fbef4",
       "name": "ApeUSD",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -228,12 +260,105 @@
       "contamination_flag": "cleared"
     },
     {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x6b71afb4b7725227ab944c96fe018ab9dc0434b8",
+      "name": "ERC20Bridge",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x20b3c55fe4ecd989beb56e13b2a726110f0c3619",
+      "impl_name": "ERC20Bridge",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x6b71afb4b7725227ab944c96fe018ab9dc0434b8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1b98e4ed82ee1a91a65a38c690e2266364064d15",
+      "name": "ERC20Inbox",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xfa76a234b41f932fa769f92d85574e1beefe8218",
+      "impl_name": "ERC20Inbox",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x1b98e4ed82ee1a91a65a38c690e2266364064d15",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x4f405ba65291063d8a524c2bdf55d4e67405c2af",
+      "name": "ERC20Outbox",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x4d92ee5cca2a93b30549a6398c063861f18b6726",
+      "impl_name": "ERC20Outbox",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4f405ba65291063d8a524c2bdf55d4e67405c2af",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x6c92ceeb09c83f1018d5bca81d933df3eeaed0a1",
       "name": "L1ApeETHRouter",
       "role": "adapter",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -264,7 +389,7 @@
       "address": "0xf33d21137cd0b878f3a18cc60cd74f842c59cb00",
       "name": "L1Oft4626Router",
       "role": "adapter",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "ApeChain Bridge",
       "tvl_usd": null,
@@ -290,12 +415,198 @@
       "contamination_flag": null
     },
     {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xed543da6fe33ccee50dc024b78c27959235d0ab0",
+      "name": "L1OrbitCustomGateway",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x41756e7b163293648a025d66706f41a0c09b2e87",
+      "impl_name": "L1OrbitCustomGateway",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xed543da6fe33ccee50dc024b78c27959235d0ab0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xb603a1c07a11945bfe4855347c88583e31b8ddb0",
+      "name": "L1OrbitERC20Gateway",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x1a4ba93da530ce43e1077396af3726274de0ff7e",
+      "impl_name": "L1OrbitERC20Gateway",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb603a1c07a11945bfe4855347c88583e31b8ddb0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xd57df5c2dc2d60307a74944191f2aa5b7bd4a700",
+      "name": "L1OrbitGatewayRouter",
+      "role": "adapter",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x006efe3cfb0c685b687321adaf2aa80a78d99512",
+      "impl_name": "L1OrbitGatewayRouter",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd57df5c2dc2d60307a74944191f2aa5b7bd4a700",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1e5f8ff72895aea53dd62b590da51e92dc75b507",
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x1e5f8ff72895aea53dd62b590da51e92dc75b507",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x374de579ae15ad59ed0519aeaf1a23f348df259c",
+      "name": "RollupAdminLogic",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x2733fc1c97f6562466e9b29d64bcc6dc833cc88d",
+      "impl_name": "RollupAdminLogic",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x374de579ae15ad59ed0519aeaf1a23f348df259c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xe6a92ae29e24c343ee66a2b3d3ecb783d65e4a3c",
+      "name": "SequencerInbox",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xcfafb803ef1fec576138cebc79ad41aa6760c575",
+      "impl_name": "SequencerInbox",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xe6a92ae29e24c343ee66a2b3d3ecb783d65e4a3c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x27e800528bf4f0b1a8831c85763d20a26047b84d",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -326,7 +637,7 @@
       "address": "0x5b61c1c63206052b852c24b36d23abe35dac196c",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -354,83 +665,12 @@
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4d224452801aced8b2f0aebe155379bb5d594381",
-      "name": "SimpleToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 138232772.61863253,
-      "risk_note": "Verified native implementation with $138,232,772.62 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc8a12b1db09ec5a43919906d94fa7eeaef1131d1",
-      "name": "StETHVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 0.002827548547174602,
-      "risk_note": "Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5954ab967bc958940b7eb73ee84797dc8a2afbb9",
-      "name": "ApeCoinStaking",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xcf800f4948d16f23333508191b1b1591daf70438",
-      "name": "ApeETH",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa2235d059f80e176d931ef76b6c51953eb3fbef4",
-      "name": "ApeUSD",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6c92ceeb09c83f1018d5bca81d933df3eeaed0a1",
-      "name": "L1ApeETHRouter",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xf33d21137cd0b878f3a18cc60cd74f842c59cb00",
-      "name": "L1Oft4626Router",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 9,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 19
   },
   "scope_matching_notes": {
     "match_method_counts": {},

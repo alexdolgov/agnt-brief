@@ -39,8 +39,8 @@
 | [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | active | 0 | 2 | 2026-06-10 |
 | [anvil](./anvil/) | $673.0K | 100.0% | ? | declining | 4 | 3 | 2026-06-10 |
 | [anzen-finance](./anzen-finance/) | $671.2K | 35.9% | $10.9K | declining | 5 | 47 | 2026-06-10 |
-| [ao-bridge](./ao-bridge/) | $54.0M | 0.0% | ? | active | 0 | 3 | 2026-06-10 |
-| [apechain-bridge](./apechain-bridge/) | $138.2M | 0.0% | $138.2M | declining | 0 | 9 | 2026-06-10 |
+| [ao-bridge](./ao-bridge/) | $43.0M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
+| [apechain-bridge](./apechain-bridge/) | $138.2M | 0.0% | $138.2M | declining | 0 | 19 | 2026-06-12 |
 | [apex-protocol](./apex-protocol/) | $436.4K | 0.0% | $436.4K | active | 1 | 206 | 2026-06-10 |
 | [api3](./api3/) | $55.2M | 21.4% | $55.2M | active | 6 | 28 | 2026-06-10 |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 54 | 2026-06-10 |
@@ -647,7 +647,7 @@
 | [trueo](./trueo/) | $4.0M | 0.0% | $4.0M | declining | 0 | 23 | 2026-06-11 |
 | [trufin-protocol](./trufin-protocol/) | $7.0M | 66.7% | ? | declining | 12 | 7 | 2026-06-10 |
 | [trust-wallet](./trust-wallet/) | $470.2M | 0.0% | $470.2M | active | 0 | 5 | 2026-06-11 |
-| [tulipa-capital](./tulipa-capital/) | $55.7M | 0.0% | $55.7M | active | 0 | 4 | 2026-06-11 |
+| [tulipa-capital](./tulipa-capital/) | $56.2M | 0.0% | $56.2M | active | 0 | 6 | 2026-06-12 |
 | [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | declining | 3 | 516 | 2026-06-11 |
 | [twyne](./twyne/) | $985.7K | 3.8% | $985.7K | active | 6 | 59 | 2026-06-11 |
 | [txflow](./txflow/) | $3.8M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |

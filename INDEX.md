@@ -145,7 +145,7 @@
 | [cream-finance](./cream-finance/) | $2.3B | 0.0% | $2.3B | declining | 2 | 94 | 2026-06-10 |
 | [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-06-10 |
 | [credit-coop](./credit-coop/) | $2.1M | 0.0% | $2.1M | active | 3 | 2 | 2026-06-11 |
-| [crypto.com-liquid-staking](./crypto.com-liquid-staking/) | $25.4M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
+| [crypto.com-liquid-staking](./crypto.com-liquid-staking/) | $20.0M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
 | [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-06-10 |
 | [cyclone](./cyclone/) | $165.5M | 0.0% | $165.5M | active | 3 | 63 | 2026-06-11 |
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-06-10 |
@@ -343,7 +343,7 @@
 | [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-06-11 |
 | [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-31 |
 | [magma-staking](./magma-staking/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [magpie-ecosystem](./magpie-ecosystem/) | $24.6M | 0.0% | ? | declining | 4 | 662 | 2026-06-11 |
+| [magpie-ecosystem](./magpie-ecosystem/) | $19.1M | 0.0% | ? | declining | 4 | 218 | 2026-06-12 |
 | [mainstreet](./mainstreet/) | $77.7M | 9.1% | $77.7M | active | 1 | 11 | 2026-06-12 |
 | [makina](./makina/) | $12.9M | 90.9% | $12.9M | active | 4 | 36 | 2026-06-11 |
 | [mangrove](./mangrove/) | $4.3M | 22.0% | ? | active | 6 | 68 | 2026-06-11 |
@@ -383,7 +383,7 @@
 | [moonlander](./moonlander/) | $30.0M | 0.0% | ? | active | 0 | 11 | 2026-06-12 |
 | [more-markets](./more-markets/) | $11.5M | 0.0% | ? | declining | 0 | 21 | 2026-06-11 |
 | [morph-bridge](./morph-bridge/) | $15.7M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
-| [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 18 | 47 | 2026-06-11 |
+| [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 18 | 51 | 2026-06-12 |
 | [mu-digital](./mu-digital/) | $19.4M | 100.0% | ? | active | 2 | 12 | 2026-06-11 |
 | [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-06-11 |
 | [multichain](./multichain/) | $12.5M | 42.9% | $128.8 | dead | 15 | 17 | 2026-06-11 |
@@ -687,7 +687,7 @@
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [woofi](./woofi/) | $9.8M | 18.8% | $9.7M | declining | 6 | 200 | 2026-06-11 |
 | [wrapped-bnb](./wrapped-bnb/) | $5.5M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
-| [wrapped](./wrapped/) | $23.9M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
+| [wrapped](./wrapped/) | $20.1M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
 | [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 48 | 2026-06-11 |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [xsy](./xsy/) | $3.6M | 25.0% | $3.6M | active | 1 | 15 | 2026-06-11 |

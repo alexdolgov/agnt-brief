@@ -329,7 +329,7 @@ Each project directory contains:
 | [spookyswap](./spookyswap/brief.md) | $1.35M | fantom, sonic | 136 | 35/136 (26%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $841.67 |
 | [yamato-protocol](./yamato-protocol/brief.md) | $1.44M | ethereum | 63 | 46/63 (73%) | 47.8% | 0.0% (-) | 3 | aging | ✅ active | $818.32 |
 | [proxy](./proxy/brief.md) | $19.96M | ethereum, polygon | 278 | 12/278 (4%) | 8.3% | 0.0% (-) | 1 | stale | ✅ active | $735.64 |
-| [morpheusai](./morpheusai/brief.md) | $20.74M | arbitrum, ethereum | 47 | 47/47 (100%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $621.83 |
+| [morpheusai](./morpheusai/brief.md) | $20.74M | arbitrum, base, ethereum | 51 | 51/51 (100%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $621.83 |
 | [blast-l2](./blast-l2/brief.md) | $52.15M | blast, ethereum | 295 | 89/295 (30%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $568.85 |
 | [nerve](./nerve/brief.md) | $1.50M | bsc, ethereum | 66 | 20/66 (30%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $508.66 |
 | [superearn](./superearn/brief.md) | $10.13M | ethereum, klaytn | 94 | 25/94 (27%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $295.42 |
@@ -431,7 +431,7 @@ Each project directory contains:
 | [core-bridge](./core-bridge/brief.md) | $4.02M | avalanche, base | 6 | 2/6 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [coti-treasury](./coti-treasury/brief.md) | $9.89M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [cozy-finance](./cozy-finance/brief.md) | $2.30M | optimism | 48 | 5/48 (10%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
-| [crypto.com-liquid-staking](./crypto.com-liquid-staking/brief.md) | $25.39M | cronos | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [crypto.com-liquid-staking](./crypto.com-liquid-staking/brief.md) | $20.02M | cronos, ethereum | 2 | 1/2 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [decibel](./decibel/brief.md) | $41.88M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [defi-kingdoms](./defi-kingdoms/brief.md) | $7.71M | harmony, klaytn | 5 | 0/5 (0%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [defichain-dex](./defichain-dex/brief.md) | $1.17M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -537,7 +537,7 @@ Each project directory contains:
 | [lumenswap](./lumenswap/brief.md) | $6.33M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [lusd-chickenbonds](./lusd-chickenbonds/brief.md) | $1.49M | ethereum | 24 | 21/24 (88%) | 28.6% | 0.0% (-) | 6 | stale | ⚠️ declining | - |
 | [magma-staking](./magma-staking/brief.md) | $1.16M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [magpie-ecosystem](./magpie-ecosystem/brief.md) | $24.65M | 8 | 662 | 0/662 (0%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
+| [magpie-ecosystem](./magpie-ecosystem/brief.md) | $19.12M | 8 | 218 | 156/218 (72%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [mangrove](./mangrove/brief.md) | $4.26M | 4 | 68 | 41/68 (60%) | 22.0% | 14.6% (ChainSecurity) | 5 | aging | ✅ active | - |
 | [manta-atlantic-stake](./manta-atlantic-stake/brief.md) | $5.41M | ethereum, manta | 109 | 68/109 (62%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [manta-cedefi](./manta-cedefi/brief.md) | $26.48M | manta | 17 | 15/17 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -711,7 +711,7 @@ Each project directory contains:
 | [wanswap-dex](./wanswap-dex/brief.md) | $1.07M | - | 0 | - | 0.0% | 0.0% (-) | 1 | stale | ❓ unknown | - |
 | [wemix.fi](./wemix.fi/brief.md) | $38.18M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [woo-x](./woo-x/brief.md) | $7.08M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [wrapped](./wrapped/brief.md) | $23.88M | celo | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [wrapped](./wrapped/brief.md) | $20.11M | celo, ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [wrapped-bnb](./wrapped-bnb/brief.md) | $5.48M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/brief.md) | $1.17M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [ybtc.b](./ybtc.b/brief.md) | $83.93M | bsc | 12 | 0/12 (0%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
@@ -726,5 +726,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-12T12:47:44.156Z_
+_Generated: 2026-06-12T12:55:44.174Z_
 _Projects: 714_

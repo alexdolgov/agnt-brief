@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "morpheusai",
-  "generated_at": "2026-06-11T11:27:21.308Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
+  "generated_at": "2026-06-12T12:50:37.645Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-fc52",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "morpheusai",
@@ -32,14 +32,14 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 47,
-    "total_addresses": 96,
-    "unique_implementations": 47,
-    "total_deployments": 96,
+    "total_contracts": 51,
+    "total_addresses": 106,
+    "unique_implementations": 51,
+    "total_deployments": 106,
     "audited_contracts": 0,
-    "unaudited_contracts": 47,
+    "unaudited_contracts": 51,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 47,
+    "contracts_verified_unaudited": 51,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
@@ -55,6 +55,7 @@
     "website_url": "https://mor.org",
     "chains": [
       "arbitrum",
+      "base",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -74,7 +75,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 47,
+    "unique_implementations": 51,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -89,8 +90,8 @@
       "address": "0x3b51989212bedab926794d6bf8e9e991218cf116",
       "name": "DepositPool",
       "role": "core_logic",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": "MorpheusAI",
       "tvl_usd": 621.8316835458662,
       "is_proxy": true,
@@ -174,7 +175,7 @@
       "address": "0x969c0f87623dc33010b4069fea48316ba2e45382",
       "name": "Builders",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -205,7 +206,7 @@
       "address": "0x232c15275affa0ee944f6894d57e013647416aa1",
       "name": "BuildersTreasury",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -236,14 +237,23 @@
       "address": "0x031075f7a853e8d4bf0b525466a78374afaa9308",
       "name": "BuildersTreasuryV2",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
-      "impl_address": "0x031075f7a853e8d4bf0b525466a78374afaa9308",
+      "impl_address": "0xe71eb0b69bbd4207e2cb10df929d1311d2ad57e5",
       "impl_name": "BuildersTreasuryV2",
       "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x9eba628581896ce086cb8f1a513ea6097a8fc561",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
@@ -276,7 +286,7 @@
       "address": "0xa8603114c7bce3a622f2d36286b29c6f51c14fe6",
       "name": "BuildersV2",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -307,7 +317,7 @@
       "address": "0xccc06767533563fbdcff2e1800e4a266fbd01532",
       "name": "BuildersV3",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -333,19 +343,28 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x6cce082851add4c535352f596662521b4de4750e",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x42bb446eae6dca7723a9ebdb81ea88afe77ef4b9",
       "name": "BuildersV4",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "MorpheusAI",
+      "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x6cce082851add4c535352f596662521b4de4750e",
+      "is_proxy": true,
+      "impl_address": "0x18faef315b40a6d9cf49628f1133b1aa507513b0",
       "impl_name": "BuildersV4",
       "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x42bb446eae6dca7723a9ebdb81ea88afe77ef4b9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
@@ -378,8 +397,8 @@
       "address": "0x18faef315b40a6d9cf49628f1133b1aa507513b0",
       "name": "ChainLinkDataConsumer",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -427,14 +446,23 @@
       "address": "0x136538a0d320a29e29fe661fb893714a0ecea76a",
       "name": "DelegateFactory",
       "role": "registry",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
-      "impl_address": "0x136538a0d320a29e29fe661fb893714a0ecea76a",
+      "impl_address": "0x3b51989212bedab926794d6bf8e9e991218cf116",
       "impl_name": "DelegateFactory",
       "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x1b48365e33802943b5d98954efabd366f04ff924",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
@@ -467,7 +495,7 @@
       "address": "0xe9d4b4eb60d16c90280ef93a823f373518462d83",
       "name": "Delegation",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -498,7 +526,7 @@
       "address": "0x24c09a0c047e8a439f26682ea51c7157b3ccc20b",
       "name": "Distribution",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -538,7 +566,7 @@
       "address": "0x6948b5f0bc85caf60859da2222a5483a84d44f97",
       "name": "DistributionExt",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -578,7 +606,7 @@
       "address": "0xc281724c309118110d5d4073ff3cb732144eaf57",
       "name": "DistributionToArb",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -609,7 +637,7 @@
       "address": "0xefb3af6505b343a206a39666884c25a07e36b6d0",
       "name": "DistributionToArbV5",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -640,7 +668,7 @@
       "address": "0x383ebffd2e6a956242392581d73f60dfb4d4f18e",
       "name": "DistributionToBase",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -671,7 +699,7 @@
       "address": "0x6db545f73e32a0ba6f100803a2f0dce044101dbc",
       "name": "DistributionToBaseV5",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -702,7 +730,7 @@
       "address": "0x31bf07f9c4316d461db35b2435f1bec21c783294",
       "name": "DistributionV2",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -733,7 +761,7 @@
       "address": "0xaddd7bbedd9dd2e72649217ea784069821f44ab9",
       "name": "DistributionV3",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -764,7 +792,7 @@
       "address": "0x68b9d05add55769b1e4808a74b616fa37f6da294",
       "name": "DistributionV4",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -795,7 +823,7 @@
       "address": "0xc1292bed7df044c03d8f2cc6cb13d0bd6c96720a",
       "name": "DistributionV5",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -826,7 +854,7 @@
       "address": "0x5b660ab78f3ac743953f9e68630a2d66e7b45f64",
       "name": "Distributor",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -857,7 +885,7 @@
       "address": "0x52f76e8be3dfabcc3b0ded02882a22be47dade03",
       "name": "DistributorV2",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "MorpheusAI",
       "tvl_usd": null,
@@ -897,8 +925,8 @@
       "address": "0x33e689846b1f143793c9d270a26016615a1cae83",
       "name": "FeeConfig",
       "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -918,6 +946,15 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x55daa99a07f5deabdcd94d0c5a592661b82613eb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x845fbb4b3e2207bf03087b8b94d2430ab11088ee",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -955,7 +992,7 @@
       "address": "0xc1588b245a3502a86fdbf0a0f51abac3bbd2e90c",
       "name": "L1ArbSender",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -986,7 +1023,7 @@
       "address": "0xfe8882edd2b7bad22d1968327fa19e17608a1331",
       "name": "L1BaseSender",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1017,8 +1054,8 @@
       "address": "0x969c0f87623dc33010b4069fea48316ba2e45382",
       "name": "L1FactoryToArb",
       "role": "registry",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -1057,8 +1094,8 @@
       "address": "0x890bfa255e6ee8db5c67ab32dc600b14ebc4546c",
       "name": "L1FactoryToBase",
       "role": "registry",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -1097,7 +1134,7 @@
       "address": "0x6b1a3d8f84094667e38247d6fca6f814e11ae9fe",
       "name": "L1Sender",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1137,7 +1174,7 @@
       "address": "0x2bc54ca13a75b24630070e73173cc2f35d66515a",
       "name": "L1SenderV2",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1186,8 +1223,8 @@
       "address": "0x6fd2674e13a42e588f83ae74e5f22a4ee24ed75a",
       "name": "L1SenderV3",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -1226,8 +1263,8 @@
       "address": "0x890bfa255e6ee8db5c67ab32dc600b14ebc4546c",
       "name": "L2Factory",
       "role": "registry",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -1266,7 +1303,7 @@
       "address": "0x2efd4430489e1a05a89c2f51811ac661b7e5ff84",
       "name": "L2MessageReceiver",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1324,7 +1361,7 @@
       "address": "0x7ec51d81a30aa8449cb0b72d4c1b27062956d699",
       "name": "L2MessageReceiverV2",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1355,7 +1392,7 @@
       "address": "0x24c09a0c047e8a439f26682ea51c7157b3ccc20b",
       "name": "L2TokenReceiver",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1395,7 +1432,7 @@
       "address": "0x27353ffadfd53538e8bdf81be7041c56ce2d5ae4",
       "name": "L2TokenReceiverV2",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1453,7 +1490,7 @@
       "address": "0x0e2bb6facf982ecb26bd448a758811a5cf37ee9a",
       "name": "LinearDistributionIntervalDecrease",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1574,7 +1611,7 @@
       "address": "0x345b8b23c38f70f1d77560c60493bb583f012cb0",
       "name": "LockMultiplierMath",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1609,12 +1646,43 @@
       "contamination_flag": "cleared"
     },
     {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x6abe1d282f72b474e54527d93b979a4f64d3030a",
+      "name": "LumerinDiamond",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LumerinDiamond",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6abe1d282f72b474e54527d93b979a4f64d3030a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0xc371404682a2e02c3b46814261bee615e57f48a8",
       "name": "Marketplace",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1637,7 +1705,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 42161,
@@ -1645,7 +1713,7 @@
       "address": "0x2e96cef46d2a82e63570b538ef4ab697a09a3996",
       "name": "ModelRegistry",
       "role": "registry",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1668,7 +1736,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 42161,
@@ -1676,7 +1744,7 @@
       "address": "0x7431ada8a591c955a994a21710752ef9b882b8e3",
       "name": "MOR",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1707,7 +1775,7 @@
       "address": "0xfe8882edd2b7bad22d1968327fa19e17608a1331",
       "name": "MOR20Deployer",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1787,18 +1855,27 @@
       "address": "0x8621e6b808a3d925533446b767b7bca6accb62a2",
       "name": "ProviderRegistry",
       "role": "registry",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
-      "impl_address": null,
+      "impl_address": "0x8621e6b808a3d925533446b767b7bca6accb62a2",
       "impl_name": "ProviderRegistry",
       "deployments": [
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x8621e6b808a3d925533446b767b7bca6accb62a2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xde819aaee474626e3f34ef0263373357e5a6c71b",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1810,7 +1887,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 42161,
@@ -1818,7 +1895,7 @@
       "address": "0xaddd7bbedd9dd2e72649217ea784069821f44ab9",
       "name": "ProvidersDelegate",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1849,7 +1926,7 @@
       "address": "0x62496604116c5172435adbd928edbf36ca7cdfbd",
       "name": "ReferrerLib",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1898,8 +1975,8 @@
       "address": "0x281bc6f84952abe53f6921dcd76c879d3c4b6375",
       "name": "RewardPool",
       "role": "core_logic",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -1919,6 +1996,15 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xe30279b79392aeff7fdf1883c23d52eba9d88a75",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xdc99a8596e395e52aba2bd08c623e1e428dc3980",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1956,7 +2042,7 @@
       "address": "0xab493d93bd9c93c7590865df82f4e09f3df96d4c",
       "name": "SessionRouter",
       "role": "adapter",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1979,13 +2065,106 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7ec3dda3e83ddd4b9f2cfcff0a5213bb8cf31b79",
+      "name": "StETHMock",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StETHMock",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7ec3dda3e83ddd4b9f2cfcff0a5213bb8cf31b79",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x52d00439eadfc53d0005dcaf1914baf9015f82fe",
+      "name": "WETHMock",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WETHMock",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x52d00439eadfc53d0005dcaf1914baf9015f82fe",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x42bb446eae6dca7723a9ebdb81ea88afe77ef4b9",
+      "name": "WStETHMock",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WStETHMock",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x42bb446eae6dca7723a9ebdb81ea88afe77ef4b9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
     }
   ],
   "audits": [
     {
-      "audit_id": 11621,
-      "audit_key": "audit-11621",
+      "audit_id": 12357,
+      "audit_key": "audit-12357",
       "report_name": "Code4rena x Morpheus Capital V2 Audit Report.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Code4rena%20x%20Morpheus%20Capital%20V2%20Audit%20Report.pdf",
       "auditor": "Code4rena",
@@ -2005,8 +2184,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11622,
-      "audit_key": "audit-11622",
+      "audit_id": 12358,
+      "audit_key": "audit-12358",
       "report_name": "MOR20 Contracts | Renascence.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/MOR20%20Contracts%20%7C%20Renascence.pdf",
       "auditor": "yAudit",
@@ -2026,8 +2205,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11623,
-      "audit_key": "audit-11623",
+      "audit_id": 12359,
+      "audit_key": "audit-12359",
       "report_name": "Morpheus Capital V2 Zenith Audit Report.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Morpheus%20Capital%20V2%20Zenith%20Audit%20Report.pdf",
       "auditor": "yAudit",
@@ -2047,8 +2226,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11624,
-      "audit_key": "audit-11624",
+      "audit_id": 12360,
+      "audit_key": "audit-12360",
       "report_name": "Morpheus BuildersV2 Audit Report | Trust Security.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Builders/Morpheus%20BuildersV2%20Audit%20Report%20%7C%20Trust%20Security.pdf",
       "auditor": "yAudit",
@@ -2068,8 +2247,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11625,
-      "audit_key": "audit-11625",
+      "audit_id": 12361,
+      "audit_key": "audit-12361",
       "report_name": "Morpheus Lumerin Audit Report 1 | Renascence.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Compute/Morpheus%20Lumerin%20Audit%20Report%201%20%7C%20Renascence.pdf",
       "auditor": "yAudit",
@@ -2089,8 +2268,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11626,
-      "audit_key": "audit-11626",
+      "audit_id": 12362,
+      "audit_key": "audit-12362",
       "report_name": "Morpheus Lumerin Audit Report 2 | Renascence.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Compute/Morpheus%20Lumerin%20Audit%20Report%202%20%7C%20Renascence.pdf",
       "auditor": "yAudit",
@@ -2110,8 +2289,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11627,
-      "audit_key": "audit-11627",
+      "audit_id": 12363,
+      "audit_key": "audit-12363",
       "report_name": "Morpheus Lumerin Audit Report 3 | Renascence.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Compute/Morpheus%20Lumerin%20Audit%20Report%203%20%7C%20Renascence.pdf",
       "auditor": "yAudit",
@@ -2131,8 +2310,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11628,
-      "audit_key": "audit-11628",
+      "audit_id": 12364,
+      "audit_key": "audit-12364",
       "report_name": "Distribution V1 Audit | Community.md",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Distribution%20Contract/Distribution%20V1%20Audit%20%7C%20Community.md",
       "auditor": "yAudit",
@@ -2152,8 +2331,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11629,
-      "audit_key": "audit-11629",
+      "audit_id": 12365,
+      "audit_key": "audit-12365",
       "report_name": "Distribution V1 Public Bug Bounty | Code Hawks.md",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Distribution%20Contract/Distribution%20V1%20Public%20Bug%20Bounty%20%7C%20Code%20Hawks.md",
       "auditor": "Cyfrin",
@@ -2173,8 +2352,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11630,
-      "audit_key": "audit-11630",
+      "audit_id": 12366,
+      "audit_key": "audit-12366",
       "report_name": "Distribution V2 Audit | Renascence.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Distribution%20Contract/Distribution%20V2%20Audit%20%7C%20Renascence.pdf",
       "auditor": "yAudit",
@@ -2194,8 +2373,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11631,
-      "audit_key": "audit-11631",
+      "audit_id": 12367,
+      "audit_key": "audit-12367",
       "report_name": "Distribution V3 (Capital Staking) Audit | Renascence.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Distribution%20Contract/Distribution%20V3%20(Capital%20Staking)%20Audit%20%7C%20Renascence.pdf",
       "auditor": "yAudit",
@@ -2215,8 +2394,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11632,
-      "audit_key": "audit-11632",
+      "audit_id": 12368,
+      "audit_key": "audit-12368",
       "report_name": "Distribution V3 (Code Staking) Audit | Renascence.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Distribution%20Contract/Distribution%20V3%20(Code%20Staking)%20Audit%20%7C%20Renascence.pdf",
       "auditor": "yAudit",
@@ -2236,8 +2415,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11633,
-      "audit_key": "audit-11633",
+      "audit_id": 12369,
+      "audit_key": "audit-12369",
       "report_name": "Distribution V4 (Claim Lock) Audit | Renascence.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Distribution%20Contract/Distribution%20V4%20(Claim%20Lock)%20Audit%20%7C%20Renascence.pdf",
       "auditor": "yAudit",
@@ -2257,8 +2436,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11634,
-      "audit_key": "audit-11634",
+      "audit_id": 12370,
+      "audit_key": "audit-12370",
       "report_name": "Distribution V5 (Referral Program) Audit | Renascence.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/Distribution%20Contract/Distribution%20V5%20(Referral%20Program)%20Audit%20%7C%20Renascence.pdf",
       "auditor": "yAudit",
@@ -2278,8 +2457,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11635,
-      "audit_key": "audit-11635",
+      "audit_id": 12371,
+      "audit_key": "audit-12371",
       "report_name": "L2TokenReceiverV2 Audit (Final) | Renascence.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/L2%20Token%20Receiver%20V2/L2TokenReceiverV2%20Audit%20(Final)%20%7C%20Renascence.pdf",
       "auditor": "yAudit",
@@ -2299,8 +2478,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11636,
-      "audit_key": "audit-11636",
+      "audit_id": 12372,
+      "audit_key": "audit-12372",
       "report_name": "L2TokenReceiverV2 Audit (Initial) | Renascence.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/L2%20Token%20Receiver%20V2/L2TokenReceiverV2%20Audit%20(Initial)%20%7C%20Renascence.pdf",
       "auditor": "yAudit",
@@ -2320,8 +2499,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11637,
-      "audit_key": "audit-11637",
+      "audit_id": 12373,
+      "audit_key": "audit-12373",
       "report_name": "MOR Dynamic Minter Security Audit (Wormhole) | Renascence.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/MOR%20OFT%20Token/MOR%20Dynamic%20Minter%20Security%20Audit%20(Wormhole)%20%7C%20Renascence.pdf",
       "auditor": "yAudit",
@@ -2341,8 +2520,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11638,
-      "audit_key": "audit-11638",
+      "audit_id": 12374,
+      "audit_key": "audit-12374",
       "report_name": "MOR Token Contract | OpenZepellin.pdf",
       "report_url": "https://github.com/MorpheusAIs/Docs/blob/main/Security%20Audit%20Reports/MOR%20OFT%20Token/MOR%20Token%20Contract%20%7C%20OpenZepellin.pdf",
       "auditor": "yAudit",
@@ -2363,393 +2542,12 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x969c0f87623dc33010b4069fea48316ba2e45382",
-      "name": "Builders",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x232c15275affa0ee944f6894d57e013647416aa1",
-      "name": "BuildersTreasury",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x031075f7a853e8d4bf0b525466a78374afaa9308",
-      "name": "BuildersTreasuryV2",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xa8603114c7bce3a622f2d36286b29c6f51c14fe6",
-      "name": "BuildersV2",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xccc06767533563fbdcff2e1800e4a266fbd01532",
-      "name": "BuildersV3",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x6cce082851add4c535352f596662521b4de4750e",
-      "name": "BuildersV4",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x136538a0d320a29e29fe661fb893714a0ecea76a",
-      "name": "DelegateFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xe9d4b4eb60d16c90280ef93a823f373518462d83",
-      "name": "Delegation",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x24c09a0c047e8a439f26682ea51c7157b3ccc20b",
-      "name": "Distribution",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6948b5f0bc85caf60859da2222a5483a84d44f97",
-      "name": "DistributionExt",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc281724c309118110d5d4073ff3cb732144eaf57",
-      "name": "DistributionToArb",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xefb3af6505b343a206a39666884c25a07e36b6d0",
-      "name": "DistributionToArbV5",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x383ebffd2e6a956242392581d73f60dfb4d4f18e",
-      "name": "DistributionToBase",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6db545f73e32a0ba6f100803a2f0dce044101dbc",
-      "name": "DistributionToBaseV5",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x31bf07f9c4316d461db35b2435f1bec21c783294",
-      "name": "DistributionV2",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xaddd7bbedd9dd2e72649217ea784069821f44ab9",
-      "name": "DistributionV3",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x68b9d05add55769b1e4808a74b616fa37f6da294",
-      "name": "DistributionV4",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc1292bed7df044c03d8f2cc6cb13d0bd6c96720a",
-      "name": "DistributionV5",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5b660ab78f3ac743953f9e68630a2d66e7b45f64",
-      "name": "Distributor",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x52f76e8be3dfabcc3b0ded02882a22be47dade03",
-      "name": "DistributorV2",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc1588b245a3502a86fdbf0a0f51abac3bbd2e90c",
-      "name": "L1ArbSender",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xfe8882edd2b7bad22d1968327fa19e17608a1331",
-      "name": "L1BaseSender",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6b1a3d8f84094667e38247d6fca6f814e11ae9fe",
-      "name": "L1Sender",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2bc54ca13a75b24630070e73173cc2f35d66515a",
-      "name": "L1SenderV2",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x2efd4430489e1a05a89c2f51811ac661b7e5ff84",
-      "name": "L2MessageReceiver",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x7ec51d81a30aa8449cb0b72d4c1b27062956d699",
-      "name": "L2MessageReceiverV2",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x24c09a0c047e8a439f26682ea51c7157b3ccc20b",
-      "name": "L2TokenReceiver",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x27353ffadfd53538e8bdf81be7041c56ce2d5ae4",
-      "name": "L2TokenReceiverV2",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0e2bb6facf982ecb26bd448a758811a5cf37ee9a",
-      "name": "LinearDistributionIntervalDecrease",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x345b8b23c38f70f1d77560c60493bb583f012cb0",
-      "name": "LockMultiplierMath",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xc371404682a2e02c3b46814261bee615e57f48a8",
-      "name": "Marketplace",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x2e96cef46d2a82e63570b538ef4ab697a09a3996",
-      "name": "ModelRegistry",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x7431ada8a591c955a994a21710752ef9b882b8e3",
-      "name": "MOR",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xfe8882edd2b7bad22d1968327fa19e17608a1331",
-      "name": "MOR20Deployer",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x8621e6b808a3d925533446b767b7bca6accb62a2",
-      "name": "ProviderRegistry",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xaddd7bbedd9dd2e72649217ea784069821f44ab9",
-      "name": "ProvidersDelegate",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x62496604116c5172435adbd928edbf36ca7cdfbd",
-      "name": "ReferrerLib",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xab493d93bd9c93c7590865df82f4e09f3df96d4c",
-      "name": "SessionRouter",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 38,
+    "native": 0,
     "upstream": 0,
-    "standard_library": 8,
-    "needs_review": 1
+    "standard_library": 0,
+    "needs_review": 51
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -2758,75 +2556,75 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 11621,
+        "audit_id": 12357,
         "report_name": "Code4rena x Morpheus Capital V2 Audit Report.pdf"
       },
       {
-        "audit_id": 11622,
+        "audit_id": 12358,
         "report_name": "MOR20 Contracts | Renascence.pdf"
       },
       {
-        "audit_id": 11623,
+        "audit_id": 12359,
         "report_name": "Morpheus Capital V2 Zenith Audit Report.pdf"
       },
       {
-        "audit_id": 11624,
+        "audit_id": 12360,
         "report_name": "Morpheus BuildersV2 Audit Report | Trust Security.pdf"
       },
       {
-        "audit_id": 11625,
+        "audit_id": 12361,
         "report_name": "Morpheus Lumerin Audit Report 1 | Renascence.pdf"
       },
       {
-        "audit_id": 11626,
+        "audit_id": 12362,
         "report_name": "Morpheus Lumerin Audit Report 2 | Renascence.pdf"
       },
       {
-        "audit_id": 11627,
+        "audit_id": 12363,
         "report_name": "Morpheus Lumerin Audit Report 3 | Renascence.pdf"
       },
       {
-        "audit_id": 11628,
+        "audit_id": 12364,
         "report_name": "Distribution V1 Audit | Community.md"
       },
       {
-        "audit_id": 11629,
+        "audit_id": 12365,
         "report_name": "Distribution V1 Public Bug Bounty | Code Hawks.md"
       },
       {
-        "audit_id": 11630,
+        "audit_id": 12366,
         "report_name": "Distribution V2 Audit | Renascence.pdf"
       },
       {
-        "audit_id": 11631,
+        "audit_id": 12367,
         "report_name": "Distribution V3 (Capital Staking) Audit | Renascence.pdf"
       },
       {
-        "audit_id": 11632,
+        "audit_id": 12368,
         "report_name": "Distribution V3 (Code Staking) Audit | Renascence.pdf"
       },
       {
-        "audit_id": 11633,
+        "audit_id": 12369,
         "report_name": "Distribution V4 (Claim Lock) Audit | Renascence.pdf"
       },
       {
-        "audit_id": 11634,
+        "audit_id": 12370,
         "report_name": "Distribution V5 (Referral Program) Audit | Renascence.pdf"
       },
       {
-        "audit_id": 11635,
+        "audit_id": 12371,
         "report_name": "L2TokenReceiverV2 Audit (Final) | Renascence.pdf"
       },
       {
-        "audit_id": 11636,
+        "audit_id": 12372,
         "report_name": "L2TokenReceiverV2 Audit (Initial) | Renascence.pdf"
       },
       {
-        "audit_id": 11637,
+        "audit_id": 12373,
         "report_name": "MOR Dynamic Minter Security Audit (Wormhole) | Renascence.pdf"
       },
       {
-        "audit_id": 11638,
+        "audit_id": 12374,
         "report_name": "MOR Token Contract | OpenZepellin.pdf"
       }
     ],

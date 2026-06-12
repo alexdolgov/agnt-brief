@@ -1,0 +1,18 @@
+{
+  "address": "0x07d274a68393e8b8a2ccf19a2ce4ba3518735253",
+  "chain_id": 56,
+  "contract_name": "TimeLock",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": "MIT, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T12:54:59.791Z"
+}

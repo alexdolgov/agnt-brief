@@ -1,48 +1,49 @@
 {
   "schema_version": "2.0",
   "project_key": "wrapped",
-  "generated_at": "2026-05-31T11:38:02.895Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-12T12:48:23.206Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-fc52",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "wrapped",
     "tier": 0,
     "peak_tvl": 64118649,
     "peak_date": "2025-07-18T00:00:00.000Z",
-    "tvl_30d_ago": 25642483,
-    "tvl_90d_ago": 25619266,
-    "tvl_current": 24431032,
+    "tvl_30d_ago": 25690198,
+    "tvl_90d_ago": 25288160,
+    "tvl_current": 20391957,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 36734199,
-    "change_30d_pct": -4.724390379823982,
-    "change_90d_pct": -4.638048568604581,
-    "days_since_peak": 308,
+    "tvl_180d_ago": 35661628,
+    "change_30d_pct": -20.62358958852711,
+    "change_90d_pct": -19.361641969997027,
+    "days_since_peak": 329,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 61.89715101451997
+    "drop_from_peak_pct": 68.1965273472933
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 23875180.93902,
-    "tvl_usd": 23875180.93902,
+    "dl_tvl_usd": 20108132.188610002,
+    "tvl_usd": 20108132.188610002,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://wrapped.com",
     "chains": [
-      "celo"
+      "celo",
+      "ethereum"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
@@ -56,9 +57,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Wrapped is a cross-chain bridge protocol that enables users to lock assets on one chain and mint wrapped representations on another, facilitating asset transfers between Ethereum and Celo. It also includes staking and liquidity pool mechanisms to incentivize participation and provide yield.",
-    "relationship_narrative": "The Wrapped family shares a common bridging architecture where bVault contracts lock native assets and mint wrapped tokens like ArcxTokenV2 and ERC20Peg. Liquidity pools (BAC pools) and staking contracts (BlackPoolToken, StakedBPT) are supported by MasterChef for reward distribution, while external integrations like UniswapV2Pair and AutoFarmV2_CrossChain provide additional liquidity and yield aggregation.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -71,8 +77,8 @@
       "address": "0xdd11b66b90402f294a017c4688509c364312303f",
       "name": "AutoFarmV2_CrossChain",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Autofarm",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": "Wrapped",
       "tvl_usd": null,
       "is_proxy": false,
@@ -95,6 +101,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0ab2851cf7bdd6309c8507ea5cc52e2ec3ece8dc",
+      "name": "TokenSoftToken",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x43c3983778ec88f0c383134e812c0c58a819add0",
+      "impl_name": "TokenSoftToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0ab2851cf7bdd6309c8507ea5cc52e2ec3ece8dc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [],
@@ -102,9 +139,9 @@
   "coverage_gaps": [],
   "origin_summary": {
     "native": 0,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},

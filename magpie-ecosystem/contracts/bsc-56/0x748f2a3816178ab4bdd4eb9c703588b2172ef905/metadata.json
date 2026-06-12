@@ -1,0 +1,17 @@
+{
+  "address": "0x748f2a3816178ab4bdd4eb9c703588b2172ef905",
+  "chain_id": 56,
+  "contract_name": "MerkleVerifier",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T12:55:05.810Z"
+}

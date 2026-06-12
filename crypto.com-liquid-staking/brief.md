@@ -4,18 +4,18 @@
 
 - Project: Crypto.com Liquid Staking (`crypto.com-liquid-staking`)
 - Website: [https://crypto.com/staking](https://crypto.com/staking)
-- Lifecycle: active (Tier 0, 86.8% below peak)
-- Generated: 2026-06-10T22:34:36.370Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
-- Chains: cronos
-- Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $25,388,734.68
+- Lifecycle: active (Tier 0, 88.9% below peak)
+- Generated: 2026-06-12T12:50:48.284Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-fc52
+- Chains: cronos, ethereum
+- Contract surface: 2 unique implementations (3 raw deployments)
+- DeFi Llama TVL: $20,023,846.22
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
@@ -24,12 +24,12 @@ Crypto.com Liquid Staking is tracked as liquid staking receipt tokens across Cro
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 1
-- Raw deployments: 1
+- Unique implementations: 2
+- Raw deployments: 3
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -47,9 +47,11 @@ Crypto.com Liquid Staking is tracked as liquid staking receipt tokens across Cro
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| LiquidETHV1 | unknown | ethereum | 2 deployments: ethereum [`0x7e772e...669253`](./contracts/ethereum-1/0x7e772ed6e4bfeae80f2d58e4254f6b6e96669253/); ethereum `0xfe18ae...91c38e` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,10 +88,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

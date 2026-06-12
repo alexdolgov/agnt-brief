@@ -1,0 +1,18 @@
+{
+  "address": "0x2ed866ca9c33bf695c78af222d61bd4d9cb558d3",
+  "chain_id": 56,
+  "contract_name": "ListaAirdrop",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T12:55:02.803Z"
+}

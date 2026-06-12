@@ -7,13 +7,13 @@
 - Project: Grvt (`grvt`)
 - Website: [https://grvt.io/?ref=WCDISXW](https://grvt.io/?ref=WCDISXW)
 - Lifecycle: declining (Tier 0, 52.2% below peak)
-- Generated: 2026-06-10T23:39:58.552Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
+- Generated: 2026-06-12T08:37:48.052Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-645a
 - Chains: ethereum
-- Contract surface: 7 unique implementations (12 raw deployments)
-- DeFi Llama TVL: $55,387,476.00
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- Contract surface: 12 unique implementations (18 raw deployments)
+- DeFi Llama TVL: $51,179,228.00
+- On-chain TVL (included contracts): $39,142,673.50
+- TVL by chain: Ethereum $39,142,673.50
 
 ## Project Description
 
@@ -25,19 +25,19 @@ The Grvt Bridge family relies on the NativeBridgeGateway to handle cross-chain m
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/7 (0.0%)
-- Verified + Unaudited implementations: 7
+- Verified implementations audited: 0/12 (0.0%)
+- Verified + Unaudited implementations: 12
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 7
-- Raw deployments: 12
+- Unique implementations: 12
+- Raw deployments: 18
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $39,142,673.50
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $39,142,673.50 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,11 +49,16 @@ The Grvt Bridge family relies on the NativeBridgeGateway to handle cross-chain m
 
 - None
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (12)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| AaveV3Strategy | core_logic | ethereum | [`0x1ff873...07a5e4`](./contracts/ethereum-1/0x1ff873538e62ba19cd36ce97e48f6fc84d07a5e4/) | ⚠️ Unaudited |
+| L1NativeTokenVault | core_logic | ethereum | [`0xbed1eb...1111f6`](./contracts/ethereum-1/0xbed1eb542f9a5aa6419ff3deb921a372681111f6/) | ⚠️ Unaudited |
+| PoolInstance | core_logic | ethereum | [`0x87870b...4fa4e2`](./contracts/ethereum-1/0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2/) | ⚠️ Unaudited |
+| AaveV3Strategy | core_logic | ethereum | 2 deployments: ethereum [`0x1ff873...07a5e4`](./contracts/ethereum-1/0x1ff873538e62ba19cd36ce97e48f6fc84d07a5e4/); ethereum `0xac2b5c...ee50fb` | ⚠️ Unaudited |
+| ATokenInstance | token | ethereum | [`0x238789...d4086a`](./contracts/ethereum-1/0x23878914efe38d27c4d67ab83ed1b93a74d4086a/) | ⚠️ Unaudited |
+| Bridgehub | operational_periphery | ethereum | [`0x303a46...eb5213`](./contracts/ethereum-1/0x303a465b659cbb0ab36ee643ea362c509eeb5213/) | ⚠️ Unaudited |
+| GRVTBridgeProxy | operational_periphery | ethereum | [`0xe17aed...113a65`](./contracts/ethereum-1/0xe17aed2fc55f4a876315376ffa49fe6358113a65/) | ⚠️ Unaudited |
 | GRVTL1TreasuryVault | operational_periphery | ethereum | 2 deployments: ethereum [`0x11f6ee...a4ef2e`](./contracts/ethereum-1/0x11f6ee88e10f3ac0c1560b5fd43300f6dda4ef2e/); ethereum `0xc95fed...b48f45` | ⚠️ Unaudited |
 | NativeBridgeGateway | operational_periphery | ethereum | 5 deployments: ethereum [`0x17cbac...161915`](./contracts/ethereum-1/0x17cbac7631063d8a79ddb5c3fc7c2336f0161915/); ethereum `0x6e93c9...864473`; ethereum `0xa0b497...761f8d`; ethereum `0xa20697...aebf65`; ethereum `0xf1d59a...3c599c` | ⚠️ Unaudited |
 | NativeVaultGateway | core_logic | ethereum | [`0x81ef29...12c7b9`](./contracts/ethereum-1/0x81ef29d82c5232627976d182c0a2be177412c7b9/) | ⚠️ Unaudited |
@@ -88,21 +93,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x11f6ee...a4ef2e`](./contracts/ethereum-1/0x11f6ee88e10f3ac0c1560b5fd43300f6dda4ef2e/) | GRVTL1TreasuryVault | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x81ef29...12c7b9`](./contracts/ethereum-1/0x81ef29d82c5232627976d182c0a2be177412c7b9/) | NativeVaultGateway | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xff61d6...89a915`](./contracts/ethereum-1/0xff61d6c6e8334d8cf73011c1069b411f4789a915/) | VaultBridgeLib | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xff41bb...c8d86f`](./contracts/ethereum-1/0xff41bb293a6eb4bda4f799137be5aa781dc8d86f/) | VaultStrategyOpsLib | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 0 |
 | upstream | 0 |
-| standard_library | 3 |
-| needs_review | 0 |
+| standard_library | 0 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 

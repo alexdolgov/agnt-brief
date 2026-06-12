@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nado",
-  "generated_at": "2026-06-11T01:17:45.932Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-2b99",
+  "generated_at": "2026-06-12T08:40:04.381Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-645a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "nado",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 54956474,
-    "tvl_usd": 54956474,
+    "dl_tvl_usd": 49334317,
+    "tvl_usd": 49334317,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

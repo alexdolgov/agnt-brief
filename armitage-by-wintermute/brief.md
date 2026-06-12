@@ -1,41 +1,43 @@
 # Agentic Audit Brief: Armitage by Wintermute
 
+⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
+
 ## Project Overview
 
 - Project: Armitage by Wintermute (`armitage-by-wintermute`)
 - Website: [https://armitage.wintermute.com](https://armitage.wintermute.com)
-- Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:58:57.746Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Lifecycle: unknown (Tier 0, TVL trajectory)
+- Generated: 2026-06-12T08:37:39.206Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-645a
 - Chains: ethereum
-- Contract surface: 1 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $51,051,101.46
+- Contract surface: 7 unique implementations (9 raw deployments)
+- DeFi Llama TVL: $52,007,611.73
 - On-chain TVL (included contracts): $51,808,883.67
 - TVL by chain: Ethereum $51,808,883.67
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Armitage by Wintermute is Wintermute's onchain vault curation product for yield-bearing DeFi vaults. It curates and manages risk for depositors, currently including Prime and Select USDC vaults on Ethereum.
 
+### Architecture
+
+The protocol consists of a single product family with two instances of the VaultV2 contract, likely representing separate vaults for different assets or strategies, sharing the same core logic.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/7 (0.0%)
+- Verified + Unaudited implementations: 7
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 2
+- Unique implementations: 7
+- Raw deployments: 9
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $51,808,883.67
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [unknown]. ASD of $51,808,883.67 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -47,11 +49,17 @@ Armitage by Wintermute is Wintermute's onchain vault curation product for yield-
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | VaultV2 | core_logic | ethereum | 2 deployments: ethereum [`0x5dc53a...71ff2b`](./contracts/ethereum-1/0x5dc53a23adc9f2bed98de6f59f7f309a7c71ff2b/); ethereum `0xa2eaad...7d68cd` | ⚠️ Unaudited |
+| Morpho | unknown | ethereum | [`0xbbbbbb...eeffcb`](./contracts/ethereum-1/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
+| MorphoMarketV1AdapterV2Factory | adapter | ethereum | [`0x32bb1c...61ccc1`](./contracts/ethereum-1/0x32bb1c0d48d8b1b3363e86eeb9a0300bad61ccc1/) | ⚠️ Unaudited |
+| MorphoVaultV1AdapterFactory | adapter | ethereum | [`0xd1b8e2...f63394`](./contracts/ethereum-1/0xd1b8e2dee25c2b89dcd2f98448a7ce87d6f63394/) | ⚠️ Unaudited |
+| RegistryList | registry | ethereum | [`0x3696c5...d9364e`](./contracts/ethereum-1/0x3696c5eae4a7ffd04ea163564571e9cd8ed9364e/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | 2 deployments: ethereum [`0x4687e4...1d74d8`](./contracts/ethereum-1/0x4687e45bb5518a995913a24bb2816fe2031d74d8/); ethereum `0xb83a77...559e5e` | ⚠️ Unaudited |
+| VaultV2Factory | registry | ethereum | [`0xa1d94f...6c0405`](./contracts/ethereum-1/0xa1d94f746defa1928926b84fb2596c06926c0405/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -80,18 +88,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x5dc53a...71ff2b`](./contracts/ethereum-1/0x5dc53a23adc9f2bed98de6f59f7f309a7c71ff2b/) | VaultV2 | core_logic | $51,808,883.67 | Verified native implementation with $51,808,883.67 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
-| upstream | 0 |
+| native | 0 |
+| upstream | 3 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

@@ -47,7 +47,7 @@
 | [arcade.xyz](./arcade.xyz/) | $240.1K | 67.4% | ? | declining | 10 | 60 | 2026-06-10 |
 | [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-06-10 |
 | [aria-protocol](./aria-protocol/) | $181.1K | 0.0% | ? | dead | 1 | 1 | 2026-06-10 |
-| [armitage-by-wintermute](./armitage-by-wintermute/) | $51.8M | 0.0% | $51.8M | active | 0 | 1 | 2026-06-10 |
+| [armitage-by-wintermute](./armitage-by-wintermute/) | $51.8M | 0.0% | $51.8M | unknown | 0 | 7 | 2026-06-12 |
 | [arrakis-finance](./arrakis-finance/) | $128.2K | 19.4% | $3.1K | active | 8 | 124 | 2026-06-10 |
 | [asseto-aoabt](./asseto-aoabt/) | $24.3M | 0.0% | ? | active | 1 | 2 | 2026-06-12 |
 | [asseto-cash+](./asseto-cash+/) | $1.4M | 0.0% | ? | declining | 1 | 2 | 2026-06-10 |
@@ -89,6 +89,7 @@
 | [bitway-earn](./bitway-earn/) | $136.4M | 0.0% | $136.4M | active | 3 | 8 | 2026-06-12 |
 | [bitway](./bitway/) | $136.4M | 0.0% | $136.4M | active | 3 | 8 | 2026-06-12 |
 | [blackhole](./blackhole/) | $29.7M | 31.1% | ? | declining | 3 | 86 | 2026-06-10 |
+| [blast-l2](./blast-l2/) | $568.9 | 0.0% | $568.9 | unknown | 0 | 295 | 2026-06-12 |
 | [block-analitica](./block-analitica/) | $252.8K | 0.0% | $252.8K | declining | 0 | 18 | 2026-06-10 |
 | [blueshift](./blueshift/) | $4.3M | 0.0% | ? | active | 1 | 23 | 2026-06-10 |
 | [blur](./blur/) | $91.7M | 0.0% | $91.7M | active | 0 | 17 | 2026-06-10 |
@@ -240,7 +241,7 @@
 | [gravity-bridge](./gravity-bridge/) | $91.3M | 0.0% | $91.3M | active | 0 | 152 | 2026-06-10 |
 | [gro](./gro/) | $2.9M | 0.0% | $2.9M | declining | 0 | 124 | 2026-06-10 |
 | [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [grvt](./grvt/) | $55.4M | 0.0% | ? | declining | 0 | 7 | 2026-06-10 |
+| [grvt](./grvt/) | $39.1M | 0.0% | $39.1M | declining | 0 | 12 | 2026-06-12 |
 | [guru-network-dao](./guru-network-dao/) | $2.3M | 0.0% | ? | active | 0 | 54 | 2026-06-10 |
 | [gyroscope-protocol](./gyroscope-protocol/) | $44.6 | 21.3% | ? | declining | 10 | 233 | 2026-06-10 |
 | [h2-finance](./h2-finance/) | $3.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -389,7 +390,7 @@
 | [mux-protocol](./mux-protocol/) | $862.0K | 21.7% | $862.0K | active | 2 | 1198 | 2026-06-11 |
 | [mvl-staking](./mvl-staking/) | $38.1M | 50.0% | ? | unknown | 2 | 49 | 2026-06-11 |
 | [mystic-finance](./mystic-finance/) | $5.8M | 0.0% | ? | unknown | 10 | 0 | 2026-06-11 |
-| [nado](./nado/) | $55.0M | 0.0% | ? | active | 0 | 22 | 2026-06-11 |
+| [nado](./nado/) | $49.3M | 0.0% | ? | active | 0 | 22 | 2026-06-12 |
 | [native](./native/) | $67.6M | 0.0% | $67.6M | active | 0 | 80 | 2026-06-12 |
 | [nawa-protocol](./nawa-protocol/) | $4.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [nbx](./nbx/) | $1.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |

@@ -1,0 +1,18 @@
+{
+  "address": "0x2600004fd1585f7270756ddc88ad9cfa10dd0428",
+  "chain_id": 1,
+  "contract_name": "GemJoin5",
+  "compiler_version": "v0.5.12+commit.7709ece9",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "petersburg",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T09:09:10.591Z"
+}

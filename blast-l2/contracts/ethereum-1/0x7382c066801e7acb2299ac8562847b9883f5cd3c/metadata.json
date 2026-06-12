@@ -1,0 +1,18 @@
+{
+  "address": "0x7382c066801e7acb2299ac8562847b9883f5cd3c",
+  "chain_id": 1,
+  "contract_name": "OSM",
+  "compiler_version": "v0.5.12+commit.7709ece9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "petersburg",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T09:09:14.701Z"
+}

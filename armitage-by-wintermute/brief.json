@@ -1,41 +1,41 @@
 {
   "schema_version": "2.0",
   "project_key": "armitage-by-wintermute",
-  "generated_at": "2026-06-10T20:58:57.746Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-12T08:37:39.206Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-645a",
+  "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "armitage-by-wintermute",
     "tier": 0,
-    "peak_tvl": 51847040,
-    "peak_date": "2026-05-31T06:28:23.000Z",
+    "peak_tvl": 52011311,
+    "peak_date": "2026-06-04T00:00:00.000Z",
     "tvl_30d_ago": null,
     "tvl_90d_ago": null,
-    "tvl_current": 51847040,
+    "tvl_current": 51999009,
     "tier0_reason": "no_rule_matched",
     "tvl_180d_ago": null,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 0,
+    "days_since_peak": 8,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 0
+    "drop_from_peak_pct": 0.023652547423770955
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 2,
-    "unique_implementations": 1,
-    "total_deployments": 2,
+    "total_contracts": 7,
+    "total_addresses": 9,
+    "unique_implementations": 7,
+    "total_deployments": 9,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 7,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 7,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 51051101.45919,
+    "dl_tvl_usd": 52007611.72767,
     "tvl_usd": 51808883.671592,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -59,13 +59,13 @@
   },
   "topography": {
     "project_purpose": "Armitage by Wintermute is Wintermute's onchain vault curation product for yield-bearing DeFi vaults. It curates and manages risk for depositors, currently including Prime and Select USDC vaults on Ethereum.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The protocol consists of a single product family with two instances of the VaultV2 contract, likely representing separate vaults for different assets or strategies, sharing the same core logic.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 7,
     "has_non_token_contracts": true,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -78,7 +78,7 @@
       "address": "0x5dc53a23adc9f2bed98de6f59f7f309a7c71ff2b",
       "name": "VaultV2",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Armitage by Wintermute",
       "tvl_usd": 51808883.671592,
@@ -111,27 +111,211 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "name": "Morpho",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Morpho",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Morpho",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x32bb1c0d48d8b1b3363e86eeb9a0300bad61ccc1",
+      "name": "MorphoMarketV1AdapterV2Factory",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "Morpho",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MorphoMarketV1AdapterV2Factory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x32bb1c0d48d8b1b3363e86eeb9a0300bad61ccc1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd1b8e2dee25c2b89dcd2f98448a7ce87d6f63394",
+      "name": "MorphoVaultV1AdapterFactory",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "Morpho",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MorphoVaultV1AdapterFactory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd1b8e2dee25c2b89dcd2f98448a7ce87d6f63394",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3696c5eae4a7ffd04ea163564571e9cd8ed9364e",
+      "name": "RegistryList",
+      "role": "registry",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RegistryList",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3696c5eae4a7ffd04ea163564571e9cd8ed9364e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4687e45bb5518a995913a24bb2816fe2031d74d8",
+      "name": "Safe",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x41675c099f32341bf84bfc5382af534df5c7461a",
+      "impl_name": "Safe",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4687e45bb5518a995913a24bb2816fe2031d74d8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb83a77677c51aaf6c45b0b64199eae6938559e5e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa1d94f746defa1928926b84fb2596c06926c0405",
+      "name": "VaultV2Factory",
+      "role": "registry",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultV2Factory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa1d94f746defa1928926b84fb2596c06926c0405",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5dc53a23adc9f2bed98de6f59f7f309a7c71ff2b",
-      "name": "VaultV2",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 51808883.671592,
-      "risk_note": "Verified native implementation with $51,808,883.67 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
-    "upstream": 0,
+    "native": 0,
+    "upstream": 3,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 4
   },
   "scope_matching_notes": {
     "match_method_counts": {},

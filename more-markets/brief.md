@@ -7,11 +7,11 @@
 - Project: MORE Markets (`more-markets`)
 - Website: [https://www.more.markets](https://www.more.markets)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T01:14:47.528Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
+- Generated: 2026-06-12T22:37:38.569Z
+- Pipeline run: v2-pipeline-2026-06-12-546062-9d5a
 - Chains: arbitrum, avalanche, base, ethereum
 - Contract surface: 21 unique implementations (25 raw deployments)
-- DeFi Llama TVL: $11,458,602.88
+- DeFi Llama TVL: $10,328,592.27
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 

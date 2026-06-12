@@ -6,8 +6,8 @@
 | Address | `0xc693a80b13763b3c69cceed4c434e9f1cfc03f77` |
 | Role | unknown |
 | Origin | needs_review |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [2026.02.19-certik.pdf](https://github.com/superearn-io/superearn-audit-reports/blob/main/2026.02.19-certik.pdf) |
 | Deployments | 1 (ethereum [`0xc693a80b13763b3c69cceed4c434e9f1cfc03f77`](../0xc693a80b13763b3c69cceed4c434e9f1cfc03f77/)) |
 | Proxy | Yes → `0x7e24c7...567348` |
 | Source | Sourcify (partial match) |

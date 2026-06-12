@@ -5,17 +5,17 @@
 - Project: LeveX (`levex`)
 - Website: [https://levex.com/en/assets/proof-of-reserve](https://levex.com/en/assets/proof-of-reserve)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T00:39:45.607Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
-- Chains: ethereum
-- Contract surface: 2 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $10,914,160.31
+- Generated: 2026-06-12T22:33:09.282Z
+- Pipeline run: v2-pipeline-2026-06-12-546062-9d5a
+- Chains: bsc, ethereum
+- Contract surface: 3 unique implementations (5 raw deployments)
+- DeFi Llama TVL: $10,514,156.45
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
@@ -24,12 +24,12 @@ LeveX is a centralized cryptocurrency exchange offering spot trading, leveraged 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 0/3 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 4
+- Unique implementations: 3
+- Raw deployments: 5
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -47,11 +47,12 @@ LeveX is a centralized cryptocurrency exchange offering spot trading, leveraged 
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | GnosisSafe | governance | ethereum | [`0xa7c23c...536284`](./contracts/ethereum-1/0xa7c23c824fa730065ab9367947cc139687536284/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | bsc | [`0x247ee5...4f086c`](./contracts/bsc-56/0x247ee531ea21f7b182dcfe5ef3ee6abedb4f086c/) | ⚠️ Unaudited |
 | Safe | unknown | ethereum | 3 deployments: ethereum [`0x0070fb...74be13`](./contracts/ethereum-1/0x0070fb0677edb8b6e61ce6f5976c32e99d74be13/); ethereum `0x9c9c67...569c56`; ethereum `0xd7b73e...51fbfb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -89,7 +90,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 2 |
+| standard_library | 3 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

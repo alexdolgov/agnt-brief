@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "more-markets",
-  "generated_at": "2026-06-11T01:14:47.528Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-2b99",
+  "generated_at": "2026-06-12T22:37:38.569Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9d5a",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "more-markets",
@@ -45,8 +45,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 11458602.87762,
-    "tvl_usd": 11458602.87762,
+    "dl_tvl_usd": 10328592.26993,
+    "tvl_usd": 10328592.26993,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

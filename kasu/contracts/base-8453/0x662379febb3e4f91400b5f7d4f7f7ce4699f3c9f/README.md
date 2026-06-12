@@ -6,8 +6,8 @@
 | Address | `0x662379febb3e4f91400b5f7d4f7f7ce4699f3c9f` |
 | Role | core_logic |
 | Origin | standard_library |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [Kasu_ChainSecurity.pdf](https://github.com/Kasu-Finance/security/blob/main/audits/Kasu_ChainSecurity.pdf) |
 | Deployments | 2 (base [`0x662379febb3e4f91400b5f7d4f7f7ce4699f3c9f`](../0x662379febb3e4f91400b5f7d4f7f7ce4699f3c9f/); base `0xe477a800c428c7ace5ba2b4cef0be55bca2cb191`) |
 | Proxy | Yes → `0xe477a8...2cb191` |
 | Source | Sourcify (full match) |

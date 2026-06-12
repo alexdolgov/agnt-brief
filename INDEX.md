@@ -298,7 +298,7 @@
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-06-11 |
 | [kaio](./kaio/) | $60.8M | 0.0% | ? | declining | 0 | 35 | 2026-06-12 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | active | 0 | 4 | 2026-06-12 |
-| [kasu](./kasu/) | $10.6M | 0.0% | ? | active | 2 | 22 | 2026-06-11 |
+| [kasu](./kasu/) | $10.6M | 100.0% | ? | active | 2 | 22 | 2026-06-12 |
 | [katana-pre-launch](./katana-pre-launch/) | $35.5M | 0.0% | $35.5M | active | 28 | 174 | 2026-06-12 |
 | [kava-earn](./kava-earn/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
 | [kava-lend](./kava-lend/) | $10.6M | 0.0% | ? | active | 1 | 1 | 2026-06-12 |
@@ -329,7 +329,7 @@
 | [lendflare](./lendflare/) | $1.1K | 5.3% | $1.1K | declining | 1 | 74 | 2026-06-11 |
 | [lendle](./lendle/) | $60.7K | 43.2% | $5.6K | declining | 9 | 64 | 2026-06-11 |
 | [lets-get-hai](./lets-get-hai/) | $13.5M | 77.4% | $12.6M | active | 5 | 54 | 2026-06-11 |
-| [levex](./levex/) | $10.9M | 0.0% | ? | active | 0 | 2 | 2026-06-11 |
+| [levex](./levex/) | $10.5M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
 | [liminal](./liminal/) | $24.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | active | 4 | 20 | 2026-06-11 |
@@ -381,7 +381,7 @@
 | [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-06-11 |
 | [moola-market](./moola-market/) | $73.9K | 0.0% | $73.9K | declining | 1 | 53 | 2026-06-11 |
 | [moonlander](./moonlander/) | $30.0M | 0.0% | ? | active | 0 | 11 | 2026-06-12 |
-| [more-markets](./more-markets/) | $11.5M | 0.0% | ? | declining | 0 | 21 | 2026-06-11 |
+| [more-markets](./more-markets/) | $10.3M | 0.0% | ? | declining | 0 | 21 | 2026-06-12 |
 | [morph-bridge](./morph-bridge/) | $2.8M | 0.0% | $2.8M | active | 0 | 17 | 2026-06-12 |
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 18 | 51 | 2026-06-12 |
 | [mu-digital](./mu-digital/) | $19.4M | 100.0% | ? | active | 2 | 12 | 2026-06-11 |
@@ -592,7 +592,7 @@
 | [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
 | [summer.fi](./summer.fi/) | $140.9M | 0.0% | $140.9M | declining | 6 | 484 | 2026-06-12 |
 | [sunny](./sunny/) | $2.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [superearn](./superearn/) | $295.4 | 0.0% | $295.4 | active | 5 | 94 | 2026-06-11 |
+| [superearn](./superearn/) | $295.4 | 55.6% | ? | active | 5 | 95 | 2026-06-12 |
 | [superfarm](./superfarm/) | $211.1M | 0.0% | $211.1M | declining | 0 | 49 | 2026-06-11 |
 | [superfluid](./superfluid/) | $12.7M | 20.8% | ? | active | 8 | 397 | 2026-05-31 |
 | [superform](./superform/) | $2.0M | 19.7% | $1.9K | active | 3 | 158 | 2026-06-11 |

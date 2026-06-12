@@ -1,12 +1,13 @@
 # levex — Contract Index
 
-2 unique implementations on ethereum · 4 deployments · 0 audited · 2 unaudited · 0 unverified
+3 unique implementations across 2 chains · 5 deployments · 0 audited · 3 unaudited · 0 unverified
 
-## governance (1)
+## governance (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [GnosisSafe](./ethereum-1/0xa7c23c824fa730065ab9367947cc139687536284/) | ethereum | [`0xa7c23c...536284`](./ethereum-1/0xa7c23c824fa730065ab9367947cc139687536284/) | ⚠️ Unaudited | Verified |
+| [GnosisSafeL2](./bsc-56/0x247ee531ea21f7b182dcfe5ef3ee6abedb4f086c/) | bsc | [`0x247ee5...4f086c`](./bsc-56/0x247ee531ea21f7b182dcfe5ef3ee6abedb4f086c/) | ⚠️ Unaudited | Verified |
 
 ## unknown (1)
 

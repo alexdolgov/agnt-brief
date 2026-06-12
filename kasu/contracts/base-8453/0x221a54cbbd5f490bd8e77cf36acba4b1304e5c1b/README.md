@@ -6,8 +6,8 @@
 | Address | `0x221a54cbbd5f490bd8e77cf36acba4b1304e5c1b` |
 | Role | operational_periphery |
 | Origin | standard_library |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [Kasu_ChainSecurity.pdf](https://github.com/Kasu-Finance/security/blob/main/audits/Kasu_ChainSecurity.pdf) |
 | Deployments | 2 (base [`0x221a54cbbd5f490bd8e77cf36acba4b1304e5c1b`](../0x221a54cbbd5f490bd8e77cf36acba4b1304e5c1b/); base `0xb82992c13adee67f43758bce6ff16e32c0ca4dc6`) |
 | Proxy | Yes → `0xb82992...ca4dc6` |
 | Source | Etherscan |

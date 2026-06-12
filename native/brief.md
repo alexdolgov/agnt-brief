@@ -5,11 +5,11 @@
 - Project: Native (`native`)
 - Website: [https://native.org](https://native.org)
 - Lifecycle: active (Tier 0, 38.8% below peak)
-- Generated: 2026-06-11T01:17:47.489Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
+- Generated: 2026-06-12T06:52:15.782Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-d6af
 - Chains: arbitrum, avalanche, base, bsc, ethereum, linea, manta, mantle, polygon, scroll
 - Contract surface: 80 unique implementations (684 raw deployments)
-- DeFi Llama TVL: $65,174,838.00
+- DeFi Llama TVL: $63,306,894.00
 - On-chain TVL (included contracts): $67,621,304.88
 - TVL by chain: Ethereum $54,724,175.47 | Bsc $8,000,607.86 | Arbitrum $2,696,830.07 | Base $2,180,681.05 | Mantle $19,010.44
 
@@ -160,50 +160,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x014b16...6362aa`](./contracts/ethereum-1/0x014b16e50eab39657e18c66c1dd744ad2b6362aa/) | NativeLPToken | token | $35,086,788.13 | Verified native implementation with $35,086,788.13 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x097534...7fe1b1`](./contracts/base-8453/0x097534f09eb81cc5b69adf36df3d3fa11b7fe1b1/) | CreditVault | core_logic | $32,487,257.45 | Verified native implementation with $32,487,257.45 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x074f6c...fd3110`](./contracts/base-8453/0x074f6c79165580726093024fd3cdcfba15fd3110/) | AquaVault | core_logic | $25,535.55 | Verified native implementation with $25,535.55 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0d7ffb...a7c2d9`](./contracts/ethereum-1/0x0d7ffb31714e5a70bad0ed21376120f22ea7c2d9/) | NativeRFQPool | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xcc1902...94b70d`](./contracts/arbitrum-42161/0xcc190252fc83165ab2b327cd1f9f38b0c094b70d/) | AlgebraInterfaceMulticall | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mantle | [`0x34e7c1...7a06c3`](./contracts/mantle-5000/0x34e7c163757bd1ecfae93a172e66162f047a06c3/) | AquaVaultLogic | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x34fc2d...1540e2`](./contracts/base-8453/0x34fc2d4eccf7d745ad98b99f56ee33a73e1540e2/) | AquaVaultSignatureCheck | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5b9338...e465c1`](./contracts/ethereum-1/0x5b933868f5e710070b146213ed2cd71628e465c1/) | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x163785...79ba51`](./contracts/polygon-137/0x163785236514f476a7a45e354c24bff5a879ba51/) | ConstantSumPricer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0035ce...a8c55d`](./contracts/ethereum-1/0x0035ce4f140a1358798d1b360795524222a8c55d/) | FixedTermYield | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x22a27a...009e75`](./contracts/arbitrum-42161/0x22a27a710ec32229a279343ae95dbcce62009e75/) | LiquidatorHelper | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1bb447...a383ce`](./contracts/ethereum-1/0x1bb447ee7fcd573a60377446b26a3487d2a383ce/) | LiquidityPairing | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x1bb447...a383ce`](./contracts/bsc-56/0x1bb447ee7fcd573a60377446b26a3487d2a383ce/) | MerkleDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x2271e4...6e9c13`](./contracts/arbitrum-42161/0x2271e448674c7f7ef2a3e8e3d9a49af3a46e9c13/) | Metadata | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x650d80...7f6943`](./contracts/bsc-56/0x650d804e35f6b0001f620dd57499c4a6147f6943/) | MockToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x01d201...bfae16`](./contracts/arbitrum-42161/0x01d20118e797e4f894c5d33537622be146bfae16/) | NativeBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x177f87...e7d8fa`](./contracts/arbitrum-42161/0x177f8791120a6dd64e405584158aec194ae7d8fa/) | NativeDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x1772c7...31d60f`](./contracts/bsc-56/0x1772c7254bc104711d75b0031bab6eea8f31d60f/) | NativeFixedPriceLiquidityPoolFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x01dd13...6c6a8a`](./contracts/ethereum-1/0x01dd1399fbdf65195a4b8cabc17868ee3b6c6a8a/) | NativePool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2cdae1...440b95`](./contracts/ethereum-1/0x2cdae177c3eab6a09cc0180b9e1d36b239440b95/) | NativeResolver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x01dd13...6c6a8a`](./contracts/arbitrum-42161/0x01dd1399fbdf65195a4b8cabc17868ee3b6c6a8a/) | NativeRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x3c6154...42d395`](./contracts/base-8453/0x3c6154b5a9bf28807520999f40d8647d4942d395/) | NativeV3Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xa7b0d4...10995e`](./contracts/base-8453/0xa7b0d47004c4db88827b5263df8253aac810995e/) | NativeV3PoolDeployer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x177f87...e7d8fa`](./contracts/ethereum-1/0x177f8791120a6dd64e405584158aec194ae7d8fa/) | PermissionedMulticall3 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mantle | [`0xbaf53b...a64b0d`](./contracts/mantle-5000/0xbaf53b60907aff3b5a8dc5ddca9b73bd73a64b0d/) | PythPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xd3eab3...134329`](./contracts/base-8453/0xd3eab36d3d16b4afd66d7cb231712e758d134329/) | QuoterV2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x06b795...491530`](./contracts/bsc-56/0x06b7953c06c43bba4f1ac82f3ddaead647491530/) | RDOReward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3960f0...937a77`](./contracts/bsc-56/0x3960f07204d2cfecbff63534aa8a1309ef937a77/) | RedStonePriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x0e2fe0...f27d89`](./contracts/polygon-137/0x0e2fe00c6ab903e0f492cb641705cd47f0f27d89/) | Registry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x022a0e...73aa71`](./contracts/polygon-137/0x022a0e2e9d6a212ba881c426e038e46b1573aa71/) | Weth9Unwrapper | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0016d9...aed2bb`](./contracts/ethereum-1/0x0016d9be93bb9d5d511e2e94eaf8249179aed2bb/) | WithdrawQueue | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x03d1e2...50fb81`](./contracts/ethereum-1/0x03d1e2527ece8997befac28888c691270b50fb81/) | WNLP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0872c6...b59e9e`](./contracts/base-8453/0x0872c63c9b1f55ea4166752ba3b890a444b59e9e/) | WrappedNLP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 52 |
-| upstream | 4 |
-| standard_library | 4 |
-| needs_review | 20 |
+| native | 0 |
+| upstream | 0 |
+| standard_library | 0 |
+| needs_review | 80 |
 
 ## Scope Matching Notes
 

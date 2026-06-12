@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "taiko-bridge",
-  "generated_at": "2026-06-11T03:26:37.100Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-12T20:35:51.735Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9988",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "taiko-bridge",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 90.68381514172003
   },
   "summary": {
-    "total_contracts": 52,
-    "total_addresses": 210,
-    "unique_implementations": 52,
-    "total_deployments": 210,
+    "total_contracts": 56,
+    "total_addresses": 215,
+    "unique_implementations": 56,
+    "total_deployments": 215,
     "audited_contracts": 0,
-    "unaudited_contracts": 44,
+    "unaudited_contracts": 48,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 44,
+    "contracts_verified_unaudited": 48,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 8,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 16768686.97027,
+    "dl_tvl_usd": 12761962.7839,
     "tvl_usd": 1415595.3168285463,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -63,7 +63,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 52,
+    "unique_implementations": 56,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -597,6 +597,46 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x5a982fb1818c22744f5d7d36d0c4c9f61937b33a",
+      "name": "DefaultResolver",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe78659fbf234c84c909cf317d84edc2f6c0d8413",
+      "impl_name": "DefaultResolver",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5a982fb1818c22744f5d7d36d0c4c9f61937b33a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8efa01564425692d0a0838dc10e300bd310cb43e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x01329a1cde2509421cbe99dd3feb3c1b212332fa",
       "name": "ERC1155Vault",
       "role": "core_logic",
@@ -812,6 +852,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x05d88855361808fa1d7fc28084ef3fca191c4e03",
+      "name": "ForcedInclusionStore",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xcdb25e201ad3fdcfe16730a6ca2cc0b1ce2137a2",
+      "impl_name": "ForcedInclusionStore",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x05d88855361808fa1d7fc28084ef3fca191c4e03",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -1964,6 +2035,68 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xd5aa0e20e8a6e9b04f080cf8797410fafaa9688a",
+      "name": "PreconfRouter",
+      "role": "adapter",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xafcedde020db8d431fa86df6b14c20f327382709",
+      "impl_name": "PreconfRouter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd5aa0e20e8a6e9b04f080cf8797410fafaa9688a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xfd019460881e6eec632258222393d5821029b2ac",
+      "name": "PreconfWhitelist",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xdbae46e35c18719e6c78aabf9c8869c4ec84c149",
+      "impl_name": "PreconfWhitelist",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfd019460881e6eec632258222393d5821029b2ac",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x500735343372dd6c9b84dbc7a75babf4479742b9",
       "name": "ProverSet",
       "role": "unknown",
@@ -2359,8 +2492,8 @@
       "address": "0x00c04822ba7aea1113b2a7a29bbcdca70e257c7b",
       "name": "SP1Verifier",
       "role": "periphery",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "succinctlabs",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -2864,7 +2997,7 @@
       "address": "0x2e7797129ec717d38408b2ce81f75cc48cfd61d6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2988,7 +3121,7 @@
       "address": "0x92059835fae629a2ffa7c9a27bc735d776ac6416",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3463,9 +3596,9 @@
   ],
   "origin_summary": {
     "native": 41,
-    "upstream": 1,
-    "standard_library": 4,
-    "needs_review": 6
+    "upstream": 2,
+    "standard_library": 8,
+    "needs_review": 5
   },
   "scope_matching_notes": {
     "match_method_counts": {},

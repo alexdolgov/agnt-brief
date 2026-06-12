@@ -167,7 +167,7 @@
 | [desyn-protocol](./desyn-protocol/) | $10.7M | 0.0% | ? | declining | 0 | 11 | 2026-06-10 |
 | [dexalot](./dexalot/) | $4.2M | 16.7% | ? | active | 6 | 6 | 2026-06-12 |
 | [dflow](./dflow/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [dforce](./dforce/) | $3.6M | 0.0% | $3.6M | declining | 4 | 449 | 2026-06-11 |
+| [dforce](./dforce/) | $3.6M | 36.3% | $1.2M | declining | 4 | 453 | 2026-06-12 |
 | [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | declining | 4 | 71 | 2026-06-10 |
 | [dnax](./dnax/) | $3.5M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
 | [dodo](./dodo/) | $19.1M | 0.0% | $19.1M | declining | 1 | 552 | 2026-06-10 |
@@ -228,7 +228,7 @@
 | [gate-us](./gate-us/) | $49.1M | 0.0% | ? | active | 0 | 9 | 2026-06-12 |
 | [gearbox](./gearbox/) | $3.5M | 53.0% | ? | declining | 37 | 195 | 2026-06-10 |
 | [generic.money](./generic.money/) | $3.7M | 81.8% | ? | declining | 1 | 12 | 2026-06-10 |
-| [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 1 | 2026-06-10 |
+| [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 3 | 2026-06-12 |
 | [gimo](./gimo/) | $8.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 0 | 16 | 2026-06-10 |
 | [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 0 | 6 | 2026-06-12 |
@@ -236,7 +236,7 @@
 | [goldfinger](./goldfinger/) | $0.0 | 0.0% | ? | active | 8 | 5 | 2026-06-11 |
 | [goldstation](./goldstation/) | $2.2M | 0.0% | ? | active | 3 | 5 | 2026-06-10 |
 | [gondi](./gondi/) | $35.6 | 20.0% | $35.6 | active | 2 | 30 | 2026-06-11 |
-| [goose](./goose/) | $7.9 | 0.0% | $7.9 | active | 0 | 7 | 2026-06-10 |
+| [goose](./goose/) | $1.6K | 0.0% | $1.6K | active | 0 | 11 | 2026-06-12 |
 | [goplus-security](./goplus-security/) | $65.3 | 0.0% | $65.3 | active | 0 | 34 | 2026-06-12 |
 | [gravity-bridge](./gravity-bridge/) | $91.3M | 0.0% | $91.3M | active | 0 | 152 | 2026-06-10 |
 | [gro](./gro/) | $2.9M | 0.0% | $2.9M | declining | 0 | 124 | 2026-06-10 |
@@ -536,7 +536,7 @@
 | [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | active | 3 | 40 | 2026-06-11 |
 | [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-06-11 |
 | [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | active | 0 | 2 | 2026-06-11 |
+| [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | active | 0 | 2 | 2026-06-12 |
 | [sierra-protocol](./sierra-protocol/) | $39.6M | 4.0% | $5.3M | active | 1 | 78 | 2026-06-11 |
 | [sigma-money](./sigma-money/) | $593.4M | 0.0% | $593.4M | active | 10 | 231 | 2026-06-11 |
 | [silo-finance](./silo-finance/) | $3.3M | 15.7% | $641.3K | unknown | 10 | 529 | 2026-05-31 |
@@ -614,7 +614,7 @@
 | [synthetix](./synthetix/) | $11.4M | 0.0% | $11.4M | active | 0 | 25 | 2026-06-12 |
 | [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 0 | 4 | 2026-06-12 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 8 | 2026-06-12 |
-| [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-06-11 |
+| [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 56 | 2026-06-12 |
 | [tangible](./tangible/) | $41.9M | 0.0% | ? | active | 7 | 475 | 2026-06-11 |
 | [tarot](./tarot/) | $154.4K | 0.0% | $154.4K | dead | 1 | 139 | 2026-05-31 |
 | [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | declining | 0 | 179 | 2026-06-11 |

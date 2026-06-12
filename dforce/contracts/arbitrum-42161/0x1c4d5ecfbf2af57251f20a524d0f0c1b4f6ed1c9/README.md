@@ -6,8 +6,8 @@
 | Address | `0x1c4d5ecfbf2af57251f20a524d0f0c1b4f6ed1c9` |
 | Role | unknown |
 | Origin | standard_library |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [dForceLending-Audit-Report-TrailofBits-Mar-2021.pdf](https://github.com/dforce-network/documents/blob/master/audit_report/Lending/dForceLending-Audit-Report-TrailofBits-Mar-2021.pdf) |
 | Deployments | 3 (arbitrum [`0x1c4d5ecfbf2af57251f20a524d0f0c1b4f6ed1c9`](../0x1c4d5ecfbf2af57251f20a524d0f0c1b4f6ed1c9/); arbitrum `0x620e8ed48945d97cbea0b794f50e5e51950eba24`; arbitrum `0xfe5ad9975b533456cafca9727c9ab47cbab1fa3c`) |
 | Proxy | Yes → `0x620e8e...0eba24` |
 | Source | Sourcify (full match) |

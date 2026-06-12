@@ -4,35 +4,34 @@
 
 - Project: GETH (`geth`)
 - Website: [https://guarda.com/staking/ethereum-staking/](https://guarda.com/staking/ethereum-staking/)
-- Lifecycle: active (Tier 0, 51.4% below peak)
-- Generated: 2026-06-10T23:33:58.286Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Lifecycle: active (Tier 0, 61.8% below peak)
+- Generated: 2026-06-12T20:36:13.131Z
+- Pipeline run: v2-pipeline-2026-06-12-546062-9988
 - Chains: ethereum
-- Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $16,048,230.57
-- On-chain TVL (included contracts): $16,161,210.88
-- TVL by chain: Ethereum $16,161,210.88
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
+- Contract surface: 3 unique implementations (3 raw deployments)
+- DeFi Llama TVL: $12,724,660.04
+- On-chain TVL (included contracts): $16,166,712.83
+- TVL by chain: Ethereum $16,166,712.83
 
 ## Project Description
 
 GETH is Guarda's Ethereum liquid staking/tokenized staking product. Users stake ETH and receive GETH as a liquid token representing their staked position and accrued rewards. The on-chain surface includes StakeToken and an EthStakingCrowdsale contract that should be reviewed as part of the protocol topology; no single-contract architecture should be assumed without further review.
 
+### Architecture
+
+The protocol consists of a single product family with one core contract, the StakeToken, which handles both staking and token issuance.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/3 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
+- Unique implementations: 3
+- Raw deployments: 3
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $16,161,210.88
+- ASD (verified + unaudited TVL): $16,166,712.83
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -47,11 +46,13 @@ GETH is Guarda's Ethereum liquid staking/tokenized staking product. Users stake 
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | StakeToken | token | ethereum | [`0x3802c2...eb74b8`](./contracts/ethereum-1/0x3802c218221390025bceabbad5d8c59f40eb74b8/) | ⚠️ Unaudited |
+| DepositContract | core_logic | ethereum | [`0x000000...7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | [`0x408d1f...2ce19f`](./contracts/ethereum-1/0x408d1f0a8a6f478f082f34c5eeb41541262ce19f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,7 +90,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 1 |
-| upstream | 0 |
+| upstream | 2 |
 | standard_library | 0 |
 | needs_review | 0 |
 

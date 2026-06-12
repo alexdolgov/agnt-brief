@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "dforce",
-  "generated_at": "2026-06-11T11:41:30.034Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
+  "generated_at": "2026-06-12T20:50:09.589Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9988",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "dforce",
@@ -32,19 +32,19 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 449,
-    "total_addresses": 1004,
-    "unique_implementations": 449,
-    "total_deployments": 1004,
-    "audited_contracts": 0,
-    "unaudited_contracts": 109,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 98,
+    "total_contracts": 453,
+    "total_addresses": 1020,
+    "unique_implementations": 453,
+    "total_deployments": 1020,
+    "audited_contracts": 41,
+    "unaudited_contracts": 72,
+    "contracts_verified_audited": 32,
+    "contracts_verified_unaudited": 70,
     "contracts_verified_by_bytecode": 11,
     "contracts_unverified": 340,
-    "coverage_pct": 0,
+    "coverage_pct": 36.3,
     "total_audits": 4,
-    "scoreable_audits": 0,
+    "scoreable_audits": 4,
     "dl_tvl_usd": 12550019,
     "tvl_usd": 3605459.701459337,
     "tvl_source": "on_chain",
@@ -55,19 +55,24 @@
       "optimism": 21155.16,
       "polygon": 31932.33
     },
-    "asd_usd": 3605459.701459337,
+    "asd_usd": 1234160.533981838,
     "website_url": "https://dforce.network/",
     "chains": [
       "arbitrum",
       "avalanche",
+      "base",
       "bsc",
       "ethereum",
       "kava",
       "optimism",
       "polygon"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
+    "tier1_coverage_pct": 35.4,
+    "tier1_auditors": [
+      "Certora",
+      "ConsenSys Diligence",
+      "Trail of Bits"
+    ],
     "latest_audit_date": "2021-03",
     "audit_freshness": "stale",
     "staleness_breakdown": {
@@ -83,7 +88,7 @@
     "product_family_count": 4
   },
   "surface_sufficiency": {
-    "unique_implementations": 449,
+    "unique_implementations": 453,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -113,7 +118,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 475.1038852354438,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -122,7 +127,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 701924.452391,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -131,7 +136,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -140,7 +145,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 937.7290911404543,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -149,7 +154,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -158,7 +163,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.2978567027820698,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -167,7 +172,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 41403.76692082168,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -176,7 +181,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 19576.254683,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -185,7 +190,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 50.76298182452064,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -194,7 +199,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -203,7 +208,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -212,7 +217,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -221,7 +226,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -230,7 +235,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 95276.3696630817,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -239,7 +244,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -248,7 +253,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 17.200628810569537,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -257,7 +262,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 99.51621509914769,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -266,7 +271,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1432.8198801717535,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -275,7 +280,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 112.3165160155144,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -284,7 +289,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 17.304505309842682,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -293,7 +298,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 773035.7249215909,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -302,7 +307,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 97.8772040659209,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -311,7 +316,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.39706276312021804,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -320,7 +325,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 18.242812360316098,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -329,7 +334,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 72.84994306414984,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -338,7 +343,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2597.1200445637883,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -347,7 +352,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 3518.152417,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -356,7 +361,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.7712541453596222,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -365,7 +370,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2103.9350904408116,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -374,7 +379,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 6370.137992236185,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -383,7 +388,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 3534.936522217335,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -392,7 +397,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 123.66376333365264,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -401,7 +406,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2765.850487503795,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -410,7 +415,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 4.469244553474437,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -419,7 +424,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 48968.658447023096,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -428,7 +433,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 181427.79654035092,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -437,7 +442,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -446,7 +451,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 9907.773087093463,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -455,7 +460,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 687.9187870007362,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -464,7 +469,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 580.8033351893118,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -473,7 +478,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 193479.9347406232,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -482,7 +487,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 753.8757782796105,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -491,7 +496,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 13912.493310623458,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -500,7 +505,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 3.111955412196548,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -509,7 +514,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.1299917177921786,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -518,7 +523,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -527,7 +532,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 19.930778528695676,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -536,7 +541,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 40587.377539993584,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -545,7 +550,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 32274.821058087808,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -554,7 +559,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -563,7 +568,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 790.4089766280489,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -572,7 +577,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 11.086736307428415,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -581,7 +586,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 71.63344162105567,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -590,7 +595,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 15.447450650983956,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -599,7 +604,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 920.954713967958,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -608,7 +613,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.00023055399999999997,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -617,7 +622,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 27.133366026841173,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -626,7 +631,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 172.39947565136544,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -635,7 +640,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -644,7 +649,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 174.4499701761109,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -653,7 +658,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 3030.975217,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -662,7 +667,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 46.60867906869769,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -671,7 +676,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1745.3497699765728,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -680,7 +685,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 3138.1343915287143,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -689,7 +694,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 22016.41826077801,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -698,7 +703,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.40800387768971336,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -707,7 +712,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1607.5828224141828,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -716,7 +721,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1377.9689641477962,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -725,7 +730,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 24305.218493770702,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -734,7 +739,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 3437.370364757422,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -743,7 +748,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -752,7 +757,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.5561140192858527,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -761,7 +766,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 28233.355548761458,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -770,7 +775,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 8.393287241129395,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -779,7 +784,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 18401.861230305483,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -788,7 +793,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2383.286961819387,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -797,7 +802,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 23.90204234408279,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -806,7 +811,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 31.61711667594782,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -815,7 +820,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 26908.14392773257,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -824,7 +829,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 4325.415135655873,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -833,7 +838,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 40181.61814445174,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -842,7 +847,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 6611.846726529619,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -851,14 +856,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 221.4953404767082,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1024,7 +1031,7 @@
       "address": "0x1cbd0c8d16dd9c8f450c781b5c3e3623f95f7344",
       "name": "DSToken",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": 366885.7108654785,
@@ -1173,7 +1180,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1182,7 +1189,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 54.283131737987695,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1191,7 +1198,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.04531476596568222,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1200,7 +1207,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1209,7 +1216,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1218,7 +1225,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.016077864062295978,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1227,7 +1234,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 871.079442322222,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1236,7 +1243,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1245,7 +1252,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1254,7 +1261,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -1263,7 +1270,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -1272,7 +1279,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 44.637016177907974,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1281,7 +1288,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1290,7 +1297,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1299,7 +1306,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1308,7 +1315,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1317,7 +1324,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.4386214490254325,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1326,7 +1333,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1335,7 +1342,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1344,7 +1351,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1353,7 +1360,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 15.45771357163711,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1362,7 +1369,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.5757888929250616,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1371,7 +1378,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1380,7 +1387,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1389,7 +1396,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1300.3589495047515,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1398,7 +1405,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 93.80409904394524,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1407,7 +1414,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.8429637727258084,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1416,7 +1423,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1425,7 +1432,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.06481670677843812,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1434,7 +1441,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.2099637656898423,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -1443,7 +1450,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1452,7 +1459,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1461,7 +1468,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1470,7 +1477,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 19.503450636890307,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1479,7 +1486,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.6301373942106236,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -1488,14 +1495,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12443",
+        "audit-12444",
+        "audit-12445",
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1504,7 +1516,7 @@
       "address": "0xce0f05f19845cde36058ccfb53c755ab8739b880",
       "name": "YieldVault",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "MaxShot",
       "tvl_usd": 498.52975699999996,
@@ -1519,7 +1531,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 494.39502,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1528,14 +1540,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 4.134737,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -1664,6 +1678,122 @@
       "contamination_flag": "cleared"
     },
     {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x0d535ca4c27f0c25a20e2d474ee3e99c1316bafe",
+      "name": "AggregatorProxy",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Chainlink",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AggregatorProxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5a8b3b8b381e735042cc6e7cd925268f9a593b01",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xc9d1cbc45dd3e86e98067b7eb279c13f7b77c627",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xd7a23be4c0ded90f99e1974ffe7e1113246fca38",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x7d25d250fbd63b0dac4a38c661075930c9a87aea",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x0d535ca4c27f0c25a20e2d474ee3e99c1316bafe",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x40be37096ce3b8a2e9ec002468ab91071501c499",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x7da545b2ac13bb89d430e0ee91452f0479fd49a5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xf56a6c78f28ac450db0a4e1367408b78add2d02d",
+      "name": "ArbiOperator",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ArbiOperator",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xf56a6c78f28ac450db0a4e1367408b78add2d02d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x9b0fd221c2682a8990b41140a88fdac2f17c7e27",
@@ -1777,7 +1907,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1786,7 +1916,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1795,7 +1925,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1804,7 +1934,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1813,7 +1943,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -1822,7 +1952,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -1831,7 +1961,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1849,7 +1979,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1858,7 +1988,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -1867,7 +1997,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -1885,7 +2015,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1894,7 +2024,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1903,7 +2033,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1912,7 +2042,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1921,7 +2051,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1930,7 +2060,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -1939,14 +2069,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12443",
+        "audit-12444",
+        "audit-12445",
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1979,7 +2114,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -1997,7 +2132,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -2018,11 +2153,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2046,7 +2183,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2064,7 +2201,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -2076,11 +2213,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2104,7 +2243,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -2113,7 +2252,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -2122,7 +2261,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -2131,7 +2270,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2140,14 +2279,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -3211,7 +3352,7 @@
       "address": "0xeb36642f83b4e35ca9b99a07f17abc651eec48ac",
       "name": "Executor",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3257,7 +3398,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3266,7 +3407,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -3275,7 +3416,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3284,7 +3425,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3302,7 +3443,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3320,7 +3461,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3329,7 +3470,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3338,7 +3479,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -3350,11 +3491,14 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12445",
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -3391,17 +3535,26 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x355c665e101b9da58704a8fddb5feef210ef20c0",
+      "address": "0x09a52b4c749d006f7fc0c3f316aeca54d74bb97a",
       "name": "GOLDx",
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "dForce Lending",
       "tvl_usd": null,
-      "is_proxy": true,
+      "is_proxy": false,
       "impl_address": "0x09a52b4c749d006f7fc0c3f316aeca54d74bb97a",
       "impl_name": "GOLDx",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x09a52b4c749d006f7fc0c3f316aeca54d74bb97a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -3417,7 +3570,38 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0effcb66871fcc97f074a901f69b1367d2eacc4f",
+      "name": "GOLDxProxy",
+      "role": "proxy",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x1332230ae69798ffd38828f2f56de1a68f17276b",
+      "impl_name": "GOLDxProxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0effcb66871fcc97f074a901f69b1367d2eacc4f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 42161,
@@ -3440,7 +3624,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3449,7 +3633,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3458,7 +3642,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3467,7 +3651,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -3476,7 +3660,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3494,7 +3678,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3503,7 +3687,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -3512,7 +3696,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3521,7 +3705,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3530,14 +3714,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12443",
+        "audit-12445",
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -3561,7 +3749,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -3570,7 +3758,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3579,7 +3767,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -3588,7 +3776,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3597,14 +3785,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -3628,7 +3818,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3637,7 +3827,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3646,7 +3836,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3655,7 +3845,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3664,7 +3854,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3673,7 +3863,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3682,7 +3872,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3691,7 +3881,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -3700,7 +3890,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3709,7 +3899,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3718,7 +3908,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3727,7 +3917,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3736,7 +3926,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3745,7 +3935,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3754,7 +3944,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3763,7 +3953,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3772,7 +3962,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3781,7 +3971,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3799,14 +3989,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12445",
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -3848,7 +4041,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3857,7 +4050,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3869,11 +4062,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -3897,7 +4092,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3906,7 +4101,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3915,7 +4110,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3924,7 +4119,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -3933,7 +4128,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3942,7 +4137,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3951,7 +4146,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3960,7 +4155,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -3969,7 +4164,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3978,7 +4173,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3987,14 +4182,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4018,7 +4215,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -4027,7 +4224,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -4045,7 +4242,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -4054,7 +4251,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -4063,14 +4260,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4245,7 +4444,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -4263,7 +4462,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -4275,11 +4474,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4303,7 +4504,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -4315,11 +4516,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4352,14 +4555,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4383,7 +4588,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -4404,11 +4609,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4441,7 +4648,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -4453,11 +4660,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4542,7 +4751,7 @@
       "address": "0x0326104e56efe9caae86b1681f8c8c0c80adcd98",
       "name": "LendingDataV2",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4557,7 +4766,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -4575,7 +4784,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -4593,7 +4802,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -4611,7 +4820,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -4629,7 +4838,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -4656,7 +4865,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -4692,7 +4901,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -4704,11 +4913,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4799,14 +5010,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4839,14 +5052,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4937,7 +5152,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -4946,7 +5161,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -4964,7 +5179,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -4982,7 +5197,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -4994,11 +5209,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -5065,7 +5282,7 @@
       "address": "0x4653fc730e3c8b7eeb2faec65458c6f927ae6c3c",
       "name": "LSRSupport",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "upstream",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5287,6 +5504,91 @@
       "contamination_flag": "cleared"
     },
     {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x2c6f29324b0d915fa2b0875633b018263113f54e",
+      "name": "MetaMorphoV1_1",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "morpho-blue",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MetaMorphoV1_1",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x90880852b607065152360ab718b8a7a6ba979281",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc2007a9c48eecb36868cf9d1da5d8566e90bf042",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdcd35020c5bb97016358578131f012baa9f53cf3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2c6f29324b0d915fa2b0875633b018263113f54e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbf1e66a36646bb589199aa24e67ebdcdbeb452a1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xfc8a325a2403cd940649b48ffcdfc250e084a27c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x5579e27129110bbc9c0ec1388acbf7ad04771b76",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xf64226501afa402488384cecaa37fe62d1b8b881",
@@ -5338,7 +5640,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -5347,7 +5649,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -5356,7 +5658,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -5365,7 +5667,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -5374,7 +5676,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -5383,7 +5685,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -5392,7 +5694,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -5401,7 +5703,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -5410,7 +5712,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -5419,7 +5721,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -5428,7 +5730,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -5437,7 +5739,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -5446,7 +5748,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -5455,7 +5757,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -5464,7 +5766,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -5473,7 +5775,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -5482,7 +5784,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -5491,7 +5793,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -5500,7 +5802,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -5509,7 +5811,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -5518,7 +5820,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -5527,7 +5829,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -5536,7 +5838,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -5545,7 +5847,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -5554,7 +5856,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -5563,7 +5865,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -5572,7 +5874,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -5581,7 +5883,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -5590,14 +5892,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12445",
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -5621,7 +5926,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -5630,7 +5935,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -5639,14 +5944,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12445",
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -5670,7 +5978,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -5697,7 +6005,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -5706,7 +6014,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -5733,7 +6041,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -5742,7 +6050,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -5763,11 +6071,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -5951,7 +6261,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -5969,7 +6279,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -5996,7 +6306,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -6014,14 +6324,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -6061,7 +6373,7 @@
       "address": "0x060d6784d770d54dcb37fc2cb2d896d929b6e0b1",
       "name": "PriceFeed",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -6107,7 +6419,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -6116,7 +6428,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -6125,14 +6437,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12443"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -6235,7 +6549,7 @@
       "address": "0x5d067d6bac214bef643dde5907fdcfa82c8ee5aa",
       "name": "Proxy (impl: 0x5442765087f5015a85887ab8e2598305b64420d0)",
       "role": "proxy",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -6266,7 +6580,7 @@
       "address": "0xe3e3f8d8e19929bf7008af92d429b22e3ba8ed72",
       "name": "Proxy (impl: 0x603065084bacb2e780185ead1e5d605388cea8e3)",
       "role": "proxy",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -6297,7 +6611,7 @@
       "address": "0x8f015c9cf90d48afd30d51157e8574392c0c2b81",
       "name": "Proxy (impl: 0xb5c9aeba968c2948f0d842f009e0e170da5d01c3)",
       "role": "proxy",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -6328,7 +6642,7 @@
       "address": "0xd298221f84f621033d209dd4998cce0f664243cf",
       "name": "Proxy (impl: 0xb5c9aeba968c2948f0d842f009e0e170da5d01c3)",
       "role": "proxy",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -6374,7 +6688,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -6383,7 +6697,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -6392,7 +6706,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -6401,7 +6715,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -6410,7 +6724,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -6419,7 +6733,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -6428,7 +6742,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -6437,14 +6751,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12443",
+        "audit-12445",
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -6468,7 +6786,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -6477,7 +6795,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -6486,7 +6804,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -6504,7 +6822,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -6513,7 +6831,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -6522,7 +6840,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -6531,7 +6849,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -6540,7 +6858,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -6549,7 +6867,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -6558,7 +6876,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -6567,7 +6885,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -6576,7 +6894,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -6585,7 +6903,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -6594,14 +6912,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12443",
+        "audit-12445",
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -6625,7 +6947,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -6634,7 +6956,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -6643,7 +6965,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -6652,7 +6974,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -6661,14 +6983,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -6741,7 +7065,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -6759,7 +7083,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -6777,7 +7101,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -6795,7 +7119,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -6849,7 +7173,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -6885,7 +7209,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -6894,7 +7218,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -6921,7 +7245,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -6942,11 +7266,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -6970,7 +7296,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -6979,7 +7305,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -6997,7 +7323,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7006,14 +7332,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12445"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -7144,7 +7472,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7153,7 +7481,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7165,11 +7493,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -7178,7 +7508,7 @@
       "address": "0x3708b80801e8c7ed55c4dfb7dbaa868d308b7106",
       "name": "StakingPool",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -7296,7 +7626,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -7305,7 +7635,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -7314,7 +7644,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -7332,14 +7662,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12445",
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -7412,14 +7745,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -7555,7 +7890,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -7564,7 +7899,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -7573,7 +7908,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -7582,7 +7917,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -7591,7 +7926,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -7600,7 +7935,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -7609,7 +7944,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -7618,7 +7953,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -7627,7 +7962,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -7636,7 +7971,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -7645,7 +7980,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -7654,7 +7989,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -7663,7 +7998,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -7672,7 +8007,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -7681,7 +8016,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -7690,7 +8025,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -7699,7 +8034,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -7708,7 +8043,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -7717,7 +8052,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -7726,7 +8061,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -7735,7 +8070,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -7744,7 +8079,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -7753,7 +8088,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -7762,7 +8097,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -7771,7 +8106,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -7780,7 +8115,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -7789,7 +8124,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -7798,7 +8133,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -7807,7 +8142,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -7816,7 +8151,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -7825,7 +8160,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7834,7 +8169,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7843,7 +8178,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7852,7 +8187,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7861,7 +8196,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7870,7 +8205,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7879,7 +8214,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7888,7 +8223,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7897,7 +8232,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7906,7 +8241,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7915,7 +8250,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7924,7 +8259,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7933,7 +8268,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7942,7 +8277,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -7951,7 +8286,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -7960,7 +8295,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -7969,7 +8304,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -7978,7 +8313,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -7987,7 +8322,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -7996,7 +8331,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -8005,7 +8340,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -8014,7 +8349,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -8023,7 +8358,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -8032,7 +8367,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -8041,14 +8376,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -8081,7 +8418,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -8108,14 +8445,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -8139,7 +8478,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -8148,7 +8487,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -8157,23 +8496,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xfb59a0939b4103cf67434f9fd6ad7e23577ee16d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -8501,7 +8833,7 @@
       "address": "0x113aeb3c6b300791112946c47bbb51645ef8bcb1",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -8811,7 +9143,7 @@
       "address": "0x26472cc7f4cb43ae9b3f18c705de8c34578933f9",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -8904,7 +9236,7 @@
       "address": "0x284bfce387b079eb3461d7da9399266662e697c5",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -9152,7 +9484,7 @@
       "address": "0x369dffbb1d8f49ecf63501e2d175742ae1bfdfc8",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -10547,7 +10879,7 @@
       "address": "0x666ed86f5ed0e80d8f441002b1ae08dcbaeff1e6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -10764,7 +11096,7 @@
       "address": "0x77830910ab8afed88e35b9ff0613612c77f831da",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -10981,7 +11313,7 @@
       "address": "0x859ed67049447a3f92ca2213e9d0a14aa5623579",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11012,7 +11344,7 @@
       "address": "0x879a3d27e49be1d623d78bd4b87fa7487658eda4",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11074,7 +11406,7 @@
       "address": "0x8a7624e1715098c79b7b61c7ae5563678ce83c6b",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11105,7 +11437,7 @@
       "address": "0x8c5022c57de46252ce1a49644c5adf5c866e3e8d",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11136,7 +11468,7 @@
       "address": "0x8ec747dca348e35b5a3b94a950783e0e84707969",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11167,7 +11499,7 @@
       "address": "0x8f0400e5d3b7358a15e643daa29f6943f758bd73",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11229,7 +11561,7 @@
       "address": "0x94a14ba6e59f4be36a77041ef5590fe24445876a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11260,7 +11592,7 @@
       "address": "0x990f2a61d4a9bc89ed6a9e823fd24736d763f8d5",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11291,7 +11623,7 @@
       "address": "0x9a6755d26aaa41c40477ce5f618808eccf9bd935",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11322,7 +11654,7 @@
       "address": "0x9bdeade7f62793b98834bc00bc18539a0342abc6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11353,7 +11685,7 @@
       "address": "0x9c471234a95400d1a550a4b359e43fefd5a5632b",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11384,7 +11716,7 @@
       "address": "0xa11583480d6a5ee1cc2d47676916ec165c70426e",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11415,7 +11747,7 @@
       "address": "0xa2239545213d08b9722f28fe1a029b32834aac91",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11477,7 +11809,7 @@
       "address": "0xa57c1b367017d96d162671d653916b6fd345f374",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11508,7 +11840,7 @@
       "address": "0xa89ebe8d7471d7d36acbfe4b0d086834390399b7",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11539,7 +11871,7 @@
       "address": "0xae81b66ae3b2f21eff95e4e470b4826613277ae3",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11570,7 +11902,7 @@
       "address": "0xaf54dcb325b6160871f1778c3043a1249bd9b1c1",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11601,7 +11933,7 @@
       "address": "0xafd25d1e68cb20d4fb2685c8e5726a0a72fd55fe",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11694,7 +12026,7 @@
       "address": "0xb0dda668a5af382ccad80e6171ec492cc754bc0b",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11725,7 +12057,7 @@
       "address": "0xb122dc90f1e85fbf42467ba44c9ad1440f51f554",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11818,7 +12150,7 @@
       "address": "0xb5663c9068a7894fab7a4f60a297eb4a9bcaea6b",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11849,7 +12181,7 @@
       "address": "0xb5c9aeba968c2948f0d842f009e0e170da5d01c3",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11880,7 +12212,7 @@
       "address": "0xb7e0b3e00fb13eccf70907bc5b626f4f88f1fd85",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11911,7 +12243,7 @@
       "address": "0xb9ac7395a0d0291c8c471c4dbcb89393d9572f9a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11942,7 +12274,7 @@
       "address": "0xbb2f534995b2d1584c104d3ab67f9aa1fbcc4446",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -11973,7 +12305,7 @@
       "address": "0xbca6aacc63d41bbc9a15631591e944fee40dd217",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12283,7 +12615,7 @@
       "address": "0xd2de888007e7f417cec5c9119c48e18250cbe1df",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12314,7 +12646,7 @@
       "address": "0xd368a39177eabec71df0024483030ced938d50f3",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12345,7 +12677,7 @@
       "address": "0xd407884f6d74eb1b62680901e2ec6d14009b270e",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12376,7 +12708,7 @@
       "address": "0xd4d9a67e956dedbbe05c4589618c8001cb8493f6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12407,7 +12739,7 @@
       "address": "0xd4eef282f58ecaf12118e96ed4c06f60f88009c6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12438,7 +12770,7 @@
       "address": "0xd8150d333aa9decbfd4b5cb535867ed9538abf26",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12500,7 +12832,7 @@
       "address": "0xdea478d67533187a64d023d15e32cb49e9533f44",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12531,7 +12863,7 @@
       "address": "0xe112a9b919d98e4ca775f1548f9c6f50b63ef227",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12562,7 +12894,7 @@
       "address": "0xe124b1bc47e1974196febb19a44b4eecd92b6cce",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12593,7 +12925,7 @@
       "address": "0xe2cf602bc7922d51fbca791fcb9845e4cacd8abc",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12655,7 +12987,7 @@
       "address": "0xe32b0f0f0ea47050a6fead254a4e7cbde161f867",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12686,7 +13018,7 @@
       "address": "0xe45242483cdc310de7bef3cdb8545ab1af31eb43",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12779,7 +13111,7 @@
       "address": "0xe8d61bd0aa636e65eced6852fe89a559ab9fda17",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12810,7 +13142,7 @@
       "address": "0xe90d44b95925e5c3cde0c9707b20f3f3719cb83d",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12841,7 +13173,7 @@
       "address": "0xeb8f955dac5eddd52489b1b361f87f6aa8830e10",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12872,7 +13204,7 @@
       "address": "0xec9749a2104839dd30ac88e6f0ef7a782505701d",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12903,7 +13235,7 @@
       "address": "0xf21fc8d23bbae7c9d0b8106f8c8bd39c7b6f1543",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12934,7 +13266,7 @@
       "address": "0xf65821455bb55b6bca0671e0c5045aa218759a25",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12965,7 +13297,7 @@
       "address": "0xf85ff6e5d29a9db34b7692383a7b2a86c191ad9b",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -12996,7 +13328,7 @@
       "address": "0xf927d65800d5a03403e27f2044f7753d93d6ffc6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13112,7 +13444,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -13120,7 +13452,7 @@
       "address": "0xfb72071cb2d567ef857100d93d8b1d7221faeb05",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13523,7 +13855,7 @@
       "address": "0x5385bcc7420012babd14675a466e24fbe2f9b1d6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13554,7 +13886,7 @@
       "address": "0x61cfb14dd3b69d2bfff25aa16f1d34a1957bc7cb",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13585,7 +13917,7 @@
       "address": "0x783f80dcd3af3c751104b165ea699c281ffc3f47",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13616,7 +13948,7 @@
       "address": "0x7c64caaf1e233d45a943ce903aebf7a6f1761bcf",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13647,7 +13979,7 @@
       "address": "0x7ec1f05fadffd3e8c0dab508e7f3266aa2e815dd",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13678,7 +14010,7 @@
       "address": "0x8417148b47ccb1e7c7249780e18cf5967b342390",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13709,7 +14041,7 @@
       "address": "0x86d9b423172b336bb7a4ba84354a9644edbc4c4e",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13740,7 +14072,7 @@
       "address": "0x8d4eedf50d4e5cb672b13e16dcc8bb9e4c3a44af",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13771,7 +14103,7 @@
       "address": "0x8e1d305ab9abdcb40f757b9e28c7782af2392982",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13802,7 +14134,7 @@
       "address": "0x8ec747dca348e35b5a3b94a950783e0e84707969",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13833,7 +14165,7 @@
       "address": "0x922d21f09b3e86395172864fbed543f2c8d518f6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13864,7 +14196,7 @@
       "address": "0x995b838c2daa933402cd9fbf7e6202ec8acdd714",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13895,7 +14227,7 @@
       "address": "0x9bdeade7f62793b98834bc00bc18539a0342abc6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13926,7 +14258,7 @@
       "address": "0x9ecd3c2b3a85a88deb7023bc03baf3bb66780bb5",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13957,7 +14289,7 @@
       "address": "0xa45d7f2e3152bc5e207a13ebbf6cd92208bf4d19",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -13988,7 +14320,7 @@
       "address": "0xaf52ac01fa3b4d89d93056da818315317cecd3f2",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14019,7 +14351,7 @@
       "address": "0xb50f07f637c6b782ff94c792051edaea4907fa84",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14267,7 +14599,7 @@
       "address": "0xf56f6349b1b57e96c65a79fc782a046f44b8f0de",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14298,7 +14630,7 @@
       "address": "0xf6c307f3e9f2335ae2a0d299dc4be0bf390f1157",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14391,7 +14723,7 @@
       "address": "0x5548bb3a5bc984a3f196c230c72fdb2917bcbf3a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14422,7 +14754,7 @@
       "address": "0x5572ea20e6eb469d7c98f7f63720530902afbc7c",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14453,7 +14785,7 @@
       "address": "0x62a3cb69626dd15506db89f647ae1d0e8b5610b0",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14484,7 +14816,7 @@
       "address": "0x658902c39753145c4f2d0924804b8370f9da335a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14515,7 +14847,7 @@
       "address": "0x678e1ef651ff9ea5afc202d99dfab875e476f0b6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14701,7 +15033,7 @@
       "address": "0xa5670c3589481edcebe4d15914d7f6b74817b60d",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14732,7 +15064,7 @@
       "address": "0xd02f044454e23a7864027c1245eaea64f727a9e0",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14763,7 +15095,7 @@
       "address": "0xd119a698f3926461ab34c7542e68338ee3ea9876",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14794,7 +15126,7 @@
       "address": "0xe59a057f606a8262ac3b6f3f78a6abc5cc4e6d0c",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14825,7 +15157,7 @@
       "address": "0xfa7d42a1acb2d8aba554077db7b7dc1772058723",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14856,7 +15188,7 @@
       "address": "0x037355fc83f1d9ca34868488c0414a8a1f43ddd6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14887,7 +15219,7 @@
       "address": "0x0595e691f083530d18c16604092ef930174264d5",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14918,7 +15250,7 @@
       "address": "0x0a6941ef5578fde91db5c84561ee4b4ae5c20cdd",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14949,7 +15281,7 @@
       "address": "0x1357ee5616ed0f410380296ba314ac303e1d485c",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -14980,7 +15312,7 @@
       "address": "0x181948f8ec61e5d81e6bc1db1b386b50e796fab7",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -15011,7 +15343,7 @@
       "address": "0x197ce4142ea7b327feaafe37827dafb6041816f7",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -15383,7 +15715,7 @@
       "address": "0xf56f6349b1b57e96c65a79fc782a046f44b8f0de",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -15600,7 +15932,7 @@
       "address": "0x00ed699920c5baa62737b31fe6c659ed8300091e",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -15631,7 +15963,7 @@
       "address": "0x02960535ffb91bffdefb508b3f4f08404ea1e6db",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -15662,7 +15994,7 @@
       "address": "0x034baf1817987728af321cce3da3cd3b3c1296b9",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -15693,7 +16025,7 @@
       "address": "0x054a30b4fe877b0b92c3f1f4952a26ccdde19b4c",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -15724,7 +16056,7 @@
       "address": "0x07f5ed9f0c11054cf53285992fa21089e4499c22",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -15755,7 +16087,7 @@
       "address": "0x08a8c406b69a9312bce46a07c58871e2d82d71fa",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -15786,7 +16118,7 @@
       "address": "0x0b033259a38a1cdf4660b861756ceca65be8cd87",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -16282,7 +16614,7 @@
       "address": "0x26493cebc23f6369969862c0beaea25644e44fab",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -16313,7 +16645,7 @@
       "address": "0x2653e3df46bf78799f80372c8fa152a336aaa0b2",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -16344,7 +16676,7 @@
       "address": "0x2913c48aad131e84c3487cbe715eed49a4c57a7e",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -16375,7 +16707,7 @@
       "address": "0x36ce10da761434123ef3a5f668c20fb1428a9aaa",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -16406,7 +16738,7 @@
       "address": "0x38de128b7263a3608cae5b5b4d3ba20fc9759dc3",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -16437,7 +16769,7 @@
       "address": "0x3bbb16351059d7405b2c41d9fb9b89d71a8a1a4f",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -16468,7 +16800,7 @@
       "address": "0x3fc9f017fbf4251f006163b7cad6601fc1a8aa71",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -16499,7 +16831,7 @@
       "address": "0x41602ccf9b1f63ea1d0ab0f0a1d2f4fd0da53f60",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -16530,7 +16862,7 @@
       "address": "0x422a86f57b6b6f1e557d406331c25eeed075e7aa",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -16561,7 +16893,7 @@
       "address": "0x428e1914404dbff52bd8c7baed9719cc5ed181be",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -16592,7 +16924,7 @@
       "address": "0x433f038de49317aa8ec43a972924f9f9e15c134d",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -16623,7 +16955,7 @@
       "address": "0x44a1cbe27a069beb865bc6efa1012e71dd2866d7",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -16654,7 +16986,7 @@
       "address": "0x4779f4b09c74b9ed31abe60e1cfc3b1b4832f128",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -16685,7 +17017,7 @@
       "address": "0x47c19a2ab52da26551a22e2b2aeed5d19ef4022f",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -16716,7 +17048,7 @@
       "address": "0x47e96fe7e744bada5301a573cf40459476f1f35c",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -17243,7 +17575,7 @@
       "address": "0x938f330d77a0c2432c0a8e247155297393f39645",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -17274,7 +17606,7 @@
       "address": "0x94a14ba6e59f4be36a77041ef5590fe24445876a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -17305,7 +17637,7 @@
       "address": "0x95341b182d8f5e7b9903560fd9a5bdfa272a6070",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -17336,7 +17668,7 @@
       "address": "0x990f2a61d4a9bc89ed6a9e823fd24736d763f8d5",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -17367,7 +17699,7 @@
       "address": "0x99e8352d079326bc431633a61954f713aafe372c",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -17398,7 +17730,7 @@
       "address": "0x9b7652f4384545d371e8a2df00aa450b6e065315",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -17429,7 +17761,7 @@
       "address": "0x9d18008da36a66c7535d8fdbef36465e535ed148",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -17460,7 +17792,7 @@
       "address": "0xa11583480d6a5ee1cc2d47676916ec165c70426e",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -17491,7 +17823,7 @@
       "address": "0xa4e5ebedcd1129ed30c77644a70f4dd3c2d482cc",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -17522,7 +17854,7 @@
       "address": "0xa674843cd2b7fc0ee1233b48378d3641f4ff18c9",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -17956,7 +18288,7 @@
       "address": "0xd9219fb7dde716b4e50d6468a84e33a1c31fc4cd",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -17987,7 +18319,7 @@
       "address": "0xdb274d1a2ef82ee02db637c993e23c13781df37a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18018,7 +18350,7 @@
       "address": "0xdd9190bd5c5939836a642377f567f3d50cc98ac8",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18049,7 +18381,7 @@
       "address": "0xe08020a6517c1ad321d47c45efbe1d76f5035d75",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18080,7 +18412,7 @@
       "address": "0xe48cfcb8ce8abb3b8a212feead57526dcdc3d396",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18111,7 +18443,7 @@
       "address": "0xe8db80556ea859b15e5075992b4f0070d88b3465",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18142,7 +18474,7 @@
       "address": "0xeb339b4ea1051c8064a124c959b531c89b834182",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18173,7 +18505,7 @@
       "address": "0xec85f77104ffa35a5411750d70edff8f1496d95b",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18204,7 +18536,7 @@
       "address": "0xedd1d61cea864b8abad7618a72c754ec0925b710",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18235,7 +18567,7 @@
       "address": "0xef7b35aab3c0dd3103c707656bfca9e5ea48d83b",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18266,7 +18598,7 @@
       "address": "0xf3919fcee9863e1df6dac2d1e661a3b7e540d1c9",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18297,7 +18629,7 @@
       "address": "0xf3c9766fb389480d2ffa60acd53dff33dd69bd56",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18328,7 +18660,7 @@
       "address": "0xf56f6349b1b57e96c65a79fc782a046f44b8f0de",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18359,7 +18691,7 @@
       "address": "0xf9b434c01d3860bb329fdd2353a3f99543c2e0d2",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18390,7 +18722,7 @@
       "address": "0xfd3868b848b5d9ed3583938b4db4746415bd43a3",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18421,7 +18753,7 @@
       "address": "0x17ec31e6dfe39a3e52c1dcc5eb58468923e57def",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18452,7 +18784,7 @@
       "address": "0x2df3aa0cd319a06bb1283406d8bb50eb34777937",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18483,7 +18815,7 @@
       "address": "0x4522ce95a9a2bfd474f91827d68de01adb4c8b33",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18514,7 +18846,7 @@
       "address": "0x710599a2d88919f3872a93247afd808cd75f8fcc",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18545,7 +18877,7 @@
       "address": "0x86c50ab87d308168f0ac1988dacaa0f13e4f3a70",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18576,7 +18908,7 @@
       "address": "0xdd4325cd2ec00cfcee30e1165954ec83154805f9",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -18773,7 +19105,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -18809,14 +19141,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -18867,14 +19201,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12446"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -19009,8 +19345,8 @@
   ],
   "audits": [
     {
-      "audit_id": 11569,
-      "audit_key": "audit-11569",
+      "audit_id": 12443,
+      "audit_key": "audit-12443",
       "report_name": "dForceLending-Audit-Report-Certik-Feb-2021.pdf",
       "report_url": "https://github.com/dforce-network/documents/blob/master/audit_report/Lending/dForceLending-Audit-Report-Certik-Feb-2021.pdf",
       "auditor": "CertiK",
@@ -19021,17 +19357,41 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Base",
+        "Controller",
+        "ERC20",
+        "IControllerInterface",
+        "IFlashloanExecutor",
+        "IInterestRateModelInterface",
+        "IPriceOracle",
+        "IRewardDistributor",
+        "IiToken",
+        "Initializable",
+        "InterestRateModel",
+        "Ownable",
+        "PriceOracle",
+        "ProxyAdmin",
+        "ReentrancyGuard",
+        "RewardDistributor",
+        "SafeRatioMath",
+        "TokenAdmin",
+        "TokenERC20",
+        "TokenEvent",
+        "TokenStorage",
+        "iETH",
+        "iToken"
+      ],
+      "matched_contracts": 88,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11570,
-      "audit_key": "audit-11570",
+      "audit_id": 12444,
+      "audit_key": "audit-12444",
       "report_name": "dForceLending-Audit-Report-Certora-Feb-2021.pdf",
       "report_url": "https://github.com/dforce-network/documents/blob/master/audit_report/Lending/dForceLending-Audit-Report-Certora-Feb-2021.pdf",
       "auditor": "Certora",
@@ -19042,17 +19402,20 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Controller",
+        "iToken"
+      ],
+      "matched_contracts": 53,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11571,
-      "audit_key": "audit-11571",
+      "audit_id": 12445,
+      "audit_key": "audit-12445",
       "report_name": "dForceLending-Audit-Report-Consensys-Mar-2021.pdf",
       "report_url": "https://github.com/dforce-network/documents/blob/master/audit_report/Lending/dForceLending-Audit-Report-Consensys-Mar-2021.pdf",
       "auditor": "Consensys",
@@ -19063,17 +19426,47 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Base",
+        "Controller",
+        "ERC20",
+        "FixedInterestRateModel",
+        "IControllerInterface",
+        "IFlashloanExecutor",
+        "IInterestRateModelInterface",
+        "IPriceOracle",
+        "IRewardDistributor",
+        "IiToken",
+        "Initializable",
+        "InterestRateModel",
+        "MSD",
+        "MSDController",
+        "MSDS",
+        "Ownable",
+        "ProxyAdmin",
+        "ReentrancyGuard",
+        "RewardDistributor",
+        "SafeRatioMath",
+        "StablecoinInterestRateModel",
+        "StandardInterestRateModel",
+        "TokenAdmin",
+        "TokenERC20",
+        "TokenEvent",
+        "TokenStorage",
+        "iETH",
+        "iMSD",
+        "iToken"
+      ],
+      "matched_contracts": 152,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11572,
-      "audit_key": "audit-11572",
+      "audit_id": 12446,
+      "audit_key": "audit-12446",
       "report_name": "dForceLending-Audit-Report-TrailofBits-Mar-2021.pdf",
       "report_url": "https://github.com/dforce-network/documents/blob/master/audit_report/Lending/dForceLending-Audit-Report-TrailofBits-Mar-2021.pdf",
       "auditor": "Trail of Bits",
@@ -19084,16 +19477,65 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Base",
+        "Controller",
+        "FixedInterestRateModel",
+        "LendingData",
+        "MSD",
+        "MSDController",
+        "MSDS",
+        "Ownable",
+        "Proxy",
+        "ProxyAdmin",
+        "RewardDistributor",
+        "StandardInterestRateModel",
+        "TokenAdmin",
+        "TokenERC20",
+        "TransparentUpgradeableProxy",
+        "UpgradeableProxy",
+        "iETH",
+        "iMSD",
+        "iToken"
+      ],
+      "matched_contracts": 372,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Trail of Bits",
+      "tier": 1,
+      "contracts_covered": 39,
+      "coverage_pct": 34.5,
+      "latest_audit": "2021-03"
+    },
+    {
+      "auditor": "Consensys",
+      "tier": 1,
+      "contracts_covered": 11,
+      "coverage_pct": 9.7,
+      "latest_audit": "2021-03"
+    },
+    {
+      "auditor": "CertiK",
+      "tier": 2,
+      "contracts_covered": 6,
+      "coverage_pct": 5.3,
+      "latest_audit": "2021-02"
+    },
+    {
+      "auditor": "Certora",
+      "tier": 1,
+      "contracts_covered": 2,
+      "coverage_pct": 1.8,
+      "latest_audit": "2021-02"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -19108,32 +19550,12 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x1cbd0c8d16dd9c8f450c781b5c3e3623f95f7344",
-      "name": "DSToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 366885.7108654785,
-      "risk_note": "Verified native implementation with $366,885.71 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x2001bd67c56f75ddcca6ec9a7960abf8859e1411",
       "name": "DelayedTransferVault",
       "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": 129473.29766530513,
       "risk_note": "Verified native implementation with $129,473.30 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xce0f05f19845cde36058ccfb53c755ab8739b880",
-      "name": "YieldVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 498.52975699999996,
-      "risk_note": "Verified native implementation with $498.53 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -19181,16 +19603,6 @@
       "address": "0xde399d88ea8331fe2f18306793893a46d142cc5f",
       "name": "CompoundHandler",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0b9fbdb0d8ddcd06a29f029ca5ac1a9fe5bfc783",
-      "name": "Controller",
-      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -19416,26 +19828,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xeb36642f83b4e35ca9b99a07f17abc651eec48ac",
-      "name": "Executor",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x0bcb6be12022c1881031f86c502daa49909b74a1",
-      "name": "FixedInterestRateModel",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xfc75b11b0d753b2392637197b6d4cd31717fa9be",
@@ -19448,7 +19840,7 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x355c665e101b9da58704a8fddb5feef210ef20c0",
+      "address": "0x09a52b4c749d006f7fc0c3f316aeca54d74bb97a",
       "name": "GOLDx",
       "role": "unknown",
       "origin_kind": "native",
@@ -19456,41 +19848,11 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x002cea80a95e71859eec829d6d0ca4771596e861",
-      "name": "iETH",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x06246560298c5ebdda06ab8be6731b9cf8c72c96",
-      "name": "iMSD",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0xb249124bab33f78dd975e4e725e6a20868d978ef",
-      "name": "iMSDMiniPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x10bbb2ba97e612f6da59052d84e2c03bb5ede046",
-      "name": "iMUSX",
-      "role": "unknown",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0effcb66871fcc97f074a901f69b1367d2eacc4f",
+      "name": "GOLDxProxy",
+      "role": "proxy",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -19538,26 +19900,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x1ee116b869ecc7cd13c629a8a2ae39fa361265cf",
-      "name": "L1USXTokenBridge",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x0f18940db877d3fd173af087349ee87b853aa029",
-      "name": "L2USXTokenBridge",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x0e56cfe3cbc7051952efc4a9a7dc531eecdd7ee3",
       "name": "lendFMeHandler",
       "role": "unknown",
@@ -19571,26 +19913,6 @@
       "address": "0x480798e9496a99e6a48948ab478807079289c4c1",
       "name": "LendingHelper",
       "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x8d4eedf50d4e5cb672b13e16dcc8bb9e4c3a44af",
-      "name": "LiquiditySwap",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x689f8897c23eae7f5c496f42a94c67f179c4310c",
-      "name": "LiquiditySwapArb",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -19666,31 +19988,11 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x5b3b6ff84f6693ffc3797f4ec4b764dea1c33cfb",
-      "name": "MSDController",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x1441b99da7854a304133630048dc6cf43580b1af",
       "name": "OneinchSupport",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x40a33fb67b8dafe88a5b1930be03c82157f47c65",
-      "name": "Oracle",
-      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -19708,8 +20010,8 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x34baf46ea5081e3e49c29fccd8671ccc51e61e79",
-      "name": "PriceOracle",
+      "address": "0x060d6784d770d54dcb37fc2cb2d896d929b6e0b1",
+      "name": "PriceFeed",
       "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -19726,30 +20028,10 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0683fea4c419865ff5040f27c5548ccd997a6278",
-      "name": "RewardDistributor",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x47f0adeae9460353abdfbde39986f8575afaad9d",
       "name": "RewardDistributorV2",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x03ddf6cf4b937a008c2f1b5393d6bdac16dd5b08",
-      "name": "StablecoinInterestRateModel",
       "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -19776,36 +20058,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x38de128b7263a3608cae5b5b4d3ba20fc9759dc3",
-      "name": "StakedDF",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x3708b80801e8c7ed55c4dfb7dbaa868d308b7106",
-      "name": "StakingPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x3a452823edb97f72b497c511301fb5758f575336",
-      "name": "StandardInterestRateModel",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x1c3b44c4c49c0d69b92518d52ef716a3b0d5bc90",
@@ -19816,31 +20068,11 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x543774e033d0f7965c9e41eea5018623e024a3eb",
-      "name": "sUSXOFTAdapter",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0x0d535ca4c27f0c25a20e2d474ee3e99c1316bafe",
       "name": "Timelock",
       "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x2ce498b79c499c6bb64934042eba487bd31f75ea",
-      "name": "Treasury",
-      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -19861,26 +20093,6 @@
       "address": "0x2cd4e8d82f62a91b2299b083ba08532a6a96a13a",
       "name": "USRProxy",
       "role": "proxy",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x00d79d808b83b384b040431bd9ed5a17fd930e2e",
-      "name": "veDF",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x16888e7935a1a08195e5a50477df5250c7f0e279",
-      "name": "veDFManager",
-      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -19907,34 +20119,21 @@
     }
   ],
   "origin_summary": {
-    "native": 210,
-    "upstream": 0,
+    "native": 241,
+    "upstream": 3,
     "standard_library": 9,
-    "needs_review": 230
+    "needs_review": 200
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 665
+    },
+    "extraction_confidence_counts": {
+      "high": 4
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 11569,
-        "report_name": "dForceLending-Audit-Report-Certik-Feb-2021.pdf"
-      },
-      {
-        "audit_id": 11570,
-        "report_name": "dForceLending-Audit-Report-Certora-Feb-2021.pdf"
-      },
-      {
-        "audit_id": 11571,
-        "report_name": "dForceLending-Audit-Report-Consensys-Mar-2021.pdf"
-      },
-      {
-        "audit_id": 11572,
-        "report_name": "dForceLending-Audit-Report-TrailofBits-Mar-2021.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

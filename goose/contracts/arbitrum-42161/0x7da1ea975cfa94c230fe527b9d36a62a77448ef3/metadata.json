@@ -1,0 +1,18 @@
+{
+  "address": "0x7da1ea975cfa94c230fe527b9d36a62a77448ef3",
+  "chain_id": 42161,
+  "contract_name": "DataStorage",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:36:45.210Z"
+}

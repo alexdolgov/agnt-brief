@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "sideshift",
-  "generated_at": "2026-06-11T02:41:55.935Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
+  "generated_at": "2026-06-12T20:36:16.497Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9988",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "sideshift",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 15003690.36534,
+    "dl_tvl_usd": 12702890.56328,
     "tvl_usd": 12328298.636670807,
     "tvl_source": "on_chain",
     "tvl_by_chain": {

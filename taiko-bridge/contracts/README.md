@@ -1,12 +1,13 @@
 # taiko-bridge — Contract Index
 
-52 unique implementations on ethereum · 210 deployments · 0 audited · 44 unaudited · 8 unverified
+56 unique implementations on ethereum · 215 deployments · 0 audited · 48 unaudited · 8 unverified
 
-## adapter (2)
+## adapter (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [MainnetTierRouter (14 deployments)](./ethereum-1/0x02d6ab2b54e1465fb854c08d41db1e547533f915/) | ethereum | 14 deployments: ethereum [`0x02d6ab...33f915`](./ethereum-1/0x02d6ab2b54e1465fb854c08d41db1e547533f915/); ethereum `0x082fb5...2fa572`; ethereum `0x1c02d1...0f34e3`; ethereum `0x2ae894...c26065`; ethereum `0x2cd242...c7afd0`; ethereum `0x394e30...1935b0`; ethereum `0x44d307...c86db6`; ethereum `0x46d230...3bfcce`; ethereum `0x6cc408...db269e`; ethereum `0x7037ae...a7bb75`; ethereum `0x8a4c69...e52e66`; ethereum `0x8f1c1d...6b5542`; ethereum `0xe93588...a58814`; ethereum `0xfb6a87...019d06` | ⚠️ Unaudited | Verified |
+| [PreconfRouter](./ethereum-1/0xd5aa0e20e8a6e9b04f080cf8797410fafaa9688a/) | ethereum | [`0xd5aa0e...a9688a`](./ethereum-1/0xd5aa0e20e8a6e9b04f080cf8797410fafaa9688a/) | ⚠️ Unaudited | Verified |
 | [TierRouter](./ethereum-1/0x6e997f1f22c40ba37f633b08f3b07e10ed43155a/) | ethereum | [`0x6e997f...43155a`](./ethereum-1/0x6e997f1f22c40ba37f633b08f3b07e10ed43155a/) | ⚠️ Unaudited | Verified |
 
 ## core_logic (6)
@@ -63,17 +64,20 @@
 | [TokenUnlock (3 deployments)](./ethereum-1/0x10edc3b383dd87e675e88623ff1cbb09b3cdefde/) | ethereum | 3 deployments: ethereum [`0x10edc3...cdefde`](./ethereum-1/0x10edc3b383dd87e675e88623ff1cbb09b3cdefde/); ethereum `0x816628...b898a7`; ethereum `0xd6a337...6ff5e7` | ⚠️ Unaudited | Verified |
 | [TokenUnlocking](./ethereum-1/0x244108e321fe03b0e33fe63ef62285f05d191a62/) | ethereum | [`0x244108...191a62`](./ethereum-1/0x244108e321fe03b0e33fe63ef62285f05d191a62/) | ⚠️ Unaudited | Verified |
 
-## unknown (21)
+## unknown (24)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AssignmentHook (5 deployments)](./ethereum-1/0x25206cbd98edaea26e8eadd285c66c951aada046/) | ethereum | 5 deployments: ethereum [`0x25206c...ada046`](./ethereum-1/0x25206cbd98edaea26e8eadd285c66c951aada046/); ethereum `0x4f6642...dda170`; ethereum `0x537a2f...1796f6`; ethereum `0xe226fa...36fb0d`; ethereum `0xf77cbf...5e53f2` | ⚠️ Unaudited | Verified |
 | [AutomataDcapV3Attestation (4 deployments)](./ethereum-1/0x5f73f0adc7daa6134fe751c4a78d524f9384e0b5/) | ethereum | 4 deployments: ethereum [`0x5f73f0...84e0b5`](./ethereum-1/0x5f73f0adc7daa6134fe751c4a78d524f9384e0b5/); ethereum `0x8d7c95...7ca8a3`; ethereum `0xde1b1f...303323`; ethereum `0xee8fc1...fcdafc` | ⚠️ Unaudited | Verified |
+| [DefaultResolver (2 deployments)](./ethereum-1/0x5a982fb1818c22744f5d7d36d0c4c9f61937b33a/) | ethereum | 2 deployments: ethereum [`0x5a982f...37b33a`](./ethereum-1/0x5a982fb1818c22744f5d7d36d0c4c9f61937b33a/); ethereum `0x8efa01...0cb43e` | ⚠️ Unaudited | Verified |
+| [ForcedInclusionStore](./ethereum-1/0x05d88855361808fa1d7fc28084ef3fca191c4e03/) | ethereum | [`0x05d888...1c4e03`](./ethereum-1/0x05d88855361808fa1d7fc28084ef3fca191c4e03/) | ⚠️ Unaudited | Verified |
 | [MainnetInbox](./ethereum-1/0x06a9ab27c7e2255df1815e6cc0168d7755feb19a/) | ethereum | [`0x06a9ab...feb19a`](./ethereum-1/0x06a9ab27c7e2255df1815e6cc0168d7755feb19a/) | ⚠️ Unaudited | Verified |
 | [MainnetProverSet (6 deployments)](./ethereum-1/0x280eabfd252f017b78e15b69580f249f45fb55fa/) | ethereum | 6 deployments: ethereum [`0x280eab...fb55fa`](./ethereum-1/0x280eabfd252f017b78e15b69580f249f45fb55fa/); ethereum `0x3022ed...5e8763`; ethereum `0x74828e...72d652`; ethereum `0xa01d46...a9ddb3`; ethereum `0xce5a11...f2b15a`; ethereum `0xd0d3f0...a4f30b` | ⚠️ Unaudited | Verified |
 | [MainnetSignalService (4 deployments)](./ethereum-1/0x45fed11ba70d4217545f18e27ddaf7d76ff499f3/) | ethereum | 4 deployments: ethereum [`0x45fed1...f499f3`](./ethereum-1/0x45fed11ba70d4217545f18e27ddaf7d76ff499f3/); ethereum `0x6e8804...51896a`; ethereum `0xbddf61...f7d37c`; ethereum `0xdf8642...f315df` | ⚠️ Unaudited | Verified |
 | [MainnetTaikoL1 (14 deployments)](./ethereum-1/0x0205ea1e1162bc50e1030f36412e5dd69daa4040/) | ethereum | 14 deployments: ethereum [`0x0205ea...aa4040`](./ethereum-1/0x0205ea1e1162bc50e1030f36412e5dd69daa4040/); ethereum `0x1de54d...64141a`; ethereum `0x278442...37588d`; ethereum `0x30923a...3ee5d9`; ethereum `0x4229d1...cdab2d`; ethereum `0x4b4051...6f1fd4`; ethereum `0x511063...74d7ca`; ethereum `0xa3e75e...dcdb17`; ethereum `0xb74a66...758162`; ethereum `0xba1d90...d83231`; ethereum `0xd4896d...d65e1c`; ethereum `0xe7c4b4...8e9a5b`; ethereum `0xede3c9...e395bc`; ethereum `0xf0e6d3...ffdf2f` | ⚠️ Unaudited | Verified |
 | [PEMCertChainLib](./ethereum-1/0x02772b7b3a5bea0141c993dbb8d0733c19f46169/) | ethereum | [`0x02772b...f46169`](./ethereum-1/0x02772b7b3a5bea0141c993dbb8d0733c19f46169/) | ⚠️ Unaudited | Verified |
+| [PreconfWhitelist](./ethereum-1/0xfd019460881e6eec632258222393d5821029b2ac/) | ethereum | [`0xfd0194...29b2ac`](./ethereum-1/0xfd019460881e6eec632258222393d5821029b2ac/) | ⚠️ Unaudited | Verified |
 | [ProverSet (5 deployments)](./ethereum-1/0x500735343372dd6c9b84dbc7a75babf4479742b9/) | ethereum | 5 deployments: ethereum [`0x500735...9742b9`](./ethereum-1/0x500735343372dd6c9b84dbc7a75babf4479742b9/); ethereum `0x518845...953c9a`; ethereum `0x5d5282...0bf5fd`; ethereum `0xd0aee9...14d85f`; ethereum `0xd547ca...18f9d1` | ⚠️ Unaudited | Verified |
 | [ProxylessAssignmentHook](./ethereum-1/0xa641a2d6c0112e5ec6baf2fa40d519323a085248/) | ethereum | [`0xa641a2...085248`](./ethereum-1/0xa641a2d6c0112e5ec6baf2fa40d519323a085248/) | ⚠️ Unaudited | Verified |
 | [SignalService (4 deployments)](./ethereum-1/0x3d59c18b31a7d950ef9bd15ed285b6c182e0f0bb/) | ethereum | 4 deployments: ethereum [`0x3d59c1...e0f0bb`](./ethereum-1/0x3d59c18b31a7d950ef9bd15ed285b6c182e0f0bb/); ethereum `0x9e0a24...35c77c`; ethereum `0xb11cd7...1e652d`; ethereum `0xe1d91b...c33c72` | ⚠️ Unaudited | Verified |

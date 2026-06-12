@@ -1,47 +1,47 @@
 {
   "schema_version": "2.0",
   "project_key": "geth",
-  "generated_at": "2026-06-10T23:33:58.286Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-12T20:36:13.131Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9988",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "geth",
     "tier": 0,
     "peak_tvl": 33429019,
     "peak_date": "2025-08-23T00:00:00.000Z",
-    "tvl_30d_ago": 18159781,
-    "tvl_90d_ago": 15078163,
-    "tvl_current": 16229941,
+    "tvl_30d_ago": 17298711,
+    "tvl_90d_ago": 16025743,
+    "tvl_current": 12779906,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 21474105,
-    "change_30d_pct": -10.627000402703095,
-    "change_90d_pct": 7.638715671133148,
-    "days_since_peak": 272,
+    "tvl_180d_ago": 23554215,
+    "change_30d_pct": -26.122206446480316,
+    "change_90d_pct": -20.253894000421695,
+    "days_since_peak": 293,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 51.4495444810989
+    "drop_from_peak_pct": 61.770023822715224
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 16048230.56956,
-    "tvl_usd": 16161210.883357283,
+    "dl_tvl_usd": 12724660.03666,
+    "tvl_usd": 16166712.82753188,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 16161210.88
+      "ethereum": 16166712.83
     },
-    "asd_usd": 16161210.883357283,
+    "asd_usd": 16166712.82753188,
     "website_url": "https://guarda.com/staking/ethereum-staking/",
     "chains": [
       "ethereum"
@@ -59,13 +59,13 @@
   },
   "topography": {
     "project_purpose": "GETH is Guarda's Ethereum liquid staking/tokenized staking product. Users stake ETH and receive GETH as a liquid token representing their staked position and accrued rewards. The on-chain surface includes StakeToken and an EthStakingCrowdsale contract that should be reviewed as part of the protocol topology; no single-contract architecture should be assumed without further review.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The protocol consists of a single product family with one core contract, the StakeToken, which handles both staking and token issuance.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 3,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -102,6 +102,68 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x00000000219ab540356cbb839cbe05303d7705fa",
+      "name": "DepositContract",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "ethereum",
+      "product_line": null,
+      "tvl_usd": 5501.944174596336,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DepositContract",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x00000000219ab540356cbb839cbe05303d7705fa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 5501.944174596336,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x408d1f0a8a6f478f082f34c5eeb41541262ce19f",
+      "name": "UniswapV2Pair",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV2Pair",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x408d1f0a8a6f478f082f34c5eeb41541262ce19f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [],
@@ -120,7 +182,7 @@
   ],
   "origin_summary": {
     "native": 1,
-    "upstream": 0,
+    "upstream": 2,
     "standard_library": 0,
     "needs_review": 0
   },

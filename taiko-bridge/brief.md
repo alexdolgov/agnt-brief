@@ -5,11 +5,11 @@
 - Project: Taiko Bridge (`taiko-bridge`)
 - Website: [https://bridge.taiko.xyz/](https://bridge.taiko.xyz/)
 - Lifecycle: active (Tier 0, 90.7% below peak)
-- Generated: 2026-06-11T03:26:37.100Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
+- Generated: 2026-06-12T20:35:51.735Z
+- Pipeline run: v2-pipeline-2026-06-12-546062-9988
 - Chains: ethereum
-- Contract surface: 52 unique implementations (210 raw deployments)
-- DeFi Llama TVL: $16,768,686.97
+- Contract surface: 56 unique implementations (215 raw deployments)
+- DeFi Llama TVL: $12,761,962.78
 - On-chain TVL (included contracts): $1,415,595.32
 - TVL by chain: Ethereum $1,415,595.32
 
@@ -23,12 +23,12 @@ The bridge family relies on shared infrastructure: SignalService for cross-chain
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/44 (0.0%)
-- Verified + Unaudited implementations: 44
+- Verified implementations audited: 0/48 (0.0%)
+- Verified + Unaudited implementations: 48
 - Verified by bytecode match: 0
 - Unverified implementations: 8
-- Unique implementations: 52
-- Raw deployments: 210
+- Unique implementations: 56
+- Raw deployments: 215
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $1,415,595.32
@@ -46,7 +46,7 @@ The bridge family relies on shared infrastructure: SignalService for cross-chain
 
 - None
 
-### ⚠️ Verified + Unaudited (44)
+### ⚠️ Verified + Unaudited (48)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -59,9 +59,11 @@ The bridge family relies on shared infrastructure: SignalService for cross-chain
 | BridgedERC20 | operational_periphery | ethereum | 2 deployments: ethereum [`0x79bc0a...3653e3`](./contracts/ethereum-1/0x79bc0aada00fcf6e7ab514bfeb093b5fae3653e3/); ethereum `0xcc5d48...de7372` | ⚠️ Unaudited |
 | BridgedERC20V2 | operational_periphery | ethereum | 2 deployments: ethereum [`0x656661...09a2e1`](./contracts/ethereum-1/0x65666141a541423606365123ed280ab16a09a2e1/); ethereum `0x7714f5...860f8c` | ⚠️ Unaudited |
 | BridgedERC721 | operational_periphery | ethereum | 2 deployments: ethereum [`0xc33109...6a1bf7`](./contracts/ethereum-1/0xc3310905e2bc9cfb198695b75ef3e5b69c6a1bf7/); ethereum `0xc4096e...c12de7` | ⚠️ Unaudited |
+| DefaultResolver | unknown | ethereum | 2 deployments: ethereum [`0x5a982f...37b33a`](./contracts/ethereum-1/0x5a982fb1818c22744f5d7d36d0c4c9f61937b33a/); ethereum `0x8efa01...0cb43e` | ⚠️ Unaudited |
 | ERC1155Vault | core_logic | ethereum | 5 deployments: ethereum [`0x01329a...2332fa`](./contracts/ethereum-1/0x01329a1cde2509421cbe99dd3feb3c1b212332fa/); ethereum `0x097bbb...a47dc3`; ethereum `0x7748da...3c6396`; ethereum `0xca9288...1a59c8`; ethereum `0xd90b5f...1cdcfe` | ⚠️ Unaudited |
 | ERC20Vault | core_logic | ethereum | 7 deployments: ethereum [`0x15d9f7...4a4bec`](./contracts/ethereum-1/0x15d9f7e12aea18daef5c651fbf97567cad4a4bec/); ethereum `0x4f750d...374ca1`; ethereum `0x540fe6...0b56ff`; ethereum `0x75b5e2...80eb22`; ethereum `0xa30378...722689`; ethereum `0xc722d9...b9bf8e`; ethereum `0xf8bdac...74e737` | ⚠️ Unaudited |
 | ERC721Vault | core_logic | ethereum | 5 deployments: ethereum [`0x2dfef0...3163ed`](./contracts/ethereum-1/0x2dfef0339009ce10786fc118c883bb97af3163ed/); ethereum `0x41a7bd...1495fa`; ethereum `0x55b5df...4732c4`; ethereum `0x7dae64...b1ed5c`; ethereum `0xec0484...94f692` | ⚠️ Unaudited |
+| ForcedInclusionStore | unknown | ethereum | [`0x05d888...1c4e03`](./contracts/ethereum-1/0x05d88855361808fa1d7fc28084ef3fca191c4e03/) | ⚠️ Unaudited |
 | GuardianProver | governance | ethereum | 7 deployments: ethereum [`0x253e47...64b65e`](./contracts/ethereum-1/0x253e47f2b1e91f2001d3578aeb24c0ccf464b65e/); ethereum `0x468f6a...942d5c`; ethereum `0x717dc5...4ce9cf`; ethereum `0x750221...7942d2`; ethereum `0x7e717f...5bc8a4`; ethereum `0x97f5a0...03b28c`; ethereum `0xce6b40...877e15` | ⚠️ Unaudited |
 | L1RollupAddressManager | governance | ethereum | 3 deployments: ethereum [`0x29a88d...154900`](./contracts/ethereum-1/0x29a88d60246c76e4f28806b9c8a42d2183154900/); ethereum `0x8af466...d07a9a`; ethereum `0x8eef31...903af6` | ⚠️ Unaudited |
 | L1SharedAddressManager | governance | ethereum | 2 deployments: ethereum [`0x25d846...672b5c`](./contracts/ethereum-1/0x25d8465fd0c8d89bfde910e47c41f4e465672b5c/); ethereum `0x949650...398a17` | ⚠️ Unaudited |
@@ -79,6 +81,8 @@ The bridge family relies on shared infrastructure: SignalService for cross-chain
 | MainnetTierRouter | adapter | ethereum | 14 deployments: ethereum [`0x02d6ab...33f915`](./contracts/ethereum-1/0x02d6ab2b54e1465fb854c08d41db1e547533f915/); ethereum `0x082fb5...2fa572`; ethereum `0x1c02d1...0f34e3`; ethereum `0x2ae894...c26065`; ethereum `0x2cd242...c7afd0`; ethereum `0x394e30...1935b0`; ethereum `0x44d307...c86db6`; ethereum `0x46d230...3bfcce`; ethereum `0x6cc408...db269e`; ethereum `0x7037ae...a7bb75`; ethereum `0x8a4c69...e52e66`; ethereum `0x8f1c1d...6b5542`; ethereum `0xe93588...a58814`; ethereum `0xfb6a87...019d06` | ⚠️ Unaudited |
 | P256Verifier | periphery | ethereum | [`0x11a9eb...fbeab0`](./contracts/ethereum-1/0x11a9eba17ebf92b40fcf9a640ebbc47db6fbeab0/) | ⚠️ Unaudited |
 | PEMCertChainLib | unknown | ethereum | [`0x02772b...f46169`](./contracts/ethereum-1/0x02772b7b3a5bea0141c993dbb8d0733c19f46169/) | ⚠️ Unaudited |
+| PreconfRouter | adapter | ethereum | [`0xd5aa0e...a9688a`](./contracts/ethereum-1/0xd5aa0e20e8a6e9b04f080cf8797410fafaa9688a/) | ⚠️ Unaudited |
+| PreconfWhitelist | unknown | ethereum | [`0xfd0194...29b2ac`](./contracts/ethereum-1/0xfd019460881e6eec632258222393d5821029b2ac/) | ⚠️ Unaudited |
 | ProverSet | unknown | ethereum | 5 deployments: ethereum [`0x500735...9742b9`](./contracts/ethereum-1/0x500735343372dd6c9b84dbc7a75babf4479742b9/); ethereum `0x518845...953c9a`; ethereum `0x5d5282...0bf5fd`; ethereum `0xd0aee9...14d85f`; ethereum `0xd547ca...18f9d1` | ⚠️ Unaudited |
 | ProxylessAssignmentHook | unknown | ethereum | [`0xa641a2...085248`](./contracts/ethereum-1/0xa641a2d6c0112e5ec6baf2fa40d519323a085248/) | ⚠️ Unaudited |
 | QuotaManager | governance | ethereum | 3 deployments: ethereum [`0x49c5e5...25ef22`](./contracts/ethereum-1/0x49c5e5f131314bb24b17e249960f8b12f925ef22/); ethereum `0x91f671...22f29e`; ethereum `0xdb627b...5bbc64` | ⚠️ Unaudited |
@@ -174,9 +178,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 41 |
-| upstream | 1 |
-| standard_library | 4 |
-| needs_review | 6 |
+| upstream | 2 |
+| standard_library | 8 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 

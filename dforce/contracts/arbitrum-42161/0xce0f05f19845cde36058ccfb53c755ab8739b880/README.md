@@ -5,9 +5,9 @@
 | Chain | arbitrum (42161) |
 | Address | `0xce0f05f19845cde36058ccfb53c755ab8739b880` |
 | Role | core_logic |
-| Origin | native |
-| Audited | No |
-| Audits | n/a |
+| Origin | needs_review |
+| Audited | Yes |
+| Audits | [dForceLending-Audit-Report-TrailofBits-Mar-2021.pdf](https://github.com/dforce-network/documents/blob/master/audit_report/Lending/dForceLending-Audit-Report-TrailofBits-Mar-2021.pdf) |
 | Deployments | 2 (arbitrum [`0xce0f05f19845cde36058ccfb53c755ab8739b880`](../0xce0f05f19845cde36058ccfb53c755ab8739b880/); arbitrum `0xd507d9d4f356b84e3eeec33eedef85bb57f59cfb`) |
 | Proxy | Yes → `0xe1657d...3aaf7f` |
 | Source | Etherscan |

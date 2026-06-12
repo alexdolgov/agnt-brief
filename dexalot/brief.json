@@ -1,41 +1,41 @@
 {
   "schema_version": "2.0",
   "project_key": "dexalot",
-  "generated_at": "2026-06-10T22:52:46.108Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
+  "generated_at": "2026-06-12T05:27:54.384Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-c31370-dba8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "dexalot",
     "tier": 0,
     "peak_tvl": 47975214,
     "peak_date": "2024-12-13T00:00:00.000Z",
-    "tvl_30d_ago": 9654501,
-    "tvl_90d_ago": 10230765,
-    "tvl_current": 9396418,
+    "tvl_30d_ago": 10094338,
+    "tvl_90d_ago": 10105151,
+    "tvl_current": 8169602,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 14424073,
-    "change_30d_pct": -2.6731883916113324,
-    "change_90d_pct": -8.155274801053489,
-    "days_since_peak": 526,
+    "tvl_180d_ago": 14728122,
+    "change_30d_pct": -19.067481195894175,
+    "change_90d_pct": -19.15408290286805,
+    "days_since_peak": 546,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 80.41401545389667
+    "drop_from_peak_pct": 82.97120258806974
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 6,
+    "total_addresses": 7,
+    "unique_implementations": 6,
+    "total_deployments": 7,
     "audited_contracts": 1,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 5,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 100,
-    "total_audits": 5,
+    "coverage_pct": 16.7,
+    "total_audits": 6,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 9501408,
+    "dl_tvl_usd": 7900563,
     "tvl_usd": 4212791.983556997,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -44,7 +44,8 @@
     "asd_usd": null,
     "website_url": "https://app.dexalot.com/",
     "chains": [
-      "avalanche"
+      "avalanche",
+      "bsc"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
@@ -54,18 +55,18 @@
       "fresh": 0,
       "aging": 0,
       "stale": 5,
-      "unknown": 0
+      "unknown": 1
     }
   },
   "topography": {
     "project_purpose": "Dexalot is an omni-chain, app-specific-chain order-book decentralized exchange. Its protocol surface includes trading/order-book infrastructure and portfolio/bridge deposit-withdraw components spanning multiple supported chains. DexalotToken is a token/supporting contract within the ecosystem and should not be treated as the sole protocol contract family or as representing the complete deployed protocol surface.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The Dexalot Portfolio family centers on the DexalotToken, which is the sole contract identified. It likely integrates with the broader Dexalot DEX and bridge infrastructure, though those contracts are not listed in the inventory.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 6,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -78,7 +79,7 @@
       "address": "0x093783055f9047c2bff99c4e414501f8a147bc69",
       "name": "DexalotToken",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Dexalot Portfolio",
       "tvl_usd": 4212791.983556997,
@@ -104,6 +105,170 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x80768783d18ad5c9de46d2cde398fb0c193d5885",
+      "name": "Exchange",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Exchange",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x80768783d18ad5c9de46d2cde398fb0c193d5885",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x2a371cd8e9ee8cfc3efbd7ef13ab40779eceb2dd",
+      "name": "MainnetRFQ",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MainnetRFQ",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x2a371cd8e9ee8cfc3efbd7ef13ab40779eceb2dd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x6f8205cf222dd4c6615991c7f604f366526b5c6e",
+      "name": "Portfolio",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x0bc1c72a169d8a5a564d787a46521496a008e8ef",
+      "impl_name": "Portfolio",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x6f8205cf222dd4c6615991c7f604f366526b5c6e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xac0f301b3f7e1d48553535089bb2c201760de0d4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x9faa0a5dcbc0cbc81719ba6f0f1726a8baae16f2",
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x9faa0a5dcbc0cbc81719ba6f0f1726a8baae16f2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x12e2b3236d338651f7ee2222e9756b4222694323",
+      "name": "TransparentUpgradeableProxy",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x845961a714b522905b6ab440f7799404516e0c4f",
+      "impl_name": "TransparentUpgradeableProxy",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x12e2b3236d338651f7ee2222e9756b4222694323",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     }
   ],
@@ -242,6 +407,27 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12285,
+      "audit_key": "audit-12285",
+      "report_name": "DL audit link",
+      "report_url": "https://hacken.io/audits/dexalot",
+      "auditor": "Hacken",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -249,16 +435,16 @@
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 100,
+      "coverage_pct": 16.7,
       "latest_audit": "2022-02"
     }
   ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 6
   },
   "scope_matching_notes": {
     "match_method_counts": {
@@ -281,6 +467,10 @@
       {
         "audit_id": 7313,
         "report_name": "[Dexalot_15112021]SCAudit_Report_3.pdf"
+      },
+      {
+        "audit_id": 12285,
+        "report_name": "DL audit link"
       }
     ],
     "inherited_remapped_matches": []

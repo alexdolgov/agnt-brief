@@ -5,11 +5,11 @@
 - Project: BackedFi (`backedfi`)
 - Website: [https://backed.fi](https://backed.fi)
 - Lifecycle: active (Tier 0, 83.1% below peak)
-- Generated: 2026-06-10T20:58:58.033Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-12T05:25:50.819Z
+- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
 - Chains: ethereum
-- Contract surface: 2 unique implementations (11 raw deployments)
-- DeFi Llama TVL: $8,201,934.33
+- Contract surface: 2 unique implementations (12 raw deployments)
+- DeFi Llama TVL: $7,767,155.38
 - On-chain TVL (included contracts): $33,347,333.85
 - TVL by chain: Ethereum $33,347,333.85
 
@@ -29,7 +29,7 @@ BackedFi / Backed Finance is a multichain tokenized real-world asset issuer for 
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 2
-- Raw deployments: 11
+- Raw deployments: 12
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $33,347,333.85
@@ -52,7 +52,7 @@ BackedFi / Backed Finance is a multichain tokenized real-world asset issuer for 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | BackedTokenImplementation | token | ethereum | 10 deployments: ethereum [`0x0f76d3...e17245`](./contracts/ethereum-1/0x0f76d32cdccdcbd602a55af23eaf58fd1ee17245/); ethereum `0x1e2c4f...801d59`; ethereum `0x20c64d...83df7a`; ethereum `0x2f11ee...191b86`; ethereum `0x2f123c...9b45e7`; ethereum `0x3f95aa...9c52c9`; ethereum `0x52d134...fdf9e4`; ethereum `0xade605...995995`; ethereum `0xbbcb03...403ac9`; ethereum `0xca30c9...435fb5` | ⚠️ Unaudited |
-| BackedAutoFeeTokenImplementation | token | ethereum | [`0xa34c5e...bcc495`](./contracts/ethereum-1/0xa34c5e0abe843e10461e2c9586ea03e55dbcc495/) | ⚠️ Unaudited |
+| BackedAutoFeeTokenImplementation | unknown | ethereum | 2 deployments: ethereum [`0x4b8c5a...2aad8c`](./contracts/ethereum-1/0x4b8c5aa8bc9b5779059496efdab52124d22aad8c/); ethereum `0xa34c5e...bcc495` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,19 +81,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x0f76d3...e17245`](./contracts/ethereum-1/0x0f76d32cdccdcbd602a55af23eaf58fd1ee17245/) | BackedTokenImplementation | token | $31,194,508.50 | Verified native implementation with $31,194,508.50 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa34c5e...bcc495`](./contracts/ethereum-1/0xa34c5e0abe843e10461e2c9586ea03e55dbcc495/) | BackedAutoFeeTokenImplementation | token | $2,152,825.34 | Verified native implementation with $2,152,825.34 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

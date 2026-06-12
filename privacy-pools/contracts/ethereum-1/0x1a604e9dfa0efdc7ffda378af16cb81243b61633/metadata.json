@@ -1,0 +1,18 @@
+{
+  "address": "0x1a604e9dfa0efdc7ffda378af16cb81243b61633",
+  "chain_id": 1,
+  "contract_name": "PrivacyPoolComplex",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "cancun",
+  "license": "Apache-2.0, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T05:28:57.994Z"
+}

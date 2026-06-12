@@ -5,31 +5,30 @@
 - Project: T RIZE (`t-rize`)
 - Website: [https://www.t-rize.io](https://www.t-rize.io)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T03:26:35.017Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
+- Generated: 2026-06-12T05:29:18.848Z
+- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
 - Chains: base
-- Contract surface: 1 unique implementations (1 raw deployments)
+- Contract surface: 8 unique implementations (8 raw deployments)
 - DeFi Llama TVL: $23,000,000.00
 - On-chain TVL (included contracts): $15,005,448.61
 - TVL by chain: Base $15,005,448.61
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 T-RIZE is an institutional-grade real-world asset (RWA) tokenization platform/infrastructure. Its broader platform describes tokenization of assets such as bonds, ETFs, funds, real estate, and commodities, including Canton-based infrastructure and decentralized machine-learning enhancements. The currently documented DefiLlama-tracked EVM surface is limited to the RizeToken contract on Base; this should not be interpreted as the entirety of the broader T-RIZE infrastructure or as confirmed evidence of fractional ownership or claims on underlying assets.
 
+### Architecture
+
+The protocol consists of a single product family with one core token contract; there are no additional families or shared infrastructure to relate.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/8 (0.0%)
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
+- Unique implementations: 8
+- Raw deployments: 8
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $15,005,448.61
@@ -47,11 +46,18 @@ T-RIZE is an institutional-grade real-world asset (RWA) tokenization platform/in
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | RizeToken | token | base | [`0x9818b6...c93583`](./contracts/base-8453/0x9818b6c09f5ecc843060927e8587c427c7c93583/) | ⚠️ Unaudited |
+| AccessList | unknown | base | [`0x136a42...ae87c9`](./contracts/base-8453/0x136a429bee94a5a02240ff74023b46347cae87c9/) | ⚠️ Unaudited |
+| BaseRizeMintBurnPool | core_logic | base | [`0xd4d129...8e16a0`](./contracts/base-8453/0xd4d129df31bf9d9ef7ff030adf984f3d028e16a0/) | ⚠️ Unaudited |
+| GovernanceBonding | unknown | base | [`0x5a1340...ed26ee`](./contracts/base-8453/0x5a134098bdbeb05da9eac35439c5624547ed26ee/) | ⚠️ Unaudited |
+| MerkleAirdrop | unknown | base | [`0x6426fd...873a98`](./contracts/base-8453/0x6426fd15a8531bf53d13d74e697e0c0d4c873a98/) | ⚠️ Unaudited |
+| TokenAdminRegistry | registry | base | [`0x6f6c37...731e37`](./contracts/base-8453/0x6f6c373d09c07425baae72317863d7f6bb731e37/) | ⚠️ Unaudited |
+| UnallocatedVesting | unknown | base | [`0xad12b1...6f5f2d`](./contracts/base-8453/0xad12b1421d14130633700af043445115d16f5f2d/) | ⚠️ Unaudited |
+| VestingWallet | operational_periphery | base | [`0x9525df...241e7b`](./contracts/base-8453/0x9525df984b7062c7c0fb103bc745467396241e7b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -80,18 +86,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| base | [`0x9818b6...c93583`](./contracts/base-8453/0x9818b6c09f5ecc843060927e8587c427c7c93583/) | RizeToken | token | $15,005,448.61 | Verified native implementation with $15,005,448.61 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 

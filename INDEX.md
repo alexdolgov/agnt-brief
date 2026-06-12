@@ -49,7 +49,7 @@
 | [aria-protocol](./aria-protocol/) | $181.1K | 0.0% | ? | dead | 1 | 1 | 2026-06-10 |
 | [armitage-by-wintermute](./armitage-by-wintermute/) | $51.8M | 0.0% | $51.8M | active | 0 | 1 | 2026-06-10 |
 | [arrakis-finance](./arrakis-finance/) | $128.2K | 19.4% | $3.1K | active | 8 | 124 | 2026-06-10 |
-| [asseto-aoabt](./asseto-aoabt/) | $24.3M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
+| [asseto-aoabt](./asseto-aoabt/) | $24.3M | 0.0% | ? | active | 1 | 2 | 2026-06-12 |
 | [asseto-cash+](./asseto-cash+/) | $1.4M | 0.0% | ? | declining | 1 | 2 | 2026-06-10 |
 | [asymmetry](./asymmetry/) | $37.1M | 0.0% | $37.1M | declining | 0 | 203 | 2026-06-10 |
 | [atlendis](./atlendis/) | $4.3M | 14.3% | $4.3M | active | 2 | 43 | 2026-06-11 |
@@ -66,7 +66,7 @@
 | [b.protocol](./b.protocol/) | $79.0K | 5.1% | $79.0K | declining | 4 | 162 | 2026-06-10 |
 | [babydogecoin](./babydogecoin/) | $164.9M | 0.0% | $164.9M | declining | 1 | 1 | 2026-06-10 |
 | [babyswap](./babyswap/) | $241.1K | 1.5% | $241.1K | active | 1 | 113 | 2026-06-10 |
-| [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | active | 0 | 2 | 2026-06-10 |
+| [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | active | 0 | 2 | 2026-06-12 |
 | [badger-dao](./badger-dao/) | $1.5M | 0.0% | $1.5M | sunsetting | 6 | 27 | 2026-05-25 |
 | [bakeryswap](./bakeryswap/) | $612.9K | 0.0% | $612.9K | declining | 1 | 98 | 2026-05-24 |
 | [bancor](./bancor/) | $48.8M | 23.5% | $43.8M | declining | 4 | 121 | 2026-06-10 |
@@ -164,7 +164,7 @@
 | [deri](./deri/) | $2.4K | 13.9% | $2.4K | active | 8 | 868 | 2026-06-10 |
 | [derivadex](./derivadex/) | $1.6M | 0.0% | ? | declining | 0 | 8 | 2026-06-10 |
 | [desyn-protocol](./desyn-protocol/) | $10.7M | 0.0% | ? | declining | 0 | 11 | 2026-06-10 |
-| [dexalot](./dexalot/) | $4.2M | 100.0% | ? | active | 5 | 1 | 2026-06-10 |
+| [dexalot](./dexalot/) | $4.2M | 16.7% | ? | active | 6 | 6 | 2026-06-12 |
 | [dflow](./dflow/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [dforce](./dforce/) | $3.6M | 0.0% | $3.6M | declining | 4 | 449 | 2026-06-11 |
 | [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | declining | 4 | 71 | 2026-06-10 |
@@ -468,7 +468,7 @@
 | [prime-staking](./prime-staking/) | $4.8M | 0.0% | ? | active | 2 | 10 | 2026-06-11 |
 | [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | declining | 2 | 117 | 2026-06-11 |
 | [privacy-cash](./privacy-cash/) | $48.1K | 0.0% | $48.1K | active | 10 | 6 | 2026-06-11 |
-| [privacy-pools](./privacy-pools/) | $6.6M | 100.0% | ? | active | 4 | 1 | 2026-06-11 |
+| [privacy-pools](./privacy-pools/) | $54.4K | 20.0% | $54.4K | active | 4 | 5 | 2026-06-12 |
 | [probit-global](./probit-global/) | $12.8M | 0.0% | ? | dead | 0 | 3 | 2026-06-11 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-06-11 |
 | [puffer-finance](./puffer-finance/) | $225.1M | 36.4% | $169.2M | declining | 4 | 65 | 2026-06-11 |
@@ -610,7 +610,7 @@
 | [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 1 | 481 | 2026-06-11 |
 | [synthetix](./synthetix/) | $10.3M | 0.0% | $10.3M | active | 0 | 13 | 2026-06-11 |
 | [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 0 | 1 | 2026-06-11 |
-| [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-06-11 |
+| [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 8 | 2026-06-12 |
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-06-11 |
 | [tangible](./tangible/) | $41.9M | 0.0% | ? | active | 7 | 475 | 2026-06-11 |
 | [tarot](./tarot/) | $154.4K | 0.0% | $154.4K | dead | 1 | 139 | 2026-05-31 |

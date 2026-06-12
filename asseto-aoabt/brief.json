@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "asseto-aoabt",
-  "generated_at": "2026-06-11T11:58:12.162Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
+  "generated_at": "2026-06-12T05:27:17.126Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-c31370-dba8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "asseto-aoabt",
@@ -22,16 +22,16 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 1,
+    "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
@@ -61,7 +61,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 2,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -76,7 +76,7 @@
       "address": "0xb2ea3e7b80317c4e20d1927034162176e25834e2",
       "name": "Proxy (impl: 0xee23c70af1a8d1a27dbb478d5c861e3da8b704bd)",
       "role": "proxy",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Asseto AoABT",
       "tvl_usd": null,
@@ -88,6 +88,37 @@
           "chain_id": 43114,
           "chain_name": "avalanche",
           "address": "0xb2ea3e7b80317c4e20d1927034162176e25834e2",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xee23c70af1a8d1a27dbb478d5c861e3da8b704bd",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Asseto AoABT",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xee23c70af1a8d1a27dbb478d5c861e3da8b704bd",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -128,10 +159,10 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},

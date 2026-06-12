@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "t-rize",
-  "generated_at": "2026-06-11T03:26:35.017Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-12T05:29:18.848Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-c31370-dba8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "t-rize",
@@ -16,20 +16,20 @@
     "tvl_180d_ago": 23000000,
     "change_30d_pct": 0,
     "change_90d_pct": 0,
-    "days_since_peak": 415,
+    "days_since_peak": 436,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 8,
+    "total_addresses": 8,
+    "unique_implementations": 8,
+    "total_deployments": 8,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
@@ -59,13 +59,13 @@
   },
   "topography": {
     "project_purpose": "T-RIZE is an institutional-grade real-world asset (RWA) tokenization platform/infrastructure. Its broader platform describes tokenization of assets such as bonds, ETFs, funds, real estate, and commodities, including Canton-based infrastructure and decentralized machine-learning enhancements. The currently documented DefiLlama-tracked EVM surface is limited to the RizeToken contract on Base; this should not be interpreted as the entirety of the broader T-RIZE infrastructure or as confirmed evidence of fractional ownership or claims on underlying assets.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The protocol consists of a single product family with one core token contract; there are no additional families or shared infrastructure to relate.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 8,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -78,7 +78,7 @@
       "address": "0x9818b6c09f5ecc843060927e8587c427c7c93583",
       "name": "RizeToken",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "T RIZE",
       "tvl_usd": 15005448.613540629,
@@ -102,27 +102,233 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x136a429bee94a5a02240ff74023b46347cae87c9",
+      "name": "AccessList",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AccessList",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x136a429bee94a5a02240ff74023b46347cae87c9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xd4d129df31bf9d9ef7ff030adf984f3d028e16a0",
+      "name": "BaseRizeMintBurnPool",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BaseRizeMintBurnPool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd4d129df31bf9d9ef7ff030adf984f3d028e16a0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x5a134098bdbeb05da9eac35439c5624547ed26ee",
+      "name": "GovernanceBonding",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GovernanceBonding",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x5a134098bdbeb05da9eac35439c5624547ed26ee",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x6426fd15a8531bf53d13d74e697e0c0d4c873a98",
+      "name": "MerkleAirdrop",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MerkleAirdrop",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6426fd15a8531bf53d13d74e697e0c0d4c873a98",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x6f6c373d09c07425baae72317863d7f6bb731e37",
+      "name": "TokenAdminRegistry",
+      "role": "registry",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TokenAdminRegistry",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6f6c373d09c07425baae72317863d7f6bb731e37",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xad12b1421d14130633700af043445115d16f5f2d",
+      "name": "UnallocatedVesting",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UnallocatedVesting",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xad12b1421d14130633700af043445115d16f5f2d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x9525df984b7062c7c0fb103bc745467396241e7b",
+      "name": "VestingWallet",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VestingWallet",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x9525df984b7062c7c0fb103bc745467396241e7b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x9818b6c09f5ecc843060927e8587c427c7c93583",
-      "name": "RizeToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 15005448.613540629,
-      "risk_note": "Verified native implementation with $15,005,448.61 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 8
   },
   "scope_matching_notes": {
     "match_method_counts": {},

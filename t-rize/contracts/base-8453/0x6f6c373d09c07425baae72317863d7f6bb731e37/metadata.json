@@ -1,0 +1,17 @@
+{
+  "address": "0x6f6c373d09c07425baae72317863d7f6bb731e37",
+  "chain_id": 8453,
+  "contract_name": "TokenAdminRegistry",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 26000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T05:29:21.442Z"
+}

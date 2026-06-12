@@ -1,31 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "injective-bridge",
-  "generated_at": "2026-05-31T08:25:51.118Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-12T21:52:29.721Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9d5a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "injective-bridge",
     "tier": 0,
     "peak_tvl": 45356288,
     "peak_date": "2024-03-15T00:00:00.000Z",
-    "tvl_30d_ago": 15810954,
-    "tvl_90d_ago": 17179679,
-    "tvl_current": 14859895,
+    "tvl_30d_ago": 16619746,
+    "tvl_90d_ago": 16560694,
+    "tvl_current": 12126607,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 19167402,
-    "change_30d_pct": -6.015190481232189,
-    "change_90d_pct": -13.50306952766696,
-    "days_since_peak": 798,
+    "tvl_180d_ago": 19107753,
+    "change_30d_pct": -27.034943855339304,
+    "change_90d_pct": -26.77476559859146,
+    "days_since_peak": 819,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 67.2374092871092
+    "drop_from_peak_pct": 73.26366963716254
   },
   "summary": {
     "total_contracts": 3,
-    "total_addresses": 4,
+    "total_addresses": 6,
     "unique_implementations": 3,
-    "total_deployments": 4,
+    "total_deployments": 6,
     "audited_contracts": 0,
     "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 15105127.4212,
+    "dl_tvl_usd": 12354093.57977,
     "tvl_usd": 2617.3345042467904,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "The Injective Bridge enables cross-chain asset transfers between Ethereum and the Injective chain, allowing users to lock tokens on Ethereum and mint corresponding assets on Injective.",
-    "relationship_narrative": "The TransparentUpgradeableProxy delegates to the Peggy implementation, which manages token locking and minting logic, while InjectiveToken represents the bridged asset on Ethereum.",
+    "project_purpose": "Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 3,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -101,12 +106,12 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x1d3544443d743c050656b01bdce01e4702524b7d",
+      "address": "0x100dcb8b78c608d148cb207ac3875935dfe6abdc",
       "name": "Peggy",
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": null,
+      "product_line": "Injective Bridge",
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": "0x100dcb8b78c608d148cb207ac3875935dfe6abdc",
@@ -115,7 +120,25 @@
         {
           "chain_id": 1,
           "chain_name": "ethereum",
+          "address": "0x100dcb8b78c608d148cb207ac3875935dfe6abdc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
           "address": "0x1d3544443d743c050656b01bdce01e4702524b7d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe427199d43366f1ae552e612ab388c317306fd5c",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -186,7 +209,7 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x1d3544443d743c050656b01bdce01e4702524b7d",
+      "address": "0x100dcb8b78c608d148cb207ac3875935dfe6abdc",
       "name": "Peggy",
       "role": "unknown",
       "origin_kind": "native",

@@ -5,11 +5,11 @@
 - Project: BounceBit Prime (`bouncebit-prime`)
 - Website: [https://prime.bouncebit.io/](https://prime.bouncebit.io/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T22:10:31.787Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
-- Chains: ethereum
-- Contract surface: 9 unique implementations (13 raw deployments)
-- DeFi Llama TVL: $11,944,143.28
+- Generated: 2026-06-12T21:49:58.795Z
+- Pipeline run: v2-pipeline-2026-06-12-546062-9d5a
+- Chains: bsc, ethereum
+- Contract surface: 9 unique implementations (14 raw deployments)
+- DeFi Llama TVL: $11,944,606.08
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -28,7 +28,7 @@ The protocol consists of a single product family with one core proxy contract, i
 - Verified by bytecode match: 0
 - Unverified implementations: 7
 - Unique implementations: 9
-- Raw deployments: 13
+- Raw deployments: 14
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -51,7 +51,7 @@ The protocol consists of a single product family with one core proxy contract, i
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | ProxyAdmin | governance | ethereum | [`0x576238...6aba1d`](./contracts/ethereum-1/0x5762385b22f72e6cc620c1cb44782fd8a36aba1d/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | ethereum | 5 deployments: ethereum [`0x539f1d...b32484`](./contracts/ethereum-1/0x539f1d37983e31c70ce29c9384ac67f367b32484/); ethereum `0x6f776d...95c580`; ethereum `0x95917f...3bb90c`; ethereum `0xa6b612...1630ba`; ethereum `0xcb7ad2...24726f` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | ethereum | 6 deployments: ethereum [`0x539f1d...b32484`](./contracts/ethereum-1/0x539f1d37983e31c70ce29c9384ac67f367b32484/); ethereum `0x6f776d...95c580`; ethereum `0x95917f...3bb90c`; ethereum `0xa6b612...1630ba`; ethereum `0xcb7ad2...24726f`; bsc `0x6f776d...95c580` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,10 +94,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 6 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 7 |
+| standard_library | 2 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

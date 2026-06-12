@@ -106,9 +106,15 @@
         "internalType": "uint256",
         "name": "_eventNonce",
         "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_data",
+        "type": "string"
       }
     ],
-    "name": "SendToCosmosEvent",
+    "name": "SendToInjectiveEvent",
     "type": "event"
   },
   {
@@ -196,22 +202,22 @@
     "inputs": [
       {
         "internalType": "string",
-        "name": "_cosmosDenom",
+        "name": "",
         "type": "string"
       },
       {
         "internalType": "string",
-        "name": "_name",
+        "name": "",
         "type": "string"
       },
       {
         "internalType": "string",
-        "name": "_symbol",
+        "name": "",
         "type": "string"
       },
       {
         "internalType": "uint8",
-        "name": "_decimals",
+        "name": "",
         "type": "uint8"
       }
     ],
@@ -363,9 +369,14 @@
         "internalType": "uint256",
         "name": "_amount",
         "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "_data",
+        "type": "string"
       }
     ],
-    "name": "sendToCosmos",
+    "name": "sendToInjective",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

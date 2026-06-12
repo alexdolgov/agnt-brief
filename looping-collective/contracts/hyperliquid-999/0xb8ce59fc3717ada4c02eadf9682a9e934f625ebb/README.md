@@ -4,7 +4,7 @@
 |---|---|
 | Chain | hyperliquid (999) |
 | Address | `0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb` |
-| Role | proxy |
+| Role | adapter |
 | Origin | standard_library |
 | Audited | No |
 | Audits | n/a |

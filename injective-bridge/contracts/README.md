@@ -1,6 +1,6 @@
 # injective-bridge — Contract Index
 
-3 unique implementations on ethereum · 4 deployments · 0 audited · 3 unaudited · 0 unverified
+3 unique implementations on ethereum · 6 deployments · 0 audited · 3 unaudited · 0 unverified
 
 ## governance (1)
 
@@ -18,4 +18,4 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Peggy (2 deployments)](./ethereum-1/0x1d3544443d743c050656b01bdce01e4702524b7d/) | ethereum | 2 deployments: ethereum [`0x1d3544...524b7d`](./ethereum-1/0x1d3544443d743c050656b01bdce01e4702524b7d/); ethereum `0xf955c5...bad6f3` | ⚠️ Unaudited | Verified |
+| [Peggy (4 deployments)](./ethereum-1/0x100dcb8b78c608d148cb207ac3875935dfe6abdc/) | ethereum | 4 deployments: ethereum [`0x100dcb...e6abdc`](./ethereum-1/0x100dcb8b78c608d148cb207ac3875935dfe6abdc/); ethereum `0x1d3544...524b7d`; ethereum `0xe42719...06fd5c`; ethereum `0xf955c5...bad6f3` | ⚠️ Unaudited | Verified |

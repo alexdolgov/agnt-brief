@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "cex.io",
-  "generated_at": "2026-06-11T12:00:36.495Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
+  "generated_at": "2026-06-12T21:53:17.347Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9d5a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "cex.io",
@@ -22,49 +22,50 @@
     "drop_from_peak_pct": 77.42477675870487
   },
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 4,
-    "unique_implementations": 3,
-    "total_deployments": 4,
+    "total_contracts": 4,
+    "total_addresses": 6,
+    "unique_implementations": 4,
+    "total_deployments": 6,
     "audited_contracts": 0,
-    "unaudited_contracts": 3,
+    "unaudited_contracts": 4,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 3,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 11598844.06717,
-    "tvl_usd": 11598844.06717,
+    "dl_tvl_usd": 12099478.963329999,
+    "tvl_usd": 12099478.963329999,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "http://cex.io/",
     "chains": [
+      "bsc",
       "ethereum",
       "polygon"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2026-03",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
+      "fresh": 1,
       "aging": 0,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
     }
   },
   "topography": {
     "project_purpose": "CEX.IO is a centralized cryptocurrency exchange offering services such as buying, selling, trading, holding, earn/staking products, fiat on/off-ramps, margin trading, and related wallet/payment services. The on-chain contract surface identified for this brief is limited to Safe/Gnosis Safe wallet proxies used for custody or treasury operations, and should be distinguished from the broader centralized exchange business and reserve/TVL footprint.",
-    "relationship_narrative": null,
+    "relationship_narrative": "All contracts are Gnosis Safe multisig wallets deployed by the same deployer cluster, indicating a single operational entity managing funds across multiple chains.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 3,
+    "unique_implementations": 4,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -134,6 +135,37 @@
       "contamination_flag": null
     },
     {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x8e7b542d93901560583c0c22d156ecca5191684d",
+      "name": "SafeL2",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x29fcb43b46531bca003ddc8fcb67ffe91900c762",
+      "impl_name": "SafeL2",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x8e7b542d93901560583c0c22d156ecca5191684d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 137,
       "chain_name": "polygon",
       "address": "0x8e7b542d93901560583c0c22d156ecca5191684d",
@@ -147,6 +179,15 @@
       "impl_address": null,
       "impl_name": "SafeProxy",
       "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xc48c74c4eda47f915e8580391ec2f386f769d996",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 137,
           "chain_name": "polygon",
@@ -182,8 +223,8 @@
       "report_url": "https://static.cex.io/img/legal/pci.pdf",
       "auditor": "PCI DSS",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "fresh",
+      "date": "2026-03",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -202,7 +243,7 @@
   "origin_summary": {
     "native": 0,
     "upstream": 0,
-    "standard_library": 3,
+    "standard_library": 4,
     "needs_review": 0
   },
   "scope_matching_notes": {

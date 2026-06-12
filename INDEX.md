@@ -101,7 +101,7 @@
 | [boros](./boros/) | $10.3M | 100.0% | ? | active | 5 | 2 | 2026-06-10 |
 | [botto](./botto/) | $4.1M | 0.0% | ? | active | 3 | 18 | 2026-06-10 |
 | [bounce.tech](./bounce.tech/) | $1.1M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
-| [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 9 | 2026-06-10 |
+| [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 9 | 2026-06-12 |
 | [bracket-protocol](./bracket-protocol/) | $622.4M | 17.4% | $619.3M | active | 5 | 58 | 2026-06-10 |
 | [brickken](./brickken/) | $42.2M | 20.0% | ? | active | 2 | 31 | 2026-06-12 |
 | [bridgers](./bridgers/) | $1.6M | 0.0% | ? | active | 1 | 6 | 2026-06-10 |
@@ -122,7 +122,7 @@
 | [capx-ai](./capx-ai/) | $2.1M | 0.0% | ? | active | 1 | 1 | 2026-06-10 |
 | [carbon-defi](./carbon-defi/) | $5.1M | 30.9% | ? | active | 4 | 158 | 2026-06-10 |
 | [cbridge](./cbridge/) | $50.2M | 0.0% | $50.2M | active | 0 | 1348 | 2026-06-12 |
-| [cex.io](./cex.io/) | $11.6M | 0.0% | ? | active | 1 | 3 | 2026-06-11 |
+| [cex.io](./cex.io/) | $12.1M | 0.0% | ? | active | 1 | 4 | 2026-06-12 |
 | [cgo-finance](./cgo-finance/) | $1.2M | 0.0% | ? | declining | 0 | 2 | 2026-06-10 |
 | [chain-fusion](./chain-fusion/) | $18.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [chainflip](./chainflip/) | $3.7M | 27.3% | ? | active | 3 | 12 | 2026-06-10 |
@@ -238,7 +238,7 @@
 | [gondi](./gondi/) | $35.6 | 20.0% | $35.6 | active | 2 | 30 | 2026-06-11 |
 | [goose](./goose/) | $1.6K | 0.0% | $1.6K | active | 0 | 11 | 2026-06-12 |
 | [goplus-security](./goplus-security/) | $65.3 | 0.0% | $65.3 | active | 0 | 34 | 2026-06-12 |
-| [gravity-bridge](./gravity-bridge/) | $91.3M | 0.0% | $91.3M | active | 0 | 152 | 2026-06-10 |
+| [gravity-bridge](./gravity-bridge/) | $91.3M | 0.0% | $91.3M | active | 0 | 117 | 2026-06-12 |
 | [gro](./gro/) | $2.9M | 0.0% | $2.9M | declining | 0 | 124 | 2026-06-10 |
 | [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [grvt](./grvt/) | $39.1M | 0.0% | $39.1M | declining | 0 | 12 | 2026-06-12 |
@@ -285,7 +285,7 @@
 | [infrared-finance](./infrared-finance/) | $861.9K | 100.0% | ? | active | 27 | 27 | 2026-06-11 |
 | [init-capital](./init-capital/) | $66.5M | 24.0% | $66.2M | declining | 7 | 99 | 2026-06-11 |
 | [initiadex](./initiadex/) | $3.0M | 0.0% | ? | unknown | 7 | 0 | 2026-06-11 |
-| [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-05-31 |
+| [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-06-12 |
 | [ink-bridge](./ink-bridge/) | $59.3M | 44.0% | ? | active | 17 | 68 | 2026-06-11 |
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-06-11 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | active | 7 | 154 | 2026-06-11 |
@@ -337,7 +337,7 @@
 | [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | declining | 0 | 93 | 2026-06-11 |
 | [llamapay](./llamapay/) | $21.0M | 0.0% | ? | active | 1 | 20 | 2026-06-12 |
 | [lockon](./lockon/) | $1.0M | 56.3% | ? | active | 7 | 23 | 2026-06-11 |
-| [looping-collective](./looping-collective/) | $11.8M | 0.0% | $11.8M | active | 13 | 14 | 2026-06-11 |
+| [looping-collective](./looping-collective/) | $11.8M | 25.0% | $11.6M | active | 13 | 18 | 2026-06-12 |
 | [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 1 | 145 | 2026-06-11 |
 | [lumenswap](./lumenswap/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-06-11 |

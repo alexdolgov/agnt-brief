@@ -273,7 +273,7 @@ Each project directory contains:
 | [tokenstore](./tokenstore/brief.md) | $1.33M | ethereum | 44 | 2/44 (5%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $265.68K |
 | [reserve-protocol](./reserve-protocol/brief.md) | $82.52M | 4 | 329 | 110/329 (33%) | 53.9% | 19.1% (Code4rena, Spearbit) | 24 | fresh | ⚠️ declining | $255.21K |
 | [acryptos](./acryptos/brief.md) | $10.55M | bsc | 311 | 88/311 (28%) | 25.0% | 0.0% (-) | 4 | stale | ✅ active | $253.01K |
-| [block-analitica](./block-analitica/brief.md) | $49.60M | 4 | 18 | 16/18 (89%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $252.83K |
+| [block-analitica](./block-analitica/brief.md) | $39.14M | 4 | 20 | 18/20 (90%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $252.83K |
 | [babyswap](./babyswap/brief.md) | $1.34M | bsc | 113 | 65/113 (58%) | 1.5% | 0.0% (-) | 1 | stale | ✅ active | $241.08K |
 | [alphax](./alphax/brief.md) | $1.49M | arbitrum, ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $218.20K |
 | [universe-xyz](./universe-xyz/brief.md) | $1.63M | ethereum | 34 | 23/34 (68%) | 21.7% | 0.0% (-) | 2 | stale | 💀 dead | $216.12K |
@@ -570,7 +570,7 @@ Each project directory contains:
 | [nbx](./nbx/brief.md) | $1.82M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [neemo-finance](./neemo-finance/brief.md) | $1.37M | ethereum | 14 | 1/14 (7%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [neo-tokyo](./neo-tokyo/brief.md) | $1.04M | ethereum | 86 | 38/86 (44%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [neopin](./neopin/brief.md) | $55.37M | ethereum, klaytn, polygon | 100 | 1/100 (1%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
+| [neopin](./neopin/brief.md) | $40.20M | ethereum, klaytn, polygon | 104 | 1/104 (1%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [neptune-finance](./neptune-finance/brief.md) | $6.05M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [nerona](./nerona/brief.md) | $7.94M | ethereum | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [nest-credit](./nest-credit/brief.md) | $50.51M | 4 | 16 | 6/16 (38%) | 57.1% | 0.0% (-) | 1 | fresh | ✅ active | - |
@@ -726,5 +726,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-12T09:34:56.892Z_
+_Generated: 2026-06-12T10:42:32.421Z_
 _Projects: 714_

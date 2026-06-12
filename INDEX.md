@@ -90,7 +90,7 @@
 | [bitway](./bitway/) | $136.4M | 0.0% | $136.4M | active | 3 | 8 | 2026-06-12 |
 | [blackhole](./blackhole/) | $29.7M | 31.1% | ? | declining | 3 | 86 | 2026-06-10 |
 | [blast-l2](./blast-l2/) | $568.9 | 0.0% | $568.9 | unknown | 0 | 295 | 2026-06-12 |
-| [block-analitica](./block-analitica/) | $252.8K | 0.0% | $252.8K | declining | 0 | 18 | 2026-06-10 |
+| [block-analitica](./block-analitica/) | $252.8K | 0.0% | $252.8K | declining | 0 | 20 | 2026-06-12 |
 | [blueshift](./blueshift/) | $4.3M | 0.0% | ? | active | 1 | 23 | 2026-06-10 |
 | [blur](./blur/) | $91.7M | 0.0% | $91.7M | active | 0 | 17 | 2026-06-10 |
 | [bmx](./bmx/) | $305.7K | 0.0% | $305.7K | declining | 0 | 184 | 2026-06-10 |
@@ -398,7 +398,7 @@
 | [neemo-finance](./neemo-finance/) | $1.4M | 0.0% | ? | active | 1 | 14 | 2026-06-11 |
 | [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 17 | 2026-06-11 |
 | [neo-tokyo](./neo-tokyo/) | $1.0M | 0.0% | ? | unknown | 0 | 86 | 2026-05-31 |
-| [neopin](./neopin/) | $55.4M | 0.0% | ? | active | 3 | 100 | 2026-06-11 |
+| [neopin](./neopin/) | $40.2M | 0.0% | ? | active | 3 | 104 | 2026-06-12 |
 | [neptune-finance](./neptune-finance/) | $6.1M | 0.0% | ? | active | 3 | 2 | 2026-05-25 |
 | [nerona](./nerona/) | $7.9M | 0.0% | ? | declining | 0 | 2 | 2026-06-11 |
 | [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | declining | 0 | 66 | 2026-06-11 |

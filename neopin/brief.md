@@ -5,11 +5,11 @@
 - Project: NEOPIN (`neopin`)
 - Website: [https://neopin.io](https://neopin.io)
 - Lifecycle: active (Tier 0, 70.1% below peak)
-- Generated: 2026-06-11T01:22:47.809Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-12T10:31:25.614Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-b7d4
 - Chains: ethereum, klaytn, polygon
-- Contract surface: 100 unique implementations (100 raw deployments)
-- DeFi Llama TVL: $55,370,847.00
+- Contract surface: 104 unique implementations (104 raw deployments)
+- DeFi Llama TVL: $40,201,133.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -26,9 +26,9 @@ The product families share a common deployer cluster, indicating unified governa
 - Verified implementations audited: 0/1 (0.0%)
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 99
-- Unique implementations: 100
-- Raw deployments: 100
+- Unverified implementations: 103
+- Unique implementations: 104
+- Raw deployments: 104
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -64,7 +64,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (99)
+### ❓ Unverified (103)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -108,10 +108,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | `0x829dce...71bdae` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x9fedbb...aa71b7` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xa483ec...3e9e93` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | `0xa6f659...dbdccf` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xae65d6...044595` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | `0xb0df2d...a52f33` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xb1157a...1979ba` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xb5b5cd...a72ead` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xb6a029...6a27f6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | `0xb7356e...ce4fe0` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xbc356f...fc75f3` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xbc57a9...413917` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xca22e4...6f88df` | ❓ Unverified |
@@ -154,6 +157,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | polygon | `0xa483ec...3e9e93` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xae65d6...044595` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xceb63b...37012b` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | `0xcf5e73...35da8c` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xde205b...261fe1` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xe0b469...5ea9f8` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xebf597...f5417e` | ❓ Unverified |
@@ -182,18 +186,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x5bdf27...2444fa`](./contracts/ethereum-1/0x5bdf270a9e3898aa081e19592ded3e7cfb2444fa/) | Controller | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 5 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 95 |
+| needs_review | 104 |
 
 ## Scope Matching Notes
 

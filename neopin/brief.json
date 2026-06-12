@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "neopin",
-  "generated_at": "2026-06-11T01:22:47.809Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-12T10:31:25.614Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-b7d4",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "neopin",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 70.08410515419814
   },
   "summary": {
-    "total_contracts": 100,
-    "total_addresses": 100,
-    "unique_implementations": 100,
-    "total_deployments": 100,
+    "total_contracts": 104,
+    "total_addresses": 104,
+    "unique_implementations": 104,
+    "total_deployments": 104,
     "audited_contracts": 0,
     "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 99,
+    "contracts_unverified": 103,
     "coverage_pct": 0,
     "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 55370847,
-    "tvl_usd": 55370847,
+    "dl_tvl_usd": 40201133,
+    "tvl_usd": 40201133,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -63,7 +63,7 @@
     "product_family_count": 3
   },
   "surface_sufficiency": {
-    "unique_implementations": 100,
+    "unique_implementations": 104,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -78,7 +78,7 @@
       "address": "0x5bdf270a9e3898aa081e19592ded3e7cfb2444fa",
       "name": "Controller",
       "role": "governance",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -605,7 +605,7 @@
       "address": "0x841d3b6660663ed4b0d9b9edaee6642e05a4e182",
       "name": "Proxy (impl: 0xfce5ea678c76fbe03c080c240796f5a9c7f0829b)",
       "role": "proxy",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "NEOPIN Liquid",
       "tvl_usd": null,
@@ -915,7 +915,7 @@
       "address": "0x2d723f60ad8da76286b2ac120498a5ea6babc792",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "NEOPIN Pool",
       "tvl_usd": null,
@@ -1284,6 +1284,37 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xa6f65985cbea903ba4f346b2be8dc7a3c2dbdccf",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa6f65985cbea903ba4f346b2be8dc7a3c2dbdccf",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xae65d6687c327eb2c3bb8d3022d0b5c4a4044595",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -1311,6 +1342,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb0df2d24e04717ac96f96107d63ecb5549a52f33",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb0df2d24e04717ac96f96107d63ecb5549a52f33",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -1404,6 +1466,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb7356ebe2188976f8368acbf7c15b7aedace4fe0",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb7356ebe2188976f8368acbf7c15b7aedace4fe0",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -1845,7 +1938,7 @@
       "address": "0xfce5ea678c76fbe03c080c240796f5a9c7f0829b",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "NEOPIN Liquid",
       "tvl_usd": null,
@@ -2031,7 +2124,7 @@
       "address": "0x1289ae78422b94414c1f827c534a1fe8e31e71aa",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "NEOPIN Pool",
       "tvl_usd": null,
@@ -2710,6 +2803,37 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
+      "address": "0xcf5e73459f5e28d771793dd410061d8aae35da8c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xcf5e73459f5e28d771793dd410061d8aae35da8c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
       "address": "0xde205b2165d55bf6d86da6ff72d88a9608261fe1",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -3239,23 +3363,12 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5bdf270a9e3898aa081e19592ded3e7cfb2444fa",
-      "name": "Controller",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 5,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 95
+    "needs_review": 104
   },
   "scope_matching_notes": {
     "match_method_counts": {},

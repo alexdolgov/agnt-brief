@@ -1,40 +1,40 @@
 {
   "schema_version": "2.0",
   "project_key": "brickken",
-  "generated_at": "2026-06-11T15:54:46.258Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-e34b49-4ec3",
+  "generated_at": "2026-06-12T16:10:35.800Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-c7aee3-9d35",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "brickken",
     "tier": 0,
-    "peak_tvl": 41722171,
-    "peak_date": "2026-05-09T00:00:00.000Z",
-    "tvl_30d_ago": 41079074,
-    "tvl_90d_ago": 41096703,
-    "tvl_current": 41679399,
+    "peak_tvl": 42206517,
+    "peak_date": "2026-06-06T00:00:00.000Z",
+    "tvl_30d_ago": 41703943,
+    "tvl_90d_ago": 41094220,
+    "tvl_current": 42203313,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 35624954,
-    "change_30d_pct": 1.4613888326694024,
-    "change_90d_pct": 1.4178655645441922,
-    "days_since_peak": 17,
+    "tvl_180d_ago": 41107783,
+    "change_30d_pct": 1.197416752655738,
+    "change_90d_pct": 2.698902668063781,
+    "days_since_peak": 6,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 0.10251623770968198
+    "drop_from_peak_pct": 0.007591244735972882
   },
   "summary": {
-    "total_contracts": 29,
-    "total_addresses": 55,
-    "unique_implementations": 29,
-    "total_deployments": 55,
-    "audited_contracts": 0,
-    "unaudited_contracts": 6,
+    "total_contracts": 31,
+    "total_addresses": 65,
+    "unique_implementations": 31,
+    "total_deployments": 65,
+    "audited_contracts": 2,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 4,
-    "contracts_verified_by_bytecode": 2,
-    "contracts_unverified": 23,
-    "coverage_pct": 0,
+    "contracts_verified_unaudited": 7,
+    "contracts_verified_by_bytecode": 3,
+    "contracts_unverified": 21,
+    "coverage_pct": 20,
     "total_audits": 2,
-    "scoreable_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 42197681.59026,
     "tvl_usd": 42197681.59026,
     "tvl_source": "defillama",
@@ -54,8 +54,8 @@
     "staleness_breakdown": {
       "fresh": 1,
       "aging": 0,
-      "stale": 0,
-      "unknown": 1
+      "stale": 1,
+      "unknown": 0
     }
   },
   "topography": {
@@ -64,7 +64,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 29,
+    "unique_implementations": 31,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -74,12 +74,110 @@
   },
   "contracts": [
     {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x89b281df2702f19189fdd73f1d7865707bc7ba3b",
+      "name": "P2PHandler",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "P2PHandler",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x8ed6601a5bb34396fc93c9b1fea3da24ed0c5800",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x89b281df2702f19189fdd73f1d7865707bc7ba3b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x1bb57e2abf2822c01ccaebccbc9d16c7fd0c1956",
+      "name": "PriceAndSwapManager",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PriceAndSwapManager",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xd84620b75d0e7183491dc5188e14db89fdbd19b0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xff362452d0969f61d8a7fe1ea70a7caa534aeb07",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x1bb57e2abf2822c01ccaebccbc9d16c7fd0c1956",
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xd887e26968451dddbe05b3532e43cca7568e9683",
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
       "chain_id": 43114,
       "chain_name": "avalanche",
       "address": "0xc6c230fa8f40022de997727436fae01caabcde61",
       "name": "Proxy (impl: 0xa6e67aca8e04eb76394c2d3dcacfabee4b0a598a)",
       "role": "proxy",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Brickken",
       "tvl_usd": null,
@@ -105,12 +203,52 @@
       "contamination_flag": null
     },
     {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc9b3e437555ebacc2a1bb3c46cb59ff4001e6355",
+      "name": "Staking",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xdf66aa19d631365dff24134884e197792b11ef7b",
+      "impl_name": "Staking",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc9b3e437555ebacc2a1bb3c46cb59ff4001e6355",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdf66aa19d631365dff24134884e197792b11ef7b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
       "chain_id": 137,
       "chain_name": "polygon",
       "address": "0x27576e72f8cd047e4de23c683acfbf8576476f14",
       "name": "STOEscrowManagedUpgradeable",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -118,6 +256,15 @@
       "impl_address": "0x4459432f1626cc4de0e0a004e74ff282ae9c4a6f",
       "impl_name": "STOEscrowManagedUpgradeable",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4459432f1626cc4de0e0a004e74ff282ae9c4a6f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -161,7 +308,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -197,7 +344,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -227,11 +374,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11550"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -240,7 +389,7 @@
       "address": "0x7bf9ad9b70d3ba1dc5fde62217d88c1cd716b6e8",
       "name": "STOEscrowUpgradeableV1",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -271,8 +420,8 @@
       "address": "0x1bb57e2abf2822c01ccaebccbc9d16c7fd0c1956",
       "name": "STOFactoryManagedUpgradeable",
       "role": "registry",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": "Brickken",
       "tvl_usd": null,
       "is_proxy": true,
@@ -283,6 +432,15 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x91af681c85ca98efc5d69c1b62e6f435030969db",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbb0b08a9bf9b31185c5b925b1e32baf2d29e1b69",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -365,7 +523,7 @@
       "address": "0xac798e0b0c6495dd53c3f373e513211a00afb5be",
       "name": "STOFactoryV1",
       "role": "registry",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -396,7 +554,7 @@
       "address": "0x478dff0e27ca0f8e4d6cd5dd586b9f8d28158477",
       "name": "STOTokenManagedUpgradeable",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -404,6 +562,15 @@
       "impl_address": "0x8bedc6dabef2d289db22ace495f9bd300001ad48",
       "impl_name": "STOTokenManagedUpgradeable",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5dc006a13c0f2cb4ea104b3b6ea1d1514a09618a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -438,7 +605,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -447,7 +614,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -486,11 +653,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11550"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -499,7 +668,7 @@
       "address": "0x6570305f8e7445a649ccecba16b13e772074bd70",
       "name": "STOTokenUpgradeableV1",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -530,7 +699,7 @@
       "address": "0x471634972866ab0aa08c7c218f9dafba8393e499",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -553,7 +722,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -561,7 +730,7 @@
       "address": "0xd8d7aef598aa9fd4ef539637e333b4769bb6f64d",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -584,7 +753,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 137,
@@ -592,7 +761,7 @@
       "address": "0xa7a06bfd2edca7bb19cab99b4335cc2f559dd5a3",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -615,7 +784,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 8453,
@@ -623,7 +792,7 @@
       "address": "0xdecbcba39a5defcfaebbaec076a66d6721e06f5a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -646,7 +815,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -654,7 +823,7 @@
       "address": "0x11a0b52c786ecfb87d2092c0d97b8cc335c17713",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -677,38 +846,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x1bb57e2abf2822c01ccaebccbc9d16c7fd0c1956",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x1bb57e2abf2822c01ccaebccbc9d16c7fd0c1956",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -716,7 +854,7 @@
       "address": "0x278d7bdc2451b0fa4087a68ce084a86cb91d4d83",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -739,7 +877,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -747,7 +885,7 @@
       "address": "0x409a37fa3636519380624cfb437e48ccaa9d86f7",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -770,7 +908,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -778,7 +916,7 @@
       "address": "0x5e4e3a4ca61c1f8b3cd4bb560a0040270ad13666",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -801,7 +939,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -809,7 +947,7 @@
       "address": "0x7431b5aca5c1229cdde8f4601d0fbf1b7b487360",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -832,7 +970,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -840,7 +978,7 @@
       "address": "0x8ed6601a5bb34396fc93c9b1fea3da24ed0c5800",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -863,7 +1001,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -871,7 +1009,7 @@
       "address": "0x8fb48a48700a56fbc40ec2305e223d318d487a8e",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -894,7 +1032,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -902,7 +1040,7 @@
       "address": "0x9b831992507d6e50e88589de25319b4ff3a7b8d3",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -925,7 +1063,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -933,7 +1071,7 @@
       "address": "0xa6e67aca8e04eb76394c2d3dcacfabee4b0a598a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Brickken",
       "tvl_usd": null,
@@ -956,7 +1094,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -964,7 +1102,7 @@
       "address": "0xa7a06bfd2edca7bb19cab99b4335cc2f559dd5a3",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -987,7 +1125,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -995,7 +1133,7 @@
       "address": "0xbc2074b87828c30e1ac6285da672602ffdd3f074",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1018,7 +1156,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1026,7 +1164,7 @@
       "address": "0xce4529fe88df480bd777d3e32dfd7032e6c685ff",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1049,38 +1187,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0xd887e26968451dddbe05b3532e43cca7568e9683",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0xd887e26968451dddbe05b3532e43cca7568e9683",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1088,7 +1195,7 @@
       "address": "0xdecbcba39a5defcfaebbaec076a66d6721e06f5a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1111,7 +1218,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1119,7 +1226,7 @@
       "address": "0xe70c860f7a260154611872641267949f5aae7c6a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1142,7 +1249,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1150,7 +1257,7 @@
       "address": "0xf4443f86b969f2def2dc4e784b22987a44943ce5",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1173,7 +1280,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1181,7 +1288,7 @@
       "address": "0xf63627f6ae0ab9b110131702488cd8438d0de221",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1204,7 +1311,38 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf6b6235f6725f84457f5d6f0b0aa3c962a079977",
+      "name": "WBrickken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WBrickken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf6b6235f6725f84457f5d6f0b0aa3c962a079977",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -1215,18 +1353,21 @@
       "report_url": "https://skynet.certik.com/projects/brickken",
       "auditor": "CertiK",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2022-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "UpgradeableBeaconEscrow",
+        "UpgradeableBeaconToken"
+      ],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -1251,75 +1392,32 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [
+  "auditor_coverage": [
     {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x27576e72f8cd047e4de23c683acfbf8576476f14",
-      "name": "STOEscrowManagedUpgradeable",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x7bf9ad9b70d3ba1dc5fde62217d88c1cd716b6e8",
-      "name": "STOEscrowUpgradeableV1",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xac798e0b0c6495dd53c3f373e513211a00afb5be",
-      "name": "STOFactoryV1",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x478dff0e27ca0f8e4d6cd5dd586b9f8d28158477",
-      "name": "STOTokenManagedUpgradeable",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6570305f8e7445a649ccecba16b13e772074bd70",
-      "name": "STOTokenUpgradeableV1",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "auditor": "CertiK",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 20,
+      "latest_audit": "2022-12"
     }
   ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 28,
+    "native": 0,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 0
+    "standard_library": 0,
+    "needs_review": 31
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 4
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 11550,
-        "report_name": "skynet.certik.com/projects/brickken"
-      },
       {
         "audit_id": 12093,
         "report_name": "69e0f131a3c7f0b39a48f86d_BRICKKEN_AI 2026_signed.pdf"

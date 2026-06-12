@@ -57,7 +57,7 @@
 | [aura](./aura/) | $107.0M | 19.4% | $68.2M | active | 18 | 497 | 2026-06-10 |
 | [aurora-plus](./aurora-plus/) | $2.3M | 33.3% | ? | active | 3 | 31 | 2026-06-10 |
 | [autofarm](./autofarm/) | $6.1M | 0.0% | ? | declining | 1 | 10 | 2026-06-10 |
-| [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 8 | 570 | 2026-06-11 |
+| [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 8 | 570 | 2026-06-12 |
 | [avalaunch](./avalaunch/) | $31.3M | 84.6% | ? | active | 13 | 38 | 2026-06-10 |
 | [avantis](./avantis/) | $196.5M | 68.8% | $150.9M | declining | 3 | 61 | 2026-06-10 |
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 3 | 2026-06-12 |
@@ -103,7 +103,7 @@
 | [bounce.tech](./bounce.tech/) | $1.1M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
 | [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 9 | 2026-06-10 |
 | [bracket-protocol](./bracket-protocol/) | $622.4M | 17.4% | $619.3M | active | 5 | 58 | 2026-06-10 |
-| [brickken](./brickken/) | $42.2M | 0.0% | ? | active | 2 | 29 | 2026-06-11 |
+| [brickken](./brickken/) | $42.2M | 20.0% | ? | active | 2 | 31 | 2026-06-12 |
 | [bridgers](./bridgers/) | $1.6M | 0.0% | ? | active | 1 | 6 | 2026-06-10 |
 | [brotocol](./brotocol/) | $6.5M | 0.0% | ? | active | 14 | 214 | 2026-06-11 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-06-10 |
@@ -281,7 +281,7 @@
 | [immutable-zkevm](./immutable-zkevm/) | $28.5M | 22.2% | ? | active | 4 | 9 | 2026-06-11 |
 | [inception](./inception/) | $9.8M | 24.6% | $9.5M | declining | 9 | 78 | 2026-06-11 |
 | [index-coop](./index-coop/) | $19.4M | 13.5% | $19.4M | active | 5 | 235 | 2026-06-11 |
-| [infinifi](./infinifi/) | $145.9M | 0.0% | $145.9M | declining | 12 | 114 | 2026-06-11 |
+| [infinifi](./infinifi/) | $145.9M | 0.0% | $145.9M | declining | 12 | 123 | 2026-06-12 |
 | [infrared-finance](./infrared-finance/) | $861.9K | 100.0% | ? | active | 27 | 27 | 2026-06-11 |
 | [init-capital](./init-capital/) | $66.5M | 24.0% | $66.2M | declining | 7 | 99 | 2026-06-11 |
 | [initiadex](./initiadex/) | $3.0M | 0.0% | ? | unknown | 7 | 0 | 2026-06-11 |
@@ -351,7 +351,7 @@
 | [manta-atlantic-stake](./manta-atlantic-stake/) | $5.4M | 0.0% | ? | sunsetting | 0 | 109 | 2026-06-11 |
 | [manta-cedefi](./manta-cedefi/) | $26.5M | 0.0% | ? | unknown | 0 | 17 | 2026-06-12 |
 | [manta-pacific](./manta-pacific/) | $21.1M | 0.0% | ? | active | 0 | 12 | 2026-06-12 |
-| [mantle-restaking](./mantle-restaking/) | $79.7M | 0.0% | ? | active | 13 | 8 | 2026-06-11 |
+| [mantle-restaking](./mantle-restaking/) | $60.9M | 59.1% | ? | declining | 13 | 25 | 2026-06-12 |
 | [mantra-dao](./mantra-dao/) | $611.0M | 0.0% | $611.0M | declining | 1 | 195 | 2026-06-11 |
 | [matstake](./matstake/) | $4.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [maverick-protocol](./maverick-protocol/) | $26.8M | 35.3% | $26.8M | declining | 7 | 93 | 2026-06-11 |
@@ -549,7 +549,7 @@
 | [sofa.org](./sofa.org/) | $49.2K | 33.3% | $46.8K | declining | 8 | 38 | 2026-05-24 |
 | [solayer](./solayer/) | $13.0M | 0.0% | ? | unknown | 5 | 0 | 2026-06-11 |
 | [solera](./solera/) | $8.4M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
-| [sonic-gateway](./sonic-gateway/) | $7.8M | 0.0% | $7.8M | active | 2 | 1 | 2026-06-11 |
+| [sonic-gateway](./sonic-gateway/) | $7.8M | 0.0% | $7.8M | declining | 2 | 9 | 2026-06-12 |
 | [sophon-bridge](./sophon-bridge/) | $44.6M | 0.0% | $44.6M | active | 8 | 25 | 2026-06-12 |
 | [sophon-farm](./sophon-farm/) | $6.8M | 100.0% | ? | active | 9 | 1 | 2026-06-11 |
 | [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | declining | 0 | 58 | 2026-06-11 |

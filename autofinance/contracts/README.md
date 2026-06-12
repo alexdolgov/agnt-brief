@@ -1,6 +1,6 @@
 # autofinance — Contract Index
 
-570 unique implementations across 5 chains · 1752 deployments · 0 audited · 409 unaudited · 161 unverified
+570 unique implementations across 6 chains · 1753 deployments · 0 audited · 409 unaudited · 161 unverified
 
 ## adapter (45)
 
@@ -259,7 +259,7 @@
 | [StatsCalculatorFactory (2 deployments)](./ethereum-1/0x8198069f1709addc6a162c9433665776e5bc917c/) | ethereum | 2 deployments: ethereum [`0x819806...bc917c`](./ethereum-1/0x8198069f1709addc6a162c9433665776e5bc917c/); base `0xd82664...8b0a1c` | ⚠️ Unaudited | Verified |
 | [StatsCalculatorRegistry (2 deployments)](./base-8453/0x22dd2189728b40409476f4f80ca8f2f6bdb217d2/) | base | 2 deployments: ethereum `0xae6b25...0e2124`; base [`0x22dd21...b217d2`](./base-8453/0x22dd2189728b40409476f4f80ca8f2f6bdb217d2/) | ⚠️ Unaudited | Verified |
 | [SystemRegistry](./ethereum-1/0x2218f90a98b0c070676f249ef44834686daa4285/) | ethereum | [`0x2218f9...aa4285`](./ethereum-1/0x2218f90a98b0c070676f249ef44834686daa4285/) | ⚠️ Unaudited | Verified |
-| [SystemRegistryL2 (5 deployments)](./base-8453/0x18dc926095a7a007c01ef836683fdef4c4371b4e/) | base | 5 deployments: base [`0x18dc92...371b4e`](./base-8453/0x18dc926095a7a007c01ef836683fdef4c4371b4e/); arbitrum `0x700915...c86a2f`; arbitrum `0x7af0c2...639b7c`; arbitrum `0xbfd8e6...7b4220`; linea `0x25f26e...a9f980` | ⚠️ Unaudited | Verified |
+| [SystemRegistryL2 (6 deployments)](./base-8453/0x18dc926095a7a007c01ef836683fdef4c4371b4e/) | base | 6 deployments: sonic `0x1a912e...ad8848`; base [`0x18dc92...371b4e`](./base-8453/0x18dc926095a7a007c01ef836683fdef4c4371b4e/); arbitrum `0x700915...c86a2f`; arbitrum `0x7af0c2...639b7c`; arbitrum `0xbfd8e6...7b4220`; linea `0x25f26e...a9f980` | ⚠️ Unaudited | Verified |
 | [UpgradeableAutopoolFactory (13 deployments)](./linea-59144/0x01890ea9326d6c2d5941a51473d12f8179744be4/) | linea | 13 deployments: ethereum `0x2567c9...05e59f`; ethereum `0x2b2ca9...1ceb72`; ethereum `0x866cf4...11c4ce`; ethereum `0x90f74a...95cd35`; base `0x02fe08...e44d89`; base `0xc1e701...a34f79`; base `0xd0446a...1bd4e4`; base `0xdbb093...c2dc21`; base `0xdd08e4...b32b9e`; base `0xdf6dc6...699cd8`; arbitrum `0x9f76d5...08d7fb`; arbitrum `0xc08f39...a917a7`; linea [`0x01890e...744be4`](./linea-59144/0x01890ea9326d6c2d5941a51473d12f8179744be4/) | ⚠️ Unaudited | Verified |
 | [VisorFactory](./ethereum-1/0xae03233307865623aaef76da9ade669b86e6f20a/) | ethereum | [`0xae0323...e6f20a`](./ethereum-1/0xae03233307865623aaef76da9ade669b86e6f20a/) | ⚠️ Unaudited | Verified |
 | [ZkAddressRegistry](./ethereum-1/0x37076f886de8054d12a12db6253e871f6d3d9eb2/) | ethereum | [`0x37076f...3d9eb2`](./ethereum-1/0x37076f886de8054d12a12db6253e871f6d3d9eb2/) | ⚠️ Unaudited | Verified |

@@ -7,10 +7,10 @@
 - Project: AUTOfinance (`autofinance`)
 - Website: [https://www.auto.finance](https://www.auto.finance)
 - Lifecycle: transitioning (Tier 1, transitioning)
-- Generated: 2026-06-11T11:32:04.486Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
-- Chains: arbitrum, base, ethereum, linea, plasma
-- Contract surface: 570 unique implementations (1752 raw deployments)
+- Generated: 2026-06-12T16:10:08.741Z
+- Pipeline run: v2-pipeline-2026-06-12-c7aee3-9d35
+- Chains: arbitrum, base, ethereum, linea, plasma, sonic
+- Contract surface: 570 unique implementations (1753 raw deployments)
 - DeFi Llama TVL: $39,393,220.49
 - On-chain TVL (included contracts): $175,724,182.92
 - TVL by chain: Ethereum $158,270,775.78 | Base $15,266,107.05 | Arbitrum $2,147,674.98 | Plasma $39,381.66 | Linea $243.45
@@ -30,7 +30,7 @@ Autopools serve as the entry point for users, delegating asset management to Des
 - Verified by bytecode match: 3
 - Unverified implementations: 161
 - Unique implementations: 570
-- Raw deployments: 1752
+- Raw deployments: 1753
 - Audits discovered: 8
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $175,724,182.92
@@ -379,7 +379,7 @@ Autopools serve as the entry point for users, delegating asset management to Des
 | SwapRouterV2 | adapter | arbitrum | 8 deployments: ethereum `0x955b5a...4679ca`; base `0x77e11d...6e48dc`; plasma `0xb4da8d...fbcbe6`; arbitrum [`0x096f44...33e59a`](./contracts/arbitrum-42161/0x096f44f9fbbe6116de5db5954de776fb8733e59a/); arbitrum `0x0ed955...cde632`; arbitrum `0x11d14d...6f55e7`; arbitrum `0x4dd492...f6cd37`; arbitrum `0x5e4cb1...599da6` | ⚠️ Unaudited |
 | SwethLSTCalculator | token | ethereum | 2 deployments: ethereum [`0x60e98e...ce3c9e`](./contracts/ethereum-1/0x60e98e2dac20faab84781076164290cc31ce3c9e/); ethereum `0x7cbbb3...ac7408` | ⚠️ Unaudited |
 | SystemRegistry | registry | ethereum | [`0x2218f9...aa4285`](./contracts/ethereum-1/0x2218f90a98b0c070676f249ef44834686daa4285/) | ⚠️ Unaudited |
-| SystemRegistryL2 | registry | base | 5 deployments: base [`0x18dc92...371b4e`](./contracts/base-8453/0x18dc926095a7a007c01ef836683fdef4c4371b4e/); arbitrum `0x700915...c86a2f`; arbitrum `0x7af0c2...639b7c`; arbitrum `0xbfd8e6...7b4220`; linea `0x25f26e...a9f980` | ⚠️ Unaudited |
+| SystemRegistryL2 | registry | base | 6 deployments: sonic `0x1a912e...ad8848`; base [`0x18dc92...371b4e`](./contracts/base-8453/0x18dc926095a7a007c01ef836683fdef4c4371b4e/); arbitrum `0x700915...c86a2f`; arbitrum `0x7af0c2...639b7c`; arbitrum `0xbfd8e6...7b4220`; linea `0x25f26e...a9f980` | ⚠️ Unaudited |
 | SystemSecurityL1 | unknown | ethereum | 5 deployments: ethereum [`0x027a33...238833`](./contracts/ethereum-1/0x027a3359b803885261b140415873845f72238833/); ethereum `0xe57a2e...f39b20`; plasma `0xf8cda9...699834`; linea `0x795abe...87f494`; linea `0xa287f0...493e46` | ⚠️ Unaudited |
 | SystemSecurityL2 | unknown | arbitrum | 7 deployments: base `0x8c58af...8b4006`; base `0xb246f6...6192de`; arbitrum [`0x062a72...948127`](./contracts/arbitrum-42161/0x062a72ebb3f4a6c14fa18b2dcf34a8ee90948127/); arbitrum `0x63051c...05e6a1`; arbitrum `0x9b17ef...e08a96`; arbitrum `0xa19d96...44a44c`; arbitrum `0xe7eeb1...96cf99` | ⚠️ Unaudited |
 | ThreeCrvLevSwapperV1 | adapter | ethereum | 2 deployments: ethereum [`0x1fc83f...aae530`](./contracts/ethereum-1/0x1fc83f75499b7620d53757f0b01e2ae626aae530/); ethereum `0x6e8093...08d9aa` | ⚠️ Unaudited |
@@ -663,49 +663,43 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x0a2b94...114e56`](./contracts/ethereum-1/0x0a2b94f6871c1d7a32fe58e1ab5e6dea2f114e56/) | AutopoolETH | core_logic | $36,195,621.77 | Verified native implementation with $36,195,621.77 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x03825c...c5bf0d`](./contracts/linea-59144/0x03825c8c817ff49a208c9c20365c002418c5bf0d/) | AutopoolMainRewarder | core_logic | $28,417,212.12 | Verified native implementation with $28,417,212.12 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x383518...14a899`](./contracts/ethereum-1/0x383518188c0c6d7730d91b2c03a03c837814a899/) | OlympusERC20Token | token | $32,883,741.27 | Verified native implementation with $32,883,741.27 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xdbdb4d...90c8df`](./contracts/ethereum-1/0xdbdb4d16eda451d0503b854cf79d55697f90c8df/) | AlchemixToken | token | $12,845,271.52 | Verified native implementation with $12,845,271.52 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xbc6da0...3660e9`](./contracts/ethereum-1/0xbc6da0fe9ad5f3b0d58160288917aa56653660e9/) | AlToken | token | $12,233,070.56 | Verified native implementation with $12,233,070.56 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa693b1...ee87a5`](./contracts/ethereum-1/0xa693b19d2931d498c5b318df961919bb4aee87a5/) | TokenImplementation | token | $534,995.60 | Verified native implementation with $534,995.60 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0139b3...e6f15a`](./contracts/ethereum-1/0x0139b34012a6639e896b883901b7dc1bb6e6f15a/) | Pool | core_logic | $387,045.65 | Verified native implementation with $387,045.65 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9c4a42...22f050`](./contracts/ethereum-1/0x9c4a4204b79dd291d6b6571c5be8bbcd0622f050/) | TracerToken | token | $172,890.00 | Verified native implementation with $172,890.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x117a0b...23560c`](./contracts/ethereum-1/0x117a0bab81f25e60900787d98061ccfae023560c/) | DepositToken | token | $169,500.13 | Verified native implementation with $169,500.13 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x134c05...c8157f`](./contracts/ethereum-1/0x134c0591183e9c8a39250a9a04e6f8585bc8157f/) | APWToken | token | $156,038.20 | Verified native implementation with $156,038.20 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x116b3e...bf8f3e`](./contracts/ethereum-1/0x116b3e86f2b04c21605c5fc4b95ba6a82dbf8f3e/) | ERC20DestinationVault | core_logic | $111,702.79 | Verified native implementation with $111,702.79 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x27a9c1...7621ad`](./contracts/arbitrum-42161/0x27a9c16ef2dc44a7bf6df4d115fe4c27d87621ad/) | AutopilotRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x78a7c4...898451`](./contracts/base-8453/0x78a7c45e3cc7b9567b4803aeaf9b33bc8c898451/) | AutopoolFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x4fe791...b1fece`](./contracts/base-8453/0x4fe7916a10b15dadefc59d06ac81757112b1fece/) | AutopoolRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4b1300...eaf5ba`](./contracts/ethereum-1/0x4b13006980acb09645131b91d259eaa111eaf5ba/) | MYCToken | token | $45,738.35 | Verified native implementation with $45,738.35 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xb02cb1...57184e`](./contracts/base-8453/0xb02cb15597e214b9a843ccff9eefe628c057184e/) | AerodromeStakingDexCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x9813e3...89f3e3`](./contracts/base-8453/0x9813e3091278f41cd6b2686ff83255f97889f3e3/) | AerodromeStakingIncentiveCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x041679...74ea07`](./contracts/ethereum-1/0x041679acb4088288178589c059543b56ce74ea07/) | AuraCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x7c4b58...13c539`](./contracts/base-8453/0x7c4b58eaa93005162bc80285af2003517213c539/) | AuraL2Calculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x24d783...069abb`](./contracts/ethereum-1/0x24d783e5ed8e4a507583e0c79abf489051069abb/) | CbethLSTCalculator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc80373...00ac38`](./contracts/ethereum-1/0xc803737d3e12cc4034dde0b2457684322100ac38/) | DefiRound | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x66b9eb...6e258c`](./contracts/linea-59144/0x66b9eba2cef184dfaf3b9e11b104be0a1c6e258c/) | DestinationRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x37de6f...0ff124`](./contracts/ethereum-1/0x37de6f9d23d26dfbcb6dbee86dc7ca538c0ff124/) | DestinationVaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdd9251...625a3d`](./contracts/ethereum-1/0xdd92511f1fbe5de911e22a0247ba8c212d625a3d/) | EthPerTokenSender | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x578317...d68dfe`](./contracts/base-8453/0x57831780565ae1526ed1cc2296c1143b3ad68dfe/) | EthPerTokenStore | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2757f5...5b0c55`](./contracts/ethereum-1/0x2757f5fb6f62ef4b41b5f6236d1e3a77e15b0c55/) | ETHxLSTCalculator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x17c50b...022975`](./contracts/ethereum-1/0x17c50b9fba151f5f88618dae6c394bd731022975/) | ExtraRewarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8607ba...85f862`](./contracts/ethereum-1/0x8607ba6540af378cba64f4e3497fbb2d1385f862/) | IncentivePricingStats | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x20ea2f...616f76`](./contracts/ethereum-1/0x20ea2f2ecf36bcb6df086d923a120496dc616f76/) | MessageProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xa698a9...a99402`](./contracts/arbitrum-42161/0xa698a94c0dce389b862f58b08f618a981ea99402/) | OneToOneUSDBackingOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| plasma | [`0x07ed7e...b8f95b`](./contracts/plasma-9745/0x07ed7ef81d7dd79fb6043d0a37c11d78f3b8f95b/) | EulerDestinationVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x956f47...7f87ca`](./contracts/ethereum-1/0x956f47f50a910163d8bf957cf5846d573e7f87ca/) | Fei | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc770ee...8ee52d`](./contracts/ethereum-1/0xc770eefad204b5180df6a14ee197d99d808ee52d/) | FOX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6bea7c...44e197`](./contracts/ethereum-1/0x6bea7cfef803d1e3d5f7c0103f7ded065644e197/) | Gamma | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0ab870...20a52f`](./contracts/ethereum-1/0x0ab87046fbb341d058f17cbc4c1133f25a20a52f/) | gOHM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x99d8a9...1e17f3`](./contracts/ethereum-1/0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3/) | MagicInternetMoneyV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3cc439...257b1b`](./contracts/ethereum-1/0x3cc4397ee396b49408ae12fd34c7c3b40f257b1b/) | OsethLSTCalculator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x37c9b7...06296a`](./contracts/ethereum-1/0x37c9b7fc138a7489c307a7bc6bc1124e3d06296a/) | PxEthLSTCalculator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x327966...12267e`](./contracts/base-8453/0x32796698388fbc64281dea9fc4070df80a12267e/) | ReceivingRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x038516...90fac1`](./contracts/ethereum-1/0x038516cb9bbc0572c2d55896ce75f31fab90fac1/) | RethLSTCalculator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x114ca0...cefa86`](./contracts/ethereum-1/0x114ca0dc51abd118125f84d15f87e01e7dcefa86/) | RsethLRTCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xe861c6...15b90f`](./contracts/ethereum-1/0xe861c6eb5376ada41bcc238080439724fe15b90f/) | RswethLRTCalculator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x05abaa...1f23f4`](./contracts/arbitrum-42161/0x05abaa1882f628c0e6542ba0e90ab20fc01f23f4/) | SequencerChecker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x819806...bc917c`](./contracts/ethereum-1/0x8198069f1709addc6a162c9433665776e5bc917c/) | StatsCalculatorFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x22dd21...b217d2`](./contracts/base-8453/0x22dd2189728b40409476f4f80ca8f2f6bdb217d2/) | StatsCalculatorRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x23783e...b85666`](./contracts/base-8453/0x23783e62282ca68fd5c3fb45fc7ad01f21b85666/) | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x096f44...33e59a`](./contracts/arbitrum-42161/0x096f44f9fbbe6116de5db5954de776fb8733e59a/) | SwapRouterV2 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2218f9...aa4285`](./contracts/ethereum-1/0x2218f90a98b0c070676f249ef44834686daa4285/) | SystemRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x18dc92...371b4e`](./contracts/base-8453/0x18dc926095a7a007c01ef836683fdef4c4371b4e/) | SystemRegistryL2 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x027a33...238833`](./contracts/ethereum-1/0x027a3359b803885261b140415873845f72238833/) | SystemSecurityL1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa760e2...8eb930`](./contracts/ethereum-1/0xa760e26aa76747020171fcf8bda108dfde8eb930/) | TokeMigrationPool | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 42 |
-| upstream | 44 |
-| standard_library | 0 |
-| needs_review | 484 |
+| native | 28 |
+| upstream | 43 |
+| standard_library | 9 |
+| needs_review | 490 |
 
 ## Scope Matching Notes
 

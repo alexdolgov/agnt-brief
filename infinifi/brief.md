@@ -5,13 +5,13 @@
 ## Project Overview
 
 - Project: infiniFi (`infinifi`)
-- Website: [https://infinifi.xyz?ref=XXKTY1S9](https://infinifi.xyz?ref=XXKTY1S9)
+- Website: [https://infinifi.xyz](https://infinifi.xyz)
 - Lifecycle: declining (Tier 0, 49.7% below peak)
-- Generated: 2026-06-11T00:06:29.450Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
+- Generated: 2026-06-12T16:10:57.802Z
+- Pipeline run: v2-pipeline-2026-06-12-c7aee3-9d35
 - Chains: bsc, ethereum, plasma
-- Contract surface: 114 unique implementations (204 raw deployments)
-- DeFi Llama TVL: $90,227,546.41
+- Contract surface: 123 unique implementations (214 raw deployments)
+- DeFi Llama TVL: $77,946,415.13
 - On-chain TVL (included contracts): $145,943,366.91
 - TVL by chain: Ethereum $145,943,366.91
 
@@ -25,12 +25,12 @@ The Core Contracts family orchestrates user deposits and withdrawals, minting Lo
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/69 (0.0%)
-- Verified + Unaudited implementations: 68
+- Verified implementations audited: 0/72 (0.0%)
+- Verified + Unaudited implementations: 71
 - Verified by bytecode match: 1
-- Unverified implementations: 45
-- Unique implementations: 114
-- Raw deployments: 204
+- Unverified implementations: 51
+- Unique implementations: 123
+- Raw deployments: 214
 - Audits discovered: 12
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $145,943,366.91
@@ -49,7 +49,7 @@ The Core Contracts family orchestrates user deposits and withdrawals, minting Lo
 
 - None
 
-### ⚠️ Verified + Unaudited (68)
+### ⚠️ Verified + Unaudited (71)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -60,6 +60,7 @@ The Core Contracts family orchestrates user deposits and withdrawals, minting Lo
 | OVault_USDC_iUSD | core_logic | ethereum | 2 deployments: ethereum [`0x5ddbdc...55f105`](./contracts/ethereum-1/0x5ddbdc875ae800b1d61cc8c49324f259ef55f105/); ethereum `0xefaf2b...02ab00` | ⚠️ Unaudited |
 | OVault_iUSD_siUSD | core_logic | ethereum | 2 deployments: ethereum [`0x6345d9...a47fef`](./contracts/ethereum-1/0x6345d938a607b8f5da825d1670b4890f5aa47fef/); ethereum `0xea52ce...59f3a3` | ⚠️ Unaudited |
 | Accounting | unknown | ethereum | 2 deployments: ethereum [`0x7a5c5d...e842b3`](./contracts/ethereum-1/0x7a5c5dba4fbd0e1e1a2ecdbe752fae55f6e842b3/); plasma `0xdeb028...ce765f` | ⚠️ Unaudited |
+| ActionAddRemoveLiqV3 | unknown | ethereum | [`0x888888...58f946`](./contracts/ethereum-1/0x888888888889758f76e7103c6cbf23abbf58f946/) | ⚠️ Unaudited |
 | AfterMintHook | unknown | plasma | 2 deployments: ethereum `0xa5e274...4797a8`; plasma [`0x1b286d...4de53d`](./contracts/plasma-9745/0x1b286d4c12c9f7cc8a49836bd88d33ae804de53d/) | ⚠️ Unaudited |
 | AllocationVoting | unknown | plasma | 2 deployments: ethereum `0x49fa67...0ff853`; plasma [`0x13dd80...043bb6`](./contracts/plasma-9745/0x13dd8034601ae91d1abcef4632083474fb043bb6/) | ⚠️ Unaudited |
 | AssetsChecker | unknown | ethereum | [`0x16a139...cd8619`](./contracts/ethereum-1/0x16a139da0405eb9777ade4f5f0cc2416e5cd8619/) | ⚠️ Unaudited |
@@ -76,6 +77,7 @@ The Core Contracts family orchestrates user deposits and withdrawals, minting Lo
 | FluidRewardsClaimer | operational_periphery | plasma | 3 deployments: ethereum `0xd0ec80...65241e`; plasma [`0x7ba3bc...4995a5`](./contracts/plasma-9745/0x7ba3bc4e47f9c44847caf58ba2e3957d984995a5/); plasma `0xc1fe7f...eb9bae` | ⚠️ Unaudited |
 | FxSaveFarm | unknown | ethereum | [`0xc9c06c...9beabc`](./contracts/ethereum-1/0xc9c06c49ed83d12bca88bed999d4920f049beabc/) | ⚠️ Unaudited |
 | GauntletAlphaFarm | unknown | ethereum | [`0x2f59b7...608c25`](./contracts/ethereum-1/0x2f59b7ee5aa0f7834b4526a015bc506a4c608c25/) | ⚠️ Unaudited |
+| GPv2Settlement | unknown | ethereum | [`0x9008d1...60ab41`](./contracts/ethereum-1/0x9008d19f58aabd9ed0d60971565aa8510560ab41/) | ⚠️ Unaudited |
 | InfiniFiCore | unknown | plasma | 3 deployments: ethereum `0xf6d487...d25490`; plasma [`0x160300...5c1d8a`](./contracts/plasma-9745/0x160300d5c1ea377b823127d2d6668d43dd5c1d8a/); plasma `0x4b174a...327c32` | ⚠️ Unaudited |
 | InfiniFiGatewayV1 | unknown | ethereum | [`0x7954d5...296d33`](./contracts/ethereum-1/0x7954d563cbd9ee121a77805bce5fe3c44f296d33/) | ⚠️ Unaudited |
 | InfiniFiGatewayV2 | unknown | ethereum | [`0xd04b37...1fb41f`](./contracts/ethereum-1/0xd04b37f673c42baa46923fe74a830bae721fb41f/) | ⚠️ Unaudited |
@@ -94,6 +96,7 @@ The Core Contracts family orchestrates user deposits and withdrawals, minting Lo
 | MapleFarm | unknown | ethereum | 3 deployments: ethereum [`0x5f9f59...a922f7`](./contracts/ethereum-1/0x5f9f597e020bb2b30e92180eee617f4f81a922f7/); ethereum `0x6e6e73...8c4acd`; ethereum `0xf56e94...8163b3` | ⚠️ Unaudited |
 | MaturedFarmCleaner | unknown | ethereum | [`0x607b5a...d4fa56`](./contracts/ethereum-1/0x607b5ab25b2ed5575d296a1cafc3a17161d4fa56/) | ⚠️ Unaudited |
 | MerklRewardsClaimer | operational_periphery | plasma | 2 deployments: plasma [`0x7a6724...b661c6`](./contracts/plasma-9745/0x7a67248a73f9763203d4cd0fc8ef1c22c1b661c6/); plasma `0x9b3bf0...396754` | ⚠️ Unaudited |
+| MetaAggregationRouterV2 | adapter | ethereum | [`0x6131b5...6337b5`](./contracts/ethereum-1/0x6131b5fae19ea4f9d964eac0408e4408b66337b5/) | ⚠️ Unaudited |
 | MidasFarm | unknown | ethereum | [`0x7373a7...d31679`](./contracts/ethereum-1/0x7373a7ce3c023c56cb66747afbdf827627d31679/) | ⚠️ Unaudited |
 | MigrationController | operational_periphery | ethereum | [`0x5f5403...1839f8`](./contracts/ethereum-1/0x5f5403656e4db95accf1064a714b1bce351839f8/) | ⚠️ Unaudited |
 | MinorRolesManager | governance | plasma | 2 deployments: ethereum `0xa08bf8...66be9b`; plasma [`0x2c0dfa...c19fe7`](./contracts/plasma-9745/0x2c0dfada99dff7ada03952a39302a16be2c19fe7/) | ⚠️ Unaudited |
@@ -107,7 +110,7 @@ The Core Contracts family orchestrates user deposits and withdrawals, minting Lo
 | RedeemController | governance | plasma | 2 deployments: ethereum `0xcb1747...ec7601`; plasma [`0xb6931f...f2616d`](./contracts/plasma-9745/0xb6931f0a698f4f40cbe0d79045dc2ec223f2616d/) | ⚠️ Unaudited |
 | ReservoirFarm | unknown | ethereum | [`0x6f53c1...3d86de`](./contracts/ethereum-1/0x6f53c12243d2fe281cfdfc63601f8b4e713d86de/) | ⚠️ Unaudited |
 | ResolvOracle | operational_periphery | ethereum | [`0x862bf0...d48171`](./contracts/ethereum-1/0x862bf0f4d43bb892aeccd6e6c43f34549ad48171/) | ⚠️ Unaudited |
-| RWAEscrowFarm | operational_periphery | ethereum | 4 deployments: ethereum [`0x277fdf...0884c1`](./contracts/ethereum-1/0x277fdf6dc5c53c5c2828188da84b9593a50884c1/); ethereum `0x75b4d3...ffad5f`; ethereum `0x9e5efc...451852`; ethereum `0xe919c6...f181cf` | ⚠️ Unaudited |
+| RWAEscrowFarm | operational_periphery | ethereum | 5 deployments: ethereum [`0x04d552...9f3271`](./contracts/ethereum-1/0x04d5521ac09f8823338e8163dd8badaee39f3271/); ethereum `0x277fdf...0884c1`; ethereum `0x75b4d3...ffad5f`; ethereum `0x9e5efc...451852`; ethereum `0xe919c6...f181cf` | ⚠️ Unaudited |
 | RWAEscrowRateManager | operational_periphery | ethereum | [`0x11f6fa...6d4189`](./contracts/ethereum-1/0x11f6fab3f4d8635880c3e80cbae8aef8136d4189/) | ⚠️ Unaudited |
 | Safe | unknown | ethereum | [`0x80608f...c2400c`](./contracts/ethereum-1/0x80608f852d152024c0a2087b16939235fec2400c/) | ⚠️ Unaudited |
 | sGHOFarm | unknown | ethereum | [`0x7e9aa4...92158d`](./contracts/ethereum-1/0x7e9aa426abc2d9006e8c9881754baa00a392158d/) | ⚠️ Unaudited |
@@ -136,12 +139,18 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 |---|---|---|---|---|
 | FixedPriceOracle | operational_periphery | ethereum | 16 deployments: ethereum [`0x0b8325...6c1cb5`](./contracts/ethereum-1/0x0b832573f9aef9f045fa559366223abb086c1cb5/); ethereum `0x10f8ef...864dab`; ethereum `0x2630bb...d05083`; ethereum `0x3d6270...c4af13`; ethereum `0x51fc27...cff758`; ethereum `0x64b32f...e2e8f5`; ethereum `0x7ab218...753524`; ethereum `0x8abc95...b344c1`; ethereum `0xa53284...bd4bc1`; ethereum `0xb2dbfe...d46790`; ethereum `0xb52af3...745775`; ethereum `0xd15270...a3a79b`; ethereum `0xd16bf3...c3f3bf`; plasma `0x0cac05...1526a7`; plasma `0x2320eb...044445`; plasma `0xf7f724...8ab884` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (45)
+### ❓ Unverified (51)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | `0x1d5702...4a37fd` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | `0x555b6e...7a1fd1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | `0xcaa00a...880597` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | `0xcde3eb...a5eac2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | `0xd1b474...40abf4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | `0xf294ad...c136fc` | ❓ Unverified |
 | UnnamedContract | unknown | plasma | `0x05266d...59863c` | ❓ Unverified |
 | UnnamedContract | unknown | plasma | `0x0a99b6...11ac04` | ❓ Unverified |
 | UnnamedContract | unknown | plasma | `0x0afcd2...1430c1` | ❓ Unverified |
@@ -209,80 +218,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x48f9e3...e3d89c`](./contracts/ethereum-1/0x48f9e38f3070ad8945dfeae3fa70987722e3d89c/) | ReceiptToken | token | $90,499,220.91 | Verified native implementation with $90,499,220.91 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdbdc1e...389bcb`](./contracts/ethereum-1/0xdbdc1ef57537e34680b898e1febd3d68c7389bcb/) | StakedToken | token | $53,525,979.49 | Verified native implementation with $53,525,979.49 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x12b004...258442`](./contracts/ethereum-1/0x12b004719fb632f1e7c010c6f5d6009fb4258442/) | LockedPositionToken | token | $1,918,166.10 | Verified native implementation with $1,918,166.10 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6fac6a...6491f7`](./contracts/ethereum-1/0x6fac6ab52d43e11b04f1587db00d5240e86491f7/) | OVault_USDC_siUSD | core_logic | $0.20 | Verified native implementation with $0.20 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5ddbdc...55f105`](./contracts/ethereum-1/0x5ddbdc875ae800b1d61cc8c49324f259ef55f105/) | OVault_USDC_iUSD | core_logic | $0.10 | Verified native implementation with $0.10 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6345d9...a47fef`](./contracts/ethereum-1/0x6345d938a607b8f5da825d1670b4890f5aa47fef/) | OVault_iUSD_siUSD | core_logic | $0.10 | Verified native implementation with $0.10 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7a5c5d...e842b3`](./contracts/ethereum-1/0x7a5c5dba4fbd0e1e1a2ecdbe752fae55f6e842b3/) | Accounting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0x1b286d...4de53d`](./contracts/plasma-9745/0x1b286d4c12c9f7cc8a49836bd88d33ae804de53d/) | AfterMintHook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0x13dd80...043bb6`](./contracts/plasma-9745/0x13dd8034601ae91d1abcef4632083474fb043bb6/) | AllocationVoting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x16a139...cd8619`](./contracts/ethereum-1/0x16a139da0405eb9777ade4f5f0cc2416e5cd8619/) | AssetsChecker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x15dc4c...bbb56c`](./contracts/ethereum-1/0x15dc4c43b0d3283ae4f193bb8ac97181f4bbb56c/) | AutoFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0x44f949...a9c03b`](./contracts/plasma-9745/0x44f9499122a7434252aa7df727d9552c2ba9c03b/) | BeforeRedeemHook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x31fb25...24c731`](./contracts/ethereum-1/0x31fb2575d5ab1c370b0a612ac9ab569f2924c731/) | CapFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x08ce17...baffa7`](./contracts/ethereum-1/0x08ce17d83b3bebb1c43a55a054d656ecbebaffa7/) | CoWSwapFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa406af...fe26e9`](./contracts/ethereum-1/0xa406afc7967c63c5c454ad1f0e0db9a761fe26e9/) | EmergencyWithdrawal | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x05b9e7...a97e93`](./contracts/ethereum-1/0x05b9e728e93d090aa896b96d96ad215b6ca97e93/) | ERC4626Farm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x76d2e8...c35b78`](./contracts/ethereum-1/0x76d2e84009dae457f8667d823c7c96e9a7c35b78/) | ERC4626FarmWithMaturity | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x36cc59...245b2a`](./contracts/ethereum-1/0x36cc593972ec3dafa1b3344736d770962e245b2a/) | ERC4626Oracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6cb48b...5af976`](./contracts/ethereum-1/0x6cb48b801f449ba52c1a3477484f4405235af976/) | EUSDEMigrationFarm | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0x73ab24...c88861`](./contracts/plasma-9745/0x73ab24e6b1e4e106cf95f0ffd393f39365c88861/) | FarmRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0b8325...6c1cb5`](./contracts/ethereum-1/0x0b832573f9aef9f045fa559366223abb086c1cb5/) | FixedPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0x7ba3bc...4995a5`](./contracts/plasma-9745/0x7ba3bc4e47f9c44847caf58ba2e3957d984995a5/) | FluidRewardsClaimer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc9c06c...9beabc`](./contracts/ethereum-1/0xc9c06c49ed83d12bca88bed999d4920f049beabc/) | FxSaveFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2f59b7...608c25`](./contracts/ethereum-1/0x2f59b7ee5aa0f7834b4526a015bc506a4c608c25/) | GauntletAlphaFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0x160300...5c1d8a`](./contracts/plasma-9745/0x160300d5c1ea377b823127d2d6668d43dd5c1d8a/) | InfiniFiCore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7954d5...296d33`](./contracts/ethereum-1/0x7954d563cbd9ee121a77805bce5fe3c44f296d33/) | InfiniFiGatewayV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd04b37...1fb41f`](./contracts/ethereum-1/0xd04b37f673c42baa46923fe74a830bae721fb41f/) | InfiniFiGatewayV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x322135...ecc22d`](./contracts/ethereum-1/0x322135e7783cae3c61d30865ad653d7012ecc22d/) | InfiniFiMintOVaultComposer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x60b14e...ebdf09`](./contracts/bsc-56/0x60b14ec49874af1ba471685cb11132101aebdf09/) | InfiniFiOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0xf8b24d...120600`](./contracts/plasma-9745/0xf8b24d22153d86af79681e949ec2efaf75120600/) | InfiniFiReceiptTokenSYAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0xabd98b...fe83c7`](./contracts/plasma-9745/0xabd98b466196ca3d29e0a2a7859e151a31fe83c7/) | InfiniFiStakedTokenSY | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3f59f8...8ae245`](./contracts/ethereum-1/0x3f59f82cb359b9332acaa48f999f4c92f38ae245/) | InfiniFiStakeOVaultComposer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4be546...ca124c`](./contracts/ethereum-1/0x4be546155461d097a714ef2668893b0d10ca124c/) | LevelFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xfbbc64...7d7e51`](./contracts/ethereum-1/0xfbbc645d82cbba7c20c37e477ef9c0032d7d7e51/) | LevelOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1ad60c...07592a`](./contracts/ethereum-1/0x1ad60c683ea27bef74b2c27c221486880e07592a/) | LiquidationFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1d95cc...037ff7`](./contracts/ethereum-1/0x1d95cc100d6cd9c7bbdbd7cb328d99b3d6037ff7/) | LockingController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x160300...5c1d8a`](./contracts/ethereum-1/0x160300d5c1ea377b823127d2d6668d43dd5c1d8a/) | ManualRebalancer | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5f9f59...a922f7`](./contracts/ethereum-1/0x5f9f597e020bb2b30e92180eee617f4f81a922f7/) | MapleFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x607b5a...d4fa56`](./contracts/ethereum-1/0x607b5ab25b2ed5575d296a1cafc3a17161d4fa56/) | MaturedFarmCleaner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0x7a6724...b661c6`](./contracts/plasma-9745/0x7a67248a73f9763203d4cd0fc8ef1c22c1b661c6/) | MerklRewardsClaimer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7373a7...d31679`](./contracts/ethereum-1/0x7373a7ce3c023c56cb66747afbdf827627d31679/) | MidasFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5f5403...1839f8`](./contracts/ethereum-1/0x5f5403656e4db95accf1064a714b1bce351839f8/) | MigrationController | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0x2c0dfa...c19fe7`](./contracts/plasma-9745/0x2c0dfada99dff7ada03952a39302a16be2c19fe7/) | MinorRolesManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x49877d...a4c256`](./contracts/ethereum-1/0x49877d937b9a00d50557bdc3d87287b5c3a4c256/) | MintController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa2b300...19ed91`](./contracts/ethereum-1/0xa2b300c5d0e9250f646b20ec924efad36d19ed91/) | OracleFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc32456...ed57a4`](./contracts/ethereum-1/0xc324569141697045b9ede54b5d4623a691ed57a4/) | PLSmoother | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x215c7f...b010b8`](./contracts/ethereum-1/0x215c7fa0e620fce99ed4891bccb7523388b010b8/) | PLSmootherHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xfd1ea1...a83de4`](./contracts/ethereum-1/0xfd1ea12d29b90630b265dbbc6af88266d1a83de4/) | PrimeBrokerFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0xb6931f...f2616d`](./contracts/plasma-9745/0xb6931f0a698f4f40cbe0d79045dc2ec223f2616d/) | RedeemController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6f53c1...3d86de`](./contracts/ethereum-1/0x6f53c12243d2fe281cfdfc63601f8b4e713d86de/) | ReservoirFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x862bf0...d48171`](./contracts/ethereum-1/0x862bf0f4d43bb892aeccd6e6c43f34549ad48171/) | ResolvOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x277fdf...0884c1`](./contracts/ethereum-1/0x277fdf6dc5c53c5c2828188da84b9593a50884c1/) | RWAEscrowFarm | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x11f6fa...6d4189`](./contracts/ethereum-1/0x11f6fab3f4d8635880c3e80cbae8aef8136d4189/) | RWAEscrowRateManager | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7e9aa4...92158d`](./contracts/ethereum-1/0x7e9aa426abc2d9006e8c9881754baa00a392158d/) | sGHOFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xeb32a3...6b6fd7`](./contracts/ethereum-1/0xeb32a309405c72253d5db9ef28310a8ff56b6fd7/) | SwapFarmV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x75381e...ac568e`](./contracts/ethereum-1/0x75381e9bc6b908a2e9bc31a535fc48ceceac568e/) | SwapFarmV2WithMaturity | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa90c9b...79cb00`](./contracts/ethereum-1/0xa90c9bae9b1a41ced9639a652ba4162a2079cb00/) | TestOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0x0c206b...8927a3`](./contracts/plasma-9745/0x0c206b695d65aef7381a03352acf9fe2f48927a3/) | Timelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4f0122...339dfe`](./contracts/ethereum-1/0x4f0122d43ab4893d5977fb0358b73cc178339dfe/) | UnstakeAndRedeemHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7092a4...b3dfcc`](./contracts/ethereum-1/0x7092a43ae5407666c78dbea657a1891f42b3dfcc/) | UnwindingModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9e8b92...aea967`](./contracts/ethereum-1/0x9e8b926a0eb276eb380fb8282ea20c2a2faea967/) | YieldSharing | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0x133090...986c9c`](./contracts/plasma-9745/0x1330902050db4edac0d9d8ca33fdab5dbe986c9c/) | YieldSharingV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0d5dbf...1407e5`](./contracts/ethereum-1/0x0d5dbf208a9a7540018d204a9a0ad08a091407e5/) | YieldSharingV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 91 |
+| native | 0 |
 | upstream | 1 |
-| standard_library | 5 |
-| needs_review | 17 |
+| standard_library | 0 |
+| needs_review | 122 |
 
 ## Scope Matching Notes
 

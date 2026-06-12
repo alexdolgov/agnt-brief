@@ -1,14 +1,15 @@
 # infinifi — Contract Index
 
-114 unique implementations across 3 chains · 204 deployments · 0 audited · 69 unaudited · 45 unverified
+123 unique implementations across 3 chains · 214 deployments · 0 audited · 72 unaudited · 51 unverified
 
-## adapter (3)
+## adapter (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [InfiniFiOFTAdapter (2 deployments)](./ethereum-1/0x5f2106bb2a5aba6a783dbf29c8d3b09c175bc3c0/) | ethereum | 2 deployments: ethereum [`0x5f2106...5bc3c0`](./ethereum-1/0x5f2106bb2a5aba6a783dbf29c8d3b09c175bc3c0/); ethereum `0xdd1cb2...cb3005` | ⚠️ Unaudited | Verified |
 | [InfiniFiReceiptTokenSYAdapter](./plasma-9745/0xf8b24d22153d86af79681e949ec2efaf75120600/) | plasma | [`0xf8b24d...120600`](./plasma-9745/0xf8b24d22153d86af79681e949ec2efaf75120600/) | ⚠️ Unaudited | Verified |
 | [ManualRebalancer](./ethereum-1/0x160300d5c1ea377b823127d2d6668d43dd5c1d8a/) | ethereum | [`0x160300...5c1d8a`](./ethereum-1/0x160300d5c1ea377b823127d2d6668d43dd5c1d8a/) | ⚠️ Unaudited | Verified |
+| [MetaAggregationRouterV2](./ethereum-1/0x6131b5fae19ea4f9d964eac0408e4408b66337b5/) | ethereum | [`0x6131b5...6337b5`](./ethereum-1/0x6131b5fae19ea4f9d964eac0408e4408b66337b5/) | ⚠️ Unaudited | Verified |
 
 ## core_logic (5)
 
@@ -45,7 +46,7 @@
 | [OracleFactory](./ethereum-1/0xa2b300c5d0e9250f646b20ec924efad36d19ed91/) | ethereum | [`0xa2b300...19ed91`](./ethereum-1/0xa2b300c5d0e9250f646b20ec924efad36d19ed91/) | ⚠️ Unaudited | Verified |
 | [PendlePYLpOracle](./ethereum-1/0x9a9fa8338dd5e5b2188006f1cd2ef26d921650c2/) | ethereum | [`0x9a9fa8...1650c2`](./ethereum-1/0x9a9fa8338dd5e5b2188006f1cd2ef26d921650c2/) | ⚠️ Unaudited | Verified |
 | [ResolvOracle](./ethereum-1/0x862bf0f4d43bb892aeccd6e6c43f34549ad48171/) | ethereum | [`0x862bf0...d48171`](./ethereum-1/0x862bf0f4d43bb892aeccd6e6c43f34549ad48171/) | ⚠️ Unaudited | Verified |
-| [RWAEscrowFarm (4 deployments)](./ethereum-1/0x277fdf6dc5c53c5c2828188da84b9593a50884c1/) | ethereum | 4 deployments: ethereum [`0x277fdf...0884c1`](./ethereum-1/0x277fdf6dc5c53c5c2828188da84b9593a50884c1/); ethereum `0x75b4d3...ffad5f`; ethereum `0x9e5efc...451852`; ethereum `0xe919c6...f181cf` | ⚠️ Unaudited | Verified |
+| [RWAEscrowFarm (5 deployments)](./ethereum-1/0x04d5521ac09f8823338e8163dd8badaee39f3271/) | ethereum | 5 deployments: ethereum [`0x04d552...9f3271`](./ethereum-1/0x04d5521ac09f8823338e8163dd8badaee39f3271/); ethereum `0x277fdf...0884c1`; ethereum `0x75b4d3...ffad5f`; ethereum `0x9e5efc...451852`; ethereum `0xe919c6...f181cf` | ⚠️ Unaudited | Verified |
 | [RWAEscrowRateManager](./ethereum-1/0x11f6fab3f4d8635880c3e80cbae8aef8136d4189/) | ethereum | [`0x11f6fa...6d4189`](./ethereum-1/0x11f6fab3f4d8635880c3e80cbae8aef8136d4189/) | ⚠️ Unaudited | Verified |
 
 ## periphery (2)
@@ -76,11 +77,12 @@
 | [ReceiptToken (2 deployments)](./ethereum-1/0x48f9e38f3070ad8945dfeae3fa70987722e3d89c/) | ethereum | 2 deployments: ethereum [`0x48f9e3...e3d89c`](./ethereum-1/0x48f9e38f3070ad8945dfeae3fa70987722e3d89c/); plasma `0x626c23...134d54` | ⚠️ Unaudited | Verified |
 | [StakedToken (2 deployments)](./ethereum-1/0xdbdc1ef57537e34680b898e1febd3d68c7389bcb/) | ethereum | 2 deployments: ethereum [`0xdbdc1e...389bcb`](./ethereum-1/0xdbdc1ef57537e34680b898e1febd3d68c7389bcb/); plasma `0xe335ab...c39afd` | ⚠️ Unaudited | Verified |
 
-## unknown (80)
+## unknown (88)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [Accounting (2 deployments)](./ethereum-1/0x7a5c5dba4fbd0e1e1a2ecdbe752fae55f6e842b3/) | ethereum | 2 deployments: ethereum [`0x7a5c5d...e842b3`](./ethereum-1/0x7a5c5dba4fbd0e1e1a2ecdbe752fae55f6e842b3/); plasma `0xdeb028...ce765f` | ⚠️ Unaudited | Verified |
+| [ActionAddRemoveLiqV3](./ethereum-1/0x888888888889758f76e7103c6cbf23abbf58f946/) | ethereum | [`0x888888...58f946`](./ethereum-1/0x888888888889758f76e7103c6cbf23abbf58f946/) | ⚠️ Unaudited | Verified |
 | [AfterMintHook (2 deployments)](./plasma-9745/0x1b286d4c12c9f7cc8a49836bd88d33ae804de53d/) | plasma | 2 deployments: ethereum `0xa5e274...4797a8`; plasma [`0x1b286d...4de53d`](./plasma-9745/0x1b286d4c12c9f7cc8a49836bd88d33ae804de53d/) | ⚠️ Unaudited | Verified |
 | [AllocationVoting (2 deployments)](./plasma-9745/0x13dd8034601ae91d1abcef4632083474fb043bb6/) | plasma | 2 deployments: ethereum `0x49fa67...0ff853`; plasma [`0x13dd80...043bb6`](./plasma-9745/0x13dd8034601ae91d1abcef4632083474fb043bb6/) | ⚠️ Unaudited | Verified |
 | [AssetsChecker](./ethereum-1/0x16a139da0405eb9777ade4f5f0cc2416e5cd8619/) | ethereum | [`0x16a139...cd8619`](./ethereum-1/0x16a139da0405eb9777ade4f5f0cc2416e5cd8619/) | ⚠️ Unaudited | Verified |
@@ -92,6 +94,7 @@
 | [ERC4626FarmWithMaturity](./ethereum-1/0x76d2e84009dae457f8667d823c7c96e9a7c35b78/) | ethereum | [`0x76d2e8...c35b78`](./ethereum-1/0x76d2e84009dae457f8667d823c7c96e9a7c35b78/) | ⚠️ Unaudited | Verified |
 | [FxSaveFarm](./ethereum-1/0xc9c06c49ed83d12bca88bed999d4920f049beabc/) | ethereum | [`0xc9c06c...9beabc`](./ethereum-1/0xc9c06c49ed83d12bca88bed999d4920f049beabc/) | ⚠️ Unaudited | Verified |
 | [GauntletAlphaFarm](./ethereum-1/0x2f59b7ee5aa0f7834b4526a015bc506a4c608c25/) | ethereum | [`0x2f59b7...608c25`](./ethereum-1/0x2f59b7ee5aa0f7834b4526a015bc506a4c608c25/) | ⚠️ Unaudited | Verified |
+| [GPv2Settlement](./ethereum-1/0x9008d19f58aabd9ed0d60971565aa8510560ab41/) | ethereum | [`0x9008d1...60ab41`](./ethereum-1/0x9008d19f58aabd9ed0d60971565aa8510560ab41/) | ⚠️ Unaudited | Verified |
 | [InfiniFiCore (3 deployments)](./plasma-9745/0x160300d5c1ea377b823127d2d6668d43dd5c1d8a/) | plasma | 3 deployments: ethereum `0xf6d487...d25490`; plasma [`0x160300...5c1d8a`](./plasma-9745/0x160300d5c1ea377b823127d2d6668d43dd5c1d8a/); plasma `0x4b174a...327c32` | ⚠️ Unaudited | Verified |
 | [InfiniFiGatewayV1](./ethereum-1/0x7954d563cbd9ee121a77805bce5fe3c44f296d33/) | ethereum | [`0x7954d5...296d33`](./ethereum-1/0x7954d563cbd9ee121a77805bce5fe3c44f296d33/) | ⚠️ Unaudited | Verified |
 | [InfiniFiGatewayV2](./ethereum-1/0xd04b37f673c42baa46923fe74a830bae721fb41f/) | ethereum | [`0xd04b37...1fb41f`](./ethereum-1/0xd04b37f673c42baa46923fe74a830bae721fb41f/) | ⚠️ Unaudited | Verified |
@@ -111,6 +114,12 @@
 | [SwapFarmV2](./ethereum-1/0xeb32a309405c72253d5db9ef28310a8ff56b6fd7/) | ethereum | [`0xeb32a3...6b6fd7`](./ethereum-1/0xeb32a309405c72253d5db9ef28310a8ff56b6fd7/) | ⚠️ Unaudited | Verified |
 | [SwapFarmV2WithMaturity (3 deployments)](./ethereum-1/0x75381e9bc6b908a2e9bc31a535fc48ceceac568e/) | ethereum | 3 deployments: ethereum [`0x75381e...ac568e`](./ethereum-1/0x75381e9bc6b908a2e9bc31a535fc48ceceac568e/); ethereum `0x84ff7e...3fe4ee`; ethereum `0xe945de...751ea4` | ⚠️ Unaudited | Verified |
 | [TestOFT](./ethereum-1/0xa90c9bae9b1a41ced9639a652ba4162a2079cb00/) | ethereum | [`0xa90c9b...79cb00`](./ethereum-1/0xa90c9bae9b1a41ced9639a652ba4162a2079cb00/) | ⚠️ Unaudited | Verified |
+| UnnamedContract | ethereum | `0x1d5702...4a37fd` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0x555b6e...7a1fd1` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0xcaa00a...880597` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0xcde3eb...a5eac2` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0xd1b474...40abf4` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0xf294ad...c136fc` | ❓ Unverified | Unverified |
 | UnnamedContract | plasma | `0x05266d...59863c` | ❓ Unverified | Unverified |
 | UnnamedContract | plasma | `0x0a99b6...11ac04` | ❓ Unverified | Unverified |
 | UnnamedContract | plasma | `0x0afcd2...1430c1` | ❓ Unverified | Unverified |

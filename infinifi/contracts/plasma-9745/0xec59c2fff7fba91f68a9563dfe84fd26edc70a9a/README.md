@@ -5,7 +5,7 @@
 | Chain | plasma (9745) |
 | Address | `0xec59c2fff7fba91f68a9563dfe84fd26edc70a9a` |
 | Role | proxy |
-| Origin | standard_library |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (plasma [`0xec59c2fff7fba91f68a9563dfe84fd26edc70a9a`](../0xec59c2fff7fba91f68a9563dfe84fd26edc70a9a/)) |

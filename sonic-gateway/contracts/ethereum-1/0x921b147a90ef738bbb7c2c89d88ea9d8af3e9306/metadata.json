@@ -1,0 +1,18 @@
+{
+  "address": "0x921b147a90ef738bbb7c2c89d88ea9d8af3e9306",
+  "chain_id": 1,
+  "contract_name": "MPTProofVerifier",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T16:09:36.012Z"
+}

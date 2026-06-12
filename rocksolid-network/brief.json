@@ -1,41 +1,41 @@
 {
   "schema_version": "2.0",
   "project_key": "rocksolid-network",
-  "generated_at": "2026-06-11T02:25:18.413Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-12T05:36:29.275Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-c31370-dba8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "rocksolid-network",
     "tier": 0,
     "peak_tvl": 29614457,
     "peak_date": "2026-04-22T00:00:00.000Z",
-    "tvl_30d_ago": 29580100,
-    "tvl_90d_ago": 21046059,
-    "tvl_current": 24930107,
+    "tvl_30d_ago": 27048565,
+    "tvl_90d_ago": 22035645,
+    "tvl_current": 19910206,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 17973089,
-    "change_30d_pct": -15.72000432723351,
-    "change_90d_pct": 18.454989601616152,
-    "days_since_peak": 30,
+    "tvl_180d_ago": 22869965,
+    "change_30d_pct": -26.39089726201741,
+    "change_90d_pct": -9.645458528670252,
+    "days_since_peak": 51,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 15.817781160059763
+    "drop_from_peak_pct": 32.76862716071411
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 3,
-    "unique_implementations": 1,
-    "total_deployments": 3,
+    "total_contracts": 2,
+    "total_addresses": 5,
+    "unique_implementations": 2,
+    "total_deployments": 5,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 24218317.84757,
+    "dl_tvl_usd": 19763159.08277,
     "tvl_usd": 24958194.472221095,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -59,13 +59,13 @@
   },
   "topography": {
     "project_purpose": "RockSolid Network is an actively managed liquid DeFi vault platform that offers single-click deposits into vault strategies and supports institutional, white-label, and tailored vault solutions. Its vault products may use ERC-4626-style tokenized vault standards where verified, but should not be described only as passive yield vaults.",
-    "relationship_narrative": null,
+    "relationship_narrative": "All vaults share the same implementation contract (Vault) and are deployed by a single deployer, indicating a unified infrastructure with no separate product families.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 2,
     "has_non_token_contracts": true,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -78,7 +78,7 @@
       "address": "0x7a12d4b719f5aa479ecd60defed909fb2a37e428",
       "name": "Vault",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Grow Passively",
       "tvl_usd": 24958194.472221095,
@@ -111,6 +111,46 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 334074.138664,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe50554ec802375c9c3f9c087a8a7bb8c26d3dedf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x716f0c5453099690b54e7b72d9491a72b8df445e",
+      "name": "CombinedRateProvider",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CombinedRateProvider",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x716f0c5453099690b54e7b72d9491a72b8df445e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -167,23 +207,12 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x7a12d4b719f5aa479ecd60defed909fb2a37e428",
-      "name": "Vault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 24958194.472221095,
-      "risk_note": "Verified native implementation with $24,958,194.47 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},

@@ -4,32 +4,31 @@
 
 - Project: RockSolid Network (`rocksolid-network`)
 - Website: [https://rocksolid.network/](https://rocksolid.network/)
-- Lifecycle: active (Tier 0, 15.8% below peak)
-- Generated: 2026-06-11T02:25:18.413Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Lifecycle: active (Tier 0, 32.8% below peak)
+- Generated: 2026-06-12T05:36:29.275Z
+- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
 - Chains: ethereum
-- Contract surface: 1 unique implementations (3 raw deployments)
-- DeFi Llama TVL: $24,218,317.85
+- Contract surface: 2 unique implementations (5 raw deployments)
+- DeFi Llama TVL: $19,763,159.08
 - On-chain TVL (included contracts): $24,958,194.47
 - TVL by chain: Ethereum $24,958,194.47
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 RockSolid Network is an actively managed liquid DeFi vault platform that offers single-click deposits into vault strategies and supports institutional, white-label, and tailored vault solutions. Its vault products may use ERC-4626-style tokenized vault standards where verified, but should not be described only as passive yield vaults.
 
+### Architecture
+
+All vaults share the same implementation contract (Vault) and are deployed by a single deployer, indicating a unified infrastructure with no separate product families.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 3
+- Unique implementations: 2
+- Raw deployments: 5
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $24,958,194.47
@@ -47,11 +46,12 @@ RockSolid Network is an actively managed liquid DeFi vault platform that offers 
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| Vault | core_logic | ethereum | 3 deployments: ethereum [`0x7a12d4...37e428`](./contracts/ethereum-1/0x7a12d4b719f5aa479ecd60defed909fb2a37e428/); ethereum `0x936fac...d81bc7`; ethereum `0xba7109...6d86ad` | ⚠️ Unaudited |
+| Vault | core_logic | ethereum | 4 deployments: ethereum [`0x7a12d4...37e428`](./contracts/ethereum-1/0x7a12d4b719f5aa479ecd60defed909fb2a37e428/); ethereum `0x936fac...d81bc7`; ethereum `0xba7109...6d86ad`; ethereum `0xe50554...d3dedf` | ⚠️ Unaudited |
+| CombinedRateProvider | unknown | ethereum | [`0x716f0c...df445e`](./contracts/ethereum-1/0x716f0c5453099690b54e7b72d9491a72b8df445e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,18 +82,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x7a12d4...37e428`](./contracts/ethereum-1/0x7a12d4b719f5aa479ecd60defed909fb2a37e428/) | Vault | core_logic | $24,958,194.47 | Verified native implementation with $24,958,194.47 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

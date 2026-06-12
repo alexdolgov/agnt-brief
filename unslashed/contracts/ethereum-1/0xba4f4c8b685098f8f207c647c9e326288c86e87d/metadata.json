@@ -1,0 +1,18 @@
+{
+  "address": "0xba4f4c8b685098f8f207c647c9e326288c86e87d",
+  "chain_id": 1,
+  "contract_name": "ComptrollerProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": null,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0x03f7f3b8da875881206655d8099b9dacf721f1ef",
+  "fetched_at": "2026-06-12T05:35:30.811Z"
+}

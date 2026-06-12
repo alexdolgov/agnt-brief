@@ -113,7 +113,7 @@ Each project directory contains:
 | [maverick-protocol](./maverick-protocol/brief.md) | $2.20M | 6 | 93 | 15/93 (16%) | 35.3% | 17.6% (Code4rena) | 4 | stale | ⚠️ declining | $26.76M |
 | [aevo](./aevo/brief.md) | $20.28M | 4 | 256 | 88/256 (34%) | 11.8% | 0.0% (-) | 4 | stale | ✅ active | $26.14M |
 | [synapse](./synapse/brief.md) | $16.68M | 20 | 824 | 196/824 (24%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $25.57M |
-| [rocksolid-network](./rocksolid-network/brief.md) | $24.22M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $24.96M |
+| [rocksolid-network](./rocksolid-network/brief.md) | $19.76M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $24.96M |
 | [keep-network](./keep-network/brief.md) | $1.46M | 5 | 225 | 125/225 (56%) | 7.9% | 3.2% (ChainSecurity, ConsenSys Diligence) | 6 | fresh | ⚠️ declining | $24.66M |
 | [flock.io](./flock.io/brief.md) | $9.77M | base | 15 | 14/15 (93%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $24.37M |
 | [iq](./iq/brief.md) | $5.04M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $23.85M |
@@ -186,7 +186,7 @@ Each project directory contains:
 | [swaap](./swaap/brief.md) | $4.41M | 11 | 128 | 6/128 (5%) | 25.0% | 25.0% (ChainSecurity) | 3 | stale | ⚠️ declining | $3.81M |
 | [near-intents](./near-intents/brief.md) | $79.03M | gnosis | 7 | 6/7 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.72M |
 | [firebot](./firebot/brief.md) | $2.26M | polygon | 29 | 21/29 (72%) | 4.8% | 0.0% (-) | 1 | stale | ❓ unknown | $3.67M |
-| [syntropia](./syntropia/brief.md) | $3.66M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.66M |
+| [syntropia](./syntropia/brief.md) | $4.17M | ethereum | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.66M |
 | [dforce](./dforce/brief.md) | $12.55M | 7 | 449 | 98/449 (22%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $3.61M |
 | [xsy](./xsy/brief.md) | $20.97M | avalanche | 15 | 4/15 (27%) | 25.0% | 0.0% (-) | 1 | aging | ✅ active | $3.60M |
 | [stakingverse](./stakingverse/brief.md) | $4.03M | ethereum, lukso | 3 | 1/3 (33%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $3.54M |
@@ -196,7 +196,8 @@ Each project directory contains:
 | [open-ticketing-ecosystem](./open-ticketing-ecosystem/brief.md) | $1.34M | base, ethereum, polygon | 24 | 24/24 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.34M |
 | [beradrome](./beradrome/brief.md) | $7.00M | berachain | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.29M |
 | [steer-protocol](./steer-protocol/brief.md) | $17.07M | arbitrum | 43 | 31/43 (72%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.26M |
-| [unslashed](./unslashed/brief.md) | $3.07M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.13M |
+| [resupply](./resupply/brief.md) | $38.67M | ethereum | 41 | 41/41 (100%) | 2.4% | 2.4% (ChainSecurity) | 3 | fresh | ✅ active | $3.18M |
+| [unslashed](./unslashed/brief.md) | $2.45M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.13M |
 | [liquidloans](./liquidloans/brief.md) | $3.92M | base | 20 | 20/20 (100%) | 30.0% | 0.0% (-) | 2 | fresh | ✅ active | $3.04M |
 | [parallel-protocol](./parallel-protocol/brief.md) | $3.90M | 19 | 38 | 26/38 (68%) | 3.8% | 0.0% (-) | 2 | aging | ✅ active | $2.98M |
 | [gro](./gro/brief.md) | $4.66M | ethereum | 124 | 36/124 (29%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.93M |
@@ -228,6 +229,7 @@ Each project directory contains:
 | [templar-dao](./templar-dao/brief.md) | $2.23M | bsc | 40 | 25/40 (63%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $1.55M |
 | [zircuit-finance](./zircuit-finance/brief.md) | $1.51M | base, ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.51M |
 | [badger-dao](./badger-dao/brief.md) | $9.79M | 4 | 27 | 24/27 (89%) | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | $1.51M |
+| [easedefi.org](./easedefi.org/brief.md) | $3.61M | ethereum | 9 | 9/9 (100%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $1.48M |
 | [seer](./seer/brief.md) | $1.54M | ethereum, gnosis | 179 | 34/179 (19%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.48M |
 | [predict-fun](./predict-fun/brief.md) | $14.59M | blast, bsc | 40 | 25/40 (63%) | 8.0% | 8.0% (Cyfrin) | 2 | fresh | ❓ unknown | $1.47M |
 | [sashimiswap](./sashimiswap/brief.md) | $4.99M | ethereum, heco | 61 | 31/61 (51%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $1.44M |
@@ -437,7 +439,6 @@ Each project directory contains:
 | [dooar](./dooar/brief.md) | $5.11M | bsc | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [dxsale](./dxsale/brief.md) | $17.80M | 11 | 352 | 9/352 (3%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [dyorswap](./dyorswap/brief.md) | $2.24M | 7 | 93 | 5/93 (5%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
-| [easedefi.org](./easedefi.org/brief.md) | $4.37M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [egas-swap](./egas-swap/brief.md) | $18.60M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [elfi-protocol](./elfi-protocol/brief.md) | $3.44M | arbitrum, base | 2406 | 88/2406 (4%) | 29.5% | 29.5% (Sherlock) | 1 | aging | ⚠️ declining | - |
 | [endur](./endur/brief.md) | $9.42M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
@@ -618,7 +619,6 @@ Each project directory contains:
 | [rank-trading](./rank-trading/brief.md) | $2.33M | bsc | 13 | 10/13 (77%) | 30.0% | 0.0% (-) | 1 | aging | ✅ active | - |
 | [reddex](./reddex/brief.md) | $4.19M | ethereum | 5 | 4/5 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [reflexer](./reflexer/brief.md) | $2.32M | ethereum | 64 | 22/64 (34%) | 40.9% | 0.0% (-) | 3 | stale | ⚠️ declining | - |
-| [resupply](./resupply/brief.md) | $41.84M | ethereum | 1 | 1/1 (100%) | 100.0% | 100.0% (ChainSecurity) | 3 | fresh | ✅ active | - |
 | [revault](./revault/brief.md) | $1.96M | bsc | 75 | 20/75 (27%) | 45.0% | 0.0% (-) | 1 | stale | ⚠️ declining | - |
 | [rex-staking](./rex-staking/brief.md) | $2.01M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [rho](./rho/brief.md) | $2.47M | ethereum | 31 | 1/31 (3%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
@@ -725,5 +725,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-12T05:34:38.684Z_
+_Generated: 2026-06-12T05:40:52.334Z_
 _Projects: 713_

@@ -1,0 +1,17 @@
+{
+  "address": "0x0950000465476f4470e74aed93e7dd414012bb7d",
+  "chain_id": 1,
+  "contract_name": "BorrowLimitController",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "000000000000000000000000c07e000044f95655c11fda4cd37f70a94d7e0a7d",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T05:40:15.438Z"
+}

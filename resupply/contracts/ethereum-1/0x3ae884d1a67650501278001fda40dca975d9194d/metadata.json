@@ -1,0 +1,18 @@
+{
+  "address": "0x3ae884d1a67650501278001fda40dca975d9194d",
+  "chain_id": 1,
+  "contract_name": "SwapperOdos",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T05:40:16.894Z"
+}

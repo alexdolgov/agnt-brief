@@ -1,0 +1,18 @@
+{
+  "address": "0xea5edef17c4fce9c120790f3c54d6e04823de587",
+  "chain_id": 1,
+  "contract_name": "GovernorBravoDelegator",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "BSD-3-Clause, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": "0xd135c44ca6b6722633ab97d15a5222fe38546ecc",
+  "fetched_at": "2026-06-12T05:36:36.833Z"
+}

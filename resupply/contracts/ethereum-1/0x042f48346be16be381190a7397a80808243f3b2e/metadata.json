@@ -1,0 +1,17 @@
+{
+  "address": "0x042f48346be16be381190a7397a80808243f3b2e",
+  "chain_id": 1,
+  "contract_name": "Swapper",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "000000000000000000000000c07e000044f95655c11fda4cd37f70a94d7e0a7d00000000000000000000000010101010e0c3171d894b71b3400668af311e7d94",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T05:40:15.233Z"
+}

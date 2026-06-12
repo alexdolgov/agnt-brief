@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "unslashed",
-  "generated_at": "2026-06-11T03:51:59.102Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
+  "generated_at": "2026-06-12T05:35:29.120Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-c31370-dba8",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "unslashed",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 98.16350506122893
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 2,
+    "total_addresses": 3,
+    "unique_implementations": 2,
+    "total_deployments": 3,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3066570.36258,
+    "dl_tvl_usd": 2445762.04319,
     "tvl_usd": 3126687.1465069735,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -59,13 +59,13 @@
   },
   "topography": {
     "project_purpose": "Unslashed is a decentralized insurance protocol that allows users to provide underwriting capital and earn premiums by depositing assets into vaults. Unsupported or third-party components such as MasterChef rewards, Uniswap pairs, BAC pools, BlackPoolToken, ArcProxy, and other non-surface tokens or pools should not be described as part of the Unslashed contract surface unless independently verified as Unslashed-owned.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The Unslashed family centers on bVault contracts that hold underwriting capital, while BAC pools provide stablecoin risk coverage. Tokens like BlackPoolToken and ArcProxy facilitate governance and staking, with MasterChef distributing rewards, and Uniswap pairs providing liquidity for these tokens.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 2,
     "has_non_token_contracts": true,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -78,7 +78,7 @@
       "address": "0x86fb84e92c1eedc245987d28a42e123202bd6701",
       "name": "VaultLib",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Unslashed",
       "tvl_usd": 3126687.1465069735,
@@ -94,6 +94,46 @@
           "verified_by_bytecode": false,
           "tvl_usd": 3126687.1465069735,
           "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x891dee0483ebaa922e274ddd2ebbaa2d33468a38",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xba4f4c8b685098f8f207c647c9e326288c86e87d",
+      "name": "ComptrollerLib",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x03f7f3b8da875881206655d8099b9dacf721f1ef",
+      "impl_name": "ComptrollerLib",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xba4f4c8b685098f8f207c647c9e326288c86e87d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -106,23 +146,12 @@
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x86fb84e92c1eedc245987d28a42e123202bd6701",
-      "name": "VaultLib",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 3126687.1465069735,
-      "risk_note": "Verified native implementation with $3,126,687.15 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},

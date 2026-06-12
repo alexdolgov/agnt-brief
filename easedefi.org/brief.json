@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "easedefi.org",
-  "generated_at": "2026-06-10T22:59:58.078Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
+  "generated_at": "2026-06-12T05:36:34.356Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-c31370-dba8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "easedefi.org",
@@ -22,48 +22,50 @@
     "drop_from_peak_pct": 66.30668190196238
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 9,
+    "total_addresses": 13,
+    "unique_implementations": 9,
+    "total_deployments": 13,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 9,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 9,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 3,
+    "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4371974.68545,
-    "tvl_usd": 4371974.68545,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "dl_tvl_usd": 3607399.17525,
+    "tvl_usd": 1479521.3640365573,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 1479521.36
+    },
+    "asd_usd": 1479521.3640365573,
     "website_url": "https://easedefi.org",
     "chains": [
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022-08",
+    "latest_audit_date": "2022-02",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 3,
+      "stale": 1,
       "unknown": 0
     }
   },
   "topography": {
     "project_purpose": "EaseDeFi is a DeFi coverage protocol on Ethereum offering multiple coverage and yield-related products, including stNXM underwriting, premium-free Uninsurance mutual coverage without traditional premium purchases, and in-development cross-asset yield vaults. The currently recorded contract surface covers only the OwnedUpgradeabilityProxy at 0x1337def1fc06783d4b03cb8c1bf3ebf7d0593fc4 with implementation 0xc38bfa29f70b3f0f40784d7861f1665e47f37f2e, and should not be treated as representing the entire current Ease protocol unless additional product contract addresses are verified.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The protocol consists of a single product family centered around the arNXMVault, which is deployed behind an OwnedUpgradeabilityProxy for upgradeability. All insurance logic, including premium collection and claim payouts, is handled within this vault contract.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 9,
     "has_non_token_contracts": true,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -73,10 +75,72 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xea5edef17986eabb7333bacdc9e2f574c7fe6935",
+      "name": "TokenSwap",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 1183264.8550991586,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TokenSwap",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xea5edef17986eabb7333bacdc9e2f574c7fe6935",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1183264.8550991586,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xea5edef1edb2f47b9637c029a6ac3b80a7ae1550",
+      "name": "GvToken",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 296256.5089373987,
+      "is_proxy": true,
+      "impl_address": "0x871d2c5678b0866bfac567ff8bdc71c8d4e57a03",
+      "impl_name": "GvToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xea5edef1edb2f47b9637c029a6ac3b80a7ae1550",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 296256.5089373987,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x1337def1fc06783d4b03cb8c1bf3ebf7d0593fc4",
       "name": "arNXMVault",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Easedefi.org",
       "tvl_usd": null,
@@ -88,6 +152,228 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x1337def1fc06783d4b03cb8c1bf3ebf7d0593fc4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc38bfa29f70b3f0f40784d7861f1665e47f37f2e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xea5edef17c9be57228389962ba50b98397f1e28c",
+      "name": "BribePot",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xae4dcdf18d686bdfb1e40ebe6b0ab27dd0c78c99",
+      "impl_name": "BribePot",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xea5edef17c9be57228389962ba50b98397f1e28c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xea5edef17c4fce9c120790f3c54d6e04823de587",
+      "name": "GovernorBravoDelegate",
+      "role": "governance",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd135c44ca6b6722633ab97d15a5222fe38546ecc",
+      "impl_name": "GovernorBravoDelegate",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xea5edef17c4fce9c120790f3c54d6e04823de587",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xea5edef1a7106d9e2024240299df3d00c7d94767",
+      "name": "RcaController",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RcaController",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xea5edef1a7106d9e2024240299df3d00c7d94767",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xea5edef1169713c425ce57cf5c154d732b1b7af6",
+      "name": "RcaShieldBadger",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RcaShieldBadger",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xea5edef1169713c425ce57cf5c154d732b1b7af6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xea5edef169c8834ea5fa77a5323ac5eae1347bc8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xea5edef1eca9626f60af75efe70f6b1b0145218c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5b423e07dfba087d72840851f63a51cbe1967cda",
+      "name": "StNXM",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xaaf02d93686107ce2793b90f33c86bda2ea9e5f3",
+      "impl_name": "StNXM",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5b423e07dfba087d72840851f63a51cbe1967cda",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xaaf02d93686107ce2793b90f33c86bda2ea9e5f3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xea5edef1401e8c312c797c27a9842e03eb0e557a",
+      "name": "Timelock",
+      "role": "governance",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Timelock",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xea5edef1401e8c312c797c27a9842e03eb0e557a",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -123,68 +409,15 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2585,
-      "audit_key": "audit-2585",
-      "report_name": "Ease_21062022_SCAudit_Report2 2.pdf",
-      "report_url": "https://github.com/EaseDeFi/gvToken/blob/main/audits/Ease_21062022_SCAudit_Report2%202.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-08",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2586,
-      "audit_key": "audit-2586",
-      "report_name": "Ease_gvToken_audit.pdf",
-      "report_url": "https://github.com/EaseDeFi/gvToken/blob/main/audits/Ease_gvToken_audit.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-08",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1337def1fc06783d4b03cb8c1bf3ebf7d0593fc4",
-      "name": "arNXMVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 9
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -195,14 +428,6 @@
       {
         "audit_id": 2584,
         "report_name": "Dedaub_RCA_Audit.pdf"
-      },
-      {
-        "audit_id": 2585,
-        "report_name": "Ease_21062022_SCAudit_Report2 2.pdf"
-      },
-      {
-        "audit_id": 2586,
-        "report_name": "Ease_gvToken_audit.pdf"
       }
     ],
     "inherited_remapped_matches": []

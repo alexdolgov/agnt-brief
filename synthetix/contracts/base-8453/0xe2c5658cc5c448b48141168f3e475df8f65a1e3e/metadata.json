@@ -1,0 +1,18 @@
+{
+  "address": "0xe2c5658cc5c448b48141168f3e475df8f65a1e3e",
+  "chain_id": 8453,
+  "contract_name": "TrustedMulticallForwarder",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T11:00:16.499Z"
+}

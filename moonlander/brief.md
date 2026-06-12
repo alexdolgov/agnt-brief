@@ -5,11 +5,11 @@
 - Project: Moonlander (`moonlander`)
 - Website: [https://moonlander.trade/](https://moonlander.trade/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T01:10:46.507Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
+- Generated: 2026-06-12T10:57:05.717Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-b7d4
 - Chains: cronos
 - Contract surface: 11 unique implementations (11 raw deployments)
-- DeFi Llama TVL: $31,411,812.16
+- DeFi Llama TVL: $30,027,993.27
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -95,10 +95,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 11 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 11 |
 
 ## Scope Matching Notes
 

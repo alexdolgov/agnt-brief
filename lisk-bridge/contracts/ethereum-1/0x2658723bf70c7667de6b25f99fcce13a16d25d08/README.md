@@ -5,7 +5,7 @@
 | Chain | ethereum (1) |
 | Address | `0x2658723bf70c7667de6b25f99fcce13a16d25d08` |
 | Role | bridge_template |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (ethereum [`0x2658723bf70c7667de6b25f99fcce13a16d25d08`](../0x2658723bf70c7667de6b25f99fcce13a16d25d08/)) |

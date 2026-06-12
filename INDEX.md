@@ -333,7 +333,7 @@
 | [liminal](./liminal/) | $24.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | active | 4 | 20 | 2026-06-11 |
-| [lisk-bridge](./lisk-bridge/) | $50.9M | 0.0% | $50.9M | active | 0 | 96 | 2026-06-11 |
+| [lisk-bridge](./lisk-bridge/) | $50.9M | 0.0% | $50.9M | active | 0 | 102 | 2026-06-12 |
 | [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | declining | 0 | 93 | 2026-06-11 |
 | [llamapay](./llamapay/) | $25.8M | 0.0% | ? | active | 1 | 19 | 2026-06-11 |
 | [lockon](./lockon/) | $1.0M | 56.3% | ? | active | 7 | 23 | 2026-06-11 |
@@ -380,7 +380,7 @@
 | [moneyonchain](./moneyonchain/) | $43.7M | 0.0% | ? | unknown | 12 | 0 | 2026-06-11 |
 | [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-06-11 |
 | [moola-market](./moola-market/) | $73.9K | 0.0% | $73.9K | declining | 1 | 53 | 2026-06-11 |
-| [moonlander](./moonlander/) | $31.4M | 0.0% | ? | active | 0 | 11 | 2026-06-11 |
+| [moonlander](./moonlander/) | $30.0M | 0.0% | ? | active | 0 | 11 | 2026-06-12 |
 | [more-markets](./more-markets/) | $11.5M | 0.0% | ? | declining | 0 | 21 | 2026-06-11 |
 | [morph-bridge](./morph-bridge/) | $15.7M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 18 | 47 | 2026-06-11 |
@@ -609,7 +609,7 @@
 | [synapse](./synapse/) | $25.6M | 0.0% | $25.6M | declining | 0 | 824 | 2026-06-11 |
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 23.3% | ? | active | 8 | 157 | 2026-06-11 |
 | [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 1 | 481 | 2026-06-11 |
-| [synthetix](./synthetix/) | $10.3M | 0.0% | $10.3M | active | 0 | 13 | 2026-06-11 |
+| [synthetix](./synthetix/) | $11.4M | 0.0% | $11.4M | active | 0 | 25 | 2026-06-12 |
 | [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 0 | 4 | 2026-06-12 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 8 | 2026-06-12 |
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-06-11 |
@@ -646,7 +646,7 @@
 | [truefi](./truefi/) | $15.4M | 37.5% | ? | declining | 24 | 8 | 2026-06-11 |
 | [trueo](./trueo/) | $4.0M | 0.0% | $4.0M | declining | 0 | 23 | 2026-06-11 |
 | [trufin-protocol](./trufin-protocol/) | $7.0M | 66.7% | ? | declining | 12 | 7 | 2026-06-10 |
-| [trust-wallet](./trust-wallet/) | $470.2M | 0.0% | $470.2M | active | 0 | 5 | 2026-06-11 |
+| [trust-wallet](./trust-wallet/) | $470.2M | 0.0% | $470.2M | active | 0 | 14 | 2026-06-12 |
 | [tulipa-capital](./tulipa-capital/) | $56.2M | 0.0% | $56.2M | active | 0 | 6 | 2026-06-12 |
 | [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | declining | 3 | 516 | 2026-06-11 |
 | [twyne](./twyne/) | $985.7K | 3.8% | $985.7K | active | 6 | 59 | 2026-06-11 |

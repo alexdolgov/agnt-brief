@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "trust-wallet",
-  "generated_at": "2026-06-11T03:41:06.043Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
+  "generated_at": "2026-06-12T11:01:55.209Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-b7d4",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "trust-wallet",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 9,
-    "unique_implementations": 5,
-    "total_deployments": 9,
+    "total_contracts": 14,
+    "total_addresses": 26,
+    "unique_implementations": 14,
+    "total_deployments": 26,
     "audited_contracts": 0,
-    "unaudited_contracts": 3,
+    "unaudited_contracts": 12,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 3,
+    "contracts_verified_unaudited": 12,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 39041004,
-    "tvl_usd": 470218283.11077726,
+    "dl_tvl_usd": 32627506,
+    "tvl_usd": 470243807.056395,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "bsc": 470218283.11
+      "bsc": 470243807.06
     },
-    "asd_usd": 470218283.11077726,
+    "asd_usd": 470243807.056395,
     "website_url": "https://trustwallet.com/",
     "chains": [
       "bsc"
@@ -63,8 +63,8 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
-    "has_non_token_contracts": false,
+    "unique_implementations": 14,
+    "has_non_token_contracts": true,
     "is_skeletal": false
   },
   "fork_lineage": {
@@ -78,7 +78,7 @@
       "address": "0x4b0f1812e5df2a09796481ff14017e6005508003",
       "name": "TrustWalletToken",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Trust Wallet Wallet",
       "tvl_usd": 450719842.94320893,
@@ -109,7 +109,7 @@
       "address": "0x0e7dd56f7d2cadc066b992cec58253190f002c25",
       "name": "TokenLocker",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": 19498440.1675683,
@@ -159,7 +159,265 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x799a290f9cc4085a0ce5b42b5f2c30193a7a872b",
+      "name": "Token",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 25523.945617745936,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Token",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x799a290f9cc4085a0ce5b42b5f2c30193a7a872b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 25523.945617745936,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x1c6f6e2b226d99af2c34d875a03e055492914442",
+      "name": "RadiantMerklTokenWrapper",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 5.366668675059513e-21,
+      "is_proxy": true,
+      "impl_address": "0x954ec713a3915b504a6f288563e5218f597e1895",
+      "impl_name": "RadiantMerklTokenWrapper",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x1c6f6e2b226d99af2c34d875a03e055492914442",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 5.366668675059513e-21,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x954ec713a3915b504a6f288563e5218f597e1895",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xc3ef7ed4f97450ae8da2473068375788bdeb5c5c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe04db2ba949a9e65b4bf52b11a0f9f221cf5fd21",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xe9169817edbfe5fcf629ed8b3c2a34e2a50ec84c",
+      "name": "AgTokenSideChainMultiBridgeNameable",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AgTokenSideChainMultiBridgeNameable",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe9169817edbfe5fcf629ed8b3c2a34e2a50ec84c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xdc419cfe5454bf58001f131e98cf2065e11936a7",
+      "name": "bscSUNDOG",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "bscSUNDOG",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xdc419cfe5454bf58001f131e98cf2065e11936a7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x46a9e9434dac9baa1f95a5129f04aef6c8c57829",
+      "name": "DistributionCreator",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DistributionCreator",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x46a9e9434dac9baa1f95a5129f04aef6c8c57829",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x99fe8557a8f322525262720c52b7d57c56924012",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xc42b7a34cb37ee450cc8059b10d839e4753229d5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x04a7d169c5b14d2e29a3ba8b5071dda5e365c199",
+      "name": "Distributor",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Distributor",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x04a7d169c5b14d2e29a3ba8b5071dda5e365c199",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x4195faaba1cbad584fe2fec711d788cdb9a6a9a7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x44e3d3bba34e16a67c633daf86114284fc628819",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xa0e088fb02a8d5a71d337b88b7629b0413f53de4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 56,
@@ -167,8 +425,8 @@
       "address": "0x147f4163756db2eee9092bb848603a9e7054c52d",
       "name": "ERC1967Proxy",
       "role": "proxy",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -199,7 +457,100 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x1276d63baef24d316383be594b8f978a507932db",
+      "name": "PointToken",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PointToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x1276d63baef24d316383be594b8f978a507932db",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xc9dfd5c18f12a3ba6293001700810602efe0c45b",
+      "name": "PullTokenWrapperAllow",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PullTokenWrapperAllow",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xc9dfd5c18f12a3ba6293001700810602efe0c45b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xb5ecaa1a867feccd6d87604bc16a2b6b53d706bf",
+      "name": "SavingsNameable",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SavingsNameable",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb5ecaa1a867feccd6d87604bc16a2b6b53d706bf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 56,
@@ -266,33 +617,12 @@
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x4b0f1812e5df2a09796481ff14017e6005508003",
-      "name": "TrustWalletToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 450719842.94320893,
-      "risk_note": "Verified native implementation with $450,719,842.94 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x0e7dd56f7d2cadc066b992cec58253190f002c25",
-      "name": "TokenLocker",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 19498440.1675683,
-      "risk_note": "Verified native implementation with $19,498,440.17 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 2,
+    "native": 0,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 2
+    "standard_library": 0,
+    "needs_review": 14
   },
   "scope_matching_notes": {
     "match_method_counts": {},

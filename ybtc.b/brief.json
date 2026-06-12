@@ -1,69 +1,71 @@
 {
   "schema_version": "2.0",
   "project_key": "ybtc.b",
-  "generated_at": "2026-05-31T14:53:59.167Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-d7f7",
+  "generated_at": "2026-06-12T16:39:16.394Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-c7aee3-d3e0",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ybtc.b",
     "tier": 0,
     "peak_tvl": 382909385,
     "peak_date": "2025-08-14T00:00:00.000Z",
-    "tvl_30d_ago": 84439505,
-    "tvl_90d_ago": 85210798,
-    "tvl_current": 81363158,
+    "tvl_30d_ago": 88140562,
+    "tvl_90d_ago": 90799357,
+    "tvl_current": 70303417,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 114114144,
-    "change_30d_pct": -3.643255606484192,
-    "change_90d_pct": -4.515437116314765,
-    "days_since_peak": 289,
+    "tvl_180d_ago": 113174824,
+    "change_30d_pct": -20.23715823368587,
+    "change_90d_pct": -22.572780994473344,
+    "days_since_peak": 302,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 78.75132833320343
+    "drop_from_peak_pct": 81.63967252983366
   },
   "summary": {
-    "total_contracts": 12,
-    "total_addresses": 12,
-    "unique_implementations": 12,
-    "total_deployments": 12,
+    "total_contracts": 1,
+    "total_addresses": 5,
+    "unique_implementations": 1,
+    "total_deployments": 5,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 12,
+    "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 6,
+    "total_audits": 10,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 83925953.08234,
-    "tvl_usd": 83925953.08234,
+    "dl_tvl_usd": 69267722.85401,
+    "tvl_usd": 69267722.85401,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.bitlayer.org/",
     "chains": [
-      "bsc"
+      "avalanche",
+      "bsc",
+      "ethereum"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2020-01",
-    "audit_freshness": "stale",
+    "latest_audit_date": "2025-11",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
+      "fresh": 1,
       "aging": 0,
-      "stale": 4,
+      "stale": 7,
       "unknown": 2
     }
   },
   "topography": {
-    "project_purpose": null,
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 12,
-    "has_non_token_contracts": false,
-    "is_skeletal": false
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -73,22 +75,58 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x0000000000000000000000000000000000000000",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Get Contract Source Code for Verified Contract Source Codes ​",
+      "address": "0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335",
+      "name": "BridgedYBTCB",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
+      "is_proxy": true,
+      "impl_address": "0xcde9d6863d883c91d7181a80f591edfbf3b7341b",
+      "impl_name": "BridgedYBTCB",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf053a558e551276a36d9036670f6130e5415a308",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 56,
           "chain_name": "bsc",
-          "address": "0x0000000000000000000000000000000000000000",
-          "source_verified": false,
+          "address": "0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xcde9d6863d883c91d7181a80f591edfbf3b7341b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x786248b634b1ebc7b5fc809c74a1a212fc920d63",
+          "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
@@ -96,350 +134,9 @@
       ],
       "audits_covering": [],
       "is_audited": false,
-      "source_verified": false,
+      "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x360894a13ba1a3210667c828492db98dca3e2076",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Get Contract Source Code for Verified Contract Source Codes ​",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x360894a13ba1a3210667c828492db98dca3e2076",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x7fffffffffffffffffffffffffffffff5d576e73",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Get Contract Source Code for Verified Contract Source Codes ​",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x7fffffffffffffffffffffffffffffff5d576e73",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x7fffffffffffffffffffffffffffffffffffffff",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Get Contract Source Code for Verified Contract Source Codes ​",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x7fffffffffffffffffffffffffffffffffffffff",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Get Contract Source Code for Verified Contract Source Codes ​",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xbc46363a7669f6e12353fa95bb067aead3675c29",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Verifying Proxy Contract using cURL ​",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xbc46363a7669f6e12353fa95bb067aead3675c29",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xc9121e476155ebf0b794b7b351808af3787e727d",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Get Contract ABI for Verified Contract Source Codes ​",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xc9121e476155ebf0b794b7b351808af3787e727d",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xcbdcd3815b5f975e1a2c944a9b2cd1c985a1cb7f",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Verifying Proxy Contract using cURL ​",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xcbdcd3815b5f975e1a2c944a9b2cd1c985a1cb7f",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xe45a5176bc0f2c1198e2451c4e4501d4ed9b65a6",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Verifying Proxy Contract using cURL ​",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xe45a5176bc0f2c1198e2451c4e4501d4ed9b65a6",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xfe8ad7dd2f564a877cc23feea6c0a9cc2e783715",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Get Contract ABI for Verified Contract Source Codes ​",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xfe8ad7dd2f564a877cc23feea6c0a9cc2e783715",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xff82b0676f7bc1038dda706374ac706a59cc2163",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Get Contract Creator and Creation Tx Hash ​",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xff82b0676f7bc1038dda706374ac706a59cc2163",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xfffffffffffffffffffffffffffffffebaaedce6",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Get Contract Source Code for Verified Contract Source Codes ​",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xfffffffffffffffffffffffffffffffebaaedce6",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     }
   ],
@@ -569,6 +266,90 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12403,
+      "audit_key": "audit-12403",
+      "report_name": "Bitlayer Bridge Audit Report.pdf",
+      "report_url": "https://github.com/bitlayer-org/smart-contract-audits/blob/main/audit_reports/bitlayer_bridge/Bitlayer%20Bridge%20Audit%20Report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12404,
+      "audit_key": "audit-12404",
+      "report_name": "SlowMist Audit Report - Bitlayer Bridge Phase 2.pdf",
+      "report_url": "https://github.com/bitlayer-org/smart-contract-audits/blob/main/audit_reports/btc_bridge_and_get_gas/SlowMist%20Audit%20Report%20-%20Bitlayer%20Bridge%20Phase%202.pdf",
+      "auditor": "SlowMist",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12405,
+      "audit_key": "audit-12405",
+      "report_name": "SlowMist Audit Report - Bitlayer Bridge.pdf",
+      "report_url": "https://github.com/bitlayer-org/smart-contract-audits/blob/main/audit_reports/btc_bridge_and_get_gas/SlowMist%20Audit%20Report%20-%20Bitlayer%20Bridge.pdf",
+      "auditor": "SlowMist",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12406,
+      "audit_key": "audit-12406",
+      "report_name": "audit_report.pdf",
+      "report_url": "https://github.com/bitlayer-org/smart-contract-audits/blob/main/audit_reports/btc_bridge_and_get_gas/audit_report.pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -576,8 +357,8 @@
   "origin_summary": {
     "native": 0,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 12
+    "standard_library": 1,
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -608,6 +389,22 @@
       {
         "audit_id": 11479,
         "report_name": "README.md"
+      },
+      {
+        "audit_id": 12403,
+        "report_name": "Bitlayer Bridge Audit Report.pdf"
+      },
+      {
+        "audit_id": 12404,
+        "report_name": "SlowMist Audit Report - Bitlayer Bridge Phase 2.pdf"
+      },
+      {
+        "audit_id": 12405,
+        "report_name": "SlowMist Audit Report - Bitlayer Bridge.pdf"
+      },
+      {
+        "audit_id": 12406,
+        "report_name": "audit_report.pdf"
       }
     ],
     "inherited_remapped_matches": []

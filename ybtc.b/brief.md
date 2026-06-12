@@ -4,28 +4,37 @@
 
 - Project: YBTC.B (`ybtc.b`)
 - Website: [https://www.bitlayer.org/](https://www.bitlayer.org/)
-- Lifecycle: active (Tier 0, 78.8% below peak)
-- Generated: 2026-05-31T14:53:59.167Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-d7f7
-- Chains: bsc
-- Contract surface: 12 unique implementations (12 raw deployments)
-- DeFi Llama TVL: $83,925,953.08
+- Lifecycle: active (Tier 0, 81.6% below peak)
+- Generated: 2026-06-12T16:39:16.394Z
+- Pipeline run: v2-pipeline-2026-06-12-c7aee3-d3e0
+- Chains: avalanche, bsc, ethereum
+- Contract surface: 1 unique implementations (5 raw deployments)
+- DeFi Llama TVL: $69,267,722.85
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
+## Project Description
+
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 12
-- Unique implementations: 12
-- Raw deployments: 12
-- Audits discovered: 6
+- Unverified implementations: 0
+- Unique implementations: 1
+- Raw deployments: 5
+- Audits discovered: 10
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2020-01 (stale)
-- Staleness: 0 fresh, 0 aging, 4 stale, 2 unknown
+- Latest audit: 2025-11 (fresh)
+- Staleness: 1 fresh, 0 aging, 7 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -38,9 +47,11 @@
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| BridgedYBTCB | operational_periphery | bsc | 5 deployments: ethereum `0xf053a5...15a308`; bsc [`0x2cd3cd...3d7335`](./contracts/bsc-56/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335/); bsc `0xcde9d6...b7341b`; avalanche [`0x2cd3cd...3d7335`](./contracts/avalanche-43114/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335/); avalanche `0x786248...920d63` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -54,24 +65,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (12)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | `0x000000...000000` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x360894...3e2076` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x7fffff...576e73` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0x7fffff...ffffff` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xaaaaaa...aaaaaa` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xbc4636...675c29` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xc9121e...7e727d` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xcbdcd3...a1cb7f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xe45a51...9b65a6` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xfe8ad7...783715` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xff82b0...cc2163` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | `0xffffff...aedce6` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
@@ -83,6 +81,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [2020-01-24_DiscV5_audit_Cure53.pdf](https://github.com/bitlayer-org/bitlayer-l2/blob/master/docs/audits/2020-01-24_DiscV5_audit_Cure53.pdf) | unknown | Audit | 2020-01 | stale | Direct | n/a | 0 | n/a |
 | [SecurityNetwork.md](https://github.com/bitlayer-org/bitlayer-org.github.io/blob/main/docs/Build/TrackPack/SecurityNetwork.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [README.md](https://github.com/bitlayer-org/bitlayer-materials/blob/main/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Bitlayer Bridge Audit Report.pdf](https://github.com/bitlayer-org/smart-contract-audits/blob/main/audit_reports/bitlayer_bridge/Bitlayer%20Bridge%20Audit%20Report.pdf) | unknown | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
+| [SlowMist Audit Report - Bitlayer Bridge Phase 2.pdf](https://github.com/bitlayer-org/smart-contract-audits/blob/main/audit_reports/btc_bridge_and_get_gas/SlowMist%20Audit%20Report%20-%20Bitlayer%20Bridge%20Phase%202.pdf) | SlowMist | Audit | 2024-05 | stale | Direct | n/a | 0 | n/a |
+| [SlowMist Audit Report - Bitlayer Bridge.pdf](https://github.com/bitlayer-org/smart-contract-audits/blob/main/audit_reports/btc_bridge_and_get_gas/SlowMist%20Audit%20Report%20-%20Bitlayer%20Bridge.pdf) | SlowMist | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
+| [audit_report.pdf](https://github.com/bitlayer-org/smart-contract-audits/blob/main/audit_reports/btc_bridge_and_get_gas/audit_report.pdf) | Unknown | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -96,14 +98,14 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 12 |
+| standard_library | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 6
+- Audits with zero matched contracts: 10
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -116,5 +118,9 @@ Zero-match audit list:
 - [11384] 2020-01-24_DiscV5_audit_Cure53.pdf
 - [11434] SecurityNetwork.md
 - [11479] README.md
+- [12403] Bitlayer Bridge Audit Report.pdf
+- [12404] SlowMist Audit Report - Bitlayer Bridge Phase 2.pdf
+- [12405] SlowMist Audit Report - Bitlayer Bridge.pdf
+- [12406] audit_report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

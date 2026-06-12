@@ -262,7 +262,7 @@ Each project directory contains:
 | [pulsechain](./pulsechain/brief.md) | $48.05M | ethereum | 7 | 6/7 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $475.40K |
 | [pulsechain-bridge](./pulsechain-bridge/brief.md) | $48.05M | ethereum | 7 | 6/7 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $475.40K |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/brief.md) | $18.91M | ethereum | 54 | 47/54 (87%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $447.17K |
-| [apex-protocol](./apex-protocol/brief.md) | $36.24M | 7 | 206 | 87/206 (42%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $436.41K |
+| [apex-protocol](./apex-protocol/brief.md) | $35.17M | 8 | 210 | 90/210 (43%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $436.45K |
 | [camelot](./camelot/brief.md) | $26.05M | arbitrum | 118 | 51/118 (43%) | 17.6% | 0.0% (-) | 1 | stale | ✅ active | $391.94K |
 | [equalizer](./equalizer/brief.md) | $1.08M | base, fantom, sonic | 292 | 50/292 (17%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $374.84K |
 | [vesper](./vesper/brief.md) | $44.44M | ethereum | 44 | 39/44 (89%) | 51.3% | 0.0% (-) | 25 | stale | ✅ active | $351.72K |
@@ -360,7 +360,7 @@ Each project directory contains:
 | [3f-mutual](./3f-mutual/brief.md) | $3.88M | ethereum | 21 | 18/21 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [abc-pool](./abc-pool/brief.md) | $5.96M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [abracadabra](./abracadabra/brief.md) | $8.07M | 12 | 2568 | 0/2568 (0%) | 0.0% | 0.0% (-) | 0 | aging | 💀 dead | - |
-| [aegis](./aegis/brief.md) | $35.80M | ethereum | 6 | 5/6 (83%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [aegis](./aegis/brief.md) | $35.90M | bsc, ethereum | 12 | 12/12 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [aegis-markets](./aegis-markets/brief.md) | $2.33M | base, unichain | 15 | 12/15 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [aftermath-finance](./aftermath-finance/brief.md) | $4.98M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [aitech](./aitech/brief.md) | $3.96M | bsc | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
@@ -663,7 +663,7 @@ Each project directory contains:
 | [stfil](./stfil/brief.md) | $5.51M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [stobox](./stobox/brief.md) | $15.12M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [stratis-mstrax](./stratis-mstrax/brief.md) | $2.04M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [suibridge](./suibridge/brief.md) | $41.86M | ethereum | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [suibridge](./suibridge/brief.md) | $34.80M | ethereum | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [sumer.money](./sumer.money/brief.md) | $1.85M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [sunny](./sunny/brief.md) | $2.51M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [superfluid](./superfluid/brief.md) | $5.13M | 10 | 397 | 89/397 (22%) | 20.8% | 5.2% (Trail of Bits) | 6 | fresh | ✅ active | - |
@@ -701,7 +701,7 @@ Each project directory contains:
 | [usx.capital](./usx.capital/brief.md) | $763.33K | scroll | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [vedelegate](./vedelegate/brief.md) | $1.16M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [velodrome](./velodrome/brief.md) | $40.17M | celo, optimism | 52 | 47/52 (90%) | 40.4% | 40.4% (Sherlock, Spearbit) | 3 | aging | ✅ active | - |
-| [veno-finance](./veno-finance/brief.md) | $37.49M | cronos, ethereum, zksync-era | 49 | 9/49 (18%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
+| [veno-finance](./veno-finance/brief.md) | $37.49M | cronos, ethereum, zksync-era | 51 | 11/51 (22%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [ventuals](./ventuals/brief.md) | $29.70M | hyperliquid | 4 | 4/4 (100%) | 100.0% | 0.0% (-) | 2 | fresh | ✅ active | - |
 | [verio](./verio/brief.md) | $7.19M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [verus-market](./verus-market/brief.md) | $9.65M | ethereum | 32 | 0/32 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -726,5 +726,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-12T10:42:32.421Z_
+_Generated: 2026-06-12T10:46:28.753Z_
 _Projects: 714_

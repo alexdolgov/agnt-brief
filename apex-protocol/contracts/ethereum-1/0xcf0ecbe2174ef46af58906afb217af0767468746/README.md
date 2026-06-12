@@ -5,7 +5,7 @@
 | Chain | ethereum (1) |
 | Address | `0xcf0ecbe2174ef46af58906afb217af0767468746` |
 | Role | token |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (ethereum [`0xcf0ecbe2174ef46af58906afb217af0767468746`](../0xcf0ecbe2174ef46af58906afb217af0767468746/)) |

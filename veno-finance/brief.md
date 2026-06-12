@@ -5,10 +5,10 @@
 - Project: Veno Finance (`veno-finance`)
 - Website: [https://veno.finance/](https://veno.finance/)
 - Lifecycle: active (Tier 0, 72.5% below peak)
-- Generated: 2026-06-11T11:47:01.210Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
+- Generated: 2026-06-12T10:45:00.815Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-b7d4
 - Chains: cronos, ethereum, zksync-era
-- Contract surface: 49 unique implementations (56 raw deployments)
+- Contract surface: 51 unique implementations (58 raw deployments)
 - DeFi Llama TVL: $37,489,443.49
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -23,12 +23,12 @@ The Liquid Staking Tokens family uses ERC1967Proxy contracts to enable upgradeab
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/9 (0.0%)
-- Verified + Unaudited implementations: 9
+- Verified implementations audited: 0/11 (0.0%)
+- Verified + Unaudited implementations: 11
 - Verified by bytecode match: 0
 - Unverified implementations: 40
-- Unique implementations: 49
-- Raw deployments: 56
+- Unique implementations: 51
+- Raw deployments: 58
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,16 +46,18 @@ The Liquid Staking Tokens family uses ERC1967Proxy contracts to enable upgradeab
 
 - None
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | BridgeMiddleware | operational_periphery | ethereum | 2 deployments: ethereum [`0x248c73...a0b01e`](./contracts/ethereum-1/0x248c731b155af4cae198af705fb803f087a0b01e/); ethereum `0x3766eb...3c356d` | ⚠️ Unaudited |
 | EthereumDeposit | unknown | ethereum | [`0xe8dd48...32d2ac`](./contracts/ethereum-1/0xe8dd4838c47ebf87d8fdb63e7f6dd02c7432d2ac/) | ⚠️ Unaudited |
+| L1Nullifier | unknown | ethereum | [`0xd7f9f5...8cb2cb`](./contracts/ethereum-1/0xd7f9f54194c633f36ccd5f3da84ad4a1c38cb2cb/) | ⚠️ Unaudited |
+| ValidatorTimelock | governance | ethereum | [`0x5d8ba1...bad06e`](./contracts/ethereum-1/0x5d8ba173dc6c3c90c8f7c04c9288bef5fdbad06e/) | ⚠️ Unaudited |
 | YbEth | unknown | ethereum | 2 deployments: ethereum [`0x76bf2d...dfc351`](./contracts/ethereum-1/0x76bf2d1e6dfda645c0c17440b17eccc181dfc351/); ethereum `0xc0c23f...52d6a2` | ⚠️ Unaudited |
 | YbEthBridge | operational_periphery | ethereum | 2 deployments: ethereum [`0xd91629...bdf73f`](./contracts/ethereum-1/0xd91629518a1ec964cfce27c2a939f689dcbdf73f/); ethereum `0xded4dd...50643d` | ⚠️ Unaudited |
 | YbEthNft | token | ethereum | 2 deployments: ethereum [`0x43df9d...86d2c5`](./contracts/ethereum-1/0x43df9d854d3fcb882847b9a638cabd06fe86d2c5/); ethereum `0x8f6b05...90762d` | ⚠️ Unaudited |
-| YBUSD | bridge_template | ethereum | 2 deployments: ethereum [`0xd501a4...32b7ce`](./contracts/ethereum-1/0xd501a4d2141799f3228c40af972df622c632b7ce/); ethereum `0xfa5907...0f594a` | ⚠️ Unaudited |
+| YBUSD | unknown | ethereum | 2 deployments: ethereum [`0xd501a4...32b7ce`](./contracts/ethereum-1/0xd501a4d2141799f3228c40af972df622c632b7ce/); ethereum `0xfa5907...0f594a` | ⚠️ Unaudited |
 | YBUSDBridge | operational_periphery | ethereum | 2 deployments: ethereum [`0x17daca...d014f8`](./contracts/ethereum-1/0x17dacad8aa962963830136422e2eaa8d27d014f8/); ethereum `0x42696a...7b0dff` | ⚠️ Unaudited |
 | ZkCro | unknown | ethereum | 2 deployments: ethereum [`0x28ff2e...1e44e2`](./contracts/ethereum-1/0x28ff2e4dd1b58efeb0fc138602a28d5ae81e44e2/); ethereum `0x34b35b...4616a5` | ⚠️ Unaudited |
 | ZkCroMintAndBridge | operational_periphery | ethereum | [`0xe69a53...ab4e12`](./contracts/ethereum-1/0xe69a535730858fd8dc386b448972a9f801ab4e12/) | ⚠️ Unaudited |
@@ -131,24 +133,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x248c73...a0b01e`](./contracts/ethereum-1/0x248c731b155af4cae198af705fb803f087a0b01e/) | BridgeMiddleware | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe8dd48...32d2ac`](./contracts/ethereum-1/0xe8dd4838c47ebf87d8fdb63e7f6dd02c7432d2ac/) | EthereumDeposit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd91629...bdf73f`](./contracts/ethereum-1/0xd91629518a1ec964cfce27c2a939f689dcbdf73f/) | YbEthBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x43df9d...86d2c5`](./contracts/ethereum-1/0x43df9d854d3fcb882847b9a638cabd06fe86d2c5/) | YbEthNft | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd501a4...32b7ce`](./contracts/ethereum-1/0xd501a4d2141799f3228c40af972df622c632b7ce/) | YBUSD | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x17daca...d014f8`](./contracts/ethereum-1/0x17dacad8aa962963830136422e2eaa8d27d014f8/) | YBUSDBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe69a53...ab4e12`](./contracts/ethereum-1/0xe69a535730858fd8dc386b448972a9f801ab4e12/) | ZkCroMintAndBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 26 |
+| native | 0 |
 | upstream | 0 |
-| standard_library | 2 |
-| needs_review | 21 |
+| standard_library | 0 |
+| needs_review | 51 |
 
 ## Scope Matching Notes
 

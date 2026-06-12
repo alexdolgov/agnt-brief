@@ -4,11 +4,11 @@
 |---|---|
 | Chain | ethereum (1) |
 | Address | `0x8adcfaf1b64cc514524b80565bcc732273ddeafd` |
-| Role | operational_periphery |
-| Origin | native |
+| Role | unknown |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 1 (ethereum [`0x8adcfaf1b64cc514524b80565bcc732273ddeafd`](../0x8adcfaf1b64cc514524b80565bcc732273ddeafd/)) |
+| Deployments | 2 (ethereum [`0x8adcfaf1b64cc514524b80565bcc732273ddeafd`](../0x8adcfaf1b64cc514524b80565bcc732273ddeafd/); bsc `0x93efaa2d2f6c3600d794233ed7e751d086e5b75e`) |
 | Proxy | No |
 | Source | Sourcify (partial match) |
 | TVL | n/a |

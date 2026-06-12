@@ -1,47 +1,48 @@
 {
   "schema_version": "2.0",
   "project_key": "aegis",
-  "generated_at": "2026-06-10T20:58:56.544Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-12T10:45:54.174Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-b7d4",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "aegis",
     "tier": 0,
     "peak_tvl": 44386829,
     "peak_date": "2025-12-19T00:00:00.000Z",
-    "tvl_30d_ago": 35720204,
-    "tvl_90d_ago": 38473602,
-    "tvl_current": 35822604,
+    "tvl_30d_ago": 35549675,
+    "tvl_90d_ago": 37891595,
+    "tvl_current": 35897856,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 40535707,
-    "change_30d_pct": 0.28667249492752056,
-    "change_90d_pct": -6.890433601719953,
-    "days_since_peak": 158,
+    "tvl_180d_ago": 41490612,
+    "change_30d_pct": 0.9794210495595248,
+    "change_90d_pct": -5.261691939861597,
+    "days_since_peak": 175,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 19.294518651016947
+    "drop_from_peak_pct": 19.12498187243788
   },
   "summary": {
-    "total_contracts": 6,
-    "total_addresses": 6,
-    "unique_implementations": 6,
-    "total_deployments": 6,
+    "total_contracts": 12,
+    "total_addresses": 18,
+    "unique_implementations": 12,
+    "total_deployments": 18,
     "audited_contracts": 0,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 12,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 5,
+    "contracts_verified_unaudited": 12,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 1,
+    "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 35799876,
-    "tvl_usd": 35799876,
+    "dl_tvl_usd": 35901615,
+    "tvl_usd": 35901615,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://aegis.im/",
     "chains": [
+      "bsc",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -61,7 +62,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 6,
+    "unique_implementations": 12,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -76,7 +77,7 @@
       "address": "0x90ccf2c4b3dee7aeac9af5950a7c60f89af1db00",
       "name": "AegisConfig",
       "role": "governance",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -92,6 +93,15 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb9f1e8417abaedf6fd838212267ca8260c4ca9da",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -99,15 +109,15 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa30644ca67e0a93805c443df4a6e1856d8bd815b",
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x02bf8f0e046f471709e578b1e633077096ce65cf",
       "name": "AegisMinting",
-      "role": "operational_periphery",
-      "origin_kind": "native",
+      "role": "unknown",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -123,6 +133,24 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc4df68e592245ca5202fe8b7c438d2b799820fc2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x02bf8f0e046f471709e578b1e633077096ce65cf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -130,7 +158,38 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbb0f32d176590faedc7bc552b7ead7a86809b520",
+      "name": "AegisMintingJUSD",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AegisMintingJUSD",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbb0f32d176590faedc7bc552b7ead7a86809b520",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -138,7 +197,7 @@
       "address": "0x2b4ad1d479561064cd1c311004aca93d15041aec",
       "name": "AegisOracle",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -154,6 +213,15 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x588fd039cadc77ec85d25a072582624ca8d8cf15",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -161,15 +229,46 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xfa449dc17194fdaca1dd2237c828938f1917e0e7",
+      "name": "AegisOracleJUSD",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AegisOracleJUSD",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfa449dc17194fdaca1dd2237c828938f1917e0e7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x8adcfaf1b64cc514524b80565bcc732273ddeafd",
       "name": "AegisRewards",
-      "role": "operational_periphery",
-      "origin_kind": "native",
+      "role": "unknown",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -185,34 +284,12 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xab3dbcd9b096c3ff76275038bf58eac10d22c61f",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Aegis YUSD",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xab3dbcd9b096c3ff76275038bf58eac10d22c61f",
-          "source_verified": false,
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x93efaa2d2f6c3600d794233ed7e751d086e5b75e",
+          "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
@@ -220,9 +297,133 @@
       ],
       "audits_covering": [],
       "is_audited": false,
-      "source_verified": false,
+      "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4aa8949bb47da4b4f27345404ba1e5e7ea90bdb3",
+      "name": "sJUSD",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x4ccd1aa42259bfebc314f8454a1090538d947e81",
+      "impl_name": "sJUSD",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4aa8949bb47da4b4f27345404ba1e5e7ea90bdb3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x22daceed48d7ee53f964a5aa3bdb6e4d3d688d9a",
+      "name": "sJUSDSilo",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "sJUSDSilo",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x22daceed48d7ee53f964a5aa3bdb6e4d3d688d9a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xfe0ccc9942e98c963fe6b4e5194eb6e3baa4cb64",
+      "name": "sYUSD",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb0c63bb1667b6e9215aee562af2957739b2676fe",
+      "impl_name": "sYUSD",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfe0ccc9942e98c963fe6b4e5194eb6e3baa4cb64",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1a7cde558d318052add800ca30dc7464920b41fc",
+      "name": "sYUSDOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "sYUSDOFTAdapter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1a7cde558d318052add800ca30dc7464920b41fc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -230,8 +431,8 @@
       "chain_name": "ethereum",
       "address": "0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a",
       "name": "YUSD",
-      "role": "token",
-      "origin_kind": "native",
+      "role": "unknown",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Aegis YUSD",
       "tvl_usd": null,
@@ -255,67 +456,56 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x539e46827c37a3ef11c7ce521cc56b4d59e602e3",
+      "name": "YUSDMintBurnOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "YUSDMintBurnOFTAdapter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xaf12b0ae5a72d7b8a8ec675f3e76e2db56143565",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x539e46827c37a3ef11c7ce521cc56b4d59e602e3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x90ccf2c4b3dee7aeac9af5950a7c60f89af1db00",
-      "name": "AegisConfig",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa30644ca67e0a93805c443df4a6e1856d8bd815b",
-      "name": "AegisMinting",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2b4ad1d479561064cd1c311004aca93d15041aec",
-      "name": "AegisOracle",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x8adcfaf1b64cc514524b80565bcc732273ddeafd",
-      "name": "AegisRewards",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a",
-      "name": "YUSD",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 5,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 12
   },
   "scope_matching_notes": {
     "match_method_counts": {},

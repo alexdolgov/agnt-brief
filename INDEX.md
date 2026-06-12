@@ -14,7 +14,7 @@
 | [across](./across/) | $28.1M | 0.0% | $28.1M | active | 11 | 142 | 2026-06-11 |
 | [acryptos](./acryptos/) | $5.2M | 25.0% | $253.0K | active | 7 | 311 | 2026-06-10 |
 | [aegis-markets](./aegis-markets/) | $2.3M | 0.0% | ? | active | 2 | 15 | 2026-06-10 |
-| [aegis](./aegis/) | $35.8M | 0.0% | ? | active | 0 | 6 | 2026-06-10 |
+| [aegis](./aegis/) | $35.9M | 0.0% | ? | active | 0 | 12 | 2026-06-12 |
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | active | 0 | 5 | 2026-06-10 |
 | [aevo](./aevo/) | $96.8M | 11.8% | $26.1M | active | 13 | 256 | 2026-06-10 |
 | [aftermath-finance](./aftermath-finance/) | $5.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -41,7 +41,7 @@
 | [anzen-finance](./anzen-finance/) | $671.2K | 35.9% | $10.9K | declining | 5 | 47 | 2026-06-10 |
 | [ao-bridge](./ao-bridge/) | $43.0M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
 | [apechain-bridge](./apechain-bridge/) | $138.2M | 0.0% | $138.2M | declining | 0 | 19 | 2026-06-12 |
-| [apex-protocol](./apex-protocol/) | $436.4K | 0.0% | $436.4K | active | 1 | 206 | 2026-06-10 |
+| [apex-protocol](./apex-protocol/) | $436.5K | 0.0% | $436.5K | active | 1 | 210 | 2026-06-12 |
 | [api3](./api3/) | $55.2M | 21.4% | $55.2M | active | 6 | 28 | 2026-06-10 |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 54 | 2026-06-10 |
 | [arcade.xyz](./arcade.xyz/) | $240.1K | 67.4% | ? | declining | 10 | 60 | 2026-06-10 |
@@ -586,7 +586,7 @@
 | [strata](./strata/) | $97.2M | 31.6% | $289.6K | active | 7 | 39 | 2026-06-11 |
 | [stratis-mstrax](./stratis-mstrax/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [stusdt](./stusdt/) | $1.9M | 0.0% | $1.9M | active | 0 | 12 | 2026-06-12 |
-| [suibridge](./suibridge/) | $41.9M | 0.0% | ? | declining | 0 | 5 | 2026-06-11 |
+| [suibridge](./suibridge/) | $34.8M | 0.0% | ? | declining | 0 | 5 | 2026-06-12 |
 | [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
 | [summer.fi](./summer.fi/) | $140.9M | 0.0% | $140.9M | declining | 6 | 482 | 2026-06-11 |
 | [sunny](./sunny/) | $2.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
@@ -666,7 +666,7 @@
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | declining | 0 | 28 | 2026-06-11 |
 | [velodrome](./velodrome/) | $40.2M | 40.4% | ? | active | 6 | 52 | 2026-06-11 |
 | [velvet.capital](./velvet.capital/) | $95.2M | 77.8% | $95.2M | declining | 13 | 420 | 2026-06-11 |
-| [veno-finance](./veno-finance/) | $37.5M | 0.0% | ? | active | 3 | 49 | 2026-06-11 |
+| [veno-finance](./veno-finance/) | $37.5M | 0.0% | ? | active | 3 | 51 | 2026-06-12 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | active | 2 | 4 | 2026-06-11 |
 | [verio](./verio/) | $7.2M | 0.0% | ? | unknown | 11 | 0 | 2026-06-11 |
 | [verus-market](./verus-market/) | $9.6M | 0.0% | ? | declining | 0 | 32 | 2026-06-11 |

@@ -138,7 +138,7 @@ Each project directory contains:
 | [smardex-ecosystem](./smardex-ecosystem/brief.md) | $4.56M | 5 | 39 | 39/39 (100%) | 33.3% | 0.0% (-) | 4 | aging | ⚠️ declining | $20.06M |
 | [reppo](./reppo/brief.md) | $3.83M | base | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | $19.77M |
 | [index-coop](./index-coop/brief.md) | $12.57M | 4 | 235 | 111/235 (47%) | 13.5% | 0.9% (Code4rena) | 5 | aging | ✅ active | $19.44M |
-| [dodo](./dodo/brief.md) | $12.65M | 12 | 552 | 145/552 (26%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $19.13M |
+| [dodo](./dodo/brief.md) | $11.03M | 12 | 559 | 152/559 (27%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $19.13M |
 | [parasail](./parasail/brief.md) | $3.60M | arbitrum | 41 | 2/41 (5%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $17.21M |
 | [drops](./drops/brief.md) | $3.30M | ethereum | 77 | 66/77 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $16.49M |
 | [hemi-staking](./hemi-staking/brief.md) | $29.14M | 4 | 132 | 54/132 (41%) | 1.9% | 0.0% (-) | 1 | fresh | ✅ active | $16.42M |
@@ -178,7 +178,7 @@ Each project directory contains:
 | [nftx](./nftx/brief.md) | $1.58M | arbitrum, ethereum | 184 | 135/184 (73%) | 11.1% | 9.6% (Code4rena) | 3 | stale | ⚠️ declining | $6.27M |
 | [sx-rollup-bridge](./sx-rollup-bridge/brief.md) | $6.37M | ethereum | 133 | 68/133 (51%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $6.12M |
 | [spectra](./spectra/brief.md) | $40.07M | 8 | 229 | 154/229 (67%) | 12.2% | 11.6% (Code4rena, Sherlock) | 6 | fresh | ✅ active | $5.82M |
-| [ambire-wallet](./ambire-wallet/brief.md) | $9.90M | ethereum | 9 | 2/9 (22%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | $5.82M |
+| [ambire-wallet](./ambire-wallet/brief.md) | $11.41M | ethereum, optimism | 13 | 5/13 (38%) | 20.0% | 20.0% (Code4rena) | 9 | aging | ✅ active | $5.82M |
 | [ekubo](./ekubo/brief.md) | $27.32M | ethereum | 15 | 9/15 (60%) | 44.4% | 22.2% (Code4rena) | 3 | fresh | ✅ active | $5.65M |
 | [wasabi](./wasabi/brief.md) | $1.31M | 4 | 83 | 54/83 (65%) | 37.0% | 11.1% (Sherlock) | 8 | aging | ⚠️ declining | $5.48M |
 | [sierra-protocol](./sierra-protocol/brief.md) | $32.68M | avalanche, ethereum | 78 | 25/78 (32%) | 4.0% | 4.0% (Spearbit) | 1 | fresh | ✅ active | $5.33M |
@@ -525,7 +525,7 @@ Each project directory contains:
 | [kava-earn](./kava-earn/brief.md) | $1.57M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [kava-lend](./kava-lend/brief.md) | $7.79M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [kava-liquid](./kava-liquid/brief.md) | $1.55M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
-| [kava-mint](./kava-mint/brief.md) | $52.16M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
+| [kava-mint](./kava-mint/brief.md) | $11.06M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [keeta-bridge](./keeta-bridge/brief.md) | $1.06M | base | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [keyring](./keyring/brief.md) | $6.22M | avalanche, ethereum | 53 | 42/53 (79%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [kiloex](./kiloex/brief.md) | $2.45M | base, bsc, manta | 110 | 7/110 (6%) | 14.3% | 0.0% (-) | 1 | aging | ✅ active | - |
@@ -616,7 +616,7 @@ Each project directory contains:
 | [powercity](./powercity/brief.md) | $3.25M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [powh3d](./powh3d/brief.md) | $4.36M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [prime-staking](./prime-staking/brief.md) | $4.77M | base | 10 | 3/10 (30%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
-| [probit-global](./probit-global/brief.md) | $12.83M | fantom | 3 | 0/3 (0%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
+| [probit-global](./probit-global/brief.md) | $11.03M | fantom | 3 | 0/3 (0%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [pumpspace](./pumpspace/brief.md) | $3.87M | avalanche | 666 | 6/666 (1%) | 33.3% | 0.0% (-) | 2 | aging | ✅ active | - |
 | [punks-terminal](./punks-terminal/brief.md) | $1.49M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [puzzleswaporg](./puzzleswaporg/brief.md) | $1.38M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -728,5 +728,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-12T21:56:59.695Z_
+_Generated: 2026-06-12T22:18:16.677Z_
 _Projects: 716_

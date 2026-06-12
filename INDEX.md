@@ -29,7 +29,7 @@
 | [alphax](./alphax/) | $218.2K | 0.0% | $218.2K | active | 1 | 1 | 2026-06-10 |
 | [altitude.fi](./altitude.fi/) | $16.1M | 72.2% | ? | declining | 7 | 124 | 2026-06-10 |
 | [ambient](./ambient/) | $2.7M | 64.7% | ? | declining | 3 | 30 | 2026-06-10 |
-| [ambire-wallet](./ambire-wallet/) | $5.8M | 0.0% | $5.8M | active | 12 | 9 | 2026-06-10 |
+| [ambire-wallet](./ambire-wallet/) | $5.8M | 20.0% | $5.8M | active | 12 | 13 | 2026-06-12 |
 | [amnis-finance](./amnis-finance/) | $11.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
 | [angle](./angle/) | $1.4B | 0.0% | $1.4B | declining | 3 | 547 | 2026-06-11 |
 | [angles](./angles/) | $441.0K | 4.0% | $7.5 | active | 1 | 40 | 2026-06-10 |
@@ -170,7 +170,7 @@
 | [dforce](./dforce/) | $3.6M | 36.3% | $1.2M | declining | 4 | 453 | 2026-06-12 |
 | [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | declining | 4 | 71 | 2026-06-10 |
 | [dnax](./dnax/) | $3.5M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
-| [dodo](./dodo/) | $19.1M | 0.0% | $19.1M | declining | 1 | 552 | 2026-06-10 |
+| [dodo](./dodo/) | $19.1M | 0.0% | $19.1M | declining | 1 | 559 | 2026-06-12 |
 | [domination-finance](./domination-finance/) | $1.2M | 75.0% | ? | active | 1 | 30 | 2026-05-25 |
 | [dooar](./dooar/) | $5.1M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
 | [drops](./drops/) | $16.5M | 0.0% | $16.5M | declining | 0 | 77 | 2026-06-10 |
@@ -303,7 +303,7 @@
 | [kava-earn](./kava-earn/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
 | [kava-lend](./kava-lend/) | $7.8M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
 | [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
-| [kava-mint](./kava-mint/) | $52.2M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
+| [kava-mint](./kava-mint/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-06-12 |
 | [keep-network](./keep-network/) | $25.5M | 7.9% | $24.7M | declining | 18 | 225 | 2026-06-11 |
 | [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | declining | 1 | 480 | 2026-06-11 |
 | [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 0 | 4 | 2026-06-11 |
@@ -470,7 +470,7 @@
 | [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | declining | 2 | 117 | 2026-06-11 |
 | [privacy-cash](./privacy-cash/) | $48.1K | 0.0% | $48.1K | active | 10 | 6 | 2026-06-11 |
 | [privacy-pools](./privacy-pools/) | $54.4K | 20.0% | $54.4K | active | 4 | 5 | 2026-06-12 |
-| [probit-global](./probit-global/) | $12.8M | 0.0% | ? | dead | 0 | 3 | 2026-06-11 |
+| [probit-global](./probit-global/) | $11.0M | 0.0% | ? | dead | 0 | 3 | 2026-06-12 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-06-11 |
 | [puffer-finance](./puffer-finance/) | $225.1M | 36.4% | $169.2M | declining | 4 | 65 | 2026-06-11 |
 | [pulsechain-bridge](./pulsechain-bridge/) | $475.4K | 0.0% | $475.4K | active | 0 | 7 | 2026-06-12 |

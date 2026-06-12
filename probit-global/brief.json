@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "probit-global",
-  "generated_at": "2026-06-11T02:02:14.034Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-12T21:59:39.306Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9d5a",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "probit-global",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 12830307.30425,
-    "tvl_usd": 12830307.30425,
+    "dl_tvl_usd": 11028256.042200003,
+    "tvl_usd": 11028256.042200003,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

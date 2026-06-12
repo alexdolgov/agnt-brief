@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kava-mint",
-  "generated_at": "2026-06-11T00:21:36.663Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
+  "generated_at": "2026-06-12T22:04:42.759Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9d5a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "kava-mint",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 52162139.33449,
-    "tvl_usd": 52162139.33449,
+    "dl_tvl_usd": 11055555.28017,
+    "tvl_usd": 11055555.28017,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

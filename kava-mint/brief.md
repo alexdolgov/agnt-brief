@@ -5,11 +5,11 @@
 - Project: Kava Mint (`kava-mint`)
 - Website: [https://www.kava.io/](https://www.kava.io/)
 - Lifecycle: active (Tier 0, 89.5% below peak)
-- Generated: 2026-06-11T00:21:36.663Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-12T22:04:42.759Z
+- Pipeline run: v2-pipeline-2026-06-12-546062-9d5a
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $52,162,139.33
+- DeFi Llama TVL: $11,055,555.28
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 

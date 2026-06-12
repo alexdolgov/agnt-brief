@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ambire-wallet",
-  "generated_at": "2026-06-10T20:58:56.845Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-12T22:06:45.117Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9d5a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ambire-wallet",
@@ -22,32 +22,36 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 9,
-    "total_addresses": 9,
-    "unique_implementations": 9,
-    "total_deployments": 9,
-    "audited_contracts": 0,
-    "unaudited_contracts": 2,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "total_contracts": 13,
+    "total_addresses": 14,
+    "unique_implementations": 13,
+    "total_deployments": 14,
+    "audited_contracts": 1,
+    "unaudited_contracts": 4,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 7,
-    "coverage_pct": 0,
+    "contracts_unverified": 8,
+    "coverage_pct": 20,
     "total_audits": 12,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 9896682.04694,
-    "tvl_usd": 5815389.7170075,
+    "scoreable_audits": 9,
+    "dl_tvl_usd": 11408152.79116,
+    "tvl_usd": 5815395.369886712,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 5815389.72
+      "ethereum": 5815389.72,
+      "optimism": 5.65
     },
     "asd_usd": 5815389.7170075,
     "website_url": "https://www.ambire.com",
     "chains": [
-      "ethereum"
+      "ethereum",
+      "optimism"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
+    "tier1_coverage_pct": 20,
+    "tier1_auditors": [
+      "Code4rena"
+    ],
     "latest_audit_date": "2025-02",
     "audit_freshness": "aging",
     "staleness_breakdown": {
@@ -63,7 +67,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 9,
+    "unique_implementations": 13,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -104,6 +108,78 @@
       "contamination_flag": null
     },
     {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x90437220d89774217c291ae4cede826dcd647293",
+      "name": "AmbireAccount",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 5.652879212363628,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AmbireAccount",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x90437220d89774217c291ae4cede826dcd647293",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 5.652879212363628,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2301",
+        "audit-2302",
+        "audit-2305",
+        "audit-2307",
+        "audit-2308",
+        "audit-2309",
+        "audit-2310",
+        "audit-2311",
+        "audit-2312"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2685dde658faa0465130bc1672904d32c42cecb7",
+      "name": "adexStakingSpendable",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "adexStakingSpendable",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2685dde658faa0465130bc1672904d32c42cecb7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x47cd7e91c3cbaaf266369fe8518345fc4fc12935",
@@ -125,6 +201,15 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4d3348aa74ba11a2722ea9adec6bc10e92fe3d58",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -132,7 +217,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -292,6 +377,37 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xa69b8074ce03a33b13057b1e9d37dcde0024aaff",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa69b8074ce03a33b13057b1e9d37dcde0024aaff",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xde0ed71c49a5c9482cf8b8de222537adbf7b9159",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -350,6 +466,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0b62ec5f3b445d2cdd024e736c3f4f1f92be43fd",
+      "name": "xWALLETSpendable",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "xWALLETSpendable",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0b62ec5f3b445d2cdd024e736c3f4f1f92be43fd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -366,12 +513,17 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AmbireAccount",
+        "AmbireAccount7702",
+        "Eip712HashBuilder",
+        "IAmbireAccount"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -387,12 +539,19 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AmbireAccount",
+        "AmbireAccountFactory",
+        "AmbirePaymaster",
+        "DKIMRecoverySigValidator",
+        "SignatureValidator",
+        "Transaction"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -450,12 +609,16 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AmbireAccount",
+        "AmbirePaymaster",
+        "DKIMRecoverySigValidator"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -492,12 +655,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AmbireAccount",
+        "DKIMRecoverySigValidator"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -513,12 +679,17 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AmbireAccount",
+        "AmbireAccountFactory",
+        "Bytes",
+        "SignatureValidator"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -534,12 +705,16 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AmbireAccount",
+        "AmbirePaymaster",
+        "DKIMRecoverySigValidator"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
       "repo_reference_count": 0
     },
     {
@@ -555,12 +730,18 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AmbireAccount",
+        "AmbireAccountFactory",
+        "AmbirePaymaster",
+        "DKIMRecoverySigValidator",
+        "SignatureValidator"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -576,12 +757,17 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AmbireAccount",
+        "AmbireAccountFactory",
+        "SignatureValidator",
+        "TestTryCatch"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
       "repo_reference_count": 0
     },
     {
@@ -597,16 +783,63 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AmbireAccount",
+        "AmbirePaymaster",
+        "DKIMRecoverySigValidator"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Code4rena",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 20,
+      "latest_audit": null
+    },
+    {
+      "auditor": "CuriousApple",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 20,
+      "latest_audit": "2023-10"
+    },
+    {
+      "auditor": "Facu",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 20,
+      "latest_audit": "2023-09"
+    },
+    {
+      "auditor": "Hunter Security",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 20,
+      "latest_audit": "2025-02"
+    },
+    {
+      "auditor": "Pashov Audit Group",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 20,
+      "latest_audit": null
+    },
+    {
+      "auditor": "Shieldify",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 20,
+      "latest_audit": "2024-02"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -621,34 +854,52 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x2685dde658faa0465130bc1672904d32c42cecb7",
+      "name": "adexStakingSpendable",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x47cd7e91c3cbaaf266369fe8518345fc4fc12935",
       "name": "StakingPool",
       "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0b62ec5f3b445d2cdd024e736c3f4f1f92be43fd",
+      "name": "xWALLETSpendable",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 9,
+    "native": 13,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 9
+    },
+    "extraction_confidence_counts": {
+      "high": 7,
+      "low": 1,
+      "medium": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 2301,
-        "report_name": "Ambire-EIP-7702-Update-Hunter-Security-Audit-Report-0.1.pdf"
-      },
-      {
-        "audit_id": 2302,
-        "report_name": "Ambire-Hunter-Security-Assessment-26-01-2024.pdf"
-      },
       {
         "audit_id": 2303,
         "report_name": "Ambire-stkWALLET-Hunter-Security-Audit-26-02-2024-1.pdf"
@@ -658,36 +909,8 @@
         "report_name": "Ambire-stkWallet-Hunter-Security-Audit-Report-2025-1.pdf"
       },
       {
-        "audit_id": 2305,
-        "report_name": "CuriousApple-AmbireRewview01.md"
-      },
-      {
         "audit_id": 2306,
         "report_name": "ERC6492-Hunter-Security-Audit-Report-V1.0.pdf"
-      },
-      {
-        "audit_id": 2307,
-        "report_name": "Pashov-Ambire-second-security-review.md"
-      },
-      {
-        "audit_id": 2308,
-        "report_name": "Pashov-Ambire-security-review.md"
-      },
-      {
-        "audit_id": 2309,
-        "report_name": "Pashov-Ambire-third-security-review.md"
-      },
-      {
-        "audit_id": 2310,
-        "report_name": "Shieldify-Ambire-Security-Review.pdf"
-      },
-      {
-        "audit_id": 2311,
-        "report_name": "code4rena - Ambire Wallet - Invitational.pdf"
-      },
-      {
-        "audit_id": 2312,
-        "report_name": "facu_2023-09-28_Ambire_Smart_Contracts_Audit_Report-1.pdf"
       }
     ],
     "inherited_remapped_matches": []

@@ -5,7 +5,7 @@
 | Chain | ethereum (1) |
 | Address | `0x4a220e6096b25eadb88358cb44068a3248254675` |
 | Role | token |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (ethereum [`0x4a220e6096b25eadb88358cb44068a3248254675`](../0x4a220e6096b25eadb88358cb44068a3248254675/)) |

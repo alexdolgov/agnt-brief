@@ -5,7 +5,7 @@
 | Chain | optimism (10) |
 | Address | `0xafbe4bc31b3e5636e1446a987a42d8ad5b4eccf2` |
 | Role | unknown |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (optimism [`0xafbe4bc31b3e5636e1446a987a42d8ad5b4eccf2`](../0xafbe4bc31b3e5636e1446a987a42d8ad5b4eccf2/)) |

@@ -1,6 +1,6 @@
 # dxsale — Contract Index
 
-352 unique implementations across 11 chains · 388 deployments · 0 audited · 15 unaudited · 337 unverified
+358 unique implementations across 12 chains · 404 deployments · 0 audited · 15 unaudited · 343 unverified
 
 ## adapter (2)
 
@@ -22,12 +22,12 @@
 | [TokenAuditVerify (6 deployments)](./gnosis-100/0x52c4986c4dba182270ab205502c084d290150c81/) | gnosis | 6 deployments: ethereum `0x66e7ce...2bdc91`; gnosis [`0x52c498...150c81`](./gnosis-100/0x52c4986c4dba182270ab205502c084d290150c81/); polygon `0x9c47ff...d51b15`; arbitrum `0x974252...c7d9e9`; celo `0xce576f...4f8907`; avalanche `0xbd8c57...f341b9` | ⚠️ Unaudited | Verified |
 | [TokenKYCVerify (6 deployments)](./polygon-137/0x04e21e0c4749e77ba69b290df61de965233cbf48/) | polygon | 6 deployments: ethereum `0xb3d252...3c096a`; gnosis `0x7fb80f...3e3df0`; polygon [`0x04e21e...3cbf48`](./polygon-137/0x04e21e0c4749e77ba69b290df61de965233cbf48/); arbitrum `0x9aba45...58f755`; celo `0x126546...459b78`; avalanche `0xdad207...5b71fb` | ⚠️ Unaudited | Verified |
 
-## unknown (342)
+## unknown (348)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [DxFire (5 deployments)](./celo-42220/0x615c9ec24f2595528fe003782f6c706de0960098/) | celo | 5 deployments: ethereum `0x830cde...789db7`; gnosis `0xfbcbd0...6adbc5`; arbitrum `0xea8d06...5aafc1`; celo [`0x615c9e...960098`](./celo-42220/0x615c9ec24f2595528fe003782f6c706de0960098/); avalanche `0xf8f929...30f843` | ⚠️ Unaudited | Verified |
-| [DxLockLPDep (2 deployments)](./polygon-137/0x6fcc2e4efb4e05ddfc2154abe209356d5a687666/) | polygon | 2 deployments: gnosis `0x832ccf...620d37`; polygon [`0x6fcc2e...687666`](./polygon-137/0x6fcc2e4efb4e05ddfc2154abe209356d5a687666/) | ⚠️ Unaudited | Verified |
+| DxLockLPDep (12 deployments) | polygon | 12 deployments: ethereum `0x1ba00c...310fbd`; ethereum `0xc68c52...2925d3`; bsc [`0x5b5e94...6829b6`](./bsc-56/0x5b5e94485c9628793b01a38762921dc37b6829b6/); bsc `0xeb3a9c...53e449`; gnosis `0x832ccf...620d37`; gnosis `0xea8d06...5aafc1`; polygon `0x036063...899cde`; polygon `0x6fcc2e...687666`; arbitrum `0x51f411...e96df4`; celo `0xc1e3f4...0710f8`; celo `0xc7065e...f48b38`; avalanche `0x77d054...f57809` | ⚠️ Unaudited | Verified |
 | [hashFinder](./arbitrum-42161/0x2ff131d69698e56f073ec60ef00274ebe216d20c/) | arbitrum | [`0x2ff131...16d20c`](./arbitrum-42161/0x2ff131d69698e56f073ec60ef00274ebe216d20c/) | ⚠️ Unaudited | Verified |
 | [PresaleOwnerFinalize (16 deployments)](./ethereum-1/0x10f485b855be8e7d377fbe60e5d5676d88817b95/) | ethereum | 16 deployments: ethereum [`0x10f485...817b95`](./ethereum-1/0x10f485b855be8e7d377fbe60e5d5676d88817b95/); ethereum `0x51f411...e96df4`; ethereum `0x694927...eae99a`; ethereum `0xaad287...bbfeb4`; gnosis `0x3917ae...6d5e73`; gnosis `0x554d52...4d199e`; gnosis `0x857b52...8b401e`; gnosis `0xdb6e6d...bd225d`; polygon `0x335a1f...af4db3`; polygon `0x554d52...4d199e`; polygon `0xb937c8...612dd4`; polygon `0xdb6e6d...bd225d`; avalanche `0x51f411...e96df4`; avalanche `0x603dd7...1d2b80`; avalanche `0x6cd69c...639b65`; avalanche `0xfcc9c5...d31cab` | ⚠️ Unaudited | Verified |
 | StandardGenerator (3 deployments) | avalanche | 3 deployments: gnosis `0xfcc9c5...d31cab`; polygon [`0xed85da...b1ea6c`](./polygon-137/0xed85dae67ff56335136beea446ad2aaf04b1ea6c/); avalanche `0x1c8ab2...eee4af` | ⚠️ Unaudited | Verified |
@@ -39,7 +39,6 @@
 | UnnamedContract | ethereum | `0x108c9d...bfe89e` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x166aa0...4bd72e` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x186031...979d0d` | ❓ Unverified | Unverified |
-| UnnamedContract | ethereum | `0x1ba00c...310fbd` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x1dcbc8...7d7fc4` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x340db9...99a365` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x346c11...12ce3f` | ❓ Unverified | Unverified |
@@ -68,7 +67,6 @@
 | UnnamedContract | ethereum | `0xbae21d...980d96` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xc08f20...ec40c7` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xc1d6ab...4b6559` | ❓ Unverified | Unverified |
-| UnnamedContract | ethereum | `0xc68c52...2925d3` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xc7065e...f48b38` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xd3604b...dab30b` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xd3ceaf...406c80` | ❓ Unverified | Unverified |
@@ -82,6 +80,9 @@
 | UnnamedContract | ethereum | `0xf1a510...e7190a` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xf616fd...46346e` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xfcc9c5...d31cab` | ❓ Unverified | Unverified |
+| UnnamedContract | bsc | `0x2d0454...fce677` | ❓ Unverified | Unverified |
+| UnnamedContract | bsc | `0x81e0ef...70334d` | ❓ Unverified | Unverified |
+| UnnamedContract | bsc | `0x8655e5...e4679a` | ❓ Unverified | Unverified |
 | UnnamedContract | bsc | `0xa0f34d...7134f6` | ❓ Unverified | Unverified |
 | UnnamedContract | gnosis | `0x0f358c...d47612` | ❓ Unverified | Unverified |
 | UnnamedContract | gnosis | `0x126546...459b78` | ❓ Unverified | Unverified |
@@ -115,11 +116,9 @@
 | UnnamedContract | gnosis | `0xe17ed5...e47548` | ❓ Unverified | Unverified |
 | UnnamedContract | gnosis | `0xe56143...167f2c` | ❓ Unverified | Unverified |
 | UnnamedContract | gnosis | `0xe839d1...9c7d9f` | ❓ Unverified | Unverified |
-| UnnamedContract | gnosis | `0xea8d06...5aafc1` | ❓ Unverified | Unverified |
 | UnnamedContract | gnosis | `0xeb920a...7ed225` | ❓ Unverified | Unverified |
 | UnnamedContract | gnosis | `0xeb9421...93cb52` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x020b4f...33f3f5` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x036063...899cde` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x03e466...a769d5` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x04c84c...ae51ba` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x05c8ea...aa22fb` | ❓ Unverified | Unverified |
@@ -149,6 +148,7 @@
 | UnnamedContract | polygon | `0x4bf72a...4e3604` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x4c022c...03305f` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x4cf8ec...2f0f14` | ❓ Unverified | Unverified |
+| UnnamedContract | polygon | `0x51919a...fbe751` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x56bef6...ef332d` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x5d206c...8bfbe5` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x5d7641...8768f6` | ❓ Unverified | Unverified |
@@ -156,8 +156,10 @@
 | UnnamedContract | polygon | `0x63d20b...f11f3b` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x656f4f...15cdd0` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x6805d1...63d48f` | ❓ Unverified | Unverified |
+| UnnamedContract | polygon | `0x6aee7e...84ee28` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x6b0ded...cb0a2e` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x6e3ef0...2eef10` | ❓ Unverified | Unverified |
+| UnnamedContract | polygon | `0x6e573d...b21066` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x7163df...1e7358` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x77d054...f57809` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x7ab684...99fd03` | ❓ Unverified | Unverified |
@@ -180,6 +182,7 @@
 | UnnamedContract | polygon | `0xb525de...60032d` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xb53459...055638` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xb5566a...7043cd` | ❓ Unverified | Unverified |
+| UnnamedContract | polygon | `0xb7e4d3...fc8381` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xb917fe...bceee9` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xb965ba...bbfe95` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xbd0d5e...129c67` | ❓ Unverified | Unverified |
@@ -203,7 +206,9 @@
 | UnnamedContract | polygon | `0xe839d1...9c7d9f` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xea8d06...5aafc1` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xeb3a9c...53e449` | ❓ Unverified | Unverified |
+| UnnamedContract | polygon | `0xee0c6d...9ff067` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xef8b07...ad2e25` | ❓ Unverified | Unverified |
+| UnnamedContract | polygon | `0xf24d02...6dc58c` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xf388fa...33246d` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xfbcbd0...6adbc5` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xfd03c0...697015` | ❓ Unverified | Unverified |
@@ -217,13 +222,17 @@
 | UnnamedContract | fantom | `0xbb7bef...9f907b` | ❓ Unverified | Unverified |
 | UnnamedContract | fantom | `0xc1e3f4...0710f8` | ❓ Unverified | Unverified |
 | UnnamedContract | fantom | `0xe4d7b8...9b3e3c` | ❓ Unverified | Unverified |
+| UnnamedContract | zksync-era | `0x12e0eb...ff683a` | ❓ Unverified | Unverified |
+| UnnamedContract | zksync-era | `0x1ba542...032618` | ❓ Unverified | Unverified |
+| UnnamedContract | moonriver | `0x4b7b8c...3c2752` | ❓ Unverified | Unverified |
+| UnnamedContract | moonriver | `0x51919a...fbe751` | ❓ Unverified | Unverified |
+| UnnamedContract | moonriver | `0x6e573d...b21066` | ❓ Unverified | Unverified |
 | UnnamedContract | moonriver | `0x983b00...ff6b9f` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x0dddd8...b4ec8c` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x17e8c8...f7f24f` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x19641a...b931b6` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x1c8ab2...eee4af` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x3052b6...74b656` | ❓ Unverified | Unverified |
-| UnnamedContract | arbitrum | `0x51f411...e96df4` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x594e88...9db341` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x603dd7...1d2b80` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x63d20b...f11f3b` | ❓ Unverified | Unverified |
@@ -265,8 +274,6 @@
 | UnnamedContract | celo | `0xa49cb6...881985` | ❓ Unverified | Unverified |
 | UnnamedContract | celo | `0xb5566a...7043cd` | ❓ Unverified | Unverified |
 | UnnamedContract | celo | `0xb937c8...612dd4` | ❓ Unverified | Unverified |
-| UnnamedContract | celo | `0xc1e3f4...0710f8` | ❓ Unverified | Unverified |
-| UnnamedContract | celo | `0xc7065e...f48b38` | ❓ Unverified | Unverified |
 | UnnamedContract | celo | `0xcd5fd6...596b49` | ❓ Unverified | Unverified |
 | UnnamedContract | celo | `0xceb9e1...a5be25` | ❓ Unverified | Unverified |
 | UnnamedContract | celo | `0xd5f159...75c6dd` | ❓ Unverified | Unverified |
@@ -319,7 +326,6 @@
 | UnnamedContract | avalanche | `0x6fcc2e...687666` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x6fdd28...d7a35b` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x7163df...1e7358` | ❓ Unverified | Unverified |
-| UnnamedContract | avalanche | `0x77d054...f57809` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x7cc708...b079b8` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x7ebf0d...c669ba` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x7fb80f...3e3df0` | ❓ Unverified | Unverified |

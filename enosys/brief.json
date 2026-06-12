@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "enosys",
-  "generated_at": "2026-06-10T23:06:07.555Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-12T13:57:09.968Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-769a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "enosys",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 81.32489761022168
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 4,
-    "unique_implementations": 2,
-    "total_deployments": 4,
+    "total_contracts": 3,
+    "total_addresses": 5,
+    "unique_implementations": 3,
+    "total_deployments": 5,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 26899011,
-    "tvl_usd": 26899011,
+    "dl_tvl_usd": 17160386,
+    "tvl_usd": 17160386,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -61,7 +61,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 3,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -73,10 +73,41 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x398e41ac3d5972b4bac2320cd130c7a25ca446f7",
+      "name": "Crowdsale",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Crowdsale",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x398e41ac3d5972b4bac2320cd130c7a25ca446f7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x4a220e6096b25eadb88358cb44068a3248254675",
       "name": "StandardToken",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Enosys Bridge",
       "tvl_usd": null,
@@ -107,7 +138,7 @@
       "address": "0x37aca97a99d1b4260a5e9821d0ef14947fb68970",
       "name": "WrapDepositRedeem",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Enosys Bridge",
       "tvl_usd": null,
@@ -153,33 +184,12 @@
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4a220e6096b25eadb88358cb44068a3248254675",
-      "name": "StandardToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x37aca97a99d1b4260a5e9821d0ef14947fb68970",
-      "name": "WrapDepositRedeem",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 2,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {},

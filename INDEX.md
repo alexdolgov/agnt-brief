@@ -34,7 +34,7 @@
 | [angle](./angle/) | $1.4B | 0.0% | $1.4B | declining | 3 | 547 | 2026-06-11 |
 | [angles](./angles/) | $441.0K | 4.0% | $7.5 | active | 1 | 40 | 2026-06-10 |
 | [angstrom](./angstrom/) | $11.3M | 7.7% | ? | declining | 3 | 13 | 2026-06-10 |
-| [ankr](./ankr/) | $21.7M | 0.0% | ? | active | 14 | 6 | 2026-06-10 |
+| [ankr](./ankr/) | $162.3 | 0.0% | $32.8 | active | 14 | 25 | 2026-06-12 |
 | [antarctic](./antarctic/) | $9.6M | 0.0% | ? | active | 0 | 11 | 2026-06-10 |
 | [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | active | 0 | 3 | 2026-06-12 |
 | [anvil](./anvil/) | $673.0K | 100.0% | ? | declining | 4 | 3 | 2026-06-10 |
@@ -175,7 +175,7 @@
 | [dooar](./dooar/) | $5.1M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
 | [drops](./drops/) | $16.5M | 0.0% | $16.5M | declining | 0 | 77 | 2026-06-10 |
 | [dtrinity](./dtrinity/) | $1.8M | 0.0% | $1.8M | active | 5 | 209 | 2026-06-11 |
-| [dxsale](./dxsale/) | $17.8M | 0.0% | ? | active | 1 | 352 | 2026-06-11 |
+| [dxsale](./dxsale/) | $17.9M | 0.0% | ? | active | 1 | 358 | 2026-06-12 |
 | [dyorswap](./dyorswap/) | $2.2M | 0.0% | ? | active | 0 | 93 | 2026-06-10 |
 | [easedefi.org](./easedefi.org/) | $1.5M | 0.0% | $1.5M | active | 1 | 9 | 2026-06-12 |
 | [egas-swap](./egas-swap/) | $18.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -185,7 +185,7 @@
 | [ellipsis-finance](./ellipsis-finance/) | $59.0K | 29.4% | $9.0K | dead | 3 | 22 | 2026-06-11 |
 | [elyfi](./elyfi/) | $434.8K | 5.9% | $175.9 | dead | 2 | 30 | 2026-05-24 |
 | [endur](./endur/) | $9.4M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
-| [enosys](./enosys/) | $26.9M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
+| [enosys](./enosys/) | $17.2M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
 | [equalizer](./equalizer/) | $374.8K | 0.0% | $374.8K | declining | 0 | 292 | 2026-06-10 |
 | [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
 | [equilibria](./equilibria/) | $26.9M | 17.6% | $15.7M | declining | 6 | 119 | 2026-06-10 |
@@ -496,7 +496,7 @@
 | [revault](./revault/) | $2.5K | 45.0% | ? | declining | 1 | 75 | 2026-05-24 |
 | [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 12 | 84 | 2026-06-11 |
 | [rex-staking](./rex-staking/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [reya](./reya/) | $57.3M | 0.0% | $57.3M | declining | 0 | 293 | 2026-06-11 |
+| [reya](./reya/) | $57.3M | 0.0% | $57.3M | declining | 0 | 294 | 2026-06-12 |
 | [rezerve](./rezerve/) | $1.3M | 1.3% | $1.3M | active | 3 | 104 | 2026-06-11 |
 | [rho](./rho/) | $2.5M | 0.0% | ? | active | 3 | 31 | 2026-06-11 |
 | [ribbon-finance](./ribbon-finance/) | $179.3M | 31.0% | $148.6M | declining | 14 | 147 | 2026-06-11 |

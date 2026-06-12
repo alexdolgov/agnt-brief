@@ -7,11 +7,11 @@
 - Project: Reya (`reya`)
 - Website: [https://app.reya.xyz/trade?referredBy=z9hwcwwd](https://app.reya.xyz/trade?referredBy=z9hwcwwd)
 - Lifecycle: declining (Tier 0, 77.7% below peak)
-- Generated: 2026-06-11T02:17:00.277Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-12T13:59:47.255Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-769a
 - Chains: arbitrum, base, ethereum, optimism, polygon
-- Contract surface: 293 unique implementations (847 raw deployments)
-- DeFi Llama TVL: $17,801,617.00
+- Contract surface: 294 unique implementations (873 raw deployments)
+- DeFi Llama TVL: $17,182,352.00
 - On-chain TVL (included contracts): $57,285,303.85
 - TVL by chain: Arbitrum $25,498,622.13 | Optimism $17,673,037.53 | Ethereum $14,112,773.99 | Polygon $703.00 | Base $167.21
 
@@ -25,12 +25,12 @@ The Vault contracts on each chain are the core user-facing components, while Com
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/80 (0.0%)
-- Verified + Unaudited implementations: 73
+- Verified implementations audited: 0/81 (0.0%)
+- Verified + Unaudited implementations: 74
 - Verified by bytecode match: 7
 - Unverified implementations: 213
-- Unique implementations: 293
-- Raw deployments: 847
+- Unique implementations: 294
+- Raw deployments: 873
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $57,285,303.85
@@ -49,7 +49,7 @@ The Vault contracts on each chain are the core user-facing components, while Com
 
 - None
 
-### ⚠️ Verified + Unaudited (73)
+### ⚠️ Verified + Unaudited (74)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -65,7 +65,7 @@ The Vault contracts on each chain are the core user-facing components, while Com
 | CapacitorFactory | registry | ethereum | 6 deployments: ethereum [`0x11fbb9...45fc9a`](./contracts/ethereum-1/0x11fbb9116801db54bb51ff4df423e34e8b45fc9a/); optimism `0x866829...8ee7d0`; polygon `0x915580...c02a2d`; base `0x2a1094...1e163a`; base `0xdc2384...f253d0`; arbitrum `0xbce4cd...67136a` | ⚠️ Unaudited |
 | CaptureTheFees | unknown | optimism | 2 deployments: optimism [`0x49c79e...38fa82`](./contracts/optimism-10/0x49c79ed56df2301ec851fad0b2a566e4fe38fa82/); optimism `0xc87dbb...e06e39` | ⚠️ Unaudited |
 | CelerImplL1L2 | unknown | arbitrum | 13 deployments: ethereum `0x47e136...1be60e`; ethereum `0x6086c6...e13c47`; ethereum `0xb6fb30...dbefb9`; optimism `0x0c0858...0c5db6`; optimism `0x11695f...40a2d8`; optimism `0xb584d4...204599`; optimism `0xb8c328...efd76d`; polygon `0x14ac5b...736628`; polygon `0xb364b8...357680`; polygon `0xb48b74...b6787f`; polygon `0xe48ae3...948561`; arbitrum [`0x0aa26a...b32fb9`](./contracts/arbitrum-42161/0x0aa26a14c2559319f9def7304e93db5ae6b32fb9/); arbitrum `0x3f367b...15531a` | ⚠️ Unaudited |
-| CommonPlug | unknown | polygon | 10 deployments: optimism `0x9d245f...9545d0`; polygon [`0x57c651...c3f84e`](./contracts/polygon-137/0x57c651b7623690d5545a6aa8999f2a198bc3f84e/); polygon `0x6f0df1...d119a1`; polygon `0x72c948...f88dfe`; polygon `0x78771a...29128b`; polygon `0x9daef7...bf0d1f`; polygon `0xb1b65c...31e2c9`; polygon `0xb5c4e1...3a7b7e`; polygon `0xd3ef3c...aefa1e`; arbitrum `0x765cfb...9690fb` | ⚠️ Unaudited |
+| CommonPlug | unknown | polygon | 18 deployments: optimism `0x5df06c...426fb4`; optimism `0x6a8be0...bc1e46`; optimism `0x9d245f...9545d0`; optimism `0xf5b588...6ea2fd`; polygon [`0x44ebf1...e08cc2`](./contracts/polygon-137/0x44ebf1a711082e6373fb142ecfcb469cffe08cc2/); polygon `0x57c651...c3f84e`; polygon `0x6f0df1...d119a1`; polygon `0x72c948...f88dfe`; polygon `0x78771a...29128b`; polygon `0x9daef7...bf0d1f`; polygon `0xae7ab9...0ee139`; polygon `0xafbe4b...4eccf2`; polygon `0xb1b65c...31e2c9`; polygon `0xb5c4e1...3a7b7e`; polygon `0xd3ef3c...aefa1e`; arbitrum `0x4611a4...21919c`; arbitrum `0x765cfb...9690fb`; arbitrum `0xcea535...fed1aa` | ⚠️ Unaudited |
 | ConnectIt | unknown | optimism | [`0x18358f...0b3a5f`](./contracts/optimism-10/0x18358f1b750a8c38f041384c1f4d8867820b3a5f/) | ⚠️ Unaudited |
 | ConnectorPlug | unknown | ethereum | 83 deployments: ethereum [`0x02d537...83f8e3`](./contracts/ethereum-1/0x02d53793b18d032cd94d745f7586c6f66f83f8e3/); ethereum `0x1ae19b...ac7a63`; ethereum `0x1eb392...2d8166`; ethereum `0x200af8...077b7a`; ethereum `0x223033...56fb8d`; ethereum `0x22d836...8d8a99`; ethereum `0x2dba37...6f7d06`; ethereum `0x322957...5fec62`; ethereum `0x3553c0...10b4b3`; ethereum `0x4e8329...ee1738`; ethereum `0x5afa7d...5d2d9b`; ethereum `0x7e6da8...3bfe4d`; ethereum `0x91ce46...2428f7`; ethereum `0x998d7c...11f2e6`; ethereum `0xa621bc...b5c181`; ethereum `0xaadd94...3e6aef`; ethereum `0xadbc2c...9dd66a`; ethereum `0xcb473d...335ccf`; ethereum `0xcea535...fed1aa`; ethereum `0xcf814e...9fa09c`; ethereum `0xe38dcc...42837f`; ethereum `0xe88f6b...a19537`; ethereum `0xf71a92...90e880`; ethereum `0xfab1ef...4373a9`; optimism `0x082526...1acee9`; optimism `0x0fd785...f1d970`; optimism `0x1812ff...9b16a8`; optimism `0x242b28...064aa5`; optimism `0x27f4b2...658f64`; optimism `0x32bf26...88174c`; optimism `0x499239...b75833`; optimism `0x4bd04a...9e24c7`; optimism `0x52ee36...45e493`; optimism `0x55fa08...5d7671`; optimism `0x5b64ce...7aeb6f`; optimism `0x619085...083736`; optimism `0x716206...c210d4`; optimism `0x906a44...1109b4`; optimism `0xbc31ec...153a25`; optimism `0xc0acbb...91546c`; optimism `0xeab499...602572`; optimism `0xecaa24...9700c0`; optimism `0xf0a0b2...139793`; optimism `0xfd76d8...096c13`; polygon `0x0c105e...919730`; polygon `0x125d3f...eb24f0`; polygon `0x3e6bd7...94bb0f`; polygon `0x44343a...241b02`; polygon `0x69c2a7...c38ce0`; polygon `0xa042c2...c1bb6c`; polygon `0xb41a8f...728861`; polygon `0xb8d31f...41c56c`; polygon `0xe59678...edcec9`; polygon `0xfecba3...b1c6b9`; base `0x1281c1...d8d187`; base `0x19609e...0d97ac`; base `0x4bfdf4...6e5e91`; base `0x4f3e01...9255cd`; base `0x858f61...146251`; base `0x9cac5d...7d8b66`; base `0xe0361b...747ccd`; arbitrum `0x070fea...8bce43`; arbitrum `0x0a2064...c93b12`; arbitrum `0x17fc4c...6f8b21`; arbitrum `0x2e63d6...cf4571`; arbitrum `0x31dbda...583c86`; arbitrum `0x380915...7c3c67`; arbitrum `0x42c846...234afc`; arbitrum `0x5ea117...e1ff41`; arbitrum `0x6284b3...034516`; arbitrum `0x63d893...577c0f`; arbitrum `0x69adf4...f944d3`; arbitrum `0x7deb24...a672ca`; arbitrum `0x8752c7...f0a5f7`; arbitrum `0xa451cc...bc4ad9`; arbitrum `0xa8eaae...72151d`; arbitrum `0xadec92...8702eb`; arbitrum `0xb0d573...e9be83`; arbitrum `0xdc5650...763288`; arbitrum `0xe02c75...90047e`; arbitrum `0xe0a298...c0b55c`; arbitrum `0xf9715b...10d9b2`; arbitrum `0xff17d3...d7ff54` | ⚠️ Unaudited |
 | Controller | governance | optimism | 4 deployments: optimism [`0x5e648e...55a6aa`](./contracts/optimism-10/0x5e648e8391b4e7f764b3e79d8a786078c755a6aa/); optimism `0x6dc5f8...6b470c`; polygon `0xe24007...73ddd1`; arbitrum `0x9cf6f3...a1bc56` | ⚠️ Unaudited |
@@ -113,6 +113,7 @@ The Vault contracts on each chain are the core user-facing components, while Com
 | SigMaker | unknown | optimism | 2 deployments: optimism [`0x03709c...ababe8`](./contracts/optimism-10/0x03709c48dec486b64ddedacfbed43acea5ababe8/); optimism `0xb02113...95aeb7` | ⚠️ Unaudited |
 | SimilarDeployer | unknown | optimism | [`0x8e304e...6eb0de`](./contracts/optimism-10/0x8e304e89dc574dc3296bbbf94b3f81ae256eb0de/) | ⚠️ Unaudited |
 | SimulatorUtils | unknown | polygon | 3 deployments: ethereum `0x63c10c...2a0416`; optimism `0xba9c93...da4f97`; polygon [`0x61ce66...65ff34`](./contracts/polygon-137/0x61ce6673b00b2f0281e8b95c6b68c8275865ff34/) | ⚠️ Unaudited |
+| Socket | unknown | base | 18 deployments: ethereum `0x943ac2...9b16f9`; optimism `0x1eb392...2d8166`; optimism `0x234462...3ad4b6`; optimism `0x301bd2...a1c0a4`; optimism `0x91ce46...2428f7`; optimism `0xd10cb2...6bf573`; polygon `0x8b3613...8d2571`; polygon `0x8bc505...04873f`; polygon `0xad0fa5...7d23b3`; polygon `0xc20687...ded001`; polygon `0xfd1256...c7e47f`; base [`0x12e6e5...280156`](./contracts/base-8453/0x12e6e58864ce4402cf2b4b8a8e9c75ead7280156/); base `0x1d6811...d99ea4`; arbitrum `0x16e4a6...0a4ee8`; arbitrum `0x37cc67...55f6ba`; arbitrum `0x9e3e47...13a9d1`; arbitrum `0xbc080a...8306a7`; arbitrum `0xfb6daf...634066` | ⚠️ Unaudited |
 | SocketBatcher | periphery | arbitrum | 20 deployments: ethereum `0xcff802...b9f568`; optimism `0x208cb8...c54408`; optimism `0x2b351e...86fb7b`; optimism `0x2c76df...920b7e`; optimism `0x321767...707b59`; optimism `0x5afa7d...5d2d9b`; optimism `0xffb098...0c8fce`; polygon `0x1c2ec0...0bd6b7`; polygon `0x1d3695...5eaa49`; polygon `0x1edd57...eca934`; polygon `0x657a9b...3702bc`; polygon `0x69adf4...f944d3`; polygon `0x6a3496...b23a4d`; base `0x17a89b...a3145c`; arbitrum [`0x107e18...d468a8`](./contracts/arbitrum-42161/0x107e182815c5e164e05f0c2cf478ace44fd468a8/); arbitrum `0x1808ca...c0113b`; arbitrum `0x2ea720...1f4b8e`; arbitrum `0x96fef4...ae3b0b`; arbitrum `0xd7b2e3...0255f7`; arbitrum `0xfbb3a5...7a8bd7` | ⚠️ Unaudited |
 | SocketSentinel | unknown | ethereum | [`0xbd76be...9e5e80`](./contracts/ethereum-1/0xbd76bef34d770a28d391d67f88af8e7e9e9e5e80/) | ⚠️ Unaudited |
 | SurgePass | unknown | optimism | [`0x35479b...75f937`](./contracts/optimism-10/0x35479b023e508ee9a7b533dbb5b516bb6875f937/) | ⚠️ Unaudited |
@@ -376,80 +377,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x052b82...bb98ef`](./contracts/ethereum-1/0x052b82b3a096a592f3f28d4736c4796445bb98ef/) | Vault | core_logic | $57,285,303.85 | Verified native implementation with $57,285,303.85 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x4513f5...cfc24c`](./contracts/optimism-10/0x4513f50921a0333f2067ebdb9369daa81bcfc24c/) | AddressAssemble | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdf5f7d...319cae`](./contracts/ethereum-1/0xdf5f7dfdfc26ee5f629949e330bef56906319cae/) | ArbitrumL1Switchboard | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x6a4715...94a8d0`](./contracts/arbitrum-42161/0x6a4715fc607c9ebda1377563552d45cbd194a8d0/) | ArbitrumL2Switchboard | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x792b49...17e90d`](./contracts/optimism-10/0x792b49617491b936cbd61592f2c7d2e07d17e90d/) | BlockHashChain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x5ee146...0a021f`](./contracts/optimism-10/0x5ee146ea004afbb339d9c4164ca04c89f00a021f/) | BugSubmission | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x11fbb9...45fc9a`](./contracts/ethereum-1/0x11fbb9116801db54bb51ff4df423e34e8b45fc9a/) | CapacitorFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x49c79e...38fa82`](./contracts/optimism-10/0x49c79ed56df2301ec851fad0b2a566e4fe38fa82/) | CaptureTheFees | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x57c651...c3f84e`](./contracts/polygon-137/0x57c651b7623690d5545a6aa8999f2a198bc3f84e/) | CommonPlug | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x18358f...0b3a5f`](./contracts/optimism-10/0x18358f1b750a8c38f041384c1f4d8867820b3a5f/) | ConnectIt | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x02d537...83f8e3`](./contracts/ethereum-1/0x02d53793b18d032cd94d745f7586c6f66f83f8e3/) | ConnectorPlug | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x5e648e...55a6aa`](./contracts/optimism-10/0x5e648e8391b4e7f764b3e79d8a786078c755a6aa/) | Controller | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x0eaf03...71fe74`](./contracts/polygon-137/0x0eaf03567a21e32e0ce27f329b7d0e82a971fe74/) | Counter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x92c7a5...c2bb4d`](./contracts/optimism-10/0x92c7a51bd507736ac0dda48b5f35a4aad0c2bb4d/) | Easter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x063ce1...c380b6`](./contracts/arbitrum-42161/0x063ce19e9d682f38be70644a5fddae3a2ec380b6/) | ExecutionHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x052b82...bb98ef`](./contracts/optimism-10/0x052b82b3a096a592f3f28d4736c4796445bb98ef/) | ExecutionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x030274...dcb2a9`](./contracts/base-8453/0x03027410f25c527d5aeb3e6e56a6389611dcb2a9/) | FastSwitchboard | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x767ce2...b26041`](./contracts/optimism-10/0x767ce21d9f9dc90f524b0c67ebdf50ed5ab26041/) | FindTheSign | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x09b471...526b65`](./contracts/optimism-10/0x09b471b83b91bdb1aa361f05770cfceff7526b65/) | GasPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0xf873a0...032775`](./contracts/optimism-10/0xf873a063d74ae5f27aac1ef6317095a383032775/) | GatedCount | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x8f4ee8...ae4322`](./contracts/optimism-10/0x8f4ee8ab18ed25f787bc81a8d5e7b1d0deae4322/) | GimmeMonies | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0266a4...9929bc`](./contracts/arbitrum-42161/0x0266a47314472f295fdb5bb36f784093e69929bc/) | Hasher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x565810...686339`](./contracts/polygon-137/0x565810cbfa3cf1390963e5afa2fb953795686339/) | HyphenImplL1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x2eb0e1...3564c9`](./contracts/optimism-10/0x2eb0e1a4194204c6881ef13cdfe6e539b53564c9/) | Imbalance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x5eb0f5...58c5d3`](./contracts/optimism-10/0x5eb0f5958131b627063750a5d4efae37b258c5d3/) | King | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x063ce1...c380b6`](./contracts/optimism-10/0x063ce19e9d682f38be70644a5fddae3a2ec380b6/) | LimitExecutionHook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x46333e...cafdad`](./contracts/polygon-137/0x46333edd8a5bb17080457ca57f20d4086ccafdad/) | LimitHook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x08cea8...08121c`](./contracts/optimism-10/0x08cea8e6b3f8cf1c04f095edebbcc1df6f08121c/) | Loot3D | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x053178...60c76d`](./contracts/optimism-10/0x0531789edca5f6e641b8d3ae48ef9fda4660c76d/) | LootDAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x001dee...72faf7`](./contracts/polygon-137/0x001dee0dcaa5a2ad07fcf132047a0e5f2b72faf7/) | LootVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x60e04b...b5f8fb`](./contracts/optimism-10/0x60e04bab3d82a16a7963bcd44b494bd9bbb5f8fb/) | MakeItRain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x3f4e3d...53e88b`](./contracts/polygon-137/0x3f4e3dbcf53252a0aab7a566f1f4c9c45a53e88b/) | Messenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x6ec499...6d343c`](./contracts/optimism-10/0x6ec499b869716bb479a843cebe048a90ec6d343c/) | Miner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0xeb4b08...21d1c8`](./contracts/optimism-10/0xeb4b088441975a903fcda584aef0e985c721d1c8/) | MintableToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x852c5d...56ea3f`](./contracts/ethereum-1/0x852c5de08b9beb014cad171c16b12a8d7456ea3f/) | NativeArbitrumImpl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa7649a...7f03e4`](./contracts/ethereum-1/0xa7649aa944b7dce781859c18913c2dc8a97f03e4/) | NativePolygonImpl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2ddf16...b41fc0`](./contracts/ethereum-1/0x2ddf16ba6d0180e5357d5e170ef1917a01b41fc0/) | OneInchSwapImpl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x4aa89e...d297db`](./contracts/optimism-10/0x4aa89efdd4050dd40c1a3863294b6b148fd297db/) | OpenExecutionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0e674e...fe41ba`](./contracts/ethereum-1/0x0e674e057ec0ff97eea57b6a350dbaad22fe41ba/) | OptimismSwitchboard | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x15a552...1eee34`](./contracts/base-8453/0x15a55294b7278260ddffc659fb39a401871eee34/) | OptimisticSwitchboard | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0xbb7287...af50a2`](./contracts/optimism-10/0xbb7287aaf5fd6e4cd245e88d000ae41d79af50a2/) | OrderCheck2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x300e53...331ae1`](./contracts/optimism-10/0x300e530cbd5314860dd8a0e873c8c083d2331ae1/) | PacketSearch | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x657a9b...3702bc`](./contracts/optimism-10/0x657a9bdd0d2e89c1fb1f0a4c364dfd7d1a3702bc/) | PlayTime | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x992e0b...c40424`](./contracts/optimism-10/0x992e0ba66012858538ca20c621f9ccf09fc40424/) | PoisonPill | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x053407...5e62cd`](./contracts/ethereum-1/0x053407dfa30267f6332f3c94a9e9f704a55e62cd/) | PolygonL1Switchboard | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x16e4a6...0a4ee8`](./contracts/polygon-137/0x16e4a6af6e81c7997fc784c8e621316e480a4ee8/) | PolygonL2Switchboard | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x47e136...1be60e`](./contracts/optimism-10/0x47e136cf4a96e1afa72e19022f9699bbaa1be60e/) | RefuelBridgeImpl | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6d2906...564cbf`](./contracts/ethereum-1/0x6d290609b3f5f02d52f28d97c75a443ed8564cbf/) | Registry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x03709c...ababe8`](./contracts/optimism-10/0x03709c48dec486b64ddedacfbed43acea5ababe8/) | SigMaker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x053407...5e62cd`](./contracts/arbitrum-42161/0x053407dfa30267f6332f3c94a9e9f704a55e62cd/) | SignatureVerifier | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x8e304e...6eb0de`](./contracts/optimism-10/0x8e304e89dc574dc3296bbbf94b3f81ae256eb0de/) | SimilarDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x61ce66...65ff34`](./contracts/polygon-137/0x61ce6673b00b2f0281e8b95c6b68c8275865ff34/) | SimulatorUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x107e18...d468a8`](./contracts/arbitrum-42161/0x107e182815c5e164e05f0c2cf478ace44fd468a8/) | SocketBatcher | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x35479b...75f937`](./contracts/optimism-10/0x35479b023e508ee9a7b533dbb5b516bb6875f937/) | SurgePass | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x52a71b...c72daf`](./contracts/optimism-10/0x52a71b10ce5ecf54b6a583a8e1a2a6adf8c72daf/) | SwitchBeyond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0xbd69f4...b86056`](./contracts/optimism-10/0xbd69f42d91c57fe6ac84d1e57fc5c84428b86056/) | SwitchboardSimulator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x50d1f0...803319`](./contracts/arbitrum-42161/0x50d1f0d98a59441e43ecd259598d90b305803319/) | SyncPlug | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x7a369b...d821bc`](./contracts/optimism-10/0x7a369b3d9cba81d338b98e25422335bfd5d821bc/) | ThreeMessageCounts | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x03d0b0...11d528`](./contracts/polygon-137/0x03d0b006c8d97a025b50adc29d8130760a11d528/) | TransmitManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0xb81de2...849000`](./contracts/optimism-10/0xb81de21eb8811968c03c8ca96b2c5901ee849000/) | Traveller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0xafbe4b...4eccf2`](./contracts/optimism-10/0xafbe4bc31b3e5636e1446a987a42d8ad5b4eccf2/) | TwoMessageCounts | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x6f0df1...d119a1`](./contracts/optimism-10/0x6f0df1d93dc1673c933a81eb122112c511d119a1/) | Window | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x029057...9d88d0`](./contracts/optimism-10/0x029057df831cce19fc7adbb8d7283afcbb9d88d0/) | ZeroXRefuelImpl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 192 |
-| upstream | 8 |
-| standard_library | 1 |
-| needs_review | 92 |
+| native | 0 |
+| upstream | 2 |
+| standard_library | 0 |
+| needs_review | 292 |
 
 ## Scope Matching Notes
 

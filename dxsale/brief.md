@@ -5,11 +5,11 @@
 - Project: DxSale (`dxsale`)
 - Website: [https://dx.app](https://dx.app)
 - Lifecycle: active (Tier 0, 76% below peak)
-- Generated: 2026-06-11T12:00:34.555Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
-- Chains: arbitrum, avalanche, base, bsc, celo, ethereum, fantom, gnosis, harmony, moonriver, polygon
-- Contract surface: 352 unique implementations (388 raw deployments)
-- DeFi Llama TVL: $17,802,955.24
+- Generated: 2026-06-12T13:56:52.850Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-769a
+- Chains: arbitrum, avalanche, base, bsc, celo, ethereum, fantom, gnosis, harmony, moonriver, polygon, zksync-era
+- Contract surface: 358 unique implementations (404 raw deployments)
+- DeFi Llama TVL: $17,936,534.81
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -24,11 +24,11 @@ The DxSale family includes token factories (DxStandardToken), presale management
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/15 (0.0%)
-- Verified + Unaudited implementations: 9
-- Verified by bytecode match: 6
-- Unverified implementations: 337
-- Unique implementations: 352
-- Raw deployments: 388
+- Verified + Unaudited implementations: 8
+- Verified by bytecode match: 7
+- Unverified implementations: 343
+- Unique implementations: 358
+- Raw deployments: 404
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,13 +46,12 @@ The DxSale family includes token factories (DxStandardToken), presale management
 
 - None
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | BasicToken | token | ethereum | [`0x8acf43...78b184`](./contracts/ethereum-1/0x8acf43c8255918041e2b40995e614451ee78b184/) | ⚠️ Unaudited |
 | DxCustomDividendToken | token | avalanche | [`0x2f1b52...6b0284`](./contracts/avalanche-43114/0x2f1b52419009f8ab9c934ba559897904dd6b0284/) | ⚠️ Unaudited |
-| DxLockLPDep | unknown | polygon | 2 deployments: gnosis `0x832ccf...620d37`; polygon [`0x6fcc2e...687666`](./contracts/polygon-137/0x6fcc2e4efb4e05ddfc2154abe209356d5a687666/) | ⚠️ Unaudited |
 | DxNativeDividendToken | token | avalanche | 2 deployments: avalanche [`0x4bf72a...4e3604`](./contracts/avalanche-43114/0x4bf72a0d761bc31dca243ca5ee572dedf34e3604/); avalanche `0xe1cd76...c74ed5` | ⚠️ Unaudited |
 | DxStandardToken | token | ethereum | [`0x1d37fb...71589e`](./contracts/ethereum-1/0x1d37fb68b2679200844b57b2cf7a17260271589e/) | ⚠️ Unaudited |
 | hashFinder | unknown | arbitrum | [`0x2ff131...16d20c`](./contracts/arbitrum-42161/0x2ff131d69698e56f073ec60ef00274ebe216d20c/) | ⚠️ Unaudited |
@@ -66,7 +65,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ⚠️ Verified by Bytecode + Unaudited (6)
+### ⚠️ Verified by Bytecode + Unaudited (7)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
@@ -74,12 +73,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 |---|---|---|---|---|
 | CUSTOMTOKENDAPP | token | gnosis | 3 deployments: gnosis [`0xa3abea...dae47b`](./contracts/gnosis-100/0xa3abeafa40ca4456c3fde2bad46d592515dae47b/); polygon [`0xa3abea...dae47b`](./contracts/polygon-137/0xa3abeafa40ca4456c3fde2bad46d592515dae47b/); avalanche `0xfafcea...9489c0` | ⚠️ Unaudited (bytecode match) |
 | DxFire | unknown | celo | 5 deployments: ethereum `0x830cde...789db7`; gnosis `0xfbcbd0...6adbc5`; arbitrum `0xea8d06...5aafc1`; celo [`0x615c9e...960098`](./contracts/celo-42220/0x615c9ec24f2595528fe003782f6c706de0960098/); avalanche `0xf8f929...30f843` | ⚠️ Unaudited (bytecode match) |
+| DxLockLPDep | unknown | polygon | 12 deployments: ethereum `0x1ba00c...310fbd`; ethereum `0xc68c52...2925d3`; bsc `0x5b5e94...6829b6`; bsc `0xeb3a9c...53e449`; gnosis `0x832ccf...620d37`; gnosis `0xea8d06...5aafc1`; polygon [`0x036063...899cde`](./contracts/polygon-137/0x036063706396ad5dc49241451e955fbe05899cde/); polygon `0x6fcc2e...687666`; arbitrum `0x51f411...e96df4`; celo `0xc1e3f4...0710f8`; celo `0xc7065e...f48b38`; avalanche `0x77d054...f57809` | ⚠️ Unaudited (bytecode match) |
 | PresaleOwnerFinalize | unknown | ethereum | 16 deployments: ethereum [`0x10f485...817b95`](./contracts/ethereum-1/0x10f485b855be8e7d377fbe60e5d5676d88817b95/); ethereum `0x51f411...e96df4`; ethereum `0x694927...eae99a`; ethereum `0xaad287...bbfeb4`; gnosis `0x3917ae...6d5e73`; gnosis `0x554d52...4d199e`; gnosis `0x857b52...8b401e`; gnosis `0xdb6e6d...bd225d`; polygon `0x335a1f...af4db3`; polygon `0x554d52...4d199e`; polygon `0xb937c8...612dd4`; polygon `0xdb6e6d...bd225d`; avalanche `0x51f411...e96df4`; avalanche `0x603dd7...1d2b80`; avalanche `0x6cd69c...639b65`; avalanche `0xfcc9c5...d31cab` | ⚠️ Unaudited (bytecode match) |
 | StandardGenerator | unknown | avalanche | 3 deployments: gnosis `0xfcc9c5...d31cab`; polygon `0xed85da...b1ea6c`; avalanche [`0x1c8ab2...eee4af`](./contracts/avalanche-43114/0x1c8ab27b538b5e43c151460cbc6d271cb9eee4af/) | ⚠️ Unaudited (bytecode match) |
 | TokenAuditVerify | token | gnosis | 6 deployments: ethereum `0x66e7ce...2bdc91`; gnosis [`0x52c498...150c81`](./contracts/gnosis-100/0x52c4986c4dba182270ab205502c084d290150c81/); polygon `0x9c47ff...d51b15`; arbitrum `0x974252...c7d9e9`; celo `0xce576f...4f8907`; avalanche `0xbd8c57...f341b9` | ⚠️ Unaudited (bytecode match) |
 | TokenKYCVerify | token | polygon | 6 deployments: ethereum `0xb3d252...3c096a`; gnosis `0x7fb80f...3e3df0`; polygon [`0x04e21e...3cbf48`](./contracts/polygon-137/0x04e21e0c4749e77ba69b290df61de965233cbf48/); arbitrum `0x9aba45...58f755`; celo `0x126546...459b78`; avalanche `0xdad207...5b71fb` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (337)
+### ❓ Unverified (343)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -93,7 +93,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | `0x108c9d...bfe89e` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x166aa0...4bd72e` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x186031...979d0d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x1ba00c...310fbd` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x1dcbc8...7d7fc4` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x340db9...99a365` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x346c11...12ce3f` | ❓ Unverified |
@@ -122,7 +121,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | `0xbae21d...980d96` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xc08f20...ec40c7` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xc1d6ab...4b6559` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xc68c52...2925d3` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xc7065e...f48b38` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xd3604b...dab30b` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xd3ceaf...406c80` | ❓ Unverified |
@@ -136,6 +134,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | `0xf1a510...e7190a` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xf616fd...46346e` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xfcc9c5...d31cab` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | `0x2d0454...fce677` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | `0x81e0ef...70334d` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | `0x8655e5...e4679a` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0xa0f34d...7134f6` | ❓ Unverified |
 | UnnamedContract | unknown | gnosis | `0x0f358c...d47612` | ❓ Unverified |
 | UnnamedContract | unknown | gnosis | `0x126546...459b78` | ❓ Unverified |
@@ -169,11 +170,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | gnosis | `0xe17ed5...e47548` | ❓ Unverified |
 | UnnamedContract | unknown | gnosis | `0xe56143...167f2c` | ❓ Unverified |
 | UnnamedContract | unknown | gnosis | `0xe839d1...9c7d9f` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | `0xea8d06...5aafc1` | ❓ Unverified |
 | UnnamedContract | unknown | gnosis | `0xeb920a...7ed225` | ❓ Unverified |
 | UnnamedContract | unknown | gnosis | `0xeb9421...93cb52` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x020b4f...33f3f5` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x036063...899cde` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x03e466...a769d5` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x04c84c...ae51ba` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x05c8ea...aa22fb` | ❓ Unverified |
@@ -203,6 +202,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | polygon | `0x4bf72a...4e3604` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x4c022c...03305f` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x4cf8ec...2f0f14` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | `0x51919a...fbe751` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x56bef6...ef332d` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x5d206c...8bfbe5` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x5d7641...8768f6` | ❓ Unverified |
@@ -210,8 +210,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | polygon | `0x63d20b...f11f3b` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x656f4f...15cdd0` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x6805d1...63d48f` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | `0x6aee7e...84ee28` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x6b0ded...cb0a2e` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x6e3ef0...2eef10` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | `0x6e573d...b21066` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x7163df...1e7358` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x77d054...f57809` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x7ab684...99fd03` | ❓ Unverified |
@@ -234,6 +236,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | polygon | `0xb525de...60032d` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xb53459...055638` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xb5566a...7043cd` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | `0xb7e4d3...fc8381` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xb917fe...bceee9` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xb965ba...bbfe95` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xbd0d5e...129c67` | ❓ Unverified |
@@ -257,7 +260,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | polygon | `0xe839d1...9c7d9f` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xea8d06...5aafc1` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xeb3a9c...53e449` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | `0xee0c6d...9ff067` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xef8b07...ad2e25` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | `0xf24d02...6dc58c` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xf388fa...33246d` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xfbcbd0...6adbc5` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xfd03c0...697015` | ❓ Unverified |
@@ -271,13 +276,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | fantom | `0xbb7bef...9f907b` | ❓ Unverified |
 | UnnamedContract | unknown | fantom | `0xc1e3f4...0710f8` | ❓ Unverified |
 | UnnamedContract | unknown | fantom | `0xe4d7b8...9b3e3c` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | `0x12e0eb...ff683a` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | `0x1ba542...032618` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | `0x4b7b8c...3c2752` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | `0x51919a...fbe751` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | `0x6e573d...b21066` | ❓ Unverified |
 | UnnamedContract | unknown | moonriver | `0x983b00...ff6b9f` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x0dddd8...b4ec8c` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x17e8c8...f7f24f` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x19641a...b931b6` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x1c8ab2...eee4af` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x3052b6...74b656` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | `0x51f411...e96df4` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x594e88...9db341` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x603dd7...1d2b80` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x63d20b...f11f3b` | ❓ Unverified |
@@ -319,8 +328,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | celo | `0xa49cb6...881985` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0xb5566a...7043cd` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0xb937c8...612dd4` | ❓ Unverified |
-| UnnamedContract | unknown | celo | `0xc1e3f4...0710f8` | ❓ Unverified |
-| UnnamedContract | unknown | celo | `0xc7065e...f48b38` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0xcd5fd6...596b49` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0xceb9e1...a5be25` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0xd5f159...75c6dd` | ❓ Unverified |
@@ -373,7 +380,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | avalanche | `0x6fcc2e...687666` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x6fdd28...d7a35b` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x7163df...1e7358` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | `0x77d054...f57809` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x7cc708...b079b8` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x7ebf0d...c669ba` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x7fb80f...3e3df0` | ❓ Unverified |
@@ -433,28 +439,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| avalanche | [`0x2f1b52...6b0284`](./contracts/avalanche-43114/0x2f1b52419009f8ab9c934ba559897904dd6b0284/) | DxCustomDividendToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x615c9e...960098`](./contracts/celo-42220/0x615c9ec24f2595528fe003782f6c706de0960098/) | DxFire | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x6fcc2e...687666`](./contracts/polygon-137/0x6fcc2e4efb4e05ddfc2154abe209356d5a687666/) | DxLockLPDep | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x4bf72a...4e3604`](./contracts/avalanche-43114/0x4bf72a0d761bc31dca243ca5ee572dedf34e3604/) | DxNativeDividendToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1d37fb...71589e`](./contracts/ethereum-1/0x1d37fb68b2679200844b57b2cf7a17260271589e/) | DxStandardToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x2ff131...16d20c`](./contracts/arbitrum-42161/0x2ff131d69698e56f073ec60ef00274ebe216d20c/) | hashFinder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x10f485...817b95`](./contracts/ethereum-1/0x10f485b855be8e7d377fbe60e5d5676d88817b95/) | PresaleOwnerFinalize | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xa5da59...7cd7f9`](./contracts/avalanche-43114/0xa5da59f5126ee48ffd44e184c489ef8b2e7cd7f9/) | RouterDeployer | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x1c8ab2...eee4af`](./contracts/avalanche-43114/0x1c8ab27b538b5e43c151460cbc6d271cb9eee4af/) | StandardGenerator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xfc4076...2ce378`](./contracts/arbitrum-42161/0xfc40767d0ae11c7f08e156b59fa2e54bba2ce378/) | TestTimToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x04e21e...3cbf48`](./contracts/polygon-137/0x04e21e0c4749e77ba69b290df61de965233cbf48/) | TokenKYCVerify | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 153 |
+| native | 0 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 198 |
+| standard_library | 0 |
+| needs_review | 358 |
 
 ## Scope Matching Notes
 

@@ -5,7 +5,7 @@
 | Chain | polygon (137) |
 | Address | `0xe1ade612e8a568a4a060a60a22f890171d3dc63b` |
 | Role | adapter |
-| Origin | upstream |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (polygon [`0xe1ade612e8a568a4a060a60a22f890171d3dc63b`](../0xe1ade612e8a568a4a060a60a22f890171d3dc63b/)) |

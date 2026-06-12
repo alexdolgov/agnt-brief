@@ -6,8 +6,8 @@
 
 - Project: Credbull (`credbull`)
 - Lifecycle: dead (Tier 0, 99.9% below peak)
-- Generated: 2026-06-10T22:34:36.409Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-12T22:23:24.824Z
+- Pipeline run: v2-pipeline-2026-06-12-546062-9d5a
 - Chains: arbitrum, polygon
 - Contract surface: 83 unique implementations (128 raw deployments)
 - DeFi Llama TVL: $10,940,088.68
@@ -176,14 +176,20 @@ Verified + unaudited native implementations ranked by TVL:
 | polygon | [`0xb6367c...ede28c`](./contracts/polygon-137/0xb6367cd4b67c44e963ae81e9c1757a1c08ede28c/) | AllowedExternalPositionTypesPerManagerPolicy | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x5a739d...76d8e7`](./contracts/polygon-137/0x5a739da3099fd4fc954bd764099fc000da76d8e7/) | AllowedExternalPositionTypesPolicy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x3b6913...0194bd`](./contracts/polygon-137/0x3b6913a8ed4595919a6b4a9022208cede20194bd/) | AllowedSharesTransferRecipientsPolicy | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x4c3da7...67c2e7`](./contracts/polygon-137/0x4c3da79534300b2a8d494ebfe7a0aee28367c2e7/) | ArbitraryLoanPositionLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x2e4646...7a7d05`](./contracts/polygon-137/0x2e46462de3bf02d382c039bb021021f2277a7d05/) | ArbitraryLoanPositionParser | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xcc8090...ac678a`](./contracts/polygon-137/0xcc80908a82676e1fa89837b2a06350e546ac678a/) | ArrakisV2PriceFeed | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xe9d4d8...d27d86`](./contracts/polygon-137/0xe9d4d87478dcb10da0032f9fac8d253e9dd27d86/) | AssetValueCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x577349...381a08`](./contracts/arbitrum-42161/0x577349c99830d3c078034087a532581ef5381a08/) | CBL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xf5fc0e...1eb441`](./contracts/polygon-137/0xf5fc0e36c85552e44354132d188c33d9361eb441/) | ComptrollerLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xf19652...76857d`](./contracts/polygon-137/0xf19652f82eeacc4ec2c4284a3632c0e27d76857d/) | ConvertedQuoteAggregatorFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x133236...706bf2`](./contracts/polygon-137/0x1332367c181f1157f751b160187dcaa219706bf2/) | CumulativeSlippageTolerancePolicy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x2baa64...e82c87`](./contracts/polygon-137/0x2baa64f0ce9c2e60e91127fc3f40a72529e82c87/) | DepositWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x2e2527...032733`](./contracts/polygon-137/0x2e25271297537b8124b8f883a92ffd95c4032733/) | Dispatcher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xa82586...048017`](./contracts/polygon-137/0xa825861dd852a9aae44612228bf72e9b14048017/) | DispatcherOwnedBeaconFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x01460b...055f16`](./contracts/polygon-137/0x01460ba35cb6f847d65c5eee124e7e9e10055f16/) | EntranceRateBurnFee | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x88c9a1...fb78b8`](./contracts/polygon-137/0x88c9a11c7bb8bc274388d0db864ab87c14fb78b8/) | EntranceRateDirectFee | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xd72324...ca0cf1`](./contracts/polygon-137/0xd723241915bb1d3ac829cdef656ffdbb87ca0cf1/) | EnzymeVaultPriceFeed | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x0bbb96...d37879`](./contracts/polygon-137/0x0bbb9635d12a9c022b647f379224d88874d37879/) | ExitRateBurnFee | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xc5c7f7...99b848`](./contracts/polygon-137/0xc5c7f7c6e5e2db074d96b440d30d7aab2c99b848/) | ExitRateDirectFee | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xddd743...461deb`](./contracts/polygon-137/0xddd7432671f5adc1c82c7c875624c1b0bc461deb/) | FeeManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -192,7 +198,11 @@ Verified + unaudited native implementations ranked by TVL:
 | polygon | [`0xcdf038...4b7a33`](./contracts/polygon-137/0xcdf038dd3b66506d2e5378aee185b2f0084b7a33/) | FundValueCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xd70389...d93f08`](./contracts/polygon-137/0xd70389a7d6171e1dba6c3df4db7331811fd93f08/) | FundValueCalculatorRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xdaa8bb...e37323`](./contracts/polygon-137/0xdaa8bb19db0f85c57cf062cc8bf912d647e37323/) | FundValueCalculatorUsdWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x7a68d5...8c17d4`](./contracts/polygon-137/0x7a68d541af898c14fbd5ecbda3b402b18d8c17d4/) | GatedRedemptionQueueSharesWrapperFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x1ad5e5...4b62e3`](./contracts/polygon-137/0x1ad5e5acc060fafde8a0e37aa382c250d64b62e3/) | GatedRedemptionQueueSharesWrapperLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x905448...9be837`](./contracts/polygon-137/0x905448cb27f51d9a663fb18d57d76c49d19be837/) | GlobalConfigLib | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x97f13b...dbd843`](./contracts/polygon-137/0x97f13b3040a565be791d331b0edd4b1b58dbd843/) | ManagementFee | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x735615...c4354f`](./contracts/polygon-137/0x735615beb04bfd3665f06541ea00af1860c4354f/) | ManualValueOracleFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x9d940b...f8251e`](./contracts/polygon-137/0x9d940beaa6e3cfb441d49787fdf1db18d7f8251e/) | MinAssetBalancesPostRedemptionPolicy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xeb45b9...df19a3`](./contracts/polygon-137/0xeb45b91d582ae383e750a1626a97f854a9df19a3/) | MinSharesSupplyFee | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x006911...cf8b04`](./contracts/polygon-137/0x0069111def5258f692d88bde2116c9c211cf8b04/) | NoDepegOnRedeemSharesForSpecificAssetsPolicy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -205,9 +215,8 @@ Verified + unaudited native implementations ranked by TVL:
 | polygon | [`0xb8e6ed...6e23d5`](./contracts/polygon-137/0xb8e6eda0ce8fddd21f0b0268a43a57b9296e23d5/) | ProtocolFeeTracker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x42637a...fea3de`](./contracts/polygon-137/0x42637a6fe8dd32448be441a10782b4e29bfea3de/) | SharePriceThrottledAssetManagerFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x65d920...9a349c`](./contracts/polygon-137/0x65d9202b5494450310c43b6b47942305859a349c/) | SharePriceThrottledAssetManagerLib | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xd33e75...71233a`](./contracts/polygon-137/0xd33e75e1ae3185aa72d4365e1022ef23cd71233a/) | SingleAssetDepositQueueLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x1a0e33...9b8944`](./contracts/polygon-137/0x1a0e3326795a77903e2a11790bd702ebb29b8944/) | SharesSplitterFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x4b6b34...e026b9`](./contracts/polygon-137/0x4b6b342ba8bb29e2d1b542532e6b7be1cae026b9/) | SingleAssetRedemptionQueueFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xe54065...cf0b87`](./contracts/polygon-137/0xe54065f5b303c2843c769fb232b95bb893cf0b87/) | SingleAssetRedemptionQueueLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x52e83a...a92a17`](./contracts/polygon-137/0x52e83a4c9a123500e8324b9f489a681ffda92a17/) | TransferAssetsAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x6ddd87...166519`](./contracts/polygon-137/0x6ddd871c1607348ebb5be250f882255390166519/) | UintListRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x1648cc...d2b17b`](./contracts/polygon-137/0x1648cc031a1b6d60b5585ae21dae507a69d2b17b/) | UnpermissionedActionsWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -220,8 +229,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 50 |
-| upstream | 27 |
+| native | 58 |
+| upstream | 19 |
 | standard_library | 0 |
 | needs_review | 6 |
 

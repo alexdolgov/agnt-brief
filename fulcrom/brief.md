@@ -5,11 +5,11 @@
 - Project: Fulcrom (`fulcrom`)
 - Website: [https://fulcrom.finance](https://fulcrom.finance)
 - Lifecycle: active (Tier 0, 53.4% below peak)
-- Generated: 2026-06-10T23:29:09.107Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-12T22:22:46.125Z
+- Pipeline run: v2-pipeline-2026-06-12-546062-9d5a
 - Chains: cronos, zksync-era
 - Contract surface: 79 unique implementations (79 raw deployments)
-- DeFi Llama TVL: $13,322,016.00
+- DeFi Llama TVL: $10,941,272.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -163,10 +163,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 75 |
+| native | 78 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 4 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

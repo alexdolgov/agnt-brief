@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kava-lend",
-  "generated_at": "2026-06-11T00:17:36.583Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
+  "generated_at": "2026-06-12T22:25:01.569Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9d5a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "kava-lend",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 7791610.974099999,
-    "tvl_usd": 7791610.974099999,
+    "dl_tvl_usd": 10634284.00246,
+    "tvl_usd": 10634284.00246,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -76,7 +76,7 @@
       "address": "0xa8e48fa04881dfacfc8d0ab84bc9ba57a449fc1f",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Via Hardhat Verification Plugin ​",
       "tvl_usd": null,
@@ -128,10 +128,10 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

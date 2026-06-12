@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "fulcrom",
-  "generated_at": "2026-06-10T23:29:09.107Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-12T22:22:46.125Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9d5a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "fulcrom",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 13322016,
-    "tvl_usd": 13322016,
+    "dl_tvl_usd": 10941272,
+    "tvl_usd": 10941272,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -697,7 +697,7 @@
       "address": "0x83afb1c32e5637acd0a452d87c3249f4a9f0013a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Cronos",
       "tvl_usd": null,
@@ -759,7 +759,7 @@
       "address": "0x8c7ef34aa54210c76d6d5e475f43e0c11f876098",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Cronos",
       "tvl_usd": null,
@@ -2278,7 +2278,7 @@
       "address": "0xdddf221d5293619572616574ff46a2760f162075",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Fulcrom Perps",
       "tvl_usd": null,
@@ -2525,10 +2525,10 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 75,
+    "native": 78,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 4
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

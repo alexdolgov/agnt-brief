@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hemibtc",
-  "generated_at": "2026-06-11T11:45:35.361Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
+  "generated_at": "2026-06-12T22:28:53.972Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9d5a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hemibtc",
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 46,
-    "total_addresses": 98,
+    "total_addresses": 100,
     "unique_implementations": 46,
-    "total_deployments": 98,
+    "total_deployments": 100,
     "audited_contracts": 0,
     "unaudited_contracts": 36,
     "contracts_verified_audited": 0,
@@ -53,10 +53,10 @@
     "latest_audit_date": "2025-10",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 1,
-      "aging": 1,
+      "fresh": 3,
+      "aging": 2,
       "stale": 0,
-      "unknown": 3
+      "unknown": 0
     }
   },
   "topography": {
@@ -735,6 +735,15 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x5a7749f83b81b301cab5f48eb8516b986daef23d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -742,7 +751,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -1392,6 +1401,15 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x69d67c1caa8d0717dffa6d2e5b1f7f19926e5ef0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -1399,7 +1417,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -1664,7 +1682,7 @@
       "address": "0x04dcfe50e43823a1d8f6e3fbb8af10bfb7ebb634",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "L1 Hemi Contracts",
       "tvl_usd": null,
@@ -1695,7 +1713,7 @@
       "address": "0x580e543b3c8e42946050e0911c5582b2ff5ed9f4",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1726,7 +1744,7 @@
       "address": "0x7403b8b900c5c44f7adc3033f80f640afa4443bc",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1757,7 +1775,7 @@
       "address": "0x9865bbb4455e6f929fdcbab5505d201b5d493754",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1788,7 +1806,7 @@
       "address": "0x0c3497c91291f6a8db73efa7565a83f89ccb67d6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1819,7 +1837,7 @@
       "address": "0x5687ba62088aa4cd6a8df1930798fe510fd1ee0b",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1850,7 +1868,7 @@
       "address": "0x963b5bc11950ab4852e9c60992ec21827ebd0a34",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1912,7 +1930,7 @@
       "address": "0xe38d19b2950a386f44052ddc07fcb4a6d6b3ca10",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1943,7 +1961,7 @@
       "address": "0xe55744ebb196d0e4ddea70204142eaf517ef005a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2019,8 +2037,8 @@
       "report_url": "https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/Audit_Report_HEMI-TOK_FINAL_21.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "fresh",
+      "date": "2025-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -2040,8 +2058,8 @@
       "report_url": "https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/HemiToken%20-%20Final%20Report.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2025-04",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -2061,8 +2079,8 @@
       "report_url": "https://github.com/hemilabs/audit-reports/blob/master/veHEMI/Audit_Report_HEMI-VOT_FINAL_21.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "fresh",
+      "date": "2025-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -2270,10 +2288,10 @@
     }
   ],
   "origin_summary": {
-    "native": 24,
+    "native": 25,
     "upstream": 2,
     "standard_library": 2,
-    "needs_review": 18
+    "needs_review": 17
   },
   "scope_matching_notes": {
     "match_method_counts": {},

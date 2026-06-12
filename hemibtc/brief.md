@@ -5,10 +5,10 @@
 - Project: hemiBTC (`hemibtc`)
 - Website: [https://app.hemi.xyz/en/tunnel/](https://app.hemi.xyz/en/tunnel/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T11:45:35.361Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
+- Generated: 2026-06-12T22:28:53.972Z
+- Pipeline run: v2-pipeline-2026-06-12-546062-9d5a
 - Chains: bsc, ethereum, optimism
-- Contract surface: 46 unique implementations (98 raw deployments)
+- Contract surface: 46 unique implementations (100 raw deployments)
 - DeFi Llama TVL: $10,779,156.30
 - On-chain TVL (included contracts): $46,198.57
 - TVL by chain: Optimism $46,198.57
@@ -28,12 +28,12 @@ The L1 and L2 families are tightly coupled through the OP Stack bridge: L1 contr
 - Verified by bytecode match: 0
 - Unverified implementations: 10
 - Unique implementations: 46
-- Raw deployments: 98
+- Raw deployments: 100
 - Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $46,198.57
 - Latest audit: 2025-10 (fresh)
-- Staleness: 1 fresh, 1 aging, 0 stale, 3 unknown
+- Staleness: 3 fresh, 2 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -68,7 +68,7 @@ The L1 and L2 families are tightly coupled through the OP Stack bridge: L1 contr
 | L1ERC721Bridge | operational_periphery | ethereum | [`0xa44633...6bede0`](./contracts/ethereum-1/0xa446331bd28cbe0186a983a27c528f566b6bede0/) | ⚠️ Unaudited |
 | L1StandardBridge | bridge_template | ethereum | [`0x5eaa10...9f191e`](./contracts/ethereum-1/0x5eaa10f99e7e6d177ef9f74e519e319aa49f191e/) | ⚠️ Unaudited |
 | L2CrossDomainMessenger | unknown | optimism | [`0x420000...000007`](./contracts/optimism-10/0x4200000000000000000000000000000000000007/) | ⚠️ Unaudited |
-| L2ERC721Bridge | operational_periphery | optimism | [`0x420000...000014`](./contracts/optimism-10/0x4200000000000000000000000000000000000014/) | ⚠️ Unaudited |
+| L2ERC721Bridge | operational_periphery | optimism | 2 deployments: optimism [`0x420000...000014`](./contracts/optimism-10/0x4200000000000000000000000000000000000014/); optimism `0x5a7749...aef23d` | ⚠️ Unaudited |
 | L2OutputOracle | operational_periphery | ethereum | [`0x6daf3a...9c0d51`](./contracts/ethereum-1/0x6daf3a3497d8abdfe12915add9829f83a79c0d51/) | ⚠️ Unaudited |
 | L2StandardBridge | operational_periphery | optimism | [`0x420000...000010`](./contracts/optimism-10/0x4200000000000000000000000000000000000010/) | ⚠️ Unaudited |
 | L2ToL1MessagePasser | unknown | optimism | [`0x420000...000016`](./contracts/optimism-10/0x4200000000000000000000000000000000000016/) | ⚠️ Unaudited |
@@ -77,7 +77,7 @@ The L1 and L2 families are tightly coupled through the OP Stack bridge: L1 contr
 | MockLock | unknown | bsc | 2 deployments: bsc [`0x32a21e...169a23`](./contracts/bsc-56/0x32a21ec8ee93971d4b4093c0895fd841c7169a23/); bsc `0xded54c...aad82e` | ⚠️ Unaudited |
 | OFT | unknown | bsc | 6 deployments: bsc [`0x10061d...7b180c`](./contracts/bsc-56/0x10061d0593441ff74536158592e1be3f4c7b180c/); bsc `0x37d8c0...74d931`; bsc `0x64b5bb...609373`; bsc `0x707c24...412075`; bsc `0xa30e1a...076f30`; bsc `0xc141b6...a96515` | ⚠️ Unaudited |
 | OptimismMintableERC20Factory | registry | ethereum | 2 deployments: ethereum [`0x0262fe...09342c`](./contracts/ethereum-1/0x0262fedc4a98f94ddb90cef0e058644d8409342c/); optimism `0x420000...000012` | ⚠️ Unaudited |
-| OptimismMintableERC721Factory | registry | optimism | 2 deployments: optimism [`0x420000...000017`](./contracts/optimism-10/0x4200000000000000000000000000000000000017/); optimism `0x4482b6...ab29ac` | ⚠️ Unaudited |
+| OptimismMintableERC721Factory | registry | optimism | 3 deployments: optimism [`0x420000...000017`](./contracts/optimism-10/0x4200000000000000000000000000000000000017/); optimism `0x4482b6...ab29ac`; optimism `0x69d67c...6e5ef0` | ⚠️ Unaudited |
 | OptimismPortal | unknown | ethereum | [`0x39a000...3a4d7e`](./contracts/ethereum-1/0x39a0005415256b9863afe2d55edcf75ecc3a4d7e/) | ⚠️ Unaudited |
 | PreimageOracle | operational_periphery | ethereum | [`0x613f36...24ed20`](./contracts/ethereum-1/0x613f36be58ba712b37474f4b82484d680d24ed20/) | ⚠️ Unaudited |
 | ProtocolVersions | unknown | ethereum | [`0x13cb1b...f3ce48`](./contracts/ethereum-1/0x13cb1b6e69ec8ff6a5c8823d1e8dc78cccf3ce48/) | ⚠️ Unaudited |
@@ -122,9 +122,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [Audit_Report_HEMI-PRO_FINAL_22.pdf](https://github.com/hemilabs/audit-reports/blob/master/Bitcoin_Tunnel/Audit_Report_HEMI-PRO_FINAL_22.pdf) | HEMI-PRO | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
 | [Quantstamp - BTC Tunnel - FinalReport (1).pdf](https://github.com/hemilabs/audit-reports/blob/master/Bitcoin_Tunnel/Quantstamp%20-%20BTC%20Tunnel%20-%20FinalReport%20(1).pdf) | Quantstamp | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
-| [Audit_Report_HEMI-TOK_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/Audit_Report_HEMI-TOK_FINAL_21.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [HemiToken - Final Report.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/HemiToken%20-%20Final%20Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Audit_Report_HEMI-VOT_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/veHEMI/Audit_Report_HEMI-VOT_FINAL_21.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Audit_Report_HEMI-TOK_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/Audit_Report_HEMI-TOK_FINAL_21.pdf) | unknown | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
+| [HemiToken - Final Report.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/HemiToken%20-%20Final%20Report.pdf) | unknown | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
+| [Audit_Report_HEMI-VOT_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/veHEMI/Audit_Report_HEMI-VOT_FINAL_21.pdf) | unknown | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -156,10 +156,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 24 |
+| native | 25 |
 | upstream | 2 |
 | standard_library | 2 |
-| needs_review | 18 |
+| needs_review | 17 |
 
 ## Scope Matching Notes
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "helix-finance",
-  "generated_at": "2026-06-11T12:08:01.900Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
+  "generated_at": "2026-06-12T22:22:33.668Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9d5a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "helix-finance",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 10997362.14038,
-    "tvl_usd": 10997362.14038,
+    "dl_tvl_usd": 10996980.29756,
+    "tvl_usd": 10996980.29756,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

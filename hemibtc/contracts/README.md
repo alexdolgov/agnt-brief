@@ -1,6 +1,6 @@
 # hemibtc — Contract Index
 
-46 unique implementations across 3 chains · 98 deployments · 0 audited · 36 unaudited · 10 unverified
+46 unique implementations across 3 chains · 100 deployments · 0 audited · 36 unaudited · 10 unverified
 
 ## bridge_template (1)
 
@@ -32,7 +32,7 @@
 |---|---|---|---|---|
 | [GasPriceOracle](./optimism-10/0x420000000000000000000000000000000000000f/) | optimism | [`0x420000...00000f`](./optimism-10/0x420000000000000000000000000000000000000f/) | ⚠️ Unaudited | Verified |
 | [L1ERC721Bridge](./ethereum-1/0xa446331bd28cbe0186a983a27c528f566b6bede0/) | ethereum | [`0xa44633...6bede0`](./ethereum-1/0xa446331bd28cbe0186a983a27c528f566b6bede0/) | ⚠️ Unaudited | Verified |
-| [L2ERC721Bridge](./optimism-10/0x4200000000000000000000000000000000000014/) | optimism | [`0x420000...000014`](./optimism-10/0x4200000000000000000000000000000000000014/) | ⚠️ Unaudited | Verified |
+| [L2ERC721Bridge (2 deployments)](./optimism-10/0x4200000000000000000000000000000000000014/) | optimism | 2 deployments: optimism [`0x420000...000014`](./optimism-10/0x4200000000000000000000000000000000000014/); optimism `0x5a7749...aef23d` | ⚠️ Unaudited | Verified |
 | [L2OutputOracle](./ethereum-1/0x6daf3a3497d8abdfe12915add9829f83a79c0d51/) | ethereum | [`0x6daf3a...9c0d51`](./ethereum-1/0x6daf3a3497d8abdfe12915add9829f83a79c0d51/) | ⚠️ Unaudited | Verified |
 | [L2StandardBridge](./optimism-10/0x4200000000000000000000000000000000000010/) | optimism | [`0x420000...000010`](./optimism-10/0x4200000000000000000000000000000000000010/) | ⚠️ Unaudited | Verified |
 | [PreimageOracle](./ethereum-1/0x613f36be58ba712b37474f4b82484d680d24ed20/) | ethereum | [`0x613f36...24ed20`](./ethereum-1/0x613f36be58ba712b37474f4b82484d680d24ed20/) | ⚠️ Unaudited | Verified |
@@ -50,7 +50,7 @@
 | [AnchorStateRegistry](./ethereum-1/0xf44007eaf2fafdd8ba8d3551f23cd2b879f54677/) | ethereum | [`0xf44007...f54677`](./ethereum-1/0xf44007eaf2fafdd8ba8d3551f23cd2b879f54677/) | ⚠️ Unaudited | Verified |
 | [GnosisSafeProxyFactory (2 deployments)](./ethereum-1/0xa6b71e26c5e0845f74c812102ca7114b6a896ab2/) | ethereum | 2 deployments: ethereum [`0xa6b71e...896ab2`](./ethereum-1/0xa6b71e26c5e0845f74c812102ca7114b6a896ab2/); optimism `0xa6b71e...896ab2` | ⚠️ Unaudited | Verified |
 | [OptimismMintableERC20Factory (2 deployments)](./ethereum-1/0x0262fedc4a98f94ddb90cef0e058644d8409342c/) | ethereum | 2 deployments: ethereum [`0x0262fe...09342c`](./ethereum-1/0x0262fedc4a98f94ddb90cef0e058644d8409342c/); optimism `0x420000...000012` | ⚠️ Unaudited | Verified |
-| [OptimismMintableERC721Factory (2 deployments)](./optimism-10/0x4200000000000000000000000000000000000017/) | optimism | 2 deployments: optimism [`0x420000...000017`](./optimism-10/0x4200000000000000000000000000000000000017/); optimism `0x4482b6...ab29ac` | ⚠️ Unaudited | Verified |
+| [OptimismMintableERC721Factory (3 deployments)](./optimism-10/0x4200000000000000000000000000000000000017/) | optimism | 3 deployments: optimism [`0x420000...000017`](./optimism-10/0x4200000000000000000000000000000000000017/); optimism `0x4482b6...ab29ac`; optimism `0x69d67c...6e5ef0` | ⚠️ Unaudited | Verified |
 | [SchemaRegistry](./optimism-10/0x4200000000000000000000000000000000000020/) | optimism | [`0x420000...000020`](./optimism-10/0x4200000000000000000000000000000000000020/) | ⚠️ Unaudited | Verified |
 
 ## token (2)

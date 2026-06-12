@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "yuzu-money",
-  "generated_at": "2026-06-11T11:33:38.518Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
+  "generated_at": "2026-06-12T09:12:37.745Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-645a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "yuzu-money",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 28.59137260364588
   },
   "summary": {
-    "total_contracts": 8,
-    "total_addresses": 17,
-    "unique_implementations": 8,
-    "total_deployments": 17,
+    "total_contracts": 9,
+    "total_addresses": 18,
+    "unique_implementations": 9,
+    "total_deployments": 18,
     "audited_contracts": 0,
-    "unaudited_contracts": 8,
+    "unaudited_contracts": 9,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 8,
+    "contracts_verified_unaudited": 9,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 6,
     "scoreable_audits": 0,
     "dl_tvl_usd": 48954053.06726,
-    "tvl_usd": 41016284.514609635,
+    "tvl_usd": 41018081.02806464,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "plasma": 41016284.51
+      "plasma": 41018081.03
     },
-    "asd_usd": 41016284.514609635,
+    "asd_usd": 41018081.02806464,
     "website_url": "https://app.yuzu.money",
     "chains": [
       "plasma"
@@ -63,8 +63,8 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 8,
-    "has_non_token_contracts": false,
+    "unique_implementations": 9,
+    "has_non_token_contracts": true,
     "is_skeletal": false
   },
   "fork_lineage": {
@@ -78,7 +78,7 @@
       "address": "0x926b292f3b0fa2af6e6561c2bca28f0625130ec8",
       "name": "StakedYuzuUSDV2",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": 41016284.514609635,
@@ -124,11 +124,42 @@
     {
       "chain_id": 9745,
       "chain_name": "plasma",
+      "address": "0x517677a19d8ae6ff600fb86c3c7bfccd651e3eec",
+      "name": "TokenizedVault",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 1796.513455,
+      "is_proxy": true,
+      "impl_address": "0x30052bc920d770e829671861d8cb96851006e472",
+      "impl_name": "TokenizedVault",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x517677a19d8ae6ff600fb86c3c7bfccd651e3eec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1796.513455,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
       "address": "0x44f6e9b5c0fef82158dc98282078068b9bfb7e71",
       "name": "ProxyAdmin",
       "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -158,8 +189,8 @@
       "address": "0x2aa939b5c9cef10c170ad38c4b05a45f27199dea",
       "name": "PSM",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -207,8 +238,8 @@
       "address": "0x3fdd8e2d2e9170a00f5406089720dae39cd9e589",
       "name": "StakedYuzuUSD",
       "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -247,7 +278,7 @@
       "address": "0x7e8bc59b4126415c86c9bf1f8cb277b9d9249281",
       "name": "YuzuILP",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -287,7 +318,7 @@
       "address": "0x326839f792ba2ccf98a3ac28bb7de551539309bc",
       "name": "YuzuILPV2",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Yuzu Money",
       "tvl_usd": null,
@@ -327,8 +358,8 @@
       "address": "0x8e6026ac788415d03f38a46008a2a75d7c9cc340",
       "name": "YuzuUSD",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -367,7 +398,7 @@
       "address": "0x32d7d5bf842d6ae28c9dd4fac4c6662cf9bf5cfe",
       "name": "YuzuUSDV2",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Yuzu Money",
       "tvl_usd": null,
@@ -541,53 +572,12 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 9745,
-      "chain_name": "plasma",
-      "address": "0x926b292f3b0fa2af6e6561c2bca28f0625130ec8",
-      "name": "StakedYuzuUSDV2",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 41016284.514609635,
-      "risk_note": "Verified native implementation with $41,016,284.51 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 9745,
-      "chain_name": "plasma",
-      "address": "0x7e8bc59b4126415c86c9bf1f8cb277b9d9249281",
-      "name": "YuzuILP",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 9745,
-      "chain_name": "plasma",
-      "address": "0x326839f792ba2ccf98a3ac28bb7de551539309bc",
-      "name": "YuzuILPV2",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 9745,
-      "chain_name": "plasma",
-      "address": "0x32d7d5bf842d6ae28c9dd4fac4c6662cf9bf5cfe",
-      "name": "YuzuUSDV2",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 4,
+    "native": 0,
     "upstream": 0,
-    "standard_library": 4,
-    "needs_review": 0
+    "standard_library": 0,
+    "needs_review": 9
   },
   "scope_matching_notes": {
     "match_method_counts": {},

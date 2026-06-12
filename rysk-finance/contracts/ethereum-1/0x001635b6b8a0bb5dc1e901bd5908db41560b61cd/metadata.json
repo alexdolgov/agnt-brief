@@ -1,0 +1,17 @@
+{
+  "address": "0x001635b6b8a0bb5dc1e901bd5908db41560b61cd",
+  "chain_id": 1,
+  "contract_name": "ManualPricer",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T09:15:30.043Z"
+}

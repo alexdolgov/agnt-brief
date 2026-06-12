@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gate-us",
-  "generated_at": "2026-05-31T14:54:05.764Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-06de",
+  "generated_at": "2026-06-12T09:15:09.122Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-645a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "gate-us",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 56450216.06061,
-    "tvl_usd": 56450216.06061,
+    "dl_tvl_usd": 49098762.81963,
+    "tvl_usd": 49098762.81963,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

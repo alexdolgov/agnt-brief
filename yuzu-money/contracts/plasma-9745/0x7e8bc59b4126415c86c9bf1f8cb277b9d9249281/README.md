@@ -5,7 +5,7 @@
 | Chain | plasma (9745) |
 | Address | `0x7e8bc59b4126415c86c9bf1f8cb277b9d9249281` |
 | Role | unknown |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 2 (plasma [`0x7e8bc59b4126415c86c9bf1f8cb277b9d9249281`](../0x7e8bc59b4126415c86c9bf1f8cb277b9d9249281/); plasma `0xa5913fc4828f2750d24856e6b7bea3c16bb51531`) |

@@ -1,6 +1,12 @@
 # yuzu-money — Contract Index
 
-8 unique implementations on plasma · 17 deployments · 0 audited · 8 unaudited · 0 unverified
+9 unique implementations on plasma · 18 deployments · 0 audited · 9 unaudited · 0 unverified
+
+## core_logic (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [TokenizedVault](./plasma-9745/0x517677a19d8ae6ff600fb86c3c7bfccd651e3eec/) | plasma | [`0x517677...1e3eec`](./plasma-9745/0x517677a19d8ae6ff600fb86c3c7bfccd651e3eec/) | ⚠️ Unaudited | Verified |
 
 ## governance (1)
 

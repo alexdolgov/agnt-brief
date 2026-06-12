@@ -5,13 +5,13 @@
 - Project: Yuzu Money (`yuzu-money`)
 - Website: [https://app.yuzu.money](https://app.yuzu.money)
 - Lifecycle: active (Tier 0, 28.6% below peak)
-- Generated: 2026-06-11T11:33:38.518Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
+- Generated: 2026-06-12T09:12:37.745Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-645a
 - Chains: plasma
-- Contract surface: 8 unique implementations (17 raw deployments)
+- Contract surface: 9 unique implementations (18 raw deployments)
 - DeFi Llama TVL: $48,954,053.07
-- On-chain TVL (included contracts): $41,016,284.51
-- TVL by chain: Plasma $41,016,284.51
+- On-chain TVL (included contracts): $41,018,081.03
+- TVL by chain: Plasma $41,018,081.03
 
 ## Project Description
 
@@ -23,15 +23,15 @@ All contracts belong to a single product family deployed by the same deployer. Y
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/8 (0.0%)
-- Verified + Unaudited implementations: 8
+- Verified implementations audited: 0/9 (0.0%)
+- Verified + Unaudited implementations: 9
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 8
-- Raw deployments: 17
+- Unique implementations: 9
+- Raw deployments: 18
 - Audits discovered: 6
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $41,016,284.51
+- ASD (verified + unaudited TVL): $41,018,081.03
 - Latest audit: 2026-01 (fresh)
 - Staleness: 6 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,11 +46,12 @@ All contracts belong to a single product family deployed by the same deployer. Y
 
 - None
 
-### ⚠️ Verified + Unaudited (8)
+### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | StakedYuzuUSDV2 | token | plasma | 3 deployments: plasma [`0x926b29...130ec8`](./contracts/plasma-9745/0x926b292f3b0fa2af6e6561c2bca28f0625130ec8/); plasma `0xa39825...e5e9c8`; plasma `0xc8a8df...0a1bf6` | ⚠️ Unaudited |
+| TokenizedVault | core_logic | plasma | [`0x517677...1e3eec`](./contracts/plasma-9745/0x517677a19d8ae6ff600fb86c3c7bfccd651e3eec/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | plasma | [`0x44f6e9...fb7e71`](./contracts/plasma-9745/0x44f6e9b5c0fef82158dc98282078068b9bfb7e71/) | ⚠️ Unaudited |
 | PSM | unknown | plasma | 3 deployments: plasma [`0x2aa939...199dea`](./contracts/plasma-9745/0x2aa939b5c9cef10c170ad38c4b05a45f27199dea/); plasma `0x7000b8...957544`; plasma `0x933069...c863b2` | ⚠️ Unaudited |
 | StakedYuzuUSD | token | plasma | 2 deployments: plasma [`0x3fdd8e...d9e589`](./contracts/plasma-9745/0x3fdd8e2d2e9170a00f5406089720dae39cd9e589/); plasma `0xb14e7d...32160f` | ⚠️ Unaudited |
@@ -92,21 +93,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| plasma | [`0x926b29...130ec8`](./contracts/plasma-9745/0x926b292f3b0fa2af6e6561c2bca28f0625130ec8/) | StakedYuzuUSDV2 | token | $41,016,284.51 | Verified native implementation with $41,016,284.51 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0x7e8bc5...249281`](./contracts/plasma-9745/0x7e8bc59b4126415c86c9bf1f8cb277b9d9249281/) | YuzuILP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0x326839...9309bc`](./contracts/plasma-9745/0x326839f792ba2ccf98a3ac28bb7de551539309bc/) | YuzuILPV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0x32d7d5...bf5cfe`](./contracts/plasma-9745/0x32d7d5bf842d6ae28c9dd4fac4c6662cf9bf5cfe/) | YuzuUSDV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 0 |
 | upstream | 0 |
-| standard_library | 4 |
-| needs_review | 0 |
+| standard_library | 0 |
+| needs_review | 9 |
 
 ## Scope Matching Notes
 

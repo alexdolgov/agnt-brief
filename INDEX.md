@@ -225,7 +225,7 @@
 | [gains-network](./gains-network/) | $21.9M | 0.0% | $21.9M | active | 1 | 760 | 2026-06-10 |
 | [galaxy-curation](./galaxy-curation/) | $67.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [gamma](./gamma/) | $24.3K | 27.6% | $24.3K | active | 16 | 467 | 2026-06-10 |
-| [gate-us](./gate-us/) | $56.5M | 0.0% | ? | active | 0 | 9 | 2026-05-31 |
+| [gate-us](./gate-us/) | $49.1M | 0.0% | ? | active | 0 | 9 | 2026-06-12 |
 | [gearbox](./gearbox/) | $3.5M | 53.0% | ? | declining | 37 | 195 | 2026-06-10 |
 | [generic.money](./generic.money/) | $3.7M | 81.8% | ? | declining | 1 | 12 | 2026-06-10 |
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 1 | 2026-06-10 |
@@ -473,8 +473,8 @@
 | [probit-global](./probit-global/) | $12.8M | 0.0% | ? | dead | 0 | 3 | 2026-06-11 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-06-11 |
 | [puffer-finance](./puffer-finance/) | $225.1M | 36.4% | $169.2M | declining | 4 | 65 | 2026-06-11 |
-| [pulsechain-bridge](./pulsechain-bridge/) | $52.0M | 0.0% | ? | active | 0 | 5 | 2026-05-31 |
-| [pulsechain](./pulsechain/) | $52.0M | 0.0% | ? | active | 0 | 5 | 2026-06-11 |
+| [pulsechain-bridge](./pulsechain-bridge/) | $475.4K | 0.0% | $475.4K | active | 0 | 7 | 2026-06-12 |
+| [pulsechain](./pulsechain/) | $475.4K | 0.0% | $475.4K | active | 0 | 7 | 2026-06-12 |
 | [pumpspace](./pumpspace/) | $3.9M | 33.3% | ? | active | 3 | 666 | 2026-06-11 |
 | [punks-terminal](./punks-terminal/) | $1.5M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
 | [puzzleswaporg](./puzzleswaporg/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
@@ -511,7 +511,7 @@
 | [royco-protocol](./royco-protocol/) | $7.2 | 0.0% | $7.2 | active | 6 | 14 | 2026-06-11 |
 | [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 15 | 2026-05-31 |
 | [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-06-11 |
-| [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 0 | 186 | 2026-06-11 |
+| [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 0 | 193 | 2026-06-12 |
 | [saber](./saber/) | $4.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [safe](./safe/) | $64.0M | 0.0% | ? | unknown | 18 | 12 | 2026-06-12 |
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
@@ -701,7 +701,7 @@
 | [yieldnest](./yieldnest/) | $19.2M | 44.8% | $295.1K | active | 16 | 33 | 2026-06-11 |
 | [yieldseeker](./yieldseeker/) | $102.9M | 0.0% | $102.9M | active | 1 | 190 | 2026-06-11 |
 | [yo-protocol](./yo-protocol/) | $40.9M | 56.3% | $12.6K | declining | 7 | 20 | 2026-06-11 |
-| [yuzu-money](./yuzu-money/) | $41.0M | 0.0% | $41.0M | active | 6 | 8 | 2026-06-11 |
+| [yuzu-money](./yuzu-money/) | $41.0M | 0.0% | $41.0M | active | 6 | 9 | 2026-06-12 |
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-06-11 |
 | [zenlink](./zenlink/) | $5.3M | 0.0% | ? | declining | 1 | 226 | 2026-06-11 |
 | [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-06-11 |

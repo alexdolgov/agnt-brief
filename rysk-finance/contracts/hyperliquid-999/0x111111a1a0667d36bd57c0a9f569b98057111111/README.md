@@ -5,7 +5,7 @@
 | Chain | hyperliquid (999) |
 | Address | `0x111111a1a0667d36bd57c0a9f569b98057111111` |
 | Role | unknown |
-| Origin | upstream |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (hyperliquid [`0x111111a1a0667d36bd57c0a9f569b98057111111`](../0x111111a1a0667d36bd57c0a9f569b98057111111/)) |

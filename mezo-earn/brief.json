@@ -1,20 +1,20 @@
 {
   "schema_version": "2.0",
   "project_key": "mezo-earn",
-  "generated_at": "2026-06-12T09:16:45.067Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-645a",
+  "generated_at": "2026-06-12T19:07:43.443Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9988",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "mezo-earn",
     "tier": 0,
     "peak_tvl": 56465444,
     "peak_date": "2026-05-21T00:00:00.000Z",
-    "tvl_30d_ago": 33617947,
+    "tvl_30d_ago": 52724030,
     "tvl_90d_ago": null,
     "tvl_current": 36307455,
     "tier0_reason": "no_rule_matched",
     "tvl_180d_ago": null,
-    "change_30d_pct": 8.000214885221872,
+    "change_30d_pct": -31.13679853379948,
     "change_90d_pct": null,
     "days_since_peak": 22,
     "detection_method": "tvl_trajectory",
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 35.69969094726325
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
@@ -57,13 +57,13 @@
   },
   "topography": {
     "project_purpose": "Mezo Earn is the earning/allocation component of the Mezo protocol, allowing users to allocate supported assets into Mezo Earn/MezoAllocator logic to participate in the protocol's rewards and TVL program. The protocol/TVL chain should be identified as Mezo, while the discovered Ethereum address is part of the contract inventory as an upgradeable proxy pointing to the MezoAllocator implementation.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The protocol consists of a single product family with one core allocator contract behind a transparent upgradeable proxy, indicating a simple, upgradeable incentive distribution system.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 3,
     "has_non_token_contracts": true,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -76,7 +76,7 @@
       "address": "0xb90fdad3dfd180458d62cc6acedc983d78e20122",
       "name": "MezoAllocator",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Mezo Earn",
       "tvl_usd": null,
@@ -100,16 +100,99 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xab13b8eecf5aa2460841d75da5d5d861fd5b8a39",
+      "name": "Portal",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb3696cdddeaa764fef98dc109ece3defabab64d8",
+      "impl_name": "Portal",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xab13b8eecf5aa2460841d75da5d5d861fd5b8a39",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x260ca2abef5d38181e2562f00fa92ad1dc681734",
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x260ca2abef5d38181e2562f00fa92ad1dc681734",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb90fdad3dfd180458d62cc6acedc983d78e20122",
+      "name": "MezoAllocator",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xab13b8eecf5aa2460841d75da5d5d861fd5b8a39",
+      "name": "Portal",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 2,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 1
+    "standard_library": 1,
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

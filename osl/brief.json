@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "osl",
-  "generated_at": "2026-06-12T06:39:13.376Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-d6af",
+  "generated_at": "2026-06-12T19:08:27.687Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9988",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "osl",

@@ -5,8 +5,8 @@
 - Project: Gate US (`gate-us`)
 - Website: [https://www.gate.com/en-us](https://www.gate.com/en-us)
 - Lifecycle: active (Tier 0, 13.5% below peak)
-- Generated: 2026-06-12T09:15:09.122Z
-- Pipeline run: v2-pipeline-2026-06-12-6a3052-645a
+- Generated: 2026-06-12T19:10:53.221Z
+- Pipeline run: v2-pipeline-2026-06-12-546062-9988
 - Chains: chain-200, cronos, klaytn, manta, metis, scroll, sei
 - Contract surface: 9 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $49,098,762.82

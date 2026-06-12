@@ -5,8 +5,8 @@
 - Project: Flipster (`flipster`)
 - Website: [https://flipster.io](https://flipster.io)
 - Lifecycle: active (Tier 0, 85.7% below peak)
-- Generated: 2026-06-12T10:47:06.732Z
-- Pipeline run: v2-pipeline-2026-06-12-6a3052-b7d4
+- Generated: 2026-06-12T19:06:45.777Z
+- Pipeline run: v2-pipeline-2026-06-12-546062-9988
 - Chains: klaytn
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $33,006,244.36

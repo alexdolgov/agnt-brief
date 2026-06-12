@@ -7,31 +7,30 @@
 - Project: Mezo Earn (`mezo-earn`)
 - Website: [https://mezo.org/earn/lock](https://mezo.org/earn/lock)
 - Lifecycle: unknown (Tier 0, 35.7% below peak)
-- Generated: 2026-06-12T09:16:45.067Z
-- Pipeline run: v2-pipeline-2026-06-12-6a3052-645a
+- Generated: 2026-06-12T19:07:43.443Z
+- Pipeline run: v2-pipeline-2026-06-12-546062-9988
 - Chains: ethereum
-- Contract surface: 1 unique implementations (1 raw deployments)
+- Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $46,894,437.22
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Mezo Earn is the earning/allocation component of the Mezo protocol, allowing users to allocate supported assets into Mezo Earn/MezoAllocator logic to participate in the protocol's rewards and TVL program. The protocol/TVL chain should be identified as Mezo, while the discovered Ethereum address is part of the contract inventory as an upgradeable proxy pointing to the MezoAllocator implementation.
 
+### Architecture
+
+The protocol consists of a single product family with one core allocator contract behind a transparent upgradeable proxy, indicating a simple, upgradeable incentive distribution system.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/3 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
+- Unique implementations: 3
+- Raw deployments: 3
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -50,11 +49,13 @@ Mezo Earn is the earning/allocation component of the Mezo protocol, allowing use
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | MezoAllocator | operational_periphery | ethereum | [`0xb90fda...e20122`](./contracts/ethereum-1/0xb90fdad3dfd180458d62cc6acedc983d78e20122/) | ⚠️ Unaudited |
+| Portal | unknown | ethereum | [`0xab13b8...5b8a39`](./contracts/ethereum-1/0xab13b8eecf5aa2460841d75da5d5d861fd5b8a39/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | ethereum | [`0x260ca2...681734`](./contracts/ethereum-1/0x260ca2abef5d38181e2562f00fa92ad1dc681734/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -83,16 +84,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0xb90fda...e20122`](./contracts/ethereum-1/0xb90fdad3dfd180458d62cc6acedc983d78e20122/) | MezoAllocator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xab13b8...5b8a39`](./contracts/ethereum-1/0xab13b8eecf5aa2460841d75da5d5d861fd5b8a39/) | Portal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 1 |
+| standard_library | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

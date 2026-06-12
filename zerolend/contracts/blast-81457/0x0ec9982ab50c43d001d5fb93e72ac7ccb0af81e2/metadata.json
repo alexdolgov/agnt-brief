@@ -1,0 +1,18 @@
+{
+  "address": "0x0ec9982ab50c43d001d5fb93e72ac7ccb0af81e2",
+  "chain_id": 81457,
+  "contract_name": "TransferStrategyZERO",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "london",
+  "license": "AGPL-3.0, AGPL-3.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:26.304Z"
+}

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "pnetwork",
-  "generated_at": "2026-06-11T01:56:27.940Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-12T19:29:52.711Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9988",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "pnetwork",
@@ -17,29 +17,29 @@
     "change_30d_pct": 0,
     "change_90d_pct": 0,
     "governance_raw": {
-      "evidence": "TVL dropped 95% from peak but 90-day change is 0%, and the homepage shows staking and DAO features still operational, indicating natural decline without shutdown.",
-      "confidence": 0.9,
+      "evidence": "TVL dropped 95% from peak with no shutdown announcement, but protocol still has staking and DAO functionality.",
+      "confidence": 0.8,
       "lifecycle_status": "declining"
     },
-    "days_since_peak": 1669,
+    "days_since_peak": 1690,
     "detection_method": "tvl_trajectory+governance_signal",
     "governance_source": "docs_homepage",
     "drop_from_peak_pct": 95.30467762433108,
-    "governance_evidence": "TVL dropped 95% from peak but 90-day change is 0%, and the homepage shows staking and DAO features still operational, indicating natural decline without shutdown.",
-    "governance_confidence": 0.9,
+    "governance_evidence": "TVL dropped 95% from peak with no shutdown announcement, but protocol still has staking and DAO functionality.",
+    "governance_confidence": 0.8,
     "governance_text_chars": 283,
     "governance_classification": "declining",
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 10,
-    "total_addresses": 13,
-    "unique_implementations": 10,
-    "total_deployments": 13,
+    "total_contracts": 12,
+    "total_addresses": 15,
+    "unique_implementations": 12,
+    "total_deployments": 15,
     "audited_contracts": 0,
-    "unaudited_contracts": 9,
+    "unaudited_contracts": 11,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 9,
+    "contracts_verified_unaudited": 11,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
@@ -53,6 +53,7 @@
     "website_url": "https://p.network",
     "chains": [
       "arbitrum",
+      "ethereum",
       "gnosis",
       "polygon"
     ],
@@ -73,7 +74,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 10,
+    "unique_implementations": 12,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -327,6 +328,37 @@
       "contamination_flag": null
     },
     {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc25b475fcf0e970ecacd057d41787e0704ddc763",
+      "name": "PbtcV1StrategiesMigrator",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7d2452f21b4a2b6263e1325eb438faad3052a55c",
+      "impl_name": "PbtcV1StrategiesMigrator",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc25b475fcf0e970ecacd057d41787e0704ddc763",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0xe340031b61a394c7811868ef81d2eacc79098bc2",
@@ -344,6 +376,37 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xe340031b61a394c7811868ef81d2eacc79098bc2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc612b19fd761e5ff780b3c38996ff816afa26aae",
+      "name": "PTokenMigrator",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x76c6d6b39c43135cb6c7b4a7fe72f461bfdf2111",
+      "impl_name": "PTokenMigrator",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc612b19fd761e5ff780b3c38996ff816afa26aae",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -394,7 +457,7 @@
       "address": "0x374e9f3affb6a2c3e388aa69c21d925c193af13a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "pNetwork",
       "tvl_usd": null,
@@ -484,11 +547,31 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc25b475fcf0e970ecacd057d41787e0704ddc763",
+      "name": "PbtcV1StrategiesMigrator",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0xe340031b61a394c7811868ef81d2eacc79098bc2",
       "name": "PONGRewards",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc612b19fd761e5ff780b3c38996ff816afa26aae",
+      "name": "PTokenMigrator",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -505,10 +588,10 @@
     }
   ],
   "origin_summary": {
-    "native": 9,
+    "native": 10,
     "upstream": 0,
     "standard_library": 1,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

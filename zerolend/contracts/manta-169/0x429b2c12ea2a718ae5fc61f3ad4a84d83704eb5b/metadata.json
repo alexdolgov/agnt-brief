@@ -1,0 +1,17 @@
+{
+  "address": "0x429b2c12ea2a718ae5fc61f3ad4a84d83704eb5b",
+  "chain_id": 169,
+  "contract_name": "YieldBearingWETH",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "berlin",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:34.080Z"
+}

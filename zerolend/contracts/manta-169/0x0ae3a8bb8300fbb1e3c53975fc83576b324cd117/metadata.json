@@ -1,0 +1,17 @@
+{
+  "address": "0x0ae3a8bb8300fbb1e3c53975fc83576b324cd117",
+  "chain_id": 169,
+  "contract_name": "BorrowerOperations",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x000000000000000000000000c1d98af7f0836c94165915867bc2e54a084ce3de000000000000000000000000bf8216841b3c3032381bd3f7233895fe3b5bdcfb000000000000000000000000c11bd1e365e0050ddc6de5f3cf51e7e6f605298a0000000000000000000000000000000000000000000000001bc16d674ec800000000000000000000000000000000000000000000000000008ac7230489e80000",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:30.352Z"
+}

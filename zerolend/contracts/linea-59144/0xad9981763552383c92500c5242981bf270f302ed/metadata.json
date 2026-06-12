@@ -1,0 +1,17 @@
+{
+  "address": "0xad9981763552383c92500c5242981bf270f302ed",
+  "chain_id": 59144,
+  "contract_name": "OmnichainProposalSenderL1",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "0000000000000000000000001a44076050125825900e736c501f859c50fe728c",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:30:00.856Z"
+}

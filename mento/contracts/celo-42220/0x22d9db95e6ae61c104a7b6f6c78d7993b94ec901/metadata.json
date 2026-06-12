@@ -1,0 +1,18 @@
+{
+  "address": "0x22d9db95e6ae61c104a7b6f6c78d7993b94ec901",
+  "chain_id": 42220,
+  "contract_name": "BiPoolManagerProxy",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0xc016174b60519bdc24433d4ed2cff6c1efac7881",
+  "fetched_at": "2026-06-12T19:47:46.307Z"
+}

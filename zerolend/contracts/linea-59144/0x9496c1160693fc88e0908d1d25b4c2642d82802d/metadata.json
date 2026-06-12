@@ -1,0 +1,17 @@
+{
+  "address": "0x9496c1160693fc88e0908d1d25b4c2642d82802d",
+  "chain_id": 59144,
+  "contract_name": "LynexSwapper",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "000000000000000000000000610d2f07b7edc67565160f587f37636194c34e74",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:59.394Z"
+}

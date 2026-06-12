@@ -1,0 +1,17 @@
+{
+  "address": "0x21c4451914082ef76e2bdd4cdd689388e4ac979e",
+  "chain_id": 59144,
+  "contract_name": "Lyve",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:46.813Z"
+}

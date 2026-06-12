@@ -1,0 +1,17 @@
+{
+  "address": "0x5bad28dc681712552e4b6ddbb0118e83875132df",
+  "chain_id": 8453,
+  "contract_name": "OmnichainGovernanceExecutorL2",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "0000000000000000000000001a44076050125825900e736c501f859c50fe728c0000000000000000000000001f09ec21d7fd0a21879b919bf0f9c46e6b85ca8b",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:45.998Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x28559c2f4b038b1e836fa419dccde7454d8fe215",
+  "chain_id": 1,
+  "contract_name": "CrossChainControllerUpgradeRev2",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:35.817Z"
+}

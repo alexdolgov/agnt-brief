@@ -1,0 +1,17 @@
+{
+  "address": "0x06ebbfe85bec9e21e47f5d53ce56905f1d34ae48",
+  "chain_id": 8453,
+  "contract_name": "ListingContract",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "0000000000000000000000005213ab3997a596c75ac6ebf81f8aeb9cf9a31007",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:28.363Z"
+}

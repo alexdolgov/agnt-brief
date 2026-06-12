@@ -1,0 +1,17 @@
+{
+  "address": "0xb3136dbadb14ab587ffa91545538126938fe0c6e",
+  "chain_id": 42220,
+  "contract_name": "AddressesRegistry",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 42,
+  "constructor_arguments": "000000000000000000000000fdff3fd0994fed8be208a7bee49970ea9707e687",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T19:47:52.783Z"
+}

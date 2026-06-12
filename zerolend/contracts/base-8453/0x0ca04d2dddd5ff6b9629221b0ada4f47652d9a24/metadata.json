@@ -1,0 +1,17 @@
+{
+  "address": "0x0ca04d2dddd5ff6b9629221b0ada4f47652d9a24",
+  "chain_id": 8453,
+  "contract_name": "Locker",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:34.547Z"
+}

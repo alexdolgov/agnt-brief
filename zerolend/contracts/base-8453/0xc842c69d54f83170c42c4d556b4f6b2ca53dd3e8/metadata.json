@@ -1,0 +1,17 @@
+{
+  "address": "0xc842c69d54f83170c42c4d556b4f6b2ca53dd3e8",
+  "chain_id": 8453,
+  "contract_name": "ARMProxy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 26000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "00000000000000000000000038660c8cc222c0192b635c2ac09687b4f25cce5f",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:54.387Z"
+}

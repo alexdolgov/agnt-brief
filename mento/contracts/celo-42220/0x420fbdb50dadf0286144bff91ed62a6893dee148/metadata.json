@@ -1,0 +1,18 @@
+{
+  "address": "0x420fbdb50dadf0286144bff91ed62a6893dee148",
+  "chain_id": 42220,
+  "contract_name": "ReserveLiquidityStrategy",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T19:47:48.115Z"
+}

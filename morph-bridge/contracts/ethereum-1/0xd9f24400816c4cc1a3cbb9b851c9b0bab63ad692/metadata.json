@@ -1,0 +1,17 @@
+{
+  "address": "0xd9f24400816c4cc1a3cbb9b851c9b0bab63ad692",
+  "chain_id": 1,
+  "contract_name": "ZkEvmVerifierV1",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T19:26:56.625Z"
+}

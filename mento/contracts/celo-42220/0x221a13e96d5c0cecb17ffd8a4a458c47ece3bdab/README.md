@@ -1,0 +1,16 @@
+# Random
+
+| Field | Value |
+|---|---|
+| Chain | celo (42220) |
+| Address | `0x221a13e96d5c0cecb17ffd8a4a458c47ece3bdab` |
+| Role | unknown |
+| Origin | native |
+| Audited | Yes |
+| Audits | [<table><thead><tr><th width="143">Date</th><th>Link</th><th>Auditor</th><th width="100">Version</th></tr></thead><tbody><tr><td>03/2024</td><td><a href="https://0xmacro.com/library/audits/mento-3">Macro audit 3</a></td><td>Macro</td><td>V2.3.0</td></tr><tr><td>03/2024</td><td><a href="https://audits.sherlock.xyz/dashboard/404ec017225af69f6deff9b722393a44">Sherlock contest</a></td><td>Sherlock</td><td>V2.3.0</td></tr><tr><td>01/2024</td><td><a href="https://0xmacro.com/library/audits/mento-2">Macro audit 2</a></td><td>Macro</td><td>V2.3.0</td></tr><tr><td>08/2023</td><td><a href="https://0xmacro.com/library/audits/mento-1">Macro audit 1</a></td><td>Macro</td><td>V2.2.0</td></tr><tr><td>05/2023</td><td><a href="https://www.verilog.solutions/audits/mento/">Verilog (extended)</a></td><td>Verilog</td><td>v2.1.0</td></tr><tr><td>02/2023</td><td><a href="https://www.verilog.solutions/audits/mento/">Verilog</a></td><td>Verilog</td><td>v2.0.0</td></tr><tr><td>2020-2021</td><td><a href=">OpenZeppelin</a></td><td>OpenZeppelin</td><td>v1.0.0</td></tr></tbody></table>](https://www.openzeppelin.com/news/celo-contracts-audit) |
+| Deployments | 4 (celo [`0x221a13e96d5c0cecb17ffd8a4a458c47ece3bdab`](../0x221a13e96d5c0cecb17ffd8a4a458c47ece3bdab/); celo `0x22a4aaf42a50bfa7238182460e32f15859c93dfe`; celo `0x42e0749442a6daee233b320b23f6b52b0365bacd`; celo `0xe43ea9c641a2af9959caeee54adb089f65457028`) |
+| Proxy | No (implementation for 1 proxy: `0x22a4aa...c93dfe`) |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

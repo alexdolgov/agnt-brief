@@ -1,0 +1,17 @@
+{
+  "address": "0xfff48ee3bd2d534e35b54d538de30a9d7709d4b6",
+  "chain_id": 42220,
+  "contract_name": "CollSurplusPool",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 43,
+  "constructor_arguments": "000000000000000000000000b3136dbadb14ab587ffa91545538126938fe0c6e",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T19:47:53.828Z"
+}

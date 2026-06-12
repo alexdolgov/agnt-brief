@@ -1,0 +1,17 @@
+{
+  "address": "0x80137510979822322193fc997d400d5a6c747bf7",
+  "chain_id": 169,
+  "contract_name": "L2Stone",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x00000000000000000000000042000000000000000000000000000000000000100000000000000000000000007122985656e38bdc0302db86685bb972b145bd3c",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:34.562Z"
+}

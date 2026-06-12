@@ -1,0 +1,18 @@
+{
+  "address": "0x09edc8f101897aa693932c1966725e05d6d68b5f",
+  "chain_id": 1,
+  "contract_name": "InitializableImmutableAdminUpgradeabilityProxy",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "AGPL-3.0, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0x9c6f1367256be65ee744740c72ad80da5bc96ca6",
+  "fetched_at": "2026-06-12T20:29:30.222Z"
+}

@@ -7,10 +7,10 @@
 - Project: pNetwork (`pnetwork`)
 - Website: [https://p.network](https://p.network)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T01:56:27.940Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
-- Chains: arbitrum, gnosis, polygon
-- Contract surface: 10 unique implementations (13 raw deployments)
+- Generated: 2026-06-12T19:29:52.711Z
+- Pipeline run: v2-pipeline-2026-06-12-546062-9988
+- Chains: arbitrum, ethereum, gnosis, polygon
+- Contract surface: 12 unique implementations (15 raw deployments)
 - DeFi Llama TVL: $13,099,805.90
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -25,12 +25,12 @@ The pNetwork family shares infrastructure through proxy contracts like ArcProxy 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/9 (0.0%)
-- Verified + Unaudited implementations: 9
+- Verified implementations audited: 0/11 (0.0%)
+- Verified + Unaudited implementations: 11
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 10
-- Raw deployments: 13
+- Unique implementations: 12
+- Raw deployments: 15
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -49,7 +49,7 @@ The pNetwork family shares infrastructure through proxy contracts like ArcProxy 
 
 - None
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -60,7 +60,9 @@ The pNetwork family shares infrastructure through proxy contracts like ArcProxy 
 | L2TBTC | unknown | arbitrum | [`0x6c84a8...d0de40`](./contracts/arbitrum-42161/0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40/) | ⚠️ Unaudited |
 | MarinateAutoCompounder | adapter | arbitrum | [`0x1922c3...1684ab`](./contracts/arbitrum-42161/0x1922c36f3bc762ca300b4a46bb2102f84b1684ab/) | ⚠️ Unaudited |
 | NyanRewards | unknown | arbitrum | 3 deployments: arbitrum [`0x32e559...1aa724`](./contracts/arbitrum-42161/0x32e5594f14de658b0d577d6560fa0d9c6f1aa724/); arbitrum `0x62ff5b...d2da2c`; arbitrum `0xf6a377...4a703d` | ⚠️ Unaudited |
+| PbtcV1StrategiesMigrator | periphery | ethereum | [`0xc25b47...ddc763`](./contracts/ethereum-1/0xc25b475fcf0e970ecacd057d41787e0704ddc763/) | ⚠️ Unaudited |
 | PONGRewards | unknown | arbitrum | [`0xe34003...098bc2`](./contracts/arbitrum-42161/0xe340031b61a394c7811868ef81d2eacc79098bc2/) | ⚠️ Unaudited |
+| PTokenMigrator | token | ethereum | [`0xc612b1...a26aae`](./contracts/ethereum-1/0xc612b19fd761e5ff780b3c38996ff816afa26aae/) | ⚠️ Unaudited |
 | stARBIS | unknown | arbitrum | [`0xbf0075...d2db86`](./contracts/arbitrum-42161/0xbf00759d7e329d7a7fa1d4dcdc914c53d1d2db86/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -100,17 +102,19 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | [`0x2c5058...d49f45`](./contracts/arbitrum-42161/0x2c5058325373d02dfd6c08e48d91fcaf8fd49f45/) | CarbonRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1922c3...1684ab`](./contracts/arbitrum-42161/0x1922c36f3bc762ca300b4a46bb2102f84b1684ab/) | MarinateAutoCompounder | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x32e559...1aa724`](./contracts/arbitrum-42161/0x32e5594f14de658b0d577d6560fa0d9c6f1aa724/) | NyanRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc25b47...ddc763`](./contracts/ethereum-1/0xc25b475fcf0e970ecacd057d41787e0704ddc763/) | PbtcV1StrategiesMigrator | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xe34003...098bc2`](./contracts/arbitrum-42161/0xe340031b61a394c7811868ef81d2eacc79098bc2/) | PONGRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc612b1...a26aae`](./contracts/ethereum-1/0xc612b19fd761e5ff780b3c38996ff816afa26aae/) | PTokenMigrator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xbf0075...d2db86`](./contracts/arbitrum-42161/0xbf00759d7e329d7a7fa1d4dcdc914c53d1d2db86/) | stARBIS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 9 |
+| native | 10 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

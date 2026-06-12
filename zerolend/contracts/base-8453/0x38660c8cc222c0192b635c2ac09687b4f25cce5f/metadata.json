@@ -1,0 +1,18 @@
+{
+  "address": "0x38660c8cc222c0192b635c2ac09687b4f25cce5f",
+  "chain_id": 8453,
+  "contract_name": "ARM",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 26000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:42.546Z"
+}

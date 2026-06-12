@@ -1,0 +1,17 @@
+{
+  "address": "0x0a1198ddb5247a283f76077bb1e45e5858ee100b",
+  "chain_id": 8453,
+  "contract_name": "UiPoolDataProviderV3",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "00000000000000000000000071041dddad3595f9ced3dccfbe3d1f4b0a16bb7000000000000000000000000071041dddad3595f9ced3dccfbe3d1f4b0a16bb70",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:28.785Z"
+}

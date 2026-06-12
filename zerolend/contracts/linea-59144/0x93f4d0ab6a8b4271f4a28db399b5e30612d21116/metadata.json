@@ -1,0 +1,17 @@
+{
+  "address": "0x93f4d0ab6a8b4271f4a28db399b5e30612d21116",
+  "chain_id": 59144,
+  "contract_name": "StoneCross",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "000000000000000000000000b6319cc6c8c27a8f5daf0dd3df91ea35c4720dd700000000000000000000000000000000000000000000003635c9adc5dea00000",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:33.751Z"
+}

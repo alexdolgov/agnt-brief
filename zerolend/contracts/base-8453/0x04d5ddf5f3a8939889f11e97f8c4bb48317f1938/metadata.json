@@ -1,0 +1,18 @@
+{
+  "address": "0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938",
+  "chain_id": 8453,
+  "contract_name": "ChildUSDz",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "LZBL-1.2, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 54,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:31.174Z"
+}

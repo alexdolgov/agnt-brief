@@ -1,47 +1,48 @@
 {
   "schema_version": "2.0",
   "project_key": "hashkey-global",
-  "generated_at": "2026-06-10T23:44:15.857Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-12T19:26:03.650Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9988",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hashkey-global",
     "tier": 0,
     "peak_tvl": 105255991,
     "peak_date": "2024-05-31T00:00:00.000Z",
-    "tvl_30d_ago": 16667278,
-    "tvl_90d_ago": 12905155,
-    "tvl_current": 15112170,
+    "tvl_30d_ago": 15588864,
+    "tvl_90d_ago": 15543211,
+    "tvl_current": 13319234,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 17161747,
-    "change_30d_pct": -9.330305764384562,
-    "change_90d_pct": 17.10180931573468,
-    "days_since_peak": 721,
+    "tvl_180d_ago": 16644641,
+    "change_30d_pct": -14.559303359115841,
+    "change_90d_pct": -14.308349799793621,
+    "days_since_peak": 742,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 85.64246095977568
+    "drop_from_peak_pct": 87.34586613696887
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 15094354.085600004,
-    "tvl_usd": 15094354.085600004,
+    "dl_tvl_usd": 13434700.78923,
+    "tvl_usd": 13434700.78923,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.hashkey.com",
     "chains": [
+      "ethereum",
       "scroll"
     ],
     "tier1_coverage_pct": 0,
@@ -61,7 +62,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 3,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -70,6 +71,37 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x557683a5fa469d00516dee63fbf345c450cf647a",
+      "name": "HSKImplementationV1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HSKImplementationV1",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x557683a5fa469d00516dee63fbf345c450cf647a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 534352,
       "chain_name": "scroll",
@@ -135,9 +167,20 @@
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x557683a5fa469d00516dee63fbf345c450cf647a",
+      "name": "HSKImplementationV1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 2

@@ -1,0 +1,18 @@
+{
+  "address": "0xb38aef2bf4e34b997330d626ebcd7629de3885c9",
+  "chain_id": 42220,
+  "contract_name": "TroveManager",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 48,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T19:47:52.750Z"
+}

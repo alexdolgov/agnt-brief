@@ -1,0 +1,17 @@
+{
+  "address": "0x468fab73dd9be2d38ec58ee0cd5de2e2e9ef98fc",
+  "chain_id": 59144,
+  "contract_name": "VesselManagerOperations",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:54.810Z"
+}

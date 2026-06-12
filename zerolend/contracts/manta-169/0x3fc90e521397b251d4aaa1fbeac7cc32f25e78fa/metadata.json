@@ -1,0 +1,17 @@
+{
+  "address": "0x3fc90e521397b251d4aaa1fbeac7cc32f25e78fa",
+  "chain_id": 169,
+  "contract_name": "AaveEcosystemReserveController",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "berlin",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000000f6e98a756a40dd050dc78959f45559f98d3289d",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:33.166Z"
+}

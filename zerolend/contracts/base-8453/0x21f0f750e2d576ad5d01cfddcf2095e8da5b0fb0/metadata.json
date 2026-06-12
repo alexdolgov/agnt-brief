@@ -1,0 +1,18 @@
+{
+  "address": "0x21f0f750e2d576ad5d01cfddcf2095e8da5b0fb0",
+  "chain_id": 8453,
+  "contract_name": "Deployer",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "GPL-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:39.199Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xa185ca8b2894b8d0c26448a7ac6902a96d13e580",
+  "chain_id": 8453,
+  "contract_name": "ZAIUSDCvAMMOracle",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:49.591Z"
+}

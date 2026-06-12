@@ -1,0 +1,17 @@
+{
+  "address": "0x12205d78b28b7a3f350dbc703fc610db13d1b615",
+  "chain_id": 59144,
+  "contract_name": "UpdateZeroNFTScript",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "0000000000000000000000009fa72ea96591e486ff065e7c8a89282dedfa6c12",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:43.593Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x6bce839e9772001a917041be2ea69fea87b435d0",
+  "chain_id": 59144,
+  "contract_name": "LsdRateOracle",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "000000000000000000000000b5bedd42000b71fdde22d3ee8a79bd49a568fc8f000000000000000000000000937b94dc8c81ed42b2ada5855b220f098568b2be",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:58.195Z"
+}

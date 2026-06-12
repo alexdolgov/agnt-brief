@@ -1,0 +1,17 @@
+{
+  "address": "0x533778430b3724d40f4b515b3172085427573202",
+  "chain_id": 59144,
+  "contract_name": "EsLyve",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "000000000000000000000000b55e892d38056481bb5bb361eddbc8c2c1477827000000000000000000000000e5d7c2a44ffddf6b295a15c148167daaaf5cf34f000000000000000000000000da131cb1c1729a08352d5d432dda984727fba447000000000000000000000000aa18cdb16a4dd88a59f4c2f45b5c91d009549e06000000000000000000000000ee63656dc27213ce9a19ea3e0d541d9a7649baa7000000000000000000000000b55e892d38056481bb5bb361eddbc8c2c1477827eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T20:29:58.010Z"
+}

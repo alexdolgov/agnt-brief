@@ -18,14 +18,14 @@
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | active | 0 | 5 | 2026-06-10 |
 | [aevo](./aevo/) | $96.8M | 11.8% | $26.1M | active | 13 | 256 | 2026-06-10 |
 | [aftermath-finance](./aftermath-finance/) | $5.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [ailayer-farm](./ailayer-farm/) | $211.9K | 0.0% | $211.9K | active | 0 | 1 | 2026-06-10 |
+| [ailayer-farm](./ailayer-farm/) | $211.9K | 0.0% | $211.9K | active | 0 | 1 | 2026-06-12 |
 | [aitech](./aitech/) | $4.0M | 0.0% | ? | active | 1 | 2 | 2026-06-10 |
 | [alchemix](./alchemix/) | $340.7M | 6.4% | $338.7M | active | 11 | 388 | 2026-06-10 |
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 15 | 58 | 2026-06-10 |
 | [allbridge](./allbridge/) | $19.3M | 0.0% | $19.3M | declining | 8 | 282 | 2026-06-10 |
 | [alpaca-finance](./alpaca-finance/) | $11.5M | 57.4% | $11.2M | declining | 19 | 144 | 2026-06-10 |
 | [alphagrowth](./alphagrowth/) | $6.3M | 0.0% | $6.3M | active | 16 | 55 | 2026-06-11 |
-| [alphaping](./alphaping/) | $67.9M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
+| [alphaping](./alphaping/) | $73.6M | 0.0% | $73.6M | active | 0 | 4 | 2026-06-12 |
 | [alphax](./alphax/) | $218.2K | 0.0% | $218.2K | active | 1 | 1 | 2026-06-10 |
 | [altitude.fi](./altitude.fi/) | $16.1M | 72.2% | ? | declining | 7 | 124 | 2026-06-10 |
 | [ambient](./ambient/) | $2.7M | 64.7% | ? | declining | 3 | 30 | 2026-06-10 |
@@ -261,7 +261,7 @@
 | [hera-finance](./hera-finance/) | $6.5M | 42.9% | ? | active | 3 | 28 | 2026-06-10 |
 | [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-06-10 |
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-06-11 |
-| [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 4 | 2 | 2026-06-10 |
+| [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 0 | 19 | 2026-06-12 |
 | [hopr](./hopr/) | $1.4M | 4.3% | ? | active | 2 | 81 | 2026-06-11 |
 | [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
 | [houses-of-rome](./houses-of-rome/) | $0.0 | 0.0% | ? | dead | 0 | 51 | 2026-06-10 |
@@ -343,7 +343,7 @@
 | [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-31 |
 | [magma-staking](./magma-staking/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [magpie-ecosystem](./magpie-ecosystem/) | $24.6M | 0.0% | ? | declining | 4 | 662 | 2026-06-11 |
-| [mainstreet](./mainstreet/) | $78.2M | 100.0% | ? | active | 1 | 1 | 2026-06-11 |
+| [mainstreet](./mainstreet/) | $77.7M | 9.1% | $77.7M | active | 1 | 11 | 2026-06-12 |
 | [makina](./makina/) | $12.9M | 90.9% | $12.9M | active | 4 | 36 | 2026-06-11 |
 | [mangrove](./mangrove/) | $4.3M | 22.0% | ? | active | 6 | 68 | 2026-06-11 |
 | [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 0 | 5 | 2026-06-11 |

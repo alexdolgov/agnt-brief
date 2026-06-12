@@ -5,11 +5,11 @@
 - Project: AILayer farm (`ailayer-farm`)
 - Website: [https://ailayer.xyz/](https://ailayer.xyz/)
 - Lifecycle: active (Tier 0, 89.1% below peak)
-- Generated: 2026-06-10T20:58:56.589Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-12T04:49:39.501Z
+- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $76,399,480.65
+- DeFi Llama TVL: $65,666,011.09
 - On-chain TVL (included contracts): $211,858.71
 - TVL by chain: Bsc $211,858.71
 
@@ -80,18 +80,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| bsc | [`0x66e3da...442244`](./contracts/bsc-56/0x66e3daa0c86e0ad56302d36af0e7c1ba24442244/) | AILayerToken | token | $211,858.71 | Verified native implementation with $211,858.71 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

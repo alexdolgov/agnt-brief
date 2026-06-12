@@ -5,7 +5,7 @@
 | Chain | ethereum (1) |
 | Address | `0x088117ed2b7ac7ae1801fac4f359e1aed95ca866` |
 | Role | governance |
-| Origin | standard_library |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (ethereum [`0x088117ed2b7ac7ae1801fac4f359e1aed95ca866`](../0x088117ed2b7ac7ae1801fac4f359e1aed95ca866/)) |

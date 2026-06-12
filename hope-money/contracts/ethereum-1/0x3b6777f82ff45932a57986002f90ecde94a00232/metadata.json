@@ -1,0 +1,18 @@
+{
+  "address": "0x3b6777f82ff45932a57986002f90ecde94a00232",
+  "chain_id": 1,
+  "contract_name": "HopeLendEcosystemReserveController",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "GPL-3.0, LGPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T04:53:07.108Z"
+}

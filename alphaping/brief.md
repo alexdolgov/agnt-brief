@@ -4,35 +4,34 @@
 
 - Project: AlphaPing (`alphaping`)
 - Website: [https://alphaping.ch/](https://alphaping.ch/)
-- Lifecycle: active (Tier 0, 35.3% below peak)
-- Generated: 2026-06-10T20:58:56.810Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Lifecycle: active (Tier 0, 30.4% below peak)
+- Generated: 2026-06-12T04:50:02.869Z
+- Pipeline run: v2-pipeline-2026-06-12-c31370-dba8
 - Chains: ethereum
-- Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $67,874,222.07
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
+- Contract surface: 4 unique implementations (17 raw deployments)
+- DeFi Llama TVL: $75,877,833.29
+- On-chain TVL (included contracts): $73,583,464.49
+- TVL by chain: Ethereum $73,583,464.49
 
 ## Project Description
 
 AlphaPing is a mandate-driven, non-custodial on-chain credit/lending vault protocol with explicit risk constraints and verifiable accounting. Its live protocol surface is expected to include vault, share-token, strategy, accounting, manager, or related protocol contracts beyond the captured Safe multisig/admin wallet.
 
+### Architecture
+
+The protocol consists of a single product family centered on a Safe multisig, which serves as the core infrastructure for risk curation activities.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/4 (0.0%)
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
+- Unique implementations: 4
+- Raw deployments: 17
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $73,583,464.49
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -47,11 +46,14 @@ AlphaPing is a mandate-driven, non-custodial on-chain credit/lending vault proto
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| Safe | proxy | ethereum | [`0xeb4af6...c04645`](./contracts/ethereum-1/0xeb4af6fa3afa08b10d593ec8ff87efb03bc04645/) | ⚠️ Unaudited |
+| VaultV2 | core_logic | ethereum | 9 deployments: ethereum [`0x0bf016...eaa334`](./contracts/ethereum-1/0x0bf0164d17469241b6e086da4016dcc54feaa334/); ethereum `0x153bd1...d64a57`; ethereum `0x35cbe8...b4f560`; ethereum `0x610f5b...e4ae7e`; ethereum `0x951a9f...b6c0f8`; ethereum `0x9f39b1...eefa82`; ethereum `0xd8cd72...da0c27`; ethereum `0xeb6719...bf202c`; ethereum `0xf1ca44...76f9a1` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | ethereum | 6 deployments: ethereum [`0x47fe8a...f47efc`](./contracts/ethereum-1/0x47fe8ab9ee47dd65c24df52324181790b9f47efc/); ethereum `0x670195...45cb90`; ethereum `0x874e7f...81939c`; ethereum `0xb0f05e...504ba9`; ethereum `0xf9b85b...e8d4c8`; ethereum `0xfa7ed4...c40c63` | ⚠️ Unaudited |
+| Morpho | unknown | ethereum | [`0xbbbbbb...eeffcb`](./contracts/ethereum-1/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | [`0xeb4af6...c04645`](./contracts/ethereum-1/0xeb4af6fa3afa08b10d593ec8ff87efb03bc04645/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,9 +89,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 0 |
-| upstream | 0 |
-| standard_library | 1 |
-| needs_review | 0 |
+| upstream | 1 |
+| standard_library | 0 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

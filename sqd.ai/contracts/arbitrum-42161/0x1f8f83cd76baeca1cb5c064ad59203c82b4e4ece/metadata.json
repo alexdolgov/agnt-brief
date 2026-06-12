@@ -1,0 +1,17 @@
+{
+  "address": "0x1f8f83cd76baeca1cb5c064ad59203c82b4e4ece",
+  "chain_id": 42161,
+  "contract_name": "VestingFactory",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "0000000000000000000000001337420ded5adb9980cfc35f8f2b054ea86f8ab100000000000000000000000067f56d27dab93eeb07f6372274aca277f49da941",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T16:24:38.780Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xcb46c550539ac3db72dc7af7c89b11c306c727c2",
+  "chain_id": 1,
+  "contract_name": "pONT",
+  "compiler_version": "v0.5.0+commit.1d4f565a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T16:26:45.758Z"
+}

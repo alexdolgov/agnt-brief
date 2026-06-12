@@ -299,7 +299,7 @@
 | [kaio](./kaio/) | $60.8M | 0.0% | ? | declining | 0 | 35 | 2026-06-12 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | active | 0 | 4 | 2026-06-12 |
 | [kasu](./kasu/) | $10.6M | 0.0% | ? | active | 2 | 22 | 2026-06-11 |
-| [katana-pre-launch](./katana-pre-launch/) | $307.6K | 0.0% | $307.6K | active | 28 | 165 | 2026-06-11 |
+| [katana-pre-launch](./katana-pre-launch/) | $35.5M | 0.0% | $35.5M | active | 28 | 174 | 2026-06-12 |
 | [kava-earn](./kava-earn/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
 | [kava-lend](./kava-lend/) | $7.8M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
 | [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
@@ -450,7 +450,7 @@
 | [pharaoh-exchange](./pharaoh-exchange/) | $15.6M | 0.0% | $15.6M | active | 3 | 60 | 2026-06-12 |
 | [phoenix](./phoenix/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [pickle](./pickle/) | $2.9M | 2.7% | $2.9M | declining | 4 | 235 | 2026-06-11 |
-| [piku](./piku/) | $21.4M | 0.0% | $21.4M | active | 3 | 29 | 2026-06-11 |
+| [piku](./piku/) | $189.3M | 13.3% | $189.3M | active | 3 | 32 | 2026-06-12 |
 | [pionex](./pionex/) | $37.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [planet](./planet/) | $778.3M | 7.7% | $778.3M | declining | 1 | 34 | 2026-06-11 |
 | [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | active | 0 | 7 | 2026-06-11 |
@@ -567,6 +567,7 @@
 | [spookyswap](./spookyswap/) | $841.7 | 0.0% | $841.7 | declining | 1 | 136 | 2026-06-11 |
 | [sport.fun](./sport.fun/) | $3.7M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
 | [sprinter](./sprinter/) | $940.7K | 100.0% | ? | active | 6 | 4 | 2026-06-11 |
+| [sqd.ai](./sqd.ai/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 28 | 2026-06-12 |
 | [squadswap](./squadswap/) | $13.0M | 63.2% | ? | active | 5 | 214 | 2026-06-11 |
 | [stable-jack](./stable-jack/) | $76.9M | 0.0% | $76.9M | active | 1 | 249 | 2026-06-11 |
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 2 | 2026-06-11 |
@@ -683,7 +684,7 @@
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | declining | 8 | 83 | 2026-06-11 |
 | [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | declining | 0 | 5 | 2026-06-11 |
 | [wemix.fi](./wemix.fi/) | $38.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [wing-finance](./wing-finance/) | $20.3M | 0.0% | $20.3M | declining | 2 | 179 | 2026-06-11 |
+| [wing-finance](./wing-finance/) | $20.3M | 0.0% | $20.3M | declining | 2 | 189 | 2026-06-12 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | declining | 11 | 96 | 2026-06-11 |
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [woofi](./woofi/) | $9.8M | 18.8% | $9.7M | declining | 6 | 200 | 2026-06-11 |

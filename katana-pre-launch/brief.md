@@ -5,13 +5,13 @@
 - Project: Katana Pre-Launch (`katana-pre-launch`)
 - Website: [https://app.katana.network/](https://app.katana.network/)
 - Lifecycle: active (Tier 0, 92.6% below peak)
-- Generated: 2026-06-11T00:16:32.769Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-12T16:28:02.736Z
+- Pipeline run: v2-pipeline-2026-06-12-c7aee3-9d35
 - Chains: base, ethereum
-- Contract surface: 165 unique implementations (642 raw deployments)
-- DeFi Llama TVL: $18,422,900.76
-- On-chain TVL (included contracts): $307,618.81
-- TVL by chain: Ethereum $307,618.81
+- Contract surface: 174 unique implementations (656 raw deployments)
+- DeFi Llama TVL: $17,494,776.38
+- On-chain TVL (included contracts): $35,475,597.55
+- TVL by chain: Ethereum $35,475,597.55
 
 ## Project Description
 
@@ -23,15 +23,15 @@ The Katana Pre-Launch vaults mint yield-bearing tokens that can be bridged via t
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/97 (0.0%)
-- Verified + Unaudited implementations: 96
+- Verified implementations audited: 0/106 (0.0%)
+- Verified + Unaudited implementations: 105
 - Verified by bytecode match: 1
 - Unverified implementations: 68
-- Unique implementations: 165
-- Raw deployments: 642
+- Unique implementations: 174
+- Raw deployments: 656
 - Audits discovered: 28
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $307,618.81
+- ASD (verified + unaudited TVL): $35,475,597.55
 - Latest audit: 2025-09 (fresh)
 - Staleness: 6 fresh, 7 aging, 6 stale, 9 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,18 +46,23 @@ The Katana Pre-Launch vaults mint yield-bearing tokens that can be bridged via t
 
 - None
 
-### ⚠️ Verified + Unaudited (96)
+### ⚠️ Verified + Unaudited (105)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| Yearn V3 Vault | core_logic | ethereum | 6 deployments: ethereum [`0x48c03b...eedfcb`](./contracts/ethereum-1/0x48c03b6ffd0008460f8657db1037c7e09deedfcb/); ethereum `0x77570c...97ea2f`; ethereum `0xa5dab3...7d3896`; ethereum `0xd80631...84b00d`; ethereum `0xe1ac97...55544a`; ethereum `0xf470eb...cc014d` | ⚠️ Unaudited |
 | BoringVault | core_logic | ethereum | 2 deployments: ethereum [`0x69d210...44c16b`](./contracts/ethereum-1/0x69d210d3b60e939bfa6e87cccc4fab7e8f44c16b/); ethereum `0x752310...565ab5` | ⚠️ Unaudited |
 | TokenChwomper | token | ethereum | 3 deployments: ethereum [`0x5c2e11...92559c`](./contracts/ethereum-1/0x5c2e112783a6854653b4bc7dc22248d3e592559c/); ethereum `0xdbeca8...b3e9eb`; ethereum `0xde7259...1d5667` | ⚠️ Unaudited |
 | LockReleaseTokenPool | core_logic | ethereum | 43 deployments: ethereum [`0x0238d2...25e2e4`](./contracts/ethereum-1/0x0238d2c272f17cf11aedb08cde515d56ed25e2e4/); ethereum `0x047204...8e0786`; ethereum `0x0bc426...f075b4`; ethereum `0x0c291a...c1f4aa`; ethereum `0x0dafed...8b2602`; ethereum `0x1e28dd...c9c3d3`; ethereum `0x21377f...4df45e`; ethereum `0x26cdfc...c7c520`; ethereum `0x2c5c39...25b5b4`; ethereum `0x4ce6f5...bf675c`; ethereum `0x4edc3a...eda56a`; ethereum `0x50f663...a882ac`; ethereum `0x55562a...11c1e6`; ethereum `0x619ed9...b5924e`; ethereum `0x6452d6...3f37a6`; ethereum `0x69c24c...78f93a`; ethereum `0x6ce8b7...4a28f4`; ethereum `0x6ddf2f...494db2`; ethereum `0x6ff6bf...b6cd7e`; ethereum `0x73aeb5...3d90c1`; ethereum `0x8272db...ba413a`; ethereum `0x8291a8...9f3b06`; ethereum `0x82df5c...db012b`; ethereum `0x923f27...c3ee81`; ethereum `0xa00853...00cd91`; ethereum `0xa35304...16c215`; ethereum `0xa370ce...7574da`; ethereum `0xa82a87...eaf858`; ethereum `0xa904b9...19d000`; ethereum `0xa96787...9d349b`; ethereum `0xb5f146...8e0c80`; ethereum `0xb85453...19d7ba`; ethereum `0xc22919...570df4`; ethereum `0xc43c01...778df2`; ethereum `0xc456ea...56cd29`; ethereum `0xcc75c8...c8fa14`; ethereum `0xcd69c1...322733`; ethereum `0xd0b84f...d48595`; ethereum `0xd1b301...af49de`; ethereum `0xdca0a2...add6d0`; ethereum `0xde04b3...dd19df`; ethereum `0xe2f0da...93e366`; ethereum `0xf84bf7...15fa72` | ⚠️ Unaudited |
+| AccountantWithRateProviders | unknown | ethereum | [`0xfcb9a6...8e787d`](./contracts/ethereum-1/0xfcb9a6bf02c43f9e38bb102fd960cc1e738e787d/) | ⚠️ Unaudited |
 | AgglayerBridge | operational_periphery | ethereum | [`0x2a3dd3...ca2ede`](./contracts/ethereum-1/0x2a3dd3eb832af982ec71669e178424b10dca2ede/) | ⚠️ Unaudited |
 | AgoraDollar | unknown | ethereum | [`0x000000...a9012a`](./contracts/ethereum-1/0x00000000efe302beaa2b3e6e1b18d08d69a9012a/) | ⚠️ Unaudited |
+| ArcticArchitectureLens | periphery | ethereum | [`0xe0efe9...a857fe`](./contracts/ethereum-1/0xe0efe934dc4744090e8ef93f1d125e4015a857fe/) | ⚠️ Unaudited |
 | ARM | unknown | ethereum | [`0x8b63b3...91fa1b`](./contracts/ethereum-1/0x8b63b3de93431c0f756a493644d128134291fa1b/) | ⚠️ Unaudited |
 | ARMProxy | unknown | ethereum | [`0x411de1...c75e81`](./contracts/ethereum-1/0x411de17f12d1a34ecc7f45f49844626267c75e81/) | ⚠️ Unaudited |
 | AxelarDVNAdapterFeeLib | adapter | ethereum | [`0xbec6f0...b56af7`](./contracts/ethereum-1/0xbec6f0034cb9055b68dc5f02873b45841ab56af7/) | ⚠️ Unaudited |
+| BoringOnChainQueue | unknown | ethereum | [`0x52e523...ce2506`](./contracts/ethereum-1/0x52e523b849c584f86bf460a3cf2962b118ce2506/) | ⚠️ Unaudited |
+| BoringSolver | unknown | ethereum | [`0x102b3f...d06137`](./contracts/ethereum-1/0x102b3fdb4537df5b15ab91a85bc6f62fbcd06137/) | ⚠️ Unaudited |
 | BridgeExtension | operational_periphery | ethereum | [`0x64b20e...52f6a6`](./contracts/ethereum-1/0x64b20eb25aed030fd510ef93b9135278b152f6a6/) | ⚠️ Unaudited |
 | BurnMintTokenPool | core_logic | ethereum | 33 deployments: ethereum [`0x057152...1fe1b4`](./contracts/ethereum-1/0x057152db365b47851b0a0bd431644b8ee21fe1b4/); ethereum `0x06f981...1da9b8`; ethereum `0x1175e4...4fa62e`; ethereum `0x123ed4...0ee5ca`; ethereum `0x1580c7...092cfa`; ethereum `0x276491...fde73b`; ethereum `0x2dd317...517470`; ethereum `0x3d368d...2d7c8f`; ethereum `0x44622f...c7ff14`; ethereum `0x4c3aee...fb7709`; ethereum `0x550425...65d451`; ethereum `0x57d3bb...28475f`; ethereum `0x7559a8...2128ca`; ethereum `0x781964...dad288`; ethereum `0x80cc10...7de2d4`; ethereum `0x80e2dc...e4cfb8`; ethereum `0x8300e8...a6b12d`; ethereum `0x8bcd7e...ae9062`; ethereum `0x8c6028...422e56`; ethereum `0x9797e8...d828e6`; ethereum `0x9c6a6e...27e1dd`; ethereum `0xa17698...0701e7`; ethereum `0xba0e1c...c824c3`; ethereum `0xbf7cb6...dc0982`; ethereum `0xc62c31...1aad3e`; ethereum `0xcd196d...c73526`; ethereum `0xd72f70...87c66c`; ethereum `0xd8f734...66c351`; ethereum `0xdc85b5...8641a2`; ethereum `0xde71a0...e86f12`; ethereum `0xeae89e...669b73`; ethereum `0xf0d19c...7be823`; ethereum `0xf5224e...dcde99` | ⚠️ Unaudited |
 | BurnMintTokenPoolAndProxy | core_logic | ethereum | 25 deployments: ethereum [`0x08b405...7b5abb`](./contracts/ethereum-1/0x08b4058f16d243c977ea1fe91b20af31057b5abb/); ethereum `0x307d03...16bce8`; ethereum `0x46911f...cbf5a6`; ethereum `0x475c8f...36e358`; ethereum `0x485858...db0005`; ethereum `0x518086...196a97`; ethereum `0x581ced...48c9c7`; ethereum `0x5be290...4f58ca`; ethereum `0x67f4e7...1b1787`; ethereum `0x6d1e0c...7d38bb`; ethereum `0x8315bb...27336e`; ethereum `0x8ac682...a158d7`; ethereum `0x8c9015...66b760`; ethereum `0x8ee289...46a4a5`; ethereum `0x916d7d...866d44`; ethereum `0x9f02c1...b6d06c`; ethereum `0xc1d8f2...25d91a`; ethereum `0xc4abcd...4f5f58`; ethereum `0xc576d8...de5b73`; ethereum `0xce8342...098fde`; ethereum `0xcfd063...df23c4`; ethereum `0xe58edb...0a6a84`; ethereum `0xe727f7...dad811`; ethereum `0xe9bfb4...ac54ac`; ethereum `0xea5fd7...86ada1` | ⚠️ Unaudited |
@@ -91,9 +96,11 @@ The Katana Pre-Launch vaults mint yield-bearing tokens that can be bridged via t
 | GnosisSafe | governance | ethereum | [`0x69f4d1...6e2938`](./contracts/ethereum-1/0x69f4d1788e39c87893c980c06edf4b7f686e2938/) | ⚠️ Unaudited |
 | KATOFTUpgradeable | unknown | ethereum | 4 deployments: ethereum [`0x8f051c...ab8f91`](./contracts/ethereum-1/0x8f051ca72a3440d83b18e71c3e59676203ab8f91/); ethereum `0xd53903...d1e3da`; base `0xd53903...d1e3da`; base `0xeb8f92...a0275f` | ⚠️ Unaudited |
 | LayerZeroOracleMock | operational_periphery | ethereum | [`0x980205...3ec981`](./contracts/ethereum-1/0x980205d352f198748b626f6f7c38a8a5663ec981/) | ⚠️ Unaudited |
+| LayerZeroTellerWithRateLimiting | core_logic | ethereum | [`0x739a1e...fd8d16`](./contracts/ethereum-1/0x739a1effaddb0b07ef1284598819232df4fd8d16/) | ⚠️ Unaudited |
 | LayerZeroTokenMock | token | ethereum | [`0xfe7c30...d3a098`](./contracts/ethereum-1/0xfe7c30860d01e28371d40434806f4a8fcdd3a098/) | ⚠️ Unaudited |
 | LockReleaseTokenPoolAndProxy | core_logic | ethereum | 33 deployments: ethereum [`0x0d7368...521fc0`](./contracts/ethereum-1/0x0d736853812a12f085de867adf4ea4aba9521fc0/); ethereum `0x2ccd6b...52b0f6`; ethereum `0x2e3c68...b10f73`; ethereum `0x399949...a3e576`; ethereum `0x45af36...4f8aa3`; ethereum `0x4913fd...e1f196`; ethereum `0x4e6300...371ed0`; ethereum `0x542bf6...95be84`; ethereum `0x5c1667...c57a59`; ethereum `0x61d405...7ef92f`; ethereum `0x6a888f...31480b`; ethereum `0x75a852...0d9799`; ethereum `0x79bc41...721d49`; ethereum `0x89c903...9a6d04`; ethereum `0x8e7ebb...3bcaea`; ethereum `0x9b8fef...db0dcc`; ethereum `0x9c7922...8fe192`; ethereum `0x9e72f9...8c75a0`; ethereum `0x9ec9f9...ec50f0`; ethereum `0xa27501...a5bbbd`; ethereum `0xa7689c...3a660f`; ethereum `0xac3453...5bf95b`; ethereum `0xafcc99...0bdd1d`; ethereum `0xbdcc99...0218b7`; ethereum `0xbfc86c...e63351`; ethereum `0xc2ef2f...379979`; ethereum `0xc55d7b...c01b79`; ethereum `0xe31009...291739`; ethereum `0xe48320...8ae86f`; ethereum `0xe742e9...c5810e`; ethereum `0xead31b...26461d`; ethereum `0xf57fc1...9ee89a`; ethereum `0xf6c88f...c11b99` | ⚠️ Unaudited |
 | LzExecutor | unknown | ethereum | [`0xc4a313...0a9a12`](./contracts/ethereum-1/0xc4a3139d4afd941f56a0b878eb4906b3d20a9a12/) | ⚠️ Unaudited |
+| ManagerWithMerkleVerification | operational_periphery | ethereum | [`0x51cdec...84bfeb`](./contracts/ethereum-1/0x51cdecc111c21bed72ab99f415bab6d35984bfeb/) | ⚠️ Unaudited |
 | MigrationManager | operational_periphery | ethereum | 2 deployments: ethereum [`0x417d01...689e02`](./contracts/ethereum-1/0x417d01b64ea30c4e163873f3a1f77b727c689e02/); ethereum `0xc6dd63...d30e45` | ⚠️ Unaudited |
 | MPTValidatorV2 | unknown | ethereum | [`0xe9ae26...e07b2d`](./contracts/ethereum-1/0xe9ae261d3aff7d3fccf38fa2d612dd3897e07b2d/) | ⚠️ Unaudited |
 | MPTValidatorV4 | unknown | ethereum | [`0x4b4ca2...abefb2`](./contracts/ethereum-1/0x4b4ca2f2ad3a5464cc8c01ece76c2951f3abefb2/) | ⚠️ Unaudited |
@@ -106,6 +113,7 @@ The Katana Pre-Launch vaults mint yield-bearing tokens that can be bridged via t
 | NonDefaultOftAdapter | adapter | ethereum | 20 deployments: ethereum [`0x0d8745...d8f874`](./contracts/ethereum-1/0x0d8745a84259ab5a38e89d5cb4db642003d8f874/); ethereum `0x1e283d...ed0bba`; ethereum `0x4224f6...e51d36`; ethereum `0x4690f3...5b985e`; ethereum `0x4ed3c8...9881e1`; ethereum `0x519fbc...2a462a`; ethereum `0x667efc...a7cd81`; ethereum `0x694d16...cab683`; ethereum `0x807275...d293c0`; ethereum `0x8169e5...520dfc`; ethereum `0x839dc0...95ab82`; ethereum `0x8d09c4...c131d4`; ethereum `0x8f45f7...ff949b`; ethereum `0x93ed06...9a7f24`; ethereum `0xad132b...bb050a`; ethereum `0xb42ab6...621665`; ethereum `0xb5bada...957bb3`; ethereum `0xd28d73...e84092`; ethereum `0xd9e705...62d0c3`; ethereum `0xe5971a...76cf4a` | ⚠️ Unaudited |
 | OptimismPortal2 | unknown | ethereum | 2 deployments: ethereum [`0x5decbe...61ce8a`](./contracts/ethereum-1/0x5decbeeefecc5353355cd79a8fecc4c03f61ce8a/); ethereum `0xa7a8e4...14dc0a` | ⚠️ Unaudited |
 | OptimizedTransparentUpgradeableProxy | unknown | ethereum | 13 deployments: ethereum [`0x16cc4e...170347`](./contracts/ethereum-1/0x16cc4ef7c128d7fea96cf46ffd9dd20f76170347/); ethereum `0x26bc65...e0e61e`; ethereum `0x3ec70c...7fc7d1`; ethereum `0x5ac73e...323487`; ethereum `0x60adff...c2962c`; ethereum `0x6bd792...d22c70`; ethereum `0x902f09...98089e`; ethereum `0x9c9e25...4fbd95`; ethereum `0xbf2e10...951320`; ethereum `0xc03f31...a91113`; ethereum `0xc3ce54...58c6b4`; ethereum `0xcb566e...e1aaaa`; ethereum `0xcc0de8...6fd346` | ⚠️ Unaudited |
+| Pauser | unknown | ethereum | [`0xe50a6c...282c74`](./contracts/ethereum-1/0xe50a6c887c18c5541d8cf311825016fbbb282c74/) | ⚠️ Unaudited |
 | Permit2 | unknown | ethereum | [`0x000000...c78ba3`](./contracts/ethereum-1/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited |
 | PolygonMigration | operational_periphery | ethereum | [`0xb03734...9d9231`](./contracts/ethereum-1/0xb037347ef306db3b41ab0b250f891887039d9231/) | ⚠️ Unaudited |
 | PriceFeed | operational_periphery | ethereum | [`0xb26ac1...29090c`](./contracts/ethereum-1/0xb26ac124db9439edb7de503ef62e3d3d4e29090c/) | ⚠️ Unaudited |
@@ -124,6 +132,7 @@ The Katana Pre-Launch vaults mint yield-bearing tokens that can be bridged via t
 | RelayerV2Radar | unknown | ethereum | [`0x61ab01...39d849`](./contracts/ethereum-1/0x61ab01ce58d1dff3562bb25870020d555e39d849/) | ⚠️ Unaudited |
 | RewardExtractor | unknown | ethereum | [`0x3715d2...cecbc6`](./contracts/ethereum-1/0x3715d25c56126fb1bc57e37bf5a017ffb6cecbc6/) | ⚠️ Unaudited |
 | RMN | unknown | ethereum | 2 deployments: ethereum [`0x2c1c02...4948f3`](./contracts/ethereum-1/0x2c1c028aa39db7324a2d11333315efbea84948f3/); ethereum `0xdcd484...adf84f` | ⚠️ Unaudited |
+| RolesAuthority | governance | ethereum | [`0x1645e0...315cf7`](./contracts/ethereum-1/0x1645e0cc24595fab37916a3d57bc51dff0315cf7/) | ⚠️ Unaudited |
 | RootChainManager | governance | ethereum | 2 deployments: ethereum [`0x639f13...3c77de`](./contracts/ethereum-1/0x639f13d5f30b47c792b6851238c05d0b623c77de/); ethereum `0xf0235d...d62dfa` | ⚠️ Unaudited |
 | Router | adapter | ethereum | 4 deployments: ethereum [`0x7fb589...fde90b`](./contracts/ethereum-1/0x7fb5895cbcb3264dc7984e8f61037f5d37fde90b/); ethereum `0x80226f...146f7d`; ethereum `0x8c6d31...81ed46`; ethereum `0xe561d5...9a1476` | ⚠️ Unaudited |
 | Seaport | unknown | ethereum | [`0x000000...3eb395`](./contracts/ethereum-1/0x0000000000000068f116a894984e2db1123eb395/) | ⚠️ Unaudited |
@@ -273,34 +282,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x69d210...44c16b`](./contracts/ethereum-1/0x69d210d3b60e939bfa6e87cccc4fab7e8f44c16b/) | BoringVault | core_logic | $250,038.38 | Verified native implementation with $250,038.38 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...a9012a`](./contracts/ethereum-1/0x00000000efe302beaa2b3e6e1b18d08d69a9012a/) | AgoraDollar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x64b20e...52f6a6`](./contracts/ethereum-1/0x64b20eb25aed030fd510ef93b9135278b152f6a6/) | BridgeExtension | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcb8b43...3b6905`](./contracts/ethereum-1/0xcb8b435481da1ed5abc895e03535ce0bba3b6905/) | CommunityTreasuryVotes | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9d2a80...7ab639`](./contracts/ethereum-1/0x9d2a805227fbb433f7c05e98af505b04e07ab639/) | DelegationMigration | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb00aa6...4a44fc`](./contracts/ethereum-1/0xb00aa68b87256e2f22058fb2ba3246eec54a44fc/) | DepositManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x38de71...491251`](./contracts/ethereum-1/0x38de71124f7a447a01d67945a51edce9ff491251/) | GIN | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7b6dd0...2566e9`](./contracts/ethereum-1/0x7b6dd022e7ed1dabcf0c3537f710eb5c8f2566e9/) | MyOVaultComposer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb03734...9d9231`](./contracts/ethereum-1/0xb037347ef306db3b41ab0b250f891887039d9231/) | PolygonMigration | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3715d2...cecbc6`](./contracts/ethereum-1/0x3715d25c56126fb1bc57e37bf5a017ffb6cecbc6/) | RewardExtractor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7fb589...fde90b`](./contracts/ethereum-1/0x7fb5895cbcb3264dc7984e8f61037f5d37fde90b/) | Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3ad884...d9076c`](./contracts/ethereum-1/0x3ad88467e40399dc6ae10427f8b0842348d9076c/) | StakeManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5ebb3f...e73056`](./contracts/ethereum-1/0x5ebb3f2feaa15271101a927869b3a56837e73056/) | Treasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x053fa9...0bb462`](./contracts/ethereum-1/0x053fa9b934b83e1e0ffc7e98a41aadc3640bb462/) | ValidatorShare | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb2ec4d...3945f5`](./contracts/ethereum-1/0xb2ec4d99c82417257f41b2c8ceda0962c03945f5/) | VaultBridgeTokenInitializer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1c8565...298e80`](./contracts/ethereum-1/0x1c8565f454f8239b854fe62c99b90b3fc9298e80/) | VaultBridgeTokenPart2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6f8a42...a35168`](./contracts/ethereum-1/0x6f8a42cf6f3ce657b66a9d5849f1251de7a35168/) | WithdrawManager | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 17 |
-| upstream | 57 |
-| standard_library | 19 |
-| needs_review | 72 |
+| native | 0 |
+| upstream | 5 |
+| standard_library | 2 |
+| needs_review | 167 |
 
 ## Scope Matching Notes
 

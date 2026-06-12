@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "virtuals-protocol",
-  "generated_at": "2026-05-31T11:35:54.037Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-12T12:01:03.131Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-fc52",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "virtuals-protocol",
@@ -16,7 +16,7 @@
     "tvl_180d_ago": null,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 10,
+    "days_since_peak": 22,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0
@@ -35,14 +35,14 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 37954686.0645,
+    "dl_tvl_usd": 27333549.92166,
     "tvl_usd": 0.0419396,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "base": 0.04
     },
     "asd_usd": 0.0419396,
-    "website_url": "https://app.virtuals.io/referral?code=JsPKKT",
+    "website_url": "https://app.virtuals.io",
     "chains": [
       "base"
     ],
@@ -61,6 +61,11 @@
     "project_purpose": "Virtuals Protocol is a platform for creating, managing, and monetizing AI agents on the Base blockchain. It provides infrastructure for agent tokenization, bonding curves, staking, and governance, enabling users to launch and interact with AI-driven services.",
     "relationship_narrative": "The protocol consists of a single product family where agent factories deploy agent NFTs and bonding curves, while routers, tax, reward, and staking contracts share infrastructure to manage tokenomics and governance. Proxy contracts provide upgradeability across all core components.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 65,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1795,7 +1800,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 8453,
@@ -2679,7 +2684,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 8453,

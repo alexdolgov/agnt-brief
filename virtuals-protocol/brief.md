@@ -5,13 +5,13 @@
 ## Project Overview
 
 - Project: Virtuals Protocol (`virtuals-protocol`)
-- Website: [https://app.virtuals.io/referral?code=JsPKKT](https://app.virtuals.io/referral?code=JsPKKT)
+- Website: [https://app.virtuals.io](https://app.virtuals.io)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T11:35:54.037Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-12T12:01:03.131Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-fc52
 - Chains: base
 - Contract surface: 65 unique implementations (135 raw deployments)
-- DeFi Llama TVL: $37,954,686.06
+- DeFi Llama TVL: $27,333,549.92
 - On-chain TVL (included contracts): $0.04
 - TVL by chain: Base $0.04
 

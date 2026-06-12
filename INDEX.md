@@ -237,7 +237,7 @@
 | [goldstation](./goldstation/) | $2.2M | 0.0% | ? | active | 3 | 5 | 2026-06-10 |
 | [gondi](./gondi/) | $35.6 | 20.0% | $35.6 | active | 2 | 30 | 2026-06-11 |
 | [goose](./goose/) | $7.9 | 0.0% | $7.9 | active | 0 | 7 | 2026-06-10 |
-| [goplus-security](./goplus-security/) | $32.8M | 0.0% | ? | active | 0 | 23 | 2026-06-10 |
+| [goplus-security](./goplus-security/) | $65.3 | 0.0% | $65.3 | active | 0 | 34 | 2026-06-12 |
 | [gravity-bridge](./gravity-bridge/) | $91.3M | 0.0% | $91.3M | active | 0 | 152 | 2026-06-10 |
 | [gro](./gro/) | $2.9M | 0.0% | $2.9M | declining | 0 | 124 | 2026-06-10 |
 | [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -673,7 +673,7 @@
 | [vesper](./vesper/) | $694.0K | 51.3% | $351.7K | active | 30 | 44 | 2026-06-11 |
 | [vest-markets](./vest-markets/) | $1.7M | 0.0% | ? | declining | 0 | 4 | 2026-06-11 |
 | [vfat.io](./vfat.io/) | $0.0 | 10.0% | ? | active | 10 | 553 | 2026-06-11 |
-| [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 0 | 65 | 2026-05-31 |
+| [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 0 | 65 | 2026-06-12 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-06-11 |
 | [volta-club](./volta-club/) | $976.2M | 0.0% | $976.2M | unknown | 0 | 316 | 2026-06-11 |
 | [wagmi](./wagmi/) | $1.3M | 0.0% | ? | declining | 10 | 334 | 2026-06-11 |
@@ -712,7 +712,7 @@
 | [zivoe](./zivoe/) | $13.9M | 43.3% | ? | declining | 6 | 31 | 2026-06-11 |
 | [zklink-nova](./zklink-nova/) | $33.9M | 14.5% | $33.9M | declining | 7 | 380 | 2026-06-11 |
 | [zkswap-finance](./zkswap-finance/) | $1.2M | 11.1% | ? | active | 8 | 98 | 2026-06-11 |
-| [zoo-finance](./zoo-finance/) | $83.0M | 0.0% | $83.0M | active | 1 | 58 | 2026-06-11 |
+| [zoo-finance](./zoo-finance/) | $83.0M | 0.0% | $83.0M | active | 1 | 75 | 2026-06-12 |
 | [zoomex](./zoomex/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [zoth](./zoth/) | $6.5 | 78.1% | ? | active | 5 | 43 | 2026-06-11 |
 | [zyfai](./zyfai/) | $1.6B | 0.0% | $1.6B | active | 0 | 105 | 2026-06-11 |

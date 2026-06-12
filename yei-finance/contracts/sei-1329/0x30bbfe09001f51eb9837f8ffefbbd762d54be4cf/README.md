@@ -5,7 +5,7 @@
 | Chain | sei (1329) |
 | Address | `0x30bbfe09001f51eb9837f8ffefbbd762d54be4cf` |
 | Role | unknown |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (sei [`0x30bbfe09001f51eb9837f8ffefbbd762d54be4cf`](../0x30bbfe09001f51eb9837f8ffefbbd762d54be4cf/)) |

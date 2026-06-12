@@ -1,0 +1,18 @@
+{
+  "address": "0x58907ad5c7ed1eab5fdcc0cc347f25bf5bc0e7da",
+  "chain_id": 1,
+  "contract_name": "SymbioticDepositWBETHStrategy",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "shanghai",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T13:51:32.767Z"
+}

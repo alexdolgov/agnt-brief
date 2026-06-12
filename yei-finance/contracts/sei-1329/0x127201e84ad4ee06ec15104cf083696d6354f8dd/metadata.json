@@ -1,0 +1,18 @@
+{
+  "address": "0x127201e84ad4ee06ec15104cf083696d6354f8dd",
+  "chain_id": 1329,
+  "contract_name": "PullRewardsTransferStrategy",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0, LGPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T13:52:04.084Z"
+}

@@ -36,7 +36,7 @@
 | [angstrom](./angstrom/) | $11.3M | 7.7% | ? | declining | 3 | 13 | 2026-06-10 |
 | [ankr](./ankr/) | $21.7M | 0.0% | ? | active | 14 | 6 | 2026-06-10 |
 | [antarctic](./antarctic/) | $9.6M | 0.0% | ? | active | 0 | 11 | 2026-06-10 |
-| [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | active | 0 | 2 | 2026-06-10 |
+| [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | active | 0 | 3 | 2026-06-12 |
 | [anvil](./anvil/) | $673.0K | 100.0% | ? | declining | 4 | 3 | 2026-06-10 |
 | [anzen-finance](./anzen-finance/) | $671.2K | 35.9% | $10.9K | declining | 5 | 47 | 2026-06-10 |
 | [ao-bridge](./ao-bridge/) | $43.0M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
@@ -222,7 +222,7 @@
 | [frankencoin](./frankencoin/) | $70.0M | 80.0% | ? | active | 5 | 5 | 2026-06-10 |
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 5 | 18 | 2026-06-10 |
 | [fulcrom](./fulcrom/) | $13.3M | 0.0% | ? | active | 0 | 79 | 2026-06-10 |
-| [gains-network](./gains-network/) | $21.9M | 0.0% | $21.9M | active | 1 | 760 | 2026-06-10 |
+| [gains-network](./gains-network/) | $64.7M | 0.0% | $64.7M | active | 1 | 779 | 2026-06-12 |
 | [galaxy-curation](./galaxy-curation/) | $67.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [gamma](./gamma/) | $24.3K | 27.6% | $24.3K | active | 16 | 467 | 2026-06-10 |
 | [gate-us](./gate-us/) | $49.1M | 0.0% | ? | active | 0 | 9 | 2026-06-12 |
@@ -571,7 +571,7 @@
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 2 | 2026-06-11 |
 | [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-06-11 |
 | [stake.link](./stake.link/) | $76.8M | 60.9% | $35.9K | active | 20 | 71 | 2026-06-11 |
-| [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | active | 0 | 183 | 2026-06-11 |
+| [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | active | 0 | 198 | 2026-06-12 |
 | [stakingverse](./stakingverse/) | $3.5M | 0.0% | $3.5M | active | 14 | 3 | 2026-06-11 |
 | [standx](./standx/) | $48.3M | 57.1% | ? | declining | 6 | 17 | 2026-06-11 |
 | [stargate-finance](./stargate-finance/) | $203.9M | 50.0% | $5.2M | active | 17 | 294 | 2026-06-11 |
@@ -695,7 +695,7 @@
 | [yala](./yala/) | $4.6M | 0.0% | $4.6M | active | 1 | 30 | 2026-06-11 |
 | [yamato-protocol](./yamato-protocol/) | $910.9 | 47.8% | $818.3 | active | 3 | 63 | 2026-05-24 |
 | [ybtc.b](./ybtc.b/) | $83.9M | 0.0% | ? | active | 6 | 12 | 2026-05-31 |
-| [yei-finance](./yei-finance/) | $32.3M | 0.0% | ? | declining | 1 | 44 | 2026-06-11 |
+| [yei-finance](./yei-finance/) | $18.3M | 0.0% | ? | declining | 1 | 47 | 2026-06-12 |
 | [yield-yak](./yield-yak/) | $13.7M | 0.0% | ? | active | 3 | 8 | 2026-06-11 |
 | [yieldfi](./yieldfi/) | $43.7M | 70.6% | $16.3M | active | 6 | 22 | 2026-06-11 |
 | [yieldnest](./yieldnest/) | $19.2M | 44.8% | $295.1K | active | 16 | 33 | 2026-06-11 |

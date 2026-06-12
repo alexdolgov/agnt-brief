@@ -5,13 +5,13 @@
 - Project: Gains Network (`gains-network`)
 - Website: [https://gains.trade/](https://gains.trade/)
 - Lifecycle: active (Tier 0, 76.5% below peak)
-- Generated: 2026-06-10T23:31:10.100Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-12T13:53:22.520Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-769a
 - Chains: arbitrum, base, polygon
-- Contract surface: 760 unique implementations (1777 raw deployments)
-- DeFi Llama TVL: $18,577,383.48
-- On-chain TVL (included contracts): $21,861,405.22
-- TVL by chain: Arbitrum $16,181,339.34 | Base $2,857,544.74 | Polygon $2,822,521.14
+- Contract surface: 779 unique implementations (1798 raw deployments)
+- DeFi Llama TVL: $18,758,967.07
+- On-chain TVL (included contracts): $64,675,249.98
+- TVL by chain: Polygon $44,780,441.25 | Arbitrum $16,181,339.34 | Base $3,713,469.39
 
 ## Project Description
 
@@ -23,15 +23,15 @@ The Gains Network family is a monolithic suite where all contracts share the sam
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/114 (0.0%)
-- Verified + Unaudited implementations: 114
+- Verified implementations audited: 0/133 (0.0%)
+- Verified + Unaudited implementations: 133
 - Verified by bytecode match: 0
 - Unverified implementations: 646
-- Unique implementations: 760
-- Raw deployments: 1777
+- Unique implementations: 779
+- Raw deployments: 1798
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $21,861,405.22
+- ASD (verified + unaudited TVL): $64,675,249.98
 - Latest audit: 2022-06 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,12 +46,13 @@ The Gains Network family is a monolithic suite where all contracts share the sam
 
 - None
 
-### ⚠️ Verified + Unaudited (114)
+### ⚠️ Verified + Unaudited (133)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| GFarm2Token | token | polygon | [`0x7075ca...1379e2`](./contracts/polygon-137/0x7075cab6bcca06613e2d071bd918d1a0241379e2/) | ⚠️ Unaudited |
+| GToken | token | polygon | 41 deployments: polygon [`0x08f3f5...6cb253`](./contracts/polygon-137/0x08f3f51d8d28f1b194e2e68e511f07d6f06cb253/); polygon `0x0fb7b7...9df222`; polygon `0x1544e1...3464fb`; polygon `0x20b263...c55155`; polygon `0x29019f...fe2c81`; polygon `0x65dff6...525fcc`; polygon `0x91993f...efe827`; polygon `0x956af4...013e7b`; polygon `0x9b059c...3bd6b0`; polygon `0xbdfd37...850fca`; polygon `0xc9f972...2a5a00`; polygon `0xf24f94...8b5988`; base `0x1d655c...7064e0`; base `0x46d977...bb0df0`; base `0x5335a8...09a708`; base `0x5d333f...fa1634`; base `0x9be876...f95ed6`; base `0xad2052...3d02e5`; base `0xb7cb7c...bbadc6`; base `0xd3bbe9...772c1c`; arbitrum `0x1f7eff...b1d9d6`; arbitrum `0x388277...e58093`; arbitrum `0x42249c...89c954`; arbitrum `0x485027...d46f48`; arbitrum `0x4beef1...a9a9f4`; arbitrum `0x5977a9...a2784c`; arbitrum `0x6899d5...243dc9`; arbitrum `0x7621c2...ec0093`; arbitrum `0x79967d...e1e6be`; arbitrum `0x85eb02...05542e`; arbitrum `0x8dfa03...842a41`; arbitrum `0x909393...98e874`; arbitrum `0x9a39cb...4b64dc`; arbitrum `0x9d27a7...369316`; arbitrum `0xa388d4...5444f2`; arbitrum `0xd3443e...8046e0`; arbitrum `0xd85e03...b9b91b`; arbitrum `0xdf8b50...cdfec2`; arbitrum `0xeb7545...d6cbdd`; arbitrum `0xf0cf7e...455659`; arbitrum `0xf40808...564d53` | ⚠️ Unaudited |
 | GainsNetworkToken | token | arbitrum | 4 deployments: polygon `0xe5417a...397896`; base `0x26196c...001b80`; base `0xfb1aab...7ee7ac`; arbitrum [`0x18c11f...63a122`](./contracts/arbitrum-42161/0x18c11fd286c5ec11c3b683caa813b77f5163a122/) | ⚠️ Unaudited |
-| GToken | token | polygon | 40 deployments: polygon [`0x08f3f5...6cb253`](./contracts/polygon-137/0x08f3f51d8d28f1b194e2e68e511f07d6f06cb253/); polygon `0x0fb7b7...9df222`; polygon `0x1544e1...3464fb`; polygon `0x20b263...c55155`; polygon `0x29019f...fe2c81`; polygon `0x65dff6...525fcc`; polygon `0x91993f...efe827`; polygon `0x956af4...013e7b`; polygon `0x9b059c...3bd6b0`; polygon `0xbdfd37...850fca`; polygon `0xc9f972...2a5a00`; polygon `0xf24f94...8b5988`; base `0x1d655c...7064e0`; base `0x46d977...bb0df0`; base `0x5335a8...09a708`; base `0x5d333f...fa1634`; base `0x9be876...f95ed6`; base `0xad2052...3d02e5`; base `0xd3bbe9...772c1c`; arbitrum `0x1f7eff...b1d9d6`; arbitrum `0x388277...e58093`; arbitrum `0x42249c...89c954`; arbitrum `0x485027...d46f48`; arbitrum `0x4beef1...a9a9f4`; arbitrum `0x5977a9...a2784c`; arbitrum `0x6899d5...243dc9`; arbitrum `0x7621c2...ec0093`; arbitrum `0x79967d...e1e6be`; arbitrum `0x85eb02...05542e`; arbitrum `0x8dfa03...842a41`; arbitrum `0x909393...98e874`; arbitrum `0x9a39cb...4b64dc`; arbitrum `0x9d27a7...369316`; arbitrum `0xa388d4...5444f2`; arbitrum `0xd3443e...8046e0`; arbitrum `0xd85e03...b9b91b`; arbitrum `0xdf8b50...cdfec2`; arbitrum `0xeb7545...d6cbdd`; arbitrum `0xf0cf7e...455659`; arbitrum `0xf40808...564d53` | ⚠️ Unaudited |
 | GNSTradingVaultV5 | core_logic | polygon | [`0xd7052e...58804f`](./contracts/polygon-137/0xd7052ec0fe1fe25b20b7d65f6f3d490fce58804f/) | ⚠️ Unaudited |
 | GNSNftRewardsV6_4_1 | token | polygon | 5 deployments: polygon [`0x5ac841...49abb6`](./contracts/polygon-137/0x5ac841ab23d501c1aa98b1ffe23588f06749abb6/); polygon `0x6f5c1b...8cb948`; polygon `0x8103c0...005f1c`; arbitrum `0x9ebb88...7b4a62`; arbitrum `0xde5750...acfec3` | ⚠️ Unaudited |
 | ApeRewards | unknown | arbitrum | [`0xb970e2...e46655`](./contracts/arbitrum-42161/0xb970e280f9ddaa3349ab9f3ecf778970cde46655/) | ⚠️ Unaudited |
@@ -71,6 +72,23 @@ The Gains Network family is a monolithic suite where all contracts share the sam
 | GainsNetworkNft3 | token | arbitrum | [`0x983415...84b384`](./contracts/arbitrum-42161/0x9834159eaf9811cf4c568294d5c7c9158f84b384/) | ⚠️ Unaudited |
 | GainsNetworkNft4 | token | arbitrum | [`0x40f0ae...1a21a1`](./contracts/arbitrum-42161/0x40f0aeab6383be2f254ce40b79089070fa1a21a1/) | ⚠️ Unaudited |
 | GainsNetworkNft5 | token | arbitrum | [`0x5e3b54...ffc9be`](./contracts/arbitrum-42161/0x5e3b541ad6acc4381c110247946c863e05ffc9be/) | ⚠️ Unaudited |
+| GFarmNft1 | token | polygon | [`0xf9a4c5...c1f898`](./contracts/polygon-137/0xf9a4c522e327935bd1f5a338c121e14e4cc1f898/) | ⚠️ Unaudited |
+| GFarmNft2 | token | polygon | [`0x77cd42...fddbbc`](./contracts/polygon-137/0x77cd42b925e1a82f41d852d6be727cfc88fddbbc/) | ⚠️ Unaudited |
+| GFarmNft3 | token | polygon | [`0x3378ad...601921`](./contracts/polygon-137/0x3378ad81d09de23725ee9b9270635c97ed601921/) | ⚠️ Unaudited |
+| GFarmNft4 | token | polygon | [`0x02e2c5...f3e6c2`](./contracts/polygon-137/0x02e2c5825c1a3b69c0417706dbe1327c2af3e6c2/) | ⚠️ Unaudited |
+| GFarmNft5 | token | polygon | [`0x2d266a...7767c2`](./contracts/polygon-137/0x2d266a94469d05c9e06d52a4d0d9c23b157767c2/) | ⚠️ Unaudited |
+| GFarmPoolV4 | core_logic | polygon | [`0x780bed...036116`](./contracts/polygon-137/0x780bedfce47ad1c665c270616da09230e7036116/) | ⚠️ Unaudited |
+| GFarmPoolV5 | core_logic | polygon | [`0x203f5c...f309f9`](./contracts/polygon-137/0x203f5c9567d533038d2da70cbc20e6e8b3f309f9/) | ⚠️ Unaudited |
+| GFarmPriceAggregator | operational_periphery | polygon | [`0x821be1...4eed99`](./contracts/polygon-137/0x821be1daa25d209ab952d72ccfbea1719e4eed99/) | ⚠️ Unaudited |
+| GFarmPriceAggregatorV4 | operational_periphery | polygon | [`0xfb694d...5138fb`](./contracts/polygon-137/0xfb694dbaa0f78a8b07be4a1a92ae12d2845138fb/) | ⚠️ Unaudited |
+| GFarmPriceAggregatorV5 | operational_periphery | polygon | [`0x8aaaff...3ebeec`](./contracts/polygon-137/0x8aaaff79c94debf411d4a4166c1aeab7a63ebeec/) | ⚠️ Unaudited |
+| GFarmTokenMigration | operational_periphery | polygon | [`0xd285f8...b0c7da`](./contracts/polygon-137/0xd285f881886505b9ef6684e1aaa7949a56b0c7da/) | ⚠️ Unaudited |
+| GFarmTradingCallbacksV5 | unknown | polygon | [`0x7af43f...8a555f`](./contracts/polygon-137/0x7af43f23f33642c4ea8bf10211a26d5a028a555f/) | ⚠️ Unaudited |
+| GFarmTradingStorageV5 | unknown | polygon | [`0xaee4d1...6d65bd`](./contracts/polygon-137/0xaee4d11a16b2bc65edd6416fb626eb404a6d65bd/) | ⚠️ Unaudited |
+| GFarmTradingV3 | unknown | polygon | [`0x835c1f...afaf06`](./contracts/polygon-137/0x835c1f54b79d9de40755999463960082b2afaf06/) | ⚠️ Unaudited |
+| GFarmTradingV4 | unknown | polygon | [`0xb28d7c...87745e`](./contracts/polygon-137/0xb28d7cea60db2da4d3afd19fa8b8f14a7487745e/) | ⚠️ Unaudited |
+| GFarmTradingV5 | unknown | polygon | [`0x96059f...41672e`](./contracts/polygon-137/0x96059f17be7d2e59406be75e77e23c128141672e/) | ⚠️ Unaudited |
+| GFarmTradingVaultV5 | core_logic | polygon | [`0x176586...551798`](./contracts/polygon-137/0x176586dec2b70df5b72a6efe158a87f210551798/) | ⚠️ Unaudited |
 | GNSBorrowingFees | core_logic | base | 42 deployments: polygon `0x089fae...5c895d`; polygon `0x222be4...c63073`; polygon `0x2c765b...b05104`; polygon `0x3b3e18...a2d981`; polygon `0x498df3...43d1e3`; polygon `0x4c5c33...1b2788`; polygon `0x5e1f0c...822716`; polygon `0x6b59f1...6e58bb`; polygon `0x713895...9401c8`; polygon `0x83ae6f...96fe15`; polygon `0x9828b0...5cc4a6`; polygon `0xa1d0ec...9430f0`; polygon `0xac318a...82caba`; polygon `0xbc47a6...6ba368`; polygon `0xbd6fbf...89b5af`; polygon `0xd4465e...6d318c`; polygon `0xfcd812...f488e7`; base [`0x0102e0...ae4d8b`](./contracts/base-8453/0x0102e07c3bf688c77c2120d67f47cfd9d5ae4d8b/); base `0x01ab17...7a4664`; base `0x03e22c...569a4e`; base `0x9d81e0...4f904e`; base `0xb4bbee...5dc45b`; base `0xf9ebb2...91bd7f`; arbitrum `0x02446a...0e8692`; arbitrum `0x0775dc...1bdd66`; arbitrum `0x086dac...027407`; arbitrum `0x152a2a...c1e70a`; arbitrum `0x22c5dc...ca5de2`; arbitrum `0x374a4c...e8eb96`; arbitrum `0x4412d8...9bc826`; arbitrum `0x447593...ad3536`; arbitrum `0x497153...9f7e5a`; arbitrum `0x60dfdc...3fab95`; arbitrum `0x6c5041...a5af2a`; arbitrum `0x8531d6...a6d923`; arbitrum `0xa03e32...393154`; arbitrum `0xa52fe9...d5b859`; arbitrum `0xb4792f...a923d6`; arbitrum `0xbea5a3...a5d50c`; arbitrum `0xd87a9b...96483b`; arbitrum `0xf380f2...6dd7c8`; arbitrum `0xf9854f...df21ea` | ⚠️ Unaudited |
 | GNSBorrowingFeesV6_3_2 | core_logic | arbitrum | 2 deployments: polygon `0xfa2d31...e84ce4`; arbitrum [`0xadf447...21c314`](./contracts/arbitrum-42161/0xadf447d4ce2538e055d3f32a65ada0d7ad21c314/) | ⚠️ Unaudited |
 | GNSBorrowingFeesV6_4 | core_logic | arbitrum | 8 deployments: polygon `0x0cbd54...4e2fee`; polygon `0x7a8f74...92a1cd`; polygon `0x8628ef...bbee90`; polygon `0xb9deae...b53e5f`; polygon `0xd62c64...b0213c`; polygon `0xf342ba...e751b9`; arbitrum [`0x037d01...e05e06`](./contracts/arbitrum-42161/0x037d01b939b92049460a5f56b0dea3b2ffe05e06/); arbitrum `0xe54e75...8f0f92` | ⚠️ Unaudited |
@@ -136,7 +154,7 @@ The Gains Network family is a monolithic suite where all contracts share the sam
 | GNSTriggerRewards | unknown | polygon | 10 deployments: polygon [`0x09d981...073f37`](./contracts/polygon-137/0x09d981aef6556b92ffb0521bcb3552b0d0073f37/); polygon `0x18d39f...6cf82c`; polygon `0x251131...8dbd33`; polygon `0x4ef305...8c22f4`; base `0xaebcae...4bb76b`; base `0xc47016...e110c2`; base `0xe9d52f...c633e4`; arbitrum `0x725031...de1bbc`; arbitrum `0xbe6875...4350c6`; arbitrum `0xdcff63...b1874c` | ⚠️ Unaudited |
 | GTokenLockedDepositNft | token | arbitrum | 13 deployments: polygon `0x4329c6...e5261e`; polygon `0xc4a8ab...0d64cf`; polygon `0xdd42aa...69bcc1`; base `0x170cc5...998a37`; base `0x7d0131...a05ceb`; arbitrum [`0x0c299d...dfaaad`](./contracts/arbitrum-42161/0x0c299d41b6ee07feb7adaf73e234e3cb29dfaaad/); arbitrum `0x3bb4b8...0910f8`; arbitrum `0x5a0841...1fbde5`; arbitrum `0x673cf5...3e4cc6`; arbitrum `0xa1d3cf...6dcc47`; arbitrum `0xb04374...a6e96c`; arbitrum `0xcf4e6b...1fdafc`; arbitrum `0xd846b1...df3804` | ⚠️ Unaudited |
 | GTokenLockedDepositNftDesign | token | arbitrum | 13 deployments: polygon `0x05826b...e241de`; polygon `0xba4aff...388bb0`; polygon `0xfc28bb...8fbea4`; base `0xb77d92...9761be`; base `0xd8d177...5f8f58`; arbitrum [`0x01f53a...1f2858`](./contracts/arbitrum-42161/0x01f53a010b09863ffd362a15e002da01901f2858/); arbitrum `0x090277...ec8286`; arbitrum `0x0f3fc8...839fd4`; arbitrum `0x1759ed...06ace2`; arbitrum `0x411641...327734`; arbitrum `0x760fc0...f01c90`; arbitrum `0x937a12...46d515`; arbitrum `0xd56c24...ee0d4c` | ⚠️ Unaudited |
-| GTokenOpenPnlFeed | token | arbitrum | 13 deployments: polygon `0x8d6872...f4440c`; polygon `0xf07f45...894473`; polygon `0xff84e7...6fe822`; base `0x0498ae...de3566`; base `0xefa1c2...33be37`; arbitrum [`0x007803...de47b4`](./contracts/arbitrum-42161/0x00780378a40bd6a7a682aa891f5f052b49de47b4/); arbitrum `0x018d9a...f9f27e`; arbitrum `0x4ca163...30e0d1`; arbitrum `0x95cf34...fff6a5`; arbitrum `0x990ba9...a4a23d`; arbitrum `0xbf55c7...d47982`; arbitrum `0xe9fbfe...b0c78e`; arbitrum `0xee791c...c786eb` | ⚠️ Unaudited |
+| GTokenOpenPnlFeed | token | arbitrum | 14 deployments: polygon `0x8d6872...f4440c`; polygon `0xf07f45...894473`; polygon `0xff84e7...6fe822`; base `0x0498ae...de3566`; base `0xcec10c...365cc8`; base `0xefa1c2...33be37`; arbitrum [`0x007803...de47b4`](./contracts/arbitrum-42161/0x00780378a40bd6a7a682aa891f5f052b49de47b4/); arbitrum `0x018d9a...f9f27e`; arbitrum `0x4ca163...30e0d1`; arbitrum `0x95cf34...fff6a5`; arbitrum `0x990ba9...a4a23d`; arbitrum `0xbf55c7...d47982`; arbitrum `0xe9fbfe...b0c78e`; arbitrum `0xee791c...c786eb` | ⚠️ Unaudited |
 | GTokenV6_3_2 | token | arbitrum | 2 deployments: polygon `0xc91336...1191ea`; arbitrum [`0xbbda87...e305fa`](./contracts/arbitrum-42161/0xbbda8719a932b3ce5b7c56f427d97fe4a8e305fa/) | ⚠️ Unaudited |
 | L2TBTC | unknown | arbitrum | [`0x6c84a8...d0de40`](./contracts/arbitrum-42161/0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40/) | ⚠️ Unaudited |
 | ManagerTimelock | governance | base | 2 deployments: base [`0x03908e...0b8f08`](./contracts/base-8453/0x03908e9aeba0a23c1c476f946b99b6e9ea0b8f08/); base `0xf89c7b...5e5e5b` | ⚠️ Unaudited |
@@ -154,6 +172,7 @@ The Gains Network family is a monolithic suite where all contracts share the sam
 | ReferralsUtils | unknown | arbitrum | 2 deployments: polygon `0x9da85d...1d6c7c`; arbitrum [`0x9bd783...1aff41`](./contracts/arbitrum-42161/0x9bd78303b12eafd8aa8e1f0667b730b10f1aff41/) | ⚠️ Unaudited |
 | StakingRewards | unknown | polygon | [`0x33025b...4b4e43`](./contracts/polygon-137/0x33025b177a35f6275b78f9c25684273fc24b4e43/) | ⚠️ Unaudited |
 | stARBIS | unknown | arbitrum | [`0xbf0075...d2db86`](./contracts/arbitrum-42161/0xbf00759d7e329d7a7fa1d4dcdc914c53d1d2db86/) | ⚠️ Unaudited |
+| TestBitconnectrPolygon | unknown | polygon | [`0xf86289...b64400`](./contracts/polygon-137/0xf86289fce04f705dd4a246762f08b1c20eb64400/) | ⚠️ Unaudited |
 | Timelock | governance | arbitrum | 17 deployments: polygon `0x29e44c...9e80d5`; polygon `0x80399b...d46497`; polygon `0x8abb67...0e83df`; polygon `0xb4742e...e4fb0b`; polygon `0xb847e2...787dca`; polygon `0xefcb39...0303b7`; base `0x498f7e...e31e0d`; base `0x7f10f0...f43a86`; base `0x96a609...b176da`; base `0xcbe135...41007a`; base `0xcc7ed0...81138b`; base `0xde6229...238fb6`; base `0xe77109...1b09a4`; arbitrum [`0x00f417...e77667`](./contracts/arbitrum-42161/0x00f417403732dbd32fde2b0d61dbab0e25e77667/); arbitrum `0x6d5eb0...d26ed7`; arbitrum `0x893fcf...d5e75a`; arbitrum `0xac69a6...3da481` | ⚠️ Unaudited |
 | TradeUtils | unknown | polygon | 17 deployments: polygon [`0x03c86d...889c0b`](./contracts/polygon-137/0x03c86d38143908ef53305e8184cfe4aed9889c0b/); polygon `0x7abb47...30bee5`; polygon `0x8ccccc...b7f627`; polygon `0xa3033c...939ac2`; polygon `0xa523f6...783fbe`; polygon `0xc64367...a36385`; polygon `0xd21b6b...864209`; polygon `0xe4ed37...899f60`; polygon `0xf0c993...765189`; arbitrum `0x4485af...92120e`; arbitrum `0x493eec...672e39`; arbitrum `0x588bee...7cb98b`; arbitrum `0x7ca99c...04e4c7`; arbitrum `0x8c0d84...2ba881`; arbitrum `0xc16831...14b5e7`; arbitrum `0xc9e7e5...16730e`; arbitrum `0xf7763d...dd2359` | ⚠️ Unaudited |
 | TradingBackend | unknown | arbitrum | 4 deployments: polygon `0x6c166d...1530d5`; polygon `0x810721...bb470d`; arbitrum [`0x614d5d...de61a4`](./contracts/arbitrum-42161/0x614d5d60a5ed7a6941234151c8e6cc7ebade61a4/); arbitrum `0xc9ba2a...859a8f` | ⚠️ Unaudited |
@@ -840,82 +859,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| arbitrum | [`0x18c11f...63a122`](./contracts/arbitrum-42161/0x18c11fd286c5ec11c3b683caa813b77f5163a122/) | GainsNetworkToken | token | $10,951,361.44 | Verified native implementation with $10,951,361.44 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xd7052e...58804f`](./contracts/polygon-137/0xd7052ec0fe1fe25b20b7d65f6f3d490fce58804f/) | GNSTradingVaultV5 | core_logic | $54,451.00 | Verified native implementation with $54,451.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x5ac841...49abb6`](./contracts/polygon-137/0x5ac841ab23d501c1aa98b1ffe23588f06749abb6/) | GNSNftRewardsV6_4_1 | token | $305.37 | Verified native implementation with $305.37 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x061bc5...fc06a4`](./contracts/arbitrum-42161/0x061bc5884c7dfb4d6514f4101047f8c010fc06a4/) | ArrayGetters | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x02007a...faf882`](./contracts/base-8453/0x02007a5d5f31a4a27ad7db7f22b3e69265faf882/) | BorrowingFeesUtils | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xad85e2...9a20d6`](./contracts/polygon-137/0xad85e25576a4e4ae7423d9c0ee1eccf6c99a20d6/) | DevsRevenue | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x01caaa...5fa5e2`](./contracts/arbitrum-42161/0x01caaaa682ceba8cd6c02f93bb1393fb415fa5e2/) | ERC20Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x19eba9...1fda0b`](./contracts/polygon-137/0x19eba97430caf024685e433974beed30bc1fda0b/) | ERC721LockingBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0f9e43...e50827`](./contracts/arbitrum-42161/0x0f9e4375facbeb90daa850f677819b438ce50827/) | ERC721MintingBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x312c06...1abab9`](./contracts/polygon-137/0x312c06494f334f595da1e25759710d3d791abab9/) | FeeTiersUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0102e0...ae4d8b`](./contracts/base-8453/0x0102e07c3bf688c77c2120d67f47cfd9d5ae4d8b/) | GNSBorrowingFees | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x037d01...e05e06`](./contracts/arbitrum-42161/0x037d01b939b92049460a5f56b0dea3b2ffe05e06/) | GNSBorrowingFeesV6_4 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x189c9e...4f91a2`](./contracts/polygon-137/0x189c9ed174cd19025864b5ee5f587ee8084f91a2/) | GNSChainConfig | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x026594...38ad12`](./contracts/polygon-137/0x026594069e41dd9b85c0af804348c1c57c38ad12/) | GNSFeeTiers | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x09c2c2...278249`](./contracts/polygon-137/0x09c2c2185f47c1cb86148a6441969d6127278249/) | GNSOracleRewards | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x03a643...d9331c`](./contracts/polygon-137/0x03a6431d25f881df94c0a96c574f214d28d9331c/) | GNSOracleRewardsV6_4_1 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0d30fd...0a135b`](./contracts/base-8453/0x0d30fd5b87f212c002c5c881f237f580860a135b/) | GNSOtc | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x03c757...8c5f41`](./contracts/polygon-137/0x03c757ccf50607d1d2c4789e1d894716898c5f41/) | GNSPairsStorage | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0f43c4...258772`](./contracts/arbitrum-42161/0x0f43c47aca3518fde69e012857cbc9c880258772/) | GNSPairsStorageV6 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x151757...6aa0c5`](./contracts/polygon-137/0x151757c2e830c467b28fe6c09c3174b6c76aa0c5/) | GNSPoolV5 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x01b1ea...f71030`](./contracts/polygon-137/0x01b1ea7868aceb1e5e71369e1986afae1ff71030/) | GNSPriceAggregator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x5fb473...41178b`](./contracts/polygon-137/0x5fb47355828c0902acbbe759cee1b8342c41178b/) | GNSPriceAggregatorV6 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x126f32...58a816`](./contracts/polygon-137/0x126f32723c5fc8dfeb17c46b7b7dd3dcd458a816/) | GNSPriceAggregatorV6_4 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x153b2e...7dbff9`](./contracts/base-8453/0x153b2e08bf39534180e76a8822d95c84bf7dbff9/) | GNSReferrals | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x0f9498...052425`](./contracts/polygon-137/0x0f9498b1206bf9ffde2a2321fdb56f573a052425/) | GNSReferralsV6_2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x1b9924...4b15f4`](./contracts/polygon-137/0x1b99244e75fbcee5763730e1d207d7cceb4b15f4/) | GNSStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x04b4b0...090a3e`](./contracts/polygon-137/0x04b4b0fdb2a6dec6c8f7885a8b62c57765090a3e/) | GNSStakingV6_4_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x1632c3...26f637`](./contracts/arbitrum-42161/0x1632c38cb208df8409753729dbfba5c58626f637/) | GNSTimelockManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x322e18...96da0e`](./contracts/polygon-137/0x322e18fdb5d0b0221e4724dcc5883c4b7896da0e/) | GNSTimelockOwner | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0b213d...acc11c`](./contracts/arbitrum-42161/0x0b213d09c5264ffdceb3d24b86f746a2d8acc11c/) | GNSTrading | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x02432f...e57cbc`](./contracts/base-8453/0x02432fb59835f4a413a97e1a8e329545b1e57cbc/) | GNSTradingCallbacks | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x1e87e8...235bed`](./contracts/polygon-137/0x1e87e8703883a46ccdec4c8868043abe40235bed/) | GNSTradingCallbacksV5 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xcf6391...270e28`](./contracts/polygon-137/0xcf63914f5160e596bc574bf4fd52c13a8d270e28/) | GNSTradingCallbacksV6 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x170cc5...998a37`](./contracts/polygon-137/0x170cc5a70d6f544e5456881b586eb58180998a37/) | GNSTradingCallbacksV6_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x08a144...ddd888`](./contracts/polygon-137/0x08a144792239cb7517afbf11883011867eddd888/) | GNSTradingCallbacksV6_3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0765eb...7e1aaf`](./contracts/arbitrum-42161/0x0765ebc1411fc2db457fd01268e9d8dc087e1aaf/) | GNSTradingCallbacksV6_3_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x1523fa...2f7c6b`](./contracts/polygon-137/0x1523fabcbbcdab95bcec6b8ebecaeabc6b2f7c6b/) | GNSTradingCallbacksV6_4 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x05c3d5...e04149`](./contracts/arbitrum-42161/0x05c3d5a2476b260b8938a225ea233f366be04149/) | GNSTradingCallbacksV6_4_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x0afaed...19afb5`](./contracts/polygon-137/0x0afaed0191e79374ca2d04efc85b4e719419afb5/) | GNSTradingInteractions | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x7f1bca...b29bc9`](./contracts/polygon-137/0x7f1bcaf274fa79909d1778c95c9947d882b29bc9/) | GNSTradingStateCopy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x01fd80...cf9858`](./contracts/arbitrum-42161/0x01fd80b99424a455345df672e7719bbf86cf9858/) | GNSTradingStorage | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x37c114...528ebe`](./contracts/polygon-137/0x37c11410b2c2a1cd4b3a0de2bd3a1808e0528ebe/) | GNSTradingV5 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xf8a140...4fe559`](./contracts/polygon-137/0xf8a140db8b05bec52c7e86d0d40d72f8e54fe559/) | GNSTradingV6 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xd8d177...5f8f58`](./contracts/polygon-137/0xd8d177efc926a18ee455da6f5f6a6cfcee5f8f58/) | GNSTradingV6_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x07c848...a11fe0`](./contracts/arbitrum-42161/0x07c8481f5ebe5c40c5e2e18a174606e5d3a11fe0/) | GNSTradingV6_2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x36f9d6...1124f8`](./contracts/polygon-137/0x36f9d68acd292e1e59b3c45457dfabd7301124f8/) | GNSTradingV6_3_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x5c58a8...5d83da`](./contracts/polygon-137/0x5c58a8acac721928b6f4495370c10762795d83da/) | GNSTradingV6_3_2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x09d981...073f37`](./contracts/polygon-137/0x09d981aef6556b92ffb0521bcb3552b0d0073f37/) | GNSTriggerRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0c299d...dfaaad`](./contracts/arbitrum-42161/0x0c299d41b6ee07feb7adaf73e234e3cb29dfaaad/) | GTokenLockedDepositNft | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x01f53a...1f2858`](./contracts/arbitrum-42161/0x01f53a010b09863ffd362a15e002da01901f2858/) | GTokenLockedDepositNftDesign | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x007803...de47b4`](./contracts/arbitrum-42161/0x00780378a40bd6a7a682aa891f5f052b49de47b4/) | GTokenOpenPnlFeed | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x03908e...0b8f08`](./contracts/base-8453/0x03908e9aeba0a23c1c476f946b99b6e9ea0b8f08/) | ManagerTimelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x6528ed...cf9b9c`](./contracts/polygon-137/0x6528edab55cb189be91c835011ed174455cf9b9c/) | OvercollatMigrationRouter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x3a00b1...419e7a`](./contracts/base-8453/0x3a00b1fa6cb7d07043fc2b2066066735f9419e7a/) | OwnerTimelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x535537...09270d`](./contracts/polygon-137/0x53553728a39e307b8f485f431825a1e13909270d/) | PairsStorageUtils | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x02cd10...1a12e3`](./contracts/polygon-137/0x02cd10923e19b6ba98f745466167694f611a12e3/) | PriceAggregatorUtils | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x02dbbc...9202f9`](./contracts/polygon-137/0x02dbbc5aadfeb6a1e21819d9ece4bcf0799202f9/) | ReferralStateCopy | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x33025b...4b4e43`](./contracts/polygon-137/0x33025b177a35f6275b78f9c25684273fc24b4e43/) | StakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x00f417...e77667`](./contracts/arbitrum-42161/0x00f417403732dbd32fde2b0d61dbab0e25e77667/) | Timelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x03c86d...889c0b`](./contracts/polygon-137/0x03c86d38143908ef53305e8184cfe4aed9889c0b/) | TradeUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0393e1...07d0ae`](./contracts/arbitrum-42161/0x0393e1e68a051ae580a69f443b7db7cd3907d0ae/) | TradingCallbacksUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x01e8bd...1798df`](./contracts/arbitrum-42161/0x01e8bde7cbb881aeca02ba2a9631d94d491798df/) | TradingCommonUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x036c04...3000d9`](./contracts/polygon-137/0x036c0411c5ce4fa6e0600529904884b55e3000d9/) | TradingStorageUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x066830...36bfce`](./contracts/base-8453/0x06683037152874729cb6ed02eb9561754736bfce/) | UpdateLeverageLifecycles | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0b9949...0a003a`](./contracts/base-8453/0x0b994984fe963904d601805d3d20930b8f0a003a/) | UpdatePositionSizeLifecycles | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 448 |
+| native | 0 |
 | upstream | 1 |
-| standard_library | 2 |
-| needs_review | 309 |
+| standard_library | 0 |
+| needs_review | 778 |
 
 ## Scope Matching Notes
 

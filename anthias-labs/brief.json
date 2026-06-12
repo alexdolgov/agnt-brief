@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "anthias-labs",
-  "generated_at": "2026-06-10T20:58:57.576Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-12T13:52:53.907Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-769a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "anthias-labs",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 19.371951580172325
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 9,
-    "unique_implementations": 2,
-    "total_deployments": 9,
+    "total_contracts": 3,
+    "total_addresses": 10,
+    "unique_implementations": 3,
+    "total_deployments": 10,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 21649055.52288,
+    "dl_tvl_usd": 18647606.58518,
     "tvl_usd": 705349.1696107285,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -63,7 +63,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 3,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -78,7 +78,7 @@
       "address": "0x48a90e85be5c56b0a669985a12ee7c449fc79965",
       "name": "VaultV2",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Anthias Labs",
       "tvl_usd": 705349.1696107285,
@@ -196,27 +196,47 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "name": "Morpho",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Morpho",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Morpho",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x48a90e85be5c56b0a669985a12ee7c449fc79965",
-      "name": "VaultV2",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 705349.1696107285,
-      "risk_note": "Verified native implementation with $705,349.17 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
-    "upstream": 0,
+    "native": 0,
+    "upstream": 1,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},

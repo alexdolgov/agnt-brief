@@ -1,0 +1,18 @@
+{
+  "address": "0x8fbd420956fdd301f4493500fd0bcaaa80f2389c",
+  "chain_id": 42161,
+  "contract_name": "AmyFinanceToken",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T15:06:01.390Z"
+}

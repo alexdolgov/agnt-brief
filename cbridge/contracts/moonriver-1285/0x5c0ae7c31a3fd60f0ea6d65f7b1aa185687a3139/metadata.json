@@ -1,0 +1,17 @@
+{
+  "address": "0x5c0ae7c31a3fd60f0ea6d65f7b1aa185687a3139",
+  "chain_id": 1285,
+  "contract_name": "TomHelper",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000037619cc85325afea778830e184cb60a3abc9210b00000000000000000000000000000000000000000000000000000000000000600000000000000000000000001f4b7660b6adc3943b5038e3426b33c1c0e343e60000000000000000000000000000000000000000000000000000000000000002000000000000000000000000a66535f73ca247e1b2e2b97149ca381be18253a10000000000000000000000004407c6cc7075a771519b8d004adcdc786432eb12",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T15:05:43.726Z"
+}

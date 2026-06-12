@@ -1,0 +1,18 @@
+{
+  "address": "0x4f1d3d9ce4bb7646c35dcd05d3296f106f12345c",
+  "chain_id": 43114,
+  "contract_name": "SignatureVerifier",
+  "compiler_version": "v0.4.26+commit.4563c3fc",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T15:05:47.786Z"
+}

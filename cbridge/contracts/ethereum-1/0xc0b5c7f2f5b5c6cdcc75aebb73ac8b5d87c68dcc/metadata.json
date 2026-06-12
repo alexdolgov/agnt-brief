@@ -1,0 +1,18 @@
+{
+  "address": "0xc0b5c7f2f5b5c6cdcc75aebb73ac8b5d87c68dcc",
+  "chain_id": 1,
+  "contract_name": "LPMining",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T15:06:19.453Z"
+}

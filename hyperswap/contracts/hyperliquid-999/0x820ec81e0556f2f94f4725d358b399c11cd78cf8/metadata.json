@@ -1,0 +1,17 @@
+{
+  "address": "0x820ec81e0556f2f94f4725d358b399c11cd78cf8",
+  "chain_id": 999,
+  "contract_name": "V3Migrator",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T14:55:10.152Z"
+}

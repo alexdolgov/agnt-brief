@@ -1,0 +1,18 @@
+{
+  "address": "0x2a2ad5a2eacf35194d39afe1d727c39710ff0379",
+  "chain_id": 1,
+  "contract_name": "ChainGuardiansToken900",
+  "compiler_version": "v0.7.0+commit.9e61f92b",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T15:06:02.211Z"
+}

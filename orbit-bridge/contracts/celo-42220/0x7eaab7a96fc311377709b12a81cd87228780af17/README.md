@@ -5,7 +5,7 @@
 | Chain | celo (42220) |
 | Address | `0x7eaab7a96fc311377709b12a81cd87228780af17` |
 | Role | core_logic |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 2 (celo [`0x7eaab7a96fc311377709b12a81cd87228780af17`](../0x7eaab7a96fc311377709b12a81cd87228780af17/); celo `0x979cd0826c2bf62703ef62221a4fea1f23da3777`) |

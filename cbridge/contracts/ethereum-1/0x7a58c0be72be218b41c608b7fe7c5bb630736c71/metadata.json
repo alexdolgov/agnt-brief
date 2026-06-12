@@ -1,0 +1,18 @@
+{
+  "address": "0x7a58c0be72be218b41c608b7fe7c5bb630736c71",
+  "chain_id": 1,
+  "contract_name": "Tickets",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "berlin",
+  "license": "MIT, WTFPL",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T15:06:13.124Z"
+}

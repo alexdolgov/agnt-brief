@@ -1,0 +1,18 @@
+{
+  "address": "0x176a3c8f81e91de22da62fb48d563e67263e354e",
+  "chain_id": 1,
+  "contract_name": "VestingEscrowV2",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "ISC, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T15:05:56.019Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xfa78cba4ebbf8fe28b4fc1468948f16fda2752b3",
+  "chain_id": 59144,
+  "contract_name": "BrevisRequest",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "00000000000000000000000058b529f9084d7eaa598eb3477fe36064c5b7bbc10000000000000000000000007abd76eb305263b044acce44491010cdc3079222",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T15:05:43.109Z"
+}

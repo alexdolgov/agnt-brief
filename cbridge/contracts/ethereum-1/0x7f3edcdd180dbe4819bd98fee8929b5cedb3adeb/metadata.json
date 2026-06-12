@@ -1,0 +1,18 @@
+{
+  "address": "0x7f3edcdd180dbe4819bd98fee8929b5cedb3adeb",
+  "chain_id": 1,
+  "contract_name": "XTKProxy",
+  "compiler_version": "v0.6.2+commit.bacdbe57",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x8b68733d7e4f1586ed8268aa1a020efdf2dfe14b",
+  "fetched_at": "2026-06-12T15:06:13.666Z"
+}

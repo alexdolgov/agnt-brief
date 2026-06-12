@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "orbit-bridge",
-  "generated_at": "2026-06-11T01:41:14.411Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-12T14:47:12.239Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-769a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "orbit-bridge",
@@ -22,30 +22,32 @@
     "drop_from_peak_pct": 94.35419116331406
   },
   "summary": {
-    "total_contracts": 22,
-    "total_addresses": 25,
-    "unique_implementations": 22,
-    "total_deployments": 25,
+    "total_contracts": 24,
+    "total_addresses": 29,
+    "unique_implementations": 24,
+    "total_deployments": 29,
     "audited_contracts": 0,
     "unaudited_contracts": 5,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 17,
+    "contracts_unverified": 19,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 17464468.31684,
-    "tvl_usd": 640230.4032258509,
+    "dl_tvl_usd": 15310376.14266,
+    "tvl_usd": 829871.4181772078,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
+      "bsc": 189641.01,
       "celo": 22.03,
       "ethereum": 631043.73,
       "polygon": 9164.65
     },
-    "asd_usd": 640230.4032258509,
+    "asd_usd": 829871.4181772078,
     "website_url": "https://bridge.orbitchain.io",
     "chains": [
+      "bsc",
       "celo",
       "ethereum",
       "heco",
@@ -69,7 +71,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 22,
+    "unique_implementations": 24,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -84,7 +86,7 @@
       "address": "0x662b67d00a13faf93254714dd601f5ed49ef2f51",
       "name": "ORCToken",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Orbit Bridge",
       "tvl_usd": 631014.9188152819,
@@ -115,14 +117,23 @@
       "address": "0x506dc4c6408813948470a06ef6e4a1daf228dbd5",
       "name": "Vault",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Orbit Bridge",
-      "tvl_usd": 9164.649254824568,
+      "tvl_usd": 198805.66420618154,
       "is_proxy": true,
       "impl_address": "0xda4721c94ee5a93186a3f40414d091e6ff842303",
       "impl_name": "Vault",
       "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x89c527764f03bcb7dc469707b23b79c1d7beb780",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 189641.01495135698,
+          "is_audited": false
+        },
         {
           "chain_id": 137,
           "chain_name": "polygon",
@@ -146,7 +157,7 @@
       "address": "0x1bf68a9d1eaee7826b3593c20a0ca93293cb489a",
       "name": "EthVaultImpl",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Orbit Bridge",
       "tvl_usd": 28.806668537235964,
@@ -171,6 +182,15 @@
           "verified_by_bytecode": false,
           "tvl_usd": 28.806668537235964,
           "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc3430bc8c2c05fc6b42114bf7f82a3e2f3ee9454",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -186,7 +206,7 @@
       "address": "0x7eaab7a96fc311377709b12a81cd87228780af17",
       "name": "CeloVaultImpl",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Orbit Bridge",
       "tvl_usd": 22.028487207084865,
@@ -226,8 +246,8 @@
       "address": "0x3b31c980598f9237d9c14bb44118773b92174720",
       "name": "ProxyAdmin",
       "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -289,7 +309,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -320,7 +340,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -351,7 +371,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -382,7 +402,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -413,7 +433,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -444,7 +464,38 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6bd8e3beec87176ba9c705c9507aa5e6f0e6706f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6bd8e3beec87176ba9c705c9507aa5e6f0e6706f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -475,7 +526,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -506,7 +557,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -537,7 +588,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -568,7 +619,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -599,7 +650,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 128,
@@ -661,7 +712,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 137,
@@ -692,7 +743,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 137,
@@ -723,7 +774,38 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xda4721c94ee5a93186a3f40414d091e6ff842303",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Orbit Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xda4721c94ee5a93186a3f40414d091e6ff842303",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 8217,
@@ -785,7 +867,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     }
   ],
   "audits": [
@@ -812,53 +894,12 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x662b67d00a13faf93254714dd601f5ed49ef2f51",
-      "name": "ORCToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 631014.9188152819,
-      "risk_note": "Verified native implementation with $631,014.92 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x506dc4c6408813948470a06ef6e4a1daf228dbd5",
-      "name": "Vault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 9164.649254824568,
-      "risk_note": "Verified native implementation with $9,164.65 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1bf68a9d1eaee7826b3593c20a0ca93293cb489a",
-      "name": "EthVaultImpl",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 28.806668537235964,
-      "risk_note": "Verified native implementation with $28.81 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0x7eaab7a96fc311377709b12a81cd87228780af17",
-      "name": "CeloVaultImpl",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 22.028487207084865,
-      "risk_note": "Verified native implementation with $22.03 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 4,
+    "native": 0,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 17
+    "standard_library": 0,
+    "needs_review": 24
   },
   "scope_matching_notes": {
     "match_method_counts": {},

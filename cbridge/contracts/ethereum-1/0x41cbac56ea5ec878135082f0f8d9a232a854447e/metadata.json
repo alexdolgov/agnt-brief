@@ -1,0 +1,18 @@
+{
+  "address": "0x41cbac56ea5ec878135082f0f8d9a232a854447e",
+  "chain_id": 1,
+  "contract_name": "OpenDAOCombined",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T15:06:05.961Z"
+}

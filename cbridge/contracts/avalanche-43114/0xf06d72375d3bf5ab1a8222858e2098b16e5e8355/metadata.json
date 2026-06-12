@@ -1,0 +1,18 @@
+{
+  "address": "0xf06d72375d3bf5ab1a8222858e2098b16e5e8355",
+  "chain_id": 43114,
+  "contract_name": "TokenManagerProxy",
+  "compiler_version": "v0.4.26+commit.4563c3fc",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": "0xba6d8783f454fc54c42e4f727bf604d7877f5d2f",
+  "fetched_at": "2026-06-12T15:05:53.744Z"
+}

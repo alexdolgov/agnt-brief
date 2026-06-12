@@ -1,0 +1,18 @@
+{
+  "address": "0xc834fa996fa3bec7aad3693af486ae53d8aa8b50",
+  "chain_id": 1,
+  "contract_name": "ConvergenceToken",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T15:06:19.876Z"
+}

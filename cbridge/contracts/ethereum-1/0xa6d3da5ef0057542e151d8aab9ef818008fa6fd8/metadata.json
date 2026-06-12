@@ -1,0 +1,18 @@
+{
+  "address": "0xa6d3da5ef0057542e151d8aab9ef818008fa6fd8",
+  "chain_id": 1,
+  "contract_name": "AdvanceAggregator",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T15:06:17.444Z"
+}

@@ -1,0 +1,567 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISMT",
+        "name": "_smtContract",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes32[]",
+        "name": "vkHashes",
+        "type": "bytes32[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "sizes",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "BatchTierVkHashesUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "contract ISMT",
+        "name": "smtContract",
+        "type": "address"
+      }
+    ],
+    "name": "SmtContractUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64[]",
+        "name": "chainIds",
+        "type": "uint64[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "contract IZkpVerifier",
+            "name": "contractAppZkVerifier",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IZkpVerifier",
+            "name": "circuitAppZkVerifier",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct BrevisProof.ChainZKVerifier[]",
+        "name": "newAddresses",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "VerifierAddressesUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_requestId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getProofAppData",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_requestId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getProofData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "commitHash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "length",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "vkHash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "appCommitHash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "appVkHash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "smtRoot",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct Brevis.ProofData",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_requestId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "hasProof",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "proofs",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "commitHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "length",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "vkHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "appCommitHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "appVkHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "smtRoot",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "_vkHashes",
+        "type": "bytes32[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_sizes",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "setBatchTierVkHashes",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "smtContract",
+    "outputs": [
+      {
+        "internalType": "contract ISMT",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "_chainId",
+        "type": "uint64"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_proofWithPubInputs",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bool",
+        "name": "_withAppProof",
+        "type": "bool"
+      }
+    ],
+    "name": "submitProof",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_requestId",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISMT",
+        "name": "_smtContract",
+        "type": "address"
+      }
+    ],
+    "name": "updateSmtContract",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64[]",
+        "name": "_chainIds",
+        "type": "uint64[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "contract IZkpVerifier",
+            "name": "contractAppZkVerifier",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IZkpVerifier",
+            "name": "circuitAppZkVerifier",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct BrevisProof.ChainZKVerifier[]",
+        "name": "_verifierAddresses",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "updateVerifierAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_requestId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_chainId",
+        "type": "uint64"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "smtRoot",
+            "type": "bytes32"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint64",
+                "name": "blkNum",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "receiptIndex",
+                "type": "uint64"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "internalType": "uint8",
+                        "name": "valueFromTopic",
+                        "type": "uint8"
+                      },
+                      {
+                        "internalType": "uint64",
+                        "name": "valueIndex",
+                        "type": "uint64"
+                      },
+                      {
+                        "internalType": "address",
+                        "name": "contractAddress",
+                        "type": "address"
+                      },
+                      {
+                        "internalType": "bytes32",
+                        "name": "logTopic0",
+                        "type": "bytes32"
+                      }
+                    ],
+                    "internalType": "struct Brevis.LogExtraInfo",
+                    "name": "logExtraInfo",
+                    "type": "tuple"
+                  },
+                  {
+                    "internalType": "uint64",
+                    "name": "logIndex",
+                    "type": "uint64"
+                  },
+                  {
+                    "internalType": "bytes32",
+                    "name": "value",
+                    "type": "bytes32"
+                  }
+                ],
+                "internalType": "struct Brevis.LogInfo[5]",
+                "name": "logs",
+                "type": "tuple[5]"
+              }
+            ],
+            "internalType": "struct Brevis.ReceiptInfo[]",
+            "name": "receipts",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes32",
+                "name": "blockHash",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "slot",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "slotValue",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "uint64",
+                "name": "blockNumber",
+                "type": "uint64"
+              }
+            ],
+            "internalType": "struct Brevis.StorageInfo[]",
+            "name": "stores",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes32",
+                "name": "leafHash",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "blockHash",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "uint64",
+                "name": "blockNumber",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "blockTime",
+                "type": "uint64"
+              },
+              {
+                "internalType": "bytes",
+                "name": "leafRlpPrefix",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct Brevis.TransactionInfo[]",
+            "name": "txs",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct Brevis.ExtractInfos",
+        "name": "_extractInfos",
+        "type": "tuple"
+      }
+    ],
+    "name": "validateRequest",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "name": "verifierAddresses",
+    "outputs": [
+      {
+        "internalType": "contract IZkpVerifier",
+        "name": "contractAppZkVerifier",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IZkpVerifier",
+        "name": "circuitAppZkVerifier",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "vkHashesToBatchSize",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0xbcdd2a069a46e9b5d032d2f99725418508ce6aee",
+  "chain_id": 1,
+  "contract_name": "DTokenProxy",
+  "compiler_version": "v0.5.12+commit.7709ece9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "petersburg",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x40f5993b0cc0f0e3828b02163ef6294c8ae737e3",
+  "fetched_at": "2026-06-12T15:06:19.370Z"
+}

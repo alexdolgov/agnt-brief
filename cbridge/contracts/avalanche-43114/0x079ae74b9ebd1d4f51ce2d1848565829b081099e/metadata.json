@@ -1,0 +1,17 @@
+{
+  "address": "0x079ae74b9ebd1d4f51ce2d1848565829b081099e",
+  "chain_id": 43114,
+  "contract_name": "CrossProxy",
+  "compiler_version": "v0.4.26+commit.4563c3fc",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0xc9ea89502f43162ab724eb5f7687f2c590056c9d",
+  "fetched_at": "2026-06-12T15:05:42.105Z"
+}

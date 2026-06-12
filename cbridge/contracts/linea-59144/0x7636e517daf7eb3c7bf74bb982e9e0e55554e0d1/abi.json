@@ -1,0 +1,1256 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "genesisTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "genesisValidatorsRoot",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint64[]",
+        "name": "_forkEpochs",
+        "type": "uint64[]"
+      },
+      {
+        "internalType": "bytes4[]",
+        "name": "_forkVersions",
+        "type": "bytes4[]"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_finalizedSlot",
+        "type": "uint64"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "syncCommitteeRoot",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "syncCommitteePoseidonRoot",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "_zkVerifier",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "slot",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "executionStateRoot",
+        "type": "bytes32"
+      }
+    ],
+    "name": "FinalityUpdate",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "epoch",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes4",
+        "name": "forkVersion",
+        "type": "bytes4"
+      }
+    ],
+    "name": "ForkVersionUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "slot",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "executionStateRoot",
+        "type": "bytes32"
+      }
+    ],
+    "name": "OptimisticUpdate",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "period",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "sszRoot",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "poseidonRoot",
+        "type": "bytes32"
+      }
+    ],
+    "name": "SyncCommitteeUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "bestValidUpdate",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint64",
+                "name": "slot",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "proposerIndex",
+                "type": "uint64"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "parentRoot",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "stateRoot",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "bodyRoot",
+                "type": "bytes32"
+              }
+            ],
+            "internalType": "struct BeaconBlockHeader",
+            "name": "beacon",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "bytes32",
+                    "name": "leaf",
+                    "type": "bytes32"
+                  },
+                  {
+                    "internalType": "bytes32[]",
+                    "name": "branch",
+                    "type": "bytes32[]"
+                  }
+                ],
+                "internalType": "struct LeafWithBranch",
+                "name": "stateRoot",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "bytes32",
+                    "name": "leaf",
+                    "type": "bytes32"
+                  },
+                  {
+                    "internalType": "bytes32[]",
+                    "name": "branch",
+                    "type": "bytes32[]"
+                  }
+                ],
+                "internalType": "struct LeafWithBranch",
+                "name": "blockHash",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "bytes32",
+                    "name": "leaf",
+                    "type": "bytes32"
+                  },
+                  {
+                    "internalType": "bytes32[]",
+                    "name": "branch",
+                    "type": "bytes32[]"
+                  }
+                ],
+                "internalType": "struct LeafWithBranch",
+                "name": "blockNumber",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct ExecutionPayload",
+            "name": "execution",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes32",
+                "name": "leaf",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32[]",
+                "name": "branch",
+                "type": "bytes32[]"
+              }
+            ],
+            "internalType": "struct LeafWithBranch",
+            "name": "executionRoot",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct HeaderWithExecution",
+        "name": "attestedHeader",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint64",
+                "name": "slot",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "proposerIndex",
+                "type": "uint64"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "parentRoot",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "stateRoot",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "bodyRoot",
+                "type": "bytes32"
+              }
+            ],
+            "internalType": "struct BeaconBlockHeader",
+            "name": "beacon",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "bytes32",
+                    "name": "leaf",
+                    "type": "bytes32"
+                  },
+                  {
+                    "internalType": "bytes32[]",
+                    "name": "branch",
+                    "type": "bytes32[]"
+                  }
+                ],
+                "internalType": "struct LeafWithBranch",
+                "name": "stateRoot",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "bytes32",
+                    "name": "leaf",
+                    "type": "bytes32"
+                  },
+                  {
+                    "internalType": "bytes32[]",
+                    "name": "branch",
+                    "type": "bytes32[]"
+                  }
+                ],
+                "internalType": "struct LeafWithBranch",
+                "name": "blockHash",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "bytes32",
+                    "name": "leaf",
+                    "type": "bytes32"
+                  },
+                  {
+                    "internalType": "bytes32[]",
+                    "name": "branch",
+                    "type": "bytes32[]"
+                  }
+                ],
+                "internalType": "struct LeafWithBranch",
+                "name": "blockNumber",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct ExecutionPayload",
+            "name": "execution",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes32",
+                "name": "leaf",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32[]",
+                "name": "branch",
+                "type": "bytes32[]"
+              }
+            ],
+            "internalType": "struct LeafWithBranch",
+            "name": "executionRoot",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct HeaderWithExecution",
+        "name": "finalizedHeader",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "nextSyncCommitteeRoot",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "nextSyncCommitteePoseidonRoot",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256[2]",
+            "name": "a",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256[2][2]",
+            "name": "b",
+            "type": "uint256[2][2]"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "c",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "commitment",
+            "type": "uint256[2]"
+          }
+        ],
+        "internalType": "struct IBeaconVerifier.Proof",
+        "name": "nextSyncCommitteeRootMappingProof",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "participation",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "poseidonRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "commitment",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256[2]",
+                "name": "a",
+                "type": "uint256[2]"
+              },
+              {
+                "internalType": "uint256[2][2]",
+                "name": "b",
+                "type": "uint256[2][2]"
+              },
+              {
+                "internalType": "uint256[2]",
+                "name": "c",
+                "type": "uint256[2]"
+              },
+              {
+                "internalType": "uint256[2]",
+                "name": "commitment",
+                "type": "uint256[2]"
+              }
+            ],
+            "internalType": "struct IBeaconVerifier.Proof",
+            "name": "proof",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct SyncAggregate",
+        "name": "syncAggregate",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint64",
+        "name": "signatureSlot",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "forkVersion",
+        "type": "bytes4"
+      }
+    ],
+    "name": "computeDomain",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "slot",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "proposerIndex",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "parentRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "stateRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "bodyRoot",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct BeaconBlockHeader",
+        "name": "header",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "domain",
+        "type": "bytes32"
+      }
+    ],
+    "name": "computeSigningRoot",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "currentSyncCommitteePoseidonRoot",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "currentSyncCommitteeRoot",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "finalizedExecutionStateRoot",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "finalizedExecutionStateRootAndSlot",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "root",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint64",
+        "name": "slot",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "finalizedSlot",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "forkEpochs",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "forkVersions",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "latestFinalizedSlotAndCommitteeRoots",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "slot",
+        "type": "uint64"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "currentRoot",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "nextRoot",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nextSyncCommitteePoseidonRoot",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nextSyncCommitteeRoot",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "optimisticExecutionStateRoot",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "optimisticExecutionStateRootAndSlot",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "root",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint64",
+        "name": "slot",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "optimisticSlot",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "processLightClientForceUpdate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "uint64",
+                    "name": "slot",
+                    "type": "uint64"
+                  },
+                  {
+                    "internalType": "uint64",
+                    "name": "proposerIndex",
+                    "type": "uint64"
+                  },
+                  {
+                    "internalType": "bytes32",
+                    "name": "parentRoot",
+                    "type": "bytes32"
+                  },
+                  {
+                    "internalType": "bytes32",
+                    "name": "stateRoot",
+                    "type": "bytes32"
+                  },
+                  {
+                    "internalType": "bytes32",
+                    "name": "bodyRoot",
+                    "type": "bytes32"
+                  }
+                ],
+                "internalType": "struct BeaconBlockHeader",
+                "name": "beacon",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "internalType": "bytes32",
+                        "name": "leaf",
+                        "type": "bytes32"
+                      },
+                      {
+                        "internalType": "bytes32[]",
+                        "name": "branch",
+                        "type": "bytes32[]"
+                      }
+                    ],
+                    "internalType": "struct LeafWithBranch",
+                    "name": "stateRoot",
+                    "type": "tuple"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "bytes32",
+                        "name": "leaf",
+                        "type": "bytes32"
+                      },
+                      {
+                        "internalType": "bytes32[]",
+                        "name": "branch",
+                        "type": "bytes32[]"
+                      }
+                    ],
+                    "internalType": "struct LeafWithBranch",
+                    "name": "blockHash",
+                    "type": "tuple"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "bytes32",
+                        "name": "leaf",
+                        "type": "bytes32"
+                      },
+                      {
+                        "internalType": "bytes32[]",
+                        "name": "branch",
+                        "type": "bytes32[]"
+                      }
+                    ],
+                    "internalType": "struct LeafWithBranch",
+                    "name": "blockNumber",
+                    "type": "tuple"
+                  }
+                ],
+                "internalType": "struct ExecutionPayload",
+                "name": "execution",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "bytes32",
+                    "name": "leaf",
+                    "type": "bytes32"
+                  },
+                  {
+                    "internalType": "bytes32[]",
+                    "name": "branch",
+                    "type": "bytes32[]"
+                  }
+                ],
+                "internalType": "struct LeafWithBranch",
+                "name": "executionRoot",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct HeaderWithExecution",
+            "name": "attestedHeader",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "uint64",
+                    "name": "slot",
+                    "type": "uint64"
+                  },
+                  {
+                    "internalType": "uint64",
+                    "name": "proposerIndex",
+                    "type": "uint64"
+                  },
+                  {
+                    "internalType": "bytes32",
+                    "name": "parentRoot",
+                    "type": "bytes32"
+                  },
+                  {
+                    "internalType": "bytes32",
+                    "name": "stateRoot",
+                    "type": "bytes32"
+                  },
+                  {
+                    "internalType": "bytes32",
+                    "name": "bodyRoot",
+                    "type": "bytes32"
+                  }
+                ],
+                "internalType": "struct BeaconBlockHeader",
+                "name": "beacon",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "internalType": "bytes32",
+                        "name": "leaf",
+                        "type": "bytes32"
+                      },
+                      {
+                        "internalType": "bytes32[]",
+                        "name": "branch",
+                        "type": "bytes32[]"
+                      }
+                    ],
+                    "internalType": "struct LeafWithBranch",
+                    "name": "stateRoot",
+                    "type": "tuple"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "bytes32",
+                        "name": "leaf",
+                        "type": "bytes32"
+                      },
+                      {
+                        "internalType": "bytes32[]",
+                        "name": "branch",
+                        "type": "bytes32[]"
+                      }
+                    ],
+                    "internalType": "struct LeafWithBranch",
+                    "name": "blockHash",
+                    "type": "tuple"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "bytes32",
+                        "name": "leaf",
+                        "type": "bytes32"
+                      },
+                      {
+                        "internalType": "bytes32[]",
+                        "name": "branch",
+                        "type": "bytes32[]"
+                      }
+                    ],
+                    "internalType": "struct LeafWithBranch",
+                    "name": "blockNumber",
+                    "type": "tuple"
+                  }
+                ],
+                "internalType": "struct ExecutionPayload",
+                "name": "execution",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "bytes32",
+                    "name": "leaf",
+                    "type": "bytes32"
+                  },
+                  {
+                    "internalType": "bytes32[]",
+                    "name": "branch",
+                    "type": "bytes32[]"
+                  }
+                ],
+                "internalType": "struct LeafWithBranch",
+                "name": "executionRoot",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct HeaderWithExecution",
+            "name": "finalizedHeader",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bytes32[]",
+            "name": "finalityBranch",
+            "type": "bytes32[]"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "nextSyncCommitteeRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32[]",
+            "name": "nextSyncCommitteeBranch",
+            "type": "bytes32[]"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "nextSyncCommitteePoseidonRoot",
+            "type": "bytes32"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256[2]",
+                "name": "a",
+                "type": "uint256[2]"
+              },
+              {
+                "internalType": "uint256[2][2]",
+                "name": "b",
+                "type": "uint256[2][2]"
+              },
+              {
+                "internalType": "uint256[2]",
+                "name": "c",
+                "type": "uint256[2]"
+              },
+              {
+                "internalType": "uint256[2]",
+                "name": "commitment",
+                "type": "uint256[2]"
+              }
+            ],
+            "internalType": "struct IBeaconVerifier.Proof",
+            "name": "nextSyncCommitteeRootMappingProof",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint64",
+                "name": "participation",
+                "type": "uint64"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "poseidonRoot",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "uint256",
+                "name": "commitment",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint256[2]",
+                    "name": "a",
+                    "type": "uint256[2]"
+                  },
+                  {
+                    "internalType": "uint256[2][2]",
+                    "name": "b",
+                    "type": "uint256[2][2]"
+                  },
+                  {
+                    "internalType": "uint256[2]",
+                    "name": "c",
+                    "type": "uint256[2]"
+                  },
+                  {
+                    "internalType": "uint256[2]",
+                    "name": "commitment",
+                    "type": "uint256[2]"
+                  }
+                ],
+                "internalType": "struct IBeaconVerifier.Proof",
+                "name": "proof",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct SyncAggregate",
+            "name": "syncAggregate",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint64",
+            "name": "signatureSlot",
+            "type": "uint64"
+          }
+        ],
+        "internalType": "struct LightClientUpdate",
+        "name": "update",
+        "type": "tuple"
+      }
+    ],
+    "name": "processLightClientUpdate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "epoch",
+        "type": "uint64"
+      },
+      {
+        "internalType": "bytes4",
+        "name": "forkVersion",
+        "type": "bytes4"
+      }
+    ],
+    "name": "updateForkVersion",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "signatureSlot",
+        "type": "uint64"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "slot",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "proposerIndex",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "parentRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "stateRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "bodyRoot",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct BeaconBlockHeader",
+        "name": "header",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "participation",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "poseidonRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "commitment",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256[2]",
+                "name": "a",
+                "type": "uint256[2]"
+              },
+              {
+                "internalType": "uint256[2][2]",
+                "name": "b",
+                "type": "uint256[2][2]"
+              },
+              {
+                "internalType": "uint256[2]",
+                "name": "c",
+                "type": "uint256[2]"
+              },
+              {
+                "internalType": "uint256[2]",
+                "name": "commitment",
+                "type": "uint256[2]"
+              }
+            ],
+            "internalType": "struct IBeaconVerifier.Proof",
+            "name": "proof",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct SyncAggregate",
+        "name": "syncAggregate",
+        "type": "tuple"
+      }
+    ],
+    "name": "verifyCommitteeSignature",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "zkVerifier",
+    "outputs": [
+      {
+        "internalType": "contract IBeaconVerifier",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

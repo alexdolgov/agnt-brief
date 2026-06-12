@@ -43,7 +43,7 @@
 | [apechain-bridge](./apechain-bridge/) | $138.2M | 0.0% | $138.2M | declining | 0 | 19 | 2026-06-12 |
 | [apex-protocol](./apex-protocol/) | $436.5K | 0.0% | $436.5K | active | 1 | 210 | 2026-06-12 |
 | [api3](./api3/) | $55.2M | 21.4% | $55.2M | active | 6 | 28 | 2026-06-10 |
-| [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 54 | 2026-06-10 |
+| [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 59 | 2026-06-12 |
 | [arcade.xyz](./arcade.xyz/) | $240.1K | 67.4% | ? | declining | 10 | 60 | 2026-06-10 |
 | [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-06-10 |
 | [aria-protocol](./aria-protocol/) | $181.1K | 0.0% | ? | dead | 1 | 1 | 2026-06-10 |
@@ -92,7 +92,7 @@
 | [blast-l2](./blast-l2/) | $568.9 | 0.0% | $568.9 | unknown | 0 | 295 | 2026-06-12 |
 | [block-analitica](./block-analitica/) | $252.8K | 0.0% | $252.8K | declining | 0 | 20 | 2026-06-12 |
 | [blueshift](./blueshift/) | $4.3M | 0.0% | ? | active | 1 | 23 | 2026-06-10 |
-| [blur](./blur/) | $91.7M | 0.0% | $91.7M | active | 0 | 17 | 2026-06-10 |
+| [blur](./blur/) | $91.7M | 0.0% | $91.7M | active | 0 | 21 | 2026-06-12 |
 | [bmx](./bmx/) | $305.7K | 0.0% | $305.7K | declining | 0 | 184 | 2026-06-10 |
 | [bob-bridge](./bob-bridge/) | $202.9K | 2.6% | $202.9K | active | 9 | 41 | 2026-06-10 |
 | [boba-bridge](./boba-bridge/) | $3.0M | 0.0% | ? | declining | 0 | 53 | 2026-05-31 |
@@ -121,7 +121,7 @@
 | [canto-lending](./canto-lending/) | $3.0M | 0.0% | ? | declining | 3 | 84 | 2026-06-10 |
 | [capx-ai](./capx-ai/) | $2.1M | 0.0% | ? | active | 1 | 1 | 2026-06-10 |
 | [carbon-defi](./carbon-defi/) | $5.1M | 30.9% | ? | active | 4 | 158 | 2026-06-10 |
-| [cbridge](./cbridge/) | $18.2M | 0.0% | ? | active | 12 | 2007 | 2026-06-10 |
+| [cbridge](./cbridge/) | $50.2M | 0.0% | $50.2M | active | 0 | 1348 | 2026-06-12 |
 | [cex.io](./cex.io/) | $11.6M | 0.0% | ? | active | 1 | 3 | 2026-06-11 |
 | [cgo-finance](./cgo-finance/) | $1.2M | 0.0% | ? | declining | 0 | 2 | 2026-06-10 |
 | [chain-fusion](./chain-fusion/) | $18.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -272,7 +272,7 @@
 | [hyperdrive-hl](./hyperdrive-hl/) | $2.8M | 0.0% | ? | unknown | 8 | 0 | 2026-06-10 |
 | [hyperion](./hyperion/) | $21.1M | 0.0% | ? | unknown | 5 | 0 | 2026-06-10 |
 | [hypersurface](./hypersurface/) | $161.0M | 0.0% | $161.0M | active | 0 | 242 | 2026-06-10 |
-| [hyperswap](./hyperswap/) | $17.4M | 0.0% | ? | active | 3 | 5 | 2026-06-10 |
+| [hyperswap](./hyperswap/) | $3.7M | 0.0% | $3.7M | active | 3 | 30 | 2026-06-12 |
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 0 | 11 | 2026-06-11 |
 | [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 3 | 60 | 2026-06-11 |
 | [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 0 | 45 | 2026-05-31 |
@@ -428,7 +428,7 @@
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-06-11 |
 | [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | declining | 0 | 103 | 2026-06-11 |
 | [orangex](./orangex/) | $33.7M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
-| [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-06-11 |
+| [orbit-bridge](./orbit-bridge/) | $829.9K | 0.0% | $829.9K | active | 1 | 24 | 2026-06-12 |
 | [osl](./osl/) | $92.6M | 0.0% | ? | active | 0 | 4 | 2026-06-12 |
 | [osmosis-dex](./osmosis-dex/) | $18.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [ostium](./ostium/) | $29.1M | 47.1% | ? | active | 7 | 17 | 2026-06-11 |

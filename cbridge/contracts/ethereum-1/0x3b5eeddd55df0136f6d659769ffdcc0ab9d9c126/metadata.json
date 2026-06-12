@@ -1,0 +1,18 @@
+{
+  "address": "0x3b5eeddd55df0136f6d659769ffdcc0ab9d9c126",
+  "chain_id": 1,
+  "contract_name": "PriceProxy",
+  "compiler_version": "v0.7.3+commit.9bfce1f6",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T15:06:05.513Z"
+}

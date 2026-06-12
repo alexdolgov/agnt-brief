@@ -5,7 +5,7 @@
 | Chain | base (8453) |
 | Address | `0x940181a94a35a4569e4529a3cdfb74e38fd98631` |
 | Role | token |
-| Origin | upstream |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (base [`0x940181a94a35a4569e4529a3cdfb74e38fd98631`](../0x940181a94a35a4569e4529a3cdfb74e38fd98631/)) |

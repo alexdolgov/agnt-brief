@@ -5,11 +5,11 @@
 - Project: OrangeX (`orangex`)
 - Website: [https://www.orangex.com](https://www.orangex.com)
 - Lifecycle: active (Tier 0, 34.8% below peak)
-- Generated: 2026-06-11T01:34:03.359Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-12T10:47:06.759Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-b7d4
 - Chains: base, ethereum
-- Contract surface: 3 unique implementations (3 raw deployments)
-- DeFi Llama TVL: $39,839,466.40
+- Contract surface: 3 unique implementations (4 raw deployments)
+- DeFi Llama TVL: $33,703,827.58
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,7 +29,7 @@ OrangeX is an active centralized crypto exchange and trading platform. The liste
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 3
-- Raw deployments: 3
+- Raw deployments: 4
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -51,7 +51,7 @@ OrangeX is an active centralized crypto exchange and trading platform. The liste
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| GameBitCoin | unknown | ethereum | [`0x19eb66...d17ff7`](./contracts/ethereum-1/0x19eb667fcb458e7321c1eb1c1bf687d9dbd17ff7/) | ⚠️ Unaudited |
+| GameBitCoin | unknown | ethereum | 2 deployments: ethereum [`0x19eb66...d17ff7`](./contracts/ethereum-1/0x19eb667fcb458e7321c1eb1c1bf687d9dbd17ff7/); ethereum `0xd07d23...a4d07d` | ⚠️ Unaudited |
 | GPS | unknown | base | [`0x0c1dc7...a0dca5`](./contracts/base-8453/0x0c1dc73159e30c4b06170f2593d3118968a0dca5/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -83,19 +83,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x19eb66...d17ff7`](./contracts/ethereum-1/0x19eb667fcb458e7321c1eb1c1bf687d9dbd17ff7/) | GameBitCoin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0c1dc7...a0dca5`](./contracts/base-8453/0x0c1dc73159e30c4b06170f2593d3118968a0dca5/) | GPS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

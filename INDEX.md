@@ -6,7 +6,7 @@
 | [1sec](./1sec/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [3f-mutual](./3f-mutual/) | $3.9M | 0.0% | ? | active | 0 | 21 | 2026-06-10 |
 | [3jane](./3jane/) | $76.6M | 61.9% | $76.6M | declining | 4 | 23 | 2026-06-10 |
-| [40-acres](./40-acres/) | $10.0M | 0.0% | $10.0M | active | 4 | 325 | 2026-06-10 |
+| [40-acres](./40-acres/) | $10.0M | 0.0% | $10.0M | active | 4 | 325 | 2026-06-12 |
 | [abc-pool](./abc-pool/) | $6.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [abracadabra](./abracadabra/) | $8.1M | 0.0% | ? | dead | 5 | 2568 | 2026-05-31 |
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 3 | 43 | 2026-06-10 |
@@ -212,7 +212,7 @@
 | [flaunch](./flaunch/) | $2.1M | 0.0% | ? | active | 1 | 3 | 2026-06-10 |
 | [flex](./flex/) | $611.7K | 0.0% | ? | active | 3 | 1 | 2026-06-10 |
 | [flexa](./flexa/) | $1.4M | 100.0% | ? | declining | 2 | 2 | 2026-06-10 |
-| [flipster](./flipster/) | $36.0M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
+| [flipster](./flipster/) | $33.0M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-06-10 |
 | [flying-tulip](./flying-tulip/) | $51.3M | 0.0% | $51.3M | active | 0 | 62 | 2026-06-10 |
 | [fomo3d](./fomo3d/) | $2.5M | 0.0% | ? | active | 0 | 23 | 2026-06-10 |
@@ -427,7 +427,7 @@
 | [open-ticketing-ecosystem](./open-ticketing-ecosystem/) | $3.3M | 0.0% | $3.3M | active | 0 | 24 | 2026-06-11 |
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-06-11 |
 | [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | declining | 0 | 103 | 2026-06-11 |
-| [orangex](./orangex/) | $39.8M | 0.0% | ? | active | 0 | 3 | 2026-06-11 |
+| [orangex](./orangex/) | $33.7M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-06-11 |
 | [osl](./osl/) | $92.6M | 0.0% | ? | active | 0 | 4 | 2026-06-12 |
 | [osmosis-dex](./osmosis-dex/) | $18.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
@@ -522,7 +522,7 @@
 | [scallop](./scallop/) | $38.2M | 0.0% | ? | unknown | 4 | 0 | 2026-06-11 |
 | [sceptre-liquid](./sceptre-liquid/) | $20.0M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [scream](./scream/) | $1.3M | 0.0% | ? | dead | 1 | 1 | 2026-06-11 |
-| [scroll-bridge](./scroll-bridge/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 32 | 2026-05-31 |
+| [scroll-bridge](./scroll-bridge/) | $5.0M | 0.0% | $5.0M | declining | 0 | 32 | 2026-06-12 |
 | [scrub-money](./scrub-money/) | $7.2M | 0.0% | ? | active | 1 | 19 | 2026-06-11 |
 | [sdai](./sdai/) | $3.3K | 0.0% | $3.3K | active | 0 | 103 | 2026-06-12 |
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 9.1% | $34.8K | dead | 5 | 99 | 2026-06-11 |

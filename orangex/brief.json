@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "orangex",
-  "generated_at": "2026-06-11T01:34:03.359Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-12T10:47:06.759Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-b7d4",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "orangex",
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 3,
-    "total_addresses": 3,
+    "total_addresses": 4,
     "unique_implementations": 3,
-    "total_deployments": 3,
+    "total_deployments": 4,
     "audited_contracts": 0,
     "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 39839466.39524,
-    "tvl_usd": 39839466.39524,
+    "dl_tvl_usd": 33703827.57774,
+    "tvl_usd": 33703827.57774,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -77,7 +77,7 @@
       "address": "0x19eb667fcb458e7321c1eb1c1bf687d9dbd17ff7",
       "name": "GameBitCoin",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "OrangeX",
       "tvl_usd": null,
@@ -93,6 +93,15 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd07d23e2c2901daa9093eee75753815898a4d07d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -100,7 +109,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 8453,
@@ -108,7 +117,7 @@
       "address": "0x0c1dc73159e30c4b06170f2593d3118968a0dca5",
       "name": "GPS",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "OrangeX",
       "tvl_usd": null,
@@ -162,38 +171,17 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x19eb667fcb458e7321c1eb1c1bf687d9dbd17ff7",
-      "name": "GameBitCoin",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x0c1dc73159e30c4b06170f2593d3118968a0dca5",
-      "name": "GPS",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 2,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {},

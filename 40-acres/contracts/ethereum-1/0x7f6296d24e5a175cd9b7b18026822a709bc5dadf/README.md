@@ -5,7 +5,7 @@
 | Chain | ethereum (1) |
 | Address | `0x7f6296d24e5a175cd9b7b18026822a709bc5dadf` |
 | Role | core_logic |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (ethereum [`0x7f6296d24e5a175cd9b7b18026822a709bc5dadf`](../0x7f6296d24e5a175cd9b7b18026822a709bc5dadf/)) |

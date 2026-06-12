@@ -1,25 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "scroll-bridge",
-  "generated_at": "2026-05-31T10:31:35.577Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-12T10:47:16.573Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-b7d4",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "scroll-bridge",
-    "tier": 0,
+    "tier": 1,
     "peak_tvl": 598252914,
     "peak_date": "2024-10-18T00:00:00.000Z",
-    "tvl_30d_ago": 45164735,
-    "tvl_90d_ago": 74894428,
-    "tvl_current": 38230440,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 89120644,
-    "change_30d_pct": -15.353339281189186,
-    "change_90d_pct": -48.954226608153014,
-    "days_since_peak": 590,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 93.609652522311
+    "tvl_30d_ago": 42980862,
+    "tvl_90d_ago": 70121623,
+    "tvl_current": 34311423,
+    "tier0_reason": "sustained_90d_and_30d_decline",
+    "tvl_180d_ago": 86522236,
+    "change_30d_pct": -20.17046330992617,
+    "change_90d_pct": -51.06869816746826,
+    "governance_raw": null,
+    "days_since_peak": 602,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 94.26472948195284,
+    "governance_evidence": "DEEPSEEK_API_KEY is not set",
+    "governance_confidence": null,
+    "governance_text_chars": 337,
+    "governance_classification": "declining",
+    "governance_fallback_reason": "tier1_call_error"
   },
   "summary": {
     "total_contracts": 32,
@@ -35,7 +41,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 40526307.54914,
+    "dl_tvl_usd": 34074299.71813,
     "tvl_usd": 4984232.298939325,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -61,6 +67,11 @@
     "project_purpose": "Scroll Bridge is the canonical bridge for the Scroll zkEVM rollup, enabling users to deposit and withdraw assets between Ethereum L1 and Scroll L2. It supports ETH, ERC-20, ERC-721, ERC-1155, and specialized tokens like USDC and Lido stETH through a set of gateway contracts.",
     "relationship_narrative": "All gateway contracts rely on L1ScrollMessenger for cross-chain message passing and share infrastructure like L1GatewayRouter for routing, L1MessageQueue for message ordering, and ScrollChain for finalizing L2 state. PauseController and SystemConfig provide shared administrative and configuration capabilities across the bridge components.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 32,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

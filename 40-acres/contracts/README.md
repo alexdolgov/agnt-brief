@@ -1,6 +1,6 @@
 # 40-acres — Contract Index
 
-325 unique implementations across 4 chains · 940 deployments · 0 audited · 171 unaudited · 154 unverified
+325 unique implementations across 4 chains · 941 deployments · 0 audited · 171 unaudited · 154 unverified
 
 ## adapter (9)
 
@@ -175,7 +175,7 @@
 | [DLMMFeeCollector](./avalanche-43114/0x684b340014556d15d754b812ef7d1b134b42289c/) | avalanche | [`0x684b34...42289c`](./avalanche-43114/0x684b340014556d15d754b812ef7d1b134b42289c/) | ⚠️ Unaudited | Verified |
 | [DLMMRewarder (5 deployments)](./avalanche-43114/0x015f051b1fe0df7693a9dc348bc48c608aa037b3/) | avalanche | 5 deployments: avalanche [`0x015f05...a037b3`](./avalanche-43114/0x015f051b1fe0df7693a9dc348bc48c608aa037b3/); avalanche `0xa2ab12...059513`; avalanche `0xc99757...43d783`; avalanche `0xd28467...88548c`; avalanche `0xf1996b...120ab7` | ⚠️ Unaudited | Verified |
 | [DynamicYieldBasisLpClaimingFacet](./ethereum-1/0xbd394c7769b0872082fa5bccc9cfbca528de777c/) | ethereum | [`0xbd394c...de777c`](./ethereum-1/0xbd394c7769b0872082fa5bccc9cfbca528de777c/) | ⚠️ Unaudited | Verified |
-| [DynamicYieldBasisLpFacet](./ethereum-1/0xf5bdac775b04c235d6fd2714c37c4b4f198b1197/) | ethereum | [`0xf5bdac...8b1197`](./ethereum-1/0xf5bdac775b04c235d6fd2714c37c4b4f198b1197/) | ⚠️ Unaudited | Verified |
+| [DynamicYieldBasisLpFacet (2 deployments)](./ethereum-1/0xcbe1efe94e88ee54794a32044b390dbb0e2b7ed7/) | ethereum | 2 deployments: ethereum [`0xcbe1ef...2b7ed7`](./ethereum-1/0xcbe1efe94e88ee54794a32044b390dbb0e2b7ed7/); ethereum `0xf5bdac...8b1197` | ⚠️ Unaudited | Verified |
 | [DynamicYieldBasisLpRewardsProcessingFacet](./ethereum-1/0xd8de50803d77d4bc20276cc884f8d00f3a755a4c/) | ethereum | [`0xd8de50...755a4c`](./ethereum-1/0xd8de50803d77d4bc20276cc884f8d00f3a755a4c/) | ⚠️ Unaudited | Verified |
 | [EntryPoint](./optimism-10/0xaad038102e8b5630a89f4b77d5aef59868d2056b/) | optimism | [`0xaad038...d2056b`](./optimism-10/0xaad038102e8b5630a89f4b77d5aef59868d2056b/) | ⚠️ Unaudited | Verified |
 | [FarmingCenter (3 deployments)](./avalanche-43114/0xa47ad2c95fae476a73b85a355a5855adb4b3a449/) | avalanche | 3 deployments: avalanche [`0xa47ad2...b3a449`](./avalanche-43114/0xa47ad2c95fae476a73b85a355a5855adb4b3a449/); avalanche `0xcbf15e...0932ab`; avalanche `0xcecc64...f45541` | ⚠️ Unaudited | Verified |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "flipster",
-  "generated_at": "2026-06-10T23:23:07.997Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-12T10:47:06.732Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-b7d4",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "flipster",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 35950555.70261,
-    "tvl_usd": 35950555.70261,
+    "dl_tvl_usd": 33006244.35757,
+    "tvl_usd": 33006244.35757,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

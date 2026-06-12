@@ -5,11 +5,11 @@
 - Project: 40 Acres (`40-acres`)
 - Website: [https://www.40acres.finance/](https://www.40acres.finance/)
 - Lifecycle: active (Tier 0, 57.7% below peak)
-- Generated: 2026-06-10T20:58:56.422Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-12T10:51:05.024Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-b7d4
 - Chains: avalanche, base, ethereum, optimism
-- Contract surface: 325 unique implementations (940 raw deployments)
-- DeFi Llama TVL: $40,565,188.78
+- Contract surface: 325 unique implementations (941 raw deployments)
+- DeFi Llama TVL: $32,912,445.62
 - On-chain TVL (included contracts): $10,019,214.71
 - TVL by chain: Base $7,777,480.51 | Avalanche $1,293,137.05 | Optimism $948,461.34 | Ethereum $135.80
 
@@ -28,7 +28,7 @@ The 40 Acres family provides the core lending infrastructure (vaults, loan contr
 - Verified by bytecode match: 1
 - Unverified implementations: 154
 - Unique implementations: 325
-- Raw deployments: 940
+- Raw deployments: 941
 - Audits discovered: 4
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $10,019,214.71
@@ -100,7 +100,7 @@ The 40 Acres family provides the core lending infrastructure (vaults, loan contr
 | DLMMRewarder | unknown | avalanche | 5 deployments: avalanche [`0x015f05...a037b3`](./contracts/avalanche-43114/0x015f051b1fe0df7693a9dc348bc48c608aa037b3/); avalanche `0xa2ab12...059513`; avalanche `0xc99757...43d783`; avalanche `0xd28467...88548c`; avalanche `0xf1996b...120ab7` | ⚠️ Unaudited |
 | DLMMRouter | adapter | avalanche | [`0xff2bef...f5d93d`](./contracts/avalanche-43114/0xff2befc4ff86cb0f3e8d3d9d6200b7a05bf5d93d/) | ⚠️ Unaudited |
 | DynamicYieldBasisLpClaimingFacet | unknown | ethereum | [`0xbd394c...de777c`](./contracts/ethereum-1/0xbd394c7769b0872082fa5bccc9cfbca528de777c/) | ⚠️ Unaudited |
-| DynamicYieldBasisLpFacet | unknown | ethereum | [`0xf5bdac...8b1197`](./contracts/ethereum-1/0xf5bdac775b04c235d6fd2714c37c4b4f198b1197/) | ⚠️ Unaudited |
+| DynamicYieldBasisLpFacet | unknown | ethereum | 2 deployments: ethereum [`0xcbe1ef...2b7ed7`](./contracts/ethereum-1/0xcbe1efe94e88ee54794a32044b390dbb0e2b7ed7/); ethereum `0xf5bdac...8b1197` | ⚠️ Unaudited |
 | DynamicYieldBasisLpLendingFacet | core_logic | ethereum | [`0x00d2f4...24ebb9`](./contracts/ethereum-1/0x00d2f4f21bfe658f836010900f887618a924ebb9/) | ⚠️ Unaudited |
 | DynamicYieldBasisLpRewardsProcessingFacet | unknown | ethereum | [`0xd8de50...755a4c`](./contracts/ethereum-1/0xd8de50803d77d4bc20276cc884f8d00f3a755a4c/) | ⚠️ Unaudited |
 | EntryPoint | unknown | optimism | [`0xaad038...d2056b`](./contracts/optimism-10/0xaad038102e8b5630a89f4b77d5aef59868d2056b/) | ⚠️ Unaudited |
@@ -409,123 +409,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| base | [`0x043413...f62b4a`](./contracts/base-8453/0x0434133f15fa2b2f142565a0d992a7ed4ef62b4a/) | Vault | core_logic | $10,019,078.91 | Verified native implementation with $10,019,078.91 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0715f1...46974b`](./contracts/ethereum-1/0x0715f175c2bc67a4b6b8f119111524559d46974b/) | DynamicFeesVault | core_logic | $21.21 | Verified native implementation with $21.21 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x0253d2...fee4f1`](./contracts/avalanche-43114/0x0253d249a5e16269230fa81a58c104f5aafee4f1/) | AccessHub | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x1a4203...5d6cfb`](./contracts/avalanche-43114/0x1a4203a52ceed651d30cb038698382a8905d6cfb/) | AccessHubDLMMActions | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x06e053...118e1b`](./contracts/avalanche-43114/0x06e05378a63a904afe03a6723cd1cbd9ec118e1b/) | AccessHubPhar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xe4c69a...bc382f`](./contracts/base-8453/0xe4c69af018b2ea9e575026c0472b6531a2bc382f/) | AirdropDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x649638...0eaf03`](./contracts/avalanche-43114/0x64963852966aa7ff2258434f361ec933bf0eaf03/) | AutomatedFeeNotifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x47a2c1...2c8825`](./contracts/avalanche-43114/0x47a2c15eeeef5018a3e13caf987b235d702c8825/) | AutoVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x79bca9...1f8dce`](./contracts/optimism-10/0x79bca9bcc19e157cb5f8c5a2f4d6cb951b1f8dce/) | BalanceLogicLibrary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x0ec20b...bbf384`](./contracts/avalanche-43114/0x0ec20bd81b95334c9956e3eccaa04c103ebbf384/) | BlackholeClaimingFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7915be...3d866c`](./contracts/ethereum-1/0x7915be57450df10a8da82bec64d98b09703d866c/) | BlackholeCollateralFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x93d12d...82cc55`](./contracts/avalanche-43114/0x93d12defa81c589a6fc1b8750fdfa29d9182cc55/) | BlackholeLoan | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x07055a...d4adfc`](./contracts/avalanche-43114/0x07055a7f85e85cace75f6e0f98a56ca717d4adfc/) | BlackholeLoanV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7e99c2...1b1a93`](./contracts/ethereum-1/0x7e99c22f3951386cdb032b9992fe1cb8f51b1a93/) | BlackholeMarketplaceFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x3935f7...e32d43`](./contracts/avalanche-43114/0x3935f7e11e33e676b6108f6e86ab8578d8e32d43/) | BlackholePairAPIV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x87d0f8...9bde0c`](./contracts/avalanche-43114/0x87d0f8c19a891c13c85185d8ba71ab1a419bde0c/) | BlackholeRebaseHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x129a76...2057e0`](./contracts/ethereum-1/0x129a760274721e84af287f30d4b0fd091b2057e0/) | BlackholeRewardsProcessingFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x45a5af...623337`](./contracts/ethereum-1/0x45a5afcaf55ac7784f3c3c4647efdf6944623337/) | BlackholeVotingEscrowFacet | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x8c2207...b8888b`](./contracts/avalanche-43114/0x8c2207c82b54d37b0d3ceb80a50a3392aeb8888b/) | BridgeFeeWrapper | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x68ebca...8fdbd7`](./contracts/ethereum-1/0x68ebca9e306939794987ed4543631e718a8fdbd7/) | ClaimingFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x629e12...7cd905`](./contracts/optimism-10/0x629e122d4542f49145d89bad8b4cbe74757cd905/) | CLGauge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x282ac0...f1592a`](./contracts/optimism-10/0x282ac0ea96493650f1a5e5e5d20490c782f1592a/) | CLGaugeFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x034ecc...d2bc12`](./contracts/ethereum-1/0x034eccde44e7faa6c79bf1d456bbb7ab39d2bc12/) | CollateralFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x18c2ab...e6fe20`](./contracts/base-8453/0x18c2abb47f4d5ea9bffd771ad9a15f21c3e6fe20/) | CommunityRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x737464...aefd30`](./contracts/optimism-10/0x73746410b0dd4526e1fa00d0854e99ba54aefd30/) | DelegationLogicLibrary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x684b34...42289c`](./contracts/avalanche-43114/0x684b340014556d15d754b812ef7d1b134b42289c/) | DLMMFeeCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xbd394c...de777c`](./contracts/ethereum-1/0xbd394c7769b0872082fa5bccc9cfbca528de777c/) | DynamicYieldBasisLpClaimingFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf5bdac...8b1197`](./contracts/ethereum-1/0xf5bdac775b04c235d6fd2714c37c4b4f198b1197/) | DynamicYieldBasisLpFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x00d2f4...24ebb9`](./contracts/ethereum-1/0x00d2f4f21bfe658f836010900f887618a924ebb9/) | DynamicYieldBasisLpLendingFacet | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd8de50...755a4c`](./contracts/ethereum-1/0xd8de50803d77d4bc20276cc884f8d00f3a755a4c/) | DynamicYieldBasisLpRewardsProcessingFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x329f7a...af7d41`](./contracts/ethereum-1/0x329f7a20eae3eea7d300d85eb300bc4f2caf7d41/) | ERC4626LendingFacet | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3c28fa...d96579`](./contracts/ethereum-1/0x3c28fa57f8cd5751eb5dcd8d53c10651d7d96579/) | ERC721ReceiverFacet | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x9bca68...4943de`](./contracts/avalanche-43114/0x9bca68d9c613dc9b07b2727c28b5ce46204943de/) | FacetRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x5c3f18...9e37c0`](./contracts/base-8453/0x5c3f18f06cc09ca1910767a34a20f771039e37c0/) | FactoryRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x088e2e...53bb64`](./contracts/avalanche-43114/0x088e2efad10f3262e745c6c01f661112f353bb64/) | FeeCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x233433...3adc02`](./contracts/avalanche-43114/0x2334338da0bb192dcfc33356f5d1cc6bc03adc02/) | FeeDiscountRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2b0a87...aa7f25`](./contracts/ethereum-1/0x2b0a8766ea8d4ae8b2b8abf0fd1a3793c8aa7f25/) | FortyAcresMarketplaceFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x06824d...29ab74`](./contracts/optimism-10/0x06824df38d1d77eadeb6bafcb03904e27429ab74/) | Forwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x35f35c...5bbcb5`](./contracts/base-8453/0x35f35ca5b132cadf2916bab57639128eac5bbcb5/) | GaugeFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x6c6630...c66de5`](./contracts/avalanche-43114/0x6c6630b76c7d2b0269cf66fd4425491d9ec66de5/) | GaugeOwner | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x031a97...8cd262`](./contracts/avalanche-43114/0x031a975187111afe6b9dc473cd317b00ed8cd262/) | GaugeV3 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xdeb50a...53260f`](./contracts/avalanche-43114/0xdeb50ac7a0a03332626b3c45eb20e7310653260f/) | GenesisPoolFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x0eb1e1...4840dd`](./contracts/avalanche-43114/0x0eb1e103116b8ec5f13a72f6943440340c4840dd/) | GenesisPoolManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4ca71e...ad7b1f`](./contracts/ethereum-1/0x4ca71eba4ecde733d3bd267fc08a011c1dad7b1f/) | KinkFeeCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x427c8b...e071b7`](./contracts/avalanche-43114/0x427c8b3de052ea4bbf0fb9c08b4f998fd4e071b7/) | LendingFacet | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x053ae6...880c0b`](./contracts/base-8453/0x053ae60117b2a90041e6872b18403ab102880c0b/) | Loan | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x005130...7d2198`](./contracts/ethereum-1/0x005130b26f7b491e0a2adebfccb443789f7d2198/) | LoanConfig | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x53bfd2...fb1f86`](./contracts/base-8453/0x53bfd2835db84018fb2021146c790f049dfb1f86/) | LoanDemo | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0xcdd958...05cff0`](./contracts/optimism-10/0xcdd9585005095ac7447d1fdbc990c5cfb805cff0/) | ManagedRewardsFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x00d59b...777a49`](./contracts/optimism-10/0x00d59bc35174c3b250dd92a363495d38c8777a49/) | MerkleClaim | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x2d7182...dec4da`](./contracts/avalanche-43114/0x2d7182dea0b0f1a5167f0a21e6fd5bf537dec4da/) | MigrationFacet | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x491280...4f3e96`](./contracts/avalanche-43114/0x49128053ae71470a6670895bb932ce19384f3e96/) | MockPoolDeployer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x69fc8b...16ab61`](./contracts/avalanche-43114/0x69fc8b02a6e80b554ec8a2223ad331f22c16ab61/) | MummyFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x469412...519e13`](./contracts/avalanche-43114/0x4694123cbe1d3d1f72ccc4d68122ddfb5a519e13/) | NFTDescriptor | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x005c6a...f9fa16`](./contracts/optimism-10/0x005c6ac3a3e1543e5ff6c8f37641fa313af9fa16/) | NFTSVG | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x0452df...02e3c7`](./contracts/optimism-10/0x0452dfdf6e6fa85e53d476434df634b4fd02e3c7/) | NonfungibleTokenPositionDescriptor | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x26e9db...926ca9`](./contracts/avalanche-43114/0x26e9dbe75aed331e41272bece932ff1b48926ca9/) | P33 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x0dea37...ad26f8`](./contracts/avalanche-43114/0x0dea372e70350d9c298a3825f0249fe2dbad26f8/) | PairFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x34098b...9afe1c`](./contracts/avalanche-43114/0x34098b39ec2e2c1a8f815bb8fa840d0d389afe1c/) | PairGenerator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x3ab1a1...1be23d`](./contracts/base-8453/0x3ab1a16622bc5bdd1619d427fb1a6f73c71be23d/) | PatchedManagedRewardsFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x751b71...1a65ff`](./contracts/avalanche-43114/0x751b7152aa11e39216cd00c0f65311efdf1a65ff/) | PermissionsRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x094f0f...01b598`](./contracts/avalanche-43114/0x094f0fd0175cb751b2b1c2d9f4f013e1cf01b598/) | PharaohLoanV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x54c269...206ad9`](./contracts/avalanche-43114/0x54c269cf9712ab099ae1668b031f719156206ad9/) | PharaohLoanV2Native | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x1a624b...c66297`](./contracts/avalanche-43114/0x1a624ba3f3928b38990d9cc862ae5fb54ac66297/) | PharaohMigrator | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xecbbc0...7863d3`](./contracts/avalanche-43114/0xecbbc09d3f52a2133bed0304ed0dcdf4b67863d3/) | PluginV3Deployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x420dd3...ce40da`](./contracts/base-8453/0x420dd381b31aef6683db6b902084cb0ffece40da/) | Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x121650...a40aa4`](./contracts/ethereum-1/0x121650c31ce82b13efb454cceb1255e7aba40aa4/) | PortfolioAccountConfig | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4a4ffb...b95826`](./contracts/ethereum-1/0x4a4ffbb55123837544f3bb13f0da2e9189b95826/) | PortfolioMarketplace | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x94c012...33f410`](./contracts/base-8453/0x94c012a23a8a65a6f40608da30534a46a433f410/) | ProtocolGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xb98c60...006150`](./contracts/avalanche-43114/0xb98c602d04ba75ccf2337c39156880f757006150/) | Pulse | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x6a4113...7c66f9`](./contracts/avalanche-43114/0x6a4113ed0915bcf5e48e758e8f4cebffc07c66f9/) | RamsesV3PoolDeployer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x846e82...25a951`](./contracts/optimism-10/0x846e822e9a00669dcc647079d7d625d2cd25a951/) | RedemptionReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x14b58f...06ddef`](./contracts/ethereum-1/0x14b58f61042293aafcfbc051721c21e41306ddef/) | RewardsConfigFacet | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x227f65...964c7d`](./contracts/base-8453/0x227f65131a261548b057215bb1d5ab2997964c7d/) | RewardsDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x83d5a4...bccd8c`](./contracts/ethereum-1/0x83d5a42a6444e9f08c5e424e80bc43b9b7bccd8c/) | RewardsProcessingFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xb88897...2af336`](./contracts/avalanche-43114/0xb888979122365cee81d274e4bb6c970ce42af336/) | RouterHelper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x275e24...d82cb5`](./contracts/avalanche-43114/0x275e246c0f2a76a5ba4b3e13198ef92381d82cb5/) | SecurityRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x585af0...34f18d`](./contracts/optimism-10/0x585af0b397ac42dbef7f18395426bf878634f18d/) | SinkConverter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x58f62e...cbfca2`](./contracts/optimism-10/0x58f62efb1528d006d22771623c3c3e7953cbfca2/) | SinkDrain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x5aee5f...abcdae`](./contracts/optimism-10/0x5aee5f0e6c2055ebd776db25f48f6c9a68abcdae/) | SinkManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x45ff00...ce78a4`](./contracts/optimism-10/0x45ff00822e8235b86cb605ac8295c14628ce78a4/) | SinkManagerFacilitator | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x6666b2...39ec4c`](./contracts/optimism-10/0x6666b2df7a328cf775778ebad368f5f13e39ec4c/) | Splitter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x00a706...f48b07`](./contracts/ethereum-1/0x00a706da965aa22bb575bd828d5fd39552f48b07/) | SwapConfig | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x1d75c4...1a216f`](./contracts/base-8453/0x1d75c4dda3d28b4f2ab634c439e495cf211a216f/) | Trig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x4a9ea0...1782dd`](./contracts/optimism-10/0x4a9ea0dd5649ec4b6745c60d1769e2184c1782dd/) | VeArtProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x053ae6...880c0b`](./contracts/optimism-10/0x053ae60117b2a90041e6872b18403ab102880c0b/) | VeloLoan | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x2421cf...8c86dc`](./contracts/optimism-10/0x2421cfd0b6f92418b64e7edb30d22734cf8c86dc/) | VeloLoanNative | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xb3629c...b35de9`](./contracts/avalanche-43114/0xb3629c89ed9cb172a3fba66dfdf8c06a85b35de9/) | veNFTAPI | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x6bd81e...0c4525`](./contracts/avalanche-43114/0x6bd81e7eafa4b21d5ad069b452ab4b8bb40c4525/) | VoterV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3938f0...04a0f1`](./contracts/ethereum-1/0x3938f063e3c8699eeb7d847915df093ea304a0f1/) | VotingConfig | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x1d67c7...500e6f`](./contracts/avalanche-43114/0x1d67c7729135583f2ee11fd34c7921a8ae500e6f/) | VotingEscrowSplitHelper | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1eaf3c...de23e5`](./contracts/ethereum-1/0x1eaf3ca8063292f4098e7fe761b864a176de23e5/) | VotingFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x45ca74...52b504`](./contracts/base-8453/0x45ca74858c579e717ee29a86042e0d53b252b504/) | VotingRewardsFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8bc6e8...d4ee26`](./contracts/ethereum-1/0x8bc6e85f8b5b0011e5e929ebe85151f9e0d4ee26/) | WalletFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xe8164e...736b9a`](./contracts/avalanche-43114/0xe8164ea89665dab7a553e667f81f30cfda736b9a/) | XPhar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x150c52...faf08d`](./contracts/avalanche-43114/0x150c52c1e8707c2e4372974e352bbf20bafaf08d/) | XPharaohFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x2e9234...44b8b3`](./contracts/avalanche-43114/0x2e92345305cf7791a8af02d80a1af16d4b44b8b3/) | XPharaohLegacyClaimFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x01e9e8...2e9a2f`](./contracts/avalanche-43114/0x01e9e8e684dd9b158fe772405f7b013f792e9a2f/) | XPharaohLoan | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3501bf...34035d`](./contracts/ethereum-1/0x3501bf4b2640474d93a4321c4b9302ab6834035d/) | YieldBasisFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdf8e26...56f167`](./contracts/ethereum-1/0xdf8e2629f9fcd6f202e39baeeff3b3418b56f167/) | YieldBasisLegacyMigrationFacet | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0b5a25...0ad298`](./contracts/ethereum-1/0x0b5a252fc951a6bc59ee3670571b64be580ad298/) | YieldBasisLpClaimingFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x12ae9b...611e67`](./contracts/ethereum-1/0x12ae9b941da833325030f01f39c1d01a01611e67/) | YieldBasisLpFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7f6296...c5dadf`](./contracts/ethereum-1/0x7f6296d24e5a175cd9b7b18026822a709bc5dadf/) | YieldBasisLpLendingFacet | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3f64f2...d0281f`](./contracts/ethereum-1/0x3f64f216e72cfa881bdb9848765594abc2d0281f/) | YieldBasisLpRewardsProcessingFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x31d18b...77bfab`](./contracts/ethereum-1/0x31d18bc2497f240bc5ea97861d86f9846277bfab/) | YieldBasisPortfolioFactoryConfig | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4057b0...29582b`](./contracts/ethereum-1/0x4057b08ce8665a1c9482aefd0e1ccb8b2c29582b/) | YieldBasisVotingFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 186 |
-| upstream | 24 |
-| standard_library | 9 |
-| needs_review | 106 |
+| native | 0 |
+| upstream | 0 |
+| standard_library | 0 |
+| needs_review | 325 |
 
 ## Scope Matching Notes
 

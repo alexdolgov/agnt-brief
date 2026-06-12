@@ -96,7 +96,7 @@ Each project directory contains:
 | [armitage-by-wintermute](./armitage-by-wintermute/brief.md) | $52.01M | ethereum | 7 | 7/7 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $51.81M |
 | [stcyber](./stcyber/brief.md) | $1.14M | 4 | 31 | 26/31 (84%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $51.36M |
 | [flying-tulip](./flying-tulip/brief.md) | $5.81M | 5 | 62 | 59/62 (95%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $51.25M |
-| [republic-note](./republic-note/brief.md) | $16.05M | avalanche | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $51.20M |
+| [republic-note](./republic-note/brief.md) | $14.22M | avalanche | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $51.20M |
 | [lisk-bridge](./lisk-bridge/brief.md) | $30.24M | ethereum | 102 | 94/102 (92%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $50.94M |
 | [resolv](./resolv/brief.md) | $22.38M | 7 | 80 | 65/80 (81%) | 3.1% | 3.1% (Sherlock) | 1 | aging | ❓ unknown | $50.49M |
 | [cbridge](./cbridge/brief.md) | $15.02M | 21 | 1348 | 554/1348 (41%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $50.16M |
@@ -140,7 +140,7 @@ Each project directory contains:
 | [dodo](./dodo/brief.md) | $12.65M | 12 | 552 | 145/552 (26%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $19.13M |
 | [parasail](./parasail/brief.md) | $3.60M | arbitrum | 41 | 2/41 (5%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $17.21M |
 | [drops](./drops/brief.md) | $3.30M | ethereum | 77 | 66/77 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $16.49M |
-| [hemi-staking](./hemi-staking/brief.md) | $29.14M | 4 | 130 | 52/130 (40%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $16.42M |
+| [hemi-staking](./hemi-staking/brief.md) | $29.14M | 4 | 132 | 54/132 (41%) | 1.9% | 0.0% (-) | 1 | fresh | ✅ active | $16.42M |
 | [hypha](./hypha/brief.md) | $7.38M | avalanche | 60 | 30/60 (50%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $16.37M |
 | [yieldfi](./yieldfi/brief.md) | $12.05M | 9 | 22 | 14/22 (64%) | 70.6% | 70.6% (Cyfrin, Sherlock) | 3 | fresh | ✅ active | $16.26M |
 | [geth](./geth/brief.md) | $16.05M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $16.16M |
@@ -261,6 +261,7 @@ Each project directory contains:
 | [mux-protocol](./mux-protocol/brief.md) | $9.67M | 5 | 1198 | 108/1198 (9%) | 21.7% | 0.0% (-) | 2 | aging | ✅ active | $861.97K |
 | [paal-ai](./paal-ai/brief.md) | $1.61M | ethereum | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $830.13K |
 | [orbit-bridge](./orbit-bridge/brief.md) | $15.31M | 6 | 24 | 5/24 (21%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $829.87K |
+| [yield-yak](./yield-yak/brief.md) | $13.74M | arbitrum, avalanche, mantle | 64 | 28/64 (44%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $772.19K |
 | [notional](./notional/brief.md) | $3.59M | arbitrum, ethereum | 79 | 73/79 (92%) | 19.2% | 19.2% (Sherlock) | 4 | fresh | ⚠️ declining | $755.74K |
 | [glif](./glif/brief.md) | $25.41M | base | 6 | 6/6 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $726.98K |
 | [anthias-labs](./anthias-labs/brief.md) | $18.65M | base | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $705.35K |
@@ -718,7 +719,6 @@ Each project directory contains:
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/brief.md) | $1.17M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [ybtc.b](./ybtc.b/brief.md) | $69.27M | avalanche, bsc, ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [yei-finance](./yei-finance/brief.md) | $18.30M | sei | 47 | 38/47 (81%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
-| [yield-yak](./yield-yak/brief.md) | $13.74M | avalanche, mantle | 8 | 0/8 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [zeebu](./zeebu/brief.md) | $5.21M | base, ethereum | 8 | 3/8 (38%) | 66.7% | 66.7% (Certora, OpenZeppelin) | 2 | aging | ❓ unknown | - |
 | [zenlink](./zenlink/brief.md) | $5.34M | moonbeam, moonriver | 226 | 12/226 (5%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [zerobase-cedefi](./zerobase-cedefi/brief.md) | $58.32M | 6 | 7 | 5/7 (71%) | 66.7% | 0.0% (-) | 2 | fresh | ✅ active | - |
@@ -728,5 +728,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-12T19:11:26.218Z_
+_Generated: 2026-06-12T19:23:10.724Z_
 _Projects: 716_

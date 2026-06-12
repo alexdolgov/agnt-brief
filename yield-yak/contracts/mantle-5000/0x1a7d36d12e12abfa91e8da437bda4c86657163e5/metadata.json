@@ -1,0 +1,17 @@
+{
+  "address": "0x1a7d36d12e12abfa91e8da437bda4c86657163e5",
+  "chain_id": 5000,
+  "contract_name": "LendleStrategy",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T19:22:31.627Z"
+}

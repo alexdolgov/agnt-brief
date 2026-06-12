@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "reya",
-  "generated_at": "2026-06-12T13:59:47.255Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-769a",
+  "generated_at": "2026-06-12T19:19:29.536Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9988",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "reya",

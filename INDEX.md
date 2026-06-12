@@ -256,7 +256,7 @@
 | [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 2 | 63 | 2026-06-11 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | active | 1 | 9 | 2026-06-11 |
 | [helix](./helix/) | $1.5M | 0.0% | ? | declining | 0 | 9 | 2026-06-10 |
-| [hemi-staking](./hemi-staking/) | $16.4M | 0.0% | $16.4M | active | 5 | 130 | 2026-06-12 |
+| [hemi-staking](./hemi-staking/) | $16.4M | 1.9% | $16.4M | active | 5 | 132 | 2026-06-12 |
 | [hemi](./hemi/) | $49.6K | 2.7% | $49.6K | unknown | 5 | 47 | 2026-05-25 |
 | [hemibtc](./hemibtc/) | $46.2K | 0.0% | $46.2K | active | 5 | 46 | 2026-06-11 |
 | [hera-finance](./hera-finance/) | $6.5M | 42.9% | ? | active | 3 | 28 | 2026-06-10 |
@@ -489,7 +489,7 @@
 | [reddex](./reddex/) | $4.2M | 0.0% | ? | declining | 0 | 5 | 2026-06-11 |
 | [reflexer](./reflexer/) | $2.3M | 40.9% | ? | declining | 8 | 64 | 2026-06-11 |
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 3 | 2026-06-12 |
-| [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | active | 0 | 2 | 2026-06-11 |
+| [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | active | 0 | 3 | 2026-06-12 |
 | [reserve-protocol](./reserve-protocol/) | $8.0M | 53.9% | $255.2K | declining | 27 | 329 | 2026-06-11 |
 | [reservoir-protocol](./reservoir-protocol/) | $2.1B | 0.0% | $2.1B | active | 0 | 278 | 2026-06-12 |
 | [resolv](./resolv/) | $50.5M | 3.1% | $50.5M | rugged | 1 | 80 | 2026-06-12 |
@@ -698,7 +698,7 @@
 | [yamato-protocol](./yamato-protocol/) | $910.9 | 47.8% | $818.3 | active | 3 | 63 | 2026-05-24 |
 | [ybtc.b](./ybtc.b/) | $69.3M | 0.0% | ? | active | 10 | 1 | 2026-06-12 |
 | [yei-finance](./yei-finance/) | $18.3M | 0.0% | ? | declining | 1 | 47 | 2026-06-12 |
-| [yield-yak](./yield-yak/) | $13.7M | 0.0% | ? | active | 3 | 8 | 2026-06-11 |
+| [yield-yak](./yield-yak/) | $772.2K | 0.0% | $772.2K | declining | 3 | 64 | 2026-06-12 |
 | [yieldfi](./yieldfi/) | $43.7M | 70.6% | $16.3M | active | 6 | 22 | 2026-06-11 |
 | [yieldnest](./yieldnest/) | $19.2M | 44.8% | $295.1K | active | 16 | 33 | 2026-06-11 |
 | [yieldseeker](./yieldseeker/) | $102.9M | 0.0% | $102.9M | active | 1 | 190 | 2026-06-11 |

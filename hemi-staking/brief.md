@@ -5,10 +5,10 @@
 - Project: Hemi Staking (`hemi-staking`)
 - Website: [https://app.hemi.xyz/en/stake/dashboard/](https://app.hemi.xyz/en/stake/dashboard/)
 - Lifecycle: active (Tier 0, 92.5% below peak)
-- Generated: 2026-06-12T16:22:24.568Z
-- Pipeline run: v2-pipeline-2026-06-12-c7aee3-9d35
+- Generated: 2026-06-12T19:21:56.298Z
+- Pipeline run: v2-pipeline-2026-06-12-546062-9988
 - Chains: bsc, ethereum, optimism, swellchain
-- Contract surface: 130 unique implementations (220 raw deployments)
+- Contract surface: 132 unique implementations (222 raw deployments)
 - DeFi Llama TVL: $29,140,145.03
 - On-chain TVL (included contracts): $16,416,309.47
 - TVL by chain: Ethereum $16,416,017.69 | Optimism $291.78
@@ -23,14 +23,14 @@ The Hemi Staking family relies on the L1 and L2 Hemi Contracts for cross-chain m
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/52 (0.0%)
-- Verified + Unaudited implementations: 52
+- Verified implementations audited: 1/54 (1.9%)
+- Verified + Unaudited implementations: 53
 - Verified by bytecode match: 0
 - Unverified implementations: 78
-- Unique implementations: 130
-- Raw deployments: 220
+- Unique implementations: 132
+- Raw deployments: 222
 - Audits discovered: 5
-- Scoreable audits (matched contracts): 0
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $16,416,309.47
 - Latest audit: 2025-10 (fresh)
 - Staleness: 2 fresh, 3 aging, 0 stale, 0 unknown
@@ -38,15 +38,19 @@ The Hemi Staking family relies on the L1 and L2 Hemi Contracts for cross-chain m
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 1 | 1.9% | 2025-10 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (1)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| VeHemi | unknown | ethereum | [`0xe24b0f...d06ef7`](./contracts/ethereum-1/0xe24b0f13825c7fcf34340918267c3ff012d06ef7/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (52)
+### ⚠️ Verified + Unaudited (53)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -102,6 +106,7 @@ The Hemi Staking family relies on the L1 and L2 Hemi Contracts for cross-chain m
 | TroveHelper | periphery | ethereum | 2 deployments: ethereum [`0x00072c...f9428f`](./contracts/ethereum-1/0x00072c48501f53cb2bb9efcdd7a0ee569cf9428f/); ethereum `0x205631...44ce59` | ⚠️ Unaudited |
 | TroveManagerGetters | governance | ethereum | 2 deployments: ethereum [`0x8ab3cf...a34985`](./contracts/ethereum-1/0x8ab3cf1d5a8b8ec661eff615f2882c9938a34985/); ethereum `0xe673be...b8b7a8` | ⚠️ Unaudited |
 | UpgradeableBeacon | registry | ethereum | 6 deployments: ethereum [`0x094b60...11d3f7`](./contracts/ethereum-1/0x094b60f2295c68a898f3f1d04348b84deb11d3f7/); ethereum `0x0c309b...d0e939`; ethereum `0x6220c9...293512`; ethereum `0xc59472...8b1540`; ethereum `0xca40ef...3e8ef2`; ethereum `0xf692c2...6c470d` | ⚠️ Unaudited |
+| VeHemiAragonAdapter | unknown | ethereum | [`0xdee010...b9c5da`](./contracts/ethereum-1/0xdee010e6f73e951de73484fc9dfffe12d7b9c5da/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -208,31 +213,54 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Quantstamp - BTC Tunnel - FinalReport (1).pdf](https://github.com/hemilabs/audit-reports/blob/master/Bitcoin_Tunnel/Quantstamp%20-%20BTC%20Tunnel%20-%20FinalReport%20(1).pdf) | Quantstamp | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
 | [Audit_Report_HEMI-TOK_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/Audit_Report_HEMI-TOK_FINAL_21.pdf) | unknown | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
 | [HemiToken - Final Report.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/HemiToken%20-%20Final%20Report.pdf) | unknown | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
-| [Audit_Report_HEMI-VOT_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/veHEMI/Audit_Report_HEMI-VOT_FINAL_21.pdf) | unknown | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
+| [Audit_Report_HEMI-VOT_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/veHEMI/Audit_Report_HEMI-VOT_FINAL_21.pdf) | unknown | Audit | 2025-10 | fresh | Direct | contract_name | 1 | high |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0xb4d479...8e93ec`](./contracts/ethereum-1/0xb4d4793a1cd57b6ecebadf6fcbe5aed03e8e93ec/) | StakingVault | core_logic | $7,966,536.66 | Verified native implementation with $7,966,536.66 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa5f377...9f5e43`](./contracts/ethereum-1/0xa5f37791378c55941a52b4dcb70be4d8d09f5e43/) | AddressManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5ffd0e...5afc5b`](./contracts/bsc-56/0x5ffd0eadc186af9512542d0d5e5eafc65d5afc5b/) | BinanceHemiOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x90b9e5...a0014f`](./contracts/ethereum-1/0x90b9e5de5dbe8d5c882aac8c097fd5a235a0014f/) | CoreFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1c2253...7d28e0`](./contracts/ethereum-1/0x1c22531aa9747d76fff8f0a43b37954ca67d28e0/) | ERC20MintablePauseableUpgradeable | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0795a3...ff1026`](./contracts/bsc-56/0x0795a3c4898d823946f953bd1234c0e7b7ff1026/) | HemiLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x03d9c4...676872`](./contracts/ethereum-1/0x03d9c4e4bc5d3678a9076cac50db0251d8676872/) | Initializer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf005df...6fb050`](./contracts/ethereum-1/0xf005dfb08377fad44588af68d0884d272a6fb050/) | L1CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5eaa10...9f191e`](./contracts/ethereum-1/0x5eaa10f99e7e6d177ef9f74e519e319aa49f191e/) | L1StandardBridge | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x38e2a4...852695`](./contracts/ethereum-1/0x38e2a41ab14b382e0188c8368937ee392e852695/) | LiquidationFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x81d7da...6b2c59`](./contracts/ethereum-1/0x81d7dab8b95085034d9ce90958038251726b2c59/) | MintStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x04db2d...cec72c`](./contracts/bsc-56/0x04db2da16318e616d28f0da7aa59eeb12acec72c/) | MockDstOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x32a21e...169a23`](./contracts/bsc-56/0x32a21ec8ee93971d4b4093c0895fd841c7169a23/) | MockLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x90d3b9...b9a9a2`](./contracts/ethereum-1/0x90d3b9982c2fbc9ebb583e9906ec4e3449b9a9a2/) | MultiCollateralHintHelpers | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3e83fd...d385ec`](./contracts/ethereum-1/0x3e83fd30fb9df3cdceb07a834e890dc287d385ec/) | MultiTroveGetter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x10061d...7b180c`](./contracts/bsc-56/0x10061d0593441ff74536158592e1be3f4c7b180c/) | OFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xef5e87...e05c1e`](./contracts/ethereum-1/0xef5e87476c4ac90a0973a2bf114ac770c4e05c1e/) | PriceFeedAggregatorFacet | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x07bbc5...0aa4ec`](./contracts/ethereum-1/0x07bbc5a83b83a5c440d1caedbf1081426d0aa4ec/) | SatoshiXApp | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x23e727...08ccff`](./contracts/ethereum-1/0x23e727e4919eb9f11200197014ab96d03008ccff/) | StabilityPoolFacet | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2989c3...0a4663`](./contracts/ethereum-1/0x2989c38fb3cfcc0eeaf384ee5f1dc7dc520a4663/) | TokenAuthority | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8ab3cf...a34985`](./contracts/ethereum-1/0x8ab3cf1d5a8b8ec661eff615f2882c9938a34985/) | TroveManagerGetters | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xdee010...b9c5da`](./contracts/ethereum-1/0xdee010e6f73e951de73484fc9dfffe12d7b9c5da/) | VeHemiAragonAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 0 |
-| standard_library | 0 |
-| needs_review | 130 |
+| native | 22 |
+| upstream | 18 |
+| standard_library | 7 |
+| needs_review | 85 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=1
 
 Zero-match audit list:
 
@@ -240,6 +268,5 @@ Zero-match audit list:
 - [3960] Quantstamp - BTC Tunnel - FinalReport (1).pdf
 - [11922] Audit_Report_HEMI-TOK_FINAL_21.pdf
 - [11923] HemiToken - Final Report.pdf
-- [11924] Audit_Report_HEMI-VOT_FINAL_21.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

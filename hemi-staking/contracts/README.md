@@ -1,6 +1,6 @@
 # hemi-staking — Contract Index
 
-130 unique implementations across 4 chains · 220 deployments · 0 audited · 52 unaudited · 78 unverified
+132 unique implementations across 4 chains · 222 deployments · 1 audited · 53 unaudited · 78 unverified
 
 ## adapter (1)
 
@@ -97,7 +97,7 @@
 | [ERC20MintablePauseableUpgradeable (5 deployments)](./ethereum-1/0x1c22531aa9747d76fff8f0a43b37954ca67d28e0/) | ethereum | 5 deployments: ethereum [`0x1c2253...7d28e0`](./ethereum-1/0x1c22531aa9747d76fff8f0a43b37954ca67d28e0/); ethereum `0x553d71...e73da2`; ethereum `0x8bf591...48a5a8`; ethereum `0xbeb120...c37f0a`; ethereum `0xe85411...91f711` | ⚠️ Unaudited | Verified |
 | [GovernanceToken](./optimism-10/0x4200000000000000000000000000000000000042/) | optimism | [`0x420000...000042`](./optimism-10/0x4200000000000000000000000000000000000042/) | ⚠️ Unaudited | Verified |
 
-## unknown (80)
+## unknown (82)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -181,3 +181,5 @@
 | UnnamedContract | bsc | `0xe38d19...b3ca10` | ❓ Unverified | Unverified |
 | UnnamedContract | bsc | `0xe55744...ef005a` | ❓ Unverified | Unverified |
 | UnnamedContract | swellchain | `0x8970a6...dd6da1` | ❓ Unverified | Unverified |
+| [VeHemi](./ethereum-1/0xe24b0f13825c7fcf34340918267c3ff012d06ef7/) | ethereum | [`0xe24b0f...d06ef7`](./ethereum-1/0xe24b0f13825c7fcf34340918267c3ff012d06ef7/) | ✅ Audited | Verified |
+| [VeHemiAragonAdapter](./ethereum-1/0xdee010e6f73e951de73484fc9dfffe12d7b9c5da/) | ethereum | [`0xdee010...b9c5da`](./ethereum-1/0xdee010e6f73e951de73484fc9dfffe12d7b9c5da/) | ⚠️ Unaudited | Verified |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "moonlander",
-  "generated_at": "2026-06-12T10:57:05.717Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-b7d4",
+  "generated_at": "2026-06-12T19:13:13.045Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9988",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "moonlander",

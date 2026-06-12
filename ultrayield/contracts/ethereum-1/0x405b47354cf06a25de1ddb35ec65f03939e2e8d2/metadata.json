@@ -1,0 +1,17 @@
+{
+  "address": "0x405b47354cf06a25de1ddb35ec65f03939e2e8d2",
+  "chain_id": 1,
+  "contract_name": "Roles",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "000000000000000000000000b8a1df43c1c88b13937c0c5cebbad15830caec03000000000000000000000000b8a1df43c1c88b13937c0c5cebbad15830caec03000000000000000000000000b8a1df43c1c88b13937c0c5cebbad15830caec03",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T17:04:06.316Z"
+}

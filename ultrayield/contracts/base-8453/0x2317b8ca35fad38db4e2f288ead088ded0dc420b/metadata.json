@@ -1,0 +1,17 @@
+{
+  "address": "0x2317b8ca35fad38db4e2f288ead088ded0dc420b",
+  "chain_id": 8453,
+  "contract_name": "RedemptionVaultWithSwapper",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T17:03:56.578Z"
+}

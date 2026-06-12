@@ -4,11 +4,11 @@
 |---|---|
 | Chain | ethereum (1) |
 | Address | `0x1a57aba59d50b192f8440e205e3b8b885be128cc` |
-| Role | unknown |
-| Origin | needs_review |
+| Role | core_logic |
+| Origin | standard_library |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 1 (ethereum [`0x1a57aba59d50b192f8440e205e3b8b885be128cc`](../0x1a57aba59d50b192f8440e205e3b8b885be128cc/)) |
+| Deployments | 2 (ethereum [`0x1a57aba59d50b192f8440e205e3b8b885be128cc`](../0x1a57aba59d50b192f8440e205e3b8b885be128cc/); ethereum `0xdce7ebafffcf3fe722c6f1120be12b2616b0f504`) |
 | Proxy | Yes → `0xdce7eb...b0f504` |
 | Source | Sourcify (full match) |
 | TVL | n/a |

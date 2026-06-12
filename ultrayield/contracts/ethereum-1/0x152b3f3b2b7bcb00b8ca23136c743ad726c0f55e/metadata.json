@@ -1,0 +1,17 @@
+{
+  "address": "0x152b3f3b2b7bcb00b8ca23136c743ad726c0f55e",
+  "chain_id": 1,
+  "contract_name": "UltraVaultRateProvider",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T17:04:00.461Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xdadeacc03a59639c0ece5ec4ff3bc0d9920a47ec",
+  "chain_id": 1,
+  "contract_name": "TermMaxVault",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 46,
+  "constructor_arguments": "0000000000000000000000002dd478f91de57afb18a1851addc77eaa3fd6593a",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T17:01:27.720Z"
+}

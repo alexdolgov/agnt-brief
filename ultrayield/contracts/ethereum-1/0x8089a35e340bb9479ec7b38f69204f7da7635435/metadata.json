@@ -1,0 +1,18 @@
+{
+  "address": "0x8089a35e340bb9479ec7b38f69204f7da7635435",
+  "chain_id": 1,
+  "contract_name": "TermSdaiPriceFeed",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T17:04:11.895Z"
+}

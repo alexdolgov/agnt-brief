@@ -367,7 +367,7 @@
 | [meta-pool](./meta-pool/) | $4.2M | 50.0% | $4.0M | active | 3 | 41 | 2026-06-11 |
 | [metadao](./metadao/) | $13.1M | 0.0% | ? | unknown | 10 | 0 | 2026-06-11 |
 | [metastable](./metastable/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [mev-capital](./mev-capital/) | $67.0M | 0.0% | ? | active | 0 | 783 | 2026-06-11 |
+| [mev-capital](./mev-capital/) | $98.5M | 0.0% | $98.5M | active | 0 | 358 | 2026-06-12 |
 | [mezo-bridge](./mezo-bridge/) | $2.6M | 0.0% | $2.6M | declining | 0 | 26 | 2026-06-12 |
 | [mezo-earn](./mezo-earn/) | $46.9M | 0.0% | ? | unknown | 0 | 1 | 2026-06-12 |
 | [minefi](./minefi/) | $1.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
@@ -653,7 +653,7 @@
 | [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | declining | 3 | 516 | 2026-06-11 |
 | [twyne](./twyne/) | $985.7K | 3.8% | $985.7K | active | 6 | 59 | 2026-06-11 |
 | [txflow](./txflow/) | $3.8M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
-| [ultrayield](./ultrayield/) | $87.6M | 0.0% | ? | declining | 0 | 4520 | 2026-06-11 |
+| [ultrayield](./ultrayield/) | $46.5M | 0.0% | $46.5M | declining | 0 | 343 | 2026-06-12 |
 | [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | active | 0 | 150 | 2026-06-11 |
 | [umee](./umee/) | $2.5M | 0.0% | ? | declining | 7 | 1 | 2026-06-11 |
 | [unchain-x](./unchain-x/) | $35.1M | 9.1% | ? | active | 2 | 12 | 2026-06-12 |

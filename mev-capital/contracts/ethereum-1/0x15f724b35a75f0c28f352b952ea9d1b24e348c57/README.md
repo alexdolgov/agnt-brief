@@ -4,8 +4,8 @@
 |---|---|
 | Chain | ethereum (1) |
 | Address | `0x15f724b35a75f0c28f352b952ea9d1b24e348c57` |
-| Role | unknown |
-| Origin | needs_review |
+| Role | adapter |
+| Origin | standard_library |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 2 (ethereum [`0x15f724b35a75f0c28f352b952ea9d1b24e348c57`](../0x15f724b35a75f0c28f352b952ea9d1b24e348c57/); ethereum `0x517d001e9ffaf08cc6a1f65505c7be4cef71c18b`) |

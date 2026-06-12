@@ -1,0 +1,18 @@
+{
+  "address": "0x733acea2a9193a249fdb58ede4ea3c8ddc5fa347",
+  "chain_id": 1,
+  "contract_name": "zeroGUSDV",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T17:04:11.071Z"
+}

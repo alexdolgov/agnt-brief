@@ -1,0 +1,17 @@
+{
+  "address": "0x2720eaedca08e7ffd05afe8e142ded40c18a6d28",
+  "chain_id": 1,
+  "contract_name": "UUPSProxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0x91fe2600045846b5ff691325b73e9370adec3b28",
+  "fetched_at": "2026-06-12T17:04:03.468Z"
+}

@@ -203,7 +203,7 @@
 | [exactly](./exactly/) | $189.5K | 63.6% | ? | active | 32 | 65 | 2026-06-10 |
 | [exmo](./exmo/) | $2.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [extra-finance](./extra-finance/) | $100.0 | 5.3% | ? | active | 3 | 268 | 2026-06-10 |
-| [feather](./feather/) | $16.5M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
+| [feather](./feather/) | $15.9M | 0.0% | ? | active | 0 | 10 | 2026-06-12 |
 | [ferro](./ferro/) | $5.0M | 0.0% | ? | declining | 0 | 21 | 2026-06-10 |
 | [fiamma](./fiamma/) | $1.2M | 0.0% | ? | active | 3 | 33 | 2026-06-11 |
 | [firebot](./firebot/) | $3.7M | 4.8% | $3.7M | unknown | 2 | 29 | 2026-06-10 |
@@ -297,7 +297,7 @@
 | [juicebox](./juicebox/) | $8.6M | 5.9% | ? | active | 10 | 77 | 2026-06-11 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-06-11 |
 | [kaio](./kaio/) | $60.8M | 0.0% | ? | declining | 0 | 35 | 2026-06-12 |
-| [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | active | 0 | 2 | 2026-06-11 |
+| [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | active | 0 | 4 | 2026-06-12 |
 | [kasu](./kasu/) | $10.6M | 0.0% | ? | active | 2 | 22 | 2026-06-11 |
 | [katana-pre-launch](./katana-pre-launch/) | $307.6K | 0.0% | $307.6K | active | 28 | 165 | 2026-06-11 |
 | [kava-earn](./kava-earn/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
@@ -368,7 +368,7 @@
 | [metadao](./metadao/) | $13.1M | 0.0% | ? | unknown | 10 | 0 | 2026-06-11 |
 | [metastable](./metastable/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [mev-capital](./mev-capital/) | $67.0M | 0.0% | ? | active | 0 | 783 | 2026-06-11 |
-| [mezo-bridge](./mezo-bridge/) | $2.6M | 0.0% | $2.6M | declining | 0 | 4 | 2026-06-11 |
+| [mezo-bridge](./mezo-bridge/) | $2.6M | 0.0% | $2.6M | declining | 0 | 26 | 2026-06-12 |
 | [mezo-earn](./mezo-earn/) | $46.9M | 0.0% | ? | unknown | 0 | 1 | 2026-06-12 |
 | [minefi](./minefi/) | $1.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [minto](./minto/) | $3.8M | 16.7% | ? | active | 2 | 9 | 2026-06-11 |
@@ -579,7 +579,7 @@
 | [starknet-btc-staking](./starknet-btc-staking/) | $412.2M | 0.0% | $412.2M | unknown | 42 | 1 | 2026-05-31 |
 | [stcelo](./stcelo/) | $1.6M | 50.0% | ? | active | 2 | 19 | 2026-06-11 |
 | [stcyber](./stcyber/) | $51.4M | 0.0% | $51.4M | declining | 1 | 31 | 2026-06-11 |
-| [steer-protocol](./steer-protocol/) | $3.3M | 0.0% | $3.3M | active | 5 | 43 | 2026-06-11 |
+| [steer-protocol](./steer-protocol/) | $3.3M | 0.0% | $3.3M | active | 5 | 46 | 2026-06-12 |
 | [stfil](./stfil/) | $5.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [stobox](./stobox/) | $15.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [stout](./stout/) | $12.6K | 0.0% | $12.6K | declining | 0 | 132 | 2026-06-11 |

@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 1 (ethereum [`0x3bec529c86317c64305dc161998fb7f40078f200`](../0x3bec529c86317c64305dc161998fb7f40078f200/)) |
+| Deployments | 2 (ethereum [`0x3bec529c86317c64305dc161998fb7f40078f200`](../0x3bec529c86317c64305dc161998fb7f40078f200/); ethereum `0x67dbd2ad541c61d37f17b0515d2e452e04597a36`) |
 | Proxy | No |
 | Source | Sourcify (full match) |
 | TVL | n/a |

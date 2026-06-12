@@ -5,11 +5,11 @@
 - Project: Feather (`feather`)
 - Website: [https://app.feather.zone/](https://app.feather.zone/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T23:17:11.145Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
-- Chains: klaytn, sei
-- Contract surface: 2 unique implementations (7 raw deployments)
-- DeFi Llama TVL: $16,535,444.23
+- Generated: 2026-06-12T14:10:47.211Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-769a
+- Chains: celo, klaytn, sei
+- Contract surface: 10 unique implementations (15 raw deployments)
+- DeFi Llama TVL: $15,858,309.71
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,12 +23,12 @@ All MetaMorpho vaults are deployed by the same deployer cluster and likely share
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/9 (0.0%)
+- Verified + Unaudited implementations: 9
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 2
-- Raw deployments: 7
+- Unique implementations: 10
+- Raw deployments: 15
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,11 +46,19 @@ All MetaMorpho vaults are deployed by the same deployer cluster and likely share
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| MetaMorphoV1_1 | operational_periphery | sei | 6 deployments: sei [`0x015f10...03e41c`](./contracts/sei-1329/0x015f10a56e97e02437d294815d8e079e1903e41c/); sei `0x50715a...28bfe8`; sei `0x8e1812...0a7223`; sei `0x948fcc...2a4923`; sei `0x94e6a8...5eb79c`; sei `0xbd1836...963dc5` | ⚠️ Unaudited |
+| AdaptiveCurveIrm | unknown | sei | [`0x6efa8e...ea56c4`](./contracts/sei-1329/0x6efa8e3aa8279eb2fd46b6083a9e52da72ea56c4/) | ⚠️ Unaudited |
+| Bundler3 | unknown | sei | [`0xf94573...5761ad`](./contracts/sei-1329/0xf9457356f18a3349bb317ac144c3bcc62e5761ad/) | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | sei | 6 deployments: sei [`0x015f10...03e41c`](./contracts/sei-1329/0x015f10a56e97e02437d294815d8e079e1903e41c/); sei `0x50715a...28bfe8`; sei `0x8e1812...0a7223`; sei `0x948fcc...2a4923`; sei `0x94e6a8...5eb79c`; sei `0xbd1836...963dc5` | ⚠️ Unaudited |
+| MetaMorphoV1_1Factory | registry | sei | [`0x8dea49...118291`](./contracts/sei-1329/0x8dea49ec5bd5aeac8bcf96b3e187f59354118291/) | ⚠️ Unaudited |
+| Morpho | unknown | sei | [`0xc9cdac...a9094c`](./contracts/sei-1329/0xc9cdac20fceaaf616f7eb0bb6cd2c69dcfa9094c/) | ⚠️ Unaudited |
+| MorphoChainlinkOracleV2Factory | operational_periphery | sei | [`0x4bd68c...f23f07`](./contracts/sei-1329/0x4bd68c2ff3274207ec07ed281c915758b6f23f07/) | ⚠️ Unaudited |
+| PreLiquidationFactory | registry | sei | [`0x65ed61...f6d27b`](./contracts/sei-1329/0x65ed61058ceb4895b7d62437bacea39b04f6d27b/) | ⚠️ Unaudited |
+| PublicAllocator | operational_periphery | sei | [`0xd87850...159d6b`](./contracts/sei-1329/0xd878509446be2c601f0f032f501851001b159d6b/) | ⚠️ Unaudited |
+| SafeProxy | unknown | celo | [`0x81c76f...2f091f`](./contracts/celo-42220/0x81c76f62f7e05dec75800150ba5a23f62e2f091f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,18 +89,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| sei | [`0x015f10...03e41c`](./contracts/sei-1329/0x015f10a56e97e02437d294815d8e079e1903e41c/) | MetaMorphoV1_1 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
-| upstream | 0 |
+| native | 0 |
+| upstream | 2 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "feather",
-  "generated_at": "2026-06-10T23:17:11.145Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-12T14:10:47.211Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-769a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "feather",
@@ -22,26 +22,27 @@
     "drop_from_peak_pct": 0.10099313642984399
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 7,
-    "unique_implementations": 2,
-    "total_deployments": 7,
+    "total_contracts": 10,
+    "total_addresses": 15,
+    "unique_implementations": 10,
+    "total_deployments": 15,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 9,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 9,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 16535444.23097,
-    "tvl_usd": 16535444.23097,
+    "dl_tvl_usd": 15858309.71356,
+    "tvl_usd": 15858309.71356,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://app.feather.zone/",
     "chains": [
+      "celo",
       "klaytn",
       "sei"
     ],
@@ -62,7 +63,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 10,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -74,10 +75,72 @@
     {
       "chain_id": 1329,
       "chain_name": "sei",
+      "address": "0x6efa8e3aa8279eb2fd46b6083a9e52da72ea56c4",
+      "name": "AdaptiveCurveIrm",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AdaptiveCurveIrm",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x6efa8e3aa8279eb2fd46b6083a9e52da72ea56c4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xf9457356f18a3349bb317ac144c3bcc62e5761ad",
+      "name": "Bundler3",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Bundler3",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xf9457356f18a3349bb317ac144c3bcc62e5761ad",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
       "address": "0x015f10a56e97e02437d294815d8e079e1903e41c",
       "name": "MetaMorphoV1_1",
-      "role": "operational_periphery",
-      "origin_kind": "native",
+      "role": "unknown",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Feather",
       "tvl_usd": null,
@@ -148,6 +211,192 @@
       "contamination_flag": null
     },
     {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x8dea49ec5bd5aeac8bcf96b3e187f59354118291",
+      "name": "MetaMorphoV1_1Factory",
+      "role": "registry",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MetaMorphoV1_1Factory",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x8dea49ec5bd5aeac8bcf96b3e187f59354118291",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xc9cdac20fceaaf616f7eb0bb6cd2c69dcfa9094c",
+      "name": "Morpho",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Morpho",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Morpho",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xc9cdac20fceaaf616f7eb0bb6cd2c69dcfa9094c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x4bd68c2ff3274207ec07ed281c915758b6f23f07",
+      "name": "MorphoChainlinkOracleV2Factory",
+      "role": "operational_periphery",
+      "origin_kind": "upstream",
+      "origin_provider": "Morpho",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MorphoChainlinkOracleV2Factory",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x4bd68c2ff3274207ec07ed281c915758b6f23f07",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x65ed61058ceb4895b7d62437bacea39b04f6d27b",
+      "name": "PreLiquidationFactory",
+      "role": "registry",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PreLiquidationFactory",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x65ed61058ceb4895b7d62437bacea39b04f6d27b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xd878509446be2c601f0f032f501851001b159d6b",
+      "name": "PublicAllocator",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PublicAllocator",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xd878509446be2c601f0f032f501851001b159d6b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x81c76f62f7e05dec75800150ba5a23f62e2f091f",
+      "name": "SafeProxy",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SafeProxy",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x81c76f62f7e05dec75800150ba5a23f62e2f091f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 8217,
       "chain_name": "klaytn",
       "address": "0x6ba8f7039bc7d79c1959cb8e409dff2ba05a133e",
@@ -181,23 +430,12 @@
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1329,
-      "chain_name": "sei",
-      "address": "0x015f10a56e97e02437d294815d8e079e1903e41c",
-      "name": "MetaMorphoV1_1",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
-    "upstream": 0,
+    "native": 0,
+    "upstream": 2,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 8
   },
   "scope_matching_notes": {
     "match_method_counts": {},

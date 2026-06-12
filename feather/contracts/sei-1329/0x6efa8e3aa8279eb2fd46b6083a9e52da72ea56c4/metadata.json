@@ -1,0 +1,17 @@
+{
+  "address": "0x6efa8e3aa8279eb2fd46b6083a9e52da72ea56c4",
+  "chain_id": 1329,
+  "contract_name": "AdaptiveCurveIrm",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "paris",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "000000000000000000000000c9cdac20fceaaf616f7eb0bb6cd2c69dcfa9094c",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T14:10:49.937Z"
+}

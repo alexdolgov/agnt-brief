@@ -5,7 +5,7 @@
 | Chain | ethereum (1) |
 | Address | `0xd9d920aa40f578ab794426f5c90f6c731d159def` |
 | Role | token |
-| Origin | standard_library |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (ethereum [`0xd9d920aa40f578ab794426f5c90f6c731d159def`](../0xd9d920aa40f578ab794426f5c90f6c731d159def/)) |

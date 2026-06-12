@@ -5,31 +5,30 @@
 - Project: Kaito (`kaito`)
 - Website: [https://yaps.kaito.ai](https://yaps.kaito.ai)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T00:14:27.934Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-12T14:09:39.269Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-769a
 - Chains: base
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $18,723,239.69
+- Contract surface: 4 unique implementations (4 raw deployments)
+- DeFi Llama TVL: $15,830,996.05
 - On-chain TVL (included contracts): $9,477,642.45
 - TVL by chain: Base $9,477,642.45
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Kaito is a crypto attention, data, and capital distribution service described as a distribution powerhouse for the crypto ecosystem. The tracked on-chain surface currently consists of the KAITO token contract and the StakedKAITO staking/token contract on Base; staking TVL should be reported separately from overall protocol TVL.
 
+### Architecture
+
+The Kaito token contract is staked into the StakedKAITO contract, which mints StakedKAITO tokens to users, forming a direct staking relationship between the two contracts.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 0/3 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 2
+- Unverified implementations: 1
+- Unique implementations: 4
+- Raw deployments: 4
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $9,477,642.45
@@ -47,12 +46,13 @@ Kaito is a crypto attention, data, and capital distribution service described as
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | StakedKAITO | token | base | [`0x548d3b...cd1ef7`](./contracts/base-8453/0x548d3b444da39686d1a6f1544781d154e7cd1ef7/) | ⚠️ Unaudited |
-| Kaito | token | base | [`0x98d0ba...537553`](./contracts/base-8453/0x98d0baa52b2d063e780de12f615f963fe8537553/) | ⚠️ Unaudited |
+| Kaito | unknown | base | [`0x98d0ba...537553`](./contracts/base-8453/0x98d0baa52b2d063e780de12f615f963fe8537553/) | ⚠️ Unaudited |
+| SafeL2 | unknown | base | [`0x049a02...bb8e0d`](./contracts/base-8453/0x049a022d95c02c3f552d54eb2e94743e5abb8e0d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -66,11 +66,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| UnnamedContract | unknown | base | `0x4674ef...2a5659` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -81,19 +83,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| base | [`0x548d3b...cd1ef7`](./contracts/base-8453/0x548d3b444da39686d1a6f1544781d154e7cd1ef7/) | StakedKAITO | token | $9,477,642.45 | Verified native implementation with $9,477,642.45 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x98d0ba...537553`](./contracts/base-8453/0x98d0baa52b2d063e780de12f615f963fe8537553/) | Kaito | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

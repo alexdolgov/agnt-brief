@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kaito",
-  "generated_at": "2026-06-11T00:14:27.934Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
+  "generated_at": "2026-06-12T14:09:39.269Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-769a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "kaito",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 18723239.68874,
+    "dl_tvl_usd": 15830996.04908,
     "tvl_usd": 9477642.453128237,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -59,13 +59,13 @@
   },
   "topography": {
     "project_purpose": "Kaito is a crypto attention, data, and capital distribution service described as a distribution powerhouse for the crypto ecosystem. The tracked on-chain surface currently consists of the KAITO token contract and the StakedKAITO staking/token contract on Base; staking TVL should be reported separately from overall protocol TVL.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The Kaito token contract is staked into the StakedKAITO contract, which mints StakedKAITO tokens to users, forming a direct staking relationship between the two contracts.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 4,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -78,7 +78,7 @@
       "address": "0x548d3b444da39686d1a6f1544781d154e7cd1ef7",
       "name": "StakedKAITO",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Kaito",
       "tvl_usd": 9477642.453128237,
@@ -108,8 +108,8 @@
       "chain_name": "base",
       "address": "0x98d0baa52b2d063e780de12f615f963fe8537553",
       "name": "Kaito",
-      "role": "token",
-      "origin_kind": "native",
+      "role": "unknown",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Kaito",
       "tvl_usd": null,
@@ -133,37 +133,78 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
-    }
-  ],
-  "audits": [],
-  "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x548d3b444da39686d1a6f1544781d154e7cd1ef7",
-      "name": "StakedKAITO",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 9477642.453128237,
-      "risk_note": "Verified native implementation with $9,477,642.45 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x98d0baa52b2d063e780de12f615f963fe8537553",
-      "name": "Kaito",
-      "role": "token",
-      "origin_kind": "native",
+      "address": "0x049a022d95c02c3f552d54eb2e94743e5abb8e0d",
+      "name": "SafeL2",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "is_proxy": true,
+      "impl_address": "0x29fcb43b46531bca003ddc8fcb67ffe91900c762",
+      "impl_name": "SafeL2",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x049a022d95c02c3f552d54eb2e94743e5abb8e0d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x4674efa71d1029f9cd1ca0fe186be0131a2a5659",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x4674efa71d1029f9cd1ca0fe186be0131a2a5659",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     }
   ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 2,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 4
   },
   "scope_matching_notes": {
     "match_method_counts": {},

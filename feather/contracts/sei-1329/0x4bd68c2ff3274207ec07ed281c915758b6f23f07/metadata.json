@@ -1,0 +1,17 @@
+{
+  "address": "0x4bd68c2ff3274207ec07ed281c915758b6f23f07",
+  "chain_id": 1329,
+  "contract_name": "MorphoChainlinkOracleV2Factory",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "paris",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T14:10:50.090Z"
+}

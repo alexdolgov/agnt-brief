@@ -1,0 +1,17 @@
+{
+  "address": "0xcafeab03f219b7a8bcb92a5d61508a0ae16302b6",
+  "chain_id": 1,
+  "contract_name": "NexusViewer",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "00000000000000000000000001bfd82675dbcc7762c84019ca518e701c0cd07e000000000000000000000000cafea5e8a7a54dd14bb225b66c7a016dfd7f236b000000000000000000000000cafeaa6660019915ec109052825ee7121480f0cd",
+  "implementation_address": null,
+  "fetched_at": "2026-06-12T06:40:19.646Z"
+}

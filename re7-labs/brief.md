@@ -4,14 +4,14 @@
 
 - Project: Re7 Labs (`re7-labs`)
 - Website: [https://www.re7labs.xyz](https://www.re7labs.xyz)
-- Lifecycle: active (Tier 0, 90.4% below peak)
-- Generated: 2026-06-11T02:12:51.422Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
-- Chains: avalanche, base, ethereum, sonic
-- Contract surface: 6 unique implementations (13 raw deployments)
-- DeFi Llama TVL: $82,888,616.27
-- On-chain TVL (included contracts): $1,582,085.40
-- TVL by chain: Ethereum $1,582,085.40
+- Lifecycle: active (Tier 0, 90.3% below peak)
+- Generated: 2026-06-12T06:40:48.599Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-d6af
+- Chains: avalanche, base, ethereum, optimism, polygon, sonic, unichain
+- Contract surface: 18 unique implementations (59 raw deployments)
+- DeFi Llama TVL: $84,763,292.69
+- On-chain TVL (included contracts): $6,550,725.40
+- TVL by chain: Ethereum $5,211,279.65 | Base $1,236,164.98 | Optimism $103,280.77
 
 ## Project Description
 
@@ -23,15 +23,15 @@ All vaults are governed by Gnosis Safe multisigs, which control upgrades and par
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/6 (0.0%)
-- Verified + Unaudited implementations: 6
+- Verified implementations audited: 0/18 (0.0%)
+- Verified + Unaudited implementations: 18
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 6
-- Raw deployments: 13
+- Unique implementations: 18
+- Raw deployments: 59
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $1,582,085.40
+- ASD (verified + unaudited TVL): $6,550,725.40
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,16 +46,28 @@ All vaults are governed by Gnosis Safe multisigs, which control upgrades and par
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (18)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| MultiVault | core_logic | ethereum | 6 deployments: ethereum [`0x2759e4...8f2faf`](./contracts/ethereum-1/0x2759e4741b370506be2ccef898960108e98f2faf/); ethereum `0x4c690c...3c48d6`; ethereum `0x617895...0ad40c`; ethereum `0x62f0ba...3e041c`; ethereum `0x84631c...a9f93a`; ethereum `0x8b0e80...32a2e8` | ⚠️ Unaudited |
+| MultiVault | core_logic | ethereum | 7 deployments: ethereum [`0x2759e4...8f2faf`](./contracts/ethereum-1/0x2759e4741b370506be2ccef898960108e98f2faf/); ethereum `0x4c690c...3c48d6`; ethereum `0x617895...0ad40c`; ethereum `0x62f0ba...3e041c`; ethereum `0x7a4eff...327e3a`; ethereum `0x84631c...a9f93a`; ethereum `0x8b0e80...32a2e8` | ⚠️ Unaudited |
+| VaultV2 | core_logic | ethereum | 9 deployments: ethereum [`0x044472...042122`](./contracts/ethereum-1/0x04447273ee808702a4855403af0ace8e7c042122/); ethereum `0x1ce235...3da446`; ethereum `0x5181cd...4643ae`; ethereum `0x787fc6...af7af9`; optimism `0x3d6393...79dd76`; base `0x0b7ee8...171d25`; base `0x618495...b07b9b`; base `0xc9c474...ead645`; base `0xca120d...8edec4` | ⚠️ Unaudited |
 | MellowVaultCompat | core_logic | ethereum | 3 deployments: ethereum [`0x3a828c...45b4c7`](./contracts/ethereum-1/0x3a828c183b3f382d030136c824844ea30145b4c7/); ethereum `0x7f43fd...9ce444`; ethereum `0xc65433...c47bd8` | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | [`0xe86399...a04433`](./contracts/ethereum-1/0xe86399fe6d7007fdecb08a2ee1434ee677a04433/) | ⚠️ Unaudited |
+| EVault | core_logic | ethereum | 10 deployments: ethereum [`0x117576...bfa866`](./contracts/ethereum-1/0x117576b8854a03ab7c3df1cf1cd8e04767bfa866/); ethereum `0x586719...1193e8`; ethereum `0x631d8e...634de8`; ethereum `0x82c710...7f86fa`; ethereum `0x8dde38...44dc4c`; ethereum `0xa992d3...f737af`; ethereum `0xac73ef...b70eda`; ethereum `0xbd9a87...36e0cb`; ethereum `0xce45ef...7873de`; ethereum `0xe3b66c...126760` | ⚠️ Unaudited |
+| Vault | core_logic | ethereum | 2 deployments: ethereum [`0x35e44d...e75fe7`](./contracts/ethereum-1/0x35e44d92e8f738a272bddbae53d1dc9490e75fe7/); ethereum `0x3d93b3...cdd46e` | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | 3 deployments: ethereum [`0x81698f...df0af0`](./contracts/ethereum-1/0x81698f87c6482bf1ce9bfcfc0f103c4a0adf0af0/); ethereum `0x9437b2...f72003`; ethereum `0xe86399...a04433` | ⚠️ Unaudited |
 | GnosisSafeL2 | governance | base | [`0xd8b0f4...99c940`](./contracts/base-8453/0xd8b0f4e54a8dac04e0a57392f5a630cedb99c940/) | ⚠️ Unaudited |
+| MetaMorpho | unknown | base | 7 deployments: ethereum `0x78fc2c...d094d0`; ethereum `0x95eef5...be01a8`; ethereum `0xa02f5e...a772f7`; ethereum `0xe0c986...823763`; base [`0x12afde...70406e`](./contracts/base-8453/0x12afdefb2237a5963e7bab3e2d46ad0eee70406e/); base `0x6e37c9...7a001b`; base `0xa2cac0...203afc` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | base | 8 deployments: ethereum `0x341193...bd0dda`; ethereum `0x4d5254...c4acfe`; ethereum `0x64964e...1aeb8e`; unichain `0x2c0f7e...10858c`; unichain `0x6af5e4...c26e52`; unichain `0xa48f8a...50f8cd`; polygon `0xf91d80...2c1c69`; base [`0x00dfdb...9fb330`](./contracts/base-8453/0x00dfdb8c7295a03dcf1adff4d21eb5d9d19fb330/) | ⚠️ Unaudited |
+| MRe7BtcDepositVault | core_logic | ethereum | [`0x5e1549...0e47f6`](./contracts/ethereum-1/0x5e154946561aea4e750aac6dead23d37e00e47f6/) | ⚠️ Unaudited |
+| MRe7BtcRedemptionVaultWithSwapper | adapter | ethereum | [`0x4fd4dd...4321b0`](./contracts/ethereum-1/0x4fd4dd7171d14e5bd93025ec35374d2b9b4321b0/) | ⚠️ Unaudited |
+| MRe7DepositVault | core_logic | ethereum | [`0xce0a29...924ac7`](./contracts/ethereum-1/0xce0a2953a5d46400af601a9857235312d1924ac7/) | ⚠️ Unaudited |
+| MRe7RedemptionVaultWithSwapper | adapter | ethereum | [`0x5356b8...565234`](./contracts/ethereum-1/0x5356b8e06589de894d86b24f4079c629e8565234/) | ⚠️ Unaudited |
+| NetworkRestakeDelegator | unknown | ethereum | [`0xde43da...e51da0`](./contracts/ethereum-1/0xde43dade5d05b31b1e3524a268b32314dee51da0/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | ethereum | [`0xf076cf...951fcf`](./contracts/ethereum-1/0xf076cf343dcfd01bba57dfeb5c74f7b015951fcf/) | ⚠️ Unaudited |
 | SafeL2 | unknown | sonic | [`0x3ba156...62be65`](./contracts/sonic-146/0x3ba1566ed39f865baf4c1eb9ace53f3d2062be65/) | ⚠️ Unaudited |
 | SafeProxy | unknown | avalanche | [`0x3ba156...62be65`](./contracts/avalanche-43114/0x3ba1566ed39f865baf4c1eb9ace53f3d2062be65/) | ⚠️ Unaudited |
+| SymbioticWithdrawalQueue | operational_periphery | ethereum | [`0xbac961...09900e`](./contracts/ethereum-1/0xbac96113f4f29b622c24fe2af9abbce29909900e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,19 +96,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x2759e4...8f2faf`](./contracts/ethereum-1/0x2759e4741b370506be2ccef898960108e98f2faf/) | MultiVault | core_logic | $1,072,258.76 | Verified native implementation with $1,072,258.76 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3a828c...45b4c7`](./contracts/ethereum-1/0x3a828c183b3f382d030136c824844ea30145b4c7/) | MellowVaultCompat | core_logic | $509,826.64 | Verified native implementation with $509,826.64 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
-| upstream | 4 |
+| native | 0 |
+| upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 18 |
 
 ## Scope Matching Notes
 

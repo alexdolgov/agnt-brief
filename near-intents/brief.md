@@ -5,11 +5,11 @@
 - Project: NEAR Intents (`near-intents`)
 - Website: [https://near.com/](https://near.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T01:20:39.595Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-12T06:38:54.542Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-d6af
 - Chains: gnosis
 - Contract surface: 7 unique implementations (24 raw deployments)
-- DeFi Llama TVL: $79,032,269.00
+- DeFi Llama TVL: $82,960,241.12
 - On-chain TVL (included contracts): $3,719,105.13
 - TVL by chain: Gnosis $3,719,105.13
 
@@ -86,22 +86,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| gnosis | [`0x177127...973d3c`](./contracts/gnosis-100/0x177127622c4a00f3d409b75571e12cb3c8973d3c/) | PermittableToken | token | $3,719,105.13 | Verified native implementation with $3,719,105.13 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x614fcc...0388e0`](./contracts/gnosis-100/0x614fcc5b7f621a01731a7598e3c9645a6b0388e0/) | BlacklistValidatorUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x2a22f9...8f76f0`](./contracts/gnosis-100/0x2a22f9c3b484c3629090feed35f17ff8f88f76f0/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x06d53c...84450e`](./contracts/gnosis-100/0x06d53cbda1ebc80e99c76861777d0537d584450e/) | GnosisControllerToken | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x33f8d5...d81f5a`](./contracts/gnosis-100/0x33f8d5dd8cadca4f924a03c63cb3726d07d81f5a/) | TokenV2_1_0 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 5 |
+| native | 0 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 1 |
+| standard_library | 0 |
+| needs_review | 7 |
 
 ## Scope Matching Notes
 

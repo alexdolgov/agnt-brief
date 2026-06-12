@@ -5,7 +5,7 @@
 | Chain | gnosis (100) |
 | Address | `0x177127622c4a00f3d409b75571e12cb3c8973d3c` |
 | Role | token |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (gnosis [`0x177127622c4a00f3d409b75571e12cb3c8973d3c`](../0x177127622c4a00f3d409b75571e12cb3c8973d3c/)) |

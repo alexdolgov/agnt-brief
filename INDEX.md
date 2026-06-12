@@ -393,7 +393,7 @@
 | [native](./native/) | $67.6M | 0.0% | $67.6M | active | 0 | 80 | 2026-06-11 |
 | [nawa-protocol](./nawa-protocol/) | $4.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [nbx](./nbx/) | $1.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
-| [near-intents](./near-intents/) | $3.7M | 0.0% | $3.7M | active | 0 | 7 | 2026-06-11 |
+| [near-intents](./near-intents/) | $3.7M | 0.0% | $3.7M | active | 0 | 7 | 2026-06-12 |
 | [neemo-finance](./neemo-finance/) | $1.4M | 0.0% | ? | active | 1 | 14 | 2026-06-11 |
 | [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 17 | 2026-06-11 |
 | [neo-tokyo](./neo-tokyo/) | $1.0M | 0.0% | ? | unknown | 0 | 86 | 2026-05-31 |
@@ -406,7 +406,7 @@
 | [netswap](./netswap/) | $1.3M | 20.8% | ? | declining | 2 | 48 | 2026-06-11 |
 | [neuralai](./neuralai/) | $1.2M | 0.0% | ? | unknown | 1 | 2 | 2026-06-11 |
 | [neutral-trade](./neutral-trade/) | $18.6M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
-| [nexus-mutual](./nexus-mutual/) | $95.9M | 0.0% | ? | active | 2 | 6 | 2026-05-31 |
+| [nexus-mutual](./nexus-mutual/) | $34.8M | 0.0% | $34.8M | active | 2 | 30 | 2026-06-12 |
 | [nftx](./nftx/) | $6.3M | 11.1% | $6.3M | declining | 5 | 184 | 2026-06-11 |
 | [nodedao](./nodedao/) | $33.3M | 38.9% | $33.3M | active | 5 | 18 | 2026-06-11 |
 | [nomiswap](./nomiswap/) | $1.4M | 15.8% | ? | declining | 1 | 47 | 2026-05-24 |
@@ -428,7 +428,7 @@
 | [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | declining | 0 | 103 | 2026-06-11 |
 | [orangex](./orangex/) | $39.8M | 0.0% | ? | active | 0 | 3 | 2026-06-11 |
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-06-11 |
-| [osl](./osl/) | $41.5M | 0.0% | ? | active | 0 | 4 | 2026-06-11 |
+| [osl](./osl/) | $92.6M | 0.0% | ? | active | 0 | 4 | 2026-06-12 |
 | [osmosis-dex](./osmosis-dex/) | $18.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [ostium](./ostium/) | $29.1M | 47.1% | ? | active | 7 | 17 | 2026-06-11 |
 | [outcome-finance](./outcome-finance/) | $1.3M | 0.0% | ? | declining | 0 | 3 | 2026-06-11 |
@@ -454,7 +454,7 @@
 | [planet](./planet/) | $778.3M | 7.7% | $778.3M | declining | 1 | 34 | 2026-06-11 |
 | [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | active | 0 | 7 | 2026-06-11 |
 | [plasma-saving-vaults](./plasma-saving-vaults/) | $2.6M | 0.0% | $2.6M | declining | 0 | 6 | 2026-06-11 |
-| [pleasing-gold](./pleasing-gold/) | $88.1M | 0.0% | $88.1M | unknown | 0 | 8 | 2026-06-11 |
+| [pleasing-gold](./pleasing-gold/) | $93.0M | 0.0% | $93.0M | unknown | 0 | 14 | 2026-06-12 |
 | [pnetwork](./pnetwork/) | $13.1M | 0.0% | ? | declining | 0 | 10 | 2026-06-11 |
 | [polkastarter](./polkastarter/) | $9.6M | 0.0% | $9.6M | active | 3 | 2 | 2026-06-11 |
 | [polygon-zkevm-bridge](./polygon-zkevm-bridge/) | $78.0M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
@@ -484,7 +484,7 @@
 | [rank-trading](./rank-trading/) | $1.2M | 30.0% | ? | active | 2 | 13 | 2026-06-11 |
 | [rari-capital](./rari-capital/) | $321.4M | 0.0% | $321.4M | dead | 1 | 253 | 2026-05-24 |
 | [ratex](./ratex/) | $98.8K | 0.0% | $98.8K | declining | 2 | 166 | 2026-06-11 |
-| [re7-labs](./re7-labs/) | $1.6M | 0.0% | $1.6M | active | 0 | 6 | 2026-06-11 |
+| [re7-labs](./re7-labs/) | $6.6M | 0.0% | $6.6M | active | 0 | 18 | 2026-06-12 |
 | [reddex](./reddex/) | $4.2M | 0.0% | ? | declining | 0 | 5 | 2026-06-11 |
 | [reflexer](./reflexer/) | $2.3M | 40.9% | ? | declining | 8 | 64 | 2026-06-11 |
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 3 | 2026-06-12 |

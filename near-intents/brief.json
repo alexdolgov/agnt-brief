@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "near-intents",
-  "generated_at": "2026-06-11T01:20:39.595Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-12T06:38:54.542Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-d6af",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "near-intents",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 79032269.00081,
+    "dl_tvl_usd": 82960241.12054999,
     "tvl_usd": 3719105.134032107,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -78,7 +78,7 @@
       "address": "0x177127622c4a00f3d409b75571e12cb3c8973d3c",
       "name": "PermittableToken",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "NEAR Intents",
       "tvl_usd": 3719105.134032107,
@@ -109,7 +109,7 @@
       "address": "0x614fcc5b7f621a01731a7598e3c9645a6b0388e0",
       "name": "BlacklistValidatorUpgradeable",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -159,7 +159,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 100,
@@ -167,8 +167,8 @@
       "address": "0x6f795df1363b2c5e1361d77a1071053ec2e11734",
       "name": "ERC1967Proxy",
       "role": "proxy",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -208,7 +208,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 100,
@@ -216,7 +216,7 @@
       "address": "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0",
       "name": "FiatTokenV2_2",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "NEAR Intents",
       "tvl_usd": null,
@@ -247,7 +247,7 @@
       "address": "0x06d53cbda1ebc80e99c76861777d0537d584450e",
       "name": "GnosisControllerToken",
       "role": "governance",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -342,7 +342,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 100,
@@ -350,7 +350,7 @@
       "address": "0x33f8d5dd8cadca4f924a03c63cb3726d07d81f5a",
       "name": "TokenV2_1_0",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -409,7 +409,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 100,
@@ -440,68 +440,17 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x177127622c4a00f3d409b75571e12cb3c8973d3c",
-      "name": "PermittableToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 3719105.134032107,
-      "risk_note": "Verified native implementation with $3,719,105.13 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x614fcc5b7f621a01731a7598e3c9645a6b0388e0",
-      "name": "BlacklistValidatorUpgradeable",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0",
-      "name": "FiatTokenV2_2",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x06d53cbda1ebc80e99c76861777d0537d584450e",
-      "name": "GnosisControllerToken",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 100,
-      "chain_name": "gnosis",
-      "address": "0x33f8d5dd8cadca4f924a03c63cb3726d07d81f5a",
-      "name": "TokenV2_1_0",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 5,
+    "native": 0,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 1
+    "standard_library": 0,
+    "needs_review": 7
   },
   "scope_matching_notes": {
     "match_method_counts": {},

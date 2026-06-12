@@ -1,0 +1,18 @@
+{
+  "address": "0xcafead81a2c2508e7344155eb0da67a3a487aa8d",
+  "chain_id": 1,
+  "contract_name": "OwnedUpgradeabilityProxy",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-3.0-only",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0xcafea4a986a8d88dc63095034ce36bc8387a8534",
+  "fetched_at": "2026-06-12T06:40:19.654Z"
+}

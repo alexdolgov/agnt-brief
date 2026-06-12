@@ -5,13 +5,13 @@
 - Project: Team Finance (`team-finance`)
 - Website: [https://www.team.finance](https://www.team.finance)
 - Lifecycle: active (Tier 0, 77.4% below peak)
-- Generated: 2026-06-11T11:58:13.329Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
-- Chains: arbitrum, avalanche, base, blast, cronos, ethereum, fantom, kava, klaytn, mantle, polygon
-- Contract surface: 66 unique implementations (119 raw deployments)
-- DeFi Llama TVL: $44,986,132.43
-- On-chain TVL (included contracts): $4,817.35
-- TVL by chain: Ethereum $4,796.64 | Base $20.01 | Mantle $0.71
+- Generated: 2026-06-12T09:18:14.149Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-645a
+- Chains: arbitrum, avalanche, base, berachain, blast, bsc, cronos, ethereum, fantom, kava, klaytn, mantle, polygon
+- Contract surface: 66 unique implementations (125 raw deployments)
+- DeFi Llama TVL: $45,164,923.62
+- On-chain TVL (included contracts): $5,407.39
+- TVL by chain: Ethereum $4,796.64 | Bsc $586.30 | Base $20.01 | Blast $3.74 | Mantle $0.71
 
 ## Project Description
 
@@ -28,10 +28,10 @@ The protocol consists of a single product family centered around token locking. 
 - Verified by bytecode match: 4
 - Unverified implementations: 59
 - Unique implementations: 66
-- Raw deployments: 119
+- Raw deployments: 125
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $4,817.35
+- ASD (verified + unaudited TVL): $5,407.39
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -66,8 +66,8 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| LockToken | token | ethereum | 23 deployments: ethereum [`0x13f23d...d204a6`](./contracts/ethereum-1/0x13f23dbea59e4d9009f99258d45eed9527d204a6/); ethereum `0x2a20a1...2c7d3a`; ethereum `0x48d118...248359`; ethereum `0xc77aab...878bd5`; ethereum `0xd4745c...64c675`; ethereum `0xdbf723...c6220a`; ethereum `0xe2fe53...1435fb`; polygon `0x3ef744...6e56c7`; polygon `0x586c21...9af55c`; polygon `0xc80764...028ebe`; mantle `0xbfef87...9dca3f`; mantle `0xd03450...328b14`; base `0x4f0fd5...a7c33a`; base `0xeb8bb3...ff6db6`; arbitrum `0xe0b0d2...f72a75`; avalanche `0x2cc5c6...05c1d9`; avalanche `0x88ada0...b70367`; avalanche `0x8e5595...db3020`; avalanche `0x935a45...c4b7a1`; avalanche `0xd4745c...64c675`; avalanche `0xd8ef3d...7b439a`; avalanche `0xe2fe53...1435fb`; blast `0xd98287...8c7255` | ⚠️ Unaudited (bytecode match) |
-| StakingPool | proxy | blast | 7 deployments: base `0x9e9ce7...4040e6`; arbitrum `0x53a8e3...019e95`; blast [`0x327f6f...61af36`](./contracts/blast-81457/0x327f6f8868dc046f4050b0eedbcbfafd9e61af36/); blast `0x5b1c4d...73ecb7`; blast `0x624a4c...02143c`; blast `0x7efc85...e1fdac`; blast `0xdd111b...cc6485` | ⚠️ Unaudited (bytecode match) |
+| LockToken | token | bsc | 27 deployments: ethereum `0x13f23d...d204a6`; ethereum `0x2a20a1...2c7d3a`; ethereum `0x48d118...248359`; ethereum `0x6dd27f...0359f1`; ethereum `0xc77aab...878bd5`; ethereum `0xd4745c...64c675`; ethereum `0xdbf723...c6220a`; ethereum `0xe2fe53...1435fb`; bsc [`0x0c89c0...518820`](./contracts/bsc-56/0x0c89c0407775dd89b12918b9c0aa42bf96518820/); bsc `0x753659...d9a85c`; polygon `0x3ef744...6e56c7`; polygon `0x586c21...9af55c`; polygon `0xc80764...028ebe`; mantle `0xbfef87...9dca3f`; mantle `0xd03450...328b14`; base `0x4f0fd5...a7c33a`; base `0xeb8bb3...ff6db6`; arbitrum `0xe0b0d2...f72a75`; avalanche `0x2cc5c6...05c1d9`; avalanche `0x88ada0...b70367`; avalanche `0x8e5595...db3020`; avalanche `0x935a45...c4b7a1`; avalanche `0xd4745c...64c675`; avalanche `0xd8ef3d...7b439a`; avalanche `0xe2fe53...1435fb`; berachain `0x5dd3d6...0c14b8`; blast `0xd98287...8c7255` | ⚠️ Unaudited (bytecode match) |
+| StakingPool | core_logic | blast | 9 deployments: base `0x9e9ce7...4040e6`; arbitrum `0x53a8e3...019e95`; blast [`0x13f602...a3bb14`](./contracts/blast-81457/0x13f602d0238b827b5020d4e5a0676ef16ca3bb14/); blast `0x327f6f...61af36`; blast `0x5b1c4d...73ecb7`; blast `0x624a4c...02143c`; blast `0x7efc85...e1fdac`; blast `0xbf8471...e98ebd`; blast `0xdd111b...cc6485` | ⚠️ Unaudited (bytecode match) |
 | ProxyAdmin | governance | base | 12 deployments: ethereum `0xdcaa5d...e29e5d`; polygon `0xdcaa5d...e29e5d`; mantle `0x7592e7...c54e1a`; mantle `0xb2240b...2ca908`; base [`0x2784d0...bd6859`](./contracts/base-8453/0x2784d0d9543b602facaedb2c35227f055dbd6859/); base `0xb1e794...573b75`; arbitrum `0x28f47d...b3c11c`; arbitrum `0xded4a1...c41e9f`; avalanche `0xaf2249...d98385`; avalanche `0xdcaa5d...e29e5d`; blast `0x89e9a9...de2e34`; blast `0x8b6582...a32872` | ⚠️ Unaudited (bytecode match) |
 | TeamToken | unknown | blast | 7 deployments: polygon `0x900eec...08f3ba`; mantle `0xb377c1...20b546`; base `0x950077...175eb8`; base `0xd1de18...28bb59`; base `0xe37ef0...692c73`; arbitrum `0x446eb0...8c40b9`; blast [`0x2fec57...fcb61f`](./contracts/blast-81457/0x2fec57c84c581372f01f433bd4aba4dbaffcb61f/) | ⚠️ Unaudited (bytecode match) |
 
@@ -148,19 +148,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x13f23d...d204a6`](./contracts/ethereum-1/0x13f23dbea59e4d9009f99258d45eed9527d204a6/) | LockToken | token | $4,797.34 | Verified native implementation with $4,797.34 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x327f6f...61af36`](./contracts/blast-81457/0x327f6f8868dc046f4050b0eedbcbfafd9e61af36/) | StakingPool | proxy | $20.01 | Verified native implementation with $20.01 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 17 |
+| native | 0 |
 | upstream | 0 |
-| standard_library | 4 |
-| needs_review | 45 |
+| standard_library | 0 |
+| needs_review | 66 |
 
 ## Scope Matching Notes
 

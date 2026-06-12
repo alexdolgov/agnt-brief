@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "onyx",
-  "generated_at": "2026-06-11T12:12:09.311Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
+  "generated_at": "2026-06-12T09:18:26.161Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-645a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "onyx",
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 16,
-    "total_addresses": 42,
-    "unique_implementations": 16,
-    "total_deployments": 42,
+    "total_contracts": 17,
+    "total_addresses": 46,
+    "unique_implementations": 17,
+    "total_deployments": 46,
     "audited_contracts": 0,
-    "unaudited_contracts": 14,
+    "unaudited_contracts": 15,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 14,
+    "contracts_verified_unaudited": 15,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 46612024,
+    "dl_tvl_usd": 46620839,
     "tvl_usd": 384427279.6879104,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -73,7 +73,7 @@
     "product_family_count": 2
   },
   "surface_sufficiency": {
-    "unique_implementations": 16,
+    "unique_implementations": 17,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -88,7 +88,7 @@
       "address": "0x1933f1183c421d44d531ed40a5d2445f6a91646d",
       "name": "OErc20Delegate",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": 347376934.12141865,
@@ -191,7 +191,7 @@
       "address": "0x0c19d213e9f2a5cbaa4ec6e8eac55a22276b0641",
       "name": "OErc20Delegator",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": 37050345.566491745,
@@ -255,17 +255,35 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xdec2f31c3984f3440540dc78ef21b1369d4ef767",
+      "address": "0x019f9485bc668e890cf3350406186d6d7b8bd2c8",
       "name": "CHNGovernance",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Layer 1 Governance &amp; Staking",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "CHNGovernance",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x019f9485bc668e890cf3350406186d6d7b8bd2c8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa92c5d33356a26e8e200afb89f86e8356b6095f9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -281,7 +299,38 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x28ca9caae31602d0312ebf6466c9dd57fca5da93",
+      "name": "CHNReward",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CHNReward",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x28ca9caae31602d0312ebf6466c9dd57fca5da93",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -289,7 +338,7 @@
       "address": "0x23445c63feef8d85956dc0f19ade87606d0e19a9",
       "name": "CHNStaking",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Layer 1 Governance &amp; Staking",
       "tvl_usd": null,
@@ -320,7 +369,7 @@
       "address": "0x08edf0f2af8672029eb445742b3b4072c6158df3",
       "name": "CHNTimelock",
       "role": "governance",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Layer 1 Governance &amp; Staking",
       "tvl_usd": null,
@@ -336,6 +385,15 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8e46ae47e6006cb00abd6943136044601dc94c58",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -343,7 +401,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -351,7 +409,7 @@
       "address": "0x4345d308f02d1beb92475bda25e7c62be288478e",
       "name": "Comptroller",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -391,7 +449,7 @@
       "address": "0x4021047a36ac60b40316f630307cd4791cdaed52",
       "name": "JumpRateModelV2",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -462,7 +520,7 @@
       "address": "0xff42a051129a1313f5c907539630238e0c9c233b",
       "name": "Maximillion",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -493,7 +551,7 @@
       "address": "0x323398de3c35f96053d930d25fe8d92132f83d44",
       "name": "NFTLiquidation",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -533,7 +591,7 @@
       "address": "0x3f2dd7adbcd464d5b0a766f7eb367bd20a249691",
       "name": "OErc721Delegate",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -591,7 +649,7 @@
       "address": "0x714bd93ab6ab2f0bcfd2aeaf46a46719991d0d79",
       "name": "OEther",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -622,7 +680,7 @@
       "address": "0x0e8cf9bead36ee59a63a16672d024888b057f864",
       "name": "OnyxDAORegistry",
       "role": "registry",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -725,7 +783,7 @@
       "address": "0x36f0c2f474766a8c79d1228a1b5dd28a82f41067",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -756,7 +814,7 @@
       "address": "0x58e9a7e38fd7094ae086b134b74ac7b9b8ffebba",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -787,7 +845,7 @@
       "address": "0x67911bef892d73298283412468c94a30fe9910dc",
       "name": "WhitePaperInterestRateModel",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -837,143 +895,12 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1933f1183c421d44d531ed40a5d2445f6a91646d",
-      "name": "OErc20Delegate",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 347376934.12141865,
-      "risk_note": "Verified native implementation with $347,376,934.12 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0c19d213e9f2a5cbaa4ec6e8eac55a22276b0641",
-      "name": "OErc20Delegator",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 37050345.566491745,
-      "risk_note": "Verified native implementation with $37,050,345.57 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdec2f31c3984f3440540dc78ef21b1369d4ef767",
-      "name": "CHNGovernance",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x23445c63feef8d85956dc0f19ade87606d0e19a9",
-      "name": "CHNStaking",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x08edf0f2af8672029eb445742b3b4072c6158df3",
-      "name": "CHNTimelock",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4345d308f02d1beb92475bda25e7c62be288478e",
-      "name": "Comptroller",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4021047a36ac60b40316f630307cd4791cdaed52",
-      "name": "JumpRateModelV2",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xff42a051129a1313f5c907539630238e0c9c233b",
-      "name": "Maximillion",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x323398de3c35f96053d930d25fe8d92132f83d44",
-      "name": "NFTLiquidation",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x3f2dd7adbcd464d5b0a766f7eb367bd20a249691",
-      "name": "OErc721Delegate",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x714bd93ab6ab2f0bcfd2aeaf46a46719991d0d79",
-      "name": "OEther",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0e8cf9bead36ee59a63a16672d024888b057f864",
-      "name": "OnyxDAORegistry",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x67911bef892d73298283412468c94a30fe9910dc",
-      "name": "WhitePaperInterestRateModel",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 15,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 17
   },
   "scope_matching_notes": {
     "match_method_counts": {},

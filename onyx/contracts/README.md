@@ -1,12 +1,12 @@
 # onyx — Contract Index
 
-16 unique implementations on ethereum · 42 deployments · 0 audited · 14 unaudited · 2 unverified
+17 unique implementations on ethereum · 46 deployments · 0 audited · 15 unaudited · 2 unverified
 
 ## governance (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [CHNTimelock](./ethereum-1/0x08edf0f2af8672029eb445742b3b4072c6158df3/) | ethereum | [`0x08edf0...158df3`](./ethereum-1/0x08edf0f2af8672029eb445742b3b4072c6158df3/) | ⚠️ Unaudited | Verified |
+| [CHNTimelock (2 deployments)](./ethereum-1/0x08edf0f2af8672029eb445742b3b4072c6158df3/) | ethereum | 2 deployments: ethereum [`0x08edf0...158df3`](./ethereum-1/0x08edf0f2af8672029eb445742b3b4072c6158df3/); ethereum `0x8e46ae...c94c58` | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (2)
 
@@ -30,11 +30,12 @@
 | [OErc20Delegator (5 deployments)](./ethereum-1/0x0c19d213e9f2a5cbaa4ec6e8eac55a22276b0641/) | ethereum | 5 deployments: ethereum [`0x0c19d2...6b0641`](./ethereum-1/0x0c19d213e9f2a5cbaa4ec6e8eac55a22276b0641/); ethereum `0x11b258...b2eb69`; ethereum `0x7497e9...170f2d`; ethereum `0xc0534b...93793a`; ethereum `0xf52459...1226d3` | ⚠️ Unaudited | Verified |
 | [OErc721Delegate (4 deployments)](./ethereum-1/0x3f2dd7adbcd464d5b0a766f7eb367bd20a249691/) | ethereum | 4 deployments: ethereum [`0x3f2dd7...249691`](./ethereum-1/0x3f2dd7adbcd464d5b0a766f7eb367bd20a249691/); ethereum `0x5bcc74...fd6df0`; ethereum `0x7ab16e...9cb091`; ethereum `0x921ce5...921c94` | ⚠️ Unaudited | Verified |
 
-## unknown (8)
+## unknown (9)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| CHNGovernance | ethereum | `0xdec2f3...4ef767` | ⚠️ Unaudited | Verified |
+| [CHNGovernance (3 deployments)](./ethereum-1/0x019f9485bc668e890cf3350406186d6d7b8bd2c8/) | ethereum | 3 deployments: ethereum [`0x019f94...8bd2c8`](./ethereum-1/0x019f9485bc668e890cf3350406186d6d7b8bd2c8/); ethereum `0xa92c5d...6095f9`; ethereum `0xdec2f3...4ef767` | ⚠️ Unaudited | Verified |
+| [CHNReward](./ethereum-1/0x28ca9caae31602d0312ebf6466c9dd57fca5da93/) | ethereum | [`0x28ca9c...a5da93`](./ethereum-1/0x28ca9caae31602d0312ebf6466c9dd57fca5da93/) | ⚠️ Unaudited | Verified |
 | [CHNStaking](./ethereum-1/0x23445c63feef8d85956dc0f19ade87606d0e19a9/) | ethereum | [`0x23445c...0e19a9`](./ethereum-1/0x23445c63feef8d85956dc0f19ade87606d0e19a9/) | ⚠️ Unaudited | Verified |
 | [Comptroller (2 deployments)](./ethereum-1/0x4345d308f02d1beb92475bda25e7c62be288478e/) | ethereum | 2 deployments: ethereum [`0x4345d3...88478e`](./ethereum-1/0x4345d308f02d1beb92475bda25e7c62be288478e/); ethereum `0x7d61ed...ec2800` | ⚠️ Unaudited | Verified |
 | [MasterChef](./ethereum-1/0x3fa642c0bbad64569eb8424af35f518347249216/) | ethereum | [`0x3fa642...249216`](./ethereum-1/0x3fa642c0bbad64569eb8424af35f518347249216/) | ⚠️ Unaudited | Verified |

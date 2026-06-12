@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "plasma-saving-vaults",
-  "generated_at": "2026-06-11T01:56:26.679Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-12T09:16:52.903Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-645a",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "plasma-saving-vaults",
@@ -33,9 +33,9 @@
   },
   "summary": {
     "total_contracts": 6,
-    "total_addresses": 14,
+    "total_addresses": 15,
     "unique_implementations": 6,
-    "total_deployments": 14,
+    "total_deployments": 15,
     "audited_contracts": 0,
     "unaudited_contracts": 5,
     "contracts_verified_audited": 0,
@@ -45,7 +45,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 45454265.52871,
+    "dl_tvl_usd": 43923429.25798,
     "tvl_usd": 2646281.073605,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -88,7 +88,7 @@
       "address": "0xd1074e0ae85610ddba0147e29ebe0d8e5873a000",
       "name": "BoringVault",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Plasma Saving Vaults",
       "tvl_usd": 2646281.073605,
@@ -116,17 +116,26 @@
     {
       "chain_id": 9745,
       "chain_name": "plasma",
-      "address": "0x5d72a9d9a9510cd8cbdba12ac62593a58930a948",
+      "address": "0x2ffb265d591809fb1c4baba84996507e3c168406",
       "name": "ATokenInstance",
-      "role": "token",
+      "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Plasma Saving Vaults",
       "tvl_usd": null,
-      "is_proxy": true,
+      "is_proxy": false,
       "impl_address": "0x2ffb265d591809fb1c4baba84996507e3c168406",
       "impl_name": "ATokenInstance",
       "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x2ffb265d591809fb1c4baba84996507e3c168406",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 9745,
           "chain_name": "plasma",
@@ -150,7 +159,7 @@
       "address": "0x0200c29006150606b650577bbe7b6248f58470c1",
       "name": "OUpgradeable",
       "role": "proxy",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -200,7 +209,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 9745,
@@ -208,8 +217,8 @@
       "address": "0x3224831b5f45c616f8accba907798c6236773772",
       "name": "ProxyAdmin",
       "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -240,7 +249,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 9745,
@@ -248,8 +257,8 @@
       "address": "0x1b64b9025eebb9a6239575df9ea4b9ac46d4d193",
       "name": "TetherTokenOFTExtension",
       "role": "adapter",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": "Plasma Saving Vaults",
       "tvl_usd": null,
       "is_proxy": true,
@@ -338,38 +347,17 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [
-    {
-      "chain_id": 9745,
-      "chain_name": "plasma",
-      "address": "0xd1074e0ae85610ddba0147e29ebe0d8e5873a000",
-      "name": "BoringVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 2646281.073605,
-      "risk_note": "Verified native implementation with $2,646,281.07 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 9745,
-      "chain_name": "plasma",
-      "address": "0x0200c29006150606b650577bbe7b6248f58470c1",
-      "name": "OUpgradeable",
-      "role": "proxy",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    }
-  ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 2,
+    "native": 0,
     "upstream": 0,
-    "standard_library": 2,
-    "needs_review": 2
+    "standard_library": 0,
+    "needs_review": 6
   },
   "scope_matching_notes": {
     "match_method_counts": {},

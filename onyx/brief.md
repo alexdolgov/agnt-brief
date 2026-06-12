@@ -5,11 +5,11 @@
 - Project: Onyx (`onyx`)
 - Website: [https://app.onyx.org/](https://app.onyx.org/)
 - Lifecycle: active (Tier 1, dead)
-- Generated: 2026-06-11T12:12:09.311Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
+- Generated: 2026-06-12T09:18:26.161Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-645a
 - Chains: ethereum
-- Contract surface: 16 unique implementations (42 raw deployments)
-- DeFi Llama TVL: $46,612,024.00
+- Contract surface: 17 unique implementations (46 raw deployments)
+- DeFi Llama TVL: $46,620,839.00
 - On-chain TVL (included contracts): $384,427,279.69
 - TVL by chain: Ethereum $384,427,279.69
 
@@ -23,12 +23,12 @@ The Lending family relies on the OnyxDAORegistry for configuration and access co
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/14 (0.0%)
-- Verified + Unaudited implementations: 14
+- Verified implementations audited: 0/15 (0.0%)
+- Verified + Unaudited implementations: 15
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 16
-- Raw deployments: 42
+- Unique implementations: 17
+- Raw deployments: 46
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $384,427,279.69
@@ -46,15 +46,16 @@ The Lending family relies on the OnyxDAORegistry for configuration and access co
 
 - None
 
-### ⚠️ Verified + Unaudited (14)
+### ⚠️ Verified + Unaudited (15)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | OErc20Delegate | token | ethereum | 9 deployments: ethereum [`0x1933f1...91646d`](./contracts/ethereum-1/0x1933f1183c421d44d531ed40a5d2445f6a91646d/); ethereum `0x1961ad...1f8d12`; ethereum `0x307269...1d00bf`; ethereum `0x447617...5fea82`; ethereum `0x830dac...17b085`; ethereum `0x8f3511...1e412a`; ethereum `0x9dcb6b...95abc4`; ethereum `0xbced4e...04d2dd`; ethereum `0xfee442...3142dc` | ⚠️ Unaudited |
 | OErc20Delegator | token | ethereum | 5 deployments: ethereum [`0x0c19d2...6b0641`](./contracts/ethereum-1/0x0c19d213e9f2a5cbaa4ec6e8eac55a22276b0641/); ethereum `0x11b258...b2eb69`; ethereum `0x7497e9...170f2d`; ethereum `0xc0534b...93793a`; ethereum `0xf52459...1226d3` | ⚠️ Unaudited |
-| CHNGovernance | unknown | ethereum | [`0xdec2f3...4ef767`](./contracts/ethereum-1/0xdec2f31c3984f3440540dc78ef21b1369d4ef767/) | ⚠️ Unaudited |
+| CHNGovernance | unknown | ethereum | 3 deployments: ethereum [`0x019f94...8bd2c8`](./contracts/ethereum-1/0x019f9485bc668e890cf3350406186d6d7b8bd2c8/); ethereum `0xa92c5d...6095f9`; ethereum `0xdec2f3...4ef767` | ⚠️ Unaudited |
+| CHNReward | unknown | ethereum | [`0x28ca9c...a5da93`](./contracts/ethereum-1/0x28ca9caae31602d0312ebf6466c9dd57fca5da93/) | ⚠️ Unaudited |
 | CHNStaking | unknown | ethereum | [`0x23445c...0e19a9`](./contracts/ethereum-1/0x23445c63feef8d85956dc0f19ade87606d0e19a9/) | ⚠️ Unaudited |
-| CHNTimelock | governance | ethereum | [`0x08edf0...158df3`](./contracts/ethereum-1/0x08edf0f2af8672029eb445742b3b4072c6158df3/) | ⚠️ Unaudited |
+| CHNTimelock | governance | ethereum | 2 deployments: ethereum [`0x08edf0...158df3`](./contracts/ethereum-1/0x08edf0f2af8672029eb445742b3b4072c6158df3/); ethereum `0x8e46ae...c94c58` | ⚠️ Unaudited |
 | Comptroller | unknown | ethereum | 2 deployments: ethereum [`0x4345d3...88478e`](./contracts/ethereum-1/0x4345d308f02d1beb92475bda25e7c62be288478e/); ethereum `0x7d61ed...ec2800` | ⚠️ Unaudited |
 | JumpRateModelV2 | operational_periphery | ethereum | 2 deployments: ethereum [`0x402104...daed52`](./contracts/ethereum-1/0x4021047a36ac60b40316f630307cd4791cdaed52/); ethereum `0xf14ab1...16ff4e` | ⚠️ Unaudited |
 | MasterChef | unknown | ethereum | [`0x3fa642...249216`](./contracts/ethereum-1/0x3fa642c0bbad64569eb8424af35f518347249216/) | ⚠️ Unaudited |
@@ -96,30 +97,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x1933f1...91646d`](./contracts/ethereum-1/0x1933f1183c421d44d531ed40a5d2445f6a91646d/) | OErc20Delegate | token | $347,376,934.12 | Verified native implementation with $347,376,934.12 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0c19d2...6b0641`](./contracts/ethereum-1/0x0c19d213e9f2a5cbaa4ec6e8eac55a22276b0641/) | OErc20Delegator | token | $37,050,345.57 | Verified native implementation with $37,050,345.57 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdec2f3...4ef767`](./contracts/ethereum-1/0xdec2f31c3984f3440540dc78ef21b1369d4ef767/) | CHNGovernance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x23445c...0e19a9`](./contracts/ethereum-1/0x23445c63feef8d85956dc0f19ade87606d0e19a9/) | CHNStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x08edf0...158df3`](./contracts/ethereum-1/0x08edf0f2af8672029eb445742b3b4072c6158df3/) | CHNTimelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4345d3...88478e`](./contracts/ethereum-1/0x4345d308f02d1beb92475bda25e7c62be288478e/) | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x402104...daed52`](./contracts/ethereum-1/0x4021047a36ac60b40316f630307cd4791cdaed52/) | JumpRateModelV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xff42a0...9c233b`](./contracts/ethereum-1/0xff42a051129a1313f5c907539630238e0c9c233b/) | Maximillion | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x323398...f83d44`](./contracts/ethereum-1/0x323398de3c35f96053d930d25fe8d92132f83d44/) | NFTLiquidation | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3f2dd7...249691`](./contracts/ethereum-1/0x3f2dd7adbcd464d5b0a766f7eb367bd20a249691/) | OErc721Delegate | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x714bd9...1d0d79`](./contracts/ethereum-1/0x714bd93ab6ab2f0bcfd2aeaf46a46719991d0d79/) | OEther | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0e8cf9...57f864`](./contracts/ethereum-1/0x0e8cf9bead36ee59a63a16672d024888b057f864/) | OnyxDAORegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x67911b...9910dc`](./contracts/ethereum-1/0x67911bef892d73298283412468c94a30fe9910dc/) | WhitePaperInterestRateModel | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 15 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 17 |
 
 ## Scope Matching Notes
 

@@ -6,12 +6,12 @@
 
 - Project: Mezo Earn (`mezo-earn`)
 - Website: [https://mezo.org/earn/lock](https://mezo.org/earn/lock)
-- Lifecycle: unknown (Tier 0, 37.5% below peak)
-- Generated: 2026-06-11T01:04:14.777Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
+- Lifecycle: unknown (Tier 0, 35.7% below peak)
+- Generated: 2026-06-12T09:16:45.067Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-645a
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $55,180,986.82
+- DeFi Llama TVL: $46,894,437.22
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -54,7 +54,7 @@ Mezo Earn is the earning/allocation component of the Mezo protocol, allowing use
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| MezoAllocator | core_logic | ethereum | [`0xb90fda...e20122`](./contracts/ethereum-1/0xb90fdad3dfd180458d62cc6acedc983d78e20122/) | ⚠️ Unaudited |
+| MezoAllocator | operational_periphery | ethereum | [`0xb90fda...e20122`](./contracts/ethereum-1/0xb90fdad3dfd180458d62cc6acedc983d78e20122/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,8 +91,8 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 0 |
+| standard_library | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

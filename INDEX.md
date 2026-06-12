@@ -369,7 +369,7 @@
 | [metastable](./metastable/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [mev-capital](./mev-capital/) | $67.0M | 0.0% | ? | active | 0 | 783 | 2026-06-11 |
 | [mezo-bridge](./mezo-bridge/) | $2.6M | 0.0% | $2.6M | declining | 0 | 4 | 2026-06-11 |
-| [mezo-earn](./mezo-earn/) | $55.2M | 0.0% | ? | unknown | 0 | 1 | 2026-06-11 |
+| [mezo-earn](./mezo-earn/) | $46.9M | 0.0% | ? | unknown | 0 | 1 | 2026-06-12 |
 | [minefi](./minefi/) | $1.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [minto](./minto/) | $3.8M | 16.7% | ? | active | 2 | 9 | 2026-06-11 |
 | [mitosis](./mitosis/) | $329.0M | 0.0% | $329.0M | active | 2 | 66 | 2026-06-11 |
@@ -423,7 +423,7 @@
 | [odyssey-finance](./odyssey-finance/) | $10.2M | 0.0% | ? | active | 0 | 79 | 2026-06-11 |
 | [okcoin](./okcoin/) | $25.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [omnibtc](./omnibtc/) | $2.2M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
-| [onyx](./onyx/) | $384.4M | 0.0% | $384.4M | active | 1 | 16 | 2026-06-11 |
+| [onyx](./onyx/) | $384.4M | 0.0% | $384.4M | active | 1 | 17 | 2026-06-12 |
 | [open-ticketing-ecosystem](./open-ticketing-ecosystem/) | $3.3M | 0.0% | $3.3M | active | 0 | 24 | 2026-06-11 |
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-06-11 |
 | [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | declining | 0 | 103 | 2026-06-11 |
@@ -454,7 +454,7 @@
 | [pionex](./pionex/) | $37.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [planet](./planet/) | $778.3M | 7.7% | $778.3M | declining | 1 | 34 | 2026-06-11 |
 | [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | active | 0 | 7 | 2026-06-11 |
-| [plasma-saving-vaults](./plasma-saving-vaults/) | $2.6M | 0.0% | $2.6M | declining | 0 | 6 | 2026-06-11 |
+| [plasma-saving-vaults](./plasma-saving-vaults/) | $2.6M | 0.0% | $2.6M | declining | 0 | 6 | 2026-06-12 |
 | [pleasing-gold](./pleasing-gold/) | $93.0M | 0.0% | $93.0M | unknown | 0 | 14 | 2026-06-12 |
 | [pnetwork](./pnetwork/) | $13.1M | 0.0% | ? | declining | 0 | 10 | 2026-06-11 |
 | [polkastarter](./polkastarter/) | $9.6M | 0.0% | $9.6M | active | 3 | 2 | 2026-06-11 |
@@ -616,7 +616,7 @@
 | [tangible](./tangible/) | $41.9M | 0.0% | ? | active | 7 | 475 | 2026-06-11 |
 | [tarot](./tarot/) | $154.4K | 0.0% | $154.4K | dead | 1 | 139 | 2026-05-31 |
 | [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | declining | 0 | 179 | 2026-06-11 |
-| [team-finance](./team-finance/) | $4.8K | 0.0% | $4.8K | active | 2 | 66 | 2026-06-11 |
+| [team-finance](./team-finance/) | $5.4K | 0.0% | $5.4K | active | 2 | 66 | 2026-06-12 |
 | [teller](./teller/) | $1.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 40 | 2026-06-11 |
 | [tender-finance](./tender-finance/) | $1.3M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |

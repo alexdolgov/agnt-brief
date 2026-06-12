@@ -1,6 +1,12 @@
 # team-finance — Contract Index
 
-66 unique implementations across 11 chains · 119 deployments · 0 audited · 7 unaudited · 59 unverified
+66 unique implementations across 13 chains · 125 deployments · 0 audited · 7 unaudited · 59 unverified
+
+## core_logic (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| StakingPool (9 deployments) | blast | 9 deployments: base `0x9e9ce7...4040e6`; arbitrum `0x53a8e3...019e95`; blast `0x13f602...a3bb14`; blast `0x327f6f...61af36`; blast `0x5b1c4d...73ecb7`; blast `0x624a4c...02143c`; blast `0x7efc85...e1fdac`; blast `0xbf8471...e98ebd`; blast `0xdd111b...cc6485` | ⚠️ Unaudited | Verified |
 
 ## governance (1)
 
@@ -14,18 +20,17 @@
 |---|---|---|---|---|
 | [PriceEstimator](./polygon-137/0x5fbf0a43c282272f3d5b595dc50fe9ae7be5dc93/) | polygon | [`0x5fbf0a...e5dc93`](./polygon-137/0x5fbf0a43c282272f3d5b595dc50fe9ae7be5dc93/) | ⚠️ Unaudited | Verified |
 
-## proxy (2)
+## proxy (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| StakingPool (7 deployments) | blast | 7 deployments: base `0x9e9ce7...4040e6`; arbitrum `0x53a8e3...019e95`; blast `0x327f6f...61af36`; blast `0x5b1c4d...73ecb7`; blast `0x624a4c...02143c`; blast `0x7efc85...e1fdac`; blast `0xdd111b...cc6485` | ⚠️ Unaudited | Verified |
 | [TransparentUpgradeableProxy (9 deployments)](./mantle-5000/0x39b9eb9b2be5d721d28eb40443f48cb0ad0c3340/) | mantle | 9 deployments: mantle [`0x39b9eb...0c3340`](./mantle-5000/0x39b9eb9b2be5d721d28eb40443f48cb0ad0c3340/); mantle `0xe0b0d2...f72a75`; mantle `0xf076a6...8a64cc`; base `0x80825c...b2c9fe`; base `0x950818...7a22fb`; base `0x962f07...f5c3c2`; arbitrum `0xde002f...811cdc`; arbitrum `0xf076a6...8a64cc`; avalanche `0xf8282d...d8e0e5` | ⚠️ Unaudited | Verified |
 
 ## token (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [LockToken (23 deployments)](./ethereum-1/0x13f23dbea59e4d9009f99258d45eed9527d204a6/) | ethereum | 23 deployments: ethereum [`0x13f23d...d204a6`](./ethereum-1/0x13f23dbea59e4d9009f99258d45eed9527d204a6/); ethereum `0x2a20a1...2c7d3a`; ethereum `0x48d118...248359`; ethereum `0xc77aab...878bd5`; ethereum `0xd4745c...64c675`; ethereum `0xdbf723...c6220a`; ethereum `0xe2fe53...1435fb`; polygon `0x3ef744...6e56c7`; polygon `0x586c21...9af55c`; polygon `0xc80764...028ebe`; mantle `0xbfef87...9dca3f`; mantle `0xd03450...328b14`; base `0x4f0fd5...a7c33a`; base `0xeb8bb3...ff6db6`; arbitrum `0xe0b0d2...f72a75`; avalanche `0x2cc5c6...05c1d9`; avalanche `0x88ada0...b70367`; avalanche `0x8e5595...db3020`; avalanche `0x935a45...c4b7a1`; avalanche `0xd4745c...64c675`; avalanche `0xd8ef3d...7b439a`; avalanche `0xe2fe53...1435fb`; blast `0xd98287...8c7255` | ⚠️ Unaudited | Verified |
+| [LockToken (27 deployments)](./bsc-56/0x0c89c0407775dd89b12918b9c0aa42bf96518820/) | bsc | 27 deployments: ethereum `0x13f23d...d204a6`; ethereum `0x2a20a1...2c7d3a`; ethereum `0x48d118...248359`; ethereum `0x6dd27f...0359f1`; ethereum `0xc77aab...878bd5`; ethereum `0xd4745c...64c675`; ethereum `0xdbf723...c6220a`; ethereum `0xe2fe53...1435fb`; bsc [`0x0c89c0...518820`](./bsc-56/0x0c89c0407775dd89b12918b9c0aa42bf96518820/); bsc `0x753659...d9a85c`; polygon `0x3ef744...6e56c7`; polygon `0x586c21...9af55c`; polygon `0xc80764...028ebe`; mantle `0xbfef87...9dca3f`; mantle `0xd03450...328b14`; base `0x4f0fd5...a7c33a`; base `0xeb8bb3...ff6db6`; arbitrum `0xe0b0d2...f72a75`; avalanche `0x2cc5c6...05c1d9`; avalanche `0x88ada0...b70367`; avalanche `0x8e5595...db3020`; avalanche `0x935a45...c4b7a1`; avalanche `0xd4745c...64c675`; avalanche `0xd8ef3d...7b439a`; avalanche `0xe2fe53...1435fb`; berachain `0x5dd3d6...0c14b8`; blast `0xd98287...8c7255` | ⚠️ Unaudited | Verified |
 
 ## unknown (61)
 

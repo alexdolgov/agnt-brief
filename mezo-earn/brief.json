@@ -1,25 +1,25 @@
 {
   "schema_version": "2.0",
   "project_key": "mezo-earn",
-  "generated_at": "2026-06-11T01:04:14.777Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-2b99",
+  "generated_at": "2026-06-12T09:16:45.067Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-12-6a3052-645a",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "mezo-earn",
     "tier": 0,
     "peak_tvl": 56465444,
     "peak_date": "2026-05-21T00:00:00.000Z",
-    "tvl_30d_ago": 33995292,
+    "tvl_30d_ago": 33617947,
     "tvl_90d_ago": null,
-    "tvl_current": 35308026,
+    "tvl_current": 36307455,
     "tier0_reason": "no_rule_matched",
     "tvl_180d_ago": null,
-    "change_30d_pct": 3.8615170594798833,
+    "change_30d_pct": 8.000214885221872,
     "change_90d_pct": null,
-    "days_since_peak": 21,
+    "days_since_peak": 22,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 37.469674372878394
+    "drop_from_peak_pct": 35.69969094726325
   },
   "summary": {
     "total_contracts": 1,
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 55180986.81536,
-    "tvl_usd": 55180986.81536,
+    "dl_tvl_usd": 46894437.22431,
+    "tvl_usd": 46894437.22431,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -75,9 +75,9 @@
       "chain_name": "ethereum",
       "address": "0xb90fdad3dfd180458d62cc6acedc983d78e20122",
       "name": "MezoAllocator",
-      "role": "core_logic",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": "Mezo Earn",
       "tvl_usd": null,
       "is_proxy": true,
@@ -108,8 +108,8 @@
   "origin_summary": {
     "native": 0,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 0
+    "standard_library": 0,
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

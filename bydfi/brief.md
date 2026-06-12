@@ -4,12 +4,12 @@
 
 - Project: BYDFi (`bydfi`)
 - Website: [https://www.bydfi.com/en](https://www.bydfi.com/en)
-- Lifecycle: active (Tier 0, 32.1% below peak)
-- Generated: 2026-06-10T22:14:24.629Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
+- Lifecycle: active (Tier 0, 46.3% below peak)
+- Generated: 2026-06-12T06:42:02.182Z
+- Pipeline run: v2-pipeline-2026-06-12-6a3052-d6af
 - Chains: ethereum
-- Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $92,693,923.21
+- Contract surface: 1 unique implementations (2 raw deployments)
+- DeFi Llama TVL: $72,147,103.65
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,7 +29,7 @@ BYDFi is a centralized cryptocurrency exchange offering spot trading, futures/de
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
-- Raw deployments: 1
+- Raw deployments: 2
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -51,7 +51,7 @@ BYDFi is a centralized cryptocurrency exchange offering spot trading, futures/de
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| Safe | unknown | ethereum | [`0x845dfa...d5acd4`](./contracts/ethereum-1/0x845dfa5366776fe44aa49e630c0c86a069d5acd4/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | 2 deployments: ethereum [`0x41675c...c7461a`](./contracts/ethereum-1/0x41675c099f32341bf84bfc5382af534df5c7461a/); ethereum `0x845dfa...d5acd4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,9 +87,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 0 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

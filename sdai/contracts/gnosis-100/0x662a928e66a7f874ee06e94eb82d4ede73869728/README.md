@@ -5,7 +5,7 @@
 | Chain | gnosis (100) |
 | Address | `0x662a928e66a7f874ee06e94eb82d4ede73869728` |
 | Role | adapter |
-| Origin | upstream |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (gnosis [`0x662a928e66a7f874ee06e94eb82d4ede73869728`](../0x662a928e66a7f874ee06e94eb82d4ede73869728/)) |

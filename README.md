@@ -312,6 +312,7 @@ Each project directory contains:
 | [hakka-finance](./hakka-finance/brief.md) | $4.64M | ethereum | 37 | 34/37 (92%) | 26.5% | 0.0% (-) | 6 | stale | ✅ active | $5.43K |
 | [team-finance](./team-finance/brief.md) | $44.99M | 11 | 66 | 3/66 (5%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $4.82K |
 | [wan-bridge](./wan-bridge/brief.md) | $26.05M | 14 | 129 | 44/129 (34%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $4.60K |
+| [sdai](./sdai/brief.md) | $70.69M | ethereum, gnosis | 103 | 58/103 (56%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.25K |
 | [azuro](./azuro/brief.md) | $1.07M | 6 | 304 | 55/304 (18%) | 6.6% | 0.0% (-) | 3 | aging | ✅ active | $3.14K |
 | [arrakis-finance](./arrakis-finance/brief.md) | $77.24M | 9 | 124 | 101/124 (81%) | 19.4% | 3.9% (Sherlock) | 6 | stale | ✅ active | $3.07K |
 | [injective-bridge](./injective-bridge/brief.md) | $15.11M | ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.62K |
@@ -403,7 +404,7 @@ Each project directory contains:
 | [bucket-protocol](./bucket-protocol/brief.md) | $65.13M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [bulbaswap](./bulbaswap/brief.md) | $9.04M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [butter-network](./butter-network/brief.md) | $1.23M | 11 | 6 | 2/6 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
-| [bydfi](./bydfi/brief.md) | $92.69M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [bydfi](./bydfi/brief.md) | $72.15M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [byte-exchange](./byte-exchange/brief.md) | $41.68M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [canopy](./canopy/brief.md) | $1.34M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [canto-lending](./canto-lending/brief.md) | $3.03M | canto, ethereum | 84 | 2/84 (2%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
@@ -600,7 +601,7 @@ Each project directory contains:
 | [phoenix](./phoenix/brief.md) | $1.19M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [pionex](./pionex/brief.md) | $37.13M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [pnetwork](./pnetwork/brief.md) | $13.10M | arbitrum, gnosis, polygon | 10 | 9/10 (90%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
-| [polygon-zkevm-bridge](./polygon-zkevm-bridge/brief.md) | $77.97M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [polygon-zkevm-bridge](./polygon-zkevm-bridge/brief.md) | $69.38M | ethereum | 14 | 14/14 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [polynomial-protocol](./polynomial-protocol/brief.md) | $5.34M | ethereum | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [pond0x](./pond0x/brief.md) | $2.87M | ethereum | 14 | 9/14 (64%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [potatoswap](./potatoswap/brief.md) | $5.17M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -635,7 +636,6 @@ Each project directory contains:
 | [sceptre-liquid](./sceptre-liquid/brief.md) | $20.03M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [scream](./scream/brief.md) | $1.29M | fantom | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [scrub-money](./scrub-money/brief.md) | $7.16M | arbitrum, kava | 19 | 1/19 (5%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
-| [sdai](./sdai/brief.md) | $72.00M | gnosis | 91 | 46/91 (51%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [sentiment](./sentiment/brief.md) | $1.20M | arbitrum | 297 | 30/297 (10%) | 73.3% | 46.7% (Sherlock) | 6 | aging | 💀 dead | - |
 | [serum](./serum/brief.md) | $15.31M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [shape-bridge](./shape-bridge/brief.md) | $760.43K | ethereum | 26 | 22/26 (85%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
@@ -725,5 +725,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-12T06:41:22.934Z_
+_Generated: 2026-06-12T06:47:34.938Z_
 _Projects: 713_

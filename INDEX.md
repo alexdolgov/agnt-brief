@@ -113,7 +113,7 @@
 | [bulbaswap](./bulbaswap/) | $9.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [bunny](./bunny/) | $1.9M | 9.6% | $1.4M | declining | 1 | 101 | 2026-06-10 |
 | [butter-network](./butter-network/) | $1.2M | 0.0% | ? | declining | 0 | 6 | 2026-06-10 |
-| [bydfi](./bydfi/) | $92.7M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
+| [bydfi](./bydfi/) | $72.1M | 0.0% | ? | active | 0 | 1 | 2026-06-12 |
 | [byte-exchange](./byte-exchange/) | $41.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [camelot](./camelot/) | $6.4M | 17.6% | $391.9K | active | 1 | 118 | 2026-06-10 |
 | [canopy](./canopy/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -457,7 +457,7 @@
 | [pleasing-gold](./pleasing-gold/) | $93.0M | 0.0% | $93.0M | unknown | 0 | 14 | 2026-06-12 |
 | [pnetwork](./pnetwork/) | $13.1M | 0.0% | ? | declining | 0 | 10 | 2026-06-11 |
 | [polkastarter](./polkastarter/) | $9.6M | 0.0% | $9.6M | active | 3 | 2 | 2026-06-11 |
-| [polygon-zkevm-bridge](./polygon-zkevm-bridge/) | $78.0M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
+| [polygon-zkevm-bridge](./polygon-zkevm-bridge/) | $69.4M | 0.0% | ? | unknown | 0 | 14 | 2026-06-12 |
 | [polynomial-protocol](./polynomial-protocol/) | $5.3M | 0.0% | ? | active | 17 | 5 | 2026-06-11 |
 | [pond0x](./pond0x/) | $2.9M | 0.0% | ? | unknown | 0 | 14 | 2026-06-11 |
 | [pooltogether](./pooltogether/) | $26.9M | 0.9% | $26.9M | declining | 4 | 153 | 2026-05-31 |
@@ -523,7 +523,7 @@
 | [scream](./scream/) | $1.3M | 0.0% | ? | dead | 1 | 1 | 2026-06-11 |
 | [scroll-bridge](./scroll-bridge/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 32 | 2026-05-31 |
 | [scrub-money](./scrub-money/) | $7.2M | 0.0% | ? | active | 1 | 19 | 2026-06-11 |
-| [sdai](./sdai/) | $72.0M | 0.0% | ? | active | 0 | 91 | 2026-06-11 |
+| [sdai](./sdai/) | $3.3K | 0.0% | $3.3K | active | 0 | 103 | 2026-06-12 |
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 9.1% | $34.8K | dead | 5 | 99 | 2026-06-11 |
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-31 |
 | [sentiment](./sentiment/) | $64.3 | 73.3% | ? | dead | 8 | 297 | 2026-06-11 |

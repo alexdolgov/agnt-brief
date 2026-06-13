@@ -7,11 +7,11 @@
 - Project: RSK Bridge (`rsk-bridge`)
 - Website: [https://rootstock.io/](https://rootstock.io/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-31T10:30:32.424Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-13T22:58:58.719Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ab91
 - Chains: ethereum
-- Contract surface: 15 unique implementations (24 raw deployments)
-- DeFi Llama TVL: $1,026,076.82
+- Contract surface: 13 unique implementations (21 raw deployments)
+- DeFi Llama TVL: $1,026,235.32
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -25,12 +25,12 @@ The Bridge contract is the core operational contract, upgraded via AdminUpgradea
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/14 (0.0%)
-- Verified + Unaudited implementations: 14
+- Verified implementations audited: 0/12 (0.0%)
+- Verified + Unaudited implementations: 12
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 15
-- Raw deployments: 24
+- Unique implementations: 13
+- Raw deployments: 21
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -49,7 +49,7 @@ The Bridge contract is the core operational contract, upgraded via AdminUpgradea
 
 - None
 
-### ⚠️ Verified + Unaudited (14)
+### ⚠️ Verified + Unaudited (12)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -59,8 +59,6 @@ The Bridge contract is the core operational contract, upgraded via AdminUpgradea
 | Bridge_v1 | operational_periphery | ethereum | 2 deployments: ethereum [`0x8582f5...5aa5f1`](./contracts/ethereum-1/0x8582f510817731be46e6a8380cf4eeffc05aa5f1/); ethereum `0xabf8b0...92e07e` | ⚠️ Unaudited |
 | Federation | unknown | ethereum | 3 deployments: ethereum [`0x5631a6...9d76c5`](./contracts/ethereum-1/0x5631a6ac95b6bde690807085aaa70e3b2d9d76c5/); ethereum `0x5e29c2...3abe17`; ethereum `0x8c1901...3f4944` | ⚠️ Unaudited |
 | Federation_v1 | unknown | ethereum | [`0x479f86...362a2b`](./contracts/ethereum-1/0x479f86ecbe766073d2712ef418aceb56d5362a2b/) | ⚠️ Unaudited |
-| MultiSigWallet | governance | ethereum | [`0x040007...0e4138`](./contracts/ethereum-1/0x040007b1804ad78a97f541bebed377dcb60e4138/) | ⚠️ Unaudited |
-| Payroll | unknown | ethereum | 2 deployments: ethereum [`0xb005bb...6d11f0`](./contracts/ethereum-1/0xb005bb5e58878318d559561a49f0b67c616d11f0/); ethereum `0xb7ff2c...937492` | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | 2 deployments: ethereum [`0xbc4a94...d0bcbf`](./contracts/ethereum-1/0xbc4a94b0e07a8a453d382747741d4652a0d0bcbf/); ethereum `0xe4d351...51e7e6` | ⚠️ Unaudited |
 | SideToken | token | ethereum | [`0x73c084...7a498a`](./contracts/ethereum-1/0x73c08467e23f7dcb7ddbbc8d05041b74467a498a/) | ⚠️ Unaudited |
 | SideTokenFactory | registry | ethereum | 2 deployments: ethereum [`0xb3d061...7db0fa`](./contracts/ethereum-1/0xb3d06103af1a68026615e673d46047fab77db0fa/); ethereum `0xf73c60...e713fb` | ⚠️ Unaudited |
@@ -97,16 +95,25 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0x118522...cd697c`](./contracts/ethereum-1/0x118522603dc0b8490fec2b8db92e6f1c66cd697c/) | AllowTokens | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe34f95...d1426a`](./contracts/ethereum-1/0xe34f957e42a3a2b5f8a64ee367851a088bd1426a/) | Bridge_v0 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8582f5...5aa5f1`](./contracts/ethereum-1/0x8582f510817731be46e6a8380cf4eeffc05aa5f1/) | Bridge_v1 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5631a6...9d76c5`](./contracts/ethereum-1/0x5631a6ac95b6bde690807085aaa70e3b2d9d76c5/) | Federation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x479f86...362a2b`](./contracts/ethereum-1/0x479f86ecbe766073d2712ef418aceb56d5362a2b/) | Federation_v1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb3d061...7db0fa`](./contracts/ethereum-1/0xb3d06103af1a68026615e673d46047fab77db0fa/) | SideTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x578a80...bfb063`](./contracts/ethereum-1/0x578a80ad3f6d56f873da81b73b8d192ab6bfb063/) | SideTokenFactory_v1 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5f989f...0b6120`](./contracts/ethereum-1/0x5f989f2f323a1732a565c9a3f694f2fa8f0b6120/) | Utils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 9 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 15 |
+| standard_library | 2 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

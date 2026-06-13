@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "asseto-cash+",
-  "generated_at": "2026-06-10T20:58:57.787Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-13T23:00:39.502Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-ab91",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "asseto-cash+",
@@ -32,26 +32,29 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 32,
-    "unique_implementations": 2,
-    "total_deployments": 32,
+    "total_contracts": 4,
+    "total_addresses": 36,
+    "unique_implementations": 4,
+    "total_deployments": 36,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1399224.83893,
-    "tvl_usd": 1399224.83893,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "dl_tvl_usd": 1402698.8455,
+    "tvl_usd": 15349.321853226069,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 15349.32
+    },
+    "asd_usd": 15349.321853226069,
     "website_url": "https://asseto.finance/#invest",
     "chains": [
+      "bsc",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -71,7 +74,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 4,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -83,15 +86,77 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xdba395588a758c6075052e194bf5b5a88cfeefc3",
+      "name": "UniswapV3Pool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": 15349.321853226069,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV3Pool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdba395588a758c6075052e194bf5b5a88cfeefc3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 15349.321853226069,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "name": "Morpho",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Morpho",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Morpho",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x048a8afa8cf69ea53b72298d50033d1e2560b809",
       "name": "SAmMMF",
-      "role": "core_logic",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
-      "impl_address": "0xeaa41f9d01fe04ab7489daa1b57e352531d0251f",
+      "impl_address": "0xb715931f462424a6c538d12bd143db3124e97d52",
       "impl_name": "SAmMMF",
       "deployments": [
         {
@@ -372,6 +437,24 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x1775504c5873e179ea2f8abfce3861ec74d159bc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb715931f462424a6c538d12bd143db3124e97d52",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -443,7 +526,7 @@
       "chain_name": "ethereum",
       "address": "0x048a8afa8cf69ea53b72298d50033d1e2560b809",
       "name": "SAmMMF",
-      "role": "core_logic",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -451,7 +534,7 @@
   ],
   "origin_summary": {
     "native": 2,
-    "upstream": 0,
+    "upstream": 2,
     "standard_library": 0,
     "needs_review": 0
   },

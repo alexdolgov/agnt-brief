@@ -7,11 +7,11 @@
 - Project: Parasail (`parasail`)
 - Website: [https://www.parasail.network/](https://www.parasail.network/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T01:46:22.092Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-13T22:59:08.839Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ab91
 - Chains: arbitrum
 - Contract surface: 41 unique implementations (43 raw deployments)
-- DeFi Llama TVL: $3,597,668.87
+- DeFi Llama TVL: $2,692,575.52
 - On-chain TVL (included contracts): $17,207,293.45
 - TVL by chain: Arbitrum $17,207,293.45
 
@@ -123,16 +123,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| arbitrum | [`0xc87b37...9d056c`](./contracts/arbitrum-42161/0xc87b37a581ec3257b734886d9d3a581f5a9d056c/) | InterchainToken | token | $17,207,293.45 | Verified native implementation with $17,207,293.45 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 1 |
+| native | 22 |
+| upstream | 0 |
 | standard_library | 1 |
-| needs_review | 39 |
+| needs_review | 18 |
 
 ## Scope Matching Notes
 

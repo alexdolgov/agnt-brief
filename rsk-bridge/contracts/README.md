@@ -1,12 +1,11 @@
 # rsk-bridge — Contract Index
 
-15 unique implementations on ethereum · 24 deployments · 0 audited · 14 unaudited · 1 unverified
+13 unique implementations on ethereum · 21 deployments · 0 audited · 12 unaudited · 1 unverified
 
-## governance (2)
+## governance (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [MultiSigWallet](./ethereum-1/0x040007b1804ad78a97f541bebed377dcb60e4138/) | ethereum | [`0x040007...0e4138`](./ethereum-1/0x040007b1804ad78a97f541bebed377dcb60e4138/) | ⚠️ Unaudited | Verified |
 | [ProxyAdmin (2 deployments)](./ethereum-1/0xbc4a94b0e07a8a453d382747741d4652a0d0bcbf/) | ethereum | 2 deployments: ethereum [`0xbc4a94...d0bcbf`](./ethereum-1/0xbc4a94b0e07a8a453d382747741d4652a0d0bcbf/); ethereum `0xe4d351...51e7e6` | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (3)
@@ -37,12 +36,11 @@
 | [AllowTokens (3 deployments)](./ethereum-1/0x118522603dc0b8490fec2b8db92e6f1c66cd697c/) | ethereum | 3 deployments: ethereum [`0x118522...cd697c`](./ethereum-1/0x118522603dc0b8490fec2b8db92e6f1c66cd697c/); ethereum `0xa3fc98...0a15f3`; ethereum `0xe4aa0f...786653` | ⚠️ Unaudited | Verified |
 | [SideToken](./ethereum-1/0x73c08467e23f7dcb7ddbbc8d05041b74467a498a/) | ethereum | [`0x73c084...7a498a`](./ethereum-1/0x73c08467e23f7dcb7ddbbc8d05041b74467a498a/) | ⚠️ Unaudited | Verified |
 
-## unknown (5)
+## unknown (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [Federation (3 deployments)](./ethereum-1/0x5631a6ac95b6bde690807085aaa70e3b2d9d76c5/) | ethereum | 3 deployments: ethereum [`0x5631a6...9d76c5`](./ethereum-1/0x5631a6ac95b6bde690807085aaa70e3b2d9d76c5/); ethereum `0x5e29c2...3abe17`; ethereum `0x8c1901...3f4944` | ⚠️ Unaudited | Verified |
 | [Federation_v1](./ethereum-1/0x479f86ecbe766073d2712ef418aceb56d5362a2b/) | ethereum | [`0x479f86...362a2b`](./ethereum-1/0x479f86ecbe766073d2712ef418aceb56d5362a2b/) | ⚠️ Unaudited | Verified |
-| [Payroll (2 deployments)](./ethereum-1/0xb005bb5e58878318d559561a49f0b67c616d11f0/) | ethereum | 2 deployments: ethereum [`0xb005bb...6d11f0`](./ethereum-1/0xb005bb5e58878318d559561a49f0b67c616d11f0/); ethereum `0xb7ff2c...937492` | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0xe3848f...3873a6` | ❓ Unverified | Unverified |
 | [Utils](./ethereum-1/0x5f989f2f323a1732a565c9a3f694f2fa8f0b6120/) | ethereum | [`0x5f989f...0b6120`](./ethereum-1/0x5f989f2f323a1732a565c9a3f694f2fa8f0b6120/) | ⚠️ Unaudited | Verified |

@@ -92,7 +92,7 @@
 | [artura-finance](./artura-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [aspida](./aspida/) | $1.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [asseto-aoabt](./asseto-aoabt/) | $24.3M | 0.0% | ? | active | 1 | 2 | 2026-06-12 |
-| [asseto-cash+](./asseto-cash+/) | $1.4M | 0.0% | ? | declining | 1 | 2 | 2026-06-10 |
+| [asseto-cash+](./asseto-cash+/) | $15.3K | 0.0% | $15.3K | declining | 1 | 4 | 2026-06-13 |
 | [astake](./astake/) | $514.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [asymmetry](./asymmetry/) | $39.7M | 0.0% | $39.7M | declining | 0 | 209 | 2026-06-13 |
 | [atlantis-loans](./atlantis-loans/) | $42.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -767,7 +767,7 @@
 | [moonwell-apollo](./moonwell-apollo/) | $844.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [moonwell](./moonwell/) | $130.3M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [moraswap](./moraswap/) | $5.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [more-markets](./more-markets/) | $10.3M | 0.0% | ? | declining | 0 | 21 | 2026-06-12 |
+| [more-markets](./more-markets/) | $10.3M | 0.0% | ? | declining | 0 | 21 | 2026-06-13 |
 | [moremoney](./moremoney/) | $7.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [morph-bridge](./morph-bridge/) | $2.8M | 0.0% | $2.8M | active | 0 | 17 | 2026-06-12 |
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 18 | 51 | 2026-06-12 |
@@ -888,7 +888,7 @@
 | [paradex](./paradex/) | $27.3M | 50.0% | ? | declining | 5 | 5 | 2026-06-12 |
 | [paragonsdao](./paragonsdao/) | $6.4M | 50.0% | ? | active | 7 | 2 | 2026-06-11 |
 | [parallel-protocol](./parallel-protocol/) | $3.6M | 3.8% | $3.0M | active | 5 | 38 | 2026-06-11 |
-| [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-06-11 |
+| [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-06-13 |
 | [paryonusd](./paryonusd/) | $412.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [paxe-protocol](./paxe-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pay-protocol](./pay-protocol/) | $1.4M | 0.0% | ? | declining | 0 | 8 | 2026-06-11 |
@@ -1018,7 +1018,7 @@
 | [roseonx](./roseonx/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [router-protocol](./router-protocol/) | $9.9K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [royco-protocol](./royco-protocol/) | $13.0M | 0.0% | $13.0M | active | 6 | 17 | 2026-06-12 |
-| [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 15 | 2026-05-31 |
+| [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 13 | 2026-06-13 |
 | [rswap](./rswap/) | $48.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rubic](./rubic/) | $148.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ruby.exchange](./ruby.exchange/) | $151.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1182,7 +1182,7 @@
 | [surf-protocol](./surf-protocol/) | $6.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [surfswap](./surfswap/) | $117.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [sushi](./sushi/) | $96.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [suzaku](./suzaku/) | $1.2M | 0.0% | $1.2M | active | 2 | 49 | 2026-06-11 |
+| [suzaku](./suzaku/) | $1.2M | 8.3% | $1.2M | active | 2 | 52 | 2026-06-13 |
 | [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-06-11 |
 | [swamp-finance](./swamp-finance/) | $0.1 | 0.0% | $0.1 | declining | 0 | 11 | 2026-06-11 |
 | [swap.io-clmm](./swap.io-clmm/) | $2.1K | 0.0% | ? | unknown | 11 | 0 | 2026-06-13 |

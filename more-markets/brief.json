@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "more-markets",
-  "generated_at": "2026-06-12T22:37:38.569Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9d5a",
+  "generated_at": "2026-06-13T23:01:41.510Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-ab91",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "more-markets",

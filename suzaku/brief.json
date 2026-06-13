@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "suzaku",
-  "generated_at": "2026-06-11T11:58:13.518Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
+  "generated_at": "2026-06-13T23:02:07.064Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-ab91",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "suzaku",
@@ -22,39 +22,41 @@
     "drop_from_peak_pct": 88.1078406202926
   },
   "summary": {
-    "total_contracts": 49,
-    "total_addresses": 90,
-    "unique_implementations": 49,
-    "total_deployments": 90,
-    "audited_contracts": 0,
-    "unaudited_contracts": 21,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 21,
+    "total_contracts": 52,
+    "total_addresses": 105,
+    "unique_implementations": 52,
+    "total_deployments": 105,
+    "audited_contracts": 2,
+    "unaudited_contracts": 22,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 22,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 28,
-    "coverage_pct": 0,
+    "coverage_pct": 8.3,
     "total_audits": 2,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 1077442.66151,
-    "tvl_usd": 1179711.617588217,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 1077074.96116,
+    "tvl_usd": 1179921.48151766,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "avalanche": 1179711.62
+      "avalanche": 1179921.48
     },
-    "asd_usd": 1179711.617588217,
+    "asd_usd": 1179921.48151766,
     "website_url": "https://www.suzaku.network/",
     "chains": [
       "avalanche"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "tier1_coverage_pct": 8.3,
+    "tier1_auditors": [
+      "ChainSecurity"
+    ],
+    "latest_audit_date": "2024-05",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 2
+      "stale": 2,
+      "unknown": 0
     }
   },
   "topography": {
@@ -63,7 +65,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 49,
+    "unique_implementations": 52,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -93,6 +95,37 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1179711.617588217,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x9ee7478ddf586d19bd946bc4ad7f523a4bf995de",
+      "name": "AlgebraPool",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 209.8639294429849,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AlgebraPool",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x9ee7478ddf586d19bd946bc4ad7f523a4bf995de",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 209.8639294429849,
           "is_audited": false
         }
       ],
@@ -195,7 +228,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -231,6 +264,151 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
+      "address": "0x72ab674ec8fb2b2626cf48131fe34fc95075d9b5",
+      "name": "BoringVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BoringVault",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x72ab674ec8fb2b2626cf48131fe34fc95075d9b5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xdf788ad40181894da035b827cdf55c523bf52f67",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xe684f692bdf5b3b0db7e8e31a276de8a2e9f0025",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x0cec099933f0da490dff91724b02e2203faaf9af",
+      "name": "DefaultCollateral",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DefaultCollateral",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x0cec099933f0da490dff91724b02e2203faaf9af",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x1d8bd363922465246a91b7699e7b32babf5fef62",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x203e9101e09dc87ce391542e705a07522d19df0d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x51111e1f63d3341573882c0ed844e0876efd634d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x8f1dea444380a2ddc5e6669f508d235401caee5f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xa53e127bfd9c4d0310858d9d5fcdf1d2617d4c41",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xc96d4958f69db878190ec661ede04657458dce5a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xe3c983013b8c5830d866f550a28fd7ed4393d5b7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14291"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
       "address": "0xe5296638aa86bd4175d802a210e158688e41a93c",
       "name": "DefaultCollateralFactory",
       "role": "registry",
@@ -249,14 +427,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-14291"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -343,6 +523,15 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xd90a725005d529a6fda8f78dbeb8ae979d3273ef",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -388,6 +577,15 @@
           "chain_id": 43114,
           "chain_name": "avalanche",
           "address": "0xa1c16af728c7e897ddbdc15ea34b34c222438c7e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xdc1c4428f3145286f262980d36c640285c0da403",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -930,7 +1128,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -961,7 +1159,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -992,7 +1190,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1023,7 +1221,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1054,7 +1252,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1085,7 +1283,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1116,7 +1314,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1147,7 +1345,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1178,7 +1376,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1209,7 +1407,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1240,7 +1438,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1271,7 +1469,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1302,7 +1500,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1333,7 +1531,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1364,7 +1562,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1395,7 +1593,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1426,7 +1624,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1457,7 +1655,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1488,7 +1686,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1519,7 +1717,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1550,7 +1748,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1558,7 +1756,7 @@
       "address": "0xcffcba13ea63b9149ac60a62f6cd102f111ed685",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1581,7 +1779,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1612,7 +1810,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1643,7 +1841,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1674,7 +1872,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1705,7 +1903,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1736,7 +1934,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1744,7 +1942,7 @@
       "address": "0xfe9f3a8f004964d7ea843ee725ad972f0fca0cc9",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1767,7 +1965,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1892,17 +2090,26 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
-      "address": "0xce634fa642d482be2f60d1bed91414aae6e2f8ed",
+      "address": "0xc9a25f0a8436de76e999787bd509edba0d2471a2",
       "name": "VaultTokenized",
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
+      "is_proxy": true,
+      "impl_address": "0xce634fa642d482be2f60d1bed91414aae6e2f8ed",
       "impl_name": "VaultTokenized",
       "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xc9a25f0a8436de76e999787bd509edba0d2471a2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 43114,
           "chain_name": "avalanche",
@@ -1926,8 +2133,8 @@
       "address": "0x42de24a11f50e66b755056c3daa832c5cbfc1aa0",
       "name": "VestingWallet",
       "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1963,35 +2170,40 @@
   ],
   "audits": [
     {
-      "audit_id": 11693,
-      "audit_key": "audit-11693",
+      "audit_id": 14291,
+      "audit_key": "audit-14291",
       "report_name": "ChainSecurity_DefaultCollateral.pdf",
       "report_url": "https://github.com/symbioticfi/collateral/blob/main/audits/ChainSecurity_DefaultCollateral.pdf",
       "auditor": "ChainSecurity",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2024-05",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "DefaultCollateral",
+        "DefaultCollateralFactory",
+        "Factory",
+        "Permit2Lib"
+      ],
+      "matched_contracts": 9,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
-      "audit_id": 11694,
-      "audit_key": "audit-11694",
+      "audit_id": 14292,
+      "audit_key": "audit-14292",
       "report_name": "Statemind_DefaultCollateral.pdf",
       "report_url": "https://github.com/symbioticfi/collateral/blob/main/audits/Statemind_DefaultCollateral.pdf",
       "auditor": "Statemind",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2024-05",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -2005,7 +2217,15 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "ChainSecurity",
+      "tier": 1,
+      "contracts_covered": 2,
+      "coverage_pct": 8.3,
+      "latest_audit": "2024-05"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 43114,
@@ -2030,9 +2250,9 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
-      "address": "0xe5296638aa86bd4175d802a210e158688e41a93c",
-      "name": "DefaultCollateralFactory",
-      "role": "registry",
+      "address": "0x72ab674ec8fb2b2626cf48131fe34fc95075d9b5",
+      "name": "BoringVault",
+      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2180,32 +2400,42 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
-      "address": "0xce634fa642d482be2f60d1bed91414aae6e2f8ed",
+      "address": "0xc9a25f0a8436de76e999787bd509edba0d2471a2",
       "name": "VaultTokenized",
       "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x42de24a11f50e66b755056c3daa832c5cbfc1aa0",
+      "name": "VestingWallet",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 40,
+    "native": 43,
     "upstream": 0,
-    "standard_library": 3,
-    "needs_review": 6
+    "standard_library": 2,
+    "needs_review": 7
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 9
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 11693,
-        "report_name": "ChainSecurity_DefaultCollateral.pdf"
-      },
-      {
-        "audit_id": 11694,
+        "audit_id": 14292,
         "report_name": "Statemind_DefaultCollateral.pdf"
       }
     ],

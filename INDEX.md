@@ -149,6 +149,7 @@
 | [charm-finance](./charm-finance/) | $14.2K | 50.0% | $0.0 | declining | 6 | 10 | 2026-06-10 |
 | [chateau](./chateau/) | $19.1K | 33.3% | $19.1K | active | 1 | 5 | 2026-06-10 |
 | [chewyswap](./chewyswap/) | $9.5K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
+| [circuit](./circuit/) | $198.7K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [citrea-bridge](./citrea-bridge/) | $6.6M | 50.0% | ? | active | 10 | 3 | 2026-06-10 |
 | [clearpool](./clearpool/) | $17.6K | 7.1% | $17.6K | active | 7 | 63 | 2026-06-12 |
 | [clever](./clever/) | $3.2M | 10.6% | $1.6M | active | 3 | 76 | 2026-06-10 |
@@ -200,6 +201,7 @@
 | [dolomite](./dolomite/) | $664.2M | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
 | [domination-finance](./domination-finance/) | $1.2M | 75.0% | ? | active | 1 | 30 | 2026-05-25 |
 | [dooar](./dooar/) | $5.1M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
+| [drift](./drift/) | $187.9M | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [drops](./drops/) | $16.5M | 0.0% | $16.5M | declining | 0 | 77 | 2026-06-10 |
 | [dtrinity](./dtrinity/) | $1.8M | 0.0% | $1.8M | active | 5 | 209 | 2026-06-11 |
 | [dxsale](./dxsale/) | $17.9M | 0.0% | ? | active | 1 | 358 | 2026-06-12 |
@@ -251,8 +253,10 @@
 | [four.meme](./four.meme/) | $4.6M | 0.0% | ? | active | 1 | 5 | 2026-06-13 |
 | [foxify](./foxify/) | $72.6K | 0.0% | $72.6K | active | 0 | 5 | 2026-06-10 |
 | [frankencoin](./frankencoin/) | $70.0M | 80.0% | ? | active | 5 | 5 | 2026-06-10 |
+| [friend3](./friend3/) | $67.2K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 5 | 18 | 2026-06-10 |
 | [fulcrom](./fulcrom/) | $10.9M | 0.0% | ? | active | 0 | 79 | 2026-06-12 |
+| [full-sail](./full-sail/) | $481.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [gains-network](./gains-network/) | $64.7M | 0.0% | $64.7M | active | 1 | 779 | 2026-06-12 |
 | [galaxy-curation](./galaxy-curation/) | $67.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [gamma](./gamma/) | $24.3K | 27.6% | $24.3K | active | 16 | 467 | 2026-06-10 |

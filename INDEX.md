@@ -700,6 +700,7 @@
 | [squadswap](./squadswap/) | $13.0M | 63.2% | ? | active | 5 | 214 | 2026-06-11 |
 | [stable-jack](./stable-jack/) | $76.9M | 0.0% | $76.9M | active | 1 | 249 | 2026-06-11 |
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 1 | 2026-06-13 |
+| [stader](./stader/) | $229.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-06-11 |
 | [stake.link](./stake.link/) | $76.8M | 60.9% | $35.9K | active | 20 | 71 | 2026-06-11 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | active | 0 | 198 | 2026-06-12 |
@@ -718,9 +719,11 @@
 | [stratis-mstrax](./stratis-mstrax/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [sturdy](./sturdy/) | $371.2K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [stusdt](./stusdt/) | $1.9M | 0.0% | $1.9M | active | 0 | 12 | 2026-06-12 |
+| [sui-rewards-me](./sui-rewards-me/) | $1.1K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [suibridge](./suibridge/) | $34.8M | 0.0% | ? | declining | 0 | 5 | 2026-06-12 |
 | [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
 | [summer.fi](./summer.fi/) | $140.9M | 0.0% | $140.9M | declining | 6 | 484 | 2026-06-12 |
+| [sun](./sun/) | $209.3M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [sunny](./sunny/) | $2.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [superearn](./superearn/) | $295.4 | 55.6% | ? | active | 5 | 95 | 2026-06-12 |
 | [superfarm](./superfarm/) | $211.1M | 0.0% | $211.1M | declining | 0 | 49 | 2026-06-11 |
@@ -728,6 +731,7 @@
 | [superform](./superform/) | $2.0M | 19.7% | $1.9K | active | 3 | 158 | 2026-06-11 |
 | [supernova](./supernova/) | $2.1M | 48.9% | ? | declining | 1 | 47 | 2026-06-11 |
 | [surf-lending](./surf-lending/) | $4.5M | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
+| [surfswap](./surfswap/) | $117.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [suzaku](./suzaku/) | $1.2M | 0.0% | $1.2M | active | 2 | 49 | 2026-06-11 |
 | [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-06-11 |
 | [swamp-finance](./swamp-finance/) | $0.1 | 0.0% | $0.1 | declining | 0 | 11 | 2026-06-11 |
@@ -763,6 +767,7 @@
 | [thedeep](./thedeep/) | $7.0M | 0.0% | ? | active | 1 | 165 | 2026-06-13 |
 | [themis-pro](./themis-pro/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [thena](./thena/) | $208.2 | 10.2% | $208.2 | declining | 3 | 131 | 2026-05-25 |
+| [thoreum-finance](./thoreum-finance/) | $45.1K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-06-11 |
 | [thruster](./thruster/) | $113.0K | 0.0% | $113.0K | dead | 0 | 26 | 2026-06-13 |
 | [tinyman](./tinyman/) | $6.6M | 0.0% | ? | unknown | 18 | 0 | 2026-06-11 |

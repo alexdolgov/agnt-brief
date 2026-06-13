@@ -1,6 +1,6 @@
 # kine-finance — Contract Index
 
-35 unique implementations across 4 chains · 169 deployments · 0 audited · 33 unaudited · 2 unverified
+35 unique implementations across 4 chains · 170 deployments · 0 audited · 33 unaudited · 2 unverified
 
 ## core_logic (1)
 
@@ -23,7 +23,7 @@
 |---|---|---|---|---|
 | [BridgeToken (16 deployments)](./avalanche-43114/0x0378fcb44f7f673b43ee172eb42014c51de86788/) | avalanche | 16 deployments: avalanche [`0x0378fc...e86788`](./avalanche-43114/0x0378fcb44f7f673b43ee172eb42014c51de86788/); avalanche `0x0dd1cd...76eaca`; avalanche `0x1e311e...147d41`; avalanche `0x3278b9...e3407b`; avalanche `0x3c73b0...dcfa94`; avalanche `0x68ed14...8036ed`; avalanche `0x70163d...958765`; avalanche `0x7bdb2a...cd3f00`; avalanche `0x8b8c72...0796d0`; avalanche `0x95f6f7...0e604e`; avalanche `0x9e7a8d...4311ea`; avalanche `0xa7e935...0ac10d`; avalanche `0xab5f4f...877661`; avalanche `0xb65798...59608d`; avalanche `0xc23c59...d9e8e9`; avalanche `0xc43669...30fb87` | ⚠️ Unaudited | Verified |
 | [KineExchangeTreasury (4 deployments)](./bsc-56/0x1568a7f0bdf67d37dc963c345dbc4a598859eba3/) | bsc | 4 deployments: ethereum `0x545a25...763645`; bsc [`0x1568a7...59eba3`](./bsc-56/0x1568a7f0bdf67d37dc963c345dbc4a598859eba3/); polygon `0x1d903b...32a19f`; avalanche `0x6e81c7...7cfa0e` | ⚠️ Unaudited | Verified |
-| [KineOracleV2 (3 deployments)](./polygon-137/0x606627b64d71bf9337c273e97803324cc7951e30/) | polygon | 3 deployments: polygon [`0x606627...951e30`](./polygon-137/0x606627b64d71bf9337c273e97803324cc7951e30/); polygon `0xd546a5...2f9494`; avalanche `0xc903e8...0ac1b4` | ⚠️ Unaudited | Verified |
+| [KineOracleV2 (4 deployments)](./polygon-137/0x606627b64d71bf9337c273e97803324cc7951e30/) | polygon | 4 deployments: ethereum `0x9636ea...a30cc7`; polygon [`0x606627...951e30`](./polygon-137/0x606627b64d71bf9337c273e97803324cc7951e30/); polygon `0xd546a5...2f9494`; avalanche `0xc903e8...0ac1b4` | ⚠️ Unaudited | Verified |
 | [KineSimpleBridge (4 deployments)](./avalanche-43114/0x171d5c31d196fae671e95594372f049bfd0d7f28/) | avalanche | 4 deployments: ethereum `0x80b91d...42f1d2`; bsc `0xcbfef8...85f05d`; polygon `0x3d2a49...959cf4`; avalanche [`0x171d5c...0d7f28`](./avalanche-43114/0x171d5c31d196fae671e95594372f049bfd0d7f28/) | ⚠️ Unaudited | Verified |
 | [KineTreasury](./ethereum-1/0xbcb64143c3b1643a310012125fb73a6b07d3bbb7/) | ethereum | [`0xbcb641...d3bbb7`](./ethereum-1/0xbcb64143c3b1643a310012125fb73a6b07d3bbb7/) | ⚠️ Unaudited | Verified |
 | [LiquidatorWhitelist (2 deployments)](./avalanche-43114/0x96f4516a9d150574cb6d8ae3380f28f330e64ef7/) | avalanche | 2 deployments: polygon `0xc34f77...c7eb51`; avalanche [`0x96f451...e64ef7`](./avalanche-43114/0x96f4516a9d150574cb6d8ae3380f28f330e64ef7/) | ⚠️ Unaudited | Verified |

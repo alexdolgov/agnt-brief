@@ -7,13 +7,13 @@
 - Project: MANTRA DAO (`mantra-dao`)
 - Website: [https://mantrachain.io/](https://mantrachain.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T00:54:30.217Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
-- Chains: ethereum, polygon
-- Contract surface: 195 unique implementations (489 raw deployments)
-- DeFi Llama TVL: $1,744,800.24
-- On-chain TVL (included contracts): $610,988,179.17
-- TVL by chain: Ethereum $610,585,386.77 | Polygon $402,792.39
+- Generated: 2026-06-13T19:09:06.423Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-a865
+- Chains: bsc, ethereum, polygon
+- Contract surface: 195 unique implementations (506 raw deployments)
+- DeFi Llama TVL: $1,597,243.01
+- On-chain TVL (included contracts): $611,005,172.30
+- TVL by chain: Ethereum $610,585,438.77 | Polygon $402,792.39 | Bsc $16,941.14
 
 ## Project Description
 
@@ -30,14 +30,14 @@ The protocol's families share infrastructure through common token standards (e.g
 - Verified by bytecode match: 1
 - Unverified implementations: 118
 - Unique implementations: 195
-- Raw deployments: 489
+- Raw deployments: 506
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $610,988,179.17
+- ASD (verified + unaudited TVL): $611,005,172.30
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $610,988,179.17 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $611,005,172.30 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -53,7 +53,7 @@ The protocol's families share infrastructure through common token standards (e.g
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| StakingPool | core_logic | ethereum | 31 deployments: ethereum [`0x04493f...f0c63b`](./contracts/ethereum-1/0x04493f715b08dea8af77814d600bef22f1f0c63b/); ethereum `0x078a80...93f1a4`; ethereum `0x1dfdb0...fc8633`; ethereum `0x1ea973...8d2cb7`; ethereum `0x21da0e...58606d`; ethereum `0x2d0ea7...08ebfa`; ethereum `0x39621a...0cd540`; ethereum `0x456df5...8cb413`; ethereum `0x479e0f...8a897e`; ethereum `0x4cd4c0...0f94a9`; ethereum `0x4cd9eb...093f2a`; ethereum `0x4ee05c...ba8d8e`; ethereum `0x561fe2...e60a46`; ethereum `0x6ae05b...b3774b`; ethereum `0x6af368...ad3266`; ethereum `0x6bcdc6...8571a0`; ethereum `0x6ddf77...08f13e`; ethereum `0x6f0db3...c1e373`; ethereum `0x936667...e7a4fa`; ethereum `0x9e15ad...feba93`; ethereum `0xa01892...bc9802`; ethereum `0xa023d1...d49e4f`; ethereum `0xa57130...896fe2`; ethereum `0xb19b94...5400ba`; ethereum `0xb96e42...d89e0f`; ethereum `0xdbc34d...7b9349`; polygon `0x427756...dbf1f8`; polygon `0xb54792...dfe709`; polygon `0xcdd0f7...1d6ea6`; polygon `0xd1ecdc...14416e`; polygon `0xd77f49...e34c83` | ⚠️ Unaudited |
+| StakingPool | core_logic | bsc | 37 deployments: ethereum `0x04493f...f0c63b`; ethereum `0x078a80...93f1a4`; ethereum `0x1dfdb0...fc8633`; ethereum `0x1ea973...8d2cb7`; ethereum `0x21da0e...58606d`; ethereum `0x2d0ea7...08ebfa`; ethereum `0x39621a...0cd540`; ethereum `0x456df5...8cb413`; ethereum `0x479e0f...8a897e`; ethereum `0x4cd4c0...0f94a9`; ethereum `0x4cd9eb...093f2a`; ethereum `0x4ee05c...ba8d8e`; ethereum `0x561fe2...e60a46`; ethereum `0x6ae05b...b3774b`; ethereum `0x6af368...ad3266`; ethereum `0x6bcdc6...8571a0`; ethereum `0x6ddf77...08f13e`; ethereum `0x6f0db3...c1e373`; ethereum `0x936667...e7a4fa`; ethereum `0x9e15ad...feba93`; ethereum `0xa01892...bc9802`; ethereum `0xa023d1...d49e4f`; ethereum `0xa57130...896fe2`; ethereum `0xb19b94...5400ba`; ethereum `0xb96e42...d89e0f`; ethereum `0xdbc34d...7b9349`; bsc [`0x004c09...a3c354`](./contracts/bsc-56/0x004c0908518e19aa8b27a55c171564097fa3c354/); bsc `0x41a32c...853153`; bsc `0x7dd79e...45e297`; bsc `0xef2663...f5d872`; bsc `0xefc2d6...2c3c91`; bsc `0xf01855...7157a9`; polygon `0x427756...dbf1f8`; polygon `0xb54792...dfe709`; polygon `0xcdd0f7...1d6ea6`; polygon `0xd1ecdc...14416e`; polygon `0xd77f49...e34c83` | ⚠️ Unaudited |
 | OMTokenV2 | token | ethereum | [`0x3593d1...60c95d`](./contracts/ethereum-1/0x3593d125a4f7849a1b059e64f4517a86dd60c95d/) | ⚠️ Unaudited |
 | CErc20Immutable | token | ethereum | 68 deployments: ethereum [`0x004c09...a3c354`](./contracts/ethereum-1/0x004c0908518e19aa8b27a55c171564097fa3c354/); ethereum `0x01a8f0...6ed5d6`; ethereum `0x07d22c...0cfcdb`; ethereum `0x07f7c1...0da4b5`; ethereum `0x0968c9...2aa9fc`; ethereum `0x0c91f1...69b5ea`; ethereum `0x0e0055...706580`; ethereum `0x11c70c...d64a99`; ethereum `0x132e54...510419`; ethereum `0x144bdf...bdb8e1`; ethereum `0x15fcfd...7ad21e`; ethereum `0x180087...06c61d`; ethereum `0x1b6d73...ca0499`; ethereum `0x1badcb...c5ba54`; ethereum `0x1c1bb5...299b60`; ethereum `0x223f6f...520398`; ethereum `0x25942b...12b252`; ethereum `0x27d154...77c0cd`; ethereum `0x290a56...46a5d2`; ethereum `0x2dd283...3eca23`; ethereum `0x2ddfd5...1f9572`; ethereum `0x31b992...a903f7`; ethereum `0x33a9f9...5648ff`; ethereum `0x391f90...545db8`; ethereum `0x3bafa9...eacf7d`; ethereum `0x3bdbd2...14b836`; ethereum `0x3f2e9a...054e1c`; ethereum `0x49a39e...5c0bb1`; ethereum `0x4a5b82...71799d`; ethereum `0x4dd6d5...7da687`; ethereum `0x4e5097...93cc34`; ethereum `0x539879...084ce9`; ethereum `0x53bafb...7ec3bd`; ethereum `0x57a8cb...912f57`; ethereum `0x5b37c7...f5de10`; ethereum `0x5b4463...cde214`; ethereum `0x650d62...24a367`; ethereum `0x66d696...402d74`; ethereum `0x6a4e7d...9df671`; ethereum `0x7283fe...48a2bc`; ethereum `0x7a665d...9fe400`; ethereum `0x8ec3e4...8e1156`; ethereum `0x8fb35c...1de921`; ethereum `0x90ea64...b4f4be`; ethereum `0xa07be9...619e1d`; ethereum `0xa0998f...f8e873`; ethereum `0xa24c0e...8cc3c9`; ethereum `0xa3968d...ccc396`; ethereum `0xa3c540...c2287d`; ethereum `0xa6b8cb...86a2fd`; ethereum `0xa8e31a...ffabd9`; ethereum `0xaab14c...1a3ee2`; ethereum `0xab576b...eae59c`; ethereum `0xb15e13...b44e97`; ethereum `0xb3c114...67b403`; ethereum `0xb595a7...1feebe`; ethereum `0xb98f51...964f5a`; ethereum `0xc4bdaa...50ff2e`; ethereum `0xd2cc7e...09871f`; ethereum `0xd7756b...dd86c7`; ethereum `0xe3334e...1b25fa`; ethereum `0xf533c7...6ed4f0`; ethereum `0xf76cc2...22afcd`; ethereum `0xf9aea0...a51491`; ethereum `0xf9f170...7df562`; polygon `0x6929e9...2a919f`; polygon `0xd3f354...bcebf2`; polygon `0xf533c7...6ed4f0` | ⚠️ Unaudited |
 | RFuelToken | token | ethereum | [`0xaf9f54...3f36e5`](./contracts/ethereum-1/0xaf9f549774ecedbd0966c52f250acc548d3f36e5/) | ⚠️ Unaudited |
@@ -62,12 +62,12 @@ The protocol's families share infrastructure through common token standards (e.g
 | HypERC20Collateral | token | ethereum | 38 deployments: ethereum [`0x02d286...b94c94`](./contracts/ethereum-1/0x02d28685e808a962af327180ad55cee32eb94c94/); ethereum `0x08f6f4...a8008a`; ethereum `0x09aad9...a2cb53`; ethereum `0x11a483...46a0ba`; ethereum `0x13d200...8e90e5`; ethereum `0x15e897...8194c5`; ethereum `0x1f3874...7b2385`; ethereum `0x236f7c...7d5c30`; ethereum `0x2d3df4...c73e06`; ethereum `0x4222d9...01a951`; ethereum `0x4e421c...1d9269`; ethereum `0x5f3b43...1c8ad0`; ethereum `0x643582...8b5304`; ethereum `0x65ca6f...0eec31`; ethereum `0x6701d5...f3db21`; ethereum `0x70d717...588a9c`; ethereum `0x733bc1...d402ad`; ethereum `0x7d0497...30f398`; ethereum `0x817c51...64acbf`; ethereum `0x88dd52...1dc5ee`; ethereum `0x8934be...c4eb35`; ethereum `0x95fbd1...c5f58e`; ethereum `0x9dc2d9...a0512d`; ethereum `0x9e57a6...dc67ec`; ethereum `0xa6826c...72f5f5`; ethereum `0xa95d1a...bc1060`; ethereum `0xaa4bf0...fcb451`; ethereum `0xabb5e5...1ee282`; ethereum `0xb4daa7...e43958`; ethereum `0xb99603...b25f5c`; ethereum `0xbb0a70...98cd15`; ethereum `0xbcb063...234e29`; ethereum `0xcc0549...c8b1b3`; ethereum `0xe37a3e...e09ca2`; ethereum `0xe47c9d...7fc685`; ethereum `0xec0343...37190e`; ethereum `0xfa3198...d255b1`; ethereum `0xfc9f33...404b8f` | ⚠️ Unaudited |
 | StakingPoolsMigrator | core_logic | ethereum | [`0x81d387...383a5b`](./contracts/ethereum-1/0x81d387219627833452f3d615a76b2eaa71383a5b/) | ⚠️ Unaudited |
 | RoyaleToken | token | ethereum | [`0x7eaf9c...4548db`](./contracts/ethereum-1/0x7eaf9c89037e4814dc0d9952ac7f888c784548db/) | ⚠️ Unaudited |
+| AlgebraCustomPoolEntryPoint | core_logic | ethereum | 2 deployments: ethereum [`0x3012e9...bb85cb`](./contracts/ethereum-1/0x3012e9049d05b4b5369d690114d5a5861ebb85cb/); polygon `0x7779c2...ce12e8` | ⚠️ Unaudited |
 | LotteryLikePool | core_logic | ethereum | 2 deployments: ethereum [`0x1a2218...f50a91`](./contracts/ethereum-1/0x1a22188b5f6faf7253a3defcc576884c0ff50a91/); polygon `0xe5d7df...51a038` | ⚠️ Unaudited |
 | AlgebraCommunityVault | core_logic | polygon | 2 deployments: ethereum `0x8c97d1...cfe442`; polygon [`0x5da344...dbc6f9`](./contracts/polygon-137/0x5da34437a38da232094f9a17dd5c5eef92dbc6f9/) | ⚠️ Unaudited |
-| AlgebraCustomPoolEntryPoint | core_logic | polygon | [`0x7779c2...ce12e8`](./contracts/polygon-137/0x7779c2df9e64932eb63797b4aa2ea1e352ce12e8/) | ⚠️ Unaudited |
 | AlgebraEternalFarming | unknown | polygon | 2 deployments: ethereum `0x83d4a9...f93e7c`; polygon [`0x18a3dc...ad5007`](./contracts/polygon-137/0x18a3dcf6d9383486ea7b0fa5c336369aeead5007/) | ⚠️ Unaudited |
-| AlgebraFactory | registry | polygon | 6 deployments: ethereum `0x95e325...5e0b0f`; ethereum `0xd265f5...c246a7`; polygon [`0x744c31...152184`](./contracts/polygon-137/0x744c3126f6ae063e01a8156228a71d12a0152184/); polygon `0xa0d888...05fd6c`; polygon `0xb496aa...9d587f`; polygon `0xe1f7f3...c77f3b` | ⚠️ Unaudited |
-| AlgebraInterfaceMulticall | periphery | polygon | [`0xa19b72...ce1794`](./contracts/polygon-137/0xa19b72cc2490c557296c4a44c0ee765009ce1794/) | ⚠️ Unaudited |
+| AlgebraFactory | registry | ethereum | 7 deployments: ethereum [`0x3b2209...4c066d`](./contracts/ethereum-1/0x3b22094a64d3d6801a27db4e58ac0b859a4c066d/); ethereum `0x95e325...5e0b0f`; ethereum `0xd265f5...c246a7`; polygon `0x744c31...152184`; polygon `0xa0d888...05fd6c`; polygon `0xb496aa...9d587f`; polygon `0xe1f7f3...c77f3b` | ⚠️ Unaudited |
+| AlgebraInterfaceMulticall | periphery | ethereum | 2 deployments: ethereum [`0x38a5c3...7ce047`](./contracts/ethereum-1/0x38a5c36fa8c8c9e4649b51fcd61810b14e7ce047/); polygon `0xa19b72...ce1794` | ⚠️ Unaudited |
 | AlgebraLimitOrderPluginFactory | registry | polygon | [`0x36249b...0bbf33`](./contracts/polygon-137/0x36249b67938ab840197321ac609b92867b0bbf33/) | ⚠️ Unaudited |
 | AlgebraPoolDeployer | core_logic | polygon | 11 deployments: ethereum `0xfe3bec...0a88b2`; polygon [`0x2682cd...c76cad`](./contracts/polygon-137/0x2682cd4cc7c8b8b13bb31e4e3861649363c76cad/); polygon `0x2ab74d...dcac1f`; polygon `0x431fb6...150303`; polygon `0x6ce8e0...f5ecb9`; polygon `0x7a6b92...771421`; polygon `0x7e7dca...860604`; polygon `0xa2f3c4...5fd250`; polygon `0xdf4a44...051d05`; polygon `0xefdf67...f7a54c`; polygon `0xfd7cfc...2e2326` | ⚠️ Unaudited |
 | AlgebraUpgradeablePlugin | unknown | ethereum | [`0xaaa81d...57931d`](./contracts/ethereum-1/0xaaa81db3cb943c20b032d16d9cbf471a3757931d/) | ⚠️ Unaudited |
@@ -98,8 +98,8 @@ The protocol's families share infrastructure through common token standards (e.g
 | ManagerRole | governance | ethereum | [`0xab452a...5bf363`](./contracts/ethereum-1/0xab452a7eb5e5345669cb33140f0cb0d55f5bf363/) | ⚠️ Unaudited |
 | MevxPluginImplementation | unknown | polygon | 3 deployments: polygon [`0x14cf44...bd3ee6`](./contracts/polygon-137/0x14cf4464bfd5638b1e0ddabb51fc85198ebd3ee6/); polygon `0x480b4b...144d68`; polygon `0x9d6118...54f0e7` | ⚠️ Unaudited |
 | Multicall3 | periphery | ethereum | 2 deployments: ethereum [`0xca11bd...76ca11`](./contracts/ethereum-1/0xca11bde05977b3631167028862be2a173976ca11/); polygon [`0xca11bd...76ca11`](./contracts/polygon-137/0xca11bde05977b3631167028862be2a173976ca11/) | ⚠️ Unaudited |
-| NonfungiblePositionManager | governance | polygon | 2 deployments: polygon [`0x6cd7dc...2c1cba`](./contracts/polygon-137/0x6cd7dcd88f3994e57557690d20d20105b72c1cba/); polygon `0x7f71e9...fe6fb3` | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptor | token | ethereum | [`0xabac6f...d32990`](./contracts/ethereum-1/0xabac6f23fdf1313fc2e9c9244f666157ccd32990/) | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | ethereum | 3 deployments: ethereum [`0x28ded2...abe449`](./contracts/ethereum-1/0x28ded2af752655df5ee92450dc259f92a5abe449/); polygon `0x6cd7dc...2c1cba`; polygon `0x7f71e9...fe6fb3` | ⚠️ Unaudited |
+| NonfungibleTokenPositionDescriptor | token | ethereum | 2 deployments: ethereum [`0x49be8a...435596`](./contracts/ethereum-1/0x49be8aa6c684b15e0c5450e8fa0b16bec1435596/); ethereum `0xabac6f...d32990` | ⚠️ Unaudited |
 | OMGrantsEscrow | operational_periphery | ethereum | [`0xc8899d...a1e1d7`](./contracts/ethereum-1/0xc8899da25423ac52aa711b97ae04c8888fa1e1d7/) | ⚠️ Unaudited |
 | OMPrivateEscrow | operational_periphery | ethereum | [`0x649402...90817b`](./contracts/ethereum-1/0x649402f07f32d87e2f7c9c2ac24503cd1690817b/) | ⚠️ Unaudited |
 | OMReferralsEscrow | operational_periphery | ethereum | [`0x206fdb...bc970d`](./contracts/ethereum-1/0x206fdbcfffabb3d186d1581f5d6a1ef78fbc970d/) | ⚠️ Unaudited |
@@ -119,7 +119,7 @@ The protocol's families share infrastructure through common token standards (e.g
 | SecurityRegistry | registry | ethereum | 3 deployments: ethereum [`0x7b4553...da15bd`](./contracts/ethereum-1/0x7b4553a35d3020064cb464a8d75a4735ffda15bd/); ethereum `0xe94de0...c09bc7`; polygon `0x827da8...1d25df` | ⚠️ Unaudited |
 | SingletonFactory | registry | ethereum | 2 deployments: ethereum [`0xce0042...fdcf9f`](./contracts/ethereum-1/0xce0042b868300000d44a59004da54a005ffdcf9f/); polygon [`0xce0042...fdcf9f`](./contracts/polygon-137/0xce0042b868300000d44a59004da54a005ffdcf9f/) | ⚠️ Unaudited |
 | StakingFactory | registry | ethereum | [`0x2cb5b9...c37f59`](./contracts/ethereum-1/0x2cb5b9af0c307b931d2942f99a20eadeadc37f59/) | ⚠️ Unaudited |
-| SwapRouter | adapter | ethereum | 2 deployments: ethereum [`0x888b03...ea39ed`](./contracts/ethereum-1/0x888b035e6f64b1c1aebcd6ddf0c9fd7aebea39ed/); polygon `0xf36250...d9bed0` | ⚠️ Unaudited |
+| SwapRouter | adapter | ethereum | 3 deployments: ethereum [`0x50fcbf...5d27ba`](./contracts/ethereum-1/0x50fcbf85d23af7c91f94842fecd83d16665d27ba/); ethereum `0x888b03...ea39ed`; polygon `0xf36250...d9bed0` | ⚠️ Unaudited |
 | TickLens | periphery | polygon | 6 deployments: ethereum `0x6ad6a4...f8bf5f`; polygon [`0x32e3f4...e1ecf3`](./contracts/polygon-137/0x32e3f485696b2c6dbbc5c83a5cb803af72e1ecf3/); polygon `0x3b2209...4c066d`; polygon `0x4b194d...a69aa3`; polygon `0xa278e7...07b2f9`; polygon `0xd9a0ff...9d78ae` | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | polygon | 2 deployments: polygon [`0x2a6a7f...c89e53`](./contracts/polygon-137/0x2a6a7f70ce367517a64975bc37cc3c7b37c89e53/); polygon `0x886ab8...94b6e6` | ⚠️ Unaudited |
 | UniswapInterfaceMulticall | periphery | polygon | [`0x13fce0...d31415`](./contracts/polygon-137/0x13fce0acbe6fb11641ab753212550574cad31415/) | ⚠️ Unaudited |
@@ -142,7 +142,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| UniStakingSyntheticToken | token | ethereum | 33 deployments: ethereum [`0x09ea94...1def6e`](./contracts/ethereum-1/0x09ea9486f992643a1a3ee10f87e5a28c7d1def6e/); ethereum `0x18ba98...0a899c`; ethereum `0x1eaeca...0f26bd`; ethereum `0x21436e...1af7b3`; ethereum `0x2fd419...b4fa2e`; ethereum `0x3dd713...3e426c`; ethereum `0x404c36...ed91dd`; ethereum `0x4307b5...04af13`; ethereum `0x4d081f...b36b3b`; ethereum `0x55e0f2...fc2647`; ethereum `0x5b836d...1618fe`; ethereum `0x5f81a9...c6121d`; ethereum `0x640678...4a841d`; ethereum `0x689bf1...6dc8fb`; ethereum `0x756bab...2fa876`; ethereum `0x7c8212...14d333`; ethereum `0x8a2a1a...74bcfe`; ethereum `0x8ce6bc...388339`; ethereum `0x91fe14...e1a23f`; ethereum `0x9fd386...f244f9`; ethereum `0xa335f7...ef0a5a`; ethereum `0xb12f0c...2f12f2`; ethereum `0xe2a80a...408201`; ethereum `0xeb6082...be04e0`; ethereum `0xeceb2e...f34b1c`; ethereum `0xfc8e3b...58fc8a`; ethereum `0xff964d...712ee5`; polygon `0x11c70c...d64a99`; polygon `0x55e1ff...adb14c`; polygon `0x92fce8...c39356`; polygon `0xc552de...7f9d5f`; polygon `0xcbf42a...26014d`; polygon `0xf02972...5448bc` | ⚠️ Unaudited (bytecode match) |
+| UniStakingSyntheticToken | token | ethereum | 38 deployments: ethereum [`0x09ea94...1def6e`](./contracts/ethereum-1/0x09ea9486f992643a1a3ee10f87e5a28c7d1def6e/); ethereum `0x18ba98...0a899c`; ethereum `0x1eaeca...0f26bd`; ethereum `0x21436e...1af7b3`; ethereum `0x2fd419...b4fa2e`; ethereum `0x3dd713...3e426c`; ethereum `0x404c36...ed91dd`; ethereum `0x4307b5...04af13`; ethereum `0x4d081f...b36b3b`; ethereum `0x55e0f2...fc2647`; ethereum `0x5b836d...1618fe`; ethereum `0x5f81a9...c6121d`; ethereum `0x640678...4a841d`; ethereum `0x689bf1...6dc8fb`; ethereum `0x756bab...2fa876`; ethereum `0x7c8212...14d333`; ethereum `0x8a2a1a...74bcfe`; ethereum `0x8ce6bc...388339`; ethereum `0x91fe14...e1a23f`; ethereum `0x9fd386...f244f9`; ethereum `0xa335f7...ef0a5a`; ethereum `0xb12f0c...2f12f2`; ethereum `0xe2a80a...408201`; ethereum `0xeb6082...be04e0`; ethereum `0xeceb2e...f34b1c`; ethereum `0xfc8e3b...58fc8a`; ethereum `0xff964d...712ee5`; bsc `0x4f905f...696090`; bsc `0x92fce8...c39356`; bsc `0xcbf42a...26014d`; bsc `0xd86286...6f2fac`; bsc `0xf25897...73805b`; polygon `0x11c70c...d64a99`; polygon `0x55e1ff...adb14c`; polygon `0x92fce8...c39356`; polygon `0xc552de...7f9d5f`; polygon `0xcbf42a...26014d`; polygon `0xf02972...5448bc` | ⚠️ Unaudited (bytecode match) |
 
 ### ❓ Unverified (118)
 
@@ -281,9 +281,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x04493f...f0c63b`](./contracts/ethereum-1/0x04493f715b08dea8af77814d600bef22f1f0c63b/) | StakingPool | core_logic | $539,648,898.16 | Verified native implementation with $539,648,898.16 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x004c09...a3c354`](./contracts/bsc-56/0x004c0908518e19aa8b27a55c171564097fa3c354/) | StakingPool | core_logic | $539,665,839.29 | Verified native implementation with $539,665,839.29 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3593d1...60c95d`](./contracts/ethereum-1/0x3593d125a4f7849a1b059e64f4517a86dd60c95d/) | OMTokenV2 | token | $59,396,154.75 | Verified native implementation with $59,396,154.75 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x004c09...a3c354`](./contracts/ethereum-1/0x004c0908518e19aa8b27a55c171564097fa3c354/) | CErc20Immutable | token | $11,126,822.73 | Verified native implementation with $11,126,822.73 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xaf9f54...3f36e5`](./contracts/ethereum-1/0xaf9f549774ecedbd0966c52f250acc548d3f36e5/) | RFuelToken | token | $252,769.87 | Verified native implementation with $252,769.87 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x3f6b35...db3f47`](./contracts/polygon-137/0x3f6b3595ecf70735d3f48d69b09c4e4506db3f47/) | GameStationToken | token | $173,296.00 | Verified native implementation with $173,296.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x81d387...383a5b`](./contracts/ethereum-1/0x81d387219627833452f3d615a76b2eaa71383a5b/) | StakingPoolsMigrator | core_logic | $40,230.68 | Verified native implementation with $40,230.68 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
@@ -292,12 +291,8 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x1a2218...f50a91`](./contracts/ethereum-1/0x1a22188b5f6faf7253a3defcc576884c0ff50a91/) | LotteryLikePool | core_logic | $0.67 | Verified native implementation with $0.67 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x36249b...0bbf33`](./contracts/polygon-137/0x36249b67938ab840197321ac609b92867b0bbf33/) | AlgebraLimitOrderPluginFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x37a495...0e70e7`](./contracts/ethereum-1/0x37a4950b4ea0c46596404895c5027b088b0e70e7/) | AlmPluginImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x89d065...eb0b76`](./contracts/polygon-137/0x89d065572136814230a55ddeeddec9df34eb0b76/) | AutoFarmV2_CrossChain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x297311...efb621`](./contracts/ethereum-1/0x297311868fc2f0a30f0d433590ef2ac736efb621/) | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x5a55c7...cce8e4`](./contracts/polygon-137/0x5a55c731b73b325f7df53a013529267f79cce8e4/) | CErc20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x004c09...a3c354`](./contracts/polygon-137/0x004c0908518e19aa8b27a55c171564097fa3c354/) | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd79abd...a63e4d`](./contracts/ethereum-1/0xd79abd6d4519c7142b5ad6afedda5bd93ca63e4d/) | Distribution | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf2a0bc...c78018`](./contracts/ethereum-1/0xf2a0bc44debd394076c67962bb4869fd43c78018/) | DynamicFeePluginImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x49a390...87d228`](./contracts/ethereum-1/0x49a390a3dfd2d01389f799965f3af5961f87d228/) | FarmingProxyPluginImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x23fa6e...2e6e83`](./contracts/polygon-137/0x23fa6ed4d1c6c14dafc1217700a4d5b6f42e6e83/) | FeeDiscountRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x068ecd...347d6e`](./contracts/ethereum-1/0x068ecd782a4164a768c9e75ecd8c0b09c8347d6e/) | FixedSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -312,7 +307,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x7a47a5...ac2c69`](./contracts/ethereum-1/0x7a47a54233cb9826410b9187bf450b9f5bac2c69/) | OMStakingRewardsEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xba028d...f8e34b`](./contracts/ethereum-1/0xba028dad0c8adc0e5941b244ecd5fad2dff8e34b/) | OMTeamEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xe4ff95...e4b723`](./contracts/ethereum-1/0xe4ff95557f9aba07507ac0851a54c1244be4b723/) | OMV1ToV2Migrator | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdef1da...23116d`](./contracts/ethereum-1/0xdef1da03061ddd2a5ef6c59220c135dec623116d/) | PrimeDeployable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xfdc4ca...71172c`](./contracts/ethereum-1/0xfdc4ca4f70c59d3cd306beb3ecd83b1d1c71172c/) | RoyaleLP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x448cb1...c8e77e`](./contracts/ethereum-1/0x448cb15b00ced3ac47467e33493d602f34c8e77e/) | RoyaUserToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1b3b62...bb6f11`](./contracts/ethereum-1/0x1b3b62b519a60e8927d4ffbb54681871e1bb6f11/) | SecurityPluginImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -327,10 +321,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 65 |
-| upstream | 23 |
+| native | 47 |
+| upstream | 27 |
 | standard_library | 14 |
-| needs_review | 93 |
+| needs_review | 107 |
 
 ## Scope Matching Notes
 

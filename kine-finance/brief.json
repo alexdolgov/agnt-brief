@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kine-finance",
-  "generated_at": "2026-06-11T00:23:05.088Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
+  "generated_at": "2026-06-13T18:57:34.794Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-a865",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "kine-finance",
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 35,
-    "total_addresses": 169,
+    "total_addresses": 170,
     "unique_implementations": 35,
-    "total_deployments": 169,
+    "total_deployments": 170,
     "audited_contracts": 0,
     "unaudited_contracts": 33,
     "contracts_verified_audited": 0,
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1094539.1037900003,
+    "dl_tvl_usd": 964569.5518499999,
     "tvl_usd": 351759213.95562977,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -1182,7 +1182,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1213,7 +1213,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 56,
@@ -1302,7 +1302,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -1385,6 +1385,15 @@
       "impl_address": null,
       "impl_name": "KineOracleV2",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9636ea80329b4f0fc5af2506b12242c023a30cc7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 137,
           "chain_name": "polygon",
@@ -1623,7 +1632,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -2282,8 +2291,8 @@
       "address": "0x9e8e622e0ba0dee491fbc42d1bb12ab947e2d03b",
       "name": "Timelock",
       "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -2682,12 +2691,22 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9e8e622e0ba0dee491fbc42d1bb12ab947e2d03b",
+      "name": "Timelock",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 33,
+    "native": 34,
     "upstream": 0,
-    "standard_library": 1,
+    "standard_library": 0,
     "needs_review": 1
   },
   "scope_matching_notes": {

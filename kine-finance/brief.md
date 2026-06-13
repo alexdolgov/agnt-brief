@@ -6,11 +6,11 @@
 
 - Project: Kine Finance (`kine-finance`)
 - Lifecycle: declining (Tier 0, 95.8% below peak)
-- Generated: 2026-06-11T00:23:05.088Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-13T18:57:34.794Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-a865
 - Chains: avalanche, bsc, ethereum, polygon
-- Contract surface: 35 unique implementations (169 raw deployments)
-- DeFi Llama TVL: $1,094,539.10
+- Contract surface: 35 unique implementations (170 raw deployments)
+- DeFi Llama TVL: $964,569.55
 - On-chain TVL (included contracts): $351,759,213.96
 - TVL by chain: Bsc $351,326,734.28 | Ethereum $431,496.22 | Polygon $983.05 | Avalanche $0.41
 
@@ -29,7 +29,7 @@ The protocol consists of a single product family where Unitroller proxies delega
 - Verified by bytecode match: 0
 - Unverified implementations: 2
 - Unique implementations: 35
-- Raw deployments: 169
+- Raw deployments: 170
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $351,759,213.96
@@ -67,7 +67,7 @@ The protocol consists of a single product family where Unitroller proxies delega
 | KineExchangeTreasury | operational_periphery | bsc | 4 deployments: ethereum `0x545a25...763645`; bsc [`0x1568a7...59eba3`](./contracts/bsc-56/0x1568a7f0bdf67d37dc963c345dbc4a598859eba3/); polygon `0x1d903b...32a19f`; avalanche `0x6e81c7...7cfa0e` | ⚠️ Unaudited |
 | KineMarket | unknown | avalanche | [`0xca13ea...f9bd8d`](./contracts/avalanche-43114/0xca13ea4111cd5c86721b657e666eede2e4f9bd8d/) | ⚠️ Unaudited |
 | KineMultiSigWallet | governance | avalanche | 5 deployments: ethereum `0xa6e17a...330191`; ethereum `0xbfa9df...752d7f`; bsc `0x6534af...a0446c`; polygon `0xa8c2a4...757198`; avalanche [`0x21e927...cdfac1`](./contracts/avalanche-43114/0x21e9276be3aff3113196423659dc01c9f6cdfac1/) | ⚠️ Unaudited |
-| KineOracleV2 | operational_periphery | polygon | 3 deployments: polygon [`0x606627...951e30`](./contracts/polygon-137/0x606627b64d71bf9337c273e97803324cc7951e30/); polygon `0xd546a5...2f9494`; avalanche `0xc903e8...0ac1b4` | ⚠️ Unaudited |
+| KineOracleV2 | operational_periphery | polygon | 4 deployments: ethereum `0x9636ea...a30cc7`; polygon [`0x606627...951e30`](./contracts/polygon-137/0x606627b64d71bf9337c273e97803324cc7951e30/); polygon `0xd546a5...2f9494`; avalanche `0xc903e8...0ac1b4` | ⚠️ Unaudited |
 | KineProtocolHelper | periphery | avalanche | 2 deployments: polygon `0xcb46bf...c5db70`; avalanche [`0x39d1c9...d6b06f`](./contracts/avalanche-43114/0x39d1c99a244aa02502defc109e6f2d88efd6b06f/) | ⚠️ Unaudited |
 | KineRanch | unknown | polygon | 4 deployments: ethereum `0xa8d764...9cc692`; bsc `0x9e8e62...e2d03b`; polygon [`0x66a782...7adeda`](./contracts/polygon-137/0x66a782c9a077f5adc988cc0b5fb1cdcc9d7adeda/); avalanche `0x68b973...aa3e47` | ⚠️ Unaudited |
 | KineSimpleBridge | operational_periphery | avalanche | 4 deployments: ethereum `0x80b91d...42f1d2`; bsc `0xcbfef8...85f05d`; polygon `0x3d2a49...959cf4`; avalanche [`0x171d5c...0d7f28`](./contracts/avalanche-43114/0x171d5c31d196fae671e95594372f049bfd0d7f28/) | ⚠️ Unaudited |
@@ -149,14 +149,15 @@ Verified + unaudited native implementations ranked by TVL:
 | avalanche | [`0xabdbd0...1785c8`](./contracts/avalanche-43114/0xabdbd0461ba9ffb0a4ed5cb210866f50ce1785c8/) | OracleHelper | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xea4c9c...8909e9`](./contracts/ethereum-1/0xea4c9c6249a05b6abd4aede99a185b03948909e9/) | RewardClaimer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x108dbe...5f4e81`](./contracts/avalanche-43114/0x108dbee7fbc3a774b97628356edbb606815f4e81/) | StakingRewardsV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9e8e62...e2d03b`](./contracts/ethereum-1/0x9e8e622e0ba0dee491fbc42d1bb12ab947e2d03b/) | Timelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 33 |
+| native | 34 |
 | upstream | 0 |
-| standard_library | 1 |
+| standard_library | 0 |
 | needs_review | 1 |
 
 ## Scope Matching Notes

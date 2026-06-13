@@ -94,7 +94,7 @@
 | [asseto-aoabt](./asseto-aoabt/) | $24.3M | 0.0% | ? | active | 1 | 2 | 2026-06-12 |
 | [asseto-cash+](./asseto-cash+/) | $1.4M | 0.0% | ? | declining | 1 | 2 | 2026-06-10 |
 | [astake](./astake/) | $514.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [asymmetry](./asymmetry/) | $37.1M | 0.0% | $37.1M | declining | 0 | 203 | 2026-06-10 |
+| [asymmetry](./asymmetry/) | $39.7M | 0.0% | $39.7M | declining | 0 | 209 | 2026-06-13 |
 | [atlantis-loans](./atlantis-loans/) | $42.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [atlantis](./atlantis/) | $13.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [atlendis](./atlendis/) | $4.3M | 14.3% | $4.3M | active | 2 | 43 | 2026-06-11 |
@@ -359,7 +359,7 @@
 | [drift](./drift/) | $187.9M | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [drops](./drops/) | $16.5M | 0.0% | $16.5M | declining | 0 | 77 | 2026-06-10 |
 | [dsf.finance](./dsf.finance/) | $477.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [dtrinity](./dtrinity/) | $1.8M | 0.0% | $1.8M | active | 5 | 209 | 2026-06-11 |
+| [dtrinity](./dtrinity/) | $1.8M | 18.0% | $1.7M | active | 5 | 209 | 2026-06-13 |
 | [dtx](./dtx/) | $5.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dungeonswap](./dungeonswap/) | $28.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dxsale](./dxsale/) | $17.9M | 0.0% | ? | active | 1 | 358 | 2026-06-12 |
@@ -611,13 +611,13 @@
 | [kava-mint](./kava-mint/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-06-12 |
 | [kawaiiswap](./kawaiiswap/) | $798.7 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [keep-network](./keep-network/) | $25.5M | 7.9% | $24.7M | declining | 18 | 225 | 2026-06-11 |
-| [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | declining | 1 | 480 | 2026-06-11 |
+| [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | declining | 1 | 480 | 2026-06-13 |
 | [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 0 | 4 | 2026-06-11 |
 | [keiko-finance](./keiko-finance/) | $45.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [keom-protocol](./keom-protocol/) | $115.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [keyring](./keyring/) | $6.2M | 17.0% | ? | active | 16 | 73 | 2026-06-13 |
 | [kiloex](./kiloex/) | $5.7M | 14.3% | ? | active | 10 | 110 | 2026-06-11 |
-| [kine-finance](./kine-finance/) | $351.8M | 0.0% | $351.8M | declining | 0 | 35 | 2026-06-11 |
+| [kine-finance](./kine-finance/) | $351.8M | 0.0% | $351.8M | declining | 0 | 35 | 2026-06-13 |
 | [kinetic](./kinetic/) | $59.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [king-protocol](./king-protocol/) | $1.5M | 60.0% | ? | active | 4 | 16 | 2026-06-11 |
 | [kingdefi](./kingdefi/) | $35.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -707,7 +707,7 @@
 | [manta-pacific](./manta-pacific/) | $21.1M | 0.0% | ? | active | 0 | 12 | 2026-06-12 |
 | [mantisswap](./mantisswap/) | $182.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [mantle-restaking](./mantle-restaking/) | $60.9M | 59.1% | ? | declining | 13 | 25 | 2026-06-12 |
-| [mantra-dao](./mantra-dao/) | $611.0M | 0.0% | $611.0M | declining | 1 | 195 | 2026-06-11 |
+| [mantra-dao](./mantra-dao/) | $611.0M | 0.0% | $611.0M | declining | 1 | 195 | 2026-06-13 |
 | [margin-zero](./margin-zero/) | $21.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [margined-protocol](./margined-protocol/) | $265.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [marginly](./marginly/) | $0.0 | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |

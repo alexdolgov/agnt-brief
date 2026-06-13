@@ -13,7 +13,7 @@ Each project directory contains:
 |---|---:|---|---:|---|---:|---|---:|---|---|---:|
 | [cream-finance](./cream-finance/brief.md) | $1.32M | 4 | 95 | 63/95 (66%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $2280.01M |
 | [reservoir-protocol](./reservoir-protocol/brief.md) | $63.12M | 9 | 278 | 265/278 (95%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2082.66M |
-| [keep3r-network](./keep3r-network/brief.md) | $3.67M | ethereum | 480 | 367/480 (76%) | 0.3% | 0.0% (-) | 1 | stale | ⚠️ declining | $2070.48M |
+| [keep3r-network](./keep3r-network/brief.md) | $3.58M | ethereum | 480 | 368/480 (77%) | 0.3% | 0.0% (-) | 1 | stale | ⚠️ declining | $2070.48M |
 | [zyfai](./zyfai/brief.md) | $4.74M | 5 | 106 | 100/106 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1821.98M |
 | [angle](./angle/brief.md) | $2.04M | 8 | 558 | 295/558 (53%) | 2.4% | 0.0% (-) | 2 | stale | ⚠️ declining | $1398.01M |
 | [singularv](./singularv/brief.md) | $2.54M | ethereum | 83 | 70/83 (84%) | 11.4% | 11.4% (ChainSecurity, Spearbit) | 5 | stale | ⚠️ declining | $1083.21M |
@@ -21,7 +21,7 @@ Each project directory contains:
 | [planet](./planet/brief.md) | $1.82M | bsc | 34 | 26/34 (76%) | 7.7% | 0.0% (-) | 1 | stale | ⚠️ declining | $778.29M |
 | [volta-club](./volta-club/brief.md) | $286.90K | 5 | 305 | 167/305 (55%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $777.26M |
 | [bracket-protocol](./bracket-protocol/brief.md) | $3.08M | arbitrum, ethereum | 58 | 46/58 (79%) | 17.4% | 0.0% (-) | 4 | fresh | ✅ active | $619.35M |
-| [mantra-dao](./mantra-dao/brief.md) | $1.74M | ethereum, polygon | 195 | 76/195 (39%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $610.99M |
+| [mantra-dao](./mantra-dao/brief.md) | $1.60M | bsc, ethereum, polygon | 195 | 76/195 (39%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $611.01M |
 | [sigma-money](./sigma-money/brief.md) | $2.83M | bsc | 235 | 192/235 (82%) | 18.8% | 17.7% (SlowMist) | 10 | fresh | ✅ active | $592.98M |
 | [trevee-earn](./trevee-earn/brief.md) | $1.15M | ethereum, plasma, sonic | 15 | 14/15 (93%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $582.18M |
 | [trust-wallet](./trust-wallet/brief.md) | $32.63M | bsc | 14 | 12/14 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $470.24M |
@@ -29,7 +29,7 @@ Each project directory contains:
 | [inverse-finance](./inverse-finance/brief.md) | $41.93M | 5 | 154 | 144/154 (94%) | 11.1% | 7.6% (Code4rena, Sherlock) | 5 | fresh | ✅ active | $428.77M |
 | [starknet-btc-staking](./starknet-btc-staking/brief.md) | $54.42M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | $412.19M |
 | [onyx](./onyx/brief.md) | $46.62M | ethereum | 17 | 15/17 (88%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $384.43M |
-| [kine-finance](./kine-finance/brief.md) | $1.09M | 4 | 35 | 33/35 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $351.76M |
+| [kine-finance](./kine-finance/brief.md) | $964.57K | 4 | 35 | 33/35 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $351.76M |
 | [alchemix](./alchemix/brief.md) | $37.88M | 4 | 388 | 202/388 (52%) | 6.4% | 1.0% (Spearbit) | 6 | fresh | ✅ active | $338.70M |
 | [tenderize](./tenderize/brief.md) | $1.10M | arbitrum, ethereum | 43 | 38/43 (88%) | 2.6% | 0.0% (-) | 2 | stale | ⚠️ declining | $332.49M |
 | [zerolend](./zerolend/brief.md) | $13.19M | 7 | 614 | 383/614 (62%) | 9.2% | 0.0% (-) | 3 | stale | ⚠️ declining | $331.69M |
@@ -110,8 +110,8 @@ Each project directory contains:
 | [overtime](./overtime/brief.md) | $2.07M | 5 | 201 | 141/201 (70%) | 13.1% | 0.0% (-) | 8 | aging | ⚠️ declining | $42.53M |
 | [yuzu-money](./yuzu-money/brief.md) | $48.95M | plasma | 9 | 9/9 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $41.02M |
 | [illuvium](./illuvium/brief.md) | $6.88M | ethereum | 21 | 19/21 (90%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $39.76M |
+| [asymmetry](./asymmetry/brief.md) | $2.82M | base, ethereum | 209 | 126/209 (60%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $39.68M |
 | [grvt](./grvt/brief.md) | $51.18M | ethereum | 12 | 12/12 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $39.14M |
-| [asymmetry](./asymmetry/brief.md) | $3.56M | ethereum | 203 | 120/203 (59%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $37.15M |
 | [ichi](./ichi/brief.md) | $10.70M | 18 | 616 | 112/616 (18%) | 0.9% | 0.0% (-) | 1 | stale | ✅ active | $36.12M |
 | [snowbank](./snowbank/brief.md) | $3.74M | avalanche | 12 | 12/12 (100%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $36.05M |
 | [katana-pre-launch](./katana-pre-launch/brief.md) | $17.49M | base, ethereum | 174 | 105/174 (60%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $35.48M |
@@ -237,7 +237,7 @@ Each project directory contains:
 | [xwin-finance](./xwin-finance/brief.md) | $4.94M | arbitrum, bsc, polygon | 19 | 18/19 (95%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $1.84M |
 | [meeds-finance](./meeds-finance/brief.md) | $1.69M | ethereum | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $1.84M |
 | [treehouse-protocol](./treehouse-protocol/brief.md) | $87.67M | ethereum | 77 | 68/77 (88%) | 42.6% | 16.2% (Trail of Bits) | 16 | fresh | ⚠️ declining | $1.80M |
-| [dtrinity](./dtrinity/brief.md) | $2.30M | ethereum, fraxtal, sonic | 209 | 88/209 (42%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.76M |
+| [dtrinity](./dtrinity/brief.md) | $2.30M | ethereum, fraxtal, sonic | 209 | 88/209 (42%) | 18.0% | 0.0% (-) | 1 | unknown | ✅ active | $1.73M |
 | [eventum-bridge](./eventum-bridge/brief.md) | $2.82M | arbitrum, ethereum | 28 | 26/28 (93%) | 3.8% | 0.0% (-) | 1 | fresh | ✅ active | $1.64M |
 | [clever](./clever/brief.md) | $5.61M | ethereum | 76 | 66/76 (87%) | 10.6% | 0.0% (-) | 3 | stale | ✅ active | $1.59M |
 | [sqd.ai](./sqd.ai/brief.md) | $23.18M | 4 | 28 | 25/28 (89%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $1.58M |
@@ -1419,5 +1419,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-13T18:01:09.514Z_
+_Generated: 2026-06-13T19:17:04.568Z_
 _Projects: 1407_

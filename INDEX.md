@@ -298,6 +298,7 @@
 | [goldstation](./goldstation/) | $2.2M | 0.0% | ? | active | 3 | 5 | 2026-06-10 |
 | [gondi](./gondi/) | $35.6 | 20.0% | $35.6 | active | 2 | 30 | 2026-06-11 |
 | [goose](./goose/) | $1.6K | 0.0% | $1.6K | active | 0 | 11 | 2026-06-12 |
+| [goosefx](./goosefx/) | $1.5K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [goplus-security](./goplus-security/) | $65.3 | 0.0% | $65.3 | active | 0 | 34 | 2026-06-12 |
 | [gravity-bridge](./gravity-bridge/) | $91.3M | 0.0% | $91.3M | active | 0 | 117 | 2026-06-12 |
 | [gro](./gro/) | $5.0M | 0.0% | $5.0M | declining | 0 | 134 | 2026-06-13 |
@@ -355,11 +356,13 @@
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-06-12 |
 | [ink-bridge](./ink-bridge/) | $59.3M | 44.0% | ? | active | 17 | 68 | 2026-06-11 |
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 65 | 2026-06-13 |
+| [interest-protocol](./interest-protocol/) | $1.3M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [intuition](./intuition/) | $0.0 | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | active | 7 | 154 | 2026-06-11 |
 | [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-06-11 |
 | [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 39 | 2026-06-11 |
 | [iq](./iq/) | $23.9M | 0.0% | $23.9M | active | 0 | 2 | 2026-06-11 |
+| [ithaca-protocol](./ithaca-protocol/) | $12.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | declining | 0 | 181 | 2026-06-11 |
 | [jito](./jito/) | $642.5M | 0.0% | ? | unknown | 15 | 0 | 2026-06-13 |
 | [jones-dao](./jones-dao/) | $519.7M | 0.0% | $519.7M | active | 5 | 502 | 2026-06-11 |
@@ -376,6 +379,7 @@
 | [keep-network](./keep-network/) | $25.5M | 7.9% | $24.7M | declining | 18 | 225 | 2026-06-11 |
 | [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | declining | 1 | 480 | 2026-06-11 |
 | [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 0 | 4 | 2026-06-11 |
+| [keiko-finance](./keiko-finance/) | $45.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [keyring](./keyring/) | $6.2M | 17.0% | ? | active | 16 | 73 | 2026-06-13 |
 | [kiloex](./kiloex/) | $5.7M | 14.3% | ? | active | 10 | 110 | 2026-06-11 |
 | [kine-finance](./kine-finance/) | $351.8M | 0.0% | $351.8M | declining | 0 | 35 | 2026-06-11 |
@@ -383,6 +387,7 @@
 | [king-protocol](./king-protocol/) | $1.5M | 60.0% | ? | active | 4 | 16 | 2026-06-11 |
 | [kintsu](./kintsu/) | $2.3M | 0.0% | ? | declining | 5 | 12 | 2026-06-11 |
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 2 | 154 | 2026-06-11 |
+| [klaybank](./klaybank/) | $298.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [klaystation](./klaystation/) | $0.0 | 0.0% | ? | declining | 0 | 1 | 2026-06-11 |
 | [klayswap](./klayswap/) | $4.5M | 0.0% | ? | declining | 4 | 22 | 2026-06-11 |
 | [kleros](./kleros/) | $10.7M | 0.0% | $10.7M | unknown | 0 | 358 | 2026-06-13 |

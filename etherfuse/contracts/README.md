@@ -1,6 +1,6 @@
 # etherfuse — Contract Index
 
-25 unique implementations across 2 chains · 58 deployments · 0 audited · 5 unaudited · 20 unverified
+26 unique implementations across 2 chains · 59 deployments · 0 audited · 6 unaudited · 20 unverified
 
 ## governance (1)
 
@@ -14,6 +14,12 @@
 |---|---|---|---|---|
 | [OptimizedTransparentUpgradeableProxy (6 deployments)](./base-8453/0x0f9b0468391cfa83160dae6b693df87df379bd06/) | base | 6 deployments: polygon `0xc2c1f8...a3fe31`; polygon `0xe56cee...320f95`; base [`0x0f9b04...79bd06`](./base-8453/0x0f9b0468391cfa83160dae6b693df87df379bd06/); base `0x0ff2cb...1fd03a`; base `0x79b3c8...f089bc`; base `0xc2c1f8...a3fe31` | ⚠️ Unaudited | Verified |
 | [TransparentUpgradeableProxy (8 deployments)](./polygon-137/0x46080f31351a6568f44575e3effde7f0c86867f9/) | polygon | 8 deployments: polygon [`0x46080f...6867f9`](./polygon-137/0x46080f31351a6568f44575e3effde7f0c86867f9/); polygon `0x834df4...15512f`; polygon `0xc62218...2c526d`; polygon `0xd574b1...7c8098`; base `0x46080f...6867f9`; base `0x7cee47...71a9b2`; base `0x834df4...15512f`; base `0xc62218...2c526d` | ⚠️ Unaudited | Verified |
+
+## token (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [BraleToken](./base-8453/0x269cae7dc59803e5c596c95756faeebb6030e0af/) | base | [`0x269cae...30e0af`](./base-8453/0x269cae7dc59803e5c596c95756faeebb6030e0af/) | ⚠️ Unaudited | Verified |
 
 ## unknown (22)
 

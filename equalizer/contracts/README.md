@@ -1,6 +1,6 @@
 # equalizer — Contract Index
 
-292 unique implementations across 3 chains · 506 deployments · 0 audited · 52 unaudited · 240 unverified
+295 unique implementations across 3 chains · 516 deployments · 0 audited · 54 unaudited · 241 unverified
 
 ## adapter (7)
 
@@ -21,28 +21,28 @@
 | [impermaxBorrowableERC4626Wrapper (2 deployments)](./sonic-146/0xc7d31877e3b1d55ff48a6e3dcfa846fa3e00d083/) | sonic | 2 deployments: sonic [`0xc7d318...00d083`](./sonic-146/0xc7d31877e3b1d55ff48a6e3dcfa846fa3e00d083/); sonic `0xffa942...3dccf0` | ⚠️ Unaudited | Verified |
 | [NFP_Staker (8 deployments)](./sonic-146/0x00a76d63cf6a514f1f9038a5afd7fb5b29df1306/) | sonic | 8 deployments: sonic [`0x00a76d...df1306`](./sonic-146/0x00a76d63cf6a514f1f9038a5afd7fb5b29df1306/); sonic `0x8273ae...780af1`; sonic `0x9a1874...3b8209`; sonic `0xafe7ac...103ad8`; sonic `0xcfa61d...13dca2`; sonic `0xd7a6f1...35c56c`; sonic `0xdc5847...5ee35f`; sonic `0xdf8057...828c09` | ⚠️ Unaudited | Verified |
 
-## governance (4)
+## governance (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [eliteRingsManager (11 deployments)](./sonic-146/0x22cfb3161076a2bf472627127271747d2968893f/) | sonic | 11 deployments: sonic [`0x22cfb3...68893f`](./sonic-146/0x22cfb3161076a2bf472627127271747d2968893f/); sonic `0x52ce45...fff2a6`; sonic `0x54ec1e...f1a397`; sonic `0x5af02b...d6f0ff`; sonic `0x5f3608...18141a`; sonic `0x6164b6...e9e950`; sonic `0xa5fea6...e190eb`; sonic `0xad27df...3ba57e`; sonic `0xad605d...8d0906`; sonic `0xae1a80...ab8735`; sonic `0xdabb71...8b8773` | ⚠️ Unaudited | Verified |
 | [FeeTierManager_2Thick](./sonic-146/0x5126cbc2597681cdc7c648dd74b19fb12f77dc30/) | sonic | [`0x5126cb...77dc30`](./sonic-146/0x5126cbc2597681cdc7c648dd74b19fb12f77dc30/) | ⚠️ Unaudited | Verified |
+| [NonfungiblePositionManager (4 deployments)](./base-8453/0x2b52294425a9a229322228de659ede9d146d7c2f/) | base | 4 deployments: sonic `0x79c26d...516de5`; sonic `0xc90526...23fa0b`; base [`0x2b5229...6d7c2f`](./base-8453/0x2b52294425a9a229322228de659ede9d146d7c2f/); base `0x79c26d...516de5` | ⚠️ Unaudited | Verified |
 | [ProxyAdmin (17 deployments)](./sonic-146/0x0be40f3289c1a2b7c380086490393e6ef7c1d1aa/) | sonic | 17 deployments: sonic [`0x0be40f...c1d1aa`](./sonic-146/0x0be40f3289c1a2b7c380086490393e6ef7c1d1aa/); sonic `0x1d864a...ed1f2e`; sonic `0x3ba64e...56a481`; sonic `0x4fdd88...487c6c`; sonic `0x5cfdf3...627db6`; sonic `0x687dad...3f571e`; sonic `0x6d93a9...9f8356`; sonic `0x93b25c...891738`; sonic `0xa543f1...ea7324`; sonic `0xc55ebf...be0979`; sonic `0xcd4f9a...ae0304`; sonic `0xeaa0dc...92125a`; sonic `0xf2d79a...4846ca`; base `0x23c5e5...a4d71e`; base `0x687dad...3f571e`; base `0x7de814...e71c1e`; base `0xfab311...fa888b` | ⚠️ Unaudited | Verified |
 | [ProxyAdmin4](./sonic-146/0x8eb10eb24d258f832f0d6603544b7ab794ebfa10/) | sonic | [`0x8eb10e...ebfa10`](./sonic-146/0x8eb10eb24d258f832f0d6603544b7ab794ebfa10/) | ⚠️ Unaudited | Verified |
 
-## operational_periphery (9)
+## operational_periphery (8)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [BribeFactory (6 deployments)](./sonic-146/0x0f0c346dff7ea5d612c67dc3eb06f6166a067160/) | sonic | 6 deployments: sonic [`0x0f0c34...067160`](./sonic-146/0x0f0c346dff7ea5d612c67dc3eb06f6166a067160/); sonic `0x3dd53e...cefc2e`; sonic `0xa07662...5de5c4`; sonic `0xded257...6d456e`; sonic `0xfeffd4...d9f60f`; base `0xcb418f...30ae18` | ⚠️ Unaudited | Verified |
+| [BribeFactory (7 deployments)](./sonic-146/0x0f0c346dff7ea5d612c67dc3eb06f6166a067160/) | sonic | 7 deployments: sonic [`0x0f0c34...067160`](./sonic-146/0x0f0c346dff7ea5d612c67dc3eb06f6166a067160/); sonic `0x3dd53e...cefc2e`; sonic `0xa07662...5de5c4`; sonic `0xded257...6d456e`; sonic `0xfeffd4...d9f60f`; base `0x90cda9...e93297`; base `0xcb418f...30ae18` | ⚠️ Unaudited | Verified |
 | [GaugeFactory (6 deployments)](./sonic-146/0x1c0f3c36c68cf8e12e0abe83f03062bc3d6e37b9/) | sonic | 6 deployments: sonic [`0x1c0f3c...6e37b9`](./sonic-146/0x1c0f3c36c68cf8e12e0abe83f03062bc3d6e37b9/); base `0x7b7faf...8ebd27`; base `0x999740...91885f`; base `0xa4d2b9...8b0c85`; base `0xb136b4...db13d6`; base `0xcc835d...2b8fca` | ⚠️ Unaudited | Verified |
-| [Minter (8 deployments)](./sonic-146/0x078c68189c788f2e1df314276fd5492a32dc8ecb/) | sonic | 8 deployments: sonic [`0x078c68...dc8ecb`](./sonic-146/0x078c68189c788f2e1df314276fd5492a32dc8ecb/); sonic `0x1c065b...d303fa`; sonic `0x3fdd8a...68de1e`; sonic `0x7697cc...11147b`; sonic `0xb87119...86322a`; base `0x41c4d6...89a7e4`; base `0x44621c...005685`; base `0xa1b88e...ab54b4` | ⚠️ Unaudited | Verified |
+| [Minter (9 deployments)](./sonic-146/0x078c68189c788f2e1df314276fd5492a32dc8ecb/) | sonic | 9 deployments: sonic [`0x078c68...dc8ecb`](./sonic-146/0x078c68189c788f2e1df314276fd5492a32dc8ecb/); sonic `0x1c065b...d303fa`; sonic `0x3fdd8a...68de1e`; sonic `0x7697cc...11147b`; sonic `0xb87119...86322a`; base `0x41c4d6...89a7e4`; base `0x44621c...005685`; base `0x731372...b8dd46`; base `0xa1b88e...ab54b4` | ⚠️ Unaudited | Verified |
 | [multiNotifyEqualToEltokenGauge (10 deployments)](./sonic-146/0x1244a7a6ee179bbbd332f6f6673259e569b9c92c/) | sonic | 10 deployments: sonic [`0x1244a7...b9c92c`](./sonic-146/0x1244a7a6ee179bbbd332f6f6673259e569b9c92c/); sonic `0x4e552d...ec2463`; sonic `0x608469...baa077`; sonic `0x79f90d...236f49`; sonic `0x8a9690...d83e9a`; sonic `0xac4dbd...19e075`; sonic `0xb959fa...ec8c8b`; sonic `0xe377f2...7cf89c`; sonic `0xfb3e3d...7be6bc`; sonic `0xff1329...62856e` | ⚠️ Unaudited | Verified |
-| [NonfungiblePositionManager (4 deployments)](./base-8453/0x2b52294425a9a229322228de659ede9d146d7c2f/) | base | 4 deployments: sonic `0x79c26d...516de5`; sonic `0xc90526...23fa0b`; base [`0x2b5229...6d7c2f`](./base-8453/0x2b52294425a9a229322228de659ede9d146d7c2f/); base `0x79c26d...516de5` | ⚠️ Unaudited | Verified |
 | [PriceGuru](./base-8453/0x02c32e0a34ab6fa5825565254f79c8c690d98666/) | base | [`0x02c32e...d98666`](./base-8453/0x02c32e0a34ab6fa5825565254f79c8c690d98666/) | ⚠️ Unaudited | Verified |
 | [sAMM_Oracle](./sonic-146/0x0d809fc015810ce75aa1c939c28e1355ad789048/) | sonic | [`0x0d809f...789048`](./sonic-146/0x0d809fc015810ce75aa1c939c28e1355ad789048/) | ⚠️ Unaudited | Verified |
 | [ThickALMGaugeEquivalentFarmland (24 deployments)](./base-8453/0x02c88d4067988a0981ffd0bd0c34a6a2ed3ad6df/) | base | 24 deployments: sonic `0x2cb66d...f1d65a`; sonic `0xd057ef...d965ff`; sonic `0xf3e31b...a8bda9`; base [`0x02c88d...3ad6df`](./base-8453/0x02c88d4067988a0981ffd0bd0c34a6a2ed3ad6df/); base `0x159aef...919ef2`; base `0x17a0d9...112baa`; base `0x1dcdf0...25890c`; base `0x2735a7...f53191`; base `0x338b18...08b5f3`; base `0x3c93f6...f2035a`; base `0x3f4d38...16a13e`; base `0x427141...0eecb6`; base `0x56c90e...7916c2`; base `0x5b5027...f9de7b`; base `0x66a5df...45dcc6`; base `0x8d6afe...0f1733`; base `0x98adfe...44fd1e`; base `0xa7672a...c6ae8e`; base `0xb14862...56e8d3`; base `0xc8eaae...bf6a72`; base `0xdeba7a...7d6327`; base `0xf1580a...444354`; base `0xf26927...e2bf1d`; base `0xfcc85a...b69068` | ⚠️ Unaudited | Verified |
-| [VotingEscrow (12 deployments)](./sonic-146/0x0a4531ded5c360c468b560ffdbce6058e19fbbfd/) | sonic | 12 deployments: sonic [`0x0a4531...9fbbfd`](./sonic-146/0x0a4531ded5c360c468b560ffdbce6058e19fbbfd/); sonic `0x304511...f7235a`; sonic `0x58df0d...bbeb03`; sonic `0x8a1eac...b6ff68`; sonic `0xac3323...33325d`; sonic `0xb69d5f...ed339b`; sonic `0xbdc4cc...e02581`; sonic `0xe90f1b...e9893b`; sonic `0xff002f...23b279`; base `0x28c9c7...d51c53`; base `0x3ce7ba...053549`; base `0x88c321...be7db1` | ⚠️ Unaudited | Verified |
+| [VotingEscrow (13 deployments)](./sonic-146/0x0a4531ded5c360c468b560ffdbce6058e19fbbfd/) | sonic | 13 deployments: sonic [`0x0a4531...9fbbfd`](./sonic-146/0x0a4531ded5c360c468b560ffdbce6058e19fbbfd/); sonic `0x304511...f7235a`; sonic `0x58df0d...bbeb03`; sonic `0x8a1eac...b6ff68`; sonic `0xac3323...33325d`; sonic `0xb69d5f...ed339b`; sonic `0xbdc4cc...e02581`; sonic `0xe90f1b...e9893b`; sonic `0xff002f...23b279`; base `0x1d6dc8...2e71d7`; base `0x28c9c7...d51c53`; base `0x3ce7ba...053549`; base `0x88c321...be7db1` | ⚠️ Unaudited | Verified |
 
 ## periphery (4)
 
@@ -66,7 +66,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BeaconProxyFactory (3 deployments)](./sonic-146/0x0d4e88ea618bb5b4bc7f143bd16e4b5640212967/) | sonic | 3 deployments: sonic [`0x0d4e88...212967`](./sonic-146/0x0d4e88ea618bb5b4bc7f143bd16e4b5640212967/); sonic `0x15864c...b01dfc`; sonic `0x769e38...c6ccdd` | ⚠️ Unaudited | Verified |
-| [PairFactory (10 deployments)](./sonic-146/0x312e1fd8f3281b8b476030ed1b058f62d800572d/) | sonic | 10 deployments: sonic [`0x312e1f...00572d`](./sonic-146/0x312e1fd8f3281b8b476030ed1b058f62d800572d/); sonic `0xb6a21a...52f637`; sonic `0xcdc292...6bf6a0`; sonic `0xddd984...528fcc`; sonic `0xfcfa93...4fdf2d`; base `0x39cc81...b1d91c`; base `0x653ce1...ad3414`; base `0xc295f6...197250`; base `0xd7627e...b222e1`; base `0xed8db6...b5ec04` | ⚠️ Unaudited | Verified |
+| [PairFactory (11 deployments)](./sonic-146/0x312e1fd8f3281b8b476030ed1b058f62d800572d/) | sonic | 11 deployments: sonic [`0x312e1f...00572d`](./sonic-146/0x312e1fd8f3281b8b476030ed1b058f62d800572d/); sonic `0xb6a21a...52f637`; sonic `0xcdc292...6bf6a0`; sonic `0xddd984...528fcc`; sonic `0xfcfa93...4fdf2d`; base `0x39cc81...b1d91c`; base `0x653ce1...ad3414`; base `0x8104be...5a417f`; base `0xc295f6...197250`; base `0xd7627e...b222e1`; base `0xed8db6...b5ec04` | ⚠️ Unaudited | Verified |
 | [SSR2Thick_Factory (2 deployments)](./sonic-146/0x25374db31147061cac658af137c4231ac77a1af9/) | sonic | 2 deployments: sonic [`0x25374d...7a1af9`](./sonic-146/0x25374db31147061cac658af137c4231ac77a1af9/); sonic `0x6ea84b...32525c` | ⚠️ Unaudited | Verified |
 | [UniswapV3Factory (4 deployments)](./sonic-146/0x7ca1dccfb4f49564b8f13e18a67747fd428f1c40/) | sonic | 4 deployments: sonic [`0x7ca1dc...8f1c40`](./sonic-146/0x7ca1dccfb4f49564b8f13e18a67747fd428f1c40/); sonic `0xe6da85...bb9d24`; base `0x7ca1dc...8f1c40`; base `0xe6da85...bb9d24` | ⚠️ Unaudited | Verified |
 | [UpgradeableBeacon (2 deployments)](./sonic-146/0x5ebd6536a0f8dc9b2aad4a8e750eafff60047437/) | sonic | 2 deployments: sonic [`0x5ebd65...047437`](./sonic-146/0x5ebd6536a0f8dc9b2aad4a8e750eafff60047437/); sonic `0xb654fa...9beead` | ⚠️ Unaudited | Verified |
@@ -80,7 +80,7 @@
 | [NFTDescriptor](./base-8453/0x97a7b2f95fda7181da16aec3072cd55a58d85073/) | base | [`0x97a7b2...d85073`](./base-8453/0x97a7b2f95fda7181da16aec3072cd55a58d85073/) | ⚠️ Unaudited | Verified |
 | [weightedMultiTokenBalance](./sonic-146/0xe41b49a03b367ecb41f834801c7f1922d8587eae/) | sonic | [`0xe41b49...587eae`](./sonic-146/0xe41b49a03b367ecb41f834801c7f1922d8587eae/) | ⚠️ Unaudited | Verified |
 
-## unknown (254)
+## unknown (257)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -89,12 +89,14 @@
 | [ElitenessFarmland (6 deployments)](./sonic-146/0x11cfb329caaca6d7da69734d10c7ec70afd75240/) | sonic | 6 deployments: sonic [`0x11cfb3...d75240`](./sonic-146/0x11cfb329caaca6d7da69734d10c7ec70afd75240/); sonic `0x21c99e...90e006`; sonic `0x381a53...81073e`; sonic `0xd58273...21faa0`; sonic `0xde24d6...966ec7`; sonic `0xfaa72e...b87f40` | ⚠️ Unaudited | Verified |
 | [eLOCK (9 deployments)](./sonic-146/0x18f8ad653867fc53b4d75bda1b610a5f3325b2db/) | sonic | 9 deployments: sonic [`0x18f8ad...25b2db`](./sonic-146/0x18f8ad653867fc53b4d75bda1b610a5f3325b2db/); sonic `0x23bf56...7ed48f`; sonic `0x5a94c9...1fbe9f`; sonic `0x61bd43...d7f53b`; sonic `0x681f98...cfdc5b`; sonic `0x8f7df1...e59af5`; sonic `0xa25e8e...d6ce7e`; sonic `0xa7678e...1e1abb`; base `0xb212f3...ab5442` | ⚠️ Unaudited | Verified |
 | [eLOCKS (6 deployments)](./sonic-146/0x26d70b26df8619fd3eeec07e22873b9f617e35da/) | sonic | 6 deployments: sonic [`0x26d70b...7e35da`](./sonic-146/0x26d70b26df8619fd3eeec07e22873b9f617e35da/); sonic `0x3518b5...ad89eb`; sonic `0x3e2866...6f308e`; sonic `0x7f7fc8...fffe99`; sonic `0x8ff927...51a430`; base `0xa9a3e3...0d6a6a` | ⚠️ Unaudited | Verified |
-| [Equal (13 deployments)](./sonic-146/0x0dd7c089612fcea9a61e30c34983a0934751fe2c/) | sonic | 13 deployments: sonic [`0x0dd7c0...51fe2c`](./sonic-146/0x0dd7c089612fcea9a61e30c34983a0934751fe2c/); sonic `0x16641a...0b26c8`; sonic `0x21c785...8b3383`; sonic `0x591e02...11dac4`; sonic `0x5babd5...f52b63`; sonic `0xa821d1...20b5fd`; sonic `0xb934de...fe602c`; sonic `0xcfc8d2...c64f15`; sonic `0xddf26b...0d5f19`; sonic `0xefbf87...f330f2`; sonic `0xfa6d96...dbe89b`; base `0x54016a...d9c32c`; base `0xdf4869...1be136` | ⚠️ Unaudited | Verified |
+| [Equal (14 deployments)](./sonic-146/0x0dd7c089612fcea9a61e30c34983a0934751fe2c/) | sonic | 14 deployments: sonic [`0x0dd7c0...51fe2c`](./sonic-146/0x0dd7c089612fcea9a61e30c34983a0934751fe2c/); sonic `0x16641a...0b26c8`; sonic `0x21c785...8b3383`; sonic `0x591e02...11dac4`; sonic `0x5babd5...f52b63`; sonic `0xa821d1...20b5fd`; sonic `0xb934de...fe602c`; sonic `0xcfc8d2...c64f15`; sonic `0xddf26b...0d5f19`; sonic `0xefbf87...f330f2`; sonic `0xfa6d96...dbe89b`; base `0x54016a...d9c32c`; base `0x7be024...101eab`; base `0xdf4869...1be136` | ⚠️ Unaudited | Verified |
 | [EqualizerLibrary (3 deployments)](./base-8453/0x10b1df11a6834ac8afe6efa654fc8c8396e47d10/) | base | 3 deployments: base [`0x10b1df...e47d10`](./base-8453/0x10b1df11a6834ac8afe6efa654fc8c8396e47d10/); base `0x3ba64e...56a481`; base `0x75a1d7...053859` | ⚠️ Unaudited | Verified |
 | [fBOMB (2 deployments)](./sonic-146/0x807c19badabc848336fe0379bd659e4e4608542d/) | sonic | 2 deployments: sonic [`0x807c19...08542d`](./sonic-146/0x807c19badabc848336fe0379bd659e4e4608542d/); sonic `0xedf8b6...c284cb` | ⚠️ Unaudited | Verified |
 | [FeeSynthesizer (8 deployments)](./base-8453/0x11b3dc196ce5195e0ab82052cb9dfd468da1218e/) | base | 8 deployments: sonic `0x502321...56f04c`; sonic `0x9df999...26c317`; sonic `0xb5aed2...644127`; base [`0x11b3dc...a1218e`](./base-8453/0x11b3dc196ce5195e0ab82052cb9dfd468da1218e/); base `0x4031fc...4f4cc8`; base `0x8ad889...c78f13`; base `0x9bf40a...83bace`; base `0xbd52ef...fa11d1` | ⚠️ Unaudited | Verified |
 | [LocklessReceiptMinter (2 deployments)](./sonic-146/0x0d571c1ac1e1d806256d639eef65a017b8445ca2/) | sonic | 2 deployments: sonic [`0x0d571c...445ca2`](./sonic-146/0x0d571c1ac1e1d806256d639eef65a017b8445ca2/); sonic `0x8b2d8e...445f6e` | ⚠️ Unaudited | Verified |
 | [MultiNotify (2 deployments)](./sonic-146/0x990d2cd2b095fd57d532cf12d9f58dbe3e7fab3b/) | sonic | 2 deployments: sonic [`0x990d2c...7fab3b`](./sonic-146/0x990d2cd2b095fd57d532cf12d9f58dbe3e7fab3b/); base `0xf7d8c4...07d792` | ⚠️ Unaudited | Verified |
+| [Pair](./base-8453/0x83240b049fa89b65be714aed68e5b074df6aac84/) | base | [`0x83240b...6aac84`](./base-8453/0x83240b049fa89b65be714aed68e5b074df6aac84/) | ⚠️ Unaudited | Verified |
+| [Scalepounder (3 deployments)](./base-8453/0x659aa8d33caaba3e178551af4e439f99dd12b9e9/) | base | 3 deployments: base [`0x659aa8...12b9e9`](./base-8453/0x659aa8d33caaba3e178551af4e439f99dd12b9e9/); base `0x74a022...dbc272`; base `0xde0ec1...d61606` | ⚠️ Unaudited | Verified |
 | [SuperVoter (4 deployments)](./base-8453/0x0225664e04b25a1eb71a7ad0b93c9aa6ec3c74a0/) | base | 4 deployments: sonic `0x107240...a0d008`; sonic `0x2792f2...fa62cd`; sonic `0xb6dfc3...fad93f`; base [`0x022566...3c74a0`](./base-8453/0x0225664e04b25a1eb71a7ad0b93c9aa6ec3c74a0/) | ⚠️ Unaudited | Verified |
 | [TvlGuru_ThickALM](./base-8453/0x7b54dfec0d532808d23cc24e0035d74557e46f75/) | base | [`0x7b54df...e46f75`](./base-8453/0x7b54dfec0d532808d23cc24e0035d74557e46f75/) | ⚠️ Unaudited | Verified |
 | [TvlGuru_ThickThickALM](./base-8453/0x9a949959057fbbdf1be20b489ceea51994fa59c9/) | base | [`0x9a9499...fa59c9`](./base-8453/0x9a949959057fbbdf1be20b489ceea51994fa59c9/) | ⚠️ Unaudited | Verified |
@@ -332,6 +334,7 @@
 | UnnamedContract | base | `0xbed5a2...2fc3ea` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xcc1eff...5fee93` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xd45f5d...fccf9b` | ❓ Unverified | Unverified |
+| UnnamedContract | base | `0xd467b1...574075` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xe4ba08...7500df` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xee5263...fdfa9d` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xf024aa...7e779b` | ❓ Unverified | Unverified |

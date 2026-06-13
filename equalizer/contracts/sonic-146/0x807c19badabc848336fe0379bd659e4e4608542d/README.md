@@ -5,7 +5,7 @@
 | Chain | sonic (146) |
 | Address | `0x807c19badabc848336fe0379bd659e4e4608542d` |
 | Role | unknown |
-| Origin | native |
+| Origin | upstream |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 2 (sonic [`0x807c19badabc848336fe0379bd659e4e4608542d`](../0x807c19badabc848336fe0379bd659e4e4608542d/); sonic `0xedf8b632b537d5993adb5e2e15882cd791c284cb`) |

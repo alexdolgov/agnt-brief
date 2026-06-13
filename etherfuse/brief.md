@@ -5,13 +5,13 @@
 - Project: Etherfuse (`etherfuse`)
 - Website: [https://www.etherfuse.com/](https://www.etherfuse.com/)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T23:10:11.682Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-13T20:44:21.066Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-f8ad
 - Chains: base, polygon
-- Contract surface: 25 unique implementations (58 raw deployments)
-- DeFi Llama TVL: $5,405,525.69
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- Contract surface: 26 unique implementations (59 raw deployments)
+- DeFi Llama TVL: $654,426.22
+- On-chain TVL (included contracts): $16,180.57
+- TVL by chain: Base $16,180.57
 
 ## Project Description
 
@@ -23,15 +23,15 @@ All contracts belong to a single product family, with proxy contracts pointing t
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
-- Verified + Unaudited implementations: 4
+- Verified implementations audited: 0/6 (0.0%)
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 1
 - Unverified implementations: 20
-- Unique implementations: 25
-- Raw deployments: 58
+- Unique implementations: 26
+- Raw deployments: 59
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $16,180.57
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,10 +46,11 @@ All contracts belong to a single product family, with proxy contracts pointing t
 
 - None
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| BraleToken | token | base | [`0x269cae...30e0af`](./contracts/base-8453/0x269cae7dc59803e5c596c95756faeebb6030e0af/) | ⚠️ Unaudited |
 | CbBTCOFTUpgradeable | unknown | base | [`0x9ad509...2020e8`](./contracts/base-8453/0x9ad50946f11e5e315c71abba2742c23b302020e8/) | ⚠️ Unaudited |
 | OptimizedTransparentUpgradeableProxy | proxy | base | 6 deployments: polygon `0xc2c1f8...a3fe31`; polygon `0xe56cee...320f95`; base [`0x0f9b04...79bd06`](./contracts/base-8453/0x0f9b0468391cfa83160dae6b693df87df379bd06/); base `0x0ff2cb...1fd03a`; base `0x79b3c8...f089bc`; base `0xc2c1f8...a3fe31` | ⚠️ Unaudited |
 | ProxyAdmin | governance | polygon | 18 deployments: polygon [`0x0f9b04...79bd06`](./contracts/polygon-137/0x0f9b0468391cfa83160dae6b693df87df379bd06/); polygon `0x322922...082ca8`; polygon `0x46802b...13e63b`; polygon `0x48ead7...bb17e1`; polygon `0x7cee47...71a9b2`; polygon `0xb43c95...544b3d`; polygon `0xc75dfe...72bf08`; polygon `0xed27d5...06eec5`; base `0x322922...082ca8`; base `0x3de700...f27424`; base `0x46802b...13e63b`; base `0x48ead7...bb17e1`; base `0x699908...6c7cbc`; base `0xb43c95...544b3d`; base `0xbd6097...e10c2f`; base `0xd660bb...5acfcb`; base `0xed27d5...06eec5`; base `0xfbb5be...381d2b` | ⚠️ Unaudited |
@@ -107,7 +108,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x9ad509...2020e8`](./contracts/base-8453/0x9ad50946f11e5e315c71abba2742c23b302020e8/) | CbBTCOFTUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x43d59d...a4aa1d`](./contracts/polygon-137/0x43d59d6d5a88787822c233b6f34db81eaca4aa1d/) | StablebondOFTUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x46080f...6867f9`](./contracts/polygon-137/0x46080f31351a6568f44575e3effde7f0c86867f9/) | TransparentUpgradeableProxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -115,10 +115,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 13 |
+| native | 12 |
 | upstream | 0 |
-| standard_library | 2 |
-| needs_review | 10 |
+| standard_library | 3 |
+| needs_review | 11 |
 
 ## Scope Matching Notes
 

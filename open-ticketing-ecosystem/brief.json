@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "open-ticketing-ecosystem",
-  "generated_at": "2026-06-11T01:34:04.428Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-13T20:43:58.693Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-f8ad",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "open-ticketing-ecosystem",
@@ -22,27 +22,27 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 24,
-    "total_addresses": 153,
-    "unique_implementations": 24,
-    "total_deployments": 153,
+    "total_contracts": 32,
+    "total_addresses": 168,
+    "unique_implementations": 32,
+    "total_deployments": 168,
     "audited_contracts": 0,
-    "unaudited_contracts": 24,
+    "unaudited_contracts": 32,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 24,
+    "contracts_verified_unaudited": 32,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1343702.63202,
-    "tvl_usd": 3341925.288918532,
+    "dl_tvl_usd": 817650.7976599999,
+    "tvl_usd": 3431519.2310135984,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 3174099.62,
-      "polygon": 167825.67
+      "ethereum": 3226466.17,
+      "polygon": 205053.06
     },
-    "asd_usd": 3341925.288918532,
+    "asd_usd": 3431519.2310135984,
     "website_url": "https://onopen.xyz",
     "chains": [
       "base",
@@ -66,7 +66,7 @@
     "product_family_count": 11
   },
   "surface_sufficiency": {
-    "unique_implementations": 24,
+    "unique_implementations": 32,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -109,13 +109,13 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x686e8500b6be8812eb198aabbbfa14c95c03fc88",
+      "address": "0x3e49e9c890cd5b015a18ed76e7a4093f569f1a04",
       "name": "GovernanceLockedRevenueDistributionToken",
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "OPEN Ticketing Ecosystem",
-      "tvl_usd": 504795.9479617845,
+      "product_line": null,
+      "tvl_usd": 594389.8900568506,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "GovernanceLockedRevenueDistributionToken",
@@ -123,10 +123,37 @@
         {
           "chain_id": 1,
           "chain_name": "ethereum",
+          "address": "0x3e49e9c890cd5b015a18ed76e7a4093f569f1a04",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 52366.548036430475,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
           "address": "0x686e8500b6be8812eb198aabbbfa14c95c03fc88",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 504795.9479617845,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x3e49e9c890cd5b015a18ed76e7a4093f569f1a04",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1115.6333971884274,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x686e8500b6be8812eb198aabbbfa14c95c03fc88",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 36111.76066144732,
           "is_audited": false
         }
       ],
@@ -206,7 +233,69 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xbce1b23c7544422f1e2208d29a6a3aa9fabab250",
+      "name": "BaseGET",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xef17ac433b58c99c5cf72efdb99c10d6831cc372",
+      "impl_name": "BaseGET",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xbce1b23c7544422f1e2208d29a6a3aa9fabab250",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x308e44ca2153c61103b0dc67fd038de650912b73",
+      "name": "baseGETNFT",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x393497983d695af8e64c1ea87e692be2044576e9",
+      "impl_name": "baseGETNFT",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x308e44ca2153c61103b0dc67fd038de650912b73",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 137,
@@ -246,7 +335,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 137,
@@ -305,6 +394,68 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x7d25ea705a30dd1a7f449a3540869bd102de1a37",
+      "name": "economicsGET",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x62d0e96fd9b4e22f71cf2d2b930ecd142527c5ee",
+      "impl_name": "economicsGET",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x7d25ea705a30dd1a7f449a3540869bd102de1a37",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x07faa643ad0ee4ee358d5e101573a5fdfbecd0a9",
+      "name": "EconomicsGET721V1",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x140ef35bd8a8fbe78520f70a295efb27d7ebdfb5",
+      "impl_name": "EconomicsGET721V1",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x07faa643ad0ee4ee358d5e101573a5fdfbecd0a9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 137,
@@ -398,6 +549,46 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
+      "address": "0xa5cbf4ce042d65a1af0e1b4fd65123f94ebfe97d",
+      "name": "ERC20Mock",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ERC20Mock",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xa5cbf4ce042d65a1af0e1b4fd65123f94ebfe97d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xb4cfd748b23c103f73c10259171ecc5ef1dd31da",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
       "address": "0xac1ffeea39e3db60599bdf6697988aa5f0ed26f4",
       "name": "EventFactory",
       "role": "registry",
@@ -413,6 +604,15 @@
           "chain_id": 137,
           "chain_name": "polygon",
           "address": "0xac1ffeea39e3db60599bdf6697988aa5f0ed26f4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xc6be6d5764179c4c45860418d6ec4bc45bd3fd94",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -514,6 +714,46 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
+      "address": "0x08c2af3f01a36ad9f274cce77f6f77cf9aa1dfc9",
+      "name": "EventMetadataStorage",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xecbbac6e1f98693cf33c60994e61239dee3beeb6",
+      "impl_name": "EventMetadataStorage",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x08c2af3f01a36ad9f274cce77f6f77cf9aa1dfc9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xcda348ff8c175f305ed8682003ec6f8743067f79",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
       "address": "0x56ebd904aa2cc5696f9cb05fa2d2587db501a8f3",
       "name": "FuelCollector",
       "role": "unknown",
@@ -556,6 +796,15 @@
           "chain_id": 137,
           "chain_name": "polygon",
           "address": "0x95b751d269509d6538b53d55f97d2b40937a18e1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xa7743e44cc6980eecdd6f852115be578b4bed263",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1565,6 +1814,68 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
+      "address": "0x2055244a719229d669488e389388f2d653a452f4",
+      "name": "getNFT_ERC721V3",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x916188408f207e2e6f2d8d44c49aeb3d88eff5c1",
+      "impl_name": "getNFT_ERC721V3",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x2055244a719229d669488e389388f2d653a452f4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xddbd230d225fb0468d2fd5fc905ea92a703ed4be",
+      "name": "GETProtocolConfiguration",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x4ea573a6d029ed57e3199fb04e503b8844b7fc6a",
+      "impl_name": "GETProtocolConfiguration",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xddbd230d225fb0468d2fd5fc905ea92a703ed4be",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
       "address": "0x75099a54f72ef1ae33f89e57157de8c205b72b54",
       "name": "Memories",
       "role": "unknown",
@@ -1600,7 +1911,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -1813,7 +2124,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 137,
@@ -1893,7 +2204,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 137,
@@ -1978,7 +2289,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     }
   ],
   "audits": [],
@@ -1997,12 +2308,12 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x686e8500b6be8812eb198aabbbfa14c95c03fc88",
+      "address": "0x3e49e9c890cd5b015a18ed76e7a4093f569f1a04",
       "name": "GovernanceLockedRevenueDistributionToken",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 504795.9479617845,
-      "risk_note": "Verified native implementation with $504,795.95 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 594389.8900568506,
+      "risk_note": "Verified native implementation with $594,389.89 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 137,
@@ -2040,6 +2351,16 @@
       "address": "0x3da76ef75a7ebdb101afc7ec47b13f5c8cbf9f53",
       "name": "EconomicsMigrator",
       "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xa5cbf4ce042d65a1af0e1b4fd65123f94ebfe97d",
+      "name": "ERC20Mock",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2146,9 +2467,9 @@
     }
   ],
   "origin_summary": {
-    "native": 16,
+    "native": 17,
     "upstream": 0,
-    "standard_library": 6,
+    "standard_library": 13,
     "needs_review": 2
   },
   "scope_matching_notes": {

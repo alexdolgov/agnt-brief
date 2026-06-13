@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "etherfuse",
-  "generated_at": "2026-06-10T23:10:11.682Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-13T20:44:21.066Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-f8ad",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "etherfuse",
@@ -32,24 +32,26 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 25,
-    "total_addresses": 58,
-    "unique_implementations": 25,
-    "total_deployments": 58,
+    "total_contracts": 26,
+    "total_addresses": 59,
+    "unique_implementations": 26,
+    "total_deployments": 59,
     "audited_contracts": 0,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 6,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 4,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 20,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5405525.69033,
-    "tvl_usd": 5405525.69033,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "dl_tvl_usd": 654426.2246800001,
+    "tvl_usd": 16180.56785364005,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "base": 16180.57
+    },
+    "asd_usd": 16180.56785364005,
     "website_url": "https://www.etherfuse.com/",
     "chains": [
       "base",
@@ -72,7 +74,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 25,
+    "unique_implementations": 26,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -84,10 +86,41 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
+      "address": "0x269cae7dc59803e5c596c95756faeebb6030e0af",
+      "name": "BraleToken",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 16180.56785364005,
+      "is_proxy": true,
+      "impl_address": "0x2a6c613bd6288b1f7e1c02393f1cf92444eadee5",
+      "impl_name": "BraleToken",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x269cae7dc59803e5c596c95756faeebb6030e0af",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 16180.56785364005,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
       "address": "0x9ad50946f11e5e315c71abba2742c23b302020e8",
       "name": "CbBTCOFTUpgradeable",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1158,16 +1191,6 @@
   "auditor_coverage": [],
   "coverage_gaps": [
     {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x9ad50946f11e5e315c71abba2742c23b302020e8",
-      "name": "CbBTCOFTUpgradeable",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 137,
       "chain_name": "polygon",
       "address": "0x43d59d6d5a88787822c233b6f34db81eaca4aa1d",
@@ -1189,10 +1212,10 @@
     }
   ],
   "origin_summary": {
-    "native": 13,
+    "native": 12,
     "upstream": 0,
-    "standard_library": 2,
-    "needs_review": 10
+    "standard_library": 3,
+    "needs_review": 11
   },
   "scope_matching_notes": {
     "match_method_counts": {},

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "shape-bridge",
-  "generated_at": "2026-06-11T11:40:29.948Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
+  "generated_at": "2026-06-13T20:46:00.442Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-f8ad",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "shape-bridge",
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 57.65816817340975
   },
   "summary": {
-    "total_contracts": 26,
-    "total_addresses": 27,
-    "unique_implementations": 26,
-    "total_deployments": 27,
+    "total_contracts": 27,
+    "total_addresses": 32,
+    "unique_implementations": 27,
+    "total_deployments": 32,
     "audited_contracts": 0,
-    "unaudited_contracts": 22,
+    "unaudited_contracts": 23,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 22,
+    "contracts_verified_unaudited": 23,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 4,
     "coverage_pct": 0,
@@ -61,7 +61,7 @@
     "product_family_count": 2
   },
   "surface_sufficiency": {
-    "unique_implementations": 26,
+    "unique_implementations": 27,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -123,6 +123,15 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc55f722cf6e14907b844a8b8d3cfd0c04cf3ed9b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -139,7 +148,7 @@
       "name": "Create2Deployer",
       "role": "unknown",
       "origin_kind": "standard_library",
-      "origin_provider": "create2-deployer",
+      "origin_provider": "Unknown Library",
       "product_line": "Shape Mainnet (L2)",
       "tvl_usd": null,
       "is_proxy": false,
@@ -166,17 +175,57 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x575aecd84083f93877291901907698f7db0bd8b0",
+      "address": "0x36b4f78990619fdd8f7e9cc7965326336f2bd706",
+      "name": "DelayedWETH",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x33dadc2d1aa9bb613a7ae6b28425ea00d44c6998",
+      "impl_name": "DelayedWETH",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x36b4f78990619fdd8f7e9cc7965326336f2bd706",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2c03e8bf8b16af89079852be87f0e9ec674a5952",
       "name": "DisputeGameFactory",
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Ethereum (L1)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
-      "impl_address": "0xae36782704fb440fdf7c645c65bd72fab6c39609",
+      "impl_address": "0xc040f392e52cb6970ca8e110c280fe24e07c5e2c",
       "impl_name": "DisputeGameFactory",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2c03e8bf8b16af89079852be87f0e9ec674a5952",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -272,7 +321,7 @@
       "name": "ImmutableCreate2Factory",
       "role": "registry",
       "origin_kind": "standard_library",
-      "origin_provider": "0xSplits",
+      "origin_provider": "0x",
       "product_line": "Shape Mainnet (L2)",
       "tvl_usd": null,
       "is_proxy": false,
@@ -578,17 +627,26 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xdf6a16a71d0bc7a1bbe8fffb33700ec3d9448a5b",
+      "address": "0x1fb8cdfc6831fc866ed9c51af8817da5c287add3",
       "name": "PreimageOracle",
-      "role": "operational_periphery",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Ethereum (L1)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "PreimageOracle",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1fb8cdfc6831fc866ed9c51af8817da5c287add3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -721,6 +779,15 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x95703e0982140d16f8eba6d158fccede42f04a4c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -767,7 +834,7 @@
       "address": "0x000f3df6d732807ef1319fb7b8bb8522d0beac02",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Shape Mainnet (L2)",
       "tvl_usd": null,
@@ -829,7 +896,7 @@
       "address": "0x84e2fdb4f1017e70b0ace39b63953fc11e96467c",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -860,7 +927,7 @@
       "address": "0xcb7c7725484f85427c9a846f8e8dbebe15df294a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -975,7 +1042,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x575aecd84083f93877291901907698f7db0bd8b0",
+      "address": "0x36b4f78990619fdd8f7e9cc7965326336f2bd706",
+      "name": "DelayedWETH",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2c03e8bf8b16af89079852be87f0e9ec674a5952",
       "name": "DisputeGameFactory",
       "role": "registry",
       "origin_kind": "native",
@@ -1075,9 +1152,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xdf6a16a71d0bc7a1bbe8fffb33700ec3d9448a5b",
+      "address": "0x1fb8cdfc6831fc866ed9c51af8817da5c287add3",
       "name": "PreimageOracle",
-      "role": "operational_periphery",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1124,10 +1201,10 @@
     }
   ],
   "origin_summary": {
-    "native": 17,
+    "native": 21,
     "upstream": 0,
     "standard_library": 6,
-    "needs_review": 3
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

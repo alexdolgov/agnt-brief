@@ -8,7 +8,7 @@
 | Origin | standard_library |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 1 (polygon [`0xac1ffeea39e3db60599bdf6697988aa5f0ed26f4`](../0xac1ffeea39e3db60599bdf6697988aa5f0ed26f4/)) |
+| Deployments | 2 (polygon [`0xac1ffeea39e3db60599bdf6697988aa5f0ed26f4`](../0xac1ffeea39e3db60599bdf6697988aa5f0ed26f4/); polygon `0xc6be6d5764179c4c45860418d6ec4bc45bd3fd94`) |
 | Proxy | Yes → `0xc6be6d...d3fd94` |
 | Source | Sourcify (full match) |
 | TVL | n/a |

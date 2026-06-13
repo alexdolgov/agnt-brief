@@ -7,13 +7,13 @@
 - Project: Neo Tokyo (`neo-tokyo`)
 - Website: [https://neotokyo.codes/](https://neotokyo.codes/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:04:20.543Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-13T20:42:32.779Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-f8ad
 - Chains: ethereum
-- Contract surface: 86 unique implementations (105 raw deployments)
-- DeFi Llama TVL: $1,042,816.30
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- Contract surface: 87 unique implementations (109 raw deployments)
+- DeFi Llama TVL: $882,260.50
+- On-chain TVL (included contracts): $26,800.55
+- TVL by chain: Ethereum $26,800.55
 
 ## Project Description
 
@@ -25,19 +25,19 @@ The NeoTokyoStaker contract is the central hub, interacting with BYTES2 for stak
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/38 (0.0%)
-- Verified + Unaudited implementations: 38
+- Verified implementations audited: 0/39 (0.0%)
+- Verified + Unaudited implementations: 39
 - Verified by bytecode match: 0
 - Unverified implementations: 48
-- Unique implementations: 86
-- Raw deployments: 105
+- Unique implementations: 87
+- Raw deployments: 109
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $26,800.55
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [unknown]. ASD of $26,800.55 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -49,10 +49,11 @@ The NeoTokyoStaker contract is the central hub, interacting with BYTES2 for stak
 
 - None
 
-### ⚠️ Verified + Unaudited (38)
+### ⚠️ Verified + Unaudited (39)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| UniswapV3Pool | core_logic | ethereum | [`0xfeb09c...688b34`](./contracts/ethereum-1/0xfeb09c7e130a4b87b27ebd648ec485657b688b34/) | ⚠️ Unaudited |
 | beckLoot | unknown | ethereum | [`0x86357a...3a66c0`](./contracts/ethereum-1/0x86357a19e5537a8fba9a004e555713bc943a66c0/) | ⚠️ Unaudited |
 | boughtIdentity | unknown | ethereum | [`0x835a60...3a892e`](./contracts/ethereum-1/0x835a60cc60b808e47825daa79a9da6c9ff3a892e/) | ⚠️ Unaudited |
 | BYTES2 | unknown | ethereum | [`0xa19f52...0bea86`](./contracts/ethereum-1/0xa19f5264f7d7be11c451c093d8f92592820bea86/) | ⚠️ Unaudited |
@@ -72,15 +73,15 @@ The NeoTokyoStaker contract is the central hub, interacting with BYTES2 for stak
 | NTMigrator | periphery | ethereum | [`0x91a341...fd9e57`](./contracts/ethereum-1/0x91a341e5617070de70f4df6a83cceceea7fd9e57/) | ⚠️ Unaudited |
 | NTOuterCitizenDeploy | unknown | ethereum | 2 deployments: ethereum [`0x9b091d...932ec4`](./contracts/ethereum-1/0x9b091d2e0bb88ace4fe8f0fab87b93d8ba932ec4/); ethereum `0xa4a4c4...5b5ec2` | ⚠️ Unaudited |
 | NTOuterIdentity | unknown | ethereum | [`0x698fba...62cf54`](./contracts/ethereum-1/0x698fbaaca64944376e2cdc4cad86eaa91362cf54/) | ⚠️ Unaudited |
-| NTS1Citizen | unknown | ethereum | 2 deployments: ethereum [`0x3b6b64...339457`](./contracts/ethereum-1/0x3b6b64fc7179f72b7ef656d61737d67bf2339457/); ethereum `0xb9951b...ed1c0f` | ⚠️ Unaudited |
+| NTS1Citizen | unknown | ethereum | 3 deployments: ethereum [`0x3b6b64...339457`](./contracts/ethereum-1/0x3b6b64fc7179f72b7ef656d61737d67bf2339457/); ethereum `0xb9951b...ed1c0f`; ethereum `0xe26bdc...374e75` | ⚠️ Unaudited |
 | NTS1Identity | unknown | ethereum | [`0x4e8ae6...4dd93a`](./contracts/ethereum-1/0x4e8ae6529a7a178a8a3a5eecabb90f9e544dd93a/) | ⚠️ Unaudited |
 | NTS1Identity_V2 | unknown | ethereum | 2 deployments: ethereum [`0x059174...8f2f99`](./contracts/ethereum-1/0x059174c2fef43f06178d23572fe5556f078f2f99/); ethereum `0xcdaf3b...55bb65` | ⚠️ Unaudited |
 | NTS1Item | unknown | ethereum | 2 deployments: ethereum [`0x1bf9a8...40596b`](./contracts/ethereum-1/0x1bf9a8dea26b372af7eb8c9e1086934fcd40596b/); ethereum `0xe7489e...13d249` | ⚠️ Unaudited |
 | NTS1Land | unknown | ethereum | 2 deployments: ethereum [`0x847eed...de7d1b`](./contracts/ethereum-1/0x847eed7a43817a490b042dbffda10bcf56de7d1b/); ethereum `0xcfc6a1...62e21a` | ⚠️ Unaudited |
 | NTS1Vault | core_logic | ethereum | [`0x30d274...97fe30`](./contracts/ethereum-1/0x30d27415181ae5f42be1f1f2a5f335497697fe30/) | ⚠️ Unaudited |
-| NTS1Vault_V2 | core_logic | ethereum | 2 deployments: ethereum [`0x17b2f2...8e69c7`](./contracts/ethereum-1/0x17b2f2b8927a8f11edfd7a27e153be17d68e69c7/); ethereum `0xfe0eab...3d2924` | ⚠️ Unaudited |
+| NTS1Vault_V2 | core_logic | ethereum | 3 deployments: ethereum [`0x17b2f2...8e69c7`](./contracts/ethereum-1/0x17b2f2b8927a8f11edfd7a27e153be17d68e69c7/); ethereum `0xe0e3eb...2c9698`; ethereum `0xfe0eab...3d2924` | ⚠️ Unaudited |
 | NTS2Citizen | unknown | ethereum | [`0x6254ba...2c8a07`](./contracts/ethereum-1/0x6254bab9ee850590e6e7a56982672231d02c8a07/) | ⚠️ Unaudited |
-| NTS2Citizen_V2 | unknown | ethereum | 2 deployments: ethereum [`0x448150...f7912e`](./contracts/ethereum-1/0x4481507cc228fa19d203bd42110d679571f7912e/); ethereum `0x5c291f...3c7fff` | ⚠️ Unaudited |
+| NTS2Citizen_V2 | unknown | ethereum | 3 deployments: ethereum [`0x448150...f7912e`](./contracts/ethereum-1/0x4481507cc228fa19d203bd42110d679571f7912e/); ethereum `0x5c291f...3c7fff`; ethereum `0xe28bab...8394a3` | ⚠️ Unaudited |
 | NTS2Identity | unknown | ethereum | 2 deployments: ethereum [`0x317d14...f7206e`](./contracts/ethereum-1/0x317d1470d6b3a549983702d66f1b952a21f7206e/); ethereum `0x8e9f3c...0ad6d3` | ⚠️ Unaudited |
 | NTS2Item | unknown | ethereum | 2 deployments: ethereum [`0x0b8f04...9efad9`](./contracts/ethereum-1/0x0b8f04f2ca4f15d33274a27439412ab7639efad9/); ethereum `0x9df4c5...da384d` | ⚠️ Unaudited |
 | NTS2Items | unknown | ethereum | [`0x7ac66d...d69354`](./contracts/ethereum-1/0x7ac66d40d80d2d8d1e45d6b5b10a1c9d1fd69354/) | ⚠️ Unaudited |
@@ -208,10 +209,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 55 |
-| upstream | 0 |
+| native | 45 |
+| upstream | 1 |
 | standard_library | 5 |
-| needs_review | 26 |
+| needs_review | 36 |
 
 ## Scope Matching Notes
 

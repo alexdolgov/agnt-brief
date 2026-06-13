@@ -1,14 +1,15 @@
 # neo-tokyo — Contract Index
 
-86 unique implementations on ethereum · 105 deployments · 0 audited · 38 unaudited · 48 unverified
+87 unique implementations on ethereum · 109 deployments · 0 audited · 39 unaudited · 48 unverified
 
-## core_logic (4)
+## core_logic (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [NeoTokyoStaker](./ethereum-1/0x67e1ecfa9232e27eaf3133b968a33a9a0dca9e16/) | ethereum | [`0x67e1ec...ca9e16`](./ethereum-1/0x67e1ecfa9232e27eaf3133b968a33a9a0dca9e16/) | ⚠️ Unaudited | Verified |
 | [NTS1Vault](./ethereum-1/0x30d27415181ae5f42be1f1f2a5f335497697fe30/) | ethereum | [`0x30d274...97fe30`](./ethereum-1/0x30d27415181ae5f42be1f1f2a5f335497697fe30/) | ⚠️ Unaudited | Verified |
-| [NTS1Vault_V2 (2 deployments)](./ethereum-1/0x17b2f2b8927a8f11edfd7a27e153be17d68e69c7/) | ethereum | 2 deployments: ethereum [`0x17b2f2...8e69c7`](./ethereum-1/0x17b2f2b8927a8f11edfd7a27e153be17d68e69c7/); ethereum `0xfe0eab...3d2924` | ⚠️ Unaudited | Verified |
+| [NTS1Vault_V2 (3 deployments)](./ethereum-1/0x17b2f2b8927a8f11edfd7a27e153be17d68e69c7/) | ethereum | 3 deployments: ethereum [`0x17b2f2...8e69c7`](./ethereum-1/0x17b2f2b8927a8f11edfd7a27e153be17d68e69c7/); ethereum `0xe0e3eb...2c9698`; ethereum `0xfe0eab...3d2924` | ⚠️ Unaudited | Verified |
+| [UniswapV3Pool](./ethereum-1/0xfeb09c7e130a4b87b27ebd648ec485657b688b34/) | ethereum | [`0xfeb09c...688b34`](./ethereum-1/0xfeb09c7e130a4b87b27ebd648ec485657b688b34/) | ⚠️ Unaudited | Verified |
 | [vaultBox](./ethereum-1/0xab0b0dd7e4eab0f9e31a539074a03f1c1be80879/) | ethereum | [`0xab0b0d...e80879`](./ethereum-1/0xab0b0dd7e4eab0f9e31a539074a03f1c1be80879/) | ⚠️ Unaudited | Verified |
 
 ## governance (1)
@@ -61,13 +62,13 @@
 | [NTLandDeploy](./ethereum-1/0x3c54b798b3aad4f6089533af3bdbd6ce233019bb/) | ethereum | [`0x3c54b7...3019bb`](./ethereum-1/0x3c54b798b3aad4f6089533af3bdbd6ce233019bb/) | ⚠️ Unaudited | Verified |
 | [NTOuterCitizenDeploy (2 deployments)](./ethereum-1/0x9b091d2e0bb88ace4fe8f0fab87b93d8ba932ec4/) | ethereum | 2 deployments: ethereum [`0x9b091d...932ec4`](./ethereum-1/0x9b091d2e0bb88ace4fe8f0fab87b93d8ba932ec4/); ethereum `0xa4a4c4...5b5ec2` | ⚠️ Unaudited | Verified |
 | [NTOuterIdentity](./ethereum-1/0x698fbaaca64944376e2cdc4cad86eaa91362cf54/) | ethereum | [`0x698fba...62cf54`](./ethereum-1/0x698fbaaca64944376e2cdc4cad86eaa91362cf54/) | ⚠️ Unaudited | Verified |
-| [NTS1Citizen (2 deployments)](./ethereum-1/0x3b6b64fc7179f72b7ef656d61737d67bf2339457/) | ethereum | 2 deployments: ethereum [`0x3b6b64...339457`](./ethereum-1/0x3b6b64fc7179f72b7ef656d61737d67bf2339457/); ethereum `0xb9951b...ed1c0f` | ⚠️ Unaudited | Verified |
+| [NTS1Citizen (3 deployments)](./ethereum-1/0x3b6b64fc7179f72b7ef656d61737d67bf2339457/) | ethereum | 3 deployments: ethereum [`0x3b6b64...339457`](./ethereum-1/0x3b6b64fc7179f72b7ef656d61737d67bf2339457/); ethereum `0xb9951b...ed1c0f`; ethereum `0xe26bdc...374e75` | ⚠️ Unaudited | Verified |
 | [NTS1Identity](./ethereum-1/0x4e8ae6529a7a178a8a3a5eecabb90f9e544dd93a/) | ethereum | [`0x4e8ae6...4dd93a`](./ethereum-1/0x4e8ae6529a7a178a8a3a5eecabb90f9e544dd93a/) | ⚠️ Unaudited | Verified |
 | [NTS1Identity_V2 (2 deployments)](./ethereum-1/0x059174c2fef43f06178d23572fe5556f078f2f99/) | ethereum | 2 deployments: ethereum [`0x059174...8f2f99`](./ethereum-1/0x059174c2fef43f06178d23572fe5556f078f2f99/); ethereum `0xcdaf3b...55bb65` | ⚠️ Unaudited | Verified |
 | [NTS1Item (2 deployments)](./ethereum-1/0x1bf9a8dea26b372af7eb8c9e1086934fcd40596b/) | ethereum | 2 deployments: ethereum [`0x1bf9a8...40596b`](./ethereum-1/0x1bf9a8dea26b372af7eb8c9e1086934fcd40596b/); ethereum `0xe7489e...13d249` | ⚠️ Unaudited | Verified |
 | [NTS1Land (2 deployments)](./ethereum-1/0x847eed7a43817a490b042dbffda10bcf56de7d1b/) | ethereum | 2 deployments: ethereum [`0x847eed...de7d1b`](./ethereum-1/0x847eed7a43817a490b042dbffda10bcf56de7d1b/); ethereum `0xcfc6a1...62e21a` | ⚠️ Unaudited | Verified |
 | [NTS2Citizen](./ethereum-1/0x6254bab9ee850590e6e7a56982672231d02c8a07/) | ethereum | [`0x6254ba...2c8a07`](./ethereum-1/0x6254bab9ee850590e6e7a56982672231d02c8a07/) | ⚠️ Unaudited | Verified |
-| [NTS2Citizen_V2 (2 deployments)](./ethereum-1/0x4481507cc228fa19d203bd42110d679571f7912e/) | ethereum | 2 deployments: ethereum [`0x448150...f7912e`](./ethereum-1/0x4481507cc228fa19d203bd42110d679571f7912e/); ethereum `0x5c291f...3c7fff` | ⚠️ Unaudited | Verified |
+| [NTS2Citizen_V2 (3 deployments)](./ethereum-1/0x4481507cc228fa19d203bd42110d679571f7912e/) | ethereum | 3 deployments: ethereum [`0x448150...f7912e`](./ethereum-1/0x4481507cc228fa19d203bd42110d679571f7912e/); ethereum `0x5c291f...3c7fff`; ethereum `0xe28bab...8394a3` | ⚠️ Unaudited | Verified |
 | [NTS2Identity (2 deployments)](./ethereum-1/0x317d1470d6b3a549983702d66f1b952a21f7206e/) | ethereum | 2 deployments: ethereum [`0x317d14...f7206e`](./ethereum-1/0x317d1470d6b3a549983702d66f1b952a21f7206e/); ethereum `0x8e9f3c...0ad6d3` | ⚠️ Unaudited | Verified |
 | [NTS2Item (2 deployments)](./ethereum-1/0x0b8f04f2ca4f15d33274a27439412ab7639efad9/) | ethereum | 2 deployments: ethereum [`0x0b8f04...9efad9`](./ethereum-1/0x0b8f04f2ca4f15d33274a27439412ab7639efad9/); ethereum `0x9df4c5...da384d` | ⚠️ Unaudited | Verified |
 | [NTS2Items](./ethereum-1/0x7ac66d40d80d2d8d1e45d6b5b10a1c9d1fd69354/) | ethereum | [`0x7ac66d...d69354`](./ethereum-1/0x7ac66d40d80d2d8d1e45d6b5b10a1c9d1fd69354/) | ⚠️ Unaudited | Verified |

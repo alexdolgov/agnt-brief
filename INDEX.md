@@ -385,7 +385,7 @@
 | [enosys](./enosys/) | $17.2M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
 | [ensuro](./ensuro/) | $490.6K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [enzo-finance](./enzo-finance/) | $22.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [equalizer](./equalizer/) | $374.8K | 0.0% | $374.8K | declining | 0 | 292 | 2026-06-10 |
+| [equalizer](./equalizer/) | $374.8K | 0.0% | $374.8K | declining | 0 | 295 | 2026-06-13 |
 | [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-06-13 |
 | [equilibria](./equilibria/) | $26.9M | 17.6% | $15.7M | declining | 6 | 119 | 2026-06-10 |
 | [equito-finance](./equito-finance/) | $7.9 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
@@ -395,7 +395,7 @@
 | [ethereal-season-zero](./ethereal-season-zero/) | $2.8M | 0.0% | $2.8M | dead | 4 | 1 | 2026-05-24 |
 | [etherex](./etherex/) | $1.4M | 36.2% | ? | declining | 4 | 58 | 2026-06-11 |
 | [etherflip](./etherflip/) | $1.6M | 0.0% | ? | active | 0 | 7 | 2026-06-10 |
-| [etherfuse](./etherfuse/) | $5.4M | 0.0% | ? | active | 0 | 25 | 2026-06-10 |
+| [etherfuse](./etherfuse/) | $16.2K | 0.0% | $16.2K | active | 0 | 26 | 2026-06-13 |
 | [ethichub](./ethichub/) | $22.7M | 0.0% | $22.7M | active | 2 | 60 | 2026-06-13 |
 | [ethos](./ethos/) | $1.9M | 30.0% | ? | active | 2 | 27 | 2026-06-10 |
 | [etmc](./etmc/) | $6.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -797,7 +797,7 @@
 | [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 17 | 2026-06-11 |
 | [nemo](./nemo/) | $76.1K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [nemoswap](./nemoswap/) | $65.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [neo-tokyo](./neo-tokyo/) | $1.0M | 0.0% | ? | unknown | 0 | 86 | 2026-05-31 |
+| [neo-tokyo](./neo-tokyo/) | $26.8K | 0.0% | $26.8K | unknown | 0 | 87 | 2026-06-13 |
 | [neony-exchange](./neony-exchange/) | $412.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [neopin](./neopin/) | $40.2M | 0.0% | ? | active | 3 | 104 | 2026-06-12 |
 | [neptune-finance](./neptune-finance/) | $5.9M | 0.0% | ? | active | 3 | 2 | 2026-06-13 |
@@ -852,7 +852,7 @@
 | [oni-exchange](./oni-exchange/) | $1.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [onyx](./onyx/) | $384.4M | 0.0% | $384.4M | active | 1 | 17 | 2026-06-12 |
 | [oortswap](./oortswap/) | $940.9 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [open-ticketing-ecosystem](./open-ticketing-ecosystem/) | $3.3M | 0.0% | $3.3M | active | 0 | 24 | 2026-06-11 |
+| [open-ticketing-ecosystem](./open-ticketing-ecosystem/) | $3.4M | 0.0% | $3.4M | active | 0 | 32 | 2026-06-13 |
 | [openeden](./openeden/) | $225.4M | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [openledger](./openledger/) | $104.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [openleverage](./openleverage/) | $88.9K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
@@ -1057,7 +1057,7 @@
 | [serum](./serum/) | $15.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [set-protocol](./set-protocol/) | $7.9M | 0.0% | $7.9M | declining | 0 | 129 | 2026-06-13 |
 | [shadow-exchange](./shadow-exchange/) | $999.8 | 21.6% | $999.8 | declining | 3 | 84 | 2026-05-23 |
-| [shape-bridge](./shape-bridge/) | $760.4K | 0.0% | ? | active | 2 | 26 | 2026-06-11 |
+| [shape-bridge](./shape-bridge/) | $760.4K | 0.0% | ? | active | 2 | 27 | 2026-06-13 |
 | [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | active | 3 | 40 | 2026-06-11 |
 | [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-06-13 |
 | [sherpa](./sherpa/) | $606.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

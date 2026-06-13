@@ -4,7 +4,7 @@
 |---|---|
 | Chain | base (8453) |
 | Address | `0x2b52294425a9a229322228de659ede9d146d7c2f` |
-| Role | operational_periphery |
+| Role | governance |
 | Origin | upstream |
 | Audited | No |
 | Audits | n/a |

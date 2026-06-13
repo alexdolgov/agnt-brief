@@ -7,11 +7,11 @@
 - Project: Equalizer (`equalizer`)
 - Website: [https://equalizer.exchange/](https://equalizer.exchange/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T23:06:01.393Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-13T20:56:18.373Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-f8ad
 - Chains: base, fantom, sonic
-- Contract surface: 292 unique implementations (506 raw deployments)
-- DeFi Llama TVL: $1,076,070.00
+- Contract surface: 295 unique implementations (516 raw deployments)
+- DeFi Llama TVL: $861,049.00
 - On-chain TVL (included contracts): $374,839.04
 - TVL by chain: Sonic $374,839.04
 
@@ -25,12 +25,12 @@ The THICK and 2THICK families provide the AMM layer, while the Scale and Deploye
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/52 (0.0%)
-- Verified + Unaudited implementations: 50
+- Verified implementations audited: 0/54 (0.0%)
+- Verified + Unaudited implementations: 52
 - Verified by bytecode match: 2
-- Unverified implementations: 240
-- Unique implementations: 292
-- Raw deployments: 506
+- Unverified implementations: 241
+- Unique implementations: 295
+- Raw deployments: 516
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $374,839.04
@@ -49,14 +49,14 @@ The THICK and 2THICK families provide the AMM layer, while the Scale and Deploye
 
 - None
 
-### ⚠️ Verified + Unaudited (50)
+### ⚠️ Verified + Unaudited (52)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | ElitenessERC20 | token | base | 17 deployments: sonic `0x31b59f...afc109`; sonic `0x5e9d25...d11c94`; sonic `0x86112b...e8da63`; sonic `0x88dd90...218c34`; sonic `0xcc835d...2b8fca`; sonic `0xd4aa38...592e22`; sonic `0xd600ec...eaa134`; sonic `0xd8a6f9...3028db`; sonic `0xdac174...951694`; sonic `0xdc2de2...d1a88b`; base [`0x17b9b0...fe24eb`](./contracts/base-8453/0x17b9b0d1d64a26e9380289600231f18e37fe24eb/); base `0x223bfa...5838d7`; base `0x248bb3...ab7c61`; base `0x49d19c...173ac7`; base `0x549a36...da7d7e`; base `0x981b34...1d065b`; base `0xf704d9...d6f754` | ⚠️ Unaudited |
 | impermaxBorrowableERC4626Wrapper | core_logic | sonic | 2 deployments: sonic [`0xc7d318...00d083`](./contracts/sonic-146/0xc7d31877e3b1d55ff48a6e3dcfa846fa3e00d083/); sonic `0xffa942...3dccf0` | ⚠️ Unaudited |
 | BeaconProxyFactory | registry | sonic | 3 deployments: sonic [`0x0d4e88...212967`](./contracts/sonic-146/0x0d4e88ea618bb5b4bc7f143bd16e4b5640212967/); sonic `0x15864c...b01dfc`; sonic `0x769e38...c6ccdd` | ⚠️ Unaudited |
-| BribeFactory | operational_periphery | sonic | 6 deployments: sonic [`0x0f0c34...067160`](./contracts/sonic-146/0x0f0c346dff7ea5d612c67dc3eb06f6166a067160/); sonic `0x3dd53e...cefc2e`; sonic `0xa07662...5de5c4`; sonic `0xded257...6d456e`; sonic `0xfeffd4...d9f60f`; base `0xcb418f...30ae18` | ⚠️ Unaudited |
+| BribeFactory | operational_periphery | sonic | 7 deployments: sonic [`0x0f0c34...067160`](./contracts/sonic-146/0x0f0c346dff7ea5d612c67dc3eb06f6166a067160/); sonic `0x3dd53e...cefc2e`; sonic `0xa07662...5de5c4`; sonic `0xded257...6d456e`; sonic `0xfeffd4...d9f60f`; base `0x90cda9...e93297`; base `0xcb418f...30ae18` | ⚠️ Unaudited |
 | Burner | unknown | sonic | [`0xe79ea8...f75f51`](./contracts/sonic-146/0xe79ea8606577fc1a846013e23ff2532919f75f51/) | ⚠️ Unaudited |
 | elitenessERC4626 | unknown | sonic | 2 deployments: sonic [`0x8de568...ba1e22`](./contracts/sonic-146/0x8de568691a1a6356b46418fdc12e1694a1ba1e22/); sonic `0xac4bb9...6c8877` | ⚠️ Unaudited |
 | ElitenessFarmland | unknown | sonic | 6 deployments: sonic [`0x11cfb3...d75240`](./contracts/sonic-146/0x11cfb329caaca6d7da69734d10c7ec70afd75240/); sonic `0x21c99e...90e006`; sonic `0x381a53...81073e`; sonic `0xd58273...21faa0`; sonic `0xde24d6...966ec7`; sonic `0xfaa72e...b87f40` | ⚠️ Unaudited |
@@ -65,7 +65,7 @@ The THICK and 2THICK families provide the AMM layer, while the Scale and Deploye
 | eLOCKS | unknown | sonic | 6 deployments: sonic [`0x26d70b...7e35da`](./contracts/sonic-146/0x26d70b26df8619fd3eeec07e22873b9f617e35da/); sonic `0x3518b5...ad89eb`; sonic `0x3e2866...6f308e`; sonic `0x7f7fc8...fffe99`; sonic `0x8ff927...51a430`; base `0xa9a3e3...0d6a6a` | ⚠️ Unaudited |
 | ElToken | token | base | 4 deployments: base [`0x1613ab...f58bef`](./contracts/base-8453/0x1613ab1a7cbd35ce942beb6ae857444d78f58bef/); base `0x5301bc...1ffe5c`; base `0x74ebd0...fc3502`; base `0x7e55f9...6c8f62` | ⚠️ Unaudited |
 | elTokenZap | adapter | sonic | 4 deployments: sonic [`0x7f142a...d14134`](./contracts/sonic-146/0x7f142a18f1b476809c4994c63811fef4afd14134/); sonic `0xba65aa...d10692`; sonic `0xcc4bae...5ae56c`; sonic `0xe339f4...265055` | ⚠️ Unaudited |
-| Equal | unknown | sonic | 13 deployments: sonic [`0x0dd7c0...51fe2c`](./contracts/sonic-146/0x0dd7c089612fcea9a61e30c34983a0934751fe2c/); sonic `0x16641a...0b26c8`; sonic `0x21c785...8b3383`; sonic `0x591e02...11dac4`; sonic `0x5babd5...f52b63`; sonic `0xa821d1...20b5fd`; sonic `0xb934de...fe602c`; sonic `0xcfc8d2...c64f15`; sonic `0xddf26b...0d5f19`; sonic `0xefbf87...f330f2`; sonic `0xfa6d96...dbe89b`; base `0x54016a...d9c32c`; base `0xdf4869...1be136` | ⚠️ Unaudited |
+| Equal | unknown | sonic | 14 deployments: sonic [`0x0dd7c0...51fe2c`](./contracts/sonic-146/0x0dd7c089612fcea9a61e30c34983a0934751fe2c/); sonic `0x16641a...0b26c8`; sonic `0x21c785...8b3383`; sonic `0x591e02...11dac4`; sonic `0x5babd5...f52b63`; sonic `0xa821d1...20b5fd`; sonic `0xb934de...fe602c`; sonic `0xcfc8d2...c64f15`; sonic `0xddf26b...0d5f19`; sonic `0xefbf87...f330f2`; sonic `0xfa6d96...dbe89b`; base `0x54016a...d9c32c`; base `0x7be024...101eab`; base `0xdf4869...1be136` | ⚠️ Unaudited |
 | Equalens_supplyStats | periphery | sonic | 3 deployments: sonic [`0x1b62eb...4b2f89`](./contracts/sonic-146/0x1b62eb66389456187576907b2fce1fe2274b2f89/); sonic `0x6ce928...fde033`; sonic `0xd1cc94...2f13ae` | ⚠️ Unaudited |
 | EqualizerLibrary | unknown | base | 3 deployments: base [`0x10b1df...e47d10`](./contracts/base-8453/0x10b1df11a6834ac8afe6efa654fc8c8396e47d10/); base `0x3ba64e...56a481`; base `0x75a1d7...053859` | ⚠️ Unaudited |
 | ERC1967Proxy | proxy | sonic | [`0x83291f...3ac4d4`](./contracts/sonic-146/0x83291ffc4831844dbcb5cd31fd8aab39e93ac4d4/) | ⚠️ Unaudited |
@@ -74,19 +74,21 @@ The THICK and 2THICK families provide the AMM layer, while the Scale and Deploye
 | FeeTierManager_2Thick | governance | sonic | [`0x5126cb...77dc30`](./contracts/sonic-146/0x5126cbc2597681cdc7c648dd74b19fb12f77dc30/) | ⚠️ Unaudited |
 | GaugeFactory | operational_periphery | sonic | 6 deployments: sonic [`0x1c0f3c...6e37b9`](./contracts/sonic-146/0x1c0f3c36c68cf8e12e0abe83f03062bc3d6e37b9/); base `0x7b7faf...8ebd27`; base `0x999740...91885f`; base `0xa4d2b9...8b0c85`; base `0xb136b4...db13d6`; base `0xcc835d...2b8fca` | ⚠️ Unaudited |
 | LocklessReceiptMinter | unknown | sonic | 2 deployments: sonic [`0x0d571c...445ca2`](./contracts/sonic-146/0x0d571c1ac1e1d806256d639eef65a017b8445ca2/); sonic `0x8b2d8e...445f6e` | ⚠️ Unaudited |
-| Minter | operational_periphery | sonic | 8 deployments: sonic [`0x078c68...dc8ecb`](./contracts/sonic-146/0x078c68189c788f2e1df314276fd5492a32dc8ecb/); sonic `0x1c065b...d303fa`; sonic `0x3fdd8a...68de1e`; sonic `0x7697cc...11147b`; sonic `0xb87119...86322a`; base `0x41c4d6...89a7e4`; base `0x44621c...005685`; base `0xa1b88e...ab54b4` | ⚠️ Unaudited |
+| Minter | operational_periphery | sonic | 9 deployments: sonic [`0x078c68...dc8ecb`](./contracts/sonic-146/0x078c68189c788f2e1df314276fd5492a32dc8ecb/); sonic `0x1c065b...d303fa`; sonic `0x3fdd8a...68de1e`; sonic `0x7697cc...11147b`; sonic `0xb87119...86322a`; base `0x41c4d6...89a7e4`; base `0x44621c...005685`; base `0x731372...b8dd46`; base `0xa1b88e...ab54b4` | ⚠️ Unaudited |
 | MultiNotify | unknown | sonic | 2 deployments: sonic [`0x990d2c...7fab3b`](./contracts/sonic-146/0x990d2cd2b095fd57d532cf12d9f58dbe3e7fab3b/); base `0xf7d8c4...07d792` | ⚠️ Unaudited |
 | multiNotifyEqualToEltokenGauge | operational_periphery | sonic | 10 deployments: sonic [`0x1244a7...b9c92c`](./contracts/sonic-146/0x1244a7a6ee179bbbd332f6f6673259e569b9c92c/); sonic `0x4e552d...ec2463`; sonic `0x608469...baa077`; sonic `0x79f90d...236f49`; sonic `0x8a9690...d83e9a`; sonic `0xac4dbd...19e075`; sonic `0xb959fa...ec8c8b`; sonic `0xe377f2...7cf89c`; sonic `0xfb3e3d...7be6bc`; sonic `0xff1329...62856e` | ⚠️ Unaudited |
 | NFP_Staker | core_logic | sonic | 8 deployments: sonic [`0x00a76d...df1306`](./contracts/sonic-146/0x00a76d63cf6a514f1f9038a5afd7fb5b29df1306/); sonic `0x8273ae...780af1`; sonic `0x9a1874...3b8209`; sonic `0xafe7ac...103ad8`; sonic `0xcfa61d...13dca2`; sonic `0xd7a6f1...35c56c`; sonic `0xdc5847...5ee35f`; sonic `0xdf8057...828c09` | ⚠️ Unaudited |
 | NFTDescriptor | token | base | [`0x97a7b2...d85073`](./contracts/base-8453/0x97a7b2f95fda7181da16aec3072cd55a58d85073/) | ⚠️ Unaudited |
-| NonfungiblePositionManager | operational_periphery | base | 4 deployments: sonic `0x79c26d...516de5`; sonic `0xc90526...23fa0b`; base [`0x2b5229...6d7c2f`](./contracts/base-8453/0x2b52294425a9a229322228de659ede9d146d7c2f/); base `0x79c26d...516de5` | ⚠️ Unaudited |
-| PairFactory | registry | sonic | 10 deployments: sonic [`0x312e1f...00572d`](./contracts/sonic-146/0x312e1fd8f3281b8b476030ed1b058f62d800572d/); sonic `0xb6a21a...52f637`; sonic `0xcdc292...6bf6a0`; sonic `0xddd984...528fcc`; sonic `0xfcfa93...4fdf2d`; base `0x39cc81...b1d91c`; base `0x653ce1...ad3414`; base `0xc295f6...197250`; base `0xd7627e...b222e1`; base `0xed8db6...b5ec04` | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | base | 4 deployments: sonic `0x79c26d...516de5`; sonic `0xc90526...23fa0b`; base [`0x2b5229...6d7c2f`](./contracts/base-8453/0x2b52294425a9a229322228de659ede9d146d7c2f/); base `0x79c26d...516de5` | ⚠️ Unaudited |
+| Pair | unknown | base | [`0x83240b...6aac84`](./contracts/base-8453/0x83240b049fa89b65be714aed68e5b074df6aac84/) | ⚠️ Unaudited |
+| PairFactory | registry | sonic | 11 deployments: sonic [`0x312e1f...00572d`](./contracts/sonic-146/0x312e1fd8f3281b8b476030ed1b058f62d800572d/); sonic `0xb6a21a...52f637`; sonic `0xcdc292...6bf6a0`; sonic `0xddd984...528fcc`; sonic `0xfcfa93...4fdf2d`; base `0x39cc81...b1d91c`; base `0x653ce1...ad3414`; base `0x8104be...5a417f`; base `0xc295f6...197250`; base `0xd7627e...b222e1`; base `0xed8db6...b5ec04` | ⚠️ Unaudited |
 | PriceGuru | operational_periphery | base | [`0x02c32e...d98666`](./contracts/base-8453/0x02c32e0a34ab6fa5825565254f79c8c690d98666/) | ⚠️ Unaudited |
 | ProxyAdmin4 | governance | sonic | [`0x8eb10e...ebfa10`](./contracts/sonic-146/0x8eb10eb24d258f832f0d6603544b7ab794ebfa10/) | ⚠️ Unaudited |
 | QuoterV2 | periphery | sonic | 4 deployments: sonic [`0xc701e9...8db678`](./contracts/sonic-146/0xc701e92db1ef14ab64f66f18536b1e07678db678/); sonic `0xd3c938...366142`; base [`0xc701e9...8db678`](./contracts/base-8453/0xc701e92db1ef14ab64f66f18536b1e07678db678/); base `0xf5b718...beff98` | ⚠️ Unaudited |
 | Router02 | adapter | sonic | [`0x7635cd...d27e4b`](./contracts/sonic-146/0x7635cd591cfe965be8bec60da6ea69b6dcd27e4b/) | ⚠️ Unaudited |
 | Router03 | adapter | sonic | 6 deployments: sonic [`0x0929b8...d284de`](./contracts/sonic-146/0x0929b85d1bf640e5af61ed97a30ace3058d284de/); sonic `0x571b19...c0d431`; sonic `0x608776...f0189e`; sonic `0xb7861f...a9b268`; sonic `0xc477f0...7cb1e6`; sonic `0xcc6169...d23fad` | ⚠️ Unaudited |
 | sAMM_Oracle | operational_periphery | sonic | [`0x0d809f...789048`](./contracts/sonic-146/0x0d809fc015810ce75aa1c939c28e1355ad789048/) | ⚠️ Unaudited |
+| Scalepounder | unknown | base | 3 deployments: base [`0x659aa8...12b9e9`](./contracts/base-8453/0x659aa8d33caaba3e178551af4e439f99dd12b9e9/); base `0x74a022...dbc272`; base `0xde0ec1...d61606` | ⚠️ Unaudited |
 | ScaleRouter | adapter | base | 2 deployments: base [`0x2f87bf...2be6fa`](./contracts/base-8453/0x2f87bf58d5a9b2efade55cdbd46153a0902be6fa/); base `0x5e9d25...d11c94` | ⚠️ Unaudited |
 | SolidlyExtendedRouter03 | adapter | base | 3 deployments: base [`0x641135...66e9bb`](./contracts/base-8453/0x6411350def83147130b26c1e90dc7afbbb66e9bb/); base `0x750281...9e422f`; base `0xa78618...97aaab` | ⚠️ Unaudited |
 | solidlyRouterCalcs | adapter | sonic | 2 deployments: sonic [`0x27a2bd...157a80`](./contracts/sonic-146/0x27a2bd2070675ac6b40ecc6ed2ef5bcc25157a80/); sonic `0x442d31...b8db95` | ⚠️ Unaudited |
@@ -101,7 +103,7 @@ The THICK and 2THICK families provide the AMM layer, while the Scale and Deploye
 | UniswapV3Factory | registry | sonic | 4 deployments: sonic [`0x7ca1dc...8f1c40`](./contracts/sonic-146/0x7ca1dccfb4f49564b8f13e18a67747fd428f1c40/); sonic `0xe6da85...bb9d24`; base [`0x7ca1dc...8f1c40`](./contracts/base-8453/0x7ca1dccfb4f49564b8f13e18a67747fd428f1c40/); base `0xe6da85...bb9d24` | ⚠️ Unaudited |
 | UpgradeableBeacon | registry | sonic | 2 deployments: sonic [`0x5ebd65...047437`](./contracts/sonic-146/0x5ebd6536a0f8dc9b2aad4a8e750eafff60047437/); sonic `0xb654fa...9beead` | ⚠️ Unaudited |
 | Voter | unknown | base | 16 deployments: sonic `0x064e1c...d5b3ae`; sonic `0x16448c...ffe52c`; sonic `0x17fa9d...cb10b4`; sonic `0x240e58...87db9f`; sonic `0x5bce72...663bc3`; sonic `0x5cb8cb...4fc109`; sonic `0xc72d0d...c6858b`; sonic `0xc9a2e4...f26ec3`; sonic `0xe164f4...e1fb47`; base [`0x050b42...d4e842`](./contracts/base-8453/0x050b424b074ae99a8c4fd176aad21fafa8d4e842/); base `0x18c7ad...68845a`; base `0x423278...a325a3`; base `0x46abb8...592687`; base `0xa8bc72...849aa2`; base `0xf79518...5b9d31`; base `0xf88005...1cff21` | ⚠️ Unaudited |
-| VotingEscrow | operational_periphery | sonic | 12 deployments: sonic [`0x0a4531...9fbbfd`](./contracts/sonic-146/0x0a4531ded5c360c468b560ffdbce6058e19fbbfd/); sonic `0x304511...f7235a`; sonic `0x58df0d...bbeb03`; sonic `0x8a1eac...b6ff68`; sonic `0xac3323...33325d`; sonic `0xb69d5f...ed339b`; sonic `0xbdc4cc...e02581`; sonic `0xe90f1b...e9893b`; sonic `0xff002f...23b279`; base `0x28c9c7...d51c53`; base `0x3ce7ba...053549`; base `0x88c321...be7db1` | ⚠️ Unaudited |
+| VotingEscrow | operational_periphery | sonic | 13 deployments: sonic [`0x0a4531...9fbbfd`](./contracts/sonic-146/0x0a4531ded5c360c468b560ffdbce6058e19fbbfd/); sonic `0x304511...f7235a`; sonic `0x58df0d...bbeb03`; sonic `0x8a1eac...b6ff68`; sonic `0xac3323...33325d`; sonic `0xb69d5f...ed339b`; sonic `0xbdc4cc...e02581`; sonic `0xe90f1b...e9893b`; sonic `0xff002f...23b279`; base `0x1d6dc8...2e71d7`; base `0x28c9c7...d51c53`; base `0x3ce7ba...053549`; base `0x88c321...be7db1` | ⚠️ Unaudited |
 | weightedMultiTokenBalance | token | sonic | [`0xe41b49...587eae`](./contracts/sonic-146/0xe41b49a03b367ecb41f834801c7f1922d8587eae/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -119,7 +121,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 | ProxyAdmin | governance | sonic | 17 deployments: sonic [`0x0be40f...c1d1aa`](./contracts/sonic-146/0x0be40f3289c1a2b7c380086490393e6ef7c1d1aa/); sonic `0x1d864a...ed1f2e`; sonic `0x3ba64e...56a481`; sonic `0x4fdd88...487c6c`; sonic `0x5cfdf3...627db6`; sonic `0x687dad...3f571e`; sonic `0x6d93a9...9f8356`; sonic `0x93b25c...891738`; sonic `0xa543f1...ea7324`; sonic `0xc55ebf...be0979`; sonic `0xcd4f9a...ae0304`; sonic `0xeaa0dc...92125a`; sonic `0xf2d79a...4846ca`; base `0x23c5e5...a4d71e`; base `0x687dad...3f571e`; base `0x7de814...e71c1e`; base `0xfab311...fa888b` | ⚠️ Unaudited (bytecode match) |
 | UniswapInterfaceMulticall | periphery | base | 3 deployments: sonic `0x9b500c...e542e7`; base [`0x4c2968...1681e3`](./contracts/base-8453/0x4c29682a07c50dd5f6bdf36eb97fb28f5c1681e3/); base `0x9b500c...e542e7` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (240)
+### ❓ Unverified (241)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -360,6 +362,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | base | `0xbed5a2...2fc3ea` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0xcc1eff...5fee93` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0xd45f5d...fccf9b` | ❓ Unverified |
+| UnnamedContract | unknown | base | `0xd467b1...574075` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0xe4ba08...7500df` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0xee5263...fdfa9d` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0xf024aa...7e779b` | ❓ Unverified |
@@ -391,7 +394,6 @@ Verified + unaudited native implementations ranked by TVL:
 | sonic | [`0x0dd7c0...51fe2c`](./contracts/sonic-146/0x0dd7c089612fcea9a61e30c34983a0934751fe2c/) | Equal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x1b62eb...4b2f89`](./contracts/sonic-146/0x1b62eb66389456187576907b2fce1fe2274b2f89/) | Equalens_supplyStats | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x10b1df...e47d10`](./contracts/base-8453/0x10b1df11a6834ac8afe6efa654fc8c8396e47d10/) | EqualizerLibrary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x807c19...08542d`](./contracts/sonic-146/0x807c19badabc848336fe0379bd659e4e4608542d/) | fBOMB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x11b3dc...a1218e`](./contracts/base-8453/0x11b3dc196ce5195e0ab82052cb9dfd468da1218e/) | FeeSynthesizer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x5126cb...77dc30`](./contracts/sonic-146/0x5126cbc2597681cdc7c648dd74b19fb12f77dc30/) | FeeTierManager_2Thick | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x1c0f3c...6e37b9`](./contracts/sonic-146/0x1c0f3c36c68cf8e12e0abe83f03062bc3d6e37b9/) | GaugeFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -401,11 +403,13 @@ Verified + unaudited native implementations ranked by TVL:
 | sonic | [`0x1244a7...b9c92c`](./contracts/sonic-146/0x1244a7a6ee179bbbd332f6f6673259e569b9c92c/) | multiNotifyEqualToEltokenGauge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x00a76d...df1306`](./contracts/sonic-146/0x00a76d63cf6a514f1f9038a5afd7fb5b29df1306/) | NFP_Staker | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x97a7b2...d85073`](./contracts/base-8453/0x97a7b2f95fda7181da16aec3072cd55a58d85073/) | NFTDescriptor | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x83240b...6aac84`](./contracts/base-8453/0x83240b049fa89b65be714aed68e5b074df6aac84/) | Pair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x312e1f...00572d`](./contracts/sonic-146/0x312e1fd8f3281b8b476030ed1b058f62d800572d/) | PairFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x02c32e...d98666`](./contracts/base-8453/0x02c32e0a34ab6fa5825565254f79c8c690d98666/) | PriceGuru | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x7635cd...d27e4b`](./contracts/sonic-146/0x7635cd591cfe965be8bec60da6ea69b6dcd27e4b/) | Router02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x0929b8...d284de`](./contracts/sonic-146/0x0929b85d1bf640e5af61ed97a30ace3058d284de/) | Router03 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x0d809f...789048`](./contracts/sonic-146/0x0d809fc015810ce75aa1c939c28e1355ad789048/) | sAMM_Oracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x659aa8...12b9e9`](./contracts/base-8453/0x659aa8d33caaba3e178551af4e439f99dd12b9e9/) | Scalepounder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x2f87bf...2be6fa`](./contracts/base-8453/0x2f87bf58d5a9b2efade55cdbd46153a0902be6fa/) | ScaleRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x641135...66e9bb`](./contracts/base-8453/0x6411350def83147130b26c1e90dc7afbbb66e9bb/) | SolidlyExtendedRouter03 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x27a2bd...157a80`](./contracts/sonic-146/0x27a2bd2070675ac6b40ecc6ed2ef5bcc25157a80/) | solidlyRouterCalcs | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -423,10 +427,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 151 |
+| native | 136 |
 | upstream | 12 |
-| standard_library | 6 |
-| needs_review | 123 |
+| standard_library | 4 |
+| needs_review | 143 |
 
 ## Scope Matching Notes
 

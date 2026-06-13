@@ -657,6 +657,7 @@ Each project directory contains:
 | [kava-lend](./kava-lend/brief.md) | $10.63M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [kava-liquid](./kava-liquid/brief.md) | $1.55M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [kava-mint](./kava-mint/brief.md) | $11.06M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
+| [kawaiiswap](./kawaiiswap/brief.md) | $798.68 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [keeta-bridge](./keeta-bridge/brief.md) | $1.06M | base | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [keiko-finance](./keiko-finance/brief.md) | $45.40K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [keyring](./keyring/brief.md) | $6.22M | avalanche, ethereum | 73 | 47/73 (64%) | 17.0% | 12.8% (Certora, ChainSecurity, Cyfrin, Spearbit) | 15 | fresh | ✅ active | - |
@@ -669,11 +670,15 @@ Each project directory contains:
 | [klayswap](./klayswap/brief.md) | $4.51M | klaytn | 22 | 0/22 (0%) | 0.0% | 0.0% (-) | 0 | aging | ⚠️ declining | - |
 | [kodiak](./kodiak/brief.md) | $29.04M | - | 0 | - | 0.0% | 0.0% (-) | 1 | aging | ❓ unknown | - |
 | [kogefarm](./kogefarm/brief.md) | $138.22K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [kyrios-finance](./kyrios-finance/brief.md) | $197.51 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [laari-finance](./laari-finance/brief.md) | $0.04 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [landx-finance](./landx-finance/brief.md) | $1.77M | ethereum | 3 | 3/3 (100%) | 100.0% | 0.0% (-) | 1 | stale | ✅ active | - |
 | [larix](./larix/brief.md) | $1.01M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [latteswap](./latteswap/brief.md) | $54.94K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [layerbank](./layerbank/brief.md) | $23.19M | 4 | 91 | 13/91 (14%) | 50.0% | 0.0% (-) | 2 | fresh | ⚠️ declining | - |
 | [lbank](./lbank/brief.md) | $9.76M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [levex](./levex/brief.md) | $10.51M | bsc, ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [levvy-finance](./levvy-finance/brief.md) | $46.23K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [liminal](./liminal/brief.md) | $24.93M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [linear-protocol](./linear-protocol/brief.md) | $59.63M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [liquidity-house](./liquidity-house/brief.md) | $1.44M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -937,5 +942,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T11:42:34.896Z_
-_Projects: 925_
+_Generated: 2026-06-13T11:45:04.628Z_
+_Projects: 930_

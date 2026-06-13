@@ -433,6 +433,7 @@
 | [kava-lend](./kava-lend/) | $10.6M | 0.0% | ? | active | 1 | 1 | 2026-06-12 |
 | [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
 | [kava-mint](./kava-mint/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-06-12 |
+| [kawaiiswap](./kawaiiswap/) | $798.7 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [keep-network](./keep-network/) | $25.5M | 7.9% | $24.7M | declining | 18 | 225 | 2026-06-11 |
 | [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | declining | 1 | 480 | 2026-06-11 |
 | [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 0 | 4 | 2026-06-11 |
@@ -453,10 +454,13 @@
 | [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-06-11 |
 | [kuma-protocol](./kuma-protocol/) | $3.1M | 28.1% | $23.1K | active | 3 | 53 | 2026-06-11 |
 | [kyberswap](./kyberswap/) | $58.3M | 8.8% | $58.3M | declining | 6 | 445 | 2026-06-11 |
+| [kyrios-finance](./kyrios-finance/) | $197.5 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [laari-finance](./laari-finance/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-06-11 |
 | [landx-finance](./landx-finance/) | $1.8M | 100.0% | ? | active | 1 | 3 | 2026-06-11 |
 | [larix](./larix/) | $1.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [latch](./latch/) | $189.8 | 0.0% | $189.8 | declining | 0 | 1 | 2026-06-11 |
+| [latteswap](./latteswap/) | $54.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | declining | 4 | 91 | 2026-06-11 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | active | 0 | 107 | 2026-06-11 |
@@ -464,6 +468,7 @@
 | [lendle](./lendle/) | $60.7K | 43.2% | $5.6K | declining | 9 | 64 | 2026-06-11 |
 | [lets-get-hai](./lets-get-hai/) | $13.5M | 77.4% | $12.6M | active | 5 | 54 | 2026-06-11 |
 | [levex](./levex/) | $10.5M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
+| [levvy-finance](./levvy-finance/) | $46.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [liminal](./liminal/) | $24.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [linear-protocol](./linear-protocol/) | $59.6M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |

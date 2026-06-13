@@ -377,9 +377,11 @@ Each project directory contains:
 | [1sec](./1sec/brief.md) | $1.48M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [21.co](./21.co/brief.md) | $2.24 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [3f-mutual](./3f-mutual/brief.md) | $3.88M | ethereum | 21 | 18/21 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [3xcalibur](./3xcalibur/brief.md) | $2.58K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [a51-finance](./a51-finance/brief.md) | $13.53K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [abc-pool](./abc-pool/brief.md) | $5.96M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [abel-finance](./abel-finance/brief.md) | $407.18K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [abyss](./abyss/brief.md) | $757.46K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [acala-euphrates](./acala-euphrates/brief.md) | $243.39K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [access-protocol](./access-protocol/brief.md) | $879.73K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [acet](./acet/brief.md) | $12.02K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -387,8 +389,10 @@ Each project directory contains:
 | [aegis-markets](./aegis-markets/brief.md) | $2.33M | base, unichain | 15 | 12/15 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [aera](./aera/brief.md) | $132.55M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [aftermath-finance](./aftermath-finance/brief.md) | $4.98M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [agile-finance](./agile-finance/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [aimstrong](./aimstrong/brief.md) | $184.80 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [aitech](./aitech/brief.md) | $3.96M | bsc | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
+| [akropolis](./akropolis/brief.md) | $5.83K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [aladdin-dao](./aladdin-dao/brief.md) | $23.21K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [algodex](./algodex/brief.md) | $2.72K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [alium-swap](./alium-swap/brief.md) | $15.04K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -993,5 +997,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T12:10:46.966Z_
-_Projects: 981_
+_Generated: 2026-06-13T12:13:15.867Z_
+_Projects: 985_

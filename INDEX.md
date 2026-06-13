@@ -8,11 +8,13 @@
 | [21.co](./21.co/) | $2.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [3f-mutual](./3f-mutual/) | $3.9M | 0.0% | ? | active | 0 | 21 | 2026-06-10 |
 | [3jane](./3jane/) | $76.6M | 61.9% | $76.6M | declining | 4 | 23 | 2026-06-10 |
+| [3xcalibur](./3xcalibur/) | $2.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [40-acres](./40-acres/) | $10.0M | 0.0% | $10.0M | active | 4 | 325 | 2026-06-12 |
 | [a51-finance](./a51-finance/) | $13.5K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [abc-pool](./abc-pool/) | $6.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [abel-finance](./abel-finance/) | $407.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [abracadabra](./abracadabra/) | $0.0 | 4.7% | $0.0 | declining | 5 | 881 | 2026-06-13 |
+| [abyss](./abyss/) | $757.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [acala-euphrates](./acala-euphrates/) | $243.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [access-protocol](./access-protocol/) | $879.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 3 | 43 | 2026-06-10 |
@@ -26,9 +28,11 @@
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | active | 0 | 7 | 2026-06-13 |
 | [aevo](./aevo/) | $96.8M | 11.8% | $26.1M | active | 13 | 256 | 2026-06-10 |
 | [aftermath-finance](./aftermath-finance/) | $5.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
+| [agile-finance](./agile-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ailayer-farm](./ailayer-farm/) | $211.9K | 0.0% | $211.9K | active | 0 | 1 | 2026-06-12 |
 | [aimstrong](./aimstrong/) | $184.8 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [aitech](./aitech/) | $4.0M | 0.0% | ? | active | 1 | 2 | 2026-06-10 |
+| [akropolis](./akropolis/) | $5.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [aladdin-dao](./aladdin-dao/) | $23.2K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [alchemix](./alchemix/) | $340.7M | 6.4% | $338.7M | active | 11 | 388 | 2026-06-10 |
 | [algodex](./algodex/) | $2.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |

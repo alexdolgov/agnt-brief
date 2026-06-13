@@ -389,6 +389,7 @@ Each project directory contains:
 | [ao-bridge](./ao-bridge/brief.md) | $43.01M | ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [arcade.xyz](./arcade.xyz/brief.md) | $5.12M | ethereum | 60 | 43/60 (72%) | 67.4% | 30.2% (Trail of Bits) | 10 | stale | ⚠️ declining | - |
 | [arcadia-finance](./arcadia-finance/brief.md) | $7.21M | base, optimism, unichain | 55 | 52/55 (95%) | 63.5% | 53.8% (Sherlock) | 12 | fresh | ✅ active | - |
+| [arche](./arche/brief.md) | $2.32K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [aria-protocol](./aria-protocol/brief.md) | $181.05K | bsc | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [asseto-aoabt](./asseto-aoabt/brief.md) | $24.28M | avalanche | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [asseto-cash+](./asseto-cash+/brief.md) | $1.40M | ethereum | 2 | 1/2 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -417,6 +418,7 @@ Each project directory contains:
 | [botto](./botto/brief.md) | $4.11M | base, ethereum | 18 | 13/18 (72%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [bounce.tech](./bounce.tech/brief.md) | $1.12M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [bouncebit-prime](./bouncebit-prime/brief.md) | $11.94M | bsc, ethereum | 9 | 2/9 (22%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [brahma-vaults-(sunset)](./brahma-vaults-(sunset)/brief.md) | $22.37K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [brickken](./brickken/brief.md) | $42.20M | 4 | 31 | 7/31 (23%) | 20.0% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [bridgers](./bridgers/brief.md) | $1.60M | 8 | 6 | 1/6 (17%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [btcfi](./btcfi/brief.md) | $9.64M | base | 15 | 1/15 (7%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -523,6 +525,7 @@ Each project directory contains:
 | [initiadex](./initiadex/brief.md) | $3.03M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [ink-bridge](./ink-bridge/brief.md) | $59.29M | ethereum, ink, optimism | 68 | 25/68 (37%) | 44.0% | 44.0% (Spearbit, Trail of Bits) | 5 | aging | ✅ active | - |
 | [ionic-protocol](./ionic-protocol/brief.md) | $2.04M | bsc, mode | 420 | 55/420 (13%) | 1.8% | 0.0% (-) | 1 | stale | 💀 dead | - |
+| [jito](./jito/brief.md) | $642.52M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [juicebox](./juicebox/brief.md) | $8.63M | 8 | 77 | 68/77 (88%) | 5.9% | 0.0% (-) | 1 | stale | ✅ active | - |
 | [k2](./k2/brief.md) | $4.66M | ethereum | 30 | 21/30 (70%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [kaio](./kaio/brief.md) | $60.81M | 4 | 35 | 4/35 (11%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -632,6 +635,7 @@ Each project directory contains:
 | [reflexer](./reflexer/brief.md) | $2.32M | ethereum | 64 | 22/64 (34%) | 40.9% | 0.0% (-) | 3 | stale | ⚠️ declining | - |
 | [revault](./revault/brief.md) | $1.96M | bsc | 75 | 20/75 (27%) | 45.0% | 0.0% (-) | 1 | stale | ⚠️ declining | - |
 | [rex-staking](./rex-staking/brief.md) | $2.01M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [rheo](./rheo/brief.md) | $33.31K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [rho](./rho/brief.md) | $2.47M | ethereum | 31 | 1/31 (3%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [risex](./risex/brief.md) | $4.29M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [ronin-bridge](./ronin-bridge/brief.md) | $4.55M | ethereum | 11 | 5/11 (45%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
@@ -680,7 +684,7 @@ Each project directory contains:
 | [supernova](./supernova/brief.md) | $2.12M | ethereum | 47 | 47/47 (100%) | 48.9% | 0.0% (-) | 1 | fresh | ⚠️ declining | - |
 | [swappi](./swappi/brief.md) | $1.88M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [swapscanner](./swapscanner/brief.md) | $4.38M | klaytn | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
-| [swell](./swell/brief.md) | $130.10M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [swell](./swell/brief.md) | $100.54M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [swellchain-bridge](./swellchain-bridge/brief.md) | $1.16M | ethereum | 10 | 10/10 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [syncswap-protocol](./syncswap-protocol/brief.md) | $9.69M | linea, scroll, zksync-era | 157 | 30/157 (19%) | 23.3% | 0.0% (-) | 3 | stale | ✅ active | - |
 | [tangible](./tangible/brief.md) | $41.93M | 6 | 475 | 262/475 (55%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
@@ -733,5 +737,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T10:03:09.953Z_
-_Projects: 721_
+_Generated: 2026-06-13T10:05:43.844Z_
+_Projects: 725_

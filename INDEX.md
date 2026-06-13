@@ -46,6 +46,7 @@
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 59 | 2026-06-12 |
 | [arcade.xyz](./arcade.xyz/) | $240.1K | 67.4% | ? | declining | 10 | 60 | 2026-06-10 |
 | [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-06-10 |
+| [arche](./arche/) | $2.3K | 0.0% | ? | unknown | 14 | 0 | 2026-06-13 |
 | [aria-protocol](./aria-protocol/) | $181.1K | 0.0% | ? | dead | 1 | 1 | 2026-06-10 |
 | [armitage-by-wintermute](./armitage-by-wintermute/) | $51.8M | 0.0% | $51.8M | unknown | 0 | 7 | 2026-06-12 |
 | [arrakis-finance](./arrakis-finance/) | $128.2K | 19.4% | $3.1K | active | 8 | 124 | 2026-06-10 |
@@ -105,6 +106,7 @@
 | [bounce.tech](./bounce.tech/) | $1.1M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
 | [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 9 | 2026-06-12 |
 | [bracket-protocol](./bracket-protocol/) | $622.4M | 17.4% | $619.3M | active | 5 | 58 | 2026-06-10 |
+| [brahma-vaults-(sunset)](./brahma-vaults-(sunset)/) | $22.4K | 0.0% | ? | unknown | 14 | 0 | 2026-06-13 |
 | [brickken](./brickken/) | $42.2M | 20.0% | ? | active | 2 | 31 | 2026-06-12 |
 | [bridgers](./bridgers/) | $1.6M | 0.0% | ? | active | 1 | 6 | 2026-06-10 |
 | [brotocol](./brotocol/) | $447.6M | 20.0% | $447.6M | unknown | 14 | 76 | 2026-06-13 |
@@ -296,6 +298,7 @@
 | [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 39 | 2026-06-11 |
 | [iq](./iq/) | $23.9M | 0.0% | $23.9M | active | 0 | 2 | 2026-06-11 |
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | declining | 0 | 181 | 2026-06-11 |
+| [jito](./jito/) | $642.5M | 0.0% | ? | unknown | 15 | 0 | 2026-06-13 |
 | [jones-dao](./jones-dao/) | $519.7M | 0.0% | $519.7M | active | 5 | 502 | 2026-06-11 |
 | [juicebox](./juicebox/) | $8.6M | 5.9% | ? | active | 10 | 77 | 2026-06-11 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-06-11 |
@@ -503,6 +506,7 @@
 | [rex-staking](./rex-staking/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [reya](./reya/) | $57.3M | 0.0% | $57.3M | declining | 0 | 294 | 2026-06-12 |
 | [rezerve](./rezerve/) | $1.3M | 1.3% | $1.3M | active | 3 | 104 | 2026-06-11 |
+| [rheo](./rheo/) | $33.3K | 0.0% | ? | unknown | 16 | 0 | 2026-06-13 |
 | [rho](./rho/) | $2.5M | 0.0% | ? | active | 3 | 31 | 2026-06-11 |
 | [ribbon-finance](./ribbon-finance/) | $179.3M | 31.0% | $148.6M | declining | 14 | 147 | 2026-06-11 |
 | [ring-protocol](./ring-protocol/) | $83.5M | 10.6% | $83.5M | active | 8 | 90 | 2026-06-11 |
@@ -606,7 +610,7 @@
 | [swamp-finance](./swamp-finance/) | $0.1 | 0.0% | $0.1 | declining | 0 | 11 | 2026-06-11 |
 | [swappi](./swappi/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
 | [swapscanner](./swapscanner/) | $4.4M | 0.0% | ? | active | 1 | 2 | 2026-06-11 |
-| [swell](./swell/) | $130.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [swell](./swell/) | $100.5M | 0.0% | ? | unknown | 16 | 0 | 2026-06-13 |
 | [swellchain-bridge](./swellchain-bridge/) | $1.2M | 0.0% | ? | declining | 0 | 10 | 2026-06-11 |
 | [switcheo-finance](./switcheo-finance/) | $68.3M | 0.0% | $68.3M | active | 0 | 47 | 2026-06-11 |
 | [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 151 | 2026-06-13 |

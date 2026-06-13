@@ -1,0 +1,505 @@
+{
+  "schema_version": "2.0",
+  "project_key": "rheo",
+  "generated_at": "2026-06-13T10:04:44.596Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 16,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 33307.465209999995,
+    "tvl_usd": 33307.465209999995,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://app.rheo.xyz/",
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-09",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 2,
+      "aging": 9,
+      "stale": 3,
+      "unknown": 2
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [
+    {
+      "audit_id": 13765,
+      "audit_key": "audit-13765",
+      "report_name": "Size-Spearbit-Security-Review.pdf",
+      "report_url": "https://github.com/spearbit/portfolio/blob/master/pdfs/Size-Spearbit-Security-Review.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13766,
+      "audit_key": "audit-13766",
+      "report_name": "Audit Report - Size Lending.pdf",
+      "report_url": "https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Size%20Lending.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13767,
+      "audit_key": "audit-13767",
+      "report_name": "v1.8",
+      "report_url": "https://github.com/SizeCredit/size-solidity/blob/main/audits/2025-06-23-Omniscia.pdf",
+      "auditor": "Omniscia",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13768,
+      "audit_key": "audit-13768",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/SizeCredit/size-solidity/c3fb2ceb65e05939f8e8ba46a34d43d26a3e485b/audits/2025-06-14-Cantina.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 13768,
+          "report_url": "https://raw.githubusercontent.com/SizeCredit/size-solidity/c3fb2ceb65e05939f8e8ba46a34d43d26a3e485b/audits/2025-06-14-Cantina.pdf"
+        },
+        {
+          "audit_id": 13774,
+          "report_url": "https://github.com/SizeCredit/size-solidity/blob/main/audits/2025-06-14-Cantina.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 13769,
+      "audit_key": "audit-13769",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/SizeCredit/size-solidity/c3fb2ceb65e05939f8e8ba46a34d43d26a3e485b/audits/2025-02-26-Cantina.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 13769,
+          "report_url": "https://raw.githubusercontent.com/SizeCredit/size-solidity/c3fb2ceb65e05939f8e8ba46a34d43d26a3e485b/audits/2025-02-26-Cantina.pdf"
+        },
+        {
+          "audit_id": 13775,
+          "report_url": "https://github.com/SizeCredit/size-solidity/blob/main/audits/2025-02-26-Cantina.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 13770,
+      "audit_key": "audit-13770",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/SizeCredit/size-solidity/c3fb2ceb65e05939f8e8ba46a34d43d26a3e485b/audits/2025-02-12-Custodia-Security.pdf",
+      "auditor": "Cantina",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13771,
+      "audit_key": "audit-13771",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/SizeCredit/size-solidity/c3fb2ceb65e05939f8e8ba46a34d43d26a3e485b/audits/2024-12-10-ChainDefenders.pdf",
+      "auditor": "Cantina",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13772,
+      "audit_key": "audit-13772",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/SizeCredit/size-solidity/c3fb2ceb65e05939f8e8ba46a34d43d26a3e485b/audits/2024-11-13-Custodia-Security.pdf",
+      "auditor": "Cantina",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13773,
+      "audit_key": "audit-13773",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/SizeCredit/size-solidity/c3fb2ceb65e05939f8e8ba46a34d43d26a3e485b/audits/2024-06-10-Code4rena.pdf",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "stale",
+      "date": "2024-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 13773,
+          "report_url": "https://raw.githubusercontent.com/SizeCredit/size-solidity/c3fb2ceb65e05939f8e8ba46a34d43d26a3e485b/audits/2024-06-10-Code4rena.pdf"
+        },
+        {
+          "audit_id": 13779,
+          "report_url": "https://github.com/SizeCredit/size-solidity/blob/main/audits/2024-06-10-Code4rena.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 13776,
+      "audit_key": "audit-13776",
+      "report_name": "v1.6.1",
+      "report_url": "https://github.com/SizeCredit/size-solidity/blob/main/audits/2025-02-12-Custodia-Security.pdf",
+      "auditor": "Custodia Security",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13777,
+      "audit_key": "audit-13777",
+      "report_name": "v1.5.1",
+      "report_url": "https://github.com/SizeCredit/size-solidity/blob/main/audits/2024-12-10-ChainDefenders.pdf",
+      "auditor": "Chain Defenders",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13778,
+      "audit_key": "audit-13778",
+      "report_name": "v1.5",
+      "report_url": "https://github.com/SizeCredit/size-solidity/blob/main/audits/2024-11-13-Custodia-Security.pdf",
+      "auditor": "Custodia Security",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13780,
+      "audit_key": "audit-13780",
+      "report_name": "v1.0-rc",
+      "report_url": "https://github.com/SizeCredit/size-solidity/blob/main/audits/2024-06-08-Spearbit.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13781,
+      "audit_key": "audit-13781",
+      "report_name": "2024-03-26-Solidified.pdf",
+      "report_url": "https://github.com/SizeCredit/size-solidity/blob/main/audits/2024-03-26-Solidified.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13782,
+      "audit_key": "audit-13782",
+      "report_name": "v0.1.0",
+      "report_url": "https://github.com/rheo-xyz/very-liquid-vaults/blob/main/audits/2025-09-11-OpenZeppelin.pdf",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13783,
+      "audit_key": "audit-13783",
+      "report_name": "2025-07-26-Obsidian-Audits.pdf",
+      "report_url": "https://github.com/rheo-xyz/very-liquid-vaults/blob/main/audits/2025-07-26-Obsidian-Audits.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 13765,
+        "report_name": "Size-Spearbit-Security-Review.pdf"
+      },
+      {
+        "audit_id": 13766,
+        "report_name": "Audit Report - Size Lending.pdf"
+      },
+      {
+        "audit_id": 13767,
+        "report_name": "v1.8"
+      },
+      {
+        "audit_id": 13768,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 13769,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 13770,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 13771,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 13772,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 13773,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 13776,
+        "report_name": "v1.6.1"
+      },
+      {
+        "audit_id": 13777,
+        "report_name": "v1.5.1"
+      },
+      {
+        "audit_id": 13778,
+        "report_name": "v1.5"
+      },
+      {
+        "audit_id": 13780,
+        "report_name": "v1.0-rc"
+      },
+      {
+        "audit_id": 13781,
+        "report_name": "2024-03-26-Solidified.pdf"
+      },
+      {
+        "audit_id": 13782,
+        "report_name": "v0.1.0"
+      },
+      {
+        "audit_id": 13783,
+        "report_name": "2025-07-26-Obsidian-Audits.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

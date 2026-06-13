@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "everything",
-  "generated_at": "2026-06-10T23:13:03.258Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-13T22:41:34.988Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-ab91",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "everything",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 22.807620599610143
   },
   "summary": {
-    "total_contracts": 10,
-    "total_addresses": 13,
-    "unique_implementations": 10,
-    "total_deployments": 13,
+    "total_contracts": 14,
+    "total_addresses": 16,
+    "unique_implementations": 14,
+    "total_deployments": 16,
     "audited_contracts": 0,
-    "unaudited_contracts": 4,
+    "unaudited_contracts": 6,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 4,
+    "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 6,
+    "contracts_unverified": 8,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 945261.2766199999,
-    "tvl_usd": 945261.2766199999,
+    "dl_tvl_usd": 710207.79608,
+    "tvl_usd": 710207.79608,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -61,7 +61,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 10,
+    "unique_implementations": 14,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -73,12 +73,12 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x43b280297a7f1dcc27f44f06cbedffa8b5fce74c",
+      "address": "0xdcca77dd282667561c4c611ff5de697002515dc1",
       "name": "EV",
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": null,
+      "product_line": "Everything",
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": "0xdcca77dd282667561c4c611ff5de697002515dc1",
@@ -87,7 +87,7 @@
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
-          "address": "0x43b280297a7f1dcc27f44f06cbedffa8b5fce74c",
+          "address": "0xdcca77dd282667561c4c611ff5de697002515dc1",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -108,31 +108,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x4d54c928d802eee6632177b6c146fc3e9b04d03a",
+      "address": "0xf432b2564cc0e233482a1f2af0eda4832cf435cd",
       "name": "NttManager",
       "role": "governance",
-      "origin_kind": "upstream",
-      "origin_provider": "wormhole",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x4d54c928d802eee6632177b6c146fc3e9b04d03a",
       "impl_name": "NttManager",
       "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x4d54c928d802eee6632177b6c146fc3e9b04d03a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
@@ -156,7 +147,7 @@
       "address": "0xabd8dc06559634e59f6698c33a5e65e90e917b91",
       "name": "Proxy (impl: 0x4e3ca901719c84cf86f4328d3d930b471de8acb5)",
       "role": "proxy",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Everything",
       "tvl_usd": null,
@@ -187,7 +178,7 @@
       "address": "0xa88216e6cf409a25c719234c4817628ae406b6a7",
       "name": "Proxy (impl: 0x9f38a0ec5daabd34fe8983cba24c9efb9572afaa)",
       "role": "proxy",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Everything",
       "tvl_usd": null,
@@ -215,10 +206,72 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
+      "address": "0xfa896ef9659ea0dcf42c751e2b1f78f626fe8f56",
+      "name": "UniPoolPair",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x92e351358683cbf0756a2d5069b983f205c7f0bc",
+      "impl_name": "UniPoolPair",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xfa896ef9659ea0dcf42c751e2b1f78f626fe8f56",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xb15e7a89e71b8468c23eb330f837caf0f2ff7628",
+      "name": "UniPoolRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniPoolRouter",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb15e7a89e71b8468c23eb330f837caf0f2ff7628",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
       "address": "0x4e3ca901719c84cf86f4328d3d930b471de8acb5",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Everything",
       "tvl_usd": null,
@@ -304,6 +357,68 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x9f38a0ec5daabd34fe8983cba24c9efb9572afaa",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Everything",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x9f38a0ec5daabd34fe8983cba24c9efb9572afaa",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xb0ef237002250d1f70f01f13fedccd00777bbd02",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb0ef237002250d1f70f01f13fedccd00777bbd02",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 42161,
@@ -405,7 +520,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     }
   ],
   "audits": [],
@@ -414,19 +529,29 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x43b280297a7f1dcc27f44f06cbedffa8b5fce74c",
+      "address": "0xdcca77dd282667561c4c611ff5de697002515dc1",
       "name": "EV",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xb15e7a89e71b8468c23eb330f837caf0f2ff7628",
+      "name": "UniPoolRouter",
+      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 4,
-    "upstream": 1,
-    "standard_library": 2,
-    "needs_review": 3
+    "native": 2,
+    "upstream": 0,
+    "standard_library": 4,
+    "needs_review": 8
   },
   "scope_matching_notes": {
     "match_method_counts": {},

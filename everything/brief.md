@@ -5,11 +5,11 @@
 - Project: Everything (`everything`)
 - Website: [https://everything.inc/](https://everything.inc/)
 - Lifecycle: active (Tier 0, 22.8% below peak)
-- Generated: 2026-06-10T23:13:03.258Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-13T22:41:34.988Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ab91
 - Chains: arbitrum
-- Contract surface: 10 unique implementations (13 raw deployments)
-- DeFi Llama TVL: $945,261.28
+- Contract surface: 14 unique implementations (16 raw deployments)
+- DeFi Llama TVL: $710,207.80
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,12 +23,12 @@ The EV contract serves as the core lending logic, while WormholeTransceiver and 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/4 (0.0%)
-- Verified + Unaudited implementations: 4
+- Verified implementations audited: 0/6 (0.0%)
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
-- Unverified implementations: 6
-- Unique implementations: 10
-- Raw deployments: 13
+- Unverified implementations: 8
+- Unique implementations: 14
+- Raw deployments: 16
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,12 +46,14 @@ The EV contract serves as the core lending logic, while WormholeTransceiver and 
 
 - None
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| EV | unknown | arbitrum | 2 deployments: arbitrum [`0x43b280...fce74c`](./contracts/arbitrum-42161/0x43b280297a7f1dcc27f44f06cbedffa8b5fce74c/); arbitrum `0xe7e7e7...c1e7e7` | ⚠️ Unaudited |
-| NttManager | governance | arbitrum | 2 deployments: arbitrum [`0x4d54c9...04d03a`](./contracts/arbitrum-42161/0x4d54c928d802eee6632177b6c146fc3e9b04d03a/); arbitrum `0xf432b2...f435cd` | ⚠️ Unaudited |
+| EV | unknown | arbitrum | 2 deployments: arbitrum [`0xdcca77...515dc1`](./contracts/arbitrum-42161/0xdcca77dd282667561c4c611ff5de697002515dc1/); arbitrum `0xe7e7e7...c1e7e7` | ⚠️ Unaudited |
+| NttManager | governance | arbitrum | [`0xf432b2...f435cd`](./contracts/arbitrum-42161/0xf432b2564cc0e233482a1f2af0eda4832cf435cd/) | ⚠️ Unaudited |
+| UniPoolPair | core_logic | arbitrum | [`0xfa896e...fe8f56`](./contracts/arbitrum-42161/0xfa896ef9659ea0dcf42c751e2b1f78f626fe8f56/) | ⚠️ Unaudited |
+| UniPoolRouter | adapter | arbitrum | [`0xb15e7a...ff7628`](./contracts/arbitrum-42161/0xb15e7a89e71b8468c23eb330f837caf0f2ff7628/) | ⚠️ Unaudited |
 | UpgradeableBeacon | registry | arbitrum | [`0x4e04f0...a5e5b4`](./contracts/arbitrum-42161/0x4e04f0fcc6c153cc7ff21b8e49aa53053ba5e5b4/) | ⚠️ Unaudited |
 | WormholeTransceiver | unknown | arbitrum | 2 deployments: arbitrum [`0x1ea94d...9d63b5`](./contracts/arbitrum-42161/0x1ea94dfaaabfa1ac4dcc672cc27fca6bc59d63b5/); arbitrum `0x3d0f80...a945f6` | ⚠️ Unaudited |
 
@@ -67,7 +69,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (6)
+### ❓ Unverified (8)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -78,6 +80,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | arbitrum | `0x4e3ca9...e8acb5` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x6a53ed...c98003` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x99af3f...7cd682` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | `0x9f38a0...72afaa` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | `0xb0ef23...7bbd02` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0xc26494...4fca44` | ❓ Unverified |
 
 ## Audit Inventory
@@ -91,16 +95,17 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x43b280...fce74c`](./contracts/arbitrum-42161/0x43b280297a7f1dcc27f44f06cbedffa8b5fce74c/) | EV | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xdcca77...515dc1`](./contracts/arbitrum-42161/0xdcca77dd282667561c4c611ff5de697002515dc1/) | EV | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xb15e7a...ff7628`](./contracts/arbitrum-42161/0xb15e7a89e71b8468c23eb330f837caf0f2ff7628/) | UniPoolRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
-| upstream | 1 |
-| standard_library | 2 |
-| needs_review | 3 |
+| native | 2 |
+| upstream | 0 |
+| standard_library | 4 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 

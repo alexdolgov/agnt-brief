@@ -5,7 +5,7 @@
 | Chain | bsc (56) |
 | Address | `0xc4ed752d658989fe86db8ddad3f6f19271552d23` |
 | Role | unknown |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (bsc [`0xc4ed752d658989fe86db8ddad3f6f19271552d23`](../0xc4ed752d658989fe86db8ddad3f6f19271552d23/)) |

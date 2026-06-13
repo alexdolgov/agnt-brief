@@ -5,11 +5,11 @@
 - Project: Blueshift (`blueshift`)
 - Website: [https://blueshift.fi/](https://blueshift.fi/)
 - Lifecycle: active (Tier 0, 67.1% below peak)
-- Generated: 2026-06-10T22:05:15.204Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
+- Generated: 2026-06-13T22:43:41.016Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ab91
 - Chains: kava, polygon
 - Contract surface: 23 unique implementations (28 raw deployments)
-- DeFi Llama TVL: $4,323,105.86
+- DeFi Llama TVL: $3,449,608.43
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -75,7 +75,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | polygon | `0x12fd7e...c3789b` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x27e552...1faa2e` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x35701f...c96f3f` | ❓ Unverified |
-| UnnamedContract | proxy | polygon | `0x3abd79...367b20` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | `0x3abd79...367b20` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x7b8343...ca2bca` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x800618...a6653c` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x96c95d...7e7242` | ❓ Unverified |
@@ -103,18 +103,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| polygon | [`0x2080a3...4edc83`](./contracts/polygon-137/0x2080a319a4b11d097050722b6b65d09f754edc83/) | TransparentUpgradeableProxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 17 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 21 |
+| standard_library | 2 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

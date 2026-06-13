@@ -173,7 +173,7 @@
 | [blend-money](./blend-money/) | $8.6K | 0.0% | ? | unknown | 11 | 0 | 2026-06-13 |
 | [blend](./blend/) | $213.1M | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [block-analitica](./block-analitica/) | $252.8K | 0.0% | $252.8K | declining | 0 | 20 | 2026-06-12 |
-| [blueshift](./blueshift/) | $4.3M | 0.0% | ? | active | 1 | 23 | 2026-06-10 |
+| [blueshift](./blueshift/) | $3.4M | 0.0% | ? | active | 1 | 23 | 2026-06-13 |
 | [blur](./blur/) | $91.7M | 0.0% | $91.7M | active | 0 | 21 | 2026-06-12 |
 | [bmx](./bmx/) | $316.4K | 0.0% | $316.4K | declining | 0 | 187 | 2026-06-13 |
 | [bnpl-pay](./bnpl-pay/) | $23.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -390,7 +390,7 @@
 | [equilibria](./equilibria/) | $26.9M | 17.6% | $15.7M | declining | 6 | 119 | 2026-06-10 |
 | [equito-finance](./equito-finance/) | $7.9 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [eralend](./eralend/) | $73.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [eth-strategy](./eth-strategy/) | $30.8M | 0.0% | $30.8M | active | 1 | 49 | 2026-06-10 |
+| [eth-strategy](./eth-strategy/) | $30.8M | 0.0% | $30.8M | active | 1 | 50 | 2026-06-13 |
 | [ethereal-dex](./ethereal-dex/) | $30.7M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
 | [ethereal-season-zero](./ethereal-season-zero/) | $2.8M | 0.0% | $2.8M | dead | 4 | 1 | 2026-05-24 |
 | [etherex](./etherex/) | $1.4M | 36.2% | ? | declining | 4 | 58 | 2026-06-11 |
@@ -400,9 +400,9 @@
 | [ethos](./ethos/) | $1.9M | 30.0% | ? | active | 2 | 27 | 2026-06-10 |
 | [etmc](./etmc/) | $6.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [eventum-bridge](./eventum-bridge/) | $1.6M | 3.8% | $1.6M | active | 2 | 28 | 2026-06-10 |
-| [everrise](./everrise/) | $23.1M | 0.0% | $23.1M | declining | 3 | 210 | 2026-06-11 |
+| [everrise](./everrise/) | $23.1M | 0.0% | $23.1M | declining | 3 | 217 | 2026-06-13 |
 | [eversol](./eversol/) | $9.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [everything](./everything/) | $945.3K | 0.0% | ? | active | 0 | 10 | 2026-06-10 |
+| [everything](./everything/) | $710.2K | 0.0% | ? | active | 0 | 14 | 2026-06-13 |
 | [evolve](./evolve/) | $554.1 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [evoq-finance](./evoq-finance/) | $268.1 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [exactly](./exactly/) | $189.5K | 63.6% | ? | active | 32 | 65 | 2026-06-10 |
@@ -585,7 +585,7 @@
 | [iron-bank](./iron-bank/) | $676.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ithaca-protocol](./ithaca-protocol/) | $12.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [itrust-finance](./itrust-finance/) | $365.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | declining | 0 | 181 | 2026-06-11 |
+| [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | declining | 0 | 187 | 2026-06-13 |
 | [jbc.finance](./jbc.finance/) | $397.8 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [jetswap](./jetswap/) | $323.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [jiko](./jiko/) | $116.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

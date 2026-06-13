@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "eth-strategy",
-  "generated_at": "2026-06-10T23:06:56.835Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-13T22:46:37.288Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-ab91",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "eth-strategy",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 9.178703738352729
   },
   "summary": {
-    "total_contracts": 49,
-    "total_addresses": 161,
-    "unique_implementations": 49,
-    "total_deployments": 161,
+    "total_contracts": 50,
+    "total_addresses": 165,
+    "unique_implementations": 50,
+    "total_deployments": 165,
     "audited_contracts": 0,
-    "unaudited_contracts": 41,
+    "unaudited_contracts": 42,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 41,
+    "contracts_verified_unaudited": 42,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 8,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3883275.14182,
+    "dl_tvl_usd": 3877141.88046,
     "tvl_usd": 30762606.009333473,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -63,7 +63,7 @@
     "product_family_count": 5
   },
   "surface_sufficiency": {
-    "unique_implementations": 49,
+    "unique_implementations": 50,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -268,6 +268,15 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 23.40558848372439,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd7d75fb3e4df1c148241dc38d9e842100a8837a3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
           "is_audited": false
         },
         {
@@ -714,6 +723,15 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x1a9ba93f3cb22ba7228d29607075f444e9ff515c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x22be0dbe1fe7536613f0ad717d7b8e3faeaa43fd",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1391,8 +1409,8 @@
       "address": "0x2f017ee436429711698a5f6761fe935f4866ed2f",
       "name": "GUniFactory",
       "role": "registry",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "gelato",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1422,8 +1440,8 @@
       "address": "0xdffb0453ce8bb0c6059a66171515960483ebaa4c",
       "name": "GUniPool",
       "role": "core_logic",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "gelato-network",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1638,6 +1656,15 @@
         {
           "chain_id": 1,
           "chain_name": "ethereum",
+          "address": "0xcb39cd7831f091beca153c08453066d7913b598b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
           "address": "0xd9c7e18e08dd839ec975061f498d602112fca13c",
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1819,8 +1846,8 @@
       "address": "0x0465aa3fd3cbf13a9fe52d2be76b6c0889c700d6",
       "name": "LyraWstETHZapper",
       "role": "adapter",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "lyra-finance",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1871,6 +1898,37 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x8e52df0ce721e01df82b2c938ef85a6ed7cbf77f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x771200261c99ff4e0a072b0484b76c56c826229d",
+      "name": "pnETH",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "pnETH",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x771200261c99ff4e0a072b0484b76c56c826229d",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2481,7 +2539,7 @@
       "address": "0xc79b47fdbddd19ea1f51113d4eed08a4737b4cbc",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2828,6 +2886,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x771200261c99ff4e0a072b0484b76c56c826229d",
+      "name": "pnETH",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x6d843e2b0c023150403c73ed385d915dcde086d9",
       "name": "Pool",
       "role": "core_logic",
@@ -2918,9 +2986,9 @@
   ],
   "origin_summary": {
     "native": 31,
-    "upstream": 3,
+    "upstream": 6,
     "standard_library": 4,
-    "needs_review": 11
+    "needs_review": 9
   },
   "scope_matching_notes": {
     "match_method_counts": {},

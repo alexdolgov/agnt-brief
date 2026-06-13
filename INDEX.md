@@ -554,6 +554,7 @@
 | [mvl-staking](./mvl-staking/) | $38.1M | 50.0% | ? | unknown | 2 | 49 | 2026-06-11 |
 | [myso](./myso/) | $28.0K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [mystic-finance](./mystic-finance/) | $5.8M | 0.0% | ? | unknown | 10 | 0 | 2026-06-11 |
+| [mytrade](./mytrade/) | $7.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [myx-finance](./myx-finance/) | $986.0K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [nado](./nado/) | $49.3M | 0.0% | ? | active | 0 | 22 | 2026-06-12 |
 | [native](./native/) | $67.6M | 0.0% | $67.6M | active | 0 | 80 | 2026-06-12 |
@@ -600,10 +601,12 @@
 | [open-ticketing-ecosystem](./open-ticketing-ecosystem/) | $3.3M | 0.0% | $3.3M | active | 0 | 24 | 2026-06-11 |
 | [openeden](./openeden/) | $225.4M | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [openleverage](./openleverage/) | $88.9K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
+| [opensky-finance](./opensky-finance/) | $15.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-06-11 |
 | [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | declining | 0 | 103 | 2026-06-11 |
 | [orangex](./orangex/) | $33.7M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
 | [orbit-bridge](./orbit-bridge/) | $829.9K | 0.0% | $829.9K | active | 1 | 24 | 2026-06-12 |
+| [orbiter-one](./orbiter-one/) | $77.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [osl](./osl/) | $92.6M | 0.0% | ? | active | 0 | 4 | 2026-06-12 |
 | [osmosis-dex](./osmosis-dex/) | $18.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [ostium](./ostium/) | $29.1M | 47.1% | ? | active | 7 | 17 | 2026-06-11 |
@@ -614,6 +617,8 @@
 | [p2pb2b](./p2pb2b/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | active | 0 | 3 | 2026-06-11 |
 | [pact](./pact/) | $2.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
+| [paladin-finance](./paladin-finance/) | $22.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [palladium-protocol](./palladium-protocol/) | $1.5K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pangea-swap](./pangea-swap/) | $6.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pangolin](./pangolin/) | $3.8M | 53.8% | ? | declining | 12 | 163 | 2026-06-11 |
 | [paradex](./paradex/) | $27.3M | 50.0% | ? | declining | 5 | 5 | 2026-06-12 |

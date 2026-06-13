@@ -1,0 +1,16 @@
+# Controller
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0xa4c8d221d8bb851f83aadd0223a8900a6921a349` |
+| Role | unknown |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (ethereum [`0xa4c8d221d8bb851f83aadd0223a8900a6921a349`](../0xa4c8d221d8bb851f83aadd0223a8900a6921a349/)) |
+| Proxy | No |
+| Source | Sourcify (partial match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

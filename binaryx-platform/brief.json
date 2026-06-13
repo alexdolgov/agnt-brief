@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "binaryx-platform",
-  "generated_at": "2026-06-11T12:02:34.006Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
+  "generated_at": "2026-06-13T00:27:37.701Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-e35d",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "binaryx-platform",

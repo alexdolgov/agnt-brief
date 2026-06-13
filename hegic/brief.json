@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hegic",
-  "generated_at": "2026-06-11T12:05:34.886Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
+  "generated_at": "2026-06-13T00:26:24.517Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-e35d",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hegic",
@@ -22,28 +22,29 @@
     "drop_from_peak_pct": 91.23240835976638
   },
   "summary": {
-    "total_contracts": 63,
-    "total_addresses": 97,
-    "unique_implementations": 63,
-    "total_deployments": 97,
-    "audited_contracts": 0,
-    "unaudited_contracts": 27,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 26,
-    "contracts_verified_by_bytecode": 1,
+    "total_contracts": 76,
+    "total_addresses": 111,
+    "unique_implementations": 76,
+    "total_deployments": 111,
+    "audited_contracts": 9,
+    "unaudited_contracts": 31,
+    "contracts_verified_audited": 9,
+    "contracts_verified_unaudited": 31,
+    "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 36,
-    "coverage_pct": 0,
+    "coverage_pct": 22.5,
     "total_audits": 2,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 8461080.76636,
+    "scoreable_audits": 2,
+    "dl_tvl_usd": 8506910.82453,
     "tvl_usd": 54068.4849904824,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "ethereum": 54068.48
     },
-    "asd_usd": 54068.4849904824,
+    "asd_usd": 54068.48478363073,
     "website_url": "https://www.hegic.co",
     "chains": [
+      "arbitrum",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -63,7 +64,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 63,
+    "unique_implementations": 76,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -172,7 +173,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -195,14 +196,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.00020685167117372684,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11793"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -293,6 +296,79 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xd47ef934e301e0ee3b1ce0e3eebcb64de8b231be",
+      "name": "CoverPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CoverPool",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd47ef934e301e0ee3b1ce0e3eebcb64de8b231be",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-7286"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419",
+      "name": "EACAggregatorProxy",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Chainlink",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EACAggregatorProxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf4030086522a5beea4988f8ca5b36dbc97bee88c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -564,14 +640,49 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11793"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xefc0eeadc1132a12c9487d800112693bf49ecfa2",
+      "name": "HegicETHOptions",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HegicETHOptions",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xefc0eeadc1132a12c9487d800112693bf49ecfa2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11793"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -604,6 +715,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xb0f9f032158510cd4a926f9263abc86baf7b4ab3",
+      "name": "HegicOperationalTreasury",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HegicOperationalTreasury",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb0f9f032158510cd4a926f9263abc86baf7b4ab3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -762,6 +904,37 @@
       "contamination_flag": "cleared"
     },
     {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x60898dfa3c6e8ba4998b5f3be25fb0b0b69d5d5d",
+      "name": "HegicStakeAndCover",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HegicStakeAndCover",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x60898dfa3c6e8ba4998b5f3be25fb0b0b69d5d5d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x956bed5f95d3cfc16581c3892931c0d110376f9f",
@@ -782,7 +955,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -791,12 +964,111 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xe7e8a2ed68f573d8cb25b9c7d734ebde65b47336",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11793"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1ef61e3e5676ec182eed6f052f8920fd49c7f69a",
+      "name": "HegicStakingETH",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HegicStakingETH",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1ef61e3e5676ec182eed6f052f8920fd49c7f69a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11793"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x840a1ae46b7364855206eb5b7286ab7e207e515b",
+      "name": "HegicStakingWBTC",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HegicStakingWBTC",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x840a1ae46b7364855206eb5b7286ab7e207e515b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11793"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x05458b7d9531ead242290de60beaa3cc10c87560",
+      "name": "HegicStrategyCall",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HegicStrategyCall",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x05458b7d9531ead242290de60beaa3cc10c87560",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -808,7 +1080,102 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x87dfcfee4715dad66e8b50f7ebdde8aa66e42686",
+      "name": "HegicStrategyInverseLongCondor",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HegicStrategyInverseLongCondor",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x87dfcfee4715dad66e8b50f7ebdde8aa66e42686",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xaa0dfbfb8da7f45bb41c0fb68b71faeb959b22aa",
+      "name": "HegicStrategyPut",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HegicStrategyPut",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xaa0dfbfb8da7f45bb41c0fb68b71faeb959b22aa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3961245db602ed7c03eeccda33ea3846bd8723bd",
+      "name": "HegicWBTCOptions",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HegicWBTCOptions",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3961245db602ed7c03eeccda33ea3846bd8723bd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11793"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -840,6 +1207,39 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xec096ea6eb9aa5ea689b0cf00882366e92377371",
+      "name": "OperationalTreasury",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "OperationalTreasury",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xec096ea6eb9aa5ea689b0cf00882366e92377371",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-7286"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -880,6 +1280,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x5fe380d68fee022d8acd42dc4d36fbfb249a76d5",
+      "name": "PositionsManager",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PositionsManager",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x5fe380d68fee022d8acd42dc4d36fbfb249a76d5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -944,8 +1375,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x9ba595ed7a7a2b605fdaa10591b6343d08ccc9b9",
-          "source_verified": false,
-          "verified_by_bytecode": true,
+          "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -989,8 +1420,8 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1761,7 +2192,7 @@
       "address": "0x83a1d416f338ccd79f10252e40a344745d6fbe3a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1823,7 +2254,7 @@
       "address": "0x940284a10d68a0d63fc8e6205a94ad953f524bfe",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1854,7 +2285,7 @@
       "address": "0xa4edc6f46cffe35f3d5175957c7151daffc87934",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1885,7 +2316,7 @@
       "address": "0xae83be2b5550811fa4473b2bcf90d198c31145f8",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1916,7 +2347,7 @@
       "address": "0xc31ac224428782030809bd9447680608074f8b0c",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1947,7 +2378,7 @@
       "address": "0xc5cf7d0462e1feb7d2e3150cb552b79a4b1cd864",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2227,7 +2658,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -2346,12 +2777,17 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CoverPool",
+        "HegicInverseStrategy",
+        "HegicStrategy",
+        "OperationalTreasury"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -2362,21 +2798,41 @@
       "auditor": "PeckShield",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2020",
+      "date": "2020-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "HegicERCPool",
+        "HegicETHOptions",
+        "HegicETHPool",
+        "HegicETHRewards",
+        "HegicRewards",
+        "HegicStaking",
+        "HegicStakingETH",
+        "HegicStakingWBTC",
+        "HegicWBTCOptions",
+        "HegicWBTCRewards",
+        "IHegicOptions"
+      ],
+      "matched_contracts": 9,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "PeckShield",
+      "tier": 2,
+      "contracts_covered": 9,
+      "coverage_pct": 22.5,
+      "latest_audit": "2022-10"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -2407,16 +2863,6 @@
       "origin_kind": "native",
       "tvl_usd": 79.11669134961365,
       "risk_note": "Verified native implementation with $79.12 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x878f15ffc8b894a1ba7647c7176e4c01f74e140b",
-      "name": "HegicETHPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 0.00020685167117372684,
-      "risk_note": "Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -2501,18 +2947,18 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x20dd9e22d22dd0a6ef74a520cb08303b5fad5de7",
-      "name": "HegicERCPool",
-      "role": "core_logic",
+      "address": "0x1b8782d4a7da5b63a934e78a6563fdd122e9915d",
+      "name": "HegicInitialOffering",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1b8782d4a7da5b63a934e78a6563fdd122e9915d",
-      "name": "HegicInitialOffering",
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xb0f9f032158510cd4a926f9263abc86baf7b4ab3",
+      "name": "HegicOperationalTreasury",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -2549,10 +2995,40 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x956bed5f95d3cfc16581c3892931c0d110376f9f",
-      "name": "HegicStaking",
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x60898dfa3c6e8ba4998b5f3be25fb0b0b69d5d5d",
+      "name": "HegicStakeAndCover",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x05458b7d9531ead242290de60beaa3cc10c87560",
+      "name": "HegicStrategyCall",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x87dfcfee4715dad66e8b50f7ebdde8aa66e42686",
+      "name": "HegicStrategyInverseLongCondor",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xaa0dfbfb8da7f45bb41c0fb68b71faeb959b22aa",
+      "name": "HegicStrategyPut",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -2574,6 +3050,16 @@
       "address": "0x1ba4b447d0df64da64024e5ec47da94458c1e97f",
       "name": "OptionsManager",
       "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x5fe380d68fee022d8acd42dc4d36fbfb249a76d5",
+      "name": "PositionsManager",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2640,26 +3126,21 @@
     }
   ],
   "origin_summary": {
-    "native": 62,
-    "upstream": 0,
+    "native": 68,
+    "upstream": 1,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 7
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 11
+    },
+    "extraction_confidence_counts": {
+      "high": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 7286,
-        "report_name": "PeckShield-Audit-Report-Hegic-Herge-Protocol-Upgrade-v1.0.pdf"
-      },
-      {
-        "audit_id": 11793,
-        "report_name": "PeckShield-Audit-Report-Hegic-v1.0.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

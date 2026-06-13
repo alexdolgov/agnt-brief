@@ -5,8 +5,8 @@
 - Project: Binaryx Platform (`binaryx-platform`)
 - Website: [https://www.binaryx.com](https://www.binaryx.com)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T12:02:34.006Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
+- Generated: 2026-06-13T00:27:37.701Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-e35d
 - Chains: polygon
 - Contract surface: 133 unique implementations (234 raw deployments)
 - DeFi Llama TVL: $8,652,394.51

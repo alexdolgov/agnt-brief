@@ -79,7 +79,7 @@
 | [bifi](./bifi/) | $236.7K | 30.4% | ? | active | 7 | 170 | 2026-06-10 |
 | [bigone](./bigone/) | $35.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [bima-cdp](./bima-cdp/) | $5.3M | 51.6% | ? | active | 3 | 37 | 2026-06-10 |
-| [binaryx-platform](./binaryx-platform/) | $8.7M | 0.0% | ? | active | 3 | 133 | 2026-06-11 |
+| [binaryx-platform](./binaryx-platform/) | $8.7M | 0.0% | ? | active | 3 | 133 | 2026-06-13 |
 | [bio-protocol](./bio-protocol/) | $143.8M | 10.0% | $139.6M | active | 6 | 41 | 2026-06-10 |
 | [biswap](./biswap/) | $609.3K | 0.0% | $609.3K | declining | 1 | 84 | 2026-06-10 |
 | [bitlo](./bitlo/) | $16.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
@@ -253,7 +253,7 @@
 | [hashdao-finance](./hashdao-finance/) | $2.8M | 55.6% | ? | dead | 3 | 50 | 2026-06-10 |
 | [hashkey-global](./hashkey-global/) | $13.4M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
 | [hashport](./hashport/) | $152.6K | 100.0% | ? | dead | 3 | 21 | 2026-06-10 |
-| [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 2 | 63 | 2026-06-11 |
+| [hegic](./hegic/) | $54.1K | 22.5% | $54.1K | active | 2 | 76 | 2026-06-13 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | active | 1 | 9 | 2026-06-12 |
 | [helix](./helix/) | $1.5M | 0.0% | ? | declining | 0 | 9 | 2026-06-10 |
 | [hemi-staking](./hemi-staking/) | $16.4M | 1.9% | $16.4M | active | 5 | 132 | 2026-06-12 |
@@ -338,7 +338,7 @@
 | [llamapay](./llamapay/) | $21.0M | 0.0% | ? | active | 1 | 20 | 2026-06-12 |
 | [lockon](./lockon/) | $1.0M | 56.3% | ? | active | 7 | 23 | 2026-06-11 |
 | [looping-collective](./looping-collective/) | $11.8M | 25.0% | $11.6M | active | 13 | 18 | 2026-06-12 |
-| [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 1 | 145 | 2026-06-11 |
+| [loopring](./loopring/) | $2.4M | 8.1% | $2.4M | declining | 1 | 141 | 2026-06-13 |
 | [lumenswap](./lumenswap/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-06-11 |
 | [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-31 |
@@ -376,7 +376,7 @@
 | [mm-finance](./mm-finance/) | $1.8M | 4.5% | $1.8M | declining | 3 | 192 | 2026-06-11 |
 | [mobox](./mobox/) | $6.6M | 0.0% | $6.6M | unknown | 1 | 323 | 2026-06-11 |
 | [mode-bridge](./mode-bridge/) | $6.1M | 2.9% | ? | declining | 21 | 100 | 2026-06-11 |
-| [mole](./mole/) | $8.8M | 0.0% | ? | active | 1 | 49 | 2026-06-11 |
+| [mole](./mole/) | $8.6M | 0.0% | ? | active | 1 | 49 | 2026-06-13 |
 | [moneyonchain](./moneyonchain/) | $43.7M | 0.0% | ? | unknown | 12 | 0 | 2026-06-11 |
 | [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-06-11 |
 | [moola-market](./moola-market/) | $73.9K | 0.0% | $73.9K | declining | 1 | 53 | 2026-06-11 |
@@ -530,7 +530,7 @@
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-31 |
 | [sentiment](./sentiment/) | $64.3 | 73.3% | ? | dead | 8 | 297 | 2026-06-11 |
 | [serum](./serum/) | $15.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [set-protocol](./set-protocol/) | $1.4M | 0.0% | $1.4M | declining | 0 | 109 | 2026-06-11 |
+| [set-protocol](./set-protocol/) | $7.9M | 0.0% | $7.9M | declining | 0 | 129 | 2026-06-13 |
 | [shadow-exchange](./shadow-exchange/) | $999.8 | 21.6% | $999.8 | declining | 3 | 84 | 2026-05-23 |
 | [shape-bridge](./shape-bridge/) | $760.4K | 0.0% | ? | active | 2 | 26 | 2026-06-11 |
 | [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | active | 3 | 40 | 2026-06-11 |

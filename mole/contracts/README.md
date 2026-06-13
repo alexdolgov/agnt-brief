@@ -1,6 +1,6 @@
 # mole — Contract Index
 
-49 unique implementations on avalanche · 220 deployments · 0 audited · 3 unaudited · 46 unverified
+49 unique implementations on avalanche · 219 deployments · 0 audited · 3 unaudited · 46 unverified
 
 ## governance (1)
 
@@ -18,7 +18,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [DeltaNeutralTraderJoeBoostedStakingWorker03 (10 deployments)](./avalanche-43114/0x316a587b6b0ff3ad2ec1215b252eeeaba4a84151/) | avalanche | 10 deployments: avalanche [`0x316a58...a84151`](./avalanche-43114/0x316a587b6b0ff3ad2ec1215b252eeeaba4a84151/); avalanche `0x4b3283...11376d`; avalanche `0x58ea3d...3adc74`; avalanche `0x654322...e0a3a8`; avalanche `0x8c1f8a...543473`; avalanche `0xa04d1f...6e7c06`; avalanche `0xc24003...c8f91e`; avalanche `0xcf0f33...46c18f`; avalanche `0xde1bd3...643f8a`; avalanche `0xe93f65...d406b0` | ⚠️ Unaudited | Verified |
+| [DeltaNeutralTraderJoeBoostedStakingWorker03 (9 deployments)](./avalanche-43114/0x316a587b6b0ff3ad2ec1215b252eeeaba4a84151/) | avalanche | 9 deployments: avalanche [`0x316a58...a84151`](./avalanche-43114/0x316a587b6b0ff3ad2ec1215b252eeeaba4a84151/); avalanche `0x58ea3d...3adc74`; avalanche `0x654322...e0a3a8`; avalanche `0x8c1f8a...543473`; avalanche `0xa04d1f...6e7c06`; avalanche `0xc24003...c8f91e`; avalanche `0xcf0f33...46c18f`; avalanche `0xde1bd3...643f8a`; avalanche `0xe93f65...d406b0` | ⚠️ Unaudited | Verified |
 | UnnamedContract | avalanche | `0x096a50...26ee67` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x0cada5...e1f212` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x14b547...cff12b` | ❓ Unverified | Unverified |

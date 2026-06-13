@@ -5,7 +5,7 @@
 | Chain | optimism (10) |
 | Address | `0xf98dcd95217e15e05d8638da4c91125e59590b07` |
 | Role | token |
-| Origin | standard_library |
+| Origin | native |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (optimism [`0xf98dcd95217e15e05d8638da4c91125e59590b07`](../0xf98dcd95217e15e05d8638da4c91125e59590b07/)) |

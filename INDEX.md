@@ -205,7 +205,7 @@
 | [bscstation](./bscstation/) | $1.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-06-10 |
 | [btcfi](./btcfi/) | $9.6M | 0.0% | ? | active | 0 | 15 | 2026-06-13 |
-| [btcst](./btcst/) | $263.7M | 0.0% | $263.7M | active | 0 | 64 | 2026-06-10 |
+| [btcst](./btcst/) | $263.7M | 0.0% | $263.7M | active | 0 | 64 | 2026-06-13 |
 | [btse](./btse/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [bucket-protocol](./bucket-protocol/) | $65.1M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
 | [buffaloswap](./buffaloswap/) | $14.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -357,7 +357,7 @@
 | [dpex](./dpex/) | $142.5 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [drachma-exchange](./drachma-exchange/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [drift](./drift/) | $187.9M | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
-| [drops](./drops/) | $16.5M | 0.0% | $16.5M | declining | 0 | 77 | 2026-06-10 |
+| [drops](./drops/) | $16.5M | 0.0% | $16.5M | declining | 0 | 85 | 2026-06-13 |
 | [dsf.finance](./dsf.finance/) | $477.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dtrinity](./dtrinity/) | $1.8M | 18.0% | $1.7M | active | 5 | 209 | 2026-06-13 |
 | [dtx](./dtx/) | $5.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -634,7 +634,7 @@
 | [kokomo-finance](./kokomo-finance/) | $2.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kolibri](./kolibri/) | $740.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kongswap](./kongswap/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-06-11 |
+| [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-06-13 |
 | [kryptodex](./kryptodex/) | $669.6 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kuma-protocol](./kuma-protocol/) | $3.1M | 28.1% | $23.1K | active | 3 | 53 | 2026-06-11 |
 | [kyberswap](./kyberswap/) | $58.3M | 8.8% | $58.3M | declining | 6 | 445 | 2026-06-11 |
@@ -642,7 +642,7 @@
 | [kyrios-finance](./kyrios-finance/) | $197.5 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [l2x.pro](./l2x.pro/) | $1.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [laari-finance](./laari-finance/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-06-11 |
+| [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 79 | 2026-06-13 |
 | [lake-protocol](./lake-protocol/) | $44.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [lander](./lander/) | $21.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [landx-finance](./landx-finance/) | $1.8M | 100.0% | ? | active | 1 | 3 | 2026-06-11 |
@@ -1122,7 +1122,7 @@
 | [spiritswap](./spiritswap/) | $337.6K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [splash-protocol](./splash-protocol/) | $5.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |
-| [spookyswap](./spookyswap/) | $841.7 | 0.0% | $841.7 | declining | 1 | 136 | 2026-06-11 |
+| [spookyswap](./spookyswap/) | $842.7 | 0.0% | $842.7 | declining | 1 | 145 | 2026-06-13 |
 | [sport.fun](./sport.fun/) | $3.7M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
 | [springx](./springx/) | $23.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [sprinter](./sprinter/) | $940.7K | 100.0% | ? | active | 6 | 4 | 2026-06-11 |

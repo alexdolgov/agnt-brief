@@ -5,11 +5,11 @@
 - Project: Kromatika (`kromatika`)
 - Website: [https://app.kromatika.finance/limitorder#/pool](https://app.kromatika.finance/limitorder#/pool)
 - Lifecycle: active (Tier 0, 40.6% below peak)
-- Generated: 2026-06-11T00:29:38.903Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-13T19:37:36.194Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-a865
 - Chains: arbitrum, ethereum, optimism, polygon
-- Contract surface: 30 unique implementations (69 raw deployments)
-- DeFi Llama TVL: $1,091,186.50
+- Contract surface: 30 unique implementations (71 raw deployments)
+- DeFi Llama TVL: $976,307.72
 - On-chain TVL (included contracts): $83,796.24
 - TVL by chain: Optimism $44,689.75 | Arbitrum $32,393.26 | Polygon $6,713.23
 
@@ -28,7 +28,7 @@ The Limit Order System relies on the KROM token for access control and fee payme
 - Verified by bytecode match: 0
 - Unverified implementations: 14
 - Unique implementations: 30
-- Raw deployments: 69
+- Raw deployments: 71
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $83,796.24
@@ -57,8 +57,8 @@ The Limit Order System relies on the KROM token for access control and fee payme
 | Kromatika | unknown | ethereum | [`0x3af33b...a4d789`](./contracts/ethereum-1/0x3af33bef05c2dcb3c7288b77fe1c8d2aeba4d789/) | ⚠️ Unaudited |
 | KromatikaSwapRouter | adapter | arbitrum | 2 deployments: arbitrum [`0x7054d0...5bb034`](./contracts/arbitrum-42161/0x7054d002db18a10c31683ec1a8515589c65bb034/); arbitrum `0xa3e49d...dbe70a` | ⚠️ Unaudited |
 | LimitOrderManager | governance | arbitrum | 2 deployments: arbitrum [`0x02c282...5fc6f0`](./contracts/arbitrum-42161/0x02c282f60fb2f3299458c2b85eb7e303b25fc6f0/); arbitrum `0xf337b9...f455df` | ⚠️ Unaudited |
-| LimitOrderManagerV3 | governance | polygon | 11 deployments: ethereum `0xd1fdf0...0e508e`; polygon [`0x026d63...b89ec4`](./contracts/polygon-137/0x026d63a16a5c1c28e49539780aef7fb47eb89ec4/); polygon `0x03f490...d42ae1`; polygon `0x05bf32...c4f877`; polygon `0x212b2e...e4072b`; polygon `0x47f374...487289`; polygon `0x836c40...0b0770`; polygon `0x90c9c1...43c5d6`; polygon `0xa1a527...346688`; polygon `0xf86a27...da0140`; polygon `0xfc2e6d...8ccd68` | ⚠️ Unaudited |
-| LimitOrderMonitor | unknown | polygon | 14 deployments: optimism `0x5c7e78...76a8fb`; optimism `0xa16192...4491fb`; optimism `0xe3618d...2bef6e`; optimism `0xe7c74c...4661e6`; polygon [`0x044d57...9cf92c`](./contracts/polygon-137/0x044d57daa8f8a2d9e654eb57e392b942659cf92c/); polygon `0x3bd1ba...09e96c`; polygon `0x7c1bc6...2fca68`; polygon `0x89c756...1cf93d`; polygon `0x8b28ff...5bd492`; polygon `0x91d44f...c6a436`; polygon `0x951e4a...8b684a`; polygon `0xfe5bc8...280627`; arbitrum `0x37bb03...5ceccf`; arbitrum `0x90ae03...a2dad4` | ⚠️ Unaudited |
+| LimitOrderManagerV3 | governance | polygon | 12 deployments: ethereum `0x3f5696...68fc33`; ethereum `0xd1fdf0...0e508e`; polygon [`0x026d63...b89ec4`](./contracts/polygon-137/0x026d63a16a5c1c28e49539780aef7fb47eb89ec4/); polygon `0x03f490...d42ae1`; polygon `0x05bf32...c4f877`; polygon `0x212b2e...e4072b`; polygon `0x47f374...487289`; polygon `0x836c40...0b0770`; polygon `0x90c9c1...43c5d6`; polygon `0xa1a527...346688`; polygon `0xf86a27...da0140`; polygon `0xfc2e6d...8ccd68` | ⚠️ Unaudited |
+| LimitOrderMonitor | unknown | polygon | 15 deployments: optimism `0x5c7e78...76a8fb`; optimism `0xa16192...4491fb`; optimism `0xe3618d...2bef6e`; optimism `0xe7c74c...4661e6`; polygon [`0x044d57...9cf92c`](./contracts/polygon-137/0x044d57daa8f8a2d9e654eb57e392b942659cf92c/); polygon `0x3bd1ba...09e96c`; polygon `0x7c1bc6...2fca68`; polygon `0x89c756...1cf93d`; polygon `0x8b28ff...5bd492`; polygon `0x91d44f...c6a436`; polygon `0x951e4a...8b684a`; polygon `0xf258cd...417bd3`; polygon `0xfe5bc8...280627`; arbitrum `0x37bb03...5ceccf`; arbitrum `0x90ae03...a2dad4` | ⚠️ Unaudited |
 | OpAccessToken | token | optimism | 2 deployments: optimism [`0x20b568...d6acc6`](./contracts/optimism-10/0x20b5683170412daba16e64315a62d766f8d6acc6/); optimism `0xd0b676...2a1ebb` | ⚠️ Unaudited |
 | OpLimitOrderManager | governance | optimism | [`0xb01614...71c719`](./contracts/optimism-10/0xb01614bd478e8776e1c8528d0469c453b171c719/) | ⚠️ Unaudited |
 | OpLimitOrderManagerV2 | governance | optimism | [`0x87ab1c...7b4d2e`](./contracts/optimism-10/0x87ab1c824dff612686b45b43504bbea63b7b4d2e/) | ⚠️ Unaudited |
@@ -113,19 +113,23 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| optimism | [`0xf98dcd...590b07`](./contracts/optimism-10/0xf98dcd95217e15e05d8638da4c91125e59590b07/) | L2StandardERC20 | token | $44,689.75 | Verified native implementation with $44,689.75 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x55ff62...a4bf70`](./contracts/arbitrum-42161/0x55ff62567f09906a85183b866df84bf599a4bf70/) | StandardArbERC20 | token | $32,393.26 | Verified native implementation with $32,393.26 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x14af1f...63b83c`](./contracts/polygon-137/0x14af1f2f02dccb1e43402339099a05a5e363b83c/) | UChildERC20 | token | $6,713.23 | Verified native implementation with $6,713.23 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3af33b...a4d789`](./contracts/ethereum-1/0x3af33bef05c2dcb3c7288b77fe1c8d2aeba4d789/) | Kromatika | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x7054d0...5bb034`](./contracts/arbitrum-42161/0x7054d002db18a10c31683ec1a8515589c65bb034/) | KromatikaSwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0xb01614...71c719`](./contracts/optimism-10/0xb01614bd478e8776e1c8528d0469c453b171c719/) | OpLimitOrderManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x87ab1c...7b4d2e`](./contracts/optimism-10/0x87ab1c824dff612686b45b43504bbea63b7b4d2e/) | OpLimitOrderManagerV2 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0x10bff1...b5b99c`](./contracts/optimism-10/0x10bff12281138846b6c23e6ef7db26367bb5b99c/) | OpLimitOrderManagerV3 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 9 |
 | upstream | 0 |
-| standard_library | 7 |
-| needs_review | 19 |
+| standard_library | 8 |
+| needs_review | 13 |
 
 ## Scope Matching Notes
 

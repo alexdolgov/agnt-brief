@@ -5,11 +5,11 @@
 - Project: Lair Finance (`lair-finance`)
 - Website: [https://lair.fi](https://lair.fi)
 - Lifecycle: active (Tier 0, 93% below peak)
-- Generated: 2026-06-11T00:34:40.012Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-13T19:40:36.531Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-a865
 - Chains: berachain
-- Contract surface: 78 unique implementations (191 raw deployments)
-- DeFi Llama TVL: $5,549,655.05
+- Contract surface: 79 unique implementations (192 raw deployments)
+- DeFi Llama TVL: $4,166,761.80
 - On-chain TVL (included contracts): $3,407,775.66
 - TVL by chain: Berachain $3,407,775.66
 
@@ -23,12 +23,12 @@ The Lair Finance family uses upgradeable proxy contracts to manage vault logic a
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/14 (0.0%)
-- Verified + Unaudited implementations: 14
+- Verified implementations audited: 0/15 (0.0%)
+- Verified + Unaudited implementations: 15
 - Verified by bytecode match: 0
 - Unverified implementations: 64
-- Unique implementations: 78
-- Raw deployments: 191
+- Unique implementations: 79
+- Raw deployments: 192
 - Audits discovered: 11
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $3,407,775.66
@@ -46,7 +46,7 @@ The Lair Finance family uses upgradeable proxy contracts to manage vault logic a
 
 - None
 
-### ⚠️ Verified + Unaudited (14)
+### ⚠️ Verified + Unaudited (15)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -63,6 +63,7 @@ The Lair Finance family uses upgradeable proxy contracts to manage vault logic a
 | InfraredDistributor | operational_periphery | berachain | [`0x1fad98...c4ccd6`](./contracts/berachain-80094/0x1fad980dfaff71e3fdd9bef643ab2ff2bdc4ccd6/) | ⚠️ Unaudited |
 | InfraredV1_10 | unknown | berachain | [`0xb71b3d...2fc126`](./contracts/berachain-80094/0xb71b3daea39012fb0f2b14d2a9c86da9292fc126/) | ⚠️ Unaudited |
 | KodiakIslandWithRouter | adapter | berachain | [`0x9f6cf7...91a41d`](./contracts/berachain-80094/0x9f6cf7acb2f16f7d906eeecb0a6020a5cf91a41d/) | ⚠️ Unaudited |
+| RewardVault | core_logic | berachain | [`0x29af24...3c764d`](./contracts/berachain-80094/0x29af240276168330c3c266112d7ffdc1fd3c764d/) | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | berachain | 19 deployments: berachain [`0x2c7655...529586`](./contracts/berachain-80094/0x2c765592fe0025f3ca6aa53616afa1643d529586/); berachain `0x2cb2ef...518bc7`; berachain `0x381e9d...d7bffc`; berachain `0x3e97ca...faaa33`; berachain `0x4a110b...4a1019`; berachain `0x66611b...e5b6ab`; berachain `0x6905f9...178eda`; berachain `0x77df4e...8c9aaa`; berachain `0x7b56b9...8c7a87`; berachain `0x871195...37995e`; berachain `0x90e596...0a82bf`; berachain `0x91001c...764efc`; berachain `0xbaa896...301561`; berachain `0xd5c3b4...192870`; berachain `0xdeb193...218e31`; berachain `0xe1b6e6...009156`; berachain `0xe79bf7...cf6686`; berachain `0xfc3da0...379c82`; berachain `0xfe2b4e...785fa9` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -175,15 +176,16 @@ Verified + unaudited native implementations ranked by TVL:
 | berachain | [`0x3d6683...39d21e`](./contracts/berachain-80094/0x3d6683e1227d8ba761c3657bf424b1472839d21e/) | LairToken | token | $44,566.63 | Verified native implementation with $44,566.63 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | berachain | [`0x61bd35...21da40`](./contracts/berachain-80094/0x61bd35fbec49b144a1953f48f84ef8d2b321da40/) | BribeCollector | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | berachain | [`0xac03ca...bb2e6b`](./contracts/berachain-80094/0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b/) | InfraredBGT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x29af24...3c764d`](./contracts/berachain-80094/0x29af240276168330c3c266112d7ffdc1fd3c764d/) | RewardVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 19 |
+| native | 68 |
 | upstream | 0 |
 | standard_library | 8 |
-| needs_review | 51 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 
@@ -196,16 +198,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [2341] Bera LRT Contracts _ SSC.pdf
-- [2342] Lair Restaking_Omniscia_Security_Review.pdf
-- [2343] Lair_Restaking_v01.pdf
-- [2344] Lair_Restaking_v2.pdf
-- [2345] Lair_Restaking_v3.pdf
-- [2346] Lair_stSomi_v01.pdf
-- [2347] Lair_stSomi_v02.pdf
-- [2348] Lair_Stake_v1.pdf
-- [2349] Lair_Stake_v2.pdf
-- [2350] Lair_Stake_v3.pdf
-- [2351] Lair Finance Smart Contract Audit Report - Final Report.pdf
+- [14247] Bera LRT Contracts _ SSC.pdf
+- [14248] Lair Restaking_Omniscia_Security_Review.pdf
+- [14249] Lair_Restaking_v01.pdf
+- [14250] Lair_Restaking_v2.pdf
+- [14251] Lair_Restaking_v3.pdf
+- [14252] Lair_stSomi_v01.pdf
+- [14253] Lair_stSomi_v02.pdf
+- [14254] Lair_Stake_v1.pdf
+- [14255] Lair_Stake_v2.pdf
+- [14256] Lair_Stake_v3.pdf
+- [14257] Lair Finance Smart Contract Audit Report - Final Report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

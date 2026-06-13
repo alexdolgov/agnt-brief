@@ -1,6 +1,6 @@
 # kromatika — Contract Index
 
-30 unique implementations across 4 chains · 69 deployments · 0 audited · 16 unaudited · 14 unverified
+30 unique implementations across 4 chains · 71 deployments · 0 audited · 16 unaudited · 14 unverified
 
 ## adapter (1)
 
@@ -14,7 +14,7 @@
 |---|---|---|---|---|
 | [GnosisSafe](./ethereum-1/0xc5bf7a684a0dfca02a1e603b1d27af0af523a54f/) | ethereum | [`0xc5bf7a...23a54f`](./ethereum-1/0xc5bf7a684a0dfca02a1e603b1d27af0af523a54f/) | ⚠️ Unaudited | Verified |
 | [LimitOrderManager (2 deployments)](./arbitrum-42161/0x02c282f60fb2f3299458c2b85eb7e303b25fc6f0/) | arbitrum | 2 deployments: arbitrum [`0x02c282...5fc6f0`](./arbitrum-42161/0x02c282f60fb2f3299458c2b85eb7e303b25fc6f0/); arbitrum `0xf337b9...f455df` | ⚠️ Unaudited | Verified |
-| [LimitOrderManagerV3 (11 deployments)](./polygon-137/0x026d63a16a5c1c28e49539780aef7fb47eb89ec4/) | polygon | 11 deployments: ethereum `0xd1fdf0...0e508e`; polygon [`0x026d63...b89ec4`](./polygon-137/0x026d63a16a5c1c28e49539780aef7fb47eb89ec4/); polygon `0x03f490...d42ae1`; polygon `0x05bf32...c4f877`; polygon `0x212b2e...e4072b`; polygon `0x47f374...487289`; polygon `0x836c40...0b0770`; polygon `0x90c9c1...43c5d6`; polygon `0xa1a527...346688`; polygon `0xf86a27...da0140`; polygon `0xfc2e6d...8ccd68` | ⚠️ Unaudited | Verified |
+| [LimitOrderManagerV3 (12 deployments)](./polygon-137/0x026d63a16a5c1c28e49539780aef7fb47eb89ec4/) | polygon | 12 deployments: ethereum `0x3f5696...68fc33`; ethereum `0xd1fdf0...0e508e`; polygon [`0x026d63...b89ec4`](./polygon-137/0x026d63a16a5c1c28e49539780aef7fb47eb89ec4/); polygon `0x03f490...d42ae1`; polygon `0x05bf32...c4f877`; polygon `0x212b2e...e4072b`; polygon `0x47f374...487289`; polygon `0x836c40...0b0770`; polygon `0x90c9c1...43c5d6`; polygon `0xa1a527...346688`; polygon `0xf86a27...da0140`; polygon `0xfc2e6d...8ccd68` | ⚠️ Unaudited | Verified |
 | [OpLimitOrderManager](./optimism-10/0xb01614bd478e8776e1c8528d0469c453b171c719/) | optimism | [`0xb01614...71c719`](./optimism-10/0xb01614bd478e8776e1c8528d0469c453b171c719/) | ⚠️ Unaudited | Verified |
 | [OpLimitOrderManagerV2](./optimism-10/0x87ab1c824dff612686b45b43504bbea63b7b4d2e/) | optimism | [`0x87ab1c...7b4d2e`](./optimism-10/0x87ab1c824dff612686b45b43504bbea63b7b4d2e/) | ⚠️ Unaudited | Verified |
 | [OpLimitOrderManagerV3 (2 deployments)](./optimism-10/0x10bff12281138846b6c23e6ef7db26367bb5b99c/) | optimism | 2 deployments: optimism [`0x10bff1...b5b99c`](./optimism-10/0x10bff12281138846b6c23e6ef7db26367bb5b99c/); optimism `0x7314af...ffaab8` | ⚠️ Unaudited | Verified |
@@ -40,7 +40,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [Kromatika](./ethereum-1/0x3af33bef05c2dcb3c7288b77fe1c8d2aeba4d789/) | ethereum | [`0x3af33b...a4d789`](./ethereum-1/0x3af33bef05c2dcb3c7288b77fe1c8d2aeba4d789/) | ⚠️ Unaudited | Verified |
-| [LimitOrderMonitor (14 deployments)](./polygon-137/0x044d57daa8f8a2d9e654eb57e392b942659cf92c/) | polygon | 14 deployments: optimism `0x5c7e78...76a8fb`; optimism `0xa16192...4491fb`; optimism `0xe3618d...2bef6e`; optimism `0xe7c74c...4661e6`; polygon [`0x044d57...9cf92c`](./polygon-137/0x044d57daa8f8a2d9e654eb57e392b942659cf92c/); polygon `0x3bd1ba...09e96c`; polygon `0x7c1bc6...2fca68`; polygon `0x89c756...1cf93d`; polygon `0x8b28ff...5bd492`; polygon `0x91d44f...c6a436`; polygon `0x951e4a...8b684a`; polygon `0xfe5bc8...280627`; arbitrum `0x37bb03...5ceccf`; arbitrum `0x90ae03...a2dad4` | ⚠️ Unaudited | Verified |
+| [LimitOrderMonitor (15 deployments)](./polygon-137/0x044d57daa8f8a2d9e654eb57e392b942659cf92c/) | polygon | 15 deployments: optimism `0x5c7e78...76a8fb`; optimism `0xa16192...4491fb`; optimism `0xe3618d...2bef6e`; optimism `0xe7c74c...4661e6`; polygon [`0x044d57...9cf92c`](./polygon-137/0x044d57daa8f8a2d9e654eb57e392b942659cf92c/); polygon `0x3bd1ba...09e96c`; polygon `0x7c1bc6...2fca68`; polygon `0x89c756...1cf93d`; polygon `0x8b28ff...5bd492`; polygon `0x91d44f...c6a436`; polygon `0x951e4a...8b684a`; polygon `0xf258cd...417bd3`; polygon `0xfe5bc8...280627`; arbitrum `0x37bb03...5ceccf`; arbitrum `0x90ae03...a2dad4` | ⚠️ Unaudited | Verified |
 | [UniswapUtils](./arbitrum-42161/0xfe63860c1edd297256863a393a6a0ec512c4551d/) | arbitrum | [`0xfe6386...c4551d`](./arbitrum-42161/0xfe63860c1edd297256863a393a6a0ec512c4551d/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | optimism | `0x37bb03...5ceccf` | ❓ Unverified | Unverified |
 | UnnamedContract | optimism | `0x3aa2a4...8e00e9` | ❓ Unverified | Unverified |

@@ -7,13 +7,13 @@
 - Project: SpookySwap (`spookyswap`)
 - Website: [https://spooky.fi](https://spooky.fi)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-11T02:59:39.846Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-13T19:39:39.467Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-a865
 - Chains: fantom, sonic
-- Contract surface: 136 unique implementations (170 raw deployments)
-- DeFi Llama TVL: $1,350,469.00
-- On-chain TVL (included contracts): $841.67
-- TVL by chain: Sonic $841.67
+- Contract surface: 145 unique implementations (186 raw deployments)
+- DeFi Llama TVL: $1,167,963.00
+- On-chain TVL (included contracts): $842.67
+- TVL by chain: Sonic $842.67
 
 ## Project Description
 
@@ -25,19 +25,19 @@ The Sonic Mainnet family provides the core DEX functionality, relying on token c
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/36 (0.0%)
-- Verified + Unaudited implementations: 35
+- Verified implementations audited: 0/45 (0.0%)
+- Verified + Unaudited implementations: 44
 - Verified by bytecode match: 1
 - Unverified implementations: 100
-- Unique implementations: 136
-- Raw deployments: 170
+- Unique implementations: 145
+- Raw deployments: 186
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $841.67
+- ASD (verified + unaudited TVL): $842.67
 - Latest audit: 2021-06 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $841.67 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $842.67 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,35 +49,44 @@ The Sonic Mainnet family provides the core DEX functionality, relying on token c
 
 - None
 
-### ⚠️ Verified + Unaudited (35)
+### ⚠️ Verified + Unaudited (44)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | UniswapV3Staker | core_logic | sonic | [`0x160f55...217c23`](./contracts/sonic-146/0x160f55276713f356d8409910c3cfa1da23217c23/) | ⚠️ Unaudited |
+| MultiAccountV2 | core_logic | sonic | [`0xd90aca...6cdd17`](./contracts/sonic-146/0xd90aca50ee8cb7c3dd1fee84a722d574186cdd17/) | ⚠️ Unaudited |
 | BooMirrorWorld | unknown | sonic | [`0xa95ea1...f5d605`](./contracts/sonic-146/0xa95ea1cfabccf0e9eb94b646cefe9ed71ff5d605/) | ⚠️ Unaudited |
 | BooOFT | unknown | sonic | 2 deployments: sonic [`0x7a0c53...6cb384`](./contracts/sonic-146/0x7a0c53f7eb34c5bc8b01691723669ada9d6cb384/); sonic `0xb8fce7...fa4156` | ⚠️ Unaudited |
 | BrewBooV3 | unknown | sonic | 3 deployments: sonic [`0x79710d...c8b179`](./contracts/sonic-146/0x79710d58c3600401fe21e799ff97f37100c8b179/); sonic `0x84a190...6b09b0`; sonic `0xc3815b...ef00ea` | ⚠️ Unaudited |
-| Bridge | operational_periphery | sonic | 2 deployments: sonic [`0x826c84...171d8e`](./contracts/sonic-146/0x826c8465b6e6a0ca6454cc15703b60101f171d8e/); sonic `0x9e70d1...2b56cd` | ⚠️ Unaudited |
+| Bridge | operational_periphery | sonic | 4 deployments: sonic [`0x826c84...171d8e`](./contracts/sonic-146/0x826c8465b6e6a0ca6454cc15703b60101f171d8e/); sonic `0x9e70d1...2b56cd`; sonic `0xf06a64...2cd698`; sonic `0xf77146...a3e079` | ⚠️ Unaudited |
 | ConfigRegistry | registry | sonic | 2 deployments: sonic [`0x33e1cc...956b00`](./contracts/sonic-146/0x33e1cc3035a2f779a0bc7157d8f2b2d1ad956b00/); sonic `0xffd7c8...b670f3` | ⚠️ Unaudited |
+| Diamond | unknown | sonic | [`0x803de3...7a72e3`](./contracts/sonic-146/0x803de354cbd853d9ae3bc58131a5d538de7a72e3/) | ⚠️ Unaudited |
 | ERC1967Proxy | proxy | sonic | 2 deployments: sonic [`0x4c0b5b...9e9ec7`](./contracts/sonic-146/0x4c0b5bfd9b7a970e24ce5d62af510258c99e9ec7/); sonic `0x65f235...7c3477` | ⚠️ Unaudited |
 | FeeSender | unknown | sonic | [`0x2bb0bd...748e0b`](./contracts/sonic-146/0x2bb0bda25fbf103176337551729741b4d5748e0b/) | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | sonic | 2 deployments: sonic [`0x29219d...038894`](./contracts/sonic-146/0x29219dd400f2bf60e5a23d13be72b486d4038894/); sonic `0xe715cb...b17e57` | ⚠️ Unaudited |
-| LeverageFiller | unknown | sonic | [`0x053714...83f16a`](./contracts/sonic-146/0x053714a436ea716e14b3430f2ee8e2488c83f16a/) | ⚠️ Unaudited |
+| LeverageFiller | unknown | sonic | 2 deployments: sonic [`0x053714...83f16a`](./contracts/sonic-146/0x053714a436ea716e14b3430f2ee8e2488c83f16a/); sonic `0xfe4a47...b31e7d` | ⚠️ Unaudited |
+| LongTailIRM | unknown | sonic | [`0x12f407...10305a`](./contracts/sonic-146/0x12f407bfdbbe56ab19ecd389992f0f408810305a/) | ⚠️ Unaudited |
+| MajorIRM | unknown | sonic | [`0x18fad5...5505fa`](./contracts/sonic-146/0x18fad5b72113497e1c92570b6f517328d05505fa/) | ⚠️ Unaudited |
+| MessageBus | operational_periphery | sonic | 2 deployments: sonic [`0x63c379...f8c654`](./contracts/sonic-146/0x63c379522f8e56e4af9683fbcf53ee1093f8c654/); sonic `0xa71610...955006` | ⚠️ Unaudited |
 | MintedERC20 | token | sonic | [`0x50c42d...f2634b`](./contracts/sonic-146/0x50c42deacd8fc9773493ed674b675be577f2634b/) | ⚠️ Unaudited |
+| MPTProofVerifier | periphery | sonic | 2 deployments: sonic [`0x838e5d...5f8c3c`](./contracts/sonic-146/0x838e5d1d78d634fc43430dbd5ebb9319cf5f8c3c/); sonic `0xa13fc0...4da6d0` | ⚠️ Unaudited |
 | NFTDescriptor | token | sonic | [`0xa5ae26...046856`](./contracts/sonic-146/0xa5ae26ac861375a6830caf1443ed385298046856/) | ⚠️ Unaudited |
 | NonfungiblePositionManager | governance | sonic | 2 deployments: sonic [`0x839216...db3b55`](./contracts/sonic-146/0x8392166e9e45fb568d84c9ab3cd7566977db3b55/); sonic `0xf807ac...b17fac` | ⚠️ Unaudited |
 | NonfungibleTokenPositionDescriptor | token | sonic | [`0x7d0776...53d32d`](./contracts/sonic-146/0x7d0776b117c87f4bc174870ec19719972853d32d/) | ⚠️ Unaudited |
 | OracleRouterChainlink | operational_periphery | sonic | [`0xfb0497...5a32e8`](./contracts/sonic-146/0xfb04979bda6546f114afcff2a78d35446d5a32e8/) | ⚠️ Unaudited |
-| PositionsManager | governance | sonic | [`0x31b68b...ef0303`](./contracts/sonic-146/0x31b68b75a817d74fad9a9cb04b63ab9b61ef0303/) | ⚠️ Unaudited |
-| PrizeToken | token | sonic | [`0x78d976...d94c69`](./contracts/sonic-146/0x78d97679b6582eb0adfd2b1b52a7dced76d94c69/) | ⚠️ Unaudited |
+| Permit2 | unknown | sonic | [`0x981ef1...162723`](./contracts/sonic-146/0x981ef1f1644715ae797434de4c0aad16e6162723/) | ⚠️ Unaudited |
+| PositionsManager | governance | sonic | 2 deployments: sonic [`0x31b57e...749a4b`](./contracts/sonic-146/0x31b57e9dadc3227400bf1742fc9692ebb3749a4b/); sonic `0x31b68b...ef0303` | ⚠️ Unaudited |
+| PrizeToken | token | sonic | 2 deployments: sonic [`0x40dcf9...d267e3`](./contracts/sonic-146/0x40dcf9db8b2335bcdc006e27db7f8148b0d267e3/); sonic `0x78d976...d94c69` | ⚠️ Unaudited |
 | Quoter | periphery | sonic | 3 deployments: sonic [`0x593856...d1aa68`](./contracts/sonic-146/0x593856bbfd6aaf0b714277c0bf06307900d1aa68/); sonic `0x746c97...7f78e1`; sonic `0xddafeb...9c6a47` | ⚠️ Unaudited |
 | QuoterV2 | periphery | sonic | 3 deployments: sonic [`0x3f2026...388234`](./contracts/sonic-146/0x3f2026cae76b987c4002e62b9df70988b4388234/); sonic `0x6e70f8...b525bc`; sonic `0xd71a77...b4b6b3` | ⚠️ Unaudited |
 | RfqEngine | unknown | sonic | [`0x201169...13e95b`](./contracts/sonic-146/0x20116919299625b1b3e474d5a594a5b4ed13e95b/) | ⚠️ Unaudited |
 | SignatureChecker | unknown | sonic | 6 deployments: sonic [`0x017980...e6bf1b`](./contracts/sonic-146/0x01798076f71e0e48c37b670af7752d74d6e6bf1b/); sonic `0x26c060...7d4e81`; sonic `0x5d0311...68f887`; sonic `0x6edf3f...b6d820`; sonic `0xb4a197...2dd7cf`; sonic `0xb90f6a...b502fe` | ⚠️ Unaudited |
 | SpookyLaunchpad | unknown | sonic | [`0xb52c0e...850c31`](./contracts/sonic-146/0xb52c0eb864722c313d2c084c6ffa2a6e46850c31/) | ⚠️ Unaudited |
+| StableIRM | unknown | sonic | [`0x4bd77b...edefd5`](./contracts/sonic-146/0x4bd77b487e2a8884b4e5528ff32b3917f7edefd5/) | ⚠️ Unaudited |
 | StateOracle | operational_periphery | sonic | 2 deployments: sonic [`0x6494ce...66d684`](./contracts/sonic-146/0x6494ce4a3f9b3b765fbd07aa7ec2d3108e66d684/); sonic `0xad9f40...e150b9` | ⚠️ Unaudited |
 | Storage | unknown | sonic | [`0x4fec0c...135d73`](./contracts/sonic-146/0x4fec0c1c745c2d8ebb4fffa0d4e8d1395a135d73/) | ⚠️ Unaudited |
 | SwapRouter02 | adapter | sonic | 5 deployments: sonic [`0x0c2bc0...abdd87`](./contracts/sonic-146/0x0c2bc01d435cfeb2dc6ad7cec0e473e2dbabdd87/); sonic `0xb75efb...270445`; sonic `0xb8d867...c54d31`; sonic `0xbece4e...6bea4e`; sonic `0xcbdeca...f74362` | ⚠️ Unaudited |
+| SymmioFeeDistributor | operational_periphery | sonic | [`0x61662e...28f5f4`](./contracts/sonic-146/0x61662ea0eeecaf693538284d4332ec6f2828f5f4/) | ⚠️ Unaudited |
 | TickLens | periphery | sonic | 2 deployments: sonic [`0x71d0f7...ac1bac`](./contracts/sonic-146/0x71d0f7b02e76c773693ade6f521cfc7becac1bac/); sonic `0x7b97e8...554449` | ⚠️ Unaudited |
 | TicTacToe | unknown | sonic | [`0xaa0944...e02c14`](./contracts/sonic-146/0xaa0944ea173d300945ee5f13ae49560643e02c14/) | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | sonic | 5 deployments: sonic [`0x62a572...dcd70a`](./contracts/sonic-146/0x62a572120530a6cbbcafb7c6fb8c94fbdedcd70a/); sonic `0x89c312...11df5e`; sonic `0xc1883f...992748`; sonic `0xd89992...4de721`; sonic `0xfb7040...a993f8` | ⚠️ Unaudited |
@@ -223,27 +232,27 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | sonic | [`0xa95ea1...f5d605`](./contracts/sonic-146/0xa95ea1cfabccf0e9eb94b646cefe9ed71ff5d605/) | BooMirrorWorld | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x7a0c53...6cb384`](./contracts/sonic-146/0x7a0c53f7eb34c5bc8b01691723669ada9d6cb384/) | BooOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x79710d...c8b179`](./contracts/sonic-146/0x79710d58c3600401fe21e799ff97f37100c8b179/) | BrewBooV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x33e1cc...956b00`](./contracts/sonic-146/0x33e1cc3035a2f779a0bc7157d8f2b2d1ad956b00/) | ConfigRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x2bb0bd...748e0b`](./contracts/sonic-146/0x2bb0bda25fbf103176337551729741b4d5748e0b/) | FeeSender | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0xa5ae26...046856`](./contracts/sonic-146/0xa5ae26ac861375a6830caf1443ed385298046856/) | NFTDescriptor | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x7d0776...53d32d`](./contracts/sonic-146/0x7d0776b117c87f4bc174870ec19719972853d32d/) | NonfungibleTokenPositionDescriptor | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x12f407...10305a`](./contracts/sonic-146/0x12f407bfdbbe56ab19ecd389992f0f408810305a/) | LongTailIRM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x18fad5...5505fa`](./contracts/sonic-146/0x18fad5b72113497e1c92570b6f517328d05505fa/) | MajorIRM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x31b57e...749a4b`](./contracts/sonic-146/0x31b57e9dadc3227400bf1742fc9692ebb3749a4b/) | PositionsManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x40dcf9...d267e3`](./contracts/sonic-146/0x40dcf9db8b2335bcdc006e27db7f8148b0d267e3/) | PrizeToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x201169...13e95b`](./contracts/sonic-146/0x20116919299625b1b3e474d5a594a5b4ed13e95b/) | RfqEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0xb52c0e...850c31`](./contracts/sonic-146/0xb52c0eb864722c313d2c084c6ffa2a6e46850c31/) | SpookyLaunchpad | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x6494ce...66d684`](./contracts/sonic-146/0x6494ce4a3f9b3b765fbd07aa7ec2d3108e66d684/) | StateOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x4bd77b...edefd5`](./contracts/sonic-146/0x4bd77b487e2a8884b4e5528ff32b3917f7edefd5/) | StableIRM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x4fec0c...135d73`](./contracts/sonic-146/0x4fec0c1c745c2d8ebb4fffa0d4e8d1395a135d73/) | Storage | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x0c2bc0...abdd87`](./contracts/sonic-146/0x0c2bc01d435cfeb2dc6ad7cec0e473e2dbabdd87/) | SwapRouter02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x039e2f...94ad38`](./contracts/sonic-146/0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38/) | WrappedSonic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 41 |
-| upstream | 11 |
-| standard_library | 8 |
-| needs_review | 76 |
+| native | 56 |
+| upstream | 19 |
+| standard_library | 9 |
+| needs_review | 61 |
 
 ## Scope Matching Notes
 

@@ -1299,8 +1299,13 @@ Each project directory contains:
 | [tizi](./tizi/brief.md) | $121.96K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [tokenlabs](./tokenlabs/brief.md) | $249.30K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [tokenlon](./tokenlon/brief.md) | $37.17M | ethereum | 21 | 21/21 (100%) | 57.1% | 0.0% (-) | 6 | stale | ⚠️ declining | - |
+| [tonco](./tonco/brief.md) | $8.19M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [tonpound](./tonpound/brief.md) | $14.64K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [tonyielding](./tonyielding/brief.md) | $88.22 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [toobit](./toobit/brief.md) | $69.15M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [topaz](./topaz/brief.md) | $1.05M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [tothemoon](./tothemoon/brief.md) | $2.40M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [tower-dex](./tower-dex/brief.md) | $5.47K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [townsquare](./townsquare/brief.md) | $1.80M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [tren-finance](./tren-finance/brief.md) | $25.64 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [trisolaris](./trisolaris/brief.md) | $1.49M | aurora | 119 | 18/119 (15%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -1360,5 +1365,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T14:53:01.310Z_
-_Projects: 1348_
+_Generated: 2026-06-13T14:54:25.064Z_
+_Projects: 1353_

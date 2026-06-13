@@ -982,8 +982,13 @@ Each project directory contains:
 | [neptune-finance](./neptune-finance/brief.md) | $5.93M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [nest-credit](./nest-credit/brief.md) | $50.51M | 4 | 16 | 6/16 (38%) | 57.1% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [netswap](./netswap/brief.md) | $1.34M | metis | 48 | 24/48 (50%) | 20.8% | 0.0% (-) | 2 | stale | ⚠️ declining | - |
+| [netweave-finance](./netweave-finance/brief.md) | $12.29K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [neuralai](./neuralai/brief.md) | $1.22M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
+| [neutra-finance](./neutra-finance/brief.md) | $3.21K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [neutral-trade](./neutral-trade/brief.md) | $18.62M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [nex](./nex/brief.md) | $114.19 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [nexus-protocol](./nexus-protocol/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [nf3-ape](./nf3-ape/brief.md) | $3.38K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [nftfi](./nftfi/brief.md) | $10.10K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [nodeops](./nodeops/brief.md) | - | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [nolus-protocol](./nolus-protocol/brief.md) | $509.95K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -1225,5 +1230,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T13:56:37.708Z_
-_Projects: 1213_
+_Generated: 2026-06-13T13:58:53.489Z_
+_Projects: 1218_

@@ -806,9 +806,14 @@
 | [nest-credit](./nest-credit/) | $66.7K | 57.1% | ? | active | 15 | 16 | 2026-06-11 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-06-11 |
 | [netswap](./netswap/) | $1.3M | 20.8% | ? | declining | 2 | 48 | 2026-06-11 |
+| [netweave-finance](./netweave-finance/) | $12.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [neuralai](./neuralai/) | $1.2M | 0.0% | ? | unknown | 1 | 2 | 2026-06-11 |
+| [neutra-finance](./neutra-finance/) | $3.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [neutral-trade](./neutral-trade/) | $18.6M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
+| [nex](./nex/) | $114.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [nexus-mutual](./nexus-mutual/) | $34.8M | 0.0% | $34.8M | active | 2 | 30 | 2026-06-12 |
+| [nexus-protocol](./nexus-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [nf3-ape](./nf3-ape/) | $3.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [nftfi](./nftfi/) | $10.1K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [nftx](./nftx/) | $6.3M | 11.1% | $6.3M | declining | 5 | 184 | 2026-06-11 |
 | [nodedao](./nodedao/) | $33.3M | 38.9% | $33.3M | active | 5 | 18 | 2026-06-11 |

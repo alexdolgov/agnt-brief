@@ -657,6 +657,7 @@
 | [powh3d](./powh3d/) | $4.4M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
 | [predict-fun](./predict-fun/) | $1.5M | 8.0% | $1.5M | unknown | 9 | 40 | 2026-05-22 |
 | [prime-staking](./prime-staking/) | $4.8M | 0.0% | ? | active | 2 | 10 | 2026-06-11 |
+| [prime-vaults](./prime-vaults/) | $11.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | declining | 2 | 117 | 2026-06-11 |
 | [prism-protocol](./prism-protocol/) | $2.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [privacy-cash](./privacy-cash/) | $48.1K | 0.0% | $48.1K | active | 10 | 6 | 2026-06-11 |
@@ -664,11 +665,14 @@
 | [probit-global](./probit-global/) | $11.0M | 0.0% | ? | dead | 0 | 3 | 2026-06-12 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-06-11 |
 | [puffer-finance](./puffer-finance/) | $225.1M | 36.4% | $169.2M | declining | 4 | 65 | 2026-06-11 |
+| [pulsar-swap](./pulsar-swap/) | $11.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pulsechain-bridge](./pulsechain-bridge/) | $475.4K | 0.0% | $475.4K | active | 0 | 7 | 2026-06-12 |
 | [pulsechain](./pulsechain/) | $475.4K | 0.0% | $475.4K | active | 0 | 7 | 2026-06-12 |
 | [pumpspace](./pumpspace/) | $3.9M | 33.3% | ? | active | 3 | 666 | 2026-06-11 |
 | [punks-terminal](./punks-terminal/) | $1.5M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
 | [puzzleswaporg](./puzzleswaporg/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [pv01](./pv01/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [pyron](./pyron/) | $2.1M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [qidao](./qidao/) | $2.6M | 0.0% | ? | declining | 1 | 298 | 2026-06-11 |
 | [qubit](./qubit/) | $14.7K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [quipuswap](./quipuswap/) | $454.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |

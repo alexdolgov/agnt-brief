@@ -20,6 +20,7 @@
 | [aftermath-finance](./aftermath-finance/) | $5.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [ailayer-farm](./ailayer-farm/) | $211.9K | 0.0% | $211.9K | active | 0 | 1 | 2026-06-12 |
 | [aitech](./aitech/) | $4.0M | 0.0% | ? | active | 1 | 2 | 2026-06-10 |
+| [aladdin-dao](./aladdin-dao/) | $23.2K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [alchemix](./alchemix/) | $340.7M | 6.4% | $338.7M | active | 11 | 388 | 2026-06-10 |
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 15 | 58 | 2026-06-10 |
 | [allbridge](./allbridge/) | $21.7M | 0.0% | $21.7M | declining | 11 | 287 | 2026-06-12 |
@@ -272,6 +273,7 @@
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-06-11 |
 | [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 0 | 19 | 2026-06-12 |
 | [hopr](./hopr/) | $1.4M | 4.3% | ? | active | 2 | 81 | 2026-06-11 |
+| [horizondex](./horizondex/) | $60.3K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [hotcoin](./hotcoin/) | $5.6M | 0.0% | ? | active | 0 | 1 | 2026-06-13 |
 | [houses-of-rome](./houses-of-rome/) | $0.0 | 0.0% | ? | dead | 0 | 51 | 2026-06-10 |
 | [hskhodlium](./hskhodlium/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -283,6 +285,7 @@
 | [hyperswap](./hyperswap/) | $3.7M | 0.0% | $3.7M | active | 3 | 30 | 2026-06-12 |
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 0 | 11 | 2026-06-11 |
 | [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 3 | 60 | 2026-06-13 |
+| [hyphen](./hyphen/) | $100.4K | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
 | [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 0 | 45 | 2026-05-31 |
 | [ichi](./ichi/) | $36.1M | 0.9% | $36.1M | active | 9 | 616 | 2026-06-11 |
 | [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | active | 0 | 21 | 2026-06-13 |
@@ -491,6 +494,7 @@
 | [puzzleswaporg](./puzzleswaporg/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [qidao](./qidao/) | $2.6M | 0.0% | ? | declining | 1 | 298 | 2026-06-11 |
 | [radiant](./radiant/) | $1.1M | 31.6% | $515.0K | dead | 94 | 390 | 2026-05-26 |
+| [railgun](./railgun/) | $312.5M | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
 | [rain](./rain/) | $26.1M | 0.0% | ? | active | 3 | 29 | 2026-06-12 |
 | [rainbow-bridge](./rainbow-bridge/) | $2.1M | 0.0% | ? | declining | 0 | 2 | 2026-06-11 |
 | [rank-trading](./rank-trading/) | $1.2M | 30.0% | ? | active | 2 | 13 | 2026-06-11 |

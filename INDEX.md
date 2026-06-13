@@ -151,6 +151,7 @@
 | [cream-finance](./cream-finance/) | $2.3B | 0.0% | $2.3B | declining | 2 | 94 | 2026-06-10 |
 | [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-06-12 |
 | [credit-coop](./credit-coop/) | $2.1M | 0.0% | $2.1M | active | 3 | 2 | 2026-06-11 |
+| [cryptex-finance](./cryptex-finance/) | $631.4K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [crypto.com-liquid-staking](./crypto.com-liquid-staking/) | $20.0M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
 | [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-06-10 |
 | [cybro](./cybro/) | $103.9K | 0.0% | ? | unknown | 14 | 0 | 2026-06-13 |
@@ -270,6 +271,7 @@
 | [hemibtc](./hemibtc/) | $46.2K | 0.0% | $46.2K | active | 5 | 46 | 2026-06-12 |
 | [hera-finance](./hera-finance/) | $6.5M | 42.9% | ? | active | 3 | 28 | 2026-06-10 |
 | [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-06-10 |
+| [holdstation](./holdstation/) | $19.7K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-06-11 |
 | [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 0 | 19 | 2026-06-12 |
 | [hopr](./hopr/) | $1.4M | 4.3% | ? | active | 2 | 81 | 2026-06-11 |
@@ -357,6 +359,7 @@
 | [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-31 |
 | [magma-staking](./magma-staking/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [magpie-ecosystem](./magpie-ecosystem/) | $19.1M | 0.0% | ? | declining | 4 | 218 | 2026-06-12 |
+| [maia-dao-ecosystem](./maia-dao-ecosystem/) | $189.4K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [mainstreet](./mainstreet/) | $77.7M | 9.1% | $77.7M | active | 1 | 11 | 2026-06-12 |
 | [makina](./makina/) | $12.9M | 90.9% | $12.9M | active | 4 | 36 | 2026-06-11 |
 | [mangrove](./mangrove/) | $4.3M | 22.0% | ? | active | 6 | 68 | 2026-06-11 |
@@ -439,6 +442,8 @@
 | [omnibtc](./omnibtc/) | $2.2M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
 | [onyx](./onyx/) | $384.4M | 0.0% | $384.4M | active | 1 | 17 | 2026-06-12 |
 | [open-ticketing-ecosystem](./open-ticketing-ecosystem/) | $3.3M | 0.0% | $3.3M | active | 0 | 24 | 2026-06-11 |
+| [openeden](./openeden/) | $225.4M | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
+| [openleverage](./openleverage/) | $88.9K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-06-11 |
 | [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | declining | 0 | 103 | 2026-06-11 |
 | [orangex](./orangex/) | $33.7M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |

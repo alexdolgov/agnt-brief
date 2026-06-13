@@ -449,6 +449,7 @@ Each project directory contains:
 | [core-bridge](./core-bridge/brief.md) | $4.02M | avalanche, base | 6 | 2/6 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [coti-treasury](./coti-treasury/brief.md) | $9.89M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [cozy-finance](./cozy-finance/brief.md) | $2.30M | optimism | 48 | 5/48 (10%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
+| [cryptex-finance](./cryptex-finance/brief.md) | $631.36K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [crypto.com-liquid-staking](./crypto.com-liquid-staking/brief.md) | $20.02M | cronos, ethereum | 2 | 1/2 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [cybro](./cybro/brief.md) | $103.90K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [decibel](./decibel/brief.md) | $41.88M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -517,6 +518,7 @@ Each project directory contains:
 | [helix-finance](./helix-finance/brief.md) | $11.00M | ethereum | 9 | 9/9 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [hera-finance](./hera-finance/brief.md) | $6.51M | metis | 28 | 7/28 (25%) | 42.9% | 0.0% (-) | 3 | stale | ✅ active | - |
 | [hiyield](./hiyield/brief.md) | $2.73M | avalanche, canto, ethereum | 4 | 0/4 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [holdstation](./holdstation/brief.md) | $19.73K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [hopr](./hopr/brief.md) | $1.43M | gnosis | 81 | 23/81 (28%) | 4.3% | 4.3% (ChainSecurity) | 1 | stale | ✅ active | - |
 | [horizondex](./horizondex/brief.md) | $60.34K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [hotcoin](./hotcoin/brief.md) | $5.60M | scroll | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -561,6 +563,7 @@ Each project directory contains:
 | [lusd-chickenbonds](./lusd-chickenbonds/brief.md) | $1.49M | ethereum | 24 | 21/24 (88%) | 28.6% | 0.0% (-) | 6 | stale | ⚠️ declining | - |
 | [magma-staking](./magma-staking/brief.md) | $1.16M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [magpie-ecosystem](./magpie-ecosystem/brief.md) | $19.12M | 8 | 218 | 156/218 (72%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
+| [maia-dao-ecosystem](./maia-dao-ecosystem/brief.md) | $189.36K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [mangrove](./mangrove/brief.md) | $4.26M | 4 | 68 | 41/68 (60%) | 22.0% | 14.6% (ChainSecurity) | 5 | aging | ✅ active | - |
 | [manta-atlantic-stake](./manta-atlantic-stake/brief.md) | $5.46M | ethereum, manta | 109 | 68/109 (62%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [manta-cedefi](./manta-cedefi/brief.md) | $26.48M | manta | 17 | 15/17 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -606,6 +609,8 @@ Each project directory contains:
 | [odyssey-finance](./odyssey-finance/brief.md) | $9.22M | base, ethereum, optimism | 82 | 77/82 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [okcoin](./okcoin/brief.md) | $25.77M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [omnibtc](./omnibtc/brief.md) | $2.20M | 6 | 6 | 0/6 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [openeden](./openeden/brief.md) | $225.38M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
+| [openleverage](./openleverage/brief.md) | $88.94K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [opinion](./opinion/brief.md) | $7.32M | bsc, ethereum | 6 | 4/6 (67%) | 100.0% | 0.0% (-) | 4 | fresh | ⚠️ declining | - |
 | [orangex](./orangex/brief.md) | $33.70M | base, ethereum | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [osl](./osl/brief.md) | $92.56M | scroll | 4 | 0/4 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -746,5 +751,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T10:09:48.356Z_
-_Projects: 734_
+_Generated: 2026-06-13T10:13:44.678Z_
+_Projects: 739_

@@ -1293,10 +1293,15 @@
 | [universe-finance](./universe-finance/) | $19.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [universe-xyz](./universe-xyz/) | $216.1K | 21.7% | $216.1K | dead | 3 | 34 | 2026-06-11 |
 | [uniwhale](./uniwhale/) | $33.4K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
+| [uniwswap](./uniwswap/) | $815.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [unslashed](./unslashed/) | $3.1M | 0.0% | $3.1M | declining | 0 | 2 | 2026-06-12 |
 | [untangled](./untangled/) | $302.8K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [untitledbank](./untitledbank/) | $242.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [uplift-dao](./uplift-dao/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-06-13 |
+| [urdex-finance](./urdex-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [usdt0](./usdt0/) | $3.6B | 0.0% | ? | unknown | 20 | 0 | 2026-06-13 |
+| [uswap](./uswap/) | $545.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [usx.capital](./usx.capital/) | $763.3K | 0.0% | ? | declining | 1 | 3 | 2026-06-11 |
 | [valorem](./valorem/) | $34.3 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [vaultcraft](./vaultcraft/) | $546.3K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |

@@ -863,13 +863,18 @@ Each project directory contains:
 | [landx-finance](./landx-finance/brief.md) | $1.77M | ethereum | 3 | 3/3 (100%) | 100.0% | 0.0% (-) | 1 | stale | ✅ active | - |
 | [larix](./larix/brief.md) | $1.01M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [latteswap](./latteswap/brief.md) | $54.94K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [layerakira](./layerakira/brief.md) | $736.58 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [layerbank](./layerbank/brief.md) | $23.19M | 4 | 91 | 13/91 (14%) | 50.0% | 0.0% (-) | 2 | fresh | ⚠️ declining | - |
 | [lbank](./lbank/brief.md) | $9.76M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [legacy-canary-protocol](./legacy-canary-protocol/brief.md) | $5.89K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [levex](./levex/brief.md) | $10.51M | bsc, ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [levvy-finance](./levvy-finance/brief.md) | $46.23K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [libero-financial](./libero-financial/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [likwid](./likwid/brief.md) | $52.66K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [liminal](./liminal/brief.md) | $24.93M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [linear-protocol](./linear-protocol/brief.md) | $59.63M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [linx-app](./linx-app/brief.md) | $129.86K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
+| [liondex](./liondex/brief.md) | $0.38 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [liquidity-house](./liquidity-house/brief.md) | $1.44M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [liquis](./liquis/brief.md) | $71.53K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [liquity](./liquity/brief.md) | $217.00M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -1180,5 +1185,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T13:35:11.544Z_
-_Projects: 1168_
+_Generated: 2026-06-13T13:37:35.227Z_
+_Projects: 1173_

@@ -816,6 +816,9 @@
 | [nf3-ape](./nf3-ape/) | $3.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [nftfi](./nftfi/) | $10.1K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [nftx](./nftx/) | $6.3M | 11.1% | $6.3M | declining | 5 | 184 | 2026-06-11 |
+| [nimbora](./nimbora/) | $338.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [nirvana](./nirvana/) | $2.7M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [nlx-protocol](./nlx-protocol/) | $760.8 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [nodedao](./nodedao/) | $33.3M | 38.9% | $33.3M | active | 5 | 18 | 2026-06-11 |
 | [nodeops](./nodeops/) | ? | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [nolus-protocol](./nolus-protocol/) | $509.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
@@ -827,6 +830,8 @@
 | [nucleus](./nucleus/) | $996.4K | 50.0% | ? | active | 11 | 6 | 2026-05-26 |
 | [nuls](./nuls/) | $7.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [numisme](./numisme/) | $309.1 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [nx-finance](./nx-finance/) | $1.9M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [nxd-protocol](./nxd-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [o2-exchange](./o2-exchange/) | $2.2M | 0.0% | ? | unknown | 13 | 0 | 2026-06-13 |
 | [obeliskbtc](./obeliskbtc/) | $33.2M | 36.8% | $33.2M | declining | 1 | 19 | 2026-06-13 |
 | [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |

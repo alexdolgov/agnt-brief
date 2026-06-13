@@ -5,7 +5,7 @@
 | Chain | base (8453) |
 | Address | `0x45ca74858c579e717ee29a86042e0d53b252b504` |
 | Role | registry |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (base [`0x45ca74858c579e717ee29a86042e0d53b252b504`](../0x45ca74858c579e717ee29a86042e0d53b252b504/)) |

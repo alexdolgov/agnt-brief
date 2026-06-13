@@ -1,58 +1,60 @@
 {
   "schema_version": "2.0",
   "project_key": "privacy-cash",
-  "generated_at": "2026-06-11T02:04:44.102Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-13T23:56:24.683Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-24d8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "privacy-cash",
     "tier": 0,
-    "peak_tvl": 2619472,
-    "peak_date": "2026-05-22T00:00:00.000Z",
-    "tvl_30d_ago": 1055552,
-    "tvl_90d_ago": 1703266,
-    "tvl_current": 2602209,
+    "peak_tvl": 2636064,
+    "peak_date": "2026-05-25T00:00:00.000Z",
+    "tvl_30d_ago": 2019799,
+    "tvl_90d_ago": 1942844,
+    "tvl_current": 1948306,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 434332,
-    "change_30d_pct": 146.52589356090462,
-    "change_90d_pct": 52.77760490727813,
-    "days_since_peak": 2,
+    "tvl_180d_ago": 524001,
+    "change_30d_pct": -3.5396096344240195,
+    "change_90d_pct": 0.2811342547317232,
+    "days_since_peak": 19,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 0.6590259411056885
+    "drop_from_peak_pct": 26.090337715624507
   },
   "summary": {
-    "total_contracts": 6,
-    "total_addresses": 12,
-    "unique_implementations": 6,
-    "total_deployments": 12,
+    "total_contracts": 8,
+    "total_addresses": 20,
+    "unique_implementations": 8,
+    "total_deployments": 20,
     "audited_contracts": 0,
     "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 3,
+    "contracts_unverified": 5,
     "coverage_pct": 0,
     "total_audits": 10,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2482541.1565900003,
-    "tvl_usd": 48088.20756837759,
+    "dl_tvl_usd": 1787164.27208,
+    "tvl_usd": 62793.71677219759,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "base": 48088.21
+      "base": 48088.21,
+      "ethereum": 14705.51
     },
-    "asd_usd": 48088.20756837759,
+    "asd_usd": 62793.71677219759,
     "website_url": "https://privacycash.org/",
     "chains": [
-      "base"
+      "base",
+      "ethereum"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2026-02",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 7,
-      "aging": 1,
+      "fresh": 8,
+      "aging": 0,
       "stale": 0,
       "unknown": 2
     }
@@ -63,7 +65,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 6,
+    "unique_implementations": 8,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -81,11 +83,29 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Privacy Cash",
-      "tvl_usd": 29414.234569,
+      "tvl_usd": 37392.364569,
       "is_proxy": false,
-      "impl_address": "0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a",
+      "impl_address": "0x803db1b37e3bb94d65e42f3dc886614587583958",
       "impl_name": "ERCPool",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x803db1b37e3bb94d65e42f3dc886614587583958",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc88f4df2b6eddd6b6bdf95a0177f50c90fa7527f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 7978.13,
+          "is_audited": false
+        },
         {
           "chain_id": 8453,
           "chain_name": "base",
@@ -113,19 +133,37 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x7f673790c08ddf27c0aa6fa9526ccc8daab081ec",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x77a10ae3e513c2d73d73eb52212c6918c8830dd0",
       "name": "EtherPool",
       "role": "core_logic",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
-      "product_line": "Privacy Cash",
-      "tvl_usd": 18673.972999377595,
+      "product_line": null,
+      "tvl_usd": 25401.352203197595,
       "is_proxy": true,
-      "impl_address": "0xa9cefead8d2f343b2c8c561e903378ede899ecdd",
+      "impl_address": "0xec5266c9e44631e1ba22fd6377c38130c1f3b738",
       "impl_name": "EtherPool",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x77a10ae3e513c2d73d73eb52212c6918c8830dd0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 6727.37920382,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xec5266c9e44631e1ba22fd6377c38130c1f3b738",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 8453,
           "chain_name": "base",
@@ -169,6 +207,68 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1d4fe6c99e9637460c8f9fde052165c9e5d3106d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1d4fe6c99e9637460c8f9fde052165c9e5d3106d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x22d8509e7af58b1eafb311f8f76e81dc3a391f77",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x22d8509e7af58b1eafb311f8f76e81dc3a391f77",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 8453,
@@ -278,6 +378,24 @@
       "impl_name": "Verifier2",
       "deployments": [
         {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9926a40b0879b36f9586c4285f0fae597bd56313",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbcffce41652093264d0807e2e834aff255982c98",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x41187a79c57e9143b1f6c4aa7e16bf0e07ff7c6f",
@@ -315,8 +433,8 @@
   ],
   "audits": [
     {
-      "audit_id": 2798,
-      "audit_key": "audit-2798",
+      "audit_id": 14293,
+      "audit_key": "audit-14293",
       "report_name": "Accretion Audit Report (USDC).pdf",
       "report_url": "https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/Accretion%20Audit%20Report%20(USDC).pdf",
       "auditor": "Accretion",
@@ -336,14 +454,14 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2799,
-      "audit_key": "audit-2799",
+      "audit_id": 14294,
+      "audit_key": "audit-14294",
       "report_name": "HashCloak Audit Report (SOL+SPL).pdf",
       "report_url": "https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/HashCloak%20Audit%20Report%20(SOL%2BSPL).pdf",
       "auditor": "HashCloak",
       "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-02",
+      "freshness": "fresh",
+      "date": "2026-02",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -357,8 +475,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2800,
-      "audit_key": "audit-2800",
+      "audit_id": 14295,
+      "audit_key": "audit-14295",
       "report_name": "Kriko Audit Report (SPL).pdf",
       "report_url": "https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/Kriko%20Audit%20Report%20(SPL).pdf",
       "auditor": "Kriko",
@@ -378,8 +496,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2801,
-      "audit_key": "audit-2801",
+      "audit_id": 14296,
+      "audit_key": "audit-14296",
       "report_name": "Sherlock Audit Report (USDC + SOL).pdf",
       "report_url": "https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/Sherlock%20Audit%20Report%20(USDC%20%2B%20SOL).pdf",
       "auditor": "Sherlock",
@@ -399,8 +517,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2802,
-      "audit_key": "audit-2802",
+      "audit_id": 14297,
+      "audit_key": "audit-14297",
       "report_name": "Veridise Audit Report (USDC+SOL).pdf",
       "report_url": "https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/Veridise%20Audit%20Report%20(USDC%2BSOL).pdf",
       "auditor": "Veridise",
@@ -420,8 +538,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2803,
-      "audit_key": "audit-2803",
+      "audit_id": 14298,
+      "audit_key": "audit-14298",
       "report_name": "Zigtur Audit Report (USDC + SPL).pdf",
       "report_url": "https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/Zigtur%20Audit%20Report%20(USDC%20%2B%20SPL).pdf",
       "auditor": "Zigtur",
@@ -441,8 +559,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2804,
-      "audit_key": "audit-2804",
+      "audit_id": 14299,
+      "audit_key": "audit-14299",
       "report_name": "accretion_audit_report_v1.pdf",
       "report_url": "https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/accretion_audit_report_v1.pdf",
       "auditor": "Accretion",
@@ -462,8 +580,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2805,
-      "audit_key": "audit-2805",
+      "audit_id": 14300,
+      "audit_key": "audit-14300",
       "report_name": "hashcloak_audit_v1.pdf",
       "report_url": "https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/hashcloak_audit_v1.pdf",
       "auditor": "HashCloak",
@@ -483,8 +601,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2806,
-      "audit_key": "audit-2806",
+      "audit_id": 14301,
+      "audit_key": "audit-14301",
       "report_name": "kriko_audit_v1.pdf",
       "report_url": "https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/kriko_audit_v1.pdf",
       "auditor": "Kriko",
@@ -504,8 +622,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2807,
-      "audit_key": "audit-2807",
+      "audit_id": 14302,
+      "audit_key": "audit-14302",
       "report_name": "zigtur_audit_v1.pdf",
       "report_url": "https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/zigtur_audit_v1.pdf",
       "auditor": "Zigtur",
@@ -534,8 +652,8 @@
       "name": "ERCPool",
       "role": "core_logic",
       "origin_kind": "native",
-      "tvl_usd": 29414.234569,
-      "risk_note": "Verified native implementation with $29,414.23 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 37392.364569,
+      "risk_note": "Verified native implementation with $37,392.36 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 8453,
@@ -552,7 +670,7 @@
     "native": 2,
     "upstream": 0,
     "standard_library": 1,
-    "needs_review": 3
+    "needs_review": 5
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -561,43 +679,43 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 2798,
+        "audit_id": 14293,
         "report_name": "Accretion Audit Report (USDC).pdf"
       },
       {
-        "audit_id": 2799,
+        "audit_id": 14294,
         "report_name": "HashCloak Audit Report (SOL+SPL).pdf"
       },
       {
-        "audit_id": 2800,
+        "audit_id": 14295,
         "report_name": "Kriko Audit Report (SPL).pdf"
       },
       {
-        "audit_id": 2801,
+        "audit_id": 14296,
         "report_name": "Sherlock Audit Report (USDC + SOL).pdf"
       },
       {
-        "audit_id": 2802,
+        "audit_id": 14297,
         "report_name": "Veridise Audit Report (USDC+SOL).pdf"
       },
       {
-        "audit_id": 2803,
+        "audit_id": 14298,
         "report_name": "Zigtur Audit Report (USDC + SPL).pdf"
       },
       {
-        "audit_id": 2804,
+        "audit_id": 14299,
         "report_name": "accretion_audit_report_v1.pdf"
       },
       {
-        "audit_id": 2805,
+        "audit_id": 14300,
         "report_name": "hashcloak_audit_v1.pdf"
       },
       {
-        "audit_id": 2806,
+        "audit_id": 14301,
         "report_name": "kriko_audit_v1.pdf"
       },
       {
-        "audit_id": 2807,
+        "audit_id": 14302,
         "report_name": "zigtur_audit_v1.pdf"
       }
     ],

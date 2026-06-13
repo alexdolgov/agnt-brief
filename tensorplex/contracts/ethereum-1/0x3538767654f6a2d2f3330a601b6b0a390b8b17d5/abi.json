@@ -1,0 +1,542 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_gravityId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_validators",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_powers",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "DeadlineExceeded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ECDSAInvalidSignature",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "length",
+        "type": "uint256"
+      }
+    ],
+    "name": "ECDSAInvalidSignatureLength",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "s",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ECDSAInvalidSignatureS",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "IncorrectCheckpoint",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "cumulativePower",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "powerThreshold",
+        "type": "uint256"
+      }
+    ],
+    "name": "InsufficientPower",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newNonce",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentNonce",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidBatchNonce",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidSignature",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newNonce",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentNonce",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidValsetNonce",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MalformedBatch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MalformedCurrentValidatorSet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MalformedNewValidatorSet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NewPowerThresholdTooLow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ReentrancyGuardReentrantCall",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "_srcChainId",
+        "type": "uint16"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_to",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "wToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "txnId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "transactionNonce",
+        "type": "uint256"
+      }
+    ],
+    "name": "ReceiveFromChain",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_batchNonce",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_eventNonce",
+        "type": "uint256"
+      }
+    ],
+    "name": "TransactionBatchExecutedEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_newValsetNonce",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_eventNonce",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "_validators",
+        "type": "address[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "_powers",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "ValsetUpdatedEvent",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "validators",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "powers",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "valsetNonce",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ConsensusBridge.ValsetArgs",
+        "name": "_valsetArgs",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_gravityId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "makeCheckpoint",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "powerThreshold",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "state_gravityId",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "state_lastBatchNonces",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "state_lastEventNonce",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "state_lastTransactionNonce",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "state_lastValsetCheckpoint",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "state_lastValsetNonce",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "validators",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "powers",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "valsetNonce",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ConsensusBridge.ValsetArgs",
+        "name": "_currentValset",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct ConsensusBridge.Signature[]",
+        "name": "_sigs",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_amounts",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_destinations",
+        "type": "address[]"
+      },
+      {
+        "internalType": "bytes32[]",
+        "name": "_transactionIds",
+        "type": "bytes32[]"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_sourceChainId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_batchNonce",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_tokenWrapperAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_deadline",
+        "type": "uint256"
+      }
+    ],
+    "name": "submitBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "validators",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "powers",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "valsetNonce",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ConsensusBridge.ValsetArgs",
+        "name": "_newValset",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "validators",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "powers",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "valsetNonce",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ConsensusBridge.ValsetArgs",
+        "name": "_currentValset",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct ConsensusBridge.Signature[]",
+        "name": "_sigs",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "updateValset",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

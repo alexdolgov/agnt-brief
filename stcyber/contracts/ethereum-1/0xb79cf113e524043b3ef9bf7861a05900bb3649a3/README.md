@@ -9,7 +9,7 @@
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (ethereum [`0xb79cf113e524043b3ef9bf7861a05900bb3649a3`](../0xb79cf113e524043b3ef9bf7861a05900bb3649a3/)) |
-| Proxy | No |
+| Proxy | No (implementation for 1 proxy: `0xbf4676...c1b36f`) |
 | Source | Sourcify (partial match) |
 | TVL | n/a |
 

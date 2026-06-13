@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "iaero-protocol",
-  "generated_at": "2026-05-31T08:24:51.006Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-13T23:55:32.861Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-24d8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "iaero-protocol",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 14.557592525875961
   },
   "summary": {
-    "total_contracts": 45,
-    "total_addresses": 63,
-    "unique_implementations": 45,
-    "total_deployments": 63,
+    "total_contracts": 46,
+    "total_addresses": 65,
+    "unique_implementations": 46,
+    "total_deployments": 65,
     "audited_contracts": 0,
     "unaudited_contracts": 40,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 40,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 5,
+    "contracts_unverified": 6,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1976310.2036,
-    "tvl_usd": 2717667.536677849,
+    "dl_tvl_usd": 1559464.70213,
+    "tvl_usd": 2727313.9594903076,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "base": 2717667.54
+      "base": 2727313.96
     },
-    "asd_usd": 2717667.536677849,
+    "asd_usd": 2727313.9594903076,
     "website_url": "https://app.iaero.finance/",
     "chains": [
       "base"
@@ -61,6 +61,11 @@
     "project_purpose": "iAero Protocol is a liquid staking and yield optimization platform on Base that unlocks liquidity from locked AERO (veAERO) positions. It issues liquid staking tokens like stiAERO and iAERO, manages permanent-lock vaults, and distributes rewards through a system of staking contracts and harvesters.",
     "relationship_narrative": "The Liquid Staking & Vaults family deposits AERO into Aerodrome's VotingEscrow via the Aerodrome Integration family, earning rewards that are harvested by RewardsHarvesterV2 and distributed to stakers through the Staking & Rewards Distribution family. The Treasury multisig controls key parameters and holds protocol reserves.",
     "product_family_count": 7
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 46,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -137,6 +142,55 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x08d49da370ecffbc4c6fdd2ae82b2d6ae238affd",
+      "name": "Pool",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 9646.422812458386,
+      "is_proxy": false,
+      "impl_address": "0xa4e46b4f701c62e14df11b48dce76a7d793cd6d7",
+      "impl_name": "Pool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x08d49da370ecffbc4c6fdd2ae82b2d6ae238affd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 9646.422812458386,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x420dd381b31aef6683db6b902084cb0ffece40da",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa4e46b4f701c62e14df11b48dce76a7d793cd6d7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 8453,
@@ -299,7 +353,7 @@
       "address": "0x5c3f18f06cc09ca1910767a34a20f771039e37c0",
       "name": "FactoryRegistry",
       "role": "registry",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -392,7 +446,7 @@
       "address": "0x35f35ca5b132cadf2916bab57639128eac5bbcb5",
       "name": "GaugeFactory",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -759,46 +813,6 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x9322a2155815cd636a16e66bef717b1b848e3248",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x420dd381b31aef6683db6b902084cb0ffece40da",
-      "name": "Pool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xa4e46b4f701c62e14df11b48dce76a7d793cd6d7",
-      "impl_name": "Pool",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x420dd381b31aef6683db6b902084cb0ffece40da",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xa4e46b4f701c62e14df11b48dce76a7d793cd6d7",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1241,10 +1255,41 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
+      "address": "0x0b41059984b715299abdf0bac82ebf8eb59ff4c4",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0b41059984b715299abdf0bac82ebf8eb59ff4c4",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
       "address": "0x25f11f947309df89bf4d36da5d9a9fb5f1e186c1",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Staking &amp; Rewards",
       "tvl_usd": null,
@@ -1275,7 +1320,7 @@
       "address": "0x536d466d8eb0bea65c0cddad9879641877aca7f6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1337,7 +1382,7 @@
       "address": "0x775a5973e7a216f5a29fad20e1c1a3c5eba9ae0b",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1368,7 +1413,7 @@
       "address": "0x81ce73b0f99048a5fa5bece44dde3cb9418e7246",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1599,7 +1644,7 @@
       "address": "0x45ca74858c579e717ee29a86042e0d53b252b504",
       "name": "VotingRewardsFactory",
       "role": "registry",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1691,26 +1736,6 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x5c3f18f06cc09ca1910767a34a20f771039e37c0",
-      "name": "FactoryRegistry",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x35f35ca5b132cadf2916bab57639128eac5bbcb5",
-      "name": "GaugeFactory",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
       "address": "0xfe5c929677d97723dc822c86c93c7e2d1b59c774",
       "name": "iAEROAutoUSDCVault",
       "role": "core_logic",
@@ -1783,16 +1808,6 @@
       "chain_name": "base",
       "address": "0x180dab53968e599dd43cf431e27cb01aa5c37909",
       "name": "PermalockVault_V5",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x420dd381b31aef6683db6b902084cb0ffece40da",
-      "name": "Pool",
       "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -1927,23 +1942,13 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x45ca74858c579e717ee29a86042e0d53b252b504",
-      "name": "VotingRewardsFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 36,
+    "native": 28,
     "upstream": 5,
     "standard_library": 4,
-    "needs_review": 0
+    "needs_review": 9
   },
   "scope_matching_notes": {
     "match_method_counts": {},

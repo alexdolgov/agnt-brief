@@ -1,6 +1,6 @@
 # iaero-protocol — Contract Index
 
-45 unique implementations on base · 63 deployments · 0 audited · 40 unaudited · 5 unverified
+46 unique implementations on base · 65 deployments · 0 audited · 40 unaudited · 6 unverified
 
 ## adapter (1)
 
@@ -15,7 +15,7 @@
 | [iAEROAutoUSDCVault](./base-8453/0xfe5c929677d97723dc822c86c93c7e2d1b59c774/) | base | [`0xfe5c92...59c774`](./base-8453/0xfe5c929677d97723dc822c86c93c7e2d1b59c774/) | ⚠️ Unaudited | Verified |
 | [PermalockVault (4 deployments)](./base-8453/0x38cc7923d5190a0e0fbdb8e51bce8ae8cef59c70/) | base | 4 deployments: base [`0x38cc79...f59c70`](./base-8453/0x38cc7923d5190a0e0fbdb8e51bce8ae8cef59c70/); base `0x430c3d...fb7ca0`; base `0x55816b...0f339c`; base `0x6584a3...552c61` | ⚠️ Unaudited | Verified |
 | [PermalockVault_V5 (3 deployments)](./base-8453/0x180dab53968e599dd43cf431e27cb01aa5c37909/) | base | 3 deployments: base [`0x180dab...c37909`](./base-8453/0x180dab53968e599dd43cf431e27cb01aa5c37909/); base `0x877398...953957`; base `0x9322a2...8e3248` | ⚠️ Unaudited | Verified |
-| [Pool (2 deployments)](./base-8453/0x420dd381b31aef6683db6b902084cb0ffece40da/) | base | 2 deployments: base [`0x420dd3...ce40da`](./base-8453/0x420dd381b31aef6683db6b902084cb0ffece40da/); base `0xa4e46b...3cd6d7` | ⚠️ Unaudited | Verified |
+| [Pool (3 deployments)](./base-8453/0x08d49da370ecffbc4c6fdd2ae82b2d6ae238affd/) | base | 3 deployments: base [`0x08d49d...38affd`](./base-8453/0x08d49da370ecffbc4c6fdd2ae82b2d6ae238affd/); base `0x420dd3...ce40da`; base `0xa4e46b...3cd6d7` | ⚠️ Unaudited | Verified |
 
 ## governance (4)
 
@@ -64,7 +64,7 @@
 | LIQToken | base | `0x7ee896...93e6a8` | ⚠️ Unaudited | Verified |
 | [StiAERO](./base-8453/0x72c135b8eebc57a3823f0920233e1a90ff4d683d/) | base | [`0x72c135...4d683d`](./base-8453/0x72c135b8eebc57a3823f0920233e1a90ff4d683d/) | ⚠️ Unaudited | Verified |
 
-## unknown (13)
+## unknown (14)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -74,6 +74,7 @@
 | [PerlinNoise](./base-8453/0x0b3a7479694d678fb34ef737811cb31b9dd9990e/) | base | [`0x0b3a74...d9990e`](./base-8453/0x0b3a7479694d678fb34ef737811cb31b9dd9990e/) | ⚠️ Unaudited | Verified |
 | [RewardsSugar](./base-8453/0xd4ad2eeeb3314d54212a92f4cbbe684195defe3e/) | base | [`0xd4ad2e...defe3e`](./base-8453/0xd4ad2eeeb3314d54212a92f4cbbe684195defe3e/) | ⚠️ Unaudited | Verified |
 | [Trig](./base-8453/0x1d75c4dda3d28b4f2ab634c439e495cf211a216f/) | base | [`0x1d75c4...1a216f`](./base-8453/0x1d75c4dda3d28b4f2ab634c439e495cf211a216f/) | ⚠️ Unaudited | Verified |
+| UnnamedContract | base | `0x0b4105...9ff4c4` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x25f11f...e186c1` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x536d46...aca7f6` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x75f57f...aa765a` | ❓ Unverified | Unverified |

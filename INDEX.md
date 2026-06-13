@@ -315,7 +315,7 @@
 | [defi-kingdoms](./defi-kingdoms/) | $7.7M | 0.0% | ? | declining | 1 | 5 | 2026-06-13 |
 | [defi-swap](./defi-swap/) | $870.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [defichain-dex](./defichain-dex/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [defil](./defil/) | $1.0M | 0.0% | $1.0M | active | 1 | 51 | 2026-06-10 |
+| [defil](./defil/) | $1.0M | 0.0% | $1.0M | active | 1 | 52 | 2026-06-13 |
 | [defiplaza](./defiplaza/) | $126.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [defirex](./defirex/) | $4.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [defituna](./defituna/) | $4.6M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
@@ -549,7 +549,7 @@
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 0 | 11 | 2026-06-11 |
 | [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 3 | 60 | 2026-06-13 |
 | [hyphen](./hyphen/) | $100.4K | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
-| [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 0 | 45 | 2026-05-31 |
+| [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 0 | 46 | 2026-06-13 |
 | [ibtc-finance](./ibtc-finance/) | $254.5 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ibtc-network](./ibtc-network/) | $158.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ichi](./ichi/) | $36.1M | 0.9% | $36.1M | active | 9 | 616 | 2026-06-11 |
@@ -938,7 +938,7 @@
 | [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | declining | 2 | 118 | 2026-06-13 |
 | [print3r](./print3r/) | $9.8 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [prism-protocol](./prism-protocol/) | $2.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [privacy-cash](./privacy-cash/) | $48.1K | 0.0% | $48.1K | active | 10 | 6 | 2026-06-11 |
+| [privacy-cash](./privacy-cash/) | $62.8K | 0.0% | $62.8K | active | 10 | 8 | 2026-06-13 |
 | [privacy-pools](./privacy-pools/) | $54.4K | 20.0% | $54.4K | active | 4 | 5 | 2026-06-12 |
 | [probit-global](./probit-global/) | $11.0M | 0.0% | ? | dead | 0 | 3 | 2026-06-12 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-06-11 |
@@ -1148,7 +1148,7 @@
 | [starlay-finance](./starlay-finance/) | $199.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [starterra](./starterra/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [stcelo](./stcelo/) | $1.6M | 50.0% | ? | active | 3 | 21 | 2026-06-13 |
-| [stcyber](./stcyber/) | $51.4M | 0.0% | $51.4M | declining | 1 | 31 | 2026-06-11 |
+| [stcyber](./stcyber/) | $51.4M | 3.6% | $51.4M | declining | 1 | 34 | 2026-06-13 |
 | [stealthpad](./stealthpad/) | $5.9 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [steer-protocol](./steer-protocol/) | $3.3M | 0.0% | $3.3M | active | 5 | 46 | 2026-06-12 |
 | [stfil](./stfil/) | $5.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
@@ -1224,7 +1224,7 @@
 | [templar-protocol](./templar-protocol/) | $41.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [tender-finance](./tender-finance/) | $1.3M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
 | [tenderize](./tenderize/) | $332.5M | 2.6% | $332.5M | declining | 6 | 43 | 2026-06-11 |
-| [tensorplex](./tensorplex/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-05-31 |
+| [tensorplex](./tensorplex/) | $387.4K | 0.0% | ? | active | 0 | 9 | 2026-06-13 |
 | [tg-casino](./tg-casino/) | $13.4M | 6.7% | ? | active | 761 | 15 | 2026-06-11 |
 | [thaw](./thaw/) | $7.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [the-arena](./the-arena/) | $7.8M | 0.0% | $7.8M | active | 0 | 121 | 2026-06-13 |

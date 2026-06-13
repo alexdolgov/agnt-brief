@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "defil",
-  "generated_at": "2026-06-10T22:49:41.909Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
+  "generated_at": "2026-06-13T23:54:51.401Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-24d8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "defil",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 64.2379604875184
   },
   "summary": {
-    "total_contracts": 51,
-    "total_addresses": 86,
-    "unique_implementations": 51,
-    "total_deployments": 86,
+    "total_contracts": 52,
+    "total_addresses": 94,
+    "unique_implementations": 52,
+    "total_deployments": 94,
     "audited_contracts": 0,
-    "unaudited_contracts": 37,
+    "unaudited_contracts": 38,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 37,
+    "contracts_verified_unaudited": 38,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 14,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1801686.8490699998,
+    "dl_tvl_usd": 1801887.03175,
     "tvl_usd": 1007207.1793767853,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -44,6 +44,7 @@
     "asd_usd": 1007207.1793767853,
     "website_url": null,
     "chains": [
+      "bsc",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -63,7 +64,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 51,
+    "unique_implementations": 52,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -518,7 +519,7 @@
       "address": "0xca106916ca1f9c53442435036edf9b137b381c90",
       "name": "FilChainStatOracle",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -961,6 +962,55 @@
       "contamination_flag": "cleared"
     },
     {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x3558c47c0f2309197857689d84cb620405e2c54d",
+      "name": "PancakePair",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "pancakeswap",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PancakePair",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x3558c47c0f2309197857689d84cb620405e2c54d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x3ce2669c9aaf8e717c739b1e9100fa792ad23835",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xecf6aa34b19e31311eb92768888bddd25aa72933",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x7f5f88f761cb6408120d290835c9ae617ca79b42",
@@ -1219,6 +1269,51 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xefeeb899c1a7ea13140c1c161dd3a054eda7d6f6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x272257bb03a2b99978a1e6badeba7ccba444d285",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6b6811a710f07b8ac430f6e172833e87c4bd8716",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6b9ee349810e660dda9e3557c7a7412e5424ea39",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6c753ca90bad578504314699580c8b01e067a765",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xde6239b3138910c68f318e799b3d332925e9929f",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1916,8 +2011,8 @@
       "address": "0x784ca62029caa80ee54fca4256100f720e894569",
       "name": "WhitePaperInterestRateModel",
       "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "compound-finance",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -2100,6 +2195,16 @@
       "address": "0x22b475f3e93390b7e523873ad7073337f4e56c2c",
       "name": "EFIL",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xca106916ca1f9c53442435036edf9b137b381c90",
+      "name": "FilChainStatOracle",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2333,13 +2438,23 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x784ca62029caa80ee54fca4256100f720e894569",
+      "name": "WhitePaperInterestRateModel",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 48,
-    "upstream": 1,
-    "standard_library": 1,
-    "needs_review": 1
+    "native": 50,
+    "upstream": 2,
+    "standard_library": 0,
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

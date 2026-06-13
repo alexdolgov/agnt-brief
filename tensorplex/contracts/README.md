@@ -1,12 +1,25 @@
 # tensorplex — Contract Index
 
-6 unique implementations on ethereum · 9 deployments · 0 audited · 4 unaudited · 2 unverified
+9 unique implementations on ethereum · 13 deployments · 0 audited · 7 unaudited · 2 unverified
 
-## operational_periphery (1)
+## core_logic (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [BridgeWrapper](./ethereum-1/0x143f476fd97807b526dd50cc2828043b08f78336/) | ethereum | [`0x143f47...f78336`](./ethereum-1/0x143f476fd97807b526dd50cc2828043b08f78336/) | ⚠️ Unaudited | Verified |
+| [LockReleaseTokenPool](./ethereum-1/0x0c291ae31730901515e5c46406a6ba2d88c1f4aa/) | ethereum | [`0x0c291a...c1f4aa`](./ethereum-1/0x0c291ae31730901515e5c46406a6ba2d88c1f4aa/) | ⚠️ Unaudited | Verified |
+
+## governance (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [GnosisSafe](./ethereum-1/0xfb47f57c064a0032ee66f98566dedce2aa6d68f3/) | ethereum | [`0xfb47f5...6d68f3`](./ethereum-1/0xfb47f57c064a0032ee66f98566dedce2aa6d68f3/) | ⚠️ Unaudited | Verified |
+
+## operational_periphery (2)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [BridgeWrapper (2 deployments)](./ethereum-1/0x143f476fd97807b526dd50cc2828043b08f78336/) | ethereum | 2 deployments: ethereum [`0x143f47...f78336`](./ethereum-1/0x143f476fd97807b526dd50cc2828043b08f78336/); ethereum `0xecaec5...b03b1c` | ⚠️ Unaudited | Verified |
+| [ConsensusBridge](./ethereum-1/0x3538767654f6a2d2f3330a601b6b0a390b8b17d5/) | ethereum | [`0x353876...8b17d5`](./ethereum-1/0x3538767654f6a2d2f3330a601b6b0a390b8b17d5/) | ⚠️ Unaudited | Verified |
 
 ## proxy (1)
 

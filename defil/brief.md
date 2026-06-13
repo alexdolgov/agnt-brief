@@ -4,11 +4,11 @@
 
 - Project: DeFIL (`defil`)
 - Lifecycle: active (Tier 0, 64.2% below peak)
-- Generated: 2026-06-10T22:49:41.909Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
-- Chains: ethereum
-- Contract surface: 51 unique implementations (86 raw deployments)
-- DeFi Llama TVL: $1,801,686.85
+- Generated: 2026-06-13T23:54:51.401Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
+- Chains: bsc, ethereum
+- Contract surface: 52 unique implementations (94 raw deployments)
+- DeFi Llama TVL: $1,801,887.03
 - On-chain TVL (included contracts): $1,007,207.18
 - TVL by chain: Ethereum $1,007,207.18
 
@@ -22,12 +22,12 @@ The DeFIL family shares a common deployer cluster and uses proxy patterns (Unitr
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/37 (0.0%)
-- Verified + Unaudited implementations: 37
+- Verified implementations audited: 0/38 (0.0%)
+- Verified + Unaudited implementations: 38
 - Verified by bytecode match: 0
 - Unverified implementations: 14
-- Unique implementations: 51
-- Raw deployments: 86
+- Unique implementations: 52
+- Raw deployments: 94
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $1,007,207.18
@@ -45,7 +45,7 @@ The DeFIL family shares a common deployer cluster and uses proxy patterns (Unitr
 
 - None
 
-### ⚠️ Verified + Unaudited (37)
+### ⚠️ Verified + Unaudited (38)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -73,11 +73,12 @@ The DeFIL family shares a common deployer cluster and uses proxy patterns (Unitr
 | MiningNFTMintingLimitation | token | ethereum | [`0x0b72c8...e9d3ac`](./contracts/ethereum-1/0x0b72c88a4f5e81d96da2ea3e8a26d0113de9d3ac/) | ⚠️ Unaudited |
 | MiningNFTMintingLimitationData | token | ethereum | [`0x097eb2...692f57`](./contracts/ethereum-1/0x097eb2025019ebec0faf9f8077804a10eb692f57/) | ⚠️ Unaudited |
 | NormalInterestRateModel | operational_periphery | ethereum | 6 deployments: ethereum [`0x0f703a...d4ab9a`](./contracts/ethereum-1/0x0f703af1a3f2bf8877132109a02659feead4ab9a/); ethereum `0x6cc9fe...228165`; ethereum `0x732b6b...8578ac`; ethereum `0xb394c6...ea6f80`; ethereum `0xd4e1a9...f6b4df`; ethereum `0xdb30f2...049145` | ⚠️ Unaudited |
+| PancakePair | unknown | bsc | 3 deployments: bsc [`0x3558c4...e2c54d`](./contracts/bsc-56/0x3558c47c0f2309197857689d84cb620405e2c54d/); bsc `0x3ce266...d23835`; bsc `0xecf6aa...a72933` | ⚠️ Unaudited |
 | PriceConverter | operational_periphery | ethereum | [`0x7f5f88...a79b42`](./contracts/ethereum-1/0x7f5f88f761cb6408120d290835c9ae617ca79b42/) | ⚠️ Unaudited |
 | PrivilegedRedistributor | operational_periphery | ethereum | 6 deployments: ethereum [`0x3c2f55...f60bf3`](./contracts/ethereum-1/0x3c2f55a3e7f4e092723cba44c1cbb859eff60bf3/); ethereum `0x3ccd01...284c8f`; ethereum `0xb02f11...aa60eb`; ethereum `0xd86519...9cf252`; ethereum `0xe67ae1...39463d`; ethereum `0xecf802...4a00e7` | ⚠️ Unaudited |
 | ReferrerRewardsDistribution | unknown | ethereum | 2 deployments: ethereum [`0x69f8eb...b1bb2b`](./contracts/ethereum-1/0x69f8eb1727a9e0f0d37113d91ae3075c65b1bb2b/); ethereum `0x9a9e42...b09c68` | ⚠️ Unaudited |
 | Repurchase | unknown | ethereum | 2 deployments: ethereum [`0x9d7621...da5eb3`](./contracts/ethereum-1/0x9d7621b157cb10fa32533f304ab0894fdbda5eb3/); ethereum `0xccb562...cbd7da` | ⚠️ Unaudited |
-| Staking | unknown | ethereum | 7 deployments: ethereum [`0x01aabb...fbbf0c`](./contracts/ethereum-1/0x01aabbad98a7638b7f8d65e7ec42560f1afbbf0c/); ethereum `0x2170c3...117cf6`; ethereum `0x679546...54b169`; ethereum `0x6b0c7d...50a6a6`; ethereum `0x9e08bd...4d2f2f`; ethereum `0xb685bf...69c823`; ethereum `0xefeeb8...a7d6f6` | ⚠️ Unaudited |
+| Staking | unknown | ethereum | 12 deployments: ethereum [`0x01aabb...fbbf0c`](./contracts/ethereum-1/0x01aabbad98a7638b7f8d65e7ec42560f1afbbf0c/); ethereum `0x2170c3...117cf6`; ethereum `0x679546...54b169`; ethereum `0x6b0c7d...50a6a6`; ethereum `0x9e08bd...4d2f2f`; ethereum `0xb685bf...69c823`; ethereum `0xefeeb8...a7d6f6`; bsc `0x272257...44d285`; bsc `0x6b6811...bd8716`; bsc `0x6b9ee3...24ea39`; bsc `0x6c753c...67a765`; bsc `0xde6239...e9929f` | ⚠️ Unaudited |
 | StakingDFL | unknown | ethereum | [`0x842738...1da214`](./contracts/ethereum-1/0x842738637f84b4dac335b832d9890cf8e11da214/) | ⚠️ Unaudited |
 | StakingLP | unknown | ethereum | [`0x95bcdb...e1718e`](./contracts/ethereum-1/0x95bcdb593e50a68b613356698c752171d5e1718e/) | ⚠️ Unaudited |
 | StandardPriceOracle | operational_periphery | ethereum | [`0x8a1e3e...543039`](./contracts/ethereum-1/0x8a1e3e5815cffaf87c220a738b06c23f03543039/) | ⚠️ Unaudited |
@@ -143,6 +144,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xf0e55f...bbc8ce`](./contracts/ethereum-1/0xf0e55fb0cd9f1109691d365764ddb5ffb6bbc8ce/) | DeFIL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x09ce2b...f095ab`](./contracts/ethereum-1/0x09ce2b746c32528b7d864a1e3979bd97d2f095ab/) | DFL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x22b475...e56c2c`](./contracts/ethereum-1/0x22b475f3e93390b7e523873ad7073337f4e56c2c/) | EFIL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xca1069...381c90`](./contracts/ethereum-1/0xca106916ca1f9c53442435036edf9b137b381c90/) | FilChainStatOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xcd429f...3f9944`](./contracts/ethereum-1/0xcd429f23088b3fa4aabff61dd5f9e534793f9944/) | FILSTManage | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xe5dbb8...f8c0ea`](./contracts/ethereum-1/0xe5dbb86ea4669bc8bd3d48d1563dc27c50f8c0ea/) | FilstMarketCErc20Delegate | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x987dd3...f25928`](./contracts/ethereum-1/0x987dd30f57e51a732e4dcad0890ad6631ff25928/) | FILSTUtils | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -166,15 +168,16 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xe32d18...b5174c`](./contracts/ethereum-1/0xe32d18c22e25bc49bf347792f81400224cb5174c/) | StandardRewardCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6b0625...a33b77`](./contracts/ethereum-1/0x6b062566c677f67aeffcec1a8fe1b52795a33b77/) | Timelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc7971b...32b451`](./contracts/ethereum-1/0xc7971be48085a8b7a83f1e59161173d3c132b451/) | Unitroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x784ca6...894569`](./contracts/ethereum-1/0x784ca62029caa80ee54fca4256100f720e894569/) | WhitePaperInterestRateModel | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 48 |
-| upstream | 1 |
-| standard_library | 1 |
-| needs_review | 1 |
+| native | 50 |
+| upstream | 2 |
+| standard_library | 0 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

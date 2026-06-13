@@ -4,14 +4,14 @@
 
 - Project: Privacy Cash (`privacy-cash`)
 - Website: [https://privacycash.org/](https://privacycash.org/)
-- Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T02:04:44.102Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
-- Chains: base
-- Contract surface: 6 unique implementations (12 raw deployments)
-- DeFi Llama TVL: $2,482,541.16
-- On-chain TVL (included contracts): $48,088.21
-- TVL by chain: Base $48,088.21
+- Lifecycle: active (Tier 0, 26.1% below peak)
+- Generated: 2026-06-13T23:56:24.683Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
+- Chains: base, ethereum
+- Contract surface: 8 unique implementations (20 raw deployments)
+- DeFi Llama TVL: $1,787,164.27
+- On-chain TVL (included contracts): $62,793.72
+- TVL by chain: Base $48,088.21 | Ethereum $14,705.51
 
 ## Project Description
 
@@ -26,14 +26,14 @@ The protocol consists of a single product family with two core pool contracts (E
 - Verified implementations audited: 0/3 (0.0%)
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 3
-- Unique implementations: 6
-- Raw deployments: 12
+- Unverified implementations: 5
+- Unique implementations: 8
+- Raw deployments: 20
 - Audits discovered: 10
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $48,088.21
+- ASD (verified + unaudited TVL): $62,793.72
 - Latest audit: 2026-02 (fresh)
-- Staleness: 7 fresh, 1 aging, 0 stale, 2 unknown
+- Staleness: 8 fresh, 0 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -50,9 +50,9 @@ The protocol consists of a single product family with two core pool contracts (E
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| ERCPool | core_logic | base | 2 deployments: base [`0x6b5365...447c9a`](./contracts/base-8453/0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a/); base `0xe91dd4...5a905b` | ⚠️ Unaudited |
-| EtherPool | core_logic | base | 4 deployments: base [`0x7f6737...b081ec`](./contracts/base-8453/0x7f673790c08ddf27c0aa6fa9526ccc8daab081ec/); base `0xa9cefe...99ecdd`; base `0xbcffce...982c98`; base `0xfee24c...c832a1` | ⚠️ Unaudited |
-| Verifier2 | periphery | base | 3 deployments: base [`0x41187a...ff7c6f`](./contracts/base-8453/0x41187a79c57e9143b1f6c4aa7e16bf0e07ff7c6f/); base `0x870755...6dabd0`; base `0xe24f4c...225b7c` | ⚠️ Unaudited |
+| ERCPool | core_logic | base | 4 deployments: ethereum `0x803db1...583958`; ethereum `0xc88f4d...a7527f`; base [`0x6b5365...447c9a`](./contracts/base-8453/0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a/); base `0xe91dd4...5a905b` | ⚠️ Unaudited |
+| EtherPool | core_logic | ethereum | 6 deployments: ethereum [`0x77a10a...830dd0`](./contracts/ethereum-1/0x77a10ae3e513c2d73d73eb52212c6918c8830dd0/); ethereum `0xec5266...f3b738`; base `0x7f6737...b081ec`; base `0xa9cefe...99ecdd`; base `0xbcffce...982c98`; base `0xfee24c...c832a1` | ⚠️ Unaudited |
+| Verifier2 | periphery | base | 5 deployments: ethereum `0x9926a4...d56313`; ethereum `0xbcffce...982c98`; base [`0x41187a...ff7c6f`](./contracts/base-8453/0x41187a79c57e9143b1f6c4aa7e16bf0e07ff7c6f/); base `0x870755...6dabd0`; base `0xe24f4c...225b7c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -66,12 +66,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (5)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | `0x1d4fe6...d3106d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | `0x22d850...391f77` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x045596...88d2e3` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0xbb0c7f...c9013f` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0xf48b36...24e9ac` | ❓ Unverified |
@@ -81,7 +83,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Accretion Audit Report (USDC).pdf](https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/Accretion%20Audit%20Report%20(USDC).pdf) | Accretion | Audit | 2025-12 | fresh | Direct | n/a | 0 | n/a |
-| [HashCloak Audit Report (SOL+SPL).pdf](https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/HashCloak%20Audit%20Report%20(SOL%2BSPL).pdf) | HashCloak | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
+| [HashCloak Audit Report (SOL+SPL).pdf](https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/HashCloak%20Audit%20Report%20(SOL%2BSPL).pdf) | HashCloak | Audit | 2026-02 | fresh | Direct | n/a | 0 | n/a |
 | [Kriko Audit Report (SPL).pdf](https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/Kriko%20Audit%20Report%20(SPL).pdf) | Kriko | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Sherlock Audit Report (USDC + SOL).pdf](https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/Sherlock%20Audit%20Report%20(USDC%20%2B%20SOL).pdf) | Sherlock | Contest | 2025-11 | fresh | Direct | n/a | 0 | n/a |
 | [Veridise Audit Report (USDC+SOL).pdf](https://github.com/Privacy-Cash/privacy-cash/blob/main/audits/Veridise%20Audit%20Report%20(USDC%2BSOL).pdf) | Veridise | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
@@ -97,7 +99,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x6b5365...447c9a`](./contracts/base-8453/0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a/) | ERCPool | core_logic | $29,414.23 | Verified native implementation with $29,414.23 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x6b5365...447c9a`](./contracts/base-8453/0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a/) | ERCPool | core_logic | $37,392.36 | Verified native implementation with $37,392.36 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x41187a...ff7c6f`](./contracts/base-8453/0x41187a79c57e9143b1f6c4aa7e16bf0e07ff7c6f/) | Verifier2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
@@ -107,7 +109,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 2 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 3 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 
@@ -120,15 +122,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [2798] Accretion Audit Report (USDC).pdf
-- [2799] HashCloak Audit Report (SOL+SPL).pdf
-- [2800] Kriko Audit Report (SPL).pdf
-- [2801] Sherlock Audit Report (USDC + SOL).pdf
-- [2802] Veridise Audit Report (USDC+SOL).pdf
-- [2803] Zigtur Audit Report (USDC + SPL).pdf
-- [2804] accretion_audit_report_v1.pdf
-- [2805] hashcloak_audit_v1.pdf
-- [2806] kriko_audit_v1.pdf
-- [2807] zigtur_audit_v1.pdf
+- [14293] Accretion Audit Report (USDC).pdf
+- [14294] HashCloak Audit Report (SOL+SPL).pdf
+- [14295] Kriko Audit Report (SPL).pdf
+- [14296] Sherlock Audit Report (USDC + SOL).pdf
+- [14297] Veridise Audit Report (USDC+SOL).pdf
+- [14298] Zigtur Audit Report (USDC + SPL).pdf
+- [14299] accretion_audit_report_v1.pdf
+- [14300] hashcloak_audit_v1.pdf
+- [14301] kriko_audit_v1.pdf
+- [14302] zigtur_audit_v1.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

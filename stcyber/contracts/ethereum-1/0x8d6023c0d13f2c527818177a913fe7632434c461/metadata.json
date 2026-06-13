@@ -1,0 +1,17 @@
+{
+  "address": "0x8d6023c0d13f2c527818177a913fe7632434c461",
+  "chain_id": 1,
+  "contract_name": "ExecutorFeeLib",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "00000000000000000000000000000000000000000000000000000000000075950000000000000000000000000000000000000000000000000de0b6b3a7640000",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T23:55:36.323Z"
+}

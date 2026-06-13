@@ -5,13 +5,13 @@
 - Project: iAero Protocol (`iaero-protocol`)
 - Website: [https://app.iaero.finance/](https://app.iaero.finance/)
 - Lifecycle: active (Tier 0, 14.6% below peak)
-- Generated: 2026-05-31T08:24:51.006Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-13T23:55:32.861Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
 - Chains: base
-- Contract surface: 45 unique implementations (63 raw deployments)
-- DeFi Llama TVL: $1,976,310.20
-- On-chain TVL (included contracts): $2,717,667.54
-- TVL by chain: Base $2,717,667.54
+- Contract surface: 46 unique implementations (65 raw deployments)
+- DeFi Llama TVL: $1,559,464.70
+- On-chain TVL (included contracts): $2,727,313.96
+- TVL by chain: Base $2,727,313.96
 
 ## Project Description
 
@@ -26,12 +26,12 @@ The Liquid Staking & Vaults family deposits AERO into Aerodrome's VotingEscrow v
 - Verified implementations audited: 0/40 (0.0%)
 - Verified + Unaudited implementations: 40
 - Verified by bytecode match: 0
-- Unverified implementations: 5
-- Unique implementations: 45
-- Raw deployments: 63
+- Unverified implementations: 6
+- Unique implementations: 46
+- Raw deployments: 65
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $2,717,667.54
+- ASD (verified + unaudited TVL): $2,727,313.96
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -52,6 +52,7 @@ The Liquid Staking & Vaults family deposits AERO into Aerodrome's VotingEscrow v
 |---|---|---|---|---|
 | iAEROToken | token | base | 2 deployments: base [`0x81034f...46a1dc`](./contracts/base-8453/0x81034fb34009115f215f5d5f564aac9ffa46a1dc/); base `0xb2d632...f8f4c9` | ⚠️ Unaudited |
 | LIQToken | token | base | [`0x7ee896...93e6a8`](./contracts/base-8453/0x7ee8964160126081cebc443a42482e95e393e6a8/) | ⚠️ Unaudited |
+| Pool | core_logic | base | 3 deployments: base [`0x08d49d...38affd`](./contracts/base-8453/0x08d49da370ecffbc4c6fdd2ae82b2d6ae238affd/); base `0x420dd3...ce40da`; base `0xa4e46b...3cd6d7` | ⚠️ Unaudited |
 | Aero | token | base | [`0x940181...d98631`](./contracts/base-8453/0x940181a94a35a4569e4529a3cdfb74e38fd98631/) | ⚠️ Unaudited |
 | AirdropDistributor | operational_periphery | base | [`0xe4c69a...bc382f`](./contracts/base-8453/0xe4c69af018b2ea9e575026c0472b6531a2bc382f/) | ⚠️ Unaudited |
 | BalanceLogicLibrary | unknown | base | [`0x8e6341...53b648`](./contracts/base-8453/0x8e634181dafb102213fad46b71ba1a4b6153b648/) | ⚠️ Unaudited |
@@ -71,7 +72,6 @@ The Liquid Staking & Vaults family deposits AERO into Aerodrome's VotingEscrow v
 | PerlinNoise | unknown | base | [`0x0b3a74...d9990e`](./contracts/base-8453/0x0b3a7479694d678fb34ef737811cb31b9dd9990e/) | ⚠️ Unaudited |
 | PermalockVault | core_logic | base | 4 deployments: base [`0x38cc79...f59c70`](./contracts/base-8453/0x38cc7923d5190a0e0fbdb8e51bce8ae8cef59c70/); base `0x430c3d...fb7ca0`; base `0x55816b...0f339c`; base `0x6584a3...552c61` | ⚠️ Unaudited |
 | PermalockVault_V5 | core_logic | base | 3 deployments: base [`0x180dab...c37909`](./contracts/base-8453/0x180dab53968e599dd43cf431e27cb01aa5c37909/); base `0x877398...953957`; base `0x9322a2...8e3248` | ⚠️ Unaudited |
-| Pool | core_logic | base | 2 deployments: base [`0x420dd3...ce40da`](./contracts/base-8453/0x420dd381b31aef6683db6b902084cb0ffece40da/); base `0xa4e46b...3cd6d7` | ⚠️ Unaudited |
 | ProtocolGovernor | governance | base | [`0x94c012...33f410`](./contracts/base-8453/0x94c012a23a8a65a6f40608da30534a46a433f410/) | ⚠️ Unaudited |
 | RewardsDistributor | operational_periphery | base | [`0x227f65...964c7d`](./contracts/base-8453/0x227f65131a261548b057215bb1d5ab2997964c7d/) | ⚠️ Unaudited |
 | RewardsHarvester | operational_periphery | base | 4 deployments: base [`0x1dcdcc...4769ff`](./contracts/base-8453/0x1dcdcc16167520256c3b13e18266615d504769ff/); base `0x1f935e...44acfa`; base `0xa520f8...80750a`; base `0xe9fd07...9459c4` | ⚠️ Unaudited |
@@ -103,12 +103,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (5)
+### ❓ Unverified (6)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| UnnamedContract | unknown | base | `0x0b4105...9ff4c4` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x25f11f...e186c1` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x536d46...aca7f6` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x75f57f...aa765a` | ❓ Unverified |
@@ -132,8 +133,6 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0x8e6341...53b648`](./contracts/base-8453/0x8e634181dafb102213fad46b71ba1a4b6153b648/) | BalanceLogicLibrary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xd6e6d5...31d59f`](./contracts/base-8453/0xd6e6d57d0627aae127743c79bc795f836431d59f/) | DelegationLogicLibrary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x781a80...a6588a`](./contracts/base-8453/0x781a80fa817b5a146c440f03ef8643f4aca6588a/) | EpochStakingDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x5c3f18...9e37c0`](./contracts/base-8453/0x5c3f18f06cc09ca1910767a34a20f771039e37c0/) | FactoryRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x35f35c...5bbcb5`](./contracts/base-8453/0x35f35ca5b132cadf2916bab57639128eac5bbcb5/) | GaugeFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xfe5c92...59c774`](./contracts/base-8453/0xfe5c929677d97723dc822c86c93c7e2d1b59c774/) | iAEROAutoUSDCVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xf1d25f...f319db`](./contracts/base-8453/0xf1d25f4ee64988afad0f1612cc3d540725f319db/) | LIQLinearVester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xb81efc...0cdda4`](./contracts/base-8453/0xb81efc6be6622bf4086566210a6ad134cd0cdda4/) | LIQStakingDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -142,7 +141,6 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0x3ab1a1...1be23d`](./contracts/base-8453/0x3ab1a16622bc5bdd1619d427fb1a6f73c71be23d/) | PatchedManagedRewardsFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x38cc79...f59c70`](./contracts/base-8453/0x38cc7923d5190a0e0fbdb8e51bce8ae8cef59c70/) | PermalockVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x180dab...c37909`](./contracts/base-8453/0x180dab53968e599dd43cf431e27cb01aa5c37909/) | PermalockVault_V5 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x420dd3...ce40da`](./contracts/base-8453/0x420dd381b31aef6683db6b902084cb0ffece40da/) | Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x94c012...33f410`](./contracts/base-8453/0x94c012a23a8a65a6f40608da30534a46a433f410/) | ProtocolGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x227f65...964c7d`](./contracts/base-8453/0x227f65131a261548b057215bb1d5ab2997964c7d/) | RewardsDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x1dcdcc...4769ff`](./contracts/base-8453/0x1dcdcc16167520256c3b13e18266615d504769ff/) | RewardsHarvester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -156,16 +154,15 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0xe99924...54643e`](./contracts/base-8453/0xe9992487b2ee03b7a91241695a58e0ef3654643e/) | VeArtProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x06026f...0565a4`](./contracts/base-8453/0x06026fe30ce9e9a613a21a87af210022c80565a4/) | VotingManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x1702dd...8e6fbb`](./contracts/base-8453/0x1702ddf00e4ff3ed892e569a26e0f1f6858e6fbb/) | VotingManagerOptimised | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x45ca74...52b504`](./contracts/base-8453/0x45ca74858c579e717ee29a86042e0d53b252b504/) | VotingRewardsFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 36 |
+| native | 28 |
 | upstream | 5 |
 | standard_library | 4 |
-| needs_review | 0 |
+| needs_review | 9 |
 
 ## Scope Matching Notes
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stcyber",
-  "generated_at": "2026-06-11T12:13:39.438Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
+  "generated_at": "2026-06-13T23:55:33.914Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-24d8",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "stcyber",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 85.84498605855634
   },
   "summary": {
-    "total_contracts": 31,
-    "total_addresses": 44,
-    "unique_implementations": 31,
-    "total_deployments": 44,
-    "audited_contracts": 0,
-    "unaudited_contracts": 26,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 26,
+    "total_contracts": 34,
+    "total_addresses": 47,
+    "unique_implementations": 34,
+    "total_deployments": 47,
+    "audited_contracts": 1,
+    "unaudited_contracts": 27,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 27,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 5,
-    "coverage_pct": 0,
+    "contracts_unverified": 6,
+    "coverage_pct": 3.6,
     "total_audits": 1,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 1142501.11269,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 1143893.96796,
     "tvl_usd": 51356497.64087489,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -51,15 +51,17 @@
       "ethereum",
       "optimism"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "tier1_coverage_pct": 3.6,
+    "tier1_auditors": [
+      "SlowMist"
+    ],
+    "latest_audit_date": "2024-06",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 1
+      "stale": 1,
+      "unknown": 0
     }
   },
   "topography": {
@@ -68,7 +70,7 @@
     "product_family_count": 3
   },
   "surface_sufficiency": {
-    "unique_implementations": 31,
+    "unique_implementations": 34,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -150,8 +152,8 @@
       "address": "0x19b5804b88f10262a55ac731f28a3bbc4209853a",
       "name": "AddressManager",
       "role": "governance",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "optimism",
       "product_line": "Contract Addresses",
       "tvl_usd": null,
       "is_proxy": false,
@@ -176,35 +178,37 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x9b20927a5dbf71d0539d48173c5f5b342bc67798",
-      "name": "Create2Deployer",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "create2",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x18eed20f71bef84b605253c89a7576e3634134c0",
+      "name": "CyberStakingPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": "Create2Deployer",
+      "impl_name": "CyberStakingPool",
       "deployments": [
         {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x9b20927a5dbf71d0539d48173c5f5b342bc67798",
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x18eed20f71bef84b605253c89a7576e3634134c0",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11687"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -212,8 +216,8 @@
       "address": "0xcb07992de144bdee56fdb66fff2454b43243b052",
       "name": "CyberTokenAdapter",
       "role": "adapter",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "layer-zero",
       "product_line": "$CYBER LayerZero Contracts",
       "tvl_usd": null,
       "is_proxy": false,
@@ -243,8 +247,8 @@
       "address": "0x9a9d5a29206dde4f70825032df32333de5f63921",
       "name": "CyberTokenController",
       "role": "governance",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "layer-zero",
       "product_line": "$CYBER LayerZero Contracts",
       "tvl_usd": null,
       "is_proxy": false,
@@ -440,7 +444,69 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xc2259e7fb719411f97abdcdf449f6ba3b9d75398",
+      "address": "0x2d034969c3a31f16ae3540c802facdcacfe57eb3",
+      "name": "Executor",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Executor",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2d034969c3a31f16ae3540c802facdcacfe57eb3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8d6023c0d13f2c527818177a913fe7632434c461",
+      "name": "ExecutorFeeLib",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ExecutorFeeLib",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8d6023c0d13f2c527818177a913fe7632434c461",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x455db34c99a866489f3ac63fa2f068c726bc286b",
       "name": "GnosisSafe",
       "role": "governance",
       "origin_kind": "standard_library",
@@ -451,6 +517,15 @@
       "impl_address": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
       "impl_name": "GnosisSafe",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x455db34c99a866489f3ac63fa2f068c726bc286b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -514,8 +589,8 @@
       "address": "0x3c01ebf22e9c111528c1e027d68944edab08dfc9",
       "name": "L1CrossDomainMessenger",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "optimism",
       "product_line": "Contract Addresses",
       "tvl_usd": null,
       "is_proxy": true,
@@ -649,37 +724,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0xb2bbfc07948fedeb5935316203c33ce70bef57d0",
-      "name": "MerkleDistributorWithDeadline",
-      "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MerkleDistributorWithDeadline",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xb2bbfc07948fedeb5935316203c33ce70bef57d0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -839,6 +883,37 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xeae8985742b0647bde180199e1dca3116a87acdd",
+      "name": "PriceFeed",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PriceFeed",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xeae8985742b0647bde180199e1dca3116a87acdd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xc2e2d8150ae64367cadc3d47e98253e54b5458c7",
       "name": "ProtocolVersions",
       "role": "unknown",
@@ -982,15 +1057,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xfe98ba9d562f8359981269c9e22fdbf02717b723",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -998,6 +1064,37 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x090fcee3ae4132d3fd4363042c34e8e63a0c2352",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x090fcee3ae4132d3fd4363042c34e8e63a0c2352",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
       "contamination_flag": "cleared"
     },
     {
@@ -1068,7 +1165,7 @@
       "address": "0x9b20927a5dbf71d0539d48173c5f5b342bc67798",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1099,7 +1196,7 @@
       "address": "0x9b20927a5dbf71d0539d48173c5f5b342bc67798",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1130,7 +1227,7 @@
       "address": "0x9b20927a5dbf71d0539d48173c5f5b342bc67798",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1164,22 +1261,33 @@
       "report_url": "https://github.com/cyberconnecthq/cyber-token-bridges/blob/main/audit/SlowMist%20Audit%20Report%20-%20Cyber%20Token%20Bridges.pdf",
       "auditor": "SlowMist",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CyberStakingPool",
+        "CyberVault"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "SlowMist",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 3.6,
+      "latest_audit": "2024-06"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -1194,36 +1302,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x19b5804b88f10262a55ac731f28a3bbc4209853a",
-      "name": "AddressManager",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xcb07992de144bdee56fdb66fff2454b43243b052",
-      "name": "CyberTokenAdapter",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x9a9d5a29206dde4f70825032df32333de5f63921",
-      "name": "CyberTokenController",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xb2bbfc07948fedeb5935316203c33ce70bef57d0",
       "name": "CyberVesting",
       "role": "operational_periphery",
@@ -1234,8 +1312,18 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x3c01ebf22e9c111528c1e027d68944edab08dfc9",
-      "name": "L1CrossDomainMessenger",
+      "address": "0x2d034969c3a31f16ae3540c802facdcacfe57eb3",
+      "name": "Executor",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8d6023c0d13f2c527818177a913fe7632434c461",
+      "name": "ExecutorFeeLib",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -1243,22 +1331,21 @@
     }
   ],
   "origin_summary": {
-    "native": 6,
-    "upstream": 14,
-    "standard_library": 6,
-    "needs_review": 5
+    "native": 8,
+    "upstream": 18,
+    "standard_library": 4,
+    "needs_review": 4
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 1
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 11687,
-        "report_name": "SlowMist Audit Report - Cyber Token Bridges.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

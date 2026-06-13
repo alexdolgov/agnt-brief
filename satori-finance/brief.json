@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "satori-finance",
-  "generated_at": "2026-06-11T02:32:36.965Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
+  "generated_at": "2026-06-13T21:26:17.579Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-f8ad",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "satori-finance",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1279341,
+    "dl_tvl_usd": 1271514,
     "tvl_usd": 40944.595808,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -230,8 +230,8 @@
       "address": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
       "name": "RSETH",
       "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": "Satori Perp",
       "tvl_usd": null,
       "is_proxy": true,
@@ -365,7 +365,7 @@
       "source_verified": true,
       "verified_by_bytecode": true,
       "verification_bucket": "verified_bytecode_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 59144,
@@ -804,7 +804,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 8453,
@@ -897,7 +897,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 8453,
@@ -990,7 +990,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 42161,
@@ -1114,7 +1114,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 59144,
@@ -1176,7 +1176,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 59144,
@@ -1207,7 +1207,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 59144,
@@ -1238,7 +1238,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 59144,
@@ -1269,7 +1269,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 59144,
@@ -1300,7 +1300,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 59144,
@@ -1523,12 +1523,22 @@
       "origin_kind": "native",
       "tvl_usd": 40944.595808,
       "risk_note": "Verified native implementation with $40,944.60 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "name": "RSETH",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 1,
+    "native": 2,
     "upstream": 2,
-    "standard_library": 5,
+    "standard_library": 4,
     "needs_review": 32
   },
   "scope_matching_notes": {

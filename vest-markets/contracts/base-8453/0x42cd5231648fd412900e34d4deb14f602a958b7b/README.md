@@ -4,7 +4,7 @@
 |---|---|
 | Chain | base (8453) |
 | Address | `0x42cd5231648fd412900e34d4deb14f602a958b7b` |
-| Role | core_logic |
+| Role | unknown |
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |

@@ -1,6 +1,6 @@
 # stout — Contract Index
 
-132 unique implementations on sonic · 211 deployments · 0 audited · 46 unaudited · 86 unverified
+136 unique implementations on sonic · 215 deployments · 0 audited · 50 unaudited · 86 unverified
 
 ## adapter (1)
 
@@ -25,11 +25,12 @@
 |---|---|---|---|---|
 | [StoutTimelock](./sonic-146/0xd3a6b1a9026485bbd39a75a352e968711e21744b/) | sonic | [`0xd3a6b1...21744b`](./sonic-146/0xd3a6b1a9026485bbd39a75a352e968711e21744b/) | ⚠️ Unaudited | Verified |
 
-## operational_periphery (11)
+## operational_periphery (12)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [DynamicInterestRate](./sonic-146/0x252ddc63f883cb276b4862304045f0b035993ff7/) | sonic | [`0x252ddc...993ff7`](./sonic-146/0x252ddc63f883cb276b4862304045f0b035993ff7/) | ⚠️ Unaudited | Verified |
+| [FeeDistributor](./sonic-146/0x91f2dd4370759161b19e5299cace0b135f2d6f58/) | sonic | [`0x91f2dd...2d6f58`](./sonic-146/0x91f2dd4370759161b19e5299cace0b135f2d6f58/) | ⚠️ Unaudited | Verified |
 | [FeesDistributor](./sonic-146/0xfa925d48cce408c38872d9e5a907e936661aaa83/) | sonic | [`0xfa925d...1aaa83`](./sonic-146/0xfa925d48cce408c38872d9e5a907e936661aaa83/) | ⚠️ Unaudited | Verified |
 | [FeesWithdrawer (2 deployments)](./sonic-146/0x1b425c1c51c1eb4b4b537d1ce5b2915e4845e855/) | sonic | 2 deployments: sonic [`0x1b425c...45e855`](./sonic-146/0x1b425c1c51c1eb4b4b537d1ce5b2915e4845e855/); sonic `0x1efd8d...5f9e97` | ⚠️ Unaudited | Verified |
 | [Minter](./sonic-146/0x5ed2e91d451dcb4639d2057613cc542c2264b28e/) | sonic | [`0x5ed2e9...64b28e`](./sonic-146/0x5ed2e91d451dcb4639d2057613cc542c2264b28e/) | ⚠️ Unaudited | Verified |
@@ -64,7 +65,7 @@
 |---|---|---|---|---|
 | [StakedDUSX](./sonic-146/0xa0b0cbffed77e57e946fb1fb875b28edd0d0cc6d/) | sonic | [`0xa0b0cb...d0cc6d`](./sonic-146/0xa0b0cbffed77e57e946fb1fb875b28edd0d0cc6d/) | ⚠️ Unaudited | Verified |
 
-## unknown (105)
+## unknown (108)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -72,10 +73,13 @@
 | [DUSX (3 deployments)](./sonic-146/0x3341bae76206a44413e94e859926086640d4d661/) | sonic | 3 deployments: sonic [`0x3341ba...d4d661`](./sonic-146/0x3341bae76206a44413e94e859926086640d4d661/); sonic `0x480763...ad64af`; sonic `0xe30e73...76f854` | ⚠️ Unaudited | Verified |
 | [DUSXProvider](./sonic-146/0x0893131746962b4b5afb573351ba7f4094d81aad/) | sonic | [`0x089313...d81aad`](./sonic-146/0x0893131746962b4b5afb573351ba7f4094d81aad/) | ⚠️ Unaudited | Verified |
 | [EGGS](./sonic-146/0xf26ff70573ddc8a90bd7865af8d7d70b8ff019bc/) | sonic | [`0xf26ff7...f019bc`](./sonic-146/0xf26ff70573ddc8a90bd7865af8d7d70b8ff019bc/) | ⚠️ Unaudited | Verified |
+| [FeeFix](./sonic-146/0xec44aa4fd30f0860f8f39ef4b7a2400785da0e8b/) | sonic | [`0xec44aa...da0e8b`](./sonic-146/0xec44aa4fd30f0860f8f39ef4b7a2400785da0e8b/) | ⚠️ Unaudited | Verified |
 | [FixedRateDripper (3 deployments)](./sonic-146/0x5b72992e9cde8c07ce7c8217eb014ec7fd281f03/) | sonic | 3 deployments: sonic [`0x5b7299...281f03`](./sonic-146/0x5b72992e9cde8c07ce7c8217eb014ec7fd281f03/); sonic `0x681ac7...0e6542`; sonic `0xc5685a...dad992` | ⚠️ Unaudited | Verified |
+| [FixOwnerEggs](./sonic-146/0xfb8e178b8b606da5de7417f476472c695a52695a/) | sonic | [`0xfb8e17...52695a`](./sonic-146/0xfb8e178b8b606da5de7417f476472c695a52695a/) | ⚠️ Unaudited | Verified |
 | [Floor](./sonic-146/0xb8c30cf1aa46b4e8ee8d008a0f2f763b3d5bac0e/) | sonic | [`0xb8c30c...5bac0e`](./sonic-146/0xb8c30cf1aa46b4e8ee8d008a0f2f763b3d5bac0e/) | ⚠️ Unaudited | Verified |
 | [Lender (9 deployments)](./sonic-146/0x40e0faa1ff6e73e2955266c1b897fc3545ad4c48/) | sonic | 9 deployments: sonic [`0x40e0fa...ad4c48`](./sonic-146/0x40e0faa1ff6e73e2955266c1b897fc3545ad4c48/); sonic `0x57c02e...5f2709`; sonic `0x669fd3...1dd198`; sonic `0x711de8...584a62`; sonic `0x94395f...8ed3f2`; sonic `0x9c1b02...0e10e1`; sonic `0xbf7104...45de13`; sonic `0xf49e97...a48b7a`; sonic `0xf55e1e...1c1a91` | ⚠️ Unaudited | Verified |
 | [LenderOwner](./sonic-146/0xec7fa6ae97bcab9236696b24be8d55879f39a6a7/) | sonic | [`0xec7fa6...39a6a7`](./sonic-146/0xec7fa6ae97bcab9236696b24be8d55879f39a6a7/) | ⚠️ Unaudited | Verified |
+| [OracleChainlink](./sonic-146/0x2a7d5d7d71332bbea18fb72ba335eaf4857a1b45/) | sonic | [`0x2a7d5d...7a1b45`](./sonic-146/0x2a7d5d7d71332bbea18fb72ba335eaf4857a1b45/) | ⚠️ Unaudited | Verified |
 | [OSonic (6 deployments)](./sonic-146/0x1705268cb99b7aa67e0f1f0c71004b83065857c6/) | sonic | 6 deployments: sonic [`0x170526...5857c6`](./sonic-146/0x1705268cb99b7aa67e0f1f0c71004b83065857c6/); sonic `0x67895d...751fdf`; sonic `0x8fb9a0...502add`; sonic `0xb1e256...f8a794`; sonic `0xb75137...c9951d`; sonic `0xdb1604...2a1076` | ⚠️ Unaudited | Verified |
 | [OSonicDripperProxy](./sonic-146/0xb570a2d463886c059c94daf779a7bbd84d3182ba/) | sonic | [`0xb570a2...3182ba`](./sonic-146/0xb570a2d463886c059c94daf779a7bbd84d3182ba/) | ⚠️ Unaudited | Verified |
 | [PegStabilityModule (2 deployments)](./sonic-146/0x24e2a86176f209cce828714c48f804fd7444a89a/) | sonic | 2 deployments: sonic [`0x24e2a8...44a89a`](./sonic-146/0x24e2a86176f209cce828714c48f804fd7444a89a/); sonic `0xb96919...72a494` | ⚠️ Unaudited | Verified |

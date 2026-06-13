@@ -5,11 +5,11 @@
 - Project: Botto (`botto`)
 - Website: [https://botto.com/](https://botto.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T22:08:14.646Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
+- Generated: 2026-06-13T21:27:02.886Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-f8ad
 - Chains: base, ethereum
-- Contract surface: 18 unique implementations (33 raw deployments)
-- DeFi Llama TVL: $4,107,150.78
+- Contract surface: 19 unique implementations (34 raw deployments)
+- DeFi Llama TVL: $2,917,186.08
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,12 +23,12 @@ The Governance family controls parameters for Liquidity Mining and Rewards, whic
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/13 (0.0%)
-- Verified + Unaudited implementations: 13
+- Verified implementations audited: 0/14 (0.0%)
+- Verified + Unaudited implementations: 14
 - Verified by bytecode match: 0
 - Unverified implementations: 5
-- Unique implementations: 18
-- Raw deployments: 33
+- Unique implementations: 19
+- Raw deployments: 34
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,7 +46,7 @@ The Governance family controls parameters for Liquidity Mining and Rewards, whic
 
 - None
 
-### ⚠️ Verified + Unaudited (13)
+### ⚠️ Verified + Unaudited (14)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -63,6 +63,7 @@ The Governance family controls parameters for Liquidity Mining and Rewards, whic
 | BottoRewards | unknown | ethereum | [`0x5f0f39...44971a`](./contracts/ethereum-1/0x5f0f397a8f423ee97d4125bfb00d41bcec44971a/) | ⚠️ Unaudited |
 | OptimismMintableERC20 | bridge_template | base | [`0x24914c...6e6a0c`](./contracts/base-8453/0x24914cb6bd01e6a0cf2a9c0478e33c25926e6a0c/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | 6 deployments: ethereum [`0x61b4a8...78038d`](./contracts/ethereum-1/0x61b4a813fd4e361d40339bca4d8d4e83be78038d/); ethereum `0x6bb104...292efb`; ethereum `0x74fb90...4686ad`; ethereum `0x80b649...ce7a06`; ethereum `0xff2395...59b5c3`; base `0x86b11a...4f9357` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | [`0x9ff68f...64bb66`](./contracts/ethereum-1/0x9ff68f61ca5eb0c6606dc517a9d44001e564bb66/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -116,7 +117,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 12 |
 | upstream | 1 |
-| standard_library | 5 |
+| standard_library | 6 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

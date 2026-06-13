@@ -1,6 +1,6 @@
 # botto — Contract Index
 
-18 unique implementations across 2 chains · 33 deployments · 0 audited · 13 unaudited · 5 unverified
+19 unique implementations across 2 chains · 34 deployments · 0 audited · 14 unaudited · 5 unverified
 
 ## bridge_template (1)
 
@@ -14,7 +14,7 @@
 |---|---|---|---|---|
 | [ProxyAdmin (6 deployments)](./ethereum-1/0x61b4a813fd4e361d40339bca4d8d4e83be78038d/) | ethereum | 6 deployments: ethereum [`0x61b4a8...78038d`](./ethereum-1/0x61b4a813fd4e361d40339bca4d8d4e83be78038d/); ethereum `0x6bb104...292efb`; ethereum `0x74fb90...4686ad`; ethereum `0x80b649...ce7a06`; ethereum `0xff2395...59b5c3`; base `0x86b11a...4f9357` | ⚠️ Unaudited | Verified |
 
-## unknown (16)
+## unknown (17)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -29,6 +29,7 @@
 | [BottoManifestoCollection (2 deployments)](./ethereum-1/0x1660f30e91f6d81061c27883e9cfc446ffdb7159/) | ethereum | 2 deployments: ethereum [`0x1660f3...db7159`](./ethereum-1/0x1660f30e91f6d81061c27883e9cfc446ffdb7159/); ethereum `0xcb04ca...d310b5` | ⚠️ Unaudited | Verified |
 | [BottoRetroactiveRewardV2 (2 deployments)](./ethereum-1/0x2e251bff6c091a1752e1f9983882f7ade82535da/) | ethereum | 2 deployments: ethereum [`0x2e251b...2535da`](./ethereum-1/0x2e251bff6c091a1752e1f9983882f7ade82535da/); ethereum `0xe743fa...22e370` | ⚠️ Unaudited | Verified |
 | [BottoRewards](./ethereum-1/0x5f0f397a8f423ee97d4125bfb00d41bcec44971a/) | ethereum | [`0x5f0f39...44971a`](./ethereum-1/0x5f0f397a8f423ee97d4125bfb00d41bcec44971a/) | ⚠️ Unaudited | Verified |
+| [UniswapV2Pair](./ethereum-1/0x9ff68f61ca5eb0c6606dc517a9d44001e564bb66/) | ethereum | [`0x9ff68f...64bb66`](./ethereum-1/0x9ff68f61ca5eb0c6606dc517a9d44001e564bb66/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x08b5d7...0d22cc` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x2c397d...56b569` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x49a063...c6bd85` | ❓ Unverified | Unverified |

@@ -5,11 +5,11 @@
 - Project: Satori Finance (`satori-finance`)
 - Website: [https://satori.finance](https://satori.finance)
 - Lifecycle: active (Tier 0, 81.1% below peak)
-- Generated: 2026-06-11T02:32:36.965Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-13T21:26:17.579Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-f8ad
 - Chains: arbitrum, base, ethereum, linea, polygon-zkevm, scroll
 - Contract surface: 40 unique implementations (59 raw deployments)
-- DeFi Llama TVL: $1,279,341.00
+- DeFi Llama TVL: $1,271,514.00
 - On-chain TVL (included contracts): $40,944.60
 - TVL by chain: Ethereum $40,944.60
 
@@ -124,14 +124,15 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x892dff...6af3e8`](./contracts/ethereum-1/0x892dff5257b39f7afb7803dd7c81e8ecdb6af3e8/) | BoringVault | core_logic | $40,944.60 | Verified native implementation with $40,944.60 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa1290d...99e5a7`](./contracts/ethereum-1/0xa1290d69c65a6fe4df752f95823fae25cb99e5a7/) | RSETH | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 2 |
 | upstream | 2 |
-| standard_library | 5 |
+| standard_library | 4 |
 | needs_review | 32 |
 
 ## Scope Matching Notes

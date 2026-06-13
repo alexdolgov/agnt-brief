@@ -7,11 +7,11 @@
 - Project: Stout (`stout`)
 - Website: [https://stout.fi/](https://stout.fi/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T03:12:12.392Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
+- Generated: 2026-06-13T21:25:17.577Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-f8ad
 - Chains: sonic
-- Contract surface: 132 unique implementations (211 raw deployments)
-- DeFi Llama TVL: $2,065,136.90
+- Contract surface: 136 unique implementations (215 raw deployments)
+- DeFi Llama TVL: $2,083,643.75
 - On-chain TVL (included contracts): $12,613.58
 - TVL by chain: Sonic $12,613.58
 
@@ -25,12 +25,12 @@ The Stout family uses proxy contracts (WOSonicProxy, WrappedAnsProxy) to manage 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/46 (0.0%)
-- Verified + Unaudited implementations: 46
+- Verified implementations audited: 0/50 (0.0%)
+- Verified + Unaudited implementations: 50
 - Verified by bytecode match: 0
 - Unverified implementations: 86
-- Unique implementations: 132
-- Raw deployments: 211
+- Unique implementations: 136
+- Raw deployments: 215
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $12,613.58
@@ -49,7 +49,7 @@ The Stout family uses proxy contracts (WOSonicProxy, WrappedAnsProxy) to manage 
 
 - None
 
-### ⚠️ Verified + Unaudited (46)
+### ⚠️ Verified + Unaudited (50)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -60,9 +60,12 @@ The Stout family uses proxy contracts (WOSonicProxy, WrappedAnsProxy) to manage 
 | DUSXProvider | unknown | sonic | [`0x089313...d81aad`](./contracts/sonic-146/0x0893131746962b4b5afb573351ba7f4094d81aad/) | ⚠️ Unaudited |
 | DynamicInterestRate | operational_periphery | sonic | [`0x252ddc...993ff7`](./contracts/sonic-146/0x252ddc63f883cb276b4862304045f0b035993ff7/) | ⚠️ Unaudited |
 | EGGS | unknown | sonic | [`0xf26ff7...f019bc`](./contracts/sonic-146/0xf26ff70573ddc8a90bd7865af8d7d70b8ff019bc/) | ⚠️ Unaudited |
+| FeeDistributor | operational_periphery | sonic | [`0x91f2dd...2d6f58`](./contracts/sonic-146/0x91f2dd4370759161b19e5299cace0b135f2d6f58/) | ⚠️ Unaudited |
+| FeeFix | unknown | sonic | [`0xec44aa...da0e8b`](./contracts/sonic-146/0xec44aa4fd30f0860f8f39ef4b7a2400785da0e8b/) | ⚠️ Unaudited |
 | FeesDistributor | operational_periphery | sonic | [`0xfa925d...1aaa83`](./contracts/sonic-146/0xfa925d48cce408c38872d9e5a907e936661aaa83/) | ⚠️ Unaudited |
 | FeesWithdrawer | operational_periphery | sonic | 2 deployments: sonic [`0x1b425c...45e855`](./contracts/sonic-146/0x1b425c1c51c1eb4b4b537d1ce5b2915e4845e855/); sonic `0x1efd8d...5f9e97` | ⚠️ Unaudited |
 | FixedRateDripper | unknown | sonic | 3 deployments: sonic [`0x5b7299...281f03`](./contracts/sonic-146/0x5b72992e9cde8c07ce7c8217eb014ec7fd281f03/); sonic `0x681ac7...0e6542`; sonic `0xc5685a...dad992` | ⚠️ Unaudited |
+| FixOwnerEggs | unknown | sonic | [`0xfb8e17...52695a`](./contracts/sonic-146/0xfb8e178b8b606da5de7417f476472c695a52695a/) | ⚠️ Unaudited |
 | Floor | unknown | sonic | [`0xb8c30c...5bac0e`](./contracts/sonic-146/0xb8c30cf1aa46b4e8ee8d008a0f2f763b3d5bac0e/) | ⚠️ Unaudited |
 | Lender | unknown | sonic | 9 deployments: sonic [`0x40e0fa...ad4c48`](./contracts/sonic-146/0x40e0faa1ff6e73e2955266c1b897fc3545ad4c48/); sonic `0x57c02e...5f2709`; sonic `0x669fd3...1dd198`; sonic `0x711de8...584a62`; sonic `0x94395f...8ed3f2`; sonic `0x9c1b02...0e10e1`; sonic `0xbf7104...45de13`; sonic `0xf49e97...a48b7a`; sonic `0xf55e1e...1c1a91` | ⚠️ Unaudited |
 | LenderOwner | unknown | sonic | [`0xec7fa6...39a6a7`](./contracts/sonic-146/0xec7fa6ae97bcab9236696b24be8d55879f39a6a7/) | ⚠️ Unaudited |
@@ -71,6 +74,7 @@ The Stout family uses proxy contracts (WOSonicProxy, WrappedAnsProxy) to manage 
 | Minter | operational_periphery | sonic | [`0x5ed2e9...64b28e`](./contracts/sonic-146/0x5ed2e91d451dcb4639d2057613cc542c2264b28e/) | ⚠️ Unaudited |
 | MiscHelper | periphery | sonic | [`0xa1ba6e...52fd0a`](./contracts/sonic-146/0xa1ba6ee9ea1abb234281117a3e8ba0995252fd0a/) | ⚠️ Unaudited |
 | OracleApi3Reader | operational_periphery | sonic | 7 deployments: sonic [`0x25456c...042264`](./contracts/sonic-146/0x25456cff86e96fe4b9b3d70aec13199297042264/); sonic `0x5df1ef...b8fae5`; sonic `0x6d5154...c10f82`; sonic `0x761c59...8199b7`; sonic `0x863a1d...4aa60c`; sonic `0x943697...fbd7bf`; sonic `0xfc73f4...5f76a9` | ⚠️ Unaudited |
+| OracleChainlink | unknown | sonic | [`0x2a7d5d...7a1b45`](./contracts/sonic-146/0x2a7d5d7d71332bbea18fb72ba335eaf4857a1b45/) | ⚠️ Unaudited |
 | OracleFloorPrice | operational_periphery | sonic | [`0x19b3a4...cb713f`](./contracts/sonic-146/0x19b3a42bfbd4452e6a2b92b2e898916b68cb713f/) | ⚠️ Unaudited |
 | OraclePythStSUSDReader | operational_periphery | sonic | [`0xca1ecc...7f8fea`](./contracts/sonic-146/0xca1ecc8ae30d810b4cd2fa0a270b79bf097f8fea/) | ⚠️ Unaudited |
 | OraclePythWSTKSCETHReader | operational_periphery | sonic | [`0x8caed8...3d1e50`](./contracts/sonic-146/0x8caed8d28737c3a62a4baa25428eef28363d1e50/) | ⚠️ Unaudited |
@@ -222,9 +226,12 @@ Verified + unaudited native implementations ranked by TVL:
 | sonic | [`0x3341ba...d4d661`](./contracts/sonic-146/0x3341bae76206a44413e94e859926086640d4d661/) | DUSX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x089313...d81aad`](./contracts/sonic-146/0x0893131746962b4b5afb573351ba7f4094d81aad/) | DUSXProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x252ddc...993ff7`](./contracts/sonic-146/0x252ddc63f883cb276b4862304045f0b035993ff7/) | DynamicInterestRate | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x91f2dd...2d6f58`](./contracts/sonic-146/0x91f2dd4370759161b19e5299cace0b135f2d6f58/) | FeeDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0xec44aa...da0e8b`](./contracts/sonic-146/0xec44aa4fd30f0860f8f39ef4b7a2400785da0e8b/) | FeeFix | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0xfa925d...1aaa83`](./contracts/sonic-146/0xfa925d48cce408c38872d9e5a907e936661aaa83/) | FeesDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x1b425c...45e855`](./contracts/sonic-146/0x1b425c1c51c1eb4b4b537d1ce5b2915e4845e855/) | FeesWithdrawer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x5b7299...281f03`](./contracts/sonic-146/0x5b72992e9cde8c07ce7c8217eb014ec7fd281f03/) | FixedRateDripper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0xfb8e17...52695a`](./contracts/sonic-146/0xfb8e178b8b606da5de7417f476472c695a52695a/) | FixOwnerEggs | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0xb8c30c...5bac0e`](./contracts/sonic-146/0xb8c30cf1aa46b4e8ee8d008a0f2f763b3d5bac0e/) | Floor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x40e0fa...ad4c48`](./contracts/sonic-146/0x40e0faa1ff6e73e2955266c1b897fc3545ad4c48/) | Lender | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0xec7fa6...39a6a7`](./contracts/sonic-146/0xec7fa6ae97bcab9236696b24be8d55879f39a6a7/) | LenderOwner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -232,6 +239,7 @@ Verified + unaudited native implementations ranked by TVL:
 | sonic | [`0x56f0b1...17db48`](./contracts/sonic-146/0x56f0b188fea4cd50ec91faa15982df9d9017db48/) | MarketLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x5ed2e9...64b28e`](./contracts/sonic-146/0x5ed2e91d451dcb4639d2057613cc542c2264b28e/) | Minter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0xa1ba6e...52fd0a`](./contracts/sonic-146/0xa1ba6ee9ea1abb234281117a3e8ba0995252fd0a/) | MiscHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x2a7d5d...7a1b45`](./contracts/sonic-146/0x2a7d5d7d71332bbea18fb72ba335eaf4857a1b45/) | OracleChainlink | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x19b3a4...cb713f`](./contracts/sonic-146/0x19b3a42bfbd4452e6a2b92b2e898916b68cb713f/) | OracleFloorPrice | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x170526...5857c6`](./contracts/sonic-146/0x1705268cb99b7aa67e0f1f0c71004b83065857c6/) | OSonic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0xb570a2...3182ba`](./contracts/sonic-146/0xb570a2d463886c059c94daf779a7bbd84d3182ba/) | OSonicDripperProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -252,7 +260,6 @@ Verified + unaudited native implementations ranked by TVL:
 | sonic | [`0xcaf8e9...eff99f`](./contracts/sonic-146/0xcaf8e906ec654ea83dd5f2b4387183cddeeff99f/) | SupplyHangingCalculatorOwner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x06f172...3d2c40`](./contracts/sonic-146/0x06f172e6852085eca886b7f9fd8f7b21db3d2c40/) | VaultValueChecker | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x822131...f1cf9e`](./contracts/sonic-146/0x8221312e9cf90a2b160ecdabf922408a5ef1cf9e/) | VoteEscrowedSTTX | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0xba3bb1...207a64`](./contracts/sonic-146/0xba3bb17d19e556900e42e7c1e9e89dc6d3207a64/) | wanS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x1ccb48...6c5805`](./contracts/sonic-146/0x1ccb48fb244fe1f6eb0d1c5fbd839db78c6c5805/) | WOSonic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x52a10d...de8342`](./contracts/sonic-146/0x52a10d701c878c5aa3df2731b89bf9b2e7de8342/) | WOSonicProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -260,10 +267,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 87 |
-| upstream | 5 |
+| native | 70 |
+| upstream | 7 |
 | standard_library | 0 |
-| needs_review | 40 |
+| needs_review | 59 |
 
 ## Scope Matching Notes
 

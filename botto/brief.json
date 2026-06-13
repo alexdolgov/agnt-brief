@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "botto",
-  "generated_at": "2026-06-10T22:08:14.646Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-7a87",
+  "generated_at": "2026-06-13T21:27:02.886Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-f8ad",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "botto",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 18,
-    "total_addresses": 33,
-    "unique_implementations": 18,
-    "total_deployments": 33,
+    "total_contracts": 19,
+    "total_addresses": 34,
+    "unique_implementations": 19,
+    "total_deployments": 34,
     "audited_contracts": 0,
-    "unaudited_contracts": 13,
+    "unaudited_contracts": 14,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 13,
+    "contracts_verified_unaudited": 14,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 5,
     "coverage_pct": 0,
     "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4107150.7803800004,
-    "tvl_usd": 4107150.7803800004,
+    "dl_tvl_usd": 2917186.07553,
+    "tvl_usd": 2917186.07553,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -62,7 +62,7 @@
     "product_family_count": 7
   },
   "surface_sufficiency": {
-    "unique_implementations": 18,
+    "unique_implementations": 19,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -508,8 +508,8 @@
       "address": "0x24914cb6bd01e6a0cf2a9c0478e33c25926e6a0c",
       "name": "OptimismMintableERC20",
       "role": "bridge_template",
-      "origin_kind": "upstream",
-      "origin_provider": "optimism",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": "Base ERC20 Token Contract",
       "tvl_usd": null,
       "is_proxy": false,
@@ -612,6 +612,37 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x9ff68f61ca5eb0c6606dc517a9d44001e564bb66",
+      "name": "UniswapV2Pair",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV2Pair",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9ff68f61ca5eb0c6606dc517a9d44001e564bb66",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x08b5d710102289b5888a2b2773980c0ae40d22cc",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -700,7 +731,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -906,7 +937,7 @@
   "origin_summary": {
     "native": 12,
     "upstream": 1,
-    "standard_library": 5,
+    "standard_library": 6,
     "needs_review": 0
   },
   "scope_matching_notes": {

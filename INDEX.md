@@ -188,7 +188,7 @@
 | [bookusd](./bookusd/) | $39.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [boringdao](./boringdao/) | $275.7K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [boros](./boros/) | $10.3M | 100.0% | ? | active | 5 | 2 | 2026-06-10 |
-| [botto](./botto/) | $4.1M | 0.0% | ? | active | 3 | 18 | 2026-06-10 |
+| [botto](./botto/) | $2.9M | 0.0% | ? | active | 3 | 19 | 2026-06-13 |
 | [bounce.tech](./bounce.tech/) | $1.1M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
 | [bouncebit-pre-launch-farm](./bouncebit-pre-launch-farm/) | $0.1 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 9 | 2026-06-12 |
@@ -216,7 +216,7 @@
 | [bunnypark](./bunnypark/) | $0.5 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [burve-protocol](./burve-protocol/) | $10.5K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [burve](./burve/) | $41.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [butter-network](./butter-network/) | $1.2M | 0.0% | ? | declining | 0 | 6 | 2026-06-10 |
+| [butter-network](./butter-network/) | $1.3M | 0.0% | ? | declining | 0 | 10 | 2026-06-13 |
 | [buttonwood](./buttonwood/) | $380.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bydfi](./bydfi/) | $72.1M | 0.0% | ? | active | 0 | 1 | 2026-06-12 |
 | [byte-exchange](./byte-exchange/) | $41.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -1035,7 +1035,7 @@
 | [sanctum](./sanctum/) | $1.2B | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-06-11 |
 | [satlayer](./satlayer/) | $289.5M | 4.5% | $287.2M | active | 12 | 311 | 2026-06-11 |
-| [satori-finance](./satori-finance/) | $40.9K | 0.0% | $40.9K | active | 1 | 40 | 2026-06-11 |
+| [satori-finance](./satori-finance/) | $40.9K | 0.0% | $40.9K | active | 1 | 40 | 2026-06-13 |
 | [satoshi-perps](./satoshi-perps/) | $4.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [saucerswap](./saucerswap/) | $32.9M | 0.0% | ? | unknown | 8 | 0 | 2026-05-27 |
 | [savvy](./savvy/) | $126.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1153,7 +1153,7 @@
 | [steer-protocol](./steer-protocol/) | $3.3M | 0.0% | $3.3M | active | 5 | 46 | 2026-06-12 |
 | [stfil](./stfil/) | $5.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [stobox](./stobox/) | $15.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
-| [stout](./stout/) | $12.6K | 0.0% | $12.6K | declining | 0 | 132 | 2026-06-11 |
+| [stout](./stout/) | $12.6K | 0.0% | $12.6K | declining | 0 | 136 | 2026-06-13 |
 | [strata](./strata/) | $97.2M | 31.6% | $289.6K | active | 7 | 39 | 2026-06-11 |
 | [stratis-liquid-staking](./stratis-liquid-staking/) | $413.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [stratis-mstrax](./stratis-mstrax/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
@@ -1322,7 +1322,7 @@
 | [verse](./verse/) | $468.3K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [verus-market](./verus-market/) | $6.4M | 0.0% | ? | declining | 0 | 33 | 2026-06-13 |
 | [vesper](./vesper/) | $694.0K | 51.3% | $351.7K | active | 30 | 44 | 2026-06-11 |
-| [vest-markets](./vest-markets/) | $1.7M | 0.0% | ? | declining | 0 | 4 | 2026-06-11 |
+| [vest-markets](./vest-markets/) | $1.2M | 0.0% | ? | declining | 0 | 7 | 2026-06-13 |
 | [vfat.io](./vfat.io/) | $0.0 | 10.0% | ? | active | 10 | 553 | 2026-06-11 |
 | [vii-finance](./vii-finance/) | $12.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 0 | 65 | 2026-06-12 |

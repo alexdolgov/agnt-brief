@@ -225,12 +225,14 @@
 | [debridge](./debridge/) | $263.9M | 61.9% | $263.9M | declining | 32 | 161 | 2026-06-10 |
 | [decentralized-euro](./decentralized-euro/) | $230.4M | 28.2% | $230.4M | active | 3 | 72 | 2026-06-10 |
 | [decibel](./decibel/) | $41.9M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
+| [deepbook](./deepbook/) | $12.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [deeplock](./deeplock/) | $56.2M | 0.0% | $56.2M | active | 0 | 70 | 2026-06-10 |
 | [defi-kingdoms](./defi-kingdoms/) | $7.7M | 0.0% | ? | declining | 1 | 5 | 2026-06-13 |
 | [defichain-dex](./defichain-dex/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [defil](./defil/) | $1.0M | 0.0% | $1.0M | active | 1 | 51 | 2026-06-10 |
 | [defiplaza](./defiplaza/) | $126.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [defituna](./defituna/) | $4.6M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
+| [dehive](./dehive/) | $114.5K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | active | 0 | 53 | 2026-06-13 |
 | [deltaprime](./deltaprime/) | $2.6K | 0.0% | $2.6K | active | 0 | 482 | 2026-05-31 |
 | [deltatrade](./deltatrade/) | $92.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
@@ -243,6 +245,7 @@
 | [dexlyn-labs](./dexlyn-labs/) | $80.4K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [dflow](./dflow/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [dforce](./dforce/) | $3.6M | 36.3% | $1.2M | declining | 4 | 453 | 2026-06-12 |
+| [dfs-network](./dfs-network/) | $96.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | declining | 4 | 71 | 2026-06-10 |
 | [dipcoin](./dipcoin/) | $4.4M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [dnax](./dnax/) | $3.5M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
@@ -250,6 +253,7 @@
 | [dolomite](./dolomite/) | $664.2M | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
 | [domination-finance](./domination-finance/) | $1.2M | 75.0% | ? | active | 1 | 30 | 2026-05-25 |
 | [dooar](./dooar/) | $5.1M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
+| [dpex](./dpex/) | $142.5 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [drift](./drift/) | $187.9M | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [drops](./drops/) | $16.5M | 0.0% | $16.5M | declining | 0 | 77 | 2026-06-10 |
 | [dtrinity](./dtrinity/) | $1.8M | 0.0% | $1.8M | active | 5 | 209 | 2026-06-11 |
@@ -257,6 +261,7 @@
 | [dyorswap](./dyorswap/) | $2.2M | 0.0% | ? | active | 0 | 93 | 2026-06-10 |
 | [dyson-finance](./dyson-finance/) | $80.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [easedefi.org](./easedefi.org/) | $1.5M | 0.0% | $1.5M | active | 1 | 9 | 2026-06-12 |
+| [eclipsefi](./eclipsefi/) | $15.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [egas-swap](./egas-swap/) | $18.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [ekubo](./ekubo/) | $5.6M | 44.4% | $5.6M | active | 5 | 15 | 2026-06-10 |
 | [elephant-money](./elephant-money/) | $1.6M | 5.9% | $1.6M | declining | 2 | 346 | 2026-06-10 |

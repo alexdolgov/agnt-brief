@@ -75,10 +75,15 @@
 | [aptin-finance](./aptin-finance/) | $14.0M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [aqua-protocol](./aqua-protocol/) | $112.3 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [aquabank](./aquabank/) | $850.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [arbitrum-exchange](./arbitrum-exchange/) | $11.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 59 | 2026-06-12 |
 | [arcade.xyz](./arcade.xyz/) | $240.1K | 67.4% | ? | declining | 10 | 60 | 2026-06-10 |
 | [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-06-10 |
+| [arch](./arch/) | $479.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [arche-protocol](./arche-protocol/) | $6.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [arche](./arche/) | $2.3K | 0.0% | ? | unknown | 14 | 0 | 2026-06-13 |
+| [archerswap](./archerswap/) | $46.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [arenaswap](./arenaswap/) | $31.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [aria-protocol](./aria-protocol/) | $181.1K | 0.0% | ? | dead | 1 | 1 | 2026-06-10 |
 | [arkis](./arkis/) | $76.0M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [armitage-by-wintermute](./armitage-by-wintermute/) | $51.8M | 0.0% | $51.8M | unknown | 0 | 7 | 2026-06-12 |

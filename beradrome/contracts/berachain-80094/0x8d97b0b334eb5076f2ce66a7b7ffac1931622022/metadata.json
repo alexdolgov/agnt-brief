@@ -1,0 +1,17 @@
+{
+  "address": "0x8d97b0b334eb5076f2ce66a7b7ffac1931622022",
+  "chain_id": 80094,
+  "contract_name": "GaugeFactory",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "000000000000000000000000039ec2e90454892fcba461ecf8878d0c45fddfee",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T01:41:58.432Z"
+}

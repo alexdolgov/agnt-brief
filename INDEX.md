@@ -75,7 +75,7 @@
 | [belt-finance](./belt-finance/) | $15.3M | 47.5% | $7.1M | declining | 6 | 1331 | 2026-06-10 |
 | [bend](./bend/) | $15.5M | 20.7% | $896.8K | active | 9 | 104 | 2026-06-10 |
 | [benddao](./benddao/) | $7.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-10 |
-| [beradrome](./beradrome/) | $3.3M | 0.0% | $3.3M | declining | 0 | 2 | 2026-06-10 |
+| [beradrome](./beradrome/) | $3.3M | 0.0% | $3.3M | declining | 0 | 18 | 2026-06-13 |
 | [bifi](./bifi/) | $236.7K | 30.4% | ? | active | 7 | 170 | 2026-06-10 |
 | [bigone](./bigone/) | $35.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [bima-cdp](./bima-cdp/) | $5.3M | 51.6% | ? | active | 3 | 37 | 2026-06-10 |
@@ -187,7 +187,7 @@
 | [endur](./endur/) | $9.4M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
 | [enosys](./enosys/) | $17.2M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
 | [equalizer](./equalizer/) | $374.8K | 0.0% | $374.8K | declining | 0 | 292 | 2026-06-10 |
-| [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
+| [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-06-13 |
 | [equilibria](./equilibria/) | $26.9M | 17.6% | $15.7M | declining | 6 | 119 | 2026-06-10 |
 | [eth-strategy](./eth-strategy/) | $30.8M | 0.0% | $30.8M | active | 1 | 49 | 2026-06-10 |
 | [ethereal-dex](./ethereal-dex/) | $30.7M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
@@ -214,7 +214,7 @@
 | [flexa](./flexa/) | $1.4M | 100.0% | ? | declining | 2 | 2 | 2026-06-10 |
 | [flipster](./flipster/) | $33.0M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-06-10 |
-| [flying-tulip](./flying-tulip/) | $51.3M | 0.0% | $51.3M | active | 0 | 62 | 2026-06-10 |
+| [flying-tulip](./flying-tulip/) | $51.3M | 0.0% | $51.3M | active | 0 | 62 | 2026-06-13 |
 | [fomo3d](./fomo3d/) | $2.5M | 0.0% | ? | active | 0 | 23 | 2026-06-10 |
 | [forgeyields](./forgeyields/) | $1.3M | 0.0% | ? | active | 2 | 1 | 2026-06-11 |
 | [four.meme](./four.meme/) | $4.9M | 0.0% | ? | active | 1 | 2 | 2026-06-10 |
@@ -362,7 +362,7 @@
 | [mendi-finance](./mendi-finance/) | $79.1M | 10.7% | $79.1M | dead | 4 | 39 | 2026-06-11 |
 | [mento](./mento/) | $2.3M | 61.1% | $65.0K | declining | 23 | 218 | 2026-06-12 |
 | [merchant-moe](./merchant-moe/) | $37.3M | 50.0% | ? | unknown | 1 | 53 | 2026-05-31 |
-| [merlinswap](./merlinswap/) | $8.4M | 0.0% | ? | declining | 0 | 2 | 2026-06-11 |
+| [merlinswap](./merlinswap/) | $6.9M | 0.0% | ? | declining | 0 | 2 | 2026-06-13 |
 | [meson](./meson/) | $1.1M | 0.0% | ? | active | 4 | 129 | 2026-06-11 |
 | [meta-pool](./meta-pool/) | $4.2M | 50.0% | $4.0M | active | 3 | 41 | 2026-06-11 |
 | [metadao](./metadao/) | $13.1M | 0.0% | ? | unknown | 10 | 0 | 2026-06-11 |
@@ -570,7 +570,7 @@
 | [sqd.ai](./sqd.ai/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 28 | 2026-06-12 |
 | [squadswap](./squadswap/) | $13.0M | 63.2% | ? | active | 5 | 214 | 2026-06-11 |
 | [stable-jack](./stable-jack/) | $76.9M | 0.0% | $76.9M | active | 1 | 249 | 2026-06-11 |
-| [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 2 | 2026-06-11 |
+| [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 1 | 2026-06-13 |
 | [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-06-11 |
 | [stake.link](./stake.link/) | $76.8M | 60.9% | $35.9K | active | 20 | 71 | 2026-06-11 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | active | 0 | 198 | 2026-06-12 |

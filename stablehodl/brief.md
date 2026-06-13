@@ -5,30 +5,31 @@
 - Project: StableHodl (`stablehodl`)
 - Website: [https://stablehodl.com/](https://stablehodl.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T03:00:38.433Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-13T01:41:26.975Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-d5d2
 - Chains: bsc, ethereum, polygon
-- Contract surface: 2 unique implementations (9 raw deployments)
-- DeFi Llama TVL: $6,957,865.97
+- Contract surface: 1 unique implementations (7 raw deployments)
+- DeFi Llama TVL: $6,960,502.12
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 StableHodl is a stablecoin yield product powered by HeLa Network. It focuses on USDT, USDC, and HLUSD deposits/staking and generates yield through funding-arbitrage-based strategies, with HLUSD-related rewards described in public data sources. The indexed contract surface includes ERC1967 proxy-based stake pool deployments across Ethereum, BSC, and Polygon, plus OTC endpoint proxy deployments on BSC and Polygon; those OTC endpoint contracts should be treated as recorded contract-surface components unless product documentation confirms they are user-facing yield endpoints.
 
-### Architecture
-
-Both families share the ERC1967Proxy infrastructure for upgradeability, with staking pools and OTC endpoints deployed as separate proxy instances pointing to distinct implementations, indicating a modular design where staking and OTC services may interact through shared token flows.
-
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 9
+- Unique implementations: 1
+- Raw deployments: 7
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,11 +47,10 @@ Both families share the ERC1967Proxy infrastructure for upgradeability, with sta
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| OTCEndPoint | operational_periphery | bsc | 2 deployments: bsc [`0x10057f...d66777`](./contracts/bsc-56/0x10057f7d9897414d1c84c886e16566dce8d66777/); polygon `0x528d46...fe64aa` | ⚠️ Unaudited |
 | stake_pool | core_logic | ethereum | 7 deployments: ethereum [`0x109d30...a47544`](./contracts/ethereum-1/0x109d3042a3c682f94107b3818e93b3ade2a47544/); ethereum `0xc34df6...53e470`; bsc [`0x109d30...a47544`](./contracts/bsc-56/0x109d3042a3c682f94107b3818e93b3ade2a47544/); bsc `0x528d46...fe64aa`; bsc `0xc34df6...53e470`; polygon [`0x109d30...a47544`](./contracts/polygon-137/0x109d3042a3c682f94107b3818e93b3ade2a47544/); polygon `0xc34df6...53e470` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -88,7 +88,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 2 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

@@ -96,7 +96,7 @@ Each project directory contains:
 | [synfutures](./synfutures/brief.md) | $4.85M | 6 | 481 | 3/481 (1%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $52.44M |
 | [armitage-by-wintermute](./armitage-by-wintermute/brief.md) | $52.01M | ethereum | 7 | 7/7 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $51.81M |
 | [stcyber](./stcyber/brief.md) | $1.14M | 4 | 31 | 26/31 (84%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $51.36M |
-| [flying-tulip](./flying-tulip/brief.md) | $5.81M | 5 | 62 | 59/62 (95%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $51.25M |
+| [flying-tulip](./flying-tulip/brief.md) | $6.99M | 5 | 62 | 59/62 (95%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $51.25M |
 | [republic-note](./republic-note/brief.md) | $14.22M | avalanche | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $51.20M |
 | [lisk-bridge](./lisk-bridge/brief.md) | $30.24M | ethereum | 102 | 94/102 (92%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $50.94M |
 | [resolv](./resolv/brief.md) | $22.38M | 7 | 80 | 65/80 (81%) | 3.1% | 3.1% (Sherlock) | 1 | aging | ❓ unknown | $50.49M |
@@ -206,7 +206,7 @@ Each project directory contains:
 | [monstro](./monstro/brief.md) | $3.39M | base | 9 | 9/9 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $3.43M |
 | [lair-finance](./lair-finance/brief.md) | $5.55M | berachain | 78 | 14/78 (18%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $3.41M |
 | [open-ticketing-ecosystem](./open-ticketing-ecosystem/brief.md) | $1.34M | base, ethereum, polygon | 24 | 24/24 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.34M |
-| [beradrome](./beradrome/brief.md) | $7.00M | berachain | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.29M |
+| [beradrome](./beradrome/brief.md) | $6.88M | berachain | 18 | 18/18 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.29M |
 | [steer-protocol](./steer-protocol/brief.md) | $17.07M | arbitrum, base, polygon | 46 | 34/46 (74%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.26M |
 | [resupply](./resupply/brief.md) | $38.67M | ethereum | 41 | 41/41 (100%) | 2.4% | 2.4% (ChainSecurity) | 3 | fresh | ✅ active | $3.18M |
 | [unslashed](./unslashed/brief.md) | $2.45M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.13M |
@@ -554,7 +554,7 @@ Each project directory contains:
 | [matstake](./matstake/brief.md) | $4.67M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [meld-gold](./meld-gold/brief.md) | $9.69M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [merchant-moe](./merchant-moe/brief.md) | $37.26M | mantle | 53 | 26/53 (49%) | 50.0% | 0.0% (-) | 1 | stale | ❓ unknown | - |
-| [merlinswap](./merlinswap/brief.md) | $8.43M | merlin | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [merlinswap](./merlinswap/brief.md) | $6.89M | merlin | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [meson](./meson/brief.md) | $1.10M | blast, merlin | 129 | 2/129 (2%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [metadao](./metadao/brief.md) | $13.05M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [metastable](./metastable/brief.md) | $2.07M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -660,7 +660,7 @@ Each project directory contains:
 | [sport.fun](./sport.fun/brief.md) | $3.68M | base | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [sprinter](./sprinter/brief.md) | $940.72K | base | 4 | 4/4 (100%) | 100.0% | 50.0% (Spearbit) | 3 | fresh | ✅ active | - |
 | [squadswap](./squadswap/brief.md) | $1.53M | 6 | 214 | 37/214 (17%) | 63.2% | 0.0% (-) | 4 | aging | ✅ active | - |
-| [stablehodl](./stablehodl/brief.md) | $6.96M | bsc, ethereum, polygon | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [stablehodl](./stablehodl/brief.md) | $6.96M | bsc, ethereum, polygon | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [standx](./standx/brief.md) | $48.27M | bsc | 17 | 7/17 (41%) | 57.1% | 0.0% (-) | 5 | fresh | ⚠️ declining | - |
 | [stargate](./stargate/brief.md) | $5.92M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [stcelo](./stcelo/brief.md) | $1.60M | celo | 19 | 10/19 (53%) | 50.0% | 0.0% (-) | 2 | stale | ✅ active | - |
@@ -728,5 +728,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T00:53:48.208Z_
+_Generated: 2026-06-13T01:45:52.595Z_
 _Projects: 716_

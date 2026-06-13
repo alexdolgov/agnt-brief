@@ -5,11 +5,11 @@
 - Project: Flying Tulip (`flying-tulip`)
 - Website: [https://flyingtulip.com/](https://flyingtulip.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T23:23:05.698Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-13T01:45:17.876Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-d5d2
 - Chains: avalanche, base, bsc, ethereum, sonic
 - Contract surface: 62 unique implementations (254 raw deployments)
-- DeFi Llama TVL: $5,814,816.78
+- DeFi Llama TVL: $6,985,933.27
 - On-chain TVL (included contracts): $51,254,594.39
 - TVL by chain: Ethereum $49,924,482.03 | Sonic $1,330,112.36
 
@@ -160,6 +160,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xd92b58...27d4ac`](./contracts/ethereum-1/0xd92b5892dfa62aa7f00e23e45a11b38f6b27d4ac/) | FtLiquidator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x2c64f6...9b8aae`](./contracts/sonic-146/0x2c64f618f8ce7ea31e9ff1f9022cb1b21a9b8aae/) | FtUsdMintRedeemOracleProxy | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x0237a6...97ab6a`](./contracts/sonic-146/0x0237a67db9d55b2e0f2b25a137ea15e4c497ab6a/) | ftYieldWrapperV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x30439b...2d9bc9`](./contracts/ethereum-1/0x30439b989fdfdf68e08a232799acca68152d9bc9/) | HopHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x054c80...229795`](./contracts/ethereum-1/0x054c80b91b39fc4f84ef0ecd53bbb53163229795/) | LendingLens | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6a4c8b...f401f8`](./contracts/ethereum-1/0x6a4c8bfab54ff0405630cf3e14b99f2726f401f8/) | LeveragedRfqFiller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8263a0...f140e2`](./contracts/ethereum-1/0x8263a07504d93cb95e0a74f3627bb15faaf140e2/) | LeverageRfqEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -190,10 +191,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 45 |
+| native | 46 |
 | upstream | 3 |
 | standard_library | 13 |
-| needs_review | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

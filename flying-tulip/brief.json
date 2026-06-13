@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "flying-tulip",
-  "generated_at": "2026-06-10T23:23:05.698Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-13T01:45:17.876Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-d5d2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "flying-tulip",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5814816.78194,
+    "dl_tvl_usd": 6985933.26677,
     "tvl_usd": 51254594.38726744,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -1952,7 +1952,7 @@
       "address": "0x30439b989fdfdf68e08a232799acca68152d9bc9",
       "name": "HopHelper",
       "role": "periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3904,6 +3904,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x30439b989fdfdf68e08a232799acca68152d9bc9",
+      "name": "HopHelper",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x054c80b91b39fc4f84ef0ecd53bbb53163229795",
       "name": "LendingLens",
       "role": "core_logic",
@@ -4153,10 +4163,10 @@
     }
   ],
   "origin_summary": {
-    "native": 45,
+    "native": 46,
     "upstream": 3,
     "standard_library": 13,
-    "needs_review": 1
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

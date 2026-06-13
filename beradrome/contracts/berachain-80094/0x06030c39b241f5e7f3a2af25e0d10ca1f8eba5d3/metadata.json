@@ -1,0 +1,17 @@
+{
+  "address": "0x06030c39b241f5e7f3a2af25e0d10ca1f8eba5d3",
+  "chain_id": 80094,
+  "contract_name": "TOKENFees",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "0000000000000000000000008a5547dbdba815036ae67d36835db687fd94865e0000000000000000000000007838cec5b11298ff6a9513fa385621b765c74174000000000000000000000000fcbd14dc51f0a4d49d5e53c2e0950e0bc26d0dce00000000000000000000000040a8d9efe6a2c6c9d193cc0a4476767748e68133",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T01:41:57.562Z"
+}

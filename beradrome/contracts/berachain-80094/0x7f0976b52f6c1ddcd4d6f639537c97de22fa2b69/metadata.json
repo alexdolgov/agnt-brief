@@ -1,0 +1,17 @@
+{
+  "address": "0x7f0976b52f6c1ddcd4d6f639537c97de22fa2b69",
+  "chain_id": 80094,
+  "contract_name": "VTOKEN",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 32,
+  "constructor_arguments": "0000000000000000000000007838cec5b11298ff6a9513fa385621b765c7417400000000000000000000000040a8d9efe6a2c6c9d193cc0a4476767748e6813300000000000000000000000007c2e5ea884c755e374e360bc2815ae28dabcc3800000000000000000000000094ad6ac84f6c6fba8b8ccbd71d9f4f101def52a8",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T01:42:00.147Z"
+}

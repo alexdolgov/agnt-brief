@@ -1391,10 +1391,15 @@ Each project directory contains:
 | [xeleb-protocol](./xeleb-protocol/brief.md) | - | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/brief.md) | $1.17M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [xpanse](./xpanse/brief.md) | $240.06K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [xrgb](./xrgb/brief.md) | $304.01 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [xswap-protocol](./xswap-protocol/brief.md) | $664.62K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [y2k-finance](./y2k-finance/brief.md) | $30.04K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [yaka-finance](./yaka-finance/brief.md) | $10.29K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [ybtc.b](./ybtc.b/brief.md) | $69.27M | avalanche, bsc, ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [yei-finance](./yei-finance/brief.md) | $18.30M | sei | 47 | 38/47 (81%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [yield-protocol](./yield-protocol/brief.md) | $203.28K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [yieldly](./yieldly/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [yoshi-exchange](./yoshi-exchange/brief.md) | $6.60K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [youves](./youves/brief.md) | $35.48M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [zeebu](./zeebu/brief.md) | $5.21M | base, ethereum | 8 | 3/8 (38%) | 66.7% | 66.7% (Certora, OpenZeppelin) | 2 | aging | ❓ unknown | - |
 | [zenlink](./zenlink/brief.md) | $5.34M | moonbeam, moonriver | 226 | 12/226 (5%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
@@ -1405,5 +1410,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T15:11:13.446Z_
-_Projects: 1393_
+_Generated: 2026-06-13T15:13:48.030Z_
+_Projects: 1398_

@@ -740,10 +740,15 @@
 | [milkyway-protocol](./milkyway-protocol/) | $2.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [minefi](./minefi/) | $1.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [minerswap](./minerswap/) | $0.1 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [minimax](./minimax/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mint-club](./mint-club/) | $598.0K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [minto](./minto/) | $3.8M | 16.7% | ? | active | 2 | 9 | 2026-06-11 |
+| [minu](./minu/) | $0.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [mirakle-defi](./mirakle-defi/) | $0.1 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [mito-finance](./mito-finance/) | $435.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mitosis](./mitosis/) | $329.0M | 0.0% | $329.0M | active | 2 | 66 | 2026-06-11 |
 | [mm-finance](./mm-finance/) | $1.8M | 4.5% | $1.8M | declining | 3 | 192 | 2026-06-11 |
+| [moar-market](./moar-market/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mobox](./mobox/) | $6.6M | 0.0% | $6.6M | unknown | 1 | 323 | 2026-06-11 |
 | [mode-bridge](./mode-bridge/) | $6.1M | 2.9% | ? | declining | 21 | 100 | 2026-06-11 |
 | [mole](./mole/) | $8.6M | 0.0% | ? | active | 1 | 49 | 2026-06-13 |

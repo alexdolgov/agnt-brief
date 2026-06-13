@@ -16,6 +16,7 @@
 | [acryptos](./acryptos/) | $5.2M | 25.0% | $253.0K | active | 7 | 311 | 2026-06-10 |
 | [aegis-markets](./aegis-markets/) | $2.3M | 0.0% | ? | active | 2 | 15 | 2026-06-10 |
 | [aegis](./aegis/) | $35.9M | 0.0% | ? | active | 0 | 12 | 2026-06-12 |
+| [aera](./aera/) | $132.6M | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | active | 0 | 7 | 2026-06-13 |
 | [aevo](./aevo/) | $96.8M | 11.8% | $26.1M | active | 13 | 256 | 2026-06-10 |
 | [aftermath-finance](./aftermath-finance/) | $5.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -99,6 +100,7 @@
 | [blackhole](./blackhole/) | $29.7M | 31.1% | ? | declining | 3 | 86 | 2026-06-10 |
 | [blast-l2](./blast-l2/) | $568.9 | 0.0% | $568.9 | unknown | 0 | 295 | 2026-06-12 |
 | [blend-money](./blend-money/) | $8.6K | 0.0% | ? | unknown | 11 | 0 | 2026-06-13 |
+| [blend](./blend/) | $213.1M | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [block-analitica](./block-analitica/) | $252.8K | 0.0% | $252.8K | declining | 0 | 20 | 2026-06-12 |
 | [blueshift](./blueshift/) | $4.3M | 0.0% | ? | active | 1 | 23 | 2026-06-10 |
 | [blur](./blur/) | $91.7M | 0.0% | $91.7M | active | 0 | 21 | 2026-06-12 |
@@ -125,6 +127,7 @@
 | [bucket-protocol](./bucket-protocol/) | $65.1M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
 | [bulbaswap](./bulbaswap/) | $9.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [bunny](./bunny/) | $1.9M | 9.6% | $1.4M | declining | 1 | 101 | 2026-06-10 |
+| [burve-protocol](./burve-protocol/) | $10.5K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [butter-network](./butter-network/) | $1.2M | 0.0% | ? | declining | 0 | 6 | 2026-06-10 |
 | [bydfi](./bydfi/) | $72.1M | 0.0% | ? | active | 0 | 1 | 2026-06-12 |
 | [byte-exchange](./byte-exchange/) | $41.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -142,6 +145,7 @@
 | [chaingpt](./chaingpt/) | $4.6M | 0.0% | ? | active | 0 | 87 | 2026-06-10 |
 | [charm-finance](./charm-finance/) | $14.2K | 50.0% | $0.0 | declining | 6 | 10 | 2026-06-10 |
 | [chateau](./chateau/) | $19.1K | 33.3% | $19.1K | active | 1 | 5 | 2026-06-10 |
+| [chewyswap](./chewyswap/) | $9.5K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [citrea-bridge](./citrea-bridge/) | $6.6M | 50.0% | ? | active | 10 | 3 | 2026-06-10 |
 | [clearpool](./clearpool/) | $17.6K | 7.1% | $17.6K | active | 7 | 63 | 2026-06-12 |
 | [clever](./clever/) | $3.2M | 10.6% | $1.6M | active | 3 | 76 | 2026-06-10 |
@@ -175,6 +179,7 @@
 | [defi-kingdoms](./defi-kingdoms/) | $7.7M | 0.0% | ? | declining | 1 | 5 | 2026-06-13 |
 | [defichain-dex](./defichain-dex/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [defil](./defil/) | $1.0M | 0.0% | $1.0M | active | 1 | 51 | 2026-06-10 |
+| [defiplaza](./defiplaza/) | $126.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [defituna](./defituna/) | $4.6M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | active | 0 | 53 | 2026-06-13 |
 | [deltaprime](./deltaprime/) | $2.6K | 0.0% | $2.6K | active | 0 | 482 | 2026-05-31 |

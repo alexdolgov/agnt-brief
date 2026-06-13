@@ -799,6 +799,7 @@
 | [sqd.ai](./sqd.ai/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 28 | 2026-06-12 |
 | [squadswap](./squadswap/) | $13.0M | 63.2% | ? | active | 5 | 214 | 2026-06-11 |
 | [stable-jack](./stable-jack/) | $76.9M | 0.0% | $76.9M | active | 1 | 249 | 2026-06-11 |
+| [stablecomp](./stablecomp/) | $1.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 1 | 2026-06-13 |
 | [stader](./stader/) | $229.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-06-11 |
@@ -817,6 +818,7 @@
 | [stout](./stout/) | $12.6K | 0.0% | $12.6K | declining | 0 | 132 | 2026-06-11 |
 | [strata](./strata/) | $97.2M | 31.6% | $289.6K | active | 7 | 39 | 2026-06-11 |
 | [stratis-mstrax](./stratis-mstrax/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
+| [streamflow](./streamflow/) | $700.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [sturdy](./sturdy/) | $371.2K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [stusdt](./stusdt/) | $1.9M | 0.0% | $1.9M | active | 0 | 12 | 2026-06-12 |
 | [sui-rewards-me](./sui-rewards-me/) | $1.1K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
@@ -831,6 +833,7 @@
 | [superform](./superform/) | $2.0M | 19.7% | $1.9K | active | 3 | 158 | 2026-06-11 |
 | [supernova](./supernova/) | $2.1M | 48.9% | ? | declining | 1 | 47 | 2026-06-11 |
 | [surf-lending](./surf-lending/) | $4.5M | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
+| [surf-protocol](./surf-protocol/) | $6.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [surfswap](./surfswap/) | $117.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [suzaku](./suzaku/) | $1.2M | 0.0% | $1.2M | active | 2 | 49 | 2026-06-11 |
 | [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-06-11 |
@@ -858,6 +861,7 @@
 | [team-finance](./team-finance/) | $5.4K | 0.0% | $5.4K | active | 2 | 66 | 2026-06-12 |
 | [teller](./teller/) | $1.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 40 | 2026-06-11 |
+| [templar-protocol](./templar-protocol/) | $41.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [tender-finance](./tender-finance/) | $1.3M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
 | [tenderize](./tenderize/) | $332.5M | 2.6% | $332.5M | declining | 6 | 43 | 2026-06-11 |
 | [tensorplex](./tensorplex/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-05-31 |

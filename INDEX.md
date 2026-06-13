@@ -315,6 +315,7 @@
 | [folks-finance](./folks-finance/) | $89.3M | 0.0% | ? | unknown | 21 | 0 | 2026-06-13 |
 | [fomo3d](./fomo3d/) | $2.5M | 0.0% | ? | active | 0 | 23 | 2026-06-10 |
 | [forgeyields](./forgeyields/) | $1.3M | 0.0% | ? | active | 2 | 1 | 2026-06-11 |
+| [fortifi](./fortifi/) | $349.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [four.meme](./four.meme/) | $4.6M | 0.0% | ? | active | 1 | 5 | 2026-06-13 |
 | [foxify](./foxify/) | $72.6K | 0.0% | $72.6K | active | 0 | 5 | 2026-06-10 |
 | [frankencoin](./frankencoin/) | $70.0M | 80.0% | ? | active | 5 | 5 | 2026-06-10 |
@@ -323,13 +324,17 @@
 | [fuji-finance](./fuji-finance/) | $144.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [fulcrom](./fulcrom/) | $10.9M | 0.0% | ? | active | 0 | 79 | 2026-06-12 |
 | [full-sail](./full-sail/) | $481.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
+| [fyde-protocol](./fyde-protocol/) | $255.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [gains-network](./gains-network/) | $64.7M | 0.0% | $64.7M | active | 1 | 779 | 2026-06-12 |
 | [galaxy-curation](./galaxy-curation/) | $67.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [gamma](./gamma/) | $24.3K | 27.6% | $24.3K | active | 16 | 467 | 2026-06-10 |
 | [gate-us](./gate-us/) | $49.1M | 0.0% | ? | active | 0 | 9 | 2026-06-12 |
 | [gearbox](./gearbox/) | $3.5M | 53.0% | ? | declining | 37 | 195 | 2026-06-10 |
+| [geist-finance](./geist-finance/) | $153.5K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [generic.money](./generic.money/) | $3.7M | 81.8% | ? | declining | 1 | 12 | 2026-06-10 |
+| [get-protocol](./get-protocol/) | $122.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 3 | 2026-06-12 |
+| [geyser](./geyser/) | $93.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [gimo](./gimo/) | $8.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 0 | 16 | 2026-06-10 |
 | [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 0 | 6 | 2026-06-12 |

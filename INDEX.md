@@ -389,6 +389,7 @@
 | [looping-collective](./looping-collective/) | $11.8M | 25.0% | $11.6M | active | 13 | 18 | 2026-06-12 |
 | [loopring](./loopring/) | $2.4M | 8.1% | $2.4M | declining | 1 | 141 | 2026-06-13 |
 | [ltv-protocol](./ltv-protocol/) | $12.6K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
+| [luckychip](./luckychip/) | $532.1 | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [lumenswap](./lumenswap/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-06-11 |
 | [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-31 |
@@ -467,6 +468,8 @@
 | [nftfi](./nftfi/) | $10.1K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [nftx](./nftx/) | $6.3M | 11.1% | $6.3M | declining | 5 | 184 | 2026-06-11 |
 | [nodedao](./nodedao/) | $33.3M | 38.9% | $33.3M | active | 5 | 18 | 2026-06-11 |
+| [nodeops](./nodeops/) | ? | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
+| [nolus-protocol](./nolus-protocol/) | $509.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [nomiswap](./nomiswap/) | $1.4M | 15.8% | ? | declining | 1 | 47 | 2026-05-24 |
 | [nonkyc](./nonkyc/) | $5.4M | 0.0% | ? | active | 0 | 4 | 2026-06-13 |
 | [noon](./noon/) | $20.4M | 3.3% | $18.0 | active | 5 | 40 | 2026-06-11 |
@@ -519,6 +522,7 @@
 | [plasma-saving-vaults](./plasma-saving-vaults/) | $2.6M | 0.0% | $2.6M | declining | 0 | 6 | 2026-06-12 |
 | [pleasing-gold](./pleasing-gold/) | $93.0M | 0.0% | $93.0M | unknown | 0 | 14 | 2026-06-12 |
 | [pnetwork](./pnetwork/) | $13.1M | 0.0% | ? | declining | 0 | 12 | 2026-06-12 |
+| [polkamarkets](./polkamarkets/) | $12.6K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [polkastarter](./polkastarter/) | $9.6M | 0.0% | $9.6M | active | 3 | 2 | 2026-06-11 |
 | [polygon-zkevm-bridge](./polygon-zkevm-bridge/) | $69.4M | 0.0% | ? | unknown | 0 | 14 | 2026-06-12 |
 | [polynomial-protocol](./polynomial-protocol/) | $5.3M | 0.0% | ? | active | 18 | 5 | 2026-06-13 |
@@ -543,6 +547,7 @@
 | [qidao](./qidao/) | $2.6M | 0.0% | ? | declining | 1 | 298 | 2026-06-11 |
 | [qubit](./qubit/) | $14.7K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [radiant](./radiant/) | $1.1M | 31.6% | $515.0K | dead | 94 | 390 | 2026-05-26 |
+| [rage-trade-v1](./rage-trade-v1/) | $6.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [railgun](./railgun/) | $312.5M | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
 | [rain](./rain/) | $26.1M | 0.0% | ? | active | 3 | 29 | 2026-06-12 |
 | [rainbow-bridge](./rainbow-bridge/) | $2.1M | 0.0% | ? | declining | 0 | 2 | 2026-06-11 |

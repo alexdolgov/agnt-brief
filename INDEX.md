@@ -560,11 +560,16 @@
 | [inception](./inception/) | $9.8M | 24.6% | $9.5M | declining | 9 | 78 | 2026-06-11 |
 | [index-coop](./index-coop/) | $19.4M | 13.5% | $19.4M | active | 5 | 235 | 2026-06-11 |
 | [infinifi](./infinifi/) | $145.9M | 0.0% | $145.9M | declining | 12 | 123 | 2026-06-12 |
+| [infinite-trading-protocol](./infinite-trading-protocol/) | $429.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [infinityname](./infinityname/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [influpia](./influpia/) | $3.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [infrared-finance](./infrared-finance/) | $861.9K | 100.0% | ? | active | 27 | 27 | 2026-06-11 |
+| [infusion](./infusion/) | $72.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [init-capital](./init-capital/) | $66.5M | 24.0% | $66.2M | declining | 7 | 99 | 2026-06-11 |
 | [initiadex](./initiadex/) | $3.0M | 0.0% | ? | unknown | 7 | 0 | 2026-06-11 |
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-06-12 |
 | [ink-bridge](./ink-bridge/) | $59.3M | 44.0% | ? | active | 17 | 68 | 2026-06-11 |
+| [ink-protocol](./ink-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 65 | 2026-06-13 |
 | [interest-labs](./interest-labs/) | $2.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [interest-protocol](./interest-protocol/) | $1.3M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |

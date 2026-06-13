@@ -574,6 +574,7 @@
 | [ring-protocol](./ring-protocol/) | $83.5M | 10.6% | $83.5M | active | 8 | 90 | 2026-06-11 |
 | [rip.xyz](./rip.xyz/) | $0.0 | 50.0% | $0.0 | active | 1 | 6 | 2026-06-11 |
 | [risex](./risex/) | $4.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [rocifi](./rocifi/) | $46.5K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 2 | 2026-06-12 |
 | [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 0 | 11 | 2026-05-31 |
 | [rook](./rook/) | $190.1K | 0.0% | $190.1K | dead | 0 | 73 | 2026-06-11 |
@@ -609,6 +610,7 @@
 | [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | active | 3 | 40 | 2026-06-11 |
 | [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-06-13 |
 | [shield](./shield/) | $0.0 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
+| [shoebill-finance](./shoebill-finance/) | $421.0K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | active | 0 | 2 | 2026-06-12 |
 | [sierra-protocol](./sierra-protocol/) | $39.6M | 4.0% | $5.3M | active | 1 | 78 | 2026-06-11 |
@@ -617,6 +619,7 @@
 | [singularity-finance](./singularity-finance/) | $2.7M | 70.0% | $2.7M | transitioning | 2 | 10 | 2026-06-13 |
 | [singularv](./singularv/) | $1.1B | 11.4% | $1.1B | declining | 7 | 83 | 2026-06-11 |
 | [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 0 | 4 | 2026-06-11 |
+| [skate-fi](./skate-fi/) | $112.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |
 | [smilee-finance](./smilee-finance/) | $1.1M | 0.0% | ? | active | 3 | 186 | 2026-06-11 |
 | [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 12 | 2026-06-11 |
@@ -674,12 +677,14 @@
 | [superfluid](./superfluid/) | $12.7M | 20.8% | ? | active | 8 | 397 | 2026-05-31 |
 | [superform](./superform/) | $2.0M | 19.7% | $1.9K | active | 3 | 158 | 2026-06-11 |
 | [supernova](./supernova/) | $2.1M | 48.9% | ? | declining | 1 | 47 | 2026-06-11 |
+| [surf-lending](./surf-lending/) | $4.5M | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [suzaku](./suzaku/) | $1.2M | 0.0% | $1.2M | active | 2 | 49 | 2026-06-11 |
 | [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-06-11 |
 | [swamp-finance](./swamp-finance/) | $0.1 | 0.0% | $0.1 | declining | 0 | 11 | 2026-06-11 |
 | [swap.io-clmm](./swap.io-clmm/) | $2.1K | 0.0% | ? | unknown | 11 | 0 | 2026-06-13 |
 | [swappi](./swappi/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
 | [swapscanner](./swapscanner/) | $4.4M | 0.0% | ? | active | 1 | 2 | 2026-06-11 |
+| [swapx](./swapx/) | $492.4K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [swell](./swell/) | $100.5M | 0.0% | ? | unknown | 16 | 0 | 2026-06-13 |
 | [swellchain-bridge](./swellchain-bridge/) | $1.2M | 0.0% | ? | declining | 0 | 10 | 2026-06-11 |
 | [switcheo-finance](./switcheo-finance/) | $68.3M | 0.0% | $68.3M | active | 0 | 47 | 2026-06-11 |

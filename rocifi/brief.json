@@ -1,0 +1,160 @@
+{
+  "schema_version": "2.0",
+  "project_key": "rocifi",
+  "generated_at": "2026-06-13T10:46:38.461Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 3,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 46452,
+    "tvl_usd": 46452,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": null,
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2022-02",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 2,
+      "unknown": 1
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [
+    {
+      "audit_id": 13756,
+      "audit_key": "audit-13756",
+      "report_name": "Certik-PRE-RociFi-2022-02-10.pdf",
+      "report_url": "https://github.com/rociFi/docs/blob/main/Certik-PRE-RociFi-2022-02-10.pdf",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13757,
+      "audit_key": "audit-13757",
+      "report_name": "Chainsulting-02_Smart_Contract_Audit_RociFi_Protocol-Jan-2022.pdf",
+      "report_url": "https://github.com/rociFi/docs/blob/main/Chainsulting-02_Smart_Contract_Audit_RociFi_Protocol-Jan-2022.pdf",
+      "auditor": "Chainsulting",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13758,
+      "audit_key": "audit-13758",
+      "report_name": "RociFi_Hexens_Dec_2022_SMA_public.pdf",
+      "report_url": "https://github.com/rociFi/docs/blob/main/RociFi_Hexens_Dec_2022_SMA_public.pdf",
+      "auditor": "Hexens",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 13758,
+          "report_url": "https://github.com/rociFi/docs/blob/main/RociFi_Hexens_Dec_2022_SMA_public.pdf"
+        },
+        {
+          "audit_id": 13759,
+          "report_url": "https://github.com/RociFi/docs/blob/main/RociFi_Hexens_Dec_2022_SMA_public.pdf"
+        }
+      ]
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 13756,
+        "report_name": "Certik-PRE-RociFi-2022-02-10.pdf"
+      },
+      {
+        "audit_id": 13757,
+        "report_name": "Chainsulting-02_Smart_Contract_Audit_RociFi_Protocol-Jan-2022.pdf"
+      },
+      {
+        "audit_id": 13758,
+        "report_name": "RociFi_Hexens_Dec_2022_SMA_public.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

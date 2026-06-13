@@ -1,0 +1,18 @@
+{
+  "address": "0x6d0c9a70d85e42ba8b76dc06620d4e988ec8d0c1",
+  "chain_id": 8453,
+  "contract_name": "FiatTokenV2_1",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T17:32:09.836Z"
+}

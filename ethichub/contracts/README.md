@@ -1,12 +1,13 @@
 # ethichub — Contract Index
 
-58 unique implementations across 3 chains · 213 deployments · 0 audited · 47 unaudited · 11 unverified
+60 unique implementations across 3 chains · 220 deployments · 0 audited · 48 unaudited · 12 unverified
 
-## core_logic (1)
+## core_logic (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BPool](./ethereum-1/0xb93aa4cdeef1293303f628e16dd06ddd42db19f1/) | ethereum | [`0xb93aa4...db19f1`](./ethereum-1/0xb93aa4cdeef1293303f628e16dd06ddd42db19f1/) | ⚠️ Unaudited | Verified |
+| [UniswapV3Pool](./celo-42220/0x3420720e561f3082f1e514a4545f0f2e0c955a5d/) | celo | [`0x342072...955a5d`](./celo-42220/0x3420720e561f3082f1e514a4545f0f2e0c955a5d/) | ⚠️ Unaudited | Verified |
 
 ## governance (4)
 
@@ -55,7 +56,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [ERC20NFTBond (32 deployments)](./ethereum-1/0x0110425d2f26595d21969085fe4f784064e0f9d6/) | ethereum | 32 deployments: ethereum [`0x011042...e0f9d6`](./ethereum-1/0x0110425d2f26595d21969085fe4f784064e0f9d6/); ethereum `0x194cb1...8d7338`; ethereum `0x213206...c554d9`; ethereum `0x262569...aa9030`; ethereum `0x36d45e...a7313c`; ethereum `0x573325...7122e2`; ethereum `0x696d74...5679de`; ethereum `0x733e9c...97e49d`; ethereum `0x8eb87a...69cfa6`; ethereum `0x92be91...7730d2`; ethereum `0xa258ee...51a589`; ethereum `0xa97f2f...80eed9`; ethereum `0xd41e96...9d357e`; ethereum `0xd5277d...61d8a5`; ethereum `0xe84686...cf22b1`; ethereum `0xf3839c...bd46b6`; celo `0x05a71c...a096d3`; celo `0x0f497a...378ff0`; celo `0x1a3417...7967c4`; celo `0x350d1a...8be0ad`; celo `0x3ca21f...944ae4`; celo `0x4426f8...130e3e`; celo `0x7cf02b...2f2bca`; celo `0x89cea1...9478f5`; celo `0x99a6cd...dc0705`; celo `0xa16281...4b8fd0`; celo `0xb3369f...b26de9`; celo `0xbc449d...d9da27`; celo `0xc918ed...a35c93`; celo `0xd27e31...9b7620`; celo `0xd8c315...b62c9b`; celo `0xe0eb2d...111cbc` | ⚠️ Unaudited | Verified |
+| [ERC20NFTBond (33 deployments)](./ethereum-1/0x0110425d2f26595d21969085fe4f784064e0f9d6/) | ethereum | 33 deployments: ethereum [`0x011042...e0f9d6`](./ethereum-1/0x0110425d2f26595d21969085fe4f784064e0f9d6/); ethereum `0x194cb1...8d7338`; ethereum `0x213206...c554d9`; ethereum `0x262569...aa9030`; ethereum `0x36d45e...a7313c`; ethereum `0x573325...7122e2`; ethereum `0x696d74...5679de`; ethereum `0x733e9c...97e49d`; ethereum `0x8eb87a...69cfa6`; ethereum `0x92be91...7730d2`; ethereum `0xa258ee...51a589`; ethereum `0xa97f2f...80eed9`; ethereum `0xd41e96...9d357e`; ethereum `0xd5277d...61d8a5`; ethereum `0xe84686...cf22b1`; ethereum `0xf3839c...bd46b6`; celo `0x05a71c...a096d3`; celo `0x0f497a...378ff0`; celo `0x1a3417...7967c4`; celo `0x350d1a...8be0ad`; celo `0x3ca21f...944ae4`; celo `0x4426f8...130e3e`; celo `0x485851...7725f0`; celo `0x7cf02b...2f2bca`; celo `0x89cea1...9478f5`; celo `0x99a6cd...dc0705`; celo `0xa16281...4b8fd0`; celo `0xb3369f...b26de9`; celo `0xbc449d...d9da27`; celo `0xc918ed...a35c93`; celo `0xd27e31...9b7620`; celo `0xd8c315...b62c9b`; celo `0xe0eb2d...111cbc` | ⚠️ Unaudited | Verified |
 | [ERC20Reserve (5 deployments)](./ethereum-1/0x1ecc7e3b26dcaee4d63536fe50ea37787a04a5c5/) | ethereum | 5 deployments: ethereum [`0x1ecc7e...04a5c5`](./ethereum-1/0x1ecc7e3b26dcaee4d63536fe50ea37787a04a5c5/); ethereum `0xb27132...063073`; ethereum `0xb97ef2...6e3518`; celo `0xa14b1d...3e1567`; celo `0xa9a824...b28530` | ⚠️ Unaudited | Verified |
 | [EternalStorageProxy](./ethereum-1/0x01db9f9a32d4d11d82882bf705e01c39e0ddb5cf/) | ethereum | [`0x01db9f...ddb5cf`](./ethereum-1/0x01db9f9a32d4d11d82882bf705e01c39e0ddb5cf/) | ⚠️ Unaudited | Verified |
 | [EthixToken (2 deployments)](./ethereum-1/0xdc0c39780a6f3165f61fb27f3d47668033c898b5/) | ethereum | 2 deployments: ethereum [`0xdc0c39...c898b5`](./ethereum-1/0xdc0c39780a6f3165f61fb27f3d47668033c898b5/); ethereum `0xfd0991...d80d3e` | ⚠️ Unaudited | Verified |
@@ -69,7 +70,7 @@
 | [StakedUETHIX (2 deployments)](./ethereum-1/0x3f4b71f7b81d9829008504b8bfa09d215c4dd673/) | ethereum | 2 deployments: ethereum [`0x3f4b71...4dd673`](./ethereum-1/0x3f4b71f7b81d9829008504b8bfa09d215c4dd673/); ethereum `0x89cea1...9478f5` | ⚠️ Unaudited | Verified |
 | [TokenImplementation](./celo-42220/0x9995cc8f20db5896943afc8ee0ba463259c931ed/) | celo | [`0x9995cc...c931ed`](./celo-42220/0x9995cc8f20db5896943afc8ee0ba463259c931ed/) | ⚠️ Unaudited | Verified |
 
-## unknown (21)
+## unknown (22)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -79,10 +80,11 @@
 | [ForeignAMBErc677ToErc677 (6 deployments)](./ethereum-1/0x41a4ee2855a7dc328524babb07d7f505b201133e/) | ethereum | 6 deployments: ethereum [`0x41a4ee...01133e`](./ethereum-1/0x41a4ee2855a7dc328524babb07d7f505b201133e/); ethereum `0x6ea6c6...630c2f`; ethereum `0x71f12d...99db8d`; ethereum `0x7c14be...778e24`; ethereum `0xaa60a7...c49faf`; ethereum `0xd92500...2ea7a7` | ⚠️ Unaudited | Verified |
 | [HomeAMBErc677ToErc677 (2 deployments)](./ethereum-1/0xa8cbad2ff217cb9c32ca8d3903e2a2b65578a846/) | ethereum | 2 deployments: ethereum [`0xa8cbad...78a846`](./ethereum-1/0xa8cbad2ff217cb9c32ca8d3903e2a2b65578a846/); ethereum `0xe7228b...262dcd` | ⚠️ Unaudited | Verified |
 | [MembershipBond (7 deployments)](./celo-42220/0x302e471ae434c50c1fe931a4a0fe0d84074463bb/) | celo | 7 deployments: celo [`0x302e47...4463bb`](./celo-42220/0x302e471ae434c50c1fe931a4a0fe0d84074463bb/); celo `0x4bf4a8...452260`; celo `0x6e0262...53d029`; celo `0x890341...3f3d1f`; celo `0x9dd572...70bbd3`; celo `0xceeb15...a78059`; celo `0xda70b3...228614` | ⚠️ Unaudited | Verified |
-| [OriginatorStaking (19 deployments)](./celo-42220/0x0306f70d3e69e30f49d28cb0ed33fd9d439043a8/) | celo | 19 deployments: ethereum `0x1e70f4...082c8b`; ethereum `0x2f19bd...2de481`; ethereum `0x3b61cd...04d0e3`; ethereum `0x3ef3ee...852440`; ethereum `0x7435c0...1dd955`; ethereum `0xa1cf21...444444`; ethereum `0xa7e499...fa44b8`; ethereum `0xacb56e...135c70`; ethereum `0xe03244...d9784e`; celo [`0x0306f7...9043a8`](./celo-42220/0x0306f70d3e69e30f49d28cb0ed33fd9d439043a8/); celo `0x18843e...ab9693`; celo `0x2ffa2c...06389a`; celo `0x519599...acf899`; celo `0x6ed247...5000f7`; celo `0x7d413d...3d2fa1`; celo `0x8181d3...582c7c`; celo `0x903134...d032ea`; celo `0xcc0d68...a9eef7`; celo `0xe33c7d...74073a` | ⚠️ Unaudited | Verified |
+| [OriginatorStaking (23 deployments)](./celo-42220/0x0306f70d3e69e30f49d28cb0ed33fd9d439043a8/) | celo | 23 deployments: ethereum `0x1e70f4...082c8b`; ethereum `0x2f19bd...2de481`; ethereum `0x3b61cd...04d0e3`; ethereum `0x3ef3ee...852440`; ethereum `0x7435c0...1dd955`; ethereum `0xa1cf21...444444`; ethereum `0xa7e499...fa44b8`; ethereum `0xacb56e...135c70`; ethereum `0xe03244...d9784e`; celo [`0x0306f7...9043a8`](./celo-42220/0x0306f70d3e69e30f49d28cb0ed33fd9d439043a8/); celo `0x11e23e...6e80e5`; celo `0x18843e...ab9693`; celo `0x2ffa2c...06389a`; celo `0x519599...acf899`; celo `0x6ed247...5000f7`; celo `0x7d413d...3d2fa1`; celo `0x8181d3...582c7c`; celo `0x8d6bff...e9502a`; celo `0x903134...d032ea`; celo `0xbf0978...ab1c60`; celo `0xcc0d68...a9eef7`; celo `0xe33c7d...74073a`; celo `0xe7c12a...63b130` | ⚠️ Unaudited | Verified |
 | [OriginatorStakingWithLP (2 deployments)](./celo-42220/0x51246ae0ba74696a66f0dc9e5f214d1c48ef1f55/) | celo | 2 deployments: celo [`0x51246a...ef1f55`](./celo-42220/0x51246ae0ba74696a66f0dc9e5f214d1c48ef1f55/); celo `0xdd2ca0...fbf8fa` | ⚠️ Unaudited | Verified |
 | [StakingRewards](./celo-42220/0xbfa2748a60976cd18b835c75c6a20328e9a72684/) | celo | [`0xbfa274...a72684`](./celo-42220/0xbfa2748a60976cd18b835c75c6a20328e9a72684/) | ⚠️ Unaudited | Verified |
 | [UniswapV2Pair (4 deployments)](./gnosis-100/0x2b8d7a0ed5e642f6441862d353c60c8f8ff2acd1/) | gnosis | 4 deployments: ethereum `0xb14b94...06b458`; gnosis [`0x2b8d7a...f2acd1`](./gnosis-100/0x2b8d7a0ed5e642f6441862d353c60c8f8ff2acd1/); gnosis `0xe5bc36...3577eb`; celo `0x62cfa2...85ddb7` | ⚠️ Unaudited | Verified |
+| UnnamedContract | ethereum | `0x69183d...f00293` | ❓ Unverified | Unverified |
 | UnnamedContract | celo | `0x0e1c2d...23f821` | ❓ Unverified | Unverified |
 | UnnamedContract | celo | `0x2dfbe4...e1cc9f` | ❓ Unverified | Unverified |
 | UnnamedContract | celo | `0x78ccd8...5e2fae` | ❓ Unverified | Unverified |

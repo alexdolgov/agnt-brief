@@ -284,7 +284,7 @@
 | [cougarswap](./cougarswap/) | $54.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [cozy-finance](./cozy-finance/) | $2.3M | 0.0% | ? | active | 5 | 48 | 2026-06-10 |
 | [crabada](./crabada/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [cream-finance](./cream-finance/) | $2.3B | 0.0% | $2.3B | declining | 2 | 94 | 2026-06-10 |
+| [cream-finance](./cream-finance/) | $2.3B | 0.0% | $2.3B | declining | 2 | 95 | 2026-06-13 |
 | [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-06-12 |
 | [credit-coop](./credit-coop/) | $2.1M | 0.0% | $2.1M | active | 3 | 2 | 2026-06-11 |
 | [cron-finance](./cron-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -396,7 +396,7 @@
 | [etherex](./etherex/) | $1.4M | 36.2% | ? | declining | 4 | 58 | 2026-06-11 |
 | [etherflip](./etherflip/) | $1.6M | 0.0% | ? | active | 0 | 7 | 2026-06-10 |
 | [etherfuse](./etherfuse/) | $5.4M | 0.0% | ? | active | 0 | 25 | 2026-06-10 |
-| [ethichub](./ethichub/) | $22.7M | 0.0% | $22.7M | active | 2 | 58 | 2026-06-10 |
+| [ethichub](./ethichub/) | $22.7M | 0.0% | $22.7M | active | 2 | 60 | 2026-06-13 |
 | [ethos](./ethos/) | $1.9M | 30.0% | ? | active | 2 | 27 | 2026-06-10 |
 | [etmc](./etmc/) | $6.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [eventum-bridge](./eventum-bridge/) | $1.6M | 3.8% | $1.6M | active | 2 | 28 | 2026-06-10 |
@@ -543,7 +543,7 @@
 | [hyperbloom](./hyperbloom/) | $92.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hyperdrive-hl](./hyperdrive-hl/) | $2.8M | 0.0% | ? | unknown | 8 | 0 | 2026-06-10 |
 | [hyperion](./hyperion/) | $21.1M | 0.0% | ? | unknown | 5 | 0 | 2026-06-10 |
-| [hypersurface](./hypersurface/) | $161.0M | 0.0% | $161.0M | active | 0 | 242 | 2026-06-10 |
+| [hypersurface](./hypersurface/) | $161.0M | 0.0% | $161.0M | active | 0 | 281 | 2026-06-13 |
 | [hyperswap](./hyperswap/) | $3.7M | 0.0% | $3.7M | active | 3 | 30 | 2026-06-12 |
 | [hypertrade](./hypertrade/) | $94.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 0 | 11 | 2026-06-11 |
@@ -746,7 +746,7 @@
 | [minu](./minu/) | $0.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mirakle-defi](./mirakle-defi/) | $0.1 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mito-finance](./mito-finance/) | $435.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [mitosis](./mitosis/) | $329.0M | 0.0% | $329.0M | active | 2 | 66 | 2026-06-11 |
+| [mitosis](./mitosis/) | $330.5M | 1.6% | $330.5M | active | 3 | 482 | 2026-06-13 |
 | [mm-finance](./mm-finance/) | $1.8M | 4.5% | $1.8M | declining | 3 | 192 | 2026-06-11 |
 | [moar-market](./moar-market/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mobius-exchange](./mobius-exchange/) | $9.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -935,7 +935,7 @@
 | [predictcoin](./predictcoin/) | $117.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [prime-staking](./prime-staking/) | $4.8M | 0.0% | ? | active | 2 | 10 | 2026-06-11 |
 | [prime-vaults](./prime-vaults/) | $11.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | declining | 2 | 117 | 2026-06-11 |
+| [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | declining | 2 | 118 | 2026-06-13 |
 | [print3r](./print3r/) | $9.8 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [prism-protocol](./prism-protocol/) | $2.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [privacy-cash](./privacy-cash/) | $48.1K | 0.0% | $48.1K | active | 10 | 6 | 2026-06-11 |

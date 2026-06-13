@@ -1,0 +1,18 @@
+{
+  "address": "0x04b833d386e56ca0b899c1948e091bf0aff1a1dc",
+  "chain_id": 56,
+  "contract_name": "HypERC4626",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "paris",
+  "license": "Apache-2.0, MIT, MIT OR Apache-2.0, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 44,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T18:00:25.233Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x86a72256932d32afbcd841fce2e9e5534c6699d3",
+  "chain_id": 1,
+  "contract_name": "STETHShim",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BUSL-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T18:00:30.091Z"
+}

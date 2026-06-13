@@ -1,0 +1,18 @@
+{
+  "address": "0x07d978ecc862018d1f86bb56e33cedb0f43e9321",
+  "chain_id": 56,
+  "contract_name": "TestRecipient",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "paris",
+  "license": "MIT, MIT OR Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T18:00:25.988Z"
+}

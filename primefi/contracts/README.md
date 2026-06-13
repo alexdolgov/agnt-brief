@@ -1,6 +1,6 @@
 # primefi — Contract Index
 
-117 unique implementations across 2 chains · 187 deployments · 0 audited · 60 unaudited · 57 unverified
+118 unique implementations across 2 chains · 189 deployments · 0 audited · 60 unaudited · 58 unverified
 
 ## adapter (2)
 
@@ -51,7 +51,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Multicall3](./base-8453/0xc7c567e10656eb2f4b1024757263a587ac1942ad/) | base | [`0xc7c567...1942ad`](./base-8453/0xc7c567e10656eb2f4b1024757263a587ac1942ad/) | ⚠️ Unaudited | Verified |
+| [Multicall3 (2 deployments)](./hyperliquid-999/0x5eb7ed8e58e7ed4509612f3e9ccb5433ee822dc9/) | hyperliquid | 2 deployments: hyperliquid [`0x5eb7ed...822dc9`](./hyperliquid-999/0x5eb7ed8e58e7ed4509612f3e9ccb5433ee822dc9/); base `0xc7c567...1942ad` | ⚠️ Unaudited | Verified |
 
 ## proxy (3)
 
@@ -73,7 +73,7 @@
 |---|---|---|---|---|
 | [AToken (3 deployments)](./hyperliquid-999/0x1de97549d6ce6ab9e44a2f5468ae003a00826a82/) | hyperliquid | 3 deployments: hyperliquid [`0x1de975...826a82`](./hyperliquid-999/0x1de97549d6ce6ab9e44a2f5468ae003a00826a82/); hyperliquid `0x6e2c18...c7bfd0`; hyperliquid `0xa33479...06cc1d` | ⚠️ Unaudited | Verified |
 | [ATokensAndRatesHelper (2 deployments)](./hyperliquid-999/0x8c6357575bbe7157612ba763dd5cbdbdfabf83e8/) | hyperliquid | 2 deployments: hyperliquid [`0x8c6357...bf83e8`](./hyperliquid-999/0x8c6357575bbe7157612ba763dd5cbdbdfabf83e8/); base `0xeb3ba9...e9e8e5` | ⚠️ Unaudited | Verified |
-| [FiatTokenV2_1](./base-8453/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | base | [`0xcbb7c0...ed33bf`](./base-8453/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | ⚠️ Unaudited | Verified |
+| FiatTokenV2_1 | base | `0xcbb7c0...ed33bf` | ⚠️ Unaudited | Verified |
 | [FiatTokenV2_2](./base-8453/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/) | base | [`0x833589...a02913`](./base-8453/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/) | ⚠️ Unaudited | Verified |
 | [StableAndVariableTokensHelper (3 deployments)](./hyperliquid-999/0x7b4ce028a8b58d3fde250cd0e125b7e33b6a8d98/) | hyperliquid | 3 deployments: hyperliquid [`0x7b4ce0...6a8d98`](./hyperliquid-999/0x7b4ce028a8b58d3fde250cd0e125b7e33b6a8d98/); hyperliquid `0xab008a...d46db6`; base `0xfebc15...31747d` | ⚠️ Unaudited | Verified |
 | [StableDebtToken (2 deployments)](./hyperliquid-999/0x5dff4ba7a9858a03e7958aba906fdf8d702013cd/) | hyperliquid | 2 deployments: hyperliquid [`0x5dff4b...2013cd`](./hyperliquid-999/0x5dff4ba7a9858a03e7958aba906fdf8d702013cd/); hyperliquid `0x668115...4da856` | ⚠️ Unaudited | Verified |
@@ -81,7 +81,7 @@
 | [WETH9](./base-8453/0x4200000000000000000000000000000000000006/) | base | [`0x420000...000006`](./base-8453/0x4200000000000000000000000000000000000006/) | ⚠️ Unaudited | Verified |
 | [WETHGateway (2 deployments)](./hyperliquid-999/0x88ae2596dac8e7e9e235b465ee8215cc3192fcae/) | hyperliquid | 2 deployments: hyperliquid [`0x88ae25...92fcae`](./hyperliquid-999/0x88ae2596dac8e7e9e235b465ee8215cc3192fcae/); hyperliquid `0xac57f0...74b2ca` | ⚠️ Unaudited | Verified |
 
-## unknown (78)
+## unknown (79)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -134,6 +134,7 @@
 | UnnamedContract | base | `0x0412cd...901787` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x065fd3...a02847` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x08bacc...ae75d3` | ❓ Unverified | Unverified |
+| UnnamedContract | base | `0x0b4105...9ff4c4` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x0eb744...50ad83` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x13379b...0d75e1` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x1502fa...275d3d` | ❓ Unverified | Unverified |

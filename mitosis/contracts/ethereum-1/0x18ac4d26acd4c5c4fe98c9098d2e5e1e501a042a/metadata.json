@@ -1,0 +1,18 @@
+{
+  "address": "0x18ac4d26acd4c5c4fe98c9098d2e5e1e501a042a",
+  "chain_id": 1,
+  "contract_name": "RestakeManager",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 34,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T18:00:26.853Z"
+}

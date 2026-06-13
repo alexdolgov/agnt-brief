@@ -1,0 +1,18 @@
+{
+  "address": "0x2ddaa152b3cf455693c944f9f47925408ff6f8ff",
+  "chain_id": 1,
+  "contract_name": "InstantWithdrawer",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, CC0-1.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T18:00:28.257Z"
+}

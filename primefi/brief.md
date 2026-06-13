@@ -7,11 +7,11 @@
 - Project: PrimeFi (`primefi`)
 - Website: [https://primefi.xyz/](https://primefi.xyz/)
 - Lifecycle: declining (Tier 0, 93% below peak)
-- Generated: 2026-06-11T02:02:44.332Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-13T17:32:08.827Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ee40
 - Chains: base, hyperliquid
-- Contract surface: 117 unique implementations (187 raw deployments)
-- DeFi Llama TVL: $233,172.38
+- Contract surface: 118 unique implementations (189 raw deployments)
+- DeFi Llama TVL: $243,013.37
 - On-chain TVL (included contracts): $4,115,964.04
 - TVL by chain: Base $4,115,964.04
 
@@ -28,9 +28,9 @@ The Core Protocol family provides the lending infrastructure, with pTokens and v
 - Verified implementations audited: 0/60 (0.0%)
 - Verified + Unaudited implementations: 56
 - Verified by bytecode match: 4
-- Unverified implementations: 57
-- Unique implementations: 117
-- Raw deployments: 187
+- Unverified implementations: 58
+- Unique implementations: 118
+- Raw deployments: 189
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $4,115,964.04
@@ -79,7 +79,7 @@ The Core Protocol family provides the lending infrastructure, with pTokens and v
 | LockerList | unknown | hyperliquid | 2 deployments: hyperliquid [`0x6584bf...2f42ad`](./contracts/hyperliquid-999/0x6584bfe4d784bb8f1fd81d569a2202ce6f2f42ad/); base `0x7d08e4...7895a8` | ⚠️ Unaudited |
 | Looper | unknown | hyperliquid | 3 deployments: hyperliquid [`0x1853d7...5f89e8`](./contracts/hyperliquid-999/0x1853d7da8986a3c20f9ab51759e9a3967c5f89e8/); hyperliquid `0xc95766...9f0da1`; base `0x515fbd...a769f4` | ⚠️ Unaudited |
 | MiddleFeeDistribution | unknown | hyperliquid | 3 deployments: hyperliquid [`0x1b2164...acb8f6`](./contracts/hyperliquid-999/0x1b2164d254c7fa14901d54fb1043fb228eacb8f6/); hyperliquid `0xfb5c7d...80ed8a`; base `0x7f2ebf...6eb8df` | ⚠️ Unaudited |
-| Multicall3 | periphery | base | [`0xc7c567...1942ad`](./contracts/base-8453/0xc7c567e10656eb2f4b1024757263a587ac1942ad/) | ⚠️ Unaudited |
+| Multicall3 | periphery | hyperliquid | 2 deployments: hyperliquid [`0x5eb7ed...822dc9`](./contracts/hyperliquid-999/0x5eb7ed8e58e7ed4509612f3e9ccb5433ee822dc9/); base `0xc7c567...1942ad` | ⚠️ Unaudited |
 | MultiFeeDistribution | unknown | hyperliquid | 3 deployments: hyperliquid [`0x33cd73...b813ef`](./contracts/hyperliquid-999/0x33cd734739c6ded500fd080d476d93135cb813ef/); hyperliquid `0x6a8255...10907c`; base `0x5b6d95...debd80` | ⚠️ Unaudited |
 | PRFI | unknown | hyperliquid | 2 deployments: hyperliquid [`0x7bbcf1...de3255`](./contracts/hyperliquid-999/0x7bbcf1b600565ae023a1806ef637af4739de3255/); base [`0x7bbcf1...de3255`](./contracts/base-8453/0x7bbcf1b600565ae023a1806ef637af4739de3255/) | ⚠️ Unaudited |
 | PRFIVesting | operational_periphery | base | [`0x16db15...50e38e`](./contracts/base-8453/0x16db157393eb152a0c708d053c2b91e5a350e38e/) | ⚠️ Unaudited |
@@ -127,7 +127,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 | IncentivesControllerDiamond | unknown | base | 2 deployments: hyperliquid `0x95d7a5...97c241`; base [`0x0c7558...93c8f2`](./contracts/base-8453/0x0c7558f634b3465ff7637500d5a710731393c8f2/) | ⚠️ Unaudited (bytecode match) |
 | StableAndVariableTokensHelper | token | hyperliquid | 3 deployments: hyperliquid [`0x7b4ce0...6a8d98`](./contracts/hyperliquid-999/0x7b4ce028a8b58d3fde250cd0e125b7e33b6a8d98/); hyperliquid `0xab008a...d46db6`; base `0xfebc15...31747d` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (57)
+### ❓ Unverified (58)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -163,6 +163,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | base | `0x0412cd...901787` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x065fd3...a02847` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x08bacc...ae75d3` | ❓ Unverified |
+| UnnamedContract | unknown | base | `0x0b4105...9ff4c4` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x0eb744...50ad83` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x13379b...0d75e1` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x1502fa...275d3d` | ❓ Unverified |
@@ -236,16 +237,15 @@ Verified + unaudited native implementations ranked by TVL:
 | hyperliquid | [`0x3a0a36...50c7dd`](./contracts/hyperliquid-999/0x3a0a3639ed67a038a5f5071b6351f7e2b850c7dd/) | ValidationLogic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | hyperliquid | [`0x065fd3...a02847`](./contracts/hyperliquid-999/0x065fd3ba477c85503bfac48be7d1a2fcada02847/) | VariableDebtToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x33cd73...b813ef`](./contracts/base-8453/0x33cd734739c6ded500fd080d476d93135cb813ef/) | WalletBalanceProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x88ae25...92fcae`](./contracts/hyperliquid-999/0x88ae2596dac8e7e9e235b465ee8215cc3192fcae/) | WETHGateway | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 61 |
+| native | 46 |
 | upstream | 7 |
-| standard_library | 19 |
-| needs_review | 30 |
+| standard_library | 18 |
+| needs_review | 47 |
 
 ## Scope Matching Notes
 

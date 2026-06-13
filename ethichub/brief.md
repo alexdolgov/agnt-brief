@@ -5,13 +5,13 @@
 - Project: EthicHub (`ethichub`)
 - Website: [https://ethichub.com](https://ethichub.com)
 - Lifecycle: active (Tier 0, 78.9% below peak)
-- Generated: 2026-06-10T23:09:50.674Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-13T17:34:00.345Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ee40
 - Chains: celo, ethereum, gnosis
-- Contract surface: 58 unique implementations (213 raw deployments)
-- DeFi Llama TVL: $4,025,199.68
-- On-chain TVL (included contracts): $22,676,394.36
-- TVL by chain: Ethereum $17,233,068.49 | Celo $5,419,528.19 | Gnosis $23,797.67
+- Contract surface: 60 unique implementations (220 raw deployments)
+- DeFi Llama TVL: $3,580,529.85
+- On-chain TVL (included contracts): $22,726,990.14
+- TVL by chain: Ethereum $17,233,068.49 | Celo $5,470,123.98 | Gnosis $23,797.67
 
 ## Project Description
 
@@ -23,15 +23,15 @@ The ETHEREUM SMART CONTRACTS family provides the foundational EthixToken and sta
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/47 (0.0%)
-- Verified + Unaudited implementations: 46
+- Verified implementations audited: 0/48 (0.0%)
+- Verified + Unaudited implementations: 47
 - Verified by bytecode match: 1
-- Unverified implementations: 11
-- Unique implementations: 58
-- Raw deployments: 213
+- Unverified implementations: 12
+- Unique implementations: 60
+- Raw deployments: 220
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $22,676,394.36
+- ASD (verified + unaudited TVL): $22,726,990.14
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,7 +46,7 @@ The ETHEREUM SMART CONTRACTS family provides the foundational EthixToken and sta
 
 - None
 
-### ⚠️ Verified + Unaudited (46)
+### ⚠️ Verified + Unaudited (47)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -54,6 +54,7 @@ The ETHEREUM SMART CONTRACTS family provides the foundational EthixToken and sta
 | ERC20Reserve | token | ethereum | 5 deployments: ethereum [`0x1ecc7e...04a5c5`](./contracts/ethereum-1/0x1ecc7e3b26dcaee4d63536fe50ea37787a04a5c5/); ethereum `0xb27132...063073`; ethereum `0xb97ef2...6e3518`; celo `0xa14b1d...3e1567`; celo `0xa9a824...b28530` | ⚠️ Unaudited |
 | TokenImplementation | token | celo | [`0x9995cc...c931ed`](./contracts/celo-42220/0x9995cc8f20db5896943afc8ee0ba463259c931ed/) | ⚠️ Unaudited |
 | MultiTokenReserve | token | celo | 4 deployments: celo [`0x49bc61...1fe9de`](./contracts/celo-42220/0x49bc61a91f5a3a2d74d04583a23758f15e1fe9de/); celo `0x70c85e...92651f`; celo `0x7d7c28...6cbb8d`; celo `0x851029...3c5b62` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | celo | [`0x342072...955a5d`](./contracts/celo-42220/0x3420720e561f3082f1e514a4545f0f2e0c955a5d/) | ⚠️ Unaudited |
 | PermittableToken | token | ethereum | 4 deployments: ethereum [`0x7c24d0...b254b3`](./contracts/ethereum-1/0x7c24d0061b484b267f286aa2dce891220db254b3/); ethereum `0xe1ca72...aba03d`; ethereum `0xf886bf...245e00`; gnosis `0xec3f3e...3fbb19` | ⚠️ Unaudited |
 | BPool | core_logic | ethereum | [`0xb93aa4...db19f1`](./contracts/ethereum-1/0xb93aa4cdeef1293303f628e16dd06ddd42db19f1/) | ⚠️ Unaudited |
 | ForeignAMBErc20ToNative | token | ethereum | 2 deployments: ethereum [`0x218056...d9ff9f`](./contracts/ethereum-1/0x2180560e79d68f8e3adbd38f3b81bb9b48d9ff9f/); ethereum `0xf6edfa...fd54ed` | ⚠️ Unaudited |
@@ -65,7 +66,7 @@ The ETHEREUM SMART CONTRACTS family provides the foundational EthixToken and sta
 | CreditLine | unknown | celo | 9 deployments: celo [`0x059c8a...35b488`](./contracts/celo-42220/0x059c8a9bd3ea305fb8c9215c1ee47dfdf835b488/); celo `0x08e066...2ea21b`; celo `0x1d4e90...92fc7d`; celo `0x1f6e60...5e03b9`; celo `0x223051...8d4be9`; celo `0x36523a...d5dd5e`; celo `0x95deb3...8e8285`; celo `0xdb5d3a...03acdd`; celo `0xf417e8...7bd076` | ⚠️ Unaudited |
 | CrowdEquityVestingReserve | operational_periphery | celo | [`0x2bf3d1...7ef4ef`](./contracts/celo-42220/0x2bf3d179201be13fff7d10b95e7cfb44357ef4ef/) | ⚠️ Unaudited |
 | ERC1155BridgeToken | operational_periphery | ethereum | [`0xf714c3...a17908`](./contracts/ethereum-1/0xf714c3aa632ece07eeba241803b26f806ea17908/) | ⚠️ Unaudited |
-| ERC20NFTBond | token | ethereum | 32 deployments: ethereum [`0x011042...e0f9d6`](./contracts/ethereum-1/0x0110425d2f26595d21969085fe4f784064e0f9d6/); ethereum `0x194cb1...8d7338`; ethereum `0x213206...c554d9`; ethereum `0x262569...aa9030`; ethereum `0x36d45e...a7313c`; ethereum `0x573325...7122e2`; ethereum `0x696d74...5679de`; ethereum `0x733e9c...97e49d`; ethereum `0x8eb87a...69cfa6`; ethereum `0x92be91...7730d2`; ethereum `0xa258ee...51a589`; ethereum `0xa97f2f...80eed9`; ethereum `0xd41e96...9d357e`; ethereum `0xd5277d...61d8a5`; ethereum `0xe84686...cf22b1`; ethereum `0xf3839c...bd46b6`; celo `0x05a71c...a096d3`; celo `0x0f497a...378ff0`; celo `0x1a3417...7967c4`; celo `0x350d1a...8be0ad`; celo `0x3ca21f...944ae4`; celo `0x4426f8...130e3e`; celo `0x7cf02b...2f2bca`; celo `0x89cea1...9478f5`; celo `0x99a6cd...dc0705`; celo `0xa16281...4b8fd0`; celo `0xb3369f...b26de9`; celo `0xbc449d...d9da27`; celo `0xc918ed...a35c93`; celo `0xd27e31...9b7620`; celo `0xd8c315...b62c9b`; celo `0xe0eb2d...111cbc` | ⚠️ Unaudited |
+| ERC20NFTBond | token | ethereum | 33 deployments: ethereum [`0x011042...e0f9d6`](./contracts/ethereum-1/0x0110425d2f26595d21969085fe4f784064e0f9d6/); ethereum `0x194cb1...8d7338`; ethereum `0x213206...c554d9`; ethereum `0x262569...aa9030`; ethereum `0x36d45e...a7313c`; ethereum `0x573325...7122e2`; ethereum `0x696d74...5679de`; ethereum `0x733e9c...97e49d`; ethereum `0x8eb87a...69cfa6`; ethereum `0x92be91...7730d2`; ethereum `0xa258ee...51a589`; ethereum `0xa97f2f...80eed9`; ethereum `0xd41e96...9d357e`; ethereum `0xd5277d...61d8a5`; ethereum `0xe84686...cf22b1`; ethereum `0xf3839c...bd46b6`; celo `0x05a71c...a096d3`; celo `0x0f497a...378ff0`; celo `0x1a3417...7967c4`; celo `0x350d1a...8be0ad`; celo `0x3ca21f...944ae4`; celo `0x4426f8...130e3e`; celo `0x485851...7725f0`; celo `0x7cf02b...2f2bca`; celo `0x89cea1...9478f5`; celo `0x99a6cd...dc0705`; celo `0xa16281...4b8fd0`; celo `0xb3369f...b26de9`; celo `0xbc449d...d9da27`; celo `0xc918ed...a35c93`; celo `0xd27e31...9b7620`; celo `0xd8c315...b62c9b`; celo `0xe0eb2d...111cbc` | ⚠️ Unaudited |
 | ERC721BridgeToken | operational_periphery | ethereum | 2 deployments: ethereum [`0x7259b1...c24dfb`](./contracts/ethereum-1/0x7259b1612b464c65205b7dcdc5ba9fd7aec24dfb/); ethereum `0x8b9e7c...4dd21d` | ⚠️ Unaudited |
 | EternalStorageProxy | token | ethereum | [`0x01db9f...ddb5cf`](./contracts/ethereum-1/0x01db9f9a32d4d11d82882bf705e01c39e0ddb5cf/) | ⚠️ Unaudited |
 | ForeignAMB | unknown | ethereum | 12 deployments: ethereum [`0x07955b...a594e2`](./contracts/ethereum-1/0x07955be2967b655cf52751fce7ccc8c61ea594e2/); ethereum `0x2140ec...2c8671`; ethereum `0x2946f6...37461e`; ethereum `0x4c36d2...9ce64e`; ethereum `0x54c6df...c98ed7`; ethereum `0x5a91b3...bd2b7e`; ethereum `0x5f1e78...a924be`; ethereum `0x82b67a...7ac6ab`; ethereum `0x872796...a5c943`; ethereum `0xa5ac7d...7aa2a1`; ethereum `0xceb06e...6f65a5`; ethereum `0xe804fe...2f4b16` | ⚠️ Unaudited |
@@ -82,7 +83,7 @@ The ETHEREUM SMART CONTRACTS family provides the foundational EthixToken and sta
 | InvestorsVestingReserve | operational_periphery | ethereum | 6 deployments: ethereum [`0x08214e...bc86fa`](./contracts/ethereum-1/0x08214eb1d6c53cbf35c72fb27cd2ee3252bc86fa/); ethereum `0x34d3c9...216705`; ethereum `0xde629e...870cf5`; celo `0x2c67c2...098858`; celo `0x635775...4beac7`; celo `0xa9383c...de8f20` | ⚠️ Unaudited |
 | MembershipBond | unknown | celo | 7 deployments: celo [`0x302e47...4463bb`](./contracts/celo-42220/0x302e471ae434c50c1fe931a4a0fe0d84074463bb/); celo `0x4bf4a8...452260`; celo `0x6e0262...53d029`; celo `0x890341...3f3d1f`; celo `0x9dd572...70bbd3`; celo `0xceeb15...a78059`; celo `0xda70b3...228614` | ⚠️ Unaudited |
 | MerkleTreeVestingReserve | operational_periphery | ethereum | [`0x2f36b4...9b0afd`](./contracts/ethereum-1/0x2f36b4843129647d840911eaea49db16649b0afd/) | ⚠️ Unaudited |
-| OriginatorStaking | unknown | celo | 19 deployments: ethereum `0x1e70f4...082c8b`; ethereum `0x2f19bd...2de481`; ethereum `0x3b61cd...04d0e3`; ethereum `0x3ef3ee...852440`; ethereum `0x7435c0...1dd955`; ethereum `0xa1cf21...444444`; ethereum `0xa7e499...fa44b8`; ethereum `0xacb56e...135c70`; ethereum `0xe03244...d9784e`; celo [`0x0306f7...9043a8`](./contracts/celo-42220/0x0306f70d3e69e30f49d28cb0ed33fd9d439043a8/); celo `0x18843e...ab9693`; celo `0x2ffa2c...06389a`; celo `0x519599...acf899`; celo `0x6ed247...5000f7`; celo `0x7d413d...3d2fa1`; celo `0x8181d3...582c7c`; celo `0x903134...d032ea`; celo `0xcc0d68...a9eef7`; celo `0xe33c7d...74073a` | ⚠️ Unaudited |
+| OriginatorStaking | unknown | celo | 23 deployments: ethereum `0x1e70f4...082c8b`; ethereum `0x2f19bd...2de481`; ethereum `0x3b61cd...04d0e3`; ethereum `0x3ef3ee...852440`; ethereum `0x7435c0...1dd955`; ethereum `0xa1cf21...444444`; ethereum `0xa7e499...fa44b8`; ethereum `0xacb56e...135c70`; ethereum `0xe03244...d9784e`; celo [`0x0306f7...9043a8`](./contracts/celo-42220/0x0306f70d3e69e30f49d28cb0ed33fd9d439043a8/); celo `0x11e23e...6e80e5`; celo `0x18843e...ab9693`; celo `0x2ffa2c...06389a`; celo `0x519599...acf899`; celo `0x6ed247...5000f7`; celo `0x7d413d...3d2fa1`; celo `0x8181d3...582c7c`; celo `0x8d6bff...e9502a`; celo `0x903134...d032ea`; celo `0xbf0978...ab1c60`; celo `0xcc0d68...a9eef7`; celo `0xe33c7d...74073a`; celo `0xe7c12a...63b130` | ⚠️ Unaudited |
 | OriginatorStakingFactory | registry | ethereum | 4 deployments: ethereum [`0xaf9ad3...172314`](./contracts/ethereum-1/0xaf9ad360163e614ab98ab258a35514f41d172314/); ethereum `0xf18248...659d17`; celo `0xe03244...d9784e`; celo `0xe1d776...5b153f` | ⚠️ Unaudited |
 | OriginatorStakingWithLP | unknown | celo | 2 deployments: celo [`0x51246a...ef1f55`](./contracts/celo-42220/0x51246ae0ba74696a66f0dc9e5f214d1c48ef1f55/); celo `0xdd2ca0...fbf8fa` | ⚠️ Unaudited |
 | OriginatorStakingWithLPFactory | registry | celo | 2 deployments: celo [`0x3a3079...d6dca3`](./contracts/celo-42220/0x3a3079f84c474487be83a615b248ba9353d6dca3/); celo `0xa9f740...494883` | ⚠️ Unaudited |
@@ -111,12 +112,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 |---|---|---|---|---|
 | ProxyAdmin | governance | ethereum | 5 deployments: ethereum [`0x0e0f44...e66029`](./contracts/ethereum-1/0x0e0f447be0058ba019a59dbffc24563d8fe66029/); ethereum `0x5787b9...3627b6`; celo `0x21cc49...0ea81c`; celo `0x75a6a0...5aab60`; celo `0xc684b1...79d605` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (11)
+### ❓ Unverified (12)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | `0x69183d...f00293` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0x0e1c2d...23f821` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0x2dfbe4...e1cc9f` | ❓ Unverified |
 | UnnamedContract | unknown | celo | `0x78ccd8...5e2fae` | ❓ Unverified |
@@ -164,10 +166,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 21 |
-| upstream | 9 |
+| native | 27 |
+| upstream | 13 |
 | standard_library | 8 |
-| needs_review | 20 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 

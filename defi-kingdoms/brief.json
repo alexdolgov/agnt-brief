@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "defi-kingdoms",
-  "generated_at": "2026-06-10T22:46:47.303Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
+  "generated_at": "2026-06-13T00:37:51.676Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-e35d",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "defi-kingdoms",
@@ -45,8 +45,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 7705351.692829999,
-    "tvl_usd": 7705351.692829999,
+    "dl_tvl_usd": 7689270.1345999995,
+    "tvl_usd": 7689270.1345999995,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

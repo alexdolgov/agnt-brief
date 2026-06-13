@@ -1,19 +1,19 @@
 # Agentic Audit Brief: Badger DAO
 
-⚠️ Lifecycle status: SUNSETTING - TVL changed 12.1% over 90 days
+⚠️ Lifecycle status: SUNSETTING - TVL dropped 9.7% over 90 days
 
 ## Project Overview
 
 - Project: Badger DAO (`badger-dao`)
 - Website: [https://badger.com/](https://badger.com/)
 - Lifecycle: sunsetting (Tier 1, sunsetting)
-- Generated: 2026-05-25T13:54:02.847Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-13T00:40:47.237Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-e35d
 - Chains: arbitrum, ethereum, fantom, polygon
-- Contract surface: 27 unique implementations (35 raw deployments)
-- DeFi Llama TVL: $9,794,779.50
-- On-chain TVL (included contracts): $1,507,379.95
-- TVL by chain: Ethereum $1,507,379.95
+- Contract surface: 40 unique implementations (69 raw deployments)
+- DeFi Llama TVL: $7,766,530.18
+- On-chain TVL (included contracts): $396.94
+- TVL by chain: Ethereum $396.94
 
 ## Project Description
 
@@ -25,58 +25,76 @@ All contracts belong to a single product family, sharing infrastructure such as 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/24 (0.0%)
-- Verified + Unaudited implementations: 24
+- Verified implementations audited: 8/37 (21.6%)
+- Verified + Unaudited implementations: 29
 - Verified by bytecode match: 0
 - Unverified implementations: 3
-- Unique implementations: 27
-- Raw deployments: 35
-- Audits discovered: 6
-- Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $1,507,379.95
-- Latest audit: 2022-01 (stale)
-- Staleness: 0 fresh, 0 aging, 6 stale, 0 unknown
-- Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [sunsetting]. ASD of $1,507,379.95 represents exposure in a protocol with sunsetting activity.
+- Unique implementations: 40
+- Raw deployments: 69
+- Audits discovered: 8
+- Scoreable audits (matched contracts): 5
+- ASD (verified + unaudited TVL): $396.94
+- Latest audit: 2022-06 (stale)
+- Staleness: 0 fresh, 0 aging, 8 stale, 0 unknown
+- Tier 1 coverage: 8.1% (Code4rena)
+- Note: This protocol is classified as [sunsetting]. ASD of $396.94 represents exposure in a protocol with sunsetting activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| Quantstamp | Tier 2 | 5 | 13.5% | 2022-01 |
+| Code4rena | Tier 1 | 3 | 8.1% | 2022-06 |
+| unknown | Tier 2 | 1 | 2.7% | 2021-02 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
-
-- None
-
-### ⚠️ Verified + Unaudited (24)
+### ✅ Verified + Audited (8)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| ArcxTokenV2 | token | ethereum | [`0x1321f1...9bb288`](./contracts/ethereum-1/0x1321f1f1aa541a56c31682c57b80ecfccd9bb288/) | ⚠️ Unaudited |
-| bVault | core_logic | ethereum | 6 deployments: ethereum [`0x2c2327...568ea6`](./contracts/ethereum-1/0x2c23276107b45e64c8c59482f4a24f4f2e568ea6/); ethereum `0x378388...a35153`; ethereum `0x3fb6b0...15a2cc`; ethereum `0x750d30...7996d0`; ethereum `0x801690...85dc0e`; ethereum `0x8d9a39...ec6108` | ⚠️ Unaudited |
-| BACDAIPool | core_logic | ethereum | [`0xebd126...02bde8`](./contracts/ethereum-1/0xebd12620e29dc6c452db7b96e1f190f3ee02bde8/) | ⚠️ Unaudited |
-| BACUSDCPool | core_logic | ethereum | [`0x518821...429fd4`](./contracts/ethereum-1/0x51882184b7f9beed6db9c617846140da1d429fd4/) | ⚠️ Unaudited |
-| BACUSDTPool | core_logic | ethereum | [`0x2833bd...877e44`](./contracts/ethereum-1/0x2833bdc5b31269d356bdf92d0fd8f3674e877e44/) | ⚠️ Unaudited |
-| StakingAccrualERC20V5 | token | ethereum | [`0x9bffad...fd7d9d`](./contracts/ethereum-1/0x9bffad7a6d5f52dbc51cae33e419793c72fd7d9d/) | ⚠️ Unaudited |
-| BACSUSDPool | core_logic | ethereum | [`0xdc42a2...93305c`](./contracts/ethereum-1/0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c/) | ⚠️ Unaudited |
-| ERC20Peg | token | ethereum | [`0x76bac8...4c6e32`](./contracts/ethereum-1/0x76bac85e1e82cd677faa2b3f00c4a2626c4c6e32/) | ⚠️ Unaudited |
+| BadgerSettPeak | unknown | ethereum | [`0x41671b...6be6e3`](./contracts/ethereum-1/0x41671ba1abcba387b9b2b752c205e22e916be6e3/) | ✅ Audited |
+| BadgerYearnWbtcPeak | unknown | ethereum | [`0x825218...c50627`](./contracts/ethereum-1/0x825218bed8be0b30be39475755acee0250c50627/) | ✅ Audited |
+| Controller | unknown | ethereum | 6 deployments: ethereum [`0x303926...ac3ec8`](./contracts/ethereum-1/0x30392694c25fbbe5c026cf846e9b6525a2ac3ec8/); ethereum `0x3f6134...43ba0b`; ethereum `0x63cf44...4d9682`; ethereum `0x9b4efa...0f8609`; ethereum `0xd35ff2...670250`; arbitrum `0x381144...b617cd` | ✅ Audited |
+| Core | unknown | ethereum | [`0x2a8fac...3418a8`](./contracts/ethereum-1/0x2a8facc9d49fbc3ecff569847833c380a13418a8/) | ✅ Audited |
+| GnosisSafe | governance | ethereum | 4 deployments: ethereum [`0x042b32...4b9276`](./contracts/ethereum-1/0x042b32ac6b453485e357938bdc38e0340d4b9276/); ethereum `0x86cbd0...8c8275`; ethereum `0xb65cef...999e77`; ethereum `0xd0a7a8...158e9e` | ✅ Audited |
+| MyStrategy | unknown | ethereum | 2 deployments: ethereum [`0x3c0989...0e63b5`](./contracts/ethereum-1/0x3c0989ef27e3e3fab87a2d7c38b35880c90e63b5/); ethereum `0x3ff634...66cea9` | ✅ Audited |
+| WrappedIbbtcEth | unknown | ethereum | [`0x8751d4...f04c15`](./contracts/ethereum-1/0x8751d4196027d4e6da63716fa7786b5174f04c15/) | ✅ Audited |
+| Zap | adapter | ethereum | [`0xe8e400...c07734`](./contracts/ethereum-1/0xe8e40093017a3a55b5c2bc3e9ca6a4d208c07734/) | ✅ Audited |
+
+### ⚠️ Verified + Unaudited (29)
+
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| TheVault | core_logic | ethereum | 2 deployments: ethereum [`0x37d9d2...0fcbd8`](./contracts/ethereum-1/0x37d9d2c6035b744849c15f1bfee8f268a20fcbd8/); ethereum `0xba485b...107407` | ⚠️ Unaudited |
+| Agent | unknown | ethereum | [`0x8de82c...d0ef9b`](./contracts/ethereum-1/0x8de82c4c968663a0284b01069dde6ef231d0ef9b/) | ⚠️ Unaudited |
 | ApeRewards | unknown | arbitrum | [`0xb970e2...e46655`](./contracts/arbitrum-42161/0xb970e280f9ddaa3349ab9f3ecf778970cde46655/) | ⚠️ Unaudited |
 | ARBIS | unknown | arbitrum | [`0x9f20de...b03461`](./contracts/arbitrum-42161/0x9f20de1fc9b161b34089cbeae888168b44b03461/) | ⚠️ Unaudited |
 | AutoFarmV2_CrossChain | unknown | polygon | [`0x89d065...eb0b76`](./contracts/polygon-137/0x89d065572136814230a55ddeeddec9df34eb0b76/) | ⚠️ Unaudited |
-| BACyCRVPool | core_logic | ethereum | [`0xc462d8...14c3bf`](./contracts/ethereum-1/0xc462d8ee54953e7d7bf276612b75387ea114c3bf/) | ⚠️ Unaudited |
-| BlackPoolToken | core_logic | ethereum | [`0x0ec9f7...7e37da`](./contracts/ethereum-1/0x0ec9f76202a7061eb9b3a7d6b59d36215a7e37da/) | ⚠️ Unaudited |
+| BadgerTreeV2 | unknown | polygon | 3 deployments: ethereum `0x660802...6d787a`; polygon [`0x2c798f...51376b`](./contracts/polygon-137/0x2c798fafd37c7dcdcac2498e19432898bc51376b/); arbitrum `0x635eb2...e115a6` | ⚠️ Unaudited |
+| BorrowerOperations | unknown | ethereum | [`0xd366e0...022ad0`](./contracts/ethereum-1/0xd366e016ae0677cdce93472e603b75051e022ad0/) | ⚠️ Unaudited |
 | CarbonRewards | unknown | arbitrum | [`0x2c5058...d49f45`](./contracts/arbitrum-42161/0x2c5058325373d02dfd6c08e48d91fcaf8fd49f45/) | ⚠️ Unaudited |
+| CdpManager | unknown | ethereum | [`0xc4cbae...711774`](./contracts/ethereum-1/0xc4cbae499bb4ca41e78f52f07f5d98c375711774/) | ⚠️ Unaudited |
+| DiggSett | unknown | ethereum | [`0x7e7e11...c38e1a`](./contracts/ethereum-1/0x7e7e112a68d8d2e221e11047a72ffc1065c38e1a/) | ⚠️ Unaudited |
+| GlobalAccessControl | governance | ethereum | [`0x9c58b0...bae35a`](./contracts/ethereum-1/0x9c58b0d88578cd75154bdb7c8b013f7157bae35a/) | ⚠️ Unaudited |
+| GovernanceTimelock | governance | ethereum | [`0x21cf9b...bc0893`](./contracts/ethereum-1/0x21cf9b77f88adf8f8c98d7e33fe601dc57bc0893/) | ⚠️ Unaudited |
+| IbbtcVaultZap | adapter | ethereum | [`0x87c3ef...efa493`](./contracts/ethereum-1/0x87c3ef099c6143e4687b060285bad201b9efa493/) | ⚠️ Unaudited |
+| KeeperAccessControl | operational_periphery | ethereum | [`0x711a33...ab6cf6`](./contracts/ethereum-1/0x711a339c002386f9db409ca55b6a35a604ab6cf6/) | ⚠️ Unaudited |
+| Kernel | unknown | ethereum | [`0x33d533...d3a639`](./contracts/ethereum-1/0x33d53383314190b0b885d1b6913b5a50e2d3a639/) | ⚠️ Unaudited |
 | L2TBTC | unknown | arbitrum | [`0x6c84a8...d0de40`](./contracts/arbitrum-42161/0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40/) | ⚠️ Unaudited |
 | MarinateAutoCompounder | adapter | arbitrum | [`0x1922c3...1684ab`](./contracts/arbitrum-42161/0x1922c36f3bc762ca300b4a46bb2102f84b1684ab/) | ⚠️ Unaudited |
-| MasterChef | unknown | ethereum | [`0xc2edad...a888cd`](./contracts/ethereum-1/0xc2edad668740f1aa35e4d8f227fb8e17dca888cd/) | ⚠️ Unaudited |
 | NyanRewards | unknown | arbitrum | 3 deployments: arbitrum [`0x32e559...1aa724`](./contracts/arbitrum-42161/0x32e5594f14de658b0d577d6560fa0d9c6f1aa724/); arbitrum `0x62ff5b...d2da2c`; arbitrum `0xf6a377...4a703d` | ⚠️ Unaudited |
 | PONGRewards | unknown | arbitrum | [`0xe34003...098bc2`](./contracts/arbitrum-42161/0xe340031b61a394c7811868ef81d2eacc79098bc2/) | ⚠️ Unaudited |
-| StakedBPT | token | ethereum | [`0x46c509...7b1ee2`](./contracts/ethereum-1/0x46c5098f73fa656e82d7e9afbf3c00b32b7b1ee2/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | ethereum | 3 deployments: ethereum [`0x20dce4...1777bf`](./contracts/ethereum-1/0x20dce41acca85e8222d6861aa6d23b6c941777bf/); ethereum `0x7d0398...88c385`; ethereum `0x9215cb...cf69f9` | ⚠️ Unaudited |
+| SettToRenIbbtcZap | adapter | ethereum | [`0x27fb47...3f3df1`](./contracts/ethereum-1/0x27fb47b9fb32b9cf660c4e0128be0f4e883f3df1/) | ⚠️ Unaudited |
+| SettV1_1h | unknown | ethereum | 3 deployments: ethereum [`0x1862a1...ef24a5`](./contracts/ethereum-1/0x1862a18181346ebd9edaf800804f89190def24a5/); ethereum `0x758a43...f2544d`; ethereum `0x881285...f2a9f6` | ⚠️ Unaudited |
+| SettV1h | unknown | ethereum | 4 deployments: ethereum [`0x19d97d...dffc28`](./contracts/ethereum-1/0x19d97d8fa813ee2f51ad4b4e04ea08baf4dffc28/); ethereum `0x6def55...8c1545`; ethereum `0xb9d076...940334`; ethereum `0xd04c48...d998ec` | ⚠️ Unaudited |
+| SettV4 | unknown | arbitrum | 5 deployments: arbitrum [`0x459189...f7ddeb`](./contracts/arbitrum-42161/0x4591890225394bf66044347653e112621af7ddeb/); arbitrum `0x60129b...623546`; arbitrum `0xba418c...d71843`; arbitrum `0xe9c12f...20389c`; arbitrum `0xfc1320...8ac041` | ⚠️ Unaudited |
+| SettV4h | unknown | ethereum | 5 deployments: ethereum [`0x27e98f...71e3b5`](./contracts/ethereum-1/0x27e98fc7d05f54e544d16f58c194c2d7ba71e3b5/); ethereum `0x2b5455...5819c0`; ethereum `0x53c8e1...a68e40`; ethereum `0xae96ff...8e40af`; ethereum `0xfd05d3...7e6305` | ⚠️ Unaudited |
+| SimpleWrapperGatedUpgradeable | unknown | ethereum | [`0x4b92d1...8cd4d5`](./contracts/ethereum-1/0x4b92d19c11435614cd49af1b589001b7c08cd4d5/) | ⚠️ Unaudited |
+| SortedCdps | unknown | ethereum | [`0x591acb...529be3`](./contracts/ethereum-1/0x591acb5ae192c147948c12651a0a5f24f0529be3/) | ⚠️ Unaudited |
 | stARBIS | unknown | arbitrum | [`0xbf0075...d2db86`](./contracts/arbitrum-42161/0xbf00759d7e329d7a7fa1d4dcdc914c53d1d2db86/) | ⚠️ Unaudited |
-| TokenPool | core_logic | ethereum | [`0xc93528...793d84`](./contracts/ethereum-1/0xc935285b0d88069305431dace0c3c01d7e793d84/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | 2 deployments: ethereum [`0x570242...6507e5`](./contracts/ethereum-1/0x57024267e8272618f9c5037d373043a8646507e5/); ethereum `0x9f624b...980808` | ⚠️ Unaudited |
-| Vyper_contract | unknown | ethereum | [`0xdf5e0e...d806a8`](./contracts/ethereum-1/0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8/) | ⚠️ Unaudited |
+| WarRoomGatedProxy | unknown | ethereum | [`0x6615e6...e96386`](./contracts/ethereum-1/0x6615e67b8b6b6375d38a0a3f937cd8c1a1e96386/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -105,11 +123,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Badger Vaults 1.5 - Quantstamp - Jan 2022.pdf](https://github.com/Badger-Finance/badger-vaults-1.5/blob/main/security/audits/Badger%20Vaults%201.5%20-%20Quantstamp%20-%20Jan%202022.pdf) | Quantstamp | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
-| [DL audit link](https://code4rena.com/reports/2021-10-badgerdao) | Code4rena | Contest | 2021-10 | stale | Direct | n/a | 0 | n/a |
-| [DL audit link](https://code4rena.com/reports/2021-09-bvecvx) | Code4rena | Contest | 2021-09 | stale | Direct | n/a | 0 | n/a |
-| [DL audit link](https://badger.com/images/uploads/quantstamp-badger-ib-btc.pdf) | Quantstamp | Audit | 2021-08 | stale | Direct | n/a | 0 | n/a |
+| [DL audit link](https://code4rena.com/reports/2021-10-badgerdao) | Code4rena | Contest | 2021-10 | stale | Direct | contract_name | 1 | high |
+| [DL audit link](https://code4rena.com/reports/2021-09-bvecvx) | Code4rena | Contest | 2021-09 | stale | Direct | contract_name | 8 | high |
+| [DL audit link](https://badger.com/images/uploads/quantstamp-badger-ib-btc.pdf) | Quantstamp | Audit | 2021-08 | stale | Direct | contract_name | 6 | high |
 | [DL audit link](https://badger.com/images/uploads/defi-yield-badger-finance.pdf) | unknown | Audit | 2021-02 | stale | Direct | n/a | 0 | n/a |
-| [DL audit link](https://badger.com/images/uploads/zokyo-badger-sc-audit.pdf) | unknown | Audit | 2020-12 | stale | Direct | n/a | 0 | n/a |
+| [DL audit link](https://badger.com/images/uploads/zokyo-badger-sc-audit.pdf) | unknown | Audit | 2020-12 | stale | Direct | contract_name | 6 | high |
+| [DL audit link](https://code4rena.com/audits/2022-06-badger-vested-aura-contest) | Code4rena | Contest | 2022-06 | stale | Direct | n/a | 0 | n/a |
+| [View report](https://code4rena.com/reports/2022-06-badger) | Code4rena | Contest | 2022-06 | stale | Direct | contract_name | 2 | high |
 
 ## Coverage Gaps
 
@@ -117,53 +137,46 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x1321f1...9bb288`](./contracts/ethereum-1/0x1321f1f1aa541a56c31682c57b80ecfccd9bb288/) | ArcxTokenV2 | token | $949,182.70 | Verified native implementation with $949,182.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2c2327...568ea6`](./contracts/ethereum-1/0x2c23276107b45e64c8c59482f4a24f4f2e568ea6/) | bVault | core_logic | $299,910.76 | Verified native implementation with $299,910.76 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xebd126...02bde8`](./contracts/ethereum-1/0xebd12620e29dc6c452db7b96e1f190f3ee02bde8/) | BACDAIPool | core_logic | $88,280.57 | Verified native implementation with $88,280.57 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x518821...429fd4`](./contracts/ethereum-1/0x51882184b7f9beed6db9c617846140da1d429fd4/) | BACUSDCPool | core_logic | $86,330.94 | Verified native implementation with $86,330.94 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2833bd...877e44`](./contracts/ethereum-1/0x2833bdc5b31269d356bdf92d0fd8f3674e877e44/) | BACUSDTPool | core_logic | $71,162.70 | Verified native implementation with $71,162.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9bffad...fd7d9d`](./contracts/ethereum-1/0x9bffad7a6d5f52dbc51cae33e419793c72fd7d9d/) | StakingAccrualERC20V5 | token | $12,500.28 | Verified native implementation with $12,500.28 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdc42a2...93305c`](./contracts/ethereum-1/0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c/) | BACSUSDPool | core_logic | $10.00 | Verified native implementation with $10.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x76bac8...4c6e32`](./contracts/ethereum-1/0x76bac85e1e82cd677faa2b3f00c4a2626c4c6e32/) | ERC20Peg | token | $2.00 | Verified native implementation with $2.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x37d9d2...0fcbd8`](./contracts/ethereum-1/0x37d9d2c6035b744849c15f1bfee8f268a20fcbd8/) | TheVault | core_logic | $396.94 | Verified native implementation with $396.94 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xb970e2...e46655`](./contracts/arbitrum-42161/0xb970e280f9ddaa3349ab9f3ecf778970cde46655/) | ApeRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x9f20de...b03461`](./contracts/arbitrum-42161/0x9f20de1fc9b161b34089cbeae888168b44b03461/) | ARBIS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x89d065...eb0b76`](./contracts/polygon-137/0x89d065572136814230a55ddeeddec9df34eb0b76/) | AutoFarmV2_CrossChain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc462d8...14c3bf`](./contracts/ethereum-1/0xc462d8ee54953e7d7bf276612b75387ea114c3bf/) | BACyCRVPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0ec9f7...7e37da`](./contracts/ethereum-1/0x0ec9f76202a7061eb9b3a7d6b59d36215a7e37da/) | BlackPoolToken | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2c5058...d49f45`](./contracts/arbitrum-42161/0x2c5058325373d02dfd6c08e48d91fcaf8fd49f45/) | CarbonRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc4cbae...711774`](./contracts/ethereum-1/0xc4cbae499bb4ca41e78f52f07f5d98c375711774/) | CdpManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x21cf9b...bc0893`](./contracts/ethereum-1/0x21cf9b77f88adf8f8c98d7e33fe601dc57bc0893/) | GovernanceTimelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x711a33...ab6cf6`](./contracts/ethereum-1/0x711a339c002386f9db409ca55b6a35a604ab6cf6/) | KeeperAccessControl | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1922c3...1684ab`](./contracts/arbitrum-42161/0x1922c36f3bc762ca300b4a46bb2102f84b1684ab/) | MarinateAutoCompounder | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc2edad...a888cd`](./contracts/ethereum-1/0xc2edad668740f1aa35e4d8f227fb8e17dca888cd/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x32e559...1aa724`](./contracts/arbitrum-42161/0x32e5594f14de658b0d577d6560fa0d9c6f1aa724/) | NyanRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xe34003...098bc2`](./contracts/arbitrum-42161/0xe340031b61a394c7811868ef81d2eacc79098bc2/) | PONGRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x46c509...7b1ee2`](./contracts/ethereum-1/0x46c5098f73fa656e82d7e9afbf3c00b32b7b1ee2/) | StakedBPT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x27fb47...3f3df1`](./contracts/ethereum-1/0x27fb47b9fb32b9cf660c4e0128be0f4e883f3df1/) | SettToRenIbbtcZap | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x459189...f7ddeb`](./contracts/arbitrum-42161/0x4591890225394bf66044347653e112621af7ddeb/) | SettV4 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x27e98f...71e3b5`](./contracts/ethereum-1/0x27e98fc7d05f54e544d16f58c194c2d7ba71e3b5/) | SettV4h | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4b92d1...8cd4d5`](./contracts/ethereum-1/0x4b92d19c11435614cd49af1b589001b7c08cd4d5/) | SimpleWrapperGatedUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xbf0075...d2db86`](./contracts/arbitrum-42161/0xbf00759d7e329d7a7fa1d4dcdc914c53d1d2db86/) | stARBIS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc93528...793d84`](./contracts/ethereum-1/0xc935285b0d88069305431dace0c3c01d7e793d84/) | TokenPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6615e6...e96386`](./contracts/ethereum-1/0x6615e67b8b6b6375d38a0a3f937cd8c1a1e96386/) | WarRoomGatedProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 21 |
-| upstream | 1 |
-| standard_library | 1 |
-| needs_review | 4 |
+| native | 18 |
+| upstream | 3 |
+| standard_library | 12 |
+| needs_review | 7 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 6
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: high=5
+- Match method counts: extraction_exact=23
 
 Zero-match audit list:
 
 - [3362] Badger Vaults 1.5 - Quantstamp - Jan 2022.pdf
-- [3363] DL audit link
-- [3364] DL audit link
-- [3365] DL audit link
 - [3366] DL audit link
-- [3367] DL audit link
+- [12497] DL audit link
 
 Fork inheritance lineage and inherited audits are included when available.

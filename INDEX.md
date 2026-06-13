@@ -67,7 +67,7 @@
 | [babydogecoin](./babydogecoin/) | $164.9M | 0.0% | $164.9M | declining | 1 | 17 | 2026-06-12 |
 | [babyswap](./babyswap/) | $241.1K | 1.5% | $241.1K | active | 1 | 113 | 2026-06-10 |
 | [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | active | 0 | 2 | 2026-06-12 |
-| [badger-dao](./badger-dao/) | $1.5M | 0.0% | $1.5M | sunsetting | 6 | 27 | 2026-05-25 |
+| [badger-dao](./badger-dao/) | $396.9 | 21.6% | $396.9 | sunsetting | 8 | 40 | 2026-06-13 |
 | [bakeryswap](./bakeryswap/) | $612.9K | 0.0% | $612.9K | declining | 1 | 98 | 2026-05-24 |
 | [bancor](./bancor/) | $48.8M | 23.5% | $43.8M | declining | 4 | 121 | 2026-06-10 |
 | [baseline-protocol](./baseline-protocol/) | $69.3M | 25.0% | ? | active | 8 | 112 | 2026-06-10 |
@@ -155,11 +155,11 @@
 | [decentralized-euro](./decentralized-euro/) | $230.4M | 28.2% | $230.4M | active | 3 | 72 | 2026-06-10 |
 | [decibel](./decibel/) | $41.9M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
 | [deeplock](./deeplock/) | $56.2M | 0.0% | $56.2M | active | 0 | 70 | 2026-06-10 |
-| [defi-kingdoms](./defi-kingdoms/) | $7.7M | 0.0% | ? | declining | 1 | 5 | 2026-06-10 |
+| [defi-kingdoms](./defi-kingdoms/) | $7.7M | 0.0% | ? | declining | 1 | 5 | 2026-06-13 |
 | [defichain-dex](./defichain-dex/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [defil](./defil/) | $1.0M | 0.0% | $1.0M | active | 1 | 51 | 2026-06-10 |
 | [defituna](./defituna/) | $4.6M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
-| [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | active | 0 | 53 | 2026-06-10 |
+| [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | active | 0 | 53 | 2026-06-13 |
 | [deltaprime](./deltaprime/) | $2.6K | 0.0% | $2.6K | active | 0 | 482 | 2026-05-31 |
 | [depth](./depth/) | $1.2M | 0.0% | ? | declining | 0 | 1 | 2026-06-10 |
 | [deri](./deri/) | $2.4K | 13.9% | $2.4K | active | 8 | 868 | 2026-06-10 |
@@ -417,7 +417,7 @@
 | [notional](./notional/) | $1.2M | 19.2% | $755.7K | declining | 6 | 79 | 2026-06-11 |
 | [nucleus](./nucleus/) | $996.4K | 50.0% | ? | active | 11 | 6 | 2026-05-26 |
 | [nuls](./nuls/) | $7.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 1 | 19 | 2026-06-11 |
+| [obeliskbtc](./obeliskbtc/) | $33.2M | 36.8% | $33.2M | declining | 1 | 19 | 2026-06-13 |
 | [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
 | [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 1 | 40 | 2026-06-11 |
 | [odyssey-finance](./odyssey-finance/) | $9.2M | 0.0% | ? | active | 0 | 82 | 2026-06-13 |
@@ -662,7 +662,7 @@
 | [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
 | [universe-xyz](./universe-xyz/) | $216.1K | 21.7% | $216.1K | dead | 3 | 34 | 2026-06-11 |
 | [unslashed](./unslashed/) | $3.1M | 0.0% | $3.1M | declining | 0 | 2 | 2026-06-12 |
-| [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-06-11 |
+| [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-06-13 |
 | [usx.capital](./usx.capital/) | $763.3K | 0.0% | ? | declining | 1 | 3 | 2026-06-11 |
 | [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | declining | 0 | 28 | 2026-06-11 |

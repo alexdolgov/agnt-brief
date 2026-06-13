@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "delta-financial",
-  "generated_at": "2026-06-10T22:47:41.454Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
+  "generated_at": "2026-06-13T00:36:54.906Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-e35d",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "delta-financial",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 10311499.01484,
+    "dl_tvl_usd": 7900877.0252,
     "tvl_usd": 4511630.130435075,
     "tvl_source": "on_chain",
     "tvl_by_chain": {

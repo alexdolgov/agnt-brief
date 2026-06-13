@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "uranium.io",
-  "generated_at": "2026-06-11T03:51:58.674Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
+  "generated_at": "2026-06-13T00:35:05.118Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-e35d",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "uranium.io",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 7384209.92499,
-    "tvl_usd": 7384209.92499,
+    "dl_tvl_usd": 7407943.89235,
+    "tvl_usd": 7407943.89235,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

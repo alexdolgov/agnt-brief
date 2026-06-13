@@ -1002,8 +1002,13 @@
 | [ringfi](./ringfi/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rip.xyz](./rip.xyz/) | $0.0 | 50.0% | $0.0 | active | 1 | 6 | 2026-06-11 |
 | [risex](./risex/) | $4.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [rivera-money](./rivera-money/) | $766.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [robiniaswap](./robiniaswap/) | $19.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rocifi](./rocifi/) | $46.5K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 2 | 2026-06-12 |
+| [roe-finance](./roe-finance/) | $4.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [roguex](./roguex/) | $29.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [rollie-finance](./rollie-finance/) | $4.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rollup-finance](./rollup-finance/) | $77.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 0 | 11 | 2026-05-31 |
 | [rook](./rook/) | $190.1K | 0.0% | $190.1K | dead | 0 | 73 | 2026-06-11 |

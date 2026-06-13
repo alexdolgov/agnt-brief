@@ -264,6 +264,7 @@
 | [eclipsefi](./eclipsefi/) | $15.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [egas-swap](./egas-swap/) | $18.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [ekubo](./ekubo/) | $5.6M | 44.4% | $5.6M | active | 5 | 15 | 2026-06-10 |
+| [electra](./electra/) | $81.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [elephant-money](./elephant-money/) | $1.6M | 5.9% | $1.6M | declining | 2 | 346 | 2026-06-10 |
 | [elfi-protocol](./elfi-protocol/) | $3.4M | 29.5% | ? | declining | 1 | 2406 | 2026-06-10 |
 | [ellipsis-finance](./ellipsis-finance/) | $59.0K | 29.4% | $9.0K | dead | 3 | 22 | 2026-06-11 |
@@ -287,11 +288,15 @@
 | [eventum-bridge](./eventum-bridge/) | $1.6M | 3.8% | $1.6M | active | 2 | 28 | 2026-06-10 |
 | [everrise](./everrise/) | $23.1M | 0.0% | $23.1M | declining | 3 | 210 | 2026-06-11 |
 | [everything](./everything/) | $945.3K | 0.0% | ? | active | 0 | 10 | 2026-06-10 |
+| [evolve](./evolve/) | $554.1 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [evoq-finance](./evoq-finance/) | $268.1 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [exactly](./exactly/) | $189.5K | 63.6% | ? | active | 32 | 65 | 2026-06-10 |
 | [exmo](./exmo/) | $2.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [exponent](./exponent/) | $64.0M | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
+| [exsat-staking-btc](./exsat-staking-btc/) | $137.6M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [extra-finance](./extra-finance/) | $100.0 | 5.3% | ? | active | 3 | 268 | 2026-06-10 |
+| [ezmanager](./ezmanager/) | $312.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [farm-hero](./farm-hero/) | $5.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [feather](./feather/) | $15.9M | 0.0% | ? | active | 0 | 10 | 2026-06-12 |
 | [ferro](./ferro/) | $4.9M | 0.0% | ? | declining | 0 | 21 | 2026-06-13 |
 | [fiamma](./fiamma/) | $1.2M | 0.0% | ? | active | 3 | 33 | 2026-06-11 |

@@ -72,6 +72,7 @@
 | [avalon-labs](./avalon-labs/) | $550.8M | 0.0% | ? | unknown | 19 | 0 | 2026-06-13 |
 | [avantis](./avantis/) | $196.5M | 68.8% | $150.9M | declining | 3 | 61 | 2026-06-10 |
 | [avely-finance](./avely-finance/) | $45.0K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
+| [avnu](./avnu/) | ? | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 3 | 2026-06-12 |
 | [azuro](./azuro/) | $3.1K | 6.6% | $3.1K | active | 3 | 304 | 2026-06-10 |
 | [b-lucky](./b-lucky/) | $2.2M | 0.0% | $2.2M | active | 1 | 16 | 2026-06-10 |
@@ -136,6 +137,7 @@
 | [bucket-protocol](./bucket-protocol/) | $65.1M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
 | [bulbaswap](./bulbaswap/) | $9.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [bunny](./bunny/) | $1.9M | 9.6% | $1.4M | declining | 1 | 101 | 2026-06-10 |
+| [bunnypark](./bunnypark/) | $0.5 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [burve-protocol](./burve-protocol/) | $10.5K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [butter-network](./butter-network/) | $1.2M | 0.0% | ? | declining | 0 | 6 | 2026-06-10 |
 | [bydfi](./bydfi/) | $72.1M | 0.0% | ? | active | 0 | 1 | 2026-06-12 |
@@ -145,6 +147,7 @@
 | [canto-lending](./canto-lending/) | $3.0M | 0.0% | ? | declining | 3 | 84 | 2026-06-10 |
 | [capx-ai](./capx-ai/) | $2.1M | 0.0% | ? | active | 1 | 1 | 2026-06-10 |
 | [carbon-defi](./carbon-defi/) | $5.1M | 30.9% | ? | active | 4 | 158 | 2026-06-10 |
+| [carina](./carina/) | ? | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [cbridge](./cbridge/) | $50.2M | 0.0% | $50.2M | active | 0 | 1348 | 2026-06-12 |
 | [cex.io](./cex.io/) | $12.1M | 0.0% | ? | active | 1 | 4 | 2026-06-12 |
 | [cgo-finance](./cgo-finance/) | $1.2M | 0.0% | ? | declining | 0 | 2 | 2026-06-10 |
@@ -157,6 +160,7 @@
 | [chewyswap](./chewyswap/) | $9.5K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [circuit](./circuit/) | $198.7K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [citrea-bridge](./citrea-bridge/) | $6.6M | 50.0% | ? | active | 10 | 3 | 2026-06-10 |
+| [clave](./clave/) | $7.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [clearpool](./clearpool/) | $17.6K | 7.1% | $17.6K | active | 7 | 63 | 2026-06-12 |
 | [clever](./clever/) | $3.2M | 10.6% | $1.6M | active | 3 | 76 | 2026-06-10 |
 | [clober](./clober/) | $516.5K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
@@ -165,6 +169,7 @@
 | [coinstore](./coinstore/) | $62.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [coinw](./coinw/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [colend-protocol](./colend-protocol/) | $4.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
+| [commodo](./commodo/) | $5.3K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [concentrator](./concentrator/) | $112.0M | 31.3% | $105.2M | active | 33 | 342 | 2026-06-10 |
 | [convex-finance](./convex-finance/) | $658.0M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [core-bridge](./core-bridge/) | $4.0M | 0.0% | ? | active | 0 | 6 | 2026-06-10 |

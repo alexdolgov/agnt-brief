@@ -1,17 +1,17 @@
 # Agentic Audit Brief: Swellchain Bridge
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 56.4% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 82.0% over 90 days
 
 ## Project Overview
 
 - Project: Swellchain Bridge (`swellchain-bridge`)
 - Website: [https://superbridge.swellnetwork.io](https://superbridge.swellnetwork.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T03:21:22.646Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
+- Generated: 2026-06-13T22:30:09.455Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ab91
 - Chains: ethereum
-- Contract surface: 10 unique implementations (16 raw deployments)
-- DeFi Llama TVL: $1,158,516.39
+- Contract surface: 24 unique implementations (32 raw deployments)
+- DeFi Llama TVL: $612,381.07
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -25,12 +25,12 @@ The bridge family consists of core OP Stack contracts (L1StandardBridge, Optimis
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/10 (0.0%)
-- Verified + Unaudited implementations: 10
+- Verified implementations audited: 0/24 (0.0%)
+- Verified + Unaudited implementations: 24
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 10
-- Raw deployments: 16
+- Unique implementations: 24
+- Raw deployments: 32
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -49,20 +49,34 @@ The bridge family consists of core OP Stack contracts (L1StandardBridge, Optimis
 
 - None
 
-### ⚠️ Verified + Unaudited (10)
+### ⚠️ Verified + Unaudited (24)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| AddressManager | governance | ethereum | [`0xa54a84...dafc8a`](./contracts/ethereum-1/0xa54a84f17c2180148c762d79bc57bdff7fdafc8a/) | ⚠️ Unaudited |
+| AnchorStateRegistry | unknown | ethereum | [`0x143874...174dd1`](./contracts/ethereum-1/0x14387438ee964e826a4eaeb95b2bce7754174dd1/) | ⚠️ Unaudited |
+| DisputeGameFactory | registry | ethereum | [`0x876906...2f0f57`](./contracts/ethereum-1/0x87690676786cdc8cca75a472e483af7c8f2f0f57/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | 2 deployments: ethereum [`0x5a0aae...7c3d2a`](./contracts/ethereum-1/0x5a0aae59d09fccbddb6c6cceb07b7279367c3d2a/); ethereum `0x9ba6e0...006b3a` | ⚠️ Unaudited |
+| L1CrossDomainMessenger | unknown | ethereum | [`0xe6a99e...903759`](./contracts/ethereum-1/0xe6a99ef12995defc5ff47ec0e13252f0e6903759/) | ⚠️ Unaudited |
 | L1ERC20TokenBridge | operational_periphery | ethereum | 2 deployments: ethereum [`0x7e9793...5e65a2`](./contracts/ethereum-1/0x7e97935fbdf2a27ea35c4fdddacf5acd685e65a2/); ethereum `0xecf337...d24121` | ⚠️ Unaudited |
+| L1ERC721Bridge | unknown | ethereum | [`0xfd7618...44bc1e`](./contracts/ethereum-1/0xfd7618330e63b493070dc8c491ad4ad26144bc1e/) | ⚠️ Unaudited |
 | L1StandardBridge | bridge_template | ethereum | [`0x7aa496...5aacc8`](./contracts/ethereum-1/0x7aa4960908b13d104bf056b23e2c76b43c5aacc8/) | ⚠️ Unaudited |
+| MIPS | unknown | ethereum | [`0x16e83c...344ce4`](./contracts/ethereum-1/0x16e83ce5ce29bf90ad9da06d2fe6a15d5f344ce4/) | ⚠️ Unaudited |
 | OFTAdapterSwETH | adapter | ethereum | [`0x2c1b34...6f94e2`](./contracts/ethereum-1/0x2c1b3426e557d6756d8a8859a0779373236f94e2/) | ⚠️ Unaudited |
+| OptimismMintableERC20Factory | registry | ethereum | [`0xc2b228...f3f603`](./contracts/ethereum-1/0xc2b228cd433ebae788de287ede2abe55b3f3f603/) | ⚠️ Unaudited |
 | OptimismPortal2 | unknown | ethereum | [`0x758e0e...b87812`](./contracts/ethereum-1/0x758e0ee66102816f5c3ec9ecc1188860fbb87812/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | 2 deployments: ethereum [`0x674822...0931a9`](./contracts/ethereum-1/0x6748220a79446867eb41a824b4f74a92fc0931a9/); ethereum `0x95e8ba...151ef6` | ⚠️ Unaudited |
+| PermissionedDisputeGame | unknown | ethereum | [`0xa0cfbe...fa6893`](./contracts/ethereum-1/0xa0cfbe3402d6e0a74e96d3c360f74d5ea4fa6893/) | ⚠️ Unaudited |
+| PreimageOracle | unknown | ethereum | [`0x9c065e...1be277`](./contracts/ethereum-1/0x9c065e11870b891d214bc2da7ef1f9ddfa1be277/) | ⚠️ Unaudited |
+| ProtocolVersions | unknown | ethereum | [`0x8062ab...93b935`](./contracts/ethereum-1/0x8062abc286f5e7d9428a0ccb9abd71e50d93b935/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | ethereum | 3 deployments: ethereum [`0x4c4710...269dd6`](./contracts/ethereum-1/0x4c4710a4ec3f514a492cc6460818c4a6a6269dd6/); ethereum `0x674822...0931a9`; ethereum `0x95e8ba...151ef6` | ⚠️ Unaudited |
 | RSwellOFTAdapter | adapter | ethereum | [`0x428cda...b2ac58`](./contracts/ethereum-1/0x428cda6c1994b926f75a4830d5baedee9db2ac58/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | [`0x06f7fb...038d0e`](./contracts/ethereum-1/0x06f7fb1c74147e34fce04a6828c7bf809b038d0e/) | ⚠️ Unaudited |
+| SuperchainConfig | governance | ethereum | [`0x95703e...f04a4c`](./contracts/ethereum-1/0x95703e0982140d16f8eba6d158fccede42f04a4c/) | ⚠️ Unaudited |
 | SwBtcOFTAdapter | adapter | ethereum | 2 deployments: ethereum [`0x584cd3...e7dae2`](./contracts/ethereum-1/0x584cd37ba4ab54f074f1067c1f51cce8e6e7dae2/); ethereum `0xa5bd95...2aa3e2` | ⚠️ Unaudited |
 | SwellOFTAdapter | adapter | ethereum | [`0x093410...9d85b7`](./contracts/ethereum-1/0x09341022ea237a4db1644de7ccf8fa0e489d85b7/) | ⚠️ Unaudited |
 | SwETHOFTAdapter | adapter | ethereum | 2 deployments: ethereum [`0x9b07fb...33f562`](./contracts/ethereum-1/0x9b07fb810ef909b01f959911cef2cc834433f562/); ethereum `0xd98f5c...c27b5e` | ⚠️ Unaudited |
 | SymbioticAdapter | adapter | ethereum | 3 deployments: ethereum [`0x2a6a2b...c0caf8`](./contracts/ethereum-1/0x2a6a2beebf6d65e03246087a41812db1c5c0caf8/); ethereum `0x69dda9...41836a`; ethereum `0x9e07af...3fdae7` | ⚠️ Unaudited |
+| SystemConfig | governance | ethereum | [`0xd3d4c6...7ff1a4`](./contracts/ethereum-1/0xd3d4c6b703978a5d24fecf3a70a51127667ff1a4/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,6 +107,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| ethereum | [`0xa54a84...dafc8a`](./contracts/ethereum-1/0xa54a84f17c2180148c762d79bc57bdff7fdafc8a/) | AddressManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe6a99e...903759`](./contracts/ethereum-1/0xe6a99ef12995defc5ff47ec0e13252f0e6903759/) | L1CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7e9793...5e65a2`](./contracts/ethereum-1/0x7e97935fbdf2a27ea35c4fdddacf5acd685e65a2/) | L1ERC20TokenBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2c1b34...6f94e2`](./contracts/ethereum-1/0x2c1b3426e557d6756d8a8859a0779373236f94e2/) | OFTAdapterSwETH | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x428cda...b2ac58`](./contracts/ethereum-1/0x428cda6c1994b926f75a4830d5baedee9db2ac58/) | RSwellOFTAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -104,10 +120,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 6 |
-| upstream | 1 |
-| standard_library | 3 |
-| needs_review | 0 |
+| native | 8 |
+| upstream | 3 |
+| standard_library | 5 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 

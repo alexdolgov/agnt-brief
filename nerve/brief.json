@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nerve",
-  "generated_at": "2026-06-11T01:23:38.777Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-13T22:28:59.543Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-ab91",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "nerve",
@@ -23,19 +23,19 @@
   },
   "summary": {
     "total_contracts": 66,
-    "total_addresses": 108,
+    "total_addresses": 111,
     "unique_implementations": 66,
-    "total_deployments": 108,
+    "total_deployments": 111,
     "audited_contracts": 0,
     "unaudited_contracts": 22,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 20,
-    "contracts_verified_by_bytecode": 2,
+    "contracts_verified_unaudited": 22,
+    "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 44,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1500085.77029,
+    "dl_tvl_usd": 1470314.2873999998,
     "tvl_usd": 508.65646142,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -128,20 +128,20 @@
       "address": "0x0390db7d64d38ceb5976f069410b24cf315c53e4",
       "name": "AdminUpgradeabilityProxy",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0xb6d8f9aed6bed11bdcf3f5b859f6c856539d2ba2",
+      "is_proxy": true,
+      "impl_address": "0x3449aa59beae803b200513b37ac68ca38c4fd950",
       "impl_name": "AdminUpgradeabilityProxy",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x0390db7d64d38ceb5976f069410b24cf315c53e4",
-          "source_verified": false,
-          "verified_by_bytecode": true,
+          "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -248,8 +248,8 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -381,8 +381,8 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x260c1fb8c4a97f3bbaa23bdb7fce20cf675070aa",
-          "source_verified": false,
-          "verified_by_bytecode": true,
+          "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -426,8 +426,8 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -522,7 +522,7 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x544d0f8579fbbfe7c35da2dcbefff88981689815",
+      "address": "0x0eafaa7ed9866c1f08ac21dd0ef3395e910f7114",
       "name": "MetaSwap",
       "role": "unknown",
       "origin_kind": "native",
@@ -536,7 +536,34 @@
         {
           "chain_id": 56,
           "chain_name": "bsc",
+          "address": "0x0eafaa7ed9866c1f08ac21dd0ef3395e910f7114",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x2dcce1586b1664f41c72206900e404ec3ca130e0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
           "address": "0x544d0f8579fbbfe7c35da2dcbefff88981689815",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd0fbf0a224563d5ffc8a57e4fda6ae080ebcf3d3",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2512,6 +2539,16 @@
       "risk_note": "Verified native implementation with $508.66 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0390db7d64d38ceb5976f069410b24cf315c53e4",
+      "name": "AdminUpgradeabilityProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x54261774905f3e6e9718f2abb10ed6555cae308a",
@@ -2564,7 +2601,7 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x544d0f8579fbbfe7c35da2dcbefff88981689815",
+      "address": "0x0eafaa7ed9866c1f08ac21dd0ef3395e910f7114",
       "name": "MetaSwap",
       "role": "unknown",
       "origin_kind": "native",
@@ -2693,10 +2730,10 @@
     }
   ],
   "origin_summary": {
-    "native": 43,
+    "native": 44,
     "upstream": 0,
     "standard_library": 1,
-    "needs_review": 22
+    "needs_review": 21
   },
   "scope_matching_notes": {
     "match_method_counts": {},

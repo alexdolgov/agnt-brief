@@ -1,6 +1,6 @@
 # alien-base — Contract Index
 
-58 unique implementations on base · 113 deployments · 0 audited · 47 unaudited · 11 unverified
+60 unique implementations on base · 115 deployments · 0 audited · 49 unaudited · 11 unverified
 
 ## adapter (4)
 
@@ -11,13 +11,20 @@
 | [SmartRouter](./base-8453/0xb20c411fc84fbb27e78608c24d0056d974ea9411/) | base | [`0xb20c41...ea9411`](./base-8453/0xb20c411fc84fbb27e78608c24d0056d974ea9411/) | ⚠️ Unaudited | Verified |
 | [UniswapV2Router02 (2 deployments)](./base-8453/0x3485f8e155973cc247cbea9e77c0dbbb4bbb79e7/) | base | 2 deployments: base [`0x3485f8...bb79e7`](./base-8453/0x3485f8e155973cc247cbea9e77c0dbbb4bbb79e7/); base `0x8c1a3c...6b37c7` | ⚠️ Unaudited | Verified |
 
-## governance (6)
+## core_logic (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [UniswapV3Pool](./base-8453/0xbcd27a437ebe92555cee6b5bbeddac639a1b6fcb/) | base | [`0xbcd27a...1b6fcb`](./base-8453/0xbcd27a437ebe92555cee6b5bbeddac639a1b6fcb/) | ⚠️ Unaudited | Verified |
+
+## governance (7)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BunniHubController](./base-8453/0x4bcc584979817219585b6a62a5bb6c15c1fa0f38/) | base | [`0x4bcc58...fa0f38`](./base-8453/0x4bcc584979817219585b6a62a5bb6c15c1fa0f38/) | ⚠️ Unaudited | Verified |
 | [CarbonController (3 deployments)](./base-8453/0x0d6e297a73016b437caae65bfe32c59803b215d0/) | base | 3 deployments: base [`0x0d6e29...b215d0`](./base-8453/0x0d6e297a73016b437caae65bfe32c59803b215d0/); base `0xe37638...97716e`; base `0xec5c5c...b5a561` | ⚠️ Unaudited | Verified |
 | [EsTokenController (6 deployments)](./base-8453/0x154d41a96ad37570a2ad6849063d0b480da1ea99/) | base | 6 deployments: base [`0x154d41...a1ea99`](./base-8453/0x154d41a96ad37570a2ad6849063d0b480da1ea99/); base `0x2de715...7f60dc`; base `0x95ff65...2d2819`; base `0x9e27f3...82ac6e`; base `0xf4eb75...da644a`; base `0xf6c0db...ecdb94` | ⚠️ Unaudited | Verified |
+| [GnosisSafeProxy](./base-8453/0x4ab9070b7680f802cbf8322e597a4409902171e5/) | base | [`0x4ab907...2171e5`](./base-8453/0x4ab9070b7680f802cbf8322e597a4409902171e5/) | ⚠️ Unaudited | Verified |
 | [NonfungiblePositionManager](./base-8453/0xb7996d1ecd07fb227e8dca8cd5214bdfb04534e5/) | base | [`0xb7996d...4534e5`](./base-8453/0xb7996d1ecd07fb227e8dca8cd5214bdfb04534e5/) | ⚠️ Unaudited | Verified |
 | [ProxyAdmin (2 deployments)](./base-8453/0xe23f656562d56fed9a2650a3e51a2b60124528c1/) | base | 2 deployments: base [`0xe23f65...4528c1`](./base-8453/0xe23f656562d56fed9a2650a3e51a2b60124528c1/); base `0xe49273...e704b4` | ⚠️ Unaudited | Verified |
 | [TimelockController](./base-8453/0x1c7e4284423c1a2362c49b1ea223b73e38c81e21/) | base | [`0x1c7e42...c81e21`](./base-8453/0x1c7e4284423c1a2362c49b1ea223b73e38c81e21/) | ⚠️ Unaudited | Verified |

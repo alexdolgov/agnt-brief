@@ -38,7 +38,7 @@
 | [algoblocks](./algoblocks/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [algodex](./algodex/) | $2.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [algofi](./algofi/) | $651.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 15 | 58 | 2026-06-10 |
+| [alien-base](./alien-base/) | $3.1M | 0.0% | $3.1M | declining | 0 | 60 | 2026-06-13 |
 | [alium-swap](./alium-swap/) | $15.0K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [allbridge](./allbridge/) | $21.7M | 0.0% | $21.7M | declining | 11 | 287 | 2026-06-12 |
 | [alpaca-finance](./alpaca-finance/) | $11.5M | 57.4% | $11.2M | declining | 19 | 144 | 2026-06-10 |
@@ -500,7 +500,7 @@
 | [hakka-finance](./hakka-finance/) | $5.4K | 26.5% | $5.4K | active | 7 | 37 | 2026-06-10 |
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [halofi](./halofi/) | $22.1K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
-| [hanji-protocol](./hanji-protocol/) | $728.4K | 0.0% | ? | declining | 2 | 289 | 2026-06-11 |
+| [hanji-protocol](./hanji-protocol/) | $727.9K | 16.7% | ? | declining | 2 | 381 | 2026-06-13 |
 | [harbor](./harbor/) | $94.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 10.0% | ? | active | 4 | 127 | 2026-06-10 |
 | [harvest-finance](./harvest-finance/) | $12.9M | 46.4% | ? | declining | 5 | 445 | 2026-06-10 |
@@ -515,7 +515,7 @@
 | [hegic](./hegic/) | $54.1K | 22.5% | $54.1K | active | 2 | 76 | 2026-06-13 |
 | [heliswap](./heliswap/) | $94.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | active | 1 | 9 | 2026-06-12 |
-| [helix](./helix/) | $1.5M | 0.0% | ? | declining | 0 | 9 | 2026-06-10 |
+| [helix](./helix/) | $1.5M | 0.0% | ? | declining | 0 | 9 | 2026-06-13 |
 | [hemi-staking](./hemi-staking/) | $16.4M | 1.9% | $16.4M | active | 5 | 132 | 2026-06-12 |
 | [hemi](./hemi/) | $49.6K | 2.7% | $49.6K | unknown | 5 | 47 | 2026-05-25 |
 | [hemibtc](./hemibtc/) | $46.2K | 0.0% | $46.2K | active | 5 | 46 | 2026-06-12 |
@@ -802,7 +802,7 @@
 | [neopin](./neopin/) | $40.2M | 0.0% | ? | active | 3 | 104 | 2026-06-12 |
 | [neptune-finance](./neptune-finance/) | $5.9M | 0.0% | ? | active | 3 | 2 | 2026-06-13 |
 | [nerona](./nerona/) | $327.0M | 0.0% | $327.0M | declining | 0 | 4 | 2026-06-13 |
-| [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | declining | 0 | 66 | 2026-06-11 |
+| [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | declining | 0 | 66 | 2026-06-13 |
 | [nest-credit](./nest-credit/) | $66.7K | 57.1% | ? | active | 15 | 16 | 2026-06-11 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-06-11 |
 | [netswap](./netswap/) | $1.3M | 20.8% | ? | declining | 2 | 48 | 2026-06-11 |
@@ -1192,7 +1192,7 @@
 | [swapx](./swapx/) | $492.4K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [sweep](./sweep/) | $8.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [swell](./swell/) | $100.5M | 0.0% | ? | unknown | 16 | 0 | 2026-06-13 |
-| [swellchain-bridge](./swellchain-bridge/) | $1.2M | 0.0% | ? | declining | 0 | 10 | 2026-06-11 |
+| [swellchain-bridge](./swellchain-bridge/) | $612.4K | 0.0% | ? | declining | 0 | 24 | 2026-06-13 |
 | [swerve](./swerve/) | $305.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [swirl](./swirl/) | $4.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [switcheo-finance](./switcheo-finance/) | $68.3M | 0.0% | $68.3M | active | 0 | 47 | 2026-06-11 |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "helix",
-  "generated_at": "2026-06-10T23:48:29.730Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-13T22:30:06.686Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-ab91",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "helix",
@@ -45,8 +45,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1501882,
-    "tvl_usd": 1501882,
+    "dl_tvl_usd": 1479937,
+    "tvl_usd": 1479937,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -220,7 +220,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -260,7 +260,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -340,7 +340,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -371,7 +371,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -402,7 +402,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     }
   ],
   "audits": [],

@@ -6,11 +6,11 @@
 
 - Project: Nerve (`nerve`)
 - Lifecycle: declining (Tier 0, 99.8% below peak)
-- Generated: 2026-06-11T01:23:38.777Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-13T22:28:59.543Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ab91
 - Chains: bsc, ethereum
-- Contract surface: 66 unique implementations (108 raw deployments)
-- DeFi Llama TVL: $1,500,085.77
+- Contract surface: 66 unique implementations (111 raw deployments)
+- DeFi Llama TVL: $1,470,314.29
 - On-chain TVL (included contracts): $508.66
 - TVL by chain: Bsc $508.66
 
@@ -25,11 +25,11 @@ The Nerve family uses a proxy-based upgrade pattern where Swap contracts delegat
 ## Audit Coverage Summary
 
 - Verified implementations audited: 0/22 (0.0%)
-- Verified + Unaudited implementations: 20
-- Verified by bytecode match: 2
+- Verified + Unaudited implementations: 22
+- Verified by bytecode match: 0
 - Unverified implementations: 44
 - Unique implementations: 66
-- Raw deployments: 108
+- Raw deployments: 111
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $508.66
@@ -48,17 +48,19 @@ The Nerve family uses a proxy-based upgrade pattern where Swap contracts delegat
 
 - None
 
-### ⚠️ Verified + Unaudited (20)
+### ⚠️ Verified + Unaudited (22)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | NerveToken | token | bsc | 3 deployments: bsc [`0x363314...ad52d4`](./contracts/bsc-56/0x3633144e8fa5e11f56ff0b6ee00fe20f5fad52d4/); bsc `0x42f6f5...db9096`; bsc `0xc901ea...73d9f5` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | ethereum | 12 deployments: ethereum [`0x0390db...5c53e4`](./contracts/ethereum-1/0x0390db7d64d38ceb5976f069410b24cf315c53e4/); ethereum `0x3e84b2...351c02`; ethereum `0x42a243...fab24c`; ethereum `0xa8ccf2...cbf226`; ethereum `0xaa1069...d9f86a`; ethereum `0xb4da1d...f056bd`; ethereum `0xc883d9...bb310e`; ethereum `0xca7e4c...f0ea92`; ethereum `0xcd239b...c3c32a`; ethereum `0xd87c52...f7409a`; ethereum `0xdf6a57...8a83ee`; ethereum `0xfd4cb9...30e618` | ⚠️ Unaudited |
 | BtcSwapAssetV2 | unknown | bsc | [`0x542617...ae308a`](./contracts/bsc-56/0x54261774905f3e6e9718f2abb10ed6555cae308a/) | ⚠️ Unaudited |
 | Dummy | unknown | bsc | [`0xcc65c6...971095`](./contracts/bsc-56/0xcc65c6989db42ee834c9321c0096670507971095/) | ⚠️ Unaudited |
 | ERC20Migrator | token | bsc | 2 deployments: bsc [`0x285f9c...791e44`](./contracts/bsc-56/0x285f9cb834c23ea597fb03d027aeaa74c3791e44/); bsc `0xa9fd3f...0a4095` | ⚠️ Unaudited |
+| GenericERC20 | token | bsc | 6 deployments: bsc [`0x069ef9...d7bb9b`](./contracts/bsc-56/0x069ef9146ecd9d576847d5c8fd4cb5fc2bd7bb9b/); bsc `0x260c1f...5070aa`; bsc `0x2e054f...cc9932`; bsc `0x54d58c...645c5e`; bsc `0x7f3dee...47c154`; bsc `0x9854f6...6cdf75` | ⚠️ Unaudited |
 | MasterMind | unknown | bsc | 3 deployments: bsc [`0x15cfed...0a7a02`](./contracts/bsc-56/0x15cfed9a157290ffe648347c52972434360a7a02/); bsc `0x2ebe8c...31f24e`; bsc `0x705a73...55b641` | ⚠️ Unaudited |
 | MathUtils | unknown | bsc | 2 deployments: bsc [`0x4ab8eb...945947`](./contracts/bsc-56/0x4ab8eb2591ab616dbac98e3d467018de22945947/); bsc `0xc148fe...869e1b` | ⚠️ Unaudited |
-| MetaSwap | unknown | bsc | 4 deployments: bsc [`0x544d0f...689815`](./contracts/bsc-56/0x544d0f8579fbbfe7c35da2dcbefff88981689815/); bsc `0xe0ad6b...732b0c`; bsc `0xfa97ad...035ddf`; bsc `0xfcc397...d4a053` | ⚠️ Unaudited |
+| MetaSwap | unknown | bsc | 7 deployments: bsc [`0x0eafaa...0f7114`](./contracts/bsc-56/0x0eafaa7ed9866c1f08ac21dd0ef3395e910f7114/); bsc `0x2dcce1...a130e0`; bsc `0x544d0f...689815`; bsc `0xd0fbf0...bcf3d3`; bsc `0xe0ad6b...732b0c`; bsc `0xfa97ad...035ddf`; bsc `0xfcc397...d4a053` | ⚠️ Unaudited |
 | MetaSwapDeployer | unknown | bsc | 5 deployments: bsc [`0x435e73...d409ae`](./contracts/bsc-56/0x435e7316e62b8a2883699490e270ab6cbed409ae/); bsc `0x57cc9c...e0a5c2`; bsc `0x9ab01e...d5a390`; bsc `0xd2c619...003ea2`; bsc `0xefe2df...27f973` | ⚠️ Unaudited |
 | MetaSwapDeposit | unknown | bsc | 2 deployments: bsc [`0x45e660...02fd59`](./contracts/bsc-56/0x45e6607a6b1d5374e175b6b237541598ee02fd59/); bsc `0xd49bd8...22c329` | ⚠️ Unaudited |
 | MetaSwapUtils | unknown | bsc | 3 deployments: bsc [`0x3d5ce3...38d5a6`](./contracts/bsc-56/0x3d5ce3bc7c312ab023b3a7b59c993da49e38d5a6/); bsc `0x5068b9...ffadf5`; bsc `0xe30b5f...826eea` | ⚠️ Unaudited |
@@ -79,14 +81,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ⚠️ Verified by Bytecode + Unaudited (2)
+### ⚠️ Verified by Bytecode + Unaudited (0)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AdminUpgradeabilityProxy | unknown | ethereum | 12 deployments: ethereum [`0x0390db...5c53e4`](./contracts/ethereum-1/0x0390db7d64d38ceb5976f069410b24cf315c53e4/); ethereum `0x3e84b2...351c02`; ethereum `0x42a243...fab24c`; ethereum `0xa8ccf2...cbf226`; ethereum `0xaa1069...d9f86a`; ethereum `0xb4da1d...f056bd`; ethereum `0xc883d9...bb310e`; ethereum `0xca7e4c...f0ea92`; ethereum `0xcd239b...c3c32a`; ethereum `0xd87c52...f7409a`; ethereum `0xdf6a57...8a83ee`; ethereum `0xfd4cb9...30e618` | ⚠️ Unaudited (bytecode match) |
-| GenericERC20 | token | bsc | 6 deployments: bsc [`0x069ef9...d7bb9b`](./contracts/bsc-56/0x069ef9146ecd9d576847d5c8fd4cb5fc2bd7bb9b/); bsc `0x260c1f...5070aa`; bsc `0x2e054f...cc9932`; bsc `0x54d58c...645c5e`; bsc `0x7f3dee...47c154`; bsc `0x9854f6...6cdf75` | ⚠️ Unaudited (bytecode match) |
+- None
 
 ### ❓ Unverified (44)
 
@@ -151,12 +150,13 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | bsc | [`0x363314...ad52d4`](./contracts/bsc-56/0x3633144e8fa5e11f56ff0b6ee00fe20f5fad52d4/) | NerveToken | token | $508.66 | Verified native implementation with $508.66 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0390db...5c53e4`](./contracts/ethereum-1/0x0390db7d64d38ceb5976f069410b24cf315c53e4/) | AdminUpgradeabilityProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x542617...ae308a`](./contracts/bsc-56/0x54261774905f3e6e9718f2abb10ed6555cae308a/) | BtcSwapAssetV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xcc65c6...971095`](./contracts/bsc-56/0xcc65c6989db42ee834c9321c0096670507971095/) | Dummy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x285f9c...791e44`](./contracts/bsc-56/0x285f9cb834c23ea597fb03d027aeaa74c3791e44/) | ERC20Migrator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x15cfed...0a7a02`](./contracts/bsc-56/0x15cfed9a157290ffe648347c52972434360a7a02/) | MasterMind | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x4ab8eb...945947`](./contracts/bsc-56/0x4ab8eb2591ab616dbac98e3d467018de22945947/) | MathUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x544d0f...689815`](./contracts/bsc-56/0x544d0f8579fbbfe7c35da2dcbefff88981689815/) | MetaSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0eafaa...0f7114`](./contracts/bsc-56/0x0eafaa7ed9866c1f08ac21dd0ef3395e910f7114/) | MetaSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x435e73...d409ae`](./contracts/bsc-56/0x435e7316e62b8a2883699490e270ab6cbed409ae/) | MetaSwapDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x45e660...02fd59`](./contracts/bsc-56/0x45e6607a6b1d5374e175b6b237541598ee02fd59/) | MetaSwapDeposit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x3d5ce3...38d5a6`](./contracts/bsc-56/0x3d5ce3bc7c312ab023b3a7b59c993da49e38d5a6/) | MetaSwapUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -174,10 +174,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 43 |
+| native | 44 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 22 |
+| needs_review | 21 |
 
 ## Scope Matching Notes
 

@@ -1,6 +1,6 @@
 # nerve — Contract Index
 
-66 unique implementations across 2 chains · 108 deployments · 0 audited · 22 unaudited · 44 unverified
+66 unique implementations across 2 chains · 111 deployments · 0 audited · 22 unaudited · 44 unverified
 
 ## governance (1)
 
@@ -27,12 +27,12 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| AdminUpgradeabilityProxy (12 deployments) | ethereum | 12 deployments: ethereum `0x0390db...5c53e4`; ethereum [`0x3e84b2...351c02`](./ethereum-1/0x3e84b21e2bf7c048992fd5de5ecd2a6ad1351c02/); ethereum `0x42a243...fab24c`; ethereum `0xa8ccf2...cbf226`; ethereum `0xaa1069...d9f86a`; ethereum `0xb4da1d...f056bd`; ethereum `0xc883d9...bb310e`; ethereum `0xca7e4c...f0ea92`; ethereum `0xcd239b...c3c32a`; ethereum `0xd87c52...f7409a`; ethereum `0xdf6a57...8a83ee`; ethereum `0xfd4cb9...30e618` | ⚠️ Unaudited | Verified |
+| [AdminUpgradeabilityProxy (12 deployments)](./ethereum-1/0x0390db7d64d38ceb5976f069410b24cf315c53e4/) | ethereum | 12 deployments: ethereum [`0x0390db...5c53e4`](./ethereum-1/0x0390db7d64d38ceb5976f069410b24cf315c53e4/); ethereum `0x3e84b2...351c02`; ethereum `0x42a243...fab24c`; ethereum `0xa8ccf2...cbf226`; ethereum `0xaa1069...d9f86a`; ethereum `0xb4da1d...f056bd`; ethereum `0xc883d9...bb310e`; ethereum `0xca7e4c...f0ea92`; ethereum `0xcd239b...c3c32a`; ethereum `0xd87c52...f7409a`; ethereum `0xdf6a57...8a83ee`; ethereum `0xfd4cb9...30e618` | ⚠️ Unaudited | Verified |
 | [BtcSwapAssetV2](./bsc-56/0x54261774905f3e6e9718f2abb10ed6555cae308a/) | bsc | [`0x542617...ae308a`](./bsc-56/0x54261774905f3e6e9718f2abb10ed6555cae308a/) | ⚠️ Unaudited | Verified |
 | [Dummy](./bsc-56/0xcc65c6989db42ee834c9321c0096670507971095/) | bsc | [`0xcc65c6...971095`](./bsc-56/0xcc65c6989db42ee834c9321c0096670507971095/) | ⚠️ Unaudited | Verified |
 | [MasterMind (3 deployments)](./bsc-56/0x15cfed9a157290ffe648347c52972434360a7a02/) | bsc | 3 deployments: bsc [`0x15cfed...0a7a02`](./bsc-56/0x15cfed9a157290ffe648347c52972434360a7a02/); bsc `0x2ebe8c...31f24e`; bsc `0x705a73...55b641` | ⚠️ Unaudited | Verified |
 | [MathUtils (2 deployments)](./bsc-56/0x4ab8eb2591ab616dbac98e3d467018de22945947/) | bsc | 2 deployments: bsc [`0x4ab8eb...945947`](./bsc-56/0x4ab8eb2591ab616dbac98e3d467018de22945947/); bsc `0xc148fe...869e1b` | ⚠️ Unaudited | Verified |
-| [MetaSwap (4 deployments)](./bsc-56/0x544d0f8579fbbfe7c35da2dcbefff88981689815/) | bsc | 4 deployments: bsc [`0x544d0f...689815`](./bsc-56/0x544d0f8579fbbfe7c35da2dcbefff88981689815/); bsc `0xe0ad6b...732b0c`; bsc `0xfa97ad...035ddf`; bsc `0xfcc397...d4a053` | ⚠️ Unaudited | Verified |
+| [MetaSwap (7 deployments)](./bsc-56/0x0eafaa7ed9866c1f08ac21dd0ef3395e910f7114/) | bsc | 7 deployments: bsc [`0x0eafaa...0f7114`](./bsc-56/0x0eafaa7ed9866c1f08ac21dd0ef3395e910f7114/); bsc `0x2dcce1...a130e0`; bsc `0x544d0f...689815`; bsc `0xd0fbf0...bcf3d3`; bsc `0xe0ad6b...732b0c`; bsc `0xfa97ad...035ddf`; bsc `0xfcc397...d4a053` | ⚠️ Unaudited | Verified |
 | [MetaSwapDeployer (5 deployments)](./bsc-56/0x435e7316e62b8a2883699490e270ab6cbed409ae/) | bsc | 5 deployments: bsc [`0x435e73...d409ae`](./bsc-56/0x435e7316e62b8a2883699490e270ab6cbed409ae/); bsc `0x57cc9c...e0a5c2`; bsc `0x9ab01e...d5a390`; bsc `0xd2c619...003ea2`; bsc `0xefe2df...27f973` | ⚠️ Unaudited | Verified |
 | [MetaSwapDeposit (2 deployments)](./bsc-56/0x45e6607a6b1d5374e175b6b237541598ee02fd59/) | bsc | 2 deployments: bsc [`0x45e660...02fd59`](./bsc-56/0x45e6607a6b1d5374e175b6b237541598ee02fd59/); bsc `0xd49bd8...22c329` | ⚠️ Unaudited | Verified |
 | [MetaSwapUtils (3 deployments)](./bsc-56/0x3d5ce3bc7c312ab023b3a7b59c993da49e38d5a6/) | bsc | 3 deployments: bsc [`0x3d5ce3...38d5a6`](./bsc-56/0x3d5ce3bc7c312ab023b3a7b59c993da49e38d5a6/); bsc `0x5068b9...ffadf5`; bsc `0xe30b5f...826eea` | ⚠️ Unaudited | Verified |

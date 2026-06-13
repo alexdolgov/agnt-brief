@@ -6,8 +6,8 @@
 | Address | `0x15c8cb4e336b1e478d155d813830129fb225eee3` |
 | Role | proxy |
 | Origin | native |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [Hanji Protocol Security Audit Report.pdf](https://github.com/mixbytes/audits_public/blob/master/Hanji/OnchainCLOB/Hanji%20Protocol%20Security%20Audit%20Report.pdf); [Hanji Liquidity Vault Security Audit Report.pdf](https://github.com/mixbytes/audits_public/blob/master/Hanji/Liquidity%20Vault/Hanji%20Liquidity%20Vault%20Security%20Audit%20Report.pdf) |
 | Deployments | 3 (base [`0x15c8cb4e336b1e478d155d813830129fb225eee3`](../0x15c8cb4e336b1e478d155d813830129fb225eee3/); base `0x628a1d48aee56cb1b8a3187d0064e246fa30eb28`; base `0xf455b3c0756908c6a2f44a7f7390053cfe354eea`) |
 | Proxy | Yes → `0x3b6fe3...620632` |
 | Source | Etherscan |

@@ -7,13 +7,13 @@
 - Project: Alien Base (`alien-base`)
 - Website: [https://alienbase.xyz/](https://alienbase.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:58:56.693Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-13T22:33:16.470Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ab91
 - Chains: base
-- Contract surface: 58 unique implementations (113 raw deployments)
-- DeFi Llama TVL: $4,725,226.00
-- On-chain TVL (included contracts): $2,915,012.41
-- TVL by chain: Base $2,915,012.41
+- Contract surface: 60 unique implementations (115 raw deployments)
+- DeFi Llama TVL: $3,909,032.00
+- On-chain TVL (included contracts): $3,093,154.67
+- TVL by chain: Base $3,093,154.67
 
 ## Project Description
 
@@ -25,19 +25,19 @@ The 'Contracts' family provides the ALB token and distribution infrastructure, w
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/47 (0.0%)
-- Verified + Unaudited implementations: 47
+- Verified implementations audited: 0/49 (0.0%)
+- Verified + Unaudited implementations: 49
 - Verified by bytecode match: 0
 - Unverified implementations: 11
-- Unique implementations: 58
-- Raw deployments: 113
-- Audits discovered: 15
+- Unique implementations: 60
+- Raw deployments: 115
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $2,915,012.41
-- Latest audit: 2025-01 (aging)
-- Staleness: 0 fresh, 2 aging, 8 stale, 5 unknown
+- ASD (verified + unaudited TVL): $3,093,154.67
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $2,915,012.41 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $3,093,154.67 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,11 +49,12 @@ The 'Contracts' family provides the ALB token and distribution infrastructure, w
 
 - None
 
-### ⚠️ Verified + Unaudited (47)
+### ⚠️ Verified + Unaudited (49)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | AlienBaseToken | token | base | [`0x1dd2d6...0050c4`](./contracts/base-8453/0x1dd2d631c92b1acdfcdd51a0f7145a50130050c4/) | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | base | [`0xbcd27a...1b6fcb`](./contracts/base-8453/0xbcd27a437ebe92555cee6b5bbeddac639a1b6fcb/) | ⚠️ Unaudited |
 | AlienbaseLottery | unknown | base | [`0x4384dc...5248ff`](./contracts/base-8453/0x4384dcf974769f2e0e52cde92b6d5fc9be5248ff/) | ⚠️ Unaudited |
 | AlienbaseZapV1 | adapter | base | [`0xe0808b...811054`](./contracts/base-8453/0xe0808b8e2bdd70d70e540f977cf40e26e5811054/) | ⚠️ Unaudited |
 | BasedDistributorV2 | operational_periphery | base | [`0x52eaec...d86590`](./contracts/base-8453/0x52eaecac2402633d98b95213d0b473e069d86590/) | ⚠️ Unaudited |
@@ -72,6 +73,7 @@ The 'Contracts' family provides the ALB token and distribution infrastructure, w
 | EsToken | token | base | 9 deployments: base [`0x1a18d2...3c5af2`](./contracts/base-8453/0x1a18d238b0f43edaa68640f3f537d229e23c5af2/); base `0x365c6d...a54113`; base `0x3d3a5a...6d8ea0`; base `0x4a023e...a36978`; base `0x5c9054...8c5e66`; base `0x93d590...8f529b`; base `0xccb488...c0a124`; base `0xe1afc6...2a4587`; base `0xe2204e...213ac8` | ⚠️ Unaudited |
 | EsTokenController | governance | base | 6 deployments: base [`0x154d41...a1ea99`](./contracts/base-8453/0x154d41a96ad37570a2ad6849063d0b480da1ea99/); base `0x2de715...7f60dc`; base `0x95ff65...2d2819`; base `0x9e27f3...82ac6e`; base `0xf4eb75...da644a`; base `0xf6c0db...ecdb94` | ⚠️ Unaudited |
 | EsVoting | unknown | base | 2 deployments: base [`0x3f8d11...2dddc1`](./contracts/base-8453/0x3f8d116e99bce42b38989a62394fa9bb532dddc1/); base `0xd3cfcb...df2e7b` | ⚠️ Unaudited |
+| GnosisSafeProxy | governance | base | [`0x4ab907...2171e5`](./contracts/base-8453/0x4ab9070b7680f802cbf8322e597a4409902171e5/) | ⚠️ Unaudited |
 | LPToken | token | base | [`0xcf1355...c2633a`](./contracts/base-8453/0xcf13556f6181971a23395ec21dce2543bdc2633a/) | ⚠️ Unaudited |
 | MintableTokenFactory | registry | base | [`0x6a9668...cc8369`](./contracts/base-8453/0x6a9668c2c6e1fb107021375bacd9d92e79cc8369/) | ⚠️ Unaudited |
 | MintBurnTokenFactory | registry | base | [`0x872521...9aaf51`](./contracts/base-8453/0x872521b46095139e70a38ae3e8d95611649aaf51/) | ⚠️ Unaudited |
@@ -135,21 +137,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [2022-10-ERC4626.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2022-10-ERC4626.pdf) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
-| [abdk-redstone-eth-contracts-audit-march-2023.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/eth-contracts/audits/abdk-redstone-eth-contracts-audit-march-2023.pdf) | ABDK | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
-| [abdk-redstone-audit-evm-connector-nov-2022.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/evm-connector/audits/abdk-redstone-audit-evm-connector-nov-2022.pdf) | ABDK | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
-| [ABDK_RedStone_Oracles_v_2_0.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/ABDK_RedStone_Oracles_v_2_0.pdf) | ABDK | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
-| [abdk-redstone-adapter-contracts-audit-june-2023.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/abdk-redstone-adapter-contracts-audit-june-2023.pdf) | ABDK | Audit | 2023-06 | stale | Direct | n/a | 0 | n/a |
-| [abdk-redstone-merged-adapter-contracts-audit-dec-2023.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/abdk-redstone-merged-adapter-contracts-audit-dec-2023.pdf) | ABDK | Audit | 2023-12 | stale | Direct | n/a | 0 | n/a |
-| [abdk-redstone-multifeed-contracts-audit-july-2024.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/abdk-redstone-multifeed-contracts-audit-july-2024.pdf) | ABDK | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
-| [auditone-redstone-adapter-contracts-audit-june-2023.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/auditone-redstone-adapter-contracts-audit-june-2023.pdf) | unknown | Audit | 2023-06 | stale | Direct | n/a | 0 | n/a |
-| [ackee-blockchain-solady-report.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/ackee-blockchain-solady-report.pdf) | Ackee Blockchain | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
-| [cantina-solady-report.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/cantina-solady-report.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [cantina-spearbit-coinbase-solady-report.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/cantina-spearbit-coinbase-solady-report.pdf) | Spearbit | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
-| [shung-solady-erc721-audit.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/shung-solady-erc721-audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [xuwinnie-solady-cbrt-proof.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/xuwinnie-solady-cbrt-proof.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [audit.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/v3-core/audits/abdk/audit.pdf) | ABDK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [README.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/v3-core/audits/tob/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -163,7 +150,6 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0x52eaec...d86590`](./contracts/base-8453/0x52eaecac2402633d98b95213d0b473e069d86590/) | BasedDistributorV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xdc5348...ccac6f`](./contracts/base-8453/0xdc53487e2a6ef468260bc938f645f84caaccac6f/) | BunniHub | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xd1fac4...e92bb9`](./contracts/base-8453/0xd1fac4f51457e4a6d35bdc7311718e5d6de92bb9/) | BunniHubA | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x1733c3...339c44`](./contracts/base-8453/0x1733c3043e4964736aafe8660ecc481edf339c44/) | BunniLensV2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x053d11...3d27a4`](./contracts/base-8453/0x053d11735f501199ec64a125498f29ed453d27a4/) | BunniToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x6947da...16d75d`](./contracts/base-8453/0x6947da282e447a2e9d65ff00aaf80efb5116d75d/) | BunniZap | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xf5a7a6...692c79`](./contracts/base-8453/0xf5a7a624f4c11f581eb5a2b12e9bca327f692c79/) | BurnableTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -177,9 +163,6 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0xcf1355...c2633a`](./contracts/base-8453/0xcf13556f6181971a23395ec21dce2543bdc2633a/) | LPToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x6a9668...cc8369`](./contracts/base-8453/0x6a9668c2c6e1fb107021375bacd9d92e79cc8369/) | MintableTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x872521...9aaf51`](./contracts/base-8453/0x872521b46095139e70a38ae3e8d95611649aaf51/) | MintBurnTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x98bbb7...bdedbd`](./contracts/base-8453/0x98bbb71f059f228e7f643ad041b333006bbdedbd/) | NFTDescriptor | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x25225c...b8d9d6`](./contracts/base-8453/0x25225c45912e8d3126b8cfc9257ef430b1b8d9d6/) | NonfungibleTokenPositionDescriptor | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xfbe87e...2863e8`](./contracts/base-8453/0xfbe87ee1ee62244a2df80a8093eab829c52863e8/) | PredictionETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x0bc1a7...2a1a16`](./contracts/base-8453/0x0bc1a70875d109e3ad07e21ffd3412cd402a1a16/) | RandomNumberGenerator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x8fc786...62d1af`](./contracts/base-8453/0x8fc786fda48a24c9ecdbf6409f9709aa8a62d1af/) | SimpleERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x3b0145...10d176`](./contracts/base-8453/0x3b01457255bd6ec460d9ab8f31cfabd8a710d176/) | SimpleTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -197,36 +180,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 41 |
-| upstream | 8 |
-| standard_library | 4 |
-| needs_review | 5 |
+| native | 31 |
+| upstream | 12 |
+| standard_library | 5 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 15
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [7753] 2022-10-ERC4626.pdf
-- [7777] abdk-redstone-eth-contracts-audit-march-2023.pdf
-- [7778] abdk-redstone-audit-evm-connector-nov-2022.pdf
-- [7779] ABDK_RedStone_Oracles_v_2_0.pdf
-- [7780] abdk-redstone-adapter-contracts-audit-june-2023.pdf
-- [7781] abdk-redstone-merged-adapter-contracts-audit-dec-2023.pdf
-- [7782] abdk-redstone-multifeed-contracts-audit-july-2024.pdf
-- [7783] auditone-redstone-adapter-contracts-audit-june-2023.pdf
-- [7784] ackee-blockchain-solady-report.pdf
-- [7785] cantina-solady-report.pdf
-- [7786] cantina-spearbit-coinbase-solady-report.pdf
-- [7787] shung-solady-erc721-audit.pdf
-- [7788] xuwinnie-solady-cbrt-proof.pdf
-- [7862] audit.pdf
-- [7863] README.md
 
 Fork inheritance lineage and inherited audits are included when available.

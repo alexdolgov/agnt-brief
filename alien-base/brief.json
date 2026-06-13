@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "alien-base",
-  "generated_at": "2026-06-10T20:58:56.693Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-13T22:33:16.470Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-ab91",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "alien-base",
@@ -32,39 +32,39 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 58,
-    "total_addresses": 113,
-    "unique_implementations": 58,
-    "total_deployments": 113,
+    "total_contracts": 60,
+    "total_addresses": 115,
+    "unique_implementations": 60,
+    "total_deployments": 115,
     "audited_contracts": 0,
-    "unaudited_contracts": 47,
+    "unaudited_contracts": 49,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 47,
+    "contracts_verified_unaudited": 49,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 11,
     "coverage_pct": 0,
-    "total_audits": 15,
+    "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4725226,
-    "tvl_usd": 2915012.4102911456,
+    "dl_tvl_usd": 3909032,
+    "tvl_usd": 3093154.6702936008,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "base": 2915012.41
+      "base": 3093154.67
     },
-    "asd_usd": 2915012.4102911456,
+    "asd_usd": 3093154.6702936008,
     "website_url": "https://alienbase.xyz/",
     "chains": [
       "base"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2025-01",
-    "audit_freshness": "aging",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 2,
-      "stale": 8,
-      "unknown": 5
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
     }
   },
   "topography": {
@@ -73,7 +73,7 @@
     "product_family_count": 3
   },
   "surface_sufficiency": {
-    "unique_implementations": 58,
+    "unique_implementations": 60,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -103,6 +103,37 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2915012.4102911456,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xbcd27a437ebe92555cee6b5bbeddac639a1b6fcb",
+      "name": "UniswapV3Pool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": 178142.26000245506,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV3Pool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbcd27a437ebe92555cee6b5bbeddac639a1b6fcb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 178142.26000245506,
           "is_audited": false
         }
       ],
@@ -305,8 +336,8 @@
       "address": "0x1733c3043e4964736aafe8660ecc481edf339c44",
       "name": "BunniLensV2",
       "role": "periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "bunni",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1088,6 +1119,37 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
+      "address": "0x4ab9070b7680f802cbf8322e597a4409902171e5",
+      "name": "GnosisSafeProxy",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GnosisSafeProxy",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x4ab9070b7680f802cbf8322e597a4409902171e5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
       "address": "0xcf13556f6181971a23395ec21dce2543bdc2633a",
       "name": "LPToken",
       "role": "token",
@@ -1215,8 +1277,8 @@
       "address": "0x98bbb71f059f228e7f643ad041b333006bbdedbd",
       "name": "NFTDescriptor",
       "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1277,8 +1339,8 @@
       "address": "0x25225c45912e8d3126b8cfc9257ef430b1b8d9d6",
       "name": "NonfungibleTokenPositionDescriptor",
       "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1308,7 +1370,7 @@
       "address": "0xfbe87ee1ee62244a2df80a8093eab829c52863e8",
       "name": "PredictionETH",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1991,7 +2053,7 @@
       "address": "0x4c0b9fc00c4852b0b6070b00af03843ec9444cd2",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2022,7 +2084,7 @@
       "address": "0x783898572ef4970d445ad9af95d5dfdb633843ee",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2053,7 +2115,7 @@
       "address": "0x7920fbf3b05d49edf62c03e43e2982bef2fea013",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2115,7 +2177,7 @@
       "address": "0x9e1c243eaf95943c9c2152d4ae02d5e2e55b846a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2239,7 +2301,7 @@
       "address": "0xd54a92d5612daa6d70c0f46fa7a374b483aeb5bb",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2270,7 +2332,7 @@
       "address": "0xf78ac4a524205603b4ef9135942219400cc20ff5",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2376,347 +2438,7 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 7753,
-      "audit_key": "audit-7753",
-      "report_name": "2022-10-ERC4626.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2022-10-ERC4626.pdf",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "stale",
-      "date": "2022-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 7753,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2022-10-ERC4626.pdf"
-        },
-        {
-          "audit_id": 7762,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/2022-10-ERC4626.pdf"
-        },
-        {
-          "audit_id": 7771,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts/audits/2022-10-ERC4626.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 7777,
-      "audit_key": "audit-7777",
-      "report_name": "abdk-redstone-eth-contracts-audit-march-2023.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/eth-contracts/audits/abdk-redstone-eth-contracts-audit-march-2023.pdf",
-      "auditor": "ABDK",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-03",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7778,
-      "audit_key": "audit-7778",
-      "report_name": "abdk-redstone-audit-evm-connector-nov-2022.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/evm-connector/audits/abdk-redstone-audit-evm-connector-nov-2022.pdf",
-      "auditor": "ABDK",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-11",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7779,
-      "audit_key": "audit-7779",
-      "report_name": "ABDK_RedStone_Oracles_v_2_0.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/ABDK_RedStone_Oracles_v_2_0.pdf",
-      "auditor": "ABDK",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7780,
-      "audit_key": "audit-7780",
-      "report_name": "abdk-redstone-adapter-contracts-audit-june-2023.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/abdk-redstone-adapter-contracts-audit-june-2023.pdf",
-      "auditor": "ABDK",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7781,
-      "audit_key": "audit-7781",
-      "report_name": "abdk-redstone-merged-adapter-contracts-audit-dec-2023.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/abdk-redstone-merged-adapter-contracts-audit-dec-2023.pdf",
-      "auditor": "ABDK",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-12",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7782,
-      "audit_key": "audit-7782",
-      "report_name": "abdk-redstone-multifeed-contracts-audit-july-2024.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/abdk-redstone-multifeed-contracts-audit-july-2024.pdf",
-      "auditor": "ABDK",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7783,
-      "audit_key": "audit-7783",
-      "report_name": "auditone-redstone-adapter-contracts-audit-june-2023.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/auditone-redstone-adapter-contracts-audit-june-2023.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7784,
-      "audit_key": "audit-7784",
-      "report_name": "ackee-blockchain-solady-report.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/ackee-blockchain-solady-report.pdf",
-      "auditor": "Ackee Blockchain",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7785,
-      "audit_key": "audit-7785",
-      "report_name": "cantina-solady-report.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/cantina-solady-report.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7786,
-      "audit_key": "audit-7786",
-      "report_name": "cantina-spearbit-coinbase-solady-report.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/cantina-spearbit-coinbase-solady-report.pdf",
-      "auditor": "Spearbit",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2025-01",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7787,
-      "audit_key": "audit-7787",
-      "report_name": "shung-solady-erc721-audit.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/shung-solady-erc721-audit.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7788,
-      "audit_key": "audit-7788",
-      "report_name": "xuwinnie-solady-cbrt-proof.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/xuwinnie-solady-cbrt-proof.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7862,
-      "audit_key": "audit-7862",
-      "report_name": "audit.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/v3-core/audits/abdk/audit.pdf",
-      "auditor": "ABDK",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 7862,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/v3-core/audits/abdk/audit.pdf"
-        },
-        {
-          "audit_id": 7864,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/v3-core/audits/tob/audit.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 7863,
-      "audit_key": "audit-7863",
-      "report_name": "README.md",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/v3-core/audits/tob/README.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -2775,16 +2497,6 @@
       "address": "0xd1fac4f51457e4a6d35bdc7311718e5d6de92bb9",
       "name": "BunniHubA",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x1733c3043e4964736aafe8660ecc481edf339c44",
-      "name": "BunniLensV2",
-      "role": "periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2922,36 +2634,6 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x98bbb71f059f228e7f643ad041b333006bbdedbd",
-      "name": "NFTDescriptor",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x25225c45912e8d3126b8cfc9257ef430b1b8d9d6",
-      "name": "NonfungibleTokenPositionDescriptor",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xfbe87ee1ee62244a2df80a8093eab829c52863e8",
-      "name": "PredictionETH",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
       "address": "0x0bc1a70875d109e3ad07e21ffd3412cd402a1a16",
       "name": "RandomNumberGenerator",
       "role": "unknown",
@@ -3071,78 +2753,17 @@
     }
   ],
   "origin_summary": {
-    "native": 41,
-    "upstream": 8,
-    "standard_library": 4,
-    "needs_review": 5
+    "native": 31,
+    "upstream": 12,
+    "standard_library": 5,
+    "needs_review": 12
   },
   "scope_matching_notes": {
     "match_method_counts": {},
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 7753,
-        "report_name": "2022-10-ERC4626.pdf"
-      },
-      {
-        "audit_id": 7777,
-        "report_name": "abdk-redstone-eth-contracts-audit-march-2023.pdf"
-      },
-      {
-        "audit_id": 7778,
-        "report_name": "abdk-redstone-audit-evm-connector-nov-2022.pdf"
-      },
-      {
-        "audit_id": 7779,
-        "report_name": "ABDK_RedStone_Oracles_v_2_0.pdf"
-      },
-      {
-        "audit_id": 7780,
-        "report_name": "abdk-redstone-adapter-contracts-audit-june-2023.pdf"
-      },
-      {
-        "audit_id": 7781,
-        "report_name": "abdk-redstone-merged-adapter-contracts-audit-dec-2023.pdf"
-      },
-      {
-        "audit_id": 7782,
-        "report_name": "abdk-redstone-multifeed-contracts-audit-july-2024.pdf"
-      },
-      {
-        "audit_id": 7783,
-        "report_name": "auditone-redstone-adapter-contracts-audit-june-2023.pdf"
-      },
-      {
-        "audit_id": 7784,
-        "report_name": "ackee-blockchain-solady-report.pdf"
-      },
-      {
-        "audit_id": 7785,
-        "report_name": "cantina-solady-report.pdf"
-      },
-      {
-        "audit_id": 7786,
-        "report_name": "cantina-spearbit-coinbase-solady-report.pdf"
-      },
-      {
-        "audit_id": 7787,
-        "report_name": "shung-solady-erc721-audit.pdf"
-      },
-      {
-        "audit_id": 7788,
-        "report_name": "xuwinnie-solady-cbrt-proof.pdf"
-      },
-      {
-        "audit_id": 7862,
-        "report_name": "audit.pdf"
-      },
-      {
-        "audit_id": 7863,
-        "report_name": "README.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

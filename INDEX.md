@@ -573,11 +573,16 @@
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 65 | 2026-06-13 |
 | [interest-labs](./interest-labs/) | $2.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [interest-protocol](./interest-protocol/) | $1.3M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [intswap](./intswap/) | $1.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [intuition](./intuition/) | $0.0 | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
+| [invar-finance](./invar-finance/) | $262.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [invariant](./invariant/) | $238.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | active | 7 | 154 | 2026-06-11 |
 | [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-06-11 |
+| [iotabee](./iotabee/) | $3.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 39 | 2026-06-11 |
 | [iq](./iq/) | $23.9M | 0.0% | $23.9M | active | 0 | 2 | 2026-06-11 |
+| [iron-bank](./iron-bank/) | $676.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ithaca-protocol](./ithaca-protocol/) | $12.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | declining | 0 | 181 | 2026-06-11 |
 | [jetswap](./jetswap/) | $323.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |

@@ -396,6 +396,7 @@ Each project directory contains:
 | [aurora-plus](./aurora-plus/brief.md) | $2.27M | aurora | 31 | 3/31 (10%) | 33.3% | 0.0% (-) | 2 | stale | ✅ active | - |
 | [autofarm](./autofarm/brief.md) | $5.60M | 14 | 17 | 9/17 (53%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [avalaunch](./avalaunch/brief.md) | $6.84M | avalanche | 38 | 13/38 (34%) | 84.6% | 0.0% (-) | 13 | stale | ✅ active | - |
+| [avalon-labs](./avalon-labs/brief.md) | $550.83M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [baseline-protocol](./baseline-protocol/brief.md) | $69.26M | base, blast, ethereum | 112 | 4/112 (4%) | 25.0% | 0.0% (-) | 1 | aging | ✅ active | - |
 | [benddao](./benddao/brief.md) | $7.15M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [bifi](./bifi/brief.md) | $7.43M | avalanche, ethereum, klaytn | 170 | 45/170 (26%) | 30.4% | 0.0% (-) | 3 | stale | ✅ active | - |
@@ -407,6 +408,7 @@ Each project directory contains:
 | [bitu-protocol](./bitu-protocol/brief.md) | $22.27M | bsc | 4 | 4/4 (100%) | 75.0% | 75.0% (SlowMist) | 2 | stale | ✅ active | - |
 | [bitvenus](./bitvenus/brief.md) | $20.90M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [blackhole](./blackhole/brief.md) | $29.69M | avalanche | 86 | 45/86 (52%) | 31.1% | 31.1% (Code4rena) | 3 | fresh | ⚠️ declining | - |
+| [blend-money](./blend-money/brief.md) | $8.55K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [blueshift](./blueshift/brief.md) | $4.32M | kava, polygon | 23 | 2/23 (9%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [boba-bridge](./boba-bridge/brief.md) | $3.04M | ethereum | 53 | 41/53 (77%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [bonsaidao-ecosystem](./bonsaidao-ecosystem/brief.md) | $1.08M | arbitrum, base, berachain | 190 | 86/190 (45%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -481,6 +483,7 @@ Each project directory contains:
 | [flex](./flex/brief.md) | $611.66K | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [flexa](./flexa/brief.md) | $1.37M | ethereum | 2 | 2/2 (100%) | 100.0% | 100.0% (Trail of Bits) | 2 | stale | ⚠️ declining | - |
 | [flipster](./flipster/brief.md) | $33.01M | klaytn | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [folks-finance](./folks-finance/brief.md) | $89.34M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [fomo3d](./fomo3d/brief.md) | $2.52M | ethereum | 23 | 10/23 (43%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [forgeyields](./forgeyields/brief.md) | $1.27M | ethereum | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [four.meme](./four.meme/brief.md) | $4.62M | bsc | 5 | 1/5 (20%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -703,6 +706,7 @@ Each project directory contains:
 | [unitas](./unitas/brief.md) | $83.17M | bsc | 9 | 3/9 (33%) | 100.0% | 100.0% (SlowMist) | 3 | fresh | ✅ active | - |
 | [universal-bridge](./universal-bridge/brief.md) | $6.66M | base | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [uranium.io](./uranium.io/brief.md) | $7.41M | ethereum | 3 | 1/3 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [usdt0](./usdt0/brief.md) | $3612.31M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [usx.capital](./usx.capital/brief.md) | $763.33K | scroll | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [vedelegate](./vedelegate/brief.md) | $1.16M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [velodrome](./velodrome/brief.md) | $40.17M | celo, optimism | 52 | 47/52 (90%) | 40.4% | 40.4% (Sherlock, Spearbit) | 3 | aging | ✅ active | - |
@@ -729,5 +733,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T05:02:25.216Z_
-_Projects: 717_
+_Generated: 2026-06-13T10:03:09.953Z_
+_Projects: 721_

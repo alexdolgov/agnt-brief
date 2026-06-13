@@ -1,0 +1,450 @@
+{
+  "schema_version": "2.0",
+  "project_key": "blend-money",
+  "generated_at": "2026-06-13T10:02:10.705Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 11,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 8554.12688,
+    "tvl_usd": 8554.12688,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://blend.money/",
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2026",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 3,
+      "aging": 1,
+      "stale": 0,
+      "unknown": 7
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [
+    {
+      "audit_id": 12800,
+      "audit_key": "audit-12800",
+      "report_name": "Audit Reports",
+      "report_url": "https://github.com/blendmoney/audits",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12801,
+      "audit_key": "audit-12801",
+      "report_name": "blend-25-08-10-0-cantinacode.pdf",
+      "report_url": "https://github.com/blendmoney/audits/blob/main/blend-25-08-10-0-cantinacode.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12801,
+          "report_url": "https://github.com/blendmoney/audits/blob/main/blend-25-08-10-0-cantinacode.pdf"
+        },
+        {
+          "audit_id": 12819,
+          "report_url": "https://github.com/BlendMoney/audits/blob/main/blend-25-08-10-0-cantinacode.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 12802,
+      "audit_key": "audit-12802",
+      "report_name": "blend-25-09-29-0-cantinacode.pdf",
+      "report_url": "https://github.com/blendmoney/audits/blob/main/blend-25-09-29-0-cantinacode.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12802,
+          "report_url": "https://github.com/blendmoney/audits/blob/main/blend-25-09-29-0-cantinacode.pdf"
+        },
+        {
+          "audit_id": 12818,
+          "report_url": "https://github.com/BlendMoney/audits/blob/main/blend-25-09-29-0-cantinacode.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 12803,
+      "audit_key": "audit-12803",
+      "report_name": "blend-25-09-29-1-cantinacode.pdf",
+      "report_url": "https://github.com/blendmoney/audits/blob/main/blend-25-09-29-1-cantinacode.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12803,
+          "report_url": "https://github.com/blendmoney/audits/blob/main/blend-25-09-29-1-cantinacode.pdf"
+        },
+        {
+          "audit_id": 12817,
+          "report_url": "https://github.com/BlendMoney/audits/blob/main/blend-25-09-29-1-cantinacode.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 12804,
+      "audit_key": "audit-12804",
+      "report_name": "blend-25-10-02-0-zellic.pdf",
+      "report_url": "https://github.com/blendmoney/audits/blob/main/blend-25-10-02-0-zellic.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12804,
+          "report_url": "https://github.com/blendmoney/audits/blob/main/blend-25-10-02-0-zellic.pdf"
+        },
+        {
+          "audit_id": 12816,
+          "report_url": "https://github.com/BlendMoney/audits/blob/main/blend-25-10-02-0-zellic.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 12805,
+      "audit_key": "audit-12805",
+      "report_name": "blend-25-10-05-0-cantinacode.pdf",
+      "report_url": "https://github.com/blendmoney/audits/blob/main/blend-25-10-05-0-cantinacode.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12805,
+          "report_url": "https://github.com/blendmoney/audits/blob/main/blend-25-10-05-0-cantinacode.pdf"
+        },
+        {
+          "audit_id": 12815,
+          "report_url": "https://github.com/BlendMoney/audits/blob/main/blend-25-10-05-0-cantinacode.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 12806,
+      "audit_key": "audit-12806",
+      "report_name": "blend-25-10-10-0-cantinacode.pdf",
+      "report_url": "https://github.com/blendmoney/audits/blob/main/blend-25-10-10-0-cantinacode.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12806,
+          "report_url": "https://github.com/blendmoney/audits/blob/main/blend-25-10-10-0-cantinacode.pdf"
+        },
+        {
+          "audit_id": 12814,
+          "report_url": "https://github.com/BlendMoney/audits/blob/main/blend-25-10-10-0-cantinacode.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 12807,
+      "audit_key": "audit-12807",
+      "report_name": "blend-25-12-05-0-sherlock.pdf",
+      "report_url": "https://github.com/blendmoney/audits/blob/main/blend-25-12-05-0-sherlock.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "aging",
+      "date": "2025",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12807,
+          "report_url": "https://github.com/blendmoney/audits/blob/main/blend-25-12-05-0-sherlock.pdf"
+        },
+        {
+          "audit_id": 12813,
+          "report_url": "https://github.com/BlendMoney/audits/blob/main/blend-25-12-05-0-sherlock.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 12808,
+      "audit_key": "audit-12808",
+      "report_name": "blend-26-01-22-0-sherlock.pdf",
+      "report_url": "https://github.com/blendmoney/audits/blob/main/blend-26-01-22-0-sherlock.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "fresh",
+      "date": "2026",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12808,
+          "report_url": "https://github.com/blendmoney/audits/blob/main/blend-26-01-22-0-sherlock.pdf"
+        },
+        {
+          "audit_id": 12812,
+          "report_url": "https://github.com/BlendMoney/audits/blob/main/blend-26-01-22-0-sherlock.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 12809,
+      "audit_key": "audit-12809",
+      "report_name": "blend-26-03-10-0.sherlock.pdf",
+      "report_url": "https://github.com/blendmoney/audits/blob/main/blend-26-03-10-0.sherlock.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "fresh",
+      "date": "2026",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12809,
+          "report_url": "https://github.com/blendmoney/audits/blob/main/blend-26-03-10-0.sherlock.pdf"
+        },
+        {
+          "audit_id": 12811,
+          "report_url": "https://github.com/BlendMoney/audits/blob/main/blend-26-03-10-0.sherlock.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 12810,
+      "audit_key": "audit-12810",
+      "report_name": "blend-26-05-04-0.sherlock.pdf",
+      "report_url": "https://github.com/blendmoney/audits/blob/main/blend-26-05-04-0.sherlock.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "fresh",
+      "date": "2026",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12810,
+          "report_url": "https://github.com/blendmoney/audits/blob/main/blend-26-05-04-0.sherlock.pdf"
+        },
+        {
+          "audit_id": 12820,
+          "report_url": "https://github.com/BlendMoney/audits/blob/main/blend-26-05-04-0.sherlock.pdf"
+        }
+      ]
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 12800,
+        "report_name": "Audit Reports"
+      },
+      {
+        "audit_id": 12801,
+        "report_name": "blend-25-08-10-0-cantinacode.pdf"
+      },
+      {
+        "audit_id": 12802,
+        "report_name": "blend-25-09-29-0-cantinacode.pdf"
+      },
+      {
+        "audit_id": 12803,
+        "report_name": "blend-25-09-29-1-cantinacode.pdf"
+      },
+      {
+        "audit_id": 12804,
+        "report_name": "blend-25-10-02-0-zellic.pdf"
+      },
+      {
+        "audit_id": 12805,
+        "report_name": "blend-25-10-05-0-cantinacode.pdf"
+      },
+      {
+        "audit_id": 12806,
+        "report_name": "blend-25-10-10-0-cantinacode.pdf"
+      },
+      {
+        "audit_id": 12807,
+        "report_name": "blend-25-12-05-0-sherlock.pdf"
+      },
+      {
+        "audit_id": 12808,
+        "report_name": "blend-26-01-22-0-sherlock.pdf"
+      },
+      {
+        "audit_id": 12809,
+        "report_name": "blend-26-03-10-0.sherlock.pdf"
+      },
+      {
+        "audit_id": 12810,
+        "report_name": "blend-26-05-04-0.sherlock.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -59,6 +59,7 @@
 | [autofarm](./autofarm/) | $5.6M | 0.0% | ? | declining | 1 | 17 | 2026-06-13 |
 | [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 8 | 570 | 2026-06-12 |
 | [avalaunch](./avalaunch/) | $31.3M | 84.6% | ? | active | 13 | 38 | 2026-06-10 |
+| [avalon-labs](./avalon-labs/) | $550.8M | 0.0% | ? | unknown | 19 | 0 | 2026-06-13 |
 | [avantis](./avantis/) | $196.5M | 68.8% | $150.9M | declining | 3 | 61 | 2026-06-10 |
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 3 | 2026-06-12 |
 | [azuro](./azuro/) | $3.1K | 6.6% | $3.1K | active | 3 | 304 | 2026-06-10 |
@@ -90,6 +91,7 @@
 | [bitway](./bitway/) | $136.4M | 0.0% | $136.4M | active | 3 | 8 | 2026-06-12 |
 | [blackhole](./blackhole/) | $29.7M | 31.1% | ? | declining | 3 | 86 | 2026-06-10 |
 | [blast-l2](./blast-l2/) | $568.9 | 0.0% | $568.9 | unknown | 0 | 295 | 2026-06-12 |
+| [blend-money](./blend-money/) | $8.6K | 0.0% | ? | unknown | 11 | 0 | 2026-06-13 |
 | [block-analitica](./block-analitica/) | $252.8K | 0.0% | $252.8K | declining | 0 | 20 | 2026-06-12 |
 | [blueshift](./blueshift/) | $4.3M | 0.0% | ? | active | 1 | 23 | 2026-06-10 |
 | [blur](./blur/) | $91.7M | 0.0% | $91.7M | active | 0 | 21 | 2026-06-12 |
@@ -215,6 +217,7 @@
 | [flipster](./flipster/) | $33.0M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 16 | 2026-06-13 |
 | [flying-tulip](./flying-tulip/) | $51.3M | 0.0% | $51.3M | active | 0 | 62 | 2026-06-13 |
+| [folks-finance](./folks-finance/) | $89.3M | 0.0% | ? | unknown | 21 | 0 | 2026-06-13 |
 | [fomo3d](./fomo3d/) | $2.5M | 0.0% | ? | active | 0 | 23 | 2026-06-10 |
 | [forgeyields](./forgeyields/) | $1.3M | 0.0% | ? | active | 2 | 1 | 2026-06-11 |
 | [four.meme](./four.meme/) | $4.6M | 0.0% | ? | active | 1 | 5 | 2026-06-13 |
@@ -664,6 +667,7 @@
 | [universe-xyz](./universe-xyz/) | $216.1K | 21.7% | $216.1K | dead | 3 | 34 | 2026-06-11 |
 | [unslashed](./unslashed/) | $3.1M | 0.0% | $3.1M | declining | 0 | 2 | 2026-06-12 |
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-06-13 |
+| [usdt0](./usdt0/) | $3.6B | 0.0% | ? | unknown | 20 | 0 | 2026-06-13 |
 | [usx.capital](./usx.capital/) | $763.3K | 0.0% | ? | declining | 1 | 3 | 2026-06-11 |
 | [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | declining | 0 | 28 | 2026-06-11 |

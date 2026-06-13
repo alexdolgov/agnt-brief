@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "tau-labs",
-  "generated_at": "2026-06-11T03:28:33.634Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-13T17:11:37.634Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-ee40",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "tau-labs",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4979818.69313,
+    "dl_tvl_usd": 4084527.02725,
     "tvl_usd": 8065727.124159007,
     "tvl_source": "on_chain",
     "tvl_by_chain": {

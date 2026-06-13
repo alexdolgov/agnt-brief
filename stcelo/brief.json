@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stcelo",
-  "generated_at": "2026-06-11T03:08:08.072Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-13T17:16:47.054Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-ee40",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stcelo",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 55.56585264806394
   },
   "summary": {
-    "total_contracts": 19,
-    "total_addresses": 140,
-    "unique_implementations": 19,
-    "total_deployments": 140,
-    "audited_contracts": 5,
-    "unaudited_contracts": 5,
-    "contracts_verified_audited": 5,
-    "contracts_verified_unaudited": 5,
+    "total_contracts": 21,
+    "total_addresses": 142,
+    "unique_implementations": 21,
+    "total_deployments": 142,
+    "audited_contracts": 6,
+    "unaudited_contracts": 6,
+    "contracts_verified_audited": 6,
+    "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 9,
     "coverage_pct": 50,
-    "total_audits": 2,
-    "scoreable_audits": 2,
-    "dl_tvl_usd": 1598039.51756,
+    "total_audits": 3,
+    "scoreable_audits": 3,
+    "dl_tvl_usd": 1235536.47794,
     "tvl_usd": 1635081.823928974,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -48,11 +48,11 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2024-04",
-    "audit_freshness": "stale",
+    "latest_audit_date": "2024-12",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 0,
+      "aging": 1,
       "stale": 2,
       "unknown": 0
     }
@@ -63,7 +63,7 @@
     "product_family_count": 2
   },
   "surface_sufficiency": {
-    "unique_implementations": 19,
+    "unique_implementations": 21,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -223,7 +223,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2983"
+        "audit-14220"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -391,8 +391,8 @@
         }
       ],
       "audits_covering": [
-        "audit-2982",
-        "audit-2983"
+        "audit-14219",
+        "audit-14220"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -502,6 +502,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x8d6677192144292870907e3fa8a5527fe55a7ff6",
+      "name": "Election",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xbd7d392bb2ef07063256e875f363d4fb2931780e",
+      "impl_name": "Election",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x8d6677192144292870907e3fa8a5527fe55a7ff6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 42220,
@@ -708,6 +739,39 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x6cc083aed9e3ebe302a6336dbc7c921c9f03349e",
+      "name": "LockedGold",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x55e1a0c8f376964bd339167476063bfed7f213d5",
+      "impl_name": "LockedGold",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x6cc083aed9e3ebe302a6336dbc7c921c9f03349e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14218"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     },
     {
       "chain_id": 42220,
@@ -923,7 +987,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2983"
+        "audit-14220"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1369,7 +1433,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2982"
+        "audit-14219"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1753,7 +1817,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2982"
+        "audit-14219"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1764,11 +1828,35 @@
   ],
   "audits": [
     {
-      "audit_id": 2982,
-      "audit_key": "audit-2982",
+      "audit_id": 14218,
+      "audit_key": "audit-14218",
+      "report_name": "Celo Audit Competition Summary Report_Nov24.pdf",
+      "report_url": "https://github.com/celo-org/staked-celo/blob/master/audit/Celo%20Audit%20Competition%20Summary%20Report_Nov24.pdf",
+      "auditor": "Celo",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "EpochManager",
+        "LockedGold"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14219,
+      "audit_key": "audit-14219",
       "report_name": "Celo-staking-audit-mar24(Public).pdf",
       "report_url": "https://github.com/celo-org/staked-celo/blob/master/audit/Celo-staking-audit-mar24(Public).pdf",
-      "auditor": "Unknown",
+      "auditor": "Celo",
       "audit_type": "audit",
       "freshness": "stale",
       "date": "2024-04",
@@ -1778,9 +1866,9 @@
       "inherited_via_fork_id": null,
       "scope_format": "contract_name",
       "extracted_names": [
-        "Account",
-        "SpecificGroupStrategy",
-        "Vote"
+        "Account.sol",
+        "SpecificGroupStrategy.sol",
+        "Vote.sol"
       ],
       "matched_contracts": 35,
       "scope_note": null,
@@ -1789,8 +1877,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2983,
-      "audit_key": "audit-2983",
+      "audit_id": 14220,
+      "audit_key": "audit-14220",
       "report_name": "FTI_audit_stCELO.pdf",
       "report_url": "https://github.com/celo-org/staked-celo/blob/master/audit/FTI_audit_stCELO.pdf",
       "auditor": "FTI",
@@ -1818,18 +1906,18 @@
   ],
   "auditor_coverage": [
     {
+      "auditor": "Celo",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 33.3,
+      "latest_audit": "2024-12"
+    },
+    {
       "auditor": "FTI",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 30,
+      "coverage_pct": 25,
       "latest_audit": "2022-05"
-    },
-    {
-      "auditor": "Unknown",
-      "tier": 2,
-      "contracts_covered": 3,
-      "coverage_pct": 30,
-      "latest_audit": "2024-04"
     }
   ],
   "coverage_gaps": [
@@ -1848,14 +1936,15 @@
     "native": 7,
     "upstream": 0,
     "standard_library": 5,
-    "needs_review": 7
+    "needs_review": 9
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 88
+      "extraction_exact": 89
     },
     "extraction_confidence_counts": {
-      "high": 2
+      "high": 2,
+      "medium": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

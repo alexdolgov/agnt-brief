@@ -1,6 +1,6 @@
 # stcelo — Contract Index
 
-19 unique implementations on celo · 140 deployments · 5 audited · 5 unaudited · 9 unverified
+21 unique implementations on celo · 142 deployments · 6 audited · 6 unaudited · 9 unverified
 
 ## core_logic (3)
 
@@ -30,11 +30,13 @@
 | [RebasedStakedCelo (11 deployments)](./celo-42220/0x0251c3224f15e875fe6fbca04c0f9117366cc806/) | celo | 11 deployments: celo [`0x0251c3...6cc806`](./celo-42220/0x0251c3224f15e875fe6fbca04c0f9117366cc806/); celo `0x52bb50...a195c0`; celo `0x58fc55...14713c`; celo `0x6b8bb0...2352aa`; celo `0x737bce...3b2fdf`; celo `0x80ef43...8f5ac4`; celo `0x8c89e7...67c594`; celo `0x97b5ee...5b795c`; celo `0xad3317...4eba11`; celo `0xdc5762...1f44cf`; celo `0xdfc2da...45a67c` | ⚠️ Unaudited | Verified |
 | [StakedCelo (15 deployments)](./celo-42220/0x085a0d7612f35a94bd72e9ce2ff8bc86727f21ca/) | celo | 15 deployments: celo [`0x085a0d...7f21ca`](./celo-42220/0x085a0d7612f35a94bd72e9ce2ff8bc86727f21ca/); celo `0x0b2f88...65f75b`; celo `0x1b4b48...32c73d`; celo `0x2c2e2b...4edc3a`; celo `0x4387a0...4c6429`; celo `0x44c2fe...f0271f`; celo `0x6e17cf...783b67`; celo `0x809b7e...632426`; celo `0x912285...3ddcfc`; celo `0x922333...794692`; celo `0x95cc0c...1c4e49`; celo `0xa97be8...8babcb`; celo `0xafddbc...734a1d`; celo `0xb59b1c...2c4b61`; celo `0xc66858...fdfc24` | ✅ Audited | Verified |
 
-## unknown (11)
+## unknown (13)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
+| [Election](./celo-42220/0x8d6677192144292870907e3fa8a5527fe55a7ff6/) | celo | [`0x8d6677...5a7ff6`](./celo-42220/0x8d6677192144292870907e3fa8a5527fe55a7ff6/) | ⚠️ Unaudited | Verified |
 | [GroupHealth (12 deployments)](./celo-42220/0x004377e7c1c68b97c2e00943b426ba172ff476eb/) | celo | 12 deployments: celo [`0x004377...f476eb`](./celo-42220/0x004377e7c1c68b97c2e00943b426ba172ff476eb/); celo `0x073bb3...0985d9`; celo `0x140b36...cecdcf`; celo `0x193df9...d556ad`; celo `0x205f4c...bc64e1`; celo `0x2f5979...1a2f18`; celo `0x4443a4...6ac578`; celo `0x6f4606...09ff3e`; celo `0x9c6c01...c4cc57`; celo `0xbc7c8e...43051c`; celo `0xf6bccb...a94220`; celo `0xf8bf1b...beb878` | ⚠️ Unaudited | Verified |
+| [LockedGold](./celo-42220/0x6cc083aed9e3ebe302a6336dbc7c921c9f03349e/) | celo | [`0x6cc083...03349e`](./celo-42220/0x6cc083aed9e3ebe302a6336dbc7c921c9f03349e/) | ✅ Audited | Verified |
 | UnnamedContract | celo | `0x094ee2...520d67` | ❓ Unverified | Unverified |
 | UnnamedContract | celo | `0x1cf4f9...43ec90` | ❓ Unverified | Unverified |
 | UnnamedContract | celo | `0x1f0e8b...d32cea` | ❓ Unverified | Unverified |

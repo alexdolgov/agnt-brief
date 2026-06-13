@@ -750,7 +750,7 @@
 | [mm-finance](./mm-finance/) | $1.8M | 4.5% | $1.8M | declining | 3 | 192 | 2026-06-11 |
 | [moar-market](./moar-market/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mobius-exchange](./mobius-exchange/) | $9.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [mobox](./mobox/) | $6.6M | 0.0% | $6.6M | unknown | 1 | 323 | 2026-06-11 |
+| [mobox](./mobox/) | $6.6M | 0.0% | $6.6M | unknown | 1 | 323 | 2026-06-13 |
 | [mode-bridge](./mode-bridge/) | $6.1M | 2.9% | ? | declining | 21 | 100 | 2026-06-11 |
 | [mojitoswap](./mojitoswap/) | $629.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mole](./mole/) | $8.6M | 0.0% | ? | active | 1 | 49 | 2026-06-13 |
@@ -974,7 +974,7 @@
 | [rain](./rain/) | $26.1M | 0.0% | ? | active | 3 | 29 | 2026-06-12 |
 | [rainbow-bridge](./rainbow-bridge/) | $2.1M | 0.0% | ? | declining | 0 | 2 | 2026-06-11 |
 | [rank-trading](./rank-trading/) | $1.2M | 30.0% | ? | active | 2 | 13 | 2026-06-11 |
-| [rari-capital](./rari-capital/) | $321.4M | 0.0% | $321.4M | dead | 1 | 253 | 2026-05-24 |
+| [rari-capital](./rari-capital/) | $321.4M | 0.0% | $321.4M | dead | 1 | 253 | 2026-06-13 |
 | [ratex](./ratex/) | $98.8K | 0.0% | $98.8K | declining | 2 | 168 | 2026-06-13 |
 | [re7-labs](./re7-labs/) | $6.6M | 0.0% | $6.6M | active | 0 | 18 | 2026-06-12 |
 | [reddex](./reddex/) | $4.8M | 0.0% | ? | declining | 0 | 5 | 2026-06-13 |
@@ -1147,7 +1147,7 @@
 | [starknet-btc-staking](./starknet-btc-staking/) | $412.2M | 0.0% | $412.2M | unknown | 42 | 1 | 2026-05-31 |
 | [starlay-finance](./starlay-finance/) | $199.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [starterra](./starterra/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [stcelo](./stcelo/) | $1.6M | 50.0% | ? | active | 2 | 19 | 2026-06-11 |
+| [stcelo](./stcelo/) | $1.6M | 50.0% | ? | active | 3 | 21 | 2026-06-13 |
 | [stcyber](./stcyber/) | $51.4M | 0.0% | $51.4M | declining | 1 | 31 | 2026-06-11 |
 | [stealthpad](./stealthpad/) | $5.9 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [steer-protocol](./steer-protocol/) | $3.3M | 0.0% | $3.3M | active | 5 | 46 | 2026-06-12 |
@@ -1214,7 +1214,7 @@
 | [tangible](./tangible/) | $41.9M | 0.0% | ? | active | 7 | 475 | 2026-06-11 |
 | [tangoswap](./tangoswap/) | $14.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [tarot](./tarot/) | $154.4K | 0.0% | $154.4K | dead | 1 | 139 | 2026-05-31 |
-| [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | declining | 0 | 179 | 2026-06-11 |
+| [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | declining | 0 | 179 | 2026-06-13 |
 | [tea-rex](./tea-rex/) | $9.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [tealswap](./tealswap/) | $4.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [team-finance](./team-finance/) | $5.4K | 0.0% | $5.4K | active | 2 | 66 | 2026-06-12 |
@@ -1380,7 +1380,7 @@
 | [yieldfi](./yieldfi/) | $43.7M | 70.6% | $16.3M | active | 6 | 22 | 2026-06-11 |
 | [yieldly](./yieldly/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [yieldnest](./yieldnest/) | $19.2M | 44.8% | $295.1K | active | 16 | 33 | 2026-06-11 |
-| [yieldseeker](./yieldseeker/) | $102.9M | 0.0% | $102.9M | active | 1 | 190 | 2026-06-11 |
+| [yieldseeker](./yieldseeker/) | $102.9M | 0.0% | $102.9M | active | 1 | 206 | 2026-06-13 |
 | [yo-protocol](./yo-protocol/) | $40.9M | 56.3% | $12.6K | declining | 7 | 20 | 2026-06-11 |
 | [yoshi-exchange](./yoshi-exchange/) | $6.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [youves](./youves/) | $35.5M | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |

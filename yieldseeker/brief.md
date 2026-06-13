@@ -5,11 +5,11 @@
 - Project: YieldSeeker (`yieldseeker`)
 - Website: [https://yieldseeker.xyz](https://yieldseeker.xyz)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T04:19:52.923Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
+- Generated: 2026-06-13T17:22:44.354Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ee40
 - Chains: base
-- Contract surface: 190 unique implementations (693 raw deployments)
-- DeFi Llama TVL: $1,294,442.74
+- Contract surface: 206 unique implementations (737 raw deployments)
+- DeFi Llama TVL: $1,422,074.41
 - On-chain TVL (included contracts): $102,881,152.86
 - TVL by chain: Base $102,881,152.86
 
@@ -23,12 +23,12 @@ The YieldSeeker family uses a shared set of vault implementations (EVault, UsdcV
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/50 (0.0%)
-- Verified + Unaudited implementations: 50
-- Verified by bytecode match: 0
+- Verified implementations audited: 0/66 (0.0%)
+- Verified + Unaudited implementations: 65
+- Verified by bytecode match: 1
 - Unverified implementations: 140
-- Unique implementations: 190
-- Raw deployments: 693
+- Unique implementations: 206
+- Raw deployments: 737
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $102,881,152.86
@@ -46,7 +46,7 @@ The YieldSeeker family uses a shared set of vault implementations (EVault, UsdcV
 
 - None
 
-### ⚠️ Verified + Unaudited (50)
+### ⚠️ Verified + Unaudited (65)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -63,7 +63,7 @@ The YieldSeeker family uses a shared set of vault implementations (EVault, UsdcV
 | WasabiVault | core_logic | base | 82 deployments: base [`0x00d7c8...990ea1`](./contracts/base-8453/0x00d7c86c29f11206cae7f30951047bd278990ea1/); base `0x04acd5...0f5d30`; base `0x091a22...862eda`; base `0x0da575...6bb12b`; base `0x0e54d3...8f0939`; base `0x114073...da64dd`; base `0x11a030...8fc212`; base `0x12c9de...f9cf49`; base `0x181dc3...cbeb13`; base `0x197934...181313`; base `0x1e5f25...aa3915`; base `0x215c8d...f584ba`; base `0x228dca...6d192f`; base `0x277c83...ce3ddd`; base `0x2a3c70...f9b442`; base `0x2d638c...c54f16`; base `0x2eef82...52ceaa`; base `0x313409...0b8b2d`; base `0x3733b6...dad959`; base `0x38ba55...0d9865`; base `0x38dc85...384939`; base `0x3b5587...1cd8ce`; base `0x3bc860...7f9792`; base `0x3edc1f...f3863f`; base `0x3f47af...d089af`; base `0x42011d...2e695e`; base `0x4bd3c9...e3765b`; base `0x4e8fb8...eb2a2f`; base `0x4eeaed...df99f6`; base `0x50afcb...874687`; base `0x52c88e...7b2a40`; base `0x542b5d...93b191`; base `0x55dcda...1af8c2`; base `0x5955cf...a8cb60`; base `0x5c9258...9806b0`; base `0x5caa33...6c1c2e`; base `0x5f164b...1922da`; base `0x6378a7...142afd`; base `0x65d8f6...7e94d2`; base `0x6655cf...160f66`; base `0x699cbf...2dba2c`; base `0x70b808...4f979c`; base `0x74b1e4...39780d`; base `0x76106b...364a95`; base `0x7daa6c...880d3b`; base `0x7e7d9a...869c94`; base `0x82ff77...61dfbe`; base `0x837277...ec208c`; base `0x8379dc...285374`; base `0x87b416...ac459e`; base `0x88e23d...2012a3`; base `0x893f93...de2c89`; base `0x8d1f90...601009`; base `0x9a9298...16ea10`; base `0x9c4a49...265057`; base `0xa10f4d...06070f`; base `0xa34800...464f80`; base `0xa3a575...470fb2`; base `0xa3ae97...c2a188`; base `0xabb566...c3a9d8`; base `0xadac74...b86a98`; base `0xaec98b...bd9dd3`; base `0xb1a597...0bd0c4`; base `0xbcc889...058117`; base `0xbf6668...629cc4`; base `0xc62697...c8970f`; base `0xc84879...1df3e3`; base `0xc857bc...fb4240`; base `0xc8bd38...16b5bb`; base `0xcc3974...cdbcf3`; base `0xcc8d0c...4e6a14`; base `0xcddb2f...58cc8d`; base `0xcfd04f...a8eb6c`; base `0xd7438e...71d1ac`; base `0xd76dcb...1af9a1`; base `0xe33cc6...5372c5`; base `0xe36530...288ca4`; base `0xe8f53b...8a61bb`; base `0xeb55a1...3fd4d0`; base `0xeffe2b...3cea2f`; base `0xf50c66...db1059`; base `0xfb39f4...9cbf8e` | ⚠️ Unaudited |
 | VeTranche | core_logic | base | 4 deployments: base [`0x39fe28...d4785b`](./contracts/base-8453/0x39fe2822f3b1a02099bd89cced23af69f4d4785b/); base `0x691411...d21693`; base `0x7bf094...8efb05`; base `0xa13e59...aa61f7` | ⚠️ Unaudited |
 | AaveStrategy | operational_periphery | base | [`0x023d35...537fcf`](./contracts/base-8453/0x023d357d04f2d024993f6c002837ed3195537fcf/) | ⚠️ Unaudited |
-| BeaconProxy | proxy | base | [`0x611745...b898d1`](./contracts/base-8453/0x611745c9107d0197f161556691c5129fd9b898d1/) | ⚠️ Unaudited |
+| BeaconProxy | registry | base | [`0x611745...b898d1`](./contracts/base-8453/0x611745c9107d0197f161556691c5129fd9b898d1/) | ⚠️ Unaudited |
 | CommunityRewards | unknown | base | 5 deployments: base [`0x18c2ab...e6fe20`](./contracts/base-8453/0x18c2abb47f4d5ea9bffd771ad9a15f21c3e6fe20/); base `0x3c113d...57e46d`; base `0xe2493c...4ffdc5`; base `0xe63f5f...109aa2`; base `0xeec8f8...3b8a4c` | ⚠️ Unaudited |
 | ERC1967Proxy | proxy | base | 6 deployments: base [`0x851fc7...1b1bf2`](./contracts/base-8453/0x851fc799c9f1443a2c1e6b966605a80f8a1b1bf2/); base `0xa456c7...7da37c`; base `0xbdae5d...b248aa`; base `0xbfea82...505188`; base `0xc69ada...54aa1b`; base `0xfc81df...3369fe` | ⚠️ Unaudited |
 | ExactOutSwapper | adapter | base | 4 deployments: base [`0x3d1c97...4de11b`](./contracts/base-8453/0x3d1c97fa08a23a15f56fcca7599b0b2a3a4de11b/); base `0x457c7b...4f9773`; base `0x5998fa...632539`; base `0xa5ba9e...c58dd9` | ⚠️ Unaudited |
@@ -76,7 +76,8 @@ The YieldSeeker family uses a shared set of vault implementations (EVault, UsdcV
 | Loan | unknown | base | 40 deployments: base [`0x053ae6...880c0b`](./contracts/base-8453/0x053ae60117b2a90041e6872b18403ab102880c0b/); base `0x0b4a35...6f4c82`; base `0x100451...8a94fb`; base `0x12a31b...2fc92d`; base `0x142ce7...fc9717`; base `0x21b48f...f3c35e`; base `0x23ca23...4c1d0a`; base `0x25244f...2b9553`; base `0x26ecad...ca3f2a`; base `0x371d2b...b234e1`; base `0x3addab...7657fa`; base `0x3c7645...349a5c`; base `0x478805...58d421`; base `0x63a993...59566e`; base `0x69e679...7c6972`; base `0x746514...c63913`; base `0x761e20...d43c35`; base `0x780cc3...c7c2ce`; base `0x87f18b...58efd0`; base `0x8b51e5...836d9d`; base `0x8fbe84...d73821`; base `0x92f4cf...408f0b`; base `0x9c0fc7...391d32`; base `0x9c58aa...f56971`; base `0xad4edc...bd37ea`; base `0xb88dcf...4509c9`; base `0xc4c2e1...775f72`; base `0xcc5cc6...e39b75`; base `0xd1cfbc...0b5b4c`; base `0xd2f7bc...fe2e1e`; base `0xdd9b03...c735c3`; base `0xe02398...609cce`; base `0xebeb86...a29708`; base `0xec0af9...8be22f`; base `0xf132bd...ba06a7`; base `0xf4c17e...b0dd26`; base `0xf6a044...279b5f`; base `0xf761ac...d13d01`; base `0xfb5053...95fbea`; base `0xfdb262...bc7489` | ⚠️ Unaudited |
 | LoanDemo | unknown | base | [`0x53bfd2...fb1f86`](./contracts/base-8453/0x53bfd2835db84018fb2021146c790f049dfb1f86/) | ⚠️ Unaudited |
 | LoanV2Native | unknown | base | 7 deployments: base [`0x1dc763...d3b858`](./contracts/base-8453/0x1dc76341ca156e376736ddba042aba071bd3b858/); base `0x2acf5c...cacdec`; base `0x71a28f...476341`; base `0xe2addc...f7e108`; base `0xeda1e6...93c061`; base `0xf535d5...5caf27`; base `0xf755ec...f249c4` | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | base | 8 deployments: base [`0x1401d1...ce006b`](./contracts/base-8453/0x1401d1271c47648ac70cbcdfa3776d4a87ce006b/); base `0x1d3b1c...774657`; base `0x43e623...1d1f46`; base `0x5435bc...259ca0`; base `0x75e1a1...337e1f`; base `0x877344...6e9084`; base `0xe74c49...7ced56`; base `0xef417a...de5d03` | ⚠️ Unaudited |
+| MetaMorpho | unknown | base | 6 deployments: base [`0x12afde...70406e`](./contracts/base-8453/0x12afdefb2237a5963e7bab3e2d46ad0eee70406e/); base `0xbeef01...228183`; base `0xc0c568...0deb12`; base `0xc1256a...00a2ca`; base `0xdb90a4...9bfa83`; base `0xee8f4e...e44b61` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | base | 11 deployments: base [`0x1401d1...ce006b`](./contracts/base-8453/0x1401d1271c47648ac70cbcdfa3776d4a87ce006b/); base `0x1d3b1c...774657`; base `0x43e623...1d1f46`; base `0x5435bc...259ca0`; base `0x75e1a1...337e1f`; base `0x877344...6e9084`; base `0xbeefa7...9444e0`; base `0xbeefa7...f3878f`; base `0xcddcdd...b9e8f3`; base `0xe74c49...7ced56`; base `0xef417a...de5d03` | ⚠️ Unaudited |
 | Multicall | periphery | base | [`0x118f99...c1e5c0`](./contracts/base-8453/0x118f99abd7101b528b17ab91c7d7aefd2cc1e5c0/) | ⚠️ Unaudited |
 | MultiProtocolSwapRouter | adapter | base | 8 deployments: base [`0x0d28bc...14610f`](./contracts/base-8453/0x0d28bcb1ebac497a6ef6d0f980ad4bf74c14610f/); base `0x186ef3...044a86`; base `0x1a3b8a...2f1dc2`; base `0x560b56...1e8d74`; base `0x6188d4...8f4cef`; base `0x696d0d...2045a7`; base `0xb42520...e20c08`; base `0xc2e9ce...4ed5ac` | ⚠️ Unaudited |
 | OptimismReceiver | unknown | base | [`0x212871...ed8474`](./contracts/base-8453/0x212871a1c235892f86cab30e937e18c94aed8474/) | ⚠️ Unaudited |
@@ -100,6 +101,20 @@ The YieldSeeker family uses a shared set of vault implementations (EVault, UsdcV
 | V3Utils | unknown | base | 4 deployments: base [`0x7d1f9f...38b9e1`](./contracts/base-8453/0x7d1f9fc22bed0798cda3fdb18b14a96fc838b9e1/); base `0x85f7d1...0f3f85`; base `0x98ec49...2ec790`; base `0xde1734...36eeb7` | ⚠️ Unaudited |
 | WasabiACPAccountFactory | registry | base | 7 deployments: base [`0x21bc69...eeb6ff`](./contracts/base-8453/0x21bc6937d96a4011a0106ac5ee7b1899b9eeb6ff/); base `0x54ca91...1f3e5e`; base `0x710ab5...3d9e74`; base `0x71d035...eaaf0d`; base `0xc7f4e7...cbeb9b`; base `0xf32992...d1e4f8`; base `0xfc8d74...bedcad` | ⚠️ Unaudited |
 | WasabiRouter | adapter | base | [`0xfae69f...d8558f`](./contracts/base-8453/0xfae69f2c82747f878f74c1e57a1aed945ed8558f/) | ⚠️ Unaudited |
+| YieldSeekerAaveV3Adapter | adapter | base | [`0x2d04c5...36baeb`](./contracts/base-8453/0x2d04c5bdf9ecb7b16833c4d8006c53eb0736baeb/) | ⚠️ Unaudited |
+| YieldSeekerAdapterRegistry | adapter | base | [`0x4a5c3c...189cf0`](./contracts/base-8453/0x4a5c3cca0ac2a1949d600891a89dd19b35189cf0/) | ⚠️ Unaudited |
+| YieldSeekerAdminTimelock | governance | base | [`0x8e074b...e23bab`](./contracts/base-8453/0x8e074b7636f6a56097f1f719e708e2c932e23bab/) | ⚠️ Unaudited |
+| YieldSeekerAerodromeCLSwapAdapter | adapter | base | [`0x94565f...c6b0c4`](./contracts/base-8453/0x94565f4c559d146e2a3e1f18bfeb8b2319c6b0c4/) | ⚠️ Unaudited |
+| YieldSeekerAerodromeV2SwapAdapter | adapter | base | [`0xa3c922...1d020f`](./contracts/base-8453/0xa3c92297ed000f2778924872fc5d2cfe341d020f/) | ⚠️ Unaudited |
+| YieldSeekerAgentWalletFactory | registry | base | [`0x9c7410...c95130`](./contracts/base-8453/0x9c7410a0facac60850c46ee5b58b518daec95130/) | ⚠️ Unaudited |
+| YieldSeekerAgentWalletV1 | unknown | base | [`0x324034...e05051`](./contracts/base-8453/0x32403455357589523435db18b414057d7ce05051/) | ⚠️ Unaudited |
+| YieldSeekerCompoundV2Adapter | adapter | base | [`0x3f7de8...d5366a`](./contracts/base-8453/0x3f7de883c831b3f164bdc57855f199616ad5366a/) | ⚠️ Unaudited |
+| YieldSeekerCompoundV3Adapter | adapter | base | [`0x66621c...9b3ad0`](./contracts/base-8453/0x66621c39cdea3359c22b6d9de101a3b9d19b3ad0/) | ⚠️ Unaudited |
+| YieldSeekerERC4626Adapter | adapter | base | [`0x3bf2b1...f12ad7`](./contracts/base-8453/0x3bf2b1e1da1bd2c3d397e9df06b7f717c2f12ad7/) | ⚠️ Unaudited |
+| YieldSeekerFeeTracker | unknown | base | [`0x26f4bb...c957db`](./contracts/base-8453/0x26f4bb36dbb42fd38956c6c1e6602a9182c957db/) | ⚠️ Unaudited |
+| YieldSeekerMerklAdapter | adapter | base | [`0xda7ac0...2bfc0c`](./contracts/base-8453/0xda7ac043a74f1f96da01b073743448b6ba2bfc0c/) | ⚠️ Unaudited |
+| YieldSeekerSwapSellPolicy | unknown | base | [`0x1ce58b...9cf3ec`](./contracts/base-8453/0x1ce58b462284b2ee8084ef36030fe03ae89cf3ec/) | ⚠️ Unaudited |
+| YieldSeekerUniswapV3SwapAdapter | adapter | base | [`0x4ad957...840b58`](./contracts/base-8453/0x4ad957983f4a419f847664722870f4033c840b58/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -107,11 +122,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ⚠️ Verified by Bytecode + Unaudited (0)
+### ⚠️ Verified by Bytecode + Unaudited (1)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| AutoCompound | unknown | base | 21 deployments: base [`0x06f64f...6bd7b9`](./contracts/base-8453/0x06f64f46415aa307c46692f73fd85649086bd7b9/); base `0x1218bb...6add80`; base `0x16d89b...6f48f2`; base `0x31d3c6...9a43c2`; base `0x3f0a58...12b43e`; base `0x46396e...0f7cb7`; base `0x4a2d24...a41357`; base `0x4d2f64...eea3e8`; base `0x595394...205aa0`; base `0x5b1c31...1e24aa`; base `0x5b6d7a...60a126`; base `0x751d49...7d196c`; base `0x91a7fd...3c3cae`; base `0xa148be...e26ba1`; base `0xbb94c2...047ae5`; base `0xc1ba1d...ae0b5c`; base `0xc5d381...6dae8a`; base `0xcac344...1b7fcc`; base `0xd6bfe1...6ec349`; base `0xdf46f1...92f185`; base `0xeaa288...d407d1` | ⚠️ Unaudited (bytecode match) |
 
 ### ❓ Unverified (140)
 
@@ -272,6 +289,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| base | [`0x1216d1...151680`](./contracts/base-8453/0x1216d111d35fb660624885b2d37b09ce48151680/) | Tranche | core_logic | $45,062,481.91 | Verified native implementation with $45,062,481.91 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xf42f57...fd9169`](./contracts/base-8453/0xf42f5795d9ac7e9d757db633d693cd548cfd9169/) | fToken | token | $12,511,715.41 | Verified native implementation with $12,511,715.41 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x043413...f62b4a`](./contracts/base-8453/0x0434133f15fa2b2f142565a0d992a7ed4ef62b4a/) | Vault | core_logic | $7,774,439.61 | Verified native implementation with $7,774,439.61 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x02c514...1528cd`](./contracts/base-8453/0x02c51413a0c76af2c71d74cfadb414a0ed1528cd/) | V3Vault | core_logic | $665,041.05 | Verified native implementation with $665,041.05 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
@@ -286,6 +304,7 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0x059813...ec4e98`](./contracts/base-8453/0x05981339909992a8d9d13e8c651e54f306ec4e98/) | LeverageTransformer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x053ae6...880c0b`](./contracts/base-8453/0x053ae60117b2a90041e6872b18403ab102880c0b/) | Loan | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x53bfd2...fb1f86`](./contracts/base-8453/0x53bfd2835db84018fb2021146c790f049dfb1f86/) | LoanDemo | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x12afde...70406e`](./contracts/base-8453/0x12afdefb2237a5963e7bab3e2d46ad0eee70406e/) | MetaMorpho | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x1401d1...ce006b`](./contracts/base-8453/0x1401d1271c47648ac70cbcdfa3776d4a87ce006b/) | MetaMorphoV1_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x0d28bc...14610f`](./contracts/base-8453/0x0d28bcb1ebac497a6ef6d0f980ad4bf74c14610f/) | MultiProtocolSwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x3075ca...e5c3d9`](./contracts/base-8453/0x3075ca37855e5db0d0d9d8536d14919846e5c3d9/) | PairInfos | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -297,15 +316,28 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0x08292d...74503d`](./contracts/base-8453/0x08292dff21e8f5ed5510a82cfca5ee141274503d/) | SwapRouter02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x06a1eb...073a7b`](./contracts/base-8453/0x06a1ebf7e086c69c11318486c967f24f0d073a7b/) | V3Oracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x7d1f9f...38b9e1`](./contracts/base-8453/0x7d1f9fc22bed0798cda3fdb18b14a96fc838b9e1/) | V3Utils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4a5c3c...189cf0`](./contracts/base-8453/0x4a5c3cca0ac2a1949d600891a89dd19b35189cf0/) | YieldSeekerAdapterRegistry | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x8e074b...e23bab`](./contracts/base-8453/0x8e074b7636f6a56097f1f719e708e2c932e23bab/) | YieldSeekerAdminTimelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x94565f...c6b0c4`](./contracts/base-8453/0x94565f4c559d146e2a3e1f18bfeb8b2319c6b0c4/) | YieldSeekerAerodromeCLSwapAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xa3c922...1d020f`](./contracts/base-8453/0xa3c92297ed000f2778924872fc5d2cfe341d020f/) | YieldSeekerAerodromeV2SwapAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x9c7410...c95130`](./contracts/base-8453/0x9c7410a0facac60850c46ee5b58b518daec95130/) | YieldSeekerAgentWalletFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x324034...e05051`](./contracts/base-8453/0x32403455357589523435db18b414057d7ce05051/) | YieldSeekerAgentWalletV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x3f7de8...d5366a`](./contracts/base-8453/0x3f7de883c831b3f164bdc57855f199616ad5366a/) | YieldSeekerCompoundV2Adapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x66621c...9b3ad0`](./contracts/base-8453/0x66621c39cdea3359c22b6d9de101a3b9d19b3ad0/) | YieldSeekerCompoundV3Adapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x3bf2b1...f12ad7`](./contracts/base-8453/0x3bf2b1e1da1bd2c3d397e9df06b7f717c2f12ad7/) | YieldSeekerERC4626Adapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x26f4bb...c957db`](./contracts/base-8453/0x26f4bb36dbb42fd38956c6c1e6602a9182c957db/) | YieldSeekerFeeTracker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xda7ac0...2bfc0c`](./contracts/base-8453/0xda7ac043a74f1f96da01b073743448b6ba2bfc0c/) | YieldSeekerMerklAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x1ce58b...9cf3ec`](./contracts/base-8453/0x1ce58b462284b2ee8084ef36030fe03ae89cf3ec/) | YieldSeekerSwapSellPolicy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4ad957...840b58`](./contracts/base-8453/0x4ad957983f4a419f847664722870f4033c840b58/) | YieldSeekerUniswapV3SwapAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 50 |
-| upstream | 0 |
+| native | 92 |
+| upstream | 1 |
 | standard_library | 22 |
-| needs_review | 118 |
+| needs_review | 91 |
 
 ## Scope Matching Notes
 
@@ -318,6 +350,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [3134] 20260305-nethermind.pdf
+- [14223] 20260305-nethermind.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

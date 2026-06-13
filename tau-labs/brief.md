@@ -7,11 +7,11 @@
 - Project: TAU Labs (`tau-labs`)
 - Website: [https://www.628labs.xyz/](https://www.628labs.xyz/)
 - Lifecycle: declining (Tier 0, 71.8% below peak)
-- Generated: 2026-06-11T03:28:33.634Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
+- Generated: 2026-06-13T17:11:37.634Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ee40
 - Chains: ethereum, plasma
 - Contract surface: 179 unique implementations (569 raw deployments)
-- DeFi Llama TVL: $4,979,818.69
+- DeFi Llama TVL: $4,084,527.03
 - On-chain TVL (included contracts): $8,065,727.12
 - TVL by chain: Ethereum $7,977,123.73 | Plasma $88,603.39
 

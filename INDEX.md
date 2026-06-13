@@ -1013,10 +1013,15 @@
 | [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 0 | 11 | 2026-05-31 |
 | [rook](./rook/) | $190.1K | 0.0% | $190.1K | dead | 0 | 73 | 2026-06-11 |
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
+| [root-finance](./root-finance/) | $1.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
+| [roseonx](./roseonx/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [router-protocol](./router-protocol/) | $9.9K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [royco-protocol](./royco-protocol/) | $13.0M | 0.0% | $13.0M | active | 6 | 17 | 2026-06-12 |
 | [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 15 | 2026-05-31 |
+| [rswap](./rswap/) | $48.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [rubic](./rubic/) | $148.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [ruby.exchange](./ruby.exchange/) | $151.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-06-11 |
 | [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 0 | 193 | 2026-06-12 |
 | [ryze-protocol](./ryze-protocol/) | $328.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |

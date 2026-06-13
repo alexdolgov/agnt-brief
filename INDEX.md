@@ -478,12 +478,17 @@
 | [goledo](./goledo/) | $3.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [gomble-games](./gomble-games/) | $14.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [gondi](./gondi/) | $35.6 | 20.0% | $35.6 | active | 2 | 30 | 2026-06-11 |
+| [goodentry](./goodentry/) | $70.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [goose-finance](./goose-finance/) | $249.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [goose](./goose/) | $1.6K | 0.0% | $1.6K | active | 0 | 11 | 2026-06-12 |
 | [goosefx](./goosefx/) | $1.5K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [goplus-security](./goplus-security/) | $65.3 | 0.0% | $65.3 | active | 0 | 34 | 2026-06-12 |
+| [grape-finance](./grape-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [gravis-finance](./gravis-finance/) | $33.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [gravity-bridge](./gravity-bridge/) | $91.3M | 0.0% | $91.3M | active | 0 | 117 | 2026-06-12 |
 | [gravity-finance](./gravity-finance/) | $90.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [gravity](./gravity/) | $8.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [gridex](./gridex/) | $54.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [gro](./gro/) | $5.0M | 0.0% | $5.0M | declining | 0 | 134 | 2026-06-13 |
 | [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [grvt](./grvt/) | $39.1M | 0.0% | $39.1M | declining | 0 | 12 | 2026-06-12 |

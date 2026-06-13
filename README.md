@@ -1059,9 +1059,14 @@ Each project directory contains:
 | [pembrock-finance](./pembrock-finance/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [perpl](./perpl/brief.md) | $1.18M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [phoenix](./phoenix/brief.md) | $1.19M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [phoenix-bonds](./phoenix-bonds/brief.md) | $470.08K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [phoenix-defi-hub](./phoenix-defi-hub/brief.md) | $1.58M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [phuture](./phuture/brief.md) | $30.20K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [piggybank](./piggybank/brief.md) | $2.42M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [pika-protocol](./pika-protocol/brief.md) | $402.55K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [pionex](./pionex/brief.md) | $37.13M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [pippi](./pippi/brief.md) | $75.17K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [ploutos-money](./ploutos-money/brief.md) | $483.11 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [pnetwork](./pnetwork/brief.md) | $13.10M | 4 | 12 | 11/12 (92%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [polkamarkets](./polkamarkets/brief.md) | $12.57K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [polygon-zkevm-bridge](./polygon-zkevm-bridge/brief.md) | $69.38M | ethereum | 14 | 14/14 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1260,5 +1265,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T14:12:03.970Z_
-_Projects: 1248_
+_Generated: 2026-06-13T14:13:21.194Z_
+_Projects: 1253_

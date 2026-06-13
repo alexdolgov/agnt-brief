@@ -1,6 +1,12 @@
 # universal-bridge — Contract Index
 
-1 unique implementations on base · 96 deployments · 0 audited · 1 unaudited · 0 unverified
+2 unique implementations on base · 97 deployments · 0 audited · 2 unaudited · 0 unverified
+
+## governance (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [GnosisSafeL2](./base-8453/0x74ed5ed72df3bff374e4c87b8ff4bdebca954abe/) | base | [`0x74ed5e...954abe`](./base-8453/0x74ed5ed72df3bff374e4c87b8ff4bdebca954abe/) | ⚠️ Unaudited | Verified |
 
 ## unknown (1)
 

@@ -1,0 +1,17 @@
+{
+  "address": "0x1a86ff397b58db43ab019d336931e6a71cc56ce5",
+  "chain_id": 59144,
+  "contract_name": "MultisigWallet",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:02:01.644Z"
+}

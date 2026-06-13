@@ -4,12 +4,12 @@
 
 - Project: SPHERE (`sphere`)
 - Website: [https://www.sphere.finance](https://www.sphere.finance)
-- Lifecycle: active (Tier 0, 75.4% below peak)
-- Generated: 2026-06-11T02:56:25.926Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
-- Chains: arbitrum, avalanche, base, kava, polygon
-- Contract surface: 217 unique implementations (648 raw deployments)
-- DeFi Llama TVL: $6,675,979.00
+- Lifecycle: active (Tier 0, 75.6% below peak)
+- Generated: 2026-06-13T01:57:24.665Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-d5d2
+- Chains: arbitrum, avalanche, base, bsc, kava, mantle, optimism, polygon
+- Contract surface: 221 unique implementations (662 raw deployments)
+- DeFi Llama TVL: $6,639,190.00
 - On-chain TVL (included contracts): $229,383,952.26
 - TVL by chain: Arbitrum $224,669,814.63 | Polygon $4,672,310.03 | Base $41,821.96 | Avalanche $5.64
 
@@ -23,12 +23,12 @@ Dyson vaults and Preon Finance strategies share infrastructure such as oracles (
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/109 (0.0%)
-- Verified + Unaudited implementations: 109
+- Verified implementations audited: 0/113 (0.0%)
+- Verified + Unaudited implementations: 113
 - Verified by bytecode match: 0
 - Unverified implementations: 108
-- Unique implementations: 217
-- Raw deployments: 648
+- Unique implementations: 221
+- Raw deployments: 662
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $229,383,952.26
@@ -46,14 +46,14 @@ Dyson vaults and Preon Finance strategies share infrastructure such as oracles (
 
 - None
 
-### ⚠️ Verified + Unaudited (109)
+### ⚠️ Verified + Unaudited (113)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | ATokenInstance | token | polygon | 4 deployments: polygon [`0x82e64f...2312ee`](./contracts/polygon-137/0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee/); polygon `0xea1132...6f7ac9`; arbitrum `0x8ffdf2...0a0692`; arbitrum `0xe50fa9...8128c8` | ⚠️ Unaudited |
 | UChildERC20 | token | polygon | [`0x172370...a610af`](./contracts/polygon-137/0x172370d5cd63279efa6d502dab29171933a610af/) | ⚠️ Unaudited |
 | SmartVaultActivePool | core_logic | arbitrum | 11 deployments: polygon `0x56b6d3...685724`; polygon `0xba8235...3ba5e0`; polygon `0xc93ffe...4ca8e6`; arbitrum [`0x1ec20c...356998`](./contracts/arbitrum-42161/0x1ec20cd5d6396ac5956ddb18aa469fe17d356998/); arbitrum `0x5394d2...b678d4`; arbitrum `0x9738b4...0d0646`; arbitrum `0xb4640f...05be3d`; arbitrum `0xba7e4b...af1b95`; arbitrum `0xccfa58...57df7c`; arbitrum `0xf96386...297f4c`; arbitrum `0xf9d14c...930dd5` | ⚠️ Unaudited |
-| SphereToken | token | polygon | 3 deployments: polygon [`0x57bc5f...83fb36`](./contracts/polygon-137/0x57bc5f620bde757c0a81350d21489dab1783fb36/); polygon `0x62f594...9658a7`; polygon `0x8d5460...5b9716` | ⚠️ Unaudited |
+| SphereToken | token | polygon | 4 deployments: polygon [`0x57bc5f...83fb36`](./contracts/polygon-137/0x57bc5f620bde757c0a81350d21489dab1783fb36/); polygon `0x62f594...9658a7`; polygon `0x8d5460...5b9716`; polygon `0xed58c8...3f7ca7` | ⚠️ Unaudited |
 | DebtToken | token | base | [`0xc19669...be57f5`](./contracts/base-8453/0xc19669a405067927865b40ea045a2baabbbe57f5/) | ⚠️ Unaudited |
 | UniV3Vault2 | core_logic | arbitrum | 7 deployments: arbitrum [`0x17831b...5053fd`](./contracts/arbitrum-42161/0x17831b2d149bd43fbde0eb1b727f86abbd5053fd/); arbitrum `0x4cbdd5...d0f35e`; arbitrum `0x505a98...29be7a`; arbitrum `0x6c7e1c...13d6d1`; arbitrum `0x9c9790...45b1d4`; arbitrum `0xb33775...203e00`; arbitrum `0xb5a3e0...b7edf1` | ⚠️ Unaudited |
 | SmartVaultPSM | core_logic | arbitrum | 6 deployments: arbitrum [`0x07fd08...cd9e95`](./contracts/arbitrum-42161/0x07fd08a906f84d364969a36016e8762b30cd9e95/); arbitrum `0x202d1d...39106b`; arbitrum `0x48e897...9484c9`; arbitrum `0x714c93...54690a`; arbitrum `0xb60c7b...c0eb9c`; arbitrum `0xbd4264...a491e9` | ⚠️ Unaudited |
@@ -105,6 +105,8 @@ Dyson vaults and Preon Finance strategies share infrastructure such as oracles (
 | FeeCollector | unknown | base | 2 deployments: base [`0x8e6dd2...cb73cf`](./contracts/base-8453/0x8e6dd2eee506d707505376b611e64978bacb73cf/); base `0xe7367a...5d0f43` | ⚠️ Unaudited |
 | FlairStaker | core_logic | avalanche | [`0xe5b584...246c6e`](./contracts/avalanche-43114/0xe5b584f5f8b2872202433d56299e3867ba246c6e/) | ⚠️ Unaudited |
 | GasPool | core_logic | base | [`0x2d450b...5a741f`](./contracts/base-8453/0x2d450b96abe5de161e1780c08af55b2d3a5a741f/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | bsc | 9 deployments: bsc [`0x124e84...8e50b0`](./contracts/bsc-56/0x124e8498a25eb6407c616188632d40d80f8e50b0/); bsc `0x79e519...9d3b6e`; polygon `0x1a2ce4...94cff4`; polygon `0x20d617...3dd56a`; polygon `0x74b514...1eadef`; polygon `0x826b8d...0b99f4`; base `0x6268a3...330270`; base `0xe79996...42fc98`; arbitrum `0xa6efac...5dbe02` | ⚠️ Unaudited |
+| GnosisSafeProxy | governance | optimism | 2 deployments: optimism [`0x93b0a3...a60c24`](./contracts/optimism-10/0x93b0a33911de79b897eb0439f223935af5a60c24/); mantle `0xfdc036...b375b0` | ⚠️ Unaudited |
 | GyroECLPOracle | operational_periphery | polygon | 3 deployments: polygon [`0x4e7845...75e200`](./contracts/polygon-137/0x4e78453e2540e996a6cd9ddf1649a7694b75e200/); polygon `0x571d19...6b717b`; polygon `0x7cc8f5...9c9195` | ⚠️ Unaudited |
 | IchiVaultOracle | operational_periphery | polygon | 7 deployments: polygon [`0x05b0bd...3b1d65`](./contracts/polygon-137/0x05b0bd6242743033c4b8d8726ca46b2ee33b1d65/); polygon `0x1a5613...f175b8`; polygon `0x699e38...53f44c`; polygon `0xa8fc6e...091e1c`; polygon `0xbb3dc7...bba5f6`; polygon `0xde71c1...cf12a3`; polygon `0xdecaae...397289` | ⚠️ Unaudited |
 | MintChecker | unknown | arbitrum | 4 deployments: arbitrum [`0x706b81...be477a`](./contracts/arbitrum-42161/0x706b816b5ddf3e62e0e2737693827d4a5cbe477a/); arbitrum `0x9a96c6...01ea6c`; arbitrum `0xcd47db...027a12`; arbitrum `0xeb188b...d57a6e` | ⚠️ Unaudited |
@@ -130,6 +132,7 @@ Dyson vaults and Preon Finance strategies share infrastructure such as oracles (
 | RewardsDistributor | operational_periphery | polygon | 10 deployments: polygon [`0x00dead...aa9e20`](./contracts/polygon-137/0x00dead8d27e0fe039ad92eb8768c8ebb0faa9e20/); polygon `0x1191d5...349c14`; polygon `0x83e738...a3e17b`; polygon `0xd23d2d...921c32`; base `0x1a566e...e79193`; base `0x3f6ce2...d6b2fb`; base `0x6c91d2...a159f6`; base `0xa94aa0...b92cd8`; base `0xc6adec...f00bec`; base `0xc98d07...fec1c3` | ⚠️ Unaudited |
 | SortedVessels | unknown | base | 2 deployments: base [`0x576e43...251a3f`](./contracts/base-8453/0x576e43660cd804f74573de9d4b26b3752e251a3f/); base `0xa0d1fc...dec2a5` | ⚠️ Unaudited |
 | SphereFairLaunch | unknown | polygon | [`0x7e96bb...b14277`](./contracts/polygon-137/0x7e96bbeb1c13978f7fe5c50ae1e332148bb14277/) | ⚠️ Unaudited |
+| SphereLocker | unknown | polygon | [`0x4af613...889653`](./contracts/polygon-137/0x4af613f297ab00361d516454e5e46bc895889653/) | ⚠️ Unaudited |
 | SphereTreasury | operational_periphery | polygon | [`0xc747db...ec46a3`](./contracts/polygon-137/0xc747db6ebd5dfc93c7d2f4af208a9618beec46a3/) | ⚠️ Unaudited |
 | SphereZap | adapter | polygon | [`0x5c8803...b2889d`](./contracts/polygon-137/0x5c8803c06aa6e4ba2a26c890d022a7a2f3b2889d/) | ⚠️ Unaudited |
 | StabilityPool | core_logic | base | 2 deployments: base [`0x09daf5...322652`](./contracts/base-8453/0x09daf529d20dfbde28a82dcfa51115c4eb322652/); base `0x6afa83...fbfb52` | ⚠️ Unaudited |
@@ -157,6 +160,7 @@ Dyson vaults and Preon Finance strategies share infrastructure such as oracles (
 | VoterProxy | unknown | polygon | 7 deployments: polygon [`0x25f293...0a5986`](./contracts/polygon-137/0x25f293d3e8e13a730d5aea96b7716970a40a5986/); polygon `0x30333d...25c5d7`; polygon `0x319f68...9369bc`; polygon `0x9ec307...e626b8`; polygon `0xadf5b2...c0e26f`; polygon `0xb4df4e...c853b1`; polygon `0xe35076...74ee5e` | ⚠️ Unaudited |
 | VoterProxyAssets | unknown | polygon | 2 deployments: polygon [`0x2a6802...73738b`](./contracts/polygon-137/0x2a6802e38a7d372b3219b22d7005dfdd1073738b/); polygon `0xb2f5e5...e1560d` | ⚠️ Unaudited |
 | VotingSnapshot | unknown | polygon | 9 deployments: polygon [`0x22f5a1...f6c1e5`](./contracts/polygon-137/0x22f5a1ec5aa6ccf02fd3cc13a56044a6d9f6c1e5/); polygon `0x473195...f52902`; polygon `0x4fca08...37c428`; polygon `0x59871e...e2f36e`; polygon `0x5eeb6f...499301`; polygon `0xac4615...f192fd`; polygon `0xb5e0ee...b3db98`; polygon `0xf0aff4...91cf5e`; polygon `0xfa9fe8...cb3ed1` | ⚠️ Unaudited |
+| WeightedPool | core_logic | polygon | [`0xf33129...0b47b2`](./contracts/polygon-137/0xf3312968c7d768c19107731100ece7d4780b47b2/) | ⚠️ Unaudited |
 | wSPHEREERC20 | token | polygon | [`0x991b73...e4d5dc`](./contracts/polygon-137/0x991b73fb44a6b618efbf3403924c09530ee4d5dc/) | ⚠️ Unaudited |
 | YieldSourcePrizePoolProxyFactory | registry | polygon | 7 deployments: polygon [`0x0d5956...bc108f`](./contracts/polygon-137/0x0d59561576a0759cbdb46093248c1e8d17bc108f/); polygon `0x440465...d2207c`; polygon `0x4b01f3...a6d9d8`; polygon `0x532505...3af2fe`; polygon `0x750d37...d6cd64`; polygon `0xed12da...ec6361`; polygon `0xedd95f...35d104` | ⚠️ Unaudited |
 
@@ -317,7 +321,7 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0x0b2129...7b65e9`](./contracts/base-8453/0x0b2129e4f27c1496b72855dc20a88fc3957b65e9/) | DefaultPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x20b559...7f4b10`](./contracts/polygon-137/0x20b5590575a79e00f1dbdcc48d89c865837f4b10/) | Deployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x082e31...b56cdd`](./contracts/arbitrum-42161/0x082e3129e88c12b62da1d7301f5f74157bb56cdd/) | DysonGetter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x00960e...06351a`](./contracts/polygon-137/0x00960e708d86cdba8f9c8e4856f4afd73d06351a/) | FairLaunchPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xd918ee...45a02b`](./contracts/polygon-137/0xd918ee56e167a298c298982e6308840f4045a02b/) | DystopiaLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x8e6dd2...cb73cf`](./contracts/base-8453/0x8e6dd2eee506d707505376b611e64978bacb73cf/) | FeeCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x2d450b...5a741f`](./contracts/base-8453/0x2d450b96abe5de161e1780c08af55b2d3a5a741f/) | GasPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x05b0bd...3b1d65`](./contracts/polygon-137/0x05b0bd6242743033c4b8d8726ca46b2ee33b1d65/) | IchiVaultOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -326,7 +330,6 @@ Verified + unaudited native implementations ranked by TVL:
 | polygon | [`0x43f075...aa6b51`](./contracts/polygon-137/0x43f075372426987ebb52f794e6d47b56d8aa6b51/) | MultiRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xebd48e...21a8d1`](./contracts/base-8453/0xebd48e5d8f0578128f4e25d88ff983d10e21a8d1/) | MultiVesselGetter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x73625a...f82306`](./contracts/polygon-137/0x73625a384b05e1e8d2c8a40599eae6c788f82306/) | PartnersRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x9008d7...891a97`](./contracts/polygon-137/0x9008d70a5282a936552593f410abcbce2f891a97/) | Pen | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x2d0c50...d1989c`](./contracts/polygon-137/0x2d0c506b72b3041824b1e2f3cfb9f06eb3d1989c/) | PenDyst | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x68c08a...fdd912`](./contracts/polygon-137/0x68c08ac637fcac8e63060aaca89dba4c32fdd912/) | PenDystRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xfd3d57...901f33`](./contracts/polygon-137/0xfd3d5747ee99b7cbadd9acc67c1ab2d01a901f33/) | PenLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -335,9 +338,7 @@ Verified + unaudited native implementations ranked by TVL:
 | polygon | [`0xd6d61e...7f4d42`](./contracts/polygon-137/0xd6d61eac8e0fc123c5eda4bf31d834a34c7f4d42/) | PenPoolFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xbfcb71...a388a5`](./contracts/polygon-137/0xbfcb7128b5cef9566843849ecd7183cd86a388a5/) | PenPoolProxyTemplate | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x83d62d...d05852`](./contracts/polygon-137/0x83d62d36fd98331abc322c9d5726b549bed05852/) | PenroseDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x055fd5...783178`](./contracts/polygon-137/0x055fd5072d92c8c42126de238563e57747783178/) | PenroseZapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x579ba9...a8a9c1`](./contracts/polygon-137/0x579ba9b6aae05d3600e2a9505cfba16c4aa8a9c1/) | PoolWithMultipleWinnersBuilder | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x00dead...aa9e20`](./contracts/polygon-137/0x00dead8d27e0fe039ad92eb8768c8ebb0faa9e20/) | RewardsDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x7e96bb...b14277`](./contracts/polygon-137/0x7e96bbeb1c13978f7fe5c50ae1e332148bb14277/) | SphereFairLaunch | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xc747db...ec46a3`](./contracts/polygon-137/0xc747db6ebd5dfc93c7d2f4af208a9618beec46a3/) | SphereTreasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x5c8803...b2889d`](./contracts/polygon-137/0x5c8803c06aa6e4ba2a26c890d022a7a2f3b2889d/) | SphereZap | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -350,7 +351,6 @@ Verified + unaudited native implementations ranked by TVL:
 | polygon | [`0xb5a4a9...ad69a1`](./contracts/polygon-137/0xb5a4a9fc3e1834450eb2848636d3d9cde9ad69a1/) | TokensAllowlist | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x79b1dd...0de52a`](./contracts/polygon-137/0x79b1dd1b95952402f7ee9f3578b2c10b560de52a/) | UniV3WrappedLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x9b3c6c...39d871`](./contracts/polygon-137/0x9b3c6c7c174065e364a617f7e3f585db8539d871/) | UserProxyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x4e4de8...a1451e`](./contracts/polygon-137/0x4e4de8594ad39cd21971775504702d4b00a1451e/) | UserProxyInterface | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x3d30af...fe4d7c`](./contracts/polygon-137/0x3d30afdb7f17dd77f37fe5d4bc3d60bdd4fe4d7c/) | UserProxyLpInteractions | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x5a1fa2...5684f2`](./contracts/polygon-137/0x5a1fa2851bcf42555b701bef1536b1e7025684f2/) | UserProxyNftInteractions | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x5b0953...d45364`](./contracts/polygon-137/0x5b095392513167293f21a6b375ff51d4ccd45364/) | UserProxyTemplate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -367,10 +367,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 67 |
-| upstream | 6 |
-| standard_library | 38 |
-| needs_review | 106 |
+| native | 69 |
+| upstream | 7 |
+| standard_library | 30 |
+| needs_review | 115 |
 
 ## Scope Matching Notes
 

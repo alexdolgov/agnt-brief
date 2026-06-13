@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "illuvium",
-  "generated_at": "2026-06-11T00:01:23.987Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-13T01:51:08.005Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-d5d2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "illuvium",
@@ -32,26 +32,26 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 16,
-    "total_addresses": 28,
-    "unique_implementations": 16,
-    "total_deployments": 28,
+    "total_contracts": 21,
+    "total_addresses": 36,
+    "unique_implementations": 21,
+    "total_deployments": 36,
     "audited_contracts": 0,
-    "unaudited_contracts": 14,
+    "unaudited_contracts": 19,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 14,
+    "contracts_verified_unaudited": 19,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 9071695.88584,
-    "tvl_usd": 39754462.6733426,
+    "dl_tvl_usd": 6878526.448720001,
+    "tvl_usd": 39759562.67465214,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 39754462.67
+      "ethereum": 39759562.67
     },
-    "asd_usd": 39754462.6733426,
+    "asd_usd": 39759562.67465214,
     "website_url": "https://illuvium.io",
     "chains": [
       "ethereum"
@@ -73,7 +73,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 16,
+    "unique_implementations": 21,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -116,13 +116,13 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x8b4d8443a0229349a9892d4f7cbe89ef5f843f72",
+      "address": "0x25121eddf746c884dde4619b573a7b10714e2a36",
       "name": "IlluviumCorePool",
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Illuvium",
-      "tvl_usd": 90.246123,
+      "product_line": null,
+      "tvl_usd": 5190.246223,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "IlluviumCorePool",
@@ -130,10 +130,50 @@
         {
           "chain_id": 1,
           "chain_name": "ethereum",
+          "address": "0x25121eddf746c884dde4619b573a7b10714e2a36",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 5100.0001,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
           "address": "0x8b4d8443a0229349a9892d4f7cbe89ef5f843f72",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 90.246123,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xaa2e727ba59b4fea24d0db4e49a392fdc3e8e778",
+      "name": "Vault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 0.0012095382756144926,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Vault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xaa2e727ba59b4fea24d0db4e49a392fdc3e8e778",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 0.0012095382756144926,
           "is_audited": false
         }
       ],
@@ -173,7 +213,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -204,7 +244,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -235,7 +275,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -276,6 +316,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2996222cb2bf3675e5f5f88a5f211736197f03c7",
+      "name": "IlluviumPoolFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "IlluviumPoolFactory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2996222cb2bf3675e5f5f88a5f211736197f03c7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -329,7 +400,7 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xa904f27b1de7e82ba587677ee1f5af0ad0a8c79a",
+      "address": "0x800e48366b3dc4d93114246d52b98adb48ad83cb",
       "name": "MerkleDistributor",
       "role": "operational_periphery",
       "origin_kind": "native",
@@ -343,7 +414,47 @@
         {
           "chain_id": 1,
           "chain_name": "ethereum",
+          "address": "0x800e48366b3dc4d93114246d52b98adb48ad83cb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
           "address": "0xa904f27b1de7e82ba587677ee1f5af0ad0a8c79a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa1b1c05b3d00e5803c1c502d9175f3e39fe5a8c6",
+      "name": "MockedPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MockedPool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa1b1c05b3d00e5803c1c502d9175f3e39fe5a8c6",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -386,7 +497,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -417,7 +528,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -488,26 +599,66 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xe98477bdc16126bb0877c6e3882e3edd72571cc2",
+      "address": "0x34c267694ed0829f777ab830841f6664ff77e1e0",
       "name": "SushiLPPool",
-      "role": "core_logic",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Sushi",
       "product_line": "Illuvium",
       "tvl_usd": null,
-      "is_proxy": true,
+      "is_proxy": false,
       "impl_address": "0x34c267694ed0829f777ab830841f6664ff77e1e0",
       "impl_name": "SushiLPPool",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
+          "address": "0x34c267694ed0829f777ab830841f6664ff77e1e0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
           "address": "0xe98477bdc16126bb0877c6e3882e3edd72571cc2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f",
+      "name": "UniswapV2Router02",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV2Router02",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -582,6 +733,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6bd2814426f9a6abaa427d2ad3fc898d2a57adc6",
+      "name": "Vesting",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xc01e7dcc6cca1af57a5099f1dcab90084408bfdb",
+      "impl_name": "Vesting",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6bd2814426f9a6abaa427d2ad3fc898d2a57adc6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -703,12 +885,22 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x8b4d8443a0229349a9892d4f7cbe89ef5f843f72",
+      "address": "0x25121eddf746c884dde4619b573a7b10714e2a36",
       "name": "IlluviumCorePool",
       "role": "core_logic",
       "origin_kind": "native",
-      "tvl_usd": 90.246123,
-      "risk_note": "Verified native implementation with $90.25 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 5190.246223,
+      "risk_note": "Verified native implementation with $5,190.25 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xaa2e727ba59b4fea24d0db4e49a392fdc3e8e778",
+      "name": "Vault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 0.0012095382756144926,
+      "risk_note": "Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -743,6 +935,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x2996222cb2bf3675e5f5f88a5f211736197f03c7",
+      "name": "IlluviumPoolFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x6b72209b2514940606910dd9ad309ee1e5e201c6",
       "name": "ILVPool",
       "role": "core_logic",
@@ -753,9 +955,19 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xa904f27b1de7e82ba587677ee1f5af0ad0a8c79a",
+      "address": "0x800e48366b3dc4d93114246d52b98adb48ad83cb",
       "name": "MerkleDistributor",
       "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa1b1c05b3d00e5803c1c502d9175f3e39fe5a8c6",
+      "name": "MockedPool",
+      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -812,8 +1024,8 @@
     }
   ],
   "origin_summary": {
-    "native": 14,
-    "upstream": 0,
+    "native": 17,
+    "upstream": 2,
     "standard_library": 2,
     "needs_review": 0
   },

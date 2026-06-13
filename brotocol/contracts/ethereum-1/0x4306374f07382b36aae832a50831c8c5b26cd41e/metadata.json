@@ -1,0 +1,18 @@
+{
+  "address": "0x4306374f07382b36aae832a50831c8c5b26cd41e",
+  "chain_id": 1,
+  "contract_name": "MigrateToken",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:02:00.584Z"
+}

@@ -1,6 +1,6 @@
 # sphere — Contract Index
 
-217 unique implementations across 5 chains · 648 deployments · 0 audited · 109 unaudited · 108 unverified
+221 unique implementations across 8 chains · 662 deployments · 0 audited · 113 unaudited · 108 unverified
 
 ## adapter (5)
 
@@ -12,7 +12,7 @@
 | [SphereZap](./polygon-137/0x5c8803c06aa6e4ba2a26c890d022a7a2f3b2889d/) | polygon | [`0x5c8803...b2889d`](./polygon-137/0x5c8803c06aa6e4ba2a26c890d022a7a2f3b2889d/) | ⚠️ Unaudited | Verified |
 | [UniV3Rebalancer (3 deployments)](./arbitrum-42161/0x2f43afa87cfa4742d237a79ec3ee6d24fa3f8569/) | arbitrum | 3 deployments: arbitrum [`0x2f43af...3f8569`](./arbitrum-42161/0x2f43afa87cfa4742d237a79ec3ee6d24fa3f8569/); arbitrum `0x70e59f...a00b9e`; arbitrum `0x97472a...74c732` | ⚠️ Unaudited | Verified |
 
-## core_logic (40)
+## core_logic (41)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -56,8 +56,9 @@
 | [UniV3Vault (10 deployments)](./arbitrum-42161/0x0515b3aebafa40e21a3bc9c71d67e87085230037/) | arbitrum | 10 deployments: arbitrum [`0x0515b3...230037`](./arbitrum-42161/0x0515b3aebafa40e21a3bc9c71d67e87085230037/); arbitrum `0x0ed126...fcaa7c`; arbitrum `0x1e22a1...93d645`; arbitrum `0x2466b1...4371ad`; arbitrum `0x4ef1e9...bb8b6f`; arbitrum `0x7f336d...45babf`; arbitrum `0x88ee19...388186`; arbitrum `0x892588...eced47`; arbitrum `0x9b5755...75d6eb`; arbitrum `0xc2fc8b...bf3fc4` | ⚠️ Unaudited | Verified |
 | [UniV3Vault2 (7 deployments)](./arbitrum-42161/0x17831b2d149bd43fbde0eb1b727f86abbd5053fd/) | arbitrum | 7 deployments: arbitrum [`0x17831b...5053fd`](./arbitrum-42161/0x17831b2d149bd43fbde0eb1b727f86abbd5053fd/); arbitrum `0x4cbdd5...d0f35e`; arbitrum `0x505a98...29be7a`; arbitrum `0x6c7e1c...13d6d1`; arbitrum `0x9c9790...45b1d4`; arbitrum `0xb33775...203e00`; arbitrum `0xb5a3e0...b7edf1` | ⚠️ Unaudited | Verified |
 | [VaultLibrary (4 deployments)](./arbitrum-42161/0x7f0b8db79bf4077b1d2a61726a059e8f43812e68/) | arbitrum | 4 deployments: arbitrum [`0x7f0b8d...812e68`](./arbitrum-42161/0x7f0b8db79bf4077b1d2a61726a059e8f43812e68/); arbitrum `0xa3f861...a36557`; arbitrum `0xbecb63...294bb2`; arbitrum `0xc92201...caf080` | ⚠️ Unaudited | Verified |
+| [WeightedPool](./polygon-137/0xf3312968c7d768c19107731100ece7d4780b47b2/) | polygon | [`0xf33129...0b47b2`](./polygon-137/0xf3312968c7d768c19107731100ece7d4780b47b2/) | ⚠️ Unaudited | Verified |
 
-## governance (9)
+## governance (11)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -65,6 +66,8 @@
 | [AstroTimelockController](./avalanche-43114/0x2466b112dde137ac522e6f2951ad598c4e4371ad/) | avalanche | [`0x2466b1...4371ad`](./avalanche-43114/0x2466b112dde137ac522e6f2951ad598c4e4371ad/) | ⚠️ Unaudited | Verified |
 | [ChainlinkManager (4 deployments)](./polygon-137/0x49f5fcd49858c096f06361ae72ed8d882854688e/) | polygon | 4 deployments: polygon [`0x49f5fc...54688e`](./polygon-137/0x49f5fcd49858c096f06361ae72ed8d882854688e/); polygon `0x79dcb8...d1e9fd`; polygon `0x9d84b9...cd1d9b`; polygon `0xda94c1...d53b64` | ⚠️ Unaudited | Verified |
 | [ControllerV7 (5 deployments)](./arbitrum-42161/0x16775222977bf3ea9022b6f150d45aaa35d7c6a1/) | arbitrum | 5 deployments: arbitrum [`0x167752...d7c6a1`](./arbitrum-42161/0x16775222977bf3ea9022b6f150d45aaa35d7c6a1/); arbitrum `0x50a70e...338a9a`; arbitrum `0x850aa8...e41a8a`; arbitrum `0xe3581b...644e2a`; arbitrum `0xf40558...f6c2bf` | ⚠️ Unaudited | Verified |
+| [GnosisSafeL2 (9 deployments)](./bsc-56/0x124e8498a25eb6407c616188632d40d80f8e50b0/) | bsc | 9 deployments: bsc [`0x124e84...8e50b0`](./bsc-56/0x124e8498a25eb6407c616188632d40d80f8e50b0/); bsc `0x79e519...9d3b6e`; polygon `0x1a2ce4...94cff4`; polygon `0x20d617...3dd56a`; polygon `0x74b514...1eadef`; polygon `0x826b8d...0b99f4`; base `0x6268a3...330270`; base `0xe79996...42fc98`; arbitrum `0xa6efac...5dbe02` | ⚠️ Unaudited | Verified |
+| [GnosisSafeProxy (2 deployments)](./optimism-10/0x93b0a33911de79b897eb0439f223935af5a60c24/) | optimism | 2 deployments: optimism [`0x93b0a3...a60c24`](./optimism-10/0x93b0a33911de79b897eb0439f223935af5a60c24/); mantle `0xfdc036...b375b0` | ⚠️ Unaudited | Verified |
 | [PreonController (25 deployments)](./arbitrum-42161/0x058b9c4098acdf123041a1d8532815afa2a27219/) | arbitrum | 25 deployments: arbitrum [`0x058b9c...a27219`](./arbitrum-42161/0x058b9c4098acdf123041a1d8532815afa2a27219/); arbitrum `0x1e9432...c00900`; arbitrum `0x235751...ede2c3`; arbitrum `0x256463...251c21`; arbitrum `0x27387b...f9d062`; arbitrum `0x3b41c1...0d8419`; arbitrum `0x3fda70...43ec2c`; arbitrum `0x43f7f7...ff5805`; arbitrum `0x46715e...bf5a19`; arbitrum `0x532505...3af2fe`; arbitrum `0x57b954...a50e28`; arbitrum `0x6a2575...36289d`; arbitrum `0x7afde9...1066f8`; arbitrum `0x851692...c30204`; arbitrum `0x86e582...58d1ac`; arbitrum `0x8ce85d...71c9cf`; arbitrum `0x92979d...a6d656`; arbitrum `0x9e1ce6...8ad98d`; arbitrum `0xab5334...f67488`; arbitrum `0xbe34f5...de7e1c`; arbitrum `0xca077b...8ccef5`; arbitrum `0xdd8968...f61a04`; arbitrum `0xeb2d34...c75727`; arbitrum `0xefae58...bea397`; arbitrum `0xfcf10a...657c49` | ⚠️ Unaudited | Verified |
 | [ProxyAdmin (12 deployments)](./base-8453/0x0b5e7775856c4e240ae46704178d96fab244c5f4/) | base | 12 deployments: polygon `0x6a8215...0ff84d`; polygon `0xb8a2af...43f68c`; polygon `0xf77ee8...0db002`; base [`0x0b5e77...44c5f4`](./base-8453/0x0b5e7775856c4e240ae46704178d96fab244c5f4/); base `0x0f2b0a...35b692`; base `0x446bee...61039d`; base `0x8937bc...4551ce`; base `0xb62ada...99803c`; base `0xb783f0...b2b1ab`; arbitrum `0xeffe5c...d3599d`; avalanche `0x197a08...6f77f4`; avalanche `0x7fc0b0...53d480` | ⚠️ Unaudited | Verified |
 | [Timelock (2 deployments)](./base-8453/0x25f110699fe8360c98a48a2cc42c3732328aca8a/) | base | 2 deployments: base [`0x25f110...8aca8a`](./base-8453/0x25f110699fe8360c98a48a2cc42c3732328aca8a/); base `0x3f00fe...fb0fc9` | ⚠️ Unaudited | Verified |
@@ -121,13 +124,13 @@
 | [ATokenInstance (4 deployments)](./polygon-137/0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee/) | polygon | 4 deployments: polygon [`0x82e64f...2312ee`](./polygon-137/0x82e64f49ed5ec1bc6e43dad4fc8af9bb3a2312ee/); polygon `0xea1132...6f7ac9`; arbitrum `0x8ffdf2...0a0692`; arbitrum `0xe50fa9...8128c8` | ⚠️ Unaudited | Verified |
 | [ControlledTokenBuilder (6 deployments)](./polygon-137/0x3b443e9b9b7f340c7b1417abfdc64132341873d4/) | polygon | 6 deployments: polygon [`0x3b443e...1873d4`](./polygon-137/0x3b443e9b9b7f340c7b1417abfdc64132341873d4/); polygon `0x440245...1e3b1f`; polygon `0x45d4d2...1cfd26`; polygon `0x8a9287...04caaf`; polygon `0xce9667...fb3a0e`; polygon `0xfaa17c...c17b6f` | ⚠️ Unaudited | Verified |
 | [DebtToken](./base-8453/0xc19669a405067927865b40ea045a2baabbbe57f5/) | base | [`0xc19669...be57f5`](./base-8453/0xc19669a405067927865b40ea045a2baabbbe57f5/) | ⚠️ Unaudited | Verified |
-| [SphereToken (3 deployments)](./polygon-137/0x57bc5f620bde757c0a81350d21489dab1783fb36/) | polygon | 3 deployments: polygon [`0x57bc5f...83fb36`](./polygon-137/0x57bc5f620bde757c0a81350d21489dab1783fb36/); polygon `0x62f594...9658a7`; polygon `0x8d5460...5b9716` | ⚠️ Unaudited | Verified |
+| [SphereToken (4 deployments)](./polygon-137/0x57bc5f620bde757c0a81350d21489dab1783fb36/) | polygon | 4 deployments: polygon [`0x57bc5f...83fb36`](./polygon-137/0x57bc5f620bde757c0a81350d21489dab1783fb36/); polygon `0x62f594...9658a7`; polygon `0x8d5460...5b9716`; polygon `0xed58c8...3f7ca7` | ⚠️ Unaudited | Verified |
 | [TokensAllowlist](./polygon-137/0xb5a4a9fc3e1834450eb2848636d3d9cde9ad69a1/) | polygon | [`0xb5a4a9...ad69a1`](./polygon-137/0xb5a4a9fc3e1834450eb2848636d3d9cde9ad69a1/) | ⚠️ Unaudited | Verified |
 | [UChildERC20](./polygon-137/0x172370d5cd63279efa6d502dab29171933a610af/) | polygon | [`0x172370...a610af`](./polygon-137/0x172370d5cd63279efa6d502dab29171933a610af/) | ⚠️ Unaudited | Verified |
 | [UserProxyNftInteractions](./polygon-137/0x5a1fa2851bcf42555b701bef1536b1e7025684f2/) | polygon | [`0x5a1fa2...5684f2`](./polygon-137/0x5a1fa2851bcf42555b701bef1536b1e7025684f2/) | ⚠️ Unaudited | Verified |
 | [wSPHEREERC20](./polygon-137/0x991b73fb44a6b618efbf3403924c09530ee4d5dc/) | polygon | [`0x991b73...e4d5dc`](./polygon-137/0x991b73fb44a6b618efbf3403924c09530ee4d5dc/) | ⚠️ Unaudited | Verified |
 
-## unknown (132)
+## unknown (133)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -147,6 +150,7 @@
 | [PenroseDeployer (3 deployments)](./polygon-137/0x83d62d36fd98331abc322c9d5726b549bed05852/) | polygon | 3 deployments: polygon [`0x83d62d...d05852`](./polygon-137/0x83d62d36fd98331abc322c9d5726b549bed05852/); polygon `0x8f1389...285685`; polygon `0xe5e882...18ff73` | ⚠️ Unaudited | Verified |
 | [SortedVessels (2 deployments)](./base-8453/0x576e43660cd804f74573de9d4b26b3752e251a3f/) | base | 2 deployments: base [`0x576e43...251a3f`](./base-8453/0x576e43660cd804f74573de9d4b26b3752e251a3f/); base `0xa0d1fc...dec2a5` | ⚠️ Unaudited | Verified |
 | [SphereFairLaunch](./polygon-137/0x7e96bbeb1c13978f7fe5c50ae1e332148bb14277/) | polygon | [`0x7e96bb...b14277`](./polygon-137/0x7e96bbeb1c13978f7fe5c50ae1e332148bb14277/) | ⚠️ Unaudited | Verified |
+| [SphereLocker](./polygon-137/0x4af613f297ab00361d516454e5e46bc895889653/) | polygon | [`0x4af613...889653`](./polygon-137/0x4af613f297ab00361d516454e5e46bc895889653/) | ⚠️ Unaudited | Verified |
 | [UniV3WrappedLib](./polygon-137/0x79b1dd1b95952402f7ee9f3578b2c10b560de52a/) | polygon | [`0x79b1dd...0de52a`](./polygon-137/0x79b1dd1b95952402f7ee9f3578b2c10b560de52a/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | polygon | `0x006d19...4bf5b0` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x016e14...eef329` | ❓ Unverified | Unverified |

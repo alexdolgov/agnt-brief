@@ -1,0 +1,17 @@
+{
+  "address": "0x5e0e90e268bc247cc850c789a0db0d5c7621fb59",
+  "chain_id": 43114,
+  "contract_name": "ERC20BridgeToken",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "00000000000000000000000008c2cb00d04b28348a62d83a764021975ea766590000000000000000000000009525b6da53de6bddae70f2c56bbd47ca91406b6b",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:02:01.866Z"
+}

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "aethir",
-  "generated_at": "2026-06-10T20:58:56.552Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-13T01:51:10.825Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-d5d2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "aethir",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 6,
-    "unique_implementations": 5,
-    "total_deployments": 6,
+    "total_contracts": 7,
+    "total_addresses": 8,
+    "unique_implementations": 7,
+    "total_deployments": 8,
     "audited_contracts": 0,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 7,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 5,
+    "contracts_verified_unaudited": 7,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 9183816.3045,
+    "dl_tvl_usd": 6787676.00008,
     "tvl_usd": 257030903.7042486,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -63,7 +63,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
+    "unique_implementations": 7,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -146,6 +146,37 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xb91eb8907c34147b1ab58dc663a3594bb241bed4",
+      "name": "SmartWalletChecker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SmartWalletChecker",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb91eb8907c34147b1ab58dc663a3594bb241bed4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xc96aa65f31e41b4ca6924b86d93e25686019e59c",
       "name": "StAethir",
       "role": "unknown",
@@ -211,8 +242,8 @@
       "address": "0xf9d9f4ae37d09d50a279058c008a4fa98b6336b6",
       "name": "VestingWallet",
       "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -235,6 +266,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6f5c81fe067ae25afd52218f140a73d51f0c6b31",
+      "name": "Voting Escrow",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Voting Escrow",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6f5c81fe067ae25afd52218f140a73d51f0c6b31",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [],
@@ -263,6 +325,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xb91eb8907c34147b1ab58dc663a3594bb241bed4",
+      "name": "SmartWalletChecker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xc96aa65f31e41b4ca6924b86d93e25686019e59c",
       "name": "StAethir",
       "role": "unknown",
@@ -279,12 +351,32 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf9d9f4ae37d09d50a279058c008a4fa98b6336b6",
+      "name": "VestingWallet",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6f5c81fe067ae25afd52218f140a73d51f0c6b31",
+      "name": "Voting Escrow",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 4,
+    "native": 7,
     "upstream": 0,
-    "standard_library": 1,
+    "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {

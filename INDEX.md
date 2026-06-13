@@ -15,7 +15,7 @@
 | [acryptos](./acryptos/) | $5.2M | 25.0% | $253.0K | active | 7 | 311 | 2026-06-10 |
 | [aegis-markets](./aegis-markets/) | $2.3M | 0.0% | ? | active | 2 | 15 | 2026-06-10 |
 | [aegis](./aegis/) | $35.9M | 0.0% | ? | active | 0 | 12 | 2026-06-12 |
-| [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | active | 0 | 5 | 2026-06-10 |
+| [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | active | 0 | 7 | 2026-06-13 |
 | [aevo](./aevo/) | $96.8M | 11.8% | $26.1M | active | 13 | 256 | 2026-06-10 |
 | [aftermath-finance](./aftermath-finance/) | $5.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [ailayer-farm](./ailayer-farm/) | $211.9K | 0.0% | $211.9K | active | 0 | 1 | 2026-06-12 |
@@ -105,7 +105,7 @@
 | [bracket-protocol](./bracket-protocol/) | $622.4M | 17.4% | $619.3M | active | 5 | 58 | 2026-06-10 |
 | [brickken](./brickken/) | $42.2M | 20.0% | ? | active | 2 | 31 | 2026-06-12 |
 | [bridgers](./bridgers/) | $1.6M | 0.0% | ? | active | 1 | 6 | 2026-06-10 |
-| [brotocol](./brotocol/) | $6.5M | 0.0% | ? | active | 14 | 214 | 2026-06-11 |
+| [brotocol](./brotocol/) | $447.6M | 20.0% | $447.6M | unknown | 14 | 76 | 2026-06-13 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-06-10 |
 | [btcfi](./btcfi/) | $9.6M | 0.0% | ? | active | 0 | 15 | 2026-06-13 |
 | [btcst](./btcst/) | $263.7M | 0.0% | $263.7M | active | 0 | 64 | 2026-06-10 |
@@ -277,7 +277,7 @@
 | [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 3 | 60 | 2026-06-13 |
 | [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 0 | 45 | 2026-05-31 |
 | [ichi](./ichi/) | $36.1M | 0.9% | $36.1M | active | 9 | 616 | 2026-06-11 |
-| [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | active | 0 | 16 | 2026-06-11 |
+| [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | active | 0 | 21 | 2026-06-13 |
 | [immutable-zkevm](./immutable-zkevm/) | $28.5M | 22.2% | ? | active | 4 | 9 | 2026-06-11 |
 | [inception](./inception/) | $9.8M | 24.6% | $9.5M | declining | 9 | 78 | 2026-06-11 |
 | [index-coop](./index-coop/) | $19.4M | 13.5% | $19.4M | active | 5 | 235 | 2026-06-11 |
@@ -560,7 +560,7 @@
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 8 | 0 | 2026-06-11 |
 | [spectra](./spectra/) | $10.5M | 12.2% | $5.8M | active | 7 | 229 | 2026-06-12 |
 | [sperax](./sperax/) | $14.2M | 47.1% | $2.6M | declining | 9 | 142 | 2026-06-11 |
-| [sphere](./sphere/) | $229.4M | 0.0% | $229.4M | active | 0 | 217 | 2026-06-11 |
+| [sphere](./sphere/) | $229.4M | 0.0% | $229.4M | active | 0 | 221 | 2026-06-13 |
 | [spiraldao](./spiraldao/) | $6.4M | 44.0% | ? | dead | 3 | 56 | 2026-05-23 |
 | [splash-protocol](./splash-protocol/) | $5.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |
@@ -659,7 +659,7 @@
 | [unchain-x](./unchain-x/) | $35.1M | 9.1% | ? | active | 2 | 12 | 2026-06-12 |
 | [unichain-bridge](./unichain-bridge/) | $2.8M | 0.0% | ? | active | 0 | 15 | 2026-06-11 |
 | [unitas](./unitas/) | $47.8M | 100.0% | ? | active | 5 | 9 | 2026-06-11 |
-| [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
+| [universal-bridge](./universal-bridge/) | $6.7M | 0.0% | ? | active | 1 | 2 | 2026-06-13 |
 | [universe-xyz](./universe-xyz/) | $216.1K | 21.7% | $216.1K | dead | 3 | 34 | 2026-06-11 |
 | [unslashed](./unslashed/) | $3.1M | 0.0% | $3.1M | declining | 0 | 2 | 2026-06-12 |
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-06-13 |

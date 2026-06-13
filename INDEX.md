@@ -325,11 +325,16 @@
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | active | 0 | 53 | 2026-06-13 |
 | [deltaprime](./deltaprime/) | $2.6K | 0.0% | $2.6K | active | 0 | 482 | 2026-05-31 |
 | [deltatrade](./deltatrade/) | $92.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [demeter](./demeter/) | $281.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [denet-file-token](./denet-file-token/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [depth](./depth/) | $1.2M | 0.0% | ? | declining | 0 | 1 | 2026-06-10 |
 | [deri](./deri/) | $2.4K | 13.9% | $2.4K | active | 8 | 868 | 2026-06-10 |
 | [derivadex](./derivadex/) | $1.6M | 0.0% | ? | declining | 0 | 8 | 2026-06-10 |
 | [desyn-protocol](./desyn-protocol/) | $10.7M | 0.0% | ? | declining | 0 | 11 | 2026-06-10 |
+| [dev-protocol](./dev-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [devil-finance](./devil-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dexalot](./dexalot/) | $4.2M | 16.7% | ? | active | 6 | 6 | 2026-06-12 |
+| [dexible-v2](./dexible-v2/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dexioprotocol](./dexioprotocol/) | $0.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [dexlyn-labs](./dexlyn-labs/) | $80.4K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [dflow](./dflow/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |

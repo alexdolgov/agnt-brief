@@ -257,7 +257,9 @@
 | [choice-exchange](./choice-exchange/) | $308.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [chromatic-protocol](./chromatic-protocol/) | $3.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [circuit](./circuit/) | $198.7K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
+| [citadelswap](./citadelswap/) | $3.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [citrea-bridge](./citrea-bridge/) | $6.6M | 50.0% | ? | active | 10 | 3 | 2026-06-10 |
+| [clarity](./clarity/) | $308.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [clave](./clave/) | $7.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [clearpool](./clearpool/) | $17.6K | 7.1% | $17.6K | active | 7 | 63 | 2026-06-12 |
 | [clever](./clever/) | $3.2M | 10.6% | $1.6M | active | 3 | 76 | 2026-06-10 |
@@ -266,7 +268,9 @@
 | [coinsquare](./coinsquare/) | $9.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-13 |
 | [coinstore](./coinstore/) | $62.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [coinw](./coinw/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
+| [colafactory](./colafactory/) | $673.6 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [colend-protocol](./colend-protocol/) | $4.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
+| [collection.xyz](./collection.xyz/) | $652.5 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [commodo](./commodo/) | $5.3K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [concentrator](./concentrator/) | $112.0M | 31.3% | $105.2M | active | 33 | 342 | 2026-06-10 |
 | [concrete](./concrete/) | $789.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -275,6 +279,7 @@
 | [conveyor](./conveyor/) | ? | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [copump](./copump/) | $1.7K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [core-bridge](./core-bridge/) | $4.0M | 0.0% | ? | active | 0 | 6 | 2026-06-10 |
+| [corepound](./corepound/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [coti-treasury](./coti-treasury/) | $9.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [cozy-finance](./cozy-finance/) | $2.3M | 0.0% | ? | active | 5 | 48 | 2026-06-10 |
 | [crabada](./crabada/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |

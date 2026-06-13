@@ -942,10 +942,15 @@
 | [privacy-pools](./privacy-pools/) | $54.4K | 20.0% | $54.4K | active | 4 | 5 | 2026-06-12 |
 | [probit-global](./probit-global/) | $11.0M | 0.0% | ? | dead | 0 | 3 | 2026-06-12 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-06-11 |
+| [psyoptions](./psyoptions/) | $462.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [pu239](./pu239/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [puddingswap](./puddingswap/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [puffer-finance](./puffer-finance/) | $225.1M | 36.4% | $169.2M | declining | 4 | 65 | 2026-06-11 |
 | [pulsar-swap](./pulsar-swap/) | $11.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [pulse-rate](./pulse-rate/) | $23.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pulsechain-bridge](./pulsechain-bridge/) | $475.4K | 0.0% | $475.4K | active | 0 | 7 | 2026-06-12 |
 | [pulsechain](./pulsechain/) | $475.4K | 0.0% | $475.4K | active | 0 | 7 | 2026-06-12 |
+| [pump-party](./pump-party/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pumpspace](./pumpspace/) | $3.9M | 33.3% | ? | active | 3 | 666 | 2026-06-11 |
 | [punks-terminal](./punks-terminal/) | $1.5M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
 | [puzzleswaporg](./puzzleswaporg/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |

@@ -510,7 +510,10 @@
 | [hashking](./hashking/) | $335.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hashport](./hashport/) | $152.6K | 100.0% | ? | dead | 3 | 21 | 2026-06-10 |
 | [hastra](./hastra/) | $402.8M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [hbarsuite](./hbarsuite/) | $3.8M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [hectagon](./hectagon/) | $0.5 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hegic](./hegic/) | $54.1K | 22.5% | $54.1K | active | 2 | 76 | 2026-06-13 |
+| [heliswap](./heliswap/) | $94.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | active | 1 | 9 | 2026-06-12 |
 | [helix](./helix/) | $1.5M | 0.0% | ? | declining | 0 | 9 | 2026-06-10 |
 | [hemi-staking](./hemi-staking/) | $16.4M | 1.9% | $16.4M | active | 5 | 132 | 2026-06-12 |
@@ -519,6 +522,7 @@
 | [henjin-dex](./henjin-dex/) | $1.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [hera-finance](./hera-finance/) | $6.5M | 42.9% | ? | active | 3 | 28 | 2026-06-10 |
 | [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-06-10 |
+| [hodltree](./hodltree/) | $1.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [holdstation](./holdstation/) | $19.7K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [honeyfarm](./honeyfarm/) | $1.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-06-11 |
@@ -529,6 +533,7 @@
 | [hourglass](./hourglass/) | $139.9K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [houses-of-rome](./houses-of-rome/) | $0.0 | 0.0% | ? | dead | 0 | 51 | 2026-06-10 |
 | [hskhodlium](./hskhodlium/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
+| [huckleberry](./huckleberry/) | $31.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hybra](./hybra/) | $1.8M | 0.0% | ? | active | 0 | 81 | 2026-06-10 |
 | [hyperbeat](./hyperbeat/) | $22.6M | 10.7% | $22.6M | active | 14 | 221 | 2026-06-10 |
 | [hyperdrive-hl](./hyperdrive-hl/) | $2.8M | 0.0% | ? | unknown | 8 | 0 | 2026-06-10 |

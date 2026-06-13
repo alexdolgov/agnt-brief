@@ -468,10 +468,15 @@
 | [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 0 | 16 | 2026-06-10 |
 | [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 0 | 6 | 2026-06-12 |
 | [glitter-finance](./glitter-finance/) | $13.0 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
+| [glori-finance](./glori-finance/) | $42.1 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [gnosis-protocol-v1](./gnosis-protocol-v1/) | $94.4M | 0.0% | $94.4M | declining | 0 | 110 | 2026-06-10 |
 | [goat-protocol](./goat-protocol/) | $26.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [gogocoin](./gogocoin/) | $2.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [goldfinger](./goldfinger/) | $0.0 | 0.0% | ? | active | 8 | 5 | 2026-06-11 |
+| [goldsand-by-inshallah](./goldsand-by-inshallah/) | $231.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [goldstation](./goldstation/) | $2.2M | 0.0% | ? | active | 3 | 5 | 2026-06-10 |
+| [goledo](./goledo/) | $3.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [gomble-games](./gomble-games/) | $14.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [gondi](./gondi/) | $35.6 | 20.0% | $35.6 | active | 2 | 30 | 2026-06-11 |
 | [goose](./goose/) | $1.6K | 0.0% | $1.6K | active | 0 | 11 | 2026-06-12 |
 | [goosefx](./goosefx/) | $1.5K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |

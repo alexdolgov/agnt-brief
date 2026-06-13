@@ -5,11 +5,11 @@
 - Project: NonKYC (`nonkyc`)
 - Website: [https://nonkyc.io](https://nonkyc.io)
 - Lifecycle: active (Tier 0, 72.7% below peak)
-- Generated: 2026-06-11T01:26:47.103Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-13T04:05:42.140Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-8c0a
 - Chains: arbitrum, base, ethereum, optimism
 - Contract surface: 4 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $5,725,456.37
+- DeFi Llama TVL: $5,365,294.88
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -88,10 +88,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

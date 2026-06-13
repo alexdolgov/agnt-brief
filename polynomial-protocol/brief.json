@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "polynomial-protocol",
-  "generated_at": "2026-06-11T02:00:22.889Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-13T04:09:28.026Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "polynomial-protocol",
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 5,
-    "total_addresses": 5,
+    "total_addresses": 6,
     "unique_implementations": 5,
-    "total_deployments": 5,
+    "total_deployments": 6,
     "audited_contracts": 0,
     "unaudited_contracts": 5,
     "contracts_verified_audited": 0,
@@ -33,10 +33,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 17,
+    "total_audits": 18,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5336566,
-    "tvl_usd": 5336566,
+    "dl_tvl_usd": 5292392,
+    "tvl_usd": 5292392,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -52,7 +52,7 @@
       "fresh": 0,
       "aging": 4,
       "stale": 9,
-      "unknown": 4
+      "unknown": 5
     }
   },
   "topography": {
@@ -181,6 +181,15 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x034cbb620d1e0e4c2e29845229beac57083b04ec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7cf803296662e8c72a6c1d6450572209acf7f202",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -583,6 +592,27 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12576,
+      "audit_key": "audit-12576",
+      "report_name": "Link",
+      "report_url": "https://docs.conduit.xyz/chains/supported-stacks/op-stack",
+      "auditor": "Conduit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -717,6 +747,10 @@
       {
         "audit_id": 2500,
         "report_name": "v_3_1_incremental_audit.pdf"
+      },
+      {
+        "audit_id": 12576,
+        "report_name": "Link"
       }
     ],
     "inherited_remapped_matches": []

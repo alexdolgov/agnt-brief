@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "biswap",
-  "generated_at": "2026-06-10T22:02:23.057Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-7a87",
+  "generated_at": "2026-06-13T04:11:47.976Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "biswap",
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 84,
-    "total_addresses": 210,
-    "unique_implementations": 84,
-    "total_deployments": 210,
+    "total_contracts": 92,
+    "total_addresses": 218,
+    "unique_implementations": 92,
+    "total_deployments": 218,
     "audited_contracts": 0,
-    "unaudited_contracts": 14,
+    "unaudited_contracts": 15,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 13,
-    "contracts_verified_by_bytecode": 1,
-    "contracts_unverified": 70,
+    "contracts_verified_unaudited": 15,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 77,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5641146,
+    "dl_tvl_usd": 5178715,
     "tvl_usd": 609279.4114705246,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -76,7 +76,7 @@
     "product_family_count": 3
   },
   "surface_sufficiency": {
-    "unique_implementations": 84,
+    "unique_implementations": 92,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -259,6 +259,37 @@
       "contamination_flag": "cleared"
     },
     {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x66e09ec17629574a0cc8abc480b0c2572fcd6985",
+      "name": "InterchainToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Biswap",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "InterchainToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x66e09ec17629574a0cc8abc480b0c2572fcd6985",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0xbfa00a7d60df1a7fe4ac3f900d59a98622678ff7",
@@ -412,10 +443,72 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0xa6fa4115f9c6b3aca9454df84b43deb7fe389019",
+      "name": "Proxy (impl: 0xa6fa4115f9c6b3aca9454df84b43deb7fe389019)",
+      "role": "proxy",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa6fa4115f9c6b3aca9454df84b43deb7fe389019",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xa6fa4115f9c6b3aca9454df84b43deb7fe389019",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xe45d08a10f253c9541c7612a9a70411e4c15dff9",
+      "name": "Proxy (impl: 0xe45d08a10f253c9541c7612a9a70411e4c15dff9)",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe45d08a10f253c9541c7612a9a70411e4c15dff9",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe45d08a10f253c9541c7612a9a70411e4c15dff9",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0x00a142210f6b3bb3f78751dcd7b589e9e7b39346",
       "name": "SmartChef",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -427,8 +520,8 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x00a142210f6b3bb3f78751dcd7b589e9e7b39346",
-          "source_verified": false,
-          "verified_by_bytecode": true,
+          "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -571,8 +664,8 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x1f337dea1679730906f46a06fd6034054bd32970",
-          "source_verified": false,
-          "verified_by_bytecode": true,
+          "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -580,8 +673,8 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x263678375b93b839e7ed315a1fd69cd8cb24303d",
-          "source_verified": false,
-          "verified_by_bytecode": true,
+          "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -589,8 +682,8 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x2792ccd3f02a22beba49f28f3ab0b52df18bd280",
-          "source_verified": false,
-          "verified_by_bytecode": true,
+          "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -1471,8 +1564,8 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1838,37 +1931,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x66e09ec17629574a0cc8abc480b0c2572fcd6985",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Biswap",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x66e09ec17629574a0cc8abc480b0c2572fcd6985",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -2369,10 +2431,41 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x3b53aa80dd213f430007fa81995aadf7ee1bd4ba",
+      "address": "0x36df8aac648661b0ad064019a913bf0de4662f5b",
       "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x36df8aac648661b0ad064019a913bf0de4662f5b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x3b53aa80dd213f430007fa81995aadf7ee1bd4ba",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2400,10 +2493,72 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x601cc4c85eb692b9067c51f3ce32447955a79d22",
+      "address": "0x4d175f2cfe3e2215c1b55865b07787b751cedd36",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x4d175f2cfe3e2215c1b55865b07787b751cedd36",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x5995fbce50d945f3fc0f9a97a72113da430c041c",
       "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x5995fbce50d945f3fc0f9a97a72113da430c041c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x601cc4c85eb692b9067c51f3ce32447955a79d22",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2427,6 +2582,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x6073625aabce27372b97b57529dd05c2bd4bcb94",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6073625aabce27372b97b57529dd05c2bd4bcb94",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 56,
@@ -2458,6 +2644,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xac3422a7b4f3cfd051a4de26fdd4c2f9c189076c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xac3422a7b4f3cfd051a4de26fdd4c2f9c189076c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 56,
@@ -2551,6 +2768,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xd772e674cf83f2908cf03f72609277f88f20f60c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd772e674cf83f2908cf03f72609277f88f20f60c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 8453,
@@ -2682,7 +2930,7 @@
       "address": "0x46cdaef2b21d78466dc6b82e688844ddc037c397",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2713,7 +2961,7 @@
       "address": "0x62dade2a1ed0c0574351fb7558edcb99c8f97392",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2744,7 +2992,7 @@
       "address": "0x633b38a9f24bd5b5cd7db18b599b56d76ded304a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2775,7 +3023,7 @@
       "address": "0x6c7f1a28c64e09671bee2554e2bf40548bc7fe1f",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2806,7 +3054,7 @@
       "address": "0x735cb0bde6376b601c63396da6a6d96868eb2ae3",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2837,7 +3085,7 @@
       "address": "0x7be5186038cf6fc3a0b3c90548208fb55b4644dd",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2868,7 +3116,7 @@
       "address": "0x7d882ff190243392a513050ef33fa0cdb90772a8",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2899,7 +3147,7 @@
       "address": "0x8277f64fd5784325c29126518171d05298ec86a1",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3932,6 +4180,16 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0x00a142210f6b3bb3f78751dcd7b589e9e7b39346",
+      "name": "SmartChef",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0x0eb6949e725a295ecb3beacfc3766610bc970bef",
       "name": "SmartRouter",
       "role": "adapter",
@@ -3971,10 +4229,10 @@
     }
   ],
   "origin_summary": {
-    "native": 30,
+    "native": 28,
     "upstream": 1,
     "standard_library": 3,
-    "needs_review": 50
+    "needs_review": 60
   },
   "scope_matching_notes": {
     "match_method_counts": {},

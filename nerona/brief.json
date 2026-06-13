@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nerona",
-  "generated_at": "2026-06-11T01:23:37.893Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-13T04:03:22.461Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "nerona",
@@ -22,24 +22,26 @@
     "drop_from_peak_pct": 77.53728611061148
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 2,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 7940325.86823,
-    "tvl_usd": 7940325.86823,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "dl_tvl_usd": 5391878.68991,
+    "tvl_usd": 326950304.5784646,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 326950304.58
+    },
+    "asd_usd": 326950304.5784646,
     "website_url": null,
     "chains": [
       "ethereum"
@@ -56,14 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Nerona is a yield aggregator. Current metadata describes the protocol as active on Fluent, with no separate homepage content available from the provided evidence.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "Nerona is a yield aggregator that allows users to deposit assets into vaults to earn optimized yield. It operates on Ethereum and uses a transparent upgradeable proxy for its core swap facility.",
+    "relationship_narrative": "The SwapFacility contract, deployed behind a transparent upgradeable proxy, serves as the core operational hub, while MToken acts as the receipt token for user deposits. Both contracts are part of the single Nerona family and share the same upgradeable infrastructure.",
+    "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 4,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -74,21 +76,52 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
+      "name": "MToken",
+      "role": "token",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Nerona",
-      "tvl_usd": null,
+      "tvl_usd": 326950304.5784646,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "MToken",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b",
-          "source_verified": false,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 326950304.5784646,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1028a0e146d2915c509c8e019e0e5c66d3d22ae0",
+      "name": "JMIExtension",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "JMIExtension",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1028a0e146d2915c509c8e019e0e5c66d3d22ae0",
+          "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
@@ -96,9 +129,40 @@
       ],
       "audits_covering": [],
       "is_audited": false,
-      "source_verified": false,
+      "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb6807116b3b1b321a390594e31ecd6e0076f6278",
+      "name": "SwapFacility",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x45bf08d042a8958f01f8e8319b791e4584550da8",
+      "impl_name": "SwapFacility",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb6807116b3b1b321a390594e31ecd6e0076f6278",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -107,7 +171,7 @@
       "address": "0xd48e565561416de59da1050ed70b8d75e8ef28f9",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Nerona",
       "tvl_usd": null,
@@ -135,12 +199,23 @@
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b",
+      "name": "MToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 326950304.5784646,
+      "risk_note": "Verified native implementation with $326,950,304.58 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 2,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 2
+    "standard_library": 1,
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

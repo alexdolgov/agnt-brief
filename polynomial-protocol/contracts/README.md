@@ -1,6 +1,6 @@
 # polynomial-protocol — Contract Index
 
-5 unique implementations on ethereum · 5 deployments · 0 audited · 5 unaudited · 0 unverified
+5 unique implementations on ethereum · 6 deployments · 0 audited · 5 unaudited · 0 unverified
 
 ## governance (1)
 
@@ -25,4 +25,4 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [OptimismPortal2](./ethereum-1/0x034cbb620d1e0e4c2e29845229beac57083b04ec/) | ethereum | [`0x034cbb...3b04ec`](./ethereum-1/0x034cbb620d1e0e4c2e29845229beac57083b04ec/) | ⚠️ Unaudited | Verified |
+| [OptimismPortal2 (2 deployments)](./ethereum-1/0x034cbb620d1e0e4c2e29845229beac57083b04ec/) | ethereum | 2 deployments: ethereum [`0x034cbb...3b04ec`](./ethereum-1/0x034cbb620d1e0e4c2e29845229beac57083b04ec/); ethereum `0x7cf803...f7f202` | ⚠️ Unaudited | Verified |

@@ -81,7 +81,7 @@
 | [bima-cdp](./bima-cdp/) | $5.3M | 51.6% | ? | active | 3 | 37 | 2026-06-10 |
 | [binaryx-platform](./binaryx-platform/) | $8.7M | 0.0% | ? | active | 3 | 133 | 2026-06-13 |
 | [bio-protocol](./bio-protocol/) | $143.8M | 10.0% | $139.6M | active | 6 | 41 | 2026-06-10 |
-| [biswap](./biswap/) | $609.3K | 0.0% | $609.3K | declining | 1 | 84 | 2026-06-10 |
+| [biswap](./biswap/) | $609.3K | 0.0% | $609.3K | declining | 1 | 92 | 2026-06-13 |
 | [bitlo](./bitlo/) | $16.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [bitomato](./bitomato/) | $2.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [bitu-protocol](./bitu-protocol/) | $22.3M | 75.0% | ? | active | 2 | 4 | 2026-06-10 |
@@ -401,7 +401,7 @@
 | [neo-tokyo](./neo-tokyo/) | $1.0M | 0.0% | ? | unknown | 0 | 86 | 2026-05-31 |
 | [neopin](./neopin/) | $40.2M | 0.0% | ? | active | 3 | 104 | 2026-06-12 |
 | [neptune-finance](./neptune-finance/) | $5.9M | 0.0% | ? | active | 3 | 2 | 2026-06-13 |
-| [nerona](./nerona/) | $7.9M | 0.0% | ? | declining | 0 | 2 | 2026-06-11 |
+| [nerona](./nerona/) | $327.0M | 0.0% | $327.0M | declining | 0 | 4 | 2026-06-13 |
 | [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | declining | 0 | 66 | 2026-06-11 |
 | [nest-credit](./nest-credit/) | $66.7K | 57.1% | ? | active | 15 | 16 | 2026-06-11 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-06-11 |
@@ -412,7 +412,7 @@
 | [nftx](./nftx/) | $6.3M | 11.1% | $6.3M | declining | 5 | 184 | 2026-06-11 |
 | [nodedao](./nodedao/) | $33.3M | 38.9% | $33.3M | active | 5 | 18 | 2026-06-11 |
 | [nomiswap](./nomiswap/) | $1.4M | 15.8% | ? | declining | 1 | 47 | 2026-05-24 |
-| [nonkyc](./nonkyc/) | $5.7M | 0.0% | ? | active | 0 | 4 | 2026-06-11 |
+| [nonkyc](./nonkyc/) | $5.4M | 0.0% | ? | active | 0 | 4 | 2026-06-13 |
 | [noon](./noon/) | $20.4M | 3.3% | $18.0 | active | 5 | 40 | 2026-06-11 |
 | [nostra](./nostra/) | $6.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [notional](./notional/) | $1.2M | 19.2% | $755.7K | declining | 6 | 79 | 2026-06-11 |
@@ -460,7 +460,7 @@
 | [pnetwork](./pnetwork/) | $13.1M | 0.0% | ? | declining | 0 | 12 | 2026-06-12 |
 | [polkastarter](./polkastarter/) | $9.6M | 0.0% | $9.6M | active | 3 | 2 | 2026-06-11 |
 | [polygon-zkevm-bridge](./polygon-zkevm-bridge/) | $69.4M | 0.0% | ? | unknown | 0 | 14 | 2026-06-12 |
-| [polynomial-protocol](./polynomial-protocol/) | $5.3M | 0.0% | ? | active | 17 | 5 | 2026-06-11 |
+| [polynomial-protocol](./polynomial-protocol/) | $5.3M | 0.0% | ? | active | 18 | 5 | 2026-06-13 |
 | [pond0x](./pond0x/) | $2.9M | 0.0% | ? | unknown | 0 | 14 | 2026-06-11 |
 | [pooltogether](./pooltogether/) | $26.9M | 0.9% | $26.9M | declining | 4 | 153 | 2026-05-31 |
 | [potatoswap](./potatoswap/) | $5.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |

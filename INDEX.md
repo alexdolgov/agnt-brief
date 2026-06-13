@@ -1256,11 +1256,14 @@
 | [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | declining | 0 | 29 | 2026-06-13 |
 | [tower-dex](./tower-dex/) | $5.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
+| [toxicdeer-finance](./toxicdeer-finance/) | $23.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
 | [treehouse-protocol](./treehouse-protocol/) | $24.0M | 42.6% | $1.8M | declining | 20 | 77 | 2026-06-11 |
 | [tren-finance](./tren-finance/) | $25.6 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [trevee-earn](./trevee-earn/) | $582.2M | 0.0% | $582.2M | declining | 0 | 15 | 2026-06-11 |
+| [trick-or-treat-farm](./trick-or-treat-farm/) | $1.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [trisolaris](./trisolaris/) | $1.5M | 0.0% | ? | declining | 0 | 119 | 2026-06-11 |
+| [tristero](./tristero/) | $353.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [tropykus-finance](./tropykus-finance/) | $12.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
 | [truefi](./truefi/) | $15.4M | 37.5% | ? | declining | 24 | 8 | 2026-06-11 |
@@ -1268,6 +1271,8 @@
 | [trufin-protocol](./trufin-protocol/) | $7.0M | 66.7% | ? | declining | 12 | 7 | 2026-06-10 |
 | [trust-wallet](./trust-wallet/) | $470.2M | 0.0% | $470.2M | active | 0 | 14 | 2026-06-12 |
 | [tulipa-capital](./tulipa-capital/) | $56.2M | 0.0% | $56.2M | active | 0 | 6 | 2026-06-12 |
+| [tulpea](./tulpea/) | $17.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [turboflow](./turboflow/) | $1.9M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | declining | 3 | 516 | 2026-06-11 |
 | [twyne](./twyne/) | $985.7K | 3.8% | $985.7K | active | 6 | 59 | 2026-06-11 |
 | [txflow](./txflow/) | $3.8M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |

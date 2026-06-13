@@ -378,14 +378,18 @@
 | [ellipsis-finance](./ellipsis-finance/) | $59.0K | 29.4% | $9.0K | dead | 3 | 22 | 2026-06-11 |
 | [elyfi](./elyfi/) | $434.8K | 5.9% | $175.9 | dead | 2 | 30 | 2026-05-24 |
 | [emiswap](./emiswap/) | $33.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [empmoney](./empmoney/) | $182.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [emu](./emu/) | $2.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [endur](./endur/) | $9.4M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
 | [enjoyoors](./enjoyoors/) | $11.3K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [enosys](./enosys/) | $17.2M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
 | [ensuro](./ensuro/) | $490.6K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
+| [enzo-finance](./enzo-finance/) | $22.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [equalizer](./equalizer/) | $374.8K | 0.0% | $374.8K | declining | 0 | 292 | 2026-06-10 |
 | [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-06-13 |
 | [equilibria](./equilibria/) | $26.9M | 17.6% | $15.7M | declining | 6 | 119 | 2026-06-10 |
 | [equito-finance](./equito-finance/) | $7.9 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [eralend](./eralend/) | $73.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [eth-strategy](./eth-strategy/) | $30.8M | 0.0% | $30.8M | active | 1 | 49 | 2026-06-10 |
 | [ethereal-dex](./ethereal-dex/) | $30.7M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
 | [ethereal-season-zero](./ethereal-season-zero/) | $2.8M | 0.0% | $2.8M | dead | 4 | 1 | 2026-05-24 |
@@ -394,6 +398,7 @@
 | [etherfuse](./etherfuse/) | $5.4M | 0.0% | ? | active | 0 | 25 | 2026-06-10 |
 | [ethichub](./ethichub/) | $22.7M | 0.0% | $22.7M | active | 2 | 58 | 2026-06-10 |
 | [ethos](./ethos/) | $1.9M | 30.0% | ? | active | 2 | 27 | 2026-06-10 |
+| [etmc](./etmc/) | $6.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [eventum-bridge](./eventum-bridge/) | $1.6M | 3.8% | $1.6M | active | 2 | 28 | 2026-06-10 |
 | [everrise](./everrise/) | $23.1M | 0.0% | $23.1M | declining | 3 | 210 | 2026-06-11 |
 | [everything](./everything/) | $945.3K | 0.0% | ? | active | 0 | 10 | 2026-06-10 |

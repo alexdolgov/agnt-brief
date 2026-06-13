@@ -5,11 +5,11 @@
 - Project: Plasma One (`plasma-one`)
 - Website: [https://www.plasma.to/one](https://www.plasma.to/one)
 - Lifecycle: active (Tier 0, 22.1% below peak)
-- Generated: 2026-06-11T01:51:15.613Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-13T03:59:58.319Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-8c0a
 - Chains: plasma
-- Contract surface: 7 unique implementations (15 raw deployments)
-- DeFi Llama TVL: $2,436,871.64
+- Contract surface: 7 unique implementations (16 raw deployments)
+- DeFi Llama TVL: $5,456,746.30
 - On-chain TVL (included contracts): $0.62
 - TVL by chain: Plasma $0.62
 
@@ -28,7 +28,7 @@ The BoringVault holds user deposits and generates yield, while ATokenInstance re
 - Verified by bytecode match: 0
 - Unverified implementations: 2
 - Unique implementations: 7
-- Raw deployments: 15
+- Raw deployments: 16
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $0.62
@@ -51,7 +51,7 @@ The BoringVault holds user deposits and generates yield, while ATokenInstance re
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | BoringVault | core_logic | plasma | [`0x1cf1c7...c53d77`](./contracts/plasma-9745/0x1cf1c71440ebd9cc998ce0b1b25ccef275c53d77/) | ⚠️ Unaudited |
-| ATokenInstance | token | plasma | [`0x5d72a9...30a948`](./contracts/plasma-9745/0x5d72a9d9a9510cd8cbdba12ac62593a58930a948/) | ⚠️ Unaudited |
+| ATokenInstance | unknown | plasma | 2 deployments: plasma [`0x2ffb26...168406`](./contracts/plasma-9745/0x2ffb265d591809fb1c4baba84996507e3c168406/); plasma `0x5d72a9...30a948` | ⚠️ Unaudited |
 | OUpgradeable | proxy | plasma | 4 deployments: plasma [`0x0200c2...8470c1`](./contracts/plasma-9745/0x0200c29006150606b650577bbe7b6248f58470c1/); plasma `0x4970ea...0e8752`; plasma `0x63ab93...08e6f7`; plasma `0xc00e2c...ae65c1` | ⚠️ Unaudited |
 | ProxyAdmin | governance | plasma | 2 deployments: plasma [`0x322483...773772`](./contracts/plasma-9745/0x3224831b5f45c616f8accba907798c6236773772/); plasma `0x5be536...47d8b2` | ⚠️ Unaudited |
 | TetherTokenOFTExtension | adapter | plasma | 5 deployments: plasma [`0x1b64b9...d4d193`](./contracts/plasma-9745/0x1b64b9025eebb9a6239575df9ea4b9ac46d4d193/); plasma `0x4a5cd3...7a6e0e`; plasma `0xb8ce59...625ebb`; plasma `0xcab8f3...f50b90`; plasma `0xf555a1...db34b9` | ⚠️ Unaudited |
@@ -95,9 +95,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 1 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 3 |
-| needs_review | 2 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

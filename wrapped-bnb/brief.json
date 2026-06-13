@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "wrapped-bnb",
-  "generated_at": "2026-06-11T12:18:09.842Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
+  "generated_at": "2026-06-13T03:46:00.773Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "wrapped-bnb",
@@ -45,8 +45,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5475258.98775,
-    "tvl_usd": 5475258.98775,
+    "dl_tvl_usd": 5514258.27533,
+    "tvl_usd": 5514258.27533,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,13 +56,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2021-09",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 1
+      "stale": 1,
+      "unknown": 0
     }
   },
   "topography": {
@@ -86,7 +86,7 @@
       "address": "0xa8e48fa04881dfacfc8d0ab84bc9ba57a449fc1f",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Via Hardhat Verification Plugin ​",
       "tvl_usd": null,
@@ -120,8 +120,8 @@
       "report_url": "https://skynet.certik.com/projects/kava",
       "auditor": "CertiK",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2021-09",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -138,10 +138,10 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

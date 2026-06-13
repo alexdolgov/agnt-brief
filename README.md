@@ -231,7 +231,7 @@ Each project directory contains:
 | [revert](./revert/brief.md) | $7.43M | 8 | 84 | 18/84 (21%) | 11.1% | 0.0% (-) | 2 | aging | ✅ active | $2.09M |
 | [credit-coop](./credit-coop/brief.md) | $4.59M | base, ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.08M |
 | [stusdt](./stusdt/brief.md) | $60.24M | ethereum | 12 | 4/12 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.87M |
-| [vnx](./vnx/brief.md) | $6.00M | 7 | 10 | 5/10 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.85M |
+| [vnx](./vnx/brief.md) | $5.44M | 7 | 10 | 5/10 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.85M |
 | [mm-finance](./mm-finance/brief.md) | $1.46M | arbitrum, cronos, polygon | 192 | 21/192 (11%) | 4.5% | 0.0% (-) | 1 | stale | ⚠️ declining | $1.85M |
 | [xwin-finance](./xwin-finance/brief.md) | $4.94M | arbitrum, bsc, polygon | 19 | 18/19 (95%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $1.84M |
 | [meeds-finance](./meeds-finance/brief.md) | $1.69M | ethereum | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $1.84M |
@@ -362,7 +362,7 @@ Each project directory contains:
 | [lynex](./lynex/brief.md) | $1.07M | linea | 30 | 29/30 (97%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.89 |
 | [acre](./acre/brief.md) | $4.27M | ethereum | 220 | 207/220 (94%) | 0.5% | 0.0% (-) | 2 | aging | ✅ active | $3.02 |
 | [xfai](./xfai/brief.md) | $1.03M | linea | 48 | 17/48 (35%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.00 |
-| [plasma-one](./plasma-one/brief.md) | $2.44M | plasma | 7 | 5/7 (71%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $0.62 |
+| [plasma-one](./plasma-one/brief.md) | $5.46M | plasma | 7 | 5/7 (71%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $0.62 |
 | [swamp-finance](./swamp-finance/brief.md) | $1.20M | bsc | 11 | 7/11 (64%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $0.09 |
 | [virtuals-protocol](./virtuals-protocol/brief.md) | $27.33M | base | 65 | 57/65 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $0.04 |
 | [kinza-finance](./kinza-finance/brief.md) | $7.78M | 4 | 154 | 50/154 (32%) | 2.0% | 0.0% (-) | 1 | stale | ⚠️ declining | $0.01 |
@@ -392,7 +392,7 @@ Each project directory contains:
 | [asseto-cash+](./asseto-cash+/brief.md) | $1.40M | ethereum | 2 | 1/2 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [augur](./augur/brief.md) | $1.67M | ethereum | 39 | 39/39 (100%) | 64.1% | 15.4% (ChainSecurity) | 4 | stale | ✅ active | - |
 | [aurora-plus](./aurora-plus/brief.md) | $2.27M | aurora | 31 | 3/31 (10%) | 33.3% | 0.0% (-) | 2 | stale | ✅ active | - |
-| [autofarm](./autofarm/brief.md) | $6.05M | 13 | 10 | 2/10 (20%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [autofarm](./autofarm/brief.md) | $5.60M | 14 | 17 | 9/17 (53%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [avalaunch](./avalaunch/brief.md) | $6.84M | avalanche | 38 | 13/38 (34%) | 84.6% | 0.0% (-) | 13 | stale | ✅ active | - |
 | [baseline-protocol](./baseline-protocol/brief.md) | $69.26M | base, blast, ethereum | 112 | 4/112 (4%) | 25.0% | 0.0% (-) | 1 | aging | ✅ active | - |
 | [benddao](./benddao/brief.md) | $7.15M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -548,7 +548,7 @@ Each project directory contains:
 | [magma-staking](./magma-staking/brief.md) | $1.16M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [magpie-ecosystem](./magpie-ecosystem/brief.md) | $19.12M | 8 | 218 | 156/218 (72%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [mangrove](./mangrove/brief.md) | $4.26M | 4 | 68 | 41/68 (60%) | 22.0% | 14.6% (ChainSecurity) | 5 | aging | ✅ active | - |
-| [manta-atlantic-stake](./manta-atlantic-stake/brief.md) | $5.41M | ethereum, manta | 109 | 68/109 (62%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [manta-atlantic-stake](./manta-atlantic-stake/brief.md) | $5.46M | ethereum, manta | 109 | 68/109 (62%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [manta-cedefi](./manta-cedefi/brief.md) | $26.48M | manta | 17 | 15/17 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [manta-pacific](./manta-pacific/brief.md) | $21.11M | ethereum, manta | 12 | 10/12 (83%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [mantle-restaking](./mantle-restaking/brief.md) | $60.85M | ethereum, mantle | 25 | 21/25 (84%) | 59.1% | 18.2% (MixBytes) | 8 | fresh | ⚠️ declining | - |
@@ -717,7 +717,7 @@ Each project directory contains:
 | [wemix.fi](./wemix.fi/brief.md) | $38.18M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [woo-x](./woo-x/brief.md) | $7.08M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [wrapped](./wrapped/brief.md) | $20.11M | celo, ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
-| [wrapped-bnb](./wrapped-bnb/brief.md) | $5.48M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [wrapped-bnb](./wrapped-bnb/brief.md) | $5.51M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/brief.md) | $1.17M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [ybtc.b](./ybtc.b/brief.md) | $69.27M | avalanche, bsc, ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [yei-finance](./yei-finance/brief.md) | $18.30M | sei | 47 | 38/47 (81%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -729,5 +729,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T02:53:34.409Z_
+_Generated: 2026-06-13T04:00:34.161Z_
 _Projects: 717_

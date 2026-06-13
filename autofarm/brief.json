@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "autofarm",
-  "generated_at": "2026-06-10T20:58:57.888Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-13T03:45:43.829Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "autofarm",
@@ -22,26 +22,27 @@
     "drop_from_peak_pct": 99.70980702019683
   },
   "summary": {
-    "total_contracts": 10,
-    "total_addresses": 16,
-    "unique_implementations": 10,
-    "total_deployments": 16,
+    "total_contracts": 17,
+    "total_addresses": 27,
+    "unique_implementations": 17,
+    "total_deployments": 27,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 9,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 9,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 8,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6050499.24809,
-    "tvl_usd": 6050499.24809,
+    "dl_tvl_usd": 5596017.73106,
+    "tvl_usd": 5596017.73106,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": null,
     "chains": [
+      "arbitrum",
       "aurora",
       "avalanche",
       "boba",
@@ -73,7 +74,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 10,
+    "unique_implementations": 17,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -82,6 +83,46 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x0895196562c7868c5be92459fae7f877ed450452",
+      "name": "AutoFarmV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AutoFarmV2",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x0895196562c7868c5be92459fae7f877ed450452",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xf6c361f82c744881fb58563e6c0563601007cde2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 1313161554,
       "chain_name": "aurora",
@@ -133,6 +174,15 @@
           "is_audited": false
         },
         {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x76b8c3ecdf99483335239e66f34191f11534cbaa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
           "chain_id": 42220,
           "chain_name": "celo",
           "address": "0xdd11b66b90402f294a017c4688509c364312303f",
@@ -168,6 +218,55 @@
       "contamination_flag": null
     },
     {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x7c5a661069a25e94a71e03c75a58d7cf765c2c75",
+      "name": "AutoSwap_02",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AutoSwap_02",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xbd6ed39bedf95517c45ddb3a35b647a462eed55d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x7c5a661069a25e94a71e03c75a58d7cf765c2c75",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xa749d99d58b1fc462880a1aeab9b341e10ffd981",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0xa184088a740c695e156f91f5cc086a06bb78b827",
@@ -185,6 +284,161 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xa184088a740c695e156f91f5cc086a06bb78b827",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xbbdce2b8a83819af5e8db4f74e0bef75a43fac6d",
+      "name": "GnosisSafeL2",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+      "impl_name": "GnosisSafeL2",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xbbdce2b8a83819af5e8db4f74e0bef75a43fac6d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x89e1509810378f73b4bc0c1decb87fcca6fbe9a1",
+      "name": "StratVLEV",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StratVLEV",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x89e1509810378f73b4bc0c1decb87fcca6fbe9a1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x5f93026bcf9120ccf719882fcde147a52da8ca5c",
+      "name": "StratX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StratX",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x5f93026bcf9120ccf719882fcde147a52da8ca5c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xb27150dc6ee59ad4464cc7a89229b5870e568be2",
+      "name": "StratX2_AUTO",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StratX2_AUTO",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb27150dc6ee59ad4464cc7a89229b5870e568be2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x28579eca0a326e53340edd93e18698d379876a04",
+      "name": "TimelockController",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TimelockController",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x28579eca0a326e53340edd93e18698d379876a04",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -473,10 +727,30 @@
   "auditor_coverage": [],
   "coverage_gaps": [
     {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x0895196562c7868c5be92459fae7f877ed450452",
+      "name": "AutoFarmV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 1313161554,
       "chain_name": "aurora",
       "address": "0x62537419c8327ab66165bae205da8fcb6871a700",
       "name": "AutoFarmV2_CrossChain",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x7c5a661069a25e94a71e03c75a58d7cf765c2c75",
+      "name": "AutoSwap_02",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -491,12 +765,42 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x89e1509810378f73b4bc0c1decb87fcca6fbe9a1",
+      "name": "StratVLEV",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x5f93026bcf9120ccf719882fcde147a52da8ca5c",
+      "name": "StratX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xb27150dc6ee59ad4464cc7a89229b5870e568be2",
+      "name": "StratX2_AUTO",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 10,
+    "native": 15,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 2,
     "needs_review": 0
   },
   "scope_matching_notes": {

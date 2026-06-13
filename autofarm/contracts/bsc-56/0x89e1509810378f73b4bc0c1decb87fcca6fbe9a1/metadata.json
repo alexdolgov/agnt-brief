@@ -1,0 +1,17 @@
+{
+  "address": "0x89e1509810378f73b4bc0c1decb87fcca6fbe9a1",
+  "chain_id": 56,
+  "contract_name": "StratVLEV",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000f6c361f82c744881fb58563e6c0563601007cde200000000000000000000000012300ea3d3444e9106c65913de24c58462abfe240000000000000000000000002170ed0880ac9a755fd29b2688956bd959f933f8000000000000000000000000f508fcd89b8bd15579dc79a6827cb4686a3592c800000000000000000000000005ff2b0db69458a0750badebc4f9e13add608c7f",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T03:45:46.796Z"
+}

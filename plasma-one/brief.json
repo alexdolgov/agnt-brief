@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "plasma-one",
-  "generated_at": "2026-06-11T01:51:15.613Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-13T03:59:58.319Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "plasma-one",
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 7,
-    "total_addresses": 15,
+    "total_addresses": 16,
     "unique_implementations": 7,
-    "total_deployments": 15,
+    "total_deployments": 16,
     "audited_contracts": 0,
     "unaudited_contracts": 5,
     "contracts_verified_audited": 0,
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2436871.64497,
+    "dl_tvl_usd": 5456746.30083,
     "tvl_usd": 0.619928,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -106,17 +106,26 @@
     {
       "chain_id": 9745,
       "chain_name": "plasma",
-      "address": "0x5d72a9d9a9510cd8cbdba12ac62593a58930a948",
+      "address": "0x2ffb265d591809fb1c4baba84996507e3c168406",
       "name": "ATokenInstance",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "Aave",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": "Plasma One",
       "tvl_usd": null,
-      "is_proxy": true,
+      "is_proxy": false,
       "impl_address": "0x2ffb265d591809fb1c4baba84996507e3c168406",
       "impl_name": "ATokenInstance",
       "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x2ffb265d591809fb1c4baba84996507e3c168406",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 9745,
           "chain_name": "plasma",
@@ -378,9 +387,9 @@
   ],
   "origin_summary": {
     "native": 1,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 3,
-    "needs_review": 2
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {},

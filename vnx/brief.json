@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "vnx",
-  "generated_at": "2026-06-11T04:02:22.027Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
+  "generated_at": "2026-06-13T03:42:50.397Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "vnx",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6001230.660800001,
+    "dl_tvl_usd": 5443804.748969999,
     "tvl_usd": 1848984.2039370309,
     "tvl_source": "on_chain",
     "tvl_by_chain": {

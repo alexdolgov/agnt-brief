@@ -1,0 +1,17 @@
+{
+  "address": "0x7c5a661069a25e94a71e03c75a58d7cf765c2c75",
+  "chain_id": 137,
+  "contract_name": "AutoSwap_02",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "0000000000000000000000009fffe8d0336b87b60ac847465be7459c1289df7300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T03:45:46.228Z"
+}

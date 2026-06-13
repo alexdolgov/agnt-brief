@@ -7,11 +7,11 @@
 - Project: Manta Atlantic Stake (`manta-atlantic-stake`)
 - Website: [https://app.manta.network/manta/stake](https://app.manta.network/manta/stake)
 - Lifecycle: sunsetting (Tier 1, sunsetting)
-- Generated: 2026-06-11T00:50:59.252Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
+- Generated: 2026-06-13T03:45:32.327Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-8c0a
 - Chains: ethereum, manta
 - Contract surface: 109 unique implementations (136 raw deployments)
-- DeFi Llama TVL: $5,409,052.78
+- DeFi Llama TVL: $5,455,710.91
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -206,6 +206,7 @@ Verified + unaudited native implementations ranked by TVL:
 | manta | [`0x37cdab...4ef3fe`](./contracts/manta-169/0x37cdab54b883d0930bdecd2307971f41684ef3fe/) | EsRAP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | manta | [`0xb7b6ef...bc0129`](./contracts/manta-169/0xb7b6ef96de8e79a0d00b8297348af6dbd7bc0129/) | FastPriceFeedV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | manta | [`0xbba479...7a574b`](./contracts/manta-169/0xbba479d953d012256770e75e2e49af85f17a574b/) | GlpManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x2043c8...011ece`](./contracts/manta-169/0x2043c8479b771da6e0a742691b2eb9de51011ece/) | Governable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x635ba6...13c310`](./contracts/ethereum-1/0x635ba609680c55c3bdd0b3627b4c5db21b13c310/) | L1CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xbe896f...481c8f`](./contracts/ethereum-1/0xbe896f53bb658c9eecabbdf4a4db85e4b8481c8f/) | L1ERC721Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3b95bc...9715e5`](./contracts/ethereum-1/0x3b95bc951ee0f553ba487327278cac44f29715e5/) | L1StandardBridge | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -233,7 +234,6 @@ Verified + unaudited native implementations ranked by TVL:
 | manta | [`0xd45244...1bbaf6`](./contracts/manta-169/0xd45244ff30150f05906b3f10aa41d2055d1bbaf6/) | TokenConfigKeeper | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | manta | [`0x0dc076...fad850`](./contracts/manta-169/0x0dc0761d71af3332a42fa2cf885e7c427ffad850/) | TokenManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | manta | [`0x1808db...5e0732`](./contracts/manta-169/0x1808db4d0539ad603d6defa1ae3745791c5e0732/) | TokensPerIntervalUpdater | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x1a303e...003e7d`](./contracts/manta-169/0x1a303ea630f054a0b92787a30b03b0920e003e7d/) | USDR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | manta | [`0xea5c75...928bc4`](./contracts/manta-169/0xea5c751039e38e1d2c0b8983d4f024e3bc928bc4/) | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | manta | [`0x48542a...3f1d6c`](./contracts/manta-169/0x48542a36c725aba87067edfefcb7d551ce3f1d6c/) | VaultErrorController | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | manta | [`0xcc5bbc...9f8c84`](./contracts/manta-169/0xcc5bbc57cd6d210a3f1c7998eb6d5a35b49f8c84/) | VaultPriceFeedV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -247,9 +247,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 54 |
-| upstream | 7 |
-| standard_library | 10 |
-| needs_review | 38 |
+| upstream | 17 |
+| standard_library | 9 |
+| needs_review | 29 |
 
 ## Scope Matching Notes
 

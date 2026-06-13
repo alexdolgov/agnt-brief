@@ -5,11 +5,11 @@
 - Project: VNX (`vnx`)
 - Website: [https://vnx.li](https://vnx.li)
 - Lifecycle: active (Tier 0, 55.9% below peak)
-- Generated: 2026-06-11T04:02:22.027Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
+- Generated: 2026-06-13T03:42:50.397Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-8c0a
 - Chains: arbitrum, avalanche, base, celo, ethereum, fraxtal, polygon
 - Contract surface: 10 unique implementations (90 raw deployments)
-- DeFi Llama TVL: $6,001,230.66
+- DeFi Llama TVL: $5,443,804.75
 - On-chain TVL (included contracts): $1,848,984.20
 - TVL by chain: Avalanche $1,297,037.98 | Base $421,766.84 | Ethereum $83,403.92 | Celo $43,027.52 | Polygon $3,490.89 | Arbitrum $257.05
 

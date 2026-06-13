@@ -56,7 +56,7 @@
 | [augur](./augur/) | $1.7M | 64.1% | ? | active | 7 | 39 | 2026-06-10 |
 | [aura](./aura/) | $107.0M | 19.4% | $68.2M | active | 18 | 497 | 2026-06-10 |
 | [aurora-plus](./aurora-plus/) | $2.3M | 33.3% | ? | active | 3 | 31 | 2026-06-10 |
-| [autofarm](./autofarm/) | $6.1M | 0.0% | ? | declining | 1 | 10 | 2026-06-10 |
+| [autofarm](./autofarm/) | $5.6M | 0.0% | ? | declining | 1 | 17 | 2026-06-13 |
 | [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 8 | 570 | 2026-06-12 |
 | [avalaunch](./avalaunch/) | $31.3M | 84.6% | ? | active | 13 | 38 | 2026-06-10 |
 | [avantis](./avantis/) | $196.5M | 68.8% | $150.9M | declining | 3 | 61 | 2026-06-10 |
@@ -349,7 +349,7 @@
 | [makina](./makina/) | $12.9M | 90.9% | $12.9M | active | 4 | 36 | 2026-06-11 |
 | [mangrove](./mangrove/) | $4.3M | 22.0% | ? | active | 6 | 68 | 2026-06-11 |
 | [mansory](./mansory/) | $170.0K | 0.0% | $170.0K | active | 0 | 6 | 2026-06-13 |
-| [manta-atlantic-stake](./manta-atlantic-stake/) | $5.4M | 0.0% | ? | sunsetting | 0 | 109 | 2026-06-11 |
+| [manta-atlantic-stake](./manta-atlantic-stake/) | $5.5M | 0.0% | ? | sunsetting | 0 | 109 | 2026-06-13 |
 | [manta-cedefi](./manta-cedefi/) | $26.5M | 0.0% | ? | unknown | 0 | 17 | 2026-06-12 |
 | [manta-pacific](./manta-pacific/) | $21.1M | 0.0% | ? | active | 0 | 12 | 2026-06-12 |
 | [mantle-restaking](./mantle-restaking/) | $60.9M | 59.1% | ? | declining | 13 | 25 | 2026-06-12 |
@@ -454,7 +454,7 @@
 | [piku](./piku/) | $189.3M | 13.3% | $189.3M | active | 3 | 32 | 2026-06-12 |
 | [pionex](./pionex/) | $37.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [planet](./planet/) | $778.3M | 7.7% | $778.3M | declining | 1 | 34 | 2026-06-11 |
-| [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | active | 0 | 7 | 2026-06-11 |
+| [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | active | 0 | 7 | 2026-06-13 |
 | [plasma-saving-vaults](./plasma-saving-vaults/) | $2.6M | 0.0% | $2.6M | declining | 0 | 6 | 2026-06-12 |
 | [pleasing-gold](./pleasing-gold/) | $93.0M | 0.0% | $93.0M | unknown | 0 | 14 | 2026-06-12 |
 | [pnetwork](./pnetwork/) | $13.1M | 0.0% | ? | declining | 0 | 12 | 2026-06-12 |
@@ -677,7 +677,7 @@
 | [vest-markets](./vest-markets/) | $1.7M | 0.0% | ? | declining | 0 | 4 | 2026-06-11 |
 | [vfat.io](./vfat.io/) | $0.0 | 10.0% | ? | active | 10 | 553 | 2026-06-11 |
 | [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 0 | 65 | 2026-06-12 |
-| [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-06-11 |
+| [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-06-13 |
 | [volta-club](./volta-club/) | $976.2M | 0.0% | $976.2M | unknown | 0 | 316 | 2026-06-11 |
 | [wagmi](./wagmi/) | $1.3M | 0.0% | ? | declining | 10 | 334 | 2026-06-11 |
 | [wan-bridge](./wan-bridge/) | $4.6K | 0.0% | $4.6K | active | 3 | 135 | 2026-06-12 |
@@ -689,7 +689,7 @@
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | declining | 11 | 96 | 2026-06-11 |
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [woofi](./woofi/) | $9.8M | 18.8% | $9.7M | declining | 6 | 200 | 2026-06-11 |
-| [wrapped-bnb](./wrapped-bnb/) | $5.5M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
+| [wrapped-bnb](./wrapped-bnb/) | $5.5M | 0.0% | ? | declining | 1 | 1 | 2026-06-13 |
 | [wrapped](./wrapped/) | $20.1M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
 | [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 48 | 2026-06-11 |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |

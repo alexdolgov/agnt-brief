@@ -7,11 +7,11 @@
 - Project: Wrapped BNB (`wrapped-bnb`)
 - Website: [https://www.kava.io](https://www.kava.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T12:18:09.842Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
+- Generated: 2026-06-13T03:46:00.773Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-8c0a
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $5,475,258.99
+- DeFi Llama TVL: $5,514,258.28
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -35,8 +35,8 @@ Wrapped BNB is a Kava chain wrapped-asset token backed 1:1 by BNB using the BEP3
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2021-09 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -78,7 +78,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Auditsarrow_outward](https://skynet.certik.com/projects/kava) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Auditsarrow_outward](https://skynet.certik.com/projects/kava) | CertiK | Audit | 2021-09 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -90,10 +90,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

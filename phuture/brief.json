@@ -1,0 +1,225 @@
+{
+  "schema_version": "2.0",
+  "project_key": "phuture",
+  "generated_at": "2026-06-13T10:27:40.341Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 6,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 30203.628090000002,
+    "tvl_usd": 30203.628090000002,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://www.phuture.finance",
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2022-04",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 3,
+      "unknown": 3
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [
+    {
+      "audit_id": 13672,
+      "audit_key": "audit-13672",
+      "report_name": "DL audit link",
+      "report_url": "https://skynet.certik.com/projects/phuture",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13673,
+      "audit_key": "audit-13673",
+      "report_name": "PeckShield-Audit-Report-Phuture-v1.0.pdf",
+      "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Phuture-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13674,
+      "audit_key": "audit-13674",
+      "report_name": "DL audit link",
+      "report_url": "https://code4rena.com/reports/2022-04-phuture",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "stale",
+      "date": "2022-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13675,
+      "audit_key": "audit-13675",
+      "report_name": "PeckShield-Audit-Report-Phuture-FRPVault-v1.0.pdf",
+      "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Phuture-FRPVault-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13676,
+      "audit_key": "audit-13676",
+      "report_name": "| <p><a href=\"https://renascence-labs.xyz/\">Renascence Labs</a><br>Auditors:<br><a href=\"https://github.com/MiloTruck\">Milotruck</a><br><a href=\"https://github.com/HollaDieWaldfee100\">HollaDieWaldfee</a><br><a href=\"https://github.com/windhustler\">Windhustler</a></p> | Phuture v2 core | [Link]() |",
+      "report_url": "https://github.com/Renascence-Labs/portfolio/blob/main/reports/Phuture%20V2%20-%20Renascence%20Audit%20Report.pdf",
+      "auditor": "MiloTruck",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13677,
+      "audit_key": "audit-13677",
+      "report_name": "Agent Exchange - Renascence Audit Report.pdf",
+      "report_url": "https://github.com/Renascence-Labs/portfolio/blob/main/reports/Agent%20Exchange%20-%20Renascence%20Audit%20Report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 13672,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 13673,
+        "report_name": "PeckShield-Audit-Report-Phuture-v1.0.pdf"
+      },
+      {
+        "audit_id": 13674,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 13675,
+        "report_name": "PeckShield-Audit-Report-Phuture-FRPVault-v1.0.pdf"
+      },
+      {
+        "audit_id": 13676,
+        "report_name": "| <p><a href=\"https://renascence-labs.xyz/\">Renascence Labs</a><br>Auditors:<br><a href=\"https://github.com/MiloTruck\">Milotruck</a><br><a href=\"https://github.com/HollaDieWaldfee100\">HollaDieWaldfee</a><br><a href=\"https://github.com/windhustler\">Windhustler</a></p> | Phuture v2 core | [Link]() |"
+      },
+      {
+        "audit_id": 13677,
+        "report_name": "Agent Exchange - Renascence Audit Report.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

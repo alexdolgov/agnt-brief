@@ -383,6 +383,7 @@
 | [manta-pacific](./manta-pacific/) | $21.1M | 0.0% | ? | active | 0 | 12 | 2026-06-12 |
 | [mantle-restaking](./mantle-restaking/) | $60.9M | 59.1% | ? | declining | 13 | 25 | 2026-06-12 |
 | [mantra-dao](./mantra-dao/) | $611.0M | 0.0% | $611.0M | declining | 1 | 195 | 2026-06-11 |
+| [marginly](./marginly/) | $0.0 | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [matstake](./matstake/) | $4.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [maverick-protocol](./maverick-protocol/) | $26.8M | 35.3% | $26.8M | declining | 7 | 93 | 2026-06-11 |
 | [maya-protocol](./maya-protocol/) | $10.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
@@ -487,6 +488,7 @@
 | [perpl](./perpl/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [pharaoh-exchange](./pharaoh-exchange/) | $15.6M | 0.0% | $15.6M | active | 3 | 60 | 2026-06-12 |
 | [phoenix](./phoenix/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [phuture](./phuture/) | $30.2K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [pickle](./pickle/) | $2.9M | 2.7% | $2.9M | declining | 4 | 235 | 2026-06-11 |
 | [piku](./piku/) | $189.3M | 13.3% | $189.3M | active | 3 | 32 | 2026-06-12 |
 | [pionex](./pionex/) | $37.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
@@ -575,6 +577,7 @@
 | [shape-bridge](./shape-bridge/) | $760.4K | 0.0% | ? | active | 2 | 26 | 2026-06-11 |
 | [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | active | 3 | 40 | 2026-06-11 |
 | [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-06-13 |
+| [shield](./shield/) | $0.0 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | active | 0 | 2 | 2026-06-12 |
 | [sierra-protocol](./sierra-protocol/) | $39.6M | 4.0% | $5.3M | active | 1 | 78 | 2026-06-11 |
@@ -601,6 +604,7 @@
 | [spectra](./spectra/) | $10.5M | 12.2% | $5.8M | active | 7 | 229 | 2026-06-12 |
 | [sperax](./sperax/) | $14.2M | 47.1% | $2.6M | declining | 9 | 142 | 2026-06-11 |
 | [sphere](./sphere/) | $229.4M | 0.0% | $229.4M | active | 0 | 221 | 2026-06-13 |
+| [spinup](./spinup/) | $406.3K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [spiraldao](./spiraldao/) | $6.4M | 44.0% | ? | dead | 3 | 56 | 2026-05-23 |
 | [splash-protocol](./splash-protocol/) | $5.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |
@@ -684,6 +688,7 @@
 | [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
 | [treehouse-protocol](./treehouse-protocol/) | $24.0M | 42.6% | $1.8M | declining | 20 | 77 | 2026-06-11 |
+| [tren-finance](./tren-finance/) | $25.6 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [trevee-earn](./trevee-earn/) | $582.2M | 0.0% | $582.2M | declining | 0 | 15 | 2026-06-11 |
 | [trisolaris](./trisolaris/) | $1.5M | 0.0% | ? | declining | 0 | 119 | 2026-06-11 |
 | [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |

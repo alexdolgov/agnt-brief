@@ -107,12 +107,14 @@
 | [boba-bridge](./boba-bridge/) | $3.0M | 0.0% | ? | declining | 0 | 53 | 2026-05-31 |
 | [bonsaidao-ecosystem](./bonsaidao-ecosystem/) | $1.1M | 0.0% | ? | active | 1 | 190 | 2026-06-10 |
 | [bonzo-finance](./bonzo-finance/) | $23.0M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
+| [boringdao](./boringdao/) | $275.7K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [boros](./boros/) | $10.3M | 100.0% | ? | active | 5 | 2 | 2026-06-10 |
 | [botto](./botto/) | $4.1M | 0.0% | ? | active | 3 | 18 | 2026-06-10 |
 | [bounce.tech](./bounce.tech/) | $1.1M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
 | [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 9 | 2026-06-12 |
 | [bracket-protocol](./bracket-protocol/) | $622.4M | 17.4% | $619.3M | active | 5 | 58 | 2026-06-10 |
 | [brahma-vaults-(sunset)](./brahma-vaults-(sunset)/) | $22.4K | 0.0% | ? | unknown | 14 | 0 | 2026-06-13 |
+| [brasa-finance](./brasa-finance/) | $1.2M | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [brickken](./brickken/) | $42.2M | 20.0% | ? | active | 2 | 31 | 2026-06-12 |
 | [bridgers](./bridgers/) | $1.6M | 0.0% | ? | active | 1 | 6 | 2026-06-10 |
 | [brotocol](./brotocol/) | $447.6M | 20.0% | $447.6M | unknown | 14 | 76 | 2026-06-13 |
@@ -160,6 +162,7 @@
 | [cryptex-finance](./cryptex-finance/) | $631.4K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [crypto.com-liquid-staking](./crypto.com-liquid-staking/) | $20.0M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
 | [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-06-10 |
+| [cvi-finance](./cvi-finance/) | $131.5K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [cybro](./cybro/) | $103.9K | 0.0% | ? | unknown | 14 | 0 | 2026-06-13 |
 | [cyclone](./cyclone/) | $165.5M | 0.0% | $165.5M | active | 3 | 63 | 2026-06-11 |
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-06-10 |
@@ -180,6 +183,7 @@
 | [derivadex](./derivadex/) | $1.6M | 0.0% | ? | declining | 0 | 8 | 2026-06-10 |
 | [desyn-protocol](./desyn-protocol/) | $10.7M | 0.0% | ? | declining | 0 | 11 | 2026-06-10 |
 | [dexalot](./dexalot/) | $4.2M | 16.7% | ? | active | 6 | 6 | 2026-06-12 |
+| [dexlyn-labs](./dexlyn-labs/) | $80.4K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [dflow](./dflow/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [dforce](./dforce/) | $3.6M | 36.3% | $1.2M | declining | 4 | 453 | 2026-06-12 |
 | [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | declining | 4 | 71 | 2026-06-10 |
@@ -249,6 +253,7 @@
 | [gimo](./gimo/) | $8.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 0 | 16 | 2026-06-10 |
 | [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 0 | 6 | 2026-06-12 |
+| [glitter-finance](./glitter-finance/) | $13.0 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [gnosis-protocol-v1](./gnosis-protocol-v1/) | $94.4M | 0.0% | $94.4M | declining | 0 | 110 | 2026-06-10 |
 | [goldfinger](./goldfinger/) | $0.0 | 0.0% | ? | active | 8 | 5 | 2026-06-11 |
 | [goldstation](./goldstation/) | $2.2M | 0.0% | ? | active | 3 | 5 | 2026-06-10 |

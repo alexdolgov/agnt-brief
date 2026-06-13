@@ -420,11 +420,13 @@ Each project directory contains:
 | [boba-bridge](./boba-bridge/brief.md) | $3.04M | ethereum | 53 | 41/53 (77%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [bonsaidao-ecosystem](./bonsaidao-ecosystem/brief.md) | $1.08M | arbitrum, base, berachain | 190 | 86/190 (45%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [bonzo-finance](./bonzo-finance/brief.md) | $22.97M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
+| [boringdao](./boringdao/brief.md) | $275.70K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [boros](./boros/brief.md) | $10.31M | arbitrum | 2 | 2/2 (100%) | 100.0% | 100.0% (ChainSecurity) | 3 | fresh | ✅ active | - |
 | [botto](./botto/brief.md) | $4.11M | base, ethereum | 18 | 13/18 (72%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [bounce.tech](./bounce.tech/brief.md) | $1.12M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [bouncebit-prime](./bouncebit-prime/brief.md) | $11.94M | bsc, ethereum | 9 | 2/9 (22%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [brahma-vaults-(sunset)](./brahma-vaults-(sunset)/brief.md) | $22.37K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
+| [brasa-finance](./brasa-finance/brief.md) | $1.16M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [brickken](./brickken/brief.md) | $42.20M | 4 | 31 | 7/31 (23%) | 20.0% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [bridgers](./bridgers/brief.md) | $1.60M | 8 | 6 | 1/6 (17%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [btcfi](./btcfi/brief.md) | $9.64M | base | 15 | 1/15 (7%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -457,6 +459,7 @@ Each project directory contains:
 | [cozy-finance](./cozy-finance/brief.md) | $2.30M | optimism | 48 | 5/48 (10%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [cryptex-finance](./cryptex-finance/brief.md) | $631.36K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [crypto.com-liquid-staking](./crypto.com-liquid-staking/brief.md) | $20.02M | cronos, ethereum | 2 | 1/2 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [cvi-finance](./cvi-finance/brief.md) | $131.47K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [cybro](./cybro/brief.md) | $103.90K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [decibel](./decibel/brief.md) | $41.88M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [defi-kingdoms](./defi-kingdoms/brief.md) | $7.69M | harmony, klaytn | 5 | 0/5 (0%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
@@ -466,6 +469,7 @@ Each project directory contains:
 | [derivadex](./derivadex/brief.md) | $1.62M | ethereum | 8 | 6/8 (75%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [desyn-protocol](./desyn-protocol/brief.md) | $10.73M | ethereum, mode | 11 | 2/11 (18%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [dexalot](./dexalot/brief.md) | $7.90M | avalanche, bsc | 6 | 6/6 (100%) | 16.7% | 0.0% (-) | 2 | stale | ✅ active | - |
+| [dexlyn-labs](./dexlyn-labs/brief.md) | $80.39K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [dflow](./dflow/brief.md) | $1.49M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [dnax](./dnax/brief.md) | $3.54M | bsc | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [dolomite](./dolomite/brief.md) | $664.24M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
@@ -508,6 +512,7 @@ Each project directory contains:
 | [gearbox](./gearbox/brief.md) | $36.88M | 4 | 195 | 100/195 (51%) | 53.0% | 50.0% (ChainSecurity, ConsenSys Diligence, MixBytes) | 31 | fresh | ⚠️ declining | - |
 | [generic.money](./generic.money/brief.md) | $3.74M | ethereum | 12 | 11/12 (92%) | 81.8% | 81.8% (Spearbit) | 1 | fresh | ⚠️ declining | - |
 | [gimo](./gimo/brief.md) | $8.66M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [glitter-finance](./glitter-finance/brief.md) | $13.02 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [goldfinger](./goldfinger/brief.md) | $0.00 | bsc | 5 | 4/5 (80%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [goldstation](./goldstation/brief.md) | $2.15M | avalanche, klaytn | 5 | 0/5 (0%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [growihf](./growihf/brief.md) | $8.39M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -769,5 +774,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T10:23:53.586Z_
-_Projects: 757_
+_Generated: 2026-06-13T10:26:19.219Z_
+_Projects: 762_

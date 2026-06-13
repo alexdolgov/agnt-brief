@@ -1,0 +1,225 @@
+{
+  "schema_version": "2.0",
+  "project_key": "glitter-finance",
+  "generated_at": "2026-06-13T10:25:19.700Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 6,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 13.01819,
+    "tvl_usd": 13.01819,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://www.glitterfinance.org/",
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 6
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [
+    {
+      "audit_id": 13190,
+      "audit_key": "audit-13190",
+      "report_name": "DL audit link",
+      "report_url": "https://skynet.certik.com/projects/glitter-finance",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13191,
+      "audit_key": "audit-13191",
+      "report_name": "DL audit link",
+      "report_url": "https://rdauditors.com/wp-content/uploads/2022/06/Glitter-Finance-Penetration-and-Load-Testing-Summary-Report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13192,
+      "audit_key": "audit-13192",
+      "report_name": "DL audit link",
+      "report_url": "https://www.dropbox.com/scl/fi/4d8u1vjhtslagyglrpcs7/certik_glitter_finance_algorand_audit.pdf?rlkey=0wjyjn7hh60aramrc2q2r7bga&dl=0",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13193,
+      "audit_key": "audit-13193",
+      "report_name": "DL audit link",
+      "report_url": "https://www.dropbox.com/scl/fi/52sbhzvyl1794w4uwc7oh/certik_glitter_finance_algorand_addendum.pdf?rlkey=y9pr55way2a10ryv32pqt7wpi&dl=0",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13194,
+      "audit_key": "audit-13194",
+      "report_name": "DL audit link",
+      "report_url": "https://www.dropbox.com/scl/fi/2j5g0xdjj86mrdl4iqkom/certik_glitter_finance_solana_audit.pdf?rlkey=1r88rkq8ibnlo5k7ywqghbr5l&dl=0",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13195,
+      "audit_key": "audit-13195",
+      "report_name": "**Here**",
+      "report_url": "https://www.dropbox.com/scl/fi/m2op0hazl11symixqn8pc/RD_Audit.pdf?rlkey=7nri2ruov2ras1f7pwwd5r5ev&dl=0",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 13190,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 13191,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 13192,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 13193,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 13194,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 13195,
+        "report_name": "**Here**"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

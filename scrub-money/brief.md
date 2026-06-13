@@ -5,11 +5,11 @@
 - Project: Scrub Money (`scrub-money`)
 - Website: [https://scrub.money](https://scrub.money)
 - Lifecycle: active (Tier 0, 32.4% below peak)
-- Generated: 2026-06-11T12:11:08.969Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
+- Generated: 2026-06-13T00:47:25.157Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-e35d
 - Chains: arbitrum, kava
-- Contract surface: 19 unique implementations (19 raw deployments)
-- DeFi Llama TVL: $7,156,216.00
+- Contract surface: 20 unique implementations (20 raw deployments)
+- DeFi Llama TVL: $7,156,266.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -26,9 +26,9 @@ The Scrub family provides core DeFi primitives (stablecoins, yield) that likely 
 - Verified implementations audited: 0/1 (0.0%)
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 18
-- Unique implementations: 19
-- Raw deployments: 19
+- Unverified implementations: 19
+- Unique implementations: 20
+- Raw deployments: 20
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -64,7 +64,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (18)
+### ❓ Unverified (19)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -88,6 +88,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | kava | `0xbd9881...ef9c50` | ❓ Unverified |
 | UnnamedContract | unknown | kava | `0xc0608a...d58d55` | ❓ Unverified |
 | UnnamedContract | unknown | kava | `0xea8481...b15ced` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | `0xee3a10...e2347f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -108,7 +109,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 18 |
+| needs_review | 19 |
 
 ## Scope Matching Notes
 

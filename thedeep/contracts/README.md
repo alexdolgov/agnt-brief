@@ -1,6 +1,6 @@
 # thedeep — Contract Index
 
-164 unique implementations across 4 chains · 244 deployments · 0 audited · 15 unaudited · 149 unverified
+165 unique implementations across 5 chains · 249 deployments · 0 audited · 16 unaudited · 149 unverified
 
 ## adapter (1)
 
@@ -37,11 +37,12 @@
 |---|---|---|---|---|
 | [QuoterV1 (4 deployments)](./celo-42220/0x6d7fc94c5106a64a43b80fe8e4b3704d6ce0b0c2/) | celo | 4 deployments: celo [`0x6d7fc9...e0b0c2`](./celo-42220/0x6d7fc94c5106a64a43b80fe8e4b3704d6ce0b0c2/); celo `0xb1fa72...7bd171`; celo `0xc7ea64...02d9af`; celo `0xe1962f...0f8f85` | ⚠️ Unaudited | Verified |
 
-## registry (1)
+## registry (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [ICHIVaultFactory (12 deployments)](./celo-42220/0x1f9563a0a99d1c1893fbe0cacda7577b4a0838e6/) | celo | 12 deployments: polygon `0xf39a4c...9b0298`; base `0xabe5b5...8ab3b3`; base `0xbff23e...d17ad1`; base `0xf6b5ab...045fa6`; base `0xfbf389...607065`; celo [`0x1f9563...0838e6`](./celo-42220/0x1f9563a0a99d1c1893fbe0cacda7577b4a0838e6/); celo `0x2f4b48...36d085`; celo `0x7df494...14e975`; celo `0x82dca6...e33870`; celo `0x8d05f6...3eb92a`; celo `0x9fab4b...d7418f`; celo `0xb3bf88...d3e5bf` | ⚠️ Unaudited | Verified |
+| [ICHIVaultFactory (13 deployments)](./bsc-56/0x131c03ca881b7cc66d7a5120a9273ebf675c241d/) | bsc | 13 deployments: bsc [`0x131c03...5c241d`](./bsc-56/0x131c03ca881b7cc66d7a5120a9273ebf675c241d/); polygon `0xf39a4c...9b0298`; base `0xabe5b5...8ab3b3`; base `0xbff23e...d17ad1`; base `0xf6b5ab...045fa6`; base `0xfbf389...607065`; celo `0x1f9563...0838e6`; celo `0x2f4b48...36d085`; celo `0x7df494...14e975`; celo `0x82dca6...e33870`; celo `0x8d05f6...3eb92a`; celo `0x9fab4b...d7418f`; celo `0xb3bf88...d3e5bf` | ⚠️ Unaudited | Verified |
+| [MultiFeeDistributionFactory (5 deployments)](./celo-42220/0x5ccf5a000129988e4512408bc49d94e62f581afd/) | celo | 5 deployments: celo [`0x5ccf5a...581afd`](./celo-42220/0x5ccf5a000129988e4512408bc49d94e62f581afd/); celo `0x772960...3790b3`; celo `0xb005d5...0002fc`; celo `0xe734a1...e73017`; celo `0xf251d0...38eb5a` | ⚠️ Unaudited | Verified |
 
 ## unknown (153)
 
@@ -197,6 +198,6 @@
 | UnnamedContract | ink | `0x65cd1f...2074ac` | ❓ Unverified | Unverified |
 | UnnamedContract | ink | `0x822b0b...093618` | ❓ Unverified | Unverified |
 | UnnamedContract | ink | `0x9176b8...9f19b5` | ❓ Unverified | Unverified |
-| [UV3Math (14 deployments)](./celo-42220/0x065cb8139e9fed6c97f8b0851e599c56286ea031/) | celo | 14 deployments: polygon `0x8d6cdb...a9fc0d`; base `0xb177cf...5a04e2`; base `0xbf60a8...e057a1`; celo [`0x065cb8...6ea031`](./celo-42220/0x065cb8139e9fed6c97f8b0851e599c56286ea031/); celo `0x3b5fbc...4e0d3b`; celo `0x460812...898738`; celo `0x7a4ae8...8ede18`; celo `0x7f659c...e3dc06`; celo `0xa45a0a...3d883d`; celo `0xacdeab...35a3a6`; celo `0xafec07...dadf69`; celo `0xb9b42b...626dcc`; celo `0xf6b5ab...045fa6`; celo `0xfa0263...1b97c5` | ⚠️ Unaudited | Verified |
+| [UV3Math (13 deployments)](./celo-42220/0x065cb8139e9fed6c97f8b0851e599c56286ea031/) | celo | 13 deployments: base `0xb177cf...5a04e2`; base `0xbf60a8...e057a1`; celo [`0x065cb8...6ea031`](./celo-42220/0x065cb8139e9fed6c97f8b0851e599c56286ea031/); celo `0x3b5fbc...4e0d3b`; celo `0x460812...898738`; celo `0x7a4ae8...8ede18`; celo `0x7f659c...e3dc06`; celo `0xa45a0a...3d883d`; celo `0xacdeab...35a3a6`; celo `0xafec07...dadf69`; celo `0xb9b42b...626dcc`; celo `0xf6b5ab...045fa6`; celo `0xfa0263...1b97c5` | ⚠️ Unaudited | Verified |
 | VaultSlippageCheckV3 (3 deployments) | polygon | 3 deployments: polygon `0x16dfbb...9fde29`; polygon `0xb1fa72...7bd171`; celo [`0xcec871...4b7da8`](./celo-42220/0xcec8716cdd60856eacaa74d499abd14ae34b7da8/) | ⚠️ Unaudited | Verified |
 | [VolatilityCheck (2 deployments)](./celo-42220/0x4eecd2cee06598c942a4c24f91b4452a1b11d6da/) | celo | 2 deployments: celo [`0x4eecd2...11d6da`](./celo-42220/0x4eecd2cee06598c942a4c24f91b4452a1b11d6da/); celo `0x6c2e26...74e72e` | ⚠️ Unaudited | Verified |

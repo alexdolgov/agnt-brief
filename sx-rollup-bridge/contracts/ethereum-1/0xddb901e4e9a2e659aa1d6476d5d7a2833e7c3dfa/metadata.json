@@ -1,0 +1,18 @@
+{
+  "address": "0xddb901e4e9a2e659aa1d6476d5d7a2833e7c3dfa",
+  "chain_id": 1,
+  "contract_name": "GnosisSafeProxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "LGPL-3.0-only",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
+  "fetched_at": "2026-06-13T00:50:42.165Z"
+}

@@ -24,7 +24,7 @@
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 15 | 58 | 2026-06-10 |
 | [allbridge](./allbridge/) | $21.7M | 0.0% | $21.7M | declining | 11 | 287 | 2026-06-12 |
 | [alpaca-finance](./alpaca-finance/) | $11.5M | 57.4% | $11.2M | declining | 19 | 144 | 2026-06-10 |
-| [alphagrowth](./alphagrowth/) | $6.3M | 0.0% | $6.3M | active | 16 | 55 | 2026-06-11 |
+| [alphagrowth](./alphagrowth/) | $7.4M | 14.3% | $7.4M | active | 16 | 40 | 2026-06-13 |
 | [alphaping](./alphaping/) | $73.6M | 0.0% | $73.6M | active | 0 | 4 | 2026-06-12 |
 | [alphax](./alphax/) | $218.2K | 0.0% | $218.2K | active | 1 | 1 | 2026-06-10 |
 | [altitude.fi](./altitude.fi/) | $16.1M | 72.2% | ? | declining | 7 | 124 | 2026-06-10 |
@@ -274,7 +274,7 @@
 | [hypersurface](./hypersurface/) | $161.0M | 0.0% | $161.0M | active | 0 | 242 | 2026-06-10 |
 | [hyperswap](./hyperswap/) | $3.7M | 0.0% | $3.7M | active | 3 | 30 | 2026-06-12 |
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 0 | 11 | 2026-06-11 |
-| [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 3 | 60 | 2026-06-11 |
+| [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 3 | 60 | 2026-06-13 |
 | [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 0 | 45 | 2026-05-31 |
 | [ichi](./ichi/) | $36.1M | 0.9% | $36.1M | active | 9 | 616 | 2026-06-11 |
 | [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | active | 0 | 16 | 2026-06-11 |
@@ -524,7 +524,7 @@
 | [sceptre-liquid](./sceptre-liquid/) | $20.0M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [scream](./scream/) | $1.3M | 0.0% | ? | dead | 1 | 1 | 2026-06-11 |
 | [scroll-bridge](./scroll-bridge/) | $5.0M | 0.0% | $5.0M | declining | 0 | 32 | 2026-06-12 |
-| [scrub-money](./scrub-money/) | $7.2M | 0.0% | ? | active | 1 | 19 | 2026-06-11 |
+| [scrub-money](./scrub-money/) | $7.2M | 0.0% | ? | active | 1 | 20 | 2026-06-13 |
 | [sdai](./sdai/) | $3.3K | 0.0% | $3.3K | active | 0 | 103 | 2026-06-12 |
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 9.1% | $34.8K | dead | 5 | 99 | 2026-06-11 |
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-31 |
@@ -605,7 +605,7 @@
 | [swell](./swell/) | $130.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [swellchain-bridge](./swellchain-bridge/) | $1.2M | 0.0% | ? | declining | 0 | 10 | 2026-06-11 |
 | [switcheo-finance](./switcheo-finance/) | $68.3M | 0.0% | $68.3M | active | 0 | 47 | 2026-06-11 |
-| [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 133 | 2026-06-11 |
+| [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 151 | 2026-06-13 |
 | [symbiosis](./symbiosis/) | $236.1M | 15.4% | $236.1M | active | 15 | 40 | 2026-06-11 |
 | [symmio](./symmio/) | $24.5 | 0.0% | $24.5 | active | 0 | 168 | 2026-06-11 |
 | [synapse](./synapse/) | $25.6M | 0.0% | $25.6M | declining | 0 | 824 | 2026-06-11 |
@@ -627,7 +627,7 @@
 | [tg-casino](./tg-casino/) | $13.4M | 6.7% | ? | active | 761 | 15 | 2026-06-11 |
 | [the-arena](./the-arena/) | $7.8M | 0.0% | $7.8M | active | 0 | 119 | 2026-06-11 |
 | [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 17 | 2026-06-11 |
-| [thedeep](./thedeep/) | $7.0M | 0.0% | ? | active | 1 | 164 | 2026-06-11 |
+| [thedeep](./thedeep/) | $7.0M | 0.0% | ? | active | 1 | 165 | 2026-06-13 |
 | [themis-pro](./themis-pro/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [thena](./thena/) | $208.2 | 10.2% | $208.2 | declining | 3 | 131 | 2026-05-25 |
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-06-11 |

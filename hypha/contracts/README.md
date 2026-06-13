@@ -1,6 +1,6 @@
 # hypha — Contract Index
 
-60 unique implementations on avalanche · 88 deployments · 0 audited · 30 unaudited · 30 unverified
+60 unique implementations on avalanche · 89 deployments · 0 audited · 30 unaudited · 30 unverified
 
 ## core_logic (3)
 
@@ -67,7 +67,7 @@
 | [ClaimNodeOp](./avalanche-43114/0xb42cfad450b46fdc9cac5fbf14bc2e6091afc35c/) | avalanche | [`0xb42cfa...afc35c`](./avalanche-43114/0xb42cfad450b46fdc9cac5fbf14bc2e6091afc35c/) | ⚠️ Unaudited | Verified |
 | [ClaimProtocolDAO (2 deployments)](./avalanche-43114/0x4169cf88c7ed811e6f6e61917c5b915bea49476c/) | avalanche | 2 deployments: avalanche [`0x4169cf...49476c`](./avalanche-43114/0x4169cf88c7ed811e6f6e61917c5b915bea49476c/); avalanche `0x6476a7...bb286c` | ⚠️ Unaudited | Verified |
 | [GGAVAXRateProvider](./avalanche-43114/0x1bb74ec551ccd9fe416c71f904d64f42079a0a7f/) | avalanche | [`0x1bb74e...9a0a7f`](./avalanche-43114/0x1bb74ec551ccd9fe416c71f904d64f42079a0a7f/) | ⚠️ Unaudited | Verified |
-| NodeSale | avalanche | `0xa60a66...83cfaa` | ⚠️ Unaudited | Verified |
+| [NodeSale (2 deployments)](./avalanche-43114/0x50db30deb68b0f40df4d07c002142100a5b77102/) | avalanche | 2 deployments: avalanche [`0x50db30...b77102`](./avalanche-43114/0x50db30deb68b0f40df4d07c002142100a5b77102/); avalanche `0xa60a66...83cfaa` | ⚠️ Unaudited | Verified |
 | [Ocyticus (2 deployments)](./avalanche-43114/0x9189d18f453b1ec1f02e40a8e3711334f9ea210b/) | avalanche | 2 deployments: avalanche [`0x9189d1...ea210b`](./avalanche-43114/0x9189d18f453b1ec1f02e40a8e3711334f9ea210b/); avalanche `0xffdc3b...ad5542` | ⚠️ Unaudited | Verified |
 | [OneInchMock](./avalanche-43114/0x25314c5a00004f5b4fa83c82238ab879f48b58aa/) | avalanche | [`0x25314c...8b58aa`](./avalanche-43114/0x25314c5a00004f5b4fa83c82238ab879f48b58aa/) | ⚠️ Unaudited | Verified |
 | [ProtocolDAO (3 deployments)](./avalanche-43114/0x41a76343eb93b4790e53c8e2789e09ef41195d0b/) | avalanche | 3 deployments: avalanche [`0x41a763...195d0b`](./avalanche-43114/0x41a76343eb93b4790e53c8e2789e09ef41195d0b/); avalanche `0xa008cc...8ef546`; avalanche `0xfc3ea3...d8051a` | ⚠️ Unaudited | Verified |

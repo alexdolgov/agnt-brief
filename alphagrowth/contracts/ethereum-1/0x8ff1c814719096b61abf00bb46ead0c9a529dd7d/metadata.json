@@ -1,0 +1,18 @@
+{
+  "address": "0x8ff1c814719096b61abf00bb46ead0c9a529dd7d",
+  "chain_id": 1,
+  "contract_name": "EVault",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": "AGPL-3.0-or-later, BUSL-1.1, GPL-2.0-or-later",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 55,
+  "constructor_arguments": "",
+  "implementation_address": "0xa61f5016f2cd5cec12d091f871fce1e1df5f0b67",
+  "fetched_at": "2026-06-13T00:53:11.761Z"
+}

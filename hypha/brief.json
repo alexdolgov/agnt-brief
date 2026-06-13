@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hypha",
-  "generated_at": "2026-06-11T12:09:03.261Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
+  "generated_at": "2026-06-13T00:50:57.578Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-e35d",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hypha",
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 60,
-    "total_addresses": 88,
+    "total_addresses": 89,
     "unique_implementations": 60,
-    "total_deployments": 88,
+    "total_deployments": 89,
     "audited_contracts": 0,
     "unaudited_contracts": 30,
     "contracts_verified_audited": 0,
@@ -53,8 +53,8 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 1,
-      "unknown": 2
+      "stale": 2,
+      "unknown": 1
     }
   },
   "topography": {
@@ -590,17 +590,26 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
-      "address": "0xa60a66f6ce0f43b9d36d9c138aee858fc683cfaa",
+      "address": "0x50db30deb68b0f40df4d07c002142100a5b77102",
       "name": "NodeSale",
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "CX-Chain",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "NodeSale",
       "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x50db30deb68b0f40df4d07c002142100a5b77102",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 43114,
           "chain_name": "avalanche",
@@ -616,7 +625,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 43114,
@@ -2235,8 +2244,8 @@
       "report_url": "https://assets-global.website-files.com/62f90a8443126c2ee50f4c4e/643ee88bf91b375b39ba2613_Kudelski_multisig_labs_report_1.1.pdf",
       "auditor": "Code4rena",
       "audit_type": "contest",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2022-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -2365,7 +2374,7 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
-      "address": "0xa60a66f6ce0f43b9d36d9c138aee858fc683cfaa",
+      "address": "0x50db30deb68b0f40df4d07c002142100a5b77102",
       "name": "NodeSale",
       "role": "unknown",
       "origin_kind": "native",

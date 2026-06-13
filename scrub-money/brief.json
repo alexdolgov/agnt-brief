@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "scrub-money",
-  "generated_at": "2026-06-11T12:11:08.969Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-d9fc",
+  "generated_at": "2026-06-13T00:47:25.157Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-e35d",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "scrub-money",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 32.4350543606673
   },
   "summary": {
-    "total_contracts": 19,
-    "total_addresses": 19,
-    "unique_implementations": 19,
-    "total_deployments": 19,
+    "total_contracts": 20,
+    "total_addresses": 20,
+    "unique_implementations": 20,
+    "total_deployments": 20,
     "audited_contracts": 0,
     "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 18,
+    "contracts_unverified": 19,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 7156216,
-    "tvl_usd": 7156216,
+    "dl_tvl_usd": 7156266,
+    "tvl_usd": 7156266,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -62,7 +62,7 @@
     "product_family_count": 4
   },
   "surface_sufficiency": {
-    "unique_implementations": 19,
+    "unique_implementations": 20,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -659,6 +659,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xee3a10aae6c38db339e81ed01d55300af7e2347f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "ScrubVault",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xee3a10aae6c38db339e81ed01d55300af7e2347f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -690,7 +721,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 1,
-    "needs_review": 18
+    "needs_review": 19
   },
   "scope_matching_notes": {
     "match_method_counts": {},

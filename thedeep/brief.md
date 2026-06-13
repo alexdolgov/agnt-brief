@@ -5,11 +5,11 @@
 - Project: TheDeep (`thedeep`)
 - Website: [https://app.thedeep.ink/](https://app.thedeep.ink/)
 - Lifecycle: active (Tier 0, 48% below peak)
-- Generated: 2026-06-11T12:13:39.486Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
-- Chains: base, celo, ink, polygon
-- Contract surface: 164 unique implementations (244 raw deployments)
-- DeFi Llama TVL: $7,045,249.41
+- Generated: 2026-06-13T00:48:56.649Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-e35d
+- Chains: base, bsc, celo, ink, polygon
+- Contract surface: 165 unique implementations (249 raw deployments)
+- DeFi Llama TVL: $7,010,487.55
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,12 +23,12 @@ The ICHIVaultFactory contracts deploy and register vaults, while the RebalancerF
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/15 (0.0%)
-- Verified + Unaudited implementations: 11
+- Verified implementations audited: 0/16 (0.0%)
+- Verified + Unaudited implementations: 12
 - Verified by bytecode match: 4
 - Unverified implementations: 149
-- Unique implementations: 164
-- Raw deployments: 244
+- Unique implementations: 165
+- Raw deployments: 249
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,19 +46,20 @@ The ICHIVaultFactory contracts deploy and register vaults, while the RebalancerF
 
 - None
 
-### ⚠️ Verified + Unaudited (11)
+### ⚠️ Verified + Unaudited (12)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | ICHIVaultDeployer | core_logic | base | 9 deployments: polygon `0xd20feb...1f39a6`; base [`0x065cb8...6ea031`](./contracts/base-8453/0x065cb8139e9fed6c97f8b0851e599c56286ea031/); base `0x5507b5...98d8b7`; celo `0x544113...2756e1`; celo `0x561200...9fbd20`; celo `0xb78144...c8eb68`; celo `0xe3f26d...900dd4`; celo `0xfab743...7c068b`; celo `0xfbf389...607065` | ⚠️ Unaudited |
 | ICHIVaultDepositGuard | core_logic | celo | 10 deployments: polygon `0x2b8ca8...76d4c6`; polygon `0x7f659c...e3dc06`; polygon `0xeecb7b...d9eb3c`; polygon `0xfb6c43...bb4417`; base `0xbf38e4...599819`; base `0xe2381b...a31f26`; celo [`0x238394...4fbed8`](./contracts/celo-42220/0x238394541de407fd494e455ef17c9d991f4fbed8/); celo `0x4fa116...75a529`; celo `0x62fd18...4774c2`; celo `0xa19595...4d5a14` | ⚠️ Unaudited |
 | ICHIVaultDepositGuardExtendedForMFD | core_logic | celo | 3 deployments: celo [`0x141db8...1d9f25`](./contracts/celo-42220/0x141db85183ddb07dee22c33846aebde2101d9f25/); celo `0xb066a0...9029c3`; celo `0xdb771e...d6fccc` | ⚠️ Unaudited |
-| ICHIVaultFactory | registry | celo | 12 deployments: polygon `0xf39a4c...9b0298`; base `0xabe5b5...8ab3b3`; base `0xbff23e...d17ad1`; base `0xf6b5ab...045fa6`; base `0xfbf389...607065`; celo [`0x1f9563...0838e6`](./contracts/celo-42220/0x1f9563a0a99d1c1893fbe0cacda7577b4a0838e6/); celo `0x2f4b48...36d085`; celo `0x7df494...14e975`; celo `0x82dca6...e33870`; celo `0x8d05f6...3eb92a`; celo `0x9fab4b...d7418f`; celo `0xb3bf88...d3e5bf` | ⚠️ Unaudited |
+| ICHIVaultFactory | registry | bsc | 13 deployments: bsc [`0x131c03...5c241d`](./contracts/bsc-56/0x131c03ca881b7cc66d7a5120a9273ebf675c241d/); polygon `0xf39a4c...9b0298`; base `0xabe5b5...8ab3b3`; base `0xbff23e...d17ad1`; base `0xf6b5ab...045fa6`; base `0xfbf389...607065`; celo `0x1f9563...0838e6`; celo `0x2f4b48...36d085`; celo `0x7df494...14e975`; celo `0x82dca6...e33870`; celo `0x8d05f6...3eb92a`; celo `0x9fab4b...d7418f`; celo `0xb3bf88...d3e5bf` | ⚠️ Unaudited |
 | ICHIVaultMigrationGuard | operational_periphery | celo | [`0x7ba715...90bb56`](./contracts/celo-42220/0x7ba715350fa7d3120712b4ab1e3fc89f9090bb56/) | ⚠️ Unaudited |
+| MultiFeeDistributionFactory | registry | celo | 5 deployments: celo [`0x5ccf5a...581afd`](./contracts/celo-42220/0x5ccf5a000129988e4512408bc49d94e62f581afd/); celo `0x772960...3790b3`; celo `0xb005d5...0002fc`; celo `0xe734a1...e73017`; celo `0xf251d0...38eb5a` | ⚠️ Unaudited |
 | ProxyAdmin | governance | base | 4 deployments: base [`0x1b0ef0...a4cd63`](./contracts/base-8453/0x1b0ef045830466171d617dd0f1142ad699a4cd63/); base `0xbbb97d...f46ad3`; celo `0x2fb241...d7a931`; celo `0xb978c5...f1a415` | ⚠️ Unaudited |
 | QuoterV1 | periphery | celo | 4 deployments: celo [`0x6d7fc9...e0b0c2`](./contracts/celo-42220/0x6d7fc94c5106a64a43b80fe8e4b3704d6ce0b0c2/); celo `0xb1fa72...7bd171`; celo `0xc7ea64...02d9af`; celo `0xe1962f...0f8f85` | ⚠️ Unaudited |
 | SymbolLib | unknown | celo | 4 deployments: celo [`0x52a60f...ce2471`](./contracts/celo-42220/0x52a60fa5092f92b96d1a007eedfcd349d6ce2471/); celo `0xa2969b...494db7`; celo `0xad8408...40b780`; celo `0xbed3ce...9de85e` | ⚠️ Unaudited |
-| UV3Math | unknown | celo | 14 deployments: polygon `0x8d6cdb...a9fc0d`; base `0xb177cf...5a04e2`; base `0xbf60a8...e057a1`; celo [`0x065cb8...6ea031`](./contracts/celo-42220/0x065cb8139e9fed6c97f8b0851e599c56286ea031/); celo `0x3b5fbc...4e0d3b`; celo `0x460812...898738`; celo `0x7a4ae8...8ede18`; celo `0x7f659c...e3dc06`; celo `0xa45a0a...3d883d`; celo `0xacdeab...35a3a6`; celo `0xafec07...dadf69`; celo `0xb9b42b...626dcc`; celo `0xf6b5ab...045fa6`; celo `0xfa0263...1b97c5` | ⚠️ Unaudited |
+| UV3Math | unknown | celo | 13 deployments: base `0xb177cf...5a04e2`; base `0xbf60a8...e057a1`; celo [`0x065cb8...6ea031`](./contracts/celo-42220/0x065cb8139e9fed6c97f8b0851e599c56286ea031/); celo `0x3b5fbc...4e0d3b`; celo `0x460812...898738`; celo `0x7a4ae8...8ede18`; celo `0x7f659c...e3dc06`; celo `0xa45a0a...3d883d`; celo `0xacdeab...35a3a6`; celo `0xafec07...dadf69`; celo `0xb9b42b...626dcc`; celo `0xf6b5ab...045fa6`; celo `0xfa0263...1b97c5` | ⚠️ Unaudited |
 | VaultLocker | core_logic | celo | 8 deployments: polygon `0x39db7d...38510a`; polygon `0x460812...898738`; polygon `0x6e2bbd...d1c814`; polygon `0x827cce...543047`; celo [`0x0de3ba...31658c`](./contracts/celo-42220/0x0de3ba021a151030f344f8d05595672bbe31658c/); celo `0x2a8d03...d0e337`; celo `0x7f2eaf...ad8a65`; celo `0xd2c08d...5837b3` | ⚠️ Unaudited |
 | VolatilityCheck | unknown | celo | 2 deployments: celo [`0x4eecd2...11d6da`](./contracts/celo-42220/0x4eecd2cee06598c942a4c24f91b4452a1b11d6da/); celo `0x6c2e26...74e72e` | ⚠️ Unaudited |
 
@@ -250,8 +251,9 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0x065cb8...6ea031`](./contracts/base-8453/0x065cb8139e9fed6c97f8b0851e599c56286ea031/) | ICHIVaultDeployer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x238394...4fbed8`](./contracts/celo-42220/0x238394541de407fd494e455ef17c9d991f4fbed8/) | ICHIVaultDepositGuard | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x141db8...1d9f25`](./contracts/celo-42220/0x141db85183ddb07dee22c33846aebde2101d9f25/) | ICHIVaultDepositGuardExtendedForMFD | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x1f9563...0838e6`](./contracts/celo-42220/0x1f9563a0a99d1c1893fbe0cacda7577b4a0838e6/) | ICHIVaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x6d7fc9...e0b0c2`](./contracts/celo-42220/0x6d7fc94c5106a64a43b80fe8e4b3704d6ce0b0c2/) | QuoterV1 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x131c03...5c241d`](./contracts/bsc-56/0x131c03ca881b7cc66d7a5120a9273ebf675c241d/) | ICHIVaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x7ba715...90bb56`](./contracts/celo-42220/0x7ba715350fa7d3120712b4ab1e3fc89f9090bb56/) | ICHIVaultMigrationGuard | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x5ccf5a...581afd`](./contracts/celo-42220/0x5ccf5a000129988e4512408bc49d94e62f581afd/) | MultiFeeDistributionFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x08992f...009691`](./contracts/polygon-137/0x08992f9f36510abb1c31785c03f36863c3009691/) | RebalancerFactory | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x52a60f...ce2471`](./contracts/celo-42220/0x52a60fa5092f92b96d1a007eedfcd349d6ce2471/) | SymbolLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | celo | [`0x065cb8...6ea031`](./contracts/celo-42220/0x065cb8139e9fed6c97f8b0851e599c56286ea031/) | UV3Math | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -265,10 +267,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 121 |
-| upstream | 0 |
+| native | 129 |
+| upstream | 1 |
 | standard_library | 1 |
-| needs_review | 42 |
+| needs_review | 34 |
 
 ## Scope Matching Notes
 

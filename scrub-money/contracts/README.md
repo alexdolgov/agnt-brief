@@ -1,6 +1,6 @@
 # scrub-money — Contract Index
 
-19 unique implementations across 2 chains · 19 deployments · 0 audited · 1 unaudited · 18 unverified
+20 unique implementations across 2 chains · 20 deployments · 0 audited · 1 unaudited · 19 unverified
 
 ## proxy (1)
 
@@ -8,7 +8,7 @@
 |---|---|---|---|---|
 | [ERC1967Proxy](./arbitrum-42161/0x439a923517c4dfd3f3d0abb0c36e356d39cf3f9d/) | arbitrum | [`0x439a92...cf3f9d`](./arbitrum-42161/0x439a923517c4dfd3f3d0abb0c36e356d39cf3f9d/) | ⚠️ Unaudited | Verified |
 
-## unknown (18)
+## unknown (19)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -30,3 +30,4 @@
 | UnnamedContract | kava | `0xbd9881...ef9c50` | ❓ Unverified | Unverified |
 | UnnamedContract | kava | `0xc0608a...d58d55` | ❓ Unverified | Unverified |
 | UnnamedContract | kava | `0xea8481...b15ced` | ❓ Unverified | Unverified |
+| UnnamedContract | arbitrum | `0xee3a10...e2347f` | ❓ Unverified | Unverified |

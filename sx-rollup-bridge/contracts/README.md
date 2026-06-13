@@ -1,8 +1,14 @@
 # sx-rollup-bridge — Contract Index
 
-133 unique implementations on ethereum · 137 deployments · 0 audited · 68 unaudited · 65 unverified
+151 unique implementations on ethereum · 155 deployments · 0 audited · 86 unaudited · 65 unverified
 
-## governance (48)
+## adapter (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [L1OrbitGatewayRouter](./ethereum-1/0x5f00446d785421d65b50c192d7129e3c3906438a/) | ethereum | [`0x5f0044...06438a`](./ethereum-1/0x5f00446d785421d65b50c192d7129e3c3906438a/) | ⚠️ Unaudited | Verified |
+
+## governance (50)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -22,6 +28,7 @@
 | [FEB2022Timelock](./ethereum-1/0x11455d922171924ef0b1a459f091183237019354/) | ethereum | [`0x11455d...019354`](./ethereum-1/0x11455d922171924ef0b1a459f091183237019354/) | ⚠️ Unaudited | Verified |
 | [FEB2023Timelock](./ethereum-1/0xc8d495c6a824c74171ebaca1c5aaae2460a04251/) | ethereum | [`0xc8d495...a04251`](./ethereum-1/0xc8d495c6a824c74171ebaca1c5aaae2460a04251/) | ⚠️ Unaudited | Verified |
 | [FEB2024Timelock](./ethereum-1/0x09f7f7aa162c9f76bf756814910d51b92cf7025c/) | ethereum | [`0x09f7f7...f7025c`](./ethereum-1/0x09f7f7aa162c9f76bf756814910d51b92cf7025c/) | ⚠️ Unaudited | Verified |
+| [GnosisSafe](./ethereum-1/0xddb901e4e9a2e659aa1d6476d5d7a2833e7c3dfa/) | ethereum | [`0xddb901...7c3dfa`](./ethereum-1/0xddb901e4e9a2e659aa1d6476d5d7a2833e7c3dfa/) | ⚠️ Unaudited | Verified |
 | [JAN2022Timelock](./ethereum-1/0xb6342b5b98e21b53e856987e4251453c3030f430/) | ethereum | [`0xb6342b...30f430`](./ethereum-1/0xb6342b5b98e21b53e856987e4251453c3030f430/) | ⚠️ Unaudited | Verified |
 | [JAN2023Timelock](./ethereum-1/0xc469c31d90947cc030a2198cbc982ccf3c6cd7a8/) | ethereum | [`0xc469c3...6cd7a8`](./ethereum-1/0xc469c31d90947cc030a2198cbc982ccf3c6cd7a8/) | ⚠️ Unaudited | Verified |
 | [JAN2024Timelock](./ethereum-1/0x8fd0017de5b2365bff751f83fdf9dab721f6422f/) | ethereum | [`0x8fd001...f6422f`](./ethereum-1/0x8fd0017de5b2365bff751f83fdf9dab721f6422f/) | ⚠️ Unaudited | Verified |
@@ -50,6 +57,7 @@
 | [OCT2022Timelock](./ethereum-1/0xcfeb191494a4b6b3849e71c6d16e9ca636cfa852/) | ethereum | [`0xcfeb19...cfa852`](./ethereum-1/0xcfeb191494a4b6b3849e71c6d16e9ca636cfa852/) | ⚠️ Unaudited | Verified |
 | [OCT2023Timelock](./ethereum-1/0x7f5cace9652ef3875131470da15f28ae7c084a8d/) | ethereum | [`0x7f5cac...084a8d`](./ethereum-1/0x7f5cace9652ef3875131470da15f28ae7c084a8d/) | ⚠️ Unaudited | Verified |
 | [OCT2024Timelock](./ethereum-1/0x0ac27564b09ed524b5c7af2daffb9829d20c5a77/) | ethereum | [`0x0ac275...0c5a77`](./ethereum-1/0x0ac27564b09ed524b5c7af2daffb9829d20c5a77/) | ⚠️ Unaudited | Verified |
+| [ProxyAdmin](./ethereum-1/0xe8606a55d105ef857f187c32ae0e9a168af8f497/) | ethereum | [`0xe8606a...f8f497`](./ethereum-1/0xe8606a55d105ef857f187c32ae0e9a168af8f497/) | ⚠️ Unaudited | Verified |
 | [SEP2021Timelock](./ethereum-1/0x8a69fde4b7ccb0e1bc515fda13b97bf7736859bc/) | ethereum | [`0x8a69fd...6859bc`](./ethereum-1/0x8a69fde4b7ccb0e1bc515fda13b97bf7736859bc/) | ⚠️ Unaudited | Verified |
 | [SEP2022Timelock](./ethereum-1/0x5083b37dab6825705bfaed8cae77c9dcf40e3e60/) | ethereum | [`0x5083b3...0e3e60`](./ethereum-1/0x5083b37dab6825705bfaed8cae77c9dcf40e3e60/) | ⚠️ Unaudited | Verified |
 | [SEP2023Timelock](./ethereum-1/0x4f55893f65261e08b8df6290676f68b891999e19/) | ethereum | [`0x4f5589...999e19`](./ethereum-1/0x4f55893f65261e08b8df6290676f68b891999e19/) | ⚠️ Unaudited | Verified |
@@ -78,17 +86,30 @@
 | [TokenTransferProxy](./ethereum-1/0x60e8aa8a997da2c58bc9894aaa08a28524e63bb5/) | ethereum | [`0x60e8aa...e63bb5`](./ethereum-1/0x60e8aa8a997da2c58bc9894aaa08a28524e63bb5/) | ⚠️ Unaudited | Verified |
 | [WETH](./ethereum-1/0x9d7c2a11322416436f0827e7bbdb3ae40ba693f9/) | ethereum | [`0x9d7c2a...a693f9`](./ethereum-1/0x9d7c2a11322416436f0827e7bbdb3ae40ba693f9/) | ⚠️ Unaudited | Verified |
 
-## unknown (77)
+## unknown (92)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [CancelOrder](./ethereum-1/0x7cda8770cc55cf2daba702483cb11aaa8c87fc73/) | ethereum | [`0x7cda87...87fc73`](./ethereum-1/0x7cda8770cc55cf2daba702483cb11aaa8c87fc73/) | ⚠️ Unaudited | Verified |
+| [ChallengeManager](./ethereum-1/0x73cfa0f6ae141212115657ad91ad918e5d34d882/) | ethereum | [`0x73cfa0...34d882`](./ethereum-1/0x73cfa0f6ae141212115657ad91ad918e5d34d882/) | ⚠️ Unaudited | Verified |
 | [EIP712FillHasher](./ethereum-1/0x90c997f83885b4bd16d3ef8add73b9d901d49095/) | ethereum | [`0x90c997...d49095`](./ethereum-1/0x90c997f83885b4bd16d3ef8add73b9d901d49095/) | ⚠️ Unaudited | Verified |
+| [ERC20Inbox](./ethereum-1/0xea83e8907c89bc0d9517632f0ba081972e328631/) | ethereum | [`0xea83e8...328631`](./ethereum-1/0xea83e8907c89bc0d9517632f0ba081972e328631/) | ⚠️ Unaudited | Verified |
+| [ERC20Outbox](./ethereum-1/0xb360b2f57c645e847148d7c479b7468abf6f707d/) | ethereum | [`0xb360b2...6f707d`](./ethereum-1/0xb360b2f57c645e847148d7c479b7468abf6f707d/) | ⚠️ Unaudited | Verified |
+| [ERC20RollupEventInbox](./ethereum-1/0x9f1045201f8b9d0b12f6d1e40e8b8e6c047a81e3/) | ethereum | [`0x9f1045...7a81e3`](./ethereum-1/0x9f1045201f8b9d0b12f6d1e40e8b8e6c047a81e3/) | ⚠️ Unaudited | Verified |
 | [FeeSchedule](./ethereum-1/0xf8aedef4fb61094d0105b67f0678f02ab83d4cb8/) | ethereum | [`0xf8aede...3d4cb8`](./ethereum-1/0xf8aedef4fb61094d0105b67f0678f02ab83d4cb8/) | ⚠️ Unaudited | Verified |
 | [FillOrder](./ethereum-1/0x868845f1dc7ccc15bce50d7c90e1e644971cfe10/) | ethereum | [`0x868845...1cfe10`](./ethereum-1/0x868845f1dc7ccc15bce50d7c90e1e644971cfe10/) | ⚠️ Unaudited | Verified |
 | [Fills](./ethereum-1/0x9d5323e0b722647dfe44512017f451dc1a2f3a8a/) | ethereum | [`0x9d5323...2f3a8a`](./ethereum-1/0x9d5323e0b722647dfe44512017f451dc1a2f3a8a/) | ⚠️ Unaudited | Verified |
+| [OneStepProofEntry](./ethereum-1/0x8faa21891b0b928afebd5314d1d313f8f7b34dac/) | ethereum | [`0x8faa21...b34dac`](./ethereum-1/0x8faa21891b0b928afebd5314d1d313f8f7b34dac/) | ⚠️ Unaudited | Verified |
+| [OneStepProver0](./ethereum-1/0x2dccabe89cf76132619a9b18e9f9e48e837222b5/) | ethereum | [`0x2dccab...7222b5`](./ethereum-1/0x2dccabe89cf76132619a9b18e9f9e48e837222b5/) | ⚠️ Unaudited | Verified |
+| [OneStepProverHostIo](./ethereum-1/0x0003a96b27ce73505b43ea1b71a5ab06bec568c4/) | ethereum | [`0x0003a9...c568c4`](./ethereum-1/0x0003a96b27ce73505b43ea1b71a5ab06bec568c4/) | ⚠️ Unaudited | Verified |
+| [OneStepProverMath](./ethereum-1/0xcf4b98cff2976e4eb579b9498f398b5bd279a6ed/) | ethereum | [`0xcf4b98...79a6ed`](./ethereum-1/0xcf4b98cff2976e4eb579b9498f398b5bd279a6ed/) | ⚠️ Unaudited | Verified |
+| [OneStepProverMemory](./ethereum-1/0x1cd76b9c33b2e3b04d7b181399d492b3e49ad7fb/) | ethereum | [`0x1cd76b...9ad7fb`](./ethereum-1/0x1cd76b9c33b2e3b04d7b181399d492b3e49ad7fb/) | ⚠️ Unaudited | Verified |
 | [OrderValidator](./ethereum-1/0x3305399e1954441300138f71fdfe96a8943b3119/) | ethereum | [`0x330539...3b3119`](./ethereum-1/0x3305399e1954441300138f71fdfe96a8943b3119/) | ⚠️ Unaudited | Verified |
 | [OutcomeReporter](./ethereum-1/0x78b5731afa14bf0f023f803220a6c24edf04de75/) | ethereum | [`0x78b573...04de75`](./ethereum-1/0x78b5731afa14bf0f023f803220a6c24edf04de75/) | ⚠️ Unaudited | Verified |
+| [RollupAdminLogic](./ethereum-1/0x36c6c69a6186d4475fc5c21181cd980bd6e5e11f/) | ethereum | [`0x36c6c6...e5e11f`](./ethereum-1/0x36c6c69a6186d4475fc5c21181cd980bd6e5e11f/) | ⚠️ Unaudited | Verified |
+| [Safe](./ethereum-1/0xa4c325e25215c1fb2405eb28d81d2dfdbfc8d24c/) | ethereum | [`0xa4c325...c8d24c`](./ethereum-1/0xa4c325e25215c1fb2405eb28d81d2dfdbfc8d24c/) | ⚠️ Unaudited | Verified |
+| [SequencerInbox](./ethereum-1/0xd80a805c86c14c879420ec6acb366d04d318fc0c/) | ethereum | [`0xd80a80...18fc0c`](./ethereum-1/0xd80a805c86c14c879420ec6acb366d04d318fc0c/) | ⚠️ Unaudited | Verified |
+| [SportX](./ethereum-1/0x99fe3b1391503a1bc1788051347a1324bff41452/) | ethereum | [`0x99fe3b...f41452`](./ethereum-1/0x99fe3b1391503a1bc1788051347a1324bff41452/) | ⚠️ Unaudited | Verified |
 | [SuperAdminRole](./ethereum-1/0x87d712688a706d4343704eeb382cb72abe76452e/) | ethereum | [`0x87d712...76452e`](./ethereum-1/0x87d712688a706d4343704eeb382cb72abe76452e/) | ⚠️ Unaudited | Verified |
 | [SX (3 deployments)](./ethereum-1/0x2571e3232ea10140b676c42b4bd1956c08d974fc/) | ethereum | 3 deployments: ethereum [`0x2571e3...d974fc`](./ethereum-1/0x2571e3232ea10140b676c42b4bd1956c08d974fc/); ethereum `0xd26ea9...b38a1a`; ethereum `0xf6db95...50ea4a` | ⚠️ Unaudited | Verified |
 | [SXNetwork (2 deployments)](./ethereum-1/0x309ef6c302f4b617a6723a8a26d9bb2503d07c41/) | ethereum | 2 deployments: ethereum [`0x309ef6...d07c41`](./ethereum-1/0x309ef6c302f4b617a6723a8a26d9bb2503d07c41/); ethereum `0xbe9f61...d96624` | ⚠️ Unaudited | Verified |
@@ -158,4 +179,6 @@
 | UnnamedContract | ethereum | `0xfb28cc...b9a412` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xfd92bd...6847b6` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xfd960a...f955e0` | ❓ Unverified | Unverified |
+| [UpgradeExecutor](./ethereum-1/0x44ec40d86b4643bd5110ed07be188f8473ad2d3a/) | ethereum | [`0x44ec40...ad2d3a`](./ethereum-1/0x44ec40d86b4643bd5110ed07be188f8473ad2d3a/) | ⚠️ Unaudited | Verified |
+| [ValidatorUtils](./ethereum-1/0x2b0e04dc90e3fa58165cb41e2834b44a56e766af/) | ethereum | [`0x2b0e04...e766af`](./ethereum-1/0x2b0e04dc90e3fa58165cb41e2834b44a56e766af/) | ⚠️ Unaudited | Verified |
 | [Whitelist (2 deployments)](./ethereum-1/0xde4728956c0f86450a604335c8787a540494296f/) | ethereum | 2 deployments: ethereum [`0xde4728...94296f`](./ethereum-1/0xde4728956c0f86450a604335c8787a540494296f/); ethereum `0xfd8e83...2cbebf` | ⚠️ Unaudited | Verified |

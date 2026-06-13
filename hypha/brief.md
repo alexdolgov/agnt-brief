@@ -5,10 +5,10 @@
 - Project: Hypha (`hypha`)
 - Website: [https://www.hypha.sh/](https://www.hypha.sh/)
 - Lifecycle: active (Tier 0, 83.1% below peak)
-- Generated: 2026-06-11T12:09:03.261Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
+- Generated: 2026-06-13T00:50:57.578Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-e35d
 - Chains: avalanche
-- Contract surface: 60 unique implementations (88 raw deployments)
+- Contract surface: 60 unique implementations (89 raw deployments)
 - DeFi Llama TVL: $7,380,182.18
 - On-chain TVL (included contracts): $16,373,227.04
 - TVL by chain: Avalanche $16,373,227.04
@@ -28,12 +28,12 @@ The liquid staking family relies on the token infrastructure (GGP) for incentive
 - Verified by bytecode match: 0
 - Unverified implementations: 30
 - Unique implementations: 60
-- Raw deployments: 88
+- Raw deployments: 89
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $16,373,227.04
 - Latest audit: 2023-02 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 2 unknown
+- Staleness: 0 fresh, 0 aging, 2 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -64,7 +64,7 @@ The liquid staking family relies on the token infrastructure (GGP) for incentive
 | MinipoolStreamliner | core_logic | avalanche | [`0x0a75a4...efa430`](./contracts/avalanche-43114/0x0a75a480af4adc81b20b1664a1da2bd7caefa430/) | ⚠️ Unaudited |
 | Multicall3 | periphery | avalanche | [`0xca11bd...76ca11`](./contracts/avalanche-43114/0xca11bde05977b3631167028862be2a173976ca11/) | ⚠️ Unaudited |
 | MultisigManager | governance | avalanche | [`0x7fff41...1b6a3b`](./contracts/avalanche-43114/0x7fff419c562dd8b3cf16c335a01cdb37ea1b6a3b/) | ⚠️ Unaudited |
-| NodeSale | unknown | avalanche | [`0xa60a66...83cfaa`](./contracts/avalanche-43114/0xa60a66f6ce0f43b9d36d9c138aee858fc683cfaa/) | ⚠️ Unaudited |
+| NodeSale | unknown | avalanche | 2 deployments: avalanche [`0x50db30...b77102`](./contracts/avalanche-43114/0x50db30deb68b0f40df4d07c002142100a5b77102/); avalanche `0xa60a66...83cfaa` | ⚠️ Unaudited |
 | Ocyticus | unknown | avalanche | 2 deployments: avalanche [`0x9189d1...ea210b`](./contracts/avalanche-43114/0x9189d18f453b1ec1f02e40a8e3711334f9ea210b/); avalanche `0xffdc3b...ad5542` | ⚠️ Unaudited |
 | OneInchMock | unknown | avalanche | [`0x25314c...8b58aa`](./contracts/avalanche-43114/0x25314c5a00004f5b4fa83c82238ab879f48b58aa/) | ⚠️ Unaudited |
 | Oracle | operational_periphery | avalanche | [`0x30fb91...a16db7`](./contracts/avalanche-43114/0x30fb915258d844e9dc420b2c3aa97420aea16db7/) | ⚠️ Unaudited |
@@ -136,7 +136,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [here](https://github.com/Zellic/publications/blob/master/GoGoPool%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [here](https://github.com/code-423n4/2023-02-gogopool-mitigation-contest) | Code4rena | Contest | 2023-02 | stale | Direct | n/a | 0 | n/a |
-| [here](https://assets-global.website-files.com/62f90a8443126c2ee50f4c4e/643ee88bf91b375b39ba2613_Kudelski_multisig_labs_report_1.1.pdf) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [here](https://assets-global.website-files.com/62f90a8443126c2ee50f4c4e/643ee88bf91b375b39ba2613_Kudelski_multisig_labs_report_1.1.pdf) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -155,7 +155,7 @@ Verified + unaudited native implementations ranked by TVL:
 | avalanche | [`0x9e6579...b280e9`](./contracts/avalanche-43114/0x9e6579161c6f53722541edbd5ac96779c5b280e9/) | MinipoolManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x0a75a4...efa430`](./contracts/avalanche-43114/0x0a75a480af4adc81b20b1664a1da2bd7caefa430/) | MinipoolStreamliner | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x7fff41...1b6a3b`](./contracts/avalanche-43114/0x7fff419c562dd8b3cf16c335a01cdb37ea1b6a3b/) | MultisigManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xa60a66...83cfaa`](./contracts/avalanche-43114/0xa60a66f6ce0f43b9d36d9c138aee858fc683cfaa/) | NodeSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x50db30...b77102`](./contracts/avalanche-43114/0x50db30deb68b0f40df4d07c002142100a5b77102/) | NodeSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x9189d1...ea210b`](./contracts/avalanche-43114/0x9189d18f453b1ec1f02e40a8e3711334f9ea210b/) | Ocyticus | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x25314c...8b58aa`](./contracts/avalanche-43114/0x25314c5a00004f5b4fa83c82238ab879f48b58aa/) | OneInchMock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x30fb91...a16db7`](./contracts/avalanche-43114/0x30fb915258d844e9dc420b2c3aa97420aea16db7/) | Oracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |

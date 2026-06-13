@@ -872,11 +872,16 @@
 | [outcome-finance](./outcome-finance/) | $1.3M | 0.0% | ? | declining | 0 | 3 | 2026-06-11 |
 | [overnight-finance](./overnight-finance/) | $10.0M | 0.0% | ? | declining | 2 | 4353 | 2026-06-11 |
 | [overtime](./overtime/) | $42.5M | 0.0% | $42.5M | declining | 8 | 200 | 2026-06-11 |
+| [oxiswap](./oxiswap/) | $0.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [p2pb2b](./p2pb2b/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | active | 0 | 3 | 2026-06-11 |
 | [pact](./pact/) | $2.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
+| [padswap](./padswap/) | $107.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [paimon](./paimon/) | $12.7M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [paladin-finance](./paladin-finance/) | $22.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [palladium-protocol](./palladium-protocol/) | $1.5K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [palmswap](./palmswap/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [palmy-finance](./palmy-finance/) | $15.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pangea-swap](./pangea-swap/) | $6.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pangolin](./pangolin/) | $3.8M | 53.8% | ? | declining | 12 | 163 | 2026-06-11 |
 | [paradex](./paradex/) | $27.3M | 50.0% | ? | declining | 5 | 5 | 2026-06-12 |

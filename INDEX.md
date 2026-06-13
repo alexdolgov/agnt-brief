@@ -250,6 +250,7 @@
 | [eventum-bridge](./eventum-bridge/) | $1.6M | 3.8% | $1.6M | active | 2 | 28 | 2026-06-10 |
 | [everrise](./everrise/) | $23.1M | 0.0% | $23.1M | declining | 3 | 210 | 2026-06-11 |
 | [everything](./everything/) | $945.3K | 0.0% | ? | active | 0 | 10 | 2026-06-10 |
+| [evoq-finance](./evoq-finance/) | $268.1 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [exactly](./exactly/) | $189.5K | 63.6% | ? | active | 32 | 65 | 2026-06-10 |
 | [exmo](./exmo/) | $2.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [exponent](./exponent/) | $64.0M | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
@@ -259,7 +260,9 @@
 | [fiamma](./fiamma/) | $1.2M | 0.0% | ? | active | 3 | 33 | 2026-06-11 |
 | [firebot](./firebot/) | $3.7M | 4.8% | $3.7M | unknown | 2 | 29 | 2026-06-10 |
 | [firelight](./firelight/) | $80.3M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
+| [fiva](./fiva/) | $42.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [flamingo](./flamingo/) | $2.2M | 0.0% | ? | unknown | 6 | 0 | 2026-06-10 |
+| [flashstake](./flashstake/) | $36.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [flaunch](./flaunch/) | $2.1M | 0.0% | ? | active | 1 | 3 | 2026-06-10 |
 | [flex](./flex/) | $611.7K | 0.0% | ? | active | 3 | 1 | 2026-06-10 |
 | [flexa](./flexa/) | $1.4M | 100.0% | ? | declining | 2 | 2 | 2026-06-10 |
@@ -275,6 +278,7 @@
 | [frankencoin](./frankencoin/) | $70.0M | 80.0% | ? | active | 5 | 5 | 2026-06-10 |
 | [friend3](./friend3/) | $67.2K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 5 | 18 | 2026-06-10 |
+| [fuji-finance](./fuji-finance/) | $144.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [fulcrom](./fulcrom/) | $10.9M | 0.0% | ? | active | 0 | 79 | 2026-06-12 |
 | [full-sail](./full-sail/) | $481.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [gains-network](./gains-network/) | $64.7M | 0.0% | $64.7M | active | 1 | 779 | 2026-06-12 |
@@ -289,6 +293,7 @@
 | [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 0 | 6 | 2026-06-12 |
 | [glitter-finance](./glitter-finance/) | $13.0 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [gnosis-protocol-v1](./gnosis-protocol-v1/) | $94.4M | 0.0% | $94.4M | declining | 0 | 110 | 2026-06-10 |
+| [goat-protocol](./goat-protocol/) | $26.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [goldfinger](./goldfinger/) | $0.0 | 0.0% | ? | active | 8 | 5 | 2026-06-11 |
 | [goldstation](./goldstation/) | $2.2M | 0.0% | ? | active | 3 | 5 | 2026-06-10 |
 | [gondi](./gondi/) | $35.6 | 20.0% | $35.6 | active | 2 | 30 | 2026-06-11 |

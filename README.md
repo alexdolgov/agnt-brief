@@ -519,6 +519,7 @@ Each project directory contains:
 | [etherfuse](./etherfuse/brief.md) | $5.41M | base, polygon | 25 | 4/25 (16%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [ethos](./ethos/brief.md) | $1.89M | base, ethereum | 27 | 20/27 (74%) | 30.0% | 30.0% (Sherlock) | 1 | aging | ✅ active | - |
 | [everything](./everything/brief.md) | $945.26K | arbitrum | 10 | 4/10 (40%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [evoq-finance](./evoq-finance/brief.md) | $268.06 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [exactly](./exactly/brief.md) | $3.99M | base, ethereum, optimism | 65 | 44/65 (68%) | 63.6% | 9.1% (OpenZeppelin, Sherlock) | 31 | fresh | ✅ active | - |
 | [exmo](./exmo/brief.md) | $2.84M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [exponent](./exponent/brief.md) | $63.98M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
@@ -527,7 +528,9 @@ Each project directory contains:
 | [ferro](./ferro/brief.md) | $4.92M | cronos | 21 | 0/21 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [fiamma](./fiamma/brief.md) | $1.15M | 4 | 33 | 12/33 (36%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [firelight](./firelight/brief.md) | $80.32M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
+| [fiva](./fiva/brief.md) | $42.94K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [flamingo](./flamingo/brief.md) | $2.15M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [flashstake](./flashstake/brief.md) | $36.64K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [flaunch](./flaunch/brief.md) | $2.10M | base | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [flex](./flex/brief.md) | $611.66K | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [flexa](./flexa/brief.md) | $1.37M | ethereum | 2 | 2/2 (100%) | 100.0% | 100.0% (Trail of Bits) | 2 | stale | ⚠️ declining | - |
@@ -539,6 +542,7 @@ Each project directory contains:
 | [four.meme](./four.meme/brief.md) | $4.62M | bsc | 5 | 1/5 (20%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [frankencoin](./frankencoin/brief.md) | $70.00M | ethereum | 5 | 5/5 (100%) | 80.0% | 80.0% (ChainSecurity, Code4rena) | 5 | aging | ✅ active | - |
 | [friend3](./friend3/brief.md) | $67.16K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [fuji-finance](./fuji-finance/brief.md) | $144.60K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [fulcrom](./fulcrom/brief.md) | $10.94M | cronos, zksync-era | 79 | 0/79 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [full-sail](./full-sail/brief.md) | $481.27K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [galaxy-curation](./galaxy-curation/brief.md) | $67.50M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -547,6 +551,7 @@ Each project directory contains:
 | [generic.money](./generic.money/brief.md) | $3.74M | ethereum | 12 | 11/12 (92%) | 81.8% | 81.8% (Spearbit) | 1 | fresh | ⚠️ declining | - |
 | [gimo](./gimo/brief.md) | $8.66M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [glitter-finance](./glitter-finance/brief.md) | $13.02 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [goat-protocol](./goat-protocol/brief.md) | $26.37K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [goldfinger](./goldfinger/brief.md) | $0.00 | bsc | 5 | 4/5 (80%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [goldstation](./goldstation/brief.md) | $2.15M | avalanche, klaytn | 5 | 0/5 (0%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [growihf](./growihf/brief.md) | $8.39M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -842,5 +847,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T10:59:43.671Z_
-_Projects: 830_
+_Generated: 2026-06-13T11:02:07.372Z_
+_Projects: 835_

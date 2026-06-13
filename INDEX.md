@@ -1358,8 +1358,13 @@
 | [wowswap](./wowswap/) | $34.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [wrapped-bnb](./wrapped-bnb/) | $5.5M | 0.0% | ? | declining | 1 | 1 | 2026-06-13 |
 | [wrapped](./wrapped/) | $20.1M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
+| [wstaking](./wstaking/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [xcarnival](./xcarnival/) | $2.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [xdollar](./xdollar/) | $65.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [xeleb-protocol](./xeleb-protocol/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 48 | 2026-06-11 |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [xpanse](./xpanse/) | $240.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [xswap-protocol](./xswap-protocol/) | $664.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [xsy](./xsy/) | $3.6M | 25.0% | $3.6M | active | 1 | 15 | 2026-06-11 |
 | [xwin-finance](./xwin-finance/) | $1.8M | 0.0% | $1.8M | active | 1 | 19 | 2026-06-12 |

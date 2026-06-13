@@ -5,7 +5,7 @@
 | Chain | mode (34443) |
 | Address | `0x3e09dbfe0f6e82b8448a11fb082d44cd575849d3` |
 | Role | adapter |
-| Origin | needs_review |
+| Origin | native |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (mode [`0x3e09dbfe0f6e82b8448a11fb082d44cd575849d3`](../0x3e09dbfe0f6e82b8448a11fb082d44cd575849d3/)) |

@@ -5,7 +5,7 @@
 | Chain | avalanche (43114) |
 | Address | `0x3aa19b923e93850b093d5c48c4971de0042bc262` |
 | Role | unknown |
-| Origin | needs_review |
+| Origin | native |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (avalanche [`0x3aa19b923e93850b093d5c48c4971de0042bc262`](../0x3aa19b923e93850b093d5c48c4971de0042bc262/)) |

@@ -11,6 +11,6 @@
 | Deployments | 1 (ethereum [`0xbc6da0fe9ad5f3b0d58160288917aa56653660e9`](../0xbc6da0fe9ad5f3b0d58160288917aa56653660e9/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |
-| TVL | n/a |
+| TVL | $10,514,681.43 |
 
 [← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

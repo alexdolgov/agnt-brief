@@ -5,12 +5,12 @@
 | Chain | ethereum (1) |
 | Address | `0xdbdb4d16eda451d0503b854cf79d55697f90c8df` |
 | Role | token |
-| Origin | needs_review |
+| Origin | native |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (ethereum [`0xdbdb4d16eda451d0503b854cf79d55697f90c8df`](../0xdbdb4d16eda451d0503b854cf79d55697f90c8df/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |
-| TVL | n/a |
+| TVL | $11,284,224.26 |
 
 [← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

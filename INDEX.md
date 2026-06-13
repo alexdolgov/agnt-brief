@@ -652,7 +652,7 @@
 | [layerakira](./layerakira/) | $736.6 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | declining | 4 | 91 | 2026-06-11 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
-| [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | active | 0 | 107 | 2026-06-11 |
+| [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | active | 0 | 109 | 2026-06-13 |
 | [legacy-canary-protocol](./legacy-canary-protocol/) | $5.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [lendflare](./lendflare/) | $1.1K | 5.3% | $1.1K | declining | 1 | 74 | 2026-06-11 |
 | [lendle](./lendle/) | $60.7K | 43.2% | $5.6K | declining | 9 | 64 | 2026-06-11 |
@@ -975,7 +975,7 @@
 | [rainbow-bridge](./rainbow-bridge/) | $2.1M | 0.0% | ? | declining | 0 | 2 | 2026-06-11 |
 | [rank-trading](./rank-trading/) | $1.2M | 30.0% | ? | active | 2 | 13 | 2026-06-11 |
 | [rari-capital](./rari-capital/) | $321.4M | 0.0% | $321.4M | dead | 1 | 253 | 2026-05-24 |
-| [ratex](./ratex/) | $98.8K | 0.0% | $98.8K | declining | 2 | 166 | 2026-06-11 |
+| [ratex](./ratex/) | $98.8K | 0.0% | $98.8K | declining | 2 | 168 | 2026-06-13 |
 | [re7-labs](./re7-labs/) | $6.6M | 0.0% | $6.6M | active | 0 | 18 | 2026-06-12 |
 | [reddex](./reddex/) | $4.8M | 0.0% | ? | declining | 0 | 5 | 2026-06-13 |
 | [reflexer](./reflexer/) | $2.3M | 40.9% | ? | declining | 8 | 64 | 2026-06-11 |
@@ -1199,7 +1199,7 @@
 | [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 151 | 2026-06-13 |
 | [symbiosis](./symbiosis/) | $236.1M | 15.4% | $236.1M | active | 15 | 40 | 2026-06-11 |
 | [symmetry-trade](./symmetry-trade/) | $7.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [symmio](./symmio/) | $24.5 | 0.0% | $24.5 | active | 0 | 168 | 2026-06-11 |
+| [symmio](./symmio/) | $25.5 | 0.0% | $25.5 | active | 0 | 169 | 2026-06-13 |
 | [synapse](./synapse/) | $25.6M | 0.0% | $25.6M | declining | 0 | 824 | 2026-06-11 |
 | [synatra](./synatra/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 23.3% | ? | active | 8 | 157 | 2026-06-11 |
@@ -1273,7 +1273,7 @@
 | [tulipa-capital](./tulipa-capital/) | $56.2M | 0.0% | $56.2M | active | 0 | 6 | 2026-06-12 |
 | [tulpea](./tulpea/) | $17.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [turboflow](./turboflow/) | $1.9M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | declining | 3 | 516 | 2026-06-11 |
+| [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | declining | 3 | 516 | 2026-06-13 |
 | [twin-finance](./twin-finance/) | $6.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [twyne](./twyne/) | $985.7K | 3.8% | $985.7K | active | 6 | 59 | 2026-06-11 |
 | [txflow](./txflow/) | $3.8M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
@@ -1328,7 +1328,7 @@
 | [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 0 | 65 | 2026-06-12 |
 | [vmex-finance](./vmex-finance/) | $3.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-06-13 |
-| [volta-club](./volta-club/) | $976.2M | 0.0% | $976.2M | unknown | 0 | 316 | 2026-06-11 |
+| [volta-club](./volta-club/) | $777.3M | 0.0% | $777.3M | unknown | 0 | 305 | 2026-06-13 |
 | [voltz](./voltz/) | $214.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [wagmi](./wagmi/) | $1.3M | 0.0% | ? | declining | 10 | 334 | 2026-06-11 |
 | [wan-bridge](./wan-bridge/) | $4.6K | 0.0% | $4.6K | active | 3 | 135 | 2026-06-12 |

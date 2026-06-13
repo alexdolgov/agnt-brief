@@ -7,11 +7,11 @@
 - Project: RateX (`ratex`)
 - Website: [https://app.rate-x.io/referral?ref=VS71Wksp](https://app.rate-x.io/referral?ref=VS71Wksp)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T02:11:54.790Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-13T16:59:31.343Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ee40
 - Chains: bsc
-- Contract surface: 166 unique implementations (390 raw deployments)
-- DeFi Llama TVL: $5,218,059.00
+- Contract surface: 168 unique implementations (400 raw deployments)
+- DeFi Llama TVL: $3,183,387.00
 - On-chain TVL (included contracts): $98,793.74
 - TVL by chain: Bsc $98,793.74
 
@@ -25,12 +25,12 @@ The RateX DEX family relies on shared infrastructure such as oracles (e.g., Resi
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/89 (0.0%)
-- Verified + Unaudited implementations: 89
+- Verified implementations audited: 0/91 (0.0%)
+- Verified + Unaudited implementations: 91
 - Verified by bytecode match: 0
 - Unverified implementations: 77
-- Unique implementations: 166
-- Raw deployments: 390
+- Unique implementations: 168
+- Raw deployments: 400
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $98,793.74
@@ -49,11 +49,11 @@ The RateX DEX family relies on shared infrastructure such as oracles (e.g., Resi
 
 - None
 
-### ⚠️ Verified + Unaudited (89)
+### ⚠️ Verified + Unaudited (91)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| ListaVault | core_logic | bsc | [`0x307d13...30292a`](./contracts/bsc-56/0x307d13267f360f78005f476fa913f8848f30292a/) | ⚠️ Unaudited |
+| ListaVault | core_logic | bsc | 6 deployments: bsc [`0x0fee40...36e05c`](./contracts/bsc-56/0x0fee401a16837b8a8c6c8b9f8d88744b5e36e05c/); bsc `0x18fce5...2164c4`; bsc `0x307d13...30292a`; bsc `0x36a7bd...944c84`; bsc `0x7dc9d0...0c5ba0`; bsc `0xb7d76f...90a4a4` | ⚠️ Unaudited |
 | API3Oracle | operational_periphery | bsc | 3 deployments: bsc [`0x35718b...05617d`](./contracts/bsc-56/0x35718b08323e9a466b7378f91af63f9c8f05617d/); bsc `0x476884...b9c576`; bsc `0xadcc15...4e98fc` | ⚠️ Unaudited |
 | BBtcOracle | operational_periphery | bsc | 2 deployments: bsc [`0x2ea16e...b8fb5a`](./contracts/bsc-56/0x2ea16e082ca50eb6017bbfcb967cc7c6e2b8fb5a/); bsc `0x7ed71d...44eb2e` | ⚠️ Unaudited |
 | BeraChainVaultAdapter | adapter | bsc | 5 deployments: bsc [`0x1afa15...11fad5`](./contracts/bsc-56/0x1afa1589a634be568d7872dcf1bbe6f79e11fad5/); bsc `0x2a66f6...f887dc`; bsc `0x550206...4a7f15`; bsc `0xd113db...195a16`; bsc `0xe5248d...1dee78` | ⚠️ Unaudited |
@@ -95,6 +95,7 @@ The RateX DEX family relies on shared infrastructure such as oracles (e.g., Resi
 | ListaOFTAdapter | adapter | bsc | 2 deployments: bsc [`0x82f5bc...413f02`](./contracts/bsc-56/0x82f5bcd1473bda5794239d01073797093a413f02/); bsc `0x837cb0...25e7b3` | ⚠️ Unaudited |
 | ListaRevenueDistributor | operational_periphery | bsc | 3 deployments: bsc [`0x1c56cc...9a7cc4`](./contracts/bsc-56/0x1c56ccf0727bac9d08494603da5d2594229a7cc4/); bsc `0x34b504...7fa3da`; bsc `0x92cfb7...7a6393` | ⚠️ Unaudited |
 | ListaStakeManager | governance | bsc | 5 deployments: bsc [`0x4d9ed5...a33430`](./contracts/bsc-56/0x4d9ed586a8490d227dafdbe520306fbae7a33430/); bsc `0xbc019e...b8d305`; bsc `0xe6c1be...6f79ed`; bsc `0xee3d69...efc3cc`; bsc `0xfd6b9c...aeb4ef` | ⚠️ Unaudited |
+| LisUSD | unknown | bsc | [`0xf5bd9b...c4d7f8`](./contracts/bsc-56/0xf5bd9b192092517d60e90c9af17b69b134c4d7f8/) | ⚠️ Unaudited |
 | LisUSDPoolSet | core_logic | bsc | 2 deployments: bsc [`0x37db1a...95d0bf`](./contracts/bsc-56/0x37db1ae9b24055d1f9fe973aea40b7eb2995d0bf/); bsc `0x586034...c7bb0f` | ⚠️ Unaudited |
 | LpProxy | unknown | bsc | 3 deployments: bsc [`0x5a0e32...70ec01`](./contracts/bsc-56/0x5a0e3291514f5f1797a0c7efefdac81eec70ec01/); bsc `0xac6d58...8d8460`; bsc `0xf87e70...377799` | ⚠️ Unaudited |
 | Market | unknown | bsc | [`0x64e30b...0cbd98`](./contracts/bsc-56/0x64e30b9e176b4551b5d9f17d72716152540cbd98/) | ⚠️ Unaudited |
@@ -105,6 +106,7 @@ The RateX DEX family relies on shared infrastructure such as oracles (e.g., Resi
 | MerkleVerifier | operational_periphery | bsc | 2 deployments: bsc [`0xdeb598...39ceaa`](./contracts/bsc-56/0xdeb5985e45edcb44af736f7739ec00983239ceaa/); bsc `0xf625b8...39386d` | ⚠️ Unaudited |
 | mwBETHOracle | operational_periphery | bsc | 2 deployments: bsc [`0x3605c7...db95b1`](./contracts/bsc-56/0x3605c70f8512f6c257bbe144e365f1a564db95b1/); bsc `0xaa4912...6d50d0` | ⚠️ Unaudited |
 | NonTransferableLpERC20 | token | bsc | 4 deployments: bsc [`0x708252...cfb755`](./contracts/bsc-56/0x7082528e908bfd0c42d2134fe7065457cfcfb755/); bsc `0xb894de...4f9c26`; bsc `0xc74efa...4fb7dd`; bsc `0xee56ee...796dbb` | ⚠️ Unaudited |
+| Oracle | operational_periphery | bsc | 2 deployments: bsc [`0x6f6a14...04932b`](./contracts/bsc-56/0x6f6a144760f8b4d7876eb6155a52393a8304932b/); bsc `0xb5c57d...1e4391` | ⚠️ Unaudited |
 | OracleCenter | operational_periphery | bsc | 2 deployments: bsc [`0x47dbca...784a41`](./contracts/bsc-56/0x47dbcae9c5a8eb4ed847fa9283c3e42457784a41/); bsc `0x946a68...f7c53b` | ⚠️ Unaudited |
 | PancakeStaking | unknown | bsc | 3 deployments: bsc [`0x811591...1c866b`](./contracts/bsc-56/0x81159173185c411ed61f6eb332d1a653bb1c866b/); bsc `0xb20a61...780e4f`; bsc `0xe31f0b...978f10` | ⚠️ Unaudited |
 | PSM | unknown | bsc | 2 deployments: bsc [`0xaa57f3...72ec0c`](./contracts/bsc-56/0xaa57f36dd5ef2ac471863ec46277f976f272ec0c/); bsc `0xf51c1d...1abb7f` | ⚠️ Unaudited |
@@ -133,7 +135,7 @@ The RateX DEX family relies on shared infrastructure such as oracles (e.g., Resi
 | USDTLpListaDistributor | operational_periphery | bsc | 2 deployments: bsc [`0x24e5de...0d0bd9`](./contracts/bsc-56/0x24e5debbeba18237fdb65d0f6adfe73b4a0d0bd9/); bsc `0x9eb77a...fb38f7` | ⚠️ Unaudited |
 | UsdtOracle | operational_periphery | bsc | 3 deployments: bsc [`0x45575e...c1d92d`](./contracts/bsc-56/0x45575e5ccef6c784ae7ce28ccbef1fd6dcc1d92d/); bsc `0xdf2d4c...17ae63`; bsc `0xf19dc2...a26a72` | ⚠️ Unaudited |
 | VaultManager | core_logic | bsc | 2 deployments: bsc [`0x15fc4e...727ec2`](./contracts/bsc-56/0x15fc4e6417c74577dee27aaafb2e2c5806727ec2/); bsc `0x5763dd...972ec7` | ⚠️ Unaudited |
-| VeLista | unknown | bsc | [`0xd0c380...7b87b3`](./contracts/bsc-56/0xd0c380d31db43cd291e2bbe2da2fd6dc877b87b3/) | ⚠️ Unaudited |
+| VeLista | unknown | bsc | 3 deployments: bsc [`0xd0c380...7b87b3`](./contracts/bsc-56/0xd0c380d31db43cd291e2bbe2da2fd6dc877b87b3/); bsc `0xee00de...e5319b`; bsc `0xf8d762...a9460a` | ⚠️ Unaudited |
 | VeListaAutoCompounder | adapter | bsc | [`0x9a0530...c3bf5e`](./contracts/bsc-56/0x9a0530a81c83d3b0dae720bf91c9254fecc3bf5e/) | ⚠️ Unaudited |
 | VeListaDistributor | operational_periphery | bsc | 3 deployments: bsc [`0x006835...4ccfd6`](./contracts/bsc-56/0x0068358250759de8f50c83927c4a95847f4ccfd6/); bsc `0x45aac0...5ce40c`; bsc `0x4b1298...6f5145` | ⚠️ Unaudited |
 | VeListaRewardsCourier | unknown | bsc | 2 deployments: bsc [`0x87e994...f9070f`](./contracts/bsc-56/0x87e994de2a997385aff4f991c233f07bb9f9070f/); bsc `0xca8d24...2b72e9` | ⚠️ Unaudited |
@@ -252,44 +254,40 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xd74508...ad2754`](./contracts/bsc-56/0xd74508ab3bdbedaa6589f913e0f89d98b2ad2754/) | BnbOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0fee40...36e05c`](./contracts/bsc-56/0x0fee401a16837b8a8c6c8b9f8d88744b5e36e05c/) | ListaVault | core_logic | $98,793.74 | Verified native implementation with $98,793.74 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x81c4f1...c8e6d5`](./contracts/bsc-56/0x81c4f1175fd355cf2c5651396af25eac98c8e6d5/) | BoundValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3b778d...1936bb`](./contracts/bsc-56/0x3b778d2d502f5433f9f5cb9a1464ca5d141936bb/) | Buyback | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x397a48...39004b`](./contracts/bsc-56/0x397a486183cb6608a3ccd1c74b6a7f024439004b/) | CeToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x293a33...288a16`](./contracts/bsc-56/0x293a337687363e91406fc0d544b11efc6d288a16/) | ClearingHouse | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x061178...80d195`](./contracts/bsc-56/0x061178fdfc399000c8023043f0f5b9578280d195/) | clisBNB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xe4f487...77181f`](./contracts/bsc-56/0xe4f48754e85f2d24361741885098453e2077181f/) | clisETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x2544be...d355a8`](./contracts/bsc-56/0x2544be623743897b06d57707cf3016cccfd355a8/) | ClisToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x57371f...8490f6`](./contracts/bsc-56/0x57371fb9311a7a0d6c712e9ee154dc8a718490f6/) | CollateralBorrowSnapshotRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x0aeb6c...6571f0`](./contracts/bsc-56/0x0aeb6cd202b8482a71215c844341ea1f3f6571f0/) | DynamicDutyCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x92723a...c4819e`](./contracts/bsc-56/0x92723acbac7bd5326f25c719f27769e6adc4819e/) | EarnImp | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x143c8b...164642`](./contracts/bsc-56/0x143c8b6b1161dec945d1fb7c2ca13c3b1d164642/) | EarnPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5d52bc...693736`](./contracts/bsc-56/0x5d52bcbf45c72f5fb8441959622c7e5dd4693736/) | EmissionVoting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x9b4f67...af1e96`](./contracts/bsc-56/0x9b4f67fb43180085ea26e348200027670eaf1e96/) | EthOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x209003...f7741b`](./contracts/bsc-56/0x209003905c94a67f766cbea529d2d5e1b3f7741b/) | EzEthOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xd1eb87...9ab904`](./contracts/bsc-56/0xd1eb8719c4b64d3a3fa1ba89e2c70ea5c99ab904/) | HelioETHProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x2f9da6...0a509e`](./contracts/bsc-56/0x2f9da64252015a36e595dc02e05bac65880a509e/) | Interaction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x383a35...5b2130`](./contracts/bsc-56/0x383a3517c5d9259bcf43f4bf8612c6726b5b2130/) | Jar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x5faa44...20552e`](./contracts/bsc-56/0x5faa44a3f92eab686f6ad1d1ad15a1995b20552e/) | LinearDecrease | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x8b3c75...b4933c`](./contracts/bsc-56/0x8b3c75bf9e038d6ab44d803eb501bfbab5b4933c/) | LiquidityImp | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x0f4c12...61d415`](./contracts/bsc-56/0x0f4c128a811a0b0da2845634c736ff1d9f61d415/) | ListaAutoBuyback | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x82f5bc...413f02`](./contracts/bsc-56/0x82f5bcd1473bda5794239d01073797093a413f02/) | ListaOFTAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x1c56cc...9a7cc4`](./contracts/bsc-56/0x1c56ccf0727bac9d08494603da5d2594229a7cc4/) | ListaRevenueDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x4d9ed5...a33430`](./contracts/bsc-56/0x4d9ed586a8490d227dafdbe520306fbae7a33430/) | ListaStakeManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x64e30b...0cbd98`](./contracts/bsc-56/0x64e30b9e176b4551b5d9f17d72716152540cbd98/) | Market | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x034f0a...929b37`](./contracts/bsc-56/0x034f0ae5d952c2ffe4247d396010c50ce6929b37/) | MasterVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3605c7...db95b1`](./contracts/bsc-56/0x3605c70f8512f6c257bbe144e365f1a564db95b1/) | mwBETHOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x708252...cfb755`](./contracts/bsc-56/0x7082528e908bfd0c42d2134fe7065457cfcfb755/) | NonTransferableLpERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x6f6a14...04932b`](./contracts/bsc-56/0x6f6a144760f8b4d7876eb6155a52393a8304932b/) | Oracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x47dbca...784a41`](./contracts/bsc-56/0x47dbcae9c5a8eb4ed847fa9283c3e42457784a41/) | OracleCenter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x34f18e...80eafc`](./contracts/bsc-56/0x34f18e18330468ffaedfdcd8ffdaff23aa80eafc/) | PToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xabdb46...09f4df`](./contracts/bsc-56/0xabdb46ba7b15ec01be368736bb7fe13ab209f4df/) | PumpBTCProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x35c673...af4bbe`](./contracts/bsc-56/0x35c673a0a56edb743a8cf67bcd96d0eab8af4bbe/) | ResilientOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x1b19bc...11b96e`](./contracts/bsc-56/0x1b19bc6394246d4795d16ceee9edc76b4d11b96e/) | SafeGuard | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x9881cf...7c7e12`](./contracts/bsc-56/0x9881cfce5a072a107dcce7fd24e2c99b857c7e12/) | SlisBnbDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x44388e...89c584`](./contracts/bsc-56/0x44388ef3bc730bde8670a3b4831281dd7e89c584/) | SlisBnbOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xf982b7...c79415`](./contracts/bsc-56/0xf982b7b82dbf7d25330fc14e902abf9b01c79415/) | SlisBNBProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x64dbd2...6480c6`](./contracts/bsc-56/0x64dbd29ab153e7cf8806fb635ef95285e16480c6/) | SLisLibrary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x1101ff...923dc3`](./contracts/bsc-56/0x1101ff0f0545f3e2ed54fd986814295356923dc3/) | SnBnbYieldConverterStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x9b83f2...6cfb6c`](./contracts/bsc-56/0x9b83f26e9626e81d8f7d059400c4e25ebd6cfb6c/) | SnStakeManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x08bcb6...540c5f`](./contracts/bsc-56/0x08bcb6030db9f3eb310b226ca94f9ab7a1540c5f/) | SolvBtcOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x82c6fb...8a4491`](./contracts/bsc-56/0x82c6fb65aa044bb8463068e30d1146beb08a4491/) | StakeLisUSDListaDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x0541ee...a1806a`](./contracts/bsc-56/0x0541eeef035709040728bedbfd7234298ba1806a/) | StakingVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3b2ff4...59ffb1`](./contracts/bsc-56/0x3b2ff473c2a10f7303230955a7fede931359ffb1/) | StoneOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xc998f1...cee150`](./contracts/bsc-56/0xc998f14f0692526824bfa3d299fd5cce04cee150/) | ThenaERC20LpProvidableListaDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x07d274...735253`](./contracts/bsc-56/0x07d274a68393e8b8a2ccf19a2ce4ba3518735253/) | TimeLock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xb844d6...b80f13`](./contracts/bsc-56/0xb844d65c4c27a57203989235a7cd765317b80f13/) | UpdateImp | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -298,17 +296,16 @@ Verified + unaudited native implementations ranked by TVL:
 | bsc | [`0x15fc4e...727ec2`](./contracts/bsc-56/0x15fc4e6417c74577dee27aaafb2e2c5806727ec2/) | VaultManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x006835...4ccfd6`](./contracts/bsc-56/0x0068358250759de8f50c83927c4a95847f4ccfd6/) | VeListaDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x87e994...f9070f`](./contracts/bsc-56/0x87e994de2a997385aff4f991c233f07bb9f9070f/) | VeListaRewardsCourier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x8f8075...afeee1`](./contracts/bsc-56/0x8f8075340ece10e74245d5f0e0e242500bafeee1/) | WeEthOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x77f452...070b95`](./contracts/bsc-56/0x77f452a594aa6bf1eb67ceedd941ff14ac070b95/) | WstETHOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 79 |
-| upstream | 7 |
-| standard_library | 24 |
-| needs_review | 56 |
+| native | 48 |
+| upstream | 10 |
+| standard_library | 28 |
+| needs_review | 82 |
 
 ## Scope Matching Notes
 

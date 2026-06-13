@@ -1,6 +1,6 @@
 # thruster — Contract Index
 
-20 unique implementations on blast · 24 deployments · 0 audited · 14 unaudited · 6 unverified
+26 unique implementations on blast · 31 deployments · 0 audited · 19 unaudited · 7 unverified
 
 ## adapter (2)
 
@@ -9,10 +9,11 @@
 | [SwapRouter](./blast-81457/0x337827814155ecbf24d20231fca4444f530c0555/) | blast | [`0x337827...0c0555`](./blast-81457/0x337827814155ecbf24d20231fca4444f530c0555/) | ⚠️ Unaudited | Verified |
 | [ThrusterRouter (2 deployments)](./blast-81457/0x44889b52b71e60de6ed7de82e2939fcc52fb2b4e/) | blast | 2 deployments: blast [`0x44889b...fb2b4e`](./blast-81457/0x44889b52b71e60de6ed7de82e2939fcc52fb2b4e/); blast `0x98994a...1650f6` | ⚠️ Unaudited | Verified |
 
-## core_logic (1)
+## core_logic (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
+| [ThrusterPool](./blast-81457/0xf00da13d2960cf113edcef6e3f30d92e52906537/) | blast | [`0xf00da1...906537`](./blast-81457/0xf00da13d2960cf113edcef6e3f30d92e52906537/) | ⚠️ Unaudited | Verified |
 | [ThrusterPoolDeployer](./blast-81457/0xa08ae3d3f4da51c22d3c041e468bdf4c61405aab/) | blast | [`0xa08ae3...405aab`](./blast-81457/0xa08ae3d3f4da51c22d3c041e468bdf4c61405aab/) | ⚠️ Unaudited | Verified |
 
 ## governance (1)
@@ -21,12 +22,14 @@
 |---|---|---|---|---|
 | [NonfungiblePositionManager](./blast-81457/0x434575eaea081b735c985fa9bf63cd7b87e227f9/) | blast | [`0x434575...e227f9`](./blast-81457/0x434575eaea081b735c985fa9bf63cd7b87e227f9/) | ⚠️ Unaudited | Verified |
 
-## operational_periphery (2)
+## operational_periphery (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BatchDistributor](./blast-81457/0x0561fc4e3c728afc9a0407fa109a2bd2981056ab/) | blast | [`0x0561fc...1056ab`](./blast-81457/0x0561fc4e3c728afc9a0407fa109a2bd2981056ab/) | ⚠️ Unaudited | Verified |
+| [Gauge Controller](./blast-81457/0xd40fb88b94d20d5d60a94e00492214061bdb2756/) | blast | [`0xd40fb8...db2756`](./blast-81457/0xd40fb88b94d20d5d60a94e00492214061bdb2756/) | ⚠️ Unaudited | Verified |
 | [PumpDistributor](./blast-81457/0x12dc5db96df71a6623b23f904fe83baf60ebd991/) | blast | [`0x12dc5d...ebd991`](./blast-81457/0x12dc5db96df71a6623b23f904fe83baf60ebd991/) | ⚠️ Unaudited | Verified |
+| [Voting Escrow](./blast-81457/0xc6de1f30415352941f7ce784a67b2df1552386a4/) | blast | [`0xc6de1f...2386a4`](./blast-81457/0xc6de1f30415352941f7ce784a67b2df1552386a4/) | ⚠️ Unaudited | Verified |
 
 ## periphery (4)
 
@@ -50,12 +53,15 @@
 |---|---|---|---|---|
 | [NFTDescriptor](./blast-81457/0xe3cca3a48b907d0e26135025eaeea6431c083a8c/) | blast | [`0xe3cca3...083a8c`](./blast-81457/0xe3cca3a48b907d0e26135025eaeea6431c083a8c/) | ⚠️ Unaudited | Verified |
 
-## unknown (7)
+## unknown (10)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
+| [Curve Fee Distribution](./blast-81457/0xaafa3db42ea9c114c36a2a033e04c8bc0813c65c/) | blast | [`0xaafa3d...13c65c`](./blast-81457/0xaafa3db42ea9c114c36a2a033e04c8bc0813c65c/) | ⚠️ Unaudited | Verified |
 | [Pump](./blast-81457/0x216a5a1135a9dab49fa9ad865e0f22fe22b5630a/) | blast | [`0x216a5a...b5630a`](./blast-81457/0x216a5a1135a9dab49fa9ad865e0f22fe22b5630a/) | ⚠️ Unaudited | Verified |
+| [ThrusterPair (2 deployments)](./blast-81457/0x12c69bfa3fb3cba75a1defa6e976b87e233fc7df/) | blast | 2 deployments: blast [`0x12c69b...3fc7df`](./blast-81457/0x12c69bfa3fb3cba75a1defa6e976b87e233fc7df/); blast `0xd2f1a2...dbf477` | ⚠️ Unaudited | Verified |
 | UnnamedContract | blast | `0x32cad2...a5b412` | ❓ Unverified | Unverified |
+| UnnamedContract | blast | `0x414991...091711` | ❓ Unverified | Unverified |
 | UnnamedContract | blast | `0x44a2f2...7e968a` | ❓ Unverified | Unverified |
 | UnnamedContract | blast | `0x609fdd...ef3358` | ❓ Unverified | Unverified |
 | UnnamedContract | blast | `0x985924...735e4a` | ❓ Unverified | Unverified |

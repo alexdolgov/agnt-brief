@@ -204,7 +204,7 @@
 | [exmo](./exmo/) | $2.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [extra-finance](./extra-finance/) | $100.0 | 5.3% | ? | active | 3 | 268 | 2026-06-10 |
 | [feather](./feather/) | $15.9M | 0.0% | ? | active | 0 | 10 | 2026-06-12 |
-| [ferro](./ferro/) | $5.0M | 0.0% | ? | declining | 0 | 21 | 2026-06-10 |
+| [ferro](./ferro/) | $4.9M | 0.0% | ? | declining | 0 | 21 | 2026-06-13 |
 | [fiamma](./fiamma/) | $1.2M | 0.0% | ? | active | 3 | 33 | 2026-06-11 |
 | [firebot](./firebot/) | $3.7M | 4.8% | $3.7M | unknown | 2 | 29 | 2026-06-10 |
 | [firelight](./firelight/) | $80.3M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
@@ -611,7 +611,7 @@
 | [symmio](./symmio/) | $24.5 | 0.0% | $24.5 | active | 0 | 168 | 2026-06-11 |
 | [synapse](./synapse/) | $25.6M | 0.0% | $25.6M | declining | 0 | 824 | 2026-06-11 |
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 23.3% | ? | active | 8 | 157 | 2026-06-11 |
-| [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 1 | 481 | 2026-06-11 |
+| [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 1 | 482 | 2026-06-13 |
 | [synthetix](./synthetix/) | $11.4M | 0.0% | $11.4M | active | 0 | 25 | 2026-06-12 |
 | [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 0 | 4 | 2026-06-12 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 8 | 2026-06-12 |
@@ -632,14 +632,14 @@
 | [themis-pro](./themis-pro/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [thena](./thena/) | $208.2 | 10.2% | $208.2 | declining | 3 | 131 | 2026-05-25 |
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-06-11 |
-| [thruster](./thruster/) | $5.7M | 0.0% | ? | dead | 0 | 20 | 2026-05-31 |
+| [thruster](./thruster/) | $113.0K | 0.0% | $113.0K | dead | 0 | 26 | 2026-06-13 |
 | [tinyman](./tinyman/) | $6.6M | 0.0% | ? | unknown | 18 | 0 | 2026-06-11 |
 | [tokenlon](./tokenlon/) | $37.2M | 57.1% | ? | declining | 6 | 21 | 2026-06-11 |
 | [tokenstore](./tokenstore/) | $265.7K | 0.0% | $265.7K | active | 0 | 44 | 2026-06-11 |
 | [tokenworks](./tokenworks/) | $0.0 | 0.0% | $0.0 | active | 0 | 60 | 2026-06-11 |
 | [toobit](./toobit/) | $69.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [tothemoon](./tothemoon/) | $2.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | declining | 0 | 29 | 2026-06-11 |
+| [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | declining | 0 | 29 | 2026-06-13 |
 | [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
 | [treehouse-protocol](./treehouse-protocol/) | $24.0M | 42.6% | $1.8M | declining | 20 | 77 | 2026-06-11 |
@@ -647,7 +647,7 @@
 | [trisolaris](./trisolaris/) | $1.5M | 0.0% | ? | declining | 0 | 119 | 2026-06-11 |
 | [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
 | [truefi](./truefi/) | $15.4M | 37.5% | ? | declining | 24 | 8 | 2026-06-11 |
-| [trueo](./trueo/) | $4.0M | 0.0% | $4.0M | declining | 0 | 23 | 2026-06-11 |
+| [trueo](./trueo/) | $25.5M | 0.0% | $25.5M | declining | 0 | 32 | 2026-06-13 |
 | [trufin-protocol](./trufin-protocol/) | $7.0M | 66.7% | ? | declining | 12 | 7 | 2026-06-10 |
 | [trust-wallet](./trust-wallet/) | $470.2M | 0.0% | $470.2M | active | 0 | 14 | 2026-06-12 |
 | [tulipa-capital](./tulipa-capital/) | $56.2M | 0.0% | $56.2M | active | 0 | 6 | 2026-06-12 |

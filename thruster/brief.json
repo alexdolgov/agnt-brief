@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "thruster",
-  "generated_at": "2026-05-31T10:59:10.285Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-13T04:42:09.941Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "thruster",
@@ -22,24 +22,26 @@
     "drop_from_peak_pct": 99.05375015126427
   },
   "summary": {
-    "total_contracts": 20,
-    "total_addresses": 24,
-    "unique_implementations": 20,
-    "total_deployments": 24,
+    "total_contracts": 26,
+    "total_addresses": 31,
+    "unique_implementations": 26,
+    "total_deployments": 31,
     "audited_contracts": 0,
-    "unaudited_contracts": 14,
+    "unaudited_contracts": 19,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 14,
+    "contracts_verified_unaudited": 19,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 6,
+    "contracts_unverified": 7,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5727282,
-    "tvl_usd": 5727282,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "dl_tvl_usd": 4857801,
+    "tvl_usd": 112989.6644696643,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "blast": 112989.66
+    },
+    "asd_usd": 112989.6644696643,
     "website_url": null,
     "chains": [
       "blast"
@@ -60,11 +62,47 @@
     "relationship_narrative": "The ThrusterFactory deploys pool contracts, while the SwapRouter and NonfungiblePositionManager interact with these pools to facilitate swaps and manage liquidity positions. All contracts share the same deployer cluster, indicating a unified infrastructure.",
     "product_family_count": 1
   },
+  "surface_sufficiency": {
+    "unique_implementations": 26,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
+  },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0xf00da13d2960cf113edcef6e3f30d92e52906537",
+      "name": "ThrusterPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 112989.6644696643,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ThrusterPool",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xf00da13d2960cf113edcef6e3f30d92e52906537",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 112989.6644696643,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 81457,
       "chain_name": "blast",
@@ -95,6 +133,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "review"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0xaafa3db42ea9c114c36a2a033e04c8bc0813c65c",
+      "name": "Curve Fee Distribution",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Curve",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Curve Fee Distribution",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xaafa3db42ea9c114c36a2a033e04c8bc0813c65c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 81457,
@@ -144,6 +213,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "review"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0xd40fb88b94d20d5d60a94e00492214061bdb2756",
+      "name": "Gauge Controller",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Gauge Controller",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xd40fb88b94d20d5d60a94e00492214061bdb2756",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 81457,
@@ -405,6 +505,46 @@
     {
       "chain_id": 81457,
       "chain_name": "blast",
+      "address": "0x12c69bfa3fb3cba75a1defa6e976b87e233fc7df",
+      "name": "ThrusterPair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ThrusterPair",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x12c69bfa3fb3cba75a1defa6e976b87e233fc7df",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xd2f1a205959605550471762e7dea1a034edbf477",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
       "address": "0xa08ae3d3f4da51c22d3c041e468bdf4c61405aab",
       "name": "ThrusterPoolDeployer",
       "role": "core_logic",
@@ -569,6 +709,37 @@
     {
       "chain_id": 81457,
       "chain_name": "blast",
+      "address": "0x414991b742fbcbe3ef00d94ff9f9a63729091711",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x414991b742fbcbe3ef00d94ff9f9a63729091711",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
       "address": "0x44a2f2303933e71e5fa779ce463c7d71607e968a",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -720,11 +891,52 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "review"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0xc6de1f30415352941f7ce784a67b2df1552386a4",
+      "name": "Voting Escrow",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Voting Escrow",
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0xc6de1f30415352941f7ce784a67b2df1552386a4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0xf00da13d2960cf113edcef6e3f30d92e52906537",
+      "name": "ThrusterPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 112989.6644696643,
+      "risk_note": "Verified native implementation with $112,989.66 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 81457,
       "chain_name": "blast",
@@ -828,6 +1040,16 @@
     {
       "chain_id": 81457,
       "chain_name": "blast",
+      "address": "0x12c69bfa3fb3cba75a1defa6e976b87e233fc7df",
+      "name": "ThrusterPair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
       "address": "0xa08ae3d3f4da51c22d3c041e468bdf4c61405aab",
       "name": "ThrusterPoolDeployer",
       "role": "core_logic",
@@ -867,10 +1089,10 @@
     }
   ],
   "origin_summary": {
-    "native": 20,
-    "upstream": 0,
+    "native": 22,
+    "upstream": 1,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {},

@@ -1,6 +1,6 @@
 # synfutures — Contract Index
 
-481 unique implementations across 6 chains · 485 deployments · 0 audited · 4 unaudited · 477 unverified
+482 unique implementations across 6 chains · 486 deployments · 0 audited · 4 unaudited · 478 unverified
 
 ## proxy (82)
 
@@ -96,7 +96,7 @@
 | [SynFuturesToken (2 deployments)](./ethereum-1/0x4b28532fb636bab662fff29d56d133c3d9c78857/) | ethereum | 2 deployments: ethereum [`0x4b2853...c78857`](./ethereum-1/0x4b28532fb636bab662fff29d56d133c3d9c78857/); ethereum `0x6e15a5...0252f9` | ⚠️ Unaudited | Verified |
 | [SynFuturesTokenOFT](./bsc-56/0xc9ccbd76c2353e593cc975f13295e8289d04d3bb/) | bsc | [`0xc9ccbd...04d3bb`](./bsc-56/0xc9ccbd76c2353e593cc975f13295e8289d04d3bb/) | ⚠️ Unaudited | Verified |
 
-## unknown (397)
+## unknown (398)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -110,6 +110,7 @@
 | UnnamedContract | ethereum | `0x9fdf25...91b0a3` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xf18960...94149b` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xf81ee8...42a493` | ❓ Unverified | Unverified |
+| UnnamedContract | bsc | `0x6e893d...1bf9a9` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x0000d0...083b5e` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x1267c6...0edd73` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x36afdd...017188` | ❓ Unverified | Unverified |

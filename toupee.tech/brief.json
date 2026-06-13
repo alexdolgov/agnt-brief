@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "toupee.tech",
-  "generated_at": "2026-06-11T03:35:59.568Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
+  "generated_at": "2026-06-13T04:42:14.122Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "toupee.tech",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6291303.15526,
+    "dl_tvl_usd": 4937999.36687,
     "tvl_usd": 24.285757689042008,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -820,7 +820,7 @@
       "address": "0x1441cba5a9df12f157c362ca0c8eed50c2b07d27",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "BASE Mainnet",
       "tvl_usd": null,
@@ -851,7 +851,7 @@
       "address": "0x56df157dec576cc2596257fb17115a7ea0329e01",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "BASE Mainnet",
       "tvl_usd": null,
@@ -882,7 +882,7 @@
       "address": "0x5ed50fbb15d047b2b6bc0e6fade25a3b1eee106d",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "BASE Mainnet",
       "tvl_usd": null,
@@ -913,7 +913,7 @@
       "address": "0xd54b64a096b785d19cff3f19061509230736590c",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "BASE Mainnet",
       "tvl_usd": null,
@@ -945,7 +945,7 @@
       "name": "VelociGaugePlugin",
       "role": "operational_periphery",
       "origin_kind": "upstream",
-      "origin_provider": "velocimeter",
+      "origin_provider": "velodrome",
       "product_line": "BASE Mainnet",
       "tvl_usd": null,
       "is_proxy": false,
@@ -1383,10 +1383,10 @@
     }
   ],
   "origin_summary": {
-    "native": 19,
+    "native": 23,
     "upstream": 5,
     "standard_library": 1,
-    "needs_review": 4
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

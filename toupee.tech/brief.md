@@ -7,11 +7,11 @@
 - Project: toupee.tech (`toupee.tech`)
 - Website: [https://www.toupee.tech](https://www.toupee.tech)
 - Lifecycle: declining (Tier 0, 74.5% below peak)
-- Generated: 2026-06-11T03:35:59.568Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
+- Generated: 2026-06-13T04:42:14.122Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-8c0a
 - Chains: base
 - Contract surface: 29 unique implementations (53 raw deployments)
-- DeFi Llama TVL: $6,291,303.16
+- DeFi Llama TVL: $4,937,999.37
 - On-chain TVL (included contracts): $24.29
 - TVL by chain: Base $24.29
 
@@ -137,10 +137,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 19 |
+| native | 23 |
 | upstream | 5 |
 | standard_library | 1 |
-| needs_review | 4 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

@@ -5,11 +5,11 @@
 - Project: SynFutures (`synfutures`)
 - Website: [https://www.synfutures.com/](https://www.synfutures.com/)
 - Lifecycle: active (Tier 0, 91.2% below peak)
-- Generated: 2026-06-11T12:13:37.774Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-d9fc
+- Generated: 2026-06-13T04:49:42.103Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-8c0a
 - Chains: arbitrum, base, blast, bsc, ethereum, polygon
-- Contract surface: 481 unique implementations (485 raw deployments)
-- DeFi Llama TVL: $4,852,382.00
+- Contract surface: 482 unique implementations (486 raw deployments)
+- DeFi Llama TVL: $4,847,783.00
 - On-chain TVL (included contracts): $52,438,726.49
 - TVL by chain: Ethereum $51,469,366.33 | Bsc $969,360.15
 
@@ -26,9 +26,9 @@ SynFutures V3 is the active product family, with multiple proxy contracts pointi
 - Verified implementations audited: 0/4 (0.0%)
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 1
-- Unverified implementations: 477
-- Unique implementations: 481
-- Raw deployments: 485
+- Unverified implementations: 478
+- Unique implementations: 482
+- Raw deployments: 486
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $52,438,726.49
@@ -68,7 +68,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 |---|---|---|---|---|
 | SynFuturesStakingVault | unknown | base | 3 deployments: ethereum `0x8bcf78...273fbf`; ethereum `0x93432a...94cf05`; base [`0x424615...c43552`](./contracts/base-8453/0x4246150231a8cf58180f7a848f2c5b73e6c43552/) | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (477)
+### ❓ Unverified (478)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -164,6 +164,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | `0x9fdf25...91b0a3` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xf18960...94149b` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xf81ee8...42a493` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | `0x6e893d...1bf9a9` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x0000d0...083b5e` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x1267c6...0edd73` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x36afdd...017188` | ❓ Unverified |
@@ -565,15 +566,16 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x4b2853...c78857`](./contracts/ethereum-1/0x4b28532fb636bab662fff29d56d133c3d9c78857/) | SynFuturesToken | token | $51,437,122.43 | Verified native implementation with $51,437,122.43 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc9ccbd...04d3bb`](./contracts/bsc-56/0xc9ccbd76c2353e593cc975f13295e8289d04d3bb/) | SynFuturesTokenOFT | token | $969,360.15 | Verified native implementation with $969,360.15 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 110 |
-| upstream | 7 |
+| native | 170 |
+| upstream | 6 |
 | standard_library | 1 |
-| needs_review | 363 |
+| needs_review | 305 |
 
 ## Scope Matching Notes
 

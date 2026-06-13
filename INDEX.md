@@ -113,7 +113,9 @@
 | [avantis](./avantis/) | $196.5M | 68.8% | $150.9M | declining | 3 | 61 | 2026-06-10 |
 | [avely-finance](./avely-finance/) | $45.0K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [avnu](./avnu/) | ? | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [avon-megavault](./avon-megavault/) | $36.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 3 | 2026-06-12 |
+| [axedao](./axedao/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [azuro](./azuro/) | $3.1K | 6.6% | $3.1K | active | 3 | 304 | 2026-06-10 |
 | [b-lucky](./b-lucky/) | $2.2M | 0.0% | $2.2M | active | 1 | 16 | 2026-06-10 |
 | [b.protocol](./b.protocol/) | $79.0K | 5.1% | $79.0K | declining | 4 | 162 | 2026-06-10 |
@@ -123,7 +125,10 @@
 | [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | active | 0 | 2 | 2026-06-12 |
 | [badger-dao](./badger-dao/) | $396.9 | 21.6% | $396.9 | sunsetting | 8 | 40 | 2026-06-13 |
 | [bakeryswap](./bakeryswap/) | $612.9K | 0.0% | $612.9K | declining | 1 | 98 | 2026-05-24 |
+| [baksdao](./baksdao/) | $181.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [ball-exchange](./ball-exchange/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bancor](./bancor/) | $48.8M | 23.5% | $43.8M | declining | 4 | 121 | 2026-06-10 |
+| [baptswap](./baptswap/) | $5.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [baseline-protocol](./baseline-protocol/) | $69.3M | 25.0% | ? | active | 8 | 112 | 2026-06-10 |
 | [beam-dex](./beam-dex/) | $846.8 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [beamswap](./beamswap/) | $26.1K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |

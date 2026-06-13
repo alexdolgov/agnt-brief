@@ -505,11 +505,16 @@ Each project directory contains:
 | [coti-treasury](./coti-treasury/brief.md) | $9.89M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [cozy-finance](./cozy-finance/brief.md) | $2.30M | optimism | 48 | 5/48 (10%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [crabada](./crabada/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [cropper](./cropper/brief.md) | $113.08K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [cryptex-finance](./cryptex-finance/brief.md) | $631.36K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [crypto.com-liquid-staking](./crypto.com-liquid-staking/brief.md) | $20.02M | cronos, ethereum | 2 | 1/2 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [cvi-finance](./cvi-finance/brief.md) | $131.47K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [cyberperp](./cyberperp/brief.md) | $26.96K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [cyborgswap](./cyborgswap/brief.md) | $28.42K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [cybro](./cybro/brief.md) | $103.90K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
+| [cyclo](./cyclo/brief.md) | $183.26K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
+| [cytonic-airdrop-campaign](./cytonic-airdrop-campaign/brief.md) | $175.34K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [dackieswap](./dackieswap/brief.md) | $52.54K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [decibel](./decibel/brief.md) | $41.88M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [defi-kingdoms](./defi-kingdoms/brief.md) | $7.69M | harmony, klaytn | 5 | 0/5 (0%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [defichain-dex](./defichain-dex/brief.md) | $1.17M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -907,5 +912,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T11:28:42.052Z_
-_Projects: 895_
+_Generated: 2026-06-13T11:31:08.038Z_
+_Projects: 900_

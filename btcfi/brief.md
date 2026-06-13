@@ -5,11 +5,11 @@
 - Project: BTCFi (`btcfi`)
 - Website: [https://btcfi.one](https://btcfi.one)
 - Lifecycle: active (Tier 0, 58.9% below peak)
-- Generated: 2026-06-10T22:13:31.144Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
+- Generated: 2026-06-13T00:13:37.884Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-e35d
 - Chains: base
 - Contract surface: 15 unique implementations (16 raw deployments)
-- DeFi Llama TVL: $11,758,166.00
+- DeFi Llama TVL: $9,635,573.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -94,16 +94,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| base | [`0x6e9070...3b74a9`](./contracts/base-8453/0x6e9070b8a8dbbc6cad6b6d029a5c6f6a653b74a9/) | ERC20_Bridged | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 7 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 13 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 

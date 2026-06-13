@@ -5,11 +5,11 @@
 - Project: Odyssey Finance (`odyssey-finance`)
 - Website: [https://app.odyssey.finance/en](https://app.odyssey.finance/en)
 - Lifecycle: active (Tier 0, 38.2% below peak)
-- Generated: 2026-06-11T01:33:07.688Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-13T00:18:47.008Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-e35d
 - Chains: base, ethereum, optimism
-- Contract surface: 79 unique implementations (272 raw deployments)
-- DeFi Llama TVL: $10,182,418.44
+- Contract surface: 82 unique implementations (279 raw deployments)
+- DeFi Llama TVL: $9,215,231.43
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,12 +23,12 @@ All families share a common architecture of PositionRegistry for tracking user p
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/76 (0.0%)
-- Verified + Unaudited implementations: 74
+- Verified implementations audited: 0/79 (0.0%)
+- Verified + Unaudited implementations: 77
 - Verified by bytecode match: 2
 - Unverified implementations: 3
-- Unique implementations: 79
-- Raw deployments: 272
+- Unique implementations: 82
+- Raw deployments: 279
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,7 +46,7 @@ All families share a common architecture of PositionRegistry for tracking user p
 
 - None
 
-### ⚠️ Verified + Unaudited (74)
+### ⚠️ Verified + Unaudited (77)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -56,8 +56,8 @@ All families share a common architecture of PositionRegistry for tracking user p
 | AaveV3 | unknown | ethereum | 3 deployments: ethereum [`0x206eba...9a2821`](./contracts/ethereum-1/0x206eba040e4e86667b8ab4275bb75f220e9a2821/); optimism [`0x206eba...9a2821`](./contracts/optimism-10/0x206eba040e4e86667b8ab4275bb75f220e9a2821/); base [`0x206eba...9a2821`](./contracts/base-8453/0x206eba040e4e86667b8ab4275bb75f220e9a2821/) | ⚠️ Unaudited |
 | AaveV3BorrowStrategy | core_logic | ethereum | 3 deployments: ethereum [`0x3efcee...58d79b`](./contracts/ethereum-1/0x3efcee552716472dd2b321326654e4097f58d79b/); optimism `0x8d4dfa...1aee36`; base [`0x3efcee...58d79b`](./contracts/base-8453/0x3efcee552716472dd2b321326654e4097f58d79b/) | ⚠️ Unaudited |
 | AaveV3FlashLoan | unknown | ethereum | 3 deployments: ethereum [`0x743618...5c312b`](./contracts/ethereum-1/0x7436186d83d8f98e542a5bd37d18e91f265c312b/); optimism `0x78d791...ad9762`; base [`0x743618...5c312b`](./contracts/base-8453/0x7436186d83d8f98e542a5bd37d18e91f265c312b/) | ⚠️ Unaudited |
-| Agent | unknown | ethereum | [`0x4762e7...0f28a9`](./contracts/ethereum-1/0x4762e77b8f448f0755eca2b6be6cbcd4db0f28a9/) | ⚠️ Unaudited |
-| AgentUpgrader | unknown | ethereum | [`0x804739...c3953a`](./contracts/ethereum-1/0x804739d527b550260f633462dedab13399c3953a/) | ⚠️ Unaudited |
+| Agent | unknown | ethereum | 3 deployments: ethereum [`0x46e6ad...21553a`](./contracts/ethereum-1/0x46e6ade9b7b59e151c5bcc877c9b90d50021553a/); ethereum `0x4762e7...0f28a9`; ethereum `0x96f82d...a8cf80` | ⚠️ Unaudited |
+| AgentUpgrader | unknown | ethereum | 2 deployments: ethereum [`0x804739...c3953a`](./contracts/ethereum-1/0x804739d527b550260f633462dedab13399c3953a/); ethereum `0xf9eeae...a7ef51` | ⚠️ Unaudited |
 | Ajna | unknown | ethereum | 3 deployments: ethereum [`0x82e6b5...6ac3a2`](./contracts/ethereum-1/0x82e6b5675977f0650c88659716a2210f536ac3a2/); optimism [`0x82e6b5...6ac3a2`](./contracts/optimism-10/0x82e6b5675977f0650c88659716a2210f536ac3a2/); base [`0x82e6b5...6ac3a2`](./contracts/base-8453/0x82e6b5675977f0650c88659716a2210f536ac3a2/) | ⚠️ Unaudited |
 | AjnaBorrowStrategy | core_logic | optimism | 3 deployments: ethereum `0xde433f...9c9736`; optimism [`0x0dba14...7ec890`](./contracts/optimism-10/0x0dba141eb855ea62a951066fb8c5fb1ebe7ec890/); base `0xde433f...9c9736` | ⚠️ Unaudited |
 | AMO | unknown | ethereum | 3 deployments: ethereum [`0x4681a8...704e8f`](./contracts/ethereum-1/0x4681a847863f1d1a584c298ae5a7ac4343704e8f/); optimism `0x541814...f25eaa`; base `0x7b8bcf...f5da27` | ⚠️ Unaudited |
@@ -83,7 +83,10 @@ All families share a common architecture of PositionRegistry for tracking user p
 | FeeProvider | unknown | base | 3 deployments: ethereum `0xa6a4db...077585`; optimism `0xdce663...f34a91`; base [`0x17446e...610f9c`](./contracts/base-8453/0x17446e48196ec6ef40f839a4be6df77ac6610f9c/) | ⚠️ Unaudited |
 | FlashLoanExecutor | unknown | optimism | 3 deployments: ethereum `0x6e30df...7fb2c4`; optimism [`0x4391ae...d35978`](./contracts/optimism-10/0x4391ae1acc1c082bae3bb2badb29afb275d35978/); base `0x6e30df...7fb2c4` | ⚠️ Unaudited |
 | HemiBTCRateProvider | unknown | ethereum | [`0xbcfa47...ca30ba`](./contracts/ethereum-1/0xbcfa47099dcce482e90ebd75a53f4bf012ca30ba/) | ⚠️ Unaudited |
+| InfiniFiAdapter | adapter | ethereum | [`0xf974d7...f2fb41`](./contracts/ethereum-1/0xf974d7435e86db32d8a6d021934712ea51f2fb41/) | ⚠️ Unaudited |
+| InifniFiAdapter | adapter | ethereum | 2 deployments: ethereum [`0xa24b17...fe8416`](./contracts/ethereum-1/0xa24b17e30e88d8ea582a2c41d0d8c9208efe8416/); ethereum `0xe32ad0...548682` | ⚠️ Unaudited |
 | LimitOrderExecutor | unknown | ethereum | 3 deployments: ethereum [`0x1807c6...604ef4`](./contracts/ethereum-1/0x1807c62f30269746672d0c0f24a645a573604ef4/); optimism [`0x1807c6...604ef4`](./contracts/optimism-10/0x1807c62f30269746672d0c0f24a645a573604ef4/); base [`0x1807c6...604ef4`](./contracts/base-8453/0x1807c62f30269746672d0c0f24a645a573604ef4/) | ⚠️ Unaudited |
+| LooprFactory | registry | ethereum | [`0xf6f3fe...410559`](./contracts/ethereum-1/0xf6f3fee894abf3bf1d11c1bb50c252df19410559/) | ⚠️ Unaudited |
 | MainAndFallbackOracle | operational_periphery | ethereum | [`0xe0af15...3d3017`](./contracts/ethereum-1/0xe0af15b4689cf81a9f1bfc6857d842f2813d3017/) | ⚠️ Unaudited |
 | MasterOracle | operational_periphery | ethereum | [`0xdb2d0b...2c3766`](./contracts/ethereum-1/0xdb2d0baae78f1dc2a8504b471f3cea257b2c3766/) | ⚠️ Unaudited |
 | MetAirdrop | operational_periphery | ethereum | [`0x265714...842309`](./contracts/ethereum-1/0x265714b10b9309a8a7a505dbfa6cb6c39b842309/) | ⚠️ Unaudited |
@@ -161,7 +164,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x4762e7...0f28a9`](./contracts/ethereum-1/0x4762e77b8f448f0755eca2b6be6cbcd4db0f28a9/) | Agent | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x46e6ad...21553a`](./contracts/ethereum-1/0x46e6ade9b7b59e151c5bcc877c9b90d50021553a/) | Agent | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x804739...c3953a`](./contracts/ethereum-1/0x804739d527b550260f633462dedab13399c3953a/) | AgentUpgrader | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x82e6b5...6ac3a2`](./contracts/ethereum-1/0x82e6b5675977f0650c88659716a2210f536ac3a2/) | Ajna | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x0dba14...7ec890`](./contracts/optimism-10/0x0dba141eb855ea62a951066fb8c5fb1ebe7ec890/) | AjnaBorrowStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -171,7 +174,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xf70aca...0da5d9`](./contracts/ethereum-1/0xf70acacfb981c8be2ddc48093f4042b88f0da5d9/) | CallOrderExecutor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0xfd7d5e...d63613`](./contracts/optimism-10/0xfd7d5edd096b98ac2391043b22b96aa63dd63613/) | CallOrdersFillerUsingUniV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x50361a...12a41c`](./contracts/ethereum-1/0x50361afaafd269c1e9b74866a14579bbc512a41c/) | CrossChainDispatcher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x24186a...c957d0`](./contracts/base-8453/0x24186a4814a826c84ba127f7f24eac6b06c957d0/) | DebtToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x4672ed...c8771a`](./contracts/optimism-10/0x4672edcd34235b3855f2fe8bf1530947c9c8771a/) | DepositToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x32cbc6...b5ff59`](./contracts/ethereum-1/0x32cbc628325eb5a3000d3182c72539c77eb5ff59/) | ERC4626Adapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf4868c...ea0543`](./contracts/ethereum-1/0xf4868cec8c7e13bba1e3ba65b029449c13ea0543/) | ERC4626Strategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -179,12 +181,13 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0x17446e...610f9c`](./contracts/base-8453/0x17446e48196ec6ef40f839a4be6df77ac6610f9c/) | FeeProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x4391ae...d35978`](./contracts/optimism-10/0x4391ae1acc1c082bae3bb2badb29afb275d35978/) | FlashLoanExecutor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x656f1f...c9e4d0`](./contracts/optimism-10/0x656f1f3a4df83a10afb2bd2ecad8ef4a96c9e4d0/) | FlatDepositFeePolicy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf974d7...f2fb41`](./contracts/ethereum-1/0xf974d7435e86db32d8a6d021934712ea51f2fb41/) | InfiniFiAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1807c6...604ef4`](./contracts/ethereum-1/0x1807c62f30269746672d0c0f24a645a573604ef4/) | LimitOrderExecutor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf6f3fe...410559`](./contracts/ethereum-1/0xf6f3fee894abf3bf1d11c1bb50c252df19410559/) | LooprFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xe0af15...3d3017`](./contracts/ethereum-1/0xe0af15b4689cf81a9f1bfc6857d842f2813d3017/) | MainAndFallbackOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdb2d0b...2c3766`](./contracts/ethereum-1/0xdb2d0baae78f1dc2a8504b471f3cea257b2c3766/) | MasterOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x265714...842309`](./contracts/ethereum-1/0x265714b10b9309a8a7a505dbfa6cb6c39b842309/) | MetAirdrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x186df6...743aa6`](./contracts/ethereum-1/0x186df63e79a7089dbb325567f587ebb5a3743aa6/) | NativeTokenGateway | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x010f0b...340e94`](./contracts/ethereum-1/0x010f0bd6576949e6ac6eea11ed8c535388340e94/) | OFTAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x49219d...bf08ec`](./contracts/optimism-10/0x49219d2feca183b26f058388e36bbfb139bf08ec/) | Operator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x073a51...c74c4a`](./contracts/ethereum-1/0x073a51b50f49a82345ef8c3ae1bb1cfc0bc74c4a/) | PerformanceFeePolicy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1cb2a9...afaa27`](./contracts/ethereum-1/0x1cb2a9e5425a84a93ee1f6a8f98aa3edabafaa27/) | Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -199,7 +202,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x2b70e6...5f7c16`](./contracts/ethereum-1/0x2b70e663ba015c59556b6186822d90159d5f7c16/) | SmartFarmingManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xe55744...ef005a`](./contracts/ethereum-1/0xe55744ebb196d0e4ddea70204142eaf517ef005a/) | StableCoinProvider | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x7b9c45...3b0efa`](./contracts/optimism-10/0x7b9c45136fd16bb2accf566e74b6facc0d3b0efa/) | SwapAggregator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x9614bf...2fc87f`](./contracts/optimism-10/0x9614bfc8e5350e559a9a02eab4574d5b332fc87f/) | SwapOrdersFillerUsingUniV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9a02ae...e7e5eb`](./contracts/ethereum-1/0x9a02ae403d6ae970748b889bb4e36fd89ae7e5eb/) | Swapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xbde032...d2b2d6`](./contracts/ethereum-1/0xbde032fdf114b4005e5320881b96246347d2b2d6/) | SwapperUpgrader | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0d0ac1...9aa4b7`](./contracts/ethereum-1/0x0d0ac1e287e21eb0014d39272d8a6d82a39aa4b7/) | Synth | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -213,10 +215,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 49 |
-| upstream | 22 |
+| native | 48 |
+| upstream | 25 |
 | standard_library | 7 |
-| needs_review | 1 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

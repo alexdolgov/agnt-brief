@@ -5,21 +5,22 @@
 - Project: Meld Gold (`meld-gold`)
 - Website: [https://meld.gold](https://meld.gold)
 - Lifecycle: active (Tier 0, 27.2% below peak)
-- Generated: 2026-05-31T09:53:26.654Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-13T00:13:42.275Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-e35d
 - Chains: ethereum
 - Contract surface: 1 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $11,125,037.93
+- DeFi Llama TVL: $9,694,298.60
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Meld Gold provides on-chain price feeds for gold, enabling DeFi protocols to access real-time gold price data on Ethereum.
-
-### Architecture
-
-The two EACAggregatorProxy contracts likely represent different gold price feeds (e.g., XAU/USD and XAU/ETH) sharing the same oracle infrastructure and deployer.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

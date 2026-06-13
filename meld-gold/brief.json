@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "meld-gold",
-  "generated_at": "2026-05-31T09:53:26.654Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-13T00:13:42.275Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-e35d",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "meld-gold",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 11125037.9307,
-    "tvl_usd": 11125037.9307,
+    "dl_tvl_usd": 9694298.60451,
+    "tvl_usd": 9694298.60451,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Meld Gold provides on-chain price feeds for gold, enabling DeFi protocols to access real-time gold price data on Ethereum.",
-    "relationship_narrative": "The two EACAggregatorProxy contracts likely represent different gold price feeds (e.g., XAU/USD and XAU/ETH) sharing the same oracle infrastructure and deployer.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

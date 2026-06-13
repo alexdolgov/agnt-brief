@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "btcfi",
-  "generated_at": "2026-06-10T22:13:31.144Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-7a87",
+  "generated_at": "2026-06-13T00:13:37.884Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-e35d",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "btcfi",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 11758166,
-    "tvl_usd": 11758166,
+    "dl_tvl_usd": 9635573,
+    "tvl_usd": 9635573,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -76,7 +76,7 @@
       "address": "0x6e9070b8a8dbbc6cad6b6d029a5c6f6a653b74a9",
       "name": "ERC20_Bridged",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -116,7 +116,7 @@
       "address": "0x4f7ab59b5ac112970f5dd66d8a7ac505c8e5e08b",
       "name": "Proxy (impl: 0x5d964ec530f989de6128efa22837cfb26095cbfd)",
       "role": "proxy",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "BTCFi CDP",
       "tvl_usd": null,
@@ -147,7 +147,7 @@
       "address": "0xf549e4b5b4cb7fd4e83b8aa047c742c06d527429",
       "name": "Proxy (impl: 0x872b347cd764d46c127ffefbcab605fff3f3a48c)",
       "role": "proxy",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "BTCFi CDP",
       "tvl_usd": null,
@@ -178,7 +178,7 @@
       "address": "0x4c7a44f3fb37a53f33d3fe3ccde97a444f105239",
       "name": "Proxy (impl: 0x98e266bdb0eedd38bf45232b9316959ad0aad90c)",
       "role": "proxy",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -209,7 +209,7 @@
       "address": "0xae172d8c5e428d4b7c70f9e593b207f9dac9bf3e",
       "name": "Proxy (impl: 0x9ce202ebf6de9dfa728df770cbfba91e27ebd2f1)",
       "role": "proxy",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -547,12 +547,23 @@
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x6e9070b8a8dbbc6cad6b6d029a5c6f6a653b74a9",
+      "name": "ERC20_Bridged",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 2,
+    "native": 7,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 13
+    "needs_review": 8
   },
   "scope_matching_notes": {
     "match_method_counts": {},

@@ -5,11 +5,11 @@
 - Project: Antarctic (`antarctic`)
 - Website: [https://www.antarctic.exchange/](https://www.antarctic.exchange/)
 - Lifecycle: active (Tier 0, 22.7% below peak)
-- Generated: 2026-06-10T20:58:57.573Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-13T00:14:44.142Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-e35d
 - Chains: arbitrum
 - Contract surface: 11 unique implementations (14 raw deployments)
-- DeFi Llama TVL: $9,578,553.40
+- DeFi Llama TVL: $9,962,133.37
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 

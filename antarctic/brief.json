@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "antarctic",
-  "generated_at": "2026-06-10T20:58:57.573Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-13T00:14:44.142Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-e35d",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "antarctic",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 9578553.39695,
-    "tvl_usd": 9578553.39695,
+    "dl_tvl_usd": 9962133.37179,
+    "tvl_usd": 9962133.37179,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

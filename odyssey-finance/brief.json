@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "odyssey-finance",
-  "generated_at": "2026-06-11T01:33:07.688Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-13T00:18:47.008Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-e35d",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "odyssey-finance",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 38.15748699512577
   },
   "summary": {
-    "total_contracts": 79,
-    "total_addresses": 272,
-    "unique_implementations": 79,
-    "total_deployments": 272,
+    "total_contracts": 82,
+    "total_addresses": 279,
+    "unique_implementations": 82,
+    "total_deployments": 279,
     "audited_contracts": 0,
-    "unaudited_contracts": 76,
+    "unaudited_contracts": 79,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 74,
+    "contracts_verified_unaudited": 77,
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 3,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 10182418.438500002,
-    "tvl_usd": 10182418.438500002,
+    "dl_tvl_usd": 9215231.42674,
+    "tvl_usd": 9215231.42674,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -63,7 +63,7 @@
     "product_family_count": 4
   },
   "surface_sufficiency": {
-    "unique_implementations": 79,
+    "unique_implementations": 82,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -315,7 +315,7 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x4762e77b8f448f0755eca2b6be6cbcd4db0f28a9",
+      "address": "0x46e6ade9b7b59e151c5bcc877c9b90d50021553a",
       "name": "Agent",
       "role": "unknown",
       "origin_kind": "native",
@@ -329,7 +329,25 @@
         {
           "chain_id": 1,
           "chain_name": "ethereum",
+          "address": "0x46e6ade9b7b59e151c5bcc877c9b90d50021553a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
           "address": "0x4762e77b8f448f0755eca2b6be6cbcd4db0f28a9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x96f82d791580deef662b8d552f21b4ac14a8cf80",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -361,6 +379,15 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x804739d527b550260f633462dedab13399c3953a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf9eeae6a02c91914f046331bf2dc4c4a9ca7ef51",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -680,7 +707,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -711,7 +738,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -1146,8 +1173,8 @@
       "address": "0x24186a4814a826c84ba127f7f24eac6b06c957d0",
       "name": "DebtToken",
       "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "Aave",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1592,7 +1619,7 @@
       "source_verified": true,
       "verified_by_bytecode": true,
       "verification_bucket": "verified_bytecode_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -1612,6 +1639,77 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xbcfa47099dcce482e90ebd75a53f4bf012ca30ba",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf974d7435e86db32d8a6d021934712ea51f2fb41",
+      "name": "InfiniFiAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "InfiniFiAdapter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf974d7435e86db32d8a6d021934712ea51f2fb41",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa24b17e30e88d8ea582a2c41d0d8c9208efe8416",
+      "name": "InifniFiAdapter",
+      "role": "adapter",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "InifniFiAdapter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa24b17e30e88d8ea582a2c41d0d8c9208efe8416",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe32ad0e671a9ec7cdeec85c6664466efb5548682",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1661,6 +1759,37 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x1807c62f30269746672d0c0f24a645a573604ef4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf6f3fee894abf3bf1d11c1bb50c252df19410559",
+      "name": "LooprFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LooprFactory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf6f3fee894abf3bf1d11c1bb50c252df19410559",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2189,8 +2318,8 @@
       "address": "0x010f0bd6576949e6ac6eea11ed8c535388340e94",
       "name": "OFTAdapter",
       "role": "adapter",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "layer-zero",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -3637,8 +3766,8 @@
       "address": "0x9614bfc8e5350e559a9a02eab4574d5b332fc87f",
       "name": "SwapOrdersFillerUsingUniV2",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -4033,7 +4162,7 @@
       "address": "0x25d80c30884cba6cd6e5d801ac74ca41789f8b2d",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4095,7 +4224,7 @@
       "address": "0x963b5bc11950ab4852e9c60992ec21827ebd0a34",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4127,7 +4256,7 @@
       "name": "VelodromeSlipstreamAdapter",
       "role": "adapter",
       "origin_kind": "upstream",
-      "origin_provider": "velodrome",
+      "origin_provider": "velodrome-finance",
       "product_line": "Hemi",
       "tvl_usd": null,
       "is_proxy": false,
@@ -4158,7 +4287,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -4265,7 +4394,7 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x4762e77b8f448f0755eca2b6be6cbcd4db0f28a9",
+      "address": "0x46e6ade9b7b59e151c5bcc877c9b90d50021553a",
       "name": "Agent",
       "role": "unknown",
       "origin_kind": "native",
@@ -4363,16 +4492,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x24186a4814a826c84ba127f7f24eac6b06c957d0",
-      "name": "DebtToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0x4672edcd34235b3855f2fe8bf1530947c9c8771a",
@@ -4445,9 +4564,29 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xf974d7435e86db32d8a6d021934712ea51f2fb41",
+      "name": "InfiniFiAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x1807c62f30269746672d0c0f24a645a573604ef4",
       "name": "LimitOrderExecutor",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf6f3fee894abf3bf1d11c1bb50c252df19410559",
+      "name": "LooprFactory",
+      "role": "registry",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -4488,16 +4627,6 @@
       "address": "0x186df63e79a7089dbb325567f587ebb5a3743aa6",
       "name": "NativeTokenGateway",
       "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x010f0bd6576949e6ac6eea11ed8c535388340e94",
-      "name": "OFTAdapter",
-      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -4643,16 +4772,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x9614bfc8e5350e559a9a02eab4574d5b332fc87f",
-      "name": "SwapOrdersFillerUsingUniV2",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x9a02ae403d6ae970748b889bb4e36fd89ae7e5eb",
@@ -4734,10 +4853,10 @@
     }
   ],
   "origin_summary": {
-    "native": 49,
-    "upstream": 22,
+    "native": 48,
+    "upstream": 25,
     "standard_library": 7,
-    "needs_review": 1
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},

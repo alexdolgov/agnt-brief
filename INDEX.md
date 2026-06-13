@@ -35,7 +35,7 @@
 | [angles](./angles/) | $441.0K | 4.0% | $7.5 | active | 1 | 40 | 2026-06-10 |
 | [angstrom](./angstrom/) | $11.3M | 7.7% | ? | declining | 3 | 13 | 2026-06-10 |
 | [ankr](./ankr/) | $162.3 | 0.0% | $32.8 | active | 14 | 25 | 2026-06-12 |
-| [antarctic](./antarctic/) | $9.6M | 0.0% | ? | active | 0 | 11 | 2026-06-10 |
+| [antarctic](./antarctic/) | $10.0M | 0.0% | ? | active | 0 | 11 | 2026-06-13 |
 | [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | active | 0 | 3 | 2026-06-12 |
 | [anvil](./anvil/) | $673.0K | 100.0% | ? | declining | 4 | 3 | 2026-06-10 |
 | [anzen-finance](./anzen-finance/) | $671.2K | 35.9% | $10.9K | declining | 5 | 47 | 2026-06-10 |
@@ -107,7 +107,7 @@
 | [bridgers](./bridgers/) | $1.6M | 0.0% | ? | active | 1 | 6 | 2026-06-10 |
 | [brotocol](./brotocol/) | $6.5M | 0.0% | ? | active | 14 | 214 | 2026-06-11 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-06-10 |
-| [btcfi](./btcfi/) | $11.8M | 0.0% | ? | active | 0 | 15 | 2026-06-10 |
+| [btcfi](./btcfi/) | $9.6M | 0.0% | ? | active | 0 | 15 | 2026-06-13 |
 | [btcst](./btcst/) | $263.7M | 0.0% | $263.7M | active | 0 | 64 | 2026-06-10 |
 | [btse](./btse/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [bucket-protocol](./bucket-protocol/) | $65.1M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
@@ -134,7 +134,7 @@
 | [clearpool](./clearpool/) | $17.6K | 7.1% | $17.6K | active | 7 | 63 | 2026-06-12 |
 | [clever](./clever/) | $3.2M | 10.6% | $1.6M | active | 3 | 76 | 2026-06-10 |
 | [coin8](./coin8/) | $53.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [coinsquare](./coinsquare/) | $12.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
+| [coinsquare](./coinsquare/) | $9.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-13 |
 | [coinstore](./coinstore/) | $62.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [coinw](./coinw/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [colend-protocol](./colend-protocol/) | $4.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
@@ -358,7 +358,7 @@
 | [mcdex](./mcdex/) | $1.1M | 8.3% | $1.1M | dead | 4 | 1465 | 2026-06-11 |
 | [mdex](./mdex/) | $235.5K | 85.7% | $20.2K | declining | 3 | 13 | 2026-06-11 |
 | [meeds-finance](./meeds-finance/) | $1.8M | 0.0% | $1.8M | unknown | 0 | 4 | 2026-06-11 |
-| [meld-gold](./meld-gold/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-05-31 |
+| [meld-gold](./meld-gold/) | $9.7M | 0.0% | ? | active | 1 | 1 | 2026-06-13 |
 | [mendi-finance](./mendi-finance/) | $79.1M | 10.7% | $79.1M | dead | 4 | 39 | 2026-06-11 |
 | [mento](./mento/) | $2.3M | 61.1% | $65.0K | declining | 23 | 218 | 2026-06-12 |
 | [merchant-moe](./merchant-moe/) | $37.3M | 50.0% | ? | unknown | 1 | 53 | 2026-05-31 |
@@ -420,7 +420,7 @@
 | [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 1 | 19 | 2026-06-11 |
 | [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
 | [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 1 | 40 | 2026-06-11 |
-| [odyssey-finance](./odyssey-finance/) | $10.2M | 0.0% | ? | active | 0 | 79 | 2026-06-11 |
+| [odyssey-finance](./odyssey-finance/) | $9.2M | 0.0% | ? | active | 0 | 82 | 2026-06-13 |
 | [okcoin](./okcoin/) | $25.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [omnibtc](./omnibtc/) | $2.2M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
 | [onyx](./onyx/) | $384.4M | 0.0% | $384.4M | active | 1 | 17 | 2026-06-12 |

@@ -1,0 +1,17 @@
+{
+  "address": "0xf6f3fee894abf3bf1d11c1bb50c252df19410559",
+  "chain_id": 1,
+  "contract_name": "LooprFactory",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 35,
+  "constructor_arguments": "0000000000000000000000002577507b78c2008ff367261cb6285d44ba5ef2e9000000000000000000000000845adb2c711129d4f3966735ed98a9f09fc4ce57000000000000000000000000ee156d8ea7b96a5524ccc3cf9283ab85e80e9534",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T00:18:49.730Z"
+}

@@ -626,9 +626,14 @@
 | [klaybank](./klaybank/) | $298.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [klaystation](./klaystation/) | $0.0 | 0.0% | ? | declining | 0 | 1 | 2026-06-11 |
 | [klayswap](./klayswap/) | $4.5M | 0.0% | ? | declining | 4 | 22 | 2026-06-11 |
+| [klend](./klend/) | $5.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kleros](./kleros/) | $10.7M | 0.0% | $10.7M | unknown | 0 | 358 | 2026-06-13 |
+| [knightswap](./knightswap/) | $904.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kodiak](./kodiak/) | $29.0M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
 | [kogefarm](./kogefarm/) | $138.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [kokomo-finance](./kokomo-finance/) | $2.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [kolibri](./kolibri/) | $740.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [kongswap](./kongswap/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-06-11 |
 | [kuma-protocol](./kuma-protocol/) | $3.1M | 28.1% | $23.1K | active | 3 | 53 | 2026-06-11 |
 | [kyberswap](./kyberswap/) | $58.3M | 8.8% | $58.3M | declining | 6 | 445 | 2026-06-11 |

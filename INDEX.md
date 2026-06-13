@@ -181,12 +181,16 @@
 | [boba-bridge](./boba-bridge/) | $3.0M | 0.0% | ? | declining | 0 | 53 | 2026-05-31 |
 | [bondappetit](./bondappetit/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bondlink-finance](./bondlink-finance/) | $152.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [boneswap](./boneswap/) | $1.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [bonsai-strike](./bonsai-strike/) | $6.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bonsaidao-ecosystem](./bonsaidao-ecosystem/) | $1.1M | 0.0% | ? | active | 1 | 190 | 2026-06-10 |
 | [bonzo-finance](./bonzo-finance/) | $23.0M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
+| [bookusd](./bookusd/) | $39.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [boringdao](./boringdao/) | $275.7K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [boros](./boros/) | $10.3M | 100.0% | ? | active | 5 | 2 | 2026-06-10 |
 | [botto](./botto/) | $4.1M | 0.0% | ? | active | 3 | 18 | 2026-06-10 |
 | [bounce.tech](./bounce.tech/) | $1.1M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
+| [bouncebit-pre-launch-farm](./bouncebit-pre-launch-farm/) | $0.1 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 9 | 2026-06-12 |
 | [bracket-protocol](./bracket-protocol/) | $622.4M | 17.4% | $619.3M | active | 5 | 58 | 2026-06-10 |
 | [brahma-vaults-(sunset)](./brahma-vaults-(sunset)/) | $22.4K | 0.0% | ? | unknown | 14 | 0 | 2026-06-13 |
@@ -195,6 +199,7 @@
 | [bridge-mutual](./bridge-mutual/) | $56.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bridgers](./bridgers/) | $1.6M | 0.0% | ? | active | 1 | 6 | 2026-06-10 |
 | [bright-union](./bright-union/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [broswap](./broswap/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [brotocol](./brotocol/) | $447.6M | 20.0% | $447.6M | unknown | 14 | 76 | 2026-06-13 |
 | [brownfi](./brownfi/) | $123.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bscstation](./bscstation/) | $1.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |

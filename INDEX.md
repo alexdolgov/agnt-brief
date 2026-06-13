@@ -95,11 +95,16 @@
 | [asseto-cash+](./asseto-cash+/) | $1.4M | 0.0% | ? | declining | 1 | 2 | 2026-06-10 |
 | [astake](./astake/) | $514.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [asymmetry](./asymmetry/) | $37.1M | 0.0% | $37.1M | declining | 0 | 203 | 2026-06-10 |
+| [atlantis-loans](./atlantis-loans/) | $42.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [atlantis](./atlantis/) | $13.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [atlendis](./atlendis/) | $4.3M | 14.3% | $4.3M | active | 2 | 43 | 2026-06-11 |
+| [atoll](./atoll/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [atrium](./atrium/) | $390.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [augmented-finance](./augmented-finance/) | $326.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [augur](./augur/) | $1.7M | 64.1% | ? | active | 7 | 39 | 2026-06-10 |
 | [aura](./aura/) | $107.0M | 19.4% | $68.2M | active | 18 | 497 | 2026-06-10 |
 | [aurigami](./aurigami/) | $819.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [auro-finance](./auro-finance/) | $5.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [aurora-plus](./aurora-plus/) | $2.3M | 33.3% | ? | active | 3 | 31 | 2026-06-10 |
 | [autofarm](./autofarm/) | $5.6M | 0.0% | ? | declining | 1 | 17 | 2026-06-13 |
 | [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 8 | 570 | 2026-06-12 |

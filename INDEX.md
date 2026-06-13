@@ -129,7 +129,12 @@
 | [ball-exchange](./ball-exchange/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bancor](./bancor/) | $48.8M | 23.5% | $43.8M | declining | 4 | 121 | 2026-06-10 |
 | [baptswap](./baptswap/) | $5.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [based-finance](./based-finance/) | $189.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [baseline-protocol](./baseline-protocol/) | $69.3M | 25.0% | ? | active | 8 | 112 | 2026-06-10 |
+| [basemax](./basemax/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [basisos](./basisos/) | $24.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [bass-exchange](./bass-exchange/) | $248.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [bayswap](./bayswap/) | $10.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [beam-dex](./beam-dex/) | $846.8 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [beamswap](./beamswap/) | $26.1K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [beanstalk](./beanstalk/) | $142.5M | 20.4% | $142.5M | declining | 7 | 244 | 2026-06-10 |

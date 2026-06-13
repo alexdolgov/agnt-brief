@@ -1116,6 +1116,7 @@
 | [sphere](./sphere/) | $229.4M | 0.0% | $229.4M | active | 0 | 221 | 2026-06-13 |
 | [spherium](./spherium/) | $0.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [spice-protocol](./spice-protocol/) | $1.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [spiko](./spiko/) | $1.2B | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [spinup](./spinup/) | $406.3K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [spiraldao](./spiraldao/) | $6.4M | 44.0% | ? | dead | 3 | 56 | 2026-05-23 |
 | [spiritswap](./spiritswap/) | $337.6K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
@@ -1123,15 +1124,19 @@
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |
 | [spookyswap](./spookyswap/) | $841.7 | 0.0% | $841.7 | declining | 1 | 136 | 2026-06-11 |
 | [sport.fun](./sport.fun/) | $3.7M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
+| [springx](./springx/) | $23.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [sprinter](./sprinter/) | $940.7K | 100.0% | ? | active | 6 | 4 | 2026-06-11 |
 | [sqd.ai](./sqd.ai/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 28 | 2026-06-12 |
 | [squadswap](./squadswap/) | $13.0M | 63.2% | ? | active | 5 | 214 | 2026-06-11 |
+| [ssap](./ssap/) | $1.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [stable-jack](./stable-jack/) | $76.9M | 0.0% | $76.9M | active | 1 | 249 | 2026-06-11 |
+| [stablecoin-for-impact](./stablecoin-for-impact/) | $20.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [stablecomp](./stablecomp/) | $1.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 1 | 2026-06-13 |
 | [stader](./stader/) | $229.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-06-11 |
 | [stake.link](./stake.link/) | $76.8M | 60.9% | $35.9K | active | 20 | 71 | 2026-06-11 |
+| [stake.ly](./stake.ly/) | $16.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | active | 0 | 198 | 2026-06-12 |
 | [stakingverse](./stakingverse/) | $3.5M | 0.0% | $3.5M | active | 14 | 3 | 2026-06-11 |
 | [standx](./standx/) | $48.3M | 57.1% | ? | declining | 6 | 17 | 2026-06-11 |

@@ -65,17 +65,20 @@
 | [avalaunch](./avalaunch/) | $31.3M | 84.6% | ? | active | 13 | 38 | 2026-06-10 |
 | [avalon-labs](./avalon-labs/) | $550.8M | 0.0% | ? | unknown | 19 | 0 | 2026-06-13 |
 | [avantis](./avantis/) | $196.5M | 68.8% | $150.9M | declining | 3 | 61 | 2026-06-10 |
+| [avely-finance](./avely-finance/) | $45.0K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 3 | 2026-06-12 |
 | [azuro](./azuro/) | $3.1K | 6.6% | $3.1K | active | 3 | 304 | 2026-06-10 |
 | [b-lucky](./b-lucky/) | $2.2M | 0.0% | $2.2M | active | 1 | 16 | 2026-06-10 |
 | [b.protocol](./b.protocol/) | $79.0K | 5.1% | $79.0K | declining | 4 | 162 | 2026-06-10 |
 | [babydogecoin](./babydogecoin/) | $164.9M | 0.0% | $164.9M | declining | 1 | 17 | 2026-06-12 |
 | [babyswap](./babyswap/) | $241.1K | 1.5% | $241.1K | active | 1 | 113 | 2026-06-10 |
+| [backbone-labs](./backbone-labs/) | $232.5K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | active | 0 | 2 | 2026-06-12 |
 | [badger-dao](./badger-dao/) | $396.9 | 21.6% | $396.9 | sunsetting | 8 | 40 | 2026-06-13 |
 | [bakeryswap](./bakeryswap/) | $612.9K | 0.0% | $612.9K | declining | 1 | 98 | 2026-05-24 |
 | [bancor](./bancor/) | $48.8M | 23.5% | $43.8M | declining | 4 | 121 | 2026-06-10 |
 | [baseline-protocol](./baseline-protocol/) | $69.3M | 25.0% | ? | active | 8 | 112 | 2026-06-10 |
+| [beam-dex](./beam-dex/) | $846.8 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [beamswap](./beamswap/) | $26.1K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [beanstalk](./beanstalk/) | $142.5M | 20.4% | $142.5M | declining | 7 | 244 | 2026-06-10 |
 | [bedrock](./bedrock/) | $306.6M | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
@@ -735,6 +738,7 @@
 | [veno-finance](./veno-finance/) | $37.5M | 0.0% | ? | active | 3 | 51 | 2026-06-12 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | active | 2 | 4 | 2026-06-11 |
 | [verio](./verio/) | $7.2M | 0.0% | ? | unknown | 11 | 0 | 2026-06-11 |
+| [verse](./verse/) | $468.3K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [verus-market](./verus-market/) | $6.4M | 0.0% | ? | declining | 0 | 33 | 2026-06-13 |
 | [vesper](./vesper/) | $694.0K | 51.3% | $351.7K | active | 30 | 44 | 2026-06-11 |
 | [vest-markets](./vest-markets/) | $1.7M | 0.0% | ? | declining | 0 | 4 | 2026-06-11 |
@@ -774,6 +778,7 @@
 | [zenlink](./zenlink/) | $5.3M | 0.0% | ? | declining | 1 | 226 | 2026-06-11 |
 | [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-06-11 |
 | [zerolend](./zerolend/) | $352.4M | 9.2% | $331.7M | declining | 9 | 614 | 2026-06-12 |
+| [zharta](./zharta/) | $2.7 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [zircuit-finance](./zircuit-finance/) | $1.5M | 0.0% | $1.5M | active | 0 | 2 | 2026-06-11 |
 | [zircuit-staking](./zircuit-staking/) | $178.4M | 21.1% | $140.4M | declining | 8 | 20 | 2026-06-11 |
 | [zircuit](./zircuit/) | $144.2M | 25.0% | $144.2M | declining | 10 | 17 | 2026-06-11 |

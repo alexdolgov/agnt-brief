@@ -55,6 +55,8 @@
 | [amet-finance](./amet-finance/) | $0.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [amnis-finance](./amnis-finance/) | $11.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
 | [amped-finance](./amped-finance/) | $370.4 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [ampleswap](./ampleswap/) | $16.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [amy-finance](./amy-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [angle](./angle/) | $1.4B | 0.0% | $1.4B | declining | 3 | 547 | 2026-06-11 |
 | [angles](./angles/) | $441.0K | 4.0% | $7.5 | active | 1 | 40 | 2026-06-10 |
 | [angstrom](./angstrom/) | $11.3M | 7.7% | ? | declining | 3 | 13 | 2026-06-10 |
@@ -66,8 +68,11 @@
 | [anzen-finance](./anzen-finance/) | $671.2K | 35.9% | $10.9K | declining | 5 | 47 | 2026-06-10 |
 | [ao-bridge](./ao-bridge/) | $43.0M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
 | [apechain-bridge](./apechain-bridge/) | $138.2M | 0.0% | $138.2M | declining | 0 | 19 | 2026-06-12 |
+| [aperocket](./aperocket/) | $36.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [apex-protocol](./apex-protocol/) | $436.5K | 0.0% | $436.5K | active | 1 | 210 | 2026-06-12 |
 | [api3](./api3/) | $55.2M | 21.4% | $55.2M | active | 6 | 28 | 2026-06-10 |
+| [apollodao](./apollodao/) | $6.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [aptin-finance](./aptin-finance/) | $14.0M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [aqua-protocol](./aqua-protocol/) | $112.3 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [aquabank](./aquabank/) | $850.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 59 | 2026-06-12 |

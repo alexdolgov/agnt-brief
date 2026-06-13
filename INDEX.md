@@ -78,6 +78,7 @@
 | [beamswap](./beamswap/) | $26.1K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [beanstalk](./beanstalk/) | $142.5M | 20.4% | $142.5M | declining | 7 | 244 | 2026-06-10 |
 | [bedrock](./bedrock/) | $306.6M | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
+| [belief-market](./belief-market/) | $35.2 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [belt-finance](./belt-finance/) | $15.3M | 47.5% | $7.1M | declining | 6 | 1331 | 2026-06-10 |
 | [bend](./bend/) | $15.5M | 20.7% | $896.8K | active | 9 | 104 | 2026-06-10 |
 | [benddao](./benddao/) | $7.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-10 |
@@ -418,6 +419,7 @@
 | [mystic-finance](./mystic-finance/) | $5.8M | 0.0% | ? | unknown | 10 | 0 | 2026-06-11 |
 | [nado](./nado/) | $49.3M | 0.0% | ? | active | 0 | 22 | 2026-06-12 |
 | [native](./native/) | $67.6M | 0.0% | $67.6M | active | 0 | 80 | 2026-06-12 |
+| [navi-protocol](./navi-protocol/) | $275.7M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [nawa-protocol](./nawa-protocol/) | $4.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [nbx](./nbx/) | $1.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [near-intents](./near-intents/) | $3.7M | 0.0% | $3.7M | active | 0 | 7 | 2026-06-12 |
@@ -434,6 +436,7 @@
 | [neuralai](./neuralai/) | $1.2M | 0.0% | ? | unknown | 1 | 2 | 2026-06-11 |
 | [neutral-trade](./neutral-trade/) | $18.6M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
 | [nexus-mutual](./nexus-mutual/) | $34.8M | 0.0% | $34.8M | active | 2 | 30 | 2026-06-12 |
+| [nftfi](./nftfi/) | $10.1K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [nftx](./nftx/) | $6.3M | 11.1% | $6.3M | declining | 5 | 184 | 2026-06-11 |
 | [nodedao](./nodedao/) | $33.3M | 38.9% | $33.3M | active | 5 | 18 | 2026-06-11 |
 | [nomiswap](./nomiswap/) | $1.4M | 15.8% | ? | declining | 1 | 47 | 2026-05-24 |
@@ -447,6 +450,7 @@
 | [obeliskbtc](./obeliskbtc/) | $33.2M | 36.8% | $33.2M | declining | 1 | 19 | 2026-06-13 |
 | [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
 | [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 1 | 40 | 2026-06-11 |
+| [odos](./odos/) | ? | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [odyssey-finance](./odyssey-finance/) | $9.2M | 0.0% | ? | active | 0 | 82 | 2026-06-13 |
 | [okcoin](./okcoin/) | $25.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [omnibtc](./omnibtc/) | $2.2M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
@@ -698,6 +702,7 @@
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-06-13 |
 | [usdt0](./usdt0/) | $3.6B | 0.0% | ? | unknown | 20 | 0 | 2026-06-13 |
 | [usx.capital](./usx.capital/) | $763.3K | 0.0% | ? | declining | 1 | 3 | 2026-06-11 |
+| [vaultcraft](./vaultcraft/) | $546.3K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | declining | 0 | 28 | 2026-06-11 |
 | [velodrome](./velodrome/) | $40.2M | 40.4% | ? | active | 6 | 52 | 2026-06-11 |

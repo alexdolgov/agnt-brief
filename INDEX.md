@@ -635,11 +635,16 @@
 | [kolibri](./kolibri/) | $740.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kongswap](./kongswap/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-06-11 |
+| [kryptodex](./kryptodex/) | $669.6 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kuma-protocol](./kuma-protocol/) | $3.1M | 28.1% | $23.1K | active | 3 | 53 | 2026-06-11 |
 | [kyberswap](./kyberswap/) | $58.3M | 8.8% | $58.3M | declining | 6 | 445 | 2026-06-11 |
+| [kyex](./kyex/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kyrios-finance](./kyrios-finance/) | $197.5 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [l2x.pro](./l2x.pro/) | $1.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [laari-finance](./laari-finance/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-06-11 |
+| [lake-protocol](./lake-protocol/) | $44.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [lander](./lander/) | $21.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [landx-finance](./landx-finance/) | $1.8M | 100.0% | ? | active | 1 | 3 | 2026-06-11 |
 | [larix](./larix/) | $1.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [latch](./latch/) | $189.8 | 0.0% | $189.8 | declining | 0 | 1 | 2026-06-11 |

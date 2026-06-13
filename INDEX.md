@@ -492,6 +492,8 @@
 | [gro](./gro/) | $5.0M | 0.0% | $5.0M | declining | 0 | 134 | 2026-06-13 |
 | [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [grvt](./grvt/) | $39.1M | 0.0% | $39.1M | declining | 0 | 12 | 2026-06-12 |
+| [gudchain](./gudchain/) | $75.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [gumball-protocol](./gumball-protocol/) | $248.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [guru-network-dao](./guru-network-dao/) | $2.3M | 0.0% | ? | active | 0 | 54 | 2026-06-10 |
 | [gyroscope-protocol](./gyroscope-protocol/) | $44.6 | 21.3% | ? | declining | 10 | 233 | 2026-06-10 |
 | [h2-finance](./h2-finance/) | $3.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -502,9 +504,12 @@
 | [harbor](./harbor/) | $94.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 10.0% | ? | active | 4 | 127 | 2026-06-10 |
 | [harvest-finance](./harvest-finance/) | $12.9M | 46.4% | ? | declining | 5 | 445 | 2026-06-10 |
+| [harvest-flow](./harvest-flow/) | $524.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hashdao-finance](./hashdao-finance/) | $2.8M | 55.6% | ? | dead | 3 | 50 | 2026-06-10 |
 | [hashkey-global](./hashkey-global/) | $13.4M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
+| [hashking](./hashking/) | $335.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hashport](./hashport/) | $152.6K | 100.0% | ? | dead | 3 | 21 | 2026-06-10 |
+| [hastra](./hastra/) | $402.8M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hegic](./hegic/) | $54.1K | 22.5% | $54.1K | active | 2 | 76 | 2026-06-13 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | active | 1 | 9 | 2026-06-12 |
 | [helix](./helix/) | $1.5M | 0.0% | ? | declining | 0 | 9 | 2026-06-10 |

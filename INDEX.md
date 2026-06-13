@@ -534,7 +534,11 @@
 | [houses-of-rome](./houses-of-rome/) | $0.0 | 0.0% | ? | dead | 0 | 51 | 2026-06-10 |
 | [hskhodlium](./hskhodlium/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [huckleberry](./huckleberry/) | $31.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [humble-defi](./humble-defi/) | $52.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [hundred-finance](./hundred-finance/) | $1.6M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [hurricaneswap](./hurricaneswap/) | $11.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hybra](./hybra/) | $1.8M | 0.0% | ? | active | 0 | 81 | 2026-06-10 |
+| [hyper-finance](./hyper-finance/) | $34.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hyperbeat](./hyperbeat/) | $22.6M | 10.7% | $22.6M | active | 14 | 221 | 2026-06-10 |
 | [hyperdrive-hl](./hyperdrive-hl/) | $2.8M | 0.0% | ? | unknown | 8 | 0 | 2026-06-10 |
 | [hyperion](./hyperion/) | $21.1M | 0.0% | ? | unknown | 5 | 0 | 2026-06-10 |

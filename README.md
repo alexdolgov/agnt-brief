@@ -959,6 +959,7 @@ Each project directory contains:
 | [mountain-protocol](./mountain-protocol/brief.md) | $1.40M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [movegpt](./movegpt/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [moveposition](./moveposition/brief.md) | $7.09M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [mr.-lightspeed-creator-coin](./mr.-lightspeed-creator-coin/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [mu-digital](./mu-digital/brief.md) | $19.42M | ethereum | 12 | 12/12 (100%) | 100.0% | 100.0% (SlowMist) | 1 | fresh | ✅ active | - |
 | [mugenfinance](./mugenfinance/brief.md) | $3.35M | arbitrum | 12 | 10/12 (83%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [mvl-staking](./mvl-staking/brief.md) | $1.10M | ethereum | 49 | 2/49 (4%) | 50.0% | 0.0% (-) | 1 | stale | ❓ unknown | - |
@@ -966,13 +967,17 @@ Each project directory contains:
 | [mystic-finance](./mystic-finance/brief.md) | $5.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [mytrade](./mytrade/brief.md) | $7.63K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [myx-finance](./myx-finance/brief.md) | $986.03K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [nabla-finance](./nabla-finance/brief.md) | $87.98K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [nado](./nado/brief.md) | $49.33M | ink | 22 | 0/22 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [narbet](./narbet/brief.md) | $9.73K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [navi-protocol](./navi-protocol/brief.md) | $275.73M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [nawa-protocol](./nawa-protocol/brief.md) | $4.09M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [nbx](./nbx/brief.md) | $1.82M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [neemo-finance](./neemo-finance/brief.md) | $1.37M | ethereum | 14 | 1/14 (7%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [nemo](./nemo/brief.md) | $76.12K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [nemoswap](./nemoswap/brief.md) | $65.52K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [neo-tokyo](./neo-tokyo/brief.md) | $1.04M | ethereum | 86 | 38/86 (44%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [neony-exchange](./neony-exchange/brief.md) | $412.93K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [neopin](./neopin/brief.md) | $40.20M | ethereum, klaytn, polygon | 104 | 1/104 (1%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [neptune-finance](./neptune-finance/brief.md) | $5.93M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [nest-credit](./nest-credit/brief.md) | $50.51M | 4 | 16 | 6/16 (38%) | 57.1% | 0.0% (-) | 1 | fresh | ✅ active | - |
@@ -1220,5 +1225,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T13:54:14.447Z_
-_Projects: 1208_
+_Generated: 2026-06-13T13:56:37.708Z_
+_Projects: 1213_

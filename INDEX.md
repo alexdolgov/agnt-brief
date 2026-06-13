@@ -775,6 +775,7 @@
 | [mountain-protocol](./mountain-protocol/) | $1.4M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [movegpt](./movegpt/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [moveposition](./moveposition/) | $7.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [mr.-lightspeed-creator-coin](./mr.-lightspeed-creator-coin/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mu-digital](./mu-digital/) | $19.4M | 100.0% | ? | active | 2 | 12 | 2026-06-11 |
 | [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-06-11 |
 | [multichain](./multichain/) | $12.5M | 42.9% | $128.8 | dead | 15 | 17 | 2026-06-11 |
@@ -784,7 +785,9 @@
 | [mystic-finance](./mystic-finance/) | $5.8M | 0.0% | ? | unknown | 10 | 0 | 2026-06-11 |
 | [mytrade](./mytrade/) | $7.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [myx-finance](./myx-finance/) | $986.0K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [nabla-finance](./nabla-finance/) | $88.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [nado](./nado/) | $49.3M | 0.0% | ? | active | 0 | 22 | 2026-06-12 |
+| [narbet](./narbet/) | $9.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [native](./native/) | $67.6M | 0.0% | $67.6M | active | 0 | 80 | 2026-06-12 |
 | [navi-protocol](./navi-protocol/) | $275.7M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [nawa-protocol](./nawa-protocol/) | $4.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
@@ -793,7 +796,9 @@
 | [neemo-finance](./neemo-finance/) | $1.4M | 0.0% | ? | active | 1 | 14 | 2026-06-11 |
 | [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 17 | 2026-06-11 |
 | [nemo](./nemo/) | $76.1K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [nemoswap](./nemoswap/) | $65.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [neo-tokyo](./neo-tokyo/) | $1.0M | 0.0% | ? | unknown | 0 | 86 | 2026-05-31 |
+| [neony-exchange](./neony-exchange/) | $412.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [neopin](./neopin/) | $40.2M | 0.0% | ? | active | 3 | 104 | 2026-06-12 |
 | [neptune-finance](./neptune-finance/) | $5.9M | 0.0% | ? | active | 3 | 2 | 2026-06-13 |
 | [nerona](./nerona/) | $327.0M | 0.0% | $327.0M | declining | 0 | 4 | 2026-06-13 |

@@ -127,8 +127,10 @@
 | [blueshift](./blueshift/) | $4.3M | 0.0% | ? | active | 1 | 23 | 2026-06-10 |
 | [blur](./blur/) | $91.7M | 0.0% | $91.7M | active | 0 | 21 | 2026-06-12 |
 | [bmx](./bmx/) | $305.7K | 0.0% | $305.7K | declining | 0 | 184 | 2026-06-10 |
+| [bnpl-pay](./bnpl-pay/) | $23.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bob-bridge](./bob-bridge/) | $202.9K | 2.6% | $202.9K | active | 9 | 41 | 2026-06-10 |
 | [boba-bridge](./boba-bridge/) | $3.0M | 0.0% | ? | declining | 0 | 53 | 2026-05-31 |
+| [bondappetit](./bondappetit/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bonsaidao-ecosystem](./bonsaidao-ecosystem/) | $1.1M | 0.0% | ? | active | 1 | 190 | 2026-06-10 |
 | [bonzo-finance](./bonzo-finance/) | $23.0M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
 | [boringdao](./boringdao/) | $275.7K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
@@ -140,8 +142,11 @@
 | [brahma-vaults-(sunset)](./brahma-vaults-(sunset)/) | $22.4K | 0.0% | ? | unknown | 14 | 0 | 2026-06-13 |
 | [brasa-finance](./brasa-finance/) | $1.2M | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [brickken](./brickken/) | $42.2M | 20.0% | ? | active | 2 | 31 | 2026-06-12 |
+| [bridge-mutual](./bridge-mutual/) | $56.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bridgers](./bridgers/) | $1.6M | 0.0% | ? | active | 1 | 6 | 2026-06-10 |
+| [bright-union](./bright-union/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [brotocol](./brotocol/) | $447.6M | 20.0% | $447.6M | unknown | 14 | 76 | 2026-06-13 |
+| [brownfi](./brownfi/) | $123.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-06-10 |
 | [btcfi](./btcfi/) | $9.6M | 0.0% | ? | active | 0 | 15 | 2026-06-13 |
 | [btcst](./btcst/) | $263.7M | 0.0% | $263.7M | active | 0 | 64 | 2026-06-10 |

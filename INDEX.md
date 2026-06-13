@@ -1155,8 +1155,13 @@
 | [stobox](./stobox/) | $15.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [stout](./stout/) | $12.6K | 0.0% | $12.6K | declining | 0 | 132 | 2026-06-11 |
 | [strata](./strata/) | $97.2M | 31.6% | $289.6K | active | 7 | 39 | 2026-06-11 |
+| [stratis-liquid-staking](./stratis-liquid-staking/) | $413.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [stratis-mstrax](./stratis-mstrax/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
+| [stream-finance](./stream-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [streamflow](./streamflow/) | $700.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [stride-hyperlane](./stride-hyperlane/) | $0.3 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [strike-finance-perpetuals](./strike-finance-perpetuals/) | $4.9M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [stroom](./stroom/) | $16.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [sturdy](./sturdy/) | $371.2K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [stusdt](./stusdt/) | $1.9M | 0.0% | $1.9M | active | 0 | 12 | 2026-06-12 |
 | [sui-rewards-me](./sui-rewards-me/) | $1.1K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |

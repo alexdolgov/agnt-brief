@@ -542,6 +542,7 @@
 | [p2pb2b](./p2pb2b/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | active | 0 | 3 | 2026-06-11 |
 | [pact](./pact/) | $2.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
+| [pangea-swap](./pangea-swap/) | $6.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pangolin](./pangolin/) | $3.8M | 53.8% | ? | declining | 12 | 163 | 2026-06-11 |
 | [paradex](./paradex/) | $27.3M | 50.0% | ? | declining | 5 | 5 | 2026-06-12 |
 | [paragonsdao](./paragonsdao/) | $6.4M | 50.0% | ? | active | 7 | 2 | 2026-06-11 |
@@ -555,6 +556,7 @@
 | [phoenix](./phoenix/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [phuture](./phuture/) | $30.2K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [pickle](./pickle/) | $2.9M | 2.7% | $2.9M | declining | 4 | 235 | 2026-06-11 |
+| [pika-protocol](./pika-protocol/) | $402.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [piku](./piku/) | $189.3M | 13.3% | $189.3M | active | 3 | 32 | 2026-06-12 |
 | [pionex](./pionex/) | $37.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [planet](./planet/) | $778.3M | 7.7% | $778.3M | declining | 1 | 34 | 2026-06-11 |
@@ -574,6 +576,7 @@
 | [predict-fun](./predict-fun/) | $1.5M | 8.0% | $1.5M | unknown | 9 | 40 | 2026-05-22 |
 | [prime-staking](./prime-staking/) | $4.8M | 0.0% | ? | active | 2 | 10 | 2026-06-11 |
 | [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | declining | 2 | 117 | 2026-06-11 |
+| [prism-protocol](./prism-protocol/) | $2.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [privacy-cash](./privacy-cash/) | $48.1K | 0.0% | $48.1K | active | 10 | 6 | 2026-06-11 |
 | [privacy-pools](./privacy-pools/) | $54.4K | 20.0% | $54.4K | active | 4 | 5 | 2026-06-12 |
 | [probit-global](./probit-global/) | $11.0M | 0.0% | ? | dead | 0 | 3 | 2026-06-12 |
@@ -586,6 +589,7 @@
 | [puzzleswaporg](./puzzleswaporg/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [qidao](./qidao/) | $2.6M | 0.0% | ? | declining | 1 | 298 | 2026-06-11 |
 | [qubit](./qubit/) | $14.7K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
+| [quipuswap](./quipuswap/) | $454.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [radiant](./radiant/) | $1.1M | 31.6% | $515.0K | dead | 94 | 390 | 2026-05-26 |
 | [rage-trade-v1](./rage-trade-v1/) | $6.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [railgun](./railgun/) | $312.5M | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
@@ -626,6 +630,7 @@
 | [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-06-11 |
 | [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 0 | 193 | 2026-06-12 |
 | [saber](./saber/) | $4.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [saddle-finance](./saddle-finance/) | $777.2K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [safe](./safe/) | $64.0M | 0.0% | ? | unknown | 18 | 12 | 2026-06-12 |
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [salvor](./salvor/) | $660.5K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |

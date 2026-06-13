@@ -5,11 +5,11 @@
 - Project: foxify (`foxify`)
 - Website: [https://www.foxify.trade/](https://www.foxify.trade/)
 - Lifecycle: active (Tier 0, 99.8% below peak)
-- Generated: 2026-06-10T23:25:05.719Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-13T22:17:39.644Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ab91
 - Chains: arbitrum, sonic
-- Contract surface: 5 unique implementations (10 raw deployments)
-- DeFi Llama TVL: $3,570,035.38
+- Contract surface: 7 unique implementations (13 raw deployments)
+- DeFi Llama TVL: $3,463,587.22
 - On-chain TVL (included contracts): $72,645.21
 - TVL by chain: Arbitrum $72,645.21
 
@@ -26,9 +26,9 @@ Vaults hold user funds and are managed by Controllers, which set trading rules. 
 - Verified implementations audited: 0/5 (0.0%)
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 5
-- Raw deployments: 10
+- Unverified implementations: 2
+- Unique implementations: 7
+- Raw deployments: 13
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $72,645.21
@@ -50,7 +50,7 @@ Vaults hold user funds and are managed by Controllers, which set trading rules. 
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| Vault | core_logic | arbitrum | 2 deployments: arbitrum [`0x4b91bf...c2193b`](./contracts/arbitrum-42161/0x4b91bfdc97690f67c0ba8dc85050f81ce7c2193b/); arbitrum `0xe5a4f2...83446f` | ⚠️ Unaudited |
+| Vault | core_logic | arbitrum | 3 deployments: arbitrum [`0x4b91bf...c2193b`](./contracts/arbitrum-42161/0x4b91bfdc97690f67c0ba8dc85050f81ce7c2193b/); arbitrum `0x74c6e8...1143e5`; arbitrum `0xe5a4f2...83446f` | ⚠️ Unaudited |
 | Controller | governance | arbitrum | 5 deployments: arbitrum [`0x035941...a24457`](./contracts/arbitrum-42161/0x0359410be114bea68120641cf6f97d5b4ca24457/); arbitrum `0x09523a...056f74`; arbitrum `0x97cf72...20a38b`; arbitrum `0xc82bd5...fa4f08`; arbitrum `0xda299b...b96c1e` | ⚠️ Unaudited |
 | EBFOX | unknown | sonic | [`0xbd87a9...64d0ab`](./contracts/sonic-146/0xbd87a909f9a40fdad6d9be703e89a0383064d0ab/) | ⚠️ Unaudited |
 | Foxify | unknown | sonic | [`0x261dfa...af0eb6`](./contracts/sonic-146/0x261dfa2528dfa19011f10b168c856e02baaf0eb6/) | ⚠️ Unaudited |
@@ -68,11 +68,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| UnnamedContract | unknown | sonic | `0x91fb98...a9287f` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | `0xc23ce5...0b2779` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -95,7 +98,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 5 |
+| native | 7 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

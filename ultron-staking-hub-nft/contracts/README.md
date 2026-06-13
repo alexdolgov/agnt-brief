@@ -1,12 +1,12 @@
 # ultron-staking-hub-nft — Contract Index
 
-150 unique implementations across 5 chains · 162 deployments · 0 audited · 6 unaudited · 144 unverified
+150 unique implementations across 5 chains · 164 deployments · 0 audited · 6 unaudited · 144 unverified
 
 ## operational_periphery (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [FuturaTreasury](./bsc-56/0x1d303f80d711811091674de918b179e3aa368e97/) | bsc | [`0x1d303f...368e97`](./bsc-56/0x1d303f80d711811091674de918b179e3aa368e97/) | ⚠️ Unaudited | Verified |
+| [FuturaTreasury (2 deployments)](./bsc-56/0x1d303f80d711811091674de918b179e3aa368e97/) | bsc | 2 deployments: bsc [`0x1d303f...368e97`](./bsc-56/0x1d303f80d711811091674de918b179e3aa368e97/); bsc `0x28a1b6...242463` | ⚠️ Unaudited | Verified |
 
 ## proxy (1)
 
@@ -24,9 +24,9 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Autoplay](./bsc-56/0x3d3df9a4199e91d0929bba43e0731ae3f0dfbabc/) | bsc | [`0x3d3df9...dfbabc`](./bsc-56/0x3d3df9a4199e91d0929bba43e0731ae3f0dfbabc/) | ⚠️ Unaudited | Verified |
-| [Lottery (2 deployments)](./bsc-56/0x39c626a8d974311bc7e20a0228aeaf1979b4475b/) | bsc | 2 deployments: bsc [`0x39c626...b4475b`](./bsc-56/0x39c626a8d974311bc7e20a0228aeaf1979b4475b/); bsc `0x42e8d6...273ccf` | ⚠️ Unaudited | Verified |
-| [Platform](./bsc-56/0xff3731a75d4427f0c3447ee3129f1ad944f67e94/) | bsc | [`0xff3731...f67e94`](./bsc-56/0xff3731a75d4427f0c3447ee3129f1ad944f67e94/) | ⚠️ Unaudited | Verified |
+| Autoplay | bsc | `0x3d3df9...dfbabc` | ⚠️ Unaudited | Verified |
+| Lottery (2 deployments) | bsc | 2 deployments: bsc `0x39c626...b4475b`; bsc `0x42e8d6...273ccf` | ⚠️ Unaudited | Verified |
+| [Platform (2 deployments)](./bsc-56/0x70d3dd8dda1187aa7d3523de3407cbdfe7acac30/) | bsc | 2 deployments: bsc [`0x70d3dd...acac30`](./bsc-56/0x70d3dd8dda1187aa7d3523de3407cbdfe7acac30/); bsc `0xff3731...f67e94` | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x079418...6cb331` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x6ab2a6...4b1412` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x9dcd76...292e27` | ❓ Unverified | Unverified |

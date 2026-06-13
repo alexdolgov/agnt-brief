@@ -1,6 +1,12 @@
 # sashimiswap — Contract Index
 
-61 unique implementations across 2 chains · 111 deployments · 0 audited · 31 unaudited · 30 unverified
+62 unique implementations across 3 chains · 114 deployments · 0 audited · 32 unaudited · 30 unverified
+
+## adapter (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [UniswapV2Router02](./ethereum-1/0xe4fe6a45f354e845f954cddee6084603cedb9410/) | ethereum | [`0xe4fe6a...db9410`](./ethereum-1/0xe4fe6a45f354e845f954cddee6084603cedb9410/) | ⚠️ Unaudited | Verified |
 
 ## core_logic (3)
 
@@ -44,7 +50,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [UniswapV2Factory](./ethereum-1/0xf028f723ed1d0fe01cc59973c49298aa95c57472/) | ethereum | [`0xf028f7...c57472`](./ethereum-1/0xf028f723ed1d0fe01cc59973c49298aa95c57472/) | ⚠️ Unaudited | Verified |
+| [UniswapV2Factory (2 deployments)](./bsc-56/0x1daed74ed1dd7c9dabbe51361ac90a69d851234d/) | bsc | 2 deployments: ethereum `0xf028f7...c57472`; bsc [`0x1daed7...51234d`](./bsc-56/0x1daed74ed1dd7c9dabbe51361ac90a69d851234d/) | ⚠️ Unaudited | Verified |
 
 ## token (3)
 
@@ -59,7 +65,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BSashimi](./ethereum-1/0xb133ff62a7ad7bb7d9a57177ff2115e6f602e9d2/) | ethereum | [`0xb133ff...02e9d2`](./ethereum-1/0xb133ff62a7ad7bb7d9a57177ff2115e6f602e9d2/) | ⚠️ Unaudited | Verified |
-| [Comptroller (3 deployments)](./ethereum-1/0x8d7e38bce4363577bec63fd268557d3b08f4aa2b/) | ethereum | 3 deployments: ethereum [`0x8d7e38...f4aa2b`](./ethereum-1/0x8d7e38bce4363577bec63fd268557d3b08f4aa2b/); ethereum `0xa1a7a9...ba8c13`; ethereum `0xb5d53e...32d770` | ⚠️ Unaudited | Verified |
+| [Comptroller (4 deployments)](./bsc-56/0x88fef82fdf75e32e4bc0e662d67cfcef4838f026/) | bsc | 4 deployments: ethereum `0x8d7e38...f4aa2b`; ethereum `0xa1a7a9...ba8c13`; ethereum `0xb5d53e...32d770`; bsc [`0x88fef8...38f026`](./bsc-56/0x88fef82fdf75e32e4bc0e662d67cfcef4838f026/) | ⚠️ Unaudited | Verified |
 | [CrossChain (3 deployments)](./ethereum-1/0xa73f042dd65be0d0b01960c144bf89f355951a07/) | ethereum | 3 deployments: ethereum [`0xa73f04...951a07`](./ethereum-1/0xa73f042dd65be0d0b01960c144bf89f355951a07/); ethereum `0xdba694...9d95a0`; ethereum `0xf8c227...b1c1d3` | ⚠️ Unaudited | Verified |
 | [Dipper](./ethereum-1/0x786448439d9401e0a8427acf7ca66a5114eb2368/) | ethereum | [`0x786448...eb2368`](./ethereum-1/0x786448439d9401e0a8427acf7ca66a5114eb2368/) | ⚠️ Unaudited | Verified |
 | [Exchange (3 deployments)](./ethereum-1/0x7eaeba417967614c08cd1f406909cdcde65f10f5/) | ethereum | 3 deployments: ethereum [`0x7eaeba...5f10f5`](./ethereum-1/0x7eaeba417967614c08cd1f406909cdcde65f10f5/); ethereum `0x89ea01...136d04`; ethereum `0xd06f07...82f365` | ⚠️ Unaudited | Verified |

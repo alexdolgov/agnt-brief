@@ -1,0 +1,18 @@
+{
+  "address": "0x3b960e47784150f5a63777201ee2b15253d713e8",
+  "chain_id": 1,
+  "contract_name": "CrabStrategyV2",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "AGPL-3.0-only, GPL-2.0-or-later, GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 53,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T22:23:02.267Z"
+}

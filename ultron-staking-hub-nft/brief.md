@@ -5,11 +5,11 @@
 - Project: Ultron Staking Hub NFT (`ultron-staking-hub-nft`)
 - Website: [https://ultron.foundation/technology#staking-hub](https://ultron.foundation/technology#staking-hub)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T03:46:02.983Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
+- Generated: 2026-06-13T22:21:15.924Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ab91
 - Chains: avalanche, bsc, ethereum, fantom, polygon
-- Contract surface: 150 unique implementations (162 raw deployments)
-- DeFi Llama TVL: $7,090,109.60
+- Contract surface: 150 unique implementations (164 raw deployments)
+- DeFi Llama TVL: $2,996,244.73
 - On-chain TVL (included contracts): $43,458.79
 - TVL by chain: Bsc $38,083.88 | Ethereum $5,374.03 | Avalanche $0.87 | Polygon $0.01
 
@@ -28,7 +28,7 @@ The ULX token family on other networks serves as the reward and staking token fo
 - Verified by bytecode match: 0
 - Unverified implementations: 144
 - Unique implementations: 150
-- Raw deployments: 162
+- Raw deployments: 164
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $43,458.79
@@ -53,9 +53,9 @@ The ULX token family on other networks serves as the reward and staking token fo
 | ERC20Custom | token | ethereum | 4 deployments: ethereum [`0x5aa158...4a636f`](./contracts/ethereum-1/0x5aa158404fed6b4730c13f49d3a7f820e14a636f/); bsc `0xd983ab...43f810`; polygon `0xfa5d5d...e3d948`; avalanche `0xc685e8...c404ef` | ⚠️ Unaudited |
 | Autoplay | unknown | bsc | [`0x3d3df9...dfbabc`](./contracts/bsc-56/0x3d3df9a4199e91d0929bba43e0731ae3f0dfbabc/) | ⚠️ Unaudited |
 | ERC1967Proxy | proxy | bsc | 9 deployments: bsc [`0x0553d0...701a72`](./contracts/bsc-56/0x0553d0a9a6b2740dc512535bd6af8ced7f701a72/); bsc `0x0ed930...f238b6`; bsc `0x659979...a6dd2f`; bsc `0x6759a8...c15ac5`; bsc `0x77b796...34a651`; bsc `0x9445fa...96f1b1`; bsc `0xaab8e6...e5d096`; bsc `0xc7bd33...e5bc47`; bsc `0xd60250...ed12c1` | ⚠️ Unaudited |
-| FuturaTreasury | operational_periphery | bsc | [`0x1d303f...368e97`](./contracts/bsc-56/0x1d303f80d711811091674de918b179e3aa368e97/) | ⚠️ Unaudited |
+| FuturaTreasury | operational_periphery | bsc | 2 deployments: bsc [`0x1d303f...368e97`](./contracts/bsc-56/0x1d303f80d711811091674de918b179e3aa368e97/); bsc `0x28a1b6...242463` | ⚠️ Unaudited |
 | Lottery | unknown | bsc | 2 deployments: bsc [`0x39c626...b4475b`](./contracts/bsc-56/0x39c626a8d974311bc7e20a0228aeaf1979b4475b/); bsc `0x42e8d6...273ccf` | ⚠️ Unaudited |
-| Platform | unknown | bsc | [`0xff3731...f67e94`](./contracts/bsc-56/0xff3731a75d4427f0c3447ee3129f1ad944f67e94/) | ⚠️ Unaudited |
+| Platform | unknown | bsc | 2 deployments: bsc [`0x70d3dd...acac30`](./contracts/bsc-56/0x70d3dd8dda1187aa7d3523de3407cbdfe7acac30/); bsc `0xff3731...f67e94` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -231,15 +231,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x5aa158...4a636f`](./contracts/ethereum-1/0x5aa158404fed6b4730c13f49d3a7f820e14a636f/) | ERC20Custom | token | $43,458.79 | Verified native implementation with $43,458.79 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x70d3dd...acac30`](./contracts/bsc-56/0x70d3dd8dda1187aa7d3523de3407cbdfe7acac30/) | Platform | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
-| upstream | 0 |
-| standard_library | 5 |
+| native | 1 |
+| upstream | 2 |
+| standard_library | 4 |
 | needs_review | 143 |
 
 ## Scope Matching Notes

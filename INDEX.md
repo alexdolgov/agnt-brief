@@ -435,7 +435,7 @@
 | [forgeyields](./forgeyields/) | $1.3M | 0.0% | ? | active | 2 | 1 | 2026-06-11 |
 | [fortifi](./fortifi/) | $349.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [four.meme](./four.meme/) | $4.6M | 0.0% | ? | active | 1 | 5 | 2026-06-13 |
-| [foxify](./foxify/) | $72.6K | 0.0% | $72.6K | active | 0 | 5 | 2026-06-10 |
+| [foxify](./foxify/) | $72.6K | 0.0% | $72.6K | active | 0 | 7 | 2026-06-13 |
 | [fractal-protocol](./fractal-protocol/) | $10.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [frankencoin](./frankencoin/) | $70.0M | 80.0% | ? | active | 5 | 5 | 2026-06-10 |
 | [freebie-life-finance](./freebie-life-finance/) | $32.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -465,7 +465,7 @@
 | [gimo](./gimo/) | $8.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [gin-finance](./gin-finance/) | $8.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [giveth](./giveth/) | $115.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 0 | 16 | 2026-06-10 |
+| [giza](./giza/) | $159.2M | 0.0% | $159.2M | declining | 0 | 25 | 2026-06-13 |
 | [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 0 | 6 | 2026-06-12 |
 | [glitter-finance](./glitter-finance/) | $13.0 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [glori-finance](./glori-finance/) | $42.1 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -859,7 +859,7 @@
 | [opensea](./opensea/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [opensky-finance](./opensky-finance/) | $15.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-06-11 |
-| [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | declining | 0 | 103 | 2026-06-11 |
+| [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | declining | 0 | 105 | 2026-06-13 |
 | [orangex](./orangex/) | $33.7M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
 | [orbit-bridge](./orbit-bridge/) | $829.9K | 0.0% | $829.9K | active | 1 | 24 | 2026-06-12 |
 | [orbiter-one](./orbiter-one/) | $77.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -1033,7 +1033,7 @@
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [salvor](./salvor/) | $660.5K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [sanctum](./sanctum/) | $1.2B | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-06-11 |
+| [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 62 | 2026-06-13 |
 | [satlayer](./satlayer/) | $289.5M | 4.5% | $287.2M | active | 12 | 311 | 2026-06-11 |
 | [satori-finance](./satori-finance/) | $40.9K | 0.0% | $40.9K | active | 1 | 40 | 2026-06-13 |
 | [satoshi-perps](./satoshi-perps/) | $4.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1281,7 +1281,7 @@
 | [u235](./u235/) | $4.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [ufarm-digital](./ufarm-digital/) | $507.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [ultrayield](./ultrayield/) | $46.5M | 0.0% | $46.5M | declining | 0 | 343 | 2026-06-12 |
-| [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | active | 0 | 150 | 2026-06-11 |
+| [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | active | 0 | 150 | 2026-06-13 |
 | [umee](./umee/) | $2.5M | 0.0% | ? | declining | 7 | 1 | 2026-06-11 |
 | [unchain-x](./unchain-x/) | $35.1M | 9.1% | ? | active | 2 | 12 | 2026-06-12 |
 | [unclesam-protocol](./unclesam-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

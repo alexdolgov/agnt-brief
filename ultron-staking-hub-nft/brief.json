@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ultron-staking-hub-nft",
-  "generated_at": "2026-06-11T03:46:02.983Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
+  "generated_at": "2026-06-13T22:21:15.924Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-ab91",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ultron-staking-hub-nft",
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 150,
-    "total_addresses": 162,
+    "total_addresses": 164,
     "unique_implementations": 150,
-    "total_deployments": 162,
+    "total_deployments": 164,
     "audited_contracts": 0,
     "unaudited_contracts": 6,
     "contracts_verified_audited": 0,
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 7090109.59652,
+    "dl_tvl_usd": 2996244.72808,
     "tvl_usd": 43458.78759563767,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -85,7 +85,7 @@
       "address": "0x5aa158404fed6b4730c13f49d3a7f820e14a636f",
       "name": "ERC20Custom",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "upstream",
       "origin_provider": null,
       "product_line": "ULX token ‍ on other networks",
       "tvl_usd": 43458.78759563767,
@@ -293,6 +293,15 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x28a1b6cceacd66ed112ca94cb577646db0242463",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -345,17 +354,26 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0xff3731a75d4427f0c3447ee3129f1ad944f67e94",
+      "address": "0x70d3dd8dda1187aa7d3523de3407cbdfe7acac30",
       "name": "Platform",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": true,
+      "is_proxy": false,
       "impl_address": "0x70d3dd8dda1187aa7d3523de3407cbdfe7acac30",
       "impl_name": "Platform",
       "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x70d3dd8dda1187aa7d3523de3407cbdfe7acac30",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 56,
           "chain_name": "bsc",
@@ -371,7 +389,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -4719,7 +4737,7 @@
       "address": "0x8867f422cd9cf0c66ba71d22bc8edc641e91949d",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "upstream",
       "origin_provider": null,
       "product_line": "ULX token ‍ on other networks",
       "tvl_usd": null,
@@ -4842,20 +4860,20 @@
   "auditor_coverage": [],
   "coverage_gaps": [
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5aa158404fed6b4730c13f49d3a7f820e14a636f",
-      "name": "ERC20Custom",
-      "role": "token",
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x70d3dd8dda1187aa7d3523de3407cbdfe7acac30",
+      "name": "Platform",
+      "role": "unknown",
       "origin_kind": "native",
-      "tvl_usd": 43458.78759563767,
-      "risk_note": "Verified native implementation with $43,458.79 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 2,
-    "upstream": 0,
-    "standard_library": 5,
+    "native": 1,
+    "upstream": 2,
+    "standard_library": 4,
     "needs_review": 143
   },
   "scope_matching_notes": {

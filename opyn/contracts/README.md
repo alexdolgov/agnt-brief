@@ -1,12 +1,14 @@
 # opyn — Contract Index
 
-103 unique implementations across 2 chains · 200 deployments · 0 audited · 33 unaudited · 70 unverified
+105 unique implementations across 3 chains · 203 deployments · 0 audited · 35 unaudited · 70 unverified
 
-## core_logic (8)
+## core_logic (10)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [MarginPool (9 deployments)](./avalanche-43114/0x06aa7f18b263c67a04fc890a2166a4b54bf8e5b0/) | avalanche | 9 deployments: ethereum `0x0cb5bd...ddf680`; ethereum `0x593480...56c6ef`; avalanche [`0x06aa7f...f8e5b0`](./avalanche-43114/0x06aa7f18b263c67a04fc890a2166a4b54bf8e5b0/); avalanche `0x527514...66d50e`; avalanche `0x5b4289...c5708b`; avalanche `0x9c7918...48017a`; avalanche `0xb628d6...b15024`; avalanche `0xccf662...4fdb9d`; avalanche `0xfe9c85...f5591f` | ⚠️ Unaudited | Verified |
+| [CrabStrategy](./ethereum-1/0xf205ad80bb86ac92247638914265887a8baa437d/) | ethereum | [`0xf205ad...aa437d`](./ethereum-1/0xf205ad80bb86ac92247638914265887a8baa437d/) | ⚠️ Unaudited | Verified |
+| [CrabStrategyV2](./ethereum-1/0x3b960e47784150f5a63777201ee2b15253d713e8/) | ethereum | [`0x3b960e...d713e8`](./ethereum-1/0x3b960e47784150f5a63777201ee2b15253d713e8/) | ⚠️ Unaudited | Verified |
+| [MarginPool (10 deployments)](./avalanche-43114/0x06aa7f18b263c67a04fc890a2166a4b54bf8e5b0/) | avalanche | 10 deployments: ethereum `0x0cb5bd...ddf680`; ethereum `0x593480...56c6ef`; polygon `0x30ae5d...afa56d`; avalanche [`0x06aa7f...f8e5b0`](./avalanche-43114/0x06aa7f18b263c67a04fc890a2166a4b54bf8e5b0/); avalanche `0x527514...66d50e`; avalanche `0x5b4289...c5708b`; avalanche `0x9c7918...48017a`; avalanche `0xb628d6...b15024`; avalanche `0xccf662...4fdb9d`; avalanche `0xfe9c85...f5591f` | ⚠️ Unaudited | Verified |
 | [MarginVault (3 deployments)](./avalanche-43114/0x8b5685586f43c07aa0f911bb5d5db8b56252858a/) | avalanche | 3 deployments: ethereum `0x8ba5e7...1850ed`; avalanche [`0x8b5685...52858a`](./avalanche-43114/0x8b5685586f43c07aa0f911bb5d5db8b56252858a/); avalanche `0x9b011c...88912f` | ⚠️ Unaudited | Verified |
 | RibbonDeltaVault | avalanche | `0x9d725c...b52b13` | ⚠️ Unaudited | Verified |
 | [RibbonThetaVault (7 deployments)](./avalanche-43114/0x0f403289ed880a2edb21cfc6927d5950c6d54684/) | avalanche | 7 deployments: avalanche [`0x0f4032...d54684`](./avalanche-43114/0x0f403289ed880a2edb21cfc6927d5950c6d54684/); avalanche `0x10b87d...0cd00c`; avalanche `0x16b08b...8f588b`; avalanche `0x243dd8...cb3ffb`; avalanche `0xb7ec3b...e4f480`; avalanche `0xd00a29...98fa65`; avalanche `0xdcfd14...5b926e` | ⚠️ Unaudited | Verified |

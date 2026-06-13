@@ -7,11 +7,11 @@
 - Project: Opyn (`opyn`)
 - Website: [https://www.opyn.co](https://www.opyn.co)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-11T01:35:12.849Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
-- Chains: avalanche, ethereum
-- Contract surface: 103 unique implementations (200 raw deployments)
-- DeFi Llama TVL: $2,020,344.00
+- Generated: 2026-06-13T22:23:00.050Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ab91
+- Chains: avalanche, ethereum, polygon
+- Contract surface: 105 unique implementations (203 raw deployments)
+- DeFi Llama TVL: $1,601,821.00
 - On-chain TVL (included contracts): $1,022,254.47
 - TVL by chain: Ethereum $1,022,249.03 | Avalanche $5.44
 
@@ -25,12 +25,12 @@ Opyn Gamma and Squeeth share infrastructure through the Controller contract, whi
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/33 (0.0%)
-- Verified + Unaudited implementations: 33
+- Verified implementations audited: 0/35 (0.0%)
+- Verified + Unaudited implementations: 35
 - Verified by bytecode match: 0
 - Unverified implementations: 70
-- Unique implementations: 103
-- Raw deployments: 200
+- Unique implementations: 105
+- Raw deployments: 203
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $1,022,254.47
@@ -49,13 +49,15 @@ Opyn Gamma and Squeeth share infrastructure through the Controller contract, whi
 
 - None
 
-### ⚠️ Verified + Unaudited (33)
+### ⚠️ Verified + Unaudited (35)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| MarginPool | core_logic | avalanche | 9 deployments: ethereum `0x0cb5bd...ddf680`; ethereum `0x593480...56c6ef`; avalanche [`0x06aa7f...f8e5b0`](./contracts/avalanche-43114/0x06aa7f18b263c67a04fc890a2166a4b54bf8e5b0/); avalanche `0x527514...66d50e`; avalanche `0x5b4289...c5708b`; avalanche `0x9c7918...48017a`; avalanche `0xb628d6...b15024`; avalanche `0xccf662...4fdb9d`; avalanche `0xfe9c85...f5591f` | ⚠️ Unaudited |
+| MarginPool | core_logic | avalanche | 10 deployments: ethereum `0x0cb5bd...ddf680`; ethereum `0x593480...56c6ef`; polygon `0x30ae5d...afa56d`; avalanche [`0x06aa7f...f8e5b0`](./contracts/avalanche-43114/0x06aa7f18b263c67a04fc890a2166a4b54bf8e5b0/); avalanche `0x527514...66d50e`; avalanche `0x5b4289...c5708b`; avalanche `0x9c7918...48017a`; avalanche `0xb628d6...b15024`; avalanche `0xccf662...4fdb9d`; avalanche `0xfe9c85...f5591f` | ⚠️ Unaudited |
 | UniswapV3Pool | core_logic | ethereum | [`0x82c427...f0d29c`](./contracts/ethereum-1/0x82c427adfdf2d245ec51d8046b41c4ee87f0d29c/) | ⚠️ Unaudited |
 | RibbonThetaVaultWithSwap | core_logic | avalanche | 3 deployments: avalanche [`0x6bf686...9a9fb3`](./contracts/avalanche-43114/0x6bf686d99a4ce17798c45d09c21181fac29a9fb3/); avalanche `0x98d031...a87787`; avalanche `0x9dd6be...a3e3a3` | ⚠️ Unaudited |
+| CrabStrategy | core_logic | ethereum | [`0xf205ad...aa437d`](./contracts/ethereum-1/0xf205ad80bb86ac92247638914265887a8baa437d/) | ⚠️ Unaudited |
+| CrabStrategyV2 | core_logic | ethereum | [`0x3b960e...d713e8`](./contracts/ethereum-1/0x3b960e47784150f5a63777201ee2b15253d713e8/) | ⚠️ Unaudited |
 | ABDKMath64x64 | unknown | ethereum | 2 deployments: ethereum [`0x21a8d1...be0f32`](./contracts/ethereum-1/0x21a8d15322c257abd2b22a56edde758398be0f32/); ethereum `0x64187a...a493d5` | ⚠️ Unaudited |
 | AddressBook | unknown | ethereum | 11 deployments: ethereum [`0x1e31f2...15cbe4`](./contracts/ethereum-1/0x1e31f2dcbad4dc572004eae6355fb18f9615cbe4/); ethereum `0x57ade7...5fbeaf`; avalanche `0x27d60b...5ac87d`; avalanche `0x3ab3ff...cba7b6`; avalanche `0x58d6bd...e40854`; avalanche `0x5a2e87...94e9a6`; avalanche `0x63e48a...be7310`; avalanche `0x8b5bff...7aa0eb`; avalanche `0xac289a...481ed4`; avalanche `0xbca124...110510`; avalanche `0xef3b91...4ee698` | ⚠️ Unaudited |
 | AdminUpgradeabilityProxy | unknown | avalanche | 6 deployments: avalanche [`0x1e5341...fbdb5c`](./contracts/avalanche-43114/0x1e5341cb798864e2f979d4679de35646d9fbdb5c/); avalanche `0x4375e9...4dc234`; avalanche `0x62e04b...bc05e4`; avalanche `0xabd2a9...f567dc`; avalanche `0xafe24b...f3b1c7`; avalanche `0xee5b96...94785c` | ⚠️ Unaudited |
@@ -188,6 +190,8 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | avalanche | [`0x06aa7f...f8e5b0`](./contracts/avalanche-43114/0x06aa7f18b263c67a04fc890a2166a4b54bf8e5b0/) | MarginPool | core_logic | $917,946.48 | Verified native implementation with $917,946.48 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf205ad...aa437d`](./contracts/ethereum-1/0xf205ad80bb86ac92247638914265887a8baa437d/) | CrabStrategy | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3b960e...d713e8`](./contracts/ethereum-1/0x3b960e47784150f5a63777201ee2b15253d713e8/) | CrabStrategyV2 | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1e31f2...15cbe4`](./contracts/ethereum-1/0x1e31f2dcbad4dc572004eae6355fb18f9615cbe4/) | AddressBook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x5ae9b3...8e0df8`](./contracts/avalanche-43114/0x5ae9b340a98085d0fc25ae98a5eb704ba08e0df8/) | AllowListOffChainManaged | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x02b70a...fc0e18`](./contracts/avalanche-43114/0x02b70ab8fd23f95e0cd8f8ea604415eb7cfc0e18/) | Controller | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -217,10 +221,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 43 |
+| native | 53 |
 | upstream | 2 |
 | standard_library | 2 |
-| needs_review | 56 |
+| needs_review | 48 |
 
 ## Scope Matching Notes
 

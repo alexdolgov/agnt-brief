@@ -7,11 +7,11 @@
 - Project: SashimiSwap (`sashimiswap`)
 - Website: [https://sashimi.cool/home/swap](https://sashimi.cool/home/swap)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-11T02:32:30.723Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
-- Chains: ethereum, heco
-- Contract surface: 61 unique implementations (111 raw deployments)
-- DeFi Llama TVL: $4,985,528.24
+- Generated: 2026-06-13T22:20:43.863Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ab91
+- Chains: bsc, ethereum, heco
+- Contract surface: 62 unique implementations (114 raw deployments)
+- DeFi Llama TVL: $4,560,827.06
 - On-chain TVL (included contracts): $1,441,923.23
 - TVL by chain: Ethereum $1,441,923.23
 
@@ -25,12 +25,12 @@ The SashimiToken serves as the central governance and incentive token, interacti
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/31 (0.0%)
-- Verified + Unaudited implementations: 31
+- Verified implementations audited: 0/32 (0.0%)
+- Verified + Unaudited implementations: 32
 - Verified by bytecode match: 0
 - Unverified implementations: 30
-- Unique implementations: 61
-- Raw deployments: 111
+- Unique implementations: 62
+- Raw deployments: 114
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $1,441,923.23
@@ -49,7 +49,7 @@ The SashimiToken serves as the central governance and incentive token, interacti
 
 - None
 
-### ⚠️ Verified + Unaudited (31)
+### ⚠️ Verified + Unaudited (32)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -58,7 +58,7 @@ The SashimiToken serves as the central governance and incentive token, interacti
 | SashimiLendingVaultProvider | core_logic | ethereum | 7 deployments: ethereum [`0x194402...dcdfcb`](./contracts/ethereum-1/0x194402bc8adcc11a77873996361efe40e9dcdfcb/); ethereum `0x206d84...b60fcc`; ethereum `0x33a057...5e72cf`; ethereum `0x7bc801...0bce2b`; ethereum `0x7cf056...d8b942`; ethereum `0xd3d3fc...f891be`; ethereum `0xfdedb3...6cf2f4` | ⚠️ Unaudited |
 | AdminUpgradeabilityProxy | proxy | ethereum | [`0x24efe6...72b364`](./contracts/ethereum-1/0x24efe6b87bf1bfe9ea2ccb5a9d0a959c7172b364/) | ⚠️ Unaudited |
 | BSashimi | unknown | ethereum | [`0xb133ff...02e9d2`](./contracts/ethereum-1/0xb133ff62a7ad7bb7d9a57177ff2115e6f602e9d2/) | ⚠️ Unaudited |
-| Comptroller | unknown | ethereum | 3 deployments: ethereum [`0x8d7e38...f4aa2b`](./contracts/ethereum-1/0x8d7e38bce4363577bec63fd268557d3b08f4aa2b/); ethereum `0xa1a7a9...ba8c13`; ethereum `0xb5d53e...32d770` | ⚠️ Unaudited |
+| Comptroller | unknown | bsc | 4 deployments: ethereum `0x8d7e38...f4aa2b`; ethereum `0xa1a7a9...ba8c13`; ethereum `0xb5d53e...32d770`; bsc [`0x88fef8...38f026`](./contracts/bsc-56/0x88fef82fdf75e32e4bc0e662d67cfcef4838f026/) | ⚠️ Unaudited |
 | CrossChain | unknown | ethereum | 3 deployments: ethereum [`0xa73f04...951a07`](./contracts/ethereum-1/0xa73f042dd65be0d0b01960c144bf89f355951a07/); ethereum `0xdba694...9d95a0`; ethereum `0xf8c227...b1c1d3` | ⚠️ Unaudited |
 | DAIInterestRateModelV3 | operational_periphery | ethereum | [`0x6d1d14...234b19`](./contracts/ethereum-1/0x6d1d148330e2678b27d8cd6b4c82f7cb66234b19/) | ⚠️ Unaudited |
 | Dipper | unknown | ethereum | [`0x786448...eb2368`](./contracts/ethereum-1/0x786448439d9401e0a8427acf7ca66a5114eb2368/) | ⚠️ Unaudited |
@@ -82,7 +82,8 @@ The SashimiToken serves as the central governance and incentive token, interacti
 | SLEther | unknown | ethereum | [`0xc597f8...ca5d82`](./contracts/ethereum-1/0xc597f86424eeb6599ea40f999dbb739e3aca5d82/) | ⚠️ Unaudited |
 | StrategyUniStakingReward | core_logic | ethereum | 4 deployments: ethereum [`0x52632d...d14f16`](./contracts/ethereum-1/0x52632d06ea29614bb2574c462f280feb23d14f16/); ethereum `0x53fbf4...df34c1`; ethereum `0x74e417...36f54e`; ethereum `0xa7feea...500e61` | ⚠️ Unaudited |
 | Timelock | governance | ethereum | 3 deployments: ethereum [`0x84ee34...0224f3`](./contracts/ethereum-1/0x84ee348617563944ffd4a23843e086a7dc0224f3/); ethereum `0xea97a7...e5b0ca`; ethereum `0xf559a3...7f076f` | ⚠️ Unaudited |
-| UniswapV2Factory | registry | ethereum | [`0xf028f7...c57472`](./contracts/ethereum-1/0xf028f723ed1d0fe01cc59973c49298aa95c57472/) | ⚠️ Unaudited |
+| UniswapV2Factory | registry | bsc | 2 deployments: ethereum `0xf028f7...c57472`; bsc [`0x1daed7...51234d`](./contracts/bsc-56/0x1daed74ed1dd7c9dabbe51361ac90a69d851234d/) | ⚠️ Unaudited |
+| UniswapV2Router02 | adapter | ethereum | [`0xe4fe6a...db9410`](./contracts/ethereum-1/0xe4fe6a45f354e845f954cddee6084603cedb9410/) | ⚠️ Unaudited |
 | WhitePaperInterestRateModel | operational_periphery | ethereum | 2 deployments: ethereum [`0x693f49...2c35c3`](./contracts/ethereum-1/0x693f49cfc4293257c280f7fd64395298b62c35c3/); ethereum `0x9e2806...e43d7f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -150,7 +151,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xc28e27...b464c2`](./contracts/ethereum-1/0xc28e27870558cf22add83540d2126da2e4b464c2/) | SashimiToken | token | $67,794.64 | Verified native implementation with $67,794.64 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x194402...dcdfcb`](./contracts/ethereum-1/0x194402bc8adcc11a77873996361efe40e9dcdfcb/) | SashimiLendingVaultProvider | core_logic | $32.64 | Verified native implementation with $32.64 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb133ff...02e9d2`](./contracts/ethereum-1/0xb133ff62a7ad7bb7d9a57177ff2115e6f602e9d2/) | BSashimi | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8d7e38...f4aa2b`](./contracts/ethereum-1/0x8d7e38bce4363577bec63fd268557d3b08f4aa2b/) | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa73f04...951a07`](./contracts/ethereum-1/0xa73f042dd65be0d0b01960c144bf89f355951a07/) | CrossChain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x786448...eb2368`](./contracts/ethereum-1/0x786448439d9401e0a8427acf7ca66a5114eb2368/) | Dipper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7eaeba...5f10f5`](./contracts/ethereum-1/0x7eaeba417967614c08cd1f406909cdcde65f10f5/) | Exchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -167,17 +167,16 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x3884ea...a944ae`](./contracts/ethereum-1/0x3884eab512bb0475100997271ec83163daa944ae/) | SashimiPlateController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x03012a...bd203b`](./contracts/ethereum-1/0x03012a6f9bb5bff61997aee59477a893debd203b/) | ShardToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x291823...313ea4`](./contracts/ethereum-1/0x2918231f262f764dbb5753a95bd7684fdb313ea4/) | SLDaiDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc597f8...ca5d82`](./contracts/ethereum-1/0xc597f86424eeb6599ea40f999dbb739e3aca5d82/) | SLEther | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x52632d...d14f16`](./contracts/ethereum-1/0x52632d06ea29614bb2574c462f280feb23d14f16/) | StrategyUniStakingReward | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 29 |
-| upstream | 3 |
-| standard_library | 4 |
-| needs_review | 25 |
+| native | 21 |
+| upstream | 7 |
+| standard_library | 3 |
+| needs_review | 31 |
 
 ## Scope Matching Notes
 

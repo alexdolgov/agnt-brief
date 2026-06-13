@@ -1,0 +1,1126 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract Auth",
+        "name": "auth",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32[]",
+            "name": "withdrawalKeys",
+            "type": "bytes32[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "gmAmounts",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "markets",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "gmiAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "usdcReceived",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "ethReceived",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "bool",
+            "name": "fulfilled",
+            "type": "bool"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct LibCycle.GMIBurnRequest",
+        "name": "_mintRequest",
+        "type": "tuple"
+      }
+    ],
+    "name": "BurnRequest",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "key",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes",
+        "name": "error",
+        "type": "bytes"
+      }
+    ],
+    "name": "CallbackExecutionError",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "key",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "sender",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "callback",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isDeposit",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "requestBlock",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct AggregateVaultStorage.OCRequest",
+        "name": "request",
+        "type": "tuple"
+      }
+    ],
+    "name": "CallbackExecutionSuccess",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "CloseRebalance",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "totalVaultFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "performanceFeeInAsset",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "managementFeeInAsset",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timelockYieldMintAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "assetVault",
+        "type": "address"
+      }
+    ],
+    "name": "CollectVaultFees",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "key",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      }
+    ],
+    "name": "DepositRequest",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "key",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isDeposit",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes",
+        "name": "error",
+        "type": "bytes"
+      }
+    ],
+    "name": "ExecutionError",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "gmiAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[4]",
+        "name": "usdcReceived",
+        "type": "uint256[4]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[4]",
+        "name": "ethReceived",
+        "type": "uint256[4]"
+      }
+    ],
+    "name": "FulfilGmiBurnRequest",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "targetGMIAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "gmiMinted",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "gmAmountsRequired",
+        "type": "uint256[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "gmAmountsMinted",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "FulfilGmiMintRequest",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32[]",
+            "name": "depositKeys",
+            "type": "bytes32[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "assetAmounts",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "gmAmountsRequired",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "gmAmountsMinted",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "markets",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "targetGMIAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "gmiMinted",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "fulfilled",
+            "type": "bool"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct LibCycle.GMIMintRequest",
+        "name": "_mintRequest",
+        "type": "tuple"
+      }
+    ],
+    "name": "MintRequest",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[2]",
+        "name": "nextVaultIndexAlloc",
+        "type": "uint256[2]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[2]",
+        "name": "nextIndexComp",
+        "type": "uint256[2]"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "position",
+        "type": "int256"
+      }
+    ],
+    "name": "OpenRebalance",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256[2]",
+        "name": "targetUsd",
+        "type": "uint256[2]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[2]",
+        "name": "targetShares",
+        "type": "uint256[2]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[2]",
+        "name": "currentShares",
+        "type": "uint256[2]"
+      }
+    ],
+    "name": "RebalanceGmiFromState",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "key",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "callback",
+        "type": "address"
+      }
+    ],
+    "name": "RequestExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "status",
+        "type": "bool"
+      }
+    ],
+    "name": "SetCallback",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256[2]",
+        "name": "previousGlpAmount",
+        "type": "uint256[2]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[2]",
+        "name": "settledGlpAmount",
+        "type": "uint256[2]"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256[2]",
+        "name": "glpPnl",
+        "type": "int256[2]"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256[2]",
+        "name": "dollarPnl",
+        "type": "int256[2]"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256[2]",
+        "name": "percentPriceChange",
+        "type": "int256[2]"
+      }
+    ],
+    "name": "SettleNettedPositionPnl",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "int256[2]",
+        "name": "oldPrices",
+        "type": "int256[2]"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256[2]",
+        "name": "newPrices",
+        "type": "int256[2]"
+      }
+    ],
+    "name": "UpdateNettingCheckpointPrice",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "key",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      }
+    ],
+    "name": "WithdrawalRequest",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "AUTH",
+    "outputs": [
+      {
+        "internalType": "contract Auth",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_asset",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_epoch",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32[]",
+            "name": "withdrawalKeys",
+            "type": "bytes32[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "gmAmounts",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "markets",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "gmiAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "usdcReceived",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "ethReceived",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "bool",
+            "name": "fulfilled",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibCycle.GMIBurnRequest",
+        "name": "_burnRequest",
+        "type": "tuple"
+      }
+    ],
+    "name": "emitBurnRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "emitCloseRebalance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalVaultFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "performanceFeeInAsset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "managementFeeInAsset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "timelockYieldMintAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "assetVault",
+        "type": "address"
+      }
+    ],
+    "name": "emitCollectVaultFees",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "key",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      }
+    ],
+    "name": "emitDepositRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "key",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "isDeposit",
+        "type": "bool"
+      },
+      {
+        "internalType": "bytes",
+        "name": "err",
+        "type": "bytes"
+      }
+    ],
+    "name": "emitExecutionError",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "gmiAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[4]",
+        "name": "usdcReceived",
+        "type": "uint256[4]"
+      },
+      {
+        "internalType": "uint256[4]",
+        "name": "ethReceived",
+        "type": "uint256[4]"
+      }
+    ],
+    "name": "emitFulfilGmiBurnRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "targetGMIAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "gmiMinted",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "gmAmountsRequired",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "gmAmountsMinted",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "emitFulfilGmiMintRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_asset",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_epoch",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32[]",
+            "name": "depositKeys",
+            "type": "bytes32[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "assetAmounts",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "gmAmountsRequired",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "gmAmountsMinted",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "markets",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "targetGMIAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "gmiMinted",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "fulfilled",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct LibCycle.GMIMintRequest",
+        "name": "_mintRequest",
+        "type": "tuple"
+      }
+    ],
+    "name": "emitMintRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[2]",
+        "name": "nextVaultIndexAlloc",
+        "type": "uint256[2]"
+      },
+      {
+        "internalType": "uint256[2]",
+        "name": "nextIndexComp",
+        "type": "uint256[2]"
+      },
+      {
+        "internalType": "int256",
+        "name": "position",
+        "type": "int256"
+      }
+    ],
+    "name": "emitOpenRebalance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[2]",
+        "name": "targetUsd",
+        "type": "uint256[2]"
+      },
+      {
+        "internalType": "uint256[2]",
+        "name": "targetShares",
+        "type": "uint256[2]"
+      },
+      {
+        "internalType": "uint256[2]",
+        "name": "currentShares",
+        "type": "uint256[2]"
+      }
+    ],
+    "name": "emitRebalanceGmiFromState",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "key",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "err",
+        "type": "bytes"
+      }
+    ],
+    "name": "emitRequestCallbackError",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "key",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "sender",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "callback",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isDeposit",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "requestBlock",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct AggregateVaultStorage.OCRequest",
+        "name": "request",
+        "type": "tuple"
+      }
+    ],
+    "name": "emitRequestCallbackSuccess",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "key",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "callback",
+        "type": "address"
+      }
+    ],
+    "name": "emitRequestExecuted",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "status",
+        "type": "bool"
+      }
+    ],
+    "name": "emitSetCallbackEnabled",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[2]",
+        "name": "previousIndexAmount",
+        "type": "uint256[2]"
+      },
+      {
+        "internalType": "uint256[2]",
+        "name": "settledIndexAmount",
+        "type": "uint256[2]"
+      },
+      {
+        "internalType": "int256[2]",
+        "name": "indexPnl",
+        "type": "int256[2]"
+      },
+      {
+        "internalType": "int256[2]",
+        "name": "dollarPnl",
+        "type": "int256[2]"
+      },
+      {
+        "internalType": "int256[2]",
+        "name": "percentPriceChange",
+        "type": "int256[2]"
+      }
+    ],
+    "name": "emitSettleNettedPositionPnl",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256[2]",
+        "name": "oldPrices",
+        "type": "int256[2]"
+      },
+      {
+        "internalType": "int256[2]",
+        "name": "newPrices",
+        "type": "int256[2]"
+      }
+    ],
+    "name": "emitUpdateNettingCheckpointPrice",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "key",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      }
+    ],
+    "name": "emitWithdrawalRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

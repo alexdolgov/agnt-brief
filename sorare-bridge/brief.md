@@ -7,11 +7,11 @@
 - Project: Sorare Bridge (`sorare-bridge`)
 - Website: [https://sorare.com/](https://sorare.com/)
 - Lifecycle: declining (Tier 0, 84.7% below peak)
-- Generated: 2026-06-11T02:53:17.570Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-13T21:12:56.076Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-f8ad
 - Chains: ethereum
-- Contract surface: 58 unique implementations (210 raw deployments)
-- DeFi Llama TVL: $3,952,453.46
+- Contract surface: 54 unique implementations (201 raw deployments)
+- DeFi Llama TVL: $3,019,998.70
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -25,12 +25,12 @@ The bridge contracts (StarknetTokenBridge, StarknetEthBridge, StarknetERC20Bridg
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/38 (0.0%)
-- Verified + Unaudited implementations: 38
+- Verified implementations audited: 0/34 (0.0%)
+- Verified + Unaudited implementations: 34
 - Verified by bytecode match: 0
 - Unverified implementations: 20
-- Unique implementations: 58
-- Raw deployments: 210
+- Unique implementations: 54
+- Raw deployments: 201
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -49,7 +49,7 @@ The bridge contracts (StarknetTokenBridge, StarknetEthBridge, StarknetERC20Bridg
 
 - None
 
-### ⚠️ Verified + Unaudited (38)
+### ⚠️ Verified + Unaudited (34)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -65,30 +65,26 @@ The bridge contracts (StarknetTokenBridge, StarknetEthBridge, StarknetERC20Bridg
 | FinalizableCommittee | unknown | ethereum | [`0x4f8b2d...bc4446`](./contracts/ethereum-1/0x4f8b2dd49d958b6ac3e5f4705bf1a9ada5bc4446/) | ⚠️ Unaudited |
 | FinalizableGpsFactAdapter | adapter | ethereum | 2 deployments: ethereum [`0x8260d7...ea2ece`](./contracts/ethereum-1/0x8260d7ab762db278880811906fe5a2b342ea2ece/); ethereum `0x8ab85d...5532f4` | ⚠️ Unaudited |
 | ForcedActions | unknown | ethereum | 3 deployments: ethereum [`0x07228f...dd8764`](./contracts/ethereum-1/0x07228f73aa048f67893f4b966d1d09783edd8764/); ethereum `0x0d7c8d...fe083a`; ethereum `0x3799ad...d437a1` | ⚠️ Unaudited |
-| FriStatementContract | unknown | ethereum | 5 deployments: ethereum [`0x689f88...443045`](./contracts/ethereum-1/0x689f886b4e61b5907166b2506db5e89609443045/); ethereum `0x932457...474363`; ethereum `0xe74999...c1064b`; ethereum `0xecf98a...9eda6d`; ethereum `0xf6b83c...c5e1b1` | ⚠️ Unaudited |
+| FriStatementContract | unknown | ethereum | 6 deployments: ethereum [`0x3e6118...7dd2dd`](./contracts/ethereum-1/0x3e6118da317f7a433031f03bb71ab870d87dd2dd/); ethereum `0x689f88...443045`; ethereum `0x932457...474363`; ethereum `0xe74999...c1064b`; ethereum `0xecf98a...9eda6d`; ethereum `0xf6b83c...c5e1b1` | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | [`0xcc9289...f9fd2b`](./contracts/ethereum-1/0xcc928977e4a75d25099e7da7b6fd79dac2f9fd2b/) | ⚠️ Unaudited |
 | GpsFactRegistryAdapter | adapter | ethereum | 6 deployments: ethereum [`0x472fa7...917388`](./contracts/ethereum-1/0x472fa70390a46e1815cdfe96b16b7d232e917388/); ethereum `0x5339ab...db5143`; ethereum `0x575dd6...60b531`; ethereum `0x6e3abc...8b3bae`; ethereum `0x733872...ddd1fb`; ethereum `0xfa6a50...a9e16d` | ⚠️ Unaudited |
 | GpsStatementVerifier | periphery | ethereum | 6 deployments: ethereum [`0x45769d...630f17`](./contracts/ethereum-1/0x45769d52d47e9cbfac9a2df68c2051adb0630f17/); ethereum `0x522b28...905068`; ethereum `0x894c4a...8b7fc3`; ethereum `0x9bca5c...cac1f8`; ethereum `0xa739b1...ac338f`; ethereum `0xb1eda3...b32b84` | ⚠️ Unaudited |
-| MemoryPageFactRegistry | registry | ethereum | 5 deployments: ethereum [`0x076cf2...8479e5`](./contracts/ethereum-1/0x076cf2113b6eed19883a92454c473998fc8479e5/); ethereum `0x280675...3edecd`; ethereum `0x963750...bfdd8b`; ethereum `0xa9b7e2...0dfd2e`; ethereum `0xefbcce...9acef8` | ⚠️ Unaudited |
-| MerkleStatementContract | operational_periphery | ethereum | 5 deployments: ethereum [`0x01378d...5bcca0`](./contracts/ethereum-1/0x01378dadf607ac74a072c956d8240d1df75bcca0/); ethereum `0x03e291...0821fe`; ethereum `0x0d62ba...57a830`; ethereum `0x26ec18...e0d386`; ethereum `0xfc359d...902607` | ⚠️ Unaudited |
+| MemoryPageFactRegistry | registry | ethereum | 6 deployments: ethereum [`0x076cf2...8479e5`](./contracts/ethereum-1/0x076cf2113b6eed19883a92454c473998fc8479e5/); ethereum `0x280675...3edecd`; ethereum `0x963750...bfdd8b`; ethereum `0xa9b7e2...0dfd2e`; ethereum `0xefbcce...9acef8`; ethereum `0xfd1456...7fd1b4` | ⚠️ Unaudited |
+| MerkleStatementContract | operational_periphery | ethereum | 6 deployments: ethereum [`0x01378d...5bcca0`](./contracts/ethereum-1/0x01378dadf607ac74a072c956d8240d1df75bcca0/); ethereum `0x03e291...0821fe`; ethereum `0x0d62ba...57a830`; ethereum `0x26ec18...e0d386`; ethereum `0x5899ef...f65fa4`; ethereum `0xfc359d...902607` | ⚠️ Unaudited |
 | ModifyUpgradeDelayExternalInitializer | unknown | ethereum | [`0xf00e34...8b6d49`](./contracts/ethereum-1/0xf00e349a9ccca340b1e3dd48c4c77a2ba18b6d49/) | ⚠️ Unaudited |
 | OnchainVaults | core_logic | ethereum | 3 deployments: ethereum [`0x1688ab...b5d339`](./contracts/ethereum-1/0x1688abb0b5c72f34b7f78e857aa317ded5b5d339/); ethereum `0x2d5428...8e720a`; ethereum `0xb2ed00...98f31f` | ⚠️ Unaudited |
 | OrderRegistry | registry | ethereum | 3 deployments: ethereum [`0x518c4a...14ddf8`](./contracts/ethereum-1/0x518c4a79a1102eedc987005ca8ce6b87ca14ddf8/); ethereum `0x806d43...b97fe6`; ethereum `0x886322...90c0bd` | ⚠️ Unaudited |
 | PedersenHashPointsXColumn | unknown | ethereum | 5 deployments: ethereum [`0x8426e8...bf3e41`](./contracts/ethereum-1/0x8426e8797f5a6cef602c99ed247ccb4fb6bf3e41/); ethereum `0x9bcf13...a3456d`; ethereum `0xb2f8b8...efee54`; ethereum `0xc91a01...47986f`; ethereum `0xf7896d...658e2d` | ⚠️ Unaudited |
 | PedersenHashPointsYColumn | unknown | ethereum | 5 deployments: ethereum [`0x0fed12...4fec92`](./contracts/ethereum-1/0x0fed12bd8b1b11c629001c436b90bcd99f4fec92/); ethereum `0x4a971c...75a0d1`; ethereum `0x8c2a01...14516f`; ethereum `0xbbaf3b...3dde07`; ethereum `0xd85c64...609928` | ⚠️ Unaudited |
-| PerpetualEscapeVerifier | periphery | ethereum | 2 deployments: ethereum [`0x5c075a...617378`](./contracts/ethereum-1/0x5c075a0af1b3bff61be0e98dadd9c2344a617378/); ethereum `0x626211...11f3dd` | ⚠️ Unaudited |
-| PerpetualForcedActions | unknown | ethereum | [`0xc43f55...6b4ea3`](./contracts/ethereum-1/0xc43f5526124877f9125e3b48101dca6d7c6b4ea3/) | ⚠️ Unaudited |
-| PerpetualState | token | ethereum | [`0xdf9c11...40d4a0`](./contracts/ethereum-1/0xdf9c117cad37f2ed8c99e36a40317d8cc340d4a0/) | ⚠️ Unaudited |
-| PerpetualTokensAndRamping | token | ethereum | 2 deployments: ethereum [`0x3fed7b...368545`](./contracts/ethereum-1/0x3fed7bf5bf3e738bc30fbe61b048fdcb82368545/); ethereum `0xebfea8...fd2481` | ⚠️ Unaudited |
 | ProxyUtils | unknown | ethereum | 3 deployments: ethereum [`0x970d1f...811c7f`](./contracts/ethereum-1/0x970d1fa79c64b256ef68bbfeab34137786811c7f/); ethereum `0xb3788a...132be6`; ethereum `0xb53532...6e50db` | ⚠️ Unaudited |
-| ReplaceEscapeVerifierExternalInitializer | periphery | ethereum | [`0x89bb55...eca560`](./contracts/ethereum-1/0x89bb5527834385ac440732d35e8fd501ececa560/) | ⚠️ Unaudited |
-| StarkExchange | unknown | ethereum | 9 deployments: ethereum [`0x1390f5...a27a07`](./contracts/ethereum-1/0x1390f521a79babe99b69b37154d63d431da27a07/); ethereum `0x3071be...2714e7`; ethereum `0x49401d...ac7378`; ethereum `0x4edd62...a7ac9b`; ethereum `0x7d2375...f9a055`; ethereum `0xb8563a...6f43ac`; ethereum `0xc0251e...ba491a`; ethereum `0xe6785c...caffee`; ethereum `0xf5c9f9...995826` | ⚠️ Unaudited |
+| StarkExchange | unknown | ethereum | 5 deployments: ethereum [`0x1390f5...a27a07`](./contracts/ethereum-1/0x1390f521a79babe99b69b37154d63d431da27a07/); ethereum `0x3071be...2714e7`; ethereum `0xc0251e...ba491a`; ethereum `0xdf2f24...b0f583`; ethereum `0xf5c9f9...995826` | ⚠️ Unaudited |
 | StarkExchangeMigrationV2 | operational_periphery | ethereum | [`0x5fdcca...8e27e9`](./contracts/ethereum-1/0x5fdcca53617f4d2b9134b29090c87d01058e27e9/) | ⚠️ Unaudited |
 | StarkExState | unknown | ethereum | 4 deployments: ethereum [`0x1c3a4e...9929a2`](./contracts/ethereum-1/0x1c3a4eff75a287fe6249cab49606fa25659929a2/); ethereum `0x4b9b30...2af010`; ethereum `0x86d8f9...e13773`; ethereum `0xedb67d...e4793a` | ⚠️ Unaudited |
 | Starknet | unknown | ethereum | [`0xdc109c...2a6955`](./contracts/ethereum-1/0xdc109c4a1a3084ed15a97692fbef3e1fb32a6955/) | ⚠️ Unaudited |
 | StarknetERC20Bridge | operational_periphery | ethereum | 3 deployments: ethereum [`0x56e233...2a381b`](./contracts/ethereum-1/0x56e233d613743297cdd27fafc5c1f5c1dc2a381b/); ethereum `0xbb3400...747605`; ethereum `0xf6080d...f92816` | ⚠️ Unaudited |
 | StarknetEthBridge | operational_periphery | ethereum | 2 deployments: ethereum [`0x5e70f3...6dbe37`](./contracts/ethereum-1/0x5e70f3301bbbbb1dfa2c8d20d75b162afa6dbe37/); ethereum `0xae0ee0...48d419` | ⚠️ Unaudited |
 | StarknetTokenBridge | operational_periphery | ethereum | [`0x283751...d9b5b4`](./contracts/ethereum-1/0x283751a21eafbfcd52297820d27c1f1963d9b5b4/) | ⚠️ Unaudited |
-| StarkPerpetual | unknown | ethereum | 3 deployments: ethereum [`0x0a5a7a...cfe643`](./contracts/ethereum-1/0x0a5a7a738528af22b4f5cfe70e5a1e07a2cfe643/); ethereum `0x2c0df8...1cc2d3`; ethereum `0xd54f50...2d69c8` | ⚠️ Unaudited |
+| StarkPerpetual | unknown | ethereum | [`0xd54f50...2d69c8`](./contracts/ethereum-1/0xd54f502e184b6b739d7d27a6410a67dc462d69c8/) | ⚠️ Unaudited |
 | TokensAndRamping | token | ethereum | 5 deployments: ethereum [`0x2dbc18...912afb`](./contracts/ethereum-1/0x2dbc18a3ac126abe1ff90a83bbc3947ff7912afb/); ethereum `0x853685...467687`; ethereum `0x97aa96...bd529e`; ethereum `0xa4e952...00469e`; ethereum `0xf677a1...d57713` | ⚠️ Unaudited |
 | TransferRegistry | registry | ethereum | [`0xbe9a12...70d27a`](./contracts/ethereum-1/0xbe9a129909ebcb954bc065536d2bfafbd170d27a/) | ⚠️ Unaudited |
 
@@ -142,24 +138,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x18186a...011db8`](./contracts/ethereum-1/0x18186aee529b9fac9d51397a4beac6f5bb011db8/) | CairoBootloaderProgram | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0f58e2...ee41a0`](./contracts/ethereum-1/0x0f58e286edeac10a197ba1906ea348bed3ee41a0/) | CallProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x087452...e7fe6a`](./contracts/ethereum-1/0x08745211194aa895083cbb5d54d47314c7e7fe6a/) | CpuConstraintPoly | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x024b2f...eee393`](./contracts/ethereum-1/0x024b2f66cc07a3f9361d5339035cef78b0eee393/) | CpuFrilessVerifier | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc5ca4c...2abd8a`](./contracts/ethereum-1/0xc5ca4cd798d2aeb964126eee71ec572ddf2abd8a/) | EcdsaPointsYColumn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x689f88...443045`](./contracts/ethereum-1/0x689f886b4e61b5907166b2506db5e89609443045/) | FriStatementContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x45769d...630f17`](./contracts/ethereum-1/0x45769d52d47e9cbfac9a2df68c2051adb0630f17/) | GpsStatementVerifier | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x076cf2...8479e5`](./contracts/ethereum-1/0x076cf2113b6eed19883a92454c473998fc8479e5/) | MemoryPageFactRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x01378d...5bcca0`](./contracts/ethereum-1/0x01378dadf607ac74a072c956d8240d1df75bcca0/) | MerkleStatementContract | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1688ab...b5d339`](./contracts/ethereum-1/0x1688abb0b5c72f34b7f78e857aa317ded5b5d339/) | OnchainVaults | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc43f55...6b4ea3`](./contracts/ethereum-1/0xc43f5526124877f9125e3b48101dca6d7c6b4ea3/) | PerpetualForcedActions | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdf9c11...40d4a0`](./contracts/ethereum-1/0xdf9c117cad37f2ed8c99e36a40317d8cc340d4a0/) | PerpetualState | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3fed7b...368545`](./contracts/ethereum-1/0x3fed7bf5bf3e738bc30fbe61b048fdcb82368545/) | PerpetualTokensAndRamping | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1390f5...a27a07`](./contracts/ethereum-1/0x1390f521a79babe99b69b37154d63d431da27a07/) | StarkExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdc109c...2a6955`](./contracts/ethereum-1/0xdc109c4a1a3084ed15a97692fbef3e1fb32a6955/) | Starknet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf00e34...8b6d49`](./contracts/ethereum-1/0xf00e349a9ccca340b1e3dd48c4c77a2ba18b6d49/) | ModifyUpgradeDelayExternalInitializer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5fdcca...8e27e9`](./contracts/ethereum-1/0x5fdcca53617f4d2b9134b29090c87d01058e27e9/) | StarkExchangeMigrationV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x56e233...2a381b`](./contracts/ethereum-1/0x56e233d613743297cdd27fafc5c1f5c1dc2a381b/) | StarknetERC20Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5e70f3...6dbe37`](./contracts/ethereum-1/0x5e70f3301bbbbb1dfa2c8d20d75b162afa6dbe37/) | StarknetEthBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0a5a7a...cfe643`](./contracts/ethereum-1/0x0a5a7a738528af22b4f5cfe70e5a1e07a2cfe643/) | StarkPerpetual | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd54f50...2d69c8`](./contracts/ethereum-1/0xd54f502e184b6b739d7d27a6410a67dc462d69c8/) | StarkPerpetual | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2dbc18...912afb`](./contracts/ethereum-1/0x2dbc18a3ac126abe1ff90a83bbc3947ff7912afb/) | TokensAndRamping | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xbe9a12...70d27a`](./contracts/ethereum-1/0xbe9a129909ebcb954bc065536d2bfafbd170d27a/) | TransferRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -167,10 +150,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 23 |
-| upstream | 13 |
+| native | 10 |
+| upstream | 27 |
 | standard_library | 1 |
-| needs_review | 21 |
+| needs_review | 16 |
 
 ## Scope Matching Notes
 

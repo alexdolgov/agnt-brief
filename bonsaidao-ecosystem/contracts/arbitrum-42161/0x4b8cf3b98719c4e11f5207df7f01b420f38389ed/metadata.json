@@ -1,0 +1,18 @@
+{
+  "address": "0x4b8cf3b98719c4e11f5207df7f01b420f38389ed",
+  "chain_id": 42161,
+  "contract_name": "ExitVaultEntryPoint",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "GPL-3.0, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 39,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T21:18:46.081Z"
+}

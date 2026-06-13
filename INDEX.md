@@ -183,7 +183,7 @@
 | [bondlink-finance](./bondlink-finance/) | $152.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [boneswap](./boneswap/) | $1.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bonsai-strike](./bonsai-strike/) | $6.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [bonsaidao-ecosystem](./bonsaidao-ecosystem/) | $1.1M | 0.0% | ? | active | 1 | 190 | 2026-06-10 |
+| [bonsaidao-ecosystem](./bonsaidao-ecosystem/) | $328.3K | 5.2% | ? | active | 8 | 201 | 2026-06-13 |
 | [bonzo-finance](./bonzo-finance/) | $23.0M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
 | [bookusd](./bookusd/) | $39.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [boringdao](./boringdao/) | $275.7K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
@@ -298,7 +298,7 @@
 | [cyborgswap](./cyborgswap/) | $28.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [cybro](./cybro/) | $103.9K | 0.0% | ? | unknown | 14 | 0 | 2026-06-13 |
 | [cyclo](./cyclo/) | $183.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [cyclone](./cyclone/) | $165.5M | 0.0% | $165.5M | active | 3 | 63 | 2026-06-11 |
+| [cyclone](./cyclone/) | $165.5M | 0.0% | $165.5M | active | 3 | 63 | 2026-06-13 |
 | [cytonic-airdrop-campaign](./cytonic-airdrop-campaign/) | $175.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-06-10 |
 | [dackieswap](./dackieswap/) | $52.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1100,7 +1100,7 @@
 | [sonic-market](./sonic-market/) | $3.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [sophon-bridge](./sophon-bridge/) | $44.6M | 0.0% | $44.6M | active | 8 | 25 | 2026-06-12 |
 | [sophon-farm](./sophon-farm/) | $6.8M | 100.0% | ? | active | 9 | 1 | 2026-06-11 |
-| [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | declining | 0 | 58 | 2026-06-11 |
+| [sorare-bridge](./sorare-bridge/) | $3.0M | 0.0% | ? | declining | 0 | 54 | 2026-06-13 |
 | [sorta-finance](./sorta-finance/) | $107.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [sosovalue](./sosovalue/) | $89.1M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [sovryn-bridge](./sovryn-bridge/) | $2.9M | 0.0% | ? | active | 0 | 47 | 2026-06-11 |

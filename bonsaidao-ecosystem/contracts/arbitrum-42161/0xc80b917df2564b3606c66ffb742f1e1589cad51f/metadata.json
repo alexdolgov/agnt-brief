@@ -1,0 +1,18 @@
+{
+  "address": "0xc80b917df2564b3606c66ffb742f1e1589cad51f",
+  "chain_id": 42161,
+  "contract_name": "ExitVault",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "GPL-3.0, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 56,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T21:18:46.476Z"
+}

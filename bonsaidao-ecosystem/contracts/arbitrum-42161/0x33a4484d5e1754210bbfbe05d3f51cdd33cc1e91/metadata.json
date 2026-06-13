@@ -1,0 +1,18 @@
+{
+  "address": "0x33a4484d5e1754210bbfbe05d3f51cdd33cc1e91",
+  "chain_id": 42161,
+  "contract_name": "RequestHandler",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 888,
+  "evm_version": "london",
+  "license": "AGPL-3.0-only, BUSL-1.1, GPL-2.0-or-later, GPL-3.0, MIT, MIT OR Apache-2.0, UNLICENCED, UNLICENSED, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 111,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T21:18:45.905Z"
+}

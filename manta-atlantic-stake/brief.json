@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "manta-atlantic-stake",
-  "generated_at": "2026-06-13T03:45:32.327Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
+  "generated_at": "2026-06-13T21:08:33.266Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-f8ad",
   "lifecycle_status": "sunsetting",
   "lifecycle_signal": {
     "slug": "manta-atlantic-stake",

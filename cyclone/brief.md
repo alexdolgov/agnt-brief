@@ -5,8 +5,8 @@
 - Project: Cyclone (`cyclone`)
 - Website: [https://cyclone.xyz](https://cyclone.xyz)
 - Lifecycle: active (Tier 0, 85.8% below peak)
-- Generated: 2026-06-11T11:43:29.534Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
+- Generated: 2026-06-13T21:13:17.486Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-f8ad
 - Chains: bsc, ethereum, polygon
 - Contract surface: 63 unique implementations (179 raw deployments)
 - DeFi Llama TVL: $1,160,723.71
@@ -162,10 +162,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 17 |
-| upstream | 20 |
+| native | 28 |
+| upstream | 19 |
 | standard_library | 0 |
-| needs_review | 26 |
+| needs_review | 16 |
 
 ## Scope Matching Notes
 

@@ -1,0 +1,183 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract Auth",
+        "name": "_auth",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_aggregateVault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_storageViewer",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "OngoingRebalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlySelf",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AUTH",
+    "outputs": [
+      {
+        "internalType": "contract Auth",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "sender",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "callback",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isDeposit",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "requestBlock",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct AggregateVaultStorage.OCRequest",
+        "name": "request",
+        "type": "tuple"
+      }
+    ],
+    "name": "_executeRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "aggregateVault",
+    "outputs": [
+      {
+        "internalType": "contract AggregateVault",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "callbackEnabled",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "key",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "realtimeFeedTokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "bytes[]",
+            "name": "realtimeFeedData",
+            "type": "bytes[]"
+          }
+        ],
+        "internalType": "struct AggregateVaultStorage.SetPricesParams",
+        "name": "priceData",
+        "type": "tuple"
+      }
+    ],
+    "name": "executeRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "_callbackEnabled",
+        "type": "bool"
+      }
+    ],
+    "name": "setCallbackEnabled",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "storageViewer",
+    "outputs": [
+      {
+        "internalType": "contract StorageViewer",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1402,6 +1402,10 @@
 | [zklink-nova](./zklink-nova/) | $33.9M | 14.5% | $33.9M | declining | 7 | 380 | 2026-06-11 |
 | [zkswap-finance](./zkswap-finance/) | $1.2M | 11.1% | ? | active | 8 | 98 | 2026-06-11 |
 | [zoo-finance](./zoo-finance/) | $83.0M | 0.0% | $83.0M | active | 1 | 75 | 2026-06-12 |
+| [zoodao](./zoodao/) | $9.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [zoomex](./zoomex/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
+| [zootopia-finance](./zootopia-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [zoro-protocol](./zoro-protocol/) | $11.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [zoth](./zoth/) | $6.5 | 78.1% | ? | active | 5 | 43 | 2026-06-11 |
+| [zyberswap](./zyberswap/) | $65.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [zyfai](./zyfai/) | $1.8B | 0.0% | $1.8B | active | 0 | 106 | 2026-06-13 |

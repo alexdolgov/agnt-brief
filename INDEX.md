@@ -647,6 +647,7 @@
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 9.1% | $34.8K | dead | 5 | 99 | 2026-06-11 |
 | [secured-finance](./secured-finance/) | $629.8K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-31 |
+| [segment-finance](./segment-finance/) | $524.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [sentiment](./sentiment/) | $64.3 | 73.3% | ? | dead | 8 | 297 | 2026-06-11 |
 | [serum](./serum/) | $15.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [set-protocol](./set-protocol/) | $7.9M | 0.0% | $7.9M | declining | 0 | 129 | 2026-06-13 |
@@ -664,6 +665,7 @@
 | [singularity-finance](./singularity-finance/) | $2.7M | 70.0% | $2.7M | transitioning | 2 | 10 | 2026-06-13 |
 | [singularv](./singularv/) | $1.1B | 11.4% | $1.1B | declining | 7 | 83 | 2026-06-11 |
 | [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 0 | 4 | 2026-06-11 |
+| [sirius-finance](./sirius-finance/) | $7.3K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [skate-fi](./skate-fi/) | $112.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |
 | [smilee-finance](./smilee-finance/) | $1.1M | 0.0% | ? | active | 3 | 186 | 2026-06-11 |
@@ -672,10 +674,12 @@
 | [sofa.org](./sofa.org/) | $49.2K | 33.3% | $46.8K | declining | 8 | 38 | 2026-05-24 |
 | [solayer](./solayer/) | $13.0M | 0.0% | ? | unknown | 5 | 0 | 2026-06-11 |
 | [solera](./solera/) | $8.4M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
+| [solidly-labs](./solidly-labs/) | $187.3K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [sonic-gateway](./sonic-gateway/) | $7.8M | 0.0% | $7.8M | declining | 2 | 9 | 2026-06-12 |
 | [sophon-bridge](./sophon-bridge/) | $44.6M | 0.0% | $44.6M | active | 8 | 25 | 2026-06-12 |
 | [sophon-farm](./sophon-farm/) | $6.8M | 100.0% | ? | active | 9 | 1 | 2026-06-11 |
 | [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | declining | 0 | 58 | 2026-06-11 |
+| [sosovalue](./sosovalue/) | $89.1M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [sovryn-bridge](./sovryn-bridge/) | $2.9M | 0.0% | ? | active | 0 | 47 | 2026-06-11 |
 | [sovryn](./sovryn/) | $38.3M | 0.0% | ? | unknown | 11 | 0 | 2026-06-11 |
 | [spacefi](./spacefi/) | $1.5M | 0.0% | ? | active | 5 | 38 | 2026-06-11 |
@@ -683,6 +687,7 @@
 | [spectra](./spectra/) | $10.5M | 12.2% | $5.8M | active | 7 | 229 | 2026-06-12 |
 | [sperax](./sperax/) | $14.2M | 47.1% | $2.6M | declining | 9 | 142 | 2026-06-11 |
 | [sphere](./sphere/) | $229.4M | 0.0% | $229.4M | active | 0 | 221 | 2026-06-13 |
+| [spherium](./spherium/) | $0.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [spinup](./spinup/) | $406.3K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [spiraldao](./spiraldao/) | $6.4M | 44.0% | ? | dead | 3 | 56 | 2026-05-23 |
 | [spiritswap](./spiritswap/) | $337.6K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |

@@ -708,7 +708,10 @@
 | [mantisswap](./mantisswap/) | $182.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [mantle-restaking](./mantle-restaking/) | $60.9M | 59.1% | ? | declining | 13 | 25 | 2026-06-12 |
 | [mantra-dao](./mantra-dao/) | $611.0M | 0.0% | $611.0M | declining | 1 | 195 | 2026-06-11 |
+| [margin-zero](./margin-zero/) | $21.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [margined-protocol](./margined-protocol/) | $265.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [marginly](./marginly/) | $0.0 | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
+| [match-finance](./match-finance/) | $2.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [matstake](./matstake/) | $4.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [maverick-protocol](./maverick-protocol/) | $26.8M | 35.3% | $26.8M | declining | 7 | 93 | 2026-06-11 |
 | [maya-protocol](./maya-protocol/) | $10.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
@@ -719,12 +722,14 @@
 | [mendi-finance](./mendi-finance/) | $79.1M | 10.7% | $79.1M | dead | 4 | 39 | 2026-06-11 |
 | [mento](./mento/) | $2.3M | 61.1% | $65.0K | declining | 23 | 218 | 2026-06-12 |
 | [merchant-moe](./merchant-moe/) | $37.3M | 50.0% | ? | unknown | 1 | 53 | 2026-05-31 |
+| [merkle-trade](./merkle-trade/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [merlinswap](./merlinswap/) | $6.9M | 0.0% | ? | declining | 0 | 2 | 2026-06-13 |
 | [meson](./meson/) | $1.1M | 0.0% | ? | active | 4 | 129 | 2026-06-11 |
 | [meta-pool](./meta-pool/) | $4.2M | 50.0% | $4.0M | active | 3 | 41 | 2026-06-11 |
 | [metadao](./metadao/) | $13.1M | 0.0% | ? | unknown | 10 | 0 | 2026-06-11 |
 | [metastable](./metastable/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [metastrike](./metastrike/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [metavault](./metavault/) | $10.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mev-capital](./mev-capital/) | $98.5M | 0.0% | $98.5M | active | 0 | 358 | 2026-06-12 |
 | [mev-protocol](./mev-protocol/) | $80.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [mezo-bridge](./mezo-bridge/) | $2.6M | 0.0% | $2.6M | declining | 0 | 26 | 2026-06-12 |

@@ -821,7 +821,10 @@ Each project directory contains:
 | [juicebox](./juicebox/brief.md) | $8.63M | 8 | 77 | 68/77 (88%) | 5.9% | 0.0% (-) | 1 | stale | ✅ active | - |
 | [justlend](./justlend/brief.md) | $3321.01M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [k2](./k2/brief.md) | $4.66M | ethereum | 30 | 21/30 (70%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [kafe-finance](./kafe-finance/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [kaio](./kaio/brief.md) | $60.81M | 4 | 35 | 4/35 (11%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [kalax](./kalax/brief.md) | $127.79K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [kalmy-app](./kalmy-app/brief.md) | $31.93K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [kandle-finance](./kandle-finance/brief.md) | $0.07 | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [kannagi-finance](./kannagi-finance/brief.md) | $72.20 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [kaskad](./kaskad/brief.md) | $2.55M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
@@ -833,10 +836,12 @@ Each project directory contains:
 | [kawaiiswap](./kawaiiswap/brief.md) | $798.68 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [keeta-bridge](./keeta-bridge/brief.md) | $1.06M | base | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [keiko-finance](./keiko-finance/brief.md) | $45.40K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [keom-protocol](./keom-protocol/brief.md) | $115.46K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [keyring](./keyring/brief.md) | $6.22M | avalanche, ethereum | 73 | 47/73 (64%) | 17.0% | 12.8% (Certora, ChainSecurity, Cyfrin, Spearbit) | 15 | fresh | ✅ active | - |
 | [kiloex](./kiloex/brief.md) | $2.45M | base, bsc, manta | 110 | 7/110 (6%) | 14.3% | 0.0% (-) | 1 | aging | ✅ active | - |
 | [kinetic](./kinetic/brief.md) | $59.94M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [king-protocol](./king-protocol/brief.md) | $1.54M | 5 | 16 | 5/16 (31%) | 60.0% | 0.0% (-) | 2 | aging | ✅ active | - |
+| [kingdefi](./kingdefi/brief.md) | $35.69K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [kintsu](./kintsu/brief.md) | $2.35M | hyperliquid | 12 | 0/12 (0%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | - |
 | [klaybank](./klaybank/brief.md) | $298.92K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [klaystation](./klaystation/brief.md) | $0.00 | klaytn | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -1165,5 +1170,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T13:29:07.594Z_
-_Projects: 1153_
+_Generated: 2026-06-13T13:31:27.813Z_
+_Projects: 1158_

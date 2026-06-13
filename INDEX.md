@@ -595,8 +595,11 @@
 | [juicebox](./juicebox/) | $8.6M | 5.9% | ? | active | 10 | 77 | 2026-06-11 |
 | [justlend](./justlend/) | $3.3B | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-06-11 |
+| [kafe-finance](./kafe-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kaio](./kaio/) | $60.8M | 0.0% | ? | declining | 0 | 35 | 2026-06-12 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | active | 0 | 4 | 2026-06-12 |
+| [kalax](./kalax/) | $127.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [kalmy-app](./kalmy-app/) | $31.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kandle-finance](./kandle-finance/) | $0.1 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [kannagi-finance](./kannagi-finance/) | $72.2 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [kaskad](./kaskad/) | $2.6M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -611,11 +614,13 @@
 | [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | declining | 1 | 480 | 2026-06-11 |
 | [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 0 | 4 | 2026-06-11 |
 | [keiko-finance](./keiko-finance/) | $45.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [keom-protocol](./keom-protocol/) | $115.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [keyring](./keyring/) | $6.2M | 17.0% | ? | active | 16 | 73 | 2026-06-13 |
 | [kiloex](./kiloex/) | $5.7M | 14.3% | ? | active | 10 | 110 | 2026-06-11 |
 | [kine-finance](./kine-finance/) | $351.8M | 0.0% | $351.8M | declining | 0 | 35 | 2026-06-11 |
 | [kinetic](./kinetic/) | $59.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [king-protocol](./king-protocol/) | $1.5M | 60.0% | ? | active | 4 | 16 | 2026-06-11 |
+| [kingdefi](./kingdefi/) | $35.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kintsu](./kintsu/) | $2.3M | 0.0% | ? | declining | 5 | 12 | 2026-06-11 |
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 2 | 154 | 2026-06-11 |
 | [klaybank](./klaybank/) | $298.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |

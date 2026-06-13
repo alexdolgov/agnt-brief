@@ -469,6 +469,7 @@
 | [lets-get-hai](./lets-get-hai/) | $13.5M | 77.4% | $12.6M | active | 5 | 54 | 2026-06-11 |
 | [levex](./levex/) | $10.5M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
 | [levvy-finance](./levvy-finance/) | $46.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [likwid](./likwid/) | $52.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [liminal](./liminal/) | $24.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [linear-protocol](./linear-protocol/) | $59.6M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
@@ -483,13 +484,16 @@
 | [looksrare](./looksrare/) | $27.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [looping-collective](./looping-collective/) | $11.8M | 25.0% | $11.6M | active | 13 | 18 | 2026-06-12 |
 | [loopring](./loopring/) | $2.4M | 8.1% | $2.4M | declining | 1 | 141 | 2026-06-13 |
+| [lotus-finance](./lotus-finance/) | ? | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [ltv-protocol](./ltv-protocol/) | $12.6K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [luckychip](./luckychip/) | $532.1 | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [lumenswap](./lumenswap/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-06-11 |
 | [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-31 |
+| [magma-finance-almm](./magma-finance-almm/) | $1.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [magma-staking](./magma-staking/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [magpie-ecosystem](./magpie-ecosystem/) | $19.1M | 0.0% | ? | declining | 4 | 218 | 2026-06-12 |
+| [maha.xyz](./maha.xyz/) | $2.6 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [maia-dao-ecosystem](./maia-dao-ecosystem/) | $189.4K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [mainstreet](./mainstreet/) | $77.7M | 9.1% | $77.7M | active | 1 | 11 | 2026-06-12 |
 | [makina](./makina/) | $12.9M | 90.9% | $12.9M | active | 4 | 36 | 2026-06-11 |
@@ -498,6 +502,7 @@
 | [manta-atlantic-stake](./manta-atlantic-stake/) | $5.5M | 0.0% | ? | sunsetting | 0 | 109 | 2026-06-13 |
 | [manta-cedefi](./manta-cedefi/) | $26.5M | 0.0% | ? | unknown | 0 | 17 | 2026-06-12 |
 | [manta-pacific](./manta-pacific/) | $21.1M | 0.0% | ? | active | 0 | 12 | 2026-06-12 |
+| [mantisswap](./mantisswap/) | $182.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [mantle-restaking](./mantle-restaking/) | $60.9M | 59.1% | ? | declining | 13 | 25 | 2026-06-12 |
 | [mantra-dao](./mantra-dao/) | $611.0M | 0.0% | $611.0M | declining | 1 | 195 | 2026-06-11 |
 | [marginly](./marginly/) | $0.0 | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |

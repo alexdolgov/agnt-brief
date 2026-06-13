@@ -281,12 +281,15 @@
 | [core-bridge](./core-bridge/) | $4.0M | 0.0% | ? | active | 0 | 6 | 2026-06-10 |
 | [corepound](./corepound/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [coti-treasury](./coti-treasury/) | $9.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
+| [cougarswap](./cougarswap/) | $54.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [cozy-finance](./cozy-finance/) | $2.3M | 0.0% | ? | active | 5 | 48 | 2026-06-10 |
 | [crabada](./crabada/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [cream-finance](./cream-finance/) | $2.3B | 0.0% | $2.3B | declining | 2 | 94 | 2026-06-10 |
 | [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-06-12 |
 | [credit-coop](./credit-coop/) | $2.1M | 0.0% | $2.1M | active | 3 | 2 | 2026-06-11 |
+| [cron-finance](./cron-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [cropper](./cropper/) | $113.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [crown-finance](./crown-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [cryptex-finance](./cryptex-finance/) | $631.4K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [crypto.com-liquid-staking](./crypto.com-liquid-staking/) | $20.0M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
 | [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-06-10 |
@@ -301,6 +304,8 @@
 | [dackieswap](./dackieswap/) | $52.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dango](./dango/) | $4.1M | 0.0% | $4.1M | active | 1 | 3 | 2026-06-10 |
 | [dao-maker](./dao-maker/) | $9.3M | 0.0% | $9.3M | declining | 7 | 17 | 2026-06-10 |
+| [darkcrypto](./darkcrypto/) | $19.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [darkness](./darkness/) | $7.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [debridge](./debridge/) | $263.9M | 61.9% | $263.9M | declining | 32 | 161 | 2026-06-10 |
 | [decentralized-euro](./decentralized-euro/) | $230.4M | 28.2% | $230.4M | active | 3 | 72 | 2026-06-10 |
 | [decibel](./decibel/) | $41.9M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |

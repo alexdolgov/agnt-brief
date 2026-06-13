@@ -1,6 +1,6 @@
 # bakeryswap — Contract Index
 
-98 unique implementations on bsc · 185 deployments · 0 audited · 53 unaudited · 45 unverified
+100 unique implementations on bsc · 193 deployments · 0 audited · 55 unaudited · 45 unverified
 
 ## adapter (1)
 
@@ -8,11 +8,12 @@
 |---|---|---|---|---|
 | [BakerySwapRouter](./bsc-56/0xcde540d7eafe93ac5fe6233bee57e1270d3e330f/) | bsc | [`0xcde540...3e330f`](./bsc-56/0xcde540d7eafe93ac5fe6233bee57e1270d3e330f/) | ⚠️ Unaudited | Verified |
 
-## governance (2)
+## governance (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [ExchangeNFTConfiguration (2 deployments)](./bsc-56/0x5f8c0aa28ca6d3cad437fea8d76f2832c3d77b94/) | bsc | 2 deployments: bsc [`0x5f8c0a...d77b94`](./bsc-56/0x5f8c0aa28ca6d3cad437fea8d76f2832c3d77b94/); bsc `0x611e69...fdecdd` | ⚠️ Unaudited | Verified |
+| [GnosisSafe](./bsc-56/0x2f5ae8cc1538578e97a3c44d5e417ff5e6d2d47c/) | bsc | [`0x2f5ae8...d2d47c`](./bsc-56/0x2f5ae8cc1538578e97a3c44d5e417ff5e6d2d47c/) | ⚠️ Unaudited | Verified |
 | [ProxyAdmin](./bsc-56/0x9cd8a72067930c778516898724f540d7bd472447/) | bsc | [`0x9cd8a7...472447`](./bsc-56/0x9cd8a72067930c778516898724f540d7bd472447/) | ⚠️ Unaudited | Verified |
 
 ## periphery (2)
@@ -37,7 +38,7 @@
 | [CommonNftMasterFactory](./bsc-56/0x03b3d5973cac451a63869714e56482d6c97f63c6/) | bsc | [`0x03b3d5...7f63c6`](./bsc-56/0x03b3d5973cac451a63869714e56482d6c97f63c6/) | ⚠️ Unaudited | Verified |
 | [CommonStakeERC721EarnBakeFactory (2 deployments)](./bsc-56/0x596af07fb11f7ec4cd804ecc783064d28ec8b4ad/) | bsc | 2 deployments: bsc [`0x596af0...c8b4ad`](./bsc-56/0x596af07fb11f7ec4cd804ecc783064d28ec8b4ad/); bsc `0x87020e...56c60f` | ⚠️ Unaudited | Verified |
 | [CommonStakeERC721EarnERC20Factory (2 deployments)](./bsc-56/0x543229590b6b6c7c7250ec19aad8bb2552b6196a/) | bsc | 2 deployments: bsc [`0x543229...b6196a`](./bsc-56/0x543229590b6b6c7c7250ec19aad8bb2552b6196a/); bsc `0xe9d116...f1dd9b` | ⚠️ Unaudited | Verified |
-| IdoFactory (3 deployments) | bsc | 3 deployments: bsc `0x8ad715...f7bc80`; bsc `0xb673b0...4d6e28`; bsc `0xceb1c1...fd3a6f` | ⚠️ Unaudited | Verified |
+| [IdoFactory (3 deployments)](./bsc-56/0x8ad71503775f5a43303f8c22e2d84d6decf7bc80/) | bsc | 3 deployments: bsc [`0x8ad715...f7bc80`](./bsc-56/0x8ad71503775f5a43303f8c22e2d84d6decf7bc80/); bsc `0xb673b0...4d6e28`; bsc `0xceb1c1...fd3a6f` | ⚠️ Unaudited | Verified |
 | [VoteForNFTFactory](./bsc-56/0x97e95cacbfbbdffe3e49511c3cdd1efb0faeb2d6/) | bsc | [`0x97e95c...aeb2d6`](./bsc-56/0x97e95cacbfbbdffe3e49511c3cdd1efb0faeb2d6/) | ⚠️ Unaudited | Verified |
 
 ## token (23)
@@ -52,9 +53,9 @@
 | [BidNFT (17 deployments)](./bsc-56/0x01fa298fa3a507048d16dc6669a4ba22fd9f0e55/) | bsc | 17 deployments: bsc [`0x01fa29...9f0e55`](./bsc-56/0x01fa298fa3a507048d16dc6669a4ba22fd9f0e55/); bsc `0x055930...177fbb`; bsc `0x0c7ab5...12cf8e`; bsc `0x192720...b442af`; bsc `0x2d0130...1ddc15`; bsc `0x35996a...64306f`; bsc `0x3bd857...29da33`; bsc `0x437bf8...07682b`; bsc `0x4ab5d6...31ba70`; bsc `0x585fd9...0184d4`; bsc `0x616ea4...48b0ae`; bsc `0x61e918...98e3e3`; bsc `0xe84e73...44891e`; bsc `0xe98631...a79e29`; bsc `0xea8683...40a8a7`; bsc `0xebead4...66733a`; bsc `0xef44a8...0567e1` | ⚠️ Unaudited | Verified |
 | [CarNFT](./bsc-56/0x1d09fc4b295a2fa6f0e2e64a345bae419eb04699/) | bsc | [`0x1d09fc...b04699`](./bsc-56/0x1d09fc4b295a2fa6f0e2e64a345bae419eb04699/) | ⚠️ Unaudited | Verified |
 | [CarNFTStakingPowerToken](./bsc-56/0xa0e90bdabb28908c9d9419e58c658f20e60ba3aa/) | bsc | [`0xa0e90b...0ba3aa`](./bsc-56/0xa0e90bdabb28908c9d9419e58c658f20e60ba3aa/) | ⚠️ Unaudited | Verified |
-| [CommonStakeERC721EarnBake (2 deployments)](./bsc-56/0x72bec5f02813b194bd549658e59d62e28458a621/) | bsc | 2 deployments: bsc [`0x72bec5...58a621`](./bsc-56/0x72bec5f02813b194bd549658e59d62e28458a621/); bsc `0xc13769...135f51` | ⚠️ Unaudited | Verified |
+| [CommonStakeERC721EarnBake (3 deployments)](./bsc-56/0x72bec5f02813b194bd549658e59d62e28458a621/) | bsc | 3 deployments: bsc [`0x72bec5...58a621`](./bsc-56/0x72bec5f02813b194bd549658e59d62e28458a621/); bsc `0x99cc4e...91b98d`; bsc `0xc13769...135f51` | ⚠️ Unaudited | Verified |
 | [CommonStakeERC721EarnERC20 (2 deployments)](./bsc-56/0xb14b6c30ce2044e8e762170d985b510e983cc455/) | bsc | 2 deployments: bsc [`0xb14b6c...3cc455`](./bsc-56/0xb14b6c30ce2044e8e762170d985b510e983cc455/); bsc `0xf7f10b...135635` | ⚠️ Unaudited | Verified |
-| DishNFT (2 deployments) | bsc | 2 deployments: bsc `0x51efe1...aa7e2e`; bsc `0xa7463c...834962` | ⚠️ Unaudited | Verified |
+| [DishNFT (2 deployments)](./bsc-56/0x51efe1de415115bbedd39771405e619ef3aa7e2e/) | bsc | 2 deployments: bsc [`0x51efe1...aa7e2e`](./bsc-56/0x51efe1de415115bbedd39771405e619ef3aa7e2e/); bsc `0xa7463c...834962` | ⚠️ Unaudited | Verified |
 | [DishStakingPowerToken (2 deployments)](./bsc-56/0x169895db3270b3df63782bd3c7f758710b886f65/) | bsc | 2 deployments: bsc [`0x169895...886f65`](./bsc-56/0x169895db3270b3df63782bd3c7f758710b886f65/); bsc `0x54f135...382275` | ⚠️ Unaudited | Verified |
 | [DogeMemeNFT](./bsc-56/0x84d7fe5d949ea5fec5d84617badd7590275bfa72/) | bsc | [`0x84d7fe...5bfa72`](./bsc-56/0x84d7fe5d949ea5fec5d84617badd7590275bfa72/) | ⚠️ Unaudited | Verified |
 | [ExchangeNFT (16 deployments)](./bsc-56/0x05b39c7f648f51153c65c770220bba001dac8a38/) | bsc | 16 deployments: bsc [`0x05b39c...ac8a38`](./bsc-56/0x05b39c7f648f51153c65c770220bba001dac8a38/); bsc `0x05d189...0b2831`; bsc `0x0f1844...59f3ac`; bsc `0x1f48ae...3681c2`; bsc `0x26b82a...68e814`; bsc `0x58e6e6...cc07b2`; bsc `0x59dc5a...06df61`; bsc `0x615c00...c13490`; bsc `0x7f67a8...fa0e6c`; bsc `0x8443be...53950f`; bsc `0x961985...f4d3b0`; bsc `0xa3514f...d6b326`; bsc `0xa4c3a8...33f644`; bsc `0xc54601...b2cf11`; bsc `0xe590d8...e74b56`; bsc `0xf13015...badff1` | ⚠️ Unaudited | Verified |
@@ -63,19 +64,20 @@
 | [MuskDogeNFT](./bsc-56/0x1233b9f706cb9028a03b61af125cf1fe840cdbd3/) | bsc | [`0x1233b9...0cdbd3`](./bsc-56/0x1233b9f706cb9028a03b61af125cf1fe840cdbd3/) | ⚠️ Unaudited | Verified |
 | [NFTHelper](./bsc-56/0x0b6fb6d8e05b59bb24bf2a184a8f73bb390fbe50/) | bsc | [`0x0b6fb6...0fbe50`](./bsc-56/0x0b6fb6d8e05b59bb24bf2a184a8f73bb390fbe50/) | ⚠️ Unaudited | Verified |
 | [OneInchBAKENFT](./bsc-56/0x2b843942edf0040012b12be2b3c197ef53cab7f9/) | bsc | [`0x2b8439...cab7f9`](./bsc-56/0x2b843942edf0040012b12be2b3c197ef53cab7f9/) | ⚠️ Unaudited | Verified |
-| PetToken | bsc | `0x829963...88bce4` | ⚠️ Unaudited | Verified |
+| [PetToken](./bsc-56/0x829963c82f7040795f0e07c1f98544a82288bce4/) | bsc | [`0x829963...88bce4`](./bsc-56/0x829963c82f7040795f0e07c1f98544a82288bce4/) | ⚠️ Unaudited | Verified |
 | [SfpNFT](./bsc-56/0x1d0e5af3faee43b5cfff8f872f41d43b93ed964b/) | bsc | [`0x1d0e5a...ed964b`](./bsc-56/0x1d0e5af3faee43b5cfff8f872f41d43b93ed964b/) | ⚠️ Unaudited | Verified |
 | [SimpleStakeToysEarnERC20 (2 deployments)](./bsc-56/0x04c7987a4fdd2e7496daf833fb00035304499e3c/) | bsc | 2 deployments: bsc [`0x04c798...499e3c`](./bsc-56/0x04c7987a4fdd2e7496daf833fb00035304499e3c/); bsc `0x735c9f...64cf03` | ⚠️ Unaudited | Verified |
 | [VoteForNFT](./bsc-56/0x87b06e61e0346eec70fd34cd493b3e5e4ad2a92e/) | bsc | [`0x87b06e...d2a92e`](./bsc-56/0x87b06e61e0346eec70fd34cd493b3e5e4ad2a92e/) | ⚠️ Unaudited | Verified |
 
-## unknown (62)
+## unknown (63)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BakeBaseIdo (11 deployments)](./bsc-56/0x005c66a027176e1adf14d7e09c19a065504559e2/) | bsc | 11 deployments: bsc [`0x005c66...4559e2`](./bsc-56/0x005c66a027176e1adf14d7e09c19a065504559e2/); bsc `0x03f100...000142`; bsc `0x1e7d51...58a774`; bsc `0x37453b...379e69`; bsc `0x78ed8c...1bd07b`; bsc `0x792cc1...6d27e2`; bsc `0x873820...7c1e65`; bsc `0x9e38df...9f3070`; bsc `0xb535d4...a0b6a1`; bsc `0xbe687e...257256`; bsc `0xe9dcd9...519a62` | ⚠️ Unaudited | Verified |
 | [BakeBaseMaster (2 deployments)](./bsc-56/0xa1d32a36be24db1c7ae4bee451db14f089f2f235/) | bsc | 2 deployments: bsc [`0xa1d32a...f2f235`](./bsc-56/0xa1d32a36be24db1c7ae4bee451db14f089f2f235/); bsc `0xed8732...8b3e0e` | ⚠️ Unaudited | Verified |
 | [BakeryAnniversary](./bsc-56/0x1d866e548392765982a5859e15725215f3175c2e/) | bsc | [`0x1d866e...175c2e`](./bsc-56/0x1d866e548392765982a5859e15725215f3175c2e/) | ⚠️ Unaudited | Verified |
-| BakeryMaster | bsc | `0x20ec29...e5056f` | ⚠️ Unaudited | Verified |
+| [BakeryMaster](./bsc-56/0x20ec291bb8459b6145317e7126532ce7ece5056f/) | bsc | [`0x20ec29...e5056f`](./bsc-56/0x20ec291bb8459b6145317e7126532ce7ece5056f/) | ⚠️ Unaudited | Verified |
+| [BakerySwapPair (6 deployments)](./bsc-56/0x2fc2ad3c28560c97caca6d2dcf9b38614f48769a/) | bsc | 6 deployments: bsc [`0x2fc2ad...48769a`](./bsc-56/0x2fc2ad3c28560c97caca6d2dcf9b38614f48769a/); bsc `0x559e3d...82188b`; bsc `0x5fef67...745d86`; bsc `0x6e218e...fce50a`; bsc `0xc2eed0...9ae492`; bsc `0xfb72d7...97d0e3` | ⚠️ Unaudited | Verified |
 | [BakeryVoterProxy](./bsc-56/0x382d04194e3607dab5ebaa5b9f8011a4c06e8b17/) | bsc | [`0x382d04...6e8b17`](./bsc-56/0x382d04194e3607dab5ebaa5b9f8011a4c06e8b17/) | ⚠️ Unaudited | Verified |
 | [CAR](./bsc-56/0x176a25637e5078519230a4d80a7a47350940264a/) | bsc | [`0x176a25...40264a`](./bsc-56/0x176a25637e5078519230a4d80a7a47350940264a/) | ⚠️ Unaudited | Verified |
 | [CarBlindBox (2 deployments)](./bsc-56/0x0628cfc88518ccee96ef7bdfed8b4ac8708cad88/) | bsc | 2 deployments: bsc [`0x0628cf...8cad88`](./bsc-56/0x0628cfc88518ccee96ef7bdfed8b4ac8708cad88/); bsc `0x74db53...e32e40` | ⚠️ Unaudited | Verified |
@@ -85,7 +87,7 @@
 | [Doggy (2 deployments)](./bsc-56/0x44beb847cc2a9d1166868bd139a919cc3329fb96/) | bsc | 2 deployments: bsc [`0x44beb8...29fb96`](./bsc-56/0x44beb847cc2a9d1166868bd139a919cc3329fb96/); bsc `0x74926b...6e00c6` | ⚠️ Unaudited | Verified |
 | [ETH2Master (2 deployments)](./bsc-56/0xe627f00d5a5bfce0640e771af573c41e9a278a20/) | bsc | 2 deployments: bsc [`0xe627f0...278a20`](./bsc-56/0xe627f00d5a5bfce0640e771af573c41e9a278a20/); bsc `0xe7cfe6...4df729` | ⚠️ Unaudited | Verified |
 | [GetComboStakingPower](./bsc-56/0xba7e47d64ba87399da8a5e57eec010f4b9905ef3/) | bsc | [`0xba7e47...905ef3`](./bsc-56/0xba7e47d64ba87399da8a5e57eec010f4b9905ef3/) | ⚠️ Unaudited | Verified |
-| GetPokerCardStakingPower | bsc | `0xbaafb7...961145` | ⚠️ Unaudited | Verified |
+| [GetPokerCardStakingPower](./bsc-56/0xbaafb77447ceabe7d20f5ff03abb62143a961145/) | bsc | [`0xbaafb7...961145`](./bsc-56/0xbaafb77447ceabe7d20f5ff03abb62143a961145/) | ⚠️ Unaudited | Verified |
 | [MysteryBox (2 deployments)](./bsc-56/0x000fcc025797f976b5043de1b17a5d9734b54311/) | bsc | 2 deployments: bsc [`0x000fcc...b54311`](./bsc-56/0x000fcc025797f976b5043de1b17a5d9734b54311/); bsc `0xe910ad...5a8861` | ⚠️ Unaudited | Verified |
 | [PetMaster](./bsc-56/0x5d2fe774032596d2c69dc441fd137a1f43725e08/) | bsc | [`0x5d2fe7...725e08`](./bsc-56/0x5d2fe774032596d2c69dc441fd137a1f43725e08/) | ⚠️ Unaudited | Verified |
 | [SoccerPokerGameBox](./bsc-56/0xe6a038119befe6c5ffbc8c030267a36d7b7297cf/) | bsc | [`0xe6a038...7297cf`](./bsc-56/0xe6a038119befe6c5ffbc8c030267a36d7b7297cf/) | ⚠️ Unaudited | Verified |

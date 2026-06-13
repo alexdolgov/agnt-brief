@@ -124,7 +124,7 @@
 | [backbone-labs](./backbone-labs/) | $232.5K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | active | 0 | 2 | 2026-06-12 |
 | [badger-dao](./badger-dao/) | $396.9 | 21.6% | $396.9 | sunsetting | 8 | 40 | 2026-06-13 |
-| [bakeryswap](./bakeryswap/) | $612.9K | 0.0% | $612.9K | declining | 1 | 98 | 2026-05-24 |
+| [bakeryswap](./bakeryswap/) | $612.9K | 0.0% | $612.9K | declining | 1 | 100 | 2026-06-13 |
 | [baksdao](./baksdao/) | $181.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ball-exchange](./ball-exchange/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bancor](./bancor/) | $48.8M | 23.5% | $43.8M | declining | 4 | 121 | 2026-06-10 |
@@ -175,7 +175,7 @@
 | [block-analitica](./block-analitica/) | $252.8K | 0.0% | $252.8K | declining | 0 | 20 | 2026-06-12 |
 | [blueshift](./blueshift/) | $4.3M | 0.0% | ? | active | 1 | 23 | 2026-06-10 |
 | [blur](./blur/) | $91.7M | 0.0% | $91.7M | active | 0 | 21 | 2026-06-12 |
-| [bmx](./bmx/) | $305.7K | 0.0% | $305.7K | declining | 0 | 184 | 2026-06-10 |
+| [bmx](./bmx/) | $316.4K | 0.0% | $316.4K | declining | 0 | 187 | 2026-06-13 |
 | [bnpl-pay](./bnpl-pay/) | $23.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bob-bridge](./bob-bridge/) | $202.9K | 2.6% | $202.9K | active | 9 | 41 | 2026-06-10 |
 | [boba-bridge](./boba-bridge/) | $3.0M | 0.0% | ? | declining | 0 | 53 | 2026-05-31 |
@@ -469,7 +469,7 @@
 | [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 0 | 6 | 2026-06-12 |
 | [glitter-finance](./glitter-finance/) | $13.0 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [glori-finance](./glori-finance/) | $42.1 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [gnosis-protocol-v1](./gnosis-protocol-v1/) | $94.4M | 0.0% | $94.4M | declining | 0 | 110 | 2026-06-10 |
+| [gnosis-protocol-v1](./gnosis-protocol-v1/) | $94.4M | 0.0% | $94.4M | declining | 0 | 113 | 2026-06-13 |
 | [goat-protocol](./goat-protocol/) | $26.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [gogocoin](./gogocoin/) | $2.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [goldfinger](./goldfinger/) | $0.0 | 0.0% | ? | active | 8 | 5 | 2026-06-11 |
@@ -897,7 +897,7 @@
 | [pegasusdollar](./pegasusdollar/) | $14.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pell-network](./pell-network/) | $238.5K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pembrock-finance](./pembrock-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 0 | 21 | 2026-06-11 |
+| [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 0 | 21 | 2026-06-13 |
 | [perpl](./perpl/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [pharaoh-exchange](./pharaoh-exchange/) | $15.6M | 0.0% | $15.6M | active | 3 | 60 | 2026-06-12 |
 | [phoenix-bonds](./phoenix-bonds/) | $470.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1129,7 +1129,7 @@
 | [sqd.ai](./sqd.ai/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 28 | 2026-06-12 |
 | [squadswap](./squadswap/) | $13.0M | 63.2% | ? | active | 5 | 214 | 2026-06-11 |
 | [ssap](./ssap/) | $1.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [stable-jack](./stable-jack/) | $76.9M | 0.0% | $76.9M | active | 1 | 249 | 2026-06-11 |
+| [stable-jack](./stable-jack/) | $76.9M | 0.0% | $76.9M | active | 1 | 249 | 2026-06-13 |
 | [stablecoin-for-impact](./stablecoin-for-impact/) | $20.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [stablecomp](./stablecomp/) | $1.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 1 | 2026-06-13 |

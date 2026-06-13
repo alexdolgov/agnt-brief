@@ -5,11 +5,11 @@
 - Project: PepeTeam (`pepeteam`)
 - Website: [https://pepe.team](https://pepe.team)
 - Lifecycle: active (Tier 0, 91.1% below peak)
-- Generated: 2026-06-11T01:49:15.956Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
-- Chains: ethereum, polygon
-- Contract surface: 21 unique implementations (64 raw deployments)
-- DeFi Llama TVL: $1,319,181.00
+- Generated: 2026-06-13T19:26:01.216Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-a865
+- Chains: bsc, ethereum, polygon
+- Contract surface: 21 unique implementations (60 raw deployments)
+- DeFi Llama TVL: $1,031,570.00
 - On-chain TVL (included contracts): $11,093.18
 - TVL by chain: Ethereum $8,711.26 | Polygon $2,381.93
 
@@ -28,7 +28,7 @@ Both families share the same deployer cluster and proxy infrastructure, indicati
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 21
-- Raw deployments: 64
+- Raw deployments: 60
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $11,093.18
@@ -65,10 +65,10 @@ Both families share the same deployer cluster and proxy infrastructure, indicati
 | PreSaleShutdownV3 | unknown | ethereum | 2 deployments: ethereum [`0x2bf51f...159671`](./contracts/ethereum-1/0x2bf51f353db6d8edb668d566bbe4295535159671/); ethereum `0x82163f...a67f18` | ⚠️ Unaudited |
 | ReleaseRootAdapter | adapter | ethereum | 2 deployments: ethereum [`0x6697ec...c04bb0`](./contracts/ethereum-1/0x6697ec1223c277b871377d5df0a9e84544c04bb0/); ethereum `0x6a1190...b90f7f` | ⚠️ Unaudited |
 | SafeERC20Bridge | operational_periphery | ethereum | 3 deployments: ethereum [`0x0de7b0...21ea83`](./contracts/ethereum-1/0x0de7b091a21bd439bdb2dfbb63146d9cea21ea83/); ethereum `0x8bfac9...3f739a`; polygon `0x5f89d0...66e37c` | ⚠️ Unaudited |
-| SafeERC20BridgeWithPool | operational_periphery | polygon | 2 deployments: polygon [`0xc4e86c...d72970`](./contracts/polygon-137/0xc4e86cece4faa79e93df420d74ce909292d72970/); polygon `0xf57db8...f81e4a` | ⚠️ Unaudited |
-| WavesCaller | unknown | polygon | 4 deployments: ethereum `0x30965e...1991f1`; ethereum `0x7a924d...050c52`; polygon [`0x28c3ec...5dc2dd`](./contracts/polygon-137/0x28c3ec13075801c96d109f815aee45303d5dc2dd/); polygon `0x8dc9ac...3c8a5f` | ⚠️ Unaudited |
-| WavesMintAdapter | adapter | ethereum | 4 deployments: ethereum [`0x1985ca...e458d7`](./contracts/ethereum-1/0x1985ca0fd8d8ea5a114a7e5f22634e6bd8e458d7/); ethereum `0xd7fee5...ac1d42`; polygon `0x274475...adc031`; polygon `0x882260...3c856a` | ⚠️ Unaudited |
-| WavesReleaseAdapter | adapter | ethereum | 2 deployments: ethereum [`0x09d844...391118`](./contracts/ethereum-1/0x09d8444770adce8d61fb5c967b57287b70391118/); ethereum `0xf7a561...e2cc83` | ⚠️ Unaudited |
+| SafeERC20BridgeWithPool | operational_periphery | bsc | 3 deployments: bsc [`0x8df127...e9367a`](./contracts/bsc-56/0x8df12786ec0e34e60d4c52f9052ba4e536e9367a/); polygon `0xc4e86c...d72970`; polygon `0xf57db8...f81e4a` | ⚠️ Unaudited |
+| WavesCaller | unknown | polygon | 2 deployments: ethereum `0x30965e...1991f1`; polygon [`0x28c3ec...5dc2dd`](./contracts/polygon-137/0x28c3ec13075801c96d109f815aee45303d5dc2dd/) | ⚠️ Unaudited |
+| WavesMintAdapter | adapter | ethereum | 2 deployments: ethereum [`0x1985ca...e458d7`](./contracts/ethereum-1/0x1985ca0fd8d8ea5a114a7e5f22634e6bd8e458d7/); polygon `0x274475...adc031` | ⚠️ Unaudited |
+| WavesReleaseAdapter | adapter | ethereum | [`0x09d844...391118`](./contracts/ethereum-1/0x09d8444770adce8d61fb5c967b57287b70391118/) | ⚠️ Unaudited |
 | WrappedERC20Bridge | operational_periphery | ethereum | 2 deployments: ethereum [`0x5d1ecf...013586`](./contracts/ethereum-1/0x5d1ecf1e8a8fdf7b1a8bc0e7073139a1f2013586/); ethereum `0xa3fb11...c42e51` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -111,7 +111,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xec65f3...f7c8f1`](./contracts/ethereum-1/0xec65f32570e0aecda434d848d9bf1885cbf7c8f1/) | PreSaleShutdownV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2bf51f...159671`](./contracts/ethereum-1/0x2bf51f353db6d8edb668d566bbe4295535159671/) | PreSaleShutdownV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6697ec...c04bb0`](./contracts/ethereum-1/0x6697ec1223c277b871377d5df0a9e84544c04bb0/) | ReleaseRootAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xc4e86c...d72970`](./contracts/polygon-137/0xc4e86cece4faa79e93df420d74ce909292d72970/) | SafeERC20BridgeWithPool | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x8df127...e9367a`](./contracts/bsc-56/0x8df12786ec0e34e60d4c52f9052ba4e536e9367a/) | SafeERC20BridgeWithPool | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5d1ecf...013586`](./contracts/ethereum-1/0x5d1ecf1e8a8fdf7b1a8bc0e7073139a1f2013586/) | WrappedERC20Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
@@ -120,8 +120,8 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 12 |
 | upstream | 0 |
-| standard_library | 3 |
-| needs_review | 6 |
+| standard_library | 1 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 

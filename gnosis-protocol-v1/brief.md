@@ -7,11 +7,11 @@
 - Project: Gnosis Protocol v1 (`gnosis-protocol-v1`)
 - Website: [https://gnosis.io/](https://gnosis.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T23:37:05.935Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
+- Generated: 2026-06-13T19:24:46.840Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-a865
 - Chains: ethereum
-- Contract surface: 110 unique implementations (163 raw deployments)
-- DeFi Llama TVL: $2,227,602.00
+- Contract surface: 113 unique implementations (166 raw deployments)
+- DeFi Llama TVL: $1,884,678.99
 - On-chain TVL (included contracts): $94,385,998.56
 - TVL by chain: Ethereum $94,385,998.56
 
@@ -25,12 +25,12 @@ The BatchExchange contract relies on IdToAddressBiMap for efficient address-to-I
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/73 (0.0%)
-- Verified + Unaudited implementations: 73
+- Verified implementations audited: 0/76 (0.0%)
+- Verified + Unaudited implementations: 76
 - Verified by bytecode match: 0
 - Unverified implementations: 37
-- Unique implementations: 110
-- Raw deployments: 163
+- Unique implementations: 113
+- Raw deployments: 166
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $94,385,998.56
@@ -49,7 +49,7 @@ The BatchExchange contract relies on IdToAddressBiMap for efficient address-to-I
 
 - None
 
-### ⚠️ Verified + Unaudited (73)
+### ⚠️ Verified + Unaudited (76)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -61,11 +61,13 @@ The BatchExchange contract relies on IdToAddressBiMap for efficient address-to-I
 | BaseToken | token | ethereum | [`0x22eeab...a0f0e4`](./contracts/ethereum-1/0x22eeab2f980e8ed7824f8ea548c9595564a0f0e4/) | ⚠️ Unaudited |
 | BasketManager | governance | ethereum | 3 deployments: ethereum [`0x66126b...dea96d`](./contracts/ethereum-1/0x66126b4aa2a1c07536ef8e5e8bd4efda1fdea96d/); ethereum `0x6efa26...79bf61`; ethereum `0x968030...69d7db` | ⚠️ Unaudited |
 | BatchExchange | periphery | ethereum | 2 deployments: ethereum [`0x46f3f2...5e87b5`](./contracts/ethereum-1/0x46f3f2f9662f66a6ddd6a8d1ddec3cd9ae5e87b5/); ethereum `0x6d210b...059015` | ⚠️ Unaudited |
+| BatchExchangeViewer | periphery | ethereum | [`0x7d071f...5cd457`](./contracts/ethereum-1/0x7d071fb584b51d9c38572a04e1848afd835cd457/) | ⚠️ Unaudited |
 | BoostDirector | unknown | ethereum | [`0x8892d7...e10aaf`](./contracts/ethereum-1/0x8892d7a5e018cddb631f4733b5c1654e9de10aaf/) | ⚠️ Unaudited |
 | BoostedSavingsVault | core_logic | ethereum | 10 deployments: ethereum [`0x760ea8...dc0731`](./contracts/ethereum-1/0x760ea8cfdcc4e78d8b9ca3088ecd460246dc0731/); ethereum `0x8dacbe...476958`; ethereum `0x931420...fd7df8`; ethereum `0xa283fc...559d5d`; ethereum `0xadeedd...343c99`; ethereum `0xb1ad72...99851b`; ethereum `0xce1284...d33dc4`; ethereum `0xd124b5...2a6207`; ethereum `0xf5ad2b...352107`; ethereum `0xf65d53...75e35c` | ⚠️ Unaudited |
 | BoostedSavingsVault_imbtc_mainnet_2 | core_logic | ethereum | [`0xf38522...8a3016`](./contracts/ethereum-1/0xf38522f63f40f9dd81abafd2b8efc2ec958a3016/) | ⚠️ Unaudited |
 | Collector | unknown | ethereum | [`0x3f63e5...6c0e43`](./contracts/ethereum-1/0x3f63e5bbb53e46f8b21f67c25bf2dd78bc6c0e43/) | ⚠️ Unaudited |
 | CompoundIntegration | unknown | ethereum | [`0xd55684...9db735`](./contracts/ethereum-1/0xd55684f4369040c12262949ff78299f2bc9db735/) | ⚠️ Unaudited |
+| ConditionalTokens | unknown | ethereum | [`0xc59b0e...407e0c`](./contracts/ethereum-1/0xc59b0e4de5f1248c1140964e0ff287b192407e0c/) | ⚠️ Unaudited |
 | DecentralizedAutonomousTrust | unknown | ethereum | 3 deployments: ethereum [`0x2825f4...016cfa`](./contracts/ethereum-1/0x2825f4ddaa5809da1af2a2d240c4ac4733016cfa/); ethereum `0x334cd6...0a7764`; ethereum `0xa1d65e...725521` | ⚠️ Unaudited |
 | DelayedProxyAdmin | governance | ethereum | [`0x5c8eb5...f92386`](./contracts/ethereum-1/0x5c8eb57b44c1c6391fc7a8a0cf44d26896f92386/) | ⚠️ Unaudited |
 | DIACoingeckoOracle | operational_periphery | ethereum | [`0x07e412...c35d60`](./contracts/ethereum-1/0x07e4120dd7411a49e091a20fa0be33a183c35d60/) | ⚠️ Unaudited |
@@ -87,7 +89,7 @@ The BatchExchange contract relies on IdToAddressBiMap for efficient address-to-I
 | FeederWrapper | unknown | ethereum | [`0xdc6611...9f3a35`](./contracts/ethereum-1/0xdc66115be4eaa30fe8ca3b262bb8e3ff889f3a35/) | ⚠️ Unaudited |
 | Fixed192x64Math | unknown | ethereum | [`0x75a6d6...3805f3`](./contracts/ethereum-1/0x75a6d6251511af081f77f2b531c14808fb3805f3/) | ⚠️ Unaudited |
 | ForgeValidator | unknown | ethereum | 2 deployments: ethereum [`0x4ca912...138ded`](./contracts/ethereum-1/0x4ca9123afc43dc9dde52a57a51afc44324138ded/); ethereum `0xbb90d0...12eaa1` | ⚠️ Unaudited |
-| IdToAddressBiMap | core_logic | ethereum | 2 deployments: ethereum [`0x6f4008...aa841f`](./contracts/ethereum-1/0x6f400810b62df8e13fded51be75ff5393eaa841f/); ethereum `0xed4d05...8d1761` | ⚠️ Unaudited |
+| IdToAddressBiMap | unknown | ethereum | 2 deployments: ethereum [`0x6f4008...aa841f`](./contracts/ethereum-1/0x6f400810b62df8e13fded51be75ff5393eaa841f/); ethereum `0xed4d05...8d1761` | ⚠️ Unaudited |
 | IncentivisedVotingLockup | unknown | ethereum | [`0xae8bc9...a0e1bf`](./contracts/ethereum-1/0xae8bc96da4f9a9613c323478be181fdb2aa0e1bf/) | ⚠️ Unaudited |
 | InterestValidator | unknown | ethereum | 2 deployments: ethereum [`0x98c54f...f7ba0e`](./contracts/ethereum-1/0x98c54fd8c98eaf0938c4a00e7935a66341f7ba0e/); ethereum `0xf1049a...ff3262` | ⚠️ Unaudited |
 | InvariantValidator | unknown | ethereum | 2 deployments: ethereum [`0xca480d...e7d705`](./contracts/ethereum-1/0xca480d596e6717c95a62a4dc1bd4fbd7b7e7d705/); ethereum `0xd36050...0f2f3f` | ⚠️ Unaudited |
@@ -117,6 +119,7 @@ The BatchExchange contract relies on IdToAddressBiMap for efficient address-to-I
 | SavingsContract_imusd_mainnet_22_deprecated | unknown | ethereum | [`0x30647a...7eac19`](./contracts/ethereum-1/0x30647a72dc82d7fbb1123ea74716ab8a317eac19/) | ⚠️ Unaudited |
 | SavingsManager | governance | ethereum | 6 deployments: ethereum [`0x6f0566...e07d3f`](./contracts/ethereum-1/0x6f05662109b296afb0f02bf490300c6b95e07d3f/); ethereum `0x7046b0...815370`; ethereum `0x7594ae...e46136`; ethereum `0x84e563...2ee6d1`; ethereum `0x9781c4...b6b301`; ethereum `0xcefcbb...50234f` | ⚠️ Unaudited |
 | SimpleAirdropper | operational_periphery | ethereum | [`0xda13e3...b178fd`](./contracts/ethereum-1/0xda13e3afed9c112bd906c732684a49dd65b178fd/) | ⚠️ Unaudited |
+| SolutionSubmitter | unknown | ethereum | [`0xa1c956...07e68a`](./contracts/ethereum-1/0xa1c956d7c3d8ea7fd7e3757062e4ac563f07e68a/) | ⚠️ Unaudited |
 | StakingRewards | unknown | ethereum | 4 deployments: ethereum [`0x0d4cd2...f94be4`](./contracts/ethereum-1/0x0d4cd2c24a4c9cd31fcf0d3c4682d234d9f94be4/); ethereum `0x6de3a9...651fb5`; ethereum `0x9b4aba...6c9a6f`; ethereum `0xe6e6e2...a1d261` | ⚠️ Unaudited |
 | StakingRewardsWithPlatformToken | token | ethereum | 4 deployments: ethereum [`0x259702...ad4e70`](./contracts/ethereum-1/0x25970282aac735cd4c76f30bfb0bf2bc8dad4e70/); ethereum `0x881c72...790c80`; ethereum `0xf4a7d2...f7f027`; ethereum `0xf7575d...baa7fb` | ⚠️ Unaudited |
 | StrategyMStableVaultFpMbtcHbtc | core_logic | ethereum | [`0x54d06a...f603f3`](./contracts/ethereum-1/0x54d06a0e1ce55a7a60ee175abceac7e363f603f3/) | ⚠️ Unaudited |
@@ -194,21 +197,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xa3bed4...e9acd2`](./contracts/ethereum-1/0xa3bed4e1c75d00fa6f4e5e6922db7261b5e9acd2/) | MetaToken | token | $2,579,477.45 | Verified native implementation with $2,579,477.45 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x78befc...1a6c7b`](./contracts/ethereum-1/0x78befca7de27d07dc6e71da295cc2946681a6c7b/) | BoostedSavingsVault_imusd_mainnet_2 | core_logic | $43,248.51 | Verified native implementation with $43,248.51 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf61734...3d9d39`](./contracts/ethereum-1/0xf617346a0fb6320e9e578e0c9b2a4588283d9d39/) | AaveIntegration | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x66126b...dea96d`](./contracts/ethereum-1/0x66126b4aa2a1c07536ef8e5e8bd4efda1fdea96d/) | BasketManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x46f3f2...5e87b5`](./contracts/ethereum-1/0x46f3f2f9662f66a6ddd6a8d1ddec3cd9ae5e87b5/) | BatchExchange | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7d071f...5cd457`](./contracts/ethereum-1/0x7d071fb584b51d9c38572a04e1848afd835cd457/) | BatchExchangeViewer | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x760ea8...dc0731`](./contracts/ethereum-1/0x760ea8cfdcc4e78d8b9ca3088ecd460246dc0731/) | BoostedSavingsVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf38522...8a3016`](./contracts/ethereum-1/0xf38522f63f40f9dd81abafd2b8efc2ec958a3016/) | BoostedSavingsVault_imbtc_mainnet_2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3f63e5...6c0e43`](./contracts/ethereum-1/0x3f63e5bbb53e46f8b21f67c25bf2dd78bc6c0e43/) | Collector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd55684...9db735`](./contracts/ethereum-1/0xd55684f4369040c12262949ff78299f2bc9db735/) | CompoundIntegration | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2825f4...016cfa`](./contracts/ethereum-1/0x2825f4ddaa5809da1af2a2d240c4ac4733016cfa/) | DecentralizedAutonomousTrust | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5c8eb5...f92386`](./contracts/ethereum-1/0x5c8eb57b44c1c6391fc7a8a0cf44d26896f92386/) | DelayedProxyAdmin | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xff2e23...377370`](./contracts/ethereum-1/0xff2e231b3d6260937edc698da5f77b6d3d377370/) | Disbursement | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x889cdd...92af86`](./contracts/ethereum-1/0x889cdd162cd5125dcecd465f5accd65fff92af86/) | Dispute | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xe3ebeb...0aa84d`](./contracts/ethereum-1/0xe3ebeb3a6a535131f2861f866d98d555580aa84d/) | DutchXSellerModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x95f823...4635db`](./contracts/ethereum-1/0x95f8231621c47e64bf7037d399cb4bc3e34635db/) | DXDBurnRelayer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa96e6c...2e0576`](./contracts/ethereum-1/0xa96e6c81a5fd03c95ae83aea810774a5c02e0576/) | DXDPayRelayer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdee210...e5c095`](./contracts/ethereum-1/0xdee210b9b3f4e1bd3f64944c277d4dcbe4e5c095/) | DXDSellRelayer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x14a588...21fafb`](./contracts/ethereum-1/0x14a588f15a043913b30c19a80049876e4a21fafb/) | DXTokenRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2837c7...4125de`](./contracts/ethereum-1/0x2837c77527c37d61d9763f53005211dacb4125de/) | FeederLogic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -216,9 +216,9 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x4fb30c...90752d`](./contracts/ethereum-1/0x4fb30c5a3ac8e85bc32785518633303c4590752d/) | FeederPoolV2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdc6611...9f3a35`](./contracts/ethereum-1/0xdc66115be4eaa30fe8ca3b262bb8e3ff889f3a35/) | FeederWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4ca912...138ded`](./contracts/ethereum-1/0x4ca9123afc43dc9dde52a57a51afc44324138ded/) | ForgeValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6f4008...aa841f`](./contracts/ethereum-1/0x6f400810b62df8e13fded51be75ff5393eaa841f/) | IdToAddressBiMap | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6f4008...aa841f`](./contracts/ethereum-1/0x6f400810b62df8e13fded51be75ff5393eaa841f/) | IdToAddressBiMap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xae8bc9...a0e1bf`](./contracts/ethereum-1/0xae8bc96da4f9a9613c323478be181fdb2aa0e1bf/) | IncentivisedVotingLockup | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x98c54f...f7ba0e`](./contracts/ethereum-1/0x98c54fd8c98eaf0938c4a00e7935a66341f7ba0e/) | InterestValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xca480d...e7d705`](./contracts/ethereum-1/0xca480d596e6717c95a62a4dc1bd4fbd7b7e7d705/) | InvariantValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x37186b...256c4b`](./contracts/ethereum-1/0x37186b5d78ebb1f37bc56e5dca7f18ab98256c4b/) | LMSRMarketMakerFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1e91f8...188848`](./contracts/ethereum-1/0x1e91f826fa8aa4fa4d3f595898af3a64dd188848/) | Manager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x945fac...7330a1`](./contracts/ethereum-1/0x945facb997494cc2570096c74b5f66a3507330a1/) | MassetBtcV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -226,15 +226,16 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xf6e53b...9bc7a5`](./contracts/ethereum-1/0xf6e53b3aae671319a0f9d9ca7fac5f41599bc7a5/) | MerkleDrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xda681d...df9001`](./contracts/ethereum-1/0xda681d409319b1f4122b1402c8b5cd4baedf9001/) | Migrator | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xe2f2a5...5935a5`](./contracts/ethereum-1/0xe2f2a5c287993345a840db3b0845fbc70f5935a5/) | MusdV3_deprecated | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xafce80...845eb3`](./contracts/ethereum-1/0xafce80b19a8ce13dec0739a1aab7a028d6845eb3/) | Nexus | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x40da0d...286477`](./contracts/ethereum-1/0x40da0d076a5004beb0b97d08e8cee2667b286477/) | ReserveBuyBackLimit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa78242...14fed5`](./contracts/ethereum-1/0xa7824292efdee1177a1c1bed0649cfdd6114fed5/) | RevenueRecipient | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb8be71...ae4316`](./contracts/ethereum-1/0xb8be713fee0b3f437be4793a23f96fec7eae4316/) | RewardClaimHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x04dfdf...916c50`](./contracts/ethereum-1/0x04dfdfa471b79cc9e6e8c355e6c71f8ec4916c50/) | RewardsDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1c728f...572a39`](./contracts/ethereum-1/0x1c728f1bda86cd8d19f56e36eb9e24ed3e572a39/) | SavingsContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x17d8cb...7a6c24`](./contracts/ethereum-1/0x17d8cbb6bce8cee970a4027d1198f6700a7a6c24/) | SavingsContract_imbtc_mainnet_22 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x30647a...7eac19`](./contracts/ethereum-1/0x30647a72dc82d7fbb1123ea74716ab8a317eac19/) | SavingsContract_imusd_mainnet_22_deprecated | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xda13e3...b178fd`](./contracts/ethereum-1/0xda13e3afed9c112bd906c732684a49dd65b178fd/) | SimpleAirdropper | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa1c956...07e68a`](./contracts/ethereum-1/0xa1c956d7c3d8ea7fd7e3757062e4ac563f07e68a/) | SolutionSubmitter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0d4cd2...f94be4`](./contracts/ethereum-1/0x0d4cd2c24a4c9cd31fcf0d3c4682d234d9f94be4/) | StakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x259702...ad4e70`](./contracts/ethereum-1/0x25970282aac735cd4c76f30bfb0bf2bc8dad4e70/) | StakingRewardsWithPlatformToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x75dae1...ab1478`](./contracts/ethereum-1/0x75dae1eca073cf35ba203e3aca0e21e7d2ab1478/) | TimeLock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x41ab01...ba1f03`](./contracts/ethereum-1/0x41ab01244c3f466294dbc36916a8b62d56ba1f03/) | TimelockManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x18ccbc...69ec79`](./contracts/ethereum-1/0x18ccbcf6a8a415206838bd1ad6e2f648da69ec79/) | TokenVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3af2ae...2157c9`](./contracts/ethereum-1/0x3af2ae62f0d3353c9f15b7fe678ccdaf2b2157c9/) | Whitelist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -244,10 +245,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 56 |
-| upstream | 6 |
-| standard_library | 5 |
-| needs_review | 43 |
+| native | 43 |
+| upstream | 15 |
+| standard_library | 6 |
+| needs_review | 49 |
 
 ## Scope Matching Notes
 

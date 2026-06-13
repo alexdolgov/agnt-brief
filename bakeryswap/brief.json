@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bakeryswap",
-  "generated_at": "2026-05-24T04:46:00.123Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-13T19:25:06.773Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-a865",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "bakeryswap",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 98.36382927531506
   },
   "summary": {
-    "total_contracts": 98,
-    "total_addresses": 185,
-    "unique_implementations": 98,
-    "total_deployments": 185,
+    "total_contracts": 100,
+    "total_addresses": 193,
+    "unique_implementations": 100,
+    "total_deployments": 193,
     "audited_contracts": 0,
-    "unaudited_contracts": 53,
+    "unaudited_contracts": 55,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 52,
-    "contracts_verified_by_bytecode": 1,
+    "contracts_verified_unaudited": 55,
+    "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 45,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3412797.0222899998,
+    "dl_tvl_usd": 2886422.2693,
     "tvl_usd": 612857.0662639528,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -61,6 +61,11 @@
     "project_purpose": "BakerySwap is a decentralized exchange and NFT platform on BSC, offering token swaps, liquidity provision, yield farming, and an NFT marketplace with staking and mystery box features.",
     "relationship_narrative": "All contracts share the BakeryToken (BAKE) as the core incentive and governance token, with the BakerySwapFactory serving as the central registry for liquidity pools. The proxy contracts provide upgradeability for various modules like NFT exchange, staking, and IDO, all integrated under the BakerySwap ecosystem.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 100,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -601,6 +606,82 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x01bf7c66c6bd861915cdaae475042d3c4bae16a7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x2fc2ad3c28560c97caca6d2dcf9b38614f48769a",
+      "name": "BakerySwapPair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BakerySwapPair",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x2fc2ad3c28560c97caca6d2dcf9b38614f48769a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x559e3d9611e9cb8a77c11335bdac49621382188b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x5fef671df9718934fda164da289374f675745d86",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6e218ea042bef40a8baf706b00d0f0a7b4fce50a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xc2eed0f5a0dc28cfa895084bc0a9b8b8279ae492",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xfb72d7c0f1643c96c197a98e5f36ebcf7597d0e3",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1269,6 +1350,15 @@
         {
           "chain_id": 56,
           "chain_name": "bsc",
+          "address": "0x99cc4ec3a73b7191e5ad50811de3ff408d91b98d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
           "address": "0xc137699f44f868f904d41db999d754ed2c135f51",
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1809,8 +1899,8 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xf13015e5ab82c20fb0e6083d89dd1fd773badff1",
-          "source_verified": false,
-          "verified_by_bytecode": true,
+          "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         }
@@ -1818,8 +1908,8 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1954,6 +2044,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x2f5ae8cc1538578e97a3c44d5e417ff5e6d2d47c",
+      "name": "GnosisSafe",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x2bb001433cf04c1f7d71e3c40fed66b2b563065e",
+      "impl_name": "GnosisSafe",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x2f5ae8cc1538578e97a3c44d5e417ff5e6d2d47c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 56,
@@ -3088,7 +3209,7 @@
       "address": "0x773028cd87f93dfa67e2f5fec01db4ea82cc4b07",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3119,7 +3240,7 @@
       "address": "0x7c9378d17534a476d8741f26a46cbae1a0788bd5",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3150,7 +3271,7 @@
       "address": "0x888d8fdfec5f2321355cd91eb0a88047fa679d4c",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3181,7 +3302,7 @@
       "address": "0x8fb398be7acb7110436749a394e3d672b8ddb2ff",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3212,7 +3333,7 @@
       "address": "0x97abe5735576f54f51c3e33e7139596f83a71957",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3491,7 +3612,7 @@
       "address": "0xc921239c1b5dead79c889af1d9e006ef560fffea",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3553,7 +3674,7 @@
       "address": "0xcfb27c7f778780178e95fea84c45e5d79f0a0a4e",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4037,6 +4158,16 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0x2fc2ad3c28560c97caca6d2dcf9b38614f48769a",
+      "name": "BakerySwapPair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0x091307ff8910713aaf2ff4ad3a5f6e1d2b7100c7",
       "name": "BakerySwapPairHelper",
       "role": "periphery",
@@ -4396,10 +4527,10 @@
     }
   ],
   "origin_summary": {
-    "native": 93,
+    "native": 87,
     "upstream": 0,
-    "standard_library": 5,
-    "needs_review": 0
+    "standard_library": 6,
+    "needs_review": 7
   },
   "scope_matching_notes": {
     "match_method_counts": {},

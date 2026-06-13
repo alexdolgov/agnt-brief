@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "pepeteam",
-  "generated_at": "2026-06-11T01:49:15.956Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-13T19:26:01.216Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-a865",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "pepeteam",
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 21,
-    "total_addresses": 64,
+    "total_addresses": 60,
     "unique_implementations": 21,
-    "total_deployments": 64,
+    "total_deployments": 60,
     "audited_contracts": 0,
     "unaudited_contracts": 20,
     "contracts_verified_audited": 0,
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1319181,
+    "dl_tvl_usd": 1031570,
     "tvl_usd": 11093.184709251977,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -45,6 +45,7 @@
     "asd_usd": 11093.184709251977,
     "website_url": "https://pepe.team",
     "chains": [
+      "bsc",
       "ethereum",
       "polygon"
     ],
@@ -387,8 +388,8 @@
       "address": "0x1bda1227875f0f8bb27625dd720f386b40003e14",
       "name": "MintRootAdapter",
       "role": "adapter",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -683,7 +684,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -714,7 +715,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -754,7 +755,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -794,7 +795,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -846,19 +847,28 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0xc4e86cece4faa79e93df420d74ce909292d72970",
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x8df12786ec0e34e60d4c52f9052ba4e536e9367a",
       "name": "SafeERC20BridgeWithPool",
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "PepeTeam Bridge",
+      "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0xc4e86cece4faa79e93df420d74ce909292d72970",
+      "is_proxy": true,
+      "impl_address": "0xfe72ac5e88a81dc651283142318394e80fb03723",
       "impl_name": "SafeERC20BridgeWithPool",
       "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x8df12786ec0e34e60d4c52f9052ba4e536e9367a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 137,
           "chain_name": "polygon",
@@ -922,8 +932,8 @@
       "address": "0x28c3ec13075801c96d109f815aee45303d5dc2dd",
       "name": "WavesCaller",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -940,27 +950,9 @@
           "is_audited": false
         },
         {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x7a924d1978d70561521abd02fd21e1e68d050c52",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
           "chain_id": 137,
           "chain_name": "polygon",
           "address": "0x28c3ec13075801c96d109f815aee45303d5dc2dd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x8dc9ac828303cc2cfa95e27be7d0cded453c8a5f",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -998,27 +990,9 @@
           "is_audited": false
         },
         {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xd7fee535f38055f71d1958a1a4219eafccac1d42",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
           "chain_id": 137,
           "chain_name": "polygon",
           "address": "0x274475ad34234c92c17808003672b7bc81adc031",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x882260324ad5a87bf5007904b4a8ef87023c856a",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1050,15 +1024,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x09d8444770adce8d61fb5c967b57287b70391118",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf7a5611cdac2b69174d4031988c0de0f0de2cc83",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1207,9 +1172,9 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0xc4e86cece4faa79e93df420d74ce909292d72970",
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x8df12786ec0e34e60d4c52f9052ba4e536e9367a",
       "name": "SafeERC20BridgeWithPool",
       "role": "operational_periphery",
       "origin_kind": "native",
@@ -1230,8 +1195,8 @@
   "origin_summary": {
     "native": 12,
     "upstream": 0,
-    "standard_library": 3,
-    "needs_review": 6
+    "standard_library": 1,
+    "needs_review": 8
   },
   "scope_matching_notes": {
     "match_method_counts": {},

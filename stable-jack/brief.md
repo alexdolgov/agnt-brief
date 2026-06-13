@@ -5,11 +5,11 @@
 - Project: Stable Jack (`stable-jack`)
 - Website: [https://www.stablejack.xyz](https://www.stablejack.xyz)
 - Lifecycle: active (Tier 0, 85.7% below peak)
-- Generated: 2026-06-11T03:02:39.941Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-13T19:25:51.426Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-a865
 - Chains: avalanche, sonic
 - Contract surface: 249 unique implementations (368 raw deployments)
-- DeFi Llama TVL: $1,785,928.00
+- DeFi Llama TVL: $1,230,578.00
 - On-chain TVL (included contracts): $76,851,427.99
 - TVL by chain: Avalanche $76,829,444.38 | Sonic $21,983.60
 
@@ -364,10 +364,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 32 |
+| native | 29 |
 | upstream | 0 |
 | standard_library | 4 |
-| needs_review | 213 |
+| needs_review | 216 |
 
 ## Scope Matching Notes
 

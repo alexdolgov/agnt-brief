@@ -6,11 +6,11 @@
 
 - Project: BakerySwap (`bakeryswap`)
 - Lifecycle: declining (Tier 0, 98.4% below peak)
-- Generated: 2026-05-24T04:46:00.123Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-13T19:25:06.773Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-a865
 - Chains: bsc
-- Contract surface: 98 unique implementations (185 raw deployments)
-- DeFi Llama TVL: $3,412,797.02
+- Contract surface: 100 unique implementations (193 raw deployments)
+- DeFi Llama TVL: $2,886,422.27
 - On-chain TVL (included contracts): $612,857.07
 - TVL by chain: Bsc $612,857.07
 
@@ -24,12 +24,12 @@ All contracts share the BakeryToken (BAKE) as the core incentive and governance 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/53 (0.0%)
-- Verified + Unaudited implementations: 52
-- Verified by bytecode match: 1
+- Verified implementations audited: 0/55 (0.0%)
+- Verified + Unaudited implementations: 55
+- Verified by bytecode match: 0
 - Unverified implementations: 45
-- Unique implementations: 98
-- Raw deployments: 185
+- Unique implementations: 100
+- Raw deployments: 193
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $612,857.07
@@ -48,7 +48,7 @@ All contracts share the BakeryToken (BAKE) as the core incentive and governance 
 
 - None
 
-### ⚠️ Verified + Unaudited (52)
+### ⚠️ Verified + Unaudited (55)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -65,6 +65,7 @@ All contracts share the BakeryToken (BAKE) as the core incentive and governance 
 | BakeryMaster | unknown | bsc | [`0x20ec29...e5056f`](./contracts/bsc-56/0x20ec291bb8459b6145317e7126532ce7ece5056f/) | ⚠️ Unaudited |
 | BakeryReserveToken | token | bsc | [`0x418c99...169ed3`](./contracts/bsc-56/0x418c990067accb63357533e23def90af83169ed3/) | ⚠️ Unaudited |
 | BakerySwapFactory | registry | bsc | [`0x01bf7c...ae16a7`](./contracts/bsc-56/0x01bf7c66c6bd861915cdaae475042d3c4bae16a7/) | ⚠️ Unaudited |
+| BakerySwapPair | unknown | bsc | 6 deployments: bsc [`0x2fc2ad...48769a`](./contracts/bsc-56/0x2fc2ad3c28560c97caca6d2dcf9b38614f48769a/); bsc `0x559e3d...82188b`; bsc `0x5fef67...745d86`; bsc `0x6e218e...fce50a`; bsc `0xc2eed0...9ae492`; bsc `0xfb72d7...97d0e3` | ⚠️ Unaudited |
 | BakerySwapPairHelper | periphery | bsc | [`0x091307...7100c7`](./contracts/bsc-56/0x091307ff8910713aaf2ff4ad3a5f6e1d2b7100c7/) | ⚠️ Unaudited |
 | BakerySwapRouter | adapter | bsc | [`0xcde540...3e330f`](./contracts/bsc-56/0xcde540d7eafe93ac5fe6233bee57e1270d3e330f/) | ⚠️ Unaudited |
 | BakeryVoterProxy | unknown | bsc | [`0x382d04...6e8b17`](./contracts/bsc-56/0x382d04194e3607dab5ebaa5b9f8011a4c06e8b17/) | ⚠️ Unaudited |
@@ -76,7 +77,7 @@ All contracts share the BakeryToken (BAKE) as the core incentive and governance 
 | CommonMaster | unknown | bsc | 13 deployments: bsc [`0x2560c6...a4e606`](./contracts/bsc-56/0x2560c6fcb1ee8ff76c512c366b1a9aba52a4e606/); bsc `0x4302b6...7409ec`; bsc `0x4c496d...962e63`; bsc `0x4d6d2e...16e9f5`; bsc `0x62da74...f0956f`; bsc `0x6a8dbb...494f81`; bsc `0x6bc509...7d61a4`; bsc `0x8d921e...d02eed`; bsc `0x99638f...5c5e02`; bsc `0x9c94e8...212c30`; bsc `0xa9e34c...04f7a8`; bsc `0xe6642f...c4850b`; bsc `0xf5df2d...c2058c` | ⚠️ Unaudited |
 | CommonMasterFactory | registry | bsc | 4 deployments: bsc [`0x1307c3...a6dd9c`](./contracts/bsc-56/0x1307c3c5e28d41cc1e8ff977fb9146b419a6dd9c/); bsc `0x6cf0c5...5ea3eb`; bsc `0x885d6c...66c106`; bsc `0xdf2a7a...b7fd93` | ⚠️ Unaudited |
 | CommonNftMasterFactory | registry | bsc | [`0x03b3d5...7f63c6`](./contracts/bsc-56/0x03b3d5973cac451a63869714e56482d6c97f63c6/) | ⚠️ Unaudited |
-| CommonStakeERC721EarnBake | token | bsc | 2 deployments: bsc [`0x72bec5...58a621`](./contracts/bsc-56/0x72bec5f02813b194bd549658e59d62e28458a621/); bsc `0xc13769...135f51` | ⚠️ Unaudited |
+| CommonStakeERC721EarnBake | token | bsc | 3 deployments: bsc [`0x72bec5...58a621`](./contracts/bsc-56/0x72bec5f02813b194bd549658e59d62e28458a621/); bsc `0x99cc4e...91b98d`; bsc `0xc13769...135f51` | ⚠️ Unaudited |
 | CommonStakeERC721EarnBakeFactory | registry | bsc | 2 deployments: bsc [`0x596af0...c8b4ad`](./contracts/bsc-56/0x596af07fb11f7ec4cd804ecc783064d28ec8b4ad/); bsc `0x87020e...56c60f` | ⚠️ Unaudited |
 | CommonStakeERC721EarnERC20 | token | bsc | 2 deployments: bsc [`0xb14b6c...3cc455`](./contracts/bsc-56/0xb14b6c30ce2044e8e762170d985b510e983cc455/); bsc `0xf7f10b...135635` | ⚠️ Unaudited |
 | CommonStakeERC721EarnERC20Factory | registry | bsc | 2 deployments: bsc [`0x543229...b6196a`](./contracts/bsc-56/0x543229590b6b6c7c7250ec19aad8bb2552b6196a/); bsc `0xe9d116...f1dd9b` | ⚠️ Unaudited |
@@ -87,10 +88,12 @@ All contracts share the BakeryToken (BAKE) as the core incentive and governance 
 | DogeMemeNFT | token | bsc | [`0x84d7fe...5bfa72`](./contracts/bsc-56/0x84d7fe5d949ea5fec5d84617badd7590275bfa72/) | ⚠️ Unaudited |
 | Doggy | unknown | bsc | 2 deployments: bsc [`0x44beb8...29fb96`](./contracts/bsc-56/0x44beb847cc2a9d1166868bd139a919cc3329fb96/); bsc `0x74926b...6e00c6` | ⚠️ Unaudited |
 | ETH2Master | unknown | bsc | 2 deployments: bsc [`0xe627f0...278a20`](./contracts/bsc-56/0xe627f00d5a5bfce0640e771af573c41e9a278a20/); bsc `0xe7cfe6...4df729` | ⚠️ Unaudited |
+| ExchangeNFT | token | bsc | 16 deployments: bsc [`0x05b39c...ac8a38`](./contracts/bsc-56/0x05b39c7f648f51153c65c770220bba001dac8a38/); bsc `0x05d189...0b2831`; bsc `0x0f1844...59f3ac`; bsc `0x1f48ae...3681c2`; bsc `0x26b82a...68e814`; bsc `0x58e6e6...cc07b2`; bsc `0x59dc5a...06df61`; bsc `0x615c00...c13490`; bsc `0x7f67a8...fa0e6c`; bsc `0x8443be...53950f`; bsc `0x961985...f4d3b0`; bsc `0xa3514f...d6b326`; bsc `0xa4c3a8...33f644`; bsc `0xc54601...b2cf11`; bsc `0xe590d8...e74b56`; bsc `0xf13015...badff1` | ⚠️ Unaudited |
 | ExchangeNFTConfiguration | governance | bsc | 2 deployments: bsc [`0x5f8c0a...d77b94`](./contracts/bsc-56/0x5f8c0aa28ca6d3cad437fea8d76f2832c3d77b94/); bsc `0x611e69...fdecdd` | ⚠️ Unaudited |
 | GetCarNFTStakingPower | token | bsc | [`0x38e90a...989e5f`](./contracts/bsc-56/0x38e90ad2e3fa7af9678a39d143e8fad39b989e5f/) | ⚠️ Unaudited |
 | GetComboStakingPower | unknown | bsc | [`0xba7e47...905ef3`](./contracts/bsc-56/0xba7e47d64ba87399da8a5e57eec010f4b9905ef3/) | ⚠️ Unaudited |
 | GetPokerCardStakingPower | unknown | bsc | [`0xbaafb7...961145`](./contracts/bsc-56/0xbaafb77447ceabe7d20f5ff03abb62143a961145/) | ⚠️ Unaudited |
+| GnosisSafe | governance | bsc | [`0x2f5ae8...d2d47c`](./contracts/bsc-56/0x2f5ae8cc1538578e97a3c44d5e417ff5e6d2d47c/) | ⚠️ Unaudited |
 | IdoFactory | registry | bsc | 3 deployments: bsc [`0x8ad715...f7bc80`](./contracts/bsc-56/0x8ad71503775f5a43303f8c22e2d84d6decf7bc80/); bsc `0xb673b0...4d6e28`; bsc `0xceb1c1...fd3a6f` | ⚠️ Unaudited |
 | MuskDogeNFT | token | bsc | [`0x1233b9...0cdbd3`](./contracts/bsc-56/0x1233b9f706cb9028a03b61af125cf1fe840cdbd3/) | ⚠️ Unaudited |
 | MysteryBox | unknown | bsc | 2 deployments: bsc [`0x000fcc...b54311`](./contracts/bsc-56/0x000fcc025797f976b5043de1b17a5d9734b54311/); bsc `0xe910ad...5a8861` | ⚠️ Unaudited |
@@ -111,13 +114,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ⚠️ Verified by Bytecode + Unaudited (1)
+### ⚠️ Verified by Bytecode + Unaudited (0)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| ExchangeNFT | token | bsc | 16 deployments: bsc [`0x05b39c...ac8a38`](./contracts/bsc-56/0x05b39c7f648f51153c65c770220bba001dac8a38/); bsc `0x05d189...0b2831`; bsc `0x0f1844...59f3ac`; bsc `0x1f48ae...3681c2`; bsc `0x26b82a...68e814`; bsc `0x58e6e6...cc07b2`; bsc `0x59dc5a...06df61`; bsc `0x615c00...c13490`; bsc `0x7f67a8...fa0e6c`; bsc `0x8443be...53950f`; bsc `0x961985...f4d3b0`; bsc `0xa3514f...d6b326`; bsc `0xa4c3a8...33f644`; bsc `0xc54601...b2cf11`; bsc `0xe590d8...e74b56`; bsc `0xf13015...badff1` | ⚠️ Unaudited (bytecode match) |
+- None
 
 ### ❓ Unverified (45)
 
@@ -195,6 +196,7 @@ Verified + unaudited native implementations ranked by TVL:
 | bsc | [`0x20ec29...e5056f`](./contracts/bsc-56/0x20ec291bb8459b6145317e7126532ce7ece5056f/) | BakeryMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x418c99...169ed3`](./contracts/bsc-56/0x418c990067accb63357533e23def90af83169ed3/) | BakeryReserveToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x01bf7c...ae16a7`](./contracts/bsc-56/0x01bf7c66c6bd861915cdaae475042d3c4bae16a7/) | BakerySwapFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x2fc2ad...48769a`](./contracts/bsc-56/0x2fc2ad3c28560c97caca6d2dcf9b38614f48769a/) | BakerySwapPair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x091307...7100c7`](./contracts/bsc-56/0x091307ff8910713aaf2ff4ad3a5f6e1d2b7100c7/) | BakerySwapPairHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xcde540...3e330f`](./contracts/bsc-56/0xcde540d7eafe93ac5fe6233bee57e1270d3e330f/) | BakerySwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x382d04...6e8b17`](./contracts/bsc-56/0x382d04194e3607dab5ebaa5b9f8011a4c06e8b17/) | BakeryVoterProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -236,10 +238,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 93 |
+| native | 87 |
 | upstream | 0 |
-| standard_library | 5 |
-| needs_review | 0 |
+| standard_library | 6 |
+| needs_review | 7 |
 
 ## Scope Matching Notes
 

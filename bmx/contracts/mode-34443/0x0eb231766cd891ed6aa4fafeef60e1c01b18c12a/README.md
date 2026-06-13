@@ -5,7 +5,7 @@
 | Chain | mode (34443) |
 | Address | `0x0eb231766cd891ed6aa4fafeef60e1c01b18c12a` |
 | Role | token |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 3 (base `0x64755939a80bc89e1d2d0f93a312908d348bc8de`; base `0xef187825c6cda0570b717a8e6fda734812ec0b09`; mode [`0x0eb231766cd891ed6aa4fafeef60e1c01b18c12a`](../0x0eb231766cd891ed6aa4fafeef60e1c01b18c12a/)) |

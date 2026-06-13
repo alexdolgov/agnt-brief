@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stable-jack",
-  "generated_at": "2026-06-11T03:02:39.941Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
+  "generated_at": "2026-06-13T19:25:51.426Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-a865",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stable-jack",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1785928,
+    "dl_tvl_usd": 1230578,
     "tvl_usd": 76851427.98508719,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -1701,7 +1701,7 @@
       "address": "0x50a68cf27c6cb264d1d9657435da5a75bab7739a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1732,7 +1732,7 @@
       "address": "0x5220ffe4afecdd24684e16b090eac60fc48ea29e",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1763,7 +1763,7 @@
       "address": "0x63cde3525fd246f7ef9b867fa07c075fae5ce654",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -9162,10 +9162,10 @@
     }
   ],
   "origin_summary": {
-    "native": 32,
+    "native": 29,
     "upstream": 0,
     "standard_library": 4,
-    "needs_review": 213
+    "needs_review": 216
   },
   "scope_matching_notes": {
     "match_method_counts": {},

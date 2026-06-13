@@ -584,11 +584,16 @@
 | [iq](./iq/) | $23.9M | 0.0% | $23.9M | active | 0 | 2 | 2026-06-11 |
 | [iron-bank](./iron-bank/) | $676.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ithaca-protocol](./ithaca-protocol/) | $12.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [itrust-finance](./itrust-finance/) | $365.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | declining | 0 | 181 | 2026-06-11 |
+| [jbc.finance](./jbc.finance/) | $397.8 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [jetswap](./jetswap/) | $323.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [jiko](./jiko/) | $116.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [jito](./jito/) | $642.5M | 0.0% | ? | unknown | 15 | 0 | 2026-06-13 |
 | [jones-dao](./jones-dao/) | $519.7M | 0.0% | $519.7M | active | 5 | 502 | 2026-06-11 |
+| [jpg-store](./jpg-store/) | $130.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [juicebox](./juicebox/) | $8.6M | 5.9% | ? | active | 10 | 77 | 2026-06-11 |
+| [justlend](./justlend/) | $3.3B | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-06-11 |
 | [kaio](./kaio/) | $60.8M | 0.0% | ? | declining | 0 | 35 | 2026-06-12 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | active | 0 | 4 | 2026-06-12 |

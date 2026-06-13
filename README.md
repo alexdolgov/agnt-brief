@@ -394,9 +394,14 @@ Each project directory contains:
 | [aitech](./aitech/brief.md) | $3.96M | bsc | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [akropolis](./akropolis/brief.md) | $5.83K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [aladdin-dao](./aladdin-dao/brief.md) | $23.21K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [algoblocks](./algoblocks/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [algodex](./algodex/brief.md) | $2.72K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [algofi](./algofi/brief.md) | $651.63K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [alium-swap](./alium-swap/brief.md) | $15.04K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [alphafi](./alphafi/brief.md) | $193.33M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
+| [alphasec](./alphasec/brief.md) | $496.73K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
+| [alphbanx](./alphbanx/brief.md) | $391.93K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
+| [altitude](./altitude/brief.md) | $32.96K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [altitude.fi](./altitude.fi/brief.md) | $13.71M | ethereum | 124 | 18/124 (15%) | 72.2% | 0.0% (-) | 6 | aging | ⚠️ declining | - |
 | [ambient](./ambient/brief.md) | $2.70M | 5 | 30 | 17/30 (57%) | 64.7% | 0.0% (-) | 2 | stale | ⚠️ declining | - |
 | [amet-finance](./amet-finance/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -997,5 +1002,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T12:13:15.867Z_
-_Projects: 985_
+_Generated: 2026-06-13T12:15:45.342Z_
+_Projects: 990_

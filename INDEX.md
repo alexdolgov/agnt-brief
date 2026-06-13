@@ -35,7 +35,9 @@
 | [akropolis](./akropolis/) | $5.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [aladdin-dao](./aladdin-dao/) | $23.2K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [alchemix](./alchemix/) | $340.7M | 6.4% | $338.7M | active | 11 | 388 | 2026-06-10 |
+| [algoblocks](./algoblocks/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [algodex](./algodex/) | $2.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [algofi](./algofi/) | $651.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 15 | 58 | 2026-06-10 |
 | [alium-swap](./alium-swap/) | $15.0K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [allbridge](./allbridge/) | $21.7M | 0.0% | $21.7M | declining | 11 | 287 | 2026-06-12 |
@@ -43,8 +45,11 @@
 | [alphafi](./alphafi/) | $193.3M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [alphagrowth](./alphagrowth/) | $7.4M | 14.3% | $7.4M | active | 16 | 40 | 2026-06-13 |
 | [alphaping](./alphaping/) | $73.6M | 0.0% | $73.6M | active | 0 | 4 | 2026-06-12 |
+| [alphasec](./alphasec/) | $496.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [alphax](./alphax/) | $218.2K | 0.0% | $218.2K | active | 1 | 1 | 2026-06-10 |
+| [alphbanx](./alphbanx/) | $391.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [altitude.fi](./altitude.fi/) | $16.1M | 72.2% | ? | declining | 7 | 124 | 2026-06-10 |
+| [altitude](./altitude/) | $33.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ambient](./ambient/) | $2.7M | 64.7% | ? | declining | 3 | 30 | 2026-06-10 |
 | [ambire-wallet](./ambire-wallet/) | $5.8M | 20.0% | $5.8M | active | 12 | 13 | 2026-06-12 |
 | [amet-finance](./amet-finance/) | $0.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |

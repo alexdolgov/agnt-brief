@@ -892,11 +892,16 @@ Each project directory contains:
 | [lumenswap](./lumenswap/brief.md) | $6.33M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [lumin-finance](./lumin-finance/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [lusd-chickenbonds](./lusd-chickenbonds/brief.md) | $1.49M | ethereum | 24 | 21/24 (88%) | 28.6% | 0.0% (-) | 6 | stale | ⚠️ declining | - |
+| [magik-finance](./magik-finance/brief.md) | $3.53K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [magma](./magma/brief.md) | $4.49M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [magma-finance-almm](./magma-finance-almm/brief.md) | $1.13K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [magma-staking](./magma-staking/brief.md) | $1.16M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [magpie-ecosystem](./magpie-ecosystem/brief.md) | $19.12M | 8 | 218 | 156/218 (72%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [maha.xyz](./maha.xyz/brief.md) | $2.62 | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [maia-dao-ecosystem](./maia-dao-ecosystem/brief.md) | $189.36K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [mama](./mama/brief.md) | $49.25 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [manarium](./manarium/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [manga-fi](./manga-fi/brief.md) | $5.76K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [mangrove](./mangrove/brief.md) | $4.26M | 4 | 68 | 41/68 (60%) | 22.0% | 14.6% (ChainSecurity) | 5 | aging | ✅ active | - |
 | [manta-atlantic-stake](./manta-atlantic-stake/brief.md) | $5.46M | ethereum, manta | 109 | 68/109 (62%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [manta-cedefi](./manta-cedefi/brief.md) | $26.48M | manta | 17 | 15/17 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1190,5 +1195,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T13:39:59.288Z_
-_Projects: 1178_
+_Generated: 2026-06-13T13:42:23.472Z_
+_Projects: 1183_

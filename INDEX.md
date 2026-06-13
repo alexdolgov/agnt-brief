@@ -210,6 +210,7 @@
 | [elyfi](./elyfi/) | $434.8K | 5.9% | $175.9 | dead | 2 | 30 | 2026-05-24 |
 | [endur](./endur/) | $9.4M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
 | [enosys](./enosys/) | $17.2M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
+| [ensuro](./ensuro/) | $490.6K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [equalizer](./equalizer/) | $374.8K | 0.0% | $374.8K | declining | 0 | 292 | 2026-06-10 |
 | [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-06-13 |
 | [equilibria](./equilibria/) | $26.9M | 17.6% | $15.7M | declining | 6 | 119 | 2026-06-10 |
@@ -239,6 +240,7 @@
 | [flexa](./flexa/) | $1.4M | 100.0% | ? | declining | 2 | 2 | 2026-06-10 |
 | [flipster](./flipster/) | $33.0M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 16 | 2026-06-13 |
+| [fluxion-network](./fluxion-network/) | $2.4M | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [flying-tulip](./flying-tulip/) | $51.3M | 0.0% | $51.3M | active | 0 | 62 | 2026-06-13 |
 | [folks-finance](./folks-finance/) | $89.3M | 0.0% | ? | unknown | 21 | 0 | 2026-06-13 |
 | [fomo3d](./fomo3d/) | $2.5M | 0.0% | ? | active | 0 | 23 | 2026-06-10 |
@@ -319,6 +321,7 @@
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-06-12 |
 | [ink-bridge](./ink-bridge/) | $59.3M | 44.0% | ? | active | 17 | 68 | 2026-06-11 |
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 65 | 2026-06-13 |
+| [intuition](./intuition/) | $0.0 | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | active | 7 | 154 | 2026-06-11 |
 | [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-06-11 |
 | [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 39 | 2026-06-11 |
@@ -366,6 +369,7 @@
 | [liminal](./liminal/) | $24.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | active | 4 | 20 | 2026-06-11 |
+| [liquity](./liquity/) | $217.0M | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [lisk-bridge](./lisk-bridge/) | $50.9M | 0.0% | $50.9M | active | 0 | 102 | 2026-06-12 |
 | [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | declining | 0 | 93 | 2026-06-11 |
 | [llamapay](./llamapay/) | $21.0M | 0.0% | ? | active | 1 | 20 | 2026-06-12 |
@@ -416,6 +420,7 @@
 | [mode-bridge](./mode-bridge/) | $6.1M | 2.9% | ? | declining | 21 | 100 | 2026-06-11 |
 | [mole](./mole/) | $8.6M | 0.0% | ? | active | 1 | 49 | 2026-06-13 |
 | [moneyonchain](./moneyonchain/) | $43.7M | 0.0% | ? | unknown | 12 | 0 | 2026-06-11 |
+| [monox](./monox/) | $10.9K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-06-11 |
 | [moola-market](./moola-market/) | $73.9K | 0.0% | $73.9K | declining | 1 | 53 | 2026-06-11 |
 | [moonlander](./moonlander/) | $30.0M | 0.0% | ? | active | 0 | 11 | 2026-06-12 |

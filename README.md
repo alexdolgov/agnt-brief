@@ -401,6 +401,7 @@ Each project directory contains:
 | [avalaunch](./avalaunch/brief.md) | $6.84M | avalanche | 38 | 13/38 (34%) | 84.6% | 0.0% (-) | 13 | stale | ✅ active | - |
 | [avalon-labs](./avalon-labs/brief.md) | $550.83M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [baseline-protocol](./baseline-protocol/brief.md) | $69.26M | base, blast, ethereum | 112 | 4/112 (4%) | 25.0% | 0.0% (-) | 1 | aging | ✅ active | - |
+| [beamswap](./beamswap/brief.md) | $26.09K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [bedrock](./bedrock/brief.md) | $306.57M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [benddao](./benddao/brief.md) | $7.15M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [bifi](./bifi/brief.md) | $7.43M | avalanche, ethereum, klaytn | 170 | 45/170 (26%) | 30.4% | 0.0% (-) | 3 | stale | ✅ active | - |
@@ -449,6 +450,7 @@ Each project directory contains:
 | [coinstore](./coinstore/brief.md) | $62.21M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [coinw](./coinw/brief.md) | $1.11M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [colend-protocol](./colend-protocol/brief.md) | $4.19M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
+| [convex-finance](./convex-finance/brief.md) | $657.98M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [core-bridge](./core-bridge/brief.md) | $4.02M | avalanche, base | 6 | 2/6 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [coti-treasury](./coti-treasury/brief.md) | $9.89M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [cozy-finance](./cozy-finance/brief.md) | $2.30M | optimism | 48 | 5/48 (10%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
@@ -526,6 +528,7 @@ Each project directory contains:
 | [hopr](./hopr/brief.md) | $1.43M | gnosis | 81 | 23/81 (28%) | 4.3% | 4.3% (ChainSecurity) | 1 | stale | ✅ active | - |
 | [horizondex](./horizondex/brief.md) | $60.34K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [hotcoin](./hotcoin/brief.md) | $5.60M | scroll | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [hourglass](./hourglass/brief.md) | $139.93K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [houses-of-rome](./houses-of-rome/brief.md) | $0.00 | moonriver | 51 | 6/51 (12%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [hskhodlium](./hskhodlium/brief.md) | $1.51M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [hybra](./hybra/brief.md) | $1.82M | hyperliquid | 81 | 15/81 (19%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -563,6 +566,7 @@ Each project directory contains:
 | [liquidity-house](./liquidity-house/brief.md) | $1.44M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [llamapay](./llamapay/brief.md) | $21.01M | 18 | 20 | 6/20 (30%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [lockon](./lockon/brief.md) | $1.05M | arbitrum, polygon | 23 | 16/23 (70%) | 56.3% | 0.0% (-) | 4 | fresh | ✅ active | - |
+| [ltv-protocol](./ltv-protocol/brief.md) | $12.61K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [lumenswap](./lumenswap/brief.md) | $6.33M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [lusd-chickenbonds](./lusd-chickenbonds/brief.md) | $1.49M | ethereum | 24 | 21/24 (88%) | 28.6% | 0.0% (-) | 6 | stale | ⚠️ declining | - |
 | [magma-staking](./magma-staking/brief.md) | $1.16M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -574,6 +578,7 @@ Each project directory contains:
 | [manta-pacific](./manta-pacific/brief.md) | $21.11M | ethereum, manta | 12 | 10/12 (83%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [mantle-restaking](./mantle-restaking/brief.md) | $60.85M | ethereum, mantle | 25 | 21/25 (84%) | 59.1% | 18.2% (MixBytes) | 8 | fresh | ⚠️ declining | - |
 | [matstake](./matstake/brief.md) | $4.67M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [maya-protocol](./maya-protocol/brief.md) | $10.17M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [meld-gold](./meld-gold/brief.md) | $9.69M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [merchant-moe](./merchant-moe/brief.md) | $37.26M | mantle | 53 | 26/53 (49%) | 50.0% | 0.0% (-) | 1 | stale | ❓ unknown | - |
 | [merlinswap](./merlinswap/brief.md) | $6.89M | merlin | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -759,5 +764,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T10:18:53.638Z_
-_Projects: 747_
+_Generated: 2026-06-13T10:21:24.159Z_
+_Projects: 752_

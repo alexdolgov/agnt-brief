@@ -1,0 +1,205 @@
+{
+  "schema_version": "2.0",
+  "project_key": "ltv-protocol",
+  "generated_at": "2026-06-13T10:20:22.670Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 4,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 12605.751,
+    "tvl_usd": 12605.751,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://ltv.finance",
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 4
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [
+    {
+      "audit_id": 13402,
+      "audit_key": "audit-13402",
+      "report_name": "oxorio_ltv_v0_security_audit.pdf",
+      "report_url": "https://github.com/ltvprotocol/ltv_v0/blob/main/audits/oxorio_ltv_v0_security_audit.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 13402,
+          "report_url": "https://github.com/ltvprotocol/ltv_v0/blob/main/audits/oxorio_ltv_v0_security_audit.pdf"
+        },
+        {
+          "audit_id": 13405,
+          "report_url": "https://github.com/ltvprotocol/ltv_v0/blob/74f41db9b065f64c471498135e06026e667058b2/audits/oxorio_ltv_v0_security_audit.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 13403,
+      "audit_key": "audit-13403",
+      "report_name": "oxorio_vault_craft_security_audit.pdf",
+      "report_url": "https://github.com/ltvprotocol/vault_craft/blob/main/audits/oxorio_vault_craft_security_audit.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 13403,
+          "report_url": "https://github.com/ltvprotocol/vault_craft/blob/main/audits/oxorio_vault_craft_security_audit.pdf"
+        },
+        {
+          "audit_id": 13406,
+          "report_url": "https://github.com/ltvprotocol/vault_craft/blob/4273c1d9100a6793ba64a9883c9b4f9af276983f/audits/oxorio_vault_craft_security_audit.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 13404,
+      "audit_key": "audit-13404",
+      "report_name": "oxorio_transparent_upgradeable_beacon_proxy_security_audit.pdf",
+      "report_url": "https://github.com/ltvprotocol/transparent_upgradeable_beacon_proxy/blob/main/audits/oxorio_transparent_upgradeable_beacon_proxy_security_audit.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 13404,
+          "report_url": "https://github.com/ltvprotocol/transparent_upgradeable_beacon_proxy/blob/main/audits/oxorio_transparent_upgradeable_beacon_proxy_security_audit.pdf"
+        },
+        {
+          "audit_id": 13407,
+          "report_url": "https://github.com/ltvprotocol/transparent_upgradeable_beacon_proxy/blob/696553975155c3dbf78a14a38b2d2f38bd88ee98/audits/oxorio_transparent_upgradeable_beacon_proxy_security_audit.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 13408,
+      "audit_key": "audit-13408",
+      "report_name": "AUDIT_SCOPE.md",
+      "report_url": "https://github.com/ltvprotocol/ltv_v0/blob/main/AUDIT_SCOPE.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 13402,
+        "report_name": "oxorio_ltv_v0_security_audit.pdf"
+      },
+      {
+        "audit_id": 13403,
+        "report_name": "oxorio_vault_craft_security_audit.pdf"
+      },
+      {
+        "audit_id": 13404,
+        "report_name": "oxorio_transparent_upgradeable_beacon_proxy_security_audit.pdf"
+      },
+      {
+        "audit_id": 13408,
+        "report_name": "AUDIT_SCOPE.md"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

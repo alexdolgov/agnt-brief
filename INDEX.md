@@ -75,6 +75,7 @@
 | [bakeryswap](./bakeryswap/) | $612.9K | 0.0% | $612.9K | declining | 1 | 98 | 2026-05-24 |
 | [bancor](./bancor/) | $48.8M | 23.5% | $43.8M | declining | 4 | 121 | 2026-06-10 |
 | [baseline-protocol](./baseline-protocol/) | $69.3M | 25.0% | ? | active | 8 | 112 | 2026-06-10 |
+| [beamswap](./beamswap/) | $26.1K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [beanstalk](./beanstalk/) | $142.5M | 20.4% | $142.5M | declining | 7 | 244 | 2026-06-10 |
 | [bedrock](./bedrock/) | $306.6M | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [belt-finance](./belt-finance/) | $15.3M | 47.5% | $7.1M | declining | 6 | 1331 | 2026-06-10 |
@@ -148,6 +149,7 @@
 | [coinw](./coinw/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [colend-protocol](./colend-protocol/) | $4.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
 | [concentrator](./concentrator/) | $112.0M | 31.3% | $105.2M | active | 33 | 342 | 2026-06-10 |
+| [convex-finance](./convex-finance/) | $658.0M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [core-bridge](./core-bridge/) | $4.0M | 0.0% | ? | active | 0 | 6 | 2026-06-10 |
 | [coti-treasury](./coti-treasury/) | $9.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [cozy-finance](./cozy-finance/) | $2.3M | 0.0% | ? | active | 5 | 48 | 2026-06-10 |
@@ -281,6 +283,7 @@
 | [hopr](./hopr/) | $1.4M | 4.3% | ? | active | 2 | 81 | 2026-06-11 |
 | [horizondex](./horizondex/) | $60.3K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [hotcoin](./hotcoin/) | $5.6M | 0.0% | ? | active | 0 | 1 | 2026-06-13 |
+| [hourglass](./hourglass/) | $139.9K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [houses-of-rome](./houses-of-rome/) | $0.0 | 0.0% | ? | dead | 0 | 51 | 2026-06-10 |
 | [hskhodlium](./hskhodlium/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [hybra](./hybra/) | $1.8M | 0.0% | ? | active | 0 | 81 | 2026-06-10 |
@@ -358,6 +361,7 @@
 | [lockon](./lockon/) | $1.0M | 56.3% | ? | active | 7 | 23 | 2026-06-11 |
 | [looping-collective](./looping-collective/) | $11.8M | 25.0% | $11.6M | active | 13 | 18 | 2026-06-12 |
 | [loopring](./loopring/) | $2.4M | 8.1% | $2.4M | declining | 1 | 141 | 2026-06-13 |
+| [ltv-protocol](./ltv-protocol/) | $12.6K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [lumenswap](./lumenswap/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-06-11 |
 | [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-31 |
@@ -375,6 +379,7 @@
 | [mantra-dao](./mantra-dao/) | $611.0M | 0.0% | $611.0M | declining | 1 | 195 | 2026-06-11 |
 | [matstake](./matstake/) | $4.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [maverick-protocol](./maverick-protocol/) | $26.8M | 35.3% | $26.8M | declining | 7 | 93 | 2026-06-11 |
+| [maya-protocol](./maya-protocol/) | $10.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [mcdex](./mcdex/) | $1.1M | 8.3% | $1.1M | dead | 4 | 1465 | 2026-06-11 |
 | [mdex](./mdex/) | $235.5K | 85.7% | $20.2K | declining | 3 | 13 | 2026-06-11 |
 | [meeds-finance](./meeds-finance/) | $1.8M | 0.0% | $1.8M | unknown | 0 | 4 | 2026-06-11 |

@@ -1,0 +1,250 @@
+{
+  "schema_version": "2.0",
+  "project_key": "convex-finance",
+  "generated_at": "2026-06-13T10:19:18.263Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 7,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 657978990.92985,
+    "tvl_usd": 657978990.92985,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://www.convexfinance.com/",
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2021-04",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 6,
+      "unknown": 1
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [
+    {
+      "audit_id": 12945,
+      "audit_key": "audit-12945",
+      "report_name": "Convex Platform Security Audit Report.pdf",
+      "report_url": "https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12946,
+      "audit_key": "audit-12946",
+      "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>",
+      "report_url": "https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12947,
+      "audit_key": "audit-12947",
+      "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>",
+      "report_url": "https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12948,
+      "audit_key": "audit-12948",
+      "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>",
+      "report_url": "https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12949,
+      "audit_key": "audit-12949",
+      "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>",
+      "report_url": "https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12950,
+      "audit_key": "audit-12950",
+      "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>",
+      "report_url": "https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12951,
+      "audit_key": "audit-12951",
+      "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>",
+      "report_url": "https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 12945,
+        "report_name": "Convex Platform Security Audit Report.pdf"
+      },
+      {
+        "audit_id": 12946,
+        "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>"
+      },
+      {
+        "audit_id": 12947,
+        "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>"
+      },
+      {
+        "audit_id": 12948,
+        "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>"
+      },
+      {
+        "audit_id": 12949,
+        "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>"
+      },
+      {
+        "audit_id": 12950,
+        "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>"
+      },
+      {
+        "audit_id": 12951,
+        "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

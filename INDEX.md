@@ -480,7 +480,9 @@
 | [multichain](./multichain/) | $12.5M | 42.9% | $128.8 | dead | 15 | 17 | 2026-06-11 |
 | [mux-protocol](./mux-protocol/) | $862.0K | 21.7% | $862.0K | active | 2 | 1198 | 2026-06-11 |
 | [mvl-staking](./mvl-staking/) | $38.1M | 50.0% | ? | unknown | 2 | 49 | 2026-06-11 |
+| [myso](./myso/) | $28.0K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [mystic-finance](./mystic-finance/) | $5.8M | 0.0% | ? | unknown | 10 | 0 | 2026-06-11 |
+| [myx-finance](./myx-finance/) | $986.0K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [nado](./nado/) | $49.3M | 0.0% | ? | active | 0 | 22 | 2026-06-12 |
 | [native](./native/) | $67.6M | 0.0% | $67.6M | active | 0 | 80 | 2026-06-12 |
 | [navi-protocol](./navi-protocol/) | $275.7M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
@@ -489,6 +491,7 @@
 | [near-intents](./near-intents/) | $3.7M | 0.0% | $3.7M | active | 0 | 7 | 2026-06-12 |
 | [neemo-finance](./neemo-finance/) | $1.4M | 0.0% | ? | active | 1 | 14 | 2026-06-11 |
 | [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 17 | 2026-06-11 |
+| [nemo](./nemo/) | $76.1K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [neo-tokyo](./neo-tokyo/) | $1.0M | 0.0% | ? | unknown | 0 | 86 | 2026-05-31 |
 | [neopin](./neopin/) | $40.2M | 0.0% | ? | active | 3 | 104 | 2026-06-12 |
 | [neptune-finance](./neptune-finance/) | $5.9M | 0.0% | ? | active | 3 | 2 | 2026-06-13 |
@@ -512,6 +515,7 @@
 | [notional](./notional/) | $1.2M | 19.2% | $755.7K | declining | 6 | 79 | 2026-06-11 |
 | [nucleus](./nucleus/) | $996.4K | 50.0% | ? | active | 11 | 6 | 2026-05-26 |
 | [nuls](./nuls/) | $7.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [numisme](./numisme/) | $309.1 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [o2-exchange](./o2-exchange/) | $2.2M | 0.0% | ? | unknown | 13 | 0 | 2026-06-13 |
 | [obeliskbtc](./obeliskbtc/) | $33.2M | 36.8% | $33.2M | declining | 1 | 19 | 2026-06-13 |
 | [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
@@ -531,6 +535,7 @@
 | [osl](./osl/) | $92.6M | 0.0% | ? | active | 0 | 4 | 2026-06-12 |
 | [osmosis-dex](./osmosis-dex/) | $18.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [ostium](./ostium/) | $29.1M | 47.1% | ? | active | 7 | 17 | 2026-06-11 |
+| [otsea](./otsea/) | $393.8K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [outcome-finance](./outcome-finance/) | $1.3M | 0.0% | ? | declining | 0 | 3 | 2026-06-11 |
 | [overnight-finance](./overnight-finance/) | $10.0M | 0.0% | ? | declining | 2 | 4353 | 2026-06-11 |
 | [overtime](./overtime/) | $42.5M | 0.0% | $42.5M | declining | 8 | 200 | 2026-06-11 |

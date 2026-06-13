@@ -7,6 +7,7 @@
 | [3f-mutual](./3f-mutual/) | $3.9M | 0.0% | ? | active | 0 | 21 | 2026-06-10 |
 | [3jane](./3jane/) | $76.6M | 61.9% | $76.6M | declining | 4 | 23 | 2026-06-10 |
 | [40-acres](./40-acres/) | $10.0M | 0.0% | $10.0M | active | 4 | 325 | 2026-06-12 |
+| [a51-finance](./a51-finance/) | $13.5K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [abc-pool](./abc-pool/) | $6.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [abracadabra](./abracadabra/) | $0.0 | 4.7% | $0.0 | declining | 5 | 881 | 2026-06-13 |
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 3 | 43 | 2026-06-10 |
@@ -81,6 +82,7 @@
 | [benddao](./benddao/) | $7.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-10 |
 | [beradrome](./beradrome/) | $3.3M | 0.0% | $3.3M | declining | 0 | 18 | 2026-06-13 |
 | [bifi](./bifi/) | $236.7K | 30.4% | ? | active | 7 | 170 | 2026-06-10 |
+| [bifrost-liquid-staking](./bifrost-liquid-staking/) | $16.7M | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [bigone](./bigone/) | $35.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [bima-cdp](./bima-cdp/) | $5.3M | 51.6% | ? | active | 3 | 37 | 2026-06-10 |
 | [binaryx-platform](./binaryx-platform/) | $8.7M | 0.0% | ? | active | 3 | 133 | 2026-06-13 |
@@ -139,6 +141,7 @@
 | [citrea-bridge](./citrea-bridge/) | $6.6M | 50.0% | ? | active | 10 | 3 | 2026-06-10 |
 | [clearpool](./clearpool/) | $17.6K | 7.1% | $17.6K | active | 7 | 63 | 2026-06-12 |
 | [clever](./clever/) | $3.2M | 10.6% | $1.6M | active | 3 | 76 | 2026-06-10 |
+| [clober](./clober/) | $516.5K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [coin8](./coin8/) | $53.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [coinsquare](./coinsquare/) | $9.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-13 |
 | [coinstore](./coinstore/) | $62.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
@@ -717,6 +720,7 @@
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [xsy](./xsy/) | $3.6M | 25.0% | $3.6M | active | 1 | 15 | 2026-06-11 |
 | [xwin-finance](./xwin-finance/) | $1.8M | 0.0% | $1.8M | active | 1 | 19 | 2026-06-12 |
+| [y2k-finance](./y2k-finance/) | $30.0K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [yala](./yala/) | $4.6M | 0.0% | $4.6M | active | 1 | 30 | 2026-06-11 |
 | [yamato-protocol](./yamato-protocol/) | $910.9 | 47.8% | $818.3 | active | 3 | 63 | 2026-05-24 |
 | [ybtc.b](./ybtc.b/) | $69.3M | 0.0% | ? | active | 10 | 1 | 2026-06-12 |

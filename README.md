@@ -1368,9 +1368,14 @@ Each project directory contains:
 | [warp-protocol](./warp-protocol/brief.md) | $39.25K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [waterfall-defi](./waterfall-defi/brief.md) | $19.02K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [waterfall-finance](./waterfall-finance/brief.md) | $35.76K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [waterneuron](./waterneuron/brief.md) | $5.37M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [wefi](./wefi/brief.md) | $292.38K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [weft-finance](./weft-finance/brief.md) | $488.16K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [wemix.fi](./wemix.fi/brief.md) | $38.18M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [whale-loans](./whale-loans/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [whaleswap](./whaleswap/brief.md) | $2.39K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [white-whale](./white-whale/brief.md) | $517.97K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [whiteheart](./whiteheart/brief.md) | $6.31K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [wise-lending](./wise-lending/brief.md) | $36.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [woo-x](./woo-x/brief.md) | $7.08M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [wrapped](./wrapped/brief.md) | $20.11M | celo, ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -1390,5 +1395,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T15:03:46.228Z_
-_Projects: 1378_
+_Generated: 2026-06-13T15:06:20.734Z_
+_Projects: 1383_

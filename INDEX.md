@@ -1337,10 +1337,15 @@
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | declining | 8 | 83 | 2026-06-11 |
 | [waterfall-defi](./waterfall-defi/) | $19.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [waterfall-finance](./waterfall-finance/) | $35.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [waterneuron](./waterneuron/) | $5.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | declining | 0 | 5 | 2026-06-11 |
 | [wefi](./wefi/) | $292.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [weft-finance](./weft-finance/) | $488.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [wemix.fi](./wemix.fi/) | $38.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [whale-loans](./whale-loans/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [whaleswap](./whaleswap/) | $2.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [white-whale](./white-whale/) | $518.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [whiteheart](./whiteheart/) | $6.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [wing-finance](./wing-finance/) | $20.3M | 0.0% | $20.3M | declining | 2 | 189 | 2026-06-12 |
 | [wise-lending](./wise-lending/) | $36.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | declining | 11 | 96 | 2026-06-11 |

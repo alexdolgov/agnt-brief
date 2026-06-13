@@ -1,0 +1,18 @@
+{
+  "address": "0x6a25fd29e2033d9519b77fa0d649dc9aed219a13",
+  "chain_id": 1,
+  "contract_name": "PriceOracle",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "AGPLv3, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T04:55:47.888Z"
+}

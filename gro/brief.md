@@ -6,13 +6,13 @@
 
 - Project: Gro (`gro`)
 - Lifecycle: declining (Tier 0, 97.4% below peak)
-- Generated: 2026-06-10T23:39:59.674Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
-- Chains: ethereum
-- Contract surface: 124 unique implementations (161 raw deployments)
-- DeFi Llama TVL: $4,661,057.66
-- On-chain TVL (included contracts): $2,925,656.52
-- TVL by chain: Ethereum $2,925,656.52
+- Generated: 2026-06-13T04:55:45.469Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-8c0a
+- Chains: avalanche, ethereum
+- Contract surface: 134 unique implementations (178 raw deployments)
+- DeFi Llama TVL: $4,661,055.86
+- On-chain TVL (included contracts): $5,044,766.58
+- TVL by chain: Ethereum $5,020,013.89 | Avalanche $24,752.69
 
 ## Project Description
 
@@ -24,19 +24,19 @@ The Gro family integrates yield-bearing tokens (RebasingGToken, NonRebasingGToke
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/36 (0.0%)
-- Verified + Unaudited implementations: 36
+- Verified implementations audited: 0/46 (0.0%)
+- Verified + Unaudited implementations: 46
 - Verified by bytecode match: 0
 - Unverified implementations: 88
-- Unique implementations: 124
-- Raw deployments: 161
+- Unique implementations: 134
+- Raw deployments: 178
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $2,925,656.52
+- ASD (verified + unaudited TVL): $5,044,766.58
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $2,925,656.52 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $5,044,766.58 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -48,13 +48,17 @@ The Gro family integrates yield-bearing tokens (RebasingGToken, NonRebasingGToke
 
 - None
 
-### ⚠️ Verified + Unaudited (36)
+### ⚠️ Verified + Unaudited (46)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| GVault | core_logic | ethereum | [`0x1402c1...625ef3`](./contracts/ethereum-1/0x1402c1caa002354fc2c4a4cd2b4045a5b9625ef3/) | ⚠️ Unaudited |
 | RebasingGToken | token | ethereum | [`0xf0a93d...3cb86b`](./contracts/ethereum-1/0xf0a93d4994b3d98fb5e3a2f90dbc2d69073cb86b/) | ⚠️ Unaudited |
 | GROToken | token | ethereum | 3 deployments: ethereum [`0x3ec879...0b74d7`](./contracts/ethereum-1/0x3ec8798b81485a254928b70cda1cf0a2bb0b74d7/); ethereum `0x44e9ed...dbfb29`; ethereum `0xeed443...e18c04` | ⚠️ Unaudited |
 | NonRebasingGToken | token | ethereum | [`0x3adb04...c52a0c`](./contracts/ethereum-1/0x3adb04e127b9c0a5d36094125669d4603ac52a0c/) | ⚠️ Unaudited |
+| VaultAdaptorMK2 | core_logic | avalanche | 7 deployments: avalanche [`0x2eb05c...d4e592`](./contracts/avalanche-43114/0x2eb05cffa24309b9aaf300392a4d8db745d4e592/); avalanche `0x471f4b...e9beb5`; avalanche `0x57daed...5b449e`; avalanche `0x5e57e1...59da2a`; avalanche `0x606359...e3ef55`; avalanche `0x6518be...a298e7`; avalanche `0x6ef440...475581` | ⚠️ Unaudited |
+| RedemptionPoolAlloyX | core_logic | ethereum | [`0xefc812...c66432`](./contracts/ethereum-1/0xefc812a74ea5db6913e676f20fef66b22fc66432/) | ⚠️ Unaudited |
+| VaultAdaptorYearnV2_032 | core_logic | ethereum | 2 deployments: ethereum [`0x277947...7fec60`](./contracts/ethereum-1/0x277947d84a2ec370a636683799351acef97fec60/); ethereum `0x9b2688...771724` | ⚠️ Unaudited |
 | AirDrop | operational_periphery | ethereum | 2 deployments: ethereum [`0x6b1bff...206dda`](./contracts/ethereum-1/0x6b1bff72f00cc147b5dc7a5b156fe7a6fd206dda/); ethereum `0xf3d39a...e2c561` | ⚠️ Unaudited |
 | Allocation | unknown | ethereum | [`0x167bcc...22a99a`](./contracts/ethereum-1/0x167bcca89b1527e015b8aad7bd6130707922a99a/) | ⚠️ Unaudited |
 | Buoy3Pool | core_logic | ethereum | 3 deployments: ethereum [`0x7d17c9...a59421`](./contracts/ethereum-1/0x7d17c9b9b154b1b31add5115f5f519ec50a59421/); ethereum `0x952df3...75387c`; ethereum `0xbf8c81...23f5fe` | ⚠️ Unaudited |
@@ -64,6 +68,7 @@ The Gro family integrates yield-bearing tokens (RebasingGToken, NonRebasingGToke
 | Exposure | unknown | ethereum | [`0x2344db...953444`](./contracts/ethereum-1/0x2344dba0a1de9acf22b7c9936c6693f20b953444/) | ⚠️ Unaudited |
 | GenericCream | adapter | ethereum | 3 deployments: ethereum [`0x9645ce...80bb0f`](./contracts/ethereum-1/0x9645cee8d720a70e2d79b7d7c7070dc7a580bb0f/); ethereum `0xa699d9...bf18e8`; ethereum `0xb74bac...d00921` | ⚠️ Unaudited |
 | GenericLevComp | unknown | ethereum | 2 deployments: ethereum [`0x63d337...28a952`](./contracts/ethereum-1/0x63d3376aabddd618daafbb29d8f27ce47a28a952/); ethereum `0x6a23a7...f1426e` | ⚠️ Unaudited |
+| GMerkleVestor | operational_periphery | ethereum | [`0x02c133...31c720`](./contracts/ethereum-1/0x02c133b9fbffb8d2e8cb7b7a94c7c880b331c720/) | ⚠️ Unaudited |
 | GROBurner | unknown | ethereum | 2 deployments: ethereum [`0x1f09e3...6b8880`](./contracts/ethereum-1/0x1f09e308bb18795f62ea7b114041e12b426b8880/); ethereum `0x783c75...a8babe` | ⚠️ Unaudited |
 | GRODaoVesting | operational_periphery | ethereum | [`0x63d962...a247de`](./contracts/ethereum-1/0x63d96236fd0e1c395d3e464a38f46b1adca247de/) | ⚠️ Unaudited |
 | GRODistributer | unknown | ethereum | 6 deployments: ethereum [`0x3c5ced...e735d4`](./contracts/ethereum-1/0x3c5ced8498ca1f8489ee3db32a86087a53e735d4/); ethereum `0x4c6484...e3bb4c`; ethereum `0x54acb7...0877c3`; ethereum `0x88e82d...990b2d`; ethereum `0xb2a54e...fb544d`; ethereum `0xe16471...4eb947` | ⚠️ Unaudited |
@@ -71,13 +76,18 @@ The Gro family integrates yield-bearing tokens (RebasingGToken, NonRebasingGToke
 | GROHodler | unknown | ethereum | 2 deployments: ethereum [`0x8b4a30...e61397`](./contracts/ethereum-1/0x8b4a30c8884ca4aff1e4c82cce79802a63e61397/); ethereum `0xef10ea...a8f927` | ⚠️ Unaudited |
 | GROInvVesting | operational_periphery | ethereum | 2 deployments: ethereum [`0x0537d3...ab80f1`](./contracts/ethereum-1/0x0537d3da1ed1dd7350ff1f3b92b727dfdbab80f1/); ethereum `0x90d589...e2ad7b` | ⚠️ Unaudited |
 | GROTeamVesting | operational_periphery | ethereum | 3 deployments: ethereum [`0x452c21...6cb397`](./contracts/ethereum-1/0x452c21ed6fe22cd2dbff22a89d507cc6b16cb397/); ethereum `0x82bbee...f0b85c`; ethereum `0xf43c6b...e28644` | ⚠️ Unaudited |
+| GRouter | adapter | ethereum | [`0xd4139e...83790d`](./contracts/ethereum-1/0xd4139e090e43ff77172d9dd8ba449d2a9683790d/) | ⚠️ Unaudited |
 | GROVesting | operational_periphery | ethereum | 2 deployments: ethereum [`0x748218...178360`](./contracts/ethereum-1/0x748218256afe0a19a88ebeb2e0c5ce86d2178360/); ethereum `0xa28693...a3730b` | ⚠️ Unaudited |
+| GTranche | unknown | ethereum | [`0x19a07a...f7e67a`](./contracts/ethereum-1/0x19a07afe97279cb6de1c9e73a13b7b0b63f7e67a/) | ⚠️ Unaudited |
 | Insurance | unknown | ethereum | [`0x8a0703...cd050e`](./contracts/ethereum-1/0x8a070363f6db6a74caaf486dde6da013e5cd050e/) | ⚠️ Unaudited |
 | LifeGuard3Pool | core_logic | ethereum | 2 deployments: ethereum [`0x5d3ab5...fb8126`](./contracts/ethereum-1/0x5d3ab53b6b66f86bbfabc2a58c0f26ea7dfb8126/); ethereum `0x8c2f20...f5f889` | ⚠️ Unaudited |
 | LPTokenStaker | core_logic | ethereum | 3 deployments: ethereum [`0x001c24...c7aad7`](./contracts/ethereum-1/0x001c249c09090d79dc350a286247479f08c7aad7/); ethereum `0x2e32ba...ed376c`; ethereum `0xf63c9d...9b8eb5` | ⚠️ Unaudited |
 | MultiSend | unknown | ethereum | [`0x7d39ee...d45380`](./contracts/ethereum-1/0x7d39eeab3bf514b4896b520d3035ce034ed45380/) | ⚠️ Unaudited |
 | PnL | unknown | ethereum | [`0xf67a42...48096d`](./contracts/ethereum-1/0xf67a426e110c74c566174a37c9269780fb48096d/) | ⚠️ Unaudited |
+| PriceOracle | unknown | ethereum | [`0x6a25fd...219a13`](./contracts/ethereum-1/0x6a25fd29e2033d9519b77fa0d649dc9aed219a13/) | ⚠️ Unaudited |
+| RedemptionPool | core_logic | ethereum | [`0x204d9d...27b6ef`](./contracts/ethereum-1/0x204d9de758217a39149767731a87bcc32427b6ef/) | ⚠️ Unaudited |
 | Registry | registry | ethereum | [`0x3f9062...2bb941`](./contracts/ethereum-1/0x3f90622f3df1fe37e6233a8446a835ab032bb941/) | ⚠️ Unaudited |
+| RouterOracle | unknown | ethereum | [`0xfe620d...c62599`](./contracts/ethereum-1/0xfe620d20b3ed77ec0934fbe9df2147f6f3c62599/) | ⚠️ Unaudited |
 | StrategyHarvestStable | operational_periphery | ethereum | 3 deployments: ethereum [`0x14a098...be0ec4`](./contracts/ethereum-1/0x14a0982c6ceb2ac27f404f0dff97aaf908be0ec4/); ethereum `0xbd49a8...13b455`; ethereum `0xf03ef5...31246e` | ⚠️ Unaudited |
 | StrategyIdle | core_logic | ethereum | [`0x3c3d92...7ddee1`](./contracts/ethereum-1/0x3c3d9228ef8d9750d9c43f9155315dede57ddee1/) | ⚠️ Unaudited |
 | TimelockController | governance | ethereum | 2 deployments: ethereum [`0x1aebe9...539824`](./contracts/ethereum-1/0x1aebe9147766936906ab56ec0693306da3539824/); ethereum `0xdc9540...79ac77` | ⚠️ Unaudited |
@@ -207,9 +217,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| ethereum | [`0x1402c1...625ef3`](./contracts/ethereum-1/0x1402c1caa002354fc2c4a4cd2b4045a5b9625ef3/) | GVault | core_logic | $2,092,114.77 | Verified native implementation with $2,092,114.77 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf0a93d...3cb86b`](./contracts/ethereum-1/0xf0a93d4994b3d98fb5e3a2f90dbc2d69073cb86b/) | RebasingGToken | token | $1,758,331.88 | Verified native implementation with $1,758,331.88 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3ec879...0b74d7`](./contracts/ethereum-1/0x3ec8798b81485a254928b70cda1cf0a2bb0b74d7/) | GROToken | token | $841,338.88 | Verified native implementation with $841,338.88 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3adb04...c52a0c`](./contracts/ethereum-1/0x3adb04e127b9c0a5d36094125669d4603ac52a0c/) | NonRebasingGToken | token | $325,985.76 | Verified native implementation with $325,985.76 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x2eb05c...d4e592`](./contracts/avalanche-43114/0x2eb05cffa24309b9aaf300392a4d8db745d4e592/) | VaultAdaptorMK2 | core_logic | $24,752.69 | Verified native implementation with $24,752.69 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xefc812...c66432`](./contracts/ethereum-1/0xefc812a74ea5db6913e676f20fef66b22fc66432/) | RedemptionPoolAlloyX | core_logic | $1,948.00 | Verified native implementation with $1,948.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6b1bff...206dda`](./contracts/ethereum-1/0x6b1bff72f00cc147b5dc7a5b156fe7a6fd206dda/) | AirDrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x167bcc...22a99a`](./contracts/ethereum-1/0x167bcca89b1527e015b8aad7bd6130707922a99a/) | Allocation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7d17c9...a59421`](./contracts/ethereum-1/0x7d17c9b9b154b1b31add5115f5f519ec50a59421/) | Buoy3Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -217,6 +230,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xb7207e...a44f40`](./contracts/ethereum-1/0xb7207ea9446dca1dec1c1fc93c6fcdf8b4a44f40/) | DepositHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc535cf...76ee76`](./contracts/ethereum-1/0xc535cfe245d8f969e647b3dd8be1255ec076ee76/) | EmergencyHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2344db...953444`](./contracts/ethereum-1/0x2344dba0a1de9acf22b7c9936c6693f20b953444/) | Exposure | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x02c133...31c720`](./contracts/ethereum-1/0x02c133b9fbffb8d2e8cb7b7a94c7c880b331c720/) | GMerkleVestor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1f09e3...6b8880`](./contracts/ethereum-1/0x1f09e308bb18795f62ea7b114041e12b426b8880/) | GROBurner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x63d962...a247de`](./contracts/ethereum-1/0x63d96236fd0e1c395d3e464a38f46b1adca247de/) | GRODaoVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3c5ced...e735d4`](./contracts/ethereum-1/0x3c5ced8498ca1f8489ee3db32a86087a53e735d4/) | GRODistributer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -224,13 +238,17 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x8b4a30...e61397`](./contracts/ethereum-1/0x8b4a30c8884ca4aff1e4c82cce79802a63e61397/) | GROHodler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0537d3...ab80f1`](./contracts/ethereum-1/0x0537d3da1ed1dd7350ff1f3b92b727dfdbab80f1/) | GROInvVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x452c21...6cb397`](./contracts/ethereum-1/0x452c21ed6fe22cd2dbff22a89d507cc6b16cb397/) | GROTeamVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd4139e...83790d`](./contracts/ethereum-1/0xd4139e090e43ff77172d9dd8ba449d2a9683790d/) | GRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x748218...178360`](./contracts/ethereum-1/0x748218256afe0a19a88ebeb2e0c5ce86d2178360/) | GROVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x19a07a...f7e67a`](./contracts/ethereum-1/0x19a07afe97279cb6de1c9e73a13b7b0b63f7e67a/) | GTranche | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8a0703...cd050e`](./contracts/ethereum-1/0x8a070363f6db6a74caaf486dde6da013e5cd050e/) | Insurance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5d3ab5...fb8126`](./contracts/ethereum-1/0x5d3ab53b6b66f86bbfabc2a58c0f26ea7dfb8126/) | LifeGuard3Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x001c24...c7aad7`](./contracts/ethereum-1/0x001c249c09090d79dc350a286247479f08c7aad7/) | LPTokenStaker | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf67a42...48096d`](./contracts/ethereum-1/0xf67a426e110c74c566174a37c9269780fb48096d/) | PnL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x204d9d...27b6ef`](./contracts/ethereum-1/0x204d9de758217a39149767731a87bcc32427b6ef/) | RedemptionPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3f9062...2bb941`](./contracts/ethereum-1/0x3f90622f3df1fe37e6233a8446a835ab032bb941/) | Registry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3c3d92...7ddee1`](./contracts/ethereum-1/0x3c3d9228ef8d9750d9c43f9155315dede57ddee1/) | StrategyIdle | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfe620d...c62599`](./contracts/ethereum-1/0xfe620d20b3ed77ec0934fbe9df2147f6f3c62599/) | RouterOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x14a098...be0ec4`](./contracts/ethereum-1/0x14a0982c6ceb2ac27f404f0dff97aaf908be0ec4/) | StrategyHarvestStable | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa64610...d21f90`](./contracts/ethereum-1/0xa646109d183f83225e861c0acb7fe53e78d21f90/) | tokenCounter | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x156d9a...0d6953`](./contracts/ethereum-1/0x156d9aad5975ec9aa9e2c621f408c8469d0d6953/) | VoteAggregator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x03b298...d7cc8e`](./contracts/ethereum-1/0x03b298d27b0426758cb70c4add6523927bd7cc8e/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -241,10 +259,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 48 |
-| upstream | 3 |
+| native | 45 |
+| upstream | 4 |
 | standard_library | 2 |
-| needs_review | 71 |
+| needs_review | 83 |
 
 ## Scope Matching Notes
 

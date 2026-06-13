@@ -217,7 +217,7 @@
 | [flying-tulip](./flying-tulip/) | $51.3M | 0.0% | $51.3M | active | 0 | 62 | 2026-06-13 |
 | [fomo3d](./fomo3d/) | $2.5M | 0.0% | ? | active | 0 | 23 | 2026-06-10 |
 | [forgeyields](./forgeyields/) | $1.3M | 0.0% | ? | active | 2 | 1 | 2026-06-11 |
-| [four.meme](./four.meme/) | $4.9M | 0.0% | ? | active | 1 | 2 | 2026-06-10 |
+| [four.meme](./four.meme/) | $4.6M | 0.0% | ? | active | 1 | 5 | 2026-06-13 |
 | [foxify](./foxify/) | $72.6K | 0.0% | $72.6K | active | 0 | 5 | 2026-06-10 |
 | [frankencoin](./frankencoin/) | $70.0M | 80.0% | ? | active | 5 | 5 | 2026-06-10 |
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 5 | 18 | 2026-06-10 |
@@ -239,7 +239,7 @@
 | [goose](./goose/) | $1.6K | 0.0% | $1.6K | active | 0 | 11 | 2026-06-12 |
 | [goplus-security](./goplus-security/) | $65.3 | 0.0% | $65.3 | active | 0 | 34 | 2026-06-12 |
 | [gravity-bridge](./gravity-bridge/) | $91.3M | 0.0% | $91.3M | active | 0 | 117 | 2026-06-12 |
-| [gro](./gro/) | $2.9M | 0.0% | $2.9M | declining | 0 | 124 | 2026-06-10 |
+| [gro](./gro/) | $5.0M | 0.0% | $5.0M | declining | 0 | 134 | 2026-06-13 |
 | [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [grvt](./grvt/) | $39.1M | 0.0% | $39.1M | declining | 0 | 12 | 2026-06-12 |
 | [guru-network-dao](./guru-network-dao/) | $2.3M | 0.0% | ? | active | 0 | 54 | 2026-06-10 |
@@ -487,7 +487,7 @@
 | [rari-capital](./rari-capital/) | $321.4M | 0.0% | $321.4M | dead | 1 | 253 | 2026-05-24 |
 | [ratex](./ratex/) | $98.8K | 0.0% | $98.8K | declining | 2 | 166 | 2026-06-11 |
 | [re7-labs](./re7-labs/) | $6.6M | 0.0% | $6.6M | active | 0 | 18 | 2026-06-12 |
-| [reddex](./reddex/) | $4.2M | 0.0% | ? | declining | 0 | 5 | 2026-06-11 |
+| [reddex](./reddex/) | $4.8M | 0.0% | ? | declining | 0 | 5 | 2026-06-13 |
 | [reflexer](./reflexer/) | $2.3M | 40.9% | ? | declining | 8 | 64 | 2026-06-11 |
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 3 | 2026-06-12 |
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | active | 0 | 3 | 2026-06-12 |
@@ -541,7 +541,7 @@
 | [sierra-protocol](./sierra-protocol/) | $39.6M | 4.0% | $5.3M | active | 1 | 78 | 2026-06-11 |
 | [sigma-money](./sigma-money/) | $593.4M | 0.0% | $593.4M | active | 10 | 231 | 2026-06-11 |
 | [silo-finance](./silo-finance/) | $3.3M | 15.7% | $641.3K | unknown | 10 | 529 | 2026-05-31 |
-| [singularity-finance](./singularity-finance/) | $2.7M | 0.0% | $2.7M | declining | 2 | 1 | 2026-06-11 |
+| [singularity-finance](./singularity-finance/) | $2.7M | 70.0% | $2.7M | transitioning | 2 | 10 | 2026-06-13 |
 | [singularv](./singularv/) | $1.1B | 11.4% | $1.1B | declining | 7 | 83 | 2026-06-11 |
 | [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 0 | 4 | 2026-06-11 |
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |
@@ -718,4 +718,4 @@
 | [zoo-finance](./zoo-finance/) | $83.0M | 0.0% | $83.0M | active | 1 | 75 | 2026-06-12 |
 | [zoomex](./zoomex/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [zoth](./zoth/) | $6.5 | 78.1% | ? | active | 5 | 43 | 2026-06-11 |
-| [zyfai](./zyfai/) | $1.6B | 0.0% | $1.6B | active | 0 | 105 | 2026-06-11 |
+| [zyfai](./zyfai/) | $1.8B | 0.0% | $1.8B | active | 0 | 106 | 2026-06-13 |

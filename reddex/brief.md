@@ -7,11 +7,11 @@
 - Project: reddex (`reddex`)
 - Website: [https://reddex.io](https://reddex.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T02:14:08.804Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
-- Chains: ethereum
-- Contract surface: 5 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $4,190,945.31
+- Generated: 2026-06-13T04:54:18.715Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-8c0a
+- Chains: bsc, ethereum
+- Contract surface: 5 unique implementations (7 raw deployments)
+- DeFi Llama TVL: $4,764,003.82
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -30,7 +30,7 @@ The protocol consists of a single product family centered around the LiquidXv2Fa
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 5
-- Raw deployments: 6
+- Raw deployments: 7
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -54,7 +54,7 @@ The protocol consists of a single product family centered around the LiquidXv2Fa
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | LiquidXPreSale | unknown | ethereum | [`0xf82398...2f4652`](./contracts/ethereum-1/0xf82398d047eef02aad8bb7abcb0f5883212f4652/) | ⚠️ Unaudited |
-| LiquidXv2Factory | registry | ethereum | [`0xbc7d21...96bf59`](./contracts/ethereum-1/0xbc7d212939fbe696e514226f3fafa3697b96bf59/) | ⚠️ Unaudited |
+| LiquidXv2Factory | registry | bsc | 2 deployments: ethereum `0xbc7d21...96bf59`; bsc [`0x6d6422...e49d8e`](./contracts/bsc-56/0x6d642253b6fd96d9d155279b57b8039675e49d8e/) | ⚠️ Unaudited |
 | LiquidXv2Router01 | adapter | ethereum | 2 deployments: ethereum [`0x3b2223...4e5727`](./contracts/ethereum-1/0x3b22235010d3636c910f870b90b4f715694e5727/); ethereum `0xeba226...d74923` | ⚠️ Unaudited |
 | LiquidXv2Zap | adapter | ethereum | [`0xb90e49...e2a13e`](./contracts/ethereum-1/0xb90e49b7ad733a61eff596e8dffd19aa52e2a13e/) | ⚠️ Unaudited |
 
@@ -90,7 +90,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0xf82398...2f4652`](./contracts/ethereum-1/0xf82398d047eef02aad8bb7abcb0f5883212f4652/) | LiquidXPreSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xbc7d21...96bf59`](./contracts/ethereum-1/0xbc7d212939fbe696e514226f3fafa3697b96bf59/) | LiquidXv2Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x6d6422...e49d8e`](./contracts/bsc-56/0x6d642253b6fd96d9d155279b57b8039675e49d8e/) | LiquidXv2Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3b2223...4e5727`](./contracts/ethereum-1/0x3b22235010d3636c910f870b90b4f715694e5727/) | LiquidXv2Router01 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb90e49...e2a13e`](./contracts/ethereum-1/0xb90e49b7ad733a61eff596e8dffd19aa52e2a13e/) | LiquidXv2Zap | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 

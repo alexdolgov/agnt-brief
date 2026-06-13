@@ -1,0 +1,146 @@
+[
+  {
+    "inputs": [],
+    "name": "AlreadyInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MaxFee",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroAddress",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "managementFeeWallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "performanceFeeWallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "depositFeeWallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "redemptionFeeWallet",
+        "type": "address"
+      }
+    ],
+    "name": "UpdatedFeeWallets",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "performanceFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "managementFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "depositFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "redemptionFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdatedFees",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "getFees",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "managementFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "performanceFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "depositFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "redemptionFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "managementFeeWallet",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "performanceFeeWallet",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "depositFeeWallet",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "redemptionFeeWallet",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct VaultFeesLib.FeesStorage",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

@@ -1,46 +1,46 @@
 {
   "schema_version": "2.0",
   "project_key": "four.meme",
-  "generated_at": "2026-06-10T23:27:06.237Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-13T04:55:22.061Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "four.meme",
     "tier": 0,
     "peak_tvl": 10657507,
     "peak_date": "2025-10-13T00:00:00.000Z",
-    "tvl_30d_ago": 4611453,
-    "tvl_90d_ago": 3752649,
-    "tvl_current": 4823114,
+    "tvl_30d_ago": 5001615,
+    "tvl_90d_ago": 4307259,
+    "tvl_current": 4587664,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 4931136,
-    "change_30d_pct": 4.5898982381475,
-    "change_90d_pct": 28.5255828615999,
-    "days_since_peak": 222,
+    "tvl_180d_ago": 5187940,
+    "change_30d_pct": -8.27634674000298,
+    "change_90d_pct": 6.510056627660421,
+    "days_since_peak": 243,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 54.74444445591262
+    "drop_from_peak_pct": 56.953685322468004
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
+    "total_contracts": 5,
+    "total_addresses": 5,
+    "unique_implementations": 5,
+    "total_deployments": 5,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 2,
+    "contracts_unverified": 4,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4904447.57921,
-    "tvl_usd": 4904447.57921,
+    "dl_tvl_usd": 4621111.46297,
+    "tvl_usd": 4621111.46297,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
-    "website_url": "https://four.meme?code=DZ9DF74J64FA",
+    "website_url": "https://four.meme",
     "chains": [
       "bsc"
     ],
@@ -57,19 +57,50 @@
   },
   "topography": {
     "project_purpose": "Four.meme is a launchpad protocol on BSC that enables users to create and trade meme tokens. It provides a platform for token launches and initial liquidity events.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The two proxy contracts likely represent the main launchpad logic and a supporting module (e.g., fee handler or token factory), sharing the same product family with no external dependencies.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 5,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xf251f83e40a78868fcfa3fa4599dad6494e46034",
+      "name": "ERC1967Proxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe8c2d68c4f491eedeff6d613ec013e3aa6e9240b",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xf251f83e40a78868fcfa3fa4599dad6494e46034",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -131,6 +162,68 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x57df49f5d8412d05e792c30c023ee974c48a90b5",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "four.meme",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x57df49f5d8412d05e792c30c023ee974c48a90b5",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x7f9411ea1a34b0b0d91a54b4776d00e78a329bbf",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "four.meme",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x7f9411ea1a34b0b0d91a54b4776d00e78a329bbf",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -159,9 +252,9 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 2,
+    "native": 4,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "reddex",
-  "generated_at": "2026-06-11T02:14:08.804Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-13T04:54:18.715Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "reddex",
@@ -33,9 +33,9 @@
   },
   "summary": {
     "total_contracts": 5,
-    "total_addresses": 6,
+    "total_addresses": 7,
     "unique_implementations": 5,
-    "total_deployments": 6,
+    "total_deployments": 7,
     "audited_contracts": 0,
     "unaudited_contracts": 4,
     "contracts_verified_audited": 0,
@@ -45,13 +45,14 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4190945.31312,
-    "tvl_usd": 4190945.31312,
+    "dl_tvl_usd": 4764003.815909999,
+    "tvl_usd": 4764003.815909999,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://reddex.io",
     "chains": [
+      "bsc",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -112,14 +113,14 @@
       "contamination_flag": "review"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xbc7d212939fbe696e514226f3fafa3697b96bf59",
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x6d642253b6fd96d9d155279b57b8039675e49d8e",
       "name": "LiquidXv2Factory",
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "reddex",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -129,6 +130,15 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xbc7d212939fbe696e514226f3fafa3697b96bf59",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6d642253b6fd96d9d155279b57b8039675e49d8e",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -242,7 +252,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     }
   ],
   "audits": [],
@@ -259,9 +269,9 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xbc7d212939fbe696e514226f3fafa3697b96bf59",
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x6d642253b6fd96d9d155279b57b8039675e49d8e",
       "name": "LiquidXv2Factory",
       "role": "registry",
       "origin_kind": "native",

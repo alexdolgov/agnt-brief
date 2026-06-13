@@ -1,6 +1,6 @@
 # reddex — Contract Index
 
-5 unique implementations on ethereum · 6 deployments · 0 audited · 4 unaudited · 1 unverified
+5 unique implementations across 2 chains · 7 deployments · 0 audited · 4 unaudited · 1 unverified
 
 ## adapter (2)
 
@@ -13,7 +13,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [LiquidXv2Factory](./ethereum-1/0xbc7d212939fbe696e514226f3fafa3697b96bf59/) | ethereum | [`0xbc7d21...96bf59`](./ethereum-1/0xbc7d212939fbe696e514226f3fafa3697b96bf59/) | ⚠️ Unaudited | Verified |
+| [LiquidXv2Factory (2 deployments)](./bsc-56/0x6d642253b6fd96d9d155279b57b8039675e49d8e/) | bsc | 2 deployments: ethereum `0xbc7d21...96bf59`; bsc [`0x6d6422...e49d8e`](./bsc-56/0x6d642253b6fd96d9d155279b57b8039675e49d8e/) | ⚠️ Unaudited | Verified |
 
 ## unknown (2)
 

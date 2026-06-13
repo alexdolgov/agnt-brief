@@ -1,59 +1,61 @@
 {
   "schema_version": "2.0",
   "project_key": "singularity-finance",
-  "generated_at": "2026-06-11T02:45:07.453Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-13T04:57:48.994Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-8c0a",
+  "lifecycle_status": "transitioning",
   "lifecycle_signal": {
     "slug": "singularity-finance",
     "tier": 1,
     "peak_tvl": 761809,
     "peak_date": "2026-03-17T00:00:00.000Z",
-    "tvl_30d_ago": 528968,
-    "tvl_90d_ago": 553903,
-    "tvl_current": 52882,
+    "tvl_30d_ago": 57372,
+    "tvl_90d_ago": 755559,
+    "tvl_current": 37969,
     "tier0_reason": "hard_90d_decline",
-    "tvl_180d_ago": 190065,
-    "change_30d_pct": -90.0027979008182,
-    "change_90d_pct": -90.45284102090078,
+    "tvl_180d_ago": 299501,
+    "change_30d_pct": -33.81963327058495,
+    "change_90d_pct": -94.97471408586226,
     "governance_raw": {
-      "evidence": "TVL dropped 93% from peak but no shutdown or migration announced, and the protocol still has active communications.",
-      "confidence": 0.85,
-      "lifecycle_status": "declining"
+      "evidence": "The protocol is actively merging with SingularityDAO and Cogito Finance, with a migration to SFI token underway, indicating a transition rather than a shutdown.",
+      "confidence": 0.9,
+      "lifecycle_status": "transitioning"
     },
-    "days_since_peak": 67,
+    "days_since_peak": 88,
     "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "fallback_mixed",
-    "drop_from_peak_pct": 93.05836502325387,
-    "governance_evidence": "TVL dropped 93% from peak but no shutdown or migration announced, and the protocol still has active communications.",
-    "governance_confidence": 0.85,
-    "governance_text_chars": 58,
-    "governance_classification": "declining",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 95.01594231624986,
+    "governance_evidence": "The protocol is actively merging with SingularityDAO and Cogito Finance, with a migration to SFI token underway, indicating a transition rather than a shutdown.",
+    "governance_confidence": 0.9,
+    "governance_text_chars": 2904,
+    "governance_classification": "transitioning",
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
-    "audited_contracts": 0,
-    "unaudited_contracts": 1,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "total_contracts": 10,
+    "total_addresses": 16,
+    "unique_implementations": 10,
+    "total_deployments": 16,
+    "audited_contracts": 7,
+    "unaudited_contracts": 3,
+    "contracts_verified_audited": 7,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 70,
     "total_audits": 2,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 5990316.8072,
-    "tvl_usd": 2686081.3224447463,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 4721299.87255,
+    "tvl_usd": 2686289.027136915,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
+      "base": 207.7,
       "ethereum": 2686081.32
     },
-    "asd_usd": 2686081.3224447463,
+    "asd_usd": 2686289.0271367463,
     "website_url": "https://singularityfinance.ai/",
     "chains": [
+      "base",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -69,13 +71,13 @@
   },
   "topography": {
     "project_purpose": "Singularity Finance is a broader AI/DeFAI finance platform positioned around AI-Fi, real-world assets, and financial-layer infrastructure, with multichain ambitions across networks such as Ethereum, Base, and BNB Chain. It should not be characterized solely as an Ethereum yield farm or as functionality fully encapsulated in the SFI token contract.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The protocol consists of a single product family built around the SFI token. All functionality is encapsulated within this token contract, with no additional supporting contracts identified.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 10,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -112,6 +114,353 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x1631ca6543adcb61e2b9e30189c8477981258274",
+      "name": "PermissionedDynaVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 207.704692,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PermissionedDynaVault",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x1631ca6543adcb61e2b9e30189c8477981258274",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 106.704691,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x67b93f6676bd1911c5fae7ffa90fff5f35e14dcd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 101.000001,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xea7975c2fec1ae9e3058bb5f99d8e26dbc816811",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x478675aa4121c07825167bbb25a44aadd22bef7f",
+      "name": "DynaVaultManager",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 1.6833929378364295e-7,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DynaVaultManager",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x478675aa4121c07825167bbb25a44aadd22bef7f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1.6833929378364295e-7,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x67aaf2fa4420fb0922da630315734d69f99ea1dc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x95cf606f7e499549d83bd3c8a1e5d97fdf36688b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xac18003cc118160e381c44979ba3dd63b52fae77",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2478"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x9a3fba281b004882497d29b863c244619f2574b7",
+      "name": "DynaVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DynaVault",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x9a3fba281b004882497d29b863c244619f2574b7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc6b3345612ad9f385d5c8ffd1ece98f7318ecf52",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2478"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x3b94afa809b113ef118c6d4ffc009fdf1a51ee08",
+      "name": "DynaVaultLib",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DynaVaultLib",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3b94afa809b113ef118c6d4ffc009fdf1a51ee08",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2478"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x3ce426bb2fcb9e1300bbe03e2d34d7b3b7347db5",
+      "name": "VaultConfigLib",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultConfigLib",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3ce426bb2fcb9e1300bbe03e2d34d7b3b7347db5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2478"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xb130375b543bd919d85351b73636439c28d90db6",
+      "name": "VaultFeesLib",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultFeesLib",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb130375b543bd919d85351b73636439c28d90db6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2478"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x7b273c267b7de25811883d69d26bffaebf71c184",
+      "name": "VaultManagerLib",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultManagerLib",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7b273c267b7de25811883d69d26bffaebf71c184",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2478"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x620978615e37f2c494cb9fcc2f9981029533fb39",
+      "name": "VaultManagerSimulatorLib",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultManagerSimulatorLib",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x620978615e37f2c494cb9fcc2f9981029533fb39",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2478"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xf22bd338ccb6446a25920d1858e50d709b663e9e",
+      "name": "VaultStrategiesLib",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultStrategiesLib",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xf22bd338ccb6446a25920d1858e50d709b663e9e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -128,12 +477,40 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BalancerV2DynaZapper",
+        "BalancerV2WeightedPool Oracle",
+        "BaseDynaRouter",
+        "DependencyDynaRouterRegistry",
+        "DependencyVaultGovernanceLib",
+        "DependencyVaultStrategiesLib",
+        "DynaLiquidity",
+        "DynaLiquidityAssetManagerLib",
+        "DynaLiquidityFactory",
+        "DynaLiquidityLib",
+        "DynaLiquidityProxyAssetManager",
+        "DynaLiquidityRegistry",
+        "DynaRouter-MetaDynaRouter",
+        "DynaVault",
+        "DynaVaultLib",
+        "DynaVaultManager",
+        "IndirectOFTV2WithFee",
+        "ProxyOFTWithFee",
+        "TokenWhitelistRegistry",
+        "VaultConfigLib",
+        "VaultDynaZapper",
+        "VaultFeesLib",
+        "VaultGovernance",
+        "VaultManagerLib",
+        "VaultManagerSimulatorLib",
+        "VaultSimulatorLib",
+        "VaultTokens"
+      ],
+      "matched_contracts": 11,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -158,7 +535,15 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Paladin",
+      "tier": 2,
+      "contracts_covered": 7,
+      "coverage_pct": 70,
+      "latest_audit": "2025-05"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -169,24 +554,44 @@
       "origin_kind": "native",
       "tvl_usd": 2686081.3224447463,
       "risk_note": "Verified native implementation with $2,686,081.32 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x1631ca6543adcb61e2b9e30189c8477981258274",
+      "name": "PermissionedDynaVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 207.704692,
+      "risk_note": "Verified native implementation with $207.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xf22bd338ccb6446a25920d1858e50d709b663e9e",
+      "name": "VaultStrategiesLib",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 1,
+    "native": 10,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 11
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 2478,
-        "report_name": "DL audit link"
-      },
       {
         "audit_id": 2479,
         "report_name": "DL audit link"

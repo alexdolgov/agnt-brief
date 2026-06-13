@@ -438,11 +438,16 @@
 | [foxify](./foxify/) | $72.6K | 0.0% | $72.6K | active | 0 | 5 | 2026-06-10 |
 | [fractal-protocol](./fractal-protocol/) | $10.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [frankencoin](./frankencoin/) | $70.0M | 80.0% | ? | active | 5 | 5 | 2026-06-10 |
+| [freebie-life-finance](./freebie-life-finance/) | $32.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [friend3](./friend3/) | $67.2K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
+| [fringe-finance](./fringe-finance/) | $45.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [froggy-protocol](./froggy-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 5 | 18 | 2026-06-10 |
 | [fuji-finance](./fuji-finance/) | $144.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [fulcrom](./fulcrom/) | $10.9M | 0.0% | ? | active | 0 | 79 | 2026-06-12 |
 | [full-sail](./full-sail/) | $481.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
+| [fx-protocol](./fx-protocol/) | $227.3M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [fxdao](./fxdao/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [fyde-protocol](./fyde-protocol/) | $255.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [gains-network](./gains-network/) | $64.7M | 0.0% | $64.7M | active | 1 | 779 | 2026-06-12 |
 | [galaxy-curation](./galaxy-curation/) | $67.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |

@@ -1,0 +1,18 @@
+{
+  "address": "0x1e217d3ca2a19f2cb0f9f12a65b40f335286758e",
+  "chain_id": 10,
+  "contract_name": "MultichainWithdrawer",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 690,
+  "evm_version": "london",
+  "license": "GPL-2.0-or-later, GPL-3.0, MIXED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:40:48.200Z"
+}

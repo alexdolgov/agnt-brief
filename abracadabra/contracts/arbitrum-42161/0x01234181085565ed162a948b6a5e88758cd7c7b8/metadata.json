@@ -1,0 +1,18 @@
+{
+  "address": "0x01234181085565ed162a948b6a5e88758cd7c7b8",
+  "chain_id": 42161,
+  "contract_name": "GMX",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:40:52.865Z"
+}

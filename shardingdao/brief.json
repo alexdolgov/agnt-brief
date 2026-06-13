@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "shardingdao",
-  "generated_at": "2026-06-11T02:39:45.218Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
+  "generated_at": "2026-06-13T02:07:14.905Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-d5d2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "shardingdao",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 7781100.37679,
+    "dl_tvl_usd": 6279557.55902,
     "tvl_usd": 1376629.685594601,
     "tvl_source": "on_chain",
     "tvl_by_chain": {

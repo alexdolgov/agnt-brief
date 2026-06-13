@@ -1,0 +1,17 @@
+{
+  "address": "0xacff0fbf56baeb9ef677de19aded8f7a950bcb58",
+  "chain_id": 43114,
+  "contract_name": "JoeRoll",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000e54ca86531e17ef3616d22ca28b0d458b6c8910600000000000000000000000060ae616a2155ee3d9a68541ba4544862310933d4",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:41:08.391Z"
+}

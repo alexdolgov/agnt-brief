@@ -1,0 +1,18 @@
+{
+  "address": "0x25c27fb282c5d974e9b091d45f28ba5de128e022",
+  "chain_id": 8453,
+  "contract_name": "Market",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:40:46.716Z"
+}

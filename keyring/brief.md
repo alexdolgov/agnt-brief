@@ -5,10 +5,10 @@
 - Project: Keyring (`keyring`)
 - Website: [https://app.euler.finance/governor/keyring?network=avalanche](https://app.euler.finance/governor/keyring?network=avalanche)
 - Lifecycle: active (Tier 0, 72.2% below peak)
-- Generated: 2026-06-11T11:29:09.575Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
+- Generated: 2026-06-13T02:13:57.625Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-d5d2
 - Chains: avalanche, ethereum
-- Contract surface: 53 unique implementations (144 raw deployments)
+- Contract surface: 73 unique implementations (174 raw deployments)
 - DeFi Llama TVL: $6,221,961.28
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -23,52 +23,66 @@ The Governor family controls risk parameters and protocol configurations, which 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/42 (0.0%)
-- Verified + Unaudited implementations: 42
+- Verified implementations audited: 8/47 (17.0%)
+- Verified + Unaudited implementations: 39
 - Verified by bytecode match: 0
-- Unverified implementations: 11
-- Unique implementations: 53
-- Raw deployments: 144
-- Audits discovered: 10
-- Scoreable audits (matched contracts): 0
+- Unverified implementations: 26
+- Unique implementations: 73
+- Raw deployments: 174
+- Audits discovered: 16
+- Scoreable audits (matched contracts): 15
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-11 (fresh)
-- Staleness: 7 fresh, 0 aging, 0 stale, 3 unknown
-- Tier 1 coverage: No Tier 1 coverage
+- Staleness: 10 fresh, 6 aging, 0 stale, 0 unknown
+- Tier 1 coverage: 12.8% (Certora, ChainSecurity, Cyfrin, Spearbit)
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| Spearbit | Tier 1 | 6 | 12.8% | 2025-09 |
+| Pashov Audit Group | Tier 2 | 4 | 8.5% | 2025-11 |
+| Cyfrin | Tier 1 | 3 | 6.4% | 2025-05 |
+| Certora | Tier 1 | 2 | 4.3% | 2025-07 |
+| ChainSecurity | Tier 1 | 2 | 4.3% | 2025-03 |
+| Sigma Prime | Tier 2 | 2 | 4.3% | 2025-07 |
+| yAudit | Tier 2 | 2 | 4.3% | 2025-11 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (8)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| ERC4626EVCCollateralSecuritizeFactory | registry | ethereum | [`0x5f51d9...f76cbb`](./contracts/ethereum-1/0x5f51d980f15fe6075ae30394dc35de57a4f76cbb/) | ✅ Audited |
+| EulerEarnFactory | registry | ethereum | [`0x59709b...308af4`](./contracts/ethereum-1/0x59709b029b140c853fe28d277f83c3a65e308af4/) | ✅ Audited |
+| EulerSwap | unknown | ethereum | [`0x8b0e04...74dc97`](./contracts/ethereum-1/0x8b0e044e364f2ce913799d53b300e15a6974dc97/) | ✅ Audited |
+| EulerSwapFactory | registry | ethereum | 2 deployments: ethereum [`0xb013be...2cf228`](./contracts/ethereum-1/0xb013be1d0d380c13b58e889f412895970a2cf228/); ethereum `0xd05213...04df5f` | ✅ Audited |
+| EulerSwapPeriphery | adapter | ethereum | 2 deployments: ethereum [`0x208ff5...d16b06`](./contracts/ethereum-1/0x208ff5eb543814789321daa1b5eb551881d16b06/); ethereum `0xd3a349...fd513e` | ✅ Audited |
+| EulerSwapRegistry | registry | ethereum | [`0x5fccb8...32814a`](./contracts/ethereum-1/0x5fccb84363f020c0cade052c9c654aabf932814a/) | ✅ Audited |
+| PublicAllocator | operational_periphery | ethereum | [`0x8fdcb8...274800`](./contracts/ethereum-1/0x8fdcb80a2894f0dc052c8d52d22544dc90274800/) | ✅ Audited |
+| SwapVerifier | periphery | ethereum | [`0x786c90...c582ab`](./contracts/ethereum-1/0x786c900d7d348662703c38b46f24c1cda2c582ab/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (42)
+### ⚠️ Verified + Unaudited (39)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | AccountLens | periphery | ethereum | 6 deployments: ethereum [`0x334209...0c230f`](./contracts/ethereum-1/0x3342097299f57ec4773578a94f99d5d2ea0c230f/); ethereum `0x5187ee...8ff257`; ethereum `0x880620...e60e9f`; ethereum `0x94b9d2...425844`; ethereum `0xa60c42...e34bc7`; ethereum `0xb8507b...27cd94` | ⚠️ Unaudited |
+| BeaconProxy | registry | avalanche | 8 deployments: avalanche [`0x2cbb39...fd04bf`](./contracts/avalanche-43114/0x2cbb39cdc3c0ba22f857a5a8ca54dee6d7fd04bf/); avalanche `0x3050b7...654529`; avalanche `0x5fdb07...b764c6`; avalanche `0x67e0ac...6b4438`; avalanche `0x6de07d...651a1e`; avalanche `0x8f23da...30ffde`; avalanche `0xb03277...bb0592`; avalanche `0xea5341...383d44` | ⚠️ Unaudited |
 | CapRiskSteward | unknown | ethereum | 2 deployments: ethereum [`0x465528...4f8b8c`](./contracts/ethereum-1/0x465528b234fec209db52c9901dd959742a4f8b8c/); ethereum `0xfe56ca...e89b95` | ⚠️ Unaudited |
 | CapRiskStewardFactory | registry | ethereum | 3 deployments: ethereum [`0x93c233...6f3208`](./contracts/ethereum-1/0x93c233008971e878d60a7737657869ab746f3208/); ethereum `0xa446a5...3a448b`; ethereum `0xff00fa...cffb84` | ⚠️ Unaudited |
 | ChronicleOracle | operational_periphery | ethereum | [`0x28e36e...583b85`](./contracts/ethereum-1/0x28e36ea7481934a651da81483358c67a51583b85/) | ⚠️ Unaudited |
 | CrossAdapter | adapter | ethereum | 29 deployments: ethereum [`0x130eab...0ffaed`](./contracts/ethereum-1/0x130eabada6f4c663095c8e9e276ab5da670ffaed/); ethereum `0x15226e...aac6bb`; ethereum `0x336d82...fba6e8`; ethereum `0x3fc222...1b4f12`; ethereum `0x4a35fe...b205af`; ethereum `0x55757d...58dcc1`; ethereum `0x562929...ec1832`; ethereum `0x566c24...eef5dd`; ethereum `0x5ae8c1...78c275`; ethereum `0x5b12ce...f6b066`; ethereum `0x5bc6c0...3a554c`; ethereum `0x62b1de...b25f61`; ethereum `0x6a569e...a84dc7`; ethereum `0x8424db...77ed0c`; ethereum `0x8e8cfc...04cd4e`; ethereum `0xa52631...7b6cff`; ethereum `0xa625cb...62c564`; ethereum `0xadccfc...09c988`; ethereum `0xb0baa4...3254f0`; ethereum `0xca5b70...56b85f`; ethereum `0xcf8f3a...972785`; ethereum `0xd0156a...f62efa`; ethereum `0xd201e8...e98f36`; ethereum `0xd6b5eb...1179c5`; ethereum `0xd7440b...40cd22`; ethereum `0xd7ad78...f21895`; ethereum `0xf61517...5e6683`; ethereum `0xf9de42...156ce6`; ethereum `0xffe3b0...fab24e` | ⚠️ Unaudited |
 | EdgeFactory | registry | ethereum | [`0xa969b8...1659bd`](./contracts/ethereum-1/0xa969b8a46166b135fd5ac533adc28c816e1659bd/) | ⚠️ Unaudited |
 | EdgeFactoryPerspective | registry | ethereum | [`0x8c7543...d4d788`](./contracts/ethereum-1/0x8c7543f83d3d295f68447792581f73d7d5d4d788/) | ⚠️ Unaudited |
-| ERC4626EVCCollateralSecuritizeFactory | registry | ethereum | [`0x5f51d9...f76cbb`](./contracts/ethereum-1/0x5f51d980f15fe6075ae30394dc35de57a4f76cbb/) | ⚠️ Unaudited |
 | EscrowedCollateralPerspective | operational_periphery | ethereum | [`0x4e58bb...7fadde`](./contracts/ethereum-1/0x4e58bbea423c4b9a2fc7b8e58f5499f9927fadde/) | ⚠️ Unaudited |
-| EulerEarnFactory | registry | ethereum | [`0x59709b...308af4`](./contracts/ethereum-1/0x59709b029b140c853fe28d277f83c3a65e308af4/) | ⚠️ Unaudited |
+| EthereumVaultConnector | unknown | avalanche | [`0xddcbe3...f36fa1`](./contracts/avalanche-43114/0xddcbe30a761edd2e19bba930a977475265f36fa1/) | ⚠️ Unaudited |
 | EulerEarnFactoryPerspective | registry | ethereum | [`0xa45895...a1667e`](./contracts/ethereum-1/0xa45895144f2b6e7e6d2fcaffe6ea19e86aa1667e/) | ⚠️ Unaudited |
 | EulerEarnVaultLens | core_logic | ethereum | 8 deployments: ethereum [`0x07d6b3...635091`](./contracts/ethereum-1/0x07d6b3981cbc1dc34102735b987b175116635091/); ethereum `0x189841...a2458e`; ethereum `0x20954c...5013d9`; ethereum `0xa09144...41a8be`; ethereum `0xafad3c...f6285f`; ethereum `0xcfe86b...fa4f9a`; ethereum `0xf8be6d...6a05ef`; ethereum `0xf99770...64084a` | ⚠️ Unaudited |
 | EulerFixedCyclicalBinaryIRMFactory | registry | ethereum | [`0xa8f8e8...3ac8d0`](./contracts/ethereum-1/0xa8f8e82c9da15a991d7bf2486ae26e22743ac8d0/) | ⚠️ Unaudited |
 | EulerKinkyIRMFactory | registry | ethereum | [`0x010102...9fc102`](./contracts/ethereum-1/0x010102daab6133d4f8ceb4c8842a70b9899fc102/) | ⚠️ Unaudited |
-| EulerSwapFactory | registry | ethereum | 2 deployments: ethereum [`0xb013be...2cf228`](./contracts/ethereum-1/0xb013be1d0d380c13b58e889f412895970a2cf228/); ethereum `0xd05213...04df5f` | ⚠️ Unaudited |
 | EulerSwapManagement | unknown | ethereum | [`0xa6c1dd...5ef86a`](./contracts/ethereum-1/0xa6c1ddc10fb13fdd998a4940a883aa952f5ef86a/) | ⚠️ Unaudited |
-| EulerSwapPeriphery | adapter | ethereum | 2 deployments: ethereum [`0x208ff5...d16b06`](./contracts/ethereum-1/0x208ff5eb543814789321daa1b5eb551881d16b06/); ethereum `0xd3a349...fd513e` | ⚠️ Unaudited |
 | EulerSwapProtocolFeeConfig | governance | ethereum | [`0x5171ae...f53b63`](./contracts/ethereum-1/0x5171aed04fa9551db484f07c853f252bc6f53b63/) | ⚠️ Unaudited |
-| EulerSwapRegistry | registry | ethereum | [`0x5fccb8...32814a`](./contracts/ethereum-1/0x5fccb84363f020c0cade052c9c654aabf932814a/) | ⚠️ Unaudited |
 | EulerUngovernedPerspective | unknown | ethereum | 4 deployments: ethereum [`0x600bbe...21b507`](./contracts/ethereum-1/0x600bbe1d0759f380fea72b2e9b2b6dcb4a21b507/); ethereum `0x6a123b...3d6215`; ethereum `0x7160cb...307bc6`; ethereum `0xb50a07...5e7fbf` | ⚠️ Unaudited |
 | FactoryGovernor | registry | ethereum | [`0x2f1325...dc1f3d`](./contracts/ethereum-1/0x2f13256e04022d6356d8ce8c53c7364e13dc1f3d/) | ⚠️ Unaudited |
 | FeeFlowControllerUtil | governance | ethereum | [`0x653ed9...dd36df`](./contracts/ethereum-1/0x653ed9b915c7e7c413e7b2a2b6d83dfe02dd36df/) | ⚠️ Unaudited |
@@ -80,15 +94,15 @@ The Governor family controls risk parameters and protocol configurations, which 
 | HookTarget | unknown | ethereum | [`0x6f5dad...1cad6a`](./contracts/ethereum-1/0x6f5dad1fce5944c241dfb586293d81fc791cad6a/) | ⚠️ Unaudited |
 | HookTargetAccessControlKeyring | governance | ethereum | [`0x6a7ced...a83d0a`](./contracts/ethereum-1/0x6a7ced396c7317f9465640a583b7f2564ca83d0a/) | ⚠️ Unaudited |
 | IRMLens | periphery | ethereum | 6 deployments: ethereum [`0x061b6b...0f807a`](./contracts/ethereum-1/0x061b6b0ba1b552006556c278fc8798d1e20f807a/); ethereum `0x35b2fa...bfeac2`; ethereum `0x57b1bb...6c52c1`; ethereum `0x5c5302...7e460b`; ethereum `0xbbc1ca...2109cf`; ethereum `0xc6e506...843626` | ⚠️ Unaudited |
+| KeyringCore | unknown | avalanche | [`0x3a5dd1...635bc6`](./contracts/avalanche-43114/0x3a5dd1fdf3bedc3a601d0e9bb37bb6cc3b635bc6/) | ⚠️ Unaudited |
 | OracleLens | operational_periphery | ethereum | 5 deployments: ethereum [`0x02bd64...ec2d83`](./contracts/ethereum-1/0x02bd64ce7fbdbe7eb84d1f9b08e0cc2a7fec2d83/); ethereum `0x0c4773...f3f183`; ethereum `0x30e6df...f7b48a`; ethereum `0x53dcfc...b1858a`; ethereum `0x787449...a9045d` | ⚠️ Unaudited |
 | Permit2 | unknown | avalanche | [`0x000000...c78ba3`](./contracts/avalanche-43114/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited |
-| PublicAllocator | operational_periphery | ethereum | [`0x8fdcb8...274800`](./contracts/ethereum-1/0x8fdcb80a2894f0dc052c8d52d22544dc90274800/) | ⚠️ Unaudited |
 | PythOracle | operational_periphery | ethereum | [`0xfa9880...19de65`](./contracts/ethereum-1/0xfa9880c197bb245d055ee864653eeecf8619de65/) | ⚠️ Unaudited |
 | Safe | unknown | ethereum | 6 deployments: ethereum [`0x62962b...02b655`](./contracts/ethereum-1/0x62962b4d506b0065a133f37e19d163e5b002b655/); ethereum `0xb1345e...5fba27`; ethereum `0xb3b84e...b73c53`; ethereum `0xbdaa3f...6a976d`; ethereum `0xd5b7bc...cbd471`; ethereum `0xf8ef49...069b0f` | ⚠️ Unaudited |
+| SafeProxy | unknown | avalanche | 4 deployments: avalanche [`0x69cc42...186364`](./contracts/avalanche-43114/0x69cc425b1e5f302e7db4e5d125ab984ec5186364/); avalanche `0x9506a6...722ee8`; avalanche `0xb80d81...73ee87`; avalanche `0xc952cd...b8424d` | ⚠️ Unaudited |
 | SnapshotRegistry | registry | ethereum | [`0x0a6467...bf459c`](./contracts/ethereum-1/0x0a64670763777e59898ae28d6acb7f2062bf459c/) | ⚠️ Unaudited |
 | SwapHandler | unknown | ethereum | [`0xa24689...17afe3`](./contracts/ethereum-1/0xa24689b6ab48eccf7038c70ebc39f9ed4217afe3/) | ⚠️ Unaudited |
 | Swapper | adapter | ethereum | [`0x719f8b...f9fb45`](./contracts/ethereum-1/0x719f8b330cca71cb6195d032a43194c7d3f9fb45/) | ⚠️ Unaudited |
-| SwapVerifier | periphery | ethereum | [`0x786c90...c582ab`](./contracts/ethereum-1/0x786c900d7d348662703c38b46f24c1cda2c582ab/) | ⚠️ Unaudited |
 | TimelockController | governance | ethereum | 3 deployments: ethereum [`0x1b8c36...f74f5a`](./contracts/ethereum-1/0x1b8c367ae56656b1d0901b2add1ad3226ff74f5a/); ethereum `0xbfee2d...b97e59`; ethereum `0xfb034c...07a968` | ⚠️ Unaudited |
 | UtilsLens | periphery | ethereum | 8 deployments: ethereum [`0x1ad6ed...6ee539`](./contracts/ethereum-1/0x1ad6edf948b037a9364607f9e3c1e640166ee539/); ethereum `0x1b6e0b...af2d95`; ethereum `0x3ebfd2...27fb36`; ethereum `0x6104c0...dec34a`; ethereum `0x7b89cc...e6e0fc`; ethereum `0xb8cac3...5afcc1`; ethereum `0xbef9b6...fcc071`; ethereum `0xcf1801...488727` | ⚠️ Unaudited |
 | VaultLens | core_logic | ethereum | 11 deployments: ethereum [`0x079fa5...c0e45e`](./contracts/ethereum-1/0x079fa5cde9c9647d26e79f3520fbdf9dbcc0e45e/); ethereum `0x72bbdb...f51f15`; ethereum `0x7427e9...0f3177`; ethereum `0x83801c...fc5b60`; ethereum `0xa18d79...ea66ab`; ethereum `0xa8695d...da8914`; ethereum `0xb65c7a...bc59eb`; ethereum `0xc3c456...657403`; ethereum `0xdb259a...7fc3e2`; ethereum `0xe240c5...55b539`; ethereum `0xf7c8d2...a10ac6` | ⚠️ Unaudited |
@@ -105,7 +119,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (11)
+### ❓ Unverified (26)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -122,21 +136,42 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | `0x950c6b...361b39` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xa2c12a...8a690e` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xeb3332...c9c9a1` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0x0345d8...536928` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0x065d7b...e17157` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0x0d1abc...6145ac` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0x29e9b6...2d4f21` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0x743144...5d0802` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0x768b74...278174` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0x77ab5a...ee2226` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0x80528f...3be696` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0x856416...5d2e30` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0x927aa7...db971c` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0xaf4b4c...f26181` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0xc96877...a69f53` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0xc9f920...e67709` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0xca14d3...cbf65f` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0xef2228...176d34` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Pashov Audit Group EulerEarn (also discovered via alternate URL)](https://github.com/euler-xyz/euler-earn/blob/master/audits/Pashov%5FAudit%5FGroup%5Freport.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Certora EulerEarn](https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora%5FEulerEarn%5Freport.pdf) | Pashov Audit Group | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [Sigma Prime EulerEarn](https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma%5FPrime%5FEulerEarn%5Freport.pdf) | Sigma Prime | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [Rendered PDF capture](https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Certora_EulerEarn_report.pdf) | Spearbit | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [Rendered PDF capture](https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Sigma_Prime_EulerEarn_report.pdf) | Spearbit | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [Omniscia Euler Earn Report](https://omniscia.io/reports/euler-finance-earn-yield-aggregator-66faae519dcc3c0018b9097e) | Enigma Ventures | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Certora_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora_EulerEarn_report.pdf) | Certora | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [Sigma_Prime_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma_Prime_EulerEarn_report.pdf) | Sigma Prime | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [yAudit ERC4626 and Vault Securitize Report](https://github.com/euler-xyz/evk-periphery/blob/master/audits/yAudit%20ERC4626%20and%20Vault%20Securitize.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Pashov Group ERC4626 and Vault Securitize Report](https://github.com/euler-xyz/evk-periphery/blob/master/audits/Pashov%20Group%20ERC4626%20and%20Vault%20Securitize.pdf) | Pashov Audit Group | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
+| [Pashov Audit Group EulerEarn (also discovered via alternate URL)](https://github.com/euler-xyz/euler-earn/blob/master/audits/Pashov%5FAudit%5FGroup%5Freport.pdf) | Pashov Audit Group | Audit | 2025-07 | fresh | Direct | contract_name | 2 | high |
+| [Certora EulerEarn](https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora%5FEulerEarn%5Freport.pdf) | Pashov Audit Group | Audit | 2025-07 | fresh | Direct | contract_name | 2 | high |
+| [Sigma Prime EulerEarn](https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma%5FPrime%5FEulerEarn%5Freport.pdf) | Sigma Prime | Audit | 2025-07 | fresh | Direct | contract_name | 2 | high |
+| [Rendered PDF capture](https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Certora_EulerEarn_report.pdf) | Spearbit | Audit | 2025-07 | fresh | Direct | contract_name | 2 | high |
+| [Rendered PDF capture](https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Sigma_Prime_EulerEarn_report.pdf) | Spearbit | Audit | 2025-07 | fresh | Direct | contract_name | 2 | high |
+| [Omniscia Euler Earn Report](https://omniscia.io/reports/euler-finance-earn-yield-aggregator-66faae519dcc3c0018b9097e) | Enigma Ventures | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
+| [Certora_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora_EulerEarn_report.pdf) | Certora | Audit | 2025-07 | fresh | Direct | contract_name | 2 | high |
+| [Sigma_Prime_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma_Prime_EulerEarn_report.pdf) | Sigma Prime | Audit | 2025-07 | fresh | Direct | contract_name | 2 | high |
+| [yAudit ERC4626 and Vault Securitize Report](https://github.com/euler-xyz/evk-periphery/blob/master/audits/yAudit%20ERC4626%20and%20Vault%20Securitize.pdf) | yAudit | Audit | 2025-11 | fresh | Direct | contract_name | 2 | high |
+| [Pashov Group ERC4626 and Vault Securitize Report](https://github.com/euler-xyz/evk-periphery/blob/master/audits/Pashov%20Group%20ERC4626%20and%20Vault%20Securitize.pdf) | Pashov Audit Group | Audit | 2025-11 | fresh | Direct | contract_name | 2 | high |
+| [Cyfrin EulerSwap](https://github.com/euler-xyz/euler-swap/blob/master/audits/2025-05-26-cyfrin-eulerswap-v2.0.pdf) | Cyfrin | Audit | 2025-05 | aging | Direct | contract_name | 5 | high |
+| [Cantina Managed EulerSwap May 3](https://github.com/euler-xyz/euler-swap/blob/master/audits/report-cantinacode-uniswap-euler-0422.pdf) | Spearbit | Audit | 2025-05 | aging | Direct | contract_name | 5 | high |
+| [ChainSecurity_EulerSwap_audit.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/ChainSecurity_EulerSwap_audit.pdf) | ChainSecurity | Audit | 2025-03 | aging | Direct | contract_name | 3 | high |
+| [Cantina Managed EulerSwap Mar 29](https://github.com/euler-xyz/euler-swap/blob/master/audits/report-euler-swap-050325.pdf) | Spearbit | Audit | 2025-03 | aging | Direct | contract_name | 5 | high |
+| [Fuzzland EulerSwap](https://github.com/euler-xyz/euler-swap/blob/master/audits/eulerswap-audit-report.pdf) | Spearbit | Audit | 2025-02 | aging | Direct | contract_name | 1 | high |
+| [report-cantinacode-euler-0901.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/report-cantinacode-euler-0901.pdf) | Spearbit | Audit | 2025-09 | fresh | Direct | contract_name | 2 | medium |
 
 ## Coverage Gaps
 
@@ -150,18 +185,13 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x130eab...0ffaed`](./contracts/ethereum-1/0x130eabada6f4c663095c8e9e276ab5da670ffaed/) | CrossAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa969b8...1659bd`](./contracts/ethereum-1/0xa969b8a46166b135fd5ac533adc28c816e1659bd/) | EdgeFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8c7543...d4d788`](./contracts/ethereum-1/0x8c7543f83d3d295f68447792581f73d7d5d4d788/) | EdgeFactoryPerspective | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5f51d9...f76cbb`](./contracts/ethereum-1/0x5f51d980f15fe6075ae30394dc35de57a4f76cbb/) | ERC4626EVCCollateralSecuritizeFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4e58bb...7fadde`](./contracts/ethereum-1/0x4e58bbea423c4b9a2fc7b8e58f5499f9927fadde/) | EscrowedCollateralPerspective | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x59709b...308af4`](./contracts/ethereum-1/0x59709b029b140c853fe28d277f83c3a65e308af4/) | EulerEarnFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa45895...a1667e`](./contracts/ethereum-1/0xa45895144f2b6e7e6d2fcaffe6ea19e86aa1667e/) | EulerEarnFactoryPerspective | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x07d6b3...635091`](./contracts/ethereum-1/0x07d6b3981cbc1dc34102735b987b175116635091/) | EulerEarnVaultLens | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa8f8e8...3ac8d0`](./contracts/ethereum-1/0xa8f8e82c9da15a991d7bf2486ae26e22743ac8d0/) | EulerFixedCyclicalBinaryIRMFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x010102...9fc102`](./contracts/ethereum-1/0x010102daab6133d4f8ceb4c8842a70b9899fc102/) | EulerKinkyIRMFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb013be...2cf228`](./contracts/ethereum-1/0xb013be1d0d380c13b58e889f412895970a2cf228/) | EulerSwapFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa6c1dd...5ef86a`](./contracts/ethereum-1/0xa6c1ddc10fb13fdd998a4940a883aa952f5ef86a/) | EulerSwapManagement | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x208ff5...d16b06`](./contracts/ethereum-1/0x208ff5eb543814789321daa1b5eb551881d16b06/) | EulerSwapPeriphery | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5171ae...f53b63`](./contracts/ethereum-1/0x5171aed04fa9551db484f07c853f252bc6f53b63/) | EulerSwapProtocolFeeConfig | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5fccb8...32814a`](./contracts/ethereum-1/0x5fccb84363f020c0cade052c9c654aabf932814a/) | EulerSwapRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x600bbe...21b507`](./contracts/ethereum-1/0x600bbe1d0759f380fea72b2e9b2b6dcb4a21b507/) | EulerUngovernedPerspective | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2f1325...dc1f3d`](./contracts/ethereum-1/0x2f13256e04022d6356d8ce8c53c7364e13dc1f3d/) | FactoryGovernor | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x653ed9...dd36df`](./contracts/ethereum-1/0x653ed9b915c7e7c413e7b2a2b6d83dfe02dd36df/) | FeeFlowControllerUtil | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -173,11 +203,9 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x6a7ced...a83d0a`](./contracts/ethereum-1/0x6a7ced396c7317f9465640a583b7f2564ca83d0a/) | HookTargetAccessControlKeyring | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x061b6b...0f807a`](./contracts/ethereum-1/0x061b6b0ba1b552006556c278fc8798d1e20f807a/) | IRMLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x02bd64...ec2d83`](./contracts/ethereum-1/0x02bd64ce7fbdbe7eb84d1f9b08e0cc2a7fec2d83/) | OracleLens | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8fdcb8...274800`](./contracts/ethereum-1/0x8fdcb80a2894f0dc052c8d52d22544dc90274800/) | PublicAllocator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0a6467...bf459c`](./contracts/ethereum-1/0x0a64670763777e59898ae28d6acb7f2062bf459c/) | SnapshotRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa24689...17afe3`](./contracts/ethereum-1/0xa24689b6ab48eccf7038c70ebc39f9ed4217afe3/) | SwapHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x719f8b...f9fb45`](./contracts/ethereum-1/0x719f8b330cca71cb6195d032a43194c7d3f9fb45/) | Swapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x786c90...c582ab`](./contracts/ethereum-1/0x786c900d7d348662703c38b46f24c1cda2c582ab/) | SwapVerifier | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1ad6ed...6ee539`](./contracts/ethereum-1/0x1ad6edf948b037a9364607f9e3c1e640166ee539/) | UtilsLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x079fa5...c0e45e`](./contracts/ethereum-1/0x079fa5cde9c9647d26e79f3520fbdf9dbcc0e45e/) | VaultLens | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -186,30 +214,21 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 42 |
-| upstream | 2 |
-| standard_library | 4 |
-| needs_review | 5 |
+| upstream | 3 |
+| standard_library | 7 |
+| needs_review | 21 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 10
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: high=14, medium=1
+- Match method counts: extraction_exact=43
 
 Zero-match audit list:
 
-- [11595] Pashov Audit Group EulerEarn
-- [11596] Certora EulerEarn
-- [11597] Sigma Prime EulerEarn
-- [11599] Rendered PDF capture
-- [11600] Rendered PDF capture
 - [11601] Omniscia Euler Earn Report
-- [11602] Certora_EulerEarn_report.pdf
-- [11604] Sigma_Prime_EulerEarn_report.pdf
-- [11605] yAudit ERC4626 and Vault Securitize Report
-- [11606] Pashov Group ERC4626 and Vault Securitize Report
 
 Fork inheritance lineage and inherited audits are included when available.

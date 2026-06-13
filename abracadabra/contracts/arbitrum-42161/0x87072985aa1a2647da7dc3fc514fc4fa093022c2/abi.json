@@ -1,0 +1,245 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICauldronV2",
+        "name": "cauldron",
+        "type": "address"
+      }
+    ],
+    "name": "getBorrowFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "borrowFee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICauldronV2",
+        "name": "cauldron",
+        "type": "address"
+      }
+    ],
+    "name": "getInterestPerYear",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "interestPerYear",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICauldronV2",
+        "name": "cauldron",
+        "type": "address"
+      }
+    ],
+    "name": "getLiquidationFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "liquidationFee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICauldronV2",
+        "name": "cauldron",
+        "type": "address"
+      }
+    ],
+    "name": "getMaxBorrowForCauldronV2",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "maxBorrow",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICauldronV3",
+        "name": "cauldron",
+        "type": "address"
+      }
+    ],
+    "name": "getMaxBorrowForCauldronV3",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "maxBorrow",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICauldronV2",
+        "name": "cauldron",
+        "type": "address"
+      }
+    ],
+    "name": "getMaximumCollateralRatio",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "mcr",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICauldronV2",
+        "name": "cauldron",
+        "type": "address"
+      }
+    ],
+    "name": "getOracleExchangeRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "exchangeRate",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICauldronV2",
+        "name": "cauldron",
+        "type": "address"
+      }
+    ],
+    "name": "getTotalMimBorrowed",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalMimBorrowed",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICauldronV2",
+        "name": "cauldron",
+        "type": "address"
+      }
+    ],
+    "name": "getTvl",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "tvl",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICauldronV2",
+        "name": "cauldron",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      }
+    ],
+    "name": "getUserBorrow",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICauldronV3",
+        "name": "cauldron",
+        "type": "address"
+      }
+    ],
+    "name": "getUserBorrowLimit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "userBorrowLimit",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICauldronV2",
+        "name": "cauldron",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      }
+    ],
+    "name": "getUserCollateral",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

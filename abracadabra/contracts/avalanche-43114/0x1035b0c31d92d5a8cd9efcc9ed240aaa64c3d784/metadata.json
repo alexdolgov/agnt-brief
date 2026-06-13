@@ -1,0 +1,17 @@
+{
+  "address": "0x1035b0c31d92d5a8cd9efcc9ed240aaa64c3d784",
+  "chain_id": 43114,
+  "contract_name": "ProxyAdmin",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:40:51.079Z"
+}

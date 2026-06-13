@@ -1,0 +1,17 @@
+{
+  "address": "0xaff90532e2937ff290009521e7e120ed062d4f34",
+  "chain_id": 43114,
+  "contract_name": "Cliff",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000006e84a6216ea6dacc71ee8e6b0a5b7322eebc0fdd0000000000000000000000005d3e4c0fe11e0ae4c32f0ff74b4544c49538ac610000000000000000000000000000000000000000000000000000000060e06d600000000000000000000000000000000000000000000000000000000000000003",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:41:09.584Z"
+}

@@ -7,11 +7,11 @@
 - Project: Verus Market (`verus-market`)
 - Website: [https://eth.verusbridge.io/](https://eth.verusbridge.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T03:59:08.605Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
+- Generated: 2026-06-13T02:06:57.344Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-d5d2
 - Chains: ethereum
-- Contract surface: 32 unique implementations (32 raw deployments)
-- DeFi Llama TVL: $9,647,253.92
+- Contract surface: 33 unique implementations (33 raw deployments)
+- DeFi Llama TVL: $6,360,640.64
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -25,12 +25,12 @@ The protocol consists of a single product family with one proxy contract; no sha
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 32
-- Unique implementations: 32
-- Raw deployments: 32
+- Unique implementations: 33
+- Raw deployments: 33
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -49,9 +49,11 @@ The protocol consists of a single product family with one proxy contract; no sha
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| SubmitImports | unknown | ethereum | [`0xa045cf...6fc87f`](./contracts/ethereum-1/0xa045cf963b79833faf445f555ee1a6812d6fc87f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -119,10 +121,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 32 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 32 |
 
 ## Scope Matching Notes
 

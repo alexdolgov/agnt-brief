@@ -1,0 +1,18 @@
+{
+  "address": "0xc9facfa2fc50c9a30c77a2ad14e2db107d591918",
+  "chain_id": 42161,
+  "contract_name": "ArbEthLevSwapper",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:41:13.700Z"
+}

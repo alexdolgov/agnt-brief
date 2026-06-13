@@ -1,0 +1,18 @@
+{
+  "address": "0x83aadfeb275a4e0146e7cc2845ff99853b66b4b6",
+  "chain_id": 42161,
+  "contract_name": "ERC1967Factory",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:41:10.593Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xbc7fa554a65a98502457fcfc2f1afa28113d7920",
+  "chain_id": 1,
+  "contract_name": "PopsicleUSDCUSDTLevSwapper",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "AGPL-3.0-only, CC-BY-4.0, GPL-2.0-or-later, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:41:23.618Z"
+}

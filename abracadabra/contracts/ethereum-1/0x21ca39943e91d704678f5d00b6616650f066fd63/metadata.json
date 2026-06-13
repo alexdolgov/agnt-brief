@@ -1,0 +1,18 @@
+{
+  "address": "0x21ca39943e91d704678f5d00b6616650f066fd63",
+  "chain_id": 1,
+  "contract_name": "WrappedmTSLA",
+  "compiler_version": "v0.6.2+commit.bacdbe57",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:40:59.660Z"
+}

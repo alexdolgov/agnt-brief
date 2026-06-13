@@ -1,0 +1,18 @@
+{
+  "address": "0xfaa221f0a3c36a17dacbecc1f19df4094871b4d3",
+  "chain_id": 56,
+  "contract_name": "SousChef",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:40:48.959Z"
+}

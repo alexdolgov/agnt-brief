@@ -8,7 +8,7 @@
 | [3jane](./3jane/) | $76.6M | 61.9% | $76.6M | declining | 4 | 23 | 2026-06-10 |
 | [40-acres](./40-acres/) | $10.0M | 0.0% | $10.0M | active | 4 | 325 | 2026-06-12 |
 | [abc-pool](./abc-pool/) | $6.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [abracadabra](./abracadabra/) | $8.1M | 0.0% | ? | dead | 5 | 2568 | 2026-05-31 |
+| [abracadabra](./abracadabra/) | $0.0 | 4.7% | $0.0 | declining | 5 | 881 | 2026-06-13 |
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 3 | 43 | 2026-06-10 |
 | [acre](./acre/) | $3.0 | 0.5% | $3.0 | active | 4 | 220 | 2026-06-10 |
 | [across](./across/) | $28.1M | 26.2% | $9.2M | active | 11 | 147 | 2026-06-12 |
@@ -307,7 +307,7 @@
 | [keep-network](./keep-network/) | $25.5M | 7.9% | $24.7M | declining | 18 | 225 | 2026-06-11 |
 | [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | declining | 1 | 480 | 2026-06-11 |
 | [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 0 | 4 | 2026-06-11 |
-| [keyring](./keyring/) | $6.2M | 0.0% | ? | active | 10 | 53 | 2026-06-11 |
+| [keyring](./keyring/) | $6.2M | 17.0% | ? | active | 16 | 73 | 2026-06-13 |
 | [kiloex](./kiloex/) | $5.7M | 14.3% | ? | active | 10 | 110 | 2026-06-11 |
 | [kine-finance](./kine-finance/) | $351.8M | 0.0% | $351.8M | declining | 0 | 35 | 2026-06-11 |
 | [king-protocol](./king-protocol/) | $1.5M | 60.0% | ? | active | 4 | 16 | 2026-06-11 |
@@ -347,7 +347,7 @@
 | [mainstreet](./mainstreet/) | $77.7M | 9.1% | $77.7M | active | 1 | 11 | 2026-06-12 |
 | [makina](./makina/) | $12.9M | 90.9% | $12.9M | active | 4 | 36 | 2026-06-11 |
 | [mangrove](./mangrove/) | $4.3M | 22.0% | ? | active | 6 | 68 | 2026-06-11 |
-| [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 0 | 5 | 2026-06-11 |
+| [mansory](./mansory/) | $170.0K | 0.0% | $170.0K | active | 0 | 6 | 2026-06-13 |
 | [manta-atlantic-stake](./manta-atlantic-stake/) | $5.4M | 0.0% | ? | sunsetting | 0 | 109 | 2026-06-11 |
 | [manta-cedefi](./manta-cedefi/) | $26.5M | 0.0% | ? | unknown | 0 | 17 | 2026-06-12 |
 | [manta-pacific](./manta-pacific/) | $21.1M | 0.0% | ? | active | 0 | 12 | 2026-06-12 |
@@ -534,7 +534,7 @@
 | [shadow-exchange](./shadow-exchange/) | $999.8 | 21.6% | $999.8 | declining | 3 | 84 | 2026-05-23 |
 | [shape-bridge](./shape-bridge/) | $760.4K | 0.0% | ? | active | 2 | 26 | 2026-06-11 |
 | [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | active | 3 | 40 | 2026-06-11 |
-| [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-06-11 |
+| [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-06-13 |
 | [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | active | 0 | 2 | 2026-06-12 |
 | [sierra-protocol](./sierra-protocol/) | $39.6M | 4.0% | $5.3M | active | 1 | 78 | 2026-06-11 |
@@ -671,7 +671,7 @@
 | [veno-finance](./veno-finance/) | $37.5M | 0.0% | ? | active | 3 | 51 | 2026-06-12 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | active | 2 | 4 | 2026-06-11 |
 | [verio](./verio/) | $7.2M | 0.0% | ? | unknown | 11 | 0 | 2026-06-11 |
-| [verus-market](./verus-market/) | $9.6M | 0.0% | ? | declining | 0 | 32 | 2026-06-11 |
+| [verus-market](./verus-market/) | $6.4M | 0.0% | ? | declining | 0 | 33 | 2026-06-13 |
 | [vesper](./vesper/) | $694.0K | 51.3% | $351.7K | active | 30 | 44 | 2026-06-11 |
 | [vest-markets](./vest-markets/) | $1.7M | 0.0% | ? | declining | 0 | 4 | 2026-06-11 |
 | [vfat.io](./vfat.io/) | $0.0 | 10.0% | ? | active | 10 | 553 | 2026-06-11 |

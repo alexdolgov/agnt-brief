@@ -1,0 +1,26 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "ReturnPreviewWrapperHarvestLpMintAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISolidlyLpWrapper",
+        "name": "wrapper",
+        "type": "address"
+      }
+    ],
+    "name": "previewWrapperHarvestLpMintAmount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "mansory",
-  "generated_at": "2026-06-11T00:49:50.805Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-2b99",
+  "generated_at": "2026-06-13T02:06:31.986Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-d5d2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "mansory",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 80.90761785949867
   },
   "summary": {
-    "total_contracts": 5,
+    "total_contracts": 6,
     "total_addresses": 12,
-    "unique_implementations": 5,
+    "unique_implementations": 6,
     "total_deployments": 12,
     "audited_contracts": 0,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 6,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 5,
+    "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6286314.60363,
-    "tvl_usd": 9.79483737768739e-19,
+    "dl_tvl_usd": 6179583.0017,
+    "tvl_usd": 170021.61196068127,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "bsc": 0
+      "bsc": 170021.61
     },
-    "asd_usd": 9.79483737768739e-19,
+    "asd_usd": 170021.61196068127,
     "website_url": "https://www.mansory.com/",
     "chains": [
       "bsc"
@@ -63,8 +63,8 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
-    "has_non_token_contracts": false,
+    "unique_implementations": 6,
+    "has_non_token_contracts": true,
     "is_skeletal": false
   },
   "fork_lineage": {
@@ -72,6 +72,37 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x4700ac98ee76e0d63598e2bfc24a2646fdf3649a",
+      "name": "PancakeV3Pool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "pancakeswap",
+      "product_line": null,
+      "tvl_usd": 170021.61196068127,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PancakeV3Pool",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x4700ac98ee76e0d63598e2bfc24a2646fdf3649a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 170021.61196068127,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -128,14 +159,14 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0xbc7dee0f48ca7aa4e9b7603329b0fc4b5e462d38",
       "name": "IpfsProofLotteryUpgradeable",
-      "role": "proxy",
+      "role": "unknown",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": null,
@@ -148,15 +179,6 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xbc7dee0f48ca7aa4e9b7603329b0fc4b5e462d38",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xda7ac01474da9398bd0b26f9fb62117a13bbac68",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -175,7 +197,7 @@
       "chain_name": "bsc",
       "address": "0x0fcfe33b46e5b21e5e96b722d4c85510198f9255",
       "name": "MyOFTUpgradeable",
-      "role": "proxy",
+      "role": "unknown",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "Mansory",
@@ -288,7 +310,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     }
   ],
   "audits": [],
@@ -317,7 +339,7 @@
   ],
   "origin_summary": {
     "native": 2,
-    "upstream": 0,
+    "upstream": 1,
     "standard_library": 3,
     "needs_review": 0
   },

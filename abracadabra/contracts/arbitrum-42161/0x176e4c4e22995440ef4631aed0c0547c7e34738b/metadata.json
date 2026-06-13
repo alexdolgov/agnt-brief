@@ -1,0 +1,18 @@
+{
+  "address": "0x176e4c4e22995440ef4631aed0c0547c7e34738b",
+  "chain_id": 42161,
+  "contract_name": "PythAggregator",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "shanghai",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:40:51.658Z"
+}

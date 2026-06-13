@@ -1,0 +1,18 @@
+{
+  "address": "0x2958db359d22411cdf9825f8b27f17350a6fc6bb",
+  "chain_id": 42161,
+  "contract_name": "MagicLP",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:40:48.498Z"
+}

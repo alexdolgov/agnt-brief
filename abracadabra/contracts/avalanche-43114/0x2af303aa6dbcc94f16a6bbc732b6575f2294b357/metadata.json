@@ -1,0 +1,17 @@
+{
+  "address": "0x2af303aa6dbcc94f16a6bbc732b6575f2294b357",
+  "chain_id": 43114,
+  "contract_name": "UsdcAvaxLevSwapper",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:41:01.580Z"
+}

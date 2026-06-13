@@ -1,13 +1,13 @@
 # keyring — Contract Index
 
-53 unique implementations across 2 chains · 144 deployments · 0 audited · 42 unaudited · 11 unverified
+73 unique implementations across 2 chains · 174 deployments · 8 audited · 39 unaudited · 26 unverified
 
 ## adapter (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [CrossAdapter (29 deployments)](./ethereum-1/0x130eabada6f4c663095c8e9e276ab5da670ffaed/) | ethereum | 29 deployments: ethereum [`0x130eab...0ffaed`](./ethereum-1/0x130eabada6f4c663095c8e9e276ab5da670ffaed/); ethereum `0x15226e...aac6bb`; ethereum `0x336d82...fba6e8`; ethereum `0x3fc222...1b4f12`; ethereum `0x4a35fe...b205af`; ethereum `0x55757d...58dcc1`; ethereum `0x562929...ec1832`; ethereum `0x566c24...eef5dd`; ethereum `0x5ae8c1...78c275`; ethereum `0x5b12ce...f6b066`; ethereum `0x5bc6c0...3a554c`; ethereum `0x62b1de...b25f61`; ethereum `0x6a569e...a84dc7`; ethereum `0x8424db...77ed0c`; ethereum `0x8e8cfc...04cd4e`; ethereum `0xa52631...7b6cff`; ethereum `0xa625cb...62c564`; ethereum `0xadccfc...09c988`; ethereum `0xb0baa4...3254f0`; ethereum `0xca5b70...56b85f`; ethereum `0xcf8f3a...972785`; ethereum `0xd0156a...f62efa`; ethereum `0xd201e8...e98f36`; ethereum `0xd6b5eb...1179c5`; ethereum `0xd7440b...40cd22`; ethereum `0xd7ad78...f21895`; ethereum `0xf61517...5e6683`; ethereum `0xf9de42...156ce6`; ethereum `0xffe3b0...fab24e` | ⚠️ Unaudited | Verified |
-| [EulerSwapPeriphery (2 deployments)](./ethereum-1/0x208ff5eb543814789321daa1b5eb551881d16b06/) | ethereum | 2 deployments: ethereum [`0x208ff5...d16b06`](./ethereum-1/0x208ff5eb543814789321daa1b5eb551881d16b06/); ethereum `0xd3a349...fd513e` | ⚠️ Unaudited | Verified |
+| [EulerSwapPeriphery (2 deployments)](./ethereum-1/0x208ff5eb543814789321daa1b5eb551881d16b06/) | ethereum | 2 deployments: ethereum [`0x208ff5...d16b06`](./ethereum-1/0x208ff5eb543814789321daa1b5eb551881d16b06/); ethereum `0xd3a349...fd513e` | ✅ Audited | Verified |
 | [Swapper](./ethereum-1/0x719f8b330cca71cb6195d032a43194c7d3f9fb45/) | ethereum | [`0x719f8b...f9fb45`](./ethereum-1/0x719f8b330cca71cb6195d032a43194c7d3f9fb45/) | ⚠️ Unaudited | Verified |
 
 ## core_logic (2)
@@ -36,7 +36,7 @@
 | [EscrowedCollateralPerspective](./ethereum-1/0x4e58bbea423c4b9a2fc7b8e58f5499f9927fadde/) | ethereum | [`0x4e58bb...7fadde`](./ethereum-1/0x4e58bbea423c4b9a2fc7b8e58f5499f9927fadde/) | ⚠️ Unaudited | Verified |
 | [FixedRateOracle (11 deployments)](./ethereum-1/0x3415b11d4e4fbb6774df9859e03b1a26c48136c5/) | ethereum | 11 deployments: ethereum [`0x3415b1...8136c5`](./ethereum-1/0x3415b11d4e4fbb6774df9859e03b1a26c48136c5/); ethereum `0x4cfa6e...c3b7c1`; ethereum `0x4e64e5...73cf45`; ethereum `0x53be6a...8eb56e`; ethereum `0x86cb59...be3f56`; ethereum `0x95df7a...9b8439`; ethereum `0xb5004f...31ffb4`; ethereum `0xbd3365...2121dc`; ethereum `0xd35657...c3d4b8`; ethereum `0xf58f4d...bdd9f0`; ethereum `0xfef13a...0fe357` | ⚠️ Unaudited | Verified |
 | [OracleLens (5 deployments)](./ethereum-1/0x02bd64ce7fbdbe7eb84d1f9b08e0cc2a7fec2d83/) | ethereum | 5 deployments: ethereum [`0x02bd64...ec2d83`](./ethereum-1/0x02bd64ce7fbdbe7eb84d1f9b08e0cc2a7fec2d83/); ethereum `0x0c4773...f3f183`; ethereum `0x30e6df...f7b48a`; ethereum `0x53dcfc...b1858a`; ethereum `0x787449...a9045d` | ⚠️ Unaudited | Verified |
-| [PublicAllocator](./ethereum-1/0x8fdcb80a2894f0dc052c8d52d22544dc90274800/) | ethereum | [`0x8fdcb8...274800`](./ethereum-1/0x8fdcb80a2894f0dc052c8d52d22544dc90274800/) | ⚠️ Unaudited | Verified |
+| [PublicAllocator](./ethereum-1/0x8fdcb80a2894f0dc052c8d52d22544dc90274800/) | ethereum | [`0x8fdcb8...274800`](./ethereum-1/0x8fdcb80a2894f0dc052c8d52d22544dc90274800/) | ✅ Audited | Verified |
 | [PythOracle](./ethereum-1/0xfa9880c197bb245d055ee864653eeecf8619de65/) | ethereum | [`0xfa9880...19de65`](./ethereum-1/0xfa9880c197bb245d055ee864653eeecf8619de65/) | ⚠️ Unaudited | Verified |
 
 ## periphery (4)
@@ -45,7 +45,7 @@
 |---|---|---|---|---|
 | [AccountLens (6 deployments)](./ethereum-1/0x3342097299f57ec4773578a94f99d5d2ea0c230f/) | ethereum | 6 deployments: ethereum [`0x334209...0c230f`](./ethereum-1/0x3342097299f57ec4773578a94f99d5d2ea0c230f/); ethereum `0x5187ee...8ff257`; ethereum `0x880620...e60e9f`; ethereum `0x94b9d2...425844`; ethereum `0xa60c42...e34bc7`; ethereum `0xb8507b...27cd94` | ⚠️ Unaudited | Verified |
 | [IRMLens (6 deployments)](./ethereum-1/0x061b6b0ba1b552006556c278fc8798d1e20f807a/) | ethereum | 6 deployments: ethereum [`0x061b6b...0f807a`](./ethereum-1/0x061b6b0ba1b552006556c278fc8798d1e20f807a/); ethereum `0x35b2fa...bfeac2`; ethereum `0x57b1bb...6c52c1`; ethereum `0x5c5302...7e460b`; ethereum `0xbbc1ca...2109cf`; ethereum `0xc6e506...843626` | ⚠️ Unaudited | Verified |
-| [SwapVerifier](./ethereum-1/0x786c900d7d348662703c38b46f24c1cda2c582ab/) | ethereum | [`0x786c90...c582ab`](./ethereum-1/0x786c900d7d348662703c38b46f24c1cda2c582ab/) | ⚠️ Unaudited | Verified |
+| [SwapVerifier](./ethereum-1/0x786c900d7d348662703c38b46f24c1cda2c582ab/) | ethereum | [`0x786c90...c582ab`](./ethereum-1/0x786c900d7d348662703c38b46f24c1cda2c582ab/) | ✅ Audited | Verified |
 | [UtilsLens (8 deployments)](./ethereum-1/0x1ad6edf948b037a9364607f9e3c1e640166ee539/) | ethereum | 8 deployments: ethereum [`0x1ad6ed...6ee539`](./ethereum-1/0x1ad6edf948b037a9364607f9e3c1e640166ee539/); ethereum `0x1b6e0b...af2d95`; ethereum `0x3ebfd2...27fb36`; ethereum `0x6104c0...dec34a`; ethereum `0x7b89cc...e6e0fc`; ethereum `0xb8cac3...5afcc1`; ethereum `0xbef9b6...fcc071`; ethereum `0xcf1801...488727` | ⚠️ Unaudited | Verified |
 
 ## proxy (1)
@@ -54,35 +54,40 @@
 |---|---|---|---|---|
 | Proxy (impl: 0x021f26e8fa57e7b88200da5c57f0c8af54f6557d) | ethereum | `0x7995dd...c9e866` | ❓ Unverified | Unverified |
 
-## registry (13)
+## registry (14)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
+| [BeaconProxy (8 deployments)](./avalanche-43114/0x2cbb39cdc3c0ba22f857a5a8ca54dee6d7fd04bf/) | avalanche | 8 deployments: avalanche [`0x2cbb39...fd04bf`](./avalanche-43114/0x2cbb39cdc3c0ba22f857a5a8ca54dee6d7fd04bf/); avalanche `0x3050b7...654529`; avalanche `0x5fdb07...b764c6`; avalanche `0x67e0ac...6b4438`; avalanche `0x6de07d...651a1e`; avalanche `0x8f23da...30ffde`; avalanche `0xb03277...bb0592`; avalanche `0xea5341...383d44` | ⚠️ Unaudited | Verified |
 | [CapRiskStewardFactory (3 deployments)](./ethereum-1/0x93c233008971e878d60a7737657869ab746f3208/) | ethereum | 3 deployments: ethereum [`0x93c233...6f3208`](./ethereum-1/0x93c233008971e878d60a7737657869ab746f3208/); ethereum `0xa446a5...3a448b`; ethereum `0xff00fa...cffb84` | ⚠️ Unaudited | Verified |
 | [EdgeFactory](./ethereum-1/0xa969b8a46166b135fd5ac533adc28c816e1659bd/) | ethereum | [`0xa969b8...1659bd`](./ethereum-1/0xa969b8a46166b135fd5ac533adc28c816e1659bd/) | ⚠️ Unaudited | Verified |
 | [EdgeFactoryPerspective](./ethereum-1/0x8c7543f83d3d295f68447792581f73d7d5d4d788/) | ethereum | [`0x8c7543...d4d788`](./ethereum-1/0x8c7543f83d3d295f68447792581f73d7d5d4d788/) | ⚠️ Unaudited | Verified |
-| [ERC4626EVCCollateralSecuritizeFactory](./ethereum-1/0x5f51d980f15fe6075ae30394dc35de57a4f76cbb/) | ethereum | [`0x5f51d9...f76cbb`](./ethereum-1/0x5f51d980f15fe6075ae30394dc35de57a4f76cbb/) | ⚠️ Unaudited | Verified |
-| [EulerEarnFactory](./ethereum-1/0x59709b029b140c853fe28d277f83c3a65e308af4/) | ethereum | [`0x59709b...308af4`](./ethereum-1/0x59709b029b140c853fe28d277f83c3a65e308af4/) | ⚠️ Unaudited | Verified |
+| [ERC4626EVCCollateralSecuritizeFactory](./ethereum-1/0x5f51d980f15fe6075ae30394dc35de57a4f76cbb/) | ethereum | [`0x5f51d9...f76cbb`](./ethereum-1/0x5f51d980f15fe6075ae30394dc35de57a4f76cbb/) | ✅ Audited | Verified |
+| [EulerEarnFactory](./ethereum-1/0x59709b029b140c853fe28d277f83c3a65e308af4/) | ethereum | [`0x59709b...308af4`](./ethereum-1/0x59709b029b140c853fe28d277f83c3a65e308af4/) | ✅ Audited | Verified |
 | [EulerEarnFactoryPerspective](./ethereum-1/0xa45895144f2b6e7e6d2fcaffe6ea19e86aa1667e/) | ethereum | [`0xa45895...a1667e`](./ethereum-1/0xa45895144f2b6e7e6d2fcaffe6ea19e86aa1667e/) | ⚠️ Unaudited | Verified |
 | [EulerFixedCyclicalBinaryIRMFactory](./ethereum-1/0xa8f8e82c9da15a991d7bf2486ae26e22743ac8d0/) | ethereum | [`0xa8f8e8...3ac8d0`](./ethereum-1/0xa8f8e82c9da15a991d7bf2486ae26e22743ac8d0/) | ⚠️ Unaudited | Verified |
 | [EulerKinkyIRMFactory](./ethereum-1/0x010102daab6133d4f8ceb4c8842a70b9899fc102/) | ethereum | [`0x010102...9fc102`](./ethereum-1/0x010102daab6133d4f8ceb4c8842a70b9899fc102/) | ⚠️ Unaudited | Verified |
-| [EulerSwapFactory (2 deployments)](./ethereum-1/0xb013be1d0d380c13b58e889f412895970a2cf228/) | ethereum | 2 deployments: ethereum [`0xb013be...2cf228`](./ethereum-1/0xb013be1d0d380c13b58e889f412895970a2cf228/); ethereum `0xd05213...04df5f` | ⚠️ Unaudited | Verified |
-| [EulerSwapRegistry](./ethereum-1/0x5fccb84363f020c0cade052c9c654aabf932814a/) | ethereum | [`0x5fccb8...32814a`](./ethereum-1/0x5fccb84363f020c0cade052c9c654aabf932814a/) | ⚠️ Unaudited | Verified |
+| [EulerSwapFactory (2 deployments)](./ethereum-1/0xb013be1d0d380c13b58e889f412895970a2cf228/) | ethereum | 2 deployments: ethereum [`0xb013be...2cf228`](./ethereum-1/0xb013be1d0d380c13b58e889f412895970a2cf228/); ethereum `0xd05213...04df5f` | ✅ Audited | Verified |
+| [EulerSwapRegistry](./ethereum-1/0x5fccb84363f020c0cade052c9c654aabf932814a/) | ethereum | [`0x5fccb8...32814a`](./ethereum-1/0x5fccb84363f020c0cade052c9c654aabf932814a/) | ✅ Audited | Verified |
 | [FactoryGovernor](./ethereum-1/0x2f13256e04022d6356d8ce8c53c7364e13dc1f3d/) | ethereum | [`0x2f1325...dc1f3d`](./ethereum-1/0x2f13256e04022d6356d8ce8c53c7364e13dc1f3d/) | ⚠️ Unaudited | Verified |
 | [GovernorAccessControlEmergencyFactory](./ethereum-1/0x025c8831c6e45420df8e71f7b6b99f733d120faf/) | ethereum | [`0x025c88...120faf`](./ethereum-1/0x025c8831c6e45420df8e71f7b6b99f733d120faf/) | ⚠️ Unaudited | Verified |
 | [SnapshotRegistry](./ethereum-1/0x0a64670763777e59898ae28d6acb7f2062bf459c/) | ethereum | [`0x0a6467...bf459c`](./ethereum-1/0x0a64670763777e59898ae28d6acb7f2062bf459c/) | ⚠️ Unaudited | Verified |
 
-## unknown (18)
+## unknown (37)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [CapRiskSteward (2 deployments)](./ethereum-1/0x465528b234fec209db52c9901dd959742a4f8b8c/) | ethereum | 2 deployments: ethereum [`0x465528...4f8b8c`](./ethereum-1/0x465528b234fec209db52c9901dd959742a4f8b8c/); ethereum `0xfe56ca...e89b95` | ⚠️ Unaudited | Verified |
+| [EthereumVaultConnector](./avalanche-43114/0xddcbe30a761edd2e19bba930a977475265f36fa1/) | avalanche | [`0xddcbe3...f36fa1`](./avalanche-43114/0xddcbe30a761edd2e19bba930a977475265f36fa1/) | ⚠️ Unaudited | Verified |
+| [EulerSwap](./ethereum-1/0x8b0e044e364f2ce913799d53b300e15a6974dc97/) | ethereum | [`0x8b0e04...74dc97`](./ethereum-1/0x8b0e044e364f2ce913799d53b300e15a6974dc97/) | ✅ Audited | Verified |
 | [EulerSwapManagement](./ethereum-1/0xa6c1ddc10fb13fdd998a4940a883aa952f5ef86a/) | ethereum | [`0xa6c1dd...5ef86a`](./ethereum-1/0xa6c1ddc10fb13fdd998a4940a883aa952f5ef86a/) | ⚠️ Unaudited | Verified |
 | [EulerUngovernedPerspective (4 deployments)](./ethereum-1/0x600bbe1d0759f380fea72b2e9b2b6dcb4a21b507/) | ethereum | 4 deployments: ethereum [`0x600bbe...21b507`](./ethereum-1/0x600bbe1d0759f380fea72b2e9b2b6dcb4a21b507/); ethereum `0x6a123b...3d6215`; ethereum `0x7160cb...307bc6`; ethereum `0xb50a07...5e7fbf` | ⚠️ Unaudited | Verified |
 | [GovernedPerspective](./ethereum-1/0x492e9fe1289d43f8bb6275237bf16c9248c74d44/) | ethereum | [`0x492e9f...c74d44`](./ethereum-1/0x492e9fe1289d43f8bb6275237bf16c9248c74d44/) | ⚠️ Unaudited | Verified |
 | [HookTarget](./ethereum-1/0x6f5dad1fce5944c241dfb586293d81fc791cad6a/) | ethereum | [`0x6f5dad...1cad6a`](./ethereum-1/0x6f5dad1fce5944c241dfb586293d81fc791cad6a/) | ⚠️ Unaudited | Verified |
+| [KeyringCore](./avalanche-43114/0x3a5dd1fdf3bedc3a601d0e9bb37bb6cc3b635bc6/) | avalanche | [`0x3a5dd1...635bc6`](./avalanche-43114/0x3a5dd1fdf3bedc3a601d0e9bb37bb6cc3b635bc6/) | ⚠️ Unaudited | Verified |
 | [Permit2](./avalanche-43114/0x000000000022d473030f116ddee9f6b43ac78ba3/) | avalanche | [`0x000000...c78ba3`](./avalanche-43114/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited | Verified |
 | [Safe (6 deployments)](./ethereum-1/0x62962b4d506b0065a133f37e19d163e5b002b655/) | ethereum | 6 deployments: ethereum [`0x62962b...02b655`](./ethereum-1/0x62962b4d506b0065a133f37e19d163e5b002b655/); ethereum `0xb1345e...5fba27`; ethereum `0xb3b84e...b73c53`; ethereum `0xbdaa3f...6a976d`; ethereum `0xd5b7bc...cbd471`; ethereum `0xf8ef49...069b0f` | ⚠️ Unaudited | Verified |
+| [SafeProxy (4 deployments)](./avalanche-43114/0x69cc425b1e5f302e7db4e5d125ab984ec5186364/) | avalanche | 4 deployments: avalanche [`0x69cc42...186364`](./avalanche-43114/0x69cc425b1e5f302e7db4e5d125ab984ec5186364/); avalanche `0x9506a6...722ee8`; avalanche `0xb80d81...73ee87`; avalanche `0xc952cd...b8424d` | ⚠️ Unaudited | Verified |
 | [SwapHandler](./ethereum-1/0xa24689b6ab48eccf7038c70ebc39f9ed4217afe3/) | ethereum | [`0xa24689...17afe3`](./ethereum-1/0xa24689b6ab48eccf7038c70ebc39f9ed4217afe3/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x021f26...f6557d` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x0fac4d...75c084` | ❓ Unverified | Unverified |
@@ -94,3 +99,18 @@
 | UnnamedContract | ethereum | `0x950c6b...361b39` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xa2c12a...8a690e` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xeb3332...c9c9a1` | ❓ Unverified | Unverified |
+| UnnamedContract | avalanche | `0x0345d8...536928` | ❓ Unverified | Unverified |
+| UnnamedContract | avalanche | `0x065d7b...e17157` | ❓ Unverified | Unverified |
+| UnnamedContract | avalanche | `0x0d1abc...6145ac` | ❓ Unverified | Unverified |
+| UnnamedContract | avalanche | `0x29e9b6...2d4f21` | ❓ Unverified | Unverified |
+| UnnamedContract | avalanche | `0x743144...5d0802` | ❓ Unverified | Unverified |
+| UnnamedContract | avalanche | `0x768b74...278174` | ❓ Unverified | Unverified |
+| UnnamedContract | avalanche | `0x77ab5a...ee2226` | ❓ Unverified | Unverified |
+| UnnamedContract | avalanche | `0x80528f...3be696` | ❓ Unverified | Unverified |
+| UnnamedContract | avalanche | `0x856416...5d2e30` | ❓ Unverified | Unverified |
+| UnnamedContract | avalanche | `0x927aa7...db971c` | ❓ Unverified | Unverified |
+| UnnamedContract | avalanche | `0xaf4b4c...f26181` | ❓ Unverified | Unverified |
+| UnnamedContract | avalanche | `0xc96877...a69f53` | ❓ Unverified | Unverified |
+| UnnamedContract | avalanche | `0xc9f920...e67709` | ❓ Unverified | Unverified |
+| UnnamedContract | avalanche | `0xca14d3...cbf65f` | ❓ Unverified | Unverified |
+| UnnamedContract | avalanche | `0xef2228...176d34` | ❓ Unverified | Unverified |

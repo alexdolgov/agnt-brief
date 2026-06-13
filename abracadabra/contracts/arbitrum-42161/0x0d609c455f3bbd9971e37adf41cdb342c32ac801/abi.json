@@ -1,0 +1,1783 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_strategyToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IBentoBoxV1",
+        "name": "_degenBox",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IGmxV2ExchangeRouter",
+        "name": "_gmxRouter",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IGmxReader",
+        "name": "_gmxReader",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_syntheticsRouter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_refundTo",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_staking",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "AddressEmptyCode",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "AddressInsufficientBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrExecuteDepositsDisabled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrInsufficientAmountOut",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrInvalidFeeBips",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "ErrInvalidFeeOperator",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrInvalidToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrUnauthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrWrongUser",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FailedInnerCall",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "previous",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "current",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogCallbackGasLimitChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previous",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "current",
+        "type": "address"
+      }
+    ],
+    "name": "LogExchangeChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousFeeCollector",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "previousFeeAmount",
+        "type": "uint16"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "feeCollector",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "feeAmount",
+        "type": "uint16"
+      }
+    ],
+    "name": "LogFeeParametersChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "total",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "strategyAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "feeAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogMarketMinted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "reader",
+        "type": "address"
+      }
+    ],
+    "name": "LogReaderChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "router",
+        "type": "address"
+      }
+    ],
+    "name": "LogRouterChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "executor",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "allowed",
+        "type": "bool"
+      }
+    ],
+    "name": "LogSetStrategyExecutor",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "DATASTORE",
+    "outputs": [
+      {
+        "internalType": "contract IGmxDataStore",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEPOSIT_VAULT",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "EXECUTE_DEPOSIT_FEATURE_DISABLED",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "GMX_READER",
+    "outputs": [
+      {
+        "internalType": "contract IGmxReader",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "GMX_ROUTER",
+    "outputs": [
+      {
+        "internalType": "contract IGmxV2ExchangeRouter",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "LONG_TOKEN",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "REFUND_TO",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SHORT_TOKEN",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "STAKING",
+    "outputs": [
+      {
+        "internalType": "contract IMultiRewardsStaking",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SYNTHETICS_ROUTER",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "receiver",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "callbackContract",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "uiFeeReceiver",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "market",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialLongToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialShortToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "longTokenSwapPath",
+                "type": "address[]"
+              },
+              {
+                "internalType": "address[]",
+                "name": "shortTokenSwapPath",
+                "type": "address[]"
+              }
+            ],
+            "internalType": "struct IGmxV2Deposit.Addresses",
+            "name": "addresses",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "initialLongTokenAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialShortTokenAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minMarketTokens",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "updatedAtBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "updatedAtTime",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "executionFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "callbackGasLimit",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IGmxV2Deposit.Numbers",
+            "name": "numbers",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bool",
+                "name": "shouldUnwrapNativeToken",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct IGmxV2Deposit.Flags",
+            "name": "flags",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IGmxV2Deposit.Props",
+        "name": "deposit",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "value",
+                    "type": "address"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.AddressKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "address[]",
+                    "name": "value",
+                    "type": "address[]"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.AddressArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct IGmxV2EventUtils.AddressItems",
+            "name": "addressItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.UintKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "value",
+                    "type": "uint256[]"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.UintArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct IGmxV2EventUtils.UintItems",
+            "name": "uintItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "int256",
+                    "name": "value",
+                    "type": "int256"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.IntKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "int256[]",
+                    "name": "value",
+                    "type": "int256[]"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.IntArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct IGmxV2EventUtils.IntItems",
+            "name": "intItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "value",
+                    "type": "bool"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.BoolKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bool[]",
+                    "name": "value",
+                    "type": "bool[]"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.BoolArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct IGmxV2EventUtils.BoolItems",
+            "name": "boolItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes32",
+                    "name": "value",
+                    "type": "bytes32"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.Bytes32KeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes32[]",
+                    "name": "value",
+                    "type": "bytes32[]"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.Bytes32ArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct IGmxV2EventUtils.Bytes32Items",
+            "name": "bytes32Items",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes",
+                    "name": "value",
+                    "type": "bytes"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.BytesKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes[]",
+                    "name": "value",
+                    "type": "bytes[]"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.BytesArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct IGmxV2EventUtils.BytesItems",
+            "name": "bytesItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "value",
+                    "type": "string"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.StringKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "value",
+                    "type": "string[]"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.StringArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct IGmxV2EventUtils.StringItems",
+            "name": "stringItems",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IGmxV2EventUtils.EventLogData",
+        "name": "eventData",
+        "type": "tuple"
+      }
+    ],
+    "name": "afterDepositCancellation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "receiver",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "callbackContract",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "uiFeeReceiver",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "market",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialLongToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "initialShortToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "longTokenSwapPath",
+                "type": "address[]"
+              },
+              {
+                "internalType": "address[]",
+                "name": "shortTokenSwapPath",
+                "type": "address[]"
+              }
+            ],
+            "internalType": "struct IGmxV2Deposit.Addresses",
+            "name": "addresses",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "initialLongTokenAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "initialShortTokenAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minMarketTokens",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "updatedAtBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "updatedAtTime",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "executionFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "callbackGasLimit",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IGmxV2Deposit.Numbers",
+            "name": "numbers",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bool",
+                "name": "shouldUnwrapNativeToken",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct IGmxV2Deposit.Flags",
+            "name": "flags",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IGmxV2Deposit.Props",
+        "name": "deposit",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "value",
+                    "type": "address"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.AddressKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "address[]",
+                    "name": "value",
+                    "type": "address[]"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.AddressArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct IGmxV2EventUtils.AddressItems",
+            "name": "addressItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.UintKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "value",
+                    "type": "uint256[]"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.UintArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct IGmxV2EventUtils.UintItems",
+            "name": "uintItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "int256",
+                    "name": "value",
+                    "type": "int256"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.IntKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "int256[]",
+                    "name": "value",
+                    "type": "int256[]"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.IntArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct IGmxV2EventUtils.IntItems",
+            "name": "intItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "value",
+                    "type": "bool"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.BoolKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bool[]",
+                    "name": "value",
+                    "type": "bool[]"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.BoolArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct IGmxV2EventUtils.BoolItems",
+            "name": "boolItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes32",
+                    "name": "value",
+                    "type": "bytes32"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.Bytes32KeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes32[]",
+                    "name": "value",
+                    "type": "bytes32[]"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.Bytes32ArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct IGmxV2EventUtils.Bytes32Items",
+            "name": "bytes32Items",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes",
+                    "name": "value",
+                    "type": "bytes"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.BytesKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "bytes[]",
+                    "name": "value",
+                    "type": "bytes[]"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.BytesArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct IGmxV2EventUtils.BytesItems",
+            "name": "bytesItems",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "value",
+                    "type": "string"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.StringKeyValue[]",
+                "name": "items",
+                "type": "tuple[]"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "value",
+                    "type": "string[]"
+                  }
+                ],
+                "internalType": "struct IGmxV2EventUtils.StringArrayKeyValue[]",
+                "name": "arrayItems",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct IGmxV2EventUtils.StringItems",
+            "name": "stringItems",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IGmxV2EventUtils.EventLogData",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "name": "afterDepositExecution",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "afterExit",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "success",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "bentoBox",
+    "outputs": [
+      {
+        "internalType": "contract IBentoBoxV1",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "callbackGasLimit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "cancelOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "claimOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "exchange",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "balance",
+        "type": "uint256"
+      }
+    ],
+    "name": "exit",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "amountAdded",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "exited",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "feeBips",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "feeCollector",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "balance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "harvest",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isDepositExecutionDisabled",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "isFeeOperator",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxBentoBoxBalance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "orderKey",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_to",
+        "type": "address"
+      }
+    ],
+    "name": "rescueToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_rewardToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_marketInputToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_marketMinOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_executionFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_swapData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxBentoBoxAmountIncreaseInBips",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxBentoBoxChangeAmountInBips",
+        "type": "uint256"
+      }
+    ],
+    "name": "run",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "maxBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "rebalance",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxChangeAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "harvestRewards",
+        "type": "bool"
+      }
+    ],
+    "name": "safeHarvest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_callbackGasLimit",
+        "type": "uint256"
+      }
+    ],
+    "name": "setCallbackGasLimit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_exchange",
+        "type": "address"
+      }
+    ],
+    "name": "setExchange",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_feeCollector",
+        "type": "address"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_feeBips",
+        "type": "uint16"
+      }
+    ],
+    "name": "setFeeParameters",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_reader",
+        "type": "address"
+      }
+    ],
+    "name": "setReader",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_router",
+        "type": "address"
+      }
+    ],
+    "name": "setRouter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "executor",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "value",
+        "type": "bool"
+      }
+    ],
+    "name": "setStrategyExecutor",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "setTokenApproval",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "skim",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "strategyExecutors",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "strategyToken",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "direct",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "renounce",
+        "type": "bool"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "actualAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

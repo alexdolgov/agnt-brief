@@ -1,0 +1,17 @@
+{
+  "address": "0x60ba38f97d3a6250770abaeae2c11fd3c4bcf8ba",
+  "chain_id": 42161,
+  "contract_name": "CauldronRegistry",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:41:08.592Z"
+}

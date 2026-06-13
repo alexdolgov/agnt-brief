@@ -1,0 +1,17 @@
+{
+  "address": "0x0c93b86bc291e8cd78385a67754556bb65e82995",
+  "chain_id": 42161,
+  "contract_name": "EpochBasedRewardDistributor",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "0000000000000000000000008d476a39a0086660cd629da76f369b9e068c7b2b0000000000000000000000000000000000000000000000000000000000092c70000000000000000000000000fb3485c2e209a5cfbdc1447674256578f1a80ee3",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:40:57.025Z"
+}

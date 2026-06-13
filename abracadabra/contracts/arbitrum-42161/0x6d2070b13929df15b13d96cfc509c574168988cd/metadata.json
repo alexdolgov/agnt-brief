@@ -1,0 +1,18 @@
+{
+  "address": "0x6d2070b13929df15b13d96cfc509c574168988cd",
+  "chain_id": 42161,
+  "contract_name": "MultiRewardsStaking",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:41:09.695Z"
+}

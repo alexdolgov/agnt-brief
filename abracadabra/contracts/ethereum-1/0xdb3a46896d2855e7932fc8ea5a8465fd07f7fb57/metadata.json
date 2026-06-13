@@ -1,0 +1,18 @@
+{
+  "address": "0xdb3a46896d2855e7932fc8ea5a8465fd07f7fb57",
+  "chain_id": 1,
+  "contract_name": "YVDAISwapper",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 690,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:41:25.824Z"
+}

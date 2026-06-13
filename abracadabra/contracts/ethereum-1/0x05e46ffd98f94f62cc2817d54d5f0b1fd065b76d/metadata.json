@@ -1,0 +1,18 @@
+{
+  "address": "0x05e46ffd98f94f62cc2817d54d5f0b1fd065b76d",
+  "chain_id": 1,
+  "contract_name": "YVMIM3CRVSwapper",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:40:50.511Z"
+}

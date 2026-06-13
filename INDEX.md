@@ -1384,12 +1384,17 @@
 | [yo-protocol](./yo-protocol/) | $40.9M | 56.3% | $12.6K | declining | 7 | 20 | 2026-06-11 |
 | [yoshi-exchange](./yoshi-exchange/) | $6.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [youves](./youves/) | $35.5M | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
+| [yupana](./yupana/) | $24.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [yuzu-money](./yuzu-money/) | $41.0M | 0.0% | $41.0M | active | 6 | 9 | 2026-06-12 |
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-06-11 |
 | [zenlink](./zenlink/) | $5.3M | 0.0% | ? | declining | 1 | 226 | 2026-06-11 |
+| [zero-g-finance](./zero-g-finance/) | $1.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-06-11 |
 | [zerolend](./zerolend/) | $352.4M | 9.2% | $331.7M | declining | 9 | 614 | 2026-06-12 |
+| [zeroliquid](./zeroliquid/) | $3.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [zeroswap](./zeroswap/) | $253.3 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [zharta](./zharta/) | $2.7 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [zircon-gamma](./zircon-gamma/) | $2.5 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [zircuit-finance](./zircuit-finance/) | $1.5M | 0.0% | $1.5M | active | 0 | 2 | 2026-06-11 |
 | [zircuit-staking](./zircuit-staking/) | $178.4M | 21.1% | $140.4M | declining | 8 | 20 | 2026-06-11 |
 | [zircuit](./zircuit/) | $144.2M | 25.0% | $144.2M | declining | 10 | 17 | 2026-06-11 |

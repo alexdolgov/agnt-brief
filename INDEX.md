@@ -214,6 +214,7 @@
 | [everything](./everything/) | $945.3K | 0.0% | ? | active | 0 | 10 | 2026-06-10 |
 | [exactly](./exactly/) | $189.5K | 63.6% | ? | active | 32 | 65 | 2026-06-10 |
 | [exmo](./exmo/) | $2.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
+| [exponent](./exponent/) | $64.0M | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [extra-finance](./extra-finance/) | $100.0 | 5.3% | ? | active | 3 | 268 | 2026-06-10 |
 | [feather](./feather/) | $15.9M | 0.0% | ? | active | 0 | 10 | 2026-06-12 |
 | [ferro](./ferro/) | $4.9M | 0.0% | ? | declining | 0 | 21 | 2026-06-13 |
@@ -390,6 +391,7 @@
 | [mezo-bridge](./mezo-bridge/) | $2.6M | 0.0% | $2.6M | declining | 0 | 26 | 2026-06-12 |
 | [mezo-earn](./mezo-earn/) | $46.9M | 0.0% | ? | unknown | 0 | 3 | 2026-06-12 |
 | [minefi](./minefi/) | $1.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
+| [mint-club](./mint-club/) | $598.0K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [minto](./minto/) | $3.8M | 16.7% | ? | active | 2 | 9 | 2026-06-11 |
 | [mitosis](./mitosis/) | $329.0M | 0.0% | $329.0M | active | 2 | 66 | 2026-06-11 |
 | [mm-finance](./mm-finance/) | $1.8M | 4.5% | $1.8M | declining | 3 | 192 | 2026-06-11 |
@@ -611,6 +613,7 @@
 | [stout](./stout/) | $12.6K | 0.0% | $12.6K | declining | 0 | 132 | 2026-06-11 |
 | [strata](./strata/) | $97.2M | 31.6% | $289.6K | active | 7 | 39 | 2026-06-11 |
 | [stratis-mstrax](./stratis-mstrax/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
+| [sturdy](./sturdy/) | $371.2K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [stusdt](./stusdt/) | $1.9M | 0.0% | $1.9M | active | 0 | 12 | 2026-06-12 |
 | [suibridge](./suibridge/) | $34.8M | 0.0% | ? | declining | 0 | 5 | 2026-06-12 |
 | [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
@@ -730,6 +733,7 @@
 | [yieldnest](./yieldnest/) | $19.2M | 44.8% | $295.1K | active | 16 | 33 | 2026-06-11 |
 | [yieldseeker](./yieldseeker/) | $102.9M | 0.0% | $102.9M | active | 1 | 190 | 2026-06-11 |
 | [yo-protocol](./yo-protocol/) | $40.9M | 56.3% | $12.6K | declining | 7 | 20 | 2026-06-11 |
+| [youves](./youves/) | $35.5M | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [yuzu-money](./yuzu-money/) | $41.0M | 0.0% | $41.0M | active | 6 | 9 | 2026-06-12 |
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-06-11 |
 | [zenlink](./zenlink/) | $5.3M | 0.0% | ? | declining | 1 | 226 | 2026-06-11 |

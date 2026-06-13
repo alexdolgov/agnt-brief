@@ -711,6 +711,7 @@
 | [risex](./risex/) | $4.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [rocifi](./rocifi/) | $46.5K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 2 | 2026-06-12 |
+| [rollup-finance](./rollup-finance/) | $77.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 0 | 11 | 2026-05-31 |
 | [rook](./rook/) | $190.1K | 0.0% | $190.1K | dead | 0 | 73 | 2026-06-11 |
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
@@ -720,6 +721,7 @@
 | [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 15 | 2026-05-31 |
 | [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-06-11 |
 | [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 0 | 193 | 2026-06-12 |
+| [ryze-protocol](./ryze-protocol/) | $328.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [saber](./saber/) | $4.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [saddle-finance](./saddle-finance/) | $777.2K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [safe](./safe/) | $64.0M | 0.0% | ? | unknown | 18 | 12 | 2026-06-12 |
@@ -736,6 +738,7 @@
 | [scrub-money](./scrub-money/) | $7.2M | 0.0% | ? | active | 1 | 20 | 2026-06-13 |
 | [sdai](./sdai/) | $3.3K | 0.0% | $3.3K | active | 0 | 103 | 2026-06-12 |
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 9.1% | $34.8K | dead | 5 | 99 | 2026-06-11 |
+| [sector-finance](./sector-finance/) | $55.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [secured-finance](./secured-finance/) | $629.8K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-31 |
 | [segment-finance](./segment-finance/) | $524.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -747,6 +750,7 @@
 | [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | active | 3 | 40 | 2026-06-11 |
 | [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-06-13 |
 | [shield](./shield/) | $0.0 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
+| [shiny](./shiny/) | ? | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [shoebill-finance](./shoebill-finance/) | $421.0K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | active | 0 | 2 | 2026-06-12 |
@@ -757,6 +761,7 @@
 | [singularv](./singularv/) | $1.1B | 11.4% | $1.1B | declining | 7 | 83 | 2026-06-11 |
 | [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 0 | 4 | 2026-06-11 |
 | [sirius-finance](./sirius-finance/) | $7.3K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [skale-network-bridge](./skale-network-bridge/) | $560.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [skate-fi](./skate-fi/) | $112.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |
 | [smilee-finance](./smilee-finance/) | $1.1M | 0.0% | ? | active | 3 | 186 | 2026-06-11 |

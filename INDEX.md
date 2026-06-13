@@ -2,6 +2,7 @@
 
 | Project | TVL | Coverage | ASD | Lifecycle | Audits | Contracts | Updated |
 |---|---|---|---|---|---|---|---|
+| [0vix](./0vix/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [1inch](./1inch/) | $16.1M | 21.9% | $16.1M | active | 149 | 275 | 2026-06-10 |
 | [1sec](./1sec/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [3f-mutual](./3f-mutual/) | $3.9M | 0.0% | ? | active | 0 | 21 | 2026-06-10 |
@@ -9,6 +10,7 @@
 | [40-acres](./40-acres/) | $10.0M | 0.0% | $10.0M | active | 4 | 325 | 2026-06-12 |
 | [a51-finance](./a51-finance/) | $13.5K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [abc-pool](./abc-pool/) | $6.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
+| [abel-finance](./abel-finance/) | $407.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [abracadabra](./abracadabra/) | $0.0 | 4.7% | $0.0 | declining | 5 | 881 | 2026-06-13 |
 | [acala-euphrates](./acala-euphrates/) | $243.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 3 | 43 | 2026-06-10 |
@@ -803,6 +805,7 @@
 | [universe-xyz](./universe-xyz/) | $216.1K | 21.7% | $216.1K | dead | 3 | 34 | 2026-06-11 |
 | [uniwhale](./uniwhale/) | $33.4K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [unslashed](./unslashed/) | $3.1M | 0.0% | $3.1M | declining | 0 | 2 | 2026-06-12 |
+| [untangled](./untangled/) | $302.8K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-06-13 |
 | [usdt0](./usdt0/) | $3.6B | 0.0% | ? | unknown | 20 | 0 | 2026-06-13 |
 | [usx.capital](./usx.capital/) | $763.3K | 0.0% | ? | declining | 1 | 3 | 2026-06-11 |
@@ -831,6 +834,7 @@
 | [wefi](./wefi/) | $292.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [wemix.fi](./wemix.fi/) | $38.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [wing-finance](./wing-finance/) | $20.3M | 0.0% | $20.3M | declining | 2 | 189 | 2026-06-12 |
+| [wise-lending](./wise-lending/) | $36.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | declining | 11 | 96 | 2026-06-11 |
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [woofi](./woofi/) | $9.8M | 18.8% | $9.7M | declining | 6 | 200 | 2026-06-11 |
@@ -838,6 +842,7 @@
 | [wrapped](./wrapped/) | $20.1M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
 | [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 48 | 2026-06-11 |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [xswap-protocol](./xswap-protocol/) | $664.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [xsy](./xsy/) | $3.6M | 25.0% | $3.6M | active | 1 | 15 | 2026-06-11 |
 | [xwin-finance](./xwin-finance/) | $1.8M | 0.0% | $1.8M | active | 1 | 19 | 2026-06-12 |
 | [y2k-finance](./y2k-finance/) | $30.0K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |

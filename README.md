@@ -1069,17 +1069,22 @@ Each project directory contains:
 | [ploutos-money](./ploutos-money/brief.md) | $483.11 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [pnetwork](./pnetwork/brief.md) | $13.10M | 4 | 12 | 11/12 (92%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [polkamarkets](./polkamarkets/brief.md) | $12.57K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [polydex](./polydex/brief.md) | $2.80K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [polygon-zkevm-bridge](./polygon-zkevm-bridge/brief.md) | $69.38M | ethereum | 14 | 14/14 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [polygonfarm-finance](./polygonfarm-finance/brief.md) | $51.48K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [polynomial-protocol](./polynomial-protocol/brief.md) | $5.29M | ethereum | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
+| [polyo-exchange](./polyo-exchange/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [polywhale-finance](./polywhale-finance/brief.md) | $101.65K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [pond0x](./pond0x/brief.md) | $2.87M | ethereum | 14 | 9/14 (64%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [poolshark](./poolshark/brief.md) | $60.46K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [poolside](./poolside/brief.md) | $30.61K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [potatoswap](./potatoswap/brief.md) | $5.17M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [powercity](./powercity/brief.md) | $3.25M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [powh3d](./powh3d/brief.md) | $4.36M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [predictcoin](./predictcoin/brief.md) | $117.74 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [prime-staking](./prime-staking/brief.md) | $4.77M | base | 10 | 3/10 (30%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [prime-vaults](./prime-vaults/brief.md) | $11.03K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
+| [print3r](./print3r/brief.md) | $9.82 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [prism-protocol](./prism-protocol/brief.md) | $2.68K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [probit-global](./probit-global/brief.md) | $11.03M | fantom | 3 | 0/3 (0%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [pulsar-swap](./pulsar-swap/brief.md) | $11.10K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1265,5 +1270,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T14:13:21.194Z_
-_Projects: 1253_
+_Generated: 2026-06-13T14:14:38.271Z_
+_Projects: 1258_

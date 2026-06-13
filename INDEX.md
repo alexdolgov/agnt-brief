@@ -967,6 +967,8 @@
 | [quoll](./quoll/) | $18.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [raccoon-finance](./raccoon-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [radiant](./radiant/) | $1.1M | 31.6% | $515.0K | dead | 94 | 390 | 2026-05-26 |
+| [raft](./raft/) | $13.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [rage-protocol](./rage-protocol/) | $232.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rage-trade-v1](./rage-trade-v1/) | $6.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [railgun](./railgun/) | $312.5M | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
 | [rain](./rain/) | $26.1M | 0.0% | ? | active | 3 | 29 | 2026-06-12 |
@@ -978,6 +980,7 @@
 | [reddex](./reddex/) | $4.8M | 0.0% | ? | declining | 0 | 5 | 2026-06-13 |
 | [reflexer](./reflexer/) | $2.3M | 40.9% | ? | declining | 8 | 64 | 2026-06-11 |
 | [rehold](./rehold/) | $11.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [renec-lend](./renec-lend/) | $5.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 3 | 2026-06-12 |
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | active | 0 | 3 | 2026-06-12 |
 | [reserve-protocol](./reserve-protocol/) | $8.0M | 53.9% | $255.2K | declining | 27 | 329 | 2026-06-11 |
@@ -986,6 +989,7 @@
 | [resupply](./resupply/) | $3.2M | 2.4% | $3.2M | active | 8 | 41 | 2026-06-12 |
 | [revault](./revault/) | $2.5K | 45.0% | ? | declining | 1 | 75 | 2026-05-24 |
 | [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 12 | 84 | 2026-06-11 |
+| [revoluzion](./revoluzion/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rex-staking](./rex-staking/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [reya](./reya/) | $57.3M | 0.0% | $57.3M | declining | 0 | 294 | 2026-06-12 |
 | [rezerve](./rezerve/) | $1.3M | 1.3% | $1.3M | active | 3 | 104 | 2026-06-11 |
@@ -993,6 +997,7 @@
 | [rheo](./rheo/) | $33.3K | 0.0% | ? | unknown | 16 | 0 | 2026-06-13 |
 | [rho](./rho/) | $2.5M | 0.0% | ? | active | 3 | 31 | 2026-06-11 |
 | [ribbon-finance](./ribbon-finance/) | $179.3M | 31.0% | $148.6M | declining | 14 | 147 | 2026-06-11 |
+| [rifts-finance](./rifts-finance/) | $18.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ring-protocol](./ring-protocol/) | $83.5M | 10.6% | $83.5M | active | 8 | 90 | 2026-06-11 |
 | [ringfi](./ringfi/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rip.xyz](./rip.xyz/) | $0.0 | 50.0% | $0.0 | active | 1 | 6 | 2026-06-11 |

@@ -13,7 +13,9 @@
 | [abel-finance](./abel-finance/) | $407.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [abracadabra](./abracadabra/) | $0.0 | 4.7% | $0.0 | declining | 5 | 881 | 2026-06-13 |
 | [acala-euphrates](./acala-euphrates/) | $243.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [access-protocol](./access-protocol/) | $879.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 3 | 43 | 2026-06-10 |
+| [acet](./acet/) | $12.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [acre](./acre/) | $3.0 | 0.5% | $3.0 | active | 4 | 220 | 2026-06-10 |
 | [across](./across/) | $28.1M | 26.2% | $9.2M | active | 11 | 147 | 2026-06-12 |
 | [acryptos](./acryptos/) | $5.2M | 25.0% | $253.0K | active | 7 | 311 | 2026-06-10 |
@@ -24,9 +26,11 @@
 | [aevo](./aevo/) | $96.8M | 11.8% | $26.1M | active | 13 | 256 | 2026-06-10 |
 | [aftermath-finance](./aftermath-finance/) | $5.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [ailayer-farm](./ailayer-farm/) | $211.9K | 0.0% | $211.9K | active | 0 | 1 | 2026-06-12 |
+| [aimstrong](./aimstrong/) | $184.8 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [aitech](./aitech/) | $4.0M | 0.0% | ? | active | 1 | 2 | 2026-06-10 |
 | [aladdin-dao](./aladdin-dao/) | $23.2K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [alchemix](./alchemix/) | $340.7M | 6.4% | $338.7M | active | 11 | 388 | 2026-06-10 |
+| [algodex](./algodex/) | $2.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 15 | 58 | 2026-06-10 |
 | [alium-swap](./alium-swap/) | $15.0K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [allbridge](./allbridge/) | $21.7M | 0.0% | $21.7M | declining | 11 | 287 | 2026-06-12 |
@@ -44,6 +48,7 @@
 | [angle](./angle/) | $1.4B | 0.0% | $1.4B | declining | 3 | 547 | 2026-06-11 |
 | [angles](./angles/) | $441.0K | 4.0% | $7.5 | active | 1 | 40 | 2026-06-10 |
 | [angstrom](./angstrom/) | $11.3M | 7.7% | ? | declining | 3 | 13 | 2026-06-10 |
+| [animal-farm](./animal-farm/) | $66.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [ankr](./ankr/) | $162.3 | 0.0% | $32.8 | active | 14 | 25 | 2026-06-12 |
 | [antarctic](./antarctic/) | $10.0M | 0.0% | ? | active | 0 | 11 | 2026-06-13 |
 | [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | active | 0 | 3 | 2026-06-12 |

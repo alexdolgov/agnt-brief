@@ -147,6 +147,7 @@
 | [bright-union](./bright-union/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [brotocol](./brotocol/) | $447.6M | 20.0% | $447.6M | unknown | 14 | 76 | 2026-06-13 |
 | [brownfi](./brownfi/) | $123.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [bscstation](./bscstation/) | $1.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-06-10 |
 | [btcfi](./btcfi/) | $9.6M | 0.0% | ? | active | 0 | 15 | 2026-06-13 |
 | [btcst](./btcst/) | $263.7M | 0.0% | $263.7M | active | 0 | 64 | 2026-06-10 |
@@ -156,15 +157,19 @@
 | [bunny](./bunny/) | $1.9M | 9.6% | $1.4M | declining | 1 | 101 | 2026-06-10 |
 | [bunnypark](./bunnypark/) | $0.5 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [burve-protocol](./burve-protocol/) | $10.5K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
+| [burve](./burve/) | $41.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [butter-network](./butter-network/) | $1.2M | 0.0% | ? | declining | 0 | 6 | 2026-06-10 |
 | [bydfi](./bydfi/) | $72.1M | 0.0% | ? | active | 0 | 1 | 2026-06-12 |
 | [byte-exchange](./byte-exchange/) | $41.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
+| [cache.gold](./cache.gold/) | $525.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [camelot](./camelot/) | $6.4M | 17.6% | $391.9K | active | 1 | 118 | 2026-06-10 |
+| [cana-holdings-california-carbon-credits](./cana-holdings-california-carbon-credits/) | $886.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [canopy](./canopy/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [canto-lending](./canto-lending/) | $3.0M | 0.0% | ? | declining | 3 | 84 | 2026-06-10 |
 | [capx-ai](./capx-ai/) | $2.1M | 0.0% | ? | active | 1 | 1 | 2026-06-10 |
 | [carbon-defi](./carbon-defi/) | $5.1M | 30.9% | ? | active | 4 | 158 | 2026-06-10 |
 | [carina](./carina/) | ? | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [cavalre](./cavalre/) | $10.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [cbridge](./cbridge/) | $50.2M | 0.0% | $50.2M | active | 0 | 1348 | 2026-06-12 |
 | [cex.io](./cex.io/) | $12.1M | 0.0% | ? | active | 1 | 4 | 2026-06-12 |
 | [cgo-finance](./cgo-finance/) | $1.2M | 0.0% | ? | declining | 0 | 2 | 2026-06-10 |

@@ -401,6 +401,7 @@
 | [etmc](./etmc/) | $6.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [eventum-bridge](./eventum-bridge/) | $1.6M | 3.8% | $1.6M | active | 2 | 28 | 2026-06-10 |
 | [everrise](./everrise/) | $23.1M | 0.0% | $23.1M | declining | 3 | 210 | 2026-06-11 |
+| [eversol](./eversol/) | $9.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [everything](./everything/) | $945.3K | 0.0% | ? | active | 0 | 10 | 2026-06-10 |
 | [evolve](./evolve/) | $554.1 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [evoq-finance](./evoq-finance/) | $268.1 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
@@ -410,10 +411,13 @@
 | [exsat-staking-btc](./exsat-staking-btc/) | $137.6M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [extra-finance](./extra-finance/) | $100.0 | 5.3% | ? | active | 3 | 268 | 2026-06-10 |
 | [ezmanager](./ezmanager/) | $312.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [fairfi](./fairfi/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [farm-hero](./farm-hero/) | $5.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [feather](./feather/) | $15.9M | 0.0% | ? | active | 0 | 10 | 2026-06-12 |
 | [ferro](./ferro/) | $4.9M | 0.0% | ? | declining | 0 | 21 | 2026-06-13 |
 | [fiamma](./fiamma/) | $1.2M | 0.0% | ? | active | 3 | 33 | 2026-06-11 |
+| [filfi](./filfi/) | $121.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [firebird](./firebird/) | $17.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [firebot](./firebot/) | $3.7M | 4.8% | $3.7M | unknown | 2 | 29 | 2026-06-10 |
 | [firelight](./firelight/) | $80.3M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
 | [fiva](./fiva/) | $42.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
@@ -432,6 +436,7 @@
 | [fortifi](./fortifi/) | $349.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [four.meme](./four.meme/) | $4.6M | 0.0% | ? | active | 1 | 5 | 2026-06-13 |
 | [foxify](./foxify/) | $72.6K | 0.0% | $72.6K | active | 0 | 5 | 2026-06-10 |
+| [fractal-protocol](./fractal-protocol/) | $10.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [frankencoin](./frankencoin/) | $70.0M | 80.0% | ? | active | 5 | 5 | 2026-06-10 |
 | [friend3](./friend3/) | $67.2K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 5 | 18 | 2026-06-10 |

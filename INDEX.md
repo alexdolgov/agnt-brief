@@ -888,6 +888,7 @@
 | [tren-finance](./tren-finance/) | $25.6 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [trevee-earn](./trevee-earn/) | $582.2M | 0.0% | $582.2M | declining | 0 | 15 | 2026-06-11 |
 | [trisolaris](./trisolaris/) | $1.5M | 0.0% | ? | declining | 0 | 119 | 2026-06-11 |
+| [tropykus-finance](./tropykus-finance/) | $12.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
 | [truefi](./truefi/) | $15.4M | 37.5% | ? | declining | 24 | 8 | 2026-06-11 |
 | [trueo](./trueo/) | $25.5M | 0.0% | $25.5M | declining | 0 | 32 | 2026-06-13 |
@@ -897,6 +898,8 @@
 | [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | declining | 3 | 516 | 2026-06-11 |
 | [twyne](./twyne/) | $985.7K | 3.8% | $985.7K | active | 6 | 59 | 2026-06-11 |
 | [txflow](./txflow/) | $3.8M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
+| [u235](./u235/) | $4.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [ufarm-digital](./ufarm-digital/) | $507.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [ultrayield](./ultrayield/) | $46.5M | 0.0% | $46.5M | declining | 0 | 343 | 2026-06-12 |
 | [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | active | 0 | 150 | 2026-06-11 |
 | [umee](./umee/) | $2.5M | 0.0% | ? | declining | 7 | 1 | 2026-06-11 |
@@ -904,6 +907,7 @@
 | [unichain-bridge](./unichain-bridge/) | $2.8M | 0.0% | ? | active | 0 | 15 | 2026-06-11 |
 | [unitas](./unitas/) | $47.8M | 100.0% | ? | active | 5 | 9 | 2026-06-11 |
 | [universal-bridge](./universal-bridge/) | $6.7M | 0.0% | ? | active | 1 | 2 | 2026-06-13 |
+| [universe-finance](./universe-finance/) | $19.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [universe-xyz](./universe-xyz/) | $216.1K | 21.7% | $216.1K | dead | 3 | 34 | 2026-06-11 |
 | [uniwhale](./uniwhale/) | $33.4K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [unslashed](./unslashed/) | $3.1M | 0.0% | $3.1M | declining | 0 | 2 | 2026-06-12 |

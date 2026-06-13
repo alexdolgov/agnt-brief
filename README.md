@@ -377,6 +377,7 @@ Each project directory contains:
 | [3f-mutual](./3f-mutual/brief.md) | $3.88M | ethereum | 21 | 18/21 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [a51-finance](./a51-finance/brief.md) | $13.53K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [abc-pool](./abc-pool/brief.md) | $5.96M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [acala-euphrates](./acala-euphrates/brief.md) | $243.39K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [aegis](./aegis/brief.md) | $35.90M | bsc, ethereum | 12 | 12/12 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [aegis-markets](./aegis-markets/brief.md) | $2.33M | base, unichain | 15 | 12/15 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [aera](./aera/brief.md) | $132.55M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -770,6 +771,7 @@ Each project directory contains:
 | [thedeep](./thedeep/brief.md) | $7.01M | 5 | 165 | 12/165 (7%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [themis-pro](./themis-pro/brief.md) | $1.16M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [tinyman](./tinyman/brief.md) | $6.61M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
+| [tokenlabs](./tokenlabs/brief.md) | $249.30K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [tokenlon](./tokenlon/brief.md) | $37.17M | ethereum | 21 | 21/21 (100%) | 57.1% | 0.0% (-) | 6 | stale | ⚠️ declining | - |
 | [toobit](./toobit/brief.md) | $69.15M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [tothemoon](./tothemoon/brief.md) | $2.40M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -785,10 +787,12 @@ Each project directory contains:
 | [unichain-bridge](./unichain-bridge/brief.md) | $2.75M | ethereum | 15 | 15/15 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [unitas](./unitas/brief.md) | $83.17M | bsc | 9 | 3/9 (33%) | 100.0% | 100.0% (SlowMist) | 3 | fresh | ✅ active | - |
 | [universal-bridge](./universal-bridge/brief.md) | $6.66M | base | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
+| [uniwhale](./uniwhale/brief.md) | $33.43K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [uranium.io](./uranium.io/brief.md) | $7.41M | ethereum | 3 | 1/3 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [usdt0](./usdt0/brief.md) | $3612.31M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [usx.capital](./usx.capital/brief.md) | $763.33K | scroll | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [vaultcraft](./vaultcraft/brief.md) | $546.32K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [vaultka](./vaultka/brief.md) | $5.89K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [vedelegate](./vedelegate/brief.md) | $1.16M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [velodrome](./velodrome/brief.md) | $40.17M | celo, optimism | 52 | 47/52 (90%) | 40.4% | 40.4% (Sherlock, Spearbit) | 3 | aging | ✅ active | - |
 | [veno-finance](./veno-finance/brief.md) | $37.49M | cronos, ethereum, zksync-era | 51 | 11/51 (22%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
@@ -800,6 +804,7 @@ Each project directory contains:
 | [vfat.io](./vfat.io/brief.md) | $36.60M | 14 | 553 | 220/553 (40%) | 10.0% | 0.0% (-) | 3 | fresh | ✅ active | - |
 | [wagmi](./wagmi/brief.md) | $1.25M | 12 | 334 | 0/334 (0%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [wanswap-dex](./wanswap-dex/brief.md) | $1.07M | - | 0 | - | 0.0% | 0.0% (-) | 1 | stale | ❓ unknown | - |
+| [wefi](./wefi/brief.md) | $292.38K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [wemix.fi](./wemix.fi/brief.md) | $38.18M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [woo-x](./woo-x/brief.md) | $7.08M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [wrapped](./wrapped/brief.md) | $20.11M | celo, ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -818,5 +823,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T10:48:44.166Z_
-_Projects: 806_
+_Generated: 2026-06-13T10:51:10.588Z_
+_Projects: 811_

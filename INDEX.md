@@ -10,6 +10,7 @@
 | [a51-finance](./a51-finance/) | $13.5K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [abc-pool](./abc-pool/) | $6.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [abracadabra](./abracadabra/) | $0.0 | 4.7% | $0.0 | declining | 5 | 881 | 2026-06-13 |
+| [acala-euphrates](./acala-euphrates/) | $243.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 3 | 43 | 2026-06-10 |
 | [acre](./acre/) | $3.0 | 0.5% | $3.0 | active | 4 | 220 | 2026-06-10 |
 | [across](./across/) | $28.1M | 26.2% | $9.2M | active | 11 | 147 | 2026-06-12 |
@@ -716,6 +717,7 @@
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-06-11 |
 | [thruster](./thruster/) | $113.0K | 0.0% | $113.0K | dead | 0 | 26 | 2026-06-13 |
 | [tinyman](./tinyman/) | $6.6M | 0.0% | ? | unknown | 18 | 0 | 2026-06-11 |
+| [tokenlabs](./tokenlabs/) | $249.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [tokenlon](./tokenlon/) | $37.2M | 57.1% | ? | declining | 6 | 21 | 2026-06-11 |
 | [tokenstore](./tokenstore/) | $265.7K | 0.0% | $265.7K | active | 0 | 44 | 2026-06-11 |
 | [tokenworks](./tokenworks/) | $0.0 | 0.0% | $0.0 | active | 0 | 60 | 2026-06-11 |
@@ -745,11 +747,13 @@
 | [unitas](./unitas/) | $47.8M | 100.0% | ? | active | 5 | 9 | 2026-06-11 |
 | [universal-bridge](./universal-bridge/) | $6.7M | 0.0% | ? | active | 1 | 2 | 2026-06-13 |
 | [universe-xyz](./universe-xyz/) | $216.1K | 21.7% | $216.1K | dead | 3 | 34 | 2026-06-11 |
+| [uniwhale](./uniwhale/) | $33.4K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [unslashed](./unslashed/) | $3.1M | 0.0% | $3.1M | declining | 0 | 2 | 2026-06-12 |
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-06-13 |
 | [usdt0](./usdt0/) | $3.6B | 0.0% | ? | unknown | 20 | 0 | 2026-06-13 |
 | [usx.capital](./usx.capital/) | $763.3K | 0.0% | ? | declining | 1 | 3 | 2026-06-11 |
 | [vaultcraft](./vaultcraft/) | $546.3K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
+| [vaultka](./vaultka/) | $5.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | declining | 0 | 28 | 2026-06-11 |
 | [velodrome](./velodrome/) | $40.2M | 40.4% | ? | active | 6 | 52 | 2026-06-11 |
@@ -770,6 +774,7 @@
 | [wanswap-dex](./wanswap-dex/) | $1.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | declining | 8 | 83 | 2026-06-11 |
 | [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | declining | 0 | 5 | 2026-06-11 |
+| [wefi](./wefi/) | $292.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [wemix.fi](./wemix.fi/) | $38.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [wing-finance](./wing-finance/) | $20.3M | 0.0% | $20.3M | declining | 2 | 189 | 2026-06-12 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | declining | 11 | 96 | 2026-06-11 |

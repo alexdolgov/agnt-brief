@@ -1063,6 +1063,7 @@
 | [sherpa](./sherpa/) | $606.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [shield-protocol](./shield-protocol/) | $37.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [shield](./shield/) | $0.0 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
+| [shift-protocol](./shift-protocol/) | $842.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [shiny](./shiny/) | ? | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [shoebill-finance](./shoebill-finance/) | $421.0K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
@@ -1073,10 +1074,14 @@
 | [singularity-finance](./singularity-finance/) | $2.7M | 70.0% | $2.7M | transitioning | 2 | 10 | 2026-06-13 |
 | [singularv](./singularv/) | $1.1B | 11.4% | $1.1B | declining | 7 | 83 | 2026-06-11 |
 | [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 0 | 4 | 2026-06-11 |
+| [sir](./sir/) | $85.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [sirius-finance](./sirius-finance/) | $7.3K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [skale-network-bridge](./skale-network-bridge/) | $560.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [skate-fi](./skate-fi/) | $112.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
+| [skcs](./skcs/) | $25.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [slender](./slender/) | $124.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |
+| [smartcoin](./smartcoin/) | $949.6 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [smilee-finance](./smilee-finance/) | $1.1M | 0.0% | ? | active | 3 | 186 | 2026-06-11 |
 | [smoothy](./smoothy/) | $478.6K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 12 | 2026-06-11 |

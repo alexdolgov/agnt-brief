@@ -529,6 +529,7 @@
 | [punks-terminal](./punks-terminal/) | $1.5M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
 | [puzzleswaporg](./puzzleswaporg/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [qidao](./qidao/) | $2.6M | 0.0% | ? | declining | 1 | 298 | 2026-06-11 |
+| [qubit](./qubit/) | $14.7K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [radiant](./radiant/) | $1.1M | 31.6% | $515.0K | dead | 94 | 390 | 2026-05-26 |
 | [railgun](./railgun/) | $312.5M | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
 | [rain](./rain/) | $26.1M | 0.0% | ? | active | 3 | 29 | 2026-06-12 |
@@ -561,6 +562,7 @@
 | [rook](./rook/) | $190.1K | 0.0% | $190.1K | dead | 0 | 73 | 2026-06-11 |
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
+| [router-protocol](./router-protocol/) | $9.9K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [royco-protocol](./royco-protocol/) | $13.0M | 0.0% | $13.0M | active | 6 | 17 | 2026-06-12 |
 | [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 15 | 2026-05-31 |
 | [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-06-11 |
@@ -568,6 +570,7 @@
 | [saber](./saber/) | $4.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [safe](./safe/) | $64.0M | 0.0% | ? | unknown | 18 | 12 | 2026-06-12 |
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
+| [salvor](./salvor/) | $660.5K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-06-11 |
 | [satlayer](./satlayer/) | $289.5M | 4.5% | $287.2M | active | 12 | 311 | 2026-06-11 |
 | [satori-finance](./satori-finance/) | $40.9K | 0.0% | $40.9K | active | 1 | 40 | 2026-06-11 |
@@ -579,6 +582,7 @@
 | [scrub-money](./scrub-money/) | $7.2M | 0.0% | ? | active | 1 | 20 | 2026-06-13 |
 | [sdai](./sdai/) | $3.3K | 0.0% | $3.3K | active | 0 | 103 | 2026-06-12 |
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 9.1% | $34.8K | dead | 5 | 99 | 2026-06-11 |
+| [secured-finance](./secured-finance/) | $629.8K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-31 |
 | [sentiment](./sentiment/) | $64.3 | 73.3% | ? | dead | 8 | 297 | 2026-06-11 |
 | [serum](./serum/) | $15.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
@@ -616,6 +620,7 @@
 | [sphere](./sphere/) | $229.4M | 0.0% | $229.4M | active | 0 | 221 | 2026-06-13 |
 | [spinup](./spinup/) | $406.3K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [spiraldao](./spiraldao/) | $6.4M | 44.0% | ? | dead | 3 | 56 | 2026-05-23 |
+| [spiritswap](./spiritswap/) | $337.6K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [splash-protocol](./splash-protocol/) | $5.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |
 | [spookyswap](./spookyswap/) | $841.7 | 0.0% | $841.7 | declining | 1 | 136 | 2026-06-11 |

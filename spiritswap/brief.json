@@ -1,0 +1,200 @@
+{
+  "schema_version": "2.0",
+  "project_key": "spiritswap",
+  "generated_at": "2026-06-13T10:35:31.018Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 5,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 337649,
+    "tvl_usd": 337649,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://www.spiritswap.finance/chain/ftm/swap",
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2022",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 1,
+      "unknown": 4
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [
+    {
+      "audit_id": 13882,
+      "audit_key": "audit-13882",
+      "report_name": "SpiritSwap-Core Security Audit Report.pdf",
+      "report_url": "https://github.com/Layer3Org/spiritswap-core/blob/main/SpiritSwap-Core%20Security%20Audit%20Report.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13883,
+      "audit_key": "audit-13883",
+      "report_name": ".css-mc6j7r{display:inline-block;line-height:1em;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;color:#60E6C5;width:auto;height:18px;}",
+      "report_url": "https://github.com/Spirit-DAO/spiritswap-contract/blob/main/Zokyo%20SpiritSwap%20V2%20Audit.pdf",
+      "auditor": "Zokyo",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13884,
+      "audit_key": "audit-13884",
+      "report_name": ".css-hjeyoq{display:inline-block;line-height:1em;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;color:#60E6C5;width:auto;height:22px;}",
+      "report_url": "https://github.com/Spirit-DAO/spiritswap-contract/blob/main/PeckShield-Audit-Report-SpiritV2-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13885,
+      "audit_key": "audit-13885",
+      "report_name": "- [Audits](): All Audits for on-chain contracts are done by our partners at Hashlock",
+      "report_url": "https://docs.silverswap.io/silverswap/technical-details/audits.md",
+      "auditor": "Hashlock",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13886,
+      "audit_key": "audit-13886",
+      "report_name": "All Audits are performed by [Hashlock](https://www.bing.com/search?pglt=299\\&q=hashlock\\&cvid=44f7d89fda28454692e287c3419fdfa8\\&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQRRg90gEIMjI5NmowajGoAgCwAgA\\&FORM=ANNTA1\\&adppc=EDGEESS\\&PC=U531), and can be found [here]().",
+      "report_url": "https://hashlock.com/audits/silverswap",
+      "auditor": "Hashlock",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 13882,
+        "report_name": "SpiritSwap-Core Security Audit Report.pdf"
+      },
+      {
+        "audit_id": 13883,
+        "report_name": ".css-mc6j7r{display:inline-block;line-height:1em;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;color:#60E6C5;width:auto;height:18px;}"
+      },
+      {
+        "audit_id": 13884,
+        "report_name": ".css-hjeyoq{display:inline-block;line-height:1em;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;color:#60E6C5;width:auto;height:22px;}"
+      },
+      {
+        "audit_id": 13885,
+        "report_name": "- [Audits](): All Audits for on-chain contracts are done by our partners at Hashlock"
+      },
+      {
+        "audit_id": 13886,
+        "report_name": "All Audits are performed by [Hashlock](https://www.bing.com/search?pglt=299\\&q=hashlock\\&cvid=44f7d89fda28454692e287c3419fdfa8\\&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQRRg90gEIMjI5NmowajGoAgCwAgA\\&FORM=ANNTA1\\&adppc=EDGEESS\\&PC=U531), and can be found [here]()."
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

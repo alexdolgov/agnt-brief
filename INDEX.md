@@ -1347,10 +1347,15 @@
 | [white-whale](./white-whale/) | $518.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [whiteheart](./whiteheart/) | $6.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [wing-finance](./wing-finance/) | $20.3M | 0.0% | $20.3M | declining | 2 | 189 | 2026-06-12 |
+| [winter-walrus](./winter-walrus/) | $51.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [wise-lending](./wise-lending/) | $36.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [wisteria-swap](./wisteria-swap/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [witswap](./witswap/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | declining | 11 | 96 | 2026-06-11 |
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [woofi](./woofi/) | $9.8M | 18.8% | $9.7M | declining | 6 | 200 | 2026-06-11 |
+| [worldes](./worldes/) | $567.3 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [wowswap](./wowswap/) | $34.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [wrapped-bnb](./wrapped-bnb/) | $5.5M | 0.0% | ? | declining | 1 | 1 | 2026-06-13 |
 | [wrapped](./wrapped/) | $20.1M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
 | [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 48 | 2026-06-11 |

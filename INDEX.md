@@ -171,7 +171,9 @@
 | [colend-protocol](./colend-protocol/) | $4.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
 | [commodo](./commodo/) | $5.3K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [concentrator](./concentrator/) | $112.0M | 31.3% | $105.2M | active | 33 | 342 | 2026-06-10 |
+| [conic-finance](./conic-finance/) | $52.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [convex-finance](./convex-finance/) | $658.0M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
+| [copump](./copump/) | $1.7K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [core-bridge](./core-bridge/) | $4.0M | 0.0% | ? | active | 0 | 6 | 2026-06-10 |
 | [coti-treasury](./coti-treasury/) | $9.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [cozy-finance](./cozy-finance/) | $2.3M | 0.0% | ? | active | 5 | 48 | 2026-06-10 |
@@ -182,6 +184,7 @@
 | [crypto.com-liquid-staking](./crypto.com-liquid-staking/) | $20.0M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
 | [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-06-10 |
 | [cvi-finance](./cvi-finance/) | $131.5K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
+| [cyberperp](./cyberperp/) | $27.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [cybro](./cybro/) | $103.9K | 0.0% | ? | unknown | 14 | 0 | 2026-06-13 |
 | [cyclone](./cyclone/) | $165.5M | 0.0% | $165.5M | active | 3 | 63 | 2026-06-11 |
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-06-10 |
@@ -198,11 +201,13 @@
 | [defituna](./defituna/) | $4.6M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | active | 0 | 53 | 2026-06-13 |
 | [deltaprime](./deltaprime/) | $2.6K | 0.0% | $2.6K | active | 0 | 482 | 2026-05-31 |
+| [deltatrade](./deltatrade/) | $92.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [depth](./depth/) | $1.2M | 0.0% | ? | declining | 0 | 1 | 2026-06-10 |
 | [deri](./deri/) | $2.4K | 13.9% | $2.4K | active | 8 | 868 | 2026-06-10 |
 | [derivadex](./derivadex/) | $1.6M | 0.0% | ? | declining | 0 | 8 | 2026-06-10 |
 | [desyn-protocol](./desyn-protocol/) | $10.7M | 0.0% | ? | declining | 0 | 11 | 2026-06-10 |
 | [dexalot](./dexalot/) | $4.2M | 16.7% | ? | active | 6 | 6 | 2026-06-12 |
+| [dexioprotocol](./dexioprotocol/) | $0.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [dexlyn-labs](./dexlyn-labs/) | $80.4K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [dflow](./dflow/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [dforce](./dforce/) | $3.6M | 36.3% | $1.2M | declining | 4 | 453 | 2026-06-12 |

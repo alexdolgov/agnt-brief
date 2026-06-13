@@ -348,6 +348,8 @@
 | [goosefx](./goosefx/) | $1.5K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [goplus-security](./goplus-security/) | $65.3 | 0.0% | $65.3 | active | 0 | 34 | 2026-06-12 |
 | [gravity-bridge](./gravity-bridge/) | $91.3M | 0.0% | $91.3M | active | 0 | 117 | 2026-06-12 |
+| [gravity-finance](./gravity-finance/) | $90.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [gravity](./gravity/) | $8.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [gro](./gro/) | $5.0M | 0.0% | $5.0M | declining | 0 | 134 | 2026-06-13 |
 | [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [grvt](./grvt/) | $39.1M | 0.0% | $39.1M | declining | 0 | 12 | 2026-06-12 |
@@ -358,6 +360,7 @@
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [halofi](./halofi/) | $22.1K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [hanji-protocol](./hanji-protocol/) | $728.4K | 0.0% | ? | declining | 2 | 289 | 2026-06-11 |
+| [harbor](./harbor/) | $94.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 10.0% | ? | active | 4 | 127 | 2026-06-10 |
 | [harvest-finance](./harvest-finance/) | $12.9M | 46.4% | ? | declining | 5 | 445 | 2026-06-10 |
 | [hashdao-finance](./hashdao-finance/) | $2.8M | 55.6% | ? | dead | 3 | 50 | 2026-06-10 |
@@ -369,9 +372,11 @@
 | [hemi-staking](./hemi-staking/) | $16.4M | 1.9% | $16.4M | active | 5 | 132 | 2026-06-12 |
 | [hemi](./hemi/) | $49.6K | 2.7% | $49.6K | unknown | 5 | 47 | 2026-05-25 |
 | [hemibtc](./hemibtc/) | $46.2K | 0.0% | $46.2K | active | 5 | 46 | 2026-06-12 |
+| [henjin-dex](./henjin-dex/) | $1.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [hera-finance](./hera-finance/) | $6.5M | 42.9% | ? | active | 3 | 28 | 2026-06-10 |
 | [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-06-10 |
 | [holdstation](./holdstation/) | $19.7K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
+| [honeyfarm](./honeyfarm/) | $1.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-06-11 |
 | [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 0 | 19 | 2026-06-12 |
 | [hopr](./hopr/) | $1.4M | 4.3% | ? | active | 2 | 81 | 2026-06-11 |

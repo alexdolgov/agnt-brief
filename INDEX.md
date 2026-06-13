@@ -521,7 +521,9 @@
 | [meta-pool](./meta-pool/) | $4.2M | 50.0% | $4.0M | active | 3 | 41 | 2026-06-11 |
 | [metadao](./metadao/) | $13.1M | 0.0% | ? | unknown | 10 | 0 | 2026-06-11 |
 | [metastable](./metastable/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [metastrike](./metastrike/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [mev-capital](./mev-capital/) | $98.5M | 0.0% | $98.5M | active | 0 | 358 | 2026-06-12 |
+| [mev-protocol](./mev-protocol/) | $80.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [mezo-bridge](./mezo-bridge/) | $2.6M | 0.0% | $2.6M | declining | 0 | 26 | 2026-06-12 |
 | [mezo-earn](./mezo-earn/) | $46.9M | 0.0% | ? | unknown | 0 | 3 | 2026-06-12 |
 | [minefi](./minefi/) | $1.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
@@ -538,10 +540,13 @@
 | [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-06-11 |
 | [moola-market](./moola-market/) | $73.9K | 0.0% | $73.9K | declining | 1 | 53 | 2026-06-11 |
 | [moonlander](./moonlander/) | $30.0M | 0.0% | ? | active | 0 | 11 | 2026-06-12 |
+| [moonwell-apollo](./moonwell-apollo/) | $844.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [moonwell](./moonwell/) | $130.3M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [more-markets](./more-markets/) | $10.3M | 0.0% | ? | declining | 0 | 21 | 2026-06-12 |
 | [morph-bridge](./morph-bridge/) | $2.8M | 0.0% | $2.8M | active | 0 | 17 | 2026-06-12 |
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 18 | 51 | 2026-06-12 |
 | [mortgagefi](./mortgagefi/) | $777.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [mountain-protocol](./mountain-protocol/) | $1.4M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [mu-digital](./mu-digital/) | $19.4M | 100.0% | ? | active | 2 | 12 | 2026-06-11 |
 | [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-06-11 |
 | [multichain](./multichain/) | $12.5M | 42.9% | $128.8 | dead | 15 | 17 | 2026-06-11 |

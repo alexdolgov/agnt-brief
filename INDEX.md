@@ -159,13 +159,17 @@
 | [biswap](./biswap/) | $609.3K | 0.0% | $609.3K | declining | 1 | 92 | 2026-06-13 |
 | [bitchill](./bitchill/) | $19.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bitlo](./bitlo/) | $16.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
+| [bitmap-game](./bitmap-game/) | $36.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bitomato](./bitomato/) | $2.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
+| [bitty](./bitty/) | $5.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bitu-protocol](./bitu-protocol/) | $22.3M | 75.0% | ? | active | 2 | 4 | 2026-06-10 |
 | [bitvenus](./bitvenus/) | $20.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [bitway-earn](./bitway-earn/) | $136.4M | 0.0% | $136.4M | active | 3 | 8 | 2026-06-12 |
 | [bitway](./bitway/) | $136.4M | 0.0% | $136.4M | active | 3 | 8 | 2026-06-12 |
+| [bitzy](./bitzy/) | $49.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [blackhole](./blackhole/) | $29.7M | 31.1% | ? | declining | 3 | 86 | 2026-06-10 |
 | [blast-l2](./blast-l2/) | $568.9 | 0.0% | $568.9 | unknown | 0 | 295 | 2026-06-12 |
+| [blasterswap](./blasterswap/) | $302.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [blend-money](./blend-money/) | $8.6K | 0.0% | ? | unknown | 11 | 0 | 2026-06-13 |
 | [blend](./blend/) | $213.1M | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [block-analitica](./block-analitica/) | $252.8K | 0.0% | $252.8K | declining | 0 | 20 | 2026-06-12 |
@@ -176,6 +180,7 @@
 | [bob-bridge](./bob-bridge/) | $202.9K | 2.6% | $202.9K | active | 9 | 41 | 2026-06-10 |
 | [boba-bridge](./boba-bridge/) | $3.0M | 0.0% | ? | declining | 0 | 53 | 2026-05-31 |
 | [bondappetit](./bondappetit/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [bondlink-finance](./bondlink-finance/) | $152.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bonsaidao-ecosystem](./bonsaidao-ecosystem/) | $1.1M | 0.0% | ? | active | 1 | 190 | 2026-06-10 |
 | [bonzo-finance](./bonzo-finance/) | $23.0M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
 | [boringdao](./boringdao/) | $275.7K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |

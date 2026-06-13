@@ -479,16 +479,21 @@ Each project directory contains:
 | [binlayer](./binlayer/brief.md) | $386.35 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [bitchill](./bitchill/brief.md) | $19.17K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [bitlo](./bitlo/brief.md) | $16.66M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [bitmap-game](./bitmap-game/brief.md) | $36.88K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [bitomato](./bitomato/brief.md) | $2.60M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [bitty](./bitty/brief.md) | $5.52K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [bitu-protocol](./bitu-protocol/brief.md) | $22.27M | bsc | 4 | 4/4 (100%) | 75.0% | 75.0% (SlowMist) | 2 | stale | ✅ active | - |
 | [bitvenus](./bitvenus/brief.md) | $20.90M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [bitzy](./bitzy/brief.md) | $49.15K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [blackhole](./blackhole/brief.md) | $29.69M | avalanche | 86 | 45/86 (52%) | 31.1% | 31.1% (Code4rena) | 3 | fresh | ⚠️ declining | - |
+| [blasterswap](./blasterswap/brief.md) | $302.51K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [blend](./blend/brief.md) | $213.08M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [blend-money](./blend-money/brief.md) | $8.55K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [blueshift](./blueshift/brief.md) | $4.32M | kava, polygon | 23 | 2/23 (9%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [bnpl-pay](./bnpl-pay/brief.md) | $23.19K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [boba-bridge](./boba-bridge/brief.md) | $3.04M | ethereum | 53 | 41/53 (77%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [bondappetit](./bondappetit/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [bondlink-finance](./bondlink-finance/brief.md) | $151.99K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [bonsaidao-ecosystem](./bonsaidao-ecosystem/brief.md) | $1.08M | arbitrum, base, berachain | 190 | 86/190 (45%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [bonzo-finance](./bonzo-finance/brief.md) | $22.97M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [boringdao](./boringdao/brief.md) | $275.70K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -1037,5 +1042,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T12:31:22.042Z_
-_Projects: 1025_
+_Generated: 2026-06-13T12:33:54.186Z_
+_Projects: 1030_

@@ -171,6 +171,7 @@
 | [carina](./carina/) | ? | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [cavalre](./cavalre/) | $10.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [cbridge](./cbridge/) | $50.2M | 0.0% | $50.2M | active | 0 | 1348 | 2026-06-12 |
+| [centrifuge](./centrifuge/) | $1.8B | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [cex.io](./cex.io/) | $12.1M | 0.0% | ? | active | 1 | 4 | 2026-06-12 |
 | [cgo-finance](./cgo-finance/) | $1.2M | 0.0% | ? | declining | 0 | 2 | 2026-06-10 |
 | [chain-fusion](./chain-fusion/) | $18.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -180,6 +181,7 @@
 | [charm-finance](./charm-finance/) | $14.2K | 50.0% | $0.0 | declining | 6 | 10 | 2026-06-10 |
 | [chateau](./chateau/) | $19.1K | 33.3% | $19.1K | active | 1 | 5 | 2026-06-10 |
 | [chewyswap](./chewyswap/) | $9.5K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
+| [chiliswap](./chiliswap/) | $561.2 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [circuit](./circuit/) | $198.7K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [citrea-bridge](./citrea-bridge/) | $6.6M | 50.0% | ? | active | 10 | 3 | 2026-06-10 |
 | [clave](./clave/) | $7.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
@@ -193,12 +195,15 @@
 | [colend-protocol](./colend-protocol/) | $4.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-10 |
 | [commodo](./commodo/) | $5.3K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [concentrator](./concentrator/) | $112.0M | 31.3% | $105.2M | active | 33 | 342 | 2026-06-10 |
+| [concrete](./concrete/) | $789.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [conic-finance](./conic-finance/) | $52.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [convex-finance](./convex-finance/) | $658.0M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
+| [conveyor](./conveyor/) | ? | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [copump](./copump/) | $1.7K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [core-bridge](./core-bridge/) | $4.0M | 0.0% | ? | active | 0 | 6 | 2026-06-10 |
 | [coti-treasury](./coti-treasury/) | $9.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [cozy-finance](./cozy-finance/) | $2.3M | 0.0% | ? | active | 5 | 48 | 2026-06-10 |
+| [crabada](./crabada/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [cream-finance](./cream-finance/) | $2.3B | 0.0% | $2.3B | declining | 2 | 94 | 2026-06-10 |
 | [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-06-12 |
 | [credit-coop](./credit-coop/) | $2.1M | 0.0% | $2.1M | active | 3 | 2 | 2026-06-11 |

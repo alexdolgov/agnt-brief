@@ -477,6 +477,7 @@ Each project directory contains:
 | [carbon-defi](./carbon-defi/brief.md) | $2.92M | 4 | 158 | 52/158 (33%) | 30.9% | 27.3% (ChainSecurity) | 4 | aging | ✅ active | - |
 | [carina](./carina/brief.md) | - | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [cavalre](./cavalre/brief.md) | $10.19K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [centrifuge](./centrifuge/brief.md) | $1797.94M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [cex.io](./cex.io/brief.md) | $12.10M | bsc, ethereum, polygon | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [cgo-finance](./cgo-finance/brief.md) | $1.23M | cronos | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [chain-fusion](./chain-fusion/brief.md) | $18.60M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -484,6 +485,7 @@ Each project directory contains:
 | [chainge-finance](./chainge-finance/brief.md) | $12.14M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [chaingpt](./chaingpt/brief.md) | $4.61M | 7 | 87 | 3/87 (3%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [chewyswap](./chewyswap/brief.md) | $9.55K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [chiliswap](./chiliswap/brief.md) | $561.21 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [circuit](./circuit/brief.md) | $198.70K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [citrea-bridge](./citrea-bridge/brief.md) | $6.64M | ethereum | 3 | 2/3 (67%) | 50.0% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [clave](./clave/brief.md) | $7.38K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -494,12 +496,15 @@ Each project directory contains:
 | [coinw](./coinw/brief.md) | $1.11M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [colend-protocol](./colend-protocol/brief.md) | $4.19M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [commodo](./commodo/brief.md) | $5.27K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [concrete](./concrete/brief.md) | $789.88M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [conic-finance](./conic-finance/brief.md) | $52.38K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [convex-finance](./convex-finance/brief.md) | $657.98M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [conveyor](./conveyor/brief.md) | - | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [copump](./copump/brief.md) | $1.66K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [core-bridge](./core-bridge/brief.md) | $4.02M | avalanche, base | 6 | 2/6 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [coti-treasury](./coti-treasury/brief.md) | $9.89M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [cozy-finance](./cozy-finance/brief.md) | $2.30M | optimism | 48 | 5/48 (10%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
+| [crabada](./crabada/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [cryptex-finance](./cryptex-finance/brief.md) | $631.36K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [crypto.com-liquid-staking](./crypto.com-liquid-staking/brief.md) | $20.02M | cronos, ethereum | 2 | 1/2 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [cvi-finance](./cvi-finance/brief.md) | $131.47K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -902,5 +907,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T11:27:22.706Z_
-_Projects: 890_
+_Generated: 2026-06-13T11:28:42.052Z_
+_Projects: 895_

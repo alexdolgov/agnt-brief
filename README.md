@@ -399,6 +399,7 @@ Each project directory contains:
 | [avalaunch](./avalaunch/brief.md) | $6.84M | avalanche | 38 | 13/38 (34%) | 84.6% | 0.0% (-) | 13 | stale | ✅ active | - |
 | [avalon-labs](./avalon-labs/brief.md) | $550.83M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [baseline-protocol](./baseline-protocol/brief.md) | $69.26M | base, blast, ethereum | 112 | 4/112 (4%) | 25.0% | 0.0% (-) | 1 | aging | ✅ active | - |
+| [bedrock](./bedrock/brief.md) | $306.57M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [benddao](./benddao/brief.md) | $7.15M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [bifi](./bifi/brief.md) | $7.43M | avalanche, ethereum, klaytn | 170 | 45/170 (26%) | 30.4% | 0.0% (-) | 3 | stale | ✅ active | - |
 | [bigone](./bigone/brief.md) | $35.10M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -448,6 +449,7 @@ Each project directory contains:
 | [coti-treasury](./coti-treasury/brief.md) | $9.89M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [cozy-finance](./cozy-finance/brief.md) | $2.30M | optimism | 48 | 5/48 (10%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [crypto.com-liquid-staking](./crypto.com-liquid-staking/brief.md) | $20.02M | cronos, ethereum | 2 | 1/2 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [cybro](./cybro/brief.md) | $103.90K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [decibel](./decibel/brief.md) | $41.88M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [defi-kingdoms](./defi-kingdoms/brief.md) | $7.69M | harmony, klaytn | 5 | 0/5 (0%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [defichain-dex](./defichain-dex/brief.md) | $1.17M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -458,6 +460,7 @@ Each project directory contains:
 | [dexalot](./dexalot/brief.md) | $7.90M | avalanche, bsc | 6 | 6/6 (100%) | 16.7% | 0.0% (-) | 2 | stale | ✅ active | - |
 | [dflow](./dflow/brief.md) | $1.49M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [dnax](./dnax/brief.md) | $3.54M | bsc | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [dolomite](./dolomite/brief.md) | $664.24M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [domination-finance](./domination-finance/brief.md) | $1.27M | 4 | 30 | 20/30 (67%) | 75.0% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [dooar](./dooar/brief.md) | $5.11M | bsc | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [dxsale](./dxsale/brief.md) | $17.94M | 12 | 358 | 8/358 (2%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -595,6 +598,7 @@ Each project directory contains:
 | [nostra](./nostra/brief.md) | $6.82M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [nucleus](./nucleus/brief.md) | $38.09M | ethereum | 6 | 6/6 (100%) | 50.0% | 33.3% (Spearbit) | 5 | fresh | ✅ active | - |
 | [nuls](./nuls/brief.md) | $7.33M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [o2-exchange](./o2-exchange/brief.md) | $2.16M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [obsidian](./obsidian/brief.md) | $1.60M | cronos | 6 | 0/6 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [odyssey-finance](./odyssey-finance/brief.md) | $9.22M | base, ethereum, optimism | 82 | 77/82 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [okcoin](./okcoin/brief.md) | $25.77M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -682,6 +686,7 @@ Each project directory contains:
 | [superearn](./superearn/brief.md) | $10.13M | ethereum, klaytn | 95 | 27/95 (28%) | 55.6% | 37.0% (Spearbit) | 3 | fresh | ✅ active | - |
 | [superfluid](./superfluid/brief.md) | $5.13M | 10 | 397 | 89/397 (22%) | 20.8% | 5.2% (Trail of Bits) | 6 | fresh | ✅ active | - |
 | [supernova](./supernova/brief.md) | $2.12M | ethereum | 47 | 47/47 (100%) | 48.9% | 0.0% (-) | 1 | fresh | ⚠️ declining | - |
+| [swap.io-clmm](./swap.io-clmm/brief.md) | $2.07K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [swappi](./swappi/brief.md) | $1.88M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [swapscanner](./swapscanner/brief.md) | $4.38M | klaytn | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [swell](./swell/brief.md) | $100.54M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
@@ -737,5 +742,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T10:05:43.844Z_
-_Projects: 725_
+_Generated: 2026-06-13T10:07:12.029Z_
+_Projects: 730_

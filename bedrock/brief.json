@@ -1,0 +1,314 @@
+{
+  "schema_version": "2.0",
+  "project_key": "bedrock",
+  "generated_at": "2026-06-13T10:06:11.416Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 9,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 306571552,
+    "tvl_usd": 306571552,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://www.bedrock.technology",
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2024-12",
+    "audit_freshness": "aging",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 4,
+      "stale": 3,
+      "unknown": 2
+    }
+  },
+  "topography": {
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [
+    {
+      "audit_id": 12765,
+      "audit_key": "audit-12765",
+      "report_name": "PeckShield-Audit-Report-RockXStaking-v1.0.pdf",
+      "report_url": "https://github.com/RockX-SG/stake/blob/main/PeckShield-Audit-Report-RockXStaking-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12766,
+      "audit_key": "audit-12766",
+      "report_name": "PeckShield-Audit-Report-Bedrock-v1.0.pdf",
+      "report_url": "https://github.com/RockX-SG/uniiotx/blob/main/docs/PeckShield-Audit-Report-Bedrock-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 12766,
+          "report_url": "https://github.com/RockX-SG/uniiotx/blob/main/docs/PeckShield-Audit-Report-Bedrock-v1.0.pdf"
+        },
+        {
+          "audit_id": 12771,
+          "report_url": "https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf"
+        },
+        {
+          "audit_id": 12775,
+          "report_url": "https://github.com/Bedrock-Technology/docs/blob/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 12767,
+      "audit_key": "audit-12767",
+      "report_name": "<table><thead><tr><th width=\"125\">Token</th><th width=\"134\">Audit firm</th><th width=\"153\">Audit date</th><th>Report</th></tr></thead><tbody><tr><td>brBTC</td><td>Blocksec</td><td>16 Dec 2024</td><td><a href=\"\">https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>30 Oct 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.0-signed.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>PeckShield</td><td>01 Oct 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/PeckShield-Audit-Report-uniBTC-v1.0.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/PeckShield-Audit-Report-uniBTC-v1.0.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>12 Jun 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf</a></td></tr><tr><td>uniETH</td><td>PeckShield</td><td>15 Feb 2024</td><td><a href=\"https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf\">https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf</a></td></tr></tbody></table>",
+      "report_url": "https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12768,
+      "audit_key": "audit-12768",
+      "report_name": "<table><thead><tr><th width=\"125\">Token</th><th width=\"134\">Audit firm</th><th width=\"153\">Audit date</th><th>Report</th></tr></thead><tbody><tr><td>brBTC</td><td>Blocksec</td><td>16 Dec 2024</td><td><a href=\"https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf\">https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>30 Oct 2024</td><td><a href=\"\">https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>PeckShield</td><td>01 Oct 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/PeckShield-Audit-Report-uniBTC-v1.0.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/PeckShield-Audit-Report-uniBTC-v1.0.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>12 Jun 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf</a></td></tr><tr><td>uniETH</td><td>PeckShield</td><td>15 Feb 2024</td><td><a href=\"https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf\">https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf</a></td></tr></tbody></table>",
+      "report_url": "https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.0-signed.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12769,
+      "audit_key": "audit-12769",
+      "report_name": "<table><thead><tr><th width=\"125\">Token</th><th width=\"134\">Audit firm</th><th width=\"153\">Audit date</th><th>Report</th></tr></thead><tbody><tr><td>brBTC</td><td>Blocksec</td><td>16 Dec 2024</td><td><a href=\"https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf\">https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>30 Oct 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.0-signed.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>PeckShield</td><td>01 Oct 2024</td><td><a href=\"\">https://github.com/Bedrock-Technology/uniBTC/blob/main/PeckShield-Audit-Report-uniBTC-v1.0.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>12 Jun 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf</a></td></tr><tr><td>uniETH</td><td>PeckShield</td><td>15 Feb 2024</td><td><a href=\"https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf\">https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf</a></td></tr></tbody></table>",
+      "report_url": "https://github.com/Bedrock-Technology/uniBTC/blob/main/PeckShield-Audit-Report-uniBTC-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12770,
+      "audit_key": "audit-12770",
+      "report_name": "<table><thead><tr><th width=\"125\">Token</th><th width=\"134\">Audit firm</th><th width=\"153\">Audit date</th><th>Report</th></tr></thead><tbody><tr><td>brBTC</td><td>Blocksec</td><td>16 Dec 2024</td><td><a href=\"https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf\">https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>30 Oct 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.0-signed.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>PeckShield</td><td>01 Oct 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/PeckShield-Audit-Report-uniBTC-v1.0.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/PeckShield-Audit-Report-uniBTC-v1.0.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>12 Jun 2024</td><td><a href=\"\">https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf</a></td></tr><tr><td>uniETH</td><td>PeckShield</td><td>15 Feb 2024</td><td><a href=\"https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf\">https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf</a></td></tr></tbody></table>",
+      "report_url": "https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12772,
+      "audit_key": "audit-12772",
+      "report_name": "The uniIOTX smart contract has been audited by Peckshield. You can find the smart contract audit report for uniIOTX [here]().",
+      "report_url": "https://github.com/RockX-SG/uniiotx/blob/main/docs/PeckShield-Audit-Report-RockXStaking-IOTEX-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12773,
+      "audit_key": "audit-12773",
+      "report_name": "blocksec_bedrock_unibtc_v1.1-signed.pdf",
+      "report_url": "https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.1-signed.pdf",
+      "auditor": "BlockSec",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 12774,
+      "audit_key": "audit-12774",
+      "report_name": "PeckShield Audit Report RockX Eth Staking.pdf",
+      "report_url": "https://github.com/Bedrock-Technology/docs/blob/main/PeckShield%20Audit%20Report%20RockX%20Eth%20Staking.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 12765,
+        "report_name": "PeckShield-Audit-Report-RockXStaking-v1.0.pdf"
+      },
+      {
+        "audit_id": 12766,
+        "report_name": "PeckShield-Audit-Report-Bedrock-v1.0.pdf"
+      },
+      {
+        "audit_id": 12767,
+        "report_name": "<table><thead><tr><th width=\"125\">Token</th><th width=\"134\">Audit firm</th><th width=\"153\">Audit date</th><th>Report</th></tr></thead><tbody><tr><td>brBTC</td><td>Blocksec</td><td>16 Dec 2024</td><td><a href=\"\">https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>30 Oct 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.0-signed.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>PeckShield</td><td>01 Oct 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/PeckShield-Audit-Report-uniBTC-v1.0.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/PeckShield-Audit-Report-uniBTC-v1.0.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>12 Jun 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf</a></td></tr><tr><td>uniETH</td><td>PeckShield</td><td>15 Feb 2024</td><td><a href=\"https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf\">https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf</a></td></tr></tbody></table>"
+      },
+      {
+        "audit_id": 12768,
+        "report_name": "<table><thead><tr><th width=\"125\">Token</th><th width=\"134\">Audit firm</th><th width=\"153\">Audit date</th><th>Report</th></tr></thead><tbody><tr><td>brBTC</td><td>Blocksec</td><td>16 Dec 2024</td><td><a href=\"https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf\">https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>30 Oct 2024</td><td><a href=\"\">https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>PeckShield</td><td>01 Oct 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/PeckShield-Audit-Report-uniBTC-v1.0.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/PeckShield-Audit-Report-uniBTC-v1.0.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>12 Jun 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf</a></td></tr><tr><td>uniETH</td><td>PeckShield</td><td>15 Feb 2024</td><td><a href=\"https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf\">https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf</a></td></tr></tbody></table>"
+      },
+      {
+        "audit_id": 12769,
+        "report_name": "<table><thead><tr><th width=\"125\">Token</th><th width=\"134\">Audit firm</th><th width=\"153\">Audit date</th><th>Report</th></tr></thead><tbody><tr><td>brBTC</td><td>Blocksec</td><td>16 Dec 2024</td><td><a href=\"https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf\">https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>30 Oct 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.0-signed.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>PeckShield</td><td>01 Oct 2024</td><td><a href=\"\">https://github.com/Bedrock-Technology/uniBTC/blob/main/PeckShield-Audit-Report-uniBTC-v1.0.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>12 Jun 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf</a></td></tr><tr><td>uniETH</td><td>PeckShield</td><td>15 Feb 2024</td><td><a href=\"https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf\">https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf</a></td></tr></tbody></table>"
+      },
+      {
+        "audit_id": 12770,
+        "report_name": "<table><thead><tr><th width=\"125\">Token</th><th width=\"134\">Audit firm</th><th width=\"153\">Audit date</th><th>Report</th></tr></thead><tbody><tr><td>brBTC</td><td>Blocksec</td><td>16 Dec 2024</td><td><a href=\"https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf\">https://github.com/Bedrock-Technology/omni/blob/main/blocksec_bedrock_br_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>30 Oct 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.0-signed.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/blocksec_bedrock_unibtc_v1.0-signed.pdf</a></td></tr><tr><td>uniBTC</td><td>PeckShield</td><td>01 Oct 2024</td><td><a href=\"https://github.com/Bedrock-Technology/uniBTC/blob/main/PeckShield-Audit-Report-uniBTC-v1.0.pdf\">https://github.com/Bedrock-Technology/uniBTC/blob/main/PeckShield-Audit-Report-uniBTC-v1.0.pdf</a></td></tr><tr><td>uniBTC</td><td>Blocksec</td><td>12 Jun 2024</td><td><a href=\"\">https://github.com/Bedrock-Technology/uniBTC/blob/main/code%20audit%20blocksec.pdf</a></td></tr><tr><td>uniETH</td><td>PeckShield</td><td>15 Feb 2024</td><td><a href=\"https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf\">https://raw.githubusercontent.com/Bedrock-Technology/docs/main/PeckShield-Audit-Report-Bedrock-v1.0.pdf</a></td></tr></tbody></table>"
+      },
+      {
+        "audit_id": 12772,
+        "report_name": "The uniIOTX smart contract has been audited by Peckshield. You can find the smart contract audit report for uniIOTX [here]()."
+      },
+      {
+        "audit_id": 12773,
+        "report_name": "blocksec_bedrock_unibtc_v1.1-signed.pdf"
+      },
+      {
+        "audit_id": 12774,
+        "report_name": "PeckShield Audit Report RockX Eth Staking.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

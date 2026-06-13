@@ -74,6 +74,7 @@
 | [bancor](./bancor/) | $48.8M | 23.5% | $43.8M | declining | 4 | 121 | 2026-06-10 |
 | [baseline-protocol](./baseline-protocol/) | $69.3M | 25.0% | ? | active | 8 | 112 | 2026-06-10 |
 | [beanstalk](./beanstalk/) | $142.5M | 20.4% | $142.5M | declining | 7 | 244 | 2026-06-10 |
+| [bedrock](./bedrock/) | $306.6M | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [belt-finance](./belt-finance/) | $15.3M | 47.5% | $7.1M | declining | 6 | 1331 | 2026-06-10 |
 | [bend](./bend/) | $15.5M | 20.7% | $896.8K | active | 9 | 104 | 2026-06-10 |
 | [benddao](./benddao/) | $7.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-10 |
@@ -151,6 +152,7 @@
 | [credit-coop](./credit-coop/) | $2.1M | 0.0% | $2.1M | active | 3 | 2 | 2026-06-11 |
 | [crypto.com-liquid-staking](./crypto.com-liquid-staking/) | $20.0M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
 | [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-06-10 |
+| [cybro](./cybro/) | $103.9K | 0.0% | ? | unknown | 14 | 0 | 2026-06-13 |
 | [cyclone](./cyclone/) | $165.5M | 0.0% | $165.5M | active | 3 | 63 | 2026-06-11 |
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-06-10 |
 | [dango](./dango/) | $4.1M | 0.0% | $4.1M | active | 1 | 3 | 2026-06-10 |
@@ -175,6 +177,7 @@
 | [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | declining | 4 | 71 | 2026-06-10 |
 | [dnax](./dnax/) | $3.5M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
 | [dodo](./dodo/) | $19.1M | 0.0% | $19.1M | declining | 1 | 559 | 2026-06-12 |
+| [dolomite](./dolomite/) | $664.2M | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
 | [domination-finance](./domination-finance/) | $1.2M | 75.0% | ? | active | 1 | 30 | 2026-05-25 |
 | [dooar](./dooar/) | $5.1M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
 | [drops](./drops/) | $16.5M | 0.0% | $16.5M | declining | 0 | 77 | 2026-06-10 |
@@ -424,6 +427,7 @@
 | [notional](./notional/) | $1.2M | 19.2% | $755.7K | declining | 6 | 79 | 2026-06-11 |
 | [nucleus](./nucleus/) | $996.4K | 50.0% | ? | active | 11 | 6 | 2026-05-26 |
 | [nuls](./nuls/) | $7.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [o2-exchange](./o2-exchange/) | $2.2M | 0.0% | ? | unknown | 13 | 0 | 2026-06-13 |
 | [obeliskbtc](./obeliskbtc/) | $33.2M | 36.8% | $33.2M | declining | 1 | 19 | 2026-06-13 |
 | [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
 | [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 1 | 40 | 2026-06-11 |
@@ -608,6 +612,7 @@
 | [suzaku](./suzaku/) | $1.2M | 0.0% | $1.2M | active | 2 | 49 | 2026-06-11 |
 | [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-06-11 |
 | [swamp-finance](./swamp-finance/) | $0.1 | 0.0% | $0.1 | declining | 0 | 11 | 2026-06-11 |
+| [swap.io-clmm](./swap.io-clmm/) | $2.1K | 0.0% | ? | unknown | 11 | 0 | 2026-06-13 |
 | [swappi](./swappi/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
 | [swapscanner](./swapscanner/) | $4.4M | 0.0% | ? | active | 1 | 2 | 2026-06-11 |
 | [swell](./swell/) | $100.5M | 0.0% | ? | unknown | 16 | 0 | 2026-06-13 |

@@ -1184,11 +1184,16 @@ Each project directory contains:
 | [skcs](./skcs/brief.md) | $25.15K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [slender](./slender/brief.md) | $124.20 | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [smartcoin](./smartcoin/brief.md) | $949.57 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [smartcredit](./smartcredit/brief.md) | $769.26K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [smilee-finance](./smilee-finance/brief.md) | $1.12M | arbitrum, berachain | 186 | 23/186 (12%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [smoothy](./smoothy/brief.md) | $478.57K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [solace](./solace/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [solana-farm](./solana-farm/brief.md) | $249.73 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [solayer](./solayer/brief.md) | $12.99M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [solera](./solera/brief.md) | $8.36M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
+| [solid](./solid/brief.md) | $69.20K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [solidly-labs](./solidly-labs/brief.md) | $187.31K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [solstice](./solstice/brief.md) | $508.18M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [sonic-market](./sonic-market/brief.md) | $3.30K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [sophon-farm](./sophon-farm/brief.md) | $6.80M | ethereum | 1 | 1/1 (100%) | 100.0% | 100.0% (Sherlock) | 3 | aging | ✅ active | - |
 | [sorare-bridge](./sorare-bridge/brief.md) | $3.95M | ethereum | 58 | 38/58 (66%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -1310,5 +1315,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T14:30:25.537Z_
-_Projects: 1298_
+_Generated: 2026-06-13T14:32:50.631Z_
+_Projects: 1303_

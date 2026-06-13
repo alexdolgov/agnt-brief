@@ -1216,7 +1216,9 @@
 | [tarot](./tarot/) | $154.4K | 0.0% | $154.4K | dead | 1 | 139 | 2026-05-31 |
 | [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | declining | 0 | 179 | 2026-06-11 |
 | [tea-rex](./tea-rex/) | $9.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [tealswap](./tealswap/) | $4.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [team-finance](./team-finance/) | $5.4K | 0.0% | $5.4K | active | 2 | 66 | 2026-06-12 |
+| [teleswap](./teleswap/) | $587.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [teller](./teller/) | $1.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 40 | 2026-06-11 |
 | [templar-protocol](./templar-protocol/) | $41.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -1224,8 +1226,11 @@
 | [tenderize](./tenderize/) | $332.5M | 2.6% | $332.5M | declining | 6 | 43 | 2026-06-11 |
 | [tensorplex](./tensorplex/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-05-31 |
 | [tg-casino](./tg-casino/) | $13.4M | 6.7% | ? | active | 761 | 15 | 2026-06-11 |
+| [thaw](./thaw/) | $7.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [the-arena](./the-arena/) | $7.8M | 0.0% | $7.8M | active | 0 | 119 | 2026-06-11 |
 | [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 17 | 2026-06-11 |
+| [the-parallel](./the-parallel/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [the-story-of-draco](./the-story-of-draco/) | $7.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [thedeep](./thedeep/) | $7.0M | 0.0% | ? | active | 1 | 165 | 2026-06-13 |
 | [themis-pro](./themis-pro/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [thena](./thena/) | $208.2 | 10.2% | $208.2 | declining | 3 | 131 | 2026-05-25 |

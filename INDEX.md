@@ -730,11 +730,16 @@
 | [metastable](./metastable/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [metastrike](./metastrike/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [metavault](./metavault/) | $10.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [metera-protocol](./metera-protocol/) | $4.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mev-capital](./mev-capital/) | $98.5M | 0.0% | $98.5M | active | 0 | 358 | 2026-06-12 |
 | [mev-protocol](./mev-protocol/) | $80.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [mezo-bridge](./mezo-bridge/) | $2.6M | 0.0% | $2.6M | declining | 0 | 26 | 2026-06-12 |
 | [mezo-earn](./mezo-earn/) | $46.9M | 0.0% | ? | unknown | 0 | 3 | 2026-06-12 |
+| [milkomeda-c1-djed](./milkomeda-c1-djed/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [milkomeda-macc](./milkomeda-macc/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [milkyway-protocol](./milkyway-protocol/) | $2.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [minefi](./minefi/) | $1.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
+| [minerswap](./minerswap/) | $0.1 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mint-club](./mint-club/) | $598.0K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [minto](./minto/) | $3.8M | 16.7% | ? | active | 2 | 9 | 2026-06-11 |
 | [mitosis](./mitosis/) | $329.0M | 0.0% | $329.0M | active | 2 | 66 | 2026-06-11 |

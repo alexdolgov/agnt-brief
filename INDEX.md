@@ -26,15 +26,19 @@
 | [aladdin-dao](./aladdin-dao/) | $23.2K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [alchemix](./alchemix/) | $340.7M | 6.4% | $338.7M | active | 11 | 388 | 2026-06-10 |
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 15 | 58 | 2026-06-10 |
+| [alium-swap](./alium-swap/) | $15.0K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [allbridge](./allbridge/) | $21.7M | 0.0% | $21.7M | declining | 11 | 287 | 2026-06-12 |
 | [alpaca-finance](./alpaca-finance/) | $11.5M | 57.4% | $11.2M | declining | 19 | 144 | 2026-06-10 |
+| [alphafi](./alphafi/) | $193.3M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [alphagrowth](./alphagrowth/) | $7.4M | 14.3% | $7.4M | active | 16 | 40 | 2026-06-13 |
 | [alphaping](./alphaping/) | $73.6M | 0.0% | $73.6M | active | 0 | 4 | 2026-06-12 |
 | [alphax](./alphax/) | $218.2K | 0.0% | $218.2K | active | 1 | 1 | 2026-06-10 |
 | [altitude.fi](./altitude.fi/) | $16.1M | 72.2% | ? | declining | 7 | 124 | 2026-06-10 |
 | [ambient](./ambient/) | $2.7M | 64.7% | ? | declining | 3 | 30 | 2026-06-10 |
 | [ambire-wallet](./ambire-wallet/) | $5.8M | 20.0% | $5.8M | active | 12 | 13 | 2026-06-12 |
+| [amet-finance](./amet-finance/) | $0.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [amnis-finance](./amnis-finance/) | $11.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
+| [amped-finance](./amped-finance/) | $370.4 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [angle](./angle/) | $1.4B | 0.0% | $1.4B | declining | 3 | 547 | 2026-06-11 |
 | [angles](./angles/) | $441.0K | 4.0% | $7.5 | active | 1 | 40 | 2026-06-10 |
 | [angstrom](./angstrom/) | $11.3M | 7.7% | ? | declining | 3 | 13 | 2026-06-10 |
@@ -52,6 +56,7 @@
 | [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-06-10 |
 | [arche](./arche/) | $2.3K | 0.0% | ? | unknown | 14 | 0 | 2026-06-13 |
 | [aria-protocol](./aria-protocol/) | $181.1K | 0.0% | ? | dead | 1 | 1 | 2026-06-10 |
+| [arkis](./arkis/) | $76.0M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [armitage-by-wintermute](./armitage-by-wintermute/) | $51.8M | 0.0% | $51.8M | unknown | 0 | 7 | 2026-06-12 |
 | [arrakis-finance](./arrakis-finance/) | $128.2K | 19.4% | $3.1K | active | 8 | 124 | 2026-06-10 |
 | [asseto-aoabt](./asseto-aoabt/) | $24.3M | 0.0% | ? | active | 1 | 2 | 2026-06-12 |

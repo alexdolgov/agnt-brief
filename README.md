@@ -621,12 +621,17 @@ Each project directory contains:
 | [devil-finance](./devil-finance/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [dexalot](./dexalot/brief.md) | $7.90M | avalanche, bsc | 6 | 6/6 (100%) | 16.7% | 0.0% (-) | 2 | stale | ✅ active | - |
 | [dexible-v2](./dexible-v2/brief.md) | - | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [dexilla](./dexilla/brief.md) | $133.27 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [dexioprotocol](./dexioprotocol/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [dexlyn-labs](./dexlyn-labs/brief.md) | $80.39K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [dflow](./dflow/brief.md) | $1.49M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [dfs-network](./dfs-network/brief.md) | $96.03K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [dfx-finance](./dfx-finance/brief.md) | $110.95K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [dipcoin](./dipcoin/brief.md) | $4.40M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [ditto](./ditto/brief.md) | $33.10K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [djed-stablecoin](./djed-stablecoin/brief.md) | $5.37M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [dnax](./dnax/brief.md) | $3.54M | bsc | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [dogeclaw](./dogeclaw/brief.md) | $11.49 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [dolomite](./dolomite/brief.md) | $664.24M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [domination-finance](./domination-finance/brief.md) | $1.27M | 4 | 30 | 20/30 (67%) | 75.0% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [dooar](./dooar/brief.md) | $5.11M | bsc | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -1086,5 +1091,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T12:53:37.122Z_
-_Projects: 1074_
+_Generated: 2026-06-13T12:54:53.677Z_
+_Projects: 1079_

@@ -408,14 +408,17 @@
 | [lets-get-hai](./lets-get-hai/) | $13.5M | 77.4% | $12.6M | active | 5 | 54 | 2026-06-11 |
 | [levex](./levex/) | $10.5M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
 | [liminal](./liminal/) | $24.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [linear-protocol](./linear-protocol/) | $59.6M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | active | 4 | 20 | 2026-06-11 |
+| [liquis](./liquis/) | $71.5K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [liquity](./liquity/) | $217.0M | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [lisa-finance](./lisa-finance/) | $356.8K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [lisk-bridge](./lisk-bridge/) | $50.9M | 0.0% | $50.9M | active | 0 | 102 | 2026-06-12 |
 | [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | declining | 0 | 93 | 2026-06-11 |
 | [llamapay](./llamapay/) | $21.0M | 0.0% | ? | active | 1 | 20 | 2026-06-12 |
 | [lockon](./lockon/) | $1.0M | 56.3% | ? | active | 7 | 23 | 2026-06-11 |
+| [looksrare](./looksrare/) | $27.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [looping-collective](./looping-collective/) | $11.8M | 25.0% | $11.6M | active | 13 | 18 | 2026-06-12 |
 | [loopring](./loopring/) | $2.4M | 8.1% | $2.4M | declining | 1 | 141 | 2026-06-13 |
 | [ltv-protocol](./ltv-protocol/) | $12.6K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
@@ -462,6 +465,7 @@
 | [mobox](./mobox/) | $6.6M | 0.0% | $6.6M | unknown | 1 | 323 | 2026-06-11 |
 | [mode-bridge](./mode-bridge/) | $6.1M | 2.9% | ? | declining | 21 | 100 | 2026-06-11 |
 | [mole](./mole/) | $8.6M | 0.0% | ? | active | 1 | 49 | 2026-06-13 |
+| [monday-trade](./monday-trade/) | $686.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [moneyonchain](./moneyonchain/) | $43.7M | 0.0% | ? | unknown | 12 | 0 | 2026-06-11 |
 | [monox](./monox/) | $10.9K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-06-11 |
@@ -470,6 +474,7 @@
 | [more-markets](./more-markets/) | $10.3M | 0.0% | ? | declining | 0 | 21 | 2026-06-12 |
 | [morph-bridge](./morph-bridge/) | $2.8M | 0.0% | $2.8M | active | 0 | 17 | 2026-06-12 |
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 18 | 51 | 2026-06-12 |
+| [mortgagefi](./mortgagefi/) | $777.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [mu-digital](./mu-digital/) | $19.4M | 100.0% | ? | active | 2 | 12 | 2026-06-11 |
 | [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-06-11 |
 | [multichain](./multichain/) | $12.5M | 42.9% | $128.8 | dead | 15 | 17 | 2026-06-11 |

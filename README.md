@@ -635,8 +635,13 @@ Each project directory contains:
 | [dolomite](./dolomite/brief.md) | $664.24M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [domination-finance](./domination-finance/brief.md) | $1.27M | 4 | 30 | 20/30 (67%) | 75.0% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [dooar](./dooar/brief.md) | $5.11M | bsc | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [dot-dot-finance](./dot-dot-finance/brief.md) | $3.09K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [doubler](./doubler/brief.md) | $107.03K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [dpex](./dpex/brief.md) | $142.46 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [drachma-exchange](./drachma-exchange/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [drift](./drift/brief.md) | $187.88M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [dsf.finance](./dsf.finance/brief.md) | $477.07K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [dtx](./dtx/brief.md) | $5.44K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [dxsale](./dxsale/brief.md) | $17.94M | 12 | 358 | 8/358 (2%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [dyorswap](./dyorswap/brief.md) | $2.24M | 7 | 93 | 5/93 (5%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [dyson-finance](./dyson-finance/brief.md) | $80.63K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1091,5 +1096,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T12:54:53.677Z_
-_Projects: 1079_
+_Generated: 2026-06-13T12:57:11.562Z_
+_Projects: 1084_

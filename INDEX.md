@@ -352,10 +352,15 @@
 | [dolomite](./dolomite/) | $664.2M | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
 | [domination-finance](./domination-finance/) | $1.2M | 75.0% | ? | active | 1 | 30 | 2026-05-25 |
 | [dooar](./dooar/) | $5.1M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
+| [dot-dot-finance](./dot-dot-finance/) | $3.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [doubler](./doubler/) | $107.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dpex](./dpex/) | $142.5 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [drachma-exchange](./drachma-exchange/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [drift](./drift/) | $187.9M | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [drops](./drops/) | $16.5M | 0.0% | $16.5M | declining | 0 | 77 | 2026-06-10 |
+| [dsf.finance](./dsf.finance/) | $477.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dtrinity](./dtrinity/) | $1.8M | 0.0% | $1.8M | active | 5 | 209 | 2026-06-11 |
+| [dtx](./dtx/) | $5.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dxsale](./dxsale/) | $17.9M | 0.0% | ? | active | 1 | 358 | 2026-06-12 |
 | [dyorswap](./dyorswap/) | $2.2M | 0.0% | ? | active | 0 | 93 | 2026-06-10 |
 | [dyson-finance](./dyson-finance/) | $80.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |

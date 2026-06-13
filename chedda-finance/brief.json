@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
-  "project_key": "chain-fusion",
-  "generated_at": "2026-06-13T12:41:06.328Z",
+  "project_key": "chedda-finance",
+  "generated_at": "2026-06-13T12:41:07.444Z",
   "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -19,28 +19,28 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 18155753.70545,
-    "tvl_usd": 18155753.70545,
+    "dl_tvl_usd": 7755.52743,
+    "tvl_usd": 7755.52743,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
-    "website_url": "https://dashboard.internetcomputer.org/chain-fusion",
+    "website_url": null,
     "chains": [],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2023-06",
-    "audit_freshness": "stale",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 1,
-      "unknown": 0
+      "stale": 0,
+      "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Chain Fusion is Internet Computer Protocol (ICP) multi-chain technology that enables decentralized interoperability with multiple blockchains, including Bitcoin and Ethereum, through threshold signatures, ICP smart contracts/canisters, and chain-key tokens, without trusted intermediaries or centralized bridges.",
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 0
+    "product_family_count": null
   },
   "surface_sufficiency": {
     "unique_implementations": 0,
@@ -54,14 +54,14 @@
   "contracts": [],
   "audits": [
     {
-      "audit_id": 12893,
-      "audit_key": "audit-12893",
-      "report_name": "2023-06-dfinity-ckBTC-securityreview.pdf",
-      "report_url": "https://github.com/trailofbits/publications/blob/master/reviews/2023-06-dfinity-ckBTC-securityreview.pdf",
-      "auditor": "Trail of Bits",
+      "audit_id": 12898,
+      "audit_key": "audit-12898",
+      "report_name": "Chedda Finance Smart Contract Audit Report - Final Report.pdf",
+      "report_url": "https://github.com/chedda-tech/chedda-protocol/blob/develop/audit/Chedda%20Finance%20Smart%20Contract%20Audit%20Report%20-%20Final%20Report.pdf",
+      "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-06",
+      "freshness": "unknown",
+      "date": null,
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -90,8 +90,8 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 12893,
-        "report_name": "2023-06-dfinity-ckBTC-securityreview.pdf"
+        "audit_id": 12898,
+        "report_name": "Chedda Finance Smart Contract Audit Report - Final Report.pdf"
       }
     ],
     "inherited_remapped_matches": []

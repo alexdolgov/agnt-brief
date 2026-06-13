@@ -239,12 +239,16 @@
 | [centrifuge](./centrifuge/) | $1.8B | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [cex.io](./cex.io/) | $12.1M | 0.0% | ? | active | 1 | 4 | 2026-06-12 |
 | [cgo-finance](./cgo-finance/) | $1.2M | 0.0% | ? | declining | 0 | 2 | 2026-06-10 |
-| [chain-fusion](./chain-fusion/) | $18.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
+| [chadfinance](./chadfinance/) | $78.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [chain-fusion](./chain-fusion/) | $18.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [chainflip](./chainflip/) | $3.7M | 27.3% | ? | active | 3 | 12 | 2026-06-10 |
 | [chainge-finance](./chainge-finance/) | $12.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-10 |
 | [chaingpt](./chaingpt/) | $4.6M | 0.0% | ? | active | 0 | 87 | 2026-06-10 |
+| [champion-finance](./champion-finance/) | $23.9 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [charm-finance](./charm-finance/) | $14.2K | 50.0% | $0.0 | declining | 6 | 10 | 2026-06-10 |
+| [chat3](./chat3/) | $6.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [chateau](./chateau/) | $19.1K | 33.3% | $19.1K | active | 1 | 5 | 2026-06-10 |
+| [chedda-finance](./chedda-finance/) | $7.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [chewyswap](./chewyswap/) | $9.5K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [chiliswap](./chiliswap/) | $561.2 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [circuit](./circuit/) | $198.7K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |

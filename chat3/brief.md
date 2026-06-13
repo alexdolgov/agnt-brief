@@ -1,15 +1,15 @@
-# Agentic Audit Brief: Chain Fusion
+# Agentic Audit Brief: Chat3
 
 ## Project Overview
 
-- Project: Chain Fusion (`chain-fusion`)
-- Website: [https://dashboard.internetcomputer.org/chain-fusion](https://dashboard.internetcomputer.org/chain-fusion)
+- Project: Chat3 (`chat3`)
+- Website: [https://chat3.one/](https://chat3.one/)
 - Lifecycle: unknown
-- Generated: 2026-06-13T12:41:06.328Z
+- Generated: 2026-06-13T12:41:08.105Z
 - Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $18,155,753.71
+- DeFi Llama TVL: $6,211.73
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Chain Fusion is Internet Computer Protocol (ICP) multi-chain technology that enables decentralized interoperability with multiple blockchains, including Bitcoin and Ethereum, through threshold signatures, ICP smart contracts/canisters, and chain-key tokens, without trusted intermediaries or centralized bridges.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 
@@ -33,7 +33,7 @@ Chain Fusion is Internet Computer Protocol (ICP) multi-chain technology that ena
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2023-06 (stale)
+- Latest audit: 2023 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
@@ -73,7 +73,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [2023-06-dfinity-ckBTC-securityreview.pdf](https://github.com/trailofbits/publications/blob/master/reviews/2023-06-dfinity-ckBTC-securityreview.pdf) | Trail of Bits | Audit | 2023-06 | stale | Direct | n/a | 0 | n/a |
+| [DL audit link](https://chat3-assets.s3.ap-southeast-1.amazonaws.com/assets/PeckShield-Audit-Report-Chat3-v1.0.pdf) | PeckShield | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -101,6 +101,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [12893] 2023-06-dfinity-ckBTC-securityreview.pdf
+- [12895] DL audit link
 
 Fork inheritance lineage and inherited audits are included when available.

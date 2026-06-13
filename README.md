@@ -545,10 +545,14 @@ Each project directory contains:
 | [centrifuge](./centrifuge/brief.md) | $1797.94M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [cex.io](./cex.io/brief.md) | $12.10M | bsc, ethereum, polygon | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [cgo-finance](./cgo-finance/brief.md) | $1.23M | cronos | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
-| [chain-fusion](./chain-fusion/brief.md) | $18.60M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [chadfinance](./chadfinance/brief.md) | $78.23 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [chain-fusion](./chain-fusion/brief.md) | $18.16M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [chainflip](./chainflip/brief.md) | $35.88M | arbitrum, ethereum | 12 | 11/12 (92%) | 27.3% | 27.3% (Trail of Bits) | 1 | stale | ✅ active | - |
 | [chainge-finance](./chainge-finance/brief.md) | $12.14M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [chaingpt](./chaingpt/brief.md) | $4.61M | 7 | 87 | 3/87 (3%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [champion-finance](./champion-finance/brief.md) | $23.86 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [chat3](./chat3/brief.md) | $6.21K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [chedda-finance](./chedda-finance/brief.md) | $7.76K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [chewyswap](./chewyswap/brief.md) | $9.55K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [chiliswap](./chiliswap/brief.md) | $561.21 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [circuit](./circuit/brief.md) | $198.70K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1057,5 +1061,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T12:40:47.071Z_
-_Projects: 1045_
+_Generated: 2026-06-13T12:42:36.033Z_
+_Projects: 1049_

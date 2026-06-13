@@ -5,11 +5,11 @@
 - Project: The Arena (`the-arena`)
 - Website: [https://arena.social/](https://arena.social/)
 - Lifecycle: active (Tier 0, 81.1% below peak)
-- Generated: 2026-06-11T03:29:33.469Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
+- Generated: 2026-06-13T19:49:12.210Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-a865
 - Chains: avalanche
-- Contract surface: 119 unique implementations (222 raw deployments)
-- DeFi Llama TVL: $2,202,689.00
+- Contract surface: 121 unique implementations (225 raw deployments)
+- DeFi Llama TVL: $1,518,770.00
 - On-chain TVL (included contracts): $7,758,376.19
 - TVL by chain: Avalanche $7,758,376.19
 
@@ -23,12 +23,12 @@ Arena DEX and Arena Launch share the ArenaToken for governance and fee discounts
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/31 (0.0%)
-- Verified + Unaudited implementations: 29
+- Verified implementations audited: 0/32 (0.0%)
+- Verified + Unaudited implementations: 30
 - Verified by bytecode match: 2
-- Unverified implementations: 88
-- Unique implementations: 119
-- Raw deployments: 222
+- Unverified implementations: 89
+- Unique implementations: 121
+- Raw deployments: 225
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $7,758,376.19
@@ -46,7 +46,7 @@ Arena DEX and Arena Launch share the ArenaToken for governance and fee discounts
 
 - None
 
-### ⚠️ Verified + Unaudited (29)
+### ⚠️ Verified + Unaudited (30)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -56,6 +56,7 @@ Arena DEX and Arena Launch share the ArenaToken for governance and fee discounts
 | ArenaFeeHelper | periphery | avalanche | 2 deployments: avalanche [`0x537505...189077`](./contracts/avalanche-43114/0x537505da49b4249b576fc8d00028bfddf6189077/); avalanche `0xde174f...df17f8` | ⚠️ Unaudited |
 | ArenaFeeRecipient | operational_periphery | avalanche | [`0x0ab4de...550d66`](./contracts/avalanche-43114/0x0ab4def8d532fcf0302764d6a9bb2f4299550d66/) | ⚠️ Unaudited |
 | ArenaMultiSend | unknown | avalanche | 4 deployments: avalanche [`0x472db6...8aa365`](./contracts/avalanche-43114/0x472db6c0c34792375d119aec8422dec80f8aa365/); avalanche `0x608c6c...cde6d5`; avalanche `0xf0bda7...395984`; avalanche `0xf60fad...08fd61` | ⚠️ Unaudited |
+| ArenaPair | unknown | avalanche | [`0x73b365...4bbe95`](./contracts/avalanche-43114/0x73b365a5f36502c81886ff604d9f0f43404bbe95/) | ⚠️ Unaudited |
 | ArenaPoolDeployer | core_logic | avalanche | 2 deployments: avalanche [`0x73ffe4...666ad1`](./contracts/avalanche-43114/0x73ffe423626c3ff34bf3c54c2c8705549c666ad1/); avalanche `0xfd75b3...d9030f` | ⚠️ Unaudited |
 | ArenaReferralRegistry | registry | avalanche | 2 deployments: avalanche [`0x6a0fbe...b8ac7a`](./contracts/avalanche-43114/0x6a0fbeb8110e696b610c4a2af964900cf1b8ac7a/); avalanche `0xff4e5d...a54a40` | ⚠️ Unaudited |
 | ArenaRouter02 | adapter | avalanche | [`0xf56d52...b9066e`](./contracts/avalanche-43114/0xf56d524d651b90e4b84dc2fffd83079698b9066e/) | ⚠️ Unaudited |
@@ -72,7 +73,7 @@ Arena DEX and Arena Launch share the ArenaToken for governance and fee discounts
 | SingleTxQuoter | periphery | avalanche | 4 deployments: avalanche [`0x0ab3d3...136640`](./contracts/avalanche-43114/0x0ab3d37f13d9e7f023148a01b48ca69392136640/); avalanche `0xc5786e...cdfe6a`; avalanche `0xed5437...62c85e`; avalanche `0xf80408...9a87df` | ⚠️ Unaudited |
 | TokenFactory | registry | avalanche | 11 deployments: avalanche [`0x12428e...9f6316`](./contracts/avalanche-43114/0x12428e476b6239d1262250801e7b3dc0a09f6316/); avalanche `0x386ab5...084dd6`; avalanche `0x71ec76...360132`; avalanche `0x727a1b...a3f771`; avalanche `0x85dbb5...6f751f`; avalanche `0x8b986c...4d809e`; avalanche `0xac33c3...d869f2`; avalanche `0xbf3e70...8d1b6a`; avalanche `0xeb6556...e965da`; avalanche `0xf2609f...80f855`; avalanche `0xfa303f...8bd112` | ⚠️ Unaudited |
 | TokenInfoProvider | token | avalanche | [`0x448b9e...14af32`](./contracts/avalanche-43114/0x448b9e5bbf3f722579e63d7f337d2b12a614af32/) | ⚠️ Unaudited |
-| TokenManager | governance | avalanche | 7 deployments: avalanche [`0x05b7e8...5392e5`](./contracts/avalanche-43114/0x05b7e88e2c57e735bba1b6469138d3f8805392e5/); avalanche `0x118ee0...b30606`; avalanche `0x1a5e7e...9da504`; avalanche `0x203a0f...b064d0`; avalanche `0x976ed0...7282c1`; avalanche `0xb14044...31edd2`; avalanche `0xba147f...aa1d05` | ⚠️ Unaudited |
+| TokenManager | governance | avalanche | 8 deployments: avalanche [`0x05b7e8...5392e5`](./contracts/avalanche-43114/0x05b7e88e2c57e735bba1b6469138d3f8805392e5/); avalanche `0x0e89f3...c7d146`; avalanche `0x118ee0...b30606`; avalanche `0x1a5e7e...9da504`; avalanche `0x203a0f...b064d0`; avalanche `0x976ed0...7282c1`; avalanche `0xb14044...31edd2`; avalanche `0xba147f...aa1d05` | ⚠️ Unaudited |
 | TokenManagerERC20 | governance | avalanche | 14 deployments: avalanche [`0x0005f6...db7178`](./contracts/avalanche-43114/0x0005f6681d53d0bdab6261c2dccebe2e36db7178/); avalanche `0x0436d9...94b2f6`; avalanche `0x0bb2db...609923`; avalanche `0x2196e1...758464`; avalanche `0x36a288...c1970f`; avalanche `0x4714aa...00e3d0`; avalanche `0x4f42a8...2bcba7`; avalanche `0x7dcacc...4a4c9a`; avalanche `0x8c2d14...3c2718`; avalanche `0xa5f678...2e0375`; avalanche `0xe04dd2...a087f1`; avalanche `0xe71a36...c66701`; avalanche `0xe92072...585375`; avalanche `0xf0d126...417ef2` | ⚠️ Unaudited |
 | TokenManagerERC20PriceHelper | operational_periphery | avalanche | 6 deployments: avalanche [`0x1cfa65...bb4a62`](./contracts/avalanche-43114/0x1cfa653774bfb6d60d8a61f810033e1f31bb4a62/); avalanche `0x5048fb...17abd7`; avalanche `0x780590...e7e6bc`; avalanche `0x7bb543...3f7f8b`; avalanche `0x90c1e7...0fbcc5`; avalanche `0xcb8814...47be5d` | ⚠️ Unaudited |
 | TokenManagerPriceHelper | operational_periphery | avalanche | 2 deployments: avalanche [`0x238c47...a72d79`](./contracts/avalanche-43114/0x238c47619a0cd1f72eef260c44dfdf6ba2a72d79/); avalanche `0xbe3f25...e7b927` | ⚠️ Unaudited |
@@ -95,7 +96,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 | Counter | unknown | avalanche | 2 deployments: avalanche [`0x8d4b53...b7ecce`](./contracts/avalanche-43114/0x8d4b5309bfcb2e4f927c9c03d68554b404b7ecce/); avalanche `0xf57c54...28a7d2` | ⚠️ Unaudited (bytecode match) |
 | FeeHelperProxy | proxy | avalanche | 2 deployments: avalanche [`0x0af2fb...598704`](./contracts/avalanche-43114/0x0af2fb7c64331e611b1303a9d65022f301598704/); avalanche `0x1f15ba...c73d04` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (88)
+### ❓ Unverified (89)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -128,6 +129,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | avalanche | `0x40f2d3...65d46d` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x420c70...7eddd6` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x442bc9...cf514c` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0x478eeb...43a86b` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x481333...ac27a1` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x4ad044...a9b0f6` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x4db1b2...6292de` | ❓ Unverified |
@@ -207,12 +209,14 @@ Verified + unaudited native implementations ranked by TVL:
 | avalanche | [`0x537505...189077`](./contracts/avalanche-43114/0x537505da49b4249b576fc8d00028bfddf6189077/) | ArenaFeeHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x0ab4de...550d66`](./contracts/avalanche-43114/0x0ab4def8d532fcf0302764d6a9bb2f4299550d66/) | ArenaFeeRecipient | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x472db6...8aa365`](./contracts/avalanche-43114/0x472db6c0c34792375d119aec8422dec80f8aa365/) | ArenaMultiSend | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x73b365...4bbe95`](./contracts/avalanche-43114/0x73b365a5f36502c81886ff604d9f0f43404bbe95/) | ArenaPair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x73ffe4...666ad1`](./contracts/avalanche-43114/0x73ffe423626c3ff34bf3c54c2c8705549c666ad1/) | ArenaPoolDeployer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x6a0fbe...b8ac7a`](./contracts/avalanche-43114/0x6a0fbeb8110e696b610c4a2af964900cf1b8ac7a/) | ArenaReferralRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xf56d52...b9066e`](./contracts/avalanche-43114/0xf56d524d651b90e4b84dc2fffd83079698b9066e/) | ArenaRouter02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x0e2d0c...5eec97`](./contracts/avalanche-43114/0x0e2d0cc6454c307462ab2a9881ac3c5a965eec97/) | ArenaStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x0359a2...0d15ff`](./contracts/avalanche-43114/0x0359a21b87b55d93838cc57a254064758d0d15ff/) | AvaxHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x1d31a9...c5414f`](./contracts/avalanche-43114/0x1d31a9998b5fa533bb977466491d367d7dc5414f/) | BareAggregatorExecutorConst | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x8d4b53...b7ecce`](./contracts/avalanche-43114/0x8d4b5309bfcb2e4f927c9c03d68554b404b7ecce/) | Counter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x2f8c33...9c9694`](./contracts/avalanche-43114/0x2f8c33e6f88727d8456bf1d5123e47d61e9c9694/) | FeeCompoundHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x132cc2...84820c`](./contracts/avalanche-43114/0x132cc20e8d709486a3121c9807bfd75f4384820c/) | FeeHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x0af2fb...598704`](./contracts/avalanche-43114/0x0af2fb7c64331e611b1303a9d65022f301598704/) | FeeHelperProxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -233,10 +237,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 53 |
+| native | 83 |
 | upstream | 0 |
-| standard_library | 3 |
-| needs_review | 63 |
+| standard_library | 2 |
+| needs_review | 36 |
 
 ## Scope Matching Notes
 

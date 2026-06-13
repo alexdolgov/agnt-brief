@@ -1,0 +1,17 @@
+{
+  "address": "0x4200000000000000000000000000000000000014",
+  "chain_id": 130,
+  "contract_name": "Proxy",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30014",
+  "fetched_at": "2026-06-13T19:51:36.681Z"
+}

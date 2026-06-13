@@ -1,0 +1,17 @@
+{
+  "address": "0x9a89490f1056a7bc607ec53f93b921fe666a2c48",
+  "chain_id": 59144,
+  "contract_name": "AlgebraPoolDeployer",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T19:48:32.392Z"
+}

@@ -5,10 +5,10 @@
 - Project: Fiamma (`fiamma`)
 - Website: [https://www.fiammalabs.io/](https://www.fiammalabs.io/)
 - Lifecycle: active (Tier 0, 46% below peak)
-- Generated: 2026-06-11T11:43:30.050Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
-- Chains: bsc, ethereum, hyperliquid, sei
-- Contract surface: 33 unique implementations (78 raw deployments)
+- Generated: 2026-06-13T19:50:50.137Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-a865
+- Chains: arbitrum, base, bsc, ethereum, hyperliquid, polygon, sei, unichain
+- Contract surface: 33 unique implementations (82 raw deployments)
 - DeFi Llama TVL: $1,150,915.03
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -23,41 +23,44 @@ The Fiamma family relies on BitVMBridgeV4 to manage cross-chain message passing 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/12 (0.0%)
-- Verified + Unaudited implementations: 12
+- Verified implementations audited: 2/12 (16.7%)
+- Verified + Unaudited implementations: 10
 - Verified by bytecode match: 0
 - Unverified implementations: 21
 - Unique implementations: 33
-- Raw deployments: 78
+- Raw deployments: 82
 - Audits discovered: 3
-- Scoreable audits (matched contracts): 0
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
+- Latest audit: 2025-08 (fresh)
+- Staleness: 2 fresh, 1 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 2 | 16.7% | 2025-08 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (2)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| BtcMirror | unknown | bsc | 3 deployments: bsc [`0x5dca16...05483b`](./contracts/bsc-56/0x5dca1687804b50ecf0b2fa69fcba7f416705483b/); hyperliquid `0x60c230...7b061f`; hyperliquid `0x7427f3...0f9430` | ✅ Audited |
+| FiaBTC | unknown | hyperliquid | 7 deployments: ethereum `0x22f0e0...3f0e08`; ethereum `0x730162...35d073`; ethereum `0xe398f7...02edae`; bsc `0x6f2c9c...62fb18`; hyperliquid [`0x0ceda1...0b1e86`](./contracts/hyperliquid-999/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/); hyperliquid `0xf78dcf...4cc9a2`; sei `0x8388dc...fa3672` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (12)
+### ⚠️ Verified + Unaudited (10)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | BitVMBridgeV3 | operational_periphery | ethereum | [`0x756bcc...618a3e`](./contracts/ethereum-1/0x756bcceeda5737238a5b00915e638dca23618a3e/) | ⚠️ Unaudited |
-| BitVMBridgeV4 | operational_periphery | sei | 10 deployments: ethereum `0x19438c...13207c`; ethereum `0x53a662...50f555`; ethereum `0xafb253...027524`; ethereum `0xeaec99...ed1c53`; bsc `0x9b7764...643d17`; bsc `0xcc30d3...ec83c0`; hyperliquid `0x62c737...81b939`; hyperliquid `0x7f16fd...9e96fe`; hyperliquid `0xb93752...58ecf3`; sei [`0x0ceda1...0b1e86`](./contracts/sei-1329/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/) | ⚠️ Unaudited |
-| BtcMirror | unknown | bsc | 3 deployments: bsc [`0x5dca16...05483b`](./contracts/bsc-56/0x5dca1687804b50ecf0b2fa69fcba7f416705483b/); hyperliquid `0x60c230...7b061f`; hyperliquid `0x7427f3...0f9430` | ⚠️ Unaudited |
+| BitVMBridgeV4 | operational_periphery | sei | 14 deployments: ethereum `0x19438c...13207c`; ethereum `0x53a662...50f555`; ethereum `0xafb253...027524`; ethereum `0xeaec99...ed1c53`; bsc `0x9b7764...643d17`; bsc `0xcc30d3...ec83c0`; unichain `0xcfa380...25e1f7`; polygon `0xcfa380...25e1f7`; hyperliquid `0x62c737...81b939`; hyperliquid `0x7f16fd...9e96fe`; hyperliquid `0xb93752...58ecf3`; sei [`0x0ceda1...0b1e86`](./contracts/sei-1329/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/); base `0xcfa380...25e1f7`; arbitrum `0xcfa380...25e1f7` | ⚠️ Unaudited |
 | BtcPeg | unknown | ethereum | [`0x5dca16...05483b`](./contracts/ethereum-1/0x5dca1687804b50ecf0b2fa69fcba7f416705483b/) | ⚠️ Unaudited |
 | BtcPegUpgradeable | unknown | ethereum | 4 deployments: ethereum [`0x63ec06...59d45f`](./contracts/ethereum-1/0x63ec0656ce47061d2b811050d0bcff8a7f59d45f/); bsc `0x756bcc...618a3e`; hyperliquid `0xafb253...027524`; sei `0x7427f3...0f9430` | ⚠️ Unaudited |
 | BtcTxVerifier | periphery | ethereum | 8 deployments: ethereum [`0x1e64f7...c0b931`](./contracts/ethereum-1/0x1e64f7641b6ae37395c26d154c6d8457dbc0b931/); ethereum `0x36a1a6...79f0a7`; ethereum `0x66ee8d...32d50c`; bsc `0x3c2bce...c5c0a1`; bsc `0x60c230...7b061f`; hyperliquid `0x756bcc...618a3e`; hyperliquid `0xbc9afb...006e85`; hyperliquid `0xf765b8...bc4a5e` | ⚠️ Unaudited |
 | DataVerificationHub | unknown | ethereum | 2 deployments: ethereum [`0x2d2793...cd9b68`](./contracts/ethereum-1/0x2d27933f65f039c6b5763150f4cd24842bcd9b68/); ethereum `0x328c96...1c5865` | ⚠️ Unaudited |
-| FiaBTC | unknown | hyperliquid | 7 deployments: ethereum `0x22f0e0...3f0e08`; ethereum `0x730162...35d073`; ethereum `0xe398f7...02edae`; bsc `0x6f2c9c...62fb18`; hyperliquid [`0x0ceda1...0b1e86`](./contracts/hyperliquid-999/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/); hyperliquid `0xf78dcf...4cc9a2`; sei `0x8388dc...fa3672` | ⚠️ Unaudited |
 | FiaBTCOFTAdapter | adapter | hyperliquid | 4 deployments: hyperliquid [`0x5098aa...680661`](./contracts/hyperliquid-999/0x5098aa08546728d13fb5801b8eb893e724680661/); hyperliquid `0x8089e6...57e86a`; sei `0xa885d5...ee150f`; sei `0xe35776...514b9b` | ⚠️ Unaudited |
 | LPManager | governance | bsc | 5 deployments: ethereum `0x60c230...7b061f`; ethereum `0x7427f3...0f9430`; bsc [`0x0ceda1...0b1e86`](./contracts/bsc-56/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/); hyperliquid `0x9b7764...643d17`; hyperliquid `0xcfa380...25e1f7` | ⚠️ Unaudited |
 | OperatorManager | governance | ethereum | 2 deployments: ethereum [`0x0ce121...f61c7d`](./contracts/ethereum-1/0x0ce121f83613f0eaf131ee48204b7101e8f61c7d/); ethereum `0xe6ed12...96b84f` | ⚠️ Unaudited |
@@ -107,9 +110,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [BitLabs-Bridge-script.pdf](https://github.com/fiamma-chain/fiamma-audit/blob/main/BitLabs-Bridge-script.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [MoveBits-Bridge-Aptos-Contract.pdf](https://github.com/fiamma-chain/fiamma-audit/blob/main/MoveBits-Bridge-Aptos-Contract.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Zenith-Bridge-Cairo-Contract.pdf](https://github.com/fiamma-chain/fiamma-audit/blob/main/Zenith-Bridge-Cairo-Contract.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [BitLabs-Bridge-script.pdf](https://github.com/fiamma-chain/fiamma-audit/blob/main/BitLabs-Bridge-script.pdf) | unknown | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
+| [MoveBits-Bridge-Aptos-Contract.pdf](https://github.com/fiamma-chain/fiamma-audit/blob/main/MoveBits-Bridge-Aptos-Contract.pdf) | unknown | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
+| [Zenith-Bridge-Cairo-Contract.pdf](https://github.com/fiamma-chain/fiamma-audit/blob/main/Zenith-Bridge-Cairo-Contract.pdf) | unknown | Audit | 2025-07 | fresh | Direct | contract_name | 10 | high |
 
 ## Coverage Gaps
 
@@ -119,7 +122,6 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | ethereum | [`0x756bcc...618a3e`](./contracts/ethereum-1/0x756bcceeda5737238a5b00915e638dca23618a3e/) | BitVMBridgeV3 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sei | [`0x0ceda1...0b1e86`](./contracts/sei-1329/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/) | BitVMBridgeV4 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x5dca16...05483b`](./contracts/bsc-56/0x5dca1687804b50ecf0b2fa69fcba7f416705483b/) | BtcMirror | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5dca16...05483b`](./contracts/ethereum-1/0x5dca1687804b50ecf0b2fa69fcba7f416705483b/) | BtcPeg | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x63ec06...59d45f`](./contracts/ethereum-1/0x63ec0656ce47061d2b811050d0bcff8a7f59d45f/) | BtcPegUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1e64f7...c0b931`](./contracts/ethereum-1/0x1e64f7641b6ae37395c26d154c6d8457dbc0b931/) | BtcTxVerifier | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -130,24 +132,23 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 10 |
+| native | 9 |
 | upstream | 0 |
 | standard_library | 4 |
-| needs_review | 19 |
+| needs_review | 20 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=10
 
 Zero-match audit list:
 
 - [11582] BitLabs-Bridge-script.pdf
 - [11583] MoveBits-Bridge-Aptos-Contract.pdf
-- [11584] Zenith-Bridge-Cairo-Contract.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

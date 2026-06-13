@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "lynex",
-  "generated_at": "2026-05-31T09:49:23.995Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-13T19:48:28.237Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-a865",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "lynex",
@@ -32,26 +32,26 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 30,
-    "total_addresses": 85,
-    "unique_implementations": 30,
-    "total_deployments": 85,
+    "total_contracts": 45,
+    "total_addresses": 104,
+    "unique_implementations": 45,
+    "total_deployments": 104,
     "audited_contracts": 0,
-    "unaudited_contracts": 29,
+    "unaudited_contracts": 44,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 29,
+    "contracts_verified_unaudited": 44,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1067539,
-    "tvl_usd": 3.8924877877294026,
+    "dl_tvl_usd": 882387,
+    "tvl_usd": 261970.12832257006,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "linea": 3.89
+      "linea": 261970.13
     },
-    "asd_usd": 3.8924877877294026,
+    "asd_usd": 261970.12832257006,
     "website_url": "https://app.lynex.fi",
     "chains": [
       "linea"
@@ -72,11 +72,74 @@
     "relationship_narrative": "Both families share a common veNFT and reward infrastructure (veNFTAPIV2, RewardAPIV2, EpochController) that governs incentives and voting across versions. The V2 family extends V1 with additional API and proxy contracts, while V1 relies on a simpler PairAPI for data access.",
     "product_family_count": 2
   },
+  "surface_sufficiency": {
+    "unique_implementations": 45,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
+  },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x3cb104f044db23d6513f2a6100a1997fa5e3f587",
+      "name": "AlgebraPool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "algebra",
+      "product_line": null,
+      "tvl_usd": 261966.23583478233,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AlgebraPool",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x3cb104f044db23d6513f2a6100a1997fa5e3f587",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 29173.948268879736,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x6e9ad0b8a41e2c148e7b0385d3ecbfdb8a216a9b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 125906.68380999999,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x8e80016b025c89a6a270b399f5ebfb734be58ada",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 45121.96648542634,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe24b4a292ba102a9b7b7f9de20718d7ba45ddb29",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 61763.6372704763,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 59144,
       "chain_name": "linea",
@@ -231,6 +294,68 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
+      "address": "0x622b2c98123d303ae067db4925cd6282b3a08d0f",
+      "name": "AlgebraFactory",
+      "role": "registry",
+      "origin_kind": "upstream",
+      "origin_provider": "algebra",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AlgebraFactory",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x622b2c98123d303ae067db4925cd6282b3a08d0f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x9a89490f1056a7bc607ec53f93b921fe666a2c48",
+      "name": "AlgebraPoolDeployer",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "algebra",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AlgebraPoolDeployer",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x9a89490f1056a7bc607ec53f93b921fe666a2c48",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
       "address": "0x5b8865829b2063ffbe453f9a7d8efbc14c1566dd",
       "name": "BatchAuction",
       "role": "periphery",
@@ -257,7 +382,38 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xca79b73d967c948864058642eb736de541b325b0",
+      "name": "BribeFactoryV4",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7c9b618fafbcf43c2486f3c1ed5330c87788689c",
+      "impl_name": "BribeFactoryV4",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xca79b73d967c948864058642eb736de541b325b0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 59144,
@@ -338,6 +494,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "review"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xfa638ee72312adf564195c2ae415ec943945c469",
+      "name": "DistributeFees",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf7fff84426ba183e0a18becddecc31339f8454ad",
+      "impl_name": "DistributeFees",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xfa638ee72312adf564195c2ae415ec943945c469",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 59144,
@@ -450,6 +637,15 @@
         {
           "chain_id": 59144,
           "chain_name": "linea",
+          "address": "0xd8a57006f464d1aaeeb450754489c66f29f8a9b9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
           "address": "0xf1e2e55ec87e99fee0a86a662bfa6a662693136c",
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -463,6 +659,68 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xb94404c0fdebda8d14fc147f8787a35feb41948e",
+      "name": "GaugeFactoryV2",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x8418f2b6c428a4e4b6408e4eb5148fdb7c1454b6",
+      "impl_name": "GaugeFactoryV2",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xb94404c0fdebda8d14fc147f8787a35feb41948e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xc04d35a1f8881b061bbdae148c91cfa78a2783ee",
+      "name": "GaugeFactoryV2_CL",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7b555a3ed56af0411cd7fdafc909f4082aee1f2e",
+      "impl_name": "GaugeFactoryV2_CL",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc04d35a1f8881b061bbdae148c91cfa78a2783ee",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 59144,
@@ -769,6 +1027,37 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
+      "address": "0x9030ae4d0997658de58d274f79d3074b1beb19d4",
+      "name": "MinterUpgradeableV2",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa996de4c5c59be045cd272faed1d284494903826",
+      "impl_name": "MinterUpgradeableV2",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x9030ae4d0997658de58d274f79d3074b1beb19d4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
       "address": "0xc535ee7f17ccd18f8cab0f8c275111497c5ffd8c",
       "name": "MultiSender",
       "role": "unknown",
@@ -796,6 +1085,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "review"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x5d3d9e20ad27dd61182505230d1bd075bd249e4b",
+      "name": "NonfungiblePositionManager",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "algebra",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x5d3d9e20ad27dd61182505230d1bd075bd249e4b",
+      "impl_name": "NonfungiblePositionManager",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x5d3d9e20ad27dd61182505230d1bd075bd249e4b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 59144,
@@ -1282,6 +1602,68 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
+      "address": "0x851d97fd7823e44193d227682e32234ef8cac83e",
+      "name": "Quoter",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Quoter",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x851d97fd7823e44193d227682e32234ef8cac83e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xce829655b864e56fc34b783874cf9590053a0640",
+      "name": "QuoterV2",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "QuoterV2",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xce829655b864e56fc34b783874cf9590053a0640",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
       "address": "0x1f43bd7cc8a20b2086f62eed6d8bfa0c948965e4",
       "name": "RewardAPIV2",
       "role": "unknown",
@@ -1358,6 +1740,37 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
+      "address": "0x2222c569387b2a98fe1a9350f2cacde918910ee4",
+      "name": "RewardsDistributorV2",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RewardsDistributorV2",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x2222c569387b2a98fe1a9350f2cacde918910ee4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
       "address": "0x610d2f07b7edc67565160f587f37636194c34e74",
       "name": "RouterV2",
       "role": "adapter",
@@ -1394,6 +1807,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x3921e8cb45b17fc029a0a6de958330ca4e583390",
+      "name": "SwapRouter",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SwapRouter",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x3921e8cb45b17fc029a0a6de958330ca4e583390",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 59144,
@@ -1501,6 +1945,68 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x0b2c83b6e39e32f694a86633b4d1fe69d13b63c5",
+      "name": "VoterV5",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x286200bb331d736ac141115cb7970c60a9bcec23",
+      "impl_name": "VoterV5",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x0b2c83b6e39e32f694a86633b4d1fe69d13b63c5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x8d95f56b0bac46e8ac1d3a3f12fb1e5bc39b4c0c",
+      "name": "VotingEscrowV2Upgradeable",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xee617555d081515ca6c340e7b0db0ef6b332fd8b",
+      "impl_name": "VotingEscrowV2Upgradeable",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x8d95f56b0bac46e8ac1d3a3f12fb1e5bc39b4c0c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [],
@@ -1749,6 +2255,36 @@
     {
       "chain_id": 59144,
       "chain_name": "linea",
+      "address": "0x851d97fd7823e44193d227682e32234ef8cac83e",
+      "name": "Quoter",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xce829655b864e56fc34b783874cf9590053a0640",
+      "name": "QuoterV2",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x2222c569387b2a98fe1a9350f2cacde918910ee4",
+      "name": "RewardsDistributorV2",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
       "address": "0x610d2f07b7edc67565160f587f37636194c34e74",
       "name": "RouterV2",
       "role": "adapter",
@@ -1768,9 +2304,9 @@
     }
   ],
   "origin_summary": {
-    "native": 27,
-    "upstream": 0,
-    "standard_library": 3,
+    "native": 30,
+    "upstream": 5,
+    "standard_library": 10,
     "needs_review": 0
   },
   "scope_matching_notes": {

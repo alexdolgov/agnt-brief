@@ -7,11 +7,11 @@
 - Project: Boba Bridge (`boba-bridge`)
 - Website: [https://gateway.boba.network](https://gateway.boba.network)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T07:36:00.171Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-13T19:47:47.226Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-a865
 - Chains: ethereum
-- Contract surface: 53 unique implementations (102 raw deployments)
-- DeFi Llama TVL: $3,039,252.86
+- Contract surface: 57 unique implementations (109 raw deployments)
+- DeFi Llama TVL: $2,793,404.86
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -25,12 +25,12 @@ The bridge family relies on shared infrastructure contracts like SystemConfig an
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/41 (0.0%)
-- Verified + Unaudited implementations: 41
+- Verified implementations audited: 0/45 (0.0%)
+- Verified + Unaudited implementations: 45
 - Verified by bytecode match: 0
 - Unverified implementations: 12
-- Unique implementations: 53
-- Raw deployments: 102
+- Unique implementations: 57
+- Raw deployments: 109
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -49,7 +49,7 @@ The bridge family relies on shared infrastructure contracts like SystemConfig an
 
 - None
 
-### ⚠️ Verified + Unaudited (41)
+### ⚠️ Verified + Unaudited (45)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -57,10 +57,13 @@ The bridge family relies on shared infrastructure contracts like SystemConfig an
 | BondManager | governance | ethereum | [`0x60660e...65b627`](./contracts/ethereum-1/0x60660e6cdeb423cf847dd11de4c473130d65b627/) | ⚠️ Unaudited |
 | CanonicalTransactionChain | unknown | ethereum | [`0xfbd254...04c3db`](./contracts/ethereum-1/0xfbd2541e316948b259264c02f370ed088e04c3db/) | ⚠️ Unaudited |
 | ChainStorageContainer | unknown | ethereum | 3 deployments: ethereum [`0x13992b...e87d93`](./contracts/ethereum-1/0x13992b9f327faca11568be18a8ad3e9747e87d93/); ethereum `0x171482...691231`; ethereum `0x5f0030...eccd8d` | ⚠️ Unaudited |
+| DelayedWETH | token | ethereum | [`0x7e021d...6638a6`](./contracts/ethereum-1/0x7e021d19c9949109919dcb522df6baec1d6638a6/) | ⚠️ Unaudited |
+| DisputeGameFactory | registry | ethereum | [`0xf45a5f...6af852`](./contracts/ethereum-1/0xf45a5f1e36fcea3cc830a98c6c3c5cea7d6af852/) | ⚠️ Unaudited |
 | EthBridge | operational_periphery | ethereum | 12 deployments: ethereum [`0x05273e...b21b45`](./contracts/ethereum-1/0x05273ee930a8ef516c4f79014bfa2ad5ecb21b45/); ethereum `0x1a36e2...e03e55`; ethereum `0x51c3db...e27f3f`; ethereum `0x5d7824...59040f`; ethereum `0x648276...5400de`; ethereum `0x6f5378...da2f41`; ethereum `0x76b822...207d72`; ethereum `0x79c7c8...60e32c`; ethereum `0x9dd420...434e7e`; ethereum `0xb0003e...38c490`; ethereum `0xbe6817...a67485`; ethereum `0xd5c567...ed939e` | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | [`0x56121a...5b9bc4`](./contracts/ethereum-1/0x56121a8612474c3eb65d69a3b871f284705b9bc4/) | ⚠️ Unaudited |
 | L1CrossDomainMessenger | unknown | ethereum | 3 deployments: ethereum [`0x12acf6...e47820`](./contracts/ethereum-1/0x12acf6e3ca96a60fba0bbfd14d2fe0eb6ae47820/); ethereum `0x3b4859...b1b077`; ethereum `0x6d4528...dff69e` | ⚠️ Unaudited |
 | L1CrossDomainMessengerFast | unknown | ethereum | 2 deployments: ethereum [`0x329996...1c7c8c`](./contracts/ethereum-1/0x329996d52cdbc617492428680a7a892e8f1c7c8c/); ethereum `0x4cd194...460996` | ⚠️ Unaudited |
-| L1ERC1155Bridge | operational_periphery | ethereum | [`0x72c455...49c8ce`](./contracts/ethereum-1/0x72c455c20ef23cce31f47e636bf67a9b8749c8ce/) | ⚠️ Unaudited |
+| L1ERC1155Bridge | operational_periphery | ethereum | 2 deployments: ethereum [`0x1df391...a550cb`](./contracts/ethereum-1/0x1df39152ac0e81ab100341cacc4de4c372a550cb/); ethereum `0x72c455...49c8ce` | ⚠️ Unaudited |
 | L1ERC721Bridge | operational_periphery | ethereum | 2 deployments: ethereum [`0x999481...db9318`](./contracts/ethereum-1/0x99948157f4702b3ee9de4290c3dcdf2622db9318/); ethereum `0xa6ad22...8bf87e` | ⚠️ Unaudited |
 | L1LiquidityPool | core_logic | ethereum | 10 deployments: ethereum [`0x1a26ef...361a14`](./contracts/ethereum-1/0x1a26ef6575b7bbb864d984d9255c069f6c361a14/); ethereum `0x2b4c53...46e92c`; ethereum `0x3256bd...3f7879`; ethereum `0x3d95be...13ec25`; ethereum `0x87b6c8...fd541c`; ethereum `0x9dadbc...468da6`; ethereum `0x9eace4...c2ced7`; ethereum `0xd24484...d53cb1`; ethereum `0xec99d7...9b2813`; ethereum `0xecb03b...6f97a0` | ⚠️ Unaudited |
 | L1MultiMessageRelayer | unknown | ethereum | [`0x5fd2cf...a0070b`](./contracts/ethereum-1/0x5fd2cf99586b9d92f56cbad0a3ea4df256a0070b/) | ⚠️ Unaudited |
@@ -70,6 +73,7 @@ The bridge family relies on shared infrastructure contracts like SystemConfig an
 | L2OutputOracle | operational_periphery | ethereum | 2 deployments: ethereum [`0x31f395...517017`](./contracts/ethereum-1/0x31f395dd26430a8cbfa530e31b46aaf7ad517017/); ethereum `0xbb7ad3...068741` | ⚠️ Unaudited |
 | Lib_AddressManager | governance | ethereum | [`0x8376ac...02f089`](./contracts/ethereum-1/0x8376ac6c3f73a25dd994e0b0669ca7ee0c02f089/) | ⚠️ Unaudited |
 | Lib_ResolvedDelegateProxy | unknown | ethereum | 2 deployments: ethereum [`0x841979...b495c1`](./contracts/ethereum-1/0x841979bbc06be7bfe28d9faddac1a73e1fb495c1/); ethereum `0xc891f4...d5b088` | ⚠️ Unaudited |
+| LightBridge | operational_periphery | ethereum | 2 deployments: ethereum [`0x2de73b...113801`](./contracts/ethereum-1/0x2de73bd1660fbf4d521a52ec2a91ccc106113801/); ethereum `0x3f7da9...cfd6b9` | ⚠️ Unaudited |
 | mockOVM_BondManager | governance | ethereum | [`0xa4f8cd...29ec27`](./contracts/ethereum-1/0xa4f8cd56c14fcec655cfddb2cebd9f1e9329ec27/) | ⚠️ Unaudited |
 | OptimismMintableERC20Factory | registry | ethereum | 2 deployments: ethereum [`0x4d898f...81f0c3`](./contracts/ethereum-1/0x4d898f66327fa050131a17ed17a39ebecc81f0c3/); ethereum `0xd080a3...0f15b2` | ⚠️ Unaudited |
 | OptimismPortal | unknown | ethereum | [`0xd80562...261826`](./contracts/ethereum-1/0xd8056243180c4b56a7d2ccd5df9c2696e1261826/) | ⚠️ Unaudited |
@@ -92,7 +96,7 @@ The bridge family relies on shared infrastructure contracts like SystemConfig an
 | ProxyAdmin | governance | ethereum | [`0x6e598c...49a0dc`](./contracts/ethereum-1/0x6e598cec2701ffaa3c06175dc3af0317a749a0dc/) | ⚠️ Unaudited |
 | StateCommitmentChain | unknown | ethereum | [`0xde7355...d441ec`](./contracts/ethereum-1/0xde7355c971a5b733fe2133753abd7e5441d441ec/) | ⚠️ Unaudited |
 | SuperchainConfig | governance | ethereum | 2 deployments: ethereum [`0x996ffd...77c076`](./contracts/ethereum-1/0x996ffd627901f10c80a7d4b72a12316d2e77c076/); ethereum `0xe4e0f7...30270f` | ⚠️ Unaudited |
-| SystemConfig | governance | ethereum | 2 deployments: ethereum [`0x158fd5...9b59eb`](./contracts/ethereum-1/0x158fd5715f16ac1f2dc959a299b383aaaf9b59eb/); ethereum `0xfae274...866f4a` | ⚠️ Unaudited |
+| SystemConfig | governance | ethereum | 3 deployments: ethereum [`0x158fd5...9b59eb`](./contracts/ethereum-1/0x158fd5715f16ac1f2dc959a299b383aaaf9b59eb/); ethereum `0xb52f8f...3b50a9`; ethereum `0xfae274...866f4a` | ⚠️ Unaudited |
 | SystemDictator | unknown | ethereum | 2 deployments: ethereum [`0x010dd8...2e1716`](./contracts/ethereum-1/0x010dd8f3f734b56adc28db0fea7daa2c752e1716/); ethereum `0xe8fb8e...dab64c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -144,7 +148,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x05273e...b21b45`](./contracts/ethereum-1/0x05273ee930a8ef516c4f79014bfa2ad5ecb21b45/) | EthBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x12acf6...e47820`](./contracts/ethereum-1/0x12acf6e3ca96a60fba0bbfd14d2fe0eb6ae47820/) | L1CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x329996...1c7c8c`](./contracts/ethereum-1/0x329996d52cdbc617492428680a7a892e8f1c7c8c/) | L1CrossDomainMessengerFast | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x72c455...49c8ce`](./contracts/ethereum-1/0x72c455c20ef23cce31f47e636bf67a9b8749c8ce/) | L1ERC1155Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1df391...a550cb`](./contracts/ethereum-1/0x1df39152ac0e81ab100341cacc4de4c372a550cb/) | L1ERC1155Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x999481...db9318`](./contracts/ethereum-1/0x99948157f4702b3ee9de4290c3dcdf2622db9318/) | L1ERC721Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1a26ef...361a14`](./contracts/ethereum-1/0x1a26ef6575b7bbb864d984d9255c069f6c361a14/) | L1LiquidityPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5fd2cf...a0070b`](./contracts/ethereum-1/0x5fd2cf99586b9d92f56cbad0a3ea4df256a0070b/) | L1MultiMessageRelayer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -154,6 +158,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x31f395...517017`](./contracts/ethereum-1/0x31f395dd26430a8cbfa530e31b46aaf7ad517017/) | L2OutputOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8376ac...02f089`](./contracts/ethereum-1/0x8376ac6c3f73a25dd994e0b0669ca7ee0c02f089/) | Lib_AddressManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x841979...b495c1`](./contracts/ethereum-1/0x841979bbc06be7bfe28d9faddac1a73e1fb495c1/) | Lib_ResolvedDelegateProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2de73b...113801`](./contracts/ethereum-1/0x2de73bd1660fbf4d521a52ec2a91ccc106113801/) | LightBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa4f8cd...29ec27`](./contracts/ethereum-1/0xa4f8cd56c14fcec655cfddb2cebd9f1e9329ec27/) | mockOVM_BondManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd80562...261826`](./contracts/ethereum-1/0xd8056243180c4b56a7d2ccd5df9c2696e1261826/) | OptimismPortal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4b5d9e...c272f2`](./contracts/ethereum-1/0x4b5d9e5a6b1a514eba15a2f949531dccd7c272f2/) | OVM_CanonicalTransactionChain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -176,10 +181,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 41 |
+| native | 38 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 11 |
+| standard_library | 2 |
+| needs_review | 17 |
 
 ## Scope Matching Notes
 

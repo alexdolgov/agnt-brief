@@ -1,6 +1,6 @@
 # fiamma — Contract Index
 
-33 unique implementations across 4 chains · 78 deployments · 0 audited · 12 unaudited · 21 unverified
+33 unique implementations across 8 chains · 82 deployments · 2 audited · 10 unaudited · 21 unverified
 
 ## adapter (1)
 
@@ -20,7 +20,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BitVMBridgeV3](./ethereum-1/0x756bcceeda5737238a5b00915e638dca23618a3e/) | ethereum | [`0x756bcc...618a3e`](./ethereum-1/0x756bcceeda5737238a5b00915e638dca23618a3e/) | ⚠️ Unaudited | Verified |
-| [BitVMBridgeV4 (10 deployments)](./sei-1329/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/) | sei | 10 deployments: ethereum `0x19438c...13207c`; ethereum `0x53a662...50f555`; ethereum `0xafb253...027524`; ethereum `0xeaec99...ed1c53`; bsc `0x9b7764...643d17`; bsc `0xcc30d3...ec83c0`; hyperliquid `0x62c737...81b939`; hyperliquid `0x7f16fd...9e96fe`; hyperliquid `0xb93752...58ecf3`; sei [`0x0ceda1...0b1e86`](./sei-1329/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/) | ⚠️ Unaudited | Verified |
+| [BitVMBridgeV4 (14 deployments)](./sei-1329/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/) | sei | 14 deployments: ethereum `0x19438c...13207c`; ethereum `0x53a662...50f555`; ethereum `0xafb253...027524`; ethereum `0xeaec99...ed1c53`; bsc `0x9b7764...643d17`; bsc `0xcc30d3...ec83c0`; unichain `0xcfa380...25e1f7`; polygon `0xcfa380...25e1f7`; hyperliquid `0x62c737...81b939`; hyperliquid `0x7f16fd...9e96fe`; hyperliquid `0xb93752...58ecf3`; sei [`0x0ceda1...0b1e86`](./sei-1329/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/); base `0xcfa380...25e1f7`; arbitrum `0xcfa380...25e1f7` | ⚠️ Unaudited | Verified |
 
 ## periphery (1)
 
@@ -39,11 +39,11 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [BtcMirror (3 deployments)](./bsc-56/0x5dca1687804b50ecf0b2fa69fcba7f416705483b/) | bsc | 3 deployments: bsc [`0x5dca16...05483b`](./bsc-56/0x5dca1687804b50ecf0b2fa69fcba7f416705483b/); hyperliquid `0x60c230...7b061f`; hyperliquid `0x7427f3...0f9430` | ⚠️ Unaudited | Verified |
+| [BtcMirror (3 deployments)](./bsc-56/0x5dca1687804b50ecf0b2fa69fcba7f416705483b/) | bsc | 3 deployments: bsc [`0x5dca16...05483b`](./bsc-56/0x5dca1687804b50ecf0b2fa69fcba7f416705483b/); hyperliquid `0x60c230...7b061f`; hyperliquid `0x7427f3...0f9430` | ✅ Audited | Verified |
 | [BtcPeg](./ethereum-1/0x5dca1687804b50ecf0b2fa69fcba7f416705483b/) | ethereum | [`0x5dca16...05483b`](./ethereum-1/0x5dca1687804b50ecf0b2fa69fcba7f416705483b/) | ⚠️ Unaudited | Verified |
 | [BtcPegUpgradeable (4 deployments)](./ethereum-1/0x63ec0656ce47061d2b811050d0bcff8a7f59d45f/) | ethereum | 4 deployments: ethereum [`0x63ec06...59d45f`](./ethereum-1/0x63ec0656ce47061d2b811050d0bcff8a7f59d45f/); bsc `0x756bcc...618a3e`; hyperliquid `0xafb253...027524`; sei `0x7427f3...0f9430` | ⚠️ Unaudited | Verified |
 | [DataVerificationHub (2 deployments)](./ethereum-1/0x2d27933f65f039c6b5763150f4cd24842bcd9b68/) | ethereum | 2 deployments: ethereum [`0x2d2793...cd9b68`](./ethereum-1/0x2d27933f65f039c6b5763150f4cd24842bcd9b68/); ethereum `0x328c96...1c5865` | ⚠️ Unaudited | Verified |
-| [FiaBTC (7 deployments)](./hyperliquid-999/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/) | hyperliquid | 7 deployments: ethereum `0x22f0e0...3f0e08`; ethereum `0x730162...35d073`; ethereum `0xe398f7...02edae`; bsc `0x6f2c9c...62fb18`; hyperliquid [`0x0ceda1...0b1e86`](./hyperliquid-999/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/); hyperliquid `0xf78dcf...4cc9a2`; sei `0x8388dc...fa3672` | ⚠️ Unaudited | Verified |
+| [FiaBTC (7 deployments)](./hyperliquid-999/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/) | hyperliquid | 7 deployments: ethereum `0x22f0e0...3f0e08`; ethereum `0x730162...35d073`; ethereum `0xe398f7...02edae`; bsc `0x6f2c9c...62fb18`; hyperliquid [`0x0ceda1...0b1e86`](./hyperliquid-999/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/); hyperliquid `0xf78dcf...4cc9a2`; sei `0x8388dc...fa3672` | ✅ Audited | Verified |
 | UnnamedContract | ethereum | `0x34bee5...624a69` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x4d086f...3ddaf2` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x603619...2917e4` | ❓ Unverified | Unverified |

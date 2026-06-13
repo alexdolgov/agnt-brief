@@ -1,0 +1,18 @@
+{
+  "address": "0x1196f688c585d3e5c895ef8954ffb0dcdafc566a",
+  "chain_id": 1,
+  "contract_name": "Escrow",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "AGPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T19:51:34.063Z"
+}

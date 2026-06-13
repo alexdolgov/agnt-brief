@@ -178,7 +178,7 @@
 | [bmx](./bmx/) | $316.4K | 0.0% | $316.4K | declining | 0 | 187 | 2026-06-13 |
 | [bnpl-pay](./bnpl-pay/) | $23.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bob-bridge](./bob-bridge/) | $202.9K | 2.6% | $202.9K | active | 9 | 41 | 2026-06-10 |
-| [boba-bridge](./boba-bridge/) | $3.0M | 0.0% | ? | declining | 0 | 53 | 2026-05-31 |
+| [boba-bridge](./boba-bridge/) | $2.8M | 0.0% | ? | declining | 0 | 57 | 2026-06-13 |
 | [bondappetit](./bondappetit/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bondlink-finance](./bondlink-finance/) | $152.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [boneswap](./boneswap/) | $1.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -415,7 +415,7 @@
 | [farm-hero](./farm-hero/) | $5.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [feather](./feather/) | $15.9M | 0.0% | ? | active | 0 | 10 | 2026-06-12 |
 | [ferro](./ferro/) | $4.9M | 0.0% | ? | declining | 0 | 21 | 2026-06-13 |
-| [fiamma](./fiamma/) | $1.2M | 0.0% | ? | active | 3 | 33 | 2026-06-11 |
+| [fiamma](./fiamma/) | $1.2M | 16.7% | ? | active | 3 | 33 | 2026-06-13 |
 | [filfi](./filfi/) | $121.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [firebird](./firebird/) | $17.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [firebot](./firebot/) | $3.7M | 4.8% | $3.7M | unknown | 2 | 29 | 2026-06-10 |
@@ -687,7 +687,7 @@
 | [lumenswap](./lumenswap/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [lumin-finance](./lumin-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-06-11 |
-| [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-31 |
+| [lynex](./lynex/) | $262.0K | 0.0% | $262.0K | declining | 0 | 45 | 2026-06-13 |
 | [magik-finance](./magik-finance/) | $3.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [magma-finance-almm](./magma-finance-almm/) | $1.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [magma-staking](./magma-staking/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
@@ -1227,7 +1227,7 @@
 | [tensorplex](./tensorplex/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-05-31 |
 | [tg-casino](./tg-casino/) | $13.4M | 6.7% | ? | active | 761 | 15 | 2026-06-11 |
 | [thaw](./thaw/) | $7.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [the-arena](./the-arena/) | $7.8M | 0.0% | $7.8M | active | 0 | 119 | 2026-06-11 |
+| [the-arena](./the-arena/) | $7.8M | 0.0% | $7.8M | active | 0 | 121 | 2026-06-13 |
 | [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 17 | 2026-06-11 |
 | [the-parallel](./the-parallel/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [the-story-of-draco](./the-story-of-draco/) | $7.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1285,7 +1285,7 @@
 | [umee](./umee/) | $2.5M | 0.0% | ? | declining | 7 | 1 | 2026-06-11 |
 | [unchain-x](./unchain-x/) | $35.1M | 9.1% | ? | active | 2 | 12 | 2026-06-12 |
 | [unclesam-protocol](./unclesam-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [unichain-bridge](./unichain-bridge/) | $2.8M | 0.0% | ? | active | 0 | 15 | 2026-06-11 |
+| [unichain-bridge](./unichain-bridge/) | $44.3 | 0.0% | $44.3 | active | 0 | 39 | 2026-06-13 |
 | [unicly](./unicly/) | $370.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [unitas](./unitas/) | $47.8M | 100.0% | ? | active | 5 | 9 | 2026-06-11 |
 | [unite-finance](./unite-finance/) | $281.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

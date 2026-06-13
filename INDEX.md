@@ -58,6 +58,8 @@
 | [apechain-bridge](./apechain-bridge/) | $138.2M | 0.0% | $138.2M | declining | 0 | 19 | 2026-06-12 |
 | [apex-protocol](./apex-protocol/) | $436.5K | 0.0% | $436.5K | active | 1 | 210 | 2026-06-12 |
 | [api3](./api3/) | $55.2M | 21.4% | $55.2M | active | 6 | 28 | 2026-06-10 |
+| [aqua-protocol](./aqua-protocol/) | $112.3 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [aquabank](./aquabank/) | $850.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 59 | 2026-06-12 |
 | [arcade.xyz](./arcade.xyz/) | $240.1K | 67.4% | ? | declining | 10 | 60 | 2026-06-10 |
 | [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-06-10 |
@@ -72,6 +74,7 @@
 | [atlendis](./atlendis/) | $4.3M | 14.3% | $4.3M | active | 2 | 43 | 2026-06-11 |
 | [augur](./augur/) | $1.7M | 64.1% | ? | active | 7 | 39 | 2026-06-10 |
 | [aura](./aura/) | $107.0M | 19.4% | $68.2M | active | 18 | 497 | 2026-06-10 |
+| [aurigami](./aurigami/) | $819.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [aurora-plus](./aurora-plus/) | $2.3M | 33.3% | ? | active | 3 | 31 | 2026-06-10 |
 | [autofarm](./autofarm/) | $5.6M | 0.0% | ? | declining | 1 | 17 | 2026-06-13 |
 | [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 8 | 570 | 2026-06-12 |
@@ -105,9 +108,11 @@
 | [bifrost-liquid-staking](./bifrost-liquid-staking/) | $16.7M | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [bigone](./bigone/) | $35.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [bima-cdp](./bima-cdp/) | $5.3M | 51.6% | ? | active | 3 | 37 | 2026-06-10 |
+| [binance-staked-sol](./binance-staked-sol/) | $725.8M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [binaryx-platform](./binaryx-platform/) | $8.7M | 0.0% | ? | active | 3 | 133 | 2026-06-13 |
 | [bio-protocol](./bio-protocol/) | $143.8M | 10.0% | $139.6M | active | 6 | 41 | 2026-06-10 |
 | [biswap](./biswap/) | $609.3K | 0.0% | $609.3K | declining | 1 | 92 | 2026-06-13 |
+| [bitchill](./bitchill/) | $19.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bitlo](./bitlo/) | $16.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [bitomato](./bitomato/) | $2.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [bitu-protocol](./bitu-protocol/) | $22.3M | 75.0% | ? | active | 2 | 4 | 2026-06-10 |

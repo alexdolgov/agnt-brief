@@ -402,6 +402,8 @@ Each project directory contains:
 | [antarctic](./antarctic/brief.md) | $9.96M | arbitrum | 11 | 8/11 (73%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [anvil](./anvil/brief.md) | $17.52M | ethereum | 3 | 3/3 (100%) | 100.0% | 100.0% (OpenZeppelin, Trail of Bits) | 3 | fresh | ⚠️ declining | - |
 | [ao-bridge](./ao-bridge/brief.md) | $43.01M | ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [aqua-protocol](./aqua-protocol/brief.md) | $112.27 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [aquabank](./aquabank/brief.md) | $850.20K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [arcade.xyz](./arcade.xyz/brief.md) | $5.12M | ethereum | 60 | 43/60 (72%) | 67.4% | 30.2% (Trail of Bits) | 10 | stale | ⚠️ declining | - |
 | [arcadia-finance](./arcadia-finance/brief.md) | $7.21M | base, optimism, unichain | 55 | 52/55 (95%) | 63.5% | 53.8% (Sherlock) | 12 | fresh | ✅ active | - |
 | [arche](./arche/brief.md) | $2.32K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
@@ -410,6 +412,7 @@ Each project directory contains:
 | [asseto-aoabt](./asseto-aoabt/brief.md) | $24.28M | avalanche | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [asseto-cash+](./asseto-cash+/brief.md) | $1.40M | ethereum | 2 | 1/2 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [augur](./augur/brief.md) | $1.67M | ethereum | 39 | 39/39 (100%) | 64.1% | 15.4% (ChainSecurity) | 4 | stale | ✅ active | - |
+| [aurigami](./aurigami/brief.md) | $819.01K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [aurora-plus](./aurora-plus/brief.md) | $2.27M | aurora | 31 | 3/31 (10%) | 33.3% | 0.0% (-) | 2 | stale | ✅ active | - |
 | [autofarm](./autofarm/brief.md) | $5.60M | 14 | 17 | 9/17 (53%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [avalaunch](./avalaunch/brief.md) | $6.84M | avalanche | 38 | 13/38 (34%) | 84.6% | 0.0% (-) | 13 | stale | ✅ active | - |
@@ -427,7 +430,9 @@ Each project directory contains:
 | [bifrost-liquid-staking](./bifrost-liquid-staking/brief.md) | $16.70M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [bigone](./bigone/brief.md) | $35.10M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [bima-cdp](./bima-cdp/brief.md) | $5.32M | bsc, ethereum, sonic | 37 | 29/37 (78%) | 51.6% | 51.6% (Cyfrin, Spearbit) | 3 | aging | ✅ active | - |
+| [binance-staked-sol](./binance-staked-sol/brief.md) | $725.81M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [binaryx-platform](./binaryx-platform/brief.md) | $8.65M | polygon | 133 | 25/133 (19%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
+| [bitchill](./bitchill/brief.md) | $19.17K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [bitlo](./bitlo/brief.md) | $16.66M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [bitomato](./bitomato/brief.md) | $2.60M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [bitu-protocol](./bitu-protocol/brief.md) | $22.27M | bsc | 4 | 4/4 (100%) | 75.0% | 75.0% (SlowMist) | 2 | stale | ✅ active | - |
@@ -887,5 +892,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T11:19:55.297Z_
-_Projects: 875_
+_Generated: 2026-06-13T11:22:26.663Z_
+_Projects: 880_

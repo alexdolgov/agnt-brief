@@ -815,9 +815,11 @@ Each project directory contains:
 | [puzzleswaporg](./puzzleswaporg/brief.md) | $1.38M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [pv01](./pv01/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [pyron](./pyron/brief.md) | $2.12M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [q-borrowing](./q-borrowing/brief.md) | $6.57K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [qidao](./qidao/brief.md) | $2.64M | 20 | 298 | 0/298 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [qubit](./qubit/brief.md) | $14.75K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [quipuswap](./quipuswap/brief.md) | $454.89K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [quoll](./quoll/brief.md) | $18.29K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [rage-trade-v1](./rage-trade-v1/brief.md) | $5.99 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [railgun](./railgun/brief.md) | $312.54M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [rain](./rain/brief.md) | $26.14M | arbitrum | 29 | 28/29 (97%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
@@ -825,10 +827,13 @@ Each project directory contains:
 | [rank-trading](./rank-trading/brief.md) | $2.33M | bsc | 13 | 10/13 (77%) | 30.0% | 0.0% (-) | 1 | aging | ✅ active | - |
 | [reddex](./reddex/brief.md) | $4.76M | bsc, ethereum | 5 | 4/5 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [reflexer](./reflexer/brief.md) | $2.32M | ethereum | 64 | 22/64 (34%) | 40.9% | 0.0% (-) | 3 | stale | ⚠️ declining | - |
+| [rehold](./rehold/brief.md) | $11.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [revault](./revault/brief.md) | $1.96M | bsc | 75 | 20/75 (27%) | 45.0% | 0.0% (-) | 1 | stale | ⚠️ declining | - |
 | [rex-staking](./rex-staking/brief.md) | $2.01M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [rhea-finance](./rhea-finance/brief.md) | $207.97M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [rheo](./rheo/brief.md) | $33.31K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [rho](./rho/brief.md) | $2.47M | ethereum | 31 | 1/31 (3%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
+| [ringfi](./ringfi/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [risex](./risex/brief.md) | $4.29M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [rocifi](./rocifi/brief.md) | $46.45K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [ronin-bridge](./ronin-bridge/brief.md) | $4.55M | ethereum | 11 | 5/11 (45%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
@@ -966,5 +971,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T11:57:06.513Z_
-_Projects: 954_
+_Generated: 2026-06-13T11:59:28.214Z_
+_Projects: 959_

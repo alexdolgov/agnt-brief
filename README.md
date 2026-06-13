@@ -496,6 +496,7 @@ Each project directory contains:
 | [dexioprotocol](./dexioprotocol/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [dexlyn-labs](./dexlyn-labs/brief.md) | $80.39K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [dflow](./dflow/brief.md) | $1.49M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [dipcoin](./dipcoin/brief.md) | $4.40M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [dnax](./dnax/brief.md) | $3.54M | bsc | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [dolomite](./dolomite/brief.md) | $664.24M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [domination-finance](./domination-finance/brief.md) | $1.27M | 4 | 30 | 20/30 (67%) | 75.0% | 0.0% (-) | 1 | fresh | ✅ active | - |
@@ -503,12 +504,15 @@ Each project directory contains:
 | [drift](./drift/brief.md) | $187.88M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [dxsale](./dxsale/brief.md) | $17.94M | 12 | 358 | 8/358 (2%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [dyorswap](./dyorswap/brief.md) | $2.24M | 7 | 93 | 5/93 (5%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [dyson-finance](./dyson-finance/brief.md) | $80.63K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [egas-swap](./egas-swap/brief.md) | $18.60M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [elfi-protocol](./elfi-protocol/brief.md) | $3.44M | arbitrum, base | 2406 | 88/2406 (4%) | 29.5% | 29.5% (Sherlock) | 1 | aging | ⚠️ declining | - |
 | [endur](./endur/brief.md) | $9.42M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
+| [enjoyoors](./enjoyoors/brief.md) | $11.26K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [enosys](./enosys/brief.md) | $17.16M | ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [ensuro](./ensuro/brief.md) | $490.64K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [equilibre](./equilibre/brief.md) | $6.90M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [equito-finance](./equito-finance/brief.md) | $7.95 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [ethereal-dex](./ethereal-dex/brief.md) | $30.72M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [etherex](./etherex/brief.md) | $1.36M | linea | 58 | 45/58 (78%) | 36.2% | 36.2% (Spearbit) | 1 | fresh | ⚠️ declining | - |
 | [etherflip](./etherflip/brief.md) | $1.58M | ethereum | 7 | 6/7 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -838,5 +842,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T10:58:25.974Z_
-_Projects: 826_
+_Generated: 2026-06-13T10:59:43.671Z_
+_Projects: 830_

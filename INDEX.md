@@ -212,6 +212,7 @@
 | [dflow](./dflow/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [dforce](./dforce/) | $3.6M | 36.3% | $1.2M | declining | 4 | 453 | 2026-06-12 |
 | [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | declining | 4 | 71 | 2026-06-10 |
+| [dipcoin](./dipcoin/) | $4.4M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [dnax](./dnax/) | $3.5M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
 | [dodo](./dodo/) | $19.1M | 0.0% | $19.1M | declining | 1 | 559 | 2026-06-12 |
 | [dolomite](./dolomite/) | $664.2M | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
@@ -222,6 +223,7 @@
 | [dtrinity](./dtrinity/) | $1.8M | 0.0% | $1.8M | active | 5 | 209 | 2026-06-11 |
 | [dxsale](./dxsale/) | $17.9M | 0.0% | ? | active | 1 | 358 | 2026-06-12 |
 | [dyorswap](./dyorswap/) | $2.2M | 0.0% | ? | active | 0 | 93 | 2026-06-10 |
+| [dyson-finance](./dyson-finance/) | $80.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [easedefi.org](./easedefi.org/) | $1.5M | 0.0% | $1.5M | active | 1 | 9 | 2026-06-12 |
 | [egas-swap](./egas-swap/) | $18.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [ekubo](./ekubo/) | $5.6M | 44.4% | $5.6M | active | 5 | 15 | 2026-06-10 |
@@ -230,11 +232,13 @@
 | [ellipsis-finance](./ellipsis-finance/) | $59.0K | 29.4% | $9.0K | dead | 3 | 22 | 2026-06-11 |
 | [elyfi](./elyfi/) | $434.8K | 5.9% | $175.9 | dead | 2 | 30 | 2026-05-24 |
 | [endur](./endur/) | $9.4M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
+| [enjoyoors](./enjoyoors/) | $11.3K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [enosys](./enosys/) | $17.2M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
 | [ensuro](./ensuro/) | $490.6K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [equalizer](./equalizer/) | $374.8K | 0.0% | $374.8K | declining | 0 | 292 | 2026-06-10 |
 | [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-06-13 |
 | [equilibria](./equilibria/) | $26.9M | 17.6% | $15.7M | declining | 6 | 119 | 2026-06-10 |
+| [equito-finance](./equito-finance/) | $7.9 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [eth-strategy](./eth-strategy/) | $30.8M | 0.0% | $30.8M | active | 1 | 49 | 2026-06-10 |
 | [ethereal-dex](./ethereal-dex/) | $30.7M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
 | [ethereal-season-zero](./ethereal-season-zero/) | $2.8M | 0.0% | $2.8M | dead | 4 | 1 | 2026-05-24 |

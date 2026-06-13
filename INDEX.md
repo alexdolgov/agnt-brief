@@ -249,8 +249,13 @@
 | [chat3](./chat3/) | $6.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [chateau](./chateau/) | $19.1K | 33.3% | $19.1K | active | 1 | 5 | 2026-06-10 |
 | [chedda-finance](./chedda-finance/) | $7.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [cherrylend](./cherrylend/) | $6.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [chewyswap](./chewyswap/) | $9.5K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
+| [chfry-finance](./chfry-finance/) | $18.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [chi-protocol](./chi-protocol/) | $7.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [chiliswap](./chiliswap/) | $561.2 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [choice-exchange](./choice-exchange/) | $308.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [chromatic-protocol](./chromatic-protocol/) | $3.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [circuit](./circuit/) | $198.7K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [citrea-bridge](./citrea-bridge/) | $6.6M | 50.0% | ? | active | 10 | 3 | 2026-06-10 |
 | [clave](./clave/) | $7.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |

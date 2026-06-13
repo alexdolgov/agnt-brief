@@ -5,6 +5,7 @@
 | [0vix](./0vix/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [1inch](./1inch/) | $16.1M | 21.9% | $16.1M | active | 149 | 275 | 2026-06-10 |
 | [1sec](./1sec/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
+| [21.co](./21.co/) | $2.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [3f-mutual](./3f-mutual/) | $3.9M | 0.0% | ? | active | 0 | 21 | 2026-06-10 |
 | [3jane](./3jane/) | $76.6M | 61.9% | $76.6M | declining | 4 | 23 | 2026-06-10 |
 | [40-acres](./40-acres/) | $10.0M | 0.0% | $10.0M | active | 4 | 325 | 2026-06-12 |
@@ -915,6 +916,7 @@
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-06-13 |
 | [usdt0](./usdt0/) | $3.6B | 0.0% | ? | unknown | 20 | 0 | 2026-06-13 |
 | [usx.capital](./usx.capital/) | $763.3K | 0.0% | ? | declining | 1 | 3 | 2026-06-11 |
+| [valorem](./valorem/) | $34.3 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [vaultcraft](./vaultcraft/) | $546.3K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [vaultka](./vaultka/) | $5.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
@@ -932,13 +934,16 @@
 | [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 0 | 65 | 2026-06-12 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-06-13 |
 | [volta-club](./volta-club/) | $976.2M | 0.0% | $976.2M | unknown | 0 | 316 | 2026-06-11 |
+| [voltz](./voltz/) | $214.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [wagmi](./wagmi/) | $1.3M | 0.0% | ? | declining | 10 | 334 | 2026-06-11 |
 | [wan-bridge](./wan-bridge/) | $4.6K | 0.0% | $4.6K | active | 3 | 135 | 2026-06-12 |
 | [wanswap-dex](./wanswap-dex/) | $1.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | declining | 8 | 83 | 2026-06-11 |
+| [waterfall-finance](./waterfall-finance/) | $35.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | declining | 0 | 5 | 2026-06-11 |
 | [wefi](./wefi/) | $292.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [wemix.fi](./wemix.fi/) | $38.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
+| [white-whale](./white-whale/) | $518.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [wing-finance](./wing-finance/) | $20.3M | 0.0% | $20.3M | declining | 2 | 189 | 2026-06-12 |
 | [wise-lending](./wise-lending/) | $36.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | declining | 11 | 96 | 2026-06-11 |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "rook",
-  "generated_at": "2026-06-11T02:24:37.895Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-13T21:03:40.812Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-f8ad",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "rook",
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 99.7609145126022
   },
   "summary": {
-    "total_contracts": 73,
-    "total_addresses": 168,
-    "unique_implementations": 73,
-    "total_deployments": 168,
+    "total_contracts": 75,
+    "total_addresses": 172,
+    "unique_implementations": 75,
+    "total_deployments": 172,
     "audited_contracts": 0,
-    "unaudited_contracts": 65,
+    "unaudited_contracts": 67,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 65,
+    "contracts_verified_unaudited": 67,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 8,
     "coverage_pct": 0,
@@ -63,7 +63,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 73,
+    "unique_implementations": 75,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -225,7 +225,7 @@
       "address": "0x0807d0810714d85b49e40349a3002f06e841b7c3",
       "name": "BasicAdapter",
       "role": "adapter",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -292,8 +292,8 @@
       "address": "0xa2d578e21f430d7469cbc135952dfe5c34b69772",
       "name": "BCH_DAI_Reserve",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "ren-protocol",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -354,7 +354,7 @@
       "address": "0x2095be01f9a30a8ac8302245fdfa524fb20de6cd",
       "name": "BCHShifter",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -384,6 +384,37 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xe0926b2f1b37c2dae0c5682f5fd75adf83cfe771",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xde92742213fea5f78c6840b6ecbf214115ea8002",
+      "name": "BorrowerProxy",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BorrowerProxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xde92742213fea5f78c6840b6ecbf214115ea8002",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -452,7 +483,7 @@
       "address": "0x1258d7ff385d1d81017d4a3d464c02f74c61902a",
       "name": "BTCShifter",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -626,8 +657,8 @@
       "address": "0x311999ee72b5826d664fd4f3ac09c0c462effe49",
       "name": "DarknodePaymentStore",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "ren-protocol",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1439,6 +1470,46 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x9a67f1940164d0318612b497e8e6038f902a00a4",
+      "name": "GnosisSafe",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x34cfac646f301356faa8b21e94227e3583fe3f5f",
+      "impl_name": "GnosisSafe",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9a67f1940164d0318612b497e8e6038f902a00a4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb81f5b9bd373b9d0df2e3191a01b8fa9b4d2832a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x8d5541db390a394d01a5eb03fc8160ba66df184c",
       "name": "HidingGame2Distributor",
       "role": "operational_periphery",
@@ -1465,7 +1536,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -1496,7 +1567,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -1527,7 +1598,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -1558,22 +1629,31 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xe2ad581fc01434ee426bb3f471c4cb0317ee672e",
+      "address": "0xce03849d56d7bf63c5fea2152488ee6d69684cbf",
       "name": "HidingVaultNFT",
-      "role": "core_logic",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Rook",
       "tvl_usd": null,
-      "is_proxy": true,
+      "is_proxy": false,
       "impl_address": "0xce03849d56d7bf63c5fea2152488ee6d69684cbf",
       "impl_name": "HidingVaultNFT",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xce03849d56d7bf63c5fea2152488ee6d69684cbf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -1620,7 +1700,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -1713,7 +1793,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -1744,7 +1824,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -1775,7 +1855,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -1806,7 +1886,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -1837,7 +1917,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -2050,8 +2130,8 @@
       "address": "0x7a43b06ed73fcd3707f1a681ca645d758a51ee52",
       "name": "Protocol",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -2246,7 +2326,7 @@
       "address": "0xee274080b8389ac5add6499df348b653447894a7",
       "name": "RenERC20Proxy",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2277,8 +2357,8 @@
       "address": "0xc3fed6eb39178a541d274e6fc748d48f0ca01cc3",
       "name": "RenExAtomicSwapper",
       "role": "adapter",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "ren",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -2348,8 +2428,8 @@
       "address": "0x31a0d1a199631d244761eeba67e8501296d2e383",
       "name": "RenExBrokerVerifier",
       "role": "periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "ren-protocol",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -2681,7 +2761,7 @@
       "address": "0x1d1d44e8850e7c38550c53aa04a110b5808e2c1a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2712,7 +2792,7 @@
       "address": "0x2d7e244ab953f16a48dde4d11a94272c5f6f7f5b",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2743,7 +2823,7 @@
       "address": "0x4012ef4d3e24d4a8f8d09ff6a780c7a64bd8f4f2",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2774,7 +2854,7 @@
       "address": "0x48ace4f7cdfb6ebd96530fd810f4fe47d3642524",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2898,7 +2978,7 @@
       "address": "0xe175a237fdf7b815cbbc6d9e60fd3d9f86490674",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2929,8 +3009,8 @@
       "address": "0x0e68ee104c768078cb3624396aaf9285c58f1a73",
       "name": "zBCH",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "ren-protocol",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -2978,7 +3058,7 @@
       "address": "0x88c64a7d2ecc882d558dd16abc1537515a78bb7d",
       "name": "zBTC",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3018,7 +3098,7 @@
       "address": "0x7b3b7383bc88b645bdefd7624d9c6fb981407bf9",
       "name": "ZEC_DAI_Reserve",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3116,8 +3196,8 @@
       "address": "0x2b59ef3eb28c7388c7ec69d43a9b8e585c461d5b",
       "name": "ZECShifter",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "ren-protocol",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -3156,7 +3236,7 @@
       "address": "0x09aa07ae98fde91d66775c13107e9f082ff65295",
       "name": "zZEC",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3227,26 +3307,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x0807d0810714d85b49e40349a3002f06e841b7c3",
-      "name": "BasicAdapter",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa2d578e21f430d7469cbc135952dfe5c34b69772",
-      "name": "BCH_DAI_Reserve",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xcabb5e9e48f22cb6736d5f5cd3f1b652d7e1a461",
       "name": "BCHGateway",
       "role": "unknown",
@@ -3257,9 +3317,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x2095be01f9a30a8ac8302245fdfa524fb20de6cd",
-      "name": "BCHShifter",
-      "role": "unknown",
+      "address": "0xde92742213fea5f78c6840b6ecbf214115ea8002",
+      "name": "BorrowerProxy",
+      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -3269,16 +3329,6 @@
       "chain_name": "ethereum",
       "address": "0x11716a1f51fad053e9b43da1025e8ace32aee110",
       "name": "BTC_DAI_Reserve",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1258d7ff385d1d81017d4a3d464c02f74c61902a",
-      "name": "BTCShifter",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -3300,16 +3350,6 @@
       "address": "0x085d9b18be81f2b0c35086972caa46177205f54d",
       "name": "DarknodePaymentMigrator",
       "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x311999ee72b5826d664fd4f3ac09c0c462effe49",
-      "name": "DarknodePaymentStore",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -3457,6 +3497,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x9a67f1940164d0318612b497e8e6038f902a00a4",
+      "name": "GnosisSafe",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x8d5541db390a394d01a5eb03fc8160ba66df184c",
       "name": "HidingGame2Distributor",
       "role": "operational_periphery",
@@ -3497,9 +3547,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xe2ad581fc01434ee426bb3f471c4cb0317ee672e",
+      "address": "0xce03849d56d7bf63c5fea2152488ee6d69684cbf",
       "name": "HidingVaultNFT",
-      "role": "core_logic",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -3657,9 +3707,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xc3fed6eb39178a541d274e6fc748d48f0ca01cc3",
-      "name": "RenExAtomicSwapper",
-      "role": "adapter",
+      "address": "0xee274080b8389ac5add6499df348b653447894a7",
+      "name": "RenERC20Proxy",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -3670,16 +3720,6 @@
       "address": "0x5ec18b477b20af940807b5478db5a64cd4a77efd",
       "name": "RenExBalances",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x31a0d1a199631d244761eeba67e8501296d2e383",
-      "name": "RenExBrokerVerifier",
-      "role": "periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -3767,58 +3807,8 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x0e68ee104c768078cb3624396aaf9285c58f1a73",
-      "name": "zBCH",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x88c64a7d2ecc882d558dd16abc1537515a78bb7d",
-      "name": "zBTC",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x7b3b7383bc88b645bdefd7624d9c6fb981407bf9",
-      "name": "ZEC_DAI_Reserve",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x52c883b626637ae7c2b93909ad40c24676ada49d",
       "name": "ZECGateway",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2b59ef3eb28c7388c7ec69d43a9b8e585c461d5b",
-      "name": "ZECShifter",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x09aa07ae98fde91d66775c13107e9f082ff65295",
-      "name": "zZEC",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -3826,10 +3816,10 @@
     }
   ],
   "origin_summary": {
-    "native": 71,
-    "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 1
+    "native": 57,
+    "upstream": 6,
+    "standard_library": 0,
+    "needs_review": 12
   },
   "scope_matching_notes": {
     "match_method_counts": {},

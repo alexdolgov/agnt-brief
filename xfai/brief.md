@@ -3,12 +3,12 @@
 ## Project Overview
 
 - Project: Xfai (`xfai`)
-- Lifecycle: active (Tier 0, 66.3% below peak)
-- Generated: 2026-06-11T04:10:24.774Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
+- Lifecycle: active (Tier 0, 72.4% below peak)
+- Generated: 2026-06-13T21:01:26.722Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-f8ad
 - Chains: linea
-- Contract surface: 48 unique implementations (67 raw deployments)
-- DeFi Llama TVL: $1,030,555.93
+- Contract surface: 54 unique implementations (83 raw deployments)
+- DeFi Llama TVL: $835,471.25
 - On-chain TVL (included contracts): $2.00
 - TVL by chain: Linea $2.00
 
@@ -22,12 +22,12 @@ The Xfai family shares infrastructure through proxy-based upgradeability, with c
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/17 (0.0%)
-- Verified + Unaudited implementations: 17
+- Verified implementations audited: 0/20 (0.0%)
+- Verified + Unaudited implementations: 20
 - Verified by bytecode match: 0
-- Unverified implementations: 31
-- Unique implementations: 48
-- Raw deployments: 67
+- Unverified implementations: 34
+- Unique implementations: 54
+- Raw deployments: 83
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $2.00
@@ -45,7 +45,7 @@ The Xfai family shares infrastructure through proxy-based upgradeability, with c
 
 - None
 
-### ⚠️ Verified + Unaudited (17)
+### ⚠️ Verified + Unaudited (20)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -53,9 +53,12 @@ The Xfai family shares infrastructure through proxy-based upgradeability, with c
 | UsdPlusTokenV3 | token | linea | 2 deployments: linea [`0x1e1f50...3b7f13`](./contracts/linea-59144/0x1e1f509963a6d33e169d9497b11c7dbfe73b7f13/); linea `0xb79dd0...de4376` | ⚠️ Unaudited |
 | AgentTimelock | governance | linea | 2 deployments: linea [`0x80522e...df05d9`](./contracts/linea-59144/0x80522ed45676b765c2b43733829bce8139df05d9/); linea `0xb5f161...34c5eb` | ⚠️ Unaudited |
 | ERC1967Proxy | proxy | linea | 2 deployments: linea [`0x6d5acd...88a5a3`](./contracts/linea-59144/0x6d5acde39ce07e05ccb0e5448eaad18c0c88a5a3/); linea `0x9d934d...aa8a58` | ⚠️ Unaudited |
-| Exchange | unknown | linea | 2 deployments: linea [`0x083f01...b3b4b7`](./contracts/linea-59144/0x083f016e9928a3eaa3aca0ff9f4e4ded5db3b4b7/); linea `0xbe2408...5add27` | ⚠️ Unaudited |
+| Exchange | unknown | linea | 4 deployments: linea [`0x083f01...b3b4b7`](./contracts/linea-59144/0x083f016e9928a3eaa3aca0ff9f4e4ded5db3b4b7/); linea `0x260284...5dc72a`; linea `0x7cb1b3...ca2789`; linea `0xbe2408...5add27` | ⚠️ Unaudited |
+| HedgeExchanger | unknown | linea | 3 deployments: linea [`0x40ae10...2631f1`](./contracts/linea-59144/0x40ae104c59af1b9d23dcd9c5715780e2132631f1/); linea `0x631e1a...b50503`; linea `0x88280f...7f71dd` | ⚠️ Unaudited |
 | LineaPayoutListener | unknown | linea | [`0x7a645a...378f8d`](./contracts/linea-59144/0x7a645a2ab6bdcb9cf7913635d35e3e63d5378f8d/) | ⚠️ Unaudited |
-| PortfolioManager | governance | linea | 2 deployments: linea [`0x0932bb...8420e0`](./contracts/linea-59144/0x0932bb4c7e4bdd9cd717331b86d999046f8420e0/); linea `0x27b12f...78f7b8` | ⚠️ Unaudited |
+| Mark2Market | unknown | linea | 3 deployments: linea [`0x1f4947...a9e6fb`](./contracts/linea-59144/0x1f4947cd5a5c058dd5ea6fd1ccd5c311ada9e6fb/); linea `0x3d6765...fade41`; linea `0x431bf3...d48403` | ⚠️ Unaudited |
+| PortfolioManager | governance | linea | 4 deployments: linea [`0x0932bb...8420e0`](./contracts/linea-59144/0x0932bb4c7e4bdd9cd717331b86d999046f8420e0/); linea `0x27b12f...78f7b8`; linea `0x3e9377...4fb4ee`; linea `0x610c08...a2f4ba` | ⚠️ Unaudited |
+| PythOracle | operational_periphery | linea | 3 deployments: linea [`0x066948...62b81a`](./contracts/linea-59144/0x066948fce990b4addc3bafa680338132a862b81a/); linea `0x071470...f6f3c0`; linea `0x5a4018...67154c` | ⚠️ Unaudited |
 | RebaseToken | token | linea | 3 deployments: linea [`0x2253bd...1fb6a1`](./contracts/linea-59144/0x2253bdd62ea63f7cbbf92785eedccac7521fb6a1/); linea `0x985bdc...2810bc`; linea `0xc98c43...3fa12a` | ⚠️ Unaudited |
 | StrategyEts | core_logic | linea | 3 deployments: linea [`0x30f868...df9ab8`](./contracts/linea-59144/0x30f8685fa6c2c9f75f6242f36c4b00dfc2df9ab8/); linea `0x375ca8...5a4d85`; linea `0x800637...37d628` | ⚠️ Unaudited |
 | StrategyMendiUsdc | core_logic | linea | 2 deployments: linea [`0x6e24a0...9f7010`](./contracts/linea-59144/0x6e24a0e4697370c7d4102928931181bc889f7010/); linea `0x745b1f...0d827a` | ⚠️ Unaudited |
@@ -79,7 +82,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (31)
+### ❓ Unverified (34)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -100,10 +103,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | linea | `0x84e88a...b58fd8` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0x871765...702e44` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0x908080...8ef78f` | ❓ Unverified |
+| UnnamedContract | unknown | linea | `0x9a8aeb...2a77f8` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0xa27f6f...d031fe` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0xa5136e...3eca26` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0xa7e51d...94f4a0` | ❓ Unverified |
+| UnnamedContract | unknown | linea | `0xabbe92...a0883f` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0xabc372...690996` | ❓ Unverified |
+| UnnamedContract | unknown | linea | `0xb694ce...a49a4e` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0xb77022...77b8f8` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0xb86fb1...32440d` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0xbde939...f81eb0` | ❓ Unverified |
@@ -145,10 +151,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 12 |
-| upstream | 0 |
-| standard_library | 6 |
-| needs_review | 30 |
+| native | 11 |
+| upstream | 1 |
+| standard_library | 8 |
+| needs_review | 34 |
 
 ## Scope Matching Notes
 

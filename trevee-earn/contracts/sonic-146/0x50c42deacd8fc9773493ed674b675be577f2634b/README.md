@@ -5,7 +5,7 @@
 | Chain | sonic (146) |
 | Address | `0x50c42deacd8fc9773493ed674b675be577f2634b` |
 | Role | token |
-| Origin | standard_library |
+| Origin | native |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (sonic [`0x50c42deacd8fc9773493ed674b675be577f2634b`](../0x50c42deacd8fc9773493ed674b675be577f2634b/)) |

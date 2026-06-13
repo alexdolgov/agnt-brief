@@ -837,7 +837,7 @@
 | [o3-swap](./o3-swap/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [obeliskbtc](./obeliskbtc/) | $33.2M | 36.8% | $33.2M | declining | 1 | 19 | 2026-06-13 |
 | [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
-| [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 1 | 40 | 2026-06-11 |
+| [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 1 | 35 | 2026-06-13 |
 | [ocp-finance](./ocp-finance/) | $10.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [octopus-network](./octopus-network/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [odos](./odos/) | ? | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
@@ -1011,7 +1011,7 @@
 | [rollie-finance](./rollie-finance/) | $4.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rollup-finance](./rollup-finance/) | $77.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 0 | 11 | 2026-05-31 |
-| [rook](./rook/) | $190.1K | 0.0% | $190.1K | dead | 0 | 73 | 2026-06-11 |
+| [rook](./rook/) | $190.1K | 0.0% | $190.1K | dead | 0 | 75 | 2026-06-13 |
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [root-finance](./root-finance/) | $1.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
@@ -1260,7 +1260,7 @@
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
 | [treehouse-protocol](./treehouse-protocol/) | $24.0M | 42.6% | $1.8M | declining | 20 | 77 | 2026-06-11 |
 | [tren-finance](./tren-finance/) | $25.6 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
-| [trevee-earn](./trevee-earn/) | $582.2M | 0.0% | $582.2M | declining | 0 | 15 | 2026-06-11 |
+| [trevee-earn](./trevee-earn/) | $583.1M | 0.0% | $583.1M | transitioning | 0 | 29 | 2026-06-13 |
 | [trick-or-treat-farm](./trick-or-treat-farm/) | $1.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [trisolaris](./trisolaris/) | $1.5M | 0.0% | ? | declining | 0 | 119 | 2026-06-11 |
 | [tristero](./tristero/) | $353.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1362,7 +1362,7 @@
 | [xcarnival](./xcarnival/) | $2.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [xdollar](./xdollar/) | $65.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [xeleb-protocol](./xeleb-protocol/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 48 | 2026-06-11 |
+| [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 54 | 2026-06-13 |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [xpanse](./xpanse/) | $240.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [xrgb](./xrgb/) | $304.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

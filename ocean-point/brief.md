@@ -7,11 +7,11 @@
 - Project: Ocean Point (`ocean-point`)
 - Website: [https://app.oceanpoint.fi/](https://app.oceanpoint.fi/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T01:33:07.405Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-13T21:02:45.055Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-f8ad
 - Chains: ethereum
-- Contract surface: 40 unique implementations (56 raw deployments)
-- DeFi Llama TVL: $1,135,721.93
+- Contract surface: 35 unique implementations (43 raw deployments)
+- DeFi Llama TVL: $948,059.16
 - On-chain TVL (included contracts): $1,078,117.52
 - TVL by chain: Ethereum $1,078,117.52
 
@@ -25,12 +25,12 @@ Staking contracts use the BST token and LP tokens from the Uniswap pair, while p
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/27 (0.0%)
-- Verified + Unaudited implementations: 27
+- Verified implementations audited: 0/22 (0.0%)
+- Verified + Unaudited implementations: 22
 - Verified by bytecode match: 0
 - Unverified implementations: 13
-- Unique implementations: 40
-- Raw deployments: 56
+- Unique implementations: 35
+- Raw deployments: 43
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $1,078,117.52
@@ -49,25 +49,20 @@ Staking contracts use the BST token and LP tokens from the Uniswap pair, while p
 
 - None
 
-### ⚠️ Verified + Unaudited (27)
+### ⚠️ Verified + Unaudited (22)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | BlocksquareToken | token | ethereum | [`0x509a38...7c7f4a`](./contracts/ethereum-1/0x509a38b7a1cc0dcd83aa9d06214663d9ec7c7f4a/) | ⚠️ Unaudited |
 | BSPTStaking | unknown | ethereum | 3 deployments: ethereum [`0x15a63d...60997f`](./contracts/ethereum-1/0x15a63d3b8707f215a9ff97ea5e5f79b28760997f/); ethereum `0x57ba88...ecc73e`; ethereum `0x5d2c0c...c79088` | ⚠️ Unaudited |
 | BSPTStakingV04 | unknown | ethereum | 2 deployments: ethereum [`0x132996...b55451`](./contracts/ethereum-1/0x13299657e662894b933bb3ee73f7f8da94b55451/); ethereum `0x4cbd2c...b319bf` | ⚠️ Unaudited |
-| BSTRewardVesting | operational_periphery | ethereum | 2 deployments: ethereum [`0x5c9f20...cf05d8`](./contracts/ethereum-1/0x5c9f20647026d7ff918458be2ee12f42cdcf05d8/); ethereum `0xbd37dd...10060e` | ⚠️ Unaudited |
-| CryptosnacksBSPTStakingV04 | unknown | ethereum | 3 deployments: ethereum [`0x6f5ecf...f34b07`](./contracts/ethereum-1/0x6f5ecf8a8dadaac3c8440a080c9271f845f34b07/); ethereum `0x7669b9...137ead`; ethereum `0xb0131b...d762de` | ⚠️ Unaudited |
-| CryptosnacksOceanPropertyRegistryV04 | registry | ethereum | 3 deployments: ethereum [`0x05f5b7...dd0acc`](./contracts/ethereum-1/0x05f5b75d80291910a54b65aea9b45f549cdd0acc/); ethereum `0x7a5a43...938730`; ethereum `0xcd08c3...cecec8` | ⚠️ Unaudited |
+| CertifiedPartners | unknown | ethereum | [`0x8dbb99...78cdd3`](./contracts/ethereum-1/0x8dbb99cc3721f5c9cc7c9e92db260813cf78cdd3/) | ⚠️ Unaudited |
 | DataStorageProxy | unknown | ethereum | [`0x8c2a85...6197b5`](./contracts/ethereum-1/0x8c2a858fe7b2bf155247c7f528c6ca7b186197b5/) | ⚠️ Unaudited |
 | FactoryData | registry | ethereum | [`0x146d58...9c5a05`](./contracts/ethereum-1/0x146d589cfe136644bdf4f1958452b5a4bb9c5a05/) | ⚠️ Unaudited |
-| FixedPriceInitialOffering | operational_periphery | ethereum | [`0x25862c...08de78`](./contracts/ethereum-1/0x25862c4fb4ce9d6ff9b463488e0ec656fa08de78/) | ⚠️ Unaudited |
-| LandhiveBSPTStakingV04 | unknown | ethereum | 2 deployments: ethereum [`0x86d133...13ee30`](./contracts/ethereum-1/0x86d13326fabb4f45a5e9a5655909f0ca1a13ee30/); ethereum `0xfc7cd2...ecdebf` | ⚠️ Unaudited |
-| LandhiveOceanPropertyRegistryV04 | registry | ethereum | 3 deployments: ethereum [`0x3c18b3...6a71c0`](./contracts/ethereum-1/0x3c18b35e8e919224ea4099acc0d280eda76a71c0/); ethereum `0x59a401...c697de`; ethereum `0x6b1ab6...fc845a` | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | [`0xfb531d...29ea8a`](./contracts/ethereum-1/0xfb531d5602fc0953be047605c77a7d289729ea8a/) | ⚠️ Unaudited |
 | LPStaking | unknown | ethereum | 2 deployments: ethereum [`0x0f2e20...65b33d`](./contracts/ethereum-1/0x0f2e209f67c8900005f71a833c484221f965b33d/); ethereum `0x1802f6...48daec` | ⚠️ Unaudited |
 | MarketplacePool | core_logic | ethereum | [`0x770463...c80cf7`](./contracts/ethereum-1/0x77046396ff56a0ea858637ded142e721f4c80cf7/) | ⚠️ Unaudited |
 | MarketplacePoolProxyFactory | registry | ethereum | [`0x178871...12f001`](./contracts/ethereum-1/0x17887106a14f38bf10512565bdbb5bd7ac12f001/) | ⚠️ Unaudited |
-| MultipleVesting | operational_periphery | ethereum | [`0xf62e5c...ed3476`](./contracts/ethereum-1/0xf62e5cb35ee81b3c259fb002d61d7c7733ed3476/) | ⚠️ Unaudited |
 | OceanPropertyRegistry | registry | ethereum | 2 deployments: ethereum [`0x14db5b...f5a335`](./contracts/ethereum-1/0x14db5b377d13ec9f9e7747f42d71634b5ef5a335/); ethereum `0xf31ce8...382936` | ⚠️ Unaudited |
 | OceanPropertyRegistryV04 | registry | ethereum | 2 deployments: ethereum [`0xaeea40...e4deff`](./contracts/ethereum-1/0xaeea40bb8393174459c4016bce2625076fe4deff/); ethereum `0xd0a2b9...ad8f10` | ⚠️ Unaudited |
 | OceanStaking | unknown | ethereum | [`0x6f1e92...9f7f8a`](./contracts/ethereum-1/0x6f1e92fb8a685aaa0710bad194d7b1aa839f7f8a/) | ⚠️ Unaudited |
@@ -125,21 +120,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x509a38...7c7f4a`](./contracts/ethereum-1/0x509a38b7a1cc0dcd83aa9d06214663d9ec7c7f4a/) | BlocksquareToken | token | $1,078,117.52 | Verified native implementation with $1,078,117.52 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x15a63d...60997f`](./contracts/ethereum-1/0x15a63d3b8707f215a9ff97ea5e5f79b28760997f/) | BSPTStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x132996...b55451`](./contracts/ethereum-1/0x13299657e662894b933bb3ee73f7f8da94b55451/) | BSPTStakingV04 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5c9f20...cf05d8`](./contracts/ethereum-1/0x5c9f20647026d7ff918458be2ee12f42cdcf05d8/) | BSTRewardVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6f5ecf...f34b07`](./contracts/ethereum-1/0x6f5ecf8a8dadaac3c8440a080c9271f845f34b07/) | CryptosnacksBSPTStakingV04 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x05f5b7...dd0acc`](./contracts/ethereum-1/0x05f5b75d80291910a54b65aea9b45f549cdd0acc/) | CryptosnacksOceanPropertyRegistryV04 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8dbb99...78cdd3`](./contracts/ethereum-1/0x8dbb99cc3721f5c9cc7c9e92db260813cf78cdd3/) | CertifiedPartners | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8c2a85...6197b5`](./contracts/ethereum-1/0x8c2a858fe7b2bf155247c7f528c6ca7b186197b5/) | DataStorageProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x146d58...9c5a05`](./contracts/ethereum-1/0x146d589cfe136644bdf4f1958452b5a4bb9c5a05/) | FactoryData | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x25862c...08de78`](./contracts/ethereum-1/0x25862c4fb4ce9d6ff9b463488e0ec656fa08de78/) | FixedPriceInitialOffering | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x86d133...13ee30`](./contracts/ethereum-1/0x86d13326fabb4f45a5e9a5655909f0ca1a13ee30/) | LandhiveBSPTStakingV04 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3c18b3...6a71c0`](./contracts/ethereum-1/0x3c18b35e8e919224ea4099acc0d280eda76a71c0/) | LandhiveOceanPropertyRegistryV04 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0f2e20...65b33d`](./contracts/ethereum-1/0x0f2e209f67c8900005f71a833c484221f965b33d/) | LPStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x770463...c80cf7`](./contracts/ethereum-1/0x77046396ff56a0ea858637ded142e721f4c80cf7/) | MarketplacePool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x178871...12f001`](./contracts/ethereum-1/0x17887106a14f38bf10512565bdbb5bd7ac12f001/) | MarketplacePoolProxyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf62e5c...ed3476`](./contracts/ethereum-1/0xf62e5cb35ee81b3c259fb002d61d7c7733ed3476/) | MultipleVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x14db5b...f5a335`](./contracts/ethereum-1/0x14db5b377d13ec9f9e7747f42d71634b5ef5a335/) | OceanPropertyRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xaeea40...e4deff`](./contracts/ethereum-1/0xaeea40bb8393174459c4016bce2625076fe4deff/) | OceanPropertyRegistryV04 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6f1e92...9f7f8a`](./contracts/ethereum-1/0x6f1e92fb8a685aaa0710bad194d7b1aa839f7f8a/) | OceanStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -156,10 +144,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 31 |
+| native | 19 |
 | upstream | 1 |
-| standard_library | 0 |
-| needs_review | 8 |
+| standard_library | 1 |
+| needs_review | 14 |
 
 ## Scope Matching Notes
 

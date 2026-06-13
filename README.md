@@ -530,13 +530,18 @@ Each project directory contains:
 | [byte-exchange](./byte-exchange/brief.md) | $41.68M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [c14](./c14/brief.md) | $2.57K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [cache.gold](./cache.gold/brief.md) | $525.93K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [caddy-finance](./caddy-finance/brief.md) | $173.42 | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [cana-holdings-california-carbon-credits](./cana-holdings-california-carbon-credits/brief.md) | $886.31K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [canopy](./canopy/brief.md) | $1.34M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [canto-lending](./canto-lending/brief.md) | $3.03M | canto, ethereum | 84 | 2/84 (2%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [capx-ai](./capx-ai/brief.md) | $2.14M | bsc | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [carbon-defi](./carbon-defi/brief.md) | $2.92M | 4 | 158 | 52/158 (33%) | 30.9% | 27.3% (ChainSecurity) | 4 | aging | ✅ active | - |
 | [carina](./carina/brief.md) | - | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [carrot](./carrot/brief.md) | $288.88K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [catsluck](./catsluck/brief.md) | $2.96K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [cavalre](./cavalre/brief.md) | $10.19K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [cellana-finance](./cellana-finance/brief.md) | $520.50K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [cells-finance](./cells-finance/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [centrifuge](./centrifuge/brief.md) | $1797.94M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [cex.io](./cex.io/brief.md) | $12.10M | bsc, ethereum, polygon | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [cgo-finance](./cgo-finance/brief.md) | $1.23M | cronos | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -1052,5 +1057,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T12:38:21.207Z_
-_Projects: 1040_
+_Generated: 2026-06-13T12:40:47.071Z_
+_Projects: 1045_

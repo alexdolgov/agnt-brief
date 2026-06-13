@@ -222,6 +222,7 @@
 | [byte-exchange](./byte-exchange/) | $41.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [c14](./c14/) | $2.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [cache.gold](./cache.gold/) | $525.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [caddy-finance](./caddy-finance/) | $173.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [camelot](./camelot/) | $6.4M | 17.6% | $391.9K | active | 1 | 118 | 2026-06-10 |
 | [cana-holdings-california-carbon-credits](./cana-holdings-california-carbon-credits/) | $886.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [canopy](./canopy/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -229,8 +230,12 @@
 | [capx-ai](./capx-ai/) | $2.1M | 0.0% | ? | active | 1 | 1 | 2026-06-10 |
 | [carbon-defi](./carbon-defi/) | $5.1M | 30.9% | ? | active | 4 | 158 | 2026-06-10 |
 | [carina](./carina/) | ? | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [carrot](./carrot/) | $288.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [catsluck](./catsluck/) | $3.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [cavalre](./cavalre/) | $10.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [cbridge](./cbridge/) | $50.2M | 0.0% | $50.2M | active | 0 | 1348 | 2026-06-12 |
+| [cellana-finance](./cellana-finance/) | $520.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [cells-finance](./cells-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [centrifuge](./centrifuge/) | $1.8B | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [cex.io](./cex.io/) | $12.1M | 0.0% | ? | active | 1 | 4 | 2026-06-12 |
 | [cgo-finance](./cgo-finance/) | $1.2M | 0.0% | ? | declining | 0 | 2 | 2026-06-10 |

@@ -1163,11 +1163,16 @@ Each project directory contains:
 | [scrub-money](./scrub-money/brief.md) | $7.16M | arbitrum, kava | 20 | 1/20 (5%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [sector-finance](./sector-finance/brief.md) | $55.75K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [secured-finance](./secured-finance/brief.md) | $629.77K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
+| [seeder-finance](./seeder-finance/brief.md) | $3.06K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [seedify](./seedify/brief.md) | $32.11K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [segment-finance](./segment-finance/brief.md) | $524.72K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [seneca](./seneca/brief.md) | $11.68K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [sentiment](./sentiment/brief.md) | $1.20M | arbitrum | 297 | 30/297 (10%) | 73.3% | 46.7% (Sherlock) | 6 | aging | 💀 dead | - |
 | [serum](./serum/brief.md) | $15.31M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [shape-bridge](./shape-bridge/brief.md) | $760.43K | ethereum | 26 | 22/26 (85%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
+| [sherpa](./sherpa/brief.md) | $605.97K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [shield](./shield/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [shield-protocol](./shield-protocol/brief.md) | $37.58K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [shiny](./shiny/brief.md) | - | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [shoebill-finance](./shoebill-finance/brief.md) | $420.98K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [sicx](./sicx/brief.md) | $1.27M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1300,5 +1305,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T14:26:48.009Z_
-_Projects: 1288_
+_Generated: 2026-06-13T14:28:05.704Z_
+_Projects: 1293_

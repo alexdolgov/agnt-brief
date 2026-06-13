@@ -1048,8 +1048,11 @@
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 9.1% | $34.8K | dead | 5 | 99 | 2026-06-11 |
 | [sector-finance](./sector-finance/) | $55.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [secured-finance](./secured-finance/) | $629.8K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
+| [seeder-finance](./seeder-finance/) | $3.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [seedify](./seedify/) | $32.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-31 |
 | [segment-finance](./segment-finance/) | $524.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [seneca](./seneca/) | $11.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [sentiment](./sentiment/) | $64.3 | 73.3% | ? | dead | 8 | 297 | 2026-06-11 |
 | [serum](./serum/) | $15.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [set-protocol](./set-protocol/) | $7.9M | 0.0% | $7.9M | declining | 0 | 129 | 2026-06-13 |
@@ -1057,6 +1060,8 @@
 | [shape-bridge](./shape-bridge/) | $760.4K | 0.0% | ? | active | 2 | 26 | 2026-06-11 |
 | [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | active | 3 | 40 | 2026-06-11 |
 | [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-06-13 |
+| [sherpa](./sherpa/) | $606.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [shield-protocol](./shield-protocol/) | $37.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [shield](./shield/) | $0.0 | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [shiny](./shiny/) | ? | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [shoebill-finance](./shoebill-finance/) | $421.0K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |

@@ -639,14 +639,19 @@ Each project directory contains:
 | [infrared-finance](./infrared-finance/brief.md) | $50.68M | berachain, bsc | 27 | 15/27 (56%) | 100.0% | 66.7% (Spearbit) | 14 | fresh | ✅ active | - |
 | [initiadex](./initiadex/brief.md) | $3.03M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [ink-bridge](./ink-bridge/brief.md) | $59.29M | ethereum, ink, optimism | 68 | 25/68 (37%) | 44.0% | 44.0% (Spearbit, Trail of Bits) | 5 | aging | ✅ active | - |
+| [interest-labs](./interest-labs/brief.md) | $2.11K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [interest-protocol](./interest-protocol/brief.md) | $1.26M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [intuition](./intuition/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [ionic-protocol](./ionic-protocol/brief.md) | $2.04M | bsc, mode | 420 | 55/420 (13%) | 1.8% | 0.0% (-) | 1 | stale | 💀 dead | - |
 | [ithaca-protocol](./ithaca-protocol/brief.md) | $12.86K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [jetswap](./jetswap/brief.md) | $323.09K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [jito](./jito/brief.md) | $642.52M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [juicebox](./juicebox/brief.md) | $8.63M | 8 | 77 | 68/77 (88%) | 5.9% | 0.0% (-) | 1 | stale | ✅ active | - |
 | [k2](./k2/brief.md) | $4.66M | ethereum | 30 | 21/30 (70%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [kaio](./kaio/brief.md) | $60.81M | 4 | 35 | 4/35 (11%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [kandle-finance](./kandle-finance/brief.md) | $0.07 | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
+| [kannagi-finance](./kannagi-finance/brief.md) | $72.20 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [kaskad](./kaskad/brief.md) | $2.55M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [kasu](./kasu/brief.md) | $10.55M | base | 22 | 20/22 (91%) | 100.0% | 100.0% (ChainSecurity) | 2 | aging | ✅ active | - |
 | [kava-earn](./kava-earn/brief.md) | $1.57M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [kava-lend](./kava-lend/brief.md) | $10.63M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -932,5 +937,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T11:40:06.993Z_
-_Projects: 920_
+_Generated: 2026-06-13T11:42:34.896Z_
+_Projects: 925_

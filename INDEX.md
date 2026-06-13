@@ -408,6 +408,7 @@
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-06-12 |
 | [ink-bridge](./ink-bridge/) | $59.3M | 44.0% | ? | active | 17 | 68 | 2026-06-11 |
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 65 | 2026-06-13 |
+| [interest-labs](./interest-labs/) | $2.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [interest-protocol](./interest-protocol/) | $1.3M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [intuition](./intuition/) | $0.0 | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | active | 7 | 154 | 2026-06-11 |
@@ -416,12 +417,16 @@
 | [iq](./iq/) | $23.9M | 0.0% | $23.9M | active | 0 | 2 | 2026-06-11 |
 | [ithaca-protocol](./ithaca-protocol/) | $12.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | declining | 0 | 181 | 2026-06-11 |
+| [jetswap](./jetswap/) | $323.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [jito](./jito/) | $642.5M | 0.0% | ? | unknown | 15 | 0 | 2026-06-13 |
 | [jones-dao](./jones-dao/) | $519.7M | 0.0% | $519.7M | active | 5 | 502 | 2026-06-11 |
 | [juicebox](./juicebox/) | $8.6M | 5.9% | ? | active | 10 | 77 | 2026-06-11 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-06-11 |
 | [kaio](./kaio/) | $60.8M | 0.0% | ? | declining | 0 | 35 | 2026-06-12 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | active | 0 | 4 | 2026-06-12 |
+| [kandle-finance](./kandle-finance/) | $0.1 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [kannagi-finance](./kannagi-finance/) | $72.2 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [kaskad](./kaskad/) | $2.6M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [kasu](./kasu/) | $10.6M | 100.0% | ? | active | 2 | 22 | 2026-06-12 |
 | [katana-pre-launch](./katana-pre-launch/) | $35.5M | 0.0% | $35.5M | active | 28 | 174 | 2026-06-12 |
 | [kava-earn](./kava-earn/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |

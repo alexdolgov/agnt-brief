@@ -627,6 +627,8 @@
 | [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-06-11 |
 | [pay-protocol](./pay-protocol/) | $1.4M | 0.0% | ? | declining | 0 | 8 | 2026-06-11 |
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-06-11 |
+| [pegasusdollar](./pegasusdollar/) | $14.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [pell-network](./pell-network/) | $238.5K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 0 | 21 | 2026-06-11 |
 | [perpl](./perpl/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [pharaoh-exchange](./pharaoh-exchange/) | $15.6M | 0.0% | $15.6M | active | 3 | 60 | 2026-06-12 |
@@ -644,8 +646,11 @@
 | [polkamarkets](./polkamarkets/) | $12.6K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [polkastarter](./polkastarter/) | $9.6M | 0.0% | $9.6M | active | 3 | 2 | 2026-06-11 |
 | [polygon-zkevm-bridge](./polygon-zkevm-bridge/) | $69.4M | 0.0% | ? | unknown | 0 | 14 | 2026-06-12 |
+| [polygonfarm-finance](./polygonfarm-finance/) | $51.5K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [polynomial-protocol](./polynomial-protocol/) | $5.3M | 0.0% | ? | active | 18 | 5 | 2026-06-13 |
+| [polywhale-finance](./polywhale-finance/) | $101.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pond0x](./pond0x/) | $2.9M | 0.0% | ? | unknown | 0 | 14 | 2026-06-11 |
+| [poolside](./poolside/) | $30.6K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pooltogether](./pooltogether/) | $26.9M | 0.9% | $26.9M | declining | 4 | 153 | 2026-05-31 |
 | [potatoswap](./potatoswap/) | $5.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [powercity](./powercity/) | $3.3M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |

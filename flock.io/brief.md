@@ -7,11 +7,11 @@
 - Project: FLock.io (`flock.io`)
 - Website: [https://www.flock.io/](https://www.flock.io/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T23:23:06.521Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-13T02:52:56.787Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-d5d2
 - Chains: base
-- Contract surface: 15 unique implementations (34 raw deployments)
-- DeFi Llama TVL: $9,771,924.67
+- Contract surface: 16 unique implementations (35 raw deployments)
+- DeFi Llama TVL: $5,702,231.18
 - On-chain TVL (included contracts): $24,372,081.06
 - TVL by chain: Base $24,372,081.06
 
@@ -25,12 +25,12 @@ The Token and Staking family provides the FLock token and staking infrastructure
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/14 (0.0%)
-- Verified + Unaudited implementations: 14
+- Verified implementations audited: 0/15 (0.0%)
+- Verified + Unaudited implementations: 15
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 15
-- Raw deployments: 34
+- Unique implementations: 16
+- Raw deployments: 35
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $24,372,081.06
@@ -49,7 +49,7 @@ The Token and Staking family provides the FLock token and staking infrastructure
 
 - None
 
-### ⚠️ Verified + Unaudited (14)
+### ⚠️ Verified + Unaudited (15)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -66,6 +66,7 @@ The Token and Staking family provides the FLock token and staking infrastructure
 | gmFlockExchangeUpgradeable | unknown | base | 2 deployments: base [`0x9e0acc...def83f`](./contracts/base-8453/0x9e0acc78662b9193f9eff711af460406e9def83f/); base `0xe1fa45...fc6123` | ⚠️ Unaudited |
 | gmFlockUpgradeable | unknown | base | 2 deployments: base [`0x781dd2...5cad24`](./contracts/base-8453/0x781dd21d8430e4e267af5713e01332742f5cad24/); base `0x7fe6d7...0c816c` | ⚠️ Unaudited |
 | LinearVestingRewards | operational_periphery | base | 2 deployments: base [`0x34e11c...dfb5b5`](./contracts/base-8453/0x34e11cf7a9d3de34b7ecf6602c23edfd98dfb5b5/); base `0xf36088...752b53` | ⚠️ Unaudited |
+| ModelTokenLaunchUpgradeable | unknown | base | [`0x6f39fe...97f0b1`](./contracts/base-8453/0x6f39fe20f19103a215bcc444a64f78ae7797f0b1/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | base | [`0xb6523d...7e9f06`](./contracts/base-8453/0xb6523d5d33d29a7e6573330310e3f0e6157e9f06/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -113,7 +114,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 7 |
 | upstream | 0 |
-| standard_library | 7 |
+| standard_library | 8 |
 | needs_review | 1 |
 
 ## Scope Matching Notes

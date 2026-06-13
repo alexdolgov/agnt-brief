@@ -1,6 +1,6 @@
 # flock.io — Contract Index
 
-15 unique implementations on base · 34 deployments · 0 audited · 14 unaudited · 1 unverified
+16 unique implementations on base · 35 deployments · 0 audited · 15 unaudited · 1 unverified
 
 ## core_logic (3)
 
@@ -39,10 +39,11 @@
 |---|---|---|---|---|
 | [FlockTokenUpgradeable (3 deployments)](./base-8453/0x22754dad1b54ce707997afce9a78a3413045f784/) | base | 3 deployments: base [`0x22754d...45f784`](./base-8453/0x22754dad1b54ce707997afce9a78a3413045f784/); base `0x5ab3d4...a7b691`; base `0x81e741...3ad626` | ⚠️ Unaudited | Verified |
 
-## unknown (3)
+## unknown (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [gmFlockExchangeUpgradeable (2 deployments)](./base-8453/0x9e0acc78662b9193f9eff711af460406e9def83f/) | base | 2 deployments: base [`0x9e0acc...def83f`](./base-8453/0x9e0acc78662b9193f9eff711af460406e9def83f/); base `0xe1fa45...fc6123` | ⚠️ Unaudited | Verified |
 | [gmFlockUpgradeable (2 deployments)](./base-8453/0x781dd21d8430e4e267af5713e01332742f5cad24/) | base | 2 deployments: base [`0x781dd2...5cad24`](./base-8453/0x781dd21d8430e4e267af5713e01332742f5cad24/); base `0x7fe6d7...0c816c` | ⚠️ Unaudited | Verified |
+| [ModelTokenLaunchUpgradeable](./base-8453/0x6f39fe20f19103a215bcc444a64f78ae7797f0b1/) | base | [`0x6f39fe...97f0b1`](./base-8453/0x6f39fe20f19103a215bcc444a64f78ae7797f0b1/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | base | `0x7bf579...5e195e` | ❓ Unverified | Unverified |

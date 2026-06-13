@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hotcoin",
-  "generated_at": "2026-06-10T23:53:27.983Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-13T02:46:13.250Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-d5d2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hotcoin",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5391703.232460001,
-    "tvl_usd": 5391703.232460001,
+    "dl_tvl_usd": 5598556.032000001,
+    "tvl_usd": 5598556.032000001,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -76,7 +76,7 @@
       "address": "0xb54259245da3578c02591565fa88a678ad542146",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Hotcoin",
       "tvl_usd": null,
@@ -106,10 +106,10 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

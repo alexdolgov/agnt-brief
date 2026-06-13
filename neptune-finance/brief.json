@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "neptune-finance",
-  "generated_at": "2026-05-25T15:49:17.486Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-13T02:47:52.439Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-d5d2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "neptune-finance",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6051685.84968,
-    "tvl_usd": 6051685.84968,
+    "dl_tvl_usd": 5929052.272899999,
+    "tvl_usd": 5929052.272899999,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Neptune Finance is a lending protocol on Ethereum that enables users to supply and borrow assets, with interest rates determined by market utilization. It provides a decentralized platform for earning yield on deposits and accessing liquidity through overcollateralized loans.",
-    "relationship_narrative": "The protocol appears to have a single product family focused on borrow rate retrieval, with no explicit shared infrastructure contracts identified in the provided inventory.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -157,6 +162,10 @@
         {
           "audit_id": 3514,
           "report_url": "https://raw.githubusercontent.com/oak-security/audit-reports/527dd1c79863f5f4d877b8756bd5488d00f2d5f9/Neptune/2024-01-09%20Audit%20Report%20-%20Neptune%20Updates%20v1.0.pdf"
+        },
+        {
+          "audit_id": 12566,
+          "report_url": "https://raw.githubusercontent.com/oak-security/audit-reports/227de1aa9d5a8fbd02e6d90e10b773d78056eba5/Neptune/2024-01-09%20Audit%20Report%20-%20Neptune%20Updates%20v1.0.pdf"
         }
       ]
     },

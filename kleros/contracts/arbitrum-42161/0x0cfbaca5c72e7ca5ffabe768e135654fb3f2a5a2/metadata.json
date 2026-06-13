@@ -1,0 +1,17 @@
+{
+  "address": "0x0cfbaca5c72e7ca5ffabe768e135654fb3f2a5a2",
+  "chain_id": 42161,
+  "contract_name": "DisputeTemplateRegistryProxy",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "00000000000000000000000057efd43dafceb6c58df57932b2b299f46fef5c8700000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000024c4d66de8000000000000000000000000f1c7c037891525e360c59f708739ac09a7670c5900000000000000000000000000000000000000000000000000000000",
+  "implementation_address": "0x57efd43dafceb6c58df57932b2b299f46fef5c87",
+  "fetched_at": "2026-06-13T02:52:24.724Z"
+}

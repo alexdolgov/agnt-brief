@@ -1,0 +1,18 @@
+{
+  "address": "0x3fed94ee4fa1b5665db84489f913e2c7e1290459",
+  "chain_id": 42161,
+  "contract_name": "EscrowView",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:52:24.822Z"
+}

@@ -5,21 +5,22 @@
 - Project: Neptune Finance (`neptune-finance`)
 - Website: [https://nept.finance/](https://nept.finance/)
 - Lifecycle: active (Tier 0, 84.1% below peak)
-- Generated: 2026-05-25T15:49:17.486Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-13T02:47:52.439Z
+- Pipeline run: v2-pipeline-2026-06-13-546062-d5d2
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $6,051,685.85
+- DeFi Llama TVL: $5,929,052.27
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Neptune Finance is a lending protocol on Ethereum that enables users to supply and borrow assets, with interest rates determined by market utilization. It provides a decentralized platform for earning yield on deposits and accessing liquidity through overcollateralized loans.
-
-### Architecture
-
-The protocol appears to have a single product family focused on borrow rate retrieval, with no explicit shared infrastructure contracts identified in the provided inventory.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

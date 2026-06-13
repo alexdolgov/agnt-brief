@@ -1,0 +1,185 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IGeneralizedTCR",
+        "name": "_gtcrTechnical",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IGeneralizedTCR",
+        "name": "_gtcrContent",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_svgAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "_itemID",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_contentItemID",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_technicalItemID",
+        "type": "bytes32"
+      }
+    ],
+    "name": "newItemMapped",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_itemID",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "gtcrContent",
+    "outputs": [
+      {
+        "internalType": "contract IGeneralizedTCR",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "gtcrTechnical",
+    "outputs": [
+      {
+        "internalType": "contract IGeneralizedTCR",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "hashToCurateIDs",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "contentItemID",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "technicalItemID",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "svgAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_itemID",
+        "type": "bytes32"
+      }
+    ],
+    "name": "isRegistered",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_itemID",
+        "type": "bytes32"
+      }
+    ],
+    "name": "isReported",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_contentItemID",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_technicalItemID",
+        "type": "bytes32"
+      }
+    ],
+    "name": "registerAd",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "itemID",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

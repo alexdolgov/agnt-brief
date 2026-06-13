@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "flock.io",
-  "generated_at": "2026-06-10T23:23:06.521Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-13T02:52:56.787Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-d5d2",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "flock.io",
@@ -16,26 +16,26 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 384,
+    "days_since_peak": 387,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 15,
-    "total_addresses": 34,
-    "unique_implementations": 15,
-    "total_deployments": 34,
+    "total_contracts": 16,
+    "total_addresses": 35,
+    "unique_implementations": 16,
+    "total_deployments": 35,
     "audited_contracts": 0,
-    "unaudited_contracts": 14,
+    "unaudited_contracts": 15,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 14,
+    "contracts_verified_unaudited": 15,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 9771924.66878,
+    "dl_tvl_usd": 5702231.18476,
     "tvl_usd": 24372081.060531937,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -63,7 +63,7 @@
     "product_family_count": 2
   },
   "surface_sufficiency": {
-    "unique_implementations": 15,
+    "unique_implementations": 16,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -649,6 +649,37 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
+      "address": "0x6f39fe20f19103a215bcc444a64f78ae7797f0b1",
+      "name": "ModelTokenLaunchUpgradeable",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7425d96df4630637ac80bdcf411ac9c14e0191cc",
+      "impl_name": "ModelTokenLaunchUpgradeable",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6f39fe20f19103a215bcc444a64f78ae7797f0b1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
       "address": "0xb6523d5d33d29a7e6573330310e3f0e6157e9f06",
       "name": "ProxyAdmin",
       "role": "governance",
@@ -786,7 +817,7 @@
   "origin_summary": {
     "native": 7,
     "upstream": 0,
-    "standard_library": 7,
+    "standard_library": 8,
     "needs_review": 1
   },
   "scope_matching_notes": {

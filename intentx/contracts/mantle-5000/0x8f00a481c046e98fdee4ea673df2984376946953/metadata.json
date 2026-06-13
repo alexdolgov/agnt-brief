@@ -1,0 +1,17 @@
+{
+  "address": "0x8f00a481c046e98fdee4ea673df2984376946953",
+  "chain_id": 5000,
+  "contract_name": "PartyAFacet",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:48:34.405Z"
+}

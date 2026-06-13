@@ -213,7 +213,7 @@
 | [flex](./flex/) | $611.7K | 0.0% | ? | active | 3 | 1 | 2026-06-10 |
 | [flexa](./flexa/) | $1.4M | 100.0% | ? | declining | 2 | 2 | 2026-06-10 |
 | [flipster](./flipster/) | $33.0M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
-| [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-06-10 |
+| [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 16 | 2026-06-13 |
 | [flying-tulip](./flying-tulip/) | $51.3M | 0.0% | $51.3M | active | 0 | 62 | 2026-06-13 |
 | [fomo3d](./fomo3d/) | $2.5M | 0.0% | ? | active | 0 | 23 | 2026-06-10 |
 | [forgeyields](./forgeyields/) | $1.3M | 0.0% | ? | active | 2 | 1 | 2026-06-11 |
@@ -264,7 +264,7 @@
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-06-11 |
 | [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 0 | 19 | 2026-06-12 |
 | [hopr](./hopr/) | $1.4M | 4.3% | ? | active | 2 | 81 | 2026-06-11 |
-| [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
+| [hotcoin](./hotcoin/) | $5.6M | 0.0% | ? | active | 0 | 1 | 2026-06-13 |
 | [houses-of-rome](./houses-of-rome/) | $0.0 | 0.0% | ? | dead | 0 | 51 | 2026-06-10 |
 | [hskhodlium](./hskhodlium/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [hybra](./hybra/) | $1.8M | 0.0% | ? | active | 0 | 81 | 2026-06-10 |
@@ -287,7 +287,7 @@
 | [initiadex](./initiadex/) | $3.0M | 0.0% | ? | unknown | 7 | 0 | 2026-06-11 |
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-06-12 |
 | [ink-bridge](./ink-bridge/) | $59.3M | 44.0% | ? | active | 17 | 68 | 2026-06-11 |
-| [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-06-11 |
+| [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 65 | 2026-06-13 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | active | 7 | 154 | 2026-06-11 |
 | [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-06-11 |
 | [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 39 | 2026-06-11 |
@@ -315,6 +315,7 @@
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 2 | 154 | 2026-06-11 |
 | [klaystation](./klaystation/) | $0.0 | 0.0% | ? | declining | 0 | 1 | 2026-06-11 |
 | [klayswap](./klayswap/) | $4.5M | 0.0% | ? | declining | 4 | 22 | 2026-06-11 |
+| [kleros](./kleros/) | $10.7M | 0.0% | $10.7M | unknown | 0 | 358 | 2026-06-13 |
 | [kodiak](./kodiak/) | $29.0M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
 | [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-06-11 |
 | [kuma-protocol](./kuma-protocol/) | $3.1M | 28.1% | $23.1K | active | 3 | 53 | 2026-06-11 |
@@ -399,7 +400,7 @@
 | [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 17 | 2026-06-11 |
 | [neo-tokyo](./neo-tokyo/) | $1.0M | 0.0% | ? | unknown | 0 | 86 | 2026-05-31 |
 | [neopin](./neopin/) | $40.2M | 0.0% | ? | active | 3 | 104 | 2026-06-12 |
-| [neptune-finance](./neptune-finance/) | $6.1M | 0.0% | ? | active | 3 | 2 | 2026-05-25 |
+| [neptune-finance](./neptune-finance/) | $5.9M | 0.0% | ? | active | 3 | 2 | 2026-06-13 |
 | [nerona](./nerona/) | $7.9M | 0.0% | ? | declining | 0 | 2 | 2026-06-11 |
 | [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | declining | 0 | 66 | 2026-06-11 |
 | [nest-credit](./nest-credit/) | $66.7K | 57.1% | ? | active | 15 | 16 | 2026-06-11 |

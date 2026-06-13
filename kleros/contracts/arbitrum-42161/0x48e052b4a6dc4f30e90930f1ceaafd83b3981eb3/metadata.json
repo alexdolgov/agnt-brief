@@ -1,0 +1,17 @@
+{
+  "address": "0x48e052b4a6dc4f30e90930f1ceaafd83b3981eb3",
+  "chain_id": 42161,
+  "contract_name": "EvidenceModuleProxy",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "000000000000000000000000e22500fa27f696d06702367246bd17bd2c8a4c5d00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000024c4d66de8000000000000000000000000f1c7c037891525e360c59f708739ac09a7670c5900000000000000000000000000000000000000000000000000000000",
+  "implementation_address": "0xa502a3942abcf8e71fbd87ed442b39b798b192c8",
+  "fetched_at": "2026-06-13T02:52:26.030Z"
+}

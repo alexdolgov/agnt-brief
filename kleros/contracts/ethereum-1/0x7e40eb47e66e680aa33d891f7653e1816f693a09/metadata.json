@@ -1,0 +1,18 @@
+{
+  "address": "0x7e40eb47e66e680aa33d891f7653e1816f693a09",
+  "chain_id": 1,
+  "contract_name": "UBIProxy",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:52:28.982Z"
+}

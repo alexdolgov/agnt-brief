@@ -1,0 +1,18 @@
+{
+  "address": "0x291b079cfeb16de397be079338c43ea21239d085",
+  "chain_id": 1,
+  "contract_name": "ArbitrableAddressList",
+  "compiler_version": "v0.4.25+commit.59dbf8f1",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:52:26.019Z"
+}

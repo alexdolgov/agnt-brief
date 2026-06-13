@@ -1,0 +1,18 @@
+{
+  "address": "0x0d67440946949fe293b45c52efd8a9b3d51e2522",
+  "chain_id": 1,
+  "contract_name": "MultipleArbitrableTransaction",
+  "compiler_version": "v0.4.24+commit.e67f0147",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-13T02:52:24.451Z"
+}

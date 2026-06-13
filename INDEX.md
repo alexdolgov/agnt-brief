@@ -765,6 +765,7 @@
 | [skate-fi](./skate-fi/) | $112.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |
 | [smilee-finance](./smilee-finance/) | $1.1M | 0.0% | ? | active | 3 | 186 | 2026-06-11 |
+| [smoothy](./smoothy/) | $478.6K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 12 | 2026-06-11 |
 | [snuggle](./snuggle/) | $0.0 | 23.5% | $0.0 | active | 3 | 88 | 2026-06-11 |
 | [sofa.org](./sofa.org/) | $49.2K | 33.3% | $46.8K | declining | 8 | 38 | 2026-05-24 |
@@ -772,6 +773,7 @@
 | [solera](./solera/) | $8.4M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
 | [solidly-labs](./solidly-labs/) | $187.3K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [sonic-gateway](./sonic-gateway/) | $7.8M | 0.0% | $7.8M | declining | 2 | 9 | 2026-06-12 |
+| [sonic-market](./sonic-market/) | $3.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [sophon-bridge](./sophon-bridge/) | $44.6M | 0.0% | $44.6M | active | 8 | 25 | 2026-06-12 |
 | [sophon-farm](./sophon-farm/) | $6.8M | 100.0% | ? | active | 9 | 1 | 2026-06-11 |
 | [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | declining | 0 | 58 | 2026-06-11 |
@@ -780,6 +782,8 @@
 | [sovryn](./sovryn/) | $38.3M | 0.0% | ? | unknown | 11 | 0 | 2026-06-11 |
 | [spacefi](./spacefi/) | $1.5M | 0.0% | ? | active | 5 | 38 | 2026-06-11 |
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 8 | 0 | 2026-06-11 |
+| [sparklex](./sparklex/) | $5.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
+| [spartan](./spartan/) | $6.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [spectra](./spectra/) | $10.5M | 12.2% | $5.8M | active | 7 | 229 | 2026-06-12 |
 | [sperax](./sperax/) | $14.2M | 47.1% | $2.6M | declining | 9 | 142 | 2026-06-11 |
 | [sphere](./sphere/) | $229.4M | 0.0% | $229.4M | active | 0 | 221 | 2026-06-13 |

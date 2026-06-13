@@ -283,6 +283,7 @@
 | [h2-finance](./h2-finance/) | $3.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [hakka-finance](./hakka-finance/) | $5.4K | 26.5% | $5.4K | active | 7 | 37 | 2026-06-10 |
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
+| [halofi](./halofi/) | $22.1K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [hanji-protocol](./hanji-protocol/) | $728.4K | 0.0% | ? | declining | 2 | 289 | 2026-06-11 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 10.0% | ? | active | 4 | 127 | 2026-06-10 |
 | [harvest-finance](./harvest-finance/) | $12.9M | 46.4% | ? | declining | 5 | 445 | 2026-06-10 |
@@ -319,6 +320,7 @@
 | [ichi](./ichi/) | $36.1M | 0.9% | $36.1M | active | 9 | 616 | 2026-06-11 |
 | [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | active | 0 | 21 | 2026-06-13 |
 | [immutable-zkevm](./immutable-zkevm/) | $28.5M | 22.2% | ? | active | 4 | 9 | 2026-06-11 |
+| [impermax-finance](./impermax-finance/) | $735.9K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [inception](./inception/) | $9.8M | 24.6% | $9.5M | declining | 9 | 78 | 2026-06-11 |
 | [index-coop](./index-coop/) | $19.4M | 13.5% | $19.4M | active | 5 | 235 | 2026-06-11 |
 | [infinifi](./infinifi/) | $145.9M | 0.0% | $145.9M | declining | 12 | 123 | 2026-06-12 |
@@ -352,6 +354,7 @@
 | [keyring](./keyring/) | $6.2M | 17.0% | ? | active | 16 | 73 | 2026-06-13 |
 | [kiloex](./kiloex/) | $5.7M | 14.3% | ? | active | 10 | 110 | 2026-06-11 |
 | [kine-finance](./kine-finance/) | $351.8M | 0.0% | $351.8M | declining | 0 | 35 | 2026-06-11 |
+| [kinetic](./kinetic/) | $59.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [king-protocol](./king-protocol/) | $1.5M | 60.0% | ? | active | 4 | 16 | 2026-06-11 |
 | [kintsu](./kintsu/) | $2.3M | 0.0% | ? | declining | 5 | 12 | 2026-06-11 |
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 2 | 154 | 2026-06-11 |
@@ -359,6 +362,7 @@
 | [klayswap](./klayswap/) | $4.5M | 0.0% | ? | declining | 4 | 22 | 2026-06-11 |
 | [kleros](./kleros/) | $10.7M | 0.0% | $10.7M | unknown | 0 | 358 | 2026-06-13 |
 | [kodiak](./kodiak/) | $29.0M | 0.0% | ? | unknown | 3 | 0 | 2026-06-11 |
+| [kogefarm](./kogefarm/) | $138.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-06-11 |
 | [kuma-protocol](./kuma-protocol/) | $3.1M | 28.1% | $23.1K | active | 3 | 53 | 2026-06-11 |
 | [kyberswap](./kyberswap/) | $58.3M | 8.8% | $58.3M | declining | 6 | 445 | 2026-06-11 |
@@ -377,6 +381,7 @@
 | [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | active | 4 | 20 | 2026-06-11 |
 | [liquity](./liquity/) | $217.0M | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
+| [lisa-finance](./lisa-finance/) | $356.8K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [lisk-bridge](./lisk-bridge/) | $50.9M | 0.0% | $50.9M | active | 0 | 102 | 2026-06-12 |
 | [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | declining | 0 | 93 | 2026-06-11 |
 | [llamapay](./llamapay/) | $21.0M | 0.0% | ? | active | 1 | 20 | 2026-06-12 |

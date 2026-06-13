@@ -1013,7 +1013,12 @@ Each project directory contains:
 | [odyssey-finance](./odyssey-finance/brief.md) | $9.22M | base, ethereum, optimism | 82 | 77/82 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [okcoin](./okcoin/brief.md) | $25.77M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [olive](./olive/brief.md) | $46.47K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [olive-network](./olive-network/brief.md) | $66.68K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [olivedao](./olivedao/brief.md) | $7.67K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [omnibtc](./omnibtc/brief.md) | $2.20M | 6 | 6 | 0/6 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [omnipool](./omnipool/brief.md) | $324.39 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [onchaingm](./onchaingm/brief.md) | - | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
+| [oni-exchange](./oni-exchange/brief.md) | $1.29K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [openeden](./openeden/brief.md) | $225.38M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [openleverage](./openleverage/brief.md) | $88.94K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [opensky-finance](./opensky-finance/brief.md) | $15.79K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -1240,5 +1245,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T14:03:33.484Z_
-_Projects: 1228_
+_Generated: 2026-06-13T14:04:49.923Z_
+_Projects: 1233_

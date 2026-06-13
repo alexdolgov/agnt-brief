@@ -6,8 +6,8 @@
 | Address | `0x25e8f96c443b392ff9cdb9159b02f0040ec27326` |
 | Role | core_logic |
 | Origin | native |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [audit report](https://sourcehat.com/audits/JonesAURA) |
 | Deployments | 1 (ethereum [`0x25e8f96c443b392ff9cdb9159b02f0040ec27326`](../0x25e8f96c443b392ff9cdb9159b02f0040ec27326/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |

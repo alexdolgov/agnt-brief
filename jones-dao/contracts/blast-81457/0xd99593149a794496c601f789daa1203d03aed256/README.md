@@ -5,7 +5,7 @@
 | Chain | blast (81457) |
 | Address | `0xd99593149a794496c601f789daa1203d03aed256` |
 | Role | core_logic |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (blast [`0xd99593149a794496c601f789daa1203d03aed256`](../0xd99593149a794496c601f789daa1203d03aed256/)) |

@@ -57,7 +57,7 @@
 | [amped-finance](./amped-finance/) | $370.4 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [ampleswap](./ampleswap/) | $16.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [amy-finance](./amy-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [angle](./angle/) | $1.4B | 0.0% | $1.4B | declining | 3 | 547 | 2026-06-11 |
+| [angle](./angle/) | $1.4B | 2.4% | $1.4B | declining | 3 | 558 | 2026-06-13 |
 | [angles](./angles/) | $441.0K | 4.0% | $7.5 | active | 1 | 40 | 2026-06-10 |
 | [angstrom](./angstrom/) | $11.3M | 7.7% | ? | declining | 3 | 13 | 2026-06-10 |
 | [animal-farm](./animal-farm/) | $66.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -323,7 +323,7 @@
 | [degate](./degate/) | $159.3 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dehive](./dehive/) | $114.5K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | active | 0 | 53 | 2026-06-13 |
-| [deltaprime](./deltaprime/) | $2.6K | 0.0% | $2.6K | active | 0 | 482 | 2026-05-31 |
+| [deltaprime](./deltaprime/) | $2.6K | 0.0% | $2.6K | active | 0 | 482 | 2026-06-13 |
 | [deltatrade](./deltatrade/) | $92.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [demeter](./demeter/) | $281.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [denet-file-token](./denet-file-token/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -590,7 +590,7 @@
 | [jetswap](./jetswap/) | $323.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [jiko](./jiko/) | $116.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [jito](./jito/) | $642.5M | 0.0% | ? | unknown | 15 | 0 | 2026-06-13 |
-| [jones-dao](./jones-dao/) | $519.7M | 0.0% | $519.7M | active | 5 | 502 | 2026-06-11 |
+| [jones-dao](./jones-dao/) | $519.7M | 7.0% | $68.0M | active | 5 | 502 | 2026-06-13 |
 | [jpg-store](./jpg-store/) | $130.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [juicebox](./juicebox/) | $8.6M | 5.9% | ? | active | 10 | 77 | 2026-06-11 |
 | [justlend](./justlend/) | $3.3B | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -871,7 +871,7 @@
 | [otsea](./otsea/) | $393.8K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [outcome-finance](./outcome-finance/) | $1.3M | 0.0% | ? | declining | 0 | 3 | 2026-06-11 |
 | [overnight-finance](./overnight-finance/) | $10.0M | 0.0% | ? | declining | 2 | 4353 | 2026-06-11 |
-| [overtime](./overtime/) | $42.5M | 0.0% | $42.5M | declining | 8 | 200 | 2026-06-11 |
+| [overtime](./overtime/) | $42.5M | 13.1% | $42.5M | declining | 11 | 201 | 2026-06-13 |
 | [oxiswap](./oxiswap/) | $0.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [p2pb2b](./p2pb2b/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | active | 0 | 3 | 2026-06-11 |
@@ -1069,7 +1069,7 @@
 | [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | active | 0 | 2 | 2026-06-12 |
 | [sierra-protocol](./sierra-protocol/) | $39.6M | 4.0% | $5.3M | active | 1 | 78 | 2026-06-11 |
-| [sigma-money](./sigma-money/) | $593.4M | 0.0% | $593.4M | active | 10 | 231 | 2026-06-11 |
+| [sigma-money](./sigma-money/) | $593.4M | 18.8% | $593.0M | active | 10 | 235 | 2026-06-13 |
 | [silo-finance](./silo-finance/) | $3.3M | 15.7% | $641.3K | unknown | 10 | 529 | 2026-05-31 |
 | [singularity-finance](./singularity-finance/) | $2.7M | 70.0% | $2.7M | transitioning | 2 | 10 | 2026-06-13 |
 | [singularv](./singularv/) | $1.1B | 11.4% | $1.1B | declining | 7 | 83 | 2026-06-11 |

@@ -5,10 +5,10 @@
 - Project: Jones DAO (`jones-dao`)
 - Website: [https://jonesdao.io](https://jonesdao.io)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-11T11:38:42.542Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
+- Generated: 2026-06-13T16:45:17.701Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-ee40
 - Chains: arbitrum, base, berachain, blast, ethereum
-- Contract surface: 502 unique implementations (1339 raw deployments)
+- Contract surface: 502 unique implementations (1369 raw deployments)
 - DeFi Llama TVL: $1,318,309.60
 - On-chain TVL (included contracts): $519,746,713.51
 - TVL by chain: Ethereum $452,536,081.49 | Arbitrum $67,210,632.02
@@ -23,48 +23,72 @@ The families share governance via Gnosis Safe and ProxyAdmin, and use common inf
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/354 (0.0%)
-- Verified + Unaudited implementations: 340
-- Verified by bytecode match: 14
-- Unverified implementations: 148
+- Verified implementations audited: 25/355 (7.0%)
+- Verified + Unaudited implementations: 315
+- Verified by bytecode match: 15
+- Unverified implementations: 147
 - Unique implementations: 502
-- Raw deployments: 1339
+- Raw deployments: 1369
 - Audits discovered: 5
-- Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $519,746,713.51
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 5 unknown
+- Scoreable audits (matched contracts): 5
+- ASD (verified + unaudited TVL): $68,031,525.04
+- Latest audit: 2023-03 (stale)
+- Staleness: 0 fresh, 0 aging, 5 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| SourceHat | Tier 2 | 25 | 7.0% | 2023-03 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
-
-- None
-
-### ⚠️ Verified + Unaudited (340)
+### ✅ Verified + Audited (25)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| AuraVirtualVault | core_logic | ethereum | [`0x25e8f9...c27326`](./contracts/ethereum-1/0x25e8f96c443b392ff9cdb9159b02f0040ec27326/) | ⚠️ Unaudited |
+| AuraVirtualVault | core_logic | ethereum | [`0x25e8f9...c27326`](./contracts/ethereum-1/0x25e8f96c443b392ff9cdb9159b02f0040ec27326/) | ✅ Audited |
+| JonesGlpStableVault | core_logic | arbitrum | [`0xa485a0...a73e99`](./contracts/arbitrum-42161/0xa485a0bc44988b95245d5f20497ccaff58a73e99/) | ✅ Audited |
+| JonesERC20VaultV3 | core_logic | arbitrum | 3 deployments: arbitrum [`0x42448f...0e88e5`](./contracts/arbitrum-42161/0x42448fddcec02124cf6db19a9f91dea7bb0e88e5/); arbitrum `0x8883e5...73f3f5`; arbitrum `0xf46ce0...755346` | ✅ Audited |
+| JonesDPXVaultV3 | core_logic | arbitrum | [`0x5ba98a...0e1246`](./contracts/arbitrum-42161/0x5ba98ad75ab87eb90ffc2b680bcfc6b9030e1246/) | ✅ Audited |
+| auraBALSwapper | adapter | ethereum | [`0x638385...41c7cf`](./contracts/ethereum-1/0x6383851e45098734f0f90742c2e7f258a441c7cf/) | ✅ Audited |
+| AuraCompounderStrategy | adapter | ethereum | 3 deployments: ethereum [`0x54d6dc...55bc3d`](./contracts/ethereum-1/0x54d6dcae86cb8d181ba3b8dd7f0704140f55bc3d/); ethereum `0x7629fc...121f2c`; ethereum `0xe2d415...b7c7b5` | ✅ Audited |
+| AuraCompounderVault | adapter | ethereum | [`0x198d73...34cd1f`](./contracts/ethereum-1/0x198d7387fa97a73f05b8578cdeff8f2a1f34cd1f/) | ✅ Audited |
+| AuraRouter | adapter | ethereum | 6 deployments: ethereum [`0x30342a...df3168`](./contracts/ethereum-1/0x30342ac5cdd95be2be23b8886a7c841bd9df3168/); ethereum `0x3593a7...8f2b24`; ethereum `0x86a757...c9bc27`; ethereum `0xa35092...57c613`; ethereum `0xef3df8...b03297`; ethereum `0xf01dd6...92b449` | ✅ Audited |
+| GlpAdapter | adapter | arbitrum | 2 deployments: arbitrum [`0x42efe3...ebefc1`](./contracts/arbitrum-42161/0x42efe3e686808cca051a49bcde34c5cba2ebefc1/); arbitrum `0xa79d81...ad9400` | ✅ Audited |
+| GlpJonesRewards | unknown | arbitrum | 2 deployments: arbitrum [`0x3c5376...bd6673`](./contracts/arbitrum-42161/0x3c5376bf032cec70c342b64f43778dc06bbd6673/); arbitrum `0xb6ea5e...62c07e` | ✅ Audited |
+| JonesGlpCompoundRewards | unknown | arbitrum | 2 deployments: arbitrum [`0x7241bc...4a3af6`](./contracts/arbitrum-42161/0x7241bc8035b65865156ddb5edef3eb32874a3af6/); arbitrum `0xe66998...8458e0` | ✅ Audited |
+| JonesGlpLeverageStrategy | core_logic | arbitrum | 2 deployments: arbitrum [`0x15df56...b584d5`](./contracts/arbitrum-42161/0x15df56a82c194fefec9337c37a41964b69b584d5/); arbitrum `0x8e53d1...04cd31` | ✅ Audited |
+| JonesGlpRewardDistributor | operational_periphery | arbitrum | [`0xda04b5...980a12`](./contracts/arbitrum-42161/0xda04b5f54756774ad405de499bb5100c80980a12/) | ✅ Audited |
+| JonesGlpRewardsSplitter | operational_periphery | arbitrum | 2 deployments: arbitrum [`0x43cc8e...ad7216`](./contracts/arbitrum-42161/0x43cc8e7026077e4b21ddc658ea26f39475ad7216/); arbitrum `0xb77289...bf889a` | ✅ Audited |
+| JonesGlpRewardsSwapper | adapter | arbitrum | [`0x65ab0a...a689b4`](./contracts/arbitrum-42161/0x65ab0ad9f0e6db36aac10f28e97505c199a689b4/) | ✅ Audited |
+| JonesGlpRewardTracker | unknown | arbitrum | 2 deployments: arbitrum [`0x13c6be...b19d9d`](./contracts/arbitrum-42161/0x13c6bed5aa16823aba5bba691caec63788b19d9d/); arbitrum `0xeb23c7...7cfaca` | ✅ Audited |
+| JonesGlpVault | core_logic | arbitrum | [`0x17ff15...7f24c7`](./contracts/arbitrum-42161/0x17ff154a329e37282eb9a76c3ae848fc277f24c7/) | ✅ Audited |
+| JonesGlpVaultRouter | adapter | arbitrum | 2 deployments: arbitrum [`0x01ad96...05aec2`](./contracts/arbitrum-42161/0x01ad96292cdc627307817c428562226fd905aec2/); arbitrum `0x2f43c6...f3d713` | ✅ Audited |
+| JonesSSOVCallV3Strategy | core_logic | arbitrum | 13 deployments: arbitrum [`0x02dcd1...182d95`](./contracts/arbitrum-42161/0x02dcd1d46ca19cca8961658f9389b4901e182d95/); arbitrum `0x1304e5...c897dd`; arbitrum `0x30f3cd...1a083f`; arbitrum `0x37a15b...607c05`; arbitrum `0x5296d6...44e33e`; arbitrum `0x5faa93...4bf437`; arbitrum `0x64f4be...cf7219`; arbitrum `0x67b99b...510e57`; arbitrum `0xc298d6...5a1637`; arbitrum `0xc54562...b42538`; arbitrum `0xcb75dd...637d86`; arbitrum `0xcb9423...91044c`; arbitrum `0xd74645...7520a5` | ✅ Audited |
+| JonesSSOVPutV3Strategy | core_logic | arbitrum | 8 deployments: arbitrum [`0x220890...ebeb34`](./contracts/arbitrum-42161/0x22089039a813aedde848ac5876c1492fd2ebeb34/); arbitrum `0x34c471...6529b6`; arbitrum `0x43c952...35a6cd`; arbitrum `0xa151fe...49f1d0`; arbitrum `0xb3994c...a54fc1`; arbitrum `0xbd2c07...3e7545`; arbitrum `0xdedc5d...376ffa`; arbitrum `0xe2bfe2...1d6110` | ✅ Audited |
+| JonesWETHVaultV3Adapter | adapter | arbitrum | 2 deployments: arbitrum [`0x086d9a...be7772`](./contracts/arbitrum-42161/0x086d9abc69c60b75470e620221cd857bcdbe7772/); arbitrum `0xbcb55b...6f3c2d` | ✅ Audited |
+| OneInchV4Swapper | adapter | ethereum | [`0x5f7f00...eb7103`](./contracts/ethereum-1/0x5f7f007be2a22ea16fe2af6eca769494b6eb7103/) | ✅ Audited |
+| UniswapV2Swapper | adapter | ethereum | [`0x873066...8ef314`](./contracts/ethereum-1/0x873066f098e6a3a4febf65c9e437f7f71c8ef314/) | ✅ Audited |
+| UniswapV3Swapper | adapter | arbitrum | 8 deployments: arbitrum [`0x252b8f...73ea55`](./contracts/arbitrum-42161/0x252b8f51763dad24a29de48e9717616c4173ea55/); arbitrum `0x3b671c...3f89a8`; arbitrum `0x4e53e5...946b63`; arbitrum `0x514fa9...c05797`; arbitrum `0x6533f7...e8c5e6`; arbitrum `0x70be7c...a1d34a`; arbitrum `0x9b4627...5515fb`; arbitrum `0xc835ac...44c8ee` | ✅ Audited |
+| WhitelistController | governance | arbitrum | 11 deployments: arbitrum [`0x12c66e...86e3c6`](./contracts/arbitrum-42161/0x12c66ed98c7579d2d00675e18a9feb9cec86e3c6/); arbitrum `0x29e9e0...c3b1b2`; arbitrum `0x2acc79...d73e88`; arbitrum `0x3c9da6...5dacea`; arbitrum `0x7ff3ce...b5aed2`; arbitrum `0xa30ce8...6cd0d6`; arbitrum `0xc06852...abd4cb`; arbitrum `0xde3476...c2bcca`; arbitrum `0xe8eedf...93893c`; arbitrum `0xf3a86e...b7ab24`; arbitrum `0xf6c7ed...b13290` | ✅ Audited |
+
+### ⚠️ Verified + Unaudited (315)
+
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
 | StandardArbERC20 | token | arbitrum | [`0x6c2c06...13ee55`](./contracts/arbitrum-42161/0x6c2c06790b3e3e3c38e12ee22f8183b37a13ee55/) | ⚠️ Unaudited |
-| JonesGlpStableVault | core_logic | arbitrum | [`0xa485a0...a73e99`](./contracts/arbitrum-42161/0xa485a0bc44988b95245d5f20497ccaff58a73e99/) | ⚠️ Unaudited |
 | cvxCrvToken | token | ethereum | [`0x616e8b...d4608d`](./contracts/ethereum-1/0x616e8bfa43f920657b3497dbf40d6b1a02d4608d/) | ⚠️ Unaudited |
 | SynapseERC20 | token | arbitrum | [`0x8d9ba5...e65fb1`](./contracts/arbitrum-42161/0x8d9ba570d6cb60c7e3e0f31343efe75ab8e65fb1/) | ⚠️ Unaudited |
 | ArbRdpxTokenV2 | token | arbitrum | [`0x32eb79...92a212`](./contracts/arbitrum-42161/0x32eb7902d4134bf98a28b963d26de779af92a212/) | ⚠️ Unaudited |
 | JonesToken | token | arbitrum | [`0x10393c...cd67da`](./contracts/arbitrum-42161/0x10393c20975cf177a3513071bc110f7962cd67da/) | ⚠️ Unaudited |
 | AuraToken | token | ethereum | 2 deployments: ethereum [`0x665d01...59cf15`](./contracts/ethereum-1/0x665d01dbd89a0d1b693bb806feea499b5359cf15/); ethereum `0xc0c293...903dbf` | ⚠️ Unaudited |
 | UnderlyingVault | core_logic | arbitrum | 15 deployments: arbitrum [`0x0b5ddf...d73c40`](./contracts/arbitrum-42161/0x0b5ddfc404aa13e2f9c53f6a3f5126075ad73c40/); arbitrum `0x21164d...6ef565`; arbitrum `0x57593a...04a782`; arbitrum `0x60960c...d4bf03`; arbitrum `0x63dfc2...184dd3`; arbitrum `0x7cc310...49b151`; arbitrum `0xa0960b...40febe`; arbitrum `0xb0bde1...7be3a2`; arbitrum `0xc1bb89...3edc76`; arbitrum `0xca8e63...315e17`; arbitrum `0xd45ec2...9d5970`; arbitrum `0xd657df...abcd23`; arbitrum `0xe6ada8...0c4537`; arbitrum `0xf0b987...2272a7`; arbitrum `0xf55ee9...530f7c` | ⚠️ Unaudited |
-| JonesERC20VaultV3 | core_logic | arbitrum | 3 deployments: arbitrum [`0x42448f...0e88e5`](./contracts/arbitrum-42161/0x42448fddcec02124cf6db19a9f91dea7bb0e88e5/); arbitrum `0x8883e5...73f3f5`; arbitrum `0xf46ce0...755346` | ⚠️ Unaudited |
 | BaseRewardPool | core_logic | ethereum | [`0x5e5ea2...96efcc`](./contracts/ethereum-1/0x5e5ea2048475854a5702f5b8468a51ba1296efcc/) | ⚠️ Unaudited |
 | MetavaultRefund | core_logic | arbitrum | 2 deployments: arbitrum [`0x287bfe...d60b09`](./contracts/arbitrum-42161/0x287bfe9ee929842d1af340814332e7548ad60b09/); arbitrum `0x7139bb...583c2b` | ⚠️ Unaudited |
 | GMStrategy | core_logic | arbitrum | 6 deployments: arbitrum [`0x0ce108...918d3d`](./contracts/arbitrum-42161/0x0ce108b600ce98990d7764ea2ca0f70876918d3d/); arbitrum `0x326339...fd788c`; arbitrum `0x3d89a9...353f1d`; arbitrum `0x3fbe47...de97c7`; arbitrum `0x7d34fd...e73cad`; arbitrum `0xbf0642...a81b1e` | ⚠️ Unaudited |
 | AuraBalRewardPool | core_logic | ethereum | [`0xc47162...651c0c`](./contracts/ethereum-1/0xc47162863a12227e5c3b0860715f9cf721651c0c/) | ⚠️ Unaudited |
-| JonesDPXVaultV3 | core_logic | arbitrum | [`0x5ba98a...0e1246`](./contracts/arbitrum-42161/0x5ba98ad75ab87eb90ffc2b680bcfc6b9030e1246/) | ⚠️ Unaudited |
 | ArbRdpxToken | token | arbitrum | [`0xeec2be...afdc81`](./contracts/arbitrum-42161/0xeec2be5c91ae7f8a338e1e5f3b5de49d07afdc81/) | ⚠️ Unaudited |
 | DpxEthBearVault | core_logic | arbitrum | 3 deployments: arbitrum [`0x7a82a0...5fd2c3`](./contracts/arbitrum-42161/0x7a82a0ca7a2569d6cd3df2afeaf508f6d85fd2c3/); arbitrum `0x9be187...6c51e7`; arbitrum `0xe133c0...448b10` | ⚠️ Unaudited |
 | BasicStakingStrategy | core_logic | arbitrum | 2 deployments: arbitrum [`0x558df6...23a1a6`](./contracts/arbitrum-42161/0x558df6bb25f754aea5fa2f3ed8e78e7afe23a1a6/); arbitrum `0x69a9b3...3c77e9` | ⚠️ Unaudited |
@@ -93,15 +117,11 @@ The families share governance via Gnosis Safe and ProxyAdmin, and use common inf
 | AtlanticStraddle | unknown | arbitrum | 15 deployments: arbitrum [`0x0be090...fa3e51`](./contracts/arbitrum-42161/0x0be0905dafa89dac8f26e9f96e04cfe3c5fa3e51/); arbitrum `0x0dc96f...dba829`; arbitrum `0x17fff5...848734`; arbitrum `0x2732b7...378dd1`; arbitrum `0x49bd75...ce8de1`; arbitrum `0x5847a3...2dd0dd`; arbitrum `0x59c648...5ab425`; arbitrum `0x88e75a...e7b05a`; arbitrum `0x99ab5b...2a18e3`; arbitrum `0xcbce47...923e5c`; arbitrum `0xcd7f2b...fa8e52`; arbitrum `0xd533ef...4b2fee`; arbitrum `0xe3e5ae...f67f19`; arbitrum `0xebad4c...93d046`; arbitrum `0xfca313...2da64e` | ⚠️ Unaudited |
 | AtlanticStraddleUtils | unknown | arbitrum | [`0x418ca2...26d66a`](./contracts/arbitrum-42161/0x418ca2ad46bc90386bc05768da756e494d26d66a/) | ⚠️ Unaudited |
 | AtlanticStraddleVolatilityOracle | operational_periphery | arbitrum | [`0x774537...60c015`](./contracts/arbitrum-42161/0x7745370dfcc3780dd7675995b529d4e24960c015/) | ⚠️ Unaudited |
-| auraBALSwapper | adapter | ethereum | [`0x638385...41c7cf`](./contracts/ethereum-1/0x6383851e45098734f0f90742c2e7f258a441c7cf/) | ⚠️ Unaudited |
 | AuraClaimZap | adapter | ethereum | [`0x623b83...917ab2`](./contracts/ethereum-1/0x623b83755a39b12161a63748f3f595a530917ab2/) | ⚠️ Unaudited |
-| AuraCompounderStrategy | adapter | ethereum | 3 deployments: ethereum [`0x54d6dc...55bc3d`](./contracts/ethereum-1/0x54d6dcae86cb8d181ba3b8dd7f0704140f55bc3d/); ethereum `0x7629fc...121f2c`; ethereum `0xe2d415...b7c7b5` | ⚠️ Unaudited |
-| AuraCompounderVault | adapter | ethereum | [`0x198d73...34cd1f`](./contracts/ethereum-1/0x198d7387fa97a73f05b8578cdeff8f2a1f34cd1f/) | ⚠️ Unaudited |
 | AuraLocker | unknown | ethereum | [`0x3fa73f...9bbcac`](./contracts/ethereum-1/0x3fa73f1e5d8a792c80f426fc8f84fbf7ce9bbcac/) | ⚠️ Unaudited |
 | AuraMerkleDrop | operational_periphery | ethereum | 2 deployments: ethereum [`0x1a661c...80a8fb`](./contracts/ethereum-1/0x1a661cf8d8cd69dd2a423f3626a461a24280a8fb/); ethereum `0x45eb1a...287724` | ⚠️ Unaudited |
 | AuraMinter | unknown | ethereum | [`0x59a5cc...e13707`](./contracts/ethereum-1/0x59a5ccd34943cd0adcf5ce703ee9f06889e13707/) | ⚠️ Unaudited |
 | AuraPenaltyForwarder | unknown | ethereum | [`0x404356...c20d1e`](./contracts/ethereum-1/0x4043569200f7a7a1d989abbabc2de2bde1c20d1e/) | ⚠️ Unaudited |
-| AuraRouter | adapter | ethereum | 6 deployments: ethereum [`0x30342a...df3168`](./contracts/ethereum-1/0x30342ac5cdd95be2be23b8886a7c841bd9df3168/); ethereum `0x3593a7...8f2b24`; ethereum `0x86a757...c9bc27`; ethereum `0xa35092...57c613`; ethereum `0xef3df8...b03297`; ethereum `0xf01dd6...92b449` | ⚠️ Unaudited |
 | AuraStakingProxy | proxy | ethereum | [`0xd9e863...f89c6c`](./contracts/ethereum-1/0xd9e863b7317a66fe0a4d2834910f604fd6f89c6c/) | ⚠️ Unaudited |
 | AuraVestedEscrow | operational_periphery | ethereum | 5 deployments: ethereum [`0x243466...53fac6`](./contracts/ethereum-1/0x24346652e0e2ae0ce05c781501fdf4fe4553fac6/); ethereum `0x43b170...6694fa`; ethereum `0x45025e...1538f5`; ethereum `0x5bd3fc...2d836a`; ethereum `0xfd7217...30d422` | ⚠️ Unaudited |
 | BalLiquidityProvider | unknown | ethereum | [`0xa7429a...70e32c`](./contracts/ethereum-1/0xa7429af4deb16827dad0e71d8aeea9c2bf70e32c/) | ⚠️ Unaudited |
@@ -118,6 +138,7 @@ The families share governance via Gnosis Safe and ProxyAdmin, and use common inf
 | Claimer | operational_periphery | arbitrum | [`0xc4e751...bf90f1`](./contracts/arbitrum-42161/0xc4e751f599fe515876346824ebb6995bb8bf90f1/) | ⚠️ Unaudited |
 | ClaimFeesHelper | periphery | ethereum | [`0x999dbc...d0f56e`](./contracts/ethereum-1/0x999dbce0a18f721f04e793f916c30e72a9d0f56e/) | ⚠️ Unaudited |
 | Compounder | adapter | arbitrum | [`0x6d5cfa...084ff1`](./contracts/arbitrum-42161/0x6d5cfab014c8ec8b8ce917e3648d767944084ff1/) | ⚠️ Unaudited |
+| CompounderStrategy | unknown | blast | 2 deployments: blast [`0x11a5b7...2cb956`](./contracts/blast-81457/0x11a5b75f2d8474e8b5f8d529729dd7c0142cb956/); blast `0xf0c06b...914b6c` | ⚠️ Unaudited |
 | CompoundVault | core_logic | arbitrum | 2 deployments: arbitrum [`0x67dd2f...27197c`](./contracts/arbitrum-42161/0x67dd2f4d6e6d6d8d17b4839e6bff4fec2627197c/); arbitrum `0x8ca7f1...185c81` | ⚠️ Unaudited |
 | ContributorVesting | operational_periphery | arbitrum | 4 deployments: arbitrum [`0x19ea65...c724f5`](./contracts/arbitrum-42161/0x19ea653256e79abaf90b4586632463d4b3c724f5/); arbitrum `0x47acb7...e83dda`; arbitrum `0xa506a3...e92207`; arbitrum `0xa99096...ce68c8` | ⚠️ Unaudited |
 | Crv2PoolOracle | operational_periphery | arbitrum | [`0x1e305b...117040`](./contracts/arbitrum-42161/0x1e305b22c177f6fdb55d891c63b1c8c399117040/) | ⚠️ Unaudited |
@@ -178,8 +199,6 @@ The families share governance via Gnosis Safe and ProxyAdmin, and use common inf
 | FeeStrategy2 | core_logic | arbitrum | [`0x1a5444...16563a`](./contracts/arbitrum-42161/0x1a5444362857cafdc58ab95b79a5a9285d16563a/) | ⚠️ Unaudited |
 | FeeStrategy3 | core_logic | arbitrum | [`0xb96491...b3deac`](./contracts/arbitrum-42161/0xb964912b4054e8fb54431ed952f29ae3c8b3deac/) | ⚠️ Unaudited |
 | FeeStrategyPut | core_logic | arbitrum | [`0xc1febb...8e3ba9`](./contracts/arbitrum-42161/0xc1febbf0b08fbbae32d4bf23fb375150548e3ba9/) | ⚠️ Unaudited |
-| GlpAdapter | adapter | arbitrum | 2 deployments: arbitrum [`0x42efe3...ebefc1`](./contracts/arbitrum-42161/0x42efe3e686808cca051a49bcde34c5cba2ebefc1/); arbitrum `0xa79d81...ad9400` | ⚠️ Unaudited |
-| GlpJonesRewards | unknown | arbitrum | 2 deployments: arbitrum [`0x3c5376...bd6673`](./contracts/arbitrum-42161/0x3c5376bf032cec70c342b64f43778dc06bbd6673/); arbitrum `0xb6ea5e...62c07e` | ⚠️ Unaudited |
 | GlpPriceAggregator | operational_periphery | arbitrum | [`0x691113...00883b`](./contracts/arbitrum-42161/0x6911132effaee3d1116a96c1357830a35400883b/) | ⚠️ Unaudited |
 | GlpRewardDistributor | operational_periphery | arbitrum | 2 deployments: arbitrum [`0x5b53d6...6b78b2`](./contracts/arbitrum-42161/0x5b53d6b03d122050b8cc9b647ed11c34d66b78b2/); arbitrum `0xe0a07a...53c2a2` | ⚠️ Unaudited |
 | GlpRouter | adapter | arbitrum | 2 deployments: arbitrum [`0x1fce2c...f754ae`](./contracts/arbitrum-42161/0x1fce2cd34bb76c988d5033d081250ed227f754ae/); arbitrum `0x474ec7...efd30c` | ⚠️ Unaudited |
@@ -238,14 +257,6 @@ The families share governance via Gnosis Safe and ProxyAdmin, and use common inf
 | JonesEthPutStrategy | core_logic | arbitrum | 2 deployments: arbitrum [`0x02017a...43674e`](./contracts/arbitrum-42161/0x02017a8334196537fd1933de833b3ece9a43674e/); arbitrum `0x6266d3...c77f81` | ⚠️ Unaudited |
 | JonesETHVaultV1 | core_logic | arbitrum | [`0x50744d...2d561c`](./contracts/arbitrum-42161/0x50744d5e6d138aca596f7d36e659d097be2d561c/) | ⚠️ Unaudited |
 | JonesFeeReceiver | unknown | arbitrum | [`0xccdb22...ea6b24`](./contracts/arbitrum-42161/0xccdb22c29f849c2c34380d64217cb8636dea6b24/) | ⚠️ Unaudited |
-| JonesGlpCompoundRewards | unknown | arbitrum | 2 deployments: arbitrum [`0x7241bc...4a3af6`](./contracts/arbitrum-42161/0x7241bc8035b65865156ddb5edef3eb32874a3af6/); arbitrum `0xe66998...8458e0` | ⚠️ Unaudited |
-| JonesGlpLeverageStrategy | core_logic | arbitrum | 2 deployments: arbitrum [`0x15df56...b584d5`](./contracts/arbitrum-42161/0x15df56a82c194fefec9337c37a41964b69b584d5/); arbitrum `0x8e53d1...04cd31` | ⚠️ Unaudited |
-| JonesGlpRewardDistributor | operational_periphery | arbitrum | [`0xda04b5...980a12`](./contracts/arbitrum-42161/0xda04b5f54756774ad405de499bb5100c80980a12/) | ⚠️ Unaudited |
-| JonesGlpRewardsSplitter | operational_periphery | arbitrum | 2 deployments: arbitrum [`0x43cc8e...ad7216`](./contracts/arbitrum-42161/0x43cc8e7026077e4b21ddc658ea26f39475ad7216/); arbitrum `0xb77289...bf889a` | ⚠️ Unaudited |
-| JonesGlpRewardsSwapper | adapter | arbitrum | [`0x65ab0a...a689b4`](./contracts/arbitrum-42161/0x65ab0ad9f0e6db36aac10f28e97505c199a689b4/) | ⚠️ Unaudited |
-| JonesGlpRewardTracker | unknown | arbitrum | 2 deployments: arbitrum [`0x13c6be...b19d9d`](./contracts/arbitrum-42161/0x13c6bed5aa16823aba5bba691caec63788b19d9d/); arbitrum `0xeb23c7...7cfaca` | ⚠️ Unaudited |
-| JonesGlpVault | core_logic | arbitrum | [`0x17ff15...7f24c7`](./contracts/arbitrum-42161/0x17ff154a329e37282eb9a76c3ae848fc277f24c7/) | ⚠️ Unaudited |
-| JonesGlpVaultRouter | adapter | arbitrum | 2 deployments: arbitrum [`0x01ad96...05aec2`](./contracts/arbitrum-42161/0x01ad96292cdc627307817c428562226fd905aec2/); arbitrum `0x2f43c6...f3d713` | ⚠️ Unaudited |
 | JonesGohmCallStrategy | core_logic | arbitrum | [`0x68798c...41bf04`](./contracts/arbitrum-42161/0x68798c683dbd43c3a16ae8c3e02c37999641bf04/) | ⚠️ Unaudited |
 | JonesGOHMHedgingV3Strategy | core_logic | arbitrum | [`0x2f9980...60618b`](./contracts/arbitrum-42161/0x2f9980d6fb25bd972196b19e243e36dbde60618b/) | ⚠️ Unaudited |
 | JonesGohmPutStrategy | core_logic | arbitrum | [`0xe5a8ab...ccba61`](./contracts/arbitrum-42161/0xe5a8ab24dc1b0f54dc3803cb33098879f8ccba61/) | ⚠️ Unaudited |
@@ -258,13 +269,10 @@ The families share governance via Gnosis Safe and ProxyAdmin, and use common inf
 | JonesRdpxPutStrategy | core_logic | arbitrum | [`0x261287...84e823`](./contracts/arbitrum-42161/0x2612870b2a96f43430e19bb6873a74295684e823/) | ⚠️ Unaudited |
 | JonesRefund | unknown | arbitrum | [`0x9e74c8...b9e307`](./contracts/arbitrum-42161/0x9e74c867198e2c46bc3f365ac3b401d67cb9e307/) | ⚠️ Unaudited |
 | JonesSaleClaim | unknown | arbitrum | [`0x5a81ab...19829b`](./contracts/arbitrum-42161/0x5a81abb52d96241d15d8b2bdcd76034e4119829b/) | ⚠️ Unaudited |
-| JonesSSOVCallV3Strategy | core_logic | arbitrum | 13 deployments: arbitrum [`0x02dcd1...182d95`](./contracts/arbitrum-42161/0x02dcd1d46ca19cca8961658f9389b4901e182d95/); arbitrum `0x1304e5...c897dd`; arbitrum `0x30f3cd...1a083f`; arbitrum `0x37a15b...607c05`; arbitrum `0x5296d6...44e33e`; arbitrum `0x5faa93...4bf437`; arbitrum `0x64f4be...cf7219`; arbitrum `0x67b99b...510e57`; arbitrum `0xc298d6...5a1637`; arbitrum `0xc54562...b42538`; arbitrum `0xcb75dd...637d86`; arbitrum `0xcb9423...91044c`; arbitrum `0xd74645...7520a5` | ⚠️ Unaudited |
-| JonesSSOVPutV3Strategy | core_logic | arbitrum | 8 deployments: arbitrum [`0x220890...ebeb34`](./contracts/arbitrum-42161/0x22089039a813aedde848ac5876c1492fd2ebeb34/); arbitrum `0x34c471...6529b6`; arbitrum `0x43c952...35a6cd`; arbitrum `0xa151fe...49f1d0`; arbitrum `0xb3994c...a54fc1`; arbitrum `0xbd2c07...3e7545`; arbitrum `0xdedc5d...376ffa`; arbitrum `0xe2bfe2...1d6110` | ⚠️ Unaudited |
 | JonesTestnet | unknown | arbitrum | 2 deployments: arbitrum [`0x4a7d28...8409ca`](./contracts/arbitrum-42161/0x4a7d28bfba97dc5fc71bca31cf454f1b498409ca/); arbitrum `0x98c053...d877a3` | ⚠️ Unaudited |
 | JonesTokenSale | token | arbitrum | [`0x6580f4...36f79a`](./contracts/arbitrum-42161/0x6580f41efc34e6d49ab692bd338d2a0e0636f79a/) | ⚠️ Unaudited |
 | JonesTokenSaleV3 | token | arbitrum | [`0x8a0027...4f1cf5`](./contracts/arbitrum-42161/0x8a0027152ad2781c0cbabda0cc53290bf04f1cf5/) | ⚠️ Unaudited |
 | JonesWETHHedgingV3Strategy | core_logic | arbitrum | [`0x3327a5...a32993`](./contracts/arbitrum-42161/0x3327a5f041e821f476e00572ee0862fbcaa32993/) | ⚠️ Unaudited |
-| JonesWETHVaultV3Adapter | adapter | arbitrum | 2 deployments: arbitrum [`0x086d9a...be7772`](./contracts/arbitrum-42161/0x086d9abc69c60b75470e620221cd857bcdbe7772/); arbitrum `0xbcb55b...6f3c2d` | ⚠️ Unaudited |
 | jUsdcOracle | operational_periphery | arbitrum | 2 deployments: arbitrum [`0x263c4f...bb4cc2`](./contracts/arbitrum-42161/0x263c4fabd13b3822f5d476683bbfe2c437bb4cc2/); arbitrum `0xb8d51f...e59c83` | ⚠️ Unaudited |
 | LeverageRouter | adapter | arbitrum | 7 deployments: arbitrum [`0x13504b...d06d63`](./contracts/arbitrum-42161/0x13504bfff1ce638c04619f4fd0d51a2867d06d63/); arbitrum `0x3675fb...a5b144`; arbitrum `0x3f3738...810c55`; arbitrum `0x557ca5...b5a7dc`; arbitrum `0x6cba0f...16e4f3`; arbitrum `0xabe8f6...961c7e`; arbitrum `0xdc5055...8e2c47` | ⚠️ Unaudited |
 | LeverageStrategy | core_logic | arbitrum | 4 deployments: arbitrum [`0x145f1d...072780`](./contracts/arbitrum-42161/0x145f1d25abc5ca103a9680496d07ba26d3072780/); arbitrum `0x7dfbd2...465fca`; arbitrum `0x7ee753...c61c5b`; arbitrum `0xfb69d6...666d92` | ⚠️ Unaudited |
@@ -284,7 +292,6 @@ The families share governance via Gnosis Safe and ProxyAdmin, and use common inf
 | NativeSSOV1inchRouter | adapter | arbitrum | [`0x444d91...c54dbd`](./contracts/arbitrum-42161/0x444d91660642128a17dd574599981304f9c54dbd/) | ⚠️ Unaudited |
 | NStakingStrategy | core_logic | arbitrum | [`0x1c3ad2...9faa05`](./contracts/arbitrum-42161/0x1c3ad2dcd598d41ad531f15421e9be1d089faa05/) | ⚠️ Unaudited |
 | OFTReceiverMainnet | unknown | ethereum | 4 deployments: ethereum [`0xb23064...b51d21`](./contracts/ethereum-1/0xb23064d4048d5d30b665f6f5adc4637b2bb51d21/); ethereum `0xc441a9...f32eb5`; ethereum `0xd860b2...2c0ce2`; ethereum `0xe7642e...0ace87` | ⚠️ Unaudited |
-| OneInchV4Swapper | adapter | ethereum | [`0x5f7f00...eb7103`](./contracts/ethereum-1/0x5f7f007be2a22ea16fe2af6eca769494b6eb7103/) | ⚠️ Unaudited |
 | OneInchV5Swapper | adapter | arbitrum | [`0xd21368...b25748`](./contracts/arbitrum-42161/0xd21368d942dd9672c139e61d2cc50c0d2bb25748/) | ⚠️ Unaudited |
 | OneInchZapLib | adapter | arbitrum | 2 deployments: arbitrum [`0x38b700...95300d`](./contracts/arbitrum-42161/0x38b700f33daa663de0e05a487c41aa070c95300d/); arbitrum `0x46be03...419fa5` | ⚠️ Unaudited |
 | OptionPricingSimple | unknown | arbitrum | 3 deployments: arbitrum [`0x2b99e3...bdd67b`](./contracts/arbitrum-42161/0x2b99e3d67dad973c1b9747da742b7e26c8bdd67b/); arbitrum `0x30dea2...efd30f`; arbitrum `0xb5a0f2...7bc9ed` | ⚠️ Unaudited |
@@ -335,7 +342,6 @@ The families share governance via Gnosis Safe and ProxyAdmin, and use common inf
 | RewardsDistributionV2 | unknown | arbitrum | [`0xc4e63f...7fc134`](./contracts/arbitrum-42161/0xc4e63f3be080d932f6d2d1ba1936be72b37fc134/) | ⚠️ Unaudited |
 | RewardsDistributionV3 | unknown | arbitrum | 2 deployments: arbitrum [`0x7f3649...f6a40f`](./contracts/arbitrum-42161/0x7f3649c4b6acc01d50eaa725096df27a36f6a40f/); arbitrum `0xa5151f...e941c6` | ⚠️ Unaudited |
 | RoleController | governance | arbitrum | 4 deployments: arbitrum [`0x19f056...3950f7`](./contracts/arbitrum-42161/0x19f056cecd9599db1724de7a6814e779843950f7/); arbitrum `0x724bfb...d9b41d`; arbitrum `0xa7ce1a...00fbdf`; arbitrum `0xba5c01...59c838` | ⚠️ Unaudited |
-| Router | adapter | arbitrum | 9 deployments: arbitrum [`0x4bc4d2...e22a04`](./contracts/arbitrum-42161/0x4bc4d296dfce661f34dd72d642d2a7c348e22a04/); arbitrum `0x51c079...8a8314`; arbitrum `0x99d943...211fa2`; arbitrum `0x9c895c...fc2e4d`; arbitrum `0xa6a01f...1de163`; arbitrum `0xe22cef...671779`; arbitrum `0xe9c738...16b18e`; blast `0x6a0826...5d8e90`; blast `0x9880d5...599129` | ⚠️ Unaudited |
 | SsovAdapter | adapter | arbitrum | 4 deployments: arbitrum [`0x27cebe...cf68c1`](./contracts/arbitrum-42161/0x27cebe6b5075e4d6feec384b0a31ec6e53cf68c1/); arbitrum `0x51eb37...58ed04`; arbitrum `0x634ae8...fe18c2`; arbitrum `0xaa6348...3d5d47` | ⚠️ Unaudited |
 | SSOVDelegatorFactory | registry | arbitrum | [`0xfc2403...c314d0`](./contracts/arbitrum-42161/0xfc240385b257dac2600e7fd643090e02bdc314d0/) | ⚠️ Unaudited |
 | SSOVDpx | unknown | arbitrum | 3 deployments: arbitrum [`0x73b82e...6f8a84`](./contracts/arbitrum-42161/0x73b82eba5176d8aa02606459e416f13f686f8a84/); arbitrum `0x818ced...1a76ec`; arbitrum `0xc13e7c...cb3db4` | ⚠️ Unaudited |
@@ -374,8 +380,6 @@ The families share governance via Gnosis Safe and ProxyAdmin, and use common inf
 | TokenFactory | registry | ethereum | [`0xb6ce51...b453ac`](./contracts/ethereum-1/0xb6ce51dee8bd4a2fd11c01205414dc26f0b453ac/) | ⚠️ Unaudited |
 | UniSwapLPManager | governance | arbitrum | [`0x576c56...d0ea51`](./contracts/arbitrum-42161/0x576c5663188842aa1fa810e1d4969adb25d0ea51/) | ⚠️ Unaudited |
 | UniswapPriceHelper | operational_periphery | blast | 4 deployments: arbitrum `0x9eeff0...c29b6b`; arbitrum `0xbbf270...805389`; arbitrum `0xe71ad9...7bbce2`; blast [`0x9ed990...d98514`](./contracts/blast-81457/0x9ed9904e6835bac1fd5eb83e7cae7e5fa8d98514/) | ⚠️ Unaudited |
-| UniswapV2Swapper | adapter | ethereum | [`0x873066...8ef314`](./contracts/ethereum-1/0x873066f098e6a3a4febf65c9e437f7f71c8ef314/) | ⚠️ Unaudited |
-| UniswapV3Swapper | adapter | arbitrum | 8 deployments: arbitrum [`0x252b8f...73ea55`](./contracts/arbitrum-42161/0x252b8f51763dad24a29de48e9717616c4173ea55/); arbitrum `0x3b671c...3f89a8`; arbitrum `0x4e53e5...946b63`; arbitrum `0x514fa9...c05797`; arbitrum `0x6533f7...e8c5e6`; arbitrum `0x70be7c...a1d34a`; arbitrum `0x9b4627...5515fb`; arbitrum `0xc835ac...44c8ee` | ⚠️ Unaudited |
 | UniV3Library | unknown | arbitrum | 3 deployments: arbitrum [`0x0e3d53...a6efee`](./contracts/arbitrum-42161/0x0e3d53c190ce77ac569880055aee6569ada6efee/); arbitrum `0x365fe9...ce1b1c`; arbitrum `0xa67c8a...3b75c4` | ⚠️ Unaudited |
 | UniversalMainnetSwapper | adapter | ethereum | [`0xc9dd81...4b4859`](./contracts/ethereum-1/0xc9dd81508af5c47b7d54ba29a027cc1a514b4859/) | ⚠️ Unaudited |
 | UpgradeableIncentiveReceiver | unknown | arbitrum | 2 deployments: arbitrum [`0x2a5cc1...105ad6`](./contracts/arbitrum-42161/0x2a5cc190854cd078b2b0ca2a357faf0073105ad6/); arbitrum `0x53ce52...220c26` | ⚠️ Unaudited |
@@ -387,7 +391,6 @@ The families share governance via Gnosis Safe and ProxyAdmin, and use common inf
 | VolatilityEngine | unknown | arbitrum | [`0x7da1b5...96454e`](./contracts/arbitrum-42161/0x7da1b58f0a7cbb70f756a01412842d5a8796454e/) | ⚠️ Unaudited |
 | VolatilityOracle | operational_periphery | arbitrum | 5 deployments: arbitrum [`0x3a3b40...c430ef`](./contracts/arbitrum-42161/0x3a3b40ec5be35c3c8e8be54d04da60d69ac430ef/); arbitrum `0x75f47f...cc4bc1`; arbitrum `0xb66458...3be0b1`; arbitrum `0xbbe11d...e22681`; arbitrum `0xdf2347...886c20` | ⚠️ Unaudited |
 | VoterProxy | unknown | ethereum | 2 deployments: ethereum [`0x42b047...e053ee`](./contracts/ethereum-1/0x42b047d1c751a871e61ec77bfde5fbbf2ce053ee/); ethereum `0xaf5269...0dbec2` | ⚠️ Unaudited |
-| WhitelistController | governance | arbitrum | 11 deployments: arbitrum [`0x12c66e...86e3c6`](./contracts/arbitrum-42161/0x12c66ed98c7579d2d00675e18a9feb9cec86e3c6/); arbitrum `0x29e9e0...c3b1b2`; arbitrum `0x2acc79...d73e88`; arbitrum `0x3c9da6...5dacea`; arbitrum `0x7ff3ce...b5aed2`; arbitrum `0xa30ce8...6cd0d6`; arbitrum `0xc06852...abd4cb`; arbitrum `0xde3476...c2bcca`; arbitrum `0xe8eedf...93893c`; arbitrum `0xf3a86e...b7ab24`; arbitrum `0xf6c7ed...b13290` | ⚠️ Unaudited |
 | WithdrawUVRT | operational_periphery | arbitrum | [`0x48b0a4...e718d5`](./contracts/arbitrum-42161/0x48b0a4afa62c743c0a6f9a29ec79c1ef65e718d5/) | ⚠️ Unaudited |
 | WritePositionMinter | unknown | arbitrum | 4 deployments: arbitrum [`0x041619...a10251`](./contracts/arbitrum-42161/0x0416195d103b70bb91ce627f1e339725f1a10251/); arbitrum `0x477260...b19c4d`; arbitrum `0xe0fb2a...51b43c`; arbitrum `0xf59b37...f41b40` | ⚠️ Unaudited |
 
@@ -397,7 +400,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ⚠️ Verified by Bytecode + Unaudited (14)
+### ⚠️ Verified by Bytecode + Unaudited (15)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
@@ -411,6 +414,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 | ProxyAdmin | governance | ethereum | 31 deployments: ethereum [`0x0a3492...e43de7`](./contracts/ethereum-1/0x0a3492adabfd852d5b48b0c7390221fbbfe43de7/); ethereum `0x12816c...f5fe85`; ethereum `0x55fb51...ef1746`; ethereum `0x78bf79...38233b`; ethereum `0x7b6cd8...155150`; ethereum `0x7ca237...1c0b69`; ethereum `0xcc2134...f75497`; base `0xc64b95...458dc1`; arbitrum `0x0ff5a8...738d11`; arbitrum `0x1756c4...39f6b9`; arbitrum `0x1daefd...a049d4`; arbitrum `0x2a0027...72dd81`; arbitrum `0x2c107b...09629f`; arbitrum `0x2ddb0d...0719a5`; arbitrum `0x2e6620...fb7c70`; arbitrum `0x36db57...ecdb27`; arbitrum `0x3db8cf...bf5cb0`; arbitrum `0x43f071...6b7d05`; arbitrum `0x5f7f00...eb7103`; arbitrum `0x73bc32...c5db04`; arbitrum `0x9933f4...c0c4aa`; arbitrum `0xc323c5...c1beb2`; arbitrum `0xcd8603...f00694`; arbitrum `0xd7ca56...bdaf39`; arbitrum `0xe0a28b...e24f3e`; arbitrum `0xe58917...c89a4d`; arbitrum `0xec5b07...6d94aa`; berachain `0x34d421...985d66`; berachain `0xd1d417...1b48c1`; blast `0xc185a2...855b8c`; blast `0xedc0ff...ed69df` | ⚠️ Unaudited (bytecode match) |
 | RewardReceiver | unknown | arbitrum | 17 deployments: base `0x26c6ce...4b4e75`; base `0x6a0826...5d8e90`; arbitrum [`0x0af020...6f7a0d`](./contracts/arbitrum-42161/0x0af020886c7fc1243c3f843ee76345e2ab6f7a0d/); arbitrum `0x152cc2...a9a1da`; arbitrum `0x311b17...84f875`; arbitrum `0x35da35...24a52a`; arbitrum `0x426b26...532157`; arbitrum `0x52c7f2...613554`; arbitrum `0x55f1bd...af47f2`; arbitrum `0x621c8e...92c1d8`; arbitrum `0x8c78bc...f480dd`; arbitrum `0xc64b95...458dc1`; arbitrum `0xccf028...c143de`; berachain `0x59794f...a874dd`; berachain `0xbc58d2...98f0a2`; blast `0x3be137...490edb`; blast `0xc8cb68...1db074` | ⚠️ Unaudited (bytecode match) |
 | RewardTracker | unknown | arbitrum | 16 deployments: base `0xa49bb2...07c5ff`; arbitrum [`0x124b6a...7d0458`](./contracts/arbitrum-42161/0x124b6aef712f9b2f8e239c01ce251287457d0458/); arbitrum `0x26f18b...423643`; arbitrum `0x3c3e0a...f7db2b`; arbitrum `0x4e0443...b54d90`; arbitrum `0x6ef6ba...91c92d`; arbitrum `0x77c5f0...8f612a`; arbitrum `0x9769ca...33712e`; arbitrum `0xaa1c7a...dbb3b9`; arbitrum `0xb66a96...fff9ea`; arbitrum `0xc57166...4886e8`; arbitrum `0xd85926...c7dd21`; berachain `0x26c6ce...4b4e75`; berachain `0x26f18b...423643`; blast `0xcd0505...667955`; blast `0xe71ad9...7bbce2` | ⚠️ Unaudited (bytecode match) |
+| Router | adapter | arbitrum | 38 deployments: base `0xbc99ef...3c114e`; arbitrum [`0x06974f...3f6c5f`](./contracts/arbitrum-42161/0x06974f42a1090f07d832240cb2375420eb3f6c5f/); arbitrum `0x06ea20...7e70c7`; arbitrum `0x0946e3...f2ed9b`; arbitrum `0x14c921...6d54e1`; arbitrum `0x15ee32...709e55`; arbitrum `0x204e14...530e9f`; arbitrum `0x33577c...cb7fd3`; arbitrum `0x4b5cf3...18cabe`; arbitrum `0x4bc4d2...e22a04`; arbitrum `0x5178f0...990b81`; arbitrum `0x51c079...8a8314`; arbitrum `0x661322...238c63`; arbitrum `0x6d7042...e5c3e1`; arbitrum `0x71b009...99a185`; arbitrum `0x7f7b47...335437`; arbitrum `0x99d943...211fa2`; arbitrum `0x9c895c...fc2e4d`; arbitrum `0xa49bb2...07c5ff`; arbitrum `0xa6a01f...1de163`; arbitrum `0xb7eae6...e2ca65`; arbitrum `0xbde8d5...104b62`; arbitrum `0xcb83a0...06b927`; arbitrum `0xdd9db4...5b3cc7`; arbitrum `0xe22cef...671779`; arbitrum `0xe9c738...16b18e`; arbitrum `0xea6491...61c767`; arbitrum `0xed1586...4d5753`; arbitrum `0xf18f2f...202b9c`; berachain `0xbde8d5...104b62`; berachain `0xf572c7...455c6d`; blast `0x26c6ce...4b4e75`; blast `0x29e9c7...67d2a8`; blast `0x428d38...768a3b`; blast `0x6a0826...5d8e90`; blast `0x9880d5...599129`; blast `0xb0390b...be6254`; blast `0xc16f61...105a68` | ⚠️ Unaudited (bytecode match) |
 | SingleRewardTracker | unknown | arbitrum | 23 deployments: base `0x1f6244...577485`; base `0xe6a316...883c8c`; arbitrum [`0x02af5c...c8748d`](./contracts/arbitrum-42161/0x02af5c07e96b40e3324390da4a794fff55c8748d/); arbitrum `0x067fe6...55c509`; arbitrum `0x0d490c...4790a9`; arbitrum `0x1efc5f...fc6c45`; arbitrum `0x3182a6...f3e2f6`; arbitrum `0x34831f...1ba670`; arbitrum `0x4ecafa...403a38`; arbitrum `0x8d8761...e26622`; arbitrum `0xc7e381...5654ca`; arbitrum `0xcfefb8...2bc59d`; arbitrum `0xd09991...bc51c8`; arbitrum `0xdae0a4...54b5ec`; arbitrum `0xf5692a...cce714`; berachain `0x067fe6...55c509`; berachain `0x367fe7...00a26e`; berachain `0x440713...f36231`; berachain `0xdae0a4...54b5ec`; blast `0x944fc7...2ec7c3`; blast `0xb1d090...81e475`; blast `0xbbf270...805389`; blast `0xccf028...c143de` | ⚠️ Unaudited (bytecode match) |
 | TransparentUpgradeableProxy | proxy | arbitrum | 98 deployments: ethereum `0x79ce13...3ef89f`; base `0x10498d...6caeb9`; base `0x250510...f2b931`; base `0x3e7a81...423c01`; base `0x61e40d...61eed5`; base `0x631a6b...22a71b`; base `0x698f96...6ae00d`; base `0x6eae8b...4987ae`; base `0x74fb98...876444`; base `0xa7272d...a3324c`; base `0xcb4e41...18978f`; base `0xe71b89...dbdef5`; base `0xf572c7...455c6d`; arbitrum [`0x00825a...873055`](./contracts/arbitrum-42161/0x00825a475911b51eda11bc8cbc79603991873055/); arbitrum `0x02b229...f35073`; arbitrum `0x0b61a3...7a4c07`; arbitrum `0x1137d4...3fd22e`; arbitrum `0x1c52bd...c5ab4e`; arbitrum `0x1e41d8...cd9d41`; arbitrum `0x24c90a...c0aae1`; arbitrum `0x2fb402...c33452`; arbitrum `0x319902...dc4f3c`; arbitrum `0x32fc66...bbdfb5`; arbitrum `0x391162...7918be`; arbitrum `0x3e6ff5...571e4b`; arbitrum `0x53ae22...5c9be3`; arbitrum `0x53d722...1d807c`; arbitrum `0x543c03...1b9df1`; arbitrum `0x5dc751...17925b`; arbitrum `0x64ecc5...afbd6f`; arbitrum `0x6b9a07...2a7da0`; arbitrum `0x6f333b...79abce`; arbitrum `0x727d5f...fa6e19`; arbitrum `0x7313c3...871fa4`; arbitrum `0x73ac69...443cd9`; arbitrum `0x79ed68...bccdce`; arbitrum `0x7c0b6f...45b092`; arbitrum `0x7ec56f...99869a`; arbitrum `0x872db3...56a8d6`; arbitrum `0x88410a...8df16e`; arbitrum `0x8d18a9...e12928`; arbitrum `0x91a9e8...7e5d0f`; arbitrum `0x944fc7...2ec7c3`; arbitrum `0x94f55e...f616db`; arbitrum `0xa33d49...cfd329`; arbitrum `0xa543ec...4a5b38`; arbitrum `0xa66316...e49379`; arbitrum `0xac3986...a5be1b`; arbitrum `0xad794d...1631a9`; arbitrum `0xae5ee1...995c4b`; arbitrum `0xb1d090...81e475`; arbitrum `0xbc58d2...98f0a2`; arbitrum `0xbc6c7f...efde67`; arbitrum `0xbf15b3...c0060d`; arbitrum `0xbf2d97...5841f0`; arbitrum `0xc51d1c...230ff9`; arbitrum `0xcb56b9...8cb251`; arbitrum `0xd0799b...56bdff`; arbitrum `0xd17d38...216d70`; arbitrum `0xd2e9c1...a832ce`; arbitrum `0xd79086...12b965`; arbitrum `0xda71a0...cad401`; arbitrum `0xe1df1f...8c4375`; arbitrum `0xef9d26...2105c3`; arbitrum `0xf3ba7f...e69011`; berachain `0x07ad6e...c71d15`; berachain `0x1f6244...577485`; berachain `0x252b8f...73ea55`; berachain `0x34a845...8535d7`; berachain `0x350b20...af0f39`; berachain `0x366328...a91322`; berachain `0x3b7281...853696`; berachain `0x428d38...768a3b`; berachain `0x57dba8...cd7320`; berachain `0x5ad326...922009`; berachain `0x644f8e...b4c50e`; berachain `0x6485dd...78573d`; berachain `0x7affa1...11e3b2`; berachain `0x836844...14c328`; berachain `0x93b41e...e9a561`; berachain `0xa45455...b952b0`; berachain `0xa6de2a...7f74a0`; berachain `0xa7272d...a3324c`; berachain `0xbbf270...805389`; berachain `0xbc99ef...3c114e`; berachain `0xc461af...f7af54`; berachain `0xc64b95...458dc1`; berachain `0xcd0505...667955`; berachain `0xcd82f8...085c31`; berachain `0xd59f6c...45491d`; blast `0x4cf08b...751669`; blast `0x66c2f3...66296e`; blast `0x885d89...cafeba`; blast `0xa37fef...25dd95`; blast `0xc461af...f7af54`; blast `0xc64b95...458dc1`; blast `0xc85955...c406d9`; blast `0xd05e41...4bec24` | ⚠️ Unaudited (bytecode match) |
 | UniversalSwapper | adapter | arbitrum | 16 deployments: ethereum `0xe4b4b9...72788c`; base `0x47aca1...41c4e0`; base `0xe71ad9...7bbce2`; arbitrum [`0x1cbbad...71baf9`](./contracts/arbitrum-42161/0x1cbbad4658379c5eaa7da1622d357954cf71baf9/); arbitrum `0x6ce9ea...0fa300`; arbitrum `0x8af1f3...ffb7b7`; arbitrum `0x9ed990...d98514`; arbitrum `0xda028b...51d240`; arbitrum `0xe2cae0...cff2e7`; arbitrum `0xf64a94...edfe66`; berachain `0xbd6663...e3f665`; berachain `0xd05e41...4bec24`; blast `0x5a6e4a...5ba32f`; blast `0x629101...c655de`; blast `0x8a5ef3...0f01b4`; blast `0xec5b07...6d94aa` | ⚠️ Unaudited (bytecode match) |
@@ -418,13 +422,12 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 | Viewer | periphery | arbitrum | 38 deployments: ethereum `0x0caeba...22ece1`; ethereum `0x2a7745...550526`; base `0x70be7c...a1d34a`; base `0xa45455...b952b0`; arbitrum [`0x034052...9f6872`](./contracts/arbitrum-42161/0x034052a9d34f2549a4fbe43eb07282ca7d9f6872/); arbitrum `0x139d38...33ac15`; arbitrum `0x16e669...c3f034`; arbitrum `0x23dfb4...051f32`; arbitrum `0x2d3329...b872f5`; arbitrum `0x329ba0...a69df0`; arbitrum `0x440e17...dc4c32`; arbitrum `0x4abc83...fa6e7d`; arbitrum `0x4cf08b...751669`; arbitrum `0x63fc93...87d253`; arbitrum `0x66c2f3...66296e`; arbitrum `0x6c3d87...1d2102`; arbitrum `0x6f0077...77895d`; arbitrum `0x730e89...8c7693`; arbitrum `0x757713...92fe3d`; arbitrum `0x7600ce...b3aa2f`; arbitrum `0x8ff8f0...46c6e0`; arbitrum `0xa14fed...770b98`; arbitrum `0xaec8d9...ed7ade`; arbitrum `0xaed6be...85bfb4`; arbitrum `0xc34f75...9e7560`; arbitrum `0xcd0505...667955`; arbitrum `0xee6f86...d16c17`; arbitrum `0xf13fd9...66335c`; arbitrum `0xf6afa2...a7b8de`; arbitrum `0xfc678b...003c36`; berachain `0x2d3329...b872f5`; berachain `0x5208a0...be440d`; blast `0x05170b...d8e30f`; blast `0x09a317...edc2d3`; blast `0x185848...301166`; blast `0x366328...a91322`; blast `0x8a1c4e...e1a46f`; blast `0xb52b3a...50e356` | ⚠️ Unaudited (bytecode match) |
 | WethAdapter | adapter | arbitrum | 9 deployments: base `0x34831f...1ba670`; arbitrum [`0x264ae3...03b65c`](./contracts/arbitrum-42161/0x264ae330b7d1d60903d26ba0750e2e59a003b65c/); arbitrum `0x96af04...d6e1a9`; arbitrum `0x9d5f86...8b9df5`; arbitrum `0xa09dd2...51cf82`; arbitrum `0xd0821a...0dce52`; berachain `0x61e1f7...90898d`; berachain `0x944fc7...2ec7c3`; blast `0x2eaefe...a73dd2` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (148)
+### ❓ Unverified (147)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| CompounderStrategy | adapter | blast | `0xf0c06b...914b6c` | ❓ Unverified |
 | MillinerV3 | unknown | arbitrum | `0x8127ff...c72690` | ❓ Unverified |
 | Proxy (impl: 0x4f19585be9fdd90060bd38f30213c10d7dbd9588) | proxy | blast | `0xee54a4...e4f538` | ❓ Unverified |
 | Proxy (impl: 0xf741d0144229839209cc01e81a87ac195d309586) | proxy | blast | `0x5f7c77...d6fdd2` | ❓ Unverified |
@@ -538,6 +541,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | arbitrum | `0xeda109...4bf90d` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0xee58d2...dafe8e` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0xee973a...71828e` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | `0xf1a26c...0d470f` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0xf396ed...af1112` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0xf39993...0e5c42` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0xf4548f...f28470` | ❓ Unverified |
@@ -554,15 +558,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | berachain | `0x78e729...b20834` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0x9ed990...d98514` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xb1d090...81e475` | ❓ Unverified |
-| UnnamedContract | unknown | berachain | `0xbde8d5...104b62` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xbe74a2...d8e488` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xcf943b...58d7b5` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xe06acb...39645b` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xe71ad9...7bbce2` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xec5b07...6d94aa` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xf54b95...9d12dd` | ❓ Unverified |
-| UnnamedContract | unknown | berachain | `0xf572c7...455c6d` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | `0xf663a2...ae4b85` | ❓ Unverified |
+| UnnamedContract | unknown | blast | `0x0343f2...07f49d` | ❓ Unverified |
 | UnnamedContract | unknown | blast | `0x1c99b4...bb5eb0` | ❓ Unverified |
 | UnnamedContract | unknown | blast | `0x1e7d8e...79205a` | ❓ Unverified |
 | UnnamedContract | unknown | blast | `0x4f1958...bd9588` | ❓ Unverified |
@@ -577,11 +580,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [audit report](https://sourcehat.com/audits/JonesDAO) | SourceHat | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [third audit report (latest)](https://sourcehat.com/audits/JonesDAOGLPVaults) | SourceHat | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [**Advanced Strategy Vaults:** [third audit report (latest)](https://solidity.finance/audits/JonesDAOGLPVaults/), [second audit report](< >), [first audit report](<https://solidity.finance/audits/JonesDAOVaults/ >)](https://sourcehat.com/audits/JonesDAOVaultsV2) | SourceHat | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [**Advanced Strategy Vaults:** [third audit report (latest)](https://solidity.finance/audits/JonesDAOGLPVaults/), [second audit report](<https://solidity.finance/audits/JonesDAOVaultsV2/ >), [first audit report](< >)](https://sourcehat.com/audits/JonesDAOVaults) | SourceHat | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [audit report](https://sourcehat.com/audits/JonesAURA) | SourceHat | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [audit report](https://sourcehat.com/audits/JonesDAO) | SourceHat | Audit | 2022-05 | stale | Direct | contract_name | 27 | high |
+| [third audit report (latest)](https://sourcehat.com/audits/JonesDAOGLPVaults) | SourceHat | Audit | 2023-01 | stale | Direct | contract_name | 29 | high |
+| [**Advanced Strategy Vaults:** [third audit report (latest)](https://solidity.finance/audits/JonesDAOGLPVaults/), [second audit report](< >), [first audit report](<https://solidity.finance/audits/JonesDAOVaults/ >)](https://sourcehat.com/audits/JonesDAOVaultsV2) | SourceHat | Audit | 2023-01 | stale | Direct | contract_name | 29 | high |
+| [**Advanced Strategy Vaults:** [third audit report (latest)](https://solidity.finance/audits/JonesDAOGLPVaults/), [second audit report](<https://solidity.finance/audits/JonesDAOVaultsV2/ >), [first audit report](< >)](https://sourcehat.com/audits/JonesDAOVaults) | SourceHat | Audit | 2022-12 | stale | Direct | contract_name | 13 | high |
+| [audit report](https://sourcehat.com/audits/JonesAURA) | SourceHat | Audit | 2023-03 | stale | Direct | contract_name | 22 | high |
 
 ## Coverage Gaps
 
@@ -589,10 +592,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x25e8f9...c27326`](./contracts/ethereum-1/0x25e8f96c443b392ff9cdb9159b02f0040ec27326/) | AuraVirtualVault | core_logic | $449,152,584.15 | Verified native implementation with $449,152,584.15 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x616e8b...d4608d`](./contracts/ethereum-1/0x616e8bfa43f920657b3497dbf40d6b1a02d4608d/) | cvxCrvToken | token | $2,431,712.98 | Verified native implementation with $2,431,712.98 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x0b5ddf...d73c40`](./contracts/arbitrum-42161/0x0b5ddfc404aa13e2f9c53f6a3f5126075ad73c40/) | UnderlyingVault | core_logic | $749,446.83 | Verified native implementation with $749,446.83 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5e5ea2...96efcc`](./contracts/ethereum-1/0x5e5ea2048475854a5702f5b8468a51ba1296efcc/) | BaseRewardPool | core_logic | $4,545.69 | Verified native implementation with $4,545.69 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x287bfe...d60b09`](./contracts/arbitrum-42161/0x287bfe9ee929842d1af340814332e7548ad60b09/) | MetavaultRefund | core_logic | $4,087.66 | Verified native implementation with $4,087.66 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x5ba98a...0e1246`](./contracts/arbitrum-42161/0x5ba98ad75ab87eb90ffc2b680bcfc6b9030e1246/) | JonesDPXVaultV3 | core_logic | $45.50 | Verified native implementation with $45.50 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x7a82a0...5fd2c3`](./contracts/arbitrum-42161/0x7a82a0ca7a2569d6cd3df2afeaf508f6d85fd2c3/) | DpxEthBearVault | core_logic | $2.69 | Verified native implementation with $2.69 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x558df6...23a1a6`](./contracts/arbitrum-42161/0x558df6bb25f754aea5fa2f3ed8e78e7afe23a1a6/) | BasicStakingStrategy | core_logic | $1.66 | Verified native implementation with $1.66 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x0980a1...0ca1a0`](./contracts/arbitrum-42161/0x0980a15ad64182b275b625c321beeab41e0ca1a0/) | InsuredLongsStrategy | core_logic | $0.42 | Verified native implementation with $0.42 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
@@ -600,40 +603,38 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | [`0x1e8060...cef910`](./contracts/arbitrum-42161/0x1e8060fc5c0335f04413032472965c1736cef910/) | RdpxEthBullVault | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x5369b3...e72315`](./contracts/arbitrum-42161/0x5369b3eb4c9e87d0b349557034faa20c6ce72315/) | JonesDpxEthBullStrategy | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x4ec371...802d52`](./contracts/arbitrum-42161/0x4ec371ceeceda2dfe14eef9358cefc4380802d52/) | DpxEthBullVault | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x2e01f8...8f8fc3`](./contracts/arbitrum-42161/0x2e01f804f1c3c1b720c88a2aadd942b6938f8fc3/) | Adapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x09a317...edc2d3`](./contracts/arbitrum-42161/0x09a31770ed3f47a08a8cd85df3ec4c009fedc2d3/) | AlgebraLPManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x058ba7...658567`](./contracts/arbitrum-42161/0x058ba77aa69f8f6d77eb44de4f42a8019d658567/) | AlgebraPriceHelper | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x94c929...32b05e`](./contracts/arbitrum-42161/0x94c929722ee804ae25735839c041fc828732b05e/) | ArbCallPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2c9c1e...3a9d5f`](./contracts/arbitrum-42161/0x2c9c1e9b4bdf6bf9cb59c77e0e8c0892ce3a9d5f/) | ArbEthSSOVV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5d208c...bedc40`](./contracts/ethereum-1/0x5d208cd54f5132f2bd0c1f1e8d8c864bb6bedc40/) | ArbitratorVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x6157e2...b0a04f`](./contracts/arbitrum-42161/0x6157e2dee2938efca144e507865f10cd93b0a04f/) | ArbitrumWrappedJonesAura | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x61f2d2...10843f`](./contracts/arbitrum-42161/0x61f2d2f39af6c6faa55684666d563d6f1d10843f/) | ArbMultichainRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x94bdab...ffc8a6`](./contracts/arbitrum-42161/0x94bdabbe315cdd992ed399dc52933a9690ffc8a6/) | ArbPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xbdb0f3...af3081`](./contracts/arbitrum-42161/0xbdb0f3330d4b32b3133738451c8237d0a8af3081/) | ArbPriceOracleV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x838ea4...4eb2db`](./contracts/arbitrum-42161/0x838ea4314fa7ab13a452f8d4fc7c7dc2d74eb2db/) | AssetSwapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1640ed...621379`](./contracts/arbitrum-42161/0x1640eda814072286fddc5b952d1c56e576621379/) | AtlanticPutsPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x0be090...fa3e51`](./contracts/arbitrum-42161/0x0be0905dafa89dac8f26e9f96e04cfe3c5fa3e51/) | AtlanticStraddle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x418ca2...26d66a`](./contracts/arbitrum-42161/0x418ca2ad46bc90386bc05768da756e494d26d66a/) | AtlanticStraddleUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x774537...60c015`](./contracts/arbitrum-42161/0x7745370dfcc3780dd7675995b529d4e24960c015/) | AtlanticStraddleVolatilityOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x638385...41c7cf`](./contracts/ethereum-1/0x6383851e45098734f0f90742c2e7f258a441c7cf/) | auraBALSwapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x54d6dc...55bc3d`](./contracts/ethereum-1/0x54d6dcae86cb8d181ba3b8dd7f0704140f55bc3d/) | AuraCompounderStrategy | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x198d73...34cd1f`](./contracts/ethereum-1/0x198d7387fa97a73f05b8578cdeff8f2a1f34cd1f/) | AuraCompounderVault | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa7429a...70e32c`](./contracts/ethereum-1/0xa7429af4deb16827dad0e71d8aeea9c2bf70e32c/) | BalLiquidityProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x26926f...d693b0`](./contracts/arbitrum-42161/0x26926fca034d971ba8668e900e143f6bb0d693b0/) | BaseIRVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x3763a3...d1584f`](./contracts/arbitrum-42161/0x3763a3d54485edba416f093b23d81a14cfd1584f/) | BasicStakingStrategyV2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x3f38cd...9b5939`](./contracts/arbitrum-42161/0x3f38cde29c185f9ccff5a7d2ecb2ce3e2f9b5939/) | BasicStakingStrategyV3 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7818a1...8eee10`](./contracts/ethereum-1/0x7818a1da7bd1e64c199029e86ba244a9798eee10/) | Booster | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xfa838a...54ec34`](./contracts/ethereum-1/0xfa838af70314135159b309bf27f1dbf1f954ec34/) | BoosterOwner | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x90f5a9...a28075`](./contracts/arbitrum-42161/0x90f5a93b562adba63b1c0f5358554e7272a28075/) | BtcPutVolatilityOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x411982...3fef3b`](./contracts/arbitrum-42161/0x411982342c0d41cebb1706ed80ef32d48f3fef3b/) | BtcWeeklyPutsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x993f5a...aefb77`](./contracts/arbitrum-42161/0x993f5a805bbfb5f59cf08b745b82ac42f1aefb77/) | CallbackForwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x0d8448...062822`](./contracts/arbitrum-42161/0x0d84489932582d394d2275ad92130d85e3062822/) | CallbackRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x999dbc...d0f56e`](./contracts/ethereum-1/0x999dbce0a18f721f04e793f916c30e72a9d0f56e/) | ClaimFeesHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x19ea65...c724f5`](./contracts/arbitrum-42161/0x19ea653256e79abaf90b4586632463d4b3c724f5/) | ContributorVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1e305b...117040`](./contracts/arbitrum-42161/0x1e305b22c177f6fdb55d891c63b1c8c399117040/) | Crv2PoolOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x68655a...5d4123`](./contracts/ethereum-1/0x68655ad9852a99c87c0934c7290bb62cfa5d4123/) | CrvDepositorWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xead792...d1b827`](./contracts/ethereum-1/0xead792b55340aa20181a80d6a16db6a0ecd1b827/) | CrvDepositor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x8b88a2...cfe4dc`](./contracts/arbitrum-42161/0x8b88a2fc2c2056e0ab243642605dabbd6ccfe4dc/) | CrvPutPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2c1169...053385`](./contracts/arbitrum-42161/0x2c116962b192727fec83f18bf612c959b2053385/) | CustomOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x3e1383...b4f8b0`](./contracts/arbitrum-42161/0x3e138322b86897edf4ffc6060edc0c1220b4f8b0/) | CvxWeeklyPutsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1d4544...ecd7db`](./contracts/arbitrum-42161/0x1d4544459b6d13fbf2e14573d7c01208e0ecd7db/) | Deployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x5bc65f...2c31c1`](./contracts/arbitrum-42161/0x5bc65f20abceada2c54140b2bb55962bba2c31c1/) | DopexArbEthSsovWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xbd8d54...c425c9`](./contracts/arbitrum-42161/0xbd8d541500c10774cd1404f57344d233eec425c9/) | DopexFeeStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x8c44c0...c6b4ea`](./contracts/arbitrum-42161/0x8c44c0ab9a15bacad7a4b663a89593c406c6b4ea/) | DpxBonds | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x39cd5f...914ea0`](./contracts/arbitrum-42161/0x39cd5f935cd7af62f6b74606484af7bbd4914ea0/) | DopexDpxSsovWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x315e79...d8d0f3`](./contracts/arbitrum-42161/0x315e79536b0bd3617293ba4f68ef5772b7d8d0f3/) | DopexFarmWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x1dbccb...92c8ae`](./contracts/arbitrum-42161/0x1dbccb7bd0676df77574b702b61d4af44f92c8ae/) | DopexGohmSsovWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x58bc6d...529341`](./contracts/arbitrum-42161/0x58bc6da61a00310ebc519fcf8c0d55493c529341/) | DpxCallPriceOracleV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x252c07...3137b9`](./contracts/arbitrum-42161/0x252c07e0356d3b1a8ce273e39885b094053137b9/) | DpxCustomPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x0a9522...6ccecd`](./contracts/arbitrum-42161/0x0a95222b5ed8690a0279993e63903687536ccecd/) | DpxEthLpFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -641,7 +642,6 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | [`0x05e7ac...e0c817`](./contracts/arbitrum-42161/0x05e7aced3b7727f9129e6d302b488cd8a1e0c817/) | DpxMonthlyCallsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x9162f6...53b454`](./contracts/arbitrum-42161/0x9162f655d085f266792fca4432c9d17c7e53b454/) | DpxPriceOracleV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x0e574e...33f403`](./contracts/arbitrum-42161/0x0e574e2b4859f3789e190e25e9d85b691c33f403/) | DpxPutPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x48252e...2894e3`](./contracts/arbitrum-42161/0x48252edbfcc8a27390827950ccfc1c00152894e3/) | DpxSSOVV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x31d104...6b57ba`](./contracts/arbitrum-42161/0x31d104edb91d681ff5189a92f25f8e14f56b57ba/) | DpxStakingStrategyV2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x10fd85...20bd1f`](./contracts/arbitrum-42161/0x10fd85ec522c245a63239b9fc64434f58520bd1f/) | DpxWeeklyCallsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x459819...f5f273`](./contracts/arbitrum-42161/0x459819c34266dd9154172d373ac559ce27f5f273/) | DpxWeeklyPutsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -649,41 +649,40 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | [`0x08e110...4beed7`](./contracts/arbitrum-42161/0x08e110a186a84b03517906fc06da923d064beed7/) | EnforceHub | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x6d9c28...522baf`](./contracts/arbitrum-42161/0x6d9c288708a77d51fa66393916511cde60522baf/) | Escrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x19e6ee...e23cc6`](./contracts/arbitrum-42161/0x19e6ee4c2cbe7bcc4cd1ef0bcf7e764fece23cc6/) | EthCallPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x7af639...49c83e`](./contracts/arbitrum-42161/0x7af6399e4dd8c1d5b7c53dc2c6ad04b39049c83e/) | EthMonthlyCallsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x299b44...7ae509`](./contracts/arbitrum-42161/0x299b44c2f6d24ea1b41c6deec861d986047ae509/) | EthPutPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x36b25d...94638f`](./contracts/arbitrum-42161/0x36b25d2f1f638c384ac3e000bef154149d94638f/) | EthPutVolatilityOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x8a0dd3...9f0b3a`](./contracts/arbitrum-42161/0x8a0dd3203a9f1cf66c7201e4a8ab4762d09f0b3a/) | EthQuarterlyPutsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x0a1140...3e66d2`](./contracts/arbitrum-42161/0x0a11404220bdd38b98ed9978fb8fba17de3e66d2/) | EthStakingStrategyV1 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x872096...03fb4f`](./contracts/arbitrum-42161/0x87209686d0f085fd35b084410b99241dbc03fb4f/) | ETHVolatilityOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2b055d...aa9255`](./contracts/arbitrum-42161/0x2b055d25a5fa6d493c53c178480e962aabaa9255/) | EthWeeklyCallsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x32449d...17ad5a`](./contracts/arbitrum-42161/0x32449df9c617c59f576dfc461d03f261f617ad5a/) | EthWeeklyPutsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf9c0f3...175742`](./contracts/ethereum-1/0xf9c0f3431f859e773ed052758052e06b6d175742/) | ExtraRewardStashV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1e5d2e...77ac25`](./contracts/arbitrum-42161/0x1e5d2eb158bd1a0d04d14718c5575e539577ac25/) | Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x0d3fdd...58f0c0`](./contracts/arbitrum-42161/0x0d3fdd45706bec4077725bf691bbb4770958f0c0/) | FarmController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0aa4ba...7b95e7`](./contracts/arbitrum-42161/0x0aa4bafa281bc9306ee286a7e8426f9faf7b95e7/) | Feeds | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x3f3c58...478d5a`](./contracts/arbitrum-42161/0x3f3c58ccb0655fa9161d0b4b49b217b3f6478d5a/) | FeeStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1a5444...16563a`](./contracts/arbitrum-42161/0x1a5444362857cafdc58ab95b79a5a9285d16563a/) | FeeStrategy2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xb96491...b3deac`](./contracts/arbitrum-42161/0xb964912b4054e8fb54431ed952f29ae3c8b3deac/) | FeeStrategy3 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x3c5376...bd6673`](./contracts/arbitrum-42161/0x3c5376bf032cec70c342b64f43778dc06bbd6673/) | GlpJonesRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x691113...00883b`](./contracts/arbitrum-42161/0x6911132effaee3d1116a96c1357830a35400883b/) | GlpPriceAggregator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x023509...84d6fa`](./contracts/arbitrum-42161/0x0235096e97c12a84d8b96ca2c3bcccf93e84d6fa/) | GlpStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x2433a6...9419ba`](./contracts/arbitrum-42161/0x2433a617c0266091d3f46ae223caa809c89419ba/) | GMOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x00fd61...04653f`](./contracts/arbitrum-42161/0x00fd61b802484eaf39c054a601bdfc08dd04653f/) | GMRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x146e8d...17f54e`](./contracts/arbitrum-42161/0x146e8da8ac5d203a4f479ede013d2e2ec017f54e/) | GMViewer | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x698e6a...8b37f0`](./contracts/arbitrum-42161/0x698e6a59481c0713f8458e2f100f1c0ce18b37f0/) | GmxAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x405775...7f5d2a`](./contracts/arbitrum-42161/0x405775be91aab1d06a3afbb5a1a6d2a5cf7f5d2a/) | GmxLibrary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x60e07b...1c7ee0`](./contracts/arbitrum-42161/0x60e07b25ba79bf8d40831cdbda60cf49571c7ee0/) | GmxPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2da831...9a7076`](./contracts/arbitrum-42161/0x2da83188f2c6f760db0493a7087266fd1e9a7076/) | GmxPutPriceOracleV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x04996a...52c93b`](./contracts/arbitrum-42161/0x04996afcf40a14d0892b00c816874f9c1a52c93b/) | GmxSSOV | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x6bc4ef...f112e4`](./contracts/arbitrum-42161/0x6bc4ef91db2a18cbf557d3339f263872a8f112e4/) | GmxVolatilityOracleV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x6237a3...cd4866`](./contracts/arbitrum-42161/0x6237a32482ec21d9d9a35b67d9ecbdbd0dcd4866/) | GmxWeeklyPutsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2ba83d...aaf1a7`](./contracts/arbitrum-42161/0x2ba83da46846ccf633db9d30209163c627aaf1a7/) | GohmCallPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x5f5870...0147d4`](./contracts/arbitrum-42161/0x5f5870c7364ae87643747b06a0ca7fde200147d4/) | GohmCustomPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x52c701...6f98bd`](./contracts/arbitrum-42161/0x52c70138fff1a5a6d821ab4bb39d3df0346f98bd/) | GohmMonthlyCallsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x7d3bb7...f41570`](./contracts/arbitrum-42161/0x7d3bb7a1d5ec0378ca3a2beb4f2423ecf5f41570/) | GohmPutPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x6cb7d5...48a807`](./contracts/arbitrum-42161/0x6cb7d5bd21664e0201347bd93d66ce18bc48a807/) | GohmPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x89836d...2d2318`](./contracts/arbitrum-42161/0x89836d5f178141aaf013412b12abd754802d2318/) | GohmSSOV | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x460f95...db08d6`](./contracts/arbitrum-42161/0x460f95323a32e26c8d32346abe73eb94d7db08d6/) | GohmSSOVV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x525bf3...957587`](./contracts/arbitrum-42161/0x525bf37950e74448e2e39db95e0b9bc971957587/) | GohmStakingStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xbf9144...d7a6a8`](./contracts/arbitrum-42161/0xbf91446115f3e3eaf5079a88e078f876c0d7a6a8/) | GohmVolatilityOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x746c39...756abf`](./contracts/arbitrum-42161/0x746c3914d3c11139178b1aedd6f3f7eacf756abf/) | GohmVolatilityOracleV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x546cd3...5caf0c`](./contracts/arbitrum-42161/0x546cd36f761f1d984eee1dbe67cc4f86e75caf0c/) | GohmWeeklyCallsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x4269af...b877fd`](./contracts/arbitrum-42161/0x4269af9076586230bf5fa3655144a5fe9cb877fd/) | GohmWeeklyPutsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x08fb38...363a7c`](./contracts/arbitrum-42161/0x08fb380cadf28fc7e0121db7c47d149c0d363a7c/) | GovernanceRing | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1c208c...df48d7`](./contracts/arbitrum-42161/0x1c208cb30838cc3fd492627321624ce87cdf48d7/) | HatDistributionCenter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x4c163b...757bca`](./contracts/arbitrum-42161/0x4c163b64fd2c777bd0752cfc4312c7bbea757bca/) | HatDistributionCenterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x917aab...3b33fb`](./contracts/arbitrum-42161/0x917aab660066cd8a96bc3bf0de9ed863313b33fb/) | IndividualBuffer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x82ad59...20f3d4`](./contracts/arbitrum-42161/0x82ad5948e47c6e18d0cd1a5a243a4f032420f3d4/) | InsuredLongsUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3556f7...f7eaea`](./contracts/ethereum-1/0x3556f710c165090aae9f98eb62f5b04adef7eaea/) | jAuraRateProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -703,14 +702,6 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | [`0xba0563...c1f1dc`](./contracts/arbitrum-42161/0xba0563ffe3c7abe915d3dc404f1667682bc1f1dc/) | JonesEthCallStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x02017a...43674e`](./contracts/arbitrum-42161/0x02017a8334196537fd1933de833b3ece9a43674e/) | JonesEthPutStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x50744d...2d561c`](./contracts/arbitrum-42161/0x50744d5e6d138aca596f7d36e659d097be2d561c/) | JonesETHVaultV1 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x7241bc...4a3af6`](./contracts/arbitrum-42161/0x7241bc8035b65865156ddb5edef3eb32874a3af6/) | JonesGlpCompoundRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x15df56...b584d5`](./contracts/arbitrum-42161/0x15df56a82c194fefec9337c37a41964b69b584d5/) | JonesGlpLeverageStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xda04b5...980a12`](./contracts/arbitrum-42161/0xda04b5f54756774ad405de499bb5100c80980a12/) | JonesGlpRewardDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x43cc8e...ad7216`](./contracts/arbitrum-42161/0x43cc8e7026077e4b21ddc658ea26f39475ad7216/) | JonesGlpRewardsSplitter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x65ab0a...a689b4`](./contracts/arbitrum-42161/0x65ab0ad9f0e6db36aac10f28e97505c199a689b4/) | JonesGlpRewardsSwapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x13c6be...b19d9d`](./contracts/arbitrum-42161/0x13c6bed5aa16823aba5bba691caec63788b19d9d/) | JonesGlpRewardTracker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x17ff15...7f24c7`](./contracts/arbitrum-42161/0x17ff154a329e37282eb9a76c3ae848fc277f24c7/) | JonesGlpVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x01ad96...05aec2`](./contracts/arbitrum-42161/0x01ad96292cdc627307817c428562226fd905aec2/) | JonesGlpVaultRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x68798c...41bf04`](./contracts/arbitrum-42161/0x68798c683dbd43c3a16ae8c3e02c37999641bf04/) | JonesGohmCallStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2f9980...60618b`](./contracts/arbitrum-42161/0x2f9980d6fb25bd972196b19e243e36dbde60618b/) | JonesGOHMHedgingV3Strategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xe5a8ab...ccba61`](./contracts/arbitrum-42161/0xe5a8ab24dc1b0f54dc3803cb33098879f8ccba61/) | JonesGohmPutStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -721,108 +712,91 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | [`0x711f1b...524de9`](./contracts/arbitrum-42161/0x711f1bf759d3f749b938cf040ab65110b8524de9/) | JonesRdpxEthBullStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x37a86c...8f95bf`](./contracts/arbitrum-42161/0x37a86cb53981cc762709b2c402b0f790d58f95bf/) | JonesRDPXHedgingV3Strategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x261287...84e823`](./contracts/arbitrum-42161/0x2612870b2a96f43430e19bb6873a74295684e823/) | JonesRdpxPutStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x9e74c8...b9e307`](./contracts/arbitrum-42161/0x9e74c867198e2c46bc3f365ac3b401d67cb9e307/) | JonesRefund | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x5a81ab...19829b`](./contracts/arbitrum-42161/0x5a81abb52d96241d15d8b2bdcd76034e4119829b/) | JonesSaleClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x02dcd1...182d95`](./contracts/arbitrum-42161/0x02dcd1d46ca19cca8961658f9389b4901e182d95/) | JonesSSOVCallV3Strategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x220890...ebeb34`](./contracts/arbitrum-42161/0x22089039a813aedde848ac5876c1492fd2ebeb34/) | JonesSSOVPutV3Strategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x4a7d28...8409ca`](./contracts/arbitrum-42161/0x4a7d28bfba97dc5fc71bca31cf454f1b498409ca/) | JonesTestnet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x6580f4...36f79a`](./contracts/arbitrum-42161/0x6580f41efc34e6d49ab692bd338d2a0e0636f79a/) | JonesTokenSale | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x8a0027...4f1cf5`](./contracts/arbitrum-42161/0x8a0027152ad2781c0cbabda0cc53290bf04f1cf5/) | JonesTokenSaleV3 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x3327a5...a32993`](./contracts/arbitrum-42161/0x3327a5f041e821f476e00572ee0862fbcaa32993/) | JonesWETHHedgingV3Strategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x086d9a...be7772`](./contracts/arbitrum-42161/0x086d9abc69c60b75470e620221cd857bcdbe7772/) | JonesWETHVaultV3Adapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x263c4f...bb4cc2`](./contracts/arbitrum-42161/0x263c4fabd13b3822f5d476683bbfe2c437bb4cc2/) | jUsdcOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x13504b...d06d63`](./contracts/arbitrum-42161/0x13504bfff1ce638c04619f4fd0d51a2867d06d63/) | LeverageRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x145f1d...072780`](./contracts/arbitrum-42161/0x145f1d25abc5ca103a9680496d07ba26d3072780/) | LeverageStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x3942cd...6c63f1`](./contracts/arbitrum-42161/0x3942cda55cc29dd28879f479768d293c9b6c63f1/) | LeverageViewer | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xb330a2...2d8f60`](./contracts/arbitrum-42161/0xb330a28c8518c4095c8411191120d1739c2d8f60/) | LPStrategyLib | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x92e0da...d3bcde`](./contracts/arbitrum-42161/0x92e0da4bfd120ef25f74af7041f48a205ad3bcde/) | LunaVolatilityOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x29a1d8...011602`](./contracts/arbitrum-42161/0x29a1d81d7f3f3dc20e81fe875012b7bed4011602/) | LunaWeeklyPutsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x13f580...4cc865`](./contracts/ethereum-1/0x13f5802d1d5b4f0ff529537c694843515e4cc865/) | MainnetWrappedJonesAura | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x041532...eda798`](./contracts/ethereum-1/0x041532cb7feb5bbedf8248a0f7d58db827eda798/) | MainnetWrappedJonesAuraOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x018b44...900717`](./contracts/arbitrum-42161/0x018b44c923a567205caee45b882fd61394900717/) | MillinerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x36a022...0bb86b`](./contracts/arbitrum-42161/0x36a0221d9f6509137e68c3b910b240e7f20bb86b/) | MultichainMiddleware | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3e8aed...a1a7af`](./contracts/ethereum-1/0x3e8aed9dbb0d1a7769feb431a23dd00bfba1a7af/) | MultichainReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x0aefad...6fac38`](./contracts/arbitrum-42161/0x0aefad19aa454bcc1b1dd86e18a7d58d0a6fac38/) | MiniChefV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x444d91...c54dbd`](./contracts/arbitrum-42161/0x444d91660642128a17dd574599981304f9c54dbd/) | NativeSSOV1inchRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1c3ad2...9faa05`](./contracts/arbitrum-42161/0x1c3ad2dcd598d41ad531f15421e9be1d089faa05/) | NStakingStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x38b700...95300d`](./contracts/arbitrum-42161/0x38b700f33daa663de0e05a487c41aa070c95300d/) | OneInchZapLib | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2b99e3...bdd67b`](./contracts/arbitrum-42161/0x2b99e3d67dad973c1b9747da742b7e26c8bdd67b/) | OptionPricingSimple | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xb77a55...caf7b5`](./contracts/arbitrum-42161/0xb77a55274251c4fe858f76b8d94ae76e1dcaf7b5/) | OptionsToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x4380db...a943b8`](./contracts/arbitrum-42161/0x4380db1cac9f723bd5a0b523f47bf23eb8a943b8/) | PancakeSwapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x3f8473...a92a1c`](./contracts/arbitrum-42161/0x3f84734005bda494d3718f7a507e18dd83a92a1c/) | PatchOfTheAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x04f4f0...c0c744`](./contracts/arbitrum-42161/0x04f4f0c6c09370576a8f22fd5f8838abecc0c744/) | Payroll | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x095bd2...9f366c`](./contracts/arbitrum-42161/0x095bd2500a20be6351ad86605457f22a489f366c/) | plsSYKAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x16a04e...94947a`](./contracts/ethereum-1/0x16a04e58a77ab1ce561a37371dfb479a8594947a/) | PoolManagerProxy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xdc274f...34cf67`](./contracts/ethereum-1/0xdc274f4854831fed60f9eca12cacbd449134cf67/) | PoolManagerSecondaryProxy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf843f6...28de50`](./contracts/ethereum-1/0xf843f61508fc17543412de55b10ed87f4c28de50/) | PoolManagerV3 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x74cadb...d334b4`](./contracts/arbitrum-42161/0x74cadbdf7850abd4f9bd355e528a9b23a2d334b4/) | PriceOracleAggregator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x66cf90...d22a3d`](./contracts/arbitrum-42161/0x66cf9033e119fca8429bc87d423a14aaced22a3d/) | PusdVaultBiWeekly | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x21485d...fa9289`](./contracts/arbitrum-42161/0x21485d96036644041a0398e2ce2ea51d21fa9289/) | PusdVaultWeekly | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x86f5c3...bb454c`](./contracts/arbitrum-42161/0x86f5c37be9d87975d0aea307ac9143c13fbb454c/) | PusdVolatilityOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xc0cdd1...4afaa0`](./contracts/arbitrum-42161/0xc0cdd1176aa1624b89b7476142b41c04414afaa0/) | RdpxCustomPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x4699c8...68fc23`](./contracts/arbitrum-42161/0x4699c804bb6e330b6ac3ea1e2e0aff06e468fc23/) | RamsesLPManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x00218f...308ed1`](./contracts/arbitrum-42161/0x00218f82bd478e0ce0ca1ba67022db06e8308ed1/) | RamsesPriceHelper | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x253b77...c075a2`](./contracts/arbitrum-42161/0x253b772408c5c2ee6c96b027aae6896fecc075a2/) | RdpxEthLpFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x0c8f76...cfbc87`](./contracts/arbitrum-42161/0x0c8f76ae6b3636643c912dbace26f3b65acfbc87/) | RdpxEthStorage | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x8d66b8...0db22d`](./contracts/arbitrum-42161/0x8d66b80e03fceff5d825b77433b62400c00db22d/) | RdpxMonthlyCallsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xa70bf6...ef1b9c`](./contracts/arbitrum-42161/0xa70bf62578aadb37032c73f01873bcc7dcef1b9c/) | RdpxPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x882f24...a2f148`](./contracts/arbitrum-42161/0x882f241d061ce44f20b9991bc10e834f68a2f148/) | RdpxPutPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xaa6cf3...ad9c5f`](./contracts/arbitrum-42161/0xaa6cf3c71d334aa142f4a73b1c545cea06ad9c5f/) | RdpxPutPriceOracleV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1d1cc5...35a4ec`](./contracts/arbitrum-42161/0x1d1cc5a92a87772607639acf5a8f5a55fd35a4ec/) | RdpxStakingStrategyV1 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x3e0215...1b3212`](./contracts/arbitrum-42161/0x3e0215c1d639280e13b46e3af94fb5630d1b3212/) | RdpxVolatilityOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x398010...b6da1c`](./contracts/arbitrum-42161/0x39801002866657f95cb111bff0f3b7218cb6da1c/) | RdpxVolatilityOracleV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb188b1...9fec59`](./contracts/ethereum-1/0xb188b1cb84fb0ba13cb9ee1292769f903a9fec59/) | RewardPoolDepositWrapper | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x4d7d61...5a2326`](./contracts/arbitrum-42161/0x4d7d6100122c92ddad3b57e472b00979e45a2326/) | RdpxWeeklyPutsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x45aad1...74f356`](./contracts/ethereum-1/0x45aad11f2fa2c215bc9686eb6f06d46e0474f356/) | RewardFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x0af020...6f7a0d`](./contracts/arbitrum-42161/0x0af020886c7fc1243c3f843ee76345e2ab6f7a0d/) | RewardReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x09a454...5b952b`](./contracts/arbitrum-42161/0x09a454fd7a7f6f66cb2cc0196860f94ced5b952b/) | RewardsDistribution | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x7f3649...f6a40f`](./contracts/arbitrum-42161/0x7f3649c4b6acc01d50eaa725096df27a36f6a40f/) | RewardsDistributionV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x124b6a...7d0458`](./contracts/arbitrum-42161/0x124b6aef712f9b2f8e239c01ce251287457d0458/) | RewardTracker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x19f056...3950f7`](./contracts/arbitrum-42161/0x19f056cecd9599db1724de7a6814e779843950f7/) | RoleController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x06974f...3f6c5f`](./contracts/arbitrum-42161/0x06974f42a1090f07d832240cb2375420eb3f6c5f/) | Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x02af5c...c8748d`](./contracts/arbitrum-42161/0x02af5c07e96b40e3324390da4a794fff55c8748d/) | SingleRewardTracker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x27cebe...cf68c1`](./contracts/arbitrum-42161/0x27cebe6b5075e4d6feec384b0a31ec6e53cf68c1/) | SsovAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x73b82e...6f8a84`](./contracts/arbitrum-42161/0x73b82eba5176d8aa02606459e416f13f686f8a84/) | SSOVDpx | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x8c73b6...71add0`](./contracts/arbitrum-42161/0x8c73b6d3c81c6cc42e8285c8c147a7563d71add0/) | SsovV3FeeStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x11a99d...0d0d47`](./contracts/arbitrum-42161/0x11a99d3a49dd1b5adcaf24964646c90de50d0d47/) | SsovV3OptionsToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1962ce...8f0d66`](./contracts/arbitrum-42161/0x1962ceb5c394ed5ad20dc72f98f2617d9d8f0d66/) | SsovV3Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x0a93ff...13022a`](./contracts/arbitrum-42161/0x0a93ff362287f0aeffc313423c80854f4713022a/) | SsovV3Viewer | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x7487c1...65052f`](./contracts/arbitrum-42161/0x7487c19df56b7ea764fc269468b5d3014565052f/) | SsovV3Wrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2c2082...1a1cf3`](./contracts/arbitrum-42161/0x2c2082e4062bfd02141adc86cbd5e437201a1cf3/) | StakingRewardsFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x125cc7...ccb6bb`](./contracts/arbitrum-42161/0x125cc7cce81a809c825c945e5aa874e60cccb6bb/) | StakingRewardsV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x95171c...458eb5`](./contracts/ethereum-1/0x95171c9ef5ca540a6d3502e9547fcfe022458eb5/) | StashFactoryV2 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf274e4...0ab08e`](./contracts/ethereum-1/0xf274e48939a1c619c0f2aac134732995f20ab08e/) | StaticRateViewer | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x6f3f4b...a46e1d`](./contracts/arbitrum-42161/0x6f3f4b7aaeb2fc8df55703c12b6320fe9fa46e1d/) | StEthCallPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x475a5a...d1851b`](./contracts/arbitrum-42161/0x475a5a712b741b9ab992e6af0b9e5adee3d1851b/) | StEthMonthlyCallsSsovV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0f4a22...3664b5`](./contracts/arbitrum-42161/0x0f4a22977df09f2a52bec2d4f5722251d73664b5/) | StraddlePositionMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xc1d968...da55b7`](./contracts/arbitrum-42161/0xc1d9682db60955d64f263025b282acbf8cda55b7/) | TeamVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x3757b4...a17f61`](./contracts/arbitrum-42161/0x3757b49d79063e157dc376f2b409c3730fa17f61/) | TeamVestingV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x1261d3...9582b5`](./contracts/arbitrum-42161/0x1261d315da164c41db9968c4544ad641cf9582b5/) | TheShreddiesCC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x19ad97...e38d4b`](./contracts/arbitrum-42161/0x19ad978263e1525389d5ce7ce9bb886191e38d4b/) | TheShreddiesCCTestnet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0xd99593...aed256`](./contracts/blast-81457/0xd99593149a794496c601f789daa1203d03aed256/) | ThrusterPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb6ce51...b453ac`](./contracts/ethereum-1/0xb6ce51dee8bd4a2fd11c01205414dc26f0b453ac/) | TokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x0e3d53...a6efee`](./contracts/arbitrum-42161/0x0e3d53c190ce77ac569880055aee6569ada6efee/) | UniV3Library | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc9dd81...4b4859`](./contracts/ethereum-1/0xc9dd81508af5c47b7d54ba29a027cc1a514b4859/) | UniversalMainnetSwapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1cbbad...71baf9`](./contracts/arbitrum-42161/0x1cbbad4658379c5eaa7da1622d357954cf71baf9/) | UniversalSwapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2a5cc1...105ad6`](./contracts/arbitrum-42161/0x2a5cc190854cd078b2b0ca2a357faf0073105ad6/) | UpgradeableIncentiveReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xa0ed02...7a9073`](./contracts/arbitrum-42161/0xa0ed021cf3ad897181c23e20aa5ffb8f607a9073/) | USDCVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x367fe7...00a26e`](./contracts/base-8453/0x367fe7925d523d8f9fd7baeda4ba2a32cf00a26e/) | VeloLPManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x440713...f36231`](./contracts/base-8453/0x4407135654126dc6b53e61331775edb312f36231/) | VeloSwapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x034052...9f6872`](./contracts/arbitrum-42161/0x034052a9d34f2549a4fbe43eb07282ca7d9f6872/) | Viewer | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x7da1b5...96454e`](./contracts/arbitrum-42161/0x7da1b58f0a7cbb70f756a01412842d5a8796454e/) | VolatilityEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x3a3b40...c430ef`](./contracts/arbitrum-42161/0x3a3b40ec5be35c3c8e8be54d04da60d69ac430ef/) | VolatilityOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x264ae3...03b65c`](./contracts/arbitrum-42161/0x264ae330b7d1d60903d26ba0750e2e59a003b65c/) | WethAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x12c66e...86e3c6`](./contracts/arbitrum-42161/0x12c66ed98c7579d2d00675e18a9feb9cec86e3c6/) | WhitelistController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x48b0a4...e718d5`](./contracts/arbitrum-42161/0x48b0a4afa62c743c0a6f9a29ec79c1ef65e718d5/) | WithdrawUVRT | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 257 |
-| upstream | 81 |
-| standard_library | 25 |
-| needs_review | 139 |
+| native | 224 |
+| upstream | 36 |
+| standard_library | 14 |
+| needs_review | 228 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
-
-Zero-match audit list:
-
-- [11588] audit report
-- [11589] third audit report (latest)
-- [11590] **Advanced Strategy Vaults:** [third audit report (latest)](https://solidity.finance/audits/JonesDAOGLPVaults/), [second audit report](< >), [first audit report](<https://solidity.finance/audits/JonesDAOVaults/ >)
-- [11591] **Advanced Strategy Vaults:** [third audit report (latest)](https://solidity.finance/audits/JonesDAOGLPVaults/), [second audit report](<https://solidity.finance/audits/JonesDAOVaultsV2/ >), [first audit report](< >)
-- [11592] audit report
+- Extraction confidence breakdown: high=5
+- Match method counts: extraction_exact=120
 
 Fork inheritance lineage and inherited audits are included when available.

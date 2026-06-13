@@ -5,7 +5,7 @@
 | Chain | base (8453) |
 | Address | `0xf34e0cff046e154cafcae502c7541b9e5fd8c249` |
 | Role | bridge_template |
-| Origin | needs_review |
+| Origin | standard_library |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (base [`0xf34e0cff046e154cafcae502c7541b9e5fd8c249`](../0xf34e0cff046e154cafcae502c7541b9e5fd8c249/)) |

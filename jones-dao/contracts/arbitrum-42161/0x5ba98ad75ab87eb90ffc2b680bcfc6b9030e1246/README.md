@@ -6,8 +6,8 @@
 | Address | `0x5ba98ad75ab87eb90ffc2b680bcfc6b9030e1246` |
 | Role | core_logic |
 | Origin | native |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [audit report](https://sourcehat.com/audits/JonesDAO) |
 | Deployments | 1 (arbitrum [`0x5ba98ad75ab87eb90ffc2b680bcfc6b9030e1246`](../0x5ba98ad75ab87eb90ffc2b680bcfc6b9030e1246/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |

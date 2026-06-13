@@ -5,7 +5,7 @@
 | Chain | avalanche (43114) |
 | Address | `0x7feebfa556281f2803abf8cae7727d4f18c13cfa` |
 | Role | core_logic |
-| Origin | needs_review |
+| Origin | native |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (avalanche [`0x7feebfa556281f2803abf8cae7727d4f18c13cfa`](../0x7feebfa556281f2803abf8cae7727d4f18c13cfa/)) |

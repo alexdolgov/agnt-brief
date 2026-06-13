@@ -1,0 +1,17 @@
+{
+  "address": "0x091e6ed7794d74b73081d32cab59fa47ff15418d",
+  "chain_id": 56,
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.34+commit.80d5c536",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": "0x97e36b2612f7c1c34320748a9b58bc90c7915ccf",
+  "fetched_at": "2026-06-13T16:44:59.836Z"
+}

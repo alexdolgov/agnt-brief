@@ -5,7 +5,7 @@
 | Chain | arbitrum (42161) |
 | Address | `0x9e250cae25cc0fd6e955285fe981b62c4479176b` |
 | Role | operational_periphery |
-| Origin | upstream |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (arbitrum [`0x9e250cae25cc0fd6e955285fe981b62c4479176b`](../0x9e250cae25cc0fd6e955285fe981b62c4479176b/)) |

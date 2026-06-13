@@ -1303,12 +1303,17 @@
 | [usdt0](./usdt0/) | $3.6B | 0.0% | ? | unknown | 20 | 0 | 2026-06-13 |
 | [uswap](./uswap/) | $545.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [usx.capital](./usx.capital/) | $763.3K | 0.0% | ? | declining | 1 | 3 | 2026-06-11 |
+| [utonic](./utonic/) | $5.0M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [utopia](./utopia/) | $15.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [valas-finance](./valas-finance/) | $22.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [valorem](./valorem/) | $34.3 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [vaultcraft](./vaultcraft/) | $546.3K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [vaultka](./vaultka/) | $5.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
+| [vaulty-finance](./vaulty-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | declining | 0 | 28 | 2026-06-11 |
 | [velodrome](./velodrome/) | $40.2M | 40.4% | ? | active | 6 | 52 | 2026-06-11 |
+| [velora](./velora/) | $248.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [velvet.capital](./velvet.capital/) | $95.2M | 77.8% | $95.2M | declining | 13 | 420 | 2026-06-11 |
 | [veno-finance](./veno-finance/) | $37.5M | 0.0% | ? | active | 3 | 51 | 2026-06-12 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | active | 2 | 4 | 2026-06-11 |

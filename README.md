@@ -1342,11 +1342,16 @@ Each project directory contains:
 | [usdt0](./usdt0/brief.md) | $3612.31M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [uswap](./uswap/brief.md) | $545.91K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [usx.capital](./usx.capital/brief.md) | $763.33K | scroll | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [utonic](./utonic/brief.md) | $5.02M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [utopia](./utopia/brief.md) | $15.43K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
+| [valas-finance](./valas-finance/brief.md) | $22.07K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [valorem](./valorem/brief.md) | $34.32 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [vaultcraft](./vaultcraft/brief.md) | $546.32K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [vaultka](./vaultka/brief.md) | $5.89K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [vaulty-finance](./vaulty-finance/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [vedelegate](./vedelegate/brief.md) | $1.16M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [velodrome](./velodrome/brief.md) | $40.17M | celo, optimism | 52 | 47/52 (90%) | 40.4% | 40.4% (Sherlock, Spearbit) | 3 | aging | ✅ active | - |
+| [velora](./velora/brief.md) | $248.18K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [veno-finance](./veno-finance/brief.md) | $37.49M | cronos, ethereum, zksync-era | 51 | 11/51 (22%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [ventuals](./ventuals/brief.md) | $29.70M | hyperliquid | 4 | 4/4 (100%) | 100.0% | 0.0% (-) | 2 | fresh | ✅ active | - |
 | [verio](./verio/brief.md) | $7.19M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
@@ -1380,5 +1385,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T14:59:45.516Z_
-_Projects: 1368_
+_Generated: 2026-06-13T15:02:16.000Z_
+_Projects: 1373_

@@ -784,9 +784,14 @@ Each project directory contains:
 | [hurricaneswap](./hurricaneswap/brief.md) | $11.22K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [hybra](./hybra/brief.md) | $1.82M | hyperliquid | 81 | 15/81 (19%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [hyper-finance](./hyper-finance/brief.md) | $34.93K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [hyperbloom](./hyperbloom/brief.md) | $92.90K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [hyperdrive-hl](./hyperdrive-hl/brief.md) | $2.78M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [hyperion](./hyperion/brief.md) | $21.07M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
+| [hypertrade](./hypertrade/brief.md) | $94.63K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [hyphen](./hyphen/brief.md) | $100.36K | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
+| [ibtc-finance](./ibtc-finance/brief.md) | $254.53 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
+| [ibtc-network](./ibtc-network/brief.md) | $158.72 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [ifpool](./ifpool/brief.md) | $80.70K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [immutable-zkevm](./immutable-zkevm/brief.md) | $28.54M | ethereum | 9 | 9/9 (100%) | 22.2% | 0.0% (-) | 1 | aging | ✅ active | - |
 | [impermax-finance](./impermax-finance/brief.md) | $735.87K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [infrared-finance](./infrared-finance/brief.md) | $50.68M | berachain, bsc | 27 | 15/27 (56%) | 100.0% | 66.7% (Spearbit) | 14 | fresh | ✅ active | - |
@@ -1145,5 +1150,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-06-13T13:20:31.373Z_
-_Projects: 1133_
+_Generated: 2026-06-13T13:23:00.685Z_
+_Projects: 1138_

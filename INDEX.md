@@ -286,7 +286,7 @@
 | [crabada](./crabada/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [cream-finance](./cream-finance/) | $2.3B | 0.0% | $2.3B | declining | 2 | 95 | 2026-06-13 |
 | [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-06-12 |
-| [credit-coop](./credit-coop/) | $2.1M | 0.0% | $2.1M | active | 3 | 2 | 2026-06-11 |
+| [credit-coop](./credit-coop/) | $4.6M | 0.0% | $4.6M | unknown | 3 | 7 | 2026-06-14 |
 | [cron-finance](./cron-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [cropper](./cropper/) | $113.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [crown-finance](./crown-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -302,7 +302,7 @@
 | [cytonic-airdrop-campaign](./cytonic-airdrop-campaign/) | $175.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-06-10 |
 | [dackieswap](./dackieswap/) | $52.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [dango](./dango/) | $4.1M | 0.0% | $4.1M | active | 1 | 3 | 2026-06-10 |
+| [dango](./dango/) | $4.1M | 0.0% | $4.1M | active | 2 | 3 | 2026-06-14 |
 | [dao-maker](./dao-maker/) | $9.3M | 0.0% | $9.3M | declining | 7 | 17 | 2026-06-10 |
 | [darkcrypto](./darkcrypto/) | $19.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [darkness](./darkness/) | $7.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -933,7 +933,7 @@
 | [powh3d](./powh3d/) | $4.4M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
 | [predict-fun](./predict-fun/) | $1.5M | 8.0% | $1.5M | unknown | 9 | 40 | 2026-05-22 |
 | [predictcoin](./predictcoin/) | $117.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [prime-staking](./prime-staking/) | $4.8M | 0.0% | ? | active | 2 | 10 | 2026-06-11 |
+| [prime-staking](./prime-staking/) | $2.5M | 0.0% | ? | active | 2 | 10 | 2026-06-14 |
 | [prime-vaults](./prime-vaults/) | $11.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | declining | 2 | 118 | 2026-06-13 |
 | [print3r](./print3r/) | $9.8 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1010,7 +1010,7 @@
 | [roguex](./roguex/) | $29.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rollie-finance](./rollie-finance/) | $4.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [rollup-finance](./rollup-finance/) | $77.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 0 | 11 | 2026-05-31 |
+| [ronin-bridge](./ronin-bridge/) | $3.7M | 0.0% | ? | dead | 0 | 15 | 2026-06-14 |
 | [rook](./rook/) | $190.1K | 0.0% | $190.1K | dead | 0 | 75 | 2026-06-13 |
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [root-finance](./root-finance/) | $1.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1123,7 +1123,7 @@
 | [splash-protocol](./splash-protocol/) | $5.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |
 | [spookyswap](./spookyswap/) | $842.7 | 0.0% | $842.7 | declining | 1 | 145 | 2026-06-13 |
-| [sport.fun](./sport.fun/) | $3.7M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
+| [sport.fun](./sport.fun/) | $3.5M | 0.0% | ? | active | 0 | 6 | 2026-06-14 |
 | [springx](./springx/) | $23.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [sprinter](./sprinter/) | $940.7K | 100.0% | ? | active | 6 | 4 | 2026-06-11 |
 | [sqd.ai](./sqd.ai/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 28 | 2026-06-12 |

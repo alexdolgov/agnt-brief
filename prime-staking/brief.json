@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "prime-staking",
-  "generated_at": "2026-06-11T02:01:23.809Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-14T00:05:25.240Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-24d8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "prime-staking",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4768361.635,
-    "tvl_usd": 4768361.635,
+    "dl_tvl_usd": 2467609.09669,
+    "tvl_usd": 2467609.09669,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

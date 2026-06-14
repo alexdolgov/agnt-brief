@@ -1,46 +1,46 @@
 {
   "schema_version": "2.0",
   "project_key": "sport.fun",
-  "generated_at": "2026-06-11T03:00:38.368Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
+  "generated_at": "2026-06-14T00:02:25.308Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-24d8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "sport.fun",
     "tier": 0,
     "peak_tvl": 7248975,
     "peak_date": "2025-08-25T00:00:00.000Z",
-    "tvl_30d_ago": 3581185,
-    "tvl_90d_ago": 4293529,
-    "tvl_current": 3724380,
+    "tvl_30d_ago": 3623326,
+    "tvl_90d_ago": 3764766,
+    "tvl_current": 3445810,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 5305968,
-    "change_30d_pct": 3.9985367971774703,
-    "change_90d_pct": -13.255971952209942,
-    "days_since_peak": 272,
+    "tvl_180d_ago": 5792432,
+    "change_30d_pct": -4.89925554587139,
+    "change_90d_pct": -8.472133460618801,
+    "days_since_peak": 293,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 48.62197758993513
+    "drop_from_peak_pct": 52.46486572239524
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 2,
-    "unique_implementations": 1,
-    "total_deployments": 2,
+    "total_contracts": 6,
+    "total_addresses": 11,
+    "unique_implementations": 6,
+    "total_deployments": 11,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 6,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3682014.45829,
-    "tvl_usd": 3682014.45829,
+    "dl_tvl_usd": 3539171.70213,
+    "tvl_usd": 3539171.70213,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
-    "website_url": "https://pro.sport.fun/login/?referral_code=UBJWCCSWOVU",
+    "website_url": "https://pro.sport.fun",
     "chains": [
       "base"
     ],
@@ -57,13 +57,13 @@
   },
   "topography": {
     "project_purpose": "Sport.fun is a Base fantasy soccer protocol where users trade fractional shares of football players backed by player performance. The protocol uses Gold, pegged to USDC, rather than a generic binary sports-event outcome prediction market model.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The protocol consists of a single product family with two proxy contracts sharing the same FDFPairV3 implementation, indicating a standardized market structure. No additional infrastructure contracts are present in the inventory.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 6,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -73,17 +73,75 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x4fdce033b9f30019337ddc5cc028dc023580585e",
-      "name": "FDFPairV3",
+      "address": "0xc21c2d586f1db92eedb67a2fc348f21ed7541965",
+      "name": "DevelopmentPlayersV2",
       "role": "unknown",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
-      "product_line": "Sport.fun",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
+      "impl_address": "0x48d29efe75e7e1403184e07005170bf72e1185a5",
+      "impl_name": "DevelopmentPlayersV2",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc21c2d586f1db92eedb67a2fc348f21ed7541965",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc98bf3fc49a8a7ad162098ad0bb62268d46dacf9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0a1b8a8dcd25ce607ebd1ccabb67c37621f5599f",
+      "name": "FDFPairV3",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Sport.fun",
+      "tvl_usd": null,
+      "is_proxy": false,
       "impl_address": "0x0a1b8a8dcd25ce607ebd1ccabb67c37621f5599f",
       "impl_name": "FDFPairV3",
       "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0a1b8a8dcd25ce607ebd1ccabb67c37621f5599f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3433e74b3f70b9ea43e85713a3a609470ff57a72",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 8453,
           "chain_name": "base",
@@ -109,15 +167,179 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xbac4a9428ea707c51f171ed9890c3c2fa436305d",
+      "name": "FeeManagerV3",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x5a0e0bb48c7f1fcb2d6dcebb565764eef1459830",
+      "impl_name": "FeeManagerV3",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbac4a9428ea707c51f171ed9890c3c2fa436305d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x17345c2e8e9a81c66e1fb76a0951b18aa95b6354",
+      "name": "PackSaleReveal",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x4fb35d907efcd6c0233ed0abeb978889abbe09e4",
+      "impl_name": "PackSaleReveal",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x17345c2e8e9a81c66e1fb76a0951b18aa95b6354",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xb0a1004b9a14176783c31b4c56e4254f3d072b32",
+      "name": "PlayerPackV3",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xb0a1004b9a14176783c31b4c56e4254f3d072b32",
+      "impl_name": "PlayerPackV3",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb0a1004b9a14176783c31b4c56e4254f3d072b32",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc2df9440afd674293a6f7a55a53e14a6302d3e8d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xcc647f306482f13ff0a20c99aec29baddd043208",
+      "name": "PlayerV3",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PlayerV3",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xcc647f306482f13ff0a20c99aec29baddd043208",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0a1b8a8dcd25ce607ebd1ccabb67c37621f5599f",
+      "name": "FDFPairV3",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xb0a1004b9a14176783c31b4c56e4254f3d072b32",
+      "name": "PlayerPackV3",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xcc647f306482f13ff0a20c99aec29baddd043208",
+      "name": "PlayerV3",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 3,
     "upstream": 0,
-    "standard_library": 1,
+    "standard_library": 3,
     "needs_review": 0
   },
   "scope_matching_notes": {

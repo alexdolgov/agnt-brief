@@ -5,11 +5,11 @@
 - Project: Prime Staking (`prime-staking`)
 - Website: [https://primestaking.xyz/](https://primestaking.xyz/)
 - Lifecycle: active (Tier 0, 66.4% below peak)
-- Generated: 2026-06-11T02:01:23.809Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-14T00:05:25.240Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
 - Chains: base
 - Contract surface: 10 unique implementations (10 raw deployments)
-- DeFi Llama TVL: $4,768,361.64
+- DeFi Llama TVL: $2,467,609.10
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 

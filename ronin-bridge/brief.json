@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ronin-bridge",
-  "generated_at": "2026-05-31T10:30:38.474Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-14T00:01:31.105Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-24d8",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "ronin-bridge",
@@ -32,21 +32,21 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 11,
-    "total_addresses": 13,
-    "unique_implementations": 11,
-    "total_deployments": 13,
+    "total_contracts": 15,
+    "total_addresses": 18,
+    "unique_implementations": 15,
+    "total_deployments": 18,
     "audited_contracts": 0,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 9,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 5,
+    "contracts_verified_unaudited": 9,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 6,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4551019.73238,
-    "tvl_usd": 4551019.73238,
+    "dl_tvl_usd": 3720579.49025,
+    "tvl_usd": 3720579.49025,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -70,11 +70,47 @@
     "relationship_narrative": "The Ronin Bridge family relies on the RoninValidator contract for validator set management and signature verification. The CREATE2 factory is a shared infrastructure component for deploying contracts deterministically.",
     "product_family_count": 2
   },
+  "surface_sufficiency": {
+    "unique_implementations": 15,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
+  },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x411de17f12d1a34ecc7f45f49844626267c75e81",
+      "name": "ARMProxy",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ARMProxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x411de17f12d1a34ecc7f45f49844626267c75e81",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -180,17 +216,26 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x64192819ac13ef72bf6b5ae239ac672b43a9af08",
+      "address": "0x5019d41b0737e39b51fd6da4859f3e27579e4e69",
       "name": "MainchainGatewayV3",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": "Ronin Bridge",
       "tvl_usd": null,
-      "is_proxy": true,
+      "is_proxy": false,
       "impl_address": "0x5019d41b0737e39b51fd6da4859f3e27579e4e69",
       "impl_name": "MainchainGatewayV3",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5019d41b0737e39b51fd6da4859f3e27579e4e69",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -247,6 +292,99 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x80226fc0ee2b096224eeac085bb9a8cba1146f7d",
+      "name": "Router",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Router",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x80226fc0ee2b096224eeac085bb9a8cba1146f7d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb22764f98dd05c789929716d677382df22c05cb6",
+      "name": "TokenAdminRegistry",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TokenAdminRegistry",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb22764f98dd05c789929716d677382df22c05cb6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x17d8a409fe2cef2d3808bcb61f14abeffc28876e",
+      "name": "TokenPoolFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TokenPoolFactory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x17d8a409fe2cef2d3808bcb61f14abeffc28876e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -348,7 +486,7 @@
       "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "standard_library",
-      "origin_provider": "Unknown Library",
+      "origin_provider": "create2-deployer",
       "product_line": "CREATE2 factory ​",
       "tvl_usd": null,
       "is_proxy": false,
@@ -467,13 +605,53 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5019d41b0737e39b51fd6da4859f3e27579e4e69",
+      "name": "MainchainGatewayV3",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x80226fc0ee2b096224eeac085bb9a8cba1146f7d",
+      "name": "Router",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb22764f98dd05c789929716d677382df22c05cb6",
+      "name": "TokenAdminRegistry",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x17d8a409fe2cef2d3808bcb61f14abeffc28876e",
+      "name": "TokenPoolFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 8,
+    "native": 12,
     "upstream": 0,
-    "standard_library": 3,
-    "needs_review": 0
+    "standard_library": 2,
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

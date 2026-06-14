@@ -1,0 +1,18 @@
+{
+  "address": "0x5019d41b0737e39b51fd6da4859f3e27579e4e69",
+  "chain_id": 1,
+  "contract_name": "MainchainGatewayV3",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "shanghai",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 60,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T00:01:33.452Z"
+}

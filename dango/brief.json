@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "dango",
-  "generated_at": "2026-06-10T22:39:07.671Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
+  "generated_at": "2026-06-14T00:03:26.172Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-24d8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "dango",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3870467,
+    "dl_tvl_usd": 3200872,
     "tvl_usd": 4073057.790022,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -48,11 +48,11 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2024-10",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 0,
+      "aging": 1,
       "stale": 0,
       "unknown": 1
     }
@@ -159,7 +159,7 @@
       "name": "ProxyAdmin",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "OpenZeppelin",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -214,6 +214,27 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14306,
+      "audit_key": "audit-14306",
+      "report_name": "blog",
+      "report_url": "https://informal.systems/blog/jellyfish-merkle-tree-quint-2025",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -233,6 +254,10 @@
       {
         "audit_id": 2639,
         "report_name": "contest results"
+      },
+      {
+        "audit_id": 14306,
+        "report_name": "blog"
       }
     ],
     "inherited_remapped_matches": []

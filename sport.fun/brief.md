@@ -3,33 +3,32 @@
 ## Project Overview
 
 - Project: Sport.fun (`sport.fun`)
-- Website: [https://pro.sport.fun/login/?referral_code=UBJWCCSWOVU](https://pro.sport.fun/login/?referral_code=UBJWCCSWOVU)
-- Lifecycle: active (Tier 0, 48.6% below peak)
-- Generated: 2026-06-11T03:00:38.368Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Website: [https://pro.sport.fun](https://pro.sport.fun)
+- Lifecycle: active (Tier 0, 52.5% below peak)
+- Generated: 2026-06-14T00:02:25.308Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
 - Chains: base
-- Contract surface: 1 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $3,682,014.46
+- Contract surface: 6 unique implementations (11 raw deployments)
+- DeFi Llama TVL: $3,539,171.70
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Sport.fun is a Base fantasy soccer protocol where users trade fractional shares of football players backed by player performance. The protocol uses Gold, pegged to USDC, rather than a generic binary sports-event outcome prediction market model.
 
+### Architecture
+
+The protocol consists of a single product family with two proxy contracts sharing the same FDFPairV3 implementation, indicating a standardized market structure. No additional infrastructure contracts are present in the inventory.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/6 (0.0%)
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 2
+- Unique implementations: 6
+- Raw deployments: 11
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -47,11 +46,16 @@ Sport.fun is a Base fantasy soccer protocol where users trade fractional shares 
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| FDFPairV3 | unknown | base | 2 deployments: base [`0x4fdce0...80585e`](./contracts/base-8453/0x4fdce033b9f30019337ddc5cc028dc023580585e/); base `0x9da1bb...446617` | ⚠️ Unaudited |
+| DevelopmentPlayersV2 | unknown | base | 2 deployments: base [`0xc21c2d...541965`](./contracts/base-8453/0xc21c2d586f1db92eedb67a2fc348f21ed7541965/); base `0xc98bf3...6dacf9` | ⚠️ Unaudited |
+| FDFPairV3 | unknown | base | 4 deployments: base [`0x0a1b8a...f5599f`](./contracts/base-8453/0x0a1b8a8dcd25ce607ebd1ccabb67c37621f5599f/); base `0x3433e7...f57a72`; base `0x4fdce0...80585e`; base `0x9da1bb...446617` | ⚠️ Unaudited |
+| FeeManagerV3 | governance | base | [`0xbac4a9...36305d`](./contracts/base-8453/0xbac4a9428ea707c51f171ed9890c3c2fa436305d/) | ⚠️ Unaudited |
+| PackSaleReveal | unknown | base | [`0x17345c...5b6354`](./contracts/base-8453/0x17345c2e8e9a81c66e1fb76a0951b18aa95b6354/) | ⚠️ Unaudited |
+| PlayerPackV3 | unknown | base | 2 deployments: base [`0xb0a100...072b32`](./contracts/base-8453/0xb0a1004b9a14176783c31b4c56e4254f3d072b32/); base `0xc2df94...2d3e8d` | ⚠️ Unaudited |
+| PlayerV3 | unknown | base | [`0xcc647f...043208`](./contracts/base-8453/0xcc647f306482f13ff0a20c99aec29baddd043208/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -80,15 +84,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| base | [`0x0a1b8a...f5599f`](./contracts/base-8453/0x0a1b8a8dcd25ce607ebd1ccabb67c37621f5599f/) | FDFPairV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xb0a100...072b32`](./contracts/base-8453/0xb0a1004b9a14176783c31b4c56e4254f3d072b32/) | PlayerPackV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xcc647f...043208`](./contracts/base-8453/0xcc647f306482f13ff0a20c99aec29baddd043208/) | PlayerV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 3 |
 | upstream | 0 |
-| standard_library | 1 |
+| standard_library | 3 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

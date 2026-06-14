@@ -5,11 +5,11 @@
 - Project: Dango (`dango`)
 - Website: [https://dango.exchange/](https://dango.exchange/)
 - Lifecycle: active (Tier 0, 14.4% below peak)
-- Generated: 2026-06-10T22:39:07.671Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-14T00:03:26.172Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
 - Chains: ethereum
 - Contract surface: 3 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $3,870,467.00
+- DeFi Llama TVL: $3,200,872.00
 - On-chain TVL (included contracts): $4,073,057.79
 - TVL by chain: Ethereum $4,073,057.79
 
@@ -30,11 +30,11 @@ Dango is a trading-focused Layer 1 / DeFi hub with spot trading, perpetuals, len
 - Unverified implementations: 0
 - Unique implementations: 3
 - Raw deployments: 6
-- Audits discovered: 1
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $4,073,057.79
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2024-10 (aging)
+- Staleness: 0 fresh, 1 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -78,6 +78,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [contest results](https://audits.sherlock.xyz/contests/1066) | Sherlock | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [blog](https://informal.systems/blog/jellyfish-merkle-tree-quint-2025) | Zellic | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -98,7 +99,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -106,5 +107,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [2639] contest results
+- [14306] blog
 
 Fork inheritance lineage and inherited audits are included when available.

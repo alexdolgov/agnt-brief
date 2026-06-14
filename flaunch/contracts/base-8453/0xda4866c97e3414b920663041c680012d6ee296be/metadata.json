@@ -1,0 +1,17 @@
+{
+  "address": "0xda4866c97e3414b920663041c680012d6ee296be",
+  "chain_id": 8453,
+  "contract_name": "BuyBackAction",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 29,
+  "constructor_arguments": "000000000000000000000000000000000d564d5be76f7f0d28fe52605afc7cf80000000000000000000000004c211268cbf275637a8c235e63a26bc0e05aca25",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T10:56:22.658Z"
+}

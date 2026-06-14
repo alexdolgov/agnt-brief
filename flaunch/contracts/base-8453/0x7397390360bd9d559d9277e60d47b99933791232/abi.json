@@ -1,0 +1,248 @@
+[
+  {
+    "inputs": [],
+    "name": "ActionNotApproved",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInitialization",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotInitializing",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Reentrancy",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_action",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "fee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "contract IHooks",
+            "name": "hooks",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct PoolKey",
+        "name": "_poolKey",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes",
+        "name": "_data",
+        "type": "bytes"
+      }
+    ],
+    "name": "ActionExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "version",
+        "type": "uint64"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "actionManager",
+    "outputs": [
+      {
+        "internalType": "contract TreasuryActionManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "claimFees",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_action",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_data",
+        "type": "bytes"
+      }
+    ],
+    "name": "executeAction",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address payable",
+        "name": "_positionManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_actionManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_nativeToken",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "fee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "contract IHooks",
+            "name": "hooks",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PoolKey",
+        "name": "_poolKey",
+        "type": "tuple"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nativeToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "poolKey",
+    "outputs": [
+      {
+        "internalType": "Currency",
+        "name": "currency0",
+        "type": "address"
+      },
+      {
+        "internalType": "Currency",
+        "name": "currency1",
+        "type": "address"
+      },
+      {
+        "internalType": "uint24",
+        "name": "fee",
+        "type": "uint24"
+      },
+      {
+        "internalType": "int24",
+        "name": "tickSpacing",
+        "type": "int24"
+      },
+      {
+        "internalType": "contract IHooks",
+        "name": "hooks",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "positionManager",
+    "outputs": [
+      {
+        "internalType": "contract PositionManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

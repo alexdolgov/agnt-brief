@@ -304,7 +304,7 @@
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-06-10 |
 | [dackieswap](./dackieswap/) | $52.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dango](./dango/) | $4.1M | 0.0% | $4.1M | active | 2 | 3 | 2026-06-14 |
-| [dao-maker](./dao-maker/) | $9.3M | 0.0% | $9.3M | declining | 7 | 17 | 2026-06-10 |
+| [dao-maker](./dao-maker/) | $9.3M | 0.0% | $9.3M | declining | 7 | 20 | 2026-06-14 |
 | [darkcrypto](./darkcrypto/) | $19.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [darkness](./darkness/) | $7.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ddex](./ddex/) | $526.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -424,7 +424,7 @@
 | [fiva](./fiva/) | $42.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [flamingo](./flamingo/) | $2.2M | 0.0% | ? | unknown | 6 | 0 | 2026-06-10 |
 | [flashstake](./flashstake/) | $36.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
-| [flaunch](./flaunch/) | $2.1M | 0.0% | ? | active | 1 | 3 | 2026-06-10 |
+| [flaunch](./flaunch/) | $21.2M | 0.0% | $21.2M | unknown | 0 | 56 | 2026-06-14 |
 | [flex](./flex/) | $2.6M | 33.3% | $1.0M | unknown | 4 | 15 | 2026-06-14 |
 | [flexa](./flexa/) | $1.4M | 100.0% | ? | declining | 2 | 2 | 2026-06-10 |
 | [flipster](./flipster/) | $33.0M | 0.0% | ? | active | 0 | 2 | 2026-06-14 |
@@ -625,7 +625,7 @@
 | [kintsu](./kintsu/) | $2.2M | 0.0% | ? | declining | 5 | 12 | 2026-06-14 |
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 2 | 154 | 2026-06-11 |
 | [klaybank](./klaybank/) | $298.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
-| [klaystation](./klaystation/) | $0.0 | 0.0% | ? | declining | 0 | 1 | 2026-06-11 |
+| [klaystation](./klaystation/) | $1.5M | 0.0% | ? | declining | 0 | 1 | 2026-06-14 |
 | [klayswap](./klayswap/) | $3.9M | 0.0% | ? | declining | 4 | 22 | 2026-06-14 |
 | [klend](./klend/) | $5.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kleros](./kleros/) | $10.7M | 0.0% | $10.7M | unknown | 0 | 358 | 2026-06-13 |
@@ -687,7 +687,7 @@
 | [luckychip](./luckychip/) | $532.1 | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [lumenswap](./lumenswap/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [lumin-finance](./lumin-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-06-11 |
+| [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 36.8% | ? | declining | 7 | 22 | 2026-06-14 |
 | [lynex](./lynex/) | $262.0K | 0.0% | $262.0K | declining | 0 | 45 | 2026-06-13 |
 | [magik-finance](./magik-finance/) | $3.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [magma-finance-almm](./magma-finance-almm/) | $1.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -837,7 +837,7 @@
 | [o2-exchange](./o2-exchange/) | $2.2M | 0.0% | ? | unknown | 13 | 0 | 2026-06-13 |
 | [o3-swap](./o3-swap/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [obeliskbtc](./obeliskbtc/) | $33.2M | 36.8% | $33.2M | declining | 1 | 19 | 2026-06-13 |
-| [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
+| [obsidian](./obsidian/) | $1.4M | 0.0% | ? | active | 0 | 6 | 2026-06-14 |
 | [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 1 | 35 | 2026-06-13 |
 | [ocp-finance](./ocp-finance/) | $10.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [octopus-network](./octopus-network/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

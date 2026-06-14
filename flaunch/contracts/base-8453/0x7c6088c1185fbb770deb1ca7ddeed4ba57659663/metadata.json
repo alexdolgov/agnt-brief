@@ -1,0 +1,17 @@
+{
+  "address": "0x7c6088c1185fbb770deb1ca7ddeed4ba57659663",
+  "chain_id": 8453,
+  "contract_name": "IndexerSubscriber",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 7777777,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 93,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T10:56:20.972Z"
+}

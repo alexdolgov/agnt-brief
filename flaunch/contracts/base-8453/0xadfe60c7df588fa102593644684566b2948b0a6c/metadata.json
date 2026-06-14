@@ -1,0 +1,17 @@
+{
+  "address": "0xadfe60c7df588fa102593644684566b2948b0a6c",
+  "chain_id": 8453,
+  "contract_name": "MarketCappedPrice",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 24,
+  "constructor_arguments": "000000000000000000000000b8a70b4d1547bf6193bd67a73f4f98ea9fd0a973000000000000000000000000498581ff718922c3f8e6a244956af099b2652b2b0000000000000000000000004200000000000000000000000000000000000006000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda02913000000000000000000000000705624ee66a4726b68e3ea9f230fd924253fe613",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T10:56:22.006Z"
+}

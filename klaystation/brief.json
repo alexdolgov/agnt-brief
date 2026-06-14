@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "klaystation",
-  "generated_at": "2026-06-11T00:28:46.762Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
+  "generated_at": "2026-06-14T10:46:31.876Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-df6c",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "klaystation",
@@ -45,8 +45,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 0,
-    "tvl_usd": 0,
+    "dl_tvl_usd": 1454169.63842,
+    "tvl_usd": 1454169.63842,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

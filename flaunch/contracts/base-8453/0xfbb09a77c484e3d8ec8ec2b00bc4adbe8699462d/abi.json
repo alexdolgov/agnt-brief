@@ -1,0 +1,461 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_notifier",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_fairLaunch",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CallerNotWhitelistZap",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CallerNotWhitelisted",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_sender",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_validNotifier",
+        "type": "address"
+      }
+    ],
+    "name": "InvalidNotifier",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NewOwnerIsZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoHandoverRequest",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WhitelistAlreadyExists",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipHandoverCanceled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipHandoverRequested",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oldOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "PoolId",
+        "name": "_poolId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_root",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_ipfs",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_maxTokens",
+        "type": "uint256"
+      }
+    ],
+    "name": "WhitelistCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_whitelistPoolSwap",
+        "type": "address"
+      }
+    ],
+    "name": "WhitelistPoolSwapUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_whitelistZap",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "_approved",
+        "type": "bool"
+      }
+    ],
+    "name": "WhitelistZapUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "cancelOwnershipHandover",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "completeOwnershipHandover",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "fairLaunch",
+    "outputs": [
+      {
+        "internalType": "contract FairLaunch",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "notifier",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "_poolId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes4",
+        "name": "_key",
+        "type": "bytes4"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_data",
+        "type": "bytes"
+      }
+    ],
+    "name": "notify",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "result",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "ownershipHandoverExpiresAt",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "result",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "requestOwnershipHandover",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "_poolId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_root",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "string",
+        "name": "_ipfs",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxTokens",
+        "type": "uint256"
+      }
+    ],
+    "name": "setWhitelist",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_whitelistPoolSwap",
+        "type": "address"
+      }
+    ],
+    "name": "setWhitelistPoolSwap",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_whitelistZap",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "_approved",
+        "type": "bool"
+      }
+    ],
+    "name": "setWhitelistZap",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "subscribe",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "unsubscribe",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "PoolId",
+        "name": "_poolId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "whitelistMerkles",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "root",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "string",
+        "name": "ipfs",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxTokens",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "active",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "exists",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "whitelistPoolSwap",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_whitelistZap",
+        "type": "address"
+      }
+    ],
+    "name": "whitelistZaps",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "_approved",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

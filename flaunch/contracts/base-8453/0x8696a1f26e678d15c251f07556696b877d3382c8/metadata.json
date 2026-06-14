@@ -1,0 +1,17 @@
+{
+  "address": "0x8696a1f26e678d15c251f07556696b877d3382c8",
+  "chain_id": 8453,
+  "contract_name": "BurnTokensAction",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "000000000000000000000000000000000d564d5be76f7f0d28fe52605afc7cf8",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T10:56:21.212Z"
+}

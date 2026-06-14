@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "dao-maker",
-  "generated_at": "2026-06-10T22:40:20.840Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
+  "generated_at": "2026-06-14T10:50:54.849Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-df6c",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "dao-maker",
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 17,
-    "total_addresses": 24,
-    "unique_implementations": 17,
-    "total_deployments": 24,
+    "total_contracts": 20,
+    "total_addresses": 27,
+    "unique_implementations": 20,
+    "total_deployments": 27,
     "audited_contracts": 0,
-    "unaudited_contracts": 4,
+    "unaudited_contracts": 7,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 4,
+    "contracts_verified_unaudited": 7,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 13,
     "coverage_pct": 0,
     "total_audits": 7,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1997131,
+    "dl_tvl_usd": 1526441,
     "tvl_usd": 9341771.078306995,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -54,6 +54,7 @@
     "asd_usd": 9341771.078306995,
     "website_url": "https://daomaker.com/",
     "chains": [
+      "bsc",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -73,7 +74,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 17,
+    "unique_implementations": 20,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -142,7 +143,69 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x598ca79eee092a084b5f168c4196edb80ea22781",
+      "name": "DAOFarm",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DAOFarm",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x598ca79eee092a084b5f168c4196edb80ea22781",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x0530c78b8f5cf1b5e7f9c787a88e53c74197fe02",
+      "name": "DAOPrefundingRaise",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DAOPrefundingRaise",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x0530c78b8f5cf1b5e7f9c787a88e53c74197fe02",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -218,7 +281,38 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xe8ea597b795815f971cdd88258b31faa0a24b3fc",
+      "name": "SHO",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SHO",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe8ea597b795815f971cdd88258b31faa0a24b3fc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -267,7 +361,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -845,10 +939,40 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x598ca79eee092a084b5f168c4196edb80ea22781",
+      "name": "DAOFarm",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x0530c78b8f5cf1b5e7f9c787a88e53c74197fe02",
+      "name": "DAOPrefundingRaise",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x141ba88b17442f4fe305871c9642e3c1c6307346",
       "name": "Farm",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xe8ea597b795815f971cdd88258b31faa0a24b3fc",
+      "name": "SHO",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -866,7 +990,7 @@
     }
   ],
   "origin_summary": {
-    "native": 17,
+    "native": 20,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

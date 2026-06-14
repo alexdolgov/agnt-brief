@@ -1,0 +1,116 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract ITreasuryManagerFactory",
+        "name": "_treasuryManagerFactory",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_group",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_creator",
+        "type": "address"
+      }
+    ],
+    "name": "ApprovedCreatorAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_group",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_creator",
+        "type": "address"
+      }
+    ],
+    "name": "ApprovedCreatorRemoved",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_creator",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "isValidCreator",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_group",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_creators",
+        "type": "address[]"
+      },
+      {
+        "internalType": "bool",
+        "name": "_approved",
+        "type": "bool"
+      }
+    ],
+    "name": "setApprovedCreators",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "treasuryManagerFactory",
+    "outputs": [
+      {
+        "internalType": "contract ITreasuryManagerFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

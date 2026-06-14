@@ -1,0 +1,718 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fleth",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_treasuryManagerFactory",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AirdropAlreadyClaimed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AirdropAlreadyExists",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AirdropEnded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AirdropExpired",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AirdropInProgress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ApprovedAirdropCreatorAlreadyAdded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ApprovedAirdropCreatorNotPresent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ETHSentForTokenAirdrop",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAirdrop",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAirdropIndex",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MerkleVerificationFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NewOwnerIsZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoHandoverRequest",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotApprovedAirdropCreator",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_creator",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_airdropIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_tokenClaimed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "AirdropClaimed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_contract",
+        "type": "address"
+      }
+    ],
+    "name": "ApprovedAirdropCreatorAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_contract",
+        "type": "address"
+      }
+    ],
+    "name": "ApprovedAirdropCreatorRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_creator",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_airdropIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_tokenWithdrawn",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "CreatorWithdraw",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_creator",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_airdropIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_airdropEndTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "NewAirdrop",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipHandoverCanceled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipHandoverRequested",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oldOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_creator",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_airdropIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_airdropEndTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_merkleRoot",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "string",
+        "name": "_merkleDataIPFSHash",
+        "type": "string"
+      }
+    ],
+    "name": "addAirdrop",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_creator",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_airdropIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "airdropData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "airdropEndTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountLeft",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "merkleRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "string",
+            "name": "merkleDataIPFSHash",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct IMerkleAirdrop.AirdropData",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_creator",
+        "type": "address"
+      }
+    ],
+    "name": "airdropsCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_airdropsCount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "cancelOwnershipHandover",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_creator",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_airdropIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32[]",
+        "name": "_merkleProof",
+        "type": "bytes32[]"
+      }
+    ],
+    "name": "claim",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "completeOwnershipHandover",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_airdropIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "creatorWithdraw",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokensWithdrawn",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "fleth",
+    "outputs": [
+      {
+        "internalType": "contract IFLETH",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getApprovedAirdropCreators",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_creator",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_airdropIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "isAirdropActive",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_creator",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_index",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "isAirdropClaimed",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "_isAirdropClaimed",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_contract",
+        "type": "address"
+      }
+    ],
+    "name": "isApprovedAirdropCreator",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_creator",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_airdropIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32[]",
+        "name": "_merkleProof",
+        "type": "bytes32[]"
+      }
+    ],
+    "name": "isPartOfMerkleTree",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "result",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "ownershipHandoverExpiresAt",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "result",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_claimant",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_creator",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_airdropIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32[]",
+        "name": "_merkleProof",
+        "type": "bytes32[]"
+      }
+    ],
+    "name": "proxyClaim",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "requestOwnershipHandover",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_contract",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "_approved",
+        "type": "bool"
+      }
+    ],
+    "name": "setApprovedAirdropCreators",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "treasuryManagerFactory",
+    "outputs": [
+      {
+        "internalType": "contract ITreasuryManagerFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

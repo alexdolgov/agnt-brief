@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "lusd-chickenbonds",
-  "generated_at": "2026-06-11T00:48:47.842Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-2b99",
+  "generated_at": "2026-06-14T10:54:10.330Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-df6c",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "lusd-chickenbonds",
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 24,
-    "total_addresses": 57,
-    "unique_implementations": 24,
-    "total_deployments": 57,
-    "audited_contracts": 6,
-    "unaudited_contracts": 15,
-    "contracts_verified_audited": 6,
-    "contracts_verified_unaudited": 15,
+    "total_contracts": 22,
+    "total_addresses": 58,
+    "unique_implementations": 22,
+    "total_deployments": 58,
+    "audited_contracts": 7,
+    "unaudited_contracts": 12,
+    "contracts_verified_audited": 7,
+    "contracts_verified_unaudited": 12,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 3,
-    "coverage_pct": 28.6,
+    "coverage_pct": 36.8,
     "total_audits": 7,
-    "scoreable_audits": 6,
-    "dl_tvl_usd": 1491358.00784,
+    "scoreable_audits": 7,
+    "dl_tvl_usd": 1498710.42328,
     "tvl_usd": 362849.47034178185,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -73,7 +73,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 24,
+    "unique_implementations": 22,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -179,17 +179,50 @@
         }
       ],
       "audits_covering": [
-        "audit-3040",
-        "audit-3041",
-        "audit-3042",
-        "audit-3044",
-        "audit-3045"
+        "audit-14521",
+        "audit-14522",
+        "audit-14523",
+        "audit-14525",
+        "audit-14526"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x896d8a30c32ead64f2e1195c2c8e0932be7dc20b",
+      "name": "BAMM",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BAMM",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x896d8a30c32ead64f2e1195c2c8e0932be7dc20b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14520"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -225,7 +258,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3043"
+        "audit-14524"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -294,12 +327,12 @@
         }
       ],
       "audits_covering": [
-        "audit-3040",
-        "audit-3041",
-        "audit-3042",
-        "audit-3043",
-        "audit-3044",
-        "audit-3045"
+        "audit-14521",
+        "audit-14522",
+        "audit-14523",
+        "audit-14524",
+        "audit-14525",
+        "audit-14526"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -488,12 +521,12 @@
         }
       ],
       "audits_covering": [
-        "audit-3040",
-        "audit-3041",
-        "audit-3042",
-        "audit-3043",
-        "audit-3044",
-        "audit-3045"
+        "audit-14521",
+        "audit-14522",
+        "audit-14523",
+        "audit-14524",
+        "audit-14525",
+        "audit-14526"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -535,7 +568,7 @@
         }
       ],
       "audits_covering": [
-        "audit-3043"
+        "audit-14524"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -746,148 +779,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xb1bc8b14ac9576d34225dbd6c09dd88a28c064ff",
-      "name": "GelatoLQTYArb",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "gelato",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "GelatoLQTYArb",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xb1bc8b14ac9576d34225dbd6c09dd88a28c064ff",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x93aad8d9941b0c034aca21f2a2c5317ec1397ee2",
-      "name": "GelatoLQTYArbFactory",
-      "role": "registry",
-      "origin_kind": "upstream",
-      "origin_provider": "gelato",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "GelatoLQTYArbFactory",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x93aad8d9941b0c034aca21f2a2c5317ec1397ee2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xcdf4a95e684c8aeb42077a1312dafc98da64e1fd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xd1d25d2c962ce628820a33118578eb7fe2f03b98",
-      "name": "GelatoLQTYWBTCArb",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "gelato",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "GelatoLQTYWBTCArb",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xd1d25d2c962ce628820a33118578eb7fe2f03b98",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x16240bc4e1e82525c67faf01fa8ffb15e2fc50e6",
-      "name": "GelatoLQTYWBTCArbFactory",
-      "role": "registry",
-      "origin_kind": "upstream",
-      "origin_provider": "gelato",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "GelatoLQTYWBTCArbFactory",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x16240bc4e1e82525c67faf01fa8ffb15e2fc50e6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xca2f671cd71b31acd60e74a7c148715b053c7f05",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x0cb5727a6a8cb8a01c1b693d7a18119a3542dc42",
       "name": "GenerativeEggArtwork",
       "role": "unknown",
@@ -955,8 +846,8 @@
         }
       ],
       "audits_covering": [
-        "audit-3042",
-        "audit-3045"
+        "audit-14523",
+        "audit-14526"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -967,21 +858,21 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x0ad96b511f501c1bdab362c5c044ea8279846713",
-      "name": "LQTYWBTCArb",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "liquity",
+      "address": "0xfeb4acf3df3cdea7399794d0869ef76a6efaff52",
+      "name": "GnosisSafe",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "LQTYWBTCArb",
+      "is_proxy": true,
+      "impl_address": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
+      "impl_name": "GnosisSafe",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0x0ad96b511f501c1bdab362c5c044ea8279846713",
+          "address": "0xfeb4acf3df3cdea7399794d0869ef76a6efaff52",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -993,7 +884,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -1001,8 +892,8 @@
       "address": "0x60c0b047133f696334a2b7f68af0b49d2f3d4f72",
       "name": "LSUDUsdToLUSDEth",
       "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "liquity",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1024,7 +915,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -1055,7 +946,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -1149,12 +1040,88 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804",
+      "name": "Vyper_contract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Vyper_contract",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5fa5b62c8af877cb37031e0a3b2f34a78e3c56a6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x74ed5d42203806c8cdcf2f04ca5f60dc777b901c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xda0dd1798be66e17d5ab1dc476302b56689c2db4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xed279fdd11ca84beef15af5d39bb4d4bee23f0ca",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [
     {
-      "audit_id": 3039,
-      "audit_key": "audit-3039",
+      "audit_id": 14520,
+      "audit_key": "audit-14520",
       "report_name": "B.Protocol - Chicken Bonds Audit.pdf",
       "report_url": "https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/B.Protocol%20-%20Chicken%20Bonds%20Audit.pdf",
       "auditor": "B.Protocol",
@@ -1165,17 +1132,22 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BAMM.sol",
+        "GemSeller.sol",
+        "GemSellerController.sol",
+        "UniV3Twap.sol"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3040,
-      "audit_key": "audit-3040",
+      "audit_id": 14521,
+      "audit_key": "audit-14521",
       "report_name": "Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf",
       "report_url": "https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Liquity%20ChickenBond.pdf",
       "auditor": "Coinspect",
@@ -1218,8 +1190,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3041,
-      "audit_key": "audit-3041",
+      "audit_id": 14522,
+      "audit_key": "audit-14522",
       "report_name": "Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf",
       "report_url": "https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Liquity%20ChickenBonds%202nd%20v220803.pdf",
       "auditor": "Coinspect",
@@ -1257,8 +1229,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3042,
-      "audit_key": "audit-3042",
+      "audit_id": 14523,
+      "audit_key": "audit-14523",
       "report_name": "Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf",
       "report_url": "https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Liquity%20ChickenBonds%203rd%20v220929.pdf",
       "auditor": "Coinspect",
@@ -1303,8 +1275,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3043,
-      "audit_key": "audit-3043",
+      "audit_id": 14524,
+      "audit_key": "audit-14524",
       "report_name": "Coinspect - Smart Contract Audit - Liquity ChickenBonds 4th v221021.pdf",
       "report_url": "https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Liquity%20ChickenBonds%204th%20v221021.pdf",
       "auditor": "Coinspect",
@@ -1329,8 +1301,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3044,
-      "audit_key": "audit-3044",
+      "audit_id": 14525,
+      "audit_key": "audit-14525",
       "report_name": "Dedaub_Chicken Bonds Audit.pdf",
       "report_url": "https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Dedaub_Chicken%20Bonds%20Audit.pdf",
       "auditor": "Dedaub",
@@ -1356,8 +1328,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 3045,
-      "audit_key": "audit-3045",
+      "audit_id": 14526,
+      "audit_key": "audit-14526",
       "report_name": "Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf",
       "report_url": "https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Dedaub_Chicken%20Bonds%20Delta%20Audit%20(NFT%20additions).pdf",
       "auditor": "Dedaub",
@@ -1390,15 +1362,22 @@
       "auditor": "Coinspect",
       "tier": 2,
       "contracts_covered": 6,
-      "coverage_pct": 28.6,
+      "coverage_pct": 31.6,
       "latest_audit": "2022-10"
     },
     {
       "auditor": "Dedaub",
       "tier": 2,
       "contracts_covered": 4,
-      "coverage_pct": 19,
+      "coverage_pct": 21.1,
       "latest_audit": "2022-09"
+    },
+    {
+      "auditor": "B.Protocol",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 5.3,
+      "latest_audit": "2022-07"
     }
   ],
   "coverage_gaps": [
@@ -1485,6 +1464,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x60c0b047133f696334a2b7f68af0b49d2f3d4f72",
+      "name": "LSUDUsdToLUSDEth",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xe0070f7a961dcb102e3d904a170613be3f3b37a9",
       "name": "LUSDListingPayload",
       "role": "unknown",
@@ -1494,26 +1483,21 @@
     }
   ],
   "origin_summary": {
-    "native": 18,
-    "upstream": 6,
-    "standard_library": 0,
-    "needs_review": 0
+    "native": 19,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 121
+      "extraction_exact": 122
     },
     "extraction_confidence_counts": {
-      "high": 6
+      "high": 7
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 3039,
-        "report_name": "B.Protocol - Chicken Bonds Audit.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

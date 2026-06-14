@@ -1,0 +1,18 @@
+{
+  "address": "0x4dc442403e8c758425b93c59dc737da522f32640",
+  "chain_id": 8453,
+  "contract_name": "FairLaunch",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "cancun",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T10:56:19.767Z"
+}

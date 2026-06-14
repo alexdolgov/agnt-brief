@@ -1,0 +1,278 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_protocolOwner",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint24",
+        "name": "_invalidFee",
+        "type": "uint24"
+      },
+      {
+        "internalType": "uint24",
+        "name": "_maxFee",
+        "type": "uint24"
+      }
+    ],
+    "name": "FeeExemptionInvalid",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NewOwnerIsZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_beneficiary",
+        "type": "address"
+      }
+    ],
+    "name": "NoBeneficiaryExemption",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoHandoverRequest",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_beneficiary",
+        "type": "address"
+      }
+    ],
+    "name": "BeneficiaryFeeRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_beneficiary",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint24",
+        "name": "_flatFee",
+        "type": "uint24"
+      }
+    ],
+    "name": "BeneficiaryFeeSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipHandoverCanceled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipHandoverRequested",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oldOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "cancelOwnershipHandover",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "completeOwnershipHandover",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_beneficiary",
+        "type": "address"
+      }
+    ],
+    "name": "feeExemption",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint24",
+            "name": "flatFee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "bool",
+            "name": "enabled",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct FeeExemptions.FeeExemption",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "result",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "ownershipHandoverExpiresAt",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "result",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_beneficiary",
+        "type": "address"
+      }
+    ],
+    "name": "removeFeeExemption",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "requestOwnershipHandover",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_beneficiary",
+        "type": "address"
+      },
+      {
+        "internalType": "uint24",
+        "name": "_flatFee",
+        "type": "uint24"
+      }
+    ],
+    "name": "setFeeExemption",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

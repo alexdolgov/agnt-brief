@@ -1,0 +1,18 @@
+{
+  "address": "0x7a04367563a65db574d6b7d084fdbcf4a570c5a6",
+  "chain_id": 8453,
+  "contract_name": "WhitelistVerifier",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 7777777,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T10:56:20.302Z"
+}

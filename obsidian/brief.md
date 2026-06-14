@@ -5,11 +5,11 @@
 - Project: Obsidian (`obsidian`)
 - Website: [https://obsidian.finance](https://obsidian.finance)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T01:33:07.864Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-14T10:47:29.339Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
 - Chains: cronos
 - Contract surface: 6 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $1,595,975.15
+- DeFi Llama TVL: $1,378,164.48
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 

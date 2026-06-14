@@ -1,0 +1,18 @@
+{
+  "address": "0xf6ddfcb093be0cd0c015590cb6c5127d9ff2a20b",
+  "chain_id": 8453,
+  "contract_name": "ClankerWorldVerifier",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 7777777,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T10:56:22.895Z"
+}

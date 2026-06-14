@@ -7,11 +7,11 @@
 - Project: DAO Maker (`dao-maker`)
 - Website: [https://daomaker.com/](https://daomaker.com/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T22:40:20.840Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
-- Chains: ethereum
-- Contract surface: 17 unique implementations (24 raw deployments)
-- DeFi Llama TVL: $1,997,131.00
+- Generated: 2026-06-14T10:50:54.849Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
+- Chains: bsc, ethereum
+- Contract surface: 20 unique implementations (27 raw deployments)
+- DeFi Llama TVL: $1,526,441.00
 - On-chain TVL (included contracts): $9,341,771.08
 - TVL by chain: Ethereum $9,341,771.08
 
@@ -25,12 +25,12 @@ The vesting family is self-contained, with the token contract serving as the cor
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/4 (0.0%)
-- Verified + Unaudited implementations: 4
+- Verified implementations audited: 0/7 (0.0%)
+- Verified + Unaudited implementations: 7
 - Verified by bytecode match: 0
 - Unverified implementations: 13
-- Unique implementations: 17
-- Raw deployments: 24
+- Unique implementations: 20
+- Raw deployments: 27
 - Audits discovered: 7
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $9,341,771.08
@@ -49,13 +49,16 @@ The vesting family is self-contained, with the token contract serving as the cor
 
 - None
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | Token | token | ethereum | [`0x0f51bb...6b09ad`](./contracts/ethereum-1/0x0f51bb10119727a7e5ea3538074fb341f56b09ad/) | ⚠️ Unaudited |
 | BuyNLock | unknown | ethereum | [`0x9b8cc9...bf13ae`](./contracts/ethereum-1/0x9b8cc92cee71e789e6a69e5996cee43fa3bf13ae/) | ⚠️ Unaudited |
+| DAOFarm | unknown | bsc | [`0x598ca7...a22781`](./contracts/bsc-56/0x598ca79eee092a084b5f168c4196edb80ea22781/) | ⚠️ Unaudited |
+| DAOPrefundingRaise | unknown | bsc | [`0x0530c7...97fe02`](./contracts/bsc-56/0x0530c78b8f5cf1b5e7f9c787a88e53c74197fe02/) | ⚠️ Unaudited |
 | Farm | unknown | ethereum | 6 deployments: ethereum [`0x141ba8...307346`](./contracts/ethereum-1/0x141ba88b17442f4fe305871c9642e3c1c6307346/); ethereum `0x17aa35...ea8490`; ethereum `0x6d2976...f87b45`; ethereum `0x7c27bc...d1a9ff`; ethereum `0xc8cf20...cb4ef6`; ethereum `0xea7891...3e553e` | ⚠️ Unaudited |
+| SHO | unknown | bsc | [`0xe8ea59...24b3fc`](./contracts/bsc-56/0xe8ea597b795815f971cdd88258b31faa0a24b3fc/) | ⚠️ Unaudited |
 | Staking | unknown | ethereum | 3 deployments: ethereum [`0xabfb0a...8f531e`](./contracts/ethereum-1/0xabfb0aa83b427519cc27da5b6357a0ccbd8f531e/); ethereum `0xd07e86...d6a847`; ethereum `0xefee37...b66188` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -110,14 +113,17 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | ethereum | [`0x0f51bb...6b09ad`](./contracts/ethereum-1/0x0f51bb10119727a7e5ea3538074fb341f56b09ad/) | Token | token | $9,341,771.08 | Verified native implementation with $9,341,771.08 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9b8cc9...bf13ae`](./contracts/ethereum-1/0x9b8cc92cee71e789e6a69e5996cee43fa3bf13ae/) | BuyNLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x598ca7...a22781`](./contracts/bsc-56/0x598ca79eee092a084b5f168c4196edb80ea22781/) | DAOFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0530c7...97fe02`](./contracts/bsc-56/0x0530c78b8f5cf1b5e7f9c787a88e53c74197fe02/) | DAOPrefundingRaise | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x141ba8...307346`](./contracts/ethereum-1/0x141ba88b17442f4fe305871c9642e3c1c6307346/) | Farm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xe8ea59...24b3fc`](./contracts/bsc-56/0xe8ea597b795815f971cdd88258b31faa0a24b3fc/) | SHO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xabfb0a...8f531e`](./contracts/ethereum-1/0xabfb0aa83b427519cc27da5b6357a0ccbd8f531e/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 17 |
+| native | 20 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

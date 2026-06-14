@@ -1,0 +1,17 @@
+{
+  "address": "0x828b58b2b2df8ff3221fbe2b07e75a56a84493cc",
+  "chain_id": 8453,
+  "contract_name": "WhitelistedPermissions",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 7777777,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 97,
+  "constructor_arguments": "00000000000000000000000048af8b28ddc5e5a86c4906212fc35fa808ca8763",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T10:56:21.167Z"
+}

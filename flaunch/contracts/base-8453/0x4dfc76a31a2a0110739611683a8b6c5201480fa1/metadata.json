@@ -1,0 +1,18 @@
+{
+  "address": "0x4dfc76a31a2a0110739611683a8b6c5201480fa1",
+  "chain_id": 8453,
+  "contract_name": "ClosedPermissions",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 7777777,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T10:56:19.729Z"
+}

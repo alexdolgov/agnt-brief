@@ -1,0 +1,18 @@
+{
+  "address": "0x6c4c0cd7e0e5eeffbd77aafe1820d3b9b1ef27b0",
+  "chain_id": 1,
+  "contract_name": "TimelockController",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T10:56:17.735Z"
+}

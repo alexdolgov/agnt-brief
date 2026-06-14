@@ -1,41 +1,41 @@
 {
   "schema_version": "2.0",
   "project_key": "zircuit-finance",
-  "generated_at": "2026-06-11T04:22:00.267Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-026d",
+  "generated_at": "2026-06-14T00:16:56.553Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-24d8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "zircuit-finance",
     "tier": 0,
     "peak_tvl": 1630800,
     "peak_date": "2026-04-02T00:00:00.000Z",
-    "tvl_30d_ago": 1507512,
-    "tvl_90d_ago": 378974,
-    "tvl_current": 1514105,
+    "tvl_30d_ago": 1510003,
+    "tvl_90d_ago": 874884,
+    "tvl_current": 1521130,
     "tier0_reason": "healthy_tvl_level_and_change",
     "tvl_180d_ago": null,
-    "change_30d_pct": 0.43734311899341427,
-    "change_90d_pct": 299.5274082127006,
-    "days_since_peak": 57,
+    "change_30d_pct": 0.7368859532067156,
+    "change_90d_pct": 73.86647829883734,
+    "days_since_peak": 73,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 7.155690458670591
+    "drop_from_peak_pct": 6.724920284522934
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 7,
-    "unique_implementations": 2,
-    "total_deployments": 7,
+    "total_contracts": 8,
+    "total_addresses": 22,
+    "unique_implementations": 8,
+    "total_deployments": 22,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1513608.9311499998,
+    "dl_tvl_usd": 1519958.99209,
     "tvl_usd": 1513066.4390699998,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -65,7 +65,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 8,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -142,19 +142,37 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 8453,
-      "chain_name": "base",
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x075193d36693da7ba3bb709cf63bef070ba04d94",
       "name": "StrategyManager",
-      "role": "core_logic",
+      "role": "unknown",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
-      "product_line": "Zircuit Finance",
+      "product_line": null,
       "tvl_usd": 549.834082,
       "is_proxy": true,
-      "impl_address": "0x2f17b8f1cf58dd02cb09905efabf3eb6d5fa6e68",
+      "impl_address": "0x0aec963ba967cd63f176f815a3737d7e7e1fe65b",
       "impl_name": "StrategyManager",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x075193d36693da7ba3bb709cf63bef070ba04d94",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf7e745658fa6f1fe8f2cab47861a273991cd3374",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 8453,
           "chain_name": "base",
@@ -167,7 +185,256 @@
         {
           "chain_id": 8453,
           "chain_name": "base",
+          "address": "0x2f17b8f1cf58dd02cb09905efabf3eb6d5fa6e68",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
           "address": "0xf7e745658fa6f1fe8f2cab47861a273991cd3374",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x43c4a95788997a3e02f6ca7e5cc4c23dbde66c9c",
+      "name": "AccountingReceiver",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xbfaebf5eaeaac737e6d274d70e5c6afa76410302",
+      "impl_name": "AccountingReceiver",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x43c4a95788997a3e02f6ca7e5cc4c23dbde66c9c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7fceb53b2959861d29057361158a2b41caaffd68",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x264d6474802ef8bc1bc05f89f7d640d1e93c5330",
+      "name": "UnderlyingOFT",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb2e30c33075510274ffbec2811da66d102152bc7",
+      "impl_name": "UnderlyingOFT",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x264d6474802ef8bc1bc05f89f7d640d1e93c5330",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd7abc360dfcf1b6dd0a03138235e12a2bc1c1c8b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2d342de4c58a871b3525740c58a1c112d5835865",
+      "name": "UnderlyingOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7e28319490ed729a1926e62dc528cc7d08270039",
+      "impl_name": "UnderlyingOFTAdapter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2d342de4c58a871b3525740c58a1c112d5835865",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd58e8c1c83d598ad76b5f0e26b4a25cdb885d190",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x03067bbd0d41e3fe4a0bb6ca67c99e7352da4cae",
+      "name": "Vault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xfefa9a81a0c662385172a249b321974199994a69",
+      "impl_name": "Vault",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x03067bbd0d41e3fe4a0bb6ca67c99e7352da4cae",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x25d90abd6c1e8dccd40932d2fdd2cd381bfc832d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x16ce6d9576a411911e62b6073f1cc9d1347ad96b",
+      "name": "VaultComposer",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xfea5ce0499c255b41d531520b64657c7f8b3b65c",
+      "impl_name": "VaultComposer",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x16ce6d9576a411911e62b6073f1cc9d1347ad96b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbb801ed781df31f660cc743bef7bb9d04b030923",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x07c898e77310870770f88d18a01009cb65a1c1a9",
+      "name": "VaultToken",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x12b2073b43721292f555be00da43635627974a85",
+      "impl_name": "VaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x07c898e77310870770f88d18a01009cb65a1c1a9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8adbea709b31a564f9750a280ec2690ad1cf470a",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -199,7 +466,7 @@
   "origin_summary": {
     "native": 1,
     "upstream": 0,
-    "standard_library": 1,
+    "standard_library": 7,
     "needs_review": 0
   },
   "scope_matching_notes": {

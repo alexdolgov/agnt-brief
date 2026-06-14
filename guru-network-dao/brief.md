@@ -5,11 +5,11 @@
 - Project: Guru Network DAO (`guru-network-dao`)
 - Website: [https://ftm.guru/](https://ftm.guru/)
 - Lifecycle: active (Tier 0, 83% below peak)
-- Generated: 2026-06-10T23:40:52.705Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
-- Chains: arbitrum, avalanche, base, fantom, kava, metis, polygon, sonic
-- Contract surface: 54 unique implementations (71 raw deployments)
-- DeFi Llama TVL: $2,305,169.00
+- Generated: 2026-06-14T00:16:38.828Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
+- Chains: arbitrum, avalanche, base, bsc, fantom, kava, metis, polygon, sonic
+- Contract surface: 61 unique implementations (78 raw deployments)
+- DeFi Llama TVL: $1,934,828.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,12 +23,12 @@ The families share a common deployer cluster and proxy infrastructure, indicatin
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/21 (0.0%)
-- Verified + Unaudited implementations: 21
+- Verified implementations audited: 0/24 (0.0%)
+- Verified + Unaudited implementations: 24
 - Verified by bytecode match: 0
-- Unverified implementations: 33
-- Unique implementations: 54
-- Raw deployments: 71
+- Unverified implementations: 37
+- Unique implementations: 61
+- Raw deployments: 78
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,7 +46,7 @@ The families share a common deployer cluster and proxy infrastructure, indicatin
 
 - None
 
-### ⚠️ Verified + Unaudited (21)
+### ⚠️ Verified + Unaudited (24)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -65,12 +65,15 @@ The families share a common deployer cluster and proxy infrastructure, indicatin
 | Granary | unknown | metis | [`0xf060c8...3b8069`](./contracts/metis-1088/0xf060c8c86e17bf64fa3cfc6bbb2cb829c33b8069/) | ⚠️ Unaudited |
 | GuruMultiRewardFarmland | unknown | arbitrum | 7 deployments: polygon `0xc4c807...1362b4`; metis `0xa0edd9...0350e9`; arbitrum [`0x2696f9...4b9ce7`](./contracts/arbitrum-42161/0x2696f94f11dff0d77875e2652fcdb537274b9ce7/); arbitrum `0x64532e...285d08`; arbitrum `0xcc835d...2b8fca`; arbitrum `0xdf4869...1be136`; avalanche `0xdf4869...1be136` | ⚠️ Unaudited |
 | LBFactory | registry | base | 2 deployments: base [`0x8597db...a0e57b`](./contracts/base-8453/0x8597db3ba8de6baadeda8cba4dac653e24a0e57b/); arbitrum [`0x8597db...a0e57b`](./contracts/arbitrum-42161/0x8597db3ba8de6baadeda8cba4dac653e24a0e57b/) | ⚠️ Unaudited |
+| LpTreasury | operational_periphery | sonic | [`0xc19227...56617e`](./contracts/sonic-146/0xc192277077be355a2349d4b3f5461a838b56617e/) | ⚠️ Unaudited |
 | MultiRewards | unknown | metis | [`0xafbe3b...492295`](./contracts/metis-1088/0xafbe3b8b0939a5538de32f7752a78e08c8492295/) | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | bsc | [`0x339667...81b261`](./contracts/bsc-56/0x339667e1b3c570e58899bce61f72dc469881b261/) | ⚠️ Unaudited |
 | oTokenToElToken | token | polygon | [`0x3979d8...f55b97`](./contracts/polygon-137/0x3979d8149099b98cde35e08722f05dc477f55b97/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | arbitrum | [`0x7b7faf...8ebd27`](./contracts/arbitrum-42161/0x7b7faf5f614f8c13f80a8775b61d1c22f48ebd27/) | ⚠️ Unaudited |
 | pvl | unknown | arbitrum | [`0xb264c9...b2e198`](./contracts/arbitrum-42161/0xb264c9ece4c1f9ebff85e580b068a82fcdb2e198/) | ⚠️ Unaudited |
 | tvlGuru | unknown | polygon | 4 deployments: polygon [`0x18c7ad...68845a`](./contracts/polygon-137/0x18c7ad880a07d363f2d034a8523ae34b8068845a/); metis `0x50dcc6...6be895`; arbitrum `0xfab311...fa888b`; avalanche `0xfab311...fa888b` | ⚠️ Unaudited |
 | TvlGuru_v21 | unknown | sonic | [`0x52ce71...18546b`](./contracts/sonic-146/0x52ce715ca439a031fc3cc103f08a378bad18546b/) | ⚠️ Unaudited |
+| UniswapV3Factory | registry | bsc | [`0x5c0a96...31b1ea`](./contracts/bsc-56/0x5c0a9661e0bc1294bb87686c472f7c699831b1ea/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,12 +87,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (33)
+### ❓ Unverified (37)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| UnnamedContract | unknown | bsc | `0x2fe6b3...a1e75e` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | `0x994975...597d9d` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | `0x9fc27e...465610` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x05bf8a...6a1c7e` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x123136...6d16c6` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0x345551...e0cd6d` | ❓ Unverified |
@@ -118,6 +124,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | fantom | `0xfaa22e...287b27` | ❓ Unverified |
 | UnnamedContract | unknown | kava | `0x86e4d9...2a7300` | ❓ Unverified |
 | UnnamedContract | unknown | kava | `0x9d9682...4663fd` | ❓ Unverified |
+| UnnamedContract | unknown | base | `0xb62f60...510fc4` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0xd9751a...8c11f3` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0x18c7ad...68845a` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0xc4c807...1362b4` | ❓ Unverified |
@@ -148,6 +155,7 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | [`0x39cc81...b1d91c`](./contracts/arbitrum-42161/0x39cc812e698a61f1883f7b9dba54159aa7b1d91c/) | elTokenRedeemVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0xf060c8...3b8069`](./contracts/metis-1088/0xf060c8c86e17bf64fa3cfc6bbb2cb829c33b8069/) | Granary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2696f9...4b9ce7`](./contracts/arbitrum-42161/0x2696f94f11dff0d77875e2652fcdb537274b9ce7/) | GuruMultiRewardFarmland | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0xc19227...56617e`](./contracts/sonic-146/0xc192277077be355a2349d4b3f5461a838b56617e/) | LpTreasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0xafbe3b...492295`](./contracts/metis-1088/0xafbe3b8b0939a5538de32f7752a78e08c8492295/) | MultiRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x3979d8...f55b97`](./contracts/polygon-137/0x3979d8149099b98cde35e08722f05dc477f55b97/) | oTokenToElToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xb264c9...b2e198`](./contracts/arbitrum-42161/0xb264c9ece4c1f9ebff85e580b068a82fcdb2e198/) | pvl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -157,10 +165,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 42 |
-| upstream | 2 |
+| native | 23 |
+| upstream | 4 |
 | standard_library | 3 |
-| needs_review | 7 |
+| needs_review | 31 |
 
 ## Scope Matching Notes
 

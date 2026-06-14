@@ -329,7 +329,7 @@
 | [denet-file-token](./denet-file-token/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [depth](./depth/) | $1.2M | 0.0% | ? | declining | 0 | 1 | 2026-06-10 |
 | [deri](./deri/) | $2.4K | 13.9% | $2.4K | active | 8 | 868 | 2026-06-10 |
-| [derivadex](./derivadex/) | $1.6M | 0.0% | ? | declining | 0 | 8 | 2026-06-10 |
+| [derivadex](./derivadex/) | $1.6M | 0.0% | ? | declining | 0 | 8 | 2026-06-14 |
 | [desyn-protocol](./desyn-protocol/) | $10.7M | 0.0% | ? | declining | 0 | 11 | 2026-06-10 |
 | [dev-protocol](./dev-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [devil-finance](./devil-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -494,7 +494,7 @@
 | [grvt](./grvt/) | $39.1M | 0.0% | $39.1M | declining | 0 | 12 | 2026-06-12 |
 | [gudchain](./gudchain/) | $75.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [gumball-protocol](./gumball-protocol/) | $248.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [guru-network-dao](./guru-network-dao/) | $2.3M | 0.0% | ? | active | 0 | 54 | 2026-06-10 |
+| [guru-network-dao](./guru-network-dao/) | $1.9M | 0.0% | ? | active | 0 | 61 | 2026-06-14 |
 | [gyroscope-protocol](./gyroscope-protocol/) | $44.6 | 21.3% | ? | declining | 10 | 233 | 2026-06-10 |
 | [h2-finance](./h2-finance/) | $3.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [hakka-finance](./hakka-finance/) | $5.4K | 26.5% | $5.4K | active | 7 | 37 | 2026-06-10 |
@@ -1073,7 +1073,7 @@
 | [silo-finance](./silo-finance/) | $3.3M | 15.7% | $641.3K | unknown | 10 | 529 | 2026-05-31 |
 | [singularity-finance](./singularity-finance/) | $2.7M | 70.0% | $2.7M | transitioning | 2 | 10 | 2026-06-13 |
 | [singularv](./singularv/) | $1.1B | 11.4% | $1.1B | declining | 7 | 83 | 2026-06-11 |
-| [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 0 | 4 | 2026-06-11 |
+| [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 0 | 2 | 2026-06-14 |
 | [sir](./sir/) | $85.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [sirius-finance](./sirius-finance/) | $7.3K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [skale-network-bridge](./skale-network-bridge/) | $560.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -1311,7 +1311,7 @@
 | [vaultka](./vaultka/) | $5.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [vaulty-finance](./vaulty-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
-| [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | declining | 0 | 28 | 2026-06-11 |
+| [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | declining | 0 | 37 | 2026-06-14 |
 | [velodrome](./velodrome/) | $40.2M | 40.4% | ? | active | 6 | 52 | 2026-06-11 |
 | [velora](./velora/) | $248.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [velvet.capital](./velvet.capital/) | $95.2M | 77.8% | $95.2M | declining | 13 | 420 | 2026-06-11 |
@@ -1395,7 +1395,7 @@
 | [zeroswap](./zeroswap/) | $253.3 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [zharta](./zharta/) | $2.7 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [zircon-gamma](./zircon-gamma/) | $2.5 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [zircuit-finance](./zircuit-finance/) | $1.5M | 0.0% | $1.5M | active | 0 | 2 | 2026-06-11 |
+| [zircuit-finance](./zircuit-finance/) | $1.5M | 0.0% | $1.5M | active | 0 | 8 | 2026-06-14 |
 | [zircuit-staking](./zircuit-staking/) | $178.4M | 21.1% | $140.4M | declining | 8 | 20 | 2026-06-11 |
 | [zircuit](./zircuit/) | $144.2M | 25.0% | $144.2M | declining | 10 | 17 | 2026-06-11 |
 | [zivoe](./zivoe/) | $13.9M | 43.3% | ? | declining | 6 | 31 | 2026-06-11 |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "derivadex",
-  "generated_at": "2026-06-10T22:51:46.285Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
+  "generated_at": "2026-06-14T00:17:00.921Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-24d8",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "derivadex",
@@ -45,8 +45,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1617904.02235,
-    "tvl_usd": 1617904.02235,
+    "dl_tvl_usd": 1616621.80236,
+    "tvl_usd": 1616621.80236,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

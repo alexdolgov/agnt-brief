@@ -7,11 +7,11 @@
 - Project: DerivaDEX (`derivadex`)
 - Website: [http://derivadex.com](http://derivadex.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T22:51:46.285Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-14T00:17:00.921Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
 - Chains: ethereum
 - Contract surface: 8 unique implementations (9 raw deployments)
-- DeFi Llama TVL: $1,617,904.02
+- DeFi Llama TVL: $1,616,621.80
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 

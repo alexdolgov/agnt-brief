@@ -1,6 +1,6 @@
 # guru-network-dao — Contract Index
 
-54 unique implementations across 8 chains · 71 deployments · 0 audited · 21 unaudited · 33 unverified
+61 unique implementations across 9 chains · 78 deployments · 0 audited · 24 unaudited · 37 unverified
 
 ## core_logic (1)
 
@@ -8,18 +8,26 @@
 |---|---|---|---|---|
 | [elTokenRedeemVault](./arbitrum-42161/0x39cc812e698a61f1883f7b9dba54159aa7b1d91c/) | arbitrum | [`0x39cc81...b1d91c`](./arbitrum-42161/0x39cc812e698a61f1883f7b9dba54159aa7b1d91c/) | ⚠️ Unaudited | Verified |
 
-## governance (2)
+## governance (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [elTokenManager (4 deployments)](./polygon-137/0x30e118c1a6f1c83b4fab64f6a6c9150f0b2f480c/) | polygon | 4 deployments: polygon [`0x30e118...2f480c`](./polygon-137/0x30e118c1a6f1c83b4fab64f6a6c9150f0b2f480c/); polygon `0x4046c4...0a40c4`; arbitrum `0x7be024...101eab`; arbitrum `0x861fe2...5811c7` | ⚠️ Unaudited | Verified |
+| [NonfungiblePositionManager](./bsc-56/0x339667e1b3c570e58899bce61f72dc469881b261/) | bsc | [`0x339667...81b261`](./bsc-56/0x339667e1b3c570e58899bce61f72dc469881b261/) | ⚠️ Unaudited | Verified |
 | [ProxyAdmin](./arbitrum-42161/0x7b7faf5f614f8c13f80a8775b61d1c22f48ebd27/) | arbitrum | [`0x7b7faf...8ebd27`](./arbitrum-42161/0x7b7faf5f614f8c13f80a8775b61d1c22f48ebd27/) | ⚠️ Unaudited | Verified |
 
-## registry (1)
+## operational_periphery (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [LpTreasury](./sonic-146/0xc192277077be355a2349d4b3f5461a838b56617e/) | sonic | [`0xc19227...56617e`](./sonic-146/0xc192277077be355a2349d4b3f5461a838b56617e/) | ⚠️ Unaudited | Verified |
+
+## registry (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [LBFactory (2 deployments)](./base-8453/0x8597db3ba8de6baadeda8cba4dac653e24a0e57b/) | base | 2 deployments: base [`0x8597db...a0e57b`](./base-8453/0x8597db3ba8de6baadeda8cba4dac653e24a0e57b/); arbitrum `0x8597db...a0e57b` | ⚠️ Unaudited | Verified |
+| [UniswapV3Factory](./bsc-56/0x5c0a9661e0bc1294bb87686c472f7c699831b1ea/) | bsc | [`0x5c0a96...31b1ea`](./bsc-56/0x5c0a9661e0bc1294bb87686c472f7c699831b1ea/) | ⚠️ Unaudited | Verified |
 
 ## token (4)
 
@@ -30,7 +38,7 @@
 | [elToken_Depositor (4 deployments)](./polygon-137/0x2696f94f11dff0d77875e2652fcdb537274b9ce7/) | polygon | 4 deployments: polygon [`0x2696f9...4b9ce7`](./polygon-137/0x2696f94f11dff0d77875e2652fcdb537274b9ce7/); polygon `0xcc835d...2b8fca`; polygon `0xd600ec...eaa134`; polygon `0xdf4869...1be136` | ⚠️ Unaudited | Verified |
 | [oTokenToElToken](./polygon-137/0x3979d8149099b98cde35e08722f05dc477f55b97/) | polygon | [`0x3979d8...f55b97`](./polygon-137/0x3979d8149099b98cde35e08722f05dc477f55b97/) | ⚠️ Unaudited | Verified |
 
-## unknown (46)
+## unknown (50)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -47,6 +55,9 @@
 | [pvl](./arbitrum-42161/0xb264c9ece4c1f9ebff85e580b068a82fcdb2e198/) | arbitrum | [`0xb264c9...b2e198`](./arbitrum-42161/0xb264c9ece4c1f9ebff85e580b068a82fcdb2e198/) | ⚠️ Unaudited | Verified |
 | [tvlGuru (4 deployments)](./polygon-137/0x18c7ad880a07d363f2d034a8523ae34b8068845a/) | polygon | 4 deployments: polygon [`0x18c7ad...68845a`](./polygon-137/0x18c7ad880a07d363f2d034a8523ae34b8068845a/); metis `0x50dcc6...6be895`; arbitrum `0xfab311...fa888b`; avalanche `0xfab311...fa888b` | ⚠️ Unaudited | Verified |
 | [TvlGuru_v21](./sonic-146/0x52ce715ca439a031fc3cc103f08a378bad18546b/) | sonic | [`0x52ce71...18546b`](./sonic-146/0x52ce715ca439a031fc3cc103f08a378bad18546b/) | ⚠️ Unaudited | Verified |
+| UnnamedContract | bsc | `0x2fe6b3...a1e75e` | ❓ Unverified | Unverified |
+| UnnamedContract | bsc | `0x994975...597d9d` | ❓ Unverified | Unverified |
+| UnnamedContract | bsc | `0x9fc27e...465610` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x05bf8a...6a1c7e` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x123136...6d16c6` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x345551...e0cd6d` | ❓ Unverified | Unverified |
@@ -75,6 +86,7 @@
 | UnnamedContract | fantom | `0xfaa22e...287b27` | ❓ Unverified | Unverified |
 | UnnamedContract | kava | `0x86e4d9...2a7300` | ❓ Unverified | Unverified |
 | UnnamedContract | kava | `0x9d9682...4663fd` | ❓ Unverified | Unverified |
+| UnnamedContract | base | `0xb62f60...510fc4` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xd9751a...8c11f3` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x18c7ad...68845a` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xc4c807...1362b4` | ❓ Unverified | Unverified |

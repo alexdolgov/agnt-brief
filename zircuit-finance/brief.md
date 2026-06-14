@@ -5,11 +5,11 @@
 - Project: Zircuit Finance (`zircuit-finance`)
 - Website: [https://finance.zircuit.com/](https://finance.zircuit.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T04:22:00.267Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
+- Generated: 2026-06-14T00:16:56.553Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
 - Chains: base, ethereum
-- Contract surface: 2 unique implementations (7 raw deployments)
-- DeFi Llama TVL: $1,513,608.93
+- Contract surface: 8 unique implementations (22 raw deployments)
+- DeFi Llama TVL: $1,519,958.99
 - On-chain TVL (included contracts): $1,513,066.44
 - TVL by chain: Base $1,513,018.12 | Ethereum $48.32
 
@@ -23,12 +23,12 @@ All contracts belong to a single product family sharing the TokenizedStrategy im
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 0/8 (0.0%)
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 7
+- Unique implementations: 8
+- Raw deployments: 22
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $1,513,066.44
@@ -46,12 +46,18 @@ All contracts belong to a single product family sharing the TokenizedStrategy im
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | TokenizedStrategy | core_logic | base | 5 deployments: ethereum `0x28966c...332c49`; ethereum `0x6424c7...2b6e38`; base [`0x1a48ce...37e1cc`](./contracts/base-8453/0x1a48cec817bcb5436efe99bab6dde228cc37e1cc/); base `0xc91e44...e1aca7`; base `0xe83ef4...ab1dc5` | ⚠️ Unaudited |
-| StrategyManager | core_logic | base | 2 deployments: base [`0x075193...a04d94`](./contracts/base-8453/0x075193d36693da7ba3bb709cf63bef070ba04d94/); base `0xf7e745...cd3374` | ⚠️ Unaudited |
+| StrategyManager | unknown | ethereum | 5 deployments: ethereum [`0x075193...a04d94`](./contracts/ethereum-1/0x075193d36693da7ba3bb709cf63bef070ba04d94/); ethereum `0xf7e745...cd3374`; base [`0x075193...a04d94`](./contracts/base-8453/0x075193d36693da7ba3bb709cf63bef070ba04d94/); base `0x2f17b8...fa6e68`; base `0xf7e745...cd3374` | ⚠️ Unaudited |
+| AccountingReceiver | unknown | base | 2 deployments: base [`0x43c4a9...e66c9c`](./contracts/base-8453/0x43c4a95788997a3e02f6ca7e5cc4c23dbde66c9c/); base `0x7fceb5...affd68` | ⚠️ Unaudited |
+| UnderlyingOFT | unknown | base | 2 deployments: base [`0x264d64...3c5330`](./contracts/base-8453/0x264d6474802ef8bc1bc05f89f7d640d1e93c5330/); base `0xd7abc3...1c1c8b` | ⚠️ Unaudited |
+| UnderlyingOFTAdapter | adapter | ethereum | 2 deployments: ethereum [`0x2d342d...835865`](./contracts/ethereum-1/0x2d342de4c58a871b3525740c58a1c112d5835865/); ethereum `0xd58e8c...85d190` | ⚠️ Unaudited |
+| Vault | core_logic | base | 2 deployments: base [`0x03067b...da4cae`](./contracts/base-8453/0x03067bbd0d41e3fe4a0bb6ca67c99e7352da4cae/); base `0x25d90a...fc832d` | ⚠️ Unaudited |
+| VaultComposer | core_logic | base | 2 deployments: base [`0x16ce6d...7ad96b`](./contracts/base-8453/0x16ce6d9576a411911e62b6073f1cc9d1347ad96b/); base `0xbb801e...030923` | ⚠️ Unaudited |
+| VaultToken | core_logic | ethereum | 2 deployments: ethereum [`0x07c898...a1c1a9`](./contracts/ethereum-1/0x07c898e77310870770f88d18a01009cb65a1c1a9/); ethereum `0x8adbea...cf470a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,7 +96,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 1 |
 | upstream | 0 |
-| standard_library | 1 |
+| standard_library | 7 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

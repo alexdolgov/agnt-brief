@@ -364,7 +364,7 @@
 | [dtx](./dtx/) | $5.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dungeonswap](./dungeonswap/) | $28.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dxsale](./dxsale/) | $17.9M | 0.0% | ? | active | 1 | 358 | 2026-06-12 |
-| [dyorswap](./dyorswap/) | $2.2M | 0.0% | ? | active | 0 | 93 | 2026-06-10 |
+| [dyorswap](./dyorswap/) | $270.0M | 0.0% | $270.0M | active | 0 | 93 | 2026-06-14 |
 | [dyson-finance](./dyson-finance/) | $80.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [earnium](./earnium/) | $31.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [earnmos](./earnmos/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -538,7 +538,7 @@
 | [humble-defi](./humble-defi/) | $52.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hundred-finance](./hundred-finance/) | $1.6M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hurricaneswap](./hurricaneswap/) | $11.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [hybra](./hybra/) | $1.8M | 0.0% | ? | active | 0 | 81 | 2026-06-10 |
+| [hybra](./hybra/) | $1.6M | 0.0% | ? | active | 0 | 81 | 2026-06-14 |
 | [hyper-finance](./hyper-finance/) | $34.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [hyperbeat](./hyperbeat/) | $22.6M | 10.7% | $22.6M | active | 14 | 221 | 2026-06-10 |
 | [hyperbloom](./hyperbloom/) | $92.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -648,7 +648,7 @@
 | [lander](./lander/) | $21.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [landx-finance](./landx-finance/) | $27.3K | 27.3% | $27.3K | active | 1 | 11 | 2026-06-14 |
 | [larix](./larix/) | $1.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [latch](./latch/) | $189.8 | 0.0% | $189.8 | declining | 0 | 1 | 2026-06-11 |
+| [latch](./latch/) | $375.7K | 0.0% | $375.7K | declining | 0 | 5 | 2026-06-14 |
 | [latteswap](./latteswap/) | $54.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [layerakira](./layerakira/) | $736.6 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [layerbank](./layerbank/) | $116.8K | 50.0% | ? | declining | 4 | 91 | 2026-06-14 |
@@ -973,7 +973,7 @@
 | [rage-trade-v1](./rage-trade-v1/) | $6.0 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [railgun](./railgun/) | $312.5M | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
 | [rain](./rain/) | $26.1M | 0.0% | ? | active | 3 | 29 | 2026-06-12 |
-| [rainbow-bridge](./rainbow-bridge/) | $2.1M | 0.0% | ? | declining | 0 | 2 | 2026-06-11 |
+| [rainbow-bridge](./rainbow-bridge/) | $23.3M | 0.0% | $23.3M | declining | 0 | 5 | 2026-06-14 |
 | [rank-trading](./rank-trading/) | $1.2M | 27.3% | $343.4 | active | 2 | 17 | 2026-06-14 |
 | [rari-capital](./rari-capital/) | $321.4M | 0.0% | $321.4M | dead | 1 | 253 | 2026-06-13 |
 | [ratex](./ratex/) | $98.8K | 0.0% | $98.8K | declining | 2 | 168 | 2026-06-13 |
@@ -1247,7 +1247,7 @@
 | [tokenlabs](./tokenlabs/) | $249.3K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [tokenlon](./tokenlon/) | $37.2M | 57.1% | ? | declining | 6 | 21 | 2026-06-11 |
 | [tokenstore](./tokenstore/) | $265.7K | 0.0% | $265.7K | active | 0 | 44 | 2026-06-11 |
-| [tokenworks](./tokenworks/) | $0.0 | 0.0% | $0.0 | active | 0 | 60 | 2026-06-11 |
+| [tokenworks](./tokenworks/) | $163.6M | 0.0% | $163.6M | active | 0 | 71 | 2026-06-14 |
 | [tonco](./tonco/) | $8.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [tonpound](./tonpound/) | $14.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [tonyielding](./tonyielding/) | $88.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

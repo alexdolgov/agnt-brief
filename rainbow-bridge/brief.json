@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "rainbow-bridge",
-  "generated_at": "2026-06-11T02:09:42.664Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-14T10:43:15.394Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-df6c",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "rainbow-bridge",
@@ -32,24 +32,26 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
+    "total_contracts": 5,
+    "total_addresses": 5,
+    "unique_implementations": 5,
+    "total_deployments": 5,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 5,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2108492.13272,
-    "tvl_usd": 2108492.13272,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "dl_tvl_usd": 1673576.8421,
+    "tvl_usd": 23285836.320311222,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 23285836.32
+    },
+    "asd_usd": 23285836.320311222,
     "website_url": "https://rainbowbridge.app/transfer",
     "chains": [
       "ethereum"
@@ -71,7 +73,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 5,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -80,6 +82,68 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x23ddd3e3692d1861ed57ede224608875809e127f",
+      "name": "ERC20Locker",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 23285836.320311222,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ERC20Locker",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x23ddd3e3692d1861ed57ede224608875809e127f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 23285836.320311222,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x85f17cf997934a597031b2e18a9ab6ebd4b9f6a4",
+      "name": "eNear",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "eNear",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x85f17cf997934a597031b2e18a9ab6ebd4b9f6a4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -141,11 +205,62 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x051ad3f020274910065dcb421629cd2e6e5b46c4",
+      "name": "NearProver",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "NearProver",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x051ad3f020274910065dcb421629cd2e6e5b46c4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x23ddd3e3692d1861ed57ede224608875809e127f",
+      "name": "ERC20Locker",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 23285836.320311222,
+      "risk_note": "Verified native implementation with $23,285,836.32 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x85f17cf997934a597031b2e18a9ab6ebd4b9f6a4",
+      "name": "eNear",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -165,10 +280,20 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x051ad3f020274910065dcb421629cd2e6e5b46c4",
+      "name": "NearProver",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 2,
+    "native": 5,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

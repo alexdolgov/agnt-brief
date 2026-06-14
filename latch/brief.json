@@ -1,57 +1,57 @@
 {
   "schema_version": "2.0",
   "project_key": "latch",
-  "generated_at": "2026-06-11T00:36:46.207Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
+  "generated_at": "2026-06-14T10:43:59.297Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-df6c",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "latch",
     "tier": 1,
     "peak_tvl": 65580096,
     "peak_date": "2025-05-07T00:00:00.000Z",
-    "tvl_30d_ago": 3191374,
-    "tvl_90d_ago": 14906178,
-    "tvl_current": 1606188,
+    "tvl_30d_ago": 1627506,
+    "tvl_90d_ago": 15100944,
+    "tvl_current": 1563367,
     "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 19112061,
-    "change_30d_pct": -49.670956772850815,
-    "change_90d_pct": -89.22468254437858,
+    "tvl_180d_ago": 17514051,
+    "change_30d_pct": -3.940937852149239,
+    "change_90d_pct": -89.6472233788828,
     "governance_raw": {
-      "evidence": "TVL dropped 97.5% from peak and 89% in 90 days, but no shutdown or rug announcement; the site still prompts wallet connection and mentions a mobile version.",
-      "confidence": 0.9,
+      "evidence": "TVL dropped 97.6% from peak and 89.6% in 90 days, but the protocol still shows a staking interface and mentions an upcoming mobile version, indicating ongoing operation.",
+      "confidence": 0.8,
       "lifecycle_status": "declining"
     },
-    "days_since_peak": 382,
+    "days_since_peak": 403,
     "detection_method": "tvl_trajectory+governance_signal",
     "governance_source": "fallback_mixed",
-    "drop_from_peak_pct": 97.55079955967128,
-    "governance_evidence": "TVL dropped 97.5% from peak and 89% in 90 days, but no shutdown or rug announcement; the site still prompts wallet connection and mentions a mobile version.",
-    "governance_confidence": 0.9,
+    "drop_from_peak_pct": 97.61609528598433,
+    "governance_evidence": "TVL dropped 97.6% from peak and 89.6% in 90 days, but the protocol still shows a staking interface and mentions an upcoming mobile version, indicating ongoing operation.",
+    "governance_confidence": 0.8,
     "governance_text_chars": 120,
     "governance_classification": "declining",
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 5,
+    "total_addresses": 7,
+    "unique_implementations": 5,
+    "total_deployments": 7,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 5,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1606674.68643,
-    "tvl_usd": 189.84696937252363,
+    "dl_tvl_usd": 1560879.72296,
+    "tvl_usd": 375749.61175696313,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 189.85
+      "ethereum": 375749.61
     },
-    "asd_usd": 189.84696937252363,
+    "asd_usd": 375749.61175696313,
     "website_url": "https://savings.latch.io/",
     "chains": [
       "ethereum"
@@ -69,13 +69,13 @@
   },
   "topography": {
     "project_purpose": "Latch is a yield/interoperability protocol on Ethereum where users can deposit idle tokens, select a preferred vault, and earn yield and/or points. Public descriptions position Latch as unifying yield, liquidity, and chains; the currently surfaced DepositPool contract should not be assumed to represent all protocol yield generation or total value at risk without further verification.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The protocol consists of a single product family with one core contract, so there are no cross-family relationships or shared infrastructure.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 5,
     "has_non_token_contracts": true,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -85,13 +85,53 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x29403b1ac2b745c806e4d4988e4c1b6f4c119b95",
+      "name": "StakingPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 375544.4215645906,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StakingPool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x29403b1ac2b745c806e4d4988e4c1b6f4c119b95",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 375544.421397,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x899f88b7c34a01ed0eea2bdb0952bd271ad3245b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 0.000167590542147882,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x7cc08f23a6e8222c86a62fce3d4d252dd1b8f90c",
       "name": "DepositPool",
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Latch",
-      "tvl_usd": 189.84696937252363,
+      "tvl_usd": 205.19019237252363,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "DepositPool",
@@ -103,6 +143,108 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 189.84696937252363,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfe606eec8eb8e6ad8e8654968a15650f5331a023",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 15.343223,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0a7d280a0ed7d46c7be58a939f69c3d5c047dbe4",
+      "name": "Abridge",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Abridge",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0a7d280a0ed7d46c7be58a939f69c3d5c047dbe4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x774388454c92fe33e781ab535a5e9d186a4562e7",
+      "name": "GnosisSafe",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
+      "impl_name": "GnosisSafe",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x774388454c92fe33e781ab535a5e9d186a4562e7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5d3920ccc068039e5b6fe680cab7aa09fe8e053c",
+      "name": "VaultNav",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultNav",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5d3920ccc068039e5b6fe680cab7aa09fe8e053c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -120,19 +262,39 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x29403b1ac2b745c806e4d4988e4c1b6f4c119b95",
+      "name": "StakingPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 375544.4215645906,
+      "risk_note": "Verified native implementation with $375,544.42 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x7cc08f23a6e8222c86a62fce3d4d252dd1b8f90c",
       "name": "DepositPool",
       "role": "core_logic",
       "origin_kind": "native",
-      "tvl_usd": 189.84696937252363,
-      "risk_note": "Verified native implementation with $189.85 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 205.19019237252363,
+      "risk_note": "Verified native implementation with $205.19 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5d3920ccc068039e5b6fe680cab7aa09fe8e053c",
+      "name": "VaultNav",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 1,
+    "native": 3,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 0
+    "standard_library": 1,
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

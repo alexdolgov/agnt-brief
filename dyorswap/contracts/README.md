@@ -1,13 +1,13 @@
 # dyorswap — Contract Index
 
-93 unique implementations across 7 chains · 97 deployments · 0 audited · 5 unaudited · 88 unverified
+93 unique implementations across 7 chains · 100 deployments · 0 audited · 6 unaudited · 87 unverified
 
 ## adapter (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [DYORRouter (2 deployments)](./mode-34443/0xcf9dc9afb93bd3ef4fb3cc4df7843abc3c9e169a/) | mode | 2 deployments: mode [`0xcf9dc9...9e169a`](./mode-34443/0xcf9dc9afb93bd3ef4fb3cc4df7843abc3c9e169a/); blast `0xe47069...8fdeef` | ⚠️ Unaudited | Verified |
-| [DyorRouterV2 (3 deployments)](./sonic-146/0x55a75ee40c468984a1ea053e6e4bf2126b6b0ca5/) | sonic | 3 deployments: sonic [`0x55a75e...6b0ca5`](./sonic-146/0x55a75ee40c468984a1ea053e6e4bf2126b6b0ca5/); sonic `0x591cf6...a72f61`; plasma `0xfc9869...a493cc` | ⚠️ Unaudited | Verified |
+| [DyorRouterV2 (4 deployments)](./sonic-146/0x55a75ee40c468984a1ea053e6e4bf2126b6b0ca5/) | sonic | 4 deployments: sonic [`0x55a75e...6b0ca5`](./sonic-146/0x55a75ee40c468984a1ea053e6e4bf2126b6b0ca5/); sonic `0x591cf6...a72f61`; sonic `0x6c86ab...9a2806`; plasma `0xfc9869...a493cc` | ⚠️ Unaudited | Verified |
 
 ## periphery (1)
 
@@ -21,7 +21,13 @@
 |---|---|---|---|---|
 | [DYORFactory (2 deployments)](./blast-81457/0xa1da7a7eb5a858da410de8fbc5092c2079b58413/) | blast | 2 deployments: mode `0xe47069...8fdeef`; blast [`0xa1da7a...b58413`](./blast-81457/0xa1da7a7eb5a858da410de8fbc5092c2079b58413/) | ⚠️ Unaudited | Verified |
 
-## unknown (89)
+## token (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [DyorPumpToken (3 deployments)](./plasma-9745/0x11e0f991cad15a5b3cc69c84d33a91fc977a92e7/) | plasma | 3 deployments: plasma [`0x11e0f9...7a92e7`](./plasma-9745/0x11e0f991cad15a5b3cc69c84d33a91fc977a92e7/); plasma `0x469e66...4a14c4`; plasma `0xb43766...294a60` | ⚠️ Unaudited | Verified |
+
+## unknown (88)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -59,7 +65,6 @@
 | UnnamedContract | sonic | `0x56ea5b...4fb0f4` | ❓ Unverified | Unverified |
 | UnnamedContract | sonic | `0x583fab...7b2745` | ❓ Unverified | Unverified |
 | UnnamedContract | sonic | `0x5ac77b...dccf0e` | ❓ Unverified | Unverified |
-| UnnamedContract | sonic | `0x6c86ab...9a2806` | ❓ Unverified | Unverified |
 | UnnamedContract | sonic | `0x7ac8ac...d65fd4` | ❓ Unverified | Unverified |
 | UnnamedContract | sonic | `0x83ad0f...ec2f62` | ❓ Unverified | Unverified |
 | UnnamedContract | sonic | `0x845ee6...47cbee` | ❓ Unverified | Unverified |

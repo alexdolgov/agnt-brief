@@ -7,13 +7,13 @@
 - Project: Rainbow Bridge (`rainbow-bridge`)
 - Website: [https://rainbowbridge.app/transfer](https://rainbowbridge.app/transfer)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-11T02:09:42.664Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-14T10:43:15.394Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
 - Chains: ethereum
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $2,108,492.13
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- Contract surface: 5 unique implementations (5 raw deployments)
+- DeFi Llama TVL: $1,673,576.84
+- On-chain TVL (included contracts): $23,285,836.32
+- TVL by chain: Ethereum $23,285,836.32
 
 ## Project Description
 
@@ -25,19 +25,19 @@ The EthCustodian contract is the sole Ethereum component, interacting with NEAR'
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 0/5 (0.0%)
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 2
+- Unique implementations: 5
+- Raw deployments: 5
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $23,285,836.32
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $23,285,836.32 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,12 +49,15 @@ The EthCustodian contract is the sole Ethereum component, interacting with NEAR'
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| ERC20Locker | token | ethereum | [`0x23ddd3...9e127f`](./contracts/ethereum-1/0x23ddd3e3692d1861ed57ede224608875809e127f/) | ⚠️ Unaudited |
+| eNear | unknown | ethereum | [`0x85f17c...b9f6a4`](./contracts/ethereum-1/0x85f17cf997934a597031b2e18a9ab6ebd4b9f6a4/) | ⚠️ Unaudited |
 | EthCustodian | unknown | ethereum | [`0x6bfad4...89fa52`](./contracts/ethereum-1/0x6bfad42cfc4efc96f529d786d643ff4a8b89fa52/) | ⚠️ Unaudited |
 | NearBridge | operational_periphery | ethereum | [`0x015156...efc362`](./contracts/ethereum-1/0x0151568af92125fb289f1dd81d9d8f7484efc362/) | ⚠️ Unaudited |
+| NearProver | unknown | ethereum | [`0x051ad3...5b46c4`](./contracts/ethereum-1/0x051ad3f020274910065dcb421629cd2e6e5b46c4/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,14 +88,17 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| ethereum | [`0x23ddd3...9e127f`](./contracts/ethereum-1/0x23ddd3e3692d1861ed57ede224608875809e127f/) | ERC20Locker | token | $23,285,836.32 | Verified native implementation with $23,285,836.32 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x85f17c...b9f6a4`](./contracts/ethereum-1/0x85f17cf997934a597031b2e18a9ab6ebd4b9f6a4/) | eNear | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6bfad4...89fa52`](./contracts/ethereum-1/0x6bfad42cfc4efc96f529d786d643ff4a8b89fa52/) | EthCustodian | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x015156...efc362`](./contracts/ethereum-1/0x0151568af92125fb289f1dd81d9d8f7484efc362/) | NearBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x051ad3...5b46c4`](./contracts/ethereum-1/0x051ad3f020274910065dcb421629cd2e6e5b46c4/) | NearProver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 5 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

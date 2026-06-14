@@ -5,13 +5,13 @@
 - Project: DyorSwap (`dyorswap`)
 - Website: [https://dyorswap.finance/?chainId=34443](https://dyorswap.finance/?chainId=34443)
 - Lifecycle: active (Tier 0, 71.7% below peak)
-- Generated: 2026-06-10T22:57:51.552Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-14T10:44:16.048Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
 - Chains: blast, ink, merlin, mode, plasma, sonic, unichain
-- Contract surface: 93 unique implementations (97 raw deployments)
-- DeFi Llama TVL: $2,243,589.00
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- Contract surface: 93 unique implementations (100 raw deployments)
+- DeFi Llama TVL: $1,675,972.00
+- On-chain TVL (included contracts): $270,034,078.56
+- TVL by chain: Plasma $270,034,078.56
 
 ## Project Description
 
@@ -23,15 +23,15 @@ The DyorSwap AMM family relies on factory contracts to deploy and manage liquidi
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 0/6 (0.0%)
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
-- Unverified implementations: 88
+- Unverified implementations: 87
 - Unique implementations: 93
-- Raw deployments: 97
+- Raw deployments: 100
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $270,034,078.56
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,14 +46,15 @@ The DyorSwap AMM family relies on factory contracts to deploy and manage liquidi
 
 - None
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| DyorPumpToken | token | plasma | 3 deployments: plasma [`0x11e0f9...7a92e7`](./contracts/plasma-9745/0x11e0f991cad15a5b3cc69c84d33a91fc977a92e7/); plasma `0x469e66...4a14c4`; plasma `0xb43766...294a60` | ⚠️ Unaudited |
 | BEP20 | unknown | mode | [`0x097de1...d310a2`](./contracts/mode-34443/0x097de1ade6d7b46540637935c88b489860d310a2/) | ⚠️ Unaudited |
 | DYORFactory | registry | blast | 2 deployments: mode `0xe47069...8fdeef`; blast [`0xa1da7a...b58413`](./contracts/blast-81457/0xa1da7a7eb5a858da410de8fbc5092c2079b58413/) | ⚠️ Unaudited |
 | DYORRouter | adapter | mode | 2 deployments: mode [`0xcf9dc9...9e169a`](./contracts/mode-34443/0xcf9dc9afb93bd3ef4fb3cc4df7843abc3c9e169a/); blast `0xe47069...8fdeef` | ⚠️ Unaudited |
-| DyorRouterV2 | adapter | sonic | 3 deployments: sonic [`0x55a75e...6b0ca5`](./contracts/sonic-146/0x55a75ee40c468984a1ea053e6e4bf2126b6b0ca5/); sonic `0x591cf6...a72f61`; plasma `0xfc9869...a493cc` | ⚠️ Unaudited |
+| DyorRouterV2 | adapter | sonic | 4 deployments: sonic [`0x55a75e...6b0ca5`](./contracts/sonic-146/0x55a75ee40c468984a1ea053e6e4bf2126b6b0ca5/); sonic `0x591cf6...a72f61`; sonic `0x6c86ab...9a2806`; plasma `0xfc9869...a493cc` | ⚠️ Unaudited |
 | QuoterV3 | periphery | plasma | [`0x5dd041...fa1983`](./contracts/plasma-9745/0x5dd0416835b27325917677f974a256e67dfa1983/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -68,7 +69,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (88)
+### ❓ Unverified (87)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -107,7 +108,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | sonic | `0x56ea5b...4fb0f4` | ❓ Unverified |
 | UnnamedContract | unknown | sonic | `0x583fab...7b2745` | ❓ Unverified |
 | UnnamedContract | unknown | sonic | `0x5ac77b...dccf0e` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | `0x6c86ab...9a2806` | ❓ Unverified |
 | UnnamedContract | unknown | sonic | `0x7ac8ac...d65fd4` | ❓ Unverified |
 | UnnamedContract | unknown | sonic | `0x83ad0f...ec2f62` | ❓ Unverified |
 | UnnamedContract | unknown | sonic | `0x845ee6...47cbee` | ❓ Unverified |
@@ -174,6 +174,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| plasma | [`0x11e0f9...7a92e7`](./contracts/plasma-9745/0x11e0f991cad15a5b3cc69c84d33a91fc977a92e7/) | DyorPumpToken | token | $270,034,078.56 | Verified native implementation with $270,034,078.56 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | blast | [`0xa1da7a...b58413`](./contracts/blast-81457/0xa1da7a7eb5a858da410de8fbc5092c2079b58413/) | DYORFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | mode | [`0xcf9dc9...9e169a`](./contracts/mode-34443/0xcf9dc9afb93bd3ef4fb3cc4df7843abc3c9e169a/) | DYORRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x55a75e...6b0ca5`](./contracts/sonic-146/0x55a75ee40c468984a1ea053e6e4bf2126b6b0ca5/) | DyorRouterV2 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -182,10 +183,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 5 |
+| native | 33 |
 | upstream | 1 |
 | standard_library | 1 |
-| needs_review | 86 |
+| needs_review | 58 |
 
 ## Scope Matching Notes
 

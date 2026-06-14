@@ -4,12 +4,12 @@
 
 - Project: DOOAR (`dooar`)
 - Website: [https://beta.dooar.com/swap](https://beta.dooar.com/swap)
-- Lifecycle: active (Tier 0, 60.8% below peak)
-- Generated: 2026-06-10T22:53:38.382Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
-- Chains: bsc
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $5,110,102.30
+- Lifecycle: active (Tier 0, 64.8% below peak)
+- Generated: 2026-06-14T06:51:39.730Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
+- Chains: bsc, ethereum, polygon
+- Contract surface: 6 unique implementations (8 raw deployments)
+- DeFi Llama TVL: $4,518,171.15
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -26,9 +26,9 @@ The single product family contains the core factory contract that deploys and ma
 - Verified implementations audited: 0/2 (0.0%)
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 2
+- Unverified implementations: 4
+- Unique implementations: 6
+- Raw deployments: 8
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -50,8 +50,8 @@ The single product family contains the core factory contract that deploys and ma
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| DooarSwapV2Factory | registry | bsc | [`0x1e895b...476f3c`](./contracts/bsc-56/0x1e895bfe59e3a5103e8b7da3897d1f2391476f3c/) | ⚠️ Unaudited |
-| DooarSwapV2Router02 | operational_periphery | bsc | [`0x53e0e5...b9879f`](./contracts/bsc-56/0x53e0e51b5ed9202110d7ecd637a4581db8b9879f/) | ⚠️ Unaudited |
+| DooarSwapV2Factory | registry | ethereum | 2 deployments: ethereum [`0x1e895b...476f3c`](./contracts/ethereum-1/0x1e895bfe59e3a5103e8b7da3897d1f2391476f3c/); bsc [`0x1e895b...476f3c`](./contracts/bsc-56/0x1e895bfe59e3a5103e8b7da3897d1f2391476f3c/) | ⚠️ Unaudited |
+| DooarSwapV2Router02 | adapter | ethereum | 2 deployments: ethereum [`0x53e0e5...b9879f`](./contracts/ethereum-1/0x53e0e51b5ed9202110d7ecd637a4581db8b9879f/); bsc [`0x53e0e5...b9879f`](./contracts/bsc-56/0x53e0e51b5ed9202110d7ecd637a4581db8b9879f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -65,11 +65,16 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | `0x17db7a...ed30f0` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | `0x5f5d38...98dff5` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | `0xba5ae8...d8f6a9` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | `0xacc8e4...cf7e47` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -82,8 +87,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x1e895b...476f3c`](./contracts/bsc-56/0x1e895bfe59e3a5103e8b7da3897d1f2391476f3c/) | DooarSwapV2Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x53e0e5...b9879f`](./contracts/bsc-56/0x53e0e51b5ed9202110d7ecd637a4581db8b9879f/) | DooarSwapV2Router02 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1e895b...476f3c`](./contracts/ethereum-1/0x1e895bfe59e3a5103e8b7da3897d1f2391476f3c/) | DooarSwapV2Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x53e0e5...b9879f`](./contracts/ethereum-1/0x53e0e51b5ed9202110d7ecd637a4581db8b9879f/) | DooarSwapV2Router02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
@@ -92,7 +97,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

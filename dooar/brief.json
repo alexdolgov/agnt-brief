@@ -1,48 +1,50 @@
 {
   "schema_version": "2.0",
   "project_key": "dooar",
-  "generated_at": "2026-06-10T22:53:38.382Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
+  "generated_at": "2026-06-14T06:51:39.730Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-9bd7",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "dooar",
     "tier": 0,
     "peak_tvl": 13096278,
     "peak_date": "2024-03-06T00:00:00.000Z",
-    "tvl_30d_ago": 5146846,
-    "tvl_90d_ago": 5027600,
-    "tvl_current": 5138310,
+    "tvl_30d_ago": 5319862,
+    "tvl_90d_ago": 5284052,
+    "tvl_current": 4604005,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 6386547,
-    "change_30d_pct": -0.16584914333943546,
-    "change_90d_pct": 2.202044713183229,
-    "days_since_peak": 808,
+    "tvl_180d_ago": 6073919,
+    "change_30d_pct": -13.456307701214806,
+    "change_90d_pct": -12.8698014326884,
+    "days_since_peak": 830,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 60.765112041757206
+    "drop_from_peak_pct": 64.84493533200806
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
+    "total_contracts": 6,
+    "total_addresses": 8,
+    "unique_implementations": 6,
+    "total_deployments": 8,
     "audited_contracts": 0,
     "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 4,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5110102.29667,
-    "tvl_usd": 5110102.29667,
+    "dl_tvl_usd": 4518171.15392,
+    "tvl_usd": 4518171.15392,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://beta.dooar.com/swap",
     "chains": [
-      "bsc"
+      "bsc",
+      "ethereum",
+      "polygon"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
@@ -61,7 +63,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 6,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -71,19 +73,28 @@
   },
   "contracts": [
     {
-      "chain_id": 56,
-      "chain_name": "bsc",
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x1e895bfe59e3a5103e8b7da3897d1f2391476f3c",
       "name": "DooarSwapV2Factory",
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "DOOAR",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "DooarSwapV2Factory",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1e895bfe59e3a5103e8b7da3897d1f2391476f3c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 56,
           "chain_name": "bsc",
@@ -102,11 +113,11 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 56,
-      "chain_name": "bsc",
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x53e0e51b5ed9202110d7ecd637a4581db8b9879f",
       "name": "DooarSwapV2Router02",
-      "role": "operational_periphery",
+      "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -115,6 +126,15 @@
       "impl_address": null,
       "impl_name": "DooarSwapV2Router02",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x53e0e51b5ed9202110d7ecd637a4581db8b9879f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 56,
           "chain_name": "bsc",
@@ -131,14 +151,138 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x17db7a395bcc1ec828e732a014dd2a7c43ed30f0",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x17db7a395bcc1ec828e732a014dd2a7c43ed30f0",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x5f5d385397095aaed4daffe336f9815ac598dff5",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x5f5d385397095aaed4daffe336f9815ac598dff5",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xba5ae86960fe468ff02d83022c0079670bd8f6a9",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xba5ae86960fe468ff02d83022c0079670bd8f6a9",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xacc8e414ceecf0bbf438f6c4b7417ca59dcf7e47",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xacc8e414ceecf0bbf438f6c4b7417ca59dcf7e47",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
-      "chain_id": 56,
-      "chain_name": "bsc",
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x1e895bfe59e3a5103e8b7da3897d1f2391476f3c",
       "name": "DooarSwapV2Factory",
       "role": "registry",
@@ -147,11 +291,11 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 56,
-      "chain_name": "bsc",
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x53e0e51b5ed9202110d7ecd637a4581db8b9879f",
       "name": "DooarSwapV2Router02",
-      "role": "operational_periphery",
+      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -161,7 +305,7 @@
     "native": 2,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 4
   },
   "scope_matching_notes": {
     "match_method_counts": {},

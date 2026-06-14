@@ -204,7 +204,7 @@
 | [brotocol](./brotocol/) | $447.6M | 20.0% | $447.6M | unknown | 14 | 76 | 2026-06-13 |
 | [brownfi](./brownfi/) | $123.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [bscstation](./bscstation/) | $1.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-06-10 |
+| [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 24 | 2026-06-14 |
 | [btcfi](./btcfi/) | $9.6M | 0.0% | ? | active | 0 | 15 | 2026-06-13 |
 | [btcst](./btcst/) | $263.7M | 0.0% | $263.7M | active | 0 | 64 | 2026-06-13 |
 | [btse](./btse/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -352,7 +352,7 @@
 | [dogeclaw](./dogeclaw/) | $11.5 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dolomite](./dolomite/) | $664.2M | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
 | [domination-finance](./domination-finance/) | $1.2M | 75.0% | ? | active | 1 | 30 | 2026-05-25 |
-| [dooar](./dooar/) | $5.1M | 0.0% | ? | active | 0 | 2 | 2026-06-10 |
+| [dooar](./dooar/) | $4.5M | 0.0% | ? | active | 0 | 6 | 2026-06-14 |
 | [dot-dot-finance](./dot-dot-finance/) | $3.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [doubler](./doubler/) | $107.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dpex](./dpex/) | $142.5 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -415,7 +415,7 @@
 | [fairfi](./fairfi/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [farm-hero](./farm-hero/) | $5.1K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [feather](./feather/) | $15.9M | 0.0% | ? | active | 0 | 10 | 2026-06-12 |
-| [ferro](./ferro/) | $4.9M | 0.0% | ? | declining | 0 | 21 | 2026-06-13 |
+| [ferro](./ferro/) | $4.9M | 0.0% | ? | declining | 0 | 21 | 2026-06-14 |
 | [fiamma](./fiamma/) | $1.2M | 16.7% | ? | active | 3 | 33 | 2026-06-13 |
 | [filfi](./filfi/) | $121.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [firebird](./firebird/) | $17.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1229,7 +1229,7 @@
 | [tg-casino](./tg-casino/) | $13.4M | 6.7% | ? | active | 761 | 15 | 2026-06-11 |
 | [thaw](./thaw/) | $7.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [the-arena](./the-arena/) | $7.8M | 0.0% | $7.8M | active | 0 | 121 | 2026-06-13 |
-| [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 17 | 2026-06-11 |
+| [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 20 | 2026-06-14 |
 | [the-parallel](./the-parallel/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [the-story-of-draco](./the-story-of-draco/) | $7.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [the-tokenized-bitcoin](./the-tokenized-bitcoin/) | $106.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1358,7 +1358,7 @@
 | [woofi](./woofi/) | $9.8M | 18.8% | $9.7M | declining | 6 | 200 | 2026-06-11 |
 | [worldes](./worldes/) | $567.3 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [wowswap](./wowswap/) | $34.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [wrapped-bnb](./wrapped-bnb/) | $5.5M | 0.0% | ? | declining | 1 | 1 | 2026-06-13 |
+| [wrapped-bnb](./wrapped-bnb/) | $5.5M | 0.0% | ? | declining | 1 | 1 | 2026-06-14 |
 | [wrapped](./wrapped/) | $20.1M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
 | [wstaking](./wstaking/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [xcarnival](./xcarnival/) | $2.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

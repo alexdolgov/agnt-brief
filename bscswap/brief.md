@@ -4,11 +4,11 @@
 
 - Project: BSCSwap (`bscswap`)
 - Lifecycle: active (Tier 0, 50.6% below peak)
-- Generated: 2026-06-10T22:13:31.218Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
+- Generated: 2026-06-14T06:52:35.675Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
 - Chains: bsc
-- Contract surface: 30 unique implementations (111 raw deployments)
-- DeFi Llama TVL: $5,010,034.63
+- Contract surface: 24 unique implementations (103 raw deployments)
+- DeFi Llama TVL: $4,576,413.26
 - On-chain TVL (included contracts): $20,269.77
 - TVL by chain: Bsc $20,269.77
 
@@ -22,12 +22,12 @@ The project consists of a single product family with one core contract, indicati
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/22 (0.0%)
-- Verified + Unaudited implementations: 22
+- Verified implementations audited: 0/16 (0.0%)
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 0
 - Unverified implementations: 8
-- Unique implementations: 30
-- Raw deployments: 111
+- Unique implementations: 24
+- Raw deployments: 103
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $20,269.77
@@ -45,7 +45,7 @@ The project consists of a single product family with one core contract, indicati
 
 - None
 
-### ⚠️ Verified + Unaudited (22)
+### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -56,18 +56,12 @@ The project consists of a single product family with one core contract, indicati
 | BSCswapRouter | adapter | bsc | [`0xd95455...21424a`](./contracts/bsc-56/0xd954551853f55deb4ae31407c423e67b1621424a/) | ⚠️ Unaudited |
 | BSCswapV2 | unknown | bsc | [`0xcb7558...2a895a`](./contracts/bsc-56/0xcb75583a180b8b5f5ba6087ab8f47c15792a895a/) | ⚠️ Unaudited |
 | BSWAPStaking | unknown | bsc | [`0x7b2dac...331e2d`](./contracts/bsc-56/0x7b2dac429df0b39390cd3d4e6a8b8bcceb331e2d/) | ⚠️ Unaudited |
-| Degenerates | unknown | bsc | [`0xb37b51...538ff3`](./contracts/bsc-56/0xb37b51c5c4c934468b49b55fec15e76c9b538ff3/) | ⚠️ Unaudited |
 | DegenPool | core_logic | bsc | 30 deployments: bsc [`0x0ccbc7...0ca044`](./contracts/bsc-56/0x0ccbc7e03fde545e3ed78bb8326adc414a0ca044/); bsc `0x0d08ce...b8bd43`; bsc `0x0ec061...d2e0e8`; bsc `0x151190...a3c8a0`; bsc `0x18da56...9a0f03`; bsc `0x23e961...35237a`; bsc `0x25f34e...b0c92b`; bsc `0x28a1b8...b04612`; bsc `0x2aeb47...ea65c1`; bsc `0x3973a1...1e65f0`; bsc `0x4b5a08...6c5be3`; bsc `0x4dfb8e...0e7160`; bsc `0x4ec299...397968`; bsc `0x553d0c...9ffb8f`; bsc `0x58d919...505e39`; bsc `0x729cea...c7c419`; bsc `0x84e012...4f1f45`; bsc `0x8a0725...bf3db4`; bsc `0x992c6d...437a8f`; bsc `0x9e17af...5d45da`; bsc `0xa2095d...8c1ba0`; bsc `0xa90d75...d37c5e`; bsc `0xb5986d...14d12f`; bsc `0xc24b12...35c0ec`; bsc `0xc6cbdf...0491e2`; bsc `0xc92e84...ee62d8`; bsc `0xccb983...da4ad4`; bsc `0xd1bd76...ee954d`; bsc `0xdccaca...3cea38`; bsc `0xe427f3...8fe782` | ⚠️ Unaudited |
-| Earth | unknown | bsc | [`0x3bee84...079255`](./contracts/bsc-56/0x3bee8422f2e6f99c43351ebe53b0b7a6c3079255/) | ⚠️ Unaudited |
 | ExchangeProxy | unknown | bsc | [`0x4a4c55...7d98d6`](./contracts/bsc-56/0x4a4c55e4dd83f507e81186f317332abcff7d98d6/) | ⚠️ Unaudited |
 | IDO | unknown | bsc | 11 deployments: bsc [`0x3e5619...7a329c`](./contracts/bsc-56/0x3e5619b262d1492c03c6388004493654e17a329c/); bsc `0x4526b1...220142`; bsc `0x552409...7bddca`; bsc `0x84798e...0ca18e`; bsc `0xa0e74f...a730c5`; bsc `0xd55aba...09c8a0`; bsc `0xd6319a...f475cd`; bsc `0xe3d301...6bf250`; bsc `0xec9392...8382de`; bsc `0xf319c3...ad350c`; bsc `0xf74417...2b61c7` | ⚠️ Unaudited |
 | LaunchField | unknown | bsc | 16 deployments: bsc [`0x15c67f...90fa5c`](./contracts/bsc-56/0x15c67f69f0b99684e44d7e00fe64141b0b90fa5c/); bsc `0x1d98cb...4cd7fa`; bsc `0x43fcbe...ea6559`; bsc `0x589829...c2ae0d`; bsc `0x62d6ee...d4cb08`; bsc `0x73605b...28bb62`; bsc `0x8d2e3f...fdab12`; bsc `0x9b20a1...0889c4`; bsc `0xa56a3d...14069c`; bsc `0xdb9919...0ca680`; bsc `0xdd4090...97333d`; bsc `0xe394b0...c2682a`; bsc `0xe5e2d9...794e6a`; bsc `0xed0496...6d8ecb`; bsc `0xee3c30...aeee5d`; bsc `0xf5746b...78bd49` | ⚠️ Unaudited |
 | LFIStaking | unknown | bsc | [`0xbf56ed...737a78`](./contracts/bsc-56/0xbf56ed686f70b8e82300e0d85d87f0afd5737a78/) | ⚠️ Unaudited |
 | LFIStrategy | core_logic | bsc | 3 deployments: bsc [`0x67f6da...f597da`](./contracts/bsc-56/0x67f6da76ea5926baa823a539e7f6c93fbbf597da/); bsc `0x80b56f...fd238e`; bsc `0x92605e...94bd1a` | ⚠️ Unaudited |
-| LOADeFi | unknown | bsc | 3 deployments: bsc [`0x2282d1...e2f751`](./contracts/bsc-56/0x2282d18c5232ac20a41c0a0709367becade2f751/); bsc `0x7661c7...b8f640`; bsc `0xc924d9...760c44` | ⚠️ Unaudited |
-| Moon | unknown | bsc | [`0x9e90af...c0d9b3`](./contracts/bsc-56/0x9e90af2ea159190c84012b09067689ba8ac0d9b3/) | ⚠️ Unaudited |
-| MoonRabbit | unknown | bsc | [`0x8c4fc5...b50b1b`](./contracts/bsc-56/0x8c4fc5416160bf4a1be2128aad8a709f15b50b1b/) | ⚠️ Unaudited |
-| MoonRabit | unknown | bsc | [`0xff795d...fa63a5`](./contracts/bsc-56/0xff795d617a1d2aadaab7745d9626402680fa63a5/) | ⚠️ Unaudited |
 | ProxyRegistry | registry | bsc | [`0x357d92...db2bc4`](./contracts/bsc-56/0x357d922c71a2db0ce4a7af07d3fb6c97a8db2bc4/) | ⚠️ Unaudited |
 | Refunded | unknown | bsc | 5 deployments: bsc [`0x1326e3...7a9550`](./contracts/bsc-56/0x1326e30fd407e23067ffe0545078082e3b7a9550/); bsc `0x4642fa...bfb217`; bsc `0x82a574...9bc0c6`; bsc `0xc5a993...d677b6`; bsc `0xc851da...43618f` | ⚠️ Unaudited |
 | Vyper_contract | unknown | bsc | 2 deployments: bsc [`0x15ea85...37e4a6`](./contracts/bsc-56/0x15ea853b07382dc2ac8f91933446ac459737e4a6/); bsc `0x39c56b...8abde2` | ⚠️ Unaudited |
@@ -117,27 +111,24 @@ Verified + unaudited native implementations ranked by TVL:
 | bsc | [`0xd95455...21424a`](./contracts/bsc-56/0xd954551853f55deb4ae31407c423e67b1621424a/) | BSCswapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xcb7558...2a895a`](./contracts/bsc-56/0xcb75583a180b8b5f5ba6087ab8f47c15792a895a/) | BSCswapV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x7b2dac...331e2d`](./contracts/bsc-56/0x7b2dac429df0b39390cd3d4e6a8b8bcceb331e2d/) | BSWAPStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xb37b51...538ff3`](./contracts/bsc-56/0xb37b51c5c4c934468b49b55fec15e76c9b538ff3/) | Degenerates | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x0ccbc7...0ca044`](./contracts/bsc-56/0x0ccbc7e03fde545e3ed78bb8326adc414a0ca044/) | DegenPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3bee84...079255`](./contracts/bsc-56/0x3bee8422f2e6f99c43351ebe53b0b7a6c3079255/) | Earth | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x4a4c55...7d98d6`](./contracts/bsc-56/0x4a4c55e4dd83f507e81186f317332abcff7d98d6/) | ExchangeProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x3e5619...7a329c`](./contracts/bsc-56/0x3e5619b262d1492c03c6388004493654e17a329c/) | IDO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x15c67f...90fa5c`](./contracts/bsc-56/0x15c67f69f0b99684e44d7e00fe64141b0b90fa5c/) | LaunchField | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xbf56ed...737a78`](./contracts/bsc-56/0xbf56ed686f70b8e82300e0d85d87f0afd5737a78/) | LFIStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x67f6da...f597da`](./contracts/bsc-56/0x67f6da76ea5926baa823a539e7f6c93fbbf597da/) | LFIStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x9e90af...c0d9b3`](./contracts/bsc-56/0x9e90af2ea159190c84012b09067689ba8ac0d9b3/) | Moon | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x8c4fc5...b50b1b`](./contracts/bsc-56/0x8c4fc5416160bf4a1be2128aad8a709f15b50b1b/) | MoonRabbit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xff795d...fa63a5`](./contracts/bsc-56/0xff795d617a1d2aadaab7745d9626402680fa63a5/) | MoonRabit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x357d92...db2bc4`](./contracts/bsc-56/0x357d922c71a2db0ce4a7af07d3fb6c97a8db2bc4/) | ProxyRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x1326e3...7a9550`](./contracts/bsc-56/0x1326e30fd407e23067ffe0545078082e3b7a9550/) | Refunded | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x15ea85...37e4a6`](./contracts/bsc-56/0x15ea853b07382dc2ac8f91933446ac459737e4a6/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 22 |
+| native | 24 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 7 |
+| standard_library | 0 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

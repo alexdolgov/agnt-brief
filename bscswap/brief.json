@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bscswap",
-  "generated_at": "2026-06-10T22:13:31.218Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-7a87",
+  "generated_at": "2026-06-14T06:52:35.675Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-9bd7",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bscswap",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 50.582137125989746
   },
   "summary": {
-    "total_contracts": 30,
-    "total_addresses": 111,
-    "unique_implementations": 30,
-    "total_deployments": 111,
+    "total_contracts": 24,
+    "total_addresses": 103,
+    "unique_implementations": 24,
+    "total_deployments": 103,
     "audited_contracts": 0,
-    "unaudited_contracts": 22,
+    "unaudited_contracts": 16,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 22,
+    "contracts_verified_unaudited": 16,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 8,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5010034.62573,
+    "dl_tvl_usd": 4576413.26233,
     "tvl_usd": 20269.765990580465,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -63,7 +63,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 30,
+    "unique_implementations": 24,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -454,37 +454,6 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0xb37b51c5c4c934468b49b55fec15e76c9b538ff3",
-      "name": "Degenerates",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Degenerates",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xb37b51c5c4c934468b49b55fec15e76c9b538ff3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
       "address": "0x0ccbc7e03fde545e3ed78bb8326adc414a0ca044",
       "name": "DegenPool",
       "role": "core_logic",
@@ -773,37 +742,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x3bee8422f2e6f99c43351ebe53b0b7a6c3079255",
-      "name": "Earth",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Earth",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x3bee8422f2e6f99c43351ebe53b0b7a6c3079255",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
     },
     {
       "chain_id": 56,
@@ -1206,153 +1144,11 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x2282d18c5232ac20a41c0a0709367becade2f751",
-      "name": "LOADeFi",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "LOADeFi",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x2282d18c5232ac20a41c0a0709367becade2f751",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x7661c7714a2ae18bd224d2bfa7619d6ab7b8f640",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xc924d95947ea703a1259815fe5aaa0daef760c44",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x9e90af2ea159190c84012b09067689ba8ac0d9b3",
-      "name": "Moon",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Moon",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x9e90af2ea159190c84012b09067689ba8ac0d9b3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x8c4fc5416160bf4a1be2128aad8a709f15b50b1b",
-      "name": "MoonRabbit",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MoonRabbit",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x8c4fc5416160bf4a1be2128aad8a709f15b50b1b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xff795d617a1d2aadaab7745d9626402680fa63a5",
-      "name": "MoonRabit",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MoonRabit",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xff795d617a1d2aadaab7745d9626402680fa63a5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
       "address": "0x357d922c71a2db0ce4a7af07d3fb6c97a8db2bc4",
       "name": "ProxyRegistry",
       "role": "registry",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1511,7 +1307,7 @@
       "address": "0x3b00cf80106004b3c7662c027e815cd9dd0c7d15",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1542,7 +1338,7 @@
       "address": "0x587f503d7e81e7957687aef1e3b700973e9fd8e1",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1604,7 +1400,7 @@
       "address": "0xe112f5e71b743a376220cc9b20d7e8df00e7394f",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1635,7 +1431,7 @@
       "address": "0xe4aea0303f8c373d1b421c5e047547360891347f",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1666,7 +1462,7 @@
       "address": "0xf6c7971b4cbcdce42e541f8c0649e3d24e81d63a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1697,7 +1493,7 @@
       "address": "0x15ea853b07382dc2ac8f91933446ac459737e4a6",
       "name": "Vyper_contract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1808,29 +1604,9 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0xb37b51c5c4c934468b49b55fec15e76c9b538ff3",
-      "name": "Degenerates",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
       "address": "0x0ccbc7e03fde545e3ed78bb8326adc414a0ca044",
       "name": "DegenPool",
       "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x3bee8422f2e6f99c43351ebe53b0b7a6c3079255",
-      "name": "Earth",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1888,29 +1664,9 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x9e90af2ea159190c84012b09067689ba8ac0d9b3",
-      "name": "Moon",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x8c4fc5416160bf4a1be2128aad8a709f15b50b1b",
-      "name": "MoonRabbit",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xff795d617a1d2aadaab7745d9626402680fa63a5",
-      "name": "MoonRabit",
-      "role": "unknown",
+      "address": "0x357d922c71a2db0ce4a7af07d3fb6c97a8db2bc4",
+      "name": "ProxyRegistry",
+      "role": "registry",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1924,13 +1680,23 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x15ea853b07382dc2ac8f91933446ac459737e4a6",
+      "name": "Vyper_contract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 22,
+    "native": 24,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 7
+    "standard_library": 0,
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "the-idols",
-  "generated_at": "2026-06-11T03:29:33.489Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-14T06:52:41.430Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-9bd7",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "the-idols",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 57.686801054261075
   },
   "summary": {
-    "total_contracts": 17,
-    "total_addresses": 20,
-    "unique_implementations": 17,
-    "total_deployments": 20,
+    "total_contracts": 20,
+    "total_addresses": 23,
+    "unique_implementations": 20,
+    "total_deployments": 23,
     "audited_contracts": 0,
-    "unaudited_contracts": 13,
+    "unaudited_contracts": 16,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 13,
+    "contracts_verified_unaudited": 16,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 4,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5665507.09508,
+    "dl_tvl_usd": 4487977.66935,
     "tvl_usd": 85360320.48104736,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -63,7 +63,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 17,
+    "unique_implementations": 20,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -132,7 +132,38 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x82af9d2ea81810582657f6dc04b1d7d0d573f616",
+      "name": "GnosisSafe",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
+      "impl_name": "GnosisSafe",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x82af9d2ea81810582657f6dc04b1d7d0d573f616",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -288,6 +319,37 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "name": "Lido",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Lido",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x6ca84080381e43938476814be61b779a8bb6a600",
+      "impl_name": "Lido",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x87d2edba911c7e2e13580af897ba77e47e8b8c8b",
       "name": "MarketplaceRefundContract",
       "role": "unknown",
@@ -314,7 +376,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -345,7 +407,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -531,7 +593,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -593,7 +655,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -624,7 +686,38 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xdc24316b9ae028f1497c275eb9192a3ea0f67022",
+      "name": "Vyper_contract",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "curve",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Vyper_contract",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdc24316b9ae028f1497c275eb9192a3ea0f67022",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [],
@@ -763,8 +856,8 @@
   ],
   "origin_summary": {
     "native": 17,
-    "upstream": 0,
-    "standard_library": 0,
+    "upstream": 2,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {

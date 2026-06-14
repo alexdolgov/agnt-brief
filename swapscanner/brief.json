@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "swapscanner",
-  "generated_at": "2026-06-11T03:22:15.860Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-14T07:18:13.926Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-9bd7",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "swapscanner",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4383473,
-    "tvl_usd": 4383473,
+    "dl_tvl_usd": 3101384,
+    "tvl_usd": 3101384,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

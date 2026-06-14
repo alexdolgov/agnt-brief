@@ -1,31 +1,41 @@
 {
   "schema_version": "2.0",
   "project_key": "angstrom",
-  "generated_at": "2026-06-10T20:58:57.567Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-14T07:18:51.447Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-9bd7",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "angstrom",
-    "tier": 0,
+    "tier": 1,
     "peak_tvl": 11383268,
     "peak_date": "2026-05-21T00:00:00.000Z",
-    "tvl_30d_ago": 10631840,
-    "tvl_90d_ago": 9215427,
-    "tvl_current": 11172540,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 4690789,
-    "change_30d_pct": 5.085667203419163,
-    "change_90d_pct": 21.237355577771925,
-    "days_since_peak": 2,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 1.8512082821910192
+    "tvl_30d_ago": 11383268,
+    "tvl_90d_ago": 9748636,
+    "tvl_current": 3088281,
+    "tier0_reason": "sustained_90d_and_30d_decline",
+    "tvl_180d_ago": 2867665,
+    "change_30d_pct": -72.86999655986313,
+    "change_90d_pct": -68.32089125083756,
+    "governance_raw": {
+      "evidence": "TVL dropped 72.87% from peak in 24 days, but the protocol is actively promoting new features (Uniswap Incentives, Angstrom) and has a live app, indicating ongoing operations.",
+      "confidence": 0.9,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 24,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 72.86999655986313,
+    "governance_evidence": "TVL dropped 72.87% from peak in 24 days, but the protocol is actively promoting new features (Uniswap Incentives, Angstrom) and has a live app, indicating ongoing operations.",
+    "governance_confidence": 0.9,
+    "governance_text_chars": 1446,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
   },
   "summary": {
     "total_contracts": 13,
-    "total_addresses": 14,
+    "total_addresses": 15,
     "unique_implementations": 13,
-    "total_deployments": 14,
+    "total_deployments": 15,
     "audited_contracts": 1,
     "unaudited_contracts": 12,
     "contracts_verified_audited": 1,
@@ -35,11 +45,14 @@
     "coverage_pct": 7.7,
     "total_audits": 3,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 11258670.8788,
-    "tvl_usd": 11258670.8788,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "dl_tvl_usd": 3061809.17523,
+    "tvl_usd": 182652801.0352513,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "base": 21078425.92,
+      "ethereum": 161574375.12
+    },
+    "asd_usd": 182652801.0352513,
     "website_url": "https://angstrom.xyz/",
     "chains": [
       "base",
@@ -73,6 +86,46 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
+      "name": "PoolManager",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": 182652801.0352513,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PoolManager",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 161574375.1175947,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x498581ff718922c3f8e6a244956af099b2652b2b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 21078425.9176566,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -135,7 +188,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -330,37 +383,6 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5d8555f8c710798274a8c655b9a26a3465a65c0b",
-      "name": "PerpsOracleAttested",
-      "role": "operational_periphery",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PerpsOracleAttested",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5d8555f8c710798274a8c655b9a26a3465a65c0b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
       "contamination_flag": "review"
     },
     {
@@ -369,7 +391,7 @@
       "address": "0x4cf26a7e680d5d86232f985b91c6cb9e0774b89d",
       "name": "PriceOracle",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -462,8 +484,8 @@
       "address": "0x06d9f5e807eeca914482bbd8ed3f40c55ce06c79",
       "name": "VaultExtension",
       "role": "adapter",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -674,9 +696,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x814e3b8dfdc2376b59a5ab70e8784dcb3bebf8cc",
-      "name": "Swapper",
-      "role": "adapter",
+      "address": "0x4cf26a7e680d5d86232f985b91c6cb9e0774b89d",
+      "name": "PriceOracle",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -684,8 +706,8 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x06d9f5e807eeca914482bbd8ed3f40c55ce06c79",
-      "name": "VaultExtension",
+      "address": "0x814e3b8dfdc2376b59a5ab70e8784dcb3bebf8cc",
+      "name": "Swapper",
       "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -694,9 +716,9 @@
   ],
   "origin_summary": {
     "native": 10,
-    "upstream": 0,
+    "upstream": 2,
     "standard_library": 1,
-    "needs_review": 2
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {

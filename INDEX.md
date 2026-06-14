@@ -6,7 +6,7 @@
 | [1inch](./1inch/) | $16.1M | 21.9% | $16.1M | active | 149 | 275 | 2026-06-10 |
 | [1sec](./1sec/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [21.co](./21.co/) | $2.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [3f-mutual](./3f-mutual/) | $3.9M | 0.0% | ? | active | 0 | 21 | 2026-06-10 |
+| [3f-mutual](./3f-mutual/) | $3.2M | 0.0% | ? | active | 0 | 38 | 2026-06-14 |
 | [3jane](./3jane/) | $76.6M | 61.9% | $76.6M | declining | 4 | 23 | 2026-06-10 |
 | [3xcalibur](./3xcalibur/) | $2.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [40-acres](./40-acres/) | $10.0M | 0.0% | $10.0M | active | 4 | 325 | 2026-06-12 |
@@ -59,7 +59,7 @@
 | [amy-finance](./amy-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [angle](./angle/) | $1.4B | 2.4% | $1.4B | declining | 3 | 558 | 2026-06-13 |
 | [angles](./angles/) | $441.0K | 4.0% | $7.5 | active | 1 | 40 | 2026-06-10 |
-| [angstrom](./angstrom/) | $11.3M | 7.7% | ? | declining | 3 | 13 | 2026-06-10 |
+| [angstrom](./angstrom/) | $182.7M | 7.7% | $182.7M | declining | 3 | 13 | 2026-06-14 |
 | [animal-farm](./animal-farm/) | $66.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [ankr](./ankr/) | $162.3 | 0.0% | $32.8 | active | 14 | 25 | 2026-06-12 |
 | [antarctic](./antarctic/) | $10.0M | 0.0% | ? | active | 0 | 11 | 2026-06-13 |
@@ -227,7 +227,7 @@
 | [camelot](./camelot/) | $6.4M | 17.6% | $391.9K | active | 1 | 118 | 2026-06-10 |
 | [cana-holdings-california-carbon-credits](./cana-holdings-california-carbon-credits/) | $886.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [canopy](./canopy/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [canto-lending](./canto-lending/) | $3.0M | 0.0% | ? | declining | 3 | 84 | 2026-06-10 |
+| [canto-lending](./canto-lending/) | $3.0M | 0.0% | ? | declining | 4 | 84 | 2026-06-14 |
 | [capx-ai](./capx-ai/) | $2.1M | 0.0% | ? | active | 1 | 1 | 2026-06-10 |
 | [carbon-defi](./carbon-defi/) | $5.1M | 30.9% | ? | active | 4 | 158 | 2026-06-10 |
 | [carina](./carina/) | ? | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
@@ -667,7 +667,7 @@
 | [linx-app](./linx-app/) | $129.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [liondex](./liondex/) | $0.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | active | 4 | 20 | 2026-06-11 |
+| [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | active | 4 | 20 | 2026-06-14 |
 | [liquis](./liquis/) | $71.5K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [liquity](./liquity/) | $217.0M | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [liqwid](./liqwid/) | $27.3M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1188,7 +1188,7 @@
 | [swamp-finance](./swamp-finance/) | $0.1 | 0.0% | $0.1 | declining | 0 | 11 | 2026-06-11 |
 | [swap.io-clmm](./swap.io-clmm/) | $2.1K | 0.0% | ? | unknown | 11 | 0 | 2026-06-13 |
 | [swappi](./swappi/) | $1.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-11 |
-| [swapscanner](./swapscanner/) | $4.4M | 0.0% | ? | active | 1 | 2 | 2026-06-11 |
+| [swapscanner](./swapscanner/) | $3.1M | 0.0% | ? | active | 1 | 2 | 2026-06-14 |
 | [swapwizard](./swapwizard/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [swapx](./swapx/) | $492.4K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [sweep](./sweep/) | $8.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

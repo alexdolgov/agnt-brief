@@ -1,19 +1,19 @@
 # Agentic Audit Brief: Angstrom
 
-⚠️ Lifecycle status: DECLINING - TVL changed 21.2% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 68.3% over 90 days
 
 ## Project Overview
 
 - Project: Angstrom (`angstrom`)
 - Website: [https://angstrom.xyz/](https://angstrom.xyz/)
-- Lifecycle: declining (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:58:57.567Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Lifecycle: declining (Tier 1, declining)
+- Generated: 2026-06-14T07:18:51.447Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
 - Chains: base, ethereum
-- Contract surface: 13 unique implementations (14 raw deployments)
-- DeFi Llama TVL: $11,258,670.88
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- Contract surface: 13 unique implementations (15 raw deployments)
+- DeFi Llama TVL: $3,061,809.18
+- On-chain TVL (included contracts): $182,652,801.04
+- TVL by chain: Ethereum $161,574,375.12 | Base $21,078,425.92
 
 ## Project Description
 
@@ -30,14 +30,14 @@ The L1 family provides governance and core DEX logic, while L2 instances leverag
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 13
-- Raw deployments: 14
+- Raw deployments: 15
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 1
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $182,652,801.04
 - Latest audit: 2025-07 (fresh)
 - Staleness: 1 fresh, 2 aging, 0 stale, 0 unknown
 - Tier 1 coverage: 7.7% (Spearbit)
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $182,652,801.04 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -57,6 +57,7 @@ The L1 family provides governance and core DEX logic, while L2 instances leverag
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| PoolManager | core_logic | ethereum | 2 deployments: ethereum [`0x000000...e08a90`](./contracts/ethereum-1/0x000000000004444c5dc75cb358380d2e3de08a90/); base `0x498581...652b2b` | ⚠️ Unaudited |
 | AngstromAdapter | adapter | ethereum | [`0xb535ae...4efbf8`](./contracts/ethereum-1/0xb535aeb27335b91e1b5bccbd64888ba7574efbf8/) | ⚠️ Unaudited |
 | AngstromInspector | unknown | ethereum | [`0xd262c2...03b6c3`](./contracts/ethereum-1/0xd262c224402e9a7f5e8ad1621be1bb1f3203b6c3/) | ⚠️ Unaudited |
 | AngstromL2 | unknown | base | 2 deployments: base [`0x7fa49d...09e5cf`](./contracts/base-8453/0x7fa49d29481b6d168505ccde26635e204c09e5cf/); base `0xcd256a...1de5cf` | ⚠️ Unaudited |
@@ -64,7 +65,6 @@ The L1 family provides governance and core DEX logic, while L2 instances leverag
 | AngstromVaultFactory | registry | ethereum | [`0x6582c7...0c169c`](./contracts/ethereum-1/0x6582c770fc4167aa807c3846c73e6006e90c169c/) | ⚠️ Unaudited |
 | ControllerV1 | governance | ethereum | [`0x174648...315fd4`](./contracts/ethereum-1/0x1746484ea5e11c75e009252c102c8c33e0315fd4/) | ⚠️ Unaudited |
 | EventEmitter | unknown | ethereum | [`0xb3df86...8a00df`](./contracts/ethereum-1/0xb3df869572ac94bb1acf5e9ecbfae3afee8a00df/) | ⚠️ Unaudited |
-| PerpsOracleAttested | operational_periphery | ethereum | [`0x5d8555...a65c0b`](./contracts/ethereum-1/0x5d8555f8c710798274a8c655b9a26a3465a65c0b/) | ⚠️ Unaudited |
 | PriceOracle | operational_periphery | ethereum | [`0x4cf26a...74b89d`](./contracts/ethereum-1/0x4cf26a7e680d5d86232f985b91c6cb9e0774b89d/) | ⚠️ Unaudited |
 | Swapper | adapter | ethereum | [`0x814e3b...ebf8cc`](./contracts/ethereum-1/0x814e3b8dfdc2376b59a5ab70e8784dcb3bebf8cc/) | ⚠️ Unaudited |
 | TimelockController | governance | ethereum | [`0x60d41d...526c01`](./contracts/ethereum-1/0x60d41d9708bbefd29000d1486c6406ef23526c01/) | ⚠️ Unaudited |
@@ -109,17 +109,17 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x6582c7...0c169c`](./contracts/ethereum-1/0x6582c770fc4167aa807c3846c73e6006e90c169c/) | AngstromVaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x174648...315fd4`](./contracts/ethereum-1/0x1746484ea5e11c75e009252c102c8c33e0315fd4/) | ControllerV1 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb3df86...8a00df`](./contracts/ethereum-1/0xb3df869572ac94bb1acf5e9ecbfae3afee8a00df/) | EventEmitter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4cf26a...74b89d`](./contracts/ethereum-1/0x4cf26a7e680d5d86232f985b91c6cb9e0774b89d/) | PriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x814e3b...ebf8cc`](./contracts/ethereum-1/0x814e3b8dfdc2376b59a5ab70e8784dcb3bebf8cc/) | Swapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x06d9f5...e06c79`](./contracts/ethereum-1/0x06d9f5e807eeca914482bbd8ed3f40c55ce06c79/) | VaultExtension | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
 | native | 10 |
-| upstream | 0 |
+| upstream | 2 |
 | standard_library | 1 |
-| needs_review | 2 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "liquidloans",
-  "generated_at": "2026-06-11T00:40:52.529Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
+  "generated_at": "2026-06-14T07:18:29.653Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-9bd7",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "liquidloans",
@@ -45,7 +45,7 @@
     "coverage_pct": 30,
     "total_audits": 4,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 3917338.83482,
+    "dl_tvl_usd": 2859995.07224,
     "tvl_usd": 3041629.6482,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -290,8 +290,8 @@
       "address": "0xa16770020925f504d9446adf218e91d56833c9af",
       "name": "ERC20Mock",
       "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1128,8 +1128,8 @@
   "origin_summary": {
     "native": 18,
     "upstream": 1,
-    "standard_library": 0,
-    "needs_review": 1
+    "standard_library": 1,
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {

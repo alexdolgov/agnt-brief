@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hera-finance",
-  "generated_at": "2026-06-10T23:50:21.932Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-14T06:02:19.699Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-39b4",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hera-finance",
@@ -22,26 +22,28 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 28,
-    "total_addresses": 28,
-    "unique_implementations": 28,
-    "total_deployments": 28,
+    "total_contracts": 37,
+    "total_addresses": 38,
+    "unique_implementations": 37,
+    "total_deployments": 38,
     "audited_contracts": 3,
-    "unaudited_contracts": 4,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 4,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 21,
-    "coverage_pct": 42.9,
+    "contracts_unverified": 26,
+    "coverage_pct": 27.3,
     "total_audits": 3,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 6505965.60112,
-    "tvl_usd": 6505965.60112,
+    "dl_tvl_usd": 6235328.78394,
+    "tvl_usd": 6235328.78394,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://staking.hera.finance",
     "chains": [
+      "arbitrum",
+      "ethereum",
       "metis"
     ],
     "tier1_coverage_pct": 0,
@@ -61,7 +63,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 28,
+    "unique_implementations": 37,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -70,6 +72,68 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xca0dfc4e1935ffa0019aa760db0564b8cdd96e6e",
+      "name": "GnosisSafeL2",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+      "impl_name": "GnosisSafeL2",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xca0dfc4e1935ffa0019aa760db0564b8cdd96e6e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xe089a4efa2da690f21a3ea682cb36dc4ac007995",
+      "name": "GnosisSafeProxy",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GnosisSafeProxy",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xe089a4efa2da690f21a3ea682cb36dc4ac007995",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 1088,
       "chain_name": "metis",
@@ -137,6 +201,46 @@
     {
       "chain_id": 1088,
       "chain_name": "metis",
+      "address": "0x0000000000924fb1969e719eded2fed54afb183a",
+      "name": "HeraAggregatorV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HeraAggregatorV2",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x0000000000924fb1969e719eded2fed54afb183a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x0000000000924fb1969e719eded2fed54afb183a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
       "address": "0xff2e95d887c426d724b3a873fe33d554a10f2fa5",
       "name": "HeraFeeOrganizer",
       "role": "unknown",
@@ -166,6 +270,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x000000fee322aaa0a5772e7f92de10180f9fab15",
+      "name": "HeraFeeSequencer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HeraFeeSequencer",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x000000fee322aaa0a5772e7f92de10180f9fab15",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1088,
@@ -291,6 +426,37 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1a404ca2f355141eb9ef1d5fe872bfc8511f19e1",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1a404ca2f355141eb9ef1d5fe872bfc8511f19e1",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
       "contamination_flag": null
     },
     {
@@ -447,6 +613,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x765fa67b25fc801f7802604f7326c215c3a973a0",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x765fa67b25fc801f7802604f7326c215c3a973a0",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 1088,
@@ -888,7 +1085,7 @@
       "address": "0xfd246613628fa1eb189adeb25a2011ff721d0695",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -919,7 +1116,7 @@
       "address": "0xfdc464d0e8ccee1bb906e740955706d2de895b63",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -943,6 +1140,99 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1bd717c5cdd133e1985628e1e194b0ed9c9047e7",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x1bd717c5cdd133e1985628e1e194b0ed9c9047e7",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x699127412ac7304f3897f410974677f747f2e9df",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x699127412ac7304f3897f410974677f747f2e9df",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xce3759244610fc69f95db143338c9ed0dc356fd0",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xce3759244610fc69f95db143338c9ed0dc356fd0",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -1030,7 +1320,7 @@
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 42.9,
+      "coverage_pct": 27.3,
       "latest_audit": "2022-10"
     }
   ],
@@ -1040,6 +1330,26 @@
       "chain_name": "metis",
       "address": "0xce3759244610fc69f95db143338c9ed0dc356fd0",
       "name": "HeraAggregator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x0000000000924fb1969e719eded2fed54afb183a",
+      "name": "HeraAggregatorV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x000000fee322aaa0a5772e7f92de10180f9fab15",
+      "name": "HeraFeeSequencer",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -1077,10 +1387,10 @@
     }
   ],
   "origin_summary": {
-    "native": 28,
+    "native": 30,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 0
+    "standard_library": 2,
+    "needs_review": 5
   },
   "scope_matching_notes": {
     "match_method_counts": {

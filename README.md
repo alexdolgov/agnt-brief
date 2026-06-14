@@ -773,7 +773,7 @@ Each project directory contains:
 | [helix](./helix/brief.md) | $1.48M | ethereum | 9 | 9/9 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [helix-finance](./helix-finance/brief.md) | $11.00M | ethereum | 9 | 9/9 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [henjin-dex](./henjin-dex/brief.md) | $1.24K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [hera-finance](./hera-finance/brief.md) | $6.51M | metis | 28 | 7/28 (25%) | 42.9% | 0.0% (-) | 3 | stale | ✅ active | - |
+| [hera-finance](./hera-finance/brief.md) | $6.24M | arbitrum, ethereum, metis | 37 | 11/37 (30%) | 27.3% | 0.0% (-) | 3 | stale | ✅ active | - |
 | [hiyield](./hiyield/brief.md) | $2.73M | avalanche, canto, ethereum | 4 | 0/4 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [hodltree](./hodltree/brief.md) | $1.84K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [holdstation](./holdstation/brief.md) | $19.73K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -1029,7 +1029,7 @@ Each project directory contains:
 | [openleverage](./openleverage/brief.md) | $88.94K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [opensea](./opensea/brief.md) | - | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [opensky-finance](./opensky-finance/brief.md) | $15.79K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
-| [opinion](./opinion/brief.md) | $7.32M | bsc, ethereum | 6 | 4/6 (67%) | 100.0% | 0.0% (-) | 4 | fresh | ⚠️ declining | - |
+| [opinion](./opinion/brief.md) | $5.77M | bsc, ethereum | 8 | 6/8 (75%) | 66.7% | 0.0% (-) | 4 | fresh | ⚠️ declining | - |
 | [orangex](./orangex/brief.md) | $33.70M | base, ethereum | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [orbiter-one](./orbiter-one/brief.md) | $77.01K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [orchai](./orchai/brief.md) | $307.48K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -1053,7 +1053,7 @@ Each project directory contains:
 | [pangea-swap](./pangea-swap/brief.md) | $6.40K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [pangolin](./pangolin/brief.md) | $3.77M | avalanche | 163 | 26/163 (16%) | 53.8% | 0.0% (-) | 9 | aging | ⚠️ declining | - |
 | [paradex](./paradex/brief.md) | $27.28M | ethereum | 5 | 2/5 (40%) | 50.0% | 0.0% (-) | 1 | aging | ⚠️ declining | - |
-| [paragonsdao](./paragonsdao/brief.md) | $6.36M | base | 2 | 2/2 (100%) | 50.0% | 0.0% (-) | 2 | aging | ✅ active | - |
+| [paragonsdao](./paragonsdao/brief.md) | $6.50M | base, ethereum | 6 | 6/6 (100%) | 16.7% | 0.0% (-) | 2 | aging | ❓ unknown | - |
 | [paryonusd](./paryonusd/brief.md) | $412.57K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [paxe-protocol](./paxe-protocol/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [pay-protocol](./pay-protocol/brief.md) | $1.42M | ethereum | 8 | 0/8 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-14T05:58:04.949Z_
+_Generated: 2026-06-14T06:06:52.781Z_
 _Projects: 1409_

@@ -5,11 +5,11 @@
 - Project: Hera Finance (`hera-finance`)
 - Website: [https://staking.hera.finance](https://staking.hera.finance)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T23:50:21.932Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
-- Chains: metis
-- Contract surface: 28 unique implementations (28 raw deployments)
-- DeFi Llama TVL: $6,505,965.60
+- Generated: 2026-06-14T06:02:19.699Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
+- Chains: arbitrum, ethereum, metis
+- Contract surface: 37 unique implementations (38 raw deployments)
+- DeFi Llama TVL: $6,235,328.78
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,12 +23,12 @@ All contracts are deployed by the same deployer cluster, indicating a unified in
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/7 (42.9%)
-- Verified + Unaudited implementations: 4
+- Verified implementations audited: 3/11 (27.3%)
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
-- Unverified implementations: 21
-- Unique implementations: 28
-- Raw deployments: 28
+- Unverified implementations: 26
+- Unique implementations: 37
+- Raw deployments: 38
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -40,7 +40,7 @@ All contracts are deployed by the same deployer cluster, indicating a unified in
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 3 | 42.9% | 2022-10 |
+| unknown | Tier 2 | 3 | 27.3% | 2022-10 |
 
 ## Contract Surface
 
@@ -52,11 +52,15 @@ All contracts are deployed by the same deployer cluster, indicating a unified in
 | HeraFeeOrganizer | unknown | metis | [`0xff2e95...0f2fa5`](./contracts/metis-1088/0xff2e95d887c426d724b3a873fe33d554a10f2fa5/) | ✅ Audited |
 | HeraSecurity | unknown | metis | [`0x6da631...b02225`](./contracts/metis-1088/0x6da6317e819d6a19c28f0a59291f85fb41b02225/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| GnosisSafeL2 | governance | arbitrum | [`0xca0dfc...d96e6e`](./contracts/arbitrum-42161/0xca0dfc4e1935ffa0019aa760db0564b8cdd96e6e/) | ⚠️ Unaudited |
+| GnosisSafeProxy | governance | metis | [`0xe089a4...007995`](./contracts/metis-1088/0xe089a4efa2da690f21a3ea682cb36dc4ac007995/) | ⚠️ Unaudited |
 | HeraAggregator | unknown | metis | [`0xce3759...356fd0`](./contracts/metis-1088/0xce3759244610fc69f95db143338c9ed0dc356fd0/) | ⚠️ Unaudited |
+| HeraAggregatorV2 | unknown | metis | 2 deployments: metis [`0x000000...fb183a`](./contracts/metis-1088/0x0000000000924fb1969e719eded2fed54afb183a/); arbitrum [`0x000000...fb183a`](./contracts/arbitrum-42161/0x0000000000924fb1969e719eded2fed54afb183a/) | ⚠️ Unaudited |
+| HeraFeeSequencer | unknown | metis | [`0x000000...9fab15`](./contracts/metis-1088/0x000000fee322aaa0a5772e7f92de10180f9fab15/) | ⚠️ Unaudited |
 | HeraPublicSale | unknown | metis | [`0x1bd717...9047e7`](./contracts/metis-1088/0x1bd717c5cdd133e1985628e1e194b0ed9c9047e7/) | ⚠️ Unaudited |
 | HeraPublicSaleV2 | unknown | metis | [`0x1a404c...1f19e1`](./contracts/metis-1088/0x1a404ca2f355141eb9ef1d5fe872bfc8511f19e1/) | ⚠️ Unaudited |
 | HeraToken | token | metis | [`0x6f0570...2c9dce`](./contracts/metis-1088/0x6f05709bc91bad933346f9e159f0d3fdbc2c9dce/) | ⚠️ Unaudited |
@@ -73,17 +77,19 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (21)
+### ❓ Unverified (26)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | `0x1a404c...1f19e1` | ❓ Unverified |
 | UnnamedContract | unknown | metis | `0x0f236b...7d8da7` | ❓ Unverified |
 | UnnamedContract | unknown | metis | `0x2117f1...083c06` | ❓ Unverified |
 | UnnamedContract | unknown | metis | `0x250896...7762d8` | ❓ Unverified |
 | UnnamedContract | unknown | metis | `0x2ec373...835c03` | ❓ Unverified |
 | UnnamedContract | unknown | metis | `0x748a89...87e3de` | ❓ Unverified |
+| UnnamedContract | unknown | metis | `0x765fa6...a973a0` | ❓ Unverified |
 | UnnamedContract | unknown | metis | `0x852d1f...d1f383` | ❓ Unverified |
 | UnnamedContract | unknown | metis | `0x863361...5ca041` | ❓ Unverified |
 | UnnamedContract | unknown | metis | `0x9abb86...57500e` | ❓ Unverified |
@@ -100,6 +106,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | metis | `0xddfbeb...b400ad` | ❓ Unverified |
 | UnnamedContract | unknown | metis | `0xfd2466...1d0695` | ❓ Unverified |
 | UnnamedContract | unknown | metis | `0xfdc464...895b63` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | `0x1bd717...9047e7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | `0x699127...f2e9df` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | `0xce3759...356fd0` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -116,6 +125,8 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | metis | [`0xce3759...356fd0`](./contracts/metis-1088/0xce3759244610fc69f95db143338c9ed0dc356fd0/) | HeraAggregator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0x000000...fb183a`](./contracts/metis-1088/0x0000000000924fb1969e719eded2fed54afb183a/) | HeraAggregatorV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0x000000...9fab15`](./contracts/metis-1088/0x000000fee322aaa0a5772e7f92de10180f9fab15/) | HeraFeeSequencer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x1bd717...9047e7`](./contracts/metis-1088/0x1bd717c5cdd133e1985628e1e194b0ed9c9047e7/) | HeraPublicSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x1a404c...1f19e1`](./contracts/metis-1088/0x1a404ca2f355141eb9ef1d5fe872bfc8511f19e1/) | HeraPublicSaleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x6f0570...2c9dce`](./contracts/metis-1088/0x6f05709bc91bad933346f9e159f0d3fdbc2c9dce/) | HeraToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -124,10 +135,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 28 |
+| native | 30 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 0 |
+| standard_library | 2 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 

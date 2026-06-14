@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "opinion",
-  "generated_at": "2026-06-11T01:37:09.909Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-14T06:06:16.456Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-39b4",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "opinion",
@@ -32,20 +32,20 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 6,
-    "total_addresses": 22,
-    "unique_implementations": 6,
-    "total_deployments": 22,
+    "total_contracts": 8,
+    "total_addresses": 24,
+    "unique_implementations": 8,
+    "total_deployments": 24,
     "audited_contracts": 4,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 4,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
-    "coverage_pct": 100,
+    "coverage_pct": 66.7,
     "total_audits": 5,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 7320963.87459,
+    "dl_tvl_usd": 5770543.48507,
     "tvl_usd": 142523237.16437164,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -53,7 +53,7 @@
       "ethereum": 135005578.47
     },
     "asd_usd": null,
-    "website_url": "https://app.opinion.trade?code=hV0KVj",
+    "website_url": "https://app.opinion.trade",
     "chains": [
       "bsc",
       "ethereum"
@@ -75,7 +75,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 6,
+    "unique_implementations": 8,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -90,7 +90,7 @@
       "address": "0x7977bf3e7e0c954d12cdca3e013adaf57e0b06e0",
       "name": "OpinionToken",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "OPINION",
       "tvl_usd": 135005578.46575826,
@@ -158,7 +158,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 56,
@@ -263,7 +263,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 56,
@@ -359,7 +359,69 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x998739bfdaadde7c933b942a68053933098f9eda",
+      "name": "MultiSend",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "safe-global",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MultiSend",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x998739bfdaadde7c933b942a68053933098f9eda",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xe76e763c5e57823ee5c7ed8e8d86d4e4938cbb4b",
+      "name": "SafeL2",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "safe-global",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x29fcb43b46531bca003ddc8fcb67ffe91900c762",
+      "impl_name": "SafeL2",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe76e763c5e57823ee5c7ed8e8d86d4e4938cbb4b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 56,
@@ -587,30 +649,30 @@
       "auditor": "ScaleBit",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 50,
+      "coverage_pct": 33.3,
       "latest_audit": "2025-10"
     },
     {
       "auditor": "Pashov Audit Group",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 25,
+      "coverage_pct": 16.7,
       "latest_audit": "2026-01"
     },
     {
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 25,
+      "coverage_pct": 16.7,
       "latest_audit": "2024-11"
     }
   ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 2,
+    "native": 3,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 4
+    "standard_library": 2,
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {

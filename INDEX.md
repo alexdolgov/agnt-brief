@@ -521,7 +521,7 @@
 | [hemi](./hemi/) | $49.6K | 2.7% | $49.6K | unknown | 5 | 47 | 2026-05-25 |
 | [hemibtc](./hemibtc/) | $46.2K | 0.0% | $46.2K | active | 5 | 46 | 2026-06-12 |
 | [henjin-dex](./henjin-dex/) | $1.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [hera-finance](./hera-finance/) | $6.5M | 42.9% | ? | active | 3 | 28 | 2026-06-10 |
+| [hera-finance](./hera-finance/) | $6.2M | 27.3% | ? | active | 3 | 37 | 2026-06-14 |
 | [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-06-10 |
 | [hodltree](./hodltree/) | $1.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [holdstation](./holdstation/) | $19.7K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
@@ -530,7 +530,7 @@
 | [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 0 | 19 | 2026-06-12 |
 | [hopr](./hopr/) | $1.4M | 4.3% | ? | active | 2 | 81 | 2026-06-11 |
 | [horizondex](./horizondex/) | $60.3K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
-| [hotcoin](./hotcoin/) | $5.6M | 0.0% | ? | active | 0 | 1 | 2026-06-13 |
+| [hotcoin](./hotcoin/) | $5.6M | 0.0% | ? | active | 0 | 1 | 2026-06-14 |
 | [hourglass](./hourglass/) | $139.9K | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [houses-of-rome](./houses-of-rome/) | $0.0 | 0.0% | ? | dead | 0 | 51 | 2026-06-10 |
 | [hskhodlium](./hskhodlium/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -801,7 +801,7 @@
 | [neo-tokyo](./neo-tokyo/) | $26.8K | 0.0% | $26.8K | unknown | 0 | 87 | 2026-06-13 |
 | [neony-exchange](./neony-exchange/) | $412.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [neopin](./neopin/) | $40.2M | 0.0% | ? | active | 3 | 104 | 2026-06-12 |
-| [neptune-finance](./neptune-finance/) | $5.9M | 0.0% | ? | active | 3 | 2 | 2026-06-13 |
+| [neptune-finance](./neptune-finance/) | $5.9M | 0.0% | ? | active | 3 | 2 | 2026-06-14 |
 | [nerona](./nerona/) | $327.0M | 0.0% | $327.0M | declining | 0 | 4 | 2026-06-13 |
 | [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | declining | 0 | 66 | 2026-06-13 |
 | [nest-credit](./nest-credit/) | $4.3M | 54.5% | $693.4 | active | 16 | 20 | 2026-06-14 |
@@ -859,7 +859,7 @@
 | [openleverage](./openleverage/) | $88.9K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [opensea](./opensea/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [opensky-finance](./opensky-finance/) | $15.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-06-11 |
+| [opinion](./opinion/) | $142.5M | 66.7% | ? | declining | 5 | 8 | 2026-06-14 |
 | [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | declining | 0 | 105 | 2026-06-13 |
 | [orangex](./orangex/) | $33.7M | 0.0% | ? | active | 0 | 3 | 2026-06-12 |
 | [orbit-bridge](./orbit-bridge/) | $829.9K | 0.0% | $829.9K | active | 1 | 24 | 2026-06-12 |
@@ -887,7 +887,7 @@
 | [pangea-swap](./pangea-swap/) | $6.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pangolin](./pangolin/) | $3.8M | 53.8% | ? | declining | 12 | 163 | 2026-06-11 |
 | [paradex](./paradex/) | $27.3M | 50.0% | ? | declining | 5 | 5 | 2026-06-12 |
-| [paragonsdao](./paragonsdao/) | $6.4M | 50.0% | ? | active | 7 | 2 | 2026-06-11 |
+| [paragonsdao](./paragonsdao/) | $6.5M | 16.7% | ? | unknown | 8 | 6 | 2026-06-14 |
 | [parallel-protocol](./parallel-protocol/) | $3.6M | 3.8% | $3.0M | active | 5 | 38 | 2026-06-11 |
 | [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-06-13 |
 | [paryonusd](./paryonusd/) | $412.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

@@ -5,13 +5,13 @@
 ## Project Overview
 
 - Project: OPINION (`opinion`)
-- Website: [https://app.opinion.trade?code=hV0KVj](https://app.opinion.trade?code=hV0KVj)
+- Website: [https://app.opinion.trade](https://app.opinion.trade)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T01:37:09.909Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-14T06:06:16.456Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
 - Chains: bsc, ethereum
-- Contract surface: 6 unique implementations (22 raw deployments)
-- DeFi Llama TVL: $7,320,963.87
+- Contract surface: 8 unique implementations (24 raw deployments)
+- DeFi Llama TVL: $5,770,543.49
 - On-chain TVL (included contracts): $142,523,237.16
 - TVL by chain: Ethereum $135,005,578.47 | Bsc $7,517,658.70
 
@@ -25,12 +25,12 @@ The OpinionToken likely serves as the native utility or governance token, while 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 4/4 (100.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 4/6 (66.7%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 6
-- Raw deployments: 22
+- Unique implementations: 8
+- Raw deployments: 24
 - Audits discovered: 5
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): n/a
@@ -43,9 +43,9 @@ The OpinionToken likely serves as the native utility or governance token, while 
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ScaleBit | Tier 2 | 2 | 50.0% | 2025-10 |
-| Pashov Audit Group | Tier 2 | 1 | 25.0% | 2026-01 |
-| unknown | Tier 2 | 1 | 25.0% | 2024-11 |
+| ScaleBit | Tier 2 | 2 | 33.3% | 2025-10 |
+| Pashov Audit Group | Tier 2 | 1 | 16.7% | 2026-01 |
+| unknown | Tier 2 | 1 | 16.7% | 2024-11 |
 
 ## Contract Surface
 
@@ -58,9 +58,12 @@ The OpinionToken likely serves as the native utility or governance token, while 
 | CTFExchangeFeeManager | governance | bsc | 9 deployments: bsc [`0x1b4922...b25236`](./contracts/bsc-56/0x1b4922496994f2840e2886cf600c70eb66b25236/); bsc `0x2b1493...70068c`; bsc `0x32b770...428293`; bsc `0x33d2c9...86afa4`; bsc `0x3bb81f...c17cbc`; bsc `0x3c13ce...ab25a8`; bsc `0x6ae1a7...c9e695`; bsc `0xc9063d...5d7c36`; bsc `0xe9ced7...81ca85` | ✅ Audited |
 | CTFExecutionEngine | unknown | bsc | 8 deployments: bsc [`0x5f4534...7a7246`](./contracts/bsc-56/0x5f45344126d6488025b0b84a3a8189f2487a7246/); bsc `0x76527e...2b6b12`; bsc `0x7aeef4...223d1d`; bsc `0x932a47...7398d3`; bsc `0x95665d...e20585`; bsc `0xa26fbc...9cf9b0`; bsc `0xd6e1c9...3cf2c3`; bsc `0xe682cc...24789a` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (2)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| MultiSend | unknown | bsc | [`0x998739...8f9eda`](./contracts/bsc-56/0x998739bfdaadde7c933b942a68053933098f9eda/) | ⚠️ Unaudited |
+| SafeL2 | unknown | bsc | [`0xe76e76...8cbb4b`](./contracts/bsc-56/0xe76e763c5e57823ee5c7ed8e8d86d4e4938cbb4b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,10 +106,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 3 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 4 |
+| standard_library | 2 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

@@ -5,8 +5,8 @@
 - Project: Neptune Finance (`neptune-finance`)
 - Website: [https://nept.finance/](https://nept.finance/)
 - Lifecycle: active (Tier 0, 84.1% below peak)
-- Generated: 2026-06-13T02:47:52.439Z
-- Pipeline run: v2-pipeline-2026-06-13-546062-d5d2
+- Generated: 2026-06-14T06:01:23.022Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $5,929,052.27

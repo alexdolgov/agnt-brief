@@ -7,10 +7,10 @@
 - Project: Defi Kingdoms (`defi-kingdoms`)
 - Website: [https://www.defikingdoms.com](https://www.defikingdoms.com)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-13T00:37:51.676Z
-- Pipeline run: v2-pipeline-2026-06-13-546062-e35d
-- Chains: harmony, klaytn
-- Contract surface: 5 unique implementations (5 raw deployments)
+- Generated: 2026-06-14T05:53:19.544Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
+- Chains: harmony, klaytn, metis
+- Contract surface: 8 unique implementations (8 raw deployments)
 - DeFi Llama TVL: $7,689,270.13
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -25,12 +25,12 @@ All contracts belong to a single product family and likely share infrastructure 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 5
-- Unique implementations: 5
-- Raw deployments: 5
+- Unverified implementations: 7
+- Unique implementations: 8
+- Raw deployments: 8
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -49,9 +49,11 @@ All contracts belong to a single product family and likely share infrastructure 
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| TransparentUpgradeableProxy | proxy | metis | [`0xa0d026...c5dd92`](./contracts/metis-1088/0xa0d026484859b84709749047a0118e3932c5dd92/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -65,12 +67,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (5)
+### ❓ Unverified (7)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| UnnamedContract | unknown | metis | `0x4cb622...c35d14` | ❓ Unverified |
+| UnnamedContract | unknown | metis | `0xc76816...65b53b` | ❓ Unverified |
 | UnnamedContract | unknown | klaytn | `0x30c103...527b43` | ❓ Unverified |
 | UnnamedContract | unknown | klaytn | `0x36fae7...98db2b` | ❓ Unverified |
 | UnnamedContract | unknown | klaytn | `0xaa8548...463ea6` | ❓ Unverified |
@@ -95,8 +99,8 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 5 |
+| standard_library | 1 |
+| needs_review | 7 |
 
 ## Scope Matching Notes
 

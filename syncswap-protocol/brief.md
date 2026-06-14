@@ -5,11 +5,11 @@
 - Project: SyncSwap Protocol (`syncswap-protocol`)
 - Website: [https://syncswap.xyz/](https://syncswap.xyz/)
 - Lifecycle: active (Tier 0, 89.4% below peak)
-- Generated: 2026-06-11T03:25:19.339Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
+- Generated: 2026-06-14T05:57:25.250Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
 - Chains: linea, scroll, zksync-era
-- Contract surface: 157 unique implementations (194 raw deployments)
-- DeFi Llama TVL: $9,687,624.00
+- Contract surface: 162 unique implementations (202 raw deployments)
+- DeFi Llama TVL: $8,243,891.00
 - On-chain TVL (included contracts): $453,683.50
 - TVL by chain: Linea $453,683.50
 
@@ -23,25 +23,25 @@ The SyncSwap family contains the core vault and pool master contracts that manag
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 7/30 (23.3%)
-- Verified + Unaudited implementations: 23
+- Verified implementations audited: 7/32 (21.9%)
+- Verified + Unaudited implementations: 25
 - Verified by bytecode match: 0
-- Unverified implementations: 127
-- Unique implementations: 157
-- Raw deployments: 194
-- Audits discovered: 8
+- Unverified implementations: 130
+- Unique implementations: 162
+- Raw deployments: 202
+- Audits discovered: 9
 - Scoreable audits (matched contracts): 3
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $0.00
 - Latest audit: 2023-07 (stale)
-- Staleness: 0 fresh, 0 aging, 8 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 8 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| MetaScan | Tier 2 | 7 | 23.3% | 2023-04 |
-| Zellic | Tier 2 | 1 | 3.3% | 2023-05 |
+| MetaScan | Tier 2 | 7 | 21.9% | 2023-04 |
+| Zellic | Tier 2 | 1 | 3.1% | 2023-05 |
 
 ## Contract Surface
 
@@ -57,16 +57,17 @@ The SyncSwap family contains the core vault and pool master contracts that manag
 | SyncSwapPoolMaster | core_logic | linea | 8 deployments: linea [`0x13afc8...10aad0`](./contracts/linea-59144/0x13afc84eed9ab532eab73d9ff5d3df4bf610aad0/); linea `0x16743b...630cc0`; linea `0x5725d2...630c2b`; linea `0x608cb7...64b4a3`; linea `0x619499...0e70aa`; linea `0xa56e84...c85d29`; linea `0xbc632b...5963db`; linea `0xee8790...55b3a0` | ✅ Audited |
 | SyncSwapRouter | adapter | linea | [`0x80e382...bd5c69`](./contracts/linea-59144/0x80e38291e06339d10aab483c65695d004dbd5c69/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (23)
+### ⚠️ Verified + Unaudited (25)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| SyncSwapClassicPool | core_logic | linea | [`0x5ec5b1...7bb308`](./contracts/linea-59144/0x5ec5b1e9b1bd5198343abb6e55fb695d2f7bb308/) | ⚠️ Unaudited |
 | CryptoView_ | unknown | linea | [`0x1f74b4...153a68`](./contracts/linea-59144/0x1f74b44f004ef44c86ac1dd3b5cd662b12153a68/) | ⚠️ Unaudited |
 | FeeManagerV3 | governance | linea | 5 deployments: linea [`0x019f6f...dc5785`](./contracts/linea-59144/0x019f6f1d08d9b76969132aa6e29cb6a5cadc5785/); linea `0x2a1417...b20fe6`; linea `0x4100b8...5d8e17`; linea `0x49d982...e110a2`; linea `0xa4bc20...1bd8a1` | ⚠️ Unaudited |
 | FeeRegistry | registry | linea | [`0x8cdf4e...b3ec60`](./contracts/linea-59144/0x8cdf4ec0d5ee197b00467a720660c44480b3ec60/) | ⚠️ Unaudited |
 | FeeRegistryV3 | registry | linea | [`0x396a9a...c3a02b`](./contracts/linea-59144/0x396a9aa50d206f65d3fc0493dafb800eaac3a02b/) | ⚠️ Unaudited |
-| NonfungiblePositionManager | governance | linea | [`0xcc00f9...9e4d75`](./contracts/linea-59144/0xcc00f934a7541868b9a09f98d7928f727b9e4d75/) | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptorLinea | token | linea | 2 deployments: linea [`0xe35730...353431`](./contracts/linea-59144/0xe357304dc2edd2f9affbc64d69e7e278ef353431/); linea `0xf96d83...f76e41` | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | linea | 2 deployments: linea [`0x19bbe6...d9a09d`](./contracts/linea-59144/0x19bbe6bb16d9ff3f8c2fbfc5dfa5805dedd9a09d/); linea `0xcc00f9...9e4d75` | ⚠️ Unaudited |
+| NonfungibleTokenPositionDescriptorLinea | token | linea | 4 deployments: linea [`0x575443...fc6783`](./contracts/linea-59144/0x575443cb6b368842f77f6d2054259a4d16fc6783/); linea `0x6c3930...0c2994`; linea `0xe35730...353431`; linea `0xf96d83...f76e41` | ⚠️ Unaudited |
 | QuoterV2 | periphery | linea | 6 deployments: linea [`0x0d23e8...c1e044`](./contracts/linea-59144/0x0d23e88093a7f88aa2cd62b377e2f58db4c1e044/); linea `0x1e662e...6c0b10`; linea `0x20e82b...66cdf9`; linea `0x78ebfe...04ba5a`; linea `0xeb0fab...3057a7`; linea `0xee424e...efa57f` | ⚠️ Unaudited |
 | SwapLib | unknown | linea | [`0x7f469d...e2d571`](./contracts/linea-59144/0x7f469dd8753f29b6d7690148cbad6a8dd3e2d571/) | ⚠️ Unaudited |
 | SwapRouter02 | adapter | linea | [`0xa328e9...776eb4`](./contracts/linea-59144/0xa328e968906f5c5922accc197d6dcfe2c2776eb4/) | ⚠️ Unaudited |
@@ -81,6 +82,7 @@ The SyncSwap family contains the core vault and pool master contracts that manag
 | SyncSwapRouterV3 | adapter | linea | 6 deployments: linea [`0x0b64ba...b07c55`](./contracts/linea-59144/0x0b64ba230d4c9d133aa7a52ceff1620178b07c55/); linea `0x363277...61fd9d`; linea `0x41706c...8c1cf7`; linea `0x60210a...c059e5`; linea `0x62f9d1...16f89f`; linea `0x729680...4755f0` | ⚠️ Unaudited |
 | SyncSwapStablePoolDelegatedFactory | registry | linea | 4 deployments: linea [`0x024a09...18ad86`](./contracts/linea-59144/0x024a096bab43587d24004c95c3e20fcb7518ad86/); linea `0x576374...10f9a9`; linea `0x61abf7...8e9101`; scroll `0xa2aca6...f38d00` | ⚠️ Unaudited |
 | TickLens | periphery | linea | [`0xb86284...3b4604`](./contracts/linea-59144/0xb86284160348d0727e7fc6b131812082243b4604/) | ⚠️ Unaudited |
+| UniversalRouter | adapter | linea | [`0x07507a...241c91`](./contracts/linea-59144/0x07507a719e7d040ebcbcf54715d7ce7ce5241c91/) | ⚠️ Unaudited |
 | V3Migrator | periphery | linea | [`0xa8b49c...707c34`](./contracts/linea-59144/0xa8b49c4cbf805f3252ddbf4de465c34986707c34/) | ⚠️ Unaudited |
 | WETH9 | token | linea | [`0xe5d7c2...5cf34f`](./contracts/linea-59144/0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f/) | ⚠️ Unaudited |
 | WrappedEther | unknown | scroll | [`0x530000...000004`](./contracts/scroll-534352/0x5300000000000000000000000000000000000004/) | ⚠️ Unaudited |
@@ -97,7 +99,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (127)
+### ❓ Unverified (130)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -105,6 +107,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|
 | UnnamedContract | unknown | zksync-era | `0x075487...0f327d` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x0a34fb...906193` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | `0x0e595b...ab48a4` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x1b887a...3a084c` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x1fc09a...0e3791` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x20b28b...b90c5d` | ❓ Unverified |
@@ -118,6 +121,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | zksync-era | `0x621425...f8d091` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x63ad09...906ebb` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x7581a8...946502` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | `0x80115c...47c05c` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x812515...5c317f` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x877b04...6991e9` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x9b5def...26b059` | ❓ Unverified |
@@ -130,6 +134,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | zksync-era | `0xf2dad8...aca7cb` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0xfd43b4...12811c` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0xfdfe03...5783d3` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | `0xffa499...42302b` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0x01ca20...756f3d` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0x01d5e4...a00305` | ❓ Unverified |
 | UnnamedContract | unknown | linea | `0x08d43e...5d4721` | ❓ Unverified |
@@ -243,6 +248,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [MetaScan_Security_Prover_Report_core-contracts_202303161916.pdf](https://github.com/syncswap/reports/blob/main/MetaScan_Security_Prover_Report_core-contracts_202303161916.pdf) | MetaScan | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
 | [MetaScan_Open_Source_Analyzer_Report_core-contracts_202303161916.pdf](https://github.com/syncswap/reports/blob/main/MetaScan_Open_Source_Analyzer_Report_core-contracts_202303161916.pdf) | MetaScan | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
 | [202304231022.pdf](https://github.com/syncswap/reports/blob/main/202304231022.pdf) | Unknown | Audit | 2023-04 | stale | Direct | n/a | 0 | n/a |
+| [{% embed url="<>" %}](https://github.com/syncswap/reports) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -250,12 +256,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| linea | [`0x5ec5b1...7bb308`](./contracts/linea-59144/0x5ec5b1e9b1bd5198343abb6e55fb695d2f7bb308/) | SyncSwapClassicPool | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | linea | [`0x1f74b4...153a68`](./contracts/linea-59144/0x1f74b44f004ef44c86ac1dd3b5cd662b12153a68/) | CryptoView_ | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | linea | [`0x019f6f...dc5785`](./contracts/linea-59144/0x019f6f1d08d9b76969132aa6e29cb6a5cadc5785/) | FeeManagerV3 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | linea | [`0x8cdf4e...b3ec60`](./contracts/linea-59144/0x8cdf4ec0d5ee197b00467a720660c44480b3ec60/) | FeeRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | linea | [`0x396a9a...c3a02b`](./contracts/linea-59144/0x396a9aa50d206f65d3fc0493dafb800eaac3a02b/) | FeeRegistryV3 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0xcc00f9...9e4d75`](./contracts/linea-59144/0xcc00f934a7541868b9a09f98d7928f727b9e4d75/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0xe35730...353431`](./contracts/linea-59144/0xe357304dc2edd2f9affbc64d69e7e278ef353431/) | NonfungibleTokenPositionDescriptorLinea | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x19bbe6...d9a09d`](./contracts/linea-59144/0x19bbe6bb16d9ff3f8c2fbfc5dfa5805dedd9a09d/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x575443...fc6783`](./contracts/linea-59144/0x575443cb6b368842f77f6d2054259a4d16fc6783/) | NonfungibleTokenPositionDescriptorLinea | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x0d23e8...c1e044`](./contracts/linea-59144/0x0d23e88093a7f88aa2cd62b377e2f58db4c1e044/) | QuoterV2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | linea | [`0x7f469d...e2d571`](./contracts/linea-59144/0x7f469dd8753f29b6d7690148cbad6a8dd3e2d571/) | SwapLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | linea | [`0xa328e9...776eb4`](./contracts/linea-59144/0xa328e968906f5c5922accc197d6dcfe2c2776eb4/) | SwapRouter02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | scroll | [`0x76f549...8fb54c`](./contracts/scroll-534352/0x76f549af692efa64952d02c075226df9878fb54c/) | SyncSwapClassicPoolDelegatedFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -275,16 +283,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 107 |
-| upstream | 0 |
-| standard_library | 3 |
-| needs_review | 47 |
+| native | 114 |
+| upstream | 1 |
+| standard_library | 19 |
+| needs_review | 28 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 6
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=3
 - Match method counts: extraction_exact=33
@@ -296,5 +304,6 @@ Zero-match audit list:
 - [2076] MetaScan_Security_Prover_Report_core-contracts_202303161916.pdf
 - [2077] MetaScan_Open_Source_Analyzer_Report_core-contracts_202303161916.pdf
 - [2078] 202304231022.pdf
+- [14423] {% embed url="<>" %}
 
 Fork inheritance lineage and inherited audits are included when available.

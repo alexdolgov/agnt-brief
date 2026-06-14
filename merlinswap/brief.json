@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "merlinswap",
-  "generated_at": "2026-06-13T01:40:14.560Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-d5d2",
+  "generated_at": "2026-06-14T05:48:50.452Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-39b4",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "merlinswap",

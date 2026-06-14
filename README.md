@@ -374,6 +374,7 @@ Each project directory contains:
 | [swamp-finance](./swamp-finance/brief.md) | $1.20M | bsc | 11 | 7/11 (64%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $0.09 |
 | [virtuals-protocol](./virtuals-protocol/brief.md) | $27.33M | base | 65 | 57/65 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $0.04 |
 | [kinza-finance](./kinza-finance/brief.md) | $7.78M | 4 | 154 | 50/154 (32%) | 2.0% | 0.0% (-) | 1 | stale | ⚠️ declining | $0.01 |
+| [syncswap-protocol](./syncswap-protocol/brief.md) | $8.24M | linea, scroll, zksync-era | 162 | 32/162 (20%) | 21.9% | 0.0% (-) | 3 | stale | ✅ active | $0.00 |
 | [tokenworks](./tokenworks/brief.md) | $2.14M | ethereum | 60 | 33/60 (55%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $0.00 |
 | [charm-finance](./charm-finance/brief.md) | $2.34M | 6 | 10 | 6/10 (60%) | 50.0% | 50.0% (Code4rena, Spearbit) | 4 | aging | ⚠️ declining | $0.00 |
 | [snuggle](./snuggle/brief.md) | $1.00M | arbitrum, base | 88 | 51/88 (58%) | 23.5% | 0.0% (-) | 1 | fresh | ✅ active | $0.00 |
@@ -608,7 +609,7 @@ Each project directory contains:
 | [ddex](./ddex/brief.md) | $526.43K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [decibel](./decibel/brief.md) | $41.88M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [deepbook](./deepbook/brief.md) | $12.91M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [defi-kingdoms](./defi-kingdoms/brief.md) | $7.69M | harmony, klaytn | 5 | 0/5 (0%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
+| [defi-kingdoms](./defi-kingdoms/brief.md) | $7.69M | harmony, klaytn, metis | 8 | 1/8 (13%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [defi-swap](./defi-swap/brief.md) | $870.25K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [defichain-dex](./defichain-dex/brief.md) | $1.17M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [defiplaza](./defiplaza/brief.md) | $126.31K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -823,7 +824,7 @@ Each project directory contains:
 | [jiko](./jiko/brief.md) | $116.29K | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [jito](./jito/brief.md) | $642.52M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [jpg-store](./jpg-store/brief.md) | $130.04K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [juicebox](./juicebox/brief.md) | $8.63M | 8 | 77 | 68/77 (88%) | 5.9% | 0.0% (-) | 1 | stale | ✅ active | - |
+| [juicebox](./juicebox/brief.md) | $8.63M | 8 | 77 | 68/77 (88%) | 19.1% | 16.2% (Code4rena) | 6 | stale | ✅ active | - |
 | [justlend](./justlend/brief.md) | $3321.01M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [k2](./k2/brief.md) | $4.66M | ethereum | 30 | 21/30 (70%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [kafe-finance](./kafe-finance/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -1274,7 +1275,6 @@ Each project directory contains:
 | [swirl](./swirl/brief.md) | $4.41M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [symmetry-trade](./symmetry-trade/brief.md) | $7.33K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [synatra](./synatra/brief.md) | $2.42M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
-| [syncswap-protocol](./syncswap-protocol/brief.md) | $9.69M | linea, scroll, zksync-era | 157 | 30/157 (19%) | 23.3% | 0.0% (-) | 3 | stale | ✅ active | - |
 | [syncyield](./syncyield/brief.md) | $0.01 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [synthswap](./synthswap/brief.md) | $16.72K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [t2t2](./t2t2/brief.md) | $7.88K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-14T05:47:05.537Z_
+_Generated: 2026-06-14T05:58:04.949Z_
 _Projects: 1409_

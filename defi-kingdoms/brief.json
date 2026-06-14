@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "defi-kingdoms",
-  "generated_at": "2026-06-13T00:37:51.676Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-546062-e35d",
+  "generated_at": "2026-06-14T05:53:19.544Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-39b4",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "defi-kingdoms",
@@ -32,16 +32,16 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 5,
-    "unique_implementations": 5,
-    "total_deployments": 5,
+    "total_contracts": 8,
+    "total_addresses": 8,
+    "unique_implementations": 8,
+    "total_deployments": 8,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 5,
+    "contracts_unverified": 7,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
@@ -53,7 +53,8 @@
     "website_url": "https://www.defikingdoms.com",
     "chains": [
       "harmony",
-      "klaytn"
+      "klaytn",
+      "metis"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
@@ -72,7 +73,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
+    "unique_implementations": 8,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -81,6 +82,99 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xa0d026484859b84709749047a0118e3932c5dd92",
+      "name": "TransparentUpgradeableProxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TransparentUpgradeableProxy",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xa0d026484859b84709749047a0118e3932c5dd92",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x4cb622c886c89c0472c0056a7c4c929c98c35d14",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x4cb622c886c89c0472c0056a7c4c929c98c35d14",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xc7681698b14a2381d9f1ed69fc3d27f33965b53b",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xc7681698b14a2381d9f1ed69fc3d27f33965b53b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
     {
       "chain_id": 8217,
       "chain_name": "klaytn",
@@ -265,8 +359,8 @@
   "origin_summary": {
     "native": 0,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 5
+    "standard_library": 1,
+    "needs_review": 7
   },
   "scope_matching_notes": {
     "match_method_counts": {},

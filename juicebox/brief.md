@@ -5,8 +5,8 @@
 - Project: Juicebox (`juicebox`)
 - Website: [https://juicebox.money/](https://juicebox.money/)
 - Lifecycle: active (Tier 0, 57.8% below peak)
-- Generated: 2026-06-11T11:30:50.643Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
+- Generated: 2026-06-14T05:54:59.284Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
 - Chains: arbitrum, base, chain-11155111, chain-11155420, chain-421614, chain-84532, ethereum, optimism
 - Contract surface: 77 unique implementations (236 raw deployments)
 - DeFi Llama TVL: $8,630,201.00
@@ -23,37 +23,49 @@ The Juicebox Core family provides shared infrastructure (controller, tokens, rul
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 4/68 (5.9%)
-- Verified + Unaudited implementations: 64
+- Verified implementations audited: 13/68 (19.1%)
+- Verified + Unaudited implementations: 55
 - Verified by bytecode match: 0
 - Unverified implementations: 9
 - Unique implementations: 77
 - Raw deployments: 236
 - Audits discovered: 10
-- Scoreable audits (matched contracts): 1
+- Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-05 (stale)
-- Staleness: 0 fresh, 0 aging, 9 stale, 1 unknown
-- Tier 1 coverage: No Tier 1 coverage
+- Staleness: 0 fresh, 0 aging, 10 stale, 0 unknown
+- Tier 1 coverage: 16.2% (Code4rena)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
+| Code4rena | Tier 1 | 11 | 16.2% | 2023-05 |
+| CertiK | Tier 2 | 6 | 8.8% | 2022-03 |
 | unknown | Tier 2 | 4 | 5.9% | 2023-01 |
+| PeckShield | Tier 2 | 3 | 4.4% | 2022-04 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (4)
+### ✅ Verified + Audited (13)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| JB721GlobalGovernance | unknown | ethereum | [`0x50cd1e...fe6f80`](./contracts/ethereum-1/0x50cd1e33f818d402a9fd406b5b3fbc88f1fe6f80/) | ✅ Audited |
+| JB721TieredGovernance | unknown | ethereum | [`0xf27aaa...a4209f`](./contracts/ethereum-1/0xf27aaa1240a09f2a995542e6bd38b52125a4209f/) | ✅ Audited |
+| JBChainlinkV3PriceFeed | operational_periphery | ethereum | [`0x6ed8ee...28bba4`](./contracts/ethereum-1/0x6ed8eedc0689bd6a8c7168301897a0113c28bba4/) | ✅ Audited |
 | JBController | governance | ethereum | 8 deployments: ethereum [`0x27da30...f7668a`](./contracts/ethereum-1/0x27da30646502e2f642be5281322ae8c394f7668a/); ethereum `0xf3cc99...9987e1`; optimism [`0x27da30...f7668a`](./contracts/optimism-10/0x27da30646502e2f642be5281322ae8c394f7668a/); optimism `0xf3cc99...9987e1`; base [`0x27da30...f7668a`](./contracts/base-8453/0x27da30646502e2f642be5281322ae8c394f7668a/); base `0xf3cc99...9987e1`; arbitrum [`0x27da30...f7668a`](./contracts/arbitrum-42161/0x27da30646502e2f642be5281322ae8c394f7668a/); arbitrum `0xf3cc99...9987e1` | ✅ Audited |
 | JBDirectory | unknown | ethereum | 5 deployments: ethereum [`0x0061e5...651dcf`](./contracts/ethereum-1/0x0061e516886a0540f63157f112c0588ee0651dcf/); ethereum `0xcc8f7a...79ac9c`; optimism [`0x0061e5...651dcf`](./contracts/optimism-10/0x0061e516886a0540f63157f112c0588ee0651dcf/); base [`0x0061e5...651dcf`](./contracts/base-8453/0x0061e516886a0540f63157f112c0588ee0651dcf/); arbitrum [`0x0061e5...651dcf`](./contracts/arbitrum-42161/0x0061e516886a0540f63157f112c0588ee0651dcf/) | ✅ Audited |
 | JBETHPaymentTerminal | unknown | ethereum | 2 deployments: ethereum [`0x594cb2...64ec63`](./contracts/ethereum-1/0x594cb208b5bb48db1bcbc9354d1694998864ec63/); ethereum `0x7ae63f...3b8397` | ✅ Audited |
+| JBPrices | operational_periphery | ethereum | 4 deployments: ethereum [`0x9b90e5...e614c4`](./contracts/ethereum-1/0x9b90e507cf6b7eb681a506b111f6f50245e614c4/); optimism [`0x9b90e5...e614c4`](./contracts/optimism-10/0x9b90e507cf6b7eb681a506b111f6f50245e614c4/); base [`0x9b90e5...e614c4`](./contracts/base-8453/0x9b90e507cf6b7eb681a506b111f6f50245e614c4/); arbitrum [`0x9b90e5...e614c4`](./contracts/arbitrum-42161/0x9b90e507cf6b7eb681a506b111f6f50245e614c4/) | ✅ Audited |
 | JBProjects | unknown | ethereum | 4 deployments: ethereum [`0x885f70...c8c1d4`](./contracts/ethereum-1/0x885f707efa18d2cb12f05a3a8eba6b4b26c8c1d4/); optimism [`0x885f70...c8c1d4`](./contracts/optimism-10/0x885f707efa18d2cb12f05a3a8eba6b4b26c8c1d4/); base [`0x885f70...c8c1d4`](./contracts/base-8453/0x885f707efa18d2cb12f05a3a8eba6b4b26c8c1d4/); arbitrum [`0x885f70...c8c1d4`](./contracts/arbitrum-42161/0x885f707efa18d2cb12f05a3a8eba6b4b26c8c1d4/) | ✅ Audited |
+| JBTiered721Delegate | unknown | ethereum | 2 deployments: ethereum [`0x2b9f2f...a99333`](./contracts/ethereum-1/0x2b9f2f30f722dd4917bd877d976adc4966a99333/); ethereum `0xb41f6c...ce436c` | ✅ Audited |
+| JBTiered721DelegateDeployer | unknown | ethereum | 2 deployments: ethereum [`0x55ff1d...95fefc`](./contracts/ethereum-1/0x55ff1d8093166c1ff9664efd613d8c543b95fefc/); ethereum `0x5c9f2f...b6353b` | ✅ Audited |
+| JBTiered721DelegateProjectDeployer | unknown | ethereum | 2 deployments: ethereum [`0xba6dc6...4ea056`](./contracts/ethereum-1/0xba6dc6c5a41e1fbe0e33d43884d3c0fd7e4ea056/); ethereum `0xfbd1b7...07fb3e` | ✅ Audited |
+| JBTiered721DelegateStore | unknown | ethereum | [`0x8e3118...dc16ad`](./contracts/ethereum-1/0x8e3118fa2f90e8ae7da08c6d444bf93ef1dc16ad/) | ✅ Audited |
+| JBTokens | token | ethereum | 4 deployments: ethereum [`0x4d0edd...e87636`](./contracts/ethereum-1/0x4d0edd347fb1fa21589c1e109b3474924be87636/); optimism [`0x4d0edd...e87636`](./contracts/optimism-10/0x4d0edd347fb1fa21589c1e109b3474924be87636/); base [`0x4d0edd...e87636`](./contracts/base-8453/0x4d0edd347fb1fa21589c1e109b3474924be87636/); arbitrum [`0x4d0edd...e87636`](./contracts/arbitrum-42161/0x4d0edd347fb1fa21589c1e109b3474924be87636/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (64)
+### ⚠️ Verified + Unaudited (55)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -61,8 +73,6 @@ The Juicebox Core family provides shared infrastructure (controller, tokens, rul
 | CTProjectOwner | unknown | ethereum | 4 deployments: ethereum [`0x127fa6...690883`](./contracts/ethereum-1/0x127fa6d4d0a4e791c6c4adaa4c9ad97127690883/); optimism [`0x127fa6...690883`](./contracts/optimism-10/0x127fa6d4d0a4e791c6c4adaa4c9ad97127690883/); base [`0x127fa6...690883`](./contracts/base-8453/0x127fa6d4d0a4e791c6c4adaa4c9ad97127690883/); arbitrum [`0x127fa6...690883`](./contracts/arbitrum-42161/0x127fa6d4d0a4e791c6c4adaa4c9ad97127690883/) | ⚠️ Unaudited |
 | CTPublisher | unknown | ethereum | 4 deployments: ethereum [`0x03ef9e...20ee24`](./contracts/ethereum-1/0x03ef9ea1467df70d4b1e1d619aa9a2a2f820ee24/); optimism [`0x03ef9e...20ee24`](./contracts/optimism-10/0x03ef9ea1467df70d4b1e1d619aa9a2a2f820ee24/); base [`0x03ef9e...20ee24`](./contracts/base-8453/0x03ef9ea1467df70d4b1e1d619aa9a2a2f820ee24/); arbitrum [`0x03ef9e...20ee24`](./contracts/arbitrum-42161/0x03ef9ea1467df70d4b1e1d619aa9a2a2f820ee24/) | ⚠️ Unaudited |
 | ERC2771Forwarder | unknown | ethereum | 4 deployments: ethereum [`0xc29d69...cbb566`](./contracts/ethereum-1/0xc29d6995ab3b0df4650ad643adeac55e7acbb566/); optimism [`0xc29d69...cbb566`](./contracts/optimism-10/0xc29d6995ab3b0df4650ad643adeac55e7acbb566/); base [`0xc29d69...cbb566`](./contracts/base-8453/0xc29d6995ab3b0df4650ad643adeac55e7acbb566/); arbitrum [`0xc29d69...cbb566`](./contracts/arbitrum-42161/0xc29d6995ab3b0df4650ad643adeac55e7acbb566/) | ⚠️ Unaudited |
-| JB721GlobalGovernance | unknown | ethereum | [`0x50cd1e...fe6f80`](./contracts/ethereum-1/0x50cd1e33f818d402a9fd406b5b3fbc88f1fe6f80/) | ⚠️ Unaudited |
-| JB721TieredGovernance | unknown | ethereum | [`0xf27aaa...a4209f`](./contracts/ethereum-1/0xf27aaa1240a09f2a995542e6bd38b52125a4209f/) | ⚠️ Unaudited |
 | JB721TiersHook | unknown | ethereum | 4 deployments: ethereum [`0x749ac9...8eb25b`](./contracts/ethereum-1/0x749ac9c5ef5ef41f402c70a5bc460c5a1d8eb25b/); optimism [`0x749ac9...8eb25b`](./contracts/optimism-10/0x749ac9c5ef5ef41f402c70a5bc460c5a1d8eb25b/); base [`0x749ac9...8eb25b`](./contracts/base-8453/0x749ac9c5ef5ef41f402c70a5bc460c5a1d8eb25b/); arbitrum [`0x749ac9...8eb25b`](./contracts/arbitrum-42161/0x749ac9c5ef5ef41f402c70a5bc460c5a1d8eb25b/) | ⚠️ Unaudited |
 | JB721TiersHookDeployer | unknown | ethereum | 8 deployments: ethereum [`0x792bdd...6d2732`](./contracts/ethereum-1/0x792bdd4dd1e52fcf8fb3e80278a2b4e4396d2732/); ethereum `0xef6087...d41ca7`; optimism [`0x792bdd...6d2732`](./contracts/optimism-10/0x792bdd4dd1e52fcf8fb3e80278a2b4e4396d2732/); optimism `0xef6087...d41ca7`; base [`0x792bdd...6d2732`](./contracts/base-8453/0x792bdd4dd1e52fcf8fb3e80278a2b4e4396d2732/); base `0xef6087...d41ca7`; arbitrum [`0x792bdd...6d2732`](./contracts/arbitrum-42161/0x792bdd4dd1e52fcf8fb3e80278a2b4e4396d2732/); arbitrum `0xef6087...d41ca7` | ⚠️ Unaudited |
 | JB721TiersHookProjectDeployer | unknown | ethereum | 8 deployments: ethereum [`0x048626...0e725a`](./contracts/ethereum-1/0x048626e715a194fc38dd9be12f516b54b10e725a/); ethereum `0xeb15c1...c9a7f8`; optimism [`0x048626...0e725a`](./contracts/optimism-10/0x048626e715a194fc38dd9be12f516b54b10e725a/); optimism `0xeb15c1...c9a7f8`; base [`0x048626...0e725a`](./contracts/base-8453/0x048626e715a194fc38dd9be12f516b54b10e725a/); base `0xeb15c1...c9a7f8`; arbitrum [`0x048626...0e725a`](./contracts/arbitrum-42161/0x048626e715a194fc38dd9be12f516b54b10e725a/); arbitrum `0xeb15c1...c9a7f8` | ⚠️ Unaudited |
@@ -73,7 +83,6 @@ The Juicebox Core family provides shared infrastructure (controller, tokens, rul
 | JBBuybackHook | unknown | optimism | 4 deployments: ethereum `0xd34249...fe0f9b`; optimism [`0x318f8a...7824f3`](./contracts/optimism-10/0x318f8aa6a95cb83419985c0d797c762f5a7824f3/); base `0xb6133a...51d088`; arbitrum `0x4ac3e2...4f0320` | ⚠️ Unaudited |
 | JBBuybackHookRegistry | registry | ethereum | 4 deployments: ethereum [`0x9e1e0f...a12b1a`](./contracts/ethereum-1/0x9e1e0fb70bc4661f2cc2d5eddd87a9d582a12b1a/); optimism [`0x9e1e0f...a12b1a`](./contracts/optimism-10/0x9e1e0fb70bc4661f2cc2d5eddd87a9d582a12b1a/); base [`0x9e1e0f...a12b1a`](./contracts/base-8453/0x9e1e0fb70bc4661f2cc2d5eddd87a9d582a12b1a/); arbitrum [`0x9e1e0f...a12b1a`](./contracts/arbitrum-42161/0x9e1e0fb70bc4661f2cc2d5eddd87a9d582a12b1a/) | ⚠️ Unaudited |
 | JBCCIPSuckerDeployer | unknown | ethereum | 12 deployments: ethereum [`0x172ad9...761816`](./contracts/ethereum-1/0x172ad9b3df724ee0422ea85b7799a3f7ca761816/); ethereum `0x195b4d...f88814`; ethereum `0xf816d2...ca4bcf`; optimism [`0x172ad9...761816`](./contracts/optimism-10/0x172ad9b3df724ee0422ea85b7799a3f7ca761816/); optimism `0x586839...4a3d7d`; optimism `0xaa0dbd...c8bcd1`; base `0x195b4d...f88814`; base `0x586839...4a3d7d`; base `0xc295a8...88c8a7`; arbitrum `0xaa0dbd...c8bcd1`; arbitrum `0xc295a8...88c8a7`; arbitrum `0xf816d2...ca4bcf` | ⚠️ Unaudited |
-| JBChainlinkV3PriceFeed | operational_periphery | ethereum | [`0x6ed8ee...28bba4`](./contracts/ethereum-1/0x6ed8eedc0689bd6a8c7168301897a0113c28bba4/) | ⚠️ Unaudited |
 | JBChainlinkV3SequencerPriceFeed | operational_periphery | optimism | 3 deployments: optimism [`0x6ed8ee...28bba4`](./contracts/optimism-10/0x6ed8eedc0689bd6a8c7168301897a0113c28bba4/); base [`0x6ed8ee...28bba4`](./contracts/base-8453/0x6ed8eedc0689bd6a8c7168301897a0113c28bba4/); arbitrum [`0x6ed8ee...28bba4`](./contracts/arbitrum-42161/0x6ed8eedc0689bd6a8c7168301897a0113c28bba4/) | ⚠️ Unaudited |
 | JBController3_0_1 | governance | ethereum | [`0xa139d3...8cb7b6`](./contracts/ethereum-1/0xa139d37275d1ff7275e6f33821898934bc8cb7b6/) | ⚠️ Unaudited |
 | JBController3_1 | governance | ethereum | 2 deployments: ethereum [`0x328348...7b6768`](./contracts/ethereum-1/0x32834829927d872869918e5f415f9732bd7b6768/); ethereum `0x97a5b9...4bb59b` | ⚠️ Unaudited |
@@ -98,7 +107,6 @@ The Juicebox Core family provides shared infrastructure (controller, tokens, rul
 | JBOmnichainDeployer | unknown | ethereum | 8 deployments: ethereum [`0x587bf8...c2fc71`](./contracts/ethereum-1/0x587bf86677ec0d1b766d9ba0d7ac2a51c6c2fc71/); ethereum `0x8f5ded...101590`; optimism [`0x587bf8...c2fc71`](./contracts/optimism-10/0x587bf86677ec0d1b766d9ba0d7ac2a51c6c2fc71/); optimism `0x8f5ded...101590`; base [`0x587bf8...c2fc71`](./contracts/base-8453/0x587bf86677ec0d1b766d9ba0d7ac2a51c6c2fc71/); base `0x8f5ded...101590`; arbitrum [`0x587bf8...c2fc71`](./contracts/arbitrum-42161/0x587bf86677ec0d1b766d9ba0d7ac2a51c6c2fc71/); arbitrum `0x8f5ded...101590` | ⚠️ Unaudited |
 | JBOptimismSuckerDeployer | unknown | ethereum | 2 deployments: ethereum [`0x77cdb0...cc3057`](./contracts/ethereum-1/0x77cdb0f5eef8febd67dd6e594ff654fb12cc3057/); optimism [`0x77cdb0...cc3057`](./contracts/optimism-10/0x77cdb0f5eef8febd67dd6e594ff654fb12cc3057/) | ⚠️ Unaudited |
 | JBPermissions | unknown | ethereum | 4 deployments: ethereum [`0x04fd69...a7793d`](./contracts/ethereum-1/0x04fd6913d6c32d8c216e153a43c04b1857a7793d/); optimism [`0x04fd69...a7793d`](./contracts/optimism-10/0x04fd6913d6c32d8c216e153a43c04b1857a7793d/); base [`0x04fd69...a7793d`](./contracts/base-8453/0x04fd6913d6c32d8c216e153a43c04b1857a7793d/); arbitrum [`0x04fd69...a7793d`](./contracts/arbitrum-42161/0x04fd6913d6c32d8c216e153a43c04b1857a7793d/) | ⚠️ Unaudited |
-| JBPrices | operational_periphery | ethereum | 4 deployments: ethereum [`0x9b90e5...e614c4`](./contracts/ethereum-1/0x9b90e507cf6b7eb681a506b111f6f50245e614c4/); optimism [`0x9b90e5...e614c4`](./contracts/optimism-10/0x9b90e507cf6b7eb681a506b111f6f50245e614c4/); base [`0x9b90e5...e614c4`](./contracts/base-8453/0x9b90e507cf6b7eb681a506b111f6f50245e614c4/); arbitrum [`0x9b90e5...e614c4`](./contracts/arbitrum-42161/0x9b90e507cf6b7eb681a506b111f6f50245e614c4/) | ⚠️ Unaudited |
 | JBProjectHandles | unknown | ethereum | [`0xd75d2e...b0a3a4`](./contracts/ethereum-1/0xd75d2eef7fe65bf9f46d7ef0b21eded98cb0a3a4/) | ⚠️ Unaudited |
 | JBReconfigurationBufferBallot | governance | ethereum | [`0xa2154a...d0fdc6`](./contracts/ethereum-1/0xa2154abd135be068540073cb4390139906d0fdc6/) | ⚠️ Unaudited |
 | JBRulesets | unknown | ethereum | 4 deployments: ethereum [`0x629228...6ab428`](./contracts/ethereum-1/0x6292281d69c3593fcf6ea074e5797341476ab428/); optimism [`0x629228...6ab428`](./contracts/optimism-10/0x6292281d69c3593fcf6ea074e5797341476ab428/); base [`0x629228...6ab428`](./contracts/base-8453/0x6292281d69c3593fcf6ea074e5797341476ab428/); arbitrum [`0x629228...6ab428`](./contracts/arbitrum-42161/0x6292281d69c3593fcf6ea074e5797341476ab428/) | ⚠️ Unaudited |
@@ -111,12 +119,7 @@ The Juicebox Core family provides shared infrastructure (controller, tokens, rul
 | JBSwapTerminal5_1 | unknown | arbitrum | 4 deployments: ethereum `0x642f6f...378f80`; optimism `0x7ba67a...f4a0ed`; base `0x7e000e...bee8ab`; arbitrum [`0x36379b...d99c08`](./contracts/arbitrum-42161/0x36379b28e67b73f5ae9e3de320ce1dbd7fd99c08/) | ⚠️ Unaudited |
 | JBSwapTerminalRegistry | registry | ethereum | 8 deployments: ethereum [`0x1ce40d...167422`](./contracts/ethereum-1/0x1ce40d201cdec791de05810d17aaf501be167422/); ethereum `0x60b4f5...e6a4f6`; optimism [`0x1ce40d...167422`](./contracts/optimism-10/0x1ce40d201cdec791de05810d17aaf501be167422/); optimism `0x60b4f5...e6a4f6`; base [`0x1ce40d...167422`](./contracts/base-8453/0x1ce40d201cdec791de05810d17aaf501be167422/); base `0x60b4f5...e6a4f6`; arbitrum [`0x1ce40d...167422`](./contracts/arbitrum-42161/0x1ce40d201cdec791de05810d17aaf501be167422/); arbitrum `0x60b4f5...e6a4f6` | ⚠️ Unaudited |
 | JBTerminalStore | token | ethereum | 8 deployments: ethereum [`0x5cdfcf...a1d964`](./contracts/ethereum-1/0x5cdfcf7f5f25da0dcb0eccd027e5feebada1d964/); ethereum `0xfe33b4...014744`; optimism [`0x5cdfcf...a1d964`](./contracts/optimism-10/0x5cdfcf7f5f25da0dcb0eccd027e5feebada1d964/); optimism `0xfe33b4...014744`; base [`0x5cdfcf...a1d964`](./contracts/base-8453/0x5cdfcf7f5f25da0dcb0eccd027e5feebada1d964/); base `0xfe33b4...014744`; arbitrum [`0x5cdfcf...a1d964`](./contracts/arbitrum-42161/0x5cdfcf7f5f25da0dcb0eccd027e5feebada1d964/); arbitrum `0xfe33b4...014744` | ⚠️ Unaudited |
-| JBTiered721Delegate | unknown | ethereum | 2 deployments: ethereum [`0x2b9f2f...a99333`](./contracts/ethereum-1/0x2b9f2f30f722dd4917bd877d976adc4966a99333/); ethereum `0xb41f6c...ce436c` | ⚠️ Unaudited |
-| JBTiered721DelegateDeployer | unknown | ethereum | 2 deployments: ethereum [`0x55ff1d...95fefc`](./contracts/ethereum-1/0x55ff1d8093166c1ff9664efd613d8c543b95fefc/); ethereum `0x5c9f2f...b6353b` | ⚠️ Unaudited |
-| JBTiered721DelegateProjectDeployer | unknown | ethereum | 2 deployments: ethereum [`0xba6dc6...4ea056`](./contracts/ethereum-1/0xba6dc6c5a41e1fbe0e33d43884d3c0fd7e4ea056/); ethereum `0xfbd1b7...07fb3e` | ⚠️ Unaudited |
-| JBTiered721DelegateStore | unknown | ethereum | [`0x8e3118...dc16ad`](./contracts/ethereum-1/0x8e3118fa2f90e8ae7da08c6d444bf93ef1dc16ad/) | ⚠️ Unaudited |
 | JBTiered721GovernanceDelegate | unknown | ethereum | [`0x7bfcdb...5a3a66`](./contracts/ethereum-1/0x7bfcdb1649053919d65b17e0edd5068e535a3a66/) | ⚠️ Unaudited |
-| JBTokens | token | ethereum | 4 deployments: ethereum [`0x4d0edd...e87636`](./contracts/ethereum-1/0x4d0edd347fb1fa21589c1e109b3474924be87636/); optimism [`0x4d0edd...e87636`](./contracts/optimism-10/0x4d0edd347fb1fa21589c1e109b3474924be87636/); base [`0x4d0edd...e87636`](./contracts/base-8453/0x4d0edd347fb1fa21589c1e109b3474924be87636/); arbitrum [`0x4d0edd...e87636`](./contracts/arbitrum-42161/0x4d0edd347fb1fa21589c1e109b3474924be87636/) | ⚠️ Unaudited |
 | REVDeployer | unknown | ethereum | 4 deployments: ethereum [`0x2ca27b...de251d`](./contracts/ethereum-1/0x2ca27bde7e7d33e353b44c27acfcf6c78dde251d/); optimism [`0x2ca27b...de251d`](./contracts/optimism-10/0x2ca27bde7e7d33e353b44c27acfcf6c78dde251d/); base [`0x2ca27b...de251d`](./contracts/base-8453/0x2ca27bde7e7d33e353b44c27acfcf6c78dde251d/); arbitrum [`0x2ca27b...de251d`](./contracts/arbitrum-42161/0x2ca27bde7e7d33e353b44c27acfcf6c78dde251d/) | ⚠️ Unaudited |
 | REVLoans | unknown | ethereum | 4 deployments: ethereum [`0x1880d8...d550bb`](./contracts/ethereum-1/0x1880d832aa283d05b8eab68877717e25fbd550bb/); optimism [`0x1880d8...d550bb`](./contracts/optimism-10/0x1880d832aa283d05b8eab68877717e25fbd550bb/); base [`0x1880d8...d550bb`](./contracts/base-8453/0x1880d832aa283d05b8eab68877717e25fbd550bb/); arbitrum [`0x1880d8...d550bb`](./contracts/arbitrum-42161/0x1880d832aa283d05b8eab68877717e25fbd550bb/) | ⚠️ Unaudited |
 | TerminalV1 | unknown | ethereum | [`0xd569d3...714431`](./contracts/ethereum-1/0xd569d3cce55b71a8a3f3c418c329a66e5f714431/) | ⚠️ Unaudited |
@@ -157,12 +160,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [5.24.2022.md (also discovered via alternate URL)](https://github.com/jbx-protocol/juice-contracts-v2/blob/main/security/postmortem/5.24.2022.md) | unknown | Audit | 2022 | stale | Direct | contract_name | 19 | medium |
 | [DL audit link](https://hacken.io/audits/constitution-dao/sca-constitution-dao-governance-erc20-jan2022) | Hacken | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
 | [DL audit link](https://hackmd.io/@berndartmueller/2023-01-juice-v3-migration) | unknown | Audit | 2023-01 | stale | Direct | n/a | 0 | n/a |
-| [DL audit link](https://code4rena.com/reports/2022-10-juicebox) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
-| [C4 Juicebox contest repository](https://github.com/code-423n4/2022-10-juicebox) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
-| [DL audit link](https://docs.juicebox.money/assets/files/certik-audit-report-12b48328d22ac38207dad74162cac1db.pdf) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DL audit link](https://code4rena.com/reports/2022-10-juicebox) | Code4rena | Contest | 2022-10 | stale | Direct | contract_name | 7 | high |
+| [C4 Juicebox contest repository](https://github.com/code-423n4/2022-10-juicebox) | Code4rena | Contest | 2022-10 | stale | Direct | contract_name | 9 | high |
+| [DL audit link](https://docs.juicebox.money/assets/files/certik-audit-report-12b48328d22ac38207dad74162cac1db.pdf) | CertiK | Audit | 2022-03 | stale | Direct | contract_name | 27 | high |
 | [DL audit link](https://code4rena.com/audits/2022-07-juicebox-v2-contest) | Code4rena | Contest | 2022-07 | stale | Direct | n/a | 0 | n/a |
-| [View report](https://code4rena.com/reports/2022-07-juicebox) | Code4rena | Contest | 2022-07 | stale | Direct | n/a | 0 | n/a |
-| [DL audit link](https://docs.juicebox.money/assets/files/peckshield-audit-report-ab36ee2b5dfb2a387410b4d64276f6ba.pdf) | PeckShield | Audit | 2022 | stale | Direct | n/a | 0 | n/a |
+| [View report](https://code4rena.com/reports/2022-07-juicebox) | Code4rena | Contest | 2022-07 | stale | Direct | contract_name | 20 | high |
+| [DL audit link](https://docs.juicebox.money/assets/files/peckshield-audit-report-ab36ee2b5dfb2a387410b4d64276f6ba.pdf) | PeckShield | Audit | 2022-04 | stale | Direct | contract_name | 15 | high |
 | [code4rena.com/reports/2023-05-juicebox](https://code4rena.com/reports/2023-05-juicebox) | Code4rena | Contest | 2023-05 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -174,8 +177,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xc3c266...e5d8ea`](./contracts/ethereum-1/0xc3c26682ef39a4a5f4a1dc2459a6fbcba4e5d8ea/) | CTDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x127fa6...690883`](./contracts/ethereum-1/0x127fa6d4d0a4e791c6c4adaa4c9ad97127690883/) | CTProjectOwner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x03ef9e...20ee24`](./contracts/ethereum-1/0x03ef9ea1467df70d4b1e1d619aa9a2a2f820ee24/) | CTPublisher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x50cd1e...fe6f80`](./contracts/ethereum-1/0x50cd1e33f818d402a9fd406b5b3fbc88f1fe6f80/) | JB721GlobalGovernance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf27aaa...a4209f`](./contracts/ethereum-1/0xf27aaa1240a09f2a995542e6bd38b52125a4209f/) | JB721TieredGovernance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x749ac9...8eb25b`](./contracts/ethereum-1/0x749ac9c5ef5ef41f402c70a5bc460c5a1d8eb25b/) | JB721TiersHook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x792bdd...6d2732`](./contracts/ethereum-1/0x792bdd4dd1e52fcf8fb3e80278a2b4e4396d2732/) | JB721TiersHookDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x048626...0e725a`](./contracts/ethereum-1/0x048626e715a194fc38dd9be12f516b54b10e725a/) | JB721TiersHookProjectDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -209,7 +210,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x587bf8...c2fc71`](./contracts/ethereum-1/0x587bf86677ec0d1b766d9ba0d7ac2a51c6c2fc71/) | JBOmnichainDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x77cdb0...cc3057`](./contracts/ethereum-1/0x77cdb0f5eef8febd67dd6e594ff654fb12cc3057/) | JBOptimismSuckerDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x04fd69...a7793d`](./contracts/ethereum-1/0x04fd6913d6c32d8c216e153a43c04b1857a7793d/) | JBPermissions | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9b90e5...e614c4`](./contracts/ethereum-1/0x9b90e507cf6b7eb681a506b111f6f50245e614c4/) | JBPrices | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd75d2e...b0a3a4`](./contracts/ethereum-1/0xd75d2eef7fe65bf9f46d7ef0b21eded98cb0a3a4/) | JBProjectHandles | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa2154a...d0fdc6`](./contracts/ethereum-1/0xa2154abd135be068540073cb4390139906d0fdc6/) | JBReconfigurationBufferBallot | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x629228...6ab428`](./contracts/ethereum-1/0x6292281d69c3593fcf6ea074e5797341476ab428/) | JBRulesets | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -222,12 +222,7 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | [`0x36379b...d99c08`](./contracts/arbitrum-42161/0x36379b28e67b73f5ae9e3de320ce1dbd7fd99c08/) | JBSwapTerminal5_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1ce40d...167422`](./contracts/ethereum-1/0x1ce40d201cdec791de05810d17aaf501be167422/) | JBSwapTerminalRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5cdfcf...a1d964`](./contracts/ethereum-1/0x5cdfcf7f5f25da0dcb0eccd027e5feebada1d964/) | JBTerminalStore | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2b9f2f...a99333`](./contracts/ethereum-1/0x2b9f2f30f722dd4917bd877d976adc4966a99333/) | JBTiered721Delegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x55ff1d...95fefc`](./contracts/ethereum-1/0x55ff1d8093166c1ff9664efd613d8c543b95fefc/) | JBTiered721DelegateDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xba6dc6...4ea056`](./contracts/ethereum-1/0xba6dc6c5a41e1fbe0e33d43884d3c0fd7e4ea056/) | JBTiered721DelegateProjectDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8e3118...dc16ad`](./contracts/ethereum-1/0x8e3118fa2f90e8ae7da08c6d444bf93ef1dc16ad/) | JBTiered721DelegateStore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7bfcdb...5a3a66`](./contracts/ethereum-1/0x7bfcdb1649053919d65b17e0edd5068e535a3a66/) | JBTiered721GovernanceDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4d0edd...e87636`](./contracts/ethereum-1/0x4d0edd347fb1fa21589c1e109b3474924be87636/) | JBTokens | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2ca27b...de251d`](./contracts/ethereum-1/0x2ca27bde7e7d33e353b44c27acfcf6c78dde251d/) | REVDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1880d8...d550bb`](./contracts/ethereum-1/0x1880d832aa283d05b8eab68877717e25fbd550bb/) | REVLoans | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd569d3...714431`](./contracts/ethereum-1/0xd569d3cce55b71a8a3f3c418c329a66e5f714431/) | TerminalV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -246,21 +241,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 9
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: medium=1
-- Match method counts: extraction_exact=38
+- Extraction confidence breakdown: high=5, medium=1
+- Match method counts: extraction_exact=116
 
 Zero-match audit list:
 
 - [11935] DL audit link
 - [11936] DL audit link
-- [11937] DL audit link
-- [11938] C4 Juicebox contest repository
-- [11939] DL audit link
 - [11940] DL audit link
-- [11941] View report
-- [11942] DL audit link
 - [11943] code4rena.com/reports/2023-05-juicebox
 
 Fork inheritance lineage and inherited audits are included when available.

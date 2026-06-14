@@ -313,7 +313,7 @@
 | [decibel](./decibel/) | $41.9M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
 | [deepbook](./deepbook/) | $12.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [deeplock](./deeplock/) | $56.2M | 0.0% | $56.2M | active | 0 | 70 | 2026-06-10 |
-| [defi-kingdoms](./defi-kingdoms/) | $7.7M | 0.0% | ? | declining | 1 | 5 | 2026-06-13 |
+| [defi-kingdoms](./defi-kingdoms/) | $7.7M | 0.0% | ? | declining | 1 | 8 | 2026-06-14 |
 | [defi-swap](./defi-swap/) | $870.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [defichain-dex](./defichain-dex/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [defil](./defil/) | $1.0M | 0.0% | $1.0M | active | 1 | 52 | 2026-06-13 |
@@ -387,7 +387,7 @@
 | [ensuro](./ensuro/) | $490.6K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [enzo-finance](./enzo-finance/) | $22.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [equalizer](./equalizer/) | $374.8K | 0.0% | $374.8K | declining | 0 | 295 | 2026-06-13 |
-| [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-06-13 |
+| [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-06-14 |
 | [equilibria](./equilibria/) | $26.9M | 17.6% | $15.7M | declining | 6 | 119 | 2026-06-10 |
 | [equito-finance](./equito-finance/) | $7.9 | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [eralend](./eralend/) | $73.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -593,7 +593,7 @@
 | [jito](./jito/) | $642.5M | 0.0% | ? | unknown | 15 | 0 | 2026-06-13 |
 | [jones-dao](./jones-dao/) | $519.7M | 7.0% | $68.0M | active | 5 | 502 | 2026-06-13 |
 | [jpg-store](./jpg-store/) | $130.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [juicebox](./juicebox/) | $8.6M | 5.9% | ? | active | 10 | 77 | 2026-06-11 |
+| [juicebox](./juicebox/) | $8.6M | 19.1% | ? | active | 10 | 77 | 2026-06-14 |
 | [justlend](./justlend/) | $3.3B | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-06-11 |
 | [kafe-finance](./kafe-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -724,7 +724,7 @@
 | [mento](./mento/) | $2.3M | 61.1% | $65.0K | declining | 23 | 218 | 2026-06-12 |
 | [merchant-moe](./merchant-moe/) | $37.3M | 50.0% | ? | unknown | 1 | 53 | 2026-05-31 |
 | [merkle-trade](./merkle-trade/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [merlinswap](./merlinswap/) | $6.9M | 0.0% | ? | declining | 0 | 2 | 2026-06-13 |
+| [merlinswap](./merlinswap/) | $6.9M | 0.0% | ? | declining | 0 | 2 | 2026-06-14 |
 | [meson](./meson/) | $1.1M | 0.0% | ? | active | 4 | 129 | 2026-06-11 |
 | [meta-pool](./meta-pool/) | $4.2M | 50.0% | $4.0M | active | 3 | 41 | 2026-06-11 |
 | [metadao](./metadao/) | $13.1M | 0.0% | ? | unknown | 10 | 0 | 2026-06-11 |
@@ -1203,7 +1203,7 @@
 | [symmio](./symmio/) | $25.5 | 0.0% | $25.5 | active | 0 | 169 | 2026-06-13 |
 | [synapse](./synapse/) | $25.6M | 0.0% | $25.6M | declining | 0 | 824 | 2026-06-11 |
 | [synatra](./synatra/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [syncswap-protocol](./syncswap-protocol/) | $453.7K | 23.3% | ? | active | 8 | 157 | 2026-06-11 |
+| [syncswap-protocol](./syncswap-protocol/) | $453.7K | 21.9% | $0.0 | active | 9 | 162 | 2026-06-14 |
 | [syncyield](./syncyield/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 1 | 482 | 2026-06-13 |
 | [synthetix](./synthetix/) | $11.4M | 0.0% | $11.4M | active | 0 | 25 | 2026-06-12 |

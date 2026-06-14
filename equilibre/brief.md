@@ -4,8 +4,8 @@
 
 - Project: Equilibre (`equilibre`)
 - Lifecycle: active (Tier 0, 85.7% below peak)
-- Generated: 2026-06-13T01:38:12.756Z
-- Pipeline run: v2-pipeline-2026-06-13-546062-d5d2
+- Generated: 2026-06-14T05:47:45.150Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-39b4
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $6,901,350.08

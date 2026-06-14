@@ -1,0 +1,17 @@
+{
+  "address": "0x5ec5b1e9b1bd5198343abb6e55fb695d2f7bb308",
+  "chain_id": 59144,
+  "contract_name": "SyncSwapClassicPool",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T05:57:28.242Z"
+}

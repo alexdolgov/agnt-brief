@@ -1,0 +1,17 @@
+{
+  "address": "0x09dfee598d5217da799bead56206bec0fdb0d17b",
+  "chain_id": 34443,
+  "contract_name": "Factory",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x0000000000000000000000002d25bd8027586fc2503eb22d928107c94d59841e000000000000000000000000e3b43dc43f2ab7102006e46074151c427de06794000000000000000000000000833e81b279959f216331589dd9cec4388cf18387",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T04:27:12.762Z"
+}

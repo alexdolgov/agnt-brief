@@ -5,34 +5,33 @@
 - Project: AlphaX (`alphax`)
 - Website: [https://alphax.com/](https://alphax.com/)
 - Lifecycle: active (Tier 0, 12.5% below peak)
-- Generated: 2026-06-10T21:23:55.144Z
-- Pipeline run: correction-skeletal-description-fix-topography
-- Chains: arbitrum, ethereum
-- Contract surface: 1 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $1,486,770.27
-- On-chain TVL (included contracts): $218,199.40
-- TVL by chain: Ethereum $218,199.40
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
+- Generated: 2026-06-14T04:21:20.185Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
+- Chains: arbitrum, bsc, ethereum
+- Contract surface: 2 unique implementations (7 raw deployments)
+- DeFi Llama TVL: $1,481,982.45
+- On-chain TVL (included contracts): $1,151,947.04
+- TVL by chain: Bsc $933,747.34 | Ethereum $218,199.70
 
 ## Project Description
 
 AlphaX is a derivatives protocol that enables users to trade perpetual contracts and other derivative products on-chain. It uses vault-based architecture to manage liquidity and positions.
 
+### Architecture
+
+The protocol consists of a single product family where DEXVaultV1 serves as the core logic contract, and ERC1967Proxy acts as the upgradeable proxy pointing to it. All contracts are deployed by the same deployer, indicating a unified infrastructure.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 4
+- Unique implementations: 2
+- Raw deployments: 7
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $218,199.40
+- ASD (verified + unaudited TVL): $1,151,947.04
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -47,11 +46,12 @@ AlphaX is a derivatives protocol that enables users to trade perpetual contracts
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| DEXVaultV1 | core_logic | ethereum | 4 deployments: ethereum [`0x3afa86...81428e`](./contracts/ethereum-1/0x3afa86022a76e8ca6db1b530a93e33de2081428e/); ethereum `0xec0377...a7e1e1`; arbitrum [`0x3afa86...81428e`](./contracts/arbitrum-42161/0x3afa86022a76e8ca6db1b530a93e33de2081428e/); arbitrum `0xec0377...a7e1e1` | ⚠️ Unaudited |
+| DEXVaultV1 | core_logic | ethereum | 6 deployments: ethereum [`0x3afa86...81428e`](./contracts/ethereum-1/0x3afa86022a76e8ca6db1b530a93e33de2081428e/); ethereum `0xec0377...a7e1e1`; bsc `0x8259f6...534ca6`; arbitrum [`0x3afa86...81428e`](./contracts/arbitrum-42161/0x3afa86022a76e8ca6db1b530a93e33de2081428e/); arbitrum `0x552e7a...a9d286`; arbitrum `0xec0377...a7e1e1` | ⚠️ Unaudited |
+| DEXVaultV2 | core_logic | ethereum | [`0xa61a6e...bcec99`](./contracts/ethereum-1/0xa61a6e696b7c566da42b80da27d96e7104bcec99/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -83,7 +83,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x3afa86...81428e`](./contracts/ethereum-1/0x3afa86022a76e8ca6db1b530a93e33de2081428e/) | DEXVaultV1 | core_logic | $218,199.40 | Verified native implementation with $218,199.40 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3afa86...81428e`](./contracts/ethereum-1/0x3afa86022a76e8ca6db1b530a93e33de2081428e/) | DEXVaultV1 | core_logic | $1,151,946.74 | Verified native implementation with $1,151,946.74 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
@@ -91,7 +91,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 1 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

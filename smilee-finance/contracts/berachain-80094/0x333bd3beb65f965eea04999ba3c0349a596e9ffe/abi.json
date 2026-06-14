@@ -1,0 +1,209 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_gBeraManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "nodeRegistry_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AddressZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AmountDrainsDeposits",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AmountTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BeraTransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FirstDepositNotPerformed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InconsistentPublicKey",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InconsistentSignature",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "IndexNotBelongingToBatch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidDepositAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidFeePercentage",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NodeAlreadyExists",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NodeNotActive",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NodeNotFound",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotEnoughBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotGBera",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotManager",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotWithdrawalVault",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotYetProcessed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyManager",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OutsideRequestBounds",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TransfersNotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WithdrawalAmountTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WithdrawalDisabled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WithdrawalTransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroAmount",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "WithdrawalsWithdrawn",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "gBeraManager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nodeRegistry",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdrawWithdrawals",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

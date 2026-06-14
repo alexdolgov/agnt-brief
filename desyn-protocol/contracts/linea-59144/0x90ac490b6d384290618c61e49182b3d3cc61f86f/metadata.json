@@ -1,0 +1,17 @@
+{
+  "address": "0x90ac490b6d384290618c61e49182b3d3cc61f86f",
+  "chain_id": 59144,
+  "contract_name": "CRPFactory",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T04:27:12.670Z"
+}

@@ -5,10 +5,10 @@
 - Project: Smilee Finance (`smilee-finance`)
 - Website: [https://smilee.finance/](https://smilee.finance/)
 - Lifecycle: active (Tier 0, 94.8% below peak)
-- Generated: 2026-06-11T11:48:02.465Z
-- Pipeline run: v2-pipeline-2026-06-11-9658c2-4b54
+- Generated: 2026-06-14T04:28:38.222Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
 - Chains: arbitrum, berachain
-- Contract surface: 186 unique implementations (223 raw deployments)
+- Contract surface: 194 unique implementations (232 raw deployments)
 - DeFi Llama TVL: $1,124,131.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -23,28 +23,38 @@ The two families operate on separate chains with no direct contract dependencies
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/23 (0.0%)
+- Verified implementations audited: 7/30 (23.3%)
 - Verified + Unaudited implementations: 23
 - Verified by bytecode match: 0
-- Unverified implementations: 163
-- Unique implementations: 186
-- Raw deployments: 223
+- Unverified implementations: 164
+- Unique implementations: 194
+- Raw deployments: 232
 - Audits discovered: 3
-- Scoreable audits (matched contracts): 0
+- Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
-- Tier 1 coverage: No Tier 1 coverage
+- Latest audit: 2025-05 (aging)
+- Staleness: 0 fresh, 2 aging, 0 stale, 1 unknown
+- Tier 1 coverage: 23.3% (Spearbit)
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| Spearbit | Tier 1 | 7 | 23.3% | 2025-05 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (7)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| GBera | unknown | berachain | [`0x3b3dd2...0668e2`](./contracts/berachain-80094/0x3b3dd22625128ff1548110f9b7bc702f540668e2/) | ✅ Audited |
+| GBeraAssetManager | governance | berachain | 2 deployments: berachain [`0x3f7755...f2ebce`](./contracts/berachain-80094/0x3f7755117f1fec1981aefb01887240dbf5f2ebce/); berachain `0xd7db4b...364602` | ✅ Audited |
+| NodeFeeReceiver | unknown | berachain | [`0xf2133a...df88f2`](./contracts/berachain-80094/0xf2133a7140b928a4dc0e52dafabc454a81df88f2/) | ✅ Audited |
+| NodeRegistry | registry | berachain | [`0x5dbffc...102137`](./contracts/berachain-80094/0x5dbffcde23ab53f128c1c82796d0f971d0102137/) | ✅ Audited |
+| NodeWithdrawalVault | operational_periphery | berachain | [`0x333bd3...6e9ffe`](./contracts/berachain-80094/0x333bd3beb65f965eea04999ba3c0349a596e9ffe/) | ✅ Audited |
+| WGBera | unknown | berachain | [`0xd77552...f4f912`](./contracts/berachain-80094/0xd77552d3849ab4d8c3b189a9582d0ba4c1f4f912/) | ✅ Audited |
+| WithdrawalQueue | operational_periphery | berachain | [`0xab7075...f0c4f1`](./contracts/berachain-80094/0xab70753ab7b5b244a2f0de32208c0e7531f0c4f1/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (23)
 
@@ -53,12 +63,12 @@ The two families operate on separate chains with no direct contract dependencies
 | AddressProvider | registry | arbitrum | 2 deployments: arbitrum [`0x110a3b...062cf1`](./contracts/arbitrum-42161/0x110a3b051397956d69733b6fe947648bb9062cf1/); arbitrum `0x4e5af7...80546e` | ⚠️ Unaudited |
 | AmountHelper | periphery | arbitrum | [`0xe1b1a2...35979c`](./contracts/arbitrum-42161/0xe1b1a246a6363b88654351554ce4d82c5135979c/) | ⚠️ Unaudited |
 | AmountsMath | unknown | arbitrum | 5 deployments: arbitrum [`0x123dbf...5a4e09`](./contracts/arbitrum-42161/0x123dbfc7865350149ff827084b7a95e3fd5a4e09/); arbitrum `0x91869f...417b70`; arbitrum `0xa231a8...242b4f`; arbitrum `0xaa1ebd...61b536`; arbitrum `0xf0162a...af20ca` | ⚠️ Unaudited |
+| ChainlinkPriceOracle | unknown | arbitrum | [`0x60b482...cfe0bc`](./contracts/arbitrum-42161/0x60b48242e139b2932f7ccf47be10ce9b09cfe0bc/) | ⚠️ Unaudited |
 | EpochFrequency | unknown | arbitrum | 2 deployments: arbitrum [`0xf141e7...bff4a3`](./contracts/arbitrum-42161/0xf141e7bced2e300bf301eab47d5da537ecbff4a3/); arbitrum `0xfbf712...554792` | ⚠️ Unaudited |
 | FeeManager | governance | arbitrum | [`0xff7699...700d75`](./contracts/arbitrum-42161/0xff7699c47326516759be8902e87d09bcf4700d75/) | ⚠️ Unaudited |
 | Finance | unknown | arbitrum | [`0x1e5132...7517e5`](./contracts/arbitrum-42161/0x1e5132a2636deb590521ad0efbd8ff8ffc7517e5/) | ⚠️ Unaudited |
 | FinanceIGPayoff | unknown | arbitrum | 5 deployments: arbitrum [`0x07c970...c7467c`](./contracts/arbitrum-42161/0x07c9707cb86b236cc8cce3f6de41d80baac7467c/); arbitrum `0x4c0418...757f97`; arbitrum `0x6b8b6d...8ce95a`; arbitrum `0x7b2eaf...c53be7`; arbitrum `0xb68271...70d284` | ⚠️ Unaudited |
 | FinanceIGVega | unknown | arbitrum | [`0xb13170...5b9738`](./contracts/arbitrum-42161/0xb13170e36007a09d6962e23cbef5c50b775b9738/) | ⚠️ Unaudited |
-| GBeraAssetManager | governance | berachain | [`0x3f7755...f2ebce`](./contracts/berachain-80094/0x3f7755117f1fec1981aefb01887240dbf5f2ebce/) | ⚠️ Unaudited |
 | IG | unknown | arbitrum | 9 deployments: arbitrum [`0x1e0aa0...c5c016`](./contracts/arbitrum-42161/0x1e0aa028fcbe1fcd5b6b8394e5eacfaa6fc5c016/); arbitrum `0x1ee870...9f003f`; arbitrum `0x4e5121...00c933`; arbitrum `0x521e16...7b7153`; arbitrum `0x550f20...3361b8`; arbitrum `0x70def9...0548ae`; arbitrum `0x9650a8...e86f77`; arbitrum `0xc5cd71...fc4fac`; arbitrum `0xc9293c...fed768` | ⚠️ Unaudited |
 | IGAccessNFT | token | arbitrum | [`0x3d4d50...f6dceb`](./contracts/arbitrum-42161/0x3d4d50654574f8c8fd417fc77adf5c6165f6dceb/) | ⚠️ Unaudited |
 | MarketOracle | operational_periphery | arbitrum | 2 deployments: arbitrum [`0x121e69...ec70f6`](./contracts/arbitrum-42161/0x121e694d4f4fafee48a2a6ab69a96daa04ec70f6/); arbitrum `0x130648...7cd0d5` | ⚠️ Unaudited |
@@ -86,7 +96,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (163)
+### ❓ Unverified (164)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -255,14 +265,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | arbitrum | `0xfedaa8...5bd117` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0xff12b3...9e54df` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | `0xffd8f9...61ef53` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | `0xb76ae8...25693f` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Rendered PDF capture](https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FK3W9Hj6sr2y8j6Zdkgub%2FGuardefy_Audit_gBERA_SmileeFinance.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Rendered PDF capture](https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FyKq7K1kTTAd57CnP2ask%2FCantina_Audit_gBERA_SmileeFinance.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Rendered PDF capture](https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FvhApBDZa65vO2FueUH9y%2FGuardefy_Audit_gBERA%20Update_Smilee%20Finance.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Rendered PDF capture](https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FyKq7K1kTTAd57CnP2ask%2FCantina_Audit_gBERA_SmileeFinance.pdf) | Spearbit | Audit | 2025-02 | aging | Direct | contract_name | 8 | high |
+| [Rendered PDF capture](https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FvhApBDZa65vO2FueUH9y%2FGuardefy_Audit_gBERA%20Update_Smilee%20Finance.pdf) | Spearbit | Audit | 2025-05 | aging | Direct | contract_name | 4 | high |
 
 ## Coverage Gaps
 
@@ -297,24 +308,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 63 |
-| upstream | 0 |
-| standard_library | 1 |
-| needs_review | 122 |
+| native | 86 |
+| upstream | 1 |
+| standard_library | 4 |
+| needs_review | 103 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: high=2
+- Match method counts: extraction_exact=12
 
 Zero-match audit list:
 
 - [11664] Rendered PDF capture
-- [11665] Rendered PDF capture
-- [11666] Rendered PDF capture
 
 Fork inheritance lineage and inherited audits are included when available.

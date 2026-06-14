@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "smilee-finance",
-  "generated_at": "2026-06-11T11:48:02.465Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-9658c2-4b54",
+  "generated_at": "2026-06-14T04:28:38.222Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-d641",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "smilee-finance",
@@ -22,19 +22,19 @@
     "drop_from_peak_pct": 94.7930550368037
   },
   "summary": {
-    "total_contracts": 186,
-    "total_addresses": 223,
-    "unique_implementations": 186,
-    "total_deployments": 223,
-    "audited_contracts": 0,
+    "total_contracts": 194,
+    "total_addresses": 232,
+    "unique_implementations": 194,
+    "total_deployments": 232,
+    "audited_contracts": 7,
     "unaudited_contracts": 23,
-    "contracts_verified_audited": 0,
+    "contracts_verified_audited": 7,
     "contracts_verified_unaudited": 23,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 163,
-    "coverage_pct": 0,
+    "contracts_unverified": 164,
+    "coverage_pct": 23.3,
     "total_audits": 3,
-    "scoreable_audits": 0,
+    "scoreable_audits": 2,
     "dl_tvl_usd": 1124131,
     "tvl_usd": 1124131,
     "tvl_source": "defillama",
@@ -45,15 +45,17 @@
       "arbitrum",
       "berachain"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "tier1_coverage_pct": 23.3,
+    "tier1_auditors": [
+      "Spearbit"
+    ],
+    "latest_audit_date": "2025-05",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 0,
+      "aging": 2,
       "stale": 0,
-      "unknown": 3
+      "unknown": 1
     }
   },
   "topography": {
@@ -62,7 +64,7 @@
     "product_family_count": 2
   },
   "surface_sufficiency": {
-    "unique_implementations": 186,
+    "unique_implementations": 194,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -208,6 +210,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x60b48242e139b2932f7ccf47be10ce9b09cfe0bc",
+      "name": "ChainlinkPriceOracle",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Chainlink",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ChainlinkPriceOracle",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x60b48242e139b2932f7ccf47be10ce9b09cfe0bc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 42161,
@@ -412,6 +445,40 @@
     {
       "chain_id": 80094,
       "chain_name": "berachain",
+      "address": "0x3b3dd22625128ff1548110f9b7bc702f540668e2",
+      "name": "GBera",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x35201b565eac26f464d092709342603fb6239a48",
+      "impl_name": "GBera",
+      "deployments": [
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0x3b3dd22625128ff1548110f9b7bc702f540668e2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11665",
+        "audit-11666"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
       "address": "0x3f7755117f1fec1981aefb01887240dbf5f2ebce",
       "name": "GBeraAssetManager",
       "role": "governance",
@@ -430,14 +497,26 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
+        },
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xd7db4b1197e6abfab311ae6295555b5771364602",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11665",
+        "audit-11666"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -613,6 +692,106 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0xf2133a7140b928a4dc0e52dafabc454a81df88f2",
+      "name": "NodeFeeReceiver",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "NodeFeeReceiver",
+      "deployments": [
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xf2133a7140b928a4dc0e52dafabc454a81df88f2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11665",
+        "audit-11666"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0x5dbffcde23ab53f128c1c82796d0f971d0102137",
+      "name": "NodeRegistry",
+      "role": "registry",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x2863f201474593e584fbf9dd274be6f07deeddb6",
+      "impl_name": "NodeRegistry",
+      "deployments": [
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0x5dbffcde23ab53f128c1c82796d0f971d0102137",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11665"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0x333bd3beb65f965eea04999ba3c0349a596e9ffe",
+      "name": "NodeWithdrawalVault",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "NodeWithdrawalVault",
+      "deployments": [
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0x333bd3beb65f965eea04999ba3c0349a596e9ffe",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11665"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     },
     {
       "chain_id": 42161,
@@ -1905,7 +2084,7 @@
       "address": "0x3ea810d7024d00f1a02e90ea14cac4343392d0e6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2804,7 +2983,7 @@
       "address": "0x6145ce00117620d6258f80f7b29ffc972163758d",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2835,7 +3014,7 @@
       "address": "0x6427bc9ccd33bdad39ac07bb82c023d2ea21ea81",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4013,7 +4192,7 @@
       "address": "0x99ebf832cbccc9fae5477a210ebd9b108dda3a17",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4540,7 +4719,7 @@
       "address": "0xb98a71da4b70ce540afc257d3288c15e81c63b8d",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5408,7 +5587,7 @@
       "address": "0xed3e4a2acc91a44b70c5b5e1955426c68c92d405",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5439,7 +5618,7 @@
       "address": "0xf0c8988441a3f9649ea0be27ac44d45270d5fb58",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5470,7 +5649,7 @@
       "address": "0xf192635567ab46117dbb3c2dc7e989135acdc93f",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5501,7 +5680,7 @@
       "address": "0xf2e173b3467d950c4117a1e452a2835a52e55764",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5532,7 +5711,7 @@
       "address": "0xf35dada3824c0d43f972647fd4a022effe7cb55c",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5563,7 +5742,7 @@
       "address": "0xf4b78fa2887514bf1712429fa2fb6a7a65361087",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5594,7 +5773,7 @@
       "address": "0xf4f015e8877960940b8e732edd886b2ca2d2c099",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5625,7 +5804,7 @@
       "address": "0xf50a00390e929a25997e4ef04c495350e8f84879",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5656,7 +5835,7 @@
       "address": "0xf53199dfb43b327ad2a91f4ea5c329d7c6436725",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5687,7 +5866,7 @@
       "address": "0xf66d8eeae60595643bf38598dc753d874e055cea",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5718,7 +5897,7 @@
       "address": "0xf9afcddc154c0385888ad0b195cddd6a54fddb36",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5749,7 +5928,7 @@
       "address": "0xfae000bf06ecbbf7611cd517c4ef13b1860b7e55",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5780,7 +5959,7 @@
       "address": "0xfdfd955e5818f536b39f4a9060ecbdf8e75b0774",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5811,7 +5990,7 @@
       "address": "0xfedaa8313df19c7caf0d622d6adc14cbeb5bd117",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5873,7 +6052,7 @@
       "address": "0xffd8f9cee877127c7ae86b35a354f296ce61ef53",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -5897,6 +6076,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0xb76ae8789148559a28d70c783fc802553225693f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xb76ae8789148559a28d70c783fc802553225693f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 42161,
@@ -6169,6 +6379,72 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0xd77552d3849ab4d8c3b189a9582d0ba4c1f4f912",
+      "name": "WGBera",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WGBera",
+      "deployments": [
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xd77552d3849ab4d8c3b189a9582d0ba4c1f4f912",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11665"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0xab70753ab7b5b244a2f0de32208c0e7531f0c4f1",
+      "name": "WithdrawalQueue",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x23178194e9ac9f269196a3021f9c5a799d3c2c2d",
+      "impl_name": "WithdrawalQueue",
+      "deployments": [
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xab70753ab7b5b244a2f0de32208c0e7531f0c4f1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11665"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -6200,18 +6476,27 @@
       "report_url": "https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FyKq7K1kTTAd57CnP2ask%2FCantina_Audit_gBERA_SmileeFinance.pdf",
       "auditor": "Spearbit",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2025-02",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "GBeraAssetManager",
+        "NodeFeeReceiver",
+        "NodeRegistry",
+        "NodeWithdrawalVault",
+        "WgBera",
+        "WithdrawalQueue",
+        "gBera",
+        "wgBera"
+      ],
+      "matched_contracts": 8,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": false,
       "repo_reference_count": 0
     },
     {
@@ -6221,22 +6506,34 @@
       "report_url": "https://483967037-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fv9vHQJ1GDpGEgkvoUQUx%2Fuploads%2FvhApBDZa65vO2FueUH9y%2FGuardefy_Audit_gBERA%20Update_Smilee%20Finance.pdf",
       "auditor": "Spearbit",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2025-05",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "GBera",
+        "GBeraAssetManager",
+        "NodeFeeReceiver"
+      ],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Spearbit",
+      "tier": 1,
+      "contracts_covered": 7,
+      "coverage_pct": 23.3,
+      "latest_audit": "2025-05"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 42161,
@@ -6460,27 +6757,23 @@
     }
   ],
   "origin_summary": {
-    "native": 63,
-    "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 122
+    "native": 86,
+    "upstream": 1,
+    "standard_library": 4,
+    "needs_review": 103
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 12
+    },
+    "extraction_confidence_counts": {
+      "high": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 11664,
-        "report_name": "Rendered PDF capture"
-      },
-      {
-        "audit_id": 11665,
-        "report_name": "Rendered PDF capture"
-      },
-      {
-        "audit_id": 11666,
         "report_name": "Rendered PDF capture"
       }
     ],

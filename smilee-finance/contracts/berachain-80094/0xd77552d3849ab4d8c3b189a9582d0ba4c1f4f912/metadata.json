@@ -1,0 +1,17 @@
+{
+  "address": "0xd77552d3849ab4d8c3b189a9582d0ba4c1f4f912",
+  "chain_id": 80094,
+  "contract_name": "WGBera",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "0000000000000000000000003b3dd22625128ff1548110f9b7bc702f540668e2",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T04:29:05.938Z"
+}

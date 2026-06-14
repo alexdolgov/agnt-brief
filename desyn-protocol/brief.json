@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "desyn-protocol",
-  "generated_at": "2026-06-10T22:51:53.369Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
+  "generated_at": "2026-06-14T04:27:09.753Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-d641",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "desyn-protocol",
@@ -32,27 +32,28 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 11,
-    "total_addresses": 15,
-    "unique_implementations": 11,
-    "total_deployments": 15,
+    "total_contracts": 15,
+    "total_addresses": 21,
+    "unique_implementations": 15,
+    "total_deployments": 21,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 5,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 9,
+    "contracts_unverified": 10,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 10730444,
-    "tvl_usd": 10730444,
+    "dl_tvl_usd": 1401973,
+    "tvl_usd": 1401973,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.desyn.io/#/",
     "chains": [
       "ethereum",
+      "linea",
       "mode"
     ],
     "tier1_coverage_pct": 0,
@@ -72,7 +73,7 @@
     "product_family_count": 2
   },
   "surface_sufficiency": {
-    "unique_implementations": 11,
+    "unique_implementations": 15,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -81,6 +82,117 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x576c9a3dad2175964ad72fd6c097566e38182d1e",
+      "name": "Actions",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Actions",
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x576c9a3dad2175964ad72fd6c097566e38182d1e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc88d430d44adcc04db5bb9700d55290c2ed6f891",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x90ac490b6d384290618c61e49182b3d3cc61f86f",
+      "name": "CRPFactory",
+      "role": "registry",
+      "origin_kind": "upstream",
+      "origin_provider": "balancer",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CRPFactory",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x90ac490b6d384290618c61e49182b3d3cc61f86f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x09dfee598d5217da799bead56206bec0fdb0d17b",
+      "name": "Factory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Factory",
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x09dfee598d5217da799bead56206bec0fdb0d17b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x5c3027d8cb28a712413553206a094213337e88c5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -177,6 +289,37 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x0c4d317b85c2676a3c1d4181f2536ac418240a9a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x0c4d317b85c2676a3c1d4181f2536ac418240a9a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
       "contamination_flag": null
     },
     {
@@ -465,6 +608,26 @@
     {
       "chain_id": 34443,
       "chain_name": "mode",
+      "address": "0x576c9a3dad2175964ad72fd6c097566e38182d1e",
+      "name": "Actions",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x09dfee598d5217da799bead56206bec0fdb0d17b",
+      "name": "Factory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
       "address": "0x02a9ad4d451407faa6039f07ef596203c0db78c0",
       "name": "LiquidityPool",
       "role": "core_logic",
@@ -474,10 +637,10 @@
     }
   ],
   "origin_summary": {
-    "native": 10,
-    "upstream": 1,
+    "native": 12,
+    "upstream": 2,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

@@ -1,0 +1,232 @@
+{
+  "schema_version": "2.0",
+  "project_key": "venombridge",
+  "generated_at": "2026-06-14T04:22:49.044Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-d641",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "venombridge",
+    "tier": 1,
+    "peak_tvl": 24635304,
+    "peak_date": "2024-04-09T00:00:00.000Z",
+    "tvl_30d_ago": 1073625,
+    "tvl_90d_ago": 2377902,
+    "tvl_current": 860904,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 4109293,
+    "change_30d_pct": -19.813342647572476,
+    "change_90d_pct": -63.79564843294635,
+    "governance_raw": {
+      "evidence": "TVL dropped 96.5% from all-time peak and 63.8% in 90 days, but the protocol still has a homepage with active documentation and no shutdown announcement.",
+      "confidence": 0.8,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 796,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 96.50540541330443,
+    "governance_evidence": "TVL dropped 96.5% from all-time peak and 63.8% in 90 days, but the protocol still has a homepage with active documentation and no shutdown announcement.",
+    "governance_confidence": 0.8,
+    "governance_text_chars": 396,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 5,
+    "unique_implementations": 2,
+    "total_deployments": 5,
+    "audited_contracts": 0,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 1,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 1,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 860403.0930100001,
+    "tvl_usd": 860403.0930100001,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://venombridge.com",
+    "chains": [
+      "avalanche",
+      "bsc",
+      "ethereum",
+      "polygon"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2022-11",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 1,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "VenomBridge is a cross-chain bridge protocol enabling asset transfers between Ethereum and the Venom network. It uses a proxy-based upgradeable contract architecture to manage token locking and minting across chains.",
+    "relationship_narrative": "The TransparentUpgradeableProxy delegates to the Diamond implementation, which likely contains the core bridge logic and interacts with the MultiVaultToken for token management.",
+    "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4ab740157721105ae503fbad756a578171512525",
+      "name": "Diamond",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "VenomBridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x0bc8c8212c0c74773671c4badb18999c2b07f3c6",
+      "impl_name": "Diamond",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4ab740157721105ae503fbad756a578171512525",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x4ab740157721105ae503fbad756a578171512525",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x4ab740157721105ae503fbad756a578171512525",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x4ab740157721105ae503fbad756a578171512525",
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x46f84dc6564cdd93922f7bfb88b03d35308d87c9",
+      "name": "MultiVaultToken",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "VenomBridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MultiVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x46f84dc6564cdd93922f7bfb88b03d35308d87c9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 3237,
+      "audit_key": "audit-3237",
+      "report_name": "DL audit link",
+      "report_url": "https://skynet.certik.com/projects/venom-bridge",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x46f84dc6564cdd93922f7bfb88b03d35308d87c9",
+      "name": "MultiVaultToken",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 3237,
+        "report_name": "DL audit link"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

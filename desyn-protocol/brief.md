@@ -7,11 +7,11 @@
 - Project: DeSyn Protocol (`desyn-protocol`)
 - Website: [https://www.desyn.io/#/](https://www.desyn.io/#/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T22:51:53.369Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
-- Chains: ethereum, mode
-- Contract surface: 11 unique implementations (15 raw deployments)
-- DeFi Llama TVL: $10,730,444.00
+- Generated: 2026-06-14T04:27:09.753Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
+- Chains: ethereum, linea, mode
+- Contract surface: 15 unique implementations (21 raw deployments)
+- DeFi Llama TVL: $1,401,973.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -25,12 +25,12 @@ The governance family (GnosisSafeProxy) likely manages upgrades and parameters f
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 0/5 (0.0%)
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 9
-- Unique implementations: 11
-- Raw deployments: 15
+- Unverified implementations: 10
+- Unique implementations: 15
+- Raw deployments: 21
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -49,10 +49,13 @@ The governance family (GnosisSafeProxy) likely manages upgrades and parameters f
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| Actions | unknown | mode | 2 deployments: mode [`0x576c9a...182d1e`](./contracts/mode-34443/0x576c9a3dad2175964ad72fd6c097566e38182d1e/); linea `0xc88d43...d6f891` | ⚠️ Unaudited |
+| CRPFactory | registry | linea | [`0x90ac49...61f86f`](./contracts/linea-59144/0x90ac490b6d384290618c61e49182b3d3cc61f86f/) | ⚠️ Unaudited |
+| Factory | registry | mode | 2 deployments: mode [`0x09dfee...b0d17b`](./contracts/mode-34443/0x09dfee598d5217da799bead56206bec0fdb0d17b/); linea `0x5c3027...7e88c5` | ⚠️ Unaudited |
 | GnosisSafe | governance | ethereum | [`0xf87709...20e174`](./contracts/ethereum-1/0xf8770931fc94d05ab4982d06bd6572bdf520e174/) | ⚠️ Unaudited |
 | LiquidityPool | core_logic | mode | 5 deployments: mode [`0x02a9ad...db78c0`](./contracts/mode-34443/0x02a9ad4d451407faa6039f07ef596203c0db78c0/); mode `0x26f9fa...cd9805`; mode `0x34075f...879eef`; mode `0x87374d...ed3d0a`; mode `0xbfb3a6...e34c96` | ⚠️ Unaudited |
 
@@ -68,12 +71,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (9)
+### ❓ Unverified (10)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| UnnamedContract | unknown | mode | `0x0c4d31...240a9a` | ❓ Unverified |
 | UnnamedContract | unknown | mode | `0x203cbb...dc7faa` | ❓ Unverified |
 | UnnamedContract | unknown | mode | `0x5d2b9c...242ce3` | ❓ Unverified |
 | UnnamedContract | unknown | mode | `0x5e69d8...7b44bb` | ❓ Unverified |
@@ -95,16 +99,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| mode | [`0x576c9a...182d1e`](./contracts/mode-34443/0x576c9a3dad2175964ad72fd6c097566e38182d1e/) | Actions | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0x09dfee...b0d17b`](./contracts/mode-34443/0x09dfee598d5217da799bead56206bec0fdb0d17b/) | Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | mode | [`0x02a9ad...db78c0`](./contracts/mode-34443/0x02a9ad4d451407faa6039f07ef596203c0db78c0/) | LiquidityPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 10 |
-| upstream | 1 |
+| native | 12 |
+| upstream | 2 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

@@ -46,7 +46,7 @@
 | [alphagrowth](./alphagrowth/) | $7.4M | 14.3% | $7.4M | active | 16 | 40 | 2026-06-13 |
 | [alphaping](./alphaping/) | $73.6M | 0.0% | $73.6M | active | 0 | 4 | 2026-06-12 |
 | [alphasec](./alphasec/) | $496.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [alphax](./alphax/) | $218.2K | 0.0% | $218.2K | active | 1 | 1 | 2026-06-10 |
+| [alphax](./alphax/) | $1.2M | 0.0% | $1.2M | active | 1 | 2 | 2026-06-14 |
 | [alphbanx](./alphbanx/) | $391.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [altitude.fi](./altitude.fi/) | $16.1M | 72.2% | ? | declining | 7 | 124 | 2026-06-10 |
 | [altitude](./altitude/) | $33.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -331,7 +331,7 @@
 | [depth](./depth/) | $1.2M | 0.0% | ? | declining | 0 | 1 | 2026-06-10 |
 | [deri](./deri/) | $2.4K | 13.9% | $2.4K | active | 8 | 868 | 2026-06-10 |
 | [derivadex](./derivadex/) | $1.6M | 0.0% | ? | declining | 0 | 8 | 2026-06-14 |
-| [desyn-protocol](./desyn-protocol/) | $10.7M | 0.0% | ? | declining | 0 | 11 | 2026-06-10 |
+| [desyn-protocol](./desyn-protocol/) | $1.4M | 0.0% | ? | declining | 0 | 15 | 2026-06-14 |
 | [dev-protocol](./dev-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [devil-finance](./devil-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dexalot](./dexalot/) | $4.2M | 16.7% | ? | active | 6 | 6 | 2026-06-12 |
@@ -866,7 +866,7 @@
 | [orbiter-one](./orbiter-one/) | $77.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [orchai](./orchai/) | $307.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [orcus-finance](./orcus-finance/) | $362.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [osl](./osl/) | $92.6M | 0.0% | ? | active | 0 | 4 | 2026-06-12 |
+| [osl](./osl/) | $92.6M | 0.0% | ? | active | 0 | 4 | 2026-06-14 |
 | [osmosis-dex](./osmosis-dex/) | $18.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [ostium](./ostium/) | $29.1M | 47.1% | ? | active | 7 | 17 | 2026-06-11 |
 | [otsea](./otsea/) | $393.8K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
@@ -1084,7 +1084,7 @@
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |
 | [smartcoin](./smartcoin/) | $949.6 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [smartcredit](./smartcredit/) | $769.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [smilee-finance](./smilee-finance/) | $1.1M | 0.0% | ? | active | 3 | 186 | 2026-06-11 |
+| [smilee-finance](./smilee-finance/) | $1.1M | 23.3% | ? | active | 3 | 194 | 2026-06-14 |
 | [smoothy](./smoothy/) | $478.6K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 12 | 2026-06-11 |
 | [snuggle](./snuggle/) | $0.0 | 23.5% | $0.0 | active | 3 | 88 | 2026-06-11 |
@@ -1317,6 +1317,7 @@
 | [velora](./velora/) | $248.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [velvet.capital](./velvet.capital/) | $95.2M | 77.8% | $95.2M | declining | 13 | 420 | 2026-06-11 |
 | [veno-finance](./veno-finance/) | $37.5M | 0.0% | ? | active | 3 | 51 | 2026-06-12 |
+| [venombridge](./venombridge/) | $860.4K | 0.0% | ? | declining | 1 | 2 | 2026-06-14 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | active | 2 | 4 | 2026-06-11 |
 | [verio](./verio/) | $7.2M | 0.0% | ? | unknown | 11 | 0 | 2026-06-11 |
 | [verocket](./verocket/) | $19.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

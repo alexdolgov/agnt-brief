@@ -1,0 +1,17 @@
+{
+  "address": "0xf2133a7140b928a4dc0e52dafabc454a81df88f2",
+  "chain_id": 80094,
+  "contract_name": "NodeFeeReceiver",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "0000000000000000000000003f7755117f1fec1981aefb01887240dbf5f2ebce",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T04:29:07.479Z"
+}

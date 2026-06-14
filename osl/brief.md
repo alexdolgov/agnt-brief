@@ -5,8 +5,8 @@
 - Project: OSL (`osl`)
 - Website: [https://www.osl.com/en](https://www.osl.com/en)
 - Lifecycle: active (Tier 0, 60% below peak)
-- Generated: 2026-06-12T19:08:27.687Z
-- Pipeline run: v2-pipeline-2026-06-12-546062-9988
+- Generated: 2026-06-14T04:18:36.204Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
 - Chains: scroll
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $92,558,443.35

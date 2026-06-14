@@ -1,6 +1,6 @@
 # smilee-finance — Contract Index
 
-186 unique implementations across 2 chains · 223 deployments · 0 audited · 23 unaudited · 163 unverified
+194 unique implementations across 2 chains · 232 deployments · 7 audited · 23 unaudited · 164 unverified
 
 ## adapter (1)
 
@@ -22,15 +22,17 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [FeeManager](./arbitrum-42161/0xff7699c47326516759be8902e87d09bcf4700d75/) | arbitrum | [`0xff7699...700d75`](./arbitrum-42161/0xff7699c47326516759be8902e87d09bcf4700d75/) | ⚠️ Unaudited | Verified |
-| [GBeraAssetManager](./berachain-80094/0x3f7755117f1fec1981aefb01887240dbf5f2ebce/) | berachain | [`0x3f7755...f2ebce`](./berachain-80094/0x3f7755117f1fec1981aefb01887240dbf5f2ebce/) | ⚠️ Unaudited | Verified |
+| [GBeraAssetManager (2 deployments)](./berachain-80094/0x3f7755117f1fec1981aefb01887240dbf5f2ebce/) | berachain | 2 deployments: berachain [`0x3f7755...f2ebce`](./berachain-80094/0x3f7755117f1fec1981aefb01887240dbf5f2ebce/); berachain `0xd7db4b...364602` | ✅ Audited | Verified |
 | [PositionManager (3 deployments)](./arbitrum-42161/0x49a07a6ba53f600106055764cb35f30a6c34056a/) | arbitrum | 3 deployments: arbitrum [`0x49a07a...34056a`](./arbitrum-42161/0x49a07a6ba53f600106055764cb35f30a6c34056a/); arbitrum `0x838370...05fee6`; arbitrum `0xabb4e0...fa10cb` | ⚠️ Unaudited | Verified |
 | [TimeLock](./arbitrum-42161/0x2f8b57d0d542945986250e51b9fb0059f095ae80/) | arbitrum | [`0x2f8b57...95ae80`](./arbitrum-42161/0x2f8b57d0d542945986250e51b9fb0059f095ae80/) | ⚠️ Unaudited | Verified |
 
-## operational_periphery (1)
+## operational_periphery (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [MarketOracle (2 deployments)](./arbitrum-42161/0x121e694d4f4fafee48a2a6ab69a96daa04ec70f6/) | arbitrum | 2 deployments: arbitrum [`0x121e69...ec70f6`](./arbitrum-42161/0x121e694d4f4fafee48a2a6ab69a96daa04ec70f6/); arbitrum `0x130648...7cd0d5` | ⚠️ Unaudited | Verified |
+| [NodeWithdrawalVault](./berachain-80094/0x333bd3beb65f965eea04999ba3c0349a596e9ffe/) | berachain | [`0x333bd3...6e9ffe`](./berachain-80094/0x333bd3beb65f965eea04999ba3c0349a596e9ffe/) | ✅ Audited | Verified |
+| [WithdrawalQueue](./berachain-80094/0xab70753ab7b5b244a2f0de32208c0e7531f0c4f1/) | berachain | [`0xab7075...f0c4f1`](./berachain-80094/0xab70753ab7b5b244a2f0de32208c0e7531f0c4f1/) | ✅ Audited | Verified |
 
 ## periphery (1)
 
@@ -38,11 +40,12 @@
 |---|---|---|---|---|
 | [AmountHelper](./arbitrum-42161/0xe1b1a246a6363b88654351554ce4d82c5135979c/) | arbitrum | [`0xe1b1a2...35979c`](./arbitrum-42161/0xe1b1a246a6363b88654351554ce4d82c5135979c/) | ⚠️ Unaudited | Verified |
 
-## registry (2)
+## registry (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AddressProvider (2 deployments)](./arbitrum-42161/0x110a3b051397956d69733b6fe947648bb9062cf1/) | arbitrum | 2 deployments: arbitrum [`0x110a3b...062cf1`](./arbitrum-42161/0x110a3b051397956d69733b6fe947648bb9062cf1/); arbitrum `0x4e5af7...80546e` | ⚠️ Unaudited | Verified |
+| [NodeRegistry](./berachain-80094/0x5dbffcde23ab53f128c1c82796d0f971d0102137/) | berachain | [`0x5dbffc...102137`](./berachain-80094/0x5dbffcde23ab53f128c1c82796d0f971d0102137/) | ✅ Audited | Verified |
 | [Registry](./arbitrum-42161/0x8682ead63e4934fbd35162df3fe4dae9b826732e/) | arbitrum | [`0x8682ea...26732e`](./arbitrum-42161/0x8682ead63e4934fbd35162df3fe4dae9b826732e/) | ⚠️ Unaudited | Verified |
 
 ## token (2)
@@ -52,16 +55,19 @@
 | [IGAccessNFT](./arbitrum-42161/0x3d4d50654574f8c8fd417fc77adf5c6165f6dceb/) | arbitrum | [`0x3d4d50...f6dceb`](./arbitrum-42161/0x3d4d50654574f8c8fd417fc77adf5c6165f6dceb/) | ⚠️ Unaudited | Verified |
 | [TokensPair (3 deployments)](./arbitrum-42161/0x082e02d16bcd9fc73be6a862070a56c7016ac6bf/) | arbitrum | 3 deployments: arbitrum [`0x082e02...6ac6bf`](./arbitrum-42161/0x082e02d16bcd9fc73be6a862070a56c7016ac6bf/); arbitrum `0xd92d3c...40ffea`; arbitrum `0xfb84f1...11a5ad` | ⚠️ Unaudited | Verified |
 
-## unknown (171)
+## unknown (176)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AmountsMath (5 deployments)](./arbitrum-42161/0x123dbfc7865350149ff827084b7a95e3fd5a4e09/) | arbitrum | 5 deployments: arbitrum [`0x123dbf...5a4e09`](./arbitrum-42161/0x123dbfc7865350149ff827084b7a95e3fd5a4e09/); arbitrum `0x91869f...417b70`; arbitrum `0xa231a8...242b4f`; arbitrum `0xaa1ebd...61b536`; arbitrum `0xf0162a...af20ca` | ⚠️ Unaudited | Verified |
+| [ChainlinkPriceOracle](./arbitrum-42161/0x60b48242e139b2932f7ccf47be10ce9b09cfe0bc/) | arbitrum | [`0x60b482...cfe0bc`](./arbitrum-42161/0x60b48242e139b2932f7ccf47be10ce9b09cfe0bc/) | ⚠️ Unaudited | Verified |
 | [EpochFrequency (2 deployments)](./arbitrum-42161/0xf141e7bced2e300bf301eab47d5da537ecbff4a3/) | arbitrum | 2 deployments: arbitrum [`0xf141e7...bff4a3`](./arbitrum-42161/0xf141e7bced2e300bf301eab47d5da537ecbff4a3/); arbitrum `0xfbf712...554792` | ⚠️ Unaudited | Verified |
 | [Finance](./arbitrum-42161/0x1e5132a2636deb590521ad0efbd8ff8ffc7517e5/) | arbitrum | [`0x1e5132...7517e5`](./arbitrum-42161/0x1e5132a2636deb590521ad0efbd8ff8ffc7517e5/) | ⚠️ Unaudited | Verified |
 | [FinanceIGPayoff (5 deployments)](./arbitrum-42161/0x07c9707cb86b236cc8cce3f6de41d80baac7467c/) | arbitrum | 5 deployments: arbitrum [`0x07c970...c7467c`](./arbitrum-42161/0x07c9707cb86b236cc8cce3f6de41d80baac7467c/); arbitrum `0x4c0418...757f97`; arbitrum `0x6b8b6d...8ce95a`; arbitrum `0x7b2eaf...c53be7`; arbitrum `0xb68271...70d284` | ⚠️ Unaudited | Verified |
 | [FinanceIGVega](./arbitrum-42161/0xb13170e36007a09d6962e23cbef5c50b775b9738/) | arbitrum | [`0xb13170...5b9738`](./arbitrum-42161/0xb13170e36007a09d6962e23cbef5c50b775b9738/) | ⚠️ Unaudited | Verified |
+| [GBera](./berachain-80094/0x3b3dd22625128ff1548110f9b7bc702f540668e2/) | berachain | [`0x3b3dd2...0668e2`](./berachain-80094/0x3b3dd22625128ff1548110f9b7bc702f540668e2/) | ✅ Audited | Verified |
 | [IG (9 deployments)](./arbitrum-42161/0x1e0aa028fcbe1fcd5b6b8394e5eacfaa6fc5c016/) | arbitrum | 9 deployments: arbitrum [`0x1e0aa0...c5c016`](./arbitrum-42161/0x1e0aa028fcbe1fcd5b6b8394e5eacfaa6fc5c016/); arbitrum `0x1ee870...9f003f`; arbitrum `0x4e5121...00c933`; arbitrum `0x521e16...7b7153`; arbitrum `0x550f20...3361b8`; arbitrum `0x70def9...0548ae`; arbitrum `0x9650a8...e86f77`; arbitrum `0xc5cd71...fc4fac`; arbitrum `0xc9293c...fed768` | ⚠️ Unaudited | Verified |
+| [NodeFeeReceiver](./berachain-80094/0xf2133a7140b928a4dc0e52dafabc454a81df88f2/) | berachain | [`0xf2133a...df88f2`](./berachain-80094/0xf2133a7140b928a4dc0e52dafabc454a81df88f2/) | ✅ Audited | Verified |
 | [Position](./arbitrum-42161/0xa452e8cd1a0028516fa75ddf0521b51f746a02bf/) | arbitrum | [`0xa452e8...6a02bf`](./arbitrum-42161/0xa452e8cd1a0028516fa75ddf0521b51f746a02bf/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | arbitrum | `0x038093...1ec40f` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0x05dcaf...237449` | ❓ Unverified | Unverified |
@@ -226,4 +232,6 @@
 | UnnamedContract | arbitrum | `0xfedaa8...5bd117` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xff12b3...9e54df` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xffd8f9...61ef53` | ❓ Unverified | Unverified |
+| UnnamedContract | berachain | `0xb76ae8...25693f` | ❓ Unverified | Unverified |
 | [WadTime (3 deployments)](./arbitrum-42161/0x01a0ce0c6351a9b39b2c3c43d5175a11336eefd8/) | arbitrum | 3 deployments: arbitrum [`0x01a0ce...6eefd8`](./arbitrum-42161/0x01a0ce0c6351a9b39b2c3c43d5175a11336eefd8/); arbitrum `0x9f57d3...b95310`; arbitrum `0xed09db...8cdf5d` | ⚠️ Unaudited | Verified |
+| [WGBera](./berachain-80094/0xd77552d3849ab4d8c3b189a9582d0ba4c1f4f912/) | berachain | [`0xd77552...f4f912`](./berachain-80094/0xd77552d3849ab4d8c3b189a9582d0ba4c1f4f912/) | ✅ Audited | Verified |

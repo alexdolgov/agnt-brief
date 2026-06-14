@@ -166,7 +166,7 @@ Each project directory contains:
 | [intentx](./intentx/brief.md) | $5.67M | 4 | 65 | 34/65 (52%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $10.51M |
 | [40-acres](./40-acres/brief.md) | $32.91M | 4 | 325 | 170/325 (52%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $10.02M |
 | [woofi](./woofi/brief.md) | $21.33M | 12 | 200 | 84/200 (42%) | 18.8% | 0.0% (-) | 4 | aging | ⚠️ declining | $9.66M |
-| [polkastarter](./polkastarter/brief.md) | $3.00M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $9.61M |
+| [polkastarter](./polkastarter/brief.md) | $2.73M | bsc, ethereum | 3 | 3/3 (100%) | 33.3% | 0.0% (-) | 1 | stale | ✅ active | $9.61M |
 | [inception](./inception/brief.md) | $5.86M | 9 | 78 | 64/78 (82%) | 24.6% | 0.0% (-) | 8 | aging | ⚠️ declining | $9.53M |
 | [kaito](./kaito/brief.md) | $15.83M | base | 4 | 3/4 (75%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $9.48M |
 | [dao-maker](./dao-maker/brief.md) | $2.00M | ethereum | 17 | 4/17 (24%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $9.34M |
@@ -221,7 +221,7 @@ Each project directory contains:
 | [parallel-protocol](./parallel-protocol/brief.md) | $3.90M | 19 | 38 | 26/38 (68%) | 3.8% | 0.0% (-) | 2 | aging | ✅ active | $2.98M |
 | [pickle](./pickle/brief.md) | $4.65M | ethereum | 235 | 148/235 (63%) | 2.7% | 0.0% (-) | 2 | stale | ⚠️ declining | $2.88M |
 | [morph-bridge](./morph-bridge/brief.md) | $13.44M | ethereum | 17 | 17/17 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.85M |
-| [ethereal-season-zero](./ethereal-season-zero/brief.md) | $2.85M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $2.82M |
+| [ethereal-season-zero](./ethereal-season-zero/brief.md) | $2.63M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $2.82M |
 | [izumi-finance](./izumi-finance/brief.md) | $3.45M | 15 | 187 | 21/187 (11%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.76M |
 | [iaero-protocol](./iaero-protocol/brief.md) | $1.56M | base | 46 | 40/46 (87%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.73M |
 | [singularity-finance](./singularity-finance/brief.md) | $4.72M | base, ethereum | 10 | 10/10 (100%) | 70.0% | 0.0% (-) | 1 | fresh | ❓ unknown | $2.69M |
@@ -229,7 +229,7 @@ Each project directory contains:
 | [sperax](./sperax/brief.md) | $2.06M | arbitrum, bsc, ethereum | 142 | 34/142 (24%) | 47.1% | 8.8% (SlowMist) | 7 | stale | ⚠️ declining | $2.63M |
 | [mezo-bridge](./mezo-bridge/brief.md) | $16.86M | ethereum | 26 | 26/26 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.63M |
 | [loopring](./loopring/brief.md) | $8.55M | base, ethereum | 141 | 72/141 (51%) | 8.1% | 0.0% (-) | 1 | stale | ⚠️ declining | $2.43M |
-| [iotube](./iotube/brief.md) | $3.29M | bsc, ethereum, polygon | 39 | 15/39 (38%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.23M |
+| [iotube](./iotube/brief.md) | $2.75M | bsc, ethereum, polygon | 39 | 15/39 (38%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.23M |
 | [b-lucky](./b-lucky/brief.md) | $1.02M | bsc | 16 | 1/16 (6%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $2.20M |
 | [revert](./revert/brief.md) | $7.43M | 8 | 84 | 18/84 (21%) | 11.1% | 0.0% (-) | 2 | aging | ✅ active | $2.09M |
 | [stusdt](./stusdt/brief.md) | $60.24M | ethereum | 12 | 4/12 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.87M |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-14T07:21:32.709Z_
+_Generated: 2026-06-14T09:01:45.248Z_
 _Projects: 1409_

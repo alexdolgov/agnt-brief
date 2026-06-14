@@ -7,11 +7,11 @@
 - Project: ioTube (`iotube`)
 - Website: [https://iotube.org](https://iotube.org)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T00:10:04.957Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-14T08:13:30.836Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
 - Chains: bsc, ethereum, polygon
-- Contract surface: 39 unique implementations (96 raw deployments)
-- DeFi Llama TVL: $3,291,693.13
+- Contract surface: 39 unique implementations (97 raw deployments)
+- DeFi Llama TVL: $2,752,129.96
 - On-chain TVL (included contracts): $2,232,712.67
 - TVL by chain: Ethereum $1,885,249.34 | Bsc $243,957.22 | Polygon $103,506.11
 
@@ -30,7 +30,7 @@ The chain-specific families (BSC, Ethereum, Polygon) share a common architecture
 - Verified by bytecode match: 1
 - Unverified implementations: 23
 - Unique implementations: 39
-- Raw deployments: 96
+- Raw deployments: 97
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $2,232,712.67
@@ -56,7 +56,7 @@ The chain-specific families (BSC, Ethereum, Polygon) share a common architecture
 | CrosschainERC20 | token | bsc | 8 deployments: ethereum `0x300211...74d388`; ethereum `0x30e68f...f40c63`; ethereum `0x9f90b4...1d8fe1`; ethereum `0xb0ed1f...6f5275`; ethereum `0xf79dea...b77e68`; bsc [`0x2aaf50...b60598`](./contracts/bsc-56/0x2aaf50869739e317ab80a57bf87caa35f5b60598/); bsc `0x8dfb10...b37d43`; polygon `0x300211...74d388` | ⚠️ Unaudited |
 | TokenSafe | token | bsc | 4 deployments: ethereum `0xc2e0f3...7f0d7a`; bsc [`0xa239f0...399e45`](./contracts/bsc-56/0xa239f03cda98a7d2aaaa51e7bf408e5d73399e45/); bsc `0xfbe9a4...c4ce4b`; polygon [`0xa239f0...399e45`](./contracts/polygon-137/0xa239f03cda98a7d2aaaa51e7bf408e5d73399e45/) | ⚠️ Unaudited |
 | TokenCashierWithPayload | token | ethereum | 5 deployments: ethereum [`0x1b9aa8...43bac4`](./contracts/ethereum-1/0x1b9aa865d74b2b77ffdbcf507b56a7b3ab43bac4/); ethereum `0xd57bde...a8d7d4`; bsc `0x78de1e...940204`; polygon `0x6bba6b...21e049`; polygon `0x990b50...18d731` | ⚠️ Unaudited |
-| CrosschainTokenCashierRouter | adapter | ethereum | 3 deployments: ethereum [`0x4c8d28...866044`](./contracts/ethereum-1/0x4c8d28345db8cb3284d50dd4b8d660ace7866044/); ethereum `0xc0ee09...606882`; ethereum `0xc7ac44...91d7b2` | ⚠️ Unaudited |
+| CrosschainTokenCashierRouter | adapter | bsc | 4 deployments: ethereum `0x4c8d28...866044`; ethereum `0xc0ee09...606882`; ethereum `0xc7ac44...91d7b2`; bsc [`0x2a26fe...48391a`](./contracts/bsc-56/0x2a26fede01bfa03e65cd3c68f421cab83648391a/) | ⚠️ Unaudited |
 | CrosschainTokenCashierRouterWithoutPreapproval | adapter | ethereum | [`0xc2a855...7395c2`](./contracts/ethereum-1/0xc2a855056453a8c81d154b47e926f0c46c7395c2/) | ⚠️ Unaudited |
 | CrosschainTokenCashierWithPayloadRouter | adapter | polygon | 2 deployments: ethereum `0x3030bd...d33305`; polygon [`0x2c43e5...a713a8`](./contracts/polygon-137/0x2c43e50fbdd5fa3ea4e10a5445274b4013a713a8/) | ⚠️ Unaudited |
 | MinterPool | core_logic | bsc | 10 deployments: ethereum `0x964f4f...f63b45`; bsc [`0x12af43...a30a5f`](./contracts/bsc-56/0x12af43ef94b05a0a3447a05eee629c7d88a30a5f/); bsc `0xd2165d...1ee623`; bsc `0xf72cfb...1a29be`; polygon [`0x12af43...a30a5f`](./contracts/polygon-137/0x12af43ef94b05a0a3447a05eee629c7d88a30a5f/); polygon `0x3233eb...f4b71c`; polygon `0x4799d5...a5a454`; polygon `0x5cc65d...25e676`; polygon `0xa1dae1...db50f9`; polygon `0xb525af...6c82b0` | ⚠️ Unaudited |
@@ -128,7 +128,7 @@ Verified + unaudited native implementations ranked by TVL:
 | bsc | [`0xa239f0...399e45`](./contracts/bsc-56/0xa239f03cda98a7d2aaaa51e7bf408e5d73399e45/) | TokenSafe | token | $216,189.47 | Verified native implementation with $216,189.47 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1b9aa8...43bac4`](./contracts/ethereum-1/0x1b9aa865d74b2b77ffdbcf507b56a7b3ab43bac4/) | TokenCashierWithPayload | token | $225.35 | Verified native implementation with $225.35 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x03f353...a34284`](./contracts/ethereum-1/0x03f353dd6a5d65d533f4746aebc927e7fea34284/) | CrosschainERC20V2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4c8d28...866044`](./contracts/ethereum-1/0x4c8d28345db8cb3284d50dd4b8d660ace7866044/) | CrosschainTokenCashierRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x2a26fe...48391a`](./contracts/bsc-56/0x2a26fede01bfa03e65cd3c68f421cab83648391a/) | CrosschainTokenCashierRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc2a855...7395c2`](./contracts/ethereum-1/0xc2a855056453a8c81d154b47e926f0c46c7395c2/) | CrosschainTokenCashierRouterWithoutPreapproval | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x2c43e5...a713a8`](./contracts/polygon-137/0x2c43e50fbdd5fa3ea4e10a5445274b4013a713a8/) | CrosschainTokenCashierWithPayloadRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x12af43...a30a5f`](./contracts/bsc-56/0x12af43ef94b05a0a3447a05eee629c7d88a30a5f/) | MinterPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |

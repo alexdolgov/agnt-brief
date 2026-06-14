@@ -393,7 +393,7 @@
 | [eralend](./eralend/) | $73.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [eth-strategy](./eth-strategy/) | $30.8M | 0.0% | $30.8M | active | 1 | 50 | 2026-06-13 |
 | [ethereal-dex](./ethereal-dex/) | $30.7M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
-| [ethereal-season-zero](./ethereal-season-zero/) | $2.8M | 0.0% | $2.8M | dead | 4 | 1 | 2026-05-24 |
+| [ethereal-season-zero](./ethereal-season-zero/) | $2.8M | 0.0% | $2.8M | dead | 4 | 1 | 2026-06-14 |
 | [etherex](./etherex/) | $1.4M | 36.2% | ? | declining | 4 | 58 | 2026-06-11 |
 | [etherflip](./etherflip/) | $1.6M | 0.0% | ? | active | 0 | 7 | 2026-06-10 |
 | [etherfuse](./etherfuse/) | $16.2K | 0.0% | $16.2K | active | 0 | 26 | 2026-06-13 |
@@ -522,7 +522,7 @@
 | [hemibtc](./hemibtc/) | $46.2K | 0.0% | $46.2K | active | 5 | 46 | 2026-06-12 |
 | [henjin-dex](./henjin-dex/) | $1.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [hera-finance](./hera-finance/) | $6.2M | 27.3% | ? | active | 3 | 37 | 2026-06-14 |
-| [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-06-10 |
+| [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-06-14 |
 | [hodltree](./hodltree/) | $1.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [holdstation](./holdstation/) | $19.7K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [honeyfarm](./honeyfarm/) | $1.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -581,7 +581,7 @@
 | [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | active | 7 | 154 | 2026-06-11 |
 | [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-06-11 |
 | [iotabee](./iotabee/) | $3.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 39 | 2026-06-11 |
+| [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 39 | 2026-06-14 |
 | [iq](./iq/) | $23.9M | 0.0% | $23.9M | active | 0 | 2 | 2026-06-11 |
 | [iron-bank](./iron-bank/) | $676.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ithaca-protocol](./ithaca-protocol/) | $12.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
@@ -918,7 +918,7 @@
 | [ploutos-money](./ploutos-money/) | $483.1 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [pnetwork](./pnetwork/) | $13.1M | 0.0% | ? | declining | 0 | 12 | 2026-06-12 |
 | [polkamarkets](./polkamarkets/) | $12.6K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
-| [polkastarter](./polkastarter/) | $9.6M | 0.0% | $9.6M | active | 3 | 2 | 2026-06-11 |
+| [polkastarter](./polkastarter/) | $9.6M | 33.3% | $9.6M | active | 3 | 3 | 2026-06-14 |
 | [polydex](./polydex/) | $2.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [polygon-zkevm-bridge](./polygon-zkevm-bridge/) | $69.4M | 0.0% | ? | unknown | 0 | 14 | 2026-06-12 |
 | [polygonfarm-finance](./polygonfarm-finance/) | $51.5K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |

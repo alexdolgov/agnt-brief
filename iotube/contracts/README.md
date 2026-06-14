@@ -1,12 +1,12 @@
 # iotube — Contract Index
 
-39 unique implementations across 3 chains · 96 deployments · 0 audited · 16 unaudited · 23 unverified
+39 unique implementations across 3 chains · 97 deployments · 0 audited · 16 unaudited · 23 unverified
 
 ## adapter (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [CrosschainTokenCashierRouter (3 deployments)](./ethereum-1/0x4c8d28345db8cb3284d50dd4b8d660ace7866044/) | ethereum | 3 deployments: ethereum [`0x4c8d28...866044`](./ethereum-1/0x4c8d28345db8cb3284d50dd4b8d660ace7866044/); ethereum `0xc0ee09...606882`; ethereum `0xc7ac44...91d7b2` | ⚠️ Unaudited | Verified |
+| [CrosschainTokenCashierRouter (4 deployments)](./bsc-56/0x2a26fede01bfa03e65cd3c68f421cab83648391a/) | bsc | 4 deployments: ethereum `0x4c8d28...866044`; ethereum `0xc0ee09...606882`; ethereum `0xc7ac44...91d7b2`; bsc [`0x2a26fe...48391a`](./bsc-56/0x2a26fede01bfa03e65cd3c68f421cab83648391a/) | ⚠️ Unaudited | Verified |
 | [CrosschainTokenCashierRouterWithoutPreapproval](./ethereum-1/0xc2a855056453a8c81d154b47e926f0c46c7395c2/) | ethereum | [`0xc2a855...7395c2`](./ethereum-1/0xc2a855056453a8c81d154b47e926f0c46c7395c2/) | ⚠️ Unaudited | Verified |
 | [CrosschainTokenCashierWithPayloadRouter (2 deployments)](./polygon-137/0x2c43e50fbdd5fa3ea4e10a5445274b4013a713a8/) | polygon | 2 deployments: ethereum `0x3030bd...d33305`; polygon [`0x2c43e5...a713a8`](./polygon-137/0x2c43e50fbdd5fa3ea4e10a5445274b4013a713a8/) | ⚠️ Unaudited | Verified |
 

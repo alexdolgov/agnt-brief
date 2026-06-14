@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ethereal-season-zero",
-  "generated_at": "2026-05-24T09:40:24.823Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-14T08:06:58.494Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-403f",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "ethereal-season-zero",
@@ -45,7 +45,7 @@
     "coverage_pct": 0,
     "total_audits": 4,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2854620.48891,
+    "dl_tvl_usd": 2628769.21057,
     "tvl_usd": 2820387.978379198,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -68,9 +68,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Ethereal Season Zero is a farming protocol that allows users to deposit assets into a pre-deposit vault to earn rewards.",
-    "relationship_narrative": "The protocol consists of a single product family with one core vault contract; there are no supporting contracts or shared infrastructure.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

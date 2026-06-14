@@ -5,11 +5,11 @@
 - Project: HiYield (`hiyield`)
 - Website: [https://www.hiyield.xyz](https://www.hiyield.xyz)
 - Lifecycle: active (Tier 0, 33.6% below peak)
-- Generated: 2026-06-10T23:50:21.811Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
+- Generated: 2026-06-14T08:08:07.486Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
 - Chains: avalanche, canto, ethereum
 - Contract surface: 4 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $2,727,183.81
+- DeFi Llama TVL: $2,729,501.64
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -88,10 +88,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

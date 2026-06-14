@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "polkastarter",
-  "generated_at": "2026-06-11T01:57:24.583Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-14T08:10:42.832Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-403f",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "polkastarter",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
-    "audited_contracts": 0,
+    "total_contracts": 3,
+    "total_addresses": 4,
+    "unique_implementations": 3,
+    "total_deployments": 4,
+    "audited_contracts": 1,
     "unaudited_contracts": 2,
-    "contracts_verified_audited": 0,
+    "contracts_verified_audited": 1,
     "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 33.3,
     "total_audits": 3,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 2996295.2069,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 2731722.0607000003,
     "tvl_usd": 9606725.608491847,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -44,6 +44,7 @@
     "asd_usd": 9606725.608491847,
     "website_url": "https://polkastarter.com/#upcoming-projects",
     "chains": [
+      "bsc",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -63,7 +64,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 3,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -78,7 +79,7 @@
       "address": "0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa",
       "name": "PolkastarterToken",
       "role": "token",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Polkastarter",
       "tvl_usd": 9606725.608491847,
@@ -109,7 +110,7 @@
       "address": "0xa8ff9e209e70ccbde820b75c51ece964ee165e04",
       "name": "PolkastarterDistributionContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -133,6 +134,48 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc24a365a870821eb83fd216c9596edd89479d8d7",
+      "name": "PolsStake",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PolsStake",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc24a365a870821eb83fd216c9596edd89479d8d7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd558675a8c8e1fd45002010bac970b115163de3a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-8150"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -149,12 +192,14 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "PolsStake"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": false,
       "repo_reference_count": 0
     },
     {
@@ -200,45 +245,32 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [
+  "auditor_coverage": [
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa",
-      "name": "PolkastarterToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 9606725.608491847,
-      "risk_note": "Verified native implementation with $9,606,725.61 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa8ff9e209e70ccbde820b75c51ece964ee165e04",
-      "name": "PolkastarterDistributionContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 33.3,
+      "latest_audit": "2021-06"
     }
   ],
+  "coverage_gaps": [],
   "origin_summary": {
-    "native": 2,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 3
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 2
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 8150,
-        "report_name": "38f5ef00-1d8b-452f-bd87-317cedba47b3.pdf"
-      },
       {
         "audit_id": 8151,
         "report_name": "MythX_95814d21d1b04aad491b65fc.pdf"

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "iotube",
-  "generated_at": "2026-06-11T00:10:04.957Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
+  "generated_at": "2026-06-14T08:13:30.836Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-403f",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "iotube",
@@ -33,9 +33,9 @@
   },
   "summary": {
     "total_contracts": 39,
-    "total_addresses": 96,
+    "total_addresses": 97,
     "unique_implementations": 39,
-    "total_deployments": 96,
+    "total_deployments": 97,
     "audited_contracts": 0,
     "unaudited_contracts": 16,
     "contracts_verified_audited": 0,
@@ -45,7 +45,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3291693.1287699994,
+    "dl_tvl_usd": 2752129.96001,
     "tvl_usd": 2232712.665422314,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -445,9 +445,9 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4c8d28345db8cb3284d50dd4b8d660ace7866044",
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x2a26fede01bfa03e65cd3c68f421cab83648391a",
       "name": "CrosschainTokenCashierRouter",
       "role": "adapter",
       "origin_kind": "native",
@@ -480,6 +480,15 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xc7ac449979e7038691c154210e301db21091d7b2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x2a26fede01bfa03e65cd3c68f421cab83648391a",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1853,9 +1862,9 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4c8d28345db8cb3284d50dd4b8d660ace7866044",
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x2a26fede01bfa03e65cd3c68f421cab83648391a",
       "name": "CrosschainTokenCashierRouter",
       "role": "adapter",
       "origin_kind": "native",

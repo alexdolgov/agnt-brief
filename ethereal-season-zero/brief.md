@@ -7,21 +7,22 @@
 - Project: Ethereal Season Zero (`ethereal-season-zero`)
 - Website: [https://www.ethereal.trade/](https://www.ethereal.trade/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-24T09:40:24.823Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-14T08:06:58.494Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $2,854,620.49
+- DeFi Llama TVL: $2,628,769.21
 - On-chain TVL (included contracts): $2,820,387.98
 - TVL by chain: Ethereum $2,820,387.98
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Ethereal Season Zero is a farming protocol that allows users to deposit assets into a pre-deposit vault to earn rewards.
-
-### Architecture
-
-The protocol consists of a single product family with one core vault contract; there are no supporting contracts or shared infrastructure.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

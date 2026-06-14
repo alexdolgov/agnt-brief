@@ -1,45 +1,47 @@
 {
   "schema_version": "2.0",
   "project_key": "landx-finance",
-  "generated_at": "2026-06-11T00:32:02.842Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
+  "generated_at": "2026-06-14T10:32:16.088Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-df6c",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "landx-finance",
     "tier": 0,
     "peak_tvl": 2258999,
     "peak_date": "2024-10-07T00:00:00.000Z",
-    "tvl_30d_ago": 1765821,
-    "tvl_90d_ago": 1987697,
-    "tvl_current": 1771049,
+    "tvl_30d_ago": 1768954,
+    "tvl_90d_ago": 1994122,
+    "tvl_current": 1775002,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 2044327,
-    "change_30d_pct": 0.29606624907054563,
-    "change_90d_pct": -10.899447954089583,
-    "days_since_peak": 594,
+    "tvl_180d_ago": 1999665,
+    "change_30d_pct": 0.3418969628379257,
+    "change_90d_pct": -10.988294597823002,
+    "days_since_peak": 615,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 21.600275166124465
+    "drop_from_peak_pct": 21.42528615550516
   },
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 3,
-    "unique_implementations": 3,
-    "total_deployments": 3,
+    "total_contracts": 11,
+    "total_addresses": 14,
+    "unique_implementations": 11,
+    "total_deployments": 14,
     "audited_contracts": 3,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 100,
+    "coverage_pct": 27.3,
     "total_audits": 1,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 1771095.82878,
-    "tvl_usd": 1771095.82878,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "dl_tvl_usd": 1774635.95867,
+    "tvl_usd": 27337.655411,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 27337.66
+    },
+    "asd_usd": 27337.655411,
     "website_url": "https://landx.fi",
     "chains": [
       "ethereum"
@@ -61,7 +63,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 3,
+    "unique_implementations": 11,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -70,6 +72,46 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8c00238b17397a194c4dd5a623b1fcdff684f1d6",
+      "name": "UniswapV3Pool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": 27337.655411,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV3Pool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8c00238b17397a194c4dd5a623b1fcdff684f1d6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 24275.403772,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe819013997b4186e1813590c51837edb491001dc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3062.251639,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -101,6 +143,68 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa6c319a1c3d4ed22d4ee1e6b53d3342cc70a8b53",
+      "name": "KeyProtocolVariables",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "KeyProtocolVariables",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa6c319a1c3d4ed22d4ee1e6b53d3342cc70a8b53",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x08a1c30bbb26425c1031ee9e43fa0b9960742539",
+      "name": "LNDX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LNDX",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x08a1c30bbb26425c1031ee9e43fa0b9960742539",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -168,6 +272,179 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5eb612f924dad205eab02911b198520effe96e5c",
+      "name": "TWAP",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TWAP",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5eb612f924dad205eab02911b198520effe96e5c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xffe9664fb1ffa7325ad7ce389e0a8d1eff471266",
+      "name": "VeLNDX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VeLNDX",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xffe9664fb1ffa7325ad7ce389e0a8d1eff471266",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6fc27f5cc0aafec8e2b8bc4e6393ac89e45232d3",
+      "name": "xBasket",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "xBasket",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6fc27f5cc0aafec8e2b8bc4e6393ac89e45232d3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1b2b0fa9283595f5036c007dd99ed0aa6de8362e",
+      "name": "XToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "XToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1b2b0fa9283595f5036c007dd99ed0aa6de8362e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3356328a3ca51d2664620757bd1c475ca77ffab5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5074c4fa383d63d62d5f531d1cf92125fb39e859",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x189ca29981b6ad3ab01c2959b90eafca637076a8",
+      "name": "xTokenRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "xTokenRouter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x189ca29981b6ad3ab01c2959b90eafca637076a8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -212,14 +489,85 @@
       "auditor": "Quantstamp",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 100,
+      "coverage_pct": 27.3,
       "latest_audit": "2023-02"
     }
   ],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa6c319a1c3d4ed22d4ee1e6b53d3342cc70a8b53",
+      "name": "KeyProtocolVariables",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x08a1c30bbb26425c1031ee9e43fa0b9960742539",
+      "name": "LNDX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5eb612f924dad205eab02911b198520effe96e5c",
+      "name": "TWAP",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xffe9664fb1ffa7325ad7ce389e0a8d1eff471266",
+      "name": "VeLNDX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6fc27f5cc0aafec8e2b8bc4e6393ac89e45232d3",
+      "name": "xBasket",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1b2b0fa9283595f5036c007dd99ed0aa6de8362e",
+      "name": "XToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x189ca29981b6ad3ab01c2959b90eafca637076a8",
+      "name": "xTokenRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 3,
-    "upstream": 0,
+    "native": 10,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 0
   },

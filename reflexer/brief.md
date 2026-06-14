@@ -7,13 +7,13 @@
 - Project: Reflexer (`reflexer`)
 - Website: [https://reflexer.finance/](https://reflexer.finance/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-11T02:16:10.875Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-14T10:38:32.185Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
 - Chains: ethereum
-- Contract surface: 64 unique implementations (85 raw deployments)
-- DeFi Llama TVL: $2,323,116.35
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- Contract surface: 70 unique implementations (93 raw deployments)
+- DeFi Llama TVL: $1,826,511.38
+- On-chain TVL (included contracts): $1,281,929.58
+- TVL by chain: Ethereum $1,281,929.58
 
 ## Project Description
 
@@ -25,33 +25,36 @@ The protocol consists of a single product family with one identified contract, C
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 9/22 (40.9%)
-- Verified + Unaudited implementations: 13
+- Verified implementations audited: 13/28 (46.4%)
+- Verified + Unaudited implementations: 15
 - Verified by bytecode match: 0
 - Unverified implementations: 42
-- Unique implementations: 64
-- Raw deployments: 85
+- Unique implementations: 70
+- Raw deployments: 93
 - Audits discovered: 8
-- Scoreable audits (matched contracts): 3
-- ASD (verified + unaudited TVL): n/a
+- Scoreable audits (matched contracts): 4
+- ASD (verified + unaudited TVL): $1,281,929.58
 - Latest audit: 2022-09 (stale)
 - Staleness: 0 fresh, 0 aging, 7 stale, 1 unknown
-- Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
+- Tier 1 coverage: 14.3% (OpenZeppelin)
+- Note: This protocol is classified as [declining]. ASD of $1,281,929.58 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Quantstamp | Tier 2 | 8 | 36.4% | 2021-10 |
-| Solidified | Tier 2 | 4 | 18.2% | 2022-09 |
+| Quantstamp | Tier 2 | 8 | 28.6% | 2021-10 |
+| OpenZeppelin | Tier 1 | 4 | 14.3% | n/a |
+| Solidified | Tier 2 | 4 | 14.3% | 2022-09 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (9)
+### ✅ Verified + Audited (13)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| AccountingEngine | unknown | ethereum | [`0xcee6aa...f90fce`](./contracts/ethereum-1/0xcee6aa1ab47d0fb0f24f51a3072ec16e20f90fce/) | ✅ Audited |
+| CoinJoin | unknown | ethereum | [`0x0a5653...cfdc45`](./contracts/ethereum-1/0x0a5653cca4db1b6e265f47caf6969e64f1cfdc45/) | ✅ Audited |
 | FsmGovernanceInterface | unknown | ethereum | 2 deployments: ethereum [`0x4778b3...0df22b`](./contracts/ethereum-1/0x4778b3d2cebac0013c15e4b8ebeaa65b630df22b/); ethereum `0xe24f8b...36f533` | ✅ Audited |
 | GebProxyActions | unknown | ethereum | 2 deployments: ethereum [`0x0ae263...07153e`](./contracts/ethereum-1/0x0ae26397e6d456359faf36c770304bbc3607153e/); ethereum `0x880cec...0f64ed` | ✅ Audited |
 | GebProxyIncentivesActions | unknown | ethereum | 2 deployments: ethereum [`0x88a77b...7349e0`](./contracts/ethereum-1/0x88a77b8ff53329f88b8b6f9e29835fec287349e0/); ethereum `0xba2e2e...af3547` | ✅ Audited |
@@ -60,14 +63,18 @@ The protocol consists of a single product family with one identified contract, C
 | GovActions | unknown | ethereum | 2 deployments: ethereum [`0x0463bf...f659ee`](./contracts/ethereum-1/0x0463bf18c2457b00402a7639fa1dfb7d60f659ee/); ethereum `0x8aedaf...03bf76` | ✅ Audited |
 | ProtocolTokenAuthority | governance | ethereum | 2 deployments: ethereum [`0x9b44db...111a50`](./contracts/ethereum-1/0x9b44db6b4aa6ba12aeefbd2db9416b52b5111a50/); ethereum `0xcb8479...22fdc7` | ✅ Audited |
 | RateSetter | unknown | ethereum | 2 deployments: ethereum [`0x005fab...3bf947`](./contracts/ethereum-1/0x005fab4c9d1ef0f3e41cd27b26cf05680c3bf947/); ethereum `0xedeeaf...c6872b` | ✅ Audited |
+| SAFEEngine | unknown | ethereum | [`0xcc88a9...1a6962`](./contracts/ethereum-1/0xcc88a9d330da1133df3a7bd823b95e52511a6962/) | ✅ Audited |
 | StakingRewardsFactory | registry | ethereum | [`0xa706d4...912a20`](./contracts/ethereum-1/0xa706d4c39c315288113020f3e2d7e1095e912a20/) | ✅ Audited |
+| TaxCollector | unknown | ethereum | [`0xcdb05a...a281eb`](./contracts/ethereum-1/0xcdb05aeda142a1b0d6044c09c64e4226c1a281eb/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (13)
+### ⚠️ Verified + Unaudited (15)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| DSDelegateToken | token | ethereum | 2 deployments: ethereum [`0x6243d8...8391f4`](./contracts/ethereum-1/0x6243d8cea23066d098a15582d81a598b4e8391f4/); ethereum `0xfdb58d...40e4b1` | ⚠️ Unaudited |
 | CollateralJoin1 | unknown | ethereum | 2 deployments: ethereum [`0x15b99a...8afb3f`](./contracts/ethereum-1/0x15b99a6389521711c35057fec24baef89f8afb3f/); ethereum `0x2d3cd7...226e3a` | ⚠️ Unaudited |
 | DSCompare | unknown | ethereum | 3 deployments: ethereum [`0x0f2275...5f298d`](./contracts/ethereum-1/0x0f2275ba79bbce0bce0d019011eb0c96735f298d/); ethereum `0x101222...b09c64`; ethereum `0xae69b7...30df2f` | ⚠️ Unaudited |
+| DSRoles | unknown | ethereum | 2 deployments: ethereum [`0x1490a8...c6e25a`](./contracts/ethereum-1/0x1490a828957f1e23491c8d69273d684b15c6e25a/); ethereum `0xe4935d...6d8137` | ⚠️ Unaudited |
 | GebDeployPauseProxyActions | unknown | ethereum | 2 deployments: ethereum [`0x27a54e...22b36d`](./contracts/ethereum-1/0x27a54e99de813ce2e41baa7f44d1f19fba22b36d/); ethereum `0x7b48cd...6dd2bb` | ⚠️ Unaudited |
 | GebPauseScheduleProxyActions | unknown | ethereum | 2 deployments: ethereum [`0x6a2714...194632`](./contracts/ethereum-1/0x6a2714404be6613a952a80266840ffe916194632/); ethereum `0x757003...90bc7e` | ⚠️ Unaudited |
 | GebPollingEmitter | unknown | ethereum | 2 deployments: ethereum [`0xa42f76...7dafd2`](./contracts/ethereum-1/0xa42f76d5362e87192e7bde72199e500a707dafd2/); ethereum `0xf7da96...f04f6f` | ⚠️ Unaudited |
@@ -145,7 +152,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [oz-geb-protocol-audit.pdf](https://github.com/reflexer-labs/geb-audits/blob/master/open-zeppelin/core-contracts/oz-geb-protocol-audit.pdf) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [oz-geb-protocol-audit.pdf](https://github.com/reflexer-labs/geb-audits/blob/master/open-zeppelin/core-contracts/oz-geb-protocol-audit.pdf) | OpenZeppelin | Audit | n/a | unknown | Direct | contract_name | 4 | high |
 | [Reflexer RAI Curve Pool - Report.pdf](https://github.com/reflexer-labs/geb-audits/blob/master/quantstamp/curve/Reflexer%20RAI%20Curve%20Pool%20-%20Report.pdf) | Quantstamp | Audit | 2021-10 | stale | Direct | n/a | 0 | n/a |
 | [Reflexer Helper Contracts - Report.pdf](https://github.com/reflexer-labs/geb-audits/blob/master/quantstamp/helper-contracts/first-audit/Reflexer%20Helper%20Contracts%20-%20Report.pdf) | Quantstamp | Audit | 2020-11 | stale | Direct | contract_name | 12 | high |
 | [Reflexer Second Engagement - Final Report.pdf](https://github.com/reflexer-labs/geb-audits/blob/master/quantstamp/helper-contracts/second-audit/Reflexer%20Second%20Engagement%20-%20Final%20Report.pdf) | Quantstamp | Audit | 2021-01 | stale | Direct | contract_name | 6 | high |
@@ -175,23 +182,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 53 |
+| native | 51 |
 | upstream | 1 |
-| standard_library | 1 |
-| needs_review | 9 |
+| standard_library | 4 |
+| needs_review | 14 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=3
-- Match method counts: extraction_exact=25
+- Extraction confidence breakdown: high=4
+- Match method counts: extraction_exact=29
 
 Zero-match audit list:
 
-- [2841] oz-geb-protocol-audit.pdf
 - [2842] Reflexer RAI Curve Pool - Report.pdf
 - [2845] Reflexer Staking and Auction House - Report.pdf
 - [2846] Audit Report - RAI Backup Oracles.pdf

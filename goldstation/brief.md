@@ -5,11 +5,11 @@
 - Project: GOLDSTATION (`goldstation`)
 - Website: [https://goldstation.io](https://goldstation.io)
 - Lifecycle: active (Tier 0, 63.1% below peak)
-- Generated: 2026-06-10T23:38:01.228Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
+- Generated: 2026-06-14T10:36:08.716Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
 - Chains: avalanche, klaytn
-- Contract surface: 5 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $2,154,383.42
+- Contract surface: 7 unique implementations (7 raw deployments)
+- DeFi Llama TVL: $1,755,730.32
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,12 +23,12 @@ The DEX likely provides liquidity for the RWA token, while the staking contract 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 5
-- Unique implementations: 5
-- Raw deployments: 5
+- Unverified implementations: 6
+- Unique implementations: 7
+- Raw deployments: 7
 - Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,9 +46,11 @@ The DEX likely provides liquidity for the RWA token, while the staking contract 
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| DonaswapV3Factory | registry | avalanche | [`0xf72f46...c0ef5c`](./contracts/avalanche-43114/0xf72f4652785a5186edf7b93a9cfd246fefc0ef5c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -62,7 +64,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (5)
+### ❓ Unverified (6)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -73,6 +75,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | klaytn | `0x4d55b0...dc8954` | ❓ Unverified |
 | UnnamedContract | unknown | klaytn | `0x6569b1...47dc76` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x1b27d7...64281d` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | `0x8f2855...59a244` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -93,9 +96,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 0 |
-| upstream | 0 |
+| upstream | 1 |
 | standard_library | 0 |
-| needs_review | 5 |
+| needs_review | 6 |
 
 ## Scope Matching Notes
 

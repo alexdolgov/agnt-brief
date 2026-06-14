@@ -1,6 +1,6 @@
 # reflexer — Contract Index
 
-64 unique implementations on ethereum · 85 deployments · 9 audited · 13 unaudited · 42 unverified
+70 unique implementations on ethereum · 93 deployments · 13 audited · 15 unaudited · 42 unverified
 
 ## governance (3)
 
@@ -22,18 +22,22 @@
 |---|---|---|---|---|
 | [StakingRewardsFactory](./ethereum-1/0xa706d4c39c315288113020f3e2d7e1095e912a20/) | ethereum | [`0xa706d4...912a20`](./ethereum-1/0xa706d4c39c315288113020f3e2d7e1095e912a20/) | ✅ Audited | Verified |
 
-## token (1)
+## token (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
+| [DSDelegateToken (2 deployments)](./ethereum-1/0x6243d8cea23066d098a15582d81a598b4e8391f4/) | ethereum | 2 deployments: ethereum [`0x6243d8...8391f4`](./ethereum-1/0x6243d8cea23066d098a15582d81a598b4e8391f4/); ethereum `0xfdb58d...40e4b1` | ⚠️ Unaudited | Verified |
 | [TokenBurner (2 deployments)](./ethereum-1/0xb10409fc293f987841964c4fcfef887d9ece799b/) | ethereum | 2 deployments: ethereum [`0xb10409...ce799b`](./ethereum-1/0xb10409fc293f987841964c4fcfef887d9ece799b/); ethereum `0xe59432...37f12a` | ⚠️ Unaudited | Verified |
 
-## unknown (58)
+## unknown (63)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
+| [AccountingEngine](./ethereum-1/0xcee6aa1ab47d0fb0f24f51a3072ec16e20f90fce/) | ethereum | [`0xcee6aa...f90fce`](./ethereum-1/0xcee6aa1ab47d0fb0f24f51a3072ec16e20f90fce/) | ✅ Audited | Verified |
+| [CoinJoin](./ethereum-1/0x0a5653cca4db1b6e265f47caf6969e64f1cfdc45/) | ethereum | [`0x0a5653...cfdc45`](./ethereum-1/0x0a5653cca4db1b6e265f47caf6969e64f1cfdc45/) | ✅ Audited | Verified |
 | [CollateralJoin1 (2 deployments)](./ethereum-1/0x15b99a6389521711c35057fec24baef89f8afb3f/) | ethereum | 2 deployments: ethereum [`0x15b99a...8afb3f`](./ethereum-1/0x15b99a6389521711c35057fec24baef89f8afb3f/); ethereum `0x2d3cd7...226e3a` | ⚠️ Unaudited | Verified |
 | [DSCompare (3 deployments)](./ethereum-1/0x0f2275ba79bbce0bce0d019011eb0c96735f298d/) | ethereum | 3 deployments: ethereum [`0x0f2275...5f298d`](./ethereum-1/0x0f2275ba79bbce0bce0d019011eb0c96735f298d/); ethereum `0x101222...b09c64`; ethereum `0xae69b7...30df2f` | ⚠️ Unaudited | Verified |
+| [DSRoles (2 deployments)](./ethereum-1/0x1490a828957f1e23491c8d69273d684b15c6e25a/) | ethereum | 2 deployments: ethereum [`0x1490a8...c6e25a`](./ethereum-1/0x1490a828957f1e23491c8d69273d684b15c6e25a/); ethereum `0xe4935d...6d8137` | ⚠️ Unaudited | Verified |
 | [FsmGovernanceInterface (2 deployments)](./ethereum-1/0x4778b3d2cebac0013c15e4b8ebeaa65b630df22b/) | ethereum | 2 deployments: ethereum [`0x4778b3...0df22b`](./ethereum-1/0x4778b3d2cebac0013c15e4b8ebeaa65b630df22b/); ethereum `0xe24f8b...36f533` | ✅ Audited | Verified |
 | [GebDeployPauseProxyActions (2 deployments)](./ethereum-1/0x27a54e99de813ce2e41baa7f44d1f19fba22b36d/) | ethereum | 2 deployments: ethereum [`0x27a54e...22b36d`](./ethereum-1/0x27a54e99de813ce2e41baa7f44d1f19fba22b36d/); ethereum `0x7b48cd...6dd2bb` | ⚠️ Unaudited | Verified |
 | [GebPauseScheduleProxyActions (2 deployments)](./ethereum-1/0x6a2714404be6613a952a80266840ffe916194632/) | ethereum | 2 deployments: ethereum [`0x6a2714...194632`](./ethereum-1/0x6a2714404be6613a952a80266840ffe916194632/); ethereum `0x757003...90bc7e` | ⚠️ Unaudited | Verified |
@@ -47,7 +51,9 @@
 | [GovActions (2 deployments)](./ethereum-1/0x0463bf18c2457b00402a7639fa1dfb7d60f659ee/) | ethereum | 2 deployments: ethereum [`0x0463bf...f659ee`](./ethereum-1/0x0463bf18c2457b00402a7639fa1dfb7d60f659ee/); ethereum `0x8aedaf...03bf76` | ✅ Audited | Verified |
 | [OSM (2 deployments)](./ethereum-1/0x049b02818ce4e15042242d335744f491cec49d18/) | ethereum | 2 deployments: ethereum [`0x049b02...c49d18`](./ethereum-1/0x049b02818ce4e15042242d335744f491cec49d18/); ethereum `0xe6f537...e16b2b` | ⚠️ Unaudited | Verified |
 | [RateSetter (2 deployments)](./ethereum-1/0x005fab4c9d1ef0f3e41cd27b26cf05680c3bf947/) | ethereum | 2 deployments: ethereum [`0x005fab...3bf947`](./ethereum-1/0x005fab4c9d1ef0f3e41cd27b26cf05680c3bf947/); ethereum `0xedeeaf...c6872b` | ✅ Audited | Verified |
+| [SAFEEngine](./ethereum-1/0xcc88a9d330da1133df3a7bd823b95e52511a6962/) | ethereum | [`0xcc88a9...1a6962`](./ethereum-1/0xcc88a9d330da1133df3a7bd823b95e52511a6962/) | ✅ Audited | Verified |
 | [SingleSpotDebtCeilingSetter](./ethereum-1/0xb2df48a0c4a07031f538353aa35d7ffa24e25ec1/) | ethereum | [`0xb2df48...e25ec1`](./ethereum-1/0xb2df48a0c4a07031f538353aa35d7ffa24e25ec1/) | ⚠️ Unaudited | Verified |
+| [TaxCollector](./ethereum-1/0xcdb05aeda142a1b0d6044c09c64e4226c1a281eb/) | ethereum | [`0xcdb05a...a281eb`](./ethereum-1/0xcdb05aeda142a1b0d6044c09c64e4226c1a281eb/) | ✅ Audited | Verified |
 | UnnamedContract | ethereum | `0x027361...4b644b` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x06691e...c462ff` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x0721f0...420747` | ❓ Unverified | Unverified |

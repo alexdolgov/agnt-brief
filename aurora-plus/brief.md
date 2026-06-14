@@ -5,11 +5,11 @@
 - Project: Aurora Plus (`aurora-plus`)
 - Website: [https://aurora.plus/](https://aurora.plus/)
 - Lifecycle: active (Tier 0, 94.8% below peak)
-- Generated: 2026-06-10T20:58:57.885Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-14T10:36:47.534Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
 - Chains: aurora
 - Contract surface: 31 unique implementations (74 raw deployments)
-- DeFi Llama TVL: $2,273,021.18
+- DeFi Llama TVL: $1,683,807.36
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -125,10 +125,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 10 |
+| native | 19 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 20 |
+| needs_review | 11 |
 
 ## Scope Matching Notes
 

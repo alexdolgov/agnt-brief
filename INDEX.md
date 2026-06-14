@@ -105,7 +105,7 @@
 | [aura](./aura/) | $107.0M | 19.4% | $68.2M | active | 18 | 497 | 2026-06-10 |
 | [aurigami](./aurigami/) | $819.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [auro-finance](./auro-finance/) | $5.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [aurora-plus](./aurora-plus/) | $2.3M | 33.3% | ? | active | 3 | 31 | 2026-06-10 |
+| [aurora-plus](./aurora-plus/) | $1.7M | 33.3% | ? | active | 3 | 31 | 2026-06-14 |
 | [autofarm](./autofarm/) | $5.6M | 0.0% | ? | declining | 1 | 17 | 2026-06-13 |
 | [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 8 | 570 | 2026-06-12 |
 | [avalaunch](./avalaunch/) | $31.3M | 84.6% | ? | active | 13 | 38 | 2026-06-10 |
@@ -198,7 +198,7 @@
 | [brasa-finance](./brasa-finance/) | $1.2M | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [brickken](./brickken/) | $42.2M | 20.0% | ? | active | 2 | 31 | 2026-06-12 |
 | [bridge-mutual](./bridge-mutual/) | $56.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [bridgers](./bridgers/) | $1.6M | 0.0% | ? | active | 1 | 6 | 2026-06-10 |
+| [bridgers](./bridgers/) | $1.7M | 0.0% | ? | active | 1 | 11 | 2026-06-14 |
 | [bright-union](./bright-union/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [broswap](./broswap/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [brotocol](./brotocol/) | $447.6M | 20.0% | $447.6M | unknown | 14 | 76 | 2026-06-13 |
@@ -475,7 +475,7 @@
 | [gogocoin](./gogocoin/) | $2.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [goldfinger](./goldfinger/) | $0.0 | 0.0% | ? | active | 8 | 5 | 2026-06-11 |
 | [goldsand-by-inshallah](./goldsand-by-inshallah/) | $231.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [goldstation](./goldstation/) | $2.2M | 0.0% | ? | active | 3 | 5 | 2026-06-10 |
+| [goldstation](./goldstation/) | $1.8M | 0.0% | ? | active | 3 | 7 | 2026-06-14 |
 | [goledo](./goledo/) | $3.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [gomble-games](./gomble-games/) | $14.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [gondi](./gondi/) | $35.6 | 20.0% | $35.6 | active | 2 | 30 | 2026-06-11 |
@@ -646,7 +646,7 @@
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 79 | 2026-06-13 |
 | [lake-protocol](./lake-protocol/) | $44.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [lander](./lander/) | $21.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [landx-finance](./landx-finance/) | $1.8M | 100.0% | ? | active | 1 | 3 | 2026-06-11 |
+| [landx-finance](./landx-finance/) | $27.3K | 27.3% | $27.3K | active | 1 | 11 | 2026-06-14 |
 | [larix](./larix/) | $1.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [latch](./latch/) | $189.8 | 0.0% | $189.8 | declining | 0 | 1 | 2026-06-11 |
 | [latteswap](./latteswap/) | $54.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -979,7 +979,7 @@
 | [ratex](./ratex/) | $98.8K | 0.0% | $98.8K | declining | 2 | 168 | 2026-06-13 |
 | [re7-labs](./re7-labs/) | $6.6M | 0.0% | $6.6M | active | 0 | 18 | 2026-06-12 |
 | [reddex](./reddex/) | $4.8M | 0.0% | ? | declining | 0 | 5 | 2026-06-13 |
-| [reflexer](./reflexer/) | $2.3M | 40.9% | ? | declining | 8 | 64 | 2026-06-11 |
+| [reflexer](./reflexer/) | $1.3M | 46.4% | $1.3M | declining | 8 | 70 | 2026-06-14 |
 | [rehold](./rehold/) | $11.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [renec-lend](./renec-lend/) | $5.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 3 | 2026-06-12 |

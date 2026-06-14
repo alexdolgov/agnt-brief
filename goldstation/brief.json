@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "goldstation",
-  "generated_at": "2026-06-10T23:38:01.228Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-14T10:36:08.716Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-df6c",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "goldstation",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 63.094288248154925
   },
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 5,
-    "unique_implementations": 5,
-    "total_deployments": 5,
+    "total_contracts": 7,
+    "total_addresses": 7,
+    "unique_implementations": 7,
+    "total_deployments": 7,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 5,
+    "contracts_unverified": 6,
     "coverage_pct": 0,
     "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2154383.4249400003,
-    "tvl_usd": 2154383.4249400003,
+    "dl_tvl_usd": 1755730.32415,
+    "tvl_usd": 1755730.32415,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -62,8 +62,8 @@
     "product_family_count": 3
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
-    "has_non_token_contracts": false,
+    "unique_implementations": 7,
+    "has_non_token_contracts": true,
     "is_skeletal": false
   },
   "fork_lineage": {
@@ -71,6 +71,37 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xf72f4652785a5186edf7b93a9cfd246fefc0ef5c",
+      "name": "DonaswapV3Factory",
+      "role": "registry",
+      "origin_kind": "upstream",
+      "origin_provider": "donaswap",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DonaswapV3Factory",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xf72f4652785a5186edf7b93a9cfd246fefc0ef5c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 8217,
       "chain_name": "klaytn",
@@ -225,6 +256,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x8f2855c93b73d0511fa4a344c8f2239f3a59a244",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x8f2855c93b73d0511fa4a344c8f2239f3a59a244",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -296,9 +358,9 @@
   "coverage_gaps": [],
   "origin_summary": {
     "native": 0,
-    "upstream": 0,
+    "upstream": 1,
     "standard_library": 0,
-    "needs_review": 5
+    "needs_review": 6
   },
   "scope_matching_notes": {
     "match_method_counts": {},

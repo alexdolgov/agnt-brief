@@ -5,11 +5,11 @@
 - Project: Neemo Finance (`neemo-finance`)
 - Website: [https://neemo.finance/](https://neemo.finance/)
 - Lifecycle: active (Tier 0, 74.5% below peak)
-- Generated: 2026-06-11T01:22:41.052Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-14T00:23:40.262Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
 - Chains: ethereum
 - Contract surface: 14 unique implementations (15 raw deployments)
-- DeFi Llama TVL: $1,369,797.95
+- DeFi Llama TVL: $1,118,880.57
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -100,10 +100,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 3 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 13 |
+| needs_review | 10 |
 
 ## Scope Matching Notes
 

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "neemo-finance",
-  "generated_at": "2026-06-11T01:22:41.052Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-14T00:23:40.262Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-13-e4a349-24d8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "neemo-finance",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1369797.94774,
-    "tvl_usd": 1369797.94774,
+    "dl_tvl_usd": 1118880.57406,
+    "tvl_usd": 1118880.57406,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -333,7 +333,7 @@
       "address": "0xaa75e4350169fc3765e3056007805acacd6f364d",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -395,7 +395,7 @@
       "address": "0xcfa66f824b195757786188730d29094052d0cec2",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -426,7 +426,7 @@
       "address": "0xf13790894a9d8cf6d87affbdb5b9c3bc1364dfe1",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -540,10 +540,10 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 3,
     "upstream": 0,
     "standard_library": 1,
-    "needs_review": 13
+    "needs_review": 10
   },
   "scope_matching_notes": {
     "match_method_counts": {},

@@ -1,0 +1,17 @@
+{
+  "address": "0x2a9fa7bad74e85d91c8f9fc1258f065e285b0cad",
+  "chain_id": 100,
+  "contract_name": "PickemSlateFactory",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000007f22651ab788219d4dcecc637099a8209ad57894",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T00:26:42.804Z"
+}

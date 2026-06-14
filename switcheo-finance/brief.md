@@ -4,13 +4,13 @@
 
 - Project: Switcheo Finance (`switcheo-finance`)
 - Lifecycle: active (Tier 0, 76.4% below peak)
-- Generated: 2026-06-11T03:20:20.331Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
+- Generated: 2026-06-14T00:22:56.545Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
 - Chains: ethereum
-- Contract surface: 47 unique implementations (100 raw deployments)
-- DeFi Llama TVL: $1,234,738.76
-- On-chain TVL (included contracts): $68,279,527.22
-- TVL by chain: Ethereum $68,279,527.22
+- Contract surface: 63 unique implementations (118 raw deployments)
+- DeFi Llama TVL: $1,005,520.76
+- On-chain TVL (included contracts): $71,044,030.02
+- TVL by chain: Ethereum $71,044,030.02
 
 ## Project Description
 
@@ -22,15 +22,15 @@ The BrokerV2 contract acts as the core execution engine, relying on the Utils li
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/29 (0.0%)
-- Verified + Unaudited implementations: 29
+- Verified implementations audited: 0/45 (0.0%)
+- Verified + Unaudited implementations: 45
 - Verified by bytecode match: 0
 - Unverified implementations: 18
-- Unique implementations: 47
-- Raw deployments: 100
+- Unique implementations: 63
+- Raw deployments: 118
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $68,279,527.22
+- ASD (verified + unaudited TVL): $71,044,030.02
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -45,24 +45,40 @@ The BrokerV2 contract acts as the core execution engine, relying on the Utils li
 
 - None
 
-### ⚠️ Verified + Unaudited (29)
+### ⚠️ Verified + Unaudited (45)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | DuskToken | token | ethereum | [`0x940a2d...4aa551`](./contracts/ethereum-1/0x940a2db1b7008b6c776d4faaca729d6d4a4aa551/) | ⚠️ Unaudited |
+| OneWorldOnlineToken | token | ethereum | [`0xfdbc1a...c22b23`](./contracts/ethereum-1/0xfdbc1adc26f0f8f8606a5d63b7d3a3cd21c22b23/) | ⚠️ Unaudited |
+| PerkscoinToken | token | ethereum | [`0x5ebe6a...ac0bb3`](./contracts/ethereum-1/0x5ebe6a342a93102393edd9d2e458c689e5ac0bb3/) | ⚠️ Unaudited |
 | CelsiusToken | token | ethereum | [`0xaaaebe...09d42d`](./contracts/ethereum-1/0xaaaebe6fe48e54f431b0c390cfaf0b017d09d42d/) | ⚠️ Unaudited |
+| TetherToken | token | ethereum | [`0x6e109e...c07aef`](./contracts/ethereum-1/0x6e109e9dd7fa1a58bc3eff667e8e41fc3cc07aef/) | ⚠️ Unaudited |
+| LUCToken | token | ethereum | [`0x5dbe29...a5c719`](./contracts/ethereum-1/0x5dbe296f97b23c4a6aa6183d73e574d02ba5c719/) | ⚠️ Unaudited |
 | BalancerGovernanceToken | token | ethereum | [`0xba1000...424e3d`](./contracts/ethereum-1/0xba100000625a3754423978a60c9317c58a424e3d/) | ⚠️ Unaudited |
-| AlephPaymentProcessor | unknown | ethereum | [`0x6b55f3...e8cb8b`](./contracts/ethereum-1/0x6b55f32ea969910838defd03746ced5e2ae8cb8b/) | ⚠️ Unaudited |
+| GigaWattToken | token | ethereum | [`0x84119c...494eda`](./contracts/ethereum-1/0x84119cb33e8f590d75c2d6ea4e6b0741a7494eda/) | ⚠️ Unaudited |
+| AlephPaymentProcessor | unknown | ethereum | 2 deployments: ethereum [`0x5c6273...eec0bd`](./contracts/ethereum-1/0x5c62734eca6c5f44f8aa122a05e5eef627eec0bd/); ethereum `0x6b55f3...e8cb8b` | ⚠️ Unaudited |
+| AlephSync | unknown | ethereum | [`0x166fd4...2f8ad5`](./contracts/ethereum-1/0x166fd4299364b21c7567e163d85d78d2fb2f8ad5/) | ⚠️ Unaudited |
+| AmpleforthWrapper | unknown | ethereum | [`0xb2b9d7...947dc5`](./contracts/ethereum-1/0xb2b9d7ba7b7e5fb4e51a8bac83fd43e90c947dc5/) | ⚠️ Unaudited |
+| BCAPToken | token | ethereum | 2 deployments: ethereum [`0x403506...180158`](./contracts/ethereum-1/0x403506af39e41e2226440ad5fb44c6200b180158/); ethereum `0xef6dd4...cbbf8b` | ⚠️ Unaudited |
 | Crowdsale | unknown | ethereum | [`0x398e41...a446f7`](./contracts/ethereum-1/0x398e41ac3d5972b4bac2320cd130c7a25ca446f7/) | ⚠️ Unaudited |
+| DecenturionToken | token | ethereum | [`0x001575...80a951`](./contracts/ethereum-1/0x001575786dfa7b9d9d1324ec308785738f80a951/) | ⚠️ Unaudited |
 | EIP20 | unknown | ethereum | 2 deployments: ethereum [`0x27702a...4ef628`](./contracts/ethereum-1/0x27702a26126e0b3702af63ee09ac4d1a084ef628/); ethereum `0xc0134b...fbe03e` | ⚠️ Unaudited |
 | Exchange | unknown | ethereum | [`0x651aa5...b7b7a6`](./contracts/ethereum-1/0x651aa5ea257af3d6fd08aedca8c5a446edb7b7a6/) | ⚠️ Unaudited |
 | ExchangeEfx | unknown | ethereum | [`0xdcdb42...dd5851`](./contracts/ethereum-1/0xdcdb42c9a256690bd153a7b409751adfc8dd5851/) | ⚠️ Unaudited |
+| INSToken | token | ethereum | [`0x5b2e4a...74a320`](./contracts/ethereum-1/0x5b2e4a700dfbc560061e957edec8f6eeeb74a320/) | ⚠️ Unaudited |
 | KyberNetworkCrystal | unknown | ethereum | [`0xdd974d...6bd200`](./contracts/ethereum-1/0xdd974d5c2e2928dea5f71b9825b8b646686bd200/) | ⚠️ Unaudited |
+| KyberSwapDapp | unknown | ethereum | [`0x8b64d9...35d999`](./contracts/ethereum-1/0x8b64d94d42fa3c05dc8579ae9ba788e0cb35d999/) | ⚠️ Unaudited |
 | LEO | unknown | ethereum | [`0x2af5d2...912ca3`](./contracts/ethereum-1/0x2af5d2ad76741191d15dfe7bf6ac92d4bd912ca3/) | ⚠️ Unaudited |
+| LEOController | governance | ethereum | [`0xf17ebb...9e5672`](./contracts/ethereum-1/0xf17ebb3a24dc6d6b56d38adf0df499c1cd9e5672/) | ⚠️ Unaudited |
+| LockProxy | unknown | ethereum | [`0x9a016c...bd1c54`](./contracts/ethereum-1/0x9a016ce184a22dbf6c17daa59eb7d3140dbd1c54/) | ⚠️ Unaudited |
 | LogERC20 | token | ethereum | [`0x047f18...434a4b`](./contracts/ethereum-1/0x047f18e7f21aa714c6a5f4b346318eb384434a4b/) | ⚠️ Unaudited |
 | MiniMeTokenFactory | registry | ethereum | [`0x8e9ac0...2a12b8`](./contracts/ethereum-1/0x8e9ac0de3ab634ce0e2f0e397efc5ce8a72a12b8/) | ⚠️ Unaudited |
+| NectarController | governance | ethereum | [`0x0e55c5...7ba76d`](./contracts/ethereum-1/0x0e55c54249f25f70d519b7fb1c20e3331e7ba76d/) | ⚠️ Unaudited |
+| NectarTreasury | operational_periphery | ethereum | [`0xe85104...864125`](./contracts/ethereum-1/0xe851048c101abbdac26615c44dcec4c051864125/) | ⚠️ Unaudited |
 | OneTimeListingManager | governance | ethereum | 2 deployments: ethereum [`0x8714f6...d2a48a`](./contracts/ethereum-1/0x8714f686102f206a233f415d521194ec80d2a48a/); ethereum `0xfd31fa...cee2a2` | ⚠️ Unaudited |
 | ProposalManager | governance | ethereum | [`0xb24ed9...2d5ddb`](./contracts/ethereum-1/0xb24ed9d62d4c660faf56a4cddada06c88b2d5ddb/) | ⚠️ Unaudited |
+| SocialMediaMarketToken | token | ethereum | [`0x78eb8d...c4d237`](./contracts/ethereum-1/0x78eb8dc641077f049f910659b6d580e80dc4d237/) | ⚠️ Unaudited |
 | SpenderList | unknown | ethereum | [`0xdad636...862c03`](./contracts/ethereum-1/0xdad636e070baa6d9484eee6a2452557833862c03/) | ⚠️ Unaudited |
 | StandardToken | token | ethereum | [`0x4a220e...254675`](./contracts/ethereum-1/0x4a220e6096b25eadb88358cb44068a3248254675/) | ⚠️ Unaudited |
 | TokenList | token | ethereum | [`0xc86059...0c17bd`](./contracts/ethereum-1/0xc860598a9a38eff76dbbbe67fdc1b7975c0c17bd/) | ⚠️ Unaudited |
@@ -127,9 +143,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x398e41...a446f7`](./contracts/ethereum-1/0x398e41ac3d5972b4bac2320cd130c7a25ca446f7/) | Crowdsale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb2b9d7...947dc5`](./contracts/ethereum-1/0xb2b9d7ba7b7e5fb4e51a8bac83fd43e90c947dc5/) | AmpleforthWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x651aa5...b7b7a6`](./contracts/ethereum-1/0x651aa5ea257af3d6fd08aedca8c5a446edb7b7a6/) | Exchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdcdb42...dd5851`](./contracts/ethereum-1/0xdcdb42c9a256690bd153a7b409751adfc8dd5851/) | ExchangeEfx | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9a016c...bd1c54`](./contracts/ethereum-1/0x9a016ce184a22dbf6c17daa59eb7d3140dbd1c54/) | LockProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0e55c5...7ba76d`](./contracts/ethereum-1/0x0e55c54249f25f70d519b7fb1c20e3331e7ba76d/) | NectarController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe85104...864125`](./contracts/ethereum-1/0xe851048c101abbdac26615c44dcec4c051864125/) | NectarTreasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8714f6...d2a48a`](./contracts/ethereum-1/0x8714f686102f206a233f415d521194ec80d2a48a/) | OneTimeListingManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb24ed9...2d5ddb`](./contracts/ethereum-1/0xb24ed9d62d4c660faf56a4cddada06c88b2d5ddb/) | ProposalManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdad636...862c03`](./contracts/ethereum-1/0xdad636e070baa6d9484eee6a2452557833862c03/) | SpenderList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -151,10 +170,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 30 |
-| upstream | 5 |
-| standard_library | 5 |
-| needs_review | 7 |
+| native | 28 |
+| upstream | 17 |
+| standard_library | 4 |
+| needs_review | 14 |
 
 ## Scope Matching Notes
 

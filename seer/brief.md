@@ -5,11 +5,11 @@
 - Project: Seer (`seer`)
 - Website: [https://seer.pm/](https://seer.pm/)
 - Lifecycle: active (Tier 0, 23.2% below peak)
-- Generated: 2026-05-31T10:31:40.595Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-14T00:26:40.315Z
+- Pipeline run: v2-pipeline-2026-06-13-e4a349-24d8
 - Chains: ethereum, gnosis
-- Contract surface: 179 unique implementations (311 raw deployments)
-- DeFi Llama TVL: $1,536,966.24
+- Contract surface: 187 unique implementations (336 raw deployments)
+- DeFi Llama TVL: $828,646.84
 - On-chain TVL (included contracts): $1,475,343.79
 - TVL by chain: Ethereum $1,475,343.79
 
@@ -23,12 +23,12 @@ MarketFactory deploys individual Market contracts that interact with Conditional
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/35 (0.0%)
-- Verified + Unaudited implementations: 34
+- Verified implementations audited: 0/43 (0.0%)
+- Verified + Unaudited implementations: 42
 - Verified by bytecode match: 1
 - Unverified implementations: 144
-- Unique implementations: 179
-- Raw deployments: 311
+- Unique implementations: 187
+- Raw deployments: 336
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $1,475,343.79
@@ -46,11 +46,13 @@ MarketFactory deploys individual Market contracts that interact with Conditional
 
 - None
 
-### ⚠️ Verified + Unaudited (34)
+### ⚠️ Verified + Unaudited (42)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | AlgebraFactory | registry | gnosis | [`0xa0864c...7da766`](./contracts/gnosis-100/0xa0864cca6e114013ab0e27cbd5b6f4c8947da766/) | ⚠️ Unaudited |
+| CentralVault | core_logic | gnosis | 4 deployments: gnosis [`0x0ec662...c2b84d`](./contracts/gnosis-100/0x0ec66212a45f6b289e1965ac218d95b350c2b84d/); gnosis `0x4f49a8...f0f82b`; gnosis `0x7f2265...d57894`; gnosis `0xde8d8f...249995` | ⚠️ Unaudited |
+| ConditionalRouter | adapter | ethereum | 2 deployments: ethereum [`0x1ba2db...44d9b5`](./contracts/ethereum-1/0x1ba2db142a69b2d0b0edbe666a9bd457e344d9b5/); gnosis `0x774284...13c29c` | ⚠️ Unaudited |
 | CreditsManager | governance | gnosis | 4 deployments: gnosis [`0x17592e...ea8a61`](./contracts/gnosis-100/0x17592efe59a318a6b0afe32145ee04eafeea8a61/); gnosis `0x43bd67...43af17`; gnosis `0xb29d0c...4d2d70`; gnosis `0xfeb801...c9768b` | ⚠️ Unaudited |
 | Disbursement | unknown | ethereum | [`0xff2e23...377370`](./contracts/ethereum-1/0xff2e231b3d6260937edc698da5f77b6d3d377370/) | ⚠️ Unaudited |
 | DutchXCompleteModule | unknown | ethereum | [`0xba22d7...1cfcd6`](./contracts/ethereum-1/0xba22d73c079ceb97db93f2effb1f1054fe1cfcd6/) | ⚠️ Unaudited |
@@ -63,7 +65,7 @@ MarketFactory deploys individual Market contracts that interact with Conditional
 | FutarchyProposal | unknown | ethereum | 4 deployments: ethereum [`0x0956b7...2d8a1c`](./contracts/ethereum-1/0x0956b70ac0eca45db9661a1cee96b2e7062d8a1c/); gnosis `0xbba6c5...05be7d`; gnosis `0xd342be...5eab66`; gnosis `0xec4fb9...5b484c` | ⚠️ Unaudited |
 | FutarchyRealityProxy | unknown | gnosis | 4 deployments: ethereum `0xa638f2...5280dc`; gnosis [`0x03e1fc...a61cfc`](./contracts/gnosis-100/0x03e1fcfe3f1edc5833001588fb6377cb50a61cfc/); gnosis `0xb5786f...438e7b`; gnosis `0xc64c75...025d0f` | ⚠️ Unaudited |
 | FutarchyRouter | adapter | gnosis | 4 deployments: ethereum `0xac9bf8...3f98dc`; gnosis [`0x7495a5...e1228f`](./contracts/gnosis-100/0x7495a583ba85875d59407781b4958ed6e0e1228f/); gnosis `0x74c4df...c19c7c`; gnosis `0xe2996f...c9f74e` | ⚠️ Unaudited |
-| GnosisRouter | adapter | gnosis | 11 deployments: gnosis [`0x1c6761...18ea9a`](./contracts/gnosis-100/0x1c676107eee61cc2b400df92ae0fe08ea818ea9a/); gnosis `0x1cc00a...d75b61`; gnosis `0x2070b8...59e140`; gnosis `0x790510...90509f`; gnosis `0x7babb8...eb281d`; gnosis `0x7e9757...d7f72a`; gnosis `0x8046a0...77fa79`; gnosis `0xacf776...9c6a70`; gnosis `0xe94d65...837389`; gnosis `0xf68ff4...349d07`; gnosis `0xfe8bf5...4a46b2` | ⚠️ Unaudited |
+| GnosisRouter | adapter | gnosis | 12 deployments: gnosis [`0x1c6761...18ea9a`](./contracts/gnosis-100/0x1c676107eee61cc2b400df92ae0fe08ea818ea9a/); gnosis `0x1cc00a...d75b61`; gnosis `0x2070b8...59e140`; gnosis `0x790510...90509f`; gnosis `0x7babb8...eb281d`; gnosis `0x7e9757...d7f72a`; gnosis `0x8046a0...77fa79`; gnosis `0xacf776...9c6a70`; gnosis `0xe94d65...837389`; gnosis `0xec9048...c70fb8`; gnosis `0xf68ff4...349d07`; gnosis `0xfe8bf5...4a46b2` | ⚠️ Unaudited |
 | GovernedRecipient | operational_periphery | gnosis | 7 deployments: gnosis [`0x126afb...ca2dc4`](./contracts/gnosis-100/0x126afb5e8218ce49f34317a3f3ffefde5bca2dc4/); gnosis `0x5693ca...7d6872`; gnosis `0x6beae2...558350`; gnosis `0x9e850e...667b19`; gnosis `0xa53544...32e0a6`; gnosis `0xa70f53...777a2a`; gnosis `0xceeb6a...583183` | ⚠️ Unaudited |
 | LMSRMarketMakerFactory | registry | ethereum | [`0x37186b...256c4b`](./contracts/ethereum-1/0x37186b5d78ebb1f37bc56e5dca7f18ab98256c4b/) | ⚠️ Unaudited |
 | MainnetRouter | adapter | ethereum | 2 deployments: ethereum [`0x886ef0...af8bc6`](./contracts/ethereum-1/0x886ef0a78fabbae942f1da1791a8ed02a5af8bc6/); ethereum `0xfe8bf5...4a46b2` | ⚠️ Unaudited |
@@ -71,7 +73,9 @@ MarketFactory deploys individual Market contracts that interact with Conditional
 | MarketFactory | registry | gnosis | 21 deployments: ethereum `0x1f728c...7b7904`; ethereum `0x3124e9...c77a73`; ethereum `0x336695...38f348`; gnosis [`0x1246c7...f58e90`](./contracts/gnosis-100/0x1246c7e5ac59ba73a45a62e3081b548f02f58e90/); gnosis `0x2dbe07...582467`; gnosis `0x2e3937...ecb68e`; gnosis `0x47fc00...3a78fb`; gnosis `0x4c98aa...8e6ed0`; gnosis `0x724478...d86c09`; gnosis `0x83183d...5cdcf1`; gnosis `0x846f8f...92e6c5`; gnosis `0x8dd6fa...96e949`; gnosis `0x9498d2...c7bcc8`; gnosis `0xa99121...12ce33`; gnosis `0xaa43e7...a82ed7`; gnosis `0xab797c...7a87fc`; gnosis `0xc73323...b1131c`; gnosis `0xd1220e...821948`; gnosis `0xe619f5...14a2e6`; gnosis `0xeb0214...c20e6d`; gnosis `0xf365be...9818bf` | ⚠️ Unaudited |
 | MarketView | unknown | gnosis | 17 deployments: ethereum `0x44921b...a79f00`; ethereum `0xab797c...7a87fc`; ethereum `0xb2ab74...84771a`; gnosis [`0x0427d4...916d9f`](./contracts/gnosis-100/0x0427d45906c8e1c156d8e06c1fefc4584b916d9f/); gnosis `0x3e202f...57142a`; gnosis `0x4ba0c4...dd4cc4`; gnosis `0x5f26f0...a5bbba`; gnosis `0x783b4b...2244ae`; gnosis `0x95493f...90f59c`; gnosis `0x995dc9...27626f`; gnosis `0xbb85ca...dfdf8d`; gnosis `0xd1f885...36414a`; gnosis `0xd34b07...e849e2`; gnosis `0xd45d4b...5d35e7`; gnosis `0xda834f...9d9dbf`; gnosis `0xe1834d...475172`; gnosis `0xfe6f08...a56aa0` | ⚠️ Unaudited |
 | MultiDrop | unknown | gnosis | 10 deployments: gnosis [`0x0c556a...a2e795`](./contracts/gnosis-100/0x0c556afe7d7214fc9e7ab906014db695b5a2e795/); gnosis `0x129de2...c9c29e`; gnosis `0x28abd3...1810d5`; gnosis `0x39c06a...55cb6c`; gnosis `0x3c918d...8905d4`; gnosis `0x42a305...7bb10b`; gnosis `0x53dfb9...ab33c6`; gnosis `0x714615...5d1953`; gnosis `0x8eca58...c6b74e`; gnosis `0x91a495...e8d95f` | ⚠️ Unaudited |
-| Realitio_v2_1_ArbitratorWithAppeals | unknown | ethereum | [`0x179d8f...2d05dd`](./contracts/ethereum-1/0x179d8f8c811b8c759c33809dbc6c5cedc62d05dd/) | ⚠️ Unaudited |
+| ParimutuelVault | core_logic | gnosis | 2 deployments: gnosis [`0x506dcc...0b6137`](./contracts/gnosis-100/0x506dcc9781b895b02559014544a83bd39f0b6137/); gnosis `0x659a90...2810c9` | ⚠️ Unaudited |
+| PickemSlateFactory | registry | gnosis | 4 deployments: gnosis [`0x2a9fa7...5b0cad`](./contracts/gnosis-100/0x2a9fa7bad74e85d91c8f9fc1258f065e285b0cad/); gnosis `0x4df41e...1612f5`; gnosis `0xa2cd7c...d9bb67`; gnosis `0xfe5754...aac3c3` | ⚠️ Unaudited |
+| Realitio_v2_1_ArbitratorWithAppeals | unknown | ethereum | 2 deployments: ethereum [`0x179d8f...2d05dd`](./contracts/ethereum-1/0x179d8f8c811b8c759c33809dbc6c5cedc62d05dd/); ethereum `0x201803...4f85ad` | ⚠️ Unaudited |
 | RealitioArbitratorProxy | unknown | ethereum | [`0x12bb49...4ce346`](./contracts/ethereum-1/0x12bb49deb8f293435e27f6f4ab140184604ce346/) | ⚠️ Unaudited |
 | RealitioForeignArbitrationProxyWithAppeals | unknown | ethereum | [`0xf5ccbf...7723b9`](./contracts/ethereum-1/0xf5ccbf74121edba492725f325d55356d517723b9/) | ⚠️ Unaudited |
 | RealitioHomeArbitrationProxy | unknown | gnosis | [`0xa9fc6f...8f1d3c`](./contracts/gnosis-100/0xa9fc6f0f2a85fbad7eeec4a63c49014a0a8f1d3c/) | ⚠️ Unaudited |
@@ -80,9 +84,13 @@ MarketFactory deploys individual Market contracts that interact with Conditional
 | RewardClaimHandler | unknown | ethereum | [`0xb8be71...ae4316`](./contracts/ethereum-1/0xb8be713fee0b3f437be4793a23f96fec7eae4316/) | ⚠️ Unaudited |
 | Seer_LP_Point | unknown | gnosis | 6 deployments: gnosis [`0x26427d...47eb4f`](./contracts/gnosis-100/0x26427dde0301388a906c77647e4bd8d1e147eb4f/); gnosis `0x270912...5659ab`; gnosis `0x85e39f...a9edb3`; gnosis `0xb477c4...7b92ad`; gnosis `0xbc9a94...174d66`; gnosis `0xef1169...42a86f` | ⚠️ Unaudited |
 | SeerCredits | unknown | gnosis | 3 deployments: gnosis [`0x3a0d86...dc607c`](./contracts/gnosis-100/0x3a0d8671efcbc172edbe32f91169bbc984dc607c/); gnosis `0xedd48e...51acaf`; gnosis `0xf67736...cd466b` | ⚠️ Unaudited |
+| SlateFactory | registry | gnosis | 2 deployments: gnosis [`0x31ac36...6ecbac`](./contracts/gnosis-100/0x31ac36cbaa3e7e57a1542f6623fc775ec86ecbac/); gnosis `0xb5a01f...22f1d9` | ⚠️ Unaudited |
+| SportsSlateFactory | registry | gnosis | 6 deployments: gnosis [`0x293dfe...4640d1`](./contracts/gnosis-100/0x293dfe3ffe40454598ebc745d46da3d3c44640d1/); gnosis `0x6938ef...dc070a`; gnosis `0x7e53af...a732d8`; gnosis `0x8a670a...7f2999`; gnosis `0x931fc6...3fc6c4`; gnosis `0x96f61c...2a3619` | ⚠️ Unaudited |
 | SwaprSavingsXDaiRouter | adapter | gnosis | [`0x4f774e...8a09aa`](./contracts/gnosis-100/0x4f774e1dbddbf03351204f1f53f160ce108a09aa/) | ⚠️ Unaudited |
 | TradingCredits | unknown | gnosis | 3 deployments: gnosis [`0x02d727...e2e5c2`](./contracts/gnosis-100/0x02d727a6a93eb45d2c20f6d9c7a97ae8fce2e5c2/); gnosis `0x075b4c...decc15`; gnosis `0x122f6b...ca35a8` | ⚠️ Unaudited |
+| UniswapV3Factory | registry | ethereum | [`0x1f9843...31f984`](./contracts/ethereum-1/0x1f98431c8ad98523631ae4a59f267346ea31f984/) | ⚠️ Unaudited |
 | Whitelist | unknown | ethereum | 2 deployments: ethereum [`0x3af2ae...2157c9`](./contracts/ethereum-1/0x3af2ae62f0d3353c9f15b7fe678ccdaf2b2157c9/); ethereum `0x5250b9...d8ae7d` | ⚠️ Unaudited |
+| Wrapped1155Factory | registry | ethereum | 2 deployments: ethereum [`0xd19431...10b79f`](./contracts/ethereum-1/0xd194319d1804c1051dd21ba1dc931ca72410b79f/); gnosis [`0xd19431...10b79f`](./contracts/gnosis-100/0xd194319d1804c1051dd21ba1dc931ca72410b79f/) | ⚠️ Unaudited |
 | WrappedERC20Factory | registry | gnosis | 5 deployments: gnosis [`0x383753...f2887a`](./contracts/gnosis-100/0x383753af6ca47e1b46b000e07ab210fd04f2887a/); gnosis `0x5bc8dd...e3b557`; gnosis `0x940b60...b3c2f1`; gnosis `0xb105c8...dcae3c`; gnosis `0xd0ee78...6d6c40` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -261,32 +269,38 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| ethereum | [`0x1ba2db...44d9b5`](./contracts/ethereum-1/0x1ba2db142a69b2d0b0edbe666a9bd457e344d9b5/) | ConditionalRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | gnosis | [`0x17592e...ea8a61`](./contracts/gnosis-100/0x17592efe59a318a6b0afe32145ee04eafeea8a61/) | CreditsManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xff2e23...377370`](./contracts/ethereum-1/0xff2e231b3d6260937edc698da5f77b6d3d377370/) | Disbursement | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xba22d7...1cfcd6`](./contracts/ethereum-1/0xba22d73c079ceb97db93f2effb1f1054fe1cfcd6/) | DutchXCompleteModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xe3ebeb...0aa84d`](./contracts/ethereum-1/0xe3ebeb3a6a535131f2861f866d98d555580aa84d/) | DutchXSellerModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x09e701...2c94f9`](./contracts/gnosis-100/0x09e7014d2c15eb8c5ee25853fe6842ff5e2c94f9/) | ForesightCredits | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x75a6d6...3805f3`](./contracts/ethereum-1/0x75a6d6251511af081f77f2b531c14808fb3805f3/) | Fixed192x64Math | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | gnosis | [`0x9083a2...a3eef0`](./contracts/gnosis-100/0x9083a2b699c0a4ad06f63580bde2635d26a3eef0/) | FPMMDeterministicFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0956b7...2d8a1c`](./contracts/ethereum-1/0x0956b70ac0eca45db9661a1cee96b2e7062d8a1c/) | FutarchyProposal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | gnosis | [`0x03e1fc...a61cfc`](./contracts/gnosis-100/0x03e1fcfe3f1edc5833001588fb6377cb50a61cfc/) | FutarchyRealityProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x7495a5...e1228f`](./contracts/gnosis-100/0x7495a583ba85875d59407781b4958ed6e0e1228f/) | FutarchyRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | gnosis | [`0x126afb...ca2dc4`](./contracts/gnosis-100/0x126afb5e8218ce49f34317a3f3ffefde5bca2dc4/) | GovernedRecipient | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x37186b...256c4b`](./contracts/ethereum-1/0x37186b5d78ebb1f37bc56e5dca7f18ab98256c4b/) | LMSRMarketMakerFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x886ef0...af8bc6`](./contracts/ethereum-1/0x886ef0a78fabbae942f1da1791a8ed02a5af8bc6/) | MainnetRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | gnosis | [`0x0427d4...916d9f`](./contracts/gnosis-100/0x0427d45906c8e1c156d8e06c1fefc4584b916d9f/) | MarketView | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x0c556a...a2e795`](./contracts/gnosis-100/0x0c556afe7d7214fc9e7ab906014db695b5a2e795/) | MultiDrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0x2a9fa7...5b0cad`](./contracts/gnosis-100/0x2a9fa7bad74e85d91c8f9fc1258f065e285b0cad/) | PickemSlateFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb8be71...ae4316`](./contracts/ethereum-1/0xb8be713fee0b3f437be4793a23f96fec7eae4316/) | RewardClaimHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0x26427d...47eb4f`](./contracts/gnosis-100/0x26427dde0301388a906c77647e4bd8d1e147eb4f/) | Seer_LP_Point | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0x3a0d86...dc607c`](./contracts/gnosis-100/0x3a0d8671efcbc172edbe32f91169bbc984dc607c/) | SeerCredits | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0x31ac36...6ecbac`](./contracts/gnosis-100/0x31ac36cbaa3e7e57a1542f6623fc775ec86ecbac/) | SlateFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0x293dfe...4640d1`](./contracts/gnosis-100/0x293dfe3ffe40454598ebc745d46da3d3c44640d1/) | SportsSlateFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | gnosis | [`0x02d727...e2e5c2`](./contracts/gnosis-100/0x02d727a6a93eb45d2c20f6d9c7a97ae8fce2e5c2/) | TradingCredits | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3af2ae...2157c9`](./contracts/ethereum-1/0x3af2ae62f0d3353c9f15b7fe678ccdaf2b2157c9/) | Whitelist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd19431...10b79f`](./contracts/ethereum-1/0xd194319d1804c1051dd21ba1dc931ca72410b79f/) | Wrapped1155Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0x383753...f2887a`](./contracts/gnosis-100/0x383753af6ca47e1b46b000e07ab210fd04f2887a/) | WrappedERC20Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 17 |
-| upstream | 3 |
-| standard_library | 2 |
-| needs_review | 157 |
+| native | 81 |
+| upstream | 5 |
+| standard_library | 1 |
+| needs_review | 100 |
 
 ## Scope Matching Notes
 

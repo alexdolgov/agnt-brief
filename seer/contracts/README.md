@@ -1,15 +1,23 @@
 # seer — Contract Index
 
-179 unique implementations across 2 chains · 311 deployments · 0 audited · 35 unaudited · 144 unverified
+187 unique implementations across 2 chains · 336 deployments · 0 audited · 43 unaudited · 144 unverified
 
-## adapter (4)
+## adapter (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
+| [ConditionalRouter (2 deployments)](./ethereum-1/0x1ba2db142a69b2d0b0edbe666a9bd457e344d9b5/) | ethereum | 2 deployments: ethereum [`0x1ba2db...44d9b5`](./ethereum-1/0x1ba2db142a69b2d0b0edbe666a9bd457e344d9b5/); gnosis `0x774284...13c29c` | ⚠️ Unaudited | Verified |
 | [FutarchyRouter (4 deployments)](./gnosis-100/0x7495a583ba85875d59407781b4958ed6e0e1228f/) | gnosis | 4 deployments: ethereum `0xac9bf8...3f98dc`; gnosis [`0x7495a5...e1228f`](./gnosis-100/0x7495a583ba85875d59407781b4958ed6e0e1228f/); gnosis `0x74c4df...c19c7c`; gnosis `0xe2996f...c9f74e` | ⚠️ Unaudited | Verified |
-| [GnosisRouter (11 deployments)](./gnosis-100/0x1c676107eee61cc2b400df92ae0fe08ea818ea9a/) | gnosis | 11 deployments: gnosis [`0x1c6761...18ea9a`](./gnosis-100/0x1c676107eee61cc2b400df92ae0fe08ea818ea9a/); gnosis `0x1cc00a...d75b61`; gnosis `0x2070b8...59e140`; gnosis `0x790510...90509f`; gnosis `0x7babb8...eb281d`; gnosis `0x7e9757...d7f72a`; gnosis `0x8046a0...77fa79`; gnosis `0xacf776...9c6a70`; gnosis `0xe94d65...837389`; gnosis `0xf68ff4...349d07`; gnosis `0xfe8bf5...4a46b2` | ⚠️ Unaudited | Verified |
+| [GnosisRouter (12 deployments)](./gnosis-100/0x1c676107eee61cc2b400df92ae0fe08ea818ea9a/) | gnosis | 12 deployments: gnosis [`0x1c6761...18ea9a`](./gnosis-100/0x1c676107eee61cc2b400df92ae0fe08ea818ea9a/); gnosis `0x1cc00a...d75b61`; gnosis `0x2070b8...59e140`; gnosis `0x790510...90509f`; gnosis `0x7babb8...eb281d`; gnosis `0x7e9757...d7f72a`; gnosis `0x8046a0...77fa79`; gnosis `0xacf776...9c6a70`; gnosis `0xe94d65...837389`; gnosis `0xec9048...c70fb8`; gnosis `0xf68ff4...349d07`; gnosis `0xfe8bf5...4a46b2` | ⚠️ Unaudited | Verified |
 | [MainnetRouter (2 deployments)](./ethereum-1/0x886ef0a78fabbae942f1da1791a8ed02a5af8bc6/) | ethereum | 2 deployments: ethereum [`0x886ef0...af8bc6`](./ethereum-1/0x886ef0a78fabbae942f1da1791a8ed02a5af8bc6/); ethereum `0xfe8bf5...4a46b2` | ⚠️ Unaudited | Verified |
 | [SwaprSavingsXDaiRouter](./gnosis-100/0x4f774e1dbddbf03351204f1f53f160ce108a09aa/) | gnosis | [`0x4f774e...8a09aa`](./gnosis-100/0x4f774e1dbddbf03351204f1f53f160ce108a09aa/) | ⚠️ Unaudited | Verified |
+
+## core_logic (2)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [CentralVault (4 deployments)](./gnosis-100/0x0ec66212a45f6b289e1965ac218d95b350c2b84d/) | gnosis | 4 deployments: gnosis [`0x0ec662...c2b84d`](./gnosis-100/0x0ec66212a45f6b289e1965ac218d95b350c2b84d/); gnosis `0x4f49a8...f0f82b`; gnosis `0x7f2265...d57894`; gnosis `0xde8d8f...249995` | ⚠️ Unaudited | Verified |
+| [ParimutuelVault (2 deployments)](./gnosis-100/0x506dcc9781b895b02559014544a83bd39f0b6137/) | gnosis | 2 deployments: gnosis [`0x506dcc...0b6137`](./gnosis-100/0x506dcc9781b895b02559014544a83bd39f0b6137/); gnosis `0x659a90...2810c9` | ⚠️ Unaudited | Verified |
 
 ## governance (1)
 
@@ -23,7 +31,7 @@
 |---|---|---|---|---|
 | [GovernedRecipient (7 deployments)](./gnosis-100/0x126afb5e8218ce49f34317a3f3ffefde5bca2dc4/) | gnosis | 7 deployments: gnosis [`0x126afb...ca2dc4`](./gnosis-100/0x126afb5e8218ce49f34317a3f3ffefde5bca2dc4/); gnosis `0x5693ca...7d6872`; gnosis `0x6beae2...558350`; gnosis `0x9e850e...667b19`; gnosis `0xa53544...32e0a6`; gnosis `0xa70f53...777a2a`; gnosis `0xceeb6a...583183` | ⚠️ Unaudited | Verified |
 
-## registry (6)
+## registry (11)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -32,6 +40,11 @@
 | [FutarchyFactory (4 deployments)](./gnosis-100/0xa6cb18fcdc17a2b44e5cad2d80a6d5942d30a345/) | gnosis | 4 deployments: ethereum `0xf9369c...9d3678`; gnosis [`0xa6cb18...30a345`](./gnosis-100/0xa6cb18fcdc17a2b44e5cad2d80a6d5942d30a345/); gnosis `0xe789e4...f6b792`; gnosis `0xecfbc2...30942f` | ⚠️ Unaudited | Verified |
 | [LMSRMarketMakerFactory](./ethereum-1/0x37186b5d78ebb1f37bc56e5dca7f18ab98256c4b/) | ethereum | [`0x37186b...256c4b`](./ethereum-1/0x37186b5d78ebb1f37bc56e5dca7f18ab98256c4b/) | ⚠️ Unaudited | Verified |
 | [MarketFactory (21 deployments)](./gnosis-100/0x1246c7e5ac59ba73a45a62e3081b548f02f58e90/) | gnosis | 21 deployments: ethereum `0x1f728c...7b7904`; ethereum `0x3124e9...c77a73`; ethereum `0x336695...38f348`; gnosis [`0x1246c7...f58e90`](./gnosis-100/0x1246c7e5ac59ba73a45a62e3081b548f02f58e90/); gnosis `0x2dbe07...582467`; gnosis `0x2e3937...ecb68e`; gnosis `0x47fc00...3a78fb`; gnosis `0x4c98aa...8e6ed0`; gnosis `0x724478...d86c09`; gnosis `0x83183d...5cdcf1`; gnosis `0x846f8f...92e6c5`; gnosis `0x8dd6fa...96e949`; gnosis `0x9498d2...c7bcc8`; gnosis `0xa99121...12ce33`; gnosis `0xaa43e7...a82ed7`; gnosis `0xab797c...7a87fc`; gnosis `0xc73323...b1131c`; gnosis `0xd1220e...821948`; gnosis `0xe619f5...14a2e6`; gnosis `0xeb0214...c20e6d`; gnosis `0xf365be...9818bf` | ⚠️ Unaudited | Verified |
+| [PickemSlateFactory (4 deployments)](./gnosis-100/0x2a9fa7bad74e85d91c8f9fc1258f065e285b0cad/) | gnosis | 4 deployments: gnosis [`0x2a9fa7...5b0cad`](./gnosis-100/0x2a9fa7bad74e85d91c8f9fc1258f065e285b0cad/); gnosis `0x4df41e...1612f5`; gnosis `0xa2cd7c...d9bb67`; gnosis `0xfe5754...aac3c3` | ⚠️ Unaudited | Verified |
+| [SlateFactory (2 deployments)](./gnosis-100/0x31ac36cbaa3e7e57a1542f6623fc775ec86ecbac/) | gnosis | 2 deployments: gnosis [`0x31ac36...6ecbac`](./gnosis-100/0x31ac36cbaa3e7e57a1542f6623fc775ec86ecbac/); gnosis `0xb5a01f...22f1d9` | ⚠️ Unaudited | Verified |
+| [SportsSlateFactory (6 deployments)](./gnosis-100/0x293dfe3ffe40454598ebc745d46da3d3c44640d1/) | gnosis | 6 deployments: gnosis [`0x293dfe...4640d1`](./gnosis-100/0x293dfe3ffe40454598ebc745d46da3d3c44640d1/); gnosis `0x6938ef...dc070a`; gnosis `0x7e53af...a732d8`; gnosis `0x8a670a...7f2999`; gnosis `0x931fc6...3fc6c4`; gnosis `0x96f61c...2a3619` | ⚠️ Unaudited | Verified |
+| [UniswapV3Factory](./ethereum-1/0x1f98431c8ad98523631ae4a59f267346ea31f984/) | ethereum | [`0x1f9843...31f984`](./ethereum-1/0x1f98431c8ad98523631ae4a59f267346ea31f984/) | ⚠️ Unaudited | Verified |
+| [Wrapped1155Factory (2 deployments)](./ethereum-1/0xd194319d1804c1051dd21ba1dc931ca72410b79f/) | ethereum | 2 deployments: ethereum [`0xd19431...10b79f`](./ethereum-1/0xd194319d1804c1051dd21ba1dc931ca72410b79f/); gnosis `0xd19431...10b79f` | ⚠️ Unaudited | Verified |
 | [WrappedERC20Factory (5 deployments)](./gnosis-100/0x383753af6ca47e1b46b000e07ab210fd04f2887a/) | gnosis | 5 deployments: gnosis [`0x383753...f2887a`](./gnosis-100/0x383753af6ca47e1b46b000e07ab210fd04f2887a/); gnosis `0x5bc8dd...e3b557`; gnosis `0x940b60...b3c2f1`; gnosis `0xb105c8...dcae3c`; gnosis `0xd0ee78...6d6c40` | ⚠️ Unaudited | Verified |
 
 ## unknown (167)
@@ -50,7 +63,7 @@
 | [Market (33 deployments)](./gnosis-100/0x0b5f90febc2fc44c43985b2a712f159ca059d93a/) | gnosis | 33 deployments: ethereum `0x8bdc50...d27b93`; gnosis [`0x0b5f90...59d93a`](./gnosis-100/0x0b5f90febc2fc44c43985b2a712f159ca059d93a/); gnosis `0x0d479a...a3ac09`; gnosis `0x20a3b1...1bc2d2`; gnosis `0x21a72f...d1d6a3`; gnosis `0x225030...117711`; gnosis `0x232474...fa5ca8`; gnosis `0x60eb95...c110bf`; gnosis `0x612f80...07bc1e`; gnosis `0x61cdb9...32f459`; gnosis `0x6ac12e...4ef581`; gnosis `0x829c91...88dbcb`; gnosis `0x87aabb...e0baf7`; gnosis `0x87cf5c...d0173c`; gnosis `0x8b8de5...454778`; gnosis `0x8f76bc...a9636a`; gnosis `0x9510c9...9e8aeb`; gnosis `0x9b6cca...7d8de1`; gnosis `0x9baeee...cda933`; gnosis `0x9e2272...24ad10`; gnosis `0x9ef70c...80bc7f`; gnosis `0xab903c...3f98ac`; gnosis `0xabe35c...4802f9`; gnosis `0xbbf8f7...bcc32e`; gnosis `0xc57764...088e17`; gnosis `0xc72f73...a0ca9e`; gnosis `0xe0d285...f51915`; gnosis `0xe820d0...4bb647`; gnosis `0xf27989...bb134e`; gnosis `0xf444a3...8423fd`; gnosis `0xfbebbb...cd2df0`; gnosis `0xfc5e55...cb63ce`; gnosis `0xfe414d...4b7c36` | ⚠️ Unaudited | Verified |
 | [MarketView (17 deployments)](./gnosis-100/0x0427d45906c8e1c156d8e06c1fefc4584b916d9f/) | gnosis | 17 deployments: ethereum `0x44921b...a79f00`; ethereum `0xab797c...7a87fc`; ethereum `0xb2ab74...84771a`; gnosis [`0x0427d4...916d9f`](./gnosis-100/0x0427d45906c8e1c156d8e06c1fefc4584b916d9f/); gnosis `0x3e202f...57142a`; gnosis `0x4ba0c4...dd4cc4`; gnosis `0x5f26f0...a5bbba`; gnosis `0x783b4b...2244ae`; gnosis `0x95493f...90f59c`; gnosis `0x995dc9...27626f`; gnosis `0xbb85ca...dfdf8d`; gnosis `0xd1f885...36414a`; gnosis `0xd34b07...e849e2`; gnosis `0xd45d4b...5d35e7`; gnosis `0xda834f...9d9dbf`; gnosis `0xe1834d...475172`; gnosis `0xfe6f08...a56aa0` | ⚠️ Unaudited | Verified |
 | [MultiDrop (10 deployments)](./gnosis-100/0x0c556afe7d7214fc9e7ab906014db695b5a2e795/) | gnosis | 10 deployments: gnosis [`0x0c556a...a2e795`](./gnosis-100/0x0c556afe7d7214fc9e7ab906014db695b5a2e795/); gnosis `0x129de2...c9c29e`; gnosis `0x28abd3...1810d5`; gnosis `0x39c06a...55cb6c`; gnosis `0x3c918d...8905d4`; gnosis `0x42a305...7bb10b`; gnosis `0x53dfb9...ab33c6`; gnosis `0x714615...5d1953`; gnosis `0x8eca58...c6b74e`; gnosis `0x91a495...e8d95f` | ⚠️ Unaudited | Verified |
-| [Realitio_v2_1_ArbitratorWithAppeals](./ethereum-1/0x179d8f8c811b8c759c33809dbc6c5cedc62d05dd/) | ethereum | [`0x179d8f...2d05dd`](./ethereum-1/0x179d8f8c811b8c759c33809dbc6c5cedc62d05dd/) | ⚠️ Unaudited | Verified |
+| [Realitio_v2_1_ArbitratorWithAppeals (2 deployments)](./ethereum-1/0x179d8f8c811b8c759c33809dbc6c5cedc62d05dd/) | ethereum | 2 deployments: ethereum [`0x179d8f...2d05dd`](./ethereum-1/0x179d8f8c811b8c759c33809dbc6c5cedc62d05dd/); ethereum `0x201803...4f85ad` | ⚠️ Unaudited | Verified |
 | [RealitioArbitratorProxy](./ethereum-1/0x12bb49deb8f293435e27f6f4ab140184604ce346/) | ethereum | [`0x12bb49...4ce346`](./ethereum-1/0x12bb49deb8f293435e27f6f4ab140184604ce346/) | ⚠️ Unaudited | Verified |
 | [RealitioForeignArbitrationProxyWithAppeals](./ethereum-1/0xf5ccbf74121edba492725f325d55356d517723b9/) | ethereum | [`0xf5ccbf...7723b9`](./ethereum-1/0xf5ccbf74121edba492725f325d55356d517723b9/) | ⚠️ Unaudited | Verified |
 | [RealitioHomeArbitrationProxy](./gnosis-100/0xa9fc6f0f2a85fbad7eeec4a63c49014a0a8f1d3c/) | gnosis | [`0xa9fc6f...8f1d3c`](./gnosis-100/0xa9fc6f0f2a85fbad7eeec4a63c49014a0a8f1d3c/) | ⚠️ Unaudited | Verified |

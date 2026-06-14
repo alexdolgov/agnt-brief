@@ -1,0 +1,17 @@
+{
+  "address": "0x293dfe3ffe40454598ebc745d46da3d3c44640d1",
+  "chain_id": 100,
+  "contract_name": "SportsSlateFactory",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "00000000000000000000000083183da839ce8228e31ae41222ead9edbb5cdcf1000000000000000000000000b5a01f794418e51c5872861759470b3be622f1d9",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T00:26:42.907Z"
+}

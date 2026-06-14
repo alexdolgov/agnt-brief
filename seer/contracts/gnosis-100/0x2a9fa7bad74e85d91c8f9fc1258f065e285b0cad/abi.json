@@ -1,0 +1,353 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract ICentralVault",
+        "name": "centralVault_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "CollateralApproveFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CollateralTransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EmptyMarkets",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EmptyName",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAmountsLength",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidSlateId",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidWeightsLength",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PositionPullFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PositionTransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TooManyMarkets",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroCollateral",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroMarket",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "slateId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "markets",
+        "type": "address[]"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      }
+    ],
+    "name": "SlateCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "slateId",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amountPerMatch",
+        "type": "uint256"
+      }
+    ],
+    "name": "SlatePositionEntered",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "slateId",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "totalPayout",
+        "type": "uint256"
+      }
+    ],
+    "name": "SlateRedeemed",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_MARKETS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "centralVault",
+    "outputs": [
+      {
+        "internalType": "contract ICentralVault",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "conditionalTokens",
+    "outputs": [
+      {
+        "internalType": "contract IConditionalTokens",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "contract IERC20",
+            "name": "collateral",
+            "type": "address"
+          },
+          {
+            "internalType": "address[]",
+            "name": "markets",
+            "type": "address[]"
+          }
+        ],
+        "internalType": "struct IPickemSlateFactory.CreateSlateParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "createSlate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "slateId",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "cvPositions",
+    "outputs": [
+      {
+        "internalType": "contract ICVPositions",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "slateId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountPerMatch",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[][]",
+        "name": "weightsPerMatch",
+        "type": "uint256[][]"
+      }
+    ],
+    "name": "enterSlate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "slateId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSlate",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "creator",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC20",
+            "name": "collateral",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IMarket[]",
+            "name": "markets",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint32",
+            "name": "createdAt",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct IPickemSlateFactory.PickemSlate",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nextSlateId",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "slateId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[][]",
+        "name": "amountsPerMatch",
+        "type": "uint256[][]"
+      }
+    ],
+    "name": "redeemSlate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalPayout",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

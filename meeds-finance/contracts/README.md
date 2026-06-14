@@ -1,6 +1,12 @@
 # meeds-finance — Contract Index
 
-4 unique implementations on ethereum · 4 deployments · 0 audited · 4 unaudited · 0 unverified
+5 unique implementations across 5 chains · 10 deployments · 0 audited · 5 unaudited · 0 unverified
+
+## core_logic (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [UniswapV3Pool (6 deployments)](./polygon-137/0x4e7d4e5fd3e4a68adcbeacaa3748b9c67bb02a69/) | polygon | 6 deployments: ethereum `0xc82b1c...12b3d1`; ethereum `0xfa127d...f9989e`; optimism `0xe13330...369b17`; polygon [`0x4e7d4e...b02a69`](./polygon-137/0x4e7d4e5fd3e4a68adcbeacaa3748b9c67bb02a69/); base `0xada40f...51dd55`; arbitrum `0xc76979...7225a1` | ⚠️ Unaudited | Verified |
 
 ## registry (1)
 

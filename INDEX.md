@@ -717,7 +717,7 @@
 | [maya-protocol](./maya-protocol/) | $10.2M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [mcdex](./mcdex/) | $1.1M | 8.3% | $1.1M | dead | 4 | 1465 | 2026-06-11 |
 | [mdex](./mdex/) | $235.5K | 85.7% | $20.2K | declining | 3 | 13 | 2026-06-11 |
-| [meeds-finance](./meeds-finance/) | $1.8M | 0.0% | $1.8M | unknown | 0 | 4 | 2026-06-11 |
+| [meeds-finance](./meeds-finance/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 5 | 2026-06-14 |
 | [meld-gold](./meld-gold/) | $9.7M | 0.0% | ? | active | 1 | 1 | 2026-06-13 |
 | [mendi-finance](./mendi-finance/) | $79.1M | 10.7% | $79.1M | dead | 4 | 39 | 2026-06-11 |
 | [mento](./mento/) | $2.3M | 61.1% | $65.0K | declining | 23 | 218 | 2026-06-12 |
@@ -793,7 +793,7 @@
 | [nawa-protocol](./nawa-protocol/) | $4.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [nbx](./nbx/) | $1.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [near-intents](./near-intents/) | $3.7M | 0.0% | $3.7M | active | 0 | 7 | 2026-06-12 |
-| [neemo-finance](./neemo-finance/) | $1.4M | 0.0% | ? | active | 1 | 14 | 2026-06-11 |
+| [neemo-finance](./neemo-finance/) | $1.1M | 0.0% | ? | active | 1 | 14 | 2026-06-14 |
 | [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 17 | 2026-06-11 |
 | [nemo](./nemo/) | $76.1K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [nemoswap](./nemoswap/) | $65.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1050,7 +1050,7 @@
 | [secured-finance](./secured-finance/) | $629.8K | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [seeder-finance](./seeder-finance/) | $3.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [seedify](./seedify/) | $32.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-31 |
+| [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 187 | 2026-06-14 |
 | [segment-finance](./segment-finance/) | $524.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [seneca](./seneca/) | $11.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [sentiment](./sentiment/) | $64.3 | 73.3% | ? | dead | 8 | 297 | 2026-06-11 |
@@ -1195,7 +1195,7 @@
 | [swellchain-bridge](./swellchain-bridge/) | $612.4K | 0.0% | ? | declining | 0 | 24 | 2026-06-13 |
 | [swerve](./swerve/) | $305.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [swirl](./swirl/) | $4.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [switcheo-finance](./switcheo-finance/) | $68.3M | 0.0% | $68.3M | active | 0 | 47 | 2026-06-11 |
+| [switcheo-finance](./switcheo-finance/) | $71.0M | 0.0% | $71.0M | active | 0 | 63 | 2026-06-14 |
 | [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 151 | 2026-06-13 |
 | [symbiosis](./symbiosis/) | $236.1M | 15.4% | $236.1M | active | 15 | 40 | 2026-06-11 |
 | [symmetry-trade](./symmetry-trade/) | $7.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1298,7 +1298,7 @@
 | [untangled](./untangled/) | $302.8K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [untitledbank](./untitledbank/) | $242.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [uplift-dao](./uplift-dao/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-06-13 |
+| [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-06-14 |
 | [urdex-finance](./urdex-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [usdt0](./usdt0/) | $3.6B | 0.0% | ? | unknown | 20 | 0 | 2026-06-13 |
 | [uswap](./uswap/) | $545.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ekubo",
-  "generated_at": "2026-06-10T23:02:58.206Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-14T05:32:38.680Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-39b4",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ekubo",
@@ -35,7 +35,7 @@
     "coverage_pct": 44.4,
     "total_audits": 5,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 27323055.99682,
+    "dl_tvl_usd": 20901566.75685,
     "tvl_usd": 5648264.121123274,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -184,7 +184,7 @@
       "address": "0x514d5de68852628af2f1236f780866989660ada6",
       "name": "Oracle",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "EVM Contracts (V2)",
       "tvl_usd": null,
@@ -797,10 +797,10 @@
     }
   ],
   "origin_summary": {
-    "native": 14,
+    "native": 15,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {

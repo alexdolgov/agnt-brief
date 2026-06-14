@@ -163,7 +163,7 @@
 | [bitmap-game](./bitmap-game/) | $36.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [bitomato](./bitomato/) | $2.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [bitty](./bitty/) | $5.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [bitu-protocol](./bitu-protocol/) | $22.3M | 75.0% | ? | active | 2 | 4 | 2026-06-10 |
+| [bitu-protocol](./bitu-protocol/) | $19.5M | 60.0% | ? | active | 2 | 5 | 2026-06-14 |
 | [bitvenus](./bitvenus/) | $20.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [bitway-earn](./bitway-earn/) | $136.4M | 0.0% | $136.4M | active | 3 | 8 | 2026-06-12 |
 | [bitway](./bitway/) | $136.4M | 0.0% | $136.4M | active | 3 | 8 | 2026-06-12 |
@@ -371,7 +371,7 @@
 | [easedefi.org](./easedefi.org/) | $1.5M | 0.0% | $1.5M | active | 1 | 9 | 2026-06-12 |
 | [eclipsefi](./eclipsefi/) | $15.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [egas-swap](./egas-swap/) | $18.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [ekubo](./ekubo/) | $5.6M | 44.4% | $5.6M | active | 5 | 15 | 2026-06-10 |
+| [ekubo](./ekubo/) | $5.6M | 44.4% | $5.6M | active | 5 | 15 | 2026-06-14 |
 | [elara](./elara/) | $12.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [electra](./electra/) | $81.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [elephant-money](./elephant-money/) | $1.6M | 5.9% | $1.6M | declining | 2 | 346 | 2026-06-10 |
@@ -427,7 +427,7 @@
 | [flaunch](./flaunch/) | $2.1M | 0.0% | ? | active | 1 | 3 | 2026-06-10 |
 | [flex](./flex/) | $611.7K | 0.0% | ? | active | 3 | 1 | 2026-06-10 |
 | [flexa](./flexa/) | $1.4M | 100.0% | ? | declining | 2 | 2 | 2026-06-10 |
-| [flipster](./flipster/) | $33.0M | 0.0% | ? | active | 0 | 2 | 2026-06-12 |
+| [flipster](./flipster/) | $33.0M | 0.0% | ? | active | 0 | 2 | 2026-06-14 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 16 | 2026-06-13 |
 | [fluxion-network](./fluxion-network/) | $2.4M | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [flying-tulip](./flying-tulip/) | $51.3M | 0.0% | $51.3M | active | 0 | 62 | 2026-06-13 |
@@ -651,7 +651,7 @@
 | [latch](./latch/) | $189.8 | 0.0% | $189.8 | declining | 0 | 1 | 2026-06-11 |
 | [latteswap](./latteswap/) | $54.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [layerakira](./layerakira/) | $736.6 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [layerbank](./layerbank/) | $116.7K | 50.0% | ? | declining | 4 | 91 | 2026-06-11 |
+| [layerbank](./layerbank/) | $116.8K | 50.0% | ? | declining | 4 | 91 | 2026-06-14 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | active | 0 | 109 | 2026-06-13 |
 | [legacy-canary-protocol](./legacy-canary-protocol/) | $5.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -764,7 +764,7 @@
 | [moola-market](./moola-market/) | $73.9K | 0.0% | $73.9K | declining | 1 | 53 | 2026-06-11 |
 | [moonbase-alpha](./moonbase-alpha/) | $2.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mooniswap](./mooniswap/) | $414.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [moonlander](./moonlander/) | $30.0M | 0.0% | ? | active | 0 | 11 | 2026-06-12 |
+| [moonlander](./moonlander/) | $30.0M | 0.0% | ? | active | 0 | 11 | 2026-06-14 |
 | [moonwell-apollo](./moonwell-apollo/) | $844.2K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [moonwell](./moonwell/) | $130.3M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [moraswap](./moraswap/) | $5.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

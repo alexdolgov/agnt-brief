@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "layerbank",
-  "generated_at": "2026-06-11T00:38:51.464Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
+  "generated_at": "2026-06-14T05:35:15.331Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-39b4",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "layerbank",
@@ -33,27 +33,29 @@
   },
   "summary": {
     "total_contracts": 91,
-    "total_addresses": 216,
+    "total_addresses": 219,
     "unique_implementations": 91,
-    "total_deployments": 216,
+    "total_deployments": 219,
     "audited_contracts": 7,
     "unaudited_contracts": 7,
-    "contracts_verified_audited": 6,
+    "contracts_verified_audited": 7,
     "contracts_verified_unaudited": 7,
-    "contracts_verified_by_bytecode": 1,
+    "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 77,
     "coverage_pct": 50,
     "total_audits": 4,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 23190417.69241,
-    "tvl_usd": 116735.51977586863,
+    "dl_tvl_usd": 20551091.87131,
+    "tvl_usd": 116760.73517694074,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
+      "bsc": 25.22,
       "linea": 116735.52
     },
     "asd_usd": null,
     "website_url": "https://layerbank.finance",
     "chains": [
+      "bsc",
       "linea",
       "manta",
       "mode",
@@ -94,11 +96,29 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 116735.51977586863,
+      "tvl_usd": 116760.73517694074,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "LToken",
       "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe6a89cfee340ebfe9d05b5af131526e006baf543",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xfb9292c180bb6056487af44ef077fde90b9c86b3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 25.215401072104864,
+          "is_audited": false
+        },
         {
           "chain_id": 169,
           "chain_name": "manta",
@@ -492,6 +512,15 @@
       "impl_address": null,
       "impl_name": "Core",
       "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x8efdd7396b83cd53ae7555224a30c41b1a100ffa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 169,
           "chain_name": "manta",
@@ -1188,8 +1217,8 @@
           "chain_id": 59144,
           "chain_name": "linea",
           "address": "0xe4297b0644518d2a118cd3abb2a4ff11b3ff82b5",
-          "source_verified": false,
-          "verified_by_bytecode": true,
+          "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -1208,8 +1237,8 @@
       ],
       "is_audited": true,
       "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_audited",
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2651,7 +2680,7 @@
       "address": "0x2c4cbd05f01e4870197b4bd1fd70538efbf60999",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2713,7 +2742,7 @@
       "address": "0x52b47029c19e5c69eb3678a618b46bcd25ac6ae2",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3240,7 +3269,7 @@
       "address": "0xbb5fe256f5d68cae11bfd5bd9acdbef8bfdc445d",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3488,7 +3517,7 @@
       "address": "0xe43976e0ad6ffe02500069ae21e376fb87845ed6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3519,7 +3548,7 @@
       "address": "0xe937de87cff1b15d6edd56ea39c3a2a3826a6102",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3643,7 +3672,7 @@
       "address": "0xfc64ac71e97067080bf1ac3bc7b79790f185cc32",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3705,7 +3734,7 @@
       "address": "0xfde206138d3314a421de06e4bb9f18f3237a8051",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3736,7 +3765,7 @@
       "address": "0xff8030c391ec0d89b8fee189721f300b77790053",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4228,10 +4257,10 @@
     }
   ],
   "origin_summary": {
-    "native": 83,
+    "native": 91,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 8
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {

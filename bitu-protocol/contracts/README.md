@@ -1,6 +1,12 @@
 # bitu-protocol — Contract Index
 
-4 unique implementations on bsc · 4 deployments · 3 audited · 1 unaudited · 0 unverified
+5 unique implementations on bsc · 5 deployments · 3 audited · 2 unaudited · 0 unverified
+
+## governance (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [GnosisSafeL2](./bsc-56/0x07c3c3ff0742a985cf15ca5a6b027679c2b57373/) | bsc | [`0x07c3c3...b57373`](./bsc-56/0x07c3c3ff0742a985cf15ca5a6b027679c2b57373/) | ⚠️ Unaudited | Verified |
 
 ## token (1)
 

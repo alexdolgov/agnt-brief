@@ -151,7 +151,7 @@ Each project directory contains:
 | [1inch](./1inch/brief.md) | $2.89M | ethereum | 275 | 105/275 (38%) | 21.9% | 13.3% (ChainSecurity, MixBytes, OpenZeppelin, Sherlock) | 56 | fresh | ✅ active | $16.09M |
 | [equilibria](./equilibria/brief.md) | $18.14M | 10 | 119 | 70/119 (59%) | 17.6% | 0.0% (-) | 5 | aging | ⚠️ declining | $15.67M |
 | [pharaoh-exchange](./pharaoh-exchange/brief.md) | $38.71M | avalanche | 60 | 48/60 (80%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | $15.62M |
-| [thorswap](./thorswap/brief.md) | $16.73M | ethereum | 34 | 23/34 (68%) | 13.0% | 0.0% (-) | 2 | stale | ❓ unknown | $15.54M |
+| [thorswap](./thorswap/brief.md) | $12.58M | 7 | 45 | 30/45 (67%) | 9.1% | 0.0% (-) | 2 | stale | ❓ unknown | $15.54M |
 | [t-rize](./t-rize/brief.md) | $23.00M | base | 8 | 8/8 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $15.01M |
 | [royco-protocol](./royco-protocol/brief.md) | $31.92M | 6 | 17 | 12/17 (71%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $13.01M |
 | [makina](./makina/brief.md) | $36.80M | base, ethereum, ink | 36 | 33/36 (92%) | 90.9% | 84.8% (ChainSecurity) | 3 | fresh | ✅ active | $12.90M |
@@ -246,7 +246,7 @@ Each project directory contains:
 | [zircuit-finance](./zircuit-finance/brief.md) | $1.52M | base, ethereum | 8 | 8/8 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.51M |
 | [easedefi.org](./easedefi.org/brief.md) | $3.61M | ethereum | 9 | 9/9 (100%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $1.48M |
 | [seer](./seer/brief.md) | $828.65K | ethereum, gnosis | 187 | 42/187 (22%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.48M |
-| [predict-fun](./predict-fun/brief.md) | $14.59M | blast, bsc | 40 | 25/40 (63%) | 8.0% | 8.0% (Cyfrin) | 2 | fresh | ❓ unknown | $1.47M |
+| [predict-fun](./predict-fun/brief.md) | $16.83M | blast, bsc | 42 | 27/42 (64%) | 7.4% | 7.4% (Cyfrin) | 2 | fresh | ✅ active | $1.47M |
 | [sashimiswap](./sashimiswap/brief.md) | $4.56M | bsc, ethereum, heco | 62 | 32/62 (52%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $1.44M |
 | [taiko-bridge](./taiko-bridge/brief.md) | $12.76M | ethereum | 56 | 48/56 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.42M |
 | [shardingdao](./shardingdao/brief.md) | $6.28M | ethereum | 12 | 12/12 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.38M |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-14T05:35:50.738Z_
+_Generated: 2026-06-14T05:47:05.537Z_
 _Projects: 1409_

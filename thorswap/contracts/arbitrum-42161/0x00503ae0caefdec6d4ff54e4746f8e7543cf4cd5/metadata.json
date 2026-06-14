@@ -1,0 +1,17 @@
+{
+  "address": "0x00503ae0caefdec6d4ff54e4746f8e7543cf4cd5",
+  "chain_id": 42161,
+  "contract_name": "SKChainflipHyperLiquid_V1",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "0000000000000000000000008baf33e755ee29e5e37f370a11a0a889dac5d5f70000000000000000000000002df1c51e09aecf9cacb7bc98cb1742757f163df7000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e58310000000000000000000000009f9a7d3e131ed45225396613e383d59a732f7beb00000000000000000000000079001a5e762f3befc8e5871b42f6734e00498920",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T05:41:42.619Z"
+}

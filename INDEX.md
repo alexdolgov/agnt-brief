@@ -266,7 +266,7 @@
 | [clever](./clever/) | $3.2M | 10.6% | $1.6M | active | 3 | 76 | 2026-06-10 |
 | [clober](./clober/) | $516.5K | 0.0% | ? | unknown | 8 | 0 | 2026-06-13 |
 | [coin8](./coin8/) | $53.7M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [coinsquare](./coinsquare/) | $9.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-13 |
+| [coinsquare](./coinsquare/) | $9.0M | 0.0% | ? | unknown | 0 | 0 | 2026-06-14 |
 | [coinstore](./coinstore/) | $62.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [coinw](./coinw/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [colafactory](./colafactory/) | $673.6 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -607,9 +607,9 @@
 | [kasu](./kasu/) | $10.6M | 100.0% | ? | active | 2 | 22 | 2026-06-12 |
 | [katana-pre-launch](./katana-pre-launch/) | $35.5M | 0.0% | $35.5M | active | 28 | 174 | 2026-06-12 |
 | [kava-earn](./kava-earn/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
-| [kava-lend](./kava-lend/) | $10.6M | 0.0% | ? | active | 1 | 1 | 2026-06-12 |
+| [kava-lend](./kava-lend/) | $10.6M | 0.0% | ? | active | 1 | 1 | 2026-06-14 |
 | [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-06-11 |
-| [kava-mint](./kava-mint/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-06-12 |
+| [kava-mint](./kava-mint/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-06-14 |
 | [kawaiiswap](./kawaiiswap/) | $798.7 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [keep-network](./keep-network/) | $25.5M | 7.9% | $24.7M | declining | 18 | 225 | 2026-06-11 |
 | [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | declining | 1 | 480 | 2026-06-13 |
@@ -932,7 +932,7 @@
 | [potatoswap](./potatoswap/) | $5.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [powercity](./powercity/) | $3.3M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [powh3d](./powh3d/) | $4.4M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
-| [predict-fun](./predict-fun/) | $1.5M | 8.0% | $1.5M | unknown | 9 | 40 | 2026-05-22 |
+| [predict-fun](./predict-fun/) | $1.5M | 7.4% | $1.5M | active | 9 | 42 | 2026-06-14 |
 | [predictcoin](./predictcoin/) | $117.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [prime-staking](./prime-staking/) | $2.5M | 0.0% | ? | active | 2 | 10 | 2026-06-14 |
 | [prime-vaults](./prime-vaults/) | $11.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -1238,7 +1238,7 @@
 | [thena](./thena/) | $208.2 | 10.2% | $208.2 | declining | 3 | 131 | 2026-05-25 |
 | [thesauros](./thesauros/) | $50.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [thoreum-finance](./thoreum-finance/) | $45.1K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
-| [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-06-11 |
+| [thorswap](./thorswap/) | $15.5M | 9.1% | $15.5M | unknown | 2 | 45 | 2026-06-14 |
 | [throne](./throne/) | $16.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [thruster](./thruster/) | $113.0K | 0.0% | $113.0K | dead | 0 | 26 | 2026-06-13 |
 | [timeless-finance](./timeless-finance/) | $12.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

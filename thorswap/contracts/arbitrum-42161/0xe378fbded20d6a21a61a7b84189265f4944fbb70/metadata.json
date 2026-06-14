@@ -1,0 +1,17 @@
+{
+  "address": "0xe378fbded20d6a21a61a7b84189265f4944fbb70",
+  "chain_id": 42161,
+  "contract_name": "TSAggregatorUniswap_V2",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000008baf33e755ee29e5e37f370a11a0a889dac5d5f700000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab10000000000000000000000004752ba5dbc23f44d87826276bf6fd6b1c372ad24",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T05:41:42.523Z"
+}

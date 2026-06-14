@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "thorswap",
-  "generated_at": "2026-06-11T03:33:51.407Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
+  "generated_at": "2026-06-14T05:41:40.076Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-39b4",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "thorswap",
@@ -16,26 +16,26 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 220,
+    "days_since_peak": 223,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 34,
-    "total_addresses": 56,
-    "unique_implementations": 34,
-    "total_deployments": 56,
+    "total_contracts": 45,
+    "total_addresses": 90,
+    "unique_implementations": 45,
+    "total_deployments": 90,
     "audited_contracts": 3,
-    "unaudited_contracts": 20,
+    "unaudited_contracts": 30,
     "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 20,
-    "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 11,
-    "coverage_pct": 13,
+    "contracts_verified_unaudited": 27,
+    "contracts_verified_by_bytecode": 3,
+    "contracts_unverified": 12,
+    "coverage_pct": 9.1,
     "total_audits": 2,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 16729673.39748,
+    "dl_tvl_usd": 12576995.78204,
     "tvl_usd": 15542115.041694487,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -44,7 +44,13 @@
     "asd_usd": 15542115.041694487,
     "website_url": "https://www.thorswap.finance/",
     "chains": [
-      "ethereum"
+      "arbitrum",
+      "avalanche",
+      "base",
+      "bsc",
+      "ethereum",
+      "optimism",
+      "polygon"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
@@ -63,7 +69,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 34,
+    "unique_implementations": 45,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -173,6 +179,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "review"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x00503ae0caefdec6d4ff54e4746f8e7543cf4cd5",
+      "name": "SKChainflipHyperLiquid_V1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SKChainflipHyperLiquid_V1",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x00503ae0caefdec6d4ff54e4746f8e7543cf4cd5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -458,11 +495,91 @@
       "contamination_flag": "cleared"
     },
     {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x6e5add41c751e89432cda5763156a3f41f1b17ac",
+      "name": "TSAggregatorGeneric_V1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TSAggregatorGeneric_V1",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb1970f2157a1b24d40f98b252f4f60b45c7aaeed",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x6e5add41c751e89432cda5763156a3f41f1b17ac",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xf892fef9da200d9e84c9b0647ecff0f34633abe8",
+      "address": "0x1204b5bf0d6d48e718b1d9753a4166a7258b8432",
+      "name": "TSAggregatorStargate",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TSAggregatorStargate",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1204b5bf0d6d48e718b1d9753a4166a7258b8432",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x48f68ff093b3b3a80d2fc97488ead97e16b86283",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x542f4ffb7ebbc194ccbfd72ea92199a7f77573d7",
       "name": "TSAggregatorTokenTransferProxy",
-      "role": "proxy",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -479,6 +596,51 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x542f4ffb7ebbc194ccbfd72ea92199a7f77573d7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x8baf33e755ee29e5e37f370a11a0a889dac5d5f7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x69ba883af416ff5501d54d5e27a1f497fbd97156",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -489,6 +651,309 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xe378fbded20d6a21a61a7b84189265f4944fbb70",
+      "name": "TSAggregatorUniswap_V2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TSAggregatorUniswap_V2",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xe378fbded20d6a21a61a7b84189265f4944fbb70",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0fa226e8bcf45ec2f3c3163d2d7ba0d2aad2ebcf",
+      "name": "TSAggregatorUniswapV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TSAggregatorUniswapV2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0fa226e8bcf45ec2f3c3163d2d7ba0d2aad2ebcf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x14d52a5709743c9563a2c36842b3fe7db1fcf5bc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7334543783a6a87bdd028c902f7c87afb703ccbc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbcd954803163094590af749377c082619014acd5",
+      "name": "TSAggregatorUniswapV3",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TSAggregatorUniswapV3",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbcd954803163094590af749377c082619014acd5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd785eb8d8cf2adc99b742c4e7c77d39f1bc604f1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xde3205dc90336c916cbbad21383ea95f418a7cba",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x2f661fe1441fe5dd9197660c9030fe71b9632e60",
+      "name": "TSAggregatorUniswapV3_V1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TSAggregatorUniswapV3_V1",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x2f661fe1441fe5dd9197660c9030fe71b9632e60",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x33d241ab15c2861347fb886ff6c4a90ab99c463b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4d32857a09df8d4ef610b9cdc9450e28b900fec6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x50cbe1330100df9086f6fbc994a300b75dd78012",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x542f4ffb7ebbc194ccbfd72ea92199a7f77573d7",
+      "name": "TSAggregatorUniswapV3_V2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TSAggregatorUniswapV3_V2",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x542f4ffb7ebbc194ccbfd72ea92199a7f77573d7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x8772b3a6c87dc23bf6ab93c5f04e3f87da0e9606",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd46ee26b56f28e8a4a83ed853c47b51935dc48ef",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x05d33ca8a90e89a1b091d78c8aa731e3dfd57afd",
+      "name": "TSAggregatorWoofi",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TSAggregatorWoofi",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x30912b38618d3d37de3191a4ffe982c65a9aec2e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x05d33ca8a90e89a1b091d78c8aa731e3dfd57afd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x30912b38618d3d37de3191a4ffe982c65a9aec2e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xcd6f8b17d19077f7f5a8fa30c9b645b689626ceb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x8772b3a6c87dc23bf6ab93c5f04e3f87da0e9606",
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -691,11 +1156,11 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x849ec611ee47bee012fe9274b78e10ddae167d05",
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x17e7e5016ac1d4527f211bebf5b11fe36bda7d10",
       "name": "TSOracle_V1",
-      "role": "operational_periphery",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -721,6 +1186,46 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x17e7e5016ac1d4527f211bebf5b11fe36bda7d10",
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x699d70b24c3818aac83cb2c5bacfa93448db61e4",
+      "name": "TSSushiPoolDonator_V1",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TSSushiPoolDonator_V1",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x699d70b24c3818aac83cb2c5bacfa93448db61e4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -728,7 +1233,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -811,9 +1316,9 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x84fda63c0769b2478865074a0479d28f1a6003a2",
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x25bdf9b9064f34ad943677d510ba5e2499f69e72",
       "name": "TSWrapperTCRouterV4_V1",
       "role": "adapter",
       "origin_kind": "native",
@@ -868,13 +1373,31 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x25bdf9b9064f34ad943677d510ba5e2499f69e72",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xcbd658862518ec05fb99e8e993fdb502cd795bfc",
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
       "is_audited": false,
       "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1219,6 +1742,37 @@
       "contamination_flag": "review"
     },
     {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x55cf4d1e35221f0a7ef3f5d1ce5a07e3ecdb25b2",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x55cf4d1e35221f0a7ef3f5d1ce5a07e3ecdb25b2",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x34deff97889f3a6a483e3b9255cafcb9a6e03588",
@@ -1398,14 +1952,14 @@
       "auditor": "Halborn",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 13,
+      "coverage_pct": 9.1,
       "latest_audit": "2022-04"
     },
     {
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 8.7,
+      "coverage_pct": 6.1,
       "latest_audit": "2022-03"
     }
   ],
@@ -1435,6 +1989,16 @@
       "chain_name": "ethereum",
       "address": "0x6755630c583f12ffbd10568eb633c0319db34922",
       "name": "SingleStaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x00503ae0caefdec6d4ff54e4746f8e7543cf4cd5",
+      "name": "SKChainflipHyperLiquid_V1",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -1501,6 +2065,86 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x6e5add41c751e89432cda5763156a3f41f1b17ac",
+      "name": "TSAggregatorGeneric_V1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1204b5bf0d6d48e718b1d9753a4166a7258b8432",
+      "name": "TSAggregatorStargate",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xe378fbded20d6a21a61a7b84189265f4944fbb70",
+      "name": "TSAggregatorUniswap_V2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0fa226e8bcf45ec2f3c3163d2d7ba0d2aad2ebcf",
+      "name": "TSAggregatorUniswapV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbcd954803163094590af749377c082619014acd5",
+      "name": "TSAggregatorUniswapV3",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x2f661fe1441fe5dd9197660c9030fe71b9632e60",
+      "name": "TSAggregatorUniswapV3_V1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x542f4ffb7ebbc194ccbfd72ea92199a7f77573d7",
+      "name": "TSAggregatorUniswapV3_V2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x05d33ca8a90e89a1b091d78c8aa731e3dfd57afd",
+      "name": "TSAggregatorWoofi",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a",
@@ -1551,11 +2195,21 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x17e7e5016ac1d4527f211bebf5b11fe36bda7d10",
+      "name": "TSOracle_V1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x849ec611ee47bee012fe9274b78e10ddae167d05",
-      "name": "TSOracle_V1",
-      "role": "operational_periphery",
+      "address": "0x699d70b24c3818aac83cb2c5bacfa93448db61e4",
+      "name": "TSSushiPoolDonator_V1",
+      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1581,9 +2235,9 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x84fda63c0769b2478865074a0479d28f1a6003a2",
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x25bdf9b9064f34ad943677d510ba5e2499f69e72",
       "name": "TSWrapperTCRouterV4_V1",
       "role": "adapter",
       "origin_kind": "native",
@@ -1612,7 +2266,7 @@
     }
   ],
   "origin_summary": {
-    "native": 34,
+    "native": 45,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0

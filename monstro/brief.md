@@ -7,13 +7,13 @@
 - Project: MONSTRO (`monstro`)
 - Website: [https://v2.monstro.fun](https://v2.monstro.fun)
 - Lifecycle: transitioning (Tier 1, transitioning)
-- Generated: 2026-06-11T01:11:54.797Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
+- Generated: 2026-06-14T09:32:19.545Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
 - Chains: base
-- Contract surface: 9 unique implementations (12 raw deployments)
-- DeFi Llama TVL: $3,391,717.90
-- On-chain TVL (included contracts): $3,433,424.50
-- TVL by chain: Base $3,433,424.50
+- Contract surface: 13 unique implementations (20 raw deployments)
+- DeFi Llama TVL: $2,009,550.15
+- On-chain TVL (included contracts): $3,461,928.91
+- TVL by chain: Base $3,461,928.91
 
 ## Project Description
 
@@ -25,19 +25,19 @@ The MonstroToken is the core asset, and MonstroStaking is the contract that mana
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/9 (0.0%)
-- Verified + Unaudited implementations: 9
+- Verified implementations audited: 0/13 (0.0%)
+- Verified + Unaudited implementations: 13
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 9
-- Raw deployments: 12
+- Unique implementations: 13
+- Raw deployments: 20
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $3,433,424.50
+- ASD (verified + unaudited TVL): $3,461,928.91
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [transitioning]. ASD of $3,433,424.50 represents exposure in a protocol with transitioning activity.
+- Note: This protocol is classified as [transitioning]. ASD of $3,461,928.91 represents exposure in a protocol with transitioning activity.
 
 ### Auditor Coverage
 
@@ -49,11 +49,13 @@ The MonstroToken is the core asset, and MonstroStaking is the contract that mana
 
 - None
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (13)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | MonstroToken | token | base | [`0x1d3be1...e708f7`](./contracts/base-8453/0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7/) | ⚠️ Unaudited |
+| BasedLoansLendingLedger | core_logic | base | [`0x278cfe...c5141f`](./contracts/base-8453/0x278cfeadeaacbe88f24692ef199247cf17c5141f/) | ⚠️ Unaudited |
+| AlgebraPool | core_logic | base | [`0x174b09...154575`](./contracts/base-8453/0x174b0950f7359f6197e92d8b274f0d6b27154575/) | ⚠️ Unaudited |
 | MonstroDataTracker | unknown | base | [`0x813303...21f53f`](./contracts/base-8453/0x813303b6f253c74d997020518227f87ff721f53f/) | ⚠️ Unaudited |
 | MonstroNFT | token | base | [`0x553fa1...373cf0`](./contracts/base-8453/0x553fa1d5e0bc4b1b98fc39c4e01f4b25d8373cf0/) | ⚠️ Unaudited |
 | MonstroNFTFeatures | token | base | [`0x0d949b...28041d`](./contracts/base-8453/0x0d949bbe56bffe8d2bc333a6f830e1a8de28041d/) | ⚠️ Unaudited |
@@ -62,6 +64,8 @@ The MonstroToken is the core asset, and MonstroStaking is the contract that mana
 | MonstroPayUSDC | unknown | base | [`0x37db84...ecbf6c`](./contracts/base-8453/0x37db84b897c6db3e509d74bc009efb9210ecbf6c/) | ⚠️ Unaudited |
 | MonstroStaking | unknown | base | [`0x997417...f4742b`](./contracts/base-8453/0x99741758a3bcd7a95b80845e124c5c499df4742b/) | ⚠️ Unaudited |
 | MonstroUSDC | unknown | base | [`0xfa68ac...6b0397`](./contracts/base-8453/0xfa68ac5ca298ab4b96bce6542ec74bb9516b0397/) | ⚠️ Unaudited |
+| RatioDerivedAdapter | adapter | base | [`0xb5391e...f88b52`](./contracts/base-8453/0xb5391e137cd3bb9dda02c164b599c95af0f88b52/) | ⚠️ Unaudited |
+| SafeProxy | unknown | base | 5 deployments: base [`0x4713b3...5a8dd0`](./contracts/base-8453/0x4713b3ab36c9759043694757e6cb8123915a8dd0/); base `0xa67356...14085c`; base `0xa6cd98...5404dc`; base `0xcb7c19...9f4391`; base `0xce45b2...6f6b4a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -107,9 +111,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 9 |
-| upstream | 0 |
-| standard_library | 0 |
-| needs_review | 0 |
+| upstream | 1 |
+| standard_library | 1 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

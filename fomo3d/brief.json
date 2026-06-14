@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "fomo3d",
-  "generated_at": "2026-06-10T23:23:07.079Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-14T09:31:00.453Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-403f",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "fomo3d",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 59.55883321261606
   },
   "summary": {
-    "total_contracts": 23,
-    "total_addresses": 26,
-    "unique_implementations": 23,
-    "total_deployments": 26,
+    "total_contracts": 24,
+    "total_addresses": 27,
+    "unique_implementations": 24,
+    "total_deployments": 27,
     "audited_contracts": 0,
-    "unaudited_contracts": 10,
+    "unaudited_contracts": 11,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 10,
+    "contracts_verified_unaudited": 11,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 13,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2517012.48634,
-    "tvl_usd": 2517012.48634,
+    "dl_tvl_usd": 1981337.58376,
+    "tvl_usd": 1981337.58376,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -61,7 +61,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 23,
+    "unique_implementations": 24,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -117,7 +117,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -193,6 +193,37 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xb3775fb83f7d12a36e0475abdd1fca35c091efbe",
+      "name": "Hourglass",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Hourglass",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb3775fb83f7d12a36e0475abdd1fca35c091efbe",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xdd4950f977ee28d2c132f1353d1595035db444ee",
       "name": "JIincForwarder",
       "role": "unknown",
@@ -219,7 +250,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -250,7 +281,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -281,7 +312,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -312,7 +343,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -343,7 +374,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -374,7 +405,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -405,7 +436,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -847,6 +878,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xb3775fb83f7d12a36e0475abdd1fca35c091efbe",
+      "name": "Hourglass",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xdd4950f977ee28d2c132f1353d1595035db444ee",
       "name": "JIincForwarder",
       "role": "unknown",
@@ -906,7 +947,7 @@
     }
   ],
   "origin_summary": {
-    "native": 22,
+    "native": 23,
     "upstream": 0,
     "standard_library": 1,
     "needs_review": 0

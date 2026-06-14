@@ -1,0 +1,18 @@
+{
+  "address": "0xafb979d9afad1ad27c5eff4e27226e3ab9e5dcc9",
+  "chain_id": 1,
+  "contract_name": "SablierV2LockupLinear",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 59,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T09:31:12.407Z"
+}

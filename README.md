@@ -209,7 +209,7 @@ Each project directory contains:
 | [xsy](./xsy/brief.md) | $20.97M | avalanche | 15 | 4/15 (27%) | 25.0% | 0.0% (-) | 1 | aging | ✅ active | $3.60M |
 | [stakingverse](./stakingverse/brief.md) | $3.28M | ethereum, lukso | 3 | 1/3 (33%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $3.54M |
 | [llama-airforce](./llama-airforce/brief.md) | $3.83M | ethereum | 93 | 60/93 (65%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.51M |
-| [monstro](./monstro/brief.md) | $3.39M | base | 9 | 9/9 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $3.43M |
+| [monstro](./monstro/brief.md) | $2.01M | base | 13 | 13/13 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $3.46M |
 | [open-ticketing-ecosystem](./open-ticketing-ecosystem/brief.md) | $817.65K | base, ethereum, polygon | 32 | 32/32 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.43M |
 | [lair-finance](./lair-finance/brief.md) | $4.17M | berachain | 79 | 15/79 (19%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $3.41M |
 | [beradrome](./beradrome/brief.md) | $6.88M | berachain | 18 | 18/18 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.29M |
@@ -591,7 +591,7 @@ Each project directory contains:
 | [corepound](./corepound/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [coti-treasury](./coti-treasury/brief.md) | $9.89M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [cougarswap](./cougarswap/brief.md) | $54.37K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [cozy-finance](./cozy-finance/brief.md) | $2.30M | optimism | 48 | 5/48 (10%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
+| [cozy-finance](./cozy-finance/brief.md) | $1.97M | ethereum, optimism | 64 | 6/64 (9%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [crabada](./crabada/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [cron-finance](./cron-finance/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [cropper](./cropper/brief.md) | $113.08K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -703,7 +703,7 @@ Each project directory contains:
 | [flipster](./flipster/brief.md) | $33.01M | klaytn | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [fluxion-network](./fluxion-network/brief.md) | $2.38M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [folks-finance](./folks-finance/brief.md) | $89.34M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
-| [fomo3d](./fomo3d/brief.md) | $2.52M | ethereum | 23 | 10/23 (43%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [fomo3d](./fomo3d/brief.md) | $1.98M | ethereum | 24 | 11/24 (46%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [forgeyields](./forgeyields/brief.md) | $1.27M | ethereum | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [fortifi](./fortifi/brief.md) | $349.00K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [four.meme](./four.meme/brief.md) | $4.62M | bsc | 5 | 1/5 (20%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -848,7 +848,7 @@ Each project directory contains:
 | [kinetic](./kinetic/brief.md) | $59.94M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [king-protocol](./king-protocol/brief.md) | $1.54M | 5 | 16 | 5/16 (31%) | 60.0% | 0.0% (-) | 2 | aging | ✅ active | - |
 | [kingdefi](./kingdefi/brief.md) | $35.69K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [kintsu](./kintsu/brief.md) | $2.35M | hyperliquid | 12 | 0/12 (0%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | - |
+| [kintsu](./kintsu/brief.md) | $2.16M | hyperliquid | 12 | 0/12 (0%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | - |
 | [klaybank](./klaybank/brief.md) | $298.92K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [klaystation](./klaystation/brief.md) | $0.00 | klaytn | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [klayswap](./klayswap/brief.md) | $3.85M | klaytn | 22 | 0/22 (0%) | 0.0% | 0.0% (-) | 0 | aging | ⚠️ declining | - |
@@ -1079,7 +1079,7 @@ Each project directory contains:
 | [polynomial-protocol](./polynomial-protocol/brief.md) | $5.29M | ethereum | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [polyo-exchange](./polyo-exchange/brief.md) | $0.00 | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [polywhale-finance](./polywhale-finance/brief.md) | $101.65K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [pond0x](./pond0x/brief.md) | $2.87M | ethereum | 14 | 9/14 (64%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [pond0x](./pond0x/brief.md) | $2.06M | ethereum | 16 | 11/16 (69%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [poolshark](./poolshark/brief.md) | $60.46K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [poolside](./poolside/brief.md) | $30.61K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [potatoswap](./potatoswap/brief.md) | $5.17M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1421,5 +1421,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-06-14T09:27:54.751Z_
+_Generated: 2026-06-14T09:37:06.111Z_
 _Projects: 1409_

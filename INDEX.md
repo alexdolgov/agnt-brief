@@ -283,7 +283,7 @@
 | [corepound](./corepound/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [coti-treasury](./coti-treasury/) | $9.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [cougarswap](./cougarswap/) | $54.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [cozy-finance](./cozy-finance/) | $2.3M | 0.0% | ? | active | 5 | 48 | 2026-06-10 |
+| [cozy-finance](./cozy-finance/) | $2.0M | 0.0% | ? | active | 5 | 64 | 2026-06-14 |
 | [crabada](./crabada/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [cream-finance](./cream-finance/) | $2.3B | 0.0% | $2.3B | declining | 2 | 95 | 2026-06-13 |
 | [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-06-12 |
@@ -432,7 +432,7 @@
 | [fluxion-network](./fluxion-network/) | $2.4M | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [flying-tulip](./flying-tulip/) | $51.3M | 0.0% | $51.3M | active | 0 | 62 | 2026-06-13 |
 | [folks-finance](./folks-finance/) | $89.3M | 0.0% | ? | unknown | 21 | 0 | 2026-06-13 |
-| [fomo3d](./fomo3d/) | $2.5M | 0.0% | ? | active | 0 | 23 | 2026-06-10 |
+| [fomo3d](./fomo3d/) | $2.0M | 0.0% | ? | active | 0 | 24 | 2026-06-14 |
 | [forgeyields](./forgeyields/) | $1.3M | 0.0% | ? | active | 2 | 1 | 2026-06-11 |
 | [fortifi](./fortifi/) | $349.0K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [four.meme](./four.meme/) | $4.6M | 0.0% | ? | active | 1 | 5 | 2026-06-13 |
@@ -622,7 +622,7 @@
 | [kinetic](./kinetic/) | $59.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [king-protocol](./king-protocol/) | $1.5M | 60.0% | ? | active | 4 | 16 | 2026-06-11 |
 | [kingdefi](./kingdefi/) | $35.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [kintsu](./kintsu/) | $2.3M | 0.0% | ? | declining | 5 | 12 | 2026-06-11 |
+| [kintsu](./kintsu/) | $2.2M | 0.0% | ? | declining | 5 | 12 | 2026-06-14 |
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 2 | 154 | 2026-06-11 |
 | [klaybank](./klaybank/) | $298.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [klaystation](./klaystation/) | $0.0 | 0.0% | ? | declining | 0 | 1 | 2026-06-11 |
@@ -760,7 +760,7 @@
 | [moneyonchain](./moneyonchain/) | $43.7M | 0.0% | ? | unknown | 12 | 0 | 2026-06-11 |
 | [monox](./monox/) | $10.9K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [monroe-protocol](./monroe-protocol/) | $6.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-06-11 |
+| [monstro](./monstro/) | $3.5M | 0.0% | $3.5M | transitioning | 0 | 13 | 2026-06-14 |
 | [moola-market](./moola-market/) | $73.9K | 0.0% | $73.9K | declining | 1 | 53 | 2026-06-11 |
 | [moonbase-alpha](./moonbase-alpha/) | $2.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mooniswap](./mooniswap/) | $414.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -925,7 +925,7 @@
 | [polynomial-protocol](./polynomial-protocol/) | $5.3M | 0.0% | ? | active | 18 | 5 | 2026-06-13 |
 | [polyo-exchange](./polyo-exchange/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [polywhale-finance](./polywhale-finance/) | $101.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [pond0x](./pond0x/) | $2.9M | 0.0% | ? | unknown | 0 | 14 | 2026-06-11 |
+| [pond0x](./pond0x/) | $2.1M | 0.0% | ? | unknown | 0 | 16 | 2026-06-14 |
 | [poolshark](./poolshark/) | $60.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [poolside](./poolside/) | $30.6K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [pooltogether](./pooltogether/) | $26.9M | 0.9% | $26.9M | declining | 4 | 153 | 2026-05-31 |

@@ -4,11 +4,11 @@
 
 - Project: Fomo3D (`fomo3d`)
 - Lifecycle: active (Tier 0, 59.6% below peak)
-- Generated: 2026-06-10T23:23:07.079Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
+- Generated: 2026-06-14T09:31:00.453Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
 - Chains: ethereum
-- Contract surface: 23 unique implementations (26 raw deployments)
-- DeFi Llama TVL: $2,517,012.49
+- Contract surface: 24 unique implementations (27 raw deployments)
+- DeFi Llama TVL: $1,981,337.58
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -22,12 +22,12 @@ The two contracts, FoMo3Dlong and FoMo3DSoon, are variants of the same game logi
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/10 (0.0%)
-- Verified + Unaudited implementations: 10
+- Verified implementations audited: 0/11 (0.0%)
+- Verified + Unaudited implementations: 11
 - Verified by bytecode match: 0
 - Unverified implementations: 13
-- Unique implementations: 23
-- Raw deployments: 26
+- Unique implementations: 24
+- Raw deployments: 27
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -45,13 +45,14 @@ The two contracts, FoMo3Dlong and FoMo3DSoon, are variants of the same game logi
 
 - None
 
-### ⚠️ Verified + Unaudited (10)
+### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | Divies | unknown | ethereum | 3 deployments: ethereum [`0x1a294b...177f45`](./contracts/ethereum-1/0x1a294b212bb37f790aef81b91321a1111a177f45/); ethereum `0xc0c001...929ad0`; ethereum `0xc7029e...c7af48` | ⚠️ Unaudited |
 | FoMo3Dlong | unknown | ethereum | 2 deployments: ethereum [`0x56bbe9...6049d7`](./contracts/ethereum-1/0x56bbe9e9d360e94e6bd14c55e5713da7576049d7/); ethereum `0xa62142...389da1` | ⚠️ Unaudited |
 | FoMo3DSoon | unknown | ethereum | [`0x4e8ecf...bf00b8`](./contracts/ethereum-1/0x4e8ecf79ade5e2c49b9e30d795517a81e0bf00b8/) | ⚠️ Unaudited |
+| Hourglass | unknown | ethereum | [`0xb3775f...91efbe`](./contracts/ethereum-1/0xb3775fb83f7d12a36e0475abdd1fca35c091efbe/) | ⚠️ Unaudited |
 | JIincForwarder | unknown | ethereum | [`0xdd4950...b444ee`](./contracts/ethereum-1/0xdd4950f977ee28d2c132f1353d1595035db444ee/) | ⚠️ Unaudited |
 | MSFun | unknown | ethereum | [`0x197485...5f4120`](./contracts/ethereum-1/0x1974850db14d6b75322b56fc5febc2698d5f4120/) | ⚠️ Unaudited |
 | NameFilter | unknown | ethereum | [`0x4b7ac9...deecbc`](./contracts/ethereum-1/0x4b7ac91b53545ae20a4990f9b5f6a14682deecbc/) | ⚠️ Unaudited |
@@ -106,6 +107,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x1a294b...177f45`](./contracts/ethereum-1/0x1a294b212bb37f790aef81b91321a1111a177f45/) | Divies | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x56bbe9...6049d7`](./contracts/ethereum-1/0x56bbe9e9d360e94e6bd14c55e5713da7576049d7/) | FoMo3Dlong | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4e8ecf...bf00b8`](./contracts/ethereum-1/0x4e8ecf79ade5e2c49b9e30d795517a81e0bf00b8/) | FoMo3DSoon | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb3775f...91efbe`](./contracts/ethereum-1/0xb3775fb83f7d12a36e0475abdd1fca35c091efbe/) | Hourglass | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdd4950...b444ee`](./contracts/ethereum-1/0xdd4950f977ee28d2c132f1353d1595035db444ee/) | JIincForwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x197485...5f4120`](./contracts/ethereum-1/0x1974850db14d6b75322b56fc5febc2698d5f4120/) | MSFun | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4b7ac9...deecbc`](./contracts/ethereum-1/0x4b7ac91b53545ae20a4990f9b5f6a14682deecbc/) | NameFilter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -117,7 +119,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 22 |
+| native | 23 |
 | upstream | 0 |
 | standard_library | 1 |
 | needs_review | 0 |

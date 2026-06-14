@@ -1,6 +1,6 @@
 # cozy-finance — Contract Index
 
-48 unique implementations on optimism · 49 deployments · 0 audited · 5 unaudited · 43 unverified
+64 unique implementations across 2 chains · 65 deployments · 0 audited · 6 unaudited · 58 unverified
 
 ## registry (5)
 
@@ -12,10 +12,27 @@
 | [DripDecayModelConstantFactory](./optimism-10/0xa950195c07315eff3145839e7793580ca311ee9a/) | optimism | [`0xa95019...11ee9a`](./optimism-10/0xa950195c07315eff3145839e7793580ca311ee9a/) | ⚠️ Unaudited | Verified |
 | [UMATriggerFactory](./optimism-10/0xf98a7667fabdc2a9182f6600ad87332bff078e5d/) | optimism | [`0xf98a76...078e5d`](./optimism-10/0xf98a7667fabdc2a9182f6600ad87332bff078e5d/) | ⚠️ Unaudited | Verified |
 
-## unknown (43)
+## unknown (59)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
+| [ChainlinkReporter](./ethereum-1/0x6f668117caa90ea73c27adc562f5a2a06cca9092/) | ethereum | [`0x6f6681...ca9092`](./ethereum-1/0x6f668117caa90ea73c27adc562f5a2a06cca9092/) | ⚠️ Unaudited | Verified |
+| UnnamedContract | ethereum | `0x1b2e4a...5499b7` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0x20fd25...dd014f` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0x22893a...27d56d` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0x425640...7d28df` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0x4f993a...8d7759` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0x527d9a...e34e5e` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0x640c73...920726` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0x6f4b2b...205bc0` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0x895879...664f92` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0x8e6b29...74e5c2` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0x97d251...8c3843` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0xa97f85...c96dde` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0xdbdf2f...02b57e` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0xe6ef65...fe3d82` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0xf146c2...45681f` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0xf8ec0f...3e91ea` | ❓ Unverified | Unverified |
 | UnnamedContract | optimism | `0x0749ca...0d4d9e` | ❓ Unverified | Unverified |
 | UnnamedContract | optimism | `0x0a475f...70a5c0` | ❓ Unverified | Unverified |
 | UnnamedContract | optimism | `0x0aae8c...3f7864` | ❓ Unverified | Unverified |
@@ -28,7 +45,6 @@
 | UnnamedContract | optimism | `0x35b52d...bfd5ea` | ❓ Unverified | Unverified |
 | UnnamedContract | optimism | `0x3fe029...40dc61` | ❓ Unverified | Unverified |
 | UnnamedContract | optimism | `0x483ddb...c8ac72` | ❓ Unverified | Unverified |
-| UnnamedContract | optimism | `0x4a343d...c18b0f` | ❓ Unverified | Unverified |
 | UnnamedContract | optimism | `0x4ce4fc...cbfadc` | ❓ Unverified | Unverified |
 | UnnamedContract | optimism | `0x4d2819...736d64` | ❓ Unverified | Unverified |
 | UnnamedContract | optimism | `0x562460...3d53d8` | ❓ Unverified | Unverified |

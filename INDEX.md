@@ -279,7 +279,7 @@
 | [convex-finance](./convex-finance/) | $658.0M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
 | [conveyor](./conveyor/) | ? | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [copump](./copump/) | $1.7K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
-| [core-bridge](./core-bridge/) | $4.0M | 0.0% | ? | active | 0 | 6 | 2026-06-10 |
+| [core-bridge](./core-bridge/) | $3.8M | 0.0% | ? | active | 0 | 6 | 2026-06-14 |
 | [corepound](./corepound/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [coti-treasury](./coti-treasury/) | $9.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [cougarswap](./cougarswap/) | $54.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -498,7 +498,7 @@
 | [guru-network-dao](./guru-network-dao/) | $1.9M | 0.0% | ? | active | 0 | 61 | 2026-06-14 |
 | [gyroscope-protocol](./gyroscope-protocol/) | $44.6 | 21.3% | ? | declining | 10 | 233 | 2026-06-10 |
 | [h2-finance](./h2-finance/) | $3.6M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
-| [hakka-finance](./hakka-finance/) | $5.4K | 26.5% | $5.4K | active | 7 | 37 | 2026-06-10 |
+| [hakka-finance](./hakka-finance/) | $5.4K | 23.7% | $5.4K | active | 8 | 41 | 2026-06-14 |
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [halofi](./halofi/) | $22.1K | 0.0% | ? | unknown | 4 | 0 | 2026-06-13 |
 | [hanji-protocol](./hanji-protocol/) | $727.9K | 16.7% | ? | declining | 2 | 381 | 2026-06-13 |
@@ -778,7 +778,7 @@
 | [moveposition](./moveposition/) | $7.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mr.-lightspeed-creator-coin](./mr.-lightspeed-creator-coin/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mu-digital](./mu-digital/) | $19.4M | 100.0% | ? | active | 2 | 12 | 2026-06-11 |
-| [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-06-11 |
+| [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-06-14 |
 | [multichain](./multichain/) | $12.5M | 42.9% | $128.8 | dead | 15 | 17 | 2026-06-11 |
 | [mux-protocol](./mux-protocol/) | $862.0K | 21.7% | $862.0K | active | 2 | 1198 | 2026-06-11 |
 | [mvl-staking](./mvl-staking/) | $38.1M | 50.0% | ? | unknown | 2 | 49 | 2026-06-11 |
@@ -931,7 +931,7 @@
 | [pooltogether](./pooltogether/) | $26.9M | 0.9% | $26.9M | declining | 4 | 153 | 2026-05-31 |
 | [potatoswap](./potatoswap/) | $5.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
 | [powercity](./powercity/) | $3.3M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
-| [powh3d](./powh3d/) | $4.4M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
+| [powh3d](./powh3d/) | $3.5M | 0.0% | ? | active | 0 | 1 | 2026-06-14 |
 | [predict-fun](./predict-fun/) | $1.5M | 7.4% | $1.5M | active | 9 | 42 | 2026-06-14 |
 | [predictcoin](./predictcoin/) | $117.7 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [prime-staking](./prime-staking/) | $2.5M | 0.0% | ? | active | 2 | 10 | 2026-06-14 |

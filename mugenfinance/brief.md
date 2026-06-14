@@ -5,10 +5,10 @@
 - Project: MugenFinance (`mugenfinance`)
 - Website: [https://www.mugenfinance.com](https://www.mugenfinance.com)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T01:13:41.112Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-2b99
+- Generated: 2026-06-14T07:08:07.635Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
 - Chains: arbitrum
-- Contract surface: 12 unique implementations (19 raw deployments)
+- Contract surface: 12 unique implementations (16 raw deployments)
 - DeFi Llama TVL: $3,354,846.66
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -28,7 +28,7 @@ The Mugen token is the core asset, while xMugen represents staked Mugen for yiel
 - Verified by bytecode match: 0
 - Unverified implementations: 2
 - Unique implementations: 12
-- Raw deployments: 19
+- Raw deployments: 16
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -53,8 +53,8 @@ The Mugen token is the core asset, while xMugen represents staked Mugen for yiel
 | ArbitrumSwaps | unknown | arbitrum | [`0x4f1bc1...796479`](./contracts/arbitrum-42161/0x4f1bc106664c174aad15df9beb5c168511796479/) | ⚠️ Unaudited |
 | CapStrategy | core_logic | arbitrum | 4 deployments: arbitrum [`0x029782...6b702e`](./contracts/arbitrum-42161/0x029782b403811e46a5a45983bbc59bbc766b702e/); arbitrum `0x21df7f...768a8e`; arbitrum `0x93db14...4e3cb8`; arbitrum `0xe4c071...258f1d` | ⚠️ Unaudited |
 | FeeCollector | unknown | arbitrum | [`0xb09f29...14ac8a`](./contracts/arbitrum-42161/0xb09f29e2ba229fdb2bb68dd0e2049a76c014ac8a/) | ⚠️ Unaudited |
-| GMXStrategy | core_logic | arbitrum | 4 deployments: arbitrum [`0x5ffeed...62e563`](./contracts/arbitrum-42161/0x5ffeed2bdfce53a64c31b86bcd19d4ca6d62e563/); arbitrum `0x9a41d4...34970e`; arbitrum `0xbbff5c...dd3f22`; arbitrum `0xd6ee20...02634f` | ⚠️ Unaudited |
 | Mugen | unknown | arbitrum | [`0xfc77b8...22856e`](./contracts/arbitrum-42161/0xfc77b86f3ade71793e1eec1e7944db074922856e/) | ⚠️ Unaudited |
+| MugenAutoCompounder | adapter | arbitrum | [`0x44e4c3...5c4417`](./contracts/arbitrum-42161/0x44e4c3668552033419520be229cd9df0c35c4417/) | ⚠️ Unaudited |
 | MugenRedemption | unknown | arbitrum | [`0xfae58b...b35860`](./contracts/arbitrum-42161/0xfae58b1f4d70619b0810239ae5382af2dbb35860/) | ⚠️ Unaudited |
 | StrategyHub | core_logic | arbitrum | [`0x002361...22296e`](./contracts/arbitrum-42161/0x00236173844ac7f7091d69d6cbf7e0430222296e/) | ⚠️ Unaudited |
 | Treasury | operational_periphery | arbitrum | [`0xf7be84...86f3dd`](./contracts/arbitrum-42161/0xf7be8476ae27d27ebc236e33020150b23a86f3dd/) | ⚠️ Unaudited |
@@ -93,9 +93,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| arbitrum | [`0x4f1bc1...796479`](./contracts/arbitrum-42161/0x4f1bc106664c174aad15df9beb5c168511796479/) | ArbitrumSwaps | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x029782...6b702e`](./contracts/arbitrum-42161/0x029782b403811e46a5a45983bbc59bbc766b702e/) | CapStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xb09f29...14ac8a`](./contracts/arbitrum-42161/0xb09f29e2ba229fdb2bb68dd0e2049a76c014ac8a/) | FeeCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xfc77b8...22856e`](./contracts/arbitrum-42161/0xfc77b86f3ade71793e1eec1e7944db074922856e/) | Mugen | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x44e4c3...5c4417`](./contracts/arbitrum-42161/0x44e4c3668552033419520be229cd9df0c35c4417/) | MugenAutoCompounder | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xfae58b...b35860`](./contracts/arbitrum-42161/0xfae58b1f4d70619b0810239ae5382af2dbb35860/) | MugenRedemption | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x002361...22296e`](./contracts/arbitrum-42161/0x00236173844ac7f7091d69d6cbf7e0430222296e/) | StrategyHub | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xf7be84...86f3dd`](./contracts/arbitrum-42161/0xf7be8476ae27d27ebc236e33020150b23a86f3dd/) | Treasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -106,10 +108,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 8 |
-| upstream | 1 |
+| native | 10 |
+| upstream | 0 |
 | standard_library | 0 |
-| needs_review | 3 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

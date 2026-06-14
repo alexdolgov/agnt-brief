@@ -1,13 +1,18 @@
 # mugenfinance — Contract Index
 
-12 unique implementations on arbitrum · 19 deployments · 0 audited · 10 unaudited · 2 unverified
+12 unique implementations on arbitrum · 16 deployments · 0 audited · 10 unaudited · 2 unverified
 
-## core_logic (3)
+## adapter (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [MugenAutoCompounder](./arbitrum-42161/0x44e4c3668552033419520be229cd9df0c35c4417/) | arbitrum | [`0x44e4c3...5c4417`](./arbitrum-42161/0x44e4c3668552033419520be229cd9df0c35c4417/) | ⚠️ Unaudited | Verified |
+
+## core_logic (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [CapStrategy (4 deployments)](./arbitrum-42161/0x029782b403811e46a5a45983bbc59bbc766b702e/) | arbitrum | 4 deployments: arbitrum [`0x029782...6b702e`](./arbitrum-42161/0x029782b403811e46a5a45983bbc59bbc766b702e/); arbitrum `0x21df7f...768a8e`; arbitrum `0x93db14...4e3cb8`; arbitrum `0xe4c071...258f1d` | ⚠️ Unaudited | Verified |
-| [GMXStrategy (4 deployments)](./arbitrum-42161/0x5ffeed2bdfce53a64c31b86bcd19d4ca6d62e563/) | arbitrum | 4 deployments: arbitrum [`0x5ffeed...62e563`](./arbitrum-42161/0x5ffeed2bdfce53a64c31b86bcd19d4ca6d62e563/); arbitrum `0x9a41d4...34970e`; arbitrum `0xbbff5c...dd3f22`; arbitrum `0xd6ee20...02634f` | ⚠️ Unaudited | Verified |
 | [StrategyHub](./arbitrum-42161/0x00236173844ac7f7091d69d6cbf7e0430222296e/) | arbitrum | [`0x002361...22296e`](./arbitrum-42161/0x00236173844ac7f7091d69d6cbf7e0430222296e/) | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (2)

@@ -4,12 +4,12 @@
 
 - Project: CORE Bridge (`core-bridge`)
 - Website: [https://bridge.coredao.org/bridge](https://bridge.coredao.org/bridge)
-- Lifecycle: active (Tier 0, 76.5% below peak)
-- Generated: 2026-06-10T22:31:32.023Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
-- Chains: avalanche, base
-- Contract surface: 6 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $4,024,033.91
+- Lifecycle: active (Tier 0, 78% below peak)
+- Generated: 2026-06-14T07:06:02.309Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
+- Chains: arbitrum, avalanche, base, ethereum, optimism, polygon
+- Contract surface: 6 unique implementations (9 raw deployments)
+- DeFi Llama TVL: $3,821,049.32
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,12 +23,12 @@ The OriginalTokenBridge relies on the UltraLightNodeV2 for cross-chain message v
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 0/1 (0.0%)
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 4
+- Unverified implementations: 5
 - Unique implementations: 6
-- Raw deployments: 6
+- Raw deployments: 9
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,12 +46,11 @@ The OriginalTokenBridge relies on the UltraLightNodeV2 for cross-chain message v
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| OriginalTokenBridge | operational_periphery | base | [`0x84fb20...507879`](./contracts/base-8453/0x84fb2086fed7b3c9b3a4bc559f60ffaa91507879/) | ⚠️ Unaudited |
-| TreasuryV2 | operational_periphery | avalanche | [`0x3773e1...6ce34d`](./contracts/avalanche-43114/0x3773e1e9deb273fcdf9f80bc88bb387b1e6ce34d/) | ⚠️ Unaudited |
+| OriginalTokenBridge | operational_periphery | arbitrum | 4 deployments: ethereum `0x52e75d...55b233`; polygon `0x52e75d...55b233`; base `0x84fb20...507879`; arbitrum [`0x29d096...04031a`](./contracts/arbitrum-42161/0x29d096cd18c0da7500295f082da73316d704031a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -65,12 +64,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (4)
+### ❓ Unverified (5)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| UnnamedContract | unknown | optimism | `0x29d096...04031a` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x1eb362...57832e` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x29d096...04031a` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | `0x2c5790...87ec29` | ❓ Unverified |
@@ -87,17 +87,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x84fb20...507879`](./contracts/base-8453/0x84fb2086fed7b3c9b3a4bc559f60ffaa91507879/) | OriginalTokenBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x3773e1...6ce34d`](./contracts/avalanche-43114/0x3773e1e9deb273fcdf9f80bc88bb387b1e6ce34d/) | TreasuryV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x29d096...04031a`](./contracts/arbitrum-42161/0x29d096cd18c0da7500295f082da73316d704031a/) | OriginalTokenBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 5 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

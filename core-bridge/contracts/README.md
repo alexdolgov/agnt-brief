@@ -1,18 +1,18 @@
 # core-bridge — Contract Index
 
-6 unique implementations across 2 chains · 6 deployments · 0 audited · 2 unaudited · 4 unverified
+6 unique implementations across 6 chains · 9 deployments · 0 audited · 1 unaudited · 5 unverified
 
-## operational_periphery (2)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [OriginalTokenBridge](./base-8453/0x84fb2086fed7b3c9b3a4bc559f60ffaa91507879/) | base | [`0x84fb20...507879`](./base-8453/0x84fb2086fed7b3c9b3a4bc559f60ffaa91507879/) | ⚠️ Unaudited | Verified |
-| [TreasuryV2](./avalanche-43114/0x3773e1e9deb273fcdf9f80bc88bb387b1e6ce34d/) | avalanche | [`0x3773e1...6ce34d`](./avalanche-43114/0x3773e1e9deb273fcdf9f80bc88bb387b1e6ce34d/) | ⚠️ Unaudited | Verified |
-
-## unknown (4)
+## operational_periphery (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
+| [OriginalTokenBridge (4 deployments)](./arbitrum-42161/0x29d096cd18c0da7500295f082da73316d704031a/) | arbitrum | 4 deployments: ethereum `0x52e75d...55b233`; polygon `0x52e75d...55b233`; base `0x84fb20...507879`; arbitrum [`0x29d096...04031a`](./arbitrum-42161/0x29d096cd18c0da7500295f082da73316d704031a/) | ⚠️ Unaudited | Verified |
+
+## unknown (5)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| UnnamedContract | optimism | `0x29d096...04031a` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x1eb362...57832e` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x29d096...04031a` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x2c5790...87ec29` | ❓ Unverified | Unverified |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "powh3d",
-  "generated_at": "2026-05-31T10:16:33.078Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-14T07:03:43.210Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-9bd7",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "powh3d",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4356553.75777,
-    "tvl_usd": 4356553.75777,
+    "dl_tvl_usd": 3468196.25405,
+    "tvl_usd": 3468196.25405,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "PoWH3D is a decentralized pyramid scheme where users buy tokens that increase in price with each purchase, and early participants profit from later buyers through dividends.",
-    "relationship_narrative": "The protocol consists of a single self-contained contract with no external dependencies or shared infrastructure.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

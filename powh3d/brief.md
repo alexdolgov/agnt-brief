@@ -4,21 +4,22 @@
 
 - Project: PoWH3D (`powh3d`)
 - Lifecycle: active (Tier 0, 71.1% below peak)
-- Generated: 2026-05-31T10:16:33.078Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-14T07:03:43.210Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $4,356,553.76
+- DeFi Llama TVL: $3,468,196.25
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-PoWH3D is a decentralized pyramid scheme where users buy tokens that increase in price with each purchase, and early participants profit from later buyers through dividends.
-
-### Architecture
-
-The protocol consists of a single self-contained contract with no external dependencies or shared infrastructure.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

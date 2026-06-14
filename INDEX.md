@@ -613,7 +613,7 @@
 | [kawaiiswap](./kawaiiswap/) | $798.7 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [keep-network](./keep-network/) | $25.5M | 7.9% | $24.7M | declining | 18 | 225 | 2026-06-11 |
 | [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | declining | 1 | 480 | 2026-06-13 |
-| [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 0 | 4 | 2026-06-11 |
+| [keeta-bridge](./keeta-bridge/) | $1.3M | 0.0% | ? | active | 0 | 4 | 2026-06-14 |
 | [keiko-finance](./keiko-finance/) | $45.4K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [keom-protocol](./keom-protocol/) | $115.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [keyring](./keyring/) | $6.2M | 17.0% | ? | active | 16 | 73 | 2026-06-13 |
@@ -673,7 +673,7 @@
 | [liqwid](./liqwid/) | $27.3M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [lisa-finance](./lisa-finance/) | $356.8K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [lisk-bridge](./lisk-bridge/) | $50.9M | 0.0% | $50.9M | active | 0 | 102 | 2026-06-12 |
-| [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | declining | 0 | 93 | 2026-06-11 |
+| [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | declining | 0 | 96 | 2026-06-14 |
 | [llamapay](./llamapay/) | $21.0M | 0.0% | ? | active | 1 | 20 | 2026-06-12 |
 | [lns](./lns/) | $11.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [lockon](./lockon/) | $1.0M | 56.3% | ? | active | 7 | 23 | 2026-06-11 |
@@ -875,7 +875,7 @@
 | [overtime](./overtime/) | $42.5M | 13.1% | $42.5M | declining | 11 | 201 | 2026-06-13 |
 | [oxiswap](./oxiswap/) | $0.2 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [p2pb2b](./p2pb2b/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | active | 0 | 3 | 2026-06-11 |
+| [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | active | 0 | 3 | 2026-06-14 |
 | [pact](./pact/) | $2.5M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
 | [padswap](./padswap/) | $107.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [paimon](./paimon/) | $12.7M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1042,7 +1042,7 @@
 | [savvy](./savvy/) | $126.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [scallop](./scallop/) | $38.2M | 0.0% | ? | unknown | 4 | 0 | 2026-06-11 |
 | [sceptre-liquid](./sceptre-liquid/) | $20.0M | 0.0% | ? | unknown | 1 | 0 | 2026-06-11 |
-| [scream](./scream/) | $1.3M | 0.0% | ? | dead | 1 | 1 | 2026-06-11 |
+| [scream](./scream/) | $1.3M | 0.0% | ? | dead | 1 | 1 | 2026-06-14 |
 | [scroll-bridge](./scroll-bridge/) | $5.0M | 0.0% | $5.0M | declining | 0 | 32 | 2026-06-12 |
 | [scrub-money](./scrub-money/) | $7.2M | 0.0% | ? | active | 1 | 20 | 2026-06-13 |
 | [sdai](./sdai/) | $3.3K | 0.0% | $3.3K | active | 0 | 103 | 2026-06-12 |
@@ -1107,7 +1107,7 @@
 | [sovryn-bridge](./sovryn-bridge/) | $2.5M | 0.0% | ? | active | 0 | 48 | 2026-06-14 |
 | [sovryn](./sovryn/) | $38.3M | 0.0% | ? | unknown | 11 | 0 | 2026-06-11 |
 | [spacebar](./spacebar/) | $635.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [spacefi](./spacefi/) | $1.5M | 0.0% | ? | active | 5 | 38 | 2026-06-11 |
+| [spacefi](./spacefi/) | $1.3M | 0.0% | ? | active | 5 | 43 | 2026-06-14 |
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 8 | 0 | 2026-06-11 |
 | [sparklex](./sparklex/) | $5.4K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [spartan](./spartan/) | $6.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |

@@ -1,6 +1,6 @@
 # paal-ai — Contract Index
 
-3 unique implementations on ethereum · 5 deployments · 0 audited · 2 unaudited · 1 unverified
+3 unique implementations on ethereum · 5 deployments · 0 audited · 3 unaudited · 0 unverified
 
 ## core_logic (1)
 
@@ -13,4 +13,4 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [PAALAI](./ethereum-1/0x14fee680690900ba0cccfc76ad70fd1b95d10e16/) | ethereum | [`0x14fee6...d10e16`](./ethereum-1/0x14fee680690900ba0cccfc76ad70fd1b95d10e16/) | ⚠️ Unaudited | Verified |
-| UnnamedContract | ethereum | `0x4a24d5...2544bf` | ❓ Unverified | Unverified |
+| [UniswapV2Pair](./ethereum-1/0x2a6c340bcbb0a79d3deecd3bc5cbc2605ea9259f/) | ethereum | [`0x2a6c34...a9259f`](./ethereum-1/0x2a6c340bcbb0a79d3deecd3bc5cbc2605ea9259f/) | ⚠️ Unaudited | Verified |

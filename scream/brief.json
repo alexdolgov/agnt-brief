@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "scream",
-  "generated_at": "2026-06-11T02:38:06.396Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
+  "generated_at": "2026-06-14T11:05:05.093Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-df6c",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "scream",
@@ -86,7 +86,7 @@
       "address": "0xe0654c8e6fd4d733349ac7e09f6f23da256bf475",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Scream",
       "tvl_usd": null,
@@ -138,10 +138,10 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

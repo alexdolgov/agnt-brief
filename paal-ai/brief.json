@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "paal-ai",
-  "generated_at": "2026-06-11T01:42:05.939Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-14T11:02:31.707Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-df6c",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "paal-ai",
@@ -27,15 +27,15 @@
     "unique_implementations": 3,
     "total_deployments": 5,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 1,
+    "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1605477.52152,
+    "dl_tvl_usd": 1299518.17202,
     "tvl_usd": 830132.9127820743,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -155,22 +155,22 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x4a24d53e6664d79896f49767a652eae6f92544bf",
-      "name": "UnnamedContract",
+      "address": "0x2a6c340bcbb0a79d3deecd3bc5cbc2605ea9259f",
+      "name": "UniswapV2Pair",
       "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UniswapV2Pair",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0x4a24d53e6664d79896f49767a652eae6f92544bf",
-          "source_verified": false,
+          "address": "0x2a6c340bcbb0a79d3deecd3bc5cbc2605ea9259f",
+          "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
@@ -178,10 +178,10 @@
       ],
       "audits_covering": [],
       "is_audited": false,
-      "source_verified": false,
+      "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [],
@@ -210,9 +210,9 @@
   ],
   "origin_summary": {
     "native": 2,
-    "upstream": 0,
+    "upstream": 1,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

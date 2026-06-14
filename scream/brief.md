@@ -7,8 +7,8 @@
 - Project: Scream (`scream`)
 - Website: [https://scream.sh/](https://scream.sh/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-11T02:38:06.396Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-14T11:05:05.093Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
 - Chains: fantom
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,288,676.91
@@ -90,10 +90,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

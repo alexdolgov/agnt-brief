@@ -5,11 +5,11 @@
 - Project: PAAL AI (`paal-ai`)
 - Website: [https://www.paal.ai/](https://www.paal.ai/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T01:42:05.939Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-1f48
+- Generated: 2026-06-14T11:02:31.707Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
 - Chains: ethereum
 - Contract surface: 3 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $1,605,477.52
+- DeFi Llama TVL: $1,299,518.17
 - On-chain TVL (included contracts): $830,132.91
 - TVL by chain: Ethereum $830,132.91
 
@@ -23,10 +23,10 @@ The PAALAI token is the central asset used across all staking pools. Each Stakin
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 0/3 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 1
+- Unverified implementations: 0
 - Unique implementations: 3
 - Raw deployments: 5
 - Audits discovered: 0
@@ -46,12 +46,13 @@ The PAALAI token is the central asset used across all staking pools. Each Stakin
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | StakingPool | core_logic | ethereum | 3 deployments: ethereum [`0x163ad6...942d7b`](./contracts/ethereum-1/0x163ad6ac78ffe40e194310faeada8f6615942d7b/); ethereum `0x843106...80894f`; ethereum `0x85e253...69d624` | ⚠️ Unaudited |
 | PAALAI | unknown | ethereum | [`0x14fee6...d10e16`](./contracts/ethereum-1/0x14fee680690900ba0cccfc76ad70fd1b95d10e16/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | [`0x2a6c34...a9259f`](./contracts/ethereum-1/0x2a6c340bcbb0a79d3deecd3bc5cbc2605ea9259f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -65,13 +66,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x4a24d5...2544bf` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
@@ -92,9 +91,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 2 |
-| upstream | 0 |
+| upstream | 1 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

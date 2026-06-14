@@ -7,11 +7,11 @@
 - Project: Llama Airforce (`llama-airforce`)
 - Website: [https://llama.airforce](https://llama.airforce)
 - Lifecycle: declining (Tier 0, 88.9% below peak)
-- Generated: 2026-06-11T00:43:47.746Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-5143
+- Generated: 2026-06-14T11:03:42.718Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
 - Chains: ethereum
-- Contract surface: 93 unique implementations (180 raw deployments)
-- DeFi Llama TVL: $3,827,128.96
+- Contract surface: 96 unique implementations (185 raw deployments)
+- DeFi Llama TVL: $1,327,597.42
 - On-chain TVL (included contracts): $3,513,474.52
 - TVL by chain: Ethereum $3,513,474.52
 
@@ -25,12 +25,12 @@ The single product family contains vaults that share a common deployer cluster, 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/64 (0.0%)
-- Verified + Unaudited implementations: 60
+- Verified implementations audited: 0/67 (0.0%)
+- Verified + Unaudited implementations: 63
 - Verified by bytecode match: 4
 - Unverified implementations: 29
-- Unique implementations: 93
-- Raw deployments: 180
+- Unique implementations: 96
+- Raw deployments: 185
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $3,513,474.52
@@ -49,7 +49,7 @@ The single product family contains vaults that share a common deployer cluster, 
 
 - None
 
-### ⚠️ Verified + Unaudited (60)
+### ⚠️ Verified + Unaudited (63)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -61,6 +61,7 @@ The single product family contains vaults that share a common deployer cluster, 
 | GenericUnionVault | core_logic | ethereum | [`0xf964b0...89ce0e`](./contracts/ethereum-1/0xf964b0e3ffdea659c44a5a52bc0b82a24b89ce0e/) | ⚠️ Unaudited |
 | stkCvxPrismaVault | core_logic | ethereum | [`0x9bfd08...1464bd`](./contracts/ethereum-1/0x9bfd08d7b3cc40129132a17b4d5b9ea3351464bd/) | ⚠️ Unaudited |
 | AuraBalVault | core_logic | ethereum | 4 deployments: ethereum [`0x77e5bb...af7328`](./contracts/ethereum-1/0x77e5bb2c91cac7c7a8a74c38804fdb372baf7328/); ethereum `0x8c4eb0...88dd67`; ethereum `0xb70ec1...ff48ac`; ethereum `0xd6fc1e...c74c29` | ⚠️ Unaudited |
+| AddressRegistry | registry | ethereum | [`0x92e6e4...966ee2`](./contracts/ethereum-1/0x92e6e43f99809df84ed2d533e1fd8017eb966ee2/) | ⚠️ Unaudited |
 | AirdropDistributor | operational_periphery | ethereum | 2 deployments: ethereum [`0x8e6d5c...f1baa4`](./contracts/ethereum-1/0x8e6d5cf9b9659d4f8e68ee040bf26e728ef1baa4/); ethereum `0x9b4586...5369f0` | ⚠️ Unaudited |
 | AssetRegistry | registry | ethereum | [`0xcfa23b...0d1873`](./contracts/ethereum-1/0xcfa23b8f9062369b21049b9f4a4ce79d640d1873/) | ⚠️ Unaudited |
 | AuraBalZaps | adapter | ethereum | 4 deployments: ethereum [`0x06ee5f...947363`](./contracts/ethereum-1/0x06ee5f2c2690c3b03718e662dd14282cb9947363/); ethereum `0x4e87a7...fa4f4b`; ethereum `0x7374c3...ac6067`; ethereum `0xbda1da...83ac02` | ⚠️ Unaudited |
@@ -71,11 +72,13 @@ The single product family contains vaults that share a common deployer cluster, 
 | CvxFxsStrategy | core_logic | ethereum | [`0xf761c0...badff8`](./contracts/ethereum-1/0xf761c0098967d756c9673f2798dbf23342badff8/) | ⚠️ Unaudited |
 | CvxFxsZaps | adapter | ethereum | 4 deployments: ethereum [`0x374223...21944d`](./contracts/ethereum-1/0x3742235b332fac741ec3a4f1ab7115ae0621944d/); ethereum `0x63f079...d0166c`; ethereum `0xd0e50a...1c0d58`; ethereum `0xf97d26...5dafef` | ⚠️ Unaudited |
 | CVXMerkleDistributor | operational_periphery | ethereum | 3 deployments: ethereum [`0x27a110...b0cb49`](./contracts/ethereum-1/0x27a11054b62c29c166f3fab2b0ac708043b0cb49/); ethereum `0x678823...7afcc5`; ethereum `0x9da701...da25e4` | ⚠️ Unaudited |
+| DelegateRegistry | registry | ethereum | [`0x469788...015446`](./contracts/ethereum-1/0x469788fe6e9e9681c6ebf3bf78e7fd26fc015446/) | ⚠️ Unaudited |
 | DistributorZaps | operational_periphery | ethereum | [`0x56e9db...2ed944`](./contracts/ethereum-1/0x56e9db574c8d5015d198671cbf1200b6bb2ed944/) | ⚠️ Unaudited |
 | ExtraZaps | adapter | ethereum | 3 deployments: ethereum [`0x5d69b6...29838e`](./contracts/ethereum-1/0x5d69b683bf963648137b3ab5244e9d31d529838e/); ethereum `0x7b7481...d86336`; ethereum `0xaaf755...b1f29c` | ⚠️ Unaudited |
 | FeeAllocator | operational_periphery | ethereum | 2 deployments: ethereum [`0x22530d...8eb468`](./contracts/ethereum-1/0x22530d384cd9915e096ead2db7f82ee81f8eb468/); ethereum `0x874942...79f322` | ⚠️ Unaudited |
 | FXSMerkleDistributor | operational_periphery | ethereum | [`0x11fe17...c1d4c7`](./contracts/ethereum-1/0x11fe17c5ab68cc4cc6d3c281feddfff80bc1d4c7/) | ⚠️ Unaudited |
 | FXSSwapper | adapter | ethereum | 2 deployments: ethereum [`0x2dce36...ded929`](./contracts/ethereum-1/0x2dce36d00bb398cb01390a0769260b84edded929/); ethereum `0x80617e...7f9b2b` | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | 3 deployments: ethereum [`0x6ed9c1...7061d6`](./contracts/ethereum-1/0x6ed9c171e02de08aaedf0fc1d589923d807061d6/); ethereum `0x9bc7c6...e53f99`; ethereum `0xaef6ea...bc1f16` | ⚠️ Unaudited |
 | MerkleDistributor | operational_periphery | ethereum | [`0xba5602...fd8562`](./contracts/ethereum-1/0xba5602730824340d714c92a153460db958fd8562/) | ⚠️ Unaudited |
 | MerkleDistributorV2 | operational_periphery | ethereum | [`0xa83043...956183`](./contracts/ethereum-1/0xa83043df401346a67eddeb074679b4570b956183/) | ⚠️ Unaudited |
 | MultiMerkleStash | operational_periphery | ethereum | [`0x966a2f...fd4567`](./contracts/ethereum-1/0x966a2f2dc3aff00965c6eccf6290d0d402fd4567/) | ⚠️ Unaudited |
@@ -186,6 +189,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xf964b0...89ce0e`](./contracts/ethereum-1/0xf964b0e3ffdea659c44a5a52bc0b82a24b89ce0e/) | GenericUnionVault | core_logic | $960.19 | Verified native implementation with $960.19 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9bfd08...1464bd`](./contracts/ethereum-1/0x9bfd08d7b3cc40129132a17b4d5b9ea3351464bd/) | stkCvxPrismaVault | core_logic | $901.00 | Verified native implementation with $901.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x77e5bb...af7328`](./contracts/ethereum-1/0x77e5bb2c91cac7c7a8a74c38804fdb372baf7328/) | AuraBalVault | core_logic | $665.95 | Verified native implementation with $665.95 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x92e6e4...966ee2`](./contracts/ethereum-1/0x92e6e43f99809df84ed2d533e1fd8017eb966ee2/) | AddressRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8e6d5c...f1baa4`](./contracts/ethereum-1/0x8e6d5cf9b9659d4f8e68ee040bf26e728ef1baa4/) | AirdropDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xcfa23b...0d1873`](./contracts/ethereum-1/0xcfa23b8f9062369b21049b9f4a4ce79d640d1873/) | AssetRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x06ee5f...947363`](./contracts/ethereum-1/0x06ee5f2c2690c3b03718e662dd14282cb9947363/) | AuraBalZaps | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -202,6 +206,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x22530d...8eb468`](./contracts/ethereum-1/0x22530d384cd9915e096ead2db7f82ee81f8eb468/) | FeeAllocator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x11fe17...c1d4c7`](./contracts/ethereum-1/0x11fe17c5ab68cc4cc6d3c281feddfff80bc1d4c7/) | FXSMerkleDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2dce36...ded929`](./contracts/ethereum-1/0x2dce36d00bb398cb01390a0769260b84edded929/) | FXSSwapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xba5602...fd8562`](./contracts/ethereum-1/0xba5602730824340d714c92a153460db958fd8562/) | MerkleDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa83043...956183`](./contracts/ethereum-1/0xa83043df401346a67eddeb074679b4570b956183/) | MerkleDistributorV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x966a2f...fd4567`](./contracts/ethereum-1/0x966a2f2dc3aff00965c6eccf6290d0d402fd4567/) | MultiMerkleStash | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6753f2...e48222`](./contracts/ethereum-1/0x6753f23905f15376429e6f0c381fcc4862e48222/) | PCvxZaps | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -212,7 +217,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xc8ec7d...5fd70a`](./contracts/ethereum-1/0xc8ec7d444c88ba3afe96978854645c43bd5fd70a/) | PirexMigrationV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd94b07...422154`](./contracts/ethereum-1/0xd94b0763dadd691a1e9688cf0ef8238d95422154/) | PrismaSwapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xbce0cf...15c3ac`](./contracts/ethereum-1/0xbce0cf87f513102f22232436cca2ca49e815c3ac/) | PxCvx | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1b38b7...38f33c`](./contracts/ethereum-1/0x1b38b7576cc1646ec4ba607c2d92d8fd0438f33c/) | RAAC CoW Harvester | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x10f6ef...740d4f`](./contracts/ethereum-1/0x10f6ef027725df44cebbf1efd25d3e1df3740d4f/) | RAAC Stable Vault Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7eef8f...75b879`](./contracts/ethereum-1/0x7eef8f6a259cbbc939ba29cdb009abef8275b879/) | RAAC Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x698804...ff5b46`](./contracts/ethereum-1/0x698804b7cc4070260a0dc14ce2ca4e3af0ff5b46/) | raac_vault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -244,10 +248,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 77 |
+| native | 73 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 15 |
+| standard_library | 2 |
+| needs_review | 21 |
 
 ## Scope Matching Notes
 

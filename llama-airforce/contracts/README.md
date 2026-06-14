@@ -1,6 +1,6 @@
 # llama-airforce — Contract Index
 
-93 unique implementations on ethereum · 180 deployments · 0 audited · 64 unaudited · 29 unverified
+96 unique implementations on ethereum · 185 deployments · 0 audited · 67 unaudited · 29 unverified
 
 ## adapter (12)
 
@@ -37,6 +37,12 @@
 | [UnionPirexVault](./ethereum-1/0x8659fc767cad6005de79af65dafe4249c57927af/) | ethereum | [`0x8659fc...7927af`](./ethereum-1/0x8659fc767cad6005de79af65dafe4249c57927af/) | ⚠️ Unaudited | Verified |
 | [UnionVault](./ethereum-1/0x83507cc8c8b67ed48badd1f59f684d5d02884c81/) | ethereum | [`0x83507c...884c81`](./ethereum-1/0x83507cc8c8b67ed48badd1f59f684d5d02884c81/) | ⚠️ Unaudited | Verified |
 
+## governance (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [GnosisSafe (3 deployments)](./ethereum-1/0x6ed9c171e02de08aaedf0fc1d589923d807061d6/) | ethereum | 3 deployments: ethereum [`0x6ed9c1...7061d6`](./ethereum-1/0x6ed9c171e02de08aaedf0fc1d589923d807061d6/); ethereum `0x9bc7c6...e53f99`; ethereum `0xaef6ea...bc1f16` | ⚠️ Unaudited | Verified |
+
 ## operational_periphery (26)
 
 | Contract | Chain | Deployments | Audit Status | Source |
@@ -68,11 +74,13 @@
 | [stkCvxPrismaMigration](./ethereum-1/0x06c3b252c01225fdf3017551f39668c9b6599ac5/) | ethereum | [`0x06c3b2...599ac5`](./ethereum-1/0x06c3b252c01225fdf3017551f39668c9b6599ac5/) | ⚠️ Unaudited | Verified |
 | [Treasury](./ethereum-1/0x6508ef65b0bd57eabd0f1d52685a70433b2d290b/) | ethereum | [`0x6508ef...2d290b`](./ethereum-1/0x6508ef65b0bd57eabd0f1d52685a70433b2d290b/) | ⚠️ Unaudited | Verified |
 
-## registry (2)
+## registry (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
+| [AddressRegistry](./ethereum-1/0x92e6e43f99809df84ed2d533e1fd8017eb966ee2/) | ethereum | [`0x92e6e4...966ee2`](./ethereum-1/0x92e6e43f99809df84ed2d533e1fd8017eb966ee2/) | ⚠️ Unaudited | Verified |
 | [AssetRegistry](./ethereum-1/0xcfa23b8f9062369b21049b9f4a4ce79d640d1873/) | ethereum | [`0xcfa23b...0d1873`](./ethereum-1/0xcfa23b8f9062369b21049b9f4a4ce79d640d1873/) | ⚠️ Unaudited | Verified |
+| [DelegateRegistry](./ethereum-1/0x469788fe6e9e9681c6ebf3bf78e7fd26fc015446/) | ethereum | [`0x469788...015446`](./ethereum-1/0x469788fe6e9e9681c6ebf3bf78e7fd26fc015446/) | ⚠️ Unaudited | Verified |
 | [RAAC Stable Vault Factory (2 deployments)](./ethereum-1/0x10f6ef027725df44cebbf1efd25d3e1df3740d4f/) | ethereum | 2 deployments: ethereum [`0x10f6ef...740d4f`](./ethereum-1/0x10f6ef027725df44cebbf1efd25d3e1df3740d4f/); ethereum `0xe1ca33...982989` | ⚠️ Unaudited | Verified |
 
 ## unknown (40)

@@ -5,11 +5,11 @@
 - Project: SpaceFi (`spacefi`)
 - Website: [https://spacefi.io](https://spacefi.io)
 - Lifecycle: active (Tier 0, 86.8% below peak)
-- Generated: 2026-06-11T02:55:34.676Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-14T11:04:16.407Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-df6c
 - Chains: scroll, zksync-era
-- Contract surface: 38 unique implementations (38 raw deployments)
-- DeFi Llama TVL: $1,459,366.00
+- Contract surface: 43 unique implementations (43 raw deployments)
+- DeFi Llama TVL: $1,311,602.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -26,9 +26,9 @@ The product families represent chain-specific deployments of the same SpaceFi DE
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 38
-- Unique implementations: 38
-- Raw deployments: 38
+- Unverified implementations: 43
+- Unique implementations: 43
+- Raw deployments: 43
 - Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -62,7 +62,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (38)
+### ❓ Unverified (43)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -83,9 +83,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | zksync-era | `0x4c64dd...c8d129` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x4e2d4f...6bc1fc` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x525e30...929b10` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | `0x55ca89...34dad2` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x55d35a...8cdfcd` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x60beb3...48fd98` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x6146ad...9cfda6` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | `0x6567a9...48e6b6` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x68f175...36a0ed` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x6af434...5f63b1` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0x76b7e8...372f85` | ❓ Unverified |
@@ -99,6 +101,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | zksync-era | `0xb376fc...ea0614` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0xbc5280...77a80e` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0xbe7d1f...506d1d` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | `0xcb5dc3...c0f5d5` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | `0xd0ce09...5b45ae` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | `0xd283a2...582b7c` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0xdb101b...935460` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0xe82da1...405a87` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | `0xe8826f...88193a` | ❓ Unverified |
@@ -127,10 +132,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 23 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 15 |
+| needs_review | 43 |
 
 ## Scope Matching Notes
 

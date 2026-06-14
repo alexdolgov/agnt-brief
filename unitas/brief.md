@@ -3,15 +3,15 @@
 ## Project Overview
 
 - Project: Unitas (`unitas`)
-- Website: [https://app.unitas.so/points?ref=llama](https://app.unitas.so/points?ref=llama)
+- Website: [https://app.unitas.so](https://app.unitas.so)
 - Lifecycle: active (Tier 0, 38.6% below peak)
-- Generated: 2026-06-11T03:50:50.605Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
+- Generated: 2026-06-14T04:38:18.295Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
 - Chains: bsc
-- Contract surface: 9 unique implementations (9 raw deployments)
-- DeFi Llama TVL: $83,171,426.72
-- On-chain TVL (included contracts): $47,804,206.32
-- TVL by chain: Bsc $47,804,206.32
+- Contract surface: 12 unique implementations (12 raw deployments)
+- DeFi Llama TVL: $59,863,077.28
+- On-chain TVL (included contracts): $48,508,892.11
+- TVL by chain: Bsc $48,508,892.11
 
 ## Project Description
 
@@ -23,25 +23,25 @@ The protocol consists of a single product family centered around the USDu stable
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/3 (100.0%)
-- Verified + Unaudited implementations: 0
+- Verified implementations audited: 3/5 (60.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 6
-- Unique implementations: 9
-- Raw deployments: 9
+- Unverified implementations: 7
+- Unique implementations: 12
+- Raw deployments: 12
 - Audits discovered: 5
 - Scoreable audits (matched contracts): 3
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $704,685.78
 - Latest audit: 2026-01 (fresh)
 - Staleness: 3 fresh, 2 aging, 0 stale, 0 unknown
-- Tier 1 coverage: 100.0% (SlowMist)
+- Tier 1 coverage: 60.0% (SlowMist)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| SlowMist | Tier 1 | 3 | 100.0% | 2025-10 |
-| unknown | Tier 2 | 3 | 100.0% | 2025-09 |
+| SlowMist | Tier 1 | 3 | 60.0% | 2025-10 |
+| unknown | Tier 2 | 3 | 60.0% | 2025-09 |
 
 ## Contract Surface
 
@@ -51,11 +51,14 @@ The protocol consists of a single product family centered around the USDu stable
 |---|---|---|---|---|
 | StakedUSDuV2 | token | bsc | [`0x385c27...52ec71`](./contracts/bsc-56/0x385c279445581a186a4182a5503094ebb652ec71/) | ✅ Audited |
 | UnitasMintingV2 | unknown | bsc | [`0xbb984c...4ea82a`](./contracts/bsc-56/0xbb984ce670100aa855f6152f88b26ee57f4ea82a/) | ✅ Audited |
-| USDu | token | bsc | [`0xea953e...db5882`](./contracts/bsc-56/0xea953ea6634d55dac6697c436b1e81a679db5882/) | ✅ Audited |
+| USDu | unknown | bsc | [`0xea953e...db5882`](./contracts/bsc-56/0xea953ea6634d55dac6697c436b1e81a679db5882/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (2)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| PancakeV3Pool | core_logic | bsc | [`0x8aab55...852120`](./contracts/bsc-56/0x8aab5522d601bbb85501d703b55a272e47852120/) | ⚠️ Unaudited |
+| SafeProxy | unknown | bsc | [`0xb464c9...0ed3a9`](./contracts/bsc-56/0xb464c9890604926bd5fa7b66bf15d26bcd0ed3a9/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -69,12 +72,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (6)
+### ❓ Unverified (7)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| UnnamedContract | unknown | bsc | `0x3b5f4a...5fbb4c` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0x643c75...a6e4b4` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0x6e705a...2c0c0e` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0x82a7cc...95c361` | ❓ Unverified |
@@ -103,9 +107,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 9 |
-| upstream | 0 |
-| standard_library | 0 |
-| needs_review | 0 |
+| upstream | 1 |
+| standard_library | 1 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

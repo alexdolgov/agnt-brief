@@ -455,7 +455,7 @@
 | [galaxy-curation](./galaxy-curation/) | $67.5M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [gale](./gale/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [gamma](./gamma/) | $24.3K | 27.6% | $24.3K | active | 16 | 467 | 2026-06-10 |
-| [gate-us](./gate-us/) | $49.1M | 0.0% | ? | active | 0 | 9 | 2026-06-12 |
+| [gate-us](./gate-us/) | $49.1M | 0.0% | ? | active | 0 | 9 | 2026-06-14 |
 | [gearbox](./gearbox/) | $3.5M | 53.0% | ? | declining | 37 | 195 | 2026-06-10 |
 | [geist-finance](./geist-finance/) | $153.5K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [gemkeeper](./gemkeeper/) | $20.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -787,7 +787,7 @@
 | [mytrade](./mytrade/) | $7.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [myx-finance](./myx-finance/) | $986.0K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [nabla-finance](./nabla-finance/) | $88.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [nado](./nado/) | $49.3M | 0.0% | ? | active | 0 | 22 | 2026-06-12 |
+| [nado](./nado/) | $49.3M | 0.0% | ? | active | 0 | 22 | 2026-06-14 |
 | [narbet](./narbet/) | $9.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [native](./native/) | $67.6M | 0.0% | $67.6M | active | 0 | 80 | 2026-06-12 |
 | [navi-protocol](./navi-protocol/) | $275.7M | 0.0% | ? | unknown | 7 | 0 | 2026-06-13 |
@@ -804,7 +804,7 @@
 | [neptune-finance](./neptune-finance/) | $5.9M | 0.0% | ? | active | 3 | 2 | 2026-06-13 |
 | [nerona](./nerona/) | $327.0M | 0.0% | $327.0M | declining | 0 | 4 | 2026-06-13 |
 | [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | declining | 0 | 66 | 2026-06-13 |
-| [nest-credit](./nest-credit/) | $66.7K | 57.1% | ? | active | 15 | 16 | 2026-06-11 |
+| [nest-credit](./nest-credit/) | $4.3M | 54.5% | $693.4 | active | 16 | 20 | 2026-06-14 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-06-11 |
 | [netswap](./netswap/) | $1.3M | 20.8% | ? | declining | 2 | 48 | 2026-06-11 |
 | [netweave-finance](./netweave-finance/) | $12.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1288,7 +1288,7 @@
 | [unclesam-protocol](./unclesam-protocol/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [unichain-bridge](./unichain-bridge/) | $44.3 | 0.0% | $44.3 | active | 0 | 39 | 2026-06-13 |
 | [unicly](./unicly/) | $370.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [unitas](./unitas/) | $47.8M | 100.0% | ? | active | 5 | 9 | 2026-06-11 |
+| [unitas](./unitas/) | $48.5M | 60.0% | $704.7K | active | 5 | 12 | 2026-06-14 |
 | [unite-finance](./unite-finance/) | $281.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [universal-bridge](./universal-bridge/) | $6.7M | 0.0% | ? | active | 1 | 2 | 2026-06-13 |
 | [universe-finance](./universe-finance/) | $19.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -1391,7 +1391,7 @@
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-06-11 |
 | [zenlink](./zenlink/) | $5.3M | 0.0% | ? | declining | 1 | 226 | 2026-06-11 |
 | [zero-g-finance](./zero-g-finance/) | $1.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-06-11 |
+| [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 5 | 34 | 2026-06-14 |
 | [zerolend](./zerolend/) | $352.4M | 9.2% | $331.7M | declining | 9 | 614 | 2026-06-12 |
 | [zeroliquid](./zeroliquid/) | $3.4K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [zeroswap](./zeroswap/) | $253.3 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |

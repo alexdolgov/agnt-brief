@@ -1,13 +1,22 @@
 # nest-credit — Contract Index
 
-16 unique implementations across 4 chains · 65 deployments · 4 audited · 3 unaudited · 9 unverified
+20 unique implementations across 4 chains · 69 deployments · 6 audited · 5 unaudited · 9 unverified
 
-## core_logic (2)
+## core_logic (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BoringVault (14 deployments)](./ethereum-1/0x11113ff3a60c2450f4b22515cb760417259ee94b/) | ethereum | 14 deployments: ethereum [`0x11113f...9ee94b`](./ethereum-1/0x11113ff3a60c2450f4b22515cb760417259ee94b/); ethereum `0x119dd7...299165`; ethereum `0x1639dc...a2fbfb`; ethereum `0x29bf22...2c0240`; ethereum `0x593ccc...6388db`; ethereum `0x9fbc36...ffdc4c`; ethereum `0xa5f78b...ec066c`; ethereum `0xbfc577...ed19de`; ethereum `0xe72fe6...938cb9`; bsc `0x119dd7...299165`; bsc `0x1639dc...a2fbfb`; plasma `0x119dd7...299165`; plasma `0x1639dc...a2fbfb`; arbitrum `0xe72fe6...938cb9` | ✅ Audited | Verified |
+| [BoringVaultSY](./ethereum-1/0xa08c5b18a05317dc0ed43c9eea9ea6db85d84ed1/) | ethereum | [`0xa08c5b...d84ed1`](./ethereum-1/0xa08c5b18a05317dc0ed43c9eea9ea6db85d84ed1/) | ⚠️ Unaudited | Verified |
 | [MultiChainLayerZeroTellerWithMultiAssetSupport (12 deployments)](./ethereum-1/0x1492062b3ae7996c71f87a2b390b6b82afea0c59/) | ethereum | 12 deployments: ethereum [`0x149206...ea0c59`](./ethereum-1/0x1492062b3ae7996c71f87a2b390b6b82afea0c59/); ethereum `0x272002...759f9d`; ethereum `0x7d218b...8e0d25`; ethereum `0x8034c2...6f4ab9`; ethereum `0xa5f8e5...08a90b`; ethereum `0xad60d4...ffb89b`; ethereum `0xc9f6a4...324a35`; ethereum `0xd65d39...fc4c15`; ethereum `0xf288a0...a6551c`; bsc `0x8034c2...6f4ab9`; bsc `0xa5f8e5...08a90b`; arbitrum `0x149206...ea0c59` | ⚠️ Unaudited | Verified |
+| [NestVault](./ethereum-1/0xb7285655b17e28c343a8d5cb340947576fbc14a0/) | ethereum | [`0xb72856...bc14a0`](./ethereum-1/0xb7285655b17e28c343a8d5cb340947576fbc14a0/) | ✅ Audited | Verified |
+| [NestVaultOFT](./ethereum-1/0x5e949fa6401d7c49cdcb48e3a8bdc28f60657a2c/) | ethereum | [`0x5e949f...657a2c`](./ethereum-1/0x5e949fa6401d7c49cdcb48e3a8bdc28f60657a2c/) | ✅ Audited | Verified |
+
+## governance (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [ProxyAdmin](./ethereum-1/0xa28c08f165116587d4f3e708743b4dee155c5e64/) | ethereum | [`0xa28c08...5c5e64`](./ethereum-1/0xa28c08f165116587d4f3e708743b4dee155c5e64/) | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (2)
 

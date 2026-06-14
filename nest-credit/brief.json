@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nest-credit",
-  "generated_at": "2026-06-11T01:25:53.755Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-14T04:39:51.894Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-d641",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "nest-credit",
@@ -22,29 +22,29 @@
     "drop_from_peak_pct": 39.91496508989435
   },
   "summary": {
-    "total_contracts": 16,
-    "total_addresses": 65,
-    "unique_implementations": 16,
-    "total_deployments": 65,
-    "audited_contracts": 4,
-    "unaudited_contracts": 3,
-    "contracts_verified_audited": 4,
-    "contracts_verified_unaudited": 2,
+    "total_contracts": 20,
+    "total_addresses": 69,
+    "unique_implementations": 20,
+    "total_deployments": 69,
+    "audited_contracts": 6,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 6,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 9,
-    "coverage_pct": 57.1,
-    "total_audits": 15,
-    "scoreable_audits": 1,
-    "dl_tvl_usd": 50512175.43692,
-    "tvl_usd": 66701.84393699658,
+    "coverage_pct": 54.5,
+    "total_audits": 16,
+    "scoreable_audits": 3,
+    "dl_tvl_usd": 51938486.69038,
+    "tvl_usd": 4349102.053391997,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "arbitrum": 19.1,
       "bsc": 713.91,
-      "ethereum": 65966.99,
+      "ethereum": 4348367.2,
       "plasma": 1.85
     },
-    "asd_usd": null,
+    "asd_usd": 693.421311,
     "website_url": "https://nest.credit/",
     "chains": [
       "arbitrum",
@@ -52,15 +52,17 @@
       "ethereum",
       "plasma"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
+    "tier1_coverage_pct": 18.2,
+    "tier1_auditors": [
+      "Spearbit"
+    ],
     "latest_audit_date": "2026-04",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 3,
       "aging": 2,
       "stale": 2,
-      "unknown": 8
+      "unknown": 9
     }
   },
   "topography": {
@@ -69,7 +71,7 @@
     "product_family_count": 5
   },
   "surface_sufficiency": {
-    "unique_implementations": 16,
+    "unique_implementations": 20,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -78,6 +80,40 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5e949fa6401d7c49cdcb48e3a8bdc28f60657a2c",
+      "name": "NestVaultOFT",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 4260693.024434,
+      "is_proxy": true,
+      "impl_address": "0xb798616e373aafead58cf9d4ff3a6b84599ce897",
+      "impl_name": "NestVaultOFT",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5e949fa6401d7c49cdcb48e3a8bdc28f60657a2c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 4260693.024434,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-4753",
+        "audit-4759"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -226,6 +262,71 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb7285655b17e28c343a8d5cb340947576fbc14a0",
+      "name": "NestVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 21013.76371,
+      "is_proxy": true,
+      "impl_address": "0x5d267b5579dad0b5eb38ed55fa1b092c4488f80e",
+      "impl_name": "NestVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb7285655b17e28c343a8d5cb340947576fbc14a0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 21013.76371,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-4753",
+        "audit-4759"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa08c5b18a05317dc0ed43c9eea9ea6db85d84ed1",
+      "name": "BoringVaultSY",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 693.421311,
+      "is_proxy": true,
+      "impl_address": "0x6f68fd09489bd9dd5a56c3c85178734bb709ba87",
+      "impl_name": "BoringVaultSY",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa08c5b18a05317dc0ed43c9eea9ea6db85d84ed1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 693.421311,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -747,6 +848,37 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xa28c08f165116587d4f3e708743b4dee155c5e64",
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa28c08f165116587d4f3e708743b4dee155c5e64",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x2a3e301dbd45c143dfbb7b1ce1c55bf0bbf161cb",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -1080,12 +1212,39 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AddressUtils",
+        "BlacklistHook",
+        "BurnMessage",
+        "BurnMessageV2",
+        "MessageV2",
+        "NestAccountant",
+        "NestCCTPRelayer",
+        "NestShareOFT",
+        "NestShareSeizer",
+        "NestVault",
+        "NestVaultAccountingLogic",
+        "NestVaultAdminLogic",
+        "NestVaultComposer",
+        "NestVaultCore",
+        "NestVaultCoreTypes",
+        "NestVaultCoreValidationLogic",
+        "NestVaultDepositLogic",
+        "NestVaultOFT",
+        "NestVaultOperatorLogic",
+        "NestVaultPermit2",
+        "NestVaultRedeemLogic",
+        "NestVaultRedeemOperator",
+        "NestVaultTransferLogic",
+        "TypedMemView",
+        "VaultComposerAsyncUpgradeable",
+        "VaultComposerSyncUpgradeable"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -1101,7 +1260,7 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "scope_format": "contract_name|n/a",
       "extracted_names": [
         "AaveV3DecoderAndSanitizer",
         "AccountantWithRateProviders",
@@ -1146,7 +1305,17 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 4754,
+          "report_url": "https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-0.pdf"
+        },
+        {
+          "audit_id": 14374,
+          "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-0.pdf"
+        }
+      ]
     },
     {
       "audit_id": 4756,
@@ -1167,7 +1336,17 @@
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 4756,
+          "report_url": "https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-1.pdf"
+        },
+        {
+          "audit_id": 14376,
+          "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-1.pdf"
+        }
+      ]
     },
     {
       "audit_id": 4757,
@@ -1188,7 +1367,17 @@
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 4757,
+          "report_url": "https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/pashov-boring-vault.pdf"
+        },
+        {
+          "audit_id": 14377,
+          "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-boring-vault.pdf"
+        }
+      ]
     },
     {
       "audit_id": 4758,
@@ -1209,7 +1398,17 @@
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 4758,
+          "report_url": "https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/pashov-hyperlane.pdf"
+        },
+        {
+          "audit_id": 14378,
+          "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-hyperlane.pdf"
+        }
+      ]
     },
     {
       "audit_id": 4759,
@@ -1224,12 +1423,19 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "NestAccountant",
+        "NestShare",
+        "NestVault",
+        "NestVaultCore",
+        "NestVaultOFT",
+        "NestVaultPredicateProxy"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -1378,6 +1584,27 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14375,
+      "audit_key": "audit-14375",
+      "report_name": "spearbit-boring-vault-arctic-0.pdf",
+      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/spearbit-boring-vault-arctic-0.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -1385,8 +1612,15 @@
       "auditor": "0xMacro",
       "tier": 2,
       "contracts_covered": 4,
-      "coverage_pct": 57.1,
+      "coverage_pct": 36.4,
       "latest_audit": "2024-04"
+    },
+    {
+      "auditor": "Spearbit",
+      "tier": 1,
+      "contracts_covered": 2,
+      "coverage_pct": 18.2,
+      "latest_audit": "2026-04"
     }
   ],
   "coverage_gaps": [
@@ -1414,15 +1648,15 @@
   "origin_summary": {
     "native": 6,
     "upstream": 1,
-    "standard_library": 0,
+    "standard_library": 4,
     "needs_review": 9
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 40
+      "extraction_exact": 44
     },
     "extraction_confidence_counts": {
-      "high": 1
+      "high": 3
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -1436,10 +1670,6 @@
         "report_name": "slowmist2.pdf"
       },
       {
-        "audit_id": 4753,
-        "report_name": "| 2026/04/10 | [Nest vault, share & accountant contracts with cross-chain orchestration]() | Cantina |"
-      },
-      {
         "audit_id": 4756,
         "report_name": "BoringVault follow-up audit"
       },
@@ -1450,10 +1680,6 @@
       {
         "audit_id": 4758,
         "report_name": "Nucleus + Hyperlane integration"
-      },
-      {
-        "audit_id": 4759,
-        "report_name": "| 2026/01/07 | [NestVault, NestAccountant, NestShare, NestVaultOFT]() | Cantina |"
       },
       {
         "audit_id": 4760,
@@ -1482,6 +1708,10 @@
       {
         "audit_id": 4766,
         "report_name": "zenith-withdraw-queue.pdf"
+      },
+      {
+        "audit_id": 14375,
+        "report_name": "spearbit-boring-vault-arctic-0.pdf"
       }
     ],
     "inherited_remapped_matches": []

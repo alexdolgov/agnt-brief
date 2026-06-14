@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nado",
-  "generated_at": "2026-06-12T19:08:29.928Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-12-546062-9988",
+  "generated_at": "2026-06-14T04:32:46.558Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-d641",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "nado",

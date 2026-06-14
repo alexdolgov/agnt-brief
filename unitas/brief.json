@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "unitas",
-  "generated_at": "2026-06-11T03:50:50.605Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
+  "generated_at": "2026-06-14T04:38:18.295Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-d641",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "unitas",
@@ -22,31 +22,31 @@
     "drop_from_peak_pct": 38.61927763366853
   },
   "summary": {
-    "total_contracts": 9,
-    "total_addresses": 9,
-    "unique_implementations": 9,
-    "total_deployments": 9,
+    "total_contracts": 12,
+    "total_addresses": 12,
+    "unique_implementations": 12,
+    "total_deployments": 12,
     "audited_contracts": 3,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 6,
-    "coverage_pct": 100,
+    "contracts_unverified": 7,
+    "coverage_pct": 60,
     "total_audits": 5,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 83171426.72156,
-    "tvl_usd": 47804206.32422189,
+    "dl_tvl_usd": 59863077.28403,
+    "tvl_usd": 48508892.105960816,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "bsc": 47804206.32
+      "bsc": 48508892.11
     },
-    "asd_usd": null,
-    "website_url": "https://app.unitas.so/points?ref=llama",
+    "asd_usd": 704685.7817389332,
+    "website_url": "https://app.unitas.so",
     "chains": [
       "bsc"
     ],
-    "tier1_coverage_pct": 100,
+    "tier1_coverage_pct": 60,
     "tier1_auditors": [
       "SlowMist"
     ],
@@ -65,8 +65,8 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 9,
-    "has_non_token_contracts": false,
+    "unique_implementations": 12,
+    "has_non_token_contracts": true,
     "is_skeletal": false
   },
   "fork_lineage": {
@@ -106,7 +106,69 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x8aab5522d601bbb85501d703b55a272e47852120",
+      "name": "PancakeV3Pool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "pancakeswap",
+      "product_line": null,
+      "tvl_usd": 704685.7817389332,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PancakeV3Pool",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x8aab5522d601bbb85501d703b55a272e47852120",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 704685.7817389332,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xb464c9890604926bd5fa7b66bf15d26bcd0ed3a9",
+      "name": "SafeProxy",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SafeProxy",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb464c9890604926bd5fa7b66bf15d26bcd0ed3a9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 56,
@@ -141,6 +203,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x3b5f4ac56dab45f43dbad9b41c6a57f0f85fbb4c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x3b5f4ac56dab45f43dbad9b41c6a57f0f85fbb4c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 56,
@@ -333,7 +426,7 @@
       "chain_name": "bsc",
       "address": "0xea953ea6634d55dac6697c436b1e81a679db5882",
       "name": "USDu",
-      "role": "token",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Unitas",
@@ -499,23 +592,23 @@
       "auditor": "SlowMist",
       "tier": 1,
       "contracts_covered": 3,
-      "coverage_pct": 100,
+      "coverage_pct": 60,
       "latest_audit": "2025-10"
     },
     {
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 100,
+      "coverage_pct": 60,
       "latest_audit": "2025-09"
     }
   ],
   "coverage_gaps": [],
   "origin_summary": {
     "native": 9,
-    "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 0
+    "upstream": 1,
+    "standard_library": 1,
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {

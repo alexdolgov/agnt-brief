@@ -1,0 +1,478 @@
+[
+  {
+    "name": "SetRouter",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "router",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "allowed",
+        "type": "bool",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "SetAuctionTaker",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "auction_taker",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "allowed",
+        "type": "bool",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "set_router",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "router",
+        "type": "address"
+      },
+      {
+        "name": "allowed",
+        "type": "bool"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "set_auction_taker",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "auction_taker",
+        "type": "address"
+      },
+      {
+        "name": "allowed",
+        "type": "bool"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "open_leveraged_trove",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "data",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "name": "trove_manager",
+            "type": "address"
+          },
+          {
+            "name": "flash_loan_token",
+            "type": "address"
+          },
+          {
+            "name": "auction_taker",
+            "type": "address"
+          },
+          {
+            "name": "owner_index",
+            "type": "uint256"
+          },
+          {
+            "name": "flash_loan_amount",
+            "type": "uint256"
+          },
+          {
+            "name": "collateral_amount",
+            "type": "uint256"
+          },
+          {
+            "name": "debt_amount",
+            "type": "uint256"
+          },
+          {
+            "name": "prev_id",
+            "type": "uint256"
+          },
+          {
+            "name": "next_id",
+            "type": "uint256"
+          },
+          {
+            "name": "annual_interest_rate",
+            "type": "uint256"
+          },
+          {
+            "name": "max_upfront_fee",
+            "type": "uint256"
+          },
+          {
+            "name": "min_borrow_out",
+            "type": "uint256"
+          },
+          {
+            "name": "min_collateral_out",
+            "type": "uint256"
+          },
+          {
+            "name": "collateral_swap",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "name": "data",
+                "type": "bytes"
+              }
+            ]
+          },
+          {
+            "name": "debt_swap",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "name": "data",
+                "type": "bytes"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "close_leveraged_trove",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "data",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "trove_manager",
+            "type": "address"
+          },
+          {
+            "name": "flash_loan_token",
+            "type": "address"
+          },
+          {
+            "name": "trove_id",
+            "type": "uint256"
+          },
+          {
+            "name": "flash_loan_amount",
+            "type": "uint256"
+          },
+          {
+            "name": "collateral_swap",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "name": "data",
+                "type": "bytes"
+              }
+            ]
+          },
+          {
+            "name": "debt_swap",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "name": "data",
+                "type": "bytes"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "lever_up_trove",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "data",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "trove_manager",
+            "type": "address"
+          },
+          {
+            "name": "flash_loan_token",
+            "type": "address"
+          },
+          {
+            "name": "auction_taker",
+            "type": "address"
+          },
+          {
+            "name": "trove_id",
+            "type": "uint256"
+          },
+          {
+            "name": "flash_loan_amount",
+            "type": "uint256"
+          },
+          {
+            "name": "collateral_amount",
+            "type": "uint256"
+          },
+          {
+            "name": "debt_amount",
+            "type": "uint256"
+          },
+          {
+            "name": "max_upfront_fee",
+            "type": "uint256"
+          },
+          {
+            "name": "min_borrow_out",
+            "type": "uint256"
+          },
+          {
+            "name": "min_collateral_out",
+            "type": "uint256"
+          },
+          {
+            "name": "collateral_swap",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "name": "data",
+                "type": "bytes"
+              }
+            ]
+          },
+          {
+            "name": "debt_swap",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "name": "data",
+                "type": "bytes"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "lever_down_trove",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "data",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "trove_manager",
+            "type": "address"
+          },
+          {
+            "name": "flash_loan_token",
+            "type": "address"
+          },
+          {
+            "name": "trove_id",
+            "type": "uint256"
+          },
+          {
+            "name": "flash_loan_amount",
+            "type": "uint256"
+          },
+          {
+            "name": "collateral_to_remove",
+            "type": "uint256"
+          },
+          {
+            "name": "collateral_swap",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "name": "data",
+                "type": "bytes"
+              }
+            ]
+          },
+          {
+            "name": "debt_swap",
+            "type": "tuple",
+            "components": [
+              {
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "name": "data",
+                "type": "bytes"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "onMorphoFlashLoan",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "assets",
+        "type": "uint256"
+      },
+      {
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "DADDY",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "REGISTRY",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "SWAP_EXECUTOR",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "routers",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "auction_takers",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "daddy",
+        "type": "address"
+      },
+      {
+        "name": "registry",
+        "type": "address"
+      },
+      {
+        "name": "swap_executor",
+        "type": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  }
+]

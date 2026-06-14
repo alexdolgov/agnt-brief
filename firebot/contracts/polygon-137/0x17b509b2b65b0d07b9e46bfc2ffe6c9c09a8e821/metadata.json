@@ -1,0 +1,18 @@
+{
+  "address": "0x17b509b2b65b0d07b9e46bfc2ffe6c9c09a8e821",
+  "chain_id": 137,
+  "contract_name": "AlgebraPool",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 72,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T09:09:11.578Z"
+}

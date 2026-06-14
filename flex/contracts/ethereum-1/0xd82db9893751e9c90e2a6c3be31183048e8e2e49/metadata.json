@@ -1,0 +1,17 @@
+{
+  "address": "0xd82db9893751e9c90e2a6c3be31183048e8e2e49",
+  "chain_id": 1,
+  "contract_name": "Trove Manager",
+  "compiler_version": "vyper:0.4.3",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T09:09:21.325Z"
+}

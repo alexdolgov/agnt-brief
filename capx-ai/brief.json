@@ -1,45 +1,47 @@
 {
   "schema_version": "2.0",
   "project_key": "capx-ai",
-  "generated_at": "2026-06-10T22:18:30.991Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-7a87",
+  "generated_at": "2026-06-14T09:26:54.049Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-403f",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "capx-ai",
     "tier": 0,
     "peak_tvl": 2685916,
     "peak_date": "2026-02-04T00:00:00.000Z",
-    "tvl_30d_ago": 2268830,
-    "tvl_90d_ago": 2417579,
-    "tvl_current": 2170813,
+    "tvl_30d_ago": 2152052,
+    "tvl_90d_ago": 2388632,
+    "tvl_current": 2212841,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": null,
-    "change_30d_pct": -4.320156203858376,
-    "change_90d_pct": -10.207153520112476,
-    "days_since_peak": 109,
+    "tvl_180d_ago": 1821417,
+    "change_30d_pct": 2.824699403174273,
+    "change_90d_pct": -7.359484424557655,
+    "days_since_peak": 130,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 19.17792663657389
+    "drop_from_peak_pct": 17.613171819222938
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 4,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2143133.58186,
-    "tvl_usd": 2143133.58186,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "dl_tvl_usd": 2216946.72861,
+    "tvl_usd": 1946022.9861277482,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 1946022.99
+    },
+    "asd_usd": 1946022.9861277482,
     "website_url": "https://capx.ai",
     "chains": [
       "bsc"
@@ -50,26 +52,57 @@
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 1,
-      "aging": 0,
-      "stale": 0,
+      "aging": 1,
+      "stale": 2,
       "unknown": 0
     }
   },
   "topography": {
     "project_purpose": "Capx AI is an Ethereum Layer 2 / Capx Chain ecosystem for building, tokenizing, owning, and trading AI apps. The listed BSC FactoryBurnMintERC20 contract should be treated as an associated factory/registry contract rather than the complete protocol surface or the TVL-bearing Capx Chain trading infrastructure.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The single product family contains the core factory contract, which serves as the registry and deployer for all AI agent tokens; no additional infrastructure contracts are present.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 2,
     "has_non_token_contracts": true,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7",
+      "name": "PancakeV3Pool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "pancakeswap",
+      "product_line": null,
+      "tvl_usd": 1946022.9861277482,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PancakeV3Pool",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1946022.9861277482,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -123,6 +156,69 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14480,
+      "audit_key": "audit-14480",
+      "report_name": "Dedaub - December 20, 2024.pdf",
+      "report_url": "https://github.com/Othentic-Labs/core-contracts/blob/main/audits/Dedaub%20-%20December%2020%2C%202024.pdf",
+      "auditor": "Dedaub",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14481,
+      "audit_key": "audit-14481",
+      "report_name": "Dedaub - September 23, 2024.pdf",
+      "report_url": "https://github.com/Othentic-Labs/core-contracts/blob/main/audits/Dedaub%20-%20September%2023%2C%202024.pdf",
+      "auditor": "Dedaub",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14482,
+      "audit_key": "audit-14482",
+      "report_name": "Security_Review_Final_Report__Othentic_Rewards_V2.pdf",
+      "report_url": "https://github.com/Othentic-Labs/core-contracts/blob/main/audits/Security_Review_Final_Report__Othentic_Rewards_V2.pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -140,7 +236,7 @@
   ],
   "origin_summary": {
     "native": 1,
-    "upstream": 0,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 0
   },
@@ -153,6 +249,18 @@
       {
         "audit_id": 2880,
         "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 14480,
+        "report_name": "Dedaub - December 20, 2024.pdf"
+      },
+      {
+        "audit_id": 14481,
+        "report_name": "Dedaub - September 23, 2024.pdf"
+      },
+      {
+        "audit_id": 14482,
+        "report_name": "Security_Review_Final_Report__Othentic_Rewards_V2.pdf"
       }
     ],
     "inherited_remapped_matches": []

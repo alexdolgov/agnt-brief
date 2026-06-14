@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "flex",
-  "generated_at": "2026-06-10T23:22:14.156Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-14T09:09:18.166Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-403f",
+  "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "flex",
     "tier": 0,
@@ -11,35 +11,37 @@
     "peak_date": "2026-05-24T00:00:00.000Z",
     "tvl_30d_ago": null,
     "tvl_90d_ago": null,
-    "tvl_current": 924448,
+    "tvl_current": 945408,
     "tier0_reason": "no_rule_matched",
     "tvl_180d_ago": null,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 7,
+    "days_since_peak": 21,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 9.966916215339696
+    "drop_from_peak_pct": 7.92559703229589
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
-    "audited_contracts": 0,
-    "unaudited_contracts": 1,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "total_contracts": 15,
+    "total_addresses": 16,
+    "unique_implementations": 15,
+    "total_deployments": 16,
+    "audited_contracts": 5,
+    "unaudited_contracts": 10,
+    "contracts_verified_audited": 5,
+    "contracts_verified_unaudited": 10,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
-    "total_audits": 3,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 611657.72651,
-    "tvl_usd": 611657.72651,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "coverage_pct": 33.3,
+    "total_audits": 4,
+    "scoreable_audits": 3,
+    "dl_tvl_usd": 2546756.44461,
+    "tvl_usd": 2603311.496471,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 2603311.5
+    },
+    "asd_usd": 1000000,
     "website_url": "https://flexmeow.com/",
     "chains": [
       "ethereum"
@@ -49,7 +51,7 @@
     "latest_audit_date": "2026-05",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 2,
+      "fresh": 3,
       "aging": 0,
       "stale": 0,
       "unknown": 1
@@ -57,19 +59,285 @@
   },
   "topography": {
     "project_purpose": "Flex is an Ethereum fixed-rate money market and lending protocol where borrowers choose their own interest rates.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The protocol consists of a single product family with one core registry contract that orchestrates all lending operations.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 15,
     "has_non_token_contracts": true,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x33c45216e121e31f1a8cd24c7e9d0d0c9e29b732",
+      "name": "TokenizedStrategy",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 1603311.496471,
+      "is_proxy": true,
+      "impl_address": "0xd377919fa87120584b21279a491f82d5265a139c",
+      "impl_name": "TokenizedStrategy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x33c45216e121e31f1a8cd24c7e9d0d0c9e29b732",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 803311.496471,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x467ce10870747372968ba98463a1d9af9fb27751",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 800000,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-9631",
+        "audit-9632",
+        "audit-14470"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x863687e4e9751b57f38b4b0eba04744c72d0f7b8",
+      "name": "Yearn V3 Vault",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Yearn",
+      "product_line": null,
+      "tvl_usd": 1000000,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Yearn V3 Vault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x863687e4e9751b57f38b4b0eba04744c72d0f7b8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1000000,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x10b07c594e6de6d40e13c2d0b6c49e5a3cac0bcf",
+      "name": "Auction",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Auction",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x10b07c594e6de6d40e13c2d0b6c49e5a3cac0bcf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-9632",
+        "audit-14470"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa4119b541a2ebf411f3ed6201107fc1da016ebd6",
+      "name": "Debt In Front Helper",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Debt In Front Helper",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa4119b541a2ebf411f3ed6201107fc1da016ebd6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3f195124394d63fcb4a792181cc8a65717ed1efa",
+      "name": "Dutch Desk",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Dutch Desk",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3f195124394d63fcb4a792181cc8a65717ed1efa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe2c4a5c2ab1ed5745d206b33cc0abf0a5d34753d",
+      "name": "Factory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Factory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe2c4a5c2ab1ed5745d206b33cc0abf0a5d34753d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14470"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbf3e996821d43ac3b6069ae74efa101ffc6137e0",
+      "name": "Leverage Zapper",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Leverage Zapper",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbf3e996821d43ac3b6069ae74efa101ffc6137e0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6d8d09f18afd74e6d6d0190ccdf89de8fea54206",
+      "name": "Price Oracle",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Price Oracle",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6d8d09f18afd74e6d6d0190ccdf89de8fea54206",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -88,6 +356,196 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x9117440a7d03238905d1c8908157bd7a547c77c8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14470"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc489b9e1003b337146fb8095687a8fb1f7119acc",
+      "name": "Sorted Troves",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Sorted Troves",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc489b9e1003b337146fb8095687a8fb1f7119acc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xfd6117e7dc92dd284412a0ee9fc2c9bdb945b9d1",
+      "name": "StrategyAprOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StrategyAprOracle",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfd6117e7dc92dd284412a0ee9fc2c9bdb945b9d1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-9631"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7a3b96e84156d22cdb53cbfc0b035ddd61805266",
+      "name": "StrategyFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StrategyFactory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7a3b96e84156d22cdb53cbfc0b035ddd61805266",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x91eb419d77962bf89a0f1ca8b1fa525f443d5421",
+      "name": "Swap Executor",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Swap Executor",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x91eb419d77962bf89a0f1ca8b1fa525f443d5421",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd82db9893751e9c90e2a6c3be31183048e8e2e49",
+      "name": "Trove Manager",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Trove Manager",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd82db9893751e9c90e2a6c3be31183048e8e2e49",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1ee35c67f8031291aef79e2abc87b904b9c47f07",
+      "name": "Yearn Vault Auction Taker",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Yearn",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Yearn Vault Auction Taker",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1ee35c67f8031291aef79e2abc87b904b9c47f07",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -137,12 +595,25 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Lender.sol",
+        "LenderFactory.sol",
+        "StrategyAprOracle.sol",
+        "auction.vy",
+        "dutch_desk.vy",
+        "factory.vy",
+        "registry.vy",
+        "sorted_troves.vy",
+        "trove_manager.vy",
+        "yvcrvusd2_to_usdc_oracle.vy",
+        "yvusd_to_usdc_oracle.vy",
+        "yvweth2_to_usdc_oracle.vy"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -158,51 +629,164 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Auction",
+        "DutchDesk",
+        "Keeper",
+        "Lender",
+        "LenderFactory",
+        "TokenizedStrategy",
+        "TroveManager"
+      ],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14470,
+      "audit_key": "audit-14470",
+      "report_name": "2026-03-Flex-report.pdf",
+      "report_url": "https://github.com/flexmeow/flex-contracts/blob/master/audits/2026-03-Flex-report.pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Lender",
+        "LenderFactory",
+        "auction",
+        "daddy",
+        "dutch_desk",
+        "factory",
+        "leverage_zapper",
+        "registry",
+        "sorted_troves",
+        "trove_manager",
+        "yvusd_to_usdc_oracle"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 26.7,
+      "latest_audit": "2026-03"
+    },
+    {
+      "auditor": "Dedaub",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 13.3,
+      "latest_audit": "2026-05"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x9117440a7d03238905d1c8908157bd7a547c77c8",
-      "name": "Registry",
+      "address": "0xa4119b541a2ebf411f3ed6201107fc1da016ebd6",
+      "name": "Debt In Front Helper",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3f195124394d63fcb4a792181cc8a65717ed1efa",
+      "name": "Dutch Desk",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbf3e996821d43ac3b6069ae74efa101ffc6137e0",
+      "name": "Leverage Zapper",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc489b9e1003b337146fb8095687a8fb1f7119acc",
+      "name": "Sorted Troves",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7a3b96e84156d22cdb53cbfc0b035ddd61805266",
+      "name": "StrategyFactory",
       "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x91eb419d77962bf89a0f1ca8b1fa525f443d5421",
+      "name": "Swap Executor",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd82db9893751e9c90e2a6c3be31183048e8e2e49",
+      "name": "Trove Manager",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 1,
-    "upstream": 0,
+    "native": 12,
+    "upstream": 2,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 9
+    },
+    "extraction_confidence_counts": {
+      "high": 2,
+      "medium": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 9630,
         "report_name": "FLEX-Audit-28-February-2026.md"
-      },
-      {
-        "audit_id": 9631,
-        "report_name": "Flex-May-07-2026-Dedaub.pdf"
-      },
-      {
-        "audit_id": 9632,
-        "report_name": "flex-audit-27-april.md"
       }
     ],
     "inherited_remapped_matches": []

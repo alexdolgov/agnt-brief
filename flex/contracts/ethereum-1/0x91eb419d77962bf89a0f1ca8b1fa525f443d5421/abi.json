@@ -1,0 +1,26 @@
+[
+  {
+    "name": "swap",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "router",
+        "type": "address"
+      },
+      {
+        "name": "data",
+        "type": "bytes"
+      },
+      {
+        "name": "token_in",
+        "type": "address"
+      },
+      {
+        "name": "token_out",
+        "type": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  }
+]

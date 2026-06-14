@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "templar-dao",
-  "generated_at": "2026-06-11T03:28:33.707Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-14T09:07:41.155Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-403f",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "templar-dao",
@@ -16,26 +16,26 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 1628,
+    "days_since_peak": 1631,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 40,
-    "total_addresses": 63,
-    "unique_implementations": 40,
-    "total_deployments": 63,
+    "total_contracts": 41,
+    "total_addresses": 66,
+    "unique_implementations": 41,
+    "total_deployments": 66,
     "audited_contracts": 0,
-    "unaudited_contracts": 25,
+    "unaudited_contracts": 26,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 25,
+    "contracts_verified_unaudited": 26,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 15,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2228699.73578,
+    "dl_tvl_usd": 2184081.00428,
     "tvl_usd": 1554255.1841559878,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -44,7 +44,8 @@
     "asd_usd": 1554255.1841559878,
     "website_url": "https://templar.finance/",
     "chains": [
-      "bsc"
+      "bsc",
+      "moonriver"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
@@ -63,7 +64,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 40,
+    "unique_implementations": 41,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -435,6 +436,37 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0xea724dea000b5e5206d28f4bc2dad5f2fa1fe788",
+      "name": "GnosisSafeL2",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
+      "impl_name": "GnosisSafeL2",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xea724dea000b5e5206d28f4bc2dad5f2fa1fe788",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0x1e1ed3f2cb818ed165f2018d1c776b4e69026c61",
       "name": "ManagerFund",
       "role": "governance",
@@ -649,6 +681,15 @@
         {
           "chain_id": 56,
           "chain_name": "bsc",
+          "address": "0xa1f61ca61fe8655d2a204b518f6de964145a9324",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
           "address": "0xa1f61ca61fe8655d2a204b518f6de964145a9324",
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1009,6 +1050,15 @@
         {
           "chain_id": 56,
           "chain_name": "bsc",
+          "address": "0xd01e8d805bb310f06411e70fd50eb58cae2b4c27",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
           "address": "0xd01e8d805bb310f06411e70fd50eb58cae2b4c27",
           "source_verified": true,
           "verified_by_bytecode": false,
@@ -1777,7 +1827,7 @@
   "origin_summary": {
     "native": 32,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 1,
     "needs_review": 8
   },
   "scope_matching_notes": {

@@ -7,11 +7,11 @@
 - Project: Templar DAO (`templar-dao`)
 - Website: [https://templar.finance/](https://templar.finance/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T03:28:33.707Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-ce25
-- Chains: bsc
-- Contract surface: 40 unique implementations (63 raw deployments)
-- DeFi Llama TVL: $2,228,699.74
+- Generated: 2026-06-14T09:07:41.155Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
+- Chains: bsc, moonriver
+- Contract surface: 41 unique implementations (66 raw deployments)
+- DeFi Llama TVL: $2,184,081.00
 - On-chain TVL (included contracts): $1,554,255.18
 - TVL by chain: Bsc $1,554,255.18
 
@@ -25,12 +25,12 @@ The TemplarToken is the central asset, while Staking and MasterChef contracts di
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/25 (0.0%)
-- Verified + Unaudited implementations: 25
+- Verified implementations audited: 0/26 (0.0%)
+- Verified + Unaudited implementations: 26
 - Verified by bytecode match: 0
 - Unverified implementations: 15
-- Unique implementations: 40
-- Raw deployments: 63
+- Unique implementations: 41
+- Raw deployments: 66
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $1,554,255.18
@@ -49,7 +49,7 @@ The TemplarToken is the central asset, while Staking and MasterChef contracts di
 
 - None
 
-### ⚠️ Verified + Unaudited (25)
+### ⚠️ Verified + Unaudited (26)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -62,12 +62,13 @@ The TemplarToken is the central asset, while Staking and MasterChef contracts di
 | BridgeReceiver | operational_periphery | bsc | [`0x3df667...0a967b`](./contracts/bsc-56/0x3df6678e78ad7b5fb2e307dc8033dff2b10a967b/) | ⚠️ Unaudited |
 | DAOsFund | unknown | bsc | [`0xfd67f4...e60a2d`](./contracts/bsc-56/0xfd67f44f1814e178ee963d3926e21e85dbe60a2d/) | ⚠️ Unaudited |
 | Distributor | operational_periphery | bsc | [`0x377896...891c13`](./contracts/bsc-56/0x377896d053a2b17cabcb9d7b1afdada5af891c13/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | bsc | [`0xea724d...1fe788`](./contracts/bsc-56/0xea724dea000b5e5206d28f4bc2dad5f2fa1fe788/) | ⚠️ Unaudited |
 | ManagerFund | governance | bsc | 4 deployments: bsc [`0x1e1ed3...026c61`](./contracts/bsc-56/0x1e1ed3f2cb818ed165f2018d1c776b4e69026c61/); bsc `0x6ca5c8...5a80ba`; bsc `0x8049ff...94b6fa`; bsc `0xc06cd9...a0bbe2` | ⚠️ Unaudited |
 | MasterChef | unknown | bsc | 2 deployments: bsc [`0x4832b9...d88b20`](./contracts/bsc-56/0x4832b9911114af706d529251979894405fd88b20/); bsc `0xffc7b9...2d0eb5` | ⚠️ Unaudited |
 | PoolFund | core_logic | bsc | 2 deployments: bsc [`0x77316b...0e30ae`](./contracts/bsc-56/0x77316b0dacc23cce10f1fcfce388ac81870e30ae/); bsc `0xa1dcc9...14cb45` | ⚠️ Unaudited |
 | RedeemHelper | periphery | bsc | [`0x38b306...2a075e`](./contracts/bsc-56/0x38b306cdb3d35e03cff6bc59da96b1212d2a075e/) | ⚠️ Unaudited |
 | ReserveFund | unknown | bsc | [`0xebe9da...7c9f93`](./contracts/bsc-56/0xebe9da74d7d5dc5203776264e7610ae76d7c9f93/) | ⚠️ Unaudited |
-| Staking | unknown | bsc | [`0xa1f61c...5a9324`](./contracts/bsc-56/0xa1f61ca61fe8655d2a204b518f6de964145a9324/) | ⚠️ Unaudited |
+| Staking | unknown | bsc | 2 deployments: bsc [`0xa1f61c...5a9324`](./contracts/bsc-56/0xa1f61ca61fe8655d2a204b518f6de964145a9324/); moonriver [`0xa1f61c...5a9324`](./contracts/moonriver-1285/0xa1f61ca61fe8655d2a204b518f6de964145a9324/) | ⚠️ Unaudited |
 | StakingHelper | periphery | bsc | [`0x8dd1ff...feea87`](./contracts/bsc-56/0x8dd1ff96c1b2766c4479c802687b44c5e8feea87/) | ⚠️ Unaudited |
 | StakingWarmup | unknown | bsc | [`0xcbffde...d88105`](./contracts/bsc-56/0xcbffdeb456aa6b35ac345dbe14776c1d99d88105/) | ⚠️ Unaudited |
 | SwordToken | token | bsc | [`0x8c9827...2334b9`](./contracts/bsc-56/0x8c9827cd430d945ae5a5c3cfdc522f8d342334b9/) | ⚠️ Unaudited |
@@ -76,7 +77,7 @@ The TemplarToken is the central asset, while Staking and MasterChef contracts di
 | TemplarRouter | adapter | bsc | 5 deployments: bsc [`0x122668...57db5e`](./contracts/bsc-56/0x12266820147fcca397f3607a814df6982557db5e/); bsc `0x8d1ae2...106c40`; bsc `0x9ce6ee...a255d8`; bsc `0xc0f143...c6385c`; bsc `0xfce936...104754` | ⚠️ Unaudited |
 | TemplarRouterMin | adapter | bsc | [`0x26cb3f...87fa99`](./contracts/bsc-56/0x26cb3f08133be04bf502cd4bf95536c43087fa99/) | ⚠️ Unaudited |
 | Timelock | governance | bsc | [`0x6056d9...e14b71`](./contracts/bsc-56/0x6056d9271d4784ed8a33bd6adc10f372c0e14b71/) | ⚠️ Unaudited |
-| Treasury | operational_periphery | bsc | 5 deployments: bsc [`0x1cc499...e39752`](./contracts/bsc-56/0x1cc4994bc2bbc6e5ada11c7b90005e57eee39752/); bsc `0x49f368...e248dd`; bsc `0x650e26...6d118a`; bsc `0xca5eea...d463e8`; bsc `0xd01e8d...2b4c27` | ⚠️ Unaudited |
+| Treasury | operational_periphery | bsc | 6 deployments: bsc [`0x1cc499...e39752`](./contracts/bsc-56/0x1cc4994bc2bbc6e5ada11c7b90005e57eee39752/); bsc `0x49f368...e248dd`; bsc `0x650e26...6d118a`; bsc `0xca5eea...d463e8`; bsc `0xd01e8d...2b4c27`; moonriver `0xd01e8d...2b4c27` | ⚠️ Unaudited |
 | WrapSword | unknown | bsc | [`0x66972b...36dabb`](./contracts/bsc-56/0x66972b14e525374dce713ce14c8d080f3036dabb/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -156,7 +157,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 32 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 8 |
 
 ## Scope Matching Notes

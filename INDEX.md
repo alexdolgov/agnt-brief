@@ -228,7 +228,7 @@
 | [cana-holdings-california-carbon-credits](./cana-holdings-california-carbon-credits/) | $886.3K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [canopy](./canopy/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
 | [canto-lending](./canto-lending/) | $3.0M | 0.0% | ? | declining | 4 | 84 | 2026-06-14 |
-| [capx-ai](./capx-ai/) | $2.1M | 0.0% | ? | active | 1 | 1 | 2026-06-10 |
+| [capx-ai](./capx-ai/) | $1.9M | 0.0% | $1.9M | active | 4 | 2 | 2026-06-14 |
 | [carbon-defi](./carbon-defi/) | $5.1M | 30.9% | ? | active | 4 | 158 | 2026-06-10 |
 | [carina](./carina/) | ? | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [carrot](./carrot/) | $288.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -246,7 +246,7 @@
 | [chainge-finance](./chainge-finance/) | $12.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-10 |
 | [chaingpt](./chaingpt/) | $3.8M | 0.0% | ? | active | 0 | 94 | 2026-06-14 |
 | [champion-finance](./champion-finance/) | $23.9 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [charm-finance](./charm-finance/) | $14.2K | 50.0% | $0.0 | declining | 6 | 10 | 2026-06-10 |
+| [charm-finance](./charm-finance/) | $14.2K | 20.0% | $0.0 | declining | 6 | 20 | 2026-06-14 |
 | [chat3](./chat3/) | $6.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [chateau](./chateau/) | $19.1K | 33.3% | $19.1K | active | 1 | 5 | 2026-06-10 |
 | [chedda-finance](./chedda-finance/) | $7.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -419,13 +419,13 @@
 | [fiamma](./fiamma/) | $1.2M | 16.7% | ? | active | 3 | 33 | 2026-06-13 |
 | [filfi](./filfi/) | $121.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [firebird](./firebird/) | $17.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [firebot](./firebot/) | $3.7M | 4.8% | $3.7M | unknown | 2 | 29 | 2026-06-10 |
+| [firebot](./firebot/) | $3.7M | 4.0% | $3.7M | unknown | 2 | 33 | 2026-06-14 |
 | [firelight](./firelight/) | $80.3M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
 | [fiva](./fiva/) | $42.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [flamingo](./flamingo/) | $2.2M | 0.0% | ? | unknown | 6 | 0 | 2026-06-10 |
 | [flashstake](./flashstake/) | $36.6K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [flaunch](./flaunch/) | $2.1M | 0.0% | ? | active | 1 | 3 | 2026-06-10 |
-| [flex](./flex/) | $611.7K | 0.0% | ? | active | 3 | 1 | 2026-06-10 |
+| [flex](./flex/) | $2.6M | 33.3% | $1.0M | unknown | 4 | 15 | 2026-06-14 |
 | [flexa](./flexa/) | $1.4M | 100.0% | ? | declining | 2 | 2 | 2026-06-10 |
 | [flipster](./flipster/) | $33.0M | 0.0% | ? | active | 0 | 2 | 2026-06-14 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 16 | 2026-06-13 |
@@ -1221,7 +1221,7 @@
 | [team-finance](./team-finance/) | $5.4K | 0.0% | $5.4K | active | 2 | 66 | 2026-06-12 |
 | [teleswap](./teleswap/) | $587.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [teller](./teller/) | $1.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |
-| [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 40 | 2026-06-11 |
+| [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 41 | 2026-06-14 |
 | [templar-protocol](./templar-protocol/) | $41.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [tender-finance](./tender-finance/) | $1.3M | 0.0% | ? | active | 1 | 1 | 2026-06-11 |
 | [tenderize](./tenderize/) | $332.5M | 2.6% | $332.5M | declining | 6 | 43 | 2026-06-11 |

@@ -4,37 +4,36 @@
 
 - Project: Capx AI (`capx-ai`)
 - Website: [https://capx.ai](https://capx.ai)
-- Lifecycle: active (Tier 0, 19.2% below peak)
-- Generated: 2026-06-10T22:18:30.991Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
+- Lifecycle: active (Tier 0, 17.6% below peak)
+- Generated: 2026-06-14T09:26:54.049Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
 - Chains: bsc
-- Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $2,143,133.58
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
+- Contract surface: 2 unique implementations (2 raw deployments)
+- DeFi Llama TVL: $2,216,946.73
+- On-chain TVL (included contracts): $1,946,022.99
+- TVL by chain: Bsc $1,946,022.99
 
 ## Project Description
 
 Capx AI is an Ethereum Layer 2 / Capx Chain ecosystem for building, tokenizing, owning, and trading AI apps. The listed BSC FactoryBurnMintERC20 contract should be treated as an associated factory/registry contract rather than the complete protocol surface or the TVL-bearing Capx Chain trading infrastructure.
 
+### Architecture
+
+The single product family contains the core factory contract, which serves as the registry and deployer for all AI agent tokens; no additional infrastructure contracts are present.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/2 (0.0%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
-- Audits discovered: 1
+- Unique implementations: 2
+- Raw deployments: 2
+- Audits discovered: 4
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $1,946,022.99
 - Latest audit: 2025-10 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 1 fresh, 1 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -47,10 +46,11 @@ Capx AI is an Ethereum Layer 2 / Capx Chain ecosystem for building, tokenizing, 
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| PancakeV3Pool | core_logic | bsc | [`0x39aae2...390ab7`](./contracts/bsc-56/0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7/) | ⚠️ Unaudited |
 | FactoryBurnMintERC20 | registry | bsc | [`0x71fb17...42ed5f`](./contracts/bsc-56/0x71fb1795b084ff2b65eabf51cad22bbefd42ed5f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -76,6 +76,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [DL audit link](https://www.capx.ai/openzeppelin-audit-report.pdf) | OpenZeppelin | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
+| [Dedaub - December 20, 2024.pdf](https://github.com/Othentic-Labs/core-contracts/blob/main/audits/Dedaub%20-%20December%2020%2C%202024.pdf) | Dedaub | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
+| [Dedaub - September 23, 2024.pdf](https://github.com/Othentic-Labs/core-contracts/blob/main/audits/Dedaub%20-%20September%2023%2C%202024.pdf) | Dedaub | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
+| [Security_Review_Final_Report__Othentic_Rewards_V2.pdf](https://github.com/Othentic-Labs/core-contracts/blob/main/audits/Security_Review_Final_Report__Othentic_Rewards_V2.pdf) | Unknown | Audit | 2025-03 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -90,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 1 |
-| upstream | 0 |
+| upstream | 1 |
 | standard_library | 0 |
 | needs_review | 0 |
 
@@ -98,7 +101,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -106,5 +109,8 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [2880] DL audit link
+- [14480] Dedaub - December 20, 2024.pdf
+- [14481] Dedaub - September 23, 2024.pdf
+- [14482] Security_Review_Final_Report__Othentic_Rewards_V2.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

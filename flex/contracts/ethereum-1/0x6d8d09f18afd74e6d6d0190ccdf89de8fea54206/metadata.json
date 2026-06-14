@@ -1,0 +1,18 @@
+{
+  "address": "0x6d8d09f18afd74e6d6d0190ccdf89de8fea54206",
+  "chain_id": 1,
+  "contract_name": "yvusd_to_usdc_oracle",
+  "compiler_version": "v0.4.3+commit.bff19ea2",
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T09:09:19.778Z"
+}

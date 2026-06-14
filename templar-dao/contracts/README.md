@@ -1,6 +1,6 @@
 # templar-dao — Contract Index
 
-40 unique implementations on bsc · 63 deployments · 0 audited · 25 unaudited · 15 unverified
+41 unique implementations across 2 chains · 66 deployments · 0 audited · 26 unaudited · 15 unverified
 
 ## adapter (2)
 
@@ -15,11 +15,12 @@
 |---|---|---|---|---|
 | [PoolFund (2 deployments)](./bsc-56/0x77316b0dacc23cce10f1fcfce388ac81870e30ae/) | bsc | 2 deployments: bsc [`0x77316b...0e30ae`](./bsc-56/0x77316b0dacc23cce10f1fcfce388ac81870e30ae/); bsc `0xa1dcc9...14cb45` | ⚠️ Unaudited | Verified |
 
-## governance (3)
+## governance (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BondManager](./bsc-56/0xfb0c2645a7bc2c466a3834e6170437d239fcff58/) | bsc | [`0xfb0c26...fcff58`](./bsc-56/0xfb0c2645a7bc2c466a3834e6170437d239fcff58/) | ⚠️ Unaudited | Verified |
+| [GnosisSafeL2](./bsc-56/0xea724dea000b5e5206d28f4bc2dad5f2fa1fe788/) | bsc | [`0xea724d...1fe788`](./bsc-56/0xea724dea000b5e5206d28f4bc2dad5f2fa1fe788/) | ⚠️ Unaudited | Verified |
 | [ManagerFund (4 deployments)](./bsc-56/0x1e1ed3f2cb818ed165f2018d1c776b4e69026c61/) | bsc | 4 deployments: bsc [`0x1e1ed3...026c61`](./bsc-56/0x1e1ed3f2cb818ed165f2018d1c776b4e69026c61/); bsc `0x6ca5c8...5a80ba`; bsc `0x8049ff...94b6fa`; bsc `0xc06cd9...a0bbe2` | ⚠️ Unaudited | Verified |
 | [Timelock](./bsc-56/0x6056d9271d4784ed8a33bd6adc10f372c0e14b71/) | bsc | [`0x6056d9...e14b71`](./bsc-56/0x6056d9271d4784ed8a33bd6adc10f372c0e14b71/) | ⚠️ Unaudited | Verified |
 
@@ -31,7 +32,7 @@
 | [BridgeReceiver](./bsc-56/0x3df6678e78ad7b5fb2e307dc8033dff2b10a967b/) | bsc | [`0x3df667...0a967b`](./bsc-56/0x3df6678e78ad7b5fb2e307dc8033dff2b10a967b/) | ⚠️ Unaudited | Verified |
 | [Distributor](./bsc-56/0x377896d053a2b17cabcb9d7b1afdada5af891c13/) | bsc | [`0x377896...891c13`](./bsc-56/0x377896d053a2b17cabcb9d7b1afdada5af891c13/) | ⚠️ Unaudited | Verified |
 | [TemplarBridge (2 deployments)](./bsc-56/0x26bcadd5f0082e59194e271252568c1a56b82f70/) | bsc | 2 deployments: bsc [`0x26bcad...b82f70`](./bsc-56/0x26bcadd5f0082e59194e271252568c1a56b82f70/); bsc `0xd1e549...2d156b` | ⚠️ Unaudited | Verified |
-| [Treasury (5 deployments)](./bsc-56/0x1cc4994bc2bbc6e5ada11c7b90005e57eee39752/) | bsc | 5 deployments: bsc [`0x1cc499...e39752`](./bsc-56/0x1cc4994bc2bbc6e5ada11c7b90005e57eee39752/); bsc `0x49f368...e248dd`; bsc `0x650e26...6d118a`; bsc `0xca5eea...d463e8`; bsc `0xd01e8d...2b4c27` | ⚠️ Unaudited | Verified |
+| [Treasury (6 deployments)](./bsc-56/0x1cc4994bc2bbc6e5ada11c7b90005e57eee39752/) | bsc | 6 deployments: bsc [`0x1cc499...e39752`](./bsc-56/0x1cc4994bc2bbc6e5ada11c7b90005e57eee39752/); bsc `0x49f368...e248dd`; bsc `0x650e26...6d118a`; bsc `0xca5eea...d463e8`; bsc `0xd01e8d...2b4c27`; moonriver `0xd01e8d...2b4c27` | ⚠️ Unaudited | Verified |
 
 ## periphery (2)
 
@@ -57,7 +58,7 @@
 | [DAOsFund](./bsc-56/0xfd67f44f1814e178ee963d3926e21e85dbe60a2d/) | bsc | [`0xfd67f4...e60a2d`](./bsc-56/0xfd67f44f1814e178ee963d3926e21e85dbe60a2d/) | ⚠️ Unaudited | Verified |
 | [MasterChef (2 deployments)](./bsc-56/0x4832b9911114af706d529251979894405fd88b20/) | bsc | 2 deployments: bsc [`0x4832b9...d88b20`](./bsc-56/0x4832b9911114af706d529251979894405fd88b20/); bsc `0xffc7b9...2d0eb5` | ⚠️ Unaudited | Verified |
 | [ReserveFund](./bsc-56/0xebe9da74d7d5dc5203776264e7610ae76d7c9f93/) | bsc | [`0xebe9da...7c9f93`](./bsc-56/0xebe9da74d7d5dc5203776264e7610ae76d7c9f93/) | ⚠️ Unaudited | Verified |
-| [Staking](./bsc-56/0xa1f61ca61fe8655d2a204b518f6de964145a9324/) | bsc | [`0xa1f61c...5a9324`](./bsc-56/0xa1f61ca61fe8655d2a204b518f6de964145a9324/) | ⚠️ Unaudited | Verified |
+| [Staking (2 deployments)](./bsc-56/0xa1f61ca61fe8655d2a204b518f6de964145a9324/) | bsc | 2 deployments: bsc [`0xa1f61c...5a9324`](./bsc-56/0xa1f61ca61fe8655d2a204b518f6de964145a9324/); moonriver `0xa1f61c...5a9324` | ⚠️ Unaudited | Verified |
 | [StakingWarmup](./bsc-56/0xcbffdeb456aa6b35ac345dbe14776c1d99d88105/) | bsc | [`0xcbffde...d88105`](./bsc-56/0xcbffdeb456aa6b35ac345dbe14776c1d99d88105/) | ⚠️ Unaudited | Verified |
 | [TemplarMoney](./bsc-56/0x194d1d62d8d798fcc81a6435e6d13adf8bcc2966/) | bsc | [`0x194d1d...cc2966`](./bsc-56/0x194d1d62d8d798fcc81a6435e6d13adf8bcc2966/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | bsc | `0x12d0ee...48ff22` | ❓ Unverified | Unverified |

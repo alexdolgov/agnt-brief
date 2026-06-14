@@ -5,7 +5,7 @@
 | Chain | polygon (137) |
 | Address | `0x6dcfd69c12e866dfbb857646b77f842c7b25a5fc` |
 | Role | operational_periphery |
-| Origin | standard_library |
+| Origin | native |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (polygon [`0x6dcfd69c12e866dfbb857646b77f842c7b25a5fc`](../0x6dcfd69c12e866dfbb857646b77f842c7b25a5fc/)) |

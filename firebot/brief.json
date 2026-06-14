@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "firebot",
-  "generated_at": "2026-06-10T23:22:06.745Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
+  "generated_at": "2026-06-14T09:09:09.071Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-403f",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "firebot",
@@ -16,32 +16,32 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 1111,
+    "days_since_peak": 1115,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 29,
-    "total_addresses": 65,
-    "unique_implementations": 29,
-    "total_deployments": 65,
+    "total_contracts": 33,
+    "total_addresses": 73,
+    "unique_implementations": 33,
+    "total_deployments": 73,
     "audited_contracts": 1,
-    "unaudited_contracts": 20,
+    "unaudited_contracts": 24,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 20,
+    "contracts_verified_unaudited": 24,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 8,
-    "coverage_pct": 4.8,
+    "coverage_pct": 4,
     "total_audits": 2,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 2264926.05172,
-    "tvl_usd": 3673167.120444524,
+    "dl_tvl_usd": 2419843.19642,
+    "tvl_usd": 3690021.6433867794,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "polygon": 3673167.12
+      "polygon": 3690021.64
     },
-    "asd_usd": 3673167.120444524,
+    "asd_usd": 3690021.6433867794,
     "website_url": "https://firebot.gg",
     "chains": [
       "polygon"
@@ -63,7 +63,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 29,
+    "unique_implementations": 33,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -93,6 +93,179 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 3673167.120444524,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x6c14fa1b23a245efb97cbad357ca3948052d56df",
+      "name": "UniswapV3Pool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": 8343.687392469437,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV3Pool",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x6c14fa1b23a245efb97cbad357ca3948052d56df",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 0.010989948607807533,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x9da4dee26ab002521f0cb7ac73dcb91c6e1f2f1c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 5215.421241086039,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xa6b96e60648e11055e82f1b7b226a2aa453a29bb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3128.2551614347894,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x17b509b2b65b0d07b9e46bfc2ffe6c9c09a8e821",
+      "name": "AlgebraPool",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 8026.985183370905,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AlgebraPool",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x17b509b2b65b0d07b9e46bfc2ffe6c9c09a8e821",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 8026.985183370905,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xf378f8e9603c2ec54b21f0a876ef847df976082e",
+      "name": "WorldCupPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 483.8503664149731,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WorldCupPool",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xf378f8e9603c2ec54b21f0a876ef847df976082e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 483.8503664149731,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xa2b205f8c0f0e30b3f73b7716a718c53cb8e5cc3",
+      "name": "FireVaultEP",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 6.179751768378016e-17,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FireVaultEP",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xa2b205f8c0f0e30b3f73b7716a718c53cb8e5cc3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 6.179751768378016e-17,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xaeb318360f27748acb200ce616e389a6c9409a07",
+      "name": "CometWithExtendedAssetList",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7512ae36102330bdd30229b15c18f79b91523d42",
+      "impl_name": "CometWithExtendedAssetList",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xaeb318360f27748acb200ce616e389a6c9409a07",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -290,68 +463,6 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x3e3c7417555b7c77db6efd7697a9dc19e13c89da",
-      "name": "FireBotItems",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "FireBotItems",
-      "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x3e3c7417555b7c77db6efd7697a9dc19e13c89da",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x2e14520c30370d114612552616964a3bced6176e",
-      "name": "FireBotItemsV2",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "FireBotItemsV2",
-      "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x2e14520c30370d114612552616964a3bced6176e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
       "address": "0xc99567b0b5649120fe882554cacfcaa68bc1d334",
       "name": "firebotMarket",
       "role": "unknown",
@@ -392,21 +503,21 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0xe9eee7294dc7c3bb64fd57a514e755022a333295",
-      "name": "FireBots",
-      "role": "unknown",
+      "address": "0xe20e046b230a5530438d32abfbcc3e61d7670234",
+      "name": "FirePool",
+      "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": "FireBots",
+      "impl_name": "FirePool",
       "deployments": [
         {
           "chain_id": 137,
           "chain_name": "polygon",
-          "address": "0xe9eee7294dc7c3bb64fd57a514e755022a333295",
+          "address": "0xe20e046b230a5530438d32abfbcc3e61d7670234",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -418,7 +529,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null
     },
     {
       "chain_id": 137,
@@ -718,6 +829,37 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
+      "address": "0x3c56f017d9ce85350df8f4b495033aaa15563a99",
+      "name": "FUSDv2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FUSDv2",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x3c56f017d9ce85350df8f4b495033aaa15563a99",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
       "address": "0xad79b4a1905de5e505a7c8b34a20d7456676dcf0",
       "name": "item_selector",
       "role": "unknown",
@@ -814,8 +956,8 @@
       "address": "0x6dcfd69c12e866dfbb857646b77f842c7b25a5fc",
       "name": "Migrations",
       "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1007,22 +1149,31 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x41d9de53ebf26f766229e42aa02904eb2495e397",
+      "address": "0x1000bb854fbc6d98dc9d859d6cb47e22a31eb8f9",
       "name": "UniswapV2Pair",
       "role": "unknown",
       "origin_kind": "upstream",
       "origin_provider": "Uniswap",
-      "product_line": "FireBot",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "UniswapV2Pair",
       "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x1000bb854fbc6d98dc9d859d6cb47e22a31eb8f9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 137,
           "chain_name": "polygon",
@@ -1036,6 +1187,15 @@
           "chain_id": 137,
           "chain_name": "polygon",
           "address": "0xcffbfa978ac3fb10e829ca6b763c307daafe8a77",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xe7b7cf919e2798defc1f08133312cd151e5a5bed",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1078,7 +1238,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 137,
@@ -1109,7 +1269,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 137,
@@ -1140,7 +1300,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 137,
@@ -1171,7 +1331,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 137,
@@ -1202,7 +1362,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 137,
@@ -1233,7 +1393,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 137,
@@ -1264,7 +1424,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 137,
@@ -1295,7 +1455,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     }
   ],
   "audits": [
@@ -1350,7 +1510,7 @@
       "auditor": "RedTiger",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 4.8,
+      "coverage_pct": 4,
       "latest_audit": "2023-10"
     }
   ],
@@ -1364,6 +1524,26 @@
       "origin_kind": "native",
       "tvl_usd": 3673167.120444524,
       "risk_note": "Verified native implementation with $3,673,167.12 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xf378f8e9603c2ec54b21f0a876ef847df976082e",
+      "name": "WorldCupPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 483.8503664149731,
+      "risk_note": "Verified native implementation with $483.85 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xa2b205f8c0f0e30b3f73b7716a718c53cb8e5cc3",
+      "name": "FireVaultEP",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 6.179751768378016e-17,
+      "risk_note": "Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 137,
@@ -1408,26 +1588,6 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x3e3c7417555b7c77db6efd7697a9dc19e13c89da",
-      "name": "FireBotItems",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x2e14520c30370d114612552616964a3bced6176e",
-      "name": "FireBotItemsV2",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
       "address": "0xc99567b0b5649120fe882554cacfcaa68bc1d334",
       "name": "firebotMarket",
       "role": "unknown",
@@ -1438,9 +1598,9 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0xe9eee7294dc7c3bb64fd57a514e755022a333295",
-      "name": "FireBots",
-      "role": "unknown",
+      "address": "0xe20e046b230a5530438d32abfbcc3e61d7670234",
+      "name": "FirePool",
+      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1488,6 +1648,16 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
+      "address": "0x3c56f017d9ce85350df8f4b495033aaa15563a99",
+      "name": "FUSDv2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
       "address": "0xad79b4a1905de5e505a7c8b34a20d7456676dcf0",
       "name": "item_selector",
       "role": "unknown",
@@ -1518,6 +1688,16 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
+      "address": "0x6dcfd69c12e866dfbb857646b77f842c7b25a5fc",
+      "name": "Migrations",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
       "address": "0x055fa35955bd0d895d719d8f2a164685fbff8bb5",
       "name": "RefToken",
       "role": "token",
@@ -1537,10 +1717,10 @@
     }
   ],
   "origin_summary": {
-    "native": 27,
-    "upstream": 1,
+    "native": 29,
+    "upstream": 2,
     "standard_library": 1,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {

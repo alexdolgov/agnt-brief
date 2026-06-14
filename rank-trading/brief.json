@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "rank-trading",
-  "generated_at": "2026-06-11T02:10:35.880Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-14T09:42:48.736Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-403f",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "rank-trading",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 69.07421531983695
   },
   "summary": {
-    "total_contracts": 13,
-    "total_addresses": 31,
-    "unique_implementations": 13,
-    "total_deployments": 31,
+    "total_contracts": 17,
+    "total_addresses": 35,
+    "unique_implementations": 17,
+    "total_deployments": 35,
     "audited_contracts": 3,
-    "unaudited_contracts": 7,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 7,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 3,
-    "coverage_pct": 30,
+    "contracts_unverified": 6,
+    "coverage_pct": 27.3,
     "total_audits": 2,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 2326890.56464,
-    "tvl_usd": 1188950,
+    "dl_tvl_usd": 1951466.63573,
+    "tvl_usd": 1189293.3900306234,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "bsc": 1188950
+      "bsc": 1189293.39
     },
-    "asd_usd": null,
+    "asd_usd": 343.39003062335445,
     "website_url": "https://rank.trading/",
     "chains": [
       "bsc"
@@ -63,7 +63,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 13,
+    "unique_implementations": 17,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -108,6 +108,37 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0xd6a07b8065f9e8386a9a5bba6a754a10a9cd1074",
+      "name": "StakingPool",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 343.39003062335445,
+      "is_proxy": true,
+      "impl_address": "0x5fe95716c964ed10a2a72a666807a22f4781afc3",
+      "impl_name": "StakingPool",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd6a07b8065f9e8386a9a5bba6a754a10a9cd1074",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 343.39003062335445,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0x7d322eb2f7149de1613f4310a73254abd08a9cc5",
       "name": "Erc20Simple",
       "role": "token",
@@ -142,8 +173,8 @@
       "address": "0x15022f35ce0837b3b524ec699ec8258a8fd23a54",
       "name": "ExposedV3Math",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "Uniswap",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -525,8 +556,8 @@
       "address": "0xfe88dab083964c56429baa01f37ec2265abf1557",
       "name": "UNCX_LiquidityLocker_UniV3",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "uncx-network",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": "Rank Trading",
       "tvl_usd": null,
       "is_proxy": false,
@@ -584,6 +615,37 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0x582c5ae03f55a3eb5e79f8d3e2cf9712c331a3b0",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x582c5ae03f55a3eb5e79f8d3e2cf9712c331a3b0",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0xcb8b00d4018ad6031e28a44bf74616014bfb62ec",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -615,10 +677,72 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0xd041c5d24491dff050f40fab5d485530ebe441c2",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd041c5d24491dff050f40fab5d485530ebe441c2",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xd2b1c19dc746331829918fe3517a40935ebb53f0",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd2b1c19dc746331829918fe3517a40935ebb53f0",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0xe0c497ea0264f939d1d795a7a521faeca1200ec3",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -697,7 +821,7 @@
       "auditor": "Hashlock",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 30,
+      "coverage_pct": 27.3,
       "latest_audit": "2025-01"
     }
   ],
@@ -708,16 +832,6 @@
       "address": "0x7d322eb2f7149de1613f4310a73254abd08a9cc5",
       "name": "Erc20Simple",
       "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x15022f35ce0837b3b524ec699ec8258a8fd23a54",
-      "name": "ExposedV3Math",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -764,10 +878,10 @@
     }
   ],
   "origin_summary": {
-    "native": 12,
-    "upstream": 1,
-    "standard_library": 0,
-    "needs_review": 0
+    "native": 10,
+    "upstream": 0,
+    "standard_library": 2,
+    "needs_review": 5
   },
   "scope_matching_notes": {
     "match_method_counts": {

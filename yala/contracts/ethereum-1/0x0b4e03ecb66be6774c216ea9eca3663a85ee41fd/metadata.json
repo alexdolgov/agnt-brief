@@ -1,0 +1,17 @@
+{
+  "address": "0x0b4e03ecb66be6774c216ea9eca3663a85ee41fd",
+  "chain_id": 1,
+  "contract_name": "PSM",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "000000000000000000000000d5eeaf2eeb9e1c7b88acfad3f41401925fc20c8b000000000000000000000000ca61a7be20d361b21c0ad7fa61e241c56202e66c000000000000000000000000e868084cf08f3c3db11f4b73a95473762d9463f7",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T09:46:09.807Z"
+}

@@ -1,6 +1,6 @@
 # yala — Contract Index
 
-30 unique implementations on ethereum · 30 deployments · 0 audited · 11 unaudited · 19 unverified
+30 unique implementations on ethereum · 31 deployments · 0 audited · 11 unaudited · 19 unverified
 
 ## core_logic (3)
 
@@ -40,7 +40,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AssetWrapper](./ethereum-1/0xd5d027108264000f3670a623dceb8d14ecfc21b9/) | ethereum | [`0xd5d027...fc21b9`](./ethereum-1/0xd5d027108264000f3670a623dceb8d14ecfc21b9/) | ⚠️ Unaudited | Verified |
-| [PSM](./ethereum-1/0x4171e25e35fa13e98fb970d919b055c1866e6a12/) | ethereum | [`0x4171e2...6e6a12`](./ethereum-1/0x4171e25e35fa13e98fb970d919b055c1866e6a12/) | ⚠️ Unaudited | Verified |
+| [PSM (2 deployments)](./ethereum-1/0x0b4e03ecb66be6774c216ea9eca3663a85ee41fd/) | ethereum | 2 deployments: ethereum [`0x0b4e03...ee41fd`](./ethereum-1/0x0b4e03ecb66be6774c216ea9eca3663a85ee41fd/); ethereum `0x4171e2...6e6a12` | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x0c229b...995829` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x0d2ebf...e95978` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x0eedc0...48fb2e` | ❓ Unverified | Unverified |

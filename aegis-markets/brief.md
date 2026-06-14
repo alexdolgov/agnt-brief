@@ -5,13 +5,13 @@
 - Project: Aegis Markets (`aegis-markets`)
 - Website: [https://aegis.markets/](https://aegis.markets/)
 - Lifecycle: active (Tier 0, 70.6% below peak)
-- Generated: 2026-06-10T20:58:56.549Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-14T09:43:12.368Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
 - Chains: base, unichain
-- Contract surface: 15 unique implementations (33 raw deployments)
-- DeFi Llama TVL: $2,328,928.83
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- Contract surface: 16 unique implementations (36 raw deployments)
+- DeFi Llama TVL: $1,836,586.77
+- On-chain TVL (included contracts): $24,211,130.18
+- TVL by chain: Base $21,149,636.56 | Unichain $3,061,493.62
 
 ## Project Description
 
@@ -23,15 +23,15 @@ The Aegis Markets family relies on the Deployed Contracts family for governance 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/12 (0.0%)
-- Verified + Unaudited implementations: 12
+- Verified implementations audited: 0/13 (0.0%)
+- Verified + Unaudited implementations: 13
 - Verified by bytecode match: 0
 - Unverified implementations: 3
-- Unique implementations: 15
-- Raw deployments: 33
+- Unique implementations: 16
+- Raw deployments: 36
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $24,211,130.18
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,15 +46,16 @@ The Aegis Markets family relies on the Deployed Contracts family for governance 
 
 - None
 
-### ⚠️ Verified + Unaudited (12)
+### ⚠️ Verified + Unaudited (13)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| AegisNFT | token | unichain | [`0xdb3a3d...8e718d`](./contracts/unichain-130/0xdb3a3d5a32d78b19da8417aeb1cda5e2778e718d/) | ⚠️ Unaudited |
+| PoolManager | core_logic | unichain | 2 deployments: unichain [`0x1f9840...000004`](./contracts/unichain-130/0x1f98400000000000000000000000000000000004/); base `0x498581...652b2b` | ⚠️ Unaudited |
 | DynamicFeeManager | governance | unichain | 4 deployments: unichain [`0x16b40c...94d958`](./contracts/unichain-130/0x16b40ca9b9366aba4cfdb3d6827491b66994d958/); unichain `0x4a6770...a9429c`; unichain `0xd7deab...bb8d98`; unichain `0xe67686...18a028` | ⚠️ Unaudited |
 | FullRangeLiquidityManager | governance | unichain | 3 deployments: unichain [`0x6da0c0...0fe365`](./contracts/unichain-130/0x6da0c0a6153f3c161d7fb260b5f040d5530fe365/); unichain `0xa7b3e2...4352a3`; unichain `0xa7ce35...458a2c` | ⚠️ Unaudited |
 | PoolInitAndBindRouter | adapter | unichain | [`0xb3b7bc...fea779`](./contracts/unichain-130/0xb3b7bc07597d20535e3850d34ec4363f8bfea779/) | ⚠️ Unaudited |
 | PoolPolicyManager | core_logic | unichain | 4 deployments: unichain [`0x87cb5a...7e3e06`](./contracts/unichain-130/0x87cb5af674b546ec73e462221e8cb5e5ff7e3e06/); unichain `0xa16eb8...7d3006`; unichain `0xaaf29f...97cdda`; unichain `0xe072d3...ec0ee7` | ⚠️ Unaudited |
+| PositionManager | governance | unichain | 2 deployments: unichain [`0x4529a0...2617bf`](./contracts/unichain-130/0x4529a01c7a0410167c5740c487a8de60232617bf/); base `0x7c5f5a...429bdc` | ⚠️ Unaudited |
 | PreCcaBonusClaim | unknown | unichain | 2 deployments: unichain [`0x37fcae...5f9332`](./contracts/unichain-130/0x37fcaead6f62bdead5cb2c17f2528fb4965f9332/); unichain `0xbead51...3c670d` | ⚠️ Unaudited |
 | RewardCenter | unknown | unichain | [`0xee8e37...62c0c3`](./contracts/unichain-130/0xee8e373c05a6876d43a8a054a47b16345662c0c3/) | ⚠️ Unaudited |
 | SponsorAccount | core_logic | unichain | [`0x8f9fa5...f02c86`](./contracts/unichain-130/0x8f9fa5ef0697276c56f51ec3b20da18b5cf02c86/) | ⚠️ Unaudited |
@@ -98,26 +99,27 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| unichain | [`0xdb3a3d...8e718d`](./contracts/unichain-130/0xdb3a3d5a32d78b19da8417aeb1cda5e2778e718d/) | AegisNFT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x16b40c...94d958`](./contracts/unichain-130/0x16b40ca9b9366aba4cfdb3d6827491b66994d958/) | DynamicFeeManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x6da0c0...0fe365`](./contracts/unichain-130/0x6da0c0a6153f3c161d7fb260b5f040d5530fe365/) | FullRangeLiquidityManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0xb3b7bc...fea779`](./contracts/unichain-130/0xb3b7bc07597d20535e3850d34ec4363f8bfea779/) | PoolInitAndBindRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x87cb5a...7e3e06`](./contracts/unichain-130/0x87cb5af674b546ec73e462221e8cb5e5ff7e3e06/) | PoolPolicyManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | [`0x4529a0...2617bf`](./contracts/unichain-130/0x4529a01c7a0410167c5740c487a8de60232617bf/) | PositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x37fcae...5f9332`](./contracts/unichain-130/0x37fcaead6f62bdead5cb2c17f2528fb4965f9332/) | PreCcaBonusClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0xee8e37...62c0c3`](./contracts/unichain-130/0xee8e373c05a6876d43a8a054a47b16345662c0c3/) | RewardCenter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x8f9fa5...f02c86`](./contracts/unichain-130/0x8f9fa5ef0697276c56f51ec3b20da18b5cf02c86/) | SponsorAccount | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x94e431...30b310`](./contracts/unichain-130/0x94e43144067e93f778d29406110b2a6a8730b310/) | SponsorCenter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x88c9ff...1cdacc`](./contracts/unichain-130/0x88c9ff9fc0b22cca42265d3f1d1c2c39e41cdacc/) | Spot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | [`0x5a09c0...d9d13f`](./contracts/unichain-130/0x5a09c037eab964ce925ee88ab1facf8af6d9d13f/) | Timelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x22e086...8facb5`](./contracts/unichain-130/0x22e086c085fbda3214db238f8a930d22228facb5/) | TruncGeoOracleMulti | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 14 |
-| upstream | 0 |
-| standard_library | 1 |
-| needs_review | 0 |
+| native | 12 |
+| upstream | 1 |
+| standard_library | 0 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

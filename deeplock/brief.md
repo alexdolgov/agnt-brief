@@ -4,11 +4,11 @@
 
 - Project: DeepLock (`deeplock`)
 - Lifecycle: active (Tier 0, 86.8% below peak)
-- Generated: 2026-06-10T22:43:37.585Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Generated: 2026-06-14T09:43:12.311Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
 - Chains: bsc
 - Contract surface: 70 unique implementations (137 raw deployments)
-- DeFi Llama TVL: $2,143,342.40
+- DeFi Llama TVL: $1,956,609.93
 - On-chain TVL (included contracts): $56,173,110.00
 - TVL by chain: Bsc $56,173,110.00
 
@@ -156,20 +156,17 @@ Verified + unaudited native implementations ranked by TVL:
 | bsc | [`0x10dd7f...94b257`](./contracts/bsc-56/0x10dd7fd1bf3753235068ea757f2018dfef94b257/) | DeepLockLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x03dab6...941250`](./contracts/bsc-56/0x03dab688d32507b53cc91265fa47760b13941250/) | DeepLockLPMining | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x4095dc...19b276`](./contracts/bsc-56/0x4095dc2c9c1a2d2677b29dc3f5d69b436a19b276/) | DeepLockPrivatePresale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xc853c4...3ee250`](./contracts/bsc-56/0xc853c499c62a251be921e93eb5029926323ee250/) | Master | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xd4c6aa...86dba4`](./contracts/bsc-56/0xd4c6aa84199dfe7becd0697da5a223ca0586dba4/) | Moonpro | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x187d76...9ed916`](./contracts/bsc-56/0x187d765829b5570c964f4b551d26d5745f9ed916/) | RedPill | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xffc85d...0fd511`](./contracts/bsc-56/0xffc85da016e5f307bbcf2e370a11ab5e460fd511/) | SimpleBEP20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x00b2d4...a1f89c`](./contracts/bsc-56/0x00b2d45ad41578617914ac6115b0e2d3b4a1f89c/) | MarketOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x698cfd...da4f30`](./contracts/bsc-56/0x698cfd0f4536e73a78b4db4478c4a166a7da4f30/) | TokenTimelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 36 |
-| upstream | 21 |
+| native | 12 |
+| upstream | 30 |
 | standard_library | 0 |
-| needs_review | 13 |
+| needs_review | 28 |
 
 ## Scope Matching Notes
 

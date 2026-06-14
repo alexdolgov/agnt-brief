@@ -22,7 +22,7 @@
 | [acre](./acre/) | $3.0 | 0.5% | $3.0 | active | 4 | 220 | 2026-06-10 |
 | [across](./across/) | $28.1M | 26.2% | $9.2M | active | 11 | 147 | 2026-06-12 |
 | [acryptos](./acryptos/) | $5.2M | 25.0% | $253.0K | active | 7 | 311 | 2026-06-10 |
-| [aegis-markets](./aegis-markets/) | $2.3M | 0.0% | ? | active | 2 | 15 | 2026-06-10 |
+| [aegis-markets](./aegis-markets/) | $24.2M | 0.0% | $24.2M | active | 2 | 16 | 2026-06-14 |
 | [aegis](./aegis/) | $35.9M | 0.0% | ? | active | 0 | 12 | 2026-06-12 |
 | [aera](./aera/) | $132.6M | 0.0% | ? | unknown | 5 | 0 | 2026-06-13 |
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | active | 0 | 7 | 2026-06-13 |
@@ -312,7 +312,7 @@
 | [decentralized-euro](./decentralized-euro/) | $230.4M | 28.2% | $230.4M | active | 3 | 72 | 2026-06-10 |
 | [decibel](./decibel/) | $41.9M | 0.0% | ? | unknown | 4 | 0 | 2026-06-10 |
 | [deepbook](./deepbook/) | $12.9M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [deeplock](./deeplock/) | $56.2M | 0.0% | $56.2M | active | 0 | 70 | 2026-06-10 |
+| [deeplock](./deeplock/) | $56.2M | 0.0% | $56.2M | active | 0 | 70 | 2026-06-14 |
 | [defi-kingdoms](./defi-kingdoms/) | $7.7M | 0.0% | ? | declining | 1 | 8 | 2026-06-14 |
 | [defi-swap](./defi-swap/) | $870.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [defichain-dex](./defichain-dex/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-06-10 |
@@ -847,7 +847,7 @@
 | [olive-network](./olive-network/) | $66.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [olive](./olive/) | $46.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [olivedao](./olivedao/) | $7.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [omnibtc](./omnibtc/) | $2.2M | 0.0% | ? | active | 0 | 6 | 2026-06-11 |
+| [omnibtc](./omnibtc/) | $1.9M | 0.0% | ? | active | 0 | 18 | 2026-06-14 |
 | [omnipool](./omnipool/) | $324.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [onchaingm](./onchaingm/) | ? | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [oni-exchange](./oni-exchange/) | $1.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -974,7 +974,7 @@
 | [railgun](./railgun/) | $312.5M | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
 | [rain](./rain/) | $26.1M | 0.0% | ? | active | 3 | 29 | 2026-06-12 |
 | [rainbow-bridge](./rainbow-bridge/) | $2.1M | 0.0% | ? | declining | 0 | 2 | 2026-06-11 |
-| [rank-trading](./rank-trading/) | $1.2M | 30.0% | ? | active | 2 | 13 | 2026-06-11 |
+| [rank-trading](./rank-trading/) | $1.2M | 27.3% | $343.4 | active | 2 | 17 | 2026-06-14 |
 | [rari-capital](./rari-capital/) | $321.4M | 0.0% | $321.4M | dead | 1 | 253 | 2026-06-13 |
 | [ratex](./ratex/) | $98.8K | 0.0% | $98.8K | declining | 2 | 168 | 2026-06-13 |
 | [re7-labs](./re7-labs/) | $6.6M | 0.0% | $6.6M | active | 0 | 18 | 2026-06-12 |
@@ -1373,7 +1373,7 @@
 | [xwin-finance](./xwin-finance/) | $1.8M | 0.0% | $1.8M | active | 1 | 19 | 2026-06-12 |
 | [y2k-finance](./y2k-finance/) | $30.0K | 0.0% | ? | unknown | 6 | 0 | 2026-06-13 |
 | [yaka-finance](./yaka-finance/) | $10.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [yala](./yala/) | $4.6M | 0.0% | $4.6M | active | 1 | 30 | 2026-06-11 |
+| [yala](./yala/) | $4.6M | 0.0% | $4.6M | active | 1 | 30 | 2026-06-14 |
 | [yamato-protocol](./yamato-protocol/) | $910.9 | 47.8% | $818.3 | active | 3 | 63 | 2026-05-24 |
 | [ybtc.b](./ybtc.b/) | $69.3M | 0.0% | ? | active | 10 | 1 | 2026-06-12 |
 | [yei-finance](./yei-finance/) | $18.3M | 0.0% | ? | declining | 1 | 47 | 2026-06-12 |

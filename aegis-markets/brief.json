@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "aegis-markets",
-  "generated_at": "2026-06-10T20:58:56.549Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-14T09:43:12.368Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-403f",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "aegis-markets",
@@ -22,24 +22,27 @@
     "drop_from_peak_pct": 70.565044131996
   },
   "summary": {
-    "total_contracts": 15,
-    "total_addresses": 33,
-    "unique_implementations": 15,
-    "total_deployments": 33,
+    "total_contracts": 16,
+    "total_addresses": 36,
+    "unique_implementations": 16,
+    "total_deployments": 36,
     "audited_contracts": 0,
-    "unaudited_contracts": 12,
+    "unaudited_contracts": 13,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 12,
+    "contracts_verified_unaudited": 13,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 3,
     "coverage_pct": 0,
     "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2328928.82688,
-    "tvl_usd": 2328928.82688,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "dl_tvl_usd": 1836586.77077,
+    "tvl_usd": 24211130.179803085,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "base": 21149636.56,
+      "unichain": 3061493.62
+    },
+    "asd_usd": 24211130.179803085,
     "website_url": "https://aegis.markets/",
     "chains": [
       "base",
@@ -62,7 +65,7 @@
     "product_family_count": 2
   },
   "surface_sufficiency": {
-    "unique_implementations": 15,
+    "unique_implementations": 16,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -74,24 +77,33 @@
     {
       "chain_id": 130,
       "chain_name": "unichain",
-      "address": "0xdb3a3d5a32d78b19da8417aeb1cda5e2778e718d",
-      "name": "AegisNFT",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "address": "0x1f98400000000000000000000000000000000004",
+      "name": "PoolManager",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
       "product_line": null,
-      "tvl_usd": null,
+      "tvl_usd": 24211130.179803085,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": "AegisNFT",
+      "impl_name": "PoolManager",
       "deployments": [
         {
           "chain_id": 130,
           "chain_name": "unichain",
-          "address": "0xdb3a3d5a32d78b19da8417aeb1cda5e2778e718d",
+          "address": "0x1f98400000000000000000000000000000000004",
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": null,
+          "tvl_usd": 3061493.6200744063,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x498581ff718922c3f8e6a244956af099b2652b2b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 21149636.55972868,
           "is_audited": false
         }
       ],
@@ -100,7 +112,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null
     },
     {
       "chain_id": 130,
@@ -301,6 +313,46 @@
     {
       "chain_id": 130,
       "chain_name": "unichain",
+      "address": "0x4529a01c7a0410167c5740c487a8de60232617bf",
+      "name": "PositionManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x4529a01c7a0410167c5740c487a8de60232617bf",
+      "impl_name": "PositionManager",
+      "deployments": [
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x4529a01c7a0410167c5740c487a8de60232617bf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7c5f5a4bbd8fd63184577525326123b519429bdc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
       "address": "0x37fcaead6f62bdead5cb2c17f2528fb4965f9332",
       "name": "PreCcaBonusClaim",
       "role": "unknown",
@@ -486,8 +538,8 @@
       "address": "0x5a09c037eab964ce925ee88ab1facf8af6d9d13f",
       "name": "Timelock",
       "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -611,7 +663,7 @@
       "address": "0x508bc0586244a8641da341769f67d76dfcee7dc2",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -642,7 +694,7 @@
       "address": "0x53e02d0351823dad1898675fc018d657a4de6544",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -673,7 +725,7 @@
       "address": "0x9c66d0e50679f4997d3657be76e8e982d0223ad4",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -748,16 +800,6 @@
     {
       "chain_id": 130,
       "chain_name": "unichain",
-      "address": "0xdb3a3d5a32d78b19da8417aeb1cda5e2778e718d",
-      "name": "AegisNFT",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 130,
-      "chain_name": "unichain",
       "address": "0x16b40ca9b9366aba4cfdb3d6827491b66994d958",
       "name": "DynamicFeeManager",
       "role": "governance",
@@ -791,6 +833,16 @@
       "address": "0x87cb5af674b546ec73e462221e8cb5e5ff7e3e06",
       "name": "PoolPolicyManager",
       "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0x4529a01c7a0410167c5740c487a8de60232617bf",
+      "name": "PositionManager",
+      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -848,6 +900,16 @@
     {
       "chain_id": 130,
       "chain_name": "unichain",
+      "address": "0x5a09c037eab964ce925ee88ab1facf8af6d9d13f",
+      "name": "Timelock",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
       "address": "0x22e086c085fbda3214db238f8a930d22228facb5",
       "name": "TruncGeoOracleMulti",
       "role": "operational_periphery",
@@ -857,10 +919,10 @@
     }
   ],
   "origin_summary": {
-    "native": 14,
-    "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 0
+    "native": 12,
+    "upstream": 1,
+    "standard_library": 0,
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {},

@@ -5,11 +5,11 @@
 - Project: Yala (`yala`)
 - Website: [https://www.yala.org](https://www.yala.org)
 - Lifecycle: active (Tier 1, dead)
-- Generated: 2026-06-11T04:16:59.413Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
+- Generated: 2026-06-14T09:46:06.929Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
 - Chains: ethereum
-- Contract surface: 30 unique implementations (30 raw deployments)
-- DeFi Llama TVL: $2,196,263.11
+- Contract surface: 30 unique implementations (31 raw deployments)
+- DeFi Llama TVL: $1,828,126.03
 - On-chain TVL (included contracts): $4,617,109.60
 - TVL by chain: Ethereum $4,617,109.60
 
@@ -28,7 +28,7 @@ The Yala family consists of a core DebtToken for CDP operations and a supporting
 - Verified by bytecode match: 0
 - Unverified implementations: 19
 - Unique implementations: 30
-- Raw deployments: 30
+- Raw deployments: 31
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $4,617,109.60
@@ -57,7 +57,7 @@ The Yala family consists of a core DebtToken for CDP operations and a supporting
 | Factory | registry | ethereum | [`0xca61a7...02e66c`](./contracts/ethereum-1/0xca61a7be20d361b21c0ad7fa61e241c56202e66c/) | ⚠️ Unaudited |
 | GasPool | core_logic | ethereum | [`0x306698...268784`](./contracts/ethereum-1/0x306698f58c0670ea2be3d325e61582ae61268784/) | ⚠️ Unaudited |
 | PriceFeed | operational_periphery | ethereum | [`0xf6fe54...4f7b6e`](./contracts/ethereum-1/0xf6fe5413361d8fa7df08c50a9211167ecd4f7b6e/) | ⚠️ Unaudited |
-| PSM | unknown | ethereum | [`0x4171e2...6e6a12`](./contracts/ethereum-1/0x4171e25e35fa13e98fb970d919b055c1866e6a12/) | ⚠️ Unaudited |
+| PSM | unknown | ethereum | 2 deployments: ethereum [`0x0b4e03...ee41fd`](./contracts/ethereum-1/0x0b4e03ecb66be6774c216ea9eca3663a85ee41fd/); ethereum `0x4171e2...6e6a12` | ⚠️ Unaudited |
 | StabilityPool | core_logic | ethereum | [`0x959380...b1e7fe`](./contracts/ethereum-1/0x9593807414124328e9033756309a985799b1e7fe/) | ⚠️ Unaudited |
 | TroveManager | governance | ethereum | [`0xdcd922...6622f2`](./contracts/ethereum-1/0xdcd922cba657b7c07fd114bf6734069bd66622f2/) | ⚠️ Unaudited |
 | YalaCore | unknown | ethereum | [`0xd5eeaf...c20c8b`](./contracts/ethereum-1/0xd5eeaf2eeb9e1c7b88acfad3f41401925fc20c8b/) | ⚠️ Unaudited |
@@ -118,7 +118,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x27a70b...0ba589`](./contracts/ethereum-1/0x27a70b9f8073efe5a02998d5cc64acdc9e0ba589/) | BridgeToken | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xca61a7...02e66c`](./contracts/ethereum-1/0xca61a7be20d361b21c0ad7fa61e241c56202e66c/) | Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x306698...268784`](./contracts/ethereum-1/0x306698f58c0670ea2be3d325e61582ae61268784/) | GasPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4171e2...6e6a12`](./contracts/ethereum-1/0x4171e25e35fa13e98fb970d919b055c1866e6a12/) | PSM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0b4e03...ee41fd`](./contracts/ethereum-1/0x0b4e03ecb66be6774c216ea9eca3663a85ee41fd/) | PSM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x959380...b1e7fe`](./contracts/ethereum-1/0x9593807414124328e9033756309a985799b1e7fe/) | StabilityPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdcd922...6622f2`](./contracts/ethereum-1/0xdcd922cba657b7c07fd114bf6734069bd66622f2/) | TroveManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd5eeaf...c20c8b`](./contracts/ethereum-1/0xd5eeaf2eeb9e1c7b88acfad3f41401925fc20c8b/) | YalaCore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -127,10 +127,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 13 |
+| native | 29 |
 | upstream | 1 |
 | standard_library | 0 |
-| needs_review | 16 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

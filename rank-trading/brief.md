@@ -5,13 +5,13 @@
 - Project: Rank Trading (`rank-trading`)
 - Website: [https://rank.trading/](https://rank.trading/)
 - Lifecycle: active (Tier 0, 69.1% below peak)
-- Generated: 2026-06-11T02:10:35.880Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
+- Generated: 2026-06-14T09:42:48.736Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-403f
 - Chains: bsc
-- Contract surface: 13 unique implementations (31 raw deployments)
-- DeFi Llama TVL: $2,326,890.56
-- On-chain TVL (included contracts): $1,188,950.00
-- TVL by chain: Bsc $1,188,950.00
+- Contract surface: 17 unique implementations (35 raw deployments)
+- DeFi Llama TVL: $1,951,466.64
+- On-chain TVL (included contracts): $1,189,293.39
+- TVL by chain: Bsc $1,189,293.39
 
 ## Project Description
 
@@ -23,15 +23,15 @@ The protocol consists of a single product family where the RankToken serves as t
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/10 (30.0%)
-- Verified + Unaudited implementations: 7
+- Verified implementations audited: 3/11 (27.3%)
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
-- Unverified implementations: 3
-- Unique implementations: 13
-- Raw deployments: 31
+- Unverified implementations: 6
+- Unique implementations: 17
+- Raw deployments: 35
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 1
-- ASD (verified + unaudited TVL): n/a
+- ASD (verified + unaudited TVL): $343.39
 - Latest audit: 2025-01 (aging)
 - Staleness: 0 fresh, 2 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -40,7 +40,7 @@ The protocol consists of a single product family where the RankToken serves as t
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Hashlock | Tier 2 | 3 | 30.0% | 2025-01 |
+| Hashlock | Tier 2 | 3 | 27.3% | 2025-01 |
 
 ## Contract Surface
 
@@ -52,10 +52,11 @@ The protocol consists of a single product family where the RankToken serves as t
 | RankFactory | registry | bsc | 10 deployments: bsc [`0x1563c9...447227`](./contracts/bsc-56/0x1563c9837f9b71ba6f69342276deda6158447227/); bsc `0x185f8b...31c82e`; bsc `0x276ee9...a17eb8`; bsc `0x6e9d30...286a3f`; bsc `0x7cd6ea...e7dc19`; bsc `0x8e9fc0...a90601`; bsc `0x95defc...b573f3`; bsc `0xab5389...40e452`; bsc `0xcbabba...b5a679`; bsc `0xf86ada...5b70db` | ✅ Audited |
 | RankStrategy | core_logic | bsc | [`0xf9b185...1aaffd`](./contracts/bsc-56/0xf9b1859266b21dfc02c8bd31e11103f97a1aaffd/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| StakingPool | core_logic | bsc | [`0xd6a07b...cd1074`](./contracts/bsc-56/0xd6a07b8065f9e8386a9a5bba6a754a10a9cd1074/) | ⚠️ Unaudited |
 | Erc20Simple | token | bsc | [`0x7d322e...8a9cc5`](./contracts/bsc-56/0x7d322eb2f7149de1613f4310a73254abd08a9cc5/) | ⚠️ Unaudited |
 | ExposedV3Math | unknown | bsc | 3 deployments: bsc [`0x15022f...d23a54`](./contracts/bsc-56/0x15022f35ce0837b3b524ec699ec8258a8fd23a54/); bsc `0x6c7a2f...873f9c`; bsc `0xc98f2a...caa232` | ⚠️ Unaudited |
 | FeeResolver | unknown | bsc | [`0xe9b5f4...b4b21f`](./contracts/bsc-56/0xe9b5f4b3d4796bf57dd9f23af09f310e19b4b21f/) | ⚠️ Unaudited |
@@ -76,14 +77,17 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (6)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | UnnamedContract | unknown | bsc | `0x3d413f...ad7a36` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | `0x582c5a...31a3b0` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0xcb8b00...fb62ec` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | `0xd041c5...e441c2` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | `0xd2b1c1...bb53f0` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0xe0c497...200ec3` | ❓ Unverified |
 
 ## Audit Inventory
@@ -100,7 +104,6 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | bsc | [`0x7d322e...8a9cc5`](./contracts/bsc-56/0x7d322eb2f7149de1613f4310a73254abd08a9cc5/) | Erc20Simple | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x15022f...d23a54`](./contracts/bsc-56/0x15022f35ce0837b3b524ec699ec8258a8fd23a54/) | ExposedV3Math | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xe9b5f4...b4b21f`](./contracts/bsc-56/0xe9b5f4b3d4796bf57dd9f23af09f310e19b4b21f/) | FeeResolver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x247358...9d538c`](./contracts/bsc-56/0x247358c446bf11ae2b54b96faf0e04c8089d538c/) | FullRangeConvertor | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xf67875...55cd71`](./contracts/bsc-56/0xf678750ec4b7b8c9b2f414913de5b3781055cd71/) | FullRangeConvertorV2 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -110,10 +113,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 12 |
-| upstream | 1 |
-| standard_library | 0 |
-| needs_review | 0 |
+| native | 10 |
+| upstream | 0 |
+| standard_library | 2 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 

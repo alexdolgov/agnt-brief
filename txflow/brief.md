@@ -5,11 +5,11 @@
 - Project: TxFlow (`txflow`)
 - Website: [https://txflow.com/](https://txflow.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T03:46:02.645Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-7b75
+- Generated: 2026-06-14T06:57:12.783Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
 - Chains: arbitrum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $3,758,764.00
+- DeFi Llama TVL: $4,123,570.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -80,16 +80,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| arbitrum | [`0xcde3f9...c24565`](./contracts/arbitrum-42161/0xcde3f99bcb4c91e19124e41730489eaefec24565/) | Bridge2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

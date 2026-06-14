@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "klayswap",
-  "generated_at": "2026-06-11T00:31:10.582Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-5143",
+  "generated_at": "2026-06-14T07:02:29.184Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-9bd7",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "klayswap",
@@ -45,8 +45,8 @@
     "coverage_pct": 0,
     "total_audits": 4,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4507746,
-    "tvl_usd": 4507746,
+    "dl_tvl_usd": 3852968,
+    "tvl_usd": 3852968,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

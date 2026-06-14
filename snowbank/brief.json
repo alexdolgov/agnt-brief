@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "snowbank",
-  "generated_at": "2026-06-11T02:46:03.281Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-79ef",
+  "generated_at": "2026-06-14T06:58:57.219Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-9bd7",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "snowbank",
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 100
   },
   "summary": {
-    "total_contracts": 12,
-    "total_addresses": 19,
-    "unique_implementations": 12,
-    "total_deployments": 19,
+    "total_contracts": 17,
+    "total_addresses": 27,
+    "unique_implementations": 17,
+    "total_deployments": 27,
     "audited_contracts": 0,
-    "unaudited_contracts": 12,
+    "unaudited_contracts": 16,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 12,
+    "contracts_verified_unaudited": 16,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3739799.34682,
+    "dl_tvl_usd": 4100767.0295,
     "tvl_usd": 36054640.0961111,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -63,7 +63,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 12,
+    "unique_implementations": 17,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -199,6 +199,95 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
+      "address": "0x425c45adfb53861e5db8f17d9b072ab60d4404d8",
+      "name": "JoePair",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "trader-joe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "JoePair",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x425c45adfb53861e5db8f17d9b072ab60d4404d8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x53942dcce5087f56cf1d68f4e017ca3a793f59a2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x781655d802670bba3c89aebaaea59d3182fd755d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xa3d2cfe49df9d1ea0dc589b69252e1eddc417d6d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x561c56b6ea927c157a9f51fcccfa50b777c1ea7c",
+      "name": "MultiSigWalletWithDailyLimit",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MultiSigWalletWithDailyLimit",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x561c56b6ea927c157a9f51fcccfa50b777c1ea7c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
       "address": "0x0d71d9616f6844f12f1ce1516aa67817754517ff",
       "name": "SnowbankBondDepository",
       "role": "unknown",
@@ -262,6 +351,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xafe654c1b34e9f702bf8007bccd6481b90476887",
+      "name": "SnowbankFinalRedistribution",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SnowbankFinalRedistribution",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xafe654c1b34e9f702bf8007bccd6481b90476887",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 43114,
@@ -506,6 +626,68 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xc669dc61af974fdf50758d95306e4083d36f1430",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xc669dc61af974fdf50758d95306e4083d36f1430",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x31c4c046efad4b04b823a919cc0bdd0f663c87d4",
+      "name": "wsSB",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "wsSB",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x31c4c046efad4b04b823a919cc0bdd0f663c87d4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     }
   ],
   "audits": [],
@@ -556,6 +738,16 @@
       "chain_name": "avalanche",
       "address": "0x0d71d9616f6844f12f1ce1516aa67817754517ff",
       "name": "SnowbankBondDepository",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xafe654c1b34e9f702bf8007bccd6481b90476887",
+      "name": "SnowbankFinalRedistribution",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -630,13 +822,23 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x31c4c046efad4b04b823a919cc0bdd0f663c87d4",
+      "name": "wsSB",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 12,
-    "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 0
+    "native": 14,
+    "upstream": 1,
+    "standard_library": 1,
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

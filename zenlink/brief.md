@@ -7,11 +7,11 @@
 - Project: Zenlink (`zenlink`)
 - Website: [https://zenlink.pro](https://zenlink.pro)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-11T04:25:08.343Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-026d
+- Generated: 2026-06-14T07:02:06.313Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
 - Chains: moonbeam, moonriver
-- Contract surface: 226 unique implementations (249 raw deployments)
-- DeFi Llama TVL: $5,337,021.00
+- Contract surface: 226 unique implementations (252 raw deployments)
+- DeFi Llama TVL: $3,863,075.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -30,7 +30,7 @@ The Zenlink AMM family is the sole product family, with Factory contracts deploy
 - Verified by bytecode match: 0
 - Unverified implementations: 214
 - Unique implementations: 226
-- Raw deployments: 249
+- Raw deployments: 252
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -55,7 +55,7 @@ The Zenlink AMM family is the sole product family, with Factory contracts deploy
 |---|---|---|---|---|
 | BaseSplitCodeFactoryContract | registry | moonbeam | [`0x3f33f0...e8fae3`](./contracts/moonbeam-1284/0x3f33f0bc18789346e35688c6b63cf31e95e8fae3/) | ⚠️ Unaudited |
 | Factory | registry | moonbeam | 4 deployments: moonbeam [`0x079710...c716a0`](./contracts/moonbeam-1284/0x079710316b06bbb2c0ff4befb7d2dac206c716a0/); moonbeam `0xf49255...f92fef`; moonriver `0x28eaa0...0f8d38`; moonriver `0xf36ae6...01438d` | ⚠️ Unaudited |
-| Farming | unknown | moonbeam | [`0xa22687...918c2d`](./contracts/moonbeam-1284/0xa226877393fc4e3b5f2b43a1bae3c5d72c918c2d/) | ⚠️ Unaudited |
+| Farming | unknown | moonbeam | 3 deployments: moonbeam [`0xa22687...918c2d`](./contracts/moonbeam-1284/0xa226877393fc4e3b5f2b43a1bae3c5d72c918c2d/); moonbeam `0xd67083...9661f4`; moonriver `0xf4ec12...2a72f8` | ⚠️ Unaudited |
 | Migrator | periphery | moonriver | 2 deployments: moonbeam `0xbcb672...24202a`; moonriver [`0x43581b...2a87b5`](./contracts/moonriver-1285/0x43581b441e019974e8fcffca0a1032f53e2a87b5/) | ⚠️ Unaudited |
 | Multicall2 | periphery | moonriver | [`0x959b76...704208`](./contracts/moonriver-1285/0x959b76b30f12c6ad3f3c59611f5377d44a704208/) | ⚠️ Unaudited |
 | Router | adapter | moonriver | 4 deployments: moonbeam `0x5c93cb...49887a`; moonbeam `0x7a3909...fcab71`; moonriver [`0x1006ff...242fa6`](./contracts/moonriver-1285/0x1006fff14e20fcc7d5975d4e81421becfb242fa6/); moonriver `0xe6fe3d...8b35ca` | ⚠️ Unaudited |
@@ -64,7 +64,7 @@ The Zenlink AMM family is the sole product family, with Factory contracts deploy
 | StableSwapStorage | unknown | moonriver | 2 deployments: moonbeam `0xb29deb...ed5e7b`; moonriver [`0x6dcdda...4e97f2`](./contracts/moonriver-1285/0x6dcdda63631201f83c89e459621dac6e244e97f2/) | ⚠️ Unaudited |
 | Stake | unknown | moonriver | 10 deployments: moonriver [`0x166792...41ba69`](./contracts/moonriver-1285/0x166792bdc0a3cabc905cb434ce02ccc10f41ba69/); moonriver `0x2c1294...11d70d`; moonriver `0x71aa37...fbd353`; moonriver `0x9a8975...9876fb`; moonriver `0xa03bc7...1924a5`; moonriver `0xa34656...55ad77`; moonriver `0xa8bb6b...9db055`; moonriver `0xd96a05...db29e3`; moonriver `0xe426c5...4cee6c`; moonriver `0xf739d1...1afe75` | ⚠️ Unaudited |
 | SwapRouterV1 | adapter | moonriver | 4 deployments: moonbeam `0x571111...572242`; moonbeam `0xeb237c...d647f6`; moonriver [`0x2f84b9...8b189d`](./contracts/moonriver-1285/0x2f84b9713a96fb356683de7b44dd2d37658b189d/); moonriver `0xfb45b5...ea1508` | ⚠️ Unaudited |
-| ZenlinkToken | token | moonriver | [`0x0f47ba...a1173b`](./contracts/moonriver-1285/0x0f47ba9d9bde3442b42175e51d6a367928a1173b/) | ⚠️ Unaudited |
+| ZenlinkToken | token | moonriver | 2 deployments: moonbeam `0x3fd9b6...39100c`; moonriver [`0x0f47ba...a1173b`](./contracts/moonriver-1285/0x0f47ba9d9bde3442b42175e51d6a367928a1173b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -326,10 +326,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 49 |
+| native | 38 |
 | upstream | 0 |
 | standard_library | 2 |
-| needs_review | 175 |
+| needs_review | 186 |
 
 ## Scope Matching Notes
 

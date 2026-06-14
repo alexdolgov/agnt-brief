@@ -244,7 +244,7 @@
 | [chain-fusion](./chain-fusion/) | $18.2M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [chainflip](./chainflip/) | $3.7M | 27.3% | ? | active | 3 | 12 | 2026-06-10 |
 | [chainge-finance](./chainge-finance/) | $12.1M | 0.0% | ? | unknown | 1 | 0 | 2026-06-10 |
-| [chaingpt](./chaingpt/) | $4.6M | 0.0% | ? | active | 0 | 87 | 2026-06-10 |
+| [chaingpt](./chaingpt/) | $3.8M | 0.0% | ? | active | 0 | 94 | 2026-06-14 |
 | [champion-finance](./champion-finance/) | $23.9 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [charm-finance](./charm-finance/) | $14.2K | 50.0% | $0.0 | declining | 6 | 10 | 2026-06-10 |
 | [chat3](./chat3/) | $6.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -626,7 +626,7 @@
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 2 | 154 | 2026-06-11 |
 | [klaybank](./klaybank/) | $298.9K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [klaystation](./klaystation/) | $0.0 | 0.0% | ? | declining | 0 | 1 | 2026-06-11 |
-| [klayswap](./klayswap/) | $4.5M | 0.0% | ? | declining | 4 | 22 | 2026-06-11 |
+| [klayswap](./klayswap/) | $3.9M | 0.0% | ? | declining | 4 | 22 | 2026-06-14 |
 | [klend](./klend/) | $5.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [kleros](./kleros/) | $10.7M | 0.0% | $10.7M | unknown | 0 | 358 | 2026-06-13 |
 | [knightswap](./knightswap/) | $904.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1086,7 +1086,7 @@
 | [smartcredit](./smartcredit/) | $769.3K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [smilee-finance](./smilee-finance/) | $1.1M | 23.3% | ? | active | 3 | 194 | 2026-06-14 |
 | [smoothy](./smoothy/) | $478.6K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 12 | 2026-06-11 |
+| [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 17 | 2026-06-14 |
 | [snuggle](./snuggle/) | $0.0 | 23.5% | $0.0 | active | 3 | 88 | 2026-06-11 |
 | [sofa.org](./sofa.org/) | $49.2K | 33.3% | $46.8K | declining | 8 | 38 | 2026-05-24 |
 | [solace](./solace/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -1277,7 +1277,7 @@
 | [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | declining | 3 | 516 | 2026-06-13 |
 | [twin-finance](./twin-finance/) | $6.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [twyne](./twyne/) | $985.7K | 3.8% | $985.7K | active | 6 | 59 | 2026-06-11 |
-| [txflow](./txflow/) | $3.8M | 0.0% | ? | active | 0 | 1 | 2026-06-11 |
+| [txflow](./txflow/) | $4.1M | 0.0% | ? | active | 0 | 1 | 2026-06-14 |
 | [tymio](./tymio/) | $209.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [u235](./u235/) | $4.8K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [ufarm-digital](./ufarm-digital/) | $507.7K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
@@ -1389,7 +1389,7 @@
 | [yupana](./yupana/) | $24.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [yuzu-money](./yuzu-money/) | $41.0M | 0.0% | $41.0M | active | 6 | 9 | 2026-06-12 |
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-06-11 |
-| [zenlink](./zenlink/) | $5.3M | 0.0% | ? | declining | 1 | 226 | 2026-06-11 |
+| [zenlink](./zenlink/) | $3.9M | 0.0% | ? | declining | 1 | 226 | 2026-06-14 |
 | [zero-g-finance](./zero-g-finance/) | $1.7K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 5 | 34 | 2026-06-14 |
 | [zerolend](./zerolend/) | $352.4M | 9.2% | $331.7M | declining | 9 | 614 | 2026-06-12 |

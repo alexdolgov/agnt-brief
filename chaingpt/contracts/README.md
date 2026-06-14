@@ -1,6 +1,24 @@
 # chaingpt — Contract Index
 
-87 unique implementations across 7 chains · 92 deployments · 0 audited · 3 unaudited · 84 unverified
+94 unique implementations across 8 chains · 99 deployments · 0 audited · 8 unaudited · 86 unverified
+
+## core_logic (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [DCBVault](./bsc-56/0x5b1e724b79087dae13517612a1e6575e9d340cfb/) | bsc | [`0x5b1e72...340cfb`](./bsc-56/0x5b1e724b79087dae13517612a1e6575e9d340cfb/) | ⚠️ Unaudited | Verified |
+
+## operational_periphery (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [DecubateVestingV2](./bsc-56/0x3a53269cae3281155e51d06ffe14fde8dc3662f7/) | bsc | [`0x3a5326...3662f7`](./bsc-56/0x3a53269cae3281155e51d06ffe14fde8dc3662f7/) | ⚠️ Unaudited | Verified |
+
+## proxy (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [TransparentUpgradeableProxy](./bsc-56/0x62a402def6ca37e9ca7a544be34954748088ccee/) | bsc | [`0x62a402...88ccee`](./bsc-56/0x62a402def6ca37e9ca7a544be34954748088ccee/) | ⚠️ Unaudited | Verified |
 
 ## registry (1)
 
@@ -8,11 +26,13 @@
 |---|---|---|---|---|
 | [TokenSaleFactory (6 deployments)](./base-8453/0x29d6a07b0f4f3daf3ef9677c197725fd9ef6d7e9/) | base | 6 deployments: bsc `0x8c0ccc...017139`; bsc `0xb13adc...a9aa0e`; bsc `0xc0b589...4fc82b`; base [`0x29d6a0...f6d7e9`](./base-8453/0x29d6a07b0f4f3daf3ef9677c197725fd9ef6d7e9/); base `0x2c7544...9eede9`; base `0x9670f6...0669fa` | ⚠️ Unaudited | Verified |
 
-## unknown (86)
+## unknown (90)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [ChainGPT](./bsc-56/0x9840652dc04fb9db2c43853633f0f62be6f00f98/) | bsc | [`0x984065...f00f98`](./bsc-56/0x9840652dc04fb9db2c43853633f0f62be6f00f98/) | ⚠️ Unaudited | Verified |
+| [DCBLiqLocker](./bsc-56/0x6ee8d743eb8bec665aacdb535f2f100f040ca6c5/) | bsc | [`0x6ee8d7...0ca6c5`](./bsc-56/0x6ee8d743eb8bec665aacdb535f2f100f040ca6c5/) | ⚠️ Unaudited | Verified |
+| [DecubateMasterChef](./bsc-56/0x765a6ee976137801f2661c3644e1fde369a8ed18/) | bsc | [`0x765a6e...a8ed18`](./bsc-56/0x765a6ee976137801f2661c3644e1fde369a8ed18/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x9fc1a3...506573` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xa433b2...36420e` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xf276bf...7f5a4a` | ❓ Unverified | Unverified |
@@ -45,6 +65,7 @@
 | UnnamedContract | bsc | `0xa622e9...e369ab` | ❓ Unverified | Unverified |
 | UnnamedContract | bsc | `0xabc831...1b173b` | ❓ Unverified | Unverified |
 | UnnamedContract | bsc | `0xb4d0ce...10b30f` | ❓ Unverified | Unverified |
+| UnnamedContract | bsc | `0xc26336...f4e917` | ❓ Unverified | Unverified |
 | UnnamedContract | bsc | `0xcb5787...c76c2f` | ❓ Unverified | Unverified |
 | UnnamedContract | bsc | `0xcfab58...97a6a7` | ❓ Unverified | Unverified |
 | UnnamedContract | bsc | `0xdaa386...52b280` | ❓ Unverified | Unverified |
@@ -65,6 +86,7 @@
 | UnnamedContract | polygon | `0xd5df66...f1a02b` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xe09c2b...e42e46` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0xf276bf...7f5a4a` | ❓ Unverified | Unverified |
+| UnnamedContract | zksync-era | `0xf25f7c...06885c` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x0cd66d...318193` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x291889...2375f1` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x32496c...d8f411` | ❓ Unverified | Unverified |
@@ -97,4 +119,4 @@
 | UnnamedContract | linea | `0xd8affb...4601d3` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0xe9349e...2f41fe` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0xfb5cd8...098c79` | ❓ Unverified | Unverified |
-| [Web3CheckIn](./bsc-56/0xde3204c79ed43a0c282e10664a27ad285bd1416b/) | bsc | [`0xde3204...d1416b`](./bsc-56/0xde3204c79ed43a0c282e10664a27ad285bd1416b/) | ⚠️ Unaudited | Verified |
+| [VoteContract](./bsc-56/0xb70af6e8d9cdf49b506bb176de1a245e96eab54c/) | bsc | [`0xb70af6...eab54c`](./bsc-56/0xb70af6e8d9cdf49b506bb176de1a245e96eab54c/) | ⚠️ Unaudited | Verified |

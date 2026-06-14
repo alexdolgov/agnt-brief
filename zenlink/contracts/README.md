@@ -1,6 +1,6 @@
 # zenlink — Contract Index
 
-226 unique implementations across 2 chains · 249 deployments · 0 audited · 12 unaudited · 214 unverified
+226 unique implementations across 2 chains · 252 deployments · 0 audited · 12 unaudited · 214 unverified
 
 ## adapter (3)
 
@@ -28,13 +28,13 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [ZenlinkToken](./moonriver-1285/0x0f47ba9d9bde3442b42175e51d6a367928a1173b/) | moonriver | [`0x0f47ba...a1173b`](./moonriver-1285/0x0f47ba9d9bde3442b42175e51d6a367928a1173b/) | ⚠️ Unaudited | Verified |
+| [ZenlinkToken (2 deployments)](./moonriver-1285/0x0f47ba9d9bde3442b42175e51d6a367928a1173b/) | moonriver | 2 deployments: moonbeam `0x3fd9b6...39100c`; moonriver [`0x0f47ba...a1173b`](./moonriver-1285/0x0f47ba9d9bde3442b42175e51d6a367928a1173b/) | ⚠️ Unaudited | Verified |
 
 ## unknown (218)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Farming](./moonbeam-1284/0xa226877393fc4e3b5f2b43a1bae3c5d72c918c2d/) | moonbeam | [`0xa22687...918c2d`](./moonbeam-1284/0xa226877393fc4e3b5f2b43a1bae3c5d72c918c2d/) | ⚠️ Unaudited | Verified |
+| [Farming (3 deployments)](./moonbeam-1284/0xa226877393fc4e3b5f2b43a1bae3c5d72c918c2d/) | moonbeam | 3 deployments: moonbeam [`0xa22687...918c2d`](./moonbeam-1284/0xa226877393fc4e3b5f2b43a1bae3c5d72c918c2d/); moonbeam `0xd67083...9661f4`; moonriver `0xf4ec12...2a72f8` | ⚠️ Unaudited | Verified |
 | [StableSwap (3 deployments)](./moonbeam-1284/0x68bed2c54fd0e6eeb70cfa05723eae7c06805ec5/) | moonbeam | 3 deployments: moonbeam [`0x68bed2...805ec5`](./moonbeam-1284/0x68bed2c54fd0e6eeb70cfa05723eae7c06805ec5/); moonriver `0x7bde79...f434d1`; moonriver `0xd38a00...209827` | ⚠️ Unaudited | Verified |
 | [StableSwapStorage (2 deployments)](./moonriver-1285/0x6dcdda63631201f83c89e459621dac6e244e97f2/) | moonriver | 2 deployments: moonbeam `0xb29deb...ed5e7b`; moonriver [`0x6dcdda...4e97f2`](./moonriver-1285/0x6dcdda63631201f83c89e459621dac6e244e97f2/) | ⚠️ Unaudited | Verified |
 | [Stake (10 deployments)](./moonriver-1285/0x166792bdc0a3cabc905cb434ce02ccc10f41ba69/) | moonriver | 10 deployments: moonriver [`0x166792...41ba69`](./moonriver-1285/0x166792bdc0a3cabc905cb434ce02ccc10f41ba69/); moonriver `0x2c1294...11d70d`; moonriver `0x71aa37...fbd353`; moonriver `0x9a8975...9876fb`; moonriver `0xa03bc7...1924a5`; moonriver `0xa34656...55ad77`; moonriver `0xa8bb6b...9db055`; moonriver `0xd96a05...db29e3`; moonriver `0xe426c5...4cee6c`; moonriver `0xf739d1...1afe75` | ⚠️ Unaudited | Verified |

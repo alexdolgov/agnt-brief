@@ -5,11 +5,11 @@
 - Project: ChainGPT (`chaingpt`)
 - Website: [https://pad.chaingpt.org/staking-pools](https://pad.chaingpt.org/staking-pools)
 - Lifecycle: active (Tier 0, 92.6% below peak)
-- Generated: 2026-06-10T22:25:12.908Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
-- Chains: arbitrum, avalanche, base, bsc, ethereum, linea, polygon
-- Contract surface: 87 unique implementations (92 raw deployments)
-- DeFi Llama TVL: $4,610,938.17
+- Generated: 2026-06-14T06:57:13.139Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-9bd7
+- Chains: arbitrum, avalanche, base, bsc, ethereum, linea, polygon, zksync-era
+- Contract surface: 94 unique implementations (99 raw deployments)
+- DeFi Llama TVL: $3,825,213.31
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,12 +23,12 @@ All contracts belong to a single product family deployed by two main deployer cl
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
-- Verified + Unaudited implementations: 3
+- Verified implementations audited: 0/8 (0.0%)
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
-- Unverified implementations: 84
-- Unique implementations: 87
-- Raw deployments: 92
+- Unverified implementations: 86
+- Unique implementations: 94
+- Raw deployments: 99
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -46,13 +46,18 @@ All contracts belong to a single product family deployed by two main deployer cl
 
 - None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | ChainGPT | unknown | bsc | [`0x984065...f00f98`](./contracts/bsc-56/0x9840652dc04fb9db2c43853633f0f62be6f00f98/) | ⚠️ Unaudited |
+| DCBLiqLocker | unknown | bsc | [`0x6ee8d7...0ca6c5`](./contracts/bsc-56/0x6ee8d743eb8bec665aacdb535f2f100f040ca6c5/) | ⚠️ Unaudited |
+| DCBVault | core_logic | bsc | [`0x5b1e72...340cfb`](./contracts/bsc-56/0x5b1e724b79087dae13517612a1e6575e9d340cfb/) | ⚠️ Unaudited |
+| DecubateMasterChef | unknown | bsc | [`0x765a6e...a8ed18`](./contracts/bsc-56/0x765a6ee976137801f2661c3644e1fde369a8ed18/) | ⚠️ Unaudited |
+| DecubateVestingV2 | operational_periphery | bsc | [`0x3a5326...3662f7`](./contracts/bsc-56/0x3a53269cae3281155e51d06ffe14fde8dc3662f7/) | ⚠️ Unaudited |
 | TokenSaleFactory | registry | base | 6 deployments: bsc `0x8c0ccc...017139`; bsc `0xb13adc...a9aa0e`; bsc `0xc0b589...4fc82b`; base [`0x29d6a0...f6d7e9`](./contracts/base-8453/0x29d6a07b0f4f3daf3ef9677c197725fd9ef6d7e9/); base `0x2c7544...9eede9`; base `0x9670f6...0669fa` | ⚠️ Unaudited |
-| Web3CheckIn | unknown | bsc | [`0xde3204...d1416b`](./contracts/bsc-56/0xde3204c79ed43a0c282e10664a27ad285bd1416b/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | bsc | [`0x62a402...88ccee`](./contracts/bsc-56/0x62a402def6ca37e9ca7a544be34954748088ccee/) | ⚠️ Unaudited |
+| VoteContract | unknown | bsc | [`0xb70af6...eab54c`](./contracts/bsc-56/0xb70af6e8d9cdf49b506bb176de1a245e96eab54c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -66,7 +71,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (84)
+### ❓ Unverified (86)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -104,6 +109,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | bsc | `0xa622e9...e369ab` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0xabc831...1b173b` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0xb4d0ce...10b30f` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | `0xc26336...f4e917` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0xcb5787...c76c2f` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0xcfab58...97a6a7` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0xdaa386...52b280` | ❓ Unverified |
@@ -124,6 +130,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | polygon | `0xd5df66...f1a02b` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xe09c2b...e42e46` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | `0xf276bf...7f5a4a` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | `0xf25f7c...06885c` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x0cd66d...318193` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x291889...2375f1` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x32496c...d8f411` | ❓ Unverified |
@@ -170,16 +177,16 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | bsc | [`0x984065...f00f98`](./contracts/bsc-56/0x9840652dc04fb9db2c43853633f0f62be6f00f98/) | ChainGPT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x29d6a0...f6d7e9`](./contracts/base-8453/0x29d6a07b0f4f3daf3ef9677c197725fd9ef6d7e9/) | TokenSaleFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xde3204...d1416b`](./contracts/bsc-56/0xde3204c79ed43a0c282e10664a27ad285bd1416b/) | Web3CheckIn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xb70af6...eab54c`](./contracts/bsc-56/0xb70af6e8d9cdf49b506bb176de1a245e96eab54c/) | VoteContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 87 |
+| native | 3 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 0 |
+| standard_library | 8 |
+| needs_review | 83 |
 
 ## Scope Matching Notes
 

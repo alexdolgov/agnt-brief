@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "txflow",
-  "generated_at": "2026-06-11T03:46:02.645Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-7b75",
+  "generated_at": "2026-06-14T06:57:12.783Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-9bd7",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "txflow",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3758764,
-    "tvl_usd": 3758764,
+    "dl_tvl_usd": 4123570,
+    "tvl_usd": 4123570,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -76,7 +76,7 @@
       "address": "0xcde3f99bcb4c91e19124e41730489eaefec24565",
       "name": "Bridge2",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "TxFlow Bridge",
       "tvl_usd": null,
@@ -104,12 +104,23 @@
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xcde3f99bcb4c91e19124e41730489eaefec24565",
+      "name": "Bridge2",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

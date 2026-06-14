@@ -1,0 +1,18 @@
+{
+  "address": "0x62b2b60e2112011e5f5c34e3865d83a93c3c7e2f",
+  "chain_id": 56,
+  "contract_name": "CarbonController",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": "MIT, SEE LICENSE IN LICENSE",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 42,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T03:36:01.230Z"
+}

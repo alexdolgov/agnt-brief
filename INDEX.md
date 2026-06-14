@@ -31,7 +31,7 @@
 | [agile-finance](./agile-finance/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ailayer-farm](./ailayer-farm/) | $211.9K | 0.0% | $211.9K | active | 0 | 1 | 2026-06-12 |
 | [aimstrong](./aimstrong/) | $184.8 | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
-| [aitech](./aitech/) | $4.0M | 0.0% | ? | active | 1 | 2 | 2026-06-10 |
+| [aitech](./aitech/) | $3.5M | 0.0% | ? | active | 1 | 3 | 2026-06-14 |
 | [akropolis](./akropolis/) | $5.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [aladdin-dao](./aladdin-dao/) | $23.2K | 0.0% | ? | unknown | 9 | 0 | 2026-06-13 |
 | [alchemix](./alchemix/) | $340.7M | 6.4% | $338.7M | active | 11 | 388 | 2026-06-10 |
@@ -116,6 +116,7 @@
 | [avon-megavault](./avon-megavault/) | $36.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 3 | 2026-06-12 |
 | [axedao](./axedao/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
+| [aztec-connect](./aztec-connect/) | $4.3M | 37.5% | ? | active | 12 | 8 | 2026-06-14 |
 | [azuro](./azuro/) | $3.1K | 6.6% | $3.1K | active | 3 | 304 | 2026-06-10 |
 | [b-lucky](./b-lucky/) | $2.2M | 0.0% | $2.2M | active | 1 | 16 | 2026-06-10 |
 | [b.protocol](./b.protocol/) | $79.0K | 5.1% | $79.0K | declining | 4 | 162 | 2026-06-10 |
@@ -346,7 +347,7 @@
 | [dipcoin](./dipcoin/) | $4.4M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [ditto](./ditto/) | $33.1K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [djed-stablecoin](./djed-stablecoin/) | $5.4M | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [dnax](./dnax/) | $3.5M | 0.0% | ? | active | 0 | 1 | 2026-06-10 |
+| [dnax](./dnax/) | $3.4M | 0.0% | ? | active | 0 | 3 | 2026-06-14 |
 | [dodo](./dodo/) | $19.1M | 0.0% | $19.1M | declining | 1 | 559 | 2026-06-12 |
 | [dogeclaw](./dogeclaw/) | $11.5 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [dolomite](./dolomite/) | $664.2M | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
@@ -546,7 +547,7 @@
 | [hypersurface](./hypersurface/) | $161.0M | 0.0% | $161.0M | active | 0 | 281 | 2026-06-13 |
 | [hyperswap](./hyperswap/) | $3.7M | 0.0% | $3.7M | active | 3 | 30 | 2026-06-12 |
 | [hypertrade](./hypertrade/) | $94.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
-| [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 0 | 11 | 2026-06-11 |
+| [hyperwave](./hyperwave/) | $499.9M | 0.0% | $499.9M | active | 0 | 12 | 2026-06-14 |
 | [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 3 | 60 | 2026-06-13 |
 | [hyphen](./hyphen/) | $100.4K | 0.0% | ? | unknown | 10 | 0 | 2026-06-13 |
 | [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 0 | 46 | 2026-06-13 |
@@ -702,7 +703,7 @@
 | [manga-fi](./manga-fi/) | $5.8K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [mangrove](./mangrove/) | $4.3M | 22.0% | ? | active | 6 | 68 | 2026-06-11 |
 | [mansory](./mansory/) | $170.0K | 0.0% | $170.0K | active | 0 | 6 | 2026-06-13 |
-| [manta-atlantic-stake](./manta-atlantic-stake/) | $5.5M | 0.0% | ? | sunsetting | 0 | 109 | 2026-06-13 |
+| [manta-atlantic-stake](./manta-atlantic-stake/) | $5.5M | 0.0% | ? | sunsetting | 0 | 109 | 2026-06-14 |
 | [manta-cedefi](./manta-cedefi/) | $26.5M | 0.0% | ? | unknown | 0 | 17 | 2026-06-12 |
 | [manta-pacific](./manta-pacific/) | $21.1M | 0.0% | ? | active | 0 | 12 | 2026-06-12 |
 | [mantisswap](./mantisswap/) | $182.9K | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |

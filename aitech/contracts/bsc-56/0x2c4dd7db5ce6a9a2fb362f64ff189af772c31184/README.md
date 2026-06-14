@@ -4,11 +4,11 @@
 |---|---|
 | Chain | bsc (56) |
 | Address | `0x2c4dd7db5ce6a9a2fb362f64ff189af772c31184` |
-| Role | proxy |
+| Role | unknown |
 | Origin | standard_library |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 1 (bsc [`0x2c4dd7db5ce6a9a2fb362f64ff189af772c31184`](../0x2c4dd7db5ce6a9a2fb362f64ff189af772c31184/)) |
+| Deployments | 2 (bsc [`0x2c4dd7db5ce6a9a2fb362f64ff189af772c31184`](../0x2c4dd7db5ce6a9a2fb362f64ff189af772c31184/); bsc `0xb934f537f447f65d1df503cdc1ef41e493f7f36f`) |
 | Proxy | Yes → `0xb934f5...f7f36f` |
 | Source | Etherscan |
 | TVL | n/a |

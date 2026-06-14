@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "aitech",
-  "generated_at": "2026-06-10T20:58:56.591Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-14T03:36:51.173Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-d641",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "aitech",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
+    "total_contracts": 3,
+    "total_addresses": 4,
+    "unique_implementations": 3,
+    "total_deployments": 4,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3961626.08312,
-    "tvl_usd": 3961626.08312,
+    "dl_tvl_usd": 3497966.68456,
+    "tvl_usd": 3497966.68456,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -57,13 +57,13 @@
   },
   "topography": {
     "project_purpose": "AITECH / Solidus AI Tech is an AI infrastructure and cloud compute project focused on GPU/HPC compute, a compute marketplace, and AI agent/workflow services. The AITECH token and staking contracts are supporting components of the ecosystem rather than the core product; unsupported yield-farming framing should be removed unless backed by current documentation or contract behavior.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The AITECH token is used as the reward token in the DecubateMasterChef contract, which is deployed via a transparent upgradeable proxy, indicating a shared dependency on the token for reward distribution.",
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "unique_implementations": 3,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -75,7 +75,7 @@
       "chain_name": "bsc",
       "address": "0x2d060ef4d6bf7f9e5edde373ab735513c0e4f944",
       "name": "AITECH",
-      "role": "token",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "AITECH",
@@ -104,9 +104,40 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0xf1c3f68f82e6d2560a12d977b322a5db4684b096",
+      "name": "DCBVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xefbe9ffde91ff4eab4f94e26be2dba85d9c01f28",
+      "impl_name": "DCBVault",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xf1c3f68f82e6d2560a12d977b322a5db4684b096",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0x2c4dd7db5ce6a9a2fb362f64ff189af772c31184",
       "name": "DecubateMasterChef",
-      "role": "proxy",
+      "role": "unknown",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "AITECH",
@@ -119,6 +150,15 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x2c4dd7db5ce6a9a2fb362f64ff189af772c31184",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb934f537f447f65d1df503cdc1ef41e493f7f36f",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -163,7 +203,7 @@
       "chain_name": "bsc",
       "address": "0x2d060ef4d6bf7f9e5edde373ab735513c0e4f944",
       "name": "AITECH",
-      "role": "token",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -172,7 +212,7 @@
   "origin_summary": {
     "native": 1,
     "upstream": 0,
-    "standard_library": 1,
+    "standard_library": 2,
     "needs_review": 0
   },
   "scope_matching_notes": {

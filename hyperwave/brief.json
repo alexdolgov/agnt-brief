@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hyperwave",
-  "generated_at": "2026-06-11T00:00:12.586Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-08cb",
+  "generated_at": "2026-06-14T03:38:31.290Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-d641",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hyperwave",
@@ -22,28 +22,29 @@
     "drop_from_peak_pct": 86.24776849203879
   },
   "summary": {
-    "total_contracts": 11,
-    "total_addresses": 26,
-    "unique_implementations": 11,
-    "total_deployments": 26,
+    "total_contracts": 12,
+    "total_addresses": 38,
+    "unique_implementations": 12,
+    "total_deployments": 38,
     "audited_contracts": 0,
-    "unaudited_contracts": 7,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 7,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 4,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6383775.03097,
-    "tvl_usd": 322694300.53421926,
+    "dl_tvl_usd": 3317652.3969600005,
+    "tvl_usd": 499873407.54722357,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 322694245.24,
+      "base": 177178305.28,
+      "ethereum": 322695046.97,
       "hyperliquid": 55.3
     },
-    "asd_usd": 322694300.53421926,
-    "website_url": "https://app.hyperwavefi.xyz/hyperfren/DEFILLAMA",
+    "asd_usd": 499873407.54722357,
+    "website_url": "https://app.hyperwavefi.xyz",
     "chains": [
       "base",
       "ethereum",
@@ -66,7 +67,7 @@
     "product_family_count": 5
   },
   "surface_sufficiency": {
-    "unique_implementations": 11,
+    "unique_implementations": 12,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -84,7 +85,7 @@
       "origin_kind": "upstream",
       "origin_provider": "Aave",
       "product_line": "HyperWave",
-      "tvl_usd": 322694245.2355559,
+      "tvl_usd": 499872550.5138992,
       "is_proxy": true,
       "impl_address": "0xadc45df3cf1584624c97338bef33363bf5b97ada",
       "impl_name": "ATokenInstance",
@@ -115,6 +116,15 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x4e65fe4dba92790696d040ac24aa414708f5c0ab",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 177178305.27834335,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -130,10 +140,10 @@
       "address": "0x4de03ca1f02591b717495cfa19913ad56a2f5858",
       "name": "BoringVault",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "hwHYPE Contracts",
-      "tvl_usd": 55.29866336182475,
+      "tvl_usd": 857.0333243618247,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "BoringVault",
@@ -145,6 +155,15 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9fd7466f987fd4c45a5bbde22ed8aba5bc8d72d1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 801.734661,
           "is_audited": false
         },
         {
@@ -252,17 +271,26 @@
     {
       "chain_id": 999,
       "chain_name": "hyperliquid",
-      "address": "0xd0f20e410503fb2b5431bf802263f4671cdf11d2",
+      "address": "0x519a4e3ee7daea8d2814f059eefcd44dc4ae5618",
       "name": "ManagerWithMerkleVerification",
-      "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "role": "unknown",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "hwUSD Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "ManagerWithMerkleVerification",
       "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x519a4e3ee7daea8d2814f059eefcd44dc4ae5618",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 999,
           "chain_name": "hyperliquid",
@@ -299,23 +327,126 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x616a4e1db48e22028f6bbf20444cd3b8e3273738",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbeef01735c132ada46aa9aa4c54623caa92a64cb",
+      "name": "MetaMorpho",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "morpho",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MetaMorpho",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbeef01735c132ada46aa9aa4c54623caa92a64cb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbeef047a543e45807105e51a8bbefcc5950fcfba",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbeefff209270748ddd194831b3fa287a5386f5bc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd63070114470f685b75b74d60eec7c1113d33a3d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x2900abd73631b2f60747e687095537b673c06a76",
       "name": "MetaMorphoV1_1",
       "role": "unknown",
       "origin_kind": "upstream",
-      "origin_provider": "morpho-blue",
-      "product_line": "HyperWave",
+      "origin_provider": "morpho-labs",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "MetaMorphoV1_1",
       "deployments": [
         {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x2900abd73631b2f60747e687095537b673c06a76",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x835febf893c6dddee5cf762b0f8e31c5b06938ab",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x8a862fd6c12f9ad34c9c2ff45ab2b6712e8cea27",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xfc5126377f0efc0041c0969ef9ba903ce67d151e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x616a4e1db48e22028f6bbf20444cd3b8e3273738",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7bfa7c4f149e7415b73bdedfe609237e29cbf34a",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -335,7 +466,7 @@
       "address": "0x4d1cf31a919d62c65fa616185824fe78a09da917",
       "name": "RolesAuthority",
       "role": "governance",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "hwHYPE Contracts",
       "tvl_usd": null,
@@ -393,7 +524,7 @@
       "address": "0x70cb1a1888afee738344dd879d818e1f369b3dd5",
       "name": "TellerWithMultiAssetSupport",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "hwHYPE Contracts",
       "tvl_usd": null,
@@ -558,39 +689,19 @@
     {
       "chain_id": 999,
       "chain_name": "hyperliquid",
-      "address": "0x4de03ca1f02591b717495cfa19913ad56a2f5858",
-      "name": "BoringVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 55.29866336182475,
-      "risk_note": "Verified native implementation with $55.30 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 999,
-      "chain_name": "hyperliquid",
-      "address": "0x4d1cf31a919d62c65fa616185824fe78a09da917",
-      "name": "RolesAuthority",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 999,
-      "chain_name": "hyperliquid",
-      "address": "0x70cb1a1888afee738344dd879d818e1f369b3dd5",
-      "name": "TellerWithMultiAssetSupport",
-      "role": "core_logic",
+      "address": "0x519a4e3ee7daea8d2814f059eefcd44dc4ae5618",
+      "name": "ManagerWithMerkleVerification",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 3,
-    "upstream": 2,
+    "native": 1,
+    "upstream": 3,
     "standard_library": 0,
-    "needs_review": 6
+    "needs_review": 8
   },
   "scope_matching_notes": {
     "match_method_counts": {},

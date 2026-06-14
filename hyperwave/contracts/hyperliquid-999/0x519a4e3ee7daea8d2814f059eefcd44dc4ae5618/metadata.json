@@ -1,0 +1,17 @@
+{
+  "address": "0x519a4e3ee7daea8d2814f059eefcd44dc4ae5618",
+  "chain_id": 999,
+  "contract_name": "ManagerWithMerkleVerification",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "0000000000000000000000003cfb6b7fc75f8a7141a67eaed3ee3cb366cae2370000000000000000000000009fd7466f987fd4c45a5bbde22ed8aba5bc8d72d100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T03:38:33.926Z"
+}

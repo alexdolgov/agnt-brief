@@ -5,31 +5,30 @@
 - Project: AITECH (`aitech`)
 - Website: [https://aitech.io](https://aitech.io)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:58:56.591Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-14T03:36:51.173Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
 - Chains: bsc
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $3,961,626.08
+- Contract surface: 3 unique implementations (4 raw deployments)
+- DeFi Llama TVL: $3,497,966.68
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 AITECH / Solidus AI Tech is an AI infrastructure and cloud compute project focused on GPU/HPC compute, a compute marketplace, and AI agent/workflow services. The AITECH token and staking contracts are supporting components of the ecosystem rather than the core product; unsupported yield-farming framing should be removed unless backed by current documentation or contract behavior.
 
+### Architecture
+
+The AITECH token is used as the reward token in the DecubateMasterChef contract, which is deployed via a transparent upgradeable proxy, indicating a shared dependency on the token for reward distribution.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Verified implementations audited: 0/3 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 2
+- Unique implementations: 3
+- Raw deployments: 4
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -47,12 +46,13 @@ AITECH / Solidus AI Tech is an AI infrastructure and cloud compute project focus
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| AITECH | token | bsc | [`0x2d060e...e4f944`](./contracts/bsc-56/0x2d060ef4d6bf7f9e5edde373ab735513c0e4f944/) | ⚠️ Unaudited |
-| DecubateMasterChef | proxy | bsc | [`0x2c4dd7...c31184`](./contracts/bsc-56/0x2c4dd7db5ce6a9a2fb362f64ff189af772c31184/) | ⚠️ Unaudited |
+| AITECH | unknown | bsc | [`0x2d060e...e4f944`](./contracts/bsc-56/0x2d060ef4d6bf7f9e5edde373ab735513c0e4f944/) | ⚠️ Unaudited |
+| DCBVault | core_logic | bsc | [`0xf1c3f6...84b096`](./contracts/bsc-56/0xf1c3f68f82e6d2560a12d977b322a5db4684b096/) | ⚠️ Unaudited |
+| DecubateMasterChef | unknown | bsc | 2 deployments: bsc [`0x2c4dd7...c31184`](./contracts/bsc-56/0x2c4dd7db5ce6a9a2fb362f64ff189af772c31184/); bsc `0xb934f5...f7f36f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,7 +84,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x2d060e...e4f944`](./contracts/bsc-56/0x2d060ef4d6bf7f9e5edde373ab735513c0e4f944/) | AITECH | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x2d060e...e4f944`](./contracts/bsc-56/0x2d060ef4d6bf7f9e5edde373ab735513c0e4f944/) | AITECH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
@@ -92,7 +92,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 1 |
 | upstream | 0 |
-| standard_library | 1 |
+| standard_library | 2 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

@@ -3,15 +3,15 @@
 ## Project Overview
 
 - Project: HyperWave (`hyperwave`)
-- Website: [https://app.hyperwavefi.xyz/hyperfren/DEFILLAMA](https://app.hyperwavefi.xyz/hyperfren/DEFILLAMA)
+- Website: [https://app.hyperwavefi.xyz](https://app.hyperwavefi.xyz)
 - Lifecycle: active (Tier 0, 86.2% below peak)
-- Generated: 2026-06-11T00:00:12.586Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
+- Generated: 2026-06-14T03:38:31.290Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
 - Chains: base, ethereum, hyperliquid
-- Contract surface: 11 unique implementations (26 raw deployments)
-- DeFi Llama TVL: $6,383,775.03
-- On-chain TVL (included contracts): $322,694,300.53
-- TVL by chain: Ethereum $322,694,245.24 | Hyperliquid $55.30
+- Contract surface: 12 unique implementations (38 raw deployments)
+- DeFi Llama TVL: $3,317,652.40
+- On-chain TVL (included contracts): $499,873,407.55
+- TVL by chain: Ethereum $322,695,046.97 | Base $177,178,305.28 | Hyperliquid $55.30
 
 ## Project Description
 
@@ -23,15 +23,15 @@ All product families share the BoringVault pattern for asset custody and rely on
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/7 (0.0%)
-- Verified + Unaudited implementations: 7
+- Verified implementations audited: 0/8 (0.0%)
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
 - Unverified implementations: 4
-- Unique implementations: 11
-- Raw deployments: 26
+- Unique implementations: 12
+- Raw deployments: 38
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $322,694,300.53
+- ASD (verified + unaudited TVL): $499,873,407.55
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
@@ -46,15 +46,16 @@ All product families share the BoringVault pattern for asset custody and rely on
 
 - None
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| ATokenInstance | token | ethereum | 3 deployments: ethereum [`0x238789...d4086a`](./contracts/ethereum-1/0x23878914efe38d27c4d67ab83ed1b93a74d4086a/); ethereum `0x4f5923...12decf`; ethereum `0x98c23e...e16f5c` | ⚠️ Unaudited |
-| BoringVault | core_logic | hyperliquid | 5 deployments: ethereum `0x9ba2ed...1bb160`; hyperliquid [`0x4de03c...2f5858`](./contracts/hyperliquid-999/0x4de03ca1f02591b717495cfa19913ad56a2f5858/); hyperliquid `0x855ced...f55c4f`; hyperliquid `0x9fd746...8d72d1`; hyperliquid `0xa2f8da...a4ff77` | ⚠️ Unaudited |
+| ATokenInstance | token | ethereum | 4 deployments: ethereum [`0x238789...d4086a`](./contracts/ethereum-1/0x23878914efe38d27c4d67ab83ed1b93a74d4086a/); ethereum `0x4f5923...12decf`; ethereum `0x98c23e...e16f5c`; base `0x4e65fe...f5c0ab` | ⚠️ Unaudited |
+| BoringVault | core_logic | hyperliquid | 6 deployments: ethereum `0x9ba2ed...1bb160`; ethereum `0x9fd746...8d72d1`; hyperliquid [`0x4de03c...2f5858`](./contracts/hyperliquid-999/0x4de03ca1f02591b717495cfa19913ad56a2f5858/); hyperliquid `0x855ced...f55c4f`; hyperliquid `0x9fd746...8d72d1`; hyperliquid `0xa2f8da...a4ff77` | ⚠️ Unaudited |
 | AccountantWithRateProviders | operational_periphery | hyperliquid | 4 deployments: hyperliquid [`0x74f3b2...510e3b`](./contracts/hyperliquid-999/0x74f3b2edc56df9d2a7db9249d9bae6e346510e3b/); hyperliquid `0x78e3ac...d0b03e`; hyperliquid `0xa77f32...46055d`; hyperliquid `0xcf9be8...ee2a32` | ⚠️ Unaudited |
-| ManagerWithMerkleVerification | operational_periphery | hyperliquid | 3 deployments: hyperliquid [`0xd0f20e...df11d2`](./contracts/hyperliquid-999/0xd0f20e410503fb2b5431bf802263f4671cdf11d2/); hyperliquid `0xe3d3b6...0d1cc1`; hyperliquid `0xf0cd28...1f1929` | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | base | [`0x616a4e...273738`](./contracts/base-8453/0x616a4e1db48e22028f6bbf20444cd3b8e3273738/) | ⚠️ Unaudited |
+| ManagerWithMerkleVerification | unknown | hyperliquid | 4 deployments: hyperliquid [`0x519a4e...ae5618`](./contracts/hyperliquid-999/0x519a4e3ee7daea8d2814f059eefcd44dc4ae5618/); hyperliquid `0xd0f20e...df11d2`; hyperliquid `0xe3d3b6...0d1cc1`; hyperliquid `0xf0cd28...1f1929` | ⚠️ Unaudited |
+| MetaMorpho | unknown | ethereum | 4 deployments: ethereum [`0xbeef01...2a64cb`](./contracts/ethereum-1/0xbeef01735c132ada46aa9aa4c54623caa92a64cb/); ethereum `0xbeef04...0fcfba`; ethereum `0xbeefff...86f5bc`; ethereum `0xd63070...d33a3d` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | hyperliquid | 6 deployments: hyperliquid [`0x2900ab...c06a76`](./contracts/hyperliquid-999/0x2900abd73631b2f60747e687095537b673c06a76/); hyperliquid `0x835feb...6938ab`; hyperliquid `0x8a862f...8cea27`; hyperliquid `0xfc5126...7d151e`; base `0x616a4e...273738`; base `0x7bfa7c...cbf34a` | ⚠️ Unaudited |
 | RolesAuthority | governance | hyperliquid | 4 deployments: hyperliquid [`0x4d1cf3...9da917`](./contracts/hyperliquid-999/0x4d1cf31a919d62c65fa616185824fe78a09da917/); hyperliquid `0x5ed141...6ff4cc`; hyperliquid `0xce9dff...1e3b8f`; hyperliquid `0xe4b9c0...204b75` | ⚠️ Unaudited |
 | TellerWithMultiAssetSupport | core_logic | hyperliquid | 2 deployments: hyperliquid [`0x70cb1a...9b3dd5`](./contracts/hyperliquid-999/0x70cb1a1888afee738344dd879d818e1f369b3dd5/); hyperliquid `0xfa8035...d079d7` | ⚠️ Unaudited |
 
@@ -92,18 +93,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| hyperliquid | [`0x4de03c...2f5858`](./contracts/hyperliquid-999/0x4de03ca1f02591b717495cfa19913ad56a2f5858/) | BoringVault | core_logic | $55.30 | Verified native implementation with $55.30 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x4d1cf3...9da917`](./contracts/hyperliquid-999/0x4d1cf31a919d62c65fa616185824fe78a09da917/) | RolesAuthority | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x70cb1a...9b3dd5`](./contracts/hyperliquid-999/0x70cb1a1888afee738344dd879d818e1f369b3dd5/) | TellerWithMultiAssetSupport | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x519a4e...ae5618`](./contracts/hyperliquid-999/0x519a4e3ee7daea8d2814f059eefcd44dc4ae5618/) | ManagerWithMerkleVerification | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
-| upstream | 2 |
+| native | 1 |
+| upstream | 3 |
 | standard_library | 0 |
-| needs_review | 6 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 

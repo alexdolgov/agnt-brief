@@ -4,32 +4,31 @@
 
 - Project: Dnax (`dnax`)
 - Website: [https://dnax.us/](https://dnax.us/)
-- Lifecycle: active (Tier 0, 39.5% below peak)
-- Generated: 2026-06-10T22:53:37.365Z
-- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
+- Lifecycle: active (Tier 0, 42.5% below peak)
+- Generated: 2026-06-14T03:35:58.537Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
 - Chains: bsc
-- Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $3,536,397.04
+- Contract surface: 3 unique implementations (4 raw deployments)
+- DeFi Llama TVL: $3,354,305.09
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Dnax is a BSC onchain trading and DEX protocol focused on automated trading features, including automated limit orders, custom price ranges, grid and recurring orders, and orderbook-like trading functionality through its upgradeable core controller contract.
 
+### Architecture
+
+The protocol consists of a single product family where the OptimizedTransparentUpgradeableProxy serves as the governance-controlled entry point, delegating all logic to the CarbonController implementation.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Verified implementations audited: 0/3 (0.0%)
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
+- Unique implementations: 3
+- Raw deployments: 4
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -47,11 +46,13 @@ Dnax is a BSC onchain trading and DEX protocol focused on automated trading feat
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| CarbonController | core_logic | bsc | [`0xafc43f...a9a1b9`](./contracts/bsc-56/0xafc43fae32302d725fc4d448525c44c522a9a1b9/) | ⚠️ Unaudited |
+| CarbonController | unknown | bsc | 2 deployments: bsc [`0x62b2b6...3c7e2f`](./contracts/bsc-56/0x62b2b60e2112011e5f5c34e3865d83a93c3c7e2f/); bsc `0xafc43f...a9a1b9` | ⚠️ Unaudited |
+| Multicall3 | periphery | bsc | [`0xca11bd...76ca11`](./contracts/bsc-56/0xca11bde05977b3631167028862be2a173976ca11/) | ⚠️ Unaudited |
+| OptimizedTransparentUpgradeableProxy | proxy | bsc | [`0xea9dfe...95f48b`](./contracts/bsc-56/0xea9dfe485a700229068d9419488103f6ee95f48b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,15 +83,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xafc43f...a9a1b9`](./contracts/bsc-56/0xafc43fae32302d725fc4d448525c44c522a9a1b9/) | CarbonController | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x62b2b6...3c7e2f`](./contracts/bsc-56/0x62b2b60e2112011e5f5c34e3865d83a93c3c7e2f/) | CarbonController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xea9dfe...95f48b`](./contracts/bsc-56/0xea9dfe485a700229068d9419488103f6ee95f48b/) | OptimizedTransparentUpgradeableProxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 2 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

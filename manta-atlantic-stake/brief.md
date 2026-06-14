@@ -7,8 +7,8 @@
 - Project: Manta Atlantic Stake (`manta-atlantic-stake`)
 - Website: [https://app.manta.network/manta/stake](https://app.manta.network/manta/stake)
 - Lifecycle: sunsetting (Tier 1, sunsetting)
-- Generated: 2026-06-13T21:08:33.266Z
-- Pipeline run: v2-pipeline-2026-06-13-e4a349-f8ad
+- Generated: 2026-06-14T03:35:11.264Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
 - Chains: ethereum, manta
 - Contract surface: 109 unique implementations (136 raw deployments)
 - DeFi Llama TVL: $5,455,710.91

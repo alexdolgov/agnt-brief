@@ -1,0 +1,18 @@
+{
+  "address": "0x71c0ab7df00f00e4ec2990d4f1c8302c1d178f69",
+  "chain_id": 1,
+  "contract_name": "Verifier28x32",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "london",
+  "license": "Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-14T04:05:19.255Z"
+}

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stakingverse",
-  "generated_at": "2026-06-11T03:06:08.294Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-ce25",
+  "generated_at": "2026-06-14T04:13:41.569Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-d641",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stakingverse",
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 3,
-    "total_addresses": 3,
+    "total_addresses": 4,
     "unique_implementations": 3,
-    "total_deployments": 3,
+    "total_deployments": 4,
     "audited_contracts": 0,
     "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
     "coverage_pct": 0,
-    "total_audits": 14,
+    "total_audits": 18,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4028554.3659,
+    "dl_tvl_usd": 3278435.9286700003,
     "tvl_usd": 3542371.788202899,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -54,19 +54,19 @@
     "staleness_breakdown": {
       "fresh": 2,
       "aging": 4,
-      "stale": 5,
-      "unknown": 3
+      "stale": 7,
+      "unknown": 5
     }
   },
   "topography": {
     "project_purpose": "Stakingverse is a liquid staking protocol operating on LUKSO and Ethereum, supporting liquid staking for LYX/LUKSO and ETH/Ethereum through a vault-based architecture. Receipt-token relationships should be stated only where independently verified; do not claim that SLYX represents staked ETH without verification.",
-    "relationship_narrative": null,
+    "relationship_narrative": "The ERC1967Proxy delegates to the EthVault implementation, which likely mints and burns SLYX tokens in response to user deposits and withdrawals. The StakingverseVault may interact with the same SLYX token or share infrastructure with the main vault.",
     "product_family_count": 3
   },
   "surface_sufficiency": {
     "unique_implementations": 3,
-    "has_non_token_contracts": false,
-    "is_skeletal": true
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -78,7 +78,7 @@
       "chain_name": "ethereum",
       "address": "0x8a93a876912c9f03f88bc9114847cf5b63c89f56",
       "name": "EthVault",
-      "role": "proxy",
+      "role": "core_logic",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "Resources",
@@ -94,6 +94,15 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 3542371.788202899,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x927a83c679a5e1a6435d6bfaef7f20d4db23e2cc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -169,11 +178,11 @@
   ],
   "audits": [
     {
-      "audit_id": 2610,
-      "audit_key": "audit-2610",
-      "report_name": "Liquid_Staking_Audit_Oct_2024.pdf",
-      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Liquid_Staking_Audit_Oct_2024.pdf",
-      "auditor": "unknown",
+      "audit_id": 2617,
+      "audit_key": "audit-2617",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Stakingverse_LST_Audit.pdf",
+      "auditor": "Nethermind AI Agent",
       "audit_type": "audit",
       "freshness": "aging",
       "date": "2025-01",
@@ -190,20 +199,20 @@
       "repo_reference_count": 0,
       "duplicate_audit_ids": [
         {
-          "audit_id": 2610,
-          "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Liquid_Staking_Audit_Oct_2024.pdf"
+          "audit_id": 2617,
+          "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Stakingverse_LST_Audit.pdf"
         },
         {
-          "audit_id": 2619,
-          "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Liquid_Staking_Audit_Oct_2024.pdf"
+          "audit_id": 14328,
+          "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Stakingverse_LST_Audit.pdf"
         }
       ]
     },
     {
-      "audit_id": 2611,
-      "audit_key": "audit-2611",
-      "report_name": "Stakingverse_Audit_MiloTruck.pdf",
-      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Stakingverse_Audit_MiloTruck.pdf",
+      "audit_id": 2618,
+      "audit_key": "audit-2618",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Stakingverse_Audit_MiloTruck.pdf",
       "auditor": "MiloTruck",
       "audit_type": "audit",
       "freshness": "aging",
@@ -221,21 +230,21 @@
       "repo_reference_count": 0,
       "duplicate_audit_ids": [
         {
-          "audit_id": 2611,
-          "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Stakingverse_Audit_MiloTruck.pdf"
-        },
-        {
           "audit_id": 2618,
           "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Stakingverse_Audit_MiloTruck.pdf"
+        },
+        {
+          "audit_id": 14327,
+          "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Stakingverse_Audit_MiloTruck.pdf"
         }
       ]
     },
     {
-      "audit_id": 2612,
-      "audit_key": "audit-2612",
-      "report_name": "Stakingverse_LST_Audit.pdf",
-      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Stakingverse_LST_Audit.pdf",
-      "auditor": "unknown",
+      "audit_id": 2619,
+      "audit_key": "audit-2619",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Liquid_Staking_Audit_Oct_2024.pdf",
+      "auditor": "Nethermind AI Agent",
       "audit_type": "audit",
       "freshness": "aging",
       "date": "2025-01",
@@ -252,56 +261,14 @@
       "repo_reference_count": 0,
       "duplicate_audit_ids": [
         {
-          "audit_id": 2612,
-          "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Stakingverse_LST_Audit.pdf"
+          "audit_id": 2619,
+          "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Liquid_Staking_Audit_Oct_2024.pdf"
         },
         {
-          "audit_id": 2617,
-          "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Stakingverse_LST_Audit.pdf"
+          "audit_id": 14326,
+          "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Liquid_Staking_Audit_Oct_2024.pdf"
         }
       ]
-    },
-    {
-      "audit_id": 2613,
-      "audit_key": "audit-2613",
-      "report_name": "nethermind-ai-agent-audit-report-stakingverse-pool-contracts.pdf",
-      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/nethermind-ai-agent-audit-report-stakingverse-pool-contracts.pdf",
-      "auditor": "Nethermind",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2614,
-      "audit_key": "audit-2614",
-      "report_name": "nethermind-findings.md",
-      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/nethermind-findings.md",
-      "auditor": "Nethermind",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     },
     {
       "audit_id": 2620,
@@ -491,6 +458,132 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14329,
+      "audit_key": "audit-14329",
+      "report_name": "nethermind-ai-agent-audit-report-stakingverse-pool-contracts.pdf",
+      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/nethermind-ai-agent-audit-report-stakingverse-pool-contracts.pdf",
+      "auditor": "Nethermind",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14330,
+      "audit_key": "audit-14330",
+      "report_name": "nethermind-findings.md",
+      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/nethermind-findings.md",
+      "auditor": "Nethermind",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14331,
+      "audit_key": "audit-14331",
+      "report_name": "slither_report_SLYXToken.md",
+      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/slither_report_SLYXToken.md",
+      "auditor": "Slither",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14332,
+      "audit_key": "audit-14332",
+      "report_name": "slither_report_StakingverseVault.md",
+      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/slither_report_StakingverseVault.md",
+      "auditor": "Slither",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14337,
+      "audit_key": "audit-14337",
+      "report_name": "2023-1-9-UniversalPage.md",
+      "report_url": "https://github.com/Universal-Page/contracts/blob/main/audits/2023-1-9-UniversalPage.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14338,
+      "audit_key": "audit-14338",
+      "report_name": "2024-2-1-UniversalPage-Vault-security-review.pdf",
+      "report_url": "https://github.com/Universal-Page/contracts/blob/main/audits/2024-2-1-UniversalPage-Vault-security-review.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -508,24 +601,16 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 2610,
-        "report_name": "Liquid_Staking_Audit_Oct_2024.pdf"
+        "audit_id": 2617,
+        "report_name": "Rendered PDF capture"
       },
       {
-        "audit_id": 2611,
-        "report_name": "Stakingverse_Audit_MiloTruck.pdf"
+        "audit_id": 2618,
+        "report_name": "Rendered PDF capture"
       },
       {
-        "audit_id": 2612,
-        "report_name": "Stakingverse_LST_Audit.pdf"
-      },
-      {
-        "audit_id": 2613,
-        "report_name": "nethermind-ai-agent-audit-report-stakingverse-pool-contracts.pdf"
-      },
-      {
-        "audit_id": 2614,
-        "report_name": "nethermind-findings.md"
+        "audit_id": 2619,
+        "report_name": "Rendered PDF capture"
       },
       {
         "audit_id": 2620,
@@ -562,6 +647,30 @@
       {
         "audit_id": 2630,
         "report_name": "2026-04-Statemind.pdf"
+      },
+      {
+        "audit_id": 14329,
+        "report_name": "nethermind-ai-agent-audit-report-stakingverse-pool-contracts.pdf"
+      },
+      {
+        "audit_id": 14330,
+        "report_name": "nethermind-findings.md"
+      },
+      {
+        "audit_id": 14331,
+        "report_name": "slither_report_SLYXToken.md"
+      },
+      {
+        "audit_id": 14332,
+        "report_name": "slither_report_StakingverseVault.md"
+      },
+      {
+        "audit_id": 14337,
+        "report_name": "2023-1-9-UniversalPage.md"
+      },
+      {
+        "audit_id": 14338,
+        "report_name": "2024-2-1-UniversalPage-Vault-security-review.pdf"
       }
     ],
     "inherited_remapped_matches": []

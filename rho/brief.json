@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "rho",
-  "generated_at": "2026-06-11T02:23:33.654Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-bd5e",
+  "generated_at": "2026-06-14T04:14:34.724Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-d641",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "rho",
@@ -22,26 +22,27 @@
     "drop_from_peak_pct": 5.016009325820867
   },
   "summary": {
-    "total_contracts": 31,
-    "total_addresses": 35,
-    "unique_implementations": 31,
-    "total_deployments": 35,
+    "total_contracts": 35,
+    "total_addresses": 39,
+    "unique_implementations": 35,
+    "total_deployments": 39,
     "audited_contracts": 0,
     "unaudited_contracts": 2,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 1,
-    "contracts_unverified": 29,
+    "contracts_unverified": 33,
     "coverage_pct": 0,
-    "total_audits": 3,
+    "total_audits": 4,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2472255,
-    "tvl_usd": 2472255,
+    "dl_tvl_usd": 2307119,
+    "tvl_usd": 2307119,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.rho.trading/",
     "chains": [
+      "arbitrum",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -51,7 +52,7 @@
     "staleness_breakdown": {
       "fresh": 2,
       "aging": 0,
-      "stale": 0,
+      "stale": 1,
       "unknown": 1
     }
   },
@@ -61,7 +62,7 @@
     "product_family_count": 2
   },
   "surface_sufficiency": {
-    "unique_implementations": 31,
+    "unique_implementations": 35,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -76,8 +77,8 @@
       "address": "0x461ffa24b716f68c5a4fb583592f295db5f7ba36",
       "name": "ERC1967Proxy",
       "role": "proxy",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": "Mainnet (Ethereum)",
       "tvl_usd": null,
       "is_proxy": true,
@@ -167,6 +168,99 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xbef0110560921824af49de900f2f0bf9ceb87e8c",
+      "name": "Proxy (impl: 0x0feef3d05fedad3290c73cfff2f250bf0246bd8e)",
+      "role": "proxy",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x0feef3d05fedad3290c73cfff2f250bf0246bd8e",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xbef0110560921824af49de900f2f0bf9ceb87e8c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xdcb233560ef093ebf7be820ee6de1df8c9f86586",
+      "name": "Proxy (impl: 0x7c4a7cc34288e8bae093e96586629c8ed7a60b2b)",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7c4a7cc34288e8bae093e96586629c8ed7a60b2b",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xdcb233560ef093ebf7be820ee6de1df8c9f86586",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1e50242e9c5fb0b1e6b9daf9676793d284d5aaca",
+      "name": "Proxy (impl: 0xbbf60a272eb36a8684666528e99b1723b8eb6b34)",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xbbf60a272eb36a8684666528e99b1723b8eb6b34",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x1e50242e9c5fb0b1e6b9daf9676793d284d5aaca",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -1066,6 +1160,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xb5855e692465b6c1b5172fcaf59ac67f20621a4d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb5855e692465b6c1b5172fcaf59ac67f20621a4d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     }
   ],
   "audits": [
@@ -1131,6 +1256,27 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 14353,
+      "audit_key": "audit-14353",
+      "report_name": "Rho Protocol Audit Report",
+      "report_url": "https://oxor-io.github.io/public_audits/Rho/Rho%20Protocol%20Audit%20Report.pdf",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -1149,8 +1295,8 @@
   "origin_summary": {
     "native": 4,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 26
+    "standard_library": 0,
+    "needs_review": 31
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -1169,6 +1315,10 @@
       {
         "audit_id": 2813,
         "report_name": "Vault Contracts v2 Audit"
+      },
+      {
+        "audit_id": 14353,
+        "report_name": "Rho Protocol Audit Report"
       }
     ],
     "inherited_remapped_matches": []

@@ -377,7 +377,7 @@
 | [elephant-money](./elephant-money/) | $1.6M | 5.9% | $1.6M | declining | 2 | 346 | 2026-06-10 |
 | [elfi-protocol](./elfi-protocol/) | $3.4M | 29.5% | ? | declining | 1 | 2406 | 2026-06-10 |
 | [ellipsis-finance](./ellipsis-finance/) | $59.0K | 29.4% | $9.0K | dead | 3 | 22 | 2026-06-11 |
-| [elyfi](./elyfi/) | $434.8K | 5.9% | $175.9 | dead | 2 | 30 | 2026-05-24 |
+| [elyfi](./elyfi/) | $537.7K | 4.0% | $103.1K | dead | 2 | 39 | 2026-06-14 |
 | [emiswap](./emiswap/) | $33.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [empmoney](./empmoney/) | $182.0K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [emu](./emu/) | $2.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
@@ -795,7 +795,7 @@
 | [nbx](./nbx/) | $1.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [near-intents](./near-intents/) | $3.7M | 0.0% | $3.7M | active | 0 | 7 | 2026-06-12 |
 | [neemo-finance](./neemo-finance/) | $1.1M | 0.0% | ? | active | 1 | 14 | 2026-06-14 |
-| [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 17 | 2026-06-11 |
+| [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 19 | 2026-06-14 |
 | [nemo](./nemo/) | $76.1K | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
 | [nemoswap](./nemoswap/) | $65.5K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [neo-tokyo](./neo-tokyo/) | $26.8K | 0.0% | $26.8K | unknown | 0 | 87 | 2026-06-13 |
@@ -996,7 +996,7 @@
 | [rezerve](./rezerve/) | $1.3M | 1.3% | $1.3M | active | 3 | 104 | 2026-06-11 |
 | [rhea-finance](./rhea-finance/) | $208.0M | 0.0% | ? | unknown | 2 | 0 | 2026-06-13 |
 | [rheo](./rheo/) | $33.3K | 0.0% | ? | unknown | 16 | 0 | 2026-06-13 |
-| [rho](./rho/) | $2.5M | 0.0% | ? | active | 3 | 31 | 2026-06-11 |
+| [rho](./rho/) | $2.3M | 0.0% | ? | active | 4 | 35 | 2026-06-14 |
 | [ribbon-finance](./ribbon-finance/) | $179.3M | 31.0% | $148.6M | declining | 14 | 147 | 2026-06-11 |
 | [rifts-finance](./rifts-finance/) | $18.6K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [ring-protocol](./ring-protocol/) | $83.5M | 10.6% | $83.5M | active | 8 | 90 | 2026-06-11 |
@@ -1104,7 +1104,7 @@
 | [sorare-bridge](./sorare-bridge/) | $3.0M | 0.0% | ? | declining | 0 | 54 | 2026-06-13 |
 | [sorta-finance](./sorta-finance/) | $107.9K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [sosovalue](./sosovalue/) | $89.1M | 0.0% | ? | unknown | 3 | 0 | 2026-06-13 |
-| [sovryn-bridge](./sovryn-bridge/) | $2.9M | 0.0% | ? | active | 0 | 47 | 2026-06-11 |
+| [sovryn-bridge](./sovryn-bridge/) | $2.5M | 0.0% | ? | active | 0 | 48 | 2026-06-14 |
 | [sovryn](./sovryn/) | $38.3M | 0.0% | ? | unknown | 11 | 0 | 2026-06-11 |
 | [spacebar](./spacebar/) | $635.4 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [spacefi](./spacefi/) | $1.5M | 0.0% | ? | active | 5 | 38 | 2026-06-11 |
@@ -1140,7 +1140,7 @@
 | [stake.ly](./stake.ly/) | $16.2K | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [stakehound](./stakehound/) | $0.0 | 0.0% | ? | unknown | 1 | 0 | 2026-06-13 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | active | 0 | 198 | 2026-06-12 |
-| [stakingverse](./stakingverse/) | $3.5M | 0.0% | $3.5M | active | 14 | 3 | 2026-06-11 |
+| [stakingverse](./stakingverse/) | $3.5M | 0.0% | $3.5M | active | 18 | 3 | 2026-06-14 |
 | [standx](./standx/) | $48.3M | 57.1% | ? | declining | 6 | 17 | 2026-06-11 |
 | [stargate-finance](./stargate-finance/) | $203.9M | 50.0% | $5.2M | active | 17 | 294 | 2026-06-11 |
 | [stargate](./stargate/) | $5.9M | 0.0% | ? | unknown | 0 | 0 | 2026-06-11 |

@@ -5,11 +5,11 @@
 - Project: Sovryn Bridge (`sovryn-bridge`)
 - Website: [https://alpha.sovryn.app](https://alpha.sovryn.app)
 - Lifecycle: active (Tier 0, 85.5% below peak)
-- Generated: 2026-06-11T02:53:18.237Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-79ef
+- Generated: 2026-06-14T04:10:40.509Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
 - Chains: ethereum
-- Contract surface: 47 unique implementations (50 raw deployments)
-- DeFi Llama TVL: $2,869,052.79
+- Contract surface: 48 unique implementations (51 raw deployments)
+- DeFi Llama TVL: $2,525,690.98
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -26,9 +26,9 @@ The project consists of a single product family with one proxy contract, indicat
 - Verified implementations audited: 0/5 (0.0%)
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 42
-- Unique implementations: 47
-- Raw deployments: 50
+- Unverified implementations: 43
+- Unique implementations: 48
+- Raw deployments: 51
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -51,7 +51,7 @@ The project consists of a single product family with one proxy contract, indicat
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | AdminUpgradeabilityProxy | proxy | ethereum | [`0x33c0d3...366ee1`](./contracts/ethereum-1/0x33c0d33a0d4312562ad622f91d12b0ac47366ee1/) | ⚠️ Unaudited |
-| AllowTokens | registry | ethereum | 3 deployments: ethereum [`0x1486e2...f70fe0`](./contracts/ethereum-1/0x1486e225ee099f7ea491e32cd2a69e8264f70fe0/); ethereum `0x8df20c...0aa1be`; ethereum `0x9d772c...9789fd` | ⚠️ Unaudited |
+| AllowTokens | token | ethereum | 3 deployments: ethereum [`0x1486e2...f70fe0`](./contracts/ethereum-1/0x1486e225ee099f7ea491e32cd2a69e8264f70fe0/); ethereum `0x8df20c...0aa1be`; ethereum `0x9d772c...9789fd` | ⚠️ Unaudited |
 | Federation | unknown | ethereum | 2 deployments: ethereum [`0x2493b9...4cbd18`](./contracts/ethereum-1/0x2493b92b3b958c8d1e93899cae00bfc4854cbd18/); ethereum `0xa38e6a...c4df24` | ⚠️ Unaudited |
 | MultiSigWallet | governance | ethereum | [`0x062c74...3ccd2e`](./contracts/ethereum-1/0x062c74f9d27b1178bb76186c1756128ccb3ccd2e/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | [`0xd60010...512c07`](./contracts/ethereum-1/0xd6001073ef1ba973e53719766780b95667512c07/) | ⚠️ Unaudited |
@@ -68,7 +68,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (42)
+### ❓ Unverified (43)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -82,6 +82,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | `0x1d9524...48fade` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x249ea3...744faf` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x29cdad...633b71` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | `0x347ac5...1554ae` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x49eef2...ecf420` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x603e82...d24d5e` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x657595...65bea9` | ❓ Unverified |
@@ -129,7 +130,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x33c0d3...366ee1`](./contracts/ethereum-1/0x33c0d33a0d4312562ad622f91d12b0ac47366ee1/) | AdminUpgradeabilityProxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1486e2...f70fe0`](./contracts/ethereum-1/0x1486e225ee099f7ea491e32cd2a69e8264f70fe0/) | AllowTokens | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1486e2...f70fe0`](./contracts/ethereum-1/0x1486e225ee099f7ea491e32cd2a69e8264f70fe0/) | AllowTokens | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2493b9...4cbd18`](./contracts/ethereum-1/0x2493b92b3b958c8d1e93899cae00bfc4854cbd18/) | Federation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x062c74...3ccd2e`](./contracts/ethereum-1/0x062c74f9d27b1178bb76186c1756128ccb3ccd2e/) | MultiSigWallet | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -137,10 +138,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 25 |
+| native | 4 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 21 |
+| needs_review | 43 |
 
 ## Scope Matching Notes
 

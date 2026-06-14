@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "neku",
-  "generated_at": "2026-06-11T01:22:41.057Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-11-5b3b54-1f48",
+  "generated_at": "2026-06-14T04:12:52.171Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-14-ec5560-d641",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "neku",
@@ -16,22 +16,22 @@
     "tvl_180d_ago": 357870,
     "change_30d_pct": 0,
     "change_90d_pct": 0,
-    "days_since_peak": 1659,
+    "days_since_peak": 1680,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 86.39253249012435
   },
   "summary": {
-    "total_contracts": 17,
-    "total_addresses": 55,
-    "unique_implementations": 17,
-    "total_deployments": 55,
+    "total_contracts": 19,
+    "total_addresses": 57,
+    "unique_implementations": 19,
+    "total_deployments": 57,
     "audited_contracts": 0,
-    "unaudited_contracts": 8,
+    "unaudited_contracts": 9,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 8,
+    "contracts_verified_unaudited": 9,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 9,
+    "contracts_unverified": 10,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
@@ -44,7 +44,8 @@
     "asd_usd": 8382810.2657540655,
     "website_url": null,
     "chains": [
-      "arbitrum"
+      "arbitrum",
+      "moonriver"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
@@ -63,7 +64,7 @@
     "product_family_count": 1
   },
   "surface_sufficiency": {
-    "unique_implementations": 17,
+    "unique_implementations": 19,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -465,7 +466,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 42161,
@@ -473,8 +474,8 @@
       "address": "0x3bf0880fd26e49c46d1a1e69adb268889b4be840",
       "name": "Comp",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "compound-finance",
       "product_line": "Neku",
       "tvl_usd": null,
       "is_proxy": false,
@@ -536,7 +537,38 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x1e930c6a1ec0e098617a2c202939ed0345a9641e",
+      "name": "MasterChef",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "sushi",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MasterChef",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x1e930c6a1ec0e098617a2c202939ed0345a9641e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
     },
     {
       "chain_id": 42161,
@@ -544,7 +576,7 @@
       "address": "0xf8e3c6d39a4f05fc8980cea6710c79d7a9d57c98",
       "name": "OracleObserver",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -567,7 +599,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 42161,
@@ -598,7 +630,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 42161,
@@ -630,6 +662,37 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xb723575ba3c550178952f0e735bb45b6e1599ba5",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0xb723575ba3c550178952f0e735bb45b6e1599ba5",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
     },
     {
       "chain_id": 42161,
@@ -761,7 +824,7 @@
       "address": "0x87746c74a0f2143f16872d0d563c9136576f0d31",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -792,7 +855,7 @@
       "address": "0x893c6f09237625f8474642420d90118b2c759ba5",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -823,7 +886,7 @@
       "address": "0xae221886a8966df6a8ddd15c6b78b0661344f9e6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -854,7 +917,7 @@
       "address": "0xbbb52df876c3e4d5c3f08210b19d6c58980bd0a4",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -885,7 +948,7 @@
       "address": "0xc4a982065f4ae0df9156456330803f5dab462b6b",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -990,8 +1053,8 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x3bf0880fd26e49c46d1a1e69adb268889b4be840",
-      "name": "Comp",
+      "address": "0x0983b43a40a2e36ce1ea55b2ac88041fc88e2613",
+      "name": "ComptrollerG7",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -1000,9 +1063,9 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x0983b43a40a2e36ce1ea55b2ac88041fc88e2613",
-      "name": "ComptrollerG7",
-      "role": "unknown",
+      "address": "0xf8e3c6d39a4f05fc8980cea6710c79d7a9d57c98",
+      "name": "OracleObserver",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1039,10 +1102,10 @@
     }
   ],
   "origin_summary": {
-    "native": 11,
-    "upstream": 0,
+    "native": 16,
+    "upstream": 2,
     "standard_library": 0,
-    "needs_review": 6
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

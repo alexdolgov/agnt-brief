@@ -1,6 +1,6 @@
 # rho — Contract Index
 
-31 unique implementations on ethereum · 35 deployments · 0 audited · 2 unaudited · 29 unverified
+35 unique implementations across 2 chains · 39 deployments · 0 audited · 2 unaudited · 33 unverified
 
 ## core_logic (1)
 
@@ -8,16 +8,19 @@
 |---|---|---|---|---|
 | [FixedRateMaturityVault (3 deployments)](./ethereum-1/0x535a5dbf628f79e36a0dbc7a3e8521df33e9bb68/) | ethereum | 3 deployments: ethereum [`0x535a5d...e9bb68`](./ethereum-1/0x535a5dbf628f79e36a0dbc7a3e8521df33e9bb68/); ethereum `0x9fc8b7...92b297`; ethereum `0xfa01d7...a6948a` | ⚠️ Unaudited | Verified |
 
-## proxy (1)
+## proxy (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | ERC1967Proxy (3 deployments) | ethereum | 3 deployments: ethereum `0x461ffa...f7ba36`; ethereum `0xcf60f0...a340ec`; ethereum [`0xed96fe...c91fc1`](./ethereum-1/0xed96feea08a03bfce1620070193ddf840ac91fc1/) | ⚠️ Unaudited | Verified |
+| Proxy (impl: 0x0feef3d05fedad3290c73cfff2f250bf0246bd8e) | arbitrum | `0xbef011...b87e8c` | ❓ Unverified | Unverified |
 
-## unknown (29)
+## unknown (32)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
+| Proxy (impl: 0x7c4a7cc34288e8bae093e96586629c8ed7a60b2b) | arbitrum | `0xdcb233...f86586` | ❓ Unverified | Unverified |
+| Proxy (impl: 0xbbf60a272eb36a8684666528e99b1723b8eb6b34) | arbitrum | `0x1e5024...d5aaca` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x037b13...677bec` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x061765...f6c242` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x111b39...bce0d7` | ❓ Unverified | Unverified |
@@ -47,3 +50,4 @@
 | UnnamedContract | ethereum | `0xf33bcb...a5330d` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xf95441...aaed06` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0xfbb3c9...bdcd4a` | ❓ Unverified | Unverified |
+| UnnamedContract | arbitrum | `0xb5855e...621a4d` | ❓ Unverified | Unverified |

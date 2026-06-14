@@ -1,6 +1,6 @@
 # sovryn-bridge — Contract Index
 
-47 unique implementations on ethereum · 50 deployments · 0 audited · 5 unaudited · 42 unverified
+48 unique implementations on ethereum · 51 deployments · 0 audited · 5 unaudited · 43 unverified
 
 ## governance (2)
 
@@ -15,13 +15,13 @@
 |---|---|---|---|---|
 | [AdminUpgradeabilityProxy](./ethereum-1/0x33c0d33a0d4312562ad622f91d12b0ac47366ee1/) | ethereum | [`0x33c0d3...366ee1`](./ethereum-1/0x33c0d33a0d4312562ad622f91d12b0ac47366ee1/) | ⚠️ Unaudited | Verified |
 
-## registry (1)
+## token (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AllowTokens (3 deployments)](./ethereum-1/0x1486e225ee099f7ea491e32cd2a69e8264f70fe0/) | ethereum | 3 deployments: ethereum [`0x1486e2...f70fe0`](./ethereum-1/0x1486e225ee099f7ea491e32cd2a69e8264f70fe0/); ethereum `0x8df20c...0aa1be`; ethereum `0x9d772c...9789fd` | ⚠️ Unaudited | Verified |
 
-## unknown (43)
+## unknown (44)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -34,6 +34,7 @@
 | UnnamedContract | ethereum | `0x1d9524...48fade` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x249ea3...744faf` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x29cdad...633b71` | ❓ Unverified | Unverified |
+| UnnamedContract | ethereum | `0x347ac5...1554ae` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x49eef2...ecf420` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x603e82...d24d5e` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x657595...65bea9` | ❓ Unverified | Unverified |

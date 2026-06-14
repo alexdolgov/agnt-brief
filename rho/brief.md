@@ -5,11 +5,11 @@
 - Project: Rho (`rho`)
 - Website: [https://www.rho.trading/](https://www.rho.trading/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-11T02:23:33.654Z
-- Pipeline run: v2-pipeline-2026-06-11-5b3b54-bd5e
-- Chains: ethereum
-- Contract surface: 31 unique implementations (35 raw deployments)
-- DeFi Llama TVL: $2,472,255.00
+- Generated: 2026-06-14T04:14:34.724Z
+- Pipeline run: v2-pipeline-2026-06-14-ec5560-d641
+- Chains: arbitrum, ethereum
+- Contract surface: 35 unique implementations (39 raw deployments)
+- DeFi Llama TVL: $2,307,119.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -26,14 +26,14 @@ The Mainnet family provides the foundational vault logic and proxy infrastructur
 - Verified implementations audited: 0/2 (0.0%)
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 1
-- Unverified implementations: 29
-- Unique implementations: 31
-- Raw deployments: 35
-- Audits discovered: 3
+- Unverified implementations: 33
+- Unique implementations: 35
+- Raw deployments: 39
+- Audits discovered: 4
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-09 (fresh)
-- Staleness: 2 fresh, 0 aging, 0 stale, 1 unknown
+- Staleness: 2 fresh, 0 aging, 1 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -66,12 +66,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 |---|---|---|---|---|
 | ERC1967Proxy | proxy | ethereum | 3 deployments: ethereum [`0x461ffa...f7ba36`](./contracts/ethereum-1/0x461ffa24b716f68c5a4fb583592f295db5f7ba36/); ethereum `0xcf60f0...a340ec`; ethereum `0xed96fe...c91fc1` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (29)
+### ❓ Unverified (33)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
+| Proxy (impl: 0x0feef3d05fedad3290c73cfff2f250bf0246bd8e) | proxy | arbitrum | `0xbef011...b87e8c` | ❓ Unverified |
+| Proxy (impl: 0x7c4a7cc34288e8bae093e96586629c8ed7a60b2b) | unknown | arbitrum | `0xdcb233...f86586` | ❓ Unverified |
+| Proxy (impl: 0xbbf60a272eb36a8684666528e99b1723b8eb6b34) | unknown | arbitrum | `0x1e5024...d5aaca` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x037b13...677bec` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x061765...f6c242` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0x111b39...bce0d7` | ❓ Unverified |
@@ -101,6 +104,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | ethereum | `0xf33bcb...a5330d` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xf95441...aaed06` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | `0xfbb3c9...bdcd4a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | `0xb5855e...621a4d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -109,6 +113,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [DL audit link](https://audits.oxor.io/reports/-NsF0vIwYyzQJhrgL2nf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Rho Labs Audit Report](https://github.com/zokyo-sec/audit-reports/blob/main/Rho%20Labs/Rho_Labs_Zokyo_audit_report_Sep23rd_2025.pdf) | Zokyo | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
 | [Vault Contracts v2 Audit](https://www.halborn.com/audits/rho-labs/vault-contracts-v2-9d7cbb) | Halborn | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [Rho Protocol Audit Report](https://oxor-io.github.io/public_audits/Rho/Rho%20Protocol%20Audit%20Report.pdf) | Halborn | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -124,14 +129,14 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 4 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 26 |
+| standard_library | 0 |
+| needs_review | 31 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -141,5 +146,6 @@ Zero-match audit list:
 - [2811] DL audit link
 - [2812] Rho Labs Audit Report
 - [2813] Vault Contracts v2 Audit
+- [14353] Rho Protocol Audit Report
 
 Fork inheritance lineage and inherited audits are included when available.

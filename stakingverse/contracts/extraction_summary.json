@@ -1,5 +1,5 @@
 {
-  "total_contracts": 3,
+  "total_contracts": 4,
   "verified_fetched": 1,
   "fetched_from_sourcify": 1,
   "fetched_from_etherscan": 0,
@@ -12,5 +12,5 @@
     1,
     42
   ],
-  "fetched_at": "2026-06-11T03:06:09.257Z"
+  "fetched_at": "2026-06-14T04:14:06.367Z"
 }
